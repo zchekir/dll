@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4cf38574-50a6-4296-8017-6f3285aac388"
+mode="Global"
+rxversion="8.0">
+	<name>
+		Launch_AssessmentAttempt
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Launch_AssessmentAttempt"
+	namespace="PrecisionRecruitment">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="WebService"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="LaunchAssessment"
+		namespace="engine.Helpers"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="faec2d7b-e222-4001-8e5c-1d2cc7094a02">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Launch_AssessmentAttempt.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="41eae272-e70a-4c8c-976b-316352274ed1"
+mode="Global"
+rxversion="8.0">
+	<name>
+		Validate_BatteryEntry
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_BatteryEntry"
+	namespace="PrecisionRecruitment">
+	</codegen>
+	<variables>
+		<var
+		id="bf569ec7-2c0e-49d7-9881-13e31d74e230"
+		name="BatteryName">
+		</var>
+		<var
+		id="7694b4f2-e0db-46cc-974e-0f6333d3750b"
+		name="RandNum">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f354fb4a-f449-4b67-9f4c-d5c46ef69aae">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="BatteryName">
+				</binding>
+			</bindings>
+			<info
+			id="aa383d1f-32f2-45a8-b2bd-8af31a40c22b"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="-802,-937,107,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						RanorexBattery
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]/body/div/tag/div/div[2]/div//span[@innertext='RanorexBattery']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6c7f1612-36c1-4a3c-9d68-6f9df9789eb5">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA8AQIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDDorU8
+qP8A55p/3yKPKj/55p/3yK29i+5y/WV2MuitTyo/+eaf98ijyo/+eaf98ij2L7h9ZXYy6K1PKj/5
+5p/3yKPKj/55p/3yKPYvuH1ldjLorU8qP/nmn/fIo8qP/nmn/fIo9i+4fWV2MuitTyo/+eaf98ij
+yo/+eaf98ij2L7h9ZXYy6K1PKj/55p/3yKPKj/55p/3yKPYvuH1ldjLorU8qP/nmn/fIo8qP/nmn
+/fIo9i+4fWV2MuitTyo/+eaf98ijyo/+eaf98ij2L7h9ZXYy6K1PKj/55p/3yKPKj/55p/3yKPYv
+uH1ldjLorU8qP/nmn/fIo8qP/nmn/fIo9i+4fWV2MuitTyo/+eaf98ijyo/+eaf98ij2L7h9ZXYy
+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
+/vgVLRRdhyrsRfZoP+eEf/fAoqWii7DlXY//2Q==
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				RanorexBattery
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e77623f9-648b-457b-8570-91c384986ecc">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="aa383d1f-32f2-45a8-b2bd-8af31a40c22b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]/body/div/tag/div/div[2]/div//span[@innertext&gt;$BatteryName and @innertext&lt;$RandNum]
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="PrecisionRecruitmentRepository.rxrep"
+	rxversion="7.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_BatteryEntry.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
