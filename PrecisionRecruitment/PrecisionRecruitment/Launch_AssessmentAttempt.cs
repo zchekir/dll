@@ -53,6 +53,16 @@ namespace PrecisionRecruitment
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -81,6 +91,11 @@ namespace PrecisionRecruitment
 
             engine.Helpers.WebService.LaunchAssessment();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'CogstateSolutionPlatform.BatteryLoadingBar'", repo.CogstateSolutionPlatform.BatteryLoadingBarInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.BatteryLoadingBarInfo.WaitForNotExists(30000);
             
         }
 

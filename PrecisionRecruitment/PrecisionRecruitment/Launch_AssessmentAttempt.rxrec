@@ -45,6 +45,36 @@ rxversion="8.0">
 			id="faec2d7b-e222-4001-8e5c-1d2cc7094a02">
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Waiting for Assets to load"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="27ce0fcd-1f60-4ac1-8410-935c8e8287af">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="526d3782-fb1c-4d26-8110-434ca87432d1"
+		waitaction="NotExists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f42ae654-ce04-4294-9e5a-44d1a545f82a"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'bar-1']/div/div[2]/div
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

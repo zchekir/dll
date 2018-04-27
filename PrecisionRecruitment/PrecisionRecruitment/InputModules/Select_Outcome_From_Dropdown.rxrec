@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c59a1508-fd91-4513-b669-579cdeb46da2"
+mode="Global"
+rxversion="8.0">
+	<name>
+		Select_Outcome_From_Dropdown
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Outcome_From_Dropdown"
+	namespace="PrecisionRecruitment.InputModules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Select_Outcome_From_Dropdown"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SelectOutcome"
+		namespace="PrecisionRecruitment.InputModules"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0bee576c-6f51-49fc-a9d2-14ed5c3f7611">
+				<argument
+				argname="Outcome"
+				id="28b8bca0-d9ae-40a8-8632-f204a4a72782">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Psychomotor Function and Attention Composite Normative Score
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Outcome_From_Dropdown.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

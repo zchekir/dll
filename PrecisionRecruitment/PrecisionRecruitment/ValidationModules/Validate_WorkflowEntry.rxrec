@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="836fd9cf-e062-444a-811a-2b47a26ac4ef"
+mode="Global"
+rxversion="8.0">
+	<name>
+		Validate_WorkflowEntry
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_WorkflowEntry"
+	namespace="PrecisionRecruitment.ValidationModules">
+	</codegen>
+	<variables>
+		<var
+		id="63102284-8321-441f-9104-981216bd3c9e"
+		name="WorkflowName">
+		</var>
+		<var
+		id="4f6ec36a-c23d-4e2e-a3a6-38e8eea7c355"
+		name="DOM">
+			cgst-qc-2-7-0.cogstate.com
+		</var>
+		<var
+		id="4e8172d1-5df6-497e-ad89-e9b953778f4a"
+		name="RandNum">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="06cea57f-078f-4528-aa51-802a583e23f1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="WorkflowName">
+				</binding>
+			</bindings>
+			<info
+			id="280eeae4-8102-4c5e-bd8f-cb861cbf2f41"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="-802,-937,127,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Ranorex Workflow
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]/body/div/tag/div/div[2]/div//span[@innertext='Ranorex Workflow']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="3b416b5f-125c-4b92-bf08-b9d7c9df6717">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA8ARoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDDorU8
+qP8A55p/3yKPKj/55p/3yK29i+5y/WV2MuitTyo/+eaf98ijyo/+eaf98ij2L7h9ZXYy6K1PKj/5
+5p/3yKPKj/55p/3yKPYvuH1ldjLorU8qP/nmn/fIo8qP/nmn/fIo9i+4fWV2MuitTyo/+eaf98ij
+yo/+eaf98ij2L7h9ZXYy6K1PKj/55p/3yKPKj/55p/3yKPYvuH1ldjLorU8qP/nmn/fIo8qP/nmn
+/fIo9i+4fWV2MuitTyo/+eaf98ijyo/+eaf98ij2L7h9ZXYy6K1PKj/55p/3yKPKj/55p/3yKPYv
+uH1ldjLorU8qP/nmn/fIo8qP/nmn/fIo9i+4fWV2MuitTyo/+eaf98ijyo/+eaf98ij2L7h9ZXYy
+6K1PKj/55p/3yKPKj/55p/3yKPYvuH1ldjLorU8qP/nmn/fIo8qP/nmn/fIo9i+4fWV2MuitTyo/
++eaf98ijyo/+eaf98ij2L7h9ZXYy6K1PKj/55p/3yKPKj/55p/3yKPYvuH1ldjLorU8qP/nmn/fI
+o8qP/nmn/fIo9i+4fWV2MuitTyo/+eaf98ijyo/+eaf98ij2L7h9ZXYy6K1PKj/55p/3yKPKj/55
+p/3yKPYvuH1ldh9FSTRGGQo2D3BHcVdlLBJC025BGB5fJwSOPatmzlUdbMzqKvNE/wBi2bG2qgk3
+Y4zn/A/pT5AHJcdUiKt/3xkf1o5iuQzqKvB23rDn92Yfu9vu5/nTyxEe5psxrCoMfJ6jj260cw1T
+8zOoq5O7hFAudo8tf3eW9PpiickWolwQ82A5+n+P9KOYnkKdRuW8wKpxkVZgRZW2EkO33T2z70yE
+FdShB4IcA/nUVXol5oUUQ4l/vCjEv94VozbmhCtN5zSP8nU49ev4VLKrefAzIyhJQi5GMjjH9ank
+Xd/eacpk4l/vCjEv94Vq7VYl8fLLIhI98nIpsUjysfMYttmTbntyaORd394chmYl/vCjEv8AeFao
+Y5TzJvN3TDZ1O3B561DJNIkob7T5uG+5lj/MUKF+r+8HGxQxL/eFGJf7wq9eqIisKAhB831J/wAO
+lTxhS3mN/wAtUVPxPB/lRyK17v7xcutjKxL/AHhRiX+8K0stDAQp2ukecjqCW/wpwZihfzPLdogS
+/I/ix2o5PN/eKxl4l/vCjEv94VrbFklkjkk5CKHc8ZO7/wDUKjWSQrOTJ5BDKOp4HPHFHIu7+8fK
+ZuJf7woxL/eFXZCWtnLSeYfMX5snng+tPikaOK3CMVDud2O/IHNPk8394kZ+Jf7wpG8xVyWFaowr
+iUAYgLj8un86r3y+VbuoH35CR9B0/nUSVotpv7yuUrKcqCfSlpE+4v0pa6I7IxYUUUUwCiiigAoo
+ooAKKKKAFZizFmJJPUmpPPYsxIX5l2kf5+lRUUWHdkpnYzGQgZIII7YxilFy4ZyMfOmwj2xioaKV
+kHMyf7S2zGxN23bvxzim+e27OBymwj1GMVFRRZD5mTNMHUBokJChd3OePxpGuHbfkLhwBjsMdMVF
+RRZC5mSRytGG2gAkY3dx9KijYJeRsSQF54GaWmtGGOTmoqRbWg07F2OaKPo7nDbhmIcH/vqkikhi
+ztkc8g8xjqD/AL1UfJX1NHkr6mp9/t+P/AK5kX1mjWPYJZMb94Pljg/99UpuIcgqSnzBjti6kf8A
+Aqz/ACV9TR5K+ppe/wDy/j/wB85eSWJOkjn5w4zGOD/31S+bbBw6gqwOc+Wf6vVDyV9TR5K+po9/
+t+P/AABcxcZ4WjCNLIcEkHyxnn/gVOMsXlJH5sgCHIPljP8A6FVHyV9TR5K+pp3n2/H/AIAcyNAz
+xNK7szHeMFTFx/6FSPNE4Yb3AKhcCIcAHPHzVQ8lfU0eSvqaXv8Ab8f+AHMXmliZSDI/KhSfLHb/
+AIFQ8sTqQZH+bGT5Yycf8Cqj5K+po8lfU0/f7fj/AMAOZF6N7dEKEs6k5+aP/Bqcs8CgDkhTlQYv
+u/T5qz/JX1NHkr6ml7/b8f8AgApJF4SxeVInmyESHJPlj/4qor2VJIVw7EoAoBTHH5mq3kr6mjyV
+9TSkptNW/H/gBzIen3F+lLQBgAelFbpWVjMKKKKYBRRRQAUUUUAFFFFAHR/ZoP8AnhH/AN8Cj7NB
+/wA8I/8AvgVLRXFdnqcq7EX2aD/nhH/3wKPs0H/PCP8A74FS0UXYcq7EX2aD/nhH/wB8Cj7NB/zw
+j/74FS0UXYcq7EX2aD/nhH/3wKPs0H/PCP8A74FS0UXYcq7EX2aD/nhH/wB8Cj7NB/zwj/74FS0U
+XYcq7EX2aD/nhH/3wKPs0H/PCP8A74FS0UXYcq7EX2aD/nhH/wB8Cj7NB/zwj/74FS0UXYcq7EX2
+aD/nhH/3wKPs0H/PCP8A74FS0UXYcq7EX2aD/nhH/wB8Cj7NB/zwj/74FS0UXYcq7EX2aD/nhH/3
+wKPs0H/PCP8A74FS0UXYcq7EX2aD/nhH/wB8Cj7NB/zwj/74FS0UXYcq7EX2aD/nhH/3wKPs0H/P
+CP8A74FS0UXYcq7EX2aD/nhH/wB8Cj7NB/zwj/74FS0UXYcq7EX2aD/nhH/3wKPs0H/PCP8A74FS
+0UXYcq7EX2aD/nhH/wB8Cj7NB/zwj/74FS0UXYcq7EX2aD/nhH/3wKPs0H/PCP8A74FS0UXYcq7E
+X2aD/nhH/wB8Cj7NB/zwj/74FS0UXYcq7EX2aD/nhH/3wKPs0H/PCP8A74FS0UXYcq7H/9k=
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Ranorex Workflow
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8546bbde-111f-4767-8fa0-04c3326f984d">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="280eeae4-8102-4c5e-bd8f-cb861cbf2f41"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]/body/div/tag/div/div[2]/div//span[@innertext=$WorkflowName]
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_WorkflowEntry.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

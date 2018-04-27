@@ -125,10 +125,10 @@ namespace engine.Helpers
         /// This method will retrieve an AuthToken based on the protocl, key and secret provided
         /// </summary>
         [UserCodeMethod]
-        public static void Authenticate(string DOM, string studyProtocolName, string key, string secret)
+        public static void Authenticate(string randNum, string DOM, string studyProtocolName, string key, string secret)
         {
         	//Setup API call
-        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + "/AuthenticationToken");
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/AuthenticationToken");
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "POST";
         	
@@ -156,7 +156,10 @@ namespace engine.Helpers
         		responseObject = new JavaScriptSerializer().Deserialize<AuthJSONResponse>(response);
         		
         		AuthToken = responseObject.authorizationValue;
+        		
+        		Report.Log(ReportLevel.Info, "Authentication Successfull, AuthToken is: " + AuthToken);
         	}
+        	
         }
         
         
@@ -165,17 +168,17 @@ namespace engine.Helpers
 		/// and AuthToken
         /// </summary>
         [UserCodeMethod]
-        public static void CreateAssessmentAttempt(string DOM, string externalId, string dob, string genderCode, string localityCode,
+        public static void CreateAssessmentAttempt(string randNum, string DOM, string externalId, string dob, string genderCode, string localityCode,
                                                   string postError, string post, string visitSessionCode, string studyProtocolName)
         {
         	//Setup API call
-        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + "/AssessmentAttempt");
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/AssessmentAttempt");
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "POST";
         	httpRequest.Headers.Add("Authorization", AuthToken);
         	
         	//Create JSON object containing demographics and study details
-        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode);
+        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode + randNum);
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
         	{
@@ -198,6 +201,9 @@ namespace engine.Helpers
         		
         		AssessmentURL = responseObject.url;
         		TestIdentifier = responseObject.testIdentifier;
+        		
+        		Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
+        		Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
         	}
         }
         
@@ -209,10 +215,10 @@ namespace engine.Helpers
         /// within a user code collection.
         /// </summary>
         [UserCodeMethod]
-        public static void GetQualificationStatus(string DOM, string studyProtocolName, string testIdentifier)
+        public static void GetQualificationStatus(string randNum, string DOM, string studyProtocolName, string testIdentifier)
         {
         	//Setup API call
-        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + "/assessmentattempt/" + testIdentifier + "/qualificationstatus");
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/assessmentattempt/" + testIdentifier + "/qualificationstatus");
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "GET";
         	httpRequest.Headers.Add("Authorization", AuthToken);

@@ -237,11 +237,10 @@ rxversion="8.0">
 				addcaps="unknown,webelement,selecttag"
 				capname="selecttag"
 				id="428bf8ce-551a-4558-80ec-d9fd5db74c68"
-				name="CheckOutcomeOutcomeDropdown"
+				name="OutcomeDropdown"
 				refimgid="0d0beac4-c223-4acf-85d9-73edd8f8d93c"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//select[#'formly_checkOutcome_0_selectWithXButton_id_0']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//select[#'formly_checkOutcome_0_selectWithXButton_id_0']
+					/dom[@domain=$DOM]//select[@name~'selectWithXButton']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -456,89 +455,46 @@ rxversion="8.0">
 					/dom[@domain=$DOM]/body/div[1]//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@ng-click='login()']
 				</item>
 			</folder>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="63dc85ed-58cb-45a1-9c44-c2404ef1f077"
-			name="AssemblyVersion"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'collapsible0']/div[1]/div[2]/div[2]/span[@innertext~'\d{1,3}\.\d{1,3}\.\d{1,3}']
-			</item>
-			<item
-			addcaps="unknown,webelement,imgtag"
+			<folder
+			addcaps="unknown,webelement,divtag"
 			capname="divtag"
-			id="333acc2f-1a67-406e-9aa8-c3168d834805"
-			name="HamburgerMenu"
-			refimgid="e5ed6957-43cb-4432-8055-d321dc71398d"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'simple-dropdown']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="2ff93f8f-ef07-45c4-984d-6850602afb79"
-			name="StudyNameBreadcrumb"
-			refimgid="3b4fbcef-8a26-4055-9688-138fb850fdac"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[2]//span[@innertext&gt;$StudyName]
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="2620a1a8-aeed-40f8-924c-40808444d27b"
-			name="SearchField"
-			refimgid="f7de86a1-6531-4eb8-bb73-83f7d5c9e12b"
-			refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']//input[#'generic-search']"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//input[#'generic-search']
-			</item>
-			<item
-			addcaps="unknown,webelement,labeltag"
-			capname="labeltag"
-			id="92b35c05-744e-4066-8b60-893431fe01e2"
-			name="Administration"
-			refimgid="e34ed1bc-e65e-40f3-83fc-40fe2010c9b5"
-			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/label[@innertext='Administration']"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/?/?/label[@innertext='Administration']
-			</item>
-			<item
-			addcaps="unknown,webelement,labeltag"
-			capname="labeltag"
-			id="d5b6200e-5205-4cf8-87b4-426d4f55db2b"
-			name="ExternalUsers"
-			refimgid="fb136246-f55b-4fdc-a9ac-31d62079df96"
-			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]/div[4]/label[@innertext='External Users']"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]/div[4]/label[@innertext='External Users']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="229065bc-cd28-4029-932e-2c26e4bedf6d"
-			name="BatteriesTab"
-			refimgid="9c371ef6-2904-4aee-b6f2-8cb1bff868a2"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[3]/a[@innertext&gt;'Batteries']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="da63a96e-f369-4c8e-b990-162b989a20a6"
-			name="WorkflowsTab"
-			refimgid="69003157-9a84-4d3d-ba1d-b23015605885"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[4]/a[@innertext&gt;'Workflows']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="77cb1315-8730-46be-bc98-9ac27c0954f6"
-			name="VisitSchedulesTab"
-			refimgid="94a8f880-6c5b-42ac-b610-c48c06a92419"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[5]/a[@innertext&gt;'Visit Schedules']
-			</item>
+			id="cb59b0f7-51d8-46cb-8829-c42737eed318"
+			isrooted="True"
+			name="BatteriesViewMenu"
+			refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div[1]/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-compact']/tag[@tagname='cogstate-generic-children-tabs']/tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-header']/div/div"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="1a5053ce-2cf8-4e6e-a384-7dd69892b906"
+				name="CardView"
+				refimgid="a2bb47af-f888-4acb-b780-57052350c4cc"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="273898c6-7986-4626-a1d4-ec9d9e60c4d6"
+				name="ListView"
+				refimgid="350f12f5-f119-44a4-b1a0-f3b09e1bc5f7"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="7f11b945-19d9-48ed-b66a-0f596b8736e7"
+				name="AddButton"
+				refimgid="9a1fecda-f0b0-469c-9641-b62429ebb875"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+				</item>
+				<basepath>
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div
+				</basepath>
+			</folder>
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -689,79 +645,90 @@ rxversion="8.0">
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
-			id="cb59b0f7-51d8-46cb-8829-c42737eed318"
+			id="7b1ea24d-ea8a-4e1e-864d-60c54defc799"
 			isrooted="True"
-			name="BatteriesViewMenu"
-			refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div[1]/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-compact']/tag[@tagname='cogstate-generic-children-tabs']/tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-header']/div/div"
+			name="ExternalUserPage"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[4]"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="1a5053ce-2cf8-4e6e-a384-7dd69892b906"
-				name="CardView"
-				refimgid="a2bb47af-f888-4acb-b780-57052350c4cc"
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="628ad5fc-4948-4083-a445-4bf034c11123"
+				name="ExternalUser"
+				refimgid="715068b9-8d27-4939-829e-0957581db89d"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//table/tbody/tr/td[1]/a[@innertext~$Key]
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="4831601f-ea6c-4152-8f7a-e2877f2f65ac"
+				name="AddRoleStudyDropdown"
+				refimgid="a0523b7e-a9b1-47db-8771-9888d4e8e98c"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[1]/select[@name='study']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="51670096-e85e-41b9-a796-4191c61c5a85"
+				name="ExternalServiceRoleDropdown"
+				refimgid="ce809fed-62ef-4b15-9908-896a7f969c73"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[2]/select[@name='role']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="4ae35020-8fe5-4864-95c2-2e65843fcb14"
+				name="AddRoleActiveCheckbox"
+				refimgid="6d3b534b-1f65-4b42-a700-000e5996d247"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[3]/input[@type='checkbox']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
 				capname="imgtag"
-				id="273898c6-7986-4626-a1d4-ec9d9e60c4d6"
-				name="ListView"
-				refimgid="350f12f5-f119-44a4-b1a0-f3b09e1bc5f7"
+				id="2f537dc6-64df-4dbd-9877-820080b627d4"
+				name="AddRoleButton"
+				refimgid="26935dc7-8580-4e2a-8924-44bbca97260e"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div[2]/div/div/tag/tag[@tagname='cogstate-generic-external-user-detail-header']/div/div/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="7f11b945-19d9-48ed-b66a-0f596b8736e7"
-				name="AddButton"
-				refimgid="9a1fecda-f0b0-469c-9641-b62429ebb875"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']
 				</item>
 				<basepath>
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
 				</basepath>
 			</folder>
 			<folder
 			capname="divtag"
-			id="7cb5e95f-9ffe-43b4-872c-341c3906a0b3"
+			id="8eb287fe-5a40-4f68-8b36-049f7d75f284"
 			isrooted="True"
-			name="WorkflowsViewMenu"
+			name="StudySettings"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="af2d7ad4-12a1-4714-b865-0228a4635e2f"
-				name="CardView"
-				refimgid="fbefb624-eaaf-4fc5-8af6-92706540679d"
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="f219702b-f2cb-4443-b178-cf3291bc0dc0"
+				name="EditButton"
+				refimgid="8af2d5bb-7a9c-4f87-a64f-40b6ff64fba7"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div/div[2]/div/div[1]/tag[@tagname='cogstate-generic-compact']/tag/div/div[2]/i[@innertext='mode_edit']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div/div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[1]/?/?/tag[@tagname='cogstate-generic-study-settings-compact']/div/div[2]/i[@innertext='mode_edit']
 				</item>
 				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="2d9bf4b1-a067-4bf7-8899-eada717bdc5f"
-				name="ListView"
-				refimgid="bd467efe-f1bb-47e8-bba7-b0e0357c8eee"
+				addcaps="unknown,webelement,optiontag"
+				capname="optiontag"
+				id="8d4ec3e3-6f1b-4da5-a1d0-65e2d07561a5"
+				name="Locality"
+				refimgid="e86b5f00-8ed1-486c-967a-a7fb5e9e131b"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div/div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="ebe4df6e-c851-4e11-8add-75f128aa51a6"
-				name="AddButton"
-				refimgid="6a7fd5eb-7445-4654-a788-2d03ec422e9b"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div/div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@innertext=$Locality]
 				</item>
 				<basepath>
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
 				</basepath>
 			</folder>
 			<folder
@@ -861,68 +828,145 @@ rxversion="8.0">
 				</basepath>
 			</folder>
 			<folder
-			addcaps="unknown,webelement,divtag"
 			capname="divtag"
-			id="7b1ea24d-ea8a-4e1e-864d-60c54defc799"
+			id="7cb5e95f-9ffe-43b4-872c-341c3906a0b3"
 			isrooted="True"
-			name="ExternalUserPage"
-			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[4]"
+			name="WorkflowsViewMenu"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
-				addcaps="unknown,webelement,atag"
-				capname="atag"
-				id="628ad5fc-4948-4083-a445-4bf034c11123"
-				name="ExternalUser"
-				refimgid="715068b9-8d27-4939-829e-0957581db89d"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-list-grid']/table/tbody/tr[2]/td[1]/a[@innertext~'^d7a6d2bb-f854-460f-bf23-c']"
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="af2d7ad4-12a1-4714-b865-0228a4635e2f"
+				name="CardView"
+				refimgid="fbefb624-eaaf-4fc5-8af6-92706540679d"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//table/tbody/tr[2]/td[1]/a[@innertext~'^d7a6d2bb-f854-460f-bf23-c']
-				</item>
-				<item
-				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
-				id="4831601f-ea6c-4152-8f7a-e2877f2f65ac"
-				name="AddRoleStudyDropdown"
-				refimgid="a0523b7e-a9b1-47db-8771-9888d4e8e98c"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div[2]/div/div/tag/table/tbody/tr[21]/td[1]/select[@name='study']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[21]/td[1]/select[@name='study']
-				</item>
-				<item
-				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
-				id="51670096-e85e-41b9-a796-4191c61c5a85"
-				name="ExternalServiceRole"
-				refimgid="ce809fed-62ef-4b15-9908-896a7f969c73"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div[2]/div/div/tag/table/tbody/tr[21]/td[2]/select[@name='role']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[21]/td[2]/select[@name='role']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="4ae35020-8fe5-4864-95c2-2e65843fcb14"
-				name="AddRoleActiveCheckbox"
-				refimgid="6d3b534b-1f65-4b42-a700-000e5996d247"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div[2]/div/div/tag/table/tbody/tr[21]/td[3]/input[@type='checkbox']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[21]/td[3]/input[@type='checkbox']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div/div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
 				capname="imgtag"
-				id="2f537dc6-64df-4dbd-9877-820080b627d4"
-				name="AddRoleButton"
-				refimgid="26935dc7-8580-4e2a-8924-44bbca97260e"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div[2]/div/div/tag/tag[@tagname='cogstate-generic-external-user-detail-header']/div/div/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']"
+				id="2d9bf4b1-a067-4bf7-8899-eada717bdc5f"
+				name="ListView"
+				refimgid="bd467efe-f1bb-47e8-bba7-b0e0357c8eee"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div/div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="ebe4df6e-c851-4e11-8add-75f128aa51a6"
+				name="AddButton"
+				refimgid="6a7fd5eb-7445-4654-a788-2d03ec422e9b"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div/div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
 				</item>
 				<basepath>
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]//tag[@tagname='cogstate-generic-workflow-list-header']/div/div
 				</basepath>
 			</folder>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="63dc85ed-58cb-45a1-9c44-c2404ef1f077"
+			name="AssemblyVersion"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'collapsible0']/div[1]/div[2]/div[2]/span[@innertext~'\d{1,3}\.\d{1,3}\.\d{1,3}']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="divtag"
+			id="333acc2f-1a67-406e-9aa8-c3168d834805"
+			name="HamburgerMenu"
+			refimgid="e5ed6957-43cb-4432-8055-d321dc71398d"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'simple-dropdown']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="2ff93f8f-ef07-45c4-984d-6850602afb79"
+			name="StudyNameBreadcrumb"
+			refimgid="3b4fbcef-8a26-4055-9688-138fb850fdac"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[2]//span[@innertext&gt;$StudyName]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2620a1a8-aeed-40f8-924c-40808444d27b"
+			name="SearchField"
+			refimgid="f7de86a1-6531-4eb8-bb73-83f7d5c9e12b"
+			refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']//input[#'generic-search']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//input[#'generic-search']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="92b35c05-744e-4066-8b60-893431fe01e2"
+			name="Administration"
+			refimgid="e34ed1bc-e65e-40f3-83fc-40fe2010c9b5"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/label[@innertext='Administration']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/?/?/label[@innertext='Administration']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="d5b6200e-5205-4cf8-87b4-426d4f55db2b"
+			name="ExternalUsers"
+			refimgid="fb136246-f55b-4fdc-a9ac-31d62079df96"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]/div[4]/label[@innertext='External Users']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]/div[4]/label[@innertext='External Users']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="229065bc-cd28-4029-932e-2c26e4bedf6d"
+			name="BatteriesTab"
+			refimgid="9c371ef6-2904-4aee-b6f2-8cb1bff868a2"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[3]/a[@innertext&gt;'Batteries']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="da63a96e-f369-4c8e-b990-162b989a20a6"
+			name="WorkflowsTab"
+			refimgid="69003157-9a84-4d3d-ba1d-b23015605885"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[4]/a[@innertext&gt;'Workflows']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="77cb1315-8730-46be-bc98-9ac27c0954f6"
+			name="VisitSchedulesTab"
+			refimgid="94a8f880-6c5b-42ac-b610-c48c06a92419"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[5]/a[@innertext&gt;'Visit Schedules']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="b8243936-cb87-46bb-a5b0-a3e3568c5847"
+			name="SettingsTab"
+			refimgid="095030a1-2409-404e-a47f-fa6c1f0dbad6"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[1]/a[@innertext='Settings']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="f42ae654-ce04-4294-9e5a-44d1a545f82a"
+			name="BatteryLoadingBar"
+			refimgid="4ca59de4-071d-4fd9-9886-c04e9487f8ce"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'bar-1']/div/div[2]/div"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'bar-1']/div/div[2]/div
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>
@@ -974,7 +1018,21 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="88063847-8295-4241-aa12-5e073e7388b1"
 		name="RandNum">
-			821870
+			990598
+		</var>
+		<var
+		id="d5025415-1b24-44d3-ad11-14c313fe5f70"
+		name="Locality">
+			USA - English
+		</var>
+		<var
+		id="2ee20f6c-a7a5-4f7e-beca-0402a96e2fb7"
+		name="Key">
+			d7a6d2bb-f854-460f-bf23-c009f9d91619
+		</var>
+		<var
+		id="bef8c8a6-e205-47b2-ad1f-f7fb74f045d0"
+		name="StepName">
 		</var>
 	</variables>
 </repository>
