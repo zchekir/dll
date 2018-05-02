@@ -41,10 +41,9 @@ namespace PrecisionRecruitment.APIModules
         /// </summary>
         public APIV2_QualificationStatus()
         {
-            DOM = "";
-            studyProtocolName = "";
-            testIdentifier = "";
+            DOM = "cgst-qc-duo.cogstate.com";
             RandNum = "";
+            ProtocolID = "Ranorex Protocol ID";
         }
 
         /// <summary>
@@ -57,28 +56,16 @@ namespace PrecisionRecruitment.APIModules
 
 #region Variables
 
-        string _studyProtocolName;
+        string _ProtocolID;
 
         /// <summary>
-        /// Gets or sets the value of variable studyProtocolName.
+        /// Gets or sets the value of variable ProtocolID.
         /// </summary>
-        [TestVariable("9a7cc726-08cf-4f29-b6c3-fa8118af18e5")]
-        public string studyProtocolName
+        [TestVariable("6017c17a-abf9-48f7-926e-a1d1d8419954")]
+        public string ProtocolID
         {
-            get { return _studyProtocolName; }
-            set { _studyProtocolName = value; }
-        }
-
-        string _testIdentifier;
-
-        /// <summary>
-        /// Gets or sets the value of variable testIdentifier.
-        /// </summary>
-        [TestVariable("977299e4-b5d3-4054-8139-5d931e4c2ca7")]
-        public string testIdentifier
-        {
-            get { return _testIdentifier; }
-            set { _testIdentifier = value; }
+            get { return _ProtocolID; }
+            set { _ProtocolID = value; }
         }
 
         /// <summary>
@@ -127,7 +114,7 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, studyProtocolName, testIdentifier);
+            engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolID);
             Delay.Milliseconds(0);
             
         }

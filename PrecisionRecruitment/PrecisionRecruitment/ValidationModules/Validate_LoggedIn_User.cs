@@ -20,96 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.APIModules
+namespace PrecisionRecruitment.ValidationModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The APIV2_Authenticate recording.
+    ///The Validate_LoggedIn_User recording.
     /// </summary>
-    [TestModule("03a98aac-9699-4331-a3fa-00536dfad33f", ModuleType.Recording, 1)]
-    public partial class APIV2_Authenticate : ITestModule
+    [TestModule("5a84ea2c-c357-4c32-a73b-c982fc0f68ed", ModuleType.Recording, 1)]
+    public partial class Validate_LoggedIn_User : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static APIV2_Authenticate instance = new APIV2_Authenticate();
+        static Validate_LoggedIn_User instance = new Validate_LoggedIn_User();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public APIV2_Authenticate()
+        public Validate_LoggedIn_User()
         {
-            DOM = "";
-            ProtocolID = "Ranorex Protocol ID";
-            RandNum = "";
-            Key = "d7a6d2bb-f854-460f-bf23-c009f9d91619";
-            Secret = "28566e30-ffff-4f45-8ea5-e8c286df10fc";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static APIV2_Authenticate Instance
+        public static Validate_LoggedIn_User Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _ProtocolID;
-
-        /// <summary>
-        /// Gets or sets the value of variable ProtocolID.
-        /// </summary>
-        [TestVariable("3b244791-8adf-4420-ba52-5c63812fac17")]
-        public string ProtocolID
-        {
-            get { return _ProtocolID; }
-            set { _ProtocolID = value; }
-        }
-
-        string _Secret;
-
-        /// <summary>
-        /// Gets or sets the value of variable Secret.
-        /// </summary>
-        [TestVariable("a702b301-700e-48a4-bc0b-f7361f7a8fb9")]
-        public string Secret
-        {
-            get { return _Secret; }
-            set { _Secret = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65")]
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
         public string DOM
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable RandNum.
-        /// </summary>
-        [TestVariable("f596d89d-2a08-4a15-bfcb-1856ad2829bb")]
-        public string RandNum
-        {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Key.
-        /// </summary>
-        [TestVariable("35d6bff4-468a-4307-8386-b46e7e547dc9")]
-        public string Key
-        {
-            get { return repo.Key; }
-            set { repo.Key = value; }
         }
 
 #endregion
@@ -138,8 +89,15 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.Authenticate(RandNum, DOM, ProtocolID, Key, Secret);
-            Delay.Milliseconds(0);
+            // Check User is logged in and Studies page is displayed
+            Report.Log(ReportLevel.Info, "Validation", "Check User is logged in and Studies page is displayed\r\nValidating Exists on item 'CogstateSolutionPlatform.Studies'.", repo.CogstateSolutionPlatform.StudiesInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.StudiesInfo);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "User logged in Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
             
         }
 

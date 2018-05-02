@@ -20,96 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.APIModules
+namespace PrecisionRecruitment.NavigationModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The APIV2_Authenticate recording.
+    ///The Click_Logout recording.
     /// </summary>
-    [TestModule("03a98aac-9699-4331-a3fa-00536dfad33f", ModuleType.Recording, 1)]
-    public partial class APIV2_Authenticate : ITestModule
+    [TestModule("fd6a4ea1-d179-4dbb-a14a-289e7cdf9c18", ModuleType.Recording, 1)]
+    public partial class Click_Logout : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static APIV2_Authenticate instance = new APIV2_Authenticate();
+        static Click_Logout instance = new Click_Logout();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public APIV2_Authenticate()
+        public Click_Logout()
         {
-            DOM = "";
-            ProtocolID = "Ranorex Protocol ID";
-            RandNum = "";
-            Key = "d7a6d2bb-f854-460f-bf23-c009f9d91619";
-            Secret = "28566e30-ffff-4f45-8ea5-e8c286df10fc";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static APIV2_Authenticate Instance
+        public static Click_Logout Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _ProtocolID;
-
-        /// <summary>
-        /// Gets or sets the value of variable ProtocolID.
-        /// </summary>
-        [TestVariable("3b244791-8adf-4420-ba52-5c63812fac17")]
-        public string ProtocolID
-        {
-            get { return _ProtocolID; }
-            set { _ProtocolID = value; }
-        }
-
-        string _Secret;
-
-        /// <summary>
-        /// Gets or sets the value of variable Secret.
-        /// </summary>
-        [TestVariable("a702b301-700e-48a4-bc0b-f7361f7a8fb9")]
-        public string Secret
-        {
-            get { return _Secret; }
-            set { _Secret = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65")]
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
         public string DOM
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable RandNum.
-        /// </summary>
-        [TestVariable("f596d89d-2a08-4a15-bfcb-1856ad2829bb")]
-        public string RandNum
-        {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Key.
-        /// </summary>
-        [TestVariable("35d6bff4-468a-4307-8386-b46e7e547dc9")]
-        public string Key
-        {
-            get { return repo.Key; }
-            set { repo.Key = value; }
         }
 
 #endregion
@@ -138,8 +89,17 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.Authenticate(RandNum, DOM, ProtocolID, Key, Secret);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UserMenu.Expand' at 4;3.", repo.CogstateSolutionPlatform.UserMenu.ExpandInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.UserMenu.Expand.Click("4;3");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UserMenu.LogoutButton' at 46;11.", repo.CogstateSolutionPlatform.UserMenu.LogoutButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.UserMenu.LogoutButton.Click("46;11");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.LoginForm.LogoutMessage'.", repo.CogstateSolutionPlatform.LoginForm.LogoutMessageInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.CogstateSolutionPlatform.LoginForm.LogoutMessageInfo);
+            Delay.Milliseconds(100);
             
         }
 

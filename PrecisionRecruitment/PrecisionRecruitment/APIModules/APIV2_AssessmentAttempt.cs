@@ -43,8 +43,8 @@ namespace PrecisionRecruitment.APIModules
         {
             DOM = "";
             RandNum = "";
-            VisitSessionCode = "VisitCode";
-            ProtocolID = "Ran123";
+            VisitSessionCode = "RanVisitCode";
+            ProtocolID = "Ranorex Protocol ID";
         }
 
         /// <summary>

@@ -203,6 +203,7 @@ namespace PrecisionRecruitment
             PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder _externaluserpage;
             PrecisionRecruitmentRepositoryFolders.StudySettingsFolder _studysettings;
             PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder _studiesviewmenu;
+            PrecisionRecruitmentRepositoryFolders.UserMenuFolder _usermenu;
             PrecisionRecruitmentRepositoryFolders.VisitScheduleViewMenuFolder _visitscheduleviewmenu;
             PrecisionRecruitmentRepositoryFolders.VisitScheduleCardsFolder _visitschedulecards;
             PrecisionRecruitmentRepositoryFolders.WorkflowsViewMenuFolder _workflowsviewmenu;
@@ -217,6 +218,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _visitschedulestabInfo;
             RepoItemInfo _settingstabInfo;
             RepoItemInfo _batteryloadingbarInfo;
+            RepoItemInfo _studiesInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -234,6 +236,7 @@ namespace PrecisionRecruitment
                 _externaluserpage = new PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder(this);
                 _studysettings = new PrecisionRecruitmentRepositoryFolders.StudySettingsFolder(this);
                 _studiesviewmenu = new PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder(this);
+                _usermenu = new PrecisionRecruitmentRepositoryFolders.UserMenuFolder(this);
                 _visitscheduleviewmenu = new PrecisionRecruitmentRepositoryFolders.VisitScheduleViewMenuFolder(this);
                 _visitschedulecards = new PrecisionRecruitmentRepositoryFolders.VisitScheduleCardsFolder(this);
                 _workflowsviewmenu = new PrecisionRecruitmentRepositoryFolders.WorkflowsViewMenuFolder(this);
@@ -248,6 +251,7 @@ namespace PrecisionRecruitment
                 _visitschedulestabInfo = new RepoItemInfo(this, "VisitSchedulesTab", "body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[5]/a[@innertext>'Visit Schedules']", 30000, null, "77cb1315-8730-46be-bc98-9ac27c0954f6");
                 _settingstabInfo = new RepoItemInfo(this, "SettingsTab", "body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[1]/a[@innertext='Settings']", 30000, null, "b8243936-cb87-46bb-a5b0-a3e3568c5847");
                 _batteryloadingbarInfo = new RepoItemInfo(this, "BatteryLoadingBar", ".//div[#'bar-1']/div/div[2]/div", 30000, null, "f42ae654-ce04-4294-9e5a-44d1a545f82a");
+                _studiesInfo = new RepoItemInfo(this, "Studies", ".//div[#'ng-app']/tag/div/div[2]//span[@innertext='Studies']", 30000, null, "f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f");
             }
 
             /// <summary>
@@ -539,6 +543,30 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
+            /// The Studies item.
+            /// </summary>
+            [RepositoryItem("f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f")]
+            public virtual Ranorex.SpanTag Studies
+            {
+                get
+                {
+                    return _studiesInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Studies item info.
+            /// </summary>
+            [RepositoryItemInfo("f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f")]
+            public virtual RepoItemInfo StudiesInfo
+            {
+                get
+                {
+                    return _studiesInfo;
+                }
+            }
+
+            /// <summary>
             /// The AddBatteryPage folder.
             /// </summary>
             [RepositoryFolder("780fcf1c-95f0-43d6-ae77-a06f29e3eaeb")]
@@ -626,6 +654,15 @@ namespace PrecisionRecruitment
             public virtual PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder StudiesViewMenu
             {
                 get { return _studiesviewmenu; }
+            }
+
+            /// <summary>
+            /// The UserMenu folder.
+            /// </summary>
+            [RepositoryFolder("e620482b-586c-4e2c-83fe-493dc3f1b22e")]
+            public virtual PrecisionRecruitmentRepositoryFolders.UserMenuFolder UserMenu
+            {
+                get { return _usermenu; }
             }
 
             /// <summary>
@@ -1817,6 +1854,8 @@ namespace PrecisionRecruitment
             RepoItemInfo _emailfieldInfo;
             RepoItemInfo _passwordfieldInfo;
             RepoItemInfo _loginbuttonInfo;
+            RepoItemInfo _logoutmessageInfo;
+            RepoItemInfo _invalidusermessageInfo;
 
             /// <summary>
             /// Creates a new LoginForm  folder.
@@ -1827,6 +1866,8 @@ namespace PrecisionRecruitment
                 _emailfieldInfo = new RepoItemInfo(this, "EmailField", ".//input[#'loginEmail']", 30000, null, "89c23801-d548-450e-8fb9-36bc5e224785");
                 _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//input[#'loginPass']", 30000, null, "95556269-1fa0-418d-a3a3-55e32c261c3d");
                 _loginbuttonInfo = new RepoItemInfo(this, "LoginButton", "body/div[1]//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@ng-click='login()']", 30000, null, "cc1a1206-38ab-48f8-99ef-6de21d94f76b");
+                _logoutmessageInfo = new RepoItemInfo(this, "LogoutMessage", ".//div[#'ng-app']/tag/div/div/tag/div/div/div/div[2]/div[@innertext~'^You\\ are\\ now\\ logged\\ out,\\ y']", 30000, null, "ec402113-d837-4027-9d43-df6d3edcc597");
+                _invalidusermessageInfo = new RepoItemInfo(this, "InvalidUserMessage", ".//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-login']/div/div/div/div[2]/div[@innertext>'Invalid username']", 30000, null, "f6b3af90-59e0-426a-84a3-ac070343e8d5");
             }
 
             /// <summary>
@@ -1910,6 +1951,54 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _loginbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LogoutMessage item.
+            /// </summary>
+            [RepositoryItem("ec402113-d837-4027-9d43-df6d3edcc597")]
+            public virtual Ranorex.DivTag LogoutMessage
+            {
+                get
+                {
+                    return _logoutmessageInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LogoutMessage item info.
+            /// </summary>
+            [RepositoryItemInfo("ec402113-d837-4027-9d43-df6d3edcc597")]
+            public virtual RepoItemInfo LogoutMessageInfo
+            {
+                get
+                {
+                    return _logoutmessageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The InvalidUserMessage item.
+            /// </summary>
+            [RepositoryItem("f6b3af90-59e0-426a-84a3-ac070343e8d5")]
+            public virtual Ranorex.DivTag InvalidUserMessage
+            {
+                get
+                {
+                    return _invalidusermessageInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The InvalidUserMessage item info.
+            /// </summary>
+            [RepositoryItemInfo("f6b3af90-59e0-426a-84a3-ac070343e8d5")]
+            public virtual RepoItemInfo InvalidUserMessageInfo
+            {
+                get
+                {
+                    return _invalidusermessageInfo;
                 }
             }
         }
@@ -2812,6 +2901,98 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _listbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The UserMenuFolder folder.
+        /// </summary>
+        [RepositoryFolder("e620482b-586c-4e2c-83fe-493dc3f1b22e")]
+        public partial class UserMenuFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _expandInfo;
+            RepoItemInfo _logoutbuttonInfo;
+
+            /// <summary>
+            /// Creates a new UserMenu  folder.
+            /// </summary>
+            public UserMenuFolder(RepoGenBaseFolder parentFolder) :
+                    base("UserMenu", ".//div[#'ng-app']/tag/div", parentFolder, 30000, null, false, "e620482b-586c-4e2c-83fe-493dc3f1b22e", "")
+            {
+                _expandInfo = new RepoItemInfo(this, "Expand", "div[5]/?/?/a[@href~$DOM]/span[2]", 30000, null, "5ce3e130-33b1-4f66-9a98-a8e27f4c6fb4");
+                _logoutbuttonInfo = new RepoItemInfo(this, "LogoutButton", "div[5]/?/?/ul/?/?/a[@innertext='Logout']", 30000, null, "1f8b275c-e312-423f-ab19-2b4cc77fedbc");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e620482b-586c-4e2c-83fe-493dc3f1b22e")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e620482b-586c-4e2c-83fe-493dc3f1b22e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Expand item.
+            /// </summary>
+            [RepositoryItem("5ce3e130-33b1-4f66-9a98-a8e27f4c6fb4")]
+            public virtual Ranorex.SpanTag Expand
+            {
+                get
+                {
+                    return _expandInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Expand item info.
+            /// </summary>
+            [RepositoryItemInfo("5ce3e130-33b1-4f66-9a98-a8e27f4c6fb4")]
+            public virtual RepoItemInfo ExpandInfo
+            {
+                get
+                {
+                    return _expandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LogoutButton item.
+            /// </summary>
+            [RepositoryItem("1f8b275c-e312-423f-ab19-2b4cc77fedbc")]
+            public virtual Ranorex.ATag LogoutButton
+            {
+                get
+                {
+                    return _logoutbuttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LogoutButton item info.
+            /// </summary>
+            [RepositoryItemInfo("1f8b275c-e312-423f-ab19-2b4cc77fedbc")]
+            public virtual RepoItemInfo LogoutButtonInfo
+            {
+                get
+                {
+                    return _logoutbuttonInfo;
                 }
             }
         }

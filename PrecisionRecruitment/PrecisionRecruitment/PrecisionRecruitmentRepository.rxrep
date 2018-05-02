@@ -454,6 +454,24 @@ rxversion="8.0">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]/body/div[1]//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@ng-click='login()']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="ec402113-d837-4027-9d43-df6d3edcc597"
+				name="LogoutMessage"
+				refimgid="51116d23-43d0-46f8-bd5a-0231c7aecbea"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/tag/div/div/div/div[2]/div[@innertext~'^You\ are\ now\ logged\ out,\ y']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="f6b3af90-59e0-426a-84a3-ac070343e8d5"
+				name="InvalidUserMessage"
+				refimgid="d472f244-6e9e-45c6-b2c9-67e5ca0d00c3"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-login']/div/div/div/div[2]/div[@innertext&gt;'Invalid username']
+				</item>
 			</folder>
 			<folder
 			addcaps="unknown,webelement,divtag"
@@ -770,6 +788,38 @@ rxversion="8.0">
 				</basepath>
 			</folder>
 			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="e620482b-586c-4e2c-83fe-493dc3f1b22e"
+			isrooted="True"
+			name="UserMenu"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="5ce3e130-33b1-4f66-9a98-a8e27f4c6fb4"
+				name="Expand"
+				refimgid="48281a59-b1dc-4222-a990-7d6bb6806586"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~$DOM]/span[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="1f8b275c-e312-423f-ab19-2b4cc77fedbc"
+				name="LogoutButton"
+				refimgid="952fb1d6-2dac-4996-b6ac-4d4cb5a46f85"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[5]/div/ul/li[2]/a[@innertext='Logout']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[5]/?/?/ul/?/?/a[@innertext='Logout']
+				</item>
+				<basepath>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div
+				</basepath>
+			</folder>
+			<folder
 			capname="divtag"
 			id="c2ed9139-043e-4478-b7b7-d79970f90d80"
 			isrooted="True"
@@ -966,6 +1016,16 @@ rxversion="8.0">
 			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'bar-1']/div/div[2]/div"
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//div[#'bar-1']/div/div[2]/div
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f"
+			name="Studies"
+			refimgid="cd4c6b5e-93ed-42f7-bb25-60fdae52ee56"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[2]/div/tag[@tagname='cogstate-generic-breadcrumbs']/tag[@tagname='cogstate-generic-breadcrumb']/span[@innertext='Studies']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[2]//span[@innertext='Studies']
 			</item>
 			<basepath>
 				/dom[@domain=$DOM]

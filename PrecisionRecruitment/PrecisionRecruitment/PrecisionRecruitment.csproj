@@ -617,6 +617,18 @@
       <id>8768abd2-4850-4204-94b2-ab46833ceb31</id>
       <BoundTo>45eaf1b8-bd82-48a2-b208-c277edebd81d</BoundTo>
     </Compile>
+    <Compile Include="NavigationModules\Click_Logout.cs">
+      <BoundTo>89994cc6-1bcb-4f4a-b043-515526cc4ef0</BoundTo>
+      <DependentUpon>Click_Logout.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>88fdfbe1-fb52-4b4e-ac8b-42f78cd65355</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Logout.UserCode.cs">
+      <BoundTo>89994cc6-1bcb-4f4a-b043-515526cc4ef0</BoundTo>
+      <DependentUpon>Click_Logout.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>98f266cd-2f43-488b-9fc7-ae01b16e8252</id>
+    </Compile>
     <Compile Include="NavigationModules\Click_Publish_Workflow.cs">
       <DependentUpon>Click_Publish_Workflow.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -844,6 +856,30 @@
       <UserCode>true</UserCode>
       <id>d32b553f-47db-4e91-836a-12a8005c467c</id>
       <BoundTo>ae55dcad-7e93-4fca-b9b8-4a45f78c77d0</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_LoggedIn_User.cs">
+      <BoundTo>ee1cf76e-6d8d-408b-8475-97c2ee354412</BoundTo>
+      <DependentUpon>Validate_LoggedIn_User.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2268a988-b3d3-45d6-a8c3-8b2f35db9e3c</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_LoggedIn_User.UserCode.cs">
+      <BoundTo>ee1cf76e-6d8d-408b-8475-97c2ee354412</BoundTo>
+      <DependentUpon>Validate_LoggedIn_User.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e8dcb53-af70-43c0-9d0a-47feda5ebc71</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Login_Fail.cs">
+      <BoundTo>7cde0212-6657-48b0-b731-e5e2791c162d</BoundTo>
+      <DependentUpon>Validate_Login_Fail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eba85148-9385-4bdd-84f8-258472a7035f</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Login_Fail.UserCode.cs">
+      <BoundTo>7cde0212-6657-48b0-b731-e5e2791c162d</BoundTo>
+      <DependentUpon>Validate_Login_Fail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>088676e2-8fef-4904-b614-b70b9d8e81e5</id>
     </Compile>
     <Compile Include="ValidationModules\Validate_StudyEntry.cs">
       <DependentUpon>Validate_StudyEntry.rxrec</DependentUpon>
@@ -1114,6 +1150,11 @@
       <id>45eaf1b8-bd82-48a2-b208-c277edebd81d</id>
       <recordtableid>4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_Logout.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>89994cc6-1bcb-4f4a-b043-515526cc4ef0</id>
+      <recordtableid>fd6a4ea1-d179-4dbb-a14a-289e7cdf9c18</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_Publish_Workflow.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>4c7b112d-564c-460a-9572-66b7c9c73562</id>
@@ -1217,10 +1258,26 @@
       <id>02749ac1-a75d-446a-8b43-efabb76cee66</id>
       <recordtableid>6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53</recordtableid>
     </None>
+    <Content Include="UserConnector.csv">
+      <BoundTo>9ccfdd11-47ca-413a-8c8e-82d3c005a4eb</BoundTo>
+      <DependentUpon>PrecisionRecruitment.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>8f7851ae-1c4c-4fa3-bbe4-40bbce56f1f7</id>
+    </Content>
     <None Include="ValidationModules\Validate_BatteryEntry.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>ae55dcad-7e93-4fca-b9b8-4a45f78c77d0</id>
       <recordtableid>41eae272-e70a-4c8c-976b-316352274ed1</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_LoggedIn_User.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>ee1cf76e-6d8d-408b-8475-97c2ee354412</id>
+      <recordtableid>5a84ea2c-c357-4c32-a73b-c982fc0f68ed</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Login_Fail.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>7cde0212-6657-48b0-b731-e5e2791c162d</id>
+      <recordtableid>d2839436-6f50-48ac-aa62-ee3a185c75b9</recordtableid>
     </None>
     <None Include="ValidationModules\Validate_StudyEntry.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

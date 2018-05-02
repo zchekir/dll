@@ -106,6 +106,8 @@ namespace PrecisionRecruitment.ValidationModules
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AssemblyVersionInfo, "InnerText", Version);
             Delay.Milliseconds(100);
             
+            Report.Screenshot(ReportLevel.Info, "User", "DEVOPS Info", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));
+            
         }
 
 #region Image Feature Data
