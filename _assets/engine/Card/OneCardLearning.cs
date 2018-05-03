@@ -137,6 +137,7 @@ namespace engine.Card
 			Delay.Duration(feedbackTime);
 			
 			while (!finished) {
+				
 				cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
 				
 				//Compare card displayed to each card that has been shown prevously
@@ -206,6 +207,9 @@ namespace engine.Card
 			
 			
 			while (!finished) {
+				
+				//Report.Info("Trial Number: " + trialNumber); //Debugging
+				
 				cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
 				
 				//Compare card displayed to each card that has been shown prevously

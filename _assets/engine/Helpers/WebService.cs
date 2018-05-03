@@ -97,7 +97,7 @@ namespace engine.Helpers
 	
 	public class QualificationStatusJSONResponse
 	{
-		public string status { get; set; }
+		public string assessmentAttemptQualificationStatus { get; set; }
 		
 		public QualificationStatusJSONResponse()
 		{
@@ -177,12 +177,26 @@ namespace engine.Helpers
         	httpRequest.Method = "POST";
         	httpRequest.Headers.Add("Authorization", AuthToken);
         	
+        	//Check if external id is empty and generate a random number if true
+        	if (externalId == "")
+        	{
+        		Report.Info("No External id passed through, generating external id...");
+        		Random r = new Random();
+        	
+        		int number = r.Next(1,999999);
+        		externalId = number.ToString();
+        	}
+        	
         	//Create JSON object containing demographics and study details
         	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode + randNum);
+        	
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
         	{
         		string json = new JavaScriptSerializer().Serialize(assessmentObject);
+        		
+        		//Debugging Request
+        		Report.Info("Data to send: " + json);
         		
         		sw.Write(json);
         		sw.Flush();
@@ -215,10 +229,10 @@ namespace engine.Helpers
         /// within a user code collection.
         /// </summary>
         [UserCodeMethod]
-        public static void GetQualificationStatus(string randNum, string DOM, string studyProtocolName, string testIdentifier)
+        public static void GetQualificationStatus(string randNum, string DOM, string studyProtocolName)
         {
         	//Setup API call
-        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/assessmentattempt/" + testIdentifier + "/qualificationstatus");
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/assessmentattempt/" + TestIdentifier + "/qualificationstatus");
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "GET";
         	httpRequest.Headers.Add("Authorization", AuthToken);
@@ -232,7 +246,7 @@ namespace engine.Helpers
         		string response = sr.ReadToEnd();
         		responseObject = new JavaScriptSerializer().Deserialize<QualificationStatusJSONResponse>(response);
         		
-        		QualificationStatus = responseObject.status;
+        		QualificationStatus = responseObject.assessmentAttemptQualificationStatus;
         	}
         	
         	Report.Log(ReportLevel.Info, "Status", "Qualification Status: " + QualificationStatus);

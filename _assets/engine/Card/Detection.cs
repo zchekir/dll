@@ -96,6 +96,9 @@ namespace engine
 			
 			//Continue to make responses for 38 trials (35 for real task and 3 for demo task)
 			while (!finished) {
+				
+				//Report.Info("Trial Number: " + trialNumber); //Debugging
+				
 				Delay.Duration(feedbackTime);
 				
 				Keyboard.Press("k");

@@ -133,6 +133,8 @@ namespace engine
 			//Continue to make correct responses until requried correct has been met
 			while (!finished) {
 				
+				//Report.Info("Trial Number: " + trialNumber + "True Positive: " + tPos + " True Negative: " + tNeg); //Debugging
+				
 				cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
 				//Report.Log(ReportLevel.Info, "start image compare");
 				match = Imaging.Contains(cardDisplayed, redJoker);

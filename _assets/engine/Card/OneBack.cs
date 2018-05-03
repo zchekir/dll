@@ -68,6 +68,7 @@ namespace engine.Card
 			Delay.Duration(5500);
 			
 			while (!finished) {
+				
 				cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
 				
 				match = Imaging.Contains(previousCard, cardDisplayed);
@@ -139,6 +140,9 @@ namespace engine.Card
 			
 			//continue to make correct responses untill required correct has been met
 			while (!finished) {
+				
+				//Report.Info("Trial Number: " + trialNumber + "True Positive: " + tPos + " True Negative: " + tNeg); //Debugging
+				
 				cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
 				
 				match = Imaging.Contains(previousCard, cardDisplayed);
