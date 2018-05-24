@@ -108,15 +108,15 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.AddRoleButton' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleButton.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleButton.Click(300);
+            Delay.Milliseconds(0);
             
             SelectStudyToAdd();
             Delay.Milliseconds(0);
@@ -125,8 +125,8 @@ namespace PrecisionRecruitment.InputModules
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckbox' at 7;6.", repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckboxInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckbox.Click("7;6");
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckbox.Click("7;6", 300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(4));
             Delay.Duration(1500, false);

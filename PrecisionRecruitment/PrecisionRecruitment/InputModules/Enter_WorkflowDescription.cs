@@ -96,23 +96,23 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowDescription' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.PressKeys(WorkflowDescription);
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(20);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$WorkflowDescription) on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, "TagValue", WorkflowDescription);

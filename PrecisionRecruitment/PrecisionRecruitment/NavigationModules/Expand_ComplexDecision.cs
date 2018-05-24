@@ -83,14 +83,14 @@ namespace PrecisionRecruitment.NavigationModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecision' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecisionInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecision.Click();
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecision.Click(300);
             Delay.Milliseconds(200);
             
         }

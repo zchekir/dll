@@ -31,13 +31,13 @@ rxversion="8.0">
 		True
 	</recorder.usekeystrokeoptimizationkey>
 	<recorder.mousemovetime>
-		300ms
+		100ms
 	</recorder.mousemovetime>
 	<recorder.mouseactiontime>
-		500ms
+		100ms
 	</recorder.mouseactiontime>
 	<recorder.keyactiontime>
-		100ms
+		10ms
 	</recorder.keyactiontime>
 	<recorder.keysequencesplittime>
 		500ms
@@ -377,6 +377,23 @@ rxversion="8.0">
 		False
 	</Telemetry.Enabled>
 	<Endpoints.Data>
+		&lt;![CDATA[{
+  &quot;webdriver.remote&quot;: [
+    {
+      &quot;Id&quot;: &quot;1b493cc3-aa80-4eba-b1d4-9b3001cb681b&quot;,
+      &quot;ControlFlags&quot;: 0,
+      &quot;CoreData&quot;: {},
+      &quot;PluginData&quot;: {
+        &quot;capabilities&quot;: &quot;&quot;
+      },
+      &quot;MetaData&quot;: {},
+      &quot;Description&quot;: &quot;&quot;,
+      &quot;DisplayName&quot;: &quot;SeleniumGrid&quot;,
+      &quot;Url&quot;: &quot;http://10.0.2.15:4444/wd/hub&quot;,
+      &quot;Tags&quot;: []
+    }
+  ]
+}]]&gt;
 	</Endpoints.Data>
 	<TestCase.Retry.Count>
 		0

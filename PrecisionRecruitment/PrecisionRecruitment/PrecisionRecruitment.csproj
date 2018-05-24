@@ -245,14 +245,14 @@
       <id>8362747e-eb43-43d5-89ed-aad9ca9b2024</id>
       <BoundTo>0d5374a1-ecfe-43f7-b35d-c664be951c42</BoundTo>
     </Compile>
-    <Compile Include="InputModules\Enter_BatteryPopulation.cs">
-      <DependentUpon>Enter_BatteryPopulation.rxrec</DependentUpon>
+    <Compile Include="InputModules\Enter_Healthy_BatteryPopulation.cs">
+      <DependentUpon>Enter_Healthy_BatteryPopulation.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>d547630b-a74f-4908-b6fd-b7f95e657fdd</id>
       <BoundTo>0138c44a-1b8a-4e44-82a6-5ad10406a2c1</BoundTo>
     </Compile>
-    <Compile Include="InputModules\Enter_BatteryPopulation.UserCode.cs">
-      <DependentUpon>Enter_BatteryPopulation.rxrec</DependentUpon>
+    <Compile Include="InputModules\Enter_Healthy_BatteryPopulation.UserCode.cs">
+      <DependentUpon>Enter_Healthy_BatteryPopulation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>2616f14f-50c6-4254-ae82-b74a0596ef2d</id>
       <BoundTo>0138c44a-1b8a-4e44-82a6-5ad10406a2c1</BoundTo>
@@ -269,14 +269,14 @@
       <id>796485b4-ecd7-47b1-93ef-dc844e9ae41a</id>
       <BoundTo>9ff8f65e-592d-4c81-828d-f2534916d4bb</BoundTo>
     </Compile>
-    <Compile Include="InputModules\Enter_BatteryTemplate.cs">
-      <DependentUpon>Enter_BatteryTemplate.rxrec</DependentUpon>
+    <Compile Include="InputModules\Enter_CBB_BatteryTemplate.cs">
+      <DependentUpon>Enter_CBB_BatteryTemplate.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>bb20d7cd-1e74-4f86-bb22-e322fe00657b</id>
       <BoundTo>4952e5e7-b087-425d-9961-eff752aaaa50</BoundTo>
     </Compile>
-    <Compile Include="InputModules\Enter_BatteryTemplate.UserCode.cs">
-      <DependentUpon>Enter_BatteryTemplate.rxrec</DependentUpon>
+    <Compile Include="InputModules\Enter_CBB_BatteryTemplate.UserCode.cs">
+      <DependentUpon>Enter_CBB_BatteryTemplate.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ded892a9-1d00-4b2f-b5d3-08c19648ca7f</id>
       <BoundTo>4952e5e7-b087-425d-9961-eff752aaaa50</BoundTo>
@@ -521,6 +521,18 @@
       <id>44b500b4-b4ea-48da-a6ab-a31e335f6e84</id>
       <BoundTo>81867dec-ce58-40fe-b151-5357470342c6</BoundTo>
     </Compile>
+    <Compile Include="InputModules\Upload_RawData.cs">
+      <BoundTo>9c3cbe88-76d0-476e-b8ee-010ba94f9a52</BoundTo>
+      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>97b60b7b-7fea-4425-b1d6-5380ac5091ad</id>
+    </Compile>
+    <Compile Include="InputModules\Upload_RawData.UserCode.cs">
+      <BoundTo>9c3cbe88-76d0-476e-b8ee-010ba94f9a52</BoundTo>
+      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ca2c4d1e-d93c-450a-b936-2730179002af</id>
+    </Compile>
     <Compile Include="NavigationModules\Click_Add_Battery.cs">
       <DependentUpon>Click_Add_Battery.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -605,6 +617,18 @@
       <id>b3448dd0-7719-4f3f-a2b0-340bdd5a38e5</id>
       <BoundTo>05f4b6fc-66d6-4dbe-be27-8f33a49c4623</BoundTo>
     </Compile>
+    <Compile Include="NavigationModules\Click_ForgotPassword.cs">
+      <DependentUpon>Click_ForgotPassword.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1306c19b-d883-4c61-ae76-69aee5fb1e3a</id>
+      <BoundTo>a63ac6b4-d264-49cc-86ce-a2724407c23d</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_ForgotPassword.UserCode.cs">
+      <DependentUpon>Click_ForgotPassword.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>07d51898-bc7e-48de-84ca-a224c4a944f5</id>
+      <BoundTo>a63ac6b4-d264-49cc-86ce-a2724407c23d</BoundTo>
+    </Compile>
     <Compile Include="NavigationModules\Click_LoginButton.cs">
       <DependentUpon>Click_LoginButton.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -628,6 +652,18 @@
       <DependentUpon>Click_Logout.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>98f266cd-2f43-488b-9fc7-ae01b16e8252</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_ForgotPassword_OKButton.cs">
+      <BoundTo>6182f58d-a0e6-4dae-b53b-e3bdfebdf7e1</BoundTo>
+      <DependentUpon>Click_ForgotPassword_OKButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a59e6ec-82b8-4c8b-89ab-a8d95f65913d</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_ForgotPassword_OKButton.UserCode.cs">
+      <BoundTo>6182f58d-a0e6-4dae-b53b-e3bdfebdf7e1</BoundTo>
+      <DependentUpon>Click_ForgotPassword_OKButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e678ba5-906b-42f7-93d2-f2cc734d4c91</id>
     </Compile>
     <Compile Include="NavigationModules\Click_Publish_Workflow.cs">
       <DependentUpon>Click_Publish_Workflow.rxrec</DependentUpon>
@@ -824,6 +860,18 @@
       <UserCode>true</UserCode>
       <id>81e1f26b-7833-4d83-8f5f-0b0b3beed230</id>
     </Compile>
+    <Compile Include="Open_Unsecure_Browser.cs">
+      <BoundTo>74aef038-e93f-4db5-bdda-6624b1191545</BoundTo>
+      <DependentUpon>Open_Unsecure_Browser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61ecc0f7-a065-444a-9b28-29ce06c9ba11</id>
+    </Compile>
+    <Compile Include="Open_Unsecure_Browser.UserCode.cs">
+      <BoundTo>74aef038-e93f-4db5-bdda-6624b1191545</BoundTo>
+      <DependentUpon>Open_Unsecure_Browser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>05d555ad-1b4d-4e14-a1fd-36406da04e25</id>
+    </Compile>
     <Compile Include="PrecisionRecruitmentRepository.cs">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <DependentUpon>PrecisionRecruitmentRepository.rxrep</DependentUpon>
@@ -856,6 +904,30 @@
       <UserCode>true</UserCode>
       <id>d32b553f-47db-4e91-836a-12a8005c467c</id>
       <BoundTo>ae55dcad-7e93-4fca-b9b8-4a45f78c77d0</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_ForgotPasswordPage.cs">
+      <BoundTo>760780c1-66d7-4900-9ed3-ba46e627d085</BoundTo>
+      <DependentUpon>Validate_ForgotPasswordPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c531d084-12e5-4eb6-aa16-bab5b95f33fe</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_ForgotPasswordPage.UserCode.cs">
+      <BoundTo>760780c1-66d7-4900-9ed3-ba46e627d085</BoundTo>
+      <DependentUpon>Validate_ForgotPasswordPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eb3f56dc-40b7-4b92-985f-f4d2a7b10ddf</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_ForgotPassword_Sent.cs">
+      <BoundTo>d5950e4e-9182-40ad-a2cd-d8718682739f</BoundTo>
+      <DependentUpon>Validate_ForgotPassword_Sent.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6153760a-acb0-4004-9062-1a194db07e0f</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_ForgotPassword_Sent.UserCode.cs">
+      <BoundTo>d5950e4e-9182-40ad-a2cd-d8718682739f</BoundTo>
+      <DependentUpon>Validate_ForgotPassword_Sent.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b99232aa-f2af-402d-8019-a380e5c2c868</id>
     </Compile>
     <Compile Include="ValidationModules\Validate_LoggedIn_User.cs">
       <BoundTo>ee1cf76e-6d8d-408b-8475-97c2ee354412</BoundTo>
@@ -916,6 +988,18 @@
       <UserCode>true</UserCode>
       <id>c7c59f95-64a1-4304-a0a8-973e1de3fcf8</id>
       <BoundTo>7a2d583c-8a51-48df-a312-67953eb44e28</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Verify_Secure_URL.cs">
+      <BoundTo>027bca48-a0f1-4650-80d6-05869e2e5dc6</BoundTo>
+      <DependentUpon>Verify_Secure_URL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fcd90b0e-53d3-48a8-a0bb-2ab93ad8359d</id>
+    </Compile>
+    <Compile Include="ValidationModules\Verify_Secure_URL.UserCode.cs">
+      <BoundTo>027bca48-a0f1-4650-80d6-05869e2e5dc6</BoundTo>
+      <DependentUpon>Verify_Secure_URL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b822381a-dd53-46f2-ad21-7b3b09816bde</id>
     </Compile>
     <Compile Include="ValidationModules\Verify_Version_Deployed.cs">
       <DependentUpon>Verify_Version_Deployed.rxrec</DependentUpon>
@@ -995,7 +1079,7 @@
       <id>0d5374a1-ecfe-43f7-b35d-c664be951c42</id>
       <recordtableid>157f6f2d-b2ab-4440-b182-aa4e196e76d6</recordtableid>
     </None>
-    <None Include="InputModules\Enter_BatteryPopulation.rxrec">
+    <None Include="InputModules\Enter_Healthy_BatteryPopulation.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>0138c44a-1b8a-4e44-82a6-5ad10406a2c1</id>
       <recordtableid>bf386df6-7470-4bdb-a22c-c83c0cd68c78</recordtableid>
@@ -1005,7 +1089,7 @@
       <id>9ff8f65e-592d-4c81-828d-f2534916d4bb</id>
       <recordtableid>0c2c767f-e13f-48a0-b6ce-dcf98f17afdf</recordtableid>
     </None>
-    <None Include="InputModules\Enter_BatteryTemplate.rxrec">
+    <None Include="InputModules\Enter_CBB_BatteryTemplate.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>4952e5e7-b087-425d-9961-eff752aaaa50</id>
       <recordtableid>4a19ca31-0752-4236-9479-f775e863b5b3</recordtableid>
@@ -1110,6 +1194,11 @@
       <id>81867dec-ce58-40fe-b151-5357470342c6</id>
       <recordtableid>3c6d2dbb-e5f5-4b81-864c-8ef2d08d8103</recordtableid>
     </None>
+    <None Include="InputModules\Upload_RawData.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>9c3cbe88-76d0-476e-b8ee-010ba94f9a52</id>
+      <recordtableid>366bcb1e-0676-491a-b683-f0b0918c5c82</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_Add_Battery.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>d0d31c20-dffc-4309-bc08-efbd13ad6e72</id>
@@ -1145,6 +1234,11 @@
       <id>05f4b6fc-66d6-4dbe-be27-8f33a49c4623</id>
       <recordtableid>87fa94c0-fd9a-48b5-b2d8-c6c921ec6b9a</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_ForgotPassword.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>a63ac6b4-d264-49cc-86ce-a2724407c23d</id>
+      <recordtableid>cc08397c-faf9-47ec-bee4-e81104cdde44</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_LoginButton.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>45eaf1b8-bd82-48a2-b208-c277edebd81d</id>
@@ -1154,6 +1248,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>89994cc6-1bcb-4f4a-b043-515526cc4ef0</id>
       <recordtableid>fd6a4ea1-d179-4dbb-a14a-289e7cdf9c18</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_ForgotPassword_OKButton.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>6182f58d-a0e6-4dae-b53b-e3bdfebdf7e1</id>
+      <recordtableid>8e6168f4-a4d0-4eca-b7a3-c726e50216d8</recordtableid>
     </None>
     <None Include="NavigationModules\Click_Publish_Workflow.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -1242,6 +1341,11 @@
       <id>c35a100f-2b6c-47c1-a1de-f542b0d49c7d</id>
       <recordtableid>e44fcd34-b6f7-45d7-a5e7-a70ce735fdec</recordtableid>
     </None>
+    <None Include="Open_Unsecure_Browser.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>74aef038-e93f-4db5-bdda-6624b1191545</id>
+      <recordtableid>a49733ee-3a8a-44f4-ab4b-94acfbe959dd</recordtableid>
+    </None>
     <None Include="PrecisionRecruitmentRepository.rximg">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <DependentUpon>PrecisionRecruitmentRepository.rxrep</DependentUpon>
@@ -1264,10 +1368,32 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>8f7851ae-1c4c-4fa3-bbe4-40bbce56f1f7</id>
     </Content>
+    <None Include="rawData\40yo_Tier1.txt">
+      <id>471cee21-5235-4f02-86db-28f3d38c2a8b</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\40yo_Tier2.txt">
+      <id>2ab7d18c-25fb-4b31-a488-1d8615f5c5df</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\40yo_Tier3.txt">
+      <id>5720740b-c0c2-45b9-bc6d-cd2391b3c543</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ValidationModules\Validate_BatteryEntry.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>ae55dcad-7e93-4fca-b9b8-4a45f78c77d0</id>
       <recordtableid>41eae272-e70a-4c8c-976b-316352274ed1</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_ForgotPasswordPage.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>760780c1-66d7-4900-9ed3-ba46e627d085</id>
+      <recordtableid>cedc20f0-3e97-4908-82db-51ed4c0cf551</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_ForgotPassword_Sent.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>d5950e4e-9182-40ad-a2cd-d8718682739f</id>
+      <recordtableid>7dbf4cf2-1b32-4655-9ea5-892d9a2bb60d</recordtableid>
     </None>
     <None Include="ValidationModules\Validate_LoggedIn_User.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -1293,6 +1419,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>7a2d583c-8a51-48df-a312-67953eb44e28</id>
       <recordtableid>836fd9cf-e062-444a-811a-2b47a26ac4ef</recordtableid>
+    </None>
+    <None Include="ValidationModules\Verify_Secure_URL.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>027bca48-a0f1-4650-80d6-05869e2e5dc6</id>
+      <recordtableid>8720e4ed-cabc-4f47-8984-b71fc93cb4df</recordtableid>
     </None>
     <None Include="ValidationModules\Verify_Version_Deployed.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -1328,6 +1459,9 @@
     </Folder>
     <Folder Include="APIModules">
       <id>ab63cb7d-8979-452c-93ac-b2a78ea56b5e</id>
+    </Folder>
+    <Folder Include="rawData">
+      <id>79cd4757-ffad-4750-ad06-a48ef1027106</id>
     </Folder>
     <Folder Include="ValidationModules">
       <id>1476de45-13a4-422d-be4a-48f4b4cfdc98</id>

@@ -96,19 +96,19 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.Click();
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.Click(300);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VisitName' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys(VisitName);

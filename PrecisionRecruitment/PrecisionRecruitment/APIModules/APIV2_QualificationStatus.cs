@@ -108,12 +108,15 @@ namespace PrecisionRecruitment.APIModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
+            Delay.Duration(10000, false);
+            
             engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolID);
             Delay.Milliseconds(0);
             

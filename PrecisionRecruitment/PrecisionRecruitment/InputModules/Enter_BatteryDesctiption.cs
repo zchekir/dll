@@ -96,23 +96,23 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField' at 85;27.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.Click("85;27");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryDescription' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.PressKeys(BatteryDescription);
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(20);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$BatteryDescription) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, "TagValue", BatteryDescription);

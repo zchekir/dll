@@ -83,14 +83,14 @@ namespace PrecisionRecruitment.NavigationModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.PublishButton' at 13;13.", repo.CogstateSolutionPlatform.Expanded.PublishButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.Expanded.PublishButton.Click("13;13");
+            repo.CogstateSolutionPlatform.Expanded.PublishButton.Click("13;13", 300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'CogstateSolutionPlatform.Expanded.PublishButtonDisabled'", repo.CogstateSolutionPlatform.Expanded.PublishButtonDisabledInfo, new ActionTimeout(30000), new RecordItemIndex(1));

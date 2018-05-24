@@ -33,7 +33,7 @@ namespace engine.Card
         
         /// <summary>
         /// This will pick up from the OneBackLearn Instructions screen and
-        /// just complete the test
+        /// just complete the learn test
         /// </summary>
         [UserCodeMethod]
         public static void RunOneBackLearn(String DOM)
@@ -41,13 +41,16 @@ namespace engine.Card
         	//Initialise Variables
             Imaging.FindOptions.Default.Similarity = 0.999;
             Bitmap previousCard;
-            Bitmap cardDisplayed;
-            int x = 355, y = 180, width = 350, height = 420;
+            Bitmap cardDisplayed = null;
+            Bitmap cardCorner;
+            //int x = 355, y = 180, width = 350, height = 420;
+            int xCrop = 380, yCrop = 210, widthCrop = 35, heightCrop = 115; //Crop only card number and suit
             int tPos = 0, tNeg = 0;
             int trialNumber = 0;
             int startDelay = 5000;
             bool finished = false;
             bool match = false;
+            bool facedown = true;
             
 			ButtonTag startButton = "/dom[@domain='" + DOM + "']//button[#'instructions_button']";
             
@@ -58,52 +61,54 @@ namespace engine.Card
 			
 			CanvasTag canvas = "/dom[@domain='" + DOM + "']//div[#displayDiv]/canvas";
 			
+			//Capture the corner of the card while face down to determine when the card turns face up
+			cardCorner = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+			
 			//Wait for first card
-			Delay.Duration(5500);
+			Delay.Duration(startDelay);
 			
 			//Store first card displayed in previousCard as there is no card to compare to yet, saves us having to move it later
-			previousCard = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
+			previousCard = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
 			Keyboard.Press("d");
 			trialNumber++;
-			Delay.Duration(5500);
 			
+			//Continue to make responses until required correct has been met
 			while (!finished) {
-				
-				cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
+				while (facedown) {
+					cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+					facedown = Imaging.Contains(cardCorner, cardDisplayed);
+					
+					Report.Info("Trial No: " + (trialNumber + 1) + ", Is card facedown? " + facedown);
+				}
 				
 				match = Imaging.Contains(previousCard, cardDisplayed);
+				
 				if (match) {
+					Report.Info("Pressing K Key");
 					Keyboard.Press("k");
 					match = false;
 					tPos++;
 				}
 				else {
+					Report.Info("Pressing D Key");
 					Keyboard.Press("d");
 					previousCard = cardDisplayed;
 					tNeg++;
 				}
 				
 				trialNumber++;
+				facedown = true;
+				Delay.Duration(100);
 				
 				if (trialNumber == 10 && tPos >= 1 && tNeg >= 1)  //Terminate the task if the required conditions are met
 					finished = true;
-				else if (trialNumber == 2 || trialNumber == 6) //Allow extra delay for these trials, prompts are shown on the screen
-					Delay.Duration(6000);
-				else if (trialNumber == 5) //Learn phase 2 starts here, reset the tPos and tNeg counters
-				{ 
-					tPos = 0;
-					tNeg = 0;
-					Delay.Duration(6000);
-				}
-				else
-					Delay.Duration(3000);
 			}
         }
         
         
         /// <summary>
         /// This will pick up from the OneBackTest Instructions screen and
-        /// just complete the test
+        /// just complete the Demo and Real test (seamless)
         /// </summary>
         [UserCodeMethod]
         public static void RunOneBackTest(String DOM)
@@ -111,14 +116,17 @@ namespace engine.Card
         	//Initialise Variables
             Imaging.FindOptions.Default.Similarity = 0.999;
             Bitmap previousCard;
-            Bitmap cardDisplayed;
-            int x = 355, y = 180, width = 350, height = 420;
+            Bitmap cardDisplayed = null;
+            Bitmap cardCorner;
+            //int x = 355, y = 180, width = 350, height = 420;
+            int xCrop = 380, yCrop = 210, widthCrop = 35, heightCrop = 115; //Crop only card number and suit
             int tPos = 0, tNeg = 0;
             int trialNumber = 0;
             int startDelay = 5000;
             bool finished = false;
             bool match = false;
             bool demo = true;
+            bool facedown = true;
             
 			ButtonTag startButton = "/dom[@domain='" + DOM + "']//button[#'instructions_button']";
             
@@ -129,35 +137,46 @@ namespace engine.Card
 			
 			CanvasTag canvas = "/dom[@domain='" + DOM + "']//div[#displayDiv]/canvas";
 			
+			//Capture the corner of the card while face down to determine when the card turns face up
+			cardCorner = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+			
 			//Wait for first card
 			Delay.Duration(2000);
 			
 			//Store first card displayed in previousCard as there is no card to compare to yet, saves us having to move it later
-			previousCard = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
+			previousCard = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
 			Keyboard.Press("d");
 			trialNumber++;
-			Delay.Duration(2000);
 			
 			//continue to make correct responses untill required correct has been met
 			while (!finished) {
-				
-				//Report.Info("Trial Number: " + trialNumber + "True Positive: " + tPos + " True Negative: " + tNeg); //Debugging
-				
-				cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(x, y, width, height));
+				//Constantly check for card turning face up
+				while (facedown) {
+					cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+					facedown = Imaging.Contains(cardCorner, cardDisplayed);
+					
+					Report.Info("Trial No: " + (trialNumber + 1) + ", Is card facedown? " + facedown);
+				}
 				
 				match = Imaging.Contains(previousCard, cardDisplayed);
+				
+				//Make a response and Increment TPos/TNeg/Trial count
 				if (match) {
+					Report.Info("Pressing K Key");
 					Keyboard.Press("k");
 					tPos++;
 					match = false;
 				}
 				else {
+					Report.Info("Pressing D Key");
 					Keyboard.Press("d");
 					tNeg++;
 					previousCard = cardDisplayed;
 				}
 				
 				trialNumber++;
+				facedown = true;
+				Delay.Duration(100);
 				
 				//Check to see if demo is complete
 				//Reset the trial counter once onto the real task
@@ -168,8 +187,6 @@ namespace engine.Card
 				
 				if (trialNumber == 31)
 					finished = true;
-				else
-					Delay.Duration(2000);
 			}
         }
     }

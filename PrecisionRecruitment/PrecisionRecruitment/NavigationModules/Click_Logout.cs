@@ -83,18 +83,18 @@ namespace PrecisionRecruitment.NavigationModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UserMenu.Expand' at 4;3.", repo.CogstateSolutionPlatform.UserMenu.ExpandInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UserMenu.Expand.Click("4;3");
+            repo.CogstateSolutionPlatform.UserMenu.Expand.Click("4;3", 300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UserMenu.LogoutButton' at 46;11.", repo.CogstateSolutionPlatform.UserMenu.LogoutButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.UserMenu.LogoutButton.Click("46;11");
+            repo.CogstateSolutionPlatform.UserMenu.LogoutButton.Click("46;11", 300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.LoginForm.LogoutMessage'.", repo.CogstateSolutionPlatform.LoginForm.LogoutMessageInfo, new RecordItemIndex(2));

@@ -83,19 +83,19 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown' at 74;18.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown.Click("74;18");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdownInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown.Click(300);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.BatteryDraftStatus' at 33;4.", repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatusInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatus.Click("33;4");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.BatteryDraftStatus' at Center.", repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatusInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatus.Click(300);
+            Delay.Milliseconds(0);
             
         }
 

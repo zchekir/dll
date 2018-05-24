@@ -107,27 +107,27 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.CodeNameField' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.CodeNameFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddStudyPage.CodeNameField.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddStudyPage.CodeNameField.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddStudyPage.CodeNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.CodeNameFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddStudyPage.CodeNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CodeName' with focus on 'CogstateSolutionPlatform.AddStudyPage.CodeNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.CodeNameFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddStudyPage.CodeNameField.PressKeys(CodeName);
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(20);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddStudyPage.CodeNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.CodeNameFieldInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.AddStudyPage.CodeNameField.PressKeys(RandNum);
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(20);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$CodeName) on item 'CogstateSolutionPlatform.AddStudyPage.CodeNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.CodeNameFieldInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AddStudyPage.CodeNameFieldInfo, "Value", CodeName);

@@ -83,8 +83,8 @@ namespace PrecisionRecruitment
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -94,8 +94,8 @@ namespace PrecisionRecruitment
             
             Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'CogstateSolutionPlatform.BatteryLoadingBar'", repo.CogstateSolutionPlatform.BatteryLoadingBarInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.BatteryLoadingBarInfo.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.StartInstructions'", repo.CogstateSolutionPlatform.StartInstructionsInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.StartInstructionsInfo.WaitForExists(30000);
             
         }
 

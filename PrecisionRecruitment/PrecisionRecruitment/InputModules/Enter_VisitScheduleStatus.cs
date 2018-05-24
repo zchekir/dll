@@ -83,19 +83,19 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown' at 436;17.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown.Click("436;17");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdownInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown.Click(300);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatus' at 20;13.", repo.CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatusInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatus.Click("20;13");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatus' at Center.", repo.CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatusInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatus.Click(300);
+            Delay.Milliseconds(0);
             
         }
 

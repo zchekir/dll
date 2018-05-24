@@ -83,24 +83,24 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField' at 104;46.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField.Click("104;46");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField.Click(300);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LWin down}l' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField.PressKeys("{LWin down}l");
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField.PressKeys("{LWin down}l", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField' at 104;46.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField.MoveTo("104;46");
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDescriptionField.MoveTo("104;46", 300);
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
-            Delay.Milliseconds(350);
+            Delay.Milliseconds(0);
             
         }
 

@@ -96,30 +96,30 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.PasswordField' at 90;16.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.PasswordField.Click("90;16");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.PasswordField' at Center.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$Password' on item 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.LoginForm.PasswordField.Element.SetAttributeValue("Value", Password);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys(Password, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, "Value", Password);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
-            Keyboard.Press("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{Tab}", 100);
             Delay.Milliseconds(0);
             
         }

@@ -83,22 +83,22 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.Click();
-            Delay.Milliseconds(560);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Ext' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("Ext");
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("Ext", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Enter}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("{Enter}");
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("{Enter}", 100);
             Delay.Milliseconds(0);
             
         }

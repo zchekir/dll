@@ -105,29 +105,29 @@ namespace PrecisionRecruitment.NavigationModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SearchField' at 36;15.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SearchField.Click("36;15");
+            repo.CogstateSolutionPlatform.SearchField.Click("36;15", 300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Studyname' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(Studyname);
+            repo.CogstateSolutionPlatform.SearchField.PressKeys(Studyname, 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum);
+            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum, 100);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
             Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.StudyCard' at Center.", repo.CogstateSolutionPlatform.Expanded.StudyCardInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.Expanded.StudyCard.Click();
+            repo.CogstateSolutionPlatform.Expanded.StudyCard.Click(300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Studyname) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(5));

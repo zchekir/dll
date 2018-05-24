@@ -96,23 +96,23 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.SponsorField' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddStudyPage.SponsorField'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SponsorName' with focus on 'CogstateSolutionPlatform.AddStudyPage.SponsorField'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.PressKeys(SponsorName);
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(20);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$SponsorName) on item 'CogstateSolutionPlatform.AddStudyPage.SponsorField'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, "Value", SponsorName);

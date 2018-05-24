@@ -83,19 +83,23 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.ActiveDropdown' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.ActiveDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddStudyPage.ActiveDropdown.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddStudyPage.ActiveDropdown.Click(300);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.ActiveOption' at Center.", repo.CogstateSolutionPlatform.Expanded.ActiveOptionInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.ActiveOption.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Active' with focus on 'CogstateSolutionPlatform.AddStudyPage.ActiveDropdown'.", repo.CogstateSolutionPlatform.AddStudyPage.ActiveDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddStudyPage.ActiveDropdown.PressKeys("Active", 100);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddStudyPage.ActiveDropdown'.", repo.CogstateSolutionPlatform.AddStudyPage.ActiveDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddStudyPage.ActiveDropdown.PressKeys("{Return}", 100);
+            Delay.Milliseconds(0);
             
         }
 

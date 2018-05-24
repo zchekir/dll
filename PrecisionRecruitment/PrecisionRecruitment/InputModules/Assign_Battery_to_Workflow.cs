@@ -105,26 +105,26 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStepInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTabInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab.Click(300);
+            Delay.Milliseconds(0);
             
             SelectBatteryOption();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 28;16.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("28;16");
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("28;16", 300);
+            Delay.Milliseconds(0);
             
         }
 

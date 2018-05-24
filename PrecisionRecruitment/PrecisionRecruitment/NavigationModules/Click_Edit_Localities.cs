@@ -83,18 +83,18 @@ namespace PrecisionRecruitment.NavigationModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SettingsTab' at Center.", repo.CogstateSolutionPlatform.SettingsTabInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SettingsTab.Click();
+            repo.CogstateSolutionPlatform.SettingsTab.Click(300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudySettings.EditButton' at 11;7.", repo.CogstateSolutionPlatform.StudySettings.EditButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.StudySettings.EditButton.Click("11;7");
+            repo.CogstateSolutionPlatform.StudySettings.EditButton.Click("11;7", 300);
             Delay.Milliseconds(200);
             
         }

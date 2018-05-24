@@ -36,9 +36,9 @@ rxversion="8.0">
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="100ms"
 		enabled="True"
-		loc="172;18"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="3e8cb465-5b44-42d6-9e5d-a7bf091c54b1"
@@ -434,7 +434,7 @@ KKAP/9k=
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="17a005b2-f0fd-47b5-a917-005f00f92573">
 			<comment>
 			</comment>
@@ -448,29 +448,29 @@ KKAP/9k=
 				</path>
 			</info>
 		</keysequenceitem>
-		<setvaluerecorditem
-		attrname="Value"
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="10ms"
 		enabled="True"
 		optional="False"
-		searchpropertyid="edfc51b4-1787-4fb8-90a3-a11af4cadb56">
+		presstime="1ms"
+		searchpropertyid="b167c187-1cf5-4324-8786-49efdd1427af">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="AttributeValue"
+				target="KeySequence"
 				variable="Email">
 				</binding>
 			</bindings>
 			<info
 			id="89c23801-d548-450e-8fb9-36bc5e224785"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain=$DOM]//input[#'loginEmail']
 				</path>
 			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
+		</keysequenceitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

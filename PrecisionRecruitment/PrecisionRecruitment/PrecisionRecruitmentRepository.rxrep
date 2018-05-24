@@ -472,6 +472,44 @@ rxversion="8.0">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-login']/div/div/div/div[2]/div[@innertext&gt;'Invalid username']
 				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="fbab6271-1325-470a-8fd9-031be0696cc5"
+				name="ForgotYourPassword"
+				refimgid="0d9c459d-5494-48e1-8861-e00f08b4a55d"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div/tag/div/div/div/div[3]/form/div[2]/a[@innertext='Forgot your password?']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[2]/a[@innertext='Forgot your password?']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="e715aeef-1a71-4634-8176-ea01c98e310d"
+				name="ForgotPasswordPrompt"
+				refimgid="39a1cdc5-2390-47e3-a792-3d6b38456715"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/tag/div//label[@innertext&gt;'If your email address']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="fb35086c-c995-4596-ab6e-aaaf6587fc37"
+				name="ForgotPasswordOkButton"
+				refimgid="7a507663-1693-467a-9262-7621a56867d9"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div/tag/div/div/div/div[3]/form/div/button[2]"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-forgot']/div/div/div/div[3]/form[@name='_form']/div/button[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="1eed3fcb-f698-4467-95cb-ae91060f05bb"
+				name="ForgotPasswordConfirmation"
+				refimgid="d9aa02d5-07ef-4dea-a4d1-71a3e5d787e6"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-sent']/div/div/div/div[2]/div[@innertext~'Please check your email']
+				</item>
 			</folder>
 			<folder
 			addcaps="unknown,webelement,divtag"
@@ -535,16 +573,6 @@ rxversion="8.0">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="340e9ce9-8068-4c25-9f56-eb2c2492fbbd"
-				name="ActiveOption"
-				refimgid="f83bdbf7-fda8-4a5e-b326-c4ad3cfd0cdd"
-				refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div/tag/div/div[3]/tag/div/div/form/tag[@tagname='ng-form']/div[8]"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/tag/div/?/?/form[@method='get']/tag[@tagname='ng-form']/div[8]
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
 				id="a66947c0-414e-4fb9-ace5-2de7984d3eeb"
 				name="AwardedStatus"
 				refimgid="92eb2223-6d8c-40c0-8ff9-a2eef8c5b55d"
@@ -571,16 +599,6 @@ rxversion="8.0">
 				refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div/tag/div/div[3]/tag/tag/tag/div/div/div/div/form/tag[@tagname='ng-form']/div[4]/div/div/label[@innertext='    Population    *  ']"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]/body/div/tag/div/div[3]//tag[@tagname='cogstate-helper-battery-add']/div/div/div/div/form[@method='get']/tag[@tagname='ng-form']/div[4]/?/?/div/label[@innertext='    Population    *  ']
-				</item>
-				<item
-				addcaps="unknown,webelement,labeltag"
-				capname="labeltag"
-				id="16e9170a-eb10-4155-8268-a13b4977fb41"
-				name="BatteryHealthyPopulation"
-				refimgid="c49b8456-2b6b-436d-a726-123a5f0306d0"
-				refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div/tag/div/div[3]/tag/tag/tag/div/div/div/div/form/tag[@tagname='ng-form']/div[5]/div/div/label[@innertext='    Template    *  ']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]//tag[@tagname='cogstate-helper-battery-add']/div/div/div/div/form[@method='get']/tag[@tagname='ng-form']/div[5]/?/?/div/label[@innertext='    Template    *  ']
 				</item>
 				<item
 				addcaps="unknown,webelement,labeltag"
@@ -1008,16 +1026,6 @@ rxversion="8.0">
 				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[1]/a[@innertext='Settings']
 			</item>
 			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="f42ae654-ce04-4294-9e5a-44d1a545f82a"
-			name="BatteryLoadingBar"
-			refimgid="4ca59de4-071d-4fd9-9886-c04e9487f8ce"
-			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'bar-1']/div/div[2]/div"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'bar-1']/div/div[2]/div
-			</item>
-			<item
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f"
@@ -1026,6 +1034,33 @@ rxversion="8.0">
 			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[2]/div/tag[@tagname='cogstate-generic-breadcrumbs']/tag[@tagname='cogstate-generic-breadcrumb']/span[@innertext='Studies']"
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[2]//span[@innertext='Studies']
+			</item>
+			<item
+			capname="button"
+			id="4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55"
+			name="StartInstructions"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'instructions_button']
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="41136832-35b1-4bfa-9dcb-92e2d111c24b"
+			name="BatteryResults"
+			refimgid="eabc033b-f95b-4b05-88b8-4017cd9d4a91"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//textarea[#'results']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//textarea[#'results']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="5cafea12-8dac-456b-af85-df1546dac229"
+			name="BatterySkip"
+			refimgid="3e5f0113-016c-4723-9732-f7a3dd5da12a"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//button[#'skip']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'skip']
 			</item>
 			<basepath>
 				/dom[@domain=$DOM]

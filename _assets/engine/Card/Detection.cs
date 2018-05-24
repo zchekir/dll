@@ -39,32 +39,42 @@ namespace engine
         {
         	//initialise variables
 			int trialNumber = 0;
+			int xCrop = 380, yCrop = 210, widthCrop = 35, heightCrop = 115; //Crop only card number and suit
 			bool finished = false;
+			bool facedown = true;
 			int startDelay = 5000;
             ButtonTag startButton = "/dom[@domain='" + DOM + "']//button[#'instructions_button']";
+            CanvasTag canvas;
+            Bitmap cardCorner;
+            Bitmap cardDisplayed;
+            Imaging.FindOptions.Default.Similarity = 0.999;
 	
             //wait for start button to become active
 			Delay.Duration(startDelay);
 			
 			startButton.Click();
 			
-			//Make yes responses until task ends
-			//The first couple of trials require longer delay
-			while (!finished)
-			{
-				if (trialNumber == 0) {
-					Delay.Duration(6000);
-				}
-				else if (trialNumber == 1) {
-					Delay.Duration(4500);
-				}
-				else {
-					Delay.Duration(2000);
+			canvas = "/dom[@domain='" + DOM + "']//div[#displayDiv]/canvas";
+			
+			//Capture the corner of the card while face down to determine when the card turns face up
+			cardCorner = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+			
+			//Continue to make correct responses until required correct has been met
+			while (!finished) {
+				//Constantly check for card turning face up
+				while (facedown) {
+					cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+					facedown = Imaging.Contains(cardCorner, cardDisplayed);
+					
+					Report.Info("Trial No: " + (trialNumber + 1) + ", Is card facedown? " + facedown);
 				}
 				
+				Report.Info("Pressing K Key");
 				Keyboard.Press("k");
 				
 				trialNumber++;
+				facedown = true;
+				Delay.Duration(100);
 				
 				if (trialNumber == 5)
 					finished = true;
@@ -72,38 +82,53 @@ namespace engine
         }
         
         
-        
         /// <summary>
         /// This will pick up from the Detection Instructions screen and 
         /// complete the standard configuration which consists of the demo
-        /// and real tests
+        /// and real tests (seamless)
         /// </summary>
         [UserCodeMethod]
         public static void RunDetectionTest(String DOM)
         {
         	//initialise variables
             int trialNumber = 0;
-            int feedbackTime = 2000;
+            int xCrop = 380, yCrop = 210, widthCrop = 35, heightCrop = 115; //Crop only card number and suit
             int maxTrials = 38;
             bool finished = false;
+            bool facedown = true;
             int startDelay = 5000;
             ButtonTag startButton = "/dom[@domain='" + DOM + "']//button[#'instructions_button']";
+            CanvasTag canvas;
+            Bitmap cardCorner;
+            Bitmap cardDisplayed;
+            Imaging.FindOptions.Default.Similarity = 0.999;
             
             //wait for start button to become active
 			Delay.Duration(startDelay);
 			
 			startButton.Click();
 			
+			canvas = "/dom[@domain='" + DOM + "']//div[#displayDiv]/canvas";
+			
+			//Capture the corner of the card while face down to determine when the card turns face up
+			cardCorner = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+			
 			//Continue to make responses for 38 trials (35 for real task and 3 for demo task)
 			while (!finished) {
+				//Constantly check for card turning face up
+				while (facedown) {
+					cardDisplayed = Imaging.Crop(Imaging.CaptureImageAuto(canvas), new Rectangle(xCrop, yCrop, widthCrop, heightCrop));
+					facedown = Imaging.Contains(cardCorner, cardDisplayed);
+					
+					Report.Info("Trial No: " + (trialNumber + 1) + ", Is card facedown? " + facedown);
+				}
 				
-				//Report.Info("Trial Number: " + trialNumber); //Debugging
-				
-				Delay.Duration(feedbackTime);
-				
+				Report.Info("Pressing K Key");				
 				Keyboard.Press("k");
 				
 				trialNumber++;
+				facedown = true;
+				Delay.Duration(100);
 				
 				if (trialNumber == maxTrials)
 					finished = true;

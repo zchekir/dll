@@ -83,19 +83,19 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.StatusDropdown' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.StatusDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddStudyPage.StatusDropdown.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddStudyPage.StatusDropdown.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.AwardedStatus' at Center.", repo.CogstateSolutionPlatform.Expanded.AwardedStatusInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.AwardedStatus.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.Expanded.AwardedStatus.Click(300);
+            Delay.Milliseconds(0);
             
         }
 

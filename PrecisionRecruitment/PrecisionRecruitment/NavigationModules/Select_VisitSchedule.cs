@@ -105,29 +105,29 @@ namespace PrecisionRecruitment.NavigationModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitSchedulesTab' at Center.", repo.CogstateSolutionPlatform.VisitSchedulesTabInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.VisitSchedulesTab.Click();
+            repo.CogstateSolutionPlatform.VisitSchedulesTab.Click(300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VisitScheduleName' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(VisitScheduleName);
+            repo.CogstateSolutionPlatform.SearchField.PressKeys(VisitScheduleName, 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum);
+            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum, 100);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
             Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName' at Center.", repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName.Click();
+            repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName.Click(300);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(5));

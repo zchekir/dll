@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a49733ee-3a8a-44f4-ab4b-94acfbe959dd"
+mode="Global"
+rxversion="8.0">
+	<name>
+		Open_Unsecure_Browser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Open_Unsecure_Browser"
+	namespace="PrecisionRecruitment">
+	</codegen>
+	<variables>
+		<var
+		id="23b189df-64a2-429f-a98b-fca5a15068db"
+		name="DOM">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Open_Unsecure_Browser"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Open_browser"
+		namespace="PrecisionRecruitment"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="44f57a60-d374-4828-960e-a5b98609763f">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Open_Unsecure_Browser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

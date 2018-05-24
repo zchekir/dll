@@ -247,9 +247,9 @@ namespace engine.Helpers
         		responseObject = new JavaScriptSerializer().Deserialize<QualificationStatusJSONResponse>(response);
         		
         		QualificationStatus = responseObject.assessmentAttemptQualificationStatus;
+        		
+        		Report.Log(ReportLevel.Info, "Status", "Qualification Status: " + QualificationStatus);
         	}
-        	
-        	Report.Log(ReportLevel.Info, "Status", "Qualification Status: " + QualificationStatus);
         	
         }
         

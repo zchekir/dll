@@ -96,22 +96,22 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.EmailField' at 172;18.", repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.EmailField.Click("172;18");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.EmailField' at Center.", repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.LoginForm.EmailField.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.LoginForm.EmailField'.", repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.LoginForm.EmailField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Value to '$Email' on item 'CogstateSolutionPlatform.LoginForm.EmailField'.", repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.LoginForm.EmailField.Element.SetAttributeValue("Value", Email);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Email' with focus on 'CogstateSolutionPlatform.LoginForm.EmailField'.", repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.LoginForm.EmailField.PressKeys(Email, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Email) on item 'CogstateSolutionPlatform.LoginForm.EmailField'.", repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo, new RecordItemIndex(3));
@@ -119,7 +119,7 @@ namespace PrecisionRecruitment.InputModules
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
-            Keyboard.Press("{Tab}");
+            Keyboard.Press("{Tab}", 100);
             Delay.Milliseconds(0);
             
         }

@@ -43,7 +43,6 @@ namespace engine
             int startDelay = 5000;
             int feedbackTime = 1500;
             
-            Delay.Duration(5000);
             ButtonTag startButton = "/dom[@domain='" + DOM + "']//button[#'instructions_button']";
             Stopwatch sw = new Stopwatch();
             

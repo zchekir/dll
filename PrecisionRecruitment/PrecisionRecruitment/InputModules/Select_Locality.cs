@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -102,9 +102,9 @@ namespace PrecisionRecruitment.InputModules
             SelectLocality();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.SaveButton' at 33;13.", repo.CogstateSolutionPlatform.Expanded.SaveButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.SaveButton.Click("33;13");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.SaveButton' at Center.", repo.CogstateSolutionPlatform.Expanded.SaveButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.Expanded.SaveButton.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
             Delay.Duration(1000, false);

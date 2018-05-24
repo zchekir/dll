@@ -41,8 +41,8 @@ namespace PrecisionRecruitment.InputModules
         /// </summary>
         public Add_Decision_Criteria_2()
         {
-            Tier1Min = "90";
-            Tier1Max = "95";
+            Tier1Min = "91";
+            Tier1Max = "100";
         }
 
         /// <summary>
@@ -109,39 +109,39 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier1Min' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys(Tier1Min);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.Click(300);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(4));
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(0);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier1Max' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(5));
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys(Tier1Max);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 32;10.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(6));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("32;10");
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("32;10", 300);
+            Delay.Milliseconds(0);
             
         }
 

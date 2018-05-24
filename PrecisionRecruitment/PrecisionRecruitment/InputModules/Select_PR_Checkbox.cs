@@ -83,15 +83,15 @@ namespace PrecisionRecruitment.InputModules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.PrecisionRecreuitmentCheckbox' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.PrecisionRecreuitmentCheckboxInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddStudyPage.PrecisionRecreuitmentCheckbox.Click();
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddStudyPage.PrecisionRecreuitmentCheckbox.Click(300);
+            Delay.Milliseconds(0);
             
         }
 
