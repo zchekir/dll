@@ -30,6 +30,7 @@ rxversion="8.0">
 		<var
 		id="553e355a-3de3-4941-95ce-d6902f51f04c"
 		name="Studyname">
+			Ranorex
 		</var>
 		<var
 		id="d820780f-6115-40b8-8278-c22d3703bd0c"
@@ -377,6 +378,15 @@ AFn4UUXP+s/CikM//9k=
 				</path>
 			</info>
 		</keysequenceitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Wait for results to load
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<explicitdelayitem
 		duration="1000ms"
 		enabled="True"
@@ -386,6 +396,15 @@ AFn4UUXP+s/CikM//9k=
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Continue on with Tests
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<mouseitem
 		action="Click"
 		button="Left"

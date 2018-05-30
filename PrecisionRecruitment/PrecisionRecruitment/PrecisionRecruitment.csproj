@@ -209,6 +209,30 @@
       <id>349a9ae9-5cd2-44d2-9844-3c7d877fd40e</id>
       <BoundTo>c4e14abe-77a1-43f9-bbc0-607b88477327</BoundTo>
     </Compile>
+    <Compile Include="InputModules\Clear_BatteryName_Field.cs">
+      <BoundTo>6fbf54df-9657-4d36-b2aa-c7010e2a289a</BoundTo>
+      <DependentUpon>Clear_BatteryName_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>87db79ab-761b-4f13-8254-e408ea0bc520</id>
+    </Compile>
+    <Compile Include="InputModules\Clear_BatteryName_Field.UserCode.cs">
+      <BoundTo>6fbf54df-9657-4d36-b2aa-c7010e2a289a</BoundTo>
+      <DependentUpon>Clear_BatteryName_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>759831fd-4be2-40d6-96d1-0c52f36ac4c8</id>
+    </Compile>
+    <Compile Include="InputModules\Clear_VisitScheduleName_Field.cs">
+      <BoundTo>b5c34fdb-3928-40ad-95cf-22ed27e90c28</BoundTo>
+      <DependentUpon>Clear_VisitScheduleName_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>668c974e-0792-4aa3-85f8-547a6738df17</id>
+    </Compile>
+    <Compile Include="InputModules\Clear_VisitScheduleName_Field.UserCode.cs">
+      <BoundTo>b5c34fdb-3928-40ad-95cf-22ed27e90c28</BoundTo>
+      <DependentUpon>Clear_VisitScheduleName_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>62ddcd9d-de0e-4210-ac85-11e25c2f94e5</id>
+    </Compile>
     <Compile Include="InputModules\Enter_Active.cs">
       <DependentUpon>Enter_Active.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -221,14 +245,14 @@
       <id>7cfa1995-1c66-4235-bae6-18eeffaebb08</id>
       <BoundTo>4b976c31-650b-4d2e-b03f-b02e45979ebd</BoundTo>
     </Compile>
-    <Compile Include="InputModules\Enter_BatteryDesctiption.cs">
-      <DependentUpon>Enter_BatteryDesctiption.rxrec</DependentUpon>
+    <Compile Include="InputModules\Enter_BatteryDescription.cs">
+      <DependentUpon>Enter_BatteryDescription.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>49269aec-942f-436c-9afd-81526217f1ba</id>
       <BoundTo>434665e1-ae4d-4111-af4f-058b1d6cbfbb</BoundTo>
     </Compile>
-    <Compile Include="InputModules\Enter_BatteryDesctiption.UserCode.cs">
-      <DependentUpon>Enter_BatteryDesctiption.rxrec</DependentUpon>
+    <Compile Include="InputModules\Enter_BatteryDescription.UserCode.cs">
+      <DependentUpon>Enter_BatteryDescription.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a77999dc-0897-4076-85d3-2531b236b366</id>
       <BoundTo>434665e1-ae4d-4111-af4f-058b1d6cbfbb</BoundTo>
@@ -533,6 +557,18 @@
       <UserCode>true</UserCode>
       <id>ca2c4d1e-d93c-450a-b936-2730179002af</id>
     </Compile>
+    <Compile Include="NavigationModules\Click_Active_Dropdown.cs">
+      <BoundTo>c05ddce9-7ca8-41cc-adf4-7b6c96773f13</BoundTo>
+      <DependentUpon>Click_Active_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3b8a657-94bd-48e7-ad35-800985ede4e4</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Active_Dropdown.UserCode.cs">
+      <BoundTo>c05ddce9-7ca8-41cc-adf4-7b6c96773f13</BoundTo>
+      <DependentUpon>Click_Active_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4687895e-671e-419a-a13f-73cc2896346d</id>
+    </Compile>
     <Compile Include="NavigationModules\Click_Add_Battery.cs">
       <DependentUpon>Click_Add_Battery.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -593,6 +629,54 @@
       <id>d53471a0-05a6-4f04-ad3e-a7b89e1becf9</id>
       <BoundTo>eb51d30c-9265-451f-a83c-4d399035dcdd</BoundTo>
     </Compile>
+    <Compile Include="NavigationModules\Click_BatteryPopulation_Dropdown.cs">
+      <BoundTo>81ec742c-5733-4f67-96b9-df697b7a8695</BoundTo>
+      <DependentUpon>Click_BatteryPopulation_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bfef4859-2314-48b5-a228-3d61e397c058</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_BatteryPopulation_Dropdown.UserCode.cs">
+      <BoundTo>81ec742c-5733-4f67-96b9-df697b7a8695</BoundTo>
+      <DependentUpon>Click_BatteryPopulation_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e4fad6e-f059-49a3-9e5c-cf3627d8cbad</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_BatteryStatus_Dropdown.cs">
+      <BoundTo>3b7baf53-4421-48a1-af1c-5392cd99b92a</BoundTo>
+      <DependentUpon>Click_BatteryStatus_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a928b523-d75f-4c5f-a8ed-eb58fcc49f8b</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_BatteryStatus_Dropdown.UserCode.cs">
+      <BoundTo>3b7baf53-4421-48a1-af1c-5392cd99b92a</BoundTo>
+      <DependentUpon>Click_BatteryStatus_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b06b38d7-f0c5-4170-8729-8d134dceccf5</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_CodeName_Field.cs">
+      <BoundTo>3b75e40d-031e-4147-af37-fb91f3e92e39</BoundTo>
+      <DependentUpon>Click_CodeName_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d41e8bf-a508-4039-89fd-60c46e40f918</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_CodeName_Field.UserCode.cs">
+      <BoundTo>3b75e40d-031e-4147-af37-fb91f3e92e39</BoundTo>
+      <DependentUpon>Click_CodeName_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>20ff5964-3023-42ec-9ee2-9a0bef95a0c3</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Edit_Battery.cs">
+      <BoundTo>cd290679-54d4-42ab-896d-8c65fc6d8a29</BoundTo>
+      <DependentUpon>Click_Edit_Battery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>27ca50f2-1ed7-4b4d-992c-d22b5ee3ff9b</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Edit_Battery.UserCode.cs">
+      <BoundTo>cd290679-54d4-42ab-896d-8c65fc6d8a29</BoundTo>
+      <DependentUpon>Click_Edit_Battery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>94dce4f3-d417-4012-8d4b-6c4bdcfb73ac</id>
+    </Compile>
     <Compile Include="NavigationModules\Click_Edit_Localities.cs">
       <DependentUpon>Click_Edit_Localities.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -604,6 +688,30 @@
       <UserCode>true</UserCode>
       <id>9540b8aa-5e0d-4e1f-8bc1-b600032eeb11</id>
       <BoundTo>0a9a06b9-4cc9-4705-bd82-54b2931ee2a7</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Edit_Study.cs">
+      <BoundTo>002905fd-0aad-4561-a1a7-d5ade02b409c</BoundTo>
+      <DependentUpon>Click_Edit_Study.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f78514fc-3e9d-41b7-90d1-182cf67a37d6</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Edit_Study.UserCode.cs">
+      <BoundTo>002905fd-0aad-4561-a1a7-d5ade02b409c</BoundTo>
+      <DependentUpon>Click_Edit_Study.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>53c5f9d4-63fb-4f71-8f59-d148e4b2345a</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Edit_Workflow.cs">
+      <BoundTo>b8f2a378-4879-4f65-a15e-dffd10f6d659</BoundTo>
+      <DependentUpon>Click_Edit_Workflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14e87897-a3bc-496a-a6fa-8c53dacf81fd</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Edit_Workflow.UserCode.cs">
+      <BoundTo>b8f2a378-4879-4f65-a15e-dffd10f6d659</BoundTo>
+      <DependentUpon>Click_Edit_Workflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0e4f7d6-ce8f-4190-8234-e4aa384b6326</id>
     </Compile>
     <Compile Include="NavigationModules\Click_External_Users_Menu.cs">
       <DependentUpon>Click_External_Users_Menu.rxrec</DependentUpon>
@@ -665,6 +773,18 @@
       <UserCode>true</UserCode>
       <id>8e678ba5-906b-42f7-93d2-f2cc734d4c91</id>
     </Compile>
+    <Compile Include="NavigationModules\Click_ProtocolID_Field.cs">
+      <BoundTo>599c6053-9045-49ed-b534-09e2ed588615</BoundTo>
+      <DependentUpon>Click_ProtocolID_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bad35878-63bf-4a78-9342-a5ee1fe39d3f</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_ProtocolID_Field.UserCode.cs">
+      <BoundTo>599c6053-9045-49ed-b534-09e2ed588615</BoundTo>
+      <DependentUpon>Click_ProtocolID_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea6218c7-c7eb-4259-8c2e-a3189637e887</id>
+    </Compile>
     <Compile Include="NavigationModules\Click_Publish_Workflow.cs">
       <DependentUpon>Click_Publish_Workflow.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -713,6 +833,102 @@
       <id>bdbbed02-979e-4651-8eec-749c3c30eb07</id>
       <BoundTo>5e13c963-a219-4549-9235-94a54791a9f1</BoundTo>
     </Compile>
+    <Compile Include="NavigationModules\Click_Sponsor_Field.cs">
+      <BoundTo>b9cc5d72-f8f9-43f4-8b7a-eaaca8d67fdc</BoundTo>
+      <DependentUpon>Click_Sponsor_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ffd351e6-4135-4e7c-bd8d-5d47ecca1dcf</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Sponsor_Field.UserCode.cs">
+      <BoundTo>b9cc5d72-f8f9-43f4-8b7a-eaaca8d67fdc</BoundTo>
+      <DependentUpon>Click_Sponsor_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64432b53-5fa2-4ae7-87f8-7d12a1f72e2d</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Status_Dropdown.cs">
+      <BoundTo>4d3c224a-5dff-444e-9928-6b60d629ea3e</BoundTo>
+      <DependentUpon>Click_Status_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>628bb719-9cde-42c3-8d28-04970da984f8</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Status_Dropdown.UserCode.cs">
+      <BoundTo>4d3c224a-5dff-444e-9928-6b60d629ea3e</BoundTo>
+      <DependentUpon>Click_Status_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dc992088-8a73-42b3-bad4-62e93ef1085d</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_StudyName_Field.cs">
+      <BoundTo>6c90cc3f-f5e4-46dd-b9e4-7fd596331bc7</BoundTo>
+      <DependentUpon>Click_StudyName_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ef35d1f7-6bc7-4efc-9063-973bedbe75f2</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_StudyName_Field.UserCode.cs">
+      <BoundTo>6c90cc3f-f5e4-46dd-b9e4-7fd596331bc7</BoundTo>
+      <DependentUpon>Click_StudyName_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>964cf475-706a-4da0-b4d2-53345f08d07f</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_BatteryTemplate_Dropdown.cs">
+      <BoundTo>5ad4c8eb-7021-4461-9086-2cfc0c3b1233</BoundTo>
+      <DependentUpon>Click_BatteryTemplate_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e75a0c5-723d-43b7-908d-dc1c453c7805</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_BatteryTemplate_Dropdown.UserCode.cs">
+      <BoundTo>5ad4c8eb-7021-4461-9086-2cfc0c3b1233</BoundTo>
+      <DependentUpon>Click_BatteryTemplate_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45da58ff-2256-4881-8f01-0303a0d0028d</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_VisitScheduleName_Field.cs">
+      <BoundTo>8d9b9b3f-fb00-44e1-a41a-aff56896bce6</BoundTo>
+      <DependentUpon>Click_VisitScheduleName_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f0a4e014-4c4b-4ece-aaa0-ec1d2385954b</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_VisitScheduleName_Field.UserCode.cs">
+      <BoundTo>8d9b9b3f-fb00-44e1-a41a-aff56896bce6</BoundTo>
+      <DependentUpon>Click_VisitScheduleName_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e8b784d-8630-4f06-9914-9d05d9dfc1f8</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_VisitScheduleStatus_Dropdown.cs">
+      <BoundTo>3525c762-e853-4960-9f09-921139f932f0</BoundTo>
+      <DependentUpon>Click_VisitScheduleStatus_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e6e5bf7b-67a5-4b67-b212-7aa83284fb44</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_VisitScheduleStatus_Dropdown.UserCode.cs">
+      <BoundTo>3525c762-e853-4960-9f09-921139f932f0</BoundTo>
+      <DependentUpon>Click_VisitScheduleStatus_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6dedabc-d370-4874-bf81-92c05bffec65</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowDescription_Field.cs">
+      <DependentUpon>Click_WorkflowDescription_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>13daf29e-b858-4a6c-94ca-584944c165bd</id>
+      <BoundTo>fcebbf42-178c-47ee-a488-226acafb9e16</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowDescription_Field.UserCode.cs">
+      <DependentUpon>Click_WorkflowDescription_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9baec70d-6ec3-4a84-ad5e-959f116689da</id>
+      <BoundTo>fcebbf42-178c-47ee-a488-226acafb9e16</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowName_Field.cs">
+      <DependentUpon>Click_WorkflowName_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>402e9de3-a512-489f-8bbf-24aa36b960ea</id>
+      <BoundTo>c44ec841-2b2d-448e-80b5-9082cda03193</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowName_Field.UserCode.cs">
+      <DependentUpon>Click_WorkflowName_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>10885eb2-15f9-4f60-b4be-d74b3ce82973</id>
+      <BoundTo>c44ec841-2b2d-448e-80b5-9082cda03193</BoundTo>
+    </Compile>
     <Compile Include="NavigationModules\Click_WorkflowProperties_Tab.cs">
       <BoundTo>384eb85a-ecde-4822-9e66-46ad7ffacd7d</BoundTo>
       <DependentUpon>Click_WorkflowProperties_Tab.rxrec</DependentUpon>
@@ -725,6 +941,42 @@
       <UserCode>true</UserCode>
       <id>003d54ad-abbb-4462-8fb7-2e506b83a22e</id>
     </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowStatus_Dropdown.cs">
+      <DependentUpon>Click_WorkflowStatus_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b603e18-f9d4-46dd-a6d5-a1ecb25f315d</id>
+      <BoundTo>03b24820-b896-4a80-8520-d2d52dbe8f4a</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowStatus_Dropdown.UserCode.cs">
+      <DependentUpon>Click_WorkflowStatus_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e61cd38-9351-4661-96dc-ad59398fee27</id>
+      <BoundTo>03b24820-b896-4a80-8520-d2d52dbe8f4a</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowTemplate_Dropdown.cs">
+      <DependentUpon>Click_WorkflowTemplate_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>01a6e2e2-2266-4981-bac7-71f7d5194a91</id>
+      <BoundTo>7ee188dc-a552-4f3b-8f40-82051c4f8d3e</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowTemplate_Dropdown.UserCode.cs">
+      <DependentUpon>Click_WorkflowTemplate_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>096a8590-68ec-4fa8-832d-76e2bfaa4ca0</id>
+      <BoundTo>7ee188dc-a552-4f3b-8f40-82051c4f8d3e</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowType_Dropdown.cs">
+      <DependentUpon>Click_WorkflowType_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>81440db8-9039-4cfb-b5e2-9957c786df44</id>
+      <BoundTo>d24ff9fb-f1a2-4cfc-ae6d-be54840908f2</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_WorkflowType_Dropdown.UserCode.cs">
+      <DependentUpon>Click_WorkflowType_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e4b9364-133e-4ec6-b448-794ed6108469</id>
+      <BoundTo>d24ff9fb-f1a2-4cfc-ae6d-be54840908f2</BoundTo>
+    </Compile>
     <Compile Include="NavigationModules\Expand_ComplexDecision.cs">
       <BoundTo>05c59933-caf0-42a5-8b87-aa0efd77fb5d</BoundTo>
       <DependentUpon>Expand_ComplexDecision.rxrec</DependentUpon>
@@ -736,6 +988,18 @@
       <DependentUpon>Expand_ComplexDecision.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>03b85420-7dd2-4421-acdb-65a2c351faef</id>
+    </Compile>
+    <Compile Include="NavigationModules\Select_Battery.cs">
+      <BoundTo>2a328a38-dba2-4ee5-bcf2-2ec16a1dba8d</BoundTo>
+      <DependentUpon>Select_Battery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8ad25ae9-6e9c-4cc7-83cc-d15f143b8470</id>
+    </Compile>
+    <Compile Include="NavigationModules\Select_Battery.UserCode.cs">
+      <BoundTo>2a328a38-dba2-4ee5-bcf2-2ec16a1dba8d</BoundTo>
+      <DependentUpon>Select_Battery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>212ed259-6e6e-4977-acb6-fb8cf0cd58b3</id>
     </Compile>
     <Compile Include="NavigationModules\Select_CheckOutcomesMeasured_Step.cs">
       <BoundTo>2946b2f4-8be2-4633-a4ec-8ae4871b8f57</BoundTo>
@@ -848,6 +1112,18 @@
       <UserCode>true</UserCode>
       <id>082751be-782b-4e86-b354-e198821f4452</id>
     </Compile>
+    <Compile Include="NavigationModules\Select_Workflow.cs">
+      <BoundTo>bd0aef66-5dcc-4565-afad-ce3122eacb49</BoundTo>
+      <DependentUpon>Select_Workflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d528eb1-4d5f-421b-a3f8-f83bb501e2fe</id>
+    </Compile>
+    <Compile Include="NavigationModules\Select_Workflow.UserCode.cs">
+      <BoundTo>bd0aef66-5dcc-4565-afad-ce3122eacb49</BoundTo>
+      <DependentUpon>Select_Workflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>13ff2835-836c-4bbe-96b4-cf09eb3d92a3</id>
+    </Compile>
     <Compile Include="Open_DevOps.cs">
       <BoundTo>c35a100f-2b6c-47c1-a1de-f542b0d49c7d</BoundTo>
       <DependentUpon>Open_DevOps.rxrec</DependentUpon>
@@ -905,6 +1181,114 @@
       <id>d32b553f-47db-4e91-836a-12a8005c467c</id>
       <BoundTo>ae55dcad-7e93-4fca-b9b8-4a45f78c77d0</BoundTo>
     </Compile>
+    <Compile Include="ValidationModules\Validate_Edit_Battery.cs">
+      <BoundTo>e6fe61e2-5116-4f9e-9065-19f3db587434</BoundTo>
+      <DependentUpon>Validate_Edit_Battery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0dc8b52-94c0-4133-84ba-2dd5a76d86ca</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Edit_Battery.UserCode.cs">
+      <BoundTo>e6fe61e2-5116-4f9e-9065-19f3db587434</BoundTo>
+      <DependentUpon>Validate_Edit_Battery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a32d616a-9507-437f-93d4-05f09ad41abe</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Edit_Workflow.cs">
+      <BoundTo>d36295b4-5a64-4cc6-a7f5-df46f0e0eebc</BoundTo>
+      <DependentUpon>Validate_Edit_Workflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>493d4459-cd03-4be3-a727-3f950617d164</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Edit_Workflow.UserCode.cs">
+      <BoundTo>d36295b4-5a64-4cc6-a7f5-df46f0e0eebc</BoundTo>
+      <DependentUpon>Validate_Edit_Workflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ec62617f-83d9-4653-b55a-1d17e41ecfac</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_BatteryDescription.cs">
+      <BoundTo>07ccbca8-0d04-49b7-8397-ef528ffc3297</BoundTo>
+      <DependentUpon>Validate_Min_BatteryDescription.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>59b4f9e5-a133-453b-b7a5-f9d863ff5680</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_BatteryDescription.UserCode.cs">
+      <BoundTo>07ccbca8-0d04-49b7-8397-ef528ffc3297</BoundTo>
+      <DependentUpon>Validate_Min_BatteryDescription.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>481a7049-e392-4239-b076-d5dc0e7eccc5</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_BatteryName.cs">
+      <BoundTo>6e71eb17-e323-42ea-a152-0b357b457a18</BoundTo>
+      <DependentUpon>Validate_Min_BatteryName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03f08387-44d6-4a8e-82d8-a1e5cc8be8f2</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_BatteryName.UserCode.cs">
+      <BoundTo>6e71eb17-e323-42ea-a152-0b357b457a18</BoundTo>
+      <DependentUpon>Validate_Min_BatteryName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2678fff4-0a47-4e46-ac89-32b0e3cb7efc</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_VisitScheduleName.cs">
+      <BoundTo>9927ae51-0e03-4c34-8460-8506c53ac28a</BoundTo>
+      <DependentUpon>Validate_Min_VisitScheduleName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>522fc4d1-d9d0-4083-8473-0f30333eb7d7</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_VisitScheduleName.UserCode.cs">
+      <BoundTo>9927ae51-0e03-4c34-8460-8506c53ac28a</BoundTo>
+      <DependentUpon>Validate_Min_VisitScheduleName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7b6f6a5f-9150-4ce2-99ab-1e60d9e77037</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_WorkflowDescription.cs">
+      <BoundTo>663d607b-b840-408f-83eb-644025fa40de</BoundTo>
+      <DependentUpon>Validate_Min_WorkflowDescription.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>968c1a04-2aee-4ef4-bf88-77acdb8fae9b</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_WorkflowDescription.UserCode.cs">
+      <BoundTo>663d607b-b840-408f-83eb-644025fa40de</BoundTo>
+      <DependentUpon>Validate_Min_WorkflowDescription.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69feb998-3b9c-4124-a963-a256f26e71f4</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_WorkflowName.cs">
+      <BoundTo>03e566f1-51f7-4c06-a1b0-ecad6821954e</BoundTo>
+      <DependentUpon>Validate_Min_WorkflowName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9e67884-19a3-440f-a511-2a238a7b8ecd</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_WorkflowName.UserCode.cs">
+      <BoundTo>03e566f1-51f7-4c06-a1b0-ecad6821954e</BoundTo>
+      <DependentUpon>Validate_Min_WorkflowName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7caa0b0c-8e6d-421f-87a7-14c2ed52742f</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_BatteryName.cs">
+      <BoundTo>b69e24e1-edc4-4f59-b73d-fe53f04f7fdc</BoundTo>
+      <DependentUpon>Validate_Required_BatteryName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>419c2ce1-6681-4754-bc86-5ed59ad2f440</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_BatteryName.UserCode.cs">
+      <BoundTo>b69e24e1-edc4-4f59-b73d-fe53f04f7fdc</BoundTo>
+      <DependentUpon>Validate_Required_BatteryName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>02415871-5a99-40a5-8443-04415e41c075</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Edit_Study.cs">
+      <BoundTo>ad66b2d8-43a8-4b9a-9f2e-7bd20cf9eb9f</BoundTo>
+      <DependentUpon>Validate_Edit_Study.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50068eaf-bb53-4ced-83cf-e8fdf1c73658</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Edit_Study.UserCode.cs">
+      <BoundTo>ad66b2d8-43a8-4b9a-9f2e-7bd20cf9eb9f</BoundTo>
+      <DependentUpon>Validate_Edit_Study.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>993531fb-4184-4660-874f-e85b39a60589</id>
+    </Compile>
     <Compile Include="ValidationModules\Validate_ForgotPasswordPage.cs">
       <BoundTo>760780c1-66d7-4900-9ed3-ba46e627d085</BoundTo>
       <DependentUpon>Validate_ForgotPasswordPage.rxrec</DependentUpon>
@@ -952,6 +1336,234 @@
       <DependentUpon>Validate_Login_Fail.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>088676e2-8fef-4904-b614-b70b9d8e81e5</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_Sponsor.cs">
+      <BoundTo>2d354a68-5e92-4313-9b20-5f0540f863b3</BoundTo>
+      <DependentUpon>Validate_Min_Sponsor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60ba018d-dba7-4c70-9b76-76757f0da571</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_Sponsor.UserCode.cs">
+      <BoundTo>2d354a68-5e92-4313-9b20-5f0540f863b3</BoundTo>
+      <DependentUpon>Validate_Min_Sponsor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a4a08d68-c24e-49fc-812d-cc7bed540764</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_CodeName.cs">
+      <BoundTo>aadc8e3b-9b79-409c-8f86-5ec0361ce7dd</BoundTo>
+      <DependentUpon>Validate_Min_CodeName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dfb83b7-98c3-489c-867b-75a4b9549d79</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_CodeName.UserCode.cs">
+      <BoundTo>aadc8e3b-9b79-409c-8f86-5ec0361ce7dd</BoundTo>
+      <DependentUpon>Validate_Min_CodeName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>447e6c51-1a93-4b0c-b796-856d6b96bab7</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_ProtocolID.cs">
+      <BoundTo>2d1db8e0-c49a-4e4a-9951-f916d4d6d27d</BoundTo>
+      <DependentUpon>Validate_Min_ProtocolID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53a6263e-44bf-4ea9-a2b2-62a02e41632a</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_ProtocolID.UserCode.cs">
+      <BoundTo>2d1db8e0-c49a-4e4a-9951-f916d4d6d27d</BoundTo>
+      <DependentUpon>Validate_Min_ProtocolID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4b2d8e9-1b45-4905-97af-ef1b0e3617d2</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_StudyName.cs">
+      <BoundTo>988586b6-9adb-43b2-8a42-ab8550a00459</BoundTo>
+      <DependentUpon>Validate_Min_StudyName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>48d06e50-e43a-477a-b6f0-fe8eae090da7</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Min_StudyName.UserCode.cs">
+      <BoundTo>988586b6-9adb-43b2-8a42-ab8550a00459</BoundTo>
+      <DependentUpon>Validate_Min_StudyName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>097f93ca-7583-49a0-8b84-aa32b5637963</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Active.cs">
+      <BoundTo>c095eeb5-da9c-4974-a70f-4d7b4c417d3e</BoundTo>
+      <DependentUpon>Validate_Required_Active.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7cfda522-e333-498a-bd9f-953693cf7569</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Active.UserCode.cs">
+      <BoundTo>c095eeb5-da9c-4974-a70f-4d7b4c417d3e</BoundTo>
+      <DependentUpon>Validate_Required_Active.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>96c2bc14-fcd5-497d-b6ed-081463a36a0c</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_CodeName.cs">
+      <BoundTo>cb58c32d-c2df-43ce-9ac9-aa760e71a0d6</BoundTo>
+      <DependentUpon>Validate_Required_CodeName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5f0dcd12-2525-4d59-aa2d-271305105574</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_CodeName.UserCode.cs">
+      <BoundTo>cb58c32d-c2df-43ce-9ac9-aa760e71a0d6</BoundTo>
+      <DependentUpon>Validate_Required_CodeName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9884896b-ee85-4819-9d07-742cd1c2febe</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Population.cs">
+      <BoundTo>3fa264bc-c1c8-4cd1-bfac-9446ac8da2bb</BoundTo>
+      <DependentUpon>Validate_Required_Population.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d5bc9e03-0ec2-406d-aa36-a1b708704b95</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Population.UserCode.cs">
+      <BoundTo>3fa264bc-c1c8-4cd1-bfac-9446ac8da2bb</BoundTo>
+      <DependentUpon>Validate_Required_Population.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b33c489-bbd4-4b3d-96c1-5c1364d8e7aa</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_StudyName.cs">
+      <BoundTo>e4e0ff02-3c99-4a77-a12f-ed6cc4a223ed</BoundTo>
+      <DependentUpon>Validate_Required_StudyName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>48313603-4f9a-446a-a348-67cd40f31a0b</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_StudyName.UserCode.cs">
+      <BoundTo>e4e0ff02-3c99-4a77-a12f-ed6cc4a223ed</BoundTo>
+      <DependentUpon>Validate_Required_StudyName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1dfa779a-3ce7-4850-8769-2a412ac0717e</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_ProtocolID.cs">
+      <BoundTo>aededba0-740a-4a70-bd27-0fd49a7adbf0</BoundTo>
+      <DependentUpon>Validate_Required_ProtocolID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>adbf8446-218f-407d-908e-7258762064d6</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_ProtocolID.UserCode.cs">
+      <BoundTo>aededba0-740a-4a70-bd27-0fd49a7adbf0</BoundTo>
+      <DependentUpon>Validate_Required_ProtocolID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d3f8c5ea-fc2a-4666-9893-bf9572f541d4</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Sponsor.cs">
+      <BoundTo>1a610b6e-ab87-4a13-84f5-8b0eb6842e4f</BoundTo>
+      <DependentUpon>Validate_Required_Sponsor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>939c0366-e791-40bf-9569-2441dcfc9fc8</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Sponsor.UserCode.cs">
+      <BoundTo>1a610b6e-ab87-4a13-84f5-8b0eb6842e4f</BoundTo>
+      <DependentUpon>Validate_Required_Sponsor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ecfac6e6-509d-44b4-8e6e-78c02d2abd3f</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Status.cs">
+      <BoundTo>ea7f41d2-c3bd-4a0a-84c2-03f26b895c92</BoundTo>
+      <DependentUpon>Validate_Required_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96979446-c351-4c45-8cef-a261b437614c</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Status.UserCode.cs">
+      <BoundTo>ea7f41d2-c3bd-4a0a-84c2-03f26b895c92</BoundTo>
+      <DependentUpon>Validate_Required_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a0070e60-5bf6-4e23-a168-d30bc5c5db9e</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Template.cs">
+      <BoundTo>c2733dfe-e972-46ba-a76a-d702055a4e9c</BoundTo>
+      <DependentUpon>Validate_Required_Template.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a408208f-8255-4523-97f6-058d9d2021f0</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_Template.UserCode.cs">
+      <BoundTo>c2733dfe-e972-46ba-a76a-d702055a4e9c</BoundTo>
+      <DependentUpon>Validate_Required_Template.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb2dc0f2-8cf0-4a48-92ca-0939094bba0a</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_VisitScheduleName.cs">
+      <BoundTo>ae425d5a-6612-43fa-ad0f-25c03f1c8d45</BoundTo>
+      <DependentUpon>Validate_Required_VisitScheduleName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>915328d9-0681-493b-8f6f-9b768aec9bb5</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_VisitScheduleName.UserCode.cs">
+      <BoundTo>ae425d5a-6612-43fa-ad0f-25c03f1c8d45</BoundTo>
+      <DependentUpon>Validate_Required_VisitScheduleName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>40326b82-846c-4387-9ecd-140952cdbaf2</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_VisitScheduleStatus.cs">
+      <BoundTo>b1b504d2-1882-4041-8f2d-de197dcaaff5</BoundTo>
+      <DependentUpon>Validate_Required_VisitScheduleStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>38ebb7fb-1f91-4886-a99c-498d0d85baa6</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_VisitScheduleStatus.UserCode.cs">
+      <BoundTo>b1b504d2-1882-4041-8f2d-de197dcaaff5</BoundTo>
+      <DependentUpon>Validate_Required_VisitScheduleStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ab8c39de-1f09-46d1-9e9d-0998ba38d725</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowDescription.cs">
+      <BoundTo>3217b7c3-252d-4114-81bf-b33da339942c</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowDescription.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1238d44c-e5ed-4460-be1e-c1a71fa87beb</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowDescription.UserCode.cs">
+      <BoundTo>3217b7c3-252d-4114-81bf-b33da339942c</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowDescription.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>97294791-1143-4d99-86be-6d9a302ee1b5</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowName.cs">
+      <BoundTo>1446e331-cc26-4cc5-ba74-ed9d586c4211</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f75d25a-af03-4b25-b340-d9278a252c78</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowName.UserCode.cs">
+      <BoundTo>1446e331-cc26-4cc5-ba74-ed9d586c4211</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6da57fda-128b-45ae-884f-03face84b2f6</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowStatus.cs">
+      <BoundTo>0a9d5375-1341-4b0f-beec-97808f3b6518</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04493549-1fc6-441f-ab21-62d51d0cb217</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowStatus.UserCode.cs">
+      <BoundTo>0a9d5375-1341-4b0f-beec-97808f3b6518</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>476ba66f-200c-43eb-814e-5d6302081112</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowTemplate.cs">
+      <BoundTo>3c7b01c9-0f33-4feb-b5f6-57c456994a42</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowTemplate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dfb54dac-2154-42ba-a455-69b9b008f234</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowTemplate.UserCode.cs">
+      <BoundTo>3c7b01c9-0f33-4feb-b5f6-57c456994a42</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowTemplate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>61db77d6-a65e-42f9-8cf9-a7c0872e7b6f</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowType.cs">
+      <BoundTo>13b5cc7c-ece8-4310-bfe0-d2333325d044</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowType.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>beceea5a-d59f-4feb-9719-29f3255c28b1</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_Required_WorkflowType.UserCode.cs">
+      <BoundTo>13b5cc7c-ece8-4310-bfe0-d2333325d044</BoundTo>
+      <DependentUpon>Validate_Required_WorkflowType.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e5bf882-a877-49c6-9e97-3bd135f0771e</id>
     </Compile>
     <Compile Include="ValidationModules\Validate_StudyEntry.cs">
       <DependentUpon>Validate_StudyEntry.rxrec</DependentUpon>
@@ -1013,6 +1625,18 @@
       <id>75ad6558-26c9-448c-b349-ca10991aa5c8</id>
       <BoundTo>b03fdff0-ee0d-4acf-9c86-c3db0ddf2a15</BoundTo>
     </Compile>
+    <Compile Include="ValidationModules\_Capture_Screenshot.cs">
+      <BoundTo>06de81bc-9501-4779-a945-972ad6219ea0</BoundTo>
+      <DependentUpon>_Capture_Screenshot.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>019726e1-3bbc-4b30-a2b6-ebc823e19fde</id>
+    </Compile>
+    <Compile Include="ValidationModules\_Capture_Screenshot.UserCode.cs">
+      <BoundTo>06de81bc-9501-4779-a945-972ad6219ea0</BoundTo>
+      <DependentUpon>_Capture_Screenshot.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0eff644-70d3-494c-b8fd-9aefc8af0148</id>
+    </Compile>
     <Compile Include="_WAIT_FOR_NOT_EXIST.cs">
       <id>f5bb2b20-26d9-4080-a24c-2c3a3441068b</id>
     </Compile>
@@ -1064,12 +1688,22 @@
       <id>c4e14abe-77a1-43f9-bbc0-607b88477327</id>
       <recordtableid>5e586929-3ac2-4201-84c3-6071a72f25c8</recordtableid>
     </None>
+    <None Include="InputModules\Clear_BatteryName_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>6fbf54df-9657-4d36-b2aa-c7010e2a289a</id>
+      <recordtableid>ddae5393-1c88-44fc-9aae-c8e3e51abb18</recordtableid>
+    </None>
+    <None Include="InputModules\Clear_VisitScheduleName_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b5c34fdb-3928-40ad-95cf-22ed27e90c28</id>
+      <recordtableid>d6f76054-573d-4843-8e6a-5b5238eb5cfb</recordtableid>
+    </None>
     <None Include="InputModules\Enter_Active.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>4b976c31-650b-4d2e-b03f-b02e45979ebd</id>
       <recordtableid>4e440ea2-06e8-483c-b4c4-03809d9e8c6d</recordtableid>
     </None>
-    <None Include="InputModules\Enter_BatteryDesctiption.rxrec">
+    <None Include="InputModules\Enter_BatteryDescription.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>434665e1-ae4d-4111-af4f-058b1d6cbfbb</id>
       <recordtableid>2d955e0d-66b6-44f7-997e-8b5e6d4de1a2</recordtableid>
@@ -1199,6 +1833,11 @@
       <id>9c3cbe88-76d0-476e-b8ee-010ba94f9a52</id>
       <recordtableid>366bcb1e-0676-491a-b683-f0b0918c5c82</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_Active_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c05ddce9-7ca8-41cc-adf4-7b6c96773f13</id>
+      <recordtableid>37d8c755-140b-4ff9-9324-2e3242f43c98</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_Add_Battery.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>d0d31c20-dffc-4309-bc08-efbd13ad6e72</id>
@@ -1224,10 +1863,40 @@
       <id>eb51d30c-9265-451f-a83c-4d399035dcdd</id>
       <recordtableid>12c5de0a-0a0d-4bef-bbcd-831ee3ec3abb</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_BatteryPopulation_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>81ec742c-5733-4f67-96b9-df697b7a8695</id>
+      <recordtableid>da624500-bd59-4b98-8342-15699025ce78</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_BatteryStatus_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3b7baf53-4421-48a1-af1c-5392cd99b92a</id>
+      <recordtableid>8cdc6321-8bc1-42e2-974c-83724e388aeb</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_CodeName_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3b75e40d-031e-4147-af37-fb91f3e92e39</id>
+      <recordtableid>f0dc6e67-7eab-4374-a047-e6accd2e2d6b</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_Edit_Battery.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>cd290679-54d4-42ab-896d-8c65fc6d8a29</id>
+      <recordtableid>cb27436f-4979-4acb-8565-64b8ce86736c</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_Edit_Localities.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>0a9a06b9-4cc9-4705-bd82-54b2931ee2a7</id>
       <recordtableid>4ee627fc-d39c-49b3-b178-8836739190c0</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_Edit_Study.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>002905fd-0aad-4561-a1a7-d5ade02b409c</id>
+      <recordtableid>de058b0d-f9a9-4f98-a4f3-cdbe8c067c4d</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_Edit_Workflow.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b8f2a378-4879-4f65-a15e-dffd10f6d659</id>
+      <recordtableid>04d2c3f7-ad88-447d-8e71-a49168a9ab1b</recordtableid>
     </None>
     <None Include="NavigationModules\Click_External_Users_Menu.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -1254,6 +1923,11 @@
       <id>6182f58d-a0e6-4dae-b53b-e3bdfebdf7e1</id>
       <recordtableid>8e6168f4-a4d0-4eca-b7a3-c726e50216d8</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_ProtocolID_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>599c6053-9045-49ed-b534-09e2ed588615</id>
+      <recordtableid>5da6d170-6fe8-43f8-b119-8a68a824476d</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_Publish_Workflow.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>4c7b112d-564c-460a-9572-66b7c9c73562</id>
@@ -1274,15 +1948,75 @@
       <id>5e13c963-a219-4549-9235-94a54791a9f1</id>
       <recordtableid>7da41efb-783e-4bc4-8d8d-ce6c02946097</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_Sponsor_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b9cc5d72-f8f9-43f4-8b7a-eaaca8d67fdc</id>
+      <recordtableid>6f5e2f7a-64e9-4f8a-887f-a129e0aeefa6</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_Status_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>4d3c224a-5dff-444e-9928-6b60d629ea3e</id>
+      <recordtableid>b5287e35-9389-474e-9660-6de651c08ddd</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_StudyName_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>6c90cc3f-f5e4-46dd-b9e4-7fd596331bc7</id>
+      <recordtableid>6097831b-a35a-4a65-a97a-eb58013bb906</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_BatteryTemplate_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>5ad4c8eb-7021-4461-9086-2cfc0c3b1233</id>
+      <recordtableid>7945fb41-5622-48e6-9b34-277d9c8d0990</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_VisitScheduleName_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>8d9b9b3f-fb00-44e1-a41a-aff56896bce6</id>
+      <recordtableid>d09216bc-f8a5-4d9d-a2bb-552e1856284d</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_VisitScheduleStatus_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3525c762-e853-4960-9f09-921139f932f0</id>
+      <recordtableid>518f5810-1ca4-4cab-9139-ee9f8b139e6f</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_WorkflowDescription_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>fcebbf42-178c-47ee-a488-226acafb9e16</id>
+      <recordtableid>47afb578-7093-48a5-a782-c3d4312b9f90</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_WorkflowName_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c44ec841-2b2d-448e-80b5-9082cda03193</id>
+      <recordtableid>e1bfaaf7-3347-434a-834e-637821192239</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_WorkflowProperties_Tab.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>384eb85a-ecde-4822-9e66-46ad7ffacd7d</id>
       <recordtableid>ff77451b-20bc-483d-b94c-d788dd564b63</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_WorkflowStatus_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>03b24820-b896-4a80-8520-d2d52dbe8f4a</id>
+      <recordtableid>8522dfc3-8c58-4df6-bb28-2116ceb65c8f</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_WorkflowTemplate_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>7ee188dc-a552-4f3b-8f40-82051c4f8d3e</id>
+      <recordtableid>a5bdf9ce-662f-4455-ad06-42ce6fa5ad98</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_WorkflowType_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>d24ff9fb-f1a2-4cfc-ae6d-be54840908f2</id>
+      <recordtableid>1785fd5c-ef99-4cdb-ac01-83b590fb5a04</recordtableid>
+    </None>
     <None Include="NavigationModules\Expand_ComplexDecision.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>05c59933-caf0-42a5-8b87-aa0efd77fb5d</id>
       <recordtableid>44658cba-b9d9-43a9-a110-9f51c1248171</recordtableid>
+    </None>
+    <None Include="NavigationModules\Select_Battery.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>2a328a38-dba2-4ee5-bcf2-2ec16a1dba8d</id>
+      <recordtableid>ae83b4a9-4f47-44d6-a475-555fe73f8c3d</recordtableid>
     </None>
     <None Include="NavigationModules\Select_CheckOutcomesMeasured_Step.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -1336,6 +2070,11 @@
       <id>4150dfd1-756b-4cb6-80e2-af12e4b3cca7</id>
       <recordtableid>5c2993d4-a8c7-41c2-9190-e09e643a9526</recordtableid>
     </None>
+    <None Include="NavigationModules\Select_Workflow.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>bd0aef66-5dcc-4565-afad-ce3122eacb49</id>
+      <recordtableid>702570ca-23d6-40c2-8455-86a1f42e9870</recordtableid>
+    </None>
     <None Include="Open_DevOps.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>c35a100f-2b6c-47c1-a1de-f542b0d49c7d</id>
@@ -1385,6 +2124,51 @@
       <id>ae55dcad-7e93-4fca-b9b8-4a45f78c77d0</id>
       <recordtableid>41eae272-e70a-4c8c-976b-316352274ed1</recordtableid>
     </None>
+    <None Include="ValidationModules\Validate_Edit_Battery.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>e6fe61e2-5116-4f9e-9065-19f3db587434</id>
+      <recordtableid>16c18acb-c270-4599-b23c-46a7e84184d5</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Edit_Workflow.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>d36295b4-5a64-4cc6-a7f5-df46f0e0eebc</id>
+      <recordtableid>1306c57b-e7c0-4424-b51f-5036e02ce166</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_BatteryDescription.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>07ccbca8-0d04-49b7-8397-ef528ffc3297</id>
+      <recordtableid>09dfd249-cfe0-4aae-9f25-8f6a4b0ae12b</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_BatteryName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>6e71eb17-e323-42ea-a152-0b357b457a18</id>
+      <recordtableid>b32de281-be93-4092-be55-f034d26105bb</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_VisitScheduleName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>9927ae51-0e03-4c34-8460-8506c53ac28a</id>
+      <recordtableid>e3a8b027-ed43-4e29-a1d7-bbb79a547e1c</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_WorkflowDescription.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>663d607b-b840-408f-83eb-644025fa40de</id>
+      <recordtableid>fa1de2c1-27ec-4204-8909-3ece44c420bc</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_WorkflowName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>03e566f1-51f7-4c06-a1b0-ecad6821954e</id>
+      <recordtableid>70390207-c3d8-4104-a5f5-31e39b9b1156</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_BatteryName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b69e24e1-edc4-4f59-b73d-fe53f04f7fdc</id>
+      <recordtableid>34806562-1932-4d90-96aa-036251444423</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Edit_Study.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>ad66b2d8-43a8-4b9a-9f2e-7bd20cf9eb9f</id>
+      <recordtableid>55393915-a84d-4692-9cb3-cd8c5977e3e3</recordtableid>
+    </None>
     <None Include="ValidationModules\Validate_ForgotPasswordPage.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>760780c1-66d7-4900-9ed3-ba46e627d085</id>
@@ -1404,6 +2188,101 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>7cde0212-6657-48b0-b731-e5e2791c162d</id>
       <recordtableid>d2839436-6f50-48ac-aa62-ee3a185c75b9</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_Sponsor.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>2d354a68-5e92-4313-9b20-5f0540f863b3</id>
+      <recordtableid>a032fcae-f6af-43a1-bd96-bf4cddcc8bdf</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_CodeName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>aadc8e3b-9b79-409c-8f86-5ec0361ce7dd</id>
+      <recordtableid>dbe3709b-0ce2-4e98-9709-f282328d40e2</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_ProtocolID.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>2d1db8e0-c49a-4e4a-9951-f916d4d6d27d</id>
+      <recordtableid>e77502b3-7580-462a-ae8c-6b41185f1d56</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Min_StudyName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>988586b6-9adb-43b2-8a42-ab8550a00459</id>
+      <recordtableid>e460b043-b328-4c78-9280-51e1a828d22a</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_Active.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c095eeb5-da9c-4974-a70f-4d7b4c417d3e</id>
+      <recordtableid>44f69cf3-d767-44ee-8dba-6c8b99733bdd</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_CodeName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>cb58c32d-c2df-43ce-9ac9-aa760e71a0d6</id>
+      <recordtableid>c280838d-9480-4b16-9cfd-88e552ee114e</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_Population.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3fa264bc-c1c8-4cd1-bfac-9446ac8da2bb</id>
+      <recordtableid>d3dd0904-a63b-473a-bed0-3c265c972c0b</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_StudyName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>e4e0ff02-3c99-4a77-a12f-ed6cc4a223ed</id>
+      <recordtableid>d68c2b19-d689-4ec7-b213-29aba795d2d9</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_ProtocolID.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>aededba0-740a-4a70-bd27-0fd49a7adbf0</id>
+      <recordtableid>adf752ff-8ec5-4bba-bb82-88951eb8c498</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_Sponsor.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>1a610b6e-ab87-4a13-84f5-8b0eb6842e4f</id>
+      <recordtableid>cee55784-508a-4aad-9e55-f62093785837</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_Status.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>ea7f41d2-c3bd-4a0a-84c2-03f26b895c92</id>
+      <recordtableid>5741086d-d2a2-46a9-b300-058e7d608f18</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_Template.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c2733dfe-e972-46ba-a76a-d702055a4e9c</id>
+      <recordtableid>9f9a48b0-34cf-448d-9fb4-303d184737cc</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_VisitScheduleName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>ae425d5a-6612-43fa-ad0f-25c03f1c8d45</id>
+      <recordtableid>4a9e0fa5-a951-4e9e-9bfe-c7da42510676</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_VisitScheduleStatus.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b1b504d2-1882-4041-8f2d-de197dcaaff5</id>
+      <recordtableid>e7e83fbb-b35a-46de-8903-010268c536d1</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_WorkflowDescription.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3217b7c3-252d-4114-81bf-b33da339942c</id>
+      <recordtableid>7229f8e3-ece4-4c41-b4a5-f09d4ef7b02d</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_WorkflowName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>1446e331-cc26-4cc5-ba74-ed9d586c4211</id>
+      <recordtableid>d08ab6ae-aa17-4281-88fa-222b097b4ee1</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_WorkflowStatus.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>0a9d5375-1341-4b0f-beec-97808f3b6518</id>
+      <recordtableid>9f3a3fcf-41bc-471c-996d-5d3db71d87ed</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_WorkflowTemplate.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3c7b01c9-0f33-4feb-b5f6-57c456994a42</id>
+      <recordtableid>698dde2e-7d92-4555-b0d6-2301ba5ccebc</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_Required_WorkflowType.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>13b5cc7c-ece8-4310-bfe0-d2333325d044</id>
+      <recordtableid>308167b3-750d-403e-bac7-e63f6d2f0292</recordtableid>
     </None>
     <None Include="ValidationModules\Validate_StudyEntry.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -1429,6 +2308,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>b03fdff0-ee0d-4acf-9c86-c3db0ddf2a15</id>
       <recordtableid>c718511d-4281-405c-9160-251f311d2703</recordtableid>
+    </None>
+    <None Include="ValidationModules\_Capture_Screenshot.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>06de81bc-9501-4779-a945-972ad6219ea0</id>
+      <recordtableid>c678d990-6adb-49d9-90aa-950fe6d72db6</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

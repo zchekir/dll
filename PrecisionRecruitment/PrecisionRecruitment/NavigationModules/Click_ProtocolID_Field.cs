@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.InputModules
+namespace PrecisionRecruitment.NavigationModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_BatteryDesctiption recording.
+    ///The Click_ProtocolID_Field recording.
     /// </summary>
-    [TestModule("2d955e0d-66b6-44f7-997e-8b5e6d4de1a2", ModuleType.Recording, 1)]
-    public partial class Enter_BatteryDesctiption : ITestModule
+    [TestModule("5da6d170-6fe8-43f8-b119-8a68a824476d", ModuleType.Recording, 1)]
+    public partial class Click_ProtocolID_Field : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Enter_BatteryDesctiption instance = new Enter_BatteryDesctiption();
+        static Click_ProtocolID_Field instance = new Click_ProtocolID_Field();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_BatteryDesctiption()
+        public Click_ProtocolID_Field()
         {
-            BatteryDescription = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_BatteryDesctiption Instance
+        public static Click_ProtocolID_Field Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _BatteryDescription;
-
-        /// <summary>
-        /// Gets or sets the value of variable BatteryDescription.
-        /// </summary>
-        [TestVariable("409b2d92-92f5-4b9b-898e-d2d04aaba500")]
-        public string BatteryDescription
-        {
-            get { return _BatteryDescription; }
-            set { _BatteryDescription = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -102,20 +89,8 @@ namespace PrecisionRecruitment.InputModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.Click(300);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryDescription' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.PressKeys(BatteryDescription);
-            Delay.Milliseconds(20);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$BatteryDescription) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, "TagValue", BatteryDescription);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.ProtocolIDField' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.ProtocolIDFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddStudyPage.ProtocolIDField.Click();
             Delay.Milliseconds(0);
             
         }

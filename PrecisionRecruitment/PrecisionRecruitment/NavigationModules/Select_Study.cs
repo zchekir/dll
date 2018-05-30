@@ -41,7 +41,7 @@ namespace PrecisionRecruitment.NavigationModules
         /// </summary>
         public Select_Study()
         {
-            Studyname = "";
+            Studyname = "Ranorex";
             RandNum = "";
         }
 
@@ -123,18 +123,24 @@ namespace PrecisionRecruitment.NavigationModules
             repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum, 100);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            // Wait for results to load
+            Report.Log(ReportLevel.Info, "Section", "Wait for results to load", new RecordItemIndex(3));
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.StudyCard' at Center.", repo.CogstateSolutionPlatform.Expanded.StudyCardInfo, new RecordItemIndex(4));
+            // Continue on with Tests
+            Report.Log(ReportLevel.Info, "Section", "Continue on with Tests", new RecordItemIndex(5));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.StudyCard' at Center.", repo.CogstateSolutionPlatform.Expanded.StudyCardInfo, new RecordItemIndex(6));
             repo.CogstateSolutionPlatform.Expanded.StudyCard.Click(300);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Studyname) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Studyname) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(7));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, "InnerText", Studyname);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(8));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(100);
             

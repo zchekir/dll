@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace PrecisionRecruitment.InputModules
+namespace PrecisionRecruitment.ValidationModules
 {
-    public partial class Enter_BatteryDesctiption
+    public partial class Validate_Required_Status
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -41,8 +41,6 @@ namespace PrecisionRecruitment.NavigationModules
         /// </summary>
         public Click_Add_Workflow()
         {
-            WorkflowName = "";
-            DOM = "cgst-qc-2-7-0.cogstate.com";
         }
 
         /// <summary>
@@ -63,16 +61,6 @@ namespace PrecisionRecruitment.NavigationModules
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable WorkflowName.
-        /// </summary>
-        [TestVariable("15565e34-ca60-4a40-82ac-21ae6a8305c3")]
-        public string WorkflowName
-        {
-            get { return repo.WorkflowName; }
-            set { repo.WorkflowName = value; }
         }
 
 #endregion

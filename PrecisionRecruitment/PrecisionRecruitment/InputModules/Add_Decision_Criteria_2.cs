@@ -41,8 +41,8 @@ namespace PrecisionRecruitment.InputModules
         /// </summary>
         public Add_Decision_Criteria_2()
         {
-            Tier1Min = "91";
-            Tier1Max = "100";
+            Tier2Min = "91";
+            Tier2Max = "100";
         }
 
         /// <summary>
@@ -55,28 +55,28 @@ namespace PrecisionRecruitment.InputModules
 
 #region Variables
 
-        string _Tier1Min;
+        string _Tier2Min;
 
         /// <summary>
-        /// Gets or sets the value of variable Tier1Min.
+        /// Gets or sets the value of variable Tier2Min.
         /// </summary>
         [TestVariable("3f1fc929-798b-4fb5-8c8d-3c2d3e13a806")]
-        public string Tier1Min
+        public string Tier2Min
         {
-            get { return _Tier1Min; }
-            set { _Tier1Min = value; }
+            get { return _Tier2Min; }
+            set { _Tier2Min = value; }
         }
 
-        string _Tier1Max;
+        string _Tier2Max;
 
         /// <summary>
-        /// Gets or sets the value of variable Tier1Max.
+        /// Gets or sets the value of variable Tier2Max.
         /// </summary>
         [TestVariable("e27f5469-c831-412c-97e7-93e0ab88a81e")]
-        public string Tier1Max
+        public string Tier2Max
         {
-            get { return _Tier1Max; }
-            set { _Tier1Max = value; }
+            get { return _Tier2Max; }
+            set { _Tier2Max = value; }
         }
 
         /// <summary>
@@ -123,8 +123,8 @@ namespace PrecisionRecruitment.InputModules
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
             Delay.Milliseconds(50);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier1Min' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys(Tier1Min);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier2Min' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys(Tier2Min);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(3));
@@ -135,8 +135,8 @@ namespace PrecisionRecruitment.InputModules
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
             Delay.Milliseconds(50);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier1Max' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(5));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys(Tier1Max);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier2Max' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(5));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys(Tier2Max);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 32;10.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(6));

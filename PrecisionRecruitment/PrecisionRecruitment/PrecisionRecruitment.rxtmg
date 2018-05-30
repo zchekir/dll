@@ -9,6 +9,49 @@ rxversion="8.0">
 			ref="507b6a76-fe57-451c-b34f-409b723c2154"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="04b0e867-8b4f-4386-8b17-d54cc8298354"
+			name="Login">
+				<groupvariables>
+					<groupvariable
+					id="3c11cdc4-efcd-4741-b415-f12753c19735"
+					name="Email">
+						<modulevariable
+						moduleref="7108332a-947b-4e6f-ac09-3ed79d155015"
+						name="Email"
+						variableref="9735ef0b-613e-4924-82d8-bcbf8e7c2428">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					name="Password">
+						<modulevariable
+						moduleref="d33fccd4-09b8-4995-a0dc-8b8e431540b9"
+						name="Password"
+						variableref="7c920191-9740-4e66-9ba0-d70a4055fdbf">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					name="DOM">
+						<modulevariable
+						moduleref="7108332a-947b-4e6f-ac09-3ed79d155015"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="d33fccd4-09b8-4995-a0dc-8b8e431540b9"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="9e9084b5-9c6a-4f70-841e-c6c9a11a38ac"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="04c153bf-8e5d-48a9-8c49-5ad9eb092b3f"
 			name="Enter_WorkflowType"
@@ -19,6 +62,12 @@ rxversion="8.0">
 			id="07e5b7c2-2369-456e-b17d-511873dc4a7a"
 			name="Enter_BatteryName"
 			ref="157f6f2d-b2ab-4440-b182-aa4e196e76d6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="09aa93e3-8988-4677-8909-3d62f0beec7c"
+			name="Validate_Min_StudyName"
+			ref="e460b043-b328-4c78-9280-51e1a828d22a"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -33,6 +82,77 @@ rxversion="8.0">
 			ref="dcd3c857-708a-4094-9656-57f93b949ee6"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="1241b4bb-09c8-4c86-8d9e-a428c041c47f"
+			name="Validate_Required_Workflow_Fields">
+				<groupvariables>
+					<groupvariable
+					id="bd8a3d54-469d-4a73-a684-0fba7fa81e7f"
+					name="DOM">
+						<modulevariable
+						moduleref="38c2d786-4437-4822-8fc5-f6668ac1c717"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="4170b16a-5a67-499f-b43d-462d43ff2e53"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="b8d961e0-0553-450a-b9ac-1bb0e79dff56"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="f56c29dd-d308-4c9e-baa1-7b3711126c62"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="6eae3f50-1b31-42f2-a5e6-d39ca63c5f53"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="b89c54c5-74f0-40ca-8692-f569aa0f3b56"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<modulegroupdef
+			id="154ca826-b01b-4ba9-be0c-19332df8f0f5"
+			name="Validate_Required_VisitSchedule_Fields">
+				<groupvariables>
+					<groupvariable
+					id="59d9f7e9-356e-40a5-ae7d-50e2b42e93ae"
+					name="DOM">
+						<modulevariable
+						moduleref="31c6ec3c-8ab0-4fa7-9b59-ae03c0473cb3"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="d0638d6e-7aea-4945-9fc7-de696083c872"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="fe016938-7da3-4dde-91e4-7944d664b437"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<testmodule
+			id="168ea8f4-f13c-413b-a47a-c7eef7030512"
+			name="Validate_Min_Sponsor"
+			ref="a032fcae-f6af-43a1-bd96-bf4cddcc8bdf"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="19a839b8-43f4-449d-a841-58cb06c46c84"
 			name="Enter_Status"
@@ -43,6 +163,12 @@ rxversion="8.0">
 			id="1b4cb9bb-b196-4af7-8fba-73a1c873e8a2"
 			name="Enter_SponsorName"
 			ref="60f1aaa5-af31-4ac0-a8d5-c957ad2e52ef"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1d13859d-47e0-4396-9aad-206ed1468716"
+			name="_Capture_Screenshot"
+			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -125,11 +251,6 @@ rxversion="8.0">
 					id="d49094aa-1f75-4d9f-b0de-d4000fe49a00"
 					name="SponsorName">
 						<modulevariable
-						moduleref="66ae1426-886d-49d8-8259-037e1053301f"
-						name="SponsorName"
-						variableref="742232bc-2955-426a-b3cd-345991873cc4">
-						</modulevariable>
-						<modulevariable
 						moduleref="1b4cb9bb-b196-4af7-8fba-73a1c873e8a2"
 						name="SponsorName"
 						variableref="3adab249-74fc-43df-89aa-dbbdbcaee8cd">
@@ -139,11 +260,6 @@ rxversion="8.0">
 					id="d1c9e0b2-afe9-4755-9c67-c64865da9951"
 					name="CodeName">
 						<modulevariable
-						moduleref="66ae1426-886d-49d8-8259-037e1053301f"
-						name="CodeName"
-						variableref="9bb27b7f-b0b6-4bca-9672-9836b9abb952">
-						</modulevariable>
-						<modulevariable
 						moduleref="d25433ef-09c6-46a1-bb6c-d971cca3437b"
 						name="CodeName"
 						variableref="1ae576cd-09d9-424f-88b1-149c960718a7">
@@ -152,11 +268,6 @@ rxversion="8.0">
 					<groupvariable
 					id="30a9378e-d2ce-46a0-b9af-bd367e49e35f"
 					name="StudyName">
-						<modulevariable
-						moduleref="66ae1426-886d-49d8-8259-037e1053301f"
-						name="StudyName"
-						variableref="b2ebcce4-4d7a-494e-bbd3-db32044c1f56">
-						</modulevariable>
 						<modulevariable
 						moduleref="ce6e01e1-99ac-4f1f-bd3d-ac4408db3f7d"
 						name="StudyName"
@@ -171,11 +282,6 @@ rxversion="8.0">
 					<groupvariable
 					id="7619fa9d-e096-4683-a7c1-a13dd47bfa9c"
 					name="ProtocolID">
-						<modulevariable
-						moduleref="66ae1426-886d-49d8-8259-037e1053301f"
-						name="ProtocolID"
-						variableref="dd90b6c4-1375-45e0-8221-cac1e037ec48">
-						</modulevariable>
 						<modulevariable
 						moduleref="4b72de45-32af-4a43-93c6-6eb6174697f6"
 						name="ProtocolID"
@@ -214,6 +320,12 @@ rxversion="8.0">
 			ref="afa31b22-2d4a-4203-9b20-2f726dfb154a"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="31c6ec3c-8ab0-4fa7-9b59-ae03c0473cb3"
+			name="Validate_Required_VisitScheduleStatus"
+			ref="e7e83fbb-b35a-46de-8903-010268c536d1"
+			type="Recording">
+			</testmodule>
 			<modulegroupdef
 			id="31d841aa-6408-432a-a270-a7977c964d83"
 			name="Add_Workflow">
@@ -221,11 +333,6 @@ rxversion="8.0">
 					<groupvariable
 					id="7b69a33a-70d1-421f-8489-45e5cb9f6a3b"
 					name="WorkflowName">
-						<modulevariable
-						moduleref="915666ac-498e-4430-87d1-03eae8825b4c"
-						name="WorkflowName"
-						variableref="15565e34-ca60-4a40-82ac-21ae6a8305c3">
-						</modulevariable>
 						<modulevariable
 						moduleref="ebe02f54-c538-4745-81d5-82521413381f"
 						name="WorkflowName"
@@ -402,8 +509,56 @@ rxversion="8.0">
 						variableref="610df901-efa9-4374-8683-6129711e6537">
 						</modulevariable>
 					</groupvariable>
+					<groupvariable
+					id="0e71579d-24ff-428c-bd5b-cf75620d61e2"
+					name="Tier1Min">
+						<modulevariable
+						moduleref="29beec32-ac26-4217-80e7-670af093be34"
+						name="Tier1Min"
+						variableref="21a1b1e4-71ba-4cb5-b843-9ec343525dc1">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="9ad11789-4b27-48c8-9579-af5c422c3674"
+					name="Tier1Max">
+						<modulevariable
+						moduleref="29beec32-ac26-4217-80e7-670af093be34"
+						name="Tier1Max"
+						variableref="90483d8d-72a5-458f-b4e7-698b6b1bd9bf">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="7028a47f-5b81-4588-9e92-077eb783a165"
+					name="Tier2Min">
+						<modulevariable
+						moduleref="de2ca63a-c271-4deb-9edc-401f78deb80d"
+						name="Tier2Min"
+						variableref="3f1fc929-798b-4fb5-8c8d-3c2d3e13a806">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="726899f6-25b9-4021-9d69-aa33b7895beb"
+					name="Tier2Max">
+						<modulevariable
+						moduleref="de2ca63a-c271-4deb-9edc-401f78deb80d"
+						name="Tier2Max"
+						variableref="e27f5469-c831-412c-97e7-93e0ab88a81e">
+						</modulevariable>
+					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
+			<testmodule
+			id="3753847e-ff27-4c63-ba78-50f1c81f988f"
+			name="Validate_Required_StudyName"
+			ref="d68c2b19-d689-4ec7-b213-29aba795d2d9"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="38c2d786-4437-4822-8fc5-f6668ac1c717"
+			name="Validate_Required_WorkflowName"
+			ref="d08ab6ae-aa17-4281-88fa-222b097b4ee1"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="3bfc19d2-a25c-4be8-b5b8-81eaf69a0d02"
 			name="Click_Publish_Workflow"
@@ -411,9 +566,21 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4170b16a-5a67-499f-b43d-462d43ff2e53"
+			name="Validate_Required_WorkflowDescription"
+			ref="7229f8e3-ece4-4c41-b4a5-f09d4ef7b02d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4484158b-1ecd-4d84-b60e-985280ee567b"
 			name="Select_ComplexOutcomeTier1_Step"
 			ref="fee81700-b9a7-47f6-93f2-87c7d01bf698"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4a565d96-5d74-4697-b13b-6c9648b63c92"
+			name="Validate_Required_BatteryName"
+			ref="34806562-1932-4d90-96aa-036251444423"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -440,6 +607,12 @@ rxversion="8.0">
 			ref="c0d32fcb-7505-4d9a-9232-eccf013fefb4"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="54c781fa-e9ca-4ecd-add4-4505c6293b21"
+			name="Validate_Required_Population"
+			ref="d3dd0904-a63b-473a-bed0-3c265c972c0b"
+			type="Recording">
+			</testmodule>
 			<modulegroups
 			id="56be6097-e476-4e34-b879-0a8a6780f2d0"
 			name="PrecisionRecruitment">
@@ -454,6 +627,81 @@ rxversion="8.0">
 			id="66ae1426-886d-49d8-8259-037e1053301f"
 			name="Click_Add_Study"
 			ref="6493bcf0-f095-4ece-941f-63fd874e778d"
+			type="Recording">
+			</testmodule>
+			<modulegroupdef
+			id="68fe6151-c835-4db9-8e2a-6e77423b96dd"
+			name="Validate_Required_Study_Fields">
+				<groupvariables>
+					<groupvariable
+					id="6a6fa958-fd14-41de-b510-890a704e5f64"
+					name="DOM">
+						<modulevariable
+						moduleref="3753847e-ff27-4c63-ba78-50f1c81f988f"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="9a72df7f-ecd4-4aeb-a49f-37d33918f5fd"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="a991fc63-5ca0-467f-bb8a-06d54f71619d"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="fa953c78-eab8-4a30-8387-08bb4518a5e3"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="e07df4e1-8c16-47e0-a7b2-fc544d49e539"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="e2583401-6502-4732-afc0-4cf6e4fd01ba"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="1d13859d-47e0-4396-9aad-206ed1468716"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<testmodule
+			id="6ac024f0-9fa8-48ee-9d48-1c2f82cebcd5"
+			name="Validate_Required_Template"
+			ref="9f9a48b0-34cf-448d-9fb4-303d184737cc"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6bb3080e-10af-4d76-80bd-f60b37cebea8"
+			name="Validate_Required_Status"
+			ref="5741086d-d2a2-46a9-b300-058e7d608f18"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6eae3f50-1b31-42f2-a5e6-d39ca63c5f53"
+			name="Validate_Required_WorkflowTemplate"
+			ref="698dde2e-7d92-4555-b0d6-2301ba5ccebc"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7108332a-947b-4e6f-ac09-3ed79d155015"
+			name="Enter_Email"
+			ref="00e96411-5300-4894-bcd5-90fc91208d72"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7586d4c2-96f6-4b36-a8ee-8fafcb388aef"
+			name="_Capture_Screenshot"
+			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -481,15 +729,39 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="9813ea4b-88c3-49b1-87f3-cef8703e6230"
+			name="Validate_Min_ProtocolID"
+			ref="e77502b3-7580-462a-ae8c-6b41185f1d56"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9a72df7f-ecd4-4aeb-a49f-37d33918f5fd"
+			name="Validate_Required_ProtocolID"
+			ref="adf752ff-8ec5-4bba-bb82-88951eb8c498"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9e260ce4-4982-4054-8980-f6e77aecbb4a"
 			name="Expand_ComplexDecision"
 			ref="44658cba-b9d9-43a9-a110-9f51c1248171"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="9e9084b5-9c6a-4f70-841e-c6c9a11a38ac"
+			name="Click_LoginButton"
+			ref="4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a1895dc1-5db4-4ac9-92b8-65f0fb510877"
-			name="Enter_BatteryDesctiption"
+			name="Enter_BatteryDescription"
 			ref="2d955e0d-66b6-44f7-997e-8b5e6d4de1a2"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a991fc63-5ca0-467f-bb8a-06d54f71619d"
+			name="Validate_Required_CodeName"
+			ref="c280838d-9480-4b16-9cfd-88e552ee114e"
 			type="Recording">
 			</testmodule>
 			<modulegroupdef
@@ -619,9 +891,21 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b89c54c5-74f0-40ca-8692-f569aa0f3b56"
+			name="_Capture_Screenshot"
+			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b8d33c6a-5e5b-4805-8dad-6124af9c61ff"
 			name="Validate_BatteryEntry"
 			ref="41eae272-e70a-4c8c-976b-316352274ed1"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b8d961e0-0553-450a-b9ac-1bb0e79dff56"
+			name="Validate_Required_WorkflowType"
+			ref="308167b3-750d-403e-bac7-e63f6d2f0292"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -630,6 +914,42 @@ rxversion="8.0">
 			ref="e1683acd-9bb7-41e2-8897-acd9105174f5"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="be383d94-69ee-4af1-9f53-6926db038e7a"
+			name="Validate_Required_Battery_Fields">
+				<groupvariables>
+					<groupvariable
+					defaultvalue="ModuleGroupDefaultValue"
+					id="3dc6d239-4946-4848-90f7-3995b5e4fb2d"
+					name="DOM">
+						<modulevariable
+						moduleref="4a565d96-5d74-4697-b13b-6c9648b63c92"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="6bb3080e-10af-4d76-80bd-f60b37cebea8"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="54c781fa-e9ca-4ecd-add4-4505c6293b21"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="6ac024f0-9fa8-48ee-9d48-1c2f82cebcd5"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="d75b4a8f-9a7e-448a-b57a-948219439365"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="c10d0229-9922-431e-a508-9fbdcbc4c87c"
 			name="Enter_WorkflowStatus"
@@ -661,9 +981,21 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="cdd41f0d-af33-4db0-9fe2-27d35a42e2b0"
+			name="Validate_Min_CodeName"
+			ref="dbe3709b-0ce2-4e98-9709-f282328d40e2"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="ce6e01e1-99ac-4f1f-bd3d-ac4408db3f7d"
 			name="Enter_StudyName"
 			ref="113509eb-adad-4fbc-93c2-89c616f14658"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d0638d6e-7aea-4945-9fc7-de696083c872"
+			name="Validate_Required_VisitScheduleName"
+			ref="4a9e0fa5-a951-4e9e-9bfe-c7da42510676"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -673,9 +1005,21 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="d33fccd4-09b8-4995-a0dc-8b8e431540b9"
+			name="Enter_Password"
+			ref="c6481925-2e15-4f67-a2ad-a2a6ebdcf123"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="d54a1553-b69f-4152-9b12-c6274ef47682"
 			name="Enter_CBB_BatteryTemplate"
 			ref="4a19ca31-0752-4236-9479-f775e863b5b3"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d75b4a8f-9a7e-448a-b57a-948219439365"
+			name="_Capture_Screenshot"
+			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -697,6 +1041,18 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="e07df4e1-8c16-47e0-a7b2-fc544d49e539"
+			name="Validate_Required_Active"
+			ref="44f69cf3-d767-44ee-8dba-6c8b99733bdd"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e2583401-6502-4732-afc0-4cf6e4fd01ba"
+			name="Validate_Required_Status"
+			ref="5741086d-d2a2-46a9-b300-058e7d608f18"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e4180334-0c27-4061-aaf4-6ef8824ddb73"
 			name="Click_SaveWorkflowProperties_Button"
 			ref="7da41efb-783e-4bc4-8d8d-ce6c02946097"
@@ -708,6 +1064,41 @@ rxversion="8.0">
 			ref="bf386df6-7470-4bdb-a22c-c83c0cd68c78"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="e6b34be3-f05f-4b63-847b-3b7b2a72a2dd"
+			name="Validate_Min_Length_Study_Fields">
+				<groupvariables>
+					<groupvariable
+					id="722a0810-6ee5-4de3-8ddf-713396b16a8a"
+					name="DOM">
+						<modulevariable
+						moduleref="09aa93e3-8988-4677-8909-3d62f0beec7c"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="9813ea4b-88c3-49b1-87f3-cef8703e6230"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="cdd41f0d-af33-4db0-9fe2-27d35a42e2b0"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="168ea8f4-f13c-413b-a47a-c7eef7030512"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="7586d4c2-96f6-4b36-a8ee-8fafcb388aef"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="e815f137-bba1-4262-a565-7f0f2bf9bfc0"
 			name="Click_Add_Battery"
@@ -826,6 +1217,12 @@ rxversion="8.0">
 				</groupvariables>
 			</modulegroupdef>
 			<testmodule
+			id="f56c29dd-d308-4c9e-baa1-7b3711126c62"
+			name="Validate_Required_WorkflowStatus"
+			ref="9f3a3fcf-41bc-471c-996d-5d3db71d87ed"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f725382c-47ef-4334-88c8-4f21efca8124"
 			name="Select_VisitSchedule"
 			ref="884bab92-73c9-4c72-bcb0-b60b57cf56ef"
@@ -841,6 +1238,18 @@ rxversion="8.0">
 			id="f956dab2-744f-498e-8411-acc6036935ce"
 			name="Expand_ComplexDecision"
 			ref="44658cba-b9d9-43a9-a110-9f51c1248171"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fa953c78-eab8-4a30-8387-08bb4518a5e3"
+			name="Validate_Required_Sponsor"
+			ref="cee55784-508a-4aad-9e55-f62093785837"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fe016938-7da3-4dde-91e4-7944d664b437"
+			name="_Capture_Screenshot"
+			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -911,7 +1320,7 @@ rxversion="8.0">
 					</testmodule>
 					<testmodule
 					id="a1895dc1-5db4-4ac9-92b8-65f0fb510877"
-					name="Enter_BatteryDesctiption">
+					name="Enter_BatteryDescription">
 					</testmodule>
 					<testmodule
 					id="21b872e4-b0b3-46ae-b626-37aace178c01"
@@ -1068,6 +1477,146 @@ rxversion="8.0">
 					<testmodule
 					id="3bfc19d2-a25c-4be8-b5b8-81eaf69a0d02"
 					name="Click_Publish_Workflow">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="04b0e867-8b4f-4386-8b17-d54cc8298354"
+				name="Login">
+					<testmodule
+					id="7108332a-947b-4e6f-ac09-3ed79d155015"
+					name="Enter_Email">
+					</testmodule>
+					<testmodule
+					id="d33fccd4-09b8-4995-a0dc-8b8e431540b9"
+					name="Enter_Password">
+					</testmodule>
+					<testmodule
+					id="9e9084b5-9c6a-4f70-841e-c6c9a11a38ac"
+					name="Click_LoginButton">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="68fe6151-c835-4db9-8e2a-6e77423b96dd"
+				name="Validate_Required_Study_Fields">
+					<testmodule
+					id="3753847e-ff27-4c63-ba78-50f1c81f988f"
+					name="Validate_Required_StudyName">
+					</testmodule>
+					<testmodule
+					id="9a72df7f-ecd4-4aeb-a49f-37d33918f5fd"
+					name="Validate_Required_ProtocolID">
+					</testmodule>
+					<testmodule
+					id="a991fc63-5ca0-467f-bb8a-06d54f71619d"
+					name="Validate_Required_CodeName">
+					</testmodule>
+					<testmodule
+					id="fa953c78-eab8-4a30-8387-08bb4518a5e3"
+					name="Validate_Required_Sponsor">
+					</testmodule>
+					<testmodule
+					id="e07df4e1-8c16-47e0-a7b2-fc544d49e539"
+					name="Validate_Required_Active">
+					</testmodule>
+					<testmodule
+					id="e2583401-6502-4732-afc0-4cf6e4fd01ba"
+					name="Validate_Required_Status">
+					</testmodule>
+					<testmodule
+					id="1d13859d-47e0-4396-9aad-206ed1468716"
+					name="_Capture_Screenshot">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="e6b34be3-f05f-4b63-847b-3b7b2a72a2dd"
+				name="Validate_Min_Length_Study_Fields">
+					<testmodule
+					id="09aa93e3-8988-4677-8909-3d62f0beec7c"
+					name="Validate_Min_StudyName">
+					</testmodule>
+					<testmodule
+					id="9813ea4b-88c3-49b1-87f3-cef8703e6230"
+					name="Validate_Min_ProtocolID">
+					</testmodule>
+					<testmodule
+					id="cdd41f0d-af33-4db0-9fe2-27d35a42e2b0"
+					name="Validate_Min_CodeName">
+					</testmodule>
+					<testmodule
+					id="168ea8f4-f13c-413b-a47a-c7eef7030512"
+					name="Validate_Min_Sponsor">
+					</testmodule>
+					<testmodule
+					id="7586d4c2-96f6-4b36-a8ee-8fafcb388aef"
+					name="_Capture_Screenshot">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="be383d94-69ee-4af1-9f53-6926db038e7a"
+				name="Validate_Required_Battery_Fields">
+					<testmodule
+					id="4a565d96-5d74-4697-b13b-6c9648b63c92"
+					name="Validate_Required_BatteryName">
+					</testmodule>
+					<testmodule
+					id="6bb3080e-10af-4d76-80bd-f60b37cebea8"
+					name="Validate_Required_Status">
+					</testmodule>
+					<testmodule
+					id="54c781fa-e9ca-4ecd-add4-4505c6293b21"
+					name="Validate_Required_Population">
+					</testmodule>
+					<testmodule
+					id="6ac024f0-9fa8-48ee-9d48-1c2f82cebcd5"
+					name="Validate_Required_Template">
+					</testmodule>
+					<testmodule
+					id="d75b4a8f-9a7e-448a-b57a-948219439365"
+					name="_Capture_Screenshot">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="1241b4bb-09c8-4c86-8d9e-a428c041c47f"
+				name="Validate_Required_Workflow_Fields">
+					<testmodule
+					id="38c2d786-4437-4822-8fc5-f6668ac1c717"
+					name="Validate_Required_WorkflowName">
+					</testmodule>
+					<testmodule
+					id="4170b16a-5a67-499f-b43d-462d43ff2e53"
+					name="Validate_Required_WorkflowDescription">
+					</testmodule>
+					<testmodule
+					id="b8d961e0-0553-450a-b9ac-1bb0e79dff56"
+					name="Validate_Required_WorkflowType">
+					</testmodule>
+					<testmodule
+					id="f56c29dd-d308-4c9e-baa1-7b3711126c62"
+					name="Validate_Required_WorkflowStatus">
+					</testmodule>
+					<testmodule
+					id="6eae3f50-1b31-42f2-a5e6-d39ca63c5f53"
+					name="Validate_Required_WorkflowTemplate">
+					</testmodule>
+					<testmodule
+					id="b89c54c5-74f0-40ca-8692-f569aa0f3b56"
+					name="_Capture_Screenshot">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="154ca826-b01b-4ba9-be0c-19332df8f0f5"
+				name="Validate_Required_VisitSchedule_Fields">
+					<testmodule
+					id="31c6ec3c-8ab0-4fa7-9b59-ae03c0473cb3"
+					name="Validate_Required_VisitScheduleStatus">
+					</testmodule>
+					<testmodule
+					id="d0638d6e-7aea-4945-9fc7-de696083c872"
+					name="Validate_Required_VisitScheduleName">
+					</testmodule>
+					<testmodule
+					id="fe016938-7da3-4dde-91e4-7944d664b437"
+					name="_Capture_Screenshot">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>

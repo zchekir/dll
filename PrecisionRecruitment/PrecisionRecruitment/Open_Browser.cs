@@ -92,8 +92,8 @@ namespace PrecisionRecruitment
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(URL, "Chrome", "", false, false, false, false, false);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'Chrome' in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(URL, "Chrome", "", false, true, false, false, false);
             Delay.Milliseconds(0);
             
         }

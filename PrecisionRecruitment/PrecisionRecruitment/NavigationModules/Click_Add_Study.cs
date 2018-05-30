@@ -41,10 +41,6 @@ namespace PrecisionRecruitment.NavigationModules
         /// </summary>
         public Click_Add_Study()
         {
-            StudyName = "StudyName";
-            ProtocolID = "ProtocolID";
-            CodeName = "CodeName";
-            SponsorName = "SponsorName";
         }
 
         /// <summary>
@@ -57,42 +53,6 @@ namespace PrecisionRecruitment.NavigationModules
 
 #region Variables
 
-        string _ProtocolID;
-
-        /// <summary>
-        /// Gets or sets the value of variable ProtocolID.
-        /// </summary>
-        [TestVariable("dd90b6c4-1375-45e0-8221-cac1e037ec48")]
-        public string ProtocolID
-        {
-            get { return _ProtocolID; }
-            set { _ProtocolID = value; }
-        }
-
-        string _CodeName;
-
-        /// <summary>
-        /// Gets or sets the value of variable CodeName.
-        /// </summary>
-        [TestVariable("9bb27b7f-b0b6-4bca-9672-9836b9abb952")]
-        public string CodeName
-        {
-            get { return _CodeName; }
-            set { _CodeName = value; }
-        }
-
-        string _SponsorName;
-
-        /// <summary>
-        /// Gets or sets the value of variable SponsorName.
-        /// </summary>
-        [TestVariable("742232bc-2955-426a-b3cd-345991873cc4")]
-        public string SponsorName
-        {
-            get { return _SponsorName; }
-            set { _SponsorName = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
@@ -101,16 +61,6 @@ namespace PrecisionRecruitment.NavigationModules
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable StudyName.
-        /// </summary>
-        [TestVariable("b2ebcce4-4d7a-494e-bbd3-db32044c1f56")]
-        public string StudyName
-        {
-            get { return repo.StudyName; }
-            set { repo.StudyName = value; }
         }
 
 #endregion
