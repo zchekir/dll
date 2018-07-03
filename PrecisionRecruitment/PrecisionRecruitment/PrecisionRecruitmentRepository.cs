@@ -4084,7 +4084,7 @@ namespace PrecisionRecruitment
             {
                 _cardviewInfo = new RepoItemInfo(this, "CardView", ".//div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']", 30000, null, "af2d7ad4-12a1-4714-b865-0228a4635e2f");
                 _listviewInfo = new RepoItemInfo(this, "ListView", ".//div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']", 30000, null, "2d9bf4b1-a067-4bf7-8899-eada717bdc5f");
-                _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']", 30000, null, "ebe4df6e-c851-4e11-8add-75f128aa51a6");
+                _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png' and @visible='True']", 30000, null, "ebe4df6e-c851-4e11-8add-75f128aa51a6");
                 _workflowcardInfo = new RepoItemInfo(this, "WorkflowCard", ".//tag[@tagname='cogstate-generic-list-cards']/div/tag[1]/tag/div/div/div[1]/p[@innertext>$WorkflowName]", 30000, null, "0e197902-4a4c-4a2e-a88d-6979fb3dd446");
             }
 

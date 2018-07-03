@@ -119,6 +119,8 @@ namespace PrecisionRecruitment.ValidationModules
             Validate.AttributeContains(repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Visit Schedule Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data

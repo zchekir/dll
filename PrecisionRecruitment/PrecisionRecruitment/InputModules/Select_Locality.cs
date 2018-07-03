@@ -109,6 +109,8 @@ namespace PrecisionRecruitment.InputModules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
             Delay.Duration(1000, false);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Locality Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
+            
         }
 
 #region Image Feature Data

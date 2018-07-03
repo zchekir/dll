@@ -371,6 +371,30 @@ rxversion="8.0">
 	</plugins.win32.enablebitbridge>
 	<plugins.rawtext.whitelist>
 		<rawtextconfig>
+			<include
+			name="^OutlookGrid$"
+			type="class">
+			</include>
+			<include
+			name="^AfxWndA$"
+			type="class">
+			</include>
+			<include
+			name="^AfxWndW$"
+			type="class">
+			</include>
+			<include
+			name="^_WwG$"
+			type="class">
+			</include>
+			<include
+			name="^_WwB$"
+			type="class">
+			</include>
+			<include
+			name="^Static$"
+			type="class">
+			</include>
 		</rawtextconfig>
 	</plugins.rawtext.whitelist>
 	<Telemetry.Enabled>
@@ -384,7 +408,8 @@ rxversion="8.0">
       &quot;ControlFlags&quot;: 0,
       &quot;CoreData&quot;: {},
       &quot;PluginData&quot;: {
-        &quot;capabilities&quot;: &quot;&quot;
+        &quot;DefaultConfiguration&quot;: &quot;Win 10 - Chrome v54&quot;,
+        &quot;Configurations&quot;: &quot;[{\&quot;Name\&quot;:\&quot;Win 10 - Chrome v54\&quot;,\&quot;Json\&quot;:\&quot;{\\r\\n  \\\&quot;platform\\\&quot;: \\\&quot;Windows 10\\\&quot;,\\r\\n  \\\&quot;browserName\\\&quot;: \\\&quot;chrome\\\&quot;,\\r\\n  \\\&quot;version\\\&quot;: \\\&quot;\\\&quot;\\r\\n}\&quot;,\&quot;Description\&quot;:\&quot;\&quot;},{\&quot;Name\&quot;:\&quot;Win 10 - FF v60\&quot;,\&quot;Json\&quot;:\&quot;{\\r\\n  \\\&quot;platform\\\&quot;: \\\&quot;Windows 10\\\&quot;,\\r\\n  \\\&quot;browserName\\\&quot;: \\\&quot;firefox\\\&quot;,\\r\\n  \\\&quot;version\\\&quot;: \\\&quot;60.0\\\&quot;\\r\\n}\&quot;,\&quot;Description\&quot;:\&quot;\&quot;}]&quot;
       },
       &quot;MetaData&quot;: {},
       &quot;Description&quot;: &quot;&quot;,

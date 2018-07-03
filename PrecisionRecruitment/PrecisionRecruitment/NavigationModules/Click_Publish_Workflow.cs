@@ -100,6 +100,8 @@ namespace PrecisionRecruitment.NavigationModules
             Validate.Exists(repo.CogstateSolutionPlatform.Expanded.PublishButtonInfo);
             Delay.Milliseconds(0);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Workflow Published Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
+            
         }
 
 #region Image Feature Data

@@ -120,6 +120,8 @@ namespace PrecisionRecruitment.ValidationModules
             Validate.AttributeContains(repo.CogstateSolutionPlatform.Expanded.WorkflowNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Workflow Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data

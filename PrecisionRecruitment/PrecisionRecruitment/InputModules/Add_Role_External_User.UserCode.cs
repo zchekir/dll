@@ -35,6 +35,9 @@ namespace PrecisionRecruitment.InputModules
 
         public void SelectStudyToAdd()
         {
+        	//Wait for list to load (need to change this method)
+        	Delay.Duration(30000);
+        	
             //click on dropdown to expand the list of Studies Available
         	Report.Log(ReportLevel.Info,"Mouse click on AddRoleStudyDropdown");
         	repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleStudyDropdown.Click();

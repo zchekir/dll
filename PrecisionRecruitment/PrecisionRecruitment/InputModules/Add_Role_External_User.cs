@@ -128,8 +128,9 @@ namespace PrecisionRecruitment.InputModules
             repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckbox.Click("7;6", 300);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(4));
-            Delay.Duration(1500, false);
+            // Slight Delay waiting for Role to save
+            Report.Log(ReportLevel.Info, "Delay", "Slight Delay waiting for Role to save\r\nWaiting for 1m.", new RecordItemIndex(4));
+            Delay.Duration(60000, false);
             
         }
 

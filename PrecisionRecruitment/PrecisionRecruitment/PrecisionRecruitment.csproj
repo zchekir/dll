@@ -9,7 +9,7 @@
     <RootNamespace>PrecisionRecruitment</RootNamespace>
     <AssemblyName>PrecisionRecruitment</AssemblyName>
     <RanorexVersion>8.0</RanorexVersion>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>e85e1725-ce51-410d-8e88-5ea245b392f9</projectdefaultrepository>
     <StartAction>Project</StartAction>
@@ -45,6 +45,10 @@
     </Reference>
     <Reference Include="Ranorex.Core.Resolver">
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.PDF">
+      <HintPath>..\packages\Ranorex.ReportToPDF.1.0.13\lib\net40\Ranorex.PDF.exe</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Ranorex.Plugin.Cef">
       <Private>False</Private>
@@ -2084,6 +2088,9 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>74aef038-e93f-4db5-bdda-6624b1191545</id>
       <recordtableid>a49733ee-3a8a-44f4-ab4b-94acfbe959dd</recordtableid>
+    </None>
+    <None Include="packages.config">
+      <id>cac0812a-bd0c-4414-a1e1-b00886e6caec</id>
     </None>
     <None Include="PrecisionRecruitmentRepository.rximg">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

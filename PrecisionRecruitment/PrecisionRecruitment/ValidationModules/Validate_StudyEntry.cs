@@ -122,6 +122,8 @@ namespace PrecisionRecruitment.ValidationModules
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Study Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
+            
         }
 
 #region Image Feature Data

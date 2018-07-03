@@ -2345,6 +2345,7 @@ rxversion="8.0">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="97b624ca-7151-4e6b-bb69-8a6beab33467"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -2566,6 +2567,7 @@ rxversion="8.0">
 				</databinding>
 			</testmodule>
 			<modulegroup
+			enabled="False"
 			id="abeafdb5-c8d9-4abb-b104-700cb3e02b9a"
 			name="Login"
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
@@ -4819,7 +4821,7 @@ rxversion="8.0">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="E2E">
+	default="TestRun">
 		<testconfiguration
 		name="E2E">
 			<testcontainer
@@ -4987,6 +4989,9 @@ rxversion="8.0">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			..\..\..\packages\Ranorex.ReportToPDF.1.0.13\lib\net40\Ranorex.PDF.exe
+		</reference>
 		<reference>
 			C:\Program Files (x86)\Ranorex 8.0\Bin\Ranorex.Bootstrapper.dll
 		</reference>

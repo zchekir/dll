@@ -24,8 +24,8 @@ namespace Ranorex.AutomationHelpers.Modules
         {
             //Init variables
             this.registered = false;
-            this.PdfName = "";
-            this.Xml = "";
+            this.PdfName = "Test";
+            this.Xml = "Testxml";
 
             //Possible values: none | failed | all
             this.Details = "all";

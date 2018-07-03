@@ -1190,7 +1190,7 @@ rxversion="8.0">
 				name="AddButton"
 				refimgid="6a7fd5eb-7445-4654-a788-2d03ec422e9b"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png' and @visible='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
