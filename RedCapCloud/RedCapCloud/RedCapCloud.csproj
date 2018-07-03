@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{739128AA-E017-4B60-8DDA-0EC961E1C746}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RedCapCloud</RootNamespace>
+    <AssemblyName>RedCapCloud</AssemblyName>
+    <RanorexVersion>8.0</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>f9948728-2258-4ffd-97ec-9a388bad3d54</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>899d6693-82bc-458c-8653-6516ceb665d0</id>
+    </Compile>
+    <Compile Include="InputModules\LoginPage\Login.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8be3df1f-a4a3-4024-80e3-f0adc2466f41</id>
+      <BoundTo>5de36c70-40f0-431a-8753-a596b432a2a6</BoundTo>
+    </Compile>
+    <Compile Include="InputModules\LoginPage\Login.UserCode.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>239a5a5f-4072-496a-814a-acede17fc62b</id>
+      <BoundTo>5de36c70-40f0-431a-8753-a596b432a2a6</BoundTo>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>d9e6c745-288d-4722-bdb4-46ee3b72f9ae</id>
+    </Compile>
+    <Compile Include="RedCapCloudRepository.cs">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <DependentUpon>RedCapCloudRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>3bf8bad4-1533-44f1-b22a-2380cff5ce99</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>4ef413af-dd9f-4d81-8fac-ed4d3c600dfe</id>
+    </None>
+    <None Include="InputModules\LoginPage\Login.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>5de36c70-40f0-431a-8753-a596b432a2a6</id>
+      <recordtableid>a8e2f938-460b-4a0b-bfb0-e72acab1ecce</recordtableid>
+    </None>
+    <None Include="RedCapCloudRepository.rximg">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <DependentUpon>RedCapCloudRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>aae11862-b5d7-4f2b-a0b2-8df9c28aef12</id>
+    </None>
+    <None Include="RedCapCloudRepository.rxrep">
+      <id>f9948728-2258-4ffd-97ec-9a388bad3d54</id>
+      <repoid>a303f60a-5ab4-4222-9b33-ad98174d1079</repoid>
+      <reporootid>6e7f678d-6d77-4f0e-b651-38eb29a9f3ee</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RedCapCloud.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d2e48606-19b8-4468-be69-a4e43894a2c2</id>
+    </Content>
+    <Content Include="RedCapCloud.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>12444292-7f8c-4a56-a203-eea271edd15b</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InputModules">
+      <id>1f294aca-8074-4443-ac2e-f825205a466b</id>
+    </Folder>
+    <Folder Include="InputModules\LoginPage">
+      <id>6c64f3e2-f862-4af9-aa35-25f1216b05f1</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
