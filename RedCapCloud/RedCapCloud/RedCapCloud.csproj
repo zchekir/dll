@@ -12,10 +12,24 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>f9948728-2258-4ffd-97ec-9a388bad3d54</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
-    <Prefer32Bit>True</Prefer32Bit>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -24,6 +38,7 @@
     <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -34,6 +49,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="engine">
+      <HintPath>..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -113,17 +131,281 @@
     <Compile Include="AssemblyInfo.cs">
       <id>899d6693-82bc-458c-8653-6516ceb665d0</id>
     </Compile>
-    <Compile Include="InputModules\LoginPage\Login.cs">
-      <DependentUpon>Login.rxrec</DependentUpon>
+    <Compile Include="Click_Logout.cs">
+      <BoundTo>3e86f4c4-af85-4d5f-9bca-b8ceee9be721</BoundTo>
+      <DependentUpon>Click_Logout.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dd8e07f-de82-4375-b74f-e579e58c9075</id>
+    </Compile>
+    <Compile Include="Click_Logout.UserCode.cs">
+      <BoundTo>3e86f4c4-af85-4d5f-9bca-b8ceee9be721</BoundTo>
+      <DependentUpon>Click_Logout.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de0def99-6964-4767-9ca6-8e404f2bb045</id>
+    </Compile>
+    <Compile Include="Close_Browser.cs">
+      <BoundTo>5bb9beec-8505-4bff-b7c9-c64f7f7bfad9</BoundTo>
+      <DependentUpon>Close_Browser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e69d935a-4571-4b6e-ba47-a96904437cb1</id>
+    </Compile>
+    <Compile Include="Close_Browser.UserCode.cs">
+      <BoundTo>5bb9beec-8505-4bff-b7c9-c64f7f7bfad9</BoundTo>
+      <DependentUpon>Close_Browser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>222f6664-596d-46b8-9665-c46a35ac98e7</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_AdminRole.cs">
+      <BoundTo>6c487859-686e-4e35-b2df-88da481b3906</BoundTo>
+      <DependentUpon>Enter_AdminRole.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cc06f3f4-a98c-468c-a750-7977b6219e45</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_AdminRole.UserCode.cs">
+      <BoundTo>6c487859-686e-4e35-b2df-88da481b3906</BoundTo>
+      <DependentUpon>Enter_AdminRole.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2b36e8fd-97dc-41ef-8abf-127edf5d2452</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_BriefSummary.cs">
+      <BoundTo>cf0f5a09-347e-46ef-baf9-5739289958d6</BoundTo>
+      <DependentUpon>Enter_BriefSummary.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cd8d7ecc-8a96-45b0-b2bf-bc187dcc7f2c</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_BriefSummary.UserCode.cs">
+      <BoundTo>cf0f5a09-347e-46ef-baf9-5739289958d6</BoundTo>
+      <DependentUpon>Enter_BriefSummary.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f9c7063b-cc4d-4a5f-ab4e-58aba3baafbb</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_BriefTitle.cs">
+      <BoundTo>c2c12cda-7ed3-4287-969d-f0a82b7f82a6</BoundTo>
+      <DependentUpon>Enter_BriefTitle.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c888a06-372e-4050-a4f9-eb2c8fac254b</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_BriefTitle.UserCode.cs">
+      <BoundTo>c2c12cda-7ed3-4287-969d-f0a82b7f82a6</BoundTo>
+      <DependentUpon>Enter_BriefTitle.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c2dccf82-5568-441f-99a2-4f0606e5d542</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_Sponsor.cs">
+      <BoundTo>6e9fbf21-ef2d-4b36-a076-e8a53dd01447</BoundTo>
+      <DependentUpon>Enter_Sponsor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>623ec2dc-b241-4370-bb0e-91ea1f80c154</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_Sponsor.UserCode.cs">
+      <BoundTo>6e9fbf21-ef2d-4b36-a076-e8a53dd01447</BoundTo>
+      <DependentUpon>Enter_Sponsor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6db53617-f407-4b13-bccc-4261622af52d</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_StudyName.cs">
+      <BoundTo>745b9490-d0b8-441d-bc6f-ad80ab76889e</BoundTo>
+      <DependentUpon>Enter_StudyName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ea37426-6cb0-41b3-8288-646f03693bcb</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_StudyName.UserCode.cs">
+      <BoundTo>745b9490-d0b8-441d-bc6f-ad80ab76889e</BoundTo>
+      <DependentUpon>Enter_StudyName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f0ebfde-f79a-44b5-a11b-6716d7d4f1d2</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Select_DatabaseOption.cs">
+      <BoundTo>4346f5be-19a4-420b-99cc-697ee89741b0</BoundTo>
+      <DependentUpon>Select_DatabaseOption.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9ee751b2-0274-4164-860a-f694d8e02606</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Select_DatabaseOption.UserCode.cs">
+      <BoundTo>4346f5be-19a4-420b-99cc-697ee89741b0</BoundTo>
+      <DependentUpon>Select_DatabaseOption.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f1b80c77-36df-49e3-99fb-f3d09dbc6c3b</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_ScreeningDate.cs">
+      <BoundTo>839804dc-7302-4e1b-8f23-78fd7957f0bf</BoundTo>
+      <DependentUpon>Enter_ScreeningDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0212d364-531c-44e4-9468-91e466ed61a9</id>
+    </Compile>
+    <Compile Include="InputModules\AddStudyPage\Enter_ScreeningDate.UserCode.cs">
+      <BoundTo>839804dc-7302-4e1b-8f23-78fd7957f0bf</BoundTo>
+      <DependentUpon>Enter_ScreeningDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>876b9994-96d3-4d71-bdbf-b95ca4f900cf</id>
+    </Compile>
+    <Compile Include="InputModules\LoginPage\Enter_Password.cs">
+      <BoundTo>81caba75-137c-4f81-821c-54e5cfc448f7</BoundTo>
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e05a202-d4d6-4f9c-ab94-f48e0cf71a2c</id>
+    </Compile>
+    <Compile Include="InputModules\LoginPage\Enter_Password.UserCode.cs">
+      <BoundTo>81caba75-137c-4f81-821c-54e5cfc448f7</BoundTo>
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>91822f2b-930f-4f31-a044-46da2bb00314</id>
+    </Compile>
+    <Compile Include="InputModules\LoginPage\Enter_Username.cs">
+      <BoundTo>7158860d-8c82-4d9f-b9a8-bbcdb6f97515</BoundTo>
+      <DependentUpon>Enter_Username.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>429d6e2f-5c55-47c1-9f77-8347fc2342fc</id>
+    </Compile>
+    <Compile Include="InputModules\LoginPage\Enter_Username.UserCode.cs">
+      <BoundTo>7158860d-8c82-4d9f-b9a8-bbcdb6f97515</BoundTo>
+      <DependentUpon>Enter_Username.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6087d7eb-6d4a-48cf-8011-71d4807865e2</id>
+    </Compile>
+    <Compile Include="InputModules\LoginPage\Click_Login_Button.cs">
+      <DependentUpon>Click_Login_Button.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>8be3df1f-a4a3-4024-80e3-f0adc2466f41</id>
       <BoundTo>5de36c70-40f0-431a-8753-a596b432a2a6</BoundTo>
     </Compile>
-    <Compile Include="InputModules\LoginPage\Login.UserCode.cs">
-      <DependentUpon>Login.rxrec</DependentUpon>
+    <Compile Include="InputModules\LoginPage\Click_Login_Button.UserCode.cs">
+      <DependentUpon>Click_Login_Button.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>239a5a5f-4072-496a-814a-acede17fc62b</id>
       <BoundTo>5de36c70-40f0-431a-8753-a596b432a2a6</BoundTo>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Enter_SiteEnrolment.cs">
+      <BoundTo>7a7c3cea-0d9e-438f-8bc7-98523d8fac5b</BoundTo>
+      <DependentUpon>Enter_SiteEnrolment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c7c36f9-9936-4a59-8344-25ba1f76975e</id>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Enter_SiteEnrolment.UserCode.cs">
+      <BoundTo>7a7c3cea-0d9e-438f-8bc7-98523d8fac5b</BoundTo>
+      <DependentUpon>Enter_SiteEnrolment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81aee455-d6a1-403c-8a04-fc6c5efc6eb5</id>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Enter_SiteID.cs">
+      <BoundTo>f083a646-7b7e-427b-9c4f-252d6065f790</BoundTo>
+      <DependentUpon>Enter_SiteID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a20322fb-f616-4f92-b821-d7416cfa2b4e</id>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Enter_SiteID.UserCode.cs">
+      <BoundTo>f083a646-7b7e-427b-9c4f-252d6065f790</BoundTo>
+      <DependentUpon>Enter_SiteID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>87bb870f-bb60-46ec-9462-ac51419fce00</id>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Enter_SiteInvestigator.cs">
+      <BoundTo>cb7bb3c7-b9bb-4510-95e0-3ef3cc5325de</BoundTo>
+      <DependentUpon>Enter_SiteInvestigator.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2b86c6d-b9bd-48d8-9aa4-f0f6c37ec7fd</id>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Enter_SiteInvestigator.UserCode.cs">
+      <BoundTo>cb7bb3c7-b9bb-4510-95e0-3ef3cc5325de</BoundTo>
+      <DependentUpon>Enter_SiteInvestigator.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3638096c-bdd6-4058-a51d-a1246271f283</id>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Select_SiteName.cs">
+      <DependentUpon>Select_SiteName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d17f1d25-e26b-4309-89d5-1524c1b0db68</id>
+      <BoundTo>db1e2293-a22e-4768-b975-14fe2abedbc8</BoundTo>
+    </Compile>
+    <Compile Include="InputModules\SitePage\Select_SiteName.UserCode.cs">
+      <DependentUpon>Select_SiteName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6746a966-afbe-4b55-a207-82a1d98f5494</id>
+      <BoundTo>db1e2293-a22e-4768-b975-14fe2abedbc8</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\AddStudyPage\Click_SaveStudy_Button.cs">
+      <DependentUpon>Click_SaveStudy_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c101be7-cecc-4794-94d2-c6fba0522348</id>
+      <BoundTo>e35034a9-bba7-4b95-a5ab-266becbff88b</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\AddStudyPage\Click_SaveStudy_Button.UserCode.cs">
+      <DependentUpon>Click_SaveStudy_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9acaf0e5-60c1-4b23-81dc-f4e3ff10fdd4</id>
+      <BoundTo>e35034a9-bba7-4b95-a5ab-266becbff88b</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_AddSite_Button.cs">
+      <BoundTo>14301bee-ad96-4dda-8f39-a72fbceac91a</BoundTo>
+      <DependentUpon>Click_AddSite_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cff0745d-1779-4355-9920-1f56a0bd4a34</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_AddSite_Button.UserCode.cs">
+      <BoundTo>14301bee-ad96-4dda-8f39-a72fbceac91a</BoundTo>
+      <DependentUpon>Click_AddSite_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1af94872-ece1-4af6-8a48-897b356df4c0</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_AddStudy_Button.cs">
+      <DependentUpon>Click_AddStudy_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fa90034d-3130-478a-88dc-a760010c939c</id>
+      <BoundTo>274b0360-7b67-47fb-a0b3-9d626ad3545c</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_AddStudy_Button.UserCode.cs">
+      <DependentUpon>Click_AddStudy_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d7575968-c7c8-4dad-a4e8-5d375fa9c5ec</id>
+      <BoundTo>274b0360-7b67-47fb-a0b3-9d626ad3545c</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_SaveSite.cs">
+      <DependentUpon>Click_SaveSite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>760b1227-d505-4bb1-b56a-ab1d90802f4c</id>
+      <BoundTo>18f1b6a0-fc02-4b7b-8408-009912418812</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_SaveSite.UserCode.cs">
+      <DependentUpon>Click_SaveSite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cbc8e17b-a4af-46e2-bcda-b4dd0acbb14e</id>
+      <BoundTo>18f1b6a0-fc02-4b7b-8408-009912418812</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Sites_Tab.cs">
+      <BoundTo>30a9c7d7-5a66-4200-89b0-a07375639db3</BoundTo>
+      <DependentUpon>Click_Sites_Tab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c7fd4527-5acf-4623-b532-43bf1d72acdb</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Sites_Tab.UserCode.cs">
+      <BoundTo>30a9c7d7-5a66-4200-89b0-a07375639db3</BoundTo>
+      <DependentUpon>Click_Sites_Tab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5adf0e74-654a-4ed3-ac04-43f84bbdd38c</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Study.cs">
+      <BoundTo>98a29aa8-60b6-4ee4-b662-fbb57d98852d</BoundTo>
+      <DependentUpon>Click_Study.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c85bf17c-ed6c-48af-8c44-7d78e3299461</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Study.UserCode.cs">
+      <BoundTo>98a29aa8-60b6-4ee4-b662-fbb57d98852d</BoundTo>
+      <DependentUpon>Click_Study.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea966274-9814-4b41-923f-f7f890068755</id>
+    </Compile>
+    <Compile Include="Open_Browser.cs">
+      <BoundTo>b87240ea-48b3-4f01-aafd-e0512f44c38e</BoundTo>
+      <DependentUpon>Open_Browser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>920b8c0b-313f-43eb-b1ef-2f4bff936bff</id>
+    </Compile>
+    <Compile Include="Open_Browser.UserCode.cs">
+      <BoundTo>b87240ea-48b3-4f01-aafd-e0512f44c38e</BoundTo>
+      <DependentUpon>Open_Browser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd253ce6-7262-43e1-bf57-b4915da3a2ce</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>d9e6c745-288d-4722-bdb4-46ee3b72f9ae</id>
@@ -134,15 +416,155 @@
       <RepositoryCode>true</RepositoryCode>
       <id>3bf8bad4-1533-44f1-b22a-2380cff5ce99</id>
     </Compile>
+    <Compile Include="ValidationModules\Validate_SiteEntry.cs">
+      <BoundTo>5e66ae25-2cac-40ae-9218-bdc2eb22502a</BoundTo>
+      <DependentUpon>Validate_SiteEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>75852284-3812-4898-a136-2e70725c2d76</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_SiteEntry.UserCode.cs">
+      <BoundTo>5e66ae25-2cac-40ae-9218-bdc2eb22502a</BoundTo>
+      <DependentUpon>Validate_SiteEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3502cb7f-0094-4bc1-9c8f-373a1e593ff9</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_StudyEntry.cs">
+      <DependentUpon>Validate_StudyEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a6aa712-b594-43a0-a3ea-20e3407a1ee7</id>
+      <BoundTo>9e4e8e32-b3ec-455b-935b-6a84f5e1208b</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_StudyEntry.UserCode.cs">
+      <DependentUpon>Validate_StudyEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4dafaad1-506e-4d04-8051-06855bc5a8e2</id>
+      <BoundTo>9e4e8e32-b3ec-455b-935b-6a84f5e1208b</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <id>4ef413af-dd9f-4d81-8fac-ed4d3c600dfe</id>
     </None>
-    <None Include="InputModules\LoginPage\Login.rxrec">
+    <Content Include="DataConnector.csv">
+      <BoundTo>12444292-7f8c-4a56-a203-eea271edd15b</BoundTo>
+      <DependentUpon>RedCapCloud.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>355cc0ae-5668-4b8e-8405-66435a52ec9b</id>
+    </Content>
+    <None Include="Click_Logout.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>3e86f4c4-af85-4d5f-9bca-b8ceee9be721</id>
+      <recordtableid>82c513c0-bd23-4fbe-a34f-2907c8524d40</recordtableid>
+    </None>
+    <None Include="Close_Browser.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>5bb9beec-8505-4bff-b7c9-c64f7f7bfad9</id>
+      <recordtableid>da109cf5-f3c0-49e3-96bf-aee85dba2e77</recordtableid>
+    </None>
+    <None Include="InputModules\AddStudyPage\Enter_AdminRole.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>6c487859-686e-4e35-b2df-88da481b3906</id>
+      <recordtableid>16cac4ec-eace-422b-ba9c-701b3dd80b6b</recordtableid>
+    </None>
+    <None Include="InputModules\AddStudyPage\Enter_BriefSummary.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>cf0f5a09-347e-46ef-baf9-5739289958d6</id>
+      <recordtableid>f8785a4e-ec14-4f14-a878-c63604520e51</recordtableid>
+    </None>
+    <None Include="InputModules\AddStudyPage\Enter_BriefTitle.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>c2c12cda-7ed3-4287-969d-f0a82b7f82a6</id>
+      <recordtableid>387d7694-2bcb-468a-a0a5-6acdf3b54aef</recordtableid>
+    </None>
+    <None Include="InputModules\AddStudyPage\Enter_Sponsor.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>6e9fbf21-ef2d-4b36-a076-e8a53dd01447</id>
+      <recordtableid>65e9609a-516b-4878-81cc-e4beeb6c2142</recordtableid>
+    </None>
+    <None Include="InputModules\AddStudyPage\Enter_StudyName.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>745b9490-d0b8-441d-bc6f-ad80ab76889e</id>
+      <recordtableid>caeb8156-0e33-44a9-88b2-acf2265343cc</recordtableid>
+    </None>
+    <None Include="InputModules\AddStudyPage\Select_DatabaseOption.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>4346f5be-19a4-420b-99cc-697ee89741b0</id>
+      <recordtableid>6e31c9ce-045f-4c68-9677-6c33920d2d80</recordtableid>
+    </None>
+    <None Include="InputModules\AddStudyPage\Enter_ScreeningDate.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>839804dc-7302-4e1b-8f23-78fd7957f0bf</id>
+      <recordtableid>c0f9dc7b-1f01-4167-bcf6-d868536139d4</recordtableid>
+    </None>
+    <None Include="InputModules\LoginPage\Enter_Password.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>81caba75-137c-4f81-821c-54e5cfc448f7</id>
+      <recordtableid>e59097d8-8b0c-45be-9e00-1df5daf09a39</recordtableid>
+    </None>
+    <None Include="InputModules\LoginPage\Enter_Username.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>7158860d-8c82-4d9f-b9a8-bbcdb6f97515</id>
+      <recordtableid>e508381d-293b-4818-ab9c-d4393b14b647</recordtableid>
+    </None>
+    <None Include="InputModules\LoginPage\Click_Login_Button.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>5de36c70-40f0-431a-8753-a596b432a2a6</id>
       <recordtableid>a8e2f938-460b-4a0b-bfb0-e72acab1ecce</recordtableid>
+    </None>
+    <None Include="InputModules\SitePage\Enter_SiteEnrolment.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>7a7c3cea-0d9e-438f-8bc7-98523d8fac5b</id>
+      <recordtableid>5cf2480c-8c1c-46e3-b86b-f262a9c55f81</recordtableid>
+    </None>
+    <None Include="InputModules\SitePage\Enter_SiteID.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>f083a646-7b7e-427b-9c4f-252d6065f790</id>
+      <recordtableid>9f216037-4a92-4e9e-ac53-cd9ce20eca4e</recordtableid>
+    </None>
+    <None Include="InputModules\SitePage\Enter_SiteInvestigator.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>cb7bb3c7-b9bb-4510-95e0-3ef3cc5325de</id>
+      <recordtableid>ce122304-990d-4f47-b11b-bc20b49860b7</recordtableid>
+    </None>
+    <None Include="InputModules\SitePage\Select_SiteName.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>db1e2293-a22e-4768-b975-14fe2abedbc8</id>
+      <recordtableid>b2ab461e-f722-426f-be3d-aa1c8bb43c51</recordtableid>
+    </None>
+    <None Include="NavigationModules\AddStudyPage\Click_SaveStudy_Button.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>e35034a9-bba7-4b95-a5ab-266becbff88b</id>
+      <recordtableid>7d3b5409-d775-431b-b745-b52b19698ea1</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_AddSite_Button.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>14301bee-ad96-4dda-8f39-a72fbceac91a</id>
+      <recordtableid>85628b49-18ce-417c-bd75-a05ce1363610</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_AddStudy_Button.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>274b0360-7b67-47fb-a0b3-9d626ad3545c</id>
+      <recordtableid>3b0c960d-4e59-4d1a-a918-4b670266537d</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_SaveSite.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>18f1b6a0-fc02-4b7b-8408-009912418812</id>
+      <recordtableid>62dc2b88-196c-4a28-9a07-2bdba004739d</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_Sites_Tab.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>30a9c7d7-5a66-4200-89b0-a07375639db3</id>
+      <recordtableid>7be844f4-873c-4576-8644-e7a186898df1</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_Study.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>98a29aa8-60b6-4ee4-b662-fbb57d98852d</id>
+      <recordtableid>412c0a6e-bfb9-423e-b6fe-a5c6b419ec68</recordtableid>
+    </None>
+    <None Include="Open_Browser.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>b87240ea-48b3-4f01-aafd-e0512f44c38e</id>
+      <recordtableid>00e6b236-1bc8-4276-b907-6919860acfe5</recordtableid>
     </None>
     <None Include="RedCapCloudRepository.rximg">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -154,6 +576,16 @@
       <id>f9948728-2258-4ffd-97ec-9a388bad3d54</id>
       <repoid>a303f60a-5ab4-4222-9b33-ad98174d1079</repoid>
       <reporootid>6e7f678d-6d77-4f0e-b651-38eb29a9f3ee</reporootid>
+    </None>
+    <None Include="ValidationModules\Validate_SiteEntry.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>5e66ae25-2cac-40ae-9218-bdc2eb22502a</id>
+      <recordtableid>f2840275-e09f-4ec4-a2a6-8648d892f634</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_StudyEntry.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>9e4e8e32-b3ec-455b-935b-6a84f5e1208b</id>
+      <recordtableid>04a3f2ed-a8f4-4380-ba5a-1b2097e3e934</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +605,27 @@
     <Folder Include="InputModules\LoginPage">
       <id>6c64f3e2-f862-4af9-aa35-25f1216b05f1</id>
     </Folder>
+    <Folder Include="InputModules\AddStudyPage">
+      <id>495822c6-2edb-49f5-ace3-977f4ec132a5</id>
+    </Folder>
+    <Folder Include="InputModules\SitePage">
+      <id>68c2a709-1448-4442-9cd7-e9551f9195ae</id>
+    </Folder>
+    <Folder Include="NavigationModules">
+      <id>eec9ef53-5e31-4231-9890-b2a84e530777</id>
+    </Folder>
+    <Folder Include="NavigationModules\AddStudyPage">
+      <id>1adf943c-e521-407a-8904-e26686974e06</id>
+    </Folder>
+    <Folder Include="ValidationModules">
+      <id>34b1ef50-b27f-4f94-86c3-e7ef3fcbf755</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{D0F9EFE0-F0F4-4BED-BB1A-1282D7BDB25F}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

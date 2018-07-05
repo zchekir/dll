@@ -24,22 +24,22 @@ namespace RedCapCloud.InputModules.LoginPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Login recording.
+    ///The Click_Login_Button recording.
     /// </summary>
     [TestModule("a8e2f938-460b-4a0b-bfb0-e72acab1ecce", ModuleType.Recording, 1)]
-    public partial class Login : ITestModule
+    public partial class Click_Login_Button : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Login instance = new Login();
+        static Click_Login_Button instance = new Click_Login_Button();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Login()
+        public Click_Login_Button()
         {
             Password = "913172@RCC{LShiftKey up}{Return}";
             username = "dwood@cogstate.com";
@@ -48,7 +48,7 @@ namespace RedCapCloud.InputModules.LoginPage
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Login Instance
+        public static Click_Login_Button Instance
         {
             get { return instance; }
         }
@@ -79,6 +79,16 @@ namespace RedCapCloud.InputModules.LoginPage
             set { _username = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -99,37 +109,17 @@ namespace RedCapCloud.InputModules.LoginPage
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginUsername' at 51;23.", repo.REDCapCloud.LoginUsernameInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.LoginUsername.Click("51;23");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginButton' at Center.", repo.REDCapCloud.LoginPage.LoginButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.LoginPage.LoginButton.Click(30);
+            Delay.Milliseconds(470);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$username' with focus on 'REDCapCloud.LoginUsername'.", repo.REDCapCloud.LoginUsernameInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.LoginUsername.PressKeys(username);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SignIn' at 44;8.", repo.REDCapCloud.SignInInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SignIn.Click("44;8");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPassword' at 139;25.", repo.REDCapCloud.LoginPasswordInfo, new RecordItemIndex(3));
-            repo.REDCapCloud.LoginPassword.Click("139;25");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'REDCapCloud.LoginPassword'.", repo.REDCapCloud.LoginPasswordInfo, new RecordItemIndex(4));
-            repo.REDCapCloud.LoginPassword.PressKeys(Password);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud' at 816;427.", repo.REDCapCloud.SelfInfo, new RecordItemIndex(5));
-            repo.REDCapCloud.Self.Click("816;427");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.MyStudies'.", repo.REDCapCloud.MyStudiesInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.MyStudies'.", repo.REDCapCloud.MyStudiesInfo, new RecordItemIndex(1));
             Validate.Exists(repo.REDCapCloud.MyStudiesInfo);
             Delay.Milliseconds(100);
             
