@@ -22,7 +22,7 @@ namespace RedCapCloud
     /// <summary>
     /// The class representing the RedCapCloudRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
     [RepositoryFolder("6e7f678d-6d77-4f0e-b651-38eb29a9f3ee")]
     public partial class RedCapCloudRepository : RepoGenBaseFolder
     {
@@ -97,6 +97,30 @@ namespace RedCapCloud
             set { _BriefSummary = value; }
         }
 
+        string _SiteName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable SiteName.
+        /// </summary>
+        [TestVariable("b1ca5aa5-76ea-4bd2-a285-af47b7e183d5")]
+        public string SiteName
+        {
+            get { return _SiteName; }
+            set { _SiteName = value; }
+        }
+
+        string _RandNum = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("b03a9d83-6871-47ac-8161-ba9bba2e3f0d")]
+        public string RandNum
+        {
+            get { return _RandNum; }
+            set { _RandNum = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -124,7 +148,7 @@ namespace RedCapCloud
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
     public partial class RedCapCloudRepositoryFolders
     {
         /// <summary>
@@ -137,6 +161,7 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.AddStudyPageFolder _addstudypage;
             RedCapCloudRepositoryFolders.AddSitePageFolder _addsitepage;
             RedCapCloudRepositoryFolders.StudiesTableFolder _studiestable;
+            RedCapCloudRepositoryFolders.SitesTableFolder _sitestable;
             RepoItemInfo _mystudiesInfo;
             RepoItemInfo _addstudybuttonInfo;
             RepoItemInfo _usersettingsmenuInfo;
@@ -154,6 +179,7 @@ namespace RedCapCloud
                 _addstudypage = new RedCapCloudRepositoryFolders.AddStudyPageFolder(this);
                 _addsitepage = new RedCapCloudRepositoryFolders.AddSitePageFolder(this);
                 _studiestable = new RedCapCloudRepositoryFolders.StudiesTableFolder(this);
+                _sitestable = new RedCapCloudRepositoryFolders.SitesTableFolder(this);
                 _mystudiesInfo = new RepoItemInfo(this, "MyStudies", ".//div[#'gwtWrapper']//div/table[2]//div[@innertext='My Studies']", 30000, null, "a862ea4b-e3d0-46e0-9253-c22a1a4973b7");
                 _addstudybuttonInfo = new RepoItemInfo(this, "AddStudyButton", ".//button[#'studiesListAbstract_buttonAdd']", 30000, null, "04f7ce87-69a8-4c62-b147-f3cc88553b26");
                 _usersettingsmenuInfo = new RepoItemInfo(this, "UserSettingsMenu", ".//button[#'dropDownButton_button_userSettings']", 30000, null, "dc7fa4ec-8022-4ced-9546-81d3c757aec1");
@@ -364,6 +390,15 @@ namespace RedCapCloud
             public virtual RedCapCloudRepositoryFolders.StudiesTableFolder StudiesTable
             {
                 get { return _studiestable; }
+            }
+
+            /// <summary>
+            /// The SitesTable folder.
+            /// </summary>
+            [RepositoryFolder("f3ed595b-c7c6-4591-9c20-ed4615814a54")]
+            public virtual RedCapCloudRepositoryFolders.SitesTableFolder SitesTable
+            {
+                get { return _sitestable; }
             }
         }
 
@@ -1033,6 +1068,98 @@ namespace RedCapCloud
                 get
                 {
                     return _studysummaryInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SitesTableFolder folder.
+        /// </summary>
+        [RepositoryFolder("f3ed595b-c7c6-4591-9c20-ed4615814a54")]
+        public partial class SitesTableFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _sitenameInfo;
+            RepoItemInfo _studysiteidInfo;
+
+            /// <summary>
+            /// Creates a new SitesTable  folder.
+            /// </summary>
+            public SitesTableFolder(RepoGenBaseFolder parentFolder) :
+                    base("SitesTable", ".//div[#'gwtWrapper']", parentFolder, 30000, null, false, "f3ed595b-c7c6-4591-9c20-ed4615814a54", "")
+            {
+                _sitenameInfo = new RepoItemInfo(this, "SiteName", ".//tbody/tr//div[@innertext='Cogstate']", 30000, null, "30eed5e1-47f2-4a38-a46c-32ebf9644ffe");
+                _studysiteidInfo = new RepoItemInfo(this, "StudySiteID", "tbody/tr[1]/td[5]/div[@innertext>$RandNum]", 30000, null, "b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f3ed595b-c7c6-4591-9c20-ed4615814a54")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f3ed595b-c7c6-4591-9c20-ed4615814a54")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteName item.
+            /// </summary>
+            [RepositoryItem("30eed5e1-47f2-4a38-a46c-32ebf9644ffe")]
+            public virtual Ranorex.DivTag SiteName
+            {
+                get
+                {
+                    return _sitenameInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteName item info.
+            /// </summary>
+            [RepositoryItemInfo("30eed5e1-47f2-4a38-a46c-32ebf9644ffe")]
+            public virtual RepoItemInfo SiteNameInfo
+            {
+                get
+                {
+                    return _sitenameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StudySiteID item.
+            /// </summary>
+            [RepositoryItem("b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff")]
+            public virtual Ranorex.DivTag StudySiteID
+            {
+                get
+                {
+                    return _studysiteidInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StudySiteID item info.
+            /// </summary>
+            [RepositoryItemInfo("b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff")]
+            public virtual RepoItemInfo StudySiteIDInfo
+            {
+                get
+                {
+                    return _studysiteidInfo;
                 }
             }
         }

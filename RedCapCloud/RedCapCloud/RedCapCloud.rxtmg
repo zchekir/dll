@@ -1,12 +1,101 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <modulegroupdoc
-rxversion="8.0">
+rxversion="8.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<modulegroupdef
+			id="0e6eba94-108f-4c7e-be95-15ad01fb7149"
+			name="AddSite">
+				<groupvariables>
+					<groupvariable
+					id="a8be2661-2184-4005-bb38-91498462836a"
+					name="DOM">
+						<modulevariable
+						moduleref="24ecbc27-7c0d-4c38-83c6-c5a0c2505aa5"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="61d13076-dc43-42f8-835a-0f3fa9425be1"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="901f6bee-fc48-43f0-a228-96b8ee6e4969"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="43cb6ed1-d9f1-48b2-b954-419d59e60e2a"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="d5494fbf-d5df-4869-9779-e293a718cf32"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="f558b62d-a895-488d-80ba-c99249a3ce94"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="6fa088cc-ec51-46ac-b06a-1560ac6d6d09"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="9077a765-d2b0-4dc1-9ac8-0c227c07f866"
+						name="DOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="aee8f875-b11d-4331-a2d9-6b97af364f14"
+					name="StudyName">
+						<modulevariable
+						moduleref="24ecbc27-7c0d-4c38-83c6-c5a0c2505aa5"
+						name="StudyName"
+						variableref="9fb53a7d-2a6f-47b3-8fa5-4d13a07e1b86">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="f6ae8511-9c18-43b5-aabb-d1deef6a0905"
+					name="RandNum">
+						<modulevariable
+						moduleref="d5494fbf-d5df-4869-9779-e293a718cf32"
+						name="RandNum"
+						variableref="07826f20-20b1-4c0b-849d-cea11012c111">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="bba92fba-0d62-4cc8-9cb0-27cb90df2aff"
+					name="SiteInvestigator">
+						<modulevariable
+						moduleref="f558b62d-a895-488d-80ba-c99249a3ce94"
+						name="SiteInvestigator"
+						variableref="d934abc0-32ca-4744-aa04-8c7f1cfa6fb9">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<testmodule
+			id="24ecbc27-7c0d-4c38-83c6-c5a0c2505aa5"
+			name="Click_Study"
+			ref="412c0a6e-bfb9-423e-b6fe-a5c6b419ec68"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="3cfb5b93-5d25-4b9d-a3de-6d4be6d73cf3"
 			name="Enter_Sponsor"
 			ref="65e9609a-516b-4878-81cc-e4beeb6c2142"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="43cb6ed1-d9f1-48b2-b954-419d59e60e2a"
+			name="Select_SiteName"
+			ref="b2ab461e-f722-426f-be3d-aa1c8bb43c51"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -138,12 +227,6 @@ rxversion="8.0">
 						</modulevariable>
 					</groupvariable>
 				</groupvariables>
-				<constantvalues>
-					<constantvalue
-					id="44085cab-882e-4006-a2ca-4582ee9d7758"
-					value="NewConstantValue">
-					</constantvalue>
-				</constantvalues>
 			</modulegroupdef>
 			<testmodule
 			id="484a1bc0-0998-4a29-8c02-cf0520b73d49"
@@ -152,9 +235,21 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="61d13076-dc43-42f8-835a-0f3fa9425be1"
+			name="Click_Sites_Tab"
+			ref="7be844f4-873c-4576-8644-e7a186898df1"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="6c180683-f8a6-42e1-81ec-d2f98073dfed"
 			name="Click_Login_Button"
 			ref="a8e2f938-460b-4a0b-bfb0-e72acab1ecce"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6fa088cc-ec51-46ac-b06a-1560ac6d6d09"
+			name="Enter_SiteEnrolment"
+			ref="5cf2480c-8c1c-46e3-b86b-f262a9c55f81"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -188,9 +283,27 @@ rxversion="8.0">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="901f6bee-fc48-43f0-a228-96b8ee6e4969"
+			name="Click_AddSite_Button"
+			ref="85628b49-18ce-417c-bd75-a05ce1363610"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9077a765-d2b0-4dc1-9ac8-0c227c07f866"
+			name="Click_SaveSite"
+			ref="62dc2b88-196c-4a28-9a07-2bdba004739d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="bc048b6a-80e7-4cb1-85e0-d665afb6dac2"
 			name="Enter_BriefTitle"
 			ref="387d7694-2bcb-468a-a0a5-6acdf3b54aef"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d5494fbf-d5df-4869-9779-e293a718cf32"
+			name="Enter_SiteID"
+			ref="9f216037-4a92-4e9e-ac53-cd9ce20eca4e"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -262,6 +375,12 @@ rxversion="8.0">
 					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
+			<testmodule
+			id="f558b62d-a895-488d-80ba-c99249a3ce94"
+			name="Enter_SiteInvestigator"
+			ref="ce122304-990d-4f47-b11b-bc20b49860b7"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<modulegroups
@@ -321,6 +440,42 @@ rxversion="8.0">
 					<testmodule
 					id="850309d1-701f-4ff6-9085-ddd98d3b41dd"
 					name="Click_SaveStudy_Button">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="0e6eba94-108f-4c7e-be95-15ad01fb7149"
+				name="AddSite">
+					<testmodule
+					id="24ecbc27-7c0d-4c38-83c6-c5a0c2505aa5"
+					name="Click_Study">
+					</testmodule>
+					<testmodule
+					id="61d13076-dc43-42f8-835a-0f3fa9425be1"
+					name="Click_Sites_Tab">
+					</testmodule>
+					<testmodule
+					id="901f6bee-fc48-43f0-a228-96b8ee6e4969"
+					name="Click_AddSite_Button">
+					</testmodule>
+					<testmodule
+					id="43cb6ed1-d9f1-48b2-b954-419d59e60e2a"
+					name="Select_SiteName">
+					</testmodule>
+					<testmodule
+					id="d5494fbf-d5df-4869-9779-e293a718cf32"
+					name="Enter_SiteID">
+					</testmodule>
+					<testmodule
+					id="f558b62d-a895-488d-80ba-c99249a3ce94"
+					name="Enter_SiteInvestigator">
+					</testmodule>
+					<testmodule
+					id="6fa088cc-ec51-46ac-b06a-1560ac6d6d09"
+					name="Enter_SiteEnrolment">
+					</testmodule>
+					<testmodule
+					id="9077a765-d2b0-4dc1-9ac8-0c227c07f866"
+					name="Click_SaveSite">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>

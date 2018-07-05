@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>RedCapCloud</RootNamespace>
     <AssemblyName>RedCapCloud</AssemblyName>
-    <RanorexVersion>8.0</RanorexVersion>
+    <RanorexVersion>8.2</RanorexVersion>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>f9948728-2258-4ffd-97ec-9a388bad3d54</projectdefaultrepository>
@@ -65,6 +65,9 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
       <Private>False</Private>
     </Reference>
     <Reference Include="Ranorex.Plugin.FirefoxWeb">
@@ -337,13 +340,13 @@
     </Compile>
     <Compile Include="NavigationModules\Click_AddSite_Button.cs">
       <BoundTo>14301bee-ad96-4dda-8f39-a72fbceac91a</BoundTo>
-      <DependentUpon>Click_AddSite_Button.rxrec</DependentUpon>
+      <DependentUpon>Click_AddSite_button.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>cff0745d-1779-4355-9920-1f56a0bd4a34</id>
     </Compile>
     <Compile Include="NavigationModules\Click_AddSite_Button.UserCode.cs">
       <BoundTo>14301bee-ad96-4dda-8f39-a72fbceac91a</BoundTo>
-      <DependentUpon>Click_AddSite_Button.rxrec</DependentUpon>
+      <DependentUpon>Click_AddSite_button.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1af94872-ece1-4af6-8a48-897b356df4c0</id>
     </Compile>

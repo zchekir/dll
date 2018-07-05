@@ -24,7 +24,7 @@ namespace RedCapCloud.NavigationModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_AddSite_Button recording.
+    ///The Click_AddSite_button recording.
     /// </summary>
     [TestModule("85628b49-18ce-417c-bd75-a05ce1363610", ModuleType.Recording, 1)]
     public partial class Click_AddSite_Button : ITestModule
@@ -68,7 +68,7 @@ namespace RedCapCloud.NavigationModules
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -80,7 +80,7 @@ namespace RedCapCloud.NavigationModules
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 100;

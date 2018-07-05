@@ -1,14 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
-rxversion="8.0">
+rxversion="8.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
-			<testmodule
-			id="0098f791-1ceb-4ff0-a591-f4a0834e7c25"
-			name="Click_Study"
-			ref="412c0a6e-bfb9-423e-b6fe-a5c6b419ec68"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="023eca59-ad1f-4d19-a0aa-c4dd047f7c7d"
 			name="Validate_StudyEntry"
@@ -76,12 +70,6 @@ rxversion="8.0">
 			id="062f0475-af35-4fa7-aedb-40b1ba57984d"
 			name="End-to-End">
 			</smartfoldernode>
-			<testmodule
-			id="0f39e491-ce46-4e59-8dbe-62388c14e785"
-			name="Enter_SiteInvestigator"
-			ref="ce122304-990d-4f47-b11b-bc20b49860b7"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="114e2f54-3f11-4460-a958-45680cbd3fbb"
 			name="Successful_Login">
@@ -183,12 +171,6 @@ rxversion="8.0">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="285334aa-7029-4684-8846-c4045b6b9744"
-			name="Click_SaveSite"
-			ref="62dc2b88-196c-4a28-9a07-2bdba004739d"
-			type="Recording">
-			</testmodule>
 			<teardown
 			id="339258f8-ef45-45bf-a419-262d7132e733"
 			name="teardown">
@@ -212,12 +194,6 @@ rxversion="8.0">
 					variablename="DOM">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="393dce60-d647-4e87-8b00-00751f9b5eb6"
-			name="Enter_SiteID"
-			ref="9f216037-4a92-4e9e-ac53-cd9ce20eca4e"
-			type="Recording">
 			</testmodule>
 			<teardown
 			id="3e721819-03f0-428d-9ca3-c11398b67d2b"
@@ -262,12 +238,6 @@ rxversion="8.0">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="5556a697-c734-4520-a465-8bcd8060796c"
-			name="Select_SiteName"
-			ref="b2ab461e-f722-426f-be3d-aa1c8bb43c51"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="564c2521-fe39-4400-acc2-b092893af75d"
 			name="Open_Browser"
 			ref="00e6b236-1bc8-4276-b907-6919860acfe5"
@@ -280,12 +250,6 @@ rxversion="8.0">
 					variablename="URL">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="58d832f8-98b5-42fd-810f-37088ae3adc2"
-			name="Enter_SiteEnrolment"
-			ref="5cf2480c-8c1c-46e3-b86b-f262a9c55f81"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="5b7ca7dc-3925-4e9d-8806-a657ff2945ef"
@@ -306,6 +270,32 @@ rxversion="8.0">
 			name="Validate_StudyEntry"
 			ref="04a3f2ed-a8f4-4380-ba5a-1b2097e3e934"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RandNum"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="141d2d08-a488-48d4-921a-cad49dfd869f"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="a695d3a0-4e9b-487d-bdc0-4472914a4d01"
+					variableid="9fb53a7d-2a6f-47b3-8fa5-4d13a07e1b86"
+					variablename="StudyName">
+					</var>
+					<var
+					dataname="BriefSummary"
+					datasourceid="a695d3a0-4e9b-487d-bdc0-4472914a4d01"
+					variableid="dd613b9d-9d3e-4771-a417-716ec481c2da"
+					variablename="BriefSummary">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="612bc04f-2359-4cec-956e-de9f7965ace2"
@@ -325,6 +315,11 @@ rxversion="8.0">
 			id="6186f981-a366-43a0-9793-d1d3e845c3ef"
 			name="setup">
 			</setup>
+			<modulegroup
+			id="62d4a4ef-725f-42e3-a1c8-349c175811db"
+			name="AddSite"
+			ref="0e6eba94-108f-4c7e-be95-15ad01fb7149">
+			</modulegroup>
 			<testmodule
 			id="680a9f78-152b-4000-80cd-865dc08a7edc"
 			name="Enter_StudyName"
@@ -361,6 +356,20 @@ rxversion="8.0">
 			name="Validate_SiteEntry"
 			ref="f2840275-e09f-4ec4-a2a6-8648d892f634"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
+					variablename="RandNum">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="73243b0a-d370-43d2-9233-561875107e13"
@@ -629,15 +638,10 @@ rxversion="8.0">
 				</databinding>
 			</testmodule>
 			<testcase
+			datasource="DataConnector"
 			id="ebd917fc-8fd7-44fb-a62d-9a68a146175c"
 			name="Add_Site">
 			</testcase>
-			<testmodule
-			id="f0e40628-b2cf-493b-b54f-7287102fe94f"
-			name="Click_Sites_Tab"
-			ref="7be844f4-873c-4576-8644-e7a186898df1"
-			type="Recording">
-			</testmodule>
 			<modulegroup
 			id="f30392f8-284e-4d76-9dea-f93c123382d8"
 			name="AddStudy"
@@ -687,12 +691,6 @@ rxversion="8.0">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testmodule
-			id="f90ee646-b1e3-4d43-97a4-93e033b30d79"
-			name="Click_AddSite_Button"
-			ref="85628b49-18ce-417c-bd75-a05ce1363610"
-			type="Recording">
-			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -855,38 +853,10 @@ rxversion="8.0">
 						<testcase
 						id="ebd917fc-8fd7-44fb-a62d-9a68a146175c"
 						name="Add_Site">
-							<testmodule
-							id="0098f791-1ceb-4ff0-a591-f4a0834e7c25"
-							name="Click_Study">
-							</testmodule>
-							<testmodule
-							id="f0e40628-b2cf-493b-b54f-7287102fe94f"
-							name="Click_Sites_Tab">
-							</testmodule>
-							<testmodule
-							id="f90ee646-b1e3-4d43-97a4-93e033b30d79"
-							name="Click_AddSite_Button">
-							</testmodule>
-							<testmodule
-							id="5556a697-c734-4520-a465-8bcd8060796c"
-							name="Select_SiteName">
-							</testmodule>
-							<testmodule
-							id="393dce60-d647-4e87-8b00-00751f9b5eb6"
-							name="Enter_SiteID">
-							</testmodule>
-							<testmodule
-							id="0f39e491-ce46-4e59-8dbe-62388c14e785"
-							name="Enter_SiteInvestigator">
-							</testmodule>
-							<testmodule
-							id="58d832f8-98b5-42fd-810f-37088ae3adc2"
-							name="Enter_SiteEnrolment">
-							</testmodule>
-							<testmodule
-							id="285334aa-7029-4684-8846-c4045b6b9744"
-							name="Click_SaveSite">
-							</testmodule>
+							<modulegroup
+							id="62d4a4ef-725f-42e3-a1c8-349c175811db"
+							name="AddSite">
+							</modulegroup>
 							<testmodule
 							id="6af25ce5-44e3-484a-88f7-336745834197"
 							name="Validate_SiteEntry">
@@ -936,6 +906,9 @@ rxversion="8.0">
 				<column>
 					AdminRole
 				</column>
+				<column>
+					SiteInvestigator
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -945,9 +918,27 @@ rxversion="8.0">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="E2E">
+		<testconfiguration
+		name="E2E">
+			<testcontainer
+			id="062f0475-af35-4fa7-aedb-40b1ba57984d">
+			</testcontainer>
+			<testcontainer
+			id="686af18a-759e-480b-8586-3966e2883f8a">
+			</testcontainer>
+			<testcontainer
+			id="8910e582-179c-46b6-adfe-45a9f8257291">
+			</testcontainer>
+			<testcontainer
+			id="ebd917fc-8fd7-44fb-a62d-9a68a146175c">
+			</testcontainer>
+		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="0498bd03-592e-4f39-8ebf-831339c12615">
+			</testcontainer>
 			<testcontainer
 			id="062f0475-af35-4fa7-aedb-40b1ba57984d">
 			</testcontainer>
@@ -972,9 +963,6 @@ rxversion="8.0">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
-		<reference>
-			C:\Program Files (x86)\Ranorex 8.0\Bin\Ranorex.Bootstrapper.dll
-		</reference>
 		<reference>
 			engine.dll
 		</reference>

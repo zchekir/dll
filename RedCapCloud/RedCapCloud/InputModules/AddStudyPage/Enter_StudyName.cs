@@ -56,18 +56,6 @@ namespace RedCapCloud.InputModules.AddStudyPage
 
 #region Variables
 
-        string _RandNum;
-
-        /// <summary>
-        /// Gets or sets the value of variable RandNum.
-        /// </summary>
-        [TestVariable("86cf30bb-b4e1-4f33-ab36-6644ddb6dcfa")]
-        public string RandNum
-        {
-            get { return _RandNum; }
-            set { _RandNum = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
@@ -88,12 +76,22 @@ namespace RedCapCloud.InputModules.AddStudyPage
             set { repo.StudyName = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("86cf30bb-b4e1-4f33-ab36-6644ddb6dcfa")]
+        public string RandNum
+        {
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
+        }
+
 #endregion
 
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -105,7 +103,7 @@ namespace RedCapCloud.InputModules.AddStudyPage
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 100;

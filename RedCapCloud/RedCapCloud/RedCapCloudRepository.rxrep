@@ -1,7 +1,7 @@
 ﻿<repository
 id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 name="RedCapCloudRepository"
-rxversion="8.0">
+rxversion="8.2">
 	<codegen
 	classname="RedCapCloudRepository"
 	namespace="RedCapCloud">
@@ -251,6 +251,36 @@ rxversion="8.0">
 					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table
 				</basepath>
 			</folder>
+			<folder
+			addcaps="unknown,webelement,tabletag"
+			capname="divtag"
+			id="f3ed595b-c7c6-4591-9c20-ed4615814a54"
+			isrooted="True"
+			name="SitesTable"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="30eed5e1-47f2-4a38-a46c-32ebf9644ffe"
+				name="SiteName"
+				refimgid="fdea5a7a-201c-4f77-8f10-6869812a51b5"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//tbody/tr//div[@innertext='Cogstate']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff"
+				name="StudySiteID"
+				refimgid="b27fd2d0-8e6a-447a-bd82-5a142b39c8f7"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/tbody/tr[1]/td[5]/div[@innertext&gt;$RandNum]
+				</item>
+				<basepath>
+					/dom[@domain=$DOM]//div[#'gwtWrapper']
+				</basepath>
+			</folder>
 			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
@@ -349,6 +379,14 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="dd613b9d-9d3e-4771-a417-716ec481c2da"
 		name="BriefSummary">
+		</var>
+		<var
+		id="b1ca5aa5-76ea-4bd2-a285-af47b7e183d5"
+		name="SiteName">
+		</var>
+		<var
+		id="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
+		name="RandNum">
 		</var>
 	</variables>
 </repository>

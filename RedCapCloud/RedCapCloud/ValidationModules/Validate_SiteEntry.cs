@@ -64,13 +64,13 @@ namespace RedCapCloud.ValidationModules
         }
 
         /// <summary>
-        /// Gets or sets the value of variable StudyName.
+        /// Gets or sets the value of variable RandNum.
         /// </summary>
-        [TestVariable("9fb53a7d-2a6f-47b3-8fa5-4d13a07e1b86")]
-        public string StudyName
+        [TestVariable("b03a9d83-6871-47ac-8161-ba9bba2e3f0d")]
+        public string RandNum
         {
-            get { return repo.StudyName; }
-            set { repo.StudyName = value; }
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
         }
 
 #endregion
@@ -78,7 +78,7 @@ namespace RedCapCloud.ValidationModules
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -90,7 +90,7 @@ namespace RedCapCloud.ValidationModules
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 100;
@@ -99,9 +99,13 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.StudiesTable.StudyName'.", repo.REDCapCloud.StudiesTable.StudyNameInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.REDCapCloud.StudiesTable.StudyNameInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.SitesTable.SiteName'.", repo.REDCapCloud.SitesTable.SiteNameInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.REDCapCloud.SitesTable.SiteNameInfo);
             Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.SitesTable.StudySiteID'.", repo.REDCapCloud.SitesTable.StudySiteIDInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.REDCapCloud.SitesTable.StudySiteIDInfo);
+            Delay.Milliseconds(0);
             
         }
 
