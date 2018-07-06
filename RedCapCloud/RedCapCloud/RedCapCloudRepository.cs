@@ -121,6 +121,30 @@ namespace RedCapCloud
             set { _RandNum = value; }
         }
 
+        string _VisitName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable VisitName.
+        /// </summary>
+        [TestVariable("31fe392f-cf74-4d7b-bb77-1794f148f109")]
+        public string VisitName
+        {
+            get { return _VisitName; }
+            set { _VisitName = value; }
+        }
+
+        string _EventDefName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable EventDefName.
+        /// </summary>
+        [TestVariable("11da9ff3-46e5-4db0-8f94-1b1b60cecde6")]
+        public string EventDefName
+        {
+            get { return _EventDefName; }
+            set { _EventDefName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -160,14 +184,21 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.LoginPageFolder _loginpage;
             RedCapCloudRepositoryFolders.AddStudyPageFolder _addstudypage;
             RedCapCloudRepositoryFolders.AddSitePageFolder _addsitepage;
+            RedCapCloudRepositoryFolders.ParametersPageFolder _parameterspage;
+            RedCapCloudRepositoryFolders.EventDefinitionPageFolder _eventdefinitionpage;
             RedCapCloudRepositoryFolders.StudiesTableFolder _studiestable;
             RedCapCloudRepositoryFolders.SitesTableFolder _sitestable;
-            RepoItemInfo _mystudiesInfo;
+            RedCapCloudRepositoryFolders.EventDefTableFolder _eventdeftable;
+            RepoItemInfo _mystudiestitleInfo;
             RepoItemInfo _addstudybuttonInfo;
             RepoItemInfo _usersettingsmenuInfo;
             RepoItemInfo _logoutbuttonInfo;
             RepoItemInfo _sitestabInfo;
             RepoItemInfo _addsitebuttonInfo;
+            RepoItemInfo _parameterstabInfo;
+            RepoItemInfo _subjectparamsusecustomcrfviewonlyInfo;
+            RepoItemInfo _eventdefinitionstabInfo;
+            RepoItemInfo _mystudiesbuttonInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -178,14 +209,21 @@ namespace RedCapCloud
                 _loginpage = new RedCapCloudRepositoryFolders.LoginPageFolder(this);
                 _addstudypage = new RedCapCloudRepositoryFolders.AddStudyPageFolder(this);
                 _addsitepage = new RedCapCloudRepositoryFolders.AddSitePageFolder(this);
+                _parameterspage = new RedCapCloudRepositoryFolders.ParametersPageFolder(this);
+                _eventdefinitionpage = new RedCapCloudRepositoryFolders.EventDefinitionPageFolder(this);
                 _studiestable = new RedCapCloudRepositoryFolders.StudiesTableFolder(this);
                 _sitestable = new RedCapCloudRepositoryFolders.SitesTableFolder(this);
-                _mystudiesInfo = new RepoItemInfo(this, "MyStudies", ".//div[#'gwtWrapper']//div/table[2]//div[@innertext='My Studies']", 30000, null, "a862ea4b-e3d0-46e0-9253-c22a1a4973b7");
+                _eventdeftable = new RedCapCloudRepositoryFolders.EventDefTableFolder(this);
+                _mystudiestitleInfo = new RepoItemInfo(this, "MyStudiesTitle", ".//div[#'gwtWrapper']//div/table[2]//div[@innertext='My Studies']", 30000, null, "a862ea4b-e3d0-46e0-9253-c22a1a4973b7");
                 _addstudybuttonInfo = new RepoItemInfo(this, "AddStudyButton", ".//button[#'studiesListAbstract_buttonAdd']", 30000, null, "04f7ce87-69a8-4c62-b147-f3cc88553b26");
                 _usersettingsmenuInfo = new RepoItemInfo(this, "UserSettingsMenu", ".//button[#'dropDownButton_button_userSettings']", 30000, null, "dc7fa4ec-8022-4ced-9546-81d3c757aec1");
                 _logoutbuttonInfo = new RepoItemInfo(this, "LogoutButton", ".//li[#'dropDownButton_popupMenuItem_logout']/a[@innertext='Logout']", 30000, null, "2142ea80-e72e-4f44-8319-49ca58782f8c");
                 _sitestabInfo = new RepoItemInfo(this, "SitesTab", ".//div[#'studyBaseWidget_topLinkName_sites']/a[@innertext='Sites']", 30000, null, "57358e7f-6ebc-427c-a4ee-9e906dc14092");
                 _addsitebuttonInfo = new RepoItemInfo(this, "AddSiteButton", ".//button[#'studyBaseWidget_buttonCreateAdd']/i", 30000, null, "4c554e95-c609-45d2-bf96-dcfde4155650");
+                _parameterstabInfo = new RepoItemInfo(this, "ParametersTab", ".//div[#'studyBaseWidget_topLinkName_parameters']/a[@innertext='Parameters']", 30000, null, "e1a8abb4-eff4-4ad3-bce3-1662b283c589");
+                _subjectparamsusecustomcrfviewonlyInfo = new RepoItemInfo(this, "SubjectParamsUseCustomCrfViewOnly", ".//i[#'subjectParams_useCustomCrf_viewOnly']", 30000, null, "f2f2e617-d49f-4849-b07f-cff241a5a41a");
+                _eventdefinitionstabInfo = new RepoItemInfo(this, "EventDefinitionsTab", ".//div[#'studyBaseWidget_topLinkName_eventDefinitions']/a[@innertext='Event Definitions']", 30000, null, "1201996b-02f8-48f8-9fcb-f8287de67c8d");
+                _mystudiesbuttonInfo = new RepoItemInfo(this, "MyStudiesButton", ".//img[#'leftMenuButtons_logoImage']", 30000, null, "dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5");
             }
 
             /// <summary>
@@ -213,26 +251,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The MyStudies item.
+            /// The MyStudiesTitle item.
             /// </summary>
             [RepositoryItem("a862ea4b-e3d0-46e0-9253-c22a1a4973b7")]
-            public virtual Ranorex.DivTag MyStudies
+            public virtual Ranorex.DivTag MyStudiesTitle
             {
                 get
                 {
-                    return _mystudiesInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _mystudiestitleInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The MyStudies item info.
+            /// The MyStudiesTitle item info.
             /// </summary>
             [RepositoryItemInfo("a862ea4b-e3d0-46e0-9253-c22a1a4973b7")]
-            public virtual RepoItemInfo MyStudiesInfo
+            public virtual RepoItemInfo MyStudiesTitleInfo
             {
                 get
                 {
-                    return _mystudiesInfo;
+                    return _mystudiestitleInfo;
                 }
             }
 
@@ -357,6 +395,102 @@ namespace RedCapCloud
             }
 
             /// <summary>
+            /// The ParametersTab item.
+            /// </summary>
+            [RepositoryItem("e1a8abb4-eff4-4ad3-bce3-1662b283c589")]
+            public virtual Ranorex.ATag ParametersTab
+            {
+                get
+                {
+                    return _parameterstabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ParametersTab item info.
+            /// </summary>
+            [RepositoryItemInfo("e1a8abb4-eff4-4ad3-bce3-1662b283c589")]
+            public virtual RepoItemInfo ParametersTabInfo
+            {
+                get
+                {
+                    return _parameterstabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SubjectParamsUseCustomCrfViewOnly item.
+            /// </summary>
+            [RepositoryItem("f2f2e617-d49f-4849-b07f-cff241a5a41a")]
+            public virtual Ranorex.ITag SubjectParamsUseCustomCrfViewOnly
+            {
+                get
+                {
+                    return _subjectparamsusecustomcrfviewonlyInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubjectParamsUseCustomCrfViewOnly item info.
+            /// </summary>
+            [RepositoryItemInfo("f2f2e617-d49f-4849-b07f-cff241a5a41a")]
+            public virtual RepoItemInfo SubjectParamsUseCustomCrfViewOnlyInfo
+            {
+                get
+                {
+                    return _subjectparamsusecustomcrfviewonlyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EventDefinitionsTab item.
+            /// </summary>
+            [RepositoryItem("1201996b-02f8-48f8-9fcb-f8287de67c8d")]
+            public virtual Ranorex.ATag EventDefinitionsTab
+            {
+                get
+                {
+                    return _eventdefinitionstabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EventDefinitionsTab item info.
+            /// </summary>
+            [RepositoryItemInfo("1201996b-02f8-48f8-9fcb-f8287de67c8d")]
+            public virtual RepoItemInfo EventDefinitionsTabInfo
+            {
+                get
+                {
+                    return _eventdefinitionstabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyStudiesButton item.
+            /// </summary>
+            [RepositoryItem("dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5")]
+            public virtual Ranorex.ImgTag MyStudiesButton
+            {
+                get
+                {
+                    return _mystudiesbuttonInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyStudiesButton item info.
+            /// </summary>
+            [RepositoryItemInfo("dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5")]
+            public virtual RepoItemInfo MyStudiesButtonInfo
+            {
+                get
+                {
+                    return _mystudiesbuttonInfo;
+                }
+            }
+
+            /// <summary>
             /// The LoginPage folder.
             /// </summary>
             [RepositoryFolder("b5ed13bf-0de7-4cda-9695-62102a265b1a")]
@@ -384,6 +518,24 @@ namespace RedCapCloud
             }
 
             /// <summary>
+            /// The ParametersPage folder.
+            /// </summary>
+            [RepositoryFolder("16b6389c-878f-4369-97c7-45193956fbb5")]
+            public virtual RedCapCloudRepositoryFolders.ParametersPageFolder ParametersPage
+            {
+                get { return _parameterspage; }
+            }
+
+            /// <summary>
+            /// The EventDefinitionPage folder.
+            /// </summary>
+            [RepositoryFolder("82882235-4f3b-44c8-a9d4-3e295ba15faf")]
+            public virtual RedCapCloudRepositoryFolders.EventDefinitionPageFolder EventDefinitionPage
+            {
+                get { return _eventdefinitionpage; }
+            }
+
+            /// <summary>
             /// The StudiesTable folder.
             /// </summary>
             [RepositoryFolder("35747835-4914-4867-8337-c41bdbc22078")]
@@ -399,6 +551,15 @@ namespace RedCapCloud
             public virtual RedCapCloudRepositoryFolders.SitesTableFolder SitesTable
             {
                 get { return _sitestable; }
+            }
+
+            /// <summary>
+            /// The EventDefTable folder.
+            /// </summary>
+            [RepositoryFolder("82f3f2ef-f043-461f-bc58-53d92119b1c2")]
+            public virtual RedCapCloudRepositoryFolders.EventDefTableFolder EventDefTable
+            {
+                get { return _eventdeftable; }
             }
         }
 
@@ -955,6 +1116,244 @@ namespace RedCapCloud
         }
 
         /// <summary>
+        /// The ParametersPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("16b6389c-878f-4369-97c7-45193956fbb5")]
+        public partial class ParametersPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _subjecteditInfo;
+            RepoItemInfo _usecustomcrfenrollInfo;
+            RepoItemInfo _subjectsavebuttonInfo;
+
+            /// <summary>
+            /// Creates a new ParametersPage  folder.
+            /// </summary>
+            public ParametersPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("ParametersPage", "", parentFolder, 0, null, false, "16b6389c-878f-4369-97c7-45193956fbb5", "")
+            {
+                _subjecteditInfo = new RepoItemInfo(this, "SubjectEdit", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/table/tbody/tr[1]/td/div/div[2]/div[@innertext='Edit']", 30000, null, "473a5bdb-586a-4a5c-b7e6-dfd61b27f6c9");
+                _usecustomcrfenrollInfo = new RepoItemInfo(this, "UseCustomCRFEnroll", ".//i[#'subjectParams_useCustomCrf']", 30000, null, "c507af39-b9b8-49c0-bb49-6b008613fa82");
+                _subjectsavebuttonInfo = new RepoItemInfo(this, "SubjectSaveButton", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/table/tbody/tr[1]/td/div/div[2]/button[1]", 30000, null, "e71a05dc-1d57-4bc9-9de2-aaa94dc1b3b6");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("16b6389c-878f-4369-97c7-45193956fbb5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SubjectEdit item.
+            /// </summary>
+            [RepositoryItem("473a5bdb-586a-4a5c-b7e6-dfd61b27f6c9")]
+            public virtual Ranorex.DivTag SubjectEdit
+            {
+                get
+                {
+                    return _subjecteditInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubjectEdit item info.
+            /// </summary>
+            [RepositoryItemInfo("473a5bdb-586a-4a5c-b7e6-dfd61b27f6c9")]
+            public virtual RepoItemInfo SubjectEditInfo
+            {
+                get
+                {
+                    return _subjecteditInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseCustomCRFEnroll item.
+            /// </summary>
+            [RepositoryItem("c507af39-b9b8-49c0-bb49-6b008613fa82")]
+            public virtual Ranorex.ITag UseCustomCRFEnroll
+            {
+                get
+                {
+                    return _usecustomcrfenrollInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseCustomCRFEnroll item info.
+            /// </summary>
+            [RepositoryItemInfo("c507af39-b9b8-49c0-bb49-6b008613fa82")]
+            public virtual RepoItemInfo UseCustomCRFEnrollInfo
+            {
+                get
+                {
+                    return _usecustomcrfenrollInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SubjectSaveButton item.
+            /// </summary>
+            [RepositoryItem("e71a05dc-1d57-4bc9-9de2-aaa94dc1b3b6")]
+            public virtual Ranorex.ButtonTag SubjectSaveButton
+            {
+                get
+                {
+                    return _subjectsavebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubjectSaveButton item info.
+            /// </summary>
+            [RepositoryItemInfo("e71a05dc-1d57-4bc9-9de2-aaa94dc1b3b6")]
+            public virtual RepoItemInfo SubjectSaveButtonInfo
+            {
+                get
+                {
+                    return _subjectsavebuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The EventDefinitionPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("82882235-4f3b-44c8-a9d4-3e295ba15faf")]
+        public partial class EventDefinitionPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _addbuttonInfo;
+            RepoItemInfo _eventdefnameInfo;
+            RepoItemInfo _eventdeftypeInfo;
+            RepoItemInfo _saveandexitInfo;
+
+            /// <summary>
+            /// Creates a new EventDefinitionPage  folder.
+            /// </summary>
+            public EventDefinitionPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("EventDefinitionPage", "", parentFolder, 0, null, false, "82882235-4f3b-44c8-a9d4-3e295ba15faf", "")
+            {
+                _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//button[#'studyBaseWidget_buttonCreateAdd']/i", 30000, null, "20d3d563-346f-45f4-aaac-ccf2ed9b7ea1");
+                _eventdefnameInfo = new RepoItemInfo(this, "EventDefName", ".//input[#'eventDef_name']", 30000, null, "309681d3-95c9-41cb-b6e1-dc20be608c43");
+                _eventdeftypeInfo = new RepoItemInfo(this, "EventDefType", ".//input[#'eventDef_type_input']", 30000, null, "216bff81-9c4c-435e-b968-f7f8dffd00fa");
+                _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "126c1d40-169d-4623-b9a2-ffd481d9c843");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("82882235-4f3b-44c8-a9d4-3e295ba15faf")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddButton item.
+            /// </summary>
+            [RepositoryItem("20d3d563-346f-45f4-aaac-ccf2ed9b7ea1")]
+            public virtual Ranorex.ITag AddButton
+            {
+                get
+                {
+                    return _addbuttonInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddButton item info.
+            /// </summary>
+            [RepositoryItemInfo("20d3d563-346f-45f4-aaac-ccf2ed9b7ea1")]
+            public virtual RepoItemInfo AddButtonInfo
+            {
+                get
+                {
+                    return _addbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EventDefName item.
+            /// </summary>
+            [RepositoryItem("309681d3-95c9-41cb-b6e1-dc20be608c43")]
+            public virtual Ranorex.InputTag EventDefName
+            {
+                get
+                {
+                    return _eventdefnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EventDefName item info.
+            /// </summary>
+            [RepositoryItemInfo("309681d3-95c9-41cb-b6e1-dc20be608c43")]
+            public virtual RepoItemInfo EventDefNameInfo
+            {
+                get
+                {
+                    return _eventdefnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EventDefType item.
+            /// </summary>
+            [RepositoryItem("216bff81-9c4c-435e-b968-f7f8dffd00fa")]
+            public virtual Ranorex.InputTag EventDefType
+            {
+                get
+                {
+                    return _eventdeftypeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EventDefType item info.
+            /// </summary>
+            [RepositoryItemInfo("216bff81-9c4c-435e-b968-f7f8dffd00fa")]
+            public virtual RepoItemInfo EventDefTypeInfo
+            {
+                get
+                {
+                    return _eventdeftypeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExit item.
+            /// </summary>
+            [RepositoryItem("126c1d40-169d-4623-b9a2-ffd481d9c843")]
+            public virtual Ranorex.SpanTag SaveAndExit
+            {
+                get
+                {
+                    return _saveandexitInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExit item info.
+            /// </summary>
+            [RepositoryItemInfo("126c1d40-169d-4623-b9a2-ffd481d9c843")]
+            public virtual RepoItemInfo SaveAndExitInfo
+            {
+                get
+                {
+                    return _saveandexitInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The StudiesTableFolder folder.
         /// </summary>
         [RepositoryFolder("35747835-4914-4867-8337-c41bdbc22078")]
@@ -968,22 +1367,22 @@ namespace RedCapCloud
             /// Creates a new StudiesTable  folder.
             /// </summary>
             public StudiesTableFolder(RepoGenBaseFolder parentFolder) :
-                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
+                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
             {
-                _studynameInfo = new RepoItemInfo(this, "StudyName", "tbody/tr[1]/td[1]/div[@innertext>$StudyName]", 30000, null, "9ea93ae7-3e6b-4141-acce-9682ed7e21a8");
-                _studycategoryInfo = new RepoItemInfo(this, "StudyCategory", "tbody/tr[1]/td[2]/div[@innertext='Classic Database']", 30000, null, "65197492-b182-458a-b19e-575e7a944ba6");
-                _studysummaryInfo = new RepoItemInfo(this, "StudySummary", "tbody/tr[1]/td[5]/div[@innertext>$BriefSummary]", 30000, null, "297d3f3c-1ec9-42b9-ae20-4af8b304512c");
+                _studynameInfo = new RepoItemInfo(this, "StudyName", "td[1]/div[@innertext>$StudyName]", 30000, null, "9ea93ae7-3e6b-4141-acce-9682ed7e21a8");
+                _studycategoryInfo = new RepoItemInfo(this, "StudyCategory", "td[2]/div[@innertext='Classic Database']", 30000, null, "65197492-b182-458a-b19e-575e7a944ba6");
+                _studysummaryInfo = new RepoItemInfo(this, "StudySummary", "td[5]/div[@innertext>$BriefSummary]", 30000, null, "297d3f3c-1ec9-42b9-ae20-4af8b304512c");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
             [RepositoryItem("35747835-4914-4867-8337-c41bdbc22078")]
-            public virtual Ranorex.Table Self
+            public virtual Ranorex.TrTag Self
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.TrTag>(true);
                 }
             }
 
@@ -1088,7 +1487,7 @@ namespace RedCapCloud
                     base("SitesTable", ".//div[#'gwtWrapper']", parentFolder, 30000, null, false, "f3ed595b-c7c6-4591-9c20-ed4615814a54", "")
             {
                 _sitenameInfo = new RepoItemInfo(this, "SiteName", ".//tbody/tr//div[@innertext='Cogstate']", 30000, null, "30eed5e1-47f2-4a38-a46c-32ebf9644ffe");
-                _studysiteidInfo = new RepoItemInfo(this, "StudySiteID", "tbody/tr[1]/td[5]/div[@innertext>$RandNum]", 30000, null, "b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff");
+                _studysiteidInfo = new RepoItemInfo(this, "StudySiteID", ".//tbody/tr[1]/td[3]/div[@innertext>$RandNum]", 30000, null, "b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff");
             }
 
             /// <summary>
@@ -1160,6 +1559,98 @@ namespace RedCapCloud
                 get
                 {
                     return _studysiteidInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The EventDefTableFolder folder.
+        /// </summary>
+        [RepositoryFolder("82f3f2ef-f043-461f-bc58-53d92119b1c2")]
+        public partial class EventDefTableFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _eventdefnameInfo;
+            RepoItemInfo _typeInfo;
+
+            /// <summary>
+            /// Creates a new EventDefTable  folder.
+            /// </summary>
+            public EventDefTableFolder(RepoGenBaseFolder parentFolder) :
+                    base("EventDefTable", ".//div[#'gwtWrapper']", parentFolder, 30000, null, false, "82f3f2ef-f043-461f-bc58-53d92119b1c2", "")
+            {
+                _eventdefnameInfo = new RepoItemInfo(this, "EventDefName", "div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext>$EventDefName]", 30000, null, "44cb1ddc-f3ce-445a-9390-3d829d0a2c4e");
+                _typeInfo = new RepoItemInfo(this, "Type", "div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[4]/div[@innertext='Scheduled']", 30000, null, "28551854-3a2c-4514-9758-fa9502120658");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("82f3f2ef-f043-461f-bc58-53d92119b1c2")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("82f3f2ef-f043-461f-bc58-53d92119b1c2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EventDefName item.
+            /// </summary>
+            [RepositoryItem("44cb1ddc-f3ce-445a-9390-3d829d0a2c4e")]
+            public virtual Ranorex.DivTag EventDefName
+            {
+                get
+                {
+                    return _eventdefnameInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EventDefName item info.
+            /// </summary>
+            [RepositoryItemInfo("44cb1ddc-f3ce-445a-9390-3d829d0a2c4e")]
+            public virtual RepoItemInfo EventDefNameInfo
+            {
+                get
+                {
+                    return _eventdefnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Type item.
+            /// </summary>
+            [RepositoryItem("28551854-3a2c-4514-9758-fa9502120658")]
+            public virtual Ranorex.DivTag Type
+            {
+                get
+                {
+                    return _typeInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Type item info.
+            /// </summary>
+            [RepositoryItemInfo("28551854-3a2c-4514-9758-fa9502120658")]
+            public virtual RepoItemInfo TypeInfo
+            {
+                get
+                {
+                    return _typeInfo;
                 }
             }
         }

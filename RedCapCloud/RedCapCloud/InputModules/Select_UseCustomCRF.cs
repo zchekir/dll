@@ -20,64 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.InputModules.LoginPage
+namespace RedCapCloud.InputModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Login_Button recording.
+    ///The Select_UseCustomCRF recording.
     /// </summary>
-    [TestModule("a8e2f938-460b-4a0b-bfb0-e72acab1ecce", ModuleType.Recording, 1)]
-    public partial class Click_Login_Button : ITestModule
+    [TestModule("43197699-bc3a-4d20-ac7b-de542bc93625", ModuleType.Recording, 1)]
+    public partial class Select_UseCustomCRF : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Click_Login_Button instance = new Click_Login_Button();
+        static Select_UseCustomCRF instance = new Select_UseCustomCRF();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Login_Button()
+        public Select_UseCustomCRF()
         {
-            Password = "913172@RCC{LShiftKey up}{Return}";
-            username = "dwood@cogstate.com";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Login_Button Instance
+        public static Select_UseCustomCRF Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Password;
-
-        /// <summary>
-        /// Gets or sets the value of variable Password.
-        /// </summary>
-        [TestVariable("8b602917-63e3-4ce4-b628-77e249e49ff4")]
-        public string Password
-        {
-            get { return _Password; }
-            set { _Password = value; }
-        }
-
-        string _username;
-
-        /// <summary>
-        /// Gets or sets the value of variable username.
-        /// </summary>
-        [TestVariable("25c52c99-a552-4a8e-8fd0-6594ddb75a8c")]
-        public string username
-        {
-            get { return _username; }
-            set { _username = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -115,13 +89,9 @@ namespace RedCapCloud.InputModules.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginButton' at Center.", repo.REDCapCloud.LoginPage.LoginButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.LoginPage.LoginButton.Click(30);
-            Delay.Milliseconds(470);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.MyStudiesTitle'.", repo.REDCapCloud.MyStudiesTitleInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.REDCapCloud.MyStudiesTitleInfo);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersPage.UseCustomCRFEnroll' at Center.", repo.REDCapCloud.ParametersPage.UseCustomCRFEnrollInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.ParametersPage.UseCustomCRFEnroll.Click();
+            Delay.Milliseconds(0);
             
         }
 

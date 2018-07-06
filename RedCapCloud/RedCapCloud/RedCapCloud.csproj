@@ -9,7 +9,7 @@
     <RootNamespace>RedCapCloud</RootNamespace>
     <AssemblyName>RedCapCloud</AssemblyName>
     <RanorexVersion>8.2</RanorexVersion>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>f9948728-2258-4ffd-97ec-9a388bad3d54</projectdefaultrepository>
     <StartAction>Project</StartAction>
@@ -51,6 +51,9 @@
   <ItemGroup>
     <Reference Include="engine">
       <HintPath>..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+    </Reference>
+    <Reference Include="PrecisionRecruitment">
+      <HintPath>..\..\PrecisionRecruitment\PrecisionRecruitment\bin\Debug\PrecisionRecruitment.exe</HintPath>
     </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
@@ -242,6 +245,18 @@
       <UserCode>true</UserCode>
       <id>876b9994-96d3-4d71-bdbf-b95ca4f900cf</id>
     </Compile>
+    <Compile Include="InputModules\Enter_EventDef_Name.cs">
+      <BoundTo>111bddde-d104-4eb2-b624-0120de4f635c</BoundTo>
+      <DependentUpon>Enter_EventDef_Name.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>23d46022-9f0a-4438-abde-84d7ca2aba82</id>
+    </Compile>
+    <Compile Include="InputModules\Enter_EventDef_Name.UserCode.cs">
+      <BoundTo>111bddde-d104-4eb2-b624-0120de4f635c</BoundTo>
+      <DependentUpon>Enter_EventDef_Name.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de09ffc4-c61e-451f-9b2a-07c4011abf42</id>
+    </Compile>
     <Compile Include="InputModules\LoginPage\Enter_Password.cs">
       <BoundTo>81caba75-137c-4f81-821c-54e5cfc448f7</BoundTo>
       <DependentUpon>Enter_Password.rxrec</DependentUpon>
@@ -277,6 +292,18 @@
       <UserCode>true</UserCode>
       <id>239a5a5f-4072-496a-814a-acede17fc62b</id>
       <BoundTo>5de36c70-40f0-431a-8753-a596b432a2a6</BoundTo>
+    </Compile>
+    <Compile Include="InputModules\Select_UseCustomCRF.cs">
+      <BoundTo>8e8a526b-ff86-4c8b-950c-e243b6ca2605</BoundTo>
+      <DependentUpon>Select_UseCustomCRF.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a2f8a50-98cb-4b3b-a906-1d3b51a5ab13</id>
+    </Compile>
+    <Compile Include="InputModules\Select_UseCustomCRF.UserCode.cs">
+      <BoundTo>8e8a526b-ff86-4c8b-950c-e243b6ca2605</BoundTo>
+      <DependentUpon>Select_UseCustomCRF.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c116d9ea-266b-4c4d-9ce0-77569c010e59</id>
     </Compile>
     <Compile Include="InputModules\SitePage\Enter_SiteEnrolment.cs">
       <BoundTo>7a7c3cea-0d9e-438f-8bc7-98523d8fac5b</BoundTo>
@@ -338,6 +365,18 @@
       <id>9acaf0e5-60c1-4b23-81dc-f4e3ff10fdd4</id>
       <BoundTo>e35034a9-bba7-4b95-a5ab-266becbff88b</BoundTo>
     </Compile>
+    <Compile Include="NavigationModules\Click_AddEventDef.cs">
+      <BoundTo>d2d3b83b-b197-4d0e-b918-2d0d656d97bf</BoundTo>
+      <DependentUpon>Click_AddEventDef.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a4c30724-45f1-48b4-9e82-9be2d8b55dd1</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_AddEventDef.UserCode.cs">
+      <BoundTo>d2d3b83b-b197-4d0e-b918-2d0d656d97bf</BoundTo>
+      <DependentUpon>Click_AddEventDef.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a8d8d280-a293-4efb-85c1-1cea97f197dc</id>
+    </Compile>
     <Compile Include="NavigationModules\Click_AddSite_Button.cs">
       <BoundTo>14301bee-ad96-4dda-8f39-a72fbceac91a</BoundTo>
       <DependentUpon>Click_AddSite_button.rxrec</DependentUpon>
@@ -361,6 +400,54 @@
       <UserCode>true</UserCode>
       <id>d7575968-c7c8-4dad-a4e8-5d375fa9c5ec</id>
       <BoundTo>274b0360-7b67-47fb-a0b3-9d626ad3545c</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_EventDefinitionsTab.cs">
+      <BoundTo>8b837f65-9fd1-43df-992c-6a072ef69dc1</BoundTo>
+      <DependentUpon>Click_EventDefinitionsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>91095b01-9a26-4b1e-afac-14fb119649c6</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_EventDefinitionsTab.UserCode.cs">
+      <BoundTo>8b837f65-9fd1-43df-992c-6a072ef69dc1</BoundTo>
+      <DependentUpon>Click_EventDefinitionsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>663759c4-4ec7-4b34-9704-186d049d462f</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_MyStudies.cs">
+      <BoundTo>976dc104-c5db-478b-92e3-3057002b5563</BoundTo>
+      <DependentUpon>Click_MyStudies.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>41dccf43-e8fd-4372-b6f1-d2a53fc9071a</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_MyStudies.UserCode.cs">
+      <BoundTo>976dc104-c5db-478b-92e3-3057002b5563</BoundTo>
+      <DependentUpon>Click_MyStudies.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c396ae67-e7c7-4313-8a2b-bbb083e22400</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_ParametersTab.cs">
+      <BoundTo>9e7d2f0b-e386-4d7a-a0c8-e28574f9b309</BoundTo>
+      <DependentUpon>Click_ParametersTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5ec99da6-64c5-4311-a741-84f9df6f932e</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_ParametersTab.UserCode.cs">
+      <BoundTo>9e7d2f0b-e386-4d7a-a0c8-e28574f9b309</BoundTo>
+      <DependentUpon>Click_ParametersTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8dc416ba-0833-48ab-bb9c-69eefa37ebdc</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_SaveAndExit_Button.cs">
+      <BoundTo>5ee3a5fe-093d-4739-96f9-ba9ef218c27e</BoundTo>
+      <DependentUpon>Click_SaveAndExit_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a9c2044a-2e8f-44a0-b25b-f9593380e091</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_SaveAndExit_Button.UserCode.cs">
+      <BoundTo>5ee3a5fe-093d-4739-96f9-ba9ef218c27e</BoundTo>
+      <DependentUpon>Click_SaveAndExit_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>14cc258e-2cd5-4408-900c-263f529d88c5</id>
     </Compile>
     <Compile Include="NavigationModules\Click_SaveSite.cs">
       <DependentUpon>Click_SaveSite.rxrec</DependentUpon>
@@ -398,6 +485,30 @@
       <UserCode>true</UserCode>
       <id>ea966274-9814-4b41-923f-f7f890068755</id>
     </Compile>
+    <Compile Include="NavigationModules\Click_Subject_EditButton.cs">
+      <BoundTo>9de25960-81f3-4102-b65d-618ffe620042</BoundTo>
+      <DependentUpon>Click_Subject_EditButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d5103a32-3222-45d5-b64b-c479796e2409</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Subject_EditButton.UserCode.cs">
+      <BoundTo>9de25960-81f3-4102-b65d-618ffe620042</BoundTo>
+      <DependentUpon>Click_Subject_EditButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e8d9b712-6e3d-4286-b4e3-1aab6761ab1d</id>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Subject_SaveButton.cs">
+      <DependentUpon>Click_Subject_SaveButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04591ccd-bc71-42d9-8e97-caa502b437a4</id>
+      <BoundTo>1b52cf89-e770-4ca9-a665-4b22286c8d0a</BoundTo>
+    </Compile>
+    <Compile Include="NavigationModules\Click_Subject_SaveButton.UserCode.cs">
+      <DependentUpon>Click_Subject_SaveButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9de6b18-c9b4-4db1-8ea9-1503dd03b6da</id>
+      <BoundTo>1b52cf89-e770-4ca9-a665-4b22286c8d0a</BoundTo>
+    </Compile>
     <Compile Include="Open_Browser.cs">
       <BoundTo>b87240ea-48b3-4f01-aafd-e0512f44c38e</BoundTo>
       <DependentUpon>Open_Browser.rxrec</DependentUpon>
@@ -418,6 +529,42 @@
       <DependentUpon>RedCapCloudRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>3bf8bad4-1533-44f1-b22a-2380cff5ce99</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_EventDef_Entry.cs">
+      <DependentUpon>Validate_EventDef_Entry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7473904d-6690-446b-bf14-987a02a6432d</id>
+      <BoundTo>9f3a77af-8908-4792-81bb-c62d27ebec3c</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_EventDef_Entry.UserCode.cs">
+      <DependentUpon>Validate_EventDef_Entry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>17590d9c-1a5b-4ee1-9a13-bed61057a784</id>
+      <BoundTo>9f3a77af-8908-4792-81bb-c62d27ebec3c</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_CustomCRFEnroll.cs">
+      <DependentUpon>Validate_CustomCRFEnroll.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bd69e5ae-bc2a-42b5-92ba-8892700ce90c</id>
+      <BoundTo>d7330641-d48c-400b-b286-5bae7c1c1585</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_CustomCRFEnroll.UserCode.cs">
+      <DependentUpon>Validate_CustomCRFEnroll.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>70f97604-4f09-43e9-b6c2-b74a6b3d4cdf</id>
+      <BoundTo>d7330641-d48c-400b-b286-5bae7c1c1585</BoundTo>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_EventDef_Type.cs">
+      <BoundTo>55d48f20-4dc2-4779-94e0-c62f28c7ad20</BoundTo>
+      <DependentUpon>Validate_EventDef_Type.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4147d472-914f-4213-ba6b-fa3d531f9562</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_EventDef_Type.UserCode.cs">
+      <BoundTo>55d48f20-4dc2-4779-94e0-c62f28c7ad20</BoundTo>
+      <DependentUpon>Validate_EventDef_Type.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f9cceae-5fff-4dfa-99ff-8d273e4e8cf9</id>
     </Compile>
     <Compile Include="ValidationModules\Validate_SiteEntry.cs">
       <BoundTo>5e66ae25-2cac-40ae-9218-bdc2eb22502a</BoundTo>
@@ -464,6 +611,20 @@
       <id>5bb9beec-8505-4bff-b7c9-c64f7f7bfad9</id>
       <recordtableid>da109cf5-f3c0-49e3-96bf-aee85dba2e77</recordtableid>
     </None>
+    <Content Include="CSPBatteryConnector.csv">
+      <Link>CSPBatteryConnector.csv</Link>
+      <BoundTo>12444292-7f8c-4a56-a203-eea271edd15b</BoundTo>
+      <DependentUpon>RedCapCloud.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>c776242e-41f4-4711-87a4-a73368b444ad</id>
+    </Content>
+    <Content Include="CSPWorkflowConnector.csv">
+      <Link>CSPWorkflowConnector.csv</Link>
+      <BoundTo>12444292-7f8c-4a56-a203-eea271edd15b</BoundTo>
+      <DependentUpon>RedCapCloud.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>9b6b64e0-2f2d-461c-a016-ce24de28f8c1</id>
+    </Content>
     <None Include="InputModules\AddStudyPage\Enter_AdminRole.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>6c487859-686e-4e35-b2df-88da481b3906</id>
@@ -499,6 +660,11 @@
       <id>839804dc-7302-4e1b-8f23-78fd7957f0bf</id>
       <recordtableid>c0f9dc7b-1f01-4167-bcf6-d868536139d4</recordtableid>
     </None>
+    <None Include="InputModules\Enter_EventDef_Name.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>111bddde-d104-4eb2-b624-0120de4f635c</id>
+      <recordtableid>d87ad496-dfc7-402e-a2b1-19bf465a8af1</recordtableid>
+    </None>
     <None Include="InputModules\LoginPage\Enter_Password.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>81caba75-137c-4f81-821c-54e5cfc448f7</id>
@@ -513,6 +679,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>5de36c70-40f0-431a-8753-a596b432a2a6</id>
       <recordtableid>a8e2f938-460b-4a0b-bfb0-e72acab1ecce</recordtableid>
+    </None>
+    <None Include="InputModules\Select_UseCustomCRF.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>8e8a526b-ff86-4c8b-950c-e243b6ca2605</id>
+      <recordtableid>43197699-bc3a-4d20-ac7b-de542bc93625</recordtableid>
     </None>
     <None Include="InputModules\SitePage\Enter_SiteEnrolment.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -539,6 +710,11 @@
       <id>e35034a9-bba7-4b95-a5ab-266becbff88b</id>
       <recordtableid>7d3b5409-d775-431b-b745-b52b19698ea1</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_AddEventDef.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>d2d3b83b-b197-4d0e-b918-2d0d656d97bf</id>
+      <recordtableid>5e8eadd2-b4d6-4a1b-b51a-8c332926b0be</recordtableid>
+    </None>
     <None Include="NavigationModules\Click_AddSite_Button.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>14301bee-ad96-4dda-8f39-a72fbceac91a</id>
@@ -548,6 +724,26 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>274b0360-7b67-47fb-a0b3-9d626ad3545c</id>
       <recordtableid>3b0c960d-4e59-4d1a-a918-4b670266537d</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_EventDefinitionsTab.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>8b837f65-9fd1-43df-992c-6a072ef69dc1</id>
+      <recordtableid>16cc50f1-a37f-4d35-9ae5-baee1c51debe</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_MyStudies.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>976dc104-c5db-478b-92e3-3057002b5563</id>
+      <recordtableid>c36154b1-5132-4fd1-83dc-8e8a03b3ea31</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_ParametersTab.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>9e7d2f0b-e386-4d7a-a0c8-e28574f9b309</id>
+      <recordtableid>edaf38ef-1726-4d3a-bfcf-7e684f4d58d2</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_SaveAndExit_Button.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>5ee3a5fe-093d-4739-96f9-ba9ef218c27e</id>
+      <recordtableid>c10172c9-880b-4bff-9539-52c9773d3515</recordtableid>
     </None>
     <None Include="NavigationModules\Click_SaveSite.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -564,6 +760,16 @@
       <id>98a29aa8-60b6-4ee4-b662-fbb57d98852d</id>
       <recordtableid>412c0a6e-bfb9-423e-b6fe-a5c6b419ec68</recordtableid>
     </None>
+    <None Include="NavigationModules\Click_Subject_EditButton.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>9de25960-81f3-4102-b65d-618ffe620042</id>
+      <recordtableid>9236cb0b-cf75-4664-a902-ba802514c5ce</recordtableid>
+    </None>
+    <None Include="NavigationModules\Click_Subject_SaveButton.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>1b52cf89-e770-4ca9-a665-4b22286c8d0a</id>
+      <recordtableid>b6e13818-a747-4523-9f1d-ade6387d6019</recordtableid>
+    </None>
     <None Include="Open_Browser.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>b87240ea-48b3-4f01-aafd-e0512f44c38e</id>
@@ -579,6 +785,21 @@
       <id>f9948728-2258-4ffd-97ec-9a388bad3d54</id>
       <repoid>a303f60a-5ab4-4222-9b33-ad98174d1079</repoid>
       <reporootid>6e7f678d-6d77-4f0e-b651-38eb29a9f3ee</reporootid>
+    </None>
+    <None Include="ValidationModules\Validate_EventDef_Entry.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>9f3a77af-8908-4792-81bb-c62d27ebec3c</id>
+      <recordtableid>37dd7361-8db1-4913-bf3c-88aa453cf877</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_CustomCRFEnroll.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>d7330641-d48c-400b-b286-5bae7c1c1585</id>
+      <recordtableid>e0eec7b1-3625-4717-8716-4003c6723337</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_EventDef_Type.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>55d48f20-4dc2-4779-94e0-c62f28c7ad20</id>
+      <recordtableid>38ac56a4-549f-425e-8362-e03119999cf5</recordtableid>
     </None>
     <None Include="ValidationModules\Validate_SiteEntry.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>

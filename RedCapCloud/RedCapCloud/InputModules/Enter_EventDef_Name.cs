@@ -20,64 +20,39 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.InputModules.LoginPage
+namespace RedCapCloud.InputModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Login_Button recording.
+    ///The Enter_EventDef_Name recording.
     /// </summary>
-    [TestModule("a8e2f938-460b-4a0b-bfb0-e72acab1ecce", ModuleType.Recording, 1)]
-    public partial class Click_Login_Button : ITestModule
+    [TestModule("d87ad496-dfc7-402e-a2b1-19bf465a8af1", ModuleType.Recording, 1)]
+    public partial class Enter_EventDef_Name : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Click_Login_Button instance = new Click_Login_Button();
+        static Enter_EventDef_Name instance = new Enter_EventDef_Name();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Login_Button()
+        public Enter_EventDef_Name()
         {
-            Password = "913172@RCC{LShiftKey up}{Return}";
-            username = "dwood@cogstate.com";
+            EventDefName = "Visit 1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Login_Button Instance
+        public static Enter_EventDef_Name Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Password;
-
-        /// <summary>
-        /// Gets or sets the value of variable Password.
-        /// </summary>
-        [TestVariable("8b602917-63e3-4ce4-b628-77e249e49ff4")]
-        public string Password
-        {
-            get { return _Password; }
-            set { _Password = value; }
-        }
-
-        string _username;
-
-        /// <summary>
-        /// Gets or sets the value of variable username.
-        /// </summary>
-        [TestVariable("25c52c99-a552-4a8e-8fd0-6594ddb75a8c")]
-        public string username
-        {
-            get { return _username; }
-            set { _username = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -87,6 +62,16 @@ namespace RedCapCloud.InputModules.LoginPage
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable EventDefName.
+        /// </summary>
+        [TestVariable("94203d67-493a-4d36-b096-baad7df5be7a")]
+        public string EventDefName
+        {
+            get { return repo.EventDefName; }
+            set { repo.EventDefName = value; }
         }
 
 #endregion
@@ -115,13 +100,17 @@ namespace RedCapCloud.InputModules.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginButton' at Center.", repo.REDCapCloud.LoginPage.LoginButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.LoginPage.LoginButton.Click(30);
-            Delay.Milliseconds(470);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.EventDefName' at Center.", repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.EventDefinitionPage.EventDefName.Click();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.MyStudiesTitle'.", repo.REDCapCloud.MyStudiesTitleInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.REDCapCloud.MyStudiesTitleInfo);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EventDefName' with focus on 'REDCapCloud.EventDefinitionPage.EventDefName'.", repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.EventDefinitionPage.EventDefName.PressKeys(EventDefName, 100);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$EventDefName) on item 'REDCapCloud.EventDefinitionPage.EventDefName'.", repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, "Value", EventDefName);
+            Delay.Milliseconds(0);
             
         }
 
