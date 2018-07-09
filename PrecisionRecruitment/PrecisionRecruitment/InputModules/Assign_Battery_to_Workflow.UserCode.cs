@@ -46,7 +46,7 @@ namespace PrecisionRecruitment.InputModules
         	OptionTag option = "/dom[@domain='" + DOM + "']//option[@InnerText='" + BatteryName + RandNum + "']";
         	option.Focus();
         	option.Selected = true;
-        	Keyboard.Press("{ENTER}");
+        	repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab.Click(); //Added this as a workaround so that the selected battery stays selected before saving
         	
         }
 

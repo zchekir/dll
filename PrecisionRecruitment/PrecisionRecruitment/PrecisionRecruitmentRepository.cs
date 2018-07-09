@@ -22,7 +22,7 @@ namespace PrecisionRecruitment
     /// <summary>
     /// The class representing the PrecisionRecruitmentRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
     [RepositoryFolder("ad46f1c9-823e-493b-84e7-021e0749856a")]
     public partial class PrecisionRecruitmentRepository : RepoGenBaseFolder
     {
@@ -184,7 +184,7 @@ namespace PrecisionRecruitment
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
     public partial class PrecisionRecruitmentRepositoryFolders
     {
         /// <summary>

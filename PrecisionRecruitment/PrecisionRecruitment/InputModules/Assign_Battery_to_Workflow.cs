@@ -42,7 +42,7 @@ namespace PrecisionRecruitment.InputModules
         public Assign_Battery_to_Workflow()
         {
             BatteryName = "Ranorex Battery";
-            RandNum = "821870";
+            RandNum = "270695";
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace PrecisionRecruitment.InputModules
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -102,7 +102,7 @@ namespace PrecisionRecruitment.InputModules
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 100;
