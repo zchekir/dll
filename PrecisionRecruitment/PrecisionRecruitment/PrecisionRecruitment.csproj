@@ -516,6 +516,18 @@
       <id>a3149fa3-9699-4b76-8d93-24539a39458a</id>
       <BoundTo>7770bf41-b466-4660-a803-0a47b97fd981</BoundTo>
     </Compile>
+    <Compile Include="InputModules\Get_VisitSessionID.cs">
+      <BoundTo>c7c17abe-a654-496b-932f-3479bbb41d17</BoundTo>
+      <DependentUpon>Get_VisitSessionID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb9aa04b-da11-4c09-9226-9a9e61aa5298</id>
+    </Compile>
+    <Compile Include="InputModules\Get_VisitSessionID.UserCode.cs">
+      <BoundTo>c7c17abe-a654-496b-932f-3479bbb41d17</BoundTo>
+      <DependentUpon>Get_VisitSessionID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd05a939-4bd7-463e-8177-61714a93e0fa</id>
+    </Compile>
     <Compile Include="InputModules\Select_Locality.cs">
       <DependentUpon>Select_Locality.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1079,6 +1091,18 @@
       <DependentUpon>Launch_AssessmentAttempt.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>95e01b20-5d9d-4e60-8cfc-48ebfdcb4892</id>
+    </Compile>
+    <Compile Include="NavigationModules\Select_First_Visit.cs">
+      <BoundTo>9fbe7663-83bc-4dae-9212-4f5405476cd8</BoundTo>
+      <DependentUpon>Select_First_Visit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4cf6d661-9303-4e48-880f-e1e78d824dfb</id>
+    </Compile>
+    <Compile Include="NavigationModules\Select_First_Visit.UserCode.cs">
+      <BoundTo>9fbe7663-83bc-4dae-9212-4f5405476cd8</BoundTo>
+      <DependentUpon>Select_First_Visit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6898894f-76a3-426c-a96f-7c904f061c9b</id>
     </Compile>
     <Compile Include="NavigationModules\Select_Study.cs">
       <DependentUpon>Select_Study.rxrec</DependentUpon>
@@ -1820,6 +1844,11 @@
       <id>7770bf41-b466-4660-a803-0a47b97fd981</id>
       <recordtableid>527dd376-31c5-49e4-9463-32646bd8d166</recordtableid>
     </None>
+    <None Include="InputModules\Get_VisitSessionID.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c7c17abe-a654-496b-932f-3479bbb41d17</id>
+      <recordtableid>06fd06e3-380e-4fd1-b66e-67cdeaf52995</recordtableid>
+    </None>
     <None Include="InputModules\Select_Locality.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>694c1f96-3926-4950-915b-be5792eb887b</id>
@@ -2058,6 +2087,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>11819d4d-c563-4d8e-930b-a519d532461c</id>
       <recordtableid>4cf38574-50a6-4296-8017-6f3285aac388</recordtableid>
+    </None>
+    <None Include="NavigationModules\Select_First_Visit.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>9fbe7663-83bc-4dae-9212-4f5405476cd8</id>
+      <recordtableid>8f5dbbf6-ea58-4c62-9550-7b304a4984fb</recordtableid>
     </None>
     <None Include="NavigationModules\Select_Study.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

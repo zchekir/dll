@@ -286,6 +286,16 @@ rxversion="8.2">
 					/dom[@domain=$DOM]//input[#'eventDef_type_input']
 				</item>
 				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="a813bb56-043b-48d4-b9dd-9f84c8977a3e"
+				name="EventDefEditButton"
+				refimgid="e63f463c-1991-40bb-a97d-8b06bcdd46aa"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseEditForm_buttonEdit']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'studyBaseEditForm_buttonEdit']
+				</item>
+				<item
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="126c1d40-169d-4623-b9a2-ffd481d9c843"
@@ -294,6 +304,353 @@ rxversion="8.2">
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="440194f9-f6bc-4d7a-ba0d-7fb10a108ddc"
+				name="AddCRFButton"
+				refimgid="dfcf3396-71f6-400b-a76a-9b51b29e08f8"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/table/tbody/tr/td[2]/table/tbody/tr/td/div/table/tbody/tr/td[2]/div[@innertext='Add']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/?/?/tr/td[2]/table//div/table/tbody/tr/td[2]/div[@innertext='Add']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="e69b6376-6c03-4f09-accd-3407d188329e"
+				name="BeginCogstateBatteryCRF"
+				refimgid="27797c69-e173-496f-975f-7dd1694ec194"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[1]/td[1]/div[@innertext='Begin Cogstate Battery']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[1]/div[@innertext='Begin Cogstate Battery']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="3ee70fbd-6c84-4b65-b121-e63ceedc0331"
+				name="CogstateBatteryCommentsCRF"
+				refimgid="eddb1bd4-597c-462f-bccb-8df35640a274"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[2]/td[1]/div[@innertext='Cogstate Battery Comments']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[2]/td[1]/div[@innertext='Cogstate Battery Comments']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b884d6c9-ed98-426e-b73a-71b5e44cb1c9"
+				name="CogstateBatteryDataConfirmationCRF"
+				refimgid="3c6c036a-a101-4026-ad22-099419384db8"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[3]/td[1]/div[@innertext='Cogstate Battery Data Confirmation']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[3]/td[1]/div[@innertext~'^Cogstate\ Battery\ Data\ Con']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="1821b257-b454-43b6-8874-4c63a5fa25b0"
+				name="CogstateBatteryCRFCompositeOutcome"
+				refimgid="9a238e33-011d-40fd-9f33-cdfae027bb79"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[5]/td[1]/div[@innertext='Cogstate Battery CRF - Composite Outcomes']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[5]/td[1]/div[@innertext~'^Cogstate\ Battery\ CRF\ -\ Co']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="8c73533d-e702-4985-8b89-b91f9a60a82b"
+				name="CogstateBatteryCRFCBB"
+				refimgid="f16f28b4-48c2-4e56-9cbc-abc4d823e2ed"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[4]/td[1]/div[@innertext='Cogstate Battery CRF - CBB']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[4]/td[1]/div[@innertext~'^Cogstate\ Battery\ CRF\ -\ CB']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="0e63ba41-c14c-410f-9bc8-05ff4dc28e21"
+				name="CRFSaveAndExit"
+				refimgid="2658b5cf-b5bb-4968-b537-5cebd0d28c2c"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'eventCrfEditMp_saveAndReturn']/span[@innertext='Save and Exit']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'eventCrfEditMp_saveAndReturn']/span[@innertext='Save and Exit']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="a0b09774-43e2-45f8-a410-a407a7162086"
+				name="AddedCRFEntry"
+				refimgid="122203d9-2e7c-4762-8b3d-33f9dfd9f092"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/div[2]/div/div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext='Begin Cogstate Battery']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/div[2]/div/div/div[3]/div/div[2]//table/tbody/tr/td[2]/div[@innertext='Begin Cogstate Battery']
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="4c554e95-c609-45d2-bf96-dcfde4155650"
+				name="AddSiteButton"
+				refimgid="25df0a45-1154-4d41-92af-dbc9bc8316eb"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseWidget_buttonCreateAdd']/i"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'studyBaseWidget_buttonCreateAdd']/i
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="2ab2f35d-e2cc-4859-a890-e471944f7965"
+			isrooted="False"
+			name="CRFsPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="a2bc9330-6c03-4e44-a14e-e3592d32ef0f"
+				name="ToolsMenu"
+				refimgid="1da67c84-765f-41da-94da-f12014c5b5fc"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'dropDownButton_button_tools']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'dropDownButton_button_tools']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="33aa8bab-a2e3-4f86-883c-73eee4995a40"
+				name="ImportDataDictionaryButton"
+				refimgid="7e9c1f78-f176-4770-9fd4-194caab46b78"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//li[#'dropDownButton_popupMenuItem_importDataDictionary']/a[@innertext='Import Data Dictionary']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//li[#'dropDownButton_popupMenuItem_importDataDictionary']/a[@innertext='Import Data Dictionary']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="9895e431-8cdc-4cc9-9914-eac49b36d3fd"
+				name="ChooseFileButton"
+				refimgid="f3d73b5d-6d8e-479d-b424-c3e8d631449a"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'fileInput_chooseFileButton']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'fileInput_chooseFileButton']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="8038c42d-6e2a-48de-8a45-0e28bd3850c8"
+				name="UploadButton"
+				refimgid="6c66a42f-86f5-45e4-9773-8c6a20aae1f2"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/table/tbody/tr/td/button/span[@innertext='Upload']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[6]//table/?/?/tr/td[2]/?/?/table/?/?/tr/td[1]/table/tbody/tr//span[@innertext='Upload']
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="70df627e-f442-41b4-997f-d4b1422af3b9"
+				name="DeleteCRFCheckbox"
+				refimgid="d3be7725-2214-4a5b-975e-8f1d75a48a7b"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/table/tbody/tr[1]/td/div/div/table/tbody/tr/td[1]/i"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[6]/div/div/div/table/tbody/tr[1]/td/div/div/table//i
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="0c40267f-4e28-4448-b2f4-3c701198bbff"
+			isrooted="False"
+			name="SubjectsPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="d6ff294f-0adf-4622-99c0-6046fe361e5f"
+				name="AddSubjectButton"
+				refimgid="e21e458a-2a43-4861-8a7a-e9f95f8647f6"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseWidget_buttonCreateAdd']/i"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'studyBaseWidget_buttonCreateAdd']/i
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="7302b566-a70e-47a3-b67a-95fe441e78eb"
+				name="SiteDropdown"
+				refimgid="d920f7da-caed-420c-8972-8b026eb30481"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'enrollWidget_comboSites_button']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'enrollWidget_comboSites_button']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="1e7de74b-6238-4063-9b4b-8d00008c7560"
+				name="CogstateSite"
+				refimgid="8bb54908-4894-4cb3-b568-4a9098726260"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//li//a[@innertext='Cogstate']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="68f1d631-f383-4c24-89d1-ae2926bb907c"
+				name="SubjectNumberField"
+				refimgid="8ace5e03-1c7b-4b30-8736-d101b4ac2dfc"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//input[#'enrollWidget_textSubjectNumber']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff"
+				name="StudySiteID"
+				refimgid="b27fd2d0-8e6a-447a-bd82-5a142b39c8f7"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//tbody/tr[1]/td[3]/div[@innertext&gt;$RandNum]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="f03b223b-a2a2-4b17-bf2b-1756ece1e2f3"
+				name="BeginCogstateBatteryButton"
+				refimgid="aae75d8e-dd58-4710-9139-606ce423fb63"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'subjectMatrixByEventsViewAbstract_rowCrfName_beginCogstateBattery']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="e2c5faba-e28a-4d47-99c1-1e9229e1928e"
+				name="MaleGender"
+				refimgid="70a6dfd7-5429-445d-9a0d-a8ca0aee8856"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[2]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr[1]/td/table/tbody/tr[1]/td/div/div/table/tbody/tr/td[1]/span/input[@name='rdio_0']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[2]//table/?/?/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr[1]/td/table/tbody/tr[1]/td/div/div/table/tbody/tr/td[1]/?/?/input[@name='rdio_0']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="49e8515c-f881-46a5-a470-f09db46ae3b8"
+				name="LanguageDropdown"
+				refimgid="f7d9ad9b-1614-465d-b17c-127e847306f4"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[3]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/div/button"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[3]/div/?/?/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/?/?/button
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="82622083-e411-4c96-8e50-a507d202f3ff"
+				name="EnglishUS"
+				refimgid="2d6c981a-4f61-45c0-90ba-c2ad76d04f6d"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//li/a[@innertext='English - US']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="ce3a1313-e308-48ba-9e51-bf1c7045d365"
+				name="SaveAndExit"
+				refimgid="af197cda-7128-46b7-abde-eb9ba4366f7d"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="6689b195-0563-43db-8134-742b2e9caf8f"
+				name="DOBField"
+				refimgid="d19b6f44-16db-4415-8555-27a05ed7df7e"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[1]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr/td[1]/input[@type='text']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[1]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/?/?/div/table/?/?/tr/td[1]/input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="4752a246-2d28-4500-98dd-1581b67cb1f6"
+				name="Subject"
+				refimgid="e0ab1a6d-f80d-4af1-b210-0456d4e5bf2e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext&gt;$RandNum]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="a115e54f-00d5-4722-a307-32b1c9389e2b"
+				name="SubjectDetail"
+				refimgid="20c04533-78df-43d2-841e-0e859f39266c"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/div[2]/div[@innertext&gt;'Subject Detail:']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="a78ed43b-5335-4118-ba47-3d3d39007510"
+				name="AddEventButton"
+				refimgid="dcd9b9d0-f708-4d58-9f93-fa1cd65ccfcd"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="6b7c4f08-fd4b-4316-9894-7a845b096b59"
+				name="EventNameDropdown"
+				refimgid="d3ec5729-969b-4e13-8e2f-8670a4ba25a7"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'addEventDialogWidget_eventName_button']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'addEventDialogWidget_eventName_button']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="b878405e-091b-4eac-bcf8-f0f6f5466632"
+				name="Visit1"
+				refimgid="dad293c5-7fd7-4c01-bf4c-2d453dbcc830"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//li/a[@innertext='Visit 1']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="fef1e296-87b4-4f4f-981b-2c7ccb3f8ecc"
+				name="SaveEvent"
+				refimgid="c57b7b0d-ecc4-46fa-9011-331eb17919c0"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']
+				</item>
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="e02de142-531f-4011-8bbe-814eb3205d56"
+				name="FirstVisit"
+				refimgid="29658ffa-ac2f-4fcf-a609-b7132d995284"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[2]/td[10]"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/td/div/div[3]/div/div[2]//table/tbody/tr[2]/td[10]
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="ffccdfe4-44df-41d3-9ada-4b93692cadee"
+				name="ConfirmDOBField"
+				refimgid="e7600024-7c65-4b6c-84f5-c9586358f05d"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[1]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div[@title='']/div/table/tbody/tr/td[1]/input[@type='text']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[1]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div[@title='']/div/table/?/?/tr/td[1]/input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="9392e009-e70d-4ceb-aa88-0f694bb37641"
+				name="BeginAssessmentButton"
+				refimgid="f8c8f1f9-0799-46f9-9e80-c5c45b44e1d5"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[3]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/div/div/button/span[@innertext='Begin Assessment']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[3]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div//span[@innertext='Begin Assessment']
 				</item>
 			</folder>
 			<folder
@@ -355,11 +712,22 @@ rxversion="8.2">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff"
-				name="StudySiteID"
-				refimgid="b27fd2d0-8e6a-447a-bd82-5a142b39c8f7"
+				id="aaba0e6c-b456-44a4-a20a-7c92e5a56d6e"
+				name="SomeDivTag"
+				refimgid="27433d3f-ee80-4bdd-a772-7f874b85dd7c"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']//tbody/tr[1]/td[3]/div[@innertext&gt;$RandNum]
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="a830dd1e-27d4-47ee-a73e-c73041b1043e"
+				name="DivTag1"
+				refimgid="17611228-91f2-48a7-930e-dccadb34cf46"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[1]/td/div/ul/li[4]/div/div/div[2]/div[@innertext='1']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[1]//ul/li[4]/?/?/div[@title='Notifications']/?/?/div[@innertext='1']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'gwtWrapper']
@@ -446,16 +814,6 @@ rxversion="8.2">
 				/dom[@domain=$DOM]//div[#'studyBaseWidget_topLinkName_sites']/a[@innertext='Sites']
 			</item>
 			<item
-			addcaps="unknown,webelement,itag"
-			capname="itag"
-			id="4c554e95-c609-45d2-bf96-dcfde4155650"
-			name="AddSiteButton"
-			refimgid="25df0a45-1154-4d41-92af-dbc9bc8316eb"
-			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseWidget_buttonCreateAdd']/i"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//button[#'studyBaseWidget_buttonCreateAdd']/i
-			</item>
-			<item
 			addcaps="unknown,webelement,atag"
 			capname="atag"
 			id="e1a8abb4-eff4-4ad3-bce3-1662b283c589"
@@ -495,6 +853,45 @@ rxversion="8.2">
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//img[#'leftMenuButtons_logoImage']
 			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="85c425e2-a4ac-452a-ac21-a60fdfb9b80e"
+			name="CRFsTab"
+			refimgid="c85128d6-f4ae-4eb6-9ba1-eca9b04c7873"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'studyBaseWidget_topLinkName_cRFs']/a[@innertext='CRFs']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'studyBaseWidget_topLinkName_cRFs']/a[@innertext='CRFs']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="49e053e3-c79f-4754-ba64-0a7f12c8311b"
+			name="SubjectsButton"
+			refimgid="e8be3cc6-6eb7-4894-aa28-22ca0841b7a6"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'leftMenuButtons_navSubjects']/div[@innertext='Subjects']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="90347d54-c6b6-44b9-89dd-3599e2115baf"
+			name="AddEvent"
+			refimgid="10549e10-6dac-493e-9646-b42b8df9dccd"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="8d14bd59-a5f4-4e66-bb01-d205497d9d55"
+			name="SaveAndExit"
+			refimgid="ec79cc9d-60fe-4253-a520-e917c6fc79f6"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>
@@ -512,6 +909,55 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="fa3bf7ab-58bf-47ee-b45e-4297d18b0785"
+		isrooted="True"
+		name="OpenFileDialog"
+		refpath="/form[@title='Open']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="66df08e6-cfa3-4c9a-8878-b220b8bb94d5"
+			name="ButtonOpen"
+			refimgid="4ed7cb4d-afed-4d17-b282-2b7a1e70e7bb"
+			refpath="/form[@title='Open']/button[@text='&amp;Open']"
+			searchtimeout="30000ms">
+				/form[@title='Open']/button[@text='&amp;Open']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="d7b3150e-dabc-40ec-a614-3a84e81930be"
+			name="FilenameField"
+			refimgid="5a737daa-0075-470f-a870-58362c6c80ed"
+			refpath="/form[@title='Open']/combobox[@controlid='1148']/text[@controlid='1148']"
+			searchtimeout="30000ms">
+				/form[@title='Open']/?/?/text[@controlid='1148']
+			</item>
+			<basepath>
+				/form[@title='Open']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKFSURBVDhPrZJdSFNhHMaXQUFEBaZTZiV1EUQX
+FkRJ6c6m07lvdVPYlujSuygSlOiiEYSQfd10sZp2nFtiu7GPmyBtaoua86smltNzLKQIhGB5BurG
+eXrPOpqjj6se+PHe/H/P/+Xllfz3wCnJmDdrK5lazT3WrB5gK1XDbFWZn5znpk0lmeLYnzNjURWw
+NuMUEcFWl4NIYEylYIwlYAwKsCZljDGVOcTx9AyqC49EqlXfZ81EXCuoKksrYPQU5nQKzBmo86Im
+xunMuHDRvBDWyzEtCH+5AaMjBVo5ZrXFyXmNvEC0JZIDPU2Go676ZK+hCG/Jlg9k86duN16OLPDP
+wos8M/Ec8z4jvnhO4FvvcXB9hYg/LhoUdVLga3Ttf9CI2ktVGKo4CdbjxmU/B+PNOAwE25043s9E
+kQgokQwUIzlUhGSweBl+y+ZUQb6vsT/fdwYH6QbcqqEQGP26LutuEK7H0faIw3KkFXxICX5ECYQJ
+o7ptqYI8T31wr9eBfT4H9NfseBJegl4QRVlLaO3hsBK9CoyrCKWEEvBv1DtSBbKuur493gYICEWv
+J6dXKm//kjXtHPzBGJKRBlEuBT9GbhJVb00V5NL2Vll3PdZQP3ViILKIZi+HJvcSPIEYJibvp21P
+hBSzKVmIzGvLy+2yr+Z66rDG4d6zaBnuxJWgD00PW5AYq1iXMU4eM0Q1i/rPZHdYnTlElHad3oAd
+0rtWRF7o0uREiBrDlGWLqIqBZJO00+qS0nZkE1Egi7bBQRvAj5dvkBXv+AmlTLR+T1aH1ZLttkZ3
+01Zkumrw+ZVmWRBXR6jYSohqw5R8uzj67+ykjbuOtasKPvafOsSF5DnrnyYtEskPM43KINSheKEA
+AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>
@@ -550,6 +996,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
 		name="EventDefName">
+		</var>
+		<var
+		id="e2a6454e-b821-46b0-a643-4a0f11879cd5"
+		name="FileName">
+			RedCapConfig
 		</var>
 	</variables>
 </repository>

@@ -24,29 +24,29 @@ namespace RedCapCloud.NavigationModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_AddEventDef recording.
+    ///The Click_CRFTab recording.
     /// </summary>
-    [TestModule("5e8eadd2-b4d6-4a1b-b51a-8c332926b0be", ModuleType.Recording, 1)]
-    public partial class Click_AddEventDef : ITestModule
+    [TestModule("3241acf1-d56b-48a1-ac24-1729dc6775d9", ModuleType.Recording, 1)]
+    public partial class Click_CRFTab : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Click_AddEventDef instance = new Click_AddEventDef();
+        static Click_CRFTab instance = new Click_CRFTab();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_AddEventDef()
+        public Click_CRFTab()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_AddEventDef Instance
+        public static Click_CRFTab Instance
         {
             get { return instance; }
         }
@@ -89,8 +89,8 @@ namespace RedCapCloud.NavigationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.AddButton' at Center.", repo.REDCapCloud.EventDefinitionPage.AddButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.EventDefinitionPage.AddButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.CRFsTab' at CenterRight.", repo.REDCapCloud.CRFsTabInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.CRFsTab.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
         }

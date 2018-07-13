@@ -89,7 +89,10 @@ namespace RedCapCloud.NavigationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.MyStudiesButton' at Center.", repo.REDCapCloud.MyStudiesButtonInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(0));
+            Delay.Duration(1500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.MyStudiesButton' at Center.", repo.REDCapCloud.MyStudiesButtonInfo, new RecordItemIndex(1));
             repo.REDCapCloud.MyStudiesButton.Click();
             Delay.Milliseconds(0);
             

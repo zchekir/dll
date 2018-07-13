@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
 name="PrecisionRecruitmentRepository"
 rxversion="8.2">
@@ -676,6 +675,15 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']
 				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="fab623de-d4cc-4b0f-ba8a-762fa57e6154"
+				name="VisitSesionIDField"
+				refimgid="c51d05d6-a583-4618-9b61-62c14932389a"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[3]/div[1]/div[3]/?/?/div/textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -782,7 +790,7 @@ rxversion="8.2">
 				name="CardView"
 				refimgid="a2bb47af-f888-4acb-b780-57052350c4cc"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -791,7 +799,7 @@ rxversion="8.2">
 				name="ListView"
 				refimgid="350f12f5-f119-44a4-b1a0-f3b09e1bc5f7"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -800,7 +808,7 @@ rxversion="8.2">
 				name="AddButton"
 				refimgid="9a1fecda-f0b0-469c-9641-b62429ebb875"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[3]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/add_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
@@ -997,6 +1005,15 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']
 				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="01412b8d-a3e3-4db5-ac12-c0d93920afc4"
+				name="Card"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[2]/label[@innertext='Card']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[2]/label[@innertext='Card']
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
 				</basepath>
@@ -1045,7 +1062,7 @@ rxversion="8.2">
 				name="AddButton"
 				refimgid="0ef966dd-d942-4448-8e0a-2c920217202e"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[3]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/add_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -1054,7 +1071,7 @@ rxversion="8.2">
 				name="CardButton"
 				refimgid="3b783be5-565e-4234-aae0-2930880d7842"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -1063,7 +1080,7 @@ rxversion="8.2">
 				name="ListButton"
 				refimgid="a7c9ae94-dd24-4277-bc1f-6f2810f5bf8c"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
+					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div
@@ -1115,7 +1132,7 @@ rxversion="8.2">
 				name="ListButton"
 				refimgid="b772cbba-2753-4e32-9490-8102d8d0f064"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -1124,7 +1141,7 @@ rxversion="8.2">
 				name="CardButton"
 				refimgid="fbf47364-f842-4bab-b86a-4ca3962620e2"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -1133,7 +1150,7 @@ rxversion="8.2">
 				name="AddButton"
 				refimgid="cdd087d3-59e5-4b2b-8504-ed25f5a33d0c"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[3]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/add_icon_']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div
@@ -1173,7 +1190,7 @@ rxversion="8.2">
 				name="CardView"
 				refimgid="fbefb624-eaaf-4fc5-8af6-92706540679d"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -1182,7 +1199,7 @@ rxversion="8.2">
 				name="ListView"
 				refimgid="bd467efe-f1bb-47e8-bba7-b0e0357c8eee"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -1191,7 +1208,7 @@ rxversion="8.2">
 				name="AddButton"
 				refimgid="6a7fd5eb-7445-4654-a788-2d03ec422e9b"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png' and @visible='True']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[3]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/add_icon_' and @visible='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"

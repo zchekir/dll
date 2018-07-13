@@ -2304,6 +2304,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _statusrequiredInfo;
             RepoItemInfo _namerequiredInfo;
             RepoItemInfo _visitschedulenameminlengthInfo;
+            RepoItemInfo _visitsesionidfieldInfo;
 
             /// <summary>
             /// Creates a new AddVisitSchedulePage  folder.
@@ -2324,6 +2325,7 @@ namespace PrecisionRecruitment
                 _statusrequiredInfo = new RepoItemInfo(this, "StatusRequired", ".//div[@innertext~'Status is required']", 30000, null, "8e3528cd-0ec6-43e1-ba3f-250d56e1255a");
                 _namerequiredInfo = new RepoItemInfo(this, "NameRequired", ".//div[@innertext~'Name is required']", 30000, null, "81d94947-ee9f-44f0-9545-adeeb36f10d8");
                 _visitschedulenameminlengthInfo = new RepoItemInfo(this, "VisitScheduleNameMinLength", ".//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
+                _visitsesionidfieldInfo = new RepoItemInfo(this, "VisitSesionIDField", ".//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[3]/div[1]/div[3]/?/?/div/textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']", 30000, null, "fab623de-d4cc-4b0f-ba8a-762fa57e6154");
             }
 
             /// <summary>
@@ -2649,6 +2651,30 @@ namespace PrecisionRecruitment
                     return _visitschedulenameminlengthInfo;
                 }
             }
+
+            /// <summary>
+            /// The VisitSesionIDField item.
+            /// </summary>
+            [RepositoryItem("fab623de-d4cc-4b0f-ba8a-762fa57e6154")]
+            public virtual Ranorex.TextAreaTag VisitSesionIDField
+            {
+                get
+                {
+                    return _visitsesionidfieldInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VisitSesionIDField item info.
+            /// </summary>
+            [RepositoryItemInfo("fab623de-d4cc-4b0f-ba8a-762fa57e6154")]
+            public virtual RepoItemInfo VisitSesionIDFieldInfo
+            {
+                get
+                {
+                    return _visitsesionidfieldInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -2930,9 +2956,9 @@ namespace PrecisionRecruitment
             public BatteriesViewMenuFolder(RepoGenBaseFolder parentFolder) :
                     base("BatteriesViewMenu", "body/div[1]/tag/div/div[3]", parentFolder, 30000, null, false, "cb59b0f7-51d8-46cb-8829-c42737eed318", "")
             {
-                _cardviewInfo = new RepoItemInfo(this, "CardView", ".//div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']", 30000, null, "1a5053ce-2cf8-4e6e-a384-7dd69892b906");
-                _listviewInfo = new RepoItemInfo(this, "ListView", ".//div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']", 30000, null, "273898c6-7986-4626-a1d4-ec9d9e60c4d6");
-                _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']", 30000, null, "7f11b945-19d9-48ed-b66a-0f596b8736e7");
+                _cardviewInfo = new RepoItemInfo(this, "CardView", ".//div[1]/span[1]/img[@src>'https://'+$DOM+'/asset/images/card_icon_']", 30000, null, "1a5053ce-2cf8-4e6e-a384-7dd69892b906");
+                _listviewInfo = new RepoItemInfo(this, "ListView", ".//div[2]/span[1]/img[@src>'https://'+$DOM+'/asset/images/list_icon_']", 30000, null, "273898c6-7986-4626-a1d4-ec9d9e60c4d6");
+                _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//div[3]/span[1]/img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "7f11b945-19d9-48ed-b66a-0f596b8736e7");
                 _batterycardInfo = new RepoItemInfo(this, "BatteryCard", ".//tag[@tagname='cogstate-generic-list-cards']/div/tag[1]//div/div/div[1]/p[@innertext>$BatteryName]", 30000, null, "757058d1-baba-4625-8845-b7ceb7d62e0f");
             }
 
@@ -3420,6 +3446,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _externalserviceroledropdownInfo;
             RepoItemInfo _addroleactivecheckboxInfo;
             RepoItemInfo _addrolebuttonInfo;
+            RepoItemInfo _cardInfo;
 
             /// <summary>
             /// Creates a new ExternalUserPage  folder.
@@ -3432,6 +3459,7 @@ namespace PrecisionRecruitment
                 _externalserviceroledropdownInfo = new RepoItemInfo(this, "ExternalServiceRoleDropdown", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[2]/select[@name='role']", 30000, null, "51670096-e85e-41b9-a796-4191c61c5a85");
                 _addroleactivecheckboxInfo = new RepoItemInfo(this, "AddRoleActiveCheckbox", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[3]/input[@type='checkbox']", 30000, null, "4ae35020-8fe5-4864-95c2-2e65843fcb14");
                 _addrolebuttonInfo = new RepoItemInfo(this, "AddRoleButton", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']", 30000, null, "2f537dc6-64df-4dbd-9877-820080b627d4");
+                _cardInfo = new RepoItemInfo(this, "Card", "?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[2]/label[@innertext='Card']", 30000, null, "01412b8d-a3e3-4db5-ac12-c0d93920afc4");
             }
 
             /// <summary>
@@ -3577,6 +3605,30 @@ namespace PrecisionRecruitment
                     return _addrolebuttonInfo;
                 }
             }
+
+            /// <summary>
+            /// The Card item.
+            /// </summary>
+            [RepositoryItem("01412b8d-a3e3-4db5-ac12-c0d93920afc4")]
+            public virtual Ranorex.LabelTag Card
+            {
+                get
+                {
+                    return _cardInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Card item info.
+            /// </summary>
+            [RepositoryItemInfo("01412b8d-a3e3-4db5-ac12-c0d93920afc4")]
+            public virtual RepoItemInfo CardInfo
+            {
+                get
+                {
+                    return _cardInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3687,9 +3739,9 @@ namespace PrecisionRecruitment
             public StudiesViewMenuFolder(RepoGenBaseFolder parentFolder) :
                     base("StudiesViewMenu", "body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div", parentFolder, 30000, null, false, "6eb03fbc-8c7e-4050-9415-2c1effa8e485", "")
             {
-                _addbuttonInfo = new RepoItemInfo(this, "AddButton", "div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']", 30000, null, "86e368f2-d5e3-4d41-bb26-9f745121b5d6");
-                _cardbuttonInfo = new RepoItemInfo(this, "CardButton", "div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']", 30000, null, "03603abe-aa9d-4e60-ab24-ca78d1b78c6b");
-                _listbuttonInfo = new RepoItemInfo(this, "ListButton", "div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']", 30000, null, "faf18e71-3e8c-4698-9145-193823f574d5");
+                _addbuttonInfo = new RepoItemInfo(this, "AddButton", "div[3]/span[1]/img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "86e368f2-d5e3-4d41-bb26-9f745121b5d6");
+                _cardbuttonInfo = new RepoItemInfo(this, "CardButton", "div[1]/span[1]/img[@src>'https://'+$DOM+'/asset/images/card_icon_']", 30000, null, "03603abe-aa9d-4e60-ab24-ca78d1b78c6b");
+                _listbuttonInfo = new RepoItemInfo(this, "ListButton", "div[2]/span[1]/img[@src>'https://'+$DOM+'/asset/images/list_icon_']", 30000, null, "faf18e71-3e8c-4698-9145-193823f574d5");
             }
 
             /// <summary>
@@ -3897,9 +3949,9 @@ namespace PrecisionRecruitment
             public VisitScheduleViewMenuFolder(RepoGenBaseFolder parentFolder) :
                     base("VisitScheduleViewMenu", "body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div", parentFolder, 30000, null, false, "c2ed9139-043e-4478-b7b7-d79970f90d80", "")
             {
-                _listbuttonInfo = new RepoItemInfo(this, "ListButton", "div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']", 30000, null, "d410c208-3e19-45b3-9b48-81e26ad0e75d");
-                _cardbuttonInfo = new RepoItemInfo(this, "CardButton", "div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']", 30000, null, "2fcb278e-c537-4c0b-83bf-9dc70cbd5226");
-                _addbuttonInfo = new RepoItemInfo(this, "AddButton", "div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']", 30000, null, "5a7dca40-3d54-45b1-a0dd-24f1d7a57249");
+                _listbuttonInfo = new RepoItemInfo(this, "ListButton", "div[2]/span[1]/img[@src>'https://'+$DOM+'/asset/images/list_icon_']", 30000, null, "d410c208-3e19-45b3-9b48-81e26ad0e75d");
+                _cardbuttonInfo = new RepoItemInfo(this, "CardButton", "div[1]/span[1]/img[@src>'https://'+$DOM+'/asset/images/card_icon_']", 30000, null, "2fcb278e-c537-4c0b-83bf-9dc70cbd5226");
+                _addbuttonInfo = new RepoItemInfo(this, "AddButton", "div[3]/span[1]/img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "5a7dca40-3d54-45b1-a0dd-24f1d7a57249");
             }
 
             /// <summary>
@@ -4082,9 +4134,9 @@ namespace PrecisionRecruitment
             public WorkflowsViewMenuFolder(RepoGenBaseFolder parentFolder) :
                     base("WorkflowsViewMenu", ".//div[#'ng-app']/tag/div/div[3]", parentFolder, 30000, null, false, "7cb5e95f-9ffe-43b4-872c-341c3906a0b3", "")
             {
-                _cardviewInfo = new RepoItemInfo(this, "CardView", ".//div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']", 30000, null, "af2d7ad4-12a1-4714-b865-0228a4635e2f");
-                _listviewInfo = new RepoItemInfo(this, "ListView", ".//div[2]/span[1]/img[@src='https://'+$DOM+'/asset/images/list_icon_off.png']", 30000, null, "2d9bf4b1-a067-4bf7-8899-eada717bdc5f");
-                _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png' and @visible='True']", 30000, null, "ebe4df6e-c851-4e11-8add-75f128aa51a6");
+                _cardviewInfo = new RepoItemInfo(this, "CardView", ".//div[1]/span[1]/img[@src>'https://'+$DOM+'/asset/images/card_icon_']", 30000, null, "af2d7ad4-12a1-4714-b865-0228a4635e2f");
+                _listviewInfo = new RepoItemInfo(this, "ListView", ".//div[2]/span[1]/img[@src>'https://'+$DOM+'/asset/images/list_icon_']", 30000, null, "2d9bf4b1-a067-4bf7-8899-eada717bdc5f");
+                _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//div[3]/span[1]/img[@src>'https://'+$DOM+'/asset/images/add_icon_' and @visible='True']", 30000, null, "ebe4df6e-c851-4e11-8add-75f128aa51a6");
                 _workflowcardInfo = new RepoItemInfo(this, "WorkflowCard", ".//tag[@tagname='cogstate-generic-list-cards']/div/tag[1]/tag/div/div/div[1]/p[@innertext>$WorkflowName]", 30000, null, "0e197902-4a4c-4a2e-a88d-6979fb3dd446");
             }
 

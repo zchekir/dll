@@ -103,8 +103,8 @@ namespace RedCapCloud.ValidationModules
             Validate.Exists(repo.REDCapCloud.SitesTable.SiteNameInfo);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.SitesTable.StudySiteID'.", repo.REDCapCloud.SitesTable.StudySiteIDInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.REDCapCloud.SitesTable.StudySiteIDInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.SubjectsPage.StudySiteID'.", repo.REDCapCloud.SubjectsPage.StudySiteIDInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.REDCapCloud.SubjectsPage.StudySiteIDInfo);
             Delay.Milliseconds(0);
             
         }

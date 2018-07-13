@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>engine</RootNamespace>
     <AssemblyName>engine</AssemblyName>
-    <RanorexVersion>8.0</RanorexVersion>
+    <RanorexVersion>8.2</RanorexVersion>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
@@ -53,6 +53,11 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper">
+      <HintPath>packages\CsvHelper.7.1.1\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -66,6 +71,9 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
       <Private>False</Private>
     </Reference>
     <Reference Include="Ranorex.Plugin.FirefoxWeb">
@@ -147,6 +155,9 @@
     <Compile Include="Card\OneCardLearning.cs">
       <id>c29effed-2843-4a04-b8e5-99010f33a9ad</id>
     </Compile>
+    <Compile Include="Helpers\CSVUtility.cs">
+      <id>47043b12-db6a-4593-99a2-2dc459103378</id>
+    </Compile>
     <Compile Include="Helpers\DropdownSelect.cs">
       <id>f4932d00-128d-4190-8be3-0f7ed1482d85</id>
     </Compile>
@@ -170,6 +181,11 @@
     <Folder Include="Helpers">
       <id>7ee5a589-5589-4efb-96d7-07e88da6c895</id>
     </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <id>93b7791b-1f9a-4413-9256-12e2499dc28a</id>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

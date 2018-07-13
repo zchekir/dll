@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.NavigationModules
+namespace RedCapCloud.InputModules.SubjectsPage
 {
-    public partial class Click_AddEventDef
+    public partial class Enter_SubjectNumber
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

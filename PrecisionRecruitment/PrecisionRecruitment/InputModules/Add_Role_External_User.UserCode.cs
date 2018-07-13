@@ -41,6 +41,7 @@ namespace PrecisionRecruitment.InputModules
             //click on dropdown to expand the list of Studies Available
         	Report.Log(ReportLevel.Info,"Mouse click on AddRoleStudyDropdown");
         	repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleStudyDropdown.Click();
+        	Delay.Duration(5000);
         		
         	//find the study we want and select it
         	Keyboard.Press(CodeName + RandNum);
