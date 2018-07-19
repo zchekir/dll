@@ -109,6 +109,9 @@ namespace RedCapCloud
             repo.REDCapCloud.iFrame.SkipButton.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(2));
+            Delay.Duration(10000, false);
+            
         }
 
 #region Image Feature Data
