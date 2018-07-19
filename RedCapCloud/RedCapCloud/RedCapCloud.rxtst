@@ -286,6 +286,12 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="20814324-7609-4392-ad21-9a19b28e766e"
+			name="ReportToPDFModule"
+			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="21a26914-3c1d-431c-ac33-74126835ec71"
 			name="Enter_Password"
 			ref="c6481925-2e15-4f67-a2ad-a2a6ebdcf123"
@@ -614,6 +620,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="383050ab-ab07-42b2-a841-7e39b43bf177"
 			name="Complete_CBB"
 			ref="6dca30b7-3f9a-4599-a496-10a8edb21198"
@@ -712,6 +719,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="42fb4306-bed1-4d62-84c1-489963222c41"
 			name="Get_VisitSessionID"
 			ref="06fd06e3-380e-4fd1-b66e-67cdeaf52995"
@@ -1324,6 +1332,26 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6a09c03f-aec6-4062-901d-c81afeea1eca"
+			name="Upload_RawData"
+			ref="4b7c8d87-c912-439e-bc77-334ef8709512"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Datafile"
+					datasourceid="a695d3a0-4e9b-487d-bdc0-4472914a4d01"
+					variableid="8fc570d6-3f7a-415d-b8e3-72a0b3b97474"
+					variablename="DataFile">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6af25ce5-44e3-484a-88f7-336745834197"
 			name="Validate_SiteEntry"
 			ref="f2840275-e09f-4ec4-a2a6-8648d892f634"
@@ -1688,7 +1716,7 @@ rxversion="8.2">
 					</param>
 					<param
 					name="Password"
-					value="913172@RCC">
+					value="Password#123">
 					</param>
 					<param
 					name="RandNum"
@@ -1857,16 +1885,13 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
+			datasource="DataConnector"
 			id="932f94b1-9458-454c-b06e-e0ebf49f893e"
+			maxrange="0"
+			minrange="0"
 			name="Complete_CBB">
 			</testcase>
-			<testmodule
-			enabled="False"
-			id="961e8af5-9b93-4bd3-8476-4d67f8742bcb"
-			name="Upload_RawData"
-			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="965c7752-4194-47b0-8c82-77dbc78f8f78"
 			name="Click_External_Users_Menu"
@@ -2978,6 +3003,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="fe16989e-e303-4290-9c07-e504aadf5b78"
 			name="Select_First_Visit"
 			ref="8f5dbbf6-ea58-4c62-9550-7b304a4984fb"
@@ -3778,7 +3804,7 @@ rxversion="8.2">
 							name="Complete_CBB">
 							</testmodule>
 							<testmodule
-							id="961e8af5-9b93-4bd3-8476-4d67f8742bcb"
+							id="6a09c03f-aec6-4062-901d-c81afeea1eca"
 							name="Upload_RawData">
 							</testmodule>
 						</testcase>
@@ -3792,6 +3818,10 @@ rxversion="8.2">
 							<testmodule
 							id="ac585282-3e8d-4737-9f0e-a2261b4c2b1a"
 							name="Close_Browser">
+							</testmodule>
+							<testmodule
+							id="20814324-7609-4392-ad21-9a19b28e766e"
+							name="ReportToPDFModule">
 							</testmodule>
 						</teardown>
 					</smartfoldernode>
@@ -3888,6 +3918,9 @@ rxversion="8.2">
 				</column>
 				<column>
 					CSVConfigExtra
+				</column>
+				<column>
+					Datafile
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

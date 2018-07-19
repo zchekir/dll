@@ -93,12 +93,21 @@ namespace RedCapCloud.NavigationModules.CRFsPage
             repo.REDCapCloud.CRFsPage.UploadButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(1));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+R' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.R | System.Windows.Forms.Keys.Control, 19, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
+            Delay.Duration(5000, false);
+            
+            // Wait for Tools menu to reapper before continuing so we know that the page has fully loaded.
+            Report.Log(ReportLevel.Info, "Section", "Wait for Tools menu to reapper before continuing so we know that the page has fully loaded.", new RecordItemIndex(4));
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'REDCapCloud.CRFsPage.ToolsMenu'", repo.REDCapCloud.CRFsPage.ToolsMenuInfo, new ActionTimeout(30000), new RecordItemIndex(5));
+            repo.REDCapCloud.CRFsPage.ToolsMenuInfo.WaitForExists(30000);
             
         }
 

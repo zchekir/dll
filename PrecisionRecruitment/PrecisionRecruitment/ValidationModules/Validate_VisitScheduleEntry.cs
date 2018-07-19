@@ -111,15 +111,19 @@ namespace PrecisionRecruitment.ValidationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName'.", repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitScheduleViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.VisitScheduleViewMenu.CardButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.VisitScheduleViewMenu.CardButton.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName'.", repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, "InnerText", VisitScheduleName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName'.", repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName'.", repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Visit Schedule Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
+            Report.Screenshot(ReportLevel.Info, "User", "Visit Schedule Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
             
         }
 

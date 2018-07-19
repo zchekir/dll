@@ -926,6 +926,18 @@
       <UserCode>true</UserCode>
       <id>0f8f43f0-4107-4ecc-9d8f-8eeb71a06437</id>
     </Compile>
+    <Compile Include="Upload_RawData.cs">
+      <BoundTo>7ebd3217-d15f-4e8d-bff8-c0313c6f8906</BoundTo>
+      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2cb78b0c-5024-419d-94b8-a403c2e8aef0</id>
+    </Compile>
+    <Compile Include="Upload_RawData.UserCode.cs">
+      <BoundTo>7ebd3217-d15f-4e8d-bff8-c0313c6f8906</BoundTo>
+      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f472a11-bc76-475a-9c7f-2374345c3fa7</id>
+    </Compile>
     <Compile Include="ValidationModules\Validate_EventDef_Entry.cs">
       <DependentUpon>Validate_EventDef_Entry.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1327,6 +1339,18 @@
       <id>b87240ea-48b3-4f01-aafd-e0512f44c38e</id>
       <recordtableid>00e6b236-1bc8-4276-b907-6919860acfe5</recordtableid>
     </None>
+    <None Include="rawData\40yo_Tier1.txt">
+      <id>e7c48cfe-d77f-4420-a60f-c5aa72c8666c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\40yo_Tier2.txt">
+      <id>696b3a70-fcbf-4235-9929-87faec5d0113</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\40yo_Tier3.txt">
+      <id>78a717b9-296b-4e3b-a1d9-cc40faddc01c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Read_CSV.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>a7acc07c-708b-4c2d-86ae-9e72e8e90eaa</id>
@@ -1347,6 +1371,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>87409ad1-d9ea-4968-bbda-4bb16d2f0ced</id>
       <recordtableid>3ed44668-dc5f-4192-a0dd-8d911089de21</recordtableid>
+    </None>
+    <None Include="Upload_RawData.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>7ebd3217-d15f-4e8d-bff8-c0313c6f8906</id>
+      <recordtableid>4b7c8d87-c912-439e-bc77-334ef8709512</recordtableid>
     </None>
     <None Include="ValidationModules\Validate_EventDef_Entry.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -1417,6 +1446,9 @@
     </Folder>
     <Folder Include="NavigationModules\SubjectsPage">
       <id>dd563ab5-0588-4274-824c-3651cd1f4771</id>
+    </Folder>
+    <Folder Include="rawData">
+      <id>616e2195-5934-43f3-bdb5-332f2e79f985</id>
     </Folder>
     <Folder Include="ValidationModules">
       <id>34b1ef50-b27f-4f94-86c3-e7ef3fcbf755</id>

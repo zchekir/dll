@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="c36154b1-5132-4fd1-83dc-8e8a03b3ea31"
+id="4b7c8d87-c912-439e-bc77-334ef8709512"
 mode="Global"
 rxversion="8.2">
 	<name>
-		Click_MyStudies
+		Upload_RawData
 	</name>
 	<repeatcount>
 		1
@@ -23,30 +23,42 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Click_MyStudies"
-	namespace="RedCapCloud.NavigationModules">
+	classname="Upload_RawData"
+	namespace="RedCapCloud">
 	</codegen>
 	<variables>
+		<var
+		id="8fc570d6-3f7a-415d-b8e3-72a0b3b97474"
+		name="DataFile">
+		</var>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
+		<userrecorditem
+		classname="Upload_RawData"
 		enabled="True"
+		isexternaltestmethod="False"
+		methodname="AddRawData"
+		namespace="RedCapCloud"
 		optional="False"
-		searchpropertyid="c27409f3-9545-4eca-b39a-50d6aac75198"
-		waitaction="Exists"
-		waittimeout="30000ms">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//img[#'leftMenuButtons_logoImage']
-				</path>
-			</info>
-		</WaitForRecordItem>
+			<arguments
+			id="aa7ba06b-6e43-4460-8ff2-86c126db94f1">
+				<argument
+				argname="fileName"
+				id="80f437e5-85f4-40d3-80e1-57e73be6e407"
+				variable="DataFile">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -55,19 +67,19 @@ rxversion="8.2">
 		loc="Center"
 		movetime="100ms"
 		optional="False"
-		searchpropertyid="f9ecc42c-0b04-49f2-a620-ab70eb421e8b"
-		sx="35"
-		sy="191"
+		searchpropertyid="e4901702-55a1-443e-ba49-8592064766ec"
+		sx="0"
+		sy="0"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5"
-			sourcename="Recorder">
+			id="cafd57f8-e692-4bcb-9ecd-62f182e0f4b3"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//img[#'leftMenuButtons_logoImage']
+					/dom[@domain=$DOM]//iframe//button[#'skip']
 				</path>
 			</info>
 		</mouseitem>
@@ -75,7 +87,7 @@ rxversion="8.2">
 	<repository
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 	name="RedCapCloudRepository"
-	relativepath="..\RedCapCloudRepository.rxrep"
+	relativepath="RedCapCloudRepository.rxrep"
 	rxversion="8.2">
 		<codegen
 		classname="RedCapCloudRepository"
@@ -88,7 +100,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Click_MyStudies.UserCode.cs
+		Upload_RawData.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

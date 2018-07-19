@@ -87,7 +87,7 @@ rxversion="8.2">
 				name="ClassicDatabaseOption"
 				refimgid="98fc85ad-62ad-4a02-ac83-8a56859d3d1b"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//li[#'summary_studyCategory_1']/a[@innertext='Classic Database']
+					/dom[@domain=$DOM]//li/a[@innertext='Classic Database']
 				</item>
 				<item
 				addcaps="unknown,webelement,textareatag"
@@ -654,6 +654,45 @@ rxversion="8.2">
 				</item>
 			</folder>
 			<folder
+			addcaps="unknown,webelement,iframetag"
+			capname="iframetag"
+			id="ac013338-35f4-4033-943f-f34702032c3d"
+			isrooted="True"
+			name="iFrame"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="2733c1b9-9132-48ed-b7d1-f8a8248afe60"
+				name="StartButton"
+				refimgid="96fcf099-54c2-4407-a9ad-51d86d572b5c"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//iframe//button[#'instructions_button']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="cafd57f8-e692-4bcb-9ecd-62f182e0f4b3"
+				name="SkipButton"
+				refimgid="858e5802-5e95-485c-8288-b5be0dfe2197"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//iframe//button[#'skip']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="dc3efbd8-e6dc-4a86-afb5-b2a72838e8e7"
+				name="Results"
+				refimgid="eb13261a-b11f-4023-bba5-fb737238e713"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//iframe//textarea[#'results']
+				</item>
+				<basepath>
+					/dom[@domain=$DOM]//iframe
+				</basepath>
+			</folder>
+			<folder
 			addcaps="unknown,webelement,tabletag"
 			capname="trtag"
 			id="35747835-4914-4867-8337-c41bdbc22078"
@@ -891,6 +930,16 @@ rxversion="8.2">
 			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']"
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="d0d89ecc-c2be-4036-8c51-929bc7f1dcc2"
+			name="ClassicDatabase"
+			refimgid="264e3466-c833-40e0-aaa9-1a25a9cc30f1"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//li[#'summary_studyCategory_1_CATEGORY']/a[@innertext='Classic Database']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//li[#'summary_studyCategory_1_CATEGORY']/a[@innertext='Classic Database']
 			</item>
 			<basepath>
 				/dom[@domain=$DOM]

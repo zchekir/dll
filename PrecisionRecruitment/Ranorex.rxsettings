@@ -375,6 +375,10 @@ rxversion="8.2">
 	<plugins.rawtext.whitelist>
 		<rawtextconfig>
 			<include
+			name="^VirtualBox$"
+			type="process">
+			</include>
+			<include
 			name="^OutlookGrid$"
 			type="class">
 			</include>

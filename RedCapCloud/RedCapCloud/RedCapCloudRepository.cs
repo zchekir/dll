@@ -211,6 +211,7 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.EventDefinitionPageFolder _eventdefinitionpage;
             RedCapCloudRepositoryFolders.CRFsPageFolder _crfspage;
             RedCapCloudRepositoryFolders.SubjectsPageFolder _subjectspage;
+            RedCapCloudRepositoryFolders.IFrameFolder _iframe;
             RedCapCloudRepositoryFolders.StudiesTableFolder _studiestable;
             RedCapCloudRepositoryFolders.SitesTableFolder _sitestable;
             RedCapCloudRepositoryFolders.EventDefTableFolder _eventdeftable;
@@ -227,6 +228,7 @@ namespace RedCapCloud
             RepoItemInfo _subjectsbuttonInfo;
             RepoItemInfo _addeventInfo;
             RepoItemInfo _saveandexitInfo;
+            RepoItemInfo _classicdatabaseInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -241,6 +243,7 @@ namespace RedCapCloud
                 _eventdefinitionpage = new RedCapCloudRepositoryFolders.EventDefinitionPageFolder(this);
                 _crfspage = new RedCapCloudRepositoryFolders.CRFsPageFolder(this);
                 _subjectspage = new RedCapCloudRepositoryFolders.SubjectsPageFolder(this);
+                _iframe = new RedCapCloudRepositoryFolders.IFrameFolder(this);
                 _studiestable = new RedCapCloudRepositoryFolders.StudiesTableFolder(this);
                 _sitestable = new RedCapCloudRepositoryFolders.SitesTableFolder(this);
                 _eventdeftable = new RedCapCloudRepositoryFolders.EventDefTableFolder(this);
@@ -257,6 +260,7 @@ namespace RedCapCloud
                 _subjectsbuttonInfo = new RepoItemInfo(this, "SubjectsButton", ".//div[#'leftMenuButtons_navSubjects']/div[@innertext='Subjects']", 30000, null, "49e053e3-c79f-4754-ba64-0a7f12c8311b");
                 _addeventInfo = new RepoItemInfo(this, "AddEvent", ".//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']", 30000, null, "90347d54-c6b6-44b9-89dd-3599e2115baf");
                 _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "8d14bd59-a5f4-4e66-bb01-d205497d9d55");
+                _classicdatabaseInfo = new RepoItemInfo(this, "ClassicDatabase", ".//li[#'summary_studyCategory_1_CATEGORY']/a[@innertext='Classic Database']", 30000, null, "d0d89ecc-c2be-4036-8c51-929bc7f1dcc2");
             }
 
             /// <summary>
@@ -596,6 +600,30 @@ namespace RedCapCloud
             }
 
             /// <summary>
+            /// The ClassicDatabase item.
+            /// </summary>
+            [RepositoryItem("d0d89ecc-c2be-4036-8c51-929bc7f1dcc2")]
+            public virtual Ranorex.ATag ClassicDatabase
+            {
+                get
+                {
+                    return _classicdatabaseInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClassicDatabase item info.
+            /// </summary>
+            [RepositoryItemInfo("d0d89ecc-c2be-4036-8c51-929bc7f1dcc2")]
+            public virtual RepoItemInfo ClassicDatabaseInfo
+            {
+                get
+                {
+                    return _classicdatabaseInfo;
+                }
+            }
+
+            /// <summary>
             /// The LoginPage folder.
             /// </summary>
             [RepositoryFolder("b5ed13bf-0de7-4cda-9695-62102a265b1a")]
@@ -656,6 +684,15 @@ namespace RedCapCloud
             public virtual RedCapCloudRepositoryFolders.SubjectsPageFolder SubjectsPage
             {
                 get { return _subjectspage; }
+            }
+
+            /// <summary>
+            /// The iFrame folder.
+            /// </summary>
+            [RepositoryFolder("ac013338-35f4-4033-943f-f34702032c3d")]
+            public virtual RedCapCloudRepositoryFolders.IFrameFolder iFrame
+            {
+                get { return _iframe; }
             }
 
             /// <summary>
@@ -816,7 +853,7 @@ namespace RedCapCloud
             {
                 _studynamefieldInfo = new RepoItemInfo(this, "StudyNameField", ".//input[#'summary_studyName']", 30000, null, "efe970f6-41d7-4381-841a-8521c17bcef2");
                 _studycategoryfieldInfo = new RepoItemInfo(this, "StudyCategoryField", ".//input[#'summary_studyCategory_input']", 30000, null, "f719c015-15a6-426b-ad86-7e8f71ed4a7d");
-                _classicdatabaseoptionInfo = new RepoItemInfo(this, "ClassicDatabaseOption", ".//li[#'summary_studyCategory_1']/a[@innertext='Classic Database']", 30000, null, "ed1510b0-9011-40fc-a0b5-6fbb7152ed21");
+                _classicdatabaseoptionInfo = new RepoItemInfo(this, "ClassicDatabaseOption", ".//li/a[@innertext='Classic Database']", 30000, null, "ed1510b0-9011-40fc-a0b5-6fbb7152ed21");
                 _brieftitlefieldInfo = new RepoItemInfo(this, "BriefTitleField", ".//textarea[#'summary_briefTitle']", 30000, null, "f827b27e-3ce8-4d30-961f-655888e56b52");
                 _briefsummaryfieldInfo = new RepoItemInfo(this, "BriefSummaryField", ".//textarea[#'summary_summary']", 30000, null, "584c17a5-dcaf-4c2d-8a03-f25f76779df0");
                 _sponsorfieldInfo = new RepoItemInfo(this, "SponsorField", ".//input[#'summary_sponsor']", 30000, null, "b3bc91ee-cd04-4127-8681-e044b2e2270a");
@@ -2438,6 +2475,124 @@ namespace RedCapCloud
                 get
                 {
                     return _beginassessmentbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The IFrameFolder folder.
+        /// </summary>
+        [RepositoryFolder("ac013338-35f4-4033-943f-f34702032c3d")]
+        public partial class IFrameFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _startbuttonInfo;
+            RepoItemInfo _skipbuttonInfo;
+            RepoItemInfo _resultsInfo;
+
+            /// <summary>
+            /// Creates a new iFrame  folder.
+            /// </summary>
+            public IFrameFolder(RepoGenBaseFolder parentFolder) :
+                    base("iFrame", ".//iframe", parentFolder, 30000, null, false, "ac013338-35f4-4033-943f-f34702032c3d", "")
+            {
+                _startbuttonInfo = new RepoItemInfo(this, "StartButton", ".//button[#'instructions_button']", 30000, null, "2733c1b9-9132-48ed-b7d1-f8a8248afe60");
+                _skipbuttonInfo = new RepoItemInfo(this, "SkipButton", ".//button[#'skip']", 30000, null, "cafd57f8-e692-4bcb-9ecd-62f182e0f4b3");
+                _resultsInfo = new RepoItemInfo(this, "Results", ".//textarea[#'results']", 30000, null, "dc3efbd8-e6dc-4a86-afb5-b2a72838e8e7");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ac013338-35f4-4033-943f-f34702032c3d")]
+            public virtual Ranorex.IFrameTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.IFrameTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ac013338-35f4-4033-943f-f34702032c3d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StartButton item.
+            /// </summary>
+            [RepositoryItem("2733c1b9-9132-48ed-b7d1-f8a8248afe60")]
+            public virtual Ranorex.ButtonTag StartButton
+            {
+                get
+                {
+                    return _startbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StartButton item info.
+            /// </summary>
+            [RepositoryItemInfo("2733c1b9-9132-48ed-b7d1-f8a8248afe60")]
+            public virtual RepoItemInfo StartButtonInfo
+            {
+                get
+                {
+                    return _startbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SkipButton item.
+            /// </summary>
+            [RepositoryItem("cafd57f8-e692-4bcb-9ecd-62f182e0f4b3")]
+            public virtual Ranorex.ButtonTag SkipButton
+            {
+                get
+                {
+                    return _skipbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SkipButton item info.
+            /// </summary>
+            [RepositoryItemInfo("cafd57f8-e692-4bcb-9ecd-62f182e0f4b3")]
+            public virtual RepoItemInfo SkipButtonInfo
+            {
+                get
+                {
+                    return _skipbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Results item.
+            /// </summary>
+            [RepositoryItem("dc3efbd8-e6dc-4a86-afb5-b2a72838e8e7")]
+            public virtual Ranorex.TextAreaTag Results
+            {
+                get
+                {
+                    return _resultsInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Results item info.
+            /// </summary>
+            [RepositoryItemInfo("dc3efbd8-e6dc-4a86-afb5-b2a72838e8e7")]
+            public virtual RepoItemInfo ResultsInfo
+            {
+                get
+                {
+                    return _resultsInfo;
                 }
             }
         }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.2">
 	<testsuiteentryhierarchy>
@@ -526,6 +526,12 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1c865c46-d5dc-4cfb-8627-e3df3fb8d6aa"
+			name="ReportToPDFModule"
+			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
+			type="UserCode">
 			</testmodule>
 			<modulegroup
 			id="1cbbade4-fe01-4ba3-8e73-2a609ee0fc5d"
@@ -1901,6 +1907,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="761655ed-0ada-4e0b-a91f-46c424aefe62"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="7787444a-8a16-42bb-9e40-b7e65352acde"
 			name="Click_Add_Workflow"
@@ -4721,6 +4731,14 @@ rxversion="8.2">
 								</testmodule>
 							</teardown>
 						</testcase>
+						<teardown
+						id="761655ed-0ada-4e0b-a91f-46c424aefe62"
+						name="teardown">
+							<testmodule
+							id="1c865c46-d5dc-4cfb-8627-e3df3fb8d6aa"
+							name="ReportToPDFModule">
+							</testmodule>
+						</teardown>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -4993,9 +5011,6 @@ rxversion="8.2">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
-		<reference>
-			..\..\..\packages\Ranorex.ReportToPDF.1.0.13\lib\net40\Ranorex.PDF.exe
-		</reference>
 		<reference>
 			engine.dll
 		</reference>

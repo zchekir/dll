@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.NavigationModules
+namespace RedCapCloud
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_MyStudies recording.
+    ///The Upload_RawData recording.
     /// </summary>
-    [TestModule("c36154b1-5132-4fd1-83dc-8e8a03b3ea31", ModuleType.Recording, 1)]
-    public partial class Click_MyStudies : ITestModule
+    [TestModule("4b7c8d87-c912-439e-bc77-334ef8709512", ModuleType.Recording, 1)]
+    public partial class Upload_RawData : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the RedCapCloudRepository repository.
         /// </summary>
-        public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
+        public static RedCapCloudRepository repo = RedCapCloudRepository.Instance;
 
-        static Click_MyStudies instance = new Click_MyStudies();
+        static Upload_RawData instance = new Upload_RawData();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_MyStudies()
+        public Upload_RawData()
         {
+            DataFile = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_MyStudies Instance
+        public static Upload_RawData Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _DataFile;
+
+        /// <summary>
+        /// Gets or sets the value of variable DataFile.
+        /// </summary>
+        [TestVariable("8fc570d6-3f7a-415d-b8e3-72a0b3b97474")]
+        public string DataFile
+        {
+            get { return _DataFile; }
+            set { _DataFile = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -89,11 +102,11 @@ namespace RedCapCloud.NavigationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'REDCapCloud.MyStudiesButton'", repo.REDCapCloud.MyStudiesButtonInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.REDCapCloud.MyStudiesButtonInfo.WaitForExists(30000);
+            AddRawData(DataFile);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.MyStudiesButton' at Center.", repo.REDCapCloud.MyStudiesButtonInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.MyStudiesButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.iFrame.SkipButton' at Center.", repo.REDCapCloud.iFrame.SkipButtonInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.iFrame.SkipButton.Click();
             Delay.Milliseconds(0);
             
         }

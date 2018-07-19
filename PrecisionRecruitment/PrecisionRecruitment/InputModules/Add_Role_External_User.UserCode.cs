@@ -36,7 +36,7 @@ namespace PrecisionRecruitment.InputModules
         public void SelectStudyToAdd()
         {
         	//Wait for list to load (need to change this method)
-        	Delay.Duration(30000);
+        	Delay.Duration(5000);
         	
             //click on dropdown to expand the list of Studies Available
         	Report.Log(ReportLevel.Info,"Mouse click on AddRoleStudyDropdown");

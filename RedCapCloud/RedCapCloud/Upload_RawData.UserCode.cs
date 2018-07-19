@@ -21,7 +21,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace PrecisionRecruitment.InputModules
+namespace RedCapCloud
 {
     public partial class Upload_RawData
     {
@@ -33,10 +33,10 @@ namespace PrecisionRecruitment.InputModules
         {
             // Your recording specific initialization code goes here.
         }
-        
+
         public void AddRawData(string fileName)
         {
-        	string data;
+            string data;
         	using (StreamReader sr = File.OpenText(@".\rawData\" + fileName))
 			{
         		data = sr.ReadToEnd();
@@ -44,7 +44,7 @@ namespace PrecisionRecruitment.InputModules
         	
         	//Add raw data into the textbox on the battery runner page
         	Report.Log(ReportLevel.Info, "Searching for raw data text field");
-        	repo.CogstateSolutionPlatform.BatteryResults.Element.SetAttributeValue("InnerText", data);
+        	repo.REDCapCloud.iFrame.Results.Element.SetAttributeValue("InnerText", data);
         }
 
     }
