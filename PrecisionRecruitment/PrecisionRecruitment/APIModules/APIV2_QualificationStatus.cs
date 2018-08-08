@@ -43,7 +43,7 @@ namespace PrecisionRecruitment.APIModules
         {
             DOM = "cgst-qc-duo.cogstate.com";
             RandNum = "";
-            ProtocolID = "Ranorex Protocol ID";
+            ProtocolNumber = "Ranorex Protocol Number";
         }
 
         /// <summary>
@@ -56,16 +56,16 @@ namespace PrecisionRecruitment.APIModules
 
 #region Variables
 
-        string _ProtocolID;
+        string _ProtocolNumber;
 
         /// <summary>
-        /// Gets or sets the value of variable ProtocolID.
+        /// Gets or sets the value of variable ProtocolNumber.
         /// </summary>
         [TestVariable("6017c17a-abf9-48f7-926e-a1d1d8419954")]
-        public string ProtocolID
+        public string ProtocolNumber
         {
-            get { return _ProtocolID; }
-            set { _ProtocolID = value; }
+            get { return _ProtocolNumber; }
+            set { _ProtocolNumber = value; }
         }
 
         /// <summary>
@@ -117,7 +117,7 @@ namespace PrecisionRecruitment.APIModules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
             Delay.Duration(10000, false);
             
-            engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolID);
+            engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolNumber);
             Delay.Milliseconds(0);
             
         }

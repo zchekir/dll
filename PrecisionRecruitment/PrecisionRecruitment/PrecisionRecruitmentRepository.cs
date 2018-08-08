@@ -61,16 +61,16 @@ namespace PrecisionRecruitment
             set { _DOM = value; }
         }
 
-        string _StudyName = "Ranorex";
+        string _ProjectName = "ProjectName";
 
         /// <summary>
-        /// Gets or sets the value of variable StudyName.
+        /// Gets or sets the value of variable ProjectName.
         /// </summary>
         [TestVariable("c79bec5d-144b-4142-be36-50ddfe893386")]
-        public string StudyName
+        public string ProjectName
         {
-            get { return _StudyName; }
-            set { _StudyName = value; }
+            get { return _ProjectName; }
+            set { _ProjectName = value; }
         }
 
         string _BatteryName = "Ranorex Battery";
@@ -245,7 +245,7 @@ namespace PrecisionRecruitment
                 _workflowsviewmenu = new PrecisionRecruitmentRepositoryFolders.WorkflowsViewMenuFolder(this);
                 _assemblyversionInfo = new RepoItemInfo(this, "AssemblyVersion", ".//div[#'collapsible0']/div[1]/div[2]/div[2]/span[@innertext~'\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}']", 30000, null, "63dc85ed-58cb-45a1-9c44-c2404ef1f077");
                 _hamburgermenuInfo = new RepoItemInfo(this, "HamburgerMenu", ".//div[#'simple-dropdown']", 30000, null, "333acc2f-1a67-406e-9aa8-c3168d834805");
-                _studynamebreadcrumbInfo = new RepoItemInfo(this, "StudyNameBreadcrumb", ".//div[#'ng-app']/tag/div/div[2]//span[@innertext>$StudyName]", 30000, null, "2ff93f8f-ef07-45c4-984d-6850602afb79");
+                _studynamebreadcrumbInfo = new RepoItemInfo(this, "StudyNameBreadcrumb", ".//div[#'ng-app']/tag/div/div[2]//span[@innertext>$ProjectName]", 30000, null, "2ff93f8f-ef07-45c4-984d-6850602afb79");
                 _editbreadcrumbInfo = new RepoItemInfo(this, "EditBreadcrumb", ".//div[#'ng-app']/tag/div/div[2]//span[@innertext<'Edit']", 30000, null, "5bed9429-4e7b-42f4-a07a-b8c9cf342f70");
                 _searchfieldInfo = new RepoItemInfo(this, "SearchField", ".//div[@id='ng-app']//input[@id='generic-search']", 30000, null, "2620a1a8-aeed-40f8-924c-40808444d27b");
                 _administrationInfo = new RepoItemInfo(this, "Administration", ".//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/?/?/label[@innertext='Administration']", 30000, null, "92b35c05-744e-4066-8b60-893431fe01e2");
@@ -1795,22 +1795,21 @@ namespace PrecisionRecruitment
         [RepositoryFolder("288be980-5cd1-4c92-abf3-0f56ae63b85d")]
         public partial class AddStudyPageFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _studynamefieldInfo;
-            RepoItemInfo _protocolidfieldInfo;
-            RepoItemInfo _codenamefieldInfo;
+            RepoItemInfo _protocolnumberfieldInfo;
+            RepoItemInfo _projectnamefieldInfo;
             RepoItemInfo _sponsorfieldInfo;
             RepoItemInfo _activedropdownInfo;
             RepoItemInfo _statusdropdownInfo;
             RepoItemInfo _precisionrecreuitmentcheckboxInfo;
             RepoItemInfo _studynamerequiredInfo;
-            RepoItemInfo _protocolidrequiredInfo;
-            RepoItemInfo _codenamerequiredInfo;
+            RepoItemInfo _protocolnumberrequiredInfo;
+            RepoItemInfo _projectnamerequiredInfo;
             RepoItemInfo _sponsorrequiredInfo;
             RepoItemInfo _activerequiredInfo;
             RepoItemInfo _statusrequiredInfo;
             RepoItemInfo _studynameminlengthInfo;
-            RepoItemInfo _protocolidminlengthInfo;
-            RepoItemInfo _codenameminlengthInfo;
+            RepoItemInfo _protocolnumberminlengthInfo;
+            RepoItemInfo _projectnameminlengthInfo;
             RepoItemInfo _sponsorminlengthInfo;
             RepoItemInfo _editbuttonInfo;
 
@@ -1820,22 +1819,21 @@ namespace PrecisionRecruitment
             public AddStudyPageFolder(RepoGenBaseFolder parentFolder) :
                     base("AddStudyPage", "", parentFolder, 0, null, false, "288be980-5cd1-4c92-abf3-0f56ae63b85d", "")
             {
-                _studynamefieldInfo = new RepoItemInfo(this, "StudyNameField", ".//input[@id~'formly_[0-9]+_input_en_US_0']", 30000, null, "77f08aae-eea7-49f1-9340-f46bd1f5e907");
-                _protocolidfieldInfo = new RepoItemInfo(this, "ProtocolIDField", ".//input[@id~'formly_[0-9]+_input_protocolName_1']", 30000, null, "aa5d9430-984b-4218-b244-d381e673dfb9");
-                _codenamefieldInfo = new RepoItemInfo(this, "CodeNameField", ".//input[@id~'formly_[0-9]+_input_codeName_2']", 30000, null, "6398da63-0507-4ea4-abdf-32b1d057dbf0");
-                _sponsorfieldInfo = new RepoItemInfo(this, "SponsorField", ".//input[@id~'formly_[0-9]+_input_sponsor_3']", 30000, null, "c9c41c2f-6501-40c6-b19f-28c1025db06b");
+                _protocolnumberfieldInfo = new RepoItemInfo(this, "ProtocolNumberField", ".//input[@id~'formly_[0-9]+_input_protocolName_[0-9]']", 30000, null, "aa5d9430-984b-4218-b244-d381e673dfb9");
+                _projectnamefieldInfo = new RepoItemInfo(this, "ProjectNameField", ".//input[@id~'formly_[0-9]+_input_codeName_[[0-9]']", 30000, null, "6398da63-0507-4ea4-abdf-32b1d057dbf0");
+                _sponsorfieldInfo = new RepoItemInfo(this, "SponsorField", ".//input[@id~'formly_[0-9]+_input_sponsor_[0-9]']", 30000, null, "c9c41c2f-6501-40c6-b19f-28c1025db06b");
                 _activedropdownInfo = new RepoItemInfo(this, "ActiveDropdown", ".//select[@id~'formly_[0-9]+_select_active_4']", 30000, null, "64e12774-cd2d-4a08-b52d-b256ae38653e");
                 _statusdropdownInfo = new RepoItemInfo(this, "StatusDropdown", ".//select[@id~'formly_[0-9]+_select_studyStatus_5']", 30000, null, "e6845687-f027-4f74-8652-94d7339341ec");
                 _precisionrecreuitmentcheckboxInfo = new RepoItemInfo(this, "PrecisionRecreuitmentCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_hasPRS_6']", 30000, null, "7d2a40ee-856f-449f-aae9-cccd0743339f");
                 _studynamerequiredInfo = new RepoItemInfo(this, "StudyNameRequired", ".//div[@innertext~'Study Name is required']", 30000, null, "299b9d94-6d46-4865-9c97-f0da0ef2809f");
-                _protocolidrequiredInfo = new RepoItemInfo(this, "ProtocolIDRequired", ".//div[@innertext~'Protocol ID is required']", 30000, null, "6009439a-ba18-4b70-b7d4-55d6005c4ea5");
-                _codenamerequiredInfo = new RepoItemInfo(this, "CodeNameRequired", ".//div[@innertext~'Code Name is required']", 30000, null, "e0933e89-9563-4e63-88ba-7ea268de2010");
+                _protocolnumberrequiredInfo = new RepoItemInfo(this, "ProtocolNumberRequired", ".//div[@innertext~'Protocol Number is required']", 30000, null, "6009439a-ba18-4b70-b7d4-55d6005c4ea5");
+                _projectnamerequiredInfo = new RepoItemInfo(this, "ProjectNameRequired", ".//div[@innertext~'Project Name is required']", 30000, null, "e0933e89-9563-4e63-88ba-7ea268de2010");
                 _sponsorrequiredInfo = new RepoItemInfo(this, "SponsorRequired", ".//div[@innertext~'Sponsor is required']", 30000, null, "39090068-0795-430a-bdc1-bb3f08c0d5d6");
                 _activerequiredInfo = new RepoItemInfo(this, "ActiveRequired", ".//div[@innertext~'Active is required']", 30000, null, "804cedd1-4679-441c-8088-7e0261855084");
                 _statusrequiredInfo = new RepoItemInfo(this, "StatusRequired", ".//div[@innertext~'Status is required']", 30000, null, "290edd0f-b7ab-468e-a532-ddceea2dd4b5");
                 _studynameminlengthInfo = new RepoItemInfo(this, "StudyNameMinLength", ".//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']", 30000, null, "fd2649c6-acf8-46a7-8b32-3eb4324a020c");
-                _protocolidminlengthInfo = new RepoItemInfo(this, "ProtocolIDMinLength", ".//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']", 30000, null, "67dc8803-2a9e-4a78-b794-68a991592f8a");
-                _codenameminlengthInfo = new RepoItemInfo(this, "CodeNameMinLength", ".//tag[@tagname='ng-form']/div[3]//div[@innertext~'The minimum length']", 30000, null, "e183910c-bb41-4ca5-b698-1fe067d25c47");
+                _protocolnumberminlengthInfo = new RepoItemInfo(this, "ProtocolNumberMinLength", ".//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']", 30000, null, "67dc8803-2a9e-4a78-b794-68a991592f8a");
+                _projectnameminlengthInfo = new RepoItemInfo(this, "ProjectNameMinLength", ".//tag[@tagname='ng-form']/div[3]//div[@innertext~'The minimum length']", 30000, null, "e183910c-bb41-4ca5-b698-1fe067d25c47");
                 _sponsorminlengthInfo = new RepoItemInfo(this, "SponsorMinLength", ".//tag[@tagname='ng-form']/div[4]//div[@innertext~'The minimum length']", 30000, null, "258b99b4-9da0-4784-8c06-9391aae493cb");
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//div[#'ng-app']/tag/div/div[3]/tag/div/?/?/i[@innertext='mode_edit']", 30000, null, "3b5d9f92-75e0-4c4f-977c-ce291a18cf0f");
             }
@@ -1853,74 +1851,50 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
-            /// The StudyNameField item.
-            /// </summary>
-            [RepositoryItem("77f08aae-eea7-49f1-9340-f46bd1f5e907")]
-            public virtual Ranorex.InputTag StudyNameField
-            {
-                get
-                {
-                    return _studynamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StudyNameField item info.
-            /// </summary>
-            [RepositoryItemInfo("77f08aae-eea7-49f1-9340-f46bd1f5e907")]
-            public virtual RepoItemInfo StudyNameFieldInfo
-            {
-                get
-                {
-                    return _studynamefieldInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ProtocolIDField item.
+            /// The ProtocolNumberField item.
             /// </summary>
             [RepositoryItem("aa5d9430-984b-4218-b244-d381e673dfb9")]
-            public virtual Ranorex.InputTag ProtocolIDField
+            public virtual Ranorex.InputTag ProtocolNumberField
             {
                 get
                 {
-                    return _protocolidfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _protocolnumberfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ProtocolIDField item info.
+            /// The ProtocolNumberField item info.
             /// </summary>
             [RepositoryItemInfo("aa5d9430-984b-4218-b244-d381e673dfb9")]
-            public virtual RepoItemInfo ProtocolIDFieldInfo
+            public virtual RepoItemInfo ProtocolNumberFieldInfo
             {
                 get
                 {
-                    return _protocolidfieldInfo;
+                    return _protocolnumberfieldInfo;
                 }
             }
 
             /// <summary>
-            /// The CodeNameField item.
+            /// The ProjectNameField item.
             /// </summary>
             [RepositoryItem("6398da63-0507-4ea4-abdf-32b1d057dbf0")]
-            public virtual Ranorex.InputTag CodeNameField
+            public virtual Ranorex.InputTag ProjectNameField
             {
                 get
                 {
-                    return _codenamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _projectnamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CodeNameField item info.
+            /// The ProjectNameField item info.
             /// </summary>
             [RepositoryItemInfo("6398da63-0507-4ea4-abdf-32b1d057dbf0")]
-            public virtual RepoItemInfo CodeNameFieldInfo
+            public virtual RepoItemInfo ProjectNameFieldInfo
             {
                 get
                 {
-                    return _codenamefieldInfo;
+                    return _projectnamefieldInfo;
                 }
             }
 
@@ -2045,50 +2019,50 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
-            /// The ProtocolIDRequired item.
+            /// The ProtocolNumberRequired item.
             /// </summary>
             [RepositoryItem("6009439a-ba18-4b70-b7d4-55d6005c4ea5")]
-            public virtual Ranorex.DivTag ProtocolIDRequired
+            public virtual Ranorex.DivTag ProtocolNumberRequired
             {
                 get
                 {
-                    return _protocolidrequiredInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _protocolnumberrequiredInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ProtocolIDRequired item info.
+            /// The ProtocolNumberRequired item info.
             /// </summary>
             [RepositoryItemInfo("6009439a-ba18-4b70-b7d4-55d6005c4ea5")]
-            public virtual RepoItemInfo ProtocolIDRequiredInfo
+            public virtual RepoItemInfo ProtocolNumberRequiredInfo
             {
                 get
                 {
-                    return _protocolidrequiredInfo;
+                    return _protocolnumberrequiredInfo;
                 }
             }
 
             /// <summary>
-            /// The CodeNameRequired item.
+            /// The ProjectNameRequired item.
             /// </summary>
             [RepositoryItem("e0933e89-9563-4e63-88ba-7ea268de2010")]
-            public virtual Ranorex.DivTag CodeNameRequired
+            public virtual Ranorex.DivTag ProjectNameRequired
             {
                 get
                 {
-                    return _codenamerequiredInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _projectnamerequiredInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CodeNameRequired item info.
+            /// The ProjectNameRequired item info.
             /// </summary>
             [RepositoryItemInfo("e0933e89-9563-4e63-88ba-7ea268de2010")]
-            public virtual RepoItemInfo CodeNameRequiredInfo
+            public virtual RepoItemInfo ProjectNameRequiredInfo
             {
                 get
                 {
-                    return _codenamerequiredInfo;
+                    return _projectnamerequiredInfo;
                 }
             }
 
@@ -2189,50 +2163,50 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
-            /// The ProtocolIDMinLength item.
+            /// The ProtocolNumberMinLength item.
             /// </summary>
             [RepositoryItem("67dc8803-2a9e-4a78-b794-68a991592f8a")]
-            public virtual Ranorex.DivTag ProtocolIDMinLength
+            public virtual Ranorex.DivTag ProtocolNumberMinLength
             {
                 get
                 {
-                    return _protocolidminlengthInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _protocolnumberminlengthInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ProtocolIDMinLength item info.
+            /// The ProtocolNumberMinLength item info.
             /// </summary>
             [RepositoryItemInfo("67dc8803-2a9e-4a78-b794-68a991592f8a")]
-            public virtual RepoItemInfo ProtocolIDMinLengthInfo
+            public virtual RepoItemInfo ProtocolNumberMinLengthInfo
             {
                 get
                 {
-                    return _protocolidminlengthInfo;
+                    return _protocolnumberminlengthInfo;
                 }
             }
 
             /// <summary>
-            /// The CodeNameMinLength item.
+            /// The ProjectNameMinLength item.
             /// </summary>
             [RepositoryItem("e183910c-bb41-4ca5-b698-1fe067d25c47")]
-            public virtual Ranorex.DivTag CodeNameMinLength
+            public virtual Ranorex.DivTag ProjectNameMinLength
             {
                 get
                 {
-                    return _codenameminlengthInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _projectnameminlengthInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CodeNameMinLength item info.
+            /// The ProjectNameMinLength item info.
             /// </summary>
             [RepositoryItemInfo("e183910c-bb41-4ca5-b698-1fe067d25c47")]
-            public virtual RepoItemInfo CodeNameMinLengthInfo
+            public virtual RepoItemInfo ProjectNameMinLengthInfo
             {
                 get
                 {
-                    return _codenameminlengthInfo;
+                    return _projectnameminlengthInfo;
                 }
             }
 
@@ -3114,7 +3088,7 @@ namespace PrecisionRecruitment
                 _batterydraftstatusInfo = new RepoItemInfo(this, "BatteryDraftStatus", "div[3]//tag[@tagname='cogstate-helper-battery-add']/div/div/div/div/form[@method='get']/tag[@tagname='ng-form']/div[4]/?/?/div/label[@innertext='    Population    *  ']", 30000, null, "c60cbf9d-8566-4d67-a751-6734920ff2ce");
                 _interactivedemooptionInfo = new RepoItemInfo(this, "InteractiveDemoOption", "div[3]//tag[@tagname='cogstate-helper-battery-add']/div/div/div/div/form[@method='get']/tag[@tagname='ng-form']/div[6]/?/?/div/label[@innertext='Generate workflow']", 30000, null, "d8fa9182-de7d-4284-8546-931e9c3fc5a1");
                 _batterynamebreadcrumbInfo = new RepoItemInfo(this, "BatteryNameBreadcrumb", "div[2]/div//span[@innertext>$BatteryName]", 30000, null, "aa383d1f-32f2-45a8-b2bd-8af31a40c22b");
-                _studycardInfo = new RepoItemInfo(this, "StudyCard", "div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext>$StudyName]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
+                _studycardInfo = new RepoItemInfo(this, "StudyCard", "div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext>$ProjectName]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
                 _workflownamebreadcrumbInfo = new RepoItemInfo(this, "WorkflowNameBreadcrumb", "div[2]/div//span[@innertext>$WorkflowName]", 30000, null, "280eeae4-8102-4c5e-bd8f-cb861cbf2f41");
                 _visitscheduledraftstatusInfo = new RepoItemInfo(this, "VisitScheduleDraftStatus", "div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-add']/div/div[1]/tag[@tagname='ng-form']/div[4]", 30000, null, "26fbb4ea-cce5-47e3-b060-d07e6ca7a46c");
                 _publishbuttonInfo = new RepoItemInfo(this, "PublishButton", "div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[1]/div/div[1]/div/?/div/i[@innertext='publish']", 30000, null, "ef1eb972-64d9-45df-b9f7-4acc1ca20200");

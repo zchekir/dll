@@ -42,7 +42,7 @@ namespace PrecisionRecruitment.APIModules
         public APIV2_Authenticate()
         {
             DOM = "";
-            ProtocolID = "Ranorex Protocol ID";
+            ProtocolNumber = "Ranorex Protocol Number";
             RandNum = "";
             Key = "d7a6d2bb-f854-460f-bf23-c009f9d91619";
             Secret = "28566e30-ffff-4f45-8ea5-e8c286df10fc";
@@ -58,16 +58,16 @@ namespace PrecisionRecruitment.APIModules
 
 #region Variables
 
-        string _ProtocolID;
+        string _ProtocolNumber;
 
         /// <summary>
-        /// Gets or sets the value of variable ProtocolID.
+        /// Gets or sets the value of variable ProtocolNumber.
         /// </summary>
         [TestVariable("3b244791-8adf-4420-ba52-5c63812fac17")]
-        public string ProtocolID
+        public string ProtocolNumber
         {
-            get { return _ProtocolID; }
-            set { _ProtocolID = value; }
+            get { return _ProtocolNumber; }
+            set { _ProtocolNumber = value; }
         }
 
         string _Secret;
@@ -138,7 +138,7 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.Authenticate(RandNum, DOM, ProtocolID, Key, Secret);
+            engine.Helpers.WebService.Authenticate(RandNum, DOM, ProtocolNumber, Key, Secret);
             Delay.Milliseconds(0);
             
         }

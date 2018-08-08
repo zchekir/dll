@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4fa2c363-f94f-48fb-b9b9-ec356a38c5c1"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Select_CheckOutcomesMeasured_Step
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_CheckOutcomesMeasured_Step"
+	namespace="PrecisionRecruitment.AddWorkflowPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1bf66d7c-2dfa-4dc1-b7fd-6819ee209e90"
+		sx="-197"
+		sy="-721"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="16010372-3fcf-4d5d-bef7-3febafc6bd4c"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[2]/?/?/div/ul/li[4]/div//tag[@tagname='cogstate-helper-workflow-reorder-card']/div/div/h4[@innertext~'^Check\ Outcomes\ are\ measur']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_CheckOutcomesMeasured_Step.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
 name="PrecisionRecruitmentRepository"
 rxversion="8.2">
@@ -390,29 +389,20 @@ rxversion="8.2">
 				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
-				id="77f08aae-eea7-49f1-9340-f46bd1f5e907"
-				name="StudyNameField"
-				refimgid="7607fe0c-3c04-4ea0-8706-a2e8eaa5fed8"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_en_US_0']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
 				id="aa5d9430-984b-4218-b244-d381e673dfb9"
-				name="ProtocolIDField"
+				name="ProtocolNumberField"
 				refimgid="30f0327d-5cfa-4d46-a068-4db71ac6bf7b"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_protocolName_1']
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_protocolName_[0-9]']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="6398da63-0507-4ea4-abdf-32b1d057dbf0"
-				name="CodeNameField"
+				name="ProjectNameField"
 				refimgid="52b97af8-b288-4f0f-96fd-f16e38e43367"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_codeName_2']
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_codeName_[[0-9]']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -421,7 +411,7 @@ rxversion="8.2">
 				name="SponsorField"
 				refimgid="556ba0cb-36ca-4ed1-9e16-26756348d951"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_sponsor_3']
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_sponsor_[0-9]']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -463,19 +453,19 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="6009439a-ba18-4b70-b7d4-55d6005c4ea5"
-				name="ProtocolIDRequired"
+				name="ProtocolNumberRequired"
 				refimgid="a618db51-dccd-4c18-95bf-a57dbaf24786"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[@innertext~'Protocol ID is required']
+					/dom[@domain=$DOM]//div[@innertext~'Protocol Number is required']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="e0933e89-9563-4e63-88ba-7ea268de2010"
-				name="CodeNameRequired"
+				name="ProjectNameRequired"
 				refimgid="cd296a08-8f4a-4595-ad3e-93e045040157"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[@innertext~'Code Name is required']
+					/dom[@domain=$DOM]//div[@innertext~'Project Name is required']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -517,7 +507,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="67dc8803-2a9e-4a78-b794-68a991592f8a"
-				name="ProtocolIDMinLength"
+				name="ProtocolNumberMinLength"
 				refimgid="736792a3-5d72-4aa0-a9de-13114f28f541"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']
@@ -526,7 +516,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="e183910c-bb41-4ca5-b698-1fe067d25c47"
-				name="CodeNameMinLength"
+				name="ProjectNameMinLength"
 				refimgid="160c5683-9ba6-4de0-834d-6e5d081dccff"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[3]//div[@innertext~'The minimum length']
@@ -899,7 +889,7 @@ rxversion="8.2">
 				name="StudyCard"
 				refimgid="42afd47e-7398-4146-84b4-e244a89f3f24"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext&gt;$StudyName]
+					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext&gt;$ProjectName]
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -1248,7 +1238,7 @@ rxversion="8.2">
 			name="StudyNameBreadcrumb"
 			refimgid="3b4fbcef-8a26-4055-9688-138fb850fdac"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[2]//span[@innertext&gt;$StudyName]
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[2]//span[@innertext&gt;$ProjectName]
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -1390,8 +1380,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</var>
 		<var
 		id="c79bec5d-144b-4142-be36-50ddfe893386"
-		name="StudyName">
-			Ranorex
+		name="ProjectName">
+			ProjectName
 		</var>
 		<var
 		id="4c28e6aa-3724-451e-af92-558f136cc8f6"

@@ -19,7 +19,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="0059b2d8-dc2e-47e4-ab46-ab5db0561b0b"
-			name="Click_CodeName_Field"
+			name="Click_ProjectName_Field"
 			ref="f0dc6e67-7eab-4374-a047-e6accd2e2d6b"
 			type="Recording">
 				<databinding>
@@ -56,20 +56,6 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
 					variablename="URL">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="022174fa-4fa5-4e82-a1d8-3def0e32a02d"
-			name="Click_Status_Dropdown"
-			ref="b5287e35-9389-474e-9660-6de651c08ddd"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -117,28 +103,22 @@ rxversion="8.2">
 					variablename="SponsorName">
 					</var>
 					<var
-					dataname="CodeName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="d1c9e0b2-afe9-4755-9c67-c64865da9951"
-					variablename="CodeName">
-					</var>
-					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="30a9378e-d2ce-46a0-b9af-bd367e49e35f"
-					variablename="StudyName">
-					</var>
-					<var
-					dataname="ProtocolID"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="7619fa9d-e096-4683-a7c1-a13dd47bfa9c"
-					variablename="ProtocolID">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="72a22e39-644c-4937-8c49-653cecac716b"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="7619fa9d-e096-4683-a7c1-a13dd47bfa9c"
+					variablename="ProtocolNumber">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="d1c9e0b2-afe9-4755-9c67-c64865da9951"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -165,10 +145,10 @@ rxversion="8.2">
 					variablename="RandNum">
 					</var>
 					<var
-					dataname="StudyName"
+					dataname="ProjectName"
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -191,10 +171,10 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="StudyName"
+					dataname="ProjectName"
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -225,12 +205,6 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="ProtocolID"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="5f0211ea-1362-42e8-901b-6ec4e36f57d1"
-					variablename="ProtocolID">
-					</var>
-					<var
 					dataname="VisitSessionCode"
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
 					variableid="a84760e4-9334-4e65-9802-55c4b29148f5"
@@ -241,6 +215,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="3e8cc784-9b0c-4dc8-82ad-e823e9823c2f"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="5f0211ea-1362-42e8-901b-6ec4e36f57d1"
+					variablename="ProtocolNumber">
 					</var>
 				</databinding>
 			</testmodule>
@@ -398,12 +378,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
@@ -414,6 +388,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -467,7 +447,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="1a375575-32b4-42a2-b034-31bf3c87d69c"
-			name="Click_ProtocolID_Field"
+			name="Click_ProtocolNumber_Field"
 			ref="5da6d170-6fe8-43f8-b119-8a68a824476d"
 			type="Recording">
 				<databinding>
@@ -609,20 +589,6 @@ rxversion="8.2">
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="0fc8ae48-6ea4-4dbf-bceb-ba6c22f63601"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="1e5b3475-30c0-4b26-9176-0cc0204b96a1"
-			name="_Capture_Screenshot"
-			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
 					</var>
 				</databinding>
@@ -867,20 +833,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="2a2baff5-d586-4527-89eb-4dc43cd4fc5c"
-			name="_Capture_Screenshot"
-			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="2a418805-37d2-4eaf-a921-ec09ac0b8719"
 			name="Click_BatteryStatus_Dropdown"
 			ref="8cdc6321-8bc1-42e2-974c-83724e388aeb"
@@ -898,20 +850,6 @@ rxversion="8.2">
 			id="2a42a74e-d5be-4ac1-82ce-55f5c9004f96"
 			name="setup">
 			</setup>
-			<testmodule
-			id="2ae0e59a-a183-4f0d-b4b4-040d13b6cb5c"
-			name="Click_Active_Dropdown"
-			ref="37d8c755-140b-4ff9-9324-2e3242f43c98"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="2bb8785b-efbb-4bd0-a81f-6a88dae288db"
 			name="Enter_Password"
@@ -975,12 +913,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
@@ -991,6 +923,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1153,20 +1091,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="3c812f2e-c589-4431-a9fd-e56560542779"
-			name="Click_StudyName_Field"
-			ref="6097831b-a35a-4a65-a97a-eb58013bb906"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="3c82d245-560b-4da3-9c04-b4bfb162e72b"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -1269,20 +1193,6 @@ rxversion="8.2">
 			id="4aba48f0-f064-44e3-ab88-9bb8ac3401d8"
 			name="teardown">
 			</teardown>
-			<testmodule
-			id="4beb3f45-53e5-4ec1-bd97-8aaa1318319c"
-			name="_Capture_Screenshot"
-			ref="c678d990-6adb-49d9-90aa-950fe6d72db6"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="4c988e39-6edd-467a-844a-71905e6c7c5a"
 			name="Click_Edit_Battery"
@@ -1417,6 +1327,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1566,12 +1482,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
@@ -1583,19 +1493,11 @@ rxversion="8.2">
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
 					variablename="RandNum">
 					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="6142cc84-1c52-4b8a-a834-09175800ea5a"
-			name="Enter_Active"
-			ref="4e440ea2-06e8-483c-b4c4-03809d9e8c6d"
-			type="Recording">
-				<databinding>
 					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1643,10 +1545,10 @@ rxversion="8.2">
 					variablename="RandNum">
 					</var>
 					<var
-					dataname="CodeName"
+					dataname="ProjectName"
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
 					variableid="49cfa874-725e-4141-b715-d2c17ac6eae8"
-					variablename="CodeName">
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1689,10 +1591,10 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="StudyName"
+					dataname="ProjectName"
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1840,6 +1742,12 @@ rxversion="8.2">
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -1904,6 +1812,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1976,10 +1890,10 @@ rxversion="8.2">
 					variablename="RandNum">
 					</var>
 					<var
-					dataname="ProtocolID"
+					dataname="ProtocolNumber"
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
 					variableid="6017c17a-abf9-48f7-926e-a1d1d8419954"
-					variablename="ProtocolID">
+					variablename="ProtocolNumber">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2012,12 +1926,6 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="ProtocolID"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
-					variablename="ProtocolID">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
@@ -2034,6 +1942,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="35d6bff4-468a-4307-8386-b46e7e547dc9"
 					variablename="Key">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
+					variablename="ProtocolNumber">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2062,12 +1976,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
@@ -2078,6 +1986,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2176,32 +2090,6 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="89234638-1893-4ac2-9d33-c0ee03072335"
-			name="Enter_StudyName"
-			ref="113509eb-adad-4fbc-93c2-89c616f14658"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="4f0690a7-8f4c-4e32-8799-bfb2af13c3f8"
-					variablename="StudyName">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3cb3e452-0823-4494-a4c8-0607c578466c"
-					variablename="RandNum">
-					</var>
-				</databinding>
-			</testmodule>
 			<setup
 			id="89302a4e-9ad3-4be3-a744-1550cb0cf9ac"
 			name="setup">
@@ -2281,12 +2169,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
@@ -2297,6 +2179,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2779,12 +2667,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="StudyName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
@@ -2795,6 +2677,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3059,7 +2947,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="d5a2ed2e-409e-4c77-8ca7-606b66ebb7db"
-			name="Enter_ProtocolID"
+			name="Enter_ProtocolNumber"
 			ref="1e9af83f-3d93-4310-9092-e79dbbc2daa5"
 			type="Recording">
 				<databinding>
@@ -3070,16 +2958,16 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="ProtocolID"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="8b9b0c96-a982-4583-bb77-e3c13ed6136e"
-					variablename="ProtocolID">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="c068b996-7ba9-46f8-835a-c4d786f724f8"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="8b9b0c96-a982-4583-bb77-e3c13ed6136e"
+					variablename="ProtocolNumber">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3334,7 +3222,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="e7f224a1-c08d-414a-9e28-99359e868c3d"
-			name="Enter_CodeName"
+			name="Enter_ProjectName"
 			ref="f11d6950-68eb-49ec-9e53-ee6bc685e01a"
 			type="Recording">
 				<databinding>
@@ -3345,16 +3233,16 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="CodeName"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="1ae576cd-09d9-424f-88b1-149c960718a7"
-					variablename="CodeName">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="bf9adf4b-1f89-4efb-8203-14523f053a18"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="1ae576cd-09d9-424f-88b1-149c960718a7"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3377,10 +3265,10 @@ rxversion="8.2">
 					variablename="RandNum">
 					</var>
 					<var
-					dataname="StudyName"
+					dataname="ProjectName"
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="553e355a-3de3-4941-95ce-d6902f51f04c"
-					variablename="Studyname">
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3661,20 +3549,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="fca27f25-a634-4745-bbb8-c25c05aac3de"
-			name="Enter_Status"
-			ref="986aee53-8d41-4327-b1d1-8e117fc5f24a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="fe664d72-b141-4452-8037-49a8b68aca6e"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -3847,24 +3721,12 @@ rxversion="8.2">
 							name="Click_Add_Study">
 							</testmodule>
 							<testmodule
-							id="3c812f2e-c589-4431-a9fd-e56560542779"
-							name="Click_StudyName_Field">
-							</testmodule>
-							<testmodule
 							id="1a375575-32b4-42a2-b034-31bf3c87d69c"
-							name="Click_ProtocolID_Field">
+							name="Click_ProtocolNumber_Field">
 							</testmodule>
 							<testmodule
 							id="0059b2d8-dc2e-47e4-ab46-ab5db0561b0b"
-							name="Click_CodeName_Field">
-							</testmodule>
-							<testmodule
-							id="022174fa-4fa5-4e82-a1d8-3def0e32a02d"
-							name="Click_Status_Dropdown">
-							</testmodule>
-							<testmodule
-							id="2ae0e59a-a183-4f0d-b4b4-040d13b6cb5c"
-							name="Click_Active_Dropdown">
+							name="Click_ProjectName_Field">
 							</testmodule>
 							<testmodule
 							id="a21e0063-690b-4cda-b467-13ce8dc4faee"
@@ -3907,28 +3769,16 @@ rxversion="8.2">
 							name="Click_Add_Study">
 							</testmodule>
 							<testmodule
-							id="89234638-1893-4ac2-9d33-c0ee03072335"
-							name="Enter_StudyName">
-							</testmodule>
-							<testmodule
 							id="d5a2ed2e-409e-4c77-8ca7-606b66ebb7db"
-							name="Enter_ProtocolID">
+							name="Enter_ProtocolNumber">
 							</testmodule>
 							<testmodule
 							id="e7f224a1-c08d-414a-9e28-99359e868c3d"
-							name="Enter_CodeName">
+							name="Enter_ProjectName">
 							</testmodule>
 							<testmodule
 							id="c4ab58e4-050a-4ffc-a3f5-ff3da4f7db72"
 							name="Enter_SponsorName">
-							</testmodule>
-							<testmodule
-							id="6142cc84-1c52-4b8a-a834-09175800ea5a"
-							name="Enter_Active">
-							</testmodule>
-							<testmodule
-							id="fca27f25-a634-4745-bbb8-c25c05aac3de"
-							name="Enter_Status">
 							</testmodule>
 							<modulegroup
 							id="e07a9b12-49ca-4dff-b6f2-f98c72c384f1"
@@ -4077,10 +3927,6 @@ rxversion="8.2">
 							<testmodule
 							id="9b7bfcb1-1165-44c4-b113-8792b1eaab26"
 							name="Validate_Min_BatteryDescription">
-							</testmodule>
-							<testmodule
-							id="4beb3f45-53e5-4ec1-bd97-8aaa1318319c"
-							name="_Capture_Screenshot">
 							</testmodule>
 							<teardown
 							id="f74ffd9b-3582-4736-bde8-bde011eae21d"
@@ -4238,10 +4084,6 @@ rxversion="8.2">
 							id="f6e964b7-daa5-4f4d-9f71-6868b2d952ea"
 							name="Validate_Min_WorkflowDescription">
 							</testmodule>
-							<testmodule
-							id="2a2baff5-d586-4527-89eb-4dc43cd4fc5c"
-							name="_Capture_Screenshot">
-							</testmodule>
 							<teardown
 							id="6ccbc6b0-6f27-410b-952f-439bf31e09c9"
 							name="teardown">
@@ -4377,10 +4219,6 @@ rxversion="8.2">
 							<testmodule
 							id="8c5fa93c-a7c5-497e-9d3c-f5c8fb65f6e0"
 							name="Validate_Min_VisitScheduleName">
-							</testmodule>
-							<testmodule
-							id="1e5b3475-30c0-4b26-9176-0cc0204b96a1"
-							name="_Capture_Screenshot">
 							</testmodule>
 							<teardown
 							id="a10ed8bc-f892-42e0-86f3-ed930b680d37"
@@ -4757,10 +4595,10 @@ rxversion="8.2">
 					StudyName
 				</column>
 				<column>
-					ProtocolID
+					ProtocolNumber
 				</column>
 				<column>
-					CodeName
+					ProjectName
 				</column>
 				<column>
 					SponsorName

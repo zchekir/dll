@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7945fb41-5622-48e6-9b34-277d9c8d0990"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Click_BatteryTemplate_Dropdown
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_BatteryTemplate_Dropdown"
+	namespace="PrecisionRecruitment.AddBatteryPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="ede11950-8e77-4173-921b-4a1e514ed8b3"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="49d3bc58-ddc4-47e9-9a3a-239f487d39aa"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_4']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_BatteryTemplate_Dropdown.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

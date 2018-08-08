@@ -44,7 +44,7 @@ namespace PrecisionRecruitment.APIModules
             DOM = "";
             RandNum = "";
             VisitSessionCode = "RanVisitCode";
-            ProtocolID = "Ranorex Protocol ID";
+            ProtocolNumber = "Ranorex Protocol Number";
         }
 
         /// <summary>
@@ -69,16 +69,16 @@ namespace PrecisionRecruitment.APIModules
             set { _VisitSessionCode = value; }
         }
 
-        string _ProtocolID;
+        string _ProtocolNumber;
 
         /// <summary>
-        /// Gets or sets the value of variable ProtocolID.
+        /// Gets or sets the value of variable ProtocolNumber.
         /// </summary>
         [TestVariable("5f0211ea-1362-42e8-901b-6ec4e36f57d1")]
-        public string ProtocolID
+        public string ProtocolNumber
         {
-            get { return _ProtocolID; }
-            set { _ProtocolID = value; }
+            get { return _ProtocolNumber; }
+            set { _ProtocolNumber = value; }
         }
 
         /// <summary>
@@ -127,7 +127,7 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, RandNum, "1978-01-01", "M", "en-us", "Error", "Success", VisitSessionCode, ProtocolID);
+            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, RandNum, "1978-01-01", "M", "en-us", "Error", "Success", VisitSessionCode, ProtocolNumber);
             Delay.Milliseconds(0);
             
         }

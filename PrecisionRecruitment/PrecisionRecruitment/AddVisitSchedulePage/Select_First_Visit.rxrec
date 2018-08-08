@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8f5dbbf6-ea58-4c62-9550-7b304a4984fb"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Select_First_Visit
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_First_Visit"
+	namespace="PrecisionRecruitment.AddVisitSchedulePage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="b8b014bb-cf50-4fa7-a8a0-b4c5f0c4f0e7"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d4d528a-8639-493c-866c-405f383143ae"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[2]/ul//tag[@tagname='cogstate-generic-visit-schedule-designer-list']/div/div/div/div[1]
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_First_Visit.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

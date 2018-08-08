@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="702570ca-23d6-40c2-8455-86a1f42e9870"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Select_Workflow
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Workflow"
+	namespace="PrecisionRecruitment.WorkflowsPage">
+	</codegen>
+	<variables>
+		<var
+		id="482e915d-6fd1-48cc-a4dd-8c5f1fd9aa65"
+		name="WorkflowName">
+		</var>
+		<var
+		id="3d3b911e-6d5b-45de-9b57-b7519eb28a0a"
+		name="RandNum">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="deec699c-fd4c-4eea-97f9-05065bbcb30b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da63a96e-f369-4c8e-b990-162b989a20a6"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[4]/a[@innertext&gt;'Workflows']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="10ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="f7b57962-a821-45a7-a43d-28aa9828979a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="WorkflowName">
+				</binding>
+			</bindings>
+			<info
+			id="2620a1a8-aeed-40f8-924c-40808444d27b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[@id='ng-app']//input[@id='generic-search']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="10ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="6f8ecbdd-914e-4045-8d76-8e5fb5e7a8fe">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="2620a1a8-aeed-40f8-924c-40808444d27b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[@id='ng-app']//input[@id='generic-search']
+				</path>
+			</info>
+		</keysequenceitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Wait for list to load
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Continue with test
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="76;11"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="aab1e4cf-1fed-4e78-a3a0-999e420f64e5"
+		sx="-869"
+		sy="-591"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0e197902-4a4c-4a2e-a88d-6979fb3dd446"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, ptag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="ptag"
+				rect="-945,-602,164,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding title-nobreak
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Broken
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						p
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ng-bind"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[4]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/tag[1]/tag/div/div/div[1]/p[@innertext='Broken']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="bec59d88-58b6-4ee5-950b-13e42c6c03af">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Workflow.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

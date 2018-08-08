@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fa1de2c1-27ec-4204-8909-3ece44c420bc"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Validate_Min_WorkflowDescription
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Min_WorkflowDescription"
+	namespace="PrecisionRecruitment.AddWorkflowPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5b0eb904-a507-4f94-8a00-25867c61eb64">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="82b6da2e-317f-472f-ae02-e45783326eb2"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']
+				</path>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Min_WorkflowDescription.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
