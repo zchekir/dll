@@ -132,7 +132,11 @@ namespace PrecisionRecruitment.BatteriesPage
             // Continue with Test
             Report.Log(ReportLevel.Info, "Section", "Continue with Test", new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteriesViewMenu.BatteryCard' at 82;11.", repo.CogstateSolutionPlatform.BatteriesViewMenu.BatteryCardInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteriesViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.BatteriesViewMenu.CardButtonInfo, new RecordItemIndex(6));
+            repo.CogstateSolutionPlatform.BatteriesViewMenu.CardButton.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteriesViewMenu.BatteryCard' at 82;11.", repo.CogstateSolutionPlatform.BatteriesViewMenu.BatteryCardInfo, new RecordItemIndex(7));
             repo.CogstateSolutionPlatform.BatteriesViewMenu.BatteryCard.Click("82;11");
             Delay.Milliseconds(0);
             

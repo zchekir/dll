@@ -42,7 +42,7 @@ namespace PrecisionRecruitment.StudiesPage
         public Select_Study()
         {
             RandNum = "";
-            ProjectName = "ProjectName";
+            ProjectName = "Ranorex Project Name";
         }
 
         /// <summary>

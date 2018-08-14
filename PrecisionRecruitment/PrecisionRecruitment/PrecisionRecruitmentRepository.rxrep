@@ -128,6 +128,42 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-battery-display-reorder']/div/div[1]/div/div[2]/i[@innertext='mode_edit']
 				</item>
+				<item
+				addcaps="unknown,webelement,optiontag"
+				capname="optiontag"
+				id="15d7475f-65ad-4ec8-92e5-63fa636bf7df"
+				name="BatteryPopulationOption"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_indication_3']/option[@innertext=$Population]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="2b7260a6-8b1d-4961-9108-0f3b23cb9290"
+				name="BatteryBlock"
+				refimgid="aeaabb6b-3f24-4bc1-9f0d-a1f846a73ed3"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag/tag/div/div[2]/div[1]/tag[@tagname='cogstate-generic-list-reorder']/div/ul/li[1]/div"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-battery-display-reorder']/div/div[2]/div[1]//ul/li[1]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="a663e077-b054-4cf5-a000-99a176bc9130"
+				name="CogstateTestDropdown"
+				refimgid="943d82f3-755e-4504-b5bc-bb2407029fa7"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_type_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="e0c09b12-b293-4227-ac63-94eecf66affb"
+				name="CogstateTestOption"
+				refimgid="c7cd2136-d72e-4a32-82fa-ae8e48cb46fa"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_type_1']/option[@innertext=$BatteryBlock]
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -379,6 +415,15 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[1]/div/div[2]/i[@innertext='mode_edit']
 				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="c7164b4f-8710-4a29-b4a6-b86614c39e1b"
+				name="WorkflowTemplateOption"
+				refimgid="d5bf0ddb-ec18-4371-91be-ea0aa17c283f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_workflowTemplate_4']/option[@label=$WorkflowTemplate]
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -414,42 +459,6 @@ rxversion="8.2">
 					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_sponsor_[0-9]']
 				</item>
 				<item
-				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
-				id="64e12774-cd2d-4a08-b52d-b256ae38653e"
-				name="ActiveDropdown"
-				refimgid="33b7a954-f7fe-4553-b91e-c27041adb48f"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_active_4']
-				</item>
-				<item
-				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
-				id="e6845687-f027-4f74-8652-94d7339341ec"
-				name="StatusDropdown"
-				refimgid="8b6ee094-9e13-4400-bd8a-4f02537468b6"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_studyStatus_5']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="7d2a40ee-856f-449f-aae9-cccd0743339f"
-				name="PrecisionRecreuitmentCheckbox"
-				refimgid="28365ab7-928b-4460-a584-3c437b05ae09"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_checkbox_hasPRS_6']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="299b9d94-6d46-4865-9c97-f0da0ef2809f"
-				name="StudyNameRequired"
-				refimgid="da0ac4c9-96e3-4e71-a17c-fef6eac3e444"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[@innertext~'Study Name is required']
-				</item>
-				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="6009439a-ba18-4b70-b7d4-55d6005c4ea5"
@@ -479,15 +488,6 @@ rxversion="8.2">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="804cedd1-4679-441c-8088-7e0261855084"
-				name="ActiveRequired"
-				refimgid="ed2bd6de-6eee-44ab-8339-c9f2cbbb943a"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[@innertext~'Active is required']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
 				id="290edd0f-b7ab-468e-a532-ddceea2dd4b5"
 				name="StatusRequired"
 				refimgid="ecd465ee-efe6-4fa0-a86d-e41c8318b24d"
@@ -497,20 +497,11 @@ rxversion="8.2">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="fd2649c6-acf8-46a7-8b32-3eb4324a020c"
-				name="StudyNameMinLength"
-				refimgid="dcda69d8-ff23-4937-b144-9dd601a01e45"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
 				id="67dc8803-2a9e-4a78-b794-68a991592f8a"
 				name="ProtocolNumberMinLength"
 				refimgid="736792a3-5d72-4aa0-a9de-13114f28f541"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']
+					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -519,7 +510,7 @@ rxversion="8.2">
 				name="ProjectNameMinLength"
 				refimgid="160c5683-9ba6-4de0-834d-6e5d081dccff"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[3]//div[@innertext~'The minimum length']
+					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -528,7 +519,7 @@ rxversion="8.2">
 				name="SponsorMinLength"
 				refimgid="a281a7bf-5ef1-494f-a0d9-534fadbc4bab"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[4]//div[@innertext~'The minimum length']
+					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[3]//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -777,24 +768,6 @@ rxversion="8.2">
 				<item
 				addcaps="unknown,webelement,imgtag"
 				capname="imgtag"
-				id="1a5053ce-2cf8-4e6e-a384-7dd69892b906"
-				name="CardView"
-				refimgid="a2bb47af-f888-4acb-b780-57052350c4cc"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="273898c6-7986-4626-a1d4-ec9d9e60c4d6"
-				name="ListView"
-				refimgid="350f12f5-f119-44a4-b1a0-f3b09e1bc5f7"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
 				id="7f11b945-19d9-48ed-b66a-0f596b8736e7"
 				name="AddButton"
 				refimgid="9a1fecda-f0b0-469c-9641-b62429ebb875"
@@ -809,6 +782,15 @@ rxversion="8.2">
 				refimgid="5f48712b-51da-4c03-aae1-3f2c39751ccc"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-list-cards']/div/tag[1]//div/div/div[1]/p[@innertext&gt;$BatteryName]
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="05c3e67d-f870-4341-84e2-8aa619cd0a81"
+				name="CardButton"
+				refimgid="21226a10-5197-4ba5-ac30-dc60cf48b985"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]
@@ -834,16 +816,6 @@ rxversion="8.2">
 					/dom[@domain=$DOM]/body/div/tag/div/div[4]/tag/div/div/div[2]/div[1]/?/?/label[@innertext='Studies']
 				</item>
 				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="a66947c0-414e-4fb9-ace5-2de7984d3eeb"
-				name="AwardedStatus"
-				refimgid="92eb2223-6d8c-40c0-8ff9-a2eef8c5b55d"
-				refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div/tag/div/div[3]/tag/div/div/form/tag[@tagname='ng-form']/div[9]"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/tag/div/?/?/form[@method='get']/tag[@tagname='ng-form']/div[9]
-				</item>
-				<item
 				addcaps="unknown,webelement,buttontag"
 				capname="button"
 				capnameuser="buttontag"
@@ -862,16 +834,6 @@ rxversion="8.2">
 				refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div/tag/div/div[3]/tag/tag/tag/div/div/div/div/form/tag[@tagname='ng-form']/div[4]/div/div/label[@innertext='    Population    *  ']"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]/body/div/tag/div/div[3]//tag[@tagname='cogstate-helper-battery-add']/div/div/div/div/form[@method='get']/tag[@tagname='ng-form']/div[4]/?/?/div/label[@innertext='    Population    *  ']
-				</item>
-				<item
-				addcaps="unknown,webelement,labeltag"
-				capname="labeltag"
-				id="d8fa9182-de7d-4284-8546-931e9c3fc5a1"
-				name="InteractiveDemoOption"
-				refimgid="3fc9361c-57b0-49f0-9305-4f7b18c2e4a2"
-				refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div/tag/div/div[3]/tag/tag/tag/div/div/div/div/form/tag[@tagname='ng-form']/div[6]/div/div/label[@innertext='Generate workflow']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]//tag[@tagname='cogstate-helper-battery-add']/div/div/div/div/form[@method='get']/tag[@tagname='ng-form']/div[6]/?/?/div/label[@innertext='Generate workflow']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -996,15 +958,6 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']
 				</item>
-				<item
-				addcaps="unknown,webelement,labeltag"
-				capname="labeltag"
-				id="01412b8d-a3e3-4db5-ac12-c0d93920afc4"
-				name="Card"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[2]/label[@innertext='Card']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[2]/label[@innertext='Card']
-				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
 				</basepath>
@@ -1035,6 +988,24 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@innertext=$Locality]
 				</item>
+				<item
+				addcaps="unknown,webelement,optiontag"
+				capname="optiontag"
+				id="3e4c4bc2-ea18-4542-939d-e066cf9d1138"
+				name="BlankLocality"
+				refimgid="6a7dbb14-525f-482e-b73b-a770f7d18588"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@value='-1000']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="0111342b-a4b5-45f1-9242-804432775727"
+				name="LocalitiesList"
+				refimgid="8f1b4a66-7d89-4675-b13a-4e2390469f87"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//select[@id~'formly_[0-9]+_multiselect_localities_0']
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
 				</basepath>
@@ -1063,15 +1034,6 @@ rxversion="8.2">
 				refimgid="3b783be5-565e-4234-aae0-2930880d7842"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="faf18e71-3e8c-4698-9145-193823f574d5"
-				name="ListButton"
-				refimgid="a7c9ae94-dd24-4277-bc1f-6f2810f5bf8c"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div
@@ -1116,15 +1078,6 @@ rxversion="8.2">
 			name="VisitScheduleViewMenu"
 			searchtimeout="30000ms"
 			usecache="False">
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="d410c208-3e19-45b3-9b48-81e26ad0e75d"
-				name="ListButton"
-				refimgid="b772cbba-2753-4e32-9490-8102d8d0f064"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[5]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
-				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
 				capname="imgtag"
@@ -1177,24 +1130,6 @@ rxversion="8.2">
 				<item
 				addcaps="unknown,webelement,imgtag"
 				capname="imgtag"
-				id="af2d7ad4-12a1-4714-b865-0228a4635e2f"
-				name="CardView"
-				refimgid="fbefb624-eaaf-4fc5-8af6-92706540679d"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="2d9bf4b1-a067-4bf7-8899-eada717bdc5f"
-				name="ListView"
-				refimgid="bd467efe-f1bb-47e8-bba7-b0e0357c8eee"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/list_icon_']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
 				id="ebe4df6e-c851-4e11-8add-75f128aa51a6"
 				name="AddButton"
 				refimgid="6a7fd5eb-7445-4654-a788-2d03ec422e9b"
@@ -1209,6 +1144,15 @@ rxversion="8.2">
 				refimgid="a2b0accd-cac0-4914-90ef-5a37ecdafbaf"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-list-cards']/div/tag[1]/tag/div/div/div[1]/p[@innertext&gt;$WorkflowName]
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="76204edf-d858-4edf-9f3a-5f0b2a929d7d"
+				name="CardButton"
+				refimgid="562f4098-f9ac-43be-a490-10c82ee51d1f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
@@ -1381,7 +1325,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="c79bec5d-144b-4142-be36-50ddfe893386"
 		name="ProjectName">
-			ProjectName
+			Ranorex Project Name
 		</var>
 		<var
 		id="4c28e6aa-3724-451e-af92-558f136cc8f6"
@@ -1416,6 +1360,19 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="bef8c8a6-e205-47b2-ad1f-f7fb74f045d0"
 		name="StepName">
+		</var>
+		<var
+		id="af68b261-9d44-4b3d-b2fc-778a0c4e9ce0"
+		name="Population">
+		</var>
+		<var
+		id="87005baf-9d21-4fd0-8599-d463aad52dc9"
+		name="WorkflowTemplate">
+			Blank
+		</var>
+		<var
+		id="dde194f5-4498-41dd-8d8d-a81dbe2d7950"
+		name="BatteryBlock">
 		</var>
 	</variables>
 </repository>

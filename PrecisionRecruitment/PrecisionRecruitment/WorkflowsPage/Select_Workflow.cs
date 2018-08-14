@@ -132,7 +132,11 @@ namespace PrecisionRecruitment.WorkflowsPage
             // Continue with test
             Report.Log(ReportLevel.Info, "Section", "Continue with test", new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCard' at 76;11.", repo.CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCardInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowsViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.WorkflowsViewMenu.CardButtonInfo, new RecordItemIndex(6));
+            repo.CogstateSolutionPlatform.WorkflowsViewMenu.CardButton.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCard' at 76;11.", repo.CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCardInfo, new RecordItemIndex(7));
             repo.CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCard.Click("76;11");
             Delay.Milliseconds(0);
             

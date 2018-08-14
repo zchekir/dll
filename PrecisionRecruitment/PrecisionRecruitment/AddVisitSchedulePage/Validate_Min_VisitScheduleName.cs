@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameMinLength'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameMinLengthInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameMinLengthInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameMinLength'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameMinLengthInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameMinLengthInfo);
             Delay.Milliseconds(100);
             
         }

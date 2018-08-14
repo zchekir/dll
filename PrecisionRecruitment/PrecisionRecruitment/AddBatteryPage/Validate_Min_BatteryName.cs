@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameMinLength'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameMinLengthInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameMinLengthInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameMinLength'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameMinLengthInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameMinLengthInfo);
             Delay.Milliseconds(0);
             
         }
