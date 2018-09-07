@@ -36,12 +36,12 @@ namespace PrecisionRecruitment.UsersPage
         public void SelectStudyToAdd()
         {
         	//Wait for list to load (need to change this method)
-        	Delay.Duration(5000);
+        	Delay.Duration(1000);
         	
             //click on dropdown to expand the list of Studies Available
         	Report.Log(ReportLevel.Info,"Mouse click on AddRoleStudyDropdown");
         	repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleStudyDropdown.Click();
-        	Delay.Duration(5000);
+        	Delay.Duration(1000);
         		
         	//find the study we want and select it
         	Keyboard.Press(ProjectName + RandNum);

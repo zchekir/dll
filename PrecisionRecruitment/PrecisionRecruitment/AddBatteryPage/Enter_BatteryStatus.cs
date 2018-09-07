@@ -90,12 +90,12 @@ namespace PrecisionRecruitment.AddBatteryPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.BatteryDraftStatus' at Center.", repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatusInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatus.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatus.Click(3);
+            Delay.Milliseconds(90);
             
         }
 

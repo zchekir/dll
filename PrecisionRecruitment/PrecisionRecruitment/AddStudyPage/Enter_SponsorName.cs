@@ -103,16 +103,16 @@ namespace PrecisionRecruitment.AddStudyPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.SponsorField' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddStudyPage.SponsorField'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SponsorName' with focus on 'CogstateSolutionPlatform.AddStudyPage.SponsorField'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.PressKeys(SponsorName);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddStudyPage.SponsorField.PressKeys(SponsorName, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$SponsorName) on item 'CogstateSolutionPlatform.AddStudyPage.SponsorField'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddStudyPage.SponsorFieldInfo, "Value", SponsorName);

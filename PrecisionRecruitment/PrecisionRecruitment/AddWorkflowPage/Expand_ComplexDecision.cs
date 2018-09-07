@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecision' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecisionInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecision.Click(300);
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ExpandComplexDecision.Click(3);
+            Delay.Milliseconds(490);
             
         }
 

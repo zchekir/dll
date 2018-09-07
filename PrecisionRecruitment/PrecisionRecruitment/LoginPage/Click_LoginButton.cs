@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.LoginPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.LoginButton' at Center.", repo.CogstateSolutionPlatform.LoginForm.LoginButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.LoginButton.Click(300);
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.LoginForm.LoginButton.Click(3);
+            Delay.Milliseconds(490);
             
         }
 

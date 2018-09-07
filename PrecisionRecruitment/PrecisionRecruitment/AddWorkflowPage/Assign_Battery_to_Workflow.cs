@@ -112,19 +112,19 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStepInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTabInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab.Click(3);
+            Delay.Milliseconds(90);
             
             SelectBatteryOption();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 28;16.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("28;16", 300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("28;16", 3);
+            Delay.Milliseconds(90);
             
         }
 

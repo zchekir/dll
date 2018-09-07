@@ -90,16 +90,16 @@ namespace PrecisionRecruitment.StudiesPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.HamburgerMenu' at Center.", repo.CogstateSolutionPlatform.HamburgerMenuInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.HamburgerMenu.Click(300);
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.HamburgerMenu.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.Studies' at Center.", repo.CogstateSolutionPlatform.Expanded.StudiesInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.Studies.Click(300);
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.Expanded.Studies.Click(3);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudiesViewMenu.AddButton' at Center.", repo.CogstateSolutionPlatform.StudiesViewMenu.AddButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.StudiesViewMenu.AddButton.Click(300);
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.StudiesViewMenu.AddButton.Click(3);
+            Delay.Milliseconds(0);
             
         }
 

@@ -112,20 +112,20 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VisitScheduleName' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys(VisitScheduleName);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys(VisitScheduleName, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys(RandNum);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys(RandNum, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$VisitScheduleName) on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, "Value", VisitScheduleName);

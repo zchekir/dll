@@ -103,12 +103,12 @@ namespace PrecisionRecruitment.LoginPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.PasswordField' at Center.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.PasswordField.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys(Password, 1);
@@ -119,8 +119,8 @@ namespace PrecisionRecruitment.LoginPage
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{Tab}", 100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{Tab}", 1);
+            Delay.Milliseconds(90);
             
         }
 

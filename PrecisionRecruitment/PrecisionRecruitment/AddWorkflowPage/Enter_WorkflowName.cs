@@ -112,20 +112,20 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowName' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.PressKeys(WorkflowName);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.PressKeys(WorkflowName, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.PressKeys(RandNum);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField.PressKeys(RandNum, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$WorkflowName) on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameFieldInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowNameFieldInfo, "Value", WorkflowName);

@@ -111,40 +111,44 @@ namespace PrecisionRecruitment.StudiesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SearchField' at 36;15.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SearchField.Click("36;15", 300);
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Studies' at Center.", repo.CogstateSolutionPlatform.StudiesInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.Studies.Click(1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ProjectName' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(ProjectName, 100);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SearchField' at 36;15.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.SearchField.Click("36;15", 3);
+            Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum, 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ProjectName' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.SearchField.PressKeys(ProjectName, 1);
+            Delay.Milliseconds(90);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum, 1);
             Delay.Milliseconds(100);
             
             // Wait for results to load
-            Report.Log(ReportLevel.Info, "Section", "Wait for results to load", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Section", "Wait for results to load", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
             Delay.Duration(1000, false);
             
             // Continue on with Tests
-            Report.Log(ReportLevel.Info, "Section", "Continue on with Tests", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "Continue on with Tests", new RecordItemIndex(6));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudiesViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.StudiesViewMenu.CardButtonInfo, new RecordItemIndex(6));
-            repo.CogstateSolutionPlatform.StudiesViewMenu.CardButton.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudiesViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.StudiesViewMenu.CardButtonInfo, new RecordItemIndex(7));
+            repo.CogstateSolutionPlatform.StudiesViewMenu.CardButton.Click(1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.StudyCard' at Center.", repo.CogstateSolutionPlatform.Expanded.StudyCardInfo, new RecordItemIndex(7));
-            repo.CogstateSolutionPlatform.Expanded.StudyCard.Click(300);
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.StudyCard' at Center.", repo.CogstateSolutionPlatform.Expanded.StudyCardInfo, new RecordItemIndex(8));
+            repo.CogstateSolutionPlatform.Expanded.StudyCard.Click(3);
+            Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$ProjectName) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$ProjectName) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(9));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, "InnerText", ProjectName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(10));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(100);
             

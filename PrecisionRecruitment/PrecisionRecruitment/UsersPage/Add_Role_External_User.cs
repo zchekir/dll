@@ -127,8 +127,8 @@ namespace PrecisionRecruitment.UsersPage
             Delay.Milliseconds(0);
             
             // Slight Delay waiting for Role to save
-            Report.Log(ReportLevel.Info, "Delay", "Slight Delay waiting for Role to save\r\nWaiting for 10s.", new RecordItemIndex(4));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Slight Delay waiting for Role to save\r\nWaiting for 3s.", new RecordItemIndex(4));
+            Delay.Duration(3000, false);
             
         }
 

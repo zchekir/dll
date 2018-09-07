@@ -90,16 +90,16 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Draft' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.PressKeys("Draft", 100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.PressKeys("Draft", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.PressKeys("{Return}", 100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.PressKeys("{Return}", 1);
+            Delay.Milliseconds(90);
             
         }
 

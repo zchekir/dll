@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton' at 33;17.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton.Click("33;17", 300);
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton.Click("33;17", 3);
+            Delay.Milliseconds(490);
             
         }
 

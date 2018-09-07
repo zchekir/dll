@@ -28,6 +28,9 @@ namespace PrecisionRecruitment
     {
         static PrecisionRecruitmentRepository instance = new PrecisionRecruitmentRepository();
         PrecisionRecruitmentRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
+        PrecisionRecruitmentRepositoryFolders.GoogleSigninAppFolder _googlesignin;
+        PrecisionRecruitmentRepositoryFolders.GoogleAccountAppFolder _googleaccount;
+        PrecisionRecruitmentRepositoryFolders.GmailInboxAppFolder _gmailinbox;
 
         /// <summary>
         /// Gets the singleton class instance representing the PrecisionRecruitmentRepository element repository.
@@ -45,6 +48,9 @@ namespace PrecisionRecruitment
             : base("PrecisionRecruitmentRepository", "/", null, 0, false, "ad46f1c9-823e-493b-84e7-021e0749856a", ".\\RepositoryImages\\PrecisionRecruitmentRepositoryad46f1c9.rximgres")
         {
             _cogstatesolutionplatform = new PrecisionRecruitmentRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
+            _googlesignin = new PrecisionRecruitmentRepositoryFolders.GoogleSigninAppFolder(this);
+            _googleaccount = new PrecisionRecruitmentRepositoryFolders.GoogleAccountAppFolder(this);
+            _gmailinbox = new PrecisionRecruitmentRepositoryFolders.GmailInboxAppFolder(this);
         }
 
 #region Variables
@@ -133,7 +139,7 @@ namespace PrecisionRecruitment
             set { _Locality = value; }
         }
 
-        string _Key = "d7a6d2bb-f854-460f-bf23-c009f9d91619";
+        string _Key = "";
 
         /// <summary>
         /// Gets or sets the value of variable Key.
@@ -169,7 +175,7 @@ namespace PrecisionRecruitment
             set { _Population = value; }
         }
 
-        string _WorkflowTemplate = "Blank";
+        string _WorkflowTemplate = "PR 3 Tier Decision";
 
         /// <summary>
         /// Gets or sets the value of variable WorkflowTemplate.
@@ -215,6 +221,33 @@ namespace PrecisionRecruitment
         {
             get { return _cogstatesolutionplatform; }
         }
+
+        /// <summary>
+        /// The GoogleSignin folder.
+        /// </summary>
+        [RepositoryFolder("b26f2e45-c612-4b60-8fd8-0363680b055b")]
+        public virtual PrecisionRecruitmentRepositoryFolders.GoogleSigninAppFolder GoogleSignin
+        {
+            get { return _googlesignin; }
+        }
+
+        /// <summary>
+        /// The GoogleAccount folder.
+        /// </summary>
+        [RepositoryFolder("12fb7791-6629-4ab4-8196-4d7f353baa8d")]
+        public virtual PrecisionRecruitmentRepositoryFolders.GoogleAccountAppFolder GoogleAccount
+        {
+            get { return _googleaccount; }
+        }
+
+        /// <summary>
+        /// The GmailInbox folder.
+        /// </summary>
+        [RepositoryFolder("b3ba678a-948b-43d6-9d56-176707cb02e6")]
+        public virtual PrecisionRecruitmentRepositoryFolders.GmailInboxAppFolder GmailInbox
+        {
+            get { return _gmailinbox; }
+        }
     }
 
     /// <summary>
@@ -237,6 +270,7 @@ namespace PrecisionRecruitment
             PrecisionRecruitmentRepositoryFolders.BatteriesViewMenuFolder _batteriesviewmenu;
             PrecisionRecruitmentRepositoryFolders.ExpandedFolder _expanded;
             PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder _externaluserpage;
+            PrecisionRecruitmentRepositoryFolders.GenerateSecretPageFolder _generatesecretpage;
             PrecisionRecruitmentRepositoryFolders.StudySettingsFolder _studysettings;
             PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder _studiesviewmenu;
             PrecisionRecruitmentRepositoryFolders.UserMenuFolder _usermenu;
@@ -258,6 +292,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _startinstructionsInfo;
             RepoItemInfo _batteryresultsInfo;
             RepoItemInfo _batteryskipInfo;
+            RepoItemInfo _usersInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -273,6 +308,7 @@ namespace PrecisionRecruitment
                 _batteriesviewmenu = new PrecisionRecruitmentRepositoryFolders.BatteriesViewMenuFolder(this);
                 _expanded = new PrecisionRecruitmentRepositoryFolders.ExpandedFolder(this);
                 _externaluserpage = new PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder(this);
+                _generatesecretpage = new PrecisionRecruitmentRepositoryFolders.GenerateSecretPageFolder(this);
                 _studysettings = new PrecisionRecruitmentRepositoryFolders.StudySettingsFolder(this);
                 _studiesviewmenu = new PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder(this);
                 _usermenu = new PrecisionRecruitmentRepositoryFolders.UserMenuFolder(this);
@@ -294,6 +330,7 @@ namespace PrecisionRecruitment
                 _startinstructionsInfo = new RepoItemInfo(this, "StartInstructions", ".//button[#'instructions_button']", 30000, null, "4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55");
                 _batteryresultsInfo = new RepoItemInfo(this, "BatteryResults", ".//textarea[#'results']", 30000, null, "41136832-35b1-4bfa-9dcb-92e2d111c24b");
                 _batteryskipInfo = new RepoItemInfo(this, "BatterySkip", ".//button[#'skip']", 30000, null, "5cafea12-8dac-456b-af85-df1546dac229");
+                _usersInfo = new RepoItemInfo(this, "Users", ".//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]/div[2]/label[@innertext='Users']", 30000, null, "7c60992c-f0db-4789-9789-0b7d2f9297a2");
             }
 
             /// <summary>
@@ -681,6 +718,30 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
+            /// The Users item.
+            /// </summary>
+            [RepositoryItem("7c60992c-f0db-4789-9789-0b7d2f9297a2")]
+            public virtual Ranorex.LabelTag Users
+            {
+                get
+                {
+                    return _usersInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Users item info.
+            /// </summary>
+            [RepositoryItemInfo("7c60992c-f0db-4789-9789-0b7d2f9297a2")]
+            public virtual RepoItemInfo UsersInfo
+            {
+                get
+                {
+                    return _usersInfo;
+                }
+            }
+
+            /// <summary>
             /// The AddBatteryPage folder.
             /// </summary>
             [RepositoryFolder("780fcf1c-95f0-43d6-ae77-a06f29e3eaeb")]
@@ -750,6 +811,15 @@ namespace PrecisionRecruitment
             public virtual PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder ExternalUserPage
             {
                 get { return _externaluserpage; }
+            }
+
+            /// <summary>
+            /// The GenerateSecretPage folder.
+            /// </summary>
+            [RepositoryFolder("20e1bcc2-07d5-4b96-b77e-dad8364e46d4")]
+            public virtual PrecisionRecruitmentRepositoryFolders.GenerateSecretPageFolder GenerateSecretPage
+            {
+                get { return _generatesecretpage; }
             }
 
             /// <summary>
@@ -1258,6 +1328,11 @@ namespace PrecisionRecruitment
             RepoItemInfo _workflowdescriptionminlengthInfo;
             RepoItemInfo _editbuttonInfo;
             RepoItemInfo _workflowtemplateoptionInfo;
+            RepoItemInfo _firstworkflowstepInfo;
+            RepoItemInfo _secondworkflowstepInfo;
+            RepoItemInfo _thirdworkflowstepInfo;
+            RepoItemInfo _fourthworkflowstepInfo;
+            RepoItemInfo _fifthworkflowstepInfo;
 
             /// <summary>
             /// Creates a new AddWorkflowPage  folder.
@@ -1292,6 +1367,11 @@ namespace PrecisionRecruitment
                 _workflowdescriptionminlengthInfo = new RepoItemInfo(this, "WorkflowDescriptionMinLength", ".//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']", 30000, null, "82b6da2e-317f-472f-ae02-e45783326eb2");
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[1]/div/div[2]/i[@innertext='mode_edit']", 30000, null, "c2ccca89-3ac1-4c7b-bfc1-b67d6f8eb0f3");
                 _workflowtemplateoptionInfo = new RepoItemInfo(this, "WorkflowTemplateOption", ".//select[@id~'formly_[0-9]+_select_workflowTemplate_4']/option[@label=$WorkflowTemplate]", 30000, null, "c7164b4f-8710-4a29-b4a6-b86614c39e1b");
+                _firstworkflowstepInfo = new RepoItemInfo(this, "FirstWorkflowStep", ".//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[2]//ul/li[1]//h4", 1000, null, "2004fa99-bde8-4b4d-9dad-421eccfd0bc0");
+                _secondworkflowstepInfo = new RepoItemInfo(this, "SecondWorkflowStep", ".//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[2]//ul/li[2]//h4", 1000, null, "ce4f7db8-896e-4084-acd2-e63c07aacf58");
+                _thirdworkflowstepInfo = new RepoItemInfo(this, "ThirdWorkflowStep", ".//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[2]//ul/li[3]//h4", 1000, null, "b9a85073-e07d-4b07-9e03-50725661b58f");
+                _fourthworkflowstepInfo = new RepoItemInfo(this, "FourthWorkflowStep", ".//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[2]//ul/li[4]//h4", 30000, null, "fc864237-a128-4aff-b9b9-efc05715e32e");
+                _fifthworkflowstepInfo = new RepoItemInfo(this, "FifthWorkflowStep", ".//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[2]//ul/li[5]//h4", 1000, null, "d26682ac-e575-4bfc-87be-ab3befe2551b");
             }
 
             /// <summary>
@@ -1951,6 +2031,126 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _workflowtemplateoptionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstWorkflowStep item.
+            /// </summary>
+            [RepositoryItem("2004fa99-bde8-4b4d-9dad-421eccfd0bc0")]
+            public virtual Ranorex.H4Tag FirstWorkflowStep
+            {
+                get
+                {
+                    return _firstworkflowstepInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstWorkflowStep item info.
+            /// </summary>
+            [RepositoryItemInfo("2004fa99-bde8-4b4d-9dad-421eccfd0bc0")]
+            public virtual RepoItemInfo FirstWorkflowStepInfo
+            {
+                get
+                {
+                    return _firstworkflowstepInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SecondWorkflowStep item.
+            /// </summary>
+            [RepositoryItem("ce4f7db8-896e-4084-acd2-e63c07aacf58")]
+            public virtual Ranorex.H4Tag SecondWorkflowStep
+            {
+                get
+                {
+                    return _secondworkflowstepInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SecondWorkflowStep item info.
+            /// </summary>
+            [RepositoryItemInfo("ce4f7db8-896e-4084-acd2-e63c07aacf58")]
+            public virtual RepoItemInfo SecondWorkflowStepInfo
+            {
+                get
+                {
+                    return _secondworkflowstepInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ThirdWorkflowStep item.
+            /// </summary>
+            [RepositoryItem("b9a85073-e07d-4b07-9e03-50725661b58f")]
+            public virtual Ranorex.H4Tag ThirdWorkflowStep
+            {
+                get
+                {
+                    return _thirdworkflowstepInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ThirdWorkflowStep item info.
+            /// </summary>
+            [RepositoryItemInfo("b9a85073-e07d-4b07-9e03-50725661b58f")]
+            public virtual RepoItemInfo ThirdWorkflowStepInfo
+            {
+                get
+                {
+                    return _thirdworkflowstepInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FourthWorkflowStep item.
+            /// </summary>
+            [RepositoryItem("fc864237-a128-4aff-b9b9-efc05715e32e")]
+            public virtual Ranorex.H4Tag FourthWorkflowStep
+            {
+                get
+                {
+                    return _fourthworkflowstepInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FourthWorkflowStep item info.
+            /// </summary>
+            [RepositoryItemInfo("fc864237-a128-4aff-b9b9-efc05715e32e")]
+            public virtual RepoItemInfo FourthWorkflowStepInfo
+            {
+                get
+                {
+                    return _fourthworkflowstepInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FifthWorkflowStep item.
+            /// </summary>
+            [RepositoryItem("d26682ac-e575-4bfc-87be-ab3befe2551b")]
+            public virtual Ranorex.H4Tag FifthWorkflowStep
+            {
+                get
+                {
+                    return _fifthworkflowstepInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FifthWorkflowStep item info.
+            /// </summary>
+            [RepositoryItemInfo("d26682ac-e575-4bfc-87be-ab3befe2551b")]
+            public virtual RepoItemInfo FifthWorkflowStepInfo
+            {
+                get
+                {
+                    return _fifthworkflowstepInfo;
                 }
             }
         }
@@ -3352,18 +3552,28 @@ namespace PrecisionRecruitment
             RepoItemInfo _externalserviceroledropdownInfo;
             RepoItemInfo _addroleactivecheckboxInfo;
             RepoItemInfo _addrolebuttonInfo;
+            RepoItemInfo _addexternaluserbuttonInfo;
+            RepoItemInfo _externaluseremailfieldInfo;
+            RepoItemInfo _activecheckboxInfo;
+            RepoItemInfo _externaluserkeyInfo;
+            RepoItemInfo _externaluserbreadcrumbInfo;
 
             /// <summary>
             /// Creates a new ExternalUserPage  folder.
             /// </summary>
             public ExternalUserPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("ExternalUserPage", ".//div[#'ng-app']/tag/div/div[3]", parentFolder, 30000, null, false, "7b1ea24d-ea8a-4e1e-864d-60c54defc799", "")
+                    base("ExternalUserPage", ".//div[#'ng-app']/tag/div/div", parentFolder, 30000, null, false, "7b1ea24d-ea8a-4e1e-864d-60c54defc799", "")
             {
                 _externaluserInfo = new RepoItemInfo(this, "ExternalUser", ".//table/tbody/tr/td[1]/a[@innertext~$Key]", 30000, null, "628ad5fc-4948-4083-a445-4bf034c11123");
                 _addrolestudydropdownInfo = new RepoItemInfo(this, "AddRoleStudyDropdown", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[1]/select[@name='study']", 30000, null, "4831601f-ea6c-4152-8f7a-e2877f2f65ac");
                 _externalserviceroledropdownInfo = new RepoItemInfo(this, "ExternalServiceRoleDropdown", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[2]/select[@name='role']", 30000, null, "51670096-e85e-41b9-a796-4191c61c5a85");
                 _addroleactivecheckboxInfo = new RepoItemInfo(this, "AddRoleActiveCheckbox", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[3]/input[@type='checkbox']", 30000, null, "4ae35020-8fe5-4864-95c2-2e65843fcb14");
                 _addrolebuttonInfo = new RepoItemInfo(this, "AddRoleButton", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']", 30000, null, "2f537dc6-64df-4dbd-9877-820080b627d4");
+                _addexternaluserbuttonInfo = new RepoItemInfo(this, "AddExternalUserButton", "?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "70cf92aa-2cef-4708-85df-af26b3756528");
+                _externaluseremailfieldInfo = new RepoItemInfo(this, "ExternalUserEmailField", ".//input[@id~'formly_[0-9]+_input_contactEmail_1']", 30000, null, "4647601e-706b-41d6-a391-656ee0bee7b4");
+                _activecheckboxInfo = new RepoItemInfo(this, "ActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_2']", 30000, null, "f092518f-91bb-46f4-a906-01df286231f4");
+                _externaluserkeyInfo = new RepoItemInfo(this, "ExternalUserKey", ".//input[@id~'formly_[0-9]+_input_key_0']", 30000, null, "2547f856-5f28-4dad-942d-3a0cd6c41707");
+                _externaluserbreadcrumbInfo = new RepoItemInfo(this, "ExternalUserBreadcrumb", ".//span[@innertext~'[0-9A-F]\\-[0-9A-F]']", 30000, null, "924b5c91-b150-4d60-a35f-97aabab73341");
             }
 
             /// <summary>
@@ -3507,6 +3717,244 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _addrolebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddExternalUserButton item.
+            /// </summary>
+            [RepositoryItem("70cf92aa-2cef-4708-85df-af26b3756528")]
+            public virtual Ranorex.ImgTag AddExternalUserButton
+            {
+                get
+                {
+                    return _addexternaluserbuttonInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddExternalUserButton item info.
+            /// </summary>
+            [RepositoryItemInfo("70cf92aa-2cef-4708-85df-af26b3756528")]
+            public virtual RepoItemInfo AddExternalUserButtonInfo
+            {
+                get
+                {
+                    return _addexternaluserbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExternalUserEmailField item.
+            /// </summary>
+            [RepositoryItem("4647601e-706b-41d6-a391-656ee0bee7b4")]
+            public virtual Ranorex.InputTag ExternalUserEmailField
+            {
+                get
+                {
+                    return _externaluseremailfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExternalUserEmailField item info.
+            /// </summary>
+            [RepositoryItemInfo("4647601e-706b-41d6-a391-656ee0bee7b4")]
+            public virtual RepoItemInfo ExternalUserEmailFieldInfo
+            {
+                get
+                {
+                    return _externaluseremailfieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ActiveCheckbox item.
+            /// </summary>
+            [RepositoryItem("f092518f-91bb-46f4-a906-01df286231f4")]
+            public virtual Ranorex.InputTag ActiveCheckbox
+            {
+                get
+                {
+                    return _activecheckboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ActiveCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("f092518f-91bb-46f4-a906-01df286231f4")]
+            public virtual RepoItemInfo ActiveCheckboxInfo
+            {
+                get
+                {
+                    return _activecheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExternalUserKey item.
+            /// </summary>
+            [RepositoryItem("2547f856-5f28-4dad-942d-3a0cd6c41707")]
+            public virtual Ranorex.InputTag ExternalUserKey
+            {
+                get
+                {
+                    return _externaluserkeyInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExternalUserKey item info.
+            /// </summary>
+            [RepositoryItemInfo("2547f856-5f28-4dad-942d-3a0cd6c41707")]
+            public virtual RepoItemInfo ExternalUserKeyInfo
+            {
+                get
+                {
+                    return _externaluserkeyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExternalUserBreadcrumb item.
+            /// </summary>
+            [RepositoryItem("924b5c91-b150-4d60-a35f-97aabab73341")]
+            public virtual Ranorex.SpanTag ExternalUserBreadcrumb
+            {
+                get
+                {
+                    return _externaluserbreadcrumbInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExternalUserBreadcrumb item info.
+            /// </summary>
+            [RepositoryItemInfo("924b5c91-b150-4d60-a35f-97aabab73341")]
+            public virtual RepoItemInfo ExternalUserBreadcrumbInfo
+            {
+                get
+                {
+                    return _externaluserbreadcrumbInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GenerateSecretPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("20e1bcc2-07d5-4b96-b77e-dad8364e46d4")]
+        public partial class GenerateSecretPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _apikeyInfo;
+            RepoItemInfo _apisecretInfo;
+            RepoItemInfo _generatesecretbuttonInfo;
+
+            /// <summary>
+            /// Creates a new GenerateSecretPage  folder.
+            /// </summary>
+            public GenerateSecretPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("GenerateSecretPage", ".//div[#'ng-app']/tag/div", parentFolder, 30000, null, false, "20e1bcc2-07d5-4b96-b77e-dad8364e46d4", "")
+            {
+                _apikeyInfo = new RepoItemInfo(this, "APIKey", ".//tag/div//label[@innertext~'Your API Key']", 30000, null, "c4968020-2b26-4735-b813-f19c9e33944d");
+                _apisecretInfo = new RepoItemInfo(this, "APISecret", ".//div/tag/div//label[@innertext~'Your API Secret']", 30000, null, "c14e1239-2159-4581-8840-64407821d962");
+                _generatesecretbuttonInfo = new RepoItemInfo(this, "GenerateSecretButton", "?/?/tag[@tagname='cogstate-authentication-generate']/div/div/div/div[2]/button[@innertext~'GENERATE SECRET']", 30000, null, "f96f42bd-cb6d-47b7-96d4-902c40f97fa4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("20e1bcc2-07d5-4b96-b77e-dad8364e46d4")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("20e1bcc2-07d5-4b96-b77e-dad8364e46d4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The APIKey item.
+            /// </summary>
+            [RepositoryItem("c4968020-2b26-4735-b813-f19c9e33944d")]
+            public virtual Ranorex.LabelTag APIKey
+            {
+                get
+                {
+                    return _apikeyInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The APIKey item info.
+            /// </summary>
+            [RepositoryItemInfo("c4968020-2b26-4735-b813-f19c9e33944d")]
+            public virtual RepoItemInfo APIKeyInfo
+            {
+                get
+                {
+                    return _apikeyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The APISecret item.
+            /// </summary>
+            [RepositoryItem("c14e1239-2159-4581-8840-64407821d962")]
+            public virtual Ranorex.LabelTag APISecret
+            {
+                get
+                {
+                    return _apisecretInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The APISecret item info.
+            /// </summary>
+            [RepositoryItemInfo("c14e1239-2159-4581-8840-64407821d962")]
+            public virtual RepoItemInfo APISecretInfo
+            {
+                get
+                {
+                    return _apisecretInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GenerateSecretButton item.
+            /// </summary>
+            [RepositoryItem("f96f42bd-cb6d-47b7-96d4-902c40f97fa4")]
+            public virtual Ranorex.ButtonTag GenerateSecretButton
+            {
+                get
+                {
+                    return _generatesecretbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GenerateSecretButton item info.
+            /// </summary>
+            [RepositoryItemInfo("f96f42bd-cb6d-47b7-96d4-902c40f97fa4")]
+            public virtual RepoItemInfo GenerateSecretButtonInfo
+            {
+                get
+                {
+                    return _generatesecretbuttonInfo;
                 }
             }
         }
@@ -4111,6 +4559,568 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _cardbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GoogleSigninAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b26f2e45-c612-4b60-8fd8-0363680b055b")]
+        public partial class GoogleSigninAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _webelementsvgInfo;
+            RepoItemInfo _profileidentifierInfo;
+            RepoItemInfo _useanotheraccountbuttonInfo;
+            RepoItemInfo _emailfieldInfo;
+            RepoItemInfo _emailnextbuttonInfo;
+            RepoItemInfo _passwordfieldInfo;
+            RepoItemInfo _passwordnextbuttonInfo;
+
+            /// <summary>
+            /// Creates a new GoogleSignin  folder.
+            /// </summary>
+            public GoogleSigninAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("GoogleSignin", "/dom[@domain='accounts.google.com']", parentFolder, 30000, null, false, "b26f2e45-c612-4b60-8fd8-0363680b055b", "")
+            {
+                _webelementsvgInfo = new RepoItemInfo(this, "WebElementSvg", ".//div[#'view_container']/div/div/div[1]/div/div/div/div[3]/tag[@tagname='svg']", 30000, null, "32686f1d-d3d3-4849-9bfc-b8340c131a6e");
+                _profileidentifierInfo = new RepoItemInfo(this, "ProfileIdentifier", ".//div[#'profileIdentifier']", 30000, null, "b415b883-ab69-4c29-a481-ae3d89fe9a81");
+                _useanotheraccountbuttonInfo = new RepoItemInfo(this, "UseAnotherAccountButton", ".//div[#'identifierLink']/?/?/p[@innertext='Use another account']", 30000, null, "fd936656-b0c6-4cb4-b68c-8e84867d10db");
+                _emailfieldInfo = new RepoItemInfo(this, "EmailField", ".//input[#'identifierId']", 30000, null, "fc3a780c-d661-4032-a6c3-028ad6372319");
+                _emailnextbuttonInfo = new RepoItemInfo(this, "EmailNextButton", ".//div[#'identifierNext']/?/?/span[@innertext='Next']", 30000, null, "ec53e776-3a8e-44d6-9208-a6e94f3ede4e");
+                _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//div[#'password']/div[1]/div/div[1]/input[@name='password']", 30000, null, "3d43d72b-f60e-45e9-9788-c3db8d1c5f02");
+                _passwordnextbuttonInfo = new RepoItemInfo(this, "PasswordNextButton", ".//div[#'passwordNext']/?/?/span[@innertext='Next']", 30000, null, "4001ae90-b375-4e97-8208-4553c98d2d13");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b26f2e45-c612-4b60-8fd8-0363680b055b")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b26f2e45-c612-4b60-8fd8-0363680b055b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WebElementSvg item.
+            /// </summary>
+            [RepositoryItem("32686f1d-d3d3-4849-9bfc-b8340c131a6e")]
+            public virtual Ranorex.WebElement WebElementSvg
+            {
+                get
+                {
+                    return _webelementsvgInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WebElementSvg item info.
+            /// </summary>
+            [RepositoryItemInfo("32686f1d-d3d3-4849-9bfc-b8340c131a6e")]
+            public virtual RepoItemInfo WebElementSvgInfo
+            {
+                get
+                {
+                    return _webelementsvgInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProfileIdentifier item.
+            /// </summary>
+            [RepositoryItem("b415b883-ab69-4c29-a481-ae3d89fe9a81")]
+            public virtual Ranorex.DivTag ProfileIdentifier
+            {
+                get
+                {
+                    return _profileidentifierInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProfileIdentifier item info.
+            /// </summary>
+            [RepositoryItemInfo("b415b883-ab69-4c29-a481-ae3d89fe9a81")]
+            public virtual RepoItemInfo ProfileIdentifierInfo
+            {
+                get
+                {
+                    return _profileidentifierInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseAnotherAccountButton item.
+            /// </summary>
+            [RepositoryItem("fd936656-b0c6-4cb4-b68c-8e84867d10db")]
+            public virtual Ranorex.PTag UseAnotherAccountButton
+            {
+                get
+                {
+                    return _useanotheraccountbuttonInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseAnotherAccountButton item info.
+            /// </summary>
+            [RepositoryItemInfo("fd936656-b0c6-4cb4-b68c-8e84867d10db")]
+            public virtual RepoItemInfo UseAnotherAccountButtonInfo
+            {
+                get
+                {
+                    return _useanotheraccountbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EmailField item.
+            /// </summary>
+            [RepositoryItem("fc3a780c-d661-4032-a6c3-028ad6372319")]
+            public virtual Ranorex.InputTag EmailField
+            {
+                get
+                {
+                    return _emailfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmailField item info.
+            /// </summary>
+            [RepositoryItemInfo("fc3a780c-d661-4032-a6c3-028ad6372319")]
+            public virtual RepoItemInfo EmailFieldInfo
+            {
+                get
+                {
+                    return _emailfieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EmailNextButton item.
+            /// </summary>
+            [RepositoryItem("ec53e776-3a8e-44d6-9208-a6e94f3ede4e")]
+            public virtual Ranorex.SpanTag EmailNextButton
+            {
+                get
+                {
+                    return _emailnextbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EmailNextButton item info.
+            /// </summary>
+            [RepositoryItemInfo("ec53e776-3a8e-44d6-9208-a6e94f3ede4e")]
+            public virtual RepoItemInfo EmailNextButtonInfo
+            {
+                get
+                {
+                    return _emailnextbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PasswordField item.
+            /// </summary>
+            [RepositoryItem("3d43d72b-f60e-45e9-9788-c3db8d1c5f02")]
+            public virtual Ranorex.InputTag PasswordField
+            {
+                get
+                {
+                    return _passwordfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PasswordField item info.
+            /// </summary>
+            [RepositoryItemInfo("3d43d72b-f60e-45e9-9788-c3db8d1c5f02")]
+            public virtual RepoItemInfo PasswordFieldInfo
+            {
+                get
+                {
+                    return _passwordfieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PasswordNextButton item.
+            /// </summary>
+            [RepositoryItem("4001ae90-b375-4e97-8208-4553c98d2d13")]
+            public virtual Ranorex.SpanTag PasswordNextButton
+            {
+                get
+                {
+                    return _passwordnextbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PasswordNextButton item info.
+            /// </summary>
+            [RepositoryItemInfo("4001ae90-b375-4e97-8208-4553c98d2d13")]
+            public virtual RepoItemInfo PasswordNextButtonInfo
+            {
+                get
+                {
+                    return _passwordnextbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GoogleAccountAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("12fb7791-6629-4ab4-8196-4d7f353baa8d")]
+        public partial class GoogleAccountAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _gmailbuttonInfo;
+
+            /// <summary>
+            /// Creates a new GoogleAccount  folder.
+            /// </summary>
+            public GoogleAccountAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("GoogleAccount", "/dom[@domain='myaccount.google.com']", parentFolder, 30000, null, false, "12fb7791-6629-4ab4-8196-4d7f353baa8d", "")
+            {
+                _gmailbuttonInfo = new RepoItemInfo(this, "GmailButton", ".//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/?/?/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/?/?/a[@href='https://mail.google.com/']", 30000, null, "678ca1e6-765a-44d1-81b0-32b66b4efaa7");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("12fb7791-6629-4ab4-8196-4d7f353baa8d")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("12fb7791-6629-4ab4-8196-4d7f353baa8d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GmailButton item.
+            /// </summary>
+            [RepositoryItem("678ca1e6-765a-44d1-81b0-32b66b4efaa7")]
+            public virtual Ranorex.ATag GmailButton
+            {
+                get
+                {
+                    return _gmailbuttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GmailButton item info.
+            /// </summary>
+            [RepositoryItemInfo("678ca1e6-765a-44d1-81b0-32b66b4efaa7")]
+            public virtual RepoItemInfo GmailButtonInfo
+            {
+                get
+                {
+                    return _gmailbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GmailInboxAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b3ba678a-948b-43d6-9d56-176707cb02e6")]
+        public partial class GmailInboxAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _secretlinkInfo;
+            RepoItemInfo _signoutbuttonInfo;
+            RepoItemInfo _settingsbuttonInfo;
+            RepoItemInfo _classicviewbuttonInfo;
+            RepoItemInfo _platformsupportemailInfo;
+            RepoItemInfo _accountbuttonInfo;
+            RepoItemInfo _backtoinboxInfo;
+            RepoItemInfo _selectallmessagescheckboxInfo;
+            RepoItemInfo _deletebuttonInfo;
+
+            /// <summary>
+            /// Creates a new GmailInbox  folder.
+            /// </summary>
+            public GmailInboxAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("GmailInbox", "/dom[@domain='mail.google.com']", parentFolder, 30000, null, false, "b3ba678a-948b-43d6-9d56-176707cb02e6", "")
+            {
+                _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$DOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
+                _signoutbuttonInfo = new RepoItemInfo(this, "SignOutButton", ".//a[@innertext~'Sign out']", 30000, null, "64e8a261-42d6-40a1-bd4b-b6dc572a70e2");
+                _settingsbuttonInfo = new RepoItemInfo(this, "SettingsButton", ".//div[#':28']/div[1]", 30000, null, "2533e1f1-70c6-4917-997b-089ac75c0ee1");
+                _classicviewbuttonInfo = new RepoItemInfo(this, "ClassicViewButton", ".//div[#':68']/div[@innertext='Go back to classic Gmail']", 30000, null, "fa5da4c0-af18-4033-ae28-25d85cdf8b49");
+                _platformsupportemailInfo = new RepoItemInfo(this, "PlatformSupportEmail", ".//div[#':3f']", 30000, null, "7be62e12-cde7-42b6-8184-6987243169a5");
+                _accountbuttonInfo = new RepoItemInfo(this, "AccountButton", ".//div[#'gb']/div[1]/div[1]/div/div[5]/?/?/a[@title~'Google Account:']/span", 30000, null, "c74d42ec-5ccc-46f8-b03a-79d3a329b79a");
+                _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div[2]/div[1]/div/div[1]/div/div/div", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
+                _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[#':35']/?/?/span/div", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
+                _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div/div", 30000, null, "0155202d-a183-4048-a7f7-aeb9677aa6fa");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b3ba678a-948b-43d6-9d56-176707cb02e6")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b3ba678a-948b-43d6-9d56-176707cb02e6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SecretLink item.
+            /// </summary>
+            [RepositoryItem("e60b96c1-45c5-4a40-a945-7619f9ef14ae")]
+            public virtual Ranorex.ATag SecretLink
+            {
+                get
+                {
+                    return _secretlinkInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SecretLink item info.
+            /// </summary>
+            [RepositoryItemInfo("e60b96c1-45c5-4a40-a945-7619f9ef14ae")]
+            public virtual RepoItemInfo SecretLinkInfo
+            {
+                get
+                {
+                    return _secretlinkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SignOutButton item.
+            /// </summary>
+            [RepositoryItem("64e8a261-42d6-40a1-bd4b-b6dc572a70e2")]
+            public virtual Ranorex.ATag SignOutButton
+            {
+                get
+                {
+                    return _signoutbuttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SignOutButton item info.
+            /// </summary>
+            [RepositoryItemInfo("64e8a261-42d6-40a1-bd4b-b6dc572a70e2")]
+            public virtual RepoItemInfo SignOutButtonInfo
+            {
+                get
+                {
+                    return _signoutbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SettingsButton item.
+            /// </summary>
+            [RepositoryItem("2533e1f1-70c6-4917-997b-089ac75c0ee1")]
+            public virtual Ranorex.DivTag SettingsButton
+            {
+                get
+                {
+                    return _settingsbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SettingsButton item info.
+            /// </summary>
+            [RepositoryItemInfo("2533e1f1-70c6-4917-997b-089ac75c0ee1")]
+            public virtual RepoItemInfo SettingsButtonInfo
+            {
+                get
+                {
+                    return _settingsbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClassicViewButton item.
+            /// </summary>
+            [RepositoryItem("fa5da4c0-af18-4033-ae28-25d85cdf8b49")]
+            public virtual Ranorex.DivTag ClassicViewButton
+            {
+                get
+                {
+                    return _classicviewbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClassicViewButton item info.
+            /// </summary>
+            [RepositoryItemInfo("fa5da4c0-af18-4033-ae28-25d85cdf8b49")]
+            public virtual RepoItemInfo ClassicViewButtonInfo
+            {
+                get
+                {
+                    return _classicviewbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PlatformSupportEmail item.
+            /// </summary>
+            [RepositoryItem("7be62e12-cde7-42b6-8184-6987243169a5")]
+            public virtual Ranorex.DivTag PlatformSupportEmail
+            {
+                get
+                {
+                    return _platformsupportemailInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PlatformSupportEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("7be62e12-cde7-42b6-8184-6987243169a5")]
+            public virtual RepoItemInfo PlatformSupportEmailInfo
+            {
+                get
+                {
+                    return _platformsupportemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AccountButton item.
+            /// </summary>
+            [RepositoryItem("c74d42ec-5ccc-46f8-b03a-79d3a329b79a")]
+            public virtual Ranorex.SpanTag AccountButton
+            {
+                get
+                {
+                    return _accountbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AccountButton item info.
+            /// </summary>
+            [RepositoryItemInfo("c74d42ec-5ccc-46f8-b03a-79d3a329b79a")]
+            public virtual RepoItemInfo AccountButtonInfo
+            {
+                get
+                {
+                    return _accountbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BackToInbox item.
+            /// </summary>
+            [RepositoryItem("41b979f7-c989-45a6-9476-8952d4227dc0")]
+            public virtual Ranorex.DivTag BackToInbox
+            {
+                get
+                {
+                    return _backtoinboxInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BackToInbox item info.
+            /// </summary>
+            [RepositoryItemInfo("41b979f7-c989-45a6-9476-8952d4227dc0")]
+            public virtual RepoItemInfo BackToInboxInfo
+            {
+                get
+                {
+                    return _backtoinboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectAllMessagesCheckbox item.
+            /// </summary>
+            [RepositoryItem("411c4add-47fd-4250-a4c7-10ec4625af19")]
+            public virtual Ranorex.DivTag SelectAllMessagesCheckbox
+            {
+                get
+                {
+                    return _selectallmessagescheckboxInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectAllMessagesCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("411c4add-47fd-4250-a4c7-10ec4625af19")]
+            public virtual RepoItemInfo SelectAllMessagesCheckboxInfo
+            {
+                get
+                {
+                    return _selectallmessagescheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeleteButton item.
+            /// </summary>
+            [RepositoryItem("0155202d-a183-4048-a7f7-aeb9677aa6fa")]
+            public virtual Ranorex.DivTag DeleteButton
+            {
+                get
+                {
+                    return _deletebuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeleteButton item info.
+            /// </summary>
+            [RepositoryItemInfo("0155202d-a183-4048-a7f7-aeb9677aa6fa")]
+            public virtual RepoItemInfo DeleteButtonInfo
+            {
+                get
+                {
+                    return _deletebuttonInfo;
                 }
             }
         }

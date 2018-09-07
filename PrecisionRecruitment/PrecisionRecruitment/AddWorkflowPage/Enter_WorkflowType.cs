@@ -90,16 +90,16 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Ext' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("Ext", 100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("Ext", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Enter}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("{Enter}", 100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("{Enter}", 1);
+            Delay.Milliseconds(90);
             
         }
 

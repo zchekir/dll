@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.CheckOutcomesAreMeasuredTier3Step' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.CheckOutcomesAreMeasuredTier3StepInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.CheckOutcomesAreMeasuredTier3Step.Click(300);
-            Delay.Milliseconds(200);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.CheckOutcomesAreMeasuredTier3Step.Click(3);
+            Delay.Milliseconds(490);
             
         }
 

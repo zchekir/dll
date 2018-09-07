@@ -103,16 +103,16 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowDescription' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.PressKeys(WorkflowDescription);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField.PressKeys(WorkflowDescription, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$WorkflowDescription) on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionField'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionFieldInfo, "TagValue", WorkflowDescription);

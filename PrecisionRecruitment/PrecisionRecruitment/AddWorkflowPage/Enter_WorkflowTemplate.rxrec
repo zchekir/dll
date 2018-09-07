@@ -27,6 +27,11 @@ rxversion="8.2">
 	namespace="PrecisionRecruitment.AddWorkflowPage">
 	</codegen>
 	<variables>
+		<var
+		id="03b03c2e-c427-4881-9f1c-35416388f17c"
+		name="WorkflowTemplate">
+			PR 3 Tier Decision
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -35,7 +40,7 @@ rxversion="8.2">
 		duration="100ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="3ms"
 		optional="False"
 		searchpropertyid="89a70942-6e0c-48c0-80c1-6c2b263b9356"
 		sx="-886"
@@ -215,11 +220,15 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKRPvMffFFFIY6iiigAooooAKKKKACiiigApp/1g
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="1ms"
 		searchpropertyid="a105980e-403b-4a01-8e82-f5b1bbdec749">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="WorkflowTemplate">
+				</binding>
 			</bindings>
 			<info
 			id="ecf5466e-902e-409d-bd5b-5db8fe1c5e9a"
@@ -234,7 +243,7 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKRPvMffFFFIY6iiigAooooAKKKKACiiigApp/1g
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="1ms"
 		searchpropertyid="1254d5bf-80ca-4b27-b125-0f8fa0f61ff8">
 			<comment>
 			</comment>

@@ -116,32 +116,32 @@ namespace PrecisionRecruitment.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier1Min' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys(Tier1Min);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys(Tier1Min, 1);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier1Max' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(5));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys(Tier1Max);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys(Tier1Max, 1);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(6));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click(3);
+            Delay.Milliseconds(90);
             
         }
 

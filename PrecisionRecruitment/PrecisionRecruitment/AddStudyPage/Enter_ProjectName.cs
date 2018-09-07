@@ -112,20 +112,20 @@ namespace PrecisionRecruitment.AddStudyPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.ProjectNameField' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.Click(300);
+            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.Click(3);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddStudyPage.ProjectNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
+            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ProjectName' with focus on 'CogstateSolutionPlatform.AddStudyPage.ProjectNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.PressKeys(ProjectName);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.PressKeys(ProjectName, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddStudyPage.ProjectNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.PressKeys(RandNum);
-            Delay.Milliseconds(20);
+            repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameField.PressKeys(RandNum, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$ProjectName) on item 'CogstateSolutionPlatform.AddStudyPage.ProjectNameField'.", repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameFieldInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AddStudyPage.ProjectNameFieldInfo, "Value", ProjectName);

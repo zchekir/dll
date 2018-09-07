@@ -90,16 +90,16 @@ namespace PrecisionRecruitment.AddBatteryPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.Click(300);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.Click(3);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'CBB - INTERACTIVE DEMOS' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("CBB - INTERACTIVE DEMOS");
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("CBB - INTERACTIVE DEMOS", 1);
+            Delay.Milliseconds(70);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("{Return}", 100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("{Return}", 1);
+            Delay.Milliseconds(90);
             
         }
 
