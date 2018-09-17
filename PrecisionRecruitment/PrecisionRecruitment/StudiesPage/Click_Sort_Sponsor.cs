@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.StudiesPage
             repo.CogstateSolutionPlatform.TableHeaders.Sponsor.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1ms.", new RecordItemIndex(1));
-            Delay.Duration(1, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
         }
 
