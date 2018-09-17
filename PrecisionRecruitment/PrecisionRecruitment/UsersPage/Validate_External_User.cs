@@ -100,8 +100,8 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserBreadcrumb'.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserBreadcrumbInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserBreadcrumbInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumb'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo);
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "External User Created", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));

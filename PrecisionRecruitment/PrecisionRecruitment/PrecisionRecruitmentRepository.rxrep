@@ -953,7 +953,7 @@ rxversion="8.2">
 			capname="divtag"
 			id="7b1ea24d-ea8a-4e1e-864d-60c54defc799"
 			isrooted="True"
-			name="ExternalUserPage"
+			name="UsersPage"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -1005,7 +1005,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,imgtag"
 				capname="imgtag"
 				id="70cf92aa-2cef-4708-85df-af26b3756528"
-				name="AddExternalUserButton"
+				name="AddButton"
 				refimgid="ed57db7f-4f52-493d-bd2c-8681a2a98030"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/add_icon_']
@@ -1046,6 +1046,69 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//span[@innertext~'[0-9A-F]\-[0-9A-F]']
 				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="6e183190-aa15-459a-97c4-958ba38b14fb"
+				name="UserBreadcrumb"
+				refimgid="5975977c-88f8-4363-8248-a09bc9b693b8"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//span[@innertext~$Username]
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="f11b7715-6596-46fb-b4a1-d894cab9fbff"
+				name="UsernameField"
+				refimgid="4107859f-3802-4cd0-bfa8-d9cf1d31ea42"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_input_username_0']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="dc732b15-8165-4192-a355-f2f085b09b91"
+				name="FirstNameField"
+				refimgid="bc12b23a-0ff2-47d4-98bc-51b2215d90da"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_input_firstName_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="1691c200-047a-42f3-866a-9f9061b57f1f"
+				name="LastNameField"
+				refimgid="3c002816-95e2-4657-bed2-cd3926a36cf0"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_input_lastName_2']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="5c788fd7-7072-411a-885a-a4578e4ad53c"
+				name="RoleDropdown"
+				refimgid="fd41003e-bfdc-4098-bdaf-5d289f8195c4"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//select[@id~'formly_[0-9]+_select_platformAdminModuleRole_3']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="261351a4-fa06-469c-8239-182ecb7d8f07"
+				name="LockedCheckbox"
+				refimgid="91170f90-4a23-4ccf-bcb6-f4a19f97ab3f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_checkbox_lock_4']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="aefd58c0-c293-45b8-b49b-bf3e17df4cdc"
+				name="UserActiveCheckbox"
+				refimgid="16f051c0-623e-4c55-9daa-e9920333e4f1"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_checkbox_active_5']
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div
 				</basepath>
@@ -1083,6 +1146,42 @@ rxversion="8.2">
 				refimgid="67d6a285-ad9c-4d20-ab8a-856dfebe5a13"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-generate']/div/div/div/div[2]/button[@innertext~'GENERATE SECRET']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="75381b84-b360-445f-9ced-41569a1c7c55"
+				name="ResetPasswordUsername"
+				refimgid="b45d24c5-6a4e-4918-9fea-6c131ea416a1"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-reset']/div/div/div/div[2]/div[@innertext~$RandNum]
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="53858367-34f1-41f2-a181-97b3cd537900"
+				name="ResetPasswordButton"
+				refimgid="392870fa-5fd8-4b59-af86-e5a256f59d70"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-reset']/div/div/div/div[3]/button[@innertext~'RESET PASSWORD']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="47ed2a37-5002-42f9-a51a-c37a678cde89"
+				name="ResetPasswordField"
+				refimgid="350af8b1-7491-4fd5-b26b-354c36e63c4a"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div//input[@id~'formly_[0-9]+_labelessInput_password_0']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="54499a0c-a127-4c9b-b8c3-fa07110382e9"
+				name="ResetPasswordConfirmField"
+				refimgid="4f01f254-23c7-4c9a-9244-e116c8171b2e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div//input[@id~'formly_[0-9]+_labelessInput_confirmPassword_1']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div
@@ -1163,6 +1262,54 @@ rxversion="8.2">
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div
+				</basepath>
+			</folder>
+			<folder
+			capname="divtag"
+			id="76db6a4b-e0b2-4b9c-8ad1-cb6587906452"
+			isrooted="True"
+			name="TableHeaders"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,thtag"
+				capname="thtag"
+				id="a8235b46-f28e-47bb-8059-ed41575a8702"
+				name="ProjectName"
+				refimgid="7b026832-de11-4aa0-9609-568f6ba896b6"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//table/thead/?/?/th[@innertext~'Project Name']
+				</item>
+				<item
+				addcaps="unknown,webelement,thtag"
+				capname="thtag"
+				id="a5d60b00-71d0-4b32-b214-9440e3969271"
+				name="ProtocolNumber"
+				refimgid="dafd3639-1872-482d-b106-32fcdde62a9c"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//table/thead/?/?/th[@innertext~'Protocol Number']
+				</item>
+				<item
+				addcaps="unknown,webelement,thtag"
+				capname="thtag"
+				id="f8795e11-5911-4ac2-9c05-c5f0e5ee7743"
+				name="Sponsor"
+				refimgid="479587a4-b2e5-42d0-b13a-7b3cd6430b0f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//table/thead/?/?/th[@innertext~'Sponsor']
+				</item>
+				<item
+				addcaps="unknown,webelement,tbodytag"
+				capname="tbodytag"
+				id="f9b6684f-cf10-480d-ba04-1f59bdd829fa"
+				name="TableBody"
+				refimgid="a0a52734-4b03-4d78-b58c-47307eac8789"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-grid']/table/tbody"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//table/tbody
+				</item>
+				<basepath>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
 				</basepath>
 			</folder>
 			<folder
@@ -1426,9 +1573,8 @@ rxversion="8.2">
 			id="7c60992c-f0db-4789-9789-0b7d2f9297a2"
 			name="Users"
 			refimgid="48ae5840-eba3-4678-bcf1-45baf2fc91b1"
-			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[4]/tag[@tagname='cogstate-menu-maingeneric']/div/div/div[2]/div[2]/div/div[2]/div[2]/label[@innertext='Users']"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]/div[2]/label[@innertext='Users']
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]//div/label[@innertext='Users']
 			</item>
 			<basepath>
 				/dom[@domain=$DOM]
@@ -1458,26 +1604,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		refpath="/dom[@domain='accounts.google.com']"
 		searchtimeout="30000ms"
 		usecache="False">
-			<item
-			addcaps="unknown,webelement"
-			capname="webelement"
-			id="32686f1d-d3d3-4849-9bfc-b8340c131a6e"
-			name="WebElementSvg"
-			refimgid="3fb0d3d8-f3b1-4339-8249-79b4e746e76d"
-			refpath="/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[1]/div/div/div/div[3]/tag[@tagname='svg']"
-			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[1]/div/div/div/div[3]/tag[@tagname='svg']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="b415b883-ab69-4c29-a481-ae3d89fe9a81"
-			name="ProfileIdentifier"
-			refimgid="a0f5c040-6681-4065-a8dd-6f906f1838c5"
-			refpath="/dom[@domain='accounts.google.com']//div[#'profileIdentifier']"
-			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'profileIdentifier']
-			</item>
 			<item
 			addcaps="unknown,webelement,ptag"
 			capname="ptag"
@@ -1615,26 +1741,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
-			id="2533e1f1-70c6-4917-997b-089ac75c0ee1"
-			name="SettingsButton"
-			refimgid="54425180-5c82-417e-bae2-3aa9226c75ac"
-			refpath="/dom[@domain='mail.google.com']//div[#':28']/div[1]"
-			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':28']/div[1]
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="fa5da4c0-af18-4033-ae28-25d85cdf8b49"
-			name="ClassicViewButton"
-			refimgid="68d26e09-2709-42f5-a4b6-adcc3ff99118"
-			refpath="/dom[@domain='mail.google.com']//div[#':68']/div[@innertext='Go back to classic Gmail']"
-			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':68']/div[@innertext='Go back to classic Gmail']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
 			id="7be62e12-cde7-42b6-8184-6987243169a5"
 			name="PlatformSupportEmail"
 			refimgid="da7c9935-f6f8-44d2-8b2c-d9f620507a50"
@@ -1680,6 +1786,25 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refpath="/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div/div"
 			searchtimeout="30000ms">
 				/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div/div
+			</item>
+			<item
+			addcaps="unknown,webelement,btag"
+			capname="btag"
+			id="dcf83ff9-d659-4a54-8b0b-d188c16e48d4"
+			name="ForgotPasswordEmail"
+			refimgid="66408c0e-647a-4892-a221-f78d63146d32"
+			refpath="/dom[@domain='mail.google.com']//span[#':3i']/b[@innertext='Account Information']"
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//span[#':3i']/b[@innertext='Account Information']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="a1bd28f9-fa49-4070-b113-d58014026934"
+			name="ForgotPasswordLink"
+			refimgid="168d1e15-2032-487f-8343-2ea1be0264b6"
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//div//a[@innertext~$DOM]
 			</item>
 			<basepath>
 				/dom[@domain='mail.google.com']
@@ -1759,6 +1884,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="dde194f5-4498-41dd-8d8d-a81dbe2d7950"
 		name="BatteryBlock">
+		</var>
+		<var
+		id="1892dd21-199b-47ab-bba6-5cd1b874a668"
+		name="Username">
 		</var>
 	</variables>
 </repository>

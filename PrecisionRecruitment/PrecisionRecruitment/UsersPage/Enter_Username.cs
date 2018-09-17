@@ -24,29 +24,31 @@ namespace PrecisionRecruitment.UsersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Add_External_User recording.
+    ///The Enter_Username recording.
     /// </summary>
-    [TestModule("a12d2e2e-e4c7-482c-afab-5f0d9f31714f", ModuleType.Recording, 1)]
-    public partial class Click_Add_External_User : ITestModule
+    [TestModule("e8baed63-acfc-4c88-981f-7e62ff4efa50", ModuleType.Recording, 1)]
+    public partial class Enter_Username : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_Add_External_User instance = new Click_Add_External_User();
+        static Enter_Username instance = new Enter_Username();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Add_External_User()
+        public Enter_Username()
         {
+            Username = "";
+            RandNum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Add_External_User Instance
+        public static Enter_Username Instance
         {
             get { return instance; }
         }
@@ -61,6 +63,26 @@ namespace PrecisionRecruitment.UsersPage
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Username.
+        /// </summary>
+        [TestVariable("2b48007a-3e7e-407b-a25b-545d93908445")]
+        public string Username
+        {
+            get { return repo.Username; }
+            set { repo.Username = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("4c5e514d-358a-4119-949c-e61c9aea6e9b")]
+        public string RandNum
+        {
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
         }
 
 #endregion
@@ -89,8 +111,24 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.AddExternalUserButton' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.AddExternalUserButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ExternalUserPage.AddExternalUserButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.UsernameField' at Center.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.UsersPage.UsernameField.Click(1);
+            Delay.Milliseconds(90);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys(Username, 1);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '+' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys("+", 1);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys(RandNum, 1);
+            Delay.Milliseconds(10);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys("@gmail.com", 1);
             Delay.Milliseconds(0);
             
         }

@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.LoginPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.ForgotPasswordOkButton' at 158;23.", repo.CogstateSolutionPlatform.LoginForm.ForgotPasswordOkButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.ForgotPasswordOkButton.Click("158;23");
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.LoginForm.ForgotPasswordOkButton.Click("158;23", 1);
+            Delay.Milliseconds(90);
             
         }
 

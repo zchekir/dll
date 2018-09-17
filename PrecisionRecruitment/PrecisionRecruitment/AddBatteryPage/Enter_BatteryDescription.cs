@@ -106,15 +106,11 @@ namespace PrecisionRecruitment.AddBatteryPage
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryDescription' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryDescription' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField.PressKeys(BatteryDescription, 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$BatteryDescription) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$BatteryDescription) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryDescriptionFieldInfo, "TagValue", BatteryDescription);
             Delay.Milliseconds(0);
             

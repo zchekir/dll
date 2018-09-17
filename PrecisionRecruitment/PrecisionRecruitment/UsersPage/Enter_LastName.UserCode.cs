@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace PrecisionRecruitment.UsersPage
 {
-    public partial class Click_Add_External_User
+    public partial class Enter_LastName
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

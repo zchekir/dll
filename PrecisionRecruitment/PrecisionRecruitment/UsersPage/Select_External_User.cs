@@ -105,11 +105,11 @@ namespace PrecisionRecruitment.UsersPage
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Key' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(Key, 100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.SearchField.PressKeys(Key, 1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.ExternalUser' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUser.Click(300);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.ExternalUser' at Center.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.UsersPage.ExternalUser.Click(300);
             Delay.Milliseconds(200);
             
         }

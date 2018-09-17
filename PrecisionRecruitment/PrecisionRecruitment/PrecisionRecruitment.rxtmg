@@ -9,6 +9,12 @@ rxversion="8.2">
 			ref="507b6a76-fe57-451c-b34f-409b723c2154"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="00c4476b-66cd-4aa7-b59c-c065a88890b3"
+			name="Enter_FirstName"
+			ref="6336f297-e5e5-47eb-b94c-b58201d22560"
+			type="Recording">
+			</testmodule>
 			<modulegroupdef
 			id="04b0e867-8b4f-4386-8b17-d54cc8298354"
 			name="Login">
@@ -250,6 +256,12 @@ rxversion="8.2">
 			id="2fef6361-b1c9-4121-a9ea-558436e6625e"
 			name="Click_Add_VisitSchedule"
 			ref="afa31b22-2d4a-4203-9b20-2f726dfb154a"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="312e6202-d40a-4d25-a442-dd072d07e0a2"
+			name="Click_Active_Checkbox"
+			ref="d0b36409-67f8-42fe-bbca-2bc6dbe5acfc"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -513,6 +525,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4a486d41-e906-4d78-8db0-c23b7f3b2580"
+			name="Select_User_Role"
+			ref="199ee169-6eee-4be1-887e-39c904dab3d0"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4a565d96-5d74-4697-b13b-6c9648b63c92"
 			name="Validate_Required_BatteryName"
 			ref="34806562-1932-4d90-96aa-036251444423"
@@ -522,6 +540,12 @@ rxversion="8.2">
 			id="4b72de45-32af-4a43-93c6-6eb6174697f6"
 			name="Enter_ProtocolNumber"
 			ref="1e9af83f-3d93-4310-9092-e79dbbc2daa5"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4f3cc4c9-9713-435f-9f29-5fa3f8e8ae72"
+			name="Click_Add_User"
+			ref="a12d2e2e-e4c7-482c-afab-5f0d9f31714f"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -641,6 +665,12 @@ rxversion="8.2">
 			id="9e260ce4-4982-4054-8980-f6e77aecbb4a"
 			name="Expand_ComplexDecision"
 			ref="44658cba-b9d9-43a9-a110-9f51c1248171"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9e75879d-78a3-4ec8-bbf3-13572f600674"
+			name="Enter_LastName"
+			ref="c945e03d-de39-4ae0-88c2-101fff5b9f2e"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -862,6 +892,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="cc7f7c1a-49e5-446d-b847-4188fbe55db7"
+			name="Click_Users_Menu"
+			ref="ba3de862-5190-4621-a09d-7442800597f1"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="cdd41f0d-af33-4db0-9fe2-27d35a42e2b0"
 			name="Validate_Min_ProjectName"
 			ref="dbe3709b-0ce2-4e98-9709-f282328d40e2"
@@ -958,6 +994,89 @@ rxversion="8.2">
 			ref="c59a1508-fd91-4513-b669-579cdeb46da2"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="ea0a5aab-0fec-4fc4-b483-f67dc998707c"
+			name="Add_User">
+				<groupvariables>
+					<groupvariable
+					id="eb16cfdf-12de-4e2e-a85b-369d59f328bc"
+					name="DOM">
+						<modulevariable
+						moduleref="cc7f7c1a-49e5-446d-b847-4188fbe55db7"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="4f3cc4c9-9713-435f-9f29-5fa3f8e8ae72"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="f61b3305-0334-4d00-8504-3f898c941041"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="00c4476b-66cd-4aa7-b59c-c065a88890b3"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="9e75879d-78a3-4ec8-bbf3-13572f600674"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="4a486d41-e906-4d78-8db0-c23b7f3b2580"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="312e6202-d40a-4d25-a442-dd072d07e0a2"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="fbe6e4f9-b265-491b-a25d-7a976f8eb738"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="f9c64436-33a1-4a58-97a5-e4cef1bb1e6c"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="b5ea3e04-b117-48dc-a9d4-981c6369b8ca"
+					name="Username">
+						<modulevariable
+						moduleref="f61b3305-0334-4d00-8504-3f898c941041"
+						name="Username"
+						variableref="2b48007a-3e7e-407b-a25b-545d93908445">
+						</modulevariable>
+						<modulevariable
+						moduleref="f9c64436-33a1-4a58-97a5-e4cef1bb1e6c"
+						name="Username"
+						variableref="beba0b52-7fd3-47a0-960b-9b4b32005ef9">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="e8d0c5b8-3795-41df-9638-3065b33ef76e"
+					name="RandNum">
+						<modulevariable
+						moduleref="f61b3305-0334-4d00-8504-3f898c941041"
+						name="RandNum"
+						variableref="4c5e514d-358a-4119-949c-e61c9aea6e9b">
+						</modulevariable>
+						<modulevariable
+						moduleref="f9c64436-33a1-4a58-97a5-e4cef1bb1e6c"
+						name="RandNum"
+						variableref="fc46804f-c774-4b8a-8e29-cbf1eac4fa18">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="ea103005-9405-450f-9e75-8f7991b318da"
 			name="Validate_VisitScheduleEntry"
@@ -1070,6 +1189,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="f61b3305-0334-4d00-8504-3f898c941041"
+			name="Enter_Username"
+			ref="e8baed63-acfc-4c88-981f-7e62ff4efa50"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f725382c-47ef-4334-88c8-4f21efca8124"
 			name="Select_VisitSchedule"
 			ref="884bab92-73c9-4c72-bcb0-b60b57cf56ef"
@@ -1088,9 +1213,21 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="f9c64436-33a1-4a58-97a5-e4cef1bb1e6c"
+			name="Validate_Internal_User"
+			ref="a25819c9-4d97-4762-98ba-fa0c441afdd4"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="fa953c78-eab8-4a30-8387-08bb4518a5e3"
 			name="Validate_Required_Sponsor"
 			ref="cee55784-508a-4aad-9e55-f62093785837"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fbe6e4f9-b265-491b-a25d-7a976f8eb738"
+			name="Click_Save_Button"
+			ref="a4e77d94-eb14-4fc5-a019-c002f50ff39f"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -1166,6 +1303,46 @@ rxversion="8.2">
 					<testmodule
 					id="b8d33c6a-5e5b-4805-8dad-6124af9c61ff"
 					name="Validate_BatteryEntry">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="ea0a5aab-0fec-4fc4-b483-f67dc998707c"
+				name="Add_User">
+					<testmodule
+					id="cc7f7c1a-49e5-446d-b847-4188fbe55db7"
+					name="Click_Users_Menu">
+					</testmodule>
+					<testmodule
+					id="4f3cc4c9-9713-435f-9f29-5fa3f8e8ae72"
+					name="Click_Add_User">
+					</testmodule>
+					<testmodule
+					id="f61b3305-0334-4d00-8504-3f898c941041"
+					name="Enter_Username">
+					</testmodule>
+					<testmodule
+					id="00c4476b-66cd-4aa7-b59c-c065a88890b3"
+					name="Enter_FirstName">
+					</testmodule>
+					<testmodule
+					id="9e75879d-78a3-4ec8-bbf3-13572f600674"
+					name="Enter_LastName">
+					</testmodule>
+					<testmodule
+					id="4a486d41-e906-4d78-8db0-c23b7f3b2580"
+					name="Select_User_Role">
+					</testmodule>
+					<testmodule
+					id="312e6202-d40a-4d25-a442-dd072d07e0a2"
+					name="Click_Active_Checkbox">
+					</testmodule>
+					<testmodule
+					id="fbe6e4f9-b265-491b-a25d-7a976f8eb738"
+					name="Click_Save_Button">
+					</testmodule>
+					<testmodule
+					id="f9c64436-33a1-4a58-97a5-e4cef1bb1e6c"
+					name="Validate_Internal_User">
 					</testmodule>
 				</modulegroupdef>
 				<modulegroupdef

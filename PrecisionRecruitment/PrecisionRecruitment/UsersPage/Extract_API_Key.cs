@@ -100,8 +100,8 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserBreadcrumb' and assigning its value to variable 'Key'.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserBreadcrumbInfo, new RecordItemIndex(0));
-            Key = repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserBreadcrumb.Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumb' and assigning its value to variable 'Key'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo, new RecordItemIndex(0));
+            Key = repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumb.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
         }

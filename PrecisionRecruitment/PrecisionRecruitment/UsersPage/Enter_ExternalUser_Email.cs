@@ -113,24 +113,24 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField' at 57;13.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField.Click("57;13", 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.ExternalUserEmailField' at 57;13.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailField.Click("57;13", 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ExternalEmail' with focus on 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField.PressKeys(ExternalEmail, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ExternalEmail' with focus on 'CogstateSolutionPlatform.UsersPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailField.PressKeys(ExternalEmail, 1);
             Delay.Milliseconds(10);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '+' with focus on 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField.PressKeys("+", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '+' with focus on 'CogstateSolutionPlatform.UsersPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailField.PressKeys("+", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField.PressKeys(RandNum, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.UsersPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailFieldInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailField.PressKeys(RandNum, 1);
             Delay.Milliseconds(10);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserEmailField.PressKeys("@gmail.com", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.UsersPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailFieldInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.UsersPage.ExternalUserEmailField.PressKeys("@gmail.com", 1);
             Delay.Milliseconds(0);
             
         }

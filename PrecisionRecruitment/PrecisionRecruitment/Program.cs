@@ -32,6 +32,9 @@ namespace PrecisionRecruitment
             //    return Util.RestartWithUiAccess();
 
             Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
+            Keyboard.DefaultKeyPressTime = 0;  
+			Mouse.DefaultClickTime = 0;  
+			Mouse.DefaultMoveTime = 0;  
             int error = 0;
 
             try

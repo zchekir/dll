@@ -119,27 +119,19 @@ namespace PrecisionRecruitment.AddWorkflowPage
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier2Min' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier2Min' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMinInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMin.PressKeys(Tier2Min, 1);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier2Max' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tier2Max' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMaxInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys(Tier2Max, 1);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 32;10.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 32;10.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(4));
             repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("32;10", 3);
             Delay.Milliseconds(90);
             

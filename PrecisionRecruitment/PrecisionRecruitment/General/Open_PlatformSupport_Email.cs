@@ -83,8 +83,8 @@ namespace PrecisionRecruitment.General
             repo.GoogleAccount.GmailButton.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(1));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(1));
+            Delay.Duration(7000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.PlatformSupportEmail' at Center.", repo.GmailInbox.PlatformSupportEmailInfo, new RecordItemIndex(2));
             repo.GmailInbox.PlatformSupportEmail.Click(1);

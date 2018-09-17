@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.LoginPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.ForgotYourPassword' at Center.", repo.CogstateSolutionPlatform.LoginForm.ForgotYourPasswordInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.ForgotYourPassword.Click();
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.LoginForm.ForgotYourPassword.Click(1);
+            Delay.Milliseconds(90);
             
         }
 

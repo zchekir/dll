@@ -199,6 +199,18 @@ namespace PrecisionRecruitment
             set { _BatteryBlock = value; }
         }
 
+        string _Username = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable Username.
+        /// </summary>
+        [TestVariable("1892dd21-199b-47ab-bba6-5cd1b874a668")]
+        public string Username
+        {
+            get { return _Username; }
+            set { _Username = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -269,10 +281,11 @@ namespace PrecisionRecruitment
             PrecisionRecruitmentRepositoryFolders.LoginFormFolder _loginform;
             PrecisionRecruitmentRepositoryFolders.BatteriesViewMenuFolder _batteriesviewmenu;
             PrecisionRecruitmentRepositoryFolders.ExpandedFolder _expanded;
-            PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder _externaluserpage;
+            PrecisionRecruitmentRepositoryFolders.UsersPageFolder _userspage;
             PrecisionRecruitmentRepositoryFolders.GenerateSecretPageFolder _generatesecretpage;
             PrecisionRecruitmentRepositoryFolders.StudySettingsFolder _studysettings;
             PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder _studiesviewmenu;
+            PrecisionRecruitmentRepositoryFolders.TableHeadersFolder _tableheaders;
             PrecisionRecruitmentRepositoryFolders.UserMenuFolder _usermenu;
             PrecisionRecruitmentRepositoryFolders.VisitScheduleViewMenuFolder _visitscheduleviewmenu;
             PrecisionRecruitmentRepositoryFolders.VisitScheduleCardsFolder _visitschedulecards;
@@ -307,10 +320,11 @@ namespace PrecisionRecruitment
                 _loginform = new PrecisionRecruitmentRepositoryFolders.LoginFormFolder(this);
                 _batteriesviewmenu = new PrecisionRecruitmentRepositoryFolders.BatteriesViewMenuFolder(this);
                 _expanded = new PrecisionRecruitmentRepositoryFolders.ExpandedFolder(this);
-                _externaluserpage = new PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder(this);
+                _userspage = new PrecisionRecruitmentRepositoryFolders.UsersPageFolder(this);
                 _generatesecretpage = new PrecisionRecruitmentRepositoryFolders.GenerateSecretPageFolder(this);
                 _studysettings = new PrecisionRecruitmentRepositoryFolders.StudySettingsFolder(this);
                 _studiesviewmenu = new PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder(this);
+                _tableheaders = new PrecisionRecruitmentRepositoryFolders.TableHeadersFolder(this);
                 _usermenu = new PrecisionRecruitmentRepositoryFolders.UserMenuFolder(this);
                 _visitscheduleviewmenu = new PrecisionRecruitmentRepositoryFolders.VisitScheduleViewMenuFolder(this);
                 _visitschedulecards = new PrecisionRecruitmentRepositoryFolders.VisitScheduleCardsFolder(this);
@@ -330,7 +344,7 @@ namespace PrecisionRecruitment
                 _startinstructionsInfo = new RepoItemInfo(this, "StartInstructions", ".//button[#'instructions_button']", 30000, null, "4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55");
                 _batteryresultsInfo = new RepoItemInfo(this, "BatteryResults", ".//textarea[#'results']", 30000, null, "41136832-35b1-4bfa-9dcb-92e2d111c24b");
                 _batteryskipInfo = new RepoItemInfo(this, "BatterySkip", ".//button[#'skip']", 30000, null, "5cafea12-8dac-456b-af85-df1546dac229");
-                _usersInfo = new RepoItemInfo(this, "Users", ".//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]/div[2]/label[@innertext='Users']", 30000, null, "7c60992c-f0db-4789-9789-0b7d2f9297a2");
+                _usersInfo = new RepoItemInfo(this, "Users", ".//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]//div/label[@innertext='Users']", 30000, null, "7c60992c-f0db-4789-9789-0b7d2f9297a2");
             }
 
             /// <summary>
@@ -805,12 +819,12 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
-            /// The ExternalUserPage folder.
+            /// The UsersPage folder.
             /// </summary>
             [RepositoryFolder("7b1ea24d-ea8a-4e1e-864d-60c54defc799")]
-            public virtual PrecisionRecruitmentRepositoryFolders.ExternalUserPageFolder ExternalUserPage
+            public virtual PrecisionRecruitmentRepositoryFolders.UsersPageFolder UsersPage
             {
-                get { return _externaluserpage; }
+                get { return _userspage; }
             }
 
             /// <summary>
@@ -838,6 +852,15 @@ namespace PrecisionRecruitment
             public virtual PrecisionRecruitmentRepositoryFolders.StudiesViewMenuFolder StudiesViewMenu
             {
                 get { return _studiesviewmenu; }
+            }
+
+            /// <summary>
+            /// The TableHeaders folder.
+            /// </summary>
+            [RepositoryFolder("76db6a4b-e0b2-4b9c-8ad1-cb6587906452")]
+            public virtual PrecisionRecruitmentRepositoryFolders.TableHeadersFolder TableHeaders
+            {
+                get { return _tableheaders; }
             }
 
             /// <summary>
@@ -3542,38 +3565,52 @@ namespace PrecisionRecruitment
         }
 
         /// <summary>
-        /// The ExternalUserPageFolder folder.
+        /// The UsersPageFolder folder.
         /// </summary>
         [RepositoryFolder("7b1ea24d-ea8a-4e1e-864d-60c54defc799")]
-        public partial class ExternalUserPageFolder : RepoGenBaseFolder
+        public partial class UsersPageFolder : RepoGenBaseFolder
         {
             RepoItemInfo _externaluserInfo;
             RepoItemInfo _addrolestudydropdownInfo;
             RepoItemInfo _externalserviceroledropdownInfo;
             RepoItemInfo _addroleactivecheckboxInfo;
             RepoItemInfo _addrolebuttonInfo;
-            RepoItemInfo _addexternaluserbuttonInfo;
+            RepoItemInfo _addbuttonInfo;
             RepoItemInfo _externaluseremailfieldInfo;
             RepoItemInfo _activecheckboxInfo;
             RepoItemInfo _externaluserkeyInfo;
             RepoItemInfo _externaluserbreadcrumbInfo;
+            RepoItemInfo _userbreadcrumbInfo;
+            RepoItemInfo _usernamefieldInfo;
+            RepoItemInfo _firstnamefieldInfo;
+            RepoItemInfo _lastnamefieldInfo;
+            RepoItemInfo _roledropdownInfo;
+            RepoItemInfo _lockedcheckboxInfo;
+            RepoItemInfo _useractivecheckboxInfo;
 
             /// <summary>
-            /// Creates a new ExternalUserPage  folder.
+            /// Creates a new UsersPage  folder.
             /// </summary>
-            public ExternalUserPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("ExternalUserPage", ".//div[#'ng-app']/tag/div/div", parentFolder, 30000, null, false, "7b1ea24d-ea8a-4e1e-864d-60c54defc799", "")
+            public UsersPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("UsersPage", ".//div[#'ng-app']/tag/div/div", parentFolder, 30000, null, false, "7b1ea24d-ea8a-4e1e-864d-60c54defc799", "")
             {
                 _externaluserInfo = new RepoItemInfo(this, "ExternalUser", ".//table/tbody/tr/td[1]/a[@innertext~$Key]", 30000, null, "628ad5fc-4948-4083-a445-4bf034c11123");
                 _addrolestudydropdownInfo = new RepoItemInfo(this, "AddRoleStudyDropdown", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[1]/select[@name='study']", 30000, null, "4831601f-ea6c-4152-8f7a-e2877f2f65ac");
                 _externalserviceroledropdownInfo = new RepoItemInfo(this, "ExternalServiceRoleDropdown", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[2]/select[@name='role']", 30000, null, "51670096-e85e-41b9-a796-4191c61c5a85");
                 _addroleactivecheckboxInfo = new RepoItemInfo(this, "AddRoleActiveCheckbox", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[last()='True']/td[3]/input[@type='checkbox']", 30000, null, "4ae35020-8fe5-4864-95c2-2e65843fcb14");
                 _addrolebuttonInfo = new RepoItemInfo(this, "AddRoleButton", ".//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']", 30000, null, "2f537dc6-64df-4dbd-9877-820080b627d4");
-                _addexternaluserbuttonInfo = new RepoItemInfo(this, "AddExternalUserButton", "?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "70cf92aa-2cef-4708-85df-af26b3756528");
+                _addbuttonInfo = new RepoItemInfo(this, "AddButton", "?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "70cf92aa-2cef-4708-85df-af26b3756528");
                 _externaluseremailfieldInfo = new RepoItemInfo(this, "ExternalUserEmailField", ".//input[@id~'formly_[0-9]+_input_contactEmail_1']", 30000, null, "4647601e-706b-41d6-a391-656ee0bee7b4");
                 _activecheckboxInfo = new RepoItemInfo(this, "ActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_2']", 30000, null, "f092518f-91bb-46f4-a906-01df286231f4");
                 _externaluserkeyInfo = new RepoItemInfo(this, "ExternalUserKey", ".//input[@id~'formly_[0-9]+_input_key_0']", 30000, null, "2547f856-5f28-4dad-942d-3a0cd6c41707");
                 _externaluserbreadcrumbInfo = new RepoItemInfo(this, "ExternalUserBreadcrumb", ".//span[@innertext~'[0-9A-F]\\-[0-9A-F]']", 30000, null, "924b5c91-b150-4d60-a35f-97aabab73341");
+                _userbreadcrumbInfo = new RepoItemInfo(this, "UserBreadcrumb", ".//span[@innertext~$Username]", 30000, null, "6e183190-aa15-459a-97c4-958ba38b14fb");
+                _usernamefieldInfo = new RepoItemInfo(this, "UsernameField", ".//input[@id~'formly_[0-9]+_input_username_0']", 30000, null, "f11b7715-6596-46fb-b4a1-d894cab9fbff");
+                _firstnamefieldInfo = new RepoItemInfo(this, "FirstNameField", ".//input[@id~'formly_[0-9]+_input_firstName_1']", 30000, null, "dc732b15-8165-4192-a355-f2f085b09b91");
+                _lastnamefieldInfo = new RepoItemInfo(this, "LastNameField", ".//input[@id~'formly_[0-9]+_input_lastName_2']", 30000, null, "1691c200-047a-42f3-866a-9f9061b57f1f");
+                _roledropdownInfo = new RepoItemInfo(this, "RoleDropdown", ".//select[@id~'formly_[0-9]+_select_platformAdminModuleRole_3']", 30000, null, "5c788fd7-7072-411a-885a-a4578e4ad53c");
+                _lockedcheckboxInfo = new RepoItemInfo(this, "LockedCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_lock_4']", 30000, null, "261351a4-fa06-469c-8239-182ecb7d8f07");
+                _useractivecheckboxInfo = new RepoItemInfo(this, "UserActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_5']", 30000, null, "aefd58c0-c293-45b8-b49b-bf3e17df4cdc");
             }
 
             /// <summary>
@@ -3721,26 +3758,26 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
-            /// The AddExternalUserButton item.
+            /// The AddButton item.
             /// </summary>
             [RepositoryItem("70cf92aa-2cef-4708-85df-af26b3756528")]
-            public virtual Ranorex.ImgTag AddExternalUserButton
+            public virtual Ranorex.ImgTag AddButton
             {
                 get
                 {
-                    return _addexternaluserbuttonInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                    return _addbuttonInfo.CreateAdapter<Ranorex.ImgTag>(true);
                 }
             }
 
             /// <summary>
-            /// The AddExternalUserButton item info.
+            /// The AddButton item info.
             /// </summary>
             [RepositoryItemInfo("70cf92aa-2cef-4708-85df-af26b3756528")]
-            public virtual RepoItemInfo AddExternalUserButtonInfo
+            public virtual RepoItemInfo AddButtonInfo
             {
                 get
                 {
-                    return _addexternaluserbuttonInfo;
+                    return _addbuttonInfo;
                 }
             }
 
@@ -3839,6 +3876,174 @@ namespace PrecisionRecruitment
                     return _externaluserbreadcrumbInfo;
                 }
             }
+
+            /// <summary>
+            /// The UserBreadcrumb item.
+            /// </summary>
+            [RepositoryItem("6e183190-aa15-459a-97c4-958ba38b14fb")]
+            public virtual Ranorex.SpanTag UserBreadcrumb
+            {
+                get
+                {
+                    return _userbreadcrumbInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserBreadcrumb item info.
+            /// </summary>
+            [RepositoryItemInfo("6e183190-aa15-459a-97c4-958ba38b14fb")]
+            public virtual RepoItemInfo UserBreadcrumbInfo
+            {
+                get
+                {
+                    return _userbreadcrumbInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UsernameField item.
+            /// </summary>
+            [RepositoryItem("f11b7715-6596-46fb-b4a1-d894cab9fbff")]
+            public virtual Ranorex.InputTag UsernameField
+            {
+                get
+                {
+                    return _usernamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UsernameField item info.
+            /// </summary>
+            [RepositoryItemInfo("f11b7715-6596-46fb-b4a1-d894cab9fbff")]
+            public virtual RepoItemInfo UsernameFieldInfo
+            {
+                get
+                {
+                    return _usernamefieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstNameField item.
+            /// </summary>
+            [RepositoryItem("dc732b15-8165-4192-a355-f2f085b09b91")]
+            public virtual Ranorex.InputTag FirstNameField
+            {
+                get
+                {
+                    return _firstnamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstNameField item info.
+            /// </summary>
+            [RepositoryItemInfo("dc732b15-8165-4192-a355-f2f085b09b91")]
+            public virtual RepoItemInfo FirstNameFieldInfo
+            {
+                get
+                {
+                    return _firstnamefieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LastNameField item.
+            /// </summary>
+            [RepositoryItem("1691c200-047a-42f3-866a-9f9061b57f1f")]
+            public virtual Ranorex.InputTag LastNameField
+            {
+                get
+                {
+                    return _lastnamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LastNameField item info.
+            /// </summary>
+            [RepositoryItemInfo("1691c200-047a-42f3-866a-9f9061b57f1f")]
+            public virtual RepoItemInfo LastNameFieldInfo
+            {
+                get
+                {
+                    return _lastnamefieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RoleDropdown item.
+            /// </summary>
+            [RepositoryItem("5c788fd7-7072-411a-885a-a4578e4ad53c")]
+            public virtual Ranorex.SelectTag RoleDropdown
+            {
+                get
+                {
+                    return _roledropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RoleDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("5c788fd7-7072-411a-885a-a4578e4ad53c")]
+            public virtual RepoItemInfo RoleDropdownInfo
+            {
+                get
+                {
+                    return _roledropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LockedCheckbox item.
+            /// </summary>
+            [RepositoryItem("261351a4-fa06-469c-8239-182ecb7d8f07")]
+            public virtual Ranorex.InputTag LockedCheckbox
+            {
+                get
+                {
+                    return _lockedcheckboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LockedCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("261351a4-fa06-469c-8239-182ecb7d8f07")]
+            public virtual RepoItemInfo LockedCheckboxInfo
+            {
+                get
+                {
+                    return _lockedcheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserActiveCheckbox item.
+            /// </summary>
+            [RepositoryItem("aefd58c0-c293-45b8-b49b-bf3e17df4cdc")]
+            public virtual Ranorex.InputTag UserActiveCheckbox
+            {
+                get
+                {
+                    return _useractivecheckboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserActiveCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("aefd58c0-c293-45b8-b49b-bf3e17df4cdc")]
+            public virtual RepoItemInfo UserActiveCheckboxInfo
+            {
+                get
+                {
+                    return _useractivecheckboxInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3850,6 +4055,10 @@ namespace PrecisionRecruitment
             RepoItemInfo _apikeyInfo;
             RepoItemInfo _apisecretInfo;
             RepoItemInfo _generatesecretbuttonInfo;
+            RepoItemInfo _resetpasswordusernameInfo;
+            RepoItemInfo _resetpasswordbuttonInfo;
+            RepoItemInfo _resetpasswordfieldInfo;
+            RepoItemInfo _resetpasswordconfirmfieldInfo;
 
             /// <summary>
             /// Creates a new GenerateSecretPage  folder.
@@ -3860,6 +4069,10 @@ namespace PrecisionRecruitment
                 _apikeyInfo = new RepoItemInfo(this, "APIKey", ".//tag/div//label[@innertext~'Your API Key']", 30000, null, "c4968020-2b26-4735-b813-f19c9e33944d");
                 _apisecretInfo = new RepoItemInfo(this, "APISecret", ".//div/tag/div//label[@innertext~'Your API Secret']", 30000, null, "c14e1239-2159-4581-8840-64407821d962");
                 _generatesecretbuttonInfo = new RepoItemInfo(this, "GenerateSecretButton", "?/?/tag[@tagname='cogstate-authentication-generate']/div/div/div/div[2]/button[@innertext~'GENERATE SECRET']", 30000, null, "f96f42bd-cb6d-47b7-96d4-902c40f97fa4");
+                _resetpasswordusernameInfo = new RepoItemInfo(this, "ResetPasswordUsername", "?/?/tag[@tagname='cogstate-authentication-reset']/div/div/div/div[2]/div[@innertext~$RandNum]", 30000, null, "75381b84-b360-445f-9ced-41569a1c7c55");
+                _resetpasswordbuttonInfo = new RepoItemInfo(this, "ResetPasswordButton", "?/?/tag[@tagname='cogstate-authentication-reset']/div/div/div/div[3]/button[@innertext~'RESET PASSWORD']", 30000, null, "53858367-34f1-41f2-a181-97b3cd537900");
+                _resetpasswordfieldInfo = new RepoItemInfo(this, "ResetPasswordField", ".//input[@id~'formly_[0-9]+_labelessInput_password_0']", 30000, null, "47ed2a37-5002-42f9-a51a-c37a678cde89");
+                _resetpasswordconfirmfieldInfo = new RepoItemInfo(this, "ResetPasswordConfirmField", ".//input[@id~'formly_[0-9]+_labelessInput_confirmPassword_1']", 30000, null, "54499a0c-a127-4c9b-b8c3-fa07110382e9");
             }
 
             /// <summary>
@@ -3955,6 +4168,102 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _generatesecretbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordUsername item.
+            /// </summary>
+            [RepositoryItem("75381b84-b360-445f-9ced-41569a1c7c55")]
+            public virtual Ranorex.DivTag ResetPasswordUsername
+            {
+                get
+                {
+                    return _resetpasswordusernameInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordUsername item info.
+            /// </summary>
+            [RepositoryItemInfo("75381b84-b360-445f-9ced-41569a1c7c55")]
+            public virtual RepoItemInfo ResetPasswordUsernameInfo
+            {
+                get
+                {
+                    return _resetpasswordusernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordButton item.
+            /// </summary>
+            [RepositoryItem("53858367-34f1-41f2-a181-97b3cd537900")]
+            public virtual Ranorex.ButtonTag ResetPasswordButton
+            {
+                get
+                {
+                    return _resetpasswordbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordButton item info.
+            /// </summary>
+            [RepositoryItemInfo("53858367-34f1-41f2-a181-97b3cd537900")]
+            public virtual RepoItemInfo ResetPasswordButtonInfo
+            {
+                get
+                {
+                    return _resetpasswordbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordField item.
+            /// </summary>
+            [RepositoryItem("47ed2a37-5002-42f9-a51a-c37a678cde89")]
+            public virtual Ranorex.InputTag ResetPasswordField
+            {
+                get
+                {
+                    return _resetpasswordfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordField item info.
+            /// </summary>
+            [RepositoryItemInfo("47ed2a37-5002-42f9-a51a-c37a678cde89")]
+            public virtual RepoItemInfo ResetPasswordFieldInfo
+            {
+                get
+                {
+                    return _resetpasswordfieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordConfirmField item.
+            /// </summary>
+            [RepositoryItem("54499a0c-a127-4c9b-b8c3-fa07110382e9")]
+            public virtual Ranorex.InputTag ResetPasswordConfirmField
+            {
+                get
+                {
+                    return _resetpasswordconfirmfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResetPasswordConfirmField item info.
+            /// </summary>
+            [RepositoryItemInfo("54499a0c-a127-4c9b-b8c3-fa07110382e9")]
+            public virtual RepoItemInfo ResetPasswordConfirmFieldInfo
+            {
+                get
+                {
+                    return _resetpasswordconfirmfieldInfo;
                 }
             }
         }
@@ -4191,6 +4500,150 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _cardbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TableHeadersFolder folder.
+        /// </summary>
+        [RepositoryFolder("76db6a4b-e0b2-4b9c-8ad1-cb6587906452")]
+        public partial class TableHeadersFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _projectnameInfo;
+            RepoItemInfo _protocolnumberInfo;
+            RepoItemInfo _sponsorInfo;
+            RepoItemInfo _tablebodyInfo;
+
+            /// <summary>
+            /// Creates a new TableHeaders  folder.
+            /// </summary>
+            public TableHeadersFolder(RepoGenBaseFolder parentFolder) :
+                    base("TableHeaders", ".//div[#'ng-app']/tag/div/div[3]", parentFolder, 30000, null, false, "76db6a4b-e0b2-4b9c-8ad1-cb6587906452", "")
+            {
+                _projectnameInfo = new RepoItemInfo(this, "ProjectName", ".//table/thead/?/?/th[@innertext~'Project Name']", 30000, null, "a8235b46-f28e-47bb-8059-ed41575a8702");
+                _protocolnumberInfo = new RepoItemInfo(this, "ProtocolNumber", ".//table/thead/?/?/th[@innertext~'Protocol Number']", 30000, null, "a5d60b00-71d0-4b32-b214-9440e3969271");
+                _sponsorInfo = new RepoItemInfo(this, "Sponsor", ".//table/thead/?/?/th[@innertext~'Sponsor']", 30000, null, "f8795e11-5911-4ac2-9c05-c5f0e5ee7743");
+                _tablebodyInfo = new RepoItemInfo(this, "TableBody", ".//table/tbody", 30000, null, "f9b6684f-cf10-480d-ba04-1f59bdd829fa");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("76db6a4b-e0b2-4b9c-8ad1-cb6587906452")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("76db6a4b-e0b2-4b9c-8ad1-cb6587906452")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProjectName item.
+            /// </summary>
+            [RepositoryItem("a8235b46-f28e-47bb-8059-ed41575a8702")]
+            public virtual Ranorex.ThTag ProjectName
+            {
+                get
+                {
+                    return _projectnameInfo.CreateAdapter<Ranorex.ThTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProjectName item info.
+            /// </summary>
+            [RepositoryItemInfo("a8235b46-f28e-47bb-8059-ed41575a8702")]
+            public virtual RepoItemInfo ProjectNameInfo
+            {
+                get
+                {
+                    return _projectnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolNumber item.
+            /// </summary>
+            [RepositoryItem("a5d60b00-71d0-4b32-b214-9440e3969271")]
+            public virtual Ranorex.ThTag ProtocolNumber
+            {
+                get
+                {
+                    return _protocolnumberInfo.CreateAdapter<Ranorex.ThTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolNumber item info.
+            /// </summary>
+            [RepositoryItemInfo("a5d60b00-71d0-4b32-b214-9440e3969271")]
+            public virtual RepoItemInfo ProtocolNumberInfo
+            {
+                get
+                {
+                    return _protocolnumberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Sponsor item.
+            /// </summary>
+            [RepositoryItem("f8795e11-5911-4ac2-9c05-c5f0e5ee7743")]
+            public virtual Ranorex.ThTag Sponsor
+            {
+                get
+                {
+                    return _sponsorInfo.CreateAdapter<Ranorex.ThTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Sponsor item info.
+            /// </summary>
+            [RepositoryItemInfo("f8795e11-5911-4ac2-9c05-c5f0e5ee7743")]
+            public virtual RepoItemInfo SponsorInfo
+            {
+                get
+                {
+                    return _sponsorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TableBody item.
+            /// </summary>
+            [RepositoryItem("f9b6684f-cf10-480d-ba04-1f59bdd829fa")]
+            public virtual Ranorex.TBodyTag TableBody
+            {
+                get
+                {
+                    return _tablebodyInfo.CreateAdapter<Ranorex.TBodyTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TableBody item info.
+            /// </summary>
+            [RepositoryItemInfo("f9b6684f-cf10-480d-ba04-1f59bdd829fa")]
+            public virtual RepoItemInfo TableBodyInfo
+            {
+                get
+                {
+                    return _tablebodyInfo;
                 }
             }
         }
@@ -4569,8 +5022,6 @@ namespace PrecisionRecruitment
         [RepositoryFolder("b26f2e45-c612-4b60-8fd8-0363680b055b")]
         public partial class GoogleSigninAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _webelementsvgInfo;
-            RepoItemInfo _profileidentifierInfo;
             RepoItemInfo _useanotheraccountbuttonInfo;
             RepoItemInfo _emailfieldInfo;
             RepoItemInfo _emailnextbuttonInfo;
@@ -4583,8 +5034,6 @@ namespace PrecisionRecruitment
             public GoogleSigninAppFolder(RepoGenBaseFolder parentFolder) :
                     base("GoogleSignin", "/dom[@domain='accounts.google.com']", parentFolder, 30000, null, false, "b26f2e45-c612-4b60-8fd8-0363680b055b", "")
             {
-                _webelementsvgInfo = new RepoItemInfo(this, "WebElementSvg", ".//div[#'view_container']/div/div/div[1]/div/div/div/div[3]/tag[@tagname='svg']", 30000, null, "32686f1d-d3d3-4849-9bfc-b8340c131a6e");
-                _profileidentifierInfo = new RepoItemInfo(this, "ProfileIdentifier", ".//div[#'profileIdentifier']", 30000, null, "b415b883-ab69-4c29-a481-ae3d89fe9a81");
                 _useanotheraccountbuttonInfo = new RepoItemInfo(this, "UseAnotherAccountButton", ".//div[#'identifierLink']/?/?/p[@innertext='Use another account']", 30000, null, "fd936656-b0c6-4cb4-b68c-8e84867d10db");
                 _emailfieldInfo = new RepoItemInfo(this, "EmailField", ".//input[#'identifierId']", 30000, null, "fc3a780c-d661-4032-a6c3-028ad6372319");
                 _emailnextbuttonInfo = new RepoItemInfo(this, "EmailNextButton", ".//div[#'identifierNext']/?/?/span[@innertext='Next']", 30000, null, "ec53e776-3a8e-44d6-9208-a6e94f3ede4e");
@@ -4613,54 +5062,6 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WebElementSvg item.
-            /// </summary>
-            [RepositoryItem("32686f1d-d3d3-4849-9bfc-b8340c131a6e")]
-            public virtual Ranorex.WebElement WebElementSvg
-            {
-                get
-                {
-                    return _webelementsvgInfo.CreateAdapter<Ranorex.WebElement>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WebElementSvg item info.
-            /// </summary>
-            [RepositoryItemInfo("32686f1d-d3d3-4849-9bfc-b8340c131a6e")]
-            public virtual RepoItemInfo WebElementSvgInfo
-            {
-                get
-                {
-                    return _webelementsvgInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ProfileIdentifier item.
-            /// </summary>
-            [RepositoryItem("b415b883-ab69-4c29-a481-ae3d89fe9a81")]
-            public virtual Ranorex.DivTag ProfileIdentifier
-            {
-                get
-                {
-                    return _profileidentifierInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ProfileIdentifier item info.
-            /// </summary>
-            [RepositoryItemInfo("b415b883-ab69-4c29-a481-ae3d89fe9a81")]
-            public virtual RepoItemInfo ProfileIdentifierInfo
-            {
-                get
-                {
-                    return _profileidentifierInfo;
                 }
             }
 
@@ -4859,13 +5260,13 @@ namespace PrecisionRecruitment
         {
             RepoItemInfo _secretlinkInfo;
             RepoItemInfo _signoutbuttonInfo;
-            RepoItemInfo _settingsbuttonInfo;
-            RepoItemInfo _classicviewbuttonInfo;
             RepoItemInfo _platformsupportemailInfo;
             RepoItemInfo _accountbuttonInfo;
             RepoItemInfo _backtoinboxInfo;
             RepoItemInfo _selectallmessagescheckboxInfo;
             RepoItemInfo _deletebuttonInfo;
+            RepoItemInfo _forgotpasswordemailInfo;
+            RepoItemInfo _forgotpasswordlinkInfo;
 
             /// <summary>
             /// Creates a new GmailInbox  folder.
@@ -4875,13 +5276,13 @@ namespace PrecisionRecruitment
             {
                 _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$DOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
                 _signoutbuttonInfo = new RepoItemInfo(this, "SignOutButton", ".//a[@innertext~'Sign out']", 30000, null, "64e8a261-42d6-40a1-bd4b-b6dc572a70e2");
-                _settingsbuttonInfo = new RepoItemInfo(this, "SettingsButton", ".//div[#':28']/div[1]", 30000, null, "2533e1f1-70c6-4917-997b-089ac75c0ee1");
-                _classicviewbuttonInfo = new RepoItemInfo(this, "ClassicViewButton", ".//div[#':68']/div[@innertext='Go back to classic Gmail']", 30000, null, "fa5da4c0-af18-4033-ae28-25d85cdf8b49");
                 _platformsupportemailInfo = new RepoItemInfo(this, "PlatformSupportEmail", ".//div[#':3f']", 30000, null, "7be62e12-cde7-42b6-8184-6987243169a5");
                 _accountbuttonInfo = new RepoItemInfo(this, "AccountButton", ".//div[#'gb']/div[1]/div[1]/div/div[5]/?/?/a[@title~'Google Account:']/span", 30000, null, "c74d42ec-5ccc-46f8-b03a-79d3a329b79a");
                 _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div[2]/div[1]/div/div[1]/div/div/div", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
                 _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[#':35']/?/?/span/div", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
                 _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div/div", 30000, null, "0155202d-a183-4048-a7f7-aeb9677aa6fa");
+                _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span[#':3i']/b[@innertext='Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");
+                _forgotpasswordlinkInfo = new RepoItemInfo(this, "ForgotPasswordLink", ".//div//a[@innertext~$DOM]", 30000, null, "a1bd28f9-fa49-4070-b113-d58014026934");
             }
 
             /// <summary>
@@ -4953,54 +5354,6 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _signoutbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SettingsButton item.
-            /// </summary>
-            [RepositoryItem("2533e1f1-70c6-4917-997b-089ac75c0ee1")]
-            public virtual Ranorex.DivTag SettingsButton
-            {
-                get
-                {
-                    return _settingsbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SettingsButton item info.
-            /// </summary>
-            [RepositoryItemInfo("2533e1f1-70c6-4917-997b-089ac75c0ee1")]
-            public virtual RepoItemInfo SettingsButtonInfo
-            {
-                get
-                {
-                    return _settingsbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClassicViewButton item.
-            /// </summary>
-            [RepositoryItem("fa5da4c0-af18-4033-ae28-25d85cdf8b49")]
-            public virtual Ranorex.DivTag ClassicViewButton
-            {
-                get
-                {
-                    return _classicviewbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClassicViewButton item info.
-            /// </summary>
-            [RepositoryItemInfo("fa5da4c0-af18-4033-ae28-25d85cdf8b49")]
-            public virtual RepoItemInfo ClassicViewButtonInfo
-            {
-                get
-                {
-                    return _classicviewbuttonInfo;
                 }
             }
 
@@ -5121,6 +5474,54 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _deletebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ForgotPasswordEmail item.
+            /// </summary>
+            [RepositoryItem("dcf83ff9-d659-4a54-8b0b-d188c16e48d4")]
+            public virtual Ranorex.BTag ForgotPasswordEmail
+            {
+                get
+                {
+                    return _forgotpasswordemailInfo.CreateAdapter<Ranorex.BTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ForgotPasswordEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("dcf83ff9-d659-4a54-8b0b-d188c16e48d4")]
+            public virtual RepoItemInfo ForgotPasswordEmailInfo
+            {
+                get
+                {
+                    return _forgotpasswordemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ForgotPasswordLink item.
+            /// </summary>
+            [RepositoryItem("a1bd28f9-fa49-4070-b113-d58014026934")]
+            public virtual Ranorex.ATag ForgotPasswordLink
+            {
+                get
+                {
+                    return _forgotpasswordlinkInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ForgotPasswordLink item info.
+            /// </summary>
+            [RepositoryItemInfo("a1bd28f9-fa49-4070-b113-d58014026934")]
+            public virtual RepoItemInfo ForgotPasswordLinkInfo
+            {
+                get
+                {
+                    return _forgotpasswordlinkInfo;
                 }
             }
         }

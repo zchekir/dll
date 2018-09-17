@@ -40,7 +40,7 @@ namespace PrecisionRecruitment.UsersPage
         	
             //click on dropdown to expand the list of Studies Available
         	Report.Log(ReportLevel.Info,"Mouse click on AddRoleStudyDropdown");
-        	repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleStudyDropdown.Click();
+        	repo.CogstateSolutionPlatform.UsersPage.AddRoleStudyDropdown.Click();
         	Delay.Duration(1000);
         		
         	//find the study we want and select it
@@ -54,7 +54,7 @@ namespace PrecisionRecruitment.UsersPage
         {
             //click on dropdown to expand the list of Roles Available
         	Report.Log(ReportLevel.Info,"Mouse click on ExternalServiceRoleDropdown");
-        	repo.CogstateSolutionPlatform.ExternalUserPage.ExternalServiceRoleDropdown.Click();
+        	repo.CogstateSolutionPlatform.UsersPage.ExternalServiceRoleDropdown.Click();
         	
         	Keyboard.Press("External Service");
         	Thread.Sleep(500);        	

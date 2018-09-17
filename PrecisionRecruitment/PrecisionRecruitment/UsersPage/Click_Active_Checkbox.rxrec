@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="a12d2e2e-e4c7-482c-afab-5f0d9f31714f"
+id="d0b36409-67f8-42fe-bbca-2bc6dbe5acfc"
 mode="Global"
 rxversion="8.2">
 	<name>
-		Click_Add_External_User
+		Click_Active_Checkbox
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Click_Add_External_User"
+	classname="Click_Active_Checkbox"
 	namespace="PrecisionRecruitment.UsersPage">
 	</codegen>
 	<variables>
@@ -35,28 +35,28 @@ rxversion="8.2">
 		duration="100ms"
 		enabled="True"
 		loc="Center"
-		movetime="100ms"
+		movetime="1ms"
 		optional="False"
-		searchpropertyid="5f3bd736-4414-4678-bdc7-4b466816006f"
-		sx="1062"
-		sy="-876"
+		searchpropertyid="dd6f1394-a511-4687-9a54-ee5d87e476c0"
+		sx="287"
+		sy="-789"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="70cf92aa-2cef-4708-85df-af26b3756528"
+			id="aefd58c0-c293-45b8-b49b-bf3e17df4cdc"
 			sourcename="Recorder">
 				<element
-				capabilities="webelement, imgtag"
+				capabilities="webelement, inputtag"
 				dontcache="True"
 				enabled="True"
 				flavor="chromeweb"
 				hasfocus="False"
 				index="0"
-				prefcap="imgtag"
-				rect="1048,-892,30,35"
+				prefcap="inputtag"
+				rect="282,-794,13,13"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -64,17 +64,22 @@ rxversion="8.2">
 					<attribute
 					name="class"
 					type="System.String">
-						img-adjust
+						formly-field-checkbox ng-pristine ng-untouched ng-valid
 					</attribute>
 					<attribute
 					name="draggable"
 					type="System.String">
-						True
+						False
 					</attribute>
 					<attribute
 					name="hidden"
 					type="System.String">
 						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						formly_1_checkbox_active_5
 					</attribute>
 					<attribute
 					name="innertext"
@@ -83,43 +88,90 @@ rxversion="8.2">
 					<attribute
 					name="tagname"
 					type="System.String">
-						img
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						on
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
 					</attribute>
 					<attribute
 					name="height"
 					type="System.String">
-						30
-					</attribute>
-					<attribute
-					name="hspace"
-					type="System.String">
 						0
 					</attribute>
 					<attribute
-					name="src"
+					name="multiple"
 					type="System.String">
-						https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png
+						False
 					</attribute>
 					<attribute
-					name="vspace"
+					name="name"
 					type="System.String">
-						0
+						formly_1_checkbox_active_5
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						checkbox
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						on
 					</attribute>
 					<attribute
 					name="width"
 					type="System.String">
-						30
+						0
 					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="formly-custom-validation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[2]/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]//input[#'formly_1_checkbox_active_5']
 				</path>
 			</info>
 			<helperscreenshot
-			guid="cbd792d2-aca0-4f22-9738-96d5149932e6">
+			guid="815453a3-8c71-423b-b8f5-738a976383f8">
 				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
 YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABMAMADASIA
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA8AE4DASIA
 AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
 AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
 ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
@@ -127,31 +179,15 @@ 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
-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
-oooA/9k=
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDo6KKK
+YgooooAKKKKACiiigAooooAKKKKACormdbaBpnBKrjIHXripapav/wAgyb/gP/oQqW7I0pxUppPu
+Q/25bf8APOb8h/jR/blt/wA85vyH+NJFMkGmRzSRGTAUYVcsckAAVI8sUtnJJAVMbwOQV78VPvWv
+c2vS5uXl/H/gFu2nW5gWZAQrZwD164qWqGmyCLR0duihj+pp0FwEEgaUSlV38Nn6j8/51a1VzGpF
+Rm0u5doqrMbgWzMWQfLnKggj9aSSScPIIgrMu3Oc46H3pkFuiiigQVS1f/kGTf8AAf8A0IVdpros
+ilXUMp6gjIpNXVi4S5ZKXYxUuYTb20KTAt5kXy7TnO9c89KtX9pJAJrizTd5iMJYR/FkfeX/AGvU
+d/rU13aRiENBbIZFkRgEVQcBgTg8dgaz764u40P2yQQkgTRokmz7p+aPcOScEH60knazKnKPNeJc
+0pVm0q3OTtyW474Y1ckiWRlLdsj6g9qIYUgiEcYIUEnkknJOTyfc1JTSsrESlzScu5D9nBQo0kjA
+jaMkcf596ekYR2bJJYDJPtT6KZIUUUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 			</helperscreenshot>
 		</mouseitem>
 	</recorditems>
@@ -171,7 +207,7 @@ oooA/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Click_Add_External_User.UserCode.cs
+		Click_Active_Checkbox.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

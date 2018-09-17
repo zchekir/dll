@@ -33,5 +33,23 @@ namespace PrecisionRecruitment.UsersPage
             // Your recording specific initialization code goes here.
         }
 
+        public void Click_ExternalUsers(RepoItemInfo AdministrationButton, RepoItemInfo ExternalUsersButton)
+        {
+        	if (repo.CogstateSolutionPlatform.ExternalUsers.Visible)
+        	{
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExternalUsers' at Center.", ExternalUsersButton);
+            	ExternalUsersButton.FindAdapter<LabelTag>().Click();        		
+        	}
+        	else
+        	{
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Administration' at Center.", AdministrationButton);
+            	AdministrationButton.FindAdapter<LabelTag>().Click();
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExternalUsers' at Center.", ExternalUsersButton);
+            	ExternalUsersButton.FindAdapter<LabelTag>().Click(); 	
+        	}
+            
+
+        }
+
     }
 }

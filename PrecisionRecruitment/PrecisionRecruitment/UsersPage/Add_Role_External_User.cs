@@ -112,8 +112,8 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.AddRoleButton' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleButton.Click(300);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.AddRoleButton' at Center.", repo.CogstateSolutionPlatform.UsersPage.AddRoleButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.UsersPage.AddRoleButton.Click(300);
             Delay.Milliseconds(0);
             
             SelectStudyToAdd();
@@ -122,8 +122,8 @@ namespace PrecisionRecruitment.UsersPage
             SelectExternalServiceRole();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckbox' at 7;6.", repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckboxInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleActiveCheckbox.Click("7;6", 300);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.AddRoleActiveCheckbox' at 7;6.", repo.CogstateSolutionPlatform.UsersPage.AddRoleActiveCheckboxInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.UsersPage.AddRoleActiveCheckbox.Click("7;6", 300);
             Delay.Milliseconds(0);
             
             // Slight Delay waiting for Role to save
