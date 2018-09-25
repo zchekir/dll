@@ -93,6 +93,9 @@ namespace PrecisionRecruitment.LoginPage
             repo.CogstateSolutionPlatform.LoginForm.LoginButton.Click(3);
             Delay.Milliseconds(490);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
+            
         }
 
 #region Image Feature Data

@@ -27,6 +27,16 @@ rxversion="8.2">
 	namespace="PrecisionRecruitment.General">
 	</codegen>
 	<variables>
+		<var
+		id="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
+		name="GmailAddress">
+			ranorexcogstate@gmail.com
+		</var>
+		<var
+		id="a0d0c797-fa13-41e8-9218-9789ef1b9316"
+		name="GmailPassword">
+			Cogstate#1
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -405,7 +415,7 @@ AooooAKKKKACmn7woooAdRRRQB//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="dwoodcogstate@gmail.com"
+		KeySequence="ranorexcogstate@gmail.com"
 		duration="30ms"
 		enabled="True"
 		optional="False"
@@ -414,6 +424,10 @@ AooooAKKKKACmn7woooAdRRRQB//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="GmailAddress">
+				</binding>
 			</bindings>
 			<info
 			id="fc3a780c-d661-4032-a6c3-028ad6372319"
@@ -963,6 +977,10 @@ KKKACiiigAooooAKKKKACmn7woooAdRRRQB//9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="GmailPassword">
+				</binding>
 			</bindings>
 			<info
 			id="3d43d72b-f60e-45e9-9788-c3db8d1c5f02"

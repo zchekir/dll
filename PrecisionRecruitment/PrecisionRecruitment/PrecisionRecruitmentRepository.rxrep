@@ -714,6 +714,33 @@ rxversion="8.2">
 			</folder>
 			<folder
 			capname="unknown"
+			id="7dffd009-38d7-4850-833d-59d10b7067e6"
+			isrooted="False"
+			name="ExtractsPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="d8b5d71e-6368-4711-996d-5c3e18d31ac6"
+				name="ReportType"
+				refimgid="983e0b0d-d2ba-4577-b1eb-10be086ee2ad"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//select[#'reportType']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[#'reportType']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="e8f74239-df44-45da-9466-42c9bfdf1867"
+				name="DownloadExtractButton"
+				refimgid="342d71b9-adb0-4378-a3ec-5b785f0d599e"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div/div[2]/div/div[6]/tag[@tagname='cogstate-generic-list']/tag/div/div[2]/div/div/button[@innertext='DOWNLOAD EXTRACT  ']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[6]/?/?/tag[@tagname='cogstate-generic-extract-list']/div/div[2]/div/?/?/button[@innertext='DOWNLOAD EXTRACT&#160;&#160;']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
 			id="d0a0f503-3960-478e-83b6-4ea5d0728568"
 			isrooted="False"
 			name="LoginForm"
@@ -1449,6 +1476,26 @@ rxversion="8.2">
 				/dom[@domain=$DOM]//div[#'simple-dropdown']
 			</item>
 			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="2a7a9d54-916d-4235-992d-5f3467c7e139"
+			name="NextPageButton"
+			refimgid="b19e123c-1ffd-4c31-a5f9-e107c0c77c85"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-list-page']/div/ul/li[17]/a[@innertext='NEXT']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//ul/li[17]/a[@innertext='NEXT']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="9a3bd989-1f05-4532-a3e6-b64f8af89913"
+			name="PreviousPageButton"
+			refimgid="45f84cc2-a647-4f9b-a919-9c2cb11c92e9"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-list-page']/div/ul/li[1]/a[@innertext='PREVIOUS']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//ul/li[1]/a[@innertext='PREVIOUS']
+			</item>
+			<item
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="2ff93f8f-ef07-45c4-984d-6850602afb79"
@@ -1520,6 +1567,15 @@ rxversion="8.2">
 			refimgid="94a8f880-6c5b-42ac-b610-c48c06a92419"
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[5]/a[@innertext&gt;'Visit Schedules']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="3ab34206-ec79-41b0-a535-d773a9de8b28"
+			name="ExtractsTab"
+			refimgid="dce1b76e-216c-48c7-94aa-92589e745231"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[6]/a[@innertext='Extracts (1)']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -1741,25 +1797,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
-			id="7be62e12-cde7-42b6-8184-6987243169a5"
-			name="PlatformSupportEmail"
-			refimgid="da7c9935-f6f8-44d2-8b2c-d9f620507a50"
-			refpath="/dom[@domain='mail.google.com']//div[#':3f']"
-			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':3f']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="c74d42ec-5ccc-46f8-b03a-79d3a329b79a"
-			name="AccountButton"
-			refimgid="133a5117-4c6d-4256-8825-742715b0378b"
-			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#'gb']/div[1]/div[1]/div/div[5]/?/?/a[@title~'Google Account:']/span
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
 			id="41b979f7-c989-45a6-9476-8952d4227dc0"
 			name="BackToInbox"
 			refimgid="206e99b7-7333-425e-b16a-bcf9b43cf7d0"
@@ -1769,13 +1806,12 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
-			capname="divtag"
+			capname="spantag"
 			id="411c4add-47fd-4250-a4c7-10ec4625af19"
 			name="SelectAllMessagesCheckbox"
 			refimgid="e54203af-f89b-4337-8ba1-d2afc8b599dc"
-			refpath="/dom[@domain='mail.google.com']//div[#':35']/div[1]/span/div"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':35']/?/?/span/div
+				/dom[@domain='mail.google.com']//div[#':35']/?/?/span
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -1783,9 +1819,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="0155202d-a183-4048-a7f7-aeb9677aa6fa"
 			name="DeleteButton"
 			refimgid="bd0c784a-02b5-46aa-a03c-c45d1575bce7"
-			refpath="/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div/div"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div/div
+				/dom[@domain='mail.google.com']//div[#':5']/div[2]/div[1]/div/div[2]/div[3]/div
 			</item>
 			<item
 			addcaps="unknown,webelement,btag"
@@ -1806,6 +1841,24 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='mail.google.com']//div//a[@innertext~$DOM]
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="atag"
+			id="2468f073-1e7c-48a5-bbdc-af4e475eb9b9"
+			name="AccountButton"
+			refimgid="5b318b7a-ef46-44d7-9058-22005f42de61"
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//header[#'gb']/div[2]/div[3]//a[@href~'^https://accounts\.google\.c']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="105c6084-d31d-4f61-89ad-61d64d052748"
+			name="PlatformSupportEmail"
+			refimgid="1de3dba5-5fd7-468b-83f4-aef6573c9ead"
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//span/span[@innertext~'^Cogstate user account created']
+			</item>
 			<basepath>
 				/dom[@domain='mail.google.com']
 			</basepath>
@@ -1823,6 +1876,42 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="1c825908-6a91-4415-8adf-2cb54b5f8fc9"
+		isrooted="True"
+		name="CogstateSolutionPlatformChrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278"
+			name="DownloadedExtractFile"
+			refimgid="9d5a6dc2-d8af-4d55-b5e4-607849879960"
+			searchtimeout="30000ms">
+				/form[@title~'Cogstate Solution Platform']/container[@accessiblename~'^Cogstate\ Solution\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'extract']
+			</item>
+			<basepath>
+				/form[@title~'Cogstate Solution Platform']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

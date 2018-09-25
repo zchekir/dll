@@ -67,13 +67,13 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
         /// <summary>
         /// Checks if files in a directory exist.
         /// </summary>
-        /// <param name="path">The relative or absolute path to search for the files</param>
         /// <param name="pattern">The pattern to search for in the filename</param>
         /// <param name="expectedCount">Number of expected files to be found</param>
         /// <param name="timeout">Defines the search timeout in seconds</param>
         [UserCodeMethod]
-        public static void CheckFilesExist(string path, string pattern, int expectedCount, int timeout)
+        public static void CheckFilesExist(string pattern, int expectedCount, int timeout)
         {
+        	string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
             var listofFiles = Directory.GetFiles(path, pattern);
             var start = System.DateTime.Now;
 
@@ -85,15 +85,16 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
             Report.Info("Check if '" + expectedCount + "' file(s) with pattern '" + pattern + "' exist in the directory '" + path + "'. Search time " + timeout + " seconds.");
             Validate.AreEqual(listofFiles.Length, expectedCount);
         }
-
+        
+        
         /// <summary>
         /// Deletes files.
         /// </summary>
-        /// <param name="path">The relative or absolute path to search for the files</param>
         /// <param name="pattern">The pattern to search for in the filename</param>
         [UserCodeMethod]
-        public static void DeleteFiles(string path, string pattern)
+        public static void DeleteFiles(string pattern)
         {
+        	string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
             var listofFiles = Directory.GetFiles(path, pattern);
 
             if (listofFiles.Length == 0)

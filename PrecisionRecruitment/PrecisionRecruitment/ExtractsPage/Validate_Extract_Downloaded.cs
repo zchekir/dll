@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.General
+namespace PrecisionRecruitment.ExtractsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout_Gmail recording.
+    ///The Validate_Extract_Downloaded recording.
     /// </summary>
-    [TestModule("7a7be4ca-8ba5-4305-bd1d-e3a470d856b4", ModuleType.Recording, 1)]
-    public partial class Logout_Gmail : ITestModule
+    [TestModule("4488b4f0-9d37-4ce0-af17-188ef70d7a63", ModuleType.Recording, 1)]
+    public partial class Validate_Extract_Downloaded : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Logout_Gmail instance = new Logout_Gmail();
+        static Validate_Extract_Downloaded instance = new Validate_Extract_Downloaded();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout_Gmail()
+        public Validate_Extract_Downloaded()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout_Gmail Instance
+        public static Validate_Extract_Downloaded Instance
         {
             get { return instance; }
         }
@@ -79,19 +79,16 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.AccountButton' at Center.", repo.GmailInbox.AccountButtonInfo, new RecordItemIndex(0));
-            repo.GmailInbox.AccountButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatformChrome.DownloadedExtractFile'.", repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo);
+            Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SignOutButton' at Center.", repo.GmailInbox.SignOutButtonInfo, new RecordItemIndex(1));
-            repo.GmailInbox.SignOutButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Screenshot(ReportLevel.Info, "User", "Extract Generated Successfully", repo.CogstateSolutionPlatformChrome.Self, false, new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(2));
-            Delay.Duration(1500, false);
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist("extract*", ValueConverter.ArgumentFromString<int>("expectedCount", "1"), ValueConverter.ArgumentFromString<int>("timeout", "10"));
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'GoogleSignin'.", repo.GoogleSignin.SelfInfo, new RecordItemIndex(3));
-            Host.Current.CloseApplication(repo.GoogleSignin.Self, new Duration(0));
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.DeleteFiles("extract*");
             Delay.Milliseconds(0);
             
         }

@@ -79,16 +79,16 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.BackToInbox' at Center.", repo.GmailInbox.BackToInboxInfo, new RecordItemIndex(0));
-            repo.GmailInbox.BackToInbox.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.BackToInbox' at Center.", repo.GmailInbox.BackToInboxInfo, new RecordItemIndex(0));
+            //repo.GmailInbox.BackToInbox.Click();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SelectAllMessagesCheckbox' at Center.", repo.GmailInbox.SelectAllMessagesCheckboxInfo, new RecordItemIndex(1));
-            repo.GmailInbox.SelectAllMessagesCheckbox.Click();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SelectAllMessagesCheckbox' at Center.", repo.GmailInbox.SelectAllMessagesCheckboxInfo, new RecordItemIndex(1));
+            //repo.GmailInbox.SelectAllMessagesCheckbox.Click();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.DeleteButton' at Center.", repo.GmailInbox.DeleteButtonInfo, new RecordItemIndex(2));
-            repo.GmailInbox.DeleteButton.Click();
+            repo.GmailInbox.DeleteButton.Click("Center");
             Delay.Milliseconds(0);
             
         }

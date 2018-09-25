@@ -334,6 +334,12 @@ rxversion="8.2">
 					variableid="5f0211ea-1362-42e8-901b-6ec4e36f57d1"
 					variablename="ProtocolNumber">
 					</var>
+					<var
+					dataname="LocalityCode"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="64595a37-8550-4cf0-b1c8-273412ba41f5"
+					variablename="LocalityCode">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -549,6 +555,20 @@ rxversion="8.2">
 			name="Login_Gmail"
 			ref="be7da2ac-7a53-4abe-b613-0de37a8a2816"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="GmailPassword"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
+					variablename="GmailPassword">
+					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
+					variablename="GmailAddress">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="12caf4e1-81e4-4398-8387-d8631d42dbcd"
@@ -662,6 +682,12 @@ rxversion="8.2">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="16cdf3f7-7485-451a-b998-fff471a798c2"
+			name="Validate_Previous_Page"
+			ref="0d12c760-1f82-421e-b529-cda277d518a2"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="18a26115-1e88-4502-bd15-443ff7659200"
 			name="Validate_Min_BatteryName"
 			ref="b32de281-be93-4092-be55-f034d26105bb"
@@ -675,6 +701,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="197a41e9-176f-4466-a7bf-9f8aa6a956be"
+			name="setup">
+			</setup>
 			<testmodule
 			id="1a375575-32b4-42a2-b034-31bf3c87d69c"
 			name="Click_ProtocolNumber_Field"
@@ -851,6 +881,12 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1dcdbcc7-9343-4085-a666-109f5b9ad774"
+			name="Validate_Previous_Page"
+			ref="0d12c760-1f82-421e-b529-cda277d518a2"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="1f1ea207-7ad9-4ab3-aa67-2c8fd541f3c7"
@@ -1195,6 +1231,10 @@ rxversion="8.2">
 			minrange="0"
 			name="Add_Study">
 			</testcase>
+			<smartfoldernode
+			id="2ee6b25f-f8b0-45d6-86fb-b2e576d425dc"
+			name="Extract_Tests">
+			</smartfoldernode>
 			<testcase
 			id="2efd8724-c480-4a0f-8b8d-60bce3c0f1fd"
 			maxrange="3"
@@ -1490,6 +1530,12 @@ rxversion="8.2">
 			id="410ace10-17a9-439c-8462-7f9adb828397"
 			name="Card_View">
 			</testcase>
+			<testmodule
+			id="430a094f-65a8-4db4-be14-0f981503e9fc"
+			name="Validate_Extract_Downloaded"
+			ref="4488b4f0-9d37-4ce0-af17-188ef70d7a63"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="DataConnector"
@@ -1500,6 +1546,10 @@ rxversion="8.2">
 			</testcase>
 			<teardown
 			id="439f8484-46fd-47d4-ba6c-a86ccd0cd49d"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="43a30475-a3e8-4922-86d6-ce75566c783f"
 			name="teardown">
 			</teardown>
 			<modulegroup
@@ -1531,6 +1581,31 @@ rxversion="8.2">
 			id="4721aeb0-9fd1-4573-b857-881f4b92c516"
 			name="teardown">
 			</teardown>
+			<modulegroup
+			id="47afebd4-2671-4678-807e-348b57988113"
+			name="Login"
+			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
+				<databinding>
+					<var
+					dataname="Password"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</modulegroup>
 			<smartfoldernode
 			datasource="WorkflowTemplateConnector"
 			errorbehavior="ContinueNextIteration"
@@ -1629,6 +1704,20 @@ rxversion="8.2">
 			id="4e27e7c9-9223-43d2-916f-a50c1c120e67"
 			name="Click_BatteryPopulation_Dropdown"
 			ref="da624500-bd59-4b98-8342-15699025ce78"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4e93b643-21fa-484b-bc91-84432f23458c"
+			name="Select_PR_Extract"
+			ref="83aa1e02-85d2-4526-b992-2fc4405345e3"
 			type="Recording">
 				<databinding>
 					<var
@@ -1833,6 +1922,31 @@ rxversion="8.2">
 			id="559cec2c-d52b-4664-ac72-472c4b326ef6"
 			name="setup">
 			</setup>
+			<modulegroup
+			id="562dea14-bc13-4270-9e45-3d9a742dae08"
+			name="Login"
+			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
+				<databinding>
+					<var
+					dataname="Password"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testcase
 			datarangeactive="True"
 			datasource="DataConnector"
@@ -1841,6 +1955,20 @@ rxversion="8.2">
 			minrange="0"
 			name="Required_VisitSchedule_Fields">
 			</testcase>
+			<testmodule
+			id="56aeee82-3364-4bff-b51e-0e9ee8442559"
+			name="Open_Browser"
+			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
+					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="5711f80c-796d-47de-bd69-79221c12de2b"
 			name="Validate_Required_VisitSchedule_Fields"
@@ -2006,6 +2134,14 @@ rxversion="8.2">
 					name="VisitSessionID"
 					value="">
 					</param>
+					<param
+					name="GmailAddress"
+					value="ranorexcogstate@gmail.com">
+					</param>
+					<param
+					name="GmailPassword"
+					value="Cogstate#1">
+					</param>
 				</parameters>
 			</testcase>
 			<modulegroup
@@ -2033,6 +2169,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="5bf21c51-8eb3-4d8e-9c25-a2507625570a"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="5c10794a-17d2-43bb-9a98-5fc80cb10929"
 			name="Click_Add_Workflow"
@@ -2255,6 +2405,20 @@ rxversion="8.2">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="66e87624-e9e7-4833-9183-b56c49024868"
+			name="Click_DownloadExtract_Button"
+			ref="234b1f5c-68a2-482c-83c2-19a84626ffef"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="68c928d0-af6e-4981-997e-ab220a2fd2dd"
 			name="Enter_WorkflowTemplate"
 			ref="038f892a-56da-4728-bb1c-ad7a56abce64"
@@ -2271,6 +2435,20 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="699465f1-0aea-42ff-af7e-a885482f2f5c"
+			name="Open_Browser"
+			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
+					variablename="URL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2367,6 +2545,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="6adad553-a1da-41e3-9242-0101daeafd0d"
+			name="Click_Extracts_Tab"
+			ref="d5368a46-4f21-4c59-9938-9575f485d7cb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="6be27a57-e13f-41bb-b683-4697b7560edc"
 			name="teardown">
@@ -2435,6 +2627,14 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="DataConnector"
+			id="702d7364-d105-4608-94ab-44ad3baf1cfd"
+			maxrange="0"
+			minrange="0"
+			name="Generate_Extract">
+			</testcase>
 			<testcase
 			datarangeactive="True"
 			datasource="DataConnector"
@@ -2599,6 +2799,10 @@ rxversion="8.2">
 			id="77c83359-dd90-4ef5-adf6-ed24340625d1"
 			name="teardown">
 			</teardown>
+			<setup
+			id="788454a8-a2b4-49a2-a9db-c9a5e82a7688"
+			name="setup">
+			</setup>
 			<testmodule
 			id="78a46eb0-3830-442d-8a11-1e927557a693"
 			name="Enter_ExternalUser_Email"
@@ -2990,6 +3194,20 @@ rxversion="8.2">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="819e919b-d967-41c5-b4a9-802cf1df1c38"
+			name="Click_DownloadExtract_Button"
+			ref="234b1f5c-68a2-482c-83c2-19a84626ffef"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="827ced76-8bb1-46d8-9667-5f85a212f0d2"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -3018,6 +3236,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="85ab19b5-0c9a-482e-bf96-7ec0007acb34"
+			name="Validate_Next_Page"
+			ref="0144221d-bb4e-4d1a-b529-e70e7d2762c6"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="85da8a7a-7976-4ef0-b581-63315af9d060"
 			name="Enter_Password"
 			ref="c6481925-2e15-4f67-a2ad-a2a6ebdcf123"
@@ -3037,6 +3261,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="86c3d8bb-4125-4359-83f4-700969e8b8fc"
+			name="teardown">
+			</teardown>
 			<modulegroup
 			id="87308421-e003-43de-b911-e4b181386dbd"
 			name="Login"
@@ -3232,6 +3460,20 @@ rxversion="8.2">
 			minrange="0"
 			name="Check_Localities">
 			</testcase>
+			<testmodule
+			id="93415ec9-749d-4cbc-9d45-8bafd4a87637"
+			name="Open_Browser"
+			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
+					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="948715ce-b87b-47fa-a95f-1a36bf40bb3a"
 			name="Close_Browser"
@@ -3691,6 +3933,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a9f796dc-5909-41db-af80-89bbac377bfb"
+			name="Click_Extracts_Tab"
+			ref="d5368a46-4f21-4c59-9938-9575f485d7cb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ab52b956-7ed8-4b61-8039-38a90417d4f4"
 			name="Validate_Internal_User"
 			ref="a25819c9-4d97-4762-98ba-fa0c441afdd4"
@@ -3741,6 +3997,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="ad136ffd-1a89-414f-b892-a97d99c63ab8"
+			name="Select_PR_Extract"
+			ref="83aa1e02-85d2-4526-b992-2fc4405345e3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="ad453d73-e1cd-4f23-9cd2-8e5268e0fb85"
 			name="Click_LoginButton"
@@ -3804,6 +4074,32 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
 					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b157b668-da99-42ea-ba45-33ac4179304c"
+			name="Select_Study"
+			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4130,6 +4426,31 @@ rxversion="8.2">
 			minrange="0"
 			name="Locality_Tests">
 			</smartfoldernode>
+			<modulegroup
+			id="bc2ee28c-3de6-4fb9-acd3-338ff0808de1"
+			name="Login"
+			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
+				<databinding>
+					<var
+					dataname="Password"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="bc8dd1d0-3b7f-4c0b-8829-e805c3f7a75c"
 			name="Click_Logout"
@@ -4218,6 +4539,20 @@ rxversion="8.2">
 			id="bf51bb6e-e9c8-4d33-83bd-538ee26ea770"
 			name="Click_Add_Battery"
 			ref="0575b509-0e3e-42a6-ad38-468c9fa762e5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bfa1fed4-4528-427c-afe8-dfa0bdb55566"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
 			type="Recording">
 				<databinding>
 					<var
@@ -4335,6 +4670,10 @@ rxversion="8.2">
 			id="c7b7859a-d580-4cd7-a03d-04f5326619c0"
 			name="setup">
 			</setup>
+			<teardown
+			id="c8353976-bc63-4cdd-8788-016acd6907d2"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="c8b94cb1-1790-445e-9898-b8736b9ef259"
 			name="Enter_LastName"
@@ -4353,6 +4692,12 @@ rxversion="8.2">
 			id="c8e5970c-37dc-47ef-b6a1-a47e58c9ba97"
 			name="setup">
 			</setup>
+			<testmodule
+			id="c96cf7cb-0de9-43f1-887a-48c4e815ed00"
+			name="Validate_Extract_Downloaded"
+			ref="4488b4f0-9d37-4ce0-af17-188ef70d7a63"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c9cf21fa-6f3c-4345-9bc6-c571583efefd"
 			name="Close_Browser"
@@ -4544,6 +4889,14 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="DataConnector"
+			id="d41fc5cc-e407-43eb-9206-a29bf8d77f65"
+			maxrange="0"
+			minrange="0"
+			name="Generate_PR_Extract">
+			</testcase>
 			<testmodule
 			id="d48db4dc-9311-4bf0-b5b8-ae37ef4f065f"
 			name="Click_Battery_Block"
@@ -4587,6 +4940,12 @@ rxversion="8.2">
 					variablename="ProtocolNumber">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="d624561c-9fc8-4d74-ad69-5bced5c4a692"
+			name="Validate_Previous_Page"
+			ref="0d12c760-1f82-421e-b529-cda277d518a2"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="d66dd179-dc0c-4cdb-8279-2a687ad98c50"
@@ -5016,6 +5375,12 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e63049eb-defe-41c9-93bb-d8fdd558b627"
+			name="Validate_Next_Page"
+			ref="0144221d-bb4e-4d1a-b529-e70e7d2762c6"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="e6aff0d1-e901-42b6-8bbf-4d1cc98f5107"
 			name="Click_SaveVisitSchedule"
 			ref="507b6a76-fe57-451c-b34f-409b723c2154"
@@ -5235,6 +5600,10 @@ rxversion="8.2">
 			id="eed9cd2e-23bc-423b-b540-6974a2818ce7"
 			name="setup">
 			</setup>
+			<testcase
+			id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db"
+			name="Edit_Participant_Profile">
+			</testcase>
 			<testmodule
 			id="f2519af8-d2e0-4881-aa29-ff839019235b"
 			name="Open_Browser"
@@ -5292,6 +5661,12 @@ rxversion="8.2">
 					variablename="ProjectName">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="f384831c-fc57-46c3-906c-021f0ebca791"
+			name="Validate_Next_Page"
+			ref="0144221d-bb4e-4d1a-b529-e70e7d2762c6"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="f437af3c-96a7-4a48-aa4e-89dda8f8a510"
@@ -5388,6 +5763,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="f78cabb3-dc72-4422-b0d4-0c45c16b2cdd"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f7928fc6-f754-4d20-8531-2a9a0eb38109"
 			name="Extract_API_Secret"
 			ref="7ff6da60-55e1-4301-91ca-11c15fef8027"
@@ -5439,6 +5828,10 @@ rxversion="8.2">
 			id="f8f01fb8-537c-472a-b9b8-4dec65c21ba6"
 			name="teardown">
 			</teardown>
+			<setup
+			id="f91e6140-d2cb-4028-89fd-0eb852eb5847"
+			name="setup">
+			</setup>
 			<smartfoldernode
 			id="f944f793-e516-4d2d-b68f-971da09a24fa"
 			name="Workflow_Tests">
@@ -5577,6 +5970,32 @@ rxversion="8.2">
 			id="fe7a9bcf-3c81-428c-8db3-64f1def68b0b"
 			name="VisitSchedule_Tests">
 			</smartfoldernode>
+			<testmodule
+			id="fed932c2-85e8-44a5-90c8-91e5d4b99d48"
+			name="Select_Study"
+			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ProjectName"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="ff3658a3-73f3-4023-8546-6746c3a016c7"
 			name="teardown">
@@ -6087,6 +6506,50 @@ rxversion="8.2">
 						<testcase
 						id="9edeae7f-6db2-4dd0-834f-ecc2f8f26849"
 						name="Study_Pagination">
+							<setup
+							id="f91e6140-d2cb-4028-89fd-0eb852eb5847"
+							name="setup">
+								<testmodule
+								id="699465f1-0aea-42ff-af7e-a885482f2f5c"
+								name="Open_Browser">
+								</testmodule>
+								<modulegroup
+								id="562dea14-bc13-4270-9e45-3d9a742dae08"
+								name="Login">
+								</modulegroup>
+							</setup>
+							<testmodule
+							id="f384831c-fc57-46c3-906c-021f0ebca791"
+							name="Validate_Next_Page">
+							</testmodule>
+							<testmodule
+							id="85ab19b5-0c9a-482e-bf96-7ec0007acb34"
+							name="Validate_Next_Page">
+							</testmodule>
+							<testmodule
+							id="e63049eb-defe-41c9-93bb-d8fdd558b627"
+							name="Validate_Next_Page">
+							</testmodule>
+							<testmodule
+							id="1dcdbcc7-9343-4085-a666-109f5b9ad774"
+							name="Validate_Previous_Page">
+							</testmodule>
+							<testmodule
+							id="16cdf3f7-7485-451a-b998-fff471a798c2"
+							name="Validate_Previous_Page">
+							</testmodule>
+							<testmodule
+							id="d624561c-9fc8-4d74-ad69-5bced5c4a692"
+							name="Validate_Previous_Page">
+							</testmodule>
+							<teardown
+							id="86c3d8bb-4125-4359-83f4-700969e8b8fc"
+							name="teardown">
+								<testmodule
+								id="5bf21c51-8eb3-4d8e-9c25-a2507625570a"
+								name="Close_Browser">
+								</testmodule>
+							</teardown>
 						</testcase>
 						<testcase
 						id="410ace10-17a9-439c-8462-7f9adb828397"
@@ -6890,6 +7353,54 @@ rxversion="8.2">
 						</teardown>
 					</smartfoldernode>
 					<smartfoldernode
+					id="2ee6b25f-f8b0-45d6-86fb-b2e576d425dc"
+					name="Extract_Tests">
+						<testcase
+						id="d41fc5cc-e407-43eb-9206-a29bf8d77f65"
+						name="Generate_PR_Extract">
+							<setup
+							id="197a41e9-176f-4466-a7bf-9f8aa6a956be"
+							name="setup">
+								<testmodule
+								id="93415ec9-749d-4cbc-9d45-8bafd4a87637"
+								name="Open_Browser">
+								</testmodule>
+								<modulegroup
+								id="47afebd4-2671-4678-807e-348b57988113"
+								name="Login">
+								</modulegroup>
+							</setup>
+							<testmodule
+							id="b157b668-da99-42ea-ba45-33ac4179304c"
+							name="Select_Study">
+							</testmodule>
+							<testmodule
+							id="6adad553-a1da-41e3-9242-0101daeafd0d"
+							name="Click_Extracts_Tab">
+							</testmodule>
+							<testmodule
+							id="ad136ffd-1a89-414f-b892-a97d99c63ab8"
+							name="Select_PR_Extract">
+							</testmodule>
+							<testmodule
+							id="819e919b-d967-41c5-b4a9-802cf1df1c38"
+							name="Click_DownloadExtract_Button">
+							</testmodule>
+							<testmodule
+							id="c96cf7cb-0de9-43f1-887a-48c4e815ed00"
+							name="Validate_Extract_Downloaded">
+							</testmodule>
+							<teardown
+							id="c8353976-bc63-4cdd-8788-016acd6907d2"
+							name="teardown">
+								<testmodule
+								id="bfa1fed4-4528-427c-afe8-dfa0bdb55566"
+								name="Close_Browser">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
 					id="12672266-c3e5-4da0-bf18-959502d59662"
 					name="Regression">
 						<setup
@@ -7168,6 +7679,54 @@ rxversion="8.2">
 								</testmodule>
 							</teardown>
 						</testcase>
+						<testcase
+						id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db"
+						name="Edit_Participant_Profile">
+						</testcase>
+						<testcase
+						id="702d7364-d105-4608-94ab-44ad3baf1cfd"
+						name="Generate_Extract">
+							<setup
+							id="788454a8-a2b4-49a2-a9db-c9a5e82a7688"
+							name="setup">
+								<testmodule
+								id="56aeee82-3364-4bff-b51e-0e9ee8442559"
+								name="Open_Browser">
+								</testmodule>
+								<modulegroup
+								id="bc2ee28c-3de6-4fb9-acd3-338ff0808de1"
+								name="Login">
+								</modulegroup>
+							</setup>
+							<testmodule
+							id="fed932c2-85e8-44a5-90c8-91e5d4b99d48"
+							name="Select_Study">
+							</testmodule>
+							<testmodule
+							id="a9f796dc-5909-41db-af80-89bbac377bfb"
+							name="Click_Extracts_Tab">
+							</testmodule>
+							<testmodule
+							id="4e93b643-21fa-484b-bc91-84432f23458c"
+							name="Select_PR_Extract">
+							</testmodule>
+							<testmodule
+							id="66e87624-e9e7-4833-9183-b56c49024868"
+							name="Click_DownloadExtract_Button">
+							</testmodule>
+							<testmodule
+							id="430a094f-65a8-4db4-be14-0f981503e9fc"
+							name="Validate_Extract_Downloaded">
+							</testmodule>
+							<teardown
+							id="43a30475-a3e8-4922-86d6-ce75566c783f"
+							name="teardown">
+								<testmodule
+								id="f78cabb3-dc72-4422-b0d4-0c45c16b2cdd"
+								name="Close_Browser">
+								</testmodule>
+							</teardown>
+						</testcase>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -7241,6 +7800,9 @@ rxversion="8.2">
 				</column>
 				<column>
 					Locality
+				</column>
+				<column>
+					LocalityCode
 				</column>
 				<column>
 					Datafile
@@ -7408,6 +7970,9 @@ rxversion="8.2">
 			id="6e082396-bffa-4d84-b254-0da30d111799">
 			</testcontainer>
 			<testcontainer
+			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			</testcontainer>
+			<testcontainer
 			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
 			</testcontainer>
 			<testcontainer
@@ -7430,6 +7995,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="d9370862-f39d-4fcf-914c-685da7a04574">
+			</testcontainer>
+			<testcontainer
+			id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

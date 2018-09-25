@@ -35,7 +35,7 @@ rxversion="8.2">
 		duration="100ms"
 		enabled="True"
 		loc="Center"
-		movetime="100ms"
+		movetime="1ms"
 		optional="False"
 		searchpropertyid="c8fe1b92-98dd-4dd6-9514-74d2caf69959"
 		sx="1875"
@@ -46,10 +46,10 @@ rxversion="8.2">
 			<bindings>
 			</bindings>
 			<info
-			id="c74d42ec-5ccc-46f8-b03a-79d3a329b79a"
+			id="2468f073-1e7c-48a5-bbdc-af4e475eb9b9"
 			sourcename="Recorder">
 				<path>
-					/dom[@domain='mail.google.com']//div[#'gb']/div[1]/div[1]/div/div[5]/?/?/a[@title~'Google Account:']/span
+					/dom[@domain='mail.google.com']//header[#'gb']/div[2]/div[3]//a[@href~'^https://accounts\.google\.c']
 				</path>
 			</info>
 		</mouseitem>
@@ -59,7 +59,7 @@ rxversion="8.2">
 		duration="100ms"
 		enabled="True"
 		loc="Center"
-		movetime="100ms"
+		movetime="1ms"
 		optional="False"
 		searchpropertyid="4990c230-ac26-42ff-8285-03cbac449ab8"
 		sx="1842"
@@ -171,6 +171,15 @@ gbRRtFFFABtFG0UUUAG0UbRRRQAbRRtFFFABtFG0UUUAG0VTmUec/wBR/KiigB1uo8z8KtbRRRQA
 bRRtFFFABtFG0UUUAAFVr/7kX/XT+hoopoTBPu0UUUhn/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<closeapprecorditem
 		enabled="True"
 		graceperiod="0ms"
@@ -182,10 +191,10 @@ bRRtFFFABtFG0UUUAAFVr/7kX/XT+hoopoTBPu0UUUhn/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="b3ba678a-948b-43d6-9d56-176707cb02e6"
+			id="b26f2e45-c612-4b60-8fd8-0363680b055b"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/dom[@domain='mail.google.com']
+					/dom[@domain='accounts.google.com']
 				</path>
 			</info>
 		</closeapprecorditem>

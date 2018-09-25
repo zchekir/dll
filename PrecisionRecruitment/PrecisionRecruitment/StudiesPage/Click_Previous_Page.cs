@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.General
+namespace PrecisionRecruitment.StudiesPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout_Gmail recording.
+    ///The Click_Previous_Page recording.
     /// </summary>
-    [TestModule("7a7be4ca-8ba5-4305-bd1d-e3a470d856b4", ModuleType.Recording, 1)]
-    public partial class Logout_Gmail : ITestModule
+    [TestModule("04fd8901-f09e-4136-8f5f-114eb0f04410", ModuleType.Recording, 1)]
+    public partial class Click_Previous_Page : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Logout_Gmail instance = new Logout_Gmail();
+        static Click_Previous_Page instance = new Click_Previous_Page();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout_Gmail()
+        public Click_Previous_Page()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout_Gmail Instance
+        public static Click_Previous_Page Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
 
 #endregion
 
@@ -79,19 +89,8 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.AccountButton' at Center.", repo.GmailInbox.AccountButtonInfo, new RecordItemIndex(0));
-            repo.GmailInbox.AccountButton.Click(1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SignOutButton' at Center.", repo.GmailInbox.SignOutButtonInfo, new RecordItemIndex(1));
-            repo.GmailInbox.SignOutButton.Click(1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(2));
-            Delay.Duration(1500, false);
-            
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'GoogleSignin'.", repo.GoogleSignin.SelfInfo, new RecordItemIndex(3));
-            Host.Current.CloseApplication(repo.GoogleSignin.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.PreviousPageButton' at Center.", repo.CogstateSolutionPlatform.PreviousPageButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.PreviousPageButton.Click();
             Delay.Milliseconds(0);
             
         }
