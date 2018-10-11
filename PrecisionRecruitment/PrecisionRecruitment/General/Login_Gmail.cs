@@ -105,35 +105,10 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.RanorexUserAccount' at Center.", repo.GoogleSignin.RanorexUserAccountInfo, new RecordItemIndex(0));
-            repo.GoogleSignin.RanorexUserAccount.Click();
+            Select_Ranorex_Account(repo.GoogleSignin.RanorexUserAccountMultipleInfo, repo.GoogleSignin.PasswordFieldInfo, repo.GoogleSignin.RanorexUserAccountSingleInfo, repo.GoogleSignin.EmailFieldInfo, repo.GoogleSignin.EmailNextButtonInfo);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.EmailField' at Center.", repo.GoogleSignin.EmailFieldInfo, new RecordItemIndex(1));
-            //repo.GoogleSignin.EmailField.Click(1);
-            //Delay.Milliseconds(90);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'GoogleSignin.EmailField'.", repo.GoogleSignin.EmailFieldInfo, new RecordItemIndex(2));
-            //repo.GoogleSignin.EmailField.PressKeys(GmailAddress, 1);
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.EmailNextButton' at Center.", repo.GoogleSignin.EmailNextButtonInfo, new RecordItemIndex(3));
-            //repo.GoogleSignin.EmailNextButton.Click(1);
-            //Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.PasswordField' at Center.", repo.GoogleSignin.PasswordFieldInfo, new RecordItemIndex(4));
-            repo.GoogleSignin.PasswordField.Click(1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'GoogleSignin.PasswordField'.", repo.GoogleSignin.PasswordFieldInfo, new RecordItemIndex(5));
-            repo.GoogleSignin.PasswordField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailPassword' with focus on 'GoogleSignin.PasswordField'.", repo.GoogleSignin.PasswordFieldInfo, new RecordItemIndex(6));
-            repo.GoogleSignin.PasswordField.PressKeys(GmailPassword, 1);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.PasswordNextButton' at Center.", repo.GoogleSignin.PasswordNextButtonInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.PasswordNextButton' at Center.", repo.GoogleSignin.PasswordNextButtonInfo, new RecordItemIndex(1));
             repo.GoogleSignin.PasswordNextButton.Click(1);
             Delay.Milliseconds(90);
             

@@ -5749,8 +5749,8 @@ namespace PrecisionRecruitment
             RepoItemInfo _emailnextbuttonInfo;
             RepoItemInfo _passwordfieldInfo;
             RepoItemInfo _passwordnextbuttonInfo;
-            RepoItemInfo _ranorexuseraccountnewInfo;
-            RepoItemInfo _ranorexuseraccountInfo;
+            RepoItemInfo _ranorexuseraccountmultipleInfo;
+            RepoItemInfo _ranorexuseraccountsingleInfo;
 
             /// <summary>
             /// Creates a new GoogleSignin  folder.
@@ -5763,8 +5763,8 @@ namespace PrecisionRecruitment
                 _emailnextbuttonInfo = new RepoItemInfo(this, "EmailNextButton", ".//div[#'identifierNext']/?/?/span[@innertext='Next']", 30000, null, "ec53e776-3a8e-44d6-9208-a6e94f3ede4e");
                 _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//div[#'password']//input[@name='password']", 30000, null, "3d43d72b-f60e-45e9-9788-c3db8d1c5f02");
                 _passwordnextbuttonInfo = new RepoItemInfo(this, "PasswordNextButton", ".//div[#'passwordNext']//span[@innertext='Next']", 30000, null, "4001ae90-b375-4e97-8208-4553c98d2d13");
-                _ranorexuseraccountnewInfo = new RepoItemInfo(this, "RanorexUserAccountNew", ".//button[@id~'choose-account-[0-9]']/span[@innertext='ranorexcogstate@gmail.com']", 30000, null, "10f3bced-6c10-417b-a010-2c63a973ed6e");
-                _ranorexuseraccountInfo = new RepoItemInfo(this, "RanorexUserAccount", ".//div[#'view_container']//p[@innertext='ranorexcogstate@gmail.com']", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
+                _ranorexuseraccountmultipleInfo = new RepoItemInfo(this, "RanorexUserAccountMultiple", ".//div[#'view_container']//p[@innertext='ranorexcogstate@gmail.com']", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
+                _ranorexuseraccountsingleInfo = new RepoItemInfo(this, "RanorexUserAccountSingle", ".//div[#'view_container']//div[@innertext='ranorexcogstate@gmail.com']", 30000, null, "26950d79-cb5d-46ca-bcdc-f2244b470f30");
             }
 
             /// <summary>
@@ -5912,50 +5912,50 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
-            /// The RanorexUserAccountNew item.
-            /// </summary>
-            [RepositoryItem("10f3bced-6c10-417b-a010-2c63a973ed6e")]
-            public virtual Ranorex.SpanTag RanorexUserAccountNew
-            {
-                get
-                {
-                    return _ranorexuseraccountnewInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RanorexUserAccountNew item info.
-            /// </summary>
-            [RepositoryItemInfo("10f3bced-6c10-417b-a010-2c63a973ed6e")]
-            public virtual RepoItemInfo RanorexUserAccountNewInfo
-            {
-                get
-                {
-                    return _ranorexuseraccountnewInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RanorexUserAccount item.
+            /// The RanorexUserAccountMultiple item.
             /// </summary>
             [RepositoryItem("45c4abdc-9001-40db-bba4-e9a0d0d810ba")]
-            public virtual Ranorex.PTag RanorexUserAccount
+            public virtual Ranorex.PTag RanorexUserAccountMultiple
             {
                 get
                 {
-                    return _ranorexuseraccountInfo.CreateAdapter<Ranorex.PTag>(true);
+                    return _ranorexuseraccountmultipleInfo.CreateAdapter<Ranorex.PTag>(true);
                 }
             }
 
             /// <summary>
-            /// The RanorexUserAccount item info.
+            /// The RanorexUserAccountMultiple item info.
             /// </summary>
             [RepositoryItemInfo("45c4abdc-9001-40db-bba4-e9a0d0d810ba")]
-            public virtual RepoItemInfo RanorexUserAccountInfo
+            public virtual RepoItemInfo RanorexUserAccountMultipleInfo
             {
                 get
                 {
-                    return _ranorexuseraccountInfo;
+                    return _ranorexuseraccountmultipleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RanorexUserAccountSingle item.
+            /// </summary>
+            [RepositoryItem("26950d79-cb5d-46ca-bcdc-f2244b470f30")]
+            public virtual Ranorex.DivTag RanorexUserAccountSingle
+            {
+                get
+                {
+                    return _ranorexuseraccountsingleInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RanorexUserAccountSingle item info.
+            /// </summary>
+            [RepositoryItemInfo("26950d79-cb5d-46ca-bcdc-f2244b470f30")]
+            public virtual RepoItemInfo RanorexUserAccountSingleInfo
+            {
+                get
+                {
+                    return _ranorexuseraccountsingleInfo;
                 }
             }
         }

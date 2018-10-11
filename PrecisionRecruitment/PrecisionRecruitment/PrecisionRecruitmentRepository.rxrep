@@ -1876,22 +1876,22 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				/dom[@domain='accounts.google.com']//div[#'passwordNext']//span[@innertext='Next']
 			</item>
 			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="10f3bced-6c10-417b-a010-2c63a973ed6e"
-			name="RanorexUserAccountNew"
-			refimgid="3f40ba90-c784-4347-b7ad-677a378a9260"
-			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//button[@id~'choose-account-[0-9]']/span[@innertext='ranorexcogstate@gmail.com']
-			</item>
-			<item
 			addcaps="unknown,webelement,ptag"
 			capname="ptag"
 			id="45c4abdc-9001-40db-bba4-e9a0d0d810ba"
-			name="RanorexUserAccount"
+			name="RanorexUserAccountMultiple"
 			refimgid="59d5130b-8512-45c9-a1ef-7c1d7581d3ac"
 			searchtimeout="30000ms">
 				/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext='ranorexcogstate@gmail.com']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="26950d79-cb5d-46ca-bcdc-f2244b470f30"
+			name="RanorexUserAccountSingle"
+			refimgid="437f321c-6f0c-4222-b66d-93e980b807c7"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'view_container']//div[@innertext='ranorexcogstate@gmail.com']
 			</item>
 			<basepath>
 				/dom[@domain='accounts.google.com']
