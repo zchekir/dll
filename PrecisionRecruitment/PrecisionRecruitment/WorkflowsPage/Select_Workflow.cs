@@ -111,8 +111,8 @@ namespace PrecisionRecruitment.WorkflowsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowsTab' at Center.", repo.CogstateSolutionPlatform.WorkflowsTabInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.WorkflowsTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.WorkflowsTab' at Center.", repo.CogstateSolutionPlatform.StudyTabs.WorkflowsTabInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyTabs.WorkflowsTab.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowName' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));

@@ -39,7 +39,7 @@ namespace PrecisionRecruitment.StudiesPage
             Delay.Duration(500, false);
             
             //Force focus on the locality to make sure we can select it
-            repo.CogstateSolutionPlatform.StudySettings.Locality.Select();
+            repo.CogstateSolutionPlatform.StudyPage.Locality.Select();
         }
 
     }

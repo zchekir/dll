@@ -93,6 +93,9 @@ namespace PrecisionRecruitment.General
             repo.CogstateSolutionPlatform.Expanded.SaveButton.Click(3);
             Delay.Milliseconds(490);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
         }
 
 #region Image Feature Data

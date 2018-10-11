@@ -105,21 +105,21 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.UseAnotherAccountButton' at Center.", repo.GoogleSignin.UseAnotherAccountButtonInfo, new RecordItemIndex(0));
-            repo.GoogleSignin.UseAnotherAccountButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.RanorexUserAccount' at Center.", repo.GoogleSignin.RanorexUserAccountInfo, new RecordItemIndex(0));
+            repo.GoogleSignin.RanorexUserAccount.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.EmailField' at Center.", repo.GoogleSignin.EmailFieldInfo, new RecordItemIndex(1));
-            repo.GoogleSignin.EmailField.Click(1);
-            Delay.Milliseconds(90);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.EmailField' at Center.", repo.GoogleSignin.EmailFieldInfo, new RecordItemIndex(1));
+            //repo.GoogleSignin.EmailField.Click(1);
+            //Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'GoogleSignin.EmailField'.", repo.GoogleSignin.EmailFieldInfo, new RecordItemIndex(2));
-            repo.GoogleSignin.EmailField.PressKeys(GmailAddress, 1);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'GoogleSignin.EmailField'.", repo.GoogleSignin.EmailFieldInfo, new RecordItemIndex(2));
+            //repo.GoogleSignin.EmailField.PressKeys(GmailAddress, 1);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.EmailNextButton' at Center.", repo.GoogleSignin.EmailNextButtonInfo, new RecordItemIndex(3));
-            repo.GoogleSignin.EmailNextButton.Click(1);
-            Delay.Milliseconds(90);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.EmailNextButton' at Center.", repo.GoogleSignin.EmailNextButtonInfo, new RecordItemIndex(3));
+            //repo.GoogleSignin.EmailNextButton.Click(1);
+            //Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.PasswordField' at Center.", repo.GoogleSignin.PasswordFieldInfo, new RecordItemIndex(4));
             repo.GoogleSignin.PasswordField.Click(1);

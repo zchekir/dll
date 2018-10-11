@@ -100,8 +100,8 @@ namespace PrecisionRecruitment.StudiesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Label=$Locality) on item 'CogstateSolutionPlatform.StudySettings.Locality'.", repo.CogstateSolutionPlatform.StudySettings.LocalityInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.StudySettings.LocalityInfo, "Label", Locality);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Label=$Locality) on item 'CogstateSolutionPlatform.StudyPage.Locality'.", repo.CogstateSolutionPlatform.StudyPage.LocalityInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.CogstateSolutionPlatform.StudyPage.LocalityInfo, "Label", Locality);
             Delay.Milliseconds(100);
             
         }

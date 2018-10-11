@@ -88,7 +88,7 @@ namespace PrecisionRecruitment.ExtractsPage
             Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist("extract*", ValueConverter.ArgumentFromString<int>("expectedCount", "1"), ValueConverter.ArgumentFromString<int>("timeout", "10"));
             Delay.Milliseconds(0);
             
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.DeleteFiles("extract*");
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.DeleteFiles("extract");
             Delay.Milliseconds(0);
             
         }

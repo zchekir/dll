@@ -55,16 +55,6 @@ namespace PrecisionRecruitment.General
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
-        {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
-        }
-
-        /// <summary>
         /// Gets or sets the value of variable Key.
         /// </summary>
         [TestVariable("e93ffd8c-d2ca-4815-8691-5adf41aa0dbd")]
@@ -72,6 +62,16 @@ namespace PrecisionRecruitment.General
         {
             get { return repo.Key; }
             set { repo.Key = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
         }
 
 #endregion
@@ -100,23 +100,26 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SecretLink' at Center.", repo.GmailInbox.SecretLinkInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'GmailInbox.SecretLink'", repo.GmailInbox.SecretLinkInfo, new ActionTimeout(5000), new RecordItemIndex(0));
+            repo.GmailInbox.SecretLinkInfo.WaitForExists(5000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SecretLink' at Center.", repo.GmailInbox.SecretLinkInfo, new RecordItemIndex(1));
             repo.GmailInbox.SecretLink.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Key) on item 'CogstateSolutionPlatform.GenerateSecretPage.APIKey'.", repo.CogstateSolutionPlatform.GenerateSecretPage.APIKeyInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Key) on item 'CogstateSolutionPlatform.GenerateSecretPage.APIKey'.", repo.CogstateSolutionPlatform.GenerateSecretPage.APIKeyInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.GenerateSecretPage.APIKeyInfo, "InnerText", Key);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButton' at 142;18.", repo.CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButtonInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButton' at 142;18.", repo.CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButtonInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButton.Click("142;18");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Your API Secret') on item 'CogstateSolutionPlatform.GenerateSecretPage.APISecret'.", repo.CogstateSolutionPlatform.GenerateSecretPage.APISecretInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Your API Secret') on item 'CogstateSolutionPlatform.GenerateSecretPage.APISecret'.", repo.CogstateSolutionPlatform.GenerateSecretPage.APISecretInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.GenerateSecretPage.APISecretInfo, "InnerText", "Your API Secret");
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "API Secret Generated", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));
+            Report.Screenshot(ReportLevel.Info, "User", "API Secret Generated", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
             
         }
 

@@ -20,48 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.LoginPage
+namespace PrecisionRecruitment.ExtractsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_LoginButton recording.
+    ///The Delete_Existing_Extracts recording.
     /// </summary>
-    [TestModule("4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e", ModuleType.Recording, 1)]
-    public partial class Click_LoginButton : ITestModule
+    [TestModule("41384e97-ac94-4cb1-9ff9-cea5ecb8b1f2", ModuleType.Recording, 1)]
+    public partial class Delete_Existing_Extracts : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_LoginButton instance = new Click_LoginButton();
+        static Delete_Existing_Extracts instance = new Delete_Existing_Extracts();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_LoginButton()
+        public Delete_Existing_Extracts()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_LoginButton Instance
+        public static Delete_Existing_Extracts Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
-        {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
-        }
 
 #endregion
 
@@ -89,12 +79,8 @@ namespace PrecisionRecruitment.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.LoginButton' at Center.", repo.CogstateSolutionPlatform.LoginForm.LoginButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.LoginButton.Click(3);
-            Delay.Milliseconds(490);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
-            Delay.Duration(500, false);
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.DeleteFiles("extract");
+            Delay.Milliseconds(0);
             
         }
 

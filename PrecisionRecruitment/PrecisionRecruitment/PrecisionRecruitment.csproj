@@ -1225,6 +1225,18 @@
       <UserCode>true</UserCode>
       <id>b2931b55-7626-4514-9b7f-ff21735dae59</id>
     </Compile>
+    <Compile Include="ExtractsPage\Delete_Existing_Extracts.cs">
+      <BoundTo>b5bcf663-de32-4bbc-8bc2-43d33035c529</BoundTo>
+      <DependentUpon>Delete_Existing_Extracts.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d73ed997-9f57-4a6a-b94e-295bd3792111</id>
+    </Compile>
+    <Compile Include="ExtractsPage\Delete_Existing_Extracts.UserCode.cs">
+      <BoundTo>b5bcf663-de32-4bbc-8bc2-43d33035c529</BoundTo>
+      <DependentUpon>Delete_Existing_Extracts.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a819482-631f-4b7c-b23f-782bd1698bb7</id>
+    </Compile>
     <Compile Include="ExtractsPage\Select_PR_Extract.cs">
       <BoundTo>36db5384-1d4a-43f8-97af-a1d3afa8f8b7</BoundTo>
       <DependentUpon>Select_PR_Extract.rxrec</DependentUpon>
@@ -1429,6 +1441,18 @@
       <id>05d555ad-1b4d-4e14-a1fd-36406da04e25</id>
       <BoundTo>74aef038-e93f-4db5-bdda-6624b1191545</BoundTo>
     </Compile>
+    <Compile Include="General\Query_Database.cs">
+      <BoundTo>d08a08e6-1cf8-4faa-b047-70908a2f3d69</BoundTo>
+      <DependentUpon>Query_Database.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>57cc0875-a9ea-45c4-86e0-32447735d3d1</id>
+    </Compile>
+    <Compile Include="General\Query_Database.UserCode.cs">
+      <BoundTo>d08a08e6-1cf8-4faa-b047-70908a2f3d69</BoundTo>
+      <DependentUpon>Query_Database.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc7f9b6c-5cfd-45ef-8a39-48a2d5f1e957</id>
+    </Compile>
     <Compile Include="General\Reset_Password.cs">
       <BoundTo>719fd679-f888-47df-90cf-ce821acf0186</BoundTo>
       <DependentUpon>Reset_Password.rxrec</DependentUpon>
@@ -1501,14 +1525,14 @@
       <id>8e678ba5-906b-42f7-93d2-f2cc734d4c91</id>
       <BoundTo>6182f58d-a0e6-4dae-b53b-e3bdfebdf7e1</BoundTo>
     </Compile>
-    <Compile Include="LoginPage\Click_LoginButton.cs">
-      <DependentUpon>Click_LoginButton.rxrec</DependentUpon>
+    <Compile Include="LoginPage\Click_Login_Button.cs">
+      <DependentUpon>Click_Login_Button.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>74d59ba3-9d6f-4f24-9f3b-51e44cfdfbab</id>
       <BoundTo>45eaf1b8-bd82-48a2-b208-c277edebd81d</BoundTo>
     </Compile>
-    <Compile Include="LoginPage\Click_LoginButton.UserCode.cs">
-      <DependentUpon>Click_LoginButton.rxrec</DependentUpon>
+    <Compile Include="LoginPage\Click_Login_Button.UserCode.cs">
+      <DependentUpon>Click_Login_Button.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8768abd2-4850-4204-94b2-ab46833ceb31</id>
       <BoundTo>45eaf1b8-bd82-48a2-b208-c277edebd81d</BoundTo>
@@ -1549,14 +1573,14 @@
       <UserCode>true</UserCode>
       <id>a6e665ef-8ccb-4a8d-84ce-55ad722481cc</id>
     </Compile>
-    <Compile Include="LoginPage\Validate_ForgotPasswordPage.cs">
-      <DependentUpon>Validate_ForgotPasswordPage.rxrec</DependentUpon>
+    <Compile Include="LoginPage\Validate_ForgotPassword_Page.cs">
+      <DependentUpon>Validate_ForgotPassword_Page.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>c531d084-12e5-4eb6-aa16-bab5b95f33fe</id>
       <BoundTo>760780c1-66d7-4900-9ed3-ba46e627d085</BoundTo>
     </Compile>
-    <Compile Include="LoginPage\Validate_ForgotPasswordPage.UserCode.cs">
-      <DependentUpon>Validate_ForgotPasswordPage.rxrec</DependentUpon>
+    <Compile Include="LoginPage\Validate_ForgotPassword_Page.UserCode.cs">
+      <DependentUpon>Validate_ForgotPassword_Page.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>eb3f56dc-40b7-4b92-985f-f4d2a7b10ddf</id>
       <BoundTo>760780c1-66d7-4900-9ed3-ba46e627d085</BoundTo>
@@ -1572,6 +1596,18 @@
       <UserCode>true</UserCode>
       <id>b99232aa-f2af-402d-8019-a380e5c2c868</id>
       <BoundTo>d5950e4e-9182-40ad-a2cd-d8718682739f</BoundTo>
+    </Compile>
+    <Compile Include="LoginPage\Validate_Locked_User.cs">
+      <BoundTo>f392a450-c253-43cb-9c16-dc0484bcfec8</BoundTo>
+      <DependentUpon>Validate_Locked_User.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b632df10-1179-4aa4-a122-2f4b236419bd</id>
+    </Compile>
+    <Compile Include="LoginPage\Validate_Locked_User.UserCode.cs">
+      <BoundTo>f392a450-c253-43cb-9c16-dc0484bcfec8</BoundTo>
+      <DependentUpon>Validate_Locked_User.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>409d3b49-192d-4dfd-9e50-8f735935c6e3</id>
     </Compile>
     <Compile Include="LoginPage\Validate_LoggedIn_User.cs">
       <DependentUpon>Validate_LoggedIn_User.rxrec</DependentUpon>
@@ -1612,6 +1648,126 @@
       <UserCode>true</UserCode>
       <id>8eae8e77-eef8-424f-a6b2-a4952ff28d3a</id>
     </Compile>
+    <Compile Include="ParticipantsPage\Change_Enroll_Status.cs">
+      <BoundTo>da209583-813a-4fd9-81ed-298e286b68c3</BoundTo>
+      <DependentUpon>Change_Enroll_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b7bc3520-1b04-49d0-a3e3-11871e0db9bc</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Change_Enroll_Status.UserCode.cs">
+      <BoundTo>da209583-813a-4fd9-81ed-298e286b68c3</BoundTo>
+      <DependentUpon>Change_Enroll_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>78fa28b6-ebb0-4d81-881d-cd84bf2326dd</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Edit_Participant.cs">
+      <BoundTo>5aebbdf6-5508-459a-bc56-e2473f156bad</BoundTo>
+      <DependentUpon>Click_Edit_Participant.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8f5de0fe-56a0-464d-b3f6-e2a3a94cd60f</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Edit_Participant.UserCode.cs">
+      <BoundTo>5aebbdf6-5508-459a-bc56-e2473f156bad</BoundTo>
+      <DependentUpon>Click_Edit_Participant.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eccd43b2-8f7d-4411-9116-7c49087521c1</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Participants_Tab.cs">
+      <BoundTo>5a3e8630-a882-4662-b320-7717b37e6f74</BoundTo>
+      <DependentUpon>Click_Participants_Tab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3457af7d-aaee-441e-b023-a3d8b10ef96e</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Participants_Tab.UserCode.cs">
+      <BoundTo>5a3e8630-a882-4662-b320-7717b37e6f74</BoundTo>
+      <DependentUpon>Click_Participants_Tab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>38d5a097-9492-4d38-987f-062b7ee43698</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Participant_Username.cs">
+      <BoundTo>807c4c60-bda9-463a-ac75-0ea82b4787c6</BoundTo>
+      <DependentUpon>Click_Participant_Username.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d58b4387-72a8-4e30-adc3-cae2e092a8dd</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Participant_Username.UserCode.cs">
+      <BoundTo>807c4c60-bda9-463a-ac75-0ea82b4787c6</BoundTo>
+      <DependentUpon>Click_Participant_Username.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bbdb083-59a7-4c85-8c67-3649ad659ecc</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Show_Test_Users.cs">
+      <BoundTo>c932ede6-646f-48c0-8489-879f8ca42d4e</BoundTo>
+      <DependentUpon>Click_Show_Test_Users.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fac02290-5bc1-4793-b79b-c11fb5b555d2</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Show_Test_Users.UserCode.cs">
+      <BoundTo>c932ede6-646f-48c0-8489-879f8ca42d4e</BoundTo>
+      <DependentUpon>Click_Show_Test_Users.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5334e375-386d-4a4c-8bef-a2373a6bb314</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Sort_LastUpdate.cs">
+      <BoundTo>94b265bc-04a6-42b1-9eb0-98cb538d1950</BoundTo>
+      <DependentUpon>Click_Sort_LastUpdate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39babdfd-09b1-4383-8b16-b9508ce9237e</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Click_Sort_LastUpdate.UserCode.cs">
+      <BoundTo>94b265bc-04a6-42b1-9eb0-98cb538d1950</BoundTo>
+      <DependentUpon>Click_Sort_LastUpdate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>20626001-85c7-4302-8e35-84cf396ae3d5</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Select_No_Test_Dropdown.cs">
+      <BoundTo>a2eb7cb2-a493-4fed-ac6d-953592045cf6</BoundTo>
+      <DependentUpon>Select_No_Test_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6441b757-2ccf-4ec7-bdfb-1f3ce952b948</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Select_No_Test_Dropdown.UserCode.cs">
+      <BoundTo>a2eb7cb2-a493-4fed-ac6d-953592045cf6</BoundTo>
+      <DependentUpon>Select_No_Test_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>27e38f77-bda3-4338-b338-d26e577f307d</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Validate_Enroll_Status.cs">
+      <BoundTo>e1a2d7c4-d05a-4117-a34b-b7a6a4cb0a5e</BoundTo>
+      <DependentUpon>Validate_Enroll_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c0dd3544-52af-482a-aa65-afd54a931415</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Validate_Enroll_Status.UserCode.cs">
+      <BoundTo>e1a2d7c4-d05a-4117-a34b-b7a6a4cb0a5e</BoundTo>
+      <DependentUpon>Validate_Enroll_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ebe6f5f0-b270-4e98-8d2b-4c9a7ce3ff58</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Validate_Participant_Not_Test_User.cs">
+      <BoundTo>7727dcb8-17d3-4bf2-b068-04de385e17bd</BoundTo>
+      <DependentUpon>Validate_Participant_Not_Test_User.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3547c8e9-a4c2-4a08-af34-60adb71a3508</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Validate_Participant_Not_Test_User.UserCode.cs">
+      <BoundTo>7727dcb8-17d3-4bf2-b068-04de385e17bd</BoundTo>
+      <DependentUpon>Validate_Participant_Not_Test_User.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55f52f41-aabb-4a84-930e-a57d9281e73f</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Validate_Participant_Profile.cs">
+      <BoundTo>a85119c8-627e-48f7-8df1-563ca43643dc</BoundTo>
+      <DependentUpon>Validate_Participant_Profile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>940dea4b-540e-4428-80a7-b4450294b0dd</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Validate_Participant_Profile.UserCode.cs">
+      <BoundTo>a85119c8-627e-48f7-8df1-563ca43643dc</BoundTo>
+      <DependentUpon>Validate_Participant_Profile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>648fd52a-7c4d-494b-bc0f-2130ec7d7aa0</id>
+    </Compile>
     <Compile Include="PrecisionRecruitmentRepository.cs">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <DependentUpon>PrecisionRecruitmentRepository.rxrep</DependentUpon>
@@ -1632,6 +1788,18 @@
       <UserCode>true</UserCode>
       <id>0ca49049-6815-460e-b8d6-d56c383a79d7</id>
       <BoundTo>b33bd7c9-b5da-4c70-8939-1af945962ce4</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Click_Card_Button.cs">
+      <BoundTo>26a2aee0-23d9-4ae6-bb18-4e45c6aae63d</BoundTo>
+      <DependentUpon>Click_Card_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45d59ed1-08ff-4702-a638-50a7bcdaf8a8</id>
+    </Compile>
+    <Compile Include="StudiesPage\Click_Card_Button.UserCode.cs">
+      <BoundTo>26a2aee0-23d9-4ae6-bb18-4e45c6aae63d</BoundTo>
+      <DependentUpon>Click_Card_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ab2724a9-b34f-4c32-b2f1-b226cdcf9d2f</id>
     </Compile>
     <Compile Include="StudiesPage\Click_Edit_Localities.cs">
       <DependentUpon>Click_Edit_Localities.rxrec</DependentUpon>
@@ -1717,6 +1885,18 @@
       <UserCode>true</UserCode>
       <id>d297b74e-bf1b-48c6-a670-281f234228e7</id>
     </Compile>
+    <Compile Include="StudiesPage\Validate_Card_Displayed.cs">
+      <BoundTo>b344e8fd-8cc9-4b1f-9b3d-4a260a4e3082</BoundTo>
+      <DependentUpon>Validate_Card_Displayed.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fdf9def8-c060-46d6-a554-f21cf085506d</id>
+    </Compile>
+    <Compile Include="StudiesPage\Validate_Card_Displayed.UserCode.cs">
+      <BoundTo>b344e8fd-8cc9-4b1f-9b3d-4a260a4e3082</BoundTo>
+      <DependentUpon>Validate_Card_Displayed.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d2446f90-10fc-431a-9045-815425aa12c9</id>
+    </Compile>
     <Compile Include="StudiesPage\Validate_Next_Page.cs">
       <id>136de71c-4f36-45ea-8085-096c2d814b65</id>
     </Compile>
@@ -1788,6 +1968,102 @@
     </Compile>
     <Compile Include="StudiesPage\Validate_Sponsor_Descending.cs">
       <id>f3c073fd-7f56-4a1f-856b-fd1199268875</id>
+    </Compile>
+    <Compile Include="UsersPage\Click_Edit_Button.cs">
+      <BoundTo>914c1416-79c0-41a3-a04a-266b40aab533</BoundTo>
+      <DependentUpon>Click_Edit_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>10485380-eeb6-43a9-8e53-eae76aa344fd</id>
+    </Compile>
+    <Compile Include="UsersPage\Click_Edit_Button.UserCode.cs">
+      <BoundTo>914c1416-79c0-41a3-a04a-266b40aab533</BoundTo>
+      <DependentUpon>Click_Edit_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9c0a7cde-ee90-4ab1-9638-7a8e8e06f813</id>
+    </Compile>
+    <Compile Include="UsersPage\Click_Locked_Checkbox.cs">
+      <BoundTo>55365ad1-e816-4ea8-8b14-78e15a6f61c8</BoundTo>
+      <DependentUpon>Click_Locked_Checkbox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5ce146ff-f3f0-49d8-83f8-bc4b547599ae</id>
+    </Compile>
+    <Compile Include="UsersPage\Click_Locked_Checkbox.UserCode.cs">
+      <BoundTo>55365ad1-e816-4ea8-8b14-78e15a6f61c8</BoundTo>
+      <DependentUpon>Click_Locked_Checkbox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e8b9aa2f-5ebf-4cbf-98c7-ba5c183f5d20</id>
+    </Compile>
+    <Compile Include="UsersPage\Edit_FirstName.cs">
+      <BoundTo>f6a31f9a-58b8-43a5-a969-e1fd66b1bfe3</BoundTo>
+      <DependentUpon>Edit_FirstName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53cf012a-0a30-4d32-98d6-acb8a59cb1c8</id>
+    </Compile>
+    <Compile Include="UsersPage\Edit_FirstName.UserCode.cs">
+      <BoundTo>f6a31f9a-58b8-43a5-a969-e1fd66b1bfe3</BoundTo>
+      <DependentUpon>Edit_FirstName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3c0e8137-903b-4419-a0e4-c8fbd9192885</id>
+    </Compile>
+    <Compile Include="UsersPage\Edit_LastName.cs">
+      <BoundTo>27524e7f-6bd5-4617-974a-feee418b456a</BoundTo>
+      <DependentUpon>Edit_LastName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e5908c6-e04f-4596-9629-d3ecda152f0e</id>
+    </Compile>
+    <Compile Include="UsersPage\Edit_LastName.UserCode.cs">
+      <BoundTo>27524e7f-6bd5-4617-974a-feee418b456a</BoundTo>
+      <DependentUpon>Edit_LastName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e56fcdd3-2a68-4b63-8124-edf1096ca0e6</id>
+    </Compile>
+    <Compile Include="UsersPage\Search_User_Email.cs">
+      <BoundTo>c94a4c5b-c0ed-4847-8dd7-2532e8af1582</BoundTo>
+      <DependentUpon>Search_User_Email.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5c12801-47ba-4be1-af45-5118a81ac470</id>
+    </Compile>
+    <Compile Include="UsersPage\Search_User_Email.UserCode.cs">
+      <BoundTo>c94a4c5b-c0ed-4847-8dd7-2532e8af1582</BoundTo>
+      <DependentUpon>Search_User_Email.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>78b57d70-6795-4354-9012-cd845ca52d6a</id>
+    </Compile>
+    <Compile Include="UsersPage\Select_First_User.cs">
+      <BoundTo>00ce9e46-26a7-4312-9186-92e11b6dccc5</BoundTo>
+      <DependentUpon>Select_First_User.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ebdc1832-b9aa-4cf3-a2f5-0a97f0e5625b</id>
+    </Compile>
+    <Compile Include="UsersPage\Select_First_User.UserCode.cs">
+      <BoundTo>00ce9e46-26a7-4312-9186-92e11b6dccc5</BoundTo>
+      <DependentUpon>Select_First_User.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a5ec127f-84e1-40a7-b050-d9ddfebd0079</id>
+    </Compile>
+    <Compile Include="UsersPage\Select_Internal_User.cs">
+      <BoundTo>6057138a-2c6a-4e67-9711-70caa973a6d8</BoundTo>
+      <DependentUpon>Select_Internal_User.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>345e5775-8c8d-44dc-a37e-3236a1b38861</id>
+    </Compile>
+    <Compile Include="UsersPage\Select_Internal_User.UserCode.cs">
+      <BoundTo>6057138a-2c6a-4e67-9711-70caa973a6d8</BoundTo>
+      <DependentUpon>Select_Internal_User.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>929d7b08-9d15-40f5-b6c8-ed27620abfb5</id>
+    </Compile>
+    <Compile Include="UsersPage\Select_User_Email.cs">
+      <BoundTo>f263a048-1664-4bf9-8d6f-4e15f69d5f39</BoundTo>
+      <DependentUpon>Select_User_Email.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbf72be2-06e9-4fa4-8d32-93029848089b</id>
+    </Compile>
+    <Compile Include="UsersPage\Select_User_Email.UserCode.cs">
+      <BoundTo>f263a048-1664-4bf9-8d6f-4e15f69d5f39</BoundTo>
+      <DependentUpon>Select_User_Email.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>37ce604e-be1d-44aa-a26a-9a6ad6d78008</id>
     </Compile>
     <Compile Include="UsersPage\Validate_Internal_User.cs">
       <BoundTo>901bf1fc-8175-48ed-9a06-d1580d71b69e</BoundTo>
@@ -1992,6 +2268,30 @@
       <DependentUpon>Validate_External_User.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>29ffae5e-ca0c-488b-b39f-c50d4b5a23a1</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_Internal_User_Edit.cs">
+      <BoundTo>61ed6a86-db49-4c06-8a6b-f81f72466187</BoundTo>
+      <DependentUpon>Validate_Internal_User_Edit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5254871f-2c7b-47a7-ae4a-a3e2b29bc809</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_Internal_User_Edit.UserCode.cs">
+      <BoundTo>61ed6a86-db49-4c06-8a6b-f81f72466187</BoundTo>
+      <DependentUpon>Validate_Internal_User_Edit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2e5e0de7-6b08-47d2-be60-7eb3ef7a27f8</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_User_Unlocked.cs">
+      <BoundTo>23bf7226-44a2-428e-a035-d6afbcfed2d5</BoundTo>
+      <DependentUpon>Validate_User_Unlocked.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f5d5c4cd-9ccc-4946-a9fe-ca09a04ff8c0</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_User_Unlocked.UserCode.cs">
+      <BoundTo>23bf7226-44a2-428e-a035-d6afbcfed2d5</BoundTo>
+      <DependentUpon>Validate_User_Unlocked.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1a39f66-a248-4c70-bf08-807b3a80c8c9</id>
     </Compile>
     <Compile Include="VisitSchedulesPage\Click_Add_VisitSchedule.cs">
       <DependentUpon>Click_Add_VisitSchedule.rxrec</DependentUpon>
@@ -2540,6 +2840,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>e57a54fc-47b7-46ef-bc2e-3f0bea0cb472</id>
     </Content>
+    <None Include="csv\extract1.csv">
+      <id>7833311f-d735-4268-a53a-5ca69a633d41</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>4f4a5e80-6031-406a-aca2-bf906a5d93c7</id>
@@ -2549,6 +2853,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>33cc9515-18c4-410c-a79c-700c63a85a84</id>
       <recordtableid>d5368a46-4f21-4c59-9938-9575f485d7cb</recordtableid>
+    </None>
+    <None Include="ExtractsPage\Delete_Existing_Extracts.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b5bcf663-de32-4bbc-8bc2-43d33035c529</id>
+      <recordtableid>41384e97-ac94-4cb1-9ff9-cea5ecb8b1f2</recordtableid>
     </None>
     <None Include="ExtractsPage\Select_PR_Extract.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -2635,6 +2944,11 @@
       <id>74aef038-e93f-4db5-bdda-6624b1191545</id>
       <recordtableid>a49733ee-3a8a-44f4-ab4b-94acfbe959dd</recordtableid>
     </None>
+    <None Include="General\Query_Database.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>d08a08e6-1cf8-4faa-b047-70908a2f3d69</id>
+      <recordtableid>60ccdd85-b9e4-4ccd-bab5-cc5729e01121</recordtableid>
+    </None>
     <None Include="General\Reset_Password.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>719fd679-f888-47df-90cf-ce821acf0186</id>
@@ -2672,7 +2986,7 @@
       <id>6182f58d-a0e6-4dae-b53b-e3bdfebdf7e1</id>
       <recordtableid>8e6168f4-a4d0-4eca-b7a3-c726e50216d8</recordtableid>
     </None>
-    <None Include="LoginPage\Click_LoginButton.rxrec">
+    <None Include="LoginPage\Click_Login_Button.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>45eaf1b8-bd82-48a2-b208-c277edebd81d</id>
       <recordtableid>4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e</recordtableid>
@@ -2692,7 +3006,7 @@
       <id>9ab61636-23de-45bc-86c8-a30d49ed6104</id>
       <recordtableid>d45bac3d-f62c-44bf-a3c6-e9139187e597</recordtableid>
     </None>
-    <None Include="LoginPage\Validate_ForgotPasswordPage.rxrec">
+    <None Include="LoginPage\Validate_ForgotPassword_Page.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>760780c1-66d7-4900-9ed3-ba46e627d085</id>
       <recordtableid>cedc20f0-3e97-4908-82db-51ed4c0cf551</recordtableid>
@@ -2701,6 +3015,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>d5950e4e-9182-40ad-a2cd-d8718682739f</id>
       <recordtableid>7dbf4cf2-1b32-4655-9ea5-892d9a2bb60d</recordtableid>
+    </None>
+    <None Include="LoginPage\Validate_Locked_User.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>f392a450-c253-43cb-9c16-dc0484bcfec8</id>
+      <recordtableid>01b1fa03-2b18-4730-a4f2-8bd1b9fcadd9</recordtableid>
     </None>
     <None Include="LoginPage\Validate_LoggedIn_User.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -2734,6 +3053,56 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>f1f67e9f-6e13-4582-a234-d4028b266090</id>
     </Content>
+    <None Include="ParticipantsPage\Change_Enroll_Status.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>da209583-813a-4fd9-81ed-298e286b68c3</id>
+      <recordtableid>7137cfbd-6cf5-4bde-878a-699540c1ede9</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Click_Edit_Participant.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>5aebbdf6-5508-459a-bc56-e2473f156bad</id>
+      <recordtableid>471c595d-97e8-49b1-8807-9004e6d63683</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Click_Participants_Tab.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>5a3e8630-a882-4662-b320-7717b37e6f74</id>
+      <recordtableid>ff4b0f88-9baa-4e62-9d13-538aeb62f61f</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Click_Participant_Username.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>807c4c60-bda9-463a-ac75-0ea82b4787c6</id>
+      <recordtableid>18b8304f-d465-4a4a-bc5d-b79e6d291dcb</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Click_Show_Test_Users.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c932ede6-646f-48c0-8489-879f8ca42d4e</id>
+      <recordtableid>530ac003-0db0-4c30-bbec-983ba76873ae</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Click_Sort_LastUpdate.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>94b265bc-04a6-42b1-9eb0-98cb538d1950</id>
+      <recordtableid>93a531d7-d39c-4006-a74f-7c668f1713ad</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Select_No_Test_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>a2eb7cb2-a493-4fed-ac6d-953592045cf6</id>
+      <recordtableid>e3d6849f-8e85-4c3c-807e-9459c66edc5e</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Validate_Enroll_Status.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>e1a2d7c4-d05a-4117-a34b-b7a6a4cb0a5e</id>
+      <recordtableid>78a73bb3-f157-458c-ba97-150bdf72d191</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Validate_Participant_Not_Test_User.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>7727dcb8-17d3-4bf2-b068-04de385e17bd</id>
+      <recordtableid>b1da06ae-bf76-4d62-a01e-2d62cb2acb86</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Validate_Participant_Profile.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>a85119c8-627e-48f7-8df1-563ca43643dc</id>
+      <recordtableid>8fcaef85-3e83-4eda-af4f-2994a161feee</recordtableid>
+    </None>
     <None Include="PrecisionRecruitmentRepository.rximg">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <DependentUpon>PrecisionRecruitmentRepository.rxrep</DependentUpon>
@@ -2763,10 +3132,19 @@
       <id>5720740b-c0c2-45b9-bc6d-cd2391b3c543</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="rawData\rawData1.txt">
+      <id>28c81b25-cf62-4d20-b771-9257a1bffe7e</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="StudiesPage\Click_Add_Study.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>b33bd7c9-b5da-4c70-8939-1af945962ce4</id>
       <recordtableid>6493bcf0-f095-4ece-941f-63fd874e778d</recordtableid>
+    </None>
+    <None Include="StudiesPage\Click_Card_Button.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>26a2aee0-23d9-4ae6-bb18-4e45c6aae63d</id>
+      <recordtableid>f7dfa7cb-726e-49ec-95d9-c15f171697ae</recordtableid>
     </None>
     <None Include="StudiesPage\Click_Edit_Localities.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -2822,6 +3200,51 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>cc3b1970-e991-4a26-ae04-e463c69264a5</id>
       <recordtableid>71501523-7506-436a-bd65-75f54703bbf9</recordtableid>
+    </None>
+    <None Include="StudiesPage\Validate_Card_Displayed.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b344e8fd-8cc9-4b1f-9b3d-4a260a4e3082</id>
+      <recordtableid>9497cd80-1b66-4ed8-966b-f5cf4618adc6</recordtableid>
+    </None>
+    <None Include="UsersPage\Click_Edit_Button.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>914c1416-79c0-41a3-a04a-266b40aab533</id>
+      <recordtableid>89c38ed8-5500-416b-9089-ab7c2de1763c</recordtableid>
+    </None>
+    <None Include="UsersPage\Click_Locked_Checkbox.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>55365ad1-e816-4ea8-8b14-78e15a6f61c8</id>
+      <recordtableid>94752e32-5eed-489a-90dc-52110f3c14db</recordtableid>
+    </None>
+    <None Include="UsersPage\Edit_FirstName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>f6a31f9a-58b8-43a5-a969-e1fd66b1bfe3</id>
+      <recordtableid>b08db34b-3bd2-44a7-8e83-2c8d49dac413</recordtableid>
+    </None>
+    <None Include="UsersPage\Edit_LastName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>27524e7f-6bd5-4617-974a-feee418b456a</id>
+      <recordtableid>21fe812b-94ff-4849-8c7d-f2007f05c0e2</recordtableid>
+    </None>
+    <None Include="UsersPage\Search_User_Email.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c94a4c5b-c0ed-4847-8dd7-2532e8af1582</id>
+      <recordtableid>e0fb5731-56d1-4884-b168-947c6b18d6a5</recordtableid>
+    </None>
+    <None Include="UsersPage\Select_First_User.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>00ce9e46-26a7-4312-9186-92e11b6dccc5</id>
+      <recordtableid>44e8daf7-966f-43c9-82a5-8fdd05054ec3</recordtableid>
+    </None>
+    <None Include="UsersPage\Select_Internal_User.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>6057138a-2c6a-4e67-9711-70caa973a6d8</id>
+      <recordtableid>9b3135d5-cdf5-4668-9f80-c3f4c3a33eae</recordtableid>
+    </None>
+    <None Include="UsersPage\Select_User_Email.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>f263a048-1664-4bf9-8d6f-4e15f69d5f39</id>
+      <recordtableid>48f5adb6-1791-435d-809f-046a5b27745e</recordtableid>
     </None>
     <None Include="UsersPage\Validate_Internal_User.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -2908,6 +3331,16 @@
       <id>207196ad-94d3-4130-9438-8211224b4a0a</id>
       <recordtableid>3b990141-f18c-4921-ba7f-74eba3cd421d</recordtableid>
     </None>
+    <None Include="UsersPage\Validate_Internal_User_Edit.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>61ed6a86-db49-4c06-8a6b-f81f72466187</id>
+      <recordtableid>c437b09f-77d0-4543-9333-316f45c91fb4</recordtableid>
+    </None>
+    <None Include="UsersPage\Validate_User_Unlocked.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>23bf7226-44a2-428e-a035-d6afbcfed2d5</id>
+      <recordtableid>45d37677-722b-4892-8305-4eac172507db</recordtableid>
+    </None>
     <None Include="VisitSchedulesPage\Click_Add_VisitSchedule.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>7a5e603e-4b72-454a-942a-87bd95b5081e</id>
@@ -2962,6 +3395,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="csv">
+      <id>f3b4563b-7a15-4f0b-beef-b4420a993d1f</id>
+    </Folder>
     <Folder Include="images">
       <id>37315d7c-c91d-402f-a6d9-c94406e630d9</id>
     </Folder>
@@ -2991,6 +3427,9 @@
     </Folder>
     <Folder Include="ExtractsPage">
       <id>bd83b410-bd36-4887-86fc-8de10ba18e20</id>
+    </Folder>
+    <Folder Include="ParticipantsPage">
+      <id>eaf99ce1-d0ee-42ca-b3f5-df2b652d7516</id>
     </Folder>
     <Folder Include="UsersPage">
       <id>2585d631-e37a-4bd2-8fe1-9317e9fc8485</id>

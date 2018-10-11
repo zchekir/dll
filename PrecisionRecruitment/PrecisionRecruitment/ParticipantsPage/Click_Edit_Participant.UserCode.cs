@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace PrecisionRecruitment.LoginPage
+namespace PrecisionRecruitment.ParticipantsPage
 {
-    public partial class Click_LoginButton
+    public partial class Click_Edit_Participant
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

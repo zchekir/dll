@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.LoginPage
+namespace PrecisionRecruitment.UsersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_ForgotPasswordPage recording.
+    ///The Click_Edit_Button recording.
     /// </summary>
-    [TestModule("cedc20f0-3e97-4908-82db-51ed4c0cf551", ModuleType.Recording, 1)]
-    public partial class Validate_ForgotPasswordPage : ITestModule
+    [TestModule("89c38ed8-5500-416b-9089-ab7c2de1763c", ModuleType.Recording, 1)]
+    public partial class Click_Edit_Button : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Validate_ForgotPasswordPage instance = new Validate_ForgotPasswordPage();
+        static Click_Edit_Button instance = new Click_Edit_Button();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_ForgotPasswordPage()
+        public Click_Edit_Button()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_ForgotPasswordPage Instance
+        public static Click_Edit_Button Instance
         {
             get { return instance; }
         }
@@ -89,11 +89,9 @@ namespace PrecisionRecruitment.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.LoginForm.ForgotPasswordPrompt'.", repo.CogstateSolutionPlatform.LoginForm.ForgotPasswordPromptInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.LoginForm.ForgotPasswordPromptInfo);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddStudyPage.EditButton' at Center.", repo.CogstateSolutionPlatform.AddStudyPage.EditButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddStudyPage.EditButton.Click();
             Delay.Milliseconds(0);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "Forgot Password Page is Displayed", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));
             
         }
 

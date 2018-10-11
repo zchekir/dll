@@ -30,7 +30,7 @@ namespace engine.Helpers
     public class CSVUtility
     {     
 		/// <summary>
-		/// DataTabel used to store contents of CSV file after being read
+		/// DataTable used to store contents of CSV file after being read
 		/// </summary>
     	public static DataTable dt = new DataTable();
     	

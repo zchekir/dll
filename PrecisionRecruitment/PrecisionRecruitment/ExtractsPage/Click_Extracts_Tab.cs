@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.ExtractsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExtractsTab' at Center.", repo.CogstateSolutionPlatform.ExtractsTabInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ExtractsTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.ExtractsTab' at Center.", repo.CogstateSolutionPlatform.StudyTabs.ExtractsTabInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyTabs.ExtractsTab.Click();
             Delay.Milliseconds(0);
             
         }

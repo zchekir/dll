@@ -714,6 +714,97 @@ rxversion="8.2">
 			</folder>
 			<folder
 			capname="unknown"
+			id="2e730778-3533-491e-aba2-25330559576e"
+			isrooted="False"
+			name="ParticipantsPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="2e3c5b52-487e-4841-aa4c-79a3ee5ced8b"
+				name="ShowTestUsersCheckbox"
+				refimgid="ea416e1c-e0b5-4375-92ba-ffe96dbbb289"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div/div[2]/div/div[2]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-header']/tag/div/div/div[4]/div/label/input[@type='checkbox']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//tag[@tagname='cogstate-generic-participant-list-header']/div/div/div[4]/div/label[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Show\ ']/input[@type='checkbox']
+				</item>
+				<item
+				addcaps="unknown,webelement,thtag"
+				capname="thtag"
+				id="db429d76-6f15-42ee-88fc-70fd6b307e71"
+				name="LastUpdateColumnHeader"
+				refimgid="36bf0ebc-c912-4e30-8ffd-13f5cc6a1b69"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//table/thead/?/?/th[@innertext&gt;'Last Update']
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="df079711-8cff-4169-a30a-94b5fc44094e"
+				name="EditButton"
+				refimgid="2851e428-1943-443e-b320-41b9ee827770"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div/div[2]/div/div[2]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-grid']/table/tbody/tr[1]/td[12]/i[@innertext='mode_edit']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//table/tbody/tr[1]/td[12]/i[@innertext='mode_edit']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="81ba7448-eb97-49ce-b980-a8c0efa202e0"
+				name="TestUserDropdown"
+				refimgid="cf2e67c7-df3c-4edf-b91d-d47351e41769"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_isTestUser_8']
+				</item>
+				<item
+				addcaps="unknown,webelement,trtag"
+				capname="atag"
+				id="cdf5e922-5ffd-4dc2-b77d-22b8ddf48437"
+				name="Participant"
+				refimgid="506b75e1-4e2a-43ed-8914-6a48ee11b29f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//table/tbody/tr[1]/td[1]/a
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="0836a7ec-3ff0-43eb-a4df-8f67f3324722"
+				name="ParticipantBreadcrumb"
+				refimgid="91d6688e-4a05-458b-9793-8deac342d162"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//span[@innertext~$ParticipantUserName]
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="92ea73f0-8db5-4d63-bcfb-999617090417"
+				name="ExpandProfile"
+				refimgid="b5543660-1f4a-4a27-8de8-fe703a9b28ed"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/div/div[2]/i[@innertext='keyboard_arrow_down']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/tag/div/?/?/i[@innertext='keyboard_arrow_down']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="e86403e9-ba78-4778-ba8b-25584e0d16c8"
+				name="ParticipantUserNameField"
+				refimgid="dc2ff9b3-0fb4-4812-a2fb-b9f62774647b"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_userName_12']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="082a5242-4567-4480-9fd0-962468dd30a8"
+				name="EnrollStatusDropdown"
+				refimgid="1066dfbf-8d73-4056-b414-c4b4841c090d"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_enrollStatus_3']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
 			id="7dffd009-38d7-4850-833d-59d10b7067e6"
 			isrooted="False"
 			name="ExtractsPage"
@@ -827,6 +918,15 @@ rxversion="8.2">
 				refimgid="d9aa02d5-07ef-4dea-a4d1-71a3e5d787e6"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-sent']/div/div/div/div[2]/div[@innertext~'Please check your email']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="f21fccac-c738-4dc1-8372-e5d30f5598fa"
+				name="UserLockedMessage"
+				refimgid="5be7898c-f0d4-472d-8b9b-bf48a45a7107"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-login']/div/div/div/div[2]/div[@innertext~'You''ve exceeded the maximum']
 				</item>
 			</folder>
 			<folder
@@ -987,10 +1087,19 @@ rxversion="8.2">
 				addcaps="unknown,webelement,atag"
 				capname="atag"
 				id="628ad5fc-4948-4083-a445-4bf034c11123"
-				name="ExternalUser"
+				name="ExternalUserRow"
 				refimgid="715068b9-8d27-4939-829e-0957581db89d"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//table/tbody/tr/td[1]/a[@innertext~$Key]
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="777d20e0-2df2-4022-92d0-bd7e18a4d762"
+				name="FirstUserRow"
+				refimgid="052867a9-e2b2-4551-be04-ef375c084583"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//table/tbody/tr/td[1]/a
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -1136,6 +1245,24 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_checkbox_active_5']
 				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="bf4712dd-30d4-4721-9419-05713f997a6b"
+				name="InternalUserRow"
+				refimgid="58dcc0d7-c18f-4686-b6dd-0f2bbd423710"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//table/tbody/tr/td[1]/a[@innertext~$RandNum]
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="c824ab88-9a7a-4069-87a2-b4bb2c0d34a2"
+				name="EditButton"
+				refimgid="47ef27b8-2163-4463-b824-47cf7df6ed9e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/tag/div/?/?/i[@innertext='mode_edit']
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div
 				</basepath>
@@ -1218,7 +1345,7 @@ rxversion="8.2">
 			capname="divtag"
 			id="8eb287fe-5a40-4f68-8b36-049f7d75f284"
 			isrooted="True"
-			name="StudySettings"
+			name="StudyPage"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -1258,6 +1385,26 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//select[@id~'formly_[0-9]+_multiselect_localities_0']
 				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="6d769577-d920-40a0-9802-a31812c7ce05"
+				name="CANCEL"
+				refimgid="67591179-5f20-4bf6-a453-432b44bb853b"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/div/div/form/div/button[@innertext='CANCEL                ']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//form[@action='https://cgst-qc-duo.cogstate.com/template.html#/EditParticipant']/div/button[@innertext='CANCEL                ']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="cc5b606f-9ba7-4a4d-b79f-5e0b690608be"
+				name="StudyCard"
+				refimgid="7c2cf362-c34c-413b-b1cc-7058d7af66ac"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-cards']/div/tag[1]/tag[@tagname='cogstate-generic-study-card']/div/div"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/tag[1]/tag/div/div
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]
 				</basepath>
@@ -1289,6 +1436,71 @@ rxversion="8.2">
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div
+				</basepath>
+			</folder>
+			<folder
+			capname="ultag"
+			id="15bb476e-1862-4938-8c13-8e17d47eca1d"
+			isrooted="True"
+			name="StudyTabs"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="8950266c-8e51-4278-82b3-91a537357a1b"
+				name="ParticipantsTab"
+				refimgid="4fb4f75c-f6b1-43b1-97b9-7cc81dff05e0"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[2]/a[@innertext&gt;'Participants']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="b8243936-cb87-46bb-a5b0-a3e3568c5847"
+				name="SettingsTab"
+				refimgid="095030a1-2409-404e-a47f-fa6c1f0dbad6"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[1]/a[@innertext='Settings']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="3ab34206-ec79-41b0-a535-d773a9de8b28"
+				name="ExtractsTab"
+				refimgid="dce1b76e-216c-48c7-94aa-92589e745231"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[6]/a[@innertext&gt;'Extracts']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="77cb1315-8730-46be-bc98-9ac27c0954f6"
+				name="VisitSchedulesTab"
+				refimgid="94a8f880-6c5b-42ac-b610-c48c06a92419"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[5]/a[@innertext&gt;'Visit Schedules']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="da63a96e-f369-4c8e-b990-162b989a20a6"
+				name="WorkflowsTab"
+				refimgid="69003157-9a84-4d3d-ba1d-b23015605885"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[4]/a[@innertext&gt;'Workflows']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="229065bc-cd28-4029-932e-2c26e4bedf6d"
+				name="BatteriesTab"
+				refimgid="9c371ef6-2904-4aee-b6f2-8cb1bff868a2"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[3]/a[@innertext&gt;'Batteries']
+				</item>
+				<basepath>
+					/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul
 				</basepath>
 			</folder>
 			<folder
@@ -1542,51 +1754,6 @@ rxversion="8.2">
 				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]//div/label[@innertext='External Users']
 			</item>
 			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="229065bc-cd28-4029-932e-2c26e4bedf6d"
-			name="BatteriesTab"
-			refimgid="9c371ef6-2904-4aee-b6f2-8cb1bff868a2"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[3]/a[@innertext&gt;'Batteries']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="da63a96e-f369-4c8e-b990-162b989a20a6"
-			name="WorkflowsTab"
-			refimgid="69003157-9a84-4d3d-ba1d-b23015605885"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[4]/a[@innertext&gt;'Workflows']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="77cb1315-8730-46be-bc98-9ac27c0954f6"
-			name="VisitSchedulesTab"
-			refimgid="94a8f880-6c5b-42ac-b610-c48c06a92419"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[5]/a[@innertext&gt;'Visit Schedules']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="3ab34206-ec79-41b0-a535-d773a9de8b28"
-			name="ExtractsTab"
-			refimgid="dce1b76e-216c-48c7-94aa-92589e745231"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[6]/a[@innertext='Extracts (1)']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="b8243936-cb87-46bb-a5b0-a3e3568c5847"
-			name="SettingsTab"
-			refimgid="095030a1-2409-404e-a47f-fa6c1f0dbad6"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[1]/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/ul/li[1]/a[@innertext='Settings']
-			</item>
-			<item
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f"
@@ -1696,9 +1863,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="3d43d72b-f60e-45e9-9788-c3db8d1c5f02"
 			name="PasswordField"
 			refimgid="32250bcf-2aaa-4c4c-81b1-2c514b171545"
-			refpath="/dom[@domain='accounts.google.com']//div[#'password']/div[1]/div/div[1]/input[@name='password']"
 			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'password']/div[1]/div/div[1]/input[@name='password']
+				/dom[@domain='accounts.google.com']//div[#'password']//input[@name='password']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -1706,9 +1872,26 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="4001ae90-b375-4e97-8208-4553c98d2d13"
 			name="PasswordNextButton"
 			refimgid="87ea35d8-26db-4e6a-adf8-04a165f0d92c"
-			refpath="/dom[@domain='accounts.google.com']//div[#'passwordNext']/tag[@tagname='content']/span[@innertext='Next']"
 			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'passwordNext']/?/?/span[@innertext='Next']
+				/dom[@domain='accounts.google.com']//div[#'passwordNext']//span[@innertext='Next']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="10f3bced-6c10-417b-a010-2c63a973ed6e"
+			name="RanorexUserAccountNew"
+			refimgid="3f40ba90-c784-4347-b7ad-677a378a9260"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//button[@id~'choose-account-[0-9]']/span[@innertext='ranorexcogstate@gmail.com']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="45c4abdc-9001-40db-bba4-e9a0d0d810ba"
+			name="RanorexUserAccount"
+			refimgid="59d5130b-8512-45c9-a1ef-7c1d7581d3ac"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext='ranorexcogstate@gmail.com']
 			</item>
 			<basepath>
 				/dom[@domain='accounts.google.com']
@@ -1783,7 +1966,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="SecretLink"
 			refimgid="d0d2994c-80aa-40b1-a732-52333b114c16"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div/a[@innertext~$DOM]
+				/dom[@domain='mail.google.com']//div/a[@innertext~$Key]/../a[@innertext~$DOM]
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -1800,9 +1983,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="41b979f7-c989-45a6-9476-8952d4227dc0"
 			name="BackToInbox"
 			refimgid="206e99b7-7333-425e-b16a-bcf9b43cf7d0"
-			refpath="/dom[@domain='mail.google.com']//div[#':5']/div[2]/div[1]/div/div[1]/div/div/div"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':5']/div[2]/div[1]/div/div[1]/div/div/div
+				/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div/div[1]/div/div[@visible='True']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -1820,7 +2002,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="DeleteButton"
 			refimgid="bd0c784a-02b5-46aa-a03c-c45d1575bce7"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':5']/div[2]/div[1]/div/div[2]/div[3]/div
+				/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div/div[2]/div[3]/div
 			</item>
 			<item
 			addcaps="unknown,webelement,btag"
@@ -1857,7 +2039,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="PlatformSupportEmail"
 			refimgid="1de3dba5-5fd7-468b-83f4-aef6573c9ead"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//span/span[@innertext~'^Cogstate user account created']
+				/dom[@domain='mail.google.com']//div[#':2']//span/span[@innertext~'^Cogstate user account created']
 			</item>
 			<basepath>
 				/dom[@domain='mail.google.com']
@@ -1977,6 +2159,19 @@ AAAASUVORK5CYII=
 		<var
 		id="1892dd21-199b-47ab-bba6-5cd1b874a668"
 		name="Username">
+			ranorexcogstate@gmail.com
+		</var>
+		<var
+		id="72884fb1-b09f-40af-9195-7791815ad05d"
+		name="Participant">
+		</var>
+		<var
+		id="45a0fd0f-b9f5-4550-8e3b-032099662b40"
+		name="ParticipantUserNamre">
+		</var>
+		<var
+		id="9790176f-caee-49ec-ae56-bf6472b15e2f"
+		name="ParticipantUserName">
 		</var>
 	</variables>
 </repository>

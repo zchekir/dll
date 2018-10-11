@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace PrecisionRecruitment.LoginPage
+namespace PrecisionRecruitment.UsersPage
 {
-    public partial class Validate_ForgotPasswordPage
+    public partial class Validate_Internal_User_Edit
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

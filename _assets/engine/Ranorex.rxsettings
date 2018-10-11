@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<configuration
+﻿<configuration
 rxversion="8.2">
 	<adapter.defaultsearchtimeout>
 		10000ms
@@ -7,6 +6,9 @@ rxversion="8.2">
 	<adapter.defaultuseensurevisible>
 		True
 	</adapter.defaultuseensurevisible>
+	<adapter.functionexecutiontimeout>
+		5000ms
+	</adapter.functionexecutiontimeout>
 	<imaging.defaultfindoptions>
 		1;None;0,0,0,0;True;10000000;0ms
 	</imaging.defaultfindoptions>
@@ -405,6 +407,8 @@ rxversion="8.2">
 	</plugins.win32.EnableDynamicMsaa>
 	<plugins.win32.ProcessWhitelist>
 	</plugins.win32.ProcessWhitelist>
+	<plugins.win32.ProcessBlacklist>
+	</plugins.win32.ProcessBlacklist>
 	<plugins.msaa.FilterEnabled>
 		True
 	</plugins.msaa.FilterEnabled>

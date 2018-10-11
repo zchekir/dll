@@ -176,15 +176,24 @@ FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
 UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="7000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="17b1efc9-bebc-4dfb-af89-98ae6616a3b6"
+		waitaction="Exists"
+		waittimeout="10000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="105c6084-d31d-4f61-89ad-61d64d052748"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='mail.google.com']//span/span[@innertext~'^Cogstate user account created']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

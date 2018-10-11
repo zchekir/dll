@@ -111,8 +111,8 @@ namespace PrecisionRecruitment.VisitSchedulesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitSchedulesTab' at Center.", repo.CogstateSolutionPlatform.VisitSchedulesTabInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.VisitSchedulesTab.Click(3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.VisitSchedulesTab' at Center.", repo.CogstateSolutionPlatform.StudyTabs.VisitSchedulesTabInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyTabs.VisitSchedulesTab.Click(3);
             Delay.Milliseconds(490);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitScheduleViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.VisitScheduleViewMenu.CardButtonInfo, new RecordItemIndex(1));

@@ -10,6 +10,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="009bd039-6459-439a-b527-e6c69216f9ce"
+			name="Enter_ExternalUser_Email"
+			ref="aafe40f3-98c2-45f7-bb18-df8a0359fad2"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="00c4476b-66cd-4aa7-b59c-c065a88890b3"
 			name="Enter_FirstName"
 			ref="6336f297-e5e5-47eb-b94c-b58201d22560"
@@ -144,6 +150,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="1738d322-af05-45c2-8fe0-c89a4738a929"
+			name="Validate_Internal_User"
+			ref="a25819c9-4d97-4762-98ba-fa0c441afdd4"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1b4cb9bb-b196-4af7-8fba-73a1c873e8a2"
 			name="Enter_SponsorName"
 			ref="60f1aaa5-af31-4ac0-a8d5-c957ad2e52ef"
@@ -153,6 +165,18 @@ rxversion="8.2">
 			id="21b872e4-b0b3-46ae-b626-37aace178c01"
 			name="Enter_BatteryStatus"
 			ref="0c2c767f-e13f-48a0-b6ce-dcf98f17afdf"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="22cebe01-6723-47c8-9075-7c27a4556ab5"
+			name="Add_Role_External_User"
+			ref="4886f8c4-1345-48b0-abbd-1a572ffc4d8b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2437dc05-93eb-4e07-af17-4bcf1554188f"
+			name="Select_User_Role"
+			ref="199ee169-6eee-4be1-887e-39c904dab3d0"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -519,6 +543,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="44496b6c-2161-4159-b3fc-bca602092263"
+			name="Click_Active_Checkbox"
+			ref="d0b36409-67f8-42fe-bbca-2bc6dbe5acfc"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4484158b-1ecd-4d84-b60e-985280ee567b"
 			name="Select_ComplexOutcomeTier1_Step"
 			ref="fee81700-b9a7-47f6-93f2-87c7d01bf698"
@@ -582,6 +612,18 @@ rxversion="8.2">
 			ref="6493bcf0-f095-4ece-941f-63fd874e778d"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="68493d6d-7cde-45ca-a2a2-3d881f308d3b"
+			name="Enter_FirstName"
+			ref="6336f297-e5e5-47eb-b94c-b58201d22560"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="68a40eb6-304e-42e8-bace-e009bd2115b3"
+			name="Click_External_Users_Menu"
+			ref="87fa94c0-fd9a-48b5-b2d8-c6c921ec6b9a"
+			type="Recording">
+			</testmodule>
 			<modulegroupdef
 			id="68fe6151-c835-4db9-8e2a-6e77423b96dd"
 			name="Validate_Required_Study_Fields">
@@ -632,6 +674,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="88cbb18f-371b-4243-b17b-7b7e733db8e1"
+			name="Enter_Username"
+			ref="e8baed63-acfc-4c88-981f-7e62ff4efa50"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="915666ac-498e-4430-87d1-03eae8825b4c"
 			name="Click_Add_Workflow"
 			ref="12c5de0a-0a0d-4bef-bbcd-831ee3ec3abb"
@@ -656,6 +704,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="9a019e82-7d0c-48c6-b36f-41f13ba272de"
+			name="Click_Add_User"
+			ref="a12d2e2e-e4c7-482c-afab-5f0d9f31714f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9a72df7f-ecd4-4aeb-a49f-37d33918f5fd"
 			name="Validate_Required_ProtocolNumber"
 			ref="adf752ff-8ec5-4bba-bb82-88951eb8c498"
@@ -675,8 +729,14 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="9e9084b5-9c6a-4f70-841e-c6c9a11a38ac"
-			name="Click_LoginButton"
+			name="Click_Login_Button"
 			ref="4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9f20873c-d193-4aa1-a5f7-ec51ed6c98cc"
+			name="Select_External_User"
+			ref="e844cf88-3771-4adb-927e-acb6829f601c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -685,6 +745,73 @@ rxversion="8.2">
 			ref="2d955e0d-66b6-44f7-997e-8b5e6d4de1a2"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="a5d2452f-7e69-4e4e-bdba-dbdd76719e02"
+			name="Add_External_User">
+				<groupvariables>
+					<groupvariable
+					id="c5cdeeb3-af2d-4a90-9ec9-9394afbd8f1f"
+					name="DOM">
+						<modulevariable
+						moduleref="68a40eb6-304e-42e8-bace-e009bd2115b3"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="009bd039-6459-439a-b527-e6c69216f9ce"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="e2a28785-6b32-4670-97a3-015a13934ad9"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="f7efbf54-dfe5-499b-8002-2977005e021b"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="e200d088-7d04-459e-86f3-cf38c8a87a5c"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="08222c6f-0ee2-476c-a03b-dac49cca8da0"
+					name="RandNum">
+						<modulevariable
+						moduleref="009bd039-6459-439a-b527-e6c69216f9ce"
+						name="RandNum"
+						variableref="f90483c1-13d8-42b7-b4ec-5eeeb99ddfa9">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="9fc6d3c2-783f-4111-9f27-d77e97f4380e"
+					name="ExternalEmail">
+						<modulevariable
+						moduleref="009bd039-6459-439a-b527-e6c69216f9ce"
+						name="ExternalEmail"
+						variableref="dbb429c7-ce36-400d-b26e-fc1f47462f65">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="7f732e90-f661-47b9-a2b1-91eeddd76965"
+					name="Key">
+						<modulevariable
+						moduleref="e200d088-7d04-459e-86f3-cf38c8a87a5c"
+						name="Key"
+						variableref="e38a76d7-b586-4e1d-96d4-7dd273ecb96d">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="a991fc63-5ca0-467f-bb8a-06d54f71619d"
 			name="Validate_Required_ProjectName"
@@ -812,6 +939,18 @@ rxversion="8.2">
 				</groupvariables>
 			</modulegroupdef>
 			<testmodule
+			id="b48c1a68-4987-4ea3-9ec3-ae48a4366a9d"
+			name="Click_External_Users_Menu"
+			ref="87fa94c0-fd9a-48b5-b2d8-c6c921ec6b9a"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
+			name="Click_Add_User"
+			ref="a12d2e2e-e4c7-482c-afab-5f0d9f31714f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b75bc8e8-bcbb-483e-939e-bea9593d80fe"
 			name="Enter_WorkflowDescription"
 			ref="db7f396e-30c4-4e67-800d-3cb9be3ae7b8"
@@ -880,6 +1019,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="c661d224-2ce4-48d1-b424-49f5c1dd965e"
+			name="Enter_LastName"
+			ref="c945e03d-de39-4ae0-88c2-101fff5b9f2e"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c915765b-ba9d-4fe6-be53-28f855937206"
 			name="Click_SaveButton"
 			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
@@ -934,6 +1079,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="db731dd6-34e2-4081-9bf9-d72770aac928"
+			name="Click_Save_Button"
+			ref="a4e77d94-eb14-4fc5-a019-c002f50ff39f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="dbb14c68-68f3-4d46-a3da-6c9150a97353"
 			name="Select_ComplexOutcomeTier2_Step"
 			ref="20426c13-8f87-47a5-935a-eaafa6fef47c"
@@ -945,6 +1096,74 @@ rxversion="8.2">
 			ref="409e145e-f45b-454b-a2f1-492f9d476319"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="e200d088-7d04-459e-86f3-cf38c8a87a5c"
+			name="Validate_External_User"
+			ref="3b990141-f18c-4921-ba7f-74eba3cd421d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e2a28785-6b32-4670-97a3-015a13934ad9"
+			name="Select_Active_Checkbox"
+			ref="2687be9a-b50c-4c36-951e-c2cfbcdb6393"
+			type="Recording">
+			</testmodule>
+			<modulegroupdef
+			id="e2d25e03-e66f-4570-8d13-40cc348056a9"
+			name="Add_External_User_Role">
+				<groupvariables>
+					<groupvariable
+					defaultvalue="ModuleGroupDefaultValue"
+					id="f3715aeb-4b60-4dc9-b478-c1ab28717be7"
+					name="DOM">
+						<modulevariable
+						moduleref="b48c1a68-4987-4ea3-9ec3-ae48a4366a9d"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="9f20873c-d193-4aa1-a5f7-ec51ed6c98cc"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="22cebe01-6723-47c8-9075-7c27a4556ab5"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="d7a6d2bb-f854-460f-bf23-c009f9d91619"
+					id="568e84f7-1968-4821-af18-7e94edcd7009"
+					name="Key">
+						<modulevariable
+						moduleref="9f20873c-d193-4aa1-a5f7-ec51ed6c98cc"
+						name="Key"
+						variableref="2902f0dc-8c70-46e4-b658-a8dd9ce5f42c">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="990598"
+					id="57644a65-4a01-43b9-802b-7372b8461e3d"
+					name="RandNum">
+						<modulevariable
+						moduleref="22cebe01-6723-47c8-9075-7c27a4556ab5"
+						name="RandNum"
+						variableref="ad914b3d-ce99-4bdb-9e75-5df98d80d2b2">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="Ranorex Project Name"
+					id="4f8ca016-e1a9-4704-8bb0-a4e56d3d7928"
+					name="ProjectName">
+						<modulevariable
+						moduleref="22cebe01-6723-47c8-9075-7c27a4556ab5"
+						name="ProjectName"
+						variableref="49cfa874-725e-4141-b715-d2c17ac6eae8">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="e4180334-0c27-4061-aaf4-6ef8824ddb73"
 			name="Click_SaveWorkflowProperties_Button"
@@ -1201,6 +1420,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="f7efbf54-dfe5-499b-8002-2977005e021b"
+			name="Click_SaveButton"
+			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f9474f5b-8549-4e06-abfa-4d36c32baa25"
 			name="Click_SaveButton"
 			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
@@ -1230,6 +1455,84 @@ rxversion="8.2">
 			ref="a4e77d94-eb14-4fc5-a019-c002f50ff39f"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="fd0c03a8-3992-45b6-b7f4-256e6e5e9ff6"
+			name="Add_Internal_User">
+				<groupvariables>
+					<groupvariable
+					id="af07177e-bcbb-4adc-ae86-127bd56e8ba7"
+					name="DOM">
+						<modulevariable
+						moduleref="9a019e82-7d0c-48c6-b36f-41f13ba272de"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="88cbb18f-371b-4243-b17b-7b7e733db8e1"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="68493d6d-7cde-45ca-a2a2-3d881f308d3b"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="c661d224-2ce4-48d1-b424-49f5c1dd965e"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="2437dc05-93eb-4e07-af17-4bcf1554188f"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="44496b6c-2161-4159-b3fc-bca602092263"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="db731dd6-34e2-4081-9bf9-d72770aac928"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="1738d322-af05-45c2-8fe0-c89a4738a929"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="86fdbe93-33e5-4b18-8946-dcd669486db3"
+					name="Username">
+						<modulevariable
+						moduleref="88cbb18f-371b-4243-b17b-7b7e733db8e1"
+						name="Username"
+						variableref="2b48007a-3e7e-407b-a25b-545d93908445">
+						</modulevariable>
+						<modulevariable
+						moduleref="1738d322-af05-45c2-8fe0-c89a4738a929"
+						name="Username"
+						variableref="beba0b52-7fd3-47a0-960b-9b4b32005ef9">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="a5da1bfd-d31d-48dd-b597-399241bf0c13"
+					name="RandNum">
+						<modulevariable
+						moduleref="88cbb18f-371b-4243-b17b-7b7e733db8e1"
+						name="RandNum"
+						variableref="4c5e514d-358a-4119-949c-e61c9aea6e9b">
+						</modulevariable>
+						<modulevariable
+						moduleref="1738d322-af05-45c2-8fe0-c89a4738a929"
+						name="RandNum"
+						variableref="fc46804f-c774-4b8a-8e29-cbf1eac4fa18">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="fe0db7a6-14e3-4852-8b05-3ac9aeb8e872"
 			name="Select_CheckOutcomesMeasured_Step"
@@ -1342,6 +1645,86 @@ rxversion="8.2">
 					</testmodule>
 					<testmodule
 					id="f9c64436-33a1-4a58-97a5-e4cef1bb1e6c"
+					name="Validate_Internal_User">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="a5d2452f-7e69-4e4e-bdba-dbdd76719e02"
+				name="Add_External_User">
+					<testmodule
+					id="68a40eb6-304e-42e8-bace-e009bd2115b3"
+					name="Click_External_Users_Menu">
+					</testmodule>
+					<testmodule
+					id="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
+					name="Click_Add_User">
+					</testmodule>
+					<testmodule
+					id="009bd039-6459-439a-b527-e6c69216f9ce"
+					name="Enter_ExternalUser_Email">
+					</testmodule>
+					<testmodule
+					id="e2a28785-6b32-4670-97a3-015a13934ad9"
+					name="Select_Active_Checkbox">
+					</testmodule>
+					<testmodule
+					id="f7efbf54-dfe5-499b-8002-2977005e021b"
+					name="Click_SaveButton">
+					</testmodule>
+					<testmodule
+					id="e200d088-7d04-459e-86f3-cf38c8a87a5c"
+					name="Validate_External_User">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="e2d25e03-e66f-4570-8d13-40cc348056a9"
+				name="Add_External_User_Role">
+					<testmodule
+					id="b48c1a68-4987-4ea3-9ec3-ae48a4366a9d"
+					name="Click_External_Users_Menu">
+					</testmodule>
+					<testmodule
+					id="9f20873c-d193-4aa1-a5f7-ec51ed6c98cc"
+					name="Select_External_User">
+					</testmodule>
+					<testmodule
+					id="22cebe01-6723-47c8-9075-7c27a4556ab5"
+					name="Add_Role_External_User">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="fd0c03a8-3992-45b6-b7f4-256e6e5e9ff6"
+				name="Add_Internal_User">
+					<testmodule
+					id="9a019e82-7d0c-48c6-b36f-41f13ba272de"
+					name="Click_Add_User">
+					</testmodule>
+					<testmodule
+					id="88cbb18f-371b-4243-b17b-7b7e733db8e1"
+					name="Enter_Username">
+					</testmodule>
+					<testmodule
+					id="68493d6d-7cde-45ca-a2a2-3d881f308d3b"
+					name="Enter_FirstName">
+					</testmodule>
+					<testmodule
+					id="c661d224-2ce4-48d1-b424-49f5c1dd965e"
+					name="Enter_LastName">
+					</testmodule>
+					<testmodule
+					id="2437dc05-93eb-4e07-af17-4bcf1554188f"
+					name="Select_User_Role">
+					</testmodule>
+					<testmodule
+					id="44496b6c-2161-4159-b3fc-bca602092263"
+					name="Click_Active_Checkbox">
+					</testmodule>
+					<testmodule
+					id="db731dd6-34e2-4081-9bf9-d72770aac928"
+					name="Click_Save_Button">
+					</testmodule>
+					<testmodule
+					id="1738d322-af05-45c2-8fe0-c89a4738a929"
 					name="Validate_Internal_User">
 					</testmodule>
 				</modulegroupdef>
@@ -1494,7 +1877,7 @@ rxversion="8.2">
 					</testmodule>
 					<testmodule
 					id="9e9084b5-9c6a-4f70-841e-c6c9a11a38ac"
-					name="Click_LoginButton">
+					name="Click_Login_Button">
 					</testmodule>
 				</modulegroupdef>
 				<modulegroupdef

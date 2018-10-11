@@ -111,8 +111,8 @@ namespace PrecisionRecruitment.BatteriesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteriesTab' at Center.", repo.CogstateSolutionPlatform.BatteriesTabInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteriesTab.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.BatteriesTab' at Center.", repo.CogstateSolutionPlatform.StudyTabs.BatteriesTabInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyTabs.BatteriesTab.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryName' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));

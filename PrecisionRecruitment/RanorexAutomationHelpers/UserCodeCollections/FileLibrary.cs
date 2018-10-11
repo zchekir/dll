@@ -94,12 +94,13 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
         [UserCodeMethod]
         public static void DeleteFiles(string pattern)
         {
+        	var year = System.DateTime.Now.Year.ToString();
         	string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
-            var listofFiles = Directory.GetFiles(path, pattern);
+            var listofFiles = Directory.GetFiles(path, pattern + year + "*");
 
             if (listofFiles.Length == 0)
             {
-                Report.Warn("No files have been found in '" + path + "' with the pattern '" + pattern + "'.");
+                Report.Warn("No files have been found in '" + path + "' with the pattern '" + pattern + year +"'.");
             }
 
             foreach (string file in listofFiles)
