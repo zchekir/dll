@@ -2613,7 +2613,7 @@ rxversion="8.2">
 					</param>
 					<param
 					name="SessionID"
-					value="12396">
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -5264,6 +5264,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="c0d2331e-6ad6-4068-a851-f16e13119497"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="c13a83f7-1f5d-49cd-b550-b1b7a020ec0e"
 			name="Enter_WorkflowTemplate"
@@ -6296,6 +6300,12 @@ rxversion="8.2">
 			id="ecf8d6ff-9dde-4943-983d-0458cc225779"
 			name="setup">
 			</setup>
+			<testmodule
+			id="ed1ca529-22db-49ac-b251-8ce6743cb0fa"
+			name="ReportToPDFModule"
+			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="edfe7ff5-886e-4756-a7a8-0df41a9cd659"
 			name="Select_All_Localities"
@@ -8836,6 +8846,14 @@ rxversion="8.2">
 								</testmodule>
 							</teardown>
 						</testcase>
+						<teardown
+						id="c0d2331e-6ad6-4068-a851-f16e13119497"
+						name="teardown">
+							<testmodule
+							id="ed1ca529-22db-49ac-b251-8ce6743cb0fa"
+							name="ReportToPDFModule">
+							</testmodule>
+						</teardown>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -9122,6 +9140,9 @@ rxversion="8.2">
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll
+		</reference>
+		<reference>
+			Ranorex.ReportToPDF.exe
 		</reference>
 	</references>
 </testsuitedoc>

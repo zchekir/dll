@@ -83,8 +83,8 @@ namespace PrecisionRecruitment.General
             repo.GoogleAccount.GmailButton.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'GmailInbox.PlatformSupportEmail'", repo.GmailInbox.PlatformSupportEmailInfo, new ActionTimeout(10000), new RecordItemIndex(1));
-            repo.GmailInbox.PlatformSupportEmailInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'GmailInbox.PlatformSupportEmail'", repo.GmailInbox.PlatformSupportEmailInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.GmailInbox.PlatformSupportEmailInfo.WaitForExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.PlatformSupportEmail' at Center.", repo.GmailInbox.PlatformSupportEmailInfo, new RecordItemIndex(2));
             repo.GmailInbox.PlatformSupportEmail.Click(1);

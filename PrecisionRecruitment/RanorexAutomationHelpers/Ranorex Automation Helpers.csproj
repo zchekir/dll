@@ -56,10 +56,6 @@
     <Reference Include="Ranorex.Core.Resolver">
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ranorex.PDF">
-      <HintPath>..\packages\Ranorex.ReportToPDF.1.0.13\lib\net40\Ranorex.PDF.exe</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Ranorex.Plugin.Cef">
       <Private>False</Private>
     </Reference>
@@ -114,6 +110,9 @@
     <Reference Include="Ranorex.Plugin.Wpf">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Ranorex.ReportToPDF">
+      <HintPath>..\packages\Ranorex.ReportToPDF.1.0.15\lib\net40\Ranorex.ReportToPDF.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -131,20 +130,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\CollectRetryErrorMessagesModule.cs">
-      <id>8f410cce-7441-4c00-a994-dbd3d795dbc9</id>
+      <id>c937a7a4-8c6b-4971-bcca-98c6f8347bbd</id>
     </Compile>
     <Compile Include="Modules\EmailModule.cs">
-      <id>9ed11add-5994-421c-90f4-e89d3bcfbd94</id>
+      <id>73a31e6a-87ea-421c-82de-615d57eaa211</id>
     </Compile>
     <Compile Include="Modules\ReportToPDFModule.cs">
       <id>07ec2048-c666-4484-a1e6-c97b20e0a964</id>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Compile>
     <Compile Include="UserCodeCollections\DragNDropLibrary.cs">
-      <id>5d5207a5-6c42-40f5-9985-53c666c90d2e</id>
+      <id>18e77c5f-6146-405a-9032-60fa271f2cb1</id>
     </Compile>
     <Compile Include="UserCodeCollections\EmailLibrary.cs">
-      <id>ef602f4f-f84a-4560-8813-7ae635fd27cc</id>
+      <id>766ca7e0-a99b-43d2-a6f2-d3bb4b58ad41</id>
     </Compile>
     <Compile Include="UserCodeCollections\FileLibrary.cs">
       <id>aa2daf13-e441-46bc-ab4e-b6d667fe9ad9</id>
@@ -153,19 +152,19 @@
       <id>a8f36d1b-73f1-48fe-9dbf-9c9a2b2905d6</id>
     </Compile>
     <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
-      <id>76663f25-213e-4a24-8d1c-cac73e1c8631</id>
+      <id>3ba0f803-f969-4b74-835b-ba036d37dd44</id>
     </Compile>
     <Compile Include="UserCodeCollections\StringLibrary.cs">
-      <id>a2f4b8c8-80b4-420a-b956-aa1b1a1af817</id>
+      <id>6ef504cc-6937-4a8a-804e-9f1be3a1ed26</id>
     </Compile>
     <Compile Include="UserCodeCollections\SystemLibrary.cs">
-      <id>53241047-ace4-49e5-9bb6-0271a9f72962</id>
+      <id>89709e3e-028a-486a-bf89-6ada30800df8</id>
     </Compile>
     <Compile Include="UserCodeCollections\ValidationLibrary.cs">
-      <id>5a8a652c-4ca9-4e8c-9bb4-5317f41c3a7d</id>
+      <id>b7b9663c-5b62-4078-881f-cbb79c000de7</id>
     </Compile>
     <Compile Include="UserCodeCollections\WebLibrary.cs">
-      <id>78577943-5840-4c92-9852-52acab876565</id>
+      <id>97242054-2933-485b-9f2d-934d2bca9a53</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
