@@ -2613,7 +2613,7 @@ rxversion="8.2">
 					</param>
 					<param
 					name="SessionID"
-					value="">
+					value="12396">
 					</param>
 				</parameters>
 			</testcase>
@@ -5264,10 +5264,6 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="c0d2331e-6ad6-4068-a851-f16e13119497"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="c13a83f7-1f5d-49cd-b550-b1b7a020ec0e"
 			name="Enter_WorkflowTemplate"
@@ -5814,6 +5810,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="db488035-4e27-4b7f-8872-45c65c4d4925"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="dc88e37c-3f44-404b-839c-2bb1625300c0"
 			name="Click_Edit_Localities"
@@ -6301,12 +6301,6 @@ rxversion="8.2">
 			name="setup">
 			</setup>
 			<testmodule
-			id="ed1ca529-22db-49ac-b251-8ce6743cb0fa"
-			name="ReportToPDFModule"
-			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
-			type="UserCode">
-			</testmodule>
-			<testmodule
 			id="edfe7ff5-886e-4756-a7a8-0df41a9cd659"
 			name="Select_All_Localities"
 			ref="5af6e6dc-37da-402d-a6b4-a53e84ad1e5d"
@@ -6417,6 +6411,12 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="f19d7fdd-f605-41af-be95-7e0e59370809"
+			name="ReportToPDFModule"
+			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="DataConnector"
@@ -8847,10 +8847,10 @@ rxversion="8.2">
 							</teardown>
 						</testcase>
 						<teardown
-						id="c0d2331e-6ad6-4068-a851-f16e13119497"
+						id="db488035-4e27-4b7f-8872-45c65c4d4925"
 						name="teardown">
 							<testmodule
-							id="ed1ca529-22db-49ac-b251-8ce6743cb0fa"
+							id="f19d7fdd-f605-41af-be95-7e0e59370809"
 							name="ReportToPDFModule">
 							</testmodule>
 						</teardown>
@@ -9088,10 +9088,46 @@ rxversion="8.2">
 			id="12672266-c3e5-4da0-bf18-959502d59662">
 			</testcontainer>
 			<testcontainer
+			id="2dbb0c47-ef76-4518-b068-bfaeeab934d1">
+			</testcontainer>
+			<testcontainer
+			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
+			</testcontainer>
+			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
+			id="6e082396-bffa-4d84-b254-0da30d111799">
+			</testcontainer>
+			<testcontainer
+			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			</testcontainer>
+			<testcontainer
+			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
+			</testcontainer>
+			<testcontainer
+			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
+			</testcontainer>
+			<testcontainer
+			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
+			</testcontainer>
+			<testcontainer
+			id="ba7d02db-83df-4a58-a877-7079c0c072d1">
+			</testcontainer>
+			<testcontainer
 			id="baf76252-a794-4bae-b009-029b41fb4909">
+			</testcontainer>
+			<testcontainer
+			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
+			</testcontainer>
+			<testcontainer
+			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
+			</testcontainer>
+			<testcontainer
+			id="d9370862-f39d-4fcf-914c-685da7a04574">
+			</testcontainer>
+			<testcontainer
+			id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -9104,9 +9140,6 @@ rxversion="8.2">
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll
-		</reference>
-		<reference>
-			Ranorex.ReportToPDF.exe
 		</reference>
 	</references>
 </testsuitedoc>
