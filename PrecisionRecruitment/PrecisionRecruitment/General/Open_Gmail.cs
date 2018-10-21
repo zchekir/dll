@@ -83,6 +83,9 @@ namespace PrecisionRecruitment.General
             Host.Current.OpenBrowser("https://accounts.google.com/ServiceLogin", "Chrome", "", false, false, false, false, false);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
         }
 
 #region Image Feature Data
