@@ -1032,21 +1032,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="1d859cd7-c1a0-4fc7-a469-5fa360ece568"
-			name="Complete_CBB"
-			ref="6e90b38c-3821-42fe-b63a-d89afc19e2eb"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="0fc8ae48-6ea4-4dbf-bceb-ba6c22f63601"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="1dcdbcc7-9343-4085-a666-109f5b9ad774"
 			name="Validate_Previous_Page"
 			ref="0d12c760-1f82-421e-b529-cda277d518a2"
@@ -2584,6 +2569,22 @@ rxversion="8.2">
 					value="Cogstate#1">
 					</param>
 					<param
+					name="GmailAddress"
+					value="ranorexcogstate@gmail.com">
+					</param>
+					<param
+					name="GmailPassword"
+					value="Cogstate#1">
+					</param>
+					<param
+					name="dbUsername"
+					value="">
+					</param>
+					<param
+					name="dbPassword"
+					value="">
+					</param>
+					<param
 					name="RandNum"
 					value="">
 					</param>
@@ -2604,16 +2605,8 @@ rxversion="8.2">
 					value="">
 					</param>
 					<param
-					name="GmailAddress"
-					value="ranorexcogstate@gmail.com">
-					</param>
-					<param
-					name="GmailPassword"
-					value="Cogstate#1">
-					</param>
-					<param
-					name="SessionID"
-					value="12396">
+					name="TestIdentifier"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -5265,6 +5258,32 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c08d4960-b591-474d-8538-692f0582440a"
+			name="Validate_Extract_Outcomes"
+			ref="60ccdd85-b9e4-4ccd-bab5-cc5729e01121"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Datafile"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="a478bd94-1866-4f92-9e4a-310569ef5472"
+					variablename="fileName">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="80fc02e4-d0e0-4b3a-802d-00b7a911a4d8"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="ee7a7370-5eb5-497c-940a-8275673b073a"
+					variablename="dbUsername">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c13a83f7-1f5d-49cd-b550-b1b7a020ec0e"
 			name="Enter_WorkflowTemplate"
 			ref="038f892a-56da-4728-bb1c-ad7a56abce64"
@@ -6268,6 +6287,12 @@ rxversion="8.2">
 			minrange="0"
 			name="Edit_Study">
 			</testcase>
+			<testmodule
+			id="eb98a8bb-425e-4c06-99b7-9ded33bd704f"
+			name="Delete_New_Extract"
+			ref="5f5d863d-af96-49a4-9627-4bdcdd447401"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="ec72a0cf-d3e6-4215-9450-381021440753"
 			name="Click_SaveButton"
@@ -8738,12 +8763,12 @@ rxversion="8.2">
 							name="Upload_RawData">
 							</testmodule>
 							<testmodule
-							id="1d859cd7-c1a0-4fc7-a469-5fa360ece568"
-							name="Complete_CBB">
-							</testmodule>
-							<testmodule
 							id="7a960d3b-fab6-48f5-b6c2-59c6b248062b"
 							name="APIV2_QualificationStatus">
+							</testmodule>
+							<testmodule
+							id="c08d4960-b591-474d-8538-692f0582440a"
+							name="Validate_Extract_Outcomes">
 							</testmodule>
 							<teardown
 							id="5384270b-f364-445c-b646-92d330719e2d"
@@ -8840,6 +8865,10 @@ rxversion="8.2">
 							<teardown
 							id="43a30475-a3e8-4922-86d6-ce75566c783f"
 							name="teardown">
+								<testmodule
+								id="eb98a8bb-425e-4c06-99b7-9ded33bd704f"
+								name="Delete_New_Extract">
+								</testmodule>
 								<testmodule
 								id="f78cabb3-dc72-4422-b0d4-0c45c16b2cdd"
 								name="Close_Browser">

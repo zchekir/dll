@@ -39,7 +39,7 @@ namespace engine.Helpers
         /// Reads the CSV file passed in and stores it into a new DataTable
         /// </summary>
         [UserCodeMethod]
-        public static void ReadIntoDataTable(string fileName)
+        public static void ReadCSVIntoDataTable(string fileName)
         {
         	var dIndex = new Dictionary<string, int>();
         	using (TextFieldParser csvReader = new TextFieldParser(@".\csv\" + fileName + ".csv"))

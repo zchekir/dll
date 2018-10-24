@@ -5,7 +5,7 @@ id="60ccdd85-b9e4-4ccd-bab5-cc5729e01121"
 mode="Global"
 rxversion="8.2">
 	<name>
-		Query_Database
+		Validate_Extract_Outcomes
 	</name>
 	<repeatcount>
 		1
@@ -23,14 +23,21 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Query_Database"
-	namespace="PrecisionRecruitment.General">
+	classname="Validate_Extract_Outcomes"
+	namespace="PrecisionRecruitment.ExtractsPage">
 	</codegen>
 	<variables>
 		<var
-		id="ae1fff6b-cdf4-4e70-a95a-28192de39e5c"
-		name="SessionID">
-			12396
+		id="ee7a7370-5eb5-497c-940a-8275673b073a"
+		name="dbUsername">
+		</var>
+		<var
+		id="a478bd94-1866-4f92-9e4a-310569ef5472"
+		name="fileName">
+		</var>
+		<var
+		id="80fc02e4-d0e0-4b3a-802d-00b7a911a4d8"
+		name="dbPassword">
 		</var>
 	</variables>
 	<recorditems>
@@ -38,7 +45,7 @@ rxversion="8.2">
 		classname="SQLUtility"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="GetLastAssessmentOutcomes"
+		methodname="GetAssessmentOutcomes"
 		namespace="engine.Helpers"
 		optional="False"
 		varname="">
@@ -68,7 +75,8 @@ rxversion="8.2">
 				</argument>
 				<argument
 				argname="username"
-				id="aa809082-31fe-45f4-9020-a017aca2ba67">
+				id="aa809082-31fe-45f4-9020-a017aca2ba67"
+				variable="dbUsername">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -77,17 +85,8 @@ rxversion="8.2">
 				</argument>
 				<argument
 				argname="password"
-				id="2a5e2526-092e-4a5e-9d73-4bf0483e5c20">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="sessionID"
-				id="58842f1e-86ff-4257-99be-68decf0771d4"
-				variable="SessionID">
+				id="2a5e2526-092e-4a5e-9d73-4bf0483e5c20"
+				variable="dbPassword">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -100,7 +99,7 @@ rxversion="8.2">
 		classname="CSVUtility"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ReadIntoDataTable"
+		methodname="ReadCSVIntoDataTable"
 		namespace="engine.Helpers"
 		optional="False"
 		varname="">
@@ -112,22 +111,22 @@ rxversion="8.2">
 			id="ed3d54c0-3dcf-48b0-9eb4-0d8d4043b69d">
 				<argument
 				argname="fileName"
-				id="27c928b0-adcc-48aa-a1ad-3d0c92f2ae27">
+				id="27c928b0-adcc-48aa-a1ad-3d0c92f2ae27"
+				variable="fileName">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						extract1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Query_Database"
+		classname="Validate_Extract_Outcomes"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="CompareResults"
-		namespace="PrecisionRecruitment.General"
+		methodname="CompareOutcomes"
+		namespace="PrecisionRecruitment.ExtractsPage"
 		optional="False"
 		varname="">
 			<comment>
@@ -155,7 +154,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Query_Database.UserCode.cs
+		Validate_Extract_Outcomes.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

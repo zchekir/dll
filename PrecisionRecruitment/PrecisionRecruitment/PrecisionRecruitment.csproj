@@ -1237,6 +1237,30 @@
       <UserCode>true</UserCode>
       <id>3a819482-631f-4b7c-b23f-782bd1698bb7</id>
     </Compile>
+    <Compile Include="ExtractsPage\Delete_New_Extract.cs">
+      <BoundTo>1a3792f1-e2ab-4850-9786-a5e4d195bc09</BoundTo>
+      <DependentUpon>Delete_New_Extract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96632a3a-11de-4c0e-a61e-70a03365e445</id>
+    </Compile>
+    <Compile Include="ExtractsPage\Delete_New_Extract.UserCode.cs">
+      <BoundTo>1a3792f1-e2ab-4850-9786-a5e4d195bc09</BoundTo>
+      <DependentUpon>Delete_New_Extract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f50b4339-af81-41d1-b556-355841920253</id>
+    </Compile>
+    <Compile Include="ExtractsPage\Validate_Extract_Outcomes.cs">
+      <DependentUpon>Validate_Extract_Outcomes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>57cc0875-a9ea-45c4-86e0-32447735d3d1</id>
+      <BoundTo>d08a08e6-1cf8-4faa-b047-70908a2f3d69</BoundTo>
+    </Compile>
+    <Compile Include="ExtractsPage\Validate_Extract_Outcomes.UserCode.cs">
+      <DependentUpon>Validate_Extract_Outcomes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc7f9b6c-5cfd-45ef-8a39-48a2d5f1e957</id>
+      <BoundTo>d08a08e6-1cf8-4faa-b047-70908a2f3d69</BoundTo>
+    </Compile>
     <Compile Include="ExtractsPage\Select_PR_Extract.cs">
       <BoundTo>36db5384-1d4a-43f8-97af-a1d3afa8f8b7</BoundTo>
       <DependentUpon>Select_PR_Extract.rxrec</DependentUpon>
@@ -1440,18 +1464,6 @@
       <UserCode>true</UserCode>
       <id>05d555ad-1b4d-4e14-a1fd-36406da04e25</id>
       <BoundTo>74aef038-e93f-4db5-bdda-6624b1191545</BoundTo>
-    </Compile>
-    <Compile Include="General\Query_Database.cs">
-      <BoundTo>d08a08e6-1cf8-4faa-b047-70908a2f3d69</BoundTo>
-      <DependentUpon>Query_Database.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>57cc0875-a9ea-45c4-86e0-32447735d3d1</id>
-    </Compile>
-    <Compile Include="General\Query_Database.UserCode.cs">
-      <BoundTo>d08a08e6-1cf8-4faa-b047-70908a2f3d69</BoundTo>
-      <DependentUpon>Query_Database.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>bc7f9b6c-5cfd-45ef-8a39-48a2d5f1e957</id>
     </Compile>
     <Compile Include="General\Reset_Password.cs">
       <BoundTo>719fd679-f888-47df-90cf-ce821acf0186</BoundTo>
@@ -2861,8 +2873,24 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>e57a54fc-47b7-46ef-bc2e-3f0bea0cb472</id>
     </Content>
+    <None Include="csv\40yo_Tier1.csv">
+      <id>12929c40-22c9-4cf3-92f5-b9c034806609</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\40yo_Tier2.csv">
+      <id>959d2065-0139-4457-821d-88bf15b5ae33</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\40yo_Tier3.csv">
+      <id>e9238413-dfe5-43e4-a9b2-e4d0fe27e428</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="csv\extract1.csv">
       <id>7833311f-d735-4268-a53a-5ca69a633d41</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="csv\extract2.csv">
+      <id>f0ed9925-6644-4717-a502-ce44c0526ff5</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
@@ -2879,6 +2907,16 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>b5bcf663-de32-4bbc-8bc2-43d33035c529</id>
       <recordtableid>41384e97-ac94-4cb1-9ff9-cea5ecb8b1f2</recordtableid>
+    </None>
+    <None Include="ExtractsPage\Delete_New_Extract.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>1a3792f1-e2ab-4850-9786-a5e4d195bc09</id>
+      <recordtableid>5f5d863d-af96-49a4-9627-4bdcdd447401</recordtableid>
+    </None>
+    <None Include="ExtractsPage\Validate_Extract_Outcomes.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>d08a08e6-1cf8-4faa-b047-70908a2f3d69</id>
+      <recordtableid>60ccdd85-b9e4-4ccd-bab5-cc5729e01121</recordtableid>
     </None>
     <None Include="ExtractsPage\Select_PR_Extract.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -2964,11 +3002,6 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>74aef038-e93f-4db5-bdda-6624b1191545</id>
       <recordtableid>a49733ee-3a8a-44f4-ab4b-94acfbe959dd</recordtableid>
-    </None>
-    <None Include="General\Query_Database.rxrec">
-      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
-      <id>d08a08e6-1cf8-4faa-b047-70908a2f3d69</id>
-      <recordtableid>60ccdd85-b9e4-4ccd-bab5-cc5729e01121</recordtableid>
     </None>
     <None Include="General\Reset_Password.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

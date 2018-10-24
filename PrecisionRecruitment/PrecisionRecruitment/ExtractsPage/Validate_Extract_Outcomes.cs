@@ -20,50 +20,76 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.General
+namespace PrecisionRecruitment.ExtractsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Query_Database recording.
+    ///The Validate_Extract_Outcomes recording.
     /// </summary>
     [TestModule("60ccdd85-b9e4-4ccd-bab5-cc5729e01121", ModuleType.Recording, 1)]
-    public partial class Query_Database : ITestModule
+    public partial class Validate_Extract_Outcomes : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Query_Database instance = new Query_Database();
+        static Validate_Extract_Outcomes instance = new Validate_Extract_Outcomes();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Query_Database()
+        public Validate_Extract_Outcomes()
         {
-            SessionID = "12396";
+            dbUsername = "";
+            fileName = "";
+            dbPassword = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Query_Database Instance
+        public static Validate_Extract_Outcomes Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _SessionID;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable SessionID.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
-        [TestVariable("ae1fff6b-cdf4-4e70-a95a-28192de39e5c")]
-        public string SessionID
+        [TestVariable("ee7a7370-5eb5-497c-940a-8275673b073a")]
+        public string dbUsername
         {
-            get { return _SessionID; }
-            set { _SessionID = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
+        }
+
+        string _fileName;
+
+        /// <summary>
+        /// Gets or sets the value of variable fileName.
+        /// </summary>
+        [TestVariable("a478bd94-1866-4f92-9e4a-310569ef5472")]
+        public string fileName
+        {
+            get { return _fileName; }
+            set { _fileName = value; }
+        }
+
+        string _dbPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbPassword.
+        /// </summary>
+        [TestVariable("80fc02e4-d0e0-4b3a-802d-00b7a911a4d8")]
+        public string dbPassword
+        {
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
 #endregion
@@ -92,13 +118,13 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            engine.Helpers.SQLUtility.GetLastAssessmentOutcomes("", "", "", "", SessionID);
+            engine.Helpers.SQLUtility.GetAssessmentOutcomes("", "", dbUsername, dbPassword);
             Delay.Milliseconds(0);
             
-            engine.Helpers.CSVUtility.ReadIntoDataTable("extract1");
+            engine.Helpers.CSVUtility.ReadCSVIntoDataTable(fileName);
             Delay.Milliseconds(0);
             
-            CompareResults();
+            CompareOutcomes();
             Delay.Milliseconds(0);
             
         }

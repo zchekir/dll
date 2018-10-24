@@ -37,24 +37,25 @@ namespace engine.Helpers
         public static DataTable dt = new DataTable();
  
         /// <summary>
-        /// This will query the database and store the results of the last completed assessment into a datatable
+        /// This will query the database and store the results of the completed assessment into a datatable
         /// </summary>
         /// <param name="server">The server you want to connect to</param>
         /// <param name="database">The database name to query</param>
         /// <param name="username">Username credential for the server</param>
         /// <param name="password">Password credential for the server</param>
         [UserCodeMethod]
-        public static void GetLastAssessmentOutcomes(string server, string database, string username, string password, string sessionID)
+        public static void GetAssessmentOutcomes(string server, string database, string username, string password)
         {
 		
         	//Build sql query and connection string
 			string query = "SELECT " +
-						"IQNumber, Age, SessionID, SessionDate, SessionAttempt, Test, Round, TestCompletionPass, TestPerformancePass, TestIntegrityPass " +
-				      "TestDuration, PrimaryOutcome, ReactionTime, RawReactionTime, RTVariability, RawRTVariability, Accuracy, RawAccuracy, TotalCorrect, TotalCorrectExclPant, TotalErrors " +
-					"LegalErrors, RuleBreakErrors, TotalAnticipatory, TotalPost, TotalMaxOut, TotalCorrectFoils, TotalResponses, TotalTrials, StandardScoreZ " +
-				   "StandardScoreT, ChangeScore, PsyAttStdScr, PsyAttChange, LearnWMStdScr, LearnWMChange " +
-				"FROM [Reports].[vwExtractStandardAssessmentDetail] WHERE SessionID = '" + sessionID + "' ORDER BY SessionID DESC";
-			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Connection Timeout={4};", "cgst-qc.database.windows.net", "cgst-duo-api", "cogadmin@cgst-qc", "Thesql#1", "30");
+						"IQNumber, DateOfBirth, BirthYear, Age, SessionID, SessionDate, SessionAttempt, SessionDuration, SessionCompletionPass, SessionPerformancePass, SessionIntegrityPass, " +
+						"Test, TestCode, TestVersion, TestPhase, Round, TestAttempt, TestCompletionPass, TestPerformancePass, TestIntegrityPass, " +
+				       "TestDuration, PrimaryOutcome, ReactionTime, RawReactionTime, RTVariability, RawRTVariability, Accuracy, RawAccuracy, TotalCorrect, TotalCorrectExclPant, TotalErrors, " +
+					 "LegalErrors, RuleBreakErrors, TotalAnticipatory, TotalPost, TotalMaxOut, TotalCorrectFoils, TotalResponses, TotalTrials, MovesPerSecond, ReturnToHead, PerseverativeErrors, " +
+				    "WithinSearchErrors, GMLTIndex, StandardScoreZ, StandardScoreT, ChangeScore, PsyAttStdScr, PsyAttChange, LearnWMStdScr, LearnWMChange, AltLearnWMStdScr, AltStandardScoreZ, AltStandardScoreT, AlternateOutcome " +
+				"FROM [Reports].[vwExtractStandardAssessmentDetail] WHERE TestIdentifier = '" + WebService.TestIdentifier + "' ORDER BY TestId ASC";
+			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", "cgst-qc.database.windows.net", "cgst-duo-api", username, password, "Active Directory Password", "30");
 
 			//Send the query to the database and store the results in a DataTable
 			using (var da = new SqlDataAdapter(query, sqlConnString))

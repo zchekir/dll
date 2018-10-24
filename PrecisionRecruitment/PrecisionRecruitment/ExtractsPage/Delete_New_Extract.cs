@@ -20,61 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.General
+namespace PrecisionRecruitment.ExtractsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Secure_URL recording.
+    ///The Delete_New_Extract recording.
     /// </summary>
-    [TestModule("8720e4ed-cabc-4f47-8984-b71fc93cb4df", ModuleType.Recording, 1)]
-    public partial class Verify_Secure_URL : ITestModule
+    [TestModule("5f5d863d-af96-49a4-9627-4bdcdd447401", ModuleType.Recording, 1)]
+    public partial class Delete_New_Extract : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Verify_Secure_URL instance = new Verify_Secure_URL();
+        static Delete_New_Extract instance = new Delete_New_Extract();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Secure_URL()
+        public Delete_New_Extract()
         {
-            URL = "https://cgst-qc-duo.cogstate.com/template.html#/Login";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Secure_URL Instance
+        public static Delete_New_Extract Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _URL;
-
-        /// <summary>
-        /// Gets or sets the value of variable URL.
-        /// </summary>
-        [TestVariable("7d3ab88c-0fb5-4065-90d2-80e6d799ab12")]
-        public string URL
-        {
-            get { return _URL; }
-            set { _URL = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
-        {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
-        }
 
 #endregion
 
@@ -102,14 +79,8 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'State' to equal the specified value 'complete'. Associated repository item: 'CogstateSolutionPlatform'", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SelfInfo.WaitForAttributeEqual(10000, "State", "complete");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (PageUrl>$URL) on item 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.SelfInfo, "PageUrl", URL);
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.DeleteFiles("extract");
             Delay.Milliseconds(0);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "User successfully redirected to secure URL", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
             
         }
 

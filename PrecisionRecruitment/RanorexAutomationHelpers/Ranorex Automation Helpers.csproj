@@ -130,14 +130,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\CollectRetryErrorMessagesModule.cs">
-      <id>e442a95d-b035-445e-bcf9-66813afa6055</id>
+      <id>d55f0862-8418-4f6e-86c4-a458f3012d29</id>
     </Compile>
     <Compile Include="Modules\EmailModule.cs">
-      <id>fa02355a-446d-4315-8b6f-a62e6751ec85</id>
+      <id>f5a8d7b0-0a59-4491-9c88-4157564ff337</id>
     </Compile>
     <Compile Include="Modules\ReportToPDFModule.cs">
-      <id>07ec2048-c666-4484-a1e6-c97b20e0a964</id>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <id>055b09d1-fbf6-41bc-a658-5fbe4e2da90f</id>
     </Compile>
     <Compile Include="UserCodeCollections\DragNDropLibrary.cs">
       <id>b85cb9cd-8b4b-4086-b15e-137fdf9a620f</id>
@@ -171,6 +170,11 @@
     <None Include="packages.config">
       <id>36a4a0a4-b692-4c8b-a923-208db95585b4</id>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules">
+      <id>69411916-dd2a-466f-ac58-80184ce3a0da</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
