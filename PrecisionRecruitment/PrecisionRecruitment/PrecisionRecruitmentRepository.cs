@@ -5763,8 +5763,8 @@ namespace PrecisionRecruitment
                 _emailnextbuttonInfo = new RepoItemInfo(this, "EmailNextButton", ".//div[#'identifierNext']/?/?/span[@innertext='Next']", 30000, null, "ec53e776-3a8e-44d6-9208-a6e94f3ede4e");
                 _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//div[#'password']//input[@name='password']", 30000, null, "3d43d72b-f60e-45e9-9788-c3db8d1c5f02");
                 _passwordnextbuttonInfo = new RepoItemInfo(this, "PasswordNextButton", ".//div[#'passwordNext']//span[@innertext='Next']", 30000, null, "4001ae90-b375-4e97-8208-4553c98d2d13");
-                _ranorexuseraccountmultipleInfo = new RepoItemInfo(this, "RanorexUserAccountMultiple", ".//div[#'view_container']//p[@innertext='ranorexcogstate@gmail.com']", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
-                _ranorexuseraccountsingleInfo = new RepoItemInfo(this, "RanorexUserAccountSingle", ".//div[#'view_container']//div[@innertext='ranorexcogstate@gmail.com']", 30000, null, "26950d79-cb5d-46ca-bcdc-f2244b470f30");
+                _ranorexuseraccountmultipleInfo = new RepoItemInfo(this, "RanorexUserAccountMultiple", ".//div[#'view_container']//p[@innertext~'ranorexcogstate@gmail.com']", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
+                _ranorexuseraccountsingleInfo = new RepoItemInfo(this, "RanorexUserAccountSingle", ".//div[#'view_container']//div[@innertext~'([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$']", 30000, null, "26950d79-cb5d-46ca-bcdc-f2244b470f30");
             }
 
             /// <summary>
@@ -6050,7 +6050,7 @@ namespace PrecisionRecruitment
             {
                 _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$Key]/../a[@innertext~$DOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
                 _signoutbuttonInfo = new RepoItemInfo(this, "SignOutButton", ".//a[@innertext~'Sign out']", 30000, null, "64e8a261-42d6-40a1-bd4b-b6dc572a70e2");
-                _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div/div[1]/div/div[1]/div/div[@visible='True']", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
+                _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div[2]/div[1]/div/div[1]/div/div[@visible='True']", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
                 _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[#':35']/?/?/span", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
                 _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div", 30000, null, "0155202d-a183-4048-a7f7-aeb9677aa6fa");
                 _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span[#':3i']/b[@innertext='Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");

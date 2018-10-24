@@ -1882,7 +1882,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="RanorexUserAccountMultiple"
 			refimgid="59d5130b-8512-45c9-a1ef-7c1d7581d3ac"
 			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext='ranorexcogstate@gmail.com']
+				/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext~'ranorexcogstate@gmail.com']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -1891,7 +1891,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="RanorexUserAccountSingle"
 			refimgid="437f321c-6f0c-4222-b66d-93e980b807c7"
 			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'view_container']//div[@innertext='ranorexcogstate@gmail.com']
+				/dom[@domain='accounts.google.com']//div[#'view_container']//div[@innertext~'([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$']
 			</item>
 			<basepath>
 				/dom[@domain='accounts.google.com']
@@ -1984,7 +1984,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="BackToInbox"
 			refimgid="206e99b7-7333-425e-b16a-bcf9b43cf7d0"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div/div[1]/div/div[@visible='True']
+				/dom[@domain='mail.google.com']//div[#':5']/div[2]/div[1]/div/div[1]/div/div[@visible='True']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"

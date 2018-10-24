@@ -52,7 +52,7 @@ namespace PrecisionRecruitment.General
             	
         	}
         	//If ranorex user account is already selected, enter the password
-        	else if (RanorexUserAccountSingle.Exists(new Duration(1000)))
+        	else if (RanorexUserAccountSingle.Exists(new Duration(1000)) && repo.GoogleSignin.RanorexUserAccountSingle.InnerText == GmailAddress)
         	{
         		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PasswordField' at Center.", PasswordField);
             	PasswordField.FindAdapter<InputTag>().Click();
@@ -62,6 +62,36 @@ namespace PrecisionRecruitment.General
             	
             	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailPassword' with focus on 'PasswordField'.", PasswordField);
             	PasswordField.FindAdapter<InputTag>().PressKeys(GmailPassword, 1);
+        	}
+        	//Single user account is selected, but the account is not the Ranorex account. Go to generic login page and enter address manually
+        	else if (RanorexUserAccountSingle.Exists(new Duration(1000)))
+        	{
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexUserAccountSingle' at Center.", RanorexUserAccountSingle);
+        		RanorexUserAccountSingle.FindAdapter<DivTag>().Click();
+        		
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UseAnotherAccount' at Center.", repo.GoogleSignin.UseAnotherAccountButtonInfo);
+        		repo.GoogleSignin.UseAnotherAccountButtonInfo.FindAdapter<PTag>().Click();
+        		
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EmailField' at Center.", EmailField);
+            	EmailField.FindAdapter<InputTag>().Click();
+            	
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'EmailField'.", EmailField);
+            	EmailField.FindAdapter<InputTag>().PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            	
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'EmailField'.", EmailField);
+            	EmailField.FindAdapter<InputTag>().PressKeys(GmailAddress, 1);
+            	
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EmailNext' at Center.", EmailNext);
+            	EmailNext.FindAdapter<SpanTag>().Click();
+           	          	
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PasswordField' at Center.", PasswordField);
+            	PasswordField.FindAdapter<InputTag>().Click();
+            	
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'PasswordField'.", PasswordField);
+            	PasswordField.FindAdapter<InputTag>().PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            	
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailPassword' with focus on 'PasswordField'.", PasswordField);
+            	PasswordField.FindAdapter<InputTag>().PressKeys(GmailPassword, 1);	
         	}
         	//Enter Email and Password if no history is stored
         	else if (EmailField.Exists())

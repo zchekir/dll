@@ -240,6 +240,18 @@ namespace PrecisionRecruitment.ExtractsPage
         				match = true;
         			
         			break;
+
+				/*The following outcomes will be randomly generated or depend on the date the test is run
+ 				 *we do not need to compare these values for now*/         			
+ 				case "IQNumber":
+ 				case "SessionID":
+ 					Report.Info("Info", "IQNumber and SessionID are expected to be different to the knows scores");
+ 					
+ 					match = true;
+ 					
+ 					break;
+ 			
+
         			
         		/*Compare all other outcomes directly, no formatting needed*/       			
         		default:

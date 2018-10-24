@@ -33,6 +33,24 @@ rxversion="8.2">
 		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d0ebd79-d106-4c7e-ab5f-ccb5acf16bad"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="924b5c91-b150-4d60-a35f-97aabab73341"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//span[@innertext~'[0-9A-F]\-[0-9A-F]']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<getvaluerecorditem
 		attrname="InnerText"
 		enabled="True"
