@@ -44,7 +44,7 @@ namespace engine.Helpers
         /// <param name="username">Username credential for the server</param>
         /// <param name="password">Password credential for the server</param>
         [UserCodeMethod]
-        public static void GetAssessmentOutcomes(string server, string database, string username, string password)
+        public static void GetAssessmentOutcomes(string server, string database, string username, string password, string externalId)
         {
 		
         	//Build sql query and connection string
@@ -54,7 +54,7 @@ namespace engine.Helpers
 				       "TestDuration, PrimaryOutcome, ReactionTime, RawReactionTime, RTVariability, RawRTVariability, Accuracy, RawAccuracy, TotalCorrect, TotalCorrectExclPant, TotalErrors, " +
 					 "LegalErrors, RuleBreakErrors, TotalAnticipatory, TotalPost, TotalMaxOut, TotalCorrectFoils, TotalResponses, TotalTrials, MovesPerSecond, ReturnToHead, PerseverativeErrors, " +
 				    "WithinSearchErrors, GMLTIndex, StandardScoreZ, StandardScoreT, ChangeScore, PsyAttStdScr, PsyAttChange, LearnWMStdScr, LearnWMChange, AltLearnWMStdScr, AltStandardScoreZ, AltStandardScoreT, AlternateOutcome " +
-				"FROM [Reports].[vwExtractStandardAssessmentDetail] WHERE TestIdentifier = '" + WebService.TestIdentifier + "' ORDER BY TestId ASC";
+				"FROM [Reports].[vwExtractStandardAssessmentDetail] WHERE IQNumber = '" + externalId + "' ORDER BY TestId ASC";
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", "cgst-qc.database.windows.net", "cgst-duo-api", username, password, "Active Directory Password", "30");
 
 			//Send the query to the database and store the results in a DataTable

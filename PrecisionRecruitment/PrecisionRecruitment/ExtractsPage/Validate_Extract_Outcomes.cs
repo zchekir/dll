@@ -44,6 +44,7 @@ namespace PrecisionRecruitment.ExtractsPage
             dbUsername = "";
             fileName = "";
             dbPassword = "";
+            externalD = "";
         }
 
         /// <summary>
@@ -92,6 +93,18 @@ namespace PrecisionRecruitment.ExtractsPage
             set { _dbPassword = value; }
         }
 
+        string _externalD;
+
+        /// <summary>
+        /// Gets or sets the value of variable externalD.
+        /// </summary>
+        [TestVariable("3285f5af-f26a-422b-a12d-7118e5235090")]
+        public string externalD
+        {
+            get { return _externalD; }
+            set { _externalD = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -118,7 +131,7 @@ namespace PrecisionRecruitment.ExtractsPage
 
             Init();
 
-            engine.Helpers.SQLUtility.GetAssessmentOutcomes("", "", dbUsername, dbPassword);
+            engine.Helpers.SQLUtility.GetAssessmentOutcomes("", "", dbUsername, dbPassword, externalD);
             Delay.Milliseconds(0);
             
             engine.Helpers.CSVUtility.ReadCSVIntoDataTable(fileName);

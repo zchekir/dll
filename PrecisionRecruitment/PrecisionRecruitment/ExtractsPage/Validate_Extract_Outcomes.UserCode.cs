@@ -173,7 +173,6 @@ namespace PrecisionRecruitment.ExtractsPage
         		/*Extract DateOfBirth format 1/01/1975, Database DateOfBirth Format 1/01/1975 12:00:00 AM
  				 *This will convert each of the dates to the same format and check if they are the same*/
         		case "DateOfBirth":
- 				case "SessionDate":
         			System.DateTime extractDate = System.DateTime.Parse(extractValue);
         			System.DateTime databaseDate = System.DateTime.Parse(databaseValue);
         			
@@ -245,7 +244,8 @@ namespace PrecisionRecruitment.ExtractsPage
  				 *we do not need to compare these values for now*/         			
  				case "IQNumber":
  				case "SessionID":
- 					Report.Info("Info", "IQNumber and SessionID are expected to be different to the knows scores");
+ 				case "SessionDate":
+ 					Report.Info("Info", "IQNumber, SessionID and SessionDate are expected to be different to the knows scores");
  					
  					match = true;
  					

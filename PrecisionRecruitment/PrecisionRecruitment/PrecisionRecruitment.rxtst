@@ -515,6 +515,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0dba5f32-8ee6-48a1-a938-ef91baa65412"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -3607,6 +3608,14 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="DataConnector"
+			id="8025452f-675f-42b8-876b-34ae207f797b"
+			maxrange="0"
+			minrange="0"
+			name="Validate_Outcomes">
+			</testcase>
 			<testmodule
 			id="80309813-8ad6-484e-b9e6-45f779d43f31"
 			name="Click_SaveButton"
@@ -3636,6 +3645,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<modulegroup
+			enabled="False"
 			id="80e91399-acc2-4da3-8b00-83ba78b94f76"
 			name="Login"
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
@@ -4191,9 +4201,9 @@ rxversion="8.2">
 			<testcase
 			datarangeactive="True"
 			datasource="DataConnector"
-			errorbehavior="Stop"
+			errorbehavior="ContinueNextIteration"
 			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd"
-			maxrange="2"
+			maxrange="0"
 			minrange="0"
 			name="Complete_AssessmentAttempt">
 			</testcase>
@@ -5224,6 +5234,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="bf2e7c69-d9f7-4e21-a917-fc9f3629ad2c"
 			name="Clear_Gmail_Inbox"
 			ref="46fd72b9-76a1-4e0f-a312-530d1c4995bb"
@@ -5280,6 +5291,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="ee7a7370-5eb5-497c-940a-8275673b073a"
 					variablename="dbUsername">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="3285f5af-f26a-422b-a12d-7118e5235090"
+					variablename="externalD">
 					</var>
 				</databinding>
 			</testmodule>
@@ -6308,6 +6325,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="ecb765ab-a833-43f3-b34f-b7fbbd5d50a5"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -8680,6 +8698,34 @@ rxversion="8.2">
 							</testmodule>
 						</testcase>
 						<testcase
+						id="ba7d02db-83df-4a58-a877-7079c0c072d1"
+						name="Add_External_Role">
+							<setup
+							id="b3a62292-4d9c-47a3-b910-d00972c01cfe"
+							name="setup">
+								<testmodule
+								id="0dba5f32-8ee6-48a1-a938-ef91baa65412"
+								name="Open_Browser">
+								</testmodule>
+								<modulegroup
+								id="80e91399-acc2-4da3-8b00-83ba78b94f76"
+								name="Login">
+								</modulegroup>
+							</setup>
+							<modulegroup
+							id="8de3abae-f398-4095-8f6d-e6e046bb0a60"
+							name="Add_External_User_Role">
+							</modulegroup>
+							<teardown
+							id="37712b03-8131-4487-b53f-700f5275b493"
+							name="teardown">
+								<testmodule
+								id="e3f5a35c-93da-460e-9d14-00a77c6383b9"
+								name="Close_Browser">
+								</testmodule>
+							</teardown>
+						</testcase>
+						<testcase
 						id="d9370862-f39d-4fcf-914c-685da7a04574"
 						name="Generate_Secret">
 							<testmodule
@@ -8716,34 +8762,6 @@ rxversion="8.2">
 							</testmodule>
 						</testcase>
 						<testcase
-						id="ba7d02db-83df-4a58-a877-7079c0c072d1"
-						name="Add_External_Role">
-							<setup
-							id="b3a62292-4d9c-47a3-b910-d00972c01cfe"
-							name="setup">
-								<testmodule
-								id="0dba5f32-8ee6-48a1-a938-ef91baa65412"
-								name="Open_Browser">
-								</testmodule>
-								<modulegroup
-								id="80e91399-acc2-4da3-8b00-83ba78b94f76"
-								name="Login">
-								</modulegroup>
-							</setup>
-							<modulegroup
-							id="8de3abae-f398-4095-8f6d-e6e046bb0a60"
-							name="Add_External_User_Role">
-							</modulegroup>
-							<teardown
-							id="37712b03-8131-4487-b53f-700f5275b493"
-							name="teardown">
-								<testmodule
-								id="e3f5a35c-93da-460e-9d14-00a77c6383b9"
-								name="Close_Browser">
-								</testmodule>
-							</teardown>
-						</testcase>
-						<testcase
 						id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd"
 						name="Complete_AssessmentAttempt">
 							<testmodule
@@ -8765,10 +8783,6 @@ rxversion="8.2">
 							<testmodule
 							id="7a960d3b-fab6-48f5-b6c2-59c6b248062b"
 							name="APIV2_QualificationStatus">
-							</testmodule>
-							<testmodule
-							id="c08d4960-b591-474d-8538-692f0582440a"
-							name="Validate_Extract_Outcomes">
 							</testmodule>
 							<teardown
 							id="5384270b-f364-445c-b646-92d330719e2d"
@@ -8874,6 +8888,14 @@ rxversion="8.2">
 								name="Close_Browser">
 								</testmodule>
 							</teardown>
+						</testcase>
+						<testcase
+						id="8025452f-675f-42b8-876b-34ae207f797b"
+						name="Validate_Outcomes">
+							<testmodule
+							id="c08d4960-b591-474d-8538-692f0582440a"
+							name="Validate_Extract_Outcomes">
+							</testmodule>
 						</testcase>
 						<teardown
 						id="db488035-4e27-4b7f-8872-45c65c4d4925"
@@ -9130,6 +9152,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			</testcontainer>
+			<testcontainer
+			id="8025452f-675f-42b8-876b-34ae207f797b">
 			</testcontainer>
 			<testcontainer
 			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">

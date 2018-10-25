@@ -103,8 +103,8 @@ namespace PrecisionRecruitment.General
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'GmailInbox.SecretLink'", repo.GmailInbox.SecretLinkInfo, new ActionTimeout(5000), new RecordItemIndex(0));
             repo.GmailInbox.SecretLinkInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SecretLink' at Center.", repo.GmailInbox.SecretLinkInfo, new RecordItemIndex(1));
-            repo.GmailInbox.SecretLink.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SecretLink' at UpperLeft.", repo.GmailInbox.SecretLinkInfo, new RecordItemIndex(1));
+            repo.GmailInbox.SecretLink.Click(Location.UpperLeft, 1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Key) on item 'CogstateSolutionPlatform.GenerateSecretPage.APIKey'.", repo.CogstateSolutionPlatform.GenerateSecretPage.APIKeyInfo, new RecordItemIndex(2));
