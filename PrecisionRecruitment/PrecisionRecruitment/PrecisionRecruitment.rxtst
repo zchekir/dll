@@ -2015,6 +2015,38 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4c92a842-866b-4a64-82ab-f03e90448b7a"
+			name="Validate_Outcomes"
+			ref="0739dcfc-2397-4f24-93f3-0747bbf8fb91"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="dbPassword"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="59824432-8863-42bc-a1bb-4fa7b78a2f59"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d91af805-e7a8-444c-9dcf-67c8a006407d"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cd174ba7-a767-4428-a6e7-6e1d0be41a07"
+					variablename="externalD">
+					</var>
+					<var
+					dataname="Datafile"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="32eb6b65-3e01-4dd3-b16f-78e83dd26705"
+					variablename="fileName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4c988e39-6edd-467a-844a-71905e6c7c5a"
 			name="Click_Edit_Battery"
 			ref="cb27436f-4979-4acb-8565-64b8ce86736c"
@@ -5265,38 +5297,6 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="c08d4960-b591-474d-8538-692f0582440a"
-			name="Validate_Extract_Outcomes"
-			ref="60ccdd85-b9e4-4ccd-bab5-cc5729e01121"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Datafile"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="a478bd94-1866-4f92-9e4a-310569ef5472"
-					variablename="fileName">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="80fc02e4-d0e0-4b3a-802d-00b7a911a4d8"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="ee7a7370-5eb5-497c-940a-8275673b073a"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3285f5af-f26a-422b-a12d-7118e5235090"
-					variablename="externalD">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8893,8 +8893,8 @@ rxversion="8.2">
 						id="8025452f-675f-42b8-876b-34ae207f797b"
 						name="Validate_Outcomes">
 							<testmodule
-							id="c08d4960-b591-474d-8538-692f0582440a"
-							name="Validate_Extract_Outcomes">
+							id="4c92a842-866b-4a64-82ab-f03e90448b7a"
+							name="Validate_Outcomes">
 							</testmodule>
 						</testcase>
 						<teardown

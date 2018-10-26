@@ -32,7 +32,9 @@ namespace PrecisionRecruitment.UsersPage
         {
             // Your recording specific initialization code goes here.
         }
-
+		
+        //Sometime the External Users menu item will alrady be visible when the menu is opened. If this is the case
+        //we want to click the button straight away, otherwise we need to Expand the Administration menue then click ExternalUsers
         public void Click_ExternalUsers(RepoItemInfo AdministrationButton, RepoItemInfo ExternalUsersButton)
         {
         	if (repo.CogstateSolutionPlatform.ExternalUsers.Visible)

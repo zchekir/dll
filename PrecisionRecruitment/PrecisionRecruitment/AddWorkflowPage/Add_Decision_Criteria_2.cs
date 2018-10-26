@@ -135,6 +135,9 @@ namespace PrecisionRecruitment.AddWorkflowPage
             repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("32;10", 3);
             Delay.Milliseconds(90);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(5));
+            Delay.Duration(500, false);
+            
         }
 
 #region Image Feature Data

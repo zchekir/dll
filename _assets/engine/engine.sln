@@ -1,17 +1,19 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-# Ranorex Studio 8.2
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66F38AB3-0898-4F95-99B6-43134AFFC79C}"
-	ProjectSection(SolutionItems) = postProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91659C21-A01C-45E1-8D96-EC49F7FB96E1}"
+	ProjectSection(SolutionItems) = preProject
+		Ranorex = Ranorex
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91659C21-A01C-45E1-8D96-EC49F7FB96E1}"
-	ProjectSection(SolutionItems) = postProject
-		Ranorex = .\Ranorex.rxsettings
+	ProjectSection(SolutionItems) = preProject
+		Ranorex = Ranorex
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "engine", "engine.csproj", "{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "engine", "engine.csproj", "{35789612-3555-4457-93C4-C6661A9E674A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +21,15 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Debug|x86.Build.0 = Debug|x86
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Debug|x86.ActiveCfg = Debug|x86
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Release|x86.Build.0 = Release|x86
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Release|x86.ActiveCfg = Release|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Debug|x86.ActiveCfg = Debug|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Debug|x86.Build.0 = Debug|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Release|x86.ActiveCfg = Release|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44402B19-CDB8-47F4-8E3C-CDCF6423A806}
 	EndGlobalSection
 EndGlobal

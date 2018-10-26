@@ -33,6 +33,24 @@ rxversion="8.2">
 		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="1f1c0f69-aa34-496a-a126-62df5ef5ad04"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2547f856-5f28-4dad-942d-3a0cd6c41707"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_input_key_0']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="Exists"
 		duration="100ms"

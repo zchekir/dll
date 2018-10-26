@@ -93,6 +93,9 @@ namespace PrecisionRecruitment.UsersPage
             repo.CogstateSolutionPlatform.HamburgerMenu.Click();
             Delay.Milliseconds(400);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 100ms.", new RecordItemIndex(1));
+            Delay.Duration(100, false);
+            
             Click_ExternalUsers(repo.CogstateSolutionPlatform.AdministrationInfo, repo.CogstateSolutionPlatform.ExternalUsersInfo);
             Delay.Milliseconds(0);
             

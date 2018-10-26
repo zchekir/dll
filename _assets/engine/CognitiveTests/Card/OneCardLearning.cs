@@ -18,7 +18,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 
-namespace engine.Card
+namespace engine.CognitiveTests.Card
 {
     /// <summary>
     /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.

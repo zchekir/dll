@@ -24,22 +24,22 @@ namespace PrecisionRecruitment.ExtractsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_Extract_Outcomes recording.
+    ///The Validate_Extract_Outcomes_OLD recording.
     /// </summary>
     [TestModule("60ccdd85-b9e4-4ccd-bab5-cc5729e01121", ModuleType.Recording, 1)]
-    public partial class Validate_Extract_Outcomes : ITestModule
+    public partial class Validate_Extract_Outcomes_OLD : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Validate_Extract_Outcomes instance = new Validate_Extract_Outcomes();
+        static Validate_Extract_Outcomes_OLD instance = new Validate_Extract_Outcomes_OLD();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_Extract_Outcomes()
+        public Validate_Extract_Outcomes_OLD()
         {
             dbUsername = "";
             fileName = "";
@@ -50,7 +50,7 @@ namespace PrecisionRecruitment.ExtractsPage
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_Extract_Outcomes Instance
+        public static Validate_Extract_Outcomes_OLD Instance
         {
             get { return instance; }
         }

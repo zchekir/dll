@@ -90,40 +90,40 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            engine.YesLearn.RunYesLearn(DOM);
+            engine.CognitiveTests.KeyLearning.YesLearn.RunYesLearn(DOM);
             Delay.Milliseconds(0);
             
-            engine.Detection.RunDetectionLearn(DOM);
+            engine.CognitiveTests.Card.Detection.RunDetectionLearn(DOM);
             Delay.Milliseconds(0);
             
-            engine.Detection.RunDetectionTest(DOM);
+            engine.CognitiveTests.Card.Detection.RunDetectionTest(DOM);
             Delay.Milliseconds(0);
             
-            engine.NoLearn.RunNoLearn(DOM);
+            engine.CognitiveTests.KeyLearning.NoLearn.RunNoLearn(DOM);
             Delay.Milliseconds(0);
             
-            engine.YesNoLearn.RunYesNoLearn(DOM);
+            engine.CognitiveTests.KeyLearning.YesNoLearn.RunYesNoLearn(DOM);
             Delay.Milliseconds(0);
             
-            engine.Identification.RunIdentificationLearn(DOM);
+            engine.CognitiveTests.Card.Identification.RunIdentificationLearn(DOM);
             Delay.Milliseconds(0);
             
-            engine.Identification.RunIdentificationTest(DOM);
+            engine.CognitiveTests.Card.Identification.RunIdentificationTest(DOM);
             Delay.Milliseconds(0);
             
-            engine.Card.OneCardLearning.RunOCLLearn(DOM);
+            engine.CognitiveTests.Card.OneCardLearning.RunOCLLearn(DOM);
             Delay.Milliseconds(0);
             
-            engine.Card.OneCardLearning.RunOCLDemo(DOM);
+            engine.CognitiveTests.Card.OneCardLearning.RunOCLDemo(DOM);
             Delay.Milliseconds(0);
             
-            engine.Card.OneCardLearning.RunOCLReal(DOM);
+            engine.CognitiveTests.Card.OneCardLearning.RunOCLReal(DOM);
             Delay.Milliseconds(0);
             
-            engine.Card.OneBack.RunOneBackLearn(DOM);
+            engine.CognitiveTests.Card.OneBack.RunOneBackLearn(DOM);
             Delay.Milliseconds(0);
             
-            engine.Card.OneBack.RunOneBackTest(DOM);
+            engine.CognitiveTests.Card.OneBack.RunOneBackTest(DOM);
             Delay.Milliseconds(0);
             
         }

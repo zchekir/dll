@@ -20,69 +20,89 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.AddWorkflowPage
+namespace PrecisionRecruitment.ExtractsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Assign_Battery_to_Workflow recording.
+    ///The Validate_Outcomes recording.
     /// </summary>
-    [TestModule("5e586929-3ac2-4201-84c3-6071a72f25c8", ModuleType.Recording, 1)]
-    public partial class Assign_Battery_to_Workflow : ITestModule
+    [TestModule("0739dcfc-2397-4f24-93f3-0747bbf8fb91", ModuleType.Recording, 1)]
+    public partial class Validate_Outcomes : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Assign_Battery_to_Workflow instance = new Assign_Battery_to_Workflow();
+        static Validate_Outcomes instance = new Validate_Outcomes();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Assign_Battery_to_Workflow()
+        public Validate_Outcomes()
         {
-            BatteryName = "Ranorex Battery";
-            RandNum = "270695";
+            dbUsername = "";
+            dbPassword = "";
+            externalD = "";
+            fileName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Assign_Battery_to_Workflow Instance
+        public static Validate_Outcomes Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
-        {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
-        }
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable BatteryName.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
-        [TestVariable("610df901-efa9-4374-8683-6129711e6537")]
-        public string BatteryName
+        [TestVariable("d91af805-e7a8-444c-9dcf-67c8a006407d")]
+        public string dbUsername
         {
-            get { return repo.BatteryName; }
-            set { repo.BatteryName = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
+        string _dbPassword;
+
         /// <summary>
-        /// Gets or sets the value of variable RandNum.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
-        [TestVariable("e6530ed0-f488-4aa8-8afe-85836dd0927f")]
-        public string RandNum
+        [TestVariable("59824432-8863-42bc-a1bb-4fa7b78a2f59")]
+        public string dbPassword
         {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _externalD;
+
+        /// <summary>
+        /// Gets or sets the value of variable externalD.
+        /// </summary>
+        [TestVariable("cd174ba7-a767-4428-a6e7-6e1d0be41a07")]
+        public string externalD
+        {
+            get { return _externalD; }
+            set { _externalD = value; }
+        }
+
+        string _fileName;
+
+        /// <summary>
+        /// Gets or sets the value of variable fileName.
+        /// </summary>
+        [TestVariable("32eb6b65-3e01-4dd3-b16f-78e83dd26705")]
+        public string fileName
+        {
+            get { return _fileName; }
+            set { _fileName = value; }
         }
 
 #endregion
@@ -111,23 +131,14 @@ namespace PrecisionRecruitment.AddWorkflowPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStepInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep.Click(3);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTabInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab.Click(3);
-            Delay.Milliseconds(90);
-            
-            SelectBatteryOption();
+            engine.Helpers.SQLUtility.GetAssessmentOutcomes("", "", dbUsername, dbPassword, externalD);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 28;16.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("28;16", 3);
-            Delay.Milliseconds(90);
+            engine.Helpers.CSVUtility.ReadCSVIntoDataTable(fileName);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
-            Delay.Duration(500, false);
+            engine.DataProcessor.CompareOutcomes.Validate_Outcomes_Match();
+            Delay.Milliseconds(0);
             
         }
 

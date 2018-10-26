@@ -5,7 +5,7 @@ id="60ccdd85-b9e4-4ccd-bab5-cc5729e01121"
 mode="Global"
 rxversion="8.2">
 	<name>
-		Validate_Extract_Outcomes
+		Validate_Extract_Outcomes_OLD
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Validate_Extract_Outcomes"
+	classname="Validate_Extract_Outcomes_OLD"
 	namespace="PrecisionRecruitment.ExtractsPage">
 	</codegen>
 	<variables>
@@ -136,7 +136,7 @@ rxversion="8.2">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Validate_Extract_Outcomes"
+		classname="Validate_Extract_Outcomes_OLD"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="CompareOutcomes"
@@ -168,7 +168,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Validate_Extract_Outcomes.UserCode.cs
+		Validate_Extract_Outcomes_OLD.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

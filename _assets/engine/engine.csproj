@@ -143,17 +143,26 @@
     <Compile Include="AssemblyInfo.cs">
       <id>be8b7349-5bb9-4725-b9f4-34b44a67f7a7</id>
     </Compile>
-    <Compile Include="Card\Detection.cs">
+    <Compile Include="CognitiveTests\Card\Detection.cs">
       <id>772f88d7-3442-4ee0-8a06-e472576cd036</id>
     </Compile>
-    <Compile Include="Card\Identification.cs">
+    <Compile Include="CognitiveTests\Card\Identification.cs">
       <id>c746a4e0-cabd-443f-81c5-63e1d02f0cda</id>
     </Compile>
-    <Compile Include="Card\OneBack.cs">
+    <Compile Include="CognitiveTests\Card\OneBack.cs">
       <id>61cd0eea-21ab-4a46-bf23-4b76513dd0f8</id>
     </Compile>
-    <Compile Include="Card\OneCardLearning.cs">
+    <Compile Include="CognitiveTests\Card\OneCardLearning.cs">
       <id>c29effed-2843-4a04-b8e5-99010f33a9ad</id>
+    </Compile>
+    <Compile Include="CognitiveTests\KeyLearning\NoLearn.cs">
+      <id>18e52793-9049-4b60-bd23-5858d2a6db4b</id>
+    </Compile>
+    <Compile Include="CognitiveTests\KeyLearning\YesLearn.cs">
+      <id>8763fd0a-db06-4c8b-9ca2-06db2a1167e3</id>
+    </Compile>
+    <Compile Include="CognitiveTests\KeyLearning\YesNoLearn.cs">
+      <id>14cf5fe2-9b54-44c9-b44f-e17b8098fb22</id>
     </Compile>
     <Compile Include="Helpers\CSVUtility.cs">
       <id>47043b12-db6a-4593-99a2-2dc459103378</id>
@@ -167,25 +176,25 @@
     <Compile Include="Helpers\WebService.cs">
       <id>5c7d965d-3852-436a-86d2-0453b176bdca</id>
     </Compile>
-    <Compile Include="KeyLearning\NoLearn.cs">
-      <id>18e52793-9049-4b60-bd23-5858d2a6db4b</id>
-    </Compile>
-    <Compile Include="KeyLearning\YesLearn.cs">
-      <id>8763fd0a-db06-4c8b-9ca2-06db2a1167e3</id>
-    </Compile>
-    <Compile Include="KeyLearning\YesNoLearn.cs">
-      <id>14cf5fe2-9b54-44c9-b44f-e17b8098fb22</id>
+    <Compile Include="DataProcessor\CompareOutcomes.cs">
+      <id>40e05dbf-c838-4ee0-8b67-34c253e65fa1</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Card">
-      <id>b4f24a6a-21a5-4b26-8dec-912273be6381</id>
+    <Folder Include="CognitiveTests\Card">
+      <id>565e1b7f-21eb-46bf-a4fa-0f03c321264d</id>
+    </Folder>
+    <Folder Include="CognitiveTests\KeyLearning">
+      <id>08fa7426-4e02-4f2c-a062-e23bd68ae825</id>
     </Folder>
     <Folder Include="Helpers">
       <id>7ee5a589-5589-4efb-96d7-07e88da6c895</id>
     </Folder>
-    <Folder Include="KeyLearning">
-      <id>757dec28-3b34-4217-84ee-55811c28ae10</id>
+    <Folder Include="DataProcessor">
+      <id>889ef586-6e95-4e0f-b0ea-a65b9f3eb742</id>
+    </Folder>
+    <Folder Include="CognitiveTests">
+      <id>d34940bd-11d4-47b6-b4cb-770405ee0ca2</id>
     </Folder>
   </ItemGroup>
   <ItemGroup>
