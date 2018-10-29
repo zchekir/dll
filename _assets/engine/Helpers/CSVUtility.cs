@@ -41,6 +41,9 @@ namespace engine.Helpers
         [UserCodeMethod]
         public static void ReadCSVIntoDataTable(string fileName)
         {
+        	//Clear datatable to make sure we are starting fresh
+        	dt.Clear();
+        	
         	var dIndex = new Dictionary<string, int>();
         	using (TextFieldParser csvReader = new TextFieldParser(@".\csv\" + fileName + ".csv"))
         	{

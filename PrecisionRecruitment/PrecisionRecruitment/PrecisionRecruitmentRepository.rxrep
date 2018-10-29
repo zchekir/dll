@@ -802,6 +802,15 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_enrollStatus_3']
 				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="a9be2453-e8e7-4234-b4ba-8f74e63504fd"
+				name="IQNumberField"
+				refimgid="d7302b13-bdd6-49d5-b8d2-02ff99e73b87"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//input[@id~'formly_[[0-9]+_input_iqNumber_6']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -1023,7 +1032,7 @@ rxversion="8.2">
 				name="StudyCard"
 				refimgid="42afd47e-7398-4146-84b4-e244a89f3f24"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext&gt;$ProjectName]
+					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext&lt;$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -1180,7 +1189,7 @@ rxversion="8.2">
 				name="ExternalUserBreadcrumb"
 				refimgid="f8bda82c-2a2c-4bc7-a5ce-2e561317cad7"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//span[@innertext~'[0-9A-F]\-[0-9A-F]']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//span[@innertext~'[0-9A-F]\-']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -1799,6 +1808,26 @@ rxversion="8.2">
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]//div/label[@innertext='Users']
 			</item>
+			<item
+			addcaps="unknown,webelement,h4tag"
+			capname="h4tag"
+			id="2ced943c-58c3-4c74-8175-93d86fa2d329"
+			name="UserRoleNotFoundPopup"
+			refimgid="652c8b90-ceb0-4f50-ab62-7d0d80424ac3"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']/body/div[3]/div/div/div/div[1]/h4[@innertext='NotFound']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[3]/div/div/div/div[1]/h4[@innertext='NotFound']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="2277bba7-33be-4fb8-8625-24e5b8f37387"
+			name="UserRoleNotFoundCloseButton"
+			refimgid="8d07715b-14bf-4104-bfd1-bafe87a6670a"
+			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']/body/div[3]/div/div/div/div[3]/button[@innertext='Close']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[3]/div/div/div/div[3]/button[@innertext='Close']
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>
@@ -1993,7 +2022,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="SelectAllMessagesCheckbox"
 			refimgid="e54203af-f89b-4337-8ba1-d2afc8b599dc"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':35']/?/?/span
+				/dom[@domain='mail.google.com']//div[@id~':3[012345]']/?/?/span[@role='checkbox']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"

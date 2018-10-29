@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace PrecisionRecruitment.StudiesPage
+namespace PrecisionRecruitment.ParticipantsPage
 {
-    public partial class Select_Study
+    public partial class Extract_Participant_IQNumber
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,18 +31,6 @@ namespace PrecisionRecruitment.StudiesPage
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        //Make sure the full Study name has been entered into the search field before attempting to select the study
-        public void Try_Enter_StudyName(RepoItemInfo SearchField)
-        {
-        	do {
-        		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ProjectName' with focus on 'SearchField'.", SearchField);
-            	SearchField.FindAdapter<InputTag>().PressKeys(ProjectName, 1);
-            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'SearchField'.", SearchField);
-            	SearchField.FindAdapter<InputTag>().PressKeys(RandNum, 1);
-        	}
-        	while (!SearchField.FindAdapter<InputTag>().Value.Contains(RandNum)); 	
         }
 
     }

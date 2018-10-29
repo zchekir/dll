@@ -46,6 +46,7 @@ namespace engine.Helpers
         [UserCodeMethod]
         public static void GetAssessmentOutcomes(string server, string database, string username, string password, string externalId)
         {
+        	dt.Clear();
 		
         	//Build sql query and connection string
 			string query = "SELECT " +

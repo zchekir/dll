@@ -1165,6 +1165,9 @@
       <id>05bd7b6d-b4bd-48a2-b3e0-42654a63a29c</id>
       <BoundTo>f756df1f-07d7-49e4-bf5b-bbebb37a024b</BoundTo>
     </Compile>
+    <Compile Include="APIModules\Clear_ExternalID.cs">
+      <id>1937a057-0137-4c18-8e37-8a056f57ab2c</id>
+    </Compile>
     <Compile Include="BatteriesPage\Click_Add_Battery.cs">
       <DependentUpon>Click_Add_Battery.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1731,6 +1734,18 @@
       <DependentUpon>Click_Sort_LastUpdate.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>20626001-85c7-4302-8e35-84cf396ae3d5</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Extract_Participant_IQNumber.cs">
+      <BoundTo>b74a3079-8ffe-4ea1-9ac8-6682d2d62301</BoundTo>
+      <DependentUpon>Extract_Participant_IQNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>efd1ee80-e267-4a2a-94e0-fb57679c8306</id>
+    </Compile>
+    <Compile Include="ParticipantsPage\Extract_Participant_IQNumber.UserCode.cs">
+      <BoundTo>b74a3079-8ffe-4ea1-9ac8-6682d2d62301</BoundTo>
+      <DependentUpon>Extract_Participant_IQNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>88a68120-54d6-46ab-a9ae-dccc84c4da5f</id>
     </Compile>
     <Compile Include="ParticipantsPage\Select_No_Test_Dropdown.cs">
       <BoundTo>a2eb7cb2-a493-4fed-ac6d-953592045cf6</BoundTo>
@@ -3136,6 +3151,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>94b265bc-04a6-42b1-9eb0-98cb538d1950</id>
       <recordtableid>93a531d7-d39c-4006-a74f-7c668f1713ad</recordtableid>
+    </None>
+    <None Include="ParticipantsPage\Extract_Participant_IQNumber.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>b74a3079-8ffe-4ea1-9ac8-6682d2d62301</id>
+      <recordtableid>0de1ee83-e7e6-4ddd-8dbc-17f0eb0ca8ad</recordtableid>
     </None>
     <None Include="ParticipantsPage\Select_No_Test_Dropdown.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

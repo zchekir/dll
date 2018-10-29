@@ -354,6 +354,8 @@ namespace PrecisionRecruitment
             RepoItemInfo _batteryresultsInfo;
             RepoItemInfo _batteryskipInfo;
             RepoItemInfo _usersInfo;
+            RepoItemInfo _userrolenotfoundpopupInfo;
+            RepoItemInfo _userrolenotfoundclosebuttonInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -394,6 +396,8 @@ namespace PrecisionRecruitment
                 _batteryresultsInfo = new RepoItemInfo(this, "BatteryResults", ".//textarea[#'results']", 30000, null, "41136832-35b1-4bfa-9dcb-92e2d111c24b");
                 _batteryskipInfo = new RepoItemInfo(this, "BatterySkip", ".//button[#'skip']", 30000, null, "5cafea12-8dac-456b-af85-df1546dac229");
                 _usersInfo = new RepoItemInfo(this, "Users", ".//div[#'ng-app']/tag/div/div[4]/tag/div/div/div[2]/div[2]/div/div[2]//div/label[@innertext='Users']", 30000, null, "7c60992c-f0db-4789-9789-0b7d2f9297a2");
+                _userrolenotfoundpopupInfo = new RepoItemInfo(this, "UserRoleNotFoundPopup", "body/div[3]/div/div/div/div[1]/h4[@innertext='NotFound']", 30000, null, "2ced943c-58c3-4c74-8175-93d86fa2d329");
+                _userrolenotfoundclosebuttonInfo = new RepoItemInfo(this, "UserRoleNotFoundCloseButton", "body/div[3]/div/div/div/div[3]/button[@innertext='Close']", 30000, null, "2277bba7-33be-4fb8-8625-24e5b8f37387");
             }
 
             /// <summary>
@@ -753,6 +757,54 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _usersInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundPopup item.
+            /// </summary>
+            [RepositoryItem("2ced943c-58c3-4c74-8175-93d86fa2d329")]
+            public virtual Ranorex.H4Tag UserRoleNotFoundPopup
+            {
+                get
+                {
+                    return _userrolenotfoundpopupInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundPopup item info.
+            /// </summary>
+            [RepositoryItemInfo("2ced943c-58c3-4c74-8175-93d86fa2d329")]
+            public virtual RepoItemInfo UserRoleNotFoundPopupInfo
+            {
+                get
+                {
+                    return _userrolenotfoundpopupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundCloseButton item.
+            /// </summary>
+            [RepositoryItem("2277bba7-33be-4fb8-8625-24e5b8f37387")]
+            public virtual Ranorex.ButtonTag UserRoleNotFoundCloseButton
+            {
+                get
+                {
+                    return _userrolenotfoundclosebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundCloseButton item info.
+            /// </summary>
+            [RepositoryItemInfo("2277bba7-33be-4fb8-8625-24e5b8f37387")]
+            public virtual RepoItemInfo UserRoleNotFoundCloseButtonInfo
+            {
+                get
+                {
+                    return _userrolenotfoundclosebuttonInfo;
                 }
             }
 
@@ -2927,6 +2979,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _expandprofileInfo;
             RepoItemInfo _participantusernamefieldInfo;
             RepoItemInfo _enrollstatusdropdownInfo;
+            RepoItemInfo _iqnumberfieldInfo;
 
             /// <summary>
             /// Creates a new ParticipantsPage  folder.
@@ -2943,6 +2996,7 @@ namespace PrecisionRecruitment
                 _expandprofileInfo = new RepoItemInfo(this, "ExpandProfile", ".//div[#'ng-app']/tag/div/div[3]/tag/div/?/?/i[@innertext='keyboard_arrow_down']", 30000, null, "92ea73f0-8db5-4d63-bcfb-999617090417");
                 _participantusernamefieldInfo = new RepoItemInfo(this, "ParticipantUserNameField", ".//input[@id~'formly_[0-9]+_input_userName_12']", 30000, null, "e86403e9-ba78-4778-ba8b-25584e0d16c8");
                 _enrollstatusdropdownInfo = new RepoItemInfo(this, "EnrollStatusDropdown", ".//select[@id~'formly_[0-9]+_select_enrollStatus_3']", 30000, null, "082a5242-4567-4480-9fd0-962468dd30a8");
+                _iqnumberfieldInfo = new RepoItemInfo(this, "IQNumberField", ".//input[@id~'formly_[[0-9]+_input_iqNumber_6']", 30000, null, "a9be2453-e8e7-4234-b4ba-8f74e63504fd");
             }
 
             /// <summary>
@@ -3170,6 +3224,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _enrollstatusdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IQNumberField item.
+            /// </summary>
+            [RepositoryItem("a9be2453-e8e7-4234-b4ba-8f74e63504fd")]
+            public virtual Ranorex.InputTag IQNumberField
+            {
+                get
+                {
+                    return _iqnumberfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IQNumberField item info.
+            /// </summary>
+            [RepositoryItemInfo("a9be2453-e8e7-4234-b4ba-8f74e63504fd")]
+            public virtual RepoItemInfo IQNumberFieldInfo
+            {
+                get
+                {
+                    return _iqnumberfieldInfo;
                 }
             }
         }
@@ -3687,7 +3765,7 @@ namespace PrecisionRecruitment
                 _savebuttonInfo = new RepoItemInfo(this, "SaveButton", "div[3]//div/button[@ng-click>'save']", 30000, null, "8a61fdd3-cb4b-4f86-b20d-3fd9bbe1e5b1");
                 _batterydraftstatusInfo = new RepoItemInfo(this, "BatteryDraftStatus", "div[3]//tag[@tagname='cogstate-helper-battery-add']/div/div/div/div/form[@method='get']/tag[@tagname='ng-form']/div[4]/?/?/div/label[@innertext='    Population    *  ']", 30000, null, "c60cbf9d-8566-4d67-a751-6734920ff2ce");
                 _batterynamebreadcrumbInfo = new RepoItemInfo(this, "BatteryNameBreadcrumb", "div[2]/div//span[@innertext>$BatteryName]", 30000, null, "aa383d1f-32f2-45a8-b2bd-8af31a40c22b");
-                _studycardInfo = new RepoItemInfo(this, "StudyCard", "div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext>$ProjectName]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
+                _studycardInfo = new RepoItemInfo(this, "StudyCard", "div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext<$RandNum]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
                 _workflownamebreadcrumbInfo = new RepoItemInfo(this, "WorkflowNameBreadcrumb", "div[2]/div//span[@innertext>$WorkflowName]", 30000, null, "280eeae4-8102-4c5e-bd8f-cb861cbf2f41");
                 _visitscheduledraftstatusInfo = new RepoItemInfo(this, "VisitScheduleDraftStatus", "div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-add']/div/div[1]/tag[@tagname='ng-form']/div[4]", 30000, null, "26fbb4ea-cce5-47e3-b060-d07e6ca7a46c");
                 _publishbuttonInfo = new RepoItemInfo(this, "PublishButton", "div[3]//tag[@tagname='cogstate-helper-workflow-display-reorder']/div/div[1]/div/div[1]/div/?/div/i[@innertext='publish']", 30000, null, "ef1eb972-64d9-45df-b9f7-4acc1ca20200");
@@ -4003,7 +4081,7 @@ namespace PrecisionRecruitment
                 _externaluseremailfieldInfo = new RepoItemInfo(this, "ExternalUserEmailField", ".//input[@id~'formly_[0-9]+_input_contactEmail_1']", 30000, null, "4647601e-706b-41d6-a391-656ee0bee7b4");
                 _activecheckboxInfo = new RepoItemInfo(this, "ActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_2']", 30000, null, "f092518f-91bb-46f4-a906-01df286231f4");
                 _externaluserkeyInfo = new RepoItemInfo(this, "ExternalUserKey", ".//input[@id~'formly_[0-9]+_input_key_0']", 30000, null, "2547f856-5f28-4dad-942d-3a0cd6c41707");
-                _externaluserbreadcrumbInfo = new RepoItemInfo(this, "ExternalUserBreadcrumb", ".//span[@innertext~'[0-9A-F]\\-[0-9A-F]']", 30000, null, "924b5c91-b150-4d60-a35f-97aabab73341");
+                _externaluserbreadcrumbInfo = new RepoItemInfo(this, "ExternalUserBreadcrumb", ".//span[@innertext~'[0-9A-F]\\-']", 30000, null, "924b5c91-b150-4d60-a35f-97aabab73341");
                 _userbreadcrumbInfo = new RepoItemInfo(this, "UserBreadcrumb", ".//span[@innertext~$Username]", 30000, null, "6e183190-aa15-459a-97c4-958ba38b14fb");
                 _usernamefieldInfo = new RepoItemInfo(this, "UsernameField", ".//input[@id~'formly_[0-9]+_input_username_0']", 30000, null, "f11b7715-6596-46fb-b4a1-d894cab9fbff");
                 _firstnamefieldInfo = new RepoItemInfo(this, "FirstNameField", ".//input[@id~'formly_[0-9]+_input_firstName_1']", 30000, null, "dc732b15-8165-4192-a355-f2f085b09b91");
@@ -6051,7 +6129,7 @@ namespace PrecisionRecruitment
                 _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$Key]/../a[@innertext~$DOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
                 _signoutbuttonInfo = new RepoItemInfo(this, "SignOutButton", ".//a[@innertext~'Sign out']", 30000, null, "64e8a261-42d6-40a1-bd4b-b6dc572a70e2");
                 _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div[2]/div[1]/div/div[1]/div/div[@visible='True']", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
-                _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[#':35']/?/?/span", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
+                _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[@id~':3[012345]']/?/?/span[@role='checkbox']", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
                 _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div", 30000, null, "0155202d-a183-4048-a7f7-aeb9677aa6fa");
                 _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span[#':3i']/b[@innertext='Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");
                 _forgotpasswordlinkInfo = new RepoItemInfo(this, "ForgotPasswordLink", ".//div//a[@innertext~$DOM]", 30000, null, "a1bd28f9-fa49-4070-b113-d58014026934");

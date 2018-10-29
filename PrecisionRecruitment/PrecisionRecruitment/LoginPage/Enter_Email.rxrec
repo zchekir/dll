@@ -429,75 +429,38 @@ CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApsv+qf/dNFFABF/qk/3RTq
 KKAP/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}"
-		duration="100ms"
+		<userrecorditem
+		classname="Enter_Email"
 		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Try_Enter_Email"
+		namespace="PrecisionRecruitment.LoginPage"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="17a005b2-f0fd-47b5-a917-005f00f92573">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="89c23801-d548-450e-8fb9-36bc5e224785"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//input[#'loginEmail']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="10ms"
-		enabled="True"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="b167c187-1cf5-4324-8786-49efdd1427af">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="Email">
-				</binding>
-			</bindings>
-			<info
-			id="89c23801-d548-450e-8fb9-36bc5e224785"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$DOM]//input[#'loginEmail']
-				</path>
-			</info>
-		</keysequenceitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="ba94e0ab-60a2-4b9f-81f7-a72b0f1437f4">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Email">
-				</binding>
-			</bindings>
-			<info
-			id="89c23801-d548-450e-8fb9-36bc5e224785"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//input[#'loginEmail']
-				</path>
-			</info>
-			<matchname>
-				Value
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+			<arguments
+			id="85b10aa4-862c-44bd-9ef5-a26e1da8cb3e">
+				<argument
+				argname="EmailField"
+				id="1daaa23b-2e83-4295-a5a8-5c2ec0665423">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="89c23801-d548-450e-8fb9-36bc5e224785"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//input[#'loginEmail']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<keysequenceitem
 		KeySequence="{Tab}"
 		duration="100ms"

@@ -79,16 +79,6 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
         }
 
         /// <summary>
-        /// Gets or sets the value of variable WorkflowName.
-        /// </summary>
-        [TestVariable("955e2610-9e8a-4983-b74c-eb083738db5f")]
-        public string WorkflowName
-        {
-            get { return repo.WorkflowName; }
-            set { repo.WorkflowName = value; }
-        }
-
-        /// <summary>
         /// Gets or sets the value of variable RandNum.
         /// </summary>
         [TestVariable("6f6f7d2a-6ed5-4996-a502-d0e4ede961ac")]
@@ -96,6 +86,16 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
         {
             get { return repo.RandNum; }
             set { repo.RandNum = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable WorkflowName.
+        /// </summary>
+        [TestVariable("955e2610-9e8a-4983-b74c-eb083738db5f")]
+        public string WorkflowName
+        {
+            get { return repo.WorkflowName; }
+            set { repo.WorkflowName = value; }
         }
 
 #endregion
@@ -158,8 +158,12 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleSaveButton.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitScheduleViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.VisitScheduleViewMenu.CardButtonInfo, new RecordItemIndex(9));
+            repo.CogstateSolutionPlatform.VisitScheduleViewMenu.CardButton.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName'", repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, new ActionTimeout(10000), new RecordItemIndex(10));
+            repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo.WaitForExists(10000);
             
         }
 

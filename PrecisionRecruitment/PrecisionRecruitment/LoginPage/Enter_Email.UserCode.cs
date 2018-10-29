@@ -33,5 +33,21 @@ namespace PrecisionRecruitment.LoginPage
             // Your recording specific initialization code goes here.
         }
 
+        //Occasionally there is an email already in the input field which is not cleared properly before the new email is entered.
+		//If this happens, we need to try clearing and entering the email again to avoid failing the step         
+        public void Try_Enter_Email(RepoItemInfo EmailField)
+        {
+        	while (EmailField.FindAdapter<InputTag>().Value != Email) {
+        		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'inputtagInfo'.", EmailField);
+            	EmailField.FindAdapter<InputTag>().PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Email' with focus on 'inputtagInfo'.", EmailField);
+            	EmailField.FindAdapter<InputTag>().PressKeys(Email, 1);
+        	}
+        	
+        	Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Email) on item 'inputtagInfo'.", EmailField);
+            Validate.AttributeEqual(EmailField, "Value", Email);
+            
+        }
+
     }
 }

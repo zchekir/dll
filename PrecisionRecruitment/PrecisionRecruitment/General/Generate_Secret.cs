@@ -100,8 +100,8 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'GmailInbox.SecretLink'", repo.GmailInbox.SecretLinkInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.GmailInbox.SecretLinkInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'GmailInbox.SecretLink'", repo.GmailInbox.SecretLinkInfo, new ActionTimeout(10000), new RecordItemIndex(0));
+            repo.GmailInbox.SecretLinkInfo.WaitForExists(10000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SecretLink' at UpperLeft.", repo.GmailInbox.SecretLinkInfo, new RecordItemIndex(1));
             repo.GmailInbox.SecretLink.Click(Location.UpperLeft, 1);

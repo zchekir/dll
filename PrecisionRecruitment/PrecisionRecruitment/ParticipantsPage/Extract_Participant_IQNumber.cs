@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.LoginPage
+namespace PrecisionRecruitment.ParticipantsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_Email recording.
+    ///The Extract_Participant_IQNumber recording.
     /// </summary>
-    [TestModule("00e96411-5300-4894-bcd5-90fc91208d72", ModuleType.Recording, 1)]
-    public partial class Enter_Email : ITestModule
+    [TestModule("0de1ee83-e7e6-4ddd-8dbc-17f0eb0ca8ad", ModuleType.Recording, 1)]
+    public partial class Extract_Participant_IQNumber : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Enter_Email instance = new Enter_Email();
+        static Extract_Participant_IQNumber instance = new Extract_Participant_IQNumber();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_Email()
+        public Extract_Participant_IQNumber()
         {
-            Email = "";
+            externalID = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_Email Instance
+        public static Extract_Participant_IQNumber Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Email;
+        string _externalID;
 
         /// <summary>
-        /// Gets or sets the value of variable Email.
+        /// Gets or sets the value of variable externalID.
         /// </summary>
-        [TestVariable("9735ef0b-613e-4924-82d8-bcbf8e7c2428")]
-        public string Email
+        [TestVariable("247930dc-ae28-41ee-87b9-ab3394ab21f3")]
+        public string externalID
         {
-            get { return _Email; }
-            set { _Email = value; }
+            get { return _externalID; }
+            set { _externalID = value; }
         }
 
         /// <summary>
@@ -102,15 +102,8 @@ namespace PrecisionRecruitment.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.EmailField' at Center.", repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.LoginForm.EmailField.Click(3);
-            Delay.Milliseconds(90);
-            
-            Try_Enter_Email(repo.CogstateSolutionPlatform.LoginForm.EmailFieldInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(2));
-            Keyboard.Press("{Tab}", 100);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.ParticipantsPage.IQNumberField' and assigning its value to variable 'externalID'.", repo.CogstateSolutionPlatform.ParticipantsPage.IQNumberFieldInfo, new RecordItemIndex(0));
+            externalID = repo.CogstateSolutionPlatform.ParticipantsPage.IQNumberField.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
         }

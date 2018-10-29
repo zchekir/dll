@@ -46,6 +46,7 @@ namespace PrecisionRecruitment.APIModules
             VisitSessionCode = "RanVisitCode";
             ProtocolNumber = "Ranorex Protocol Number";
             LocalityCode = "en-us";
+            externalID = "";
         }
 
         /// <summary>
@@ -94,6 +95,18 @@ namespace PrecisionRecruitment.APIModules
             set { _LocalityCode = value; }
         }
 
+        string _externalID;
+
+        /// <summary>
+        /// Gets or sets the value of variable externalID.
+        /// </summary>
+        [TestVariable("517dcf0f-541f-4b2b-a76d-c00bbd65815e")]
+        public string externalID
+        {
+            get { return _externalID; }
+            set { _externalID = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
@@ -140,7 +153,7 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, RandNum, "1978-01-01", "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber);
+            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, "1978-01-01", "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber);
             Delay.Milliseconds(0);
             
         }

@@ -44,6 +44,54 @@ rxversion="8.2">
 		</var>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StartPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4db5d694-7990-4e0d-a6cb-a5c1ff5e311f">
+				<argument
+				argname="findElement"
+				id="456324c0-53fb-48fa-902c-1f2646e3b8bd">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2ced943c-58c3-4c74-8175-93d86fa2d329"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[1]/h4[@innertext='NotFound']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="5074a36b-3156-4609-b3b8-50ed9042ac0e">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2277bba7-33be-4fb8-8625-24e5b8f37387"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[3]/button[@innertext='Close']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -345,7 +393,7 @@ KACiiimIKKKKACiiigAooooAKKKKAP/Z
 			</helperscreenshot>
 		</mouseitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="7000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -354,6 +402,54 @@ KACiiimIKKKKACiiigAooooAKKKKAP/Z
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StopPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c5d1b12d-0bf0-4f8e-9363-7e984239b93d">
+				<argument
+				argname="findElement"
+				id="fe08f07b-0303-43bd-bb96-fde20c013ee7">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2ced943c-58c3-4c74-8175-93d86fa2d329"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[1]/h4[@innertext='NotFound']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="b0998b2c-9213-4043-a940-38e9ade65625">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2277bba7-33be-4fb8-8625-24e5b8f37387"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[3]/button[@innertext='Close']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
