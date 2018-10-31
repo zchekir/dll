@@ -6128,7 +6128,7 @@ namespace PrecisionRecruitment
             {
                 _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$Key]/../a[@innertext~$DOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
                 _signoutbuttonInfo = new RepoItemInfo(this, "SignOutButton", ".//a[@innertext~'Sign out']", 30000, null, "64e8a261-42d6-40a1-bd4b-b6dc572a70e2");
-                _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div[2]/div[1]/div/div[1]/div/div[@visible='True']", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
+                _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div/div[1]/div/div[1]/div/div[@visible='True']", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
                 _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[@id~':3[012345]']/?/?/span[@role='checkbox']", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
                 _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div", 30000, null, "0155202d-a183-4048-a7f7-aeb9677aa6fa");
                 _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span[#':3i']/b[@innertext='Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");

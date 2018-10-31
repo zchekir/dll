@@ -47,6 +47,7 @@ namespace PrecisionRecruitment.APIModules
             ProtocolNumber = "Ranorex Protocol Number";
             LocalityCode = "en-us";
             externalID = "";
+            DOB = "1978-01-01";
         }
 
         /// <summary>
@@ -107,6 +108,18 @@ namespace PrecisionRecruitment.APIModules
             set { _externalID = value; }
         }
 
+        string _DOB;
+
+        /// <summary>
+        /// Gets or sets the value of variable DOB.
+        /// </summary>
+        [TestVariable("8b7f67f0-afcf-4bed-adf5-8dafe0f94fb1")]
+        public string DOB
+        {
+            get { return _DOB; }
+            set { _DOB = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
@@ -153,7 +166,7 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, "1978-01-01", "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber);
+            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber);
             Delay.Milliseconds(0);
             
         }
