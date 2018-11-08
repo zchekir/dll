@@ -55,18 +55,6 @@ namespace PrecisionRecruitment.General
 
 #region Variables
 
-        string _GmailAddress;
-
-        /// <summary>
-        /// Gets or sets the value of variable GmailAddress.
-        /// </summary>
-        [TestVariable("540d746a-a31d-43cb-a3cf-cecd579c1dfd")]
-        public string GmailAddress
-        {
-            get { return _GmailAddress; }
-            set { _GmailAddress = value; }
-        }
-
         string _GmailPassword;
 
         /// <summary>
@@ -77,6 +65,16 @@ namespace PrecisionRecruitment.General
         {
             get { return _GmailPassword; }
             set { _GmailPassword = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable GmailAddress.
+        /// </summary>
+        [TestVariable("540d746a-a31d-43cb-a3cf-cecd579c1dfd")]
+        public string GmailAddress
+        {
+            get { return repo.GmailAddress; }
+            set { repo.GmailAddress = value; }
         }
 
 #endregion

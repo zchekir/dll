@@ -79,13 +79,13 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
         }
 
         /// <summary>
-        /// Gets or sets the value of variable RandNum.
+        /// Gets or sets the value of variable VisitScheduleName.
         /// </summary>
-        [TestVariable("6f6f7d2a-6ed5-4996-a502-d0e4ede961ac")]
-        public string RandNum
+        [TestVariable("f21fe27d-9d06-425a-ac88-1991573cee47")]
+        public string VisitScheduleName
         {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
+            get { return repo.VisitScheduleName; }
+            set { repo.VisitScheduleName = value; }
         }
 
         /// <summary>
@@ -96,6 +96,16 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
         {
             get { return repo.WorkflowName; }
             set { repo.WorkflowName = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("6f6f7d2a-6ed5-4996-a502-d0e4ede961ac")]
+        public string RandNum
+        {
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
         }
 
 #endregion
@@ -124,8 +134,8 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.VisitScheduleAddVisitButton' at Center.", repo.CogstateSolutionPlatform.Expanded.VisitScheduleAddVisitButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.Expanded.VisitScheduleAddVisitButton.Click(3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleAddVisitButton' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleAddVisitButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleAddVisitButton.Click(3);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.Visit1' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1Info, new RecordItemIndex(1));
@@ -158,12 +168,12 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleSaveButton.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitScheduleViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.VisitScheduleViewMenu.CardButtonInfo, new RecordItemIndex(9));
-            repo.CogstateSolutionPlatform.VisitScheduleViewMenu.CardButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(9));
+            repo.CogstateSolutionPlatform.StudyToolbar.CardButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleName'", repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo, new ActionTimeout(10000), new RecordItemIndex(10));
-            repo.CogstateSolutionPlatform.VisitScheduleCards.VisitScheduleNameInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new ActionTimeout(10000), new RecordItemIndex(10));
+            repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo.WaitForExists(10000);
             
         }
 

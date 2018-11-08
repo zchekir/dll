@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.VisitSchedulesPage
             repo.CogstateSolutionPlatform.StudyTabs.VisitSchedulesTab.Click("61;26", 3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.VisitScheduleViewMenu.AddButton' at 15;15.", repo.CogstateSolutionPlatform.VisitScheduleViewMenu.AddButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.VisitScheduleViewMenu.AddButton.Click("15;15", 3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.AddButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.AddButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.StudyToolbar.AddButton.Click(3);
             Delay.Milliseconds(490);
             
         }

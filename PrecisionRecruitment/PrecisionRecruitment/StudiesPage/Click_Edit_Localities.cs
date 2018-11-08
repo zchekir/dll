@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.StudiesPage
             repo.CogstateSolutionPlatform.StudyTabs.SettingsTab.Click(300);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyPage.EditButton' at 11;7.", repo.CogstateSolutionPlatform.StudyPage.EditButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.StudyPage.EditButton.Click("11;7", 300);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyLocalitiesPage.EditLocalitiesButton' at 11;7.", repo.CogstateSolutionPlatform.StudyLocalitiesPage.EditLocalitiesButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.StudyLocalitiesPage.EditLocalitiesButton.Click("11;7", 300);
             Delay.Milliseconds(200);
             
         }

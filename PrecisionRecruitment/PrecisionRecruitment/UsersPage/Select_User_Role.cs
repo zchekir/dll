@@ -89,12 +89,12 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.RoleDropdown' at Center.", repo.CogstateSolutionPlatform.UsersPage.RoleDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UsersPage.RoleDropdown.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddInternalUserPage.RoleDropdown' at Center.", repo.CogstateSolutionPlatform.AddInternalUserPage.RoleDropdownInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.RoleDropdown.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Admin' with focus on 'CogstateSolutionPlatform.UsersPage.RoleDropdown'.", repo.CogstateSolutionPlatform.UsersPage.RoleDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.UsersPage.RoleDropdown.PressKeys("Admin", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Admin' with focus on 'CogstateSolutionPlatform.AddInternalUserPage.RoleDropdown'.", repo.CogstateSolutionPlatform.AddInternalUserPage.RoleDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.RoleDropdown.PressKeys("Admin", 1);
             Delay.Milliseconds(0);
             
         }

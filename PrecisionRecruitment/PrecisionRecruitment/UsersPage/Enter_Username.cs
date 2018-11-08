@@ -111,24 +111,24 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.UsernameField' at Center.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UsersPage.UsernameField.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddInternalUserPage.UsernameField' at Center.", repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameField.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys(Username, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'CogstateSolutionPlatform.AddInternalUserPage.UsernameField'.", repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameField.PressKeys(Username, 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '+' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys("+", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '+' with focus on 'CogstateSolutionPlatform.AddInternalUserPage.UsernameField'.", repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameField.PressKeys("+", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys(RandNum, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddInternalUserPage.UsernameField'.", repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameFieldInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameField.PressKeys(RandNum, 1);
             Delay.Milliseconds(10);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.UsersPage.UsernameField'.", repo.CogstateSolutionPlatform.UsersPage.UsernameFieldInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.UsersPage.UsernameField.PressKeys("@gmail.com", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.AddInternalUserPage.UsernameField'.", repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameFieldInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.UsernameField.PressKeys("@gmail.com", 1);
             Delay.Milliseconds(0);
             
         }

@@ -37,7 +37,7 @@ namespace PrecisionRecruitment.UsersPage
         //we want to click the button straight away, otherwise we need to Expand the Administration menue then click ExternalUsers
         public void Click_ExternalUsers(RepoItemInfo AdministrationButton, RepoItemInfo ExternalUsersButton)
         {
-        	if (repo.CogstateSolutionPlatform.ExternalUsers.Visible)
+        	if (repo.CogstateSolutionPlatform.Menu.ExternalUsersMenuOption.Visible)
         	{
             	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExternalUsers' at Center.", ExternalUsersButton);
             	ExternalUsersButton.FindAdapter<LabelTag>().Click();        		

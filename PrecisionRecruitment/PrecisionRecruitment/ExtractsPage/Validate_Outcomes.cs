@@ -45,6 +45,9 @@ namespace PrecisionRecruitment.ExtractsPage
             dbPassword = "";
             fileName = "";
             externalID = "";
+            DBServer = "";
+            Database = "";
+            Authentication = "";
         }
 
         /// <summary>
@@ -105,6 +108,42 @@ namespace PrecisionRecruitment.ExtractsPage
             set { _externalID = value; }
         }
 
+        string _DBServer;
+
+        /// <summary>
+        /// Gets or sets the value of variable DBServer.
+        /// </summary>
+        [TestVariable("d56a6c72-05e1-4210-997c-d11330351985")]
+        public string DBServer
+        {
+            get { return _DBServer; }
+            set { _DBServer = value; }
+        }
+
+        string _Database;
+
+        /// <summary>
+        /// Gets or sets the value of variable Database.
+        /// </summary>
+        [TestVariable("56ca321f-3094-4886-8c9f-92983c426690")]
+        public string Database
+        {
+            get { return _Database; }
+            set { _Database = value; }
+        }
+
+        string _Authentication;
+
+        /// <summary>
+        /// Gets or sets the value of variable Authentication.
+        /// </summary>
+        [TestVariable("8c2baad2-5ea4-454f-b189-a4b7e6bbf83e")]
+        public string Authentication
+        {
+            get { return _Authentication; }
+            set { _Authentication = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -131,7 +170,7 @@ namespace PrecisionRecruitment.ExtractsPage
 
             Init();
 
-            engine.Helpers.SQLUtility.GetAssessmentOutcomes("", "", dbUsername, dbPassword, externalID);
+            engine.Helpers.SQLUtility.GetAssessmentOutcomes(DBServer, Database, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             engine.Helpers.CSVUtility.ReadCSVIntoDataTable(fileName);

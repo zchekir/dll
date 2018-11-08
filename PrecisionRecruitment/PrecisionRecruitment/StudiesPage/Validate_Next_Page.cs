@@ -58,7 +58,7 @@ namespace PrecisionRecruitment.StudiesPage
             Report.Screenshot(repo.CogstateSolutionPlatform.Self);
             
             //Find the Project name for each row in the table and store in list
-            foreach (TrTag row in repo.CogstateSolutionPlatform.TableHeaders.TableBody.Find("./tr"))
+            foreach (TrTag row in repo.CogstateSolutionPlatform.StudyTableHeaders.TableBody.Find("./tr"))
             {
             	IList<ATag> cells = row.Find<ATag>("./td/a");
             	originalList.Add(cells[0].InnerText);
@@ -67,10 +67,10 @@ namespace PrecisionRecruitment.StudiesPage
             //Click the next page button to view more studies
             Report.Log(ReportLevel.Info, "User", "Mouse click on Next button");
             repo.CogstateSolutionPlatform.NextPageButton.Click();
-            Delay.Duration(500);
+            Delay.Duration(1000);
             
             //Find the Project names for each row in the table for the new page            	
-            foreach (TrTag row in repo.CogstateSolutionPlatform.TableHeaders.TableBody.Find("./tr"))
+            foreach (TrTag row in repo.CogstateSolutionPlatform.StudyTableHeaders.TableBody.Find("./tr"))
             {
             	IList<ATag> cells = row.Find<ATag>("./td/a");
             	newList.Add(cells[0].InnerText);

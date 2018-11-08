@@ -89,16 +89,16 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.HamburgerMenu' at Center.", repo.CogstateSolutionPlatform.HamburgerMenuInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.HamburgerMenu.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Menu.HamburgerMenu' at Center.", repo.CogstateSolutionPlatform.Menu.HamburgerMenuInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.Menu.HamburgerMenu.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Administration' at Center.", repo.CogstateSolutionPlatform.AdministrationInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Administration.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Menu.AdministrationMenuOption' at Center.", repo.CogstateSolutionPlatform.Menu.AdministrationMenuOptionInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.Menu.AdministrationMenuOption.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Users' at Center.", repo.CogstateSolutionPlatform.UsersInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.Users.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Menu.UsersMenuOption' at Center.", repo.CogstateSolutionPlatform.Menu.UsersMenuOptionInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.Menu.UsersMenuOption.Click(1);
             Delay.Milliseconds(90);
             
         }

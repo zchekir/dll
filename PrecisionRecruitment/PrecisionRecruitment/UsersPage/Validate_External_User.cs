@@ -100,11 +100,11 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.UsersPage.ExternalUserKey'", repo.CogstateSolutionPlatform.UsersPage.ExternalUserKeyInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UsersPage.ExternalUserKeyInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserKeyField'", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserKeyFieldInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserKeyFieldInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumb'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumbInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumbInfo);
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "External User Created", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));

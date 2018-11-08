@@ -43,6 +43,18 @@ rxversion="8.2">
 		id="df046de1-4611-4236-b51f-bc6cd8ae9a3c"
 		name="externalID">
 		</var>
+		<var
+		id="d56a6c72-05e1-4210-997c-d11330351985"
+		name="DBServer">
+		</var>
+		<var
+		id="56ca321f-3094-4886-8c9f-92983c426690"
+		name="Database">
+		</var>
+		<var
+		id="8c2baad2-5ea4-454f-b189-a4b7e6bbf83e"
+		name="Authentication">
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
@@ -60,8 +72,9 @@ rxversion="8.2">
 			<arguments
 			id="12562d85-cae6-4eaf-8682-7d7262a11e72">
 				<argument
-				argname="server"
-				id="e751b2e8-eee0-4705-be3c-6b5da41aa043">
+				argname="dbserver"
+				id="e751b2e8-eee0-4705-be3c-6b5da41aa043"
+				variable="DBServer">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -70,7 +83,8 @@ rxversion="8.2">
 				</argument>
 				<argument
 				argname="database"
-				id="df5b29f7-ecc2-4262-89e6-df2f8df05a66">
+				id="df5b29f7-ecc2-4262-89e6-df2f8df05a66"
+				variable="Database">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -98,9 +112,9 @@ rxversion="8.2">
 					</argvalue>
 				</argument>
 				<argument
-				argname="externalId"
+				argname="authentication"
 				id="d04224e8-a5f0-48c2-b5a4-254d1567dea0"
-				variable="externalID">
+				variable="Authentication">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

@@ -102,8 +102,8 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'State' to equal the specified value 'complete'. Associated repository item: 'CogstateSolutionPlatform'", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SelfInfo.WaitForAttributeEqual(10000, "State", "complete");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'State' to equal the specified value 'complete'. Associated repository item: 'CogstateSolutionPlatform'", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.SelfInfo.WaitForAttributeEqual(30000, "State", "complete");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (PageUrl>$URL) on item 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.SelfInfo, "PageUrl", URL);

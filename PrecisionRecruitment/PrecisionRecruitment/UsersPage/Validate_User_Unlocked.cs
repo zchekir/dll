@@ -92,8 +92,8 @@ namespace PrecisionRecruitment.UsersPage
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'CogstateSolutionPlatform.UsersPage.LockedCheckbox'.", repo.CogstateSolutionPlatform.UsersPage.LockedCheckboxInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.UsersPage.LockedCheckboxInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'CogstateSolutionPlatform.AddInternalUserPage.LockedCheckbox'.", repo.CogstateSolutionPlatform.AddInternalUserPage.LockedCheckboxInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.CogstateSolutionPlatform.AddInternalUserPage.LockedCheckboxInfo, "Checked", "False");
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "User is unlocked", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));

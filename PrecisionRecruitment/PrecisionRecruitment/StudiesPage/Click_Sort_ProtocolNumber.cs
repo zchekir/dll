@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.StudiesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.TableHeaders.ProtocolNumber' at Center.", repo.CogstateSolutionPlatform.TableHeaders.ProtocolNumberInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.TableHeaders.ProtocolNumber.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTableHeaders.ProtocolNumber' at Center.", repo.CogstateSolutionPlatform.StudyTableHeaders.ProtocolNumberInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyTableHeaders.ProtocolNumber.Click(1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));

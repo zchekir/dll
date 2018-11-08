@@ -93,9 +93,13 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatus' at Center.", repo.CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatusInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.VisitScheduleDraftStatus.Click(3);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Draft' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown.PressKeys("Draft", 100);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown.PressKeys("{Return}", 100);
+            Delay.Milliseconds(0);
             
         }
 

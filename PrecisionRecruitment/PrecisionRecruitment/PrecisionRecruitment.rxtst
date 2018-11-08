@@ -184,16 +184,16 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="GmailPassword"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
-					variablename="GmailPassword">
-					</var>
-					<var
 					dataname="GmailAddress"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
 					variablename="GmailAddress">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
+					variablename="GmailPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -284,8 +284,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="UserConnector"
 			id="06c4c2be-f183-4e53-ac50-c8b3a74bae17"
-			maxrange="2"
-			minrange="2"
+			maxrange="3"
+			minrange="3"
 			name="Add_Internal_User">
 			</testcase>
 			<teardown
@@ -504,6 +504,12 @@ rxversion="8.2">
 					variableid="57037071-6036-4a24-8145-c9dbf508e396"
 					variablename="externalID">
 					</var>
+					<var
+					dataname="Datafile"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
+					variablename="Datafile">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -682,6 +688,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datasource="Authentication"
 			errorbehavior="Stop"
 			id="12672266-c3e5-4da0-bf18-959502d59662"
 			name="Regression">
@@ -719,16 +726,16 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="GmailPassword"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
-					variablename="GmailPassword">
-					</var>
-					<var
 					dataname="GmailAddress"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
 					variablename="GmailAddress">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
+					variablename="GmailPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -824,22 +831,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -911,22 +918,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -974,22 +981,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -999,22 +1006,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -1183,16 +1190,16 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
-					variablename="Password">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1375,22 +1382,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -1489,6 +1496,7 @@ rxversion="8.2">
 			name="Add_Study">
 			</testcase>
 			<smartfoldernode
+			datasource="Authentication"
 			id="2ee6b25f-f8b0-45d6-86fb-b2e576d425dc"
 			name="Extract_Tests">
 			</smartfoldernode>
@@ -1663,8 +1671,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="UserConnector"
 			id="36aba7d9-425f-4e83-8148-9fb26d9cf42d"
-			maxrange="2"
-			minrange="2"
+			maxrange="3"
+			minrange="3"
 			name="Forgot_Password">
 			</testcase>
 			<testmodule
@@ -1717,25 +1725,39 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="38cefe29-dbc4-4857-ac46-28c5a2239fc5"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="3be24084-4e4e-4ae3-84a6-c83169326557"
 			name="Click_ForgotPassword"
@@ -1837,6 +1859,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datasource="Authentication"
 			id="40591b2d-d2b7-4108-bab0-737be34926ab"
 			name="Battery_Tests">
 			</smartfoldernode>
@@ -1906,22 +1929,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -1949,22 +1972,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -1998,22 +2021,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2076,18 +2099,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="dbPassword"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="59824432-8863-42bc-a1bb-4fa7b78a2f59"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="d91af805-e7a8-444c-9dcf-67c8a006407d"
-					variablename="dbUsername">
-					</var>
-					<var
 					dataname="ExternalID"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="df046de1-4611-4236-b51f-bc6cd8ae9a3c"
@@ -2098,6 +2109,36 @@ rxversion="8.2">
 					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
 					variableid="32eb6b65-3e01-4dd3-b16f-78e83dd26705"
 					variablename="fileName">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8c2baad2-5ea4-454f-b189-a4b7e6bbf83e"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="56ca321f-3094-4886-8c9f-92983c426690"
+					variablename="Database">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d56a6c72-05e1-4210-997c-d11330351985"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="d91af805-e7a8-444c-9dcf-67c8a006407d"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="59824432-8863-42bc-a1bb-4fa7b78a2f59"
+					variablename="dbPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2261,6 +2302,18 @@ rxversion="8.2">
 					variableid="64595a37-8550-4cf0-b1c8-273412ba41f5"
 					variablename="LocalityCode">
 					</var>
+					<var
+					dataname="DOB"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="8b7f67f0-afcf-4bed-adf5-8dafe0f94fb1"
+					variablename="DOB">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="517dcf0f-541f-4b2b-a76d-c00bbd65815e"
+					variablename="externalID">
+					</var>
 				</databinding>
 			</testmodule>
 			<setup
@@ -2314,6 +2367,7 @@ rxversion="8.2">
 			name="teardown2">
 			</teardown>
 			<smartfoldernode
+			datasource="Authentication"
 			id="547c8917-1bb5-4a8d-96ef-332748f3c725"
 			name="Study_Tests">
 			</smartfoldernode>
@@ -2346,22 +2400,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2428,22 +2482,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2514,22 +2568,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2539,22 +2593,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2649,28 +2703,16 @@ rxversion="8.2">
 					value="1.8.0">
 					</param>
 					<param
-					name="Email"
-					value="platformadmin@cogstate.com">
+					name="DBServer"
+					value="cgst-qc.database.windows.net">
 					</param>
 					<param
-					name="Password"
-					value="Cogstate#1">
+					name="Database"
+					value="cgst-duo-api">
 					</param>
 					<param
-					name="GmailAddress"
-					value="ranorexcogstate@gmail.com">
-					</param>
-					<param
-					name="GmailPassword"
-					value="Cogstate#1">
-					</param>
-					<param
-					name="dbUsername"
-					value="dwood@cogstate.com">
-					</param>
-					<param
-					name="dbPassword"
-					value="913172DmW!">
+					name="Authentication"
+					value="Active Directory Password">
 					</param>
 					<param
 					name="RandNum"
@@ -2708,22 +2750,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2791,22 +2833,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2910,6 +2952,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datasource="Authentication"
 			id="63da0090-7679-4965-841c-fd2d007ff501"
 			name="User_Tests">
 			</smartfoldernode>
@@ -2951,6 +2994,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datasource="Authentication"
 			id="65713f69-db1c-402d-aaaf-c1555e6349f0"
 			name="Participant_Tests">
 			</smartfoldernode>
@@ -3008,22 +3052,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3037,22 +3081,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3062,22 +3106,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3224,22 +3268,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3487,22 +3531,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3610,22 +3654,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3738,22 +3782,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3771,22 +3815,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3890,22 +3934,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3960,16 +4004,16 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="9735ef0b-613e-4924-82d8-bcbf8e7c2428"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="9735ef0b-613e-4924-82d8-bcbf8e7c2428"
+					variablename="Email">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4091,6 +4135,7 @@ rxversion="8.2">
 				</databinding>
 			</modulegroup>
 			<smartfoldernode
+			datasource="Authentication"
 			id="8e71bae9-0f04-4666-8075-91fd08759da7"
 			name="Login_Tests">
 			</smartfoldernode>
@@ -4598,22 +4643,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -4623,22 +4668,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -4712,22 +4757,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -4794,18 +4839,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Secret"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
-					variablename="Secret">
-					</var>
-					<var
-					dataname="Key"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="35d6bff4-468a-4307-8386-b46e7e547dc9"
-					variablename="Key">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
@@ -4816,12 +4849,6 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
 					variablename="DOM">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
-					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
-					variablename="ProtocolNumber">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5217,6 +5244,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datasource="Authentication"
 			id="bbe9fc48-3ee2-4183-8223-6376507c52fe"
 			maxrange="0"
 			minrange="0"
@@ -5402,22 +5430,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -5463,6 +5491,20 @@ rxversion="8.2">
 			id="c7b7859a-d580-4cd7-a03d-04f5326619c0"
 			name="setup">
 			</setup>
+			<testmodule
+			id="c7e382b6-f76d-4dc8-a0e8-a8645f9629d9"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="c8353976-bc63-4cdd-8788-016acd6907d2"
 			name="teardown">
@@ -5614,22 +5656,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -5869,22 +5911,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -6491,22 +6533,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -6752,6 +6794,7 @@ rxversion="8.2">
 			name="setup">
 			</setup>
 			<smartfoldernode
+			datasource="Authentication"
 			id="f944f793-e516-4d2d-b68f-971da09a24fa"
 			name="Workflow_Tests">
 			</smartfoldernode>
@@ -6918,6 +6961,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datasource="Authentication"
 			id="fe7a9bcf-3c81-428c-8db3-64f1def68b0b"
 			name="VisitSchedule_Tests">
 			</smartfoldernode>
@@ -6953,22 +6997,22 @@ rxversion="8.2">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -8109,6 +8153,10 @@ rxversion="8.2">
 							<teardown
 							id="b8d215be-af98-4f00-b2f8-4693648b4b05"
 							name="teardown">
+								<testmodule
+								id="c7e382b6-f76d-4dc8-a0e8-a8645f9629d9"
+								name="Close_Browser">
+								</testmodule>
 							</teardown>
 						</testcase>
 						<testcase
@@ -8485,6 +8533,10 @@ rxversion="8.2">
 							<teardown
 							id="8da19afd-8774-447f-a694-bccdbe2e91b2"
 							name="teardown">
+								<testmodule
+								id="38cefe29-dbc4-4857-ac46-28c5a2239fc5"
+								name="Close_Browser">
+								</testmodule>
 							</teardown>
 						</testcase>
 					</smartfoldernode>
@@ -8982,6 +9034,48 @@ rxversion="8.2">
 	</testsuiteentryhierarchy>
 	<datasources>
 		<DataSource
+		id="f8e6c557-c99b-4b57-a373-2531218916bf"
+		includefile="Checked"
+		lastknownrowcount="1"
+		name="Authentication"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					Email
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					dbUsername
+				</column>
+				<column>
+					dbPassword
+				</column>
+				<column>
+					GmailAddress
+				</column>
+				<column>
+					GmailPassword
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					dbPassword
+				</columnname>
+				<columnname>
+					GmailPassword
+				</columnname>
+				<columnname>
+					Password
+				</columnname>
+			</maskedcolumns>
+			<file>
+				Authentication.csv
+			</file>
+		</DataSource>
+		<DataSource
 		id="2b31763d-aa10-4b6f-8085-db66215f3694"
 		includefile="Checked"
 		lastknownrowcount="173"
@@ -9144,6 +9238,9 @@ rxversion="8.2">
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
+				<columnname>
+					Password
+				</columnname>
 			</maskedcolumns>
 			<file>
 				UserConnector.csv
@@ -9180,6 +9277,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
+			</testcontainer>
+			<testcontainer
+			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">

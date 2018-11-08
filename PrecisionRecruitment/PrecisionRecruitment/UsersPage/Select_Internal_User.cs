@@ -111,24 +111,24 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SearchField' at 58;16.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SearchField.Click("58;16");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at 58;16.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click("58;16");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(Username, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(Username, 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '%2B' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys("%2B", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '%2B' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys("%2B", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(RandNum, 1);
             Delay.Milliseconds(10);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys("@gmail.com", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys("@gmail.com", 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.InternalUserRow' at Center.", repo.CogstateSolutionPlatform.UsersPage.InternalUserRowInfo, new RecordItemIndex(5));

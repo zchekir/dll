@@ -115,12 +115,12 @@ namespace PrecisionRecruitment.WorkflowsPage
             repo.CogstateSolutionPlatform.StudyTabs.WorkflowsTab.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowName' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(WorkflowName, 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowName' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(WorkflowName, 100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(RandNum, 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(RandNum, 100);
             Delay.Milliseconds(0);
             
             // Wait for list to load
@@ -132,12 +132,12 @@ namespace PrecisionRecruitment.WorkflowsPage
             // Continue with test
             Report.Log(ReportLevel.Info, "Section", "Continue with test", new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowsViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.WorkflowsViewMenu.CardButtonInfo, new RecordItemIndex(6));
-            repo.CogstateSolutionPlatform.WorkflowsViewMenu.CardButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(6));
+            repo.CogstateSolutionPlatform.StudyToolbar.CardButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCard' at 76;11.", repo.CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCardInfo, new RecordItemIndex(7));
-            repo.CogstateSolutionPlatform.WorkflowsViewMenu.WorkflowCard.Click("76;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyCards.WorkflowTitle' at 76;11.", repo.CogstateSolutionPlatform.StudyCards.WorkflowTitleInfo, new RecordItemIndex(7));
+            repo.CogstateSolutionPlatform.StudyCards.WorkflowTitle.Click("76;11");
             Delay.Milliseconds(0);
             
         }

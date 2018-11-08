@@ -106,19 +106,10 @@ namespace PrecisionRecruitment.LoginPage
             repo.CogstateSolutionPlatform.LoginForm.PasswordField.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys(Password, 1);
+            Try_Enter_Password(repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, "Value", Password);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{Tab}", 1);
             Delay.Milliseconds(90);
             

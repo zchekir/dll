@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddBatteryPage.TemplateRequired'.", repo.CogstateSolutionPlatform.AddBatteryPage.TemplateRequiredInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.AddBatteryPage.TemplateRequiredInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddBatteryPage.TemplateRequiredValidation'.", repo.CogstateSolutionPlatform.AddBatteryPage.TemplateRequiredValidationInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.AddBatteryPage.TemplateRequiredValidationInfo);
             Delay.Milliseconds(100);
             
         }

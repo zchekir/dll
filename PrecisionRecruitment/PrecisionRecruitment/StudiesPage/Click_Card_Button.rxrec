@@ -46,10 +46,10 @@ rxversion="8.2">
 			<bindings>
 			</bindings>
 			<info
-			id="03603abe-aa9d-4e60-ab24-ca78d1b78c6b"
+			id="22e6ccca-2825-47e9-b442-5534628e284c"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_']
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-header']//div/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_' and @visible='True']
 				</path>
 			</info>
 		</mouseitem>

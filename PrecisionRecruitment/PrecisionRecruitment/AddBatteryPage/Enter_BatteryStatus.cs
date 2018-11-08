@@ -93,9 +93,13 @@ namespace PrecisionRecruitment.AddBatteryPage
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.BatteryDraftStatus' at Center.", repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatusInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.BatteryDraftStatus.Click(3);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Draft' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryStatusDropdown.PressKeys("Draft", 100);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(2));
+            Keyboard.Press("{Return}", 100);
+            Delay.Milliseconds(0);
             
         }
 

@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.AddStudyPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.EditBreadcrumb'.", repo.CogstateSolutionPlatform.EditBreadcrumbInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.EditBreadcrumbInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.Breadcrumbs.EditBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.EditBreadcrumbInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.Breadcrumbs.EditBreadcrumbInfo);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Edit Study Page Displayed", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));

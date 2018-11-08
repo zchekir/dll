@@ -44,9 +44,9 @@ rxversion="8.2">
 		duration="100ms"
 		enabled="True"
 		loc="Center"
-		movetime="1ms"
+		movetime="100ms"
 		optional="False"
-		searchpropertyid="f763ca9f-97cb-4406-af9a-547409bf8640"
+		searchpropertyid="600133ee-aa62-40a5-9819-b67036d1f70c"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -55,10 +55,34 @@ rxversion="8.2">
 			<bindings>
 			</bindings>
 			<info
-			id="f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f"
+			id="333acc2f-1a67-406e-9aa8-c3168d834805"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[2]//span[@innertext='Studies']
+					/dom[@domain=$DOM]//div[#'simple-dropdown']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="957f1f1d-7664-45cb-95f1-30e19cd40ae1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ee51023c-367e-4c81-a118-b0614af54fed"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]/body/div/tag/div/div[4]/tag/div/div/div[2]/div[1]/?/?/label[@innertext='Studies']
 				</path>
 			</info>
 		</mouseitem>
@@ -353,10 +377,10 @@ AFn4UUXP+s/CikM//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="03603abe-aa9d-4e60-ab24-ca78d1b78c6b"
+			id="22e6ccca-2825-47e9-b442-5534628e284c"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[1]/span[1]/img[@src='https://'+$DOM+'/asset/images/card_icon_on.png']
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-header']//div/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_' and @visible='True']
 				</path>
 			</info>
 		</mouseitem>

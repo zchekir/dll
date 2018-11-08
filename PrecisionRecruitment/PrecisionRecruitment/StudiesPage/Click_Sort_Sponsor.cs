@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.StudiesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.TableHeaders.Sponsor' at Center.", repo.CogstateSolutionPlatform.TableHeaders.SponsorInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.TableHeaders.Sponsor.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTableHeaders.Sponsor' at Center.", repo.CogstateSolutionPlatform.StudyTableHeaders.SponsorInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyTableHeaders.Sponsor.Click(1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));

@@ -100,11 +100,11 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumb'", repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumb'", repo.CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumbInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumbInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumb' and assigning its value to variable 'Key'.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumbInfo, new RecordItemIndex(1));
-            Key = repo.CogstateSolutionPlatform.UsersPage.ExternalUserBreadcrumb.Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumb' and assigning its value to variable 'Key'.", repo.CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumbInfo, new RecordItemIndex(1));
+            Key = repo.CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumb.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
         }

@@ -131,8 +131,8 @@ namespace PrecisionRecruitment.AddWorkflowPage
             repo.CogstateSolutionPlatform.AddWorkflowPage.ComplexOutcomeDecisionMax.PressKeys(Tier2Max, 1);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton' at 32;10.", repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButtonInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.SaveWorkflowSettingsButton.Click("32;10", 3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButton' at 32;10.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButtonInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButton.Click("32;10", 3);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(5));

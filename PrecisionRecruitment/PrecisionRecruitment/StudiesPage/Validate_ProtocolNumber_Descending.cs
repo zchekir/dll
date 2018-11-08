@@ -53,7 +53,7 @@ namespace PrecisionRecruitment.StudiesPage
             bool flag = true;
             
             //Find the second /td/a cell in each table row. This is the Protocol Number. Store them in two lists
-            foreach (TrTag row in repo.CogstateSolutionPlatform.TableHeaders.TableBody.Find("./tr"))
+            foreach (TrTag row in repo.CogstateSolutionPlatform.StudyTableHeaders.TableBody.Find("./tr"))
             {
             	IList<SpanTag> cells = row.Find<SpanTag>("./td/span");
             	originalList.Add(cells[0].InnerText);

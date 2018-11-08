@@ -111,12 +111,12 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$BatteryName) on item 'CogstateSolutionPlatform.Expanded.BatteryNameBreadcrumb'.", repo.CogstateSolutionPlatform.Expanded.BatteryNameBreadcrumbInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.Expanded.BatteryNameBreadcrumbInfo, "InnerText", BatteryName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$BatteryName) on item 'CogstateSolutionPlatform.Breadcrumbs.BatteryNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.BatteryNameBreadcrumbInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.BatteryNameBreadcrumbInfo, "InnerText", BatteryName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Expanded.BatteryNameBreadcrumb'.", repo.CogstateSolutionPlatform.Expanded.BatteryNameBreadcrumbInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.Expanded.BatteryNameBreadcrumbInfo, "InnerText", RandNum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.BatteryNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.BatteryNameBreadcrumbInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.BatteryNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Battery Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));

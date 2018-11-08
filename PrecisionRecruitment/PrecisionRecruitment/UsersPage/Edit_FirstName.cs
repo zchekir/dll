@@ -89,12 +89,12 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.FirstNameField' at Center.", repo.CogstateSolutionPlatform.UsersPage.FirstNameFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UsersPage.FirstNameField.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddInternalUserPage.FirstNameField' at Center.", repo.CogstateSolutionPlatform.AddInternalUserPage.FirstNameFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.FirstNameField.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Edit' with focus on 'CogstateSolutionPlatform.UsersPage.FirstNameField'.", repo.CogstateSolutionPlatform.UsersPage.FirstNameFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.UsersPage.FirstNameField.PressKeys("Edit", 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Edit' with focus on 'CogstateSolutionPlatform.AddInternalUserPage.FirstNameField'.", repo.CogstateSolutionPlatform.AddInternalUserPage.FirstNameFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.FirstNameField.PressKeys("Edit", 100);
             Delay.Milliseconds(0);
             
         }

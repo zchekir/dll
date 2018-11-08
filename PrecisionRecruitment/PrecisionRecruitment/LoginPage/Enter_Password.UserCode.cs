@@ -32,6 +32,21 @@ namespace PrecisionRecruitment.LoginPage
         {
             // Your recording specific initialization code goes here.
         }
+		
+        //Tries to enter the supplied password and will retry if it is not entered correctly
+        public void Try_Enter_Password(RepoItemInfo PasswordField)
+        {
+        	
+        	while (PasswordField.FindAdapter<InputTag>().Value != Password) {
+        		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'PasswordField'.", PasswordField);
+            	PasswordField.FindAdapter<InputTag>().PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'PasswordField'.", PasswordField);
+            	PasswordField.FindAdapter<InputTag>().PressKeys(Password, 1);
+        	}
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'PasswordField'.", PasswordField);
+            Validate.AttributeEqual(PasswordField, "Value", Password);
+        }
         
         
 

@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.UserActiveCheckbox' at Center.", repo.CogstateSolutionPlatform.UsersPage.UserActiveCheckboxInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UsersPage.UserActiveCheckbox.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddInternalUserPage.UserActiveCheckbox' at Center.", repo.CogstateSolutionPlatform.AddInternalUserPage.UserActiveCheckboxInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddInternalUserPage.UserActiveCheckbox.Click(1);
             Delay.Milliseconds(90);
             
         }

@@ -89,15 +89,15 @@ namespace PrecisionRecruitment.AddWorkflowPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.PublishButton' at 13;13.", repo.CogstateSolutionPlatform.Expanded.PublishButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.Expanded.PublishButton.Click("13;13", 300);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.PublishButton' at 13;13.", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButton.Click("13;13", 300);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'CogstateSolutionPlatform.Expanded.PublishButtonDisabled'", repo.CogstateSolutionPlatform.Expanded.PublishButtonDisabledInfo, new ActionTimeout(30000), new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.Expanded.PublishButtonDisabledInfo.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabled'", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo.WaitForNotExists(30000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.Expanded.PublishButton'.", repo.CogstateSolutionPlatform.Expanded.PublishButtonInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.CogstateSolutionPlatform.Expanded.PublishButtonInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.PublishButton'.", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Workflow Published Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));

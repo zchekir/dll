@@ -112,12 +112,12 @@ namespace PrecisionRecruitment.AddWorkflowPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$WorkflowName) on item 'CogstateSolutionPlatform.Expanded.WorkflowNameBreadcrumb'.", repo.CogstateSolutionPlatform.Expanded.WorkflowNameBreadcrumbInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.Expanded.WorkflowNameBreadcrumbInfo, "InnerText", WorkflowName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$WorkflowName) on item 'CogstateSolutionPlatform.Breadcrumbs.WorkflowNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.WorkflowNameBreadcrumbInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.WorkflowNameBreadcrumbInfo, "InnerText", WorkflowName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Expanded.WorkflowNameBreadcrumb'.", repo.CogstateSolutionPlatform.Expanded.WorkflowNameBreadcrumbInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.Expanded.WorkflowNameBreadcrumbInfo, "InnerText", RandNum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.WorkflowNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.WorkflowNameBreadcrumbInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.WorkflowNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Workflow Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));

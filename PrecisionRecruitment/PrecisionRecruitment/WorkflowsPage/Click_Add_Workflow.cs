@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.WorkflowsPage
             repo.CogstateSolutionPlatform.StudyTabs.WorkflowsTab.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowsViewMenu.AddButton' at Center.", repo.CogstateSolutionPlatform.WorkflowsViewMenu.AddButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.WorkflowsViewMenu.AddButton.Click(3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.AddButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.AddButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.StudyToolbar.AddButton.Click(3);
             Delay.Milliseconds(490);
             
         }

@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.BatteriesPage
             repo.CogstateSolutionPlatform.StudyTabs.BatteriesTab.Click("58;28", 3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteriesViewMenu.AddButton' at 12;14.", repo.CogstateSolutionPlatform.BatteriesViewMenu.AddButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteriesViewMenu.AddButton.Click("12;14", 3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.AddButton' at 12;14.", repo.CogstateSolutionPlatform.StudyToolbar.AddButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.StudyToolbar.AddButton.Click("12;14", 3);
             Delay.Milliseconds(490);
             
         }

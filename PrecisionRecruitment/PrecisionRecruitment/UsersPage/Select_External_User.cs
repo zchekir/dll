@@ -100,16 +100,16 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SearchField' at Center.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SearchField.Click(300);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click(300);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Key' with focus on 'CogstateSolutionPlatform.SearchField'.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchField.PressKeys(Key, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Key' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(Key, 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.ExternalUserRow' at Center.", repo.CogstateSolutionPlatform.UsersPage.ExternalUserRowInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.UsersPage.ExternalUserRow.Click(300);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserRow' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserRowInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserRow.Click(300);
             Delay.Milliseconds(200);
             
         }

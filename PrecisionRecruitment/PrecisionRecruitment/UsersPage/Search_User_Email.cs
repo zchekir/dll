@@ -100,11 +100,11 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SearchField' at Center.", repo.CogstateSolutionPlatform.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SearchField.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click(1);
             Delay.Milliseconds(90);
             
-            Enter_Email(repo.CogstateSolutionPlatform.SearchFieldInfo);
+            Enter_Email(repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));

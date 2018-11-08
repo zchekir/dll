@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.LoginPage
             Init();
 
             // Check User is logged in and Studies page is displayed
-            Report.Log(ReportLevel.Info, "Validation", "Check User is logged in and Studies page is displayed\r\nValidating Exists on item 'CogstateSolutionPlatform.Studies'.", repo.CogstateSolutionPlatform.StudiesInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.StudiesInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Check User is logged in and Studies page is displayed\r\nValidating Exists on item 'CogstateSolutionPlatform.Breadcrumbs.StudiesBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.StudiesBreadcrumbInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.Breadcrumbs.StudiesBreadcrumbInfo);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));

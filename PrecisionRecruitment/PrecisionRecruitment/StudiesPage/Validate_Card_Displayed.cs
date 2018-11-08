@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.StudiesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.StudyPage.StudyCard'.", repo.CogstateSolutionPlatform.StudyPage.StudyCardInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.StudyPage.StudyCardInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.StudyCards.StudyCard'.", repo.CogstateSolutionPlatform.StudyCards.StudyCardInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.StudyCards.StudyCardInfo);
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "Card view is displayed", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));

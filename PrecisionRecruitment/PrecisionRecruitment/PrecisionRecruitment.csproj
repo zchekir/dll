@@ -2886,6 +2886,13 @@
       <id>f756df1f-07d7-49e4-bf5b-bbebb37a024b</id>
       <recordtableid>8080cd65-37d3-431e-8bd9-4ff840801312</recordtableid>
     </None>
+    <Content Include="Authentication.csv">
+      <Link>Authentication.csv</Link>
+      <BoundTo>9ccfdd11-47ca-413a-8c8e-82d3c005a4eb</BoundTo>
+      <DependentUpon>PrecisionRecruitment.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>d5ff2cb5-53d0-4a08-b333-5780fcdd273f</id>
+    </Content>
     <None Include="BatteriesPage\Click_Add_Battery.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>d0d31c20-dffc-4309-bc08-efbd13ad6e72</id>
@@ -2922,6 +2929,7 @@
     </None>
     <None Include="csv\Baseline.csv">
       <id>70a03c02-cdec-4f43-b0e6-212bf2c9ab71</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="csv\extract1.csv">
       <id>7833311f-d735-4268-a53a-5ca69a633d41</id>
@@ -2933,6 +2941,7 @@
     </None>
     <None Include="csv\FollowUp.csv">
       <id>ab2c1665-1439-489e-8d03-af44e0e360b1</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Content Include="CustomReportTemplate\CogstateLogoWhite.png">
       <id>13458f0b-9c1b-4178-8f93-c5604045c620</id>
@@ -3238,9 +3247,11 @@
     </None>
     <None Include="rawData\Baseline.txt">
       <id>929ec6a6-26b1-4feb-b158-b6651e6aad11</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="rawData\FollowUp.txt">
       <id>abfa05ce-faaf-4835-ac0f-a9de2c65e92c</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="rawData\rawData1.txt">
       <id>28c81b25-cf62-4d20-b771-9257a1bffe7e</id>

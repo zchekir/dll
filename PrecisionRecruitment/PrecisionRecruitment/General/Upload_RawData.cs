@@ -105,8 +105,8 @@ namespace PrecisionRecruitment.General
             AddRawData(DataFile);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatterySkip' at Center.", repo.CogstateSolutionPlatform.BatterySkipInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatterySkip.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.BatterySkipButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.BatterySkipButton.Click();
             Delay.Milliseconds(0);
             
         }

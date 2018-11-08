@@ -99,29 +99,29 @@ namespace PrecisionRecruitment.StudiesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyPage.Locality' at Center.", repo.CogstateSolutionPlatform.StudyPage.LocalityInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.StudyPage.Locality.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyLocalitiesPage.LocalityOption' at Center.", repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalityOptionInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalityOption.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'CogstateSolutionPlatform.StudyPage.LocalitiesList'.", repo.CogstateSolutionPlatform.StudyPage.LocalitiesListInfo, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.CogstateSolutionPlatform.StudyPage.LocalitiesList);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesList'.", repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesListInfo, new RecordItemIndex(1));
+            Keyboard.PrepareFocus(repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesList);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, 30, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}' with focus on 'CogstateSolutionPlatform.StudyPage.LocalitiesList'.", repo.CogstateSolutionPlatform.StudyPage.LocalitiesListInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.StudyPage.LocalitiesList.PressKeys("{LControlKey down}", 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}' with focus on 'CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesList'.", repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesListInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesList.PressKeys("{LControlKey down}", 100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyPage.BlankLocality' at Center.", repo.CogstateSolutionPlatform.StudyPage.BlankLocalityInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.StudyPage.BlankLocality.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyLocalitiesPage.BlankLocality' at Center.", repo.CogstateSolutionPlatform.StudyLocalitiesPage.BlankLocalityInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.StudyLocalitiesPage.BlankLocality.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}' with focus on 'CogstateSolutionPlatform.StudyPage.LocalitiesList'.", repo.CogstateSolutionPlatform.StudyPage.LocalitiesListInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.StudyPage.LocalitiesList.PressKeys("{LControlKey up}", 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}' with focus on 'CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesList'.", repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesListInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.StudyLocalitiesPage.LocalitiesList.PressKeys("{LControlKey up}", 100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.SaveButton' at Center.", repo.CogstateSolutionPlatform.Expanded.SaveButtonInfo, new RecordItemIndex(5));
-            repo.CogstateSolutionPlatform.Expanded.SaveButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SaveButton' at Center.", repo.CogstateSolutionPlatform.SaveButtonInfo, new RecordItemIndex(5));
+            repo.CogstateSolutionPlatform.SaveButton.Click();
             Delay.Milliseconds(0);
             
         }

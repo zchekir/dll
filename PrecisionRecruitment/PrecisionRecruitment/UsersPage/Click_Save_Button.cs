@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Expanded.SaveButton' at Center.", repo.CogstateSolutionPlatform.Expanded.SaveButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.Expanded.SaveButton.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SaveButton' at Center.", repo.CogstateSolutionPlatform.SaveButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.SaveButton.Click(1);
             Delay.Milliseconds(90);
             
         }

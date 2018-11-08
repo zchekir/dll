@@ -111,15 +111,15 @@ namespace PrecisionRecruitment.AddStudyPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.StudyNameBreadcrumb'", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new ActionTimeout(10000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumb'", repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo, new ActionTimeout(10000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$ProjectName) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, "InnerText", ProjectName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$ProjectName) on item 'CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo, "InnerText", ProjectName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyNameBreadcrumbInfo, "InnerText", RandNum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Study Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));

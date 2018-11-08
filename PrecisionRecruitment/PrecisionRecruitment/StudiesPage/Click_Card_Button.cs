@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.StudiesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudiesViewMenu.CardButton' at Center.", repo.CogstateSolutionPlatform.StudiesViewMenu.CardButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.StudiesViewMenu.CardButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.MainToolbar.CardButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.MainToolbar.CardButton.Click();
             Delay.Milliseconds(0);
             
         }

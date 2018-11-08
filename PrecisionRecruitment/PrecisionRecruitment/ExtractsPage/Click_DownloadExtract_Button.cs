@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.ExtractsPage
             repo.CogstateSolutionPlatform.ExtractsPage.DownloadExtractButton.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatformChrome.DownloadedExtractFile'", repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo, new ActionTimeout(10000), new RecordItemIndex(1));
-            repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatformChrome.DownloadedExtractFile'", repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo.WaitForExists(30000);
             
         }
 

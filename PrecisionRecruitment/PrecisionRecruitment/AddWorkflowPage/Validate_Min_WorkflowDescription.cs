@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.AddWorkflowPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionMinLength'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionMinLengthInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionMinLengthInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionMinLengthValidation'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionMinLengthValidationInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowDescriptionMinLengthValidationInfo);
             Delay.Milliseconds(100);
             
         }

@@ -89,12 +89,12 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>'Edit') on item 'CogstateSolutionPlatform.UsersPage.FirstNameField'.", repo.CogstateSolutionPlatform.UsersPage.FirstNameFieldInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.UsersPage.FirstNameFieldInfo, "Value", "Edit");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>'Edit') on item 'CogstateSolutionPlatform.AddInternalUserPage.FirstNameField'.", repo.CogstateSolutionPlatform.AddInternalUserPage.FirstNameFieldInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.AddInternalUserPage.FirstNameFieldInfo, "Value", "Edit");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>'Edit') on item 'CogstateSolutionPlatform.UsersPage.LastNameField'.", repo.CogstateSolutionPlatform.UsersPage.LastNameFieldInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.UsersPage.LastNameFieldInfo, "Value", "Edit");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>'Edit') on item 'CogstateSolutionPlatform.AddInternalUserPage.LastNameField'.", repo.CogstateSolutionPlatform.AddInternalUserPage.LastNameFieldInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.AddInternalUserPage.LastNameFieldInfo, "Value", "Edit");
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "Internal User has been edited successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
