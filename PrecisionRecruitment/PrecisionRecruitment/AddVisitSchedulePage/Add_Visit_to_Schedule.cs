@@ -164,8 +164,8 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode.PressKeys(RandNum, 1);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleSaveButton' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleSaveButtonInfo, new RecordItemIndex(8));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleSaveButton.Click(3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButtonInfo, new RecordItemIndex(8));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton.Click(3);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(9));

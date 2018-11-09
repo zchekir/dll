@@ -37,7 +37,7 @@ namespace PrecisionRecruitment.AddWorkflowPage
         {
         	//click on dropdown to expand the list of Outcomes
         	Report.Log(ReportLevel.Info,"Mouse click on OutcomeDropdown");
-        	repo.CogstateSolutionPlatform.AddWorkflowPage.OutcomeDropdown.Click();
+        	repo.CogstateSolutionPlatform.AddWorkflowPage.OutcomeMeasuredOutcomeDropdown.Click();
         		
         	//find the Outcome we want and select it
         	OptionTag option = "/dom[@domain='" + DOM + "']//option[@InnerText>'" + Outcome + "']";

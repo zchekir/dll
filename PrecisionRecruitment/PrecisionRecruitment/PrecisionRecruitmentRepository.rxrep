@@ -310,7 +310,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,selecttag"
 				capname="selecttag"
 				id="428bf8ce-551a-4558-80ec-d9fd5db74c68"
-				name="OutcomeDropdown"
+				name="OutcomeMeasuredOutcomeDropdown"
 				refimgid="0d0beac4-c223-4acf-85d9-73edd8f8d93c"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//select[@name~'selectWithXButton']
@@ -506,7 +506,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="6009439a-ba18-4b70-b7d4-55d6005c4ea5"
-				name="ProtocolNumberRequired"
+				name="ProtocolNumberRequiredValidation"
 				refimgid="a618db51-dccd-4c18-95bf-a57dbaf24786"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@innertext~'Protocol Number is required']
@@ -515,7 +515,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="e0933e89-9563-4e63-88ba-7ea268de2010"
-				name="ProjectNameRequired"
+				name="ProjectNameRequiredValidation"
 				refimgid="cd296a08-8f4a-4595-ad3e-93e045040157"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@innertext~'Project Name is required']
@@ -524,7 +524,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="39090068-0795-430a-bdc1-bb3f08c0d5d6"
-				name="SponsorRequired"
+				name="SponsorRequiredValidation"
 				refimgid="f9fe7f76-e0ae-4565-88fc-77f33f54efe9"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@innertext~'Sponsor is required']
@@ -533,7 +533,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="290edd0f-b7ab-468e-a532-ddceea2dd4b5"
-				name="StatusRequired"
+				name="StatusRequiredValidation"
 				refimgid="ecd465ee-efe6-4fa0-a86d-e41c8318b24d"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@innertext~'Status is required']
@@ -542,28 +542,28 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="67dc8803-2a9e-4a78-b794-68a991592f8a"
-				name="ProtocolNumberMinLength"
+				name="ProtocolNumberMinLengthValidation"
 				refimgid="736792a3-5d72-4aa0-a9de-13114f28f541"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_protocolName_[0-9]']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="e183910c-bb41-4ca5-b698-1fe067d25c47"
-				name="ProjectNameMinLength"
+				name="ProjectNameMinLengthValidation"
 				refimgid="160c5683-9ba6-4de0-834d-6e5d081dccff"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_codeName_[[0-9]']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="258b99b4-9da0-4784-8c06-9391aae493cb"
-				name="SponsorMinLength"
+				name="SponsorMinLengthValidation"
 				refimgid="a281a7bf-5ef1-494f-a0d9-534fadbc4bab"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[3]//div[@innertext~'The minimum length']
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_sponsor_[0-9]']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -571,9 +571,8 @@ rxversion="8.2">
 				id="3b5d9f92-75e0-4c4f-977c-ce291a18cf0f"
 				name="EditButton"
 				refimgid="75438ddd-4026-487f-8875-00d09ac44a59"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-expanded']/div/div[2]/i[@innertext='mode_edit']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/tag/div/?/?/i[@innertext='mode_edit']
+					/dom[@domain=$DOM]//div[#'ng-app']//i[@innertext='mode_edit']
 				</item>
 			</folder>
 			<folder
@@ -589,7 +588,7 @@ rxversion="8.2">
 				name="SaveButton"
 				refimgid="85ed1501-e70c-432a-8747-18358e420146"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-add']/div/div[1]/tag[@tagname='ng-form']/div[4]/div/input[@ng-click='saveVisitSchedule()']
+					/dom[@domain=$DOM]//tag[@tagname='ng-form']//input[@ng-click='saveVisitSchedule()']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -647,38 +646,18 @@ rxversion="8.2">
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
-				capname="divtag"
+				capname="h4tag"
 				id="6d4d528a-8639-493c-866c-405f383143ae"
 				name="Visit1"
 				refimgid="c9a4103b-43e2-4007-b34d-7d06cf1be6b6"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[3]/tag[@tagname='cogstate-generic-compact']/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[2]/ul/li/div/tag[@tagname='cogstate-generic-visit-schedule-designer-list']/div/div/div/div[1]"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[2]/ul//tag[@tagname='cogstate-generic-visit-schedule-designer-list']/div/div/div/div[1]
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="94bb5aff-1454-4d3e-aef4-e1b4dfdfb143"
-				name="VisitScheduleSaveButton"
-				refimgid="35c02e22-7891-4891-b5c3-87772f53cf41"
-				refpath="/dom[@domain='cgst-qc-2-7-0.cogstate.com']/body/div/tag/div/div[3]/tag/tag/div/div[1]/tag[@tagname='ng-form']/div[4]/div/input[@type='button']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[1]/tag[@tagname='ng-form']/div[4]/div/input[@type='button']
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="8472a298-4084-43e9-bb47-4892db050f5a"
-				name="VisitScheduleNameBreadcrumb"
-				refimgid="da0e17dc-117a-4f65-a331-a14ec021c4e8"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]/tag/div/div[2]/div//span[@innertext&gt;$VisitScheduleName]
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='Visit 1']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="8e3528cd-0ec6-43e1-ba3f-250d56e1255a"
-				name="StatusRequired"
+				name="StatusRequiredValidation"
 				refimgid="a65703e9-55d0-4f66-90bd-c64a8632b1a1"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@innertext~'Status is required']
@@ -687,7 +666,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="81d94947-ee9f-44f0-9545-adeeb36f10d8"
-				name="NameRequired"
+				name="NameRequiredValidation"
 				refimgid="c3fdc104-decc-41e5-8672-fbb27c53707e"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@innertext~'Name is required']
@@ -696,19 +675,19 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="1f021adf-33c2-4b28-8a98-fae93e39deae"
-				name="VisitScheduleNameMinLength"
+				name="VisitScheduleNameMinLengthValidation"
 				refimgid="8818aa55-689e-41df-8c74-8caee23d46fa"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,textareatag"
 				capname="textareatag"
 				id="fab623de-d4cc-4b0f-ba8a-762fa57e6154"
-				name="VisitSesionIDField"
+				name="VisitSessionIDField"
 				refimgid="c51d05d6-a583-4618-9b61-62c14932389a"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[3]/div[1]/div[3]/?/?/div/textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']
+					/dom[@domain=$DOM]//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']
 				</item>
 				<item
 				addcaps="unknown,webelement,imgtag"
@@ -717,7 +696,7 @@ rxversion="8.2">
 				name="VisitScheduleAddVisitButton"
 				refimgid="8ce9cf61-ea16-46bf-b5fd-501d343aba9a"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[2]/tag[@tagname='cogstate-generic-visit-schedule-designer-header']/div/div/div[3]/span[1]/img[@src='https://'+$DOM+'/asset/images/add_icon_off.png']
+					/dom[@domain=$DOM]//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src&gt;'https://'+$DOM+'/asset/images/add_icon_']
 				</item>
 			</folder>
 			<folder
@@ -827,9 +806,8 @@ rxversion="8.2">
 				id="2e3c5b52-487e-4841-aa4c-79a3ee5ced8b"
 				name="ShowTestUsersCheckbox"
 				refimgid="ea416e1c-e0b5-4375-92ba-ffe96dbbb289"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div/div[2]/div/div[2]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-header']/tag/div/div/div[4]/div/label/input[@type='checkbox']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//tag[@tagname='cogstate-generic-participant-list-header']/div/div/div[4]/div/label[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Show\ ']/input[@type='checkbox']
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-participant-list-header']//label[@innertext~'Show Test Users']/input[@type='checkbox']
 				</item>
 				<item
 				addcaps="unknown,webelement,thtag"
@@ -838,7 +816,7 @@ rxversion="8.2">
 				name="LastUpdateColumnHeader"
 				refimgid="36bf0ebc-c912-4e30-8ffd-13f5cc6a1b69"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//table/thead/?/?/th[@innertext&gt;'Last Update']
+					/dom[@domain=$DOM]//div[#'ng-app']//table/thead//th[@innertext&gt;'Last Update']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -846,9 +824,8 @@ rxversion="8.2">
 				id="df079711-8cff-4169-a30a-94b5fc44094e"
 				name="EditButton"
 				refimgid="2851e428-1943-443e-b320-41b9ee827770"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div/div[2]/div/div[2]/tag[@tagname='cogstate-generic-list']/tag[@tagname='cogstate-generic-list-grid']/table/tbody/tr[1]/td[12]/i[@innertext='mode_edit']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//table/tbody/tr[1]/td[12]/i[@innertext='mode_edit']
+					/dom[@domain=$DOM]//div[#'ng-app']//table/tbody/tr/td/i[@innertext='mode_edit' and @visible='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -863,19 +840,10 @@ rxversion="8.2">
 				addcaps="unknown,webelement,trtag"
 				capname="atag"
 				id="cdf5e922-5ffd-4dc2-b77d-22b8ddf48437"
-				name="Participant"
+				name="ParticipantUserName"
 				refimgid="506b75e1-4e2a-43ed-8914-6a48ee11b29f"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[2]//table/tbody/tr[1]/td[1]/a
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="0836a7ec-3ff0-43eb-a4df-8f67f3324722"
-				name="ParticipantBreadcrumb"
-				refimgid="91d6688e-4a05-458b-9793-8deac342d162"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//span[@innertext~$ParticipantUserName]
+					/dom[@domain=$DOM]//div[#'ng-app']//table/tbody/tr/td/a[@visible='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -883,9 +851,8 @@ rxversion="8.2">
 				id="92ea73f0-8db5-4d63-bcfb-999617090417"
 				name="ExpandProfile"
 				refimgid="b5543660-1f4a-4a27-8de8-fe703a9b28ed"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/div/div[2]/i[@innertext='keyboard_arrow_down']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/tag/div/?/?/i[@innertext='keyboard_arrow_down']
+					/dom[@domain=$DOM]//div[#'ng-app']//i[@innertext='keyboard_arrow_down']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -925,7 +892,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,selecttag"
 				capname="selecttag"
 				id="d8b5d71e-6368-4711-996d-5c3e18d31ac6"
-				name="ReportType"
+				name="ReportTypeDropdown"
 				refimgid="983e0b0d-d2ba-4577-b1eb-10be086ee2ad"
 				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//select[#'reportType']"
 				searchtimeout="30000ms">
@@ -937,9 +904,8 @@ rxversion="8.2">
 				id="e8f74239-df44-45da-9466-42c9bfdf1867"
 				name="DownloadExtractButton"
 				refimgid="342d71b9-adb0-4378-a3ec-5b785f0d599e"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div[3]/tag/tag[@tagname='cogstate-generic-children-tabs']/tag/div/div[2]/div/div[6]/tag[@tagname='cogstate-generic-list']/tag/div/div[2]/div/div/button[@innertext='DOWNLOAD EXTRACT  ']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[6]/?/?/tag[@tagname='cogstate-generic-extract-list']/div/div[2]/div/?/?/button[@innertext='DOWNLOAD EXTRACT&#160;&#160;']
+					/dom[@domain=$DOM]//div[#'ng-app']//button[@innertext~'DOWNLOAD EXTRACT']
 				</item>
 			</folder>
 			<folder
@@ -973,7 +939,7 @@ rxversion="8.2">
 				name="LoginButton"
 				refimgid="4feb8019-caad-4e54-97c6-b1c7d661e1ac"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[1]//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@ng-click='login()']
+					/dom[@domain=$DOM]//tag[@tagname='cogstate-authentication-login']//form[@name='_form']//button[@ng-click='login()']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -982,7 +948,7 @@ rxversion="8.2">
 				name="LogoutMessage"
 				refimgid="51116d23-43d0-46f8-bd5a-0231c7aecbea"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/tag/div/div/div/div[2]/div[@innertext~'^You\ are\ now\ logged\ out,\ y']
+					/dom[@domain=$DOM]//div[#'ng-app']//div[@innertext~'^You\ are\ now\ logged\ out,\ y']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -991,7 +957,7 @@ rxversion="8.2">
 				name="InvalidUserMessage"
 				refimgid="d472f244-6e9e-45c6-b2c9-67e5ca0d00c3"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-login']/div/div/div/div[2]/div[@innertext&gt;'Invalid username']
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']//div[@innertext&gt;'Invalid username']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -999,9 +965,8 @@ rxversion="8.2">
 				id="fbab6271-1325-470a-8fd9-031be0696cc5"
 				name="ForgotYourPassword"
 				refimgid="0d9c459d-5494-48e1-8861-e00f08b4a55d"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div/tag/div/div/div/div[3]/form/div[2]/a[@innertext='Forgot your password?']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[2]/a[@innertext='Forgot your password?']
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']//form[@name='_form']//a[@innertext='Forgot your password?']
 				</item>
 				<item
 				addcaps="unknown,webelement,labeltag"
@@ -1010,7 +975,7 @@ rxversion="8.2">
 				name="ForgotPasswordPrompt"
 				refimgid="39a1cdc5-2390-47e3-a792-3d6b38456715"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/tag/div//label[@innertext&gt;'If your email address']
+					/dom[@domain=$DOM]//div[#'ng-app']//label[@innertext&gt;'If your email address']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -1018,9 +983,8 @@ rxversion="8.2">
 				id="fb35086c-c995-4596-ab6e-aaaf6587fc37"
 				name="ForgotPasswordOkButton"
 				refimgid="7a507663-1693-467a-9262-7621a56867d9"
-				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//div[#'ng-app']/tag/div/div/tag/div/div/div/div[3]/form/div/button[2]"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-forgot']/div/div/div/div[3]/form[@name='_form']/div/button[2]
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-forgot']//form[@name='_form']//button[@innertext~'OK']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -1029,7 +993,7 @@ rxversion="8.2">
 				name="ForgotPasswordConfirmation"
 				refimgid="d9aa02d5-07ef-4dea-a4d1-71a3e5d787e6"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-sent']/div/div/div/div[2]/div[@innertext~'Please check your email']
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-sent']//div[@innertext~'Please check your email']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -1038,7 +1002,7 @@ rxversion="8.2">
 				name="UserLockedMessage"
 				refimgid="5be7898c-f0d4-472d-8b9b-bf48a45a7107"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/?/?/tag[@tagname='cogstate-authentication-login']/div/div/div/div[2]/div[@innertext~'You''ve exceeded the maximum']
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']//div[@innertext~'You''ve exceeded the maximum']
 				</item>
 			</folder>
 			<folder
@@ -1420,6 +1384,24 @@ rxversion="8.2">
 				refimgid="77c08f1d-97d2-4444-8807-b1c6920bbaf2"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext='Studies']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="8472a298-4084-43e9-bb47-4892db050f5a"
+				name="VisitScheduleNameBreadcrumb"
+				refimgid="c0e8c940-b2ff-4764-a0a2-1cc38b0dd949"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext&gt;$VisitScheduleName]
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="0836a7ec-3ff0-43eb-a4df-8f67f3324722"
+				name="ParticipantBreadcrumb"
+				refimgid="5b85ed3d-e708-43b2-bf38-820126cddd94"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext~$ParticipantUserName]
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']

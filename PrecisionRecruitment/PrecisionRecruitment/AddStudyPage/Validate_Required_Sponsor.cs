@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.AddStudyPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddStudyPage.SponsorRequired'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorRequiredInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.AddStudyPage.SponsorRequiredInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddStudyPage.SponsorRequiredValidation'.", repo.CogstateSolutionPlatform.AddStudyPage.SponsorRequiredValidationInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.AddStudyPage.SponsorRequiredValidationInfo);
             Delay.Milliseconds(100);
             
         }

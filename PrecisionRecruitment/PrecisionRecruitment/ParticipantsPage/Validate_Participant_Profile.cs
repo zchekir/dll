@@ -100,8 +100,8 @@ namespace PrecisionRecruitment.ParticipantsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$ParticipantUserName) on item 'CogstateSolutionPlatform.ParticipantsPage.ParticipantBreadcrumb'.", repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantBreadcrumbInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantBreadcrumbInfo, "InnerText", ParticipantUserName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$ParticipantUserName) on item 'CogstateSolutionPlatform.Breadcrumbs.ParticipantBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.ParticipantBreadcrumbInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.CogstateSolutionPlatform.Breadcrumbs.ParticipantBreadcrumbInfo, "InnerText", ParticipantUserName);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ParticipantsPage.ExpandProfile' at Center.", repo.CogstateSolutionPlatform.ParticipantsPage.ExpandProfileInfo, new RecordItemIndex(1));

@@ -134,12 +134,12 @@ namespace PrecisionRecruitment.VisitSchedulesPage
             repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitle.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumbInfo, "InnerText", VisitScheduleName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, "InnerText", VisitScheduleName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameBreadcrumbInfo, "InnerText", RandNum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(100);
             
         }

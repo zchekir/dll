@@ -89,16 +89,16 @@ namespace PrecisionRecruitment.ExtractsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExtractsPage.ReportType' at 905;16.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ExtractsPage.ReportType.Click("905;16", 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown' at 905;16.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdownInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown.Click("905;16", 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Standard Extract - Precision Recruitment' with focus on 'CogstateSolutionPlatform.ExtractsPage.ReportType'.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.ExtractsPage.ReportType.PressKeys("Standard Extract - Precision Recruitment", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Standard Extract - Precision Recruitment' with focus on 'CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown'.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown.PressKeys("Standard Extract - Precision Recruitment", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.ExtractsPage.ReportType'.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.ExtractsPage.ReportType.PressKeys("{Tab}", 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown'.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown.PressKeys("{Tab}", 100);
             Delay.Milliseconds(0);
             
         }

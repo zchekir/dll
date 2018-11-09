@@ -102,12 +102,12 @@ namespace PrecisionRecruitment.ParticipantsPage
 
             Report.Screenshot(ReportLevel.Info, "User", "Selecting participant from list", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'CogstateSolutionPlatform.ParticipantsPage.Participant' and assigning its value to variable 'ParticipantUserName'.", repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantInfo, new RecordItemIndex(1));
-            ParticipantUserName = repo.CogstateSolutionPlatform.ParticipantsPage.Participant.Element.GetAttributeValueText("InnerText");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'CogstateSolutionPlatform.ParticipantsPage.ParticipantUserName' and assigning its value to variable 'ParticipantUserName'.", repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantUserNameInfo, new RecordItemIndex(1));
+            ParticipantUserName = repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantUserName.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ParticipantsPage.Participant' at Center.", repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.ParticipantsPage.Participant.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ParticipantsPage.ParticipantUserName' at Center.", repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantUserNameInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.ParticipantsPage.ParticipantUserName.Click();
             Delay.Milliseconds(0);
             
         }

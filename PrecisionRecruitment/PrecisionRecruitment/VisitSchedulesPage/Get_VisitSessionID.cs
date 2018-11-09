@@ -102,8 +102,8 @@ namespace PrecisionRecruitment.VisitSchedulesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'TagValue' from item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitSesionIDField' and assigning its value to variable 'VisitSessionID'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitSesionIDFieldInfo, new RecordItemIndex(0));
-            VisitSessionID = repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitSesionIDField.Element.GetAttributeValueText("TagValue");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'TagValue' from item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitSessionIDField' and assigning its value to variable 'VisitSessionID'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitSessionIDFieldInfo, new RecordItemIndex(0));
+            VisitSessionID = repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitSessionIDField.Element.GetAttributeValueText("TagValue");
             Delay.Milliseconds(0);
             
         }
