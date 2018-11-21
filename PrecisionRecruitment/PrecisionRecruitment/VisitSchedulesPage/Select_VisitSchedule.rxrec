@@ -223,6 +223,30 @@ rxversion="8.2">
 		<mouseitem
 		action="Click"
 		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="58ed463b-323b-4d3e-b868-2e0391bf1087"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="05c3e67d-f870-4341-84e2-8aa619cd0a81"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-study-children-tabs']//tag[@tagname~'cogstate-generic-workflow-list-header|cogstate-generic-list-header']//div/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_' and @visible='True']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
 		duration="500ms"
 		enabled="True"
 		loc="Center"

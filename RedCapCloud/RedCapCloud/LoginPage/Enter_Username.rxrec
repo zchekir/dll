@@ -24,7 +24,7 @@ rxversion="8.2">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Enter_Username"
-	namespace="RedCapCloud.InputModules.LoginPage">
+	namespace="RedCapCloud.LoginPage">
 	</codegen>
 	<variables>
 		<var
@@ -37,10 +37,10 @@ rxversion="8.2">
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="5ms"
 		enabled="True"
 		loc="Center"
-		movetime="30ms"
+		movetime="3ms"
 		optional="False"
 		searchpropertyid="e5322565-c028-4418-bf64-91d14bfc9d43"
 		sx="1761"
@@ -286,10 +286,10 @@ AooooAKKKKACiiigAooooAKKKKACiiigAoNFBoAbRRRSAKKKKACiiigBKKKKACiiigApaSloA//Z
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}"
-		duration="100ms"
+		duration="1ms"
 		enabled="True"
 		optional="False"
-		presstime="10ms"
+		presstime="1ms"
 		searchpropertyid="b6994653-b22a-4e18-bdb0-0fe8defd28a5">
 			<comment>
 			</comment>
@@ -305,10 +305,10 @@ AooooAKKKKACiiigAooooAKKKKACiiigAoNFBoAbRRRSAKKKKACiiigBKKKKACiiigApaSloA//Z
 		</keysequenceitem>
 		<keysequenceitem
 		KeySequence="dwood{LShiftKey down}@{LShiftKey up}cogstate.com"
-		duration="100ms"
+		duration="1ms"
 		enabled="True"
 		optional="False"
-		presstime="10ms"
+		presstime="1ms"
 		searchpropertyid="aa843339-04b0-41c2-95ad-fda525b1c6ab">
 			<comment>
 			</comment>
@@ -603,10 +603,10 @@ ACiiigAooooAKKKKACiiigAooooAKDRQaAG0UUUgCiiigAooooASiiigAooooAKWkpaAP//Z
 		</validationitem>
 		<keysequenceitem
 		KeySequence="{Tab}"
-		duration="100ms"
+		duration="1ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="1ms"
 		searchpropertyid="56b0bdb7-dccc-4e9e-8977-d6d0d68fc6d9">
 			<comment>
 			</comment>
@@ -623,10 +623,10 @@ ACiiigAooooAKKKKACiiigAooooAKDRQaAG0UUUgCiiigAooooASiiigAooooAKWkpaAP//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="5ms"
 		enabled="True"
 		loc="Center"
-		movetime="30ms"
+		movetime="3ms"
 		optional="False"
 		searchpropertyid="9c8b8e41-ae1a-40b1-8675-4ba9c9452a06"
 		sx="2039"
@@ -706,8 +706,8 @@ ACiiigAooooAKKKKACiiigAooooAKDRQaAG0UUUgCiiigAooooASiiigAooooAKWkpaAP//Z
 	<repository
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 	name="RedCapCloudRepository"
-	relativepath="..\..\RedCapCloudRepository.rxrep"
-	rxversion="8.0">
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
 		<codegen
 		classname="RedCapCloudRepository"
 		namespace="RedCapCloud">

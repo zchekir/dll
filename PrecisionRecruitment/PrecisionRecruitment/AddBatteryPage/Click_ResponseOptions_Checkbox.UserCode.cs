@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.InputModules.LoginPage
+namespace PrecisionRecruitment.AddBatteryPage
 {
-    public partial class Click_Login_Button
+    public partial class Click_ResponseOptions_Checkbox
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

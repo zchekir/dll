@@ -153,18 +153,6 @@ namespace PrecisionRecruitment
             set { _Key = value; }
         }
 
-        string _Population = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable Population.
-        /// </summary>
-        [TestVariable("af68b261-9d44-4b3d-b2fc-778a0c4e9ce0")]
-        public string Population
-        {
-            get { return _Population; }
-            set { _Population = value; }
-        }
-
         string _WorkflowTemplate = "PR 3 Tier Decision";
 
         /// <summary>
@@ -223,6 +211,18 @@ namespace PrecisionRecruitment
         {
             get { return _GmailAddress; }
             set { _GmailAddress = value; }
+        }
+
+        string _BatteryPopulation = "Alzheimer's Disease (Mild, MCI)";
+
+        /// <summary>
+        /// Gets or sets the value of variable BatteryPopulation.
+        /// </summary>
+        [TestVariable("85909bbe-70e5-408e-83e1-6c765b095ce9")]
+        public string BatteryPopulation
+        {
+            get { return _BatteryPopulation; }
+            set { _BatteryPopulation = value; }
         }
 
 #endregion
@@ -805,6 +805,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _batterynamefieldInfo;
             RepoItemInfo _batterydescriptionfieldInfo;
             RepoItemInfo _batterystatusdropdownInfo;
+            RepoItemInfo _responseoptionscheckboxInfo;
             RepoItemInfo _batterypopulationdropdownInfo;
             RepoItemInfo _batterytemplatedropdownInfo;
             RepoItemInfo _namerequiredvalidationInfo;
@@ -827,15 +828,16 @@ namespace PrecisionRecruitment
                 _batterynamefieldInfo = new RepoItemInfo(this, "BatteryNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "564dfbbc-a1f8-4664-9bb0-740b573b1b83");
                 _batterydescriptionfieldInfo = new RepoItemInfo(this, "BatteryDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "1ee5a82e-1ff8-4ead-8146-43adca4bc894");
                 _batterystatusdropdownInfo = new RepoItemInfo(this, "BatteryStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "764229ed-d1b6-4cfa-b17e-9a61fdbd7d9e");
-                _batterypopulationdropdownInfo = new RepoItemInfo(this, "BatteryPopulationDropdown", ".//select[@id~'formly_[0-9]+_select_indication_3']", 30000, null, "107c3512-95bb-4744-8616-4562277635c7");
-                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_4']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
+                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']", 30000, null, "460ff0b4-1723-4c92-9813-cf9474fafefc");
+                _batterypopulationdropdownInfo = new RepoItemInfo(this, "BatteryPopulationDropdown", ".//select[@id~'formly_[0-9]+_select_indication_4']", 30000, null, "107c3512-95bb-4744-8616-4562277635c7");
+                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_5']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "9b34d25f-6823-4976-b188-249b5f79543c");
                 _populationrequiredvalidationInfo = new RepoItemInfo(this, "PopulationRequiredValidation", ".//div[@innertext~'Population is required']", 30000, null, "febf10c1-8a7c-4339-b47f-1699d47784c0");
                 _templaterequiredvalidationInfo = new RepoItemInfo(this, "TemplateRequiredValidation", ".//div[@innertext~'Template is required']", 30000, null, "8527d043-7b39-4fd4-9d39-1cb8b390c4ca");
                 _batterynameminlengthvalidationInfo = new RepoItemInfo(this, "BatteryNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "c7900ad1-3cd8-4a86-aa4f-405332898535");
                 _batterydescriptionminlengthInfo = new RepoItemInfo(this, "BatteryDescriptionMinLength", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']/..//div[@innertext~'The minimum length']", 30000, null, "5c3fdd48-4f58-4b9f-8ef8-e8024cc42559");
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-helper-battery-display-reorder']//i[@innertext='mode_edit']", 30000, null, "7374a82c-bca0-488b-8b9d-b145aa147f9e");
-                _batterypopulationoptionInfo = new RepoItemInfo(this, "BatteryPopulationOption", ".//select[@id~'formly_[0-9]+_select_indication_3']/option[@innertext=$Population]", 30000, null, "15d7475f-65ad-4ec8-92e5-63fa636bf7df");
+                _batterypopulationoptionInfo = new RepoItemInfo(this, "BatteryPopulationOption", ".//select[@id~'formly_[0-9]+_select_indication_4']/option[@innertext=$BatteryPopulation]", 30000, null, "15d7475f-65ad-4ec8-92e5-63fa636bf7df");
                 _firstbatteryblockInfo = new RepoItemInfo(this, "FirstBatteryBlock", ".//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-helper-battery-display-reorder']//ul/li[1]", 30000, null, "2b7260a6-8b1d-4961-9108-0f3b23cb9290");
                 _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_1']", 30000, null, "a663e077-b054-4cf5-a000-99a176bc9130");
                 _cogstatetestoptionInfo = new RepoItemInfo(this, "CogstateTestOption", ".//select[@id~'formly_[0-9]+_select_type_1']/option[@innertext=$BatteryBlock]", 30000, null, "e0c09b12-b293-4227-ac63-94eecf66affb");
@@ -922,6 +924,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _batterystatusdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResponseOptionsCheckbox item.
+            /// </summary>
+            [RepositoryItem("460ff0b4-1723-4c92-9813-cf9474fafefc")]
+            public virtual Ranorex.InputTag ResponseOptionsCheckbox
+            {
+                get
+                {
+                    return _responseoptionscheckboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResponseOptionsCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("460ff0b4-1723-4c92-9813-cf9474fafefc")]
+            public virtual RepoItemInfo ResponseOptionsCheckboxInfo
+            {
+                get
+                {
+                    return _responseoptionscheckboxInfo;
                 }
             }
 

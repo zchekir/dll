@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.InputModules.LoginPage
+namespace RedCapCloud.LoginPage
 {
-    public partial class Enter_Password
+    public partial class Click_Login_Button
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

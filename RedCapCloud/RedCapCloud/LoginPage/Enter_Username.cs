@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.InputModules.LoginPage
+namespace RedCapCloud.LoginPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_Password recording.
+    ///The Enter_Username recording.
     /// </summary>
-    [TestModule("e59097d8-8b0c-45be-9e00-1df5daf09a39", ModuleType.Recording, 1)]
-    public partial class Enter_Password : ITestModule
+    [TestModule("e508381d-293b-4818-ab9c-d4393b14b647", ModuleType.Recording, 1)]
+    public partial class Enter_Username : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Enter_Password instance = new Enter_Password();
+        static Enter_Username instance = new Enter_Username();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_Password()
+        public Enter_Username()
         {
-            Password = "913172@RCC";
+            Username = "dwood@cogstate.com";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_Password Instance
+        public static Enter_Username Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Password;
+        string _Username;
 
         /// <summary>
-        /// Gets or sets the value of variable Password.
+        /// Gets or sets the value of variable Username.
         /// </summary>
-        [TestVariable("a35162d5-ba5c-4acc-ab7d-30da81d72541")]
-        public string Password
+        [TestVariable("6f1c465c-9a9b-427e-8e79-df300403992d")]
+        public string Username
         {
-            get { return _Password; }
-            set { _Password = value; }
+            get { return _Username; }
+            set { _Username = value; }
         }
 
         /// <summary>
@@ -102,24 +102,28 @@ namespace RedCapCloud.InputModules.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginPassword' at 139;25.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.LoginPage.LoginPassword.Click("139;25", 30);
-            Delay.Milliseconds(470);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.LoginPage.LoginPassword.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
-            Delay.Milliseconds(50);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.LoginPage.LoginPassword.PressKeys(Password);
-            Delay.Milliseconds(80);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.REDCapCloud.LoginPage.LoginPasswordInfo, "Value", Password);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginUsername' at Center.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.LoginPage.LoginUsername.Click(3);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
-            Keyboard.Press("{Tab}", 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.LoginPage.LoginUsername.PressKeys("{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(2));
+            repo.REDCapCloud.LoginPage.LoginUsername.PressKeys(Username, 1);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Username) on item 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.REDCapCloud.LoginPage.LoginUsernameInfo, "Value", Username);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(4));
+            repo.REDCapCloud.LoginPage.LoginUsername.PressKeys("{Tab}", 1);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginButton' at Center.", repo.REDCapCloud.LoginPage.LoginButtonInfo, new RecordItemIndex(5));
+            repo.REDCapCloud.LoginPage.LoginButton.Click(3);
             Delay.Milliseconds(0);
             
         }

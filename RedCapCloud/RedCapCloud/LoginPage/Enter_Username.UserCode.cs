@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.InputModules.LoginPage
+namespace RedCapCloud.LoginPage
 {
     public partial class Enter_Username
     {

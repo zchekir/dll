@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace PrecisionRecruitment.AddBatteryPage
+namespace RedCapCloud.LoginPage
 {
-    public partial class Enter_Healthy_BatteryPopulation
+    public partial class Enter_Password
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

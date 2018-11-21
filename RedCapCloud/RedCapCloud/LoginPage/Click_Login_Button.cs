@@ -20,43 +20,69 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.AddBatteryPage
+namespace RedCapCloud.LoginPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_Healthy_BatteryPopulation recording.
+    ///The Click_Login_Button recording.
     /// </summary>
-    [TestModule("bf386df6-7470-4bdb-a22c-c83c0cd68c78", ModuleType.Recording, 1)]
-    public partial class Enter_Healthy_BatteryPopulation : ITestModule
+    [TestModule("a8e2f938-460b-4a0b-bfb0-e72acab1ecce", ModuleType.Recording, 1)]
+    public partial class Click_Login_Button : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
+        /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
-        public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
+        public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Enter_Healthy_BatteryPopulation instance = new Enter_Healthy_BatteryPopulation();
+        static Click_Login_Button instance = new Click_Login_Button();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_Healthy_BatteryPopulation()
+        public Click_Login_Button()
         {
+            Password = "913172@RCC{LShiftKey up}{Return}";
+            username = "dwood@cogstate.com";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_Healthy_BatteryPopulation Instance
+        public static Click_Login_Button Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _Password;
+
+        /// <summary>
+        /// Gets or sets the value of variable Password.
+        /// </summary>
+        [TestVariable("8b602917-63e3-4ce4-b628-77e249e49ff4")]
+        public string Password
+        {
+            get { return _Password; }
+            set { _Password = value; }
+        }
+
+        string _username;
+
+        /// <summary>
+        /// Gets or sets the value of variable username.
+        /// </summary>
+        [TestVariable("25c52c99-a552-4a8e-8fd0-6594ddb75a8c")]
+        public string username
+        {
+            get { return _username; }
+            set { _username = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
         public string DOM
         {
             get { return repo.DOM; }
@@ -89,17 +115,13 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdown.Click(3);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginButton' at Center.", repo.REDCapCloud.LoginPage.LoginButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.LoginPage.LoginButton.Click(3);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Healthy' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdown.PressKeys("Healthy", 1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdown.PressKeys("{Return}", 1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.MyStudiesTitle'.", repo.REDCapCloud.MyStudiesTitleInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.REDCapCloud.MyStudiesTitleInfo);
+            Delay.Milliseconds(0);
             
         }
 

@@ -24,47 +24,35 @@ namespace PrecisionRecruitment.AddBatteryPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_Population_Options recording.
+    ///The Enter_BatteryPopulation recording.
     /// </summary>
-    [TestModule("5f3d6a76-0e05-4555-9e5e-da59aa9e4b68", ModuleType.Recording, 1)]
-    public partial class Validate_Population_Options : ITestModule
+    [TestModule("bf386df6-7470-4bdb-a22c-c83c0cd68c78", ModuleType.Recording, 1)]
+    public partial class Enter_BatteryPopulation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Validate_Population_Options instance = new Validate_Population_Options();
+        static Enter_BatteryPopulation instance = new Enter_BatteryPopulation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_Population_Options()
+        public Enter_BatteryPopulation()
         {
-            Population = "";
+            BatteryPopulation = "Alzheimer's Disease (Mild, MCI)";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_Population_Options Instance
+        public static Enter_BatteryPopulation Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Population;
-
-        /// <summary>
-        /// Gets or sets the value of variable Population.
-        /// </summary>
-        [TestVariable("af68b261-9d44-4b3d-b2fc-778a0c4e9ce0")]
-        public string Population
-        {
-            get { return _Population; }
-            set { _Population = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -79,7 +67,7 @@ namespace PrecisionRecruitment.AddBatteryPage
         /// <summary>
         /// Gets or sets the value of variable BatteryPopulation.
         /// </summary>
-        [TestVariable("85909bbe-70e5-408e-83e1-6c765b095ce9")]
+        [TestVariable("fb3172b3-264c-42ce-91d0-f2b18840d28f")]
         public string BatteryPopulation
         {
             get { return repo.BatteryPopulation; }
@@ -106,14 +94,14 @@ namespace PrecisionRecruitment.AddBatteryPage
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
-            Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Mouse.DefaultMoveTime = 100;
+            Keyboard.DefaultKeyPressTime = 10;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationOption'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationOptionInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationOptionInfo);
+            EnterBatteryPopulation(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationDropdownInfo, repo.CogstateSolutionPlatform.AddBatteryPage.BatteryPopulationOptionInfo);
+            Delay.Milliseconds(0);
             
         }
 
