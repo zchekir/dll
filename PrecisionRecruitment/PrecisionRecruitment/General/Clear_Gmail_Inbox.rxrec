@@ -29,6 +29,47 @@ rxversion="8.2">
 	<variables>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="StartPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="918d7854-bc3d-4288-99d1-6171d63bae49">
+				<argument
+				argname="findElement"
+				id="4baa0505-6b0a-4dd0-ab20-0c0a9f79caf8">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="3d7b4b67-f40b-469a-b928-1cc9a5e31836"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title='Leave site?']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="3665f1f1-c76f-4ede-8fc4-0b656edc416c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -323,6 +364,47 @@ IHf2NZ97YW0WkGeOPEnmsu7cem4j+lLpcDFrv8j3/KuAr0CgBNw9/wAqNw9/ypaKAE3D3/KjcPf8
 qWigD//Z
 			</helperscreenshot>
 		</mouseitem>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="StopPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e581d52c-0971-4d1d-881b-efaac6f34f73">
+				<argument
+				argname="findElement"
+				id="ea3e1b0f-154c-49bd-b48c-713e09f1cecf">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="3d7b4b67-f40b-469a-b928-1cc9a5e31836"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title='Leave site?']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="cc086bce-f17c-400c-8955-c4c906463755">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

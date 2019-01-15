@@ -366,9 +366,9 @@ AFn4UUXP+s/CikM//9k=
 		duration="100ms"
 		enabled="True"
 		loc="Center"
-		movetime="1ms"
+		movetime="100ms"
 		optional="False"
-		searchpropertyid="39e75e52-4c32-4be7-8241-68030f0311a5"
+		searchpropertyid="cd462828-5313-413d-9478-7610b28d6d3d"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -384,128 +384,38 @@ AFn4UUXP+s/CikM//9k=
 				</path>
 			</info>
 		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Select_Study"
 		enabled="True"
-		loc="Center"
-		movetime="3ms"
+		isexternaltestmethod="False"
+		methodname="Try_Click_StudyCardTitle"
+		namespace="PrecisionRecruitment.StudiesPage"
 		optional="False"
-		searchpropertyid="bf635287-9064-49db-b9e1-6e0ed0824962"
-		sx="-906"
-		sy="-813"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="c11fbc89-68c4-4531-9b50-5b53093b9636"
-			sourcename="Recorder">
-				<element
-				capabilities="webelement, ptag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="ptag"
-				rect="-945,-826,164,21"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						ng-binding study-title-nobreak
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Ranorex
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						p
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ng-bind"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-ng-click"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="ng-class"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain=$DOM]/body/div/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-list-cards']/div/?/?/tag[@tagname='cogstate-generic-study-card']/div/div/div[1]/p[@innertext='Ranorex']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="65c475f5-2969-4d18-b5ac-0391ad937734">
-				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
-2Q==
-			</helperscreenshot>
-		</mouseitem>
+			<arguments
+			id="78a976e1-f3b7-4543-9e9a-f9fa34f18102">
+				<argument
+				argname="StudyCardTitle"
+				id="22ca5c37-a1ea-4285-9589-db7085caede5">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="c11fbc89-68c4-4531-9b50-5b53093b9636"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext&gt;$ProjectName]
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeContains"
 		duration="100ms"

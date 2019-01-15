@@ -1216,6 +1216,78 @@
       <id>212ed259-6e6e-4977-acb6-fb8cf0cd58b3</id>
       <BoundTo>2a328a38-dba2-4ee5-bcf2-2ec16a1dba8d</BoundTo>
     </Compile>
+    <Compile Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.cs">
+      <DependentUpon>Clear_BatteryTemplate_Field.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4f53c915-aa91-4eb2-b967-5616b63389d7</id>
+      <BoundTo>c23f0090-dc4f-4ff0-8ff3-745cb38e72e0</BoundTo>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.UserCode.cs">
+      <DependentUpon>Clear_BatteryTemplate_Field.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>39fd6341-81b7-4cd1-acb1-fc596fcaf5c5</id>
+      <BoundTo>c23f0090-dc4f-4ff0-8ff3-745cb38e72e0</BoundTo>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_Add_BatteryTemplate.cs">
+      <BoundTo>36ae8b63-024e-4d47-a7ee-db0a56acb477</BoundTo>
+      <DependentUpon>Click_Add_BatteryTemplate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0262649b-ddf0-4dbb-8d61-63aad50d2410</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_Add_BatteryTemplate.UserCode.cs">
+      <BoundTo>36ae8b63-024e-4d47-a7ee-db0a56acb477</BoundTo>
+      <DependentUpon>Click_Add_BatteryTemplate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d466d529-3bad-43cc-b897-447e56ff2f0b</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_BatteryTemplateBuilder_Menu.cs">
+      <BoundTo>9c588fe9-0b11-4220-9fd0-d4509c90638d</BoundTo>
+      <DependentUpon>Click_BatteryTemplateBuilder_Menu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c27f92ba-5e1b-427d-9aab-797c29e0df99</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_BatteryTemplateBuilder_Menu.UserCode.cs">
+      <BoundTo>9c588fe9-0b11-4220-9fd0-d4509c90638d</BoundTo>
+      <DependentUpon>Click_BatteryTemplateBuilder_Menu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>171f9cfd-e999-4222-898c-cfd6fcb94ba5</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_BatteryTemplateStatus_Dropdown.cs">
+      <BoundTo>d5feac99-539b-444c-88c1-b54e2f2dad78</BoundTo>
+      <DependentUpon>Click_BatteryTemplateStatus_Dropdown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73895c15-20e1-49e8-b79e-881a81e77948</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_BatteryTemplateStatus_Dropdown.UserCode.cs">
+      <BoundTo>d5feac99-539b-444c-88c1-b54e2f2dad78</BoundTo>
+      <DependentUpon>Click_BatteryTemplateStatus_Dropdown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>107b6b25-5165-40ad-aeb3-a1b02185baac</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_Required_BatteryTemplateName.cs">
+      <BoundTo>24952bda-9c3e-4545-9416-5016cc59d64b</BoundTo>
+      <DependentUpon>Validate_Required_BatteryTemplateName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14a49178-613c-4264-8bb6-7d8ec0ac8bed</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_Required_BatteryTemplateName.UserCode.cs">
+      <BoundTo>24952bda-9c3e-4545-9416-5016cc59d64b</BoundTo>
+      <DependentUpon>Validate_Required_BatteryTemplateName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1af21978-36a0-4d1d-809c-fe5121b158c7</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_Required_BatteryTemplateStatus.cs">
+      <BoundTo>9f363d9b-a21c-458a-bd98-b519f118b9e1</BoundTo>
+      <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bc421f6c-224b-44e1-a891-61c3055c5c98</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_Required_BatteryTemplateStatus.UserCode.cs">
+      <BoundTo>9f363d9b-a21c-458a-bd98-b519f118b9e1</BoundTo>
+      <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>231d0bee-589d-4208-8742-0c5186bc0bb5</id>
+    </Compile>
     <Compile Include="ExtractsPage\Click_DownloadExtract_Button.cs">
       <BoundTo>4f4a5e80-6031-406a-aca2-bf906a5d93c7</BoundTo>
       <DependentUpon>Click_DownloadExtract_Button.rxrec</DependentUpon>
@@ -1371,6 +1443,18 @@
       <DependentUpon>Generate_Secret.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>05b4fade-2587-43a6-97ed-80bed7966ced</id>
+    </Compile>
+    <Compile Include="General\Get_Last_Email.cs">
+      <BoundTo>ea56a6ba-ac98-43c8-8fb1-a34e9611ad22</BoundTo>
+      <DependentUpon>Get_Last_Email.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d729bf51-83c4-4765-8531-5abc61c5fbd2</id>
+    </Compile>
+    <Compile Include="General\Get_Last_Email.UserCode.cs">
+      <BoundTo>ea56a6ba-ac98-43c8-8fb1-a34e9611ad22</BoundTo>
+      <DependentUpon>Get_Last_Email.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9651cf9a-a76b-4f42-8859-53f95155890d</id>
     </Compile>
     <Compile Include="General\Launch_AssessmentAttempt.cs">
       <DependentUpon>Launch_AssessmentAttempt.rxrec</DependentUpon>
@@ -2932,6 +3016,36 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>e57a54fc-47b7-46ef-bc2e-3f0bea0cb472</id>
     </Content>
+    <None Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c23f0090-dc4f-4ff0-8ff3-745cb38e72e0</id>
+      <recordtableid>53bddf86-df67-4ac4-8eb0-61030673d1dd</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Click_Add_BatteryTemplate.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>36ae8b63-024e-4d47-a7ee-db0a56acb477</id>
+      <recordtableid>18456bfe-1b2f-4d9a-adc6-97f3f74465f6</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Click_BatteryTemplateBuilder_Menu.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>9c588fe9-0b11-4220-9fd0-d4509c90638d</id>
+      <recordtableid>3fef07f2-793f-47c4-84d8-0c34e5864ec5</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Click_BatteryTemplateStatus_Dropdown.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>d5feac99-539b-444c-88c1-b54e2f2dad78</id>
+      <recordtableid>5400f2a0-757c-4beb-bafd-8b0c7e4f7a21</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Validate_Required_BatteryTemplateName.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>24952bda-9c3e-4545-9416-5016cc59d64b</id>
+      <recordtableid>51b83624-5963-4659-b473-8d8c70504f3a</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Validate_Required_BatteryTemplateStatus.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>9f363d9b-a21c-458a-bd98-b519f118b9e1</id>
+      <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
+    </None>
     <None Include="csv\40yo_Tier1.csv">
       <id>12929c40-22c9-4cf3-92f5-b9c034806609</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -3028,6 +3142,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>dd04ad51-ac11-4278-affd-b92f9c31a61d</id>
       <recordtableid>69cc12f0-25dd-4495-a0bc-9eef9bdec8bb</recordtableid>
+    </None>
+    <None Include="General\Get_Last_Email.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>ea56a6ba-ac98-43c8-8fb1-a34e9611ad22</id>
+      <recordtableid>292587d4-8a26-4ce3-b080-090fb0e2fbff</recordtableid>
     </None>
     <None Include="General\Launch_AssessmentAttempt.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
@@ -3569,6 +3688,9 @@
     <Folder Include="CustomReportTemplate">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>05bfde2f-8c9e-42b4-a28c-10db17e94407</id>
+    </Folder>
+    <Folder Include="BatteryTemplatePage">
+      <id>45b11ab7-dbbd-4831-9008-3fcc524172e0</id>
     </Folder>
     <Folder Include="ParticipantsPage">
       <id>eaf99ce1-d0ee-42ca-b3f5-df2b652d7516</id>

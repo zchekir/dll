@@ -32,6 +32,7 @@ namespace PrecisionRecruitment
         PrecisionRecruitmentRepositoryFolders.GoogleAccountAppFolder _googleaccount;
         PrecisionRecruitmentRepositoryFolders.GmailInboxAppFolder _gmailinbox;
         PrecisionRecruitmentRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
+        PrecisionRecruitmentRepositoryFolders.LeaveSitePopupAppFolder _leavesitepopup;
 
         /// <summary>
         /// Gets the singleton class instance representing the PrecisionRecruitmentRepository element repository.
@@ -53,6 +54,7 @@ namespace PrecisionRecruitment
             _googleaccount = new PrecisionRecruitmentRepositoryFolders.GoogleAccountAppFolder(this);
             _gmailinbox = new PrecisionRecruitmentRepositoryFolders.GmailInboxAppFolder(this);
             _cogstatesolutionplatformchrome = new PrecisionRecruitmentRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
+            _leavesitepopup = new PrecisionRecruitmentRepositoryFolders.LeaveSitePopupAppFolder(this);
         }
 
 #region Variables
@@ -213,7 +215,7 @@ namespace PrecisionRecruitment
             set { _GmailAddress = value; }
         }
 
-        string _BatteryPopulation = "Alzheimer's Disease (Mild, MCI)";
+        string _BatteryPopulation = "Healthy";
 
         /// <summary>
         /// Gets or sets the value of variable BatteryPopulation.
@@ -283,6 +285,15 @@ namespace PrecisionRecruitment
         {
             get { return _cogstatesolutionplatformchrome; }
         }
+
+        /// <summary>
+        /// The LeaveSitePopup folder.
+        /// </summary>
+        [RepositoryFolder("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
+        public virtual PrecisionRecruitmentRepositoryFolders.LeaveSitePopupAppFolder LeaveSitePopup
+        {
+            get { return _leavesitepopup; }
+        }
     }
 
     /// <summary>
@@ -298,6 +309,7 @@ namespace PrecisionRecruitment
         public partial class CogstateSolutionPlatformAppFolder : RepoGenBaseFolder
         {
             PrecisionRecruitmentRepositoryFolders.AddBatteryPageFolder _addbatterypage;
+            PrecisionRecruitmentRepositoryFolders.AddBatteryTemplatePageFolder _addbatterytemplatepage;
             PrecisionRecruitmentRepositoryFolders.AddWorkflowPageFolder _addworkflowpage;
             PrecisionRecruitmentRepositoryFolders.AddStudyPageFolder _addstudypage;
             PrecisionRecruitmentRepositoryFolders.AddVisitSchedulePageFolder _addvisitschedulepage;
@@ -335,6 +347,7 @@ namespace PrecisionRecruitment
                     base("CogstateSolutionPlatform", "/dom[@domain=$DOM]", parentFolder, 30000, null, false, "c7b5b0c3-5b0d-4f3f-b4ca-af1a10361467", "")
             {
                 _addbatterypage = new PrecisionRecruitmentRepositoryFolders.AddBatteryPageFolder(this);
+                _addbatterytemplatepage = new PrecisionRecruitmentRepositoryFolders.AddBatteryTemplatePageFolder(this);
                 _addworkflowpage = new PrecisionRecruitmentRepositoryFolders.AddWorkflowPageFolder(this);
                 _addstudypage = new PrecisionRecruitmentRepositoryFolders.AddStudyPageFolder(this);
                 _addvisitschedulepage = new PrecisionRecruitmentRepositoryFolders.AddVisitSchedulePageFolder(this);
@@ -616,6 +629,15 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
+            /// The AddBatteryTemplatePage folder.
+            /// </summary>
+            [RepositoryFolder("eb5eaff1-02d7-44c7-8631-69c760f0fb95")]
+            public virtual PrecisionRecruitmentRepositoryFolders.AddBatteryTemplatePageFolder AddBatteryTemplatePage
+            {
+                get { return _addbatterytemplatepage; }
+            }
+
+            /// <summary>
             /// The AddWorkflowPage folder.
             /// </summary>
             [RepositoryFolder("9ee03835-fe29-470b-8006-efe7f711d95a")]
@@ -830,7 +852,7 @@ namespace PrecisionRecruitment
                 _batterystatusdropdownInfo = new RepoItemInfo(this, "BatteryStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "764229ed-d1b6-4cfa-b17e-9a61fdbd7d9e");
                 _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']", 30000, null, "460ff0b4-1723-4c92-9813-cf9474fafefc");
                 _batterypopulationdropdownInfo = new RepoItemInfo(this, "BatteryPopulationDropdown", ".//select[@id~'formly_[0-9]+_select_indication_4']", 30000, null, "107c3512-95bb-4744-8616-4562277635c7");
-                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_5']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
+                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_4']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "9b34d25f-6823-4976-b188-249b5f79543c");
                 _populationrequiredvalidationInfo = new RepoItemInfo(this, "PopulationRequiredValidation", ".//div[@innertext~'Population is required']", 30000, null, "febf10c1-8a7c-4339-b47f-1699d47784c0");
                 _templaterequiredvalidationInfo = new RepoItemInfo(this, "TemplateRequiredValidation", ".//div[@innertext~'Template is required']", 30000, null, "8527d043-7b39-4fd4-9d39-1cb8b390c4ca");
@@ -1241,6 +1263,138 @@ namespace PrecisionRecruitment
         }
 
         /// <summary>
+        /// The AddBatteryTemplatePageFolder folder.
+        /// </summary>
+        [RepositoryFolder("eb5eaff1-02d7-44c7-8631-69c760f0fb95")]
+        public partial class AddBatteryTemplatePageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _batterytemplatenamefieldInfo;
+            RepoItemInfo _batterytemplatestatusdropdownInfo;
+            RepoItemInfo _statusrequiredvalidationInfo;
+            RepoItemInfo _namerequiredvalidationInfo;
+
+            /// <summary>
+            /// Creates a new AddBatteryTemplatePage  folder.
+            /// </summary>
+            public AddBatteryTemplatePageFolder(RepoGenBaseFolder parentFolder) :
+                    base("AddBatteryTemplatePage", "", parentFolder, 0, null, false, "eb5eaff1-02d7-44c7-8631-69c760f0fb95", "")
+            {
+                _batterytemplatenamefieldInfo = new RepoItemInfo(this, "BatteryTemplateNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "235f34cc-7b8c-4b58-94b6-c998ec0f780b");
+                _batterytemplatestatusdropdownInfo = new RepoItemInfo(this, "BatteryTemplateStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "edaf8b55-8aa5-4f04-bc93-12237fb6b754");
+                _statusrequiredvalidationInfo = new RepoItemInfo(this, "StatusRequiredValidation", ".//div[@innertext~'Status is required']", 30000, null, "58f26e92-263a-420b-98d0-cafd59c77eba");
+                _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "594a35b6-7e6b-4b5a-ba1a-00cc315257d2");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("eb5eaff1-02d7-44c7-8631-69c760f0fb95")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateNameField item.
+            /// </summary>
+            [RepositoryItem("235f34cc-7b8c-4b58-94b6-c998ec0f780b")]
+            public virtual Ranorex.InputTag BatteryTemplateNameField
+            {
+                get
+                {
+                    return _batterytemplatenamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateNameField item info.
+            /// </summary>
+            [RepositoryItemInfo("235f34cc-7b8c-4b58-94b6-c998ec0f780b")]
+            public virtual RepoItemInfo BatteryTemplateNameFieldInfo
+            {
+                get
+                {
+                    return _batterytemplatenamefieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateStatusDropdown item.
+            /// </summary>
+            [RepositoryItem("edaf8b55-8aa5-4f04-bc93-12237fb6b754")]
+            public virtual Ranorex.SelectTag BatteryTemplateStatusDropdown
+            {
+                get
+                {
+                    return _batterytemplatestatusdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateStatusDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("edaf8b55-8aa5-4f04-bc93-12237fb6b754")]
+            public virtual RepoItemInfo BatteryTemplateStatusDropdownInfo
+            {
+                get
+                {
+                    return _batterytemplatestatusdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StatusRequiredValidation item.
+            /// </summary>
+            [RepositoryItem("58f26e92-263a-420b-98d0-cafd59c77eba")]
+            public virtual Ranorex.DivTag StatusRequiredValidation
+            {
+                get
+                {
+                    return _statusrequiredvalidationInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StatusRequiredValidation item info.
+            /// </summary>
+            [RepositoryItemInfo("58f26e92-263a-420b-98d0-cafd59c77eba")]
+            public virtual RepoItemInfo StatusRequiredValidationInfo
+            {
+                get
+                {
+                    return _statusrequiredvalidationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NameRequiredValidation item.
+            /// </summary>
+            [RepositoryItem("594a35b6-7e6b-4b5a-ba1a-00cc315257d2")]
+            public virtual Ranorex.DivTag NameRequiredValidation
+            {
+                get
+                {
+                    return _namerequiredvalidationInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NameRequiredValidation item info.
+            /// </summary>
+            [RepositoryItemInfo("594a35b6-7e6b-4b5a-ba1a-00cc315257d2")]
+            public virtual RepoItemInfo NameRequiredValidationInfo
+            {
+                get
+                {
+                    return _namerequiredvalidationInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The AddWorkflowPageFolder folder.
         /// </summary>
         [RepositoryFolder("9ee03835-fe29-470b-8006-efe7f711d95a")]
@@ -1291,7 +1445,7 @@ namespace PrecisionRecruitment
                 _workflowtypedropdownInfo = new RepoItemInfo(this, "WorkflowTypeDropdown", ".//select[@id~'formly_[0-9]+_select_workflowType_2']", 30000, null, "32590909-4016-4990-9c5e-4dbef88365fd");
                 _workflowstatusdropdownInfo = new RepoItemInfo(this, "WorkflowStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_3']", 30000, null, "844d1291-7f90-41d3-a9bb-326c95d1fddc");
                 _workflowtemplatedropdownInfo = new RepoItemInfo(this, "WorkflowTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_workflowTemplate_4']", 30000, null, "ecf5466e-902e-409d-bd5b-5db8fe1c5e9a");
-                _simplebatterystepInfo = new RepoItemInfo(this, "SimpleBatteryStep", ".//tag[@tagname='cogstate-helper-workflow-reorder-card']//h4[@innertext='Simple battery']", 30000, null, "ab84a654-2ee6-45d9-836a-82508ebc2b4d");
+                _simplebatterystepInfo = new RepoItemInfo(this, "SimpleBatteryStep", ".//tag[@tagname='cogstate-helper-workflow-reorder-card']//h4[@innertext~'Simple [B|b]attery']", 30000, null, "ab84a654-2ee6-45d9-836a-82508ebc2b4d");
                 _propertiestabInfo = new RepoItemInfo(this, "PropertiesTab", ".//tag[@tagname='cogstate-helper-workflow-simple-edit']//ul/li/a[@innertext='Properties']", 30000, null, "b9e602e9-716f-4cac-95c1-2213bb8022fb");
                 _workflowblockpropertiessavebuttonInfo = new RepoItemInfo(this, "WorkflowBlockPropertiesSaveButton", ".//tag[@tagname='cogstate-helper-workflow-simple-edit']//form[@method='get']//button[@innertext>'SAVE' and @visible='True']", 30000, null, "39fff2d9-158d-41f9-ba1c-f1401d9ff28b");
                 _complexoutcomedecisiontier1stepInfo = new RepoItemInfo(this, "ComplexOutcomeDecisionTier1Step", ".//tag[@tagname='cogstate-helper-workflow-reorder-card']//h4[@innertext='Complex Outcome Decision Tier 1']", 30000, null, "7d8398ca-7b4a-48a5-abcc-5c74f0baf09e");
@@ -4683,6 +4837,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _studiesbreadcrumbInfo;
             RepoItemInfo _visitschedulenamebreadcrumbInfo;
             RepoItemInfo _participantbreadcrumbInfo;
+            RepoItemInfo _batterytemplatebreadcrumbInfo;
 
             /// <summary>
             /// Creates a new Breadcrumbs  folder.
@@ -4699,6 +4854,7 @@ namespace PrecisionRecruitment
                 _studiesbreadcrumbInfo = new RepoItemInfo(this, "StudiesBreadcrumb", ".//span[@innertext='Studies']", 30000, null, "f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f");
                 _visitschedulenamebreadcrumbInfo = new RepoItemInfo(this, "VisitScheduleNameBreadcrumb", ".//span[@innertext>$VisitScheduleName]", 30000, null, "8472a298-4084-43e9-bb47-4892db050f5a");
                 _participantbreadcrumbInfo = new RepoItemInfo(this, "ParticipantBreadcrumb", ".//span[@innertext~$ParticipantUserName]", 30000, null, "0836a7ec-3ff0-43eb-a4df-8f67f3324722");
+                _batterytemplatebreadcrumbInfo = new RepoItemInfo(this, "BatteryTemplateBreadcrumb", ".//span[@innertext='Battery Template Builder']", 30000, null, "faec4709-64f8-4408-a19a-8be5e93f98a7");
             }
 
             /// <summary>
@@ -4940,6 +5096,30 @@ namespace PrecisionRecruitment
                     return _participantbreadcrumbInfo;
                 }
             }
+
+            /// <summary>
+            /// The BatteryTemplateBreadcrumb item.
+            /// </summary>
+            [RepositoryItem("faec4709-64f8-4408-a19a-8be5e93f98a7")]
+            public virtual Ranorex.SpanTag BatteryTemplateBreadcrumb
+            {
+                get
+                {
+                    return _batterytemplatebreadcrumbInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateBreadcrumb item info.
+            /// </summary>
+            [RepositoryItemInfo("faec4709-64f8-4408-a19a-8be5e93f98a7")]
+            public virtual RepoItemInfo BatteryTemplateBreadcrumbInfo
+            {
+                get
+                {
+                    return _batterytemplatebreadcrumbInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -4953,6 +5133,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _administrationmenuoptionInfo;
             RepoItemInfo _externalusersmenuoptionInfo;
             RepoItemInfo _usersmenuoptionInfo;
+            RepoItemInfo _batterytemplatebuildermenuoptionInfo;
 
             /// <summary>
             /// Creates a new Menu  folder.
@@ -4965,6 +5146,7 @@ namespace PrecisionRecruitment
                 _administrationmenuoptionInfo = new RepoItemInfo(this, "AdministrationMenuOption", ".//div/?/?/label[@innertext='Administration']", 30000, null, "92b35c05-744e-4066-8b60-893431fe01e2");
                 _externalusersmenuoptionInfo = new RepoItemInfo(this, "ExternalUsersMenuOption", ".//div/div/div[2]//div/label[@innertext='External Users']", 30000, null, "d5b6200e-5205-4cf8-87b4-426d4f55db2b");
                 _usersmenuoptionInfo = new RepoItemInfo(this, "UsersMenuOption", ".//div/div/div[2]//div/label[@innertext='Users']", 30000, null, "7c60992c-f0db-4789-9789-0b7d2f9297a2");
+                _batterytemplatebuildermenuoptionInfo = new RepoItemInfo(this, "BatteryTemplateBuilderMenuOption", ".//div/div/div[2]//div/label[@innertext='Battery Template Builder']", 30000, null, "c6d0d5ff-7965-49b7-837f-57d9e104402c");
             }
 
             /// <summary>
@@ -5108,6 +5290,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _usersmenuoptionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateBuilderMenuOption item.
+            /// </summary>
+            [RepositoryItem("c6d0d5ff-7965-49b7-837f-57d9e104402c")]
+            public virtual Ranorex.LabelTag BatteryTemplateBuilderMenuOption
+            {
+                get
+                {
+                    return _batterytemplatebuildermenuoptionInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateBuilderMenuOption item info.
+            /// </summary>
+            [RepositoryItemInfo("c6d0d5ff-7965-49b7-837f-57d9e104402c")]
+            public virtual RepoItemInfo BatteryTemplateBuilderMenuOptionInfo
+            {
+                get
+                {
+                    return _batterytemplatebuildermenuoptionInfo;
                 }
             }
         }
@@ -5791,7 +5997,7 @@ namespace PrecisionRecruitment
                 _emailnextbuttonInfo = new RepoItemInfo(this, "EmailNextButton", ".//div[#'identifierNext']/?/?/span[@innertext='Next']", 30000, null, "ec53e776-3a8e-44d6-9208-a6e94f3ede4e");
                 _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//div[#'password']//input[@name='password']", 30000, null, "3d43d72b-f60e-45e9-9788-c3db8d1c5f02");
                 _passwordnextbuttonInfo = new RepoItemInfo(this, "PasswordNextButton", ".//div[#'passwordNext']//span[@innertext='Next']", 30000, null, "4001ae90-b375-4e97-8208-4553c98d2d13");
-                _ranorexuseraccountmultipleInfo = new RepoItemInfo(this, "RanorexUserAccountMultiple", ".//div[#'view_container']//p[@innertext~$GmailAddress]", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
+                _ranorexuseraccountmultipleInfo = new RepoItemInfo(this, "RanorexUserAccountMultiple", ".//div[#'view_container']//p[@innertext=$GmailAddress]", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
                 _ranorexuseraccountsingleInfo = new RepoItemInfo(this, "RanorexUserAccountSingle", ".//div[#'view_container']//div[@innertext~'([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$']", 30000, null, "26950d79-cb5d-46ca-bcdc-f2244b470f30");
             }
 
@@ -5995,6 +6201,8 @@ namespace PrecisionRecruitment
         public partial class GoogleAccountAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _gmailbuttonInfo;
+            RepoItemInfo _appsInfo;
+            RepoItemInfo _gmailappInfo;
 
             /// <summary>
             /// Creates a new GoogleAccount  folder.
@@ -6003,6 +6211,8 @@ namespace PrecisionRecruitment
                     base("GoogleAccount", "/dom[@domain='myaccount.google.com']", parentFolder, 30000, null, false, "12fb7791-6629-4ab4-8196-4d7f353baa8d", "")
             {
                 _gmailbuttonInfo = new RepoItemInfo(this, "GmailButton", ".//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/?/?/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/?/?/a[@href='https://mail.google.com/']", 30000, null, "678ca1e6-765a-44d1-81b0-32b66b4efaa7");
+                _appsInfo = new RepoItemInfo(this, "Apps", ".//div[#'gbwa']/?/?/a[@href~'^https://www\\.google\\.com\\.au']/?/?/tag[@tagname='path']", 30000, null, "0c6ccdc2-0b64-403b-9670-3413e2f3b7df");
+                _gmailappInfo = new RepoItemInfo(this, "GmailApp", ".//a[#'gb23']/span[1]", 30000, null, "6d71b4b8-e477-42d0-9820-cf0687335f12");
             }
 
             /// <summary>
@@ -6052,6 +6262,54 @@ namespace PrecisionRecruitment
                     return _gmailbuttonInfo;
                 }
             }
+
+            /// <summary>
+            /// The Apps item.
+            /// </summary>
+            [RepositoryItem("0c6ccdc2-0b64-403b-9670-3413e2f3b7df")]
+            public virtual Ranorex.WebElement Apps
+            {
+                get
+                {
+                    return _appsInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Apps item info.
+            /// </summary>
+            [RepositoryItemInfo("0c6ccdc2-0b64-403b-9670-3413e2f3b7df")]
+            public virtual RepoItemInfo AppsInfo
+            {
+                get
+                {
+                    return _appsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GmailApp item.
+            /// </summary>
+            [RepositoryItem("6d71b4b8-e477-42d0-9820-cf0687335f12")]
+            public virtual Ranorex.SpanTag GmailApp
+            {
+                get
+                {
+                    return _gmailappInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GmailApp item info.
+            /// </summary>
+            [RepositoryItemInfo("6d71b4b8-e477-42d0-9820-cf0687335f12")]
+            public virtual RepoItemInfo GmailAppInfo
+            {
+                get
+                {
+                    return _gmailappInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -6078,7 +6336,7 @@ namespace PrecisionRecruitment
             {
                 _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$Key]/../a[@innertext~$DOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
                 _signoutbuttonInfo = new RepoItemInfo(this, "SignOutButton", ".//a[@innertext~'Sign out']", 30000, null, "64e8a261-42d6-40a1-bd4b-b6dc572a70e2");
-                _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div/div/div/div/div/div[@visible='True']", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
+                _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div/div[1]/div/div[1]/div/div", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
                 _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[@id~':3[012345]']/?/?/span[@role='checkbox']", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
                 _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div", 30000, null, "0155202d-a183-4048-a7f7-aeb9677aa6fa");
                 _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span[@id>':3']/span[@innertext='Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");
@@ -6390,6 +6648,46 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _downloadedextractfileInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The LeaveSitePopupAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
+        public partial class LeaveSitePopupAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new LeaveSitePopup  folder.
+            /// </summary>
+            public LeaveSitePopupAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("LeaveSitePopup", "/form[@title='Leave site?']", parentFolder, 30000, null, true, "3d7b4b67-f40b-469a-b928-1cc9a5e31836", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

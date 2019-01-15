@@ -53,6 +53,15 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ActiveUp.Net.Common">
+      <HintPath>..\MailSystem.NET\Class Library\Bin\Debug\ActiveUp.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Imap4">
+      <HintPath>..\MailSystem.NET\Class Library\Bin\Debug\ActiveUp.Net.Imap4.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Mail">
+      <HintPath>..\MailSystem.NET\Class Library\Bin\Debug\ActiveUp.Net.Mail.dll</HintPath>
+    </Reference>
     <Reference Include="CsvHelper">
       <HintPath>packages\CsvHelper.7.1.1\lib\net45\CsvHelper.dll</HintPath>
     </Reference>
@@ -169,6 +178,9 @@
     </Compile>
     <Compile Include="Helpers\DropdownSelect.cs">
       <id>f4932d00-128d-4190-8be3-0f7ed1482d85</id>
+    </Compile>
+    <Compile Include="Helpers\MailRepository.cs">
+      <id>0971eaef-a790-4b01-aac9-0ad240e7063e</id>
     </Compile>
     <Compile Include="Helpers\SQLUtility.cs">
       <id>dd819e0d-50b8-48eb-8f54-8c0c56ffd03a</id>

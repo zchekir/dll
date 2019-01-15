@@ -79,23 +79,29 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.BackToInbox' at Center.", repo.GmailInbox.BackToInboxInfo, new RecordItemIndex(0));
+            //Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.LeaveSitePopup.SelfInfo, null);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.BackToInbox' at Center.", repo.GmailInbox.BackToInboxInfo, new RecordItemIndex(1));
             repo.GmailInbox.BackToInbox.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 250ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 250ms.", new RecordItemIndex(2));
             Delay.Duration(250, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SelectAllMessagesCheckbox' at Center.", repo.GmailInbox.SelectAllMessagesCheckboxInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SelectAllMessagesCheckbox' at Center.", repo.GmailInbox.SelectAllMessagesCheckboxInfo, new RecordItemIndex(3));
             repo.GmailInbox.SelectAllMessagesCheckbox.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 100ms.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 100ms.", new RecordItemIndex(4));
             Delay.Duration(100, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.DeleteButton' at Center.", repo.GmailInbox.DeleteButtonInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.DeleteButton' at Center.", repo.GmailInbox.DeleteButtonInfo, new RecordItemIndex(5));
             repo.GmailInbox.DeleteButton.Click("Center");
             Delay.Milliseconds(0);
+            
+            //Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.LeaveSitePopup.SelfInfo, null);
+            //Delay.Milliseconds(0);
             
         }
 

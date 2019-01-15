@@ -579,6 +579,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="525a1c80-5533-45e0-8ca7-e291cdf27439"
+			name="Validate_Required_BatteryTemplateStatus"
+			ref="080df293-98c0-462b-9cc8-0c147cc3a979"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="52f95a7c-4192-4ade-8a0e-3969c0839f36"
 			name="Enter_VisitScheduleDescription"
 			ref="b0fc156a-b35f-4ca9-bdd4-3691cd737b23"
@@ -715,6 +721,26 @@ rxversion="8.2">
 			ref="adf752ff-8ec5-4bba-bb82-88951eb8c498"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="9c54a5eb-7b39-4257-b4fc-3e0c99498fb4"
+			name="Validate_Required_BatteryTemplate_Fields">
+				<groupvariables>
+					<groupvariable
+					id="ae373e8c-01a2-491d-ad1f-a21c24a563b0"
+					name="DOM">
+						<modulevariable
+						moduleref="525a1c80-5533-45e0-8ca7-e291cdf27439"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="f087b530-7cc6-4267-b56c-de8947439629"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="9ddd69fd-4889-48c2-977e-37db30dde144"
 			name="Click_ResponseOptions_Checkbox"
@@ -1181,12 +1207,6 @@ rxversion="8.2">
 			ref="7da41efb-783e-4bc4-8d8d-ce6c02946097"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="e5717958-aa51-4488-9881-af8a8677f72b"
-			name="Enter_BatteryPopulation"
-			ref="bf386df6-7470-4bdb-a22c-c83c0cd68c78"
-			type="Recording">
-			</testmodule>
 			<modulegroupdef
 			id="e6b34be3-f05f-4b63-847b-3b7b2a72a2dd"
 			name="Validate_Min_Length_Study_Fields">
@@ -1325,6 +1345,12 @@ rxversion="8.2">
 			ref="94f6a855-301c-4931-b97a-68e17d5b6b05"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="f087b530-7cc6-4267-b56c-de8947439629"
+			name="Validate_Required_BatteryTemplateName"
+			ref="51b83624-5963-4659-b473-8d8c70504f3a"
+			type="Recording">
+			</testmodule>
 			<modulegroupdef
 			id="f31fb00f-c605-470b-8efe-eade2c533a24"
 			name="Add_Battery">
@@ -1354,11 +1380,6 @@ rxversion="8.2">
 						</modulevariable>
 						<modulevariable
 						moduleref="9ddd69fd-4889-48c2-977e-37db30dde144"
-						name="DOM"
-						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
-						</modulevariable>
-						<modulevariable
-						moduleref="e5717958-aa51-4488-9881-af8a8677f72b"
 						name="DOM"
 						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
 						</modulevariable>
@@ -1418,11 +1439,6 @@ rxversion="8.2">
 					<groupvariable
 					id="8a0d8952-00d3-427a-ab77-88be60021cf8"
 					name="BatteryPopulation">
-						<modulevariable
-						moduleref="e5717958-aa51-4488-9881-af8a8677f72b"
-						name="BatteryPopulation"
-						variableref="fb3172b3-264c-42ce-91d0-f2b18840d28f">
-						</modulevariable>
 					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
@@ -1619,10 +1635,6 @@ rxversion="8.2">
 					<testmodule
 					id="9ddd69fd-4889-48c2-977e-37db30dde144"
 					name="Click_ResponseOptions_Checkbox">
-					</testmodule>
-					<testmodule
-					id="e5717958-aa51-4488-9881-af8a8677f72b"
-					name="Enter_BatteryPopulation">
 					</testmodule>
 					<testmodule
 					id="d54a1553-b69f-4152-9b12-c6274ef47682"
@@ -1991,6 +2003,18 @@ rxversion="8.2">
 					<testmodule
 					id="d0638d6e-7aea-4945-9fc7-de696083c872"
 					name="Validate_Required_VisitScheduleName">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="9c54a5eb-7b39-4257-b4fc-3e0c99498fb4"
+				name="Validate_Required_BatteryTemplate_Fields">
+					<testmodule
+					id="525a1c80-5533-45e0-8ca7-e291cdf27439"
+					name="Validate_Required_BatteryTemplateStatus">
+					</testmodule>
+					<testmodule
+					id="f087b530-7cc6-4267-b56c-de8947439629"
+					name="Validate_Required_BatteryTemplateName">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>

@@ -46,5 +46,21 @@ namespace PrecisionRecruitment.StudiesPage
         	while (!SearchField.FindAdapter<InputTag>().Value.Contains(RandNum)); 	
         }
 
+        //If the study has been added recently through RCC, it may not yet be populated. This will continue to search for the study
+        //and click the study card title once it has been pushed to the CSP Database from the Hub
+        public void Try_Click_StudyCardTitle(RepoItemInfo StudyCardTitle)
+        {
+        	while (!StudyCardTitle.Exists(new Duration(5000)))
+        	{
+        		Report.Log(ReportLevel.Info, "Study does not exist yet, waiting 60 seconds before looking again");
+        		Delay.Duration(60000);
+        		repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
+        		Try_Enter_StudyName(repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo);
+        	}
+        	
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ptagInfo' at Center.", StudyCardTitle);
+            StudyCardTitle.FindAdapter<PTag>().Click(3);
+        }
+
     }
 }

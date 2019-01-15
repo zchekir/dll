@@ -128,6 +128,9 @@ rxversion="8.2">
 			maxrange="3"
 			minrange="3"
 			name="Minimum_VisitSchedule_Fields">
+				<description>
+					<![CDATA[<p>Use Default Project Name</p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="02dea19d-aa23-415c-96ec-2f8e810861bb"
@@ -579,21 +582,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="0dba5f32-8ee6-48a1-a938-ef91baa65412"
-			name="Open_Browser"
-			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="URL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
-					variablename="URL">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="0fc92b46-79ab-4c57-b253-1f0a53ab34aa"
 			name="Upload_RawData"
 			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
@@ -725,12 +713,6 @@ rxversion="8.2">
 			ref="0739dcfc-2397-4f24-93f3-0747bbf8fb91"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="df046de1-4611-4236-b51f-bc6cd8ae9a3c"
-					variablename="externalID">
-					</var>
 					<var
 					dataname="Authentication"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
@@ -904,6 +886,20 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
 					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="15ca5413-b8cd-4822-97ff-2f4fb7763c84"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1153,6 +1149,19 @@ rxversion="8.2">
 			ref="0d12c760-1f82-421e-b529-cda277d518a2"
 			type="UserCode">
 			</testmodule>
+			<modulegroup
+			id="1e1ef9c9-a30b-449f-a6a4-a6656310030b"
+			name="Validate_Required_BatteryTemplate_Fields"
+			ref="9c54a5eb-7b39-4257-b4fc-3e0c99498fb4">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="ae373e8c-01a2-491d-ad1f-a21c24a563b0"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="1f1ea207-7ad9-4ab3-aa67-2c8fd541f3c7"
 			name="Enter_Email"
@@ -1430,6 +1439,92 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="25f02544-d8d5-4b90-8965-a5017da93882"
+			name="EmailModule"
+			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="GmailAddress"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+					<var
+					dataname="Subject"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="SendPdfReportOnComplete"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2779dbf4-f9b5-4156-b494-a0b3f76bc5c1"
 			name="Select_Study"
 			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
@@ -1690,6 +1785,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="3258e0bd-3d1f-451c-8d5f-a26ae87fb26c"
+			name="Click_BatteryTemplateStatus_Dropdown"
+			ref="5400f2a0-757c-4beb-bafd-8b0c7e4f7a21"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="32efd557-8b11-493f-a541-9822a03e772d"
 			name="Extract_Participant_IQNumber"
 			ref="0de1ee83-e7e6-4ddd-8dbc-17f0eb0ca8ad"
@@ -1738,6 +1847,12 @@ rxversion="8.2">
 					datasourceid="7d44f1a3-d9a7-4c1b-baa6-7aff324b53b3"
 					variableid="af68b261-9d44-4b3d-b2fc-778a0c4e9ce0"
 					variablename="Population">
+					</var>
+					<var
+					dataname="BatteryPopulation"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="85909bbe-70e5-408e-83e1-6c765b095ce9"
+					variablename="BatteryPopulation">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2312,12 +2427,6 @@ rxversion="8.2">
 			ref="0739dcfc-2397-4f24-93f3-0747bbf8fb91"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="df046de1-4611-4236-b51f-bc6cd8ae9a3c"
-					variablename="externalID">
-					</var>
 					<var
 					dataname="Authentication"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
@@ -3110,6 +3219,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</modulegroup>
+			<setup
+			id="616eb3cc-0d65-4282-88a8-3e9a0950bc7c"
+			name="setup">
+			</setup>
 			<modulegroup
 			id="62aa4b4c-2b61-4222-a064-49012ef164c1"
 			name="Add_User"
@@ -3233,6 +3346,11 @@ rxversion="8.2">
 			datasource="Authentication"
 			id="63da0090-7679-4965-841c-fd2d007ff501"
 			name="User_Tests">
+			</smartfoldernode>
+			<smartfoldernode
+			datasource="Authentication"
+			id="646143b2-48fc-4666-a4d7-a7a58472e9a4"
+			name="Battery_Template_Builder_Tests">
 			</smartfoldernode>
 			<testmodule
 			id="64674ef9-a009-46c0-85c4-d866a8f3dbf9"
@@ -3836,6 +3954,31 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="7a164b9d-c47e-45b5-be0f-5861636ecf91"
+			name="Login"
+			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="7a639fdf-2536-437f-b497-b697e7f5ddbe"
 			name="Click_WorkflowType_Dropdown"
@@ -4199,32 +4342,6 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
-			<modulegroup
-			enabled="False"
-			id="80e91399-acc2-4da3-8b00-83ba78b94f76"
-			name="Login"
-			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="Email"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
-					dataname="Password"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testcase
 			datarangeactive="True"
 			datasource="DataConnector"
@@ -5031,6 +5148,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a2e67d03-a454-4c6a-b0b1-2a1f3afefbe5"
+			name="Click_Add_BatteryTemplate"
+			ref="18456bfe-1b2f-4d9a-adc6-97f3f74465f6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="a437ac95-dea6-4401-970a-7254c6ebd537"
 			name="teardown">
@@ -5380,6 +5511,24 @@ rxversion="8.2">
 					variableid="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="Key"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="35d6bff4-468a-4307-8386-b46e7e547dc9"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Secret"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
+					variablename="Secret">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
+					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
+					variablename="ProtocolNumber">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -5519,10 +5668,6 @@ rxversion="8.2">
 			id="b3898697-29d7-4b3d-a3a6-77f3a5b82b77"
 			name="Localities_Loop_Controller">
 			</smartfoldernode>
-			<setup
-			id="b3a62292-4d9c-47a3-b910-d00972c01cfe"
-			name="setup">
-			</setup>
 			<testmodule
 			id="b3a6d3c5-f14d-41ec-8f6c-3e1529cf015c"
 			name="Open_Browser"
@@ -5759,6 +5904,10 @@ rxversion="8.2">
 			id="baf76252-a794-4bae-b009-029b41fb4909"
 			name="Software_Version">
 			</testcase>
+			<teardown
+			id="bb772fc4-8aca-48e4-9108-c75e541306de"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="bba6c50a-ba7e-468b-a44e-cea118b6cc3c"
 			name="Click_WorkflowTemplate_Dropdown"
@@ -5877,6 +6026,7 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="bf2e7c69-d9f7-4e21-a917-fc9f3629ad2c"
 			name="Clear_Gmail_Inbox"
 			ref="46fd72b9-76a1-4e0f-a312-530d1c4995bb"
@@ -6595,6 +6745,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="de6e646e-bbf8-4f0d-a63f-8879a666b138"
+			name="Clear_BatteryTemplate_Field"
+			ref="53bddf86-df67-4ac4-8eb0-61030673d1dd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e005ab61-b47d-4926-9f02-55cc8bb549a6"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -7006,21 +7170,6 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			enabled="False"
-			id="ecb765ab-a833-43f3-b34f-b7fbbd5d50a5"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<setup
 			id="ecf8d6ff-9dde-4943-983d-0458cc225779"
 			name="setup">
@@ -7111,6 +7260,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="f0e68f50-650d-4316-bc59-bb9a0f083324"
+			name="Click_BatteryTemplateBuilder_Menu"
+			ref="3fef07f2-793f-47c4-84d8-0c34e5864ec5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="f15508c2-ebc6-4d31-aeab-26d48279b3ac"
 			name="Login"
@@ -7149,12 +7312,6 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="f19d7fdd-f605-41af-be95-7e0e59370809"
-			name="ReportToPDFModule"
-			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
-			type="UserCode">
 			</testmodule>
 			<testcase
 			errorbehavior="Stop"
@@ -7221,6 +7378,14 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="DataConnector"
+			id="f3164313-a457-4315-aa9b-02d26b83395b"
+			maxrange="0"
+			minrange="0"
+			name="Required_Battery_Template_Fields">
+			</testcase>
 			<testmodule
 			id="f384831c-fc57-46c3-906c-021f0ebca791"
 			name="Validate_Next_Page"
@@ -7252,6 +7417,20 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f4e5f6da-8c95-4b38-aa18-61c202c7517d"
+			name="Open_Browser"
+			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
+					variablename="URL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8565,6 +8744,54 @@ rxversion="8.2">
 						</testcase>
 					</smartfoldernode>
 					<smartfoldernode
+					id="646143b2-48fc-4666-a4d7-a7a58472e9a4"
+					name="Battery_Template_Builder_Tests">
+						<testcase
+						id="f3164313-a457-4315-aa9b-02d26b83395b"
+						name="Required_Battery_Template_Fields">
+							<setup
+							id="616eb3cc-0d65-4282-88a8-3e9a0950bc7c"
+							name="setup">
+								<testmodule
+								id="f4e5f6da-8c95-4b38-aa18-61c202c7517d"
+								name="Open_Browser">
+								</testmodule>
+								<modulegroup
+								id="7a164b9d-c47e-45b5-be0f-5861636ecf91"
+								name="Login">
+								</modulegroup>
+							</setup>
+							<testmodule
+							id="f0e68f50-650d-4316-bc59-bb9a0f083324"
+							name="Click_BatteryTemplateBuilder_Menu">
+							</testmodule>
+							<testmodule
+							id="a2e67d03-a454-4c6a-b0b1-2a1f3afefbe5"
+							name="Click_Add_BatteryTemplate">
+							</testmodule>
+							<testmodule
+							id="3258e0bd-3d1f-451c-8d5f-a26ae87fb26c"
+							name="Click_BatteryTemplateStatus_Dropdown">
+							</testmodule>
+							<testmodule
+							id="de6e646e-bbf8-4f0d-a63f-8879a666b138"
+							name="Clear_BatteryTemplate_Field">
+							</testmodule>
+							<modulegroup
+							id="1e1ef9c9-a30b-449f-a6a4-a6656310030b"
+							name="Validate_Required_BatteryTemplate_Fields">
+							</modulegroup>
+							<teardown
+							id="bb772fc4-8aca-48e4-9108-c75e541306de"
+							name="teardown">
+								<testmodule
+								id="15ca5413-b8cd-4822-97ff-2f4fb7763c84"
+								name="Close_Browser">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
 					id="f944f793-e516-4d2d-b68f-971da09a24fa"
 					name="Workflow_Tests">
 						<testcase
@@ -9505,26 +9732,10 @@ rxversion="8.2">
 								id="a260ad3e-5ca9-402f-9f62-2cc6d8186efa"
 								name="Extract_API_Key">
 								</testmodule>
-								<testmodule
-								id="ecb765ab-a833-43f3-b34f-b7fbbd5d50a5"
-								name="Close_Browser">
-								</testmodule>
 							</testcase>
 							<testcase
 							id="ba7d02db-83df-4a58-a877-7079c0c072d1"
 							name="Add_External_Role">
-								<setup
-								id="b3a62292-4d9c-47a3-b910-d00972c01cfe"
-								name="setup">
-									<testmodule
-									id="0dba5f32-8ee6-48a1-a938-ef91baa65412"
-									name="Open_Browser">
-									</testmodule>
-									<modulegroup
-									id="80e91399-acc2-4da3-8b00-83ba78b94f76"
-									name="Login">
-									</modulegroup>
-								</setup>
 								<modulegroup
 								id="8de3abae-f398-4095-8f6d-e6e046bb0a60"
 								name="Add_External_User_Role">
@@ -9799,8 +10010,8 @@ rxversion="8.2">
 						id="db488035-4e27-4b7f-8872-45c65c4d4925"
 						name="teardown">
 							<testmodule
-							id="f19d7fdd-f605-41af-be95-7e0e59370809"
-							name="ReportToPDFModule">
+							id="25f02544-d8d5-4b90-8965-a5017da93882"
+							name="EmailModule">
 							</testmodule>
 						</teardown>
 					</smartfoldernode>
@@ -9840,6 +10051,39 @@ rxversion="8.2">
 				</column>
 				<column>
 					Secret
+				</column>
+				<column>
+					Subject
+				</column>
+				<column>
+					Body
+				</column>
+				<column>
+					To
+				</column>
+				<column>
+					From
+				</column>
+				<column>
+					ServerHostname
+				</column>
+				<column>
+					ServerPort
+				</column>
+				<column>
+					UseSSL
+				</column>
+				<column>
+					SendEmailOnFailure
+				</column>
+				<column>
+					SendEmailOnSuccess
+				</column>
+				<column>
+					SendZippedReportOnComplete
+				</column>
+				<column>
+					SendPdfReportOnComplete
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

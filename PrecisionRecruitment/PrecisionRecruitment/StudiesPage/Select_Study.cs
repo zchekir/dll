@@ -136,12 +136,11 @@ namespace PrecisionRecruitment.StudiesPage
             Report.Log(ReportLevel.Info, "Section", "Continue on with Tests", new RecordItemIndex(6));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.MainToolbar.CardButtonInfo, new RecordItemIndex(7));
-            repo.CogstateSolutionPlatform.MainToolbar.CardButton.Click(1);
-            Delay.Milliseconds(90);
+            repo.CogstateSolutionPlatform.MainToolbar.CardButton.Click();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyCards.StudyCardTitle' at Center.", repo.CogstateSolutionPlatform.StudyCards.StudyCardTitleInfo, new RecordItemIndex(8));
-            repo.CogstateSolutionPlatform.StudyCards.StudyCardTitle.Click(3);
-            Delay.Milliseconds(490);
+            Try_Click_StudyCardTitle(repo.CogstateSolutionPlatform.StudyCards.StudyCardTitleInfo);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$ProjectName) on item 'CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo, new RecordItemIndex(9));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.StudyNameBreadcrumbInfo, "InnerText", ProjectName);

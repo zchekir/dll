@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="53bddf86-df67-4ac4-8eb0-61030673d1dd"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Clear_BatteryTemplate_Field
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Clear_BatteryTemplate_Field"
+	namespace="PrecisionRecruitment.BatteryTemplatePage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="8bf111b3-7c99-44bb-8a74-1db0feb20a02"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="235f34cc-7b8c-4b58-94b6-c998ec0f780b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_name_0']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}"
+		duration="10ms"
+		enabled="True"
+		optional="False"
+		presstime="1ms"
+		searchpropertyid="7cc37d4b-a649-4622-9811-fa910edb8d51">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="235f34cc-7b8c-4b58-94b6-c998ec0f780b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_name_0']
+				</path>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Clear_BatteryTemplate_Field.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

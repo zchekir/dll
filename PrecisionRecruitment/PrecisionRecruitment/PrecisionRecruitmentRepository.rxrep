@@ -80,7 +80,7 @@ rxversion="8.2">
 				name="BatteryTemplateDropdown"
 				refimgid="798a0a5e-4fda-4d3e-bef6-2fed1c37ec2f"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_5']
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_4']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -174,6 +174,49 @@ rxversion="8.2">
 			</folder>
 			<folder
 			capname="unknown"
+			id="eb5eaff1-02d7-44c7-8631-69c760f0fb95"
+			isrooted="False"
+			name="AddBatteryTemplatePage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="235f34cc-7b8c-4b58-94b6-c998ec0f780b"
+				name="BatteryTemplateNameField"
+				refimgid="248ac9bf-0037-4f10-8792-f5029c698881"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_name_0']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="edaf8b55-8aa5-4f04-bc93-12237fb6b754"
+				name="BatteryTemplateStatusDropdown"
+				refimgid="52344d9f-5c8c-4821-9c34-80fabfd2760e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_status_2']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="58f26e92-263a-420b-98d0-cafd59c77eba"
+				name="StatusRequiredValidation"
+				refimgid="c001d7d6-6ac3-4815-9ffa-de77581ca942"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[@innertext~'Status is required']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="594a35b6-7e6b-4b5a-ba1a-00cc315257d2"
+				name="NameRequiredValidation"
+				refimgid="b99e073f-835a-47b4-b6e4-96dcc3e2af1e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[@innertext~'Name is required']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
 			id="9ee03835-fe29-470b-8006-efe7f711d95a"
 			isrooted="False"
 			name="AddWorkflowPage"
@@ -230,7 +273,7 @@ rxversion="8.2">
 				name="SimpleBatteryStep"
 				refimgid="de5d7b5f-f2a1-49dc-838d-507d3f54ab42"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//tag[@tagname='cogstate-helper-workflow-reorder-card']//h4[@innertext='Simple battery']
+					/dom[@domain=$DOM]//tag[@tagname='cogstate-helper-workflow-reorder-card']//h4[@innertext~'Simple [B|b]attery']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -1412,6 +1455,15 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext~$ParticipantUserName]
 				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="faec4709-64f8-4408-a19a-8be5e93f98a7"
+				name="BatteryTemplateBreadcrumb"
+				refimgid="781feb58-5e08-4b77-87f5-b21d4b13e1a0"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext='Battery Template Builder']
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']
 				</basepath>
@@ -1467,6 +1519,15 @@ rxversion="8.2">
 				refimgid="48ae5840-eba3-4678-bcf1-45baf2fc91b1"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div//div/div/div[2]//div/label[@innertext='Users']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="c6d0d5ff-7965-49b7-837f-57d9e104402c"
+				name="BatteryTemplateBuilderMenuOption"
+				refimgid="5864300f-b17b-4a03-8146-83cd52698927"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div//div/div/div[2]//div/label[@innertext='Battery Template Builder']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[4]/tag/div/div
@@ -1854,7 +1915,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="RanorexUserAccountMultiple"
 			refimgid="59d5130b-8512-45c9-a1ef-7c1d7581d3ac"
 			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext~$GmailAddress]
+				/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext=$GmailAddress]
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -1902,6 +1963,26 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refpath="/dom[@domain='myaccount.google.com']//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/div[2]/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/div[2]/a[@href='https://mail.google.com/']"
 			searchtimeout="30000ms">
 				/dom[@domain='myaccount.google.com']//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/?/?/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/?/?/a[@href='https://mail.google.com/']
+			</item>
+			<item
+			addcaps="unknown,webelement"
+			capname="webelement"
+			id="0c6ccdc2-0b64-403b-9670-3413e2f3b7df"
+			name="Apps"
+			refimgid="a83767fd-32d3-499d-b7c4-4a3def83f703"
+			refpath="/dom[@domain='myaccount.google.com']//div[#'gbwa']/div/a/tag/tag[@tagname='path']"
+			searchtimeout="30000ms">
+				/dom[@domain='myaccount.google.com']//div[#'gbwa']/?/?/a[@href~'^https://www\.google\.com\.au']/?/?/tag[@tagname='path']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="6d71b4b8-e477-42d0-9820-cf0687335f12"
+			name="GmailApp"
+			refimgid="fcfc54f9-6439-43e9-aadd-e09aea6772a2"
+			refpath="/dom[@domain='myaccount.google.com']//a[#'gb23']/span[1]"
+			searchtimeout="30000ms">
+				/dom[@domain='myaccount.google.com']//a[#'gb23']/span[1]
 			</item>
 			<basepath>
 				/dom[@domain='myaccount.google.com']
@@ -1956,7 +2037,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="BackToInbox"
 			refimgid="206e99b7-7333-425e-b16a-bcf9b43cf7d0"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div[#':5']/div/div/div/div/div/div[@visible='True']
+				/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div/div[1]/div/div
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -2067,6 +2148,35 @@ RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
 AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="3d7b4b67-f40b-469a-b928-1cc9a5e31836"
+		isrooted="True"
+		name="LeaveSitePopup"
+		refimgid="83a9365b-ab48-48fa-982d-19c401675269"
+		refpath="/form[@title='Leave site?']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title='Leave site?']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -2134,7 +2244,7 @@ AAAASUVORK5CYII=
 		<var
 		id="85909bbe-70e5-408e-83e1-6c765b095ce9"
 		name="BatteryPopulation">
-			Alzheimer's Disease (Mild, MCI)
+			Healthy
 		</var>
 	</variables>
 </repository>

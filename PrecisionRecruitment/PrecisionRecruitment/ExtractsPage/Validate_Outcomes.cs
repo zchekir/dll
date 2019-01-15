@@ -44,7 +44,6 @@ namespace PrecisionRecruitment.ExtractsPage
             dbUsername = "";
             dbPassword = "";
             fileName = "";
-            externalID = "";
             DBServer = "";
             Database = "";
             Authentication = "";
@@ -94,18 +93,6 @@ namespace PrecisionRecruitment.ExtractsPage
         {
             get { return _fileName; }
             set { _fileName = value; }
-        }
-
-        string _externalID;
-
-        /// <summary>
-        /// Gets or sets the value of variable externalID.
-        /// </summary>
-        [TestVariable("df046de1-4611-4236-b51f-bc6cd8ae9a3c")]
-        public string externalID
-        {
-            get { return _externalID; }
-            set { _externalID = value; }
         }
 
         string _DBServer;
