@@ -53,6 +53,16 @@ namespace RedCapCloud.NavigationModules.EventDefPage
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,14 @@ namespace RedCapCloud.NavigationModules.EventDefPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.DemographicsCRF' at 39;7.", repo.REDCapCloud.EventDefinitionPage.DemographicsCRFInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.EventDefinitionPage.DemographicsCRF.Click("39;7");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.CRFSaveAndExit' at 28;5.", repo.REDCapCloud.EventDefinitionPage.CRFSaveAndExitInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.EventDefinitionPage.CRFSaveAndExit.Click("28;5");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

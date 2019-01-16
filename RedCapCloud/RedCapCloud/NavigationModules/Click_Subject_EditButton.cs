@@ -89,8 +89,8 @@ namespace RedCapCloud.NavigationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersPage.SubjectEdit' at Center.", repo.REDCapCloud.ParametersPage.SubjectEditInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.ParametersPage.SubjectEdit.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersPage.SubjectParameterEdit' at Center.", repo.REDCapCloud.ParametersPage.SubjectParameterEditInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.ParametersPage.SubjectParameterEdit.Click(1);
             Delay.Milliseconds(0);
             
         }

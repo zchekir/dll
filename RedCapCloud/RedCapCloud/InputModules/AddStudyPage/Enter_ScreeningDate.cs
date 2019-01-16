@@ -90,18 +90,18 @@ namespace RedCapCloud.InputModules.AddStudyPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddStudyPage.ScreeningStartDate' at 90;10.", repo.REDCapCloud.AddStudyPage.ScreeningStartDateInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddStudyPage.ScreeningStartDate.Click("90;10");
+            repo.REDCapCloud.AddStudyPage.ScreeningStartDate.Click("90;10", 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.AddStudyPage.ScreeningStartDate'.", repo.REDCapCloud.AddStudyPage.ScreeningStartDateInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddStudyPage.ScreeningStartDate.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 100);
+            repo.REDCapCloud.AddStudyPage.ScreeningStartDate.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
             Delay.Milliseconds(0);
             
             EnterDate();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(3));
-            Keyboard.Press("{Return}", 100);
+            Keyboard.Press("{Return}", 1);
             Delay.Milliseconds(0);
             
         }

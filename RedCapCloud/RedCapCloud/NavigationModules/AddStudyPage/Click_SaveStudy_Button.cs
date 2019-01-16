@@ -90,7 +90,7 @@ namespace RedCapCloud.NavigationModules.AddStudyPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddStudyPage.SaveButton' at Center.", repo.REDCapCloud.AddStudyPage.SaveButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddStudyPage.SaveButton.Click(300);
+            repo.REDCapCloud.AddStudyPage.SaveButton.Click(3);
             Delay.Milliseconds(0);
             
         }

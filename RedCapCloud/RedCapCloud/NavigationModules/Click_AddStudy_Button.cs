@@ -90,7 +90,7 @@ namespace RedCapCloud.NavigationModules
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddStudyButton' at Center.", repo.REDCapCloud.AddStudyButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddStudyButton.Click();
+            repo.REDCapCloud.AddStudyButton.Click(1);
             Delay.Milliseconds(0);
             
         }

@@ -101,6 +101,9 @@ namespace RedCapCloud.InputModules.SubjectsPage
             repo.REDCapCloud.SaveAndExit.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(3));
+            Delay.Duration(1500, false);
+            
         }
 
 #region Image Feature Data

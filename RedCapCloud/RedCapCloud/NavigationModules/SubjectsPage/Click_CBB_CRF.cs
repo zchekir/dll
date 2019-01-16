@@ -53,6 +53,16 @@ namespace RedCapCloud.NavigationModules.SubjectsPage
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,14 @@ namespace RedCapCloud.NavigationModules.SubjectsPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CBBCRF' at Center.", repo.REDCapCloud.SubjectsPage.CBBCRFInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.SubjectsPage.CBBCRF.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery CRF - CBB') on item 'REDCapCloud.CogstateBatteryCRFCBB'.", repo.REDCapCloud.CogstateBatteryCRFCBBInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.REDCapCloud.CogstateBatteryCRFCBBInfo, "InnerText", "Cogstate Battery CRF - CBB");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

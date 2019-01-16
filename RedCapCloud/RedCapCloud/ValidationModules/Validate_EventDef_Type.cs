@@ -89,9 +89,9 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='Scheduled') on item 'REDCapCloud.EventDefinitionPage.EventDefType'.", repo.REDCapCloud.EventDefinitionPage.EventDefTypeInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.EventDefTypeInfo, "Value", "Scheduled");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='Scheduled') on item 'REDCapCloud.EventDefinitionPage.EventDefTypeField'.", repo.REDCapCloud.EventDefinitionPage.EventDefTypeFieldInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.EventDefTypeFieldInfo, "Value", "Scheduled");
+            Delay.Milliseconds(0);
             
         }
 

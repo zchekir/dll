@@ -114,11 +114,11 @@ namespace RedCapCloud.InputModules.AddStudyPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddStudyPage.SponsorField' at Center.", repo.REDCapCloud.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddStudyPage.SponsorField.Click(300);
+            repo.REDCapCloud.AddStudyPage.SponsorField.Click(3);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Sponsor' with focus on 'REDCapCloud.AddStudyPage.SponsorField'.", repo.REDCapCloud.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddStudyPage.SponsorField.PressKeys(Sponsor, 100);
+            repo.REDCapCloud.AddStudyPage.SponsorField.PressKeys(Sponsor, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Sponsor) on item 'REDCapCloud.AddStudyPage.SponsorField'.", repo.REDCapCloud.AddStudyPage.SponsorFieldInfo, new RecordItemIndex(2));

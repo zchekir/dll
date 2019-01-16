@@ -90,11 +90,11 @@ namespace RedCapCloud.InputModules.AddStudyPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddStudyPage.StudyCategoryField' at Center.", repo.REDCapCloud.AddStudyPage.StudyCategoryFieldInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddStudyPage.StudyCategoryField.Click(300);
+            repo.REDCapCloud.AddStudyPage.StudyCategoryField.Click(3);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddStudyPage.ClassicDatabaseOption' at Center.", repo.REDCapCloud.AddStudyPage.ClassicDatabaseOptionInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddStudyPage.ClassicDatabaseOption.Click(300);
+            repo.REDCapCloud.AddStudyPage.ClassicDatabaseOption.Click(3);
             Delay.Milliseconds(0);
             
         }

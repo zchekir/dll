@@ -100,7 +100,7 @@ namespace RedCapCloud.NavigationModules
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.StudiesTable.StudyName' at Center.", repo.REDCapCloud.StudiesTable.StudyNameInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.StudiesTable.StudyName.Click();
+            repo.REDCapCloud.StudiesTable.StudyName.Click(1);
             Delay.Milliseconds(0);
             
         }

@@ -89,8 +89,8 @@ namespace RedCapCloud.NavigationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.SaveAndExit' at Center.", repo.REDCapCloud.EventDefinitionPage.SaveAndExitInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.EventDefinitionPage.SaveAndExit.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.SaveAndExitButton' at Center.", repo.REDCapCloud.EventDefinitionPage.SaveAndExitButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.EventDefinitionPage.SaveAndExitButton.Click(1);
             Delay.Milliseconds(0);
             
         }

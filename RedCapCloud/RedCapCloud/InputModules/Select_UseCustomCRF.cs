@@ -90,7 +90,7 @@ namespace RedCapCloud.InputModules
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersPage.UseCustomCRFEnroll' at Center.", repo.REDCapCloud.ParametersPage.UseCustomCRFEnrollInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.ParametersPage.UseCustomCRFEnroll.Click();
+            repo.REDCapCloud.ParametersPage.UseCustomCRFEnroll.Click(1);
             Delay.Milliseconds(0);
             
         }

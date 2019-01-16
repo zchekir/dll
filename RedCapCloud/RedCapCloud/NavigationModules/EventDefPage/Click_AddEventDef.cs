@@ -90,7 +90,7 @@ namespace RedCapCloud.NavigationModules.EventDefPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.AddButton' at Center.", repo.REDCapCloud.EventDefinitionPage.AddButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.EventDefinitionPage.AddButton.Click();
+            repo.REDCapCloud.EventDefinitionPage.AddButton.Click(1);
             Delay.Milliseconds(0);
             
         }

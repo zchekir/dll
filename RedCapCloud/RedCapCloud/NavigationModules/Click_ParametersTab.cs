@@ -90,7 +90,7 @@ namespace RedCapCloud.NavigationModules
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersTab' at Center.", repo.REDCapCloud.ParametersTabInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.ParametersTab.Click();
+            repo.REDCapCloud.ParametersTab.Click(1);
             Delay.Milliseconds(0);
             
         }

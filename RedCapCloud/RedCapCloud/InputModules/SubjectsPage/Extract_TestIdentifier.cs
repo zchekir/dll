@@ -41,6 +41,7 @@ namespace RedCapCloud.InputModules.SubjectsPage
         /// </summary>
         public Extract_TestIdentifier()
         {
+            TestIdentifier = "";
         }
 
         /// <summary>
@@ -52,6 +53,28 @@ namespace RedCapCloud.InputModules.SubjectsPage
         }
 
 #region Variables
+
+        string _TestIdentifier;
+
+        /// <summary>
+        /// Gets or sets the value of variable TestIdentifier.
+        /// </summary>
+        [TestVariable("a2c7a9a9-7003-4d84-ad01-cd961be9e65f")]
+        public string TestIdentifier
+        {
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
 
 #endregion
 
@@ -79,6 +102,12 @@ namespace RedCapCloud.InputModules.SubjectsPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'REDCapCloud.SitesTable.TestIdentifier' and assigning its value to variable 'TestIdentifier'.", repo.REDCapCloud.SitesTable.TestIdentifierInfo, new RecordItemIndex(0));
+            TestIdentifier = repo.REDCapCloud.SitesTable.TestIdentifier.Element.GetAttributeValueText("InnerText");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(1));
+            
         }
 
 #region Image Feature Data

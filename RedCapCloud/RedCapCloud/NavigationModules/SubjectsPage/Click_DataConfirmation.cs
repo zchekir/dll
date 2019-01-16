@@ -53,6 +53,16 @@ namespace RedCapCloud.NavigationModules.SubjectsPage
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,14 @@ namespace RedCapCloud.NavigationModules.SubjectsPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.DataConfirmationCRF' at Center.", repo.REDCapCloud.SubjectsPage.DataConfirmationCRFInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.SubjectsPage.DataConfirmationCRF.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery Data Confirmation') on item 'REDCapCloud.CogstateBatteryDataConfirmation'.", repo.REDCapCloud.CogstateBatteryDataConfirmationInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.REDCapCloud.CogstateBatteryDataConfirmationInfo, "InnerText", "Cogstate Battery Data Confirmation");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

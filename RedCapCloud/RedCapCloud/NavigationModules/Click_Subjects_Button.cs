@@ -89,12 +89,12 @@ namespace RedCapCloud.NavigationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(0));
-            Delay.Duration(1500, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsButton' at Center.", repo.REDCapCloud.SubjectsButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsButton' at Center.", repo.REDCapCloud.SubjectsButtonInfo, new RecordItemIndex(0));
             repo.REDCapCloud.SubjectsButton.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(1));
+            Delay.Duration(1500, false);
             
         }
 

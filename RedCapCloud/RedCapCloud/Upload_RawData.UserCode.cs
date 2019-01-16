@@ -44,6 +44,7 @@ namespace RedCapCloud
         	
         	//Add raw data into the textbox on the battery runner page
         	Report.Log(ReportLevel.Info, "Searching for raw data text field");
+        	repo.REDCapCloud.iFrame.ResultsInfo.WaitForExists(new Duration(30000));
         	repo.REDCapCloud.iFrame.Results.Element.SetAttributeValue("InnerText", data);
         }
 

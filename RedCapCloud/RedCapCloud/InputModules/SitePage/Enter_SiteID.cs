@@ -101,15 +101,15 @@ namespace RedCapCloud.InputModules.SitePage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.StudySiteSiteId' at Center.", repo.REDCapCloud.AddSitePage.StudySiteSiteIdInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddSitePage.StudySiteSiteId.Click();
+            repo.REDCapCloud.AddSitePage.StudySiteSiteId.Click(1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.AddSitePage.StudySiteSiteId'.", repo.REDCapCloud.AddSitePage.StudySiteSiteIdInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddSitePage.StudySiteSiteId.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 100);
+            repo.REDCapCloud.AddSitePage.StudySiteSiteId.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'REDCapCloud.AddSitePage.StudySiteSiteId'.", repo.REDCapCloud.AddSitePage.StudySiteSiteIdInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.AddSitePage.StudySiteSiteId.PressKeys(RandNum, 100);
+            repo.REDCapCloud.AddSitePage.StudySiteSiteId.PressKeys(RandNum, 1);
             Delay.Milliseconds(10);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$RandNum) on item 'REDCapCloud.AddSitePage.StudySiteSiteId'.", repo.REDCapCloud.AddSitePage.StudySiteSiteIdInfo, new RecordItemIndex(3));

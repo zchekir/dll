@@ -90,8 +90,11 @@ namespace RedCapCloud.NavigationModules
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionsTab' at Center.", repo.REDCapCloud.EventDefinitionsTabInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.EventDefinitionsTab.Click();
+            repo.REDCapCloud.EventDefinitionsTab.Click(1);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
             
         }
 

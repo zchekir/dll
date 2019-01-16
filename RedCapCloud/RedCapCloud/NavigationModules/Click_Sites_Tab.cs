@@ -90,7 +90,7 @@ namespace RedCapCloud.NavigationModules
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SitesTab' at Center.", repo.REDCapCloud.SitesTabInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.SitesTab.Click();
+            repo.REDCapCloud.SitesTab.Click(1);
             Delay.Milliseconds(0);
             
         }

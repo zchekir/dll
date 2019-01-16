@@ -90,7 +90,7 @@ namespace RedCapCloud
 
             Init();
 
-            engine.Helpers.CSVUtility.ReadIntoDataTable(FileName);
+            engine.Helpers.CSVUtility.ReadCSVIntoDataTable(FileName);
             Delay.Milliseconds(0);
             
         }

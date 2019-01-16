@@ -101,11 +101,11 @@ namespace RedCapCloud.ValidationModules
 
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.EventDefTable.EventDefName'.", repo.REDCapCloud.EventDefTable.EventDefNameInfo, new RecordItemIndex(0));
             Validate.Exists(repo.REDCapCloud.EventDefTable.EventDefNameInfo);
-            Delay.Milliseconds(100);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.EventDefTable.Type'.", repo.REDCapCloud.EventDefTable.TypeInfo, new RecordItemIndex(1));
             Validate.Exists(repo.REDCapCloud.EventDefTable.TypeInfo);
-            Delay.Milliseconds(100);
+            Delay.Milliseconds(0);
             
         }
 

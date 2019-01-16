@@ -197,9 +197,8 @@ rxversion="8.2">
 				id="168ba541-4373-4899-83ce-94707783cd10"
 				name="CogstateSite"
 				refimgid="d415b946-b316-4fea-bd5a-0b6c22168499"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[1]/td[1]/div[@innertext='Cogstate']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]/div/div/div/div/div/div/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[1]/div[@innertext='Cogstate']
+					/dom[@domain=$DOM]//body//table/tbody/tr/td/div[@innertext='Cogstate']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -222,11 +221,10 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="473a5bdb-586a-4a5c-b7e6-dfd61b27f6c9"
-				name="SubjectEdit"
+				name="SubjectParameterEdit"
 				refimgid="6ceecd15-29f7-49dc-89c1-12fda4154275"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/table/tbody/tr[1]/td/div/div[2]/div[@innertext='Edit']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/table/tbody/tr[1]/td/div/div[2]/div[@innertext='Edit']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr//div[@innertext='Subject Parameters']/../div/..//div[@innertext='Edit']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -240,13 +238,12 @@ rxversion="8.2">
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
-				capname="buttontag"
+				capname="spantag"
 				id="e71a05dc-1d57-4bc9-9de2-aaa94dc1b3b6"
-				name="SubjectSaveButton"
+				name="SubjectParameterSaveButton"
 				refimgid="25f8b6d8-62c5-4650-b699-af3e9cb86bd5"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/table/tbody/tr[1]/td/div/div[2]/button[1]"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/table/tbody/tr[1]/td/div/div[2]/button[1]
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr//div[@innertext='Subject Parameters']/../div/..//button//span[@innertext='Save']
 				</item>
 			</folder>
 			<folder
@@ -269,7 +266,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="309681d3-95c9-41cb-b6e1-dc20be608c43"
-				name="EventDefName"
+				name="EventDefNameField"
 				refimgid="db0a7859-e8be-49eb-8f68-af67e9525c62"
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'eventDef_name']"
 				searchtimeout="30000ms">
@@ -279,7 +276,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="216bff81-9c4c-435e-b968-f7f8dffd00fa"
-				name="EventDefType"
+				name="EventDefTypeField"
 				refimgid="9d796e20-a1c2-4084-82bf-c67d47b2dca5"
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'eventDef_type_input']"
 				searchtimeout="30000ms">
@@ -299,7 +296,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="126c1d40-169d-4623-b9a2-ffd481d9c843"
-				name="SaveAndExit"
+				name="SaveAndExitButton"
 				refimgid="0c0a4fe1-9516-4d0e-9d84-03991eb76493"
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']"
 				searchtimeout="30000ms">
@@ -311,9 +308,17 @@ rxversion="8.2">
 				id="440194f9-f6bc-4d7a-ba0d-7fb10a108ddc"
 				name="AddCRFButton"
 				refimgid="dfcf3396-71f6-400b-a76a-9b51b29e08f8"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/table/tbody/tr/td[2]/table/tbody/tr/td/div/table/tbody/tr/td[2]/div[@innertext='Add']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/?/?/tr/td[2]/table//div/table/tbody/tr/td[2]/div[@innertext='Add']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//div/table/tbody/tr/td/div[@innertext='Add']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="baf502ff-6c82-4cd5-8b0a-7d22f16fd8af"
+				name="DemographicsCRF"
+				refimgid="f1837846-c14c-40c3-82b8-3aa1d1ffe672"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//table/tbody/tr/td[1]/div[@innertext='Demographics']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -321,9 +326,8 @@ rxversion="8.2">
 				id="e69b6376-6c03-4f09-accd-3407d188329e"
 				name="BeginCogstateBatteryCRF"
 				refimgid="27797c69-e173-496f-975f-7dd1694ec194"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[1]/td[1]/div[@innertext='Begin Cogstate Battery']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[1]/div[@innertext='Begin Cogstate Battery']
+					/dom[@domain=$DOM]/body//table/tbody/tr/td[1]/div[@innertext='Begin Cogstate Battery']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -331,9 +335,8 @@ rxversion="8.2">
 				id="3ee70fbd-6c84-4b65-b121-e63ceedc0331"
 				name="CogstateBatteryCommentsCRF"
 				refimgid="eddb1bd4-597c-462f-bccb-8df35640a274"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[2]/td[1]/div[@innertext='Cogstate Battery Comments']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[2]/td[1]/div[@innertext='Cogstate Battery Comments']
+					/dom[@domain=$DOM]/body//table/tbody/tr/td[1]/div[@innertext='Cogstate Battery Comments']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -341,9 +344,8 @@ rxversion="8.2">
 				id="b884d6c9-ed98-426e-b73a-71b5e44cb1c9"
 				name="CogstateBatteryDataConfirmationCRF"
 				refimgid="3c6c036a-a101-4026-ad22-099419384db8"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[3]/td[1]/div[@innertext='Cogstate Battery Data Confirmation']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[3]/td[1]/div[@innertext~'^Cogstate\ Battery\ Data\ Con']
+					/dom[@domain=$DOM]/body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\ Battery\ Data\ Con']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -351,9 +353,8 @@ rxversion="8.2">
 				id="1821b257-b454-43b6-8874-4c63a5fa25b0"
 				name="CogstateBatteryCRFCompositeOutcome"
 				refimgid="9a238e33-011d-40fd-9f33-cdfae027bb79"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[5]/td[1]/div[@innertext='Cogstate Battery CRF - Composite Outcomes']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[5]/td[1]/div[@innertext~'^Cogstate\ Battery\ CRF\ -\ Co']
+					/dom[@domain=$DOM]/body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\ Battery\ CRF\ -\ Co']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -361,9 +362,8 @@ rxversion="8.2">
 				id="8c73533d-e702-4985-8b89-b91f9a60a82b"
 				name="CogstateBatteryCRFCBB"
 				refimgid="f16f28b4-48c2-4e56-9cbc-abc4d823e2ed"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/div/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[4]/td[1]/div[@innertext='Cogstate Battery CRF - CBB']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[4]/td[1]/div[@innertext~'^Cogstate\ Battery\ CRF\ -\ CB']
+					/dom[@domain=$DOM]/body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\ Battery\ CRF\ -\ CB']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -381,9 +381,8 @@ rxversion="8.2">
 				id="a0b09774-43e2-45f8-a410-a407a7162086"
 				name="AddedCRFEntry"
 				refimgid="122203d9-2e7c-4762-8b3d-33f9dfd9f092"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/div[2]/div/div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext='Begin Cogstate Battery']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/div[2]/div/div/div[3]/div/div[2]//table/tbody/tr/td[2]/div[@innertext='Begin Cogstate Battery']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr/td/div[@innertext='Begin Cogstate Battery']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -438,9 +437,8 @@ rxversion="8.2">
 				id="8038c42d-6e2a-48de-8a45-0e28bd3850c8"
 				name="UploadButton"
 				refimgid="6c66a42f-86f5-45e4-9773-8c6a20aae1f2"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/table/tbody/tr/td/button/span[@innertext='Upload']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]//table/?/?/tr/td[2]/?/?/table/?/?/tr/td[1]/table/tbody/tr//span[@innertext='Upload']
+					/dom[@domain=$DOM]//body//table/tbody/tr//span[@innertext='Upload']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -448,9 +446,8 @@ rxversion="8.2">
 				id="70df627e-f442-41b4-997f-d4b1422af3b9"
 				name="DeleteCRFCheckbox"
 				refimgid="d3be7725-2214-4a5b-975e-8f1d75a48a7b"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/div/table/tbody/tr[1]/td/div/div/table/tbody/tr/td[1]/i"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div[6]/div/div/div/table/tbody/tr[1]/td/div/div/table//i
+					/dom[@domain=$DOM]//body//table/tbody/tr/td/div/div/table//i
 				</item>
 			</folder>
 			<folder
@@ -486,7 +483,7 @@ rxversion="8.2">
 				name="CogstateSite"
 				refimgid="8bb54908-4894-4cb3-b568-4a9098726260"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//li//a[@innertext='Cogstate']
+					/dom[@domain=$DOM]//li//a[@innertext&lt;'Cogstate']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -505,7 +502,7 @@ rxversion="8.2">
 				name="StudySiteID"
 				refimgid="b27fd2d0-8e6a-447a-bd82-5a142b39c8f7"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']//tbody/tr[1]/td[3]/div[@innertext&gt;$RandNum]
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//tbody/tr/td/div[@innertext&gt;$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -522,9 +519,8 @@ rxversion="8.2">
 				id="e2c5faba-e28a-4d47-99c1-1e9229e1928e"
 				name="MaleGender"
 				refimgid="70a6dfd7-5429-445d-9a0d-a8ca0aee8856"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[2]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr[1]/td/table/tbody/tr[1]/td/div/div/table/tbody/tr/td[1]/span/input[@name='rdio_0']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[2]//table/?/?/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr[1]/td/table/tbody/tr[1]/td/div/div/table/tbody/tr/td[1]/?/?/input[@name='rdio_0']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr/td/?/?/input[@name~'rdio_[0-9]']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -532,9 +528,8 @@ rxversion="8.2">
 				id="49e8515c-f881-46a5-a470-f09db46ae3b8"
 				name="LanguageDropdown"
 				refimgid="f7d9ad9b-1614-465d-b17c-127e847306f4"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[3]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/div/button"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[3]/div/?/?/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/?/?/button
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr/td/div/div/div/div/?/?/button
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -561,9 +556,8 @@ rxversion="8.2">
 				id="6689b195-0563-43db-8134-742b2e9caf8f"
 				name="DOBField"
 				refimgid="d19b6f44-16db-4415-8555-27a05ed7df7e"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[1]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr/td[1]/input[@type='text']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[11]/div/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[1]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/?/?/div/table/?/?/tr/td[1]/input[@type='text']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/?/?/tr/td/input[@type='text' and @visible='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -581,7 +575,7 @@ rxversion="8.2">
 				name="SubjectDetail"
 				refimgid="20c04533-78df-43d2-841e-0e859f39266c"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/div[2]/div[@innertext&gt;'Subject Detail:']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//tbody//div[@innertext&gt;'Subject Detail:']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -616,7 +610,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="fef1e296-87b4-4f4f-981b-2c7ccb3f8ecc"
-				name="SaveEvent"
+				name="AddEventSaveExitButton"
 				refimgid="c57b7b0d-ecc4-46fa-9011-331eb17919c0"
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']"
 				searchtimeout="30000ms">
@@ -651,6 +645,24 @@ rxversion="8.2">
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[3]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/div/div/button/span[@innertext='Begin Assessment']"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[3]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div//span[@innertext='Begin Assessment']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="d9b364c3-4d5d-4c1e-8c60-c712bd9fea82"
+				name="DataConfirmationCRF"
+				refimgid="0a1d4259-c91f-41ab-a312-e52011909559"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[@id&lt;'cogstateBatteryDataConfirmation']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="46cd2424-7930-4ab1-ac72-aa31e02e3644"
+				name="CBBCRF"
+				refimgid="c090d816-8885-4d17-ba1a-cdf69efb5c8f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[@id&lt;'cogstateBatteryCRF-CBB']
 				</item>
 			</folder>
 			<folder
@@ -751,22 +763,11 @@ rxversion="8.2">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="aaba0e6c-b456-44a4-a20a-7c92e5a56d6e"
-				name="SomeDivTag"
-				refimgid="27433d3f-ee80-4bdd-a772-7f874b85dd7c"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div"
+				id="a4e3fe2f-52e7-42cb-99ff-80dbbbcab99a"
+				name="TestIdentifier"
+				refimgid="da65b922-b5a3-49e2-b36d-dea128918636"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="a830dd1e-27d4-47ee-a73e-c73041b1043e"
-				name="DivTag1"
-				refimgid="17611228-91f2-48a7-930e-dccadb34cf46"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[1]/td/div/ul/li[4]/div/div/div[2]/div[@innertext='1']"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[1]//ul/li[4]/?/?/div[@title='Notifications']/?/?/div[@innertext='1']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//div[@innertext='Test ID']//..//..//div[@innertext~'[0-9A-F]\-']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'gwtWrapper']
@@ -787,7 +788,7 @@ rxversion="8.2">
 				name="EventDefName"
 				refimgid="992f46be-1793-4422-9e4f-158778754079"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext&gt;$EventDefName]
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr/td/div[@innertext&gt;$EventDefName]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -795,9 +796,8 @@ rxversion="8.2">
 				id="28551854-3a2c-4514-9758-fa9502120658"
 				name="Type"
 				refimgid="5ef354ca-957d-43b4-880d-9d0eff4cbca3"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[3]/div/div[2]/div/div/table/tbody/tr/td[4]/div[@innertext='Scheduled']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[4]/div[@innertext='Scheduled']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr/td/div[@innertext='Scheduled']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'gwtWrapper']
@@ -810,7 +810,7 @@ rxversion="8.2">
 			name="MyStudiesTitle"
 			refimgid="5db0a8e1-25e0-4821-bb55-1f3fbf1e321d"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'gwtWrapper']//div/table[2]//div[@innertext='My Studies']
+				/dom[@domain=$DOM]//div[#'gwtWrapper']//div/table//div[@innertext='My Studies']
 			</item>
 			<item
 			addcaps="unknown,webelement,buttontag"
@@ -884,13 +884,12 @@ rxversion="8.2">
 			</item>
 			<item
 			addcaps="unknown,webelement,imgtag"
-			capname="imgtag"
+			capname="divtag"
 			id="dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5"
 			name="MyStudiesButton"
 			refimgid="98f19368-ead8-44d3-84d5-3e4405f6fe9a"
-			refpath="/dom[@domain='cgsqc.redcapcloud.com']//img[#'leftMenuButtons_logoImage']"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//img[#'leftMenuButtons_logoImage']
+				/dom[@domain=$DOM]//div[#'leftMenuButtons_navSetupStudies']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -940,6 +939,36 @@ rxversion="8.2">
 			refpath="/dom[@domain='cgsqc.redcapcloud.com']//li[#'summary_studyCategory_1_CATEGORY']/a[@innertext='Classic Database']"
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//li[#'summary_studyCategory_1_CATEGORY']/a[@innertext='Classic Database']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="481c3401-0daa-49a5-95f3-d6bcb777fd3c"
+			name="CogstateBatteryCRFCBB"
+			refimgid="3c5c1d20-c765-4b1d-87c0-32608a96a292"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext='Cogstate Battery CRF - CBB']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\ Battery\ CRF\ -\ CB']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="3dff02c4-a338-4b37-904b-2ab9b5ef7a75"
+			name="CogstateBatteryDataConfirmation"
+			refimgid="8c2b9eb6-888a-42e7-9fe7-de4c13c15ce3"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext='Cogstate Battery Data Confirmation']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\ Battery\ Data\ Con']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="8017c05e-63a5-4c1f-a7f8-676c2d3b01ce"
+			name="MarkCRFComplete"
+			refimgid="aae4bef5-ad20-42a4-9902-74ded30f094d"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//i[#'dataCollectionWidget_checkboxComplete']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//i[#'dataCollectionWidget_checkboxComplete']
 			</item>
 			<basepath>
 				/dom[@domain=$DOM]

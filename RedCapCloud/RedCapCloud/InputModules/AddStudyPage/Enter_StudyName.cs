@@ -113,15 +113,15 @@ namespace RedCapCloud.InputModules.AddStudyPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddStudyPage.StudyNameField' at Center.", repo.REDCapCloud.AddStudyPage.StudyNameFieldInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddStudyPage.StudyNameField.Click(300);
+            repo.REDCapCloud.AddStudyPage.StudyNameField.Click(3);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$StudyName' with focus on 'REDCapCloud.AddStudyPage.StudyNameField'.", repo.REDCapCloud.AddStudyPage.StudyNameFieldInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddStudyPage.StudyNameField.PressKeys(StudyName, 100);
+            repo.REDCapCloud.AddStudyPage.StudyNameField.PressKeys(StudyName, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'REDCapCloud.AddStudyPage.StudyNameField'.", repo.REDCapCloud.AddStudyPage.StudyNameFieldInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.AddStudyPage.StudyNameField.PressKeys(RandNum, 100);
+            repo.REDCapCloud.AddStudyPage.StudyNameField.PressKeys(RandNum, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$StudyName) on item 'REDCapCloud.AddStudyPage.StudyNameField'.", repo.REDCapCloud.AddStudyPage.StudyNameFieldInfo, new RecordItemIndex(3));

@@ -100,16 +100,16 @@ namespace RedCapCloud.InputModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.EventDefName' at Center.", repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.EventDefinitionPage.EventDefName.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.EventDefNameField' at Center.", repo.REDCapCloud.EventDefinitionPage.EventDefNameFieldInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.EventDefinitionPage.EventDefNameField.Click(1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EventDefName' with focus on 'REDCapCloud.EventDefinitionPage.EventDefName'.", repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.EventDefinitionPage.EventDefName.PressKeys(EventDefName, 100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EventDefName' with focus on 'REDCapCloud.EventDefinitionPage.EventDefNameField'.", repo.REDCapCloud.EventDefinitionPage.EventDefNameFieldInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.EventDefinitionPage.EventDefNameField.PressKeys(EventDefName, 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$EventDefName) on item 'REDCapCloud.EventDefinitionPage.EventDefName'.", repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.EventDefNameInfo, "Value", EventDefName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$EventDefName) on item 'REDCapCloud.EventDefinitionPage.EventDefNameField'.", repo.REDCapCloud.EventDefinitionPage.EventDefNameFieldInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.EventDefNameFieldInfo, "Value", EventDefName);
             Delay.Milliseconds(0);
             
         }

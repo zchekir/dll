@@ -90,11 +90,11 @@ namespace RedCapCloud.InputModules.SitePage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.SiteNameButton' at Center.", repo.REDCapCloud.AddSitePage.SiteNameButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddSitePage.SiteNameButton.Click();
+            repo.REDCapCloud.AddSitePage.SiteNameButton.Click(1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.CogstateSite' at Center.", repo.REDCapCloud.AddSitePage.CogstateSiteInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddSitePage.CogstateSite.Click();
+            repo.REDCapCloud.AddSitePage.CogstateSite.Click(1);
             Delay.Milliseconds(0);
             
         }

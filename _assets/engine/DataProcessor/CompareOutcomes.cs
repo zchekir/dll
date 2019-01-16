@@ -185,6 +185,7 @@ namespace engine.DataProcessor
 				/*The following outcomes will be randomly generated or depend on the date the test is run
  				 *we do not need to compare these values for now*/         			
  				case "IQNumber":
+ 			    case "Age":
  				case "SessionID":
  				case "SessionDate":					
  					match = true;
@@ -242,7 +243,8 @@ namespace engine.DataProcessor
            					//for some formatting before comparing the two outcomes. Some outcomes are expected not to match. In this case, we just
            					//want to log a message in the report without the Success/Failure log
            					if(CheckOutcomesMatch(engine.Helpers.SQLUtility.dt.Columns[i].ColumnName, extractValue, databaseValue))
-           						if (currentOutcome == "IQNumber" || currentOutcome == "SessionID" || currentOutcome == "SessionDate") {
+           						if (currentOutcome == "IQNumber" || currentOutcome == "SessionID" || currentOutcome == "SessionDate"
+           						   || currentOutcome == "Age") {
            							 Report.Info("Outcome difference expected, no comparison needed");
            						}
            						else {
