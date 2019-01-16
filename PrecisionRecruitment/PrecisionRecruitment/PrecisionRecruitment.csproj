@@ -2020,6 +2020,66 @@
     <Compile Include="Program.cs">
       <id>6ca31d9b-0a0b-4253-97ad-f0082721d0b8</id>
     </Compile>
+    <Compile Include="ReportsPage\Click_BatteryConfig_Report.cs">
+      <BoundTo>716af398-709b-4153-8c9b-f37ff502c4d4</BoundTo>
+      <DependentUpon>Click_BatteryConfig_Report.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>40ad1c48-facb-4581-b1fa-7220191144cf</id>
+    </Compile>
+    <Compile Include="ReportsPage\Click_BatteryConfig_Report.UserCode.cs">
+      <BoundTo>716af398-709b-4153-8c9b-f37ff502c4d4</BoundTo>
+      <DependentUpon>Click_BatteryConfig_Report.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e04b5748-68c7-46a6-95e3-449f2403c621</id>
+    </Compile>
+    <Compile Include="ReportsPage\Click_GenerateReport_Button.cs">
+      <BoundTo>7ae880fe-fe1d-46a7-84ab-60e8fb02d2a5</BoundTo>
+      <DependentUpon>Click_GenerateReport_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca02bd4b-04c2-42a4-a221-28c856ba2ef7</id>
+    </Compile>
+    <Compile Include="ReportsPage\Click_GenerateReport_Button.UserCode.cs">
+      <BoundTo>7ae880fe-fe1d-46a7-84ab-60e8fb02d2a5</BoundTo>
+      <DependentUpon>Click_GenerateReport_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6fe0d49f-35a3-49ff-bab2-94d629ebee1b</id>
+    </Compile>
+    <Compile Include="ReportsPage\Click_Reports_Tab.cs">
+      <BoundTo>1f1f8805-03a0-4166-a78f-f8e7a17f7363</BoundTo>
+      <DependentUpon>Click_Reports_Tab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>deb48492-b8c8-48e2-a935-e9bb62357f54</id>
+    </Compile>
+    <Compile Include="ReportsPage\Click_Reports_Tab.UserCode.cs">
+      <BoundTo>1f1f8805-03a0-4166-a78f-f8e7a17f7363</BoundTo>
+      <DependentUpon>Click_Reports_Tab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e66b6cf8-7c26-491e-b2a9-c9bec9d156fc</id>
+    </Compile>
+    <Compile Include="ReportsPage\Validate_Report_Generated.cs">
+      <BoundTo>92fb529e-0e75-4de0-8440-1cc08c4b5951</BoundTo>
+      <DependentUpon>Validate_Report_Generated.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fdd027f-514a-4ab9-8c32-a4efe4bebdad</id>
+    </Compile>
+    <Compile Include="ReportsPage\Validate_Report_Generated.UserCode.cs">
+      <BoundTo>92fb529e-0e75-4de0-8440-1cc08c4b5951</BoundTo>
+      <DependentUpon>Validate_Report_Generated.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f713647e-1fbf-411c-9d93-7800684068dd</id>
+    </Compile>
+    <Compile Include="ReportsPage\View_Lastest_Report.cs">
+      <BoundTo>e3424d73-3c87-483f-bc45-de50dd92337c</BoundTo>
+      <DependentUpon>View_Lastest_Report.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5835e9da-8066-41df-b7ca-5c5a08b388f8</id>
+    </Compile>
+    <Compile Include="ReportsPage\View_Lastest_Report.UserCode.cs">
+      <BoundTo>e3424d73-3c87-483f-bc45-de50dd92337c</BoundTo>
+      <DependentUpon>View_Lastest_Report.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a09150fa-0f47-457b-9272-f9c80a72d43e</id>
+    </Compile>
     <Compile Include="StudiesPage\Click_Add_Study.cs">
       <DependentUpon>Click_Add_Study.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -3563,6 +3623,31 @@
       <id>28c81b25-cf62-4d20-b771-9257a1bffe7e</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="ReportsPage\Click_BatteryConfig_Report.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>716af398-709b-4153-8c9b-f37ff502c4d4</id>
+      <recordtableid>c3236857-9730-48cf-a6fc-1375129bc038</recordtableid>
+    </None>
+    <None Include="ReportsPage\Click_GenerateReport_Button.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>7ae880fe-fe1d-46a7-84ab-60e8fb02d2a5</id>
+      <recordtableid>d5827b0a-fbdc-4cd8-bc10-56d077987d88</recordtableid>
+    </None>
+    <None Include="ReportsPage\Click_Reports_Tab.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>1f1f8805-03a0-4166-a78f-f8e7a17f7363</id>
+      <recordtableid>c8f46ef8-b4a0-4ce4-b7d9-4b2b351076c2</recordtableid>
+    </None>
+    <None Include="ReportsPage\Validate_Report_Generated.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>92fb529e-0e75-4de0-8440-1cc08c4b5951</id>
+      <recordtableid>e98ba0ae-ff2c-4d37-be25-aefe787591b1</recordtableid>
+    </None>
+    <None Include="ReportsPage\View_Lastest_Report.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>e3424d73-3c87-483f-bc45-de50dd92337c</id>
+      <recordtableid>3bf72023-04a6-405d-b102-33645e57f937</recordtableid>
+    </None>
     <None Include="StudiesPage\Click_Add_Study.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>b33bd7c9-b5da-4c70-8939-1af945962ce4</id>
@@ -3861,6 +3946,9 @@
     </Folder>
     <Folder Include="BatteryTemplatePage">
       <id>45b11ab7-dbbd-4831-9008-3fcc524172e0</id>
+    </Folder>
+    <Folder Include="ReportsPage">
+      <id>86f9dc76-dee8-4c45-9d11-4bcfe969c904</id>
     </Folder>
     <Folder Include="ParticipantsPage">
       <id>eaf99ce1-d0ee-42ca-b3f5-df2b652d7516</id>

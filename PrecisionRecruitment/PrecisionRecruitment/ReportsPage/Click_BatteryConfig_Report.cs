@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.General
+namespace PrecisionRecruitment.ReportsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Clear_Gmail_Inbox recording.
+    ///The Click_BatteryConfig_Report recording.
     /// </summary>
-    [TestModule("46fd72b9-76a1-4e0f-a312-530d1c4995bb", ModuleType.Recording, 1)]
-    public partial class Clear_Gmail_Inbox : ITestModule
+    [TestModule("c3236857-9730-48cf-a6fc-1375129bc038", ModuleType.Recording, 1)]
+    public partial class Click_BatteryConfig_Report : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Clear_Gmail_Inbox instance = new Clear_Gmail_Inbox();
+        static Click_BatteryConfig_Report instance = new Click_BatteryConfig_Report();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Clear_Gmail_Inbox()
+        public Click_BatteryConfig_Report()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Clear_Gmail_Inbox Instance
+        public static Click_BatteryConfig_Report Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
 
 #endregion
 
@@ -79,29 +89,13 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            //Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(null, null);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.BatteryConfigReport' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.BatteryConfigReportInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.BatteryConfigReportPage.BatteryConfigReport.Click(1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.BackToInbox' at Center.", repo.GmailInbox.BackToInboxInfo, new RecordItemIndex(1));
-            repo.GmailInbox.BackToInbox.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 250ms.", new RecordItemIndex(2));
-            Delay.Duration(250, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SelectAllMessagesCheckbox' at Center.", repo.GmailInbox.SelectAllMessagesCheckboxInfo, new RecordItemIndex(3));
-            repo.GmailInbox.SelectAllMessagesCheckbox.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 100ms.", new RecordItemIndex(4));
-            Delay.Duration(100, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.DeleteButton' at Center.", repo.GmailInbox.DeleteButtonInfo, new RecordItemIndex(5));
-            repo.GmailInbox.DeleteButton.Click("Center");
-            Delay.Milliseconds(0);
-            
-            //Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(null, null);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.Breadcrumbs.BatteryConfigReportBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.BatteryConfigReportBreadcrumbInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.CogstateSolutionPlatform.Breadcrumbs.BatteryConfigReportBreadcrumbInfo);
+            Delay.Milliseconds(100);
             
         }
 

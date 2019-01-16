@@ -142,37 +142,56 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1.Click(3);
             Delay.Milliseconds(90);
             
-            SelectVisitScheduleWorkflow();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown.Click(1);
+            Delay.Milliseconds(90);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowName' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdownInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown.PressKeys(WorkflowName, 1);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdownInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown.PressKeys(RandNum, 1);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdownInfo, new RecordItemIndex(5));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown.PressKeys("{Return}", 100);
+            Delay.Milliseconds(0);
+            
+            // Disabled the below action as it was not reliable
+            Report.Log(ReportLevel.Info, "Section", "Disabled the below action as it was not reliable", new RecordItemIndex(6));
+            
+            //SelectVisitScheduleWorkflow();
+            //Delay.Milliseconds(0);
             
             SelectVisitScheduleVisitStatus();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(9));
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(10));
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VisitSessionCode' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VisitSessionCode' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(11));
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode.PressKeys(VisitSessionCode, 1);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCodeInfo, new RecordItemIndex(12));
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitSessionCode.PressKeys(RandNum, 1);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButtonInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButtonInfo, new RecordItemIndex(13));
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.SaveButton.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(14));
             repo.CogstateSolutionPlatform.StudyToolbar.CardButton.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new ActionTimeout(10000), new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new ActionTimeout(10000), new RecordItemIndex(15));
             repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo.WaitForExists(10000);
             
         }

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
-mode="Desktop"
+id="3bf72023-04a6-405d-b102-33645e57f937"
+mode="Global"
 rxversion="8.2">
 	<name>
-		Open_Browser
+		View_Lastest_Report
 	</name>
 	<repeatcount>
 		1
@@ -23,38 +23,36 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Open_Browser"
-	namespace="PrecisionRecruitment.General">
+	classname="View_Lastest_Report"
+	namespace="PrecisionRecruitment.ReportsPage">
 	</codegen>
 	<variables>
-		<var
-		id="301881c3-bcf1-4345-825a-bdb454120bc4"
-		name="URL">
-		</var>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="Chrome"
-		clearcache="False"
-		clearcookies="False"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
 		enabled="True"
-		incognito="False"
-		killexisting="False"
-		maximized="True"
-		optional="False">
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="20fbf1e4-f991-46fe-b1e9-a9ecab0c4714"
+		sx="-839"
+		sy="-787"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="Url"
-				variable="URL">
-				</binding>
 			</bindings>
-			<url>
-				https://cgst-qc-2-7-0.cogstate.com/template.html#/Login
-			</url>
-		</openwebsiterecorditem>
+			<info
+			id="55e2ef93-5902-4c18-8192-ed03533b23d2"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']//table/tbody/tr/td/a[@visible='True']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
@@ -72,7 +70,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Open_Browser.UserCode.cs
+		View_Lastest_Report.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

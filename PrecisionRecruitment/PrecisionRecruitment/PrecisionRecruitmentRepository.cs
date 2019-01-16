@@ -32,7 +32,6 @@ namespace PrecisionRecruitment
         PrecisionRecruitmentRepositoryFolders.GoogleAccountAppFolder _googleaccount;
         PrecisionRecruitmentRepositoryFolders.GmailInboxAppFolder _gmailinbox;
         PrecisionRecruitmentRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
-        PrecisionRecruitmentRepositoryFolders.LeaveSitePopupAppFolder _leavesitepopup;
 
         /// <summary>
         /// Gets the singleton class instance representing the PrecisionRecruitmentRepository element repository.
@@ -54,7 +53,6 @@ namespace PrecisionRecruitment
             _googleaccount = new PrecisionRecruitmentRepositoryFolders.GoogleAccountAppFolder(this);
             _gmailinbox = new PrecisionRecruitmentRepositoryFolders.GmailInboxAppFolder(this);
             _cogstatesolutionplatformchrome = new PrecisionRecruitmentRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
-            _leavesitepopup = new PrecisionRecruitmentRepositoryFolders.LeaveSitePopupAppFolder(this);
         }
 
 #region Variables
@@ -309,15 +307,6 @@ namespace PrecisionRecruitment
         {
             get { return _cogstatesolutionplatformchrome; }
         }
-
-        /// <summary>
-        /// The LeaveSitePopup folder.
-        /// </summary>
-        [RepositoryFolder("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
-        public virtual PrecisionRecruitmentRepositoryFolders.LeaveSitePopupAppFolder LeaveSitePopup
-        {
-            get { return _leavesitepopup; }
-        }
     }
 
     /// <summary>
@@ -339,6 +328,7 @@ namespace PrecisionRecruitment
             PrecisionRecruitmentRepositoryFolders.AddVisitSchedulePageFolder _addvisitschedulepage;
             PrecisionRecruitmentRepositoryFolders.AddInternalUserPageFolder _addinternaluserpage;
             PrecisionRecruitmentRepositoryFolders.AddExternalUserPageFolder _addexternaluserpage;
+            PrecisionRecruitmentRepositoryFolders.BatteryConfigReportPageFolder _batteryconfigreportpage;
             PrecisionRecruitmentRepositoryFolders.ParticipantsPageFolder _participantspage;
             PrecisionRecruitmentRepositoryFolders.ExtractsPageFolder _extractspage;
             PrecisionRecruitmentRepositoryFolders.LoginFormFolder _loginform;
@@ -377,6 +367,7 @@ namespace PrecisionRecruitment
                 _addvisitschedulepage = new PrecisionRecruitmentRepositoryFolders.AddVisitSchedulePageFolder(this);
                 _addinternaluserpage = new PrecisionRecruitmentRepositoryFolders.AddInternalUserPageFolder(this);
                 _addexternaluserpage = new PrecisionRecruitmentRepositoryFolders.AddExternalUserPageFolder(this);
+                _batteryconfigreportpage = new PrecisionRecruitmentRepositoryFolders.BatteryConfigReportPageFolder(this);
                 _participantspage = new PrecisionRecruitmentRepositoryFolders.ParticipantsPageFolder(this);
                 _extractspage = new PrecisionRecruitmentRepositoryFolders.ExtractsPageFolder(this);
                 _loginform = new PrecisionRecruitmentRepositoryFolders.LoginFormFolder(this);
@@ -704,6 +695,15 @@ namespace PrecisionRecruitment
             public virtual PrecisionRecruitmentRepositoryFolders.AddExternalUserPageFolder AddExternalUserPage
             {
                 get { return _addexternaluserpage; }
+            }
+
+            /// <summary>
+            /// The BatteryConfigReportPage folder.
+            /// </summary>
+            [RepositoryFolder("95e7e970-a6ef-45b5-859c-7b9177792c82")]
+            public virtual PrecisionRecruitmentRepositoryFolders.BatteryConfigReportPageFolder BatteryConfigReportPage
+            {
+                get { return _batteryconfigreportpage; }
             }
 
             /// <summary>
@@ -3431,6 +3431,216 @@ namespace PrecisionRecruitment
         }
 
         /// <summary>
+        /// The BatteryConfigReportPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("95e7e970-a6ef-45b5-859c-7b9177792c82")]
+        public partial class BatteryConfigReportPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _batteryconfigreportInfo;
+            RepoItemInfo _generatereportbuttonInfo;
+            RepoItemInfo _popupokbuttonInfo;
+            RepoItemInfo _latestgeneratedreportInfo;
+            RepoItemInfo _protocollabelInfo;
+            RepoItemInfo _visitscheduletableInfo;
+            RepoItemInfo _batterysettingstableInfo;
+
+            /// <summary>
+            /// Creates a new BatteryConfigReportPage  folder.
+            /// </summary>
+            public BatteryConfigReportPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("BatteryConfigReportPage", "", parentFolder, 0, null, false, "95e7e970-a6ef-45b5-859c-7b9177792c82", "")
+            {
+                _batteryconfigreportInfo = new RepoItemInfo(this, "BatteryConfigReport", ".//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Battery Config Report' and @visible='True']", 30000, null, "22ce7e5d-f755-46e4-9d3b-319ad3ff6903");
+                _generatereportbuttonInfo = new RepoItemInfo(this, "GenerateReportButton", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//button[@innertext>'Generate Report']", 30000, null, "85a4dc2d-d1d7-4fec-8213-99295fb09d62");
+                _popupokbuttonInfo = new RepoItemInfo(this, "PopupOKButton", "body//button[@innertext='OK']", 30000, null, "fd579a89-f412-4372-a0b1-89703d468cd0");
+                _latestgeneratedreportInfo = new RepoItemInfo(this, "LatestGeneratedReport", ".//div[#'ng-app']//table/tbody/tr[1]/td/a[@visible='True']", 30000, null, "55e2ef93-5902-4c18-8192-ed03533b23d2");
+                _protocollabelInfo = new RepoItemInfo(this, "ProtocolLabel", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//label[@innertext>'Protocol:']", 30000, null, "1f73c6fb-00ae-412a-9000-63304bd2c1a3");
+                _visitscheduletableInfo = new RepoItemInfo(this, "VisitScheduleTable", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']/div/div/tag/div/div/?/?/table[@class='battery-schedule-list cogstate-table']", 30000, null, "612b5f31-d765-4dcd-8c80-653fcb1cd030");
+                _batterysettingstableInfo = new RepoItemInfo(this, "BatterySettingsTable", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']/div/div/tag/div/div/?/div[@class='battery-settings']", 30000, null, "fbefddee-51d0-4e7d-9ac0-ba6182676752");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("95e7e970-a6ef-45b5-859c-7b9177792c82")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryConfigReport item.
+            /// </summary>
+            [RepositoryItem("22ce7e5d-f755-46e4-9d3b-319ad3ff6903")]
+            public virtual Ranorex.ATag BatteryConfigReport
+            {
+                get
+                {
+                    return _batteryconfigreportInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryConfigReport item info.
+            /// </summary>
+            [RepositoryItemInfo("22ce7e5d-f755-46e4-9d3b-319ad3ff6903")]
+            public virtual RepoItemInfo BatteryConfigReportInfo
+            {
+                get
+                {
+                    return _batteryconfigreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GenerateReportButton item.
+            /// </summary>
+            [RepositoryItem("85a4dc2d-d1d7-4fec-8213-99295fb09d62")]
+            public virtual Ranorex.ButtonTag GenerateReportButton
+            {
+                get
+                {
+                    return _generatereportbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GenerateReportButton item info.
+            /// </summary>
+            [RepositoryItemInfo("85a4dc2d-d1d7-4fec-8213-99295fb09d62")]
+            public virtual RepoItemInfo GenerateReportButtonInfo
+            {
+                get
+                {
+                    return _generatereportbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PopupOKButton item.
+            /// </summary>
+            [RepositoryItem("fd579a89-f412-4372-a0b1-89703d468cd0")]
+            public virtual Ranorex.ButtonTag PopupOKButton
+            {
+                get
+                {
+                    return _popupokbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PopupOKButton item info.
+            /// </summary>
+            [RepositoryItemInfo("fd579a89-f412-4372-a0b1-89703d468cd0")]
+            public virtual RepoItemInfo PopupOKButtonInfo
+            {
+                get
+                {
+                    return _popupokbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LatestGeneratedReport item.
+            /// </summary>
+            [RepositoryItem("55e2ef93-5902-4c18-8192-ed03533b23d2")]
+            public virtual Ranorex.ATag LatestGeneratedReport
+            {
+                get
+                {
+                    return _latestgeneratedreportInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LatestGeneratedReport item info.
+            /// </summary>
+            [RepositoryItemInfo("55e2ef93-5902-4c18-8192-ed03533b23d2")]
+            public virtual RepoItemInfo LatestGeneratedReportInfo
+            {
+                get
+                {
+                    return _latestgeneratedreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolLabel item.
+            /// </summary>
+            [RepositoryItem("1f73c6fb-00ae-412a-9000-63304bd2c1a3")]
+            public virtual Ranorex.LabelTag ProtocolLabel
+            {
+                get
+                {
+                    return _protocollabelInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolLabel item info.
+            /// </summary>
+            [RepositoryItemInfo("1f73c6fb-00ae-412a-9000-63304bd2c1a3")]
+            public virtual RepoItemInfo ProtocolLabelInfo
+            {
+                get
+                {
+                    return _protocollabelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VisitScheduleTable item.
+            /// </summary>
+            [RepositoryItem("612b5f31-d765-4dcd-8c80-653fcb1cd030")]
+            public virtual Ranorex.Table VisitScheduleTable
+            {
+                get
+                {
+                    return _visitscheduletableInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VisitScheduleTable item info.
+            /// </summary>
+            [RepositoryItemInfo("612b5f31-d765-4dcd-8c80-653fcb1cd030")]
+            public virtual RepoItemInfo VisitScheduleTableInfo
+            {
+                get
+                {
+                    return _visitscheduletableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatterySettingsTable item.
+            /// </summary>
+            [RepositoryItem("fbefddee-51d0-4e7d-9ac0-ba6182676752")]
+            public virtual Ranorex.DivTag BatterySettingsTable
+            {
+                get
+                {
+                    return _batterysettingstableInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatterySettingsTable item info.
+            /// </summary>
+            [RepositoryItemInfo("fbefddee-51d0-4e7d-9ac0-ba6182676752")]
+            public virtual RepoItemInfo BatterySettingsTableInfo
+            {
+                get
+                {
+                    return _batterysettingstableInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The ParticipantsPageFolder folder.
         /// </summary>
         [RepositoryFolder("2e730778-3533-491e-aba2-25330559576e")]
@@ -4530,6 +4740,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _visitschedulestabInfo;
             RepoItemInfo _workflowstabInfo;
             RepoItemInfo _batteriestabInfo;
+            RepoItemInfo _reportstabInfo;
 
             /// <summary>
             /// Creates a new StudyTabs  folder.
@@ -4543,6 +4754,7 @@ namespace PrecisionRecruitment
                 _visitschedulestabInfo = new RepoItemInfo(this, "VisitSchedulesTab", ".//li/a[@innertext>'Visit Schedules']", 30000, null, "77cb1315-8730-46be-bc98-9ac27c0954f6");
                 _workflowstabInfo = new RepoItemInfo(this, "WorkflowsTab", ".//li/a[@innertext>'Workflows']", 30000, null, "da63a96e-f369-4c8e-b990-162b989a20a6");
                 _batteriestabInfo = new RepoItemInfo(this, "BatteriesTab", ".//li/a[@innertext>'Batteries']", 30000, null, "229065bc-cd28-4029-932e-2c26e4bedf6d");
+                _reportstabInfo = new RepoItemInfo(this, "ReportsTab", ".//li/a[@innertext>'Reports']", 30000, null, "150547e6-e11b-4015-a5b2-cd4981b8b761");
             }
 
             /// <summary>
@@ -4710,6 +4922,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _batteriestabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReportsTab item.
+            /// </summary>
+            [RepositoryItem("150547e6-e11b-4015-a5b2-cd4981b8b761")]
+            public virtual Ranorex.ATag ReportsTab
+            {
+                get
+                {
+                    return _reportstabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReportsTab item info.
+            /// </summary>
+            [RepositoryItemInfo("150547e6-e11b-4015-a5b2-cd4981b8b761")]
+            public virtual RepoItemInfo ReportsTabInfo
+            {
+                get
+                {
+                    return _reportstabInfo;
                 }
             }
         }
@@ -5019,6 +5255,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _participantbreadcrumbInfo;
             RepoItemInfo _batterytemplatebreadcrumbInfo;
             RepoItemInfo _batterytemplatenamebreadcrumbInfo;
+            RepoItemInfo _batteryconfigreportbreadcrumbInfo;
 
             /// <summary>
             /// Creates a new Breadcrumbs  folder.
@@ -5037,6 +5274,7 @@ namespace PrecisionRecruitment
                 _participantbreadcrumbInfo = new RepoItemInfo(this, "ParticipantBreadcrumb", ".//span[@innertext~$ParticipantUserName]", 30000, null, "0836a7ec-3ff0-43eb-a4df-8f67f3324722");
                 _batterytemplatebreadcrumbInfo = new RepoItemInfo(this, "BatteryTemplateBreadcrumb", ".//span[@innertext='Battery Template Builder']", 30000, null, "faec4709-64f8-4408-a19a-8be5e93f98a7");
                 _batterytemplatenamebreadcrumbInfo = new RepoItemInfo(this, "BatteryTemplateNameBreadcrumb", ".//tag[2]//span[@innertext>$BatteryTemplateName]", 30000, null, "1e05ab6c-788f-4ca3-a140-edbc1f782a96");
+                _batteryconfigreportbreadcrumbInfo = new RepoItemInfo(this, "BatteryConfigReportBreadcrumb", ".//span[@innertext='Battery Config Report > Reports']", 30000, null, "2b112b48-8961-4165-9e33-92299b82b5ea");
             }
 
             /// <summary>
@@ -5324,6 +5562,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _batterytemplatenamebreadcrumbInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryConfigReportBreadcrumb item.
+            /// </summary>
+            [RepositoryItem("2b112b48-8961-4165-9e33-92299b82b5ea")]
+            public virtual Ranorex.SpanTag BatteryConfigReportBreadcrumb
+            {
+                get
+                {
+                    return _batteryconfigreportbreadcrumbInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryConfigReportBreadcrumb item info.
+            /// </summary>
+            [RepositoryItemInfo("2b112b48-8961-4165-9e33-92299b82b5ea")]
+            public virtual RepoItemInfo BatteryConfigReportBreadcrumbInfo
+            {
+                get
+                {
+                    return _batteryconfigreportbreadcrumbInfo;
                 }
             }
         }
@@ -6854,46 +7116,6 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _downloadedextractfileInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The LeaveSitePopupAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
-        public partial class LeaveSitePopupAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new LeaveSitePopup  folder.
-            /// </summary>
-            public LeaveSitePopupAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("LeaveSitePopup", "/form[@title='Leave site?']", parentFolder, 30000, null, true, "3d7b4b67-f40b-469a-b928-1cc9a5e31836", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("3d7b4b67-f40b-469a-b928-1cc9a5e31836")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }

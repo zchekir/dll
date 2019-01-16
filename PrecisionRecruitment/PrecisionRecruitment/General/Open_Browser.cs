@@ -41,7 +41,7 @@ namespace PrecisionRecruitment.General
         /// </summary>
         public Open_Browser()
         {
-            URL = "https://cgst-qc-2-7-0.cogstate.com/template.html#/Login";
+            URL = "";
         }
 
         /// <summary>
