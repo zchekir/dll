@@ -188,6 +188,15 @@ rxversion="8.2">
 					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_name_0']
 				</item>
 				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="ed871e74-c0b8-48f1-8072-1e86c910aa34"
+				name="BatteryTemplateDescriptionField"
+				refimgid="29e0961c-d00b-4fd5-b41d-72a1468d8ffd"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//textarea[@id~'formly_[0-9]+_textarea_description_1']
+				</item>
+				<item
 				addcaps="unknown,webelement,selecttag"
 				capname="selecttag"
 				id="edaf8b55-8aa5-4f04-bc93-12237fb6b754"
@@ -195,6 +204,15 @@ rxversion="8.2">
 				refimgid="52344d9f-5c8c-4821-9c34-80fabfd2760e"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_status_2']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="825c735f-1d54-4e5c-8291-ce371dec3840"
+				name="ResponseOptionsCheckbox"
+				refimgid="176bf32a-41e2-4f01-b107-5b5896129868"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -213,6 +231,42 @@ rxversion="8.2">
 				refimgid="b99e073f-835a-47b4-b6e4-96dcc3e2af1e"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@innertext~'Name is required']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="0690d370-5e9c-4b2f-ad95-e9924f9da3e2"
+				name="AddTestButton"
+				refimgid="b4a8abd7-8edd-4b4e-98b1-728127958bb5"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//img[@src~'https://'+$DOM+'/asset/images/add_icon_off.png']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="14b1c123-0dd1-4b12-a9c7-15736c9e3f9c"
+				name="CogstateTestDropdown"
+				refimgid="53afcf2b-d7bf-4949-b36e-75a2cdad7c8e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_type_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="9c85f83b-640a-42ac-88ee-51fec91cdaa4"
+				name="SaveBlockButton"
+				refimgid="013a57e6-5222-4d73-aac7-444ec2bdce0d"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//tag[@tagname='cogstate-generic-simple-edit']//button[@innertext&gt;'SAVE' and @visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,h4tag"
+				capname="h4tag"
+				id="b9339527-389b-4f98-9ee3-d3556837eef6"
+				name="BatteryBlockCard"
+				refimgid="9208ad0f-aace-4cf7-9989-714177648eb5"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4[@innertext=$BatteryBlockName]
 				</item>
 			</folder>
 			<folder
@@ -1464,6 +1518,15 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext='Battery Template Builder']
 				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="1e05ab6c-788f-4ca3-a140-edbc1f782a96"
+				name="BatteryTemplateNameBreadcrumb"
+				refimgid="47ee6709-5fb0-46c0-a5c0-21a3a7b05498"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//tag[2]//span[@innertext&gt;$BatteryTemplateName]
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']
 				</basepath>
@@ -1862,13 +1925,12 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		usecache="False">
 			<item
 			addcaps="unknown,webelement,ptag"
-			capname="ptag"
+			capname="divtag"
 			id="fd936656-b0c6-4cb4-b68c-8e84867d10db"
 			name="UseAnotherAccountButton"
 			refimgid="c4c34ec3-3b1f-430a-aa23-2bbc17ee4d24"
-			refpath="/dom[@domain='accounts.google.com']//div[#'identifierLink']/div[2]/p[@innertext='Use another account']"
 			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'identifierLink']/?/?/p[@innertext='Use another account']
+				/dom[@domain='accounts.google.com']//div[#'view_container']//div[@innertext='Use another account']
 			</item>
 			<item
 			addcaps="unknown,webelement,inputtag"
@@ -1910,12 +1972,12 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</item>
 			<item
 			addcaps="unknown,webelement,ptag"
-			capname="ptag"
+			capname="divtag"
 			id="45c4abdc-9001-40db-bba4-e9a0d0d810ba"
 			name="RanorexUserAccountMultiple"
 			refimgid="59d5130b-8512-45c9-a1ef-7c1d7581d3ac"
 			searchtimeout="30000ms">
-				/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext=$GmailAddress]
+				/dom[@domain='accounts.google.com']//div[#'view_container']//div[@id='profileIdentifier' and @innertext=$GmailAddress]
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -2240,11 +2302,20 @@ AAAASUVORK5CYII=
 		<var
 		id="d47e9f26-286d-4495-8939-e73c8a5f40e7"
 		name="GmailAddress">
+			ranorexcogstate@gmail.com
 		</var>
 		<var
 		id="85909bbe-70e5-408e-83e1-6c765b095ce9"
 		name="BatteryPopulation">
 			Healthy
+		</var>
+		<var
+		id="a4551ae9-7e82-4cfb-a9d4-a720e5b38b7a"
+		name="BatteryTemplateName">
+		</var>
+		<var
+		id="4c592594-0ad6-4515-a8bf-ce621aa84724"
+		name="BatteryBlockName">
 		</var>
 	</variables>
 </repository>

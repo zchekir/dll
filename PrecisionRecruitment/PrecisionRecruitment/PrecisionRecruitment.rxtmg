@@ -162,6 +162,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="1f27bf0a-b8d7-48b5-9963-a618dff26269"
+			name="Enter_BatteryTemplate_Name"
+			ref="ae83b9f8-3b76-4061-aa20-12d64db7be7f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="21b872e4-b0b3-46ae-b626-37aace178c01"
 			name="Enter_BatteryStatus"
 			ref="0c2c767f-e13f-48a0-b6ce-dcf98f17afdf"
@@ -686,9 +692,21 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="8a762633-c9a2-4362-9ad5-30473a34e5fb"
+			name="Select_BatteryTemplate"
+			ref="28d48d57-1bf5-4535-b798-78226952b412"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="915666ac-498e-4430-87d1-03eae8825b4c"
 			name="Click_Add_Workflow"
 			ref="12c5de0a-0a0d-4bef-bbcd-831ee3ec3abb"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="935e2471-c9c5-4b33-9ccc-3d6b8dde8452"
+			name="Click_SaveButton"
+			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -848,6 +866,12 @@ rxversion="8.2">
 			id="a991fc63-5ca0-467f-bb8a-06d54f71619d"
 			name="Validate_Required_ProjectName"
 			ref="c280838d-9480-4b16-9cfd-88e552ee114e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="accd35d4-52c4-4352-a6e3-5eb122091314"
+			name="Validate_BatteryTemplate_Entry"
+			ref="08b46a7b-cd12-4842-8e9c-2c245de86a97"
 			type="Recording">
 			</testmodule>
 			<modulegroupdef
@@ -1062,6 +1086,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="c74e01ec-5e6e-4dbc-abd7-3471bdf58717"
+			name="Click_Add_BatteryTemplate"
+			ref="18456bfe-1b2f-4d9a-adc6-97f3f74465f6"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c915765b-ba9d-4fe6-be53-28f855937206"
 			name="Click_SaveButton"
 			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
@@ -1104,9 +1134,15 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="d54a1553-b69f-4152-9b12-c6274ef47682"
-			name="Enter_CBB_BatteryTemplate"
-			ref="4a19ca31-0752-4236-9479-f775e863b5b3"
+			id="d794f057-02bd-4e74-bb3e-645b8b3d507d"
+			name="Enter_BatteryTemplate_Status"
+			ref="002eeea4-8e37-474f-b0d9-a615adbcb80a"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d7df7378-73bb-4482-a2e1-047d72823ba0"
+			name="Click_UpdateResponseOptions_Checkbox"
+			ref="3a589b0e-e7ee-49ee-b831-09ef06b7ab3c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -1345,10 +1381,103 @@ rxversion="8.2">
 			ref="94f6a855-301c-4931-b97a-68e17d5b6b05"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="ebf50685-352a-485c-becc-02957c93541f"
+			name="Add_BatteryTemplate">
+				<groupvariables>
+					<groupvariable
+					id="864b6b4e-4073-49f8-8b60-742e5f97d88f"
+					name="DOM">
+						<modulevariable
+						moduleref="c74e01ec-5e6e-4dbc-abd7-3471bdf58717"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="1f27bf0a-b8d7-48b5-9963-a618dff26269"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="f107a02e-919b-487d-8799-11f285e40645"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="d794f057-02bd-4e74-bb3e-645b8b3d507d"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="d7df7378-73bb-4482-a2e1-047d72823ba0"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="935e2471-c9c5-4b33-9ccc-3d6b8dde8452"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="accd35d4-52c4-4352-a6e3-5eb122091314"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="aef75c75-9163-4c69-a6f6-eb52059cfeee"
+					name="RandNum">
+						<modulevariable
+						moduleref="1f27bf0a-b8d7-48b5-9963-a618dff26269"
+						name="RandNum"
+						variableref="4930527e-6d9f-4ada-9cf3-4b758756287f">
+						</modulevariable>
+						<modulevariable
+						moduleref="f107a02e-919b-487d-8799-11f285e40645"
+						name="RandNum"
+						variableref="879ea178-bdc2-42e6-b271-105d8a9c7b70">
+						</modulevariable>
+						<modulevariable
+						moduleref="accd35d4-52c4-4352-a6e3-5eb122091314"
+						name="RandNum"
+						variableref="8ec1c4ad-38f3-4ed8-af2f-934f245aaa32">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="51111419-ceb6-4bd4-8da8-b52595c98881"
+					name="BatteryTemplateName">
+						<modulevariable
+						moduleref="1f27bf0a-b8d7-48b5-9963-a618dff26269"
+						name="BatteryTemplateName"
+						variableref="7b972085-1713-4f62-8c52-2980a699afcc">
+						</modulevariable>
+						<modulevariable
+						moduleref="accd35d4-52c4-4352-a6e3-5eb122091314"
+						name="BatteryTemplateName"
+						variableref="d424b612-6d80-443b-9a05-dc5e51c6afb2">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="9a8603b3-3ce9-4759-931d-985e6fadf5b6"
+					name="BatteryTemplateDescription">
+						<modulevariable
+						moduleref="f107a02e-919b-487d-8799-11f285e40645"
+						name="BatteryTemplateDescription"
+						variableref="5d9cce39-31e0-463d-855a-63b6718017d4">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="f087b530-7cc6-4267-b56c-de8947439629"
 			name="Validate_Required_BatteryTemplateName"
 			ref="51b83624-5963-4659-b473-8d8c70504f3a"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f107a02e-919b-487d-8799-11f285e40645"
+			name="Enter_BatteryTemplate_Description"
+			ref="7c6b57a3-3fc5-43e8-bfa7-47bda1247223"
 			type="Recording">
 			</testmodule>
 			<modulegroupdef
@@ -1384,17 +1513,17 @@ rxversion="8.2">
 						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
 						</modulevariable>
 						<modulevariable
-						moduleref="d54a1553-b69f-4152-9b12-c6274ef47682"
-						name="DOM"
-						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
-						</modulevariable>
-						<modulevariable
 						moduleref="f9474f5b-8549-4e06-abfa-4d36c32baa25"
 						name="DOM"
 						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
 						</modulevariable>
 						<modulevariable
 						moduleref="b8d33c6a-5e5b-4805-8dad-6124af9c61ff"
+						name="DOM"
+						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
+						</modulevariable>
+						<modulevariable
+						moduleref="8a762633-c9a2-4362-9ad5-30473a34e5fb"
 						name="DOM"
 						variableref="280aff49-d9c4-468c-bece-6c1951b0ef7e">
 						</modulevariable>
@@ -1435,10 +1564,20 @@ rxversion="8.2">
 						name="RandNum"
 						variableref="7694b4f2-e0db-46cc-974e-0f6333d3750b">
 						</modulevariable>
+						<modulevariable
+						moduleref="8a762633-c9a2-4362-9ad5-30473a34e5fb"
+						name="RandNum"
+						variableref="2d46eb18-ff1b-41a4-93c4-f6c8a2285cf1">
+						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="8a0d8952-00d3-427a-ab77-88be60021cf8"
-					name="BatteryPopulation">
+					id="d73d444f-ef1e-4053-8799-239600d9c587"
+					name="BatteryTemplateName">
+						<modulevariable
+						moduleref="8a762633-c9a2-4362-9ad5-30473a34e5fb"
+						name="BatteryTemplateName"
+						variableref="470e5e8f-d213-4014-91bc-bc1b00811c15">
+						</modulevariable>
 					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
@@ -1637,8 +1776,8 @@ rxversion="8.2">
 					name="Click_ResponseOptions_Checkbox">
 					</testmodule>
 					<testmodule
-					id="d54a1553-b69f-4152-9b12-c6274ef47682"
-					name="Enter_CBB_BatteryTemplate">
+					id="8a762633-c9a2-4362-9ad5-30473a34e5fb"
+					name="Select_BatteryTemplate">
 					</testmodule>
 					<testmodule
 					id="f9474f5b-8549-4e06-abfa-4d36c32baa25"
@@ -1647,6 +1786,38 @@ rxversion="8.2">
 					<testmodule
 					id="b8d33c6a-5e5b-4805-8dad-6124af9c61ff"
 					name="Validate_BatteryEntry">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="ebf50685-352a-485c-becc-02957c93541f"
+				name="Add_BatteryTemplate">
+					<testmodule
+					id="c74e01ec-5e6e-4dbc-abd7-3471bdf58717"
+					name="Click_Add_BatteryTemplate">
+					</testmodule>
+					<testmodule
+					id="1f27bf0a-b8d7-48b5-9963-a618dff26269"
+					name="Enter_BatteryTemplate_Name">
+					</testmodule>
+					<testmodule
+					id="f107a02e-919b-487d-8799-11f285e40645"
+					name="Enter_BatteryTemplate_Description">
+					</testmodule>
+					<testmodule
+					id="d794f057-02bd-4e74-bb3e-645b8b3d507d"
+					name="Enter_BatteryTemplate_Status">
+					</testmodule>
+					<testmodule
+					id="d7df7378-73bb-4482-a2e1-047d72823ba0"
+					name="Click_UpdateResponseOptions_Checkbox">
+					</testmodule>
+					<testmodule
+					id="935e2471-c9c5-4b33-9ccc-3d6b8dde8452"
+					name="Click_SaveButton">
+					</testmodule>
+					<testmodule
+					id="accd35d4-52c4-4352-a6e3-5eb122091314"
+					name="Validate_BatteryTemplate_Entry">
 					</testmodule>
 				</modulegroupdef>
 				<modulegroupdef

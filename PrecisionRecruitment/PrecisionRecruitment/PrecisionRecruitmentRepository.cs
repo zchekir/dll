@@ -203,7 +203,7 @@ namespace PrecisionRecruitment
             set { _ParticipantUserName = value; }
         }
 
-        string _GmailAddress = "";
+        string _GmailAddress = "ranorexcogstate@gmail.com";
 
         /// <summary>
         /// Gets or sets the value of variable GmailAddress.
@@ -225,6 +225,30 @@ namespace PrecisionRecruitment
         {
             get { return _BatteryPopulation; }
             set { _BatteryPopulation = value; }
+        }
+
+        string _BatteryTemplateName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable BatteryTemplateName.
+        /// </summary>
+        [TestVariable("a4551ae9-7e82-4cfb-a9d4-a720e5b38b7a")]
+        public string BatteryTemplateName
+        {
+            get { return _BatteryTemplateName; }
+            set { _BatteryTemplateName = value; }
+        }
+
+        string _BatteryBlockName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable BatteryBlockName.
+        /// </summary>
+        [TestVariable("4c592594-0ad6-4515-a8bf-ce621aa84724")]
+        public string BatteryBlockName
+        {
+            get { return _BatteryBlockName; }
+            set { _BatteryBlockName = value; }
         }
 
 #endregion
@@ -1269,9 +1293,15 @@ namespace PrecisionRecruitment
         public partial class AddBatteryTemplatePageFolder : RepoGenBaseFolder
         {
             RepoItemInfo _batterytemplatenamefieldInfo;
+            RepoItemInfo _batterytemplatedescriptionfieldInfo;
             RepoItemInfo _batterytemplatestatusdropdownInfo;
+            RepoItemInfo _responseoptionscheckboxInfo;
             RepoItemInfo _statusrequiredvalidationInfo;
             RepoItemInfo _namerequiredvalidationInfo;
+            RepoItemInfo _addtestbuttonInfo;
+            RepoItemInfo _cogstatetestdropdownInfo;
+            RepoItemInfo _saveblockbuttonInfo;
+            RepoItemInfo _batteryblockcardInfo;
 
             /// <summary>
             /// Creates a new AddBatteryTemplatePage  folder.
@@ -1280,9 +1310,15 @@ namespace PrecisionRecruitment
                     base("AddBatteryTemplatePage", "", parentFolder, 0, null, false, "eb5eaff1-02d7-44c7-8631-69c760f0fb95", "")
             {
                 _batterytemplatenamefieldInfo = new RepoItemInfo(this, "BatteryTemplateNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "235f34cc-7b8c-4b58-94b6-c998ec0f780b");
+                _batterytemplatedescriptionfieldInfo = new RepoItemInfo(this, "BatteryTemplateDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "ed871e74-c0b8-48f1-8072-1e86c910aa34");
                 _batterytemplatestatusdropdownInfo = new RepoItemInfo(this, "BatteryTemplateStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "edaf8b55-8aa5-4f04-bc93-12237fb6b754");
+                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']", 30000, null, "825c735f-1d54-4e5c-8291-ce371dec3840");
                 _statusrequiredvalidationInfo = new RepoItemInfo(this, "StatusRequiredValidation", ".//div[@innertext~'Status is required']", 30000, null, "58f26e92-263a-420b-98d0-cafd59c77eba");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "594a35b6-7e6b-4b5a-ba1a-00cc315257d2");
+                _addtestbuttonInfo = new RepoItemInfo(this, "AddTestButton", ".//img[@src~'https://'+$DOM+'/asset/images/add_icon_off.png']", 30000, null, "0690d370-5e9c-4b2f-ad95-e9924f9da3e2");
+                _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_1']", 30000, null, "14b1c123-0dd1-4b12-a9c7-15736c9e3f9c");
+                _saveblockbuttonInfo = new RepoItemInfo(this, "SaveBlockButton", ".//tag[@tagname='cogstate-generic-simple-edit']//button[@innertext>'SAVE' and @visible='True']", 30000, null, "9c85f83b-640a-42ac-88ee-51fec91cdaa4");
+                _batteryblockcardInfo = new RepoItemInfo(this, "BatteryBlockCard", ".//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4[@innertext=$BatteryBlockName]", 30000, null, "b9339527-389b-4f98-9ee3-d3556837eef6");
             }
 
             /// <summary>
@@ -1322,6 +1358,30 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
+            /// The BatteryTemplateDescriptionField item.
+            /// </summary>
+            [RepositoryItem("ed871e74-c0b8-48f1-8072-1e86c910aa34")]
+            public virtual Ranorex.TextAreaTag BatteryTemplateDescriptionField
+            {
+                get
+                {
+                    return _batterytemplatedescriptionfieldInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateDescriptionField item info.
+            /// </summary>
+            [RepositoryItemInfo("ed871e74-c0b8-48f1-8072-1e86c910aa34")]
+            public virtual RepoItemInfo BatteryTemplateDescriptionFieldInfo
+            {
+                get
+                {
+                    return _batterytemplatedescriptionfieldInfo;
+                }
+            }
+
+            /// <summary>
             /// The BatteryTemplateStatusDropdown item.
             /// </summary>
             [RepositoryItem("edaf8b55-8aa5-4f04-bc93-12237fb6b754")]
@@ -1342,6 +1402,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _batterytemplatestatusdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResponseOptionsCheckbox item.
+            /// </summary>
+            [RepositoryItem("825c735f-1d54-4e5c-8291-ce371dec3840")]
+            public virtual Ranorex.InputTag ResponseOptionsCheckbox
+            {
+                get
+                {
+                    return _responseoptionscheckboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResponseOptionsCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("825c735f-1d54-4e5c-8291-ce371dec3840")]
+            public virtual RepoItemInfo ResponseOptionsCheckboxInfo
+            {
+                get
+                {
+                    return _responseoptionscheckboxInfo;
                 }
             }
 
@@ -1390,6 +1474,102 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _namerequiredvalidationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddTestButton item.
+            /// </summary>
+            [RepositoryItem("0690d370-5e9c-4b2f-ad95-e9924f9da3e2")]
+            public virtual Ranorex.ImgTag AddTestButton
+            {
+                get
+                {
+                    return _addtestbuttonInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddTestButton item info.
+            /// </summary>
+            [RepositoryItemInfo("0690d370-5e9c-4b2f-ad95-e9924f9da3e2")]
+            public virtual RepoItemInfo AddTestButtonInfo
+            {
+                get
+                {
+                    return _addtestbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CogstateTestDropdown item.
+            /// </summary>
+            [RepositoryItem("14b1c123-0dd1-4b12-a9c7-15736c9e3f9c")]
+            public virtual Ranorex.SelectTag CogstateTestDropdown
+            {
+                get
+                {
+                    return _cogstatetestdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateTestDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("14b1c123-0dd1-4b12-a9c7-15736c9e3f9c")]
+            public virtual RepoItemInfo CogstateTestDropdownInfo
+            {
+                get
+                {
+                    return _cogstatetestdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveBlockButton item.
+            /// </summary>
+            [RepositoryItem("9c85f83b-640a-42ac-88ee-51fec91cdaa4")]
+            public virtual Ranorex.ButtonTag SaveBlockButton
+            {
+                get
+                {
+                    return _saveblockbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveBlockButton item info.
+            /// </summary>
+            [RepositoryItemInfo("9c85f83b-640a-42ac-88ee-51fec91cdaa4")]
+            public virtual RepoItemInfo SaveBlockButtonInfo
+            {
+                get
+                {
+                    return _saveblockbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryBlockCard item.
+            /// </summary>
+            [RepositoryItem("b9339527-389b-4f98-9ee3-d3556837eef6")]
+            public virtual Ranorex.H4Tag BatteryBlockCard
+            {
+                get
+                {
+                    return _batteryblockcardInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryBlockCard item info.
+            /// </summary>
+            [RepositoryItemInfo("b9339527-389b-4f98-9ee3-d3556837eef6")]
+            public virtual RepoItemInfo BatteryBlockCardInfo
+            {
+                get
+                {
+                    return _batteryblockcardInfo;
                 }
             }
         }
@@ -4838,6 +5018,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _visitschedulenamebreadcrumbInfo;
             RepoItemInfo _participantbreadcrumbInfo;
             RepoItemInfo _batterytemplatebreadcrumbInfo;
+            RepoItemInfo _batterytemplatenamebreadcrumbInfo;
 
             /// <summary>
             /// Creates a new Breadcrumbs  folder.
@@ -4855,6 +5036,7 @@ namespace PrecisionRecruitment
                 _visitschedulenamebreadcrumbInfo = new RepoItemInfo(this, "VisitScheduleNameBreadcrumb", ".//span[@innertext>$VisitScheduleName]", 30000, null, "8472a298-4084-43e9-bb47-4892db050f5a");
                 _participantbreadcrumbInfo = new RepoItemInfo(this, "ParticipantBreadcrumb", ".//span[@innertext~$ParticipantUserName]", 30000, null, "0836a7ec-3ff0-43eb-a4df-8f67f3324722");
                 _batterytemplatebreadcrumbInfo = new RepoItemInfo(this, "BatteryTemplateBreadcrumb", ".//span[@innertext='Battery Template Builder']", 30000, null, "faec4709-64f8-4408-a19a-8be5e93f98a7");
+                _batterytemplatenamebreadcrumbInfo = new RepoItemInfo(this, "BatteryTemplateNameBreadcrumb", ".//tag[2]//span[@innertext>$BatteryTemplateName]", 30000, null, "1e05ab6c-788f-4ca3-a140-edbc1f782a96");
             }
 
             /// <summary>
@@ -5118,6 +5300,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _batterytemplatebreadcrumbInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateNameBreadcrumb item.
+            /// </summary>
+            [RepositoryItem("1e05ab6c-788f-4ca3-a140-edbc1f782a96")]
+            public virtual Ranorex.SpanTag BatteryTemplateNameBreadcrumb
+            {
+                get
+                {
+                    return _batterytemplatenamebreadcrumbInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateNameBreadcrumb item info.
+            /// </summary>
+            [RepositoryItemInfo("1e05ab6c-788f-4ca3-a140-edbc1f782a96")]
+            public virtual RepoItemInfo BatteryTemplateNameBreadcrumbInfo
+            {
+                get
+                {
+                    return _batterytemplatenamebreadcrumbInfo;
                 }
             }
         }
@@ -5992,12 +6198,12 @@ namespace PrecisionRecruitment
             public GoogleSigninAppFolder(RepoGenBaseFolder parentFolder) :
                     base("GoogleSignin", "/dom[@domain='accounts.google.com']", parentFolder, 30000, null, false, "b26f2e45-c612-4b60-8fd8-0363680b055b", "")
             {
-                _useanotheraccountbuttonInfo = new RepoItemInfo(this, "UseAnotherAccountButton", ".//div[#'identifierLink']/?/?/p[@innertext='Use another account']", 30000, null, "fd936656-b0c6-4cb4-b68c-8e84867d10db");
+                _useanotheraccountbuttonInfo = new RepoItemInfo(this, "UseAnotherAccountButton", ".//div[#'view_container']//div[@innertext='Use another account']", 30000, null, "fd936656-b0c6-4cb4-b68c-8e84867d10db");
                 _emailfieldInfo = new RepoItemInfo(this, "EmailField", ".//input[#'identifierId']", 30000, null, "fc3a780c-d661-4032-a6c3-028ad6372319");
                 _emailnextbuttonInfo = new RepoItemInfo(this, "EmailNextButton", ".//div[#'identifierNext']/?/?/span[@innertext='Next']", 30000, null, "ec53e776-3a8e-44d6-9208-a6e94f3ede4e");
                 _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//div[#'password']//input[@name='password']", 30000, null, "3d43d72b-f60e-45e9-9788-c3db8d1c5f02");
                 _passwordnextbuttonInfo = new RepoItemInfo(this, "PasswordNextButton", ".//div[#'passwordNext']//span[@innertext='Next']", 30000, null, "4001ae90-b375-4e97-8208-4553c98d2d13");
-                _ranorexuseraccountmultipleInfo = new RepoItemInfo(this, "RanorexUserAccountMultiple", ".//div[#'view_container']//p[@innertext=$GmailAddress]", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
+                _ranorexuseraccountmultipleInfo = new RepoItemInfo(this, "RanorexUserAccountMultiple", ".//div[#'view_container']//div[@id='profileIdentifier' and @innertext=$GmailAddress]", 30000, null, "45c4abdc-9001-40db-bba4-e9a0d0d810ba");
                 _ranorexuseraccountsingleInfo = new RepoItemInfo(this, "RanorexUserAccountSingle", ".//div[#'view_container']//div[@innertext~'([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$']", 30000, null, "26950d79-cb5d-46ca-bcdc-f2244b470f30");
             }
 
@@ -6029,11 +6235,11 @@ namespace PrecisionRecruitment
             /// The UseAnotherAccountButton item.
             /// </summary>
             [RepositoryItem("fd936656-b0c6-4cb4-b68c-8e84867d10db")]
-            public virtual Ranorex.PTag UseAnotherAccountButton
+            public virtual Ranorex.DivTag UseAnotherAccountButton
             {
                 get
                 {
-                    return _useanotheraccountbuttonInfo.CreateAdapter<Ranorex.PTag>(true);
+                    return _useanotheraccountbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
@@ -6149,11 +6355,11 @@ namespace PrecisionRecruitment
             /// The RanorexUserAccountMultiple item.
             /// </summary>
             [RepositoryItem("45c4abdc-9001-40db-bba4-e9a0d0d810ba")]
-            public virtual Ranorex.PTag RanorexUserAccountMultiple
+            public virtual Ranorex.DivTag RanorexUserAccountMultiple
             {
                 get
                 {
-                    return _ranorexuseraccountmultipleInfo.CreateAdapter<Ranorex.PTag>(true);
+                    return _ranorexuseraccountmultipleInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 

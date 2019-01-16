@@ -277,6 +277,18 @@
       <UserCode>true</UserCode>
       <id>98b7c853-b0c9-489c-8b9f-9d87934a9877</id>
     </Compile>
+    <Compile Include="AddBatteryPage\Select_BatteryTemplate.cs">
+      <BoundTo>560be4fc-ec38-45bb-9785-aa9415e0a615</BoundTo>
+      <DependentUpon>Select_BatteryTemplate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b9f556e5-69ac-4514-a46f-1c52fd6ff3b7</id>
+    </Compile>
+    <Compile Include="AddBatteryPage\Select_BatteryTemplate.UserCode.cs">
+      <BoundTo>560be4fc-ec38-45bb-9785-aa9415e0a615</BoundTo>
+      <DependentUpon>Select_BatteryTemplate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1328465b-219a-4a71-bbac-7877fc400f46</id>
+    </Compile>
     <Compile Include="AddBatteryPage\Validate_BatteryBlocks.cs">
       <BoundTo>8af189c6-f773-4b3e-969d-81f8e2d69f5c</BoundTo>
       <DependentUpon>Validate_BatteryBlocks.rxrec</DependentUpon>
@@ -1228,6 +1240,18 @@
       <id>39fd6341-81b7-4cd1-acb1-fc596fcaf5c5</id>
       <BoundTo>c23f0090-dc4f-4ff0-8ff3-745cb38e72e0</BoundTo>
     </Compile>
+    <Compile Include="BatteryTemplatePage\Click_AddTest_Button.cs">
+      <BoundTo>79e64a3a-ccc9-458a-b728-06ced33c7a69</BoundTo>
+      <DependentUpon>Click_AddTest_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>02cacbe1-8487-47b2-84e0-be2835bbebb9</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_AddTest_Button.UserCode.cs">
+      <BoundTo>79e64a3a-ccc9-458a-b728-06ced33c7a69</BoundTo>
+      <DependentUpon>Click_AddTest_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>61239ec7-bcc0-489c-b23c-72ed094a8e92</id>
+    </Compile>
     <Compile Include="BatteryTemplatePage\Click_Add_BatteryTemplate.cs">
       <BoundTo>36ae8b63-024e-4d47-a7ee-db0a56acb477</BoundTo>
       <DependentUpon>Click_Add_BatteryTemplate.rxrec</DependentUpon>
@@ -1263,6 +1287,102 @@
       <DependentUpon>Click_BatteryTemplateStatus_Dropdown.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>107b6b25-5165-40ad-aeb3-a1b02185baac</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_SaveBatteryTemplate_Properties.cs">
+      <BoundTo>5818c1c9-b291-4155-9ffb-84db46c7bfdb</BoundTo>
+      <DependentUpon>Click_SaveBatteryTemplate_Properties.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db4421b4-7248-4ef6-a9a3-68e02a6b767b</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_SaveBatteryTemplate_Properties.UserCode.cs">
+      <BoundTo>5818c1c9-b291-4155-9ffb-84db46c7bfdb</BoundTo>
+      <DependentUpon>Click_SaveBatteryTemplate_Properties.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d530ff48-7b25-43cb-acf0-cb6f73f0c402</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_UpdateResponseOptions_Checkbox.cs">
+      <BoundTo>4ad402d6-3e92-4003-baae-232bf51f77c8</BoundTo>
+      <DependentUpon>Click_UpdateResponseOptions_Checkbox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dfe0e186-bbed-40cd-a860-42cc8a9b3d6a</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Click_UpdateResponseOptions_Checkbox.UserCode.cs">
+      <BoundTo>4ad402d6-3e92-4003-baae-232bf51f77c8</BoundTo>
+      <DependentUpon>Click_UpdateResponseOptions_Checkbox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>85baade2-7f36-4f8a-a1b3-39c8aae84bb5</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Enter_BatteryTemplate_Name.cs">
+      <BoundTo>96304c43-75db-4cea-9224-382f7ff9584a</BoundTo>
+      <DependentUpon>Enter_BatteryTemplate_Name.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>569a04de-e697-43d2-9dbe-4467e91e117d</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Enter_BatteryTemplate_Name.UserCode.cs">
+      <BoundTo>96304c43-75db-4cea-9224-382f7ff9584a</BoundTo>
+      <DependentUpon>Enter_BatteryTemplate_Name.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1d9d170e-5bc2-4297-ac9f-259bb0f941ab</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Enter_BatteryTemplate_Description.cs">
+      <BoundTo>24b7f43b-6ccf-487d-a154-321f271fa1ca</BoundTo>
+      <DependentUpon>Enter_BatteryTemplate_Description.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>842f1077-ef48-4e34-b701-4a268ee40117</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Enter_BatteryTemplate_Description.UserCode.cs">
+      <BoundTo>24b7f43b-6ccf-487d-a154-321f271fa1ca</BoundTo>
+      <DependentUpon>Enter_BatteryTemplate_Description.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>095fdd38-4145-48e1-aa72-572abbcc8b3f</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Enter_BatteryTemplate_Status.cs">
+      <BoundTo>ff1f0696-82db-48c9-9d28-970a6dc667ca</BoundTo>
+      <DependentUpon>Enter_BatteryTemplate_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c7a876ba-e61f-4a42-bddc-d428444c4953</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Enter_BatteryTemplate_Status.UserCode.cs">
+      <BoundTo>ff1f0696-82db-48c9-9d28-970a6dc667ca</BoundTo>
+      <DependentUpon>Enter_BatteryTemplate_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4e30c0c5-054b-4d3f-b91f-90c10d4dd9ae</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Select_CogstateTest.cs">
+      <BoundTo>aef7a810-d874-491d-ab80-01f27933cab3</BoundTo>
+      <DependentUpon>Select_CogstateTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2a35932-5bc5-4f0c-a3c3-85d43d43f926</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Select_CogstateTest.UserCode.cs">
+      <BoundTo>aef7a810-d874-491d-ab80-01f27933cab3</BoundTo>
+      <DependentUpon>Select_CogstateTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36b258f9-c7b2-4b82-a1f3-f200da95b326</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_BatteryTemplate_Configured.cs">
+      <BoundTo>be6d62a8-a690-4069-a5e9-57fe6711236d</BoundTo>
+      <DependentUpon>Validate_BatteryTemplate_Configured.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>55d78890-0933-4629-8ff2-44d93c3e80e5</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_BatteryTemplate_Configured.UserCode.cs">
+      <BoundTo>be6d62a8-a690-4069-a5e9-57fe6711236d</BoundTo>
+      <DependentUpon>Validate_BatteryTemplate_Configured.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3ac0b728-dd4b-4c76-92c5-ce844cfe4632</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_BatteryTemplate_Entry.cs">
+      <BoundTo>3487cf00-e4f6-49d2-9bc6-157b4616ad6c</BoundTo>
+      <DependentUpon>Validate_BatteryTemplate_Entry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1673b39f-3576-4a98-94e4-67af8488c07d</id>
+    </Compile>
+    <Compile Include="BatteryTemplatePage\Validate_BatteryTemplate_Entry.UserCode.cs">
+      <BoundTo>3487cf00-e4f6-49d2-9bc6-157b4616ad6c</BoundTo>
+      <DependentUpon>Validate_BatteryTemplate_Entry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f94f109a-2446-43d7-aa5b-0c635e43fd52</id>
     </Compile>
     <Compile Include="BatteryTemplatePage\Validate_Required_BatteryTemplateName.cs">
       <BoundTo>24952bda-9c3e-4545-9416-5016cc59d64b</BoundTo>
@@ -2612,6 +2732,11 @@
       <id>97a82ac4-146f-4f71-880e-24f91f26e62a</id>
       <recordtableid>aa1f6d10-6783-4d59-b81b-8bebede2e0a8</recordtableid>
     </None>
+    <None Include="AddBatteryPage\Select_BatteryTemplate.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>560be4fc-ec38-45bb-9785-aa9415e0a615</id>
+      <recordtableid>28d48d57-1bf5-4535-b798-78226952b412</recordtableid>
+    </None>
     <None Include="AddBatteryPage\Validate_BatteryBlocks.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>8af189c6-f773-4b3e-969d-81f8e2d69f5c</id>
@@ -3021,6 +3146,11 @@
       <id>c23f0090-dc4f-4ff0-8ff3-745cb38e72e0</id>
       <recordtableid>53bddf86-df67-4ac4-8eb0-61030673d1dd</recordtableid>
     </None>
+    <None Include="BatteryTemplatePage\Click_AddTest_Button.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>79e64a3a-ccc9-458a-b728-06ced33c7a69</id>
+      <recordtableid>b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c</recordtableid>
+    </None>
     <None Include="BatteryTemplatePage\Click_Add_BatteryTemplate.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>36ae8b63-024e-4d47-a7ee-db0a56acb477</id>
@@ -3035,6 +3165,46 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>d5feac99-539b-444c-88c1-b54e2f2dad78</id>
       <recordtableid>5400f2a0-757c-4beb-bafd-8b0c7e4f7a21</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Click_SaveBatteryTemplate_Properties.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>5818c1c9-b291-4155-9ffb-84db46c7bfdb</id>
+      <recordtableid>baa32658-5be6-4fd7-aaba-90601c13852a</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Click_UpdateResponseOptions_Checkbox.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>4ad402d6-3e92-4003-baae-232bf51f77c8</id>
+      <recordtableid>3a589b0e-e7ee-49ee-b831-09ef06b7ab3c</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Enter_BatteryTemplate_Name.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>96304c43-75db-4cea-9224-382f7ff9584a</id>
+      <recordtableid>ae83b9f8-3b76-4061-aa20-12d64db7be7f</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Enter_BatteryTemplate_Description.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>24b7f43b-6ccf-487d-a154-321f271fa1ca</id>
+      <recordtableid>7c6b57a3-3fc5-43e8-bfa7-47bda1247223</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Enter_BatteryTemplate_Status.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>ff1f0696-82db-48c9-9d28-970a6dc667ca</id>
+      <recordtableid>002eeea4-8e37-474f-b0d9-a615adbcb80a</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Select_CogstateTest.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>aef7a810-d874-491d-ab80-01f27933cab3</id>
+      <recordtableid>e231f99c-c036-461b-93e8-b4324c40315e</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Validate_BatteryTemplate_Configured.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>be6d62a8-a690-4069-a5e9-57fe6711236d</id>
+      <recordtableid>3aa46244-6710-428d-afc1-f5aeed5900e2</recordtableid>
+    </None>
+    <None Include="BatteryTemplatePage\Validate_BatteryTemplate_Entry.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3487cf00-e4f6-49d2-9bc6-157b4616ad6c</id>
+      <recordtableid>08b46a7b-cd12-4842-8e9c-2c245de86a97</recordtableid>
     </None>
     <None Include="BatteryTemplatePage\Validate_Required_BatteryTemplateName.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

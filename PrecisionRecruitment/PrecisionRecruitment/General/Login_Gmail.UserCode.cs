@@ -39,7 +39,7 @@ namespace PrecisionRecruitment.General
         	if (RanorexUserAccountMultiple.Exists(new Duration(1000)))
         	{
         		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RanorexUserAccountMultiple' at Center.", RanorexUserAccountMultiple);
-            	RanorexUserAccountMultiple.FindAdapter<PTag>().Click();
+            	RanorexUserAccountMultiple.FindAdapter<DivTag>().Click();
             	
             	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PasswordField' at Center.", PasswordField);
             	PasswordField.FindAdapter<InputTag>().Click();
