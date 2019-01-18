@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.ReportsPage
+namespace PrecisionRecruitment.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_GenerateReport_Button recording.
+    ///The Validate_Upload_Failure recording.
     /// </summary>
-    [TestModule("d5827b0a-fbdc-4cd8-bc10-56d077987d88", ModuleType.Recording, 1)]
-    public partial class Click_GenerateReport_Button : ITestModule
+    [TestModule("2fa0a2f8-d93a-44d4-8572-1f9cf92b901e", ModuleType.Recording, 1)]
+    public partial class Validate_Upload_Failure : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_GenerateReport_Button instance = new Click_GenerateReport_Button();
+        static Validate_Upload_Failure instance = new Validate_Upload_Failure();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_GenerateReport_Button()
+        public Validate_Upload_Failure()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_GenerateReport_Button Instance
+        public static Validate_Upload_Failure Instance
         {
             get { return instance; }
         }
@@ -89,16 +89,18 @@ namespace PrecisionRecruitment.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.NoInternetConnectionPopup'", repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo, new ActionTimeout(10000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.NoInternetConnectionPopup'.", repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo);
+            Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='                    https://cgst-qc-duo.cogstate.com/sync.html                ') on item 'CogstateSolutionPlatform.SyncURL'.", repo.CogstateSolutionPlatform.SyncURLInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.CogstateSolutionPlatform.SyncURLInfo, "InnerText", "                    https://cgst-qc-duo.cogstate.com/sync.html                ");
+            Delay.Milliseconds(100);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Data Upload failed screen is displayed as expected", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
             
         }
 

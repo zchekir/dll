@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.ReportsPage
+namespace PrecisionRecruitment.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_GenerateReport_Button recording.
+    ///The Validate_Sync_Success recording.
     /// </summary>
-    [TestModule("d5827b0a-fbdc-4cd8-bc10-56d077987d88", ModuleType.Recording, 1)]
-    public partial class Click_GenerateReport_Button : ITestModule
+    [TestModule("ff849467-5c5b-4735-9e50-3e3d77a297b2", ModuleType.Recording, 1)]
+    public partial class Validate_Sync_Success : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_GenerateReport_Button instance = new Click_GenerateReport_Button();
+        static Validate_Sync_Success instance = new Validate_Sync_Success();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_GenerateReport_Button()
+        public Validate_Sync_Success()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_GenerateReport_Button Instance
+        public static Validate_Sync_Success Instance
         {
             get { return instance; }
         }
@@ -89,16 +89,21 @@ namespace PrecisionRecruitment.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo.WaitForExists(5000);
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 45s to exist. Associated repository item: 'CogstateSolutionPlatform.SynchronizationSuccessful'", repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo, new ActionTimeout(45000), new RecordItemIndex(0));
+                repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo.WaitForExists(45000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+R' Press with focus on 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(1));
+            Keyboard.PrepareFocus(repo.CogstateSolutionPlatform.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.R | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Synchronization Successful') on item 'CogstateSolutionPlatform.SynchronizationSuccessful'.", repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo, "InnerText", "Synchronization Successful");
+            Delay.Milliseconds(100);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Data Successfully Synchronized", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
             
         }
 

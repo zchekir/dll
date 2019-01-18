@@ -20,47 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.ReportsPage
+namespace PrecisionRecruitment.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_GenerateReport_Button recording.
+    ///The Open_Sync_URL recording.
     /// </summary>
-    [TestModule("d5827b0a-fbdc-4cd8-bc10-56d077987d88", ModuleType.Recording, 1)]
-    public partial class Click_GenerateReport_Button : ITestModule
+    [TestModule("5e69c26c-7cbc-48b6-a67a-14a2e37f0e49", ModuleType.Recording, 1)]
+    public partial class Open_Sync_URL : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_GenerateReport_Button instance = new Click_GenerateReport_Button();
+        static Open_Sync_URL instance = new Open_Sync_URL();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_GenerateReport_Button()
+        public Open_Sync_URL()
         {
+            URL = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_GenerateReport_Button Instance
+        public static Open_Sync_URL Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _URL;
+
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable URL.
         /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
+        [TestVariable("d566832d-c3ab-4c50-aa34-3ca6763b3680")]
+        public string URL
         {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
+            get { return _URL; }
+            set { _URL = value; }
         }
 
 #endregion
@@ -89,16 +92,8 @@ namespace PrecisionRecruitment.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo.WaitForExists(5000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton.Click(1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton.Click(1);
-            Delay.Milliseconds(90);
+            Open_Sync_URL_browser();
+            Delay.Milliseconds(0);
             
         }
 

@@ -20,48 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.ReportsPage
+namespace PrecisionRecruitment.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_GenerateReport_Button recording.
+    ///The Disconnect_Internet recording.
     /// </summary>
-    [TestModule("d5827b0a-fbdc-4cd8-bc10-56d077987d88", ModuleType.Recording, 1)]
-    public partial class Click_GenerateReport_Button : ITestModule
+    [TestModule("e6bf153b-dbda-43ce-bf19-a9d404778407", ModuleType.Recording, 1)]
+    public partial class Disconnect_Internet : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_GenerateReport_Button instance = new Click_GenerateReport_Button();
+        static Disconnect_Internet instance = new Disconnect_Internet();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_GenerateReport_Button()
+        public Disconnect_Internet()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_GenerateReport_Button Instance
+        public static Disconnect_Internet Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
-        {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
-        }
 
 #endregion
 
@@ -89,16 +79,14 @@ namespace PrecisionRecruitment.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo.WaitForExists(5000);
+            EnableDisable_Ethernet("Disable");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton.Click(1);
-            Delay.Milliseconds(90);
+            EnableDisable_WiFi("Disable");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Delay.Duration(5000, false);
             
         }
 

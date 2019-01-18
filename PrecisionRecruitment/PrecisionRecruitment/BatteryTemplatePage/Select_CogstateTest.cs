@@ -108,7 +108,7 @@ namespace PrecisionRecruitment.BatteryTemplatePage
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryBlockName' with focus on 'CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown'.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown.PressKeys(BatteryBlockName, 1);
+            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown.PressKeys(BatteryBlockName, 2);
             Delay.Milliseconds(10);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown'.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownInfo, new RecordItemIndex(3));

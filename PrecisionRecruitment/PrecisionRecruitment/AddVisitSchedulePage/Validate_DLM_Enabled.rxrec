@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ea91b7f6-04fc-4ba2-87d1-dcbbf925a7fe"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Validate_DLM_Enabled
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_DLM_Enabled"
+	namespace="PrecisionRecruitment.AddVisitSchedulePage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="CompareImage"
+		codegenpropertyname="DataLossMitigationToggle_DLMOn"
+		duration="100ms"
+		enabled="True"
+		imageoptions="0.98;None;0,0,48,24;True;10000000;0ms"
+		imagerect="0,0,48,24"
+		optional="False"
+		screenshotguid="16770526-fe65-46c0-86ae-d9a46c7e152f"
+		screenshotname="DLMOn"
+		searchpropertyid="f595ff5f-57eb-4441-b2b3-6e54eb50fe49">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9bb5db00-dc73-4759-8309-8ee79f3b7b41"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="894,-408,48,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-sm btn-toggle ng-valid ng-dirty ng-valid-parse ng-touched active
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						formly_6_cogstateToggle_dataLossMitigation_5
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						formly_6_cogstateToggle_dataLossMitigation_5
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					isempty="True"
+					name="formly-custom-validation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+						confirmationModal()
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+						model[options.key]
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					isempty="True"
+					name="uib-btn-checkbox"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//button[#'formly_6_cogstateToggle_dataLossMitigation_5']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1a653ade-b581-46df-955e-a064896da3c6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADGAMYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDo6KKK
+YgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACorj/VGpaiuP9UaQypVq0+4frVWrVp9w
+/WgCeiiigAooooASiiimIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqK4/1RqWorj/
+AFRpDKlWrT7h+tVatWn3D9aAJ6KKKACiiigBm4/3G/Sjcf7jfpT6KAGbj/cb9KNx/uN+lPooAZuP
+9xv0o3H+436U+igBm4/3G/Sjcf7jfpT6KAGbj/cb9KNx/uN+lPooAZuP9xv0o3H+436U+igBm4/3
+G/Sjcf7jfpT6KAGbj/cb9KNx/uN+lPooAaDkcUtNX7zfX+lOoAKiuP8AVGpaiuP9UaAKlWrT7h+t
+VatWn3D9aAJ6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGD7zfX+gp1NH
+3m+v9BTqACorj/VGpaiuP9UaAKlWrT7h+tVatWn3D9aAJ6KKKACiiigBu8e//fJo3j3/AO+TS0UA
+JvHv/wB8mjePf/vk0tFACbx7/wDfJo3j3/75NLRQAm8e/wD3yaN49/8Avk0tFACbx7/98mjePf8A
+75NLRQAm8e//AHyaN49/++TS0UAJvHv/AN8mjePf/vk0tFACbx7/APfJo3j3/wC+TS0UANXuemTT
+qKKYgqK4/wBUalqK4/1RpDKlWrT7h+tVatWn3D9aAJ6KKKACiiigBKKKKYgooooAKKKKACiiigAr
+Kj1eaVd0dhI4zjKsT/StWsGwuTBpzKn32kPPoMCod20kZzlbqWX1eZPv2Lr9WI/pTf7bf/nzb/vv
+/wCtVfypHBk2sw7tjP60nlPjOxsYz07etVyPuYe1kWf7bf8A582/77/+tR/bb/8APm3/AH3/APWq
+ssZdgqjJJwK1ItMhVf3mXbvzgUOLXUqEqk9iuuqzuMrp8jD1BJ/pSrqsvnxRy2bxeYwUFiR3+lST
+2ZtwZrVipXkr1yKr3kwnn06QcZk5HocrUyTSvcu8luzXoooqzYKiuP8AVGpaiuP9UaQypVq0+4fr
+VWrVp9w/WgCeiiigAooooASiiimIKKKKACiiigAooooAK5m1B8nPYsR+grpqxtJgW4011PBEpIPp
+wKn7SMaseayRJHLGDE5fHlqQUweaeLmL7P5ZPzCIgHHf0qvJaTocGMn3UZpvkTf88pP++TWlkYc0
+l0H2TBbuMt0zW1WF5E3/ADyk/wC+TV2K6ukXD27vjvgg0NXNKM+VWZfdgqMzdAOawSCJLDPeckfm
+taDC5u/ldfJi7+pqDUUWO605FGAJMD81rOfwly97XoatFFFUbBUVx/qjUtRXH+qNIZUq1afcP1qr
+Vq0+4frQBPRRRQAUUUUAJRRRTEFFFFABRRRQAUUUUAFZn9h23/PSb8x/hWnRUtJ7icU9zM/sO2/5
+6TfmP8KP7Dtv+ek35j/CtOilyR7C5I9jM/sO2/56TfmP8KP7Dtv+ek35j/CtOijkj2Dkj2Mz+w7b
+/npN+Y/wp0Wj28UqSK8pKMGGSO34Vo0UckewckewUUUVZQVFcf6o1LUVx/qjSGVKtWn3D9aq1atP
+uH60AT0UUUAFFFFACUUUUxBRRRQAUUUUAFFFFABVa9ufs8Y28u3SrNZeqZ+0J6bf60IipJxjdFN3
+klOZHLH3pu2r8TqFj+dREFO9c9T9O9PEkRtgpZQ4hIHPr2qrnKo36maEyQByTWjFpS7czOc+i9qr
+2OPtke7pmtqhs0owUldmdJBNZDzIJC8Y+8jVdhkWaJZF6EU98bDu6Y5qnpefspz/AHjipNkuWVkX
+KKKKCwqK4/1RqWorj/VGkMqVatPuH61Vq1afcP1oAnooooAKKKKAEooopiCiiigAooooAKKKKACq
+95b/AGiMY4delWKKBNJqzMGSN4zh1Kn3ptdBRVcxh9X8znwSCCDgitGLUxtxKhz6r3q/RSbuVGk4
+7MoyTTXg8uGMoh6s1W4o1iiVF6Cn0UjRRs7vcKKKKCgqK4/1RqWorj/VGkMqVatPuH61Vq1afcP1
+oAnooooAKKKKAEooopiCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKiuP8AVGpaiuP9
+UaQypVq0+4frVWrVp9w/WgCeiiigAooooASiiimIKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAqK4/1RqWorj/VGkMqVatPuH61Vq1afcP1oAnooooAKKKKAIfn/vn8hR8/98/kKKKAD5/7
+5/IUfP8A3z+QoooAPn/vn8hR8/8AfP5CiigA+f8Avn8hR8/98/kKKKAD5/75/IUfP/fP5CiigA+f
+++fyFHz/AN8/kKKKAD5/75/IUfP/AHz+QoooAPn/AL5/IUfP/fP5CiigB6MSDnqDinUUUAFRXH+q
+NFFAFSrVp9w/WiigCeiiigAooooA/9k=
+			</helperscreenshot>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="CompareImage"
+		codegenpropertyname="DataLossNotificationToggle_DLNOn"
+		duration="100ms"
+		enabled="True"
+		imageoptions="0.98;None;0,0,48,24;True;10000000;0ms"
+		imagerect="0,0,48,24"
+		optional="False"
+		screenshotguid="f22b20ef-0e49-4d4b-95ec-7fc88acf9c71"
+		screenshotname="DLNOn"
+		searchpropertyid="c7e3a01f-9eee-431b-80b2-1903e904f92c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="894,-415,48,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-sm btn-toggle ng-valid ng-dirty ng-touched
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						formly_6_cogstateToggle_dataLossMitigationNotifications_6
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						formly_6_cogstateToggle_dataLossMitigationNotifications_6
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					isempty="True"
+					name="formly-custom-validation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+						confirmationModal()
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-disabled"
+					readonly="False"
+					type="System.String">
+						options.templateOptions['disabled']
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+						model[options.key]
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					isempty="True"
+					name="uib-btn-checkbox"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//button[#'formly_6_cogstateToggle_dataLossMitigationNotifications_6']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="baf2032d-014e-4e51-ad27-b84c39b97acb">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADGAMYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigBi/eb6/wBBTqaPvN9f6CnUAFRXH+qNS1Fcf6o0
+AVKtWn3D9aq1atPuH60AT0UUUAFFFFABRTd5/uN+lG8/3G/SgB1FN3n+436Ubz/cb9KAHUU3ef7j
+fpRvP9xv0oAdRTd5/uN+lG8/3G/SgB1FN3n+436Ubz/cb9KAHUU3ef7jfpRvP9xv0oAdRTd5/uN+
+lG8/3G/SgB1FN3n+436Ubz/cb9KAEH3m+v8AQU6kUHknuc0tABUVx/qjUtRXH+qNAFSrVp9w/Wqt
+WrT7h+tAE9FFFABRRRQAlFFFMQUUUUAFFFFABRRRQAUUUUAFFQSXcEbYeUZ9BzTft9r/AM9f/HT/
+AIUC5o9yzRVb7fa/89f/AB0/4Ufb7X/nr/46f8KLC549yzRUcU8U3+rcN7d6koKTuFFFFABUVx/q
+jUtRXH+qNIZUq1afcP1qrVq0+4frQBPRRRQAUUUUAJRRRTEFFFFABRRRQAUUUUAFUdSuGjQRocM3
+U+1XqzNUU+cj9iuKa3M6rajoVFt5GTcF4PI5GT+FL9nk2htvBUsOewqZJ4wY3YNvjXaABwfSni7Q
+QeUVP+r2g+hqtTlSj1ZUjjMkiovVjitiKygjXBQOe5YZrMs3Ed1GzdM4rbqZG1CKabZSurJApltx
+5ci8jb3qa0m8+3Vz16H61LK4jjZ26AZqrpilbXJ/iYkUuhra09C3RRRQWFRXH+qNS1Fcf6o0hlSr
+Vp9w/WqtWrT7h+tAE9FFFABRRRQAlFFFMQUUUUAFFFFABRRRQAVHPCs8ZR/wPpUlFANX0ZkyafOp
++UBx6g4pv2G5/wCef/jwrYop8zMfYRMf7Dc/88//AB4VZi+3xLtCBgOm4j/Gr9FFxqils2UvIuLh
+h9pYKg/hWrigKoVRgDgClopGkYpBRRRQMKiuP9UalqK4/wBUaQypVq0+4frVWrVp9w/WgCeiiigA
+ooooASiiimIKKKKACiiigAooooAKyo9XmlXdHYSOM4yrE/0rVrI0Zytiyr95pTj8hUO90kTK90kP
+Oq3C9dPlH1J/wpP7Wm/58JPzP+FaC264+fLHvzTJrcBSydu1Fn3Dll3KX9rTf8+En5n/AAo/tab/
+AJ8JPzP+FTBWb7oJ+goCsRkKSPXFPlfcLS7kY1S5PTTpT+J/woXVZfPijls3i8xgoLEjv9KlXenz
+AED1xUGovvu9Pb/pp/Val3SvcmXMle5q0UUVoaBUVx/qjUtRXH+qNIZUq1afcP1qrVq0+4frQBPR
+RRQAUUUUAJRRRTEFFFFABRRRQAUUUUAFY2h8R5PTzCP0FbNZOixiTT3HQ+YcH8BUP4kS/iRr0jEB
+ST0qESSpwybvcVHK8sgxsYD0xVFjUZdgUttw2aWSRWXgDOSfpTPLf+435UeW/wDcb8qYhZGDBQAO
+AOaqXY/0mw/66/1WriQOx5G0e9V9TAW808DoJP6rUz2Jn8JqUUUVRQVFcf6o1LUVx/qjSGVKtWn3
+D9aq1atPuH60AT0UUUAFFFFACUUUUxBRRRQAUUUUAFFFFABWZ/Ydt/z0m/Mf4Vp0VLSe4nFPczP7
+Dtv+ek35j/Cj+w7b/npN+Y/wrTopckewuSPYzP7Dtv8AnpN+Y/wo/sO2/wCek35j/CtOijkj2Dkj
+2Mz+w7b/AJ6TfmP8KdFo9vFKkivKSjBhkjt+FaNFHJHsHJHsFFFFWUFRXH+qNS1Fcf6o0hlSrVp9
+w/WqtWrT7h+tAE9FFFABRRRQAlFFFMQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABUV
+x/qjUtRXH+qNIZUq1afcP1qrVq0+4frQBPRRRQAUUUUAJRUW3/ab86Nv+0350AS0VFt/2m/Ojb/t
+N+dAEtFRbf8Aab86Nv8AtN+dAEtFRbf9pvzo2/7TfnQBLRUW3/ab86Nv+0350AS0VFt/2m/Ojb/t
+N+dAEtFRbf8Aab86Nv8AtN+dAEtFRbf9pvzo2/7TfnQBLRTIySCDzg4p9MQVFcf6o1LUVx/qjSGV
+KtWn3D9aq1atPuH60AT0UUUAFFFFAEVFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAsf8
+X1/pT6ZH/F9f6U+gAqK4/wBUalqK4/1RoAqVatPuH61Vq1afcP1oAnooooAKKKKAIqKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigBY/4vr/Sn0yP+L6/0p9ABUVx/qjUtRXH+qNAFSrVp9w/W
+qtWrT7h+tAE9FFFABRRRQBFRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUALH/ABfX+lPo
+ooAKiuP9UaKKAKlWrT7h+tFFAE9FFFABRRRQB//Z
+			</helperscreenshot>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1ff1a280-b33b-48b2-9d18-71e61f82f258">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="aaae9d59-2c21-4d82-bac1-6bb8cdd7cbe7"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="205,-733,19,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						visit-status-value ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						On
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-visit-schedule-compact']/div/div[2]/ul//tag[@tagname='cogstate-generic-visit-schedule-designer-list']/div/div/div/div[2]/div[2]/span[@innertext='On']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="647e7553-6496-4fe9-bece-1dab75e7c465">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA8AGYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDUM84A
+Jjxnp8p5pv2qT+6v5VMrruVndQcjo2QeOuO1J+7CEkxlsE8Y61rp2ObXuRG6kBwVUH6Gj7XJ6L+V
+TsYnkyxjPz5zkdMVG3lG3b7gPYjHr+dGnYHfuOgnaRirAdM8U9pcSbBGzHGeMf1NV7P/AFp/3alZ
+tlyxIbBQDIUnufSlLRlwba1HiZCm4kLzg7uMGl82MEDzFyegz1qAozOr7ThpQ2MdBjGTTbgOwkUK
+w54Cp97pyTUlkpu4hIVz0OM5GM/nU9VmDAudrY80HgdsCrNABRRRQAUUUUAU/Ij/AOe6/wCfxo8i
+P/nuv+fxpkkWGjVMksoP4mnC2cnCsp5IJB6Gtfmc/wAhfIj/AOe6/wCfxo8iP/nuv+fxpBayEtyv
+y+9Q0b9Qem6LO0QQSzI4cqhI9KqxXepTRiSO3iZT0P8Ak1KP+PO6/wCuZ/kaZpeZLVELMFQZwDjJ
+JNYTu52uXHXYXztV/wCfaL8//r0yW71KGMySW8SqOp/yattI8TMindyuC3OM1BqDs1hcK+CUKjIG
+M8ipasm7lNNLcuQOZLeORsZZQTj3FSVDaf8AHnB/1zX+VTVotilsFFFFAwooooAoGYnaSq7lAAbn
+NL9obP3UAznGOpq9RV8y7GfI+5SF04bdhc/jUJ5Oa06KOa3QTpt7soAH7Fcnt5Z/kaj094BZRbrh
+YpBkH5gDjJ6g1ouodGRhlWGCPaqv9mWf/PH/AMeP+NZSu5XQ1FrYd5lpjm5jJ3BiS4ySKr6jLAbO
+fy5kZnKnAYHuKm/syz/54/8Ajx/xo/syz/54/wDjx/xpPmasN8zVia0/484P+ua/yqamooRFRRhV
+GAPanVaKQUUUUDCiiigAooy398/pRlv75/Slcdgooy398/pRlv75/Si4WCijLf3z+lGW/vn9KLhY
+KKMt/fP6UZb++f0ouFgooy398/pRlv75/Si4WCijLf3z+lGW/vn9KLhYKKMt/fP6UUXCx//Z
+			</helperscreenshot>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Data Loss Mitigation is Enabled"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="dc81bf39-58cd-41a8-8d51-057b90ce6798">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c7b5b0c3-5b0d-4f3f-b4ca-af1a10361467"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="PrecisionRecruitmentRepository"
+	relativepath="..\PrecisionRecruitmentRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentRepository"
+		namespace="PrecisionRecruitment">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_DLM_Enabled.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

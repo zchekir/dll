@@ -124,6 +124,7 @@
     </Reference>
     <Reference Include="System.Drawing">
     </Reference>
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms">
     </Reference>
     <Reference Include="System.Xml">
@@ -696,6 +697,18 @@
       <UserCode>true</UserCode>
       <id>6898894f-76a3-426c-a96f-7c904f061c9b</id>
       <BoundTo>9fbe7663-83bc-4dae-9212-4f5405476cd8</BoundTo>
+    </Compile>
+    <Compile Include="AddVisitSchedulePage\Validate_DLM_Enabled.cs">
+      <BoundTo>c30d9f55-345b-4f1f-8010-05eb98438e55</BoundTo>
+      <DependentUpon>Validate_DLM_Enabled.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>68ab55e4-617c-4cfd-9577-d24df2fd3d8e</id>
+    </Compile>
+    <Compile Include="AddVisitSchedulePage\Validate_DLM_Enabled.UserCode.cs">
+      <BoundTo>c30d9f55-345b-4f1f-8010-05eb98438e55</BoundTo>
+      <DependentUpon>Validate_DLM_Enabled.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>178a7be1-639f-4cd9-8386-d7f6341d4b73</id>
     </Compile>
     <Compile Include="AddVisitSchedulePage\Validate_Min_VisitScheduleName.cs">
       <DependentUpon>Validate_Min_VisitScheduleName.rxrec</DependentUpon>
@@ -1552,6 +1565,30 @@
       <id>db84955a-5624-4273-9538-9c8d86f98a50</id>
       <BoundTo>85c7a097-25c5-47a5-bca4-7549a0fda07d</BoundTo>
     </Compile>
+    <Compile Include="General\Connect_Internet.cs">
+      <BoundTo>658bad32-779b-4de6-9fe0-6ea518e48dc0</BoundTo>
+      <DependentUpon>Connect_Internet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3de1a89f-cc4e-40c6-bf69-4809d92bb01a</id>
+    </Compile>
+    <Compile Include="General\Connect_Internet.UserCode.cs">
+      <BoundTo>658bad32-779b-4de6-9fe0-6ea518e48dc0</BoundTo>
+      <DependentUpon>Connect_Internet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f233900-591a-45fb-aec3-350976c6741e</id>
+    </Compile>
+    <Compile Include="General\Disconnect_Internet.cs">
+      <BoundTo>2aef2579-050a-4589-a805-60e003551b93</BoundTo>
+      <DependentUpon>Disconnect_Internet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5f789707-3690-4e91-9921-573670ce029f</id>
+    </Compile>
+    <Compile Include="General\Disconnect_Internet.UserCode.cs">
+      <BoundTo>2aef2579-050a-4589-a805-60e003551b93</BoundTo>
+      <DependentUpon>Disconnect_Internet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a550e6c8-e006-4acc-9bfc-e291a2224751</id>
+    </Compile>
     <Compile Include="General\Generate_Secret.cs">
       <BoundTo>dd04ad51-ac11-4278-affd-b92f9c31a61d</BoundTo>
       <DependentUpon>Generate_Secret.rxrec</DependentUpon>
@@ -1672,6 +1709,18 @@
       <UserCode>true</UserCode>
       <id>f52b8002-0a53-4799-a8a6-7d7a1c981f04</id>
     </Compile>
+    <Compile Include="General\Open_Sync_URL.cs">
+      <BoundTo>2a4ae2ad-a424-402f-84b8-9acdee1e4cc3</BoundTo>
+      <DependentUpon>Open_Sync_URL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d05b1d3b-31f1-4c5e-8af8-5632abc5f559</id>
+    </Compile>
+    <Compile Include="General\Open_Sync_URL.UserCode.cs">
+      <BoundTo>2a4ae2ad-a424-402f-84b8-9acdee1e4cc3</BoundTo>
+      <DependentUpon>Open_Sync_URL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4e0c3b7b-08e3-48cd-8e15-0a705d8c8c64</id>
+    </Compile>
     <Compile Include="General\Open_Unsecure_Browser.cs">
       <DependentUpon>Open_Unsecure_Browser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1707,6 +1756,30 @@
       <UserCode>true</UserCode>
       <id>ca2c4d1e-d93c-450a-b936-2730179002af</id>
       <BoundTo>9c3cbe88-76d0-476e-b8ee-010ba94f9a52</BoundTo>
+    </Compile>
+    <Compile Include="General\Validate_Sync_Success.cs">
+      <BoundTo>4882e790-7588-4265-85c6-965906273c9a</BoundTo>
+      <DependentUpon>Validate_Sync_Success.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>517f5d5c-6893-4153-b7cb-fc0a74ef6777</id>
+    </Compile>
+    <Compile Include="General\Validate_Sync_Success.UserCode.cs">
+      <BoundTo>4882e790-7588-4265-85c6-965906273c9a</BoundTo>
+      <DependentUpon>Validate_Sync_Success.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d2e82d0c-03e2-4e16-9de3-87cf5663ac0f</id>
+    </Compile>
+    <Compile Include="General\Validate_Upload_Failure.cs">
+      <BoundTo>3be7fced-41af-48ae-93c9-ac48aeada18e</BoundTo>
+      <DependentUpon>Validate_Upload_Failure.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eed5d63b-e50f-4af1-99d0-70170a5f1eaa</id>
+    </Compile>
+    <Compile Include="General\Validate_Upload_Failure.UserCode.cs">
+      <BoundTo>3be7fced-41af-48ae-93c9-ac48aeada18e</BoundTo>
+      <DependentUpon>Validate_Upload_Failure.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ffd98f54-26e6-491c-b73b-f0ee722dd8bb</id>
     </Compile>
     <Compile Include="General\Verify_Secure_URL.cs">
       <DependentUpon>Verify_Secure_URL.rxrec</DependentUpon>
@@ -2967,6 +3040,11 @@
       <id>9fbe7663-83bc-4dae-9212-4f5405476cd8</id>
       <recordtableid>8f5dbbf6-ea58-4c62-9550-7b304a4984fb</recordtableid>
     </None>
+    <None Include="AddVisitSchedulePage\Validate_DLM_Enabled.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c30d9f55-345b-4f1f-8010-05eb98438e55</id>
+      <recordtableid>ea91b7f6-04fc-4ba2-87d1-dcbbf925a7fe</recordtableid>
+    </None>
     <None Include="AddVisitSchedulePage\Validate_Min_VisitScheduleName.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>9927ae51-0e03-4c34-8460-8506c53ac28a</id>
@@ -3368,6 +3446,16 @@
       <id>85c7a097-25c5-47a5-bca4-7549a0fda07d</id>
       <recordtableid>6e90b38c-3821-42fe-b63a-d89afc19e2eb</recordtableid>
     </None>
+    <None Include="General\Connect_Internet.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>658bad32-779b-4de6-9fe0-6ea518e48dc0</id>
+      <recordtableid>73313e70-d7e8-42a1-ad05-4d7d216c1d81</recordtableid>
+    </None>
+    <None Include="General\Disconnect_Internet.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>2aef2579-050a-4589-a805-60e003551b93</id>
+      <recordtableid>e6bf153b-dbda-43ce-bf19-a9d404778407</recordtableid>
+    </None>
     <None Include="General\Generate_Secret.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>dd04ad51-ac11-4278-affd-b92f9c31a61d</id>
@@ -3418,6 +3506,11 @@
       <id>c21df988-8362-41be-9a79-907003dbc367</id>
       <recordtableid>52096338-91b8-414a-8fb5-b3d7de1f35d5</recordtableid>
     </None>
+    <None Include="General\Open_Sync_URL.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>2a4ae2ad-a424-402f-84b8-9acdee1e4cc3</id>
+      <recordtableid>5e69c26c-7cbc-48b6-a67a-14a2e37f0e49</recordtableid>
+    </None>
     <None Include="General\Open_Unsecure_Browser.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>74aef038-e93f-4db5-bdda-6624b1191545</id>
@@ -3432,6 +3525,16 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>9c3cbe88-76d0-476e-b8ee-010ba94f9a52</id>
       <recordtableid>366bcb1e-0676-491a-b683-f0b0918c5c82</recordtableid>
+    </None>
+    <None Include="General\Validate_Sync_Success.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>4882e790-7588-4265-85c6-965906273c9a</id>
+      <recordtableid>ff849467-5c5b-4735-9e50-3e3d77a297b2</recordtableid>
+    </None>
+    <None Include="General\Validate_Upload_Failure.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>3be7fced-41af-48ae-93c9-ac48aeada18e</id>
+      <recordtableid>2fa0a2f8-d93a-44d4-8572-1f9cf92b901e</recordtableid>
     </None>
     <None Include="General\Verify_Secure_URL.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

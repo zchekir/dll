@@ -353,6 +353,9 @@ namespace PrecisionRecruitment
             RepoItemInfo _userrolenotfoundpopupInfo;
             RepoItemInfo _userrolenotfoundclosebuttonInfo;
             RepoItemInfo _savebuttonInfo;
+            RepoItemInfo _nointernetconnectionpopupInfo;
+            RepoItemInfo _syncurlInfo;
+            RepoItemInfo _synchronizationsuccessfulInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -392,6 +395,9 @@ namespace PrecisionRecruitment
                 _userrolenotfoundpopupInfo = new RepoItemInfo(this, "UserRoleNotFoundPopup", "body/div[3]//h4[@innertext='NotFound']", 30000, null, "2ced943c-58c3-4c74-8175-93d86fa2d329");
                 _userrolenotfoundclosebuttonInfo = new RepoItemInfo(this, "UserRoleNotFoundCloseButton", "body/div[3]//button[@innertext='Close']", 30000, null, "2277bba7-33be-4fb8-8625-24e5b8f37387");
                 _savebuttonInfo = new RepoItemInfo(this, "SaveButton", "body/div/tag/div/div[3]//div/button[@ng-click>'save']", 30000, null, "8a61fdd3-cb4b-4f86-b20d-3fd9bbe1e5b1");
+                _nointernetconnectionpopupInfo = new RepoItemInfo(this, "NoInternetConnectionPopup", "body//h2[@innertext='No Internet Connection']", 30000, null, "86491237-c806-4739-8520-e52afb4caf5c");
+                _syncurlInfo = new RepoItemInfo(this, "SyncURL", "body//div[@innertext~'https://'+$DOM+'/sync.html']", 30000, null, "36286d65-2ff6-46da-a413-4b9613b11b99");
+                _synchronizationsuccessfulInfo = new RepoItemInfo(this, "SynchronizationSuccessful", ".//div[#'root']//h1[@innertext~'Synchronization Successful']", 30000, null, "703373d8-ae06-4fe2-925e-9198a42390ed");
             }
 
             /// <summary>
@@ -631,6 +637,78 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _savebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NoInternetConnectionPopup item.
+            /// </summary>
+            [RepositoryItem("86491237-c806-4739-8520-e52afb4caf5c")]
+            public virtual Ranorex.H2Tag NoInternetConnectionPopup
+            {
+                get
+                {
+                    return _nointernetconnectionpopupInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NoInternetConnectionPopup item info.
+            /// </summary>
+            [RepositoryItemInfo("86491237-c806-4739-8520-e52afb4caf5c")]
+            public virtual RepoItemInfo NoInternetConnectionPopupInfo
+            {
+                get
+                {
+                    return _nointernetconnectionpopupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SyncURL item.
+            /// </summary>
+            [RepositoryItem("36286d65-2ff6-46da-a413-4b9613b11b99")]
+            public virtual Ranorex.DivTag SyncURL
+            {
+                get
+                {
+                    return _syncurlInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SyncURL item info.
+            /// </summary>
+            [RepositoryItemInfo("36286d65-2ff6-46da-a413-4b9613b11b99")]
+            public virtual RepoItemInfo SyncURLInfo
+            {
+                get
+                {
+                    return _syncurlInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SynchronizationSuccessful item.
+            /// </summary>
+            [RepositoryItem("703373d8-ae06-4fe2-925e-9198a42390ed")]
+            public virtual Ranorex.H1Tag SynchronizationSuccessful
+            {
+                get
+                {
+                    return _synchronizationsuccessfulInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SynchronizationSuccessful item info.
+            /// </summary>
+            [RepositoryItemInfo("703373d8-ae06-4fe2-925e-9198a42390ed")]
+            public virtual RepoItemInfo SynchronizationSuccessfulInfo
+            {
+                get
+                {
+                    return _synchronizationsuccessfulInfo;
                 }
             }
 
@@ -2793,6 +2871,9 @@ namespace PrecisionRecruitment
             RepoItemInfo _visitschedulenameminlengthvalidationInfo;
             RepoItemInfo _visitsessionidfieldInfo;
             RepoItemInfo _visitscheduleaddvisitbuttonInfo;
+            DataLossMitigationToggleInfoClass _datalossmitigationtoggleInfo;
+            DataLossNotificationToggleInfoClass _datalossnotificationtoggleInfo;
+            RepoItemInfo _datalosscardlabelInfo;
 
             /// <summary>
             /// Creates a new AddVisitSchedulePage  folder.
@@ -2813,6 +2894,79 @@ namespace PrecisionRecruitment
                 _visitschedulenameminlengthvalidationInfo = new RepoItemInfo(this, "VisitScheduleNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
                 _visitsessionidfieldInfo = new RepoItemInfo(this, "VisitSessionIDField", ".//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']", 30000, null, "fab623de-d4cc-4b0f-ba8a-762fa57e6154");
                 _visitscheduleaddvisitbuttonInfo = new RepoItemInfo(this, "VisitScheduleAddVisitButton", ".//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "1a6e3a4c-b365-4758-a5c7-038f791a62d3");
+                _datalossmitigationtoggleInfo = new DataLossMitigationToggleInfoClass(this);
+                _datalossnotificationtoggleInfo = new DataLossNotificationToggleInfoClass(this);
+                _datalosscardlabelInfo = new RepoItemInfo(this, "DataLossCardLabel", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//span[@innertext='On']", 30000, null, "aaae9d59-2c21-4d82-bac1-6bb8cdd7cbe7");
+            }
+
+            /// <summary>
+            /// The DataLossMitigationToggleInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("9bb5db00-dc73-4759-8309-8ee79f3b7b41")]
+            public class DataLossMitigationToggleInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// DataLossMitigationToggleInfoClass class constructor.
+                /// </summary>
+                public DataLossMitigationToggleInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "DataLossMitigationToggle", ".//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigation_5']", 30000, null, "9bb5db00-dc73-4759-8309-8ee79f3b7b41")
+                { }
+
+                /// <summary>
+                /// Gets the DLMOn item image.
+                /// </summary>
+                /// <returns>The DLMOn image.</returns>
+                [RepositoryImage("16770526-fe65-46c0-86ae-d9a46c7e152f")]
+                public CompressedImage GetDLMOn()
+                {
+                    return GetImage("16770526-fe65-46c0-86ae-d9a46c7e152f");
+                }
+
+                /// <summary>
+                /// Gets the DLMOn item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("16770526-fe65-46c0-86ae-d9a46c7e152f")]
+                public CompressedImage GetDLMOn(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("16770526-fe65-46c0-86ae-d9a46c7e152f", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The DataLossNotificationToggleInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")]
+            public class DataLossNotificationToggleInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// DataLossNotificationToggleInfoClass class constructor.
+                /// </summary>
+                public DataLossNotificationToggleInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "DataLossNotificationToggle", ".//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigationNotifications_6']", 30000, null, "ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")
+                { }
+
+                /// <summary>
+                /// Gets the DLNOn item image.
+                /// </summary>
+                /// <returns>The DLNOn image.</returns>
+                [RepositoryImage("f22b20ef-0e49-4d4b-95ec-7fc88acf9c71")]
+                public CompressedImage GetDLNOn()
+                {
+                    return GetImage("f22b20ef-0e49-4d4b-95ec-7fc88acf9c71");
+                }
+
+                /// <summary>
+                /// Gets the DLNOn item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("f22b20ef-0e49-4d4b-95ec-7fc88acf9c71")]
+                public CompressedImage GetDLNOn(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("f22b20ef-0e49-4d4b-95ec-7fc88acf9c71", cropRect);
+                }
             }
 
             /// <summary>
@@ -3136,6 +3290,78 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _visitscheduleaddvisitbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DataLossMitigationToggle item.
+            /// </summary>
+            [RepositoryItem("9bb5db00-dc73-4759-8309-8ee79f3b7b41")]
+            public virtual Ranorex.ButtonTag DataLossMitigationToggle
+            {
+                get
+                {
+                    return _datalossmitigationtoggleInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DataLossMitigationToggle item info.
+            /// </summary>
+            [RepositoryItemInfo("9bb5db00-dc73-4759-8309-8ee79f3b7b41")]
+            public virtual DataLossMitigationToggleInfoClass DataLossMitigationToggleInfo
+            {
+                get
+                {
+                    return _datalossmitigationtoggleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DataLossNotificationToggle item.
+            /// </summary>
+            [RepositoryItem("ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")]
+            public virtual Ranorex.ButtonTag DataLossNotificationToggle
+            {
+                get
+                {
+                    return _datalossnotificationtoggleInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DataLossNotificationToggle item info.
+            /// </summary>
+            [RepositoryItemInfo("ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")]
+            public virtual DataLossNotificationToggleInfoClass DataLossNotificationToggleInfo
+            {
+                get
+                {
+                    return _datalossnotificationtoggleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DataLossCardLabel item.
+            /// </summary>
+            [RepositoryItem("aaae9d59-2c21-4d82-bac1-6bb8cdd7cbe7")]
+            public virtual Ranorex.SpanTag DataLossCardLabel
+            {
+                get
+                {
+                    return _datalosscardlabelInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DataLossCardLabel item info.
+            /// </summary>
+            [RepositoryItemInfo("aaae9d59-2c21-4d82-bac1-6bb8cdd7cbe7")]
+            public virtual RepoItemInfo DataLossCardLabelInfo
+            {
+                get
+                {
+                    return _datalosscardlabelInfo;
                 }
             }
         }
