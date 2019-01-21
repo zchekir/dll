@@ -24,29 +24,29 @@ namespace PrecisionRecruitment.AddBatteryPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Battery_Block recording.
+    ///The Validate_Block_Edited recording.
     /// </summary>
-    [TestModule("aa1f6d10-6783-4d59-b81b-8bebede2e0a8", ModuleType.Recording, 1)]
-    public partial class Click_Battery_Block : ITestModule
+    [TestModule("1b383883-28ec-426a-807d-328ddbc0af92", ModuleType.Recording, 1)]
+    public partial class Validate_Block_Edited : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_Battery_Block instance = new Click_Battery_Block();
+        static Validate_Block_Edited instance = new Validate_Block_Edited();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Battery_Block()
+        public Validate_Block_Edited()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Battery_Block Instance
+        public static Validate_Block_Edited Instance
         {
             get { return instance; }
         }
@@ -89,12 +89,11 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'*') on item 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockLabel'.", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockLabelInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockLabelInfo, "InnerText", "*");
+            Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
-            Delay.Duration(500, false);
+            Report.Screenshot(ReportLevel.Info, "User", "Battery Block Edited successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));
             
         }
 

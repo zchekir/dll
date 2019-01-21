@@ -129,7 +129,15 @@ namespace PrecisionRecruitment.ReportsPage
             Validate.Exists(repo.CogstateSolutionPlatform.BatteryConfigReportPage.BatterySettingsTableInfo);
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Battery Config Report Generated successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeSpecDeviation'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeSpecDeviationInfo, new RecordItemIndex(4));
+            Validate.Exists(repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeSpecDeviationInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeBlockDeviation'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeBlockDeviationInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeBlockDeviationInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Battery Config Report Generated successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(6));
             
         }
 

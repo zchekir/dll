@@ -24,29 +24,29 @@ namespace PrecisionRecruitment.AddBatteryPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Battery_Block recording.
+    ///The Click_Gear_Icon recording.
     /// </summary>
-    [TestModule("aa1f6d10-6783-4d59-b81b-8bebede2e0a8", ModuleType.Recording, 1)]
-    public partial class Click_Battery_Block : ITestModule
+    [TestModule("c53e2e79-d2d1-413f-b728-0a065189c55c", ModuleType.Recording, 1)]
+    public partial class Click_Gear_Icon : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_Battery_Block instance = new Click_Battery_Block();
+        static Click_Gear_Icon instance = new Click_Gear_Icon();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Battery_Block()
+        public Click_Gear_Icon()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Battery_Block Instance
+        public static Click_Gear_Icon Instance
         {
             get { return instance; }
         }
@@ -89,12 +89,9 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.GearIcon' at 7;7.", repo.CogstateSolutionPlatform.AddBatteryPage.GearIconInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryPage.GearIcon.Click("7;7", 1);
+            Delay.Milliseconds(90);
             
         }
 

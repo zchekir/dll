@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.AddBatteryPage
+namespace PrecisionRecruitment.ReportsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Battery_Block recording.
+    ///The Click_SpecDeviation_Button recording.
     /// </summary>
-    [TestModule("aa1f6d10-6783-4d59-b81b-8bebede2e0a8", ModuleType.Recording, 1)]
-    public partial class Click_Battery_Block : ITestModule
+    [TestModule("55a4bccd-360a-4169-b5f5-492a3939b382", ModuleType.Recording, 1)]
+    public partial class Click_SpecDeviation_Button : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_Battery_Block instance = new Click_Battery_Block();
+        static Click_SpecDeviation_Button instance = new Click_SpecDeviation_Button();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Battery_Block()
+        public Click_SpecDeviation_Button()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Battery_Block Instance
+        public static Click_SpecDeviation_Button Instance
         {
             get { return instance; }
         }
@@ -89,9 +89,9 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.SpecDeviationButton' at 122;27.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.SpecDeviationButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.BatteryConfigReportPage.SpecDeviationButton.Click("122;27", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
             Delay.Duration(500, false);

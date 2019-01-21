@@ -24,34 +24,47 @@ namespace PrecisionRecruitment.AddBatteryPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Battery_Block recording.
+    ///The Increase_Test_Time recording.
     /// </summary>
-    [TestModule("aa1f6d10-6783-4d59-b81b-8bebede2e0a8", ModuleType.Recording, 1)]
-    public partial class Click_Battery_Block : ITestModule
+    [TestModule("9710ff30-ed7d-4907-8f0b-7f1ed3ffd3ab", ModuleType.Recording, 1)]
+    public partial class Increase_Test_Time : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_Battery_Block instance = new Click_Battery_Block();
+        static Increase_Test_Time instance = new Increase_Test_Time();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Battery_Block()
+        public Increase_Test_Time()
         {
+            DefaultTestTime = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Battery_Block Instance
+        public static Increase_Test_Time Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _DefaultTestTime;
+
+        /// <summary>
+        /// Gets or sets the value of variable DefaultTestTime.
+        /// </summary>
+        [TestVariable("c3b7d585-f146-460f-8348-83fa83b946d8")]
+        public string DefaultTestTime
+        {
+            get { return _DefaultTestTime; }
+            set { _DefaultTestTime = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -89,12 +102,20 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.TestTimeSetting' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.TestTimeSettingInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryPage.TestTimeSetting.Click(1);
+            Delay.Milliseconds(90);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.AddBatteryPage.TestTimeSetting' and assigning its value to variable 'DefaultTestTime'.", repo.CogstateSolutionPlatform.AddBatteryPage.TestTimeSettingInfo, new RecordItemIndex(1));
+            DefaultTestTime = repo.CogstateSolutionPlatform.AddBatteryPage.TestTimeSetting.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LControlKey down}{LShiftKey down}{Home}{LShiftKey up}{LControlKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.TestTimeSetting'.", repo.CogstateSolutionPlatform.AddBatteryPage.TestTimeSettingInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddBatteryPage.TestTimeSetting.PressKeys("{End}{LControlKey down}{LShiftKey down}{Home}{LShiftKey up}{LControlKey up}{Delete}", 1);
+            Delay.Milliseconds(0);
+            
+            Increase_TestTimeSetting(repo.CogstateSolutionPlatform.AddBatteryPage.TestTimeSettingInfo);
+            Delay.Milliseconds(0);
             
         }
 

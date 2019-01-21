@@ -255,6 +255,75 @@ namespace engine.Helpers
         
         
         /// <summary>
+        /// This method will use the AssessmentAttempt API call to update the date of birth of a particular participant
+		/// and AuthToken
+        /// </summary>
+        [UserCodeMethod]
+        public static void UpdateDOBDemographic(string randNum, string DOM, string externalId, string dob, string genderCode, string localityCode,
+                                                  string postError, string post, string visitSessionCode, string studyProtocolName)
+        {
+        	//Exit with fail if external id is empty as we don't know which subject to update
+        	if (externalId == "")
+        	{
+        		Report.Failure("No External id passed through, exiting...");
+				return;
+        	}
+        	
+        	//Using the participants original DOB, extract the Year, subtract a random number of years from the DOB and recreate the DOB string
+        	int yearIndex = 2;
+        	int newYear;
+
+        	string[] oldYear = dob.Split('/');
+        	
+        	Random r = new Random();
+        	newYear = r.Next(1900, int.Parse(oldYear[yearIndex]));
+        	
+        	Report.Info("Old Date of Birth: " + dob);
+        	dob = dob.Replace(oldYear[yearIndex], newYear.ToString());
+        	Report.Info("New Date of Birth: " + dob);
+        	
+        	//Setup API call
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/AssessmentAttempt");
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.Method = "POST";
+        	httpRequest.Headers.Add("Authorization", AuthToken);
+        	
+        	//Create JSON object containing demographics and study details
+        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode + randNum);
+        	
+        	
+        	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
+        	{
+        		string json = new JavaScriptSerializer().Serialize(assessmentObject);
+        		
+        		//Debugging Request
+        		Report.Info("Data to send: " + json);
+        		
+        		sw.Write(json);
+        		sw.Flush();
+        		sw.Close();
+        	}
+        	
+        	//Get response and store in new object
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	
+        	AssessmentAttemptJSONResponse responseObject = new AssessmentAttemptJSONResponse();
+        	
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        		string response = sr.ReadToEnd();
+        		responseObject = new JavaScriptSerializer().Deserialize<AssessmentAttemptJSONResponse>(response);
+        		
+        		AssessmentURL = responseObject.url;
+        		TestIdentifier = responseObject.testIdentifier;
+        		
+        		Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
+        		Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
+        	}
+        }
+        
+        
+        /// <summary>
         /// Launch Chrome using an Assessment Attempt URL
         /// </summary>
         [UserCodeMethod]

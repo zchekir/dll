@@ -24,29 +24,29 @@ namespace PrecisionRecruitment.AddBatteryPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Battery_Block recording.
+    ///The Click_Save_Settings recording.
     /// </summary>
-    [TestModule("aa1f6d10-6783-4d59-b81b-8bebede2e0a8", ModuleType.Recording, 1)]
-    public partial class Click_Battery_Block : ITestModule
+    [TestModule("50a5f6ec-164a-4d95-8e16-f85e36053404", ModuleType.Recording, 1)]
+    public partial class Click_Save_Settings : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Click_Battery_Block instance = new Click_Battery_Block();
+        static Click_Save_Settings instance = new Click_Save_Settings();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Battery_Block()
+        public Click_Save_Settings()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Battery_Block Instance
+        public static Click_Save_Settings Instance
         {
             get { return instance; }
         }
@@ -89,9 +89,9 @@ namespace PrecisionRecruitment.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock.Click();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButton' at 30;22.", repo.CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButton.Click("30;22", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
             Delay.Duration(500, false);

@@ -139,6 +139,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Web.Extensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -190,6 +191,9 @@
     </Compile>
     <Compile Include="DataProcessor\CompareOutcomes.cs">
       <id>40e05dbf-c838-4ee0-8b67-34c253e65fa1</id>
+    </Compile>
+    <Compile Include="Helpers\WindowsUtility.cs">
+      <id>e89a7679-d137-4d66-be7f-ae986dd26a6f</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -942,6 +942,12 @@ namespace PrecisionRecruitment
             RepoItemInfo _firstbatteryblockInfo;
             RepoItemInfo _cogstatetestdropdownInfo;
             RepoItemInfo _cogstatetestoptionInfo;
+            RepoItemInfo _geariconInfo;
+            RepoItemInfo _testtimesettingInfo;
+            RepoItemInfo _batterysettingssavebuttonInfo;
+            RepoItemInfo _mofifyrealtestsettingsInfo;
+            RepoItemInfo _saveblockbuttonInfo;
+            RepoItemInfo _firstbatteryblocklabelInfo;
 
             /// <summary>
             /// Creates a new AddBatteryPage  folder.
@@ -965,6 +971,12 @@ namespace PrecisionRecruitment
                 _firstbatteryblockInfo = new RepoItemInfo(this, "FirstBatteryBlock", ".//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-helper-battery-display-reorder']//ul/li[1]", 30000, null, "2b7260a6-8b1d-4961-9108-0f3b23cb9290");
                 _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_1']", 30000, null, "a663e077-b054-4cf5-a000-99a176bc9130");
                 _cogstatetestoptionInfo = new RepoItemInfo(this, "CogstateTestOption", ".//select[@id~'formly_[0-9]+_select_type_1']/option[@innertext=$BatteryBlock]", 30000, null, "e0c09b12-b293-4227-ac63-94eecf66affb");
+                _geariconInfo = new RepoItemInfo(this, "GearIcon", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-simple-edit']//tag[@tagname='ng-form']//i", 30000, null, "aa49e337-bbf8-4fff-9d3e-844cabe5bf90");
+                _testtimesettingInfo = new RepoItemInfo(this, "TestTimeSetting", "body//label[@innertext='Test Time']/..//input[@type='number']", 30000, null, "23197852-97c6-4171-b48b-30687503e6a4");
+                _batterysettingssavebuttonInfo = new RepoItemInfo(this, "BatterySettingsSaveButton", "body//button[@innertext='OK']", 30000, null, "d90c89b8-31f7-4665-94c9-27c592889895");
+                _mofifyrealtestsettingsInfo = new RepoItemInfo(this, "MofifyRealTestSettings", "body//ul/li[last()='True']/button", 30000, null, "7edb2f75-0a45-462d-acb1-c79a059773b3");
+                _saveblockbuttonInfo = new RepoItemInfo(this, "SaveBlockButton", ".//tag[@tagname='cogstate-generic-simple-edit']//button[@innertext>'SAVE' and @visible='True']", 30000, null, "425dafdc-45bf-4b21-abc5-8c7cc804fdf5");
+                _firstbatteryblocklabelInfo = new RepoItemInfo(this, "FirstBatteryBlockLabel", ".//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4", 30000, null, "7ed64282-086d-4d2c-b5c7-2ad397909022");
             }
 
             /// <summary>
@@ -1360,6 +1372,150 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _cogstatetestoptionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GearIcon item.
+            /// </summary>
+            [RepositoryItem("aa49e337-bbf8-4fff-9d3e-844cabe5bf90")]
+            public virtual Ranorex.ITag GearIcon
+            {
+                get
+                {
+                    return _geariconInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GearIcon item info.
+            /// </summary>
+            [RepositoryItemInfo("aa49e337-bbf8-4fff-9d3e-844cabe5bf90")]
+            public virtual RepoItemInfo GearIconInfo
+            {
+                get
+                {
+                    return _geariconInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestTimeSetting item.
+            /// </summary>
+            [RepositoryItem("23197852-97c6-4171-b48b-30687503e6a4")]
+            public virtual Ranorex.InputTag TestTimeSetting
+            {
+                get
+                {
+                    return _testtimesettingInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestTimeSetting item info.
+            /// </summary>
+            [RepositoryItemInfo("23197852-97c6-4171-b48b-30687503e6a4")]
+            public virtual RepoItemInfo TestTimeSettingInfo
+            {
+                get
+                {
+                    return _testtimesettingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatterySettingsSaveButton item.
+            /// </summary>
+            [RepositoryItem("d90c89b8-31f7-4665-94c9-27c592889895")]
+            public virtual Ranorex.ButtonTag BatterySettingsSaveButton
+            {
+                get
+                {
+                    return _batterysettingssavebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatterySettingsSaveButton item info.
+            /// </summary>
+            [RepositoryItemInfo("d90c89b8-31f7-4665-94c9-27c592889895")]
+            public virtual RepoItemInfo BatterySettingsSaveButtonInfo
+            {
+                get
+                {
+                    return _batterysettingssavebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MofifyRealTestSettings item.
+            /// </summary>
+            [RepositoryItem("7edb2f75-0a45-462d-acb1-c79a059773b3")]
+            public virtual Ranorex.ButtonTag MofifyRealTestSettings
+            {
+                get
+                {
+                    return _mofifyrealtestsettingsInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MofifyRealTestSettings item info.
+            /// </summary>
+            [RepositoryItemInfo("7edb2f75-0a45-462d-acb1-c79a059773b3")]
+            public virtual RepoItemInfo MofifyRealTestSettingsInfo
+            {
+                get
+                {
+                    return _mofifyrealtestsettingsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveBlockButton item.
+            /// </summary>
+            [RepositoryItem("425dafdc-45bf-4b21-abc5-8c7cc804fdf5")]
+            public virtual Ranorex.ButtonTag SaveBlockButton
+            {
+                get
+                {
+                    return _saveblockbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveBlockButton item info.
+            /// </summary>
+            [RepositoryItemInfo("425dafdc-45bf-4b21-abc5-8c7cc804fdf5")]
+            public virtual RepoItemInfo SaveBlockButtonInfo
+            {
+                get
+                {
+                    return _saveblockbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstBatteryBlockLabel item.
+            /// </summary>
+            [RepositoryItem("7ed64282-086d-4d2c-b5c7-2ad397909022")]
+            public virtual Ranorex.H4Tag FirstBatteryBlockLabel
+            {
+                get
+                {
+                    return _firstbatteryblocklabelInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstBatteryBlockLabel item info.
+            /// </summary>
+            [RepositoryItemInfo("7ed64282-086d-4d2c-b5c7-2ad397909022")]
+            public virtual RepoItemInfo FirstBatteryBlockLabelInfo
+            {
+                get
+                {
+                    return _firstbatteryblocklabelInfo;
                 }
             }
         }
@@ -3669,6 +3825,9 @@ namespace PrecisionRecruitment
             RepoItemInfo _protocollabelInfo;
             RepoItemInfo _visitscheduletableInfo;
             RepoItemInfo _batterysettingstableInfo;
+            RepoItemInfo _testtimespecdeviationInfo;
+            RepoItemInfo _testtimeblockdeviationInfo;
+            RepoItemInfo _specdeviationbuttonInfo;
 
             /// <summary>
             /// Creates a new BatteryConfigReportPage  folder.
@@ -3683,6 +3842,9 @@ namespace PrecisionRecruitment
                 _protocollabelInfo = new RepoItemInfo(this, "ProtocolLabel", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//label[@innertext>'Protocol:']", 30000, null, "1f73c6fb-00ae-412a-9000-63304bd2c1a3");
                 _visitscheduletableInfo = new RepoItemInfo(this, "VisitScheduleTable", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']/div/div/tag/div/div/?/?/table[@class='battery-schedule-list cogstate-table']", 30000, null, "612b5f31-d765-4dcd-8c80-653fcb1cd030");
                 _batterysettingstableInfo = new RepoItemInfo(this, "BatterySettingsTable", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']/div/div/tag/div/div/?/div[@class='battery-settings']", 30000, null, "fbefddee-51d0-4e7d-9ac0-ba6182676752");
+                _testtimespecdeviationInfo = new RepoItemInfo(this, "TestTimeSpecDeviation", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']//table/tbody/tr/td/label[@innertext='Test Time']/../..//img[@src~'https://'+$DOM+'/asset/images/deviations/spec_legend.svg']", 30000, null, "9c46400e-9533-44e2-9ad5-c4474f419bad");
+                _testtimeblockdeviationInfo = new RepoItemInfo(this, "TestTimeBlockDeviation", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']//table/tbody/tr/td/label[@innertext='Test Time']/../..//img[@src~'https://'+$DOM+'/asset/images/deviations/block_legend.svg']", 30000, null, "92162576-cf43-4c37-9d7d-970b5ae78e6f");
+                _specdeviationbuttonInfo = new RepoItemInfo(this, "SpecDeviationButton", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']//button[@innertext='Spec Deviation']", 30000, null, "e0c2b72f-cb7e-401a-85b1-065d1019f4ca");
             }
 
             /// <summary>
@@ -3862,6 +4024,78 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _batterysettingstableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestTimeSpecDeviation item.
+            /// </summary>
+            [RepositoryItem("9c46400e-9533-44e2-9ad5-c4474f419bad")]
+            public virtual Ranorex.ImgTag TestTimeSpecDeviation
+            {
+                get
+                {
+                    return _testtimespecdeviationInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestTimeSpecDeviation item info.
+            /// </summary>
+            [RepositoryItemInfo("9c46400e-9533-44e2-9ad5-c4474f419bad")]
+            public virtual RepoItemInfo TestTimeSpecDeviationInfo
+            {
+                get
+                {
+                    return _testtimespecdeviationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestTimeBlockDeviation item.
+            /// </summary>
+            [RepositoryItem("92162576-cf43-4c37-9d7d-970b5ae78e6f")]
+            public virtual Ranorex.ImgTag TestTimeBlockDeviation
+            {
+                get
+                {
+                    return _testtimeblockdeviationInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestTimeBlockDeviation item info.
+            /// </summary>
+            [RepositoryItemInfo("92162576-cf43-4c37-9d7d-970b5ae78e6f")]
+            public virtual RepoItemInfo TestTimeBlockDeviationInfo
+            {
+                get
+                {
+                    return _testtimeblockdeviationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SpecDeviationButton item.
+            /// </summary>
+            [RepositoryItem("e0c2b72f-cb7e-401a-85b1-065d1019f4ca")]
+            public virtual Ranorex.ButtonTag SpecDeviationButton
+            {
+                get
+                {
+                    return _specdeviationbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SpecDeviationButton item info.
+            /// </summary>
+            [RepositoryItemInfo("e0c2b72f-cb7e-401a-85b1-065d1019f4ca")]
+            public virtual RepoItemInfo SpecDeviationButtonInfo
+            {
+                get
+                {
+                    return _specdeviationbuttonInfo;
                 }
             }
         }

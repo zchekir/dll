@@ -171,6 +171,60 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_type_1']/option[@innertext=$BatteryBlock]
 				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="aa49e337-bbf8-4fff-9d3e-844cabe5bf90"
+				name="GearIcon"
+				refimgid="c659b25b-bd33-42f9-a7d6-befb1953433b"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-simple-edit']//tag[@tagname='ng-form']//i
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="23197852-97c6-4171-b48b-30687503e6a4"
+				name="TestTimeSetting"
+				refimgid="cb7e0051-56ef-40a9-8de5-a9e99ecf5455"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//label[@innertext='Test Time']/..//input[@type='number']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="d90c89b8-31f7-4665-94c9-27c592889895"
+				name="BatterySettingsSaveButton"
+				refimgid="70f55b3a-eb89-4157-ba62-a495427dd443"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//button[@innertext='OK']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="7edb2f75-0a45-462d-acb1-c79a059773b3"
+				name="MofifyRealTestSettings"
+				refimgid="1a109d72-f9c3-4a65-a5f1-2b3b7be3e19e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//ul/li[last()='True']/button
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="425dafdc-45bf-4b21-abc5-8c7cc804fdf5"
+				name="SaveBlockButton"
+				refimgid="256db79c-e0c3-4696-ba03-2a843a4b0b52"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//tag[@tagname='cogstate-generic-simple-edit']//button[@innertext&gt;'SAVE' and @visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,h4tag"
+				capname="h4tag"
+				id="7ed64282-086d-4d2c-b5c7-2ad397909022"
+				name="FirstBatteryBlockLabel"
+				refimgid="14ef0489-4bc0-4890-9879-448b4a9aa1cd"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -1039,6 +1093,33 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="608256bf-ec26-45a5-8de2-c71dd719a03d"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']/div/div/tag/div/div/?/div[@class='battery-settings']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="imgtag"
+				id="9c46400e-9533-44e2-9ad5-c4474f419bad"
+				name="TestTimeSpecDeviation"
+				refimgid="73242a92-9cb9-4d9b-8621-59a90751b50f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']//table/tbody/tr/td/label[@innertext='Test Time']/../..//img[@src~'https://'+$DOM+'/asset/images/deviations/spec_legend.svg']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="imgtag"
+				id="92162576-cf43-4c37-9d7d-970b5ae78e6f"
+				name="TestTimeBlockDeviation"
+				refimgid="3243ea64-165f-4b78-ab24-4139eb4d7d3f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']//table/tbody/tr/td/label[@innertext='Test Time']/../..//img[@src~'https://'+$DOM+'/asset/images/deviations/block_legend.svg']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="e0c2b72f-cb7e-401a-85b1-065d1019f4ca"
+				name="SpecDeviationButton"
+				refimgid="b8bdae47-bb75-4559-bc68-7e431b8621da"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']//button[@innertext='Spec Deviation']
 				</item>
 			</folder>
 			<folder
