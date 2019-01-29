@@ -62,35 +62,6 @@ namespace PrecisionRecruitment.UsersPage
         	Keyboard.Press("{ENTER}");
         }
 
-        public void MergedUserCodeMethod(RepoItemInfo inputtagInfo)
-        {
-#region --- Merged from "SelectStudyToAdd()" ---
-        	//Wait for list to load (need to change this method)
-        	Delay.Duration(1500);
-        	
-            //click on dropdown to expand the list of Studies Available
-        	Report.Log(ReportLevel.Info,"Mouse click on AddRoleStudyDropdown");
-        	repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleStudyDropdown.Click();
-        	Delay.Duration(1500);
-        		
-        	//find the study we want and select it
-        	Keyboard.Press(ProjectName + RandNum);
-        	Thread.Sleep(500);
-        	Keyboard.Press("{ENTER}");
-#endregion
-#region --- Merged from "SelectExternalServiceRole()" ---
-            //click on dropdown to expand the list of Roles Available
-        	Report.Log(ReportLevel.Info,"Mouse click on ExternalServiceRoleDropdown");
-        	repo.CogstateSolutionPlatform.ExternalUserPage.ExternalServiceRoleDropdown.Click();
-        	Delay.Duration(500);
-        	
-        	Keyboard.Press("External Service");
-        	Thread.Sleep(500);        	
-        	Keyboard.Press("{ENTER}");
-#endregion
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at 7;6.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().Click("7;6", 300);
-        }
 
     }
 }

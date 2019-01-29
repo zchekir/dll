@@ -129,8 +129,8 @@ namespace PrecisionRecruitment.StudiesPage
             // Wait for results to load
             Report.Log(ReportLevel.Info, "Section", "Wait for results to load", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
+            Delay.Duration(2000, false);
             
             // Continue on with Tests
             Report.Log(ReportLevel.Info, "Section", "Continue on with Tests", new RecordItemIndex(6));

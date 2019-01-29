@@ -109,6 +109,14 @@ namespace PrecisionRecruitment.General
             repo.CogstateSolutionPlatform.BatterySkipButton.Click();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(2));
+            Delay.Duration(10000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.CanvasSpinner'", repo.CogstateSolutionPlatform.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.CanvasSpinnerInfo.WaitForExists(30000);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));
+            
         }
 
 #region Image Feature Data

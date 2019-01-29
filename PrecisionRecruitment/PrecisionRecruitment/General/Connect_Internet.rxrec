@@ -83,8 +83,17 @@ rxversion="8.2">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Lengthy delay here to allow the device to regain a stable internet connection. Issues occur when it switches from WiFi to Ethernet during some test cases
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="60000ms"
 		enabled="True"
 		optional="False">
 			<comment>

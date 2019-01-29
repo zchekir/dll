@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.General
+namespace RedCapCloud.ValidationModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Connect_Internet recording.
+    ///The Validate_Test_Transmitted recording.
     /// </summary>
-    [TestModule("73313e70-d7e8-42a1-ad05-4d7d216c1d81", ModuleType.Recording, 1)]
-    public partial class Connect_Internet : ITestModule
+    [TestModule("e2abb99e-5373-4e09-976a-6c35fed62d41", ModuleType.Recording, 1)]
+    public partial class Validate_Test_Transmitted : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
+        /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
-        public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
+        public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Connect_Internet instance = new Connect_Internet();
+        static Validate_Test_Transmitted instance = new Validate_Test_Transmitted();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Connect_Internet()
+        public Validate_Test_Transmitted()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Connect_Internet Instance
+        public static Validate_Test_Transmitted Instance
         {
             get { return instance; }
         }
@@ -79,18 +79,6 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            EnableDisable_Ethernet("Enable");
-            Delay.Milliseconds(0);
-            
-            EnableDisable_WiFi("Enable");
-            Delay.Milliseconds(0);
-            
-            // Lengthy delay here to allow the device to regain a stable internet connection. Issues occur when it switches from WiFi to Ethernet during some test cases
-            Report.Log(ReportLevel.Info, "Section", "Lengthy delay here to allow the device to regain a stable internet connection. Issues occur when it switches from WiFi to Ethernet during some test cases", new RecordItemIndex(2));
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(3));
-            Delay.Duration(60000, false);
-            
         }
 
 #region Image Feature Data

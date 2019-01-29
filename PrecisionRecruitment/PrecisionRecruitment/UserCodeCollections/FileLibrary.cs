@@ -101,7 +101,7 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
 
             if (listofFiles.Length == 0)
             {
-                Report.Warn("No files have been found in '" + path + "' with the pattern '" + pattern + year +"'.");
+                Report.Info("No files have been found in '" + path + "' with the pattern '" + pattern + year +"'.");
             }
 
             foreach (string file in listofFiles)

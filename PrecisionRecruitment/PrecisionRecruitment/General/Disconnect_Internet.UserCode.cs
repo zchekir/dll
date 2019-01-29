@@ -77,5 +77,11 @@ namespace PrecisionRecruitment.General
         	
         	Report.Info("Wi-Fi has been " + operation + "d.");
         }
+
+        public bool IsAdminMode()
+        {
+            // TODO: Replace the following line with your code implementation.
+            throw new NotImplementedException();
+        }
     }
 }

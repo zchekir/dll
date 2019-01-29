@@ -356,6 +356,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _nointernetconnectionpopupInfo;
             RepoItemInfo _syncurlInfo;
             RepoItemInfo _synchronizationsuccessfulInfo;
+            RepoItemInfo _canvasspinnerInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -398,6 +399,7 @@ namespace PrecisionRecruitment
                 _nointernetconnectionpopupInfo = new RepoItemInfo(this, "NoInternetConnectionPopup", "body//h2[@innertext='No Internet Connection']", 30000, null, "86491237-c806-4739-8520-e52afb4caf5c");
                 _syncurlInfo = new RepoItemInfo(this, "SyncURL", "body//div[@innertext~'https://'+$DOM+'/sync.html']", 30000, null, "36286d65-2ff6-46da-a413-4b9613b11b99");
                 _synchronizationsuccessfulInfo = new RepoItemInfo(this, "SynchronizationSuccessful", ".//div[#'root']//h1[@innertext~'Synchronization Successful']", 30000, null, "703373d8-ae06-4fe2-925e-9198a42390ed");
+                _canvasspinnerInfo = new RepoItemInfo(this, "CanvasSpinner", ".//div[#'ng-app']/?/?//div[@class='spinner']", 30000, null, "89fb4724-2717-48d3-a1a7-e5da52b35873");
             }
 
             /// <summary>
@@ -709,6 +711,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _synchronizationsuccessfulInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CanvasSpinner item.
+            /// </summary>
+            [RepositoryItem("89fb4724-2717-48d3-a1a7-e5da52b35873")]
+            public virtual Ranorex.DivTag CanvasSpinner
+            {
+                get
+                {
+                    return _canvasspinnerInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CanvasSpinner item info.
+            /// </summary>
+            [RepositoryItemInfo("89fb4724-2717-48d3-a1a7-e5da52b35873")]
+            public virtual RepoItemInfo CanvasSpinnerInfo
+            {
+                get
+                {
+                    return _canvasspinnerInfo;
                 }
             }
 

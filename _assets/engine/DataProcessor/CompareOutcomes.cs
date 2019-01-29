@@ -129,7 +129,15 @@ namespace engine.DataProcessor
         		
 				/*The following Outcomes may contain NULL vlaues, integers or 'Yes'/'No' values
 				 *Check for NULL values first before comparing the database and extract values */
+				case "SessionIntegrityPass":
+ 				case "TestCompletionPass":
+ 				case "TestPerformancePass":
 				case "TestIntegrityPass":
+				case "TotalCorrectExclPant":
+				case "TotalAnticipatory":
+				case "TotalPost":
+			    case "TotalResponses":
+				case "TotalTrials":
 				case "TotalMaxOut":
 				case "TotalCorrectFoils":
 				case "LegalErrors":
@@ -152,7 +160,7 @@ namespace engine.DataProcessor
         		
 				/*The following Outcomes may contain NULL or a digit with decimal places
  				*Check for NULL values before formatting the scores down to 7 decimal places and comparing*/
-        		case "PrimaryOutcome":
+ 			    case "PrimaryOutcome":
         		case "ReactionTime":
         		case "RawReactionTime":
         		case "RTVariability":
@@ -260,6 +268,10 @@ namespace engine.DataProcessor
            					//Report.LogHtml(ReportLevel.Info, "Extract - Outcome: " + engine.Helpers.SQLUtility.dt.Columns[i].ColumnName + " - Value: " + GetExtractValue(row[colIndex].ToString(), engine.Helpers.SQLUtility.dt.Columns[i].ColumnName) +
            					          //"<br />" + " Database - Outcome: " + engine.Helpers.SQLUtility.dt.Columns[i].ColumnName + " - Value: " + engine.Helpers.SQLUtility.dt.Rows[rowIndex][i].ToString());
            				}
+           				
+           				//Remove the row after we are finished with it just incase there are rows with the same test code but multiple rounds 
+           				//RemoveCompletedRow(currentTestCode);
+           				
            				rowIndex++;
            			}
            		}
@@ -269,5 +281,9 @@ namespace engine.DataProcessor
            		}
            }
         }
+        
+        
+        
+        
     }
 }

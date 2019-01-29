@@ -114,9 +114,6 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(0));
-            Delay.Duration(7000, false);
-            
             engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolNumber);
             Delay.Milliseconds(0);
             
