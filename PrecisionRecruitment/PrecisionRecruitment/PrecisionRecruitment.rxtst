@@ -1375,21 +1375,6 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			enabled="False"
-			id="1fb31f8b-d357-48ee-b3ed-e7255605d617"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
-					</var>
-				</databinding>
-			</testmodule>
 			<modulegroup
 			id="1fe96fcf-fc8e-49e8-8b87-70c9fa4765d3"
 			name="Login"
@@ -1671,92 +1656,6 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="25f02544-d8d5-4b90-8965-a5017da93882"
-			name="EmailModule"
-			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="GmailAddress"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Subject"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
-					variablename="Subject">
-					</var>
-					<var
-					dataname="To"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
-					variablename="To">
-					</var>
-					<var
-					dataname="UseSSL"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
-					variablename="UseSSL">
-					</var>
-					<var
-					dataname="SendPdfReportOnComplete"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
-					variablename="SendPdfReportOnComplete">
-					</var>
-					<var
-					dataname="From"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
-					variablename="From">
-					</var>
-					<var
-					dataname="ServerHostname"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
-					variablename="ServerHostname">
-					</var>
-					<var
-					dataname="ServerPort"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
-					variablename="ServerPort">
-					</var>
-					<var
-					dataname="Body"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
-					variablename="Body">
-					</var>
-					<var
-					dataname="SendEmailOnFailure"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
-					variablename="SendEmailOnFailure">
-					</var>
-					<var
-					dataname="SendEmailOnSuccess"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="670a378a-e239-43e7-8325-c216fd11f190"
-					variablename="SendEmailOnSuccess">
-					</var>
-					<var
-					dataname="SendZippedReportOnComplete"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
-					variablename="SendZippedReportOnComplete">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4661,6 +4560,92 @@ rxversion="8.2">
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="78cc2d99-f144-43b2-a7f6-cfdc428257b6"
+			name="EmailModule"
+			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="GmailAddress"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+					<var
+					dataname="Subject"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendPdfReportOnComplete"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="79c9670f-185f-4b54-bc43-29b3ab4da946"
 			name="Click_BatteryTemplate_Dropdown"
 			ref="7945fb41-5622-48e6-9b34-277d9c8d0990"
@@ -5911,20 +5896,6 @@ rxversion="8.2">
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="a1f4ee9b-1aa1-4112-8d96-38c2ceaab737"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="a205fa6a-f0c1-4b44-a5ce-4f06f1a61d2b"
 			name="Launch_AssessmentAttempt"
 			ref="4cf38574-50a6-4296-8017-6f3285aac388"
@@ -6635,20 +6606,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="b50b68dd-1d4d-49e6-aa56-be4f7f3619d3"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="b55ff947-a98a-4cfb-b556-b9dc239a96a5"
 			name="Click_Participants_Tab"
 			ref="ff4b0f88-9baa-4e62-9d13-538aeb62f61f"
@@ -6733,20 +6690,6 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="b61be8dc-e111-47a7-8f9f-d1b282833fa2"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7693,20 +7636,6 @@ rxversion="8.2">
 			type="UserCode">
 			</testmodule>
 			<testmodule
-			id="d66dd179-dc0c-4cdb-8279-2a687ad98c50"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="d6cd3b4e-cb0f-4df5-bb85-f30b76167370"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -8296,20 +8225,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="e6dd57d8-d0f5-4557-9c58-c7b68d254fa4"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="e7f148c5-c9cf-41f0-a38a-cf064a41256d"
 			name="Clear_ExternalID"
 			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
@@ -8721,20 +8636,6 @@ rxversion="8.2">
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="f437af3c-96a7-4a48-aa4e-89dda8f8a510"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="f4a3c60c-d521-4982-b400-6bdb75dcf34b"
 			name="Close_Browser"
@@ -9244,10 +9145,6 @@ rxversion="8.2">
 							id="2c833354-6bf2-4cfd-a8f4-48a622daf329"
 							name="setup">
 								<testmodule
-								id="b50b68dd-1d4d-49e6-aa56-be4f7f3619d3"
-								name="NumberGenerator">
-								</testmodule>
-								<testmodule
 								id="5a2f8ab6-3825-4f50-b558-41e5c06acaf9"
 								name="Open_Browser">
 								</testmodule>
@@ -9279,10 +9176,6 @@ rxversion="8.2">
 							<setup
 							id="84803e55-3153-4ec9-a818-697c1d7086ad"
 							name="setup">
-								<testmodule
-								id="b61be8dc-e111-47a7-8f9f-d1b282833fa2"
-								name="NumberGenerator">
-								</testmodule>
 								<testmodule
 								id="b3a6d3c5-f14d-41ec-8f6c-3e1529cf015c"
 								name="Open_Browser">
@@ -9499,10 +9392,6 @@ rxversion="8.2">
 							<setup
 							id="89302a4e-9ad3-4be3-a744-1550cb0cf9ac"
 							name="setup">
-								<testmodule
-								id="d66dd179-dc0c-4cdb-8279-2a687ad98c50"
-								name="NumberGenerator">
-								</testmodule>
 								<testmodule
 								id="7cfb7f80-3c9f-4ee5-bdab-3f52ebd9b788"
 								name="Open_Browser">
@@ -10420,10 +10309,6 @@ rxversion="8.2">
 							id="fac2721f-a381-4b56-ba51-5e8e75d26ef2"
 							name="setup">
 								<testmodule
-								id="f437af3c-96a7-4a48-aa4e-89dda8f8a510"
-								name="NumberGenerator">
-								</testmodule>
-								<testmodule
 								id="fab194d5-0bb4-40bd-88d0-95e4b28771fa"
 								name="Open_Browser">
 								</testmodule>
@@ -10484,10 +10369,6 @@ rxversion="8.2">
 							id="28f38de7-4af2-40b7-bae7-c2919e8ecd80"
 							name="setup">
 								<testmodule
-								id="e6dd57d8-d0f5-4557-9c58-c7b68d254fa4"
-								name="NumberGenerator">
-								</testmodule>
-								<testmodule
 								id="e3f7d1a9-69b9-4c51-8157-997f6f6641e6"
 								name="Open_Browser">
 								</testmodule>
@@ -10547,10 +10428,6 @@ rxversion="8.2">
 							<setup
 							id="a22eaa1a-1c3f-4fa4-9c66-0f26dd52898f"
 							name="setup">
-								<testmodule
-								id="a1f4ee9b-1aa1-4112-8d96-38c2ceaab737"
-								name="NumberGenerator">
-								</testmodule>
 								<testmodule
 								id="827ced76-8bb1-46d8-9667-5f85a212f0d2"
 								name="Open_Browser">
@@ -11040,10 +10917,6 @@ rxversion="8.2">
 						<setup
 						id="367151ae-f3fc-44f8-989a-a21fc4e9d998"
 						name="setup">
-							<testmodule
-							id="1fb31f8b-d357-48ee-b3ed-e7255605d617"
-							name="NumberGenerator">
-							</testmodule>
 							<testmodule
 							id="657708c1-adfd-4495-919f-952b4bd0b65d"
 							name="DateTimeGenerator">
@@ -11757,7 +11630,7 @@ rxversion="8.2">
 						id="db488035-4e27-4b7f-8872-45c65c4d4925"
 						name="teardown">
 							<testmodule
-							id="25f02544-d8d5-4b90-8965-a5017da93882"
+							id="78cc2d99-f144-43b2-a7f6-cfdc428257b6"
 							name="EmailModule">
 							</testmodule>
 						</teardown>

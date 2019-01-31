@@ -41,6 +41,12 @@ namespace RedCapCloud.ValidationModules
         /// </summary>
         public Compare_Outcomes()
         {
+            DBServer = "";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            Authentication = "";
+            TestIdentifier = "";
         }
 
         /// <summary>
@@ -52,6 +58,78 @@ namespace RedCapCloud.ValidationModules
         }
 
 #region Variables
+
+        string _DBServer;
+
+        /// <summary>
+        /// Gets or sets the value of variable DBServer.
+        /// </summary>
+        [TestVariable("27c05a85-a45b-4d57-ac4c-46bcba1e2a34")]
+        public string DBServer
+        {
+            get { return _DBServer; }
+            set { _DBServer = value; }
+        }
+
+        string _Database;
+
+        /// <summary>
+        /// Gets or sets the value of variable Database.
+        /// </summary>
+        [TestVariable("fecc5f3d-8555-4330-96b0-b366742e65df")]
+        public string Database
+        {
+            get { return _Database; }
+            set { _Database = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("b64a1b8e-a466-4e42-9211-eee00575e88e")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
+        }
+
+        string _dbPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbPassword.
+        /// </summary>
+        [TestVariable("48bcef59-b79c-42d4-97f3-aee038ad4627")]
+        public string dbPassword
+        {
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _Authentication;
+
+        /// <summary>
+        /// Gets or sets the value of variable Authentication.
+        /// </summary>
+        [TestVariable("d359cf72-246f-4107-a4ce-879a3fa56d65")]
+        public string Authentication
+        {
+            get { return _Authentication; }
+            set { _Authentication = value; }
+        }
+
+        string _TestIdentifier;
+
+        /// <summary>
+        /// Gets or sets the value of variable TestIdentifier.
+        /// </summary>
+        [TestVariable("a11d07ec-5c1a-4ed1-8e55-542d463a8b73")]
+        public string TestIdentifier
+        {
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
+        }
 
 #endregion
 
@@ -79,6 +157,9 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
+            engine.Helpers.SQLUtility.GetAssessmentOutcomes(TestIdentifier, DBServer, Database, dbUsername, dbPassword, Authentication);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

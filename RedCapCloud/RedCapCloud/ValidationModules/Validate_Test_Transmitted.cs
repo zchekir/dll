@@ -53,6 +53,16 @@ namespace RedCapCloud.ValidationModules
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,13 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Test Was Successfully Transmitted') on item 'REDCapCloud.SubjectsPage.TestWasSuccessfullyTransmitted'.", repo.REDCapCloud.SubjectsPage.TestWasSuccessfullyTransmittedInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.REDCapCloud.SubjectsPage.TestWasSuccessfullyTransmittedInfo, "InnerText", "Test Was Successfully Transmitted");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

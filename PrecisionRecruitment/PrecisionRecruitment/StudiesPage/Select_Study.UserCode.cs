@@ -37,6 +37,8 @@ namespace PrecisionRecruitment.StudiesPage
         public void Try_Enter_StudyName(RepoItemInfo SearchField)
         {
         	do {
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at 36;15.", SearchField);
+            	repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click();
         		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ProjectName' with focus on 'SearchField'.", SearchField);
             	SearchField.FindAdapter<InputTag>().PressKeys(ProjectName, 1);
             	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'SearchField'.", SearchField);

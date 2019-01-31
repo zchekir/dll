@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="964e43df-03fa-4dc4-bd18-9a19ee6b15d3"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Read_CSV
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Read_CSV"
+	namespace="RedCapCloud.General">
+	</codegen>
+	<variables>
+		<var
+		id="f704dd09-4ec7-452a-8f35-7fda5d776871"
+		name="FileName">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="CSVUtility"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadCSVIntoDataTable"
+		namespace="engine.Helpers"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="acd1e241-e96d-47b4-b9d0-0427289f7b84">
+				<argument
+				argname="fileName"
+				id="f38c6e43-acd5-432e-91c1-80a407d38919"
+				variable="FileName">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Read_CSV.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

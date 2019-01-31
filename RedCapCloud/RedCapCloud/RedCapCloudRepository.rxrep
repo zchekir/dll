@@ -664,6 +664,25 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[@id&lt;'cogstateBatteryCRF-CBB']
 				</item>
+				<item
+				addcaps="unknown,webelement,fonttag"
+				capname="fonttag"
+				id="6819e2a1-e800-4dd4-b4d3-a809a456668f"
+				name="TestWasSuccessfullyTransmitted"
+				refimgid="3e62dfc4-bfe7-47cf-ae92-b5c6745d0373"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[5]/div/div/div[1]/div[2]/b/font[@innertext='Test Was Successfully Transmitted']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[5]/div/div/div[1]/div[2]/?/?/font[@innertext~'^Test\ Was\ Successfully\ Tra']
+				</item>
+				<item
+				addcaps="unknown,webelement,ultag"
+				capname="ultag"
+				id="8604c299-a22b-4dae-b410-9670b9e6fdbc"
+				name="CRFTabs"
+				refimgid="4705437c-ba2f-4ca2-a901-37e9f1e842fd"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']
+				</item>
 			</folder>
 			<folder
 			addcaps="unknown,webelement,iframetag"
@@ -970,6 +989,16 @@ rxversion="8.2">
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//i[#'dataCollectionWidget_checkboxComplete']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="970238ad-03ed-405c-947a-61f5f26728fb"
+			name="ConfirmPopupYesButton"
+			refimgid="1478abdc-7287-4a02-8d77-98e01da7dbdf"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'commonTools_buttonYes']/span[@innertext='Yes']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>
@@ -1037,6 +1066,24 @@ hBSzKVmIzGvLy+2yr+Z66rDG4d6zaBnuxJWgD00PW5AYq1iXMU4eM0Q1i/rPZHdYnTlElHad3oAd
 01Zkumrw+ZVmWRBXR6jYSohqw5R8uzj67+ykjbuOtasKPvafOsSF5DnrnyYtEskPM43KINSheKEA
 AAAASUVORK5CYII=
 			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="602a1d7a-3742-4fa9-9325-2a359f3b29f2"
+		isrooted="True"
+		name="ReloadSiteDialog"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="d679f22f-c238-4a62-acdd-d618f688a18d"
+			name="ReloadButton"
+			searchtimeout="30000ms">
+				/form[@title='Reload site?']/container[@accessiblename='']//button[@accessiblename='Reload']
+			</item>
+			<basepath>
+				/form[@title='Reload site?']
+			</basepath>
 		</appfolder>
 		<basepath>
 		</basepath>

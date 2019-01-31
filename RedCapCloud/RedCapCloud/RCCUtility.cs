@@ -28,5 +28,21 @@ namespace RedCapCloud
     {
         // You can use the "Insert New User Code Method" functionality from the context menu,
         // to add a new method with the attribute [UserCodeMethod].
+        
+        public static RedCapCloudRepository repo = RedCapCloudRepository.Instance;
+        /// <summary>
+        /// Creates a DataTable containing the Test Outcomes for all the tests in the current CRF
+        /// </summary>
+        [UserCodeMethod]
+        public static void CreateDataTable()
+        {
+        	var tabs = repo.REDCapCloud.CRFsTab.FindChildren<LiTag>();
+        	
+        	for (int i = 0; i < tabs.Count; i++)
+        	{
+        		
+        		
+        	}
+        }
     }
 }

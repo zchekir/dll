@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5e8eadd2-b4d6-4a1b-b51a-8c332926b0be"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Click_AddEventDef
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_AddEventDef"
+	namespace="RedCapCloud.AddEventDefinitionsPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="1ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="577033e8-c6e5-41db-b012-45aceb52c793"
+		sx="1852"
+		sy="214"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20d3d563-346f-45f4-aaac-ccf2ed9b7ea1"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain=$DOM]//button[#'studyBaseWidget_buttonCreateAdd']/i
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_AddEventDef.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

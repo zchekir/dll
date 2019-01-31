@@ -29,6 +29,7 @@ namespace RedCapCloud
         static RedCapCloudRepository instance = new RedCapCloudRepository();
         RedCapCloudRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
         RedCapCloudRepositoryFolders.OpenFileDialogAppFolder _openfiledialog;
+        RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder _reloadsitedialog;
 
         /// <summary>
         /// Gets the singleton class instance representing the RedCapCloudRepository element repository.
@@ -47,6 +48,7 @@ namespace RedCapCloud
         {
             _redcapcloud = new RedCapCloudRepositoryFolders.REDCapCloudAppFolder(this);
             _openfiledialog = new RedCapCloudRepositoryFolders.OpenFileDialogAppFolder(this);
+            _reloadsitedialog = new RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder(this);
         }
 
 #region Variables
@@ -190,6 +192,15 @@ namespace RedCapCloud
         {
             get { return _openfiledialog; }
         }
+
+        /// <summary>
+        /// The ReloadSiteDialog folder.
+        /// </summary>
+        [RepositoryFolder("602a1d7a-3742-4fa9-9325-2a359f3b29f2")]
+        public virtual RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder ReloadSiteDialog
+        {
+            get { return _reloadsitedialog; }
+        }
     }
 
     /// <summary>
@@ -232,6 +243,7 @@ namespace RedCapCloud
             RepoItemInfo _cogstatebatterycrfcbbInfo;
             RepoItemInfo _cogstatebatterydataconfirmationInfo;
             RepoItemInfo _markcrfcompleteInfo;
+            RepoItemInfo _confirmpopupyesbuttonInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -267,6 +279,7 @@ namespace RedCapCloud
                 _cogstatebatterycrfcbbInfo = new RepoItemInfo(this, "CogstateBatteryCRFCBB", ".//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\\ Battery\\ CRF\\ -\\ CB']", 30000, null, "481c3401-0daa-49a5-95f3-d6bcb777fd3c");
                 _cogstatebatterydataconfirmationInfo = new RepoItemInfo(this, "CogstateBatteryDataConfirmation", ".//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\\ Battery\\ Data\\ Con']", 30000, null, "3dff02c4-a338-4b37-904b-2ab9b5ef7a75");
                 _markcrfcompleteInfo = new RepoItemInfo(this, "MarkCRFComplete", ".//i[#'dataCollectionWidget_checkboxComplete']", 30000, null, "8017c05e-63a5-4c1f-a7f8-676c2d3b01ce");
+                _confirmpopupyesbuttonInfo = new RepoItemInfo(this, "ConfirmPopupYesButton", ".//button[#'commonTools_buttonYes']/span[@innertext='Yes']", 30000, null, "970238ad-03ed-405c-947a-61f5f26728fb");
             }
 
             /// <summary>
@@ -698,6 +711,30 @@ namespace RedCapCloud
                 get
                 {
                     return _markcrfcompleteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConfirmPopupYesButton item.
+            /// </summary>
+            [RepositoryItem("970238ad-03ed-405c-947a-61f5f26728fb")]
+            public virtual Ranorex.SpanTag ConfirmPopupYesButton
+            {
+                get
+                {
+                    return _confirmpopupyesbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConfirmPopupYesButton item info.
+            /// </summary>
+            [RepositoryItemInfo("970238ad-03ed-405c-947a-61f5f26728fb")]
+            public virtual RepoItemInfo ConfirmPopupYesButtonInfo
+            {
+                get
+                {
+                    return _confirmpopupyesbuttonInfo;
                 }
             }
 
@@ -2063,6 +2100,8 @@ namespace RedCapCloud
             RepoItemInfo _beginassessmentbuttonInfo;
             RepoItemInfo _dataconfirmationcrfInfo;
             RepoItemInfo _cbbcrfInfo;
+            RepoItemInfo _testwassuccessfullytransmittedInfo;
+            RepoItemInfo _crftabsInfo;
 
             /// <summary>
             /// Creates a new SubjectsPage  folder.
@@ -2092,6 +2131,8 @@ namespace RedCapCloud
                 _beginassessmentbuttonInfo = new RepoItemInfo(this, "BeginAssessmentButton", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[3]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div//span[@innertext='Begin Assessment']", 30000, null, "9392e009-e70d-4ceb-aa88-0f694bb37641");
                 _dataconfirmationcrfInfo = new RepoItemInfo(this, "DataConfirmationCRF", ".//div[@id<'cogstateBatteryDataConfirmation']", 30000, null, "d9b364c3-4d5d-4c1e-8c60-c712bd9fea82");
                 _cbbcrfInfo = new RepoItemInfo(this, "CBBCRF", ".//div[@id<'cogstateBatteryCRF-CBB']", 30000, null, "46cd2424-7930-4ab1-ac72-aa31e02e3644");
+                _testwassuccessfullytransmittedInfo = new RepoItemInfo(this, "TestWasSuccessfullyTransmitted", ".//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[5]/div/div/div[1]/div[2]/?/?/font[@innertext~'^Test\\ Was\\ Successfully\\ Tra']", 30000, null, "6819e2a1-e800-4dd4-b4d3-a809a456668f");
+                _crftabsInfo = new RepoItemInfo(this, "CRFTabs", ".//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']", 30000, null, "8604c299-a22b-4dae-b410-9670b9e6fdbc");
             }
 
             /// <summary>
@@ -2633,6 +2674,54 @@ namespace RedCapCloud
                     return _cbbcrfInfo;
                 }
             }
+
+            /// <summary>
+            /// The TestWasSuccessfullyTransmitted item.
+            /// </summary>
+            [RepositoryItem("6819e2a1-e800-4dd4-b4d3-a809a456668f")]
+            public virtual Ranorex.FontTag TestWasSuccessfullyTransmitted
+            {
+                get
+                {
+                    return _testwassuccessfullytransmittedInfo.CreateAdapter<Ranorex.FontTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestWasSuccessfullyTransmitted item info.
+            /// </summary>
+            [RepositoryItemInfo("6819e2a1-e800-4dd4-b4d3-a809a456668f")]
+            public virtual RepoItemInfo TestWasSuccessfullyTransmittedInfo
+            {
+                get
+                {
+                    return _testwassuccessfullytransmittedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CRFTabs item.
+            /// </summary>
+            [RepositoryItem("8604c299-a22b-4dae-b410-9670b9e6fdbc")]
+            public virtual Ranorex.UlTag CRFTabs
+            {
+                get
+                {
+                    return _crftabsInfo.CreateAdapter<Ranorex.UlTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CRFTabs item info.
+            /// </summary>
+            [RepositoryItemInfo("8604c299-a22b-4dae-b410-9670b9e6fdbc")]
+            public virtual RepoItemInfo CRFTabsInfo
+            {
+                get
+                {
+                    return _crftabsInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3143,6 +3232,72 @@ namespace RedCapCloud
                 get
                 {
                     return _filenamefieldInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ReloadSiteDialogAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("602a1d7a-3742-4fa9-9325-2a359f3b29f2")]
+        public partial class ReloadSiteDialogAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _reloadbuttonInfo;
+
+            /// <summary>
+            /// Creates a new ReloadSiteDialog  folder.
+            /// </summary>
+            public ReloadSiteDialogAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ReloadSiteDialog", "/form[@title='Reload site?']", parentFolder, 30000, null, true, "602a1d7a-3742-4fa9-9325-2a359f3b29f2", "")
+            {
+                _reloadbuttonInfo = new RepoItemInfo(this, "ReloadButton", "container[@accessiblename='']//button[@accessiblename='Reload']", 30000, null, "d679f22f-c238-4a62-acdd-d618f688a18d");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("602a1d7a-3742-4fa9-9325-2a359f3b29f2")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("602a1d7a-3742-4fa9-9325-2a359f3b29f2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReloadButton item.
+            /// </summary>
+            [RepositoryItem("d679f22f-c238-4a62-acdd-d618f688a18d")]
+            public virtual Ranorex.Button ReloadButton
+            {
+                get
+                {
+                    return _reloadbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReloadButton item info.
+            /// </summary>
+            [RepositoryItemInfo("d679f22f-c238-4a62-acdd-d618f688a18d")]
+            public virtual RepoItemInfo ReloadButtonInfo
+            {
+                get
+                {
+                    return _reloadbuttonInfo;
                 }
             }
         }

@@ -49,6 +49,10 @@
     <Reference Include="engine">
       <HintPath>..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
     </Reference>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\_assets\engine\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
+      <Aliases>global</Aliases>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -2450,9 +2454,6 @@
     <Compile Include="UserCodeCollections\FileLibrary.cs">
       <id>4ce3c280-3217-4100-8379-b03605fa2499</id>
     </Compile>
-    <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
-      <id>4096c6ab-a541-4df3-848b-cf28c0232b67</id>
-    </Compile>
     <Compile Include="UserCodeCollections\StringLibrary.cs">
       <id>d3098f93-0d66-42ed-8421-f18c71d7b260</id>
     </Compile>
@@ -4223,12 +4224,6 @@
     <Folder Include="rawData">
       <id>79cd4757-ffad-4750-ad06-a48ef1027106</id>
     </Folder>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{05BFE61F-DCAE-4377-88D9-94D016BA29E3}</Project>
-      <Name>Ranorex Automation Helpers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
   </Import>

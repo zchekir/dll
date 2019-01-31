@@ -36,6 +36,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="02b944bc-ac6e-43c4-9764-ea6c3af29264"
+			name="Validate_Test_Transmitted"
+			ref="e2abb99e-5373-4e09-976a-6c35fed62d41"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="03766343-e60a-46ee-8ed9-df50aeffbec1"
 			name="Enter_Sponsor"
 			ref="65e9609a-516b-4878-81cc-e4beeb6c2142"
@@ -335,12 +349,6 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="20814324-7609-4392-ad21-9a19b28e766e"
-			name="ReportToPDFModule"
-			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
-			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="22519e49-3ecf-49ec-9e43-7c4765c36b1e"
@@ -783,6 +791,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="4d9ca022-a9da-475e-a138-60092d1882cd"
+			name="setup">
+			</setup>
 			<testmodule
 			id="4dcfbc49-161f-489e-8851-97b04fe2ffcc"
 			name="Enter_Password"
@@ -817,6 +829,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="4eceacda-d239-4117-8d25-43be5775ac8b"
+			name="Generate_Academic_Extract">
+			</testcase>
 			<testcase
 			id="50372b58-8031-4332-bd94-d575754a8b37"
 			maxrange="0"
@@ -1263,6 +1279,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="76cd1433-ef3e-4b00-9773-64d987841f8f"
+			name="DateTimeGenerator"
+			ref="f5bf8785-98a5-4c1c-b828-bdb03993284b"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="RandNum"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="f82c872f-1d24-4a83-bf3a-5d3bdfab1b96"
+					variablename="Output">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="779a43a4-1bfb-440f-b00b-9c5123552b6b"
 			name="Validate_External_User"
 			ref="3b990141-f18c-4921-ba7f-74eba3cd421d"
@@ -1515,7 +1545,7 @@ rxversion="8.2">
 					</param>
 					<param
 					name="RandNum"
-					value="223192">
+					value="">
 					</param>
 					<param
 					name="VisitSessionID"
@@ -1525,22 +1555,20 @@ rxversion="8.2">
 					name="TestIdentifier"
 					value="">
 					</param>
+					<param
+					name="DBServer"
+					value="cgst-qc.database.windows.net">
+					</param>
+					<param
+					name="Database"
+					value="cgst-duo-api">
+					</param>
+					<param
+					name="Authentication"
+					value="Active Directory Password">
+					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="8a4c9916-e70d-4442-8c79-ed9001b1f7ce"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="8c120304-f1c5-442d-aecc-91cc103f7211"
 			name="teardown">
@@ -1556,20 +1584,6 @@ rxversion="8.2">
 					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
 					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
 					variablename="URL">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="906cd8dd-d0ab-4c42-94ee-212f686f1ae0"
-			name="NumberGenerator"
-			ref="ff756843-3cd0-4c4c-8f54-bb0085fef353"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="57c1f925-f31b-40a1-bccd-58269808e361"
-					variablename="Output">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2203,6 +2217,92 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d77931a5-7452-4077-8e6e-c01bdf8a55ad"
+			name="EmailModule"
+			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="GmailAddress"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+					<var
+					dataname="Subject"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendPdfReportOnComplete"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d7ef0ce6-95d7-44eb-ae44-32e7e2a49c74"
 			name="Click_Upload"
 			ref="d65da13c-82fa-4a0f-b891-fd2e3c602605"
@@ -2430,6 +2530,44 @@ rxversion="8.2">
 			name="Compare_Outcomes"
 			ref="cab977ba-0e9f-4c5c-94a2-a6aa19429286"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="a11d07ec-5c1a-4ed1-8e55-542d463a8b73"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="d359cf72-246f-4107-a4ce-879a3fa56d65"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="fecc5f3d-8555-4330-96b0-b366742e65df"
+					variablename="Database">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="27c05a85-a45b-4d57-ac4c-46bcba1e2a34"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="b64a1b8e-a466-4e42-9211-eee00575e88e"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="48bcef59-b79c-42d4-97f3-aee038ad4627"
+					variablename="dbPassword">
+					</var>
+				</databinding>
 			</testmodule>
 			<modulegroup
 			id="f30392f8-284e-4d76-9dea-f93c123382d8"
@@ -2639,10 +2777,6 @@ rxversion="8.2">
 						<setup
 						id="73243b0a-d370-43d2-9233-561875107e13"
 						name="setup">
-							<testmodule
-							id="8a4c9916-e70d-4442-8c79-ed9001b1f7ce"
-							name="NumberGenerator">
-							</testmodule>
 						</setup>
 						<testcase
 						id="0498bd03-592e-4f39-8ebf-831339c12615"
@@ -2720,8 +2854,8 @@ rxversion="8.2">
 						id="ac6afba4-6504-457e-9f6e-8052f07f03be"
 						name="setup">
 							<testmodule
-							id="906cd8dd-d0ab-4c42-94ee-212f686f1ae0"
-							name="NumberGenerator">
+							id="76cd1433-ef3e-4b00-9773-64d987841f8f"
+							name="DateTimeGenerator">
 							</testmodule>
 							<testmodule
 							id="405bc478-38bd-457e-8d73-75a5e371f86e"
@@ -3230,10 +3364,18 @@ rxversion="8.2">
 								id="6a09c03f-aec6-4062-901d-c81afeea1eca"
 								name="Upload_RawData">
 								</testmodule>
+								<testmodule
+								id="02b944bc-ac6e-43c4-9764-ea6c3af29264"
+								name="Validate_Test_Transmitted">
+								</testmodule>
 							</testcase>
 							<testcase
 							id="19166595-a8a0-4f1f-8a0a-594922578cb8"
 							name="Check_Outcomes">
+								<setup
+								id="4d9ca022-a9da-475e-a138-60092d1882cd"
+								name="setup">
+								</setup>
 								<testmodule
 								id="ccdfca5c-340f-49dd-bc7a-76e1cc6d01c1"
 								name="Click_Subjects_Button">
@@ -3279,6 +3421,10 @@ rxversion="8.2">
 								name="Compare_Outcomes">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="4eceacda-d239-4117-8d25-43be5775ac8b"
+							name="Generate_Academic_Extract">
+							</testcase>
 						</smartfoldernode>
 						<teardown
 						id="8c120304-f1c5-442d-aecc-91cc103f7211"
@@ -3292,8 +3438,8 @@ rxversion="8.2">
 							name="Close_Browser">
 							</testmodule>
 							<testmodule
-							id="20814324-7609-4392-ad21-9a19b28e766e"
-							name="ReportToPDFModule">
+							id="d77931a5-7452-4077-8e6e-c01bdf8a55ad"
+							name="EmailModule">
 							</testmodule>
 						</teardown>
 					</smartfoldernode>
@@ -3316,8 +3462,59 @@ rxversion="8.2">
 				<column>
 					Password
 				</column>
+				<column>
+					dbUsername
+				</column>
+				<column>
+					dbPassword
+				</column>
+				<column>
+					GmailAddress
+				</column>
+				<column>
+					GmailPassword
+				</column>
+				<column>
+					Subject
+				</column>
+				<column>
+					Body
+				</column>
+				<column>
+					To
+				</column>
+				<column>
+					From
+				</column>
+				<column>
+					ServerHostname
+				</column>
+				<column>
+					ServerPort
+				</column>
+				<column>
+					UseSSL
+				</column>
+				<column>
+					SendEmailOnFailure
+				</column>
+				<column>
+					SendEmailOnSuccess
+				</column>
+				<column>
+					SendZippedReportOnComplete
+				</column>
+				<column>
+					SendPdfReportOnComplete
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
+				<columnname>
+					dbPassword
+				</columnname>
+				<columnname>
+					GmailPassword
+				</columnname>
 				<columnname>
 					Password
 				</columnname>
