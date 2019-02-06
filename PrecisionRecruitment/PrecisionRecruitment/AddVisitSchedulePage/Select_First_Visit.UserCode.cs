@@ -33,5 +33,19 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             // Your recording specific initialization code goes here.
         }
 
+        //Make sure first visit exists, if not, reload the visit schedule and try again.
+        //Sometimes there is a delay between setting the visit in RCC and the visit appearing in CSP
+        public void Mouse_Click_Visit1(RepoItemInfo VisitOne)
+        {
+        	while (!VisitOne.Exists(new Duration(500))) {
+        		Report.Info("Visit does not exist, reloading page");
+        		repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb.Click();
+        		Delay.Duration(new Duration(30000));
+        	}
+        	
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VisitOne' at Center.", VisitOne);
+            VisitOne.FindAdapter<H4Tag>().Click();
+        }
+
     }
 }

@@ -685,6 +685,53 @@ rxversion="8.2">
 				</item>
 			</folder>
 			<folder
+			capname="unknown"
+			id="f3db6dc4-4991-4d8a-9264-b742b44b75e1"
+			isrooted="False"
+			name="SubjectMatrixPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="d5bf7cfb-2ee1-498e-9083-929b473162eb"
+				name="PrimaryOutcomeScore"
+				refimgid="86bef365-d53c-4613-82a4-3c61d382afb0"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[2]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[1]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr/td/div/div/input[@type='text']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[2]/table/tbody/tr[2]//table//div/div/div[1]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/?/?/div/table//div/div/input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="495ffc50-7b28-4173-8e10-2ac52ca427d3"
+				name="IdentificationTab"
+				refimgid="bf48c6b4-21c2-4437-b43e-88093291d291"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//a[#'tabsPanel_tabName_identification']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//a[#'tabsPanel_tabName_identification']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="f9ed9ba2-da5f-4597-ae76-f3e18fc7c3ea"
+				name="OneCardLearningTab"
+				refimgid="4e37050e-37d5-4975-9eb8-3190f92eff19"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//a[#'tabsPanel_tabName_oneCardLearning']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//a[#'tabsPanel_tabName_oneCardLearning']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="cd722671-7358-4493-bec4-8e89b6d4411e"
+				name="OneBackTab"
+				refimgid="304762bc-60fd-4784-9da0-c4c713d9c2cd"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//a[#'tabsPanel_tabName_oneBack']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//a[#'tabsPanel_tabName_oneBack']
+				</item>
+			</folder>
+			<folder
 			addcaps="unknown,webelement,iframetag"
 			capname="iframetag"
 			id="ac013338-35f4-4033-943f-f34702032c3d"
@@ -1084,6 +1131,25 @@ AAAASUVORK5CYII=
 			<basepath>
 				/form[@title='Reload site?']
 			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="unknown,mobileapp,androidapp"
+		capname="mobileapp"
+		id="581144b2-b7c0-4a68-acc3-b1e453a4684b"
+		isrooted="True"
+		name="RanorexRxBrowser"
+		refpath="/mobileapp[@title='ranorex.RxBrowser']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/mobileapp[@title='ranorex.RxBrowser']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABNSURBVDhPY6A6CA0NWQ/E//Hg9VClmAAo
+KYCmGCuGKscEQEmwAVAuVkBInqCCUQNGjgGEMFQpdoBLIS5xDABU0ICsGAtugCqlBmBgAAAcoXfL
+E78sAQAAAABJRU5ErkJggg==
+			</icon>
 		</appfolder>
 		<basepath>
 		</basepath>

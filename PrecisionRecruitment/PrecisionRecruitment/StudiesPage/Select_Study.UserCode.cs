@@ -43,7 +43,7 @@ namespace PrecisionRecruitment.StudiesPage
             	SearchField.FindAdapter<InputTag>().PressKeys(ProjectName, 1);
             	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'SearchField'.", SearchField);
             	SearchField.FindAdapter<InputTag>().PressKeys(RandNum, 1);
-            	Delay.Duration(500);
+            	Delay.Duration(1000);
         	}
         	while (!SearchField.FindAdapter<InputTag>().Value.Contains(RandNum)); 	
         }

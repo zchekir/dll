@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5fcd8123-4441-485f-bb20-4534e6acf23b"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Validate_Subject_Added
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Subject_Added"
+	namespace="RedCapCloud.AddSubjectPage">
+	</codegen>
+	<variables>
+		<var
+		id="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
+		name="RandNum">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="35067222-7430-433a-9153-a69349bc5ad5">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="4752a246-2d28-4500-98dd-1581b67cb1f6"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="-631,-748,316,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						11111
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="__gwt_cell"
+					readonly="False"
+					type="System.String">
+						cell-gwt-uid-640
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						outline-style:none;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext&gt;$RandNum]
+				</path>
+			</info>
+			<helperscreenshot
+			guid="b34fb2ea-eca0-4825-ab57-61d0c0a63149">
+				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
+SqWsf8gub/gP/oQq7VLWP+QXN/wH/wBCFKWzFL4WEKkwaeQpIABJA6fIamCH7ax2/KYwM446ms+3
+1m2itoo2SUlECnAHYfWpP7dtf+ec35D/ABpKasSpxtuWoUYRz5U5LsRkUwxt9gt12HcDHkY5GCKg
+/t21/wCec35D/Gj+3bX/AJ5zfkP8aftEDlHuadFZn9u2v/POb8h/jR/btr/zzm/If40uePcfPHua
+dFZn9u2v/POb8h/jR/btr/zzm/If40c8e4c8e5p0Vmf27a/885vyH+NH9u2v/POb8h/jRzx7hzx7
+mnRWZ/btr/zzm/If40f27a/885vyH+NHPHuHPHuadFZn9u2v/POb8h/jR/btr/zzm/If40c8e4c8
+e5p0Vmf27a/885vyH+NH9u2v/POb8h/jRzx7hzx7mnRWZ/btr/zzm/If40f27a/885vyH+NHPHuH
+PHuadFZn9u2v/POb8h/jR/btr/zzm/If40c8e4c8e5p0Vmf27a/885vyH+NH9u2v/POb8h/jRzx7
+hzx7mnRWZ/btr/zzm/If40f27a/885vyH+NHPHuHPHuadFZn9u2v/POb8h/jR/btr/zzm/If40c8
+e4c8e5p0Vmf27a/885vyH+NH9u2v/POb8h/jRzx7hzx7mnRWZ/btr/zzm/If40f27a/885vyH+NH
+PHuHPHuadFZn9u2v/POb8h/jR/btr/zzm/If40c8e4c8e5p0Vmf27a/885vyH+NH9u2v/POb8h/j
+Rzx7hzx7mnRWZ/btr/zzm/If40f27a/885vyH+NHPHuHPHuadFZn9u2v/POb8h/jR/btr/zzm/If
+40c8e4c8e5p1S1j/AJBc3/Af/QhUP9u2v/POb8h/jVe/1aC5s5IUSQM2MFgMdQfWlKSsKU42epq2
+X/Hjb/8AXNf5Uy8uZINojhaQnqQrED8gafZf8eNv/wBc1/lU1Uti1sFFHNHNMYUUc0c0AFFHNHNA
+BRRzRzQAUUc0c0AFFHNHNABRRzRzQAUUc0c0AFFHNHNABRRzRzQAUUc0c0AFFHNHNABRRzRzQAUU
+c0c0AFFHNHNABRRzRzQAUUc0c0AFFHNHNABRRzRzQAUUc0c0AFFHNHNABRRzRzQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				11111
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Subject Added Successfully"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="8661fc63-9be3-45a9-8bc0-14a034b5e17a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0cbbb2c-c046-4e87-ac05-f573ddb911c1"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Subject_Added.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

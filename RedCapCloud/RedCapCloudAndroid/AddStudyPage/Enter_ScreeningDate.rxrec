@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a2fee0d3-c7c5-4f00-810f-7f4421ca1bb7"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Enter_ScreeningDate
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Enter_ScreeningDate"
+	namespace="RedCapCloudAndroid.AddStudyPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Enter_ScreeningDate"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="EnterDate"
+		namespace="RedCapCloudAndroid.AddStudyPage"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2cfba7af-dd96-48fa-9e64-9a0001183d1a">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="93f7c623-c87d-4b4e-b15a-7c2bad791aef"
+	name="RedCapCloudAndroidRepository"
+	relativepath="..\RedCapCloudAndroidRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudAndroidRepository"
+		namespace="RedCapCloudAndroid">
+		</codegen>
+		<rootfolder
+		id="7395beb5-29eb-462c-8a0f-3116a4d258a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Enter_ScreeningDate.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

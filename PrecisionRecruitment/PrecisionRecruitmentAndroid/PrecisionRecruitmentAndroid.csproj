@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{1887819B-7827-4610-8D00-802EE11D0270}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PrecisionRecruitmentAndroid</RootNamespace>
+    <AssemblyName>PrecisionRecruitmentAndroid</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>51b61f8d-b48b-432f-9d02-247ec811e4e4</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Enter_BatteryDescription.cs">
+      <BoundTo>e500ca52-82d1-4b30-b8dd-bd4ab23b55cf</BoundTo>
+      <DependentUpon>Enter_BatteryDescription.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>907f16b3-8d46-4df5-935f-8a740334a0cb</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Enter_BatteryDescription.UserCode.cs">
+      <BoundTo>e500ca52-82d1-4b30-b8dd-bd4ab23b55cf</BoundTo>
+      <DependentUpon>Enter_BatteryDescription.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>553c213a-ceb8-4085-87bd-d366b66ce37f</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Enter_BatteryName.cs">
+      <BoundTo>a28772f3-a738-47be-9a7f-d1d6a3db2b11</BoundTo>
+      <DependentUpon>Enter_BatteryName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c3eb42b8-d9dc-4265-91f3-007c3fefe99b</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Enter_BatteryName.UserCode.cs">
+      <BoundTo>a28772f3-a738-47be-9a7f-d1d6a3db2b11</BoundTo>
+      <DependentUpon>Enter_BatteryName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e57deb2d-5acf-4f49-8bef-9906b4ff7b32</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Enter_BatteryStatus.cs">
+      <BoundTo>d0181a47-4938-4514-9ed6-9aabb3e73bfc</BoundTo>
+      <DependentUpon>Enter_BatteryStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a3e401b4-4975-4277-85e9-dfe4eb12852e</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Enter_BatteryStatus.UserCode.cs">
+      <BoundTo>d0181a47-4938-4514-9ed6-9aabb3e73bfc</BoundTo>
+      <DependentUpon>Enter_BatteryStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>66514a02-cc89-4130-b0cf-c7f275698a90</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Select_BatteryTemplate.cs">
+      <BoundTo>39771aa1-9fda-4f7e-baa1-efac23c9acab</BoundTo>
+      <DependentUpon>Select_BatteryTemplate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee3f6552-e9d5-4b31-be95-2baf9bef93cb</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Select_BatteryTemplate.UserCode.cs">
+      <BoundTo>39771aa1-9fda-4f7e-baa1-efac23c9acab</BoundTo>
+      <DependentUpon>Select_BatteryTemplate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fecfb016-e49d-42ef-bbe9-390841318783</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Touch_Add_Battery.cs">
+      <BoundTo>9348ad4e-fd92-478e-84ea-67f0b7b035ad</BoundTo>
+      <DependentUpon>Touch_Add_Battery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c0c45b9-5d14-4858-ad41-95d6ff1e9995</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Touch_Add_Battery.UserCode.cs">
+      <BoundTo>9348ad4e-fd92-478e-84ea-67f0b7b035ad</BoundTo>
+      <DependentUpon>Touch_Add_Battery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4552194d-0fba-4d4e-90a0-2109f845d9e8</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Touch_ResponseOptions.cs">
+      <BoundTo>5dad77aa-5e69-4bf0-a8b7-a1ba1575bd8e</BoundTo>
+      <DependentUpon>Touch_ResponseOptions.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>24e018b0-c950-4367-a08e-05f331cbe957</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Touch_ResponseOptions.UserCode.cs">
+      <BoundTo>5dad77aa-5e69-4bf0-a8b7-a1ba1575bd8e</BoundTo>
+      <DependentUpon>Touch_ResponseOptions.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b53d19d-4281-41ad-bf2a-e84b43a02bea</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Touch_SaveButton.cs">
+      <BoundTo>bf499eac-2e79-4a87-92c4-d4f6dbb519a3</BoundTo>
+      <DependentUpon>Touch_SaveButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d7e2b070-7589-4fe5-95e3-12492ecd1da8</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Touch_SaveButton.UserCode.cs">
+      <BoundTo>bf499eac-2e79-4a87-92c4-d4f6dbb519a3</BoundTo>
+      <DependentUpon>Touch_SaveButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>768e983d-7620-42ce-91a2-a41d93f495fb</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Validate_BatteryEntry.cs">
+      <BoundTo>9f1e472b-52ed-455b-9dc7-164041f541a4</BoundTo>
+      <DependentUpon>Validate_BatteryEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7f1dfdc2-6ba8-4eae-90f1-e97b57b6e75c</id>
+    </Compile>
+    <Compile Include="BatteriesPage\Validate_BatteryEntry.UserCode.cs">
+      <BoundTo>9f1e472b-52ed-455b-9dc7-164041f541a4</BoundTo>
+      <DependentUpon>Validate_BatteryEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>871a8d03-9f16-490f-b6b2-c8f8d6b6b78e</id>
+    </Compile>
+    <Compile Include="General\Open_Browser.cs">
+      <BoundTo>544fd7ab-fb6c-4f12-a2e9-5de7b9aaadeb</BoundTo>
+      <DependentUpon>Open_Browser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fb56b73f-5972-4d9a-8a07-58458ccdd0dc</id>
+    </Compile>
+    <Compile Include="General\Open_Browser.UserCode.cs">
+      <BoundTo>544fd7ab-fb6c-4f12-a2e9-5de7b9aaadeb</BoundTo>
+      <DependentUpon>Open_Browser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e4239400-7bec-4b86-a2dd-2791e03630e2</id>
+    </Compile>
+    <Compile Include="HelperLibrary.cs">
+      <id>0adc10fe-6995-46dd-a32b-d08902bd66e5</id>
+    </Compile>
+    <Compile Include="LoginPage\EnterPassword.cs">
+      <BoundTo>37fd8a9f-59c6-40e4-84d4-e63348616247</BoundTo>
+      <DependentUpon>EnterPassword.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3ea58513-2341-41eb-a5e6-6fc91e0b5039</id>
+    </Compile>
+    <Compile Include="LoginPage\EnterPassword.UserCode.cs">
+      <BoundTo>37fd8a9f-59c6-40e4-84d4-e63348616247</BoundTo>
+      <DependentUpon>EnterPassword.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c38b60fc-3b92-40d2-98d9-bd49b5b79ddd</id>
+    </Compile>
+    <Compile Include="LoginPage\Enter_Email.cs">
+      <BoundTo>1e7ef840-0a66-4a2a-b356-23b060588ba3</BoundTo>
+      <DependentUpon>Enter_Email.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a1878c2f-066b-4ae4-90fb-041385cf8f27</id>
+    </Compile>
+    <Compile Include="LoginPage\Enter_Email.UserCode.cs">
+      <BoundTo>1e7ef840-0a66-4a2a-b356-23b060588ba3</BoundTo>
+      <DependentUpon>Enter_Email.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>252955bf-df64-4e6d-a830-2f069a30130b</id>
+    </Compile>
+    <Compile Include="LoginPage\Touch_Login_Button.cs">
+      <BoundTo>1e28a955-479a-44ef-8932-66706b996e32</BoundTo>
+      <DependentUpon>Touch_Login_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2dd9c484-f129-419c-810a-f0c342cf0b74</id>
+    </Compile>
+    <Compile Include="LoginPage\Touch_Login_Button.UserCode.cs">
+      <BoundTo>1e28a955-479a-44ef-8932-66706b996e32</BoundTo>
+      <DependentUpon>Touch_Login_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0a6e920c-8af9-41ef-9c67-2b726dd1c089</id>
+    </Compile>
+    <Compile Include="PrecisionRecruitmentAndroidRepository.cs">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <DependentUpon>PrecisionRecruitmentAndroidRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>eb269168-65fe-4798-85b6-dacf49413450</id>
+    </Compile>
+    <Compile Include="StudiesPage\Select_Study.cs">
+      <BoundTo>e6f67847-3c82-4e7f-8e04-028832b6b258</BoundTo>
+      <DependentUpon>Select_Study.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>84b95989-51b6-4ad4-a1d0-a025135e4dbf</id>
+    </Compile>
+    <Compile Include="StudiesPage\Select_Study.UserCode.cs">
+      <BoundTo>e6f67847-3c82-4e7f-8e04-028832b6b258</BoundTo>
+      <DependentUpon>Select_Study.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c5a7011c-82f8-4428-b215-900ef7aca5ea</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BatteriesPage\Enter_BatteryDescription.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>e500ca52-82d1-4b30-b8dd-bd4ab23b55cf</id>
+      <recordtableid>13bbf647-d5ff-4d4e-8bdf-b64a885f92f1</recordtableid>
+    </None>
+    <None Include="BatteriesPage\Enter_BatteryName.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>a28772f3-a738-47be-9a7f-d1d6a3db2b11</id>
+      <recordtableid>8d40ec44-201d-450d-8eab-845089c3da4d</recordtableid>
+    </None>
+    <None Include="BatteriesPage\Enter_BatteryStatus.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>d0181a47-4938-4514-9ed6-9aabb3e73bfc</id>
+      <recordtableid>96df38a7-e424-46d9-910f-737272143235</recordtableid>
+    </None>
+    <None Include="BatteriesPage\Select_BatteryTemplate.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>39771aa1-9fda-4f7e-baa1-efac23c9acab</id>
+      <recordtableid>08aeaa42-ad00-4b1c-830c-ffa66f823a6a</recordtableid>
+    </None>
+    <None Include="BatteriesPage\Touch_Add_Battery.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>9348ad4e-fd92-478e-84ea-67f0b7b035ad</id>
+      <recordtableid>9af3cdc6-3091-401d-92f5-4e2d687a9e43</recordtableid>
+    </None>
+    <None Include="BatteriesPage\Touch_ResponseOptions.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>5dad77aa-5e69-4bf0-a8b7-a1ba1575bd8e</id>
+      <recordtableid>6bba9c69-5559-46f7-a07b-bf34ceeca5a5</recordtableid>
+    </None>
+    <None Include="BatteriesPage\Touch_SaveButton.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>bf499eac-2e79-4a87-92c4-d4f6dbb519a3</id>
+      <recordtableid>7db9917c-4d32-4020-a734-e3519ff6dcaa</recordtableid>
+    </None>
+    <None Include="BatteriesPage\Validate_BatteryEntry.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>9f1e472b-52ed-455b-9dc7-164041f541a4</id>
+      <recordtableid>a694af11-2026-4db7-a3a1-6ee80d0babf7</recordtableid>
+    </None>
+    <None Include="General\Open_Browser.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>544fd7ab-fb6c-4f12-a2e9-5de7b9aaadeb</id>
+      <recordtableid>72cf8ab6-5d18-4de9-9197-fcd663f0e6bf</recordtableid>
+    </None>
+    <None Include="LoginPage\EnterPassword.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>37fd8a9f-59c6-40e4-84d4-e63348616247</id>
+      <recordtableid>b48c0727-fada-4de0-98cb-6ee0c7291167</recordtableid>
+    </None>
+    <None Include="LoginPage\Enter_Email.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>1e7ef840-0a66-4a2a-b356-23b060588ba3</id>
+      <recordtableid>087f79ff-50e0-455d-b0be-49d51ea6a4b9</recordtableid>
+    </None>
+    <None Include="LoginPage\Touch_Login_Button.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>1e28a955-479a-44ef-8932-66706b996e32</id>
+      <recordtableid>7dc38134-df94-4e99-9aa2-803f7e772abb</recordtableid>
+    </None>
+    <None Include="PrecisionRecruitmentAndroidRepository.rximg">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <DependentUpon>PrecisionRecruitmentAndroidRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e4708799-28e9-4bca-a7b7-afd4f4738fbc</id>
+    </None>
+    <None Include="PrecisionRecruitmentAndroidRepository.rxrep">
+      <id>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</id>
+      <repoid>cb9ece6c-8829-4baf-8157-89f06750e804</repoid>
+      <reporootid>26cd7881-bd65-4ee0-8a52-4c5a6db01079</reporootid>
+    </None>
+    <None Include="StudiesPage\Select_Study.rxrec">
+      <BoundTo>0e8c843f-8fbc-4a3a-83cb-ef2685c054c7</BoundTo>
+      <id>e6f67847-3c82-4e7f-8e04-028832b6b258</id>
+      <recordtableid>a951f3ef-804d-4c3b-bc95-3371c81f4f3a</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PrecisionRecruitmentAndroid.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f11588dc-04e3-4871-8fa4-d0df915ed7d6</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="General">
+      <id>aba47068-220b-438d-8cec-f9a6333722c6</id>
+    </Folder>
+    <Folder Include="LoginPage">
+      <id>079c4408-5412-47e3-8a62-82083b92d174</id>
+    </Folder>
+    <Folder Include="BatteriesPage">
+      <id>bd2868e6-600f-4dab-8399-497e5c6333e7</id>
+    </Folder>
+    <Folder Include="StudiesPage">
+      <id>c521dbc5-c985-4ba9-a515-7ea82afabfd3</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

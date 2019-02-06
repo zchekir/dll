@@ -107,6 +107,8 @@ namespace RedCapCloud.ValidationModules
             Validate.Exists(repo.REDCapCloud.SubjectsPage.StudySiteIDInfo);
             Delay.Milliseconds(0);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Site Added Successfully", repo.REDCapCloud.Self, false, new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data

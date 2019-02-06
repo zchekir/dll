@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{B1B773E1-935B-419B-84B1-27A25A0302C7}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RedCapCloudAndroid</RootNamespace>
+    <AssemblyName>RedCapCloudAndroid</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>32a515d0-d7ef-47f6-9505-8c45bb52d96b</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStudyPage\Enter_AdminRole.cs">
+      <DependentUpon>Enter_AdminRole.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>015489fc-09e1-4320-966c-7046b3a948d6</id>
+      <BoundTo>2a0f0146-bd97-4954-8744-b08d131d0ec1</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_AdminRole.UserCode.cs">
+      <DependentUpon>Enter_AdminRole.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ae4d31e-1938-4527-9c9a-59f01ab48d48</id>
+      <BoundTo>2a0f0146-bd97-4954-8744-b08d131d0ec1</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_BriefSummary.cs">
+      <DependentUpon>Enter_BriefSummary.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e13ab18c-29f9-4742-8822-584e450b4201</id>
+      <BoundTo>aeb4ebcd-cfc1-4c22-aeac-9b9ddac695c3</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_BriefSummary.UserCode.cs">
+      <DependentUpon>Enter_BriefSummary.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8781115d-ed43-4cef-ae5f-cfcfedb71588</id>
+      <BoundTo>aeb4ebcd-cfc1-4c22-aeac-9b9ddac695c3</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_BriefTitle.cs">
+      <DependentUpon>Enter_BriefTitle.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c76e30d5-e761-4a97-a705-b9de2620837f</id>
+      <BoundTo>179f45e3-e1e4-4b10-9a8d-7fae1b9ce029</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_BriefTitle.UserCode.cs">
+      <DependentUpon>Enter_BriefTitle.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b50ca59-e0f4-4fdb-aa29-b07ea3a43914</id>
+      <BoundTo>179f45e3-e1e4-4b10-9a8d-7fae1b9ce029</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_ScreeningDate.cs">
+      <BoundTo>6c48400e-7bb0-4639-9aba-dbd7ccb620f8</BoundTo>
+      <DependentUpon>Enter_ScreeningDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>adc11521-fefd-47e1-b784-dce3d5e24027</id>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_ScreeningDate.UserCode.cs">
+      <BoundTo>6c48400e-7bb0-4639-9aba-dbd7ccb620f8</BoundTo>
+      <DependentUpon>Enter_ScreeningDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>25631472-3253-4c30-b283-b590a9407123</id>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_Sponsor.cs">
+      <DependentUpon>Enter_Sponsor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a88d01c8-89b7-4561-b538-49c90364b8a4</id>
+      <BoundTo>1bd9691d-fd46-437b-8b21-c8d449c063c7</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_Sponsor.UserCode.cs">
+      <DependentUpon>Enter_Sponsor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6c5f2419-3dae-4566-b04d-306f37ca4f79</id>
+      <BoundTo>1bd9691d-fd46-437b-8b21-c8d449c063c7</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_StudyCategory.cs">
+      <DependentUpon>Enter_StudyCategory.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f245acc-7f2c-49b6-b675-a1b977e3856f</id>
+      <BoundTo>6a47d55b-801c-483b-a916-a8dd5cd8852d</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_StudyCategory.UserCode.cs">
+      <DependentUpon>Enter_StudyCategory.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>01886d9c-c0e1-4b7c-883f-9d5786d29527</id>
+      <BoundTo>6a47d55b-801c-483b-a916-a8dd5cd8852d</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_StudyName.cs">
+      <DependentUpon>Enter_StudyName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4497471a-fddc-4f45-b2d6-626fc7b140d6</id>
+      <BoundTo>dcb7b1d6-a6e9-404f-8751-4e447fd140a3</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Enter_StudyName.UserCode.cs">
+      <DependentUpon>Enter_StudyName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a5f2d352-9c28-472c-abe2-814c0eb8278e</id>
+      <BoundTo>dcb7b1d6-a6e9-404f-8751-4e447fd140a3</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Touch_SaveButton.cs">
+      <DependentUpon>Touch_SaveButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>661f0112-92e8-40a7-85c1-191384a65b96</id>
+      <BoundTo>dc5406a3-a2fc-45de-a625-98e4d3411236</BoundTo>
+    </Compile>
+    <Compile Include="AddStudyPage\Touch_SaveButton.UserCode.cs">
+      <DependentUpon>Touch_SaveButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>070de98f-99ca-467c-8a80-68f04daff10a</id>
+      <BoundTo>dc5406a3-a2fc-45de-a625-98e4d3411236</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>98bc90b7-3440-4fbc-b824-24701cfd5142</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Enter_EventDef_Name.cs">
+      <BoundTo>a907ed7f-2dea-4f80-a75c-e2eb1a8516c7</BoundTo>
+      <DependentUpon>Enter_EventDef_Name.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c5ad8c58-217e-470c-b2bd-d69131ac138a</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Enter_EventDef_Name.UserCode.cs">
+      <BoundTo>a907ed7f-2dea-4f80-a75c-e2eb1a8516c7</BoundTo>
+      <DependentUpon>Enter_EventDef_Name.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>124c9068-e942-4f35-b5f7-23b2b8d5247b</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Touch_Add_EventDef.cs">
+      <BoundTo>16210d53-883c-4ef6-be63-ee1241e7adaf</BoundTo>
+      <DependentUpon>Touch_Add_EventDef.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>34dfc5e8-83c4-40c4-b57b-2ef5b40c8779</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Touch_Add_EventDef.UserCode.cs">
+      <BoundTo>16210d53-883c-4ef6-be63-ee1241e7adaf</BoundTo>
+      <DependentUpon>Touch_Add_EventDef.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>37a8c1b1-ee4e-4e70-8ba2-ae19532d709d</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Touch_EventDefinitionsTab.cs">
+      <BoundTo>cef59f9e-f07f-42ff-b49e-ad0ebbc9fe2c</BoundTo>
+      <DependentUpon>Touch_EventDefinitionsTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fce550d-5479-4524-86f3-20a6f6cde102</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Touch_EventDefinitionsTab.UserCode.cs">
+      <BoundTo>cef59f9e-f07f-42ff-b49e-ad0ebbc9fe2c</BoundTo>
+      <DependentUpon>Touch_EventDefinitionsTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e34a88cf-0e96-4eaf-b10f-2b5fd3dea63a</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Touch_SaveAndExit_Button.cs">
+      <BoundTo>e6f23348-b0e8-40af-8a34-a67c4a904935</BoundTo>
+      <DependentUpon>Touch_SaveAndExit_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2f020b3-5d71-4ef0-a3c8-451625b1193a</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Touch_SaveAndExit_Button.UserCode.cs">
+      <BoundTo>e6f23348-b0e8-40af-8a34-a67c4a904935</BoundTo>
+      <DependentUpon>Touch_SaveAndExit_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4227916e-51c9-4e55-8853-85f78d664b37</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Validate_EventDef_Entry.cs">
+      <BoundTo>59f5b452-0342-495c-b95e-bf5cd1864a34</BoundTo>
+      <DependentUpon>Validate_EventDef_Entry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eade7aab-3397-42e8-8ebb-77a9c334135a</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Validate_EventDef_Entry.UserCode.cs">
+      <BoundTo>59f5b452-0342-495c-b95e-bf5cd1864a34</BoundTo>
+      <DependentUpon>Validate_EventDef_Entry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c449319b-4a72-45df-84c0-c7d0c08667be</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Validate_EventDef_Type.cs">
+      <BoundTo>e6016e5d-a63e-4bf6-b3c5-9e2b575254df</BoundTo>
+      <DependentUpon>Validate_EventDef_Type.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7753134f-1ad5-4279-901d-4d7ed7182536</id>
+    </Compile>
+    <Compile Include="EventDefinitionsPage\Validate_EventDef_Type.UserCode.cs">
+      <BoundTo>e6016e5d-a63e-4bf6-b3c5-9e2b575254df</BoundTo>
+      <DependentUpon>Validate_EventDef_Type.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dc1fd70d-8dda-48d3-be19-6eaa37a379de</id>
+    </Compile>
+    <Compile Include="LoginPage\Enter_Password.cs">
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>66cdc95b-a995-491b-ac78-6f9ddd9a581b</id>
+      <BoundTo>376ba95b-5d51-4525-b3d1-c655c7970123</BoundTo>
+    </Compile>
+    <Compile Include="LoginPage\Enter_Password.UserCode.cs">
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fcc11928-c1b5-48eb-a4c5-c7842ac150f7</id>
+      <BoundTo>376ba95b-5d51-4525-b3d1-c655c7970123</BoundTo>
+    </Compile>
+    <Compile Include="LoginPage\Enter_Username.cs">
+      <DependentUpon>Enter_Username.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c9a604ca-14c1-4acc-b739-50176af55422</id>
+      <BoundTo>18c1ce78-49fd-4dcf-ada5-86fde29a6729</BoundTo>
+    </Compile>
+    <Compile Include="LoginPage\Enter_Username.UserCode.cs">
+      <DependentUpon>Enter_Username.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>507569c9-4166-4979-b2b2-e57fa0728e7f</id>
+      <BoundTo>18c1ce78-49fd-4dcf-ada5-86fde29a6729</BoundTo>
+    </Compile>
+    <Compile Include="LoginPage\Touch_Login_Button.cs">
+      <DependentUpon>Touch_Login_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8b5b8db4-8dd8-41df-8376-f85e67c3c156</id>
+      <BoundTo>c3229c12-9fdf-4f4d-9a2a-17802fa8cee9</BoundTo>
+    </Compile>
+    <Compile Include="LoginPage\Touch_Login_Button.UserCode.cs">
+      <DependentUpon>Touch_Login_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2e89ad57-c9d5-4643-90d8-14c127dda3a0</id>
+      <BoundTo>c3229c12-9fdf-4f4d-9a2a-17802fa8cee9</BoundTo>
+    </Compile>
+    <Compile Include="HelperLibrary.cs">
+      <id>03be0f8a-afb1-4faf-8bc4-028539df2e0a</id>
+    </Compile>
+    <Compile Include="OpenBrowser.cs">
+      <BoundTo>e756fb88-cb2c-4c83-80ad-aca6fc108424</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8998e4bd-7674-4fab-88a6-a43ece1a3043</id>
+    </Compile>
+    <Compile Include="OpenBrowser.UserCode.cs">
+      <BoundTo>e756fb88-cb2c-4c83-80ad-aca6fc108424</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6d4b45a0-c713-4fdc-9ba1-0ae932f74021</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_ParametersTab.cs">
+      <BoundTo>a8caf000-ce7a-42e9-9ce6-a1044b5e6a52</BoundTo>
+      <DependentUpon>Touch_ParametersTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>911ab34b-3a73-42a0-a15f-29adb8977e4e</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_ParametersTab.UserCode.cs">
+      <BoundTo>a8caf000-ce7a-42e9-9ce6-a1044b5e6a52</BoundTo>
+      <DependentUpon>Touch_ParametersTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>480417ea-9611-4f4c-a22d-5187f1c9ca40</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_Subject_Edit_Button.cs">
+      <BoundTo>65dd786d-5d8f-4d48-b211-f66555294223</BoundTo>
+      <DependentUpon>Touch_Subject_Edit_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e496291-1836-4c22-b901-d71e34164d1e</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_Subject_Edit_Button.UserCode.cs">
+      <BoundTo>65dd786d-5d8f-4d48-b211-f66555294223</BoundTo>
+      <DependentUpon>Touch_Subject_Edit_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5af994fa-9323-419c-b1f9-b586201c5eb4</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_Subject_SaveButton.cs">
+      <BoundTo>f2db3d43-5e6f-41b8-9e6a-0f4abeb070ee</BoundTo>
+      <DependentUpon>Touch_Subject_SaveButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61ecd4c2-6566-4081-b7e9-6bb8c247a27c</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_Subject_SaveButton.UserCode.cs">
+      <BoundTo>f2db3d43-5e6f-41b8-9e6a-0f4abeb070ee</BoundTo>
+      <DependentUpon>Touch_Subject_SaveButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d2176f90-b4fb-434b-9401-458c899f0111</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_Use_CustomCRF_Checkbox.cs">
+      <BoundTo>cd856ac4-1c1e-4145-b46c-1de4f1e6d001</BoundTo>
+      <DependentUpon>Touch_Use_CustomCRF_Checkbox.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0bc960e-0950-46d8-8a26-937bc24d4b5e</id>
+    </Compile>
+    <Compile Include="ParametersPage\Touch_Use_CustomCRF_Checkbox.UserCode.cs">
+      <BoundTo>cd856ac4-1c1e-4145-b46c-1de4f1e6d001</BoundTo>
+      <DependentUpon>Touch_Use_CustomCRF_Checkbox.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47db9cc9-09a8-48dc-baf1-3b28857d4524</id>
+    </Compile>
+    <Compile Include="RedCapCloudAndroidRepository.cs">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <DependentUpon>RedCapCloudAndroidRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>7c2f2ad3-1f2d-4a3f-ac8f-25dfff82f1b4</id>
+    </Compile>
+    <Compile Include="SitesPage\Enter_SiteEnrollment.cs">
+      <BoundTo>7c095dae-9482-4d33-89a1-1da8c591508e</BoundTo>
+      <DependentUpon>Enter_SiteEnrollment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ed9a6582-ace9-4f63-b80f-1f48410650a8</id>
+    </Compile>
+    <Compile Include="SitesPage\Enter_SiteEnrollment.UserCode.cs">
+      <BoundTo>7c095dae-9482-4d33-89a1-1da8c591508e</BoundTo>
+      <DependentUpon>Enter_SiteEnrollment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1177f5a7-f2d1-4493-9659-0c529ca9c897</id>
+    </Compile>
+    <Compile Include="SitesPage\Enter_SiteID.cs">
+      <BoundTo>22190367-3ed0-4269-9862-a8e3df777994</BoundTo>
+      <DependentUpon>Enter_SiteID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d3eb377c-28a4-4516-8548-b9e058e52fe3</id>
+    </Compile>
+    <Compile Include="SitesPage\Enter_SiteID.UserCode.cs">
+      <BoundTo>22190367-3ed0-4269-9862-a8e3df777994</BoundTo>
+      <DependentUpon>Enter_SiteID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4c0947be-c00d-4940-8e5e-e7c004526654</id>
+    </Compile>
+    <Compile Include="SitesPage\Enter_SiteInvestigator.cs">
+      <BoundTo>b05f9288-747a-4370-8c66-7b47e303d4d1</BoundTo>
+      <DependentUpon>Enter_SiteInvestigator.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>15af575a-ae78-4621-b5ac-eebb113f2d2e</id>
+    </Compile>
+    <Compile Include="SitesPage\Enter_SiteInvestigator.UserCode.cs">
+      <BoundTo>b05f9288-747a-4370-8c66-7b47e303d4d1</BoundTo>
+      <DependentUpon>Enter_SiteInvestigator.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80233f6b-ba4c-4126-b5be-1aba0a6f1b2b</id>
+    </Compile>
+    <Compile Include="SitesPage\Select_Site_Name.cs">
+      <BoundTo>426d9846-fb51-4584-906f-0036f5dcea0d</BoundTo>
+      <DependentUpon>Select_Site_Name.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7dd7bc0c-cdfc-4f73-89fe-f9b83bc716b6</id>
+    </Compile>
+    <Compile Include="SitesPage\Select_Site_Name.UserCode.cs">
+      <BoundTo>426d9846-fb51-4584-906f-0036f5dcea0d</BoundTo>
+      <DependentUpon>Select_Site_Name.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5cb6b31f-66a7-4a11-b428-d71492fcf36c</id>
+    </Compile>
+    <Compile Include="SitesPage\Touch_Add_Site.cs">
+      <BoundTo>239fdfcf-c76b-4aa0-98a4-67e44083e4f0</BoundTo>
+      <DependentUpon>Touch_Add_Site.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>011a88a0-72a2-46e6-bb5e-b1fd3ffe5907</id>
+    </Compile>
+    <Compile Include="SitesPage\Touch_Add_Site.UserCode.cs">
+      <BoundTo>239fdfcf-c76b-4aa0-98a4-67e44083e4f0</BoundTo>
+      <DependentUpon>Touch_Add_Site.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6681f5c4-6977-406a-bfc2-4a414416988f</id>
+    </Compile>
+    <Compile Include="SitesPage\Touch_Save_Site_Button.cs">
+      <BoundTo>551c2e93-a37f-4587-910c-fc2734311f0f</BoundTo>
+      <DependentUpon>Touch_Save_Site_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c20796bb-0215-4a20-b776-5f1740fd6147</id>
+    </Compile>
+    <Compile Include="SitesPage\Touch_Save_Site_Button.UserCode.cs">
+      <BoundTo>551c2e93-a37f-4587-910c-fc2734311f0f</BoundTo>
+      <DependentUpon>Touch_Save_Site_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f1c0660-4edc-41de-8fe8-019ee9656152</id>
+    </Compile>
+    <Compile Include="SitesPage\Touch_Sites_Tab.cs">
+      <BoundTo>d4b5f939-3f2b-4789-a1b4-08aa3d346648</BoundTo>
+      <DependentUpon>Touch_Sites_Tab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5ad57835-015d-4df7-a581-ee269a74b31c</id>
+    </Compile>
+    <Compile Include="SitesPage\Touch_Sites_Tab.UserCode.cs">
+      <BoundTo>d4b5f939-3f2b-4789-a1b4-08aa3d346648</BoundTo>
+      <DependentUpon>Touch_Sites_Tab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6cc45883-050a-42ae-83d6-8336529df876</id>
+    </Compile>
+    <Compile Include="StudiesPage\Touch_Add_Study.cs">
+      <DependentUpon>Touch_Add_Study.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8cd10ef8-7bf0-4315-9af8-eaa451b6e5ec</id>
+      <BoundTo>8a7be5f1-26f0-4644-ac24-207bd3299c1c</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Touch_Add_Study.UserCode.cs">
+      <DependentUpon>Touch_Add_Study.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>672d9021-7e22-4382-8bd4-82726e9dc814</id>
+      <BoundTo>8a7be5f1-26f0-4644-ac24-207bd3299c1c</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Touch_MyStudies.cs">
+      <DependentUpon>Touch_MyStudies.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9d77984-3204-41d9-8f41-a8d1488bc827</id>
+      <BoundTo>99da05c7-06d3-415c-afea-7b6cbb6b176c</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Touch_MyStudies.UserCode.cs">
+      <DependentUpon>Touch_MyStudies.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8f2017ac-fc25-491e-8bc7-d2de86ce9fc7</id>
+      <BoundTo>99da05c7-06d3-415c-afea-7b6cbb6b176c</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Touch_Study.cs">
+      <BoundTo>251d0b94-35c8-44d0-b6f6-0ff778017bc7</BoundTo>
+      <DependentUpon>Touch_Study.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a20eec7b-fedb-40b0-acf9-db7145dd1441</id>
+    </Compile>
+    <Compile Include="StudiesPage\Touch_Study.UserCode.cs">
+      <BoundTo>251d0b94-35c8-44d0-b6f6-0ff778017bc7</BoundTo>
+      <DependentUpon>Touch_Study.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>df9e0f17-9231-4c2f-bd3a-76f74366b0bb</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddStudyPage\Enter_AdminRole.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>2a0f0146-bd97-4954-8744-b08d131d0ec1</id>
+      <recordtableid>a06b2d8f-a0ed-4681-92c6-cd55cd5dc9aa</recordtableid>
+    </None>
+    <None Include="AddStudyPage\Enter_BriefSummary.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>aeb4ebcd-cfc1-4c22-aeac-9b9ddac695c3</id>
+      <recordtableid>22f5b54e-80bc-4ae9-8482-a5a241ec696d</recordtableid>
+    </None>
+    <None Include="AddStudyPage\Enter_BriefTitle.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>179f45e3-e1e4-4b10-9a8d-7fae1b9ce029</id>
+      <recordtableid>34f0ba3a-0e8b-4d1a-8550-2beba0a90052</recordtableid>
+    </None>
+    <None Include="AddStudyPage\Enter_ScreeningDate.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>6c48400e-7bb0-4639-9aba-dbd7ccb620f8</id>
+      <recordtableid>a2fee0d3-c7c5-4f00-810f-7f4421ca1bb7</recordtableid>
+    </None>
+    <None Include="AddStudyPage\Enter_Sponsor.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>1bd9691d-fd46-437b-8b21-c8d449c063c7</id>
+      <recordtableid>465dc6a9-2c29-4ecc-94ad-76eed23acb67</recordtableid>
+    </None>
+    <None Include="AddStudyPage\Enter_StudyCategory.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>6a47d55b-801c-483b-a916-a8dd5cd8852d</id>
+      <recordtableid>35217029-a09d-4c97-adc8-6793b72e9c87</recordtableid>
+    </None>
+    <None Include="AddStudyPage\Enter_StudyName.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>dcb7b1d6-a6e9-404f-8751-4e447fd140a3</id>
+      <recordtableid>fec5acf3-0712-4e08-95b5-9514d3247874</recordtableid>
+    </None>
+    <None Include="AddStudyPage\Touch_SaveButton.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>dc5406a3-a2fc-45de-a625-98e4d3411236</id>
+      <recordtableid>cec78060-fb2e-4ece-ad20-6069264436a4</recordtableid>
+    </None>
+    <None Include="EventDefinitionsPage\Enter_EventDef_Name.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>a907ed7f-2dea-4f80-a75c-e2eb1a8516c7</id>
+      <recordtableid>ad029e35-72ac-45ef-970b-cb2904dbf15a</recordtableid>
+    </None>
+    <None Include="EventDefinitionsPage\Touch_Add_EventDef.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>16210d53-883c-4ef6-be63-ee1241e7adaf</id>
+      <recordtableid>c2a046f2-ea75-48b1-bf60-c03308a98555</recordtableid>
+    </None>
+    <None Include="EventDefinitionsPage\Touch_EventDefinitionsTab.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>cef59f9e-f07f-42ff-b49e-ad0ebbc9fe2c</id>
+      <recordtableid>fb3b224a-30a9-449b-b906-4da0abd6b63c</recordtableid>
+    </None>
+    <None Include="EventDefinitionsPage\Touch_SaveAndExit_Button.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>e6f23348-b0e8-40af-8a34-a67c4a904935</id>
+      <recordtableid>53142235-6c35-4b4d-b503-05c9ad09c99e</recordtableid>
+    </None>
+    <None Include="EventDefinitionsPage\Validate_EventDef_Entry.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>59f5b452-0342-495c-b95e-bf5cd1864a34</id>
+      <recordtableid>8e2e3c76-a08b-43f3-bb4a-68b6ab387284</recordtableid>
+    </None>
+    <None Include="EventDefinitionsPage\Validate_EventDef_Type.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>e6016e5d-a63e-4bf6-b3c5-9e2b575254df</id>
+      <recordtableid>80ad09fa-bdee-40ee-9d7f-58c3ac172884</recordtableid>
+    </None>
+    <None Include="LoginPage\Enter_Password.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>376ba95b-5d51-4525-b3d1-c655c7970123</id>
+      <recordtableid>35045a3b-4fe9-4bad-b9d7-56409a30a6fd</recordtableid>
+    </None>
+    <None Include="LoginPage\Enter_Username.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>18c1ce78-49fd-4dcf-ada5-86fde29a6729</id>
+      <recordtableid>17ead54d-92ae-4688-a4c7-4600d7cd85c5</recordtableid>
+    </None>
+    <None Include="LoginPage\Touch_Login_Button.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>c3229c12-9fdf-4f4d-9a2a-17802fa8cee9</id>
+      <recordtableid>f7db1354-18f8-4a3d-9169-ad6983ac556c</recordtableid>
+    </None>
+    <None Include="OpenBrowser.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>e756fb88-cb2c-4c83-80ad-aca6fc108424</id>
+      <recordtableid>4f88bb23-e29b-4c4f-a80c-650238145345</recordtableid>
+    </None>
+    <None Include="ParametersPage\Touch_ParametersTab.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>a8caf000-ce7a-42e9-9ce6-a1044b5e6a52</id>
+      <recordtableid>5c5f8167-20e1-4b51-b806-78f463f30aa4</recordtableid>
+    </None>
+    <None Include="ParametersPage\Touch_Subject_Edit_Button.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>65dd786d-5d8f-4d48-b211-f66555294223</id>
+      <recordtableid>ce419556-ec4b-42a8-9be2-e0c3683c1686</recordtableid>
+    </None>
+    <None Include="ParametersPage\Touch_Subject_SaveButton.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>f2db3d43-5e6f-41b8-9e6a-0f4abeb070ee</id>
+      <recordtableid>ba04ee2a-513b-4520-b1ae-dc5fcee9317c</recordtableid>
+    </None>
+    <None Include="ParametersPage\Touch_Use_CustomCRF_Checkbox.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>cd856ac4-1c1e-4145-b46c-1de4f1e6d001</id>
+      <recordtableid>d4323e3c-2382-4a37-afed-be874f5b341d</recordtableid>
+    </None>
+    <None Include="RedCapCloudAndroidRepository.rximg">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <DependentUpon>RedCapCloudAndroidRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8fb597e9-208e-48f4-9f54-5351fc925b7c</id>
+    </None>
+    <None Include="RedCapCloudAndroidRepository.rxrep">
+      <id>32a515d0-d7ef-47f6-9505-8c45bb52d96b</id>
+      <repoid>93f7c623-c87d-4b4e-b15a-7c2bad791aef</repoid>
+      <reporootid>7395beb5-29eb-462c-8a0f-3116a4d258a6</reporootid>
+    </None>
+    <None Include="SitesPage\Enter_SiteEnrollment.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>7c095dae-9482-4d33-89a1-1da8c591508e</id>
+      <recordtableid>8fcbe135-6ef1-49d0-ac40-7d3d49ccedf6</recordtableid>
+    </None>
+    <None Include="SitesPage\Enter_SiteID.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>22190367-3ed0-4269-9862-a8e3df777994</id>
+      <recordtableid>74441d1d-a532-47f9-a3cd-9386bbb6bdb8</recordtableid>
+    </None>
+    <None Include="SitesPage\Enter_SiteInvestigator.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>b05f9288-747a-4370-8c66-7b47e303d4d1</id>
+      <recordtableid>a8b4fff1-43c5-4518-8d72-8ac0388fe2ed</recordtableid>
+    </None>
+    <None Include="SitesPage\Select_Site_Name.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>426d9846-fb51-4584-906f-0036f5dcea0d</id>
+      <recordtableid>98e58def-4070-4356-99ea-97912a5c9730</recordtableid>
+    </None>
+    <None Include="SitesPage\Touch_Add_Site.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>239fdfcf-c76b-4aa0-98a4-67e44083e4f0</id>
+      <recordtableid>2e3e6cec-88fe-415f-9979-fa2989f0d038</recordtableid>
+    </None>
+    <None Include="SitesPage\Touch_Save_Site_Button.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>551c2e93-a37f-4587-910c-fc2734311f0f</id>
+      <recordtableid>28a0ec1f-91c6-45dc-9616-62129d1a0b15</recordtableid>
+    </None>
+    <None Include="SitesPage\Touch_Sites_Tab.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>d4b5f939-3f2b-4789-a1b4-08aa3d346648</id>
+      <recordtableid>66821eb9-00ef-4eab-8d27-21805bbbe57e</recordtableid>
+    </None>
+    <None Include="StudiesPage\Touch_Add_Study.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>8a7be5f1-26f0-4644-ac24-207bd3299c1c</id>
+      <recordtableid>2f168fea-2b71-4ee3-9182-79842fa62bce</recordtableid>
+    </None>
+    <None Include="StudiesPage\Touch_MyStudies.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>99da05c7-06d3-415c-afea-7b6cbb6b176c</id>
+      <recordtableid>989e2c10-ab07-4491-b7d8-63c979b54c6d</recordtableid>
+    </None>
+    <None Include="StudiesPage\Touch_Study.rxrec">
+      <BoundTo>32a515d0-d7ef-47f6-9505-8c45bb52d96b</BoundTo>
+      <id>251d0b94-35c8-44d0-b6f6-0ff778017bc7</id>
+      <recordtableid>93471939-c494-4869-b70f-66832f3b45e1</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RedCapCloudAndroid.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>bafa2b75-bdf6-4500-a3d5-12a07ddd5cc3</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AddStudyPage">
+      <id>faa7f810-f983-4234-994d-d4049de28e96</id>
+    </Folder>
+    <Folder Include="LoginPage">
+      <id>4654cb58-f198-4a1a-8750-44b87e8778f4</id>
+    </Folder>
+    <Folder Include="EventDefinitionsPage">
+      <id>8c7dade5-2bf8-4f91-8cb6-5924a4660927</id>
+    </Folder>
+    <Folder Include="ParametersPage">
+      <id>8388d81b-cc88-4bc4-998e-f4c7808aa520</id>
+    </Folder>
+    <Folder Include="SitesPage">
+      <id>43de7417-0c3a-4876-b2eb-5a81aeacfa1c</id>
+    </Folder>
+    <Folder Include="StudiesPage">
+      <id>2e3fd6e0-a23f-431d-b5a0-f97e2a7b96d7</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

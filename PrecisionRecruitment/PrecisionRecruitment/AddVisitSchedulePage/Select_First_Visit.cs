@@ -63,6 +63,16 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
             set { repo.DOM = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable VisitScheduleName.
+        /// </summary>
+        [TestVariable("f21fe27d-9d06-425a-ac88-1991573cee47")]
+        public string VisitScheduleName
+        {
+            get { return repo.VisitScheduleName; }
+            set { repo.VisitScheduleName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -89,8 +99,7 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.Visit1' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1Info, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1.Click();
+            Mouse_Click_Visit1(repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1Info);
             Delay.Milliseconds(0);
             
         }

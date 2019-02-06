@@ -93,6 +93,8 @@ namespace RedCapCloud.ValidationModules
             Validate.Exists(repo.REDCapCloud.SubjectParamsUseCustomCrfViewOnlyInfo);
             Delay.Milliseconds(100);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Custom CRF Enroll Enabled", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
+            
         }
 
 #region Image Feature Data

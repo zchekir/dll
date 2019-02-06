@@ -54,7 +54,7 @@ namespace PrecisionRecruitment.UserCodeCollections
         void ITestModule.Run()
         {
         	System.DateTime utcDate = System.DateTime.UtcNow;
-        	Output = utcDate.ToString("yyyyddMMHHmm");
+        	Output = utcDate.ToString("yyyyMMddHHmm");
         	
         	Report.Info(Output);
 

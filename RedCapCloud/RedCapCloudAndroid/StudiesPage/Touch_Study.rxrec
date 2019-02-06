@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="93471939-c494-4869-b70f-66832f3b45e1"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Touch_Study
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Touch_Study"
+	namespace="RedCapCloudAndroid.StudiesPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<touchrecorditem
+		duration="100ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="4dd2dcfb-c62b-4685-aabd-bdbd1e085314"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="344b2dd2-3f57-4c46-8fc6-81cb98de152b"
+			sourcename="RepositoryEditor">
+				<path>
+					/mobileapp[@title='ranorex.RxBrowser']//dom//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[1]/div[@innertext&gt;$StudyName]
+				</path>
+			</info>
+		</touchrecorditem>
+	</recorditems>
+	<repository
+	id="93f7c623-c87d-4b4e-b15a-7c2bad791aef"
+	name="RedCapCloudAndroidRepository"
+	relativepath="..\RedCapCloudAndroidRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudAndroidRepository"
+		namespace="RedCapCloudAndroid">
+		</codegen>
+		<rootfolder
+		id="7395beb5-29eb-462c-8a0f-3116a4d258a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Touch_Study.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

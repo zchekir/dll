@@ -27,6 +27,11 @@ rxversion="8.2">
 	namespace="PrecisionRecruitment.General">
 	</codegen>
 	<variables>
+		<var
+		id="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+		name="DOM">
+			cgst-qc-duo.cogstate.com
+		</var>
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
@@ -238,7 +243,34 @@ V/EHBp1V7H/UP/11k/8AQzVigAooooAKKKKACiiigAooooAKKKKAP//Z
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="37165e0b-3e38-4e59-97c3-db1e6124bf72">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="DOM">
+				</binding>
+			</bindings>
+			<info
+			id="36286d65-2ff6-46da-a413-4b9613b11b99"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]/body//div[@innertext~'https://'+$DOM+'/sync.html']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -630,7 +662,7 @@ KKACiiigAooooAKKKKACiiigD//Z
 				InnerText
 			</matchname>
 			<matchvalue>
-				&#32;                   https://cgst-qc-duo.cogstate.com/sync.html               &#32;
+				/sync.html
 			</matchvalue>
 		</validationitem>
 		<loggingrecorditem

@@ -30,6 +30,7 @@ namespace RedCapCloud
         RedCapCloudRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
         RedCapCloudRepositoryFolders.OpenFileDialogAppFolder _openfiledialog;
         RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder _reloadsitedialog;
+        RedCapCloudRepositoryFolders.RanorexRxBrowserAppFolder _ranorexrxbrowser;
 
         /// <summary>
         /// Gets the singleton class instance representing the RedCapCloudRepository element repository.
@@ -49,6 +50,7 @@ namespace RedCapCloud
             _redcapcloud = new RedCapCloudRepositoryFolders.REDCapCloudAppFolder(this);
             _openfiledialog = new RedCapCloudRepositoryFolders.OpenFileDialogAppFolder(this);
             _reloadsitedialog = new RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder(this);
+            _ranorexrxbrowser = new RedCapCloudRepositoryFolders.RanorexRxBrowserAppFolder(this);
         }
 
 #region Variables
@@ -201,6 +203,15 @@ namespace RedCapCloud
         {
             get { return _reloadsitedialog; }
         }
+
+        /// <summary>
+        /// The RanorexRxBrowser folder.
+        /// </summary>
+        [RepositoryFolder("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
+        public virtual RedCapCloudRepositoryFolders.RanorexRxBrowserAppFolder RanorexRxBrowser
+        {
+            get { return _ranorexrxbrowser; }
+        }
     }
 
     /// <summary>
@@ -222,6 +233,7 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.EventDefinitionPageFolder _eventdefinitionpage;
             RedCapCloudRepositoryFolders.CRFsPageFolder _crfspage;
             RedCapCloudRepositoryFolders.SubjectsPageFolder _subjectspage;
+            RedCapCloudRepositoryFolders.SubjectMatrixPageFolder _subjectmatrixpage;
             RedCapCloudRepositoryFolders.IFrameFolder _iframe;
             RedCapCloudRepositoryFolders.StudiesTableFolder _studiestable;
             RedCapCloudRepositoryFolders.SitesTableFolder _sitestable;
@@ -258,6 +270,7 @@ namespace RedCapCloud
                 _eventdefinitionpage = new RedCapCloudRepositoryFolders.EventDefinitionPageFolder(this);
                 _crfspage = new RedCapCloudRepositoryFolders.CRFsPageFolder(this);
                 _subjectspage = new RedCapCloudRepositoryFolders.SubjectsPageFolder(this);
+                _subjectmatrixpage = new RedCapCloudRepositoryFolders.SubjectMatrixPageFolder(this);
                 _iframe = new RedCapCloudRepositoryFolders.IFrameFolder(this);
                 _studiestable = new RedCapCloudRepositoryFolders.StudiesTableFolder(this);
                 _sitestable = new RedCapCloudRepositoryFolders.SitesTableFolder(this);
@@ -799,6 +812,15 @@ namespace RedCapCloud
             public virtual RedCapCloudRepositoryFolders.SubjectsPageFolder SubjectsPage
             {
                 get { return _subjectspage; }
+            }
+
+            /// <summary>
+            /// The SubjectMatrixPage folder.
+            /// </summary>
+            [RepositoryFolder("f3db6dc4-4991-4d8a-9264-b742b44b75e1")]
+            public virtual RedCapCloudRepositoryFolders.SubjectMatrixPageFolder SubjectMatrixPage
+            {
+                get { return _subjectmatrixpage; }
             }
 
             /// <summary>
@@ -2725,6 +2747,138 @@ namespace RedCapCloud
         }
 
         /// <summary>
+        /// The SubjectMatrixPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("f3db6dc4-4991-4d8a-9264-b742b44b75e1")]
+        public partial class SubjectMatrixPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _primaryoutcomescoreInfo;
+            RepoItemInfo _identificationtabInfo;
+            RepoItemInfo _onecardlearningtabInfo;
+            RepoItemInfo _onebacktabInfo;
+
+            /// <summary>
+            /// Creates a new SubjectMatrixPage  folder.
+            /// </summary>
+            public SubjectMatrixPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("SubjectMatrixPage", "", parentFolder, 0, null, false, "f3db6dc4-4991-4d8a-9264-b742b44b75e1", "")
+            {
+                _primaryoutcomescoreInfo = new RepoItemInfo(this, "PrimaryOutcomeScore", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[2]/table/tbody/tr[2]//table//div/div/div[1]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/?/?/div/table//div/div/input[@type='text']", 30000, null, "d5bf7cfb-2ee1-498e-9083-929b473162eb");
+                _identificationtabInfo = new RepoItemInfo(this, "IdentificationTab", ".//a[#'tabsPanel_tabName_identification']", 30000, null, "495ffc50-7b28-4173-8e10-2ac52ca427d3");
+                _onecardlearningtabInfo = new RepoItemInfo(this, "OneCardLearningTab", ".//a[#'tabsPanel_tabName_oneCardLearning']", 30000, null, "f9ed9ba2-da5f-4597-ae76-f3e18fc7c3ea");
+                _onebacktabInfo = new RepoItemInfo(this, "OneBackTab", ".//a[#'tabsPanel_tabName_oneBack']", 30000, null, "cd722671-7358-4493-bec4-8e89b6d4411e");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f3db6dc4-4991-4d8a-9264-b742b44b75e1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PrimaryOutcomeScore item.
+            /// </summary>
+            [RepositoryItem("d5bf7cfb-2ee1-498e-9083-929b473162eb")]
+            public virtual Ranorex.InputTag PrimaryOutcomeScore
+            {
+                get
+                {
+                    return _primaryoutcomescoreInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PrimaryOutcomeScore item info.
+            /// </summary>
+            [RepositoryItemInfo("d5bf7cfb-2ee1-498e-9083-929b473162eb")]
+            public virtual RepoItemInfo PrimaryOutcomeScoreInfo
+            {
+                get
+                {
+                    return _primaryoutcomescoreInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IdentificationTab item.
+            /// </summary>
+            [RepositoryItem("495ffc50-7b28-4173-8e10-2ac52ca427d3")]
+            public virtual Ranorex.ATag IdentificationTab
+            {
+                get
+                {
+                    return _identificationtabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IdentificationTab item info.
+            /// </summary>
+            [RepositoryItemInfo("495ffc50-7b28-4173-8e10-2ac52ca427d3")]
+            public virtual RepoItemInfo IdentificationTabInfo
+            {
+                get
+                {
+                    return _identificationtabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OneCardLearningTab item.
+            /// </summary>
+            [RepositoryItem("f9ed9ba2-da5f-4597-ae76-f3e18fc7c3ea")]
+            public virtual Ranorex.ATag OneCardLearningTab
+            {
+                get
+                {
+                    return _onecardlearningtabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OneCardLearningTab item info.
+            /// </summary>
+            [RepositoryItemInfo("f9ed9ba2-da5f-4597-ae76-f3e18fc7c3ea")]
+            public virtual RepoItemInfo OneCardLearningTabInfo
+            {
+                get
+                {
+                    return _onecardlearningtabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OneBackTab item.
+            /// </summary>
+            [RepositoryItem("cd722671-7358-4493-bec4-8e89b6d4411e")]
+            public virtual Ranorex.ATag OneBackTab
+            {
+                get
+                {
+                    return _onebacktabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OneBackTab item info.
+            /// </summary>
+            [RepositoryItemInfo("cd722671-7358-4493-bec4-8e89b6d4411e")]
+            public virtual RepoItemInfo OneBackTabInfo
+            {
+                get
+                {
+                    return _onebacktabInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The IFrameFolder folder.
         /// </summary>
         [RepositoryFolder("ac013338-35f4-4033-943f-f34702032c3d")]
@@ -3298,6 +3452,46 @@ namespace RedCapCloud
                 get
                 {
                     return _reloadbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The RanorexRxBrowserAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
+        public partial class RanorexRxBrowserAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new RanorexRxBrowser  folder.
+            /// </summary>
+            public RanorexRxBrowserAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("RanorexRxBrowser", "/mobileapp[@title='ranorex.RxBrowser']", parentFolder, 30000, null, false, "581144b2-b7c0-4a68-acc3-b1e453a4684b", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
+            public virtual Ranorex.MobileApp Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MobileApp>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

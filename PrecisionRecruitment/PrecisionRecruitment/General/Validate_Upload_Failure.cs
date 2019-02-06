@@ -41,6 +41,7 @@ namespace PrecisionRecruitment.General
         /// </summary>
         public Validate_Upload_Failure()
         {
+            DOM = "cgst-qc-duo.cogstate.com";
         }
 
         /// <summary>
@@ -96,11 +97,15 @@ namespace PrecisionRecruitment.General
             Validate.Exists(repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='                    https://cgst-qc-duo.cogstate.com/sync.html                ') on item 'CogstateSolutionPlatform.SyncURL'.", repo.CogstateSolutionPlatform.SyncURLInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.SyncURLInfo, "InnerText", "                    https://cgst-qc-duo.cogstate.com/sync.html                ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$DOM) on item 'CogstateSolutionPlatform.SyncURL'.", repo.CogstateSolutionPlatform.SyncURLInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.SyncURLInfo, "InnerText", DOM);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'/sync.html') on item 'CogstateSolutionPlatform.SyncURL'.", repo.CogstateSolutionPlatform.SyncURLInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.SyncURLInfo, "InnerText", "/sync.html");
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Data Upload failed screen is displayed as expected", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
+            Report.Screenshot(ReportLevel.Info, "User", "Data Upload failed screen is displayed as expected", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));
             
         }
 

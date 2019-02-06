@@ -55,6 +55,9 @@
     <Reference Include="PrecisionRecruitment">
       <HintPath>..\..\PrecisionRecruitment\PrecisionRecruitment\bin\Debug\PrecisionRecruitment.exe</HintPath>
     </Reference>
+    <Reference Include="PrecisionRecruitmentAndroid">
+      <HintPath>..\..\PrecisionRecruitment\PrecisionRecruitmentAndroid\bin\Debug\PrecisionRecruitmentAndroid.exe</HintPath>
+    </Reference>
     <Reference Include="Ranorex Automation Helpers">
       <HintPath>..\..\_assets\engine\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
     </Reference>
@@ -244,6 +247,18 @@
       <UserCode>true</UserCode>
       <id>de09ffc4-c61e-451f-9b2a-07c4011abf42</id>
       <BoundTo>111bddde-d104-4eb2-b624-0120de4f635c</BoundTo>
+    </Compile>
+    <Compile Include="AddEventDefinitionsPage\Validate_CRFs_Added.cs">
+      <BoundTo>6b026ce4-9a85-4396-881e-92687314f82e</BoundTo>
+      <DependentUpon>Validate_CRFs_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d3ac365-acca-416b-a26c-f2eb89803bbf</id>
+    </Compile>
+    <Compile Include="AddEventDefinitionsPage\Validate_CRFs_Added.UserCode.cs">
+      <BoundTo>6b026ce4-9a85-4396-881e-92687314f82e</BoundTo>
+      <DependentUpon>Validate_CRFs_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d0dcaec5-37e5-4a76-8e62-8036624b71ce</id>
     </Compile>
     <Compile Include="AddSitePage\Enter_SiteEnrolment.cs">
       <DependentUpon>Enter_SiteEnrolment.rxrec</DependentUpon>
@@ -448,6 +463,18 @@
       <UserCode>true</UserCode>
       <id>b2b4956e-5143-4a82-9199-aafb1e6f7d8e</id>
       <BoundTo>82c25d43-59bc-4e32-a8a2-3e18c1aee1ac</BoundTo>
+    </Compile>
+    <Compile Include="AddSubjectPage\Validate_Subject_Added.cs">
+      <BoundTo>9cdfe5dc-faee-4ad4-9888-e669516ad7ea</BoundTo>
+      <DependentUpon>Validate_Subject_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0799c7f3-069d-4575-941a-bab9ce65f783</id>
+    </Compile>
+    <Compile Include="AddSubjectPage\Validate_Subject_Added.UserCode.cs">
+      <BoundTo>9cdfe5dc-faee-4ad4-9888-e669516ad7ea</BoundTo>
+      <DependentUpon>Validate_Subject_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5723d871-56c1-4828-a869-7f1715fb4f40</id>
     </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>899d6693-82bc-458c-8653-6516ceb665d0</id>
@@ -1016,6 +1043,18 @@
     <Compile Include="RCCUtility.cs">
       <id>3c3d4c88-4b9d-4e3a-8b74-33f2ab18b761</id>
     </Compile>
+    <Compile Include="SubjectsPage\Validate_Event_Added.cs">
+      <BoundTo>5b99876b-690f-47b3-a78e-9ef040320ebb</BoundTo>
+      <DependentUpon>Validate_Event_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20731540-ff43-4515-a2ba-3fcfebfcc0da</id>
+    </Compile>
+    <Compile Include="SubjectsPage\Validate_Event_Added.UserCode.cs">
+      <BoundTo>5b99876b-690f-47b3-a78e-9ef040320ebb</BoundTo>
+      <DependentUpon>Validate_Event_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>313a66b0-d24c-4b81-99b3-c43c65e92224</id>
+    </Compile>
     <Compile Include="ValidationModules\Compare_Outcomes.cs">
       <BoundTo>a3182151-0719-4211-8651-3047420940af</BoundTo>
       <DependentUpon>Compare_Outcomes.rxrec</DependentUpon>
@@ -1027,6 +1066,18 @@
       <DependentUpon>Compare_Outcomes.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d0375737-8be6-4da1-b0ee-0907585f2f02</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_CBB_Outcomes_Displayed.cs">
+      <BoundTo>4576bf3f-9a7d-413f-a521-162332f21eb6</BoundTo>
+      <DependentUpon>Validate_CBB_Outcomes_Displayed.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5a3e9c3-c1e0-4b1d-ba40-4fd1e51f4fa3</id>
+    </Compile>
+    <Compile Include="ValidationModules\Validate_CBB_Outcomes_Displayed.UserCode.cs">
+      <BoundTo>4576bf3f-9a7d-413f-a521-162332f21eb6</BoundTo>
+      <DependentUpon>Validate_CBB_Outcomes_Displayed.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31ffb3a4-e616-4b45-97da-ef4b9e566ea2</id>
     </Compile>
     <Compile Include="ValidationModules\Validate_EventDef_Entry.cs">
       <DependentUpon>Validate_EventDef_Entry.rxrec</DependentUpon>
@@ -1147,6 +1198,11 @@
       <id>111bddde-d104-4eb2-b624-0120de4f635c</id>
       <recordtableid>d87ad496-dfc7-402e-a2b1-19bf465a8af1</recordtableid>
     </None>
+    <None Include="AddEventDefinitionsPage\Validate_CRFs_Added.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>6b026ce4-9a85-4396-881e-92687314f82e</id>
+      <recordtableid>55026c2e-7197-4596-8c0c-6275a4b2fc64</recordtableid>
+    </None>
     <None Include="AddSitePage\Enter_SiteEnrolment.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>7a7c3cea-0d9e-438f-8bc7-98523d8fac5b</id>
@@ -1231,6 +1287,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>82c25d43-59bc-4e32-a8a2-3e18c1aee1ac</id>
       <recordtableid>e534bd83-1528-4c3a-882b-fb08bcf40e6e</recordtableid>
+    </None>
+    <None Include="AddSubjectPage\Validate_Subject_Added.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>9cdfe5dc-faee-4ad4-9888-e669516ad7ea</id>
+      <recordtableid>5fcd8123-4441-485f-bb20-4534e6acf23b</recordtableid>
     </None>
     <None Include="app.config">
       <id>4ef413af-dd9f-4d81-8fac-ed4d3c600dfe</id>
@@ -1516,10 +1577,20 @@
       <id>aa13450f-8f16-4cdd-b047-359a936075d3</id>
       <recordtableid>a513151c-40bc-4c29-b0f3-05d486e113f5</recordtableid>
     </None>
+    <None Include="SubjectsPage\Validate_Event_Added.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>5b99876b-690f-47b3-a78e-9ef040320ebb</id>
+      <recordtableid>14393025-d700-47c7-9152-6833ae9f4bed</recordtableid>
+    </None>
     <None Include="ValidationModules\Compare_Outcomes.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>a3182151-0719-4211-8651-3047420940af</id>
       <recordtableid>cab977ba-0e9f-4c5c-94a2-a6aa19429286</recordtableid>
+    </None>
+    <None Include="ValidationModules\Validate_CBB_Outcomes_Displayed.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>4576bf3f-9a7d-413f-a521-162332f21eb6</id>
+      <recordtableid>1a6e768c-7dae-4e53-8a84-cff627502e8a</recordtableid>
     </None>
     <None Include="ValidationModules\Validate_EventDef_Entry.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -1608,6 +1679,12 @@
     <Folder Include="ValidationModules">
       <id>34b1ef50-b27f-4f94-86c3-e7ef3fcbf755</id>
     </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RedCapCloudAndroid\RedCapCloudAndroid.csproj">
+      <Project>{B1B773E1-935B-419B-84B1-27A25A0302C7}</Project>
+      <Name>RedCapCloudAndroid</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

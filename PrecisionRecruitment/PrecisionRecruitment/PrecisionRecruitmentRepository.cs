@@ -7296,7 +7296,7 @@ namespace PrecisionRecruitment
                 _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span[@id>':3']/span[@innertext='Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");
                 _forgotpasswordlinkInfo = new RepoItemInfo(this, "ForgotPasswordLink", ".//div//a[@innertext~$DOM]", 30000, null, "a1bd28f9-fa49-4070-b113-d58014026934");
                 _accountbuttonInfo = new RepoItemInfo(this, "AccountButton", ".//header[#'gb']/div[2]/div[3]//a[@href~'^https://accounts\\.google\\.c']", 30000, null, "2468f073-1e7c-48a5-bbdc-af4e475eb9b9");
-                _platformsupportemailInfo = new RepoItemInfo(this, "PlatformSupportEmail", ".//div[#':2']//span/span[@innertext~'^Cogstate user account created']", 30000, null, "105c6084-d31d-4f61-89ad-61d64d052748");
+                _platformsupportemailInfo = new RepoItemInfo(this, "PlatformSupportEmail", ".//span/span[@innertext~'Cogstate user account created']", 30000, null, "105c6084-d31d-4f61-89ad-61d64d052748");
             }
 
             /// <summary>

@@ -140,6 +140,8 @@ namespace RedCapCloud.ValidationModules
             Validate.AttributeContains(repo.REDCapCloud.StudiesTable.StudySummaryInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
+            Report.Screenshot(ReportLevel.Info, "User", "Study Added Successfully", repo.REDCapCloud.Self, false, new RecordItemIndex(5));
+            
         }
 
 #region Image Feature Data

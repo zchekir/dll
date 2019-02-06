@@ -37,9 +37,7 @@ namespace RedCapCloud.SubjectsPage
         {
         	Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'divtagInfo' and assigning its value to variable 'TestIdentifier'.", divtagInfo);
         	
-        	while (!divtagInfo.Exists()) {
-        		Delay.Duration(30000);
-        		
+        	while (!divtagInfo.Exists(new Duration(30000))) {
         		Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}", 100);
         		
         		Delay.Duration(1500);

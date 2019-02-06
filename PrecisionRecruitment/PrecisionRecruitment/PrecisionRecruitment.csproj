@@ -774,6 +774,18 @@
       <id>6898894f-76a3-426c-a96f-7c904f061c9b</id>
       <BoundTo>9fbe7663-83bc-4dae-9212-4f5405476cd8</BoundTo>
     </Compile>
+    <Compile Include="AddVisitSchedulePage\Select_Workflow.cs">
+      <BoundTo>96b279b0-7421-43f1-bb5a-d2d992b5ceff</BoundTo>
+      <DependentUpon>Select_Workflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2f32c5f-1548-42a8-a0fe-cea7f4eef458</id>
+    </Compile>
+    <Compile Include="AddVisitSchedulePage\Select_Workflow.UserCode.cs">
+      <BoundTo>96b279b0-7421-43f1-bb5a-d2d992b5ceff</BoundTo>
+      <DependentUpon>Select_Workflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8dca43ce-7957-4f42-abbe-f1da0b5b21b2</id>
+    </Compile>
     <Compile Include="AddVisitSchedulePage\Validate_DLM_Enabled.cs">
       <BoundTo>c30d9f55-345b-4f1f-8010-05eb98438e55</BoundTo>
       <DependentUpon>Validate_DLM_Enabled.rxrec</DependentUpon>
@@ -3169,6 +3181,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>9fbe7663-83bc-4dae-9212-4f5405476cd8</id>
       <recordtableid>8f5dbbf6-ea58-4c62-9550-7b304a4984fb</recordtableid>
+    </None>
+    <None Include="AddVisitSchedulePage\Select_Workflow.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>96b279b0-7421-43f1-bb5a-d2d992b5ceff</id>
+      <recordtableid>1bf7aabb-931a-4efb-8e05-7a8f93549a40</recordtableid>
     </None>
     <None Include="AddVisitSchedulePage\Validate_DLM_Enabled.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

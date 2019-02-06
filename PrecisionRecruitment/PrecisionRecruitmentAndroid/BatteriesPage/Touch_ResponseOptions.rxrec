@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6bba9c69-5559-46f7-a07b-bf34ceeca5a5"
+mode="Global"
+rxversion="8.2">
+	<name>
+		Touch_ResponseOptions
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Touch_ResponseOptions"
+	namespace="PrecisionRecruitmentAndroid.BatteriesPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<touchrecorditem
+		duration="100ms"
+		elementlocation="Center"
+		enabled="True"
+		fingerid="0"
+		isremote="False"
+		longtouchduration="1000ms"
+		moveduration="100ms"
+		optional="False"
+		screenshotname=""
+		searchpropertyid="6dff2ac8-11e9-435b-8eba-f8a75c7c155f"
+		sx="0"
+		sy="0"
+		touchduration="100ms"
+		touchtype="Touch"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3e7eb34a-d169-4a4a-8275-ac0670ca4d1a"
+			sourcename="RepositoryEditor">
+				<path>
+					/mobileapp[@title='ranorex.RxBrowser']//dom//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']
+				</path>
+			</info>
+		</touchrecorditem>
+	</recorditems>
+	<repository
+	id="cb9ece6c-8829-4baf-8157-89f06750e804"
+	name="PrecisionRecruitmentAndroidRepository"
+	relativepath="..\PrecisionRecruitmentAndroidRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="PrecisionRecruitmentAndroidRepository"
+		namespace="PrecisionRecruitmentAndroid">
+		</codegen>
+		<rootfolder
+		id="26cd7881-bd65-4ee0-8a52-4c5a6db01079"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Touch_ResponseOptions.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

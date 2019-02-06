@@ -107,6 +107,8 @@ namespace RedCapCloud.ValidationModules
             Validate.Exists(repo.REDCapCloud.EventDefTable.TypeInfo);
             Delay.Milliseconds(0);
             
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.REDCapCloud.Self, false, new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data

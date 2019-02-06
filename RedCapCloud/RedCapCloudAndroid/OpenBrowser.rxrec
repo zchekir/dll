@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4f88bb23-e29b-4c4f-a80c-650238145345"
+mode="Mobile"
+rxversion="8.2">
+	<name>
+		OpenBrowser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="RedCapCloudAndroid">
+	</codegen>
+	<variables>
+		<var
+		id="d90709bc-7590-4a92-b14b-8f73c92181b9"
+		name="URL">
+		</var>
+	</variables>
+	<recorditems>
+		<runmobileapprecorditem
+		application="ranorex.RxBrowser"
+		devicename="Current Endpoint (Chromebook)"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		resetInitialState="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</runmobileapprecorditem>
+		<setvaluerecorditem
+		attrname="PageUrl"
+		duration="1000ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9374393a-2929-4574-904b-d2b165a621c5">
+			<comment>
+				Browse to site.
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="URL">
+				</binding>
+			</bindings>
+			<info
+			id="a18a32a9-5f09-4290-84aa-3aa313a9b149"
+			sourcename="">
+				<path>
+					/mobileapp[@title='ranorex.RxBrowser']//dom
+				</path>
+			</info>
+			<AttributeValue>
+				https://cgst-qc-duo.cogstate.com
+			</AttributeValue>
+		</setvaluerecorditem>
+	</recorditems>
+	<repository
+	id="93f7c623-c87d-4b4e-b15a-7c2bad791aef"
+	name="RedCapCloudAndroidRepository"
+	relativepath="RedCapCloudAndroidRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudAndroidRepository"
+		namespace="RedCapCloudAndroid">
+		</codegen>
+		<rootfolder
+		id="7395beb5-29eb-462c-8a0f-3116a4d258a6"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
