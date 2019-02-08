@@ -100,13 +100,19 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.Subject' at Center.", repo.REDCapCloud.SubjectsPage.SubjectInfo, new RecordItemIndex(0));
+            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.Subject' at Center.", repo.REDCapCloud.SubjectsPage.SubjectInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.Subject.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'REDCapCloud.SubjectsPage.SubjectDetail'.", repo.REDCapCloud.SubjectsPage.SubjectDetailInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'REDCapCloud.SubjectsPage.SubjectDetail'.", repo.REDCapCloud.SubjectsPage.SubjectDetailInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.REDCapCloud.SubjectsPage.SubjectDetailInfo, "InnerText", RandNum);
             Delay.Milliseconds(100);
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
+            Delay.Milliseconds(0);
             
         }
 

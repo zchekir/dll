@@ -33,6 +33,54 @@ rxversion="8.2">
 		</var>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StartPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a5210af8-d869-4620-8b92-7e509d05590d">
+				<argument
+				argname="findElement"
+				id="0d65f89f-fdac-4908-8179-3cdbb994b203">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="4905543d-fe92-4e16-bf63-8ad6f30c9a55">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -219,6 +267,54 @@ mjaaKKADaaNpoooANpo2miigA2mjaaKKADaaNpoooANpo2miigA2mjaaKKADaaNpoooANpooooA/
 				Subject Detail: 12345
 			</matchvalue>
 		</validationitem>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StopPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c6cf4f11-f17e-44ce-9329-09d6725580a2">
+				<argument
+				argname="findElement"
+				id="8d99c921-4011-450c-9157-e2247d675664">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="b823757c-72be-4b1c-b0eb-16bb8284844c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"

@@ -89,11 +89,17 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Menu.HamburgerMenu' at Center.", repo.CogstateSolutionPlatform.Menu.HamburgerMenuInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.Menu.HamburgerMenu'", repo.CogstateSolutionPlatform.Menu.HamburgerMenuInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.Menu.HamburgerMenuInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.Menu.HamburgerMenu' at Center.", repo.CogstateSolutionPlatform.Menu.HamburgerMenuInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.Menu.HamburgerMenu.Click();
             Delay.Milliseconds(400);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 100ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 100ms.", new RecordItemIndex(3));
             Delay.Duration(100, false);
             
             Click_ExternalUsers(repo.CogstateSolutionPlatform.Menu.AdministrationMenuOptionInfo, repo.CogstateSolutionPlatform.Menu.ExternalUsersMenuOptionInfo);

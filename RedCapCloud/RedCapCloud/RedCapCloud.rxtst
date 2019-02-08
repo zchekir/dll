@@ -984,10 +984,6 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
-			<setup
-			id="4d9ca022-a9da-475e-a138-60092d1882cd"
-			name="setup">
-			</setup>
 			<testmodule
 			id="4dcfbc49-161f-489e-8851-97b04fe2ffcc"
 			name="Enter_Password"
@@ -1886,11 +1882,11 @@ rxversion="8.2">
 				<parameters>
 					<param
 					name="DOM"
-					value="cgsqc.redcapcloud.com">
+					value="cgst-qcpd.uat.redcapcloud.com">
 					</param>
 					<param
 					name="URL"
-					value="https://cgsqc.redcapcloud.com">
+					value="https://cgst-qcpd.uat.redcapcloud.com">
 					</param>
 					<param
 					name="RandNum"
@@ -1906,11 +1902,11 @@ rxversion="8.2">
 					</param>
 					<param
 					name="DBServer"
-					value="cgst-qc.database.windows.net">
+					value="cgst-qcpd.database.windows.net">
 					</param>
 					<param
 					name="Database"
-					value="cgst-duo-api">
+					value="cgst-api">
 					</param>
 					<param
 					name="Authentication"
@@ -2096,7 +2092,8 @@ rxversion="8.2">
 			</testmodule>
 			<testcase
 			id="9a9a580c-0a1b-46a2-8e3f-6c389eba1209"
-			name="Configure__VisitSchedule">
+			name="Configure__VisitSchedule"
+			warnunboundvariables="False">
 			</testcase>
 			<setup
 			id="9ac3088d-4e0a-4461-831f-7e4e74c52d85"
@@ -4068,10 +4065,6 @@ rxversion="8.2">
 							<testcase
 							id="19166595-a8a0-4f1f-8a0a-594922578cb8"
 							name="Check_Outcomes">
-								<setup
-								id="4d9ca022-a9da-475e-a138-60092d1882cd"
-								name="setup">
-								</setup>
 								<testmodule
 								id="ccdfca5c-340f-49dd-bc7a-76e1cc6d01c1"
 								name="Click_Subjects_Button">

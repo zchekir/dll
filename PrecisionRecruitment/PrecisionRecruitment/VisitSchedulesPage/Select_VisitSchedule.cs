@@ -115,8 +115,8 @@ namespace PrecisionRecruitment.VisitSchedulesPage
             repo.CogstateSolutionPlatform.StudyTabs.VisitSchedulesTab.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.StudyToolbar.SearchField.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click(1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VisitScheduleName' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(2));
