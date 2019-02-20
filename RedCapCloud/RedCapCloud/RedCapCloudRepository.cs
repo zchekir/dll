@@ -30,7 +30,6 @@ namespace RedCapCloud
         RedCapCloudRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
         RedCapCloudRepositoryFolders.OpenFileDialogAppFolder _openfiledialog;
         RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder _reloadsitedialog;
-        RedCapCloudRepositoryFolders.RanorexRxBrowserAppFolder _ranorexrxbrowser;
 
         /// <summary>
         /// Gets the singleton class instance representing the RedCapCloudRepository element repository.
@@ -50,7 +49,6 @@ namespace RedCapCloud
             _redcapcloud = new RedCapCloudRepositoryFolders.REDCapCloudAppFolder(this);
             _openfiledialog = new RedCapCloudRepositoryFolders.OpenFileDialogAppFolder(this);
             _reloadsitedialog = new RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder(this);
-            _ranorexrxbrowser = new RedCapCloudRepositoryFolders.RanorexRxBrowserAppFolder(this);
         }
 
 #region Variables
@@ -202,15 +200,6 @@ namespace RedCapCloud
         public virtual RedCapCloudRepositoryFolders.ReloadSiteDialogAppFolder ReloadSiteDialog
         {
             get { return _reloadsitedialog; }
-        }
-
-        /// <summary>
-        /// The RanorexRxBrowser folder.
-        /// </summary>
-        [RepositoryFolder("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
-        public virtual RedCapCloudRepositoryFolders.RanorexRxBrowserAppFolder RanorexRxBrowser
-        {
-            get { return _ranorexrxbrowser; }
         }
     }
 
@@ -3452,46 +3441,6 @@ namespace RedCapCloud
                 get
                 {
                     return _reloadbuttonInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The RanorexRxBrowserAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
-        public partial class RanorexRxBrowserAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new RanorexRxBrowser  folder.
-            /// </summary>
-            public RanorexRxBrowserAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("RanorexRxBrowser", "/mobileapp[@title='ranorex.RxBrowser']", parentFolder, 30000, null, false, "581144b2-b7c0-4a68-acc3-b1e453a4684b", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
-            public virtual Ranorex.MobileApp Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.MobileApp>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("581144b2-b7c0-4a68-acc3-b1e453a4684b")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }

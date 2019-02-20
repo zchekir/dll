@@ -116,7 +116,7 @@ namespace RedCapCloud.CRFsPage
             Delay.Milliseconds(10);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '.csv' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(4));
-            repo.OpenFileDialog.FilenameField.PressKeys(".csv", 100);
+            repo.OpenFileDialog.FilenameField.PressKeys(".csv", 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OpenFileDialog.ButtonOpen' at Center.", repo.OpenFileDialog.ButtonOpenInfo, new RecordItemIndex(5));
