@@ -248,6 +248,53 @@ rxversion="8.2">
 			</folder>
 			<folder
 			capname="unknown"
+			id="8acfc901-f618-41e0-9da0-11d79b6a3987"
+			isrooted="False"
+			name="PermissionsPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="e96c5596-e294-4701-9619-cfb5beac4355"
+				name="AddRoleButton"
+				refimgid="daaa98b4-ca62-493c-9cd6-b0b73a302724"
+				refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//button[#'studyPermissions_addRole']/span[@innertext='Add Role']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'studyPermissions_addRole']/span[@innertext='Add Role']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="879f5d82-7e2f-43cc-86f6-ae1c64fcfd5e"
+				name="StudyPermissionsRoleName"
+				refimgid="b3ab22db-bf05-4c7f-a486-ad3e9d6f5a3c"
+				refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//input[#'studyPermissions_roleName']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//input[#'studyPermissions_roleName']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="ee6c8adf-d12d-4cf7-a9d9-c5567d2328a7"
+				name="SaveAndExitButton"
+				refimgid="eaedb14f-e564-4e67-a645-2a1e17983761"
+				refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//button[#'studyPermissionsMp_addEditRole_saveAndReturn']/span[@innertext='Save and Exit']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'studyPermissionsMp_addEditRole_saveAndReturn']/span[@innertext='Save and Exit']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="7bc834c5-f0d1-4e03-adc6-534bb79a4010"
+				name="CancelButton"
+				refimgid="a4cf6a95-b006-4ecc-b235-548cbcfd4080"
+				refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//button[#'studyPermissionsMp_addEditRole_cancel']/span[@innertext='Cancel']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'studyPermissionsMp_addEditRole_cancel']/span[@innertext='Cancel']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
 			id="82882235-4f3b-44c8-a9d4-3e295ba15faf"
 			isrooted="False"
 			name="EventDefinitionPage"
@@ -732,6 +779,60 @@ rxversion="8.2">
 				</item>
 			</folder>
 			<folder
+			capname="unknown"
+			id="0a037a8c-6311-46d2-8f9a-36b6e49e59bb"
+			isrooted="False"
+			name="UsersPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="f269b37f-d456-41e6-8bee-c1b97d5e47fc"
+				name="IntegrationUser"
+				refimgid="adb4894a-9f4e-46ea-90ce-d9d48d2eb671"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr//div[@innertext~'IntegrationUser@cogstate.com']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="4e8a8599-b01f-4610-9e46-481cb5e0abd7"
+				name="IntegrationUserEdit"
+				refimgid="68ab6382-4f1f-47b9-8603-cc223e924e64"
+				refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div/div/div[1]/div[1]/div[3]/table/tbody/tr/td[2]/div/div"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div/div/div[1]/div[1]/div[3]/table/tbody/tr/td[2]/?/?/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="d074b94c-f5da-43b2-bbe6-d1b498e3a023"
+				name="IntegrationUserEditPanel"
+				refimgid="2ebe6ec3-3d75-4782-9a21-a7b39316ed0a"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div/div/div/div/div/div/div[3]/div/div[2]/table/?/?/tr/td[1]/div[@innertext~'Integration  User']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="98e2b9d1-2708-4d8a-b4c3-637d711776ab"
+				name="ToolsDropDown"
+				refimgid="6f7b933e-ef92-4f26-82c6-5516bb6d219f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//table/tbody//table/?/?/tr/td[1]/table//button[@id='dropDownButton_button_tools']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="567ebfac-b0c0-4433-a79b-eaf740b1e1a8"
+				name="DeleteButton"
+				refimgid="99201d59-ce7b-40cd-8110-5386e7f78fe3"
+				refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//li[#'dropDownButton_popupMenuItem_delete']/a[@innertext='Delete']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//li[#'dropDownButton_popupMenuItem_delete']/a[@innertext='Delete']
+				</item>
+			</folder>
+			<folder
 			addcaps="unknown,webelement,iframetag"
 			capname="iframetag"
 			id="ac013338-35f4-4033-943f-f34702032c3d"
@@ -950,12 +1051,12 @@ rxversion="8.2">
 			</item>
 			<item
 			addcaps="unknown,webelement,imgtag"
-			capname="divtag"
+			capname="imgtag"
 			id="dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5"
 			name="MyStudiesButton"
 			refimgid="98f19368-ead8-44d3-84d5-3e4405f6fe9a"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'leftMenuButtons_navSetupStudies']
+				/dom[@domain=$DOM]//div[#'gwtWrapper']//img[@src~'https://'+$DOM+'/gwt/clear.cache.gif']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -1045,6 +1146,62 @@ rxversion="8.2">
 			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'commonTools_buttonYes']/span[@innertext='Yes']"
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="92424763-dfb1-4558-8296-b7fee0fdd8bb"
+			name="SiteIDExists"
+			refimgid="00a3f19a-229f-44df-87e7-3b3854c5406a"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[5]//div[@innertext~'Study Site ID - already exists']
+			</item>
+			<item
+			capname="divtag"
+			id="e758309b-d495-47cb-97e4-fe94b1af0b57"
+			name="ShowMoreValidationFailures"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[5]//div[@innertext='Show more']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="8340b902-b9d5-479b-9a7e-a265232bfa17"
+			name="CancelButton"
+			refimgid="f0e34c03-1698-45b8-abc9-70ba81bb401a"
+			refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//button[#'studyBaseEditForm_buttonCancel']/span[@innertext='Cancel']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'studyBaseEditForm_buttonCancel']/span[@innertext='Cancel']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="ed9a8860-7beb-46a9-a610-9d06e34cb962"
+			name="UsersTab"
+			refimgid="a61b77e3-757a-4831-ab7c-668faa061151"
+			refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//div[#'studyBaseWidget_topLinkName_users']/a[@innertext='Users']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'studyBaseWidget_topLinkName_users']/a[@innertext='Users']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="05db3a9e-cb69-46e3-85fd-d12a3f8a5e63"
+			name="PermissionsTab"
+			refimgid="6d15482a-727a-484d-a77f-1a220e3edb83"
+			refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//div[#'studyBaseWidget_topLinkName_permissions']/a[@innertext='Permissions']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'studyBaseWidget_topLinkName_permissions']/a[@innertext='Permissions']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="b4a72825-ea9d-4078-a609-1ae22df65884"
+			name="RoleAlreadyExists"
+			refimgid="c91bd090-214b-4528-96ca-b295782f8d53"
+			refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']/body/div[7]/div/div/div/div[@innertext='Role already exists']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body/div[7]//div[@innertext='Role already exists']
 			</item>
 			<basepath>
 				/dom[@domain=$DOM]
@@ -1139,7 +1296,7 @@ AAAASUVORK5CYII=
 		<var
 		id="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 		name="DOM">
-			cgsqc.redcapcloud.com
+			cgst-qcpd.uat.redcapcloud.com
 		</var>
 		<var
 		id="9fb53a7d-2a6f-47b3-8fa5-4d13a07e1b86"

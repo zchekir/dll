@@ -53,7 +53,7 @@ namespace RedCapCloud
 
 #region Variables
 
-        string _DOM = "cgsqc.redcapcloud.com";
+        string _DOM = "cgst-qcpd.uat.redcapcloud.com";
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -219,10 +219,12 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.AddStudyPageFolder _addstudypage;
             RedCapCloudRepositoryFolders.AddSitePageFolder _addsitepage;
             RedCapCloudRepositoryFolders.ParametersPageFolder _parameterspage;
+            RedCapCloudRepositoryFolders.PermissionsPageFolder _permissionspage;
             RedCapCloudRepositoryFolders.EventDefinitionPageFolder _eventdefinitionpage;
             RedCapCloudRepositoryFolders.CRFsPageFolder _crfspage;
             RedCapCloudRepositoryFolders.SubjectsPageFolder _subjectspage;
             RedCapCloudRepositoryFolders.SubjectMatrixPageFolder _subjectmatrixpage;
+            RedCapCloudRepositoryFolders.UsersPageFolder _userspage;
             RedCapCloudRepositoryFolders.IFrameFolder _iframe;
             RedCapCloudRepositoryFolders.StudiesTableFolder _studiestable;
             RedCapCloudRepositoryFolders.SitesTableFolder _sitestable;
@@ -245,6 +247,12 @@ namespace RedCapCloud
             RepoItemInfo _cogstatebatterydataconfirmationInfo;
             RepoItemInfo _markcrfcompleteInfo;
             RepoItemInfo _confirmpopupyesbuttonInfo;
+            RepoItemInfo _siteidexistsInfo;
+            RepoItemInfo _showmorevalidationfailuresInfo;
+            RepoItemInfo _cancelbuttonInfo;
+            RepoItemInfo _userstabInfo;
+            RepoItemInfo _permissionstabInfo;
+            RepoItemInfo _rolealreadyexistsInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -256,10 +264,12 @@ namespace RedCapCloud
                 _addstudypage = new RedCapCloudRepositoryFolders.AddStudyPageFolder(this);
                 _addsitepage = new RedCapCloudRepositoryFolders.AddSitePageFolder(this);
                 _parameterspage = new RedCapCloudRepositoryFolders.ParametersPageFolder(this);
+                _permissionspage = new RedCapCloudRepositoryFolders.PermissionsPageFolder(this);
                 _eventdefinitionpage = new RedCapCloudRepositoryFolders.EventDefinitionPageFolder(this);
                 _crfspage = new RedCapCloudRepositoryFolders.CRFsPageFolder(this);
                 _subjectspage = new RedCapCloudRepositoryFolders.SubjectsPageFolder(this);
                 _subjectmatrixpage = new RedCapCloudRepositoryFolders.SubjectMatrixPageFolder(this);
+                _userspage = new RedCapCloudRepositoryFolders.UsersPageFolder(this);
                 _iframe = new RedCapCloudRepositoryFolders.IFrameFolder(this);
                 _studiestable = new RedCapCloudRepositoryFolders.StudiesTableFolder(this);
                 _sitestable = new RedCapCloudRepositoryFolders.SitesTableFolder(this);
@@ -272,7 +282,7 @@ namespace RedCapCloud
                 _parameterstabInfo = new RepoItemInfo(this, "ParametersTab", ".//div[#'studyBaseWidget_topLinkName_parameters']/a[@innertext='Parameters']", 30000, null, "e1a8abb4-eff4-4ad3-bce3-1662b283c589");
                 _subjectparamsusecustomcrfviewonlyInfo = new RepoItemInfo(this, "SubjectParamsUseCustomCrfViewOnly", ".//i[#'subjectParams_useCustomCrf_viewOnly']", 30000, null, "f2f2e617-d49f-4849-b07f-cff241a5a41a");
                 _eventdefinitionstabInfo = new RepoItemInfo(this, "EventDefinitionsTab", ".//div[#'studyBaseWidget_topLinkName_eventDefinitions']/a[@innertext='Event Definitions']", 30000, null, "1201996b-02f8-48f8-9fcb-f8287de67c8d");
-                _mystudiesbuttonInfo = new RepoItemInfo(this, "MyStudiesButton", ".//div[#'leftMenuButtons_navSetupStudies']", 30000, null, "dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5");
+                _mystudiesbuttonInfo = new RepoItemInfo(this, "MyStudiesButton", ".//div[#'gwtWrapper']//img[@src~'https://'+$DOM+'/gwt/clear.cache.gif']", 30000, null, "dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5");
                 _crfstabInfo = new RepoItemInfo(this, "CRFsTab", ".//div[#'studyBaseWidget_topLinkName_cRFs']/a[@innertext='CRFs']", 30000, null, "85c425e2-a4ac-452a-ac21-a60fdfb9b80e");
                 _subjectsbuttonInfo = new RepoItemInfo(this, "SubjectsButton", ".//div[#'leftMenuButtons_navSubjects']/div[@innertext='Subjects']", 30000, null, "49e053e3-c79f-4754-ba64-0a7f12c8311b");
                 _addeventInfo = new RepoItemInfo(this, "AddEvent", ".//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']", 30000, null, "90347d54-c6b6-44b9-89dd-3599e2115baf");
@@ -282,6 +292,12 @@ namespace RedCapCloud
                 _cogstatebatterydataconfirmationInfo = new RepoItemInfo(this, "CogstateBatteryDataConfirmation", ".//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\\ Battery\\ Data\\ Con']", 30000, null, "3dff02c4-a338-4b37-904b-2ab9b5ef7a75");
                 _markcrfcompleteInfo = new RepoItemInfo(this, "MarkCRFComplete", ".//i[#'dataCollectionWidget_checkboxComplete']", 30000, null, "8017c05e-63a5-4c1f-a7f8-676c2d3b01ce");
                 _confirmpopupyesbuttonInfo = new RepoItemInfo(this, "ConfirmPopupYesButton", ".//button[#'commonTools_buttonYes']/span[@innertext='Yes']", 30000, null, "970238ad-03ed-405c-947a-61f5f26728fb");
+                _siteidexistsInfo = new RepoItemInfo(this, "SiteIDExists", "body/div[5]//div[@innertext~'Study Site ID - already exists']", 30000, null, "92424763-dfb1-4558-8296-b7fee0fdd8bb");
+                _showmorevalidationfailuresInfo = new RepoItemInfo(this, "ShowMoreValidationFailures", "body/div[5]//div[@innertext='Show more']", 30000, null, "e758309b-d495-47cb-97e4-fe94b1af0b57");
+                _cancelbuttonInfo = new RepoItemInfo(this, "CancelButton", ".//button[#'studyBaseEditForm_buttonCancel']/span[@innertext='Cancel']", 30000, null, "8340b902-b9d5-479b-9a7e-a265232bfa17");
+                _userstabInfo = new RepoItemInfo(this, "UsersTab", ".//div[#'studyBaseWidget_topLinkName_users']/a[@innertext='Users']", 30000, null, "ed9a8860-7beb-46a9-a610-9d06e34cb962");
+                _permissionstabInfo = new RepoItemInfo(this, "PermissionsTab", ".//div[#'studyBaseWidget_topLinkName_permissions']/a[@innertext='Permissions']", 30000, null, "05db3a9e-cb69-46e3-85fd-d12a3f8a5e63");
+                _rolealreadyexistsInfo = new RepoItemInfo(this, "RoleAlreadyExists", "body/div[7]//div[@innertext='Role already exists']", 30000, null, "b4a72825-ea9d-4078-a609-1ae22df65884");
             }
 
             /// <summary>
@@ -504,11 +520,11 @@ namespace RedCapCloud
             /// The MyStudiesButton item.
             /// </summary>
             [RepositoryItem("dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5")]
-            public virtual Ranorex.DivTag MyStudiesButton
+            public virtual Ranorex.ImgTag MyStudiesButton
             {
                 get
                 {
-                    return _mystudiesbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _mystudiesbuttonInfo.CreateAdapter<Ranorex.ImgTag>(true);
                 }
             }
 
@@ -741,6 +757,150 @@ namespace RedCapCloud
             }
 
             /// <summary>
+            /// The SiteIDExists item.
+            /// </summary>
+            [RepositoryItem("92424763-dfb1-4558-8296-b7fee0fdd8bb")]
+            public virtual Ranorex.DivTag SiteIDExists
+            {
+                get
+                {
+                    return _siteidexistsInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDExists item info.
+            /// </summary>
+            [RepositoryItemInfo("92424763-dfb1-4558-8296-b7fee0fdd8bb")]
+            public virtual RepoItemInfo SiteIDExistsInfo
+            {
+                get
+                {
+                    return _siteidexistsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ShowMoreValidationFailures item.
+            /// </summary>
+            [RepositoryItem("e758309b-d495-47cb-97e4-fe94b1af0b57")]
+            public virtual Ranorex.DivTag ShowMoreValidationFailures
+            {
+                get
+                {
+                    return _showmorevalidationfailuresInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShowMoreValidationFailures item info.
+            /// </summary>
+            [RepositoryItemInfo("e758309b-d495-47cb-97e4-fe94b1af0b57")]
+            public virtual RepoItemInfo ShowMoreValidationFailuresInfo
+            {
+                get
+                {
+                    return _showmorevalidationfailuresInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CancelButton item.
+            /// </summary>
+            [RepositoryItem("8340b902-b9d5-479b-9a7e-a265232bfa17")]
+            public virtual Ranorex.SpanTag CancelButton
+            {
+                get
+                {
+                    return _cancelbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CancelButton item info.
+            /// </summary>
+            [RepositoryItemInfo("8340b902-b9d5-479b-9a7e-a265232bfa17")]
+            public virtual RepoItemInfo CancelButtonInfo
+            {
+                get
+                {
+                    return _cancelbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UsersTab item.
+            /// </summary>
+            [RepositoryItem("ed9a8860-7beb-46a9-a610-9d06e34cb962")]
+            public virtual Ranorex.ATag UsersTab
+            {
+                get
+                {
+                    return _userstabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UsersTab item info.
+            /// </summary>
+            [RepositoryItemInfo("ed9a8860-7beb-46a9-a610-9d06e34cb962")]
+            public virtual RepoItemInfo UsersTabInfo
+            {
+                get
+                {
+                    return _userstabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PermissionsTab item.
+            /// </summary>
+            [RepositoryItem("05db3a9e-cb69-46e3-85fd-d12a3f8a5e63")]
+            public virtual Ranorex.ATag PermissionsTab
+            {
+                get
+                {
+                    return _permissionstabInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PermissionsTab item info.
+            /// </summary>
+            [RepositoryItemInfo("05db3a9e-cb69-46e3-85fd-d12a3f8a5e63")]
+            public virtual RepoItemInfo PermissionsTabInfo
+            {
+                get
+                {
+                    return _permissionstabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RoleAlreadyExists item.
+            /// </summary>
+            [RepositoryItem("b4a72825-ea9d-4078-a609-1ae22df65884")]
+            public virtual Ranorex.DivTag RoleAlreadyExists
+            {
+                get
+                {
+                    return _rolealreadyexistsInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RoleAlreadyExists item info.
+            /// </summary>
+            [RepositoryItemInfo("b4a72825-ea9d-4078-a609-1ae22df65884")]
+            public virtual RepoItemInfo RoleAlreadyExistsInfo
+            {
+                get
+                {
+                    return _rolealreadyexistsInfo;
+                }
+            }
+
+            /// <summary>
             /// The LoginPage folder.
             /// </summary>
             [RepositoryFolder("b5ed13bf-0de7-4cda-9695-62102a265b1a")]
@@ -777,6 +937,15 @@ namespace RedCapCloud
             }
 
             /// <summary>
+            /// The PermissionsPage folder.
+            /// </summary>
+            [RepositoryFolder("8acfc901-f618-41e0-9da0-11d79b6a3987")]
+            public virtual RedCapCloudRepositoryFolders.PermissionsPageFolder PermissionsPage
+            {
+                get { return _permissionspage; }
+            }
+
+            /// <summary>
             /// The EventDefinitionPage folder.
             /// </summary>
             [RepositoryFolder("82882235-4f3b-44c8-a9d4-3e295ba15faf")]
@@ -810,6 +979,15 @@ namespace RedCapCloud
             public virtual RedCapCloudRepositoryFolders.SubjectMatrixPageFolder SubjectMatrixPage
             {
                 get { return _subjectmatrixpage; }
+            }
+
+            /// <summary>
+            /// The UsersPage folder.
+            /// </summary>
+            [RepositoryFolder("0a037a8c-6311-46d2-8f9a-36b6e49e59bb")]
+            public virtual RedCapCloudRepositoryFolders.UsersPageFolder UsersPage
+            {
+                get { return _userspage; }
             }
 
             /// <summary>
@@ -1503,6 +1681,138 @@ namespace RedCapCloud
                 get
                 {
                     return _subjectparametersavebuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PermissionsPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("8acfc901-f618-41e0-9da0-11d79b6a3987")]
+        public partial class PermissionsPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _addrolebuttonInfo;
+            RepoItemInfo _studypermissionsrolenameInfo;
+            RepoItemInfo _saveandexitbuttonInfo;
+            RepoItemInfo _cancelbuttonInfo;
+
+            /// <summary>
+            /// Creates a new PermissionsPage  folder.
+            /// </summary>
+            public PermissionsPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("PermissionsPage", "", parentFolder, 0, null, false, "8acfc901-f618-41e0-9da0-11d79b6a3987", "")
+            {
+                _addrolebuttonInfo = new RepoItemInfo(this, "AddRoleButton", ".//button[#'studyPermissions_addRole']/span[@innertext='Add Role']", 30000, null, "e96c5596-e294-4701-9619-cfb5beac4355");
+                _studypermissionsrolenameInfo = new RepoItemInfo(this, "StudyPermissionsRoleName", ".//input[#'studyPermissions_roleName']", 30000, null, "879f5d82-7e2f-43cc-86f6-ae1c64fcfd5e");
+                _saveandexitbuttonInfo = new RepoItemInfo(this, "SaveAndExitButton", ".//button[#'studyPermissionsMp_addEditRole_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "ee6c8adf-d12d-4cf7-a9d9-c5567d2328a7");
+                _cancelbuttonInfo = new RepoItemInfo(this, "CancelButton", ".//button[#'studyPermissionsMp_addEditRole_cancel']/span[@innertext='Cancel']", 30000, null, "7bc834c5-f0d1-4e03-adc6-534bb79a4010");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8acfc901-f618-41e0-9da0-11d79b6a3987")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddRoleButton item.
+            /// </summary>
+            [RepositoryItem("e96c5596-e294-4701-9619-cfb5beac4355")]
+            public virtual Ranorex.SpanTag AddRoleButton
+            {
+                get
+                {
+                    return _addrolebuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddRoleButton item info.
+            /// </summary>
+            [RepositoryItemInfo("e96c5596-e294-4701-9619-cfb5beac4355")]
+            public virtual RepoItemInfo AddRoleButtonInfo
+            {
+                get
+                {
+                    return _addrolebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StudyPermissionsRoleName item.
+            /// </summary>
+            [RepositoryItem("879f5d82-7e2f-43cc-86f6-ae1c64fcfd5e")]
+            public virtual Ranorex.InputTag StudyPermissionsRoleName
+            {
+                get
+                {
+                    return _studypermissionsrolenameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StudyPermissionsRoleName item info.
+            /// </summary>
+            [RepositoryItemInfo("879f5d82-7e2f-43cc-86f6-ae1c64fcfd5e")]
+            public virtual RepoItemInfo StudyPermissionsRoleNameInfo
+            {
+                get
+                {
+                    return _studypermissionsrolenameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExitButton item.
+            /// </summary>
+            [RepositoryItem("ee6c8adf-d12d-4cf7-a9d9-c5567d2328a7")]
+            public virtual Ranorex.SpanTag SaveAndExitButton
+            {
+                get
+                {
+                    return _saveandexitbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExitButton item info.
+            /// </summary>
+            [RepositoryItemInfo("ee6c8adf-d12d-4cf7-a9d9-c5567d2328a7")]
+            public virtual RepoItemInfo SaveAndExitButtonInfo
+            {
+                get
+                {
+                    return _saveandexitbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CancelButton item.
+            /// </summary>
+            [RepositoryItem("7bc834c5-f0d1-4e03-adc6-534bb79a4010")]
+            public virtual Ranorex.SpanTag CancelButton
+            {
+                get
+                {
+                    return _cancelbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CancelButton item info.
+            /// </summary>
+            [RepositoryItemInfo("7bc834c5-f0d1-4e03-adc6-534bb79a4010")]
+            public virtual RepoItemInfo CancelButtonInfo
+            {
+                get
+                {
+                    return _cancelbuttonInfo;
                 }
             }
         }
@@ -2863,6 +3173,164 @@ namespace RedCapCloud
                 get
                 {
                     return _onebacktabInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The UsersPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("0a037a8c-6311-46d2-8f9a-36b6e49e59bb")]
+        public partial class UsersPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _integrationuserInfo;
+            RepoItemInfo _integrationusereditInfo;
+            RepoItemInfo _integrationusereditpanelInfo;
+            RepoItemInfo _toolsdropdownInfo;
+            RepoItemInfo _deletebuttonInfo;
+
+            /// <summary>
+            /// Creates a new UsersPage  folder.
+            /// </summary>
+            public UsersPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("UsersPage", "", parentFolder, 0, null, false, "0a037a8c-6311-46d2-8f9a-36b6e49e59bb", "")
+            {
+                _integrationuserInfo = new RepoItemInfo(this, "IntegrationUser", ".//div[#'gwtWrapper']//table/tbody/tr//div[@innertext~'IntegrationUser@cogstate.com']", 30000, null, "f269b37f-d456-41e6-8bee-c1b97d5e47fc");
+                _integrationusereditInfo = new RepoItemInfo(this, "IntegrationUserEdit", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div/div/div[1]/div[1]/div[3]/table/tbody/tr/td[2]/?/?/div", 30000, null, "4e8a8599-b01f-4610-9e46-481cb5e0abd7");
+                _integrationusereditpanelInfo = new RepoItemInfo(this, "IntegrationUserEditPanel", "body/div/div/div/div/div/div/div[3]/div/div[2]/table/?/?/tr/td[1]/div[@innertext~'Integration  User']", 30000, null, "d074b94c-f5da-43b2-bbe6-d1b498e3a023");
+                _toolsdropdownInfo = new RepoItemInfo(this, "ToolsDropDown", "body//table/tbody//table/?/?/tr/td[1]/table//button[@id='dropDownButton_button_tools']", 30000, null, "98e2b9d1-2708-4d8a-b4c3-637d711776ab");
+                _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//li[#'dropDownButton_popupMenuItem_delete']/a[@innertext='Delete']", 30000, null, "567ebfac-b0c0-4433-a79b-eaf740b1e1a8");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0a037a8c-6311-46d2-8f9a-36b6e49e59bb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IntegrationUser item.
+            /// </summary>
+            [RepositoryItem("f269b37f-d456-41e6-8bee-c1b97d5e47fc")]
+            public virtual Ranorex.DivTag IntegrationUser
+            {
+                get
+                {
+                    return _integrationuserInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IntegrationUser item info.
+            /// </summary>
+            [RepositoryItemInfo("f269b37f-d456-41e6-8bee-c1b97d5e47fc")]
+            public virtual RepoItemInfo IntegrationUserInfo
+            {
+                get
+                {
+                    return _integrationuserInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IntegrationUserEdit item.
+            /// </summary>
+            [RepositoryItem("4e8a8599-b01f-4610-9e46-481cb5e0abd7")]
+            public virtual Ranorex.DivTag IntegrationUserEdit
+            {
+                get
+                {
+                    return _integrationusereditInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IntegrationUserEdit item info.
+            /// </summary>
+            [RepositoryItemInfo("4e8a8599-b01f-4610-9e46-481cb5e0abd7")]
+            public virtual RepoItemInfo IntegrationUserEditInfo
+            {
+                get
+                {
+                    return _integrationusereditInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IntegrationUserEditPanel item.
+            /// </summary>
+            [RepositoryItem("d074b94c-f5da-43b2-bbe6-d1b498e3a023")]
+            public virtual Ranorex.DivTag IntegrationUserEditPanel
+            {
+                get
+                {
+                    return _integrationusereditpanelInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IntegrationUserEditPanel item info.
+            /// </summary>
+            [RepositoryItemInfo("d074b94c-f5da-43b2-bbe6-d1b498e3a023")]
+            public virtual RepoItemInfo IntegrationUserEditPanelInfo
+            {
+                get
+                {
+                    return _integrationusereditpanelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ToolsDropDown item.
+            /// </summary>
+            [RepositoryItem("98e2b9d1-2708-4d8a-b4c3-637d711776ab")]
+            public virtual Ranorex.ButtonTag ToolsDropDown
+            {
+                get
+                {
+                    return _toolsdropdownInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ToolsDropDown item info.
+            /// </summary>
+            [RepositoryItemInfo("98e2b9d1-2708-4d8a-b4c3-637d711776ab")]
+            public virtual RepoItemInfo ToolsDropDownInfo
+            {
+                get
+                {
+                    return _toolsdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeleteButton item.
+            /// </summary>
+            [RepositoryItem("567ebfac-b0c0-4433-a79b-eaf740b1e1a8")]
+            public virtual Ranorex.ATag DeleteButton
+            {
+                get
+                {
+                    return _deletebuttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeleteButton item info.
+            /// </summary>
+            [RepositoryItemInfo("567ebfac-b0c0-4433-a79b-eaf740b1e1a8")]
+            public virtual RepoItemInfo DeleteButtonInfo
+            {
+                get
+                {
+                    return _deletebuttonInfo;
                 }
             }
         }
