@@ -93,8 +93,8 @@ namespace PrecisionRecruitment.BatteryTemplatePage
             repo.CogstateSolutionPlatform.AddBatteryTemplatePage.AddTestButton.Click("13;13", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2.5s.", new RecordItemIndex(1));
+            Delay.Duration(2500, false);
             
         }
 
