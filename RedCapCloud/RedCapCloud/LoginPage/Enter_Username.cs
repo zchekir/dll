@@ -106,27 +106,30 @@ namespace RedCapCloud.LoginPage
             repo.REDCapCloud.LoginPage.LoginUsername.Click(3);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(2));
             repo.REDCapCloud.LoginPage.LoginUsername.PressKeys("{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Username' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(3));
             repo.REDCapCloud.LoginPage.LoginUsername.PressKeys(Username, 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Username) on item 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Username) on item 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.REDCapCloud.LoginPage.LoginUsernameInfo, "Value", Username);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(5));
             repo.REDCapCloud.LoginPage.LoginUsername.PressKeys("{Tab}", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginButton' at Center.", repo.REDCapCloud.LoginPage.LoginButtonInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LoginPage.LoginButton' at Center.", repo.REDCapCloud.LoginPage.LoginButtonInfo, new RecordItemIndex(6));
             repo.REDCapCloud.LoginPage.LoginButton.Click(3);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
             Delay.Duration(1000, false);
             
         }

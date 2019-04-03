@@ -89,7 +89,10 @@ namespace RedCapCloud.CRFsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.CRFsTab' at CenterRight.", repo.REDCapCloud.CRFsTabInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.CRFsTab' at CenterRight.", repo.REDCapCloud.CRFsTabInfo, new RecordItemIndex(1));
             repo.REDCapCloud.CRFsTab.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             

@@ -54,14 +54,16 @@ namespace RedCapCloud.General
 
 #region Variables
 
+        string _FileName;
+
         /// <summary>
         /// Gets or sets the value of variable FileName.
         /// </summary>
         [TestVariable("60131d8a-d584-4971-9daf-a95706b79477")]
         public string FileName
         {
-            get { return repo.FileName; }
-            set { repo.FileName = value; }
+            get { return _FileName; }
+            set { _FileName = value; }
         }
 
 #endregion

@@ -665,13 +665,12 @@ rxversion="8.2">
 				</item>
 				<item
 				addcaps="unknown,webelement,tdtag"
-				capname="tdtag"
+				capname="divtag"
 				id="e02de142-531f-4011-8bbe-814eb3205d56"
 				name="FirstVisit"
 				refimgid="29658ffa-ac2f-4fcf-a609-b7132d995284"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/td/div/div[3]/div/div[2]/div/div/table/tbody/tr[2]/td[10]"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/table/tbody/tr[2]/td/div/div[3]/div/div[2]//table/tbody/tr[2]/td[10]
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table//div[@innertext='Visit 1']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -679,9 +678,8 @@ rxversion="8.2">
 				id="ffccdfe4-44df-41d3-9ada-4b93692cadee"
 				name="ConfirmDOBField"
 				refimgid="e7600024-7c65-4b6c-84f5-c9586358f05d"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[1]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div[@title='']/div/table/tbody/tr/td[1]/input[@type='text']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[1]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div[@title='']/div/table/?/?/tr/td[1]/input[@type='text']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr/td[1]/input[@type='text']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -689,9 +687,8 @@ rxversion="8.2">
 				id="9392e009-e70d-4ceb-aa88-0f694bb37641"
 				name="BeginAssessmentButton"
 				refimgid="f8c8f1f9-0799-46f9-9e80-c5c45b44e1d5"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[3]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/div/div/button/span[@innertext='Begin Assessment']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[3]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div//span[@innertext='Begin Assessment']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//span[@innertext='Begin Assessment']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -717,9 +714,8 @@ rxversion="8.2">
 				id="6819e2a1-e800-4dd4-b4d3-a809a456668f"
 				name="TestWasSuccessfullyTransmitted"
 				refimgid="3e62dfc4-bfe7-47cf-ae92-b5c6745d0373"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[5]/div/div/div[1]/div[2]/b/font[@innertext='Test Was Successfully Transmitted']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[5]/div/div/div[1]/div[2]/?/?/font[@innertext~'^Test\ Was\ Successfully\ Tra']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//?/?/font[@innertext~'Test Was Successfully Transmitted']
 				</item>
 				<item
 				addcaps="unknown,webelement,ultag"
@@ -743,9 +739,8 @@ rxversion="8.2">
 				id="d5bf7cfb-2ee1-498e-9083-929b473162eb"
 				name="PrimaryOutcomeScore"
 				refimgid="86bef365-d53c-4613-82a4-3c61d382afb0"
-				refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[2]/table/tbody/tr[2]/td/div/div/div/table/tbody/tr/td/div/div/div[1]/div/div/table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/div/div/table/tbody/tr/td/div/div/input[@type='text']"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[2]/table/tbody/tr[2]//table//div/div/div[1]//table/tbody/tr/td[1]/table/tbody/tr[1]/td/div/div[1]/?/?/div/table//div/div/input[@type='text']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//div[@innertext&lt;'Primary Outcome']/../..//input[@type='text']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -791,17 +786,16 @@ rxversion="8.2">
 				name="IntegrationUser"
 				refimgid="adb4894a-9f4e-46ea-90ce-d9d48d2eb671"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr//div[@innertext~'IntegrationUser@cogstate.com']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody/tr//div[@innertext~'IntegrationUser']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="4e8a8599-b01f-4610-9e46-481cb5e0abd7"
-				name="IntegrationUserEdit"
+				name="IntegrationUserEditButton"
 				refimgid="68ab6382-4f1f-47b9-8603-cc223e924e64"
-				refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div/div/div[1]/div[1]/div[3]/table/tbody/tr/td[2]/div/div"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div/div/div[1]/div[1]/div[3]/table/tbody/tr/td[2]/?/?/div
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table/tbody//div[@innertext~'IntegrationUser']/../../div[@class='thumbnailEdit']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -810,7 +804,7 @@ rxversion="8.2">
 				name="IntegrationUserEditPanel"
 				refimgid="2ebe6ec3-3d75-4782-9a21-a7b39316ed0a"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body/div/div/div/div/div/div/div[3]/div/div[2]/table/?/?/tr/td[1]/div[@innertext~'Integration  User']
+					/dom[@domain=$DOM]/body//div[@innertext='User']/../..//table//div[@innertext~'IntegrationUser']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -1303,33 +1297,16 @@ AAAASUVORK5CYII=
 		name="StudyName">
 		</var>
 		<var
-		id="58285448-155c-4c70-a3f0-28df91deceed"
-		name="StudySummary">
-		</var>
-		<var
 		id="dd613b9d-9d3e-4771-a417-716ec481c2da"
 		name="BriefSummary">
-		</var>
-		<var
-		id="b1ca5aa5-76ea-4bd2-a285-af47b7e183d5"
-		name="SiteName">
 		</var>
 		<var
 		id="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
 		name="RandNum">
 		</var>
 		<var
-		id="31fe392f-cf74-4d7b-bb77-1794f148f109"
-		name="VisitName">
-		</var>
-		<var
 		id="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
 		name="EventDefName">
-		</var>
-		<var
-		id="e2a6454e-b821-46b0-a643-4a0f11879cd5"
-		name="FileName">
-			RedCapConfig
 		</var>
 	</variables>
 </repository>

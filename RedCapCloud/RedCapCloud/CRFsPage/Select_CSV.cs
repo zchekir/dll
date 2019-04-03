@@ -54,6 +54,18 @@ namespace RedCapCloud.CRFsPage
 
 #region Variables
 
+        string _FileName;
+
+        /// <summary>
+        /// Gets or sets the value of variable FileName.
+        /// </summary>
+        [TestVariable("1243b561-7617-4cbc-8f6d-123972442ec9")]
+        public string FileName
+        {
+            get { return _FileName; }
+            set { _FileName = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
@@ -62,16 +74,6 @@ namespace RedCapCloud.CRFsPage
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable FileName.
-        /// </summary>
-        [TestVariable("1243b561-7617-4cbc-8f6d-123972442ec9")]
-        public string FileName
-        {
-            get { return repo.FileName; }
-            set { repo.FileName = value; }
         }
 
 #endregion

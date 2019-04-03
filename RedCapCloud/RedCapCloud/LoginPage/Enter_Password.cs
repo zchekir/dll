@@ -106,19 +106,22 @@ namespace RedCapCloud.LoginPage
             repo.REDCapCloud.LoginPage.LoginPassword.Click("139;25", 3);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(2));
             repo.REDCapCloud.LoginPage.LoginPassword.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(3));
             repo.REDCapCloud.LoginPage.LoginPassword.PressKeys(Password, 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'REDCapCloud.LoginPage.LoginPassword'.", repo.REDCapCloud.LoginPage.LoginPasswordInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.REDCapCloud.LoginPage.LoginPasswordInfo, "Value", Password);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(5));
             Keyboard.Press("{Tab}", 1);
             Delay.Milliseconds(0);
             

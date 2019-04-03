@@ -89,12 +89,12 @@ namespace RedCapCloud.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.IntegrationUserEdit' at 13;12.", repo.REDCapCloud.UsersPage.IntegrationUserEditInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.UsersPage.IntegrationUserEdit.Click("13;12", 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.IntegrationUserEditButton' at 13;12.", repo.REDCapCloud.UsersPage.IntegrationUserEditButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.UsersPage.IntegrationUserEditButton.Click("13;12", 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Integration  User') on item 'REDCapCloud.UsersPage.IntegrationUserEditPanel'.", repo.REDCapCloud.UsersPage.IntegrationUserEditPanelInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.REDCapCloud.UsersPage.IntegrationUserEditPanelInfo, "InnerText", "Integration  User");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'IntegrationUser') on item 'REDCapCloud.UsersPage.IntegrationUserEditPanel'.", repo.REDCapCloud.UsersPage.IntegrationUserEditPanelInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.REDCapCloud.UsersPage.IntegrationUserEditPanelInfo, "InnerText", "IntegrationUser");
             Delay.Milliseconds(100);
             
         }

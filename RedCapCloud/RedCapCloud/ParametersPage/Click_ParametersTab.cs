@@ -89,7 +89,10 @@ namespace RedCapCloud.ParametersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersTab' at Center.", repo.REDCapCloud.ParametersTabInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersTab' at Center.", repo.REDCapCloud.ParametersTabInfo, new RecordItemIndex(1));
             repo.REDCapCloud.ParametersTab.Click(1);
             Delay.Milliseconds(0);
             
