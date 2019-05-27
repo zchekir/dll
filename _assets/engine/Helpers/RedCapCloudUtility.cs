@@ -35,12 +35,6 @@ namespace engine.Helpers
         /// user code method here. The method is published to the user code library
         /// within a user code collection.
         /// </summary>
-        [UserCodeMethod]
-        public static void TriggerChange(RepoItemInfo dom)
-        {     	
-        	Ranorex.Adapter.TryCreate(dom, domOut).PressKeys("{SPACE}");
-        	Ranorex.Adapter.TryCreate(dom, domOut).PressKeys("{DEL}");
 
-        }
     }
 }

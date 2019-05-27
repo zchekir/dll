@@ -48,6 +48,7 @@ namespace PrecisionRecruitment.APIModules
             LocalityCode = "en-us";
             externalID = "";
             DOB = "1978-01-01";
+            supervisorId = "";
         }
 
         /// <summary>
@@ -120,6 +121,18 @@ namespace PrecisionRecruitment.APIModules
             set { _DOB = value; }
         }
 
+        string _supervisorId;
+
+        /// <summary>
+        /// Gets or sets the value of variable supervisorId.
+        /// </summary>
+        [TestVariable("af983f5f-68a3-4189-a82f-70c008904a6c")]
+        public string supervisorId
+        {
+            get { return _supervisorId; }
+            set { _supervisorId = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
@@ -166,7 +179,7 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber);
+            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber, supervisorId);
             Delay.Milliseconds(0);
             
         }

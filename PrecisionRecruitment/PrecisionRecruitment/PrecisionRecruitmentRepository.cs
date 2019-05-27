@@ -57,7 +57,7 @@ namespace PrecisionRecruitment
 
 #region Variables
 
-        string _DOM = "cgst-qc-duo.cogstate.com";
+        string _DOM = "cgst-qc-duo.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable DOM.

@@ -65,9 +65,10 @@ namespace engine.Helpers
 		public string postError { get; set; }
 		public string visitSessionCode { get; set; }
 		public string post { get; set; }
+		public string supervisorId { get; set; }
 		
 		public AssessmentAttemptJSONRequest(string externalId, string dob, string genderCode, string localityCode,
-		                                    string postError, string post, string visitSessionCode)
+		                                    string postError, string post, string visitSessionCode, string supervisorId)
 		{
 			this.externalId = externalId;
 			this.dob = dob;
@@ -76,6 +77,7 @@ namespace engine.Helpers
 			this.postError = postError;
 			this.post = post;
 			this.visitSessionCode = visitSessionCode;
+			this.supervisorId = supervisorId;
 		}
 	}
 	
@@ -169,7 +171,7 @@ namespace engine.Helpers
         /// </summary>
         [UserCodeMethod]
         public static void CreateAssessmentAttempt(string randNum, string DOM, string externalId, string dob, string genderCode, string localityCode,
-                                                  string postError, string post, string visitSessionCode, string studyProtocolName)
+                                                  string postError, string post, string visitSessionCode, string studyProtocolName, string supervisorId)
         {
         	//Setup API call
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/AssessmentAttempt");
@@ -188,7 +190,7 @@ namespace engine.Helpers
         	}
         	
         	//Create JSON object containing demographics and study details
-        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode + randNum);
+        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode + randNum, supervisorId);
         	
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
@@ -260,7 +262,7 @@ namespace engine.Helpers
         /// </summary>
         [UserCodeMethod]
         public static void UpdateDOBDemographic(string randNum, string DOM, string externalId, string dob, string genderCode, string localityCode,
-                                                  string postError, string post, string visitSessionCode, string studyProtocolName)
+                                                  string postError, string post, string visitSessionCode, string studyProtocolName, string supervisorId)
         {
         	//Exit with fail if external id is empty as we don't know which subject to update
         	if (externalId == "")
@@ -289,7 +291,7 @@ namespace engine.Helpers
         	httpRequest.Headers.Add("Authorization", AuthToken);
         	
         	//Create JSON object containing demographics and study details
-        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode + randNum);
+        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode + randNum, supervisorId);
         	
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))

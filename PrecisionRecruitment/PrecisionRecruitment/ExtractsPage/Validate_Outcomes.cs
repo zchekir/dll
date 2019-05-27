@@ -41,12 +41,13 @@ namespace PrecisionRecruitment.ExtractsPage
         /// </summary>
         public Validate_Outcomes()
         {
-            dbUsername = "";
-            dbPassword = "";
-            fileName = "";
-            DBServer = "";
-            Database = "";
-            Authentication = "";
+            dbUsername = "dwood@cogstate.com";
+            dbPassword = "913172DMW#";
+            fileName = "40yo_Tier3";
+            DBServer = "cgst-qcpd.database.windows.net";
+            Database = "cgst-api";
+            Authentication = "Active Directory Password";
+            TestIdentifier = "13e345a8-a1e1-452d-a892-d016d2968a1a";
         }
 
         /// <summary>
@@ -129,6 +130,18 @@ namespace PrecisionRecruitment.ExtractsPage
         {
             get { return _Authentication; }
             set { _Authentication = value; }
+        }
+
+        string _TestIdentifier;
+
+        /// <summary>
+        /// Gets or sets the value of variable TestIdentifier.
+        /// </summary>
+        [TestVariable("71244c15-4b98-4504-9f68-5b400a580d59")]
+        public string TestIdentifier
+        {
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
         }
 
 #endregion

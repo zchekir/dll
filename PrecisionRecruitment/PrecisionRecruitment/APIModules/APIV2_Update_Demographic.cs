@@ -48,6 +48,7 @@ namespace PrecisionRecruitment.APIModules
             LocalityCode = "";
             VisitSessionCode = "";
             ProtocolNumber = "";
+            supervisorId = "";
         }
 
         /// <summary>
@@ -120,6 +121,18 @@ namespace PrecisionRecruitment.APIModules
             set { _ProtocolNumber = value; }
         }
 
+        string _supervisorId;
+
+        /// <summary>
+        /// Gets or sets the value of variable supervisorId.
+        /// </summary>
+        [TestVariable("85537fda-26f5-4ef7-ad38-a6c72d3924fe")]
+        public string supervisorId
+        {
+            get { return _supervisorId; }
+            set { _supervisorId = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable RandNum.
         /// </summary>
@@ -166,7 +179,7 @@ namespace PrecisionRecruitment.APIModules
 
             Init();
 
-            engine.Helpers.WebService.UpdateDOBDemographic(RandNum, DOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber);
+            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber, supervisorId);
             Delay.Milliseconds(0);
             
         }

@@ -42,6 +42,7 @@ namespace PrecisionRecruitment.LoginPage
         public Enter_Email()
         {
             Email = "";
+            DOM = "cgst-qc-duo.azurewebsites.net";
         }
 
         /// <summary>

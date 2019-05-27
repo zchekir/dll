@@ -55,13 +55,17 @@ rxversion="8.2">
 		id="4dc5e703-084f-4924-a1cb-85750e5f0144"
 		name="ProtocolNumber">
 		</var>
+		<var
+		id="85537fda-26f5-4ef7-ad38-a6c72d3924fe"
+		name="supervisorId">
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
 		classname="WebService"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="UpdateDOBDemographic"
+		methodname="CreateAssessmentAttempt"
 		namespace="engine.Helpers"
 		optional="False"
 		varname="">
@@ -165,6 +169,16 @@ rxversion="8.2">
 				argname="studyProtocolName"
 				id="986a99d4-a03b-4f78-9937-f24b5fc6993e"
 				variable="ProtocolNumber">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="supervisorId"
+				id="a4f1f168-9220-46d8-b180-cda0d22ea731"
+				variable="supervisorId">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

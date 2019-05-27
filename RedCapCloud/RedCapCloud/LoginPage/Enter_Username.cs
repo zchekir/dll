@@ -42,6 +42,7 @@ namespace RedCapCloud.LoginPage
         public Enter_Username()
         {
             Username = "dwood@cogstate.com";
+            DOM = "cgsqc.redcapcloud.com";
         }
 
         /// <summary>

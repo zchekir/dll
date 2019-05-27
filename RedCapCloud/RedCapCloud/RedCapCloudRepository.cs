@@ -53,7 +53,7 @@ namespace RedCapCloud
 
 #region Variables
 
-        string _DOM = "cgst-qcpd.uat.redcapcloud.com";
+        string _DOM = "cgsqc.redcapcloud.com";
 
         /// <summary>
         /// Gets or sets the value of variable DOM.

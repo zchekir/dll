@@ -58,13 +58,25 @@ namespace engine.Helpers
 					 "LegalErrors, RuleBreakErrors, TotalAnticipatory, TotalPost, TotalMaxOut, TotalCorrectFoils, TotalResponses, TotalTrials, MovesPerSecond, ReturnToHead, PerseverativeErrors, " +
 				    "WithinSearchErrors, GMLTIndex, StandardScoreZ, StandardScoreT, ChangeScore, PsyAttStdScr, PsyAttChange, LearnWMStdScr, LearnWMChange, AltLearnWMStdScr, AltStandardScoreZ, AltStandardScoreT, AlternateOutcome " +
 				"FROM [Reports].[vwExtractStandardAssessmentDetail] WHERE TestIdentifier = '" + WebService.TestIdentifier + "' ORDER BY TestId, Round ASC";
+
+			
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 
 			//Send the query to the database and store the results in a DataTable
-			using (var da = new SqlDataAdapter(query, sqlConnString))
-	        {
-				da.Fill(dt);
-			}
+			do 
+			{
+				Delay.Duration(30000);
+				
+				using (var da = new SqlDataAdapter(query, sqlConnString))
+	        	{
+					da.Fill(dt);
+				}
+				
+				Report.Info("Rows found by query: " + dt.Rows.Count.ToString());
+				
+			} while (dt.Rows.Count < 1);
+			
+			
 								
 		}
         
@@ -83,7 +95,7 @@ namespace engine.Helpers
         {
         	dt.Clear();
 		
-        	//Build sql query and connection string
+        	//Build sql query and connection string (Using Extract View)
 			string query = "SELECT " +
 						"IQNumber, DateOfBirth, BirthYear, Age, SessionID, SessionDate, SessionAttempt, SessionDuration, SessionCompletionPass, SessionPerformancePass, SessionIntegrityPass, " +
 						"Test, TestCode, TestVersion, TestPhase, Round, TestAttempt, TestCompletionPass, TestPerformancePass, TestIntegrityPass, " +
@@ -91,6 +103,10 @@ namespace engine.Helpers
 					 "LegalErrors, RuleBreakErrors, TotalAnticipatory, TotalPost, TotalMaxOut, TotalCorrectFoils, TotalResponses, TotalTrials, MovesPerSecond, ReturnToHead, PerseverativeErrors, " +
 				    "WithinSearchErrors, GMLTIndex, StandardScoreZ, StandardScoreT, ChangeScore, PsyAttStdScr, PsyAttChange, LearnWMStdScr, LearnWMChange, AltLearnWMStdScr, AltStandardScoreZ, AltStandardScoreT, AlternateOutcome " +
 				"FROM [Reports].[vwExtractStandardAssessmentDetail] WHERE TestIdentifier = '" + testIdentifier + "' ORDER BY TestId, Round ASC";
+			
+			
+			
+			
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 
 			//Send the query to the database and store the results in a DataTable
