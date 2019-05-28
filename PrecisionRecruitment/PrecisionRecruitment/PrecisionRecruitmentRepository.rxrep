@@ -1050,15 +1050,6 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//button[@innertext&gt;'Generate Report']
 				</item>
 				<item
-				addcaps="unknown,webelement,buttontag"
-				capname="buttontag"
-				id="fd579a89-f412-4372-a0b1-89703d468cd0"
-				name="PopupOKButton"
-				refimgid="b3593eaa-139f-46a2-8bd2-81d46e87170a"
-				searchtimeout="30000ms">
-					/dom[@domain=$DOM]/body//button[@innertext='OK']
-				</item>
-				<item
 				addcaps="unknown,webelement,trtag"
 				capname="atag"
 				id="55e2ef93-5902-4c18-8192-ed03533b23d2"
@@ -1863,6 +1854,16 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div//div/?/?/ul/?/?/a[@innertext='Logout']
 				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="428402d4-cc8a-4592-9225-7ee65da0b52f"
+				name="ResendInviteEmail"
+				refimgid="936b3fea-ca1b-4f80-8d10-1f696afc5bbd"
+				refpath="/dom[@domain='cgst-qc-lithium.azurewebsites.net']//div[#'ng-app']/tag/div/div[3]/tag/tag/div/div/form/tag[@tagname='ng-form']/div[1]/div/div/a[@innertext='Resend Invite Email']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-user-edit']/div/?/?/form[@action='https://cgst-qc-lithium.azurewebsites.net/#/EditUser']/tag[@tagname='ng-form']/div[1]//a[@innertext='Resend Invite Email']
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'ng-app']/tag/div
 				</basepath>
@@ -2171,6 +2172,24 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]//div[#'ng-app']/?/?//div[@class='spinner']
 			</item>
+			<item
+			addcaps="unknown,webelement,h4tag"
+			capname="h4tag"
+			id="80e1ff94-feed-4ef8-aa7a-4a955f24bcb8"
+			name="ResendInviteSuccess"
+			refimgid="25a26e92-9ce4-4091-8308-28a6a8497b7f"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body//h4[@innertext='Success']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="fd579a89-f412-4372-a0b1-89703d468cd0"
+			name="PopupOKButton"
+			refimgid="6a8d9f99-a042-4b46-a4ae-7e14ea6fa4de"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body//button[@innertext='OK']
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>
@@ -2402,7 +2421,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="ForgotPasswordEmail"
 			refimgid="66408c0e-647a-4892-a221-f78d63146d32"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//span[@id&gt;':3']/span[@innertext='Account Information']
+				/dom[@domain='mail.google.com']//span/span[@innertext~'Account Information']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -2493,7 +2512,7 @@ AAAASUVORK5CYII=
 		<var
 		id="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 		name="DOM">
-			cgst-qc-duo.azurewebsites.net
+			cgst-qc-lithium.azurewebsites.net
 		</var>
 		<var
 		id="c79bec5d-144b-4142-be36-50ddfe893386"

@@ -79,14 +79,24 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleAccount.GmailButton' at Center.", repo.GoogleAccount.GmailButtonInfo, new RecordItemIndex(0));
-            repo.GoogleAccount.GmailButton.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'GoogleAccount.Apps'", repo.GoogleAccount.AppsInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.GoogleAccount.AppsInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleAccount.Apps' at 10;7.", repo.GoogleAccount.AppsInfo, new RecordItemIndex(1));
+            repo.GoogleAccount.Apps.Click("10;7");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.ForgotPasswordEmail' at Center.", repo.GmailInbox.ForgotPasswordEmailInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'GoogleAccount.GmailApp'", repo.GoogleAccount.GmailAppInfo, new ActionTimeout(5000), new RecordItemIndex(2));
+            repo.GoogleAccount.GmailAppInfo.WaitForExists(5000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleAccount.GmailApp' at 31;31.", repo.GoogleAccount.GmailAppInfo, new RecordItemIndex(3));
+            repo.GoogleAccount.GmailApp.Click("31;31");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'GmailInbox.ForgotPasswordEmail'", repo.GmailInbox.ForgotPasswordEmailInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            repo.GmailInbox.ForgotPasswordEmailInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.ForgotPasswordEmail' at Center.", repo.GmailInbox.ForgotPasswordEmailInfo, new RecordItemIndex(5));
             repo.GmailInbox.ForgotPasswordEmail.Click(1);
             Delay.Milliseconds(90);
             

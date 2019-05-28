@@ -89,13 +89,15 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='       Successfully Submitted    ') on item 'CogstateSolutionPlatform.DivTagSuccessfullySubmitted'.", repo.CogstateSolutionPlatform.DivTagSuccessfullySubmittedInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.DivTagSuccessfullySubmittedInfo, "InnerText", "       Successfully Submitted    ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.ResendInviteSuccess'.", repo.CogstateSolutionPlatform.ResendInviteSuccessInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.ResendInviteSuccessInfo);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton' at 21;18.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton.Click("21;18");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButton' at 22;21.", repo.CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButton.Click("22;21");
             Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Resend Invite Submitted", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
             
         }
 

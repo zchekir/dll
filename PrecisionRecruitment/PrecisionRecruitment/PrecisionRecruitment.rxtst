@@ -265,16 +265,16 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="GmailAddress"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
-					variablename="GmailAddress">
-					</var>
-					<var
 					dataname="GmailPassword"
 					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
 					variablename="GmailPassword">
+					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
+					variablename="GmailAddress">
 					</var>
 				</databinding>
 			</testmodule>
@@ -704,6 +704,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0eed5a02-c814-4301-895d-210357abea1c"
+			name="Click_Logout"
+			ref="fd6a4ea1-d179-4dbb-a14a-289e7cdf9c18"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0fc92b46-79ab-4c57-b253-1f0a53ab34aa"
 			name="Upload_RawData"
 			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
@@ -1018,6 +1032,10 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="1498b78b-a34d-4ea9-8512-facdc93886ba"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="153572dc-32da-480a-88ec-a6981bb1dbd3"
 			name="Open_Browser"
@@ -1865,12 +1883,6 @@ rxversion="8.2">
 			name="setup">
 			</setup>
 			<testmodule
-			id="2a53c2a6-8601-4872-bf2a-c546b1f1d971"
-			name="Clear_Gmail_Inbox"
-			ref="46fd72b9-76a1-4e0f-a312-530d1c4995bb"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -2000,6 +2012,14 @@ rxversion="8.2">
 			id="30a32692-21f5-43b0-a089-543e60baf51a"
 			name="teardown">
 			</teardown>
+			<testcase
+			datarangeactive="True"
+			datasource="UserConnector"
+			id="30d53fa6-a046-4087-a710-ee059a17da7a"
+			maxrange="3"
+			minrange="3"
+			name="Resend_Internal_Password">
+			</testcase>
 			<testmodule
 			id="314215a3-9381-4eed-b6ca-f505e9c7bba9"
 			name="Open_Browser"
@@ -2252,7 +2272,7 @@ rxversion="8.2">
 			id="36aba7d9-425f-4e83-8148-9fb26d9cf42d"
 			maxrange="3"
 			minrange="3"
-			name="Forgot_Password">
+			name="Forgot_Internal_Password">
 			</testcase>
 			<testmodule
 			id="376ce0d2-cbd1-4468-8be9-0c194b7eaf2c"
@@ -2587,6 +2607,26 @@ rxversion="8.2">
 			name="Card_View">
 			</testcase>
 			<testmodule
+			id="4294e7d7-f56e-43ac-bee5-8d7e8631e88c"
+			name="Enter_Password"
+			ref="c6481925-2e15-4f67-a2ad-a2a6ebdcf123"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="430a094f-65a8-4db4-be14-0f981503e9fc"
 			name="Validate_Extract_Downloaded"
 			ref="4488b4f0-9d37-4ce0-af17-188ef70d7a63"
@@ -2619,6 +2659,20 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="45341d3e-8076-4fe3-a869-0492c30ae36c"
+			name="Open_Browser"
+			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="URL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
+					variablename="URL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2833,6 +2887,20 @@ rxversion="8.2">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="48c0a1f5-07a6-4f4e-a3f6-2630de9946d3"
+			name="Validate_Resend_Submitted"
+			ref="7b866d14-0e3b-4183-9c32-9494e269a9a3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="49432f6e-a0ad-48d6-b410-213505a45770"
 			name="Close_Browser"
@@ -3304,16 +3372,16 @@ rxversion="8.2">
 					variablename="DOM">
 					</var>
 					<var
+					dataname="Password"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
+					<var
 					dataname="Email"
 					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
 					variablename="Email">
-					</var>
-					<var
-					dataname="Password"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3663,11 +3731,11 @@ rxversion="8.2">
 				<parameters>
 					<param
 					name="DOM"
-					value="cgst-qcpd.azurewebsites.net">
+					value="cgst-qc-lithium.azurewebsites.net">
 					</param>
 					<param
 					name="URL"
-					value="https://cgst-qcpd.azurewebsites.net/">
+					value="https://cgst-qc-lithium.azurewebsites.net/">
 					</param>
 					<param
 					name="DevopsPage"
@@ -3675,15 +3743,15 @@ rxversion="8.2">
 					</param>
 					<param
 					name="VersionDeployed"
-					value="1.8.1">
+					value="1.9.0">
 					</param>
 					<param
 					name="DBServer"
-					value="cgst-qcpd.database.windows.net">
+					value="cgst-qc.database.windows.net">
 					</param>
 					<param
 					name="Database"
-					value="cgst-api">
+					value="cgst-lithium-api">
 					</param>
 					<param
 					name="Authentication"
@@ -4591,6 +4659,20 @@ rxversion="8.2">
 			name="Minimum_Workflow_Fields">
 			</testcase>
 			<testmodule
+			id="7211e481-b289-44e8-94b4-edb150dbef6e"
+			name="Click_Resend_Invite_Button"
+			ref="3e2a07f6-355d-4a10-b8e8-1c217d449559"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="727e99ee-c071-405b-85ca-b8c7fad5569a"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -5492,6 +5574,26 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="82b303fa-500d-4bf6-a021-3acc46700389"
+			name="Reset_Password"
+			ref="b4b02ec4-a0ea-4ff3-9f62-4b93cd913772"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="88063847-8295-4241-aa12-5e073e7388b1"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="82b35ebd-96d2-47cd-99c1-d8f58c1ab2d8"
 			name="Select_First_User"
 			ref="44e8daf7-966f-43c9-82a5-8fdd05054ec3"
@@ -5532,6 +5634,20 @@ rxversion="8.2">
 			name="setup">
 			</setup>
 			<testmodule
+			id="848fb5fa-7227-430f-a673-ee358074f754"
+			name="Click_Edit_Button"
+			ref="89c38ed8-5500-416b-9089-ab7c2de1763c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="852259a4-6650-4256-9e6c-73e3c771f11d"
 			name="Logout_Gmail"
 			ref="7a7be4ca-8ba5-4305-bd1d-e3a470d856b4"
@@ -5550,16 +5666,16 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Password"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
-					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
-					variablename="Password">
-					</var>
-					<var
 					dataname="DOM"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5678,6 +5794,20 @@ rxversion="8.2">
 			id="89eb5062-6800-4174-a0f2-ab316181480d"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="89ff01b6-9416-411d-988e-6cc436b7988f"
+			name="Validate_ResetPassword_LoggedIn"
+			ref="c31fd7d3-6ab8-4b02-8d6c-eda02646b5c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="8a12b27b-bea7-4d2c-accd-bce58802e497"
 			name="Open_PlatformSupport_Email"
@@ -5841,6 +5971,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="8e5d86b6-5fc3-4641-9af2-09fcadff6cde"
+			name="Click_Users_Menu"
+			ref="ba3de862-5190-4621-a09d-7442800597f1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datasource="Authentication"
 			id="8e71bae9-0f04-4666-8075-91fd08759da7"
@@ -6003,6 +6147,10 @@ rxversion="8.2">
 			minrange="3"
 			name="Edit_Internal_User">
 			</testcase>
+			<setup
+			id="965a6cad-39ce-427b-a0e4-67a31aafff0e"
+			name="setup">
+			</setup>
 			<testmodule
 			id="96dc5c5f-fe12-4270-a629-bc638d2ac44e"
 			name="Click_Login_Button"
@@ -6151,6 +6299,32 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9cc747bc-66be-4967-88eb-4cbf6e87d445"
+			name="Select_Internal_User"
+			ref="9b3135d5-cdf5-4668-9f80-c3f4c3a33eae"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Username"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="fda9fc1e-50ba-4648-abeb-e523aff13776"
+					variablename="Username">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="067dd459-6ac9-4db7-b891-9e9e9d6cb41e"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9cceffac-74f4-46fd-a04c-a4ff2d9bb1e6"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -6241,17 +6415,31 @@ rxversion="8.2">
 			name="Study_Pagination">
 			</testcase>
 			<testmodule
+			id="9f438f6e-f1ff-4e3c-b5ce-8ce7eee34575"
+			name="Login_Gmail"
+			ref="be7da2ac-7a53-4abe-b613-0de37a8a2816"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GmailPassword"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
+					variablename="GmailPassword">
+					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
+					variablename="GmailAddress">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9ff49926-26d3-467a-9200-f74be1656415"
 			name="Enter_ForgotPassword_Email"
 			ref="d45bac3d-f62c-44bf-a3c6-e9139187e597"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="Username"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
-					variableid="3e6aef36-d3c3-439e-a0f1-0a3400ff4d1d"
-					variablename="Username">
-					</var>
 					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
@@ -6263,6 +6451,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Username"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="3e6aef36-d3c3-439e-a0f1-0a3400ff4d1d"
+					variablename="Username">
 					</var>
 				</databinding>
 			</testmodule>
@@ -6495,6 +6689,32 @@ rxversion="8.2">
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
+			id="a666e983-dd22-4320-96cc-ee85ac49d845"
+			name="Enter_ForgotPassword_Email"
+			ref="d45bac3d-f62c-44bf-a3c6-e9139187e597"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8d3868dd-fc23-4b23-8f46-767694a17bff"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="Username"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="3e6aef36-d3c3-439e-a0f1-0a3400ff4d1d"
+					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a6c0b462-ef5e-4c83-8273-c98825843d2e"
 			name="Open_Browser"
 			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
@@ -6555,6 +6775,31 @@ rxversion="8.2">
 					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
 					variablename="Password">
+					</var>
+				</databinding>
+			</modulegroup>
+			<modulegroup
+			id="a7eda749-694b-4417-baa7-4b5c412f71ed"
+			name="Add_User"
+			ref="ea0a5aab-0fec-4fc4-b483-f67dc998707c">
+				<databinding>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="e8d0c5b8-3795-41df-9638-3065b33ef76e"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="eb16cfdf-12de-4e2e-a85b-369d59f328bc"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="Username"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="b5ea3e04-b117-48dc-a9d4-981c6369b8ca"
+					variablename="Username">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -7067,12 +7312,6 @@ rxversion="8.2">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Username"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
-					variableid="3e6aef36-d3c3-439e-a0f1-0a3400ff4d1d"
-					variablename="Username">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="8d3868dd-fc23-4b23-8f46-767694a17bff"
@@ -7083,6 +7322,12 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="Username"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="3e6aef36-d3c3-439e-a0f1-0a3400ff4d1d"
+					variablename="Username">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7537,6 +7782,12 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c1bcea8b-9863-4c20-9912-44bd5842abdc"
+			name="Open_PlatformSupport_Email"
+			ref="52096338-91b8-414a-8fb5-b3d7de1f35d5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c1fda2c9-1a90-4621-bb0d-85ffba529064"
 			name="Validate_ProtocolNumber_Descending"
 			ref="7e4f8e07-3679-4107-9998-a791fbf598bf"
@@ -7615,6 +7866,20 @@ rxversion="8.2">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c440704f-f771-4865-8286-0ee4426be19b"
+			name="DateTimeGenerator"
+			ref="f5bf8785-98a5-4c1c-b828-bdb03993284b"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f82c872f-1d24-4a83-bf3a-5d3bdfab1b96"
+					variablename="Output">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7773,6 +8038,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="c97a086d-7751-4714-8b34-a334e9d5ba73"
+			name="Open_Gmail"
+			ref="dfb8dc74-3cd6-4c2f-882d-e08b92ce668c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c9cf21fa-6f3c-4345-9bc6-c571583efefd"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -7918,6 +8189,20 @@ rxversion="8.2">
 			id="cd867467-ba38-4556-9cfa-f8f37e2365c5"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="cda2ad15-e289-479f-a783-fd1626af69f7"
+			name="Click_Login_Button"
+			ref="4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e"
 			type="Recording">
 				<databinding>
 					<var
@@ -8170,6 +8455,31 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="d6eb5646-cad2-432b-a090-54a88ae7f345"
+			name="Login"
+			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
+				<databinding>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="d6f490c3-40eb-41c7-ad6f-c45f369ee0e2"
 			name="Open_Browser"
@@ -8224,6 +8534,31 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="d8499997-7a62-4293-83de-9e25e0d61e1d"
+			name="Login"
+			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="Email"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="Email">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="Password">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testcase
 			errorbehavior="Stop"
 			id="d9370862-f39d-4fcf-914c-685da7a04574"
@@ -10006,98 +10341,6 @@ rxversion="8.2">
 							name="teardown">
 								<testmodule
 								id="ccea6a5e-e8bd-4f43-a513-6ceac5df9956"
-								name="Close_Browser">
-								</testmodule>
-							</teardown>
-						</testcase>
-						<testcase
-						id="36aba7d9-425f-4e83-8148-9fb26d9cf42d"
-						name="Forgot_Password">
-							<setup
-							id="89302a4e-9ad3-4be3-a744-1550cb0cf9ac"
-							name="setup">
-								<testmodule
-								id="7cfb7f80-3c9f-4ee5-bdab-3f52ebd9b788"
-								name="Open_Browser">
-								</testmodule>
-								<modulegroup
-								id="5561b347-2e31-4787-b0f9-2bb6c4e932e2"
-								name="Login">
-								</modulegroup>
-								<modulegroup
-								id="62aa4b4c-2b61-4222-a064-49012ef164c1"
-								name="Add_User">
-								</modulegroup>
-								<testmodule
-								id="bc8dd1d0-3b7f-4c0b-8829-e805c3f7a75c"
-								name="Click_Logout">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="3be24084-4e4e-4ae3-84a6-c83169326557"
-							name="Click_ForgotPassword">
-							</testmodule>
-							<testmodule
-							id="976f6b70-15ed-4702-9641-5cec69b4c868"
-							name="Validate_ForgotPassword_Page">
-							</testmodule>
-							<testmodule
-							id="b57e55c8-cff0-4b60-9953-79b82df4a929"
-							name="Enter_ForgotPassword_Email">
-							</testmodule>
-							<testmodule
-							id="da52bf18-d4e2-4cbd-928b-663b192c3c20"
-							name="Click_ForgotPassword_OKButton">
-							</testmodule>
-							<testmodule
-							id="d815e8c7-55d1-4329-8f54-0a924ad64bbe"
-							name="Validate_ForgotPassword_Sent">
-							</testmodule>
-							<testmodule
-							id="40b9a0d9-12d5-4c1f-beb9-5d617c7bd6f2"
-							name="Open_Gmail">
-							</testmodule>
-							<testmodule
-							id="04aac2cd-c782-4a52-868d-07c088a0b2cc"
-							name="Login_Gmail">
-							</testmodule>
-							<testmodule
-							id="01f0bf17-d056-45cd-9bbe-6f40d50d2a21"
-							name="Open_ForgotPassword_Email">
-							</testmodule>
-							<testmodule
-							id="037afdfa-ebd0-4e2a-b01e-bc50d7bb50b8"
-							name="Reset_Password">
-							</testmodule>
-							<testmodule
-							id="9ff49926-26d3-467a-9200-f74be1656415"
-							name="Enter_ForgotPassword_Email">
-							</testmodule>
-							<testmodule
-							id="85da8a7a-7976-4ef0-b581-63315af9d060"
-							name="Enter_Password">
-							</testmodule>
-							<testmodule
-							id="58de8474-720e-4c9a-8340-89b89e90cfc0"
-							name="Click_Login_Button">
-							</testmodule>
-							<testmodule
-							id="f8d8cdbd-acfd-4b09-a4da-5ff8bc61c5ab"
-							name="Validate_ResetPassword_LoggedIn">
-							</testmodule>
-							<teardown
-							id="4721aeb0-9fd1-4573-b857-881f4b92c516"
-							name="teardown">
-								<testmodule
-								id="2a53c2a6-8601-4872-bf2a-c546b1f1d971"
-								name="Clear_Gmail_Inbox">
-								</testmodule>
-								<testmodule
-								id="852259a4-6650-4256-9e6c-73e3c771f11d"
-								name="Logout_Gmail">
-								</testmodule>
-								<testmodule
-								id="727e99ee-c071-405b-85ca-b8c7fad5569a"
 								name="Close_Browser">
 								</testmodule>
 							</teardown>
@@ -11970,6 +12213,182 @@ rxversion="8.2">
 						id="037aeee4-7133-450a-b13e-79f6464da1e0"
 						name="Check_Platform_Features">
 							<testcase
+							id="36aba7d9-425f-4e83-8148-9fb26d9cf42d"
+							name="Forgot_Internal_Password">
+								<setup
+								id="89302a4e-9ad3-4be3-a744-1550cb0cf9ac"
+								name="setup">
+									<testmodule
+									id="7cfb7f80-3c9f-4ee5-bdab-3f52ebd9b788"
+									name="Open_Browser">
+									</testmodule>
+									<modulegroup
+									id="5561b347-2e31-4787-b0f9-2bb6c4e932e2"
+									name="Login">
+									</modulegroup>
+									<modulegroup
+									id="62aa4b4c-2b61-4222-a064-49012ef164c1"
+									name="Add_User">
+									</modulegroup>
+									<testmodule
+									id="bc8dd1d0-3b7f-4c0b-8829-e805c3f7a75c"
+									name="Click_Logout">
+									</testmodule>
+								</setup>
+								<testmodule
+								id="3be24084-4e4e-4ae3-84a6-c83169326557"
+								name="Click_ForgotPassword">
+								</testmodule>
+								<testmodule
+								id="976f6b70-15ed-4702-9641-5cec69b4c868"
+								name="Validate_ForgotPassword_Page">
+								</testmodule>
+								<testmodule
+								id="b57e55c8-cff0-4b60-9953-79b82df4a929"
+								name="Enter_ForgotPassword_Email">
+								</testmodule>
+								<testmodule
+								id="da52bf18-d4e2-4cbd-928b-663b192c3c20"
+								name="Click_ForgotPassword_OKButton">
+								</testmodule>
+								<testmodule
+								id="d815e8c7-55d1-4329-8f54-0a924ad64bbe"
+								name="Validate_ForgotPassword_Sent">
+								</testmodule>
+								<testmodule
+								id="40b9a0d9-12d5-4c1f-beb9-5d617c7bd6f2"
+								name="Open_Gmail">
+								</testmodule>
+								<testmodule
+								id="04aac2cd-c782-4a52-868d-07c088a0b2cc"
+								name="Login_Gmail">
+								</testmodule>
+								<testmodule
+								id="01f0bf17-d056-45cd-9bbe-6f40d50d2a21"
+								name="Open_ForgotPassword_Email">
+								</testmodule>
+								<testmodule
+								id="037afdfa-ebd0-4e2a-b01e-bc50d7bb50b8"
+								name="Reset_Password">
+								</testmodule>
+								<testmodule
+								id="9ff49926-26d3-467a-9200-f74be1656415"
+								name="Enter_ForgotPassword_Email">
+								</testmodule>
+								<testmodule
+								id="85da8a7a-7976-4ef0-b581-63315af9d060"
+								name="Enter_Password">
+								</testmodule>
+								<testmodule
+								id="58de8474-720e-4c9a-8340-89b89e90cfc0"
+								name="Click_Login_Button">
+								</testmodule>
+								<testmodule
+								id="f8d8cdbd-acfd-4b09-a4da-5ff8bc61c5ab"
+								name="Validate_ResetPassword_LoggedIn">
+								</testmodule>
+								<teardown
+								id="4721aeb0-9fd1-4573-b857-881f4b92c516"
+								name="teardown">
+									<testmodule
+									id="852259a4-6650-4256-9e6c-73e3c771f11d"
+									name="Logout_Gmail">
+									</testmodule>
+									<testmodule
+									id="727e99ee-c071-405b-85ca-b8c7fad5569a"
+									name="Close_Browser">
+									</testmodule>
+								</teardown>
+							</testcase>
+							<testcase
+							id="30d53fa6-a046-4087-a710-ee059a17da7a"
+							name="Resend_Internal_Password">
+								<setup
+								id="965a6cad-39ce-427b-a0e4-67a31aafff0e"
+								name="setup">
+									<testmodule
+									id="c440704f-f771-4865-8286-0ee4426be19b"
+									name="DateTimeGenerator">
+									</testmodule>
+									<testmodule
+									id="45341d3e-8076-4fe3-a869-0492c30ae36c"
+									name="Open_Browser">
+									</testmodule>
+									<modulegroup
+									id="d8499997-7a62-4293-83de-9e25e0d61e1d"
+									name="Login">
+									</modulegroup>
+									<modulegroup
+									id="a7eda749-694b-4417-baa7-4b5c412f71ed"
+									name="Add_User">
+									</modulegroup>
+									<testmodule
+									id="0eed5a02-c814-4301-895d-210357abea1c"
+									name="Click_Logout">
+									</testmodule>
+								</setup>
+								<modulegroup
+								id="d6eb5646-cad2-432b-a090-54a88ae7f345"
+								name="Login">
+								</modulegroup>
+								<testmodule
+								id="8e5d86b6-5fc3-4641-9af2-09fcadff6cde"
+								name="Click_Users_Menu">
+								</testmodule>
+								<testmodule
+								id="9cc747bc-66be-4967-88eb-4cbf6e87d445"
+								name="Select_Internal_User">
+								</testmodule>
+								<testmodule
+								id="848fb5fa-7227-430f-a673-ee358074f754"
+								name="Click_Edit_Button">
+								</testmodule>
+								<testmodule
+								id="7211e481-b289-44e8-94b4-edb150dbef6e"
+								name="Click_Resend_Invite_Button">
+								</testmodule>
+								<testmodule
+								id="48c0a1f5-07a6-4f4e-a3f6-2630de9946d3"
+								name="Validate_Resend_Submitted">
+								</testmodule>
+								<testmodule
+								id="c97a086d-7751-4714-8b34-a334e9d5ba73"
+								name="Open_Gmail">
+								</testmodule>
+								<testmodule
+								id="9f438f6e-f1ff-4e3c-b5ce-8ce7eee34575"
+								name="Login_Gmail">
+								</testmodule>
+								<testmodule
+								id="c1bcea8b-9863-4c20-9912-44bd5842abdc"
+								name="Open_PlatformSupport_Email">
+								</testmodule>
+								<testmodule
+								id="82b303fa-500d-4bf6-a021-3acc46700389"
+								name="Reset_Password">
+								</testmodule>
+								<testmodule
+								id="a666e983-dd22-4320-96cc-ee85ac49d845"
+								name="Enter_ForgotPassword_Email">
+								</testmodule>
+								<testmodule
+								id="4294e7d7-f56e-43ac-bee5-8d7e8631e88c"
+								name="Enter_Password">
+								</testmodule>
+								<testmodule
+								id="cda2ad15-e289-479f-a783-fd1626af69f7"
+								name="Click_Login_Button">
+								</testmodule>
+								<testmodule
+								id="89ff01b6-9416-411d-988e-6cc436b7988f"
+								name="Validate_ResetPassword_LoggedIn">
+								</testmodule>
+								<teardown
+								id="1498b78b-a34d-4ea9-8512-facdc93886ba"
+								name="teardown">
+								</teardown>
+							</testcase>
+							<testcase
 							id="3064fb0e-3ac4-4917-8946-743c167f36b1"
 							name="Generate_Battery_Config_Report">
 								<setup
@@ -12757,6 +13176,12 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			</testcontainer>
+			<testcontainer
+			id="30d53fa6-a046-4087-a710-ee059a17da7a">
+			</testcontainer>
+			<testcontainer
+			id="36aba7d9-425f-4e83-8148-9fb26d9cf42d">
 			</testcontainer>
 			<testcontainer
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">

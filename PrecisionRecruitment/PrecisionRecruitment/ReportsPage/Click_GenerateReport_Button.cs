@@ -96,8 +96,8 @@ namespace PrecisionRecruitment.ReportsPage
             repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.PopupOKButton.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.PopupOKButton' at Center.", repo.CogstateSolutionPlatform.PopupOKButtonInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.PopupOKButton.Click(1);
             Delay.Milliseconds(90);
             
         }

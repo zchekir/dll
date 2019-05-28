@@ -1701,18 +1701,6 @@
       <UserCode>true</UserCode>
       <id>05b4fade-2587-43a6-97ed-80bed7966ced</id>
     </Compile>
-    <Compile Include="General\Get_Last_Email.cs">
-      <BoundTo>ea56a6ba-ac98-43c8-8fb1-a34e9611ad22</BoundTo>
-      <DependentUpon>Get_Last_Email.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d729bf51-83c4-4765-8531-5abc61c5fbd2</id>
-    </Compile>
-    <Compile Include="General\Get_Last_Email.UserCode.cs">
-      <BoundTo>ea56a6ba-ac98-43c8-8fb1-a34e9611ad22</BoundTo>
-      <DependentUpon>Get_Last_Email.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>9651cf9a-a76b-4f42-8859-53f95155890d</id>
-    </Compile>
     <Compile Include="General\Launch_AssessmentAttempt.cs">
       <DependentUpon>Launch_AssessmentAttempt.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -2502,6 +2490,18 @@
       <UserCode>true</UserCode>
       <id>e8b9aa2f-5ebf-4cbf-98c7-ba5c183f5d20</id>
     </Compile>
+    <Compile Include="UsersPage\Click_Resend_Invite_Button.cs">
+      <BoundTo>76c796ac-60c3-433e-a01f-88cdd0d08e7e</BoundTo>
+      <DependentUpon>Click_Resend_Invite_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f0e58cbf-af4e-40d3-b292-0fad66cf78ce</id>
+    </Compile>
+    <Compile Include="UsersPage\Click_Resend_Invite_Button.UserCode.cs">
+      <BoundTo>76c796ac-60c3-433e-a01f-88cdd0d08e7e</BoundTo>
+      <DependentUpon>Click_Resend_Invite_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>483de3a5-365b-46aa-8b25-82aefbe5662c</id>
+    </Compile>
     <Compile Include="UsersPage\Edit_FirstName.cs">
       <BoundTo>f6a31f9a-58b8-43a5-a969-e1fd66b1bfe3</BoundTo>
       <DependentUpon>Edit_FirstName.rxrec</DependentUpon>
@@ -2789,6 +2789,18 @@
       <DependentUpon>Validate_Internal_User_Edit.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>2e5e0de7-6b08-47d2-be60-7eb3ef7a27f8</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_Resend_Submitted.cs">
+      <BoundTo>c910ee6f-48b3-4a0e-823c-a8ce10ccc4e4</BoundTo>
+      <DependentUpon>Validate_Resend_Submitted.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c1919da-be94-4d5d-b6ad-f3f18449df72</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_Resend_Submitted.UserCode.cs">
+      <BoundTo>c910ee6f-48b3-4a0e-823c-a8ce10ccc4e4</BoundTo>
+      <DependentUpon>Validate_Resend_Submitted.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>87ca5d6b-e7cf-4a77-9f67-d2e715f6f8b2</id>
     </Compile>
     <Compile Include="UsersPage\Validate_User_Unlocked.cs">
       <BoundTo>23bf7226-44a2-428e-a035-d6afbcfed2d5</BoundTo>
@@ -3620,11 +3632,6 @@
       <id>dd04ad51-ac11-4278-affd-b92f9c31a61d</id>
       <recordtableid>69cc12f0-25dd-4495-a0bc-9eef9bdec8bb</recordtableid>
     </None>
-    <None Include="General\Get_Last_Email.rxrec">
-      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
-      <id>ea56a6ba-ac98-43c8-8fb1-a34e9611ad22</id>
-      <recordtableid>292587d4-8a26-4ce3-b080-090fb0e2fbff</recordtableid>
-    </None>
     <None Include="General\Launch_AssessmentAttempt.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>11819d4d-c563-4d8e-930b-a519d532461c</id>
@@ -4006,6 +4013,11 @@
       <id>55365ad1-e816-4ea8-8b14-78e15a6f61c8</id>
       <recordtableid>94752e32-5eed-489a-90dc-52110f3c14db</recordtableid>
     </None>
+    <None Include="UsersPage\Click_Resend_Invite_Button.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>76c796ac-60c3-433e-a01f-88cdd0d08e7e</id>
+      <recordtableid>3e2a07f6-355d-4a10-b8e8-1c217d449559</recordtableid>
+    </None>
     <None Include="UsersPage\Edit_FirstName.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>f6a31f9a-58b8-43a5-a969-e1fd66b1bfe3</id>
@@ -4125,6 +4137,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>61ed6a86-db49-4c06-8a6b-f81f72466187</id>
       <recordtableid>c437b09f-77d0-4543-9333-316f45c91fb4</recordtableid>
+    </None>
+    <None Include="UsersPage\Validate_Resend_Submitted.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>c910ee6f-48b3-4a0e-823c-a8ce10ccc4e4</id>
+      <recordtableid>7b866d14-0e3b-4183-9c32-9494e269a9a3</recordtableid>
     </None>
     <None Include="UsersPage\Validate_User_Unlocked.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

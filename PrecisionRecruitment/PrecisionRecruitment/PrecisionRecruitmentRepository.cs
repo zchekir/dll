@@ -57,7 +57,7 @@ namespace PrecisionRecruitment
 
 #region Variables
 
-        string _DOM = "cgst-qc-duo.azurewebsites.net";
+        string _DOM = "cgst-qc-lithium.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -357,6 +357,8 @@ namespace PrecisionRecruitment
             RepoItemInfo _syncurlInfo;
             RepoItemInfo _synchronizationsuccessfulInfo;
             RepoItemInfo _canvasspinnerInfo;
+            RepoItemInfo _resendinvitesuccessInfo;
+            RepoItemInfo _popupokbuttonInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -400,6 +402,8 @@ namespace PrecisionRecruitment
                 _syncurlInfo = new RepoItemInfo(this, "SyncURL", "body//div[@innertext~'https://'+$DOM+'/sync.html']", 30000, null, "36286d65-2ff6-46da-a413-4b9613b11b99");
                 _synchronizationsuccessfulInfo = new RepoItemInfo(this, "SynchronizationSuccessful", ".//div[#'root']//h1[@innertext~'Synchronization Successful']", 30000, null, "703373d8-ae06-4fe2-925e-9198a42390ed");
                 _canvasspinnerInfo = new RepoItemInfo(this, "CanvasSpinner", ".//div[#'ng-app']/?/?//div[@class='spinner']", 30000, null, "89fb4724-2717-48d3-a1a7-e5da52b35873");
+                _resendinvitesuccessInfo = new RepoItemInfo(this, "ResendInviteSuccess", "body//h4[@innertext='Success']", 30000, null, "80e1ff94-feed-4ef8-aa7a-4a955f24bcb8");
+                _popupokbuttonInfo = new RepoItemInfo(this, "PopupOKButton", "body//button[@innertext='OK']", 30000, null, "fd579a89-f412-4372-a0b1-89703d468cd0");
             }
 
             /// <summary>
@@ -735,6 +739,54 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _canvasspinnerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteSuccess item.
+            /// </summary>
+            [RepositoryItem("80e1ff94-feed-4ef8-aa7a-4a955f24bcb8")]
+            public virtual Ranorex.H4Tag ResendInviteSuccess
+            {
+                get
+                {
+                    return _resendinvitesuccessInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteSuccess item info.
+            /// </summary>
+            [RepositoryItemInfo("80e1ff94-feed-4ef8-aa7a-4a955f24bcb8")]
+            public virtual RepoItemInfo ResendInviteSuccessInfo
+            {
+                get
+                {
+                    return _resendinvitesuccessInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PopupOKButton item.
+            /// </summary>
+            [RepositoryItem("fd579a89-f412-4372-a0b1-89703d468cd0")]
+            public virtual Ranorex.ButtonTag PopupOKButton
+            {
+                get
+                {
+                    return _popupokbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PopupOKButton item info.
+            /// </summary>
+            [RepositoryItemInfo("fd579a89-f412-4372-a0b1-89703d468cd0")]
+            public virtual RepoItemInfo PopupOKButtonInfo
+            {
+                get
+                {
+                    return _popupokbuttonInfo;
                 }
             }
 
@@ -3846,7 +3898,6 @@ namespace PrecisionRecruitment
         {
             RepoItemInfo _batteryconfigreportInfo;
             RepoItemInfo _generatereportbuttonInfo;
-            RepoItemInfo _popupokbuttonInfo;
             RepoItemInfo _latestgeneratedreportInfo;
             RepoItemInfo _protocollabelInfo;
             RepoItemInfo _visitscheduletableInfo;
@@ -3863,7 +3914,6 @@ namespace PrecisionRecruitment
             {
                 _batteryconfigreportInfo = new RepoItemInfo(this, "BatteryConfigReport", ".//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Battery Config Report' and @visible='True']", 30000, null, "22ce7e5d-f755-46e4-9d3b-319ad3ff6903");
                 _generatereportbuttonInfo = new RepoItemInfo(this, "GenerateReportButton", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//button[@innertext>'Generate Report']", 30000, null, "85a4dc2d-d1d7-4fec-8213-99295fb09d62");
-                _popupokbuttonInfo = new RepoItemInfo(this, "PopupOKButton", "body//button[@innertext='OK']", 30000, null, "fd579a89-f412-4372-a0b1-89703d468cd0");
                 _latestgeneratedreportInfo = new RepoItemInfo(this, "LatestGeneratedReport", ".//div[#'ng-app']//table/tbody/tr[1]/td/a[@visible='True']", 30000, null, "55e2ef93-5902-4c18-8192-ed03533b23d2");
                 _protocollabelInfo = new RepoItemInfo(this, "ProtocolLabel", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//label[@innertext>'Protocol:']", 30000, null, "1f73c6fb-00ae-412a-9000-63304bd2c1a3");
                 _visitscheduletableInfo = new RepoItemInfo(this, "VisitScheduleTable", ".//div[#'ng-app']/tag/div/div/?/?/tag[@tagname='cogstate-generic-study-report-compact']/div/div/tag/div/div/?/?/table[@class='battery-schedule-list cogstate-table']", 30000, null, "612b5f31-d765-4dcd-8c80-653fcb1cd030");
@@ -3930,30 +3980,6 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _generatereportbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PopupOKButton item.
-            /// </summary>
-            [RepositoryItem("fd579a89-f412-4372-a0b1-89703d468cd0")]
-            public virtual Ranorex.ButtonTag PopupOKButton
-            {
-                get
-                {
-                    return _popupokbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PopupOKButton item info.
-            /// </summary>
-            [RepositoryItemInfo("fd579a89-f412-4372-a0b1-89703d468cd0")]
-            public virtual RepoItemInfo PopupOKButtonInfo
-            {
-                get
-                {
-                    return _popupokbuttonInfo;
                 }
             }
 
@@ -6280,6 +6306,7 @@ namespace PrecisionRecruitment
         {
             RepoItemInfo _expandInfo;
             RepoItemInfo _logoutbuttonInfo;
+            RepoItemInfo _resendinviteemailInfo;
 
             /// <summary>
             /// Creates a new UserMenu  folder.
@@ -6289,6 +6316,7 @@ namespace PrecisionRecruitment
             {
                 _expandInfo = new RepoItemInfo(this, "Expand", ".//div/?/?/a[@href~$DOM]/span", 30000, null, "5ce3e130-33b1-4f66-9a98-a8e27f4c6fb4");
                 _logoutbuttonInfo = new RepoItemInfo(this, "LogoutButton", ".//div/?/?/ul/?/?/a[@innertext='Logout']", 30000, null, "1f8b275c-e312-423f-ab19-2b4cc77fedbc");
+                _resendinviteemailInfo = new RepoItemInfo(this, "ResendInviteEmail", "div[3]/?/?/tag[@tagname='cogstate-generic-user-edit']/div/?/?/form[@action='https://cgst-qc-lithium.azurewebsites.net/#/EditUser']/tag[@tagname='ng-form']/div[1]//a[@innertext='Resend Invite Email']", 30000, null, "428402d4-cc8a-4592-9225-7ee65da0b52f");
             }
 
             /// <summary>
@@ -6360,6 +6388,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _logoutbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteEmail item.
+            /// </summary>
+            [RepositoryItem("428402d4-cc8a-4592-9225-7ee65da0b52f")]
+            public virtual Ranorex.ATag ResendInviteEmail
+            {
+                get
+                {
+                    return _resendinviteemailInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("428402d4-cc8a-4592-9225-7ee65da0b52f")]
+            public virtual RepoItemInfo ResendInviteEmailInfo
+            {
+                get
+                {
+                    return _resendinviteemailInfo;
                 }
             }
         }
@@ -7293,7 +7345,7 @@ namespace PrecisionRecruitment
                 _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div/div[1]/div/div[1]/div/div", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
                 _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[@id~':3[012345]']/?/?/span[@role='checkbox']", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
                 _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div", 30000, null, "0155202d-a183-4048-a7f7-aeb9677aa6fa");
-                _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span[@id>':3']/span[@innertext='Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");
+                _forgotpasswordemailInfo = new RepoItemInfo(this, "ForgotPasswordEmail", ".//span/span[@innertext~'Account Information']", 30000, null, "dcf83ff9-d659-4a54-8b0b-d188c16e48d4");
                 _forgotpasswordlinkInfo = new RepoItemInfo(this, "ForgotPasswordLink", ".//div//a[@innertext~$DOM]", 30000, null, "a1bd28f9-fa49-4070-b113-d58014026934");
                 _accountbuttonInfo = new RepoItemInfo(this, "AccountButton", ".//header[#'gb']/div[2]/div[3]//a[@href~'^https://accounts\\.google\\.c']", 30000, null, "2468f073-1e7c-48a5-bbdc-af4e475eb9b9");
                 _platformsupportemailInfo = new RepoItemInfo(this, "PlatformSupportEmail", ".//span/span[@innertext~'Cogstate user account created']", 30000, null, "105c6084-d31d-4f61-89ad-61d64d052748");

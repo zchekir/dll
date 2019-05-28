@@ -53,6 +53,16 @@ namespace PrecisionRecruitment.UsersPage
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,6 +89,10 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UserMenu.ResendInviteEmail' at 61;10.", repo.CogstateSolutionPlatform.UserMenu.ResendInviteEmailInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.UserMenu.ResendInviteEmail.Click("61;10");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
