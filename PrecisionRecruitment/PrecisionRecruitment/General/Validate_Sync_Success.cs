@@ -90,8 +90,8 @@ namespace PrecisionRecruitment.General
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 45s to exist. Associated repository item: 'CogstateSolutionPlatform.SynchronizationSuccessful'", repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo, new ActionTimeout(45000), new RecordItemIndex(0));
-                repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo.WaitForExists(45000);
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 45s to exist. Associated repository item: 'CogstateSolutionPlatform.Popups.SynchronizationSuccessful'", repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo, new ActionTimeout(45000), new RecordItemIndex(0));
+                repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo.WaitForExists(45000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+R' Press with focus on 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(1));
@@ -99,8 +99,8 @@ namespace PrecisionRecruitment.General
             Keyboard.Press(System.Windows.Forms.Keys.R | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Synchronization Successful') on item 'CogstateSolutionPlatform.SynchronizationSuccessful'.", repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.CogstateSolutionPlatform.SynchronizationSuccessfulInfo, "InnerText", "Synchronization Successful");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Synchronization Successful') on item 'CogstateSolutionPlatform.Popups.SynchronizationSuccessful'.", repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo, "InnerText", "Synchronization Successful");
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "Data Successfully Synchronized", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));

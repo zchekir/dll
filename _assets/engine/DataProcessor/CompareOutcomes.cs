@@ -32,66 +32,43 @@ namespace engine.DataProcessor
         
         public static string CurrentValue;
         
+		
         /// <summary>
-        /// This is a placeholder text. Please describe the purpose of the
-        /// user code method here. The method is published to the user code library
-        /// within a user code collection.
+        /// This method will loop through the CSV datatable looking for the specified outcome which
+        /// matches the testcode and round number passed through
         /// </summary>
+        /// <param name="testCode">The test code we want to find in the CSV datatable</param>
+        /// <param name="round">The round for the current test code we want to find</param>
+        /// <param name="outcome">The outcome we want to find for the Test/round specified</param>
+        /// <returns>The outcome requested as stored in the CSV datatable</returns>
         [UserCodeMethod]
-        private static string GetExtractValue(string testCode, string outcome)
+        private static string GetExtractValue(string testCode, string round, string outcome)
         {
-        	int outcomeIndex = 0;
         	int testCodeRowIndex = 0;
-        	int testCodeColIndex = 0;
-        	bool testCodeColFound = false;
         	bool testCodeRowFound = false;
-        	bool outcomeIndexFound = false;
         	
-        	/*Loop over each column in the CSV file. We want to find the column which contains the TestCodes so
-        	 * we can then search each row to find which one contains the outcomes for the current test we are
-        	 * interested in. 
-        	 * */
-        	foreach (DataColumn col in engine.Helpers.CSVUtility.dt.Columns)
+			/*Loop over every row in the CSV Datatable utill the passed in testCode and round is
+			 * found in the same row. Once we find the correct row, break from the loop and return the
+			 * score for the test and outcome we are interested in.
+			 * 
+			 * The TestCode and Round columns are being referenced by column name in the if statement below */
+        	foreach (DataRow row in engine.Helpers.CSVUtility.dt.Rows)
         	{
-  				if (col.ColumnName == "Test")
-  				{
-  					testCodeColFound = true;
-  					//We have now found the column containing the TestCodes, we want to loop over each row and find the
-  					//row containing the current test data we are interested in
-  					foreach (DataRow row in engine.Helpers.CSVUtility.dt.Rows)
-  					{
-  						if (row[col].ToString() == testCode)
-  						{
-  							testCodeRowFound = true;
-  							break;
-  						}
-  						else
-  						{
-  							testCodeRowIndex++;
-  						}
-  					}	
-  				}
-  				
-  				//Set flag to true once we have found the column containing the outcome we want
-  				if (col.ColumnName == outcome)
-  					outcomeIndexFound = true;
-
-  				//Check if we have found the columns and increment counters if we are still searching
-  				if (!testCodeColFound)
-  				    testCodeColIndex++;
-
-  				if (!outcomeIndexFound) 
-  					outcomeIndex++;
-  				
-  				//Exit the loop if we have found the correct row and column
-  				if (outcomeIndexFound && testCodeRowFound)
-  					break;
-  				  				
+        		if (row["TestCode"].ToString() == testCode && row["Round"].ToString() == round)
+        		{
+        			testCodeRowFound = true;
+        			break;
+        		}
+        		else
+        		{
+        			testCodeRowIndex++;
+        		}
         	}
-        	
-        	//Store result from search
-      		if (outcomeIndexFound)
-      			CurrentValue = engine.Helpers.CSVUtility.dt.Rows[testCodeRowIndex][outcomeIndex].ToString();
+        	      	
+        	/*Extract the value of the outcome for the current row and store in the class variable which is
+ 			 * accessible to other methods in this library */	         	
+      		if (testCodeRowFound)
+      			CurrentValue = engine.Helpers.CSVUtility.dt.Rows[testCodeRowIndex][outcome].ToString();
       		else
       			CurrentValue = "Test Outcome not found in CSV";
         	
@@ -100,10 +77,15 @@ namespace engine.DataProcessor
         
         
         /// <summary>
-        /// This is a placeholder text. Please describe the purpose of the
-        /// user code method here. The method is published to the user code library
-        /// within a user code collection.
+        /// This method is used internally to compare processed outcomes from the Database and previously
+        /// validated outcomes stored in an extract. Certain outcomes require formatting prior to comparison,
+        /// and some outcomes are expected to be different for each uplaod (eg, IQNumber). This method will deal with
+        /// those instances
         /// </summary>
+        /// <param name="outcome">The name of the outcome to compare</param>
+        /// <param name="extractValue">The value of the outcome pulled from the locally stored extract</param>
+        /// <param name="databaseValue">The value of the outcome pulled directly from the database</param>
+        /// <returns>True if the values match, false if there is a mismatch</returns>
         [UserCodeMethod]
         private static bool CheckOutcomesMatch(string outcome, string extractValue, string databaseValue)
         {
@@ -213,77 +195,73 @@ namespace engine.DataProcessor
         	return match;
         }
         
-        
         /// <summary>
-        /// This is a placeholder text. Please describe the purpose of the
-        /// user code method here. The method is published to the user code library
-        /// within a user code collection.
+        /// Returns the current Round for the given row index from the database
         /// </summary>
+        /// <param name="rowIndex">Row in the datatable where we are currently comparing</param>
+        /// <returns>String containing the current round number, null if no round column was found</returns>
+        private static string GetCurrentRound(int rowIndex)
+        {
+        	return engine.Helpers.SQLUtility.dt.Rows[rowIndex]["Round"].ToString();
+        }
+        
+        
+		/// <summary>
+		/// This method will loop over each row in the Datatable retrieved from the Database, comparing each outcome
+		/// to the corresponding outcome from the CSV datatable
+		/// </summary>
         [UserCodeMethod]
         public static void Validate_Outcomes_Match()
         {
-        	int colIndex = 1;
         	int rowIndex = 0;
         	string extractValue;
         	string databaseValue;
         	string currentOutcome = "";
         	string currentTestCode = "";
+        	string currentRound = "";
         	
-           //Loop over each column from the processed data. When the 'Test' column containing the tests completed in the battery is found,
-		   //loop over each column in that row, comparing the value from extract to value from database, then move on to the next row           
-           foreach (DataColumn col in engine.Helpers.SQLUtility.dt.Columns)
-           {
-           		if (col.ColumnName == "Test")
-           		{
-           			foreach (DataRow row in engine.Helpers.SQLUtility.dt.Rows)
-           			{
-           				for (int i = 0; i < engine.Helpers.SQLUtility.dt.Columns.Count; i++)
-           				{
-           					//Store current outcome and test code we are comparing
-           					currentOutcome = engine.Helpers.SQLUtility.dt.Columns[i].ColumnName;
-           					currentTestCode = row[colIndex].ToString();
-           					
-           					//Get the extract value from the imported CSV, using the current TestCode and outcome from the database scores as reference
-           					extractValue = GetExtractValue(currentTestCode, currentOutcome);
-           					databaseValue = engine.Helpers.SQLUtility.dt.Rows[rowIndex][i].ToString();
-           					
-           					//Some outcomes may be formatted differently in the extract and database so we need to pass the two values to this method
-           					//for some formatting before comparing the two outcomes. Some outcomes are expected not to match. In this case, we just
-           					//want to log a message in the report without the Success/Failure log
-           					if(CheckOutcomesMatch(engine.Helpers.SQLUtility.dt.Columns[i].ColumnName, extractValue, databaseValue))
-           						if (currentOutcome == "IQNumber" || currentOutcome == "SessionID" || currentOutcome == "SessionDate"
-           						   || currentOutcome == "Age") {
-           							 Report.Info("Outcome difference expected, no comparison needed");
-           						}
-           						else {
-           							 Report.Success("Processed Score matches the score in the extract");
-           						}
+        	//Loop over each column from the processed data. When the 'Test' column containing the tests completed in the battery is found,
+        	//loop over each column in that row, comparing the value from extract to value from database, then move on to the next row
+        	foreach (DataRow row in engine.Helpers.SQLUtility.dt.Rows)
+        	{
+        		//For each row, we want to find the current round associated with the test code
+        		currentRound = GetCurrentRound(rowIndex);
+        		
+        		for (int i = 0; i < engine.Helpers.SQLUtility.dt.Columns.Count; i++)
+        		{
+        			//Store current outcome, round and test code we are comparing
+        			currentOutcome = engine.Helpers.SQLUtility.dt.Columns[i].ColumnName;
+        			currentTestCode = row["TestCode"].ToString();
+        			
+        			//Get the CSV and Database values using the current TestCode, Round and Outcome as reference
+        			extractValue = GetExtractValue(currentTestCode, currentRound, currentOutcome);
+        			databaseValue = engine.Helpers.SQLUtility.dt.Rows[rowIndex][currentOutcome].ToString();
+        			
+        			//Some outcomes may be formatted differently in the extract and database so we need to pass the two values to this method
+        			//for some formatting before comparing the two outcomes. Some outcomes are expected not to match. In this case, we just
+        			//want to log a message in the report without the Success/Failure log
+        			if(CheckOutcomesMatch(currentOutcome, extractValue, databaseValue))
+        				if (currentOutcome == "IQNumber" || currentOutcome == "SessionID" || currentOutcome == "SessionDate"
+        				    || currentOutcome == "Age") {
+        				Report.Info("Outcome difference expected, no comparison needed");
+        			}
+        			else {
+        				Report.Success("Processed Score matches the score in the extract");
+        			}
 
-           					else
-           						Report.Failure("Processed Score does not match the score in the extract");
-           					
-           					Report.Info("Extract Outcome: " + engine.Helpers.SQLUtility.dt.Columns[i].ColumnName + " - Extract Value: " + extractValue);
-           					Report.Info("Database Outcome: " + engine.Helpers.SQLUtility.dt.Columns[i].ColumnName + " - Database Value: " + databaseValue);
+        			else
+        				Report.Failure("Processed Score does not match the score in the extract");
+        			
+        			Report.Info("Extract Outcome: " + currentOutcome + " - Extract Value: " + extractValue);
+        			Report.Info("Database Outcome: " + currentOutcome + " - Database Value: " + databaseValue);
 
-           					//Report.LogHtml(ReportLevel.Info, "Extract - Outcome: " + engine.Helpers.SQLUtility.dt.Columns[i].ColumnName + " - Value: " + GetExtractValue(row[colIndex].ToString(), engine.Helpers.SQLUtility.dt.Columns[i].ColumnName) +
-           					          //"<br />" + " Database - Outcome: " + engine.Helpers.SQLUtility.dt.Columns[i].ColumnName + " - Value: " + engine.Helpers.SQLUtility.dt.Rows[rowIndex][i].ToString());
-           				}
-           				
-           				//Remove the row after we are finished with it just incase there are rows with the same test code but multiple rounds 
-           				//RemoveCompletedRow(currentTestCode);
-           				
-           				rowIndex++;
-           			}
-           		}
-           		else
-           		{
-           			colIndex++;
-           		}
-           }
+        		}
+        		
+        		rowIndex++;
+        	}
+
+        	
         }
-        
-        
-        
-        
+   
     }
 }

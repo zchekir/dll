@@ -44,7 +44,7 @@ namespace PrecisionRecruitment.General
         	
         	//Add raw data into the textbox on the battery runner page
         	Report.Log(ReportLevel.Info, "Searching for raw data text field");
-        	repo.CogstateSolutionPlatform.BatteryDataField.Element.SetAttributeValue("InnerText", data);
+        	repo.CogstateSolutionPlatform.WorkflowRunner.BatteryDataField.Element.SetAttributeValue("InnerText", data);
         }
 
     }

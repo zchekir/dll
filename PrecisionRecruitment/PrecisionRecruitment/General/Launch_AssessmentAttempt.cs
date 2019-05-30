@@ -94,8 +94,8 @@ namespace PrecisionRecruitment.General
             
             Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.StartInstructions'", repo.CogstateSolutionPlatform.StartInstructionsInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.StartInstructionsInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.StartInstructions'", repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo.WaitForExists(30000);
             
         }
 

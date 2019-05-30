@@ -330,8 +330,10 @@ namespace PrecisionRecruitment
             PrecisionRecruitmentRepositoryFolders.AddExternalUserPageFolder _addexternaluserpage;
             PrecisionRecruitmentRepositoryFolders.BatteryConfigReportPageFolder _batteryconfigreportpage;
             PrecisionRecruitmentRepositoryFolders.ParticipantsPageFolder _participantspage;
+            PrecisionRecruitmentRepositoryFolders.PopupsFolder _popups;
             PrecisionRecruitmentRepositoryFolders.ExtractsPageFolder _extractspage;
             PrecisionRecruitmentRepositoryFolders.LoginFormFolder _loginform;
+            PrecisionRecruitmentRepositoryFolders.WorkflowRunnerFolder _workflowrunner;
             PrecisionRecruitmentRepositoryFolders.MainToolbarFolder _maintoolbar;
             PrecisionRecruitmentRepositoryFolders.StudyToolbarFolder _studytoolbar;
             PrecisionRecruitmentRepositoryFolders.StudyCardsFolder _studycards;
@@ -347,18 +349,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _assemblyversionInfo;
             RepoItemInfo _nextpagebuttonInfo;
             RepoItemInfo _previouspagebuttonInfo;
-            RepoItemInfo _startinstructionsInfo;
-            RepoItemInfo _batterydatafieldInfo;
-            RepoItemInfo _batteryskipbuttonInfo;
-            RepoItemInfo _userrolenotfoundpopupInfo;
-            RepoItemInfo _userrolenotfoundclosebuttonInfo;
             RepoItemInfo _savebuttonInfo;
-            RepoItemInfo _nointernetconnectionpopupInfo;
-            RepoItemInfo _syncurlInfo;
-            RepoItemInfo _synchronizationsuccessfulInfo;
-            RepoItemInfo _canvasspinnerInfo;
-            RepoItemInfo _resendinvitesuccessInfo;
-            RepoItemInfo _popupokbuttonInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -375,8 +366,10 @@ namespace PrecisionRecruitment
                 _addexternaluserpage = new PrecisionRecruitmentRepositoryFolders.AddExternalUserPageFolder(this);
                 _batteryconfigreportpage = new PrecisionRecruitmentRepositoryFolders.BatteryConfigReportPageFolder(this);
                 _participantspage = new PrecisionRecruitmentRepositoryFolders.ParticipantsPageFolder(this);
+                _popups = new PrecisionRecruitmentRepositoryFolders.PopupsFolder(this);
                 _extractspage = new PrecisionRecruitmentRepositoryFolders.ExtractsPageFolder(this);
                 _loginform = new PrecisionRecruitmentRepositoryFolders.LoginFormFolder(this);
+                _workflowrunner = new PrecisionRecruitmentRepositoryFolders.WorkflowRunnerFolder(this);
                 _maintoolbar = new PrecisionRecruitmentRepositoryFolders.MainToolbarFolder(this);
                 _studytoolbar = new PrecisionRecruitmentRepositoryFolders.StudyToolbarFolder(this);
                 _studycards = new PrecisionRecruitmentRepositoryFolders.StudyCardsFolder(this);
@@ -392,18 +385,7 @@ namespace PrecisionRecruitment
                 _assemblyversionInfo = new RepoItemInfo(this, "AssemblyVersion", ".//div[#'collapsible0']//span[@innertext~'\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}']", 30000, null, "63dc85ed-58cb-45a1-9c44-c2404ef1f077");
                 _nextpagebuttonInfo = new RepoItemInfo(this, "NextPageButton", ".//div[#'ng-app']/tag/div/div//ul/li/a[@innertext='NEXT']", 30000, null, "2a7a9d54-916d-4235-992d-5f3467c7e139");
                 _previouspagebuttonInfo = new RepoItemInfo(this, "PreviousPageButton", ".//div[#'ng-app']/tag/div/div//ul/li/a[@innertext='PREVIOUS']", 30000, null, "9a3bd989-1f05-4532-a3e6-b64f8af89913");
-                _startinstructionsInfo = new RepoItemInfo(this, "StartInstructions", ".//button[#'instructions_button']", 30000, null, "4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55");
-                _batterydatafieldInfo = new RepoItemInfo(this, "BatteryDataField", ".//textarea[#'results']", 30000, null, "41136832-35b1-4bfa-9dcb-92e2d111c24b");
-                _batteryskipbuttonInfo = new RepoItemInfo(this, "BatterySkipButton", ".//button[#'skip']", 30000, null, "5cafea12-8dac-456b-af85-df1546dac229");
-                _userrolenotfoundpopupInfo = new RepoItemInfo(this, "UserRoleNotFoundPopup", "body/div[3]//h4[@innertext='NotFound']", 30000, null, "2ced943c-58c3-4c74-8175-93d86fa2d329");
-                _userrolenotfoundclosebuttonInfo = new RepoItemInfo(this, "UserRoleNotFoundCloseButton", "body/div[3]//button[@innertext='Close']", 30000, null, "2277bba7-33be-4fb8-8625-24e5b8f37387");
                 _savebuttonInfo = new RepoItemInfo(this, "SaveButton", "body/div/tag/div/div[3]//div/button[@ng-click>'save']", 30000, null, "8a61fdd3-cb4b-4f86-b20d-3fd9bbe1e5b1");
-                _nointernetconnectionpopupInfo = new RepoItemInfo(this, "NoInternetConnectionPopup", "body//h2[@innertext='No Internet Connection']", 30000, null, "86491237-c806-4739-8520-e52afb4caf5c");
-                _syncurlInfo = new RepoItemInfo(this, "SyncURL", "body//div[@innertext~'https://'+$DOM+'/sync.html']", 30000, null, "36286d65-2ff6-46da-a413-4b9613b11b99");
-                _synchronizationsuccessfulInfo = new RepoItemInfo(this, "SynchronizationSuccessful", ".//div[#'root']//h1[@innertext~'Synchronization Successful']", 30000, null, "703373d8-ae06-4fe2-925e-9198a42390ed");
-                _canvasspinnerInfo = new RepoItemInfo(this, "CanvasSpinner", ".//div[#'ng-app']/?/?//div[@class='spinner']", 30000, null, "89fb4724-2717-48d3-a1a7-e5da52b35873");
-                _resendinvitesuccessInfo = new RepoItemInfo(this, "ResendInviteSuccess", "body//h4[@innertext='Success']", 30000, null, "80e1ff94-feed-4ef8-aa7a-4a955f24bcb8");
-                _popupokbuttonInfo = new RepoItemInfo(this, "PopupOKButton", "body//button[@innertext='OK']", 30000, null, "fd579a89-f412-4372-a0b1-89703d468cd0");
             }
 
             /// <summary>
@@ -503,126 +485,6 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
-            /// The StartInstructions item.
-            /// </summary>
-            [RepositoryItem("4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55")]
-            public virtual Ranorex.Button StartInstructions
-            {
-                get
-                {
-                    return _startinstructionsInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StartInstructions item info.
-            /// </summary>
-            [RepositoryItemInfo("4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55")]
-            public virtual RepoItemInfo StartInstructionsInfo
-            {
-                get
-                {
-                    return _startinstructionsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The BatteryDataField item.
-            /// </summary>
-            [RepositoryItem("41136832-35b1-4bfa-9dcb-92e2d111c24b")]
-            public virtual Ranorex.TextAreaTag BatteryDataField
-            {
-                get
-                {
-                    return _batterydatafieldInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The BatteryDataField item info.
-            /// </summary>
-            [RepositoryItemInfo("41136832-35b1-4bfa-9dcb-92e2d111c24b")]
-            public virtual RepoItemInfo BatteryDataFieldInfo
-            {
-                get
-                {
-                    return _batterydatafieldInfo;
-                }
-            }
-
-            /// <summary>
-            /// The BatterySkipButton item.
-            /// </summary>
-            [RepositoryItem("5cafea12-8dac-456b-af85-df1546dac229")]
-            public virtual Ranorex.ButtonTag BatterySkipButton
-            {
-                get
-                {
-                    return _batteryskipbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The BatterySkipButton item info.
-            /// </summary>
-            [RepositoryItemInfo("5cafea12-8dac-456b-af85-df1546dac229")]
-            public virtual RepoItemInfo BatterySkipButtonInfo
-            {
-                get
-                {
-                    return _batteryskipbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The UserRoleNotFoundPopup item.
-            /// </summary>
-            [RepositoryItem("2ced943c-58c3-4c74-8175-93d86fa2d329")]
-            public virtual Ranorex.H4Tag UserRoleNotFoundPopup
-            {
-                get
-                {
-                    return _userrolenotfoundpopupInfo.CreateAdapter<Ranorex.H4Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The UserRoleNotFoundPopup item info.
-            /// </summary>
-            [RepositoryItemInfo("2ced943c-58c3-4c74-8175-93d86fa2d329")]
-            public virtual RepoItemInfo UserRoleNotFoundPopupInfo
-            {
-                get
-                {
-                    return _userrolenotfoundpopupInfo;
-                }
-            }
-
-            /// <summary>
-            /// The UserRoleNotFoundCloseButton item.
-            /// </summary>
-            [RepositoryItem("2277bba7-33be-4fb8-8625-24e5b8f37387")]
-            public virtual Ranorex.ButtonTag UserRoleNotFoundCloseButton
-            {
-                get
-                {
-                    return _userrolenotfoundclosebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The UserRoleNotFoundCloseButton item info.
-            /// </summary>
-            [RepositoryItemInfo("2277bba7-33be-4fb8-8625-24e5b8f37387")]
-            public virtual RepoItemInfo UserRoleNotFoundCloseButtonInfo
-            {
-                get
-                {
-                    return _userrolenotfoundclosebuttonInfo;
-                }
-            }
-
-            /// <summary>
             /// The SaveButton item.
             /// </summary>
             [RepositoryItem("8a61fdd3-cb4b-4f86-b20d-3fd9bbe1e5b1")]
@@ -643,150 +505,6 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _savebuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The NoInternetConnectionPopup item.
-            /// </summary>
-            [RepositoryItem("86491237-c806-4739-8520-e52afb4caf5c")]
-            public virtual Ranorex.H2Tag NoInternetConnectionPopup
-            {
-                get
-                {
-                    return _nointernetconnectionpopupInfo.CreateAdapter<Ranorex.H2Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The NoInternetConnectionPopup item info.
-            /// </summary>
-            [RepositoryItemInfo("86491237-c806-4739-8520-e52afb4caf5c")]
-            public virtual RepoItemInfo NoInternetConnectionPopupInfo
-            {
-                get
-                {
-                    return _nointernetconnectionpopupInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SyncURL item.
-            /// </summary>
-            [RepositoryItem("36286d65-2ff6-46da-a413-4b9613b11b99")]
-            public virtual Ranorex.DivTag SyncURL
-            {
-                get
-                {
-                    return _syncurlInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SyncURL item info.
-            /// </summary>
-            [RepositoryItemInfo("36286d65-2ff6-46da-a413-4b9613b11b99")]
-            public virtual RepoItemInfo SyncURLInfo
-            {
-                get
-                {
-                    return _syncurlInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SynchronizationSuccessful item.
-            /// </summary>
-            [RepositoryItem("703373d8-ae06-4fe2-925e-9198a42390ed")]
-            public virtual Ranorex.H1Tag SynchronizationSuccessful
-            {
-                get
-                {
-                    return _synchronizationsuccessfulInfo.CreateAdapter<Ranorex.H1Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SynchronizationSuccessful item info.
-            /// </summary>
-            [RepositoryItemInfo("703373d8-ae06-4fe2-925e-9198a42390ed")]
-            public virtual RepoItemInfo SynchronizationSuccessfulInfo
-            {
-                get
-                {
-                    return _synchronizationsuccessfulInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CanvasSpinner item.
-            /// </summary>
-            [RepositoryItem("89fb4724-2717-48d3-a1a7-e5da52b35873")]
-            public virtual Ranorex.DivTag CanvasSpinner
-            {
-                get
-                {
-                    return _canvasspinnerInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CanvasSpinner item info.
-            /// </summary>
-            [RepositoryItemInfo("89fb4724-2717-48d3-a1a7-e5da52b35873")]
-            public virtual RepoItemInfo CanvasSpinnerInfo
-            {
-                get
-                {
-                    return _canvasspinnerInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ResendInviteSuccess item.
-            /// </summary>
-            [RepositoryItem("80e1ff94-feed-4ef8-aa7a-4a955f24bcb8")]
-            public virtual Ranorex.H4Tag ResendInviteSuccess
-            {
-                get
-                {
-                    return _resendinvitesuccessInfo.CreateAdapter<Ranorex.H4Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ResendInviteSuccess item info.
-            /// </summary>
-            [RepositoryItemInfo("80e1ff94-feed-4ef8-aa7a-4a955f24bcb8")]
-            public virtual RepoItemInfo ResendInviteSuccessInfo
-            {
-                get
-                {
-                    return _resendinvitesuccessInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PopupOKButton item.
-            /// </summary>
-            [RepositoryItem("fd579a89-f412-4372-a0b1-89703d468cd0")]
-            public virtual Ranorex.ButtonTag PopupOKButton
-            {
-                get
-                {
-                    return _popupokbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PopupOKButton item info.
-            /// </summary>
-            [RepositoryItemInfo("fd579a89-f412-4372-a0b1-89703d468cd0")]
-            public virtual RepoItemInfo PopupOKButtonInfo
-            {
-                get
-                {
-                    return _popupokbuttonInfo;
                 }
             }
 
@@ -872,6 +590,15 @@ namespace PrecisionRecruitment
             }
 
             /// <summary>
+            /// The Popups folder.
+            /// </summary>
+            [RepositoryFolder("77830d05-9d65-4ac7-aa7a-ea27144b718d")]
+            public virtual PrecisionRecruitmentRepositoryFolders.PopupsFolder Popups
+            {
+                get { return _popups; }
+            }
+
+            /// <summary>
             /// The ExtractsPage folder.
             /// </summary>
             [RepositoryFolder("7dffd009-38d7-4850-833d-59d10b7067e6")]
@@ -887,6 +614,15 @@ namespace PrecisionRecruitment
             public virtual PrecisionRecruitmentRepositoryFolders.LoginFormFolder LoginForm
             {
                 get { return _loginform; }
+            }
+
+            /// <summary>
+            /// The WorkflowRunner folder.
+            /// </summary>
+            [RepositoryFolder("aa2d1fd1-509b-477b-86b8-0e50dab1a07f")]
+            public virtual PrecisionRecruitmentRepositoryFolders.WorkflowRunnerFolder WorkflowRunner
+            {
+                get { return _workflowrunner; }
             }
 
             /// <summary>
@@ -4415,6 +4151,216 @@ namespace PrecisionRecruitment
         }
 
         /// <summary>
+        /// The PopupsFolder folder.
+        /// </summary>
+        [RepositoryFolder("77830d05-9d65-4ac7-aa7a-ea27144b718d")]
+        public partial class PopupsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _resendinvitesuccesspopupInfo;
+            RepoItemInfo _popupokbuttonInfo;
+            RepoItemInfo _nointernetconnectionpopupInfo;
+            RepoItemInfo _synchronizationsuccessfulInfo;
+            RepoItemInfo _userrolenotfoundpopupInfo;
+            RepoItemInfo _userrolenotfoundclosebuttonInfo;
+            RepoItemInfo _syncurlInfo;
+
+            /// <summary>
+            /// Creates a new Popups  folder.
+            /// </summary>
+            public PopupsFolder(RepoGenBaseFolder parentFolder) :
+                    base("Popups", "", parentFolder, 0, null, false, "77830d05-9d65-4ac7-aa7a-ea27144b718d", "")
+            {
+                _resendinvitesuccesspopupInfo = new RepoItemInfo(this, "ResendInviteSuccessPopup", "body//h4[@innertext='Success']", 30000, null, "80e1ff94-feed-4ef8-aa7a-4a955f24bcb8");
+                _popupokbuttonInfo = new RepoItemInfo(this, "PopupOKButton", "body//button[@innertext='OK']", 30000, null, "fd579a89-f412-4372-a0b1-89703d468cd0");
+                _nointernetconnectionpopupInfo = new RepoItemInfo(this, "NoInternetConnectionPopup", "body//h2[@innertext='No Internet Connection']", 30000, null, "86491237-c806-4739-8520-e52afb4caf5c");
+                _synchronizationsuccessfulInfo = new RepoItemInfo(this, "SynchronizationSuccessful", ".//div[#'root']//h1[@innertext~'Synchronization Successful']", 30000, null, "703373d8-ae06-4fe2-925e-9198a42390ed");
+                _userrolenotfoundpopupInfo = new RepoItemInfo(this, "UserRoleNotFoundPopup", "body/div[3]//h4[@innertext='NotFound']", 30000, null, "2ced943c-58c3-4c74-8175-93d86fa2d329");
+                _userrolenotfoundclosebuttonInfo = new RepoItemInfo(this, "UserRoleNotFoundCloseButton", "body/div[3]//button[@innertext='Close']", 30000, null, "2277bba7-33be-4fb8-8625-24e5b8f37387");
+                _syncurlInfo = new RepoItemInfo(this, "SyncURL", "body//div[@innertext~'https://'+$DOM+'/sync.html']", 30000, null, "36286d65-2ff6-46da-a413-4b9613b11b99");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("77830d05-9d65-4ac7-aa7a-ea27144b718d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteSuccessPopup item.
+            /// </summary>
+            [RepositoryItem("80e1ff94-feed-4ef8-aa7a-4a955f24bcb8")]
+            public virtual Ranorex.H4Tag ResendInviteSuccessPopup
+            {
+                get
+                {
+                    return _resendinvitesuccesspopupInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteSuccessPopup item info.
+            /// </summary>
+            [RepositoryItemInfo("80e1ff94-feed-4ef8-aa7a-4a955f24bcb8")]
+            public virtual RepoItemInfo ResendInviteSuccessPopupInfo
+            {
+                get
+                {
+                    return _resendinvitesuccesspopupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PopupOKButton item.
+            /// </summary>
+            [RepositoryItem("fd579a89-f412-4372-a0b1-89703d468cd0")]
+            public virtual Ranorex.ButtonTag PopupOKButton
+            {
+                get
+                {
+                    return _popupokbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PopupOKButton item info.
+            /// </summary>
+            [RepositoryItemInfo("fd579a89-f412-4372-a0b1-89703d468cd0")]
+            public virtual RepoItemInfo PopupOKButtonInfo
+            {
+                get
+                {
+                    return _popupokbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NoInternetConnectionPopup item.
+            /// </summary>
+            [RepositoryItem("86491237-c806-4739-8520-e52afb4caf5c")]
+            public virtual Ranorex.H2Tag NoInternetConnectionPopup
+            {
+                get
+                {
+                    return _nointernetconnectionpopupInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NoInternetConnectionPopup item info.
+            /// </summary>
+            [RepositoryItemInfo("86491237-c806-4739-8520-e52afb4caf5c")]
+            public virtual RepoItemInfo NoInternetConnectionPopupInfo
+            {
+                get
+                {
+                    return _nointernetconnectionpopupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SynchronizationSuccessful item.
+            /// </summary>
+            [RepositoryItem("703373d8-ae06-4fe2-925e-9198a42390ed")]
+            public virtual Ranorex.H1Tag SynchronizationSuccessful
+            {
+                get
+                {
+                    return _synchronizationsuccessfulInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SynchronizationSuccessful item info.
+            /// </summary>
+            [RepositoryItemInfo("703373d8-ae06-4fe2-925e-9198a42390ed")]
+            public virtual RepoItemInfo SynchronizationSuccessfulInfo
+            {
+                get
+                {
+                    return _synchronizationsuccessfulInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundPopup item.
+            /// </summary>
+            [RepositoryItem("2ced943c-58c3-4c74-8175-93d86fa2d329")]
+            public virtual Ranorex.H4Tag UserRoleNotFoundPopup
+            {
+                get
+                {
+                    return _userrolenotfoundpopupInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundPopup item info.
+            /// </summary>
+            [RepositoryItemInfo("2ced943c-58c3-4c74-8175-93d86fa2d329")]
+            public virtual RepoItemInfo UserRoleNotFoundPopupInfo
+            {
+                get
+                {
+                    return _userrolenotfoundpopupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundCloseButton item.
+            /// </summary>
+            [RepositoryItem("2277bba7-33be-4fb8-8625-24e5b8f37387")]
+            public virtual Ranorex.ButtonTag UserRoleNotFoundCloseButton
+            {
+                get
+                {
+                    return _userrolenotfoundclosebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserRoleNotFoundCloseButton item info.
+            /// </summary>
+            [RepositoryItemInfo("2277bba7-33be-4fb8-8625-24e5b8f37387")]
+            public virtual RepoItemInfo UserRoleNotFoundCloseButtonInfo
+            {
+                get
+                {
+                    return _userrolenotfoundclosebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SyncURL item.
+            /// </summary>
+            [RepositoryItem("36286d65-2ff6-46da-a413-4b9613b11b99")]
+            public virtual Ranorex.DivTag SyncURL
+            {
+                get
+                {
+                    return _syncurlInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SyncURL item info.
+            /// </summary>
+            [RepositoryItemInfo("36286d65-2ff6-46da-a413-4b9613b11b99")]
+            public virtual RepoItemInfo SyncURLInfo
+            {
+                get
+                {
+                    return _syncurlInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The ExtractsPageFolder folder.
         /// </summary>
         [RepositoryFolder("7dffd009-38d7-4850-833d-59d10b7067e6")]
@@ -4778,6 +4724,138 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _userlockedmessageInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WorkflowRunnerFolder folder.
+        /// </summary>
+        [RepositoryFolder("aa2d1fd1-509b-477b-86b8-0e50dab1a07f")]
+        public partial class WorkflowRunnerFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _canvasspinnerInfo;
+            RepoItemInfo _batteryskipbuttonInfo;
+            RepoItemInfo _batterydatafieldInfo;
+            RepoItemInfo _startinstructionsInfo;
+
+            /// <summary>
+            /// Creates a new WorkflowRunner  folder.
+            /// </summary>
+            public WorkflowRunnerFolder(RepoGenBaseFolder parentFolder) :
+                    base("WorkflowRunner", "", parentFolder, 0, null, false, "aa2d1fd1-509b-477b-86b8-0e50dab1a07f", "")
+            {
+                _canvasspinnerInfo = new RepoItemInfo(this, "CanvasSpinner", ".//div[#'ng-app']/?/?//div[@class='spinner']", 30000, null, "89fb4724-2717-48d3-a1a7-e5da52b35873");
+                _batteryskipbuttonInfo = new RepoItemInfo(this, "BatterySkipButton", ".//button[#'skip']", 30000, null, "5cafea12-8dac-456b-af85-df1546dac229");
+                _batterydatafieldInfo = new RepoItemInfo(this, "BatteryDataField", ".//textarea[#'results']", 30000, null, "41136832-35b1-4bfa-9dcb-92e2d111c24b");
+                _startinstructionsInfo = new RepoItemInfo(this, "StartInstructions", ".//button[#'instructions_button']", 30000, null, "4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("aa2d1fd1-509b-477b-86b8-0e50dab1a07f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CanvasSpinner item.
+            /// </summary>
+            [RepositoryItem("89fb4724-2717-48d3-a1a7-e5da52b35873")]
+            public virtual Ranorex.DivTag CanvasSpinner
+            {
+                get
+                {
+                    return _canvasspinnerInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CanvasSpinner item info.
+            /// </summary>
+            [RepositoryItemInfo("89fb4724-2717-48d3-a1a7-e5da52b35873")]
+            public virtual RepoItemInfo CanvasSpinnerInfo
+            {
+                get
+                {
+                    return _canvasspinnerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatterySkipButton item.
+            /// </summary>
+            [RepositoryItem("5cafea12-8dac-456b-af85-df1546dac229")]
+            public virtual Ranorex.ButtonTag BatterySkipButton
+            {
+                get
+                {
+                    return _batteryskipbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatterySkipButton item info.
+            /// </summary>
+            [RepositoryItemInfo("5cafea12-8dac-456b-af85-df1546dac229")]
+            public virtual RepoItemInfo BatterySkipButtonInfo
+            {
+                get
+                {
+                    return _batteryskipbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryDataField item.
+            /// </summary>
+            [RepositoryItem("41136832-35b1-4bfa-9dcb-92e2d111c24b")]
+            public virtual Ranorex.TextAreaTag BatteryDataField
+            {
+                get
+                {
+                    return _batterydatafieldInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryDataField item info.
+            /// </summary>
+            [RepositoryItemInfo("41136832-35b1-4bfa-9dcb-92e2d111c24b")]
+            public virtual RepoItemInfo BatteryDataFieldInfo
+            {
+                get
+                {
+                    return _batterydatafieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StartInstructions item.
+            /// </summary>
+            [RepositoryItem("4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55")]
+            public virtual Ranorex.Button StartInstructions
+            {
+                get
+                {
+                    return _startinstructionsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StartInstructions item info.
+            /// </summary>
+            [RepositoryItemInfo("4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55")]
+            public virtual RepoItemInfo StartInstructionsInfo
+            {
+                get
+                {
+                    return _startinstructionsInfo;
                 }
             }
         }

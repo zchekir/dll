@@ -20,6 +20,10 @@
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -3526,8 +3530,9 @@
       <id>ab2c1665-1439-489e-8d03-af44e0e360b1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="csv\GMLT_Extract.csv">
+    <None Include="csv\GMLT.csv">
       <id>0c540524-bbb7-46ae-aea3-81e0aada534a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="csv\PRD1752.csv">
       <id>568dbc08-0377-4410-a76a-afdc6fe47e53</id>
@@ -3864,8 +3869,9 @@
       <id>abfa05ce-faaf-4835-ac0f-a9de2c65e92c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="rawData\GMLT_Data.txt">
+    <None Include="rawData\GMLT.txt">
       <id>d1f075d2-cb3f-4a5c-9709-c7d054e4c342</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="rawData\PartialCBB.txt">
       <id>143f4843-56e6-4f29-9a89-63cbece30a3f</id>

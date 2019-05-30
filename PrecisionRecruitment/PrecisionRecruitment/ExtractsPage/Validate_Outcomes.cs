@@ -42,7 +42,7 @@ namespace PrecisionRecruitment.ExtractsPage
         public Validate_Outcomes()
         {
             dbUsername = "dwood@cogstate.com";
-            dbPassword = "913172DMW#";
+            dbPassword = "";
             fileName = "40yo_Tier3";
             DBServer = "cgst-qcpd.database.windows.net";
             Database = "cgst-api";

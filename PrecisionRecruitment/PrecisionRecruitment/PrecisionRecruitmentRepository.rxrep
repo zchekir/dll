@@ -1203,6 +1203,76 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 			</folder>
 			<folder
 			capname="unknown"
+			id="77830d05-9d65-4ac7-aa7a-ea27144b718d"
+			isrooted="False"
+			name="Popups"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,h4tag"
+				capname="h4tag"
+				id="80e1ff94-feed-4ef8-aa7a-4a955f24bcb8"
+				name="ResendInviteSuccessPopup"
+				refimgid="25a26e92-9ce4-4091-8308-28a6a8497b7f"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//h4[@innertext='Success']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="fd579a89-f412-4372-a0b1-89703d468cd0"
+				name="PopupOKButton"
+				refimgid="6a8d9f99-a042-4b46-a4ae-7e14ea6fa4de"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//button[@innertext='OK']
+				</item>
+				<item
+				addcaps="unknown,webelement,h2tag"
+				capname="h2tag"
+				id="86491237-c806-4739-8520-e52afb4caf5c"
+				name="NoInternetConnectionPopup"
+				refimgid="563af19c-8fea-45a9-b238-d1d2be6dfe2e"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//h2[@innertext='No Internet Connection']
+				</item>
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="703373d8-ae06-4fe2-925e-9198a42390ed"
+				name="SynchronizationSuccessful"
+				refimgid="cd9d6fc9-5d9d-4648-a9bf-f0f8778b6624"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'root']//h1[@innertext~'Synchronization Successful']
+				</item>
+				<item
+				addcaps="unknown,webelement,h4tag"
+				capname="h4tag"
+				id="2ced943c-58c3-4c74-8175-93d86fa2d329"
+				name="UserRoleNotFoundPopup"
+				refimgid="652c8b90-ceb0-4f50-ab62-7d0d80424ac3"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[3]//h4[@innertext='NotFound']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="2277bba7-33be-4fb8-8625-24e5b8f37387"
+				name="UserRoleNotFoundCloseButton"
+				refimgid="8d07715b-14bf-4104-bfd1-bafe87a6670a"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body/div[3]//button[@innertext='Close']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="36286d65-2ff6-46da-a413-4b9613b11b99"
+				name="SyncURL"
+				refimgid="5f9c2b34-bf63-40f3-bda2-8145e9b3c8d1"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]/body//div[@innertext~'https://'+$DOM+'/sync.html']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
 			id="7dffd009-38d7-4850-833d-59d10b7067e6"
 			isrooted="False"
 			name="ExtractsPage"
@@ -1322,6 +1392,49 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="5be7898c-f0d4-472d-8b9b-bf48a45a7107"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']//div[@innertext~'You''ve exceeded the maximum']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="aa2d1fd1-509b-477b-86b8-0e50dab1a07f"
+			isrooted="False"
+			name="WorkflowRunner"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="89fb4724-2717-48d3-a1a7-e5da52b35873"
+				name="CanvasSpinner"
+				refimgid="ddfb8710-0243-40e2-88f6-800ab9d3a432"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'ng-app']/?/?//div[@class='spinner']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="5cafea12-8dac-456b-af85-df1546dac229"
+				name="BatterySkipButton"
+				refimgid="3e5f0113-016c-4723-9732-f7a3dd5da12a"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//button[#'skip']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'skip']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="41136832-35b1-4bfa-9dcb-92e2d111c24b"
+				name="BatteryDataField"
+				refimgid="eabc033b-f95b-4b05-88b8-4017cd9d4a91"
+				refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//textarea[#'results']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//textarea[#'results']
+				</item>
+				<item
+				capname="button"
+				id="4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55"
+				name="StartInstructions"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//button[#'instructions_button']
 				</item>
 			</folder>
 			<folder
@@ -2082,51 +2195,6 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//ul/li/a[@innertext='PREVIOUS']
 			</item>
 			<item
-			capname="button"
-			id="4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55"
-			name="StartInstructions"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//button[#'instructions_button']
-			</item>
-			<item
-			addcaps="unknown,webelement,textareatag"
-			capname="textareatag"
-			id="41136832-35b1-4bfa-9dcb-92e2d111c24b"
-			name="BatteryDataField"
-			refimgid="eabc033b-f95b-4b05-88b8-4017cd9d4a91"
-			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//textarea[#'results']"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//textarea[#'results']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="5cafea12-8dac-456b-af85-df1546dac229"
-			name="BatterySkipButton"
-			refimgid="3e5f0113-016c-4723-9732-f7a3dd5da12a"
-			refpath="/dom[@domain='cgst-qc-duo.cogstate.com']//button[#'skip']"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//button[#'skip']
-			</item>
-			<item
-			addcaps="unknown,webelement,h4tag"
-			capname="h4tag"
-			id="2ced943c-58c3-4c74-8175-93d86fa2d329"
-			name="UserRoleNotFoundPopup"
-			refimgid="652c8b90-ceb0-4f50-ab62-7d0d80424ac3"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[3]//h4[@innertext='NotFound']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="2277bba7-33be-4fb8-8625-24e5b8f37387"
-			name="UserRoleNotFoundCloseButton"
-			refimgid="8d07715b-14bf-4104-bfd1-bafe87a6670a"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[3]//button[@innertext='Close']
-			</item>
-			<item
 			addcaps="unknown,webelement,buttontag"
 			capname="button"
 			capnameuser="buttontag"
@@ -2135,60 +2203,6 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 			refimgid="078599ea-6173-492a-80f3-22dbd39315cc"
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]/body/div/tag/div/div[3]//div/button[@ng-click&gt;'save']
-			</item>
-			<item
-			addcaps="unknown,webelement,h2tag"
-			capname="h2tag"
-			id="86491237-c806-4739-8520-e52afb4caf5c"
-			name="NoInternetConnectionPopup"
-			refimgid="563af19c-8fea-45a9-b238-d1d2be6dfe2e"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body//h2[@innertext='No Internet Connection']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="36286d65-2ff6-46da-a413-4b9613b11b99"
-			name="SyncURL"
-			refimgid="5f9c2b34-bf63-40f3-bda2-8145e9b3c8d1"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body//div[@innertext~'https://'+$DOM+'/sync.html']
-			</item>
-			<item
-			addcaps="unknown,webelement,h1tag"
-			capname="h1tag"
-			id="703373d8-ae06-4fe2-925e-9198a42390ed"
-			name="SynchronizationSuccessful"
-			refimgid="cd9d6fc9-5d9d-4648-a9bf-f0f8778b6624"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'root']//h1[@innertext~'Synchronization Successful']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="89fb4724-2717-48d3-a1a7-e5da52b35873"
-			name="CanvasSpinner"
-			refimgid="ddfb8710-0243-40e2-88f6-800ab9d3a432"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'ng-app']/?/?//div[@class='spinner']
-			</item>
-			<item
-			addcaps="unknown,webelement,h4tag"
-			capname="h4tag"
-			id="80e1ff94-feed-4ef8-aa7a-4a955f24bcb8"
-			name="ResendInviteSuccess"
-			refimgid="25a26e92-9ce4-4091-8308-28a6a8497b7f"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body//h4[@innertext='Success']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="fd579a89-f412-4372-a0b1-89703d468cd0"
-			name="PopupOKButton"
-			refimgid="6a8d9f99-a042-4b46-a4ae-7e14ea6fa4de"
-			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body//button[@innertext='OK']
 			</item>
 			<basepath>
 				/dom[@domain=$DOM]

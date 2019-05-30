@@ -90,19 +90,19 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.NoInternetConnectionPopup'", repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo, new ActionTimeout(10000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.Popups.NoInternetConnectionPopup'", repo.CogstateSolutionPlatform.Popups.NoInternetConnectionPopupInfo, new ActionTimeout(10000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.Popups.NoInternetConnectionPopupInfo.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.NoInternetConnectionPopup'.", repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.CogstateSolutionPlatform.NoInternetConnectionPopupInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.Popups.NoInternetConnectionPopup'.", repo.CogstateSolutionPlatform.Popups.NoInternetConnectionPopupInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.CogstateSolutionPlatform.Popups.NoInternetConnectionPopupInfo);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$DOM) on item 'CogstateSolutionPlatform.SyncURL'.", repo.CogstateSolutionPlatform.SyncURLInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.SyncURLInfo, "InnerText", DOM);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$DOM) on item 'CogstateSolutionPlatform.Popups.SyncURL'.", repo.CogstateSolutionPlatform.Popups.SyncURLInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Popups.SyncURLInfo, "InnerText", DOM);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'/sync.html') on item 'CogstateSolutionPlatform.SyncURL'.", repo.CogstateSolutionPlatform.SyncURLInfo, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.SyncURLInfo, "InnerText", "/sync.html");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'/sync.html') on item 'CogstateSolutionPlatform.Popups.SyncURL'.", repo.CogstateSolutionPlatform.Popups.SyncURLInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Popups.SyncURLInfo, "InnerText", "/sync.html");
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "Data Upload failed screen is displayed as expected", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));

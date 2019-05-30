@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.ResendInviteSuccess'.", repo.CogstateSolutionPlatform.ResendInviteSuccessInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatform.ResendInviteSuccessInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.Popups.ResendInviteSuccessPopup'.", repo.CogstateSolutionPlatform.Popups.ResendInviteSuccessPopupInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.CogstateSolutionPlatform.Popups.ResendInviteSuccessPopupInfo);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButton' at 22;21.", repo.CogstateSolutionPlatform.AddBatteryPage.BatterySettingsSaveButtonInfo, new RecordItemIndex(1));

@@ -112,7 +112,7 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.CogstateSolutionPlatform.UserRoleNotFoundPopupInfo, repo.CogstateSolutionPlatform.UserRoleNotFoundCloseButtonInfo);
+            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.CogstateSolutionPlatform.Popups.UserRoleNotFoundPopupInfo, repo.CogstateSolutionPlatform.Popups.UserRoleNotFoundCloseButtonInfo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.AddRoleButton' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.AddRoleButtonInfo, new RecordItemIndex(1));
@@ -133,7 +133,7 @@ namespace PrecisionRecruitment.UsersPage
             Report.Log(ReportLevel.Info, "Delay", "Slight Delay waiting for Role to save\r\nWaiting for 7s.", new RecordItemIndex(5));
             Delay.Duration(7000, false);
             
-            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.CogstateSolutionPlatform.UserRoleNotFoundPopupInfo, repo.CogstateSolutionPlatform.UserRoleNotFoundCloseButtonInfo);
+            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.CogstateSolutionPlatform.Popups.UserRoleNotFoundPopupInfo, repo.CogstateSolutionPlatform.Popups.UserRoleNotFoundCloseButtonInfo);
             Delay.Milliseconds(0);
             
         }
