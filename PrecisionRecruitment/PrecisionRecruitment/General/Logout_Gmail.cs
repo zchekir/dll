@@ -94,6 +94,10 @@ namespace PrecisionRecruitment.General
             Host.Current.CloseApplication(repo.GoogleSignin.Self, new Duration(0));
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'GoogleAccount'.", repo.GoogleAccount.SelfInfo, new RecordItemIndex(4));
+            Host.Current.CloseApplication(repo.GoogleAccount.Self, new Duration(0));
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

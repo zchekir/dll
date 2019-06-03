@@ -28,9 +28,21 @@ namespace engine.Helpers
 	/// </summary>
 	public class AuthJSONRequest
 	{
+		/// <summary>
+		/// External users key for accessing the API
+		/// </summary>
 		public string key { get; set; }
+		
+		/// <summary>
+		/// External users secret for accessing the API
+		/// </summary>
 		public string secret { get; set; }
 		
+		/// <summary>
+		/// Creates a new autentication request object
+		/// </summary>
+		/// <param name="key"></param>
+		/// <param name="secret"></param>
 		public AuthJSONRequest(string key, string secret)
 		{
 			this.key = key;
@@ -58,15 +70,57 @@ namespace engine.Helpers
 	/// </summary>
 	public class AssessmentAttemptJSONRequest
 	{
+		/// <summary>
+		/// External ID for the participant we want to send through the API
+		/// </summary>
 		public string externalId { get; set; }
+		
+		/// <summary>
+		/// Date of Birth for the participant we want to send through the API
+		/// </summary>
 		public string dob { get; set; }
+		
+		/// <summary>
+		/// Gender code for the participant we want to send through the API
+		/// </summary>
 		public string genderCode { get; set; }
+		
+		/// <summary>
+		/// Language which should be displayed
+		/// </summary>
 		public string localityCode { get; set; }
+		
+		/// <summary>
+		/// Message to post if an error occurs
+		/// </summary>
 		public string postError { get; set; }
+		
+		/// <summary>
+		/// Code for the visit we want to run
+		/// </summary>
 		public string visitSessionCode { get; set; }
+		
+		/// <summary>
+		/// Message to post upon completion
+		/// </summary>
 		public string post { get; set; }
+		
+		/// <summary>
+		/// The id of the supervisor condicting the test
+		/// </summary>
 		public string supervisorId { get; set; }
 		
+		/// <summary>
+		/// Object for creating a new workflow request
+		/// </summary>
+		/// <param name="externalId"></param>
+		/// <param name="dob"></param>
+		/// <param name="genderCode"></param>
+		/// <param name="localityCode"></param>
+		/// <param name="postError"></param>
+		/// <param name="post"></param>
+		/// <param name="visitSessionCode"></param>
+		/// <param name="supervisorId"></param>
 		public AssessmentAttemptJSONRequest(string externalId, string dob, string genderCode, string localityCode,
 		                                    string postError, string post, string visitSessionCode, string supervisorId)
 		{
@@ -82,13 +136,28 @@ namespace engine.Helpers
 	}
 	
 	/// <summary>
-	/// CLass definition for JSON object which is received after requesting a testing URL
+	/// Class definition for JSON object which is received after requesting a testing URL
 	/// </summary>
 	public class AssessmentAttemptJSONResponse
 	{
+		/// <summary>
+		/// Returned authtoken from API following a workflow instance request
+		/// </summary>
 		public string workflowAuthToken { get; set; }
+		
+		/// <summary>
+		/// The returend locality code
+		/// </summary>
 		public string localityCode { get; set; }
+		
+		/// <summary>
+		/// Returned URL for running the battery
+		/// </summary>
 		public string url { get; set; }
+		
+		/// <summary>
+		/// Unique ideitifer to the test
+		/// </summary>
 		public string testIdentifier { get; set; }
 		
 		public AssessmentAttemptJSONResponse()
@@ -97,8 +166,14 @@ namespace engine.Helpers
 		}
 	}
 	
+	/// <summary>
+	/// Response object for the test qualification status
+	/// </summary>
 	public class QualificationStatusJSONResponse
 	{
+		/// <summary>
+		/// Returned qualificaiton status
+		/// </summary>
 		public string assessmentAttemptQualificationStatus { get; set; }
 		
 		public QualificationStatusJSONResponse()

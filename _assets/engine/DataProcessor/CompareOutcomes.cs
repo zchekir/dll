@@ -30,12 +30,15 @@ namespace engine.DataProcessor
         // You can use the "Insert New User Code Method" functionality from the context menu,
         // to add a new method with the attribute [UserCodeMethod].
         
+        /// <summary>
+        /// Public variable used to store the Current extract value found
+        /// </summary>
         public static string CurrentValue;
         
 		
         /// <summary>
-        /// This method will loop through the CSV datatable looking for the specified outcome which
-        /// matches the testcode and round number passed through
+        /// This method will loop through the CSV datatable (must be loaded in by using the CSV utility first)
+        /// looking for the specified outcome which matches the testcode and round number passed through
         /// </summary>
         /// <param name="testCode">The test code we want to find in the CSV datatable</param>
         /// <param name="round">The round for the current test code we want to find</param>
@@ -115,14 +118,17 @@ namespace engine.DataProcessor
  				case "TestCompletionPass":
  				case "TestPerformancePass":
 				case "TestIntegrityPass":
+				case "TotalCorrect":
 				case "TotalCorrectExclPant":
 				case "TotalAnticipatory":
+				case "TotalErrors":
 				case "TotalPost":
 			    case "TotalResponses":
 				case "TotalTrials":
 				case "TotalMaxOut":
 				case "TotalCorrectFoils":
 				case "LegalErrors":
+				case "RuleBreakErrors":
 				case "ReturnToHead":
 				case "PerseverativeErrors":
 				case "WithinSearchErrors":
@@ -141,8 +147,9 @@ namespace engine.DataProcessor
         			break;
         		
 				/*The following Outcomes may contain NULL or a digit with decimal places
- 				*Check for NULL values before formatting the scores down to 7 decimal places and comparing*/
+ 				*Check for NULL values before formatting the scores down to 6 decimal places and comparing*/
  			    case "PrimaryOutcome":
+ 				case "TestDuration":
         		case "ReactionTime":
         		case "RawReactionTime":
         		case "RTVariability":
@@ -167,7 +174,7 @@ namespace engine.DataProcessor
         				if (databaseValue == "")
         					match = true;
         			}
-        			else if (Math.Round(double.Parse(extractValue),7) == Math.Round(double.Parse(databaseValue),7))
+        			else if (Math.Round(double.Parse(extractValue),6) == Math.Round(double.Parse(databaseValue),6))
         				match = true;
         			
         			break;

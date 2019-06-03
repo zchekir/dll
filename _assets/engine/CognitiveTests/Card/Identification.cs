@@ -39,7 +39,7 @@ namespace engine.CognitiveTests.Card
         {
         	//initialise variables
 			int trialNumber = 0;
-			int x = 355, y = 180, width = 350, height = 420; //Crop entire card
+			//int x = 355, y = 180, width = 350, height = 420; //Crop entire card
 			int xCrop = 380, yCrop = 210, widthCrop = 35, heightCrop = 115; //Crop only card number and suit
 			int tPos = 0, tNeg = 0;
 			int startDelay = 5000;

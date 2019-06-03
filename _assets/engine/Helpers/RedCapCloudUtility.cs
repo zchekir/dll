@@ -30,11 +30,5 @@ namespace engine.Helpers
         // to add a new method with the attribute [UserCodeMethod].
         
         
-        /// <summary>
-        /// This is a placeholder text. Please describe the purpose of the
-        /// user code method here. The method is published to the user code library
-        /// within a user code collection.
-        /// </summary>
-
     }
 }

@@ -62,7 +62,8 @@ namespace engine.Helpers
 			
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 
-			//Send the query to the database and store the results in a DataTable
+			//Send the query to the database and store the results in a DataTable, the loop here will allow for the situation
+			//where the results take longer than usual to be processed and appear in the Database.
 			do 
 			{
 				Delay.Duration(30000);

@@ -207,7 +207,7 @@ namespace engine.CognitiveTests.Card
             List<Bitmap> shownCards = new List<Bitmap>();
             Bitmap cardDisplayed;
             Bitmap cardCorner;
-            int x = 355, y = 180, width = 350, height = 420;
+            //int x = 355, y = 180, width = 350, height = 420;
             int xCrop = 380, yCrop = 210, widthCrop = 35, heightCrop = 115; //Crop only card number and suit
             int trialNumber = 0;
             int startDelay = 5000;
