@@ -180,7 +180,7 @@ namespace engine.DataProcessor
         			break;
 
 				/*The following outcomes will be randomly generated or depend on the date the test is run
- 				 *we do not need to compare these values for now*/         			
+ 				 *we do not need to compare these values for now other wise we end up with false fails*/         			
  				case "IQNumber":
  			    case "Age":
  				case "SessionID":
@@ -189,8 +189,7 @@ namespace engine.DataProcessor
  					
  					break;
  			
-
-        			
+	
         		/*Compare all other outcomes directly, no formatting needed*/       			
         		default:
         			if (extractValue == databaseValue) 

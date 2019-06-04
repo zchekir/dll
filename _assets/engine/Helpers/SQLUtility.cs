@@ -76,8 +76,6 @@ namespace engine.Helpers
 				Report.Info("Rows found by query: " + dt.Rows.Count.ToString());
 				
 			} while (dt.Rows.Count < 1);
-			
-			
 								
 		}
         

@@ -110,13 +110,13 @@ namespace PrecisionRecruitment.AddVisitSchedulePage
         { get { return repo.CogstateSolutionPlatform.AddVisitSchedulePage.DataLossMitigationToggleInfo.GetDLMOn(new Rectangle(0, 0, 48, 24)); } }
 
         Imaging.FindOptions DataLossMitigationToggle_DLMOn_Options
-        { get { return Imaging.FindOptions.Parse("0.98;None;0,0,48,24;True;10000000;0ms"); } }
+        { get { return Imaging.FindOptions.Parse("0.9;None;0,0,48,24;True;10000000;0ms"); } }
 
         CompressedImage DataLossNotificationToggle_DLNOn
         { get { return repo.CogstateSolutionPlatform.AddVisitSchedulePage.DataLossNotificationToggleInfo.GetDLNOn(new Rectangle(0, 0, 48, 24)); } }
 
         Imaging.FindOptions DataLossNotificationToggle_DLNOn_Options
-        { get { return Imaging.FindOptions.Parse("0.98;None;0,0,48,24;True;10000000;0ms"); } }
+        { get { return Imaging.FindOptions.Parse("0.9;None;0,0,48,24;True;10000000;0ms"); } }
 
 #endregion
     }
