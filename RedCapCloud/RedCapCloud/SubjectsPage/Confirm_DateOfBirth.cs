@@ -89,14 +89,17 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.ConfirmDOBField' at 66;12.", repo.REDCapCloud.SubjectsPage.ConfirmDOBFieldInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'REDCapCloud.SubjectsPage.ConfirmDOBField'", repo.REDCapCloud.SubjectsPage.ConfirmDOBFieldInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.REDCapCloud.SubjectsPage.ConfirmDOBFieldInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.ConfirmDOBField' at 66;12.", repo.REDCapCloud.SubjectsPage.ConfirmDOBFieldInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.ConfirmDOBField.Click("66;12");
             Delay.Milliseconds(0);
             
             EnterDate();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(3));
             Keyboard.Press("{Return}", 100);
             Delay.Milliseconds(0);
             
