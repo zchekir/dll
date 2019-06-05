@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.ExtractsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown' at 905;16.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown.Click("905;16", 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown' at CenterLeft.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdownInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown.Click(Location.CenterLeft, 1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Standard Extract - Precision Recruitment' with focus on 'CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdown'.", repo.CogstateSolutionPlatform.ExtractsPage.ReportTypeDropdownInfo, new RecordItemIndex(1));
