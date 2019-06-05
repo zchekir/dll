@@ -219,8 +219,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="037aeee4-7133-450a-b13e-79f6464da1e0"
-			maxrange="4"
-			minrange="4"
+			maxrange="0"
+			minrange="0"
 			name="Check_Platform_Features">
 			</smartfoldernode>
 			<testmodule
@@ -710,20 +710,6 @@ rxversion="8.2">
 			id="0e670364-b439-447b-ba93-b4bd5eeb0366"
 			name="Click_Modify_Real_Test"
 			ref="15158e27-62c6-421e-8f81-285f7498807a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="0eed5a02-c814-4301-895d-210357abea1c"
-			name="Click_Logout"
-			ref="fd6a4ea1-d179-4dbb-a14a-289e7cdf9c18"
 			type="Recording">
 				<databinding>
 					<var
@@ -5136,8 +5122,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="4"
-			minrange="4"
+			maxrange="0"
+			minrange="0"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
 			<smartfoldernode
@@ -6874,8 +6860,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="a54e2f22-375f-4fb2-838a-084cd4471e50"
-			maxrange="4"
-			minrange="4"
+			maxrange="0"
+			minrange="0"
 			name="Create_Regression_Study">
 			</smartfoldernode>
 			<testmodule
@@ -7023,31 +7009,6 @@ rxversion="8.2">
 					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
 					variablename="Password">
-					</var>
-				</databinding>
-			</modulegroup>
-			<modulegroup
-			id="a7eda749-694b-4417-baa7-4b5c412f71ed"
-			name="Add_User"
-			ref="ea0a5aab-0fec-4fc4-b483-f67dc998707c">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="e8d0c5b8-3795-41df-9638-3065b33ef76e"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="eb16cfdf-12de-4e2e-a85b-369d59f328bc"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="Username"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
-					variableid="b5ea3e04-b117-48dc-a9d4-981c6369b8ca"
-					variablename="Username">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -8709,31 +8670,6 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
-			<modulegroup
-			id="d6eb5646-cad2-432b-a090-54a88ae7f345"
-			name="Login"
-			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
-				<databinding>
-					<var
-					dataname="Email"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="Email">
-					</var>
-					<var
-					dataname="Password"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="Password">
-					</var>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testmodule
 			id="d6f490c3-40eb-41c7-ad6f-c45f369ee0e2"
 			name="Open_Browser"
@@ -12648,19 +12584,7 @@ rxversion="8.2">
 									id="d8499997-7a62-4293-83de-9e25e0d61e1d"
 									name="Login">
 									</modulegroup>
-									<modulegroup
-									id="a7eda749-694b-4417-baa7-4b5c412f71ed"
-									name="Add_User">
-									</modulegroup>
-									<testmodule
-									id="0eed5a02-c814-4301-895d-210357abea1c"
-									name="Click_Logout">
-									</testmodule>
 								</setup>
-								<modulegroup
-								id="d6eb5646-cad2-432b-a090-54a88ae7f345"
-								name="Login">
-								</modulegroup>
 								<testmodule
 								id="8e5d86b6-5fc3-4641-9af2-09fcadff6cde"
 								name="Click_Users_Menu">
@@ -13509,6 +13433,12 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			</testcontainer>
+			<testcontainer
+			id="30d53fa6-a046-4087-a710-ee059a17da7a">
+			</testcontainer>
+			<testcontainer
+			id="36aba7d9-425f-4e83-8148-9fb26d9cf42d">
 			</testcontainer>
 			<testcontainer
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
