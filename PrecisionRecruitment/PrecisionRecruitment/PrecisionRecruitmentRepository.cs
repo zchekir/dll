@@ -7411,6 +7411,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _forgotpasswordlinkInfo;
             RepoItemInfo _accountbuttonInfo;
             RepoItemInfo _platformsupportemailInfo;
+            RepoItemInfo _searchinboxInfo;
 
             /// <summary>
             /// Creates a new GmailInbox  folder.
@@ -7427,6 +7428,7 @@ namespace PrecisionRecruitment
                 _forgotpasswordlinkInfo = new RepoItemInfo(this, "ForgotPasswordLink", ".//div//a[@innertext~$DOM]", 30000, null, "a1bd28f9-fa49-4070-b113-d58014026934");
                 _accountbuttonInfo = new RepoItemInfo(this, "AccountButton", ".//header[#'gb']/div[2]/div[3]//a[@href~'^https://accounts\\.google\\.c']", 30000, null, "2468f073-1e7c-48a5-bbdc-af4e475eb9b9");
                 _platformsupportemailInfo = new RepoItemInfo(this, "PlatformSupportEmail", ".//span/span[@innertext~'Cogstate user account created']", 30000, null, "105c6084-d31d-4f61-89ad-61d64d052748");
+                _searchinboxInfo = new RepoItemInfo(this, "SearchInbox", ".//form[#'aso_search_form_anchor']/?/?/input", 30000, null, "4881023c-d0e2-4218-a317-de8c83bee79c");
             }
 
             /// <summary>
@@ -7666,6 +7668,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _platformsupportemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SearchInbox item.
+            /// </summary>
+            [RepositoryItem("4881023c-d0e2-4218-a317-de8c83bee79c")]
+            public virtual Ranorex.InputTag SearchInbox
+            {
+                get
+                {
+                    return _searchinboxInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SearchInbox item info.
+            /// </summary>
+            [RepositoryItemInfo("4881023c-d0e2-4218-a317-de8c83bee79c")]
+            public virtual RepoItemInfo SearchInboxInfo
+            {
+                get
+                {
+                    return _searchinboxInfo;
                 }
             }
         }

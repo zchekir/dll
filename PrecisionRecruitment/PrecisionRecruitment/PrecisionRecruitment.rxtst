@@ -177,8 +177,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="02dd3a0b-d47d-4cc0-97fc-8abfc3480edb"
-			maxrange="5"
-			minrange="5"
+			maxrange="6"
+			minrange="6"
 			name="Minimum_VisitSchedule_Fields">
 			</testcase>
 			<testmodule
@@ -1590,8 +1590,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="211d871d-dd86-4bac-a5be-795d82e694e8"
-			maxrange="5"
-			minrange="5"
+			maxrange="6"
+			minrange="6"
 			name="Minimum_Battery_Length">
 			</testcase>
 			<testmodule
@@ -4152,6 +4152,20 @@ rxversion="8.2">
 			id="616eb3cc-0d65-4282-88a8-3e9a0950bc7c"
 			name="setup">
 			</setup>
+			<testmodule
+			id="61b9a66e-3919-4888-b48f-f355a58d94af"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c"
 			name="Reprocess_Partial_Assessment">
@@ -4811,8 +4825,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="71492528-24d6-4134-8eeb-4c2f95965fdf"
-			maxrange="5"
-			minrange="5"
+			maxrange="6"
+			minrange="6"
 			name="Minimum_Workflow_Fields">
 			</testcase>
 			<testmodule
@@ -5951,6 +5965,20 @@ rxversion="8.2">
 			name="setup">
 			</setup>
 			<testmodule
+			id="879ba654-c01e-4ff0-aa1e-17d9dda8be7a"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="879ee545-273d-453b-a7bc-751aac3b6061"
 			name="Validate_LoggedIn_User"
 			ref="5a84ea2c-c357-4c32-a73b-c982fc0f68ed"
@@ -6669,6 +6697,26 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9fe0ceb1-aee1-496c-a443-8fbb7e1f0756"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="2b31763d-aa10-4b6f-8085-db66215f3694"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9ff49926-26d3-467a-9200-f74be1656415"
 			name="Enter_ForgotPassword_Email"
 			ref="d45bac3d-f62c-44bf-a3c6-e9139187e597"
@@ -6917,6 +6965,35 @@ rxversion="8.2">
 						<rightvalue>
 							<simplevaluesource
 							value="CBB Template">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="a629f898-f330-4404-bdaa-0a34aafb84ac"
+			maxrange="184"
+			minrange="183"
+			name="FTTemplate_Loop_Controller">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="FT Template">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -9173,6 +9250,26 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e305fd74-0e0f-42bc-9f0d-5f811d7af0e2"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="2b31763d-aa10-4b6f-8085-db66215f3694"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e3f5a35c-93da-460e-9d14-00a77c6383b9"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -9247,8 +9344,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="e434a354-c0d1-4e98-be05-307e7d1c7fe7"
-			maxrange="5"
-			minrange="5"
+			maxrange="6"
+			minrange="6"
 			name="Minimum_Study_Length">
 			</testcase>
 			<testmodule
@@ -12401,6 +12498,26 @@ rxversion="8.2">
 									name="Validate_BatteryTemplate_Configured">
 									</testmodule>
 								</smartfoldernode>
+								<smartfoldernode
+								id="a629f898-f330-4404-bdaa-0a34aafb84ac"
+								name="FTTemplate_Loop_Controller">
+									<testmodule
+									id="879ba654-c01e-4ff0-aa1e-17d9dda8be7a"
+									name="Click_AddTest_Button">
+									</testmodule>
+									<testmodule
+									id="9fe0ceb1-aee1-496c-a443-8fbb7e1f0756"
+									name="Select_CogstateTest">
+									</testmodule>
+									<testmodule
+									id="61b9a66e-3919-4888-b48f-f355a58d94af"
+									name="Click_SaveBatteryTemplate_Properties">
+									</testmodule>
+									<testmodule
+									id="e305fd74-0e0f-42bc-9f0d-5f811d7af0e2"
+									name="Validate_BatteryTemplate_Configured">
+									</testmodule>
+								</smartfoldernode>
 							</testcase>
 							<testcase
 							id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -13132,7 +13249,7 @@ rxversion="8.2">
 		<DataSource
 		id="2b31763d-aa10-4b6f-8085-db66215f3694"
 		includefile="Checked"
-		lastknownrowcount="183"
+		lastknownrowcount="186"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -13150,7 +13267,7 @@ rxversion="8.2">
 		<DataSource
 		id="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
 		includefile="Checked"
-		lastknownrowcount="6"
+		lastknownrowcount="7"
 		name="DataConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -13435,12 +13552,6 @@ rxversion="8.2">
 			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
 			</testcontainer>
 			<testcontainer
-			id="30d53fa6-a046-4087-a710-ee059a17da7a">
-			</testcontainer>
-			<testcontainer
-			id="36aba7d9-425f-4e83-8148-9fb26d9cf42d">
-			</testcontainer>
-			<testcontainer
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
 			</testcontainer>
 			<testcontainer
@@ -13490,6 +13601,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
+			</testcontainer>
+			<testcontainer
+			id="a629f898-f330-4404-bdaa-0a34aafb84ac">
 			</testcontainer>
 			<testcontainer
 			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
