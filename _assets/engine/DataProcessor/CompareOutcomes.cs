@@ -133,6 +133,7 @@ namespace engine.DataProcessor
 				case "PerseverativeErrors":
 				case "WithinSearchErrors":
 				case "GMLTIndex":
+				case "TestSubset":
 
 					//First check if the extract value is NULL, if so, compare to the database value. Otherwise, check to see if
 					//both values are the same i.e TestIntegrity Pass for Detection
@@ -168,6 +169,7 @@ namespace engine.DataProcessor
         		case "AltStandardScoreZ":
 				case "AltStandardScoreT":
 				case "AlternateOutcome":
+ 				case "SATScore":
         			//Check if NULL and compare, otherwise format and then compare
         			if (extractValue == "NULL")
         			{
@@ -184,7 +186,9 @@ namespace engine.DataProcessor
  				case "IQNumber":
  			    case "Age":
  				case "SessionID":
- 				case "SessionDate":					
+ 				case "SessionDate":
+ 				case "SessionTime":
+ 				case "TestIdentifier":
  					match = true;
  					
  					break;
@@ -248,7 +252,7 @@ namespace engine.DataProcessor
         			//want to log a message in the report without the Success/Failure log
         			if(CheckOutcomesMatch(currentOutcome, extractValue, databaseValue))
         				if (currentOutcome == "IQNumber" || currentOutcome == "SessionID" || currentOutcome == "SessionDate"
-        				    || currentOutcome == "Age") {
+        				    || currentOutcome == "Age" || currentOutcome == "SessionTime" || currentOutcome == "TestIdentifier") {
         				Report.Info("Outcome difference expected, no comparison needed");
         			}
         			else {

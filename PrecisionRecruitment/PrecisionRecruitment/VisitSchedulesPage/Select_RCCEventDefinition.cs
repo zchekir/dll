@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.AddSitePage
+namespace PrecisionRecruitment.VisitSchedulesPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_SiteEnrolment recording.
+    ///The Select_RCCEventDefinition recording.
     /// </summary>
-    [TestModule("5cf2480c-8c1c-46e3-b86b-f262a9c55f81", ModuleType.Recording, 1)]
-    public partial class Enter_SiteEnrolment : ITestModule
+    [TestModule("a3e27f7e-ca2a-4b98-a6ee-8144ae4d355e", ModuleType.Recording, 1)]
+    public partial class Select_RCCEventDefinition : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
-        public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
+        public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Enter_SiteEnrolment instance = new Enter_SiteEnrolment();
+        static Select_RCCEventDefinition instance = new Select_RCCEventDefinition();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_SiteEnrolment()
+        public Select_RCCEventDefinition()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_SiteEnrolment Instance
+        public static Select_RCCEventDefinition Instance
         {
             get { return instance; }
         }
@@ -56,7 +56,7 @@ namespace RedCapCloud.AddSitePage
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
         public string DOM
         {
             get { return repo.DOM; }
@@ -89,13 +89,20 @@ namespace RedCapCloud.AddSitePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.StudySiteEnrolment' at Center.", repo.REDCapCloud.AddSitePage.StudySiteEnrolmentInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddSitePage.StudySiteEnrolment.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.VisitSchedulesTab' at Center.", repo.CogstateSolutionPlatform.StudyTabs.VisitSchedulesTabInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StudyTabs.VisitSchedulesTab.Click(3);
+            Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100' with focus on 'REDCapCloud.AddSitePage.StudySiteEnrolment'.", repo.REDCapCloud.AddSitePage.StudySiteEnrolmentInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddSitePage.StudySiteEnrolment.PressKeys("100", 1);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.StudyToolbar.CardButton.Click();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyCards.RCCEventDefinitions' at Center.", repo.CogstateSolutionPlatform.StudyCards.RCCEventDefinitionsInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.StudyCards.RCCEventDefinitions.Click(3);
+            Delay.Milliseconds(490);
             
         }
 

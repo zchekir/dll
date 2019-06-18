@@ -772,9 +772,9 @@ namespace PrecisionRecruitment
                 _batterynamefieldInfo = new RepoItemInfo(this, "BatteryNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "564dfbbc-a1f8-4664-9bb0-740b573b1b83");
                 _batterydescriptionfieldInfo = new RepoItemInfo(this, "BatteryDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "1ee5a82e-1ff8-4ead-8146-43adca4bc894");
                 _batterystatusdropdownInfo = new RepoItemInfo(this, "BatteryStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "764229ed-d1b6-4cfa-b17e-9a61fdbd7d9e");
-                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']", 30000, null, "460ff0b4-1723-4c92-9813-cf9474fafefc");
+                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_4']", 30000, null, "460ff0b4-1723-4c92-9813-cf9474fafefc");
                 _batterypopulationdropdownInfo = new RepoItemInfo(this, "BatteryPopulationDropdown", ".//select[@id~'formly_[0-9]+_select_indication_4']", 30000, null, "107c3512-95bb-4744-8616-4562277635c7");
-                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_4']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
+                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_5']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "9b34d25f-6823-4976-b188-249b5f79543c");
                 _populationrequiredvalidationInfo = new RepoItemInfo(this, "PopulationRequiredValidation", ".//div[@innertext~'Population is required']", 30000, null, "febf10c1-8a7c-4339-b47f-1699d47784c0");
                 _templaterequiredvalidationInfo = new RepoItemInfo(this, "TemplateRequiredValidation", ".//div[@innertext~'Template is required']", 30000, null, "8527d043-7b39-4fd4-9d39-1cb8b390c4ca");
@@ -5159,6 +5159,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _visitscheduletitleInfo;
             RepoItemInfo _workflowtitleInfo;
             RepoItemInfo _studycardtitleInfo;
+            RepoItemInfo _rcceventdefinitionsInfo;
 
             /// <summary>
             /// Creates a new StudyCards  folder.
@@ -5171,6 +5172,7 @@ namespace PrecisionRecruitment
                 _visitscheduletitleInfo = new RepoItemInfo(this, "VisitScheduleTitle", ".//p[@innertext>$VisitScheduleName]", 30000, null, "68fde448-2ac4-4d9a-a924-cb31763f768b");
                 _workflowtitleInfo = new RepoItemInfo(this, "WorkflowTitle", ".//p[@innertext>$WorkflowName]", 30000, null, "492d690a-ab43-4639-8890-7f3917a948ff");
                 _studycardtitleInfo = new RepoItemInfo(this, "StudyCardTitle", ".//p[@innertext>$ProjectName]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
+                _rcceventdefinitionsInfo = new RepoItemInfo(this, "RCCEventDefinitions", ".//p[@innertext='RCCEventDefinitions']", 30000, null, "0acc40e9-f3ad-4a15-910a-798d3be303e6");
             }
 
             /// <summary>
@@ -5314,6 +5316,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _studycardtitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RCCEventDefinitions item.
+            /// </summary>
+            [RepositoryItem("0acc40e9-f3ad-4a15-910a-798d3be303e6")]
+            public virtual Ranorex.PTag RCCEventDefinitions
+            {
+                get
+                {
+                    return _rcceventdefinitionsInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RCCEventDefinitions item info.
+            /// </summary>
+            [RepositoryItemInfo("0acc40e9-f3ad-4a15-910a-798d3be303e6")]
+            public virtual RepoItemInfo RCCEventDefinitionsInfo
+            {
+                get
+                {
+                    return _rcceventdefinitionsInfo;
                 }
             }
         }

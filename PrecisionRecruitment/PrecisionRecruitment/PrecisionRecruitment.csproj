@@ -2854,6 +2854,18 @@
       <id>cd05a939-4bd7-463e-8177-61714a93e0fa</id>
       <BoundTo>c7c17abe-a654-496b-932f-3479bbb41d17</BoundTo>
     </Compile>
+    <Compile Include="VisitSchedulesPage\Select_RCCEventDefinition.cs">
+      <BoundTo>a87575fa-fb8e-4287-ba72-a949b7315a0a</BoundTo>
+      <DependentUpon>Select_RCCEventDefinition.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>011cfc99-214b-4fbd-86a0-3ff258a122a2</id>
+    </Compile>
+    <Compile Include="VisitSchedulesPage\Select_RCCEventDefinition.UserCode.cs">
+      <BoundTo>a87575fa-fb8e-4287-ba72-a949b7315a0a</BoundTo>
+      <DependentUpon>Select_RCCEventDefinition.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e62c37a0-acb1-4063-83c5-d618b20e0c36</id>
+    </Compile>
     <Compile Include="VisitSchedulesPage\Select_VisitSchedule.cs">
       <DependentUpon>Select_VisitSchedule.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -3550,6 +3562,10 @@
       <id>0c540524-bbb7-46ae-aea3-81e0aada534a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="csv\IDSST.csv">
+      <id>c681e31d-82ad-438f-8ee8-4553cec68a4f</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="csv\ISLT.csv">
       <id>1e9f9f64-13d9-4cb8-a201-cfedef4ba1f1</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -3909,6 +3925,10 @@
       <id>d1f075d2-cb3f-4a5c-9709-c7d054e4c342</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="rawData\IDSST.txt">
+      <id>4a4f1c5a-9ae2-4ba2-aa41-2324e7f0e103</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="rawData\ISLT.txt">
       <id>80e0e5fe-16ca-40da-b84f-9b3cc22b6555</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -4184,6 +4204,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>c7c17abe-a654-496b-932f-3479bbb41d17</id>
       <recordtableid>06fd06e3-380e-4fd1-b66e-67cdeaf52995</recordtableid>
+    </None>
+    <None Include="VisitSchedulesPage\Select_RCCEventDefinition.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>a87575fa-fb8e-4287-ba72-a949b7315a0a</id>
+      <recordtableid>a3e27f7e-ca2a-4b98-a6ee-8144ae4d355e</recordtableid>
     </None>
     <None Include="VisitSchedulesPage\Select_VisitSchedule.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

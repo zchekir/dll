@@ -103,15 +103,15 @@ namespace RedCapCloud.AddSitePage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.StudySiteInvestigator' at 59;11.", repo.REDCapCloud.AddSitePage.StudySiteInvestigatorInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.AddSitePage.StudySiteInvestigator.Click("59;11");
-            Delay.Milliseconds(0);
+            repo.REDCapCloud.AddSitePage.StudySiteInvestigator.Click("59;11", 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.AddSitePage.StudySiteInvestigator'.", repo.REDCapCloud.AddSitePage.StudySiteInvestigatorInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddSitePage.StudySiteInvestigator.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 100);
+            repo.REDCapCloud.AddSitePage.StudySiteInvestigator.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SiteInvestigator' with focus on 'REDCapCloud.AddSitePage.StudySiteInvestigator'.", repo.REDCapCloud.AddSitePage.StudySiteInvestigatorInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.AddSitePage.StudySiteInvestigator.PressKeys(SiteInvestigator, 100);
+            repo.REDCapCloud.AddSitePage.StudySiteInvestigator.PressKeys(SiteInvestigator, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$SiteInvestigator) on item 'REDCapCloud.AddSitePage.StudySiteInvestigator'.", repo.REDCapCloud.AddSitePage.StudySiteInvestigatorInfo, new RecordItemIndex(3));

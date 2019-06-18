@@ -177,8 +177,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="02dd3a0b-d47d-4cc0-97fc-8abfc3480edb"
-			maxrange="6"
-			minrange="6"
+			maxrange="7"
+			minrange="7"
 			name="Minimum_VisitSchedule_Fields">
 			</testcase>
 			<testmodule
@@ -219,8 +219,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="037aeee4-7133-450a-b13e-79f6464da1e0"
-			maxrange="0"
-			minrange="0"
+			maxrange="5"
+			minrange="5"
 			name="Check_Platform_Features">
 			</smartfoldernode>
 			<testmodule
@@ -1590,8 +1590,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="211d871d-dd86-4bac-a5be-795d82e694e8"
-			maxrange="6"
-			minrange="6"
+			maxrange="7"
+			minrange="7"
 			name="Minimum_Battery_Length">
 			</testcase>
 			<testmodule
@@ -2040,6 +2040,20 @@ rxversion="8.2">
 			id="2fb1f243-4fea-47b3-b078-ab1b46a11dbb"
 			name="Click_SaveButton"
 			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2fe2ddbe-db03-49e1-b7d5-cb41b8d87768"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
 			type="Recording">
 				<databinding>
 					<var
@@ -2567,8 +2581,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="0"
-			minrange="0"
+			maxrange="5"
+			minrange="5"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
 			<testmodule
@@ -2650,11 +2664,10 @@ rxversion="8.2">
 			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
-			datarangeset="1,7"
 			datasource="DataConnector"
 			id="404eae3f-ef4f-4edd-809d-debf8a94911b"
-			maxrange="6"
-			minrange="0"
+			maxrange="4"
+			minrange="4"
 			name="Complete_Processor_Assessment">
 			</smartfoldernode>
 			<smartfoldernode
@@ -3484,8 +3497,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="54af3459-6433-42f1-bd34-398710b320e0"
-			maxrange="0"
-			minrange="0"
+			maxrange="4"
+			minrange="4"
 			name="Setup_Processor_Study">
 			</smartfoldernode>
 			<modulegroup
@@ -4825,8 +4838,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="71492528-24d6-4134-8eeb-4c2f95965fdf"
-			maxrange="6"
-			minrange="6"
+			maxrange="7"
+			minrange="7"
 			name="Minimum_Workflow_Fields">
 			</testcase>
 			<testmodule
@@ -5136,8 +5149,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="0"
-			minrange="0"
+			maxrange="5"
+			minrange="5"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
 			<smartfoldernode
@@ -6026,6 +6039,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="8871957b-156e-4d91-8603-0ad989d3d037"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="88898668-92f9-4fcb-a9ca-e02b81a4abf1"
 			name="setup">
@@ -6397,6 +6424,26 @@ rxversion="8.2">
 			id="948bc690-942a-4e86-844e-7078ac85874a"
 			name="setup">
 			</setup>
+			<testmodule
+			id="95015172-208a-477c-b89c-135568808321"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="2b31763d-aa10-4b6f-8085-db66215f3694"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="950f4bab-12f7-4901-b39a-7c0c9a63fa39"
 			name="setup">
@@ -6908,8 +6955,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="a54e2f22-375f-4fb2-838a-084cd4471e50"
-			maxrange="0"
-			minrange="0"
+			maxrange="5"
+			minrange="5"
 			name="Create_Regression_Study">
 			</smartfoldernode>
 			<testmodule
@@ -7946,6 +7993,26 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="be3241ad-ac2a-451d-b906-43b7418d5042"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="2b31763d-aa10-4b6f-8085-db66215f3694"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="be8fc2d5-a177-47c2-a58f-3253763cbe72"
 			name="teardown">
@@ -8531,6 +8598,35 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="cecd77b5-2b19-4763-8e3d-789e3ac80038"
+			maxrange="187"
+			minrange="186"
+			name="IDSSTTemplate_Loop_Controller">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="IDSST Template">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<teardown
 			id="cf4f5705-940f-4e36-a3ab-392904287807"
 			name="teardown">
@@ -9344,8 +9440,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="e434a354-c0d1-4e98-be05-307e7d1c7fe7"
-			maxrange="6"
-			minrange="6"
+			maxrange="7"
+			minrange="7"
 			name="Minimum_Study_Length">
 			</testcase>
 			<testmodule
@@ -12518,6 +12614,26 @@ rxversion="8.2">
 									name="Validate_BatteryTemplate_Configured">
 									</testmodule>
 								</smartfoldernode>
+								<smartfoldernode
+								id="cecd77b5-2b19-4763-8e3d-789e3ac80038"
+								name="IDSSTTemplate_Loop_Controller">
+									<testmodule
+									id="2fe2ddbe-db03-49e1-b7d5-cb41b8d87768"
+									name="Click_AddTest_Button">
+									</testmodule>
+									<testmodule
+									id="95015172-208a-477c-b89c-135568808321"
+									name="Select_CogstateTest">
+									</testmodule>
+									<testmodule
+									id="8871957b-156e-4d91-8603-0ad989d3d037"
+									name="Click_SaveBatteryTemplate_Properties">
+									</testmodule>
+									<testmodule
+									id="be3241ad-ac2a-451d-b906-43b7418d5042"
+									name="Validate_BatteryTemplate_Configured">
+									</testmodule>
+								</smartfoldernode>
 							</testcase>
 							<testcase
 							id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -13249,7 +13365,7 @@ rxversion="8.2">
 		<DataSource
 		id="2b31763d-aa10-4b6f-8085-db66215f3694"
 		includefile="Checked"
-		lastknownrowcount="186"
+		lastknownrowcount="188"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -13267,7 +13383,7 @@ rxversion="8.2">
 		<DataSource
 		id="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
 		includefile="Checked"
-		lastknownrowcount="7"
+		lastknownrowcount="8"
 		name="DataConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -13452,7 +13568,7 @@ rxversion="8.2">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Regression">
+	default="Processor">
 		<testconfiguration
 		name="Nightly">
 			<testcontainer
@@ -13619,6 +13735,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
+			</testcontainer>
+			<testcontainer
+			id="cecd77b5-2b19-4763-8e3d-789e3ac80038">
 			</testcontainer>
 			<testcontainer
 			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
