@@ -46,7 +46,6 @@ namespace RedCapCloud.ValidationModules
             dbUsername = "";
             dbPassword = "";
             Authentication = "";
-            TestIdentifier = "";
         }
 
         /// <summary>
@@ -119,18 +118,6 @@ namespace RedCapCloud.ValidationModules
             set { _Authentication = value; }
         }
 
-        string _TestIdentifier;
-
-        /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
-        /// </summary>
-        [TestVariable("a11d07ec-5c1a-4ed1-8e55-542d463a8b73")]
-        public string TestIdentifier
-        {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -157,7 +144,7 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            engine.Helpers.SQLUtility.GetAssessmentOutcomes(TestIdentifier, DBServer, Database, dbUsername, dbPassword, Authentication);
+            engine.Helpers.SQLUtility.GetAssessmentOutcomes(DBServer, Database, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
         }

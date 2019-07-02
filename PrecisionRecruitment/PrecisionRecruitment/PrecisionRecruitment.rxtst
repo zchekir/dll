@@ -219,8 +219,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="037aeee4-7133-450a-b13e-79f6464da1e0"
-			maxrange="5"
-			minrange="5"
+			maxrange="0"
+			minrange="0"
 			name="Check_Platform_Features">
 			</smartfoldernode>
 			<testmodule
@@ -2581,8 +2581,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="5"
-			minrange="5"
+			maxrange="0"
+			minrange="0"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
 			<testmodule
@@ -3901,11 +3901,11 @@ rxversion="8.2">
 				<parameters>
 					<param
 					name="DOM"
-					value="cgst-qc-lithium.azurewebsites.net">
+					value="cgst-qcpd.azurewebsites.net">
 					</param>
 					<param
 					name="URL"
-					value="https://cgst-qc-lithium.azurewebsites.net/">
+					value="https://cgst-qcpd.azurewebsites.net/">
 					</param>
 					<param
 					name="DevopsPage"
@@ -3917,11 +3917,11 @@ rxversion="8.2">
 					</param>
 					<param
 					name="DBServer"
-					value="cgst-qc.database.windows.net">
+					value="cgst-qcpd.database.windows.net">
 					</param>
 					<param
 					name="Database"
-					value="cgst-lithium-api">
+					value="cgst-api">
 					</param>
 					<param
 					name="Authentication"
@@ -5149,8 +5149,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="5"
-			minrange="5"
+			maxrange="0"
+			minrange="0"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
 			<smartfoldernode
@@ -6955,8 +6955,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="a54e2f22-375f-4fb2-838a-084cd4471e50"
-			maxrange="5"
-			minrange="5"
+			maxrange="0"
+			minrange="0"
 			name="Create_Regression_Study">
 			</smartfoldernode>
 			<testmodule
@@ -13568,7 +13568,7 @@ rxversion="8.2">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Processor">
+	default="Regression">
 		<testconfiguration
 		name="Nightly">
 			<testcontainer
