@@ -177,8 +177,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="02dd3a0b-d47d-4cc0-97fc-8abfc3480edb"
-			maxrange="7"
-			minrange="7"
+			maxrange="8"
+			minrange="8"
 			name="Minimum_VisitSchedule_Fields">
 			</testcase>
 			<testmodule
@@ -313,6 +313,20 @@ rxversion="8.2">
 			id="0527b9d9-a8e5-4291-95a2-2f4714cae6b9"
 			name="Click_SaveButton"
 			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="05328f87-991b-4b2b-9f91-4feefb3a94a0"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
 			type="Recording">
 				<databinding>
 					<var
@@ -1590,8 +1604,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="211d871d-dd86-4bac-a5be-795d82e694e8"
-			maxrange="7"
-			minrange="7"
+			maxrange="8"
+			minrange="8"
 			name="Minimum_Battery_Length">
 			</testcase>
 			<testmodule
@@ -1968,6 +1982,26 @@ rxversion="8.2">
 			id="2c4610e2-54d6-44b1-85a2-3848fbc65e56"
 			name="Population_Loop_Controller">
 			</smartfoldernode>
+			<testmodule
+			id="2c565b03-52c4-4e62-8efb-90646a77a902"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="2b31763d-aa10-4b6f-8085-db66215f3694"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="2c833354-6bf2-4cfd-a8f4-48a622daf329"
 			name="setup">
@@ -3597,6 +3631,26 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="55f25c7b-2d47-455b-a7c8-ce36c1015b03"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="2b31763d-aa10-4b6f-8085-db66215f3694"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="562454a5-2135-4f7f-a57e-fafaf9fbd52b"
 			name="Add_BatteryTemplate"
@@ -3783,6 +3837,20 @@ rxversion="8.2">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="589c4ee2-bc72-4549-9586-63daa70abd92"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="58de8474-720e-4c9a-8340-89b89e90cfc0"
 			name="Click_Login_Button"
 			ref="4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e"
@@ -3901,11 +3969,11 @@ rxversion="8.2">
 				<parameters>
 					<param
 					name="DOM"
-					value="cgst-qcpd.azurewebsites.net">
+					value="cgst-qc-lithium.azurewebsites.net">
 					</param>
 					<param
 					name="URL"
-					value="https://cgst-qcpd.azurewebsites.net/">
+					value="https://cgst-qc-lithium.azurewebsites.net/">
 					</param>
 					<param
 					name="DevopsPage"
@@ -3917,11 +3985,11 @@ rxversion="8.2">
 					</param>
 					<param
 					name="DBServer"
-					value="cgst-qcpd.database.windows.net">
+					value="cgst-qc.database.windows.net">
 					</param>
 					<param
 					name="Database"
-					value="cgst-api">
+					value="cgst-lithium-api">
 					</param>
 					<param
 					name="Authentication"
@@ -4755,7 +4823,6 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testcase
-			errorbehavior="Stop"
 			id="702d7364-d105-4608-94ab-44ad3baf1cfd"
 			maxrange="0"
 			minrange="0"
@@ -4838,8 +4905,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="71492528-24d6-4134-8eeb-4c2f95965fdf"
-			maxrange="7"
-			minrange="7"
+			maxrange="8"
+			minrange="8"
 			name="Minimum_Workflow_Fields">
 			</testcase>
 			<testmodule
@@ -5196,12 +5263,6 @@ rxversion="8.2">
 					variablename="Username">
 					</var>
 					<var
-					dataname="GmailPassword"
-					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
-					</var>
-					<var
 					dataname="Subject"
 					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
@@ -5266,6 +5327,12 @@ rxversion="8.2">
 					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
 					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7863,6 +7930,35 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="b9f70931-4b43-4c50-98bd-55a9612e930f"
+			maxrange="188"
+			minrange="188"
+			name="SAT_Loop_Controller">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SAT Template">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="b9f85b17-155d-420f-8f38-75d843c9f24d"
 			name="Enter_WorkflowDescription"
@@ -8621,7 +8717,7 @@ rxversion="8.2">
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="IDSST Template">
+							value="IDSSTM Template">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -9440,8 +9536,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="e434a354-c0d1-4e98-be05-307e7d1c7fe7"
-			maxrange="7"
-			minrange="7"
+			maxrange="8"
+			minrange="8"
 			name="Minimum_Study_Length">
 			</testcase>
 			<testmodule
@@ -12634,6 +12730,26 @@ rxversion="8.2">
 									name="Validate_BatteryTemplate_Configured">
 									</testmodule>
 								</smartfoldernode>
+								<smartfoldernode
+								id="b9f70931-4b43-4c50-98bd-55a9612e930f"
+								name="SAT_Loop_Controller">
+									<testmodule
+									id="589c4ee2-bc72-4549-9586-63daa70abd92"
+									name="Click_AddTest_Button">
+									</testmodule>
+									<testmodule
+									id="2c565b03-52c4-4e62-8efb-90646a77a902"
+									name="Select_CogstateTest">
+									</testmodule>
+									<testmodule
+									id="05328f87-991b-4b2b-9f91-4feefb3a94a0"
+									name="Click_SaveBatteryTemplate_Properties">
+									</testmodule>
+									<testmodule
+									id="55f25c7b-2d47-455b-a7c8-ce36c1015b03"
+									name="Validate_BatteryTemplate_Configured">
+									</testmodule>
+								</smartfoldernode>
 							</testcase>
 							<testcase
 							id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -13365,7 +13481,7 @@ rxversion="8.2">
 		<DataSource
 		id="2b31763d-aa10-4b6f-8085-db66215f3694"
 		includefile="Checked"
-		lastknownrowcount="188"
+		lastknownrowcount="189"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -13383,7 +13499,7 @@ rxversion="8.2">
 		<DataSource
 		id="66e3a330-8e73-46f5-bbf2-2e7b21fb45c8"
 		includefile="Checked"
-		lastknownrowcount="8"
+		lastknownrowcount="9"
 		name="DataConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -13723,6 +13839,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
+			</testcontainer>
+			<testcontainer
+			id="b9f70931-4b43-4c50-98bd-55a9612e930f">
 			</testcontainer>
 			<testcontainer
 			id="ba7d02db-83df-4a58-a877-7079c0c072d1">

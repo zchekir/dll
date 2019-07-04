@@ -52,20 +52,28 @@ namespace engine.DataProcessor
         	
 			/*Loop over every row in the CSV Datatable utill the passed in testCode and round is
 			 * found in the same row. Once we find the correct row, break from the loop and return the
-			 * score for the test and outcome we are interested in.
-			 * 
+			 * score for the test and outcome we are interested in. For SAT task, we need to look into the 
+			 * TestSubset column instead of the TestCode column
 			 * The TestCode and Round columns are being referenced by column name in the if statement below */
         	foreach (DataRow row in engine.Helpers.CSVUtility.dt.Rows)
         	{
-        		if (row["TestCode"].ToString() == testCode && row["Round"].ToString() == round)
+        		if(row["TestCode"].ToString() == "SATReal")
         		{
-        			testCodeRowFound = true;
-        			break;
+        			if(row["TestSubset"].ToString() == testCode)
+        			{
+        				testCodeRowFound = true;
+        				break;
+        			}
         		}
         		else
         		{
-        			testCodeRowIndex++;
+        			if (row["TestCode"].ToString() == testCode && row["Round"].ToString() == round)
+        			{
+        				testCodeRowFound = true;
+        				break;
+        			}
         		}
+        			testCodeRowIndex++;
         	}
         	      	
         	/*Extract the value of the outcome for the current row and store in the class variable which is
@@ -118,6 +126,7 @@ namespace engine.DataProcessor
  				case "TestCompletionPass":
  				case "TestPerformancePass":
 				case "TestIntegrityPass":
+				case "Round":
 				case "TotalCorrect":
 				case "TotalCorrectExclPant":
 				case "TotalAnticipatory":
@@ -176,7 +185,7 @@ namespace engine.DataProcessor
         				if (databaseValue == "")
         					match = true;
         			}
-        			else if (Math.Round(double.Parse(extractValue),6) == Math.Round(double.Parse(databaseValue),6))
+        			else if (Math.Round(double.Parse(extractValue),5) == Math.Round(double.Parse(databaseValue),5))
         				match = true;
         			
         			break;
@@ -239,9 +248,15 @@ namespace engine.DataProcessor
         		
         		for (int i = 0; i < engine.Helpers.SQLUtility.dt.Columns.Count; i++)
         		{
-        			//Store current outcome, round and test code we are comparing
+        			//Store current outcome and test code we are comparing. For SAT tests, look for the TestSubset column
+        			//instead of the TestCode column to differentiate between each subset.
         			currentOutcome = engine.Helpers.SQLUtility.dt.Columns[i].ColumnName;
         			currentTestCode = row["TestCode"].ToString();
+        			
+        			if (currentTestCode == "SATReal") 
+        			{
+        				currentTestCode = row["TestSubset"].ToString();
+        			}
         			
         			//Get the CSV and Database values using the current TestCode, Round and Outcome as reference
         			extractValue = GetExtractValue(currentTestCode, currentRound, currentOutcome);
