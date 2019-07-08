@@ -6410,7 +6410,6 @@ namespace PrecisionRecruitment
         {
             RepoItemInfo _expandInfo;
             RepoItemInfo _logoutbuttonInfo;
-            RepoItemInfo _resendinviteemailInfo;
 
             /// <summary>
             /// Creates a new UserMenu  folder.
@@ -6420,7 +6419,6 @@ namespace PrecisionRecruitment
             {
                 _expandInfo = new RepoItemInfo(this, "Expand", ".//div/?/?/a[@href~$DOM]/span", 30000, null, "5ce3e130-33b1-4f66-9a98-a8e27f4c6fb4");
                 _logoutbuttonInfo = new RepoItemInfo(this, "LogoutButton", ".//div/?/?/ul/?/?/a[@innertext='Logout']", 30000, null, "1f8b275c-e312-423f-ab19-2b4cc77fedbc");
-                _resendinviteemailInfo = new RepoItemInfo(this, "ResendInviteEmail", "div[3]/?/?/tag[@tagname='cogstate-generic-user-edit']/div/?/?/form[@action='https://cgst-qc-lithium.azurewebsites.net/#/EditUser']/tag[@tagname='ng-form']/div[1]//a[@innertext='Resend Invite Email']", 30000, null, "428402d4-cc8a-4592-9225-7ee65da0b52f");
             }
 
             /// <summary>
@@ -6494,30 +6492,6 @@ namespace PrecisionRecruitment
                     return _logoutbuttonInfo;
                 }
             }
-
-            /// <summary>
-            /// The ResendInviteEmail item.
-            /// </summary>
-            [RepositoryItem("428402d4-cc8a-4592-9225-7ee65da0b52f")]
-            public virtual Ranorex.ATag ResendInviteEmail
-            {
-                get
-                {
-                    return _resendinviteemailInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ResendInviteEmail item info.
-            /// </summary>
-            [RepositoryItemInfo("428402d4-cc8a-4592-9225-7ee65da0b52f")]
-            public virtual RepoItemInfo ResendInviteEmailInfo
-            {
-                get
-                {
-                    return _resendinviteemailInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -6530,6 +6504,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _addbuttonInfo;
             RepoItemInfo _editbuttonInfo;
             RepoItemInfo _internaluserrowInfo;
+            RepoItemInfo _resendinviteemailInfo;
 
             /// <summary>
             /// Creates a new UsersPage  folder.
@@ -6541,6 +6516,7 @@ namespace PrecisionRecruitment
                 _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//tag[@tagname='cogstate-generic-list-header']//img[@src>'https://'+$DOM+'/asset/images/add_icon_']", 30000, null, "70cf92aa-2cef-4708-85df-af26b3756528");
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//i[@innertext='mode_edit']", 30000, null, "c824ab88-9a7a-4069-87a2-b4bb2c0d34a2");
                 _internaluserrowInfo = new RepoItemInfo(this, "InternalUserRow", ".//table/tbody/tr/td/a[@innertext~$RandNum]", 30000, null, "bf4712dd-30d4-4721-9419-05713f997a6b");
+                _resendinviteemailInfo = new RepoItemInfo(this, "ResendInviteEmail", ".//tag[@tagname='cogstate-generic-user-edit']//tag[@tagname='ng-form']/div//a[@innertext='Resend Invite Email']", 30000, null, "428402d4-cc8a-4592-9225-7ee65da0b52f");
             }
 
             /// <summary>
@@ -6660,6 +6636,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _internaluserrowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteEmail item.
+            /// </summary>
+            [RepositoryItem("428402d4-cc8a-4592-9225-7ee65da0b52f")]
+            public virtual Ranorex.ATag ResendInviteEmail
+            {
+                get
+                {
+                    return _resendinviteemailInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResendInviteEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("428402d4-cc8a-4592-9225-7ee65da0b52f")]
+            public virtual RepoItemInfo ResendInviteEmailInfo
+            {
+                get
+                {
+                    return _resendinviteemailInfo;
                 }
             }
         }

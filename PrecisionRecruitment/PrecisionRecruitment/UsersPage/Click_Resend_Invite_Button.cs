@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UserMenu.ResendInviteEmail' at 61;10.", repo.CogstateSolutionPlatform.UserMenu.ResendInviteEmailInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.UserMenu.ResendInviteEmail.Click("61;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.ResendInviteEmail' at 61;10.", repo.CogstateSolutionPlatform.UsersPage.ResendInviteEmailInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.UsersPage.ResendInviteEmail.Click("61;10");
             Delay.Milliseconds(0);
             
         }

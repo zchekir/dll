@@ -42,6 +42,7 @@ namespace PrecisionRecruitment.General
         public Reset_Password()
         {
             RandNum = "990598";
+            Password = "";
         }
 
         /// <summary>
@@ -53,6 +54,18 @@ namespace PrecisionRecruitment.General
         }
 
 #region Variables
+
+        string _Password;
+
+        /// <summary>
+        /// Gets or sets the value of variable Password.
+        /// </summary>
+        [TestVariable("31c6f8ca-1713-49a1-a0c9-f7d400ca5c43")]
+        public string Password
+        {
+            get { return _Password; }
+            set { _Password = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -103,8 +116,8 @@ namespace PrecisionRecruitment.General
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.ForgotPasswordLink' at CenterLeft.", repo.GmailInbox.ForgotPasswordLinkInfo, new RecordItemIndex(1));
-            repo.GmailInbox.ForgotPasswordLink.Click(Location.CenterLeft, 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.ForgotPasswordLink' at UpperLeft.", repo.GmailInbox.ForgotPasswordLinkInfo, new RecordItemIndex(1));
+            repo.GmailInbox.ForgotPasswordLink.Click(Location.UpperLeft, 1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordUsername'.", repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordUsernameInfo, new RecordItemIndex(2));
@@ -115,8 +128,8 @@ namespace PrecisionRecruitment.General
             repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordField.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Cogstate{LShiftKey down}#{LShiftKey up}1' with focus on 'CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordField'.", repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordFieldInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordField.PressKeys("Cogstate{LShiftKey down}#{LShiftKey up}1", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordField'.", repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordFieldInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordField.PressKeys(Password, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordField'.", repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordFieldInfo, new RecordItemIndex(5));
@@ -127,8 +140,8 @@ namespace PrecisionRecruitment.General
             repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordConfirmField.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Cogstate{LShiftKey down}#{LShiftKey up}1{Tab}' with focus on 'CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordConfirmField'.", repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordConfirmFieldInfo, new RecordItemIndex(7));
-            repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordConfirmField.PressKeys("Cogstate{LShiftKey down}#{LShiftKey up}1{Tab}", 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordConfirmField'.", repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordConfirmFieldInfo, new RecordItemIndex(7));
+            repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordConfirmField.PressKeys(Password, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordButton' at Center.", repo.CogstateSolutionPlatform.GenerateSecretPage.ResetPasswordButtonInfo, new RecordItemIndex(8));

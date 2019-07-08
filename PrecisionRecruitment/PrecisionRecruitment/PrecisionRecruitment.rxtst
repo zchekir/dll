@@ -241,6 +241,12 @@ rxversion="8.2">
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="NewPassword"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="31c6f8ca-1713-49a1-a0c9-f7d400ca5c43"
+					variablename="Password">
+					</var>
 				</databinding>
 			</testmodule>
 			<setup
@@ -2629,7 +2635,7 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="7"
+			maxrange="0"
 			minrange="0"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
@@ -2733,26 +2739,6 @@ rxversion="8.2">
 			id="410ace10-17a9-439c-8462-7f9adb828397"
 			name="Card_View">
 			</testcase>
-			<testmodule
-			id="4294e7d7-f56e-43ac-bee5-8d7e8631e88c"
-			name="Enter_Password"
-			ref="c6481925-2e15-4f67-a2ad-a2a6ebdcf123"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="Password"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
-					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
-					variablename="Password">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="430a094f-65a8-4db4-be14-0f981503e9fc"
 			name="Validate_Extract_Downloaded"
@@ -3562,7 +3548,7 @@ rxversion="8.2">
 					</var>
 					<var
 					dataname="Password"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					datasourceid="f8e6c557-c99b-4b57-a373-2531218916bf"
 					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
 					variablename="Password">
 					</var>
@@ -5159,6 +5145,20 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7665c607-84a8-4d42-b761-8f85fd85a7f5"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="76a3061d-ed5a-4748-ab3f-3818a3f1e131"
 			name="Extract_API_Key"
 			ref="689be54e-2f14-4a07-b458-9c6507e01aaa"
@@ -5230,7 +5230,7 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="DataConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="7"
+			maxrange="0"
 			minrange="0"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
@@ -5904,6 +5904,12 @@ rxversion="8.2">
 					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="Password"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="31c6f8ca-1713-49a1-a0c9-f7d400ca5c43"
+					variablename="Password">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -6001,26 +6007,6 @@ rxversion="8.2">
 			ref="0144221d-bb4e-4d1a-b529-e70e7d2762c6"
 			type="UserCode">
 			</testmodule>
-			<testmodule
-			id="85da8a7a-7976-4ef0-b581-63315af9d060"
-			name="Enter_Password"
-			ref="c6481925-2e15-4f67-a2ad-a2a6ebdcf123"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="Password"
-					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
-					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
-					variablename="Password">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="86c3d8bb-4125-4359-83f4-700969e8b8fc"
 			name="teardown">
@@ -6058,6 +6044,26 @@ rxversion="8.2">
 			id="873ccc5c-c012-41eb-b0d1-1bf3c0054a0d"
 			name="setup">
 			</setup>
+			<testmodule
+			id="877c4688-e810-4a76-b5dc-db2f88977c24"
+			name="Enter_Password"
+			ref="c6481925-2e15-4f67-a2ad-a2a6ebdcf123"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Password"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="7c920191-9740-4e66-9ba0-d70a4055fdbf"
+					variablename="Password">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="879ba654-c01e-4ff0-aa1e-17d9dda8be7a"
 			name="Click_AddTest_Button"
@@ -6581,6 +6587,12 @@ rxversion="8.2">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="973b92d0-9246-49d1-8537-70d84d503b5b"
+			name="Logout_Gmail"
+			ref="7a7be4ca-8ba5-4305-bd1d-e3a470d856b4"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="976f6b70-15ed-4702-9641-5cec69b4c868"
 			name="Validate_ForgotPassword_Page"
 			ref="cedc20f0-3e97-4908-82db-51ed4c0cf551"
@@ -6829,6 +6841,26 @@ rxversion="8.2">
 			id="9edeae7f-6db2-4dd0-834f-ecc2f8f26849"
 			name="Study_Pagination">
 			</testcase>
+			<testmodule
+			id="9f14d56e-fda1-4876-961f-b3691d837696"
+			name="Enter_New_Password"
+			ref="92a7d94c-f607-484d-b1b6-0dacda135350"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NewPassword"
+					datasourceid="38f758e4-4185-481c-b59f-a720e211dba9"
+					variableid="1fb95b16-0223-4d23-9c1b-a4feaad1e6aa"
+					variablename="NewPassword">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="9f438f6e-f1ff-4e3c-b5ce-8ce7eee34575"
 			name="Login_Gmail"
@@ -8766,6 +8798,20 @@ rxversion="8.2">
 			id="cf4f5705-940f-4e36-a3ab-392904287807"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="cf64bc5b-f9ef-46f5-85da-501b6ccecaa0"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="cf7dc9d4-0504-4079-bd00-dc0f46c4c48b"
 			name="Login"
@@ -9680,6 +9726,20 @@ rxversion="8.2">
 			name="Validate_Next_Page"
 			ref="0144221d-bb4e-4d1a-b529-e70e7d2762c6"
 			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="e690848f-5029-409b-be74-b3fe84e99b6f"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="280aff49-d9c4-468c-bece-6c1951b0ef7e"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e6967e9f-f015-4135-a9f9-bb0ae528aa9d"
@@ -13048,6 +13108,10 @@ rxversion="8.2">
 								name="Validate_ForgotPassword_Sent">
 								</testmodule>
 								<testmodule
+								id="e690848f-5029-409b-be74-b3fe84e99b6f"
+								name="Close_Browser">
+								</testmodule>
+								<testmodule
 								id="40b9a0d9-12d5-4c1f-beb9-5d617c7bd6f2"
 								name="Open_Gmail">
 								</testmodule>
@@ -13068,8 +13132,8 @@ rxversion="8.2">
 								name="Enter_ForgotPassword_Email">
 								</testmodule>
 								<testmodule
-								id="85da8a7a-7976-4ef0-b581-63315af9d060"
-								name="Enter_Password">
+								id="9f14d56e-fda1-4876-961f-b3691d837696"
+								name="Enter_New_Password">
 								</testmodule>
 								<testmodule
 								id="58de8474-720e-4c9a-8340-89b89e90cfc0"
@@ -13128,6 +13192,10 @@ rxversion="8.2">
 								name="Validate_Resend_Submitted">
 								</testmodule>
 								<testmodule
+								id="cf64bc5b-f9ef-46f5-85da-501b6ccecaa0"
+								name="Close_Browser">
+								</testmodule>
+								<testmodule
 								id="c97a086d-7751-4714-8b34-a334e9d5ba73"
 								name="Open_Gmail">
 								</testmodule>
@@ -13148,7 +13216,7 @@ rxversion="8.2">
 								name="Enter_ForgotPassword_Email">
 								</testmodule>
 								<testmodule
-								id="4294e7d7-f56e-43ac-bee5-8d7e8631e88c"
+								id="877c4688-e810-4a76-b5dc-db2f88977c24"
 								name="Enter_Password">
 								</testmodule>
 								<testmodule
@@ -13162,6 +13230,14 @@ rxversion="8.2">
 								<teardown
 								id="1498b78b-a34d-4ea9-8512-facdc93886ba"
 								name="teardown">
+									<testmodule
+									id="973b92d0-9246-49d1-8537-70d84d503b5b"
+									name="Logout_Gmail">
+									</testmodule>
+									<testmodule
+									id="7665c607-84a8-4d42-b761-8f85fd85a7f5"
+									name="Close_Browser">
+									</testmodule>
 								</teardown>
 							</testcase>
 							<testcase
@@ -13722,6 +13798,9 @@ rxversion="8.2">
 					Password
 				</column>
 				<column>
+					NewPassword
+				</column>
+				<column>
 					Key
 				</column>
 				<column>
@@ -13855,6 +13934,12 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			</testcontainer>
+			<testcontainer
+			id="30d53fa6-a046-4087-a710-ee059a17da7a">
+			</testcontainer>
+			<testcontainer
+			id="36aba7d9-425f-4e83-8148-9fb26d9cf42d">
 			</testcontainer>
 			<testcontainer
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">

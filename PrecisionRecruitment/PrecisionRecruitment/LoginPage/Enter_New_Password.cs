@@ -20,48 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.General
+namespace PrecisionRecruitment.LoginPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Generate_Secret recording.
+    ///The Enter_New_Password recording.
     /// </summary>
-    [TestModule("69cc12f0-25dd-4495-a0bc-9eef9bdec8bb", ModuleType.Recording, 1)]
-    public partial class Generate_Secret : ITestModule
+    [TestModule("92a7d94c-f607-484d-b1b6-0dacda135350", ModuleType.Recording, 1)]
+    public partial class Enter_New_Password : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static Generate_Secret instance = new Generate_Secret();
+        static Enter_New_Password instance = new Enter_New_Password();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Generate_Secret()
+        public Enter_New_Password()
         {
-            Key = "";
+            NewPassword = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Generate_Secret Instance
+        public static Enter_New_Password Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _NewPassword;
+
         /// <summary>
-        /// Gets or sets the value of variable Key.
+        /// Gets or sets the value of variable NewPassword.
         /// </summary>
-        [TestVariable("e93ffd8c-d2ca-4815-8691-5adf41aa0dbd")]
-        public string Key
+        [TestVariable("1fb95b16-0223-4d23-9c1b-a4feaad1e6aa")]
+        public string NewPassword
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return _NewPassword; }
+            set { _NewPassword = value; }
         }
 
         /// <summary>
@@ -100,26 +102,16 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'GmailInbox.SecretLink'", repo.GmailInbox.SecretLinkInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.GmailInbox.SecretLinkInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.SecretLink' at UpperLeft.", repo.GmailInbox.SecretLinkInfo, new RecordItemIndex(1));
-            repo.GmailInbox.SecretLink.Click(Location.UpperLeft, 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.PasswordField' at Center.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Key) on item 'CogstateSolutionPlatform.GenerateSecretPage.APIKey'.", repo.CogstateSolutionPlatform.GenerateSecretPage.APIKeyInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.GenerateSecretPage.APIKeyInfo, "InnerText", Key);
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButton' at 142;18.", repo.CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButtonInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.GenerateSecretPage.GenerateSecretButton.Click("142;18");
+            Try_Enter_Password(repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Your API Secret') on item 'CogstateSolutionPlatform.GenerateSecretPage.APISecret'.", repo.CogstateSolutionPlatform.GenerateSecretPage.APISecretInfo, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.GenerateSecretPage.APISecretInfo, "InnerText", "Your API Secret");
-            Delay.Milliseconds(100);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "API Secret Generated", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'CogstateSolutionPlatform.LoginForm.PasswordField'.", repo.CogstateSolutionPlatform.LoginForm.PasswordFieldInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.LoginForm.PasswordField.PressKeys("{Tab}", 1);
+            Delay.Milliseconds(90);
             
         }
 

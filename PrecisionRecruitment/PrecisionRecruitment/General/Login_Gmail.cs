@@ -103,10 +103,13 @@ namespace PrecisionRecruitment.General
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2.5s.", new RecordItemIndex(0));
+            Delay.Duration(2500, false);
+            
             Select_Ranorex_Account(repo.GoogleSignin.RanorexUserAccountMultipleInfo, repo.GoogleSignin.PasswordFieldInfo, repo.GoogleSignin.RanorexUserAccountSingleInfo, repo.GoogleSignin.EmailFieldInfo, repo.GoogleSignin.EmailNextButtonInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.PasswordNextButton' at Center.", repo.GoogleSignin.PasswordNextButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GoogleSignin.PasswordNextButton' at Center.", repo.GoogleSignin.PasswordNextButtonInfo, new RecordItemIndex(2));
             repo.GoogleSignin.PasswordNextButton.Click(1);
             Delay.Milliseconds(90);
             
