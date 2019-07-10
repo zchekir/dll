@@ -6505,6 +6505,7 @@ namespace PrecisionRecruitment
             RepoItemInfo _editbuttonInfo;
             RepoItemInfo _internaluserrowInfo;
             RepoItemInfo _resendinviteemailInfo;
+            RepoItemInfo _resendexternalinviteemailInfo;
 
             /// <summary>
             /// Creates a new UsersPage  folder.
@@ -6517,6 +6518,7 @@ namespace PrecisionRecruitment
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//i[@innertext='mode_edit']", 30000, null, "c824ab88-9a7a-4069-87a2-b4bb2c0d34a2");
                 _internaluserrowInfo = new RepoItemInfo(this, "InternalUserRow", ".//table/tbody/tr/td/a[@innertext~$RandNum]", 30000, null, "bf4712dd-30d4-4721-9419-05713f997a6b");
                 _resendinviteemailInfo = new RepoItemInfo(this, "ResendInviteEmail", ".//tag[@tagname='cogstate-generic-user-edit']//tag[@tagname='ng-form']/div//a[@innertext='Resend Invite Email']", 30000, null, "428402d4-cc8a-4592-9225-7ee65da0b52f");
+                _resendexternalinviteemailInfo = new RepoItemInfo(this, "ResendExternalInviteEmail", ".//tag[@tagname='cogstate-generic-external-user-edit']//tag[@tagname='ng-form']/div//a[@innertext='Resend Invite Email']", 30000, null, "bb6d4bbc-866a-46c4-861d-4e03183749ee");
             }
 
             /// <summary>
@@ -6660,6 +6662,30 @@ namespace PrecisionRecruitment
                 get
                 {
                     return _resendinviteemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResendExternalInviteEmail item.
+            /// </summary>
+            [RepositoryItem("bb6d4bbc-866a-46c4-861d-4e03183749ee")]
+            public virtual Ranorex.ATag ResendExternalInviteEmail
+            {
+                get
+                {
+                    return _resendexternalinviteemailInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResendExternalInviteEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("bb6d4bbc-866a-46c4-861d-4e03183749ee")]
+            public virtual RepoItemInfo ResendExternalInviteEmailInfo
+            {
+                get
+                {
+                    return _resendexternalinviteemailInfo;
                 }
             }
         }

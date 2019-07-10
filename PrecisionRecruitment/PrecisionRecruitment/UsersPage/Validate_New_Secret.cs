@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.ReportsPage
+namespace PrecisionRecruitment.UsersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The View_Lastest_Report recording.
+    ///The Validate_New_Secret recording.
     /// </summary>
-    [TestModule("3bf72023-04a6-405d-b102-33645e57f937", ModuleType.Recording, 1)]
-    public partial class View_Lastest_Report : ITestModule
+    [TestModule("54f0aeff-0c40-4175-a55c-c0557698953e", ModuleType.Recording, 1)]
+    public partial class Validate_New_Secret : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static View_Lastest_Report instance = new View_Lastest_Report();
+        static Validate_New_Secret instance = new Validate_New_Secret();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public View_Lastest_Report()
+        public Validate_New_Secret()
         {
+            Secret = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static View_Lastest_Report Instance
+        public static Validate_New_Secret Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Secret;
+
+        /// <summary>
+        /// Gets or sets the value of variable Secret.
+        /// </summary>
+        [TestVariable("71d03b52-7eb5-4213-9607-45fadb6c19c7")]
+        public string Secret
+        {
+            get { return _Secret; }
+            set { _Secret = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -89,12 +102,10 @@ namespace PrecisionRecruitment.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo, new ActionTimeout(10000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo.WaitForExists(10000);
+            CompareAPISecret();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport.Click(1);
-            Delay.Milliseconds(90);
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));
             
         }
 

@@ -2494,6 +2494,18 @@
       <UserCode>true</UserCode>
       <id>9c0a7cde-ee90-4ab1-9638-7a8e8e06f813</id>
     </Compile>
+    <Compile Include="UsersPage\Click_External_Resend_Invite.cs">
+      <BoundTo>db8f6cb9-7961-40a6-925d-f8ccb4305605</BoundTo>
+      <DependentUpon>Click_External_Resend_Invite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33eb37f7-b453-4f56-bee8-32f67e74c60a</id>
+    </Compile>
+    <Compile Include="UsersPage\Click_External_Resend_Invite.UserCode.cs">
+      <BoundTo>db8f6cb9-7961-40a6-925d-f8ccb4305605</BoundTo>
+      <DependentUpon>Click_External_Resend_Invite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>82c06f3d-cc97-45b4-9a5c-0c6324069ac2</id>
+    </Compile>
     <Compile Include="UsersPage\Click_Locked_Checkbox.cs">
       <BoundTo>55365ad1-e816-4ea8-8b14-78e15a6f61c8</BoundTo>
       <DependentUpon>Click_Locked_Checkbox.rxrec</DependentUpon>
@@ -2805,6 +2817,18 @@
       <DependentUpon>Validate_Internal_User_Edit.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>2e5e0de7-6b08-47d2-be60-7eb3ef7a27f8</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_New_Secret.cs">
+      <BoundTo>a6f1ecec-eb9d-4222-9fa5-843340acc104</BoundTo>
+      <DependentUpon>Validate_New_Secret.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>915d19c3-590f-4b5f-b6f7-22dbe7caa679</id>
+    </Compile>
+    <Compile Include="UsersPage\Validate_New_Secret.UserCode.cs">
+      <BoundTo>a6f1ecec-eb9d-4222-9fa5-843340acc104</BoundTo>
+      <DependentUpon>Validate_New_Secret.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5bfdcc38-0607-40fb-8e87-5e76d9c89742</id>
     </Compile>
     <Compile Include="UsersPage\Validate_Resend_Submitted.cs">
       <BoundTo>c910ee6f-48b3-4a0e-823c-a8ce10ccc4e4</BoundTo>
@@ -4075,6 +4099,11 @@
       <id>914c1416-79c0-41a3-a04a-266b40aab533</id>
       <recordtableid>89c38ed8-5500-416b-9089-ab7c2de1763c</recordtableid>
     </None>
+    <None Include="UsersPage\Click_External_Resend_Invite.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>db8f6cb9-7961-40a6-925d-f8ccb4305605</id>
+      <recordtableid>03e4a6c4-b853-4ca8-b0b9-b39a1d55cc2f</recordtableid>
+    </None>
     <None Include="UsersPage\Click_Locked_Checkbox.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>55365ad1-e816-4ea8-8b14-78e15a6f61c8</id>
@@ -4204,6 +4233,11 @@
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
       <id>61ed6a86-db49-4c06-8a6b-f81f72466187</id>
       <recordtableid>c437b09f-77d0-4543-9333-316f45c91fb4</recordtableid>
+    </None>
+    <None Include="UsersPage\Validate_New_Secret.rxrec">
+      <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>
+      <id>a6f1ecec-eb9d-4222-9fa5-843340acc104</id>
+      <recordtableid>54f0aeff-0c40-4175-a55c-c0557698953e</recordtableid>
     </None>
     <None Include="UsersPage\Validate_Resend_Submitted.rxrec">
       <BoundTo>e85e1725-ce51-410d-8e88-5ea245b392f9</BoundTo>

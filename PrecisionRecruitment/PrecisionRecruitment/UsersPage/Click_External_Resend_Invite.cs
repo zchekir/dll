@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PrecisionRecruitment.ReportsPage
+namespace PrecisionRecruitment.UsersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The View_Lastest_Report recording.
+    ///The Click_External_Resend_Invite recording.
     /// </summary>
-    [TestModule("3bf72023-04a6-405d-b102-33645e57f937", ModuleType.Recording, 1)]
-    public partial class View_Lastest_Report : ITestModule
+    [TestModule("03e4a6c4-b853-4ca8-b0b9-b39a1d55cc2f", ModuleType.Recording, 1)]
+    public partial class Click_External_Resend_Invite : ITestModule
     {
         /// <summary>
         /// Holds an instance of the PrecisionRecruitment.PrecisionRecruitmentRepository repository.
         /// </summary>
         public static PrecisionRecruitment.PrecisionRecruitmentRepository repo = PrecisionRecruitment.PrecisionRecruitmentRepository.Instance;
 
-        static View_Lastest_Report instance = new View_Lastest_Report();
+        static Click_External_Resend_Invite instance = new Click_External_Resend_Invite();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public View_Lastest_Report()
+        public Click_External_Resend_Invite()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static View_Lastest_Report Instance
+        public static Click_External_Resend_Invite Instance
         {
             get { return instance; }
         }
@@ -89,12 +89,9 @@ namespace PrecisionRecruitment.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo, new ActionTimeout(10000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo.WaitForExists(10000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport.Click(1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.UsersPage.ResendExternalInviteEmail' at Center.", repo.CogstateSolutionPlatform.UsersPage.ResendExternalInviteEmailInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.UsersPage.ResendExternalInviteEmail.Click();
+            Delay.Milliseconds(0);
             
         }
 

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="3bf72023-04a6-405d-b102-33645e57f937"
+id="03e4a6c4-b853-4ca8-b0b9-b39a1d55cc2f"
 mode="Global"
 rxversion="8.2">
 	<name>
-		View_Lastest_Report
+		Click_External_Resend_Invite
 	</name>
 	<repeatcount>
 		1
@@ -23,51 +23,33 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="View_Lastest_Report"
-	namespace="PrecisionRecruitment.ReportsPage">
+	classname="Click_External_Resend_Invite"
+	namespace="PrecisionRecruitment.UsersPage">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="b08a2f6d-130d-429a-82ee-30b7f494cd23"
-		waitaction="Exists"
-		waittimeout="10000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="55e2ef93-5902-4c18-8192-ed03533b23d2"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']//table/tbody/tr[1]/td/a[@visible='True']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="100ms"
 		enabled="True"
 		loc="Center"
-		movetime="1ms"
+		movetime="100ms"
 		optional="False"
-		searchpropertyid="20fbf1e4-f991-46fe-b1e9-a9ecab0c4714"
-		sx="-839"
-		sy="-787"
+		searchpropertyid="034a7e55-0057-478a-9a22-9050cc5e6a1b"
+		sx="0"
+		sy="0"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="55e2ef93-5902-4c18-8192-ed03533b23d2"
-			sourcename="Recorder">
+			id="bb6d4bbc-866a-46c4-861d-4e03183749ee"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']//table/tbody/tr/td/a[@visible='True']
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-generic-external-user-edit']//tag[@tagname='ng-form']/div//a[@innertext='Resend Invite Email']
 				</path>
 			</info>
 		</mouseitem>
@@ -88,7 +70,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		View_Lastest_Report.UserCode.cs
+		Click_External_Resend_Invite.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
