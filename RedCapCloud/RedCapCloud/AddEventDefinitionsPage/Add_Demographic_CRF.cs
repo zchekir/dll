@@ -93,8 +93,8 @@ namespace RedCapCloud.AddEventDefinitionsPage
             repo.REDCapCloud.EventDefinitionPage.DemographicsCRF.Click("39;7");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.CRFSaveAndExit' at 28;5.", repo.REDCapCloud.EventDefinitionPage.CRFSaveAndExitInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.EventDefinitionPage.CRFSaveAndExit.Click("28;5");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.InstrumentSaveAndExit' at 28;5.", repo.REDCapCloud.EventDefinitionPage.InstrumentSaveAndExitInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.EventDefinitionPage.InstrumentSaveAndExit.Click("28;5");
             Delay.Milliseconds(0);
             
         }

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.AddEventDefinitionsPage
+namespace RedCapCloud.InstrumentsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_AddCRF_Button recording.
+    ///The Click_Instruments_Tab recording.
     /// </summary>
-    [TestModule("38dd1e62-9934-472e-8c94-887145d1059b", ModuleType.Recording, 1)]
-    public partial class Click_AddCRF_Button : ITestModule
+    [TestModule("3241acf1-d56b-48a1-ac24-1729dc6775d9", ModuleType.Recording, 1)]
+    public partial class Click_Instruments_Tab : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Click_AddCRF_Button instance = new Click_AddCRF_Button();
+        static Click_Instruments_Tab instance = new Click_Instruments_Tab();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_AddCRF_Button()
+        public Click_Instruments_Tab()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_AddCRF_Button Instance
+        public static Click_Instruments_Tab Instance
         {
             get { return instance; }
         }
@@ -89,8 +89,11 @@ namespace RedCapCloud.AddEventDefinitionsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.AddCRFButton' at Center.", repo.REDCapCloud.EventDefinitionPage.AddCRFButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.EventDefinitionPage.AddCRFButton.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.InstrumentsTab' at CenterRight.", repo.REDCapCloud.InstrumentsTabInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.InstrumentsTab.Click(Location.CenterRight);
             Delay.Milliseconds(0);
             
         }

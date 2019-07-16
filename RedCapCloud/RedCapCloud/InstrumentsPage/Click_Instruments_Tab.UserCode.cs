@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.CRFsPage
+namespace RedCapCloud.InstrumentsPage
 {
-    public partial class Click_CRFTab
+    public partial class Click_Instruments_Tab
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -36,7 +36,7 @@ namespace RedCapCloud
         [UserCodeMethod]
         public static void CreateDataTable()
         {
-        	var tabs = repo.REDCapCloud.CRFsTab.FindChildren<LiTag>();
+        	var tabs = repo.REDCapCloud.InstrumentsTab.FindChildren<LiTag>();
         	
         	for (int i = 0; i < tabs.Count; i++)
         	{

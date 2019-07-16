@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.CRFsPage
+namespace RedCapCloud.InstrumentsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Upload recording.
+    ///The Click_Tools_Menu recording.
     /// </summary>
-    [TestModule("d65da13c-82fa-4a0f-b891-fd2e3c602605", ModuleType.Recording, 1)]
-    public partial class Click_Upload : ITestModule
+    [TestModule("13871cb9-c76a-400f-bd8b-8d53ae8c2114", ModuleType.Recording, 1)]
+    public partial class Click_Tools_Menu : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Click_Upload instance = new Click_Upload();
+        static Click_Tools_Menu instance = new Click_Tools_Menu();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Upload()
+        public Click_Tools_Menu()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Upload Instance
+        public static Click_Tools_Menu Instance
         {
             get { return instance; }
         }
@@ -89,25 +89,9 @@ namespace RedCapCloud.CRFsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.CRFsPage.UploadButton' at Center.", repo.REDCapCloud.CRFsPage.UploadButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.CRFsPage.UploadButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.InstrumentsPage.ToolsMenu' at Center.", repo.REDCapCloud.InstrumentsPage.ToolsMenuInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.InstrumentsPage.ToolsMenu.Click();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
-            Delay.Duration(5000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+R' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.R | System.Windows.Forms.Keys.Control, 19, Keyboard.DefaultKeyPressTime, 1, true);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
-            Delay.Duration(5000, false);
-            
-            // Wait for Tools menu to reapper before continuing so we know that the page has fully loaded.
-            Report.Log(ReportLevel.Info, "Section", "Wait for Tools menu to reapper before continuing so we know that the page has fully loaded.", new RecordItemIndex(4));
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'REDCapCloud.CRFsPage.ToolsMenu'", repo.REDCapCloud.CRFsPage.ToolsMenuInfo, new ActionTimeout(30000), new RecordItemIndex(5));
-            repo.REDCapCloud.CRFsPage.ToolsMenuInfo.WaitForExists(30000);
             
         }
 

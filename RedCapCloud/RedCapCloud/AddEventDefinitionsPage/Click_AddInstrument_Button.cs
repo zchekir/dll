@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.CRFsPage
+namespace RedCapCloud.AddEventDefinitionsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_DeleteExistingCRF_Checkbox recording.
+    ///The Click_AddInstrument_Button recording.
     /// </summary>
-    [TestModule("a6aabcb3-1a03-4c1f-8c45-a574846d4f4b", ModuleType.Recording, 1)]
-    public partial class Click_DeleteExistingCRF_Checkbox : ITestModule
+    [TestModule("38dd1e62-9934-472e-8c94-887145d1059b", ModuleType.Recording, 1)]
+    public partial class Click_AddInstrument_Button : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Click_DeleteExistingCRF_Checkbox instance = new Click_DeleteExistingCRF_Checkbox();
+        static Click_AddInstrument_Button instance = new Click_AddInstrument_Button();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_DeleteExistingCRF_Checkbox()
+        public Click_AddInstrument_Button()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_DeleteExistingCRF_Checkbox Instance
+        public static Click_AddInstrument_Button Instance
         {
             get { return instance; }
         }
@@ -89,8 +89,8 @@ namespace RedCapCloud.CRFsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.CRFsPage.DeleteCRFCheckbox' at Center.", repo.REDCapCloud.CRFsPage.DeleteCRFCheckboxInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.CRFsPage.DeleteCRFCheckbox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.AddInstrumentButton' at Center.", repo.REDCapCloud.EventDefinitionPage.AddInstrumentButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.EventDefinitionPage.AddInstrumentButton.Click();
             Delay.Milliseconds(0);
             
         }

@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.CRFsPage
+namespace RedCapCloud.InstrumentsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Select_CSV recording.
+    ///The Click_ImportDataDictionary recording.
     /// </summary>
-    [TestModule("26f5ca72-1f84-4986-a06c-f51a8360a311", ModuleType.Recording, 1)]
-    public partial class Select_CSV : ITestModule
+    [TestModule("3b2f8a6f-b9a4-46d0-a6b9-2da4be88796d", ModuleType.Recording, 1)]
+    public partial class Click_ImportDataDictionary : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Select_CSV instance = new Select_CSV();
+        static Click_ImportDataDictionary instance = new Click_ImportDataDictionary();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Select_CSV()
+        public Click_ImportDataDictionary()
         {
-            FileName = "RedCapConfig";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Select_CSV Instance
+        public static Click_ImportDataDictionary Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _FileName;
-
-        /// <summary>
-        /// Gets or sets the value of variable FileName.
-        /// </summary>
-        [TestVariable("1243b561-7617-4cbc-8f6d-123972442ec9")]
-        public string FileName
-        {
-            get { return _FileName; }
-            set { _FileName = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -102,31 +89,9 @@ namespace RedCapCloud.CRFsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.CRFsPage.ChooseFileButton' at Center.", repo.REDCapCloud.CRFsPage.ChooseFileButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.CRFsPage.ChooseFileButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.InstrumentsPage.ImportDataDictionaryButton' at Center.", repo.REDCapCloud.InstrumentsPage.ImportDataDictionaryButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.InstrumentsPage.ImportDataDictionaryButton.Click();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OpenFileDialog.FilenameField' at Center.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(1));
-            repo.OpenFileDialog.FilenameField.Click();
-            Delay.Milliseconds(0);
-            
-            NavigateToDirectory(repo.OpenFileDialog.FilenameFieldInfo);
-            Delay.Milliseconds(10);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FileName' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(3));
-            repo.OpenFileDialog.FilenameField.PressKeys(FileName);
-            Delay.Milliseconds(10);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '.csv' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(4));
-            repo.OpenFileDialog.FilenameField.PressKeys(".csv", 1);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OpenFileDialog.ButtonOpen' at Center.", repo.OpenFileDialog.ButtonOpenInfo, new RecordItemIndex(5));
-            repo.OpenFileDialog.ButtonOpen.Click();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
-            Delay.Duration(1000, false);
             
         }
 

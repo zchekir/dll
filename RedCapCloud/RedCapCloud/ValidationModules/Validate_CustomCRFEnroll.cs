@@ -89,8 +89,8 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.SubjectParamsUseCustomCrfViewOnly'.", repo.REDCapCloud.SubjectParamsUseCustomCrfViewOnlyInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.REDCapCloud.SubjectParamsUseCustomCrfViewOnlyInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.SubjectParamsUseCustomInstrumentViewOnly'.", repo.REDCapCloud.SubjectParamsUseCustomInstrumentViewOnlyInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.REDCapCloud.SubjectParamsUseCustomInstrumentViewOnlyInfo);
             Delay.Milliseconds(100);
             
             Report.Screenshot(ReportLevel.Info, "User", "Custom CRF Enroll Enabled", repo.REDCapCloud.Self, false, new RecordItemIndex(1));

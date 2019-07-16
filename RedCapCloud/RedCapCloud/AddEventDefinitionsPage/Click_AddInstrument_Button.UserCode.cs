@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace RedCapCloud.AddEventDefinitionsPage
 {
-    public partial class Click_AddCRF_Button
+    public partial class Click_AddInstrument_Button
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

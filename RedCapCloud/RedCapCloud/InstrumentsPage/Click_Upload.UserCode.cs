@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.CRFsPage
+namespace RedCapCloud.InstrumentsPage
 {
     public partial class Click_Upload
     {

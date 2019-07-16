@@ -230,7 +230,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,itag"
 				capname="itag"
 				id="c507af39-b9b8-49c0-bb49-6b008613fa82"
-				name="UseCustomCRFEnroll"
+				name="UseCustomInstrumentEnroll"
 				refimgid="aff8263d-35f1-4d34-9169-117cb2f19f23"
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//i[#'subjectParams_useCustomCrf']"
 				searchtimeout="30000ms">
@@ -353,7 +353,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
 				id="440194f9-f6bc-4d7a-ba0d-7fb10a108ddc"
-				name="AddCRFButton"
+				name="AddInstrumentButton"
 				refimgid="dfcf3396-71f6-400b-a76a-9b51b29e08f8"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'gwtWrapper']//div/table/tbody/tr/td/div[@innertext='Add']
@@ -416,7 +416,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="0e63ba41-c14c-410f-9bc8-05ff4dc28e21"
-				name="CRFSaveAndExit"
+				name="InstrumentSaveAndExit"
 				refimgid="2658b5cf-b5bb-4968-b537-5cebd0d28c2c"
 				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'eventCrfEditMp_saveAndReturn']/span[@innertext='Save and Exit']"
 				searchtimeout="30000ms">
@@ -446,7 +446,7 @@ rxversion="8.2">
 			capname="unknown"
 			id="2ab2f35d-e2cc-4859-a890-e471944f7965"
 			isrooted="False"
-			name="CRFsPage"
+			name="InstrumentsPage"
 			searchtimeout="0ms">
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -491,7 +491,7 @@ rxversion="8.2">
 				addcaps="unknown,webelement,itag"
 				capname="itag"
 				id="70df627e-f442-41b4-997f-d4b1422af3b9"
-				name="DeleteCRFCheckbox"
+				name="DeleteInstrumentsCheckbox"
 				refimgid="d3be7725-2214-4a5b-975e-8f1d75a48a7b"
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//body//table/tbody/tr/td/div/div/table//i
@@ -1027,7 +1027,7 @@ rxversion="8.2">
 			addcaps="unknown,webelement,itag"
 			capname="itag"
 			id="f2f2e617-d49f-4849-b07f-cff241a5a41a"
-			name="SubjectParamsUseCustomCrfViewOnly"
+			name="SubjectParamsUseCustomInstrumentViewOnly"
 			refimgid="30d8c118-41b4-4ff6-aeda-5e84452fed1b"
 			refpath="/dom[@domain='cgsqc.redcapcloud.com']//i[#'subjectParams_useCustomCrf_viewOnly']"
 			searchtimeout="30000ms">
@@ -1056,11 +1056,10 @@ rxversion="8.2">
 			addcaps="unknown,webelement,atag"
 			capname="atag"
 			id="85c425e2-a4ac-452a-ac21-a60fdfb9b80e"
-			name="CRFsTab"
-			refimgid="c85128d6-f4ae-4eb6-9ba1-eca9b04c7873"
-			refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'studyBaseWidget_topLinkName_cRFs']/a[@innertext='CRFs']"
+			name="InstrumentsTab"
+			refimgid="a10c32e8-31b4-4574-aa25-2092f7688fe2"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]//div[#'studyBaseWidget_topLinkName_cRFs']/a[@innertext='CRFs']
+				/dom[@domain=$DOM]//div[#'studyBaseWidget_topLinkName_instruments']/a[@innertext='Instruments']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"

@@ -173,7 +173,7 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.ParametersPageFolder _parameterspage;
             RedCapCloudRepositoryFolders.PermissionsPageFolder _permissionspage;
             RedCapCloudRepositoryFolders.EventDefinitionPageFolder _eventdefinitionpage;
-            RedCapCloudRepositoryFolders.CRFsPageFolder _crfspage;
+            RedCapCloudRepositoryFolders.InstrumentsPageFolder _instrumentspage;
             RedCapCloudRepositoryFolders.SubjectsPageFolder _subjectspage;
             RedCapCloudRepositoryFolders.SubjectMatrixPageFolder _subjectmatrixpage;
             RedCapCloudRepositoryFolders.UsersPageFolder _userspage;
@@ -187,10 +187,10 @@ namespace RedCapCloud
             RepoItemInfo _logoutbuttonInfo;
             RepoItemInfo _sitestabInfo;
             RepoItemInfo _parameterstabInfo;
-            RepoItemInfo _subjectparamsusecustomcrfviewonlyInfo;
+            RepoItemInfo _subjectparamsusecustominstrumentviewonlyInfo;
             RepoItemInfo _eventdefinitionstabInfo;
             RepoItemInfo _mystudiesbuttonInfo;
-            RepoItemInfo _crfstabInfo;
+            RepoItemInfo _instrumentstabInfo;
             RepoItemInfo _subjectsbuttonInfo;
             RepoItemInfo _addeventInfo;
             RepoItemInfo _saveandexitInfo;
@@ -218,7 +218,7 @@ namespace RedCapCloud
                 _parameterspage = new RedCapCloudRepositoryFolders.ParametersPageFolder(this);
                 _permissionspage = new RedCapCloudRepositoryFolders.PermissionsPageFolder(this);
                 _eventdefinitionpage = new RedCapCloudRepositoryFolders.EventDefinitionPageFolder(this);
-                _crfspage = new RedCapCloudRepositoryFolders.CRFsPageFolder(this);
+                _instrumentspage = new RedCapCloudRepositoryFolders.InstrumentsPageFolder(this);
                 _subjectspage = new RedCapCloudRepositoryFolders.SubjectsPageFolder(this);
                 _subjectmatrixpage = new RedCapCloudRepositoryFolders.SubjectMatrixPageFolder(this);
                 _userspage = new RedCapCloudRepositoryFolders.UsersPageFolder(this);
@@ -232,10 +232,10 @@ namespace RedCapCloud
                 _logoutbuttonInfo = new RepoItemInfo(this, "LogoutButton", ".//li[#'dropDownButton_popupMenuItem_logout']/a[@innertext='Logout']", 30000, null, "2142ea80-e72e-4f44-8319-49ca58782f8c");
                 _sitestabInfo = new RepoItemInfo(this, "SitesTab", ".//div[#'studyBaseWidget_topLinkName_sites']/a[@innertext='Sites']", 30000, null, "57358e7f-6ebc-427c-a4ee-9e906dc14092");
                 _parameterstabInfo = new RepoItemInfo(this, "ParametersTab", ".//div[#'studyBaseWidget_topLinkName_parameters']/a[@innertext='Parameters']", 30000, null, "e1a8abb4-eff4-4ad3-bce3-1662b283c589");
-                _subjectparamsusecustomcrfviewonlyInfo = new RepoItemInfo(this, "SubjectParamsUseCustomCrfViewOnly", ".//i[#'subjectParams_useCustomCrf_viewOnly']", 30000, null, "f2f2e617-d49f-4849-b07f-cff241a5a41a");
+                _subjectparamsusecustominstrumentviewonlyInfo = new RepoItemInfo(this, "SubjectParamsUseCustomInstrumentViewOnly", ".//i[#'subjectParams_useCustomCrf_viewOnly']", 30000, null, "f2f2e617-d49f-4849-b07f-cff241a5a41a");
                 _eventdefinitionstabInfo = new RepoItemInfo(this, "EventDefinitionsTab", ".//div[#'studyBaseWidget_topLinkName_eventDefinitions']/a[@innertext='Event Definitions']", 30000, null, "1201996b-02f8-48f8-9fcb-f8287de67c8d");
                 _mystudiesbuttonInfo = new RepoItemInfo(this, "MyStudiesButton", ".//div[#'gwtWrapper']//img[@src~'https://'+$DOM+'/gwt/clear.cache.gif']", 30000, null, "dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5");
-                _crfstabInfo = new RepoItemInfo(this, "CRFsTab", ".//div[#'studyBaseWidget_topLinkName_cRFs']/a[@innertext='CRFs']", 30000, null, "85c425e2-a4ac-452a-ac21-a60fdfb9b80e");
+                _instrumentstabInfo = new RepoItemInfo(this, "InstrumentsTab", ".//div[#'studyBaseWidget_topLinkName_instruments']/a[@innertext='Instruments']", 30000, null, "85c425e2-a4ac-452a-ac21-a60fdfb9b80e");
                 _subjectsbuttonInfo = new RepoItemInfo(this, "SubjectsButton", ".//div[#'leftMenuButtons_navSubjects']/div[@innertext='Subjects']", 30000, null, "49e053e3-c79f-4754-ba64-0a7f12c8311b");
                 _addeventInfo = new RepoItemInfo(this, "AddEvent", ".//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']", 30000, null, "90347d54-c6b6-44b9-89dd-3599e2115baf");
                 _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "8d14bd59-a5f4-4e66-bb01-d205497d9d55");
@@ -421,26 +421,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The SubjectParamsUseCustomCrfViewOnly item.
+            /// The SubjectParamsUseCustomInstrumentViewOnly item.
             /// </summary>
             [RepositoryItem("f2f2e617-d49f-4849-b07f-cff241a5a41a")]
-            public virtual Ranorex.ITag SubjectParamsUseCustomCrfViewOnly
+            public virtual Ranorex.ITag SubjectParamsUseCustomInstrumentViewOnly
             {
                 get
                 {
-                    return _subjectparamsusecustomcrfviewonlyInfo.CreateAdapter<Ranorex.ITag>(true);
+                    return _subjectparamsusecustominstrumentviewonlyInfo.CreateAdapter<Ranorex.ITag>(true);
                 }
             }
 
             /// <summary>
-            /// The SubjectParamsUseCustomCrfViewOnly item info.
+            /// The SubjectParamsUseCustomInstrumentViewOnly item info.
             /// </summary>
             [RepositoryItemInfo("f2f2e617-d49f-4849-b07f-cff241a5a41a")]
-            public virtual RepoItemInfo SubjectParamsUseCustomCrfViewOnlyInfo
+            public virtual RepoItemInfo SubjectParamsUseCustomInstrumentViewOnlyInfo
             {
                 get
                 {
-                    return _subjectparamsusecustomcrfviewonlyInfo;
+                    return _subjectparamsusecustominstrumentviewonlyInfo;
                 }
             }
 
@@ -493,26 +493,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The CRFsTab item.
+            /// The InstrumentsTab item.
             /// </summary>
             [RepositoryItem("85c425e2-a4ac-452a-ac21-a60fdfb9b80e")]
-            public virtual Ranorex.ATag CRFsTab
+            public virtual Ranorex.ATag InstrumentsTab
             {
                 get
                 {
-                    return _crfstabInfo.CreateAdapter<Ranorex.ATag>(true);
+                    return _instrumentstabInfo.CreateAdapter<Ranorex.ATag>(true);
                 }
             }
 
             /// <summary>
-            /// The CRFsTab item info.
+            /// The InstrumentsTab item info.
             /// </summary>
             [RepositoryItemInfo("85c425e2-a4ac-452a-ac21-a60fdfb9b80e")]
-            public virtual RepoItemInfo CRFsTabInfo
+            public virtual RepoItemInfo InstrumentsTabInfo
             {
                 get
                 {
-                    return _crfstabInfo;
+                    return _instrumentstabInfo;
                 }
             }
 
@@ -907,12 +907,12 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The CRFsPage folder.
+            /// The InstrumentsPage folder.
             /// </summary>
             [RepositoryFolder("2ab2f35d-e2cc-4859-a890-e471944f7965")]
-            public virtual RedCapCloudRepositoryFolders.CRFsPageFolder CRFsPage
+            public virtual RedCapCloudRepositoryFolders.InstrumentsPageFolder InstrumentsPage
             {
-                get { return _crfspage; }
+                get { return _instrumentspage; }
             }
 
             /// <summary>
@@ -1538,7 +1538,7 @@ namespace RedCapCloud
         public partial class ParametersPageFolder : RepoGenBaseFolder
         {
             RepoItemInfo _subjectparametereditInfo;
-            RepoItemInfo _usecustomcrfenrollInfo;
+            RepoItemInfo _usecustominstrumentenrollInfo;
             RepoItemInfo _subjectparametersavebuttonInfo;
 
             /// <summary>
@@ -1548,7 +1548,7 @@ namespace RedCapCloud
                     base("ParametersPage", "", parentFolder, 0, null, false, "16b6389c-878f-4369-97c7-45193956fbb5", "")
             {
                 _subjectparametereditInfo = new RepoItemInfo(this, "SubjectParameterEdit", ".//div[#'gwtWrapper']//table/tbody/tr//div[@innertext='Subject Parameters']/../div/..//div[@innertext='Edit']", 30000, null, "473a5bdb-586a-4a5c-b7e6-dfd61b27f6c9");
-                _usecustomcrfenrollInfo = new RepoItemInfo(this, "UseCustomCRFEnroll", ".//i[#'subjectParams_useCustomCrf']", 30000, null, "c507af39-b9b8-49c0-bb49-6b008613fa82");
+                _usecustominstrumentenrollInfo = new RepoItemInfo(this, "UseCustomInstrumentEnroll", ".//i[#'subjectParams_useCustomCrf']", 30000, null, "c507af39-b9b8-49c0-bb49-6b008613fa82");
                 _subjectparametersavebuttonInfo = new RepoItemInfo(this, "SubjectParameterSaveButton", ".//div[#'gwtWrapper']//table/tbody/tr//div[@innertext='Subject Parameters']/../div/..//button//span[@innertext='Save']", 30000, null, "e71a05dc-1d57-4bc9-9de2-aaa94dc1b3b6");
             }
 
@@ -1589,26 +1589,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The UseCustomCRFEnroll item.
+            /// The UseCustomInstrumentEnroll item.
             /// </summary>
             [RepositoryItem("c507af39-b9b8-49c0-bb49-6b008613fa82")]
-            public virtual Ranorex.ITag UseCustomCRFEnroll
+            public virtual Ranorex.ITag UseCustomInstrumentEnroll
             {
                 get
                 {
-                    return _usecustomcrfenrollInfo.CreateAdapter<Ranorex.ITag>(true);
+                    return _usecustominstrumentenrollInfo.CreateAdapter<Ranorex.ITag>(true);
                 }
             }
 
             /// <summary>
-            /// The UseCustomCRFEnroll item info.
+            /// The UseCustomInstrumentEnroll item info.
             /// </summary>
             [RepositoryItemInfo("c507af39-b9b8-49c0-bb49-6b008613fa82")]
-            public virtual RepoItemInfo UseCustomCRFEnrollInfo
+            public virtual RepoItemInfo UseCustomInstrumentEnrollInfo
             {
                 get
                 {
-                    return _usecustomcrfenrollInfo;
+                    return _usecustominstrumentenrollInfo;
                 }
             }
 
@@ -1780,14 +1780,14 @@ namespace RedCapCloud
             RepoItemInfo _eventdeftypefieldInfo;
             RepoItemInfo _eventdefeditbuttonInfo;
             RepoItemInfo _saveandexitbuttonInfo;
-            RepoItemInfo _addcrfbuttonInfo;
+            RepoItemInfo _addinstrumentbuttonInfo;
             RepoItemInfo _demographicscrfInfo;
             RepoItemInfo _begincogstatebatterycrfInfo;
             RepoItemInfo _cogstatebatterycommentscrfInfo;
             RepoItemInfo _cogstatebatterydataconfirmationcrfInfo;
             RepoItemInfo _cogstatebatterycrfcompositeoutcomeInfo;
             RepoItemInfo _cogstatebatterycrfcbbInfo;
-            RepoItemInfo _crfsaveandexitInfo;
+            RepoItemInfo _instrumentsaveandexitInfo;
             RepoItemInfo _addedcrfentryInfo;
             RepoItemInfo _addsitebuttonInfo;
 
@@ -1802,14 +1802,14 @@ namespace RedCapCloud
                 _eventdeftypefieldInfo = new RepoItemInfo(this, "EventDefTypeField", ".//input[#'eventDef_type_input']", 30000, null, "216bff81-9c4c-435e-b968-f7f8dffd00fa");
                 _eventdefeditbuttonInfo = new RepoItemInfo(this, "EventDefEditButton", ".//button[#'studyBaseEditForm_buttonEdit']", 30000, null, "a813bb56-043b-48d4-b9dd-9f84c8977a3e");
                 _saveandexitbuttonInfo = new RepoItemInfo(this, "SaveAndExitButton", ".//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "126c1d40-169d-4623-b9a2-ffd481d9c843");
-                _addcrfbuttonInfo = new RepoItemInfo(this, "AddCRFButton", ".//div[#'gwtWrapper']//div/table/tbody/tr/td/div[@innertext='Add']", 30000, null, "440194f9-f6bc-4d7a-ba0d-7fb10a108ddc");
+                _addinstrumentbuttonInfo = new RepoItemInfo(this, "AddInstrumentButton", ".//div[#'gwtWrapper']//div/table/tbody/tr/td/div[@innertext='Add']", 30000, null, "440194f9-f6bc-4d7a-ba0d-7fb10a108ddc");
                 _demographicscrfInfo = new RepoItemInfo(this, "DemographicsCRF", "body//table/tbody/tr/td[1]/div[@innertext='Demographics']", 30000, null, "baf502ff-6c82-4cd5-8b0a-7d22f16fd8af");
                 _begincogstatebatterycrfInfo = new RepoItemInfo(this, "BeginCogstateBatteryCRF", "body//table/tbody/tr/td[1]/div[@innertext='Begin Cogstate Battery']", 30000, null, "e69b6376-6c03-4f09-accd-3407d188329e");
                 _cogstatebatterycommentscrfInfo = new RepoItemInfo(this, "CogstateBatteryCommentsCRF", "body//table/tbody/tr/td[1]/div[@innertext='Cogstate Battery Comments']", 30000, null, "3ee70fbd-6c84-4b65-b121-e63ceedc0331");
                 _cogstatebatterydataconfirmationcrfInfo = new RepoItemInfo(this, "CogstateBatteryDataConfirmationCRF", "body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\\ Battery\\ Data\\ Con']", 30000, null, "b884d6c9-ed98-426e-b73a-71b5e44cb1c9");
                 _cogstatebatterycrfcompositeoutcomeInfo = new RepoItemInfo(this, "CogstateBatteryCRFCompositeOutcome", "body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\\ Battery\\ CRF\\ -\\ Co']", 30000, null, "1821b257-b454-43b6-8874-4c63a5fa25b0");
                 _cogstatebatterycrfcbbInfo = new RepoItemInfo(this, "CogstateBatteryCRFCBB", "body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\\ Battery\\ CRF\\ -\\ CB']", 30000, null, "8c73533d-e702-4985-8b89-b91f9a60a82b");
-                _crfsaveandexitInfo = new RepoItemInfo(this, "CRFSaveAndExit", ".//button[#'eventCrfEditMp_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "0e63ba41-c14c-410f-9bc8-05ff4dc28e21");
+                _instrumentsaveandexitInfo = new RepoItemInfo(this, "InstrumentSaveAndExit", ".//button[#'eventCrfEditMp_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "0e63ba41-c14c-410f-9bc8-05ff4dc28e21");
                 _addedcrfentryInfo = new RepoItemInfo(this, "AddedCRFEntry", ".//div[#'gwtWrapper']//table/tbody/tr/td/div[@innertext='Begin Cogstate Battery']", 30000, null, "a0b09774-43e2-45f8-a410-a407a7162086");
                 _addsitebuttonInfo = new RepoItemInfo(this, "AddSiteButton", ".//button[#'studyBaseWidget_buttonCreateAdd']/i", 30000, null, "4c554e95-c609-45d2-bf96-dcfde4155650");
             }
@@ -1947,26 +1947,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The AddCRFButton item.
+            /// The AddInstrumentButton item.
             /// </summary>
             [RepositoryItem("440194f9-f6bc-4d7a-ba0d-7fb10a108ddc")]
-            public virtual Ranorex.DivTag AddCRFButton
+            public virtual Ranorex.DivTag AddInstrumentButton
             {
                 get
                 {
-                    return _addcrfbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _addinstrumentbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The AddCRFButton item info.
+            /// The AddInstrumentButton item info.
             /// </summary>
             [RepositoryItemInfo("440194f9-f6bc-4d7a-ba0d-7fb10a108ddc")]
-            public virtual RepoItemInfo AddCRFButtonInfo
+            public virtual RepoItemInfo AddInstrumentButtonInfo
             {
                 get
                 {
-                    return _addcrfbuttonInfo;
+                    return _addinstrumentbuttonInfo;
                 }
             }
 
@@ -2115,26 +2115,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The CRFSaveAndExit item.
+            /// The InstrumentSaveAndExit item.
             /// </summary>
             [RepositoryItem("0e63ba41-c14c-410f-9bc8-05ff4dc28e21")]
-            public virtual Ranorex.SpanTag CRFSaveAndExit
+            public virtual Ranorex.SpanTag InstrumentSaveAndExit
             {
                 get
                 {
-                    return _crfsaveandexitInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _instrumentsaveandexitInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CRFSaveAndExit item info.
+            /// The InstrumentSaveAndExit item info.
             /// </summary>
             [RepositoryItemInfo("0e63ba41-c14c-410f-9bc8-05ff4dc28e21")]
-            public virtual RepoItemInfo CRFSaveAndExitInfo
+            public virtual RepoItemInfo InstrumentSaveAndExitInfo
             {
                 get
                 {
-                    return _crfsaveandexitInfo;
+                    return _instrumentsaveandexitInfo;
                 }
             }
 
@@ -2188,28 +2188,28 @@ namespace RedCapCloud
         }
 
         /// <summary>
-        /// The CRFsPageFolder folder.
+        /// The InstrumentsPageFolder folder.
         /// </summary>
         [RepositoryFolder("2ab2f35d-e2cc-4859-a890-e471944f7965")]
-        public partial class CRFsPageFolder : RepoGenBaseFolder
+        public partial class InstrumentsPageFolder : RepoGenBaseFolder
         {
             RepoItemInfo _toolsmenuInfo;
             RepoItemInfo _importdatadictionarybuttonInfo;
             RepoItemInfo _choosefilebuttonInfo;
             RepoItemInfo _uploadbuttonInfo;
-            RepoItemInfo _deletecrfcheckboxInfo;
+            RepoItemInfo _deleteinstrumentscheckboxInfo;
 
             /// <summary>
-            /// Creates a new CRFsPage  folder.
+            /// Creates a new InstrumentsPage  folder.
             /// </summary>
-            public CRFsPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("CRFsPage", "", parentFolder, 0, null, false, "2ab2f35d-e2cc-4859-a890-e471944f7965", "")
+            public InstrumentsPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("InstrumentsPage", "", parentFolder, 0, null, false, "2ab2f35d-e2cc-4859-a890-e471944f7965", "")
             {
                 _toolsmenuInfo = new RepoItemInfo(this, "ToolsMenu", ".//button[#'dropDownButton_button_tools']", 30000, null, "a2bc9330-6c03-4e44-a14e-e3592d32ef0f");
                 _importdatadictionarybuttonInfo = new RepoItemInfo(this, "ImportDataDictionaryButton", ".//li[#'dropDownButton_popupMenuItem_importDataDictionary']/a[@innertext='Import Data Dictionary']", 30000, null, "33aa8bab-a2e3-4f86-883c-73eee4995a40");
                 _choosefilebuttonInfo = new RepoItemInfo(this, "ChooseFileButton", ".//div[#'fileInput_chooseFileButton']", 30000, null, "9895e431-8cdc-4cc9-9914-eac49b36d3fd");
                 _uploadbuttonInfo = new RepoItemInfo(this, "UploadButton", ".//body//table/tbody/tr//span[@innertext='Upload']", 30000, null, "8038c42d-6e2a-48de-8a45-0e28bd3850c8");
-                _deletecrfcheckboxInfo = new RepoItemInfo(this, "DeleteCRFCheckbox", ".//body//table/tbody/tr/td/div/div/table//i", 30000, null, "70df627e-f442-41b4-997f-d4b1422af3b9");
+                _deleteinstrumentscheckboxInfo = new RepoItemInfo(this, "DeleteInstrumentsCheckbox", ".//body//table/tbody/tr/td/div/div/table//i", 30000, null, "70df627e-f442-41b4-997f-d4b1422af3b9");
             }
 
             /// <summary>
@@ -2321,26 +2321,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The DeleteCRFCheckbox item.
+            /// The DeleteInstrumentsCheckbox item.
             /// </summary>
             [RepositoryItem("70df627e-f442-41b4-997f-d4b1422af3b9")]
-            public virtual Ranorex.ITag DeleteCRFCheckbox
+            public virtual Ranorex.ITag DeleteInstrumentsCheckbox
             {
                 get
                 {
-                    return _deletecrfcheckboxInfo.CreateAdapter<Ranorex.ITag>(true);
+                    return _deleteinstrumentscheckboxInfo.CreateAdapter<Ranorex.ITag>(true);
                 }
             }
 
             /// <summary>
-            /// The DeleteCRFCheckbox item info.
+            /// The DeleteInstrumentsCheckbox item info.
             /// </summary>
             [RepositoryItemInfo("70df627e-f442-41b4-997f-d4b1422af3b9")]
-            public virtual RepoItemInfo DeleteCRFCheckboxInfo
+            public virtual RepoItemInfo DeleteInstrumentsCheckboxInfo
             {
                 get
                 {
-                    return _deletecrfcheckboxInfo;
+                    return _deleteinstrumentscheckboxInfo;
                 }
             }
         }

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.CRFsPage
+namespace RedCapCloud.InstrumentsPage
 {
-    public partial class Click_Tools_Menu
+    public partial class Select_CSV
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,6 +31,16 @@ namespace RedCapCloud.CRFsPage
         private void Init()
         {
             // Your recording specific initialization code goes here.
+        }
+
+        public void NavigateToDirectory(RepoItemInfo filenameField)
+        {
+        	string dir = System.IO.Directory.GetCurrentDirectory();
+        	       	
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence  '" + dir + "\\csv' with focus on 'filenameField'.", filenameField);
+            filenameField.FindAdapter<Text>().PressKeys(dir + "\\csv", 10);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'filenameField'.", filenameField);
+            filenameField.FindAdapter<Text>().PressKeys("{Return}", 10);
         }
 
     }

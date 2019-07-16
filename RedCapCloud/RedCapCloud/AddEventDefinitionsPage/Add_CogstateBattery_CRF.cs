@@ -93,8 +93,8 @@ namespace RedCapCloud.AddEventDefinitionsPage
             repo.REDCapCloud.EventDefinitionPage.BeginCogstateBatteryCRF.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.CRFSaveAndExit' at Center.", repo.REDCapCloud.EventDefinitionPage.CRFSaveAndExitInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.EventDefinitionPage.CRFSaveAndExit.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.InstrumentSaveAndExit' at Center.", repo.REDCapCloud.EventDefinitionPage.InstrumentSaveAndExitInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.EventDefinitionPage.InstrumentSaveAndExit.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.EventDefinitionPage.AddedCRFEntry'.", repo.REDCapCloud.EventDefinitionPage.AddedCRFEntryInfo, new RecordItemIndex(2));
