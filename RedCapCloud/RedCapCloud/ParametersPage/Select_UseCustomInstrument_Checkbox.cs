@@ -24,29 +24,29 @@ namespace RedCapCloud.ParametersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Select_UseCustomCRF recording.
+    ///The Select_UseCustomInstrument_Checkbox recording.
     /// </summary>
     [TestModule("43197699-bc3a-4d20-ac7b-de542bc93625", ModuleType.Recording, 1)]
-    public partial class Select_UseCustomCRF : ITestModule
+    public partial class Select_UseCustomInstrument_Checkbox : ITestModule
     {
         /// <summary>
         /// Holds an instance of the RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static RedCapCloud.RedCapCloudRepository repo = RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Select_UseCustomCRF instance = new Select_UseCustomCRF();
+        static Select_UseCustomInstrument_Checkbox instance = new Select_UseCustomInstrument_Checkbox();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Select_UseCustomCRF()
+        public Select_UseCustomInstrument_Checkbox()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Select_UseCustomCRF Instance
+        public static Select_UseCustomInstrument_Checkbox Instance
         {
             get { return instance; }
         }

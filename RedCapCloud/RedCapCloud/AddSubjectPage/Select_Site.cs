@@ -89,11 +89,14 @@ namespace RedCapCloud.AddSubjectPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SiteDropdown' at Center.", repo.REDCapCloud.SubjectsPage.SiteDropdownInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SiteDropdown' at Center.", repo.REDCapCloud.SubjectsPage.SiteDropdownInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.SiteDropdown.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CogstateSite' at Center.", repo.REDCapCloud.SubjectsPage.CogstateSiteInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CogstateSite' at Center.", repo.REDCapCloud.SubjectsPage.CogstateSiteInfo, new RecordItemIndex(2));
             repo.REDCapCloud.SubjectsPage.CogstateSite.Click();
             Delay.Milliseconds(0);
             

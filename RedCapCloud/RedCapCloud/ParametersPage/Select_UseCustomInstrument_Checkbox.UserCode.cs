@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace RedCapCloud.ParametersPage
 {
-    public partial class Select_UseCustomCRF
+    public partial class Select_UseCustomInstrument_Checkbox
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
