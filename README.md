@@ -1,4 +1,4 @@
-**BEFORE YOU BEGIN*
+**BEFORE YOU BEGIN**
 
 * Navigate to the PrecisionRecruitment directory, open the 'Authentication.csv' data connector and add the following values:
 	* Email (email address used to login to the platform)
