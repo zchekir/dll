@@ -5168,10 +5168,10 @@ namespace PrecisionRecruitment
                     base("StudyCards", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']", parentFolder, 30000, null, false, "96c9235d-6f07-4bef-8170-51a70513ea71", "")
             {
                 _studycardInfo = new RepoItemInfo(this, "StudyCard", ".//div/tag[1]/tag/div/div", 30000, null, "cc5b606f-9ba7-4a4d-b79f-5e0b690608be");
-                _batterycardtitleInfo = new RepoItemInfo(this, "BatteryCardTitle", ".//p[@innertext>$BatteryName]", 30000, null, "757058d1-baba-4625-8845-b7ceb7d62e0f");
-                _visitscheduletitleInfo = new RepoItemInfo(this, "VisitScheduleTitle", ".//p[@innertext>$VisitScheduleName]", 30000, null, "68fde448-2ac4-4d9a-a924-cb31763f768b");
-                _workflowtitleInfo = new RepoItemInfo(this, "WorkflowTitle", ".//p[@innertext>$WorkflowName]", 30000, null, "492d690a-ab43-4639-8890-7f3917a948ff");
-                _studycardtitleInfo = new RepoItemInfo(this, "StudyCardTitle", ".//p[@innertext>$ProjectName]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
+                _batterycardtitleInfo = new RepoItemInfo(this, "BatteryCardTitle", ".//p[@innertext~$BatteryName+$RandNum]", 30000, null, "757058d1-baba-4625-8845-b7ceb7d62e0f");
+                _visitscheduletitleInfo = new RepoItemInfo(this, "VisitScheduleTitle", ".//p[@innertext~$VisitScheduleName+$RandNum]", 30000, null, "68fde448-2ac4-4d9a-a924-cb31763f768b");
+                _workflowtitleInfo = new RepoItemInfo(this, "WorkflowTitle", ".//p[@innertext~$WorkflowName+$RandNum]", 30000, null, "492d690a-ab43-4639-8890-7f3917a948ff");
+                _studycardtitleInfo = new RepoItemInfo(this, "StudyCardTitle", ".//p[@innertext~$ProjectName+$RandNum]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
                 _rcceventdefinitionsInfo = new RepoItemInfo(this, "RCCEventDefinitions", ".//p[@innertext='RCCEventDefinitions']", 30000, null, "0acc40e9-f3ad-4a15-910a-798d3be303e6");
             }
 

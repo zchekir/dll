@@ -29,38 +29,6 @@ rxversion="8.2">
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="PopupWatcherLibrary"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="PauseWhileExists"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="3bf73b1b-67ee-4fe1-be25-1c8da644b7b4">
-				<argument
-				argname="findElement"
-				id="6679c4f9-96f9-4610-a3c3-38ad0abc7cf7">
-					<argvaluetype>
-						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-					<info
-					id="7e655126-9a30-49e2-8991-fd5a20df20be"
-					sourcename="ItemRecorderEditor">
-						<path>
-							/dom[@domain=$DOM]/body//div[@class='popupContent']//table//div[@innertext='Close']
-						</path>
-					</info>
-				</argument>
-			</arguments>
-		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

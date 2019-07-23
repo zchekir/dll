@@ -1555,7 +1555,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="BatteryCardTitle"
 				refimgid="5f48712b-51da-4c03-aae1-3f2c39751ccc"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext&gt;$BatteryName]
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$BatteryName+$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
@@ -1564,7 +1564,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="VisitScheduleTitle"
 				refimgid="bcc42375-45d4-4b85-8c50-4b9a98a27bc5"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext&gt;$VisitScheduleName]
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$VisitScheduleName+$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
@@ -1573,7 +1573,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="WorkflowTitle"
 				refimgid="8e08f3e4-3e1e-47df-98ac-dbe2abad4c8e"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext&gt;$WorkflowName]
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$WorkflowName+$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
@@ -1582,7 +1582,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="StudyCardTitle"
 				refimgid="26e8f28f-739f-4d0f-961a-9cb5d86a9803"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext&gt;$ProjectName]
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$ProjectName+$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
