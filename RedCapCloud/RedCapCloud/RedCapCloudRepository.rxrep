@@ -1196,6 +1196,15 @@ rxversion="8.2">
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]/body/div[7]//div[@innertext='Role already exists']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="7e655126-9a30-49e2-8991-fd5a20df20be"
+			name="NotificationPopupClose"
+			refimgid="4c226421-a0b5-483d-b2ea-629c68c47d2f"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]/body//div[@class='popupContent']//table//div[@innertext='Close']
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>

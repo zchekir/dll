@@ -29,6 +29,38 @@ rxversion="8.2">
 	<variables>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="PauseWhileExists"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6dca9c3e-c1d7-46f4-99bd-f0629c53a3ff">
+				<argument
+				argname="findElement"
+				id="bd4ff5a5-4fd9-4b6a-95ab-e4d132d8ba89">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="7e655126-9a30-49e2-8991-fd5a20df20be"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body//div[@class='popupContent']//table//div[@innertext='Close']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -233,125 +265,6 @@ jtf+faH/AL4FLQcZuOiS+aOZw/qKMP6ium+x2v8Az7Q/98Cj7Ha/8+0P/fAosu7+8r2r/lX3I5nD
 U0UUAGT6mjJ9TRRQAZPqaMn1NFFABk+poyfU0UUAGT6mjJ9TRRQAZPqaKKKAP//Z
 			</helperscreenshot>
 		</mouseitem>
-		<validationitem
-		action="Exists"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		searchpropertyid="47bcb1ad-9409-4ecc-927c-cba0d78f1ba8">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="a0b09774-43e2-45f8-a410-a407a7162086"
-			sourcename="ElementTree">
-				<element
-				capabilities="webelement, divtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="divtag"
-				rect="142,584,271,18"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Begin Cogstate Battery
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						div
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="__gwt_cell"
-					readonly="False"
-					type="System.String">
-						cell-gwt-uid-429
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-						outline-style:none;
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[2]/div[2]/div/div/div[3]/div/div[2]//table/tbody/tr/td[2]/div[@innertext='Begin Cogstate Battery']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="2ffcd455-2309-4286-a46d-5774e7b0fbc0">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA9ATEDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKfg
-elGB6UAMop+B6UYHpQAyin4HpRgelADKKfgelGB6UAMop+B6UYHpQAyin4HpRgelADKKfgelGB6U
-AMop+B6UYHpQAyin4HpRgelADKKfgelGB6UAMop+B6UYHpQAyin4HpRgelADKKfgelGB6UAMop+B
-6UYHpQAyin4HpRgelADKKfgelGB6UAMop+B6UYHpQAyin4HpRgelADKKfgelGB6UAMop+B6UUAFV
-tSleCwkkiba64wcZ7irNUtY/5Bc3/Af/AEIUpbMmXwsrxJq0sSSLdRAOoYZA7/8AAad5Gsf8/UP5
-f/Y1Hbw+bA2IIpD5afM55HyDpx/UVZN4+1RDubEavzGzFs9uOnShQutyEu7IvI1j/n6h/L/7GjyN
-Y/5+ofy/+xqeW5mxI8YQLGVBV1OTnHv701JZPOMUIjXc7klgT0x7+9HJ5jsu7IvI1j/n6h/L/wCx
-o8jWP+fqH8v/ALGrRndtOMyjD+WTgeuKWO3gj8uRcK394Hl8+p70cnmHL5lTyNY/5+ofy/8AsaPI
-1j/n6h/L/wCxqdbqT5JHCmOTdgAcjGT179KQXFz8vyxuXiMiqoI544689aOTzCy7sh8jWP8An6h/
-L/7GjyNY/wCfqH8v/sakeeV0QLIoYSqD+7ZTg+oJp/2pzcqilSrMVHyNxgHv0PToKPZ+YrLuyDyN
-Y/5+ofy/+xo8jWP+fqH8v/safFcyrbwKWy7qWLeWz8D2HPfrUt05k0uR2UqSnKntR7PzHZdyv5Gs
-f8/UP5f/AGNHkax/z9Q/l/8AY1LGogulJijhBQ8Rnhsc88D+VRy3UzwTAMARHvDBGXH59frT9n5i
-svMTyNY/5+ofy/8AsaPI1j/n6h/L/wCxqXz5YWuC7B8MqqAp4JA7ZP5UouZ2KIAAzPt3NGygjBOc
-HntS9n5jsu7IfI1j/n6h/L/7GjyNY/5+ofy/+xq2k7tKIiF3ByG4/hHQ/qKsUuTzHy+bMzyNY/5+
-ofy/+xo8jWP+fqH8v/sa06KOXzDk8zM8jWP+fqH8v/saPI1j/n6h/L/7GtOijl8w5PMzPI1j/n6h
-/L/7GjyNY/5+ofy/+xrToo5fMOTzMzyNY/5+ofy/+xo8jWP+fqH8v/sa06KOXzDk8zM8jWP+fqH8
-v/saPI1j/n6h/L/7GtOijl8w5PMzPI1j/n6h/L/7GjyNY/5+ofy/+xrToo5fMOTzMzyNY/5+ofy/
-+xo8jWP+fqH8v/sa06KOXzDk8zM8jWP+fqH8v/saPI1j/n6h/L/7GtOijl8w5PMztKnuJZbmO5kD
-mJgvAA9c/wAq0azNK/4/tQ/66f1ar9y7JbSun3lQkfXFEdhw1RJRWTtT/n+m/wC/porX2bF7SJrV
-S1j/AJBc3/Af/QhV2ormBbmBoXJCtjJXr1zWb1RUldNEFraxPaQs2/LRLuw7AHgdgane2ikxuXAA
-24UkcenHUVR/sK1/56TfmP8ACj+wrX/npN+Y/wAKSciFfsWJ7VpZeFQISOdxBwP9nofrU6wRq+8L
-huTnPr1/lVD+wrX/AJ6TfmP8KP7Ctf8AnpN+Y/wp80uwe92NFEWNAijCgYApiW0UbBlU8dAWJC/Q
-dB+FUf7Ctf8AnpN+Y/wo/sK1/wCek35j/CleXYd5di8tvEjl1XDc4ySQM9cDoKghs8PmVEC7Nm1X
-LZzj16DjpUH9hWv/AD0m/Mf4Uf2Fa/8APSb8x/hT5pdha9i79li2lSGOSDkuScjpznNKtrCsgcKd
-wJYfMcAnrgVR/sK1/wCek35j/Cj+wrX/AJ6TfmP8KXNINexd+yxbAoDALnGHII/HPT2p5hjMPklf
-3eMYHHFZ/wDYVr/z0m/Mf4Uf2Fa/89JvzH+FHNLsO8uxeW2iUk4ZiRj53LcfiaatnAqkBCQV2HLE
-8enJqn/YVr/z0m/Mf4Uf2Fa/89JvzH+FPmkLXsXvs0XzfKTuAByxOcdPx96FtokIIU5DbgSxJzjH
-U+1Uf7Ctf+ek35j/AAo/sK1/56TfmP8AClzS7D97sXY4cXUk7BQWAUY9B/n9KmrM/sK1/wCek35j
-/Cj+wrX/AJ6TfmP8KLy7BeXY06KzP7Ctf+ek35j/AAo/sK1/56TfmP8ACi8uwXl2NOisz+wrX/np
-N+Y/wo/sK1/56TfmP8KLy7BeXY06KzP7Ctf+ek35j/Cj+wrX/npN+Y/wovLsF5djTorM/sK1/wCe
-k35j/Cj+wrX/AJ6TfmP8KLy7BeXY06KzP7Ctf+ek35j/AAo/sK1/56TfmP8ACi8uwXl2NOisz+wr
-X/npN+Y/wo/sK1/56TfmP8KLy7BeXY06KzP7Ctf+ek35j/Cj+wrX/npN+Y/wovLsF5djTorM/sK1
-/wCek35j/Cj+wrX/AJ6TfmP8KLy7BeXYNK/4/tQ/66f1atOq1lYxWW/ymc78Z3Edv/11ZoirIcU0
-tSH7Hbf8+8P/AHwKKmoqrF3YfjR+NFFAg/Gj8aKKAD8aPxoooAPxo/GiigA/Gj8aKKAD8aPxoooA
-Pxo/GiigA/Gj8aKKAD8aPxoooAPxo/GiigA/Gj8aKKAD8aPxoooAPxo/GiigA/Gj8aKKAD8aPxoo
-oAPxo/GiigA/Gj8aKKAD8aPxoooAPxo/GiigA/GiiigD/9k=
-			</helperscreenshot>
-			<matchname>
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
 	</recorditems>
 	<repository
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"

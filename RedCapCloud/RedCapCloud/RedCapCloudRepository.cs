@@ -205,6 +205,7 @@ namespace RedCapCloud
             RepoItemInfo _userstabInfo;
             RepoItemInfo _permissionstabInfo;
             RepoItemInfo _rolealreadyexistsInfo;
+            RepoItemInfo _notificationpopupcloseInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -250,6 +251,7 @@ namespace RedCapCloud
                 _userstabInfo = new RepoItemInfo(this, "UsersTab", ".//div[#'studyBaseWidget_topLinkName_users']/a[@innertext='Users']", 30000, null, "ed9a8860-7beb-46a9-a610-9d06e34cb962");
                 _permissionstabInfo = new RepoItemInfo(this, "PermissionsTab", ".//div[#'studyBaseWidget_topLinkName_permissions']/a[@innertext='Permissions']", 30000, null, "05db3a9e-cb69-46e3-85fd-d12a3f8a5e63");
                 _rolealreadyexistsInfo = new RepoItemInfo(this, "RoleAlreadyExists", "body/div[7]//div[@innertext='Role already exists']", 30000, null, "b4a72825-ea9d-4078-a609-1ae22df65884");
+                _notificationpopupcloseInfo = new RepoItemInfo(this, "NotificationPopupClose", "body//div[@class='popupContent']//table//div[@innertext='Close']", 30000, null, "7e655126-9a30-49e2-8991-fd5a20df20be");
             }
 
             /// <summary>
@@ -849,6 +851,30 @@ namespace RedCapCloud
                 get
                 {
                     return _rolealreadyexistsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NotificationPopupClose item.
+            /// </summary>
+            [RepositoryItem("7e655126-9a30-49e2-8991-fd5a20df20be")]
+            public virtual Ranorex.DivTag NotificationPopupClose
+            {
+                get
+                {
+                    return _notificationpopupcloseInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NotificationPopupClose item info.
+            /// </summary>
+            [RepositoryItemInfo("7e655126-9a30-49e2-8991-fd5a20df20be")]
+            public virtual RepoItemInfo NotificationPopupCloseInfo
+            {
+                get
+                {
+                    return _notificationpopupcloseInfo;
                 }
             }
 

@@ -89,11 +89,14 @@ namespace RedCapCloud.AddEventDefinitionsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcome' at Center.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcomeInfo, new RecordItemIndex(0));
+            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.PauseWhileExists(repo.REDCapCloud.NotificationPopupCloseInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcome' at Center.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcomeInfo, new RecordItemIndex(1));
             repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcome.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.InstrumentSaveAndExit' at Center.", repo.REDCapCloud.EventDefinitionPage.InstrumentSaveAndExitInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.EventDefinitionPage.InstrumentSaveAndExit' at Center.", repo.REDCapCloud.EventDefinitionPage.InstrumentSaveAndExitInfo, new RecordItemIndex(2));
             repo.REDCapCloud.EventDefinitionPage.InstrumentSaveAndExit.Click();
             Delay.Milliseconds(0);
             
