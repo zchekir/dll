@@ -456,6 +456,24 @@ opcUYoASilxRigBKKXFGKAEopcUYoASilxRigBKKXFGKAEopcUYoASilxRigBKKXFGKAEopcUYoA
 SilxRigBKKXFGKAEopcUlMBKKKKQH//Z
 			</helperscreenshot>
 		</keysequenceitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="9bb4f5fe-a724-40a4-ae13-e90e720960fd"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="628ad5fc-4948-4083-a445-4bf034c11123"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//table/tbody/tr/td/a[@innertext~$Key]
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

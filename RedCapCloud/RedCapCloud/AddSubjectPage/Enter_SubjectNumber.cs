@@ -103,15 +103,15 @@ namespace RedCapCloud.AddSubjectPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SubjectNumberField' at Center.", repo.REDCapCloud.SubjectsPage.SubjectNumberFieldInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.SubjectsPage.SubjectNumberField.Click();
+            repo.REDCapCloud.SubjectsPage.SubjectNumberField.Click(1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.SubjectsPage.SubjectNumberField'.", repo.REDCapCloud.SubjectsPage.SubjectNumberFieldInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.SubjectsPage.SubjectNumberField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 100);
-            Delay.Milliseconds(0);
+            repo.REDCapCloud.SubjectsPage.SubjectNumberField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+            Delay.Milliseconds(20);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SubjectNumber' with focus on 'REDCapCloud.SubjectsPage.SubjectNumberField'.", repo.REDCapCloud.SubjectsPage.SubjectNumberFieldInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SubjectsPage.SubjectNumberField.PressKeys(SubjectNumber, 100);
+            repo.REDCapCloud.SubjectsPage.SubjectNumberField.PressKeys(SubjectNumber, 1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$SubjectNumber) on item 'REDCapCloud.SubjectsPage.SubjectNumberField'.", repo.REDCapCloud.SubjectsPage.SubjectNumberFieldInfo, new RecordItemIndex(3));

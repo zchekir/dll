@@ -39,7 +39,7 @@ namespace RedCapCloud.AddSubjectPage
             string date = DOB.ToString("MMM dd, yyyy");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'REDCapCloud.SubjectsPage.DOBField'.", repo.REDCapCloud.SubjectsPage.DOBFieldInfo, new RecordItemIndex(3));
-            repo.REDCapCloud.SubjectsPage.DOBField.PressKeys(date, 100);
+            repo.REDCapCloud.SubjectsPage.DOBField.PressKeys(date, 1);
         }
 
     }

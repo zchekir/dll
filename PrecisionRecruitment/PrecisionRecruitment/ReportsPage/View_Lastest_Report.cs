@@ -89,8 +89,8 @@ namespace PrecisionRecruitment.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo, new ActionTimeout(10000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo.WaitForExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReportInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.BatteryConfigReportPage.LatestGeneratedReport.Click(1);

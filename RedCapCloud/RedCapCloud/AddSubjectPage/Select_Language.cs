@@ -90,11 +90,11 @@ namespace RedCapCloud.AddSubjectPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.LanguageDropdown' at Center.", repo.REDCapCloud.SubjectsPage.LanguageDropdownInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.SubjectsPage.LanguageDropdown.Click();
+            repo.REDCapCloud.SubjectsPage.LanguageDropdown.Click(1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.EnglishUS' at Center.", repo.REDCapCloud.SubjectsPage.EnglishUSInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.SubjectsPage.EnglishUS.Click();
+            repo.REDCapCloud.SubjectsPage.EnglishUS.Click(1);
             Delay.Milliseconds(0);
             
         }

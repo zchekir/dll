@@ -96,7 +96,7 @@ rxversion="8.2">
 			<arguments
 			id="96500b36-b7bb-44e6-89a3-17ed82fa2b87">
 				<argument
-				argname="divtagInfo"
+				argname="inputTagInfo"
 				id="53c08363-171e-4a6c-b5cf-1061592ccd30">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
@@ -104,10 +104,10 @@ rxversion="8.2">
 					<argvalue>
 					</argvalue>
 					<info
-					id="a4e3fe2f-52e7-42cb-99ff-80dbbbcab99a"
+					id="326473da-bd04-4a0e-a1a3-3e6e18e9f398"
 					sourcename="ItemRecorderEditor">
 						<path>
-							/dom[@domain=$DOM]//div[#'gwtWrapper']//div[@innertext='Test ID']//..//..//div[@innertext~'[0-9A-F]\-']
+							/dom[@domain=$DOM]//div[#'gwtWrapper']//div[@innertext='Test ID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']
 						</path>
 					</info>
 				</argument>

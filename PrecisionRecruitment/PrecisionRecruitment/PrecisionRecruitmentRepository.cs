@@ -5883,7 +5883,7 @@ namespace PrecisionRecruitment
                 _batterynamebreadcrumbInfo = new RepoItemInfo(this, "BatteryNameBreadcrumb", ".//span[@innertext>$BatteryName]", 30000, null, "aa383d1f-32f2-45a8-b2bd-8af31a40c22b");
                 _workflownamebreadcrumbInfo = new RepoItemInfo(this, "WorkflowNameBreadcrumb", ".//span[@innertext>$WorkflowName]", 30000, null, "280eeae4-8102-4c5e-bd8f-cb861cbf2f41");
                 _editbreadcrumbInfo = new RepoItemInfo(this, "EditBreadcrumb", ".//span[@innertext<'Edit']", 30000, null, "5bed9429-4e7b-42f4-a07a-b8c9cf342f70");
-                _externaluserbreadcrumbInfo = new RepoItemInfo(this, "ExternalUserBreadcrumb", ".//span[@innertext~'[0-9A-F]\\-']", 30000, null, "924b5c91-b150-4d60-a35f-97aabab73341");
+                _externaluserbreadcrumbInfo = new RepoItemInfo(this, "ExternalUserBreadcrumb", ".//span[@innertext~'[A-Fa-f0-9-]{36}']", 120000, null, "924b5c91-b150-4d60-a35f-97aabab73341");
                 _internaluserbreadcrumbInfo = new RepoItemInfo(this, "InternalUserBreadcrumb", ".//span[@innertext~$Username]", 30000, null, "6e183190-aa15-459a-97c4-958ba38b14fb");
                 _studiesbreadcrumbInfo = new RepoItemInfo(this, "StudiesBreadcrumb", ".//span[@innertext='Studies']", 30000, null, "f26f102f-7e2e-4971-8c7a-dc8e17ea0e5f");
                 _visitschedulenamebreadcrumbInfo = new RepoItemInfo(this, "VisitScheduleNameBreadcrumb", ".//span[@innertext>$VisitScheduleName]", 30000, null, "8472a298-4084-43e9-bb47-4892db050f5a");

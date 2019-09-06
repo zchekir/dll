@@ -39,7 +39,7 @@ namespace RedCapCloud.AddStudyPage
             string date = yesterday.ToString("MMM dd, yyyy");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'REDCapCloud.AddStudyPage.ScreeningStartDate'.", repo.REDCapCloud.AddStudyPage.ScreeningStartDateInfo, new RecordItemIndex(3));
-            repo.REDCapCloud.AddStudyPage.ScreeningStartDate.PressKeys(date, 100);
+            repo.REDCapCloud.AddStudyPage.ScreeningStartDate.PressKeys(date, 1);
         }
 
     }

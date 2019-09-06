@@ -33,17 +33,17 @@ namespace RedCapCloud.SubjectsPage
             // Your recording specific initialization code goes here.
         }
 
-        public void Get_value_TestIdentifier(RepoItemInfo divtagInfo)
+        public void Get_value_TestIdentifier(RepoItemInfo inputTagInfo)
         {
-        	Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'divtagInfo' and assigning its value to variable 'TestIdentifier'.", divtagInfo);
+        	Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'inputTagInfo' and assigning its value to variable 'TestIdentifier'.", inputTagInfo);
         	
-        	while (!divtagInfo.Exists(new Duration(30000))) {
+        	while (!inputTagInfo.Exists(new Duration(30000))) {
         		Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}", 100);
         		
         		Delay.Duration(1500);
         	}
             
-            TestIdentifier = divtagInfo.FindAdapter<DivTag>().Element.GetAttributeValueText("InnerText");
+            TestIdentifier = inputTagInfo.FindAdapter<InputTag>().Element.GetAttributeValueText("Value");
             
         }
 

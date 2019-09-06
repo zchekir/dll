@@ -93,6 +93,9 @@ namespace RedCapCloud.EventDefinitionsPage
             repo.REDCapCloud.EventDefinitionPage.SaveAndExitButton.Click(1);
             Delay.Milliseconds(0);
             
+            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopAllPopupWatchers();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

@@ -103,8 +103,8 @@ namespace PrecisionRecruitment.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2.5s.", new RecordItemIndex(0));
-            Delay.Duration(2500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
+            Delay.Duration(3000, false);
             
             Select_Ranorex_Account(repo.GoogleSignin.RanorexUserAccountMultipleInfo, repo.GoogleSignin.PasswordFieldInfo, repo.GoogleSignin.RanorexUserAccountSingleInfo, repo.GoogleSignin.EmailFieldInfo, repo.GoogleSignin.EmailNextButtonInfo);
             Delay.Milliseconds(0);

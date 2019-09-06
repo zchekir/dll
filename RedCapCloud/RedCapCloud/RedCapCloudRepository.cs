@@ -53,7 +53,7 @@ namespace RedCapCloud
 
 #region Variables
 
-        string _DOM = "cgsqc.redcapcloud.com";
+        string _DOM = "cgst-qcpd.uat.redcapcloud.com";
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -245,12 +245,12 @@ namespace RedCapCloud
                 _cogstatebatterydataconfirmationInfo = new RepoItemInfo(this, "CogstateBatteryDataConfirmation", ".//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\\ Battery\\ Data\\ Con']", 30000, null, "3dff02c4-a338-4b37-904b-2ab9b5ef7a75");
                 _markcrfcompleteInfo = new RepoItemInfo(this, "MarkCRFComplete", ".//i[#'dataCollectionWidget_checkboxComplete']", 30000, null, "8017c05e-63a5-4c1f-a7f8-676c2d3b01ce");
                 _confirmpopupyesbuttonInfo = new RepoItemInfo(this, "ConfirmPopupYesButton", ".//button[#'commonTools_buttonYes']/span[@innertext='Yes']", 30000, null, "970238ad-03ed-405c-947a-61f5f26728fb");
-                _siteidexistsInfo = new RepoItemInfo(this, "SiteIDExists", "body/div[5]//div[@innertext~'Study Site ID - already exists']", 30000, null, "92424763-dfb1-4558-8296-b7fee0fdd8bb");
-                _showmorevalidationfailuresInfo = new RepoItemInfo(this, "ShowMoreValidationFailures", "body/div[5]//div[@innertext='Show more']", 30000, null, "e758309b-d495-47cb-97e4-fe94b1af0b57");
+                _siteidexistsInfo = new RepoItemInfo(this, "SiteIDExists", "body/div//div[@innertext~'Study Site ID - already exists']", 30000, null, "92424763-dfb1-4558-8296-b7fee0fdd8bb");
+                _showmorevalidationfailuresInfo = new RepoItemInfo(this, "ShowMoreValidationFailures", "body/div//div[@innertext='Show more']", 30000, null, "e758309b-d495-47cb-97e4-fe94b1af0b57");
                 _cancelbuttonInfo = new RepoItemInfo(this, "CancelButton", ".//button[#'studyBaseEditForm_buttonCancel']/span[@innertext='Cancel']", 30000, null, "8340b902-b9d5-479b-9a7e-a265232bfa17");
                 _userstabInfo = new RepoItemInfo(this, "UsersTab", ".//div[#'studyBaseWidget_topLinkName_users']/a[@innertext='Users']", 30000, null, "ed9a8860-7beb-46a9-a610-9d06e34cb962");
                 _permissionstabInfo = new RepoItemInfo(this, "PermissionsTab", ".//div[#'studyBaseWidget_topLinkName_permissions']/a[@innertext='Permissions']", 30000, null, "05db3a9e-cb69-46e3-85fd-d12a3f8a5e63");
-                _rolealreadyexistsInfo = new RepoItemInfo(this, "RoleAlreadyExists", "body/div[7]//div[@innertext='Role already exists']", 30000, null, "b4a72825-ea9d-4078-a609-1ae22df65884");
+                _rolealreadyexistsInfo = new RepoItemInfo(this, "RoleAlreadyExists", "body/div//div[@innertext='Role already exists']", 30000, null, "b4a72825-ea9d-4078-a609-1ae22df65884");
                 _notificationpopupcloseInfo = new RepoItemInfo(this, "NotificationPopupClose", "body//div[@class='popupContent']//table//div[@innertext='Close']", 30000, null, "7e655126-9a30-49e2-8991-fd5a20df20be");
             }
 
@@ -2419,13 +2419,13 @@ namespace RedCapCloud
                 _englishusInfo = new RepoItemInfo(this, "EnglishUS", ".//li/a[@innertext='English - US']", 30000, null, "82622083-e411-4c96-8e50-a507d202f3ff");
                 _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "ce3a1313-e308-48ba-9e51-bf1c7045d365");
                 _dobfieldInfo = new RepoItemInfo(this, "DOBField", ".//div[#'gwtWrapper']//table/?/?/tr/td/input[@type='text' and @visible='True']", 30000, null, "6689b195-0563-43db-8134-742b2e9caf8f");
-                _subjectInfo = new RepoItemInfo(this, "Subject", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext>$RandNum]", 30000, null, "4752a246-2d28-4500-98dd-1581b67cb1f6");
+                _subjectInfo = new RepoItemInfo(this, "Subject", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext>$RandNum]", 240000, null, "4752a246-2d28-4500-98dd-1581b67cb1f6");
                 _subjectdetailInfo = new RepoItemInfo(this, "SubjectDetail", ".//div[#'gwtWrapper']//tbody//div[@innertext>'Subject Detail:']", 30000, null, "a115e54f-00d5-4722-a307-32b1c9389e2b");
                 _addeventbuttonInfo = new RepoItemInfo(this, "AddEventButton", ".//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']", 30000, null, "a78ed43b-5335-4118-ba47-3d3d39007510");
                 _eventnamedropdownInfo = new RepoItemInfo(this, "EventNameDropdown", ".//button[#'addEventDialogWidget_eventName_button']", 30000, null, "6b7c4f08-fd4b-4316-9894-7a845b096b59");
                 _visit1Info = new RepoItemInfo(this, "Visit1", ".//li/a[@innertext='Visit 1']", 30000, null, "b878405e-091b-4eac-bcf8-f0f6f5466632");
                 _addeventsaveexitbuttonInfo = new RepoItemInfo(this, "AddEventSaveExitButton", ".//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "fef1e296-87b4-4f4f-981b-2c7ccb3f8ecc");
-                _firstvisitInfo = new RepoItemInfo(this, "FirstVisit", ".//div[#'gwtWrapper']//table//div[@innertext='Visit 1']", 30000, null, "e02de142-531f-4011-8bbe-814eb3205d56");
+                _firstvisitInfo = new RepoItemInfo(this, "FirstVisit", ".//div[#'gwtWrapper']//table//div[@innertext='Visit 1']", 240000, null, "e02de142-531f-4011-8bbe-814eb3205d56");
                 _confirmdobfieldInfo = new RepoItemInfo(this, "ConfirmDOBField", ".//div[#'gwtWrapper']//table/tbody/tr/td[1]/input[@type='text']", 30000, null, "ffccdfe4-44df-41d3-9ada-4b93692cadee");
                 _beginassessmentbuttonInfo = new RepoItemInfo(this, "BeginAssessmentButton", ".//div[#'gwtWrapper']//span[@innertext='Begin Assessment']", 30000, null, "9392e009-e70d-4ceb-aa88-0f694bb37641");
                 _dataconfirmationcrfInfo = new RepoItemInfo(this, "DataConfirmationCRF", ".//div[@id<'cogstateBatteryDataConfirmation']", 30000, null, "d9b364c3-4d5d-4c1e-8c60-c712bd9fea82");
@@ -3565,7 +3565,7 @@ namespace RedCapCloud
                     base("SitesTable", ".//div[#'gwtWrapper']", parentFolder, 30000, null, false, "f3ed595b-c7c6-4591-9c20-ed4615814a54", "")
             {
                 _sitenameInfo = new RepoItemInfo(this, "SiteName", ".//tbody/tr//div[@innertext='Cogstate']", 30000, null, "30eed5e1-47f2-4a38-a46c-32ebf9644ffe");
-                _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='Test ID']//..//..//div[@innertext~'[0-9A-F]\\-']", 30000, null, "a4e3fe2f-52e7-42cb-99ff-80dbbbcab99a");
+                _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='Test ID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']", 30000, null, "326473da-bd04-4a0e-a1a3-3e6e18e9f398");
             }
 
             /// <summary>
@@ -3619,19 +3619,19 @@ namespace RedCapCloud
             /// <summary>
             /// The TestIdentifier item.
             /// </summary>
-            [RepositoryItem("a4e3fe2f-52e7-42cb-99ff-80dbbbcab99a")]
-            public virtual Ranorex.DivTag TestIdentifier
+            [RepositoryItem("326473da-bd04-4a0e-a1a3-3e6e18e9f398")]
+            public virtual Ranorex.InputTag TestIdentifier
             {
                 get
                 {
-                    return _testidentifierInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _testidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
             /// The TestIdentifier item info.
             /// </summary>
-            [RepositoryItemInfo("a4e3fe2f-52e7-42cb-99ff-80dbbbcab99a")]
+            [RepositoryItemInfo("326473da-bd04-4a0e-a1a3-3e6e18e9f398")]
             public virtual RepoItemInfo TestIdentifierInfo
             {
                 get

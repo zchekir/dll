@@ -90,7 +90,7 @@ namespace RedCapCloud.AddSubjectPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.MaleGender' at Center.", repo.REDCapCloud.SubjectsPage.MaleGenderInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.SubjectsPage.MaleGender.Click();
+            repo.REDCapCloud.SubjectsPage.MaleGender.Click(1);
             Delay.Milliseconds(0);
             
         }

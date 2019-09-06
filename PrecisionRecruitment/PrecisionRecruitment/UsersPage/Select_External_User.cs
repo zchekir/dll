@@ -108,7 +108,10 @@ namespace PrecisionRecruitment.UsersPage
             repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(Key, 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserRow' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserRowInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserRow'", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserRowInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserRowInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ExternalUserPage.ExternalUserRow' at Center.", repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserRowInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.ExternalUserPage.ExternalUserRow.Click(300);
             Delay.Milliseconds(200);
             

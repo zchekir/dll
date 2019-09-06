@@ -612,7 +612,7 @@ rxversion="8.2">
 				id="4752a246-2d28-4500-98dd-1581b67cb1f6"
 				name="Subject"
 				refimgid="e0ab1a6d-f80d-4af1-b210-0456d4e5bf2e"
-				searchtimeout="30000ms">
+				searchtimeout="240000ms">
 					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext&gt;$RandNum]
 				</item>
 				<item
@@ -669,7 +669,7 @@ rxversion="8.2">
 				id="e02de142-531f-4011-8bbe-814eb3205d56"
 				name="FirstVisit"
 				refimgid="29658ffa-ac2f-4fcf-a609-b7132d995284"
-				searchtimeout="30000ms">
+				searchtimeout="240000ms">
 					/dom[@domain=$DOM]//div[#'gwtWrapper']//table//div[@innertext='Visit 1']
 				</item>
 				<item
@@ -923,12 +923,12 @@ rxversion="8.2">
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="a4e3fe2f-52e7-42cb-99ff-80dbbbcab99a"
+				capname="inputtag"
+				id="326473da-bd04-4a0e-a1a3-3e6e18e9f398"
 				name="TestIdentifier"
-				refimgid="da65b922-b5a3-49e2-b36d-dea128918636"
+				refimgid="27dfae4c-0514-4a0c-929d-e447faaff05b"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']//div[@innertext='Test ID']//..//..//div[@innertext~'[0-9A-F]\-']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//div[@innertext='Test ID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']
 				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'gwtWrapper']
@@ -1147,14 +1147,14 @@ rxversion="8.2">
 			name="SiteIDExists"
 			refimgid="00a3f19a-229f-44df-87e7-3b3854c5406a"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[5]//div[@innertext~'Study Site ID - already exists']
+				/dom[@domain=$DOM]/body/div//div[@innertext~'Study Site ID - already exists']
 			</item>
 			<item
 			capname="divtag"
 			id="e758309b-d495-47cb-97e4-fe94b1af0b57"
 			name="ShowMoreValidationFailures"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[5]//div[@innertext='Show more']
+				/dom[@domain=$DOM]/body/div//div[@innertext='Show more']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -1192,9 +1192,8 @@ rxversion="8.2">
 			id="b4a72825-ea9d-4078-a609-1ae22df65884"
 			name="RoleAlreadyExists"
 			refimgid="c91bd090-214b-4528-96ca-b295782f8d53"
-			refpath="/dom[@domain='cgst-qcpd.uat.redcapcloud.com']/body/div[7]/div/div/div/div[@innertext='Role already exists']"
 			searchtimeout="30000ms">
-				/dom[@domain=$DOM]/body/div[7]//div[@innertext='Role already exists']
+				/dom[@domain=$DOM]/body/div//div[@innertext='Role already exists']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -1298,7 +1297,7 @@ AAAASUVORK5CYII=
 		<var
 		id="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 		name="DOM">
-			cgsqc.redcapcloud.com
+			cgst-qcpd.uat.redcapcloud.com
 		</var>
 		<var
 		id="9fb53a7d-2a6f-47b3-8fa5-4d13a07e1b86"
