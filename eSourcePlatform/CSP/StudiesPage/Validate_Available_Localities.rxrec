@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="71501523-7506-436a-bd65-75f54703bbf9"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_Available_Localities
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Available_Localities"
+	namespace="CSP.StudiesPage">
+	</codegen>
+	<variables>
+		<var
+		id="41538818-05bc-4e81-ada3-8939f1f9ba68"
+		name="Locality">
+			Japan - Japanese
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4969f8bf-38f9-48c9-a2a5-72a5d0d2a75d">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Locality">
+				</binding>
+			</bindings>
+			<info
+			id="8d4ec3e3-6f1b-4da5-a1d0-65e2d07561a5"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@innertext=$Locality]
+				</path>
+			</info>
+			<matchname>
+				Label
+			</matchname>
+			<matchvalue>
+				Japan - Japanese
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Available_Localities.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

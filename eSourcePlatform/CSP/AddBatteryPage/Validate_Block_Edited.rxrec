@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1b383883-28ec-426a-807d-328ddbc0af92"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_Block_Edited
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Block_Edited"
+	namespace="CSP.AddBatteryPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ab455b7f-2d3f-4175-8f3c-788a82ddba9b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7ed64282-086d-4d2c-b5c7-2ad397909022"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				*
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Battery Block Edited successfully"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="e7bf6f47-5ae7-477c-9eff-e76ec7d4b940">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c7b5b0c3-5b0d-4f3f-b4ca-af1a10361467"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Block_Edited.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

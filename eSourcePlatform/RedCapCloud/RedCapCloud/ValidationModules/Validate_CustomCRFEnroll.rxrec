@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e0eec7b1-3625-4717-8716-4003c6723337"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_CustomCRFEnroll
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_CustomCRFEnroll"
+	namespace="RedCapCloud.ValidationModules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="896de609-c2f6-4116-af81-b101267b1513">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f2f2e617-d49f-4849-b07f-cff241a5a41a"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, itag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="itag"
+				rect="368,617,20,18"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-check
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						subjectParams_useCustomCrf_viewOnly
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						i
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						margin-left: 3px; margin-right: 5px; width: 20px; float: left; cursor: pointer;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//i[#'subjectParams_useCustomCrf_viewOnly']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="cfb397ac-951c-4ab5-8f5e-416777a7ca95">
+				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
+			</helperscreenshot>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Custom CRF Enroll Enabled"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="97392afa-d353-41f8-807f-6e86454f5a35">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0cbbb2c-c046-4e87-ac05-f573ddb911c1"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_CustomCRFEnroll.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

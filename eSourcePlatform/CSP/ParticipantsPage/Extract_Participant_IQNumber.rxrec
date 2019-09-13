@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0de1ee83-e7e6-4ddd-8dbc-17f0eb0ca8ad"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Extract_Participant_IQNumber
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Extract_Participant_IQNumber"
+	namespace="CSP.ParticipantsPage">
+	</codegen>
+	<variables>
+		<var
+		id="247930dc-ae28-41ee-87b9-ab3394ab21f3"
+		name="externalID">
+		</var>
+	</variables>
+	<recorditems>
+		<getvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="67911760-9e6a-493e-8f8c-fe1c62563cc6"
+		varname="externalID">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a9be2453-e8e7-4234-b4ba-8f74e63504fd"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//input[@id~'formly_[[0-9]+_input_iqNumber_6']
+				</path>
+			</info>
+		</getvaluerecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Extract_Participant_IQNumber.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

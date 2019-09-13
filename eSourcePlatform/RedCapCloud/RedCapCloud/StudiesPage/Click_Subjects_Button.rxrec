@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7bfdabe8-1bfa-4069-9552-d0e070c42a5f"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_Subjects_Button
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_Subjects_Button"
+	namespace="RedCapCloud.StudiesPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StartPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a5210af8-d869-4620-8b92-7e509d05590d">
+				<argument
+				argname="findElement"
+				id="0d65f89f-fdac-4908-8179-3cdbb994b203">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="4905543d-fe92-4e16-bf63-8ad6f30c9a55">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="b10d8b72-793c-41bd-852b-2246171e4c3c"
+		sx="-952"
+		sy="-801"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="49e053e3-c79f-4754-ba64-0a7f12c8311b"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="-980,-818,62,26"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fi
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-hidden"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-icon"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//div[#'leftMenuButtons_navSubjects']/?/?/div
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1f8cc453-a097-470a-8b7e-a53b73f09147">
+				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
+ABRRRQB//9k=
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StopPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c6cf4f11-f17e-44ce-9329-09d6725580a2">
+				<argument
+				argname="findElement"
+				id="8d99c921-4011-450c-9157-e2247d675664">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="b823757c-72be-4b1c-b0eb-16bb8284844c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="970238ad-03ed-405c-947a-61f5f26728fb"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_Subjects_Button.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

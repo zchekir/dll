@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d5827b0a-fbdc-4cd8-bc10-56d077987d88"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_GenerateReport_Button
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_GenerateReport_Button"
+	namespace="CSP.ReportsPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="99e243ca-b3a5-4da4-b042-5aafa5b8bb35"
+		waitaction="Exists"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="85a4dc2d-d1d7-4fec-8213-99295fb09d62"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//button[@innertext&gt;'Generate Report']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="f61bec56-d648-4440-9266-45e05bbc2572"
+		sx="-712"
+		sy="-852"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="85a4dc2d-d1d7-4fec-8213-99295fb09d62"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="-766,-868,130,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cogstate-button float-right ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Generate Report           &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]/?/?/tag[@tagname='cogstate-generic-study-report-compact']/div/div[1]/div[1]/button[@innertext~'^Generate\ Report\ \ \ \ \ \ \ \ \ \ ']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="2bc6cfec-12df-4d55-b21d-a1ca7401d8d7">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="db700ac9-8314-4477-949c-765ba324eef1"
+		sx="145"
+		sy="-791"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fd579a89-f412-4372-a0b1-89703d468cd0"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="120,-810,46,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cogstate-button ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						OK
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]/body/div[3]/div/div/div/div[3]/button[@innertext='OK']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="2363c4b5-79e2-4784-9f39-23594252f7ea">
+				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
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_GenerateReport_Button.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

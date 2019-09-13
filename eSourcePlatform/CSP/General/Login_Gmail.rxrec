@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="be7da2ac-7a53-4abe-b613-0de37a8a2816"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Login_Gmail
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Login_Gmail"
+	namespace="CSP.General">
+	</codegen>
+	<variables>
+		<var
+		id="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
+		name="GmailAddress">
+			ranorexcogstate@gmail.com
+		</var>
+		<var
+		id="a0d0c797-fa13-41e8-9218-9789ef1b9316"
+		name="GmailPassword">
+			Cogstate#1
+		</var>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="Login_Gmail"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Select_Ranorex_Account"
+		namespace="CSP.General"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="21324391-0a54-4d8b-ab91-32c5f413b0df">
+				<argument
+				argname="RanorexUserAccountMultiple"
+				id="68cc4419-81c5-436a-b9ad-4504cbf00d12">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="45c4abdc-9001-40db-bba4-e9a0d0d810ba"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='accounts.google.com']//div[#'view_container']//p[@innertext='ranorexcogstate@gmail.com']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="PasswordField"
+				id="38ba883b-19e3-4548-8db3-d4313eec18c5">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="3d43d72b-f60e-45e9-9788-c3db8d1c5f02"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='accounts.google.com']//div[#'password']//input[@name='password']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="RanorexUserAccountSingle"
+				id="cae639ed-d06a-4ed4-ab4a-76efc5fc460b">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="26950d79-cb5d-46ca-bcdc-f2244b470f30"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='accounts.google.com']//div[#'view_container']//div[@innertext='ranorexcogstate@gmail.com']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="EmailField"
+				id="7f8a43b5-1945-4155-b538-a8b173ef305b">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="fc3a780c-d661-4032-a6c3-028ad6372319"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='accounts.google.com']//input[#'identifierId']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="EmailNext"
+				id="d10d9755-a42f-44bf-a78b-55e4c2a6520f">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="ec53e776-3a8e-44d6-9208-a6e94f3ede4e"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='accounts.google.com']//div[#'identifierNext']/?/?/span[@innertext='Next']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="26aa4286-9904-4186-bac0-4443037e7e77"
+		sx="1098"
+		sy="633"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4001ae90-b375-4e97-8208-4553c98d2d13"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="1085,625,32,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						RveJvd snByac
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Next
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='accounts.google.com']//div[#'passwordNext']/?/?/span[@innertext='Next']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="2738084e-bbe5-42a5-b43e-29f62b32a81f">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA4AGwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKy
+b+/mjuDHE20L7ZzVwg5uyJlJRV2a1FYH9o3f/PX/AMdH+FH9o3f/AD1/8dH+FaewkR7WJv0Vz51K
+5HWbH4Ck/tO5/wCe4/IUvZNdUUpN6pM6Giue/tO5/wCe4/IUf2nc/wDPcfkKXsvNDu/5WdDRXPf2
+nc/89x+QpRqN0ek3/jopqi3s0JztumdBRWB/aN3/AM9f/HR/hR/aN3/z1/8AHRT9hIn2sTfoqCzm
+NxbLIwwT1qesWrOxonfUK5/Uf+P6T8P5Cugrn9R/4/pPw/kK2ofEzOrsVqKKK7DmGeWZbhEAyW4A
+qb7E4laMx/OoyRntSWv/ACEYPqK1kdZnnJ4ljDr9V7VxpLmldJ6noVJzjGCjJrTv5sxPLT0/Wjy0
+9P1q9GIkIkeRfI83yyGVR/yz3fePOc+9TW4hmsy8SwySgEKAQcj1PvV/u/5UY+0rfzv72Zjw7U3F
+CARkE55pIv8AVitG9Zn02JgibQpDEAcGs6L/AFYpQSVTRW0f5lzlKWHfM29Vv6MfRRRXUcRu6V/x
+5J+P86uVT0r/AI8k/H+dXK8+p8TOyHwoK5/Uf+P6T8P5CugrG1C0la5Z0XcGrSg0pakVU2jPoqf7
+Hcf88jR9juP+eRrq5l3OezKjHEy59KduBIUZZmOAFGSfwFTmxmY5MJ/OgWNwjK8aMjqcqwPQ1gua
+LdranXKVOcY3vdK3kW9Ii8+HcMFUuSzA/wDXPH8zUd7psdvZ+cyIHjjiQMvHzbsMfxBFaen3K3Eb
+ZQRTg/vY+4b1/wDr1BrThrZbVfmlmZcIDzgHJP6Vz3blcaSSsYrMu08jp60kX+rFT/2fL/zxP504
+WU4GBEa6Y83PzStsTOVNUuSF976kNFT/AGO4/wCeRo+x3H/PI1tzLuctma2lf8eSfj/OrlV7GJob
+ZUbqKsVwTd5M647IKMUUVJQYHpRgelFFABgelGB6UUUAQT2VvPIskiHeowGVipx6ZBogs7e3YtFG
+A7dWYlmP4nnHFFFAE+B6UYHpRRQAYHpRgelFFABRRRQB/9k=
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Login_Gmail.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

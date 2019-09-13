@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7a7be4ca-8ba5-4305-bd1d-e3a470d856b4"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Logout_Gmail
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Logout_Gmail"
+	namespace="CSP.General">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="c8fe1b92-98dd-4dd6-9514-74d2caf69959"
+		sx="1875"
+		sy="148"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2468f073-1e7c-48a5-bbdc-af4e475eb9b9"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='mail.google.com']//header[#'gb']/div[2]/div[3]//a[@href~'^https://accounts\.google\.c']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="4990c230-ac26-42ff-8285-03cbac449ab8"
+		sx="1842"
+		sy="414"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="64e8a261-42d6-40a1-bd4b-b6dc572a70e2"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="1809,398,73,30"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						gb_za gb_4f gb_ag gb_Pe gb_Fb
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						gb_71
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Sign out
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://accounts.google.com/Logout?hl=en&amp;continue=https://mail.google.com/mail&amp;service=mail&amp;timeStmp=1536108080&amp;secTok=.AG5fkS_imZmHKAIi0Vu8ftB8hOkRpMkBMw
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+						_top
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mail.google.com']//a[#'gb_71']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="2c65e3b1-3772-4a20-924e-798038f69353">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABHANUDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKTY
+PVv++jRsHq3/AH0aAFopNg9W/wC+jRsHq3/fRoAWik2D1b/vo0bB6t/30aAFopNg9W/76NGwerf9
+9GgBaKTYPVv++jRsHq3/AH0aAFopNg9W/wC+jRsHq3/fRoAWik2D1b/vo0bB6t/30aAFopNg9W/7
+6NGwerf99GgBaKTYPVv++jRsHq3/AH0aAFopNg9W/wC+jRsHq3/fRoAWik2D1b/vo0bB6t/30aAF
+opNg9W/76NGwerf99GgBG++v0NQ333Iv+un9DUxGGXGe/U/Sob77kX/XT+hpoTFT7tFCfdopDJ6K
+KKACiiigAooooAKKKKACiiigAooooAytQM0mqRQRTvEHT+EnGeaf/Zl5/wBBCT8z/jSXP/Iftv8A
+c/8Aiq1qhJNu51TqShGKj27Iyv7MvP8AoISfmf8AGj+zLz/oISfmf8a0pJUjxuJyegAJP5ChZFfG
+0kgjIOOKfIiPrFT+kjN/sy8/6CEn5n/Gj+zLz/oISfmf8a1aKORB9Yqf0kZX9mXn/QQk/M/40f2Z
+ef8AQQk/M/41q0jMFUseABk0ciD6xU/pIy/7MvP+ghJ+Z/xpDpt2vJ1CTHsT/jWqCGAI6Hmmyfc/
+Efzo5EH1ip/SRQ0WR5bR2kdnPmEZY57Cr9Zug/8AHk//AF0P8hWlRD4ULEK1WQjfeX8f6VBffci/
+66f0NTt95fx/pUF99yL/AK6f0NWjBip92ihPu0Uhk9FFFABRRRQAUUUUAFFFFABRRRQAUUUUAZlz
+/wAh62/3P/iq1ayrr/kPW3+5/wDFVq1MepvW2j6f5kFwPnRsSDAOHjGSPbGKgZZmUHYQxjbkDGeR
++RNXqRgGUqwyDwRVGBl3TJEk8kULbY41YptK5wST/wDrqxpswkM6+X5LowDRH+A4/l6HvS30SR6Z
+d7QcmF8kkk/dPrT7y1aVlnt2EdzGMKx6MP7reo/l1oAjjjO5AI2EoJ8xiOo579+1N2mSOOMxMdsT
+Kdy8ZwKsWlx9piJMbRyI22RG6q3p79etT0AR24AgQKu0Y6Yx+lOk+5+I/nTqZJ938R/OgDO0H/jy
+f/rof5CtKs3Qf+PJ/wDrof5CtKph8KN8R/FkI33l/H+lQX33Iv8Arp/Q1O33l/H+lQX33Iv+un9D
+Vo52Kn3aKE+7RSGT0VDJP5ShmTgsF4PqcUrTbCoYY3HA570AS0Uze3939aZ5/wC98vZzt3daAJqK
+Zvb+7+tG9v7v60APopm9v7v60b2/u/rQA+imb2/u/rRvb+7+tAD6KZvb+7+tG9v7v60AUL+C6OoR
+3FvEH2Jjkgc8+/vTd+rf8+6f99//AGVaO9v7v60b2/u/rU8vmb+20ScU7Gdv1b/n3T/vv/7Kjfq3
+/Pun/ff/ANlWjvb+7+tG9v7v60cvmHtl/Kv6+ZlTjVZreSI26YdSv3/Uf71R3CahPJKL6NxbzqU2
+x/OIiOVOF5PI5+tbO9v7v61G1ztYqUOR700rdSJTUvspGbbDUY4F8qyiiDDcVX5ecemal36t/wA+
+6f8Aff8A9lV5LjecBD+dP3t/d/Wly+ZSqr+Vf18zO36t/wA+6f8Aff8A9lRv1X/n2jP1b/7KtHe3
+939aN7f3f1o5fMftl/Kv6+ZV0m3ltrVkmXaxcnGQeMCrtM3t/d/Wje3939aaVlYynNzk5Mc33l/H
++lQX33Iv+un9DUwyzAkYxUV/9yL/AK6f0NUiGCfdooT7tFIYy62tAsbHLh493GOrCoJI4Y5DlFEa
+XC8Y4GV9PrRRWse39dCH/X4hHDGTCSgJeeRWyOo+bj6cU+yUecg7BHA+m+iim/6/ERobRRtFFFYm
+gbRRtFFFABtFG0UUUAG0UbRRRQAbRRtFFFABtFG0UUUAG0VTmUec/wBR/KiigB1uo8z8KtbRRRQA
+bRRtFFFABtFG0UUUAAFVr/7kX/XT+hoopoTBPu0UUUhn/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="2bb76a30-10ae-4bd2-ab58-6e31c4b9ca93">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b26f2e45-c612-4b60-8fd8-0363680b055b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='accounts.google.com']
+				</path>
+			</info>
+		</closeapprecorditem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="e4f5a423-a47b-4dec-ae57-80dc1135520b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="12fb7791-6629-4ab4-8196-4d7f353baa8d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='myaccount.google.com']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Logout_Gmail.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

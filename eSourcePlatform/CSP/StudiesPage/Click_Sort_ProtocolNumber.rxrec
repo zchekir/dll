@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5653817a-6256-4fcf-9b16-9dc6f286b4f0"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_Sort_ProtocolNumber
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_Sort_ProtocolNumber"
+	namespace="CSP.StudiesPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="6240ce4b-a4ac-4b44-ad89-6c8185d9ff70"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a5d60b00-71d0-4b32-b214-9440e3969271"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//table/thead/?/?/th[@innertext~'Protocol Number']
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_Sort_ProtocolNumber.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

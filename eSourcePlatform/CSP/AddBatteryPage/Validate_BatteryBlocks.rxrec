@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7f43f921-ea1c-4653-b425-20d5105abb52"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_BatteryBlocks
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_BatteryBlocks"
+	namespace="CSP.AddBatteryPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="01808b48-1d28-4272-8426-b133df26127f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e0c09b12-b293-4227-ac63-94eecf66affb"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_type_1']/option[@innertext=$BatteryBlock]
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_BatteryBlocks.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

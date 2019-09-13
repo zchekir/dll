@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="13c93c5b-8e2f-4650-97ed-eb618e830310"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Add_CBB_CRF
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Add_CBB_CRF"
+	namespace="RedCapCloud.AddEventDefinitionsPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="91bd8b5a-830f-4e75-9910-656759552fc4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8c73533d-e702-4985-8b89-b91f9a60a82b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]/body/div[6]/div/div/div//table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[4]/td[1]/div[@innertext~'^Cogstate\ Battery\ CRF\ -\ CB']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="ea58fdef-7521-4984-aa32-30c9ad7b035c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0e63ba41-c14c-410f-9bc8-05ff4dc28e21"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//button[#'eventCrfEditMp_saveAndReturn']/span[@innertext='Save and Exit']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Add_CBB_CRF.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

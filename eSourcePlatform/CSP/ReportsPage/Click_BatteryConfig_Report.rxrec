@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c3236857-9730-48cf-a6fc-1375129bc038"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_BatteryConfig_Report
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_BatteryConfig_Report"
+	namespace="CSP.ReportsPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="177fe567-6e83-4590-919b-ee3c15d8e64f"
+		sx="-841"
+		sy="-634"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="22ce7e5d-f755-46e4-9d3b-319ad3ff6903"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Battery Config Report' and @visible='True']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="505a12fb-a866-4f3c-9560-d74a354d4a9b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2b112b48-8961-4165-9e33-92299b82b5ea"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext='Battery Config Report &gt; Reports']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Battery Config Report &gt; Reports
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_BatteryConfig_Report.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

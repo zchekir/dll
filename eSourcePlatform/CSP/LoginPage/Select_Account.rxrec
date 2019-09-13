@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="03144120-9936-41a5-9ed0-267c31bc3ea3"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Select_Account
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Account"
+	namespace="CSP.LoginPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="Select_Account"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Select_User_Account"
+		namespace="CSP.LoginPage"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="64de59de-7144-4668-acb9-84f8b057a136">
+				<argument
+				argname="ExistingAccount"
+				id="ca347873-3be3-4eef-bec2-e5f70a67801b">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="cfff37f6-a84c-42e0-965e-643a182eeaae"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//div[#'tilesHolder']//div[@innertext='dwood@cogstate.com']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Account.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

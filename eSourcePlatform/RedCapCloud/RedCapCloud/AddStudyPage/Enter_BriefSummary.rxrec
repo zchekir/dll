@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f8785a4e-ec14-4f14-a878-c63604520e51"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Enter_BriefSummary
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Enter_BriefSummary"
+	namespace="RedCapCloud.AddStudyPage">
+	</codegen>
+	<variables>
+		<var
+		id="01efd426-2845-43ed-afa6-6952adeb66c1"
+		name="BriefSummary">
+			Ranorex
+		</var>
+		<var
+		id="3c2aee85-fa26-4c15-8b6a-212716f8f4a3"
+		name="RandNum">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="1ms"
+		enabled="True"
+		loc="Center"
+		movetime="3ms"
+		optional="False"
+		searchpropertyid="fe678653-af49-40f0-ba4d-0300a9a58f38"
+		sx="1313"
+		sy="-206"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="584c17a5-dcaf-4c2d-8a03-f25f76779df0"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, textareatag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="textareatag"
+				rect="1247,-240,255,100"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						summary_summary
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						textarea
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="cols"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="rows"
+					type="System.String">
+						5
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//textarea[#'summary_summary']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6f8e459e-6b2b-43e9-aee5-645cf6e1c5c9">
+				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
+pGDjrUSoftrL/Avzj2J4/wAfzqzQMKxdEtoZ7dzLGrkPwSM9hW1WV4f/AOPaT/f/AKCpe6NoNqlK
+3l+pc+wWv/PCP/vkUfYLX/nhH/3yKs0VVjLml3K32C1/54R/98ij7Ba/88I/++RVmiiwc0u5W+wW
+v/PCP/vkUfYLX/nhH/3yKs0UWDml3K32C1/54R/98ij7Ba/88I/++RVmiiwc0u5W+wWv/PCP/vkU
+fYLX/nhH/wB8irNFFg5pdyt9gtf+eEf/AHyKPsFr/wA8I/8AvkVZoosHNLuVvsFr/wA8I/8AvkUf
+YLX/AJ4R/wDfIqzRRYOaXcrfYLX/AJ4R/wDfIo+wWv8Azwj/AO+RVmiiwc0u5W+wWv8Azwj/AO+R
+R9gtf+eEf/fIqzRRYOaXcrfYLX/nhH/3yKPsFr/zwj/75FWaKLBzS7lb7Ba/88I/++RR9gtf+eEf
+/fIqzRRYOaXcrfYLX/nhH/3yKPsFr/zwj/75FWaKLBzS7lb7Ba/88I/++RR9gtf+eEf/AHyKs0UW
+Dml3K32C1/54R/8AfIo+wWv/ADwj/wC+RVmiiwc0u5W+wWv/ADwj/wC+RR9gtf8AnhH/AN8irNFF
+g5pdyt9gtf8AnhH/AN8iqPlpFrtssaKg2Nwox/erXrKk/wCQ/bf7jf8As1TI2oybbu+jNWiiiqOc
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAECqpO0A
+ZOTgdaWiigArK8P/APHtJ/v/ANBWrWV4f/49pP8Af/oKl/EjaP8ACl8v1NWiiiqMQooooAKKKKAC
+iig0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVlSf8h+2/wBx
+v/Zq1aypP+Q/bf7jf+zVMtjaju/RmrRRRVGIUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABWV4f/AOPaT/f/AKCtWsrw/wD8e0n+/wD0FS/iRtH+
+FL5fqatFFFUYhRRRQAUUUUAFB6UUGgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACsqT/kP23+43/s1atZUn/Iftv8Acb/2aplsbUd36M1aKKKoxCiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKyvD/wDx7Sf7/wDQ
+Vq1leH/+PaT/AH/6CpfxI2j/AApfL9TVoooqjEKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigArKk/wCQ/bf7jf8As1atZUn/ACH7b/cb/wBmqZbG
+1Hd+jNWiiiqMQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACsrw//wAe0n+//QVq1leH/wDj2k/3/wCgqX8SNo/wpfL9TVoooqjEKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArKk/5D9t/uN/7
+NWrWVJ/yH7b/AHG/9mqZbG1Hd+jNWiiiqMQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACsrw/8A8e0n+/8A0FatZXh//j2k/wB/+gqX8SNo/wAK
+Xy/U1aKKKoxCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKypP8AkP23+43/ALNWjLJt+VSN2Mknoo9TWdJ/yH7b/cb/ANmqZbG1Hd+jNWiiiqMQ
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACs
+LSL2C1t3WWQKxbOCD0wPQVu1TurS3WBmSCIMvK/IOT6fjUtO90bU5xUXGXUb/a9p/wA9V/Jv8KP7
+XtP+eq/k3+FQSW8MT+WBEJAAVXy1JlJ69R0+nSpIktpZxGsUBO9iwEa/Ko4wePXFHvB+58/w/wAh
+/wDa9p/z1X8m/wAKP7XtP+eq/k3+FRtbRfaSyxxhfMCBPLXB4ye316elQIImaVhHAVEZfG1TtwRw
+QBwce5o94P3Pn+H+Rb/te0/56r+Tf4Uf2vaf89V/Jv8ACq1zGgK7YreNXyy5VQT6AfKcnvjGeavr
+aW+wF7eDdjnEYxR7wfufP8P8iH+17T/nqv5N/hR/a9p/z1X8m/wrOZbedZXt0iWFPk6gtywyx9AO
+cU8xwLceY0SCAsxj+UfPgAAD1zyfej3g/c+f4f5F7+17T/nqv5N/hR/a9p/z1X8m/wAKoLbKB5Lx
+p55WNVGBn1Zv58+1XbiC2FwI9sMPAK4iUlyT0xjp9PWj3g/c+f4f5Dv7XtP+eq/k3+FH9r2n/PVf
+yb/CoBDEhMpijKne2zylICjp/Tvj+dNt4klPlhYGy4G9VVuMEnHygelHvB+58/w/yLP9r2n/AD1X
+8m/wo/te0/56r+Tf4VVAi85ysUDqFY7Sq5XHqAOPz/AU5oLf5PLZJeWYYjQb8D7oIHP4e9HvB+58
+/wAP8ix/a9p/z1X8m/wo/te0/wCeq/k3+FVoYlcY22zb2UBlVWA7nHyjsOnJqWGG3a8Me2Jwo+7s
+Tt6jAIOfwo94P3Pn+H+RJ/a9p/z1X8m/wo/te0/56r+Tf4VXuY4lkYLFBGrMQGYKo4A4GVIyST27
+UjWsTMN+yMkoh2ooAPU9RR7wfufP8P8AIs/2vaf89V/Jv8KP7XtP+eq/k3+FWPsdr/z7Q/8AfAo+
+x2v/AD7Q/wDfAo94P3Pn+H+RX/te0/56r+Tf4Uf2vaf89V/Jv8KsfY7X/n2h/wC+BR9jtf8An2h/
+74FHvB+58/w/yK/9r2n/AD1X8m/wo/te0/56r+Tf4VY+x2v/AD7Q/wDfAo+x2v8Az7Q/98Cj3g/c
++f4f5Ff+17T/AJ6r+Tf4Uf2vaf8APVfyb/CrH2O1/wCfaH/vgUfY7X/n2h/74FHvB+58/wAP8iv/
+AGvaf89V/Jv8KP7XtP8Anqv5N/hVj7Ha/wDPtD/3wKPsdr/z7Q/98Cj3g/c+f4f5Ff8Ate0/56r+
+Tf4Uf2vaf89V/Jv8KsfY7X/n2h/74FH2O1/59of++BR7wfufP8P8imNQshjM2cHcchvmPqfl/wA/
+gKgSeK41y3eJtwCEE4I5+Y9/rWn9jtf+faH/AL4FKltBGwZII1YdCEANDUnuUp0o35U72t0JaKKK
+o5wooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="Ranorex"
+		duration="1ms"
+		enabled="True"
+		optional="False"
+		presstime="1ms"
+		searchpropertyid="231073ce-3486-4957-93b9-010799a4e5b1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="BriefSummary">
+				</binding>
+			</bindings>
+			<info
+			id="584c17a5-dcaf-4c2d-8a03-f25f76779df0"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, textareatag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="textareatag"
+				rect="1247,-240,255,100"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						summary_summary
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						textarea
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="cols"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="rows"
+					type="System.String">
+						5
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//textarea[#'summary_summary']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="Ranorex"
+		duration="1ms"
+		enabled="True"
+		optional="False"
+		presstime="1ms"
+		searchpropertyid="231073ce-3486-4957-93b9-010799a4e5b1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="584c17a5-dcaf-4c2d-8a03-f25f76779df0"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, textareatag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="textareatag"
+				rect="1247,-240,255,100"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						summary_summary
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						textarea
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="cols"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="rows"
+					type="System.String">
+						5
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//textarea[#'summary_summary']
+				</path>
+			</info>
+		</keysequenceitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d01168a-b733-4bbe-9874-22575ea6f32c">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="BriefSummary">
+				</binding>
+			</bindings>
+			<info
+			id="584c17a5-dcaf-4c2d-8a03-f25f76779df0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//textarea[#'summary_summary']
+				</path>
+			</info>
+			<matchname>
+				TagValue
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d01168a-b733-4bbe-9874-22575ea6f32c">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="584c17a5-dcaf-4c2d-8a03-f25f76779df0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//textarea[#'summary_summary']
+				</path>
+			</info>
+			<matchname>
+				TagValue
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Enter_BriefSummary.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -50,7 +50,7 @@ namespace engine.Helpers
         {
         	dt.Clear();
 		
-      	
+        	Report.Log(ReportLevel.Info, "Before");
         	string query = @"SELECT 
 	     Userdata.Part.IQNumber                                                                                                                 AS [IQNumber]
 		,UserData.Person.DOB                                                                                                                    AS [DateOfBirth]
@@ -196,7 +196,9 @@ namespace engine.Helpers
 			Assessment.Assessment.Age,
 			UserData.PrWorkflowInstance.TestIdentifier,
 			Assessment.Test.Descript";
-					
+		
+        	Report.Log(ReportLevel.Info, "Before");
+        	
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);

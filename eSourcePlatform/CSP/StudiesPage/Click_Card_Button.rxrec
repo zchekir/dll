@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f7dfa7cb-726e-49ec-95d9-c15f171697ae"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_Card_Button
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_Card_Button"
+	namespace="CSP.StudiesPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="4bbaafd3-d4c2-462f-8f33-ecdef9df1779"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="22e6ccca-2825-47e9-b442-5534628e284c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-header']//div/span[1]/img[@src&gt;'https://'+$DOM+'/asset/images/card_icon_' and @visible='True']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_Card_Button.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

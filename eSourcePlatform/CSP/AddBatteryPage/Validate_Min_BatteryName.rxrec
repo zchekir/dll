@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b32de281-be93-4092-be55-f034d26105bb"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_Min_BatteryName
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Min_BatteryName"
+	namespace="CSP.AddBatteryPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="dc8467c7-394b-4d3b-bb88-5c6d5c7d169d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c7900ad1-3cd8-4a86-aa4f-405332898535"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[1]//div[@innertext~'The minimum length']
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Min_BatteryName.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="62ff2cdc-5712-4e1c-bbba-4c51f5e9daf2"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_DataConfirmation
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_DataConfirmation"
+	namespace="RedCapCloud.SubjectsPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="228a5947-c647-43c2-9001-f4ea4c6d2247"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d9b364c3-4d5d-4c1e-8c60-c712bd9fea82"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[@id&lt;'cogstateBatteryDataConfirmation']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="629f6864-79cc-4cd0-8a57-c8e35f851be4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3dff02c4-a338-4b37-904b-2ab9b5ef7a75"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="1123,-835,316,22"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Cogstate Battery Data Confirmation
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\ Battery\ Data\ Con']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="d9a79b22-b277-41e5-b883-e0258d44b928">
+				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
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Cogstate Battery Data Confirmation
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_DataConfirmation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
