@@ -2163,6 +2163,10 @@ rxversion="8.3">
 			name="Add_Battery">
 			</testcase>
 			<testcase
+			id="6ebd9ab5-ef68-4bf4-b14b-8db5b7f4fe61"
+			name="TestMe">
+			</testcase>
+			<testcase
 			id="702d7364-d105-4608-94ab-44ad3baf1cfd"
 			maxrange="0"
 			minrange="0"
@@ -3233,6 +3237,12 @@ rxversion="8.3">
 					variablename="RandNum">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="af646ac5-8291-4b20-abd6-178781706d86"
+			name="Clear_BatteryName_Field"
+			ref="ddae5393-1c88-44fc-9aae-c8e3e51abb18"
+			type="Recording">
 			</testmodule>
 			<setup
 			id="b055f9d9-3ae4-4ba9-8f28-d6ce7ae6af1c"
@@ -5619,6 +5629,14 @@ rxversion="8.3">
 							</testmodule>
 						</teardown>
 					</smartfoldernode>
+					<testcase
+					id="6ebd9ab5-ef68-4bf4-b14b-8db5b7f4fe61"
+					name="TestMe">
+						<testmodule
+						id="af646ac5-8291-4b20-abd6-178781706d86"
+						name="Clear_BatteryName_Field">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -5931,6 +5949,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="6e082396-bffa-4d84-b254-0da30d111799">
+			</testcontainer>
+			<testcontainer
+			id="6ebd9ab5-ef68-4bf4-b14b-8db5b7f4fe61">
 			</testcontainer>
 			<testcontainer
 			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
