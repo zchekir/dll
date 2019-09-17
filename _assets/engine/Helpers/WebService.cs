@@ -182,6 +182,36 @@ namespace engine.Helpers
 		}
 	}
 	
+	/// <summary>
+	/// /Secret parsing-------------------- 
+	/// </summary>
+	public class SaveNewSecretResponse
+	{
+	
+		public string name { get; set; }
+		
+		
+		public string value { get; set; }
+		
+		
+		public SaveNewSecretResponse()
+		{
+			
+		}
+			
+	}
+	
+		public class DevopsRespose
+		{
+			public string assemblyVersion {get;set;}
+			
+			
+			public  DevopsRespose()
+			{
+			
+			}
+		}
+	
 	
     /// <summary>
     /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
@@ -196,13 +226,14 @@ namespace engine.Helpers
         public static string AssessmentURL;
         public static string TestIdentifier;
         public static string QualificationStatus;
-        
+        public static string Token; 
+        public static string Sversion;
         
         /// <summary>
         /// This method will retrieve an AuthToken based on the protocl, key and secret provided
         /// </summary>
         [UserCodeMethod]
-        public static void Authenticate(string randNum, string DOM, string studyProtocolName, string key, string secret)
+        public static void Authenticate(string randNum, string DOM, string studyProtocolName, string key)
         {
         	//Setup API call
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/AuthenticationToken");
@@ -210,7 +241,7 @@ namespace engine.Helpers
         	httpRequest.Method = "POST";
         	
         	//Create JSON ibject containing key and secret which is sent in the body
-        	AuthJSONRequest jsonObject = new AuthJSONRequest(key, secret);
+        	AuthJSONRequest jsonObject = new AuthJSONRequest(key, Token);
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
         	{
@@ -410,6 +441,74 @@ namespace engine.Helpers
         	AssessmentURL = Uri.EscapeUriString(AssessmentURL);
         	Report.Log(ReportLevel.Info, "Website", "Opening web site " + AssessmentURL + " with browser 'Chrome' in normal mode.");
         	Host.Current.OpenBrowser(AssessmentURL, "Chrome", "", false, false, false, false, false);
+        }
+        
+        
+        /// <summary>
+        /// This method its about generating secret key and to use it to authenticate to the server 
+        /// </summary>
+        [UserCodeMethod]
+        public static void GSecret(string DOM)
+        {
+        	//creating the API Request 
+        	string SecretAPI = "/api/externalusers/"+ SQLUtility.ResetToken + "/savenewsecret"; 
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+DOM+ SecretAPI );
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.ContentLength=0;
+        	httpRequest.Method = "PUT";
+        	
+        	
+        	//Sending the API call:
+        	
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	SaveNewSecretResponse responseObject = new SaveNewSecretResponse();
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        		string secret = sr.ReadToEnd();
+        		responseObject = new JavaScriptSerializer().Deserialize<SaveNewSecretResponse>(secret);
+        		Token = responseObject.value;
+        		Report.Log(ReportLevel.Info, "Secret: " + Token);
+        		
+        		
+     
+        	}
+        	
+        }
+        
+        
+        
+        /// <summary>
+        /// This is a placeholder text. Please describe the purpose of the
+        /// user code method here. The method is published to the user code library
+        /// within a user code collection.
+        /// </summary>
+        [UserCodeMethod]
+        public static void ServerVersion(string DOM)
+        {
+        	string ServerVersion = "/api/devops";
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+DOM+ ServerVersion  );
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.ContentLength=0;
+        	httpRequest.Method = "GET";
+        	
+        	
+        	//Sending the API call:
+        	
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	DevopsRespose responseObject = new  DevopsRespose();
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        		string versionServer = sr.ReadToEnd();
+        		responseObject = new JavaScriptSerializer().Deserialize<DevopsRespose>(versionServer);
+        		Sversion = responseObject.assemblyVersion;
+        		
+        	}
+        	// splinting version number
+        	string[] splitVersion = Sversion.Split('.');
+        	Sversion = splitVersion[0] + "." + splitVersion[1] + "." + splitVersion[2];
+        	
+        	
+        	
         }
         
     }

@@ -78,6 +78,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+			name="GetResetToken"
+			ref="9ecd415f-eabd-42d3-912c-00d78f3c79d2"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="11f071b4-c41c-4605-bdde-ed27195ee7c9"
 			name="Validate_StudyEntry"
 			ref="dcd3c857-708a-4094-9656-57f93b949ee6"
@@ -573,6 +579,75 @@ rxversion="8.3">
 			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
 			type="Recording">
 			</testmodule>
+			<modulegroupdef
+			id="8893f97d-6402-4354-9824-20a0162229b1"
+			name="GeneratingSecret">
+				<groupvariables>
+					<groupvariable
+					id="e5fbf288-cd10-4478-b174-b7cd244f894c"
+					name="dbUsername">
+						<modulevariable
+						moduleref="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+						name="dbUsername"
+						variableref="7f171fab-35c7-4d6e-a8d4-3f02439fb916">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="1789d8d4-5bce-4e63-ae7e-8d4c4261303e"
+					name="dbPassword">
+						<modulevariable
+						moduleref="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+						name="dbPassword"
+						variableref="0e466bbf-8864-43a0-b57b-a4ac51ea53bb">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="8e6959d3-3ca1-4bf1-b7ca-4657ef4aced1"
+					name="Key">
+						<modulevariable
+						moduleref="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+						name="Key"
+						variableref="f149efa0-570c-4a8d-a3eb-ac86747536d5">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="544ee441-fb93-4dd7-9be8-2d8bb4e266be"
+					name="DBServer">
+						<modulevariable
+						moduleref="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+						name="DBserver"
+						variableref="23ed5de0-b936-40f7-88e0-8bf6399013a1">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="709d7ef8-5f93-4a0b-a867-796e4645472f"
+					name="Database">
+						<modulevariable
+						moduleref="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+						name="Database"
+						variableref="33d9a492-d3e2-4b73-ae5d-bbf6949e215a">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
+					name="Authentication">
+						<modulevariable
+						moduleref="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+						name="Authentication"
+						variableref="f06f1069-da41-4674-8cf8-7d0426f56aa7">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="16649c69-74df-4134-bf17-75efa59abd9c"
+					name="SPDOM">
+						<modulevariable
+						moduleref="a511b295-11b3-4fed-a007-8e88c8d1ab7f"
+						name="CSPDOM"
+						variableref="be5ff697-bd07-40a4-9c8a-91518bacb8b8">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
 			<testmodule
 			id="88cbb18f-371b-4243-b17b-7b7e733db8e1"
 			name="Enter_Username"
@@ -671,6 +746,12 @@ rxversion="8.3">
 			ref="2d955e0d-66b6-44f7-997e-8b5e6d4de1a2"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="a511b295-11b3-4fed-a007-8e88c8d1ab7f"
+			name="G_Secret"
+			ref="b5c1f78b-d628-4e9c-83b0-597bcacc9905"
+			type="Recording">
+			</testmodule>
 			<modulegroupdef
 			id="a5d2452f-7e69-4e4e-bdba-dbdd76719e02"
 			name="Add_External_User">
@@ -710,26 +791,13 @@ rxversion="8.3">
 						</modulevariable>
 					</groupvariable>
 					<groupvariable
-					id="08222c6f-0ee2-476c-a03b-dac49cca8da0"
-					name="RandNum">
-						<modulevariable
-						moduleref="009bd039-6459-439a-b527-e6c69216f9ce"
-						name="RandNum"
-						variableref="f90483c1-13d8-42b7-b4ec-5eeeb99ddfa9">
-						</modulevariable>
-					</groupvariable>
-					<groupvariable
 					id="9fc6d3c2-783f-4111-9f27-d77e97f4380e"
-					name="ExternalEmail">
+					name="GmailAddress">
 						<modulevariable
 						moduleref="009bd039-6459-439a-b527-e6c69216f9ce"
-						name="ExternalEmail"
-						variableref="dbb429c7-ce36-400d-b26e-fc1f47462f65">
+						name="GmailAddress"
+						variableref="831c3ccb-9a5c-4c2a-ada9-75e6678cd703">
 						</modulevariable>
-					</groupvariable>
-					<groupvariable
-					id="7f732e90-f661-47b9-a2b1-91eeddd76965"
-					name="Key">
 					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
@@ -1975,6 +2043,18 @@ rxversion="8.3">
 					<testmodule
 					id="f087b530-7cc6-4267-b56c-de8947439629"
 					name="Validate_Required_BatteryTemplateName">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="8893f97d-6402-4354-9824-20a0162229b1"
+				name="GeneratingSecret">
+					<testmodule
+					id="10e9f0a0-2aa2-40bd-8af4-dd50ff459ee4"
+					name="GetResetToken">
+					</testmodule>
+					<testmodule
+					id="a511b295-11b3-4fed-a007-8e88c8d1ab7f"
+					name="G_Secret">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>

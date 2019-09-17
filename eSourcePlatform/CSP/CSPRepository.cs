@@ -241,7 +241,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "";
+        string _CSPDOM = "cgst-qc-orr.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -2566,7 +2566,7 @@ namespace CSP
             public AddStudyPageFolder(RepoGenBaseFolder parentFolder) :
                     base("AddStudyPage", "", parentFolder, 0, null, false, "288be980-5cd1-4c92-abf3-0f56ae63b85d", "")
             {
-                _protocolnumberfieldInfo = new RepoItemInfo(this, "ProtocolNumberField", ".//input[@id~'formly_[0-9]+_input_protocolName_[0-9]']", 30000, null, "aa5d9430-984b-4218-b244-d381e673dfb9");
+                _protocolnumberfieldInfo = new RepoItemInfo(this, "ProtocolNumberField", ".//input[@id~'formly_[0-9]+_input_protocolName_[0-9]+']", 30000, null, "aa5d9430-984b-4218-b244-d381e673dfb9");
                 _projectnamefieldInfo = new RepoItemInfo(this, "ProjectNameField", ".//input[@id~'formly_[0-9]+_input_codeName_[[0-9]']", 30000, null, "6398da63-0507-4ea4-abdf-32b1d057dbf0");
                 _sponsorfieldInfo = new RepoItemInfo(this, "SponsorField", ".//input[@id~'formly_[0-9]+_input_sponsor_[0-9]']", 30000, null, "c9c41c2f-6501-40c6-b19f-28c1025db06b");
                 _protocolnumberrequiredvalidationInfo = new RepoItemInfo(this, "ProtocolNumberRequiredValidation", ".//div[@innertext~'Protocol Number is required']", 30000, null, "6009439a-ba18-4b70-b7d4-55d6005c4ea5");
@@ -3570,8 +3570,8 @@ namespace CSP
             public AddExternalUserPageFolder(RepoGenBaseFolder parentFolder) :
                     base("AddExternalUserPage", "", parentFolder, 0, null, false, "486524ec-1edf-4e2d-905e-2fa2f2fc9106", "")
             {
-                _externaluserkeyfieldInfo = new RepoItemInfo(this, "ExternalUserKeyField", ".//input[@id~'formly_[0-9]+_input_key_0']", 30000, null, "2547f856-5f28-4dad-942d-3a0cd6c41707");
-                _externaluseremailfieldInfo = new RepoItemInfo(this, "ExternalUserEmailField", ".//input[@id~'formly_[0-9]+_input_contactEmail_1']", 30000, null, "4647601e-706b-41d6-a391-656ee0bee7b4");
+                _externaluserkeyfieldInfo = new RepoItemInfo(this, "ExternalUserKeyField", ".//input[@id~'formly_[0-9]+_input_key_[0-9]+']", 30000, null, "2547f856-5f28-4dad-942d-3a0cd6c41707");
+                _externaluseremailfieldInfo = new RepoItemInfo(this, "ExternalUserEmailField", ".//input[@id~'formly_[0-9]+_input_contactEmail_[0-9]+']", 30000, null, "4647601e-706b-41d6-a391-656ee0bee7b4");
                 _activecheckboxInfo = new RepoItemInfo(this, "ActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_2']", 30000, null, "f092518f-91bb-46f4-a906-01df286231f4");
             }
 

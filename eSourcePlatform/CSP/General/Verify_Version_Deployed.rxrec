@@ -31,95 +31,55 @@ rxversion="8.3">
 		id="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
 		name="Version">
 		</var>
+		<var
+		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+		name="CSPDOM">
+			cgst-qc-orr.azurewebsites.net
+		</var>
 	</variables>
 	<recorditems>
-		<validationitem
-		action="AttributeContains"
-		duration="100ms"
+		<userrecorditem
+		classname="WebService"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ServerVersion"
+		namespace="engine.Helpers"
 		optional="False"
-		searchpropertyid="c311886b-3580-4a46-a418-cd771d735041">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Version">
-				</binding>
-			</bindings>
-			<info
-			id="63dc85ed-58cb-45a1-9c44-c2404ef1f077"
-			sourcename="ElementTree">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="-828,-911,71,15"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						text
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						1.7.0.1674
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-				</element>
-				<path>
-					/dom[@domain=$DOM]//div[#'collapsible0']/div[1]/div[2]/div[2]/span[@innertext='1.7.0.1674']
-				</path>
-			</info>
-			<matchname>
-				InnerText
-			</matchname>
-			<matchvalue>
-				1.7.0.1674
-			</matchvalue>
-		</validationitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message="DEVOPS Info"
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="bc15f583-66f7-4445-be0a-b25abf0e1f05">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="c7b5b0c3-5b0d-4f3f-b4ca-af1a10361467"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]
-				</path>
-			</info>
-		</loggingrecorditem>
+			<arguments
+			id="17db534c-ac80-4192-baf9-bc730cc80cc7">
+				<argument
+				argname="DOM"
+				id="a4e3dd0b-4734-4872-b99d-3670f2cc3617"
+				variable="CSPDOM">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Verify_Version_Deployed"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="VersionValidation"
+		namespace="CSP.General"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="13f16a9e-e4c3-441f-b863-23571fd3291b">
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

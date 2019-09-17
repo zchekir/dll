@@ -41,8 +41,7 @@ namespace CSP.UsersPage
         /// </summary>
         public Enter_ExternalUser_Email()
         {
-            ExternalEmail = "";
-            RandNum = "";
+            GmailAddress = "";
         }
 
         /// <summary>
@@ -55,18 +54,6 @@ namespace CSP.UsersPage
 
 #region Variables
 
-        string _ExternalEmail;
-
-        /// <summary>
-        /// Gets or sets the value of variable ExternalEmail.
-        /// </summary>
-        [TestVariable("dbb429c7-ce36-400d-b26e-fc1f47462f65")]
-        public string ExternalEmail
-        {
-            get { return _ExternalEmail; }
-            set { _ExternalEmail = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
@@ -78,13 +65,13 @@ namespace CSP.UsersPage
         }
 
         /// <summary>
-        /// Gets or sets the value of variable RandNum.
+        /// Gets or sets the value of variable GmailAddress.
         /// </summary>
-        [TestVariable("f90483c1-13d8-42b7-b4ec-5eeeb99ddfa9")]
-        public string RandNum
+        [TestVariable("831c3ccb-9a5c-4c2a-ada9-75e6678cd703")]
+        public string GmailAddress
         {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
+            get { return repo.GmailAddress; }
+            set { repo.GmailAddress = value; }
         }
 
 #endregion
@@ -113,25 +100,13 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField' at 57;13.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.Click("57;13", 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField' at Center.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ExternalEmail' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys(ExternalEmail, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys(GmailAddress, 1);
             Delay.Milliseconds(10);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '+' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys("+", 1);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys(RandNum, 1);
-            Delay.Milliseconds(10);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '@gmail.com' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys("@gmail.com", 1);
-            Delay.Milliseconds(0);
             
         }
 

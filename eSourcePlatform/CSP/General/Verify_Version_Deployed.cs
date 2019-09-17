@@ -42,6 +42,7 @@ namespace CSP.General
         public Verify_Version_Deployed()
         {
             Version = "";
+            CSPDOM = "cgst-qc-orr.azurewebsites.net";
         }
 
         /// <summary>
@@ -102,11 +103,11 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$Version) on item 'CogstateSolutionPlatform.AssemblyVersion'.", repo.CogstateSolutionPlatform.AssemblyVersionInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.AssemblyVersionInfo, "InnerText", Version);
-            Delay.Milliseconds(100);
+            engine.Helpers.WebService.ServerVersion(CSPDOM);
+            Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "DEVOPS Info", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(1));
+            VersionValidation();
+            Delay.Milliseconds(0);
             
         }
 

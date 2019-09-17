@@ -107,6 +107,8 @@ namespace CSP.UsersPage
             Key = repo.CogstateSolutionPlatform.Breadcrumbs.ExternalUserBreadcrumb.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "User", Key, new RecordItemIndex(2));
+            
         }
 
 #region Image Feature Data

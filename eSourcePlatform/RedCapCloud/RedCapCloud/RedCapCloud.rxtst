@@ -1044,18 +1044,6 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RandNum"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="f90483c1-13d8-42b7-b4ec-5eeeb99ddfa9"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ExternalEmail"
-					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
-					variableid="dbb429c7-ce36-400d-b26e-fc1f47462f65"
-					variablename="ExternalEmail">
-					</var>
-					<var
 					dataname="CSPDOM"
 					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
@@ -3515,28 +3503,28 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="9"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
 				<column>
-					URL
-				</column>
-				<column>
-					DOM
-				</column>
-				<column>
-					Email
-				</column>
-				<column>
-					ExternalEmail
-				</column>
-				<column>
-					Password
-				</column>
-				<column>
 					StudyName
+				</column>
+				<column>
+					ProtocolNumber
+				</column>
+				<column>
+					ProjectName
+				</column>
+				<column>
+					SponsorName
+				</column>
+				<column>
+					BatteryTemplateName
+				</column>
+				<column>
+					BatteryTemplateDescription
 				</column>
 				<column>
 					BatteryName
@@ -3545,52 +3533,52 @@ rxversion="8.3">
 					BatteryDescription
 				</column>
 				<column>
+					BatteryPopulation
+				</column>
+				<column>
 					WorkflowName
 				</column>
 				<column>
 					WorkflowDescription
 				</column>
 				<column>
+					WorkflowToken
+				</column>
+				<column>
 					WorkflowTemplate
-				</column>
-				<column>
-					Tier1Min
-				</column>
-				<column>
-					Tier1Max
-				</column>
-				<column>
-					Tier2Min
-				</column>
-				<column>
-					Tier2Max
 				</column>
 				<column>
 					VisitScheduleName
 				</column>
 				<column>
-					Key
+					VisitScheduleDescription
 				</column>
 				<column>
-					Secret
+					VisitSessionCode
 				</column>
 				<column>
-					GmailAddress
+					Locality
 				</column>
 				<column>
-					GmailPassword
+					LocalityCode
+				</column>
+				<column>
+					DOB
+				</column>
+				<column>
+					SupervisorId
+				</column>
+				<column>
+					Filename
+				</column>
+				<column>
+					PartialDatafile
+				</column>
+				<column>
+					EnrollStatus
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
-				<columnname>
-					GmailPassword
-				</columnname>
-				<columnname>
-					Password
-				</columnname>
-				<columnname>
-					Secret
-				</columnname>
 			</maskedcolumns>
 			<file>
 				..\..\eSourcePlatform\CSPConnector.csv

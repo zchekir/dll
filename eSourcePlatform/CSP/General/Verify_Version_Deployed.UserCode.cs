@@ -24,6 +24,7 @@ namespace CSP.General
 {
     public partial class Verify_Version_Deployed
     {
+    	
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -31,6 +32,12 @@ namespace CSP.General
         private void Init()
         {
             // Your recording specific initialization code goes here.
+        }
+        
+       // Server version validation
+        public void VersionValidation()
+        {
+			Validate.AreEqual(engine.Helpers.WebService.Sversion, Version);
         }
 
     }
