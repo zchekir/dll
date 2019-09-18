@@ -466,6 +466,26 @@ rxversion="8.3">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="11e09f33-e985-4081-8544-ff8cdd4447ba"
+			name="Verify_Version_Client"
+			ref="bbd7de50-f153-4542-b412-b02ff4df214c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="5573f8ac-d505-42b0-a336-394c8bca477a"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="VersionDeployed"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
+					variablename="Server">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1200ffa8-c24d-43e0-b3b1-1a0aa87bbf4b"
 			name="Validate_Upload_Failure"
 			ref="2fa0a2f8-d93a-44d4-8572-1f9cf92b901e"
@@ -1692,7 +1712,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="VersionDeployed"
-					value="1.9.0">
+					value="1.10.0">
 					</param>
 					<param
 					name="DBServer"
@@ -4492,6 +4512,10 @@ rxversion="8.3">
 								id="0d2eed53-372a-4f16-9fcb-2384f21f7760"
 								name="Verify_Version_Deployed">
 								</testmodule>
+								<testmodule
+								id="11e09f33-e985-4081-8544-ff8cdd4447ba"
+								name="Verify_Version_Client">
+								</testmodule>
 							</testcase>
 							<testcase
 							id="9bd6e668-4aac-4f80-b28a-dd99b720185d"
@@ -5317,12 +5341,6 @@ rxversion="8.3">
 					GmailPassword
 				</column>
 				<column>
-					Key
-				</column>
-				<column>
-					Secret
-				</column>
-				<column>
 					Subject
 				</column>
 				<column>
@@ -5605,6 +5623,9 @@ rxversion="8.3">
 			id="82bc9b0d-664f-42ea-a949-83d3ff5ea967">
 			</testcontainer>
 			<testcontainer
+			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
+			</testcontainer>
+			<testcontainer
 			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
 			</testcontainer>
 			<testcontainer
@@ -5612,6 +5633,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
+			</testcontainer>
+			<testcontainer
+			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
 			</testcontainer>
 			<testcontainer
 			id="a54e2f22-375f-4fb2-838a-084cd4471e50">
