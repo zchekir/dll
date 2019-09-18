@@ -57,7 +57,7 @@ rxversion="8.3">
 			</teardown>
 			<testcase
 			id="092ade10-4592-483d-84f7-b21358ea6e1b"
-			name="Check_Outcomes1">
+			name="Check_Outcomes">
 			</testcase>
 			<testmodule
 			id="0937c5bf-7159-47c1-8962-00ca80acb2a6"
@@ -84,6 +84,12 @@ rxversion="8.3">
 					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="6f16e2fe-59f5-4db7-ad65-fc9f98e4843e"
 					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="274716b5-a543-4645-bcdf-0f2be353a9ae"
+					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -384,7 +390,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="1eee6458-0616-4a02-86e4-ee0ac17668d8"
-			name="Generate_Secret1">
+			name="Generate_Secret">
 			</testcase>
 			<testmodule
 			id="1f53fcac-e54b-4ca2-944e-25b4145a8f49"
@@ -545,8 +551,14 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="URL"
-					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					dataname="Browser"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="daa00f9e-5818-40a1-a038-7de381bf08b9"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="CSPURL"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
 					variablename="CSPURL">
 					</var>
@@ -570,7 +582,7 @@ rxversion="8.3">
 			id="356c57b4-5d89-4e81-9e31-e4211d0800ac"
 			maxrange="0"
 			minrange="0"
-			name="Add_Parameters1">
+			name="Add_Parameters">
 			</testcase>
 			<testmodule
 			id="35fc3bd0-0b6f-4447-a526-d397459ebb77"
@@ -722,13 +734,13 @@ rxversion="8.3">
 			id="4922b132-e63b-444c-9a6a-8d4565320f68"
 			maxrange="0"
 			minrange="0"
-			name="Import_CSV1">
+			name="Import_CSV">
 			</testcase>
 			<testcase
 			id="4bb43b76-4261-474f-aed6-b341c1589126"
 			maxrange="0"
 			minrange="0"
-			name="Complete_CBB1">
+			name="Complete_CBB">
 			</testcase>
 			<testmodule
 			id="4bf2ac57-be70-44b1-b38c-952384da66c6"
@@ -828,13 +840,13 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="4edb8843-a1d4-4562-a8ec-b912c26d4990"
-			name="Configure_Battery1">
+			name="Configure_Battery">
 			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="51f9e135-ac62-4342-8f0e-6cc7eceb7148"
-			maxrange="7"
+			maxrange="0"
 			minrange="0"
 			name="Configure_Regression_Study_CSP">
 			</smartfoldernode>
@@ -875,8 +887,8 @@ rxversion="8.3">
 					variablename="Secret">
 					</var>
 					<var
-					dataname="URL"
-					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					dataname="CSPURL"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="b4abd2fb-b815-47f4-88b7-12130961b9c3"
 					variablename="CSPURL">
 					</var>
@@ -920,7 +932,7 @@ rxversion="8.3">
 			id="6025649b-be25-47e9-ae32-343ff3c0942c"
 			maxrange="0"
 			minrange="0"
-			name="Configure_CSV1">
+			name="Configure_CSV">
 			</testcase>
 			<testmodule
 			id="61f2f7fc-9eaa-4de6-99ab-cdaff5c9b147"
@@ -938,7 +950,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="62e043ee-25a4-4959-9e85-59d110f5eb16"
-			name="Configure_VisitSchedule1"
+			name="Configure_VisitSchedule"
 			warnunboundvariables="False">
 			</testcase>
 			<testmodule
@@ -1049,6 +1061,12 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="831c3ccb-9a5c-4c2a-ada9-75e6678cd703"
+					variablename="GmailAddress">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1059,7 +1077,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="6bb8b465-d838-45e6-b2cc-9c191bcc362c"
-			name="Configure_Workflow1">
+			name="Configure_Workflow">
 			</testcase>
 			<testmodule
 			id="707a8eed-2976-4522-94b2-c69ff5f964d5"
@@ -1460,7 +1478,7 @@ rxversion="8.3">
 			id="9080b74a-0c3f-41b4-8e03-bea645552865"
 			maxrange="0"
 			minrange="0"
-			name="Launch_Battery1">
+			name="Launch_Battery">
 			</testcase>
 			<testmodule
 			id="909391bc-8536-4941-95b8-a6e53542f187"
@@ -1520,7 +1538,7 @@ rxversion="8.3">
 			id="96b3f6e5-1538-4e81-bb4a-2c90bd23585b"
 			maxrange="0"
 			minrange="0"
-			name="Add_Instrument_to_Event1">
+			name="Add_Instrument_to_Event">
 			</testcase>
 			<testmodule
 			id="96ef1900-1911-4f61-a93c-135455fa1035"
@@ -1587,6 +1605,18 @@ rxversion="8.3">
 					variableid="e3b2f88e-35b4-46a4-bff4-932f6433abaf"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="RCCUsername"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="5d539c94-f9fc-4135-a437-60a30fc488a8"
+					variablename="RCCUsername">
+					</var>
+					<var
+					dataname="RCCPassword"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="be1c5c25-86d4-4d4f-9d1c-26956c66271e"
+					variablename="RCCPassword">
+					</var>
 				</databinding>
 			</modulegroup>
 			<testmodule
@@ -1608,6 +1638,14 @@ rxversion="8.3">
 			name="Save_CSV"
 			ref="3ed44668-dc5f-4192-a0dd-8d911089de21"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Filename"
+					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					variableid="60131d8a-d584-4971-9daf-a95706b79477"
+					variablename="FileName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="9e9ae1ed-7a00-4412-9e66-82072fd9da9f"
@@ -1960,6 +1998,14 @@ rxversion="8.3">
 			name="Read_CSV"
 			ref="964e43df-03fa-4dc4-bd18-9a19ee6b15d3"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Filename"
+					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					variableid="f704dd09-4ec7-452a-8f35-7fda5d776871"
+					variablename="FileName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="c24bf286-fd72-47c5-bfc0-6edb77bdb7d8"
@@ -2041,7 +2087,7 @@ rxversion="8.3">
 			id="cb845d8d-581b-44bf-ae54-b1bd55e0b06c"
 			maxrange="0"
 			minrange="0"
-			name="Add_Event_Definitions1">
+			name="Add_Event_Definitions">
 			</testcase>
 			<modulegroup
 			id="ce3a82a8-3ced-418e-b0bf-6a9b14a2af8b"
@@ -2130,7 +2176,7 @@ rxversion="8.3">
 			id="d3f2a3b9-2010-47e6-9a60-e0e66a3e409a"
 			maxrange="0"
 			minrange="0"
-			name="Add_Site1">
+			name="Add_Site">
 			</testcase>
 			<testmodule
 			id="d47b6423-4c9d-4258-a4e9-b657f2089501"
@@ -2240,7 +2286,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="dacec97e-29d6-41cf-85d4-c644948dd173"
-			name="Verify_Permissions1">
+			name="Verify_Permissions">
 			</testcase>
 			<testmodule
 			id="dba8b762-c977-4aa1-968a-72dd6a428b30"
@@ -2300,7 +2346,7 @@ rxversion="8.3">
 			id="e158db97-3cfd-4b0d-8c51-41a6da4f71e2"
 			maxrange="0"
 			minrange="0"
-			name="Add_Event_to_Subject1">
+			name="Add_Event_to_Subject">
 			</testcase>
 			<testmodule
 			id="e5a5a747-de8e-4031-a992-088ec352f646"
@@ -2390,13 +2436,13 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="e61f94ae-e947-4d07-8c2d-1ad2af70a519"
-			name="Verify_Integration_User1">
+			name="Verify_Integration_User">
 			</testcase>
 			<testcase
 			id="e6eac571-b3c4-4075-ad7f-a77704f9315d"
 			maxrange="0"
 			minrange="0"
-			name="Add_New_Study1">
+			name="Add_New_Study">
 			</testcase>
 			<testmodule
 			id="e72b2f43-4c75-454a-bedc-ff618692be62"
@@ -2474,8 +2520,20 @@ rxversion="8.3">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="DOM"
-					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					dataname="CSPUsername"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="CSPPassword">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="CSPDOM">
 					</var>
@@ -2531,7 +2589,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="ef8792aa-14ed-4324-be7b-4bd075f444ba"
-			name="Verify_Integration_User_Recreated1">
+			name="Verify_Integration_User_Recreated">
 			</testcase>
 			<modulegroup
 			id="f0ffa5a4-f8f4-4564-b4ed-7b387d293a26"
@@ -2600,7 +2658,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="f5e38ce3-7bb6-496e-8474-5d7cadf7c476"
-			name="Configure_ExternalUser1">
+			name="Configure_ExternalUser">
 			</testcase>
 			<testmodule
 			id="f623e085-b97b-4941-aa83-b733ceaf785c"
@@ -2626,7 +2684,7 @@ rxversion="8.3">
 			id="f657c59b-86e2-4a64-aed8-7c18506f425c"
 			maxrange="0"
 			minrange="0"
-			name="Add_Subject1">
+			name="Add_Subject">
 			</testcase>
 			<testmodule
 			id="f66203ea-e5e3-4d67-9080-5dc403005098"
@@ -2728,7 +2786,7 @@ rxversion="8.3">
 						name="Create_Regression_Study">
 							<testcase
 							id="e6eac571-b3c4-4075-ad7f-a77704f9315d"
-							name="Add_New_Study1">
+							name="Add_New_Study">
 								<modulegroup
 								id="ce3a82a8-3ced-418e-b0bf-6a9b14a2af8b"
 								name="AddStudy">
@@ -2740,7 +2798,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="e61f94ae-e947-4d07-8c2d-1ad2af70a519"
-							name="Verify_Integration_User1">
+							name="Verify_Integration_User">
 								<testmodule
 								id="0f7648de-76c9-45f2-9b3a-607d8161c6ef"
 								name="Click_MyStudies">
@@ -2760,7 +2818,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="ef8792aa-14ed-4324-be7b-4bd075f444ba"
-							name="Verify_Integration_User_Recreated1">
+							name="Verify_Integration_User_Recreated">
 								<testmodule
 								id="a9a6738e-5cb0-4828-8fb4-d4a14041ae26"
 								name="Click_Integration_User">
@@ -2776,7 +2834,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="dacec97e-29d6-41cf-85d4-c644948dd173"
-							name="Verify_Permissions1">
+							name="Verify_Permissions">
 								<testmodule
 								id="4e2b5290-1fc9-4309-af97-add2ecc68928"
 								name="Click_MyStudies">
@@ -2812,7 +2870,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="d3f2a3b9-2010-47e6-9a60-e0e66a3e409a"
-							name="Add_Site1">
+							name="Add_Site">
 								<testmodule
 								id="4bf2ac57-be70-44b1-b38c-952384da66c6"
 								name="Click_MyStudies">
@@ -2844,7 +2902,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="356c57b4-5d89-4e81-9e31-e4211d0800ac"
-							name="Add_Parameters1">
+							name="Add_Parameters">
 								<testmodule
 								id="3f48f0bb-7c38-4adc-bebb-ba004a70faa6"
 								name="Click_ParametersTab">
@@ -2868,7 +2926,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="cb845d8d-581b-44bf-ae54-b1bd55e0b06c"
-							name="Add_Event_Definitions1">
+							name="Add_Event_Definitions">
 								<testmodule
 								id="f87fb961-51a0-4f02-93d5-031f79a32307"
 								name="Click_EventDefinitionsTab">
@@ -2900,7 +2958,7 @@ rxversion="8.3">
 						name="Configure_Regression_Study_CSP">
 							<testcase
 							id="4edb8843-a1d4-4562-a8ec-b912c26d4990"
-							name="Configure_Battery1">
+							name="Configure_Battery">
 								<setup
 								id="2cca33b6-fc35-4792-876d-a200e4e58e6d"
 								name="setup">
@@ -2948,7 +3006,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="6bb8b465-d838-45e6-b2cc-9c191bcc362c"
-							name="Configure_Workflow1">
+							name="Configure_Workflow">
 								<testmodule
 								id="ddcca5c6-db87-4817-87d4-df4d23dbaf0f"
 								name="Select_Study">
@@ -2996,7 +3054,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="62e043ee-25a4-4959-9e85-59d110f5eb16"
-							name="Configure_VisitSchedule1">
+							name="Configure_VisitSchedule">
 								<testmodule
 								id="a370187e-e378-487c-a9aa-cb35680fa998"
 								name="Select_Study">
@@ -3020,7 +3078,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="f5e38ce3-7bb6-496e-8474-5d7cadf7c476"
-							name="Configure_ExternalUser1">
+							name="Configure_ExternalUser">
 								<testmodule
 								id="e05a4111-ab0f-4092-9006-c54545bc846d"
 								name="Click_External_Users_Menu">
@@ -3072,7 +3130,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="1eee6458-0616-4a02-86e4-ee0ac17668d8"
-							name="Generate_Secret1">
+							name="Generate_Secret">
 								<testmodule
 								id="2596f2f9-78d9-4b8e-8a7e-10134beff48b"
 								name="Open_Gmail">
@@ -3104,7 +3162,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="6025649b-be25-47e9-ae32-343ff3c0942c"
-							name="Configure_CSV1">
+							name="Configure_CSV">
 								<testmodule
 								id="c0cf7c29-0af8-4598-acb0-f6692af92ed3"
 								name="Read_CSV">
@@ -3124,7 +3182,7 @@ rxversion="8.3">
 						name="Configure_Regression_Study_RCC">
 							<testcase
 							id="4922b132-e63b-444c-9a6a-8d4565320f68"
-							name="Import_CSV1">
+							name="Import_CSV">
 								<testmodule
 								id="182b0c8a-2185-4fba-b3e5-7dbcc58a6b32"
 								name="Click_Instruments_Tab">
@@ -3168,7 +3226,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="96b3f6e5-1538-4e81-bb4a-2c90bd23585b"
-							name="Add_Instrument_to_Event1">
+							name="Add_Instrument_to_Event">
 								<testmodule
 								id="8f7bf336-a750-49d5-847a-ef4e25c5b5b1"
 								name="Click_EventDefinitionsTab">
@@ -3236,7 +3294,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="f657c59b-86e2-4a64-aed8-7c18506f425c"
-							name="Add_Subject1">
+							name="Add_Subject">
 								<testmodule
 								id="07544a51-0ac0-42aa-bf41-4eccf10b1271"
 								name="Click_Subjects_Button">
@@ -3276,7 +3334,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="e158db97-3cfd-4b0d-8c51-41a6da4f71e2"
-							name="Add_Event_to_Subject1">
+							name="Add_Event_to_Subject">
 								<testmodule
 								id="0f56f23d-8bc8-49b7-bdbf-1a348be1ddcb"
 								name="Click_Subjects_Button">
@@ -3304,7 +3362,7 @@ rxversion="8.3">
 						name="Complete_Regression_Assessment">
 							<testcase
 							id="9080b74a-0c3f-41b4-8e03-bea645552865"
-							name="Launch_Battery1">
+							name="Launch_Battery">
 								<testmodule
 								id="47a5c825-c563-411e-9335-3f528bbc68b2"
 								name="Click_Subjects_Button">
@@ -3332,7 +3390,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="4bb43b76-4261-474f-aed6-b341c1589126"
-							name="Complete_CBB1">
+							name="Complete_CBB">
 								<testmodule
 								id="76acd4a5-1c06-4782-b70a-04dc524dd76a"
 								name="Upload_RawData">
@@ -3344,7 +3402,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="092ade10-4592-483d-84f7-b21358ea6e1b"
-							name="Check_Outcomes1">
+							name="Check_Outcomes">
 								<testmodule
 								id="da42af29-a8f7-47da-ab5c-63d2b40e5414"
 								name="Click_Subjects_Button">
@@ -3444,12 +3502,6 @@ rxversion="8.3">
 				</column>
 				<column>
 					GmailPassword
-				</column>
-				<column>
-					Key
-				</column>
-				<column>
-					Secret
 				</column>
 				<column>
 					Subject
