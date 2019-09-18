@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="03a98aac-9699-4331-a3fa-00536dfad33f"
+id="9ecd415f-eabd-42d3-912c-00d78f3c79d2"
 mode="Global"
 rxversion="8.3">
 	<name>
-		APIV2_Authenticate
+		GetResetToken
 	</name>
 	<repeatcount>
 		1
@@ -23,37 +23,41 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="APIV2_Authenticate"
+	classname="GetResetToken"
 	namespace="CSP.APIModules">
 	</codegen>
 	<variables>
 		<var
-		id="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
-		name="DOM">
+		id="23ed5de0-b936-40f7-88e0-8bf6399013a1"
+		name="DBserver">
 		</var>
 		<var
-		id="3b244791-8adf-4420-ba52-5c63812fac17"
-		name="ProtocolNumber">
+		id="33d9a492-d3e2-4b73-ae5d-bbf6949e215a"
+		name="Database">
 		</var>
 		<var
-		id="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
-		name="RandNum">
+		id="f06f1069-da41-4674-8cf8-7d0426f56aa7"
+		name="Authentication">
 		</var>
 		<var
-		id="35d6bff4-468a-4307-8386-b46e7e547dc9"
+		id="7f171fab-35c7-4d6e-a8d4-3f02439fb916"
+		name="dbUsername">
+		</var>
+		<var
+		id="0e466bbf-8864-43a0-b57b-a4ac51ea53bb"
+		name="dbPassword">
+		</var>
+		<var
+		id="f149efa0-570c-4a8d-a3eb-ac86747536d5"
 		name="Key">
-		</var>
-		<var
-		id="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
-		name="Secret">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="WebService"
+		classname="SQLUtility"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="Authenticate"
+		methodname="GetRestToken"
 		namespace="engine.Helpers"
 		optional="False"
 		varname="">
@@ -62,11 +66,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="c5ca5f41-f3d9-42b8-a587-ba53c1589b95">
+			id="dce2c961-e79b-476b-abf5-7e1c41af2d1d">
 				<argument
-				argname="randNum"
-				id="1ee33410-3e65-499f-84ef-ecdcafb090cf"
-				variable="RandNum">
+				argname="dbserver"
+				id="72459713-2422-46ea-a615-cf7bde6d28f9"
+				variable="DBserver">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -74,9 +78,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="DOM"
-				id="8c459245-d5f1-42ec-919a-98a6edcab038"
-				variable="DOM">
+				argname="database"
+				id="8c6e0a46-b826-4ede-9c15-2c63a57b50da"
+				variable="Database">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -84,9 +88,29 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="studyProtocolName"
-				id="5c1f3dc0-9306-4265-ae5d-b6c1ffdfb065"
-				variable="ProtocolNumber">
+				argname="username"
+				id="07164b6e-736c-4c57-8584-bfa72c314f47"
+				variable="dbUsername">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="password"
+				id="b64f6442-80da-43cb-8382-accb67c5f020"
+				variable="dbPassword">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="authentication"
+				id="175f3958-2a33-4cdb-ace7-c9740da61569"
+				variable="Authentication">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -95,7 +119,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="key"
-				id="5b8c8d51-199e-4ae8-8575-c47f214228a1"
+				id="f4f9d2d4-dd86-421b-a8b3-d753a3a4ade6"
 				variable="Key">
 					<argvaluetype>
 						System.String
@@ -122,7 +146,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		APIV2_Authenticate.UserCode.cs
+		GetResetToken.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

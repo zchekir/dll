@@ -20,61 +20,113 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.General
+namespace CSP.APIModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Version_Deployed recording.
+    ///The GetResetToken recording.
     /// </summary>
-    [TestModule("c718511d-4281-405c-9160-251f311d2703", ModuleType.Recording, 1)]
-    public partial class Verify_Version_Deployed : ITestModule
+    [TestModule("9ecd415f-eabd-42d3-912c-00d78f3c79d2", ModuleType.Recording, 1)]
+    public partial class GetResetToken : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Verify_Version_Deployed instance = new Verify_Version_Deployed();
+        static GetResetToken instance = new GetResetToken();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Version_Deployed()
+        public GetResetToken()
         {
-            Version = "";
-            CSPDOM = "cgst-qc-orr.azurewebsites.net";
+            DBserver = "";
+            Database = "";
+            Authentication = "";
+            dbUsername = "";
+            dbPassword = "";
+            Key = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Version_Deployed Instance
+        public static GetResetToken Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Version;
+        string _DBserver;
 
         /// <summary>
-        /// Gets or sets the value of variable Version.
+        /// Gets or sets the value of variable DBserver.
         /// </summary>
-        [TestVariable("3405ba1d-b660-45c9-ae63-2a2a96b1364e")]
-        public string Version
+        [TestVariable("23ed5de0-b936-40f7-88e0-8bf6399013a1")]
+        public string DBserver
         {
-            get { return _Version; }
-            set { _Version = value; }
+            get { return _DBserver; }
+            set { _DBserver = value; }
+        }
+
+        string _Database;
+
+        /// <summary>
+        /// Gets or sets the value of variable Database.
+        /// </summary>
+        [TestVariable("33d9a492-d3e2-4b73-ae5d-bbf6949e215a")]
+        public string Database
+        {
+            get { return _Database; }
+            set { _Database = value; }
+        }
+
+        string _Authentication;
+
+        /// <summary>
+        /// Gets or sets the value of variable Authentication.
+        /// </summary>
+        [TestVariable("f06f1069-da41-4674-8cf8-7d0426f56aa7")]
+        public string Authentication
+        {
+            get { return _Authentication; }
+            set { _Authentication = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("7f171fab-35c7-4d6e-a8d4-3f02439fb916")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
+        }
+
+        string _dbPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbPassword.
+        /// </summary>
+        [TestVariable("0e466bbf-8864-43a0-b57b-a4ac51ea53bb")]
+        public string dbPassword
+        {
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable Key.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
+        [TestVariable("f149efa0-570c-4a8d-a3eb-ac86747536d5")]
+        public string Key
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
+            get { return repo.Key; }
+            set { repo.Key = value; }
         }
 
 #endregion
@@ -103,10 +155,7 @@ namespace CSP.General
 
             Init();
 
-            engine.Helpers.WebService.ServerVersion(CSPDOM);
-            Delay.Milliseconds(0);
-            
-            VersionValidation();
+            engine.Helpers.SQLUtility.GetRestToken(DBserver, Database, dbUsername, dbPassword, Authentication, Key);
             Delay.Milliseconds(0);
             
         }

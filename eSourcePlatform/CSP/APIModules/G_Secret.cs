@@ -20,57 +20,44 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.General
+namespace CSP.APIModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Version_Deployed recording.
+    ///The G_Secret recording.
     /// </summary>
-    [TestModule("c718511d-4281-405c-9160-251f311d2703", ModuleType.Recording, 1)]
-    public partial class Verify_Version_Deployed : ITestModule
+    [TestModule("b5c1f78b-d628-4e9c-83b0-597bcacc9905", ModuleType.Recording, 1)]
+    public partial class G_Secret : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Verify_Version_Deployed instance = new Verify_Version_Deployed();
+        static G_Secret instance = new G_Secret();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Version_Deployed()
+        public G_Secret()
         {
-            Version = "";
-            CSPDOM = "cgst-qc-orr.azurewebsites.net";
+            CSPDOM = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Version_Deployed Instance
+        public static G_Secret Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Version;
-
-        /// <summary>
-        /// Gets or sets the value of variable Version.
-        /// </summary>
-        [TestVariable("3405ba1d-b660-45c9-ae63-2a2a96b1364e")]
-        public string Version
-        {
-            get { return _Version; }
-            set { _Version = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
+        [TestVariable("be5ff697-bd07-40a4-9c8a-91518bacb8b8")]
         public string CSPDOM
         {
             get { return repo.CSPDOM; }
@@ -103,10 +90,7 @@ namespace CSP.General
 
             Init();
 
-            engine.Helpers.WebService.ServerVersion(CSPDOM);
-            Delay.Milliseconds(0);
-            
-            VersionValidation();
+            engine.Helpers.WebService.GSecret(CSPDOM);
             Delay.Milliseconds(0);
             
         }

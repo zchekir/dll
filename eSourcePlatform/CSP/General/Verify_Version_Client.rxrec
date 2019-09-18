@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="c718511d-4281-405c-9160-251f311d2703"
+id="bbd7de50-f153-4542-b412-b02ff4df214c"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_Version_Deployed
+		Verify_Version_Client
 	</name>
 	<repeatcount>
 		1
@@ -23,18 +23,17 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Version_Deployed"
+	classname="Verify_Version_Client"
 	namespace="CSP.General">
 	</codegen>
 	<variables>
 		<var
-		id="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
-		name="Version">
+		id="5573f8ac-d505-42b0-a336-394c8bca477a"
+		name="CSPDOM">
 		</var>
 		<var
-		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-		name="CSPDOM">
-			cgst-qc-orr.azurewebsites.net
+		id="7e058fce-68f4-4858-9c01-983db9e3c891"
+		name="Server">
 		</var>
 	</variables>
 	<recorditems>
@@ -42,7 +41,7 @@ rxversion="8.3">
 		classname="WebService"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ServerVersion"
+		methodname="C_Version"
 		namespace="engine.Helpers"
 		optional="False"
 		varname="">
@@ -51,10 +50,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="17db534c-ac80-4192-baf9-bc730cc80cc7">
+			id="fd9f0d52-5d27-4832-a498-4e607ca163c3">
 				<argument
 				argname="DOM"
-				id="a4e3dd0b-4734-4872-b99d-3670f2cc3617"
+				id="ec27b495-81e3-47c4-a835-430088afb5a4"
 				variable="CSPDOM">
 					<argvaluetype>
 						System.String
@@ -65,10 +64,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Version_Deployed"
+		classname="Verify_Version_Client"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="VersionValidation"
+		methodname="ClientValidation"
 		namespace="CSP.General"
 		optional="False"
 		varname="">
@@ -77,7 +76,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="13f16a9e-e4c3-441f-b863-23571fd3291b">
+			id="3e62a3cb-b496-4be1-8e0f-52ea22c41bf8">
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -97,7 +96,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Version_Deployed.UserCode.cs
+		Verify_Version_Client.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

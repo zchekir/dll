@@ -6,6 +6,7 @@
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
+// imported .Net methods-------------------------------- 
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,29 +17,28 @@ using System.Net;
 using System.Web.Script.Serialization;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 
 namespace engine.Helpers
 {
-	/// <summary>
+	/// <summary>-------------------------------------------------------------
 	/// Class definition for JSON object which is sent to retrive an AuthToken
 	/// </summary>
-	public class AuthJSONRequest
-	{
-		/// <summary>
+	   public class AuthJSONRequest
+	  {
+		/// <summary>-------------------------------------------------------
 		/// External users key for accessing the API
 		/// </summary>
 		public string key { get; set; }
 		
-		/// <summary>
+		/// <summary>------------------------------------------------------
 		/// External users secret for accessing the API
 		/// </summary>
 		public string secret { get; set; }
 		
-		/// <summary>
+		/// <summary>-----------------------------------------------------
 		/// Creates a new autentication request object
 		/// </summary>
 		/// <param name="key"></param>
@@ -51,7 +51,7 @@ namespace engine.Helpers
 			
 	}
 	
-	/// <summary>
+	/// <summary>-------------------------------------------------------------------
 	/// Class definition for JSON object which is received after an AuthToken request
 	/// </summary>
 	public class AuthJSONResponse
@@ -65,12 +65,12 @@ namespace engine.Helpers
 		}
 	}
 	
-	/// <summary>
+	/// <summary>---------------------------------------------------------------
 	/// Class definition for JSON object sent in order to retrieve a testing URL
 	/// </summary>
 	public class AssessmentAttemptJSONRequest
 	{
-		/// <summary>
+		/// <summary>---------------------------------------------------------
 		/// External ID for the participant we want to send through the API
 		/// </summary>
 		public string externalId { get; set; }
@@ -110,7 +110,7 @@ namespace engine.Helpers
 		/// </summary>
 		public string supervisorId { get; set; }
 		
-		/// <summary>
+		/// <summary>----------------------------------------------------------------------------
 		/// Object for creating a new workflow request
 		/// </summary>
 		/// <param name="externalId"></param>
@@ -135,27 +135,27 @@ namespace engine.Helpers
 		}
 	}
 	
-	/// <summary>
+	/// <summary>----------------------------------------------------------------------
 	/// Class definition for JSON object which is received after requesting a testing URL
 	/// </summary>
-	public class AssessmentAttemptJSONResponse
-	{
+	   public class AssessmentAttemptJSONResponse
+	   {
 		/// <summary>
 		/// Returned authtoken from API following a workflow instance request
 		/// </summary>
 		public string workflowAuthToken { get; set; }
 		
-		/// <summary>
+		/// <summary>----------------------------------------------------------------
 		/// The returend locality code
 		/// </summary>
 		public string localityCode { get; set; }
 		
-		/// <summary>
+		/// <summary>---------------------------------------------------------------
 		/// Returned URL for running the battery
 		/// </summary>
 		public string url { get; set; }
 		
-		/// <summary>
+		/// <summary>---------------------------------------------------------------
 		/// Unique ideitifer to the test
 		/// </summary>
 		public string testIdentifier { get; set; }
@@ -166,11 +166,11 @@ namespace engine.Helpers
 		}
 	}
 	
-	/// <summary>
+	/// <summary>------------------------------------------------------------------
 	/// Response object for the test qualification status
 	/// </summary>
-	public class QualificationStatusJSONResponse
-	{
+	   public class QualificationStatusJSONResponse
+	   {
 		/// <summary>
 		/// Returned qualificaiton status
 		/// </summary>
@@ -182,8 +182,56 @@ namespace engine.Helpers
 		}
 	}
 	
+	/// <summary>
+	/// /Secret parsing-------------------------------------------------- 
+	/// </summary>
+	    public class SaveNewSecretResponse
+	    {
 	
-    /// <summary>
+		public string name { get; set; }
+		
+		
+		public string value { get; set; }
+		
+		
+		public SaveNewSecretResponse()
+		{
+			
+		}
+			
+	}
+	    //Server version---------------
+		public class DevopsRespose
+		{
+		public string assemblyVersion {get;set;}
+			
+		public  DevopsRespose()
+			{
+			
+			}
+		}
+		
+		// client version--------------
+		public class ClientDevopsRespose
+		{
+			
+		public string version{get;set;}
+		
+		public ClientDevopsRespose()
+		{
+			
+			
+		}
+			
+			
+			
+		}
+		
+		
+	
+		
+	
+    /// <summary>--------------------------------------------------------------------------------------------------------------------------
     /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
     /// </summary>
     [UserCodeCollection]
@@ -192,17 +240,21 @@ namespace engine.Helpers
         // You can use the "Insert New User Code Method" functionality from the context menu,
         // to add a new method with the attribute [UserCodeMethod].
         
+        //*********Global variables list*************
         public static string AuthToken;
         public static string AssessmentURL;
         public static string TestIdentifier;
         public static string QualificationStatus;
+        public static string Token; 
+        public static string Sversion;
+        public static string ClientVersion;
         
         
-        /// <summary>
+        /// <summary>-------------------------------------------------------------------------------------------------------------------------
         /// This method will retrieve an AuthToken based on the protocl, key and secret provided
         /// </summary>
         [UserCodeMethod]
-        public static void Authenticate(string randNum, string DOM, string studyProtocolName, string key, string secret)
+        public static void Authenticate(string randNum, string DOM, string studyProtocolName, string key)
         {
         	//Setup API call
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/AuthenticationToken");
@@ -210,7 +262,7 @@ namespace engine.Helpers
         	httpRequest.Method = "POST";
         	
         	//Create JSON ibject containing key and secret which is sent in the body
-        	AuthJSONRequest jsonObject = new AuthJSONRequest(key, secret);
+        	AuthJSONRequest jsonObject = new AuthJSONRequest(key, Token);
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
         	{
@@ -240,7 +292,7 @@ namespace engine.Helpers
         }
         
         
-        /// <summary>
+        /// <summary>-------------------------------------------------------------------------------------------------------------------
         /// This method will retrieve an assessment URL using the provided demographic information, study details
 		/// and AuthToken
         /// </summary>
@@ -300,7 +352,7 @@ namespace engine.Helpers
         
         
         
-        /// <summary>
+        /// <summary>----------------------------------------------------------------------------------------------------------
         /// This is a placeholder text. Please describe the purpose of the
         /// user code method here. The method is published to the user code library
         /// within a user code collection.
@@ -315,7 +367,6 @@ namespace engine.Helpers
         	httpRequest.Headers.Add("Authorization", AuthToken);
         	
         	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
-        	
         	QualificationStatusJSONResponse responseObject = new QualificationStatusJSONResponse();
         	
         	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
@@ -331,7 +382,7 @@ namespace engine.Helpers
         }
         
         
-        /// <summary>
+        /// <summary>-----------------------------------------------------------------------------------------------------------
         /// This method will use the AssessmentAttempt API call to update the date of birth of a particular participant
 		/// and AuthToken
         /// </summary>
@@ -383,7 +434,6 @@ namespace engine.Helpers
         	
         	//Get response and store in new object
         	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
-        	
         	AssessmentAttemptJSONResponse responseObject = new AssessmentAttemptJSONResponse();
         	
         	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
@@ -401,7 +451,7 @@ namespace engine.Helpers
         
         
         /// <summary>
-        /// Launch Chrome using an Assessment Attempt URL
+        /// Launch Chrome using an Assessment Attempt URL-----------------------------------------------------------------
         /// </summary>
         [UserCodeMethod]
         public static void LaunchAssessment()
@@ -410,6 +460,107 @@ namespace engine.Helpers
         	AssessmentURL = Uri.EscapeUriString(AssessmentURL);
         	Report.Log(ReportLevel.Info, "Website", "Opening web site " + AssessmentURL + " with browser 'Chrome' in normal mode.");
         	Host.Current.OpenBrowser(AssessmentURL, "Chrome", "", false, false, false, false, false);
+        }
+        
+        
+        /// <summary>-------------------------------------------------------------------------------------------------
+        /// This method its about generating secret key and to use it to authenticate to the server 
+        /// </summary>
+        [UserCodeMethod]
+        public static void GSecret(string DOM)
+        {
+        	//creating the API Request 
+        	string SecretAPI = "/api/externalusers/"+ SQLUtility.ResetToken + "/savenewsecret"; 
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+DOM+ SecretAPI );
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.ContentLength=0;
+        	httpRequest.Method = "PUT";
+        	
+        	
+        	//Sending the API call:
+        	
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	SaveNewSecretResponse responseObject = new SaveNewSecretResponse();
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        		string secret = sr.ReadToEnd();
+        		responseObject = new JavaScriptSerializer().Deserialize<SaveNewSecretResponse>(secret);
+        		Token = responseObject.value;
+        		Report.Log(ReportLevel.Info, "Secret: " + Token);
+        		
+        		
+     
+        	}
+        	
+        }
+        
+        
+        
+        /// <summary>-------------------------------------------------------------------------------------------------
+        /// This method is for validating the current server version
+        /// </summary>
+        [UserCodeMethod]
+        public static void ServerVersion(string DOM)
+        {
+        	string ServerVersion = "/api/devops";
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+DOM+ ServerVersion  );
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.ContentLength=0;
+        	httpRequest.Method = "GET";
+        	
+        	
+        	//Sending the API call:
+        	
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	DevopsRespose responseObject = new  DevopsRespose();
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        	string versionServer = sr.ReadToEnd();
+        	responseObject = new JavaScriptSerializer().Deserialize<DevopsRespose>(versionServer);
+        	Sversion = responseObject.assemblyVersion;
+        		
+        	}
+        	// splinting version number
+        	string[] splitVersion = Sversion.Split('.');
+        	Sversion = splitVersion[0] + "." + splitVersion[1] + "." + splitVersion[2];
+        	
+        	
+        	
+        }
+       
+        
+        /// <summary>-------------------------------------------------------------------------------------------
+        /// This method is for validating the current client version
+        /// </summary>
+        [UserCodeMethod]
+        public static void C_Version(string DOM)
+        {
+        	
+        	string ClientVersionAPI = "/version.json";
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+DOM+ ClientVersionAPI   );
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.ContentLength=0;
+        	httpRequest.Method = "GET";
+        	
+        	
+        	//Sending the API call:
+        	
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	ClientDevopsRespose responseObject = new  ClientDevopsRespose();
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        	string versionClient = sr.ReadToEnd();
+        	responseObject = new JavaScriptSerializer().Deserialize<ClientDevopsRespose>(versionClient);
+        	ClientVersion= responseObject.version;
+        	Report.Log(ReportLevel.Info,ClientVersion);
+        		
+        	}
+        	// splinting version number
+        	string[] splitClientVersion = Sversion.Split('.');
+        	ClientVersion = splitClientVersion[0] + "." + splitClientVersion[1] + "." + splitClientVersion[2];
+        	Report.Log(ReportLevel.Info, "after"+ ClientVersion);
+        	
+        	
         }
         
     }

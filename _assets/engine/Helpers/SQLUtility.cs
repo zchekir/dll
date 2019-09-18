@@ -35,6 +35,7 @@ namespace engine.Helpers
         /// DataTable used to store results of SQL query
         /// </summary>
         public static DataTable dt = new DataTable();
+        public static string ResetToken;
  
         /// <summary>
         /// This will query the database and store the results of the completed assessment into a datatable. This will use the TestIdentifer
@@ -220,6 +221,46 @@ namespace engine.Helpers
 			} while (dt.Rows.Count < 1);
 								
 		}
+        
+        
+        /// <summary>
+        /// Getting ResetPassword from DB
+        /// </summary>
+        [UserCodeMethod]
+        public static void GetRestToken(string dbserver, string database, string username, string password, string authentication, string key)
+        {
+        	dt.Clear();
+        	
+            // QueryDB
+		      string query = @"SELECT 
+		      resetpasswordtoken,username
+              from [UserData].[User]
+              where username = @key";
+               
+        // Connecting to SQL DB:
+			  string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+		//CreateObject:
+		     SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
+			 da.SelectCommand.Parameters.AddWithValue("@key", key);
+			// Get the data from DB
+			using (da)
+	        {
+				da.Fill(dt);
+			}
+			ResetToken = dt.Rows[0][0].ToString();
+			string TokenKey = dt.Rows[0][1].ToString();
+			Report.Log(ReportLevel.Info, "Reset Token: " + ResetToken + "Username: " +  TokenKey );
+			
+        }
+       
+       
+        	
+        	
+        
+        	
+        	
+        }
+       
                
     }
-}
+

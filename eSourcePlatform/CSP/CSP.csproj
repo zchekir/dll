@@ -20,6 +20,8 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
     <StartAction>Project</StartAction>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -1299,6 +1301,30 @@
     <Compile Include="APIModules\Clear_ExternalID.cs">
       <id>dd1b110c-c8f3-4cc6-a608-0cd3acad3db4</id>
     </Compile>
+    <Compile Include="APIModules\GetResetToken.cs">
+      <BoundTo>8b4a2f89-77f0-466c-b040-4b7936a31220</BoundTo>
+      <DependentUpon>GetResetToken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50004330-04d8-4496-ad68-caf37cdb96a1</id>
+    </Compile>
+    <Compile Include="APIModules\GetResetToken.UserCode.cs">
+      <BoundTo>8b4a2f89-77f0-466c-b040-4b7936a31220</BoundTo>
+      <DependentUpon>GetResetToken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>685c53b0-7d57-4385-a6dc-2f291e52004f</id>
+    </Compile>
+    <Compile Include="APIModules\G_Secret.cs">
+      <BoundTo>915a7715-2246-45d7-9b83-536fcaf59f17</BoundTo>
+      <DependentUpon>G_Secret.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3dc3babb-63ba-4690-9a5a-e8d73b374697</id>
+    </Compile>
+    <Compile Include="APIModules\G_Secret.UserCode.cs">
+      <BoundTo>915a7715-2246-45d7-9b83-536fcaf59f17</BoundTo>
+      <DependentUpon>G_Secret.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f8955114-cf3b-4bdf-8733-7e8dbae6b7e3</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>972ac0ea-8bc6-4fff-b84a-433c9e389b8b</id>
     </Compile>
@@ -1889,6 +1915,18 @@
       <BoundTo>bddda510-2081-4c97-942f-f3010a321e3d</BoundTo>
       <DependentUpon>Verify_Secure_URL.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="General\Verify_Version_Client.cs">
+      <BoundTo>179b7486-a612-4e51-a5d1-6ab15b29afd5</BoundTo>
+      <DependentUpon>Verify_Version_Client.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6709eb24-fd06-47ab-aeef-e7fbf2c289a7</id>
+    </Compile>
+    <Compile Include="General\Verify_Version_Client.UserCode.cs">
+      <BoundTo>179b7486-a612-4e51-a5d1-6ab15b29afd5</BoundTo>
+      <DependentUpon>Verify_Version_Client.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7ff2a281-7929-48d8-8776-6958263d82f6</id>
     </Compile>
     <Compile Include="General\Verify_Version_Deployed.cs">
       <id>88f21865-db17-4fbc-9bf3-5620b6b22e94</id>
@@ -3451,6 +3489,16 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>70ee2cb7-7981-4f16-9f4b-d4fbea372124</recordtableid>
     </None>
+    <None Include="APIModules\GetResetToken.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>8b4a2f89-77f0-466c-b040-4b7936a31220</id>
+      <recordtableid>9ecd415f-eabd-42d3-912c-00d78f3c79d2</recordtableid>
+    </None>
+    <None Include="APIModules\G_Secret.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>915a7715-2246-45d7-9b83-536fcaf59f17</id>
+      <recordtableid>b5c1f78b-d628-4e9c-83b0-597bcacc9905</recordtableid>
+    </None>
     <None Include="app.config">
       <id>4fde1d06-b4d6-4207-b920-eeffc7d6cb1c</id>
     </None>
@@ -3771,6 +3819,11 @@
       <id>bddda510-2081-4c97-942f-f3010a321e3d</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>8720e4ed-cabc-4f47-8984-b71fc93cb4df</recordtableid>
+    </None>
+    <None Include="General\Verify_Version_Client.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>179b7486-a612-4e51-a5d1-6ab15b29afd5</id>
+      <recordtableid>bbd7de50-f153-4542-b412-b02ff4df214c</recordtableid>
     </None>
     <None Include="General\Verify_Version_Deployed.rxrec">
       <id>19edc20e-5832-4454-a1b4-82cdc3cbceca</id>

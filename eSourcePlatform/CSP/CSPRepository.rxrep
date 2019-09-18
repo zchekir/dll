@@ -640,7 +640,7 @@ rxversion="8.3">
 				name="ProtocolNumberField"
 				refimgid="30f0327d-5cfa-4d46-a068-4db71ac6bf7b"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_protocolName_[0-9]']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_protocolName_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1002,7 +1002,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ExternalUserKeyField"
 				refimgid="da7beda8-f58f-4329-9684-fd39ee6fdbb4"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_key_0']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_key_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1011,7 +1011,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ExternalUserEmailField"
 				refimgid="69c4db27-6965-47d3-8d7d-c31f08af6f8e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_contactEmail_1']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_contactEmail_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -2721,6 +2721,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 		name="CSPDOM">
+			cgst-qc-orr.azurewebsites.net
 		</var>
 		<var
 		id="cca33cb1-e6e4-4dea-927e-63ce1b157653"

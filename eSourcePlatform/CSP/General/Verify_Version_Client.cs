@@ -24,53 +24,53 @@ namespace CSP.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Version_Deployed recording.
+    ///The Verify_Version_Client recording.
     /// </summary>
-    [TestModule("c718511d-4281-405c-9160-251f311d2703", ModuleType.Recording, 1)]
-    public partial class Verify_Version_Deployed : ITestModule
+    [TestModule("bbd7de50-f153-4542-b412-b02ff4df214c", ModuleType.Recording, 1)]
+    public partial class Verify_Version_Client : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Verify_Version_Deployed instance = new Verify_Version_Deployed();
+        static Verify_Version_Client instance = new Verify_Version_Client();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Version_Deployed()
+        public Verify_Version_Client()
         {
-            Version = "";
-            CSPDOM = "cgst-qc-orr.azurewebsites.net";
+            CSPDOM = "";
+            Server = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Version_Deployed Instance
+        public static Verify_Version_Client Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Version;
+        string _Server;
 
         /// <summary>
-        /// Gets or sets the value of variable Version.
+        /// Gets or sets the value of variable Server.
         /// </summary>
-        [TestVariable("3405ba1d-b660-45c9-ae63-2a2a96b1364e")]
-        public string Version
+        [TestVariable("7e058fce-68f4-4858-9c01-983db9e3c891")]
+        public string Server
         {
-            get { return _Version; }
-            set { _Version = value; }
+            get { return _Server; }
+            set { _Server = value; }
         }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
+        [TestVariable("5573f8ac-d505-42b0-a336-394c8bca477a")]
         public string CSPDOM
         {
             get { return repo.CSPDOM; }
@@ -103,10 +103,10 @@ namespace CSP.General
 
             Init();
 
-            engine.Helpers.WebService.ServerVersion(CSPDOM);
+            engine.Helpers.WebService.C_Version(CSPDOM);
             Delay.Milliseconds(0);
             
-            VersionValidation();
+            ClientValidation();
             Delay.Milliseconds(0);
             
         }

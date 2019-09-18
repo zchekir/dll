@@ -140,7 +140,7 @@ namespace CSP.APIModules
 
             Init();
 
-            engine.Helpers.WebService.Authenticate(RandNum, DOM, ProtocolNumber, Key, Secret);
+            engine.Helpers.WebService.Authenticate(RandNum, DOM, ProtocolNumber, Key);
             Delay.Milliseconds(0);
             
         }

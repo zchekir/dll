@@ -22,9 +22,8 @@ using Ranorex.Core.Testing;
 
 namespace CSP.General
 {
-    public partial class Verify_Version_Deployed
+    public partial class Verify_Version_Client
     {
-    	
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -33,11 +32,10 @@ namespace CSP.General
         {
             // Your recording specific initialization code goes here.
         }
-        
-       // Server version validation
-        public void VersionValidation()
+
+        public void ClientValidation()
         {
-			Validate.AreEqual(engine.Helpers.WebService.Sversion, Version);
+        	Validate.AreEqual(engine.Helpers.WebService.ClientVersion, Server);
         }
 
     }

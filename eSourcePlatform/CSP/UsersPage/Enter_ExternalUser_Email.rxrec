@@ -28,12 +28,8 @@ rxversion="8.3">
 	</codegen>
 	<variables>
 		<var
-		id="dbb429c7-ce36-400d-b26e-fc1f47462f65"
-		name="ExternalEmail">
-		</var>
-		<var
-		id="f90483c1-13d8-42b7-b4ec-5eeeb99ddfa9"
-		name="RandNum">
+		id="831c3ccb-9a5c-4c2a-ada9-75e6678cd703"
+		name="GmailAddress">
 		</var>
 	</variables>
 	<recorditems>
@@ -42,7 +38,7 @@ rxversion="8.3">
 		button="Left"
 		duration="100ms"
 		enabled="True"
-		loc="57;13"
+		loc="Center"
 		movetime="1ms"
 		optional="False"
 		searchpropertyid="ba957646-0728-451a-a1ab-16034ec07464"
@@ -275,7 +271,7 @@ RQAUUUUAFFFFAH//2Q==
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="ExternalEmail">
+				variable="GmailAddress">
 				</binding>
 			</bindings>
 			<info
@@ -400,67 +396,6 @@ RQAUUUUAFFFFAH//2Q==
 				</element>
 				<path>
 					/dom[@domain=$DOM]//input[#'formly_2_input_contactEmail_1']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="+"
-		duration="10ms"
-		enabled="True"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="3a051920-2416-43d6-9c55-898f6b73d989">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4647601e-706b-41d6-a391-656ee0bee7b4"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//input[@id~'formly_[0-9]+_input_contactEmail_1']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence=""
-		duration="10ms"
-		enabled="True"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="c7fbcd17-bcfc-4b3f-af80-c5369e68e0f5">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="RandNum">
-				</binding>
-			</bindings>
-			<info
-			id="4647601e-706b-41d6-a391-656ee0bee7b4"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//input[@id~'formly_[0-9]+_input_contactEmail_1']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="@gmail.com"
-		duration="10ms"
-		enabled="True"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="12be1eb3-f02c-41c3-bab1-c0f0e167b670">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4647601e-706b-41d6-a391-656ee0bee7b4"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//input[@id~'formly_[0-9]+_input_contactEmail_1']
 				</path>
 			</info>
 		</keysequenceitem>
