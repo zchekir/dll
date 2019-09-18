@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -568,8 +568,8 @@ rxversion="8.3">
 			datasource="Authentication"
 			errorbehavior="Stop"
 			id="12672266-c3e5-4da0-bf18-959502d59662"
-			maxrange="2"
-			minrange="2"
+			maxrange="0"
+			minrange="0"
 			name="Regression"
 			warnunboundvariables="False">
 			</smartfoldernode>
@@ -1640,7 +1640,7 @@ rxversion="8.3">
 					dataname="ExternalEmail"
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="9fc6d3c2-783f-4111-9f27-d77e97f4380e"
-					variablename="ExternalEmail">
+					variablename="GmailAddress">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2971,31 +2971,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<modulegroup
-			id="8e978052-68b8-49f8-8c29-eec72c073975"
-			name="Login"
-			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="CSPUsername"
-					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="CSPUsername">
-					</var>
-					<var
-					dataname="CSPPassword"
-					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="CSPPassword">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testcase
 			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd"
 			maxrange="3"
@@ -3145,27 +3120,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="9cceffac-74f4-46fd-a04c-a4ff2d9bb1e6"
-			name="Open_Browser"
-			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPURL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
-					variablename="CSPURL">
-					</var>
-					<var
-					dataname="Browser"
-					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-					variableid="daa00f9e-5818-40a1-a038-7de381bf08b9"
-					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3480,20 +3434,6 @@ rxversion="8.3">
 			id="b55ff947-a98a-4cfb-b556-b9dc239a96a5"
 			name="Click_Participants_Tab"
 			ref="ff4b0f88-9baa-4e62-9d13-538aeb62f61f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="b57f510f-2723-44a3-8606-3cfe0d42c05b"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
 			type="Recording">
 				<databinding>
 					<var
@@ -4050,7 +3990,6 @@ rxversion="8.3">
 			name="teardown">
 			</teardown>
 			<modulegroup
-			enabled="False"
 			id="d54b9763-8632-486b-8328-b4e9d93a67a7"
 			name="Login"
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
@@ -4098,26 +4037,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="d98fbd64-8d01-4557-88e1-7f7d0fb920bd"
-			name="Open_Browser"
-			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPURL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
-					variablename="CSPURL">
-					</var>
-					<var
-					dataname="Browser"
-					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-					variableid="daa00f9e-5818-40a1-a038-7de381bf08b9"
-					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4657,10 +4576,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="ff3658a3-73f3-4023-8546-6746c3a016c7"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="ff562408-6c23-45c0-b23a-93261b41d68b"
 			name="Click_Edit_Participant"
@@ -4966,14 +4881,6 @@ rxversion="8.3">
 								id="136b90aa-05b2-4c50-8288-5e69053320d5"
 								name="Verify_Secure_URL">
 								</testmodule>
-								<teardown
-								id="ff3658a3-73f3-4023-8546-6746c3a016c7"
-								name="teardown">
-									<testmodule
-									id="b57f510f-2723-44a3-8606-3cfe0d42c05b"
-									name="Close_Browser">
-									</testmodule>
-								</teardown>
 							</testcase>
 							<testcase
 							id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c"
@@ -4981,10 +4888,6 @@ rxversion="8.3">
 								<setup
 								id="5e2148a0-cc3e-4135-a6c6-a4e78efd6208"
 								name="setup">
-									<testmodule
-									id="9cceffac-74f4-46fd-a04c-a4ff2d9bb1e6"
-									name="Open_Browser">
-									</testmodule>
 									<modulegroup
 									id="d54b9763-8632-486b-8328-b4e9d93a67a7"
 									name="Login">
@@ -5465,14 +5368,6 @@ rxversion="8.3">
 									id="d12e81c6-a1b0-40f1-bdfd-8e3e419d4eb9"
 									name="Delete_Existing_Extracts">
 									</testmodule>
-									<testmodule
-									id="d98fbd64-8d01-4557-88e1-7f7d0fb920bd"
-									name="Open_Browser">
-									</testmodule>
-									<modulegroup
-									id="8e978052-68b8-49f8-8c29-eec72c073975"
-									name="Login">
-									</modulegroup>
 								</setup>
 								<testmodule
 								id="fed932c2-85e8-44a5-90c8-91e5d4b99d48"
