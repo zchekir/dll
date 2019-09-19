@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -276,26 +276,6 @@ rxversion="8.3">
 			id="08ee4860-3e4d-4f92-9118-fd2b944901de"
 			name="setup">
 			</setup>
-			<testmodule
-			id="09c4f40e-3769-43b2-b57f-f0adc7962dcb"
-			name="Open_Browser"
-			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPURL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
-					variablename="CSPURL">
-					</var>
-					<var
-					dataname="Browser"
-					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-					variableid="daa00f9e-5818-40a1-a038-7de381bf08b9"
-					variablename="Browser">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="09d3606d-6b0c-4038-b7ff-e8ffa9bac093"
 			name="Click_External_Users_Menu"
@@ -1310,10 +1290,6 @@ rxversion="8.3">
 			id="43a30475-a3e8-4922-86d6-ce75566c783f"
 			name="teardown">
 			</teardown>
-			<setup
-			id="44bae1dd-357b-4eab-82ae-c929805975de"
-			name="setup">
-			</setup>
 			<testmodule
 			id="44d8aab8-240a-42bd-872c-196141bf88df"
 			name="Click_AddTest_Button"
@@ -3681,31 +3657,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<modulegroup
-			id="bf1101ff-1d3e-4c55-91d3-615d286bfcd5"
-			name="Login"
-			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="CSPUsername"
-					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="CSPUsername">
-					</var>
-					<var
-					dataname="CSPPassword"
-					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="CSPPassword">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testmodule
 			id="bf747915-dbd5-4dfd-a140-921ad7180962"
 			name="Click_Battery_Block"
@@ -5321,18 +5272,6 @@ rxversion="8.3">
 							<testcase
 							id="8fa64b70-c320-42f8-b5ac-ebbede419bfd"
 							name="ReGenerate_External_Secret">
-								<setup
-								id="44bae1dd-357b-4eab-82ae-c929805975de"
-								name="setup">
-									<testmodule
-									id="09c4f40e-3769-43b2-b57f-f0adc7962dcb"
-									name="Open_Browser">
-									</testmodule>
-									<modulegroup
-									id="bf1101ff-1d3e-4c55-91d3-615d286bfcd5"
-									name="Login">
-									</modulegroup>
-								</setup>
 								<testmodule
 								id="09d3606d-6b0c-4038-b7ff-e8ffa9bac093"
 								name="Click_External_Users_Menu">
