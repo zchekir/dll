@@ -22,37 +22,36 @@ using Ranorex.Core.Testing;
 
 namespace engine.Helpers
 {
-    /// <summary>
-    /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
-    /// </summary>
-    [UserCodeCollection]
-    public class SQLUtility
-    {
-        // You can use the "Insert New User Code Method" functionality from the context menu,
-        // to add a new method with the attribute [UserCodeMethod].
-        
-        /// <summary>
-        /// DataTable used to store results of SQL query
-        /// </summary>
-        public static DataTable dt = new DataTable();
-        public static string ResetToken;
- 
-        /// <summary>
-        /// This will query the database and store the results of the completed assessment into a datatable. This will use the TestIdentifer
-        /// which was generated through the API when creating an assessment link
-        /// </summary>
-        /// <param name="dbserver">The server you want to connect to</param>
-        /// <param name="database">The database name to query</param>
-        /// <param name="username">Username credential for the server</param>
-        /// <param name="password">Password credential for the server</param>
-        /// <param name="authentication">The authenticaiton method for connecting to the database. This is only needed for connecting using domain username and password</param>
-        [UserCodeMethod]
-        public static void GetAssessmentOutcomes(string dbserver, string database, string username, string password, string authentication)
-        {
-        	dt.Clear();
+	/// <summary>
+	/// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
+	/// </summary>
+	[UserCodeCollection]
+	public class SQLUtility
+	{
+		// You can use the "Insert New User Code Method" functionality from the context menu,
+		// to add a new method with the attribute [UserCodeMethod].
 		
-        	Report.Log(ReportLevel.Info, "Before");
-        	string query = @"SELECT 
+		/// <summary>
+		/// DataTable used to store results of SQL query
+		/// </summary>
+		public static DataTable dt = new DataTable();
+		public static string ResetToken;
+		
+		/// <summary>
+		/// This will query the database and store the results of the completed assessment into a datatable. This will use the TestIdentifer
+		/// which was generated through the API when creating an assessment link
+		/// </summary>
+		/// <param name="dbserver">The server you want to connect to</param>
+		/// <param name="database">The database name to query</param>
+		/// <param name="username">Username credential for the server</param>
+		/// <param name="password">Password credential for the server</param>
+		/// <param name="authentication">The authenticaiton method for connecting to the database. This is only needed for connecting using domain username and password</param>
+		[UserCodeMethod]
+		public static void GetAssessmentOutcomes(string dbserver, string database, string username, string password, string authentication)
+		{
+			dt.Reset();
+			
+			string query = @"SELECT
 	     Userdata.Part.IQNumber                                                                                                                 AS [IQNumber]
 		,UserData.Person.DOB                                                                                                                    AS [DateOfBirth]
 		,YEAR(UserData.Person.DOB)                                                                                                              AS [BirthYear]
@@ -60,39 +59,39 @@ namespace engine.Helpers
 		,Assessment.Assessment.Id                                                                                                               AS [SessionID]
 		,CONVERT(VARCHAR(10), Assessment.Assessment.DateOfAssessment, 20)                                                                       AS [SessionDate]
 		,CONVERT(VARCHAR(12), Assessment.Assessment.DateOfAssessment, 14)                                                                       AS [SessionTime]
-		,(SELECT COUNT(1) 
+		,(SELECT COUNT(1)
 			FROM Assessment.AssessmentSessionAttempt asatt
-			WHERE asatt.AssessmentSessionId = Assessment.AssessmentSession.Id 
+			WHERE asatt.AssessmentSessionId = Assessment.AssessmentSession.Id
 			AND asatt.id <= Assessment.AssessmentSessionAttempt.Id)                                                                             AS [SessionAttempt]
 		,Assessment.Assessment.SessionDuration                                                                                                  AS [SessionDuration]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionCompletion' 
-			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes' 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionCompletion'
+			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes'
 			WHEN [AssessmentBatteryCompositeOutcome].[Value]=0 THEN 'No' ELSE null END END)                                                     AS [SessionCompletionPass]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionPerformance' 
-			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes' 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionPerformance'
+			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes'
 			WHEN [AssessmentBatteryCompositeOutcome].[Value]=0 THEN 'No' ELSE null END END)                                                     AS [SessionPerformancePass]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionIntegrity' 
-			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes' 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionIntegrity'
+			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes'
 			WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value]=0 THEN 'No' ELSE null END END)                                            AS [SessionIntegrityPass]
 		,Assessment.Test.Id                                                                                                                     AS [TestId]
 		,Assessment.Test.[Name]                                                                                                                 AS [Test]
 		,Assessment.TestCode.[Name]                                                                                                             AS [TestCode]
-		,Assessment.AssessmentTest.TaskVersion                                                                                                  AS [TestVersion]  
+		,Assessment.AssessmentTest.TaskVersion                                                                                                  AS [TestVersion]
 		,MAX(CASE WHEN Assessment.Test.Descript like '%SAT%' THEN Assessment.AssessmentTestMetadata.[Value] END)								AS [TestSubset]
-		,Assessment.TestCode.Phase                                                                                                              AS [TestPhase]      
+		,Assessment.TestCode.Phase                                                                                                              AS [TestPhase]
 		,CASE WHEN Assessment.AssessmentTest.[Round] > 0
 			THEN CAST(Assessment.AssessmentTest.[Round] as VARCHAR(10))
-		    WHEN Assessment.AssessmentTest.[Round] = 0 
+		    WHEN Assessment.AssessmentTest.[Round] = 0
 			THEN 'Total' ELSE NULL END																										    AS [Round]
 		,Assessment.AssessmentTest.Attempt                                                                                                      AS [TestAttempt]
-		,MAX(CASE WHEN Assessment.Outcome.Description = 'TestCompletion' 
-			THEN CASE WHEN Assessment.AssessmentTestOutcome.[Value] = 1 THEN 'Yes' 
+		,MAX(CASE WHEN Assessment.Outcome.Description = 'TestCompletion'
+			THEN CASE WHEN Assessment.AssessmentTestOutcome.[Value] = 1 THEN 'Yes'
 			WHEN Assessment.AssessmentTestOutcome.[Value]=0 THEN 'No' ELSE null END END)                                                        AS [TestCompletionPass]
-		,MAX(CASE WHEN Assessment.Outcome.Description = 'TestPerformance' 
+		,MAX(CASE WHEN Assessment.Outcome.Description = 'TestPerformance'
 			THEN CASE WHEN Assessment.AssessmentTestOutcome.[Value] = 1 THEN 'Yes'
 				WHEN Assessment.AssessmentTestOutcome.[Value]=0 THEN 'No' ELSE null END END)                                                    AS [TestPerformancePass]
-		,MAX(CASE WHEN Assessment.Outcome.Description = 'TestIntegrity' 
-			THEN CASE WHEN Assessment.AssessmentTestOutcome.[Value] = 1 THEN 'Yes' 
+		,MAX(CASE WHEN Assessment.Outcome.Description = 'TestIntegrity'
+			THEN CASE WHEN Assessment.AssessmentTestOutcome.[Value] = 1 THEN 'Yes'
 			WHEN Assessment.AssessmentTestOutcome.[Value]=0 THEN 'No' ELSE null END END)														AS [TestIntegrityPass]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'TestDuration' THEN Assessment.AssessmentTestOutcome.[Value] END)                       AS [TestDuration]
 		,MAX(CASE WHEN Assessment.Outcome.Description = [AssessmentOutcomePrimary].[Description] THEN Assessment.AssessmentTestOutcome.[Value] END)			AS [PrimaryOutcome]
@@ -118,31 +117,31 @@ namespace engine.Helpers
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'StandardScoreT' THEN Assessment.AssessmentTestOutcome.[Value] END)                     AS [StandardScoreT]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'AltStandardScoreZ' THEN Assessment.AssessmentTestOutcome.[Value] END)                  AS [AltStandardScoreZ]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'AltStandardScoreT' THEN Assessment.AssessmentTestOutcome.[Value] END)                  AS [AltStandardScoreT]
-		,MAX(CASE WHEN Assessment.Outcome.Description = 'ChangeScore' THEN Assessment.AssessmentTestOutcome.[Value] END)                        AS [ChangeScore] 
+		,MAX(CASE WHEN Assessment.Outcome.Description = 'ChangeScore' THEN Assessment.AssessmentTestOutcome.[Value] END)                        AS [ChangeScore]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'MovesPerSecond' THEN Assessment.AssessmentTestOutcome.[Value] END)						AS [MovesPerSecond]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'ReturnToHead' THEN Assessment.AssessmentTestOutcome.Value END)							AS [ReturnToHead]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'PerseverativeErrors' THEN Assessment.AssessmentTestOutcome.Value END)					AS [PerseverativeErrors]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'WithinSearchErrors' THEN Assessment.AssessmentTestOutcome.Value END)					AS [WithinSearchErrors]
-		,CASE 
+		,CASE
 			WHEN Assessment.Test.Descript like '%GMLT%'
-				THEN 
+				THEN
 				CAST(LEFT(Substring(Assessment.AssessmentTest.Details, Charindex(',', Assessment.AssessmentTest.Details)+1,
 				LEN(Assessment.AssessmentTest.Details)),Charindex(',',Substring(Assessment.AssessmentTest.Details,
 				Charindex(',', Assessment.AssessmentTest.Details)+1, LEN(Assessment.AssessmentTest.Details)))-1) AS INT)
 				ELSE
 				null
-			END																																	AS [GMLTIndex] 
+			END																																	AS [GMLTIndex]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'SATScore' THEN Assessment.AssessmentTestOutcome.Value END)								AS [SATScore]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'PsyAttStdScr' 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'PsyAttStdScr'
 			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [PsyAttStdScr]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'PsyAttChange' 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'PsyAttChange'
 			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [PsyAttChange]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'LearnWMStdScr' 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'LearnWMStdScr'
 			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [LearnWMStdScr]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'LearnWMChange' 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'LearnWMChange'
 			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [LearnWMChange]
-		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'AltLearnWMStdScr' 
-			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [AltLearnWMStdScr] 
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'AltLearnWMStdScr'
+			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [AltLearnWMStdScr]
 		,UserData.PrWorkflowInstance.TestIdentifier                                                                                             AS [TestIdentifier]
 
 		FROM Assessment.Assessee
@@ -175,15 +174,15 @@ namespace engine.Helpers
 		LEFT JOIN [Study].[StudVisitSchedule]                                                                           ON [Study].[StudVisitSchedule].Id=[Study].[Visit].StudyVisitScheduleId
 
 	WHERE UserData.PrWorkflowInstance.TestIdentifier = @testIdentifier
-	GROUP BY Assessment.Assessment.Id, 
-			Assessment.AssessmentTest.Id, 
-			Assessment.Assessment.DateOfAssessment, 
-			Assessment.Test.id, 
+	GROUP BY Assessment.Assessment.Id,
+			Assessment.AssessmentTest.Id,
+			Assessment.Assessment.DateOfAssessment,
+			Assessment.Test.id,
 			UserData.Person.Id,
 			Assessment.Assessee.Id,
 			Assessment.AssessmentSession.Id,
 			Assessment.AssessmentSessionAttempt.Id,
-			Assessment.Assessment.SessionDuration, 
+			Assessment.Assessment.SessionDuration,
 			Assessment.Test.[Name],
 			Assessment.AssessmentTest.[Round],
 			Assessment.AssessmentTest.Attempt,
@@ -191,15 +190,14 @@ namespace engine.Helpers
 			Assessment.TestCode.Phase,
 			Assessment.TestCode.Name,
 			Assessment.AssessmentTest.TaskVersion,
-			UserData.Person.DOB, 
-			AssessmentSessionAttemptIssue.AssessmentSessionAttemptId, 
-			Userdata.Part.IQNumber, 
+			UserData.Person.DOB,
+			AssessmentSessionAttemptIssue.AssessmentSessionAttemptId,
+			Userdata.Part.IQNumber,
 			Assessment.Assessment.Age,
 			UserData.PrWorkflowInstance.TestIdentifier,
 			Assessment.Test.Descript";
-		
-        	Report.Log(ReportLevel.Info, "Before");
-        	
+			
+			
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
@@ -207,60 +205,53 @@ namespace engine.Helpers
 			
 			//Send the query to the database and store the results in a DataTable, the loop here will allow for the situation
 			//where the results take longer than usual to be processed and appear in the Database.
-			do 
+			do
 			{
 				Delay.Duration(30000);
 				
 				using (da)
-	        	{
+				{
 					da.Fill(dt);
 				}
 				
 				Report.Info("Rows found by query: " + dt.Rows.Count.ToString());
 				
 			} while (dt.Rows.Count < 1);
-								
+			
 		}
-        
-        
-        /// <summary>
-        /// Getting ResetPassword from DB
-        /// </summary>
-        [UserCodeMethod]
-        public static void GetRestToken(string dbserver, string database, string username, string password, string authentication, string key)
-        {
-        	dt.Clear();
-        	
-            // QueryDB
-		      string query = @"SELECT 
+		
+		
+		/// <summary>
+		/// Getting ResetPassword from DB
+		/// </summary>
+		[UserCodeMethod]
+		public static void GetRestToken(string dbserver, string database, string username, string password, string authentication, string key)
+		{
+			dt.Reset();
+			
+			// QueryDB
+			string query = @"SELECT
 		      resetpasswordtoken,username
               from [UserData].[User]
               where username = @key";
-               
-        // Connecting to SQL DB:
-			  string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
-		//CreateObject:
-		     SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
-			 da.SelectCommand.Parameters.AddWithValue("@key", key);
+			
+			//Connecting to SQL DB:
+			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+			//CreateObject:
+			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
+			da.SelectCommand.Parameters.AddWithValue("@key", key);
 			// Get the data from DB
 			using (da)
-	        {
+			{
 				da.Fill(dt);
 			}
 			ResetToken = dt.Rows[0][0].ToString();
 			string TokenKey = dt.Rows[0][1].ToString();
 			Report.Log(ReportLevel.Info, "Reset Token: " + ResetToken + "Username: " +  TokenKey );
 			
-        }
-       
-       
-        	
-        	
-        
-        	
-        	
-        }
-       
-               
-    }
+		}
+	}
+	
+	
+}
 
