@@ -43,7 +43,6 @@ namespace RedCapCloud.General
         {
             CSPURL = "";
             Key = "";
-            Secret = "";
         }
 
         /// <summary>
@@ -80,18 +79,6 @@ namespace RedCapCloud.General
             set { _Key = value; }
         }
 
-        string _Secret;
-
-        /// <summary>
-        /// Gets or sets the value of variable Secret.
-        /// </summary>
-        [TestVariable("6f03480a-06b0-4fa6-9bf1-a5acbb0e8cca")]
-        public string Secret
-        {
-            get { return _Secret; }
-            set { _Secret = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -118,7 +105,7 @@ namespace RedCapCloud.General
 
             Init();
 
-            engine.Helpers.CSVUtility.AddVisitSettings(CSPURL, Key, Secret);
+            engine.Helpers.CSVUtility.AddVisitSettings(CSPURL, Key);
             Delay.Milliseconds(0);
             
         }

@@ -49,6 +49,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsvHelper">
+      <HintPath>..\..\..\_assets\engine\bin\Debug\CsvHelper.dll</HintPath>
+    </Reference>
     <Reference Include="engine">
       <HintPath>..\..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
     </Reference>

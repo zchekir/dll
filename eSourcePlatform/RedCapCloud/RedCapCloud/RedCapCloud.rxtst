@@ -94,12 +94,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="09fa7ab8-b01b-42a3-b08f-0fa64d44ec68"
-			name="Logout_Gmail"
-			ref="7a7be4ca-8ba5-4305-bd1d-e3a470d856b4"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="0a5997d4-8891-4a83-b13e-096d37f4cfbf"
 			name="Click_CBB_CRF"
 			ref="23016116-3201-4725-84fa-69e0a0147395"
@@ -228,26 +222,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testmodule
-			id="1138aace-ace2-4e87-a0e9-da7ddcf2ae4a"
-			name="Login_Gmail"
-			ref="be7da2ac-7a53-4abe-b613-0de37a8a2816"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="GmailAddress"
-					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
-					variableid="540d746a-a31d-43cb-a3cf-cecd579c1dfd"
-					variablename="GmailAddress">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
-					variableid="a0d0c797-fa13-41e8-9218-9789ef1b9316"
-					variablename="GmailPassword">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="117ea5b6-d709-4551-9b19-0a8703155c64"
 			name="Click_Upload"
@@ -388,6 +362,55 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="1d14da03-d024-44ad-b7b7-e35c214d137c"
+			name="GeneratingSecret"
+			ref="8893f97d-6402-4354-9824-20a0162229b1">
+				<databinding>
+					<var
+					dataname="dbUsername"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="e5fbf288-cd10-4478-b174-b7cd244f894c"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="1789d8d4-5bce-4e63-ae7e-8d4c4261303e"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="544ee441-fb93-4dd7-9be8-2d8bb4e266be"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="709d7ef8-5f93-4a0b-a867-796e4645472f"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Key"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="8e6959d3-3ca1-4bf1-b7ca-4657ef4aced1"
+					variablename="Key">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
+					variableid="16649c69-74df-4134-bf17-75efa59abd9c"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testcase
 			id="1eee6458-0616-4a02-86e4-ee0ac17668d8"
 			name="Generate_Secret">
@@ -481,12 +504,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="2596f2f9-78d9-4b8e-8a7e-10134beff48b"
-			name="Open_Gmail"
-			ref="dfb8dc74-3cd6-4c2f-882d-e08b92ce668c"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="26104fd9-a878-49d2-bd55-9c31bb6cd1b5"
 			name="DateTimeGenerator"
 			ref="cf999998-58c9-4621-af29-f2668761d042"
@@ -518,20 +535,6 @@ rxversion="8.3">
 					variableid="e6530ed0-f488-4aa8-8afe-85836dd0927f"
 					variablename="RandNum">
 					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="2aa46f45-e9bc-4c9d-9526-3ece846a2d6a"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
 					<var
 					dataname="CSPDOM"
 					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
@@ -881,12 +884,6 @@ rxversion="8.3">
 					variablename="Key">
 					</var>
 					<var
-					dataname="Secret"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="6f03480a-06b0-4fa6-9bf1-a5acbb0e8cca"
-					variablename="Secret">
-					</var>
-					<var
 					dataname="CSPURL"
 					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="b4abd2fb-b815-47f4-88b7-12130961b9c3"
@@ -929,6 +926,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			datasource="RCCConnector"
 			id="6025649b-be25-47e9-ae32-343ff3c0942c"
 			maxrange="0"
 			minrange="0"
@@ -1069,12 +1067,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="6b774846-5fb2-40dd-ba70-d7a0daee482d"
-			name="Open_PlatformSupport_Email"
-			ref="52096338-91b8-414a-8fb5-b3d7de1f35d5"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="6bb8b465-d838-45e6-b2cc-9c191bcc362c"
 			name="Configure_Workflow">
@@ -1104,26 +1096,6 @@ rxversion="8.3">
 					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="7465f1be-50de-49f7-8144-be18639a4b2a"
-			name="Generate_Secret"
-			ref="69cc12f0-25dd-4495-a0bc-9eef9bdec8bb"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="Key"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="e93ffd8c-d2ca-4815-8691-5adf41aa0dbd"
-					variablename="Key">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1348,38 +1320,6 @@ rxversion="8.3">
 			reportlevel="Info;20">
 				<parameters>
 					<param
-					name="DOM"
-					value="cgsqc.redcapcloud.com">
-					</param>
-					<param
-					name="URL"
-					value="https://cgsqc.redcapcloud.com/">
-					</param>
-					<param
-					name="RandNum"
-					value="">
-					</param>
-					<param
-					name="VisitSessionID"
-					value="">
-					</param>
-					<param
-					name="TestIdentifier"
-					value="">
-					</param>
-					<param
-					name="DBServer"
-					value="cgst-qc.database.windows.net">
-					</param>
-					<param
-					name="Database"
-					value="cgst-lithium-api">
-					</param>
-					<param
-					name="Authentication"
-					value="Active Directory Password">
-					</param>
-					<param
 					name="RCCDOM"
 					value="cgsqc.redcapcloud.com">
 					</param>
@@ -1394,6 +1334,30 @@ rxversion="8.3">
 					<param
 					name="CSPURL"
 					value="https://cgst-qc-orr.azurewebsites.net/">
+					</param>
+					<param
+					name="DBServer"
+					value="cgst-qc.database.windows.net">
+					</param>
+					<param
+					name="Database"
+					value="cgst-orr-api">
+					</param>
+					<param
+					name="Authentication"
+					value="Active Directory Password">
+					</param>
+					<param
+					name="RandNum"
+					value="">
+					</param>
+					<param
+					name="VisitSessionID"
+					value="">
+					</param>
+					<param
+					name="TestIdentifier"
+					value="">
 					</param>
 					<param
 					name="Key"
@@ -1640,8 +1604,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Filename"
-					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					dataname="CSVConfig"
+					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 					variableid="60131d8a-d584-4971-9daf-a95706b79477"
 					variablename="FileName">
 					</var>
@@ -1794,26 +1758,6 @@ rxversion="8.3">
 					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="a6f61ea0-1c68-4afa-9517-5b0926082b2b"
-			name="Extract_API_Secret"
-			ref="7ff6da60-55e1-4301-91ca-11c15fef8027"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="Secret"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="a1bedd59-8a9c-476b-956c-f2de6565c449"
-					variablename="Secret">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2000,8 +1944,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Filename"
-					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					dataname="CSVConfig"
+					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 					variableid="f704dd09-4ec7-452a-8f35-7fda5d776871"
 					variablename="FileName">
 					</var>
@@ -3131,34 +3075,10 @@ rxversion="8.3">
 							<testcase
 							id="1eee6458-0616-4a02-86e4-ee0ac17668d8"
 							name="Generate_Secret">
-								<testmodule
-								id="2596f2f9-78d9-4b8e-8a7e-10134beff48b"
-								name="Open_Gmail">
-								</testmodule>
-								<testmodule
-								id="1138aace-ace2-4e87-a0e9-da7ddcf2ae4a"
-								name="Login_Gmail">
-								</testmodule>
-								<testmodule
-								id="6b774846-5fb2-40dd-ba70-d7a0daee482d"
-								name="Open_PlatformSupport_Email">
-								</testmodule>
-								<testmodule
-								id="7465f1be-50de-49f7-8144-be18639a4b2a"
-								name="Generate_Secret">
-								</testmodule>
-								<testmodule
-								id="a6f61ea0-1c68-4afa-9517-5b0926082b2b"
-								name="Extract_API_Secret">
-								</testmodule>
-								<testmodule
-								id="09fa7ab8-b01b-42a3-b08f-0fa64d44ec68"
-								name="Logout_Gmail">
-								</testmodule>
-								<testmodule
-								id="2aa46f45-e9bc-4c9d-9526-3ece846a2d6a"
-								name="Close_Browser">
-								</testmodule>
+								<modulegroup
+								id="1d14da03-d024-44ad-b7b7-e35c214d137c"
+								name="GeneratingSecret">
+								</modulegroup>
 							</testcase>
 							<testcase
 							id="6025649b-be25-47e9-ae32-343ff3c0942c"
@@ -3542,10 +3462,16 @@ rxversion="8.3">
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
+					CSPPassword
+				</columnname>
+				<columnname>
 					dbPassword
 				</columnname>
 				<columnname>
 					GmailPassword
+				</columnname>
+				<columnname>
+					RCCPassword
 				</columnname>
 			</maskedcolumns>
 			<file>
@@ -3784,6 +3710,9 @@ rxversion="8.3">
 	<references>
 		<reference>
 			CSP.exe
+		</reference>
+		<reference>
+			CsvHelper.dll
 		</reference>
 		<reference>
 			engine.dll

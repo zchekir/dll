@@ -487,9 +487,7 @@ namespace engine.Helpers
         		responseObject = new JavaScriptSerializer().Deserialize<SaveNewSecretResponse>(secret);
         		Token = responseObject.value;
         		Report.Log(ReportLevel.Info, "Secret: " + Token);
-        		
-        		
-     
+        		        		
         	}
         	
         }

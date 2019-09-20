@@ -93,7 +93,10 @@ namespace RedCapCloud.SubjectsPage
             repo.REDCapCloud.SubjectsPage.CBBCRF.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery CRF - CBB') on item 'REDCapCloud.CogstateBatteryCRFCBB'.", repo.REDCapCloud.CogstateBatteryCRFCBBInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'REDCapCloud.CogstateBatteryCRFCBB'", repo.REDCapCloud.CogstateBatteryCRFCBBInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.REDCapCloud.CogstateBatteryCRFCBBInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery CRF - CBB') on item 'REDCapCloud.CogstateBatteryCRFCBB'.", repo.REDCapCloud.CogstateBatteryCRFCBBInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.REDCapCloud.CogstateBatteryCRFCBBInfo, "InnerText", "Cogstate Battery CRF - CBB");
             Delay.Milliseconds(100);
             

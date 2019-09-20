@@ -116,15 +116,15 @@ namespace CSP.AddBatteryPage
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryTemplateName' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys(BatteryTemplateName, 1);
-            Delay.Milliseconds(10);
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys(BatteryTemplateName, new Duration(0));
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys(RandNum, 1);
-            Delay.Milliseconds(10);
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys(RandNum, new Duration(0));
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("{Return}");
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("{Return}", 1);
             Delay.Milliseconds(0);
             
         }

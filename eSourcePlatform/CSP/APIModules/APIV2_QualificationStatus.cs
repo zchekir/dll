@@ -116,8 +116,8 @@ namespace CSP.APIModules
 
             Init();
 
-            //engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolNumber);
-            //Delay.Milliseconds(0);
+            engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolNumber);
+            Delay.Milliseconds(0);
             
         }
 

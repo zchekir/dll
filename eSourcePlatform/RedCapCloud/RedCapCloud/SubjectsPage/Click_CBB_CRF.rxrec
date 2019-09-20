@@ -53,6 +53,24 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c0295999-793e-46bd-b490-443ab7fdab76"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="481c3401-0daa-49a5-95f3-d6bcb777fd3c"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//button[#'dropDownButton_button_switchCrfMenu']/span[@innertext~'^Cogstate\ Battery\ CRF\ -\ CB']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -180,7 +198,7 @@ B1FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 	name="RedCapCloudRepository"
 	relativepath="..\RedCapCloudRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="RedCapCloudRepository"
 		namespace="RedCapCloud">

@@ -126,7 +126,7 @@ namespace engine.Helpers
         /// Adds study visit specific settings into a DataTable
         /// </summary>
         [UserCodeMethod]
-        public static void AddVisitSettings(string URL, string key, string secret)
+        public static void AddVisitSettings(string URL, string key)
         {
         	bool found = false;
         	//int index = 0;
@@ -149,7 +149,7 @@ namespace engine.Helpers
         				{
         					Report.Log(ReportLevel.Info, "Cell Found! Current settings are: " + row[column].ToString());
         					
-        					dt.Rows[rowIndex][24] = "{\"label\":\"Begin Assessment\", \"url\":\"" + URL + "/api/external/v2" + "\", \"key\":\"" + key + "\", \"secret\":\"" + secret + "\",\"execStatusVariable\":\"ExecutionStatus\", \"dob_variable\":\"dob\", \"sex_variable\":\"gender\", \"lang_variable\":\"language\", \"fieldHide\":\"N\"}";
+        					dt.Rows[rowIndex][24] = "{\"label\":\"Begin Assessment\", \"url\":\"" + URL + "api/external/v2" + "\", \"key\":\"" + key + "\", \"secret\":\"" + WebService.Token + "\",\"execStatusVariable\":\"ExecutionStatus\", \"dob_variable\":\"dob\", \"sex_variable\":\"gender\", \"lang_variable\":\"language\", \"fieldHide\":\"N\"}";
         				
         					Report.Log(ReportLevel.Info, "Cell Updated! New settings are: " + row[column].ToString());
         				}
