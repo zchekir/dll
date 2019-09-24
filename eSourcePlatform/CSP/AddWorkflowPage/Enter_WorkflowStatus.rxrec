@@ -233,25 +233,30 @@ AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 			id="dda51fb2-a1ee-4ce5-bfeb-c855afad2798">
 			</arguments>
 		</invokeactionrecorditem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="100ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="4a4959bb-0584-410d-b59b-bfd1be38b9f7">
+		searchpropertyid="902a7cd0-8a36-4fd9-a8bb-e1b7748d57cf"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
 			id="844d1291-7f90-41d3-a9bb-326c95d1fddc"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_status_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_3']
 				</path>
 			</info>
-		</keysequenceitem>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

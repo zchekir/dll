@@ -27,6 +27,16 @@ rxversion="8.3">
 	namespace="CSP.AddBatteryPage">
 	</codegen>
 	<variables>
+		<var
+		id="a4551ae9-7e82-4cfb-a9d4-a720e5b38b7a"
+		name="BatteryTemplateName">
+			CBB Template
+		</var>
+		<var
+		id="88063847-8295-4241-aa12-5e073e7388b1"
+		name="RandNum">
+			201909240520
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -74,13 +84,18 @@ rxversion="8.3">
 			id="c801e5ed-c256-4223-9e33-a28f174c6d59">
 			</arguments>
 		</invokeactionrecorditem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="10ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="9380e8f4-11a5-4578-ac25-bcf1dd0363cb">
+		searchpropertyid="fbcb00fb-0f1c-4e37-804f-54b70f7e9777"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -89,10 +104,10 @@ rxversion="8.3">
 			id="49d3bc58-ddc4-47e9-9a3a-239f487d39aa"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_4']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_6']
 				</path>
 			</info>
-		</keysequenceitem>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

@@ -88,8 +88,8 @@ namespace CSP.General
             // Lengthy delay here to allow the device to regain a stable internet connection. Issues occur when it switches from WiFi to Ethernet during some test cases
             Report.Log(ReportLevel.Info, "Section", "Lengthy delay here to allow the device to regain a stable internet connection. Issues occur when it switches from WiFi to Ethernet during some test cases", new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(3));
-            Delay.Duration(60000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(3));
+            Delay.Duration(45000, false);
             
         }
 

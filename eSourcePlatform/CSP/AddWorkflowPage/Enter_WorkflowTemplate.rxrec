@@ -74,13 +74,18 @@ rxversion="8.3">
 			id="286da358-cf64-4616-b3a7-8c42a6cc2ddd">
 			</arguments>
 		</invokeactionrecorditem>
-		<keysequenceitem
-		KeySequence="{Enter}"
-		duration="100ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="1254d5bf-80ca-4b27-b125-0f8fa0f61ff8">
+		searchpropertyid="cb8b3fbf-182a-4554-90cf-a810227339a1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -89,10 +94,10 @@ rxversion="8.3">
 			id="ecf5466e-902e-409d-bd5b-5db8fe1c5e9a"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_workflowTemplate_5']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowTemplate_4']
 				</path>
 			</info>
-		</keysequenceitem>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

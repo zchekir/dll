@@ -243,25 +243,30 @@ AKKKKACiiigAooooAKKKKACiiigAooooA//Z
 			id="f57ccd60-f46a-4e35-a08a-f47f5c0acdd0">
 			</arguments>
 		</invokeactionrecorditem>
-		<keysequenceitem
-		KeySequence="{Enter}"
-		duration="100ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="54d3f18e-2293-4de1-95c5-e4de6fe1fcc2">
+		searchpropertyid="d5beb7e9-f711-4340-ba7a-7007619e3187"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
 			id="32590909-4016-4990-9c5e-4dbef88365fd"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_workflowType_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowType_2']
 				</path>
 			</info>
-		</keysequenceitem>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

@@ -136,13 +136,18 @@ rxversion="8.3">
 			id="88b60581-3050-491a-9cdc-7c636486e967">
 			</arguments>
 		</invokeactionrecorditem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="10ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="100ms"
-		searchpropertyid="1fea8063-3e2d-48f5-a856-12c0ba8cdfa8">
+		searchpropertyid="747070b2-2aa2-4e20-8e80-8be4f9eaa869"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -151,10 +156,10 @@ rxversion="8.3">
 			id="32f08ae3-a2b2-4356-8eb5-f29742e8cd17"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_workflow_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_2']
 				</path>
 			</info>
-		</keysequenceitem>
+		</mouseitem>
 		<userrecorditem
 		classname="Add_Visit_to_Schedule"
 		enabled="True"

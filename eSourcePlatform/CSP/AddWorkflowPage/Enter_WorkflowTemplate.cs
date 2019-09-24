@@ -107,9 +107,9 @@ namespace CSP.AddWorkflowPage
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateOption.Select();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Enter}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown.PressKeys("{Enter}", 1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown.Click();
+            Delay.Milliseconds(200);
             
         }
 

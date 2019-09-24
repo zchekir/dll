@@ -2540,42 +2540,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="1c825908-6a91-4415-8adf-2cb54b5f8fc9"
-		isrooted="True"
-		name="CogstateSolutionPlatformChrome"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278"
-			name="DownloadedExtractFile"
-			refimgid="9d5a6dc2-d8af-4d55-b5e4-607849879960"
-			searchtimeout="30000ms">
-				/form[@title~'Cogstate Solution Platform']/container[@accessiblename~'^Cogstate\ Solution\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'extract']
-			</item>
-			<basepath>
-				/form[@title~'Cogstate Solution Platform']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
-pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
-sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
-M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
-q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
-hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
-ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
-RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
-sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
-MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
-RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
-AAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"
 		id="a6afb21f-91f1-45ae-b681-0fafa3f6e599"
@@ -2690,6 +2654,100 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="bf859e5b-9047-4669-b51b-6ff44757d30f"
+		isrooted="True"
+		name="FirefoxDownloadPopup"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="radiobutton,accessible"
+			capname="radiobutton"
+			id="4e08f7f0-118b-47c4-ac7c-0a38d9722cbc"
+			name="SaveFileOption"
+			refimgid="63abea5f-156d-45af-ae14-7a98c991b138"
+			searchtimeout="30000ms">
+				/form[@title~'^Opening extract']//radiobutton[@accessiblename='Save File']
+			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="a3d4c9f3-006f-4408-8791-678b8b2b79ae"
+			name="SaveOptionCheckbox"
+			refimgid="a13bf42f-ceca-4597-a973-03855a274ed3"
+			searchtimeout="30000ms">
+				/form[@title~'^Opening extract']/checkbox[@accessiblename~'^Do this automatically']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="60f39cda-f121-4e53-a912-2e17db63399f"
+			name="OKButton"
+			refimgid="c5b4e844-4191-4259-a995-c6795b465db6"
+			searchtimeout="30000ms">
+				/form[@title~'^Opening extract']/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@title~'^Opening extract']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAM0SURBVDhPjZJtTJVlHMbvEDwaEIrycjhGBxBk
+CEGcmLoOKocQRHGKmbN5ghRfllqipqzEQ41qWEprOv1gOadz4pwTphsm4kxhprE0hYkv4DLgnCmC
+Ok14eO5f93k4ffJL13btv3u7r2v/l0v8X8ia9HbpTpzqe76MtmDnOG/NSPw+Icl2aLfF0XA3uPCG
+JordWtGPe930TUf2ztRlvTlHVo0LNkT/ofnVNendUbNOZk2oKLcl7RlKyaxh0ZJdBBXdRnz2jLPn
+s+BxvuI85CMHemNInU86jN9Di/b2WB20p9hpyp2Be000X32yDrG6F1E+SNPlKdDngP4CVQtUJ1nI
+1sDFhviccPm3hhfeHoxPh3cmwtJw2GqivKSM10tbERUam05sg4cx8GgO9KpOHsxm8H6abhg0+G9e
+1WXOR09IBYf6VBIKlQGwIpy+nRb8vtQQVR462y3gTgRPrqo50J2N/DOsUpwbuaHZbclFTnoTZllh
+9VjY7sfBtQsYv/w6YvM/iMohRlXexNOizDsj4X4m3LOjX415KBoDNnT0+Ay07FhuzYvn5w/zSJt7
+hMD32hAlD5TJc8RGD+9+ux8aBVwPgXYb8o9Jujgzoszzt3mOMcK9jFTuzJhM2cwVxE87TmTurwQt
+bMXP2YVw3iLyozq4pAy8vGyG3+IQp4Sr/m7YQgYmvs3T9GTItqJvDOJ0aSpXd8Zw81A0eSt/IjCn
+npyVLmhR4gYvRyN/idDESbHNdS2kmCdWOyRPRuZZ6V9mpvvzUFoqrKz/4GNsWfswv1VN0+E4OKvE
+dYq1Acha0xFRK76IOT9yvdYVNZuhhDTjlC/et7Bjejb5CaXYYl3MzyymufoNOK2ExxRrBPKgn5QH
+hJFe1YXrmxtjnDy2qu0mpqgx1DmdKg+bAo2LsEeJ9ise8HGfQP/O9MQQe3FULBpxxn9LbUd4Ic9j
+VerUKIbJkghYqzZePgqqlNEPSlz9CnK7v65tDZ7rkw/Dm8gLpk+/7owo0A0Tbyd2lcyCCcPpXDWW
+Z8vCeFocdUWWvhbqk72Mi6Z1cR1hC3b0R9vbtPi0AVKSGJgaq/VMs/51LSN5i++bD0L8CxPl/oex
+UVo7AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="1c825908-6a91-4415-8adf-2cb54b5f8fc9"
+		isrooted="True"
+		name="CogstateSolutionPlatformChrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278"
+			name="DownloadedExtractFile"
+			refimgid="9d5a6dc2-d8af-4d55-b5e4-607849879960"
+			searchtimeout="30000ms">
+				/form[@title~'Cogstate Solution Platform']/container[@accessiblename~'^Cogstate\ Solution\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'extract']
+			</item>
+			<basepath>
+				/form[@title~'Cogstate Solution Platform']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -2713,6 +2771,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="88063847-8295-4241-aa12-5e073e7388b1"
 		name="RandNum">
+			201909240520
 		</var>
 		<var
 		id="d5025415-1b24-44d3-ad11-14c313fe5f70"
@@ -2749,6 +2808,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="a4551ae9-7e82-4cfb-a9d4-a720e5b38b7a"
 		name="BatteryTemplateName">
+			CBB Template
 		</var>
 		<var
 		id="4c592594-0ad6-4515-a8bf-ce621aa84724"

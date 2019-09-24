@@ -94,16 +94,11 @@ namespace CSP.General
                 repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo.WaitForExists(45000);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+R' Press with focus on 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.CogstateSolutionPlatform.Self);
-            Keyboard.Press(System.Windows.Forms.Keys.R | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, 10, 1, true);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Synchronization Successful') on item 'CogstateSolutionPlatform.Popups.SynchronizationSuccessful'.", repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Synchronization Successful') on item 'CogstateSolutionPlatform.Popups.SynchronizationSuccessful'.", repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.CogstateSolutionPlatform.Popups.SynchronizationSuccessfulInfo, "InnerText", "Synchronization Successful");
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Data Successfully Synchronized", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
+            Report.Screenshot(ReportLevel.Info, "User", "Data Successfully Synchronized", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
             
         }
 

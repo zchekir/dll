@@ -43,7 +43,6 @@ namespace CSP.UsersPage
         {
             ProjectName = "Ranorex Project Name";
             RandNum = "990598";
-            DOM = "cgst-qc-duo.cogstate.com";
         }
 
         /// <summary>
@@ -55,18 +54,6 @@ namespace CSP.UsersPage
         }
 
 #region Variables
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.

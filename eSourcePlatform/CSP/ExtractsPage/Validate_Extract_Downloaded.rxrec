@@ -27,222 +27,92 @@ rxversion="8.3">
 	namespace="CSP.ExtractsPage">
 	</codegen>
 	<variables>
+		<var
+		id="e9a5aaa3-e993-4a4c-a2f5-18640629b521"
+		name="Browser">
+		</var>
 	</variables>
 	<recorditems>
-		<validationitem
-		action="Exists"
-		duration="100ms"
+		<userrecorditem
+		classname="Validate_Extract_Downloaded"
 		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Validate_File_Downloaded"
+		namespace="CSP.ExtractsPage"
 		optional="False"
-		searchpropertyid="44b8387c-5a38-4a8d-90a5-cba783795436">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278"
-			sourcename="ElementTree">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="button"
-				rect="-979,-88,227,48"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						&#32;extract2018_8_25_11175.csv
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						&#32;extract2018_8_25_11175.csv
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						PushButton
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
-				<path>
-					/form[@title~'^Cogstate\ Solution\ Platfor']/container[@accessiblename~'^Cogstate\ Solution\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'^\ extract2018_8_25_11175\.c']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="954ddd8c-5486-49e6-822b-ddba54816c36">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAH0AW8DASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDo6KKK
-YgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
-CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
-KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
-CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
-KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
-CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
-KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
-CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
-KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
-CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
-KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
-ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
-gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKha6
-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
-RRRQbBRRRQAUUUUAFFFFABRRRQAUUUUAFFKjtG6upwynIPvVv+1b3/nt/wCOL/hT0E7lOirn9q3v
-/Pb/AMcX/Cj+1b3/AJ7f+OL/AIU9A1KdFXP7Vvf+e3/ji/4U19SvJEZGmyrDBG0dPypaBqVaKKKQ
-y9/bOof8/H/ji/4UHV79us//AI4v+FUaKz9lT/lX3Duya4up7oqZ5C+0YHbFQ0UVotBBRRVpNSvI
-0VFmwqjAG0dPyp6CdyrV7TtRNj5mY/M34/ixjGfb3pv9q3v/AD2/8cX/AAo/tW9/57f+OL/hQ1Fq
-zBNrUv8A/CQnGPs3H/XT/wCtWdqF59tnWXy9mF24znuf8ad/at7/AM9v/HF/wo/tW9/57f8Aji/4
-UlCK1Q3KTKdFK7tI7OxyzHJPvViHULqCIRxS7UHQbQf6U9BalalBI6Eirf8Aat7/AM9v/HF/wo/t
-W9/57f8Aji/4U9BalUyOwwXYj0JptXP7Vvf+e3/ji/4Uf2re/wDPb/xxf8KNA1KdFPmleeUyStuc
-9TjFMqSgpQSOhIpKKAH+dLt2+Y+30zTKKKdxWSCiipre7ntt3kvt3YzwD/OgZDTldk+6xH0NWv7V
-vf8Ant/44v8AhR/at7/z2/8AHF/wp6E6lKiiipKCiiigAooooAKKKKACiiigAooooAKKKKACiiig
-AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
-oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
-AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
-iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
-KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
-			</helperscreenshot>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				&#32;extract2018_8_25_11175.csv
-			</matchvalue>
-		</validationitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message="Extract Generated Successfully"
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="4265fe1e-f5a9-4bbf-b16f-cb302b306262">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="1c825908-6a91-4415-8adf-2cb54b5f8fc9"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@title~'Cogstate Solution Platform']
-				</path>
-			</info>
-		</loggingrecorditem>
+			<arguments
+			id="c37c5bcb-77fb-45e9-a66f-abd4ff682f0c">
+				<argument
+				argname="SaveOption"
+				id="7becbe84-d193-4e6e-bbb4-9e77aaafbde0">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="4e08f7f0-118b-47c4-ac7c-0a38d9722cbc"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title~'^Opening extract']//radiobutton[@accessiblename='Save File']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="Checkbox"
+				id="492f7c1b-d620-4f9e-8c5e-b3e9d0598d63">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="a3d4c9f3-006f-4408-8791-678b8b2b79ae"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title~'^Opening extract']/checkbox[@accessiblename~'^Do this automatically']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="OKButton"
+				id="2c20167e-942b-489c-b0fc-3ebe19e87702">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="60f39cda-f121-4e53-a912-2e17db63399f"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title~'^Opening extract']/button[@accessiblename='OK']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="ChromeFile"
+				id="683261bb-8501-4376-af0f-90404b8ecfd1">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title~'Cogstate Solution Platform']/container[@accessiblename~'^Cogstate\ Solution\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'extract']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="FileLibrary"
 		enabled="True"
@@ -289,6 +159,26 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Extract Generated Successfully"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="4265fe1e-f5a9-4bbf-b16f-cb302b306262">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c7b5b0c3-5b0d-4f3f-b4ca-af1a10361467"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$CSPDOM]
+				</path>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

@@ -41,6 +41,8 @@ namespace CSP.AddBatteryPage
         /// </summary>
         public Select_BatteryTemplate()
         {
+            BatteryTemplateName = "CBB Template";
+            RandNum = "201909240520";
         }
 
         /// <summary>
@@ -117,9 +119,9 @@ namespace CSP.AddBatteryPage
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownOption.Select();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("{Return}", 1);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.Click();
+            Delay.Milliseconds(200);
             
         }
 

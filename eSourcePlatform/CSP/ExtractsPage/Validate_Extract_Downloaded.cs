@@ -41,6 +41,7 @@ namespace CSP.ExtractsPage
         /// </summary>
         public Validate_Extract_Downloaded()
         {
+            Browser = "";
         }
 
         /// <summary>
@@ -52,6 +53,28 @@ namespace CSP.ExtractsPage
         }
 
 #region Variables
+
+        string _Browser;
+
+        /// <summary>
+        /// Gets or sets the value of variable Browser.
+        /// </summary>
+        [TestVariable("e9a5aaa3-e993-4a4c-a2f5-18640629b521")]
+        public string Browser
+        {
+            get { return _Browser; }
+            set { _Browser = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
 
 #endregion
 
@@ -79,14 +102,13 @@ namespace CSP.ExtractsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatformChrome.DownloadedExtractFile'.", repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo);
-            Delay.Milliseconds(100);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "Extract Generated Successfully", repo.CogstateSolutionPlatformChrome.Self, false, new RecordItemIndex(1));
+            Validate_File_Downloaded(repo.FirefoxDownloadPopup.SaveFileOptionInfo, repo.FirefoxDownloadPopup.SaveOptionCheckboxInfo, repo.FirefoxDownloadPopup.OKButtonInfo, repo.CogstateSolutionPlatformChrome.DownloadedExtractFileInfo);
+            Delay.Milliseconds(0);
             
             Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist("extract*", ValueConverter.ArgumentFromString<int>("expectedCount", "1"), ValueConverter.ArgumentFromString<int>("timeout", "10"));
             Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Extract Generated Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));
             
         }
 

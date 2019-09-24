@@ -554,8 +554,8 @@ rxversion="8.3">
 			datasource="Authentication"
 			errorbehavior="Stop"
 			id="12672266-c3e5-4da0-bf18-959502d59662"
-			maxrange="2"
-			minrange="2"
+			maxrange="0"
+			minrange="0"
 			name="Regression"
 			warnunboundvariables="False">
 			</smartfoldernode>
@@ -1303,6 +1303,20 @@ rxversion="8.3">
 			name="Validate_Extract_Downloaded"
 			ref="4488b4f0-9d37-4ce0-af17-188ef70d7a63"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="e9a5aaa3-e993-4a4c-a2f5-18640629b521"
+					variablename="Browser">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="43a30475-a3e8-4922-86d6-ce75566c783f"
@@ -2955,37 +2969,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<modulegroup
-			id="8de3abae-f398-4095-8f6d-e6e046bb0a60"
-			name="Add_External_User_Role"
-			ref="e2d25e03-e66f-4570-8d13-40cc348056a9">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f3715aeb-4b60-4dc9-b478-c1ab28717be7"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="Key"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="568e84f7-1968-4821-af18-7e94edcd7009"
-					variablename="Key">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57644a65-4a01-43b9-802b-7372b8461e3d"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProjectName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="4f8ca016-e1a9-4704-8bb0-a4e56d3d7928"
-					variablename="ProjectName">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testcase
 			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd"
 			maxrange="3"
@@ -3740,6 +3723,32 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c46c310e-4072-4922-8206-3da589deb3a8"
+			name="Add_Role_External_User"
+			ref="4886f8c4-1345-48b0-abbd-1a572ffc4d8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ProjectName"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="49cfa874-725e-4141-b715-d2c17ac6eae8"
+					variablename="ProjectName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="ad914b3d-ce99-4bdb-9e75-5df98d80d2b2"
+					variablename="RandNum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4986,10 +4995,10 @@ rxversion="8.3">
 							<testcase
 							id="ba7d02db-83df-4a58-a877-7079c0c072d1"
 							name="Add_External_Role">
-								<modulegroup
-								id="8de3abae-f398-4095-8f6d-e6e046bb0a60"
-								name="Add_External_User_Role">
-								</modulegroup>
+								<testmodule
+								id="c46c310e-4072-4922-8206-3da589deb3a8"
+								name="Add_Role_External_User">
+								</testmodule>
 							</testcase>
 							<testcase
 							id="10c333f8-e857-4fad-823d-294804009f8b"

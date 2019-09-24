@@ -150,9 +150,9 @@ namespace CSP.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowOption.Select();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdownInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown.PressKeys("{Return}");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdownInfo, new RecordItemIndex(4));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown.Click();
+            Delay.Milliseconds(200);
             
             SelectVisitScheduleVisitStatus();
             Delay.Milliseconds(0);

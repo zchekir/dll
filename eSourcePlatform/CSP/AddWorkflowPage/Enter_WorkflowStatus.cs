@@ -97,9 +97,9 @@ namespace CSP.AddWorkflowPage
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDraftOption.Select();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.PressKeys("{Return}", 1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowStatusDropdown.Click();
+            Delay.Milliseconds(200);
             
         }
 

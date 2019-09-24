@@ -33,6 +33,26 @@ namespace CSP.ExtractsPage
         {
             // Your recording specific initialization code goes here.
         }
+
+        public void Validate_File_Downloaded(RepoItemInfo SaveOption, RepoItemInfo Checkbox, RepoItemInfo OKButton, RepoItemInfo ChromeFile)
+        {
+        	if (Browser == "FireFox" && repo.FirefoxDownloadPopup.SelfInfo.Exists())
+        	{
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SaveOption' at Centre", SaveOption);
+            	SaveOption.FindAdapter<RadioButton>().Click("Centre");
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Checkbox' at Centre", Checkbox);
+            	Checkbox.FindAdapter<CheckBox>().Click("Centre");
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OKButton' at Centre", OKButton);
+            	OKButton.FindAdapter<Button>().Click("Centre");
+        	}
+        	else if(Browser == "Chrome")
+        	{
+        		Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ChromeFile'.", ChromeFile);
+            	Validate.Exists(ChromeFile);
+        	}
+            
+           
+        }
         
     }
 }

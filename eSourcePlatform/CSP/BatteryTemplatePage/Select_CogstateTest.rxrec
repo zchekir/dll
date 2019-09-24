@@ -261,29 +261,6 @@ AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
 UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence=""
-		duration="10ms"
-		enabled="False"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="91d202ed-4fde-46f4-8d23-c8cad3132572">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="BatteryBlockName">
-				</binding>
-			</bindings>
-			<info
-			id="14b1c123-0dd1-4b12-a9c7-15736c9e3f9c"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_type_1']
-				</path>
-			</info>
-		</keysequenceitem>
 		<invokeactionrecorditem
 		action="Select"
 		enabled="True"
@@ -305,25 +282,30 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 			id="15edb207-6f7a-4505-aca7-56ba2a8ebc34">
 			</arguments>
 		</invokeactionrecorditem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="10ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="cbbb3b59-59c7-498f-aaca-88e8383835d0">
+		searchpropertyid="5db1fd6e-a0cd-4fa5-8656-63e5be0ed49e"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="14b1c123-0dd1-4b12-a9c7-15736c9e3f9c"
-			sourcename="ItemRecorderEditor">
+			id="a663e077-b054-4cf5-a000-99a176bc9130"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_type_1']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']
 				</path>
 			</info>
-		</keysequenceitem>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

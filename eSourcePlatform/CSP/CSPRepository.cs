@@ -31,9 +31,10 @@ namespace CSP
         CSPRepositoryFolders.GoogleSigninAppFolder _googlesignin;
         CSPRepositoryFolders.GoogleAccountAppFolder _googleaccount;
         CSPRepositoryFolders.GmailInboxAppFolder _gmailinbox;
-        CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
         CSPRepositoryFolders.MicrosoftSSOAppFolder _microsoftsso;
         CSPRepositoryFolders.CogstateSSOAppFolder _cogstatesso;
+        CSPRepositoryFolders.FirefoxDownloadPopupAppFolder _firefoxdownloadpopup;
+        CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
 
         /// <summary>
         /// Gets the singleton class instance representing the CSPRepository element repository.
@@ -54,9 +55,10 @@ namespace CSP
             _googlesignin = new CSPRepositoryFolders.GoogleSigninAppFolder(this);
             _googleaccount = new CSPRepositoryFolders.GoogleAccountAppFolder(this);
             _gmailinbox = new CSPRepositoryFolders.GmailInboxAppFolder(this);
-            _cogstatesolutionplatformchrome = new CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
             _microsoftsso = new CSPRepositoryFolders.MicrosoftSSOAppFolder(this);
             _cogstatesso = new CSPRepositoryFolders.CogstateSSOAppFolder(this);
+            _firefoxdownloadpopup = new CSPRepositoryFolders.FirefoxDownloadPopupAppFolder(this);
+            _cogstatesolutionplatformchrome = new CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
         }
 
 #region Variables
@@ -109,7 +111,7 @@ namespace CSP
             set { _VisitScheduleName = value; }
         }
 
-        string _RandNum = "";
+        string _RandNum = "201909240520";
 
         /// <summary>
         /// Gets or sets the value of variable RandNum.
@@ -217,7 +219,7 @@ namespace CSP
             set { _BatteryPopulation = value; }
         }
 
-        string _BatteryTemplateName = "";
+        string _BatteryTemplateName = "CBB Template";
 
         /// <summary>
         /// Gets or sets the value of variable BatteryTemplateName.
@@ -316,15 +318,6 @@ namespace CSP
         }
 
         /// <summary>
-        /// The CogstateSolutionPlatformChrome folder.
-        /// </summary>
-        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-        public virtual CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder CogstateSolutionPlatformChrome
-        {
-            get { return _cogstatesolutionplatformchrome; }
-        }
-
-        /// <summary>
         /// The MicrosoftSSO folder.
         /// </summary>
         [RepositoryFolder("a6afb21f-91f1-45ae-b681-0fafa3f6e599")]
@@ -340,6 +333,24 @@ namespace CSP
         public virtual CSPRepositoryFolders.CogstateSSOAppFolder CogstateSSO
         {
             get { return _cogstatesso; }
+        }
+
+        /// <summary>
+        /// The FirefoxDownloadPopup folder.
+        /// </summary>
+        [RepositoryFolder("bf859e5b-9047-4669-b51b-6ff44757d30f")]
+        public virtual CSPRepositoryFolders.FirefoxDownloadPopupAppFolder FirefoxDownloadPopup
+        {
+            get { return _firefoxdownloadpopup; }
+        }
+
+        /// <summary>
+        /// The CogstateSolutionPlatformChrome folder.
+        /// </summary>
+        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
+        public virtual CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder CogstateSolutionPlatformChrome
+        {
+            get { return _cogstatesolutionplatformchrome; }
         }
     }
 
@@ -7887,72 +7898,6 @@ namespace CSP
         }
 
         /// <summary>
-        /// The CogstateSolutionPlatformChromeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-        public partial class CogstateSolutionPlatformChromeAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _downloadedextractfileInfo;
-
-            /// <summary>
-            /// Creates a new CogstateSolutionPlatformChrome  folder.
-            /// </summary>
-            public CogstateSolutionPlatformChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CogstateSolutionPlatformChrome", "/form[@title~'Cogstate Solution Platform']", parentFolder, 30000, null, true, "1c825908-6a91-4415-8adf-2cb54b5f8fc9", "")
-            {
-                _downloadedextractfileInfo = new RepoItemInfo(this, "DownloadedExtractFile", "container[@accessiblename~'^Cogstate\\ Solution\\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'extract']", 30000, null, "d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DownloadedExtractFile item.
-            /// </summary>
-            [RepositoryItem("d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278")]
-            public virtual Ranorex.Button DownloadedExtractFile
-            {
-                get
-                {
-                    return _downloadedextractfileInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DownloadedExtractFile item info.
-            /// </summary>
-            [RepositoryItemInfo("d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278")]
-            public virtual RepoItemInfo DownloadedExtractFileInfo
-            {
-                get
-                {
-                    return _downloadedextractfileInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The MicrosoftSSOAppFolder folder.
         /// </summary>
         [RepositoryFolder("a6afb21f-91f1-45ae-b681-0fafa3f6e599")]
@@ -8184,6 +8129,190 @@ namespace CSP
                 get
                 {
                     return _submitbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FirefoxDownloadPopupAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("bf859e5b-9047-4669-b51b-6ff44757d30f")]
+        public partial class FirefoxDownloadPopupAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _savefileoptionInfo;
+            RepoItemInfo _saveoptioncheckboxInfo;
+            RepoItemInfo _okbuttonInfo;
+
+            /// <summary>
+            /// Creates a new FirefoxDownloadPopup  folder.
+            /// </summary>
+            public FirefoxDownloadPopupAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FirefoxDownloadPopup", "/form[@title~'^Opening extract']", parentFolder, 30000, null, true, "bf859e5b-9047-4669-b51b-6ff44757d30f", "")
+            {
+                _savefileoptionInfo = new RepoItemInfo(this, "SaveFileOption", ".//radiobutton[@accessiblename='Save File']", 30000, null, "4e08f7f0-118b-47c4-ac7c-0a38d9722cbc");
+                _saveoptioncheckboxInfo = new RepoItemInfo(this, "SaveOptionCheckbox", "checkbox[@accessiblename~'^Do this automatically']", 30000, null, "a3d4c9f3-006f-4408-8791-678b8b2b79ae");
+                _okbuttonInfo = new RepoItemInfo(this, "OKButton", "button[@accessiblename='OK']", 30000, null, "60f39cda-f121-4e53-a912-2e17db63399f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bf859e5b-9047-4669-b51b-6ff44757d30f")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bf859e5b-9047-4669-b51b-6ff44757d30f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveFileOption item.
+            /// </summary>
+            [RepositoryItem("4e08f7f0-118b-47c4-ac7c-0a38d9722cbc")]
+            public virtual Ranorex.RadioButton SaveFileOption
+            {
+                get
+                {
+                    return _savefileoptionInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveFileOption item info.
+            /// </summary>
+            [RepositoryItemInfo("4e08f7f0-118b-47c4-ac7c-0a38d9722cbc")]
+            public virtual RepoItemInfo SaveFileOptionInfo
+            {
+                get
+                {
+                    return _savefileoptionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveOptionCheckbox item.
+            /// </summary>
+            [RepositoryItem("a3d4c9f3-006f-4408-8791-678b8b2b79ae")]
+            public virtual Ranorex.CheckBox SaveOptionCheckbox
+            {
+                get
+                {
+                    return _saveoptioncheckboxInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveOptionCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("a3d4c9f3-006f-4408-8791-678b8b2b79ae")]
+            public virtual RepoItemInfo SaveOptionCheckboxInfo
+            {
+                get
+                {
+                    return _saveoptioncheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OKButton item.
+            /// </summary>
+            [RepositoryItem("60f39cda-f121-4e53-a912-2e17db63399f")]
+            public virtual Ranorex.Button OKButton
+            {
+                get
+                {
+                    return _okbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OKButton item info.
+            /// </summary>
+            [RepositoryItemInfo("60f39cda-f121-4e53-a912-2e17db63399f")]
+            public virtual RepoItemInfo OKButtonInfo
+            {
+                get
+                {
+                    return _okbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CogstateSolutionPlatformChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
+        public partial class CogstateSolutionPlatformChromeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _downloadedextractfileInfo;
+
+            /// <summary>
+            /// Creates a new CogstateSolutionPlatformChrome  folder.
+            /// </summary>
+            public CogstateSolutionPlatformChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CogstateSolutionPlatformChrome", "/form[@title~'Cogstate Solution Platform']", parentFolder, 30000, null, true, "1c825908-6a91-4415-8adf-2cb54b5f8fc9", "")
+            {
+                _downloadedextractfileInfo = new RepoItemInfo(this, "DownloadedExtractFile", "container[@accessiblename~'^Cogstate\\ Solution\\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'extract']", 30000, null, "d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DownloadedExtractFile item.
+            /// </summary>
+            [RepositoryItem("d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278")]
+            public virtual Ranorex.Button DownloadedExtractFile
+            {
+                get
+                {
+                    return _downloadedextractfileInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DownloadedExtractFile item info.
+            /// </summary>
+            [RepositoryItemInfo("d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278")]
+            public virtual RepoItemInfo DownloadedExtractFileInfo
+            {
+                get
+                {
+                    return _downloadedextractfileInfo;
                 }
             }
         }
