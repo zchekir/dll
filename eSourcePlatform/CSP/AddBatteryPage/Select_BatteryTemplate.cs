@@ -41,8 +41,6 @@ namespace CSP.AddBatteryPage
         /// </summary>
         public Select_BatteryTemplate()
         {
-            BatteryTemplateName = "";
-            RandNum = "";
         }
 
         /// <summary>
@@ -68,7 +66,7 @@ namespace CSP.AddBatteryPage
         /// <summary>
         /// Gets or sets the value of variable BatteryTemplateName.
         /// </summary>
-        [TestVariable("470e5e8f-d213-4014-91bc-bc1b00811c15")]
+        [TestVariable("a4551ae9-7e82-4cfb-a9d4-a720e5b38b7a")]
         public string BatteryTemplateName
         {
             get { return repo.BatteryTemplateName; }
@@ -78,7 +76,7 @@ namespace CSP.AddBatteryPage
         /// <summary>
         /// Gets or sets the value of variable RandNum.
         /// </summary>
-        [TestVariable("2d46eb18-ff1b-41a4-93c4-f6c8a2285cf1")]
+        [TestVariable("88063847-8295-4241-aa12-5e073e7388b1")]
         public string RandNum
         {
             get { return repo.RandNum; }
@@ -115,15 +113,11 @@ namespace CSP.AddBatteryPage
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.Click(1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryTemplateName' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys(BatteryTemplateName, new Duration(0));
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownOption'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownOptionInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownOption.Select();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys(RandNum, new Duration(0));
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("{Return}", 1);
             Delay.Milliseconds(0);
             

@@ -115,52 +115,27 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="10ms"
+		<invokeactionrecorditem
+		action="Select"
 		enabled="True"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="444f5406-f67c-40ae-ad89-8468feaa33b4">
+		searchpropertyid="e2ff96be-7843-4ffc-bb83-02314372ee32"
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="KeySequence"
-				variable="WorkflowName">
-				</binding>
 			</bindings>
 			<info
-			id="32f08ae3-a2b2-4356-8eb5-f29742e8cd17"
+			id="11da81c6-d578-4ca8-af3d-66941ab38802"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_workflow_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_2']/option[@label=$WorkflowName+$RandNum]
 				</path>
 			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="10ms"
-		enabled="True"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="a8fe227e-a110-40cd-aaf7-be8481972a5f">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="RandNum">
-				</binding>
-			</bindings>
-			<info
-			id="32f08ae3-a2b2-4356-8eb5-f29742e8cd17"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_workflow_2']
-				</path>
-			</info>
-		</keysequenceitem>
+			<arguments
+			id="88b60581-3050-491a-9cdc-7c636486e967">
+			</arguments>
+		</invokeactionrecorditem>
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="10ms"
@@ -180,31 +155,6 @@ rxversion="8.3">
 				</path>
 			</info>
 		</keysequenceitem>
-		<separatoritem
-		enabled="True"
-		optional="False">
-			<comment>
-				Disabled the below action as it was not reliable
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
-		<userrecorditem
-		classname="Add_Visit_to_Schedule"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="SelectVisitScheduleWorkflow"
-		namespace="CSP.AddVisitSchedulePage"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="758c037b-e51c-4e56-9a6a-e2628b5374c4">
-			</arguments>
-		</userrecorditem>
 		<userrecorditem
 		classname="Add_Visit_to_Schedule"
 		enabled="True"
@@ -245,25 +195,6 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="3567ed18-4d7d-413f-be56-f34e5216ccbd">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c2f213dd-9ca4-4fd3-862d-cb9066680ed4"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_code_4']
-				</path>
-			</info>
-		</keysequenceitem>
 		<keysequenceitem
 		KeySequence=""
 		duration="100ms"

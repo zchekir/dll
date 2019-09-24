@@ -777,9 +777,11 @@ namespace CSP
             RepoItemInfo _batterynamefieldInfo;
             RepoItemInfo _batterydescriptionfieldInfo;
             RepoItemInfo _batterystatusdropdownInfo;
+            RepoItemInfo _batterydraftstatusInfo;
             RepoItemInfo _responseoptionscheckboxInfo;
             RepoItemInfo _batterypopulationdropdownInfo;
             RepoItemInfo _batterytemplatedropdownInfo;
+            RepoItemInfo _batterytemplatedropdownoptionInfo;
             RepoItemInfo _namerequiredvalidationInfo;
             RepoItemInfo _populationrequiredvalidationInfo;
             RepoItemInfo _templaterequiredvalidationInfo;
@@ -806,9 +808,11 @@ namespace CSP
                 _batterynamefieldInfo = new RepoItemInfo(this, "BatteryNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "564dfbbc-a1f8-4664-9bb0-740b573b1b83");
                 _batterydescriptionfieldInfo = new RepoItemInfo(this, "BatteryDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "1ee5a82e-1ff8-4ead-8146-43adca4bc894");
                 _batterystatusdropdownInfo = new RepoItemInfo(this, "BatteryStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "764229ed-d1b6-4cfa-b17e-9a61fdbd7d9e");
+                _batterydraftstatusInfo = new RepoItemInfo(this, "BatteryDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']", 30000, null, "d28c6cbc-d9ee-43b6-b6f1-3da4caf2b6dd");
                 _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_5']", 30000, null, "460ff0b4-1723-4c92-9813-cf9474fafefc");
                 _batterypopulationdropdownInfo = new RepoItemInfo(this, "BatteryPopulationDropdown", ".//select[@id~'formly_[0-9]+_select_indication_4']", 30000, null, "107c3512-95bb-4744-8616-4562277635c7");
                 _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_6']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
+                _batterytemplatedropdownoptionInfo = new RepoItemInfo(this, "BatteryTemplateDropdownOption", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_6']/option[@label=$BatteryTemplateName+$RandNum]", 30000, null, "b7567443-acb0-422e-a21e-d375c9e0714d");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "9b34d25f-6823-4976-b188-249b5f79543c");
                 _populationrequiredvalidationInfo = new RepoItemInfo(this, "PopulationRequiredValidation", ".//div[@innertext~'Population is required']", 30000, null, "febf10c1-8a7c-4339-b47f-1699d47784c0");
                 _templaterequiredvalidationInfo = new RepoItemInfo(this, "TemplateRequiredValidation", ".//div[@innertext~'Template is required']", 30000, null, "8527d043-7b39-4fd4-9d39-1cb8b390c4ca");
@@ -912,6 +916,30 @@ namespace CSP
             }
 
             /// <summary>
+            /// The BatteryDraftStatus item.
+            /// </summary>
+            [RepositoryItem("d28c6cbc-d9ee-43b6-b6f1-3da4caf2b6dd")]
+            public virtual Ranorex.OptionTag BatteryDraftStatus
+            {
+                get
+                {
+                    return _batterydraftstatusInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryDraftStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("d28c6cbc-d9ee-43b6-b6f1-3da4caf2b6dd")]
+            public virtual RepoItemInfo BatteryDraftStatusInfo
+            {
+                get
+                {
+                    return _batterydraftstatusInfo;
+                }
+            }
+
+            /// <summary>
             /// The ResponseOptionsCheckbox item.
             /// </summary>
             [RepositoryItem("460ff0b4-1723-4c92-9813-cf9474fafefc")]
@@ -980,6 +1008,30 @@ namespace CSP
                 get
                 {
                     return _batterytemplatedropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateDropdownOption item.
+            /// </summary>
+            [RepositoryItem("b7567443-acb0-422e-a21e-d375c9e0714d")]
+            public virtual Ranorex.OptionTag BatteryTemplateDropdownOption
+            {
+                get
+                {
+                    return _batterytemplatedropdownoptionInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateDropdownOption item info.
+            /// </summary>
+            [RepositoryItemInfo("b7567443-acb0-422e-a21e-d375c9e0714d")]
+            public virtual RepoItemInfo BatteryTemplateDropdownOptionInfo
+            {
+                get
+                {
+                    return _batterytemplatedropdownoptionInfo;
                 }
             }
 
@@ -1377,11 +1429,13 @@ namespace CSP
             RepoItemInfo _batterytemplatenamefieldInfo;
             RepoItemInfo _batterytemplatedescriptionfieldInfo;
             RepoItemInfo _batterytemplatestatusdropdownInfo;
+            RepoItemInfo _batterytemplatedraftstatusInfo;
             RepoItemInfo _responseoptionscheckboxInfo;
             RepoItemInfo _statusrequiredvalidationInfo;
             RepoItemInfo _namerequiredvalidationInfo;
             RepoItemInfo _addtestbuttonInfo;
             RepoItemInfo _cogstatetestdropdownInfo;
+            RepoItemInfo _cogstatetestdropdownoptionInfo;
             RepoItemInfo _saveblockbuttonInfo;
             RepoItemInfo _batteryblockcardInfo;
 
@@ -1394,11 +1448,13 @@ namespace CSP
                 _batterytemplatenamefieldInfo = new RepoItemInfo(this, "BatteryTemplateNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "235f34cc-7b8c-4b58-94b6-c998ec0f780b");
                 _batterytemplatedescriptionfieldInfo = new RepoItemInfo(this, "BatteryTemplateDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "ed871e74-c0b8-48f1-8072-1e86c910aa34");
                 _batterytemplatestatusdropdownInfo = new RepoItemInfo(this, "BatteryTemplateStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "edaf8b55-8aa5-4f04-bc93-12237fb6b754");
+                _batterytemplatedraftstatusInfo = new RepoItemInfo(this, "BatteryTemplateDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']", 30000, null, "addebc81-a000-4acf-95a0-f113c8552cb2");
                 _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']", 30000, null, "825c735f-1d54-4e5c-8291-ce371dec3840");
                 _statusrequiredvalidationInfo = new RepoItemInfo(this, "StatusRequiredValidation", ".//div[@innertext~'Status is required']", 30000, null, "58f26e92-263a-420b-98d0-cafd59c77eba");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "594a35b6-7e6b-4b5a-ba1a-00cc315257d2");
                 _addtestbuttonInfo = new RepoItemInfo(this, "AddTestButton", ".//img[@src~'https://'+$CSPDOM+'/asset/images/add_icon_off.png']", 30000, null, "0690d370-5e9c-4b2f-ad95-e9924f9da3e2");
                 _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_1']", 30000, null, "14b1c123-0dd1-4b12-a9c7-15736c9e3f9c");
+                _cogstatetestdropdownoptionInfo = new RepoItemInfo(this, "CogstateTestDropdownOption", ".//select[@id~'formly_[0-9]+_select_type_1']/option[@label=$BatteryBlockName]", 30000, null, "00d12e48-5341-45d4-aa4e-d21cf89a52b4");
                 _saveblockbuttonInfo = new RepoItemInfo(this, "SaveBlockButton", ".//tag[@tagname='cogstate-generic-simple-edit']//button[@innertext>'SAVE' and @visible='True']", 30000, null, "9c85f83b-640a-42ac-88ee-51fec91cdaa4");
                 _batteryblockcardInfo = new RepoItemInfo(this, "BatteryBlockCard", ".//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4[@innertext=$BatteryBlockName]", 30000, null, "b9339527-389b-4f98-9ee3-d3556837eef6");
             }
@@ -1484,6 +1540,30 @@ namespace CSP
                 get
                 {
                     return _batterytemplatestatusdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateDraftStatus item.
+            /// </summary>
+            [RepositoryItem("addebc81-a000-4acf-95a0-f113c8552cb2")]
+            public virtual Ranorex.OptionTag BatteryTemplateDraftStatus
+            {
+                get
+                {
+                    return _batterytemplatedraftstatusInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BatteryTemplateDraftStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("addebc81-a000-4acf-95a0-f113c8552cb2")]
+            public virtual RepoItemInfo BatteryTemplateDraftStatusInfo
+            {
+                get
+                {
+                    return _batterytemplatedraftstatusInfo;
                 }
             }
 
@@ -1608,6 +1688,30 @@ namespace CSP
             }
 
             /// <summary>
+            /// The CogstateTestDropdownOption item.
+            /// </summary>
+            [RepositoryItem("00d12e48-5341-45d4-aa4e-d21cf89a52b4")]
+            public virtual Ranorex.OptionTag CogstateTestDropdownOption
+            {
+                get
+                {
+                    return _cogstatetestdropdownoptionInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateTestDropdownOption item info.
+            /// </summary>
+            [RepositoryItemInfo("00d12e48-5341-45d4-aa4e-d21cf89a52b4")]
+            public virtual RepoItemInfo CogstateTestDropdownOptionInfo
+            {
+                get
+                {
+                    return _cogstatetestdropdownoptionInfo;
+                }
+            }
+
+            /// <summary>
             /// The SaveBlockButton item.
             /// </summary>
             [RepositoryItem("9c85f83b-640a-42ac-88ee-51fec91cdaa4")]
@@ -1665,7 +1769,9 @@ namespace CSP
             RepoItemInfo _workflownamefieldInfo;
             RepoItemInfo _workflowdescriptionfieldInfo;
             RepoItemInfo _workflowtypedropdownInfo;
+            RepoItemInfo _externalembeddedworkflowtypeInfo;
             RepoItemInfo _workflowstatusdropdownInfo;
+            RepoItemInfo _workflowstatusdraftoptionInfo;
             RepoItemInfo _workflowtemplatedropdownInfo;
             RepoItemInfo _simplebatterystepInfo;
             RepoItemInfo _propertiestabInfo;
@@ -1682,7 +1788,6 @@ namespace CSP
             RepoItemInfo _namerequiredvalidationInfo;
             RepoItemInfo _descriptionrequiredvalidationInfo;
             RepoItemInfo _typerequiredvalidationInfo;
-            RepoItemInfo _statusrequiredvalidationInfo;
             RepoItemInfo _templaterequiredvalidationInfo;
             RepoItemInfo _workflownameminlengthvalidationInfo;
             RepoItemInfo _workflowdescriptionminlengthvalidationInfo;
@@ -1705,7 +1810,9 @@ namespace CSP
                 _workflownamefieldInfo = new RepoItemInfo(this, "WorkflowNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "55c9db0f-4384-428c-9276-e0ae89b2788b");
                 _workflowdescriptionfieldInfo = new RepoItemInfo(this, "WorkflowDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "9054e5fa-e525-4191-babd-c03af2e3b498");
                 _workflowtypedropdownInfo = new RepoItemInfo(this, "WorkflowTypeDropdown", ".//select[@id~'formly_[0-9]+_select_workflowType_2']", 30000, null, "32590909-4016-4990-9c5e-4dbef88365fd");
+                _externalembeddedworkflowtypeInfo = new RepoItemInfo(this, "ExternalEmbeddedWorkflowType", ".//select[@id~'formly_[0-9]+_select_workflowType_2']/option[@label='External Embedded']", 30000, null, "86c97b72-113a-4fdd-bbd1-3aa41b2dbd8f");
                 _workflowstatusdropdownInfo = new RepoItemInfo(this, "WorkflowStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_3']", 30000, null, "844d1291-7f90-41d3-a9bb-326c95d1fddc");
+                _workflowstatusdraftoptionInfo = new RepoItemInfo(this, "WorkflowStatusDraftOption", ".//select[@id~'formly_[0-9]+_select_status_3']/option[@label='Draft']", 30000, null, "61e60a2c-f3a8-439c-8dac-e17fdacf52a7");
                 _workflowtemplatedropdownInfo = new RepoItemInfo(this, "WorkflowTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_workflowTemplate_4']", 30000, null, "ecf5466e-902e-409d-bd5b-5db8fe1c5e9a");
                 _simplebatterystepInfo = new RepoItemInfo(this, "SimpleBatteryStep", ".//tag[@tagname='cogstate-helper-workflow-reorder-card']//h4[@innertext~'Simple [B|b]attery']", 30000, null, "ab84a654-2ee6-45d9-836a-82508ebc2b4d");
                 _propertiestabInfo = new RepoItemInfo(this, "PropertiesTab", ".//tag[@tagname='cogstate-helper-workflow-simple-edit']//ul/li/a[@innertext='Properties']", 30000, null, "b9e602e9-716f-4cac-95c1-2213bb8022fb");
@@ -1722,7 +1829,6 @@ namespace CSP
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "f76cbfa1-1e9f-4229-af65-e988b8c452d3");
                 _descriptionrequiredvalidationInfo = new RepoItemInfo(this, "DescriptionRequiredValidation", ".//div[@innertext~'Description is required']", 30000, null, "63cc36ec-e23f-407c-b97d-25310b1168af");
                 _typerequiredvalidationInfo = new RepoItemInfo(this, "TypeRequiredValidation", ".//div[@innertext~'Workflow Type is required']", 30000, null, "3bb4c6b7-fa59-4e7e-bc0c-dce54e8fd68a");
-                _statusrequiredvalidationInfo = new RepoItemInfo(this, "StatusRequiredValidation", ".//div[@innertext~'Status is required']", 30000, null, "87089fcd-da9e-4fe9-9964-fb39c79b1bae");
                 _templaterequiredvalidationInfo = new RepoItemInfo(this, "TemplateRequiredValidation", ".//div[@innertext~'You must select a']", 30000, null, "9f586359-654b-415f-8ca0-1b019121bcd7");
                 _workflownameminlengthvalidationInfo = new RepoItemInfo(this, "WorkflowNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "a4605aa1-f69a-4d44-bab5-a7bc634f6f55");
                 _workflowdescriptionminlengthvalidationInfo = new RepoItemInfo(this, "WorkflowDescriptionMinLengthValidation", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']/..//div[@innertext~'The minimum length']", 30000, null, "82b6da2e-317f-472f-ae02-e45783326eb2");
@@ -1822,6 +1928,30 @@ namespace CSP
             }
 
             /// <summary>
+            /// The ExternalEmbeddedWorkflowType item.
+            /// </summary>
+            [RepositoryItem("86c97b72-113a-4fdd-bbd1-3aa41b2dbd8f")]
+            public virtual Ranorex.OptionTag ExternalEmbeddedWorkflowType
+            {
+                get
+                {
+                    return _externalembeddedworkflowtypeInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExternalEmbeddedWorkflowType item info.
+            /// </summary>
+            [RepositoryItemInfo("86c97b72-113a-4fdd-bbd1-3aa41b2dbd8f")]
+            public virtual RepoItemInfo ExternalEmbeddedWorkflowTypeInfo
+            {
+                get
+                {
+                    return _externalembeddedworkflowtypeInfo;
+                }
+            }
+
+            /// <summary>
             /// The WorkflowStatusDropdown item.
             /// </summary>
             [RepositoryItem("844d1291-7f90-41d3-a9bb-326c95d1fddc")]
@@ -1842,6 +1972,30 @@ namespace CSP
                 get
                 {
                     return _workflowstatusdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WorkflowStatusDraftOption item.
+            /// </summary>
+            [RepositoryItem("61e60a2c-f3a8-439c-8dac-e17fdacf52a7")]
+            public virtual Ranorex.OptionTag WorkflowStatusDraftOption
+            {
+                get
+                {
+                    return _workflowstatusdraftoptionInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WorkflowStatusDraftOption item info.
+            /// </summary>
+            [RepositoryItemInfo("61e60a2c-f3a8-439c-8dac-e17fdacf52a7")]
+            public virtual RepoItemInfo WorkflowStatusDraftOptionInfo
+            {
+                get
+                {
+                    return _workflowstatusdraftoptionInfo;
                 }
             }
 
@@ -2226,30 +2380,6 @@ namespace CSP
                 get
                 {
                     return _typerequiredvalidationInfo;
-                }
-            }
-
-            /// <summary>
-            /// The StatusRequiredValidation item.
-            /// </summary>
-            [RepositoryItem("87089fcd-da9e-4fe9-9964-fb39c79b1bae")]
-            public virtual Ranorex.DivTag StatusRequiredValidation
-            {
-                get
-                {
-                    return _statusrequiredvalidationInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StatusRequiredValidation item info.
-            /// </summary>
-            [RepositoryItemInfo("87089fcd-da9e-4fe9-9964-fb39c79b1bae")]
-            public virtual RepoItemInfo StatusRequiredValidationInfo
-            {
-                get
-                {
-                    return _statusrequiredvalidationInfo;
                 }
             }
 
@@ -2866,12 +2996,12 @@ namespace CSP
             RepoItemInfo _visitschedulenamefieldInfo;
             RepoItemInfo _visitscheduledescriptionfieldInfo;
             RepoItemInfo _visitschedulestatusdropdownInfo;
+            RepoItemInfo _visitscheduledraftstatusInfo;
             RepoItemInfo _visitscheduleworkflowdropdownInfo;
+            RepoItemInfo _visitscheduleworkflowoptionInfo;
             RepoItemInfo _visitschedulevisitstatusdropdownInfo;
             RepoItemInfo _visitschedulevisitsessioncodeInfo;
             RepoItemInfo _visit1Info;
-            RepoItemInfo _statusrequiredvalidationInfo;
-            RepoItemInfo _namerequiredvalidationInfo;
             RepoItemInfo _visitschedulenameminlengthvalidationInfo;
             RepoItemInfo _visitsessionidfieldInfo;
             RepoItemInfo _visitscheduleaddvisitbuttonInfo;
@@ -2889,12 +3019,12 @@ namespace CSP
                 _visitschedulenamefieldInfo = new RepoItemInfo(this, "VisitScheduleNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "017929db-0819-4638-9295-0f6a5db95999");
                 _visitscheduledescriptionfieldInfo = new RepoItemInfo(this, "VisitScheduleDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "aedd084f-bccc-42e8-908c-39282d630f73");
                 _visitschedulestatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "669e2c14-e193-4858-afd0-2e739ebb94ba");
+                _visitscheduledraftstatusInfo = new RepoItemInfo(this, "VisitScheduleDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']", 30000, null, "6d8c87c9-a9ee-48fb-a13f-0602ba4ecc6d");
                 _visitscheduleworkflowdropdownInfo = new RepoItemInfo(this, "VisitScheduleWorkflowDropdown", ".//select[@id~'formly_[0-9]+_select_workflow_2']", 30000, null, "32f08ae3-a2b2-4356-8eb5-f29742e8cd17");
+                _visitscheduleworkflowoptionInfo = new RepoItemInfo(this, "VisitScheduleWorkflowOption", ".//select[@id~'formly_[0-9]+_select_workflow_2']/option[@label=$WorkflowName+$RandNum]", 30000, null, "11da81c6-d578-4ca8-af3d-66941ab38802");
                 _visitschedulevisitstatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleVisitStatusDropdown", ".//select[@id~'formly_[0-9]+_select_visitStatus_3']", 30000, null, "d7fb7df4-d20f-46a6-a2a7-ad66754684be");
                 _visitschedulevisitsessioncodeInfo = new RepoItemInfo(this, "VisitScheduleVisitSessionCode", ".//input[@id~'formly_[0-9]+_input_code_4']", 30000, null, "c2f213dd-9ca4-4fd3-862d-cb9066680ed4");
                 _visit1Info = new RepoItemInfo(this, "Visit1", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='Visit 1']", 30000, null, "6d4d528a-8639-493c-866c-405f383143ae");
-                _statusrequiredvalidationInfo = new RepoItemInfo(this, "StatusRequiredValidation", ".//div[@innertext~'Status is required']", 30000, null, "8e3528cd-0ec6-43e1-ba3f-250d56e1255a");
-                _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "81d94947-ee9f-44f0-9545-adeeb36f10d8");
                 _visitschedulenameminlengthvalidationInfo = new RepoItemInfo(this, "VisitScheduleNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
                 _visitsessionidfieldInfo = new RepoItemInfo(this, "VisitSessionIDField", ".//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']", 30000, null, "fab623de-d4cc-4b0f-ba8a-762fa57e6154");
                 _visitscheduleaddvisitbuttonInfo = new RepoItemInfo(this, "VisitScheduleAddVisitButton", ".//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src>'https://'+$CSPDOM+'/asset/images/add_icon_']", 30000, null, "1a6e3a4c-b365-4758-a5c7-038f791a62d3");
@@ -3082,6 +3212,30 @@ namespace CSP
             }
 
             /// <summary>
+            /// The VisitScheduleDraftStatus item.
+            /// </summary>
+            [RepositoryItem("6d8c87c9-a9ee-48fb-a13f-0602ba4ecc6d")]
+            public virtual Ranorex.OptionTag VisitScheduleDraftStatus
+            {
+                get
+                {
+                    return _visitscheduledraftstatusInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VisitScheduleDraftStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("6d8c87c9-a9ee-48fb-a13f-0602ba4ecc6d")]
+            public virtual RepoItemInfo VisitScheduleDraftStatusInfo
+            {
+                get
+                {
+                    return _visitscheduledraftstatusInfo;
+                }
+            }
+
+            /// <summary>
             /// The VisitScheduleWorkflowDropdown item.
             /// </summary>
             [RepositoryItem("32f08ae3-a2b2-4356-8eb5-f29742e8cd17")]
@@ -3102,6 +3256,30 @@ namespace CSP
                 get
                 {
                     return _visitscheduleworkflowdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VisitScheduleWorkflowOption item.
+            /// </summary>
+            [RepositoryItem("11da81c6-d578-4ca8-af3d-66941ab38802")]
+            public virtual Ranorex.OptionTag VisitScheduleWorkflowOption
+            {
+                get
+                {
+                    return _visitscheduleworkflowoptionInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VisitScheduleWorkflowOption item info.
+            /// </summary>
+            [RepositoryItemInfo("11da81c6-d578-4ca8-af3d-66941ab38802")]
+            public virtual RepoItemInfo VisitScheduleWorkflowOptionInfo
+            {
+                get
+                {
+                    return _visitscheduleworkflowoptionInfo;
                 }
             }
 
@@ -3174,54 +3352,6 @@ namespace CSP
                 get
                 {
                     return _visit1Info;
-                }
-            }
-
-            /// <summary>
-            /// The StatusRequiredValidation item.
-            /// </summary>
-            [RepositoryItem("8e3528cd-0ec6-43e1-ba3f-250d56e1255a")]
-            public virtual Ranorex.DivTag StatusRequiredValidation
-            {
-                get
-                {
-                    return _statusrequiredvalidationInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StatusRequiredValidation item info.
-            /// </summary>
-            [RepositoryItemInfo("8e3528cd-0ec6-43e1-ba3f-250d56e1255a")]
-            public virtual RepoItemInfo StatusRequiredValidationInfo
-            {
-                get
-                {
-                    return _statusrequiredvalidationInfo;
-                }
-            }
-
-            /// <summary>
-            /// The NameRequiredValidation item.
-            /// </summary>
-            [RepositoryItem("81d94947-ee9f-44f0-9545-adeeb36f10d8")]
-            public virtual Ranorex.DivTag NameRequiredValidation
-            {
-                get
-                {
-                    return _namerequiredvalidationInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The NameRequiredValidation item info.
-            /// </summary>
-            [RepositoryItemInfo("81d94947-ee9f-44f0-9545-adeeb36f10d8")]
-            public virtual RepoItemInfo NameRequiredValidationInfo
-            {
-                get
-                {
-                    return _namerequiredvalidationInfo;
                 }
             }
 
@@ -6536,7 +6666,6 @@ namespace CSP
         {
             RepoItemInfo _firstuserrowInfo;
             RepoItemInfo _addbuttonInfo;
-            RepoItemInfo _editbuttonInfo;
             RepoItemInfo _internaluserrowInfo;
             RepoItemInfo _resendinviteemailInfo;
             RepoItemInfo _resendexternalinviteemailInfo;
@@ -6549,7 +6678,6 @@ namespace CSP
             {
                 _firstuserrowInfo = new RepoItemInfo(this, "FirstUserRow", ".//table/tbody/tr/td[1]/a", 30000, null, "777d20e0-2df2-4022-92d0-bd7e18a4d762");
                 _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//tag[@tagname='cogstate-generic-list-header']//img[@src>'https://'+$CSPDOM+'/asset/images/add_icon_']", 30000, null, "70cf92aa-2cef-4708-85df-af26b3756528");
-                _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//i[@innertext='mode_edit']", 30000, null, "c824ab88-9a7a-4069-87a2-b4bb2c0d34a2");
                 _internaluserrowInfo = new RepoItemInfo(this, "InternalUserRow", ".//table/tbody/tr/td/a[@innertext~$RandNum]", 30000, null, "bf4712dd-30d4-4721-9419-05713f997a6b");
                 _resendinviteemailInfo = new RepoItemInfo(this, "ResendInviteEmail", ".//tag[@tagname='cogstate-generic-user-edit']//tag[@tagname='ng-form']/div//a[@innertext='Resend Invite Email']", 30000, null, "428402d4-cc8a-4592-9225-7ee65da0b52f");
                 _resendexternalinviteemailInfo = new RepoItemInfo(this, "ResendExternalInviteEmail", ".//tag[@tagname='cogstate-generic-external-user-edit']//tag[@tagname='ng-form']/div//a[@innertext='Resend Invite Email']", 30000, null, "bb6d4bbc-866a-46c4-861d-4e03183749ee");
@@ -6624,30 +6752,6 @@ namespace CSP
                 get
                 {
                     return _addbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EditButton item.
-            /// </summary>
-            [RepositoryItem("c824ab88-9a7a-4069-87a2-b4bb2c0d34a2")]
-            public virtual Ranorex.ITag EditButton
-            {
-                get
-                {
-                    return _editbuttonInfo.CreateAdapter<Ranorex.ITag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EditButton item info.
-            /// </summary>
-            [RepositoryItemInfo("c824ab88-9a7a-4069-87a2-b4bb2c0d34a2")]
-            public virtual RepoItemInfo EditButtonInfo
-            {
-                get
-                {
-                    return _editbuttonInfo;
                 }
             }
 

@@ -212,25 +212,27 @@ FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
 AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="Draft"
-		duration="100ms"
+		<invokeactionrecorditem
+		action="Select"
 		enabled="True"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="6325540d-e4da-4a82-b032-99c17193477d">
+		searchpropertyid="ace1f5d3-e801-4c48-916c-f5ff04a08893"
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="844d1291-7f90-41d3-a9bb-326c95d1fddc"
-			sourcename="ItemRecorderEditor">
+			id="61e60a2c-f3a8-439c-8dac-e17fdacf52a7"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_status_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_3']/option[@label='Draft']
 				</path>
 			</info>
-		</keysequenceitem>
+			<arguments
+			id="dda51fb2-a1ee-4ce5-bfeb-c855afad2798">
+			</arguments>
+		</invokeactionrecorditem>
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="100ms"

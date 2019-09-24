@@ -41,6 +41,7 @@ namespace CSP.General
         /// </summary>
         public Launch_AssessmentAttempt()
         {
+            Browser = "";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace CSP.General
         }
 
 #region Variables
+
+        string _Browser;
+
+        /// <summary>
+        /// Gets or sets the value of variable Browser.
+        /// </summary>
+        [TestVariable("81704e14-17b3-497c-918b-6ed0d27d5881")]
+        public string Browser
+        {
+            get { return _Browser; }
+            set { _Browser = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -89,7 +102,7 @@ namespace CSP.General
 
             Init();
 
-            engine.Helpers.WebService.LaunchAssessment();
+            engine.Helpers.WebService.LaunchAssessment(Browser);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(1));

@@ -41,7 +41,6 @@ namespace CSP.AddWorkflowPage
         /// </summary>
         public Enter_WorkflowTemplate()
         {
-            WorkflowTemplate = "PR 3 Tier Decision";
         }
 
         /// <summary>
@@ -67,7 +66,7 @@ namespace CSP.AddWorkflowPage
         /// <summary>
         /// Gets or sets the value of variable WorkflowTemplate.
         /// </summary>
-        [TestVariable("03b03c2e-c427-4881-9f1c-35416388f17c")]
+        [TestVariable("87005baf-9d21-4fd0-8599-d463aad52dc9")]
         public string WorkflowTemplate
         {
             get { return repo.WorkflowTemplate; }
@@ -101,12 +100,12 @@ namespace CSP.AddWorkflowPage
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdownInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown.Click(3);
-            Delay.Milliseconds(90);
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown.Click(1);
+            Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$WorkflowTemplate' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown.PressKeys(WorkflowTemplate, 1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateOption'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateOptionInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateOption.Select();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Enter}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdownInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTemplateDropdown.PressKeys("{Enter}", 1);

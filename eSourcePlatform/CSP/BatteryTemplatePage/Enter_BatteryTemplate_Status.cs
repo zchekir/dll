@@ -93,8 +93,8 @@ namespace CSP.BatteryTemplatePage
             repo.CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateStatusDropdown.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Draft' with focus on 'CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateStatusDropdown'.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateStatusDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateStatusDropdown.PressKeys("Draft");
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateDraftStatus'.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateDraftStatusInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateDraftStatus.Select();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateStatusDropdown'.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.BatteryTemplateStatusDropdownInfo, new RecordItemIndex(2));

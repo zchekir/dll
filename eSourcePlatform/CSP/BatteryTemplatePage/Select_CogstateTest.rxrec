@@ -264,7 +264,7 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 		<keysequenceitem
 		KeySequence=""
 		duration="10ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="1ms"
 		searchpropertyid="91d202ed-4fde-46f4-8d23-c8cad3132572">
@@ -284,6 +284,27 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 				</path>
 			</info>
 		</keysequenceitem>
+		<invokeactionrecorditem
+		action="Select"
+		enabled="True"
+		optional="False"
+		searchpropertyid="42c2c2ce-77e6-411e-8b7f-4160a8fecdbf"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="00d12e48-5341-45d4-aa4e-d21cf89a52b4"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']/option[@label=$BatteryBlockName]
+				</path>
+			</info>
+			<arguments
+			id="15edb207-6f7a-4505-aca7-56ba2a8ebc34">
+			</arguments>
+		</invokeactionrecorditem>
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="10ms"

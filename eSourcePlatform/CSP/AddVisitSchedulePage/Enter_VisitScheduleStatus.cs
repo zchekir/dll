@@ -93,8 +93,8 @@ namespace CSP.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Draft' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown.PressKeys("Draft");
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDraftStatus'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDraftStatusInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleDraftStatus.Select();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdown'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleStatusDropdownInfo, new RecordItemIndex(2));

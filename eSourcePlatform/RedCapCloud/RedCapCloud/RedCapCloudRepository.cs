@@ -3746,7 +3746,7 @@ namespace RedCapCloud
             /// Creates a new OpenFileDialog  folder.
             /// </summary>
             public OpenFileDialogAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("OpenFileDialog", "/form[@title='Open']", parentFolder, 30000, null, true, "fa3bf7ab-58bf-47ee-b45e-4297d18b0785", "")
+                    base("OpenFileDialog", "/form[@title~'(^Open)|(^File Upload)']", parentFolder, 30000, null, true, "fa3bf7ab-58bf-47ee-b45e-4297d18b0785", "")
             {
                 _buttonopenInfo = new RepoItemInfo(this, "ButtonOpen", "button[@text='&Open']", 30000, null, "66df08e6-cfa3-4c9a-8878-b220b8bb94d5");
                 _filenamefieldInfo = new RepoItemInfo(this, "FilenameField", "?/?/text[@controlid='1148']", 30000, null, "d7b3150e-dabc-40ec-a614-3a84e81930be");

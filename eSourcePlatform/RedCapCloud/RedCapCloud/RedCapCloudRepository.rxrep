@@ -1229,7 +1229,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="fa3bf7ab-58bf-47ee-b45e-4297d18b0785"
 		isrooted="True"
 		name="OpenFileDialog"
-		refpath="/form[@title='Open']"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -1238,9 +1237,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="66df08e6-cfa3-4c9a-8878-b220b8bb94d5"
 			name="ButtonOpen"
 			refimgid="4ed7cb4d-afed-4d17-b282-2b7a1e70e7bb"
-			refpath="/form[@title='Open']/button[@text='&amp;Open']"
 			searchtimeout="30000ms">
-				/form[@title='Open']/button[@text='&amp;Open']
+				/form[@title~'(^Open)|(^File Upload)']/button[@text='&amp;Open']
 			</item>
 			<item
 			addcaps="text,nativewindow"
@@ -1248,12 +1246,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="d7b3150e-dabc-40ec-a614-3a84e81930be"
 			name="FilenameField"
 			refimgid="5a737daa-0075-470f-a870-58362c6c80ed"
-			refpath="/form[@title='Open']/combobox[@controlid='1148']/text[@controlid='1148']"
 			searchtimeout="30000ms">
-				/form[@title='Open']/?/?/text[@controlid='1148']
+				/form[@title~'(^Open)|(^File Upload)']/?/?/text[@controlid='1148']
 			</item>
 			<basepath>
-				/form[@title='Open']
+				/form[@title~'(^Open)|(^File Upload)']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

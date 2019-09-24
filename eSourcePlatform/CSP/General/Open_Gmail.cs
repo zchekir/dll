@@ -41,6 +41,7 @@ namespace CSP.General
         /// </summary>
         public Open_Gmail()
         {
+            Browser = "";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace CSP.General
         }
 
 #region Variables
+
+        string _Browser;
+
+        /// <summary>
+        /// Gets or sets the value of variable Browser.
+        /// </summary>
+        [TestVariable("cc872493-9fd6-48a8-89c0-c05fdc40ac6c")]
+        public string Browser
+        {
+            get { return _Browser; }
+            set { _Browser = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,8 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://accounts.google.com/ServiceLogin' with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("https://accounts.google.com/ServiceLogin", "Chrome", "", false, false, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://accounts.google.com/ServiceLogin' with browser specified by variable $Browser in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser("https://accounts.google.com/ServiceLogin", Browser, "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));

@@ -222,25 +222,27 @@ KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
 AKKKKACiiigAooooAKKKKACiiigAooooA//Z
 			</helperscreenshot>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="Ext"
-		duration="100ms"
+		<invokeactionrecorditem
+		action="Select"
 		enabled="True"
 		optional="False"
-		presstime="1ms"
-		searchpropertyid="853f1feb-8fa3-44db-9528-eb24ce58f14e">
+		searchpropertyid="34e2210a-ef03-41c7-adc2-f79806fab070"
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="32590909-4016-4990-9c5e-4dbef88365fd"
+			id="86c97b72-113a-4fdd-bbd1-3aa41b2dbd8f"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_workflowType_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowType_2']/option[@label='External Embedded']
 				</path>
 			</info>
-		</keysequenceitem>
+			<arguments
+			id="f57ccd60-f46a-4e35-a08a-f47f5c0acdd0">
+			</arguments>
+		</invokeactionrecorditem>
 		<keysequenceitem
 		KeySequence="{Enter}"
 		duration="100ms"

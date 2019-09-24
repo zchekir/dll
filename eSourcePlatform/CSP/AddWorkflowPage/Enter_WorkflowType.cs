@@ -93,9 +93,9 @@ namespace CSP.AddWorkflowPage
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Ext' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("Ext", 1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'CogstateSolutionPlatform.AddWorkflowPage.ExternalEmbeddedWorkflowType'.", repo.CogstateSolutionPlatform.AddWorkflowPage.ExternalEmbeddedWorkflowTypeInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.ExternalEmbeddedWorkflowType.Select();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Enter}' with focus on 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown'.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdownInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowTypeDropdown.PressKeys("{Enter}", 1);

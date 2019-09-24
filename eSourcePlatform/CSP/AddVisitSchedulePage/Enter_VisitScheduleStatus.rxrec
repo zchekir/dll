@@ -53,25 +53,27 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="Draft"
-		duration="10ms"
+		<invokeactionrecorditem
+		action="Select"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
-		searchpropertyid="4689f0b3-094d-4e7f-9c6c-ed4cda0546c6">
+		searchpropertyid="d4b5b9f8-0ece-41c0-87e9-e8f8f72b18c7"
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="669e2c14-e193-4858-afd0-2e739ebb94ba"
+			id="6d8c87c9-a9ee-48fb-a13f-0602ba4ecc6d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_status_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']
 				</path>
 			</info>
-		</keysequenceitem>
+			<arguments
+			id="68acc28a-bab6-4610-97be-2f99fb226ea5">
+			</arguments>
+		</invokeactionrecorditem>
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="10ms"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -18,7 +18,11 @@ rxversion="8.3">
 			showinvisiblechars="True">
 			</testsuite>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="Authentication"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
+			maxrange="0"
+			minrange="0"
 			name="Smoke_Test">
 			</smartfoldernode>
 			<testcase
@@ -41,6 +45,26 @@ rxversion="8.3">
 					<param
 					name="CSPURL"
 					value="https://cgst-qc-orr.azurewebsites.net/">
+					</param>
+					<param
+					name="DevopsPage"
+					value="api/devops">
+					</param>
+					<param
+					name="VersionDeployed"
+					value="1.10.0">
+					</param>
+					<param
+					name="DBServer"
+					value="cgst-qc.database.windows.net">
+					</param>
+					<param
+					name="Database"
+					value="cgst-orr-api">
+					</param>
+					<param
+					name="Authentication"
+					value="Active Directory Password">
 					</param>
 					<param
 					name="RandNum"
@@ -148,10 +172,16 @@ rxversion="8.3">
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
+					CSPPassword
+				</columnname>
+				<columnname>
 					dbPassword
 				</columnname>
 				<columnname>
 					GmailPassword
+				</columnname>
+				<columnname>
+					RCCPassword
 				</columnname>
 			</maskedcolumns>
 			<file>

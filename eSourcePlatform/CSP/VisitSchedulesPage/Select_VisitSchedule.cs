@@ -115,34 +115,22 @@ namespace CSP.VisitSchedulesPage
             repo.CogstateSolutionPlatform.StudyTabs.VisitSchedulesTab.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click(1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VisitScheduleName' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(VisitScheduleName, 1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.MainToolbar.SearchField'.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.MainToolbar.SearchField.PressKeys(RandNum, 1);
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.CardButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.CardButtonInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.StudyToolbar.CardButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle' at Center.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle' at Center.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitle.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, "InnerText", VisitScheduleName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, "InnerText", RandNum);
             Delay.Milliseconds(100);
             

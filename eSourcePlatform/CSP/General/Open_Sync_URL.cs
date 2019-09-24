@@ -42,6 +42,7 @@ namespace CSP.General
         public Open_Sync_URL()
         {
             URL = "";
+            Browser = "";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace CSP.General
         {
             get { return _URL; }
             set { _URL = value; }
+        }
+
+        string _Browser;
+
+        /// <summary>
+        /// Gets or sets the value of variable Browser.
+        /// </summary>
+        [TestVariable("6879bbc6-6c45-4764-bfce-7c708caae80a")]
+        public string Browser
+        {
+            get { return _Browser; }
+            set { _Browser = value; }
         }
 
 #endregion
@@ -92,7 +105,7 @@ namespace CSP.General
 
             Init();
 
-            Open_Sync_URL_browser();
+            Open_Sync_URL_browser(Browser);
             Delay.Milliseconds(0);
             
         }

@@ -93,8 +93,8 @@ namespace CSP.LoginPage
             repo.CogstateSolutionPlatform.SelfInfo.WaitForAttributeEqual(5000, "State", "complete");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.LoginButton' at Center.", repo.CogstateSolutionPlatform.LoginForm.LoginButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.LoginForm.LoginButton.Click(100);
-            Delay.Milliseconds(0);
+            repo.CogstateSolutionPlatform.LoginForm.LoginButton.Click(1);
+            Delay.Milliseconds(90);
             
         }
 

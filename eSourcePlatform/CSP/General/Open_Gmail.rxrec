@@ -27,6 +27,10 @@ rxversion="8.3">
 	namespace="CSP.General">
 	</codegen>
 	<variables>
+		<var
+		id="cc872493-9fd6-48a8-89c0-c05fdc40ac6c"
+		name="Browser">
+		</var>
 	</variables>
 	<recorditems>
 		<openwebsiterecorditem
@@ -36,12 +40,17 @@ rxversion="8.3">
 		clearcookies="False"
 		enabled="True"
 		incognito="False"
+		instrument="True"
 		killexisting="False"
 		maximized="False"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="BrowserName"
+				variable="Browser">
+				</binding>
 			</bindings>
 			<url>
 				https://accounts.google.com/ServiceLogin

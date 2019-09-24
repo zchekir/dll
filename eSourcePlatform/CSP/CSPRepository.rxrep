@@ -56,6 +56,15 @@ rxversion="8.3">
 					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']
 				</item>
 				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="d28c6cbc-d9ee-43b6-b6f1-3da4caf2b6dd"
+				name="BatteryDraftStatus"
+				refimgid="0229f927-0428-48d1-8705-8d50e12fab37"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']
+				</item>
+				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="460ff0b4-1723-4c92-9813-cf9474fafefc"
@@ -81,6 +90,15 @@ rxversion="8.3">
 				refimgid="798a0a5e-4fda-4d3e-bef6-2fed1c37ec2f"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_6']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="b7567443-acb0-422e-a21e-d375c9e0714d"
+				name="BatteryTemplateDropdownOption"
+				refimgid="798a0a5e-4fda-4d3e-bef6-2fed1c37ec2f"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_6']/option[@label=$BatteryTemplateName+$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -260,6 +278,15 @@ rxversion="8.3">
 					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']
 				</item>
 				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="addebc81-a000-4acf-95a0-f113c8552cb2"
+				name="BatteryTemplateDraftStatus"
+				refimgid="52344d9f-5c8c-4821-9c34-80fabfd2760e"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']
+				</item>
+				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="825c735f-1d54-4e5c-8291-ce371dec3840"
@@ -303,6 +330,15 @@ rxversion="8.3">
 				refimgid="53afcf2b-d7bf-4949-b36e-75a2cdad7c8e"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="00d12e48-5341-45d4-aa4e-d21cf89a52b4"
+				name="CogstateTestDropdownOption"
+				refimgid="53afcf2b-d7bf-4949-b36e-75a2cdad7c8e"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']/option[@label=$BatteryBlockName]
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -358,12 +394,30 @@ rxversion="8.3">
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="86c97b72-113a-4fdd-bbd1-3aa41b2dbd8f"
+				name="ExternalEmbeddedWorkflowType"
+				refimgid="bfc2a5b8-0ecc-445b-aeac-af2acae9f81f"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowType_2']/option[@label='External Embedded']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
 				capname="selecttag"
 				id="844d1291-7f90-41d3-a9bb-326c95d1fddc"
 				name="WorkflowStatusDropdown"
 				refimgid="7ffafe31-708e-406a-afee-5b5075c2288f"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_3']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="61e60a2c-f3a8-439c-8dac-e17fdacf52a7"
+				name="WorkflowStatusDraftOption"
+				refimgid="7ffafe31-708e-406a-afee-5b5075c2288f"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_3']/option[@label='Draft']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -508,15 +562,6 @@ rxversion="8.3">
 				refimgid="f028deb0-e347-4999-9d1d-d89b54c0a45d"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[@innertext~'Workflow Type is required']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="87089fcd-da9e-4fe9-9964-fb39c79b1bae"
-				name="StatusRequiredValidation"
-				refimgid="3eba059f-2f11-4358-9c3f-85c894d8613e"
-				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[@innertext~'Status is required']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -777,12 +822,30 @@ rxversion="8.3">
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="6d8c87c9-a9ee-48fb-a13f-0602ba4ecc6d"
+				name="VisitScheduleDraftStatus"
+				refimgid="c7bd7e8e-a119-4a3b-b1f3-0aa08df8dadd"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
 				capname="selecttag"
 				id="32f08ae3-a2b2-4356-8eb5-f29742e8cd17"
 				name="VisitScheduleWorkflowDropdown"
 				refimgid="a6c536ff-e2ef-4d9c-9a12-2cd419e0d86d"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_2']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="11da81c6-d578-4ca8-af3d-66941ab38802"
+				name="VisitScheduleWorkflowOption"
+				refimgid="a6c536ff-e2ef-4d9c-9a12-2cd419e0d86d"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_2']/option[@label=$WorkflowName+$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -810,24 +873,6 @@ rxversion="8.3">
 				refimgid="c9a4103b-43e2-4007-b34d-7d06cf1be6b6"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='Visit 1']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="8e3528cd-0ec6-43e1-ba3f-250d56e1255a"
-				name="StatusRequiredValidation"
-				refimgid="a65703e9-55d0-4f66-90bd-c64a8632b1a1"
-				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[@innertext~'Status is required']
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="81d94947-ee9f-44f0-9545-adeeb36f10d8"
-				name="NameRequiredValidation"
-				refimgid="c3fdc104-decc-41e5-8672-fbb27c53707e"
-				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[@innertext~'Name is required']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -1999,15 +2044,6 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="ed57db7f-4f52-493d-bd2c-8681a2a98030"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-generic-list-header']//img[@src&gt;'https://'+$CSPDOM+'/asset/images/add_icon_']
-				</item>
-				<item
-				addcaps="unknown,webelement,itag"
-				capname="itag"
-				id="c824ab88-9a7a-4069-87a2-b4bb2c0d34a2"
-				name="EditButton"
-				refimgid="47ef27b8-2163-4463-b824-47cf7df6ed9e"
-				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//i[@innertext='mode_edit']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"

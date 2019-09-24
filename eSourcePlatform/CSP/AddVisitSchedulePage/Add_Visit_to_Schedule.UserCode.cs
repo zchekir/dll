@@ -33,18 +33,6 @@ namespace CSP.AddVisitSchedulePage
             // Your recording specific initialization code goes here.
         }
 
-        public void SelectVisitScheduleWorkflow()
-        {
-            //click on dropdown to expand the list of Workflows Available
-        	Report.Log(ReportLevel.Info,"Mouse click on VistScheduleWorkflowDropdown");
-        	repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown.Click();
-        		
-        	//find the Workflow we want and select it
-        	OptionTag option = "/dom[@domain='" + CSPDOM + "']//option[@InnerText='" + WorkflowName + RandNum + "']";
-        	option.Focus();
-        	option.Selected = true;
-        	Keyboard.Press("{ENTER}");
-        }
 
         public void SelectVisitScheduleVisitStatus()
         {

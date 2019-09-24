@@ -27,14 +27,6 @@ rxversion="8.3">
 	namespace="CSP.AddBatteryPage">
 	</codegen>
 	<variables>
-		<var
-		id="470e5e8f-d213-4014-91bc-bc1b00811c15"
-		name="BatteryTemplateName">
-		</var>
-		<var
-		id="2d46eb18-ff1b-41a4-93c4-f6c8a2285cf1"
-		name="RandNum">
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -61,52 +53,27 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence=""
-		duration="1ms"
+		<invokeactionrecorditem
+		action="Select"
 		enabled="True"
 		optional="False"
-		presstime="0ms"
-		searchpropertyid="8b6d7a81-d756-440a-ade8-0d652b5260e7">
+		searchpropertyid="1fdd091d-ac66-45c0-ac70-eb85a5c6a970"
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="KeySequence"
-				variable="BatteryTemplateName">
-				</binding>
 			</bindings>
 			<info
-			id="49d3bc58-ddc4-47e9-9a3a-239f487d39aa"
-			sourcename="ItemRecorderEditor">
+			id="b7567443-acb0-422e-a21e-d375c9e0714d"
+			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_4']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_6']/option[@label=$BatteryTemplateName+$RandNum]
 				</path>
 			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence=""
-		duration="1ms"
-		enabled="True"
-		optional="False"
-		presstime="0ms"
-		searchpropertyid="a4d66e8a-6ed9-4f11-a8aa-97495253ca46">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="RandNum">
-				</binding>
-			</bindings>
-			<info
-			id="49d3bc58-ddc4-47e9-9a3a-239f487d39aa"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_4']
-				</path>
-			</info>
-		</keysequenceitem>
+			<arguments
+			id="c801e5ed-c256-4223-9e33-a28f174c6d59">
+			</arguments>
+		</invokeactionrecorditem>
 		<keysequenceitem
 		KeySequence="{Return}"
 		duration="10ms"

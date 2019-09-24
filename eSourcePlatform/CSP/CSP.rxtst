@@ -33,6 +33,12 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
+					variablename="Browser">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -548,8 +554,8 @@ rxversion="8.3">
 			datasource="Authentication"
 			errorbehavior="Stop"
 			id="12672266-c3e5-4da0-bf18-959502d59662"
-			maxrange="0"
-			minrange="0"
+			maxrange="2"
+			minrange="2"
 			name="Regression"
 			warnunboundvariables="False">
 			</smartfoldernode>
@@ -660,6 +666,12 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
+					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1150,6 +1162,12 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
+					variablename="Browser">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1250,7 +1268,7 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="7"
+			maxrange="0"
 			minrange="0"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
@@ -2059,6 +2077,32 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="651ec70a-e3c7-40c2-aa0b-77f5c89c10bc"
+			name="Select_Study"
+			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ProjectName"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
+					variablename="RandNum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="653900d7-77eb-4811-85bc-ad15f3f208d7"
 			name="Click_Participants_Tab"
 			ref="ff4b0f88-9baa-4e62-9d13-538aeb62f61f"
@@ -2455,7 +2499,7 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="7"
+			maxrange="0"
 			minrange="0"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
@@ -3180,6 +3224,12 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
+					variablename="Browser">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -3217,6 +3267,12 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
+					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3929,6 +3985,32 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="d3c2a0c6-4079-48ec-aae8-a2aaaed23b7c"
+			name="Select_Study"
+			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="d54a43ea-e3f9-4683-a62f-ebc8fb55ba5c"
 			name="teardown">
@@ -4039,6 +4121,12 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d566832d-c3ab-4c50-aa34-3ca6763b3680"
 					variablename="URL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="6879bbc6-6c45-4764-bfce-7c708caae80a"
+					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4207,6 +4295,14 @@ rxversion="8.3">
 			name="Open_Gmail"
 			ref="dfb8dc74-3cd6-4c2f-882d-e08b92ce668c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="d21b361b-a85f-4a38-97db-a529f99d7f1c"
+					variableid="cc872493-9fd6-48a8-89c0-c05fdc40ac6c"
+					variablename="Browser">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e6967e9f-f015-4135-a9f9-bb0ae528aa9d"
@@ -5134,6 +5230,10 @@ rxversion="8.3">
 							<testcase
 							id="2dbb0c47-ef76-4518-b068-bfaeeab934d1"
 							name="Add_Workflow">
+								<testmodule
+								id="651ec70a-e3c7-40c2-aa0b-77f5c89c10bc"
+								name="Select_Study">
+								</testmodule>
 								<modulegroup
 								id="117a977f-9128-4a3f-995e-cc553b10d948"
 								name="Add_Workflow">
@@ -5142,6 +5242,10 @@ rxversion="8.3">
 							<testcase
 							id="cceee567-5f9b-42d2-8650-e4fe3f681ce7"
 							name="Add_VisitSchedule">
+								<testmodule
+								id="d3c2a0c6-4079-48ec-aae8-a2aaaed23b7c"
+								name="Select_Study">
+								</testmodule>
 								<modulegroup
 								id="e1255b3e-5f8c-43e6-bf81-7e7f652c9821"
 								name="Add_VisitSchedule">

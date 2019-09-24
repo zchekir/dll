@@ -454,12 +454,12 @@ namespace engine.Helpers
         /// Launch Chrome using an Assessment Attempt URL-----------------------------------------------------------------
         /// </summary>
         [UserCodeMethod]
-        public static void LaunchAssessment()
+        public static void LaunchAssessment(string Browser)
         {
         	//URL requires encoding as it may contain spaces when it is retrieved from the API
         	AssessmentURL = Uri.EscapeUriString(AssessmentURL);
-        	Report.Log(ReportLevel.Info, "Website", "Opening web site " + AssessmentURL + " with browser 'Chrome' in normal mode.");
-        	Host.Current.OpenBrowser(AssessmentURL, "Chrome", "", false, false, false, false, false);
+        	Report.Log(ReportLevel.Info, "Website", "Opening web site " + AssessmentURL + " with browser " + Browser + " in normal mode.");
+        	Host.Current.OpenBrowser(AssessmentURL, Browser, "", false, false, false, false, false);
         }
         
         

@@ -36,10 +36,10 @@ namespace CSP.General
         /// <summary>
         /// Opens the sync data url for the current environment
         /// </summary>
-        public void Open_Sync_URL_browser()
+        public void Open_Sync_URL_browser(string Browser)
         {
             Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'Chrome' in maximized mode.");
-            Host.Current.OpenBrowser(URL + "sync.html", "Chrome", "", false, true, false, false, false, true);
+            Host.Current.OpenBrowser(URL + "sync.html", Browser, "", false, true, false, false, false, true);
         }
 
     }

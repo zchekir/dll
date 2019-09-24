@@ -93,9 +93,9 @@ namespace CSP.AddBatteryPage
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'CBB - INTERACTIVE DEMOS' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("CBB - INTERACTIVE DEMOS", 1);
-            Delay.Milliseconds(70);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'CBB' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("CBB", new Duration(0));
+            Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdownInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryTemplateDropdown.PressKeys("{Return}", 1);
