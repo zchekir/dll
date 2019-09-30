@@ -27,6 +27,7 @@ namespace DCT
     public partial class DCTRepository : RepoGenBaseFolder
     {
         static DCTRepository instance = new DCTRepository();
+        DCTRepositoryFolders.DataCleaningToolAppFolder _datacleaningtool;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -43,6 +44,7 @@ namespace DCT
         public DCTRepository() 
             : base("DCTRepository", "/", null, 0, false, "1559d85e-a9d4-499b-8b78-a53d7c7c1eef", ".\\RepositoryImages\\DCTRepository1559d85e.rximgres")
         {
+            _datacleaningtool = new DCTRepositoryFolders.DataCleaningToolAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace DCT
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The DataCleaningTool folder.
+        /// </summary>
+        [RepositoryFolder("8d2bb7de-1088-4124-a99c-b77e11c31af1")]
+        public virtual DCTRepositoryFolders.DataCleaningToolAppFolder DataCleaningTool
+        {
+            get { return _datacleaningtool; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,98 @@ namespace DCT
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class DCTRepositoryFolders
     {
+        /// <summary>
+        /// The DataCleaningToolAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("8d2bb7de-1088-4124-a99c-b77e11c31af1")]
+        public partial class DataCleaningToolAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _movevalidationInfo;
+            RepoItemInfo _primaryvalidationInfo;
+
+            /// <summary>
+            /// Creates a new DataCleaningTool  folder.
+            /// </summary>
+            public DataCleaningToolAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DataCleaningTool", "/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']", parentFolder, 30000, null, false, "8d2bb7de-1088-4124-a99c-b77e11c31af1", "")
+            {
+                _movevalidationInfo = new RepoItemInfo(this, "MoveValidation", ".//div[#'root']/div/div/div[3]/p[@innertext='No results found.']", 30000, null, "178b44c8-a649-4b52-b5b7-b56b4cde9123");
+                _primaryvalidationInfo = new RepoItemInfo(this, "PrimaryValidation", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext='yes']", 30000, null, "1a031ccd-10c6-432c-9edf-5a8661be8d93");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("8d2bb7de-1088-4124-a99c-b77e11c31af1")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8d2bb7de-1088-4124-a99c-b77e11c31af1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MoveValidation item.
+            /// </summary>
+            [RepositoryItem("178b44c8-a649-4b52-b5b7-b56b4cde9123")]
+            public virtual Ranorex.PTag MoveValidation
+            {
+                get
+                {
+                    return _movevalidationInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MoveValidation item info.
+            /// </summary>
+            [RepositoryItemInfo("178b44c8-a649-4b52-b5b7-b56b4cde9123")]
+            public virtual RepoItemInfo MoveValidationInfo
+            {
+                get
+                {
+                    return _movevalidationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PrimaryValidation item.
+            /// </summary>
+            [RepositoryItem("1a031ccd-10c6-432c-9edf-5a8661be8d93")]
+            public virtual Ranorex.TdTag PrimaryValidation
+            {
+                get
+                {
+                    return _primaryvalidationInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PrimaryValidation item info.
+            /// </summary>
+            [RepositoryItemInfo("1a031ccd-10c6-432c-9edf-5a8661be8d93")]
+            public virtual RepoItemInfo PrimaryValidationInfo
+            {
+                get
+                {
+                    return _primaryvalidationInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

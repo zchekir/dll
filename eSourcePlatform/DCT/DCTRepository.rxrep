@@ -1,19 +1,69 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="DCTRepository"
+﻿<repository
 id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+name="DCTRepository"
 rxversion="8.3">
-  <codegen
-  classname="DCTRepository"
-  namespace="DCT"/>
-  <rootfolder
-  name="Root"
-  id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="DCTRepository"
+	namespace="DCT">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="8d2bb7de-1088-4124-a99c-b77e11c31af1"
+		isrooted="True"
+		name="DataCleaningTool"
+		refpath="/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="178b44c8-a649-4b52-b5b7-b56b4cde9123"
+			name="MoveValidation"
+			refimgid="8ec9a93e-ad85-4178-8b77-d5802e81c2f3"
+			refpath="/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//div[#'root']/div/div/div[3]/p[@innertext='No results found.']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//div[#'root']/div/div/div[3]/p[@innertext='No results found.']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="1a031ccd-10c6-432c-9edf-5a8661be8d93"
+			name="PrimaryValidation"
+			refimgid="3390150c-601a-44a4-a7f5-0c0ac475adf6"
+			refpath="/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//div[#'root']/div/div/div[3]/div/table/tbody/tr/td[@innertext='yes']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//div[#'root']/div/div/div[3]/?/?/table//td[@innertext='yes']
+			</item>
+			<basepath>
+				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>
