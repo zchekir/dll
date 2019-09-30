@@ -35,7 +35,7 @@ namespace CSP.LoginPage
 
         public void ClickSubmit(RepoItemInfo SubmitButton)
         {
-        	if (SubmitButton.Exists(new Duration(1000)))
+        	if (SubmitButton.Exists(new Duration(250)))
         	{
         		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", SubmitButton);
 	            SubmitButton.FindAdapter<SpanTag>().Click(3);

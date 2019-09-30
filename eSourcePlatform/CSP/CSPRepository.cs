@@ -8147,7 +8147,7 @@ namespace CSP
             /// Creates a new FirefoxDownloadPopup  folder.
             /// </summary>
             public FirefoxDownloadPopupAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FirefoxDownloadPopup", "/form[@title~'^Opening extract']", parentFolder, 30000, null, true, "bf859e5b-9047-4669-b51b-6ff44757d30f", "")
+                    base("FirefoxDownloadPopup", "/form[@title~'Opening extract']", parentFolder, 30000, null, true, "bf859e5b-9047-4669-b51b-6ff44757d30f", "")
             {
                 _savefileoptionInfo = new RepoItemInfo(this, "SaveFileOption", ".//radiobutton[@accessiblename='Save File']", 30000, null, "4e08f7f0-118b-47c4-ac7c-0a38d9722cbc");
                 _saveoptioncheckboxInfo = new RepoItemInfo(this, "SaveOptionCheckbox", "checkbox[@accessiblename~'^Do this automatically']", 30000, null, "a3d4c9f3-006f-4408-8791-678b8b2b79ae");

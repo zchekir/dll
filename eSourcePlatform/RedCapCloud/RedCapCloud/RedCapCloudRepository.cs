@@ -1563,6 +1563,7 @@ namespace RedCapCloud
         [RepositoryFolder("16b6389c-878f-4369-97c7-45193956fbb5")]
         public partial class ParametersPageFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _subjectparametersheaderInfo;
             RepoItemInfo _subjectparametereditInfo;
             RepoItemInfo _usecustominstrumentenrollInfo;
             RepoItemInfo _subjectparametersavebuttonInfo;
@@ -1573,6 +1574,7 @@ namespace RedCapCloud
             public ParametersPageFolder(RepoGenBaseFolder parentFolder) :
                     base("ParametersPage", "", parentFolder, 0, null, false, "16b6389c-878f-4369-97c7-45193956fbb5", "")
             {
+                _subjectparametersheaderInfo = new RepoItemInfo(this, "SubjectParametersHeader", ".//div[#'gwtWrapper']//table/tbody/tr//div[@innertext='Subject Parameters']", 30000, null, "aa3b3817-85af-4f53-a5fc-4f01f48dff0b");
                 _subjectparametereditInfo = new RepoItemInfo(this, "SubjectParameterEdit", ".//div[#'gwtWrapper']//table/tbody/tr//div[@innertext='Subject Parameters']/../div/..//div[@innertext='Edit']", 30000, null, "473a5bdb-586a-4a5c-b7e6-dfd61b27f6c9");
                 _usecustominstrumentenrollInfo = new RepoItemInfo(this, "UseCustomInstrumentEnroll", ".//i[#'subjectParams_useCustomCrf']", 30000, null, "c507af39-b9b8-49c0-bb49-6b008613fa82");
                 _subjectparametersavebuttonInfo = new RepoItemInfo(this, "SubjectParameterSaveButton", ".//div[#'gwtWrapper']//table/tbody/tr//div[@innertext='Subject Parameters']/../div/..//button//span[@innertext='Save']", 30000, null, "e71a05dc-1d57-4bc9-9de2-aaa94dc1b3b6");
@@ -1587,6 +1589,30 @@ namespace RedCapCloud
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SubjectParametersHeader item.
+            /// </summary>
+            [RepositoryItem("aa3b3817-85af-4f53-a5fc-4f01f48dff0b")]
+            public virtual Ranorex.DivTag SubjectParametersHeader
+            {
+                get
+                {
+                    return _subjectparametersheaderInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubjectParametersHeader item info.
+            /// </summary>
+            [RepositoryItemInfo("aa3b3817-85af-4f53-a5fc-4f01f48dff0b")]
+            public virtual RepoItemInfo SubjectParametersHeaderInfo
+            {
+                get
+                {
+                    return _subjectparametersheaderInfo;
                 }
             }
 

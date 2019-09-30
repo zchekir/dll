@@ -37,10 +37,10 @@ namespace CSP.LoginPage
 		//If this happens, we need to try clearing and entering the email again to avoid failing the step         
         public void Try_Enter_Email(RepoItemInfo EmailField)
         {
-        	Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
-            Delay.Duration(5000, false);
+        	Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
+            Delay.Duration(1000, false);
         	
-        	if (EmailField.Exists(new Duration(1000)))
+            if (EmailField.Exists(new Duration(3000)))
         	{
         		while (EmailField.FindAdapter<InputTag>().Value != CSPUsername)
         		{

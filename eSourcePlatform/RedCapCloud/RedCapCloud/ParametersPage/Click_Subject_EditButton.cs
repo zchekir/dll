@@ -89,7 +89,10 @@ namespace RedCapCloud.ParametersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersPage.SubjectParameterEdit' at Center.", repo.REDCapCloud.ParametersPage.SubjectParameterEditInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'REDCapCloud.ParametersPage.SubjectParametersHeader'", repo.REDCapCloud.ParametersPage.SubjectParametersHeaderInfo, new ActionTimeout(10000), new RecordItemIndex(0));
+            repo.REDCapCloud.ParametersPage.SubjectParametersHeaderInfo.WaitForExists(10000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ParametersPage.SubjectParameterEdit' at Center.", repo.REDCapCloud.ParametersPage.SubjectParameterEditInfo, new RecordItemIndex(1));
             repo.REDCapCloud.ParametersPage.SubjectParameterEdit.Click(1);
             Delay.Milliseconds(0);
             

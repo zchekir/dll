@@ -89,8 +89,8 @@ namespace CSP.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
-            Delay.Duration(3000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
+            Delay.Duration(1000, false);
             
             Select_User_Account(repo.MicrosoftSSO.AccountExistsInfo);
             Delay.Milliseconds(0);

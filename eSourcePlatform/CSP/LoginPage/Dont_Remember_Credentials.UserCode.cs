@@ -35,7 +35,7 @@ namespace CSP.LoginPage
 
         public void ForgetCredentials(RepoItemInfo DontAskCheckbox, RepoItemInfo NoButton)
         {
-        	if (DontAskCheckbox.Exists(new Duration(2500)))
+        	if (DontAskCheckbox.Exists(new Duration(250)))
         	{
         		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at 9;11.", DontAskCheckbox);
             	DontAskCheckbox.FindAdapter<InputTag>().Click("9;11");
