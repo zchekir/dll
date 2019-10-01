@@ -1,13 +1,14 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-# Ranorex Studio 8.3
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{91659C21-A01C-45E1-8D96-EC49F7FB96E1}"
-	ProjectSection(SolutionItems) = postProject
-		Ranorex = .\Ranorex.rxsettings
+	ProjectSection(SolutionItems) = preProject
+		Ranorex = Ranorex
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "engine", "engine.csproj", "{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "engine", "engine.csproj", "{35789612-3555-4457-93C4-C6661A9E674A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranorex Automation Helpers", "RanorexAutomationHelpers\Ranorex Automation Helpers.csproj", "{EE1A7688-1436-4342-9FDC-5D7B97890CE8}"
 EndProject
@@ -17,13 +18,19 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Debug|x86.Build.0 = Debug|x86
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Debug|x86.ActiveCfg = Debug|x86
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Release|x86.Build.0 = Release|x86
-		{BF4B32B6-CF80-4DB8-9174-BEB5813E0108}.Release|x86.ActiveCfg = Release|x86
-		{EE1A7688-1436-4342-9FDC-5D7B97890CE8}.Debug|x86.Build.0 = Debug|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Debug|x86.ActiveCfg = Debug|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Debug|x86.Build.0 = Debug|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Release|x86.ActiveCfg = Release|x86
+		{35789612-3555-4457-93C4-C6661A9E674A}.Release|x86.Build.0 = Release|x86
 		{EE1A7688-1436-4342-9FDC-5D7B97890CE8}.Debug|x86.ActiveCfg = Debug|x86
-		{EE1A7688-1436-4342-9FDC-5D7B97890CE8}.Release|x86.Build.0 = Release|x86
+		{EE1A7688-1436-4342-9FDC-5D7B97890CE8}.Debug|x86.Build.0 = Debug|x86
 		{EE1A7688-1436-4342-9FDC-5D7B97890CE8}.Release|x86.ActiveCfg = Release|x86
+		{EE1A7688-1436-4342-9FDC-5D7B97890CE8}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16223D6D-CE8A-4179-8E82-3EF0AC813B33}
 	EndGlobalSection
 EndGlobal
