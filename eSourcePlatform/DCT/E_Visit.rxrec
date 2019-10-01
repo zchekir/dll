@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d0095689-a29f-4e12-b935-b16779cc190b"
+mode="Global"
+rxversion="8.3">
+	<name>
+		E_Visit
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="E_Visit"
+	namespace="DCT">
+	</codegen>
+	<variables>
+		<var
+		id="761f832e-6cc2-4e00-a143-1d08ebd31d37"
+		name="DCTVisit">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="E_Visit"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Visit"
+		namespace="DCT"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b1a2f3bb-cf3e-441a-9790-13d66f37ce83">
+				<argument
+				argname="Visit"
+				id="f394945e-9362-4573-ac7b-69a795ea5783"
+				variable="DCTVisit">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+	name="DCTRepository"
+	relativepath="DCTRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="DCTRepository"
+		namespace="DCT">
+		</codegen>
+		<rootfolder
+		id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		E_Visit.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
