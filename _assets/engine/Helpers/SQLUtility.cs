@@ -36,6 +36,7 @@ namespace engine.Helpers
 		/// </summary>
 		public static DataTable dt = new DataTable();
 		public static string ResetToken;
+		public static string TestIdentifier;
 		
 		/// <summary>
 		/// This will query the database and store the results of the completed assessment into a datatable. This will use the TestIdentifer
@@ -249,6 +250,46 @@ namespace engine.Helpers
 			string TokenKey = dt.Rows[0][1].ToString();
 			Report.Log(ReportLevel.Info, "Reset Token: " + ResetToken + "Username: " +  TokenKey );
 			
+		}
+		/// <summary>
+		/// This method is for  validating the DCT move 
+		/// </summary>
+		/// 
+		
+		// This method is for getting validating the DCT move 
+		[UserCodeMethod]
+		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string key)
+		{
+			dt.Reset();
+			
+			// QueryDB
+			string query = @"SELECT 
+                           TestIdentifier
+                          ,[MoveOrigTestIdentifier]
+                          ,[MovePrevTestIdentifier]
+                           FROM [UserData].[PRWorkflowInstance]
+                           where MovePrevTestIdentifier = @key";
+			
+			
+			
+	
+			//Connecting to SQL DB:
+			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+			//CreateObject:
+			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
+			da.SelectCommand.Parameters.AddWithValue("@key", Guid.Parse(key));
+			// Get the data from DB
+			using (da)
+			{
+				da.Fill(dt);
+			}
+			
+			TestIdentifier  = dt.Rows[0][0].ToString();
+			string MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
+			string MovePrevTestIdentifier = dt.Rows[0][2].ToString();
+			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + TestIdentifier)
+		    Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier)
+			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier)
 		}
 	}
 	

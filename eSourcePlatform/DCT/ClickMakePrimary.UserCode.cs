@@ -35,7 +35,7 @@ namespace DCT
 
         public void Primary()
         {
-            Delay.Milliseconds(700);
+            Delay.Milliseconds(200);
         	 WebElement ClickPrimaryButton="//span[@innertext='make primary']";
              ClickPrimaryButton.Click();
         	 

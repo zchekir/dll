@@ -36,7 +36,7 @@ namespace DCT
         public void ClickFind_B()
         {
             //Click Button:
-        	  Delay.Milliseconds(500);
+        	  Delay.Milliseconds (200);
         	  WebElement ClickFind ="//span[@innertext='Find By Assessment Id']";
         	  ClickFind.Click();
         }

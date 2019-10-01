@@ -7,6 +7,11 @@ rxversion="8.3">
 			id="01b63821-260b-4c24-9fec-4be0336d8232"
 			name="teardown">
 			</teardown>
+			<smartfoldernode
+			datasource="Authentication"
+			id="04939054-fa65-495b-a740-482356616b3b"
+			name="ValidateTheMoveInDB">
+			</smartfoldernode>
 			<testmodule
 			id="060f0afb-2dac-4993-bb5b-0ce2f49d6374"
 			name="Confirm"
@@ -25,10 +30,6 @@ rxversion="8.3">
 			ref="12c9321e-d57b-4f26-abb0-e494f761864b"
 			type="Recording">
 			</testmodule>
-			<setup
-			id="12a63f9b-aec0-4fab-9f52-48927ecc3899"
-			name="setup">
-			</setup>
 			<setup
 			id="136608f2-83d7-492d-ae52-2537b7f1d6f3"
 			name="setup">
@@ -77,10 +78,6 @@ rxversion="8.3">
 			</testmodule>
 			<setup
 			id="2242df42-8b24-4308-9400-43de1f59f4c1"
-			name="setup">
-			</setup>
-			<setup
-			id="2311be26-04b2-4b08-afe2-5c21370e38a4"
 			name="setup">
 			</setup>
 			<testcase
@@ -150,11 +147,11 @@ rxversion="8.3">
 					</param>
 					<param
 					name="DCT_Password"
-					value="Cogstate2014">
+					value="Cogstate2010">
 					</param>
 					<param
 					name="DCTTestidentifier"
-					value="7f6f85e0-c443-4a4f-a4e9-4e6a89c38e20">
+					value="8c7de20e-5c61-4611-b5ee-6bb9bbc6de92">
 					</param>
 					<param
 					name="DCTVisit"
@@ -162,6 +159,10 @@ rxversion="8.3">
 					</param>
 					<param
 					name="DCTSubject"
+					value="">
+					</param>
+					<param
+					name="DCT_Database"
 					value="">
 					</param>
 				</parameters>
@@ -195,7 +196,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RandNum"
+					dataname="DCTTestidentifier"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="1391655f-2ece-49bc-801a-260bed3da80a"
 					variablename="DCTTestidentifier">
@@ -226,12 +227,6 @@ rxversion="8.3">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
-			<testmodule
-			id="5186af5c-0067-4969-b509-c623b0356420"
-			name="ClickButton"
-			ref="24d3a193-0675-4b16-902e-65d46c5a6669"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="5911ef58-8304-43d9-b260-094b16655bd2"
 			name="ClickMoveButton">
@@ -286,10 +281,6 @@ rxversion="8.3">
 			ref="94c76c7b-5165-44e9-93e8-337c36c1af4f"
 			type="Recording">
 			</testmodule>
-			<testcase
-			id="77549f06-81de-4b89-88f3-bf6079ebe824"
-			name="ClickFindButton">
-			</testcase>
 			<testmodule
 			id="7ec15c65-3525-40d6-b554-ad73a3129fb5"
 			name="ClickRButton"
@@ -323,8 +314,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="DCT_Password"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					dataname="CSPPassword"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="e3078aeb-57b5-4e52-b373-20e5fca1b1ba"
 					variablename="DCT_Password">
 					</var>
@@ -339,21 +330,17 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<teardown
-			id="9b04f788-6fe5-4065-aedf-de491fc99bd8"
-			name="teardown">
-			</teardown>
-			<teardown
 			id="9b8f1e6f-96e0-494e-836a-b2fc5ef05f7c"
 			name="teardown">
 			</teardown>
-			<testcase
-			id="9de3d349-7a90-44ae-9cd0-5c7dd10a94b6"
-			name="EnterTestIdentifier">
-			</testcase>
 			<teardown
 			id="9e3ea21b-9b10-4d00-8995-f6760d39fc9c"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc"
+			name="ValidateTestIdentifierINDB">
+			</testcase>
 			<testcase
 			id="a1d29b24-b861-49ab-a73e-2ec65d5b8c8a"
 			name="ClickConfirmButton">
@@ -399,8 +386,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="DCT_USERNAME"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					dataname="CSPUsername"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="d0e07d16-6eb8-40a3-aa90-8b3a394a6391"
 					variablename="DCT_USERNAME">
 					</var>
@@ -417,6 +404,38 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="cae3548e-cb02-4ae7-83c4-6bc57611288a"
+			name="TestIdentifierDBValidation"
+			ref="1e474587-a2e6-4c33-b39d-7673a9867909"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DBServer"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="fdfe063d-6783-4369-9629-5a145c369190"
+					variablename="DBserver">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="014421c8-99a8-4638-a1b8-329b6244fb96"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Key"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="9465bee5-d010-465f-a1f8-3bd590e232ce"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="eb61540a-fb4d-4dc9-a31b-da7d8e0c2955"
+					variablename="Authentication">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="cb4fb9fd-3f34-4d22-90cf-187c166e025c"
 			name="ClickOK"
 			ref="dd50aae4-733c-4063-baf4-6b08d5a60e27"
@@ -430,26 +449,8 @@ rxversion="8.3">
 			id="ce514155-4e5f-4393-8f46-81a9e929ea2e"
 			name="Primary">
 			</testcase>
-			<testmodule
-			id="ce6f8c2b-6192-487a-939b-0f73bcdd04fd"
-			name="TestIndentifier"
-			ref="d402610e-47e3-451e-84ef-01a160a71297"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DCTTestidentifier"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="1391655f-2ece-49bc-801a-260bed3da80a"
-					variablename="DCTTestidentifier">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="d3fcb451-17ef-4fb9-9753-84daf27e2666"
-			name="teardown">
-			</teardown>
-			<teardown
-			id="d443e274-e8a4-42f0-bab2-ed4f2452a166"
 			name="teardown">
 			</teardown>
 			<setup
@@ -481,7 +482,11 @@ rxversion="8.3">
 			name="Enter_Password">
 			</testcase>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="Authentication"
 			id="e6d436ed-0a07-4913-a5f0-3deb7c676360"
+			maxrange="0"
+			minrange="0"
 			name="Loginto_DCT">
 			</smartfoldernode>
 			<setup
@@ -680,38 +685,6 @@ rxversion="8.3">
 					id="c2d75985-5199-4bdd-be81-00b092003e2d"
 					name="Validate_DCTMove">
 						<testcase
-						id="9de3d349-7a90-44ae-9cd0-5c7dd10a94b6"
-						name="EnterTestIdentifier">
-							<setup
-							id="2311be26-04b2-4b08-afe2-5c21370e38a4"
-							name="setup">
-								<testmodule
-								id="ce6f8c2b-6192-487a-939b-0f73bcdd04fd"
-								name="TestIndentifier">
-								</testmodule>
-							</setup>
-							<teardown
-							id="d443e274-e8a4-42f0-bab2-ed4f2452a166"
-							name="teardown">
-							</teardown>
-						</testcase>
-						<testcase
-						id="77549f06-81de-4b89-88f3-bf6079ebe824"
-						name="ClickFindButton">
-							<setup
-							id="12a63f9b-aec0-4fab-9f52-48927ecc3899"
-							name="setup">
-								<testmodule
-								id="5186af5c-0067-4969-b509-c623b0356420"
-								name="ClickButton">
-								</testmodule>
-							</setup>
-							<teardown
-							id="9b04f788-6fe5-4065-aedf-de491fc99bd8"
-							name="teardown">
-							</teardown>
-						</testcase>
-						<testcase
 						id="6e3be3f3-089e-4425-afe5-fef03f0bd6e2"
 						name="ClickResults">
 							<setup
@@ -822,6 +795,18 @@ rxversion="8.3">
 							id="601e28de-f5a5-41fa-9ada-d8b98e6dc9f4"
 							name="teardown">
 							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
+					id="04939054-fa65-495b-a740-482356616b3b"
+					name="ValidateTheMoveInDB">
+						<testcase
+						id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc"
+						name="ValidateTestIdentifierINDB">
+							<testmodule
+							id="cae3548e-cb02-4ae7-83c4-6bc57611288a"
+							name="TestIdentifierDBValidation">
+							</testmodule>
 						</testcase>
 					</smartfoldernode>
 				</testcase>
@@ -967,6 +952,9 @@ rxversion="8.3">
 					VisitScheduleName
 				</column>
 				<column>
+					RCCVisitScheduleName
+				</column>
+				<column>
 					VisitScheduleDescription
 				</column>
 				<column>
@@ -1054,6 +1042,9 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="04939054-fa65-495b-a740-482356616b3b">
+			</testcontainer>
+			<testcontainer
 			id="15ac3f39-47c0-4ae9-bfe8-76638555ed7b">
 			</testcontainer>
 			<testcontainer
@@ -1078,9 +1069,6 @@ rxversion="8.3">
 			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
 			</testcontainer>
 			<testcontainer
-			id="77549f06-81de-4b89-88f3-bf6079ebe824">
-			</testcontainer>
-			<testcontainer
 			id="8232ed42-fc87-43ae-87f3-fdbe90bd0698">
 			</testcontainer>
 			<testcontainer
@@ -1090,7 +1078,7 @@ rxversion="8.3">
 			id="8701be3b-9559-4502-bc0c-635399be9d4c">
 			</testcontainer>
 			<testcontainer
-			id="9de3d349-7a90-44ae-9cd0-5c7dd10a94b6">
+			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc">
 			</testcontainer>
 			<testcontainer
 			id="a1d29b24-b861-49ab-a73e-2ec65d5b8c8a">

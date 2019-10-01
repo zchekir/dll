@@ -23,8 +23,12 @@ using Ranorex.Core.Testing;
 namespace DCT
 {
     public partial class TestIndentifier
+    	
     {
-        /// <summary>
+       
+    	
+    	
+    	/// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
         /// </summary>
@@ -37,13 +41,16 @@ namespace DCT
 
        
 
-        public void TestInd(string TestIdn)
+        public void TestInd( string TestIdn)
         {
-             Delay.Milliseconds(500);
+             Delay.Milliseconds(200);
         	 InputTag EnterTestidentifier = "//input[@id='findByAssessmentId']";
              EnterTestidentifier.Click();
              Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
-             EnterTestidentifier.PressKeys(TestIdn);
+             Delay.Milliseconds(200);
+             EnterTestidentifier.PressKeys( TestIdn);
+            
+             
         }
 
     }

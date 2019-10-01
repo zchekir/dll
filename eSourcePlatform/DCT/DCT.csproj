@@ -337,6 +337,18 @@
       <UserCode>true</UserCode>
       <id>e896b219-bc31-4fa4-8065-144e03620d8b</id>
     </Compile>
+    <Compile Include="TestIdentifierDBValidation.cs">
+      <BoundTo>e48e05dd-4ec3-4fba-9997-aa98f66596b4</BoundTo>
+      <DependentUpon>TestIdentifierDBValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d7b0384-130e-40ad-b0c4-2199adbcbfc6</id>
+    </Compile>
+    <Compile Include="TestIdentifierDBValidation.UserCode.cs">
+      <BoundTo>e48e05dd-4ec3-4fba-9997-aa98f66596b4</BoundTo>
+      <DependentUpon>TestIdentifierDBValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55161053-198d-47db-9062-9778ee64e32c</id>
+    </Compile>
     <Compile Include="TestIndentifier.cs">
       <BoundTo>3f879aee-a619-4789-925f-1687484d4501</BoundTo>
       <DependentUpon>TestIndentifier.rxrec</DependentUpon>
@@ -481,10 +493,15 @@
       <id>2659bd89-a26d-4f6d-8304-c9e9f22c4a54</id>
       <recordtableid>12c9321e-d57b-4f26-abb0-e494f761864b</recordtableid>
     </None>
-    <None Include="TestIndentifier.rxrec">
+    <None Include="TestIdentifierDBValidation.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>e48e05dd-4ec3-4fba-9997-aa98f66596b4</id>
+      <recordtableid>1e474587-a2e6-4c33-b39d-7673a9867909</recordtableid>
+    </None>
+    <None Include="TestIndentifier.rxrec">
       <id>3f879aee-a619-4789-925f-1687484d4501</id>
       <recordtableid>d402610e-47e3-451e-84ef-01a160a71297</recordtableid>
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
     </None>
     <None Include="ValidatePrimary.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>

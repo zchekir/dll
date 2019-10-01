@@ -36,7 +36,7 @@ namespace DCT
         public void ClickResButton()
         {
               //Click Results:
-        	   Delay.Milliseconds(500);
+        	   Delay.Milliseconds(200);
         	   WebElement ClickResult ="//td[@innertext~'SC-']";
         	   Mouse.MoveTo(ClickResult);
         	   ClickResult.Click();
