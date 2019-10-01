@@ -70,6 +70,10 @@ rxversion="8.3">
 			id="1f25f956-31c1-493b-a0fc-f1bfd47ddbbd"
 			name="setup">
 			</setup>
+			<teardown
+			id="1fa76c25-6d6c-42f2-a2a7-b7f7b2d9b9e8"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="21b99462-f26a-4151-8b3a-4ee9aa72c2c6"
 			name="ValidatePrimarySetYES"
@@ -265,6 +269,10 @@ rxversion="8.3">
 			id="6e3be3f3-089e-4425-afe5-fef03f0bd6e2"
 			name="ClickResults">
 			</testcase>
+			<setup
+			id="73e97678-1455-483b-8b7d-9740bf69ba9e"
+			name="setup">
+			</setup>
 			<testcase
 			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75"
 			name="NavigateToDCT">
@@ -803,10 +811,18 @@ rxversion="8.3">
 						<testcase
 						id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc"
 						name="ValidateTestIdentifierINDB">
+							<setup
+							id="73e97678-1455-483b-8b7d-9740bf69ba9e"
+							name="setup">
+							</setup>
 							<testmodule
 							id="cae3548e-cb02-4ae7-83c4-6bc57611288a"
 							name="TestIdentifierDBValidation">
 							</testmodule>
+							<teardown
+							id="1fa76c25-6d6c-42f2-a2a7-b7f7b2d9b9e8"
+							name="teardown">
+							</teardown>
 						</testcase>
 					</smartfoldernode>
 				</testcase>
