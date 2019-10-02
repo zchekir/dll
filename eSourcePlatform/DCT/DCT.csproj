@@ -529,6 +529,12 @@
       <id>2367fcf3-0cb6-48b7-a24a-0e8ae689cb46</id>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RedCapCloud\RedCapCloud\RedCapCloud.csproj">
+      <Project>{739128AA-E017-4B60-8DDA-0EC961E1C746}</Project>
+      <Name>RedCapCloud</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
 </Project>

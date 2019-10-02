@@ -38,7 +38,7 @@ namespace DCT
         public void ClickButton()
         {
             
-        	if (Host.Local.TryFindSingle<WebElement>("//*[@id='idSIButton9']", out ClickNext)){
+        	if (Host.Local.TryFindSingle<WebElement>("//*[@id='idSIButton9']", new Duration(1500), out ClickNext)){
                
                 ClickNext.Click();
             }else{

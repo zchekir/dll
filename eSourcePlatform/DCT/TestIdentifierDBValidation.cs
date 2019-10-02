@@ -44,10 +44,9 @@ namespace DCT
             DBserver = "cgst-qc.database.windows.net";
             Database = "cgst-orr-api";
             Authentication = "Active Directory Password";
-            dbUsername = "zchekir@cogstate.com";
-            dbPassword = "Cogstate2014";
-            Key = "5E39352E-0A02-453C-B86F-EB8083AF0BFD";
-            NewVariable = "";
+            dbUsername = "";
+            dbPassword = "";
+            TestIdentifier = "";
         }
 
         /// <summary>
@@ -120,28 +119,16 @@ namespace DCT
             set { _dbPassword = value; }
         }
 
-        string _Key;
+        string _TestIdentifier;
 
         /// <summary>
-        /// Gets or sets the value of variable Key.
+        /// Gets or sets the value of variable TestIdentifier.
         /// </summary>
-        [TestVariable("9465bee5-d010-465f-a1f8-3bd590e232ce")]
-        public string Key
+        [TestVariable("6564ccb3-9f1f-49b3-bf17-fc9f45477b9e")]
+        public string TestIdentifier
         {
-            get { return _Key; }
-            set { _Key = value; }
-        }
-
-        string _NewVariable;
-
-        /// <summary>
-        /// Gets or sets the value of variable NewVariable.
-        /// </summary>
-        [TestVariable("d3b1e82e-26bd-4a65-ac67-35fb6691acd6")]
-        public string NewVariable
-        {
-            get { return _NewVariable; }
-            set { _NewVariable = value; }
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
         }
 
 #endregion
@@ -170,7 +157,7 @@ namespace DCT
 
             Init();
 
-            engine.Helpers.SQLUtility.ValidateDCTMoved(DBserver, Database, dbUsername, dbPassword, Authentication, Key);
+            engine.Helpers.SQLUtility.ValidateDCTMoved(DBserver, Database, dbUsername, dbPassword, Authentication, TestIdentifier);
             Delay.Milliseconds(0);
             
         }

@@ -41,7 +41,7 @@ namespace DCT
         {
             
         	
-        	if (Host.Local.TryFindSingle<WebElement>("//*[@id='idBtn_Back']", out Clickno)){
+        	if (Host.Local.TryFindSingle<WebElement>("//*[@id='idBtn_Back']",new Duration(1500), out Clickno)){
                
         		Clickno.Click();
             }else{

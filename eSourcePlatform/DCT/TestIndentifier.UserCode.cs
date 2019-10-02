@@ -25,10 +25,7 @@ namespace DCT
     public partial class TestIndentifier
     	
     {
-       
-    	
-    	
-    	/// <summary>
+        /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
         /// </summary>
@@ -36,21 +33,15 @@ namespace DCT
         {
             // Your recording specific initialization code goes here.
         }
-        //Enter Testidentifier
         
-
-       
-
-        public void TestInd( string TestIdn)
+        //Enter Testidentifier
+        public void TestInd(string TestIdn)
         {
-             Delay.Milliseconds(200);
+             Delay.Milliseconds(500);
         	 InputTag EnterTestidentifier = "//input[@id='findByAssessmentId']";
              EnterTestidentifier.Click();
              Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
-             Delay.Milliseconds(200);
-             EnterTestidentifier.PressKeys( TestIdn);
-            
-             
+             EnterTestidentifier.PressKeys(TestIdn);
         }
 
     }

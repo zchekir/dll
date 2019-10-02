@@ -41,7 +41,7 @@ namespace DCT
         /// </summary>
         public Confirmation()
         {
-            DCTTestidentifier = "";
+            TestIdentifier = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace DCT
 
 #region Variables
 
-        string _DCTTestidentifier;
+        string _TestIdentifier;
 
         /// <summary>
-        /// Gets or sets the value of variable DCTTestidentifier.
+        /// Gets or sets the value of variable TestIdentifier.
         /// </summary>
-        [TestVariable("7d7d4e85-5bf0-4d1a-adde-0620a85a7062")]
-        public string DCTTestidentifier
+        [TestVariable("2b22f9b5-58cd-40fc-ae19-dad8636dde18")]
+        public string TestIdentifier
         {
-            get { return _DCTTestidentifier; }
-            set { _DCTTestidentifier = value; }
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace DCT
 
             Init();
 
-            Validation(DCTTestidentifier);
+            Validation(TestIdentifier);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DataCleaningTool.MoveValidation'.", repo.DataCleaningTool.MoveValidationInfo, new RecordItemIndex(1));

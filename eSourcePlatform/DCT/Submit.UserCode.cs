@@ -38,7 +38,7 @@ namespace DCT
 
         public void ClickSubButton()
         {
-            if (Host.Local.TryFindSingle<WebElement>("//*[@id='submitButton']", out ClickSubmit)){
+        	if (Host.Local.TryFindSingle<WebElement>("//*[@id='submitButton']", new Duration(1500), out ClickSubmit)){
                
                 ClickSubmit.Click();
             }else{

@@ -459,7 +459,7 @@ namespace engine.Helpers
         	//URL requires encoding as it may contain spaces when it is retrieved from the API
         	AssessmentURL = Uri.EscapeUriString(AssessmentURL);
         	Report.Log(ReportLevel.Info, "Website", "Opening web site " + AssessmentURL + " with browser " + Browser + " in normal mode.");
-        	Host.Current.OpenBrowser(AssessmentURL, Browser, "", false, false, false, false, false);
+        	Host.Current.OpenBrowser(AssessmentURL, Browser, "", false, false, false, false, false, true);
         }
         
         

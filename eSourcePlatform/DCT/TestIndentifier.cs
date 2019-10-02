@@ -41,7 +41,7 @@ namespace DCT
         /// </summary>
         public TestIndentifier()
         {
-            DCTTestidentifier = "";
+            TestIdentifier = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace DCT
 
 #region Variables
 
-        string _DCTTestidentifier;
+        string _TestIdentifier;
 
         /// <summary>
-        /// Gets or sets the value of variable DCTTestidentifier.
+        /// Gets or sets the value of variable TestIdentifier.
         /// </summary>
-        [TestVariable("1391655f-2ece-49bc-801a-260bed3da80a")]
-        public string DCTTestidentifier
+        [TestVariable("cd5709a5-7d80-4f0b-8981-7c29b0cf054c")]
+        public string TestIdentifier
         {
-            get { return _DCTTestidentifier; }
-            set { _DCTTestidentifier = value; }
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace DCT
 
             Init();
 
-            TestInd(DCTTestidentifier);
+            TestInd(TestIdentifier);
             Delay.Milliseconds(0);
             
         }

@@ -38,7 +38,7 @@ namespace DCT
 
         public void PasswordInput(string Password)
         {
-            if (Host.Local.TryFindSingle<InputTag>("//*[@id='idSIButton9']", out EnterPassword)){
+        	if (Host.Local.TryFindSingle<InputTag>("//*[@id='idSIButton9']", new Duration(1500), out EnterPassword)){
                
                 EnterPassword.Click();
                 EnterPassword.PressKeys(Password);

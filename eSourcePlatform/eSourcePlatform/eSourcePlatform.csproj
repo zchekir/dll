@@ -164,6 +164,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>d2568981-07c7-4be0-901e-46267e79b7ba</id>
     </Content>
+    <Content Include="BatteryBlockConnector.csv">
+      <Link>BatteryBlockConnector.csv</Link>
+      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
+      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>aae3da34-4981-4765-ae6f-060bf0c2fb1c</id>
+    </Content>
     <None Include="eSourcePlatformRepository.rximg">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <DependentUpon>eSourcePlatformRepository.rxrep</DependentUpon>
@@ -175,13 +182,6 @@
       <repoid>1b4df078-48fd-44ad-b314-173b9dd113af</repoid>
       <reporootid>d677fdb9-00e1-4467-9fce-a84c063e8bd0</reporootid>
     </None>
-    <Content Include="RCCCConnector.csv">
-      <Link>RCCCConnector.csv</Link>
-      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
-      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>7f52dace-4d17-42bf-8acc-87634f53e123</id>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="eSourcePlatform.rxtmg">
@@ -197,6 +197,10 @@
     <ProjectReference Include="..\CSP\CSP.csproj">
       <Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
       <Name>CSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DCT\DCT.csproj">
+      <Project>{53F985E8-19FE-46C8-AD1C-531EBD62B9AA}</Project>
+      <Name>DCT</Name>
     </ProjectReference>
     <ProjectReference Include="..\RedCapCloud\RedCapCloud\RedCapCloud.csproj">
       <Project>{739128AA-E017-4B60-8DDA-0EC961E1C746}</Project>

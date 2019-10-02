@@ -251,14 +251,14 @@ namespace engine.Helpers
 			Report.Log(ReportLevel.Info, "Reset Token: " + ResetToken + "Username: " +  TokenKey );
 			
 		}
+		
+		
 		/// <summary>
 		/// This method is for  validating the DCT move 
 		/// </summary>
 		/// 
-		
-		// This method is for getting validating the DCT move 
 		[UserCodeMethod]
-		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string key)
+		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
 			dt.Reset();
 			
@@ -268,16 +268,14 @@ namespace engine.Helpers
                           ,[MoveOrigTestIdentifier]
                           ,[MovePrevTestIdentifier]
                            FROM [UserData].[PRWorkflowInstance]
-                           where MovePrevTestIdentifier = @key";
+                           where MovePrevTestIdentifier = @testIdentifier";
 			
 			
-			
-	
 			//Connecting to SQL DB:
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 			//CreateObject:
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
-			da.SelectCommand.Parameters.AddWithValue("@key", Guid.Parse(key));
+			da.SelectCommand.Parameters.AddWithValue("@testIdentifier", Guid.Parse(testIdentifier));
 			// Get the data from DB
 			using (da)
 			{
@@ -287,9 +285,9 @@ namespace engine.Helpers
 			TestIdentifier  = dt.Rows[0][0].ToString();
 			string MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
 			string MovePrevTestIdentifier = dt.Rows[0][2].ToString();
-			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + TestIdentifier)
-		    Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier)
-			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier)
+			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + TestIdentifier);
+		    Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
+			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier);
 		}
 	}
 	

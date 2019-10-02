@@ -47,6 +47,10 @@ rxversion="8.3">
 					value="https://cgst-qc-orr.azurewebsites.net/">
 					</param>
 					<param
+					name="DCTURL"
+					value="https://cgst-qc-orr-dct.azurewebsites.net">
+					</param>
+					<param
 					name="DevopsPage"
 					value="api/devops">
 					</param>
@@ -80,6 +84,10 @@ rxversion="8.3">
 					</param>
 					<param
 					name="Secret"
+					value="">
+					</param>
+					<param
+					name="ExternalID"
 					value="">
 					</param>
 				</parameters>
@@ -189,6 +197,24 @@ rxversion="8.3">
 			</file>
 		</DataSource>
 		<DataSource
+		id="0223bb73-bdf8-475b-9924-27f470878d7d"
+		includefile="Checked"
+		lastknownrowcount="189"
+		name="BatteryBlockConnector"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					BatteryBlockName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				BatteryBlockConnector.csv
+			</file>
+		</DataSource>
+		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Checked"
 		lastknownrowcount="9"
@@ -277,9 +303,9 @@ rxversion="8.3">
 		</DataSource>
 		<DataSource
 		id="33eaead4-5b16-4310-9379-d36bb39bb9ee"
-		includefile="Checked"
+		includefile="Unchecked"
 		lastknownrowcount="1"
-		name="RCCConector"
+		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
@@ -308,6 +334,9 @@ rxversion="8.3">
 					EventDefName
 				</column>
 				<column>
+					SecondEventDefname
+				</column>
+				<column>
 					CSVConfig
 				</column>
 				<column>
@@ -328,6 +357,12 @@ rxversion="8.3">
 	default="Regression">
 		<testconfiguration
 		name="Regression">
+			<testcontainer
+			id="63a0768d-8632-409b-adbf-fe7850003e81">
+			</testcontainer>
+			<testcontainer
+			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
@@ -336,6 +371,9 @@ rxversion="8.3">
 	<references>
 		<reference>
 			CSP.exe
+		</reference>
+		<reference>
+			DCT.exe
 		</reference>
 		<reference>
 			engine.dll
