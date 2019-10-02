@@ -42,11 +42,11 @@ namespace DCT
         public TestIdentifierDBValidation()
         {
             DBserver = "cgst-qc.database.windows.net";
-            Database = "cgst-orr-api";
+            Database = "";
             Authentication = "Active Directory Password";
-            dbUsername = "";
-            dbPassword = "";
-            TestIdentifier = "";
+            dbUsername = "zchekir@cogstate.com";
+            dbPassword = "Cogstate2014";
+            TestIdentifier = "696e7adf-994a-4f10-920f-caa8cf97e4dc";
         }
 
         /// <summary>

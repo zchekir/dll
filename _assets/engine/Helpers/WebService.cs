@@ -227,6 +227,21 @@ namespace engine.Helpers
 			
 		}
 		
+		//oData:
+		public class odataRespose
+		{
+			
+		public string PersonID {get;set;}
+		
+		public odataRespose()
+		{
+			
+			
+		}
+			
+			
+			
+		}
 		
 	
 		
@@ -248,6 +263,7 @@ namespace engine.Helpers
         public static string Token; 
         public static string Sversion;
         public static string ClientVersion;
+        public static string oDatainfos;
         
         
         /// <summary>-------------------------------------------------------------------------------------------------------------------------
@@ -557,6 +573,39 @@ namespace engine.Helpers
         	string[] splitClientVersion = Sversion.Split('.');
         	ClientVersion = splitClientVersion[0] + "." + splitClientVersion[1] + "." + splitClientVersion[2];
         	Report.Log(ReportLevel.Info, "after"+ ClientVersion);
+        	
+        	
+        }
+        /// <summary>
+        /// Generating OdataReport
+        /// </summary>
+        [UserCodeMethod]
+        public static void oData(string AuthToken)
+        {
+        	
+        	string oDataAPI = "/odata/vwExtractStandardAssessmentDetails?TOP =1";
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+"cgst-qc-orr.azurewebsites.net"+ oDataAPI  );
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.ContentLength=0;
+        	httpRequest.Method = "GET";
+        	httpRequest.Headers.Add("Authorization", AuthToken);
+        	
+        	
+        	//Sending the API call:
+        	
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	odataRespose responseObject = new  odataRespose();
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        	string o_data = sr.ReadToEnd();
+        	responseObject = new JavaScriptSerializer().Deserialize<odataRespose>(o_data);
+        	oDatainfos= responseObject.PersonID;
+        	Report.Log(ReportLevel.Info, oDatainfos);
+        	
+        	
+        	
+        	}
+        	
         	
         	
         }

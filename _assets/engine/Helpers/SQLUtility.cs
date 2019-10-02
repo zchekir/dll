@@ -36,7 +36,7 @@ namespace engine.Helpers
 		/// </summary>
 		public static DataTable dt = new DataTable();
 		public static string ResetToken;
-		public static string TestIdentifier;
+		//public static string N_TestIdentifier;
 		
 		/// <summary>
 		/// This will query the database and store the results of the completed assessment into a datatable. This will use the TestIdentifer
@@ -260,7 +260,10 @@ namespace engine.Helpers
 		[UserCodeMethod]
 		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
+			
+			//do{
 			dt.Reset();
+			
 			
 			// QueryDB
 			string query = @"SELECT 
@@ -276,18 +279,40 @@ namespace engine.Helpers
 			//CreateObject:
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
 			da.SelectCommand.Parameters.AddWithValue("@testIdentifier", Guid.Parse(testIdentifier));
+			
 			// Get the data from DB
-			using (da)
+		
+			
+			 using (da)
+					
 			{
 				da.Fill(dt);
-			}
+				
+			} 
+			       
+			//} while  (  dt.Rows.Count > 1);
 			
-			TestIdentifier  = dt.Rows[0][0].ToString();
+			string  N_TestIdentifier  = dt.Rows[0][0].ToString();
 			string MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
 			string MovePrevTestIdentifier = dt.Rows[0][2].ToString();
-			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + TestIdentifier);
+					
+			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + N_TestIdentifier);
 		    Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier);
+				
+		
+			
+		
+			
+				
+				
+			
+			
+			
+			
+			
+					
+			
 		}
 	}
 	

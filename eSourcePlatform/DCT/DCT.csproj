@@ -244,6 +244,18 @@
       <UserCode>true</UserCode>
       <id>558f2e5b-ac99-47d0-9d42-bdc85ad877b3</id>
     </Compile>
+    <Compile Include="DCTRederectToHTTPS.cs">
+      <BoundTo>0dc0ffde-9324-4c8f-a892-92969a1455c3</BoundTo>
+      <DependentUpon>DCTRederectToHTTPS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c5d3278c-99f5-4f19-bed8-48ece5d8a45a</id>
+    </Compile>
+    <Compile Include="DCTRederectToHTTPS.UserCode.cs">
+      <BoundTo>0dc0ffde-9324-4c8f-a892-92969a1455c3</BoundTo>
+      <DependentUpon>DCTRederectToHTTPS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f172928c-f359-4ea2-82a4-eb693a0aa8df</id>
+    </Compile>
     <Compile Include="DCTRepository.cs">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <DependentUpon>DCTRepository.rxrep</DependentUpon>
@@ -261,6 +273,18 @@
       <DependentUpon>DCT_URL.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>db0592af-fec7-4504-9c1a-556df5870895</id>
+    </Compile>
+    <Compile Include="DCT_URL_VALIDATION.cs">
+      <BoundTo>3c26cd19-a967-4e2e-be6c-ac4361ebbc0d</BoundTo>
+      <DependentUpon>DCT_URL_VALIDATION.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c6dfabd9-4131-464f-a1e9-c5ceabf45e0e</id>
+    </Compile>
+    <Compile Include="DCT_URL_VALIDATION.UserCode.cs">
+      <BoundTo>3c26cd19-a967-4e2e-be6c-ac4361ebbc0d</BoundTo>
+      <DependentUpon>DCT_URL_VALIDATION.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>057d6536-c512-4e7d-8f04-621b7225ccd7</id>
     </Compile>
     <Compile Include="EnterEmail.cs">
       <BoundTo>8e7a7c55-435c-4f39-a999-1882a84141b9</BoundTo>
@@ -447,6 +471,11 @@
       <id>2b7d0c69-f283-44ee-9d70-d9ab512e1982</id>
       <recordtableid>2080a809-44ee-4d9a-b966-a717a2ec56ba</recordtableid>
     </None>
+    <None Include="DCTRederectToHTTPS.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>0dc0ffde-9324-4c8f-a892-92969a1455c3</id>
+      <recordtableid>12fde51f-6680-4824-91b6-f1e17bc3e95a</recordtableid>
+    </None>
     <None Include="DCTRepository.rximg">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <DependentUpon>DCTRepository.rxrep</DependentUpon>
@@ -462,6 +491,11 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>e95a132e-58c8-498a-a8bc-644dfb1159fb</id>
       <recordtableid>5d2ef5fe-273d-43ea-b4d5-a8d2efc9ca23</recordtableid>
+    </None>
+    <None Include="DCT_URL_VALIDATION.rxrec">
+      <id>3c26cd19-a967-4e2e-be6c-ac4361ebbc0d</id>
+      <recordtableid>ec22c345-3300-424b-92c4-004c30a5141c</recordtableid>
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
     </None>
     <None Include="EnterEmail.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
@@ -494,9 +528,9 @@
       <recordtableid>12c9321e-d57b-4f26-abb0-e494f761864b</recordtableid>
     </None>
     <None Include="TestIdentifierDBValidation.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>e48e05dd-4ec3-4fba-9997-aa98f66596b4</id>
       <recordtableid>1e474587-a2e6-4c33-b39d-7673a9867909</recordtableid>
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
     </None>
     <None Include="TestIndentifier.rxrec">
       <id>3f879aee-a619-4789-925f-1687484d4501</id>

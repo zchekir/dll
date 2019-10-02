@@ -108,6 +108,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="10a3edb0-f297-4d97-a47e-24a80519e7d0"
+			name="DCTRederectToHTTPS"
+			ref="12fde51f-6680-4824-91b6-f1e17bc3e95a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="11d6c2ca-a94b-4934-b9e6-825db8ca78ff"
 			name="Add_BatteryComments_CRF"
 			ref="27199e11-4a5f-44c7-aa20-ceb83614cc7d"
@@ -715,6 +721,10 @@ rxversion="8.3">
 			ref="2b680280-c337-4b6c-82b3-57be4e6f45ad"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="4a256c84-131f-44bb-8bbd-86462062e9d1"
+			name="DCT_URL_Validation">
+			</smartfoldernode>
 			<modulegroup
 			id="4b7915fa-c08a-4509-9b6e-6d459b704d14"
 			name="AddStudy"
@@ -1411,6 +1421,12 @@ rxversion="8.3">
 			id="8b079551-b279-491d-b1b9-a55d85f7d73f"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="8b652de9-cb2b-48c5-aa61-a7ef038cee72"
+			name="DCT_URL_VALIDATION"
+			ref="ec22c345-3300-424b-92c4-004c30a5141c"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
 			name="Password"
@@ -2327,6 +2343,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb"
+			name="HTTPSURLVALIDATION">
+			</testcase>
 			<modulegroup
 			id="dc798f28-e629-42bb-9ec9-85f8ff4c847f"
 			name="AddSite"
@@ -3523,6 +3543,22 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
+						<smartfoldernode
+						id="4a256c84-131f-44bb-8bbd-86462062e9d1"
+						name="DCT_URL_Validation">
+							<testcase
+							id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb"
+							name="HTTPSURLVALIDATION">
+								<testmodule
+								id="10a3edb0-f297-4d97-a47e-24a80519e7d0"
+								name="DCTRederectToHTTPS">
+								</testmodule>
+								<testmodule
+								id="8b652de9-cb2b-48c5-aa61-a7ef038cee72"
+								name="DCT_URL_VALIDATION">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -3760,34 +3796,19 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="04939054-fa65-495b-a740-482356616b3b">
-			</testcontainer>
-			<testcontainer
-			id="15ac3f39-47c0-4ae9-bfe8-76638555ed7b">
-			</testcontainer>
-			<testcontainer
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
 			</testcontainer>
 			<testcontainer
-			id="3b5ccf13-84c6-4218-8f3d-9b0dfa5e6d47">
+			id="5928fa9f-67fa-4797-9464-e1bc433125db">
 			</testcontainer>
 			<testcontainer
-			id="5911ef58-8304-43d9-b260-094b16655bd2">
-			</testcontainer>
-			<testcontainer
-			id="5f0f4458-3f1d-4e74-9716-22522793de4b">
-			</testcontainer>
-			<testcontainer
-			id="63ecb58c-f5cd-4a29-b3a1-20a73847b73c">
-			</testcontainer>
-			<testcontainer
-			id="6e3be3f3-089e-4425-afe5-fef03f0bd6e2">
+			id="6e1d7177-9ea0-4818-bcd8-952838e26be0">
 			</testcontainer>
 			<testcontainer
 			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
 			</testcontainer>
 			<testcontainer
-			id="8232ed42-fc87-43ae-87f3-fdbe90bd0698">
+			id="7b1c68e5-99c2-4ce1-b379-025bbc7014ec">
 			</testcontainer>
 			<testcontainer
 			id="853a6bba-9006-4cea-915e-ee1a0a266d20">
@@ -3796,22 +3817,13 @@ rxversion="8.3">
 			id="8701be3b-9559-4502-bc0c-635399be9d4c">
 			</testcontainer>
 			<testcontainer
-			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc">
-			</testcontainer>
-			<testcontainer
-			id="a1d29b24-b861-49ab-a73e-2ec65d5b8c8a">
+			id="872a1fba-6788-4476-bafe-4a2ef040da5a">
 			</testcontainer>
 			<testcontainer
 			id="aa43591e-302d-494e-aafe-3d9e88fb4c8d">
 			</testcontainer>
 			<testcontainer
 			id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec">
-			</testcontainer>
-			<testcontainer
-			id="c2d75985-5199-4bdd-be81-00b092003e2d">
-			</testcontainer>
-			<testcontainer
-			id="cd210b7b-7978-4d3e-aa2a-fcadb2c17ba3">
 			</testcontainer>
 			<testcontainer
 			id="ce514155-4e5f-4393-8f46-81a9e929ea2e">
@@ -3824,6 +3836,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="e6d436ed-0a07-4913-a5f0-3deb7c676360">
+			</testcontainer>
+			<testcontainer
+			id="e95b20e1-0456-43fd-a7be-98bedfd0fa52">
 			</testcontainer>
 			<testcontainer
 			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d">
