@@ -37,7 +37,7 @@ namespace DCT
         //Enter Testidentifier
         public void TestInd(string TestIdn)
         {
-             Delay.Milliseconds(500);
+             Delay.Milliseconds(400);
         	 InputTag EnterTestidentifier = "//input[@id='findByAssessmentId']";
              EnterTestidentifier.Click();
              Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");

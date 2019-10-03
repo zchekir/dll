@@ -17,6 +17,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="020433af-5ef1-42f8-b2e7-9b5d0a7b40ef"
+			name="Restore_Assessment">
+			</smartfoldernode>
 			<testmodule
 			id="024be375-101c-4af6-80a3-1bd99cd6c7db"
 			name="Click_SaveVisitSchedule"
@@ -30,6 +34,12 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="02908d42-6f8e-43c6-9a2d-f04e237f0524"
+			name="Confirm"
+			ref="e67fa75b-7272-4021-979e-8af5bce6efc2"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="042a618d-bbb7-47f3-9eab-db81c322de64"
@@ -61,6 +71,10 @@ rxversion="8.3">
 			ref="e67fa75b-7272-4021-979e-8af5bce6efc2"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="08010772-2a6d-489b-aca2-c618ceb9b0ad"
+			name="OpenRCC">
+			</smartfoldernode>
 			<testmodule
 			id="095a3eaf-ce58-4f6e-84f0-22549a7bafc2"
 			name="ClickMakePrimary"
@@ -102,6 +116,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0e81631a-1559-4f56-a3c3-103e0a22018f"
+			name="Confirm"
+			ref="e67fa75b-7272-4021-979e-8af5bce6efc2"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0f02286d-1a01-421d-ad09-ccef43c4bc43"
 			name="Submit"
 			ref="12c9321e-d57b-4f26-abb0-e494f761864b"
@@ -140,6 +160,12 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1369f0ce-7f5d-4191-9b01-a710616849da"
+			name="ClickInvalidate"
+			ref="60f61c6d-2be8-41b8-afd0-3ad94c33df75"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="13801882-b800-44d4-b7b5-26e7db2e52a9"
@@ -234,6 +260,12 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1d8b9b35-18b1-446d-b9b0-13ab10ab0a32"
+			name="ClickButton"
+			ref="24d3a193-0675-4b16-902e-65d46c5a6669"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="1e357a81-b82d-4b45-9169-3223e2564a45"
@@ -339,7 +371,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="">
+					value="6d9e64ea-33fd-4ade-af44-41e4c7742f92">
 					</param>
 					<param
 					name="Key"
@@ -385,6 +417,12 @@ rxversion="8.3">
 			warnunboundvariables="False">
 			</testcase>
 			<testmodule
+			id="278be921-22d7-437f-b3c6-d2bbb0c9e850"
+			name="ClickRButton"
+			ref="8f670042-56e3-46fe-ac01-db72cef2387c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="285ab814-08e7-47ca-a442-3e6037818990"
 			name="Add_BatteryConfirmation_CRF"
 			ref="300c5970-8a7b-4548-b491-1b87ffc7cd51"
@@ -426,6 +464,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="29f12d45-67e0-45f6-913d-ce4a1ba4c5b6"
+			name="setup">
+			</setup>
 			<testmodule
 			id="2a0d66fc-be33-499e-878c-986253898e5e"
 			name="Click_Publish_Workflow"
@@ -612,6 +654,12 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="3c28413d-1d61-4395-ad1b-67ca8df97be8"
+			name="ClickRButton"
+			ref="8f670042-56e3-46fe-ac01-db72cef2387c"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="3e955dc0-d29e-47a0-88fc-bf85711b6ef7"
@@ -904,6 +952,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="4ef160c6-100b-4749-b636-27092e0d1e6c"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="4f05cfbb-d71d-4abe-bf2b-dd866b0501d5"
 			name="Click_SaveAndExit_Button"
@@ -979,6 +1031,20 @@ rxversion="8.3">
 			showinvisiblechars="True">
 			</testsuite>
 			<testmodule
+			id="5103f70b-0dca-48e4-8510-250355f78a95"
+			name="TestIndentifier"
+			ref="d402610e-47e3-451e-84ef-01a160a71297"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="cd5709a5-7d80-4f0b-8981-7c29b0cf054c"
+					variablename="TestIdentifier">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="53c2469e-5591-4fb6-b4bb-a79c5dcef543"
 			name="Enter_WorkflowType"
 			ref="527dd376-31c5-49e4-9463-32646bd8d166"
@@ -1020,6 +1086,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="58901188-271c-4822-8f92-e8784cdd1036"
+			name="MoveValidationIN_UI">
+			</testcase>
 			<testcase
 			id="5911ef58-8304-43d9-b260-094b16655bd2"
 			name="ClickMoveButton">
@@ -1169,6 +1239,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="6a543fb1-3315-4057-82be-54c1b0b91690"
+			name="InValidateAssessmentFrom_UI">
+			</smartfoldernode>
 			<testmodule
 			id="6dd97b96-a8fa-472e-a2a9-76f2d08216d3"
 			name="TestIndentifier"
@@ -1348,6 +1422,10 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_Site">
 			</testcase>
+			<teardown
+			id="7bb49f91-5f9f-427d-b81b-59d01931187d"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="7ec15c65-3525-40d6-b554-ad73a3129fb5"
 			name="ClickRButton"
@@ -1402,6 +1480,12 @@ rxversion="8.3">
 			id="853a6bba-9006-4cea-915e-ee1a0a266d20"
 			name="Click_SubmitButton">
 			</testcase>
+			<testmodule
+			id="86a56bc5-ce3d-4541-b522-cd28795e7286"
+			name="CloseBrowser"
+			ref="a58a0eda-d3f8-4786-8c9a-2e3884970874"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="8701be3b-9559-4502-bc0c-635399be9d4c"
 			name="Click_NextButton">
@@ -1745,6 +1829,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
+			name="TestIndentifier"
+			ref="d402610e-47e3-451e-84ef-01a160a71297"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="cd5709a5-7d80-4f0b-8981-7c29b0cf054c"
+					variablename="TestIdentifier">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a7f93d12-cf20-456a-a38c-a2a27c8e9eb6"
 			name="Add_CogstateBattery_CRF"
 			ref="21eab725-cd5d-429d-9983-65c9b2115382"
@@ -1889,6 +1987,12 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="af93e4f0-5d03-4804-b229-74b89c267cc5"
+			name="ClickRestoreButton"
+			ref="b51f2390-cb01-4ca0-ac2f-d009a496b014"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="b04f67cd-7add-498f-8c66-7074bad0a5fc"
@@ -2471,6 +2575,12 @@ rxversion="8.3">
 			id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb"
 			name="HTTPSURLVALIDATION">
 			</testcase>
+			<testmodule
+			id="db1beae5-2b25-406d-9ae6-3efd250562c2"
+			name="ClickButton"
+			ref="24d3a193-0675-4b16-902e-65d46c5a6669"
+			type="Recording">
+			</testmodule>
 			<modulegroup
 			id="dc798f28-e629-42bb-9ec9-85f8ff4c847f"
 			name="AddSite"
@@ -2650,6 +2760,10 @@ rxversion="8.3">
 			minrange="0"
 			name="Loginto_DCT">
 			</smartfoldernode>
+			<setup
+			id="e86aec6b-4310-4d36-a0dd-984699f16d63"
+			name="setup">
+			</setup>
 			<testcase
 			id="e95b20e1-0456-43fd-a7be-98bedfd0fa52"
 			name="Verify_Integration_User">
@@ -2690,7 +2804,7 @@ rxversion="8.3">
 			</testmodule>
 			<setup
 			id="ef3a6704-f2a9-4d06-a91c-c9bf3b457b69"
-			name="setup">
+			name="setup1">
 			</setup>
 			<testcase
 			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d"
@@ -2730,6 +2844,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="f2538ff8-354c-4d17-a440-e139d0c0ce65"
+			name="RestoreAssessment">
+			</testcase>
 			<testmodule
 			id="f497776d-cfc4-4004-a02c-bf5bae7c5696"
 			name="Validate_Subject_Added"
@@ -2749,6 +2867,12 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="f6793b4e-5f40-4dc4-9c4c-59f27c9b7db6"
+			name="ConfirmInvalidated"
+			ref="4711457f-830a-4dcc-b010-ddb7cff95882"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="f9aa63ab-c556-43a7-af88-56b0e481e336"
@@ -2911,22 +3035,26 @@ rxversion="8.3">
 					<smartfoldernode
 					id="d4b8534f-2794-473e-9747-934afc8f284d"
 					name="Regression">
-						<setup
-						id="ef3a6704-f2a9-4d06-a91c-c9bf3b457b69"
-						name="setup">
-							<testmodule
-							id="a43eef84-2389-43d8-9403-5cf8ace6039b"
-							name="DateTimeGenerator">
-							</testmodule>
-							<testmodule
-							id="fbd770ae-9664-43f0-a3d0-085ccdb1eedf"
-							name="Open_Browser">
-							</testmodule>
-							<modulegroup
-							id="be15c6c2-c3eb-4a38-b8cf-90f2264a6332"
-							name="Login">
-							</modulegroup>
-						</setup>
+						<smartfoldernode
+						id="08010772-2a6d-489b-aca2-c618ceb9b0ad"
+						name="OpenRCC">
+							<setup
+							id="ef3a6704-f2a9-4d06-a91c-c9bf3b457b69"
+							name="setup1">
+								<testmodule
+								id="a43eef84-2389-43d8-9403-5cf8ace6039b"
+								name="DateTimeGenerator">
+								</testmodule>
+								<testmodule
+								id="fbd770ae-9664-43f0-a3d0-085ccdb1eedf"
+								name="Open_Browser">
+								</testmodule>
+								<modulegroup
+								id="be15c6c2-c3eb-4a38-b8cf-90f2264a6332"
+								name="Login">
+								</modulegroup>
+							</setup>
+						</smartfoldernode>
 						<smartfoldernode
 						id="872a1fba-6788-4476-bafe-4a2ef040da5a"
 						name="Create_Study">
@@ -3608,6 +3736,74 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
+						id="6a543fb1-3315-4057-82be-54c1b0b91690"
+						name="InValidateAssessmentFrom_UI">
+							<testcase
+							id="58901188-271c-4822-8f92-e8784cdd1036"
+							name="MoveValidationIN_UI">
+								<setup
+								id="29f12d45-67e0-45f6-913d-ce4a1ba4c5b6"
+								name="setup">
+									<testmodule
+									id="5103f70b-0dca-48e4-8510-250355f78a95"
+									name="TestIndentifier">
+									</testmodule>
+									<testmodule
+									id="1d8b9b35-18b1-446d-b9b0-13ab10ab0a32"
+									name="ClickButton">
+									</testmodule>
+									<testmodule
+									id="278be921-22d7-437f-b3c6-d2bbb0c9e850"
+									name="ClickRButton">
+									</testmodule>
+									<testmodule
+									id="1369f0ce-7f5d-4191-9b01-a710616849da"
+									name="ClickInvalidate">
+									</testmodule>
+									<testmodule
+									id="02908d42-6f8e-43c6-9a2d-f04e237f0524"
+									name="Confirm">
+									</testmodule>
+									<testmodule
+									id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
+									name="TestIndentifier">
+									</testmodule>
+									<testmodule
+									id="db1beae5-2b25-406d-9ae6-3efd250562c2"
+									name="ClickButton">
+									</testmodule>
+									<testmodule
+									id="f6793b4e-5f40-4dc4-9c4c-59f27c9b7db6"
+									name="ConfirmInvalidated">
+									</testmodule>
+								</setup>
+								<teardown
+								id="7bb49f91-5f9f-427d-b81b-59d01931187d"
+								name="teardown">
+								</teardown>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="020433af-5ef1-42f8-b2e7-9b5d0a7b40ef"
+						name="Restore_Assessment">
+							<testcase
+							id="f2538ff8-354c-4d17-a440-e139d0c0ce65"
+							name="RestoreAssessment">
+								<testmodule
+								id="3c28413d-1d61-4395-ad1b-67ca8df97be8"
+								name="ClickRButton">
+								</testmodule>
+								<testmodule
+								id="af93e4f0-5d03-4804-b229-74b89c267cc5"
+								name="ClickRestoreButton">
+								</testmodule>
+								<testmodule
+								id="0e81631a-1559-4f56-a3c3-103e0a22018f"
+								name="Confirm">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
 						id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec"
 						name="Primary_Key">
 							<testcase
@@ -3716,6 +3912,34 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
+						id="4a256c84-131f-44bb-8bbd-86462062e9d1"
+						name="DCT_URL_Validation">
+							<testcase
+							id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb"
+							name="HTTPSURLVALIDATION">
+								<setup
+								id="e86aec6b-4310-4d36-a0dd-984699f16d63"
+								name="setup">
+									<testmodule
+									id="10a3edb0-f297-4d97-a47e-24a80519e7d0"
+									name="DCTRederectToHTTPS">
+									</testmodule>
+									<testmodule
+									id="8b652de9-cb2b-48c5-aa61-a7ef038cee72"
+									name="DCT_URL_VALIDATION">
+									</testmodule>
+								</setup>
+								<testmodule
+								id="86a56bc5-ce3d-4541-b522-cd28795e7286"
+								name="CloseBrowser">
+								</testmodule>
+								<teardown
+								id="4ef160c6-100b-4749-b636-27092e0d1e6c"
+								name="teardown">
+								</teardown>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
 						id="04939054-fa65-495b-a740-482356616b3b"
 						name="ValidateTheMoveInDB">
 							<testcase
@@ -3724,22 +3948,6 @@ rxversion="8.3">
 								<testmodule
 								id="cae3548e-cb02-4ae7-83c4-6bc57611288a"
 								name="TestIdentifierDBValidation">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="4a256c84-131f-44bb-8bbd-86462062e9d1"
-						name="DCT_URL_Validation">
-							<testcase
-							id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb"
-							name="HTTPSURLVALIDATION">
-								<testmodule
-								id="10a3edb0-f297-4d97-a47e-24a80519e7d0"
-								name="DCTRederectToHTTPS">
-								</testmodule>
-								<testmodule
-								id="8b652de9-cb2b-48c5-aa61-a7ef038cee72"
-								name="DCT_URL_VALIDATION">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -3983,7 +4191,7 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="042a618d-bbb7-47f3-9eab-db81c322de64">
+			id="020433af-5ef1-42f8-b2e7-9b5d0a7b40ef">
 			</testcontainer>
 			<testcontainer
 			id="04939054-fa65-495b-a740-482356616b3b">
@@ -3992,40 +4200,19 @@ rxversion="8.3">
 			id="15ac3f39-47c0-4ae9-bfe8-76638555ed7b">
 			</testcontainer>
 			<testcontainer
-			id="2295694a-1e6a-4a66-9d9f-0862347ee3b6">
-			</testcontainer>
-			<testcontainer
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
-			</testcontainer>
-			<testcontainer
-			id="2761e2eb-de57-49a0-8056-922fbf17efa1">
-			</testcontainer>
-			<testcontainer
-			id="2776a8e3-3d1e-4740-8233-561dee78703b">
-			</testcontainer>
-			<testcontainer
-			id="32bf6346-39d4-4657-b0ec-4f04a9ede731">
-			</testcontainer>
-			<testcontainer
-			id="366e8cf1-08a2-4eb0-9325-fe05644602ba">
 			</testcontainer>
 			<testcontainer
 			id="3b5ccf13-84c6-4218-8f3d-9b0dfa5e6d47">
 			</testcontainer>
 			<testcontainer
-			id="4094cf11-b9b6-4311-b776-52fd1b940dda">
-			</testcontainer>
-			<testcontainer
 			id="4a256c84-131f-44bb-8bbd-86462062e9d1">
 			</testcontainer>
 			<testcontainer
-			id="4f2c658b-eff2-4eb8-b380-cf5a4d04a265">
+			id="58901188-271c-4822-8f92-e8784cdd1036">
 			</testcontainer>
 			<testcontainer
 			id="5911ef58-8304-43d9-b260-094b16655bd2">
-			</testcontainer>
-			<testcontainer
-			id="5928fa9f-67fa-4797-9464-e1bc433125db">
 			</testcontainer>
 			<testcontainer
 			id="5f0f4458-3f1d-4e74-9716-22522793de4b">
@@ -4034,22 +4221,13 @@ rxversion="8.3">
 			id="63ecb58c-f5cd-4a29-b3a1-20a73847b73c">
 			</testcontainer>
 			<testcontainer
-			id="65d270c8-721b-4d7f-be83-df4996dbb657">
-			</testcontainer>
-			<testcontainer
-			id="6e1d7177-9ea0-4818-bcd8-952838e26be0">
+			id="6a543fb1-3315-4057-82be-54c1b0b91690">
 			</testcontainer>
 			<testcontainer
 			id="6e3be3f3-089e-4425-afe5-fef03f0bd6e2">
 			</testcontainer>
 			<testcontainer
-			id="6f71f7af-dbfe-4be5-af23-69cbe2599098">
-			</testcontainer>
-			<testcontainer
 			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
-			</testcontainer>
-			<testcontainer
-			id="7b1c68e5-99c2-4ce1-b379-025bbc7014ec">
 			</testcontainer>
 			<testcontainer
 			id="8232ed42-fc87-43ae-87f3-fdbe90bd0698">
@@ -4061,31 +4239,13 @@ rxversion="8.3">
 			id="8701be3b-9559-4502-bc0c-635399be9d4c">
 			</testcontainer>
 			<testcontainer
-			id="872a1fba-6788-4476-bafe-4a2ef040da5a">
-			</testcontainer>
-			<testcontainer
-			id="9970ce0b-c5eb-46f1-9507-9667934be9cf">
-			</testcontainer>
-			<testcontainer
-			id="9a1f1def-c972-4e8b-a0d1-b7e35b498c0c">
-			</testcontainer>
-			<testcontainer
 			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc">
 			</testcontainer>
 			<testcontainer
 			id="a1d29b24-b861-49ab-a73e-2ec65d5b8c8a">
 			</testcontainer>
 			<testcontainer
-			id="a407e7c6-25fc-48ea-886b-5316a778e6f9">
-			</testcontainer>
-			<testcontainer
-			id="a5752ebc-8f97-4963-935c-86a25d76dacd">
-			</testcontainer>
-			<testcontainer
 			id="aa43591e-302d-494e-aafe-3d9e88fb4c8d">
-			</testcontainer>
-			<testcontainer
-			id="b9cd36f2-35e8-4d6e-b37b-f6332ec99bce">
 			</testcontainer>
 			<testcontainer
 			id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec">
@@ -4106,25 +4266,16 @@ rxversion="8.3">
 			id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb">
 			</testcontainer>
 			<testcontainer
-			id="e17e715f-951b-4191-93ed-07742301db40">
-			</testcontainer>
-			<testcontainer
-			id="e39dca1f-7c83-4483-9224-0587328078d0">
-			</testcontainer>
-			<testcontainer
 			id="e4966f0f-a50b-4f61-bcc3-c2865b6d79d7">
 			</testcontainer>
 			<testcontainer
 			id="e6d436ed-0a07-4913-a5f0-3deb7c676360">
 			</testcontainer>
 			<testcontainer
-			id="e95b20e1-0456-43fd-a7be-98bedfd0fa52">
-			</testcontainer>
-			<testcontainer
 			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d">
 			</testcontainer>
 			<testcontainer
-			id="fc2d24e0-a4c2-4864-afae-af63ffddfea0">
+			id="f2538ff8-354c-4d17-a440-e139d0c0ce65">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

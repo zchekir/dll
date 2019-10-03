@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT
 {
-    public partial class DCT_URL
+    public partial class ClickInvalidate
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,10 +33,12 @@ namespace DCT
             // Your recording specific initialization code goes here.
         }
 
-        public void DCTLogin(string URL, string Browser)
+        public void Invalidate()
         {
-            Host.Current.OpenBrowser(URL,Browser);
-          
+            //Click Button:
+        	  Delay.Milliseconds (600);
+        	  WebElement ClickInvalidate ="//span[@innertext='invalidate']";
+        	  ClickInvalidate.Click();
         }
 
     }

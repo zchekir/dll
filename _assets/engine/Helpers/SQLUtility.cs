@@ -258,10 +258,12 @@ namespace engine.Helpers
 		/// </summary>
 		/// 
 		[UserCodeMethod]
+		
 		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
+		 
 			
-			//do{
+			
 			dt.Reset();
 			
 			
@@ -282,15 +284,19 @@ namespace engine.Helpers
 			
 			// Get the data from DB
 		
-			
+				
+				Delay.Duration(30000);
 			 using (da)
 					
 			{
 				da.Fill(dt);
 				
-			} 
-			       
-			//} while  (  dt.Rows.Count > 1);
+			 }
+
+		    
+		    
+			
+	
 			
 			string  N_TestIdentifier  = dt.Rows[0][0].ToString();
 			string MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
@@ -299,19 +305,10 @@ namespace engine.Helpers
 			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + N_TestIdentifier);
 		    Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier);
-				
+			Report.Log(ReportLevel.Info, " zien is the bosss");
 		
-			
 		
-			
-				
-				
-			
-			
-			
-			
-			
-					
+		
 			
 		}
 	}
