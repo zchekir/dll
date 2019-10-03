@@ -35,7 +35,7 @@ namespace DCT
 
         public void ClickConfirm()
         {
-             Delay.Milliseconds(500);
+             Delay.Milliseconds(300);
         	  WebElement ClickConfirm ="//span[@innertext='confirm']";
         	  ClickConfirm .Click();
         }

@@ -24,22 +24,22 @@ namespace DCT
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The TestIndentifier recording.
+    ///The Test_Identifier recording.
     /// </summary>
     [TestModule("d402610e-47e3-451e-84ef-01a160a71297", ModuleType.Recording, 1)]
-    public partial class TestIndentifier : ITestModule
+    public partial class Test_Identifier : ITestModule
     {
         /// <summary>
         /// Holds an instance of the DCTRepository repository.
         /// </summary>
         public static DCTRepository repo = DCTRepository.Instance;
 
-        static TestIndentifier instance = new TestIndentifier();
+        static Test_Identifier instance = new Test_Identifier();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public TestIndentifier()
+        public Test_Identifier()
         {
             TestIdentifier = "";
         }
@@ -47,7 +47,7 @@ namespace DCT
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static TestIndentifier Instance
+        public static Test_Identifier Instance
         {
             get { return instance; }
         }

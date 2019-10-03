@@ -36,7 +36,7 @@ namespace DCT
         public void MoveButton()
         {
             //clcikmovebutton
-               Delay.Milliseconds(1000);        	   
+               Delay.Milliseconds(500);        	   
         	   WebElement Clickmovebutton = "//span[@innertext='move']";
         	   Clickmovebutton .Click();
         }

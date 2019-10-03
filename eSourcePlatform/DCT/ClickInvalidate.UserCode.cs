@@ -36,7 +36,7 @@ namespace DCT
         public void Invalidate()
         {
             //Click Button:
-        	  Delay.Milliseconds (600);
+        	  Delay.Milliseconds (400);
         	  WebElement ClickInvalidate ="//span[@innertext='invalidate']";
         	  ClickInvalidate.Click();
         }

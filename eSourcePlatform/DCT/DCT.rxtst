@@ -41,6 +41,10 @@ rxversion="8.3">
 			ref="e67fa75b-7272-4021-979e-8af5bce6efc2"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="03bfb2e4-3970-425a-b58b-2e242280ce8a"
+			name="setup">
+			</setup>
 			<testcase
 			id="042a618d-bbb7-47f3-9eab-db81c322de64"
 			maxrange="0"
@@ -281,6 +285,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="1f22e0ec-4484-4e5e-a534-6fbc3f36e845"
+			name="setup">
+			</setup>
 			<testmodule
 			id="21b99462-f26a-4151-8b3a-4ee9aa72c2c6"
 			name="ValidatePrimarySetYES"
@@ -371,7 +379,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="6d9e64ea-33fd-4ade-af44-41e4c7742f92">
+					value="fb6344ae-1a25-49eb-8b74-2a1c6eb97735">
 					</param>
 					<param
 					name="Key"
@@ -765,7 +773,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="47b3db9d-24d7-4100-ab08-c6ddd249f14a"
-			name="TestIndentifier"
+			name="Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -817,6 +825,10 @@ rxversion="8.3">
 			ref="2b680280-c337-4b6c-82b3-57be4e6f45ad"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="4985cbfb-9132-4e0b-bcae-a526c956e8c6"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="4a256c84-131f-44bb-8bbd-86462062e9d1"
 			name="DCT_URL_Validation">
@@ -1032,7 +1044,7 @@ rxversion="8.3">
 			</testsuite>
 			<testmodule
 			id="5103f70b-0dca-48e4-8510-250355f78a95"
-			name="TestIndentifier"
+			name="Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -1245,7 +1257,7 @@ rxversion="8.3">
 			</smartfoldernode>
 			<testmodule
 			id="6dd97b96-a8fa-472e-a2a9-76f2d08216d3"
-			name="TestIndentifier"
+			name="Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -1824,7 +1836,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
-			name="TestIndentifier"
+			name="Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -2758,6 +2770,10 @@ rxversion="8.3">
 			id="e86aec6b-4310-4d36-a0dd-984699f16d63"
 			name="setup">
 			</setup>
+			<teardown
+			id="e92e3542-ce70-4b5d-bbe2-b65c77456b06"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="e95b20e1-0456-43fd-a7be-98bedfd0fa52"
 			name="Verify_Integration_User">
@@ -3740,7 +3756,7 @@ rxversion="8.3">
 								name="setup">
 									<testmodule
 									id="5103f70b-0dca-48e4-8510-250355f78a95"
-									name="TestIndentifier">
+									name="Test_Identifier">
 									</testmodule>
 									<testmodule
 									id="1d8b9b35-18b1-446d-b9b0-13ab10ab0a32"
@@ -3760,7 +3776,7 @@ rxversion="8.3">
 									</testmodule>
 									<testmodule
 									id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
-									name="TestIndentifier">
+									name="Test_Identifier">
 									</testmodule>
 									<testmodule
 									id="db1beae5-2b25-406d-9ae6-3efd250562c2"
@@ -3803,26 +3819,34 @@ rxversion="8.3">
 							<testcase
 							id="ce514155-4e5f-4393-8f46-81a9e929ea2e"
 							name="Primary">
-								<testmodule
-								id="6dd97b96-a8fa-472e-a2a9-76f2d08216d3"
-								name="TestIndentifier">
-								</testmodule>
-								<testmodule
-								id="b6323154-befa-4d17-af54-221e47fdc70f"
-								name="ClickButton">
-								</testmodule>
-								<testmodule
-								id="74d4691f-de70-4aed-915a-280ef98aeef0"
-								name="ClickRButton">
-								</testmodule>
-								<testmodule
-								id="095a3eaf-ce58-4f6e-84f0-22549a7bafc2"
-								name="ClickMakePrimary">
-								</testmodule>
-								<testmodule
-								id="060f0afb-2dac-4993-bb5b-0ce2f49d6374"
-								name="Confirm">
-								</testmodule>
+								<setup
+								id="03bfb2e4-3970-425a-b58b-2e242280ce8a"
+								name="setup">
+									<testmodule
+									id="6dd97b96-a8fa-472e-a2a9-76f2d08216d3"
+									name="Test_Identifier">
+									</testmodule>
+									<testmodule
+									id="b6323154-befa-4d17-af54-221e47fdc70f"
+									name="ClickButton">
+									</testmodule>
+									<testmodule
+									id="74d4691f-de70-4aed-915a-280ef98aeef0"
+									name="ClickRButton">
+									</testmodule>
+									<testmodule
+									id="095a3eaf-ce58-4f6e-84f0-22549a7bafc2"
+									name="ClickMakePrimary">
+									</testmodule>
+									<testmodule
+									id="060f0afb-2dac-4993-bb5b-0ce2f49d6374"
+									name="Confirm">
+									</testmodule>
+								</setup>
+								<teardown
+								id="4985cbfb-9132-4e0b-bcae-a526c956e8c6"
+								name="teardown">
+								</teardown>
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
@@ -3831,18 +3855,26 @@ rxversion="8.3">
 							<testcase
 							id="cd210b7b-7978-4d3e-aa2a-fcadb2c17ba3"
 							name="Validate_Primary">
-								<testmodule
-								id="47b3db9d-24d7-4100-ab08-c6ddd249f14a"
-								name="TestIndentifier">
-								</testmodule>
-								<testmodule
-								id="ee2e5388-6c15-4722-a561-b41a2e7974ba"
-								name="ClickButton">
-								</testmodule>
-								<testmodule
-								id="21b99462-f26a-4151-8b3a-4ee9aa72c2c6"
-								name="ValidatePrimarySetYES">
-								</testmodule>
+								<setup
+								id="1f22e0ec-4484-4e5e-a534-6fbc3f36e845"
+								name="setup">
+									<testmodule
+									id="47b3db9d-24d7-4100-ab08-c6ddd249f14a"
+									name="Test_Identifier">
+									</testmodule>
+									<testmodule
+									id="ee2e5388-6c15-4722-a561-b41a2e7974ba"
+									name="ClickButton">
+									</testmodule>
+									<testmodule
+									id="21b99462-f26a-4151-8b3a-4ee9aa72c2c6"
+									name="ValidatePrimarySetYES">
+									</testmodule>
+								</setup>
+								<teardown
+								id="e92e3542-ce70-4b5d-bbe2-b65c77456b06"
+								name="teardown">
+								</teardown>
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
@@ -4180,6 +4212,93 @@ rxversion="8.3">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="020433af-5ef1-42f8-b2e7-9b5d0a7b40ef">
+			</testcontainer>
+			<testcontainer
+			id="04939054-fa65-495b-a740-482356616b3b">
+			</testcontainer>
+			<testcontainer
+			id="15ac3f39-47c0-4ae9-bfe8-76638555ed7b">
+			</testcontainer>
+			<testcontainer
+			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
+			</testcontainer>
+			<testcontainer
+			id="3b5ccf13-84c6-4218-8f3d-9b0dfa5e6d47">
+			</testcontainer>
+			<testcontainer
+			id="4a256c84-131f-44bb-8bbd-86462062e9d1">
+			</testcontainer>
+			<testcontainer
+			id="58901188-271c-4822-8f92-e8784cdd1036">
+			</testcontainer>
+			<testcontainer
+			id="5911ef58-8304-43d9-b260-094b16655bd2">
+			</testcontainer>
+			<testcontainer
+			id="5f0f4458-3f1d-4e74-9716-22522793de4b">
+			</testcontainer>
+			<testcontainer
+			id="63ecb58c-f5cd-4a29-b3a1-20a73847b73c">
+			</testcontainer>
+			<testcontainer
+			id="6a543fb1-3315-4057-82be-54c1b0b91690">
+			</testcontainer>
+			<testcontainer
+			id="6e3be3f3-089e-4425-afe5-fef03f0bd6e2">
+			</testcontainer>
+			<testcontainer
+			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
+			</testcontainer>
+			<testcontainer
+			id="8232ed42-fc87-43ae-87f3-fdbe90bd0698">
+			</testcontainer>
+			<testcontainer
+			id="853a6bba-9006-4cea-915e-ee1a0a266d20">
+			</testcontainer>
+			<testcontainer
+			id="8701be3b-9559-4502-bc0c-635399be9d4c">
+			</testcontainer>
+			<testcontainer
+			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc">
+			</testcontainer>
+			<testcontainer
+			id="a1d29b24-b861-49ab-a73e-2ec65d5b8c8a">
+			</testcontainer>
+			<testcontainer
+			id="aa43591e-302d-494e-aafe-3d9e88fb4c8d">
+			</testcontainer>
+			<testcontainer
+			id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec">
+			</testcontainer>
+			<testcontainer
+			id="c2d75985-5199-4bdd-be81-00b092003e2d">
+			</testcontainer>
+			<testcontainer
+			id="cd210b7b-7978-4d3e-aa2a-fcadb2c17ba3">
+			</testcontainer>
+			<testcontainer
+			id="ce514155-4e5f-4393-8f46-81a9e929ea2e">
+			</testcontainer>
+			<testcontainer
+			id="d4b8534f-2794-473e-9747-934afc8f284d">
+			</testcontainer>
+			<testcontainer
+			id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb">
+			</testcontainer>
+			<testcontainer
+			id="e4966f0f-a50b-4f61-bcc3-c2865b6d79d7">
+			</testcontainer>
+			<testcontainer
+			id="e6d436ed-0a07-4913-a5f0-3deb7c676360">
+			</testcontainer>
+			<testcontainer
+			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d">
+			</testcontainer>
+			<testcontainer
+			id="f2538ff8-354c-4d17-a440-e139d0c0ce65">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

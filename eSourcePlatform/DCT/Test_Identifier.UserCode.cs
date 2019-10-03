@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT
 {
-    public partial class TestIndentifier
+    public partial class Test_Identifier
     	
     {
         /// <summary>
@@ -37,7 +37,7 @@ namespace DCT
         //Enter Testidentifier
         public void TestInd(string TestIdn)
         {
-             Delay.Milliseconds(400);
+             Delay.Milliseconds(300);
         	 InputTag EnterTestidentifier = "//input[@id='findByAssessmentId']";
              EnterTestidentifier.Click();
              Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");

@@ -36,7 +36,7 @@ namespace DCT
         public void Visit(string Visit)
         {
             //Entervisitwhere to move it to:
-        	  Delay.Milliseconds(500);
+        	  Delay.Milliseconds(300);
         	  InputTag EnterVisit=" //*[@id='react-select-6-input']";
               EnterVisit.Click();
         	  EnterVisit.PressKeys(Visit);

@@ -36,7 +36,7 @@ namespace DCT
 //ClickOK Button
         public void Click_OK()
         {
-               Delay.Milliseconds(500);
+               Delay.Milliseconds(300);
         	   WebElement ClicOK ="//span[@innertext='ok']";
         	   ClicOK.Click();
         }

@@ -36,7 +36,7 @@ namespace DCT
         public void SubJect(string Subj)
         {
             //Enter subject where to move it to:
-        	  Delay.Milliseconds(500);
+        	  Delay.Milliseconds(300);
         	  InputTag EnterSubject="//*[@id='react-select-5-input']";
               EnterSubject.Click();
         	  EnterSubject.PressKeys(Subj);
