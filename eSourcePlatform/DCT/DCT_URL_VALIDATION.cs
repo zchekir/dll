@@ -41,7 +41,7 @@ namespace DCT
         /// </summary>
         public DCT_URL_VALIDATION()
         {
-            DCT_URL = "https//:cgst-qc-orr-dct.azurewebsites.net/";
+            DCTURL = "https//:cgst-qc-orr-dct.azurewebsites.net/";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace DCT
 
 #region Variables
 
-        string _DCT_URL;
+        string _DCTURL;
 
         /// <summary>
-        /// Gets or sets the value of variable DCT_URL.
+        /// Gets or sets the value of variable DCTURL.
         /// </summary>
         [TestVariable("df63d2cc-f9ef-4cc6-8433-d6d5f54102d0")]
-        public string DCT_URL
+        public string DCTURL
         {
-            get { return _DCT_URL; }
-            set { _DCT_URL = value; }
+            get { return _DCTURL; }
+            set { _DCTURL = value; }
         }
 
 #endregion
@@ -96,8 +96,8 @@ namespace DCT
             repo.DataCleaningTool.Self.WaitForDocumentLoaded();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotContains (PageUrl!>$DCT_URL) on item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(1));
-            Validate.AttributeNotContains(repo.DataCleaningTool.SelfInfo, "PageUrl", DCT_URL);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotContains (PageUrl!>$DCTURL) on item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(1));
+            Validate.AttributeNotContains(repo.DataCleaningTool.SelfInfo, "PageUrl", DCTURL);
             Delay.Milliseconds(0);
             
         }
