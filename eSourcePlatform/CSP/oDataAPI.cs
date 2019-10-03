@@ -43,7 +43,7 @@ namespace CSP
         {
             CSPDOM = "cgst-qc-orr.azurewebsites.net";
             ProtocolNumber = "";
-            token = "vkLvBuXN_qeegf6lwZuFU51mvuX0KPDPb6CY9zHZrnj8-IwOLi9ASY2gvhvIC7sZ";
+            token = "bIKSv9W2XerfKckVPMexzEfR42euEhqgZOXehV4gEVsqjR8mVeoy6xuR_XxMj0As";
             RandNum = "";
             Key = "";
         }
