@@ -3012,6 +3012,7 @@ namespace CSP
             RepoItemInfo _visitscheduleworkflowoptionInfo;
             RepoItemInfo _visitschedulevisitstatusdropdownInfo;
             RepoItemInfo _visitschedulevisitsessioncodeInfo;
+            RepoItemInfo _rcceventdefinitionvisitInfo;
             RepoItemInfo _visit1Info;
             RepoItemInfo _visitschedulenameminlengthvalidationInfo;
             RepoItemInfo _visitsessionidfieldInfo;
@@ -3035,6 +3036,7 @@ namespace CSP
                 _visitscheduleworkflowoptionInfo = new RepoItemInfo(this, "VisitScheduleWorkflowOption", ".//select[@id~'formly_[0-9]+_select_workflow_2']/option[@label=$WorkflowName+$RandNum]", 30000, null, "11da81c6-d578-4ca8-af3d-66941ab38802");
                 _visitschedulevisitstatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleVisitStatusDropdown", ".//select[@id~'formly_[0-9]+_select_visitStatus_3']", 30000, null, "d7fb7df4-d20f-46a6-a2a7-ad66754684be");
                 _visitschedulevisitsessioncodeInfo = new RepoItemInfo(this, "VisitScheduleVisitSessionCode", ".//input[@id~'formly_[0-9]+_input_code_4']", 30000, null, "c2f213dd-9ca4-4fd3-862d-cb9066680ed4");
+                _rcceventdefinitionvisitInfo = new RepoItemInfo(this, "RCCEventDefinitionVisit", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='RCCEventDefinitions']", 30000, null, "be5b3f27-cfbc-4a0d-a8d2-b4c9df577a78");
                 _visit1Info = new RepoItemInfo(this, "Visit1", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='Visit 1']", 30000, null, "6d4d528a-8639-493c-866c-405f383143ae");
                 _visitschedulenameminlengthvalidationInfo = new RepoItemInfo(this, "VisitScheduleNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
                 _visitsessionidfieldInfo = new RepoItemInfo(this, "VisitSessionIDField", ".//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']", 30000, null, "fab623de-d4cc-4b0f-ba8a-762fa57e6154");
@@ -3339,6 +3341,30 @@ namespace CSP
                 get
                 {
                     return _visitschedulevisitsessioncodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RCCEventDefinitionVisit item.
+            /// </summary>
+            [RepositoryItem("be5b3f27-cfbc-4a0d-a8d2-b4c9df577a78")]
+            public virtual Ranorex.H4Tag RCCEventDefinitionVisit
+            {
+                get
+                {
+                    return _rcceventdefinitionvisitInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RCCEventDefinitionVisit item info.
+            /// </summary>
+            [RepositoryItemInfo("be5b3f27-cfbc-4a0d-a8d2-b4c9df577a78")]
+            public virtual RepoItemInfo RCCEventDefinitionVisitInfo
+            {
+                get
+                {
+                    return _rcceventdefinitionvisitInfo;
                 }
             }
 
@@ -5347,7 +5373,7 @@ namespace CSP
                 _visitscheduletitleInfo = new RepoItemInfo(this, "VisitScheduleTitle", ".//p[@innertext~$VisitScheduleName+$RandNum]", 30000, null, "68fde448-2ac4-4d9a-a924-cb31763f768b");
                 _workflowtitleInfo = new RepoItemInfo(this, "WorkflowTitle", ".//p[@innertext~$WorkflowName+$RandNum]", 30000, null, "492d690a-ab43-4639-8890-7f3917a948ff");
                 _studycardtitleInfo = new RepoItemInfo(this, "StudyCardTitle", ".//p[@innertext~$ProjectName+$RandNum]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
-                _rcceventdefinitionsInfo = new RepoItemInfo(this, "RCCEventDefinitions", ".//p[@innertext='RCCEventDefinitions']", 30000, null, "0acc40e9-f3ad-4a15-910a-798d3be303e6");
+                _rcceventdefinitionsInfo = new RepoItemInfo(this, "RCCEventDefinitions", ".//p[@innertext~'Visit Schedule']", 30000, null, "0acc40e9-f3ad-4a15-910a-798d3be303e6");
             }
 
             /// <summary>
@@ -6047,6 +6073,7 @@ namespace CSP
             RepoItemInfo _batterytemplatebreadcrumbInfo;
             RepoItemInfo _batterytemplatenamebreadcrumbInfo;
             RepoItemInfo _batteryconfigreportbreadcrumbInfo;
+            RepoItemInfo _visitschedule1breadcrumbInfo;
 
             /// <summary>
             /// Creates a new Breadcrumbs  folder.
@@ -6066,6 +6093,7 @@ namespace CSP
                 _batterytemplatebreadcrumbInfo = new RepoItemInfo(this, "BatteryTemplateBreadcrumb", ".//span[@innertext='Battery Template Builder']", 30000, null, "faec4709-64f8-4408-a19a-8be5e93f98a7");
                 _batterytemplatenamebreadcrumbInfo = new RepoItemInfo(this, "BatteryTemplateNameBreadcrumb", ".//tag[2]//span[@innertext>$BatteryTemplateName]", 30000, null, "1e05ab6c-788f-4ca3-a140-edbc1f782a96");
                 _batteryconfigreportbreadcrumbInfo = new RepoItemInfo(this, "BatteryConfigReportBreadcrumb", ".//span[@innertext='Battery Config Report > Reports']", 30000, null, "2b112b48-8961-4165-9e33-92299b82b5ea");
+                _visitschedule1breadcrumbInfo = new RepoItemInfo(this, "VisitSchedule1Breadcrumb", ".//span[@innertext='Visit Schedule 1']", 30000, null, "39644cbc-8cf7-4bee-a3e2-18c05b0a57fa");
             }
 
             /// <summary>
@@ -6377,6 +6405,30 @@ namespace CSP
                 get
                 {
                     return _batteryconfigreportbreadcrumbInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VisitSchedule1Breadcrumb item.
+            /// </summary>
+            [RepositoryItem("39644cbc-8cf7-4bee-a3e2-18c05b0a57fa")]
+            public virtual Ranorex.SpanTag VisitSchedule1Breadcrumb
+            {
+                get
+                {
+                    return _visitschedule1breadcrumbInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VisitSchedule1Breadcrumb item info.
+            /// </summary>
+            [RepositoryItemInfo("39644cbc-8cf7-4bee-a3e2-18c05b0a57fa")]
+            public virtual RepoItemInfo VisitSchedule1BreadcrumbInfo
+            {
+                get
+                {
+                    return _visitschedule1breadcrumbInfo;
                 }
             }
         }
