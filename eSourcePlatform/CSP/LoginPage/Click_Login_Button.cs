@@ -89,8 +89,8 @@ namespace CSP.LoginPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'State' to equal the specified value 'complete'. Associated repository item: 'CogstateSolutionPlatform'", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SelfInfo.WaitForAttributeEqual(5000, "State", "complete");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 15s for the attribute 'State' to equal the specified value 'complete'. Associated repository item: 'CogstateSolutionPlatform'", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.SelfInfo.WaitForAttributeEqual(15000, "State", "complete");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.LoginForm.LoginButton' at Center.", repo.CogstateSolutionPlatform.LoginForm.LoginButtonInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.LoginForm.LoginButton.Click(1);

@@ -63,6 +63,16 @@ namespace RedCapCloud.SubjectsPage
             set { repo.DOM = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable EventDefName.
+        /// </summary>
+        [TestVariable("11da9ff3-46e5-4db0-8f94-1b1b60cecde6")]
+        public string EventDefName
+        {
+            get { return repo.EventDefName; }
+            set { repo.EventDefName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -93,8 +103,8 @@ namespace RedCapCloud.SubjectsPage
             repo.REDCapCloud.SubjectsPage.EventNameDropdown.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.Visit1' at Center.", repo.REDCapCloud.SubjectsPage.Visit1Info, new RecordItemIndex(1));
-            repo.REDCapCloud.SubjectsPage.Visit1.Click(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.VisitDropdownOption' at Center.", repo.REDCapCloud.SubjectsPage.VisitDropdownOptionInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.SubjectsPage.VisitDropdownOption.Click(100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SaveAndExit' at Center.", repo.REDCapCloud.SaveAndExitInfo, new RecordItemIndex(2));

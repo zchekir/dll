@@ -63,16 +63,6 @@ namespace CSP.AddVisitSchedulePage
             set { repo.CSPDOM = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable VisitScheduleName.
-        /// </summary>
-        [TestVariable("f21fe27d-9d06-425a-ac88-1991573cee47")]
-        public string VisitScheduleName
-        {
-            get { return repo.VisitScheduleName; }
-            set { repo.VisitScheduleName = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -99,7 +89,7 @@ namespace CSP.AddVisitSchedulePage
 
             Init();
 
-            Mouse_Click_Visit1(repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1Info);
+            Mouse_Click_Visit1(repo.CogstateSolutionPlatform.AddVisitSchedulePage.RCCEventDefinitionVisitInfo);
             Delay.Milliseconds(0);
             
         }

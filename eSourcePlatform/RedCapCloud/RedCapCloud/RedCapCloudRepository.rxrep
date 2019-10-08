@@ -657,10 +657,10 @@ rxversion="8.3">
 				addcaps="unknown,webelement,atag"
 				capname="atag"
 				id="b878405e-091b-4eac-bcf8-f0f6f5466632"
-				name="Visit1"
+				name="VisitDropdownOption"
 				refimgid="dad293c5-7fd7-4c01-bf4c-2d453dbcc830"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//li/a[@innertext='Visit 1']
+					/dom[@domain=$DOM]//li/a[@innertext=$EventDefName]
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -679,7 +679,7 @@ rxversion="8.3">
 				name="FirstVisit"
 				refimgid="29658ffa-ac2f-4fcf-a609-b7132d995284"
 				searchtimeout="240000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']//table//div[@innertext='Visit 1']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//table//div[@innertext=$EventDefName]
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -724,7 +724,7 @@ rxversion="8.3">
 				name="TestWasSuccessfullyTransmitted"
 				refimgid="3e62dfc4-bfe7-47cf-ae92-b5c6745d0373"
 				searchtimeout="30000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']//?/?/font[@innertext~'Test Was Successfully Transmitted']
+					/dom[@domain=$DOM]//div[#'gwtWrapper']//?/?/font[@innertext='Test Was Successfully Transmitted']
 				</item>
 				<item
 				addcaps="unknown,webelement,ultag"

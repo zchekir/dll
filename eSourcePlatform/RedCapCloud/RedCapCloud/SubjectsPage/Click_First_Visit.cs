@@ -63,6 +63,16 @@ namespace RedCapCloud.SubjectsPage
             set { repo.DOM = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable EventDefName.
+        /// </summary>
+        [TestVariable("11da9ff3-46e5-4db0-8f94-1b1b60cecde6")]
+        public string EventDefName
+        {
+            get { return repo.EventDefName; }
+            set { repo.EventDefName = value; }
+        }
+
 #endregion
 
         /// <summary>

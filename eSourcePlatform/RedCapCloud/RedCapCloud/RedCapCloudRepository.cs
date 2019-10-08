@@ -2418,7 +2418,7 @@ namespace RedCapCloud
             RepoItemInfo _subjectdetailInfo;
             RepoItemInfo _addeventbuttonInfo;
             RepoItemInfo _eventnamedropdownInfo;
-            RepoItemInfo _visit1Info;
+            RepoItemInfo _visitdropdownoptionInfo;
             RepoItemInfo _addeventsaveexitbuttonInfo;
             RepoItemInfo _firstvisitInfo;
             RepoItemInfo _confirmdobfieldInfo;
@@ -2449,14 +2449,14 @@ namespace RedCapCloud
                 _subjectdetailInfo = new RepoItemInfo(this, "SubjectDetail", ".//div[#'gwtWrapper']//tbody//div[@innertext>'Subject Detail:']", 30000, null, "a115e54f-00d5-4722-a307-32b1c9389e2b");
                 _addeventbuttonInfo = new RepoItemInfo(this, "AddEventButton", ".//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']", 30000, null, "a78ed43b-5335-4118-ba47-3d3d39007510");
                 _eventnamedropdownInfo = new RepoItemInfo(this, "EventNameDropdown", ".//button[#'addEventDialogWidget_eventName_button']", 30000, null, "6b7c4f08-fd4b-4316-9894-7a845b096b59");
-                _visit1Info = new RepoItemInfo(this, "Visit1", ".//li/a[@innertext='Visit 1']", 30000, null, "b878405e-091b-4eac-bcf8-f0f6f5466632");
+                _visitdropdownoptionInfo = new RepoItemInfo(this, "VisitDropdownOption", ".//li/a[@innertext=$EventDefName]", 30000, null, "b878405e-091b-4eac-bcf8-f0f6f5466632");
                 _addeventsaveexitbuttonInfo = new RepoItemInfo(this, "AddEventSaveExitButton", ".//button[#'subjectEvent_addEvent_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "fef1e296-87b4-4f4f-981b-2c7ccb3f8ecc");
-                _firstvisitInfo = new RepoItemInfo(this, "FirstVisit", ".//div[#'gwtWrapper']//table//div[@innertext='Visit 1']", 240000, null, "e02de142-531f-4011-8bbe-814eb3205d56");
+                _firstvisitInfo = new RepoItemInfo(this, "FirstVisit", ".//div[#'gwtWrapper']//table//div[@innertext=$EventDefName]", 240000, null, "e02de142-531f-4011-8bbe-814eb3205d56");
                 _confirmdobfieldInfo = new RepoItemInfo(this, "ConfirmDOBField", ".//div[#'gwtWrapper']//table/tbody/tr/td[1]/input[@type='text']", 30000, null, "ffccdfe4-44df-41d3-9ada-4b93692cadee");
                 _beginassessmentbuttonInfo = new RepoItemInfo(this, "BeginAssessmentButton", ".//div[#'gwtWrapper']//span[@innertext='Begin Assessment']", 30000, null, "9392e009-e70d-4ceb-aa88-0f694bb37641");
                 _dataconfirmationcrfInfo = new RepoItemInfo(this, "DataConfirmationCRF", ".//div[@id<'cogstateBatteryDataConfirmation']", 30000, null, "d9b364c3-4d5d-4c1e-8c60-c712bd9fea82");
                 _cbbcrfInfo = new RepoItemInfo(this, "CBBCRF", ".//div[@id<'cogstateBatteryCRF-CBB']", 30000, null, "46cd2424-7930-4ab1-ac72-aa31e02e3644");
-                _testwassuccessfullytransmittedInfo = new RepoItemInfo(this, "TestWasSuccessfullyTransmitted", ".//div[#'gwtWrapper']//?/?/font[@innertext~'Test Was Successfully Transmitted']", 30000, null, "6819e2a1-e800-4dd4-b4d3-a809a456668f");
+                _testwassuccessfullytransmittedInfo = new RepoItemInfo(this, "TestWasSuccessfullyTransmitted", ".//div[#'gwtWrapper']//?/?/font[@innertext='Test Was Successfully Transmitted']", 30000, null, "6819e2a1-e800-4dd4-b4d3-a809a456668f");
                 _crftabsInfo = new RepoItemInfo(this, "CRFTabs", ".//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']", 30000, null, "8604c299-a22b-4dae-b410-9670b9e6fdbc");
             }
 
@@ -2833,26 +2833,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The Visit1 item.
+            /// The VisitDropdownOption item.
             /// </summary>
             [RepositoryItem("b878405e-091b-4eac-bcf8-f0f6f5466632")]
-            public virtual Ranorex.ATag Visit1
+            public virtual Ranorex.ATag VisitDropdownOption
             {
                 get
                 {
-                    return _visit1Info.CreateAdapter<Ranorex.ATag>(true);
+                    return _visitdropdownoptionInfo.CreateAdapter<Ranorex.ATag>(true);
                 }
             }
 
             /// <summary>
-            /// The Visit1 item info.
+            /// The VisitDropdownOption item info.
             /// </summary>
             [RepositoryItemInfo("b878405e-091b-4eac-bcf8-f0f6f5466632")]
-            public virtual RepoItemInfo Visit1Info
+            public virtual RepoItemInfo VisitDropdownOptionInfo
             {
                 get
                 {
-                    return _visit1Info;
+                    return _visitdropdownoptionInfo;
                 }
             }
 

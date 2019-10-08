@@ -868,6 +868,15 @@ rxversion="8.3">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="h4tag"
+				id="be5b3f27-cfbc-4a0d-a8d2-b4c9df577a78"
+				name="RCCEventDefinitionVisit"
+				refimgid="c9a4103b-43e2-4007-b34d-7d06cf1be6b6"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='RCCEventDefinitions']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="h4tag"
 				id="6d4d528a-8639-493c-866c-405f383143ae"
 				name="Visit1"
 				refimgid="c9a4103b-43e2-4007-b34d-7d06cf1be6b6"
@@ -1631,7 +1640,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="RCCEventDefinitions"
 				refimgid="3783051e-08e5-4b34-aab9-5bb3d3b2940f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext='RCCEventDefinitions']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~'Visit Schedule']
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']
@@ -1919,6 +1928,15 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="e3b10f06-5a1a-4e0e-9ad6-aca7890ff26c"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext='Battery Config Report &gt; Reports']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="39644cbc-8cf7-4bee-a3e2-18c05b0a57fa"
+				name="VisitSchedule1Breadcrumb"
+				refimgid="c0e8c940-b2ff-4764-a0a2-1cc38b0dd949"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext='Visit Schedule 1']
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']
