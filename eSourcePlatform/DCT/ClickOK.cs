@@ -79,8 +79,12 @@ namespace DCT
 
             Init();
 
-            Click_OK();
-            Delay.Milliseconds(0);
+            //Click_OK();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickOk' at Center.", repo.DataCleaningTool.ClickOkInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.ClickOk.Click();
+            Delay.Milliseconds(200);
             
         }
 

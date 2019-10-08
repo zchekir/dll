@@ -95,6 +95,10 @@ namespace RedCapCloud.SubjectsPage
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
             
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'REDCapCloud'.", repo.REDCapCloud.SelfInfo, new RecordItemIndex(2));
+            Host.Current.CloseApplication(repo.REDCapCloud.Self, new Duration(0));
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

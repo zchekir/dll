@@ -33,11 +33,13 @@ namespace DCT
             // Your recording specific initialization code goes here.
         }
 
-        public void ClickConfirm()
+       
+
+        public void Mouse_Click_ClickConfirm(RepoItemInfo spantagInfo)
         {
-             Delay.Milliseconds(300);
-        	  WebElement ClickConfirm ="//span[@innertext='confirm']";
-        	  ClickConfirm .Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", spantagInfo);
+           // Delay.Milliseconds(300);
+            spantagInfo.FindAdapter<SpanTag>().Click();
         }
 
     }

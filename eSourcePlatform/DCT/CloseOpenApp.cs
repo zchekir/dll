@@ -20,57 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.ValidationModules
+namespace DCT
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_EventDef_Entry recording.
+    ///The CloseOpenApp recording.
     /// </summary>
-    [TestModule("37dd7361-8db1-4913-bf3c-88aa453cf877", ModuleType.Recording, 1)]
-    public partial class Validate_EventDef_Entry : ITestModule
+    [TestModule("7bceac10-42f9-4317-8de5-3e37a1b5b379", ModuleType.Recording, 1)]
+    public partial class CloseOpenApp : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the DCTRepository repository.
         /// </summary>
-        public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
+        public static DCTRepository repo = DCTRepository.Instance;
 
-        static Validate_EventDef_Entry instance = new Validate_EventDef_Entry();
+        static CloseOpenApp instance = new CloseOpenApp();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_EventDef_Entry()
+        public CloseOpenApp()
         {
+            Browser = "Chrome";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_EventDef_Entry Instance
+        public static CloseOpenApp Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string DOM
-        {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
-        }
+        string _Browser;
 
         /// <summary>
-        /// Gets or sets the value of variable EventDefName.
+        /// Gets or sets the value of variable Browser.
         /// </summary>
-        [TestVariable("11da9ff3-46e5-4db0-8f94-1b1b60cecde6")]
-        public string EventDefName
+        [TestVariable("6c540469-d01e-4e0e-b805-390f616f9955")]
+        public string Browser
         {
-            get { return repo.EventDefName; }
-            set { repo.EventDefName = value; }
+            get { return _Browser; }
+            set { _Browser = value; }
         }
 
 #endregion
@@ -99,19 +92,12 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.EventDefTable.EventDefName'.", repo.REDCapCloud.EventDefTable.EventDefNameInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.REDCapCloud.EventDefTable.EventDefNameInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.EventDefTable.Type'.", repo.REDCapCloud.EventDefTable.TypeInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.REDCapCloud.EventDefTable.TypeInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.REDCapCloud.Self, false, new RecordItemIndex(2));
-            
-            //Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'REDCapCloud'.", repo.REDCapCloud.SelfInfo, new RecordItemIndex(3));
-            //Host.Current.KillApplication(repo.REDCapCloud.Self);
+            //Close(Browser);
             //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'DataCleaningToolGoogleChrome.ClosApp'.", repo.DataCleaningToolGoogleChrome.ClosAppInfo, new RecordItemIndex(1));
+            Host.Current.KillApplication(repo.DataCleaningToolGoogleChrome.ClosApp);
+            Delay.Milliseconds(0);
             
         }
 

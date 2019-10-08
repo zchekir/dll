@@ -262,6 +262,42 @@
       <UserCode>true</UserCode>
       <id>1163ef43-eb82-471c-a190-80c513f46fff</id>
     </Compile>
+    <Compile Include="CloseOpenApp.cs">
+      <BoundTo>9f87f60d-26a5-4baf-97c8-400491dec388</BoundTo>
+      <DependentUpon>CloseOpenApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>548fb939-97b8-4ede-8fb4-f24252b51045</id>
+    </Compile>
+    <Compile Include="CloseOpenApp.UserCode.cs">
+      <BoundTo>9f87f60d-26a5-4baf-97c8-400491dec388</BoundTo>
+      <DependentUpon>CloseOpenApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>49ba2725-1cb9-4482-804e-672204af9ae4</id>
+    </Compile>
+    <Compile Include="CloseRCCBrowser.cs">
+      <BoundTo>7b96678f-d9d3-4a4b-8358-e4bbb62dd6c9</BoundTo>
+      <DependentUpon>CloseRCCBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0dacb224-3aea-4f97-ad4a-371a407e137a</id>
+    </Compile>
+    <Compile Include="CloseRCCBrowser.UserCode.cs">
+      <BoundTo>7b96678f-d9d3-4a4b-8358-e4bbb62dd6c9</BoundTo>
+      <DependentUpon>CloseRCCBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ae639710-be05-4858-93da-bc09fd6919a6</id>
+    </Compile>
+    <Compile Include="ClrPrimary.cs">
+      <BoundTo>03c0e955-159f-42d4-9916-f635d3c26c1c</BoundTo>
+      <DependentUpon>ClrPrimary.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8201c104-6ec2-4d92-a873-9f00a8a54665</id>
+    </Compile>
+    <Compile Include="ClrPrimary.UserCode.cs">
+      <BoundTo>03c0e955-159f-42d4-9916-f635d3c26c1c</BoundTo>
+      <DependentUpon>ClrPrimary.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aaee5fe6-052c-46e0-be0c-5debb374919d</id>
+    </Compile>
     <Compile Include="Confirm.cs">
       <BoundTo>1153fe46-6418-49b7-93d1-d226b4c28dd8</BoundTo>
       <DependentUpon>Confirm.rxrec</DependentUpon>
@@ -530,15 +566,30 @@
       <id>b09329a1-e3d2-4b9b-9aa7-3d86ede0a09b</id>
       <recordtableid>a58a0eda-d3f8-4786-8c9a-2e3884970874</recordtableid>
     </None>
+    <None Include="CloseOpenApp.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>9f87f60d-26a5-4baf-97c8-400491dec388</id>
+      <recordtableid>7bceac10-42f9-4317-8de5-3e37a1b5b379</recordtableid>
+    </None>
+    <None Include="CloseRCCBrowser.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>7b96678f-d9d3-4a4b-8358-e4bbb62dd6c9</id>
+      <recordtableid>e18a364d-fb41-4e07-bb74-be9da3847795</recordtableid>
+    </None>
+    <None Include="ClrPrimary.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>03c0e955-159f-42d4-9916-f635d3c26c1c</id>
+      <recordtableid>43d4b22b-c198-427b-a835-787c01b1dfc8</recordtableid>
+    </None>
     <None Include="Confirm.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>1153fe46-6418-49b7-93d1-d226b4c28dd8</id>
       <recordtableid>e67fa75b-7272-4021-979e-8af5bce6efc2</recordtableid>
     </None>
     <None Include="Confirmation.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>2b7d0c69-f283-44ee-9d70-d9ab512e1982</id>
       <recordtableid>2080a809-44ee-4d9a-b966-a717a2ec56ba</recordtableid>
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
     </None>
     <None Include="ConfirmInvalidated.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>

@@ -35,6 +35,7 @@ namespace DCT
             // Your recording specific initialization code goes here.
         }
 
+        // Click Next Button 
         public void ClickButton()
         {
             
@@ -43,7 +44,7 @@ namespace DCT
                 ClickNext.Click();
             }else{
               
-                Report.Log(ReportLevel.Info ,"ClickNext Not required");
+                Report.Log(ReportLevel.Info ,"ClickNext is Not required");
             }
         	
         	

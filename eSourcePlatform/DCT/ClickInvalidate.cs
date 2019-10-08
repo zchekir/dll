@@ -79,8 +79,12 @@ namespace DCT
 
             Init();
 
-            Invalidate();
-            Delay.Milliseconds(0);
+            //Invalidate();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.InvalidButton' at Center.", repo.DataCleaningTool.InvalidButtonInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.InvalidButton.Click();
+            Delay.Milliseconds(200);
             
         }
 

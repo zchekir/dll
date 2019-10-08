@@ -33,9 +33,10 @@ namespace DCT
             // Your recording specific initialization code goes here.
         }
 
+         //Click Button:
         public void ClickFind_B()
         {
-            //Click Button:
+           
         	  Delay.Milliseconds (200);
         	  WebElement ClickFind ="//span[@innertext='Find By Assessment Id']";
         	  ClickFind.Click();

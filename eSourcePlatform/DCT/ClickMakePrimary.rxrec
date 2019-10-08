@@ -29,22 +29,69 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ClickMakePrimary"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="Primary"
-		namespace="DCT"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		varname="">
+		searchpropertyid="1523266d-c289-4ca7-a844-dae56d57c8b3"
+		sx="3373"
+		sy="507"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="2d37c8c9-f4c1-479d-b130-6442cf7a3cb1">
-			</arguments>
-		</userrecorditem>
+			<info
+			id="8a0da0d6-6903-467a-8b3a-441a0225f30c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="3320,495,107,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jss165
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						make primary
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-make-primary-button']/span[@innertext='make primary']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

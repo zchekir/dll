@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="b51f2390-cb01-4ca0-ac2f-d009a496b014"
+id="43d4b22b-c198-427b-a835-787c01b1dfc8"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ClickRestoreButton
+		ClrPrimary
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ClickRestoreButton"
+	classname="ClrPrimary"
 	namespace="DCT">
 	</codegen>
 	<variables>
@@ -37,8 +37,8 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="cc7fe006-88f3-469f-a514-18ee5dabd670"
-		sx="3478"
+		searchpropertyid="b1120b0a-a886-4598-a01e-ee8df5eb258e"
+		sx="3371"
 		sy="507"
 		warnoutofbounds="False">
 			<comment>
@@ -46,7 +46,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="dcad520b-c5c1-43c8-84e3-9c49e20656ca"
+			id="e0ce542a-7e79-45b6-ba96-42c007565214"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, spantag"
@@ -56,7 +56,7 @@ rxversion="8.3">
 				hasfocus="False"
 				index="0"
 				prefcap="spantag"
-				rect="3447,495,63,24"
+				rect="3315,495,112,24"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -79,7 +79,7 @@ rxversion="8.3">
 					<attribute
 					name="innertext"
 					type="System.String">
-						restore
+						clear primary
 					</attribute>
 					<attribute
 					name="tagname"
@@ -88,7 +88,50 @@ rxversion="8.3">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-restore-button']/span[@innertext='restore']
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-clear-primary-button']/span[@innertext='clear primary']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f12d0f21-e777-41d9-9822-d5077250300f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'update-assessment-confirm']/span[@innertext='confirm']
 				</path>
 			</info>
 		</mouseitem>
@@ -109,7 +152,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ClickRestoreButton.UserCode.cs
+		ClrPrimary.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

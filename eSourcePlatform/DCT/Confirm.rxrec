@@ -31,9 +31,9 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="Confirm"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
-		methodname="ClickConfirm"
+		methodname="Mouse_Click_ClickConfirm"
 		namespace="DCT"
 		optional="False"
 		varname="">
@@ -42,9 +42,88 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f76475a-f377-453d-9b49-f5ba1fac2c7a">
+			id="c138b3fc-ffe3-416d-bde4-eff01b3cd057">
+				<argument
+				argname="spantagInfo"
+				id="aac143b3-cee7-42be-9008-f3d7a8765b8a">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="67c5cfc6-aa95-441f-bd70-e6ac84c9e2f1"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'update-assessment-confirm']/span[@innertext='confirm']
+						</path>
+					</info>
+				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fc5c9ca7-4bb0-45cb-bfee-98d049e443d1"
+		sx="3464"
+		sy="719"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="3432,707,64,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jss165
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						confirm
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'update-assessment-confirm']/span[@innertext='confirm']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

@@ -262,8 +262,7 @@ namespace engine.Helpers
 		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
 		 
-			
-			
+	
 			dt.Reset();
 			
 			
@@ -274,7 +273,9 @@ namespace engine.Helpers
                           ,[MovePrevTestIdentifier]
                            FROM [UserData].[PRWorkflowInstance]
                            where MovePrevTestIdentifier = @testIdentifier";
-			
+			do{
+			Delay.Duration(30000);
+			Report.Info( " Waiting for TestIdentifier"); 
 			
 			//Connecting to SQL DB:
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
@@ -283,20 +284,16 @@ namespace engine.Helpers
 			da.SelectCommand.Parameters.AddWithValue("@testIdentifier", Guid.Parse(testIdentifier));
 			
 			// Get the data from DB
-		
-				
-				Delay.Duration(30000);
-			 using (da)
-					
-			{
-				da.Fill(dt);
-				
-			 }
-
-		    
-		    
 			
-	
+		     using (da)  //{
+					
+			da.Fill(dt);
+			
+			
+				} while ( dt.Rows.Count < 1);
+				
+		
+			
 			
 			string  N_TestIdentifier  = dt.Rows[0][0].ToString();
 			string MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
@@ -305,14 +302,31 @@ namespace engine.Helpers
 			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + N_TestIdentifier);
 		    Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier);
-			Report.Log(ReportLevel.Info, " zien is the bosss");
+				
+			
+			
+			
+			
+			//}  //end loop
+			
+			        }
 		
-		
+		}
+          
+     	}
+	
+	
+	   // }
 		
 			
-		}
-	}
+		
 	
 	
-}
+	
+
+
+
+	
+
+
 

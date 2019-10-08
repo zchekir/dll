@@ -36,6 +36,7 @@ namespace DCT
             // Your recording specific initialization code goes here.
         }
 
+        //Enter UserName
         public void UserNameInput(string UserName)
         {
            
@@ -46,7 +47,7 @@ namespace DCT
                 EnterUsername.PressKeys(UserName);
             }else{
               
-                Report.Log(ReportLevel.Info ,"UserName Not required");
+                Report.Log(ReportLevel.Info ,"UserName is Not required");
             }
         	
         	

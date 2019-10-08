@@ -29,23 +29,93 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ClickButton"
-		duration="100ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="ClickFind_B"
-		namespace="DCT"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		varname="">
+		searchpropertyid="c968bb77-ed5a-4604-bae8-03ba5fdd53e6"
+		sx="2338"
+		sy="809"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="3ad44129-eb96-443e-ab58-37fb6ebc4a24">
-			</arguments>
-		</userrecorditem>
+			<info
+			id="98cfba2b-c4c5-488d-8805-d8e0193ff5bb"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="2254,797,169,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jss165
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Find By Assessment Id
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//div[#'root']/div/div/div[2]/div[2]/?/?/span[@innertext='Find By Assessment Id']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="05427cbc-7153-409c-8163-e93d74793cb2"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2f9f79e7-580e-4755-a6bc-f7137da21cde"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2019-']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

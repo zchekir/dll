@@ -35,16 +35,18 @@ namespace DCT
         {
             // Your recording specific initialization code goes here.
         }
-
-        public void PasswordInput(string Password)
-        {
+        
+       //Enter Password 
+            public void PasswordInput(string Password)
+            {
         	if (Host.Local.TryFindSingle<InputTag>("//*[@id='idSIButton9']", new Duration(1500), out EnterPassword)){
                
                 EnterPassword.Click();
                 EnterPassword.PressKeys(Password);
+                
             }else{
               
-                Report.Log(ReportLevel.Info ,"Password Not required");
+                Report.Log(ReportLevel.Info ,"Password is Not required");
             }
         	
         }

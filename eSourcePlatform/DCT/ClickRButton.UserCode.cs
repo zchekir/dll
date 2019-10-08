@@ -32,12 +32,12 @@ namespace DCT
         {
             // Your recording specific initialization code goes here.
         }
-
+//Click Results:
         public void ClickResButton()
         {
-              //Click Results:
-        	   Delay.Milliseconds(200);
-        	   WebElement ClickResult ="//td[@innertext~'SC-']";
+              
+        	   Delay.Milliseconds(300);
+        	   WebElement ClickResult ="//td[@innertext~'2019-']";
         	   Mouse.MoveTo(ClickResult);
         	   ClickResult.Click();
         }

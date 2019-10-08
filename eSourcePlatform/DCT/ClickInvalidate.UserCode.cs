@@ -32,12 +32,13 @@ namespace DCT
         {
             // Your recording specific initialization code goes here.
         }
-
+//Click invalidate Button:
         public void Invalidate()
-        {
-            //Click Button:
-        	  Delay.Milliseconds (400);
-        	  WebElement ClickInvalidate ="//span[@innertext='invalidate']";
+        {  //"//span[@innertext='invalidate']"
+             // String xpath ="/span[@innertext='invalidate']";
+        	  Delay.Milliseconds (1000);
+        	  WebElement ClickInvalidate = "/span[@innertext='invalidate']";
+        	  Delay.Milliseconds (200);
         	  ClickInvalidate.Click();
         }
 

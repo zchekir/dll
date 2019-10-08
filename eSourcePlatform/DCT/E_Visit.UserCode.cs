@@ -36,11 +36,18 @@ namespace DCT
         public void Visit(string Visit)
         {
             //Entervisitwhere to move it to:
-        	  Delay.Milliseconds(300);
-        	  InputTag EnterVisit=" //*[@id='react-select-6-input']";
+        	  Delay.Milliseconds(400);
+        	  InputTag EnterVisit="//input[id~'react-select-[0-9]-input']";
               EnterVisit.Click();
         	  EnterVisit.PressKeys(Visit);
         	  Keyboard.Press("{ENTER}");
+        }
+
+        public void Key_sequence_EnterVisit(RepoItemInfo divtagInfo)
+        {
+        	Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVisit' with focus on 'divtagInfo'.", divtagInfo);
+            divtagInfo.FindAdapter<DivTag>().PressKeys(DCTVisit);
         }
 
     }

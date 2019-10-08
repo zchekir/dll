@@ -36,11 +36,55 @@ namespace DCT
         public void SubJect(string Subj)
         {
             //Enter subject where to move it to:
-        	  Delay.Milliseconds(300);
-        	  InputTag EnterSubject="//*[@id='react-select-5-input']";
+        	  Delay.Milliseconds(400);
+        	  
+        	  
+        	  InputTag EnterSubject="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]";
               EnterSubject.Click();
         	  EnterSubject.PressKeys(Subj);
         	  Keyboard.Press("{ENTER}");
+        }
+
+        public void Key_sequence_EnterSubject(RepoItemInfo divtagInfo)
+        	
+        {
+        	Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'divtagInfo'.", divtagInfo);
+            divtagInfo.FindAdapter<DivTag>().PressKeys(DCTSubject);
+        }
+
+        public void Get_value_EnterSubject(RepoItemInfo divtagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'TagName' from item 'divtagInfo' and assigning its value to variable 'DCTSubject'.", divtagInfo);
+            DCTSubject = divtagInfo.FindAdapter<DivTag>().Element.GetAttributeValueText("TagName");
+            
+        }
+
+        public void Key_sequence_EnterSubject1(RepoItemInfo divtagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'divtagInfo'.", divtagInfo);
+            divtagInfo.FindAdapter<DivTag>().PressKeys(DCTSubject);
+            Keyboard.Press("{TAB}");
+        }
+
+        public void Key_sequence_E_Subject(RepoItemInfo divtagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'divtagInfo'.", divtagInfo);
+            divtagInfo.FindAdapter<DivTag>().PressKeys(DCTSubject);
+            Keyboard.Press("{TAB}");
+        }
+
+        public void Key_sequence_EnterVisit_(RepoItemInfo divtagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVisit' with focus on 'divtagInfo'.", divtagInfo);
+            divtagInfo.FindAdapter<DivTag>().PressKeys(DCTVisit);
+        }
+
+        public void Key_sequence_E_Subject1(RepoItemInfo unknownInfo)
+        {
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'unknownInfo'.", unknownInfo);
+            unknownInfo.FindAdapter<Unknown>().PressKeys(DCTSubject);
+            Keyboard.Press("{TAB}");
         }
 
     }

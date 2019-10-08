@@ -29,22 +29,69 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ClickMove"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="MoveButton"
-		namespace="DCT"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		varname="">
+		searchpropertyid="bd4b396f-3481-43c2-a058-152964ae37a4"
+		sx="3489"
+		sy="507"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="112358a8-9c8f-489f-b54f-ad6ede012580">
-			</arguments>
-		</userrecorditem>
+			<info
+			id="4475259d-22a2-4512-a4b1-742099f24bb9"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="3469,495,40,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jss165
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						move
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-move-button']/span[@innertext='move']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

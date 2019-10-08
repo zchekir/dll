@@ -32,7 +32,9 @@ namespace DCT
         {
             // Your recording specific initialization code goes here.
         }
-
+        
+        
+// Navigate and Login to DCT 
         public void DCTLogin(string URL, string Browser)
         {
             Host.Current.OpenBrowser(URL,Browser);

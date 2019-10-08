@@ -79,8 +79,12 @@ namespace DCT
 
             Init();
 
-            ClickConfirm();
-            Delay.Milliseconds(0);
+            //Mouse_Click_ClickConfirm(repo.DataCleaningTool.ClickConfirmInfo);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ConfirmInvalidate' at Center.", repo.DataCleaningTool.ConfirmInvalidateInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.ConfirmInvalidate.Click();
+            Delay.Milliseconds(200);
             
         }
 

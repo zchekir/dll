@@ -79,8 +79,9 @@ namespace DCT
 
             Init();
 
-            Primary();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickMakePrimary' at Center.", repo.DataCleaningTool.ClickMakePrimaryInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.ClickMakePrimary.Click();
+            Delay.Milliseconds(200);
             
         }
 

@@ -93,8 +93,8 @@ namespace CSP.AddWorkflowPage
             repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButton.Click("13;13");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabled'", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo, new ActionTimeout(30000), new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabled'", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo, new ActionTimeout(50000), new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo.WaitForNotExists(50000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.PublishButton'.", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo, new RecordItemIndex(2));
             Validate.Exists(repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo);

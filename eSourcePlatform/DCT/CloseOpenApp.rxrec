@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="60f61c6d-2be8-41b8-afd0-3ad94c33df75"
+id="7bceac10-42f9-4317-8de5-3e37a1b5b379"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ClickInvalidate
+		CloseOpenApp
 	</name>
 	<repeatcount>
 		1
@@ -23,17 +23,22 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ClickInvalidate"
+	classname="CloseOpenApp"
 	namespace="DCT">
 	</codegen>
 	<variables>
+		<var
+		id="6c540469-d01e-4e0e-b805-390f616f9955"
+		name="Browser">
+			Chrome
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="ClickInvalidate"
+		classname="CloseOpenApp"
 		enabled="False"
 		isexternaltestmethod="False"
-		methodname="Invalidate"
+		methodname="Close"
 		namespace="DCT"
 		optional="False"
 		varname="">
@@ -42,97 +47,75 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="72f9c64c-b992-4426-801b-45fd9be1f19f">
+			id="87bf5e18-b994-4e61-b940-f5e342af0060">
+				<argument
+				argname="Browser"
+				id="1a745c47-b2ef-4234-9be8-88c9283417a4"
+				variable="Browser">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<closeapprecorditem
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		graceperiod="30000ms"
+		method="KillProcess"
 		optional="False"
-		searchpropertyid="e8937059-2c1c-41c2-8370-ce95ed95dab1"
-		sx="3237"
-		sy="507"
-		warnoutofbounds="False">
+		searchpropertyid="47f2933d-09bf-4857-ba1f-01593943c1fb">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d51ef50b-cc93-42e6-9669-6ad2db192605"
+			id="063547b3-c1fe-47cf-84c0-38d75dad0d37"
 			sourcename="RepositoryEditor">
 				<element
-				capabilities="webelement, buttontag"
-				dontcache="True"
+				capabilities="accessible"
+				dontcache="False"
 				enabled="True"
-				flavor="chromeweb"
+				flavor="msaa"
 				hasfocus="False"
 				index="0"
-				prefcap="buttontag"
-				rect="3181,489,113,36"
+				prefcap="unknown"
+				rect="1920,103,1920,44"
 				role="unknown"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
-					name="class"
+					name="accessiblekeyboardshortcut"
 					type="System.String">
-						jss161 jss164 jss175 jss178 jss237
+						Alt+Shift+A
 					</attribute>
 					<attribute
-					name="draggable"
+					name="accessiblename"
 					type="System.String">
-						False
+						Infobar
 					</attribute>
 					<attribute
-					name="hidden"
-					type="System.String">
-						False
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Alert
 					</attribute>
 					<attribute
-					name="id"
-					type="System.String">
-						action-row-invalidate-button
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
 					</attribute>
 					<attribute
-					name="innertext"
+					name="accessiblevalue"
 					type="System.String">
 					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						button
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						button
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="tabindex"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-invalidate-button']
+					/form[@title~'^Data\ Cleaning\ Tool\ -\ Goog']/container[@accessiblename~'^Data\ Cleaning\ Tool\ -\ Goog']//container[@accessiblename='Infobar Container']/element[@accessiblename='Infobar']
 				</path>
 			</info>
-		</mouseitem>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
@@ -150,7 +133,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ClickInvalidate.UserCode.cs
+		CloseOpenApp.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

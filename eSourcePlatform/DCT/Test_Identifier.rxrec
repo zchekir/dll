@@ -35,7 +35,7 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="Test_Identifier"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="TestInd"
 		namespace="DCT"
@@ -56,6 +56,38 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Test_Identifier"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Key_sequence_EnterTestIdentifier"
+		namespace="DCT"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="24d40217-4e64-44f1-be4e-901f8d3744d7">
+				<argument
+				argname="inputtagInfo"
+				id="8daecb5f-0d6e-407f-a914-ad53617685c7">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="86244d71-2a9e-4044-a2a8-18c3c1d6851b"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//input[#'findByAssessmentId']
+						</path>
+					</info>
 				</argument>
 			</arguments>
 		</userrecorditem>

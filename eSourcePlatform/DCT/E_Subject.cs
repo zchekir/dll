@@ -41,7 +41,8 @@ namespace DCT
         /// </summary>
         public E_Subject()
         {
-            DCTSubject = "";
+            DCTSubject = "test";
+            DCTVisit = "Visit";
         }
 
         /// <summary>
@@ -54,7 +55,17 @@ namespace DCT
 
 #region Variables
 
-        string _DCTSubject;
+        string _DCTVisit;
+
+        /// <summary>
+        /// Gets or sets the value of variable DCTVisit.
+        /// </summary>
+        [TestVariable("ebdbd210-ee97-4ffa-8fac-895ff919ef75")]
+        public string DCTVisit
+        {
+            get { return _DCTVisit; }
+            set { _DCTVisit = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable DCTSubject.
@@ -62,8 +73,8 @@ namespace DCT
         [TestVariable("c0571c73-1af6-47f2-9475-f5d78be0ac3c")]
         public string DCTSubject
         {
-            get { return _DCTSubject; }
-            set { _DCTSubject = value; }
+            get { return repo.DCTSubject; }
+            set { repo.DCTSubject = value; }
         }
 
 #endregion
@@ -92,7 +103,19 @@ namespace DCT
 
             Init();
 
-            SubJect(DCTSubject);
+            //SubJect(DCTSubject);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.E_Subject' at Center.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.E_Subject.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'DataCleaningTool.E_Subject'.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(2));
+            repo.DataCleaningTool.E_Subject.PressKeys(DCTSubject);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(3));
+            Keyboard.Press("{TAB}");
             Delay.Milliseconds(0);
             
         }

@@ -92,14 +92,11 @@ namespace DCT
 
             Init();
 
-            Validation(TestIdentifier);
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DataCleaningTool.MoveValidation'.", repo.DataCleaningTool.MoveValidationInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DataCleaningTool.MoveValidation'.", repo.DataCleaningTool.MoveValidationInfo, new RecordItemIndex(0));
             Validate.Exists(repo.DataCleaningTool.MoveValidationInfo);
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(2));
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(1));
             
         }
 

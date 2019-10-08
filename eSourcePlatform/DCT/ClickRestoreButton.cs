@@ -79,8 +79,9 @@ namespace DCT
 
             Init();
 
-            ClickResroe();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.RestoreButton_' at Center.", repo.DataCleaningTool.RestoreButton_Info, new RecordItemIndex(0));
+            repo.DataCleaningTool.RestoreButton_.Click();
+            Delay.Milliseconds(200);
             
         }
 

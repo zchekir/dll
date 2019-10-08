@@ -35,7 +35,8 @@ namespace DCT
         {
             // Your recording specific initialization code goes here.
         }
-
+        // Click Submit button 
+        
         public void ClickSubButton()
         {
         	if (Host.Local.TryFindSingle<WebElement>("//*[@id='submitButton']", new Duration(1500), out ClickSubmit)){
@@ -43,7 +44,7 @@ namespace DCT
                 ClickSubmit.Click();
             }else{
               
-                Report.Log(ReportLevel.Info ,"ClickSubmit Not required");
+                Report.Log(ReportLevel.Info ,"ClickSubmit is  Not required");
             }
         	
         }

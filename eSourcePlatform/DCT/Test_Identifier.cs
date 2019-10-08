@@ -92,7 +92,10 @@ namespace DCT
 
             Init();
 
-            TestInd(TestIdentifier);
+            //TestInd(TestIdentifier);
+            //Delay.Milliseconds(0);
+            
+            Key_sequence_EnterTestIdentifier(repo.DataCleaningTool.EnterTestIdentifierInfo);
             Delay.Milliseconds(0);
             
         }

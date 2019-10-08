@@ -30,12 +30,18 @@ rxversion="8.3">
 		<var
 		id="c0571c73-1af6-47f2-9475-f5d78be0ac3c"
 		name="DCTSubject">
+			test
+		</var>
+		<var
+		id="ebdbd210-ee97-4ffa-8fac-895ff919ef75"
+		name="DCTVisit">
+			Visit
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
 		classname="E_Subject"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="SubJect"
 		namespace="DCT"
@@ -59,6 +65,65 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e5626147-10fd-4e8d-8a6e-def512f3e8c9"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6bccceed-5896-4d21-9e92-2b50db29405f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//label[@innertext='Subject']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="a881a751-1821-4f99-83cf-e25cb16c15d3">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="DCTSubject">
+				</binding>
+			</bindings>
+			<info
+			id="6bccceed-5896-4d21-9e92-2b50db29405f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div/div/div/div/div[1]
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="{TAB}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="ae2cdc6d-310b-4de9-a229-3ba6810391a7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

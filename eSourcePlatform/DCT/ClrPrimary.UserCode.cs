@@ -22,8 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT
 {
-    public partial class Test_Identifier
-    	
+    public partial class ClrPrimary
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,23 +31,6 @@ namespace DCT
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-        
-        //Enter Testidentifier
-        public void TestInd(string TestIdn)
-        {
-             Delay.Milliseconds(500);
-             InputTag EnterTestidentifier = "//input[@id='findByAssessmentId']";
-        	 EnterTestidentifier.Click();
-             Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
-             
-        }
-
-        public void Key_sequence_EnterTestIdentifier(RepoItemInfo inputtagInfo)
-        {
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'inputtagInfo'.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().PressKeys("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
-            inputtagInfo.FindAdapter<InputTag>().PressKeys(TestIdentifier);
         }
 
     }

@@ -46,7 +46,7 @@ namespace DCT
             Authentication = "Active Directory Password";
             dbUsername = "zchekir@cogstate.com";
             dbPassword = "Cogstate2014";
-            TestIdentifier = "8C1907B6-C691-4F27-B3D0-8FBC55C867EA";
+            TestIdentifier = "CCFA4AE8-0BB3-4296-87B6-FCFEFDE3C2B0";
         }
 
         /// <summary>

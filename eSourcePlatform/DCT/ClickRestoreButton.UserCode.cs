@@ -36,7 +36,7 @@ namespace DCT
         public void ClickResroe()
         {
             //Click Results:
-        	   Delay.Milliseconds(300);
+        	   Delay.Milliseconds(400);
         	   WebElement ClickRestore ="//span[@innertext='restore']";
         	   Mouse.MoveTo(ClickRestore);
         	   ClickRestore .Click();

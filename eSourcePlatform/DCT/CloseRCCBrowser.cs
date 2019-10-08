@@ -20,48 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.General
+namespace DCT
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_SaveButton recording.
+    ///The CloseRCCBrowser recording.
     /// </summary>
-    [TestModule("642467a9-e26f-4da9-9ff5-afd3cb130fde", ModuleType.Recording, 1)]
-    public partial class Click_SaveButton : ITestModule
+    [TestModule("e18a364d-fb41-4e07-bb74-be9da3847795", ModuleType.Recording, 1)]
+    public partial class CloseRCCBrowser : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the DCTRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static DCTRepository repo = DCTRepository.Instance;
 
-        static Click_SaveButton instance = new Click_SaveButton();
+        static CloseRCCBrowser instance = new CloseRCCBrowser();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_SaveButton()
+        public CloseRCCBrowser()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_SaveButton Instance
+        public static CloseRCCBrowser Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
-        /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
-        {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
 
 #endregion
 
@@ -89,13 +79,6 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SaveButton' at Center.", repo.CogstateSolutionPlatform.SaveButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.SaveButton.Click(3);
-            Delay.Milliseconds(490);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
-            Delay.Duration(5000, false);
-            
         }
 
 #region Image Feature Data

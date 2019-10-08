@@ -31,7 +31,7 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="ClickOK"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Click_OK"
 		namespace="DCT"
@@ -45,6 +45,69 @@ rxversion="8.3">
 			id="1396f347-7597-412f-8822-e9a996db8eca">
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f5606245-6d7d-4a71-aeda-c5cb80c5cc9d"
+		sx="3456"
+		sy="810"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4ac58619-4351-44b7-8087-c4e6656d9855"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="3440,798,32,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jss165
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						ok
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'move-selection-button-next']/span[@innertext='ok']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
