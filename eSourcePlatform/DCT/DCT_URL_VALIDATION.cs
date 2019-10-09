@@ -100,6 +100,10 @@ namespace DCT
             Validate.AttributeNotContains(repo.DataCleaningTool.SelfInfo, "PageUrl", DCTURL);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(2));
+            Host.Current.KillApplication(repo.DataCleaningTool.Self);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

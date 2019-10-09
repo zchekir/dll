@@ -105,8 +105,8 @@ namespace DCT
 
             Init();
 
-            HTTPS(URL, Browser);
-            Delay.Milliseconds(0);
+            //HTTPS(URL, Browser);
+            //Delay.Milliseconds(0);
             
         }
 
