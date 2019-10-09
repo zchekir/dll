@@ -622,7 +622,16 @@ rxversion="8.3">
 				name="Subject"
 				refimgid="e0ab1a6d-f80d-4af1-b210-0456d4e5bf2e"
 				searchtimeout="240000ms">
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext&gt;$RandNum]
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div//table/tbody/tr/td[2]/div[@innertext&gt;$RandNum]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="c8a07fbc-291b-45f3-ac7c-9b664d5f2ac1"
+				name="SecondSubject"
+				refimgid="e0ab1a6d-f80d-4af1-b210-0456d4e5bf2e"
+				searchtimeout="240000ms">
+					/dom[@domain=$DOM]//div[#'gwtWrapper']/div//table//tbody/tr[1]//div[@innertext&gt;'SC-']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -1320,6 +1329,11 @@ AAAASUVORK5CYII=
 		<var
 		id="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
 		name="EventDefName">
+		</var>
+		<var
+		id="02096c08-fb46-4a9d-893b-fd42eb0d037b"
+		name="SecondSubject">
+			1001001
 		</var>
 	</variables>
 </repository>

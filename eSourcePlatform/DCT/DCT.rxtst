@@ -214,6 +214,26 @@ rxversion="8.3">
 			name="Validate_ThePrimaryIsSetToYES">
 			</smartfoldernode>
 			<testmodule
+			id="16079d9c-c943-4e07-8b09-12c72cee0b2e"
+			name="Get_Screening_Number"
+			ref="c4808230-ff00-4283-bb5c-8323779997e5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DCTSubject"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="9dae6b2d-caef-4525-9cf8-0b7494dbffe1"
+					variablename="DCTSubject">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="17a5ff3e-3ae0-4cb1-843e-ebecbd30ca71"
 			name="DCT_URL"
 			ref="5d2ef5fe-273d-43ea-b4d5-a8d2efc9ca23"
@@ -317,6 +337,12 @@ rxversion="8.3">
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
+					variablename="EventDefName">
+					</var>
 				</databinding>
 			</testmodule>
 			<smartfoldernode
@@ -389,7 +415,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="0ea178e4-8640-4f5c-9be6-352927e559b7">
+					value="94712f4d-9419-4a57-bcd4-b281369827fe">
 					</param>
 					<param
 					name="Key"
@@ -401,7 +427,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="DCTSubject"
-					value="0003">
+					value="SC-7023">
 					</param>
 					<param
 					name="DCTVisit"
@@ -1448,6 +1474,20 @@ rxversion="8.3">
 			ref="8f670042-56e3-46fe-ac01-db72cef2387c"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="80f23243-0fbb-4363-b202-2634e0e8d54f"
+			name="Close_Browser"
+			ref="da109cf5-f3c0-49e3-96bf-aee85dba2e77"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="8232ed42-fc87-43ae-87f3-fdbe90bd0698"
 			name="EnterSubject/Visit">
@@ -1477,6 +1517,12 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
+					variablename="EventDefName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2220,6 +2266,12 @@ rxversion="8.3">
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
+					variablename="EventDefName">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -2512,6 +2564,12 @@ rxversion="8.3">
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
+					variablename="EventDefName">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -2732,12 +2790,6 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCVisitScheduleName"
-					datasourceid="36c84863-c4e2-4980-8687-22e322546024"
-					variableid="f21fe27d-9d06-425a-ac88-1991573cee47"
-					variablename="VisitScheduleName">
-					</var>
-					<var
 					dataname="CSPDOM"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
@@ -2881,26 +2933,6 @@ rxversion="8.3">
 			id="f2538ff8-354c-4d17-a440-e139d0c0ce65"
 			name="RestoreAssessment">
 			</testcase>
-			<testmodule
-			id="f497776d-cfc4-4004-a02c-bf5bae7c5696"
-			name="Validate_Subject_Added"
-			ref="5fcd8123-4441-485f-bb20-4534e6acf23b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="SecondSubject"
-					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
-					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="f6793b4e-5f40-4dc4-9c4c-59f27c9b7db6"
 			name="ConfirmInvalidated"
@@ -3603,8 +3635,8 @@ rxversion="8.3">
 								name="Click_SaveAndExit_Button">
 								</testmodule>
 								<testmodule
-								id="f497776d-cfc4-4004-a02c-bf5bae7c5696"
-								name="Validate_Subject_Added">
+								id="16079d9c-c943-4e07-8b09-12c72cee0b2e"
+								name="Get_Screening_Number">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -3697,6 +3729,10 @@ rxversion="8.3">
 								<testmodule
 								id="fb32843d-242c-4b9b-80b4-4fa023fc6a17"
 								name="Extract_TestIdentifier">
+								</testmodule>
+								<testmodule
+								id="80f23243-0fbb-4363-b202-2634e0e8d54f"
+								name="Close_Browser">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -4275,7 +4311,13 @@ rxversion="8.3">
 			id="020433af-5ef1-42f8-b2e7-9b5d0a7b40ef">
 			</testcontainer>
 			<testcontainer
+			id="042a618d-bbb7-47f3-9eab-db81c322de64">
+			</testcontainer>
+			<testcontainer
 			id="04939054-fa65-495b-a740-482356616b3b">
+			</testcontainer>
+			<testcontainer
+			id="08010772-2a6d-489b-aca2-c618ceb9b0ad">
 			</testcontainer>
 			<testcontainer
 			id="0a065941-10c5-46a1-bbb5-9a67c5cd47e2">
@@ -4284,16 +4326,37 @@ rxversion="8.3">
 			id="15ac3f39-47c0-4ae9-bfe8-76638555ed7b">
 			</testcontainer>
 			<testcontainer
+			id="2295694a-1e6a-4a66-9d9f-0862347ee3b6">
+			</testcontainer>
+			<testcontainer
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
+			</testcontainer>
+			<testcontainer
+			id="2761e2eb-de57-49a0-8056-922fbf17efa1">
+			</testcontainer>
+			<testcontainer
+			id="2776a8e3-3d1e-4740-8233-561dee78703b">
 			</testcontainer>
 			<testcontainer
 			id="2d9468c8-1eda-45ed-9b44-4a06c3476022">
 			</testcontainer>
 			<testcontainer
+			id="32bf6346-39d4-4657-b0ec-4f04a9ede731">
+			</testcontainer>
+			<testcontainer
+			id="366e8cf1-08a2-4eb0-9325-fe05644602ba">
+			</testcontainer>
+			<testcontainer
 			id="3b5ccf13-84c6-4218-8f3d-9b0dfa5e6d47">
 			</testcontainer>
 			<testcontainer
+			id="4094cf11-b9b6-4311-b776-52fd1b940dda">
+			</testcontainer>
+			<testcontainer
 			id="4a256c84-131f-44bb-8bbd-86462062e9d1">
+			</testcontainer>
+			<testcontainer
+			id="4f2c658b-eff2-4eb8-b380-cf5a4d04a265">
 			</testcontainer>
 			<testcontainer
 			id="58901188-271c-4822-8f92-e8784cdd1036">
@@ -4302,22 +4365,37 @@ rxversion="8.3">
 			id="5911ef58-8304-43d9-b260-094b16655bd2">
 			</testcontainer>
 			<testcontainer
+			id="5928fa9f-67fa-4797-9464-e1bc433125db">
+			</testcontainer>
+			<testcontainer
 			id="5f0f4458-3f1d-4e74-9716-22522793de4b">
 			</testcontainer>
 			<testcontainer
 			id="63ecb58c-f5cd-4a29-b3a1-20a73847b73c">
 			</testcontainer>
 			<testcontainer
+			id="65d270c8-721b-4d7f-be83-df4996dbb657">
+			</testcontainer>
+			<testcontainer
 			id="6a543fb1-3315-4057-82be-54c1b0b91690">
 			</testcontainer>
 			<testcontainer
+			id="6e1d7177-9ea0-4818-bcd8-952838e26be0">
+			</testcontainer>
+			<testcontainer
 			id="6e3be3f3-089e-4425-afe5-fef03f0bd6e2">
+			</testcontainer>
+			<testcontainer
+			id="6f71f7af-dbfe-4be5-af23-69cbe2599098">
 			</testcontainer>
 			<testcontainer
 			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
 			</testcontainer>
 			<testcontainer
 			id="7929e989-dc82-481b-a5ae-5e108085bda6">
+			</testcontainer>
+			<testcontainer
+			id="7b1c68e5-99c2-4ce1-b379-025bbc7014ec">
 			</testcontainer>
 			<testcontainer
 			id="8232ed42-fc87-43ae-87f3-fdbe90bd0698">
@@ -4329,13 +4407,31 @@ rxversion="8.3">
 			id="8701be3b-9559-4502-bc0c-635399be9d4c">
 			</testcontainer>
 			<testcontainer
+			id="872a1fba-6788-4476-bafe-4a2ef040da5a">
+			</testcontainer>
+			<testcontainer
+			id="9970ce0b-c5eb-46f1-9507-9667934be9cf">
+			</testcontainer>
+			<testcontainer
+			id="9a1f1def-c972-4e8b-a0d1-b7e35b498c0c">
+			</testcontainer>
+			<testcontainer
 			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc">
 			</testcontainer>
 			<testcontainer
 			id="a1d29b24-b861-49ab-a73e-2ec65d5b8c8a">
 			</testcontainer>
 			<testcontainer
+			id="a407e7c6-25fc-48ea-886b-5316a778e6f9">
+			</testcontainer>
+			<testcontainer
+			id="a5752ebc-8f97-4963-935c-86a25d76dacd">
+			</testcontainer>
+			<testcontainer
 			id="aa43591e-302d-494e-aafe-3d9e88fb4c8d">
+			</testcontainer>
+			<testcontainer
+			id="b9cd36f2-35e8-4d6e-b37b-f6332ec99bce">
 			</testcontainer>
 			<testcontainer
 			id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec">
@@ -4359,16 +4455,28 @@ rxversion="8.3">
 			id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb">
 			</testcontainer>
 			<testcontainer
+			id="e17e715f-951b-4191-93ed-07742301db40">
+			</testcontainer>
+			<testcontainer
+			id="e39dca1f-7c83-4483-9224-0587328078d0">
+			</testcontainer>
+			<testcontainer
 			id="e4966f0f-a50b-4f61-bcc3-c2865b6d79d7">
 			</testcontainer>
 			<testcontainer
 			id="e6d436ed-0a07-4913-a5f0-3deb7c676360">
 			</testcontainer>
 			<testcontainer
+			id="e95b20e1-0456-43fd-a7be-98bedfd0fa52">
+			</testcontainer>
+			<testcontainer
 			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d">
 			</testcontainer>
 			<testcontainer
 			id="f2538ff8-354c-4d17-a440-e139d0c0ce65">
+			</testcontainer>
+			<testcontainer
+			id="fc2d24e0-a4c2-4864-afae-af63ffddfea0">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
