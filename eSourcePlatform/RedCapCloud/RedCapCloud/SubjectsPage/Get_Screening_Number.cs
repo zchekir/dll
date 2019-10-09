@@ -24,34 +24,47 @@ namespace RedCapCloud.SubjectsPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_Event_Added recording.
+    ///The Get_Screening_Number recording.
     /// </summary>
-    [TestModule("14393025-d700-47c7-9152-6833ae9f4bed", ModuleType.Recording, 1)]
-    public partial class Validate_Event_Added : ITestModule
+    [TestModule("c4808230-ff00-4283-bb5c-8323779997e5", ModuleType.Recording, 1)]
+    public partial class Get_Screening_Number : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Validate_Event_Added instance = new Validate_Event_Added();
+        static Get_Screening_Number instance = new Get_Screening_Number();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_Event_Added()
+        public Get_Screening_Number()
         {
+            DCTSubject = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_Event_Added Instance
+        public static Get_Screening_Number Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _DCTSubject;
+
+        /// <summary>
+        /// Gets or sets the value of variable DCTSubject.
+        /// </summary>
+        [TestVariable("9dae6b2d-caef-4525-9cf8-0b7494dbffe1")]
+        public string DCTSubject
+        {
+            get { return _DCTSubject; }
+            set { _DCTSubject = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -61,16 +74,6 @@ namespace RedCapCloud.SubjectsPage
         {
             get { return repo.DOM; }
             set { repo.DOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable EventDefName.
-        /// </summary>
-        [TestVariable("11da9ff3-46e5-4db0-8f94-1b1b60cecde6")]
-        public string EventDefName
-        {
-            get { return repo.EventDefName; }
-            set { repo.EventDefName = value; }
         }
 
 #endregion
@@ -99,11 +102,13 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.SubjectsPage.FirstVisit'.", repo.REDCapCloud.SubjectsPage.FirstVisitInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.REDCapCloud.SubjectsPage.FirstVisitInfo);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'REDCapCloud.SubjectsPage.SecondSubject' and assigning its value to variable 'DCTSubject'.", repo.REDCapCloud.SubjectsPage.SecondSubjectInfo, new RecordItemIndex(0));
+            DCTSubject = repo.REDCapCloud.SubjectsPage.SecondSubject.Element.GetAttributeValueText("InnerText");
+            Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "User", "Screening Subject to be used for DCT Move", new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "User", DCTSubject, new RecordItemIndex(2));
             
         }
 

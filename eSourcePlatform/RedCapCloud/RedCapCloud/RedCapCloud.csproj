@@ -1073,6 +1073,18 @@
       <id>25e34209-def4-4cc6-affd-69bc1b6475fc</id>
       <BoundTo>54c2a686-bc3a-42ff-9462-ad327ce84083</BoundTo>
     </Compile>
+    <Compile Include="SubjectsPage\Get_Screening_Number.cs">
+      <BoundTo>5745f2b1-cb62-4961-b2c8-0d48c75bc81f</BoundTo>
+      <DependentUpon>Get_Screening_Number.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3749b75-4adc-423c-a8f3-a022a9004ce8</id>
+    </Compile>
+    <Compile Include="SubjectsPage\Get_Screening_Number.UserCode.cs">
+      <BoundTo>5745f2b1-cb62-4961-b2c8-0d48c75bc81f</BoundTo>
+      <DependentUpon>Get_Screening_Number.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36b2e061-0831-4452-86da-ec766e2ef30a</id>
+    </Compile>
     <Compile Include="SubjectsPage\Mark_CRF_Complete.cs">
       <DependentUpon>Mark_CRF_Complete.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1712,6 +1724,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>54c2a686-bc3a-42ff-9462-ad327ce84083</id>
       <recordtableid>a6856ecd-4f20-457b-ae22-9f15011544ca</recordtableid>
+    </None>
+    <None Include="SubjectsPage\Get_Screening_Number.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>5745f2b1-cb62-4961-b2c8-0d48c75bc81f</id>
+      <recordtableid>c4808230-ff00-4283-bb5c-8323779997e5</recordtableid>
     </None>
     <None Include="SubjectsPage\Mark_CRF_Complete.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>

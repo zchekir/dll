@@ -113,6 +113,18 @@ namespace RedCapCloud
             set { _EventDefName = value; }
         }
 
+        string _SecondSubject = "1001001";
+
+        /// <summary>
+        /// Gets or sets the value of variable SecondSubject.
+        /// </summary>
+        [TestVariable("02096c08-fb46-4a9d-893b-fd42eb0d037b")]
+        public string SecondSubject
+        {
+            get { return _SecondSubject; }
+            set { _SecondSubject = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -2415,6 +2427,7 @@ namespace RedCapCloud
             RepoItemInfo _saveandexitInfo;
             RepoItemInfo _dobfieldInfo;
             RepoItemInfo _subjectInfo;
+            RepoItemInfo _secondsubjectInfo;
             RepoItemInfo _subjectdetailInfo;
             RepoItemInfo _addeventbuttonInfo;
             RepoItemInfo _eventnamedropdownInfo;
@@ -2445,7 +2458,8 @@ namespace RedCapCloud
                 _englishusInfo = new RepoItemInfo(this, "EnglishUS", ".//li/a[@innertext='English - US']", 30000, null, "82622083-e411-4c96-8e50-a507d202f3ff");
                 _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "ce3a1313-e308-48ba-9e51-bf1c7045d365");
                 _dobfieldInfo = new RepoItemInfo(this, "DOBField", ".//div[#'gwtWrapper']//table/?/?/tr/td/input[@type='text' and @visible='True']", 30000, null, "6689b195-0563-43db-8134-742b2e9caf8f");
-                _subjectInfo = new RepoItemInfo(this, "Subject", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/?/?/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]/div/div/table/tbody/tr/td[2]/div[@innertext>$RandNum]", 240000, null, "4752a246-2d28-4500-98dd-1581b67cb1f6");
+                _subjectInfo = new RepoItemInfo(this, "Subject", ".//div[#'gwtWrapper']/div//table/tbody/tr/td[2]/div[@innertext>$RandNum]", 240000, null, "4752a246-2d28-4500-98dd-1581b67cb1f6");
+                _secondsubjectInfo = new RepoItemInfo(this, "SecondSubject", ".//div[#'gwtWrapper']/div//table//tbody/tr[1]//div[@innertext>'SC-']", 240000, null, "c8a07fbc-291b-45f3-ac7c-9b664d5f2ac1");
                 _subjectdetailInfo = new RepoItemInfo(this, "SubjectDetail", ".//div[#'gwtWrapper']//tbody//div[@innertext>'Subject Detail:']", 30000, null, "a115e54f-00d5-4722-a307-32b1c9389e2b");
                 _addeventbuttonInfo = new RepoItemInfo(this, "AddEventButton", ".//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']", 30000, null, "a78ed43b-5335-4118-ba47-3d3d39007510");
                 _eventnamedropdownInfo = new RepoItemInfo(this, "EventNameDropdown", ".//button[#'addEventDialogWidget_eventName_button']", 30000, null, "6b7c4f08-fd4b-4316-9894-7a845b096b59");
@@ -2757,6 +2771,30 @@ namespace RedCapCloud
                 get
                 {
                     return _subjectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SecondSubject item.
+            /// </summary>
+            [RepositoryItem("c8a07fbc-291b-45f3-ac7c-9b664d5f2ac1")]
+            public virtual Ranorex.DivTag SecondSubject
+            {
+                get
+                {
+                    return _secondsubjectInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SecondSubject item info.
+            /// </summary>
+            [RepositoryItemInfo("c8a07fbc-291b-45f3-ac7c-9b664d5f2ac1")]
+            public virtual RepoItemInfo SecondSubjectInfo
+            {
+                get
+                {
+                    return _secondsubjectInfo;
                 }
             }
 
