@@ -102,14 +102,17 @@ namespace RedCapCloud.General
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
             AddRawData(DataFile);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.iFrame.SkipButton' at Center.", repo.REDCapCloud.iFrame.SkipButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.iFrame.SkipButton' at Center.", repo.REDCapCloud.iFrame.SkipButtonInfo, new RecordItemIndex(2));
             repo.REDCapCloud.iFrame.SkipButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
             Delay.Duration(10000, false);
             
         }

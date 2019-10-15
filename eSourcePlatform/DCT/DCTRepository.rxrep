@@ -201,9 +201,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			id="063547b3-c1fe-47cf-84c0-38d75dad0d37"
 			name="ClosApp"
 			refimgid="014a1c04-ecd4-44fa-b594-0ef4c1631395"
-			refpath="/form[@title='Data Cleaning Tool - Google Chrome']/container[@accessiblename='Data Cleaning Tool - Google Chrome']/container[@accessiblename='Google Chrome']/container[2]/container[@accessiblename='Infobar Container']/element[@accessiblename='Infobar']"
 			searchtimeout="30000ms">
-				/form[@title~'^Data\ Cleaning\ Tool\ -\ Goog']/container[@accessiblename~'^Data\ Cleaning\ Tool\ -\ Goog']//container[@accessiblename='Infobar Container']/element[@accessiblename='Infobar']
+				/form[@title~'^Data\ Cleaning\ Tool\ -\ Goog']//element[@accessiblename='Infobar']
 			</item>
 			<basepath>
 				/form[@title~'^Data\ Cleaning\ Tool\ -\ Goog']
@@ -224,6 +223,376 @@ RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
 AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="3a3def39-3ad2-4434-8253-957aa95ab688"
+		isrooted="True"
+		name="OctopusDeploy"
+		refpath="/dom[@domain='octopus.cogstate.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="b64ce1a7-413e-4c7d-982c-e30258f01ef7"
+			name="ClickLogin"
+			refimgid="994f48fd-1540-4abb-b6aa-63eab18f3f17"
+			searchtimeout="30000ms">
+				/dom[@domain='octopus.cogstate.com']//div[@innertext='Sign in with Microsoft']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="webelement"
+			id="a9d7fbd8-9953-4653-b88a-a2c645191e5b"
+			name="SpanTagDCT"
+			refimgid="07ebb37b-862d-4f03-bc1e-425706d444a7"
+			searchtimeout="30000ms">
+				/dom[@domain='octopus.cogstate.com']//tag[@innertext='DCT']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="0a703cdb-20d6-4cf2-a43f-c75d08312d13"
+			name="DCT_VersionValidation"
+			refimgid="1efeaa6b-c5bc-4e2f-99c9-1c99aa9f021a"
+			searchtimeout="30000ms">
+				/dom[@domain='octopus.cogstate.com']//span[@innertext~'1.1.']
+			</item>
+			<basepath>
+				/dom[@domain='octopus.cogstate.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1"
+		isrooted="True"
+		name="OverviewOctopusDeployGoogleChrom"
+		refpath="/form[@title='Overview - Octopus Deploy - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="3354b5b3-888d-4a90-aca5-79270cb09f08"
+			name="ClosePage"
+			refimgid="10404966-d25d-4206-aab1-6e4daa6a4255"
+			refpath="/form[@title~'^Overview\ -\ Octopus\ Deploy']/container/container/container[2]/container[1]"
+			searchtimeout="30000ms">
+				/form[@title~'^Overview\ -\ Octopus\ Deploy']/container[@accessiblename~'^Overview\ -\ Octopus\ Deploy']/container/container[2]/container[1]
+			</item>
+			<basepath>
+				/form[@title~'^Overview\ -\ Octopus\ Deploy']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="8c57a700-52e3-43b0-bb42-688fd9e5c8b2"
+		isrooted="True"
+		name="REDCapCloud"
+		refpath="/dom[@domain='cgsqc.redcapcloud.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="1aaeabd0-d27c-4203-9346-f994a87bad37"
+			name="SearchStudyInRCC"
+			refimgid="8c444498-b7fc-4829-a38c-41a719264c55"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'filtersWidget_userInputWidget_studyName']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//input[#'filtersWidget_userInputWidget_studyName']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="e497ee0e-507a-42d4-8dbc-21b179383f59"
+			name="OpenRCCStudy"
+			refimgid="21318284-37c4-4b1e-9ed8-95358f6e014d"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext=$RCC_Study_Name]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="e5549fed-7e0e-4f0c-a146-6e802d0e81db"
+			name="ClickSubject"
+			refimgid="b0e3eb6b-fd7a-4251-bfff-70bc77c9d790"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[#'leftMenuButtons_navSubjects']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="eae74a37-456a-4128-b4d8-a07f476da351"
+			name="OpenSubject"
+			refimgid="024f1430-8f64-44bf-895e-4cc8e68a8c0c"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext='screening']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="divtag"
+			id="e1819309-f7a5-4368-aa69-80d60e74fc27"
+			name="OpenEvent_"
+			refimgid="c6dc7ed2-ebee-4c19-93c5-7bd3d8d7713d"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext='screening']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="fb671e3e-2a1e-498e-897a-9088a17ab693"
+			name="ClickStartTest"
+			refimgid="25975eb4-0c6c-4c82-87e7-33f0c045d6e1"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'subjectMatrixByEventsViewAbstract_rowCrfName_beginCogstateBattery']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[#'subjectMatrixByEventsViewAbstract_rowCrfName_beginCogstateBattery']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="0e9fb7e7-6075-4e54-adef-cd32527d42cc"
+			name="BeginAssessment"
+			refimgid="a42ed312-d222-4f70-90fc-d6b3931cc81a"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//span[@innertext='Begin Assessment']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="fa7f40ce-5cb8-4540-9101-1575b6fd6412"
+			name="ClcikYes"
+			refimgid="7f2432cf-74bb-4c5f-8b1a-f1fdd1283f3a"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'commonTools_buttonYes']/span[@innertext='Yes']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//button[#'commonTools_buttonYes']/span[@innertext='Yes']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="c30cba75-1d90-4d95-8844-12c93bb66285"
+			name="CompositeOutcome"
+			refimgid="f1fec012-6b12-46d0-8ff9-d354303fd03b"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//div[#'subjectMatrixByEventsViewAbstract_rowCrfName_cogstateBatteryCRF-CompositeOutcomes']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[#'subjectMatrixByEventsViewAbstract_rowCrfName_cogstateBatteryCRF-CompositeOutcomes']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="f357fa53-de66-4bc6-adcb-c4468e3a4ec0"
+			name="LoginUsername"
+			refimgid="560de935-ceef-4fbb-a1de-b0398038b76b"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'login_username']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//input[#'login_username']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="4a10d058-bb72-4a32-ab26-b56c3a0c5282"
+			name="LoginApplyButton"
+			refimgid="a2d4e945-7837-4745-b648-80809ad3a86a"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'login_applyButton']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//button[#'login_applyButton']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ba64f708-3983-4c1b-bee1-8c60e98a4433"
+			name="LoginPassword"
+			refimgid="0ead97fa-73f4-4d9f-80ed-fa64e61b40f4"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'login_password']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//input[#'login_password']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="f19e443a-dd21-4b96-8482-9449fbbd0ff5"
+			name="DataCollectionWidgetCheckboxComplete"
+			refimgid="22a098eb-ec70-451c-b808-1aaae07b56c7"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//i[#'dataCollectionWidget_checkboxComplete']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//i[#'dataCollectionWidget_checkboxComplete']
+			</item>
+			<basepath>
+				/dom[@domain='cgsqc.redcapcloud.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="67e4e3c1-b80e-4916-ac48-42c2ed4dae8b"
+		isrooted="True"
+		name="LeaveSite"
+		refpath="/form[@title='Leave site?']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="6cc905b8-3b2a-42c7-a7b1-d4088aad6607"
+			name="Leave"
+			refimgid="13b629a9-24a1-4dba-a04c-5cbc27a4f4ff"
+			refpath="/form[@title='Leave site?']/container[@accessiblename='']/container[2]/container[@accessiblerole='Pane']/button[@accessiblename='Leave']"
+			searchtimeout="30000ms">
+				/form[@title='Leave site?']/container[@accessiblename='']//button[@accessiblename='Leave']
+			</item>
+			<basepath>
+				/form[@title='Leave site?']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="29fb0691-ee86-4289-abe1-a78470d5da1d"
+		isrooted="True"
+		name="SignIn"
+		refpath="/dom[@domain='login.cogstate.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="6f77d72f-6ee7-44c9-ba1d-66990d0876c6"
+			name="PasswordInput"
+			refimgid="abf05fbd-d02b-473b-902e-50f3fb5b8250"
+			refpath="/dom[@domain='login.cogstate.com']//input[#'passwordInput']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.cogstate.com']//input[#'passwordInput']
+			</item>
+			<basepath>
+				/dom[@domain='login.cogstate.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="e1e54a0b-d167-4616-8313-fb55e887a8fc"
+		isrooted="True"
+		name="SignInToYourAccount"
+		refpath="/dom[@domain='login.microsoftonline.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef"
+			name="IdBtnBack"
+			refimgid="dd9d7661-a3c1-489e-9f7b-b7639eaf9387"
+			refpath="/dom[@domain='login.microsoftonline.com']//input[#'idBtn_Back']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'idBtn_Back']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
+			name="EnterUseName"
+			refimgid="bfe5d069-adec-410a-a960-95fbd37c531d"
+			refpath="/dom[1]//input[#'i0116']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+			</item>
+			<basepath>
+				/dom[@domain='login.microsoftonline.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -232,6 +601,11 @@ AAAASUVORK5CYII=
 		id="68bbda1b-c9d6-44b8-972e-350252c24d17"
 		name="DCTSubject">
 			test
+		</var>
+		<var
+		id="0a1f4511-792f-4cbf-818c-dcbe6257b7c8"
+		name="RCC_Study_Name">
+			zktest 0001
 		</var>
 	</variables>
 </repository>

@@ -79,6 +79,10 @@ namespace DCT
 
             Init();
 
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OverviewOctopusDeployGoogleChrom.ClosePage' at 1880;5.", repo.OverviewOctopusDeployGoogleChrom.ClosePageInfo, new RecordItemIndex(0));
+            //repo.OverviewOctopusDeployGoogleChrom.ClosePage.Click("1880;5");
+            //Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

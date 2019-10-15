@@ -43,6 +43,8 @@ namespace RedCapCloud.General
         {
             URL = "https://cgsqc.redcapcloud.com";
             Browser = "Chrome";
+            RCCUsername = "";
+            RCCPassword = "";
         }
 
         /// <summary>
@@ -79,6 +81,30 @@ namespace RedCapCloud.General
             set { _Browser = value; }
         }
 
+        string _RCCUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable RCCUsername.
+        /// </summary>
+        [TestVariable("61646111-5a50-4e40-ac19-d7184c8ca629")]
+        public string RCCUsername
+        {
+            get { return _RCCUsername; }
+            set { _RCCUsername = value; }
+        }
+
+        string _RCCPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable RCCPassword.
+        /// </summary>
+        [TestVariable("92e2ed6c-8fcc-4149-9e49-0dab38e81588")]
+        public string RCCPassword
+        {
+            get { return _RCCPassword; }
+            set { _RCCPassword = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -106,8 +132,11 @@ namespace RedCapCloud.General
             Init();
 
             Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, true);
+            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, true, false, true);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));
+            Delay.Duration(15000, false);
             
         }
 

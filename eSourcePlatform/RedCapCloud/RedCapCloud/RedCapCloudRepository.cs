@@ -218,6 +218,7 @@ namespace RedCapCloud
             RepoItemInfo _permissionstabInfo;
             RepoItemInfo _rolealreadyexistsInfo;
             RepoItemInfo _notificationpopupcloseInfo;
+            RepoItemInfo _signinInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -264,6 +265,7 @@ namespace RedCapCloud
                 _permissionstabInfo = new RepoItemInfo(this, "PermissionsTab", ".//div[#'studyBaseWidget_topLinkName_permissions']/a[@innertext='Permissions']", 30000, null, "05db3a9e-cb69-46e3-85fd-d12a3f8a5e63");
                 _rolealreadyexistsInfo = new RepoItemInfo(this, "RoleAlreadyExists", "body/div//div[@innertext='Role already exists']", 30000, null, "b4a72825-ea9d-4078-a609-1ae22df65884");
                 _notificationpopupcloseInfo = new RepoItemInfo(this, "NotificationPopupClose", "body//div[@class='popupContent']//table//div[@innertext='Close']", 30000, null, "7e655126-9a30-49e2-8991-fd5a20df20be");
+                _signinInfo = new RepoItemInfo(this, "SignIn", ".//button[#'login_applyButton']/span[@innertext='Sign in']", 30000, null, "e6057ea9-3b47-4e33-8628-77fffcc5d58d");
             }
 
             /// <summary>
@@ -887,6 +889,30 @@ namespace RedCapCloud
                 get
                 {
                     return _notificationpopupcloseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SignIn item.
+            /// </summary>
+            [RepositoryItem("e6057ea9-3b47-4e33-8628-77fffcc5d58d")]
+            public virtual Ranorex.SpanTag SignIn
+            {
+                get
+                {
+                    return _signinInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SignIn item info.
+            /// </summary>
+            [RepositoryItemInfo("e6057ea9-3b47-4e33-8628-77fffcc5d58d")]
+            public virtual RepoItemInfo SignInInfo
+            {
+                get
+                {
+                    return _signinInfo;
                 }
             }
 

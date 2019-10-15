@@ -92,7 +92,17 @@ namespace DCT
 
             Init();
 
-            PasswordInput(DCT_Password);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            //Delay.Duration(500, false);
+            
+            //PasswordInput(DCT_Password);
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
+            //Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCT_Password' with focus on 'SignIn.PasswordInput'.", repo.SignIn.PasswordInputInfo, new RecordItemIndex(3));
+            repo.SignIn.PasswordInput.PressKeys(DCT_Password);
             Delay.Milliseconds(0);
             
         }

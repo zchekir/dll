@@ -37,14 +37,14 @@ namespace DCT
         //Enter Testidentifier
         public void TestInd(string TestIdn)
         {
-             Delay.Milliseconds(500);
+             Delay.Milliseconds(400);
              InputTag EnterTestidentifier = "//input[@id='findByAssessmentId']";
         	 EnterTestidentifier.Click();
              Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
-             
+             EnterTestidentifier.PressKeys(TestIdn);
         }
 
-        public void Key_sequence_EnterTestIdentifier(RepoItemInfo inputtagInfo)
+        public void Key_sequence_EnterTestIdentifier(RepoItemInfo inputtagInfo )
         {
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'inputtagInfo'.", inputtagInfo);
             inputtagInfo.FindAdapter<InputTag>().PressKeys("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");

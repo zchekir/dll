@@ -37,7 +37,10 @@ namespace CSP.AddWorkflowPage
 
 
         public void SelectBatteryOption()
+        	
         {
+        	Delay.Milliseconds(300);
+        	
         	//click on dropdown to expand the list of batteries
         	Report.Log(ReportLevel.Info,"Mouse click on WorkflowBatteryDropdown");
         	repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowBatteryDropdown.Click();

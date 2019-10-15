@@ -41,7 +41,7 @@ namespace DCT
         {
            
         	
-        	if (Host.Local.TryFindSingle<InputTag>("//*[@id='i0116']", new Duration(2000) ,out EnterUsername)){
+        	if (Host.Local.TryFindSingle<InputTag>("//*[@id='i0116']", new Duration(3000) ,out EnterUsername)){
                
                 EnterUsername.Click();
                 EnterUsername.PressKeys(UserName);

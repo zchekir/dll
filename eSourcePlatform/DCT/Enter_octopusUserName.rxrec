@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d33c518e-feeb-4812-b2d1-449e78e7f217"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Enter_octopusUserName
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Enter_octopusUserName"
+	namespace="DCT">
+	</codegen>
+	<variables>
+		<var
+		id="43396b5e-46ec-4f2f-8ce5-9a1d505292bd"
+		name="OctopustUsername">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Enter_octopusUserName"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="E_Username"
+		namespace="DCT"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ed542770-be75-4309-8bf4-ea36301d41ac">
+				<argument
+				argname="UserName"
+				id="7b0b4af2-9fe3-4634-a4a4-24a5e5ef883a"
+				variable="OctopustUsername">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+	name="DCTRepository"
+	relativepath="DCTRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="DCTRepository"
+		namespace="DCT">
+		</codegen>
+		<rootfolder
+		id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Enter_octopusUserName.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1222,6 +1222,16 @@ rxversion="8.3">
 			searchtimeout="30000ms">
 				/dom[@domain=$DOM]/body//div[@class='popupContent']//table//div[@innertext='Close']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="e6057ea9-3b47-4e33-8628-77fffcc5d58d"
+			name="SignIn"
+			refimgid="85d34df2-6901-4a57-a6a7-34faa9c5f3e8"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'login_applyButton']/span[@innertext='Sign in']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//button[#'login_applyButton']/span[@innertext='Sign in']
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>

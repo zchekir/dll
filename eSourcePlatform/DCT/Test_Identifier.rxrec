@@ -33,9 +33,25 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="c4059354-9d6e-454f-b887-d90fb02f6ac3">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="TestIdentifier">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
 		classname="Test_Identifier"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="False"
 		methodname="TestInd"
 		namespace="DCT"
@@ -61,7 +77,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Test_Identifier"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Key_sequence_EnterTestIdentifier"
 		namespace="DCT"

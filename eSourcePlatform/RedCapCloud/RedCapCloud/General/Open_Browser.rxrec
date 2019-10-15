@@ -37,6 +37,14 @@ rxversion="8.3">
 		name="Browser">
 			Chrome
 		</var>
+		<var
+		id="61646111-5a50-4e40-ac19-d7184c8ca629"
+		name="RCCUsername">
+		</var>
+		<var
+		id="92e2ed6c-8fcc-4149-9e49-0dab38e81588"
+		name="RCCPassword">
+		</var>
 	</variables>
 	<recorditems>
 		<openwebsiterecorditem
@@ -45,7 +53,7 @@ rxversion="8.3">
 		clearcache="False"
 		clearcookies="False"
 		enabled="True"
-		incognito="False"
+		incognito="True"
 		instrument="True"
 		killexisting="False"
 		maximized="True"
@@ -66,6 +74,15 @@ rxversion="8.3">
 				http://www.ranorex.com
 			</url>
 		</openwebsiterecorditem>
+		<explicitdelayitem
+		duration="15000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"

@@ -35,7 +35,7 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="EnterEmail"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="UserNameInput"
 		namespace="DCT"
@@ -59,6 +59,29 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="7fd64f9f-dea9-4200-aa84-9946fce6133b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="DCT_USERNAME">
+				</binding>
+			</bindings>
+			<info
+			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+				</path>
+			</info>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

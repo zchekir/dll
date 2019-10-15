@@ -39,7 +39,7 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="DCT_URL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="DCTLogin"
 		namespace="DCT"
@@ -73,6 +73,29 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<openwebsiterecorditem
+		args=""
+		browser="Chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="True"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Url"
+				variable="DCTURL">
+				</binding>
+			</bindings>
+			<url>
+				http://www.ranorex.com
+			</url>
+		</openwebsiterecorditem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -86,6 +109,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
+		<explicitdelayitem
+		duration="1ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

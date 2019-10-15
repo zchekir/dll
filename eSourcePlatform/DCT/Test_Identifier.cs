@@ -92,11 +92,13 @@ namespace DCT
 
             Init();
 
-            //TestInd(TestIdentifier);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(0));
             
-            Key_sequence_EnterTestIdentifier(repo.DataCleaningTool.EnterTestIdentifierInfo);
+            TestInd(TestIdentifier);
             Delay.Milliseconds(0);
+            
+            //Key_sequence_EnterTestIdentifier(repo.DataCleaningTool.EnterTestIdentifierInfo);
+            //Delay.Milliseconds(0);
             
         }
 

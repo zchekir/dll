@@ -79,11 +79,14 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickFindByAssessmentId' at Center.", repo.DataCleaningTool.ClickFindByAssessmentIdInfo, new RecordItemIndex(0));
-            repo.DataCleaningTool.ClickFindByAssessmentId.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DataCleaningTool.ClickFindByAssessmentId' at Center.", repo.DataCleaningTool.ClickFindByAssessmentIdInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.ClickFindByAssessmentId.DoubleClick();
             Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.OpenResults' at Center.", repo.DataCleaningTool.OpenResultsInfo, new RecordItemIndex(1));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.OpenResults' at Center.", repo.DataCleaningTool.OpenResultsInfo, new RecordItemIndex(2));
             //repo.DataCleaningTool.OpenResults.Click();
             //Delay.Milliseconds(200);
             

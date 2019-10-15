@@ -33,5 +33,13 @@ namespace CSP.AddWorkflowPage
             // Your recording specific initialization code goes here.
         }
 
+        public void Mouse_Click_PublishButton(RepoItemInfo itagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'itagInfo' at 13;13.", itagInfo);
+            itagInfo.FindAdapter<ITag>().Click("13;13");
+            
+            Delay.Milliseconds(300);
+        }
+
     }
 }

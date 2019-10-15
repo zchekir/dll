@@ -100,11 +100,11 @@ namespace RedCapCloud.AddSubjectPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$RandNum) on item 'REDCapCloud.SubjectsPage.Subject'.", repo.REDCapCloud.SubjectsPage.SubjectInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.REDCapCloud.SubjectsPage.SubjectInfo, "InnerText", RandNum);
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$RandNum) on item 'REDCapCloud.SubjectsPage.Subject'.", repo.REDCapCloud.SubjectsPage.SubjectInfo, new RecordItemIndex(0));
+            //Validate.AttributeEqual(repo.REDCapCloud.SubjectsPage.SubjectInfo, "InnerText", RandNum);
+            //Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Subject Added Successfully", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
+            //Report.Screenshot(ReportLevel.Info, "User", "Subject Added Successfully", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
             
         }
 

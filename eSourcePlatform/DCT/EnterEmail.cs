@@ -92,7 +92,11 @@ namespace DCT
 
             Init();
 
-            UserNameInput(DCT_USERNAME);
+            //UserNameInput(DCT_USERNAME);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCT_USERNAME' with focus on 'SignInToYourAccount.EnterUseName'.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(1));
+            repo.SignInToYourAccount.EnterUseName.PressKeys(DCT_USERNAME);
             Delay.Milliseconds(0);
             
         }

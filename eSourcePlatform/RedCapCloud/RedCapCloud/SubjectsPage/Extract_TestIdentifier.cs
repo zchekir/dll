@@ -113,6 +113,10 @@ namespace RedCapCloud.SubjectsPage
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.ReloadSiteDialog.SelfInfo, repo.ReloadSiteDialog.ReloadButtonInfo);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'REDCapCloud'.", repo.REDCapCloud.SelfInfo, new RecordItemIndex(4));
+            Host.Current.CloseApplication(repo.REDCapCloud.Self, new Duration(0));
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
