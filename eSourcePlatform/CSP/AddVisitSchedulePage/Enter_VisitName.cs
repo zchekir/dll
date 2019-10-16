@@ -54,18 +54,6 @@ namespace CSP.AddVisitSchedulePage
 
 #region Variables
 
-        string _VisitName;
-
-        /// <summary>
-        /// Gets or sets the value of variable VisitName.
-        /// </summary>
-        [TestVariable("e06ae446-fbaa-497e-bf27-1f2b4ddc196e")]
-        public string VisitName
-        {
-            get { return _VisitName; }
-            set { _VisitName = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
@@ -74,6 +62,16 @@ namespace CSP.AddVisitSchedulePage
         {
             get { return repo.CSPDOM; }
             set { repo.CSPDOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable VisitName.
+        /// </summary>
+        [TestVariable("e06ae446-fbaa-497e-bf27-1f2b4ddc196e")]
+        public string VisitName
+        {
+            get { return repo.VisitName; }
+            set { repo.VisitName = value; }
         }
 
 #endregion

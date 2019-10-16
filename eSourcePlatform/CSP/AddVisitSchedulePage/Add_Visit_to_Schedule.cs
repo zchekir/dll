@@ -79,6 +79,16 @@ namespace CSP.AddVisitSchedulePage
         }
 
         /// <summary>
+        /// Gets or sets the value of variable VisitName.
+        /// </summary>
+        [TestVariable("69377243-bc09-48cc-bc4b-12f3a7002583")]
+        public string VisitName
+        {
+            get { return repo.VisitName; }
+            set { repo.VisitName = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable WorkflowName.
         /// </summary>
         [TestVariable("955e2610-9e8a-4983-b74c-eb083738db5f")]

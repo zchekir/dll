@@ -267,6 +267,18 @@ namespace CSP
             set { _CSPUsername = value; }
         }
 
+        string _VisitName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable VisitName.
+        /// </summary>
+        [TestVariable("69377243-bc09-48cc-bc4b-12f3a7002583")]
+        public string VisitName
+        {
+            get { return _VisitName; }
+            set { _VisitName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -3037,7 +3049,7 @@ namespace CSP
                 _visitschedulevisitstatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleVisitStatusDropdown", ".//select[@id~'formly_[0-9]+_select_visitStatus_3']", 30000, null, "d7fb7df4-d20f-46a6-a2a7-ad66754684be");
                 _visitschedulevisitsessioncodeInfo = new RepoItemInfo(this, "VisitScheduleVisitSessionCode", ".//input[@id~'formly_[0-9]+_input_code_4']", 30000, null, "c2f213dd-9ca4-4fd3-862d-cb9066680ed4");
                 _rcceventdefinitionvisitInfo = new RepoItemInfo(this, "RCCEventDefinitionVisit", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='RCCEventDefinitions']", 30000, null, "be5b3f27-cfbc-4a0d-a8d2-b4c9df577a78");
-                _visit1Info = new RepoItemInfo(this, "Visit1", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='Visit 1']", 30000, null, "6d4d528a-8639-493c-866c-405f383143ae");
+                _visit1Info = new RepoItemInfo(this, "Visit1", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$VisitName]", 30000, null, "6d4d528a-8639-493c-866c-405f383143ae");
                 _visitschedulenameminlengthvalidationInfo = new RepoItemInfo(this, "VisitScheduleNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
                 _visitsessionidfieldInfo = new RepoItemInfo(this, "VisitSessionIDField", ".//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']", 30000, null, "fab623de-d4cc-4b0f-ba8a-762fa57e6154");
                 _visitscheduleaddvisitbuttonInfo = new RepoItemInfo(this, "VisitScheduleAddVisitButton", ".//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src>'https://'+$CSPDOM+'/asset/images/add_icon_']", 30000, null, "1a6e3a4c-b365-4758-a5c7-038f791a62d3");
@@ -5373,7 +5385,7 @@ namespace CSP
                 _visitscheduletitleInfo = new RepoItemInfo(this, "VisitScheduleTitle", ".//p[@innertext~$VisitScheduleName+$RandNum]", 30000, null, "68fde448-2ac4-4d9a-a924-cb31763f768b");
                 _workflowtitleInfo = new RepoItemInfo(this, "WorkflowTitle", ".//p[@innertext~$WorkflowName+$RandNum]", 30000, null, "492d690a-ab43-4639-8890-7f3917a948ff");
                 _studycardtitleInfo = new RepoItemInfo(this, "StudyCardTitle", ".//p[@innertext~$ProjectName+$RandNum]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
-                _rcceventdefinitionsInfo = new RepoItemInfo(this, "RCCEventDefinitions", ".//p[@innertext~'Visit Schedule']", 30000, null, "0acc40e9-f3ad-4a15-910a-798d3be303e6");
+                _rcceventdefinitionsInfo = new RepoItemInfo(this, "RCCEventDefinitions", ".//p[@innertext~'RCCEventDefinitions']", 30000, null, "0acc40e9-f3ad-4a15-910a-798d3be303e6");
             }
 
             /// <summary>

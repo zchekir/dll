@@ -881,7 +881,7 @@ rxversion="8.3">
 				name="Visit1"
 				refimgid="c9a4103b-43e2-4007-b34d-7d06cf1be6b6"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='Visit 1']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$VisitName]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -1640,7 +1640,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="RCCEventDefinitions"
 				refimgid="3783051e-08e5-4b34-aab9-5bb3d3b2940f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~'Visit Schedule']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~'RCCEventDefinitions']
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']
@@ -2840,6 +2840,10 @@ AAAASUVORK5CYII=
 		<var
 		id="cca33cb1-e6e4-4dea-927e-63ce1b157653"
 		name="CSPUsername">
+		</var>
+		<var
+		id="69377243-bc09-48cc-bc4b-12f3a7002583"
+		name="VisitName">
 		</var>
 	</variables>
 </repository>

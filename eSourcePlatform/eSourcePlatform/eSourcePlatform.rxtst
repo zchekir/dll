@@ -762,6 +762,18 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
+					variableid="69377243-bc09-48cc-bc4b-12f3a7002583"
+					variablename="VisitName">
+					</var>
+					<var
+					dataname="RCCVisitScheduleName"
+					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					variableid="f21fe27d-9d06-425a-ac88-1991573cee47"
+					variablename="VisitScheduleName">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1134,6 +1146,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			datasource="RCCConnector"
 			id="68ffcef6-9f39-4bb8-bad5-b8883246139c"
 			name="Configure_VisitSchedule">
 			</testcase>

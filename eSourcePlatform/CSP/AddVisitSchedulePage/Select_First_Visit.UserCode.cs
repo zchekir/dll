@@ -39,7 +39,7 @@ namespace CSP.AddVisitSchedulePage
         {
         	while (!VisitOne.Exists(new Duration(500))) {
         		Report.Info("Visit does not exist, reloading page");
-        		repo.CogstateSolutionPlatform.Breadcrumbs.VisitSchedule1Breadcrumb.Click();
+        		repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb.Click();
         		Delay.Duration(new Duration(30000));
         	}
         	
