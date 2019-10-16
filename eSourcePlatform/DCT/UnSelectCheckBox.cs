@@ -41,7 +41,6 @@ namespace DCT
         /// </summary>
         public UnSelectCheckBox()
         {
-            State = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace DCT
         }
 
 #region Variables
-
-        string _State;
-
-        /// <summary>
-        /// Gets or sets the value of variable State.
-        /// </summary>
-        [TestVariable("157a58e9-e18a-47f4-961f-6d1b091e52c8")]
-        public string State
-        {
-            get { return _State; }
-            set { _State = value; }
-        }
 
 #endregion
 

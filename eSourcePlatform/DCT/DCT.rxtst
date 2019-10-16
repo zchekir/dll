@@ -574,6 +574,7 @@ rxversion="8.3">
 			name="Add_Second_Subject">
 			</testcase>
 			<testcase
+			datasource="RCCConnector"
 			id="2776a8e3-3d1e-4740-8233-561dee78703b"
 			name="Configure_VisitSchedule"
 			warnunboundvariables="False">
@@ -1267,6 +1268,14 @@ rxversion="8.3">
 			name="RCC_ExistingStudy"
 			ref="01782ea1-b135-47ac-aa9f-bc0f02741b5b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCC_Study_Name"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="50b5218c-7c53-428d-8045-c82dd65fe5a3"
+					variablename="RCC_Study_Name">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="550ab6eb-4a1a-46be-b8d9-ace62791ca30"
@@ -3162,6 +3171,18 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="RCCVisitScheduleName"
+					datasourceid="36c84863-c4e2-4980-8687-22e322546024"
+					variableid="f21fe27d-9d06-425a-ac88-1991573cee47"
+					variablename="VisitScheduleName">
+					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="69377243-bc09-48cc-bc4b-12f3a7002583"
+					variablename="VisitName">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -4891,6 +4912,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					VisitScheduleName
+				</column>
+				<column>
+					VisitName
 				</column>
 				<column>
 					RCCVisitScheduleName
