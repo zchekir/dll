@@ -626,6 +626,15 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="76cba7cf-f54a-4c20-8edb-614644e18a77"
+			name="SelectAccount"
+			refimgid="72c01967-cc36-487e-8a88-ec2d0f8c2a64"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//div[@innertext='zchekir@cogstate.com']
+			</item>
 			<basepath>
 				/dom[@domain='login.microsoftonline.com']
 			</basepath>
@@ -708,6 +717,126 @@ sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
 MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
 RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
 AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="83d87542-91e4-4062-831c-e71dae0b7938"
+		isrooted="True"
+		name="KuduServices"
+		refpath="/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="67cbad4f-5b5c-41d7-a22b-8b0b8a2f529d"
+			name="DebugConsole"
+			refimgid="e43d1e18-e26f-47cc-bb82-bf951df4df08"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='Debug console ']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="63637764-b1c2-45b3-96c3-243481d396a3"
+			name="PowerShell"
+			refimgid="d5f04cfa-b8b1-411b-9f4e-7a46a08cee9f"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='PowerShell']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="cb458012-66d2-43c8-90cf-f9dc911f0576"
+			name="PowerShallConsol"
+			refimgid="2d16a453-05d8-40ca-b3b2-77248f6a6204"
+			refpath="/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']/div/div/div[2]/span[3]/span"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="ba6ef5cd-ae29-46fd-a862-13b41632bc4d"
+			name="AzureLogout"
+			refimgid="a02ee474-82bc-4cfd-9587-6108f623ae59"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='zchekir@cogstate.com']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae"
+			name="Logout"
+			refimgid="4e396423-51da-4fca-9d99-8d37eb87f18c"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='Logout']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="49370b0d-946f-4152-89ea-e31cf4c37984"
+			name="DCTValidationVersion"
+			refimgid="720204f2-42c2-4068-8e05-4cb3484eaef6"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//div[@innertext~'1.2']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="ed9435cd-5012-46e1-a260-05d5ba9de604"
+			name="RCCHubValidation"
+			refimgid="7aa2a9eb-ecea-495b-bd52-16686ee7ab06"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//div[@innertext~'2.0.0-rc']
+			</item>
+			<basepath>
+				/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="9c255fff-d335-4a60-8ad7-5a36d00c9018"
+		isrooted="True"
+		name="WebDocument184HowToExecuteAzureRE"
+		refpath="/dom[4]"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/dom[4]
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

@@ -17,6 +17,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="01f0cd48-303f-4869-8c81-c029010f7253"
+			name="ClickNo"
+			ref="94c76c7b-5165-44e9-93e8-337c36c1af4f"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			id="020433af-5ef1-42f8-b2e7-9b5d0a7b40ef"
 			name="Restore_Assessment">
@@ -41,6 +47,10 @@ rxversion="8.3">
 			ref="e67fa75b-7272-4021-979e-8af5bce6efc2"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="0399f102-7b67-4b60-bb98-d78d1731fb5a"
+			name="Select_LoginUser1">
+			</testcase>
 			<setup
 			id="03bfb2e4-3970-425a-b58b-2e242280ce8a"
 			name="setup">
@@ -87,6 +97,12 @@ rxversion="8.3">
 			id="060f0afb-2dac-4993-bb5b-0ce2f49d6374"
 			name="Confirm"
 			ref="e67fa75b-7272-4021-979e-8af5bce6efc2"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="06b78b92-db82-48c7-a0ab-37e4cf4c25cc"
+			name="Logout_Azure"
+			ref="72bcb94e-5a74-4ad7-a339-a7fc508ab8d5"
 			type="Recording">
 			</testmodule>
 			<smartfoldernode
@@ -161,6 +177,10 @@ rxversion="8.3">
 			ref="12c9321e-d57b-4f26-abb0-e494f761864b"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="0fd706ac-cde2-461e-a4e2-67730392a49a"
+			name="Validate_RCC_Version">
+			</smartfoldernode>
 			<testmodule
 			id="106c2957-5d6b-4df8-bb70-7a0fb7d847fb"
 			name="OpenCompositOutcome"
@@ -171,6 +191,12 @@ rxversion="8.3">
 			id="10a3edb0-f297-4d97-a47e-24a80519e7d0"
 			name="DCTRederectToHTTPS"
 			ref="12fde51f-6680-4824-91b6-f1e17bc3e95a"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1104b5a6-e6d2-4b42-81f8-079c40fc3441"
+			name="SelectUserName"
+			ref="366ec434-a4de-4276-9c8c-e6703eef9698"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -263,6 +289,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="160fec8c-824a-4e3b-9ee7-ddbbf4b2bfd6"
+			name="RCCHubValidation"
+			ref="7c929a2d-0e53-4d8a-bbe6-61f3664926d6"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="16f75d2e-bd8e-4668-985c-14f5025f168c"
 			name="Click_NextButton1">
@@ -297,6 +329,16 @@ rxversion="8.3">
 			id="192b4006-35c3-40a2-ba22-c816b1ba02f3"
 			name="ClickRButton"
 			ref="8f670042-56e3-46fe-ac01-db72cef2387c"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="199c36dc-6c09-4166-ad54-5c04299e6fee"
+			name="EnterPassword1">
+			</testcase>
+			<testmodule
+			id="1a6664a7-d504-4a15-b414-7c1bddeee981"
+			name="DebugConsole"
+			ref="16b1546b-c467-4c79-af1a-70a9f12392b6"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -385,7 +427,7 @@ rxversion="8.3">
 			</setup>
 			<testmodule
 			id="1f30352f-d063-4f39-b020-57a6ba1a955d"
-			name="Clcik_Yes"
+			name="Click_Yes"
 			ref="25bc1dc7-9054-4fd0-98c9-51085bc07402"
 			type="Recording">
 			</testmodule>
@@ -551,6 +593,26 @@ rxversion="8.3">
 					name="SubjectNumber"
 					value="screen_1">
 					</param>
+					<param
+					name="AzureURL"
+					value="https://cgst-qc-orr-hub.scm.azurewebsites.net/">
+					</param>
+					<param
+					name="HubVersion"
+					value="(get-item -Path 'D:\home\site\wwwroot\app_data\jobs\continuous\*\Cogstate.*.exe').VersionInfo">
+					</param>
+					<param
+					name="ExpectedDCTVersion"
+					value="1 . 2 . 0 - r c . 9.7.8 ">
+					</param>
+					<param
+					name="RCCVersionQuery "
+					value="(get-item -Path 'D:\home\site\wwwroot\app_data\jobs\continuous\RedCapAdapterJobs\Cogstate.Integration.RedCap.BusinessLogic.dll').VersionInfo">
+					</param>
+					<param
+					name="ExpectedRCCVersion"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -585,6 +647,10 @@ rxversion="8.3">
 			ref="8f670042-56e3-46fe-ac01-db72cef2387c"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="27fef7d5-eb3b-4046-801f-f5b69473e6e0"
+			name="CDMKdu1">
+			</testcase>
 			<testmodule
 			id="2844d990-f4cc-4ddb-8555-88a407742ae6"
 			name="ClickNextButton"
@@ -605,6 +671,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="28f46e32-3bbc-491f-9a3f-aa10ffbbc718"
+			name="Click_DebugConsole1">
+			</testcase>
 			<testmodule
 			id="2947a3ea-02c0-4df7-8cb8-154b96fdf22d"
 			name="Select_Site"
@@ -662,8 +732,16 @@ rxversion="8.3">
 			name="ClickButton_">
 			</testcase>
 			<testcase
+			id="2f7b30b6-172c-4e4c-8685-eca09946bec3"
+			name="ClickNoButton11">
+			</testcase>
+			<testcase
 			id="32bf6346-39d4-4657-b0ec-4f04a9ede731"
 			name="Get_TestIdentifier">
+			</testcase>
+			<testcase
+			id="332008d8-2d5a-4719-9c86-ceaa05bf2efa"
+			name="LogoutAzure1">
 			</testcase>
 			<testcase
 			id="33597456-93b1-4215-a1b8-c426e41c35bb"
@@ -808,6 +886,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="394a70e6-d8dd-43e9-a5d2-624e88a0763d"
+			name="Select_LoginUser">
+			</testcase>
 			<testmodule
 			id="39fdc7f0-ea81-4159-93a1-1932650bd1e9"
 			name="Click_ImportDataDictionary"
@@ -821,6 +903,12 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="3a6d2a75-f7b6-4c96-b07b-c8ac85f2a6f2"
+			name="DebugConsole"
+			ref="16b1546b-c467-4c79-af1a-70a9f12392b6"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="3b429ab9-b4f8-4dd7-bce4-92abec680eae"
@@ -893,6 +981,12 @@ rxversion="8.3">
 			name="Add_Instrument_to_Event">
 			</testcase>
 			<testmodule
+			id="40ba1372-cc4f-42af-8505-def16ec2ec71"
+			name="Logout_Azure"
+			ref="72bcb94e-5a74-4ad7-a339-a7fc508ab8d5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="40cc19d1-3aec-4369-9ba6-925bdef8a767"
 			name="VersionValidation"
 			ref="497347f5-f94c-4c1b-adad-bee095e10467"
@@ -919,6 +1013,30 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="44f75449-5e9c-48f1-8284-77dd059aa095"
+			name="RCC_Version"
+			ref="9aa4db57-0c36-48f5-b0e4-034541eb1b12"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCVersionQuery "
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="b1c7a023-5abd-4a21-8861-19c0f0ab012c"
+					variablename="RCCVersionQuery_">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="45b56e6f-aefe-452e-9510-e5707a0db99a"
+			name="OpenPowerShall">
+			</testcase>
+			<testmodule
+			id="4621cc99-f70a-455b-ab36-1eef0b9c4283"
+			name="PowerShall"
+			ref="e5be21a5-ba81-49ed-8dca-878f7e822eb4"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="469b0ba5-dc48-44bf-a39b-dc2f7328df8b"
@@ -958,6 +1076,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="472d1019-2179-4395-9540-42b7d53cc0ed"
+			name="EnterPassword">
+			</testcase>
 			<testmodule
 			id="4751f434-d272-4185-84c8-8a9b623dda03"
 			name="E_Visit"
@@ -1097,6 +1219,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="4c9c9107-df35-4a98-944d-4bd377df1a27"
+			name="CDMKdu">
+			</testcase>
 			<testmodule
 			id="4cede187-169d-48c6-852a-e0fbccfefa59"
 			name="Click_Add_Button"
@@ -1295,6 +1421,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="56d49db8-064a-401a-9c0e-0cee903748a5"
+			name="ValidateDCTVersion">
+			</testcase>
 			<testmodule
 			id="579055d8-0685-47f8-859b-bfe428976a84"
 			name="Click_SaveButton"
@@ -1308,6 +1438,12 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="581e251c-9159-48b0-a50a-2f360babaa99"
+			name="ClickNo"
+			ref="94c76c7b-5165-44e9-93e8-337c36c1af4f"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="58901188-271c-4822-8f92-e8784cdd1036"
@@ -1340,6 +1476,10 @@ rxversion="8.3">
 			<testcase
 			id="5f0f4458-3f1d-4e74-9716-22522793de4b"
 			name="ConfirmTheMove">
+			</testcase>
+			<testcase
+			id="607d60fd-d9ba-49ae-8fea-457a1ed2a5ea"
+			name="ClickSingin">
 			</testcase>
 			<testmodule
 			id="6146e32f-5020-4d63-a717-5d02b53cf82a"
@@ -1469,6 +1609,20 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6a3db281-f014-4fde-96d4-47bc6ca07a96"
+			name="EnterAzurePassword"
+			ref="ea399d48-376a-48ca-be23-6753d5fe4e10"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OctopusPassword"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="2d566e3b-6a30-4d9c-94f0-3b4848ae1ea3"
+					variablename="OctopusPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1663,6 +1817,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="77e29faa-c97b-44bc-8716-2d8f13ba9107"
+			name="ClickNoButton1">
+			</testcase>
 			<testmodule
 			id="77f1b456-ca78-4f0d-98f7-6ae1bc757805"
 			name="Click_Tools_Menu"
@@ -1700,6 +1858,10 @@ rxversion="8.3">
 			<testcase
 			id="7c337c7d-742f-49d2-a52b-3d27700c8c67"
 			name="Search_RCC_Study">
+			</testcase>
+			<testcase
+			id="7e2dd925-1d5b-40c9-8dee-28af581ed362"
+			name="OpenPowerShall1">
 			</testcase>
 			<testmodule
 			id="7ec15c65-3525-40d6-b554-ad73a3129fb5"
@@ -2028,6 +2190,24 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="96727843-5375-40e5-b6d4-4ac673ac1120"
+			name="ClickSingin1">
+			</testcase>
+			<testmodule
+			id="9677960f-a754-4fbc-a973-c33589dada92"
+			name="Recording1"
+			ref="9f2b6e02-9486-49ab-bcbe-42714eb80706"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="HubVersion"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="9a8929ee-dc8a-46dc-99f0-46052dbbd846"
+					variablename="HubVersion">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="985e7b67-2df9-4b6e-9fb4-b08acf13ffaf"
 			name="Select_UseCustomInstrument_Checkbox"
@@ -2215,6 +2395,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="a7ab6088-9c4e-471e-b0ad-aaa4b7974b74"
+			name="Validate_DCT_Version_">
+			</smartfoldernode>
 			<testmodule
 			id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
 			name="Test_Identifier"
@@ -2385,6 +2569,12 @@ rxversion="8.3">
 			id="af93e4f0-5d03-4804-b229-74b89c267cc5"
 			name="ClickRestoreButton"
 			ref="b51f2390-cb01-4ca0-ac2f-d009a496b014"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b0476334-2fb0-4e98-b80f-0d3bbf392115"
+			name="Click_Signin"
+			ref="5936c9bf-f367-4cbc-929c-7912587f100d"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -2675,6 +2865,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c10f14dc-76aa-469b-8675-038e9748a669"
+			name="DCTVersion"
+			ref="c0eda39e-1efb-45e4-b52f-162a54a54faa"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExpectedDCTVersion"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="05074dc9-4fcb-4f39-a7f4-723d4c06139a"
+					variablename="ExpectedDCTVersion">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c1694796-7902-4b10-9a28-e095524ccc1c"
 			name="Extract_API_Key"
 			ref="689be54e-2f14-4a07-b458-9c6507e01aaa"
@@ -2716,6 +2920,10 @@ rxversion="8.3">
 			<testcase
 			id="c3f1746b-6563-460b-99ac-0c568b75adb7"
 			name="ClickSubmit">
+			</testcase>
+			<testcase
+			id="c52f331f-4f6d-4d85-b273-fb953e5df84f"
+			name="Click_DebugConsole">
 			</testcase>
 			<testmodule
 			id="c57e9faf-7518-4c4a-86ce-cc665b44a7b7"
@@ -2764,6 +2972,12 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="c6b4f318-7477-4736-984d-c5cd9de1f925"
+			name="Click_Signin"
+			ref="5936c9bf-f367-4cbc-929c-7912587f100d"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="c92697cf-5d8d-403a-bb52-5b22a895aa3e"
@@ -2931,6 +3145,44 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d0083ecb-7de0-4391-871c-4801bc5cdcf2"
+			name="EnterAzurePassword"
+			ref="ea399d48-376a-48ca-be23-6753d5fe4e10"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OctopusPassword"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="2d566e3b-6a30-4d9c-94f0-3b4848ae1ea3"
+					variablename="OctopusPassword">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d0219ff3-7e92-4ae5-a3b0-a08747a49b32"
+			name="Hubversion"
+			ref="3c58db6f-d18b-4efc-9f55-1aa651e51eff"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AzureURL"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="20d68c2c-2be2-45b9-82cc-82e44ec453b2"
+					variablename="AzureURL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1"
+					variablename="Browser">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="d1ff74ae-409a-4bcd-b890-6eaba1b26fc0"
+			name="NavigateTo_Azure">
+			</testcase>
+			<testmodule
 			id="d23a9bd4-bf3f-4a46-a69b-7a4137c26812"
 			name="Click_Begin_Battery"
 			ref="2b14562d-5308-4bf4-b87a-01f8d4b29606"
@@ -2950,6 +3202,10 @@ rxversion="8.3">
 			ref="5d0b1c20-dd1e-43bc-81d9-390f0d6f8ed9"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="d29d67a4-75c9-4922-915f-a212da65e8ab"
+			name="ValidateRCCVersion">
+			</testcase>
 			<testmodule
 			id="d3d663c2-e311-42c3-8ca9-b6bc66693feb"
 			name="OpenDCT_Project"
@@ -2996,6 +3252,26 @@ rxversion="8.3">
 			id="d93fa21a-ca5a-4e00-bf9e-dfd0aa5987eb"
 			name="HTTPSURLVALIDATION">
 			</testcase>
+			<testmodule
+			id="d96ea7a7-f9c7-4b3d-b79d-275ef36a64b5"
+			name="Hubversion"
+			ref="3c58db6f-d18b-4efc-9f55-1aa651e51eff"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AzureURL"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="20d68c2c-2be2-45b9-82cc-82e44ec453b2"
+					variablename="AzureURL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1"
+					variablename="Browser">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="d97fe025-0140-4d62-b97a-df4146ab6495"
 			name="Enter_Password1">
@@ -3091,6 +3367,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e06e6970-c1a6-4dc7-ab2c-caf798150769"
+			name="NavigateTo_Azure1">
+			</testcase>
 			<teardown
 			id="e09f41ba-4e25-46de-98da-90de7fbc8fd8"
 			name="teardown">
@@ -3154,6 +3434,10 @@ rxversion="8.3">
 			<testcase
 			id="e39dca1f-7c83-4483-9224-0587328078d0"
 			name="Configure_ExternalUser">
+			</testcase>
+			<testcase
+			id="e3ee9d0a-3039-446d-be42-8de0f93c72d7"
+			name="LogoutAzure">
 			</testcase>
 			<testcase
 			id="e4966f0f-a50b-4f61-bcc3-c2865b6d79d7"
@@ -3291,6 +3575,12 @@ rxversion="8.3">
 			id="ef3a6704-f2a9-4d06-a91c-c9bf3b457b69"
 			name="setup1">
 			</setup>
+			<testmodule
+			id="ef9749f4-6209-47f2-b248-7414d23260e2"
+			name="SelectUserName"
+			ref="366ec434-a4de-4276-9c8c-e6703eef9698"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d"
 			name="Click_NoButton">
@@ -3377,6 +3667,12 @@ rxversion="8.3">
 			id="f786ab9c-0b0a-463e-9f1e-7268d7d2f931"
 			name="NavigatetoRCC">
 			</testcase>
+			<testmodule
+			id="f9782567-fb81-4a31-97b0-73d24c292858"
+			name="PowerShall"
+			ref="e5be21a5-ba81-49ed-8dca-878f7e822eb4"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="f9aa63ab-c556-43a7-af88-56b0e481e336"
 			name="Select_External_User"
@@ -3642,14 +3938,6 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 							<testcase
-							id="b093042f-cf3e-426c-951f-41fb44dbd28a"
-							name="Click_BegingAssessment">
-								<testmodule
-								id="a03eef39-7036-4142-9ce7-d092a721b286"
-								name="StartAssessment">
-								</testmodule>
-							</testcase>
-							<testcase
 							id="550ab6eb-4a1a-46be-b8d9-ace62791ca30"
 							name="UnselectCheckBox">
 								<testmodule
@@ -3658,11 +3946,19 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 							<testcase
+							id="b093042f-cf3e-426c-951f-41fb44dbd28a"
+							name="Click_BegingAssessment">
+								<testmodule
+								id="a03eef39-7036-4142-9ce7-d092a721b286"
+								name="StartAssessment">
+								</testmodule>
+							</testcase>
+							<testcase
 							id="1fd95b49-e068-465a-9487-7a8e04e602cf"
 							name="ClickYesButton">
 								<testmodule
 								id="1f30352f-d063-4f39-b020-57a6ba1a955d"
-								name="Clcik_Yes">
+								name="Click_Yes">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -4770,6 +5066,174 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
+						<smartfoldernode
+						id="a7ab6088-9c4e-471e-b0ad-aaa4b7974b74"
+						name="Validate_DCT_Version_">
+							<testcase
+							id="d1ff74ae-409a-4bcd-b890-6eaba1b26fc0"
+							name="NavigateTo_Azure">
+								<testmodule
+								id="d96ea7a7-f9c7-4b3d-b79d-275ef36a64b5"
+								name="Hubversion">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="394a70e6-d8dd-43e9-a5d2-624e88a0763d"
+							name="Select_LoginUser">
+								<testmodule
+								id="1104b5a6-e6d2-4b42-81f8-079c40fc3441"
+								name="SelectUserName">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="472d1019-2179-4395-9540-42b7d53cc0ed"
+							name="EnterPassword">
+								<testmodule
+								id="d0083ecb-7de0-4391-871c-4801bc5cdcf2"
+								name="EnterAzurePassword">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="607d60fd-d9ba-49ae-8fea-457a1ed2a5ea"
+							name="ClickSingin">
+								<testmodule
+								id="b0476334-2fb0-4e98-b80f-0d3bbf392115"
+								name="Click_Signin">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="77e29faa-c97b-44bc-8716-2d8f13ba9107"
+							name="ClickNoButton1">
+								<testmodule
+								id="581e251c-9159-48b0-a50a-2f360babaa99"
+								name="ClickNo">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="c52f331f-4f6d-4d85-b273-fb953e5df84f"
+							name="Click_DebugConsole">
+								<testmodule
+								id="3a6d2a75-f7b6-4c96-b07b-c8ac85f2a6f2"
+								name="DebugConsole">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="45b56e6f-aefe-452e-9510-e5707a0db99a"
+							name="OpenPowerShall">
+								<testmodule
+								id="f9782567-fb81-4a31-97b0-73d24c292858"
+								name="PowerShall">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="4c9c9107-df35-4a98-944d-4bd377df1a27"
+							name="CDMKdu">
+								<testmodule
+								id="9677960f-a754-4fbc-a973-c33589dada92"
+								name="Recording1">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="56d49db8-064a-401a-9c0e-0cee903748a5"
+							name="ValidateDCTVersion">
+								<testmodule
+								id="c10f14dc-76aa-469b-8675-038e9748a669"
+								name="DCTVersion">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="e3ee9d0a-3039-446d-be42-8de0f93c72d7"
+							name="LogoutAzure">
+								<testmodule
+								id="06b78b92-db82-48c7-a0ab-37e4cf4c25cc"
+								name="Logout_Azure">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0fd706ac-cde2-461e-a4e2-67730392a49a"
+						name="Validate_RCC_Version">
+							<testcase
+							id="e06e6970-c1a6-4dc7-ab2c-caf798150769"
+							name="NavigateTo_Azure1">
+								<testmodule
+								id="d0219ff3-7e92-4ae5-a3b0-a08747a49b32"
+								name="Hubversion">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="0399f102-7b67-4b60-bb98-d78d1731fb5a"
+							name="Select_LoginUser1">
+								<testmodule
+								id="ef9749f4-6209-47f2-b248-7414d23260e2"
+								name="SelectUserName">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="199c36dc-6c09-4166-ad54-5c04299e6fee"
+							name="EnterPassword1">
+								<testmodule
+								id="6a3db281-f014-4fde-96d4-47bc6ca07a96"
+								name="EnterAzurePassword">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="96727843-5375-40e5-b6d4-4ac673ac1120"
+							name="ClickSingin1">
+								<testmodule
+								id="c6b4f318-7477-4736-984d-c5cd9de1f925"
+								name="Click_Signin">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="2f7b30b6-172c-4e4c-8685-eca09946bec3"
+							name="ClickNoButton11">
+								<testmodule
+								id="01f0cd48-303f-4869-8c81-c029010f7253"
+								name="ClickNo">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="28f46e32-3bbc-491f-9a3f-aa10ffbbc718"
+							name="Click_DebugConsole1">
+								<testmodule
+								id="1a6664a7-d504-4a15-b414-7c1bddeee981"
+								name="DebugConsole">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="7e2dd925-1d5b-40c9-8dee-28af581ed362"
+							name="OpenPowerShall1">
+								<testmodule
+								id="4621cc99-f70a-455b-ab36-1eef0b9c4283"
+								name="PowerShall">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="27fef7d5-eb3b-4046-801f-f5b69473e6e0"
+							name="CDMKdu1">
+								<testmodule
+								id="44f75449-5e9c-48f1-8284-77dd059aa095"
+								name="RCC_Version">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="d29d67a4-75c9-4922-915f-a212da65e8ab"
+							name="ValidateRCCVersion">
+								<testmodule
+								id="160fec8c-824a-4e3b-9ee7-ddbbf4b2bfd6"
+								name="RCCHubValidation">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="332008d8-2d5a-4719-9c86-ceaa05bf2efa"
+							name="LogoutAzure1">
+								<testmodule
+								id="40ba1372-cc4f-42af-8505-def16ec2ec71"
+								name="Logout_Azure">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -5012,6 +5476,60 @@ rxversion="8.3">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="0fd706ac-cde2-461e-a4e2-67730392a49a">
+			</testcontainer>
+			<testcontainer
+			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
+			</testcontainer>
+			<testcontainer
+			id="27fef7d5-eb3b-4046-801f-f5b69473e6e0">
+			</testcontainer>
+			<testcontainer
+			id="28f46e32-3bbc-491f-9a3f-aa10ffbbc718">
+			</testcontainer>
+			<testcontainer
+			id="332008d8-2d5a-4719-9c86-ceaa05bf2efa">
+			</testcontainer>
+			<testcontainer
+			id="394a70e6-d8dd-43e9-a5d2-624e88a0763d">
+			</testcontainer>
+			<testcontainer
+			id="45b56e6f-aefe-452e-9510-e5707a0db99a">
+			</testcontainer>
+			<testcontainer
+			id="472d1019-2179-4395-9540-42b7d53cc0ed">
+			</testcontainer>
+			<testcontainer
+			id="4c9c9107-df35-4a98-944d-4bd377df1a27">
+			</testcontainer>
+			<testcontainer
+			id="56d49db8-064a-401a-9c0e-0cee903748a5">
+			</testcontainer>
+			<testcontainer
+			id="607d60fd-d9ba-49ae-8fea-457a1ed2a5ea">
+			</testcontainer>
+			<testcontainer
+			id="77e29faa-c97b-44bc-8716-2d8f13ba9107">
+			</testcontainer>
+			<testcontainer
+			id="7e2dd925-1d5b-40c9-8dee-28af581ed362">
+			</testcontainer>
+			<testcontainer
+			id="a7ab6088-9c4e-471e-b0ad-aaa4b7974b74">
+			</testcontainer>
+			<testcontainer
+			id="c52f331f-4f6d-4d85-b273-fb953e5df84f">
+			</testcontainer>
+			<testcontainer
+			id="d1ff74ae-409a-4bcd-b890-6eaba1b26fc0">
+			</testcontainer>
+			<testcontainer
+			id="d29d67a4-75c9-4922-915f-a212da65e8ab">
+			</testcontainer>
+			<testcontainer
+			id="d4b8534f-2794-473e-9747-934afc8f284d">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

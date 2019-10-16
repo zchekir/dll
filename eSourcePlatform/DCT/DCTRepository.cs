@@ -37,6 +37,8 @@ namespace DCT
         DCTRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
         DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder _redcapcloudgooglechrome;
         DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder _dashboardoctopusdeploygooglechro;
+        DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
+        DCTRepositoryFolders.WebDocument184HowToExecuteAzureREAppFolder _webdocument184howtoexecuteazurere;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -63,6 +65,8 @@ namespace DCT
             _signintoyouraccount = new DCTRepositoryFolders.SignInToYourAccountAppFolder(this);
             _redcapcloudgooglechrome = new DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder(this);
             _dashboardoctopusdeploygooglechro = new DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder(this);
+            _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
+            _webdocument184howtoexecuteazurere = new DCTRepositoryFolders.WebDocument184HowToExecuteAzureREAppFolder(this);
         }
 
 #region Variables
@@ -193,6 +197,24 @@ namespace DCT
         public virtual DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder DashboardOctopusDeployGoogleChro
         {
             get { return _dashboardoctopusdeploygooglechro; }
+        }
+
+        /// <summary>
+        /// The KuduServices folder.
+        /// </summary>
+        [RepositoryFolder("83d87542-91e4-4062-831c-e71dae0b7938")]
+        public virtual DCTRepositoryFolders.KuduServicesAppFolder KuduServices
+        {
+            get { return _kuduservices; }
+        }
+
+        /// <summary>
+        /// The WebDocument184HowToExecuteAzureRE folder.
+        /// </summary>
+        [RepositoryFolder("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
+        public virtual DCTRepositoryFolders.WebDocument184HowToExecuteAzureREAppFolder WebDocument184HowToExecuteAzureRE
+        {
+            get { return _webdocument184howtoexecuteazurere; }
         }
     }
 
@@ -1514,6 +1536,7 @@ namespace DCT
             RepoItemInfo _idbtnbackInfo;
             RepoItemInfo _enterusenameInfo;
             RepoItemInfo _clicknextInfo;
+            RepoItemInfo _selectaccountInfo;
 
             /// <summary>
             /// Creates a new SignInToYourAccount  folder.
@@ -1524,6 +1547,7 @@ namespace DCT
                 _idbtnbackInfo = new RepoItemInfo(this, "IdBtnBack", ".//input[#'idBtn_Back']", 30000, null, "5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef");
                 _enterusenameInfo = new RepoItemInfo(this, "EnterUseName", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
                 _clicknextInfo = new RepoItemInfo(this, "ClickNext", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
+                _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext='zchekir@cogstate.com']", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
             }
 
             /// <summary>
@@ -1619,6 +1643,30 @@ namespace DCT
                 get
                 {
                     return _clicknextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectAccount item.
+            /// </summary>
+            [RepositoryItem("76cba7cf-f54a-4c20-8edb-614644e18a77")]
+            public virtual Ranorex.DivTag SelectAccount
+            {
+                get
+                {
+                    return _selectaccountInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectAccount item info.
+            /// </summary>
+            [RepositoryItemInfo("76cba7cf-f54a-4c20-8edb-614644e18a77")]
+            public virtual RepoItemInfo SelectAccountInfo
+            {
+                get
+                {
+                    return _selectaccountInfo;
                 }
             }
         }
@@ -1720,6 +1768,268 @@ namespace DCT
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("3388a642-06d7-4c1f-b729-57d7b320adb4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The KuduServicesAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("83d87542-91e4-4062-831c-e71dae0b7938")]
+        public partial class KuduServicesAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _debugconsoleInfo;
+            RepoItemInfo _powershellInfo;
+            RepoItemInfo _powershallconsolInfo;
+            RepoItemInfo _azurelogoutInfo;
+            RepoItemInfo _logoutInfo;
+            RepoItemInfo _dctvalidationversionInfo;
+            RepoItemInfo _rcchubvalidationInfo;
+
+            /// <summary>
+            /// Creates a new KuduServices  folder.
+            /// </summary>
+            public KuduServicesAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("KuduServices", "/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']", parentFolder, 30000, null, false, "83d87542-91e4-4062-831c-e71dae0b7938", "")
+            {
+                _debugconsoleInfo = new RepoItemInfo(this, "DebugConsole", ".//a[@innertext='Debug console ']", 30000, null, "67cbad4f-5b5c-41d7-a22b-8b0b8a2f529d");
+                _powershellInfo = new RepoItemInfo(this, "PowerShell", ".//a[@innertext='PowerShell']", 30000, null, "63637764-b1c2-45b3-96c3-243481d396a3");
+                _powershallconsolInfo = new RepoItemInfo(this, "PowerShallConsol", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span", 30000, null, "cb458012-66d2-43c8-90cf-f9dc911f0576");
+                _azurelogoutInfo = new RepoItemInfo(this, "AzureLogout", ".//a[@innertext='zchekir@cogstate.com']", 30000, null, "ba6ef5cd-ae29-46fd-a862-13b41632bc4d");
+                _logoutInfo = new RepoItemInfo(this, "Logout", ".//a[@innertext='Logout']", 30000, null, "bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae");
+                _dctvalidationversionInfo = new RepoItemInfo(this, "DCTValidationVersion", ".//div[@innertext~'1.2']", 30000, null, "49370b0d-946f-4152-89ea-e31cf4c37984");
+                _rcchubvalidationInfo = new RepoItemInfo(this, "RCCHubValidation", ".//div[@innertext~'2.0.0-rc']", 30000, null, "ed9435cd-5012-46e1-a260-05d5ba9de604");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("83d87542-91e4-4062-831c-e71dae0b7938")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("83d87542-91e4-4062-831c-e71dae0b7938")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DebugConsole item.
+            /// </summary>
+            [RepositoryItem("67cbad4f-5b5c-41d7-a22b-8b0b8a2f529d")]
+            public virtual Ranorex.ATag DebugConsole
+            {
+                get
+                {
+                    return _debugconsoleInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DebugConsole item info.
+            /// </summary>
+            [RepositoryItemInfo("67cbad4f-5b5c-41d7-a22b-8b0b8a2f529d")]
+            public virtual RepoItemInfo DebugConsoleInfo
+            {
+                get
+                {
+                    return _debugconsoleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PowerShell item.
+            /// </summary>
+            [RepositoryItem("63637764-b1c2-45b3-96c3-243481d396a3")]
+            public virtual Ranorex.ATag PowerShell
+            {
+                get
+                {
+                    return _powershellInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PowerShell item info.
+            /// </summary>
+            [RepositoryItemInfo("63637764-b1c2-45b3-96c3-243481d396a3")]
+            public virtual RepoItemInfo PowerShellInfo
+            {
+                get
+                {
+                    return _powershellInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PowerShallConsol item.
+            /// </summary>
+            [RepositoryItem("cb458012-66d2-43c8-90cf-f9dc911f0576")]
+            public virtual Ranorex.SpanTag PowerShallConsol
+            {
+                get
+                {
+                    return _powershallconsolInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PowerShallConsol item info.
+            /// </summary>
+            [RepositoryItemInfo("cb458012-66d2-43c8-90cf-f9dc911f0576")]
+            public virtual RepoItemInfo PowerShallConsolInfo
+            {
+                get
+                {
+                    return _powershallconsolInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AzureLogout item.
+            /// </summary>
+            [RepositoryItem("ba6ef5cd-ae29-46fd-a862-13b41632bc4d")]
+            public virtual Ranorex.ATag AzureLogout
+            {
+                get
+                {
+                    return _azurelogoutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AzureLogout item info.
+            /// </summary>
+            [RepositoryItemInfo("ba6ef5cd-ae29-46fd-a862-13b41632bc4d")]
+            public virtual RepoItemInfo AzureLogoutInfo
+            {
+                get
+                {
+                    return _azurelogoutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Logout item.
+            /// </summary>
+            [RepositoryItem("bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae")]
+            public virtual Ranorex.ATag Logout
+            {
+                get
+                {
+                    return _logoutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Logout item info.
+            /// </summary>
+            [RepositoryItemInfo("bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae")]
+            public virtual RepoItemInfo LogoutInfo
+            {
+                get
+                {
+                    return _logoutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DCTValidationVersion item.
+            /// </summary>
+            [RepositoryItem("49370b0d-946f-4152-89ea-e31cf4c37984")]
+            public virtual Ranorex.DivTag DCTValidationVersion
+            {
+                get
+                {
+                    return _dctvalidationversionInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DCTValidationVersion item info.
+            /// </summary>
+            [RepositoryItemInfo("49370b0d-946f-4152-89ea-e31cf4c37984")]
+            public virtual RepoItemInfo DCTValidationVersionInfo
+            {
+                get
+                {
+                    return _dctvalidationversionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RCCHubValidation item.
+            /// </summary>
+            [RepositoryItem("ed9435cd-5012-46e1-a260-05d5ba9de604")]
+            public virtual Ranorex.DivTag RCCHubValidation
+            {
+                get
+                {
+                    return _rcchubvalidationInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RCCHubValidation item info.
+            /// </summary>
+            [RepositoryItemInfo("ed9435cd-5012-46e1-a260-05d5ba9de604")]
+            public virtual RepoItemInfo RCCHubValidationInfo
+            {
+                get
+                {
+                    return _rcchubvalidationInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WebDocument184HowToExecuteAzureREAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
+        public partial class WebDocument184HowToExecuteAzureREAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new WebDocument184HowToExecuteAzureRE  folder.
+            /// </summary>
+            public WebDocument184HowToExecuteAzureREAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WebDocument184HowToExecuteAzureRE", "/dom[4]", parentFolder, 30000, null, false, "9c255fff-d335-4a60-8ad7-5a36d00c9018", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
