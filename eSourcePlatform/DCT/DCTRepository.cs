@@ -35,6 +35,8 @@ namespace DCT
         DCTRepositoryFolders.LeaveSiteAppFolder _leavesite;
         DCTRepositoryFolders.SignInAppFolder _signin;
         DCTRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
+        DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder _redcapcloudgooglechrome;
+        DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder _dashboardoctopusdeploygooglechro;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -59,6 +61,8 @@ namespace DCT
             _leavesite = new DCTRepositoryFolders.LeaveSiteAppFolder(this);
             _signin = new DCTRepositoryFolders.SignInAppFolder(this);
             _signintoyouraccount = new DCTRepositoryFolders.SignInToYourAccountAppFolder(this);
+            _redcapcloudgooglechrome = new DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder(this);
+            _dashboardoctopusdeploygooglechro = new DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder(this);
         }
 
 #region Variables
@@ -171,6 +175,24 @@ namespace DCT
         public virtual DCTRepositoryFolders.SignInToYourAccountAppFolder SignInToYourAccount
         {
             get { return _signintoyouraccount; }
+        }
+
+        /// <summary>
+        /// The REDCapCloudGoogleChrome folder.
+        /// </summary>
+        [RepositoryFolder("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
+        public virtual DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder REDCapCloudGoogleChrome
+        {
+            get { return _redcapcloudgooglechrome; }
+        }
+
+        /// <summary>
+        /// The DashboardOctopusDeployGoogleChro folder.
+        /// </summary>
+        [RepositoryFolder("3388a642-06d7-4c1f-b729-57d7b320adb4")]
+        public virtual DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder DashboardOctopusDeployGoogleChro
+        {
+            get { return _dashboardoctopusdeploygooglechro; }
         }
     }
 
@@ -685,6 +707,8 @@ namespace DCT
             RepoItemInfo _clickloginInfo;
             RepoItemInfo _spantagdctInfo;
             RepoItemInfo _dct_versionvalidationInfo;
+            RepoItemInfo _octopuslogoutInfo;
+            RepoItemInfo _signoutInfo;
 
             /// <summary>
             /// Creates a new OctopusDeploy  folder.
@@ -695,6 +719,8 @@ namespace DCT
                 _clickloginInfo = new RepoItemInfo(this, "ClickLogin", ".//div[@innertext='Sign in with Microsoft']", 30000, null, "b64ce1a7-413e-4c7d-982c-e30258f01ef7");
                 _spantagdctInfo = new RepoItemInfo(this, "SpanTagDCT", ".//tag[@innertext='DCT']", 30000, null, "a9d7fbd8-9953-4653-b88a-a2c645191e5b");
                 _dct_versionvalidationInfo = new RepoItemInfo(this, "DCT_VersionValidation", ".//span[@innertext~'1.1.']", 30000, null, "0a703cdb-20d6-4cf2-a43f-c75d08312d13");
+                _octopuslogoutInfo = new RepoItemInfo(this, "OctopusLogout", ".//div[#'topnavbar']/div/nav[2]//em", 30000, null, "345f9af0-bbb9-471f-a317-13ac2f21aa46");
+                _signoutInfo = new RepoItemInfo(this, "SIGNOUT", ".//div[#'app']/div/div/div[2]/div[1]/?/?/button[@title='SIGN OUT']//span[@innertext='SIGN OUT']", 30000, null, "97cee7fb-bf55-4da1-9a16-95516885255c");
             }
 
             /// <summary>
@@ -790,6 +816,54 @@ namespace DCT
                 get
                 {
                     return _dct_versionvalidationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OctopusLogout item.
+            /// </summary>
+            [RepositoryItem("345f9af0-bbb9-471f-a317-13ac2f21aa46")]
+            public virtual Ranorex.EmTag OctopusLogout
+            {
+                get
+                {
+                    return _octopuslogoutInfo.CreateAdapter<Ranorex.EmTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OctopusLogout item info.
+            /// </summary>
+            [RepositoryItemInfo("345f9af0-bbb9-471f-a317-13ac2f21aa46")]
+            public virtual RepoItemInfo OctopusLogoutInfo
+            {
+                get
+                {
+                    return _octopuslogoutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SIGNOUT item.
+            /// </summary>
+            [RepositoryItem("97cee7fb-bf55-4da1-9a16-95516885255c")]
+            public virtual Ranorex.SpanTag SIGNOUT
+            {
+                get
+                {
+                    return _signoutInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SIGNOUT item info.
+            /// </summary>
+            [RepositoryItemInfo("97cee7fb-bf55-4da1-9a16-95516885255c")]
+            public virtual RepoItemInfo SIGNOUTInfo
+            {
+                get
+                {
+                    return _signoutInfo;
                 }
             }
         }
@@ -1311,6 +1385,7 @@ namespace DCT
         public partial class SignInAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _passwordinputInfo;
+            RepoItemInfo _submitbuttonInfo;
 
             /// <summary>
             /// Creates a new SignIn  folder.
@@ -1319,6 +1394,7 @@ namespace DCT
                     base("SignIn", "/dom[@domain='login.cogstate.com']", parentFolder, 30000, null, false, "29fb0691-ee86-4289-abe1-a78470d5da1d", "")
             {
                 _passwordinputInfo = new RepoItemInfo(this, "PasswordInput", ".//input[#'passwordInput']", 30000, null, "6f77d72f-6ee7-44c9-ba1d-66990d0876c6");
+                _submitbuttonInfo = new RepoItemInfo(this, "SubmitButton", ".//span[#'submitButton']", 30000, null, "b35f274a-818c-48ad-9a9d-770748bd0a29");
             }
 
             /// <summary>
@@ -1368,6 +1444,30 @@ namespace DCT
                     return _passwordinputInfo;
                 }
             }
+
+            /// <summary>
+            /// The SubmitButton item.
+            /// </summary>
+            [RepositoryItem("b35f274a-818c-48ad-9a9d-770748bd0a29")]
+            public virtual Ranorex.SpanTag SubmitButton
+            {
+                get
+                {
+                    return _submitbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubmitButton item info.
+            /// </summary>
+            [RepositoryItemInfo("b35f274a-818c-48ad-9a9d-770748bd0a29")]
+            public virtual RepoItemInfo SubmitButtonInfo
+            {
+                get
+                {
+                    return _submitbuttonInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1378,6 +1478,7 @@ namespace DCT
         {
             RepoItemInfo _idbtnbackInfo;
             RepoItemInfo _enterusenameInfo;
+            RepoItemInfo _clicknextInfo;
 
             /// <summary>
             /// Creates a new SignInToYourAccount  folder.
@@ -1387,6 +1488,7 @@ namespace DCT
             {
                 _idbtnbackInfo = new RepoItemInfo(this, "IdBtnBack", ".//input[#'idBtn_Back']", 30000, null, "5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef");
                 _enterusenameInfo = new RepoItemInfo(this, "EnterUseName", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
+                _clicknextInfo = new RepoItemInfo(this, "ClickNext", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
             }
 
             /// <summary>
@@ -1458,6 +1560,136 @@ namespace DCT
                 get
                 {
                     return _enterusenameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickNext item.
+            /// </summary>
+            [RepositoryItem("cb220122-19c8-4bab-93a1-825edc6f60eb")]
+            public virtual Ranorex.InputTag ClickNext
+            {
+                get
+                {
+                    return _clicknextInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickNext item info.
+            /// </summary>
+            [RepositoryItemInfo("cb220122-19c8-4bab-93a1-825edc6f60eb")]
+            public virtual RepoItemInfo ClickNextInfo
+            {
+                get
+                {
+                    return _clicknextInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The REDCapCloudGoogleChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
+        public partial class REDCapCloudGoogleChromeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _rcc_usernameInfo;
+
+            /// <summary>
+            /// Creates a new REDCapCloudGoogleChrome  folder.
+            /// </summary>
+            public REDCapCloudGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("REDCapCloudGoogleChrome", "/form[@title~'^REDCap\\ Cloud\\ -\\ Google\\ Chr']", parentFolder, 30000, null, true, "c3587369-faf2-4be6-a9b8-82cc31d5ad93", "")
+            {
+                _rcc_usernameInfo = new RepoItemInfo(this, "RCC_Username", ".//text[@accessiblename='Username']", 30000, null, "5245351e-02ed-495a-ad53-a9cdf6cc7fd0");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RCC_Username item.
+            /// </summary>
+            [RepositoryItem("5245351e-02ed-495a-ad53-a9cdf6cc7fd0")]
+            public virtual Ranorex.Text RCC_Username
+            {
+                get
+                {
+                    return _rcc_usernameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RCC_Username item info.
+            /// </summary>
+            [RepositoryItemInfo("5245351e-02ed-495a-ad53-a9cdf6cc7fd0")]
+            public virtual RepoItemInfo RCC_UsernameInfo
+            {
+                get
+                {
+                    return _rcc_usernameInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DashboardOctopusDeployGoogleChroAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("3388a642-06d7-4c1f-b729-57d7b320adb4")]
+        public partial class DashboardOctopusDeployGoogleChroAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new DashboardOctopusDeployGoogleChro  folder.
+            /// </summary>
+            public DashboardOctopusDeployGoogleChroAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DashboardOctopusDeployGoogleChro", "/form[@processname='chrome' and @class='Chrome_WidgetWin_1' and @instance='1']", parentFolder, 30000, null, true, "3388a642-06d7-4c1f-b729-57d7b320adb4", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3388a642-06d7-4c1f-b729-57d7b320adb4")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3388a642-06d7-4c1f-b729-57d7b320adb4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

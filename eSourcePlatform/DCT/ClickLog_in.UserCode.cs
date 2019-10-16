@@ -24,7 +24,7 @@ namespace DCT
 {
     public partial class ClickLog_in
     {
-    	WebElement ClickSubmit= null;
+    	Button ClickSubmit= null;
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -42,7 +42,7 @@ namespace DCT
 
         public void Click_Submit()
         {
-            if (Host.Local.TryFindSingle<WebElement>("//div[@innertext='Sign in with Microsoft']", new Duration(1500), out ClickSubmit)){
+            if (Host.Local.TryFindSingle<Button>("//div[@innertext='Sign in with Microsoft']", new Duration(1500), out ClickSubmit)){
                
                 ClickSubmit.Click();
             }else{

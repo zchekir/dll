@@ -95,7 +95,15 @@ namespace DCT
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCUsername' with focus on 'REDCapCloud.LoginUsername'.", repo.REDCapCloud.LoginUsernameInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}' with focus on 'REDCapCloud.LoginUsername'.", repo.REDCapCloud.LoginUsernameInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.LoginUsername.PressKeys("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCUsername' with focus on 'REDCapCloudGoogleChrome.RCC_Username'.", repo.REDCapCloudGoogleChrome.RCC_UsernameInfo, new RecordItemIndex(2));
+            //repo.REDCapCloudGoogleChrome.RCC_Username.PressKeys(RCCUsername);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCUsername' with focus on 'REDCapCloud.LoginUsername'.", repo.REDCapCloud.LoginUsernameInfo, new RecordItemIndex(3));
             repo.REDCapCloud.LoginUsername.PressKeys(RCCUsername);
             Delay.Milliseconds(0);
             

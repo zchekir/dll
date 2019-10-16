@@ -43,6 +43,48 @@ rxversion="8.3">
 			</bindings>
 		</explicitdelayitem>
 		<keysequenceitem
+		KeySequence="{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="2d9cf75a-4ab4-4f73-9dc0-38e45fd0659f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f357fa53-de66-4bc6-adcb-c4468e3a4ec0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//input[#'login_username']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="61e10f6d-8662-49cf-957a-6f5e16d788fb">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="RCCUsername">
+				</binding>
+			</bindings>
+			<info
+			id="5245351e-02ed-495a-ad53-a9cdf6cc7fd0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^REDCap\ Cloud\ -\ Google\ Chr']//text[@accessiblename='Username']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
 		KeySequence="yourtext"
 		duration="100ms"
 		enabled="True"

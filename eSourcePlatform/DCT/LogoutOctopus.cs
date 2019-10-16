@@ -24,47 +24,34 @@ namespace DCT
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Password recording.
+    ///The LogoutOctopus recording.
     /// </summary>
-    [TestModule("73fe110e-198a-4073-aaac-d97e2fa59e5d", ModuleType.Recording, 1)]
-    public partial class Password : ITestModule
+    [TestModule("83830357-899d-4fc4-b8e8-f7a982f59bec", ModuleType.Recording, 1)]
+    public partial class LogoutOctopus : ITestModule
     {
         /// <summary>
         /// Holds an instance of the DCTRepository repository.
         /// </summary>
         public static DCTRepository repo = DCTRepository.Instance;
 
-        static Password instance = new Password();
+        static LogoutOctopus instance = new LogoutOctopus();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Password()
+        public LogoutOctopus()
         {
-            DCT_Password = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Password Instance
+        public static LogoutOctopus Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _DCT_Password;
-
-        /// <summary>
-        /// Gets or sets the value of variable DCT_Password.
-        /// </summary>
-        [TestVariable("e3078aeb-57b5-4e52-b373-20e5fca1b1ba")]
-        public string DCT_Password
-        {
-            get { return _DCT_Password; }
-            set { _DCT_Password = value; }
-        }
 
 #endregion
 
@@ -92,18 +79,16 @@ namespace DCT
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            //Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OctopusDeploy.OctopusLogout' at Center.", repo.OctopusDeploy.OctopusLogoutInfo, new RecordItemIndex(0));
+            repo.OctopusDeploy.OctopusLogout.Click();
+            Delay.Milliseconds(200);
             
-            PasswordInput(DCT_Password);
+            Logout();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
-            //Delay.Duration(500, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCT_Password' with focus on 'SignIn.PasswordInput'.", repo.SignIn.PasswordInputInfo, new RecordItemIndex(3));
-            //repo.SignIn.PasswordInput.PressKeys(DCT_Password);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OctopusDeploy.SIGNOUT' at Center.", repo.OctopusDeploy.SIGNOUTInfo, new RecordItemIndex(2));
+            repo.OctopusDeploy.SIGNOUT.Click();
+            Delay.Milliseconds(200);
             
         }
 

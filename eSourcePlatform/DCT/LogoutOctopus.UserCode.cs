@@ -22,11 +22,8 @@ using Ranorex.Core.Testing;
 
 namespace DCT
 {
-	public partial class Submit{
-    	
-    	//Variable to catch the xpath
-    	Button ClickSubmit = null;
-    
+    public partial class LogoutOctopus
+    {
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -35,18 +32,14 @@ namespace DCT
         {
             // Your recording specific initialization code goes here.
         }
-        // Click Submit button 
-        
-        public void ClickSubButton()
+
+        public void Logout()
         {
-        	if (Host.Local.TryFindSingle<Button>("//*[@id='submitButton']", new Duration(1500), out ClickSubmit)){
-               
-                ClickSubmit.Click();
-            }else{
-              
-                Report.Log(ReportLevel.Info ,"ClickSubmit is  Not required");
-            }
-        	
+            WebElement logoutOctopus = "//div[@innertext='Sign Out']";
+            
+            logoutOctopus.Click();
+            
+          
         }
 
     }

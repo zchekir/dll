@@ -259,6 +259,26 @@ AAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='octopus.cogstate.com']//span[@innertext~'1.1.']
 			</item>
+			<item
+			addcaps="unknown,webelement,emtag"
+			capname="emtag"
+			id="345f9af0-bbb9-471f-a317-13ac2f21aa46"
+			name="OctopusLogout"
+			refimgid="c19804ba-788e-4f4d-82d3-ba671d59ee5f"
+			refpath="/dom[@domain='octopus.cogstate.com']//div[#'topnavbar']/div/nav[2]/div[2]/a[@href='https://octopus.cogstate.com/app#']/em"
+			searchtimeout="30000ms">
+				/dom[@domain='octopus.cogstate.com']//div[#'topnavbar']/div/nav[2]//em
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="97cee7fb-bf55-4da1-9a16-95516885255c"
+			name="SIGNOUT"
+			refimgid="d1c622aa-ed24-4d23-b3bf-e7d26c75c306"
+			refpath="/dom[@domain='octopus.cogstate.com']//div[#'app']/div/div/div[2]/div[1]/div/button[@title='SIGN OUT']/div/div/span[@innertext='SIGN OUT']"
+			searchtimeout="30000ms">
+				/dom[@domain='octopus.cogstate.com']//div[#'app']/div/div/div[2]/div[1]/?/?/button[@title='SIGN OUT']//span[@innertext='SIGN OUT']
+			</item>
 			<basepath>
 				/dom[@domain='octopus.cogstate.com']
 			</basepath>
@@ -526,6 +546,16 @@ AAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='login.cogstate.com']//input[#'passwordInput']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="b35f274a-818c-48ad-9a9d-770748bd0a29"
+			name="SubmitButton"
+			refimgid="b863a832-d3d5-4e38-b9f9-9c78d98e04c2"
+			refpath="/dom[@domain='login.cogstate.com']//span[#'submitButton']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.cogstate.com']//span[#'submitButton']
+			</item>
 			<basepath>
 				/dom[@domain='login.cogstate.com']
 			</basepath>
@@ -574,6 +604,16 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='login.microsoftonline.com']//input[#'i0116']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="cb220122-19c8-4bab-93a1-825edc6f60eb"
+			name="ClickNext"
+			refimgid="34823b60-f68b-4e71-bdbf-1411ca5d76e2"
+			refpath="/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']
+			</item>
 			<basepath>
 				/dom[@domain='login.microsoftonline.com']
 			</basepath>
@@ -591,6 +631,71 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="c3587369-faf2-4be6-a9b8-82cc31d5ad93"
+		isrooted="True"
+		name="REDCapCloudGoogleChrome"
+		refpath="/form[@title='REDCap Cloud - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="5245351e-02ed-495a-ad53-a9cdf6cc7fd0"
+			name="RCC_Username"
+			refimgid="8467fb27-5c0d-4f71-863d-e2dd19046aef"
+			searchtimeout="30000ms">
+				/form[@title~'^REDCap\ Cloud\ -\ Google\ Chr']//text[@accessiblename='Username']
+			</item>
+			<basepath>
+				/form[@title~'^REDCap\ Cloud\ -\ Google\ Chr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="3388a642-06d7-4c1f-b729-57d7b320adb4"
+		isrooted="True"
+		name="DashboardOctopusDeployGoogleChro"
+		refpath="/form[@title='Dashboard - Octopus Deploy - Google Chrome' and @processname='chrome' and @class='Chrome_WidgetWin_1' and @instance='1']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@processname='chrome' and @class='Chrome_WidgetWin_1' and @instance='1']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

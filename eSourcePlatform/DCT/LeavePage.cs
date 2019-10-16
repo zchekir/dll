@@ -79,12 +79,9 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LeaveSite.Leave' at Center.", repo.LeaveSite.LeaveInfo, new RecordItemIndex(1));
-            repo.LeaveSite.Leave.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LeaveSite.Leave' at Center.", repo.LeaveSite.LeaveInfo, new RecordItemIndex(0));
+            //repo.LeaveSite.Leave.Click();
+            //Delay.Milliseconds(200);
             
         }
 

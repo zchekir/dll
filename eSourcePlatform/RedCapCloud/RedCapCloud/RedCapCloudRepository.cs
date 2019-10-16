@@ -195,7 +195,7 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.EventDefTableFolder _eventdeftable;
             RepoItemInfo _mystudiestitleInfo;
             RepoItemInfo _addstudybuttonInfo;
-            RepoItemInfo _usersettingsmenuInfo;
+            RepoItemInfo _logoutrccInfo;
             RepoItemInfo _logoutbuttonInfo;
             RepoItemInfo _sitestabInfo;
             RepoItemInfo _parameterstabInfo;
@@ -242,7 +242,7 @@ namespace RedCapCloud
                 _eventdeftable = new RedCapCloudRepositoryFolders.EventDefTableFolder(this);
                 _mystudiestitleInfo = new RepoItemInfo(this, "MyStudiesTitle", ".//div[#'gwtWrapper']//div/table//div[@innertext='My Studies']", 30000, null, "a862ea4b-e3d0-46e0-9253-c22a1a4973b7");
                 _addstudybuttonInfo = new RepoItemInfo(this, "AddStudyButton", ".//button[#'studiesListAbstract_buttonAdd']", 30000, null, "04f7ce87-69a8-4c62-b147-f3cc88553b26");
-                _usersettingsmenuInfo = new RepoItemInfo(this, "UserSettingsMenu", ".//button[#'dropDownButton_button_userSettings']", 30000, null, "dc7fa4ec-8022-4ced-9546-81d3c757aec1");
+                _logoutrccInfo = new RepoItemInfo(this, "LogoutRCC", ".//button[#'dropDownButton_button_userSettings']", 30000, null, "dc7fa4ec-8022-4ced-9546-81d3c757aec1");
                 _logoutbuttonInfo = new RepoItemInfo(this, "LogoutButton", ".//li[#'dropDownButton_popupMenuItem_logout']/a[@innertext='Logout']", 30000, null, "2142ea80-e72e-4f44-8319-49ca58782f8c");
                 _sitestabInfo = new RepoItemInfo(this, "SitesTab", ".//div[#'studyBaseWidget_topLinkName_sites']/a[@innertext='Sites']", 30000, null, "57358e7f-6ebc-427c-a4ee-9e906dc14092");
                 _parameterstabInfo = new RepoItemInfo(this, "ParametersTab", ".//div[#'studyBaseWidget_topLinkName_parameters']/a[@innertext='Parameters']", 30000, null, "e1a8abb4-eff4-4ad3-bce3-1662b283c589");
@@ -341,26 +341,26 @@ namespace RedCapCloud
             }
 
             /// <summary>
-            /// The UserSettingsMenu item.
+            /// The LogoutRCC item.
             /// </summary>
             [RepositoryItem("dc7fa4ec-8022-4ced-9546-81d3c757aec1")]
-            public virtual Ranorex.ButtonTag UserSettingsMenu
+            public virtual Ranorex.ButtonTag LogoutRCC
             {
                 get
                 {
-                    return _usersettingsmenuInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                    return _logoutrccInfo.CreateAdapter<Ranorex.ButtonTag>(true);
                 }
             }
 
             /// <summary>
-            /// The UserSettingsMenu item info.
+            /// The LogoutRCC item info.
             /// </summary>
             [RepositoryItemInfo("dc7fa4ec-8022-4ced-9546-81d3c757aec1")]
-            public virtual RepoItemInfo UserSettingsMenuInfo
+            public virtual RepoItemInfo LogoutRCCInfo
             {
                 get
                 {
-                    return _usersettingsmenuInfo;
+                    return _logoutrccInfo;
                 }
             }
 

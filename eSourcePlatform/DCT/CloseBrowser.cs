@@ -83,6 +83,10 @@ namespace DCT
             //repo.OverviewOctopusDeployGoogleChrom.ClosePage.Click("1880;5");
             //Delay.Milliseconds(200);
             
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'OctopusDeploy'.", repo.OctopusDeploy.SelfInfo, new RecordItemIndex(1));
+            Host.Current.CloseApplication(repo.OctopusDeploy.Self, new Duration(0));
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="de3b4f7f-7e50-4fdb-9a6b-e3672dd80041"
+id="83830357-899d-4fc4-b8e8-f7a982f59bec"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ClickNextButton
+		LogoutOctopus
 	</name>
 	<repeatcount>
 		1
@@ -23,65 +23,40 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ClickNextButton"
+	classname="LogoutOctopus"
 	namespace="DCT">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ClickNextButton"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="ClickButton"
-		namespace="DCT"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="12f28969-02b3-4820-b8f7-d0fb36b9ef99">
-			</arguments>
-		</userrecorditem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="c05f3a16-f35f-475a-bbf6-50de06b90f95"
-		sx="3002"
-		sy="706"
+		searchpropertyid="935d34f6-52aa-49c0-9b0e-7a01986fb6be"
+		sx="3794"
+		sy="171"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="cb220122-19c8-4bab-93a1-825edc6f60eb"
+			id="345f9af0-bbb9-471f-a317-13ac2f21aa46"
 			sourcename="RepositoryEditor">
 				<element
-				capabilities="webelement, inputtag"
+				capabilities="webelement, emtag"
 				dontcache="True"
 				enabled="True"
 				flavor="chromeweb"
 				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="2948,690,108,32"
+				index="2"
+				prefcap="emtag"
+				rect="3782,163,25,16"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -89,7 +64,7 @@ rxversion="8.3">
 					<attribute
 					name="class"
 					type="System.String">
-						btn btn-block btn-primary
+						fa fa-caret-down style_icon__15rk7
 					</attribute>
 					<attribute
 					name="draggable"
@@ -102,83 +77,97 @@ rxversion="8.3">
 						False
 					</attribute>
 					<attribute
-					name="id"
-					type="System.String">
-						idSIButton9
-					</attribute>
-					<attribute
 					name="innertext"
 					type="System.String">
 					</attribute>
 					<attribute
 					name="tagname"
 					type="System.String">
-						input
+						em
 					</attribute>
+				</element>
+				<path>
+					/dom[@domain='octopus.cogstate.com']//div[#'topnavbar']/div/nav[2]//em
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="LogoutOctopus"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Logout"
+		namespace="DCT"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="96f30e20-470d-4b5c-9b2f-429f09685333">
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="710da9d7-4155-4455-a92f-fcba382fb437"
+		sx="2880"
+		sy="639"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="97cee7fb-bf55-4da1-9a16-95516885255c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="2835,632,90,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
 					<attribute
-					name="tagvalue"
-					type="System.String">
-						Next
-					</attribute>
-					<attribute
-					name="autofocus"
+					name="draggable"
 					type="System.String">
 						False
 					</attribute>
 					<attribute
-					name="checked"
+					name="hidden"
 					type="System.String">
 						False
 					</attribute>
 					<attribute
-					name="disabled"
+					name="innertext"
 					type="System.String">
-						False
+						SIGN OUT
 					</attribute>
 					<attribute
-					name="height"
+					name="tagname"
 					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						20
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						submit
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						Next
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
+						span
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="data-bind"
+					name="style"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']
+					/dom[@domain='octopus.cogstate.com']//div[#'app']/div/div/div[2]/div[1]/?/?/button[@title='SIGN OUT']//span[@innertext='SIGN OUT']
 				</path>
 			</info>
 		</mouseitem>
@@ -199,7 +188,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ClickNextButton.UserCode.cs
+		LogoutOctopus.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

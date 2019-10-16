@@ -79,12 +79,12 @@ namespace DCT
 
             Init();
 
-            //Click_No();
-            //Delay.Milliseconds(0);
+            Click_No();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.IdBtnBack' at Center.", repo.SignInToYourAccount.IdBtnBackInfo, new RecordItemIndex(1));
-            repo.SignInToYourAccount.IdBtnBack.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.IdBtnBack' at Center.", repo.SignInToYourAccount.IdBtnBackInfo, new RecordItemIndex(1));
+            //repo.SignInToYourAccount.IdBtnBack.Click();
+            //Delay.Milliseconds(200);
             
         }
 

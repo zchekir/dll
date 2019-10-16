@@ -96,7 +96,11 @@ namespace DCT
             Validate.Exists(repo.DataCleaningTool.MoveValidationInfo);
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(1));
+            Host.Current.CloseApplication(repo.DataCleaningTool.Self, new Duration(0));
+            Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(2));
             
         }
 

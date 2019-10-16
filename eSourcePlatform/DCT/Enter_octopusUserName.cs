@@ -95,6 +95,21 @@ namespace DCT
             E_Username(OctopustUsername);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(1));
+            Delay.Duration(3000, false);
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OctopustUsername' with focus on 'SignInToYourAccount.EnterUseName'.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(2));
+            //repo.SignInToYourAccount.EnterUseName.PressKeys(OctopustUsername);
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.EnterUseName' at Center.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(3));
+            //repo.SignInToYourAccount.EnterUseName.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OctopustUsername' with focus on 'SignInToYourAccount.EnterUseName'.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(4));
+            //repo.SignInToYourAccount.EnterUseName.PressKeys(OctopustUsername);
+            //Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

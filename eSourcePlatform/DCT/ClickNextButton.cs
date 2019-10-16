@@ -85,6 +85,10 @@ namespace DCT
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
             
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.ClickNext' at Center.", repo.SignInToYourAccount.ClickNextInfo, new RecordItemIndex(2));
+            //repo.SignInToYourAccount.ClickNext.Click();
+            //Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

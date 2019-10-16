@@ -7,6 +7,9 @@ rxversion="8.3">
 	<name>
 		Enter_octopusUserName
 	</name>
+	<description>
+		The Enter_octopusUserName recording.
+	</description>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -59,6 +62,85 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="e85d33c9-97f3-4d6b-aa89-e9f4f1254584">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="OctopustUsername">
+				</binding>
+			</bindings>
+			<info
+			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ad020df6-8a88-42b6-bb7f-8c86914d5445"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="fea64c1b-0d83-4f9d-b1e6-2ed42d6ae133">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="OctopustUsername">
+				</binding>
+			</bindings>
+			<info
+			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+				</path>
+			</info>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

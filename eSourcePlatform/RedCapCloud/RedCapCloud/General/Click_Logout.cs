@@ -89,8 +89,8 @@ namespace RedCapCloud.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UserSettingsMenu' at Center.", repo.REDCapCloud.UserSettingsMenuInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.UserSettingsMenu.Click(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LogoutRCC' at Center.", repo.REDCapCloud.LogoutRCCInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.LogoutRCC.Click(100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.LogoutButton' at Center.", repo.REDCapCloud.LogoutButtonInfo, new RecordItemIndex(1));

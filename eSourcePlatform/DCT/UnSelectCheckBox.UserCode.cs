@@ -39,46 +39,65 @@ namespace DCT
         
         and the webelement class doesnt have usefull option in order to handle this situation I tried all situation but with not success if you can help 
          */
-        /*
-        public void CheckBox()
+        
+        public  string CheckBox()
         {
-        	WebElement RadioBox = "//i[#'dataCollectionWidget_checkboxComplete']";
-        	String state = RadioBox.Enabled.ToString();
-            
-            Report.Log(ReportLevel.Info, " The checkbox is sate:" + state);
+        	 cl = "//*[@class='fa fa-check-square-o'] ";
            
-          //  if ( state.CheckNotContainsNull(null)){
-            	
-            //	RadioBox.Click();
-           // }else {
-            	
-            	//Report.Log(ReportLevel.Info,"CheckBox not selected");
-           // }
            
+           
+            if(  cl.EnsureVisible() ){
+             	WebElement RadioBox = "//i[#'dataCollectionWidget_checkboxComplete']";
+                RadioBox.Click();
+            }
+             
+             	
+             	 return null ;	
             	
            
         }
         
+        
+        
+        
 
-        public void Validate_DataCollectionWidgetCheckboxComplete(RepoItemInfo itagInfo)
+       public string Validate_DataCollectionWidgetCheckboxComplete(RepoItemInfo itagInfo)
         {
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'itagInfo'.", itagInfo);
+            
+            
+            	
+            try{
+            
+            	//Validate.Exists(itagInfo);
+            	  cl.Click()
+           
+            } catch (Exception e){
+            	
+               e
+           }
+             
+             
+             if( t==true ){
+            	
+             	WebElement RadioBox = "//i[#'dataCollectionWidget_checkboxComplete']";
+             		
+             		RadioBox.Click();
+            }else {
+            	
+            	Report.Log(ReportLevel.Info,"TestPassed");
+            }
+             
+             	
+             	 return null ;	
              
             
             
-            
-             Validate.IsTrue(itagInfo));
-            	
-             	Report.Log(ReportLevel.Info," Dont select it");
-             else{
-             	
-             		WebElement RadioBox = "//i[#'dataCollectionWidget_checkboxComplete']";
-             		
-             		RadioBox.Click();
-             }
-             	*/
         }
+       
+        
     }
+}
 
 
         

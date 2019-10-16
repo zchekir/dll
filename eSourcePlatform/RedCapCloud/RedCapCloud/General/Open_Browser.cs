@@ -132,11 +132,11 @@ namespace RedCapCloud.General
             Init();
 
             Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, true, false, true);
+            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));
-            Delay.Duration(15000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 9s.", new RecordItemIndex(1));
+            Delay.Duration(9000, false);
             
         }
 
