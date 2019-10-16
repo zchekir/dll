@@ -43,8 +43,6 @@ namespace RedCapCloud.General
         {
             URL = "https://cgsqc.redcapcloud.com";
             Browser = "Chrome";
-            RCCUsername = "";
-            RCCPassword = "";
         }
 
         /// <summary>
@@ -79,30 +77,6 @@ namespace RedCapCloud.General
         {
             get { return _Browser; }
             set { _Browser = value; }
-        }
-
-        string _RCCUsername;
-
-        /// <summary>
-        /// Gets or sets the value of variable RCCUsername.
-        /// </summary>
-        [TestVariable("61646111-5a50-4e40-ac19-d7184c8ca629")]
-        public string RCCUsername
-        {
-            get { return _RCCUsername; }
-            set { _RCCUsername = value; }
-        }
-
-        string _RCCPassword;
-
-        /// <summary>
-        /// Gets or sets the value of variable RCCPassword.
-        /// </summary>
-        [TestVariable("92e2ed6c-8fcc-4149-9e49-0dab38e81588")]
-        public string RCCPassword
-        {
-            get { return _RCCPassword; }
-            set { _RCCPassword = value; }
         }
 
 #endregion

@@ -92,10 +92,7 @@ namespace DCT
 
             Init();
 
-            CheckBox();
-            Delay.Milliseconds(100);
-            
-            Validate_DataCollectionWidgetCheckboxComplete(repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo);
+            Select_Checkbox(repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo);
             Delay.Milliseconds(0);
             
         }

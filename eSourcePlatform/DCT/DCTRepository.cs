@@ -952,7 +952,7 @@ namespace DCT
             RepoItemInfo _loginusernameInfo;
             RepoItemInfo _loginapplybuttonInfo;
             RepoItemInfo _loginpasswordInfo;
-            RepoItemInfo _datacollectionwidgetcheckboxcompleteInfo;
+            DataCollectionWidgetCheckboxCompleteInfoClass _datacollectionwidgetcheckboxcompleteInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -972,7 +972,42 @@ namespace DCT
                 _loginusernameInfo = new RepoItemInfo(this, "LoginUsername", ".//input[#'login_username']", 30000, null, "f357fa53-de66-4bc6-adcb-c4468e3a4ec0");
                 _loginapplybuttonInfo = new RepoItemInfo(this, "LoginApplyButton", ".//button[#'login_applyButton']", 30000, null, "4a10d058-bb72-4a32-ab26-b56c3a0c5282");
                 _loginpasswordInfo = new RepoItemInfo(this, "LoginPassword", ".//input[#'login_password']", 30000, null, "ba64f708-3983-4c1b-bee1-8c60e98a4433");
-                _datacollectionwidgetcheckboxcompleteInfo = new RepoItemInfo(this, "DataCollectionWidgetCheckboxComplete", ".//i[#'dataCollectionWidget_checkboxComplete']", 30000, null, "f19e443a-dd21-4b96-8482-9449fbbd0ff5");
+                _datacollectionwidgetcheckboxcompleteInfo = new DataCollectionWidgetCheckboxCompleteInfoClass(this);
+            }
+
+            /// <summary>
+            /// The DataCollectionWidgetCheckboxCompleteInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("f19e443a-dd21-4b96-8482-9449fbbd0ff5")]
+            public class DataCollectionWidgetCheckboxCompleteInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// DataCollectionWidgetCheckboxCompleteInfoClass class constructor.
+                /// </summary>
+                public DataCollectionWidgetCheckboxCompleteInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "DataCollectionWidgetCheckboxComplete", ".//i[#'dataCollectionWidget_checkboxComplete']", 30000, null, "f19e443a-dd21-4b96-8482-9449fbbd0ff5")
+                { }
+
+                /// <summary>
+                /// Gets the Checked item image.
+                /// </summary>
+                /// <returns>The Checked image.</returns>
+                [RepositoryImage("8b353992-8df1-48f6-b2fa-36794b2f0a60")]
+                public CompressedImage GetChecked()
+                {
+                    return GetImage("8b353992-8df1-48f6-b2fa-36794b2f0a60");
+                }
+
+                /// <summary>
+                /// Gets the Checked item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("8b353992-8df1-48f6-b2fa-36794b2f0a60")]
+                public CompressedImage GetChecked(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("8b353992-8df1-48f6-b2fa-36794b2f0a60", cropRect);
+                }
             }
 
             /// <summary>
@@ -1303,7 +1338,7 @@ namespace DCT
             /// The DataCollectionWidgetCheckboxComplete item info.
             /// </summary>
             [RepositoryItemInfo("f19e443a-dd21-4b96-8482-9449fbbd0ff5")]
-            public virtual RepoItemInfo DataCollectionWidgetCheckboxCompleteInfo
+            public virtual DataCollectionWidgetCheckboxCompleteInfoClass DataCollectionWidgetCheckboxCompleteInfo
             {
                 get
                 {

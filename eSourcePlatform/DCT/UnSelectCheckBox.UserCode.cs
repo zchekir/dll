@@ -39,63 +39,30 @@ namespace DCT
         
         and the webelement class doesnt have usefull option in order to handle this situation I tried all situation but with not success if you can help 
          */
-        
-        public  string CheckBox()
+        public void Select_Checkbox(RepoItemInfo Checkbox)
         {
-        	 cl = "//*[@class='fa fa-check-square-o'] ";
-           
-           
-           
-            if(  cl.EnsureVisible() ){
-             	WebElement RadioBox = "//i[#'dataCollectionWidget_checkboxComplete']";
-                RadioBox.Click();
+        	//Declare variable for current image
+            Bitmap currentImage;
+            //Similarity value to use when comparing images
+            Double similarity = 0.99;
+            //Get the stored image of the checkbox with a tick
+            Bitmap storedImage = repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo.GetChecked();
+            
+            //Capture screenshot of current checkbox in RCC
+            currentImage = Ranorex.Imaging.CaptureImageAuto(repo.REDCapCloud.DataCollectionWidgetCheckboxComplete);
+            
+            //Log Stored and current images in report for debugging purposes
+            Report.LogData(ReportLevel.Info, "Info", "Current state of checkbox", currentImage);
+            Report.LogData(ReportLevel.Info, "Info", "Known state of checkbox", storedImage);
+            
+            //Compare the two images, click on the box if they match (checkbox is currently selected if the images match)
+            if (Ranorex.Imaging.Compare(currentImage, storedImage, similarity))
+            {
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCollectionWidgetCheckboxComplete' at Center.", repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo, new RecordItemIndex(0));
+            	repo.REDCapCloud.DataCollectionWidgetCheckboxComplete.Click();
             }
-             
-             	
-             	 return null ;	
-            	
-           
-        }
-        
-        
-        
-        
-
-       public string Validate_DataCollectionWidgetCheckboxComplete(RepoItemInfo itagInfo)
-        {
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'itagInfo'.", itagInfo);
             
-            
-            	
-            try{
-            
-            	//Validate.Exists(itagInfo);
-            	  cl.Click()
-           
-            } catch (Exception e){
-            	
-               e
-           }
-             
-             
-             if( t==true ){
-            	
-             	WebElement RadioBox = "//i[#'dataCollectionWidget_checkboxComplete']";
-             		
-             		RadioBox.Click();
-            }else {
-            	
-            	Report.Log(ReportLevel.Info,"TestPassed");
-            }
-             
-             	
-             	 return null ;	
-             
-            
-            
-        }
-       
-        
+        }   
     }
 }
 
