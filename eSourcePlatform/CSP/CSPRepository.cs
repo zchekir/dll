@@ -805,6 +805,8 @@ namespace CSP
             RepoItemInfo _batterypopulationdropdownInfo;
             RepoItemInfo _batterytemplatedropdownInfo;
             RepoItemInfo _batterytemplatedropdownoptionInfo;
+            RepoItemInfo _translationsdropdownInfo;
+            RepoItemInfo _translationsdropdowndefaultInfo;
             RepoItemInfo _namerequiredvalidationInfo;
             RepoItemInfo _populationrequiredvalidationInfo;
             RepoItemInfo _templaterequiredvalidationInfo;
@@ -828,24 +830,26 @@ namespace CSP
             public AddBatteryPageFolder(RepoGenBaseFolder parentFolder) :
                     base("AddBatteryPage", "", parentFolder, 0, null, false, "780fcf1c-95f0-43d6-ae77-a06f29e3eaeb", "")
             {
-                _batterynamefieldInfo = new RepoItemInfo(this, "BatteryNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "564dfbbc-a1f8-4664-9bb0-740b573b1b83");
-                _batterydescriptionfieldInfo = new RepoItemInfo(this, "BatteryDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "1ee5a82e-1ff8-4ead-8146-43adca4bc894");
-                _batterystatusdropdownInfo = new RepoItemInfo(this, "BatteryStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "764229ed-d1b6-4cfa-b17e-9a61fdbd7d9e");
-                _batterydraftstatusInfo = new RepoItemInfo(this, "BatteryDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']", 30000, null, "d28c6cbc-d9ee-43b6-b6f1-3da4caf2b6dd");
-                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_5']", 30000, null, "460ff0b4-1723-4c92-9813-cf9474fafefc");
-                _batterypopulationdropdownInfo = new RepoItemInfo(this, "BatteryPopulationDropdown", ".//select[@id~'formly_[0-9]+_select_indication_4']", 30000, null, "107c3512-95bb-4744-8616-4562277635c7");
-                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_6']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
-                _batterytemplatedropdownoptionInfo = new RepoItemInfo(this, "BatteryTemplateDropdownOption", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_6']/option[@label=$BatteryTemplateName+$RandNum]", 30000, null, "b7567443-acb0-422e-a21e-d375c9e0714d");
+                _batterynamefieldInfo = new RepoItemInfo(this, "BatteryNameField", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']", 30000, null, "564dfbbc-a1f8-4664-9bb0-740b573b1b83");
+                _batterydescriptionfieldInfo = new RepoItemInfo(this, "BatteryDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']", 30000, null, "1ee5a82e-1ff8-4ead-8146-43adca4bc894");
+                _batterystatusdropdownInfo = new RepoItemInfo(this, "BatteryStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']", 30000, null, "764229ed-d1b6-4cfa-b17e-9a61fdbd7d9e");
+                _batterydraftstatusInfo = new RepoItemInfo(this, "BatteryDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']", 30000, null, "d28c6cbc-d9ee-43b6-b6f1-3da4caf2b6dd");
+                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_[0-9]+']", 30000, null, "460ff0b4-1723-4c92-9813-cf9474fafefc");
+                _batterypopulationdropdownInfo = new RepoItemInfo(this, "BatteryPopulationDropdown", ".//select[@id~'formly_[0-9]+_select_indication_[0-9]+']", 30000, null, "107c3512-95bb-4744-8616-4562277635c7");
+                _batterytemplatedropdownInfo = new RepoItemInfo(this, "BatteryTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_[0-9]+']", 30000, null, "49d3bc58-ddc4-47e9-9a3a-239f487d39aa");
+                _batterytemplatedropdownoptionInfo = new RepoItemInfo(this, "BatteryTemplateDropdownOption", ".//select[@id~'formly_[0-9]+_select_batteryTemplate_[0-9]+']/option[@label=$BatteryTemplateName+$RandNum]", 30000, null, "b7567443-acb0-422e-a21e-d375c9e0714d");
+                _translationsdropdownInfo = new RepoItemInfo(this, "TranslationsDropdown", ".//select[@id~'formly_[0-9]+_select_translation_[0-9]+']", 30000, null, "6821fc58-cb2c-42c5-a885-8a41397aa7b3");
+                _translationsdropdowndefaultInfo = new RepoItemInfo(this, "TranslationsDropdownDefault", ".//select[@id~'formly_[0-9]+_select_translation_[0-9]+']/option[@label='Default']", 30000, null, "d20c1d52-f8e2-4157-a353-1c7edb6310b6");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "9b34d25f-6823-4976-b188-249b5f79543c");
                 _populationrequiredvalidationInfo = new RepoItemInfo(this, "PopulationRequiredValidation", ".//div[@innertext~'Population is required']", 30000, null, "febf10c1-8a7c-4339-b47f-1699d47784c0");
                 _templaterequiredvalidationInfo = new RepoItemInfo(this, "TemplateRequiredValidation", ".//div[@innertext~'Template is required']", 30000, null, "8527d043-7b39-4fd4-9d39-1cb8b390c4ca");
-                _batterynameminlengthvalidationInfo = new RepoItemInfo(this, "BatteryNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "c7900ad1-3cd8-4a86-aa4f-405332898535");
-                _batterydescriptionminlengthInfo = new RepoItemInfo(this, "BatteryDescriptionMinLength", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']/..//div[@innertext~'The minimum length']", 30000, null, "5c3fdd48-4f58-4b9f-8ef8-e8024cc42559");
+                _batterynameminlengthvalidationInfo = new RepoItemInfo(this, "BatteryNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']", 30000, null, "c7900ad1-3cd8-4a86-aa4f-405332898535");
+                _batterydescriptionminlengthInfo = new RepoItemInfo(this, "BatteryDescriptionMinLength", ".//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']/..//div[@innertext~'The minimum length']", 30000, null, "5c3fdd48-4f58-4b9f-8ef8-e8024cc42559");
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-helper-battery-display-reorder']//i[@innertext='mode_edit']", 30000, null, "7374a82c-bca0-488b-8b9d-b145aa147f9e");
-                _batterypopulationoptionInfo = new RepoItemInfo(this, "BatteryPopulationOption", ".//select[@id~'formly_[0-9]+_select_indication_4']/option[@innertext=$BatteryPopulation]", 30000, null, "15d7475f-65ad-4ec8-92e5-63fa636bf7df");
+                _batterypopulationoptionInfo = new RepoItemInfo(this, "BatteryPopulationOption", ".//select[@id~'formly_[0-9]+_select_indication_[0-9]+']/option[@innertext=$BatteryPopulation]", 30000, null, "15d7475f-65ad-4ec8-92e5-63fa636bf7df");
                 _firstbatteryblockInfo = new RepoItemInfo(this, "FirstBatteryBlock", ".//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-helper-battery-display-reorder']//ul/li[1]", 30000, null, "2b7260a6-8b1d-4961-9108-0f3b23cb9290");
-                _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_1']", 30000, null, "a663e077-b054-4cf5-a000-99a176bc9130");
-                _cogstatetestoptionInfo = new RepoItemInfo(this, "CogstateTestOption", ".//select[@id~'formly_[0-9]+_select_type_1']/option[@innertext=$BatteryBlock]", 30000, null, "e0c09b12-b293-4227-ac63-94eecf66affb");
+                _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_[0-9]+']", 30000, null, "a663e077-b054-4cf5-a000-99a176bc9130");
+                _cogstatetestoptionInfo = new RepoItemInfo(this, "CogstateTestOption", ".//select[@id~'formly_[0-9]+_select_type_[0-9]+']/option[@innertext=$BatteryBlock]", 30000, null, "e0c09b12-b293-4227-ac63-94eecf66affb");
                 _geariconInfo = new RepoItemInfo(this, "GearIcon", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-simple-edit']//tag[@tagname='ng-form']//i", 30000, null, "aa49e337-bbf8-4fff-9d3e-844cabe5bf90");
                 _testtimesettingInfo = new RepoItemInfo(this, "TestTimeSetting", "body//label[@innertext='Test Time']/..//input[@type='number']", 30000, null, "23197852-97c6-4171-b48b-30687503e6a4");
                 _batterysettingssavebuttonInfo = new RepoItemInfo(this, "BatterySettingsSaveButton", "body//button[@innertext='OK']", 30000, null, "d90c89b8-31f7-4665-94c9-27c592889895");
@@ -1055,6 +1059,54 @@ namespace CSP
                 get
                 {
                     return _batterytemplatedropdownoptionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TranslationsDropdown item.
+            /// </summary>
+            [RepositoryItem("6821fc58-cb2c-42c5-a885-8a41397aa7b3")]
+            public virtual Ranorex.SelectTag TranslationsDropdown
+            {
+                get
+                {
+                    return _translationsdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TranslationsDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("6821fc58-cb2c-42c5-a885-8a41397aa7b3")]
+            public virtual RepoItemInfo TranslationsDropdownInfo
+            {
+                get
+                {
+                    return _translationsdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TranslationsDropdownDefault item.
+            /// </summary>
+            [RepositoryItem("d20c1d52-f8e2-4157-a353-1c7edb6310b6")]
+            public virtual Ranorex.OptionTag TranslationsDropdownDefault
+            {
+                get
+                {
+                    return _translationsdropdowndefaultInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TranslationsDropdownDefault item info.
+            /// </summary>
+            [RepositoryItemInfo("d20c1d52-f8e2-4157-a353-1c7edb6310b6")]
+            public virtual RepoItemInfo TranslationsDropdownDefaultInfo
+            {
+                get
+                {
+                    return _translationsdropdowndefaultInfo;
                 }
             }
 
@@ -1468,16 +1520,16 @@ namespace CSP
             public AddBatteryTemplatePageFolder(RepoGenBaseFolder parentFolder) :
                     base("AddBatteryTemplatePage", "", parentFolder, 0, null, false, "eb5eaff1-02d7-44c7-8631-69c760f0fb95", "")
             {
-                _batterytemplatenamefieldInfo = new RepoItemInfo(this, "BatteryTemplateNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "235f34cc-7b8c-4b58-94b6-c998ec0f780b");
-                _batterytemplatedescriptionfieldInfo = new RepoItemInfo(this, "BatteryTemplateDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "ed871e74-c0b8-48f1-8072-1e86c910aa34");
-                _batterytemplatestatusdropdownInfo = new RepoItemInfo(this, "BatteryTemplateStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "edaf8b55-8aa5-4f04-bc93-12237fb6b754");
-                _batterytemplatedraftstatusInfo = new RepoItemInfo(this, "BatteryTemplateDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']", 30000, null, "addebc81-a000-4acf-95a0-f113c8552cb2");
-                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']", 30000, null, "825c735f-1d54-4e5c-8291-ce371dec3840");
+                _batterytemplatenamefieldInfo = new RepoItemInfo(this, "BatteryTemplateNameField", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']", 30000, null, "235f34cc-7b8c-4b58-94b6-c998ec0f780b");
+                _batterytemplatedescriptionfieldInfo = new RepoItemInfo(this, "BatteryTemplateDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']", 30000, null, "ed871e74-c0b8-48f1-8072-1e86c910aa34");
+                _batterytemplatestatusdropdownInfo = new RepoItemInfo(this, "BatteryTemplateStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']", 30000, null, "edaf8b55-8aa5-4f04-bc93-12237fb6b754");
+                _batterytemplatedraftstatusInfo = new RepoItemInfo(this, "BatteryTemplateDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']", 30000, null, "addebc81-a000-4acf-95a0-f113c8552cb2");
+                _responseoptionscheckboxInfo = new RepoItemInfo(this, "ResponseOptionsCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_[0-9]+']", 30000, null, "825c735f-1d54-4e5c-8291-ce371dec3840");
                 _statusrequiredvalidationInfo = new RepoItemInfo(this, "StatusRequiredValidation", ".//div[@innertext~'Status is required']", 30000, null, "58f26e92-263a-420b-98d0-cafd59c77eba");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "594a35b6-7e6b-4b5a-ba1a-00cc315257d2");
                 _addtestbuttonInfo = new RepoItemInfo(this, "AddTestButton", ".//img[@src~'https://'+$CSPDOM+'/asset/images/add_icon_off.png']", 30000, null, "0690d370-5e9c-4b2f-ad95-e9924f9da3e2");
-                _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_1']", 30000, null, "14b1c123-0dd1-4b12-a9c7-15736c9e3f9c");
-                _cogstatetestdropdownoptionInfo = new RepoItemInfo(this, "CogstateTestDropdownOption", ".//select[@id~'formly_[0-9]+_select_type_1']/option[@label=$BatteryBlockName]", 30000, null, "00d12e48-5341-45d4-aa4e-d21cf89a52b4");
+                _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_[0-9]+']", 30000, null, "14b1c123-0dd1-4b12-a9c7-15736c9e3f9c");
+                _cogstatetestdropdownoptionInfo = new RepoItemInfo(this, "CogstateTestDropdownOption", ".//select[@id~'formly_[0-9]+_select_type_[0-9]+']/option[@label=$BatteryBlockName]", 30000, null, "00d12e48-5341-45d4-aa4e-d21cf89a52b4");
                 _saveblockbuttonInfo = new RepoItemInfo(this, "SaveBlockButton", ".//tag[@tagname='cogstate-generic-simple-edit']//button[@innertext>'SAVE' and @visible='True']", 30000, null, "9c85f83b-640a-42ac-88ee-51fec91cdaa4");
                 _batteryblockcardInfo = new RepoItemInfo(this, "BatteryBlockCard", ".//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4[@innertext=$BatteryBlockName]", 30000, null, "b9339527-389b-4f98-9ee3-d3556837eef6");
             }
@@ -1830,13 +1882,13 @@ namespace CSP
             public AddWorkflowPageFolder(RepoGenBaseFolder parentFolder) :
                     base("AddWorkflowPage", "", parentFolder, 0, null, false, "9ee03835-fe29-470b-8006-efe7f711d95a", "")
             {
-                _workflownamefieldInfo = new RepoItemInfo(this, "WorkflowNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "55c9db0f-4384-428c-9276-e0ae89b2788b");
-                _workflowdescriptionfieldInfo = new RepoItemInfo(this, "WorkflowDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "9054e5fa-e525-4191-babd-c03af2e3b498");
-                _workflowtypedropdownInfo = new RepoItemInfo(this, "WorkflowTypeDropdown", ".//select[@id~'formly_[0-9]+_select_workflowType_2']", 30000, null, "32590909-4016-4990-9c5e-4dbef88365fd");
-                _externalembeddedworkflowtypeInfo = new RepoItemInfo(this, "ExternalEmbeddedWorkflowType", ".//select[@id~'formly_[0-9]+_select_workflowType_2']/option[@label='External Embedded']", 30000, null, "86c97b72-113a-4fdd-bbd1-3aa41b2dbd8f");
-                _workflowstatusdropdownInfo = new RepoItemInfo(this, "WorkflowStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_3']", 30000, null, "844d1291-7f90-41d3-a9bb-326c95d1fddc");
-                _workflowstatusdraftoptionInfo = new RepoItemInfo(this, "WorkflowStatusDraftOption", ".//select[@id~'formly_[0-9]+_select_status_3']/option[@label='Draft']", 30000, null, "61e60a2c-f3a8-439c-8dac-e17fdacf52a7");
-                _workflowtemplatedropdownInfo = new RepoItemInfo(this, "WorkflowTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_workflowTemplate_4']", 30000, null, "ecf5466e-902e-409d-bd5b-5db8fe1c5e9a");
+                _workflownamefieldInfo = new RepoItemInfo(this, "WorkflowNameField", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']", 30000, null, "55c9db0f-4384-428c-9276-e0ae89b2788b");
+                _workflowdescriptionfieldInfo = new RepoItemInfo(this, "WorkflowDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']", 30000, null, "9054e5fa-e525-4191-babd-c03af2e3b498");
+                _workflowtypedropdownInfo = new RepoItemInfo(this, "WorkflowTypeDropdown", ".//select[@id~'formly_[0-9]+_select_workflowType_[0-9]+']", 30000, null, "32590909-4016-4990-9c5e-4dbef88365fd");
+                _externalembeddedworkflowtypeInfo = new RepoItemInfo(this, "ExternalEmbeddedWorkflowType", ".//select[@id~'formly_[0-9]+_select_workflowType_[0-9]+']/option[@label='External Embedded']", 30000, null, "86c97b72-113a-4fdd-bbd1-3aa41b2dbd8f");
+                _workflowstatusdropdownInfo = new RepoItemInfo(this, "WorkflowStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']", 30000, null, "844d1291-7f90-41d3-a9bb-326c95d1fddc");
+                _workflowstatusdraftoptionInfo = new RepoItemInfo(this, "WorkflowStatusDraftOption", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']", 30000, null, "61e60a2c-f3a8-439c-8dac-e17fdacf52a7");
+                _workflowtemplatedropdownInfo = new RepoItemInfo(this, "WorkflowTemplateDropdown", ".//select[@id~'formly_[0-9]+_select_workflowTemplate_[0-9]+']", 30000, null, "ecf5466e-902e-409d-bd5b-5db8fe1c5e9a");
                 _simplebatterystepInfo = new RepoItemInfo(this, "SimpleBatteryStep", ".//tag[@tagname='cogstate-helper-workflow-reorder-card']//h4[@innertext~'Simple [B|b]attery']", 30000, null, "ab84a654-2ee6-45d9-836a-82508ebc2b4d");
                 _propertiestabInfo = new RepoItemInfo(this, "PropertiesTab", ".//tag[@tagname='cogstate-helper-workflow-simple-edit']//ul/li/a[@innertext='Properties']", 30000, null, "b9e602e9-716f-4cac-95c1-2213bb8022fb");
                 _workflowblockpropertiessavebuttonInfo = new RepoItemInfo(this, "WorkflowBlockPropertiesSaveButton", ".//tag[@tagname='cogstate-helper-workflow-simple-edit']//form[@method='get']//button[@innertext>'SAVE' and @visible='True']", 30000, null, "39fff2d9-158d-41f9-ba1c-f1401d9ff28b");
@@ -1848,15 +1900,15 @@ namespace CSP
                 _complexoutcomedecisionmaxInfo = new RepoItemInfo(this, "ComplexOutcomeDecisionMax", ".//input[#'formly_group_0_threshold_0_input_max_2']", 30000, null, "b50b56ec-f72f-432b-a053-5daf17f1036e");
                 _complexoutcomedecisionoutcomedropdownInfo = new RepoItemInfo(this, "ComplexOutcomeDecisionOutcomeDropdown", ".//select[#'formly_group_0_threshold_0_selectWithXButton_outcomeId_0']", 30000, null, "7c7a549a-272e-4a32-9410-25ca117e497b");
                 _outcomemeasuredoutcomedropdownInfo = new RepoItemInfo(this, "OutcomeMeasuredOutcomeDropdown", ".//select[@name~'selectWithXButton']", 30000, null, "428bf8ce-551a-4558-80ec-d9fd5db74c68");
-                _workflowbatterydropdownInfo = new RepoItemInfo(this, "WorkflowBatteryDropdown", ".//select[@id~'formly_[0-9]+_select_temp_ConfigurationShow_battery_6']", 30000, null, "6fef3c62-76eb-43d9-a54a-7f413c815113");
+                _workflowbatterydropdownInfo = new RepoItemInfo(this, "WorkflowBatteryDropdown", ".//select[@id~'formly_[0-9]+_select_temp_ConfigurationShow_battery_[0-9]+']", 30000, null, "6fef3c62-76eb-43d9-a54a-7f413c815113");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "f76cbfa1-1e9f-4229-af65-e988b8c452d3");
                 _descriptionrequiredvalidationInfo = new RepoItemInfo(this, "DescriptionRequiredValidation", ".//div[@innertext~'Description is required']", 30000, null, "63cc36ec-e23f-407c-b97d-25310b1168af");
                 _typerequiredvalidationInfo = new RepoItemInfo(this, "TypeRequiredValidation", ".//div[@innertext~'Workflow Type is required']", 30000, null, "3bb4c6b7-fa59-4e7e-bc0c-dce54e8fd68a");
                 _templaterequiredvalidationInfo = new RepoItemInfo(this, "TemplateRequiredValidation", ".//div[@innertext~'You must select a']", 30000, null, "9f586359-654b-415f-8ca0-1b019121bcd7");
-                _workflownameminlengthvalidationInfo = new RepoItemInfo(this, "WorkflowNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "a4605aa1-f69a-4d44-bab5-a7bc634f6f55");
-                _workflowdescriptionminlengthvalidationInfo = new RepoItemInfo(this, "WorkflowDescriptionMinLengthValidation", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']/..//div[@innertext~'The minimum length']", 30000, null, "82b6da2e-317f-472f-ae02-e45783326eb2");
+                _workflownameminlengthvalidationInfo = new RepoItemInfo(this, "WorkflowNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']", 30000, null, "a4605aa1-f69a-4d44-bab5-a7bc634f6f55");
+                _workflowdescriptionminlengthvalidationInfo = new RepoItemInfo(this, "WorkflowDescriptionMinLengthValidation", ".//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']/..//div[@innertext~'The minimum length']", 30000, null, "82b6da2e-317f-472f-ae02-e45783326eb2");
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//tag[@tagname='cogstate-helper-workflow-display-reorder']//i[@innertext='mode_edit']", 30000, null, "c2ccca89-3ac1-4c7b-bfc1-b67d6f8eb0f3");
-                _workflowtemplateoptionInfo = new RepoItemInfo(this, "WorkflowTemplateOption", ".//select[@id~'formly_[0-9]+_select_workflowTemplate_4']/option[@label=$WorkflowTemplate]", 30000, null, "c7164b4f-8710-4a29-b4a6-b86614c39e1b");
+                _workflowtemplateoptionInfo = new RepoItemInfo(this, "WorkflowTemplateOption", ".//select[@id~'formly_[0-9]+_select_workflowTemplate_[0-9]+']/option[@label=$WorkflowTemplate]", 30000, null, "c7164b4f-8710-4a29-b4a6-b86614c39e1b");
                 _firstworkflowstepInfo = new RepoItemInfo(this, "FirstWorkflowStep", ".//tag[@tagname='cogstate-helper-workflow-display-reorder']//ul/li[1]//h4", 1000, null, "2004fa99-bde8-4b4d-9dad-421eccfd0bc0");
                 _secondworkflowstepInfo = new RepoItemInfo(this, "SecondWorkflowStep", ".//tag[@tagname='cogstate-helper-workflow-display-reorder']//ul/li[2]//h4", 1000, null, "ce4f7db8-896e-4084-acd2-e63c07aacf58");
                 _thirdworkflowstepInfo = new RepoItemInfo(this, "ThirdWorkflowStep", ".//tag[@tagname='cogstate-helper-workflow-display-reorder']//ul/li[3]//h4", 1000, null, "b9a85073-e07d-4b07-9e03-50725661b58f");
@@ -3040,17 +3092,17 @@ namespace CSP
                     base("AddVisitSchedulePage", "", parentFolder, 0, null, false, "e9fe91d0-85b2-4bce-a5ee-f2db02f13215", "")
             {
                 _savebuttonInfo = new RepoItemInfo(this, "SaveButton", ".//tag[@tagname='ng-form']//input[@ng-click='saveVisitSchedule()']", 30000, null, "57a52691-fdb2-424a-aec3-bc5e5fff4446");
-                _visitschedulenamefieldInfo = new RepoItemInfo(this, "VisitScheduleNameField", ".//input[@id~'formly_[0-9]+_input_name_0']", 30000, null, "017929db-0819-4638-9295-0f6a5db95999");
-                _visitscheduledescriptionfieldInfo = new RepoItemInfo(this, "VisitScheduleDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_1']", 30000, null, "aedd084f-bccc-42e8-908c-39282d630f73");
-                _visitschedulestatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_2']", 30000, null, "669e2c14-e193-4858-afd0-2e739ebb94ba");
-                _visitscheduledraftstatusInfo = new RepoItemInfo(this, "VisitScheduleDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']", 30000, null, "6d8c87c9-a9ee-48fb-a13f-0602ba4ecc6d");
-                _visitscheduleworkflowdropdownInfo = new RepoItemInfo(this, "VisitScheduleWorkflowDropdown", ".//select[@id~'formly_[0-9]+_select_workflow_2']", 30000, null, "32f08ae3-a2b2-4356-8eb5-f29742e8cd17");
-                _visitscheduleworkflowoptionInfo = new RepoItemInfo(this, "VisitScheduleWorkflowOption", ".//select[@id~'formly_[0-9]+_select_workflow_2']/option[@label=$WorkflowName+$RandNum]", 30000, null, "11da81c6-d578-4ca8-af3d-66941ab38802");
-                _visitschedulevisitstatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleVisitStatusDropdown", ".//select[@id~'formly_[0-9]+_select_visitStatus_3']", 30000, null, "d7fb7df4-d20f-46a6-a2a7-ad66754684be");
-                _visitschedulevisitsessioncodeInfo = new RepoItemInfo(this, "VisitScheduleVisitSessionCode", ".//input[@id~'formly_[0-9]+_input_code_4']", 30000, null, "c2f213dd-9ca4-4fd3-862d-cb9066680ed4");
+                _visitschedulenamefieldInfo = new RepoItemInfo(this, "VisitScheduleNameField", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']", 30000, null, "017929db-0819-4638-9295-0f6a5db95999");
+                _visitscheduledescriptionfieldInfo = new RepoItemInfo(this, "VisitScheduleDescriptionField", ".//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']", 30000, null, "aedd084f-bccc-42e8-908c-39282d630f73");
+                _visitschedulestatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleStatusDropdown", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']", 30000, null, "669e2c14-e193-4858-afd0-2e739ebb94ba");
+                _visitscheduledraftstatusInfo = new RepoItemInfo(this, "VisitScheduleDraftStatus", ".//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']", 30000, null, "6d8c87c9-a9ee-48fb-a13f-0602ba4ecc6d");
+                _visitscheduleworkflowdropdownInfo = new RepoItemInfo(this, "VisitScheduleWorkflowDropdown", ".//select[@id~'formly_[0-9]+_select_workflow_[0-9]+']", 30000, null, "32f08ae3-a2b2-4356-8eb5-f29742e8cd17");
+                _visitscheduleworkflowoptionInfo = new RepoItemInfo(this, "VisitScheduleWorkflowOption", ".//select[@id~'formly_[0-9]+_select_workflow_[0-9]+']/option[@label=$WorkflowName+$RandNum]", 30000, null, "11da81c6-d578-4ca8-af3d-66941ab38802");
+                _visitschedulevisitstatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleVisitStatusDropdown", ".//select[@id~'formly_[0-9]+_select_visitStatus_[0-9]+']", 30000, null, "d7fb7df4-d20f-46a6-a2a7-ad66754684be");
+                _visitschedulevisitsessioncodeInfo = new RepoItemInfo(this, "VisitScheduleVisitSessionCode", ".//input[@id~'formly_[0-9]+_input_code_[0-9]+']", 30000, null, "c2f213dd-9ca4-4fd3-862d-cb9066680ed4");
                 _rcceventdefinitionvisitInfo = new RepoItemInfo(this, "RCCEventDefinitionVisit", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='RCCEventDefinitions']", 30000, null, "be5b3f27-cfbc-4a0d-a8d2-b4c9df577a78");
                 _visit1Info = new RepoItemInfo(this, "Visit1", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$VisitName]", 30000, null, "6d4d528a-8639-493c-866c-405f383143ae");
-                _visitschedulenameminlengthvalidationInfo = new RepoItemInfo(this, "VisitScheduleNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
+                _visitschedulenameminlengthvalidationInfo = new RepoItemInfo(this, "VisitScheduleNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
                 _visitsessionidfieldInfo = new RepoItemInfo(this, "VisitSessionIDField", ".//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']", 30000, null, "fab623de-d4cc-4b0f-ba8a-762fa57e6154");
                 _visitscheduleaddvisitbuttonInfo = new RepoItemInfo(this, "VisitScheduleAddVisitButton", ".//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src>'https://'+$CSPDOM+'/asset/images/add_icon_']", 30000, null, "1a6e3a4c-b365-4758-a5c7-038f791a62d3");
                 _datalossmitigationtoggleInfo = new DataLossMitigationToggleInfoClass(this);
@@ -3068,7 +3120,7 @@ namespace CSP
                 /// DataLossMitigationToggleInfoClass class constructor.
                 /// </summary>
                 public DataLossMitigationToggleInfoClass(RepoGenBaseFolder parentFolder)
-                    : base(parentFolder, "DataLossMitigationToggle", ".//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigation_5']", 30000, null, "9bb5db00-dc73-4759-8309-8ee79f3b7b41")
+                    : base(parentFolder, "DataLossMitigationToggle", ".//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigation_[0-9]+']", 30000, null, "9bb5db00-dc73-4759-8309-8ee79f3b7b41")
                 { }
 
                 /// <summary>
@@ -3103,7 +3155,7 @@ namespace CSP
                 /// DataLossNotificationToggleInfoClass class constructor.
                 /// </summary>
                 public DataLossNotificationToggleInfoClass(RepoGenBaseFolder parentFolder)
-                    : base(parentFolder, "DataLossNotificationToggle", ".//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigationNotifications_6']", 30000, null, "ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")
+                    : base(parentFolder, "DataLossNotificationToggle", ".//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigationNotifications_[0-9]+']", 30000, null, "ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")
                 { }
 
                 /// <summary>
@@ -3568,12 +3620,12 @@ namespace CSP
             public AddInternalUserPageFolder(RepoGenBaseFolder parentFolder) :
                     base("AddInternalUserPage", "", parentFolder, 0, null, false, "b77095e3-2814-4935-a676-2180ea71059d", "")
             {
-                _usernamefieldInfo = new RepoItemInfo(this, "UsernameField", ".//input[@id~'formly_[0-9]+_input_username_0']", 30000, null, "f11b7715-6596-46fb-b4a1-d894cab9fbff");
-                _firstnamefieldInfo = new RepoItemInfo(this, "FirstNameField", ".//input[@id~'formly_[0-9]+_input_firstName_1']", 30000, null, "dc732b15-8165-4192-a355-f2f085b09b91");
-                _lastnamefieldInfo = new RepoItemInfo(this, "LastNameField", ".//input[@id~'formly_[0-9]+_input_lastName_2']", 30000, null, "1691c200-047a-42f3-866a-9f9061b57f1f");
-                _roledropdownInfo = new RepoItemInfo(this, "RoleDropdown", ".//select[@id~'formly_[0-9]+_select_platformAdminModuleRole_3']", 30000, null, "5c788fd7-7072-411a-885a-a4578e4ad53c");
-                _lockedcheckboxInfo = new RepoItemInfo(this, "LockedCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_lock_4']", 30000, null, "261351a4-fa06-469c-8239-182ecb7d8f07");
-                _useractivecheckboxInfo = new RepoItemInfo(this, "UserActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_5']", 30000, null, "aefd58c0-c293-45b8-b49b-bf3e17df4cdc");
+                _usernamefieldInfo = new RepoItemInfo(this, "UsernameField", ".//input[@id~'formly_[0-9]+_input_username_[0-9]+']", 30000, null, "f11b7715-6596-46fb-b4a1-d894cab9fbff");
+                _firstnamefieldInfo = new RepoItemInfo(this, "FirstNameField", ".//input[@id~'formly_[0-9]+_input_firstName_[0-9]+']", 30000, null, "dc732b15-8165-4192-a355-f2f085b09b91");
+                _lastnamefieldInfo = new RepoItemInfo(this, "LastNameField", ".//input[@id~'formly_[0-9]+_input_lastName_[0-9]+']", 30000, null, "1691c200-047a-42f3-866a-9f9061b57f1f");
+                _roledropdownInfo = new RepoItemInfo(this, "RoleDropdown", ".//select[@id~'formly_[0-9]+_select_platformAdminModuleRole_[0-9]+']", 30000, null, "5c788fd7-7072-411a-885a-a4578e4ad53c");
+                _lockedcheckboxInfo = new RepoItemInfo(this, "LockedCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_lock_[0-9]+']", 30000, null, "261351a4-fa06-469c-8239-182ecb7d8f07");
+                _useractivecheckboxInfo = new RepoItemInfo(this, "UserActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_[0-9]+']", 30000, null, "aefd58c0-c293-45b8-b49b-bf3e17df4cdc");
             }
 
             /// <summary>
@@ -3751,7 +3803,7 @@ namespace CSP
             {
                 _externaluserkeyfieldInfo = new RepoItemInfo(this, "ExternalUserKeyField", ".//input[@id~'formly_[0-9]+_input_key_[0-9]+']", 30000, null, "2547f856-5f28-4dad-942d-3a0cd6c41707");
                 _externaluseremailfieldInfo = new RepoItemInfo(this, "ExternalUserEmailField", ".//input[@id~'formly_[0-9]+_input_contactEmail_[0-9]+']", 30000, null, "4647601e-706b-41d6-a391-656ee0bee7b4");
-                _activecheckboxInfo = new RepoItemInfo(this, "ActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_2']", 30000, null, "f092518f-91bb-46f4-a906-01df286231f4");
+                _activecheckboxInfo = new RepoItemInfo(this, "ActiveCheckbox", ".//input[@id~'formly_[0-9]+_checkbox_active_[0-9]+']", 30000, null, "f092518f-91bb-46f4-a906-01df286231f4");
             }
 
             /// <summary>
@@ -4126,12 +4178,12 @@ namespace CSP
                 _showtestuserscheckboxInfo = new RepoItemInfo(this, "ShowTestUsersCheckbox", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-participant-list-header']//label[@innertext~'Show Test Users']/input[@type='checkbox']", 30000, null, "2e3c5b52-487e-4841-aa4c-79a3ee5ced8b");
                 _lastupdatecolumnheaderInfo = new RepoItemInfo(this, "LastUpdateColumnHeader", ".//div[#'ng-app']//table/thead//th[@innertext>'Last Update']", 30000, null, "db429d76-6f15-42ee-88fc-70fd6b307e71");
                 _editbuttonInfo = new RepoItemInfo(this, "EditButton", ".//div[#'ng-app']//table/tbody/tr/td/i[@innertext='mode_edit' and @visible='True']", 30000, null, "df079711-8cff-4169-a30a-94b5fc44094e");
-                _testuserdropdownInfo = new RepoItemInfo(this, "TestUserDropdown", ".//select[@id~'formly_[0-9]+_select_isTestUser_8']", 30000, null, "81ba7448-eb97-49ce-b980-a8c0efa202e0");
+                _testuserdropdownInfo = new RepoItemInfo(this, "TestUserDropdown", ".//select[@id~'formly_[0-9]+_select_isTestUser_[0-9]+']", 30000, null, "81ba7448-eb97-49ce-b980-a8c0efa202e0");
                 _participantusernameInfo = new RepoItemInfo(this, "ParticipantUserName", ".//div[#'ng-app']//table/tbody/tr/td/a[@visible='True']", 30000, null, "cdf5e922-5ffd-4dc2-b77d-22b8ddf48437");
                 _expandprofileInfo = new RepoItemInfo(this, "ExpandProfile", ".//div[#'ng-app']//i[@innertext='keyboard_arrow_down']", 30000, null, "92ea73f0-8db5-4d63-bcfb-999617090417");
-                _participantusernamefieldInfo = new RepoItemInfo(this, "ParticipantUserNameField", ".//input[@id~'formly_[0-9]+_input_userName_12']", 30000, null, "e86403e9-ba78-4778-ba8b-25584e0d16c8");
-                _enrollstatusdropdownInfo = new RepoItemInfo(this, "EnrollStatusDropdown", ".//select[@id~'formly_[0-9]+_select_enrollStatus_3']", 30000, null, "082a5242-4567-4480-9fd0-962468dd30a8");
-                _iqnumberfieldInfo = new RepoItemInfo(this, "IQNumberField", ".//input[@id~'formly_[[0-9]+_input_iqNumber_6']", 30000, null, "a9be2453-e8e7-4234-b4ba-8f74e63504fd");
+                _participantusernamefieldInfo = new RepoItemInfo(this, "ParticipantUserNameField", ".//input[@id~'formly_[0-9]+_input_userName_[0-9]+']", 30000, null, "e86403e9-ba78-4778-ba8b-25584e0d16c8");
+                _enrollstatusdropdownInfo = new RepoItemInfo(this, "EnrollStatusDropdown", ".//select[@id~'formly_[0-9]+_select_enrollStatus_[0-9]+']", 30000, null, "082a5242-4567-4480-9fd0-962468dd30a8");
+                _iqnumberfieldInfo = new RepoItemInfo(this, "IQNumberField", ".//input[@id~'formly_[[0-9]+_input_iqNumber_[0-9]+']", 30000, null, "a9be2453-e8e7-4234-b4ba-8f74e63504fd");
             }
 
             /// <summary>
@@ -5797,9 +5849,9 @@ namespace CSP
                     base("StudyLocalitiesPage", ".//div[#'ng-app']/tag/div/div", parentFolder, 30000, null, false, "8eb287fe-5a40-4f68-8b36-049f7d75f284", "")
             {
                 _editlocalitiesbuttonInfo = new RepoItemInfo(this, "EditLocalitiesButton", ".//tag[@tagname='cogstate-generic-study-children-tabs']//tag[@tagname='cogstate-generic-study-settings-compact']//i[@innertext='mode_edit']", 30000, null, "f219702b-f2cb-4443-b178-cf3291bc0dc0");
-                _localityoptionInfo = new RepoItemInfo(this, "LocalityOption", ".//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@innertext=$Locality]", 30000, null, "8d4ec3e3-6f1b-4da5-a1d0-65e2d07561a5");
-                _blanklocalityInfo = new RepoItemInfo(this, "BlankLocality", ".//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@value='-1000']", 30000, null, "3e4c4bc2-ea18-4542-939d-e066cf9d1138");
-                _localitieslistInfo = new RepoItemInfo(this, "LocalitiesList", ".//select[@id~'formly_[0-9]+_multiselect_localities_0']", 30000, null, "0111342b-a4b5-45f1-9242-804432775727");
+                _localityoptionInfo = new RepoItemInfo(this, "LocalityOption", ".//select[@id~'formly_[0-9]+_multiselect_localities_[0-9]+']/option[@innertext=$Locality]", 30000, null, "8d4ec3e3-6f1b-4da5-a1d0-65e2d07561a5");
+                _blanklocalityInfo = new RepoItemInfo(this, "BlankLocality", ".//select[@id~'formly_[0-9]+_multiselect_localities_[0-9]+']/option[@value='-1000']", 30000, null, "3e4c4bc2-ea18-4542-939d-e066cf9d1138");
+                _localitieslistInfo = new RepoItemInfo(this, "LocalitiesList", ".//select[@id~'formly_[0-9]+_multiselect_localities_[0-9]+']", 30000, null, "0111342b-a4b5-45f1-9242-804432775727");
             }
 
             /// <summary>
@@ -7124,8 +7176,8 @@ namespace CSP
                 _generatesecretbuttonInfo = new RepoItemInfo(this, "GenerateSecretButton", ".//tag[@tagname='cogstate-authentication-generate']//button[@innertext~'GENERATE SECRET']", 30000, null, "f96f42bd-cb6d-47b7-96d4-902c40f97fa4");
                 _resetpasswordusernameInfo = new RepoItemInfo(this, "ResetPasswordUsername", ".//tag[@tagname='cogstate-authentication-reset']/div/div/div/div[2]/div[@innertext~$RandNum]", 30000, null, "75381b84-b360-445f-9ced-41569a1c7c55");
                 _resetpasswordbuttonInfo = new RepoItemInfo(this, "ResetPasswordButton", ".//tag[@tagname='cogstate-authentication-reset']/div/div/div/div[3]/button[@innertext~'RESET PASSWORD']", 30000, null, "53858367-34f1-41f2-a181-97b3cd537900");
-                _resetpasswordfieldInfo = new RepoItemInfo(this, "ResetPasswordField", ".//input[@id~'formly_[0-9]+_labelessInput_password_0']", 30000, null, "47ed2a37-5002-42f9-a51a-c37a678cde89");
-                _resetpasswordconfirmfieldInfo = new RepoItemInfo(this, "ResetPasswordConfirmField", ".//input[@id~'formly_[0-9]+_labelessInput_confirmPassword_1']", 30000, null, "54499a0c-a127-4c9b-b8c3-fa07110382e9");
+                _resetpasswordfieldInfo = new RepoItemInfo(this, "ResetPasswordField", ".//input[@id~'formly_[0-9]+_labelessInput_password_[0-9]+']", 30000, null, "47ed2a37-5002-42f9-a51a-c37a678cde89");
+                _resetpasswordconfirmfieldInfo = new RepoItemInfo(this, "ResetPasswordConfirmField", ".//input[@id~'formly_[0-9]+_labelessInput_confirmPassword_[0-9]+']", 30000, null, "54499a0c-a127-4c9b-b8c3-fa07110382e9");
             }
 
             /// <summary>

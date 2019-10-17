@@ -256,9 +256,7 @@ namespace engine.Helpers
 		/// <summary>
 		/// This method is for  validating the DCT move 
 		/// </summary>
-		/// 
 		[UserCodeMethod]
-		
 		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
 		 

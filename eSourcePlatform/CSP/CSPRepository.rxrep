@@ -35,7 +35,7 @@ rxversion="8.3">
 				name="BatteryNameField"
 				refimgid="9ba758e9-3940-45e2-a90b-bcb5b728e521"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_0']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,textareatag"
@@ -44,7 +44,7 @@ rxversion="8.3">
 				name="BatteryDescriptionField"
 				refimgid="64181e09-81ae-4230-b811-fff3d0a514d0"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_1']
+					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -53,7 +53,7 @@ rxversion="8.3">
 				name="BatteryStatusDropdown"
 				refimgid="0229f927-0428-48d1-8705-8d50e12fab37"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -62,7 +62,7 @@ rxversion="8.3">
 				name="BatteryDraftStatus"
 				refimgid="0229f927-0428-48d1-8705-8d50e12fab37"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -71,7 +71,7 @@ rxversion="8.3">
 				name="ResponseOptionsCheckbox"
 				refimgid="7b8ae57e-42a6-41ce-bb27-a54c9e4e2e11"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_5']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -80,7 +80,7 @@ rxversion="8.3">
 				name="BatteryPopulationDropdown"
 				refimgid="13fed28d-517c-41bf-9a38-715389fc356f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_indication_4']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_indication_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -89,7 +89,7 @@ rxversion="8.3">
 				name="BatteryTemplateDropdown"
 				refimgid="798a0a5e-4fda-4d3e-bef6-2fed1c37ec2f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_6']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -98,7 +98,25 @@ rxversion="8.3">
 				name="BatteryTemplateDropdownOption"
 				refimgid="798a0a5e-4fda-4d3e-bef6-2fed1c37ec2f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_6']/option[@label=$BatteryTemplateName+$RandNum]
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_batteryTemplate_[0-9]+']/option[@label=$BatteryTemplateName+$RandNum]
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="6821fc58-cb2c-42c5-a885-8a41397aa7b3"
+				name="TranslationsDropdown"
+				refimgid="588bb274-2c80-46fb-a168-e8606866c4ca"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_translation_[0-9]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="d20c1d52-f8e2-4157-a353-1c7edb6310b6"
+				name="TranslationsDropdownDefault"
+				refimgid="588bb274-2c80-46fb-a168-e8606866c4ca"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_translation_[0-9]+']/option[@label='Default']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -134,7 +152,7 @@ rxversion="8.3">
 				name="BatteryNameMinLengthValidation"
 				refimgid="9644e731-11f4-421a-a0f9-cd13713d5e1b"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -143,7 +161,7 @@ rxversion="8.3">
 				name="BatteryDescriptionMinLength"
 				refimgid="48a61d04-46e0-4635-9d6b-e3432643f12c"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_1']/..//div[@innertext~'The minimum length']
+					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -160,7 +178,7 @@ rxversion="8.3">
 				id="15d7475f-65ad-4ec8-92e5-63fa636bf7df"
 				name="BatteryPopulationOption"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_indication_4']/option[@innertext=$BatteryPopulation]
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_indication_[0-9]+']/option[@innertext=$BatteryPopulation]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -178,7 +196,7 @@ rxversion="8.3">
 				name="CogstateTestDropdown"
 				refimgid="943d82f3-755e-4504-b5bc-bb2407029fa7"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -187,7 +205,7 @@ rxversion="8.3">
 				name="CogstateTestOption"
 				refimgid="c7cd2136-d72e-4a32-82fa-ae8e48cb46fa"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']/option[@innertext=$BatteryBlock]
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_[0-9]+']/option[@innertext=$BatteryBlock]
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -257,7 +275,7 @@ rxversion="8.3">
 				name="BatteryTemplateNameField"
 				refimgid="248ac9bf-0037-4f10-8792-f5029c698881"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_0']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,textareatag"
@@ -266,7 +284,7 @@ rxversion="8.3">
 				name="BatteryTemplateDescriptionField"
 				refimgid="29e0961c-d00b-4fd5-b41d-72a1468d8ffd"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_1']
+					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -275,7 +293,7 @@ rxversion="8.3">
 				name="BatteryTemplateStatusDropdown"
 				refimgid="52344d9f-5c8c-4821-9c34-80fabfd2760e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -284,7 +302,7 @@ rxversion="8.3">
 				name="BatteryTemplateDraftStatus"
 				refimgid="52344d9f-5c8c-4821-9c34-80fabfd2760e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -293,7 +311,7 @@ rxversion="8.3">
 				name="ResponseOptionsCheckbox"
 				refimgid="176bf32a-41e2-4f01-b107-5b5896129868"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_3']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_isSweepEnabled_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -329,7 +347,7 @@ rxversion="8.3">
 				name="CogstateTestDropdown"
 				refimgid="53afcf2b-d7bf-4949-b36e-75a2cdad7c8e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -338,7 +356,7 @@ rxversion="8.3">
 				name="CogstateTestDropdownOption"
 				refimgid="53afcf2b-d7bf-4949-b36e-75a2cdad7c8e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_1']/option[@label=$BatteryBlockName]
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_[0-9]+']/option[@label=$BatteryBlockName]
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -372,7 +390,7 @@ rxversion="8.3">
 				name="WorkflowNameField"
 				refimgid="166a48c2-2f5e-405b-984c-fd8f480d8dc4"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_0']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,textareatag"
@@ -381,7 +399,7 @@ rxversion="8.3">
 				name="WorkflowDescriptionField"
 				refimgid="b77f92c4-f024-47ad-be1b-66f1052d08af"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_1']
+					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -390,7 +408,7 @@ rxversion="8.3">
 				name="WorkflowTypeDropdown"
 				refimgid="bfc2a5b8-0ecc-445b-aeac-af2acae9f81f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowType_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowType_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -399,7 +417,7 @@ rxversion="8.3">
 				name="ExternalEmbeddedWorkflowType"
 				refimgid="bfc2a5b8-0ecc-445b-aeac-af2acae9f81f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowType_2']/option[@label='External Embedded']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowType_[0-9]+']/option[@label='External Embedded']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -408,7 +426,7 @@ rxversion="8.3">
 				name="WorkflowStatusDropdown"
 				refimgid="7ffafe31-708e-406a-afee-5b5075c2288f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -417,7 +435,7 @@ rxversion="8.3">
 				name="WorkflowStatusDraftOption"
 				refimgid="7ffafe31-708e-406a-afee-5b5075c2288f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_3']/option[@label='Draft']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -426,7 +444,7 @@ rxversion="8.3">
 				name="WorkflowTemplateDropdown"
 				refimgid="40363860-f6c3-4ccb-a575-4eb605de1c71"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowTemplate_4']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowTemplate_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,h4tag"
@@ -534,7 +552,7 @@ rxversion="8.3">
 				name="WorkflowBatteryDropdown"
 				refimgid="32915d96-acdb-4222-8907-8bafb94ea4ad"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_temp_ConfigurationShow_battery_6']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_temp_ConfigurationShow_battery_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -579,7 +597,7 @@ rxversion="8.3">
 				name="WorkflowNameMinLengthValidation"
 				refimgid="6ab9c637-5505-436c-8e08-d098efbb04c7"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -588,7 +606,7 @@ rxversion="8.3">
 				name="WorkflowDescriptionMinLengthValidation"
 				refimgid="558d593d-699c-4ec3-9b84-aefe2ec1c00f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_1']/..//div[@innertext~'The minimum length']
+					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,itag"
@@ -606,7 +624,7 @@ rxversion="8.3">
 				name="WorkflowTemplateOption"
 				refimgid="d5bf0ddb-ec18-4371-91be-ea0aa17c283f"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowTemplate_4']/option[@label=$WorkflowTemplate]
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflowTemplate_[0-9]+']/option[@label=$WorkflowTemplate]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -800,7 +818,7 @@ rxversion="8.3">
 				name="VisitScheduleNameField"
 				refimgid="67d75b29-afdd-4d67-941f-cdfb96232b70"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_0']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,textareatag"
@@ -809,7 +827,7 @@ rxversion="8.3">
 				name="VisitScheduleDescriptionField"
 				refimgid="f1241d5d-182b-45a9-8f18-27101697f2ba"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_1']
+					/dom[@domain=$CSPDOM]//textarea[@id~'formly_[0-9]+_textarea_description_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -818,7 +836,7 @@ rxversion="8.3">
 				name="VisitScheduleStatusDropdown"
 				refimgid="c7bd7e8e-a119-4a3b-b1f3-0aa08df8dadd"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -827,7 +845,7 @@ rxversion="8.3">
 				name="VisitScheduleDraftStatus"
 				refimgid="c7bd7e8e-a119-4a3b-b1f3-0aa08df8dadd"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_2']/option[@label='Draft']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_status_[0-9]+']/option[@label='Draft']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -836,7 +854,7 @@ rxversion="8.3">
 				name="VisitScheduleWorkflowDropdown"
 				refimgid="a6c536ff-e2ef-4d9c-9a12-2cd419e0d86d"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_2']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -845,7 +863,7 @@ rxversion="8.3">
 				name="VisitScheduleWorkflowOption"
 				refimgid="a6c536ff-e2ef-4d9c-9a12-2cd419e0d86d"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_2']/option[@label=$WorkflowName+$RandNum]
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_workflow_[0-9]+']/option[@label=$WorkflowName+$RandNum]
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -854,7 +872,7 @@ rxversion="8.3">
 				name="VisitScheduleVisitStatusDropdown"
 				refimgid="75a7acb0-ce83-4e6f-89fa-7ef84710f692"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_visitStatus_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_visitStatus_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -863,7 +881,7 @@ rxversion="8.3">
 				name="VisitScheduleVisitSessionCode"
 				refimgid="90e8b0f7-d0e7-45c0-9553-e9ee95632e26"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_code_4']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_code_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -890,7 +908,7 @@ rxversion="8.3">
 				name="VisitScheduleNameMinLengthValidation"
 				refimgid="8818aa55-689e-41df-8c74-8caee23d46fa"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_0']/..//div[@innertext~'The minimum length']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']
 				</item>
 				<item
 				addcaps="unknown,webelement,textareatag"
@@ -939,7 +957,7 @@ PCOVxzirfcCquW0D0I2lj86nhCthuYTK4nTCEYtKQ/iNe1J1/SyYmA2M2cw5BqBo6jNVY6kCNFFQ
 zFLNApub95ABaGlri67MzigTAeyJvLIKCRYwebF6GtBa5kE3l+fp0ptJOjseo2qZ1DJVFnGlOQdy
 ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 					</image>
-					/dom[@domain=$CSPDOM]//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigation_5']
+					/dom[@domain=$CSPDOM]//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigation_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -970,7 +988,7 @@ PCOVxzirfcCquW0D0I2lj86nhCthuYTK4nTCEYtKQ/iNe1J1/SyYmA2M2cw5BqBo6jNVY6kCNFFQ
 zFLNApub95ABaGlri67MzigTAeyJvLIKCRYwebF6GtBa5kE3l+fp0ptJOjseo2qZ1DJVFnGlOQdy
 ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 					</image>
-					/dom[@domain=$CSPDOM]//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigationNotifications_6']
+					/dom[@domain=$CSPDOM]//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigationNotifications_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -995,7 +1013,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="UsernameField"
 				refimgid="209d0c41-1f7f-4ad7-829a-4eaa28e62c0a"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_username_0']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_username_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1004,7 +1022,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="FirstNameField"
 				refimgid="29920417-1a99-4b3e-b0d3-5bdfa0a6ec7a"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_firstName_1']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_firstName_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1013,7 +1031,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="LastNameField"
 				refimgid="abc61de0-7661-45e0-9006-a34c8cbe6aa7"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_lastName_2']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_lastName_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -1022,7 +1040,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="RoleDropdown"
 				refimgid="b884157f-61c2-47ba-b473-f372f8e2ee6c"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_platformAdminModuleRole_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_platformAdminModuleRole_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1031,7 +1049,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="LockedCheckbox"
 				refimgid="e288927b-2b82-4d83-a704-ed6cc2282477"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_lock_4']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_lock_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1040,7 +1058,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="UserActiveCheckbox"
 				refimgid="8eb4c048-ca5e-4265-a890-b1ad9c5e218a"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_active_5']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_active_[0-9]+']
 				</item>
 			</folder>
 			<folder
@@ -1074,7 +1092,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ActiveCheckbox"
 				refimgid="21d4b916-c285-4fcc-b813-2647a620baa3"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_active_2']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_active_[0-9]+']
 				</item>
 			</folder>
 			<folder
@@ -1205,7 +1223,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="TestUserDropdown"
 				refimgid="cf2e67c7-df3c-4edf-b91d-d47351e41769"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_isTestUser_8']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_isTestUser_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,trtag"
@@ -1232,7 +1250,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ParticipantUserNameField"
 				refimgid="dc2ff9b3-0fb4-4812-a2fb-b9f62774647b"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_userName_12']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_userName_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -1241,7 +1259,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="EnrollStatusDropdown"
 				refimgid="1066dfbf-8d73-4056-b414-c4b4841c090d"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_enrollStatus_3']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_enrollStatus_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -1250,7 +1268,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="IQNumberField"
 				refimgid="d7302b13-bdd6-49d5-b8d2-02ff99e73b87"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[[0-9]+_input_iqNumber_6']
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[[0-9]+_input_iqNumber_[0-9]+']
 				</item>
 			</folder>
 			<folder
@@ -1743,7 +1761,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="LocalityOption"
 				refimgid="e86b5f00-8ed1-486c-967a-a7fb5e9e131b"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@innertext=$Locality]
+					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//select[@id~'formly_[0-9]+_multiselect_localities_[0-9]+']/option[@innertext=$Locality]
 				</item>
 				<item
 				addcaps="unknown,webelement,optiontag"
@@ -1752,7 +1770,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="BlankLocality"
 				refimgid="6a7dbb14-525f-482e-b73b-a770f7d18588"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//select[@id~'formly_[0-9]+_multiselect_localities_0']/option[@value='-1000']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//select[@id~'formly_[0-9]+_multiselect_localities_[0-9]+']/option[@value='-1000']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -1761,7 +1779,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="LocalitiesList"
 				refimgid="8f1b4a66-7d89-4675-b13a-4e2390469f87"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//select[@id~'formly_[0-9]+_multiselect_localities_0']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//select[@id~'formly_[0-9]+_multiselect_localities_[0-9]+']
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div
@@ -2218,7 +2236,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ResetPasswordField"
 				refimgid="350af8b1-7491-4fd5-b26b-354c36e63c4a"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_labelessInput_password_0']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_labelessInput_password_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,inputtag"
@@ -2227,7 +2245,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ResetPasswordConfirmField"
 				refimgid="4f01f254-23c7-4c9a-9244-e116c8171b2e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_labelessInput_confirmPassword_1']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_labelessInput_confirmPassword_[0-9]+']
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div
