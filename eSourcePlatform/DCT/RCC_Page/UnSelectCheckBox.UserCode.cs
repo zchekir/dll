@@ -61,6 +61,9 @@ namespace DCT.RCC_Page
             {
             	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCollectionWidgetCheckboxComplete' at Center.", repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo, new RecordItemIndex(0));
             	repo.REDCapCloud.DataCollectionWidgetCheckboxComplete.Click();
+            }else{
+            	
+            	Report.Log(ReportLevel.Info," Test Passed");
             }
             
         }   

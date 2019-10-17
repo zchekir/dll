@@ -79,12 +79,12 @@ namespace DCT.single_sign_in
 
             Init();
 
-            ClickSubButton();
-            Delay.Milliseconds(0);
+            //ClickSubButton();
+            //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignIn.SubmitButton' at Center.", repo.SignIn.SubmitButtonInfo, new RecordItemIndex(1));
-            //repo.SignIn.SubmitButton.Click();
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignIn.SubmitButton' at Center.", repo.SignIn.SubmitButtonInfo, new RecordItemIndex(1));
+            repo.SignIn.SubmitButton.Click();
+            Delay.Milliseconds(200);
             
         }
 
