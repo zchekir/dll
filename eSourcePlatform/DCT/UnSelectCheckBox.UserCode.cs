@@ -34,11 +34,12 @@ namespace DCT
         }
         
         
-        /* 
-        The chalange with this one I want to check if the webelemnt is selected the code should unselect it , but since the webelemtn status is always False
-        
-        and the webelement class doesnt have usefull option in order to handle this situation I tried all situation but with not success if you can help 
-         */
+        /// <summary>
+        /// This usercode method will Capture a screenshot of the 'checkbox' on the begin battery page
+        /// It will then compare the screenshot to one stored which is an image of the selected checkbox
+        /// If the images match, the box will be clicked to unselect it
+        /// </summary>
+        /// <param name="Checkbox"></param>
         public void Select_Checkbox(RepoItemInfo Checkbox)
         {
         	//Declare variable for current image

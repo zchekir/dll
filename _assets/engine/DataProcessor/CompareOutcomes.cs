@@ -108,16 +108,25 @@ namespace engine.DataProcessor
         		/*Extract DateOfBirth format 1/01/1975, Database DateOfBirth Format 1/01/1975 12:00:00 AM
  				 *This will convert each of the dates to the same format and check if they are the same*/
         		case "DateOfBirth":
-        			System.DateTime extractDate = System.DateTime.Parse(extractValue);
-        			System.DateTime databaseDate = System.DateTime.Parse(databaseValue);
+ 					try
+ 					{
+ 						System.DateTime extractDate = System.DateTime.Parse(extractValue);
+        				System.DateTime databaseDate = System.DateTime.Parse(databaseValue);
         			
-        			//Report.Info("Info", "Formatted Extract Date: " + extractDate);
-        			//Report.Info("Info", "Formatted Database Date: " + databaseDate);
+        				//Report.Info("Info", "Formatted Extract Date: " + extractDate);
+        				//Report.Info("Info", "Formatted Database Date: " + databaseDate);
         			
-        			int result = System.DateTime.Compare(extractDate, databaseDate);
-        			if (result == 0) 
-        				match = true;
-        			
+        				int result = System.DateTime.Compare(extractDate, databaseDate);
+        				if (result == 0) 
+        					match = true;
+        				
+ 					}
+ 					catch (Exception e)
+ 					{
+ 						Report.Log(ReportLevel.Info, e.Message);
+ 					}
+ 					
+
         			break;
         		
 				/*The following Outcomes may contain NULL vlaues, integers or 'Yes'/'No' values
@@ -179,14 +188,23 @@ namespace engine.DataProcessor
 				case "AltStandardScoreT":
 				case "AlternateOutcome":
  				case "SATScore":
-        			//Check if NULL and compare, otherwise format and then compare
-        			if (extractValue == "NULL")
-        			{
-        				if (databaseValue == "")
+ 				
+ 					try
+ 					{
+ 						//Check if NULL and compare, otherwise format and then compare
+        				if (extractValue == "NULL")
+        				{
+        					if (databaseValue == "")
+        						match = true;
+        				}
+        				else if (Math.Round(double.Parse(extractValue),5) == Math.Round(double.Parse(databaseValue),5))
         					match = true;
-        			}
-        			else if (Math.Round(double.Parse(extractValue),5) == Math.Round(double.Parse(databaseValue),5))
-        				match = true;
+ 					} 
+ 					catch (Exception e)
+ 					{
+ 						Report.Log(ReportLevel.Info, e.Message);
+ 					}
+        			
         			
         			break;
 
