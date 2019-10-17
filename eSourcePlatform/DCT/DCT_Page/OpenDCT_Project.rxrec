@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="059840ec-6c5a-4dc2-b918-e4e3a5ab6235"
+mode="Global"
+rxversion="8.3">
+	<name>
+		OpenDCT_Project
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenDCT_Project"
+	namespace="DCT.DCT_Page">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="cb8628f7-fc01-496e-80f6-504440686936"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a9d7fbd8-9953-4653-b88a-a2c645191e5b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='octopus.cogstate.com']//tag[@innertext='DCT']
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="200ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+	name="DCTRepository"
+	relativepath="..\DCTRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="DCTRepository"
+		namespace="DCT">
+		</codegen>
+		<rootfolder
+		id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenDCT_Project.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

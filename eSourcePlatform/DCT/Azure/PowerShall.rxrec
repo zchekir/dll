@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e5be21a5-ba81-49ed-8dca-878f7e822eb4"
+mode="Global"
+rxversion="8.3">
+	<name>
+		PowerShall
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="PowerShall"
+	namespace="DCT.Azure">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="593739dc-0d9b-4a3f-9b4a-7c96f0919acf"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="63637764-b1c2-45b3-96c3-243481d396a3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='PowerShell']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+	name="DCTRepository"
+	relativepath="..\DCTRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="DCTRepository"
+		namespace="DCT">
+		</codegen>
+		<rootfolder
+		id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		PowerShall.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

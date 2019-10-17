@@ -1537,6 +1537,7 @@ namespace DCT
             RepoItemInfo _enterusenameInfo;
             RepoItemInfo _clicknextInfo;
             RepoItemInfo _selectaccountInfo;
+            RepoItemInfo _useanotheraccountInfo;
 
             /// <summary>
             /// Creates a new SignInToYourAccount  folder.
@@ -1548,6 +1549,7 @@ namespace DCT
                 _enterusenameInfo = new RepoItemInfo(this, "EnterUseName", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
                 _clicknextInfo = new RepoItemInfo(this, "ClickNext", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
                 _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext='zchekir@cogstate.com']", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
+                _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "03048239-ba3c-4e99-98f0-7a29857dc2f3");
             }
 
             /// <summary>
@@ -1667,6 +1669,30 @@ namespace DCT
                 get
                 {
                     return _selectaccountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseAnotherAccount item.
+            /// </summary>
+            [RepositoryItem("03048239-ba3c-4e99-98f0-7a29857dc2f3")]
+            public virtual Ranorex.DivTag UseAnotherAccount
+            {
+                get
+                {
+                    return _useanotheraccountInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseAnotherAccount item info.
+            /// </summary>
+            [RepositoryItemInfo("03048239-ba3c-4e99-98f0-7a29857dc2f3")]
+            public virtual RepoItemInfo UseAnotherAccountInfo
+            {
+                get
+                {
+                    return _useanotheraccountInfo;
                 }
             }
         }

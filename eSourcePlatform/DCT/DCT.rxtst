@@ -47,6 +47,10 @@ rxversion="8.3">
 			ref="e67fa75b-7272-4021-979e-8af5bce6efc2"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="02c0276b-08b6-42be-8ffd-f319d0cc4481"
+			name="CSP_Client_and_Server_versionValidation">
+			</smartfoldernode>
 			<testcase
 			id="0399f102-7b67-4b60-bb98-d78d1731fb5a"
 			name="Select_LoginUser1">
@@ -61,20 +65,6 @@ rxversion="8.3">
 			minrange="0"
 			name="Launch_Battery">
 			</testcase>
-			<testmodule
-			id="0481110d-8bfa-49c5-b6e7-0f3100907caa"
-			name="NavigateToOctopus"
-			ref="6d37ae14-fdc4-428e-be41-3e16acc11d4a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="OctopusURL"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="9d5948d9-410a-41f8-8e49-ef6d24af25ea"
-					variablename="OctopusURL">
-					</var>
-				</databinding>
-			</testmodule>
 			<smartfoldernode
 			id="04939054-fa65-495b-a740-482356616b3b"
 			name="ValidateTheMoveIn_DB">
@@ -198,6 +188,14 @@ rxversion="8.3">
 			name="SelectUserName"
 			ref="366ec434-a4de-4276-9c8c-e6703eef9698"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="OctopustUsername"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="08bcae22-9936-418c-853d-2a82e345cf1c"
+					variablename="CSPUsername">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="11d6c2ca-a94b-4934-b9e6-825db8ca78ff"
@@ -213,10 +211,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="12edd5ae-15dd-4ba4-bd07-9d7b1b38f2b5"
-			name="OpenDCTProject">
-			</testcase>
 			<testmodule
 			id="13644937-ade7-404f-a870-e5e66e39fc19"
 			name="Select_Language"
@@ -294,11 +288,15 @@ rxversion="8.3">
 			name="RCCHubValidation"
 			ref="7c929a2d-0e53-4d8a-bbe6-61f3664926d6"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="ExpectedRCCVersion"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="07dd90ed-0601-4856-b1dc-05fd530635a1"
+					variablename="ExpectedRCCVersion">
+					</var>
+				</databinding>
 			</testmodule>
-			<testcase
-			id="16f75d2e-bd8e-4668-985c-14f5025f168c"
-			name="Click_NextButton1">
-			</testcase>
 			<testmodule
 			id="17a5ff3e-3ae0-4cb1-843e-ebecbd30ca71"
 			name="DCT_URL"
@@ -366,20 +364,6 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="1b970371-c237-4ca0-b38a-24314447f699"
-			name="Enter_octopusUserName"
-			ref="d33c518e-feeb-4812-b2d1-449e78e7f217"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="OctopustUsername"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="43396b5e-46ec-4f2f-8ce5-9a1d505292bd"
-					variablename="OctopustUsername">
 					</var>
 				</databinding>
 			</testmodule>
@@ -598,12 +582,12 @@ rxversion="8.3">
 					value="https://cgst-qc-orr-hub.scm.azurewebsites.net/">
 					</param>
 					<param
-					name="HubVersion"
+					name="DCTVersionQuery"
 					value="(get-item -Path 'D:\home\site\wwwroot\app_data\jobs\continuous\*\Cogstate.*.exe').VersionInfo">
 					</param>
 					<param
 					name="ExpectedDCTVersion"
-					value="1 . 2 . 0 - r c . 9.7.8 ">
+					value="1.2.0-rc.978">
 					</param>
 					<param
 					name="RCCVersionQuery "
@@ -611,7 +595,15 @@ rxversion="8.3">
 					</param>
 					<param
 					name="ExpectedRCCVersion"
+					value="2.0.0-rc.1732">
+					</param>
+					<param
+					name="NewParameter"
 					value="">
+					</param>
+					<param
+					name="VersionDeployed"
+					value="1.10.0">
 					</param>
 				</parameters>
 			</testcase>
@@ -651,12 +643,6 @@ rxversion="8.3">
 			id="27fef7d5-eb3b-4046-801f-f5b69473e6e0"
 			name="CDMKdu1">
 			</testcase>
-			<testmodule
-			id="2844d990-f4cc-4ddb-8555-88a407742ae6"
-			name="ClickNextButton"
-			ref="de3b4f7f-7e50-4fdb-9a6b-e3672dd80041"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="285ab814-08e7-47ca-a442-3e6037818990"
 			name="Add_BatteryConfirmation_CRF"
@@ -721,12 +707,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="2cf0d75b-ada4-406b-9a33-93a4eca0a7e6"
-			name="CloseBrowser"
-			ref="a58a0eda-d3f8-4786-8c9a-2e3884970874"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="2d9468c8-1eda-45ed-9b44-4a06c3476022"
 			name="ClickButton_">
@@ -735,6 +715,26 @@ rxversion="8.3">
 			id="2f7b30b6-172c-4e4c-8685-eca09946bec3"
 			name="ClickNoButton11">
 			</testcase>
+			<testmodule
+			id="318dce1a-1be6-4c37-aa7c-e76801a4d1d8"
+			name="Verify_Version_Client"
+			ref="bbd7de50-f153-4542-b412-b02ff4df214c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="5573f8ac-d505-42b0-a336-394c8bca477a"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="VersionDeployed"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
+					variablename="Server">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="32bf6346-39d4-4657-b0ec-4f04a9ede731"
 			name="Get_TestIdentifier">
@@ -872,20 +872,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testmodule
-			id="391c4e3e-8b28-4d8c-971c-608b4c610743"
-			name="Password"
-			ref="73fe110e-198a-4073-aaac-d97e2fa59e5d"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="OctopusPassword"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="e3078aeb-57b5-4e52-b373-20e5fca1b1ba"
-					variablename="DCT_Password">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="394a70e6-d8dd-43e9-a5d2-624e88a0763d"
 			name="Select_LoginUser">
@@ -908,12 +894,6 @@ rxversion="8.3">
 			id="3a6d2a75-f7b6-4c96-b07b-c8ac85f2a6f2"
 			name="DebugConsole"
 			ref="16b1546b-c467-4c79-af1a-70a9f12392b6"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="3b429ab9-b4f8-4dd7-bce4-92abec680eae"
-			name="LogoutOctopus"
-			ref="83830357-899d-4fc4-b8e8-f7a982f59bec"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -987,20 +967,6 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="40cc19d1-3aec-4369-9ba6-925bdef8a767"
-			name="VersionValidation"
-			ref="497347f5-f94c-4c1b-adad-bee095e10467"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DCT_Version"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="3e84eaa1-aaee-49f4-b4c6-dd4aee9b1ddb"
-					variablename="DCT_Version">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="42f32ebc-c654-4a25-8f2f-d31eaee745dc"
 			name="Validate_Test_Transmitted"
 			ref="e2abb99e-5373-4e09-976a-6c35fed62d41"
@@ -1038,10 +1004,6 @@ rxversion="8.3">
 			ref="e5be21a5-ba81-49ed-8dca-878f7e822eb4"
 			type="Recording">
 			</testmodule>
-			<testcase
-			id="469b0ba5-dc48-44bf-a39b-dc2f7328df8b"
-			name="CloseBrowser">
-			</testcase>
 			<testmodule
 			id="46f428ba-bbae-4cb2-9206-9b70f64d8761"
 			name="Validate_EventDef_Type"
@@ -1237,6 +1199,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="4d4fc20b-6351-43e9-b1d5-35e700780f88"
+			name="setup">
+			</setup>
 			<testmodule
 			id="4d6f5da7-eb4b-48c5-a502-fdbb4794a76c"
 			name="Open_Browser"
@@ -1553,10 +1519,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="65cd254c-3c30-4442-aee9-c96bf80cb0ce"
-			name="ValidateDCT_Version_">
-			</testcase>
 			<smartfoldernode
 			datasource="RCCConnector"
 			id="65d270c8-721b-4d7f-be83-df4996dbb657"
@@ -1628,14 +1590,8 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="6a543fb1-3315-4057-82be-54c1b0b91690"
-			name="InValidateAssessmentFrom_UI">
+			name="Un_ValidateAssessmentFrom_UI">
 			</smartfoldernode>
-			<testmodule
-			id="6c6c783c-e0ca-434f-a300-e85a50652763"
-			name="ClickLog_in"
-			ref="de80c57b-acfe-4de0-ab0d-91db74c3299d"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="6dd97b96-a8fa-472e-a2a9-76f2d08216d3"
 			name="Test_Identifier"
@@ -1680,10 +1636,6 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_Event_to_Subject">
 			</testcase>
-			<testcase
-			id="71222f25-085e-45e7-a3a6-81f52759209d"
-			name="EnterUserName">
-			</testcase>
 			<testmodule
 			id="72178e3d-482b-472a-8eee-a449c49d65f2"
 			name="Assign_Battery_to_Workflow"
@@ -1710,10 +1662,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="72bc4fcd-8b4a-4d7a-9788-bdfce71b990e"
-			name="OpenOctopus">
-			</testcase>
 			<testmodule
 			id="72f05832-6038-4187-a215-17054a5ad707"
 			name="Test_Identifier"
@@ -1888,12 +1836,6 @@ rxversion="8.3">
 			name="EnterSubject">
 			</testcase>
 			<testmodule
-			id="831503ff-d026-45d1-95f2-4ec8f4f37cb0"
-			name="ClickNo"
-			ref="94c76c7b-5165-44e9-93e8-337c36c1af4f"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="833ce0d4-1a36-4b22-912f-c92207d21a0b"
 			name="OpenStudy"
 			ref="83773ca8-ef21-4bac-bf66-4fa324b1b30b"
@@ -1904,6 +1846,92 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="7e849208-d2d3-4d04-9470-753f5d81f297"
 					variablename="RCC_Study_Name">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8376d567-6aec-4473-8a1e-255b629717cd"
+			name="EmailModule"
+			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Subject"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendPdfReportOnComplete"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1971,12 +1999,10 @@ rxversion="8.3">
 			id="853a6bba-9006-4cea-915e-ee1a0a266d20"
 			name="Click_SubmitButton">
 			</testcase>
-			<testmodule
-			id="857bb9e2-a497-46b9-874d-0f0da7e9a74d"
-			name="Submit"
-			ref="12c9321e-d57b-4f26-abb0-e494f761864b"
-			type="Recording">
-			</testmodule>
+			<setup
+			id="86d95c88-e18a-4a6b-a3d3-64f79d7621b1"
+			name="setup">
+			</setup>
 			<testcase
 			id="8701be3b-9559-4502-bc0c-635399be9d4c"
 			name="Click_NextButton">
@@ -2196,15 +2222,15 @@ rxversion="8.3">
 			</testcase>
 			<testmodule
 			id="9677960f-a754-4fbc-a973-c33589dada92"
-			name="Recording1"
+			name="DCT_Version"
 			ref="9f2b6e02-9486-49ab-bcbe-42714eb80706"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="HubVersion"
+					dataname="DCTVersionQuery"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="9a8929ee-dc8a-46dc-99f0-46052dbbd846"
-					variablename="HubVersion">
+					variablename="DCTVersionQuery">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2260,10 +2286,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="9e8a3d5a-0b10-43b3-9765-849ab8e6795c"
-			name="DCT_Version_Validation">
-			</smartfoldernode>
 			<testmodule
 			id="9ee7c08d-ef39-4052-aaa7-f7c01e5b07f2"
 			name="Click_MyStudies"
@@ -2292,10 +2314,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="9fab8162-5bc5-4749-9a5b-4992747ceed9"
-			name="ClickLogIn">
-			</testcase>
 			<testmodule
 			id="a03eef39-7036-4142-9ce7-d092a721b286"
 			name="StartAssessment"
@@ -2397,7 +2415,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="a7ab6088-9c4e-471e-b0ad-aaa4b7974b74"
-			name="Validate_DCT_Version_">
+			name="Validate_DCT_Version">
 			</smartfoldernode>
 			<testmodule
 			id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
@@ -2918,10 +2936,6 @@ rxversion="8.3">
 			name="Validate_TestIdentifier_Move">
 			</smartfoldernode>
 			<testcase
-			id="c3f1746b-6563-460b-99ac-0c568b75adb7"
-			name="ClickSubmit">
-			</testcase>
-			<testcase
 			id="c52f331f-4f6d-4d85-b273-fb953e5df84f"
 			name="Click_DebugConsole">
 			</testcase>
@@ -2999,6 +3013,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="ca38dffe-f163-4d00-a399-f336bbc154fc"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="ca7322cb-b024-487c-94e9-74dd34c8c168"
 			name="Read_CSV"
@@ -3062,6 +3080,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="cae8012a-f1c8-45d6-a955-f26150728c30"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="cb4fb9fd-3f34-4d22-90cf-187c166e025c"
 			name="ClickOK"
@@ -3206,12 +3228,6 @@ rxversion="8.3">
 			id="d29d67a4-75c9-4922-915f-a212da65e8ab"
 			name="ValidateRCCVersion">
 			</testcase>
-			<testmodule
-			id="d3d663c2-e311-42c3-8ca9-b6bc66693feb"
-			name="OpenDCT_Project"
-			ref="059840ec-6c5a-4dc2-b918-e4e3a5ab6235"
-			type="Recording">
-			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="Authentication"
@@ -3273,8 +3289,8 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
-			id="d97fe025-0140-4d62-b97a-df4146ab6495"
-			name="Enter_Password1">
+			id="d9dd7bb5-c08f-4b88-b264-1d7c326e5316"
+			name="Software_Version">
 			</testcase>
 			<testmodule
 			id="db1beae5-2b25-406d-9ae6-3efd250562c2"
@@ -3288,10 +3304,6 @@ rxversion="8.3">
 			ref="d620ffba-f800-4fac-9678-46381969082c"
 			type="Recording">
 			</testmodule>
-			<testcase
-			id="db61499f-7ab1-43bb-8e3b-eb4631693969"
-			name="Logout">
-			</testcase>
 			<testcase
 			id="db792ab7-09b7-43b3-9b06-88f22e9677a5"
 			name="ClickEvent">
@@ -3534,6 +3546,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="eb5f3878-e477-420c-af1f-4fda9fa136b8"
+			name="Verify_Version_Deployed"
+			ref="c718511d-4281-405c-9160-251f311d2703"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="VersionDeployed"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
+					variablename="Version">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ecf07991-9005-42ac-a4ce-011f03bd8520"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -3580,6 +3612,14 @@ rxversion="8.3">
 			name="SelectUserName"
 			ref="366ec434-a4de-4276-9c8c-e6703eef9698"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="OctopustUsername"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="08bcae22-9936-418c-853d-2a82e345cf1c"
+					variablename="CSPUsername">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d"
@@ -3843,10 +3883,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="ffa09a62-a044-4864-abd1-7f28d08b0a43"
-			name="ClickNoButton">
-			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -3858,6 +3894,10 @@ rxversion="8.3">
 					<smartfoldernode
 					id="d4b8534f-2794-473e-9747-934afc8f284d"
 					name="Regression">
+						<setup
+						id="86d95c88-e18a-4a6b-a3d3-64f79d7621b1"
+						name="setup">
+						</setup>
 						<smartfoldernode
 						id="cad596fe-e9c4-4d7e-a1a5-d60566b02190"
 						name="Use_Existing__RCC_Study">
@@ -4696,7 +4736,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="6a543fb1-3315-4057-82be-54c1b0b91690"
-						name="InValidateAssessmentFrom_UI">
+						name="Un_ValidateAssessmentFrom_UI">
 							<testcase
 							id="58901188-271c-4822-8f92-e8784cdd1036"
 							name="Test_Invalidate_Button">
@@ -4963,98 +5003,6 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
-						id="9e8a3d5a-0b10-43b3-9765-849ab8e6795c"
-						name="DCT_Version_Validation">
-							<testcase
-							id="72bc4fcd-8b4a-4d7a-9788-bdfce71b990e"
-							name="OpenOctopus">
-								<testmodule
-								id="0481110d-8bfa-49c5-b6e7-0f3100907caa"
-								name="NavigateToOctopus">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="9fab8162-5bc5-4749-9a5b-4992747ceed9"
-							name="ClickLogIn">
-								<testmodule
-								id="6c6c783c-e0ca-434f-a300-e85a50652763"
-								name="ClickLog_in">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="71222f25-085e-45e7-a3a6-81f52759209d"
-							name="EnterUserName">
-								<testmodule
-								id="1b970371-c237-4ca0-b38a-24314447f699"
-								name="Enter_octopusUserName">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="16f75d2e-bd8e-4668-985c-14f5025f168c"
-							name="Click_NextButton1">
-								<testmodule
-								id="2844d990-f4cc-4ddb-8555-88a407742ae6"
-								name="ClickNextButton">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="d97fe025-0140-4d62-b97a-df4146ab6495"
-							name="Enter_Password1">
-								<testmodule
-								id="391c4e3e-8b28-4d8c-971c-608b4c610743"
-								name="Password">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="c3f1746b-6563-460b-99ac-0c568b75adb7"
-							name="ClickSubmit">
-								<testmodule
-								id="857bb9e2-a497-46b9-874d-0f0da7e9a74d"
-								name="Submit">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="ffa09a62-a044-4864-abd1-7f28d08b0a43"
-							name="ClickNoButton">
-								<testmodule
-								id="831503ff-d026-45d1-95f2-4ec8f4f37cb0"
-								name="ClickNo">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="12edd5ae-15dd-4ba4-bd07-9d7b1b38f2b5"
-							name="OpenDCTProject">
-								<testmodule
-								id="d3d663c2-e311-42c3-8ca9-b6bc66693feb"
-								name="OpenDCT_Project">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="65cd254c-3c30-4442-aee9-c96bf80cb0ce"
-							name="ValidateDCT_Version_">
-								<testmodule
-								id="40cc19d1-3aec-4369-9ba6-925bdef8a767"
-								name="VersionValidation">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="db61499f-7ab1-43bb-8e3b-eb4631693969"
-							name="Logout">
-								<testmodule
-								id="3b429ab9-b4f8-4dd7-bce4-92abec680eae"
-								name="LogoutOctopus">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="469b0ba5-dc48-44bf-a39b-dc2f7328df8b"
-							name="CloseBrowser">
-								<testmodule
-								id="2cf0d75b-ada4-406b-9a33-93a4eca0a7e6"
-								name="CloseBrowser">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
 						id="04939054-fa65-495b-a740-482356616b3b"
 						name="ValidateTheMoveIn_DB">
 							<testcase
@@ -5068,7 +5016,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="a7ab6088-9c4e-471e-b0ad-aaa4b7974b74"
-						name="Validate_DCT_Version_">
+						name="Validate_DCT_Version">
 							<testcase
 							id="d1ff74ae-409a-4bcd-b890-6eaba1b26fc0"
 							name="NavigateTo_Azure">
@@ -5130,7 +5078,7 @@ rxversion="8.3">
 							name="CDMKdu">
 								<testmodule
 								id="9677960f-a754-4fbc-a973-c33589dada92"
-								name="Recording1">
+								name="DCT_Version">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -5153,6 +5101,10 @@ rxversion="8.3">
 						<smartfoldernode
 						id="0fd706ac-cde2-461e-a4e2-67730392a49a"
 						name="Validate_RCC_Version">
+							<setup
+							id="4d4fc20b-6351-43e9-b1d5-35e700780f88"
+							name="setup">
+							</setup>
 							<testcase
 							id="e06e6970-c1a6-4dc7-ab2c-caf798150769"
 							name="NavigateTo_Azure1">
@@ -5233,7 +5185,35 @@ rxversion="8.3">
 								name="Logout_Azure">
 								</testmodule>
 							</testcase>
+							<teardown
+							id="cae8012a-f1c8-45d6-a955-f26150728c30"
+							name="teardown">
+							</teardown>
 						</smartfoldernode>
+						<smartfoldernode
+						id="02c0276b-08b6-42be-8ffd-f319d0cc4481"
+						name="CSP_Client_and_Server_versionValidation">
+							<testcase
+							id="d9dd7bb5-c08f-4b88-b264-1d7c326e5316"
+							name="Software_Version">
+								<testmodule
+								id="eb5f3878-e477-420c-af1f-4fda9fa136b8"
+								name="Verify_Version_Deployed">
+								</testmodule>
+								<testmodule
+								id="318dce1a-1be6-4c37-aa7c-e76801a4d1d8"
+								name="Verify_Version_Client">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<teardown
+						id="ca38dffe-f163-4d00-a399-f336bbc154fc"
+						name="teardown">
+							<testmodule
+							id="8376d567-6aec-4473-8a1e-255b629717cd"
+							name="EmailModule">
+							</testmodule>
+						</teardown>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -5477,58 +5457,31 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0fd706ac-cde2-461e-a4e2-67730392a49a">
-			</testcontainer>
-			<testcontainer
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
 			</testcontainer>
 			<testcontainer
-			id="27fef7d5-eb3b-4046-801f-f5b69473e6e0">
+			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
 			</testcontainer>
 			<testcontainer
-			id="28f46e32-3bbc-491f-9a3f-aa10ffbbc718">
+			id="853a6bba-9006-4cea-915e-ee1a0a266d20">
 			</testcontainer>
 			<testcontainer
-			id="332008d8-2d5a-4719-9c86-ceaa05bf2efa">
+			id="8701be3b-9559-4502-bc0c-635399be9d4c">
 			</testcontainer>
 			<testcontainer
-			id="394a70e6-d8dd-43e9-a5d2-624e88a0763d">
-			</testcontainer>
-			<testcontainer
-			id="45b56e6f-aefe-452e-9510-e5707a0db99a">
-			</testcontainer>
-			<testcontainer
-			id="472d1019-2179-4395-9540-42b7d53cc0ed">
-			</testcontainer>
-			<testcontainer
-			id="4c9c9107-df35-4a98-944d-4bd377df1a27">
-			</testcontainer>
-			<testcontainer
-			id="56d49db8-064a-401a-9c0e-0cee903748a5">
-			</testcontainer>
-			<testcontainer
-			id="607d60fd-d9ba-49ae-8fea-457a1ed2a5ea">
-			</testcontainer>
-			<testcontainer
-			id="77e29faa-c97b-44bc-8716-2d8f13ba9107">
-			</testcontainer>
-			<testcontainer
-			id="7e2dd925-1d5b-40c9-8dee-28af581ed362">
-			</testcontainer>
-			<testcontainer
-			id="a7ab6088-9c4e-471e-b0ad-aaa4b7974b74">
-			</testcontainer>
-			<testcontainer
-			id="c52f331f-4f6d-4d85-b273-fb953e5df84f">
-			</testcontainer>
-			<testcontainer
-			id="d1ff74ae-409a-4bcd-b890-6eaba1b26fc0">
-			</testcontainer>
-			<testcontainer
-			id="d29d67a4-75c9-4922-915f-a212da65e8ab">
+			id="aa43591e-302d-494e-aafe-3d9e88fb4c8d">
 			</testcontainer>
 			<testcontainer
 			id="d4b8534f-2794-473e-9747-934afc8f284d">
+			</testcontainer>
+			<testcontainer
+			id="e4966f0f-a50b-4f61-bcc3-c2865b6d79d7">
+			</testcontainer>
+			<testcontainer
+			id="e6d436ed-0a07-4913-a5f0-3deb7c676360">
+			</testcontainer>
+			<testcontainer
+			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
