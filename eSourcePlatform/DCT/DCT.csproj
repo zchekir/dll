@@ -139,6 +139,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcademicExtract.cs">
+      <BoundTo>2082632e-e307-46bf-bc47-cfe1f4692dd1</BoundTo>
+      <DependentUpon>AcademicExtract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bd12365b-b4c2-4c98-83c9-54de6758f7a9</id>
+    </Compile>
+    <Compile Include="AcademicExtract.UserCode.cs">
+      <BoundTo>2082632e-e307-46bf-bc47-cfe1f4692dd1</BoundTo>
+      <DependentUpon>AcademicExtract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76b094a8-6c02-4a85-8154-46ad283c2b7d</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>c3f398b0-635f-4689-af63-2ac2e57439bc</id>
     </Compile>
@@ -775,6 +787,18 @@
       <UserCode>true</UserCode>
       <id>c42ae05e-a78c-41e7-93af-12063b4b3799</id>
     </Compile>
+    <Compile Include="ReportTab.cs">
+      <BoundTo>247645cf-9b93-4901-adbc-45908ed39197</BoundTo>
+      <DependentUpon>ReportTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72db1f0a-ea10-49a8-8c99-bc25f9877dca</id>
+    </Compile>
+    <Compile Include="ReportTab.UserCode.cs">
+      <BoundTo>247645cf-9b93-4901-adbc-45908ed39197</BoundTo>
+      <DependentUpon>ReportTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c8bba19b-0e01-4959-8b75-2a3feea23117</id>
+    </Compile>
     <Compile Include="single sign in\ClickLogin.cs">
       <DependentUpon>ClickLogin.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -909,6 +933,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AcademicExtract.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>2082632e-e307-46bf-bc47-cfe1f4692dd1</id>
+      <recordtableid>72c0a13b-d5e0-4ed7-916c-6c440cfaecab</recordtableid>
+    </None>
     <None Include="app.config">
       <id>45ed4f94-d562-4143-993e-364552631778</id>
     </None>
@@ -1182,6 +1211,11 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>650dea59-4597-436d-b1a1-73a78f37102e</id>
       <recordtableid>55dbb7db-788f-465a-914f-f3473f992eea</recordtableid>
+    </None>
+    <None Include="ReportTab.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>247645cf-9b93-4901-adbc-45908ed39197</id>
+      <recordtableid>36b7cb32-221d-4d60-ba49-8576cfccff8f</recordtableid>
     </None>
     <None Include="single sign in\ClickLogin.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>

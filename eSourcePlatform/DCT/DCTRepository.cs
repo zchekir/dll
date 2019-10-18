@@ -38,7 +38,7 @@ namespace DCT
         DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder _redcapcloudgooglechrome;
         DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder _dashboardoctopusdeploygooglechro;
         DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
-        DCTRepositoryFolders.WebDocument184HowToExecuteAzureREAppFolder _webdocument184howtoexecuteazurere;
+        DCTRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -66,7 +66,7 @@ namespace DCT
             _redcapcloudgooglechrome = new DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder(this);
             _dashboardoctopusdeploygooglechro = new DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder(this);
             _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
-            _webdocument184howtoexecuteazurere = new DCTRepositoryFolders.WebDocument184HowToExecuteAzureREAppFolder(this);
+            _cogstatesolutionplatform = new DCTRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
         }
 
 #region Variables
@@ -93,6 +93,18 @@ namespace DCT
         {
             get { return _RCC_Study_Name; }
             set { _RCC_Study_Name = value; }
+        }
+
+        string _CSPDOM = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("4868fd53-f0cc-4bcc-ad64-84d67b341b4d")]
+        public string CSPDOM
+        {
+            get { return _CSPDOM; }
+            set { _CSPDOM = value; }
         }
 
 #endregion
@@ -209,12 +221,12 @@ namespace DCT
         }
 
         /// <summary>
-        /// The WebDocument184HowToExecuteAzureRE folder.
+        /// The CogstateSolutionPlatform folder.
         /// </summary>
-        [RepositoryFolder("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
-        public virtual DCTRepositoryFolders.WebDocument184HowToExecuteAzureREAppFolder WebDocument184HowToExecuteAzureRE
+        [RepositoryFolder("38465dbb-2a52-4f97-a7da-4f756315b3f4")]
+        public virtual DCTRepositoryFolders.CogstateSolutionPlatformAppFolder CogstateSolutionPlatform
         {
-            get { return _webdocument184howtoexecuteazurere; }
+            get { return _cogstatesolutionplatform; }
         }
     }
 
@@ -2026,24 +2038,28 @@ namespace DCT
         }
 
         /// <summary>
-        /// The WebDocument184HowToExecuteAzureREAppFolder folder.
+        /// The CogstateSolutionPlatformAppFolder folder.
         /// </summary>
-        [RepositoryFolder("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
-        public partial class WebDocument184HowToExecuteAzureREAppFolder : RepoGenBaseFolder
+        [RepositoryFolder("38465dbb-2a52-4f97-a7da-4f756315b3f4")]
+        public partial class CogstateSolutionPlatformAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _academicextractInfo;
+            RepoItemInfo _reportsInfo;
 
             /// <summary>
-            /// Creates a new WebDocument184HowToExecuteAzureRE  folder.
+            /// Creates a new CogstateSolutionPlatform  folder.
             /// </summary>
-            public WebDocument184HowToExecuteAzureREAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WebDocument184HowToExecuteAzureRE", "/dom[4]", parentFolder, 30000, null, false, "9c255fff-d335-4a60-8ad7-5a36d00c9018", "")
+            public CogstateSolutionPlatformAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CogstateSolutionPlatform", "/dom[@domain='cgst-qc-orr.azurewebsites.net']", parentFolder, 30000, null, false, "38465dbb-2a52-4f97-a7da-4f756315b3f4", "")
             {
+                _academicextractInfo = new RepoItemInfo(this, "AcademicExtract", ".//a[@innertext='Academic Extract']", 30000, null, "5f95c61a-732b-463d-a24a-1847574f6cd8");
+                _reportsInfo = new RepoItemInfo(this, "Reports", ".//a[@innertext='Reports']", 30000, null, "93211f96-5811-43a7-b78f-36c0459fd008");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
+            [RepositoryItem("38465dbb-2a52-4f97-a7da-4f756315b3f4")]
             public virtual Ranorex.WebDocument Self
             {
                 get
@@ -2055,12 +2071,60 @@ namespace DCT
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("9c255fff-d335-4a60-8ad7-5a36d00c9018")]
+            [RepositoryItemInfo("38465dbb-2a52-4f97-a7da-4f756315b3f4")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtract item.
+            /// </summary>
+            [RepositoryItem("5f95c61a-732b-463d-a24a-1847574f6cd8")]
+            public virtual Ranorex.ATag AcademicExtract
+            {
+                get
+                {
+                    return _academicextractInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtract item info.
+            /// </summary>
+            [RepositoryItemInfo("5f95c61a-732b-463d-a24a-1847574f6cd8")]
+            public virtual RepoItemInfo AcademicExtractInfo
+            {
+                get
+                {
+                    return _academicextractInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Reports item.
+            /// </summary>
+            [RepositoryItem("93211f96-5811-43a7-b78f-36c0459fd008")]
+            public virtual Ranorex.ATag Reports
+            {
+                get
+                {
+                    return _reportsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Reports item info.
+            /// </summary>
+            [RepositoryItemInfo("93211f96-5811-43a7-b78f-36c0459fd008")]
+            public virtual RepoItemInfo ReportsInfo
+            {
+                get
+                {
+                    return _reportsInfo;
                 }
             }
         }

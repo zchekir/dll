@@ -70,6 +70,75 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7a4029c5-02f0-4015-9e1e-579a750a6a87"
+		sx="992"
+		sy="603"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c587e610-0819-4121-a032-70dee17445c5"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="832,595,320,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						otherTileText
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Use another account
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-bind"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='login.microsoftonline.com']//div[#'otherTileText']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

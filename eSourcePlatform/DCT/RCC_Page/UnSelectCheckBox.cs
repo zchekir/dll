@@ -79,6 +79,9 @@ namespace DCT.RCC_Page
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
+            Delay.Duration(2000, false);
+            
             Select_Checkbox(repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo);
             Delay.Milliseconds(0);
             

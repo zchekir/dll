@@ -8022,6 +8022,7 @@ namespace CSP
             RepoItemInfo _accountexistsInfo;
             RepoItemInfo _dontaskagaincheckboxInfo;
             RepoItemInfo _nobuttonInfo;
+            RepoItemInfo _useanotheraccountInfo;
 
             /// <summary>
             /// Creates a new MicrosoftSSO  folder.
@@ -8032,6 +8033,7 @@ namespace CSP
                 _accountexistsInfo = new RepoItemInfo(this, "AccountExists", ".//div[#'tilesHolder']//div[@innertext=$CSPUsername]", 30000, null, "cfff37f6-a84c-42e0-965e-643a182eeaae");
                 _dontaskagaincheckboxInfo = new RepoItemInfo(this, "DontAskAgainCheckbox", ".//input[#'KmsiCheckboxField']", 30000, null, "ba195df5-feed-437f-95b7-9ed1e785fa9f");
                 _nobuttonInfo = new RepoItemInfo(this, "NoButton", ".//input[#'idBtn_Back']", 30000, null, "e082725e-688b-4272-ae63-c098ddcb8d1b");
+                _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "c587e610-0819-4121-a032-70dee17445c5");
             }
 
             /// <summary>
@@ -8127,6 +8129,30 @@ namespace CSP
                 get
                 {
                     return _nobuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseAnotherAccount item.
+            /// </summary>
+            [RepositoryItem("c587e610-0819-4121-a032-70dee17445c5")]
+            public virtual Ranorex.DivTag UseAnotherAccount
+            {
+                get
+                {
+                    return _useanotheraccountInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseAnotherAccount item info.
+            /// </summary>
+            [RepositoryItemInfo("c587e610-0819-4121-a032-70dee17445c5")]
+            public virtual RepoItemInfo UseAnotherAccountInfo
+            {
+                get
+                {
+                    return _useanotheraccountInfo;
                 }
             }
         }

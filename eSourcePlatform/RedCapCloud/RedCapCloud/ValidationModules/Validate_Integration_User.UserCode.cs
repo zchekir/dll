@@ -35,11 +35,13 @@ namespace RedCapCloud.ValidationModules
 
         public void Validate_IntegrationUser(RepoItemInfo IntegrationUser)
         {
-        	while (!IntegrationUser.Exists(new Duration(10000)))
-        	{
+        	
+        	//while (!IntegrationUser.Exists(new Duration(10000)))
+        	do {
+        		Delay.Milliseconds(15000);
         		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Rkey}{LControlKey up}'.");
             	Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}", 100);	
-        	}
+        	} while (!IntegrationUser.Exists());
         	
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'divtagInfo'.", IntegrationUser);
             Validate.Exists(IntegrationUser);

@@ -95,6 +95,10 @@ namespace CSP.LoginPage
             Select_User_Account(repo.MicrosoftSSO.AccountExistsInfo);
             Delay.Milliseconds(0);
             
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MicrosoftSSO.UseAnotherAccount' at Center.", repo.MicrosoftSSO.UseAnotherAccountInfo, new RecordItemIndex(2));
+            //repo.MicrosoftSSO.UseAnotherAccount.Click();
+            //Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

@@ -824,14 +824,32 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"
-		id="9c255fff-d335-4a60-8ad7-5a36d00c9018"
+		id="38465dbb-2a52-4f97-a7da-4f756315b3f4"
 		isrooted="True"
-		name="WebDocument184HowToExecuteAzureRE"
-		refpath="/dom[4]"
+		name="CogstateSolutionPlatform"
+		refpath="/dom[@domain='cgst-qc-orr.azurewebsites.net']"
 		searchtimeout="30000ms"
 		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="5f95c61a-732b-463d-a24a-1847574f6cd8"
+			name="AcademicExtract"
+			refimgid="2c38be4f-65af-4972-91e9-0bfe7db71520"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr.azurewebsites.net']//a[@innertext='Academic Extract']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="93211f96-5811-43a7-b78f-36c0459fd008"
+			name="Reports"
+			refimgid="03f231e7-815e-4fcd-8ef1-6e2b2c14e635"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr.azurewebsites.net']//a[@innertext='Reports']
+			</item>
 			<basepath>
-				/dom[4]
+				/dom[@domain='cgst-qc-orr.azurewebsites.net']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
@@ -862,6 +880,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="0a1f4511-792f-4cbf-818c-dcbe6257b7c8"
 		name="RCC_Study_Name">
 			zktest 0001
+		</var>
+		<var
+		id="4868fd53-f0cc-4bcc-ad64-84d67b341b4d"
+		name="CSPDOM">
 		</var>
 	</variables>
 </repository>

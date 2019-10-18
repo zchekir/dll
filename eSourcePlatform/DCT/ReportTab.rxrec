@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="36b7cb32-221d-4d60-ba49-8576cfccff8f"
+mode="Global"
+rxversion="8.3">
+	<name>
+		ReportTab
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ReportTab"
+	namespace="DCT">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1fd03815-bb41-4d9c-853a-e187b8570548"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="93211f96-5811-43a7-b78f-36c0459fd008"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-orr.azurewebsites.net']//a[@innertext='Reports']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+	name="DCTRepository"
+	relativepath="DCTRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="DCTRepository"
+		namespace="DCT">
+		</codegen>
+		<rootfolder
+		id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ReportTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
