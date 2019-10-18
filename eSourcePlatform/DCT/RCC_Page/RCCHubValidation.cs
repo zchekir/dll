@@ -105,6 +105,9 @@ namespace DCT.RCC_Page
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(0));
+            Delay.Duration(4000, false);
+            
             Get_value_RCCHubValidation(repo.KuduServices.RCCHubValidationInfo);
             Delay.Milliseconds(0);
             

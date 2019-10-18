@@ -50,23 +50,23 @@ namespace DCT.RCC_Page
             Bitmap storedImage = repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo.GetChecked();
             
             //Capture screenshot of current checkbox in RCC
-            currentImage = Ranorex.Imaging.CaptureImageAuto(repo.REDCapCloud.DataCollectionWidgetCheckboxComplete);
+            currentImage = Ranorex.Imaging.CaptureImage(repo.REDCapCloud.DataCollectionWidgetCheckboxComplete);
             
             //Log Stored and current images in report for debugging purposes
             Report.LogData(ReportLevel.Info, "Info", "Current state of checkbox", currentImage);
             Report.LogData(ReportLevel.Info, "Info", "Known state of checkbox", storedImage);
+            Delay.Duration(500, false);
             
             //Compare the two images, click on the box if they match (checkbox is currently selected if the images match)
             if (Ranorex.Imaging.Compare(currentImage, storedImage, similarity))
             {
             	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCollectionWidgetCheckboxComplete' at Center.", repo.REDCapCloud.DataCollectionWidgetCheckboxCompleteInfo, new RecordItemIndex(0));
             	repo.REDCapCloud.DataCollectionWidgetCheckboxComplete.Click();
-            }else{
-            	
-            	Report.Log(ReportLevel.Info," Test Passed");
             }
             
-        }   
+        }
+
+       
     }
 }
 

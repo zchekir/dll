@@ -109,8 +109,8 @@ namespace RedCapCloud.General
             Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 9s.", new RecordItemIndex(1));
-            Delay.Duration(9000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(1));
+            Delay.Duration(15000, false);
             
         }
 
