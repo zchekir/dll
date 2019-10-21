@@ -35,7 +35,7 @@ namespace RedCapCloud.ValidationModules
 
         public void Validate_IntegrationUser(RepoItemInfo IntegrationUser)
         {
-        	while (!IntegrationUser.Exists(new Duration(10000)))
+        	while (!IntegrationUser.Exists(new Duration(15000)))
         	{
         		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Rkey}{LControlKey up}'.");
             	Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}", 100);	

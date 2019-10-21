@@ -89,8 +89,8 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2.5s.", new RecordItemIndex(0));
+            Delay.Duration(2500, false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.Menu.HamburgerMenu'", repo.CogstateSolutionPlatform.Menu.HamburgerMenuInfo, new ActionTimeout(30000), new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.Menu.HamburgerMenuInfo.WaitForExists(30000);
