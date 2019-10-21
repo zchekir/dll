@@ -109,7 +109,7 @@ namespace DCT.DCT_Page
             //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $DCTURL with browser 'Chrome' in normal mode.", new RecordItemIndex(1));
-            Host.Current.OpenBrowser(DCTURL, "Chrome", "", false, false, false, true, false, true);
+            Host.Current.OpenBrowser(DCTURL, "Chrome", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Success, "User", "LoggedIn Successfully", null, false, new RecordItemIndex(2));
