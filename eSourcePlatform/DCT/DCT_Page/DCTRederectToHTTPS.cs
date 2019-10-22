@@ -105,8 +105,8 @@ namespace DCT.DCT_Page
 
             Init();
 
-            HTTPS(URL, Browser);
-            Delay.Milliseconds(0);
+            //HTTPS(URL, Browser);
+            //Delay.Milliseconds(0);
             
         }
 

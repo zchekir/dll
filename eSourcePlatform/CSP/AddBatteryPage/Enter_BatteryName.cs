@@ -111,27 +111,30 @@ namespace CSP.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameField.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryName' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BatteryName' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameField.PressKeys(BatteryName, 1);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(4));
             repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameField.PressKeys(RandNum, 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$BatteryName) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$BatteryName) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, "Value", BatteryName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$RandNum) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$RandNum) on item 'CogstateSolutionPlatform.AddBatteryPage.BatteryNameField'.", repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, new RecordItemIndex(6));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AddBatteryPage.BatteryNameFieldInfo, "Value", RandNum);
             Delay.Milliseconds(0);
             

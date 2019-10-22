@@ -70,7 +70,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -138,10 +138,57 @@ rxversion="8.3">
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="100ms"
 		searchpropertyid="5a4b9c20-47ae-4d45-b10a-5e2a86d7e417">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="CSPUsername">
+				</binding>
+			</bindings>
+			<info
+			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+				</path>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9c7ca39c-542e-41d4-afbb-048ae7fbfbe7"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="22ddb774-560d-40bd-a757-6d852b5b03f6">
 			<comment>
 			</comment>
 			<bindings>

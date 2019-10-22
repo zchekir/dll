@@ -111,22 +111,25 @@ namespace CSP.AddWorkflowPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStepInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStepInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddWorkflowPage.SimpleBatteryStep.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTabInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab' at Center.", repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTabInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddWorkflowPage.PropertiesTab.Click(3);
             Delay.Milliseconds(90);
             
             SelectBatteryOption();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButton' at 28;16.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButtonInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButton' at 28;16.", repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButtonInfo, new RecordItemIndex(4));
             repo.CogstateSolutionPlatform.AddWorkflowPage.WorkflowBlockPropertiesSaveButton.Click("28;16", 3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(5));
             Delay.Duration(1500, false);
             
         }

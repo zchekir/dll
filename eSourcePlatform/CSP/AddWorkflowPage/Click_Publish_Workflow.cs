@@ -89,17 +89,23 @@ namespace CSP.AddWorkflowPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
+            Delay.Duration(1000, false);
+            
             Mouse_Click_PublishButton(repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabled'", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo, new ActionTimeout(50000), new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to not exist. Associated repository item: 'CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabled'", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo, new ActionTimeout(50000), new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonDisabledInfo.WaitForNotExists(50000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.PublishButton'.", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.AddWorkflowPage.PublishButton'.", repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo, new RecordItemIndex(3));
             Validate.Exists(repo.CogstateSolutionPlatform.AddWorkflowPage.PublishButtonInfo);
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Workflow Published Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Workflow Published Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
             
         }
 

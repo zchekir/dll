@@ -44,7 +44,7 @@ namespace DCT.DCT_Page
         	
         	// splitting version numbe
         	this.ver_dct = DCTActualVersion.Split(' ')[0];
-            Report.Log(ReportLevel.Info, " DCTersion"+ " :" + " " + ver_dct );
+            Report.Log(ReportLevel.Info, " DCT_Version"+ " :" + " " + ver_dct );
         	
         }
 

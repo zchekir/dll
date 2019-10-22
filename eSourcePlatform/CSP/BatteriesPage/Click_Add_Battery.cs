@@ -89,13 +89,19 @@ namespace CSP.BatteriesPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.BatteriesTab' at 58;28.", repo.CogstateSolutionPlatform.StudyTabs.BatteriesTabInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.BatteriesTab' at 58;28.", repo.CogstateSolutionPlatform.StudyTabs.BatteriesTabInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.StudyTabs.BatteriesTab.Click("58;28", 3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.AddButton' at 12;14.", repo.CogstateSolutionPlatform.StudyToolbar.AddButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.AddButton' at 12;14.", repo.CogstateSolutionPlatform.StudyToolbar.AddButtonInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.StudyToolbar.AddButton.Click("12;14", 3);
             Delay.Milliseconds(490);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(3));
+            Delay.Duration(3000, false);
             
         }
 

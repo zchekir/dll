@@ -106,15 +106,21 @@ namespace DCT.RCC_Page
             //SubJect(DCTSubject);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.E_Subject' at Center.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.E_Subject' at Center.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(2));
             repo.DataCleaningTool.E_Subject.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'DataCleaningTool.E_Subject'.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'DataCleaningTool.E_Subject'.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(3));
             repo.DataCleaningTool.E_Subject.PressKeys(DCTSubject);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(5));
             Keyboard.Press("{TAB}");
             Delay.Milliseconds(0);
             

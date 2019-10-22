@@ -89,13 +89,19 @@ namespace CSP.WorkflowsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.WorkflowsTab' at Center.", repo.CogstateSolutionPlatform.StudyTabs.WorkflowsTabInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyTabs.WorkflowsTab' at Center.", repo.CogstateSolutionPlatform.StudyTabs.WorkflowsTabInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.StudyTabs.WorkflowsTab.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.AddButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.AddButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StudyToolbar.AddButton' at Center.", repo.CogstateSolutionPlatform.StudyToolbar.AddButtonInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.StudyToolbar.AddButton.Click(3);
             Delay.Milliseconds(490);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
             
         }
 

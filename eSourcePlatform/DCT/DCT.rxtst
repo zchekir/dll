@@ -1877,6 +1877,10 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="78867f8f-b4dc-4bb2-b72f-09e82f850fa6"
+			name="LogoutCSP">
+			</testcase>
+			<testcase
 			id="7929e989-dc82-481b-a5ae-5e108085bda6"
 			name="Test_ClearPrimary_">
 			</testcase>
@@ -2415,6 +2419,12 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="9f3e84da-8c7a-43e9-b1d5-9432eaf8df19"
+			name="CSPLogOut"
+			ref="e337af55-d453-4cc9-b275-a0909577698e"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="a03eef39-7036-4142-9ce7-d092a721b286"
@@ -3304,7 +3314,7 @@ rxversion="8.3">
 					dataname="Browser"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1"
-					variablename="Browser">
+					variablename="AzureBrowser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3396,7 +3406,7 @@ rxversion="8.3">
 					dataname="Browser"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1"
-					variablename="Browser">
+					variablename="AzureBrowser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4825,6 +4835,14 @@ rxversion="8.3">
 								name="AcademicExtract">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="78867f8f-b4dc-4bb2-b72f-09e82f850fa6"
+							name="LogoutCSP">
+								<testmodule
+								id="9f3e84da-8c7a-43e9-b1d5-9432eaf8df19"
+								name="CSPLogOut">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="e6d436ed-0a07-4913-a5f0-3deb7c676360"
@@ -5613,6 +5631,21 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
+			</testcontainer>
+			<testcontainer
+			id="71e4482c-413e-45db-a051-3ba280fbea1f">
+			</testcontainer>
+			<testcontainer
+			id="78867f8f-b4dc-4bb2-b72f-09e82f850fa6">
+			</testcontainer>
+			<testcontainer
+			id="7e69f48b-af5b-423c-8396-31ad2c8ff6b2">
+			</testcontainer>
+			<testcontainer
+			id="9090cc96-cd12-4500-b8c4-8a0b1a5fc1de">
+			</testcontainer>
+			<testcontainer
+			id="d0b35080-8895-4fac-8f1e-c1aca38b7b97">
 			</testcontainer>
 			<testcontainer
 			id="d4b8534f-2794-473e-9747-934afc8f284d">

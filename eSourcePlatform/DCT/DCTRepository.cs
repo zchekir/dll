@@ -2045,6 +2045,7 @@ namespace DCT
         {
             RepoItemInfo _academicextractInfo;
             RepoItemInfo _reportsInfo;
+            RepoItemInfo _clickoutInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -2054,6 +2055,7 @@ namespace DCT
             {
                 _academicextractInfo = new RepoItemInfo(this, "AcademicExtract", ".//a[@innertext='Academic Extract']", 30000, null, "5f95c61a-732b-463d-a24a-1847574f6cd8");
                 _reportsInfo = new RepoItemInfo(this, "Reports", ".//a[@innertext='Reports']", 30000, null, "93211f96-5811-43a7-b78f-36c0459fd008");
+                _clickoutInfo = new RepoItemInfo(this, "ClickOut", ".//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\\.azure']/span[2]", 30000, null, "62bc46be-5c41-4394-bf10-bcdfd07b5900");
             }
 
             /// <summary>
@@ -2125,6 +2127,30 @@ namespace DCT
                 get
                 {
                     return _reportsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickOut item.
+            /// </summary>
+            [RepositoryItem("62bc46be-5c41-4394-bf10-bcdfd07b5900")]
+            public virtual Ranorex.SpanTag ClickOut
+            {
+                get
+                {
+                    return _clickoutInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickOut item info.
+            /// </summary>
+            [RepositoryItemInfo("62bc46be-5c41-4394-bf10-bcdfd07b5900")]
+            public virtual RepoItemInfo ClickOutInfo
+            {
+                get
+                {
+                    return _clickoutInfo;
                 }
             }
         }

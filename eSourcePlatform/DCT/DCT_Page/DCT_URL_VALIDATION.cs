@@ -104,6 +104,9 @@ namespace DCT.DCT_Page
             Host.Current.CloseApplication(repo.DataCleaningTool.Self, new Duration(0));
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
+            
         }
 
 #region Image Feature Data

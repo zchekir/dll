@@ -105,10 +105,17 @@ namespace DCT.DCT_Page
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
+            Delay.Duration(1000, false);
+            
             Get_value_DCTValidationVersion(repo.KuduServices.DCTValidationVersionInfo);
             Delay.Milliseconds(0);
             
             DCT_V_Validation(ExpectedDCTVersion);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Rkey}{LControlKey up}'.", new RecordItemIndex(3));
+            Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}");
             Delay.Milliseconds(0);
             
         }

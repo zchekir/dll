@@ -92,8 +92,8 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(0));
-            Delay.Duration(4000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 18s.", new RecordItemIndex(0));
+            Delay.Duration(18000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShallConsol' at Center.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(1));
             repo.KuduServices.PowerShallConsol.Click();
@@ -107,8 +107,8 @@ namespace DCT.RCC_Page
             Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
+            Delay.Duration(2000, false);
             
         }
 

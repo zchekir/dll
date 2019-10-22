@@ -99,15 +99,23 @@ namespace DCT.single_sign_in
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(1));
             Delay.Duration(800, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.UseAnotherAccount' at Center.", repo.SignInToYourAccount.UseAnotherAccountInfo, new RecordItemIndex(2));
-            repo.SignInToYourAccount.UseAnotherAccount.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.UseAnotherAccount' at Center.", repo.SignInToYourAccount.UseAnotherAccountInfo, new RecordItemIndex(2));
+            //repo.SignInToYourAccount.UseAnotherAccount.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPUsername' with focus on 'SignInToYourAccount.EnterUseName'.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(3));
+            //repo.SignInToYourAccount.EnterUseName.PressKeys(CSPUsername);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.EnterUseName' at Center.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(4));
+            repo.SignInToYourAccount.EnterUseName.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPUsername' with focus on 'SignInToYourAccount.EnterUseName'.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPUsername' with focus on 'SignInToYourAccount.EnterUseName'.", repo.SignInToYourAccount.EnterUseNameInfo, new RecordItemIndex(5));
             repo.SignInToYourAccount.EnterUseName.PressKeys(CSPUsername);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.ClickNext' at Center.", repo.SignInToYourAccount.ClickNextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.ClickNext' at Center.", repo.SignInToYourAccount.ClickNextInfo, new RecordItemIndex(6));
             repo.SignInToYourAccount.ClickNext.Click();
             Delay.Milliseconds(200);
             

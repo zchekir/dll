@@ -226,6 +226,18 @@
       <id>49ba2725-1cb9-4482-804e-672204af9ae4</id>
       <BoundTo>9f87f60d-26a5-4baf-97c8-400491dec388</BoundTo>
     </Compile>
+    <Compile Include="CSPLogOut.cs">
+      <BoundTo>9faa5ebd-25af-4b86-96d0-037daf3d503c</BoundTo>
+      <DependentUpon>CSPLogOut.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c1a1b9ec-66f1-4c50-8b9c-1098addbf243</id>
+    </Compile>
+    <Compile Include="CSPLogOut.UserCode.cs">
+      <BoundTo>9faa5ebd-25af-4b86-96d0-037daf3d503c</BoundTo>
+      <DependentUpon>CSPLogOut.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7b59bcf8-0b21-43b0-95ab-b2bc91ff2138</id>
+    </Compile>
     <Compile Include="DCTRepository.cs">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <DependentUpon>DCTRepository.rxrep</DependentUpon>
@@ -970,6 +982,11 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>9f87f60d-26a5-4baf-97c8-400491dec388</id>
       <recordtableid>7bceac10-42f9-4317-8de5-3e37a1b5b379</recordtableid>
+    </None>
+    <None Include="CSPLogOut.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>9faa5ebd-25af-4b86-96d0-037daf3d503c</id>
+      <recordtableid>e337af55-d453-4cc9-b275-a0909577698e</recordtableid>
     </None>
     <None Include="DCTRepository.rximg">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>

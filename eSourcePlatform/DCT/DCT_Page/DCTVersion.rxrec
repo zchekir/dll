@@ -38,6 +38,15 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="DCTVersion"
 		enabled="True"
@@ -96,6 +105,18 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<keysequenceitem
+		KeySequence="{LControlKey down}{Rkey}{LControlKey up}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="b7c4abe3-a8af-46f2-b6e1-1668e9553364">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
