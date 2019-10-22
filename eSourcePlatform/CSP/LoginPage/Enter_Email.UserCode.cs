@@ -40,7 +40,7 @@ namespace CSP.LoginPage
         	Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
             Delay.Duration(1000, false);
         	
-            if (EmailField.Exists(new Duration(3000)))
+            if (EmailField.Exists(new Duration(5000)))
         	{
         		while (EmailField.FindAdapter<InputTag>().Value != CSPUsername)
         		{

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -564,6 +564,32 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="296ae3da-4904-42a1-aeb5-90dff391c893"
+			name="oDataAPI"
+			ref="e5c5155b-1c7b-4dcd-9aad-e16fa12f0735"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="c8b4b7d8-5ec1-44d1-9ce3-70a3bdb9b058"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="71310b93-a35f-46be-9c69-3ee20b568499"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="Key"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="c876df1e-bfea-4796-a52b-9bb42e3883a7"
+					variablename="Key">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2aa49739-7e8e-43bc-b46a-155f3b888052"
 			name="Validate_BatteryEntry"
 			ref="41eae272-e70a-4c8c-976b-316352274ed1"
@@ -1029,6 +1055,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="5b819c85-be53-48c1-8611-90d186b034d1"
+			name="oDataValidation">
+			</testcase>
 			<testmodule
 			id="5e17c569-d4bd-46c6-bf0c-ad9923292edb"
 			name="Click_AddEventDef"
@@ -2768,6 +2798,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<smartfoldernode
+			id="d12256a2-8f74-44a5-936a-2f11453e67ba"
+			name="oData">
+			</smartfoldernode>
 			<testmodule
 			id="d26bb90f-54e3-47cb-bf3c-0f78378852ed"
 			name="ClickNo"
@@ -2903,6 +2937,44 @@ rxversion="8.3">
 					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
 					variableid="c022c578-ad5b-4bd7-ad66-8e8d0ea95ba4"
 					variablename="WorkflowDescription">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="df24712f-730a-4f5a-8879-d2b6d9208d5c"
+			name="APIV2_Authenticate"
+			ref="03a98aac-9699-4331-a3fa-00536dfad33f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RandNum"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="Key"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="35d6bff4-468a-4307-8386-b46e7e547dc9"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Secret"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
+					variablename="Secret">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
+					variablename="ProtocolNumber">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4398,6 +4470,22 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
+						<smartfoldernode
+						id="d12256a2-8f74-44a5-936a-2f11453e67ba"
+						name="oData">
+							<testcase
+							id="5b819c85-be53-48c1-8611-90d186b034d1"
+							name="oDataValidation">
+								<testmodule
+								id="df24712f-730a-4f5a-8879-d2b6d9208d5c"
+								name="APIV2_Authenticate">
+								</testmodule>
+								<testmodule
+								id="296ae3da-4904-42a1-aeb5-90dff391c893"
+								name="oDataAPI">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 						<teardown
 						id="c18465e9-a71b-4523-9da3-a4353ced7af5"
 						name="teardown">
@@ -4662,6 +4750,18 @@ rxversion="8.3">
 	default="Regression">
 		<testconfiguration
 		name="Regression">
+			<testcontainer
+			id="5b819c85-be53-48c1-8611-90d186b034d1">
+			</testcontainer>
+			<testcontainer
+			id="63a0768d-8632-409b-adbf-fe7850003e81">
+			</testcontainer>
+			<testcontainer
+			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
+			</testcontainer>
+			<testcontainer
+			id="d12256a2-8f74-44a5-936a-2f11453e67ba">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">

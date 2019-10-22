@@ -39,7 +39,7 @@ namespace CSP.LoginPage
         /// </summary>
         public void Select_User_Account(RepoItemInfo ExistingAccount)
         {
-        	if (ExistingAccount.Exists(new Duration(250)))
+        	if (ExistingAccount.Exists(new Duration(5000)))
         	{
         		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSSO.AccountExists' at Center.", repo.MicrosoftSSO.AccountExistsInfo, new RecordItemIndex(2));
                 repo.MicrosoftSSO.AccountExists.Click();   

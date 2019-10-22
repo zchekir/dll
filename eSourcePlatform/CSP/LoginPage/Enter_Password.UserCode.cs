@@ -37,7 +37,7 @@ namespace CSP.LoginPage
         public void Try_Enter_Password(RepoItemInfo PasswordField)
         {
             
-        	if (PasswordField.Exists(new Duration(250)))
+        	if (PasswordField.Exists(new Duration(5000)))
             {
             	while (PasswordField.FindAdapter<InputTag>().Value != CSPPassword) 
             	{
