@@ -2934,6 +2934,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="faa8e15f-0cf9-4d2c-ada3-06559cf677a0"
+			name="Click_Logout"
+			ref="82c513c0-bd23-4fbe-a34f-2907c8524d40"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datasource="RCCConnector"
 			id="fca09944-a8c2-4c34-8714-8e5871e85452"
@@ -3593,6 +3607,10 @@ rxversion="8.3">
 								name="Extract_TestIdentifier">
 								</testmodule>
 								<testmodule
+								id="faa8e15f-0cf9-4d2c-ada3-06559cf677a0"
+								name="Click_Logout">
+								</testmodule>
+								<testmodule
 								id="c17879b6-c169-4bfb-81f7-fbdcbc3335fb"
 								name="Close_Browser">
 								</testmodule>
@@ -4075,9 +4093,9 @@ rxversion="8.3">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Regression">
+	default="Smoke">
 		<testconfiguration
-		name="Regression">
+		name="Smoke">
 			<testcontainer
 			id="0a9a4064-2300-440e-b156-480c0e56ba79">
 			</testcontainer>
