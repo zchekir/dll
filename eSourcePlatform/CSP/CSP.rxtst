@@ -126,20 +126,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="04610ce5-1506-4aa9-9e30-9ea4a06b7337"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="05328f87-991b-4b2b-9f91-4feefb3a94a0"
 			name="Click_SaveBatteryTemplate_Properties"
 			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
@@ -194,20 +180,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testmodule
-			id="07f93238-b8e8-4c09-8d70-5216cb351f44"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="082ce87d-720c-42c5-a80d-89fb33c231ec"
 			name="Click_Show_Test_Users"
@@ -1274,7 +1246,7 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="0"
+			maxrange="7"
 			minrange="0"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
@@ -1400,6 +1372,20 @@ rxversion="8.3">
 					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
 					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
 					variablename="BatteryBlockName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="46762165-6e58-428c-bba9-aa6f92c3550d"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1648,10 +1634,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="5384270b-f364-445c-b646-92d330719e2d"
-			name="teardown2">
-			</teardown>
 			<testmodule
 			id="539d1eda-eaa8-42ed-a47b-c70482a30c61"
 			name="Extract_Participant_IQNumber"
@@ -1703,6 +1685,10 @@ rxversion="8.3">
 			minrange="0"
 			name="Setup_Processor_Study">
 			</smartfoldernode>
+			<teardown
+			id="55171de8-d939-4429-8858-b1d6f8aeff25"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="557f5663-9d86-41a8-9876-186e75f5e251"
 			name="Open_Browser"
@@ -2552,7 +2538,7 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="0"
+			maxrange="7"
 			minrange="0"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
@@ -3054,20 +3040,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="948715ce-b87b-47fa-a95f-1a36bf40bb3a"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="95015172-208a-477c-b89c-135568808321"
 			name="Select_CogstateTest"
 			ref="e231f99c-c036-461b-93e8-b4324c40315e"
@@ -3350,6 +3322,20 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="a605dad5-e82c-4594-a175-34ab95d8607f"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="BatteryBlockConnector"
@@ -4635,10 +4621,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="fda66677-0741-4b47-a245-4f0953ef1bb8"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="fed932c2-85e8-44a5-90c8-91e5d4b99d48"
 			name="Select_Study"
@@ -5316,7 +5298,7 @@ rxversion="8.3">
 								id="bfa2a86b-6efe-4c81-9a2e-f463ed65923e"
 								name="setup">
 									<testmodule
-									id="07f93238-b8e8-4c09-8d70-5216cb351f44"
+									id="a605dad5-e82c-4594-a175-34ab95d8607f"
 									name="Close_Browser">
 									</testmodule>
 									<testmodule
@@ -5349,10 +5331,10 @@ rxversion="8.3">
 								name="oDataAPI">
 								</testmodule>
 								<teardown
-								id="5384270b-f364-445c-b646-92d330719e2d"
-								name="teardown2">
+								id="55171de8-d939-4429-8858-b1d6f8aeff25"
+								name="teardown">
 									<testmodule
-									id="948715ce-b87b-47fa-a95f-1a36bf40bb3a"
+									id="46762165-6e58-428c-bba9-aa6f92c3550d"
 									name="Close_Browser">
 									</testmodule>
 								</teardown>
@@ -5412,14 +5394,6 @@ rxversion="8.3">
 								id="b756a62a-4202-43df-9170-84ad31a9c3b5"
 								name="Validate_Participant_Not_Test_User">
 								</testmodule>
-								<teardown
-								id="fda66677-0741-4b47-a245-4f0953ef1bb8"
-								name="teardown">
-									<testmodule
-									id="04610ce5-1506-4aa9-9e30-9ea4a06b7337"
-									name="Close_Browser">
-									</testmodule>
-								</teardown>
 							</testcase>
 							<testcase
 							id="8025452f-675f-42b8-876b-34ae207f797b"
@@ -5998,38 +5972,230 @@ rxversion="8.3">
 		<testconfiguration
 		name="Processor">
 			<testcontainer
-			id="00a3fb7a-3e79-47da-9549-b5259afa14da">
+			id="037aeee4-7133-450a-b13e-79f6464da1e0">
 			</testcontainer>
 			<testcontainer
-			id="066d25bc-838a-4b83-9232-56f137398982">
+			id="10c333f8-e857-4fad-823d-294804009f8b">
 			</testcontainer>
 			<testcontainer
-			id="404eae3f-ef4f-4edd-809d-debf8a94911b">
+			id="12672266-c3e5-4da0-bf18-959502d59662">
 			</testcontainer>
 			<testcontainer
-			id="454fea06-edd8-4058-97f7-2412870c6e25">
+			id="1b779b49-2dee-4e83-8242-14cf4f053cfa">
 			</testcontainer>
 			<testcontainer
-			id="4777f177-c677-4934-9d93-a30402f20dfc">
+			id="2dbb0c47-ef76-4518-b068-bfaeeab934d1">
 			</testcontainer>
 			<testcontainer
-			id="54af3459-6433-42f1-bd34-398710b320e0">
+			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
+			</testcontainer>
+			<testcontainer
+			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			</testcontainer>
+			<testcontainer
+			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
+			</testcontainer>
+			<testcontainer
+			id="48b1148e-3ad5-47f7-bc8a-ccf5679419d7">
+			</testcontainer>
+			<testcontainer
+			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
+			</testcontainer>
+			<testcontainer
+			id="5abd86a0-9eb9-4f39-bed7-ae67f7a7a794">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="b1b075f4-4d50-44e4-9af0-98df2c6911e1">
+			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
 			</testcontainer>
 			<testcontainer
-			id="c30247af-1c13-481d-9c1f-4b0e428600f2">
+			id="6e082396-bffa-4d84-b254-0da30d111799">
 			</testcontainer>
 			<testcontainer
-			id="eae1f2e3-270e-48e4-b714-c98dd9db88ac">
+			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			</testcontainer>
+			<testcontainer
+			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
+			</testcontainer>
+			<testcontainer
+			id="8025452f-675f-42b8-876b-34ae207f797b">
+			</testcontainer>
+			<testcontainer
+			id="82bc9b0d-664f-42ea-a949-83d3ff5ea967">
+			</testcontainer>
+			<testcontainer
+			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
+			</testcontainer>
+			<testcontainer
+			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
+			</testcontainer>
+			<testcontainer
+			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
+			</testcontainer>
+			<testcontainer
+			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
+			</testcontainer>
+			<testcontainer
+			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
+			</testcontainer>
+			<testcontainer
+			id="a54e2f22-375f-4fb2-838a-084cd4471e50">
+			</testcontainer>
+			<testcontainer
+			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
+			</testcontainer>
+			<testcontainer
+			id="a629f898-f330-4404-bdaa-0a34aafb84ac">
+			</testcontainer>
+			<testcontainer
+			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
+			</testcontainer>
+			<testcontainer
+			id="b9f70931-4b43-4c50-98bd-55a9612e930f">
+			</testcontainer>
+			<testcontainer
+			id="ba7d02db-83df-4a58-a877-7079c0c072d1">
+			</testcontainer>
+			<testcontainer
+			id="baf76252-a794-4bae-b009-029b41fb4909">
+			</testcontainer>
+			<testcontainer
+			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
+			</testcontainer>
+			<testcontainer
+			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
+			</testcontainer>
+			<testcontainer
+			id="cecd77b5-2b19-4763-8e3d-789e3ac80038">
+			</testcontainer>
+			<testcontainer
+			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
+			</testcontainer>
+			<testcontainer
+			id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db">
+			</testcontainer>
+			<testcontainer
+			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
+			</testcontainer>
+			<testcontainer
+			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Regression">
+			<testcontainer
+			id="037aeee4-7133-450a-b13e-79f6464da1e0">
+			</testcontainer>
+			<testcontainer
+			id="10c333f8-e857-4fad-823d-294804009f8b">
+			</testcontainer>
+			<testcontainer
+			id="12672266-c3e5-4da0-bf18-959502d59662">
+			</testcontainer>
+			<testcontainer
+			id="1b779b49-2dee-4e83-8242-14cf4f053cfa">
+			</testcontainer>
+			<testcontainer
+			id="2dbb0c47-ef76-4518-b068-bfaeeab934d1">
+			</testcontainer>
+			<testcontainer
+			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
+			</testcontainer>
+			<testcontainer
+			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			</testcontainer>
+			<testcontainer
+			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
+			</testcontainer>
+			<testcontainer
+			id="48b1148e-3ad5-47f7-bc8a-ccf5679419d7">
+			</testcontainer>
+			<testcontainer
+			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
+			</testcontainer>
+			<testcontainer
+			id="5abd86a0-9eb9-4f39-bed7-ae67f7a7a794">
+			</testcontainer>
+			<testcontainer
+			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
+			</testcontainer>
+			<testcontainer
+			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
+			</testcontainer>
+			<testcontainer
+			id="6e082396-bffa-4d84-b254-0da30d111799">
+			</testcontainer>
+			<testcontainer
+			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			</testcontainer>
+			<testcontainer
+			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
+			</testcontainer>
+			<testcontainer
+			id="8025452f-675f-42b8-876b-34ae207f797b">
+			</testcontainer>
+			<testcontainer
+			id="82bc9b0d-664f-42ea-a949-83d3ff5ea967">
+			</testcontainer>
+			<testcontainer
+			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
+			</testcontainer>
+			<testcontainer
+			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
+			</testcontainer>
+			<testcontainer
+			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
+			</testcontainer>
+			<testcontainer
+			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
+			</testcontainer>
+			<testcontainer
+			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
+			</testcontainer>
+			<testcontainer
+			id="a54e2f22-375f-4fb2-838a-084cd4471e50">
+			</testcontainer>
+			<testcontainer
+			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
+			</testcontainer>
+			<testcontainer
+			id="a629f898-f330-4404-bdaa-0a34aafb84ac">
+			</testcontainer>
+			<testcontainer
+			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
+			</testcontainer>
+			<testcontainer
+			id="b9f70931-4b43-4c50-98bd-55a9612e930f">
+			</testcontainer>
+			<testcontainer
+			id="ba7d02db-83df-4a58-a877-7079c0c072d1">
+			</testcontainer>
+			<testcontainer
+			id="baf76252-a794-4bae-b009-029b41fb4909">
+			</testcontainer>
+			<testcontainer
+			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
+			</testcontainer>
+			<testcontainer
+			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
+			</testcontainer>
+			<testcontainer
+			id="cecd77b5-2b19-4763-8e3d-789e3ac80038">
+			</testcontainer>
+			<testcontainer
+			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
+			</testcontainer>
+			<testcontainer
+			id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db">
+			</testcontainer>
+			<testcontainer
+			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
+			</testcontainer>
+			<testcontainer
+			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
