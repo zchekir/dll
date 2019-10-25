@@ -33,21 +33,33 @@ namespace DCT.RCC_Page
             // Your recording specific initialization code goes here.
         }
 
-        public void Visit(string Visit)
-        {
-            //Entervisitwhere to move it to:
-        	  Delay.Milliseconds(400);
-        	  InputTag EnterVisit="//input[id~'react-select-[0-9]-input']";
-              EnterVisit.Click();
-        	  EnterVisit.PressKeys(Visit);
-        	  Keyboard.Press("{ENTER}");
-        }
 
-        public void Key_sequence_EnterVisit(RepoItemInfo divtagInfo)
+        /// <summary>
+        /// This method will first attempt to find a visit to move the assessment to. If the visit is not found,
+        /// there will be a short delay and the visit will be searched for again. This method will look for the 'NoOptions' result
+        /// each time a visit is searched. If the NoOptions result is NOT found, we assume the visit has been populated and
+        /// the test will continue.
+        /// </summary>
+        /// <param name="VisitField">Field where we want to search for the Visit</param>
+        /// <param name="NoOptions">Result displayed when the visit is not found</param>
+        public void Try_Select_Visit(RepoItemInfo VisitField, RepoItemInfo NoOptions)
         {
-        	Delay.Milliseconds(200);
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVisit' with focus on 'divtagInfo'.", divtagInfo);
-            divtagInfo.FindAdapter<DivTag>().PressKeys(DCTVisit);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VisitField' at Center.", VisitField);
+            VisitField.FindAdapter<LabelTag>().Click(Location.LowerCenter);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVisit' with focus on 'VisitField'.", VisitField);
+            VisitField.FindAdapter<LabelTag>().PressKeys(DCTVisit);
+            
+            while (NoOptions.Exists(new Duration(1000))) 
+            {
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VisitField' at Center.", VisitField);
+            	VisitField.FindAdapter<LabelTag>().Click(Location.LowerCenter);
+            	Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.");
+            	Delay.Duration(10000, false);
+            	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VisitField' at Center.", VisitField);
+            	VisitField.FindAdapter<LabelTag>().Click(Location.LowerCenter);
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVisit' with focus on 'VisitField'.", VisitField);
+            	VisitField.FindAdapter<LabelTag>().PressKeys(DCTVisit);
+            }
         }
 
     }

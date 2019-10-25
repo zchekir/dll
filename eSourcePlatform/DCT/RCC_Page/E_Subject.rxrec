@@ -30,20 +30,24 @@ rxversion="8.3">
 		<var
 		id="c0571c73-1af6-47f2-9475-f5d78be0ac3c"
 		name="DCTSubject">
-			test
-		</var>
-		<var
-		id="ebdbd210-ee97-4ffa-8fac-895ff919ef75"
-		name="DCTVisit">
-			Visit
+			SC-7089
 		</var>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="E_Subject"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="False"
-		methodname="SubJect"
+		methodname="Try_Select_Subject"
 		namespace="DCT.RCC_Page"
 		optional="False"
 		varname="">
@@ -52,84 +56,41 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="82e33e27-a81a-4768-9561-2c836e93ec8e">
+			id="35fa38dd-d19a-4a8d-a843-3b233f477fec">
 				<argument
-				argname="Subj"
-				id="e0eeaddf-255b-4b1e-8476-49c234d0c7df"
-				variable="DCTSubject">
+				argname="SubjectDropdown"
+				id="ab1e5c91-d8f7-441e-8275-44f113d5c4b4">
 					<argvaluetype>
-						System.String
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
 					</argvaluetype>
 					<argvalue>
 					</argvalue>
+					<info
+					id="6bccceed-5896-4d21-9e92-2b50db29405f"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//label[@innertext='Subject']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="NoOptionsItem"
+				id="7b424d23-95ce-4a49-a2cc-e2f9f7a6ba3c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="596463e8-50fb-4832-8fe5-c3358e0a090d"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//body//div//p[@innertext='No Options']
+						</path>
+					</info>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<explicitdelayitem
-		duration="500ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e5626147-10fd-4e8d-8a6e-def512f3e8c9"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="6bccceed-5896-4d21-9e92-2b50db29405f"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//label[@innertext='Subject']
-				</path>
-			</info>
-		</mouseitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="a881a751-1821-4f99-83cf-e25cb16c15d3">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="DCTSubject">
-				</binding>
-			</bindings>
-			<info
-			id="6bccceed-5896-4d21-9e92-2b50db29405f"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']/body/div[2]/div[2]/div/div[2]/div[2]/div[1]/div[1]/div/div/div/div/div[1]
-				</path>
-			</info>
-		</keysequenceitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{TAB}"
 		duration="100ms"

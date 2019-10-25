@@ -92,32 +92,13 @@ namespace DCT.RCC_Page
 
             Init();
 
-            //Visit(DCTVisit);
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.EnterVisit_' at Center.", repo.DataCleaningTool.EnterVisit_Info, new RecordItemIndex(1));
-            //repo.DataCleaningTool.EnterVisit_.Click();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVisit' with focus on 'DataCleaningTool.EnterVisit_'.", repo.DataCleaningTool.EnterVisit_Info, new RecordItemIndex(2));
-            //repo.DataCleaningTool.EnterVisit_.PressKeys(DCTVisit);
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.EnterVisit_' at Center.", repo.DataCleaningTool.EnterVisit_Info, new RecordItemIndex(4));
-            repo.DataCleaningTool.EnterVisit_.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVisit' with focus on 'DataCleaningTool.EnterVisit_'.", repo.DataCleaningTool.EnterVisit_Info, new RecordItemIndex(5));
-            repo.DataCleaningTool.EnterVisit_.PressKeys(DCTVisit);
+            Try_Select_Visit(repo.DataCleaningTool.DestinationVisitFieldInfo, repo.DataCleaningTool.NoOptionsItemInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(6));
-            Delay.Duration(500, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(2));
             Keyboard.Press("{TAB}");
             Delay.Milliseconds(0);
             

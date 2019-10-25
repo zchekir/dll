@@ -153,7 +153,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,divtag"
 			capname="labeltag"
 			id="5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34"
-			name="EnterVisit_"
+			name="DestinationVisitField"
 			refimgid="68433de0-7626-4716-84ea-2563b03e365c"
 			searchtimeout="30000ms">
 				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//label[@innertext='Visit']
@@ -162,10 +162,19 @@ rxversion="8.3">
 			addcaps="unknown,webelement,divtag"
 			capname="labeltag"
 			id="6bccceed-5896-4d21-9e92-2b50db29405f"
-			name="E_Subject"
+			name="DestinationSubjectField"
 			refimgid="890f4969-caf7-445e-a234-303a033dffda"
 			searchtimeout="30000ms">
 				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//label[@innertext='Subject']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="596463e8-50fb-4832-8fe5-c3358e0a090d"
+			name="NoOptionsItem"
+			refimgid="0c71d8b2-c5a6-4fe2-907b-b7fe7b5da56d"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//body//div//p[@innertext='No Options']
 			</item>
 			<basepath>
 				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']
@@ -884,7 +893,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="68bbda1b-c9d6-44b8-972e-350252c24d17"
 		name="DCTSubject">
-			test
+			SC-7089
 		</var>
 		<var
 		id="0a1f4511-792f-4cbf-818c-dcbe6257b7c8"

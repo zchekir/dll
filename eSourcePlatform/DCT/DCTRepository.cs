@@ -71,7 +71,7 @@ namespace DCT
 
 #region Variables
 
-        string _DCTSubject = "test";
+        string _DCTSubject = "SC-7089";
 
         /// <summary>
         /// Gets or sets the value of variable DCTSubject.
@@ -255,8 +255,9 @@ namespace DCT
             RepoItemInfo _clickokInfo;
             RepoItemInfo _clearprimaryInfo;
             RepoItemInfo _confirminvalidateInfo;
-            RepoItemInfo _entervisit_Info;
-            RepoItemInfo _e_subjectInfo;
+            RepoItemInfo _destinationvisitfieldInfo;
+            RepoItemInfo _destinationsubjectfieldInfo;
+            RepoItemInfo _nooptionsitemInfo;
 
             /// <summary>
             /// Creates a new DataCleaningTool  folder.
@@ -277,8 +278,9 @@ namespace DCT
                 _clickokInfo = new RepoItemInfo(this, "ClickOk", ".//button[#'move-selection-button-next']/span[@innertext='ok']", 30000, null, "4ac58619-4351-44b7-8087-c4e6656d9855");
                 _clearprimaryInfo = new RepoItemInfo(this, "ClearPrimary", ".//button[#'action-row-clear-primary-button']/span[@innertext='clear primary']", 30000, null, "e0ce542a-7e79-45b6-ba96-42c007565214");
                 _confirminvalidateInfo = new RepoItemInfo(this, "ConfirmInvalidate", ".//span[@innertext='confirm']", 30000, null, "6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2");
-                _entervisit_Info = new RepoItemInfo(this, "EnterVisit_", ".//label[@innertext='Visit']", 30000, null, "5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34");
-                _e_subjectInfo = new RepoItemInfo(this, "E_Subject", ".//label[@innertext='Subject']", 30000, null, "6bccceed-5896-4d21-9e92-2b50db29405f");
+                _destinationvisitfieldInfo = new RepoItemInfo(this, "DestinationVisitField", ".//label[@innertext='Visit']", 30000, null, "5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34");
+                _destinationsubjectfieldInfo = new RepoItemInfo(this, "DestinationSubjectField", ".//label[@innertext='Subject']", 30000, null, "6bccceed-5896-4d21-9e92-2b50db29405f");
+                _nooptionsitemInfo = new RepoItemInfo(this, "NoOptionsItem", ".//body//div//p[@innertext='No Options']", 30000, null, "596463e8-50fb-4832-8fe5-c3358e0a090d");
             }
 
             /// <summary>
@@ -618,50 +620,74 @@ namespace DCT
             }
 
             /// <summary>
-            /// The EnterVisit_ item.
+            /// The DestinationVisitField item.
             /// </summary>
             [RepositoryItem("5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34")]
-            public virtual Ranorex.LabelTag EnterVisit_
+            public virtual Ranorex.LabelTag DestinationVisitField
             {
                 get
                 {
-                    return _entervisit_Info.CreateAdapter<Ranorex.LabelTag>(true);
+                    return _destinationvisitfieldInfo.CreateAdapter<Ranorex.LabelTag>(true);
                 }
             }
 
             /// <summary>
-            /// The EnterVisit_ item info.
+            /// The DestinationVisitField item info.
             /// </summary>
             [RepositoryItemInfo("5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34")]
-            public virtual RepoItemInfo EnterVisit_Info
+            public virtual RepoItemInfo DestinationVisitFieldInfo
             {
                 get
                 {
-                    return _entervisit_Info;
+                    return _destinationvisitfieldInfo;
                 }
             }
 
             /// <summary>
-            /// The E_Subject item.
+            /// The DestinationSubjectField item.
             /// </summary>
             [RepositoryItem("6bccceed-5896-4d21-9e92-2b50db29405f")]
-            public virtual Ranorex.LabelTag E_Subject
+            public virtual Ranorex.LabelTag DestinationSubjectField
             {
                 get
                 {
-                    return _e_subjectInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                    return _destinationsubjectfieldInfo.CreateAdapter<Ranorex.LabelTag>(true);
                 }
             }
 
             /// <summary>
-            /// The E_Subject item info.
+            /// The DestinationSubjectField item info.
             /// </summary>
             [RepositoryItemInfo("6bccceed-5896-4d21-9e92-2b50db29405f")]
-            public virtual RepoItemInfo E_SubjectInfo
+            public virtual RepoItemInfo DestinationSubjectFieldInfo
             {
                 get
                 {
-                    return _e_subjectInfo;
+                    return _destinationsubjectfieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NoOptionsItem item.
+            /// </summary>
+            [RepositoryItem("596463e8-50fb-4832-8fe5-c3358e0a090d")]
+            public virtual Ranorex.PTag NoOptionsItem
+            {
+                get
+                {
+                    return _nooptionsitemInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NoOptionsItem item info.
+            /// </summary>
+            [RepositoryItemInfo("596463e8-50fb-4832-8fe5-c3358e0a090d")]
+            public virtual RepoItemInfo NoOptionsItemInfo
+            {
+                get
+                {
+                    return _nooptionsitemInfo;
                 }
             }
         }

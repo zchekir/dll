@@ -41,8 +41,7 @@ namespace DCT.RCC_Page
         /// </summary>
         public E_Subject()
         {
-            DCTSubject = "test";
-            DCTVisit = "Visit";
+            DCTSubject = "SC-7089";
         }
 
         /// <summary>
@@ -54,18 +53,6 @@ namespace DCT.RCC_Page
         }
 
 #region Variables
-
-        string _DCTVisit;
-
-        /// <summary>
-        /// Gets or sets the value of variable DCTVisit.
-        /// </summary>
-        [TestVariable("ebdbd210-ee97-4ffa-8fac-895ff919ef75")]
-        public string DCTVisit
-        {
-            get { return _DCTVisit; }
-            set { _DCTVisit = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable DCTSubject.
@@ -103,24 +90,13 @@ namespace DCT.RCC_Page
 
             Init();
 
-            //SubJect(DCTSubject);
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.E_Subject' at Center.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(2));
-            repo.DataCleaningTool.E_Subject.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTSubject' with focus on 'DataCleaningTool.E_Subject'.", repo.DataCleaningTool.E_SubjectInfo, new RecordItemIndex(3));
-            repo.DataCleaningTool.E_Subject.PressKeys(DCTSubject);
+            Try_Select_Subject(repo.DataCleaningTool.DestinationSubjectFieldInfo, repo.DataCleaningTool.NoOptionsItemInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(2));
             Keyboard.Press("{TAB}");
             Delay.Milliseconds(0);
             
