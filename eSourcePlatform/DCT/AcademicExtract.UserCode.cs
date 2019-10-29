@@ -33,5 +33,10 @@ namespace DCT
             // Your recording specific initialization code goes here.
         }
 
+        public void Report_Screenshot()
+        {
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false);
+        }
+
     }
 }

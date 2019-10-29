@@ -38,6 +38,7 @@ namespace RedCapCloud.SubjectsPage
         	Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'inputTagInfo' and assigning its value to variable 'TestIdentifier'.", inputTagInfo);
         	
         	while (!inputTagInfo.Exists(new Duration(30000))) {
+        		
         		Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}", 100);
         		
         		Delay.Duration(1500);

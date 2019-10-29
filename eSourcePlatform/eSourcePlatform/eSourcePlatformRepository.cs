@@ -27,6 +27,10 @@ namespace eSourcePlatform
     public partial class eSourcePlatformRepository : RepoGenBaseFolder
     {
         static eSourcePlatformRepository instance = new eSourcePlatformRepository();
+        eSourcePlatformRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
+        eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
+        eSourcePlatformRepositoryFolders.SignInAppFolder _signin;
+        eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
 
         /// <summary>
         /// Gets the singleton class instance representing the eSourcePlatformRepository element repository.
@@ -43,9 +47,37 @@ namespace eSourcePlatform
         public eSourcePlatformRepository() 
             : base("eSourcePlatformRepository", "/", null, 0, false, "d677fdb9-00e1-4467-9fce-a84c063e8bd0", ".\\RepositoryImages\\eSourcePlatformRepositoryd677fdb9.rximgres")
         {
+            _cogstatesolutionplatform = new eSourcePlatformRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
+            _signintoyouraccount = new eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder(this);
+            _signin = new eSourcePlatformRepositoryFolders.SignInAppFolder(this);
+            _academicextractorrpowerbi = new eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
         }
 
 #region Variables
+
+        string _RandNum = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("879361eb-5136-41f9-be52-87f679719de7")]
+        public string RandNum
+        {
+            get { return _RandNum; }
+            set { _RandNum = value; }
+        }
+
+        string _CSPUsername = "zchekir@cogstate.com";
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("f183ef80-f1e1-40df-acd7-5c4c0e17d549")]
+        public string CSPUsername
+        {
+            get { return _CSPUsername; }
+            set { _CSPUsername = value; }
+        }
 
 #endregion
 
@@ -60,6 +92,42 @@ namespace eSourcePlatform
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The CogstateSolutionPlatform folder.
+        /// </summary>
+        [RepositoryFolder("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
+        public virtual eSourcePlatformRepositoryFolders.CogstateSolutionPlatformAppFolder CogstateSolutionPlatform
+        {
+            get { return _cogstatesolutionplatform; }
+        }
+
+        /// <summary>
+        /// The SignInToYourAccount folder.
+        /// </summary>
+        [RepositoryFolder("c4703fa5-b020-43f6-b7f4-c199f9aebf8b")]
+        public virtual eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder SignInToYourAccount
+        {
+            get { return _signintoyouraccount; }
+        }
+
+        /// <summary>
+        /// The SignIn folder.
+        /// </summary>
+        [RepositoryFolder("df5f0e47-553e-4900-9a01-24ea165a5989")]
+        public virtual eSourcePlatformRepositoryFolders.SignInAppFolder SignIn
+        {
+            get { return _signin; }
+        }
+
+        /// <summary>
+        /// The AcademicExtractOrrPowerBI folder.
+        /// </summary>
+        [RepositoryFolder("bc4938ca-6b79-480d-9ccc-92591339c530")]
+        public virtual eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder AcademicExtractOrrPowerBI
+        {
+            get { return _academicextractorrpowerbi; }
+        }
     }
 
     /// <summary>
@@ -68,6 +136,348 @@ namespace eSourcePlatform
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class eSourcePlatformRepositoryFolders
     {
+        /// <summary>
+        /// The CogstateSolutionPlatformAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
+        public partial class CogstateSolutionPlatformAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _searchstudyInfo;
+            RepoItemInfo _clickstudyInfo;
+
+            /// <summary>
+            /// Creates a new CogstateSolutionPlatform  folder.
+            /// </summary>
+            public CogstateSolutionPlatformAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CogstateSolutionPlatform", "/dom[@domain='cgst-qc-orr.azurewebsites.net']", parentFolder, 30000, null, false, "edeb004d-d2f2-4a96-895f-472ccf97f10d", "")
+            {
+                _searchstudyInfo = new RepoItemInfo(this, "SearchStudy", ".//input[#'generic-search']", 30000, null, "896c64d8-c9d5-45d0-9c4a-21c793cde0ed");
+                _clickstudyInfo = new RepoItemInfo(this, "Clickstudy", ".//a[@innertext~'Orr']", 30000, null, "b7e9c226-23bf-40e1-9756-b817a2048676");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SearchStudy item.
+            /// </summary>
+            [RepositoryItem("896c64d8-c9d5-45d0-9c4a-21c793cde0ed")]
+            public virtual Ranorex.InputTag SearchStudy
+            {
+                get
+                {
+                    return _searchstudyInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SearchStudy item info.
+            /// </summary>
+            [RepositoryItemInfo("896c64d8-c9d5-45d0-9c4a-21c793cde0ed")]
+            public virtual RepoItemInfo SearchStudyInfo
+            {
+                get
+                {
+                    return _searchstudyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Clickstudy item.
+            /// </summary>
+            [RepositoryItem("b7e9c226-23bf-40e1-9756-b817a2048676")]
+            public virtual Ranorex.ATag Clickstudy
+            {
+                get
+                {
+                    return _clickstudyInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Clickstudy item info.
+            /// </summary>
+            [RepositoryItemInfo("b7e9c226-23bf-40e1-9756-b817a2048676")]
+            public virtual RepoItemInfo ClickstudyInfo
+            {
+                get
+                {
+                    return _clickstudyInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SignInToYourAccountAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c4703fa5-b020-43f6-b7f4-c199f9aebf8b")]
+        public partial class SignInToYourAccountAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _enterusernameInfo;
+
+            /// <summary>
+            /// Creates a new SignInToYourAccount  folder.
+            /// </summary>
+            public SignInToYourAccountAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SignInToYourAccount", "/dom[@domain='login.microsoftonline.com']", parentFolder, 30000, null, false, "c4703fa5-b020-43f6-b7f4-c199f9aebf8b", "")
+            {
+                _enterusernameInfo = new RepoItemInfo(this, "EnterUsername", ".//div[@innertext=$CSPUsername]", 30000, null, "1205ddd4-2c1f-4adc-b9a6-c358ac98e060");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c4703fa5-b020-43f6-b7f4-c199f9aebf8b")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c4703fa5-b020-43f6-b7f4-c199f9aebf8b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterUsername item.
+            /// </summary>
+            [RepositoryItem("1205ddd4-2c1f-4adc-b9a6-c358ac98e060")]
+            public virtual Ranorex.DivTag EnterUsername
+            {
+                get
+                {
+                    return _enterusernameInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterUsername item info.
+            /// </summary>
+            [RepositoryItemInfo("1205ddd4-2c1f-4adc-b9a6-c358ac98e060")]
+            public virtual RepoItemInfo EnterUsernameInfo
+            {
+                get
+                {
+                    return _enterusernameInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SignInAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("df5f0e47-553e-4900-9a01-24ea165a5989")]
+        public partial class SignInAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _passwordinputInfo;
+            RepoItemInfo _submitbuttonInfo;
+
+            /// <summary>
+            /// Creates a new SignIn  folder.
+            /// </summary>
+            public SignInAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SignIn", "/dom[@domain='login.cogstate.com']", parentFolder, 30000, null, false, "df5f0e47-553e-4900-9a01-24ea165a5989", "")
+            {
+                _passwordinputInfo = new RepoItemInfo(this, "PasswordInput", ".//input[#'passwordInput']", 30000, null, "87912f36-c022-4f39-998f-8d6a19ff5148");
+                _submitbuttonInfo = new RepoItemInfo(this, "SubmitButton", ".//span[#'submitButton']", 30000, null, "6e2e8192-7577-425c-8b00-ba3f06e9bf0f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("df5f0e47-553e-4900-9a01-24ea165a5989")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("df5f0e47-553e-4900-9a01-24ea165a5989")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PasswordInput item.
+            /// </summary>
+            [RepositoryItem("87912f36-c022-4f39-998f-8d6a19ff5148")]
+            public virtual Ranorex.InputTag PasswordInput
+            {
+                get
+                {
+                    return _passwordinputInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PasswordInput item info.
+            /// </summary>
+            [RepositoryItemInfo("87912f36-c022-4f39-998f-8d6a19ff5148")]
+            public virtual RepoItemInfo PasswordInputInfo
+            {
+                get
+                {
+                    return _passwordinputInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SubmitButton item.
+            /// </summary>
+            [RepositoryItem("6e2e8192-7577-425c-8b00-ba3f06e9bf0f")]
+            public virtual Ranorex.SpanTag SubmitButton
+            {
+                get
+                {
+                    return _submitbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubmitButton item info.
+            /// </summary>
+            [RepositoryItemInfo("6e2e8192-7577-425c-8b00-ba3f06e9bf0f")]
+            public virtual RepoItemInfo SubmitButtonInfo
+            {
+                get
+                {
+                    return _submitbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AcademicExtractOrrPowerBIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("bc4938ca-6b79-480d-9ccc-92591339c530")]
+        public partial class AcademicExtractOrrPowerBIAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clicklogoutInfo;
+            RepoItemInfo _signoutInfo;
+
+            /// <summary>
+            /// Creates a new AcademicExtractOrrPowerBI  folder.
+            /// </summary>
+            public AcademicExtractOrrPowerBIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AcademicExtractOrrPowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "bc4938ca-6b79-480d-9ccc-92591339c530", "")
+            {
+                _clicklogoutInfo = new RepoItemInfo(this, "ClickLogOut", ".//button[#'powerBIUserInfoBtn']/div", 30000, null, "0dbedd49-c821-437a-8cd1-bd9771a12f2f");
+                _signoutInfo = new RepoItemInfo(this, "SignOut", ".//div[#'cdk-overlay-0']/div//a[@innertext='Sign out']", 30000, null, "1ae4ff87-2bba-46fe-b5df-bec9c3fef842");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bc4938ca-6b79-480d-9ccc-92591339c530")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bc4938ca-6b79-480d-9ccc-92591339c530")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickLogOut item.
+            /// </summary>
+            [RepositoryItem("0dbedd49-c821-437a-8cd1-bd9771a12f2f")]
+            public virtual Ranorex.DivTag ClickLogOut
+            {
+                get
+                {
+                    return _clicklogoutInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickLogOut item info.
+            /// </summary>
+            [RepositoryItemInfo("0dbedd49-c821-437a-8cd1-bd9771a12f2f")]
+            public virtual RepoItemInfo ClickLogOutInfo
+            {
+                get
+                {
+                    return _clicklogoutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SignOut item.
+            /// </summary>
+            [RepositoryItem("1ae4ff87-2bba-46fe-b5df-bec9c3fef842")]
+            public virtual Ranorex.ATag SignOut
+            {
+                get
+                {
+                    return _signoutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SignOut item info.
+            /// </summary>
+            [RepositoryItemInfo("1ae4ff87-2bba-46fe-b5df-bec9c3fef842")]
+            public virtual RepoItemInfo SignOutInfo
+            {
+                get
+                {
+                    return _signoutInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

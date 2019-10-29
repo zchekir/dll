@@ -371,7 +371,7 @@ AAAASUVORK5CYII=
 			name="OpenRCCStudy"
 			refimgid="21318284-37c4-4b1e-9ed8-95358f6e014d"
 			searchtimeout="30000ms">
-				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext=$RCC_Study_Name]
+				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext=$RandNum]
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -490,6 +490,45 @@ qhfwOsMeFy7FWIHEk7PqCU0eMsNTa0eeRHCOWNenIQohUCFYv+PO87HLOpUvYVMM3ACJ2rVE8/v6
 I/67EPgCQ3D7PQ1pXlUAAAAASUVORK5CYII=
 				</image>
 				/dom[@domain='cgsqc.redcapcloud.com']//i[#'dataCollectionWidget_checkboxComplete']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="3b54ddb5-8585-49fe-92e8-cbcc70b6dc13"
+			name="AddSubject"
+			refimgid="1369d16d-696e-4bc3-9998-dfe1ae47d8e1"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseWidget_buttonCreateAdd']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyBaseWidget_buttonCreateAdd']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="9328280c-2573-49e2-a45f-27e9635d479a"
+			name="SitesButton"
+			refimgid="7d5f2f41-b6cf-456d-a233-b36c39c532ab"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'enrollWidget_comboSites_button']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//button[#'enrollWidget_comboSites_button']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="dead8fc1-6d55-4ecd-98eb-e5dc5365356e"
+			name="selectSite"
+			refimgid="31fba0cc-e7b7-4c71-9c52-f056e1288328"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//a[@innertext~'2019']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ed816dba-2dec-41ab-b191-edc9d053b81b"
+			name="SubjectNumber"
+			refimgid="e07a62a6-924c-4cdd-99c5-e283d11f2d06"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']
 			</item>
 			<basepath>
 				/dom[@domain='cgsqc.redcapcloud.com']
@@ -893,12 +932,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="68bbda1b-c9d6-44b8-972e-350252c24d17"
 		name="DCTSubject">
-			SC-7089
+			SC-70895555
 		</var>
 		<var
 		id="0a1f4511-792f-4cbf-818c-dcbe6257b7c8"
-		name="RCC_Study_Name">
-			zktest 0001
+		name="RandNum">
 		</var>
 		<var
 		id="4868fd53-f0cc-4bcc-ad64-84d67b341b4d"

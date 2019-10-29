@@ -99,7 +99,10 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.FirstVisit' at Center.", repo.REDCapCloud.SubjectsPage.FirstVisitInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(0));
+            Delay.Duration(20000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.FirstVisit' at Center.", repo.REDCapCloud.SubjectsPage.FirstVisitInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.FirstVisit.Click(100);
             Delay.Milliseconds(0);
             

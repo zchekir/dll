@@ -54,14 +54,26 @@ namespace DCT.RCC_Page
 
 #region Variables
 
+        string _RCC_Study_Name;
+
         /// <summary>
         /// Gets or sets the value of variable RCC_Study_Name.
         /// </summary>
         [TestVariable("7e849208-d2d3-4d04-9470-753f5d81f297")]
         public string RCC_Study_Name
         {
-            get { return repo.RCC_Study_Name; }
-            set { repo.RCC_Study_Name = value; }
+            get { return _RCC_Study_Name; }
+            set { _RCC_Study_Name = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("0a1f4511-792f-4cbf-818c-dcbe6257b7c8")]
+        public string RandNum
+        {
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
         }
 
 #endregion

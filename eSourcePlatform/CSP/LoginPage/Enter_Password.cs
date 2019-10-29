@@ -92,10 +92,13 @@ namespace CSP.LoginPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
+            Delay.Duration(1000, false);
+            
             Try_Enter_Password(repo.CogstateSSO.PasswordInputInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(2));
             Keyboard.Press("{Tab}", 1);
             Delay.Milliseconds(90);
             

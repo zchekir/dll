@@ -63,7 +63,7 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="50000ms"
+		duration="30000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -71,19 +71,22 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
+		<userrecorditem
+		classname="AcademicExtract"
 		enabled="True"
-		message=""
+		isexternaltestmethod="False"
+		methodname="Report_Screenshot"
+		namespace="DCT"
 		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="ee5bb2ed-9dfa-4649-8c9e-efa842d480bb">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</loggingrecorditem>
+			<arguments
+			id="985a5778-9c05-4182-86ed-9a6445daca47">
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

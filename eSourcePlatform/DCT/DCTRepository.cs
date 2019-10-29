@@ -71,7 +71,7 @@ namespace DCT
 
 #region Variables
 
-        string _DCTSubject = "SC-7089";
+        string _DCTSubject = "SC-70895555";
 
         /// <summary>
         /// Gets or sets the value of variable DCTSubject.
@@ -83,16 +83,16 @@ namespace DCT
             set { _DCTSubject = value; }
         }
 
-        string _RCC_Study_Name = "zktest 0001";
+        string _RandNum = "";
 
         /// <summary>
-        /// Gets or sets the value of variable RCC_Study_Name.
+        /// Gets or sets the value of variable RandNum.
         /// </summary>
         [TestVariable("0a1f4511-792f-4cbf-818c-dcbe6257b7c8")]
-        public string RCC_Study_Name
+        public string RandNum
         {
-            get { return _RCC_Study_Name; }
-            set { _RCC_Study_Name = value; }
+            get { return _RandNum; }
+            set { _RandNum = value; }
         }
 
         string _CSPDOM = "";
@@ -1013,6 +1013,10 @@ namespace DCT
             RepoItemInfo _loginapplybuttonInfo;
             RepoItemInfo _loginpasswordInfo;
             DataCollectionWidgetCheckboxCompleteInfoClass _datacollectionwidgetcheckboxcompleteInfo;
+            RepoItemInfo _addsubjectInfo;
+            RepoItemInfo _sitesbuttonInfo;
+            RepoItemInfo _selectsiteInfo;
+            RepoItemInfo _subjectnumberInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -1021,7 +1025,7 @@ namespace DCT
                     base("REDCapCloud", "/dom[@domain='cgsqc.redcapcloud.com']", parentFolder, 30000, null, false, "8c57a700-52e3-43b0-bb42-688fd9e5c8b2", "")
             {
                 _searchstudyinrccInfo = new RepoItemInfo(this, "SearchStudyInRCC", ".//input[#'filtersWidget_userInputWidget_studyName']", 30000, null, "1aaeabd0-d27c-4203-9346-f994a87bad37");
-                _openrccstudyInfo = new RepoItemInfo(this, "OpenRCCStudy", ".//div[@innertext=$RCC_Study_Name]", 30000, null, "e497ee0e-507a-42d4-8dbc-21b179383f59");
+                _openrccstudyInfo = new RepoItemInfo(this, "OpenRCCStudy", ".//div[@innertext=$RandNum]", 30000, null, "e497ee0e-507a-42d4-8dbc-21b179383f59");
                 _clicksubjectInfo = new RepoItemInfo(this, "ClickSubject", ".//div[#'leftMenuButtons_navSubjects']", 30000, null, "e5549fed-7e0e-4f0c-a146-6e802d0e81db");
                 _opensubjectInfo = new RepoItemInfo(this, "OpenSubject", ".//div[@innertext='screening']", 30000, null, "eae74a37-456a-4128-b4d8-a07f476da351");
                 _openevent_Info = new RepoItemInfo(this, "OpenEvent_", ".//div[@innertext='screening']", 30000, null, "e1819309-f7a5-4368-aa69-80d60e74fc27");
@@ -1033,6 +1037,10 @@ namespace DCT
                 _loginapplybuttonInfo = new RepoItemInfo(this, "LoginApplyButton", ".//button[#'login_applyButton']", 30000, null, "4a10d058-bb72-4a32-ab26-b56c3a0c5282");
                 _loginpasswordInfo = new RepoItemInfo(this, "LoginPassword", ".//input[#'login_password']", 30000, null, "ba64f708-3983-4c1b-bee1-8c60e98a4433");
                 _datacollectionwidgetcheckboxcompleteInfo = new DataCollectionWidgetCheckboxCompleteInfoClass(this);
+                _addsubjectInfo = new RepoItemInfo(this, "AddSubject", ".//button[#'studyBaseWidget_buttonCreateAdd']", 30000, null, "3b54ddb5-8585-49fe-92e8-cbcc70b6dc13");
+                _sitesbuttonInfo = new RepoItemInfo(this, "SitesButton", ".//button[#'enrollWidget_comboSites_button']", 30000, null, "9328280c-2573-49e2-a45f-27e9635d479a");
+                _selectsiteInfo = new RepoItemInfo(this, "selectSite", ".//a[@innertext~'2019']", 30000, null, "dead8fc1-6d55-4ecd-98eb-e5dc5365356e");
+                _subjectnumberInfo = new RepoItemInfo(this, "SubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "ed816dba-2dec-41ab-b191-edc9d053b81b");
             }
 
             /// <summary>
@@ -1403,6 +1411,102 @@ namespace DCT
                 get
                 {
                     return _datacollectionwidgetcheckboxcompleteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddSubject item.
+            /// </summary>
+            [RepositoryItem("3b54ddb5-8585-49fe-92e8-cbcc70b6dc13")]
+            public virtual Ranorex.ButtonTag AddSubject
+            {
+                get
+                {
+                    return _addsubjectInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddSubject item info.
+            /// </summary>
+            [RepositoryItemInfo("3b54ddb5-8585-49fe-92e8-cbcc70b6dc13")]
+            public virtual RepoItemInfo AddSubjectInfo
+            {
+                get
+                {
+                    return _addsubjectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SitesButton item.
+            /// </summary>
+            [RepositoryItem("9328280c-2573-49e2-a45f-27e9635d479a")]
+            public virtual Ranorex.ButtonTag SitesButton
+            {
+                get
+                {
+                    return _sitesbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SitesButton item info.
+            /// </summary>
+            [RepositoryItemInfo("9328280c-2573-49e2-a45f-27e9635d479a")]
+            public virtual RepoItemInfo SitesButtonInfo
+            {
+                get
+                {
+                    return _sitesbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The selectSite item.
+            /// </summary>
+            [RepositoryItem("dead8fc1-6d55-4ecd-98eb-e5dc5365356e")]
+            public virtual Ranorex.ATag selectSite
+            {
+                get
+                {
+                    return _selectsiteInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The selectSite item info.
+            /// </summary>
+            [RepositoryItemInfo("dead8fc1-6d55-4ecd-98eb-e5dc5365356e")]
+            public virtual RepoItemInfo selectSiteInfo
+            {
+                get
+                {
+                    return _selectsiteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SubjectNumber item.
+            /// </summary>
+            [RepositoryItem("ed816dba-2dec-41ab-b191-edc9d053b81b")]
+            public virtual Ranorex.InputTag SubjectNumber
+            {
+                get
+                {
+                    return _subjectnumberInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubjectNumber item info.
+            /// </summary>
+            [RepositoryItemInfo("ed816dba-2dec-41ab-b191-edc9d053b81b")]
+            public virtual RepoItemInfo SubjectNumberInfo
+            {
+                get
+                {
+                    return _subjectnumberInfo;
                 }
             }
         }

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="310c9589-c4c0-430f-9acb-89c4d0733fb5"
+mode="Global"
+rxversion="8.3">
+	<name>
+		PowerBILogin
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="PowerBILogin"
+	namespace="eSourcePlatform">
+	</codegen>
+	<variables>
+		<var
+		id="099a621f-a395-43ad-8ac3-1d5ce43dd49f"
+		name="CSPUsername">
+			zchekir@cogstate.com
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0b9241af-1ee6-4041-ab29-e94b5e731a42"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1205ddd4-2c1f-4adc-b9a6-c358ac98e060"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='login.microsoftonline.com']//div[@innertext=$CSPUsername]
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1b4df078-48fd-44ad-b314-173b9dd113af"
+	name="eSourcePlatformRepository"
+	relativepath="eSourcePlatformRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="eSourcePlatformRepository"
+		namespace="eSourcePlatform">
+		</codegen>
+		<rootfolder
+		id="d677fdb9-00e1-4467-9fce-a84c063e8bd0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		PowerBILogin.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

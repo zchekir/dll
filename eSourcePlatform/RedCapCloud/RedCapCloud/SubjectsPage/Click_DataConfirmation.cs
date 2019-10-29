@@ -89,11 +89,14 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.DataConfirmationCRF' at Center.", repo.REDCapCloud.SubjectsPage.DataConfirmationCRFInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(0));
+            Delay.Duration(20000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.DataConfirmationCRF' at Center.", repo.REDCapCloud.SubjectsPage.DataConfirmationCRFInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.DataConfirmationCRF.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery Data Confirmation') on item 'REDCapCloud.CogstateBatteryDataConfirmation'.", repo.REDCapCloud.CogstateBatteryDataConfirmationInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery Data Confirmation') on item 'REDCapCloud.CogstateBatteryDataConfirmation'.", repo.REDCapCloud.CogstateBatteryDataConfirmationInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.REDCapCloud.CogstateBatteryDataConfirmationInfo, "InnerText", "Cogstate Battery Data Confirmation");
             Delay.Milliseconds(100);
             

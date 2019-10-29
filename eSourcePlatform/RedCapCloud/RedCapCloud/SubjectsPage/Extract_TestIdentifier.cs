@@ -102,13 +102,16 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5m.", new RecordItemIndex(0));
+            Delay.Duration(90000, false);
+            
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.ReloadSiteDialog.SelfInfo, repo.ReloadSiteDialog.ReloadButtonInfo);
             Delay.Milliseconds(0);
             
             Get_value_TestIdentifier(repo.REDCapCloud.SitesTable.TestIdentifierInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(3));
             
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.ReloadSiteDialog.SelfInfo, repo.ReloadSiteDialog.ReloadButtonInfo);
             Delay.Milliseconds(0);

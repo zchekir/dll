@@ -44,6 +44,8 @@ namespace CSP.StudiesPage
             	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'SearchField'.", SearchField);
             	SearchField.FindAdapter<InputTag>().PressKeys(RandNum, 1);
             	Delay.Duration(1000);
+            	
+            	Report.Log(ReportLevel.Info, "studyname:" ,RandNum);
         	}
         	while (!SearchField.FindAdapter<InputTag>().Value.Contains(RandNum)); 	
         }

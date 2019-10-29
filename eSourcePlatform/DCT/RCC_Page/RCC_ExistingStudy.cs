@@ -41,7 +41,7 @@ namespace DCT.RCC_Page
         /// </summary>
         public RCC_ExistingStudy()
         {
-            RCC_Study_Name = "ZK";
+            RandNum = "";
         }
 
         /// <summary>
@@ -55,13 +55,13 @@ namespace DCT.RCC_Page
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable RCC_Study_Name.
+        /// Gets or sets the value of variable RandNum.
         /// </summary>
         [TestVariable("50b5218c-7c53-428d-8045-c82dd65fe5a3")]
-        public string RCC_Study_Name
+        public string RandNum
         {
-            get { return repo.RCC_Study_Name; }
-            set { repo.RCC_Study_Name = value; }
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
         }
 
 #endregion
@@ -98,8 +98,8 @@ namespace DCT.RCC_Page
             Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCC_Study_Name' with focus on 'REDCapCloud.SearchStudyInRCC'.", repo.REDCapCloud.SearchStudyInRCCInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SearchStudyInRCC.PressKeys(RCC_Study_Name);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'REDCapCloud.SearchStudyInRCC'.", repo.REDCapCloud.SearchStudyInRCCInfo, new RecordItemIndex(2));
+            repo.REDCapCloud.SearchStudyInRCC.PressKeys(RandNum);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));

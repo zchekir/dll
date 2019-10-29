@@ -79,6 +79,10 @@ namespace DCT
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.CogstateSolutionPlatform.Self, new Duration(0));
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
