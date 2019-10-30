@@ -33,5 +33,53 @@ namespace DCT.single_sign_in
             // Your recording specific initialization code goes here.
         }
 
+        public void Mouse_Click_EnterUseName(RepoItemInfo inputtagInfo)
+        {
+        	try{
+        		
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().Click();
+        	}
+        	
+        	catch ( Exception e){
+        		
+        		Report.Log(ReportLevel.Info, e.Message);
+        		
+        	}
+        }
+
+        public void Key_sequence_EnterUseName(RepoItemInfo inputtagInfo)
+        {
+           
+        	try{
+        	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPUsername' with focus on 'inputtagInfo'.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().PressKeys(CSPUsername);
+        	}
+        	
+        	catch ( Exception e){
+        		
+        		Report.Log(ReportLevel.Info, e.Message);
+        		
+        	}
+            
+            
+        }
+
+        public void Mouse_Click_ClickNext(RepoItemInfo inputtagInfo)
+        {
+        	try{
+        		
+        	
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().Click();
+        	}
+        	
+        	catch ( Exception e){
+        		
+        		Report.Log(ReportLevel.Info, e.Message);
+        		
+        	}
+        }
+
     }
 }

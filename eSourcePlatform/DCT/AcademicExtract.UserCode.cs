@@ -38,5 +38,15 @@ namespace DCT
             Report.Screenshot(ReportLevel.Info, "User", "", null, false);
         }
 
+        public void UserCodeMethod(RepoItemInfo argument1)
+        {
+        	while ( !argument1.Exists(new Duration(9000))) {
+        		
+        		Delay.Seconds(2);
+        	       	
+        	    Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
+        	    }
+        }
+
     }
 }

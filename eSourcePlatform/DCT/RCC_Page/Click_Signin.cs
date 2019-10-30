@@ -79,9 +79,8 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignIn.SubmitButton' at Center.", repo.SignIn.SubmitButtonInfo, new RecordItemIndex(0));
-            repo.SignIn.SubmitButton.Click();
-            Delay.Milliseconds(200);
+            Mouse_Click_SubmitButton(repo.SignIn.SubmitButtonInfo);
+            Delay.Milliseconds(0);
             
         }
 

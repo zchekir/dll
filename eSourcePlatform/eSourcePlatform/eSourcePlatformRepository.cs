@@ -31,6 +31,7 @@ namespace eSourcePlatform
         eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
         eSourcePlatformRepositoryFolders.SignInAppFolder _signin;
         eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
+        eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder _datacleaningtool;
 
         /// <summary>
         /// Gets the singleton class instance representing the eSourcePlatformRepository element repository.
@@ -51,6 +52,7 @@ namespace eSourcePlatform
             _signintoyouraccount = new eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder(this);
             _signin = new eSourcePlatformRepositoryFolders.SignInAppFolder(this);
             _academicextractorrpowerbi = new eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
+            _datacleaningtool = new eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder(this);
         }
 
 #region Variables
@@ -127,6 +129,15 @@ namespace eSourcePlatform
         public virtual eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder AcademicExtractOrrPowerBI
         {
             get { return _academicextractorrpowerbi; }
+        }
+
+        /// <summary>
+        /// The DataCleaningTool folder.
+        /// </summary>
+        [RepositoryFolder("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
+        public virtual eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder DataCleaningTool
+        {
+            get { return _datacleaningtool; }
         }
     }
 
@@ -474,6 +485,72 @@ namespace eSourcePlatform
                 get
                 {
                     return _signoutInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DataCleaningToolAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
+        public partial class DataCleaningToolAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _datacleaningtoolInfo;
+
+            /// <summary>
+            /// Creates a new DataCleaningTool  folder.
+            /// </summary>
+            public DataCleaningToolAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DataCleaningTool", "/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']", parentFolder, 30000, null, false, "0f325a6f-9a8f-4925-9166-b0d5ccb5d44b", "")
+            {
+                _datacleaningtoolInfo = new RepoItemInfo(this, "DataCleaningTool", ".//h2[@innertext='Data Cleaning Tool']", 30000, null, "4d3c9011-e18d-4ce0-a355-118cace1816b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DataCleaningTool item.
+            /// </summary>
+            [RepositoryItem("4d3c9011-e18d-4ce0-a355-118cace1816b")]
+            public virtual Ranorex.H2Tag DataCleaningTool
+            {
+                get
+                {
+                    return _datacleaningtoolInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DataCleaningTool item info.
+            /// </summary>
+            [RepositoryItemInfo("4d3c9011-e18d-4ce0-a355-118cace1816b")]
+            public virtual RepoItemInfo DataCleaningToolInfo
+            {
+                get
+                {
+                    return _datacleaningtoolInfo;
                 }
             }
         }

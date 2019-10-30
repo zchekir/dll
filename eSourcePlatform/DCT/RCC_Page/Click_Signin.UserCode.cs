@@ -33,5 +33,18 @@ namespace DCT.RCC_Page
             // Your recording specific initialization code goes here.
         }
 
+        public void Mouse_Click_SubmitButton(RepoItemInfo spantagInfo)
+        {
+        	try{
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", spantagInfo);
+            spantagInfo.FindAdapter<SpanTag>().Click();
+        	}
+        	
+        	catch ( Exception e){
+        		Report.Log(ReportLevel.Info, e.Message);
+        		
+        	}
+        }
+
     }
 }

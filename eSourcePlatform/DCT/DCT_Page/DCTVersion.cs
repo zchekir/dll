@@ -114,9 +114,9 @@ namespace DCT.DCT_Page
             DCT_V_Validation(ExpectedDCTVersion);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Rkey}{LControlKey up}'.", new RecordItemIndex(3));
-            Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Rkey}{LControlKey up}'.", new RecordItemIndex(3));
+            //Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}");
+            //Delay.Milliseconds(0);
             
         }
 

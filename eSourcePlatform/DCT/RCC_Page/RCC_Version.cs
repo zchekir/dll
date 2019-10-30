@@ -92,23 +92,31 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 18s.", new RecordItemIndex(0));
-            Delay.Duration(18000, false);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShallConsol' at Center.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(0));
+            //repo.KuduServices.PowerShallConsol.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShallConsol' at Center.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(1));
-            repo.KuduServices.PowerShallConsol.Click();
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCVersionQuery_' with focus on 'KuduServices.PowerShallConsol'.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(1));
+            //repo.KuduServices.PowerShallConsol.PressKeys(RCCVersionQuery_);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.rcc_hubPowerShall' at Center.", repo.KuduServices.rcc_hubPowerShallInfo, new RecordItemIndex(3));
+            repo.KuduServices.rcc_hubPowerShall.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCVersionQuery_' with focus on 'KuduServices.PowerShallConsol'.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(2));
-            repo.KuduServices.PowerShallConsol.PressKeys(RCCVersionQuery_);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCVersionQuery_' with focus on 'KuduServices.rcc_hubPowerShall'.", repo.KuduServices.rcc_hubPowerShallInfo, new RecordItemIndex(4));
+            repo.KuduServices.rcc_hubPowerShall.PressKeys(RCCVersionQuery_);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(5));
             Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(6));
+            Delay.Duration(5000, false);
             
         }
 

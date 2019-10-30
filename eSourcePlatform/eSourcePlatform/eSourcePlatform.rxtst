@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1635,6 +1635,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="90f4f299-9d02-443e-9018-b945674827fb"
+			name="Close_DCT"
+			ref="2569b4ed-6164-49fa-89df-a5b2c98e2608"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9127bd4e-9442-44a3-a57b-d772b8cb6de2"
 			name="E_Subject"
 			ref="6ba8d2d0-d8f5-489f-8747-9690991ebcc3"
@@ -2451,7 +2457,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="">
+					value="3237922f-8da5-4777-9faf-91462115c77f">
 					</param>
 					<param
 					name="Key"
@@ -2487,7 +2493,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="ExpectedDCTVersion"
-					value="1.2.0-rc.981 ">
+					value="1.2.0-rc.981">
 					</param>
 					<param
 					name="RCCVersionQuery "
@@ -3877,6 +3883,90 @@ rxversion="8.3">
 								id="c9dffa5f-dfa6-4ee4-a9bc-be1f32bec142"
 								name="Confirmation">
 								</testmodule>
+								<testmodule
+								id="90f4f299-9d02-443e-9018-b945674827fb"
+								name="Close_DCT">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
+						name="CSP_Client_and_Server_versionValidation">
+							<testcase
+							id="7b36cbf5-ea65-4477-8761-85c48415c8f2"
+							name="Software_Version">
+								<testmodule
+								id="ada6c38d-fd39-4d51-96fc-493b0c32d98e"
+								name="Verify_Version_Deployed">
+								</testmodule>
+								<testmodule
+								id="c7a8b3fc-bf23-4dc9-9148-8df65082e79d"
+								name="Verify_Version_Client">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="a1466124-6b75-4495-a467-58b136e9ff61"
+						name="PowrBI_Report">
+							<setup
+							id="66124a66-4fab-4731-9c10-38cf17c743f3"
+							name="setup">
+								<testmodule
+								id="3a08cdf7-980c-4aab-822e-c0ceaf01c72c"
+								name="Open_Browser">
+								</testmodule>
+								<modulegroup
+								id="d55c9927-84f5-4590-97e9-c0c7d94f7e45"
+								name="Login">
+								</modulegroup>
+							</setup>
+							<testcase
+							id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51"
+							name="OpenStudy">
+								<testmodule
+								id="6b3c9c40-39da-4d02-a759-818d87d97393"
+								name="Select_Study">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="74b14ff2-2e2d-4645-9433-b3321e3c9563"
+							name="OpenReportTab">
+								<testmodule
+								id="eefd6180-416c-42f4-8ff7-5d8166adae6e"
+								name="ReportTab">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="56f6d406-e690-4aa6-b4a9-38e641d4b26a"
+							name="OpenAcademic_Extract">
+								<testmodule
+								id="e78ac30e-eaab-4e4e-95a1-2e843db7a5ad"
+								name="AcademicExtract">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="6da0ff48-e922-48ba-9742-4fdfccffd0f5"
+							name="LogInPowerBI">
+								<testmodule
+								id="e58adfc3-8dbf-449a-ab6b-dea47494bf3b"
+								name="PowerBILogin">
+								</testmodule>
+								<testmodule
+								id="41ea5415-9a7e-4fea-8b2a-de85409416ec"
+								name="PowerBIPassword">
+								</testmodule>
+								<testmodule
+								id="b8e5c25e-bebc-4548-a7cf-546909876677"
+								name="ClickNext">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="eb2b9d4f-178e-48da-8001-d67b6cf03aff"
+							name="PowerBI_Logout">
+								<testmodule
+								id="3ed31a81-0148-4688-8927-cf4eb92cf9cc"
+								name="Logout">
+								</testmodule>
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
@@ -3976,86 +4066,6 @@ rxversion="8.3">
 								<testmodule
 								id="8b52cf35-84a0-4b6a-9aaf-cc4103ba310a"
 								name="Logout_Azure">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
-						name="CSP_Client_and_Server_versionValidation">
-							<testcase
-							id="7b36cbf5-ea65-4477-8761-85c48415c8f2"
-							name="Software_Version">
-								<testmodule
-								id="ada6c38d-fd39-4d51-96fc-493b0c32d98e"
-								name="Verify_Version_Deployed">
-								</testmodule>
-								<testmodule
-								id="c7a8b3fc-bf23-4dc9-9148-8df65082e79d"
-								name="Verify_Version_Client">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="a1466124-6b75-4495-a467-58b136e9ff61"
-						name="PowrBI_Report">
-							<setup
-							id="66124a66-4fab-4731-9c10-38cf17c743f3"
-							name="setup">
-								<testmodule
-								id="3a08cdf7-980c-4aab-822e-c0ceaf01c72c"
-								name="Open_Browser">
-								</testmodule>
-								<modulegroup
-								id="d55c9927-84f5-4590-97e9-c0c7d94f7e45"
-								name="Login">
-								</modulegroup>
-							</setup>
-							<testcase
-							id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51"
-							name="OpenStudy">
-								<testmodule
-								id="6b3c9c40-39da-4d02-a759-818d87d97393"
-								name="Select_Study">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="74b14ff2-2e2d-4645-9433-b3321e3c9563"
-							name="OpenReportTab">
-								<testmodule
-								id="eefd6180-416c-42f4-8ff7-5d8166adae6e"
-								name="ReportTab">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="56f6d406-e690-4aa6-b4a9-38e641d4b26a"
-							name="OpenAcademic_Extract">
-								<testmodule
-								id="e78ac30e-eaab-4e4e-95a1-2e843db7a5ad"
-								name="AcademicExtract">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="6da0ff48-e922-48ba-9742-4fdfccffd0f5"
-							name="LogInPowerBI">
-								<testmodule
-								id="e58adfc3-8dbf-449a-ab6b-dea47494bf3b"
-								name="PowerBILogin">
-								</testmodule>
-								<testmodule
-								id="41ea5415-9a7e-4fea-8b2a-de85409416ec"
-								name="PowerBIPassword">
-								</testmodule>
-								<testmodule
-								id="b8e5c25e-bebc-4548-a7cf-546909876677"
-								name="ClickNext">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="eb2b9d4f-178e-48da-8001-d67b6cf03aff"
-							name="PowerBI_Logout">
-								<testmodule
-								id="3ed31a81-0148-4688-8927-cf4eb92cf9cc"
-								name="Logout">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -4383,9 +4393,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="68ffcef6-9f39-4bb8-bad5-b8883246139c">
-			</testcontainer>
-			<testcontainer
-			id="6da0ff48-e922-48ba-9742-4fdfccffd0f5">
 			</testcontainer>
 			<testcontainer
 			id="70634e69-921c-470b-b1ae-76608669f350">

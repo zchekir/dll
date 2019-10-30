@@ -83,6 +83,9 @@ namespace DCT.Azure
             repo.KuduServices.PowerShell.Click();
             Delay.Milliseconds(200);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(1));
+            Delay.Duration(4000, false);
+            
         }
 
 #region Image Feature Data

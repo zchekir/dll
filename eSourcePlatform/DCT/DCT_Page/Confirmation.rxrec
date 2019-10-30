@@ -243,10 +243,32 @@ iigAooooA//Z
 			<matchvalue>
 			</matchvalue>
 		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="8d416bf2-7afe-419b-8054-5e322e4f83bb">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<closeapprecorditem
-		enabled="False"
+		enabled="True"
 		graceperiod="0ms"
-		method="KillProcess"
+		method="CloseWindow"
 		optional="False"
 		searchpropertyid="e0b054a6-febb-40b9-ae21-81b28b36b5b4">
 			<comment>
@@ -261,19 +283,15 @@ iigAooooA//Z
 				</path>
 			</info>
 		</closeapprecorditem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
+		<explicitdelayitem
+		duration="500ms"
 		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="8d416bf2-7afe-419b-8054-5e322e4f83bb">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</loggingrecorditem>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

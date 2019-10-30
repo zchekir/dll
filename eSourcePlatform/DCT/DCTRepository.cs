@@ -39,6 +39,7 @@ namespace DCT
         DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder _dashboardoctopusdeploygooglechro;
         DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
         DCTRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
+        DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -67,6 +68,7 @@ namespace DCT
             _dashboardoctopusdeploygooglechro = new DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder(this);
             _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
             _cogstatesolutionplatform = new DCTRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
+            _academicextractorrpowerbi = new DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
         }
 
 #region Variables
@@ -227,6 +229,15 @@ namespace DCT
         public virtual DCTRepositoryFolders.CogstateSolutionPlatformAppFolder CogstateSolutionPlatform
         {
             get { return _cogstatesolutionplatform; }
+        }
+
+        /// <summary>
+        /// The AcademicExtractOrrPowerBI folder.
+        /// </summary>
+        [RepositoryFolder("f1e3226f-4e04-44a6-8973-7f7dc740f469")]
+        public virtual DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder AcademicExtractOrrPowerBI
+        {
+            get { return _academicextractorrpowerbi; }
         }
     }
 
@@ -1958,6 +1969,7 @@ namespace DCT
             RepoItemInfo _logoutInfo;
             RepoItemInfo _dctvalidationversionInfo;
             RepoItemInfo _rcchubvalidationInfo;
+            RepoItemInfo _rcc_hubpowershallInfo;
 
             /// <summary>
             /// Creates a new KuduServices  folder.
@@ -1972,6 +1984,7 @@ namespace DCT
                 _logoutInfo = new RepoItemInfo(this, "Logout", ".//a[@innertext='Logout']", 30000, null, "bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae");
                 _dctvalidationversionInfo = new RepoItemInfo(this, "DCTValidationVersion", ".//div[@innertext~'1.2']", 30000, null, "49370b0d-946f-4152-89ea-e31cf4c37984");
                 _rcchubvalidationInfo = new RepoItemInfo(this, "RCCHubValidation", ".//div[@innertext~'2.0.0-rc']", 30000, null, "ed9435cd-5012-46e1-a260-05d5ba9de604");
+                _rcc_hubpowershallInfo = new RepoItemInfo(this, "rcc_hubPowerShall", ".//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span", 30000, null, "87776a16-3265-49f0-8531-9f13f44dcc65");
             }
 
             /// <summary>
@@ -2165,6 +2178,30 @@ namespace DCT
                     return _rcchubvalidationInfo;
                 }
             }
+
+            /// <summary>
+            /// The rcc_hubPowerShall item.
+            /// </summary>
+            [RepositoryItem("87776a16-3265-49f0-8531-9f13f44dcc65")]
+            public virtual Ranorex.SpanTag rcc_hubPowerShall
+            {
+                get
+                {
+                    return _rcc_hubpowershallInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rcc_hubPowerShall item info.
+            /// </summary>
+            [RepositoryItemInfo("87776a16-3265-49f0-8531-9f13f44dcc65")]
+            public virtual RepoItemInfo rcc_hubPowerShallInfo
+            {
+                get
+                {
+                    return _rcc_hubpowershallInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -2281,6 +2318,72 @@ namespace DCT
                 get
                 {
                     return _clickoutInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AcademicExtractOrrPowerBIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("f1e3226f-4e04-44a6-8973-7f7dc740f469")]
+        public partial class AcademicExtractOrrPowerBIAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _protocolidInfo;
+
+            /// <summary>
+            /// Creates a new AcademicExtractOrrPowerBI  folder.
+            /// </summary>
+            public AcademicExtractOrrPowerBIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AcademicExtractOrrPowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "f1e3226f-4e04-44a6-8973-7f7dc740f469", "")
+            {
+                _protocolidInfo = new RepoItemInfo(this, "ProtocolID", ".//div[@title='ProtocolID']", 30000, null, "f8c22779-29ad-4dfc-a968-f2174074c356");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f1e3226f-4e04-44a6-8973-7f7dc740f469")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f1e3226f-4e04-44a6-8973-7f7dc740f469")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolID item.
+            /// </summary>
+            [RepositoryItem("f8c22779-29ad-4dfc-a968-f2174074c356")]
+            public virtual Ranorex.DivTag ProtocolID
+            {
+                get
+                {
+                    return _protocolidInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolID item info.
+            /// </summary>
+            [RepositoryItemInfo("f8c22779-29ad-4dfc-a968-f2174074c356")]
+            public virtual RepoItemInfo ProtocolIDInfo
+            {
+                get
+                {
+                    return _protocolidInfo;
                 }
             }
         }

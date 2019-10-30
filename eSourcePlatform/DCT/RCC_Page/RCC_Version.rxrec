@@ -33,20 +33,11 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="18000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -69,7 +60,7 @@ rxversion="8.3">
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="100ms"
 		searchpropertyid="630cb3e5-9d12-4414-8f7c-c84a56b5825c">
@@ -89,6 +80,138 @@ rxversion="8.3">
 				</path>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="07646610-a325-427d-9bc2-92c5be95fddb"
+		sx="482"
+		sy="843"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="87776a16-3265-49f0-8531-9f13f44dcc65"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="478,835,8,17"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jquery-console-cursor
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="e1396999-bcc3-4b22-a425-45ae6c0491eb">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="RCCVersionQuery_">
+				</binding>
+			</bindings>
+			<info
+			id="87776a16-3265-49f0-8531-9f13f44dcc65"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="478,835,8,17"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jquery-console-cursor
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span
+				</path>
+			</info>
+		</keysequenceitem>
 		<keysequenceitem
 		KeySequence="{ENTER}"
 		duration="100ms"
@@ -102,7 +225,7 @@ rxversion="8.3">
 			</bindings>
 		</keysequenceitem>
 		<explicitdelayitem
-		duration="2000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>

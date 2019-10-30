@@ -30,7 +30,7 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<explicitdelayitem
-		duration="900ms"
+		duration="500ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -63,14 +63,96 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="90000ms"
-		enabled="True"
+		duration="300000ms"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="AcademicExtract"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="UserCodeMethod"
+		namespace="DCT"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="dc2284fc-5636-46ac-9245-1390794dab2d">
+				<argument
+				argname="argument1"
+				id="9c287ac8-0927-4027-b4d1-c1a6430ec3d7">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f8c22779-29ad-4dfc-a968-f2174074c356"
+					sourcename="RepositoryEditor">
+						<element
+						capabilities="webelement, divtag"
+						dontcache="True"
+						enabled="True"
+						flavor="chromeweb"
+						hasfocus="False"
+						index="0"
+						prefcap="divtag"
+						rect="280,223,110,26"
+						role="unknown"
+						snapElem=""
+						valid="True"
+						visible="True">
+							<attribute
+							name="class"
+							type="System.String">
+								pivotTableCellWrap cell-interactive&#32;
+							</attribute>
+							<attribute
+							name="draggable"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="hidden"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="innertext"
+							type="System.String">
+								ProtocolID
+							</attribute>
+							<attribute
+							name="tagname"
+							type="System.String">
+								div
+							</attribute>
+							<attribute
+							name="title"
+							type="System.String">
+								ProtocolID
+							</attribute>
+							<dynamicattribute
+							description="Dynamic HTML attribute."
+							name="style"
+							readonly="False"
+							type="System.String">
+							</dynamicattribute>
+						</element>
+						<path>
+							/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[1]/div[2]/div/div[1]/div[@title='ProtocolID']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="AcademicExtract"
 		enabled="True"

@@ -79,15 +79,18 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(0));
-            Delay.Duration(900, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AcademicExtract' at Center.", repo.CogstateSolutionPlatform.AcademicExtractInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AcademicExtract.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5m.", new RecordItemIndex(2));
-            Delay.Duration(90000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5m.", new RecordItemIndex(2));
+            //Delay.Duration(300000, false);
+            
+            UserCodeMethod(repo.AcademicExtractOrrPowerBI.ProtocolIDInfo);
+            Delay.Milliseconds(0);
             
             Report_Screenshot();
             Delay.Milliseconds(0);

@@ -45,134 +45,38 @@ rxversion="8.3">
 			id="8243c435-112c-4180-ab73-68c8553fa0fb">
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="ClickNo"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_IdBtnBack"
+		namespace="DCT.single_sign_in"
 		optional="False"
-		searchpropertyid="f0f6dea8-aa80-42dd-8b79-c9016c61e00c"
-		sx="970"
-		sy="693"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, inputtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="916,677,108,32"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						btn btn-block
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						idBtn_Back
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						input
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						No
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="checked"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="height"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						20
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						button
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						No
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-bind"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='login.microsoftonline.com']//input[#'idBtn_Back']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="1f665d33-e4e0-4605-8d79-98681340905b">
+				<argument
+				argname="inputtagInfo"
+				id="fa9952c5-c9c0-4b45-936e-09f0c4bee9aa">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//input[#'idBtn_Back']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<closeapprecorditem
 		enabled="False"
 		graceperiod="0ms"

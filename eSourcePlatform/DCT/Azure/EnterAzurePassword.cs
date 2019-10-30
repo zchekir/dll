@@ -92,8 +92,7 @@ namespace DCT.Azure
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OctopusPassword' with focus on 'SignIn.PasswordInput'.", repo.SignIn.PasswordInputInfo, new RecordItemIndex(0));
-            repo.SignIn.PasswordInput.PressKeys(OctopusPassword);
+            Key_sequence_PasswordInput(repo.SignIn.PasswordInputInfo);
             Delay.Milliseconds(0);
             
         }

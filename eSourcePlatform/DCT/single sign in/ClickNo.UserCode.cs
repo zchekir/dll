@@ -50,5 +50,19 @@ namespace DCT.single_sign_in
             }
         }
 
+        public void Mouse_Click_IdBtnBack(RepoItemInfo inputtagInfo)
+        {
+        	
+        	try{
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().Click();
+        	}
+        	
+        	catch ( Exception e){
+        		Report.Log(ReportLevel.Info, e.Message);
+        		
+        	}
+        }
+
     }
 }

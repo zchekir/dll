@@ -29,30 +29,38 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Click_Signin"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_SubmitButton"
+		namespace="DCT.RCC_Page"
 		optional="False"
-		searchpropertyid="90d0452d-ba64-49fd-a8fc-08ae4245230b"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="b35f274a-818c-48ad-9a9d-770748bd0a29"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='login.cogstate.com']//span[#'submitButton']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="5c7cf1ac-974d-4de4-afb7-95ebcd51096d">
+				<argument
+				argname="spantagInfo"
+				id="245c9950-eb8b-47e5-aeba-24607e60c3cd">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="b35f274a-818c-48ad-9a9d-770748bd0a29"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.cogstate.com']//span[#'submitButton']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
