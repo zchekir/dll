@@ -102,8 +102,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="CSPConnector"
 			id="07b1497f-1800-41a7-82af-df13658d7807"
-			name="PowrBI_Report1">
+			maxrange="0"
+			minrange="0"
+			name="PowrBI_Report">
 			</smartfoldernode>
 			<smartfoldernode
 			id="08010772-2a6d-489b-aca2-c618ceb9b0ad"
@@ -751,6 +755,12 @@ rxversion="8.3">
 					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
 					variablename="CSPURL">
 					</var>
+					<var
+					dataname="Browser"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="daa00f9e-5818-40a1-a038-7de381bf08b9"
+					variablename="Browser">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -779,7 +789,7 @@ rxversion="8.3">
 					dataname="VersionDeployed"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
-					variablename="Server">
+					variablename="Version">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2219,7 +2229,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
-			datasource="CSPauthentication"
 			id="88e26bbc-4b38-4b28-b52f-bc5a9ddfc998"
 			name="LogInPowerBI">
 			</testcase>
@@ -2393,7 +2402,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="CSPUsername"
-					datasourceid="877cfc02-c58b-41d6-8a8e-e729a4ceb125"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="099a621f-a395-43ad-8ac3-1d5ce43dd49f"
 					variablename="CSPUsername">
 					</var>
@@ -3200,6 +3209,18 @@ rxversion="8.3">
 					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="CSPUsername"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
+					variablename="CSPPassword">
+					</var>
 				</databinding>
 			</modulegroup>
 			<testmodule
@@ -3478,12 +3499,6 @@ rxversion="8.3">
 					variableid="20d68c2c-2be2-45b9-82cc-82e44ec453b2"
 					variablename="AzureURL">
 					</var>
-					<var
-					dataname="Browser"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1"
-					variablename="AzureBrowser">
-					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -3569,12 +3584,6 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="20d68c2c-2be2-45b9-82cc-82e44ec453b2"
 					variablename="AzureURL">
-					</var>
-					<var
-					dataname="Browser"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1"
-					variablename="AzureBrowser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3880,7 +3889,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCPassword"
+					dataname="CSPPassword"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="11dfded3-32bc-4fcd-a241-3256d5ec7ff5"
 					variablename="CSPPassword">
@@ -5594,7 +5603,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="07b1497f-1800-41a7-82af-df13658d7807"
-						name="PowrBI_Report1">
+						name="PowrBI_Report">
 							<setup
 							id="9064271f-b62b-4f3a-98f2-d515d849d9d0"
 							name="setup">
@@ -5759,81 +5768,6 @@ rxversion="8.3">
 			</maskedcolumns>
 			<file>
 				..\eSourcePlatform\Authentication.csv
-			</file>
-		</DataSource>
-		<DataSource
-		id="877cfc02-c58b-41d6-8a8e-e729a4ceb125"
-		includefile="Checked"
-		lastknownrowcount="3"
-		name="CSPauthentication"
-		type="Ranorex.Core.Data.CsvDataConnector"
-		withheaders="True">
-			<lastknowncolumns>
-				<column>
-					RCCUsername
-				</column>
-				<column>
-					RCCPassword
-				</column>
-				<column>
-					CSPUsername
-				</column>
-				<column>
-					CSPPassword
-				</column>
-				<column>
-					dbUsername
-				</column>
-				<column>
-					dbPassword
-				</column>
-				<column>
-					GmailAddress
-				</column>
-				<column>
-					GmailPassword
-				</column>
-				<column>
-					Subject
-				</column>
-				<column>
-					Body
-				</column>
-				<column>
-					To
-				</column>
-				<column>
-					From
-				</column>
-				<column>
-					ServerHostname
-				</column>
-				<column>
-					ServerPort
-				</column>
-				<column>
-					UseSSL
-				</column>
-				<column>
-					SendEmailOnFailure
-				</column>
-				<column>
-					SendEmailOnSuccess
-				</column>
-				<column>
-					SendZippedReportOnComplete
-				</column>
-				<column>
-					SendPdfReportOnComplete
-				</column>
-				<column>
-					Browser
-				</column>
-			</lastknowncolumns>
-			<maskedcolumns>
-			</maskedcolumns>
-			<file>
-				Authentication.csv
 			</file>
 		</DataSource>
 		<DataSource

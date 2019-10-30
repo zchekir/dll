@@ -23,7 +23,7 @@ namespace PowerBI
     /// The class representing the PowerBIRepository element repository.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
-    [RepositoryFolder("e7f59ece-f205-4bd6-886a-c343402452dd")]
+    [RepositoryFolder("43827a98-a224-4263-8e1e-7707941c1718")]
     public partial class PowerBIRepository : RepoGenBaseFolder
     {
         static PowerBIRepository instance = new PowerBIRepository();
@@ -31,7 +31,7 @@ namespace PowerBI
         /// <summary>
         /// Gets the singleton class instance representing the PowerBIRepository element repository.
         /// </summary>
-        [RepositoryFolder("e7f59ece-f205-4bd6-886a-c343402452dd")]
+        [RepositoryFolder("43827a98-a224-4263-8e1e-7707941c1718")]
         public static PowerBIRepository Instance
         {
             get { return instance; }
@@ -41,7 +41,7 @@ namespace PowerBI
         /// Repository class constructor.
         /// </summary>
         public PowerBIRepository() 
-            : base("PowerBIRepository", "/", null, 0, false, "e7f59ece-f205-4bd6-886a-c343402452dd", ".\\RepositoryImages\\PowerBIRepositorye7f59ece.rximgres")
+            : base("PowerBIRepository", "/", null, 0, false, "43827a98-a224-4263-8e1e-7707941c1718", ".\\RepositoryImages\\PowerBIRepository43827a98.rximgres")
         {
         }
 
@@ -52,7 +52,7 @@ namespace PowerBI
         /// <summary>
         /// The Self item info.
         /// </summary>
-        [RepositoryItemInfo("e7f59ece-f205-4bd6-886a-c343402452dd")]
+        [RepositoryItemInfo("43827a98-a224-4263-8e1e-7707941c1718")]
         public virtual RepoItemInfo SelfInfo
         {
             get

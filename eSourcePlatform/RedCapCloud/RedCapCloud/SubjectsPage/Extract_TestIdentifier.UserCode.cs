@@ -37,11 +37,26 @@ namespace RedCapCloud.SubjectsPage
         {
         	Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'inputTagInfo' and assigning its value to variable 'TestIdentifier'.", inputTagInfo);
         	
-        	while (!inputTagInfo.Exists(new Duration(30000))) {
+        	while (!inputTagInfo.Exists(new Duration(10000))) {
         		
-        		Keyboard.Press("{LControlKey down}{Rkey}{LControlKey up}", 100);
+        		//If TestIdentifier is not found, we need to go back to the subjects menu, select the subject,
+        		//select the visit and select the CRF again. If we simply sit at the DataConfirmationCRF page and refresh it,
+        		//the CRF is locked and the TestIdentifier may never come throug
+        		Report.Log(ReportLevel.Info, "Click", "Mouse Click on Subjects button", new RecordItemIndex(0));
+        		repo.REDCapCloud.SubjectsButton.Click(Location.Center, 500);
         		
-        		Delay.Duration(1500);
+        		Report.Log(ReportLevel.Info, "Click", "Mouse click on Subject", new RecordItemIndex(1));
+        		repo.REDCapCloud.SubjectsPage.Subject.Click(Location.Center, 500);
+        		
+        		Report.Log(ReportLevel.Info, "Click", "Mouse click on FirstVisit", new RecordItemIndex(2));
+        		repo.REDCapCloud.SubjectsPage.FirstVisit.Click(Location.Center, 500);
+
+        		Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5m.", new RecordItemIndex(3));
+                Delay.Duration(90000, false);
+        		
+        		Report.Log(ReportLevel.Info, "Click", "Mouse click on DataConfirmationCRF", new RecordItemIndex(4));
+        		repo.REDCapCloud.SubjectsPage.DataConfirmationCRF.Click();
+        			
         	}
             
             TestIdentifier = inputTagInfo.FindAdapter<InputTag>().Element.GetAttributeValueText("Value");

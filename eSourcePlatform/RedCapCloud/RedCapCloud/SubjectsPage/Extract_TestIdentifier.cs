@@ -76,6 +76,26 @@ namespace RedCapCloud.SubjectsPage
             set { repo.DOM = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("b03a9d83-6871-47ac-8161-ba9bba2e3f0d")]
+        public string RandNum
+        {
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable EventDefName.
+        /// </summary>
+        [TestVariable("11da9ff3-46e5-4db0-8f94-1b1b60cecde6")]
+        public string EventDefName
+        {
+            get { return repo.EventDefName; }
+            set { repo.EventDefName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -102,16 +122,13 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5m.", new RecordItemIndex(0));
-            Delay.Duration(90000, false);
-            
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.ReloadSiteDialog.SelfInfo, repo.ReloadSiteDialog.ReloadButtonInfo);
             Delay.Milliseconds(0);
             
             Get_value_TestIdentifier(repo.REDCapCloud.SitesTable.TestIdentifierInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(2));
             
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.ReloadSiteDialog.SelfInfo, repo.ReloadSiteDialog.ReloadButtonInfo);
             Delay.Milliseconds(0);

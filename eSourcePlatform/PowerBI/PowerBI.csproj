@@ -1,17 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{69CF2950-8ADB-4F32-A8EA-972649FB6395}</ProjectGuid>
+    <ProjectGuid>{A29987E5-C0A8-4318-83D3-98636C7AE121}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>PowerBI</RootNamespace>
     <AssemblyName>PowerBI</AssemblyName>
     <RanorexVersion>8.3</RanorexVersion>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
-    <projectdefaultrepository>7b34c3b5-5ebd-4dae-8706-0dba345a3272</projectdefaultrepository>
+    <projectdefaultrepository>7047d7ab-a1cc-4908-a0db-459f3e9ddeb5</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -20,6 +34,7 @@
     <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -29,10 +44,10 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="engine">
+      <HintPath>..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -113,49 +128,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
-      <id>2367a7b5-9b50-413b-8210-24c5564dafa8</id>
+      <id>5e0de204-78a9-4572-b643-37459305c8bc</id>
     </Compile>
     <Compile Include="PowerBIRepository.cs">
-      <BoundTo>7b34c3b5-5ebd-4dae-8706-0dba345a3272</BoundTo>
+      <BoundTo>7047d7ab-a1cc-4908-a0db-459f3e9ddeb5</BoundTo>
       <DependentUpon>PowerBIRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
-      <id>e1bbd77f-4717-4919-8351-5a8713c436ef</id>
+      <id>1664fa02-3310-4d83-8db5-c9d6c10efa4a</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>a9c09e28-f82b-4abf-9739-670cd578aa62</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>0d20d570-6d84-4dc0-9eec-ad63167b2cf7</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>a9c09e28-f82b-4abf-9739-670cd578aa62</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>f141fda0-fb4c-42ff-b155-ab523a04f51f</id>
+    <Compile Include="Program.cs">
+      <id>6726fe86-1cf3-4e61-98cd-6d270987f442</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config">
+      <id>46f573c6-0dca-4ed4-958c-a8d08eca9725</id>
+    </None>
     <None Include="PowerBIRepository.rximg">
-      <BoundTo>7b34c3b5-5ebd-4dae-8706-0dba345a3272</BoundTo>
+      <BoundTo>7047d7ab-a1cc-4908-a0db-459f3e9ddeb5</BoundTo>
       <DependentUpon>PowerBIRepository.rxrep</DependentUpon>
       <imageblob>true</imageblob>
-      <id>6dbebfb5-67f0-4561-be36-5c2b4552ebbd</id>
+      <id>f4c22b93-60d1-4155-812c-8e665541f8ed</id>
     </None>
     <None Include="PowerBIRepository.rxrep">
-      <id>7b34c3b5-5ebd-4dae-8706-0dba345a3272</id>
-      <repoid>699778af-52cf-4834-8784-9c08dac82909</repoid>
-      <reporootid>e7f59ece-f205-4bd6-886a-c343402452dd</reporootid>
-    </None>
-    <None Include="Recording1.rxrec">
-      <BoundTo>7b34c3b5-5ebd-4dae-8706-0dba345a3272</BoundTo>
-      <id>a9c09e28-f82b-4abf-9739-670cd578aa62</id>
-      <recordtableid>0efdfb18-5ab0-4312-bf59-8db2f1773367</recordtableid>
+      <id>7047d7ab-a1cc-4908-a0db-459f3e9ddeb5</id>
+      <repoid>22d2c058-7f2f-4aa4-9478-9d98157d40de</repoid>
+      <reporootid>43827a98-a224-4263-8e1e-7707941c1718</reporootid>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="PowerBI.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>9d3e8f57-76a2-4213-ba61-d601a73b916f</id>
+      <id>1aedfba4-e51f-4fa2-b36d-4f154e34d032</id>
+    </Content>
+    <Content Include="PowerBI.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>5ba5a747-882c-447f-a424-b155ac0ee3a3</id>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

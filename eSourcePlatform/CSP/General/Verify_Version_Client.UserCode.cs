@@ -35,7 +35,7 @@ namespace CSP.General
 
         public void ClientValidation()
         {
-        	Validate.AreEqual(engine.Helpers.WebService.ClientVersion, Server);
+        	Validate.AreEqual(engine.Helpers.WebService.ClientVersion, Version);
         }
 
     }

@@ -42,10 +42,6 @@ namespace CSP
         public oDataAPI()
         {
             CSPDOM = "cgst-qc-orr.azurewebsites.net";
-            ProtocolNumber = "";
-            token = "bIKSv9W2XerfKckVPMexzEfR42euEhqgZOXehV4gEVsqjR8mVeoy6xuR_XxMj0As";
-            RandNum = "";
-            Key = "";
         }
 
         /// <summary>
@@ -58,30 +54,6 @@ namespace CSP
 
 #region Variables
 
-        string _ProtocolNumber;
-
-        /// <summary>
-        /// Gets or sets the value of variable ProtocolNumber.
-        /// </summary>
-        [TestVariable("11aa8809-f874-4ac3-be34-3eeb27f4515e")]
-        public string ProtocolNumber
-        {
-            get { return _ProtocolNumber; }
-            set { _ProtocolNumber = value; }
-        }
-
-        string _token;
-
-        /// <summary>
-        /// Gets or sets the value of variable token.
-        /// </summary>
-        [TestVariable("5eeb1a88-fdcf-4023-abff-5b24c8a887c1")]
-        public string token
-        {
-            get { return _token; }
-            set { _token = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
@@ -90,26 +62,6 @@ namespace CSP
         {
             get { return repo.CSPDOM; }
             set { repo.CSPDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable RandNum.
-        /// </summary>
-        [TestVariable("71310b93-a35f-46be-9c69-3ee20b568499")]
-        public string RandNum
-        {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Key.
-        /// </summary>
-        [TestVariable("c876df1e-bfea-4796-a52b-9bb42e3883a7")]
-        public string Key
-        {
-            get { return repo.Key; }
-            set { repo.Key = value; }
         }
 
 #endregion
@@ -138,7 +90,7 @@ namespace CSP
 
             Init();
 
-            engine.Helpers.WebService.oData(token);
+            engine.Helpers.WebService.oData(CSPDOM);
             Delay.Milliseconds(0);
             
         }
