@@ -42,7 +42,7 @@ namespace CSP.General
         public Verify_Version_Client()
         {
             CSPDOM = "";
-            Server = "";
+            Version = "";
         }
 
         /// <summary>
@@ -55,16 +55,16 @@ namespace CSP.General
 
 #region Variables
 
-        string _Server;
+        string _Version;
 
         /// <summary>
-        /// Gets or sets the value of variable Server.
+        /// Gets or sets the value of variable Version.
         /// </summary>
         [TestVariable("7e058fce-68f4-4858-9c01-983db9e3c891")]
-        public string Server
+        public string Version
         {
-            get { return _Server; }
-            set { _Server = value; }
+            get { return _Version; }
+            set { _Version = value; }
         }
 
         /// <summary>

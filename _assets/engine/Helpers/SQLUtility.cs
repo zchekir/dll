@@ -254,77 +254,68 @@ namespace engine.Helpers
 		
 		
 		/// <summary>
-		/// This method is for  validating the DCT move 
+		/// This method is for  validating the DCT move
 		/// </summary>
 		[UserCodeMethod]
 		public static void ValidateDCTMoved(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
-		 
-	
+			
+			
 			dt.Reset();
 			
 			
 			// QueryDB
-			string query = @"SELECT 
+			string query = @"SELECT
                            TestIdentifier
                           ,[MoveOrigTestIdentifier]
                           ,[MovePrevTestIdentifier]
                            FROM [UserData].[PRWorkflowInstance]
                            where MovePrevTestIdentifier = @testIdentifier";
 			do{
-			Delay.Duration(30000);
-			Report.Info( " Waiting for TestIdentifier"); 
-			
-			//Connecting to SQL DB:
-			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
-			//CreateObject:
-			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
-			da.SelectCommand.Parameters.AddWithValue("@testIdentifier", Guid.Parse(testIdentifier));
-			
-			// Get the data from DB
-			
-		     using (da)  
-					
-			da.Fill(dt);
-			
-			
-				} while ( dt.Rows.Count < 1);
+				Delay.Duration(30000);
+				Report.Info( " Waiting for TestIdentifier");
 				
-		
-			
+				//Connecting to SQL DB:
+				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+				//CreateObject:
+				SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
+				da.SelectCommand.Parameters.AddWithValue("@testIdentifier", Guid.Parse(testIdentifier));
+				
+				// Get the data from DB
+				
+				using (da)
+					
+					da.Fill(dt);
+				
+				
+			} while ( dt.Rows.Count < 1);
 			
 			string  N_TestIdentifier  = dt.Rows[0][0].ToString();
 			string MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
 			string MovePrevTestIdentifier = dt.Rows[0][2].ToString();
-					
+			
 			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + N_TestIdentifier);
-		    Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
+			Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier);
 				
-			
-			
-			
-			
-			
-			
-			        }
-		
 		}
-          
-     	}
-	
-	
-	  
 		
-			
-		
+	}
 	
-	
-	
+}
 
 
 
-	
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -42,7 +42,7 @@ namespace DCT.DCT_Page
         public Hubversion()
         {
             AzureURL = "";
-            AzureBrowser = "";
+            Browser = "";
         }
 
         /// <summary>
@@ -67,16 +67,16 @@ namespace DCT.DCT_Page
             set { _AzureURL = value; }
         }
 
-        string _AzureBrowser;
+        string _Browser;
 
         /// <summary>
-        /// Gets or sets the value of variable AzureBrowser.
+        /// Gets or sets the value of variable Browser.
         /// </summary>
-        [TestVariable("25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1")]
-        public string AzureBrowser
+        [TestVariable("28d9d4d6-7384-4f32-907e-1a70d33054bd")]
+        public string Browser
         {
-            get { return _AzureBrowser; }
-            set { _AzureBrowser = value; }
+            get { return _Browser; }
+            set { _Browser = value; }
         }
 
 #endregion
@@ -105,8 +105,8 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $AzureURL with browser specified by variable $AzureBrowser in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(AzureURL, AzureBrowser, "", false, false, false, true, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $AzureURL with browser specified by variable $Browser in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(AzureURL, Browser, "", false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
         }

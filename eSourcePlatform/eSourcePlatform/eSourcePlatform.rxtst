@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -386,21 +386,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="21db77e7-09e4-4140-b010-2fa2cd354f0b"
-			name="Validate_EventDef_Type"
-			ref="38ac56a4-549f-425e-8362-e03119999cf5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="21f4a157-ef9a-47ba-99ae-21411e94781c"
 			name="Select_Subject"
 			ref="a513151c-40bc-4c29-b0f3-05d486e113f5"
@@ -451,6 +436,18 @@ rxversion="8.3">
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="a2c7a9a9-7003-4d84-ad01-cd961be9e65f"
 					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
+					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
+					variablename="EventDefName">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
+					variablename="RandNum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -676,6 +673,8 @@ rxversion="8.3">
 			</testcase>
 			<testcase
 			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51"
+			maxrange="0"
+			minrange="0"
 			name="OpenStudy">
 			</testcase>
 			<testmodule
@@ -717,7 +716,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCPassword"
+					dataname="CSPPassword"
 					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
 					variableid="11dfded3-32bc-4fcd-a241-3256d5ec7ff5"
 					variablename="CSPPassword">
@@ -983,21 +982,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="5b46e83c-16fc-4f35-ab46-b9dbcf06447a"
-			name="Click_SaveAndExit_Button"
-			ref="c10172c9-880b-4bff-9539-52c9773d3515"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="5b710592-2d56-44e8-8b8a-b6ec98d3269b"
 			name="Click_Add_User"
 			ref="a12d2e2e-e4c7-482c-afab-5f0d9f31714f"
@@ -1013,21 +997,6 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="5e17c569-d4bd-46c6-bf0c-ad9923292edb"
-			name="Click_AddEventDef"
-			ref="5e8eadd2-b4d6-4a1b-b51a-8c332926b0be"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="5f08a961-1fbc-4665-adce-e053dd7d9ef9"
 			name="Click_AddEventDef"
 			ref="5e8eadd2-b4d6-4a1b-b51a-8c332926b0be"
 			type="Recording">
@@ -1154,50 +1123,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="67e36e3f-4cfe-4ba8-b035-1a782329512d"
-			name="TestIdentifierDBValidation"
-			ref="1e474587-a2e6-4c33-b39d-7673a9867909"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DBServer"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="fdfe063d-6783-4369-9629-5a145c369190"
-					variablename="DBserver">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="014421c8-99a8-4638-a1b8-329b6244fb96"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="eb61540a-fb4d-4dc9-a31b-da7d8e0c2955"
-					variablename="Authentication">
-					</var>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="6564ccb3-9f1f-49b3-bf17-fc9f45477b9e"
-					variablename="TestIdentifier">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
-					variableid="b0163e3a-504f-4f93-9cf1-0d2f321053c9"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
-					variableid="99ec8a5f-831b-4bc1-99c8-da84479e2528"
-					variablename="dbPassword">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="687fe3c4-4b79-435a-9d77-d761166192ce"
 			name="Validate_Event_Added"
 			ref="14393025-d700-47c7-9152-6833ae9f4bed"
@@ -1239,6 +1164,32 @@ rxversion="8.3">
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
 					variablename="RandNum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6b3c9c40-39da-4d02-a759-818d87d97393"
+			name="Select_Study"
+			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="ProjectName"
+					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
+					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
+					variablename="ProjectName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1303,15 +1254,14 @@ rxversion="8.3">
 					variablename="AzureURL">
 					</var>
 					<var
-					dataname="AzureBrowser"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="25adcc00-1e03-4b42-a9f9-1c2dbb33a1f1"
-					variablename="AzureBrowser">
+					dataname="Browser"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
+					variableid="28d9d4d6-7384-4f32-907e-1a70d33054bd"
+					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
 			<testcase
-			datasource="CSPauthentication"
 			id="6da0ff48-e922-48ba-9742-4fdfccffd0f5"
 			name="LogInPowerBI">
 			</testcase>
@@ -1412,27 +1362,6 @@ rxversion="8.3">
 			ref="62ff2cdc-5712-4e1c-bbba-4c51f5e9daf2"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="7d757b2b-a9cb-4d2d-a45d-83cadc2d61c8"
-			name="Validate_EventDef_Entry"
-			ref="37dd7361-8db1-4913-bf3c-88aa453cf877"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="SecondEventDefname"
-					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
-					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
-					variablename="EventDefName">
-					</var>
 					<var
 					dataname="RCCDOM"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
@@ -1719,10 +1648,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="91df0485-dba5-470f-8e80-a94a0c4994e2"
-			name="Validate_DCT_Move_DB">
-			</testcase>
 			<testmodule
 			id="95156093-0ab3-4070-be1e-24d297632f9b"
 			name="SelectUserName"
@@ -1860,20 +1785,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="9f318eea-1d15-4698-91f4-f397e133dacb"
-			name="Open_Study"
-			ref="a0c69779-1d5e-498c-8b59-232bdcdf6d02"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="e0aa0700-4cbc-4876-9c67-59358a21c7c3"
-					variablename="RandNum">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="9fecd54e-1e7a-4161-b375-57f174c17262"
 			name="Open_Browser"
 			ref="00e6b236-1bc8-4276-b907-6919860acfe5"
@@ -1912,7 +1823,11 @@ rxversion="8.3">
 			name="Click_DebugConsole">
 			</testcase>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="CSPConnector"
 			id="a1466124-6b75-4495-a467-58b136e9ff61"
+			maxrange="0"
+			minrange="0"
 			name="PowrBI_Report">
 			</smartfoldernode>
 			<testmodule
@@ -2184,7 +2099,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="SecondEventDefname"
+					dataname="EventDefName"
 					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 					variableid="761f832e-6cc2-4e00-a143-1d08ebd31d37"
 					variablename="DCTVisit">
@@ -2381,7 +2296,7 @@ rxversion="8.3">
 					dataname="VersionDeployed"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
-					variablename="Server">
+					variablename="Version">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2454,20 +2369,6 @@ rxversion="8.3">
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="cd364fd2-7add-4f18-afe2-9f9119da86e9"
-			name="ClickOnstudy"
-			ref="7601614c-6a1d-4c1c-93a3-22a0b202a475"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="03cfdbde-49ca-483f-a6a6-540890aea68d"
-					variablename="RandNum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2546,7 +2447,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="RandNum"
-					value="Orr_201910291152">
+					value="">
 					</param>
 					<param
 					name="TestIdentifier"
@@ -2819,27 +2720,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="dfbd3a08-59bf-4cea-9480-13158e97599e"
-			name="Enter_EventDef_Name"
-			ref="d87ad496-dfc7-402e-a2b1-19bf465a8af1"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="SecondEventDefname"
-					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
-					variableid="94203d67-493a-4d36-b096-baad7df5be7a"
-					variablename="EventDefName">
-					</var>
-					<var
-					dataname="RCCDOM"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="DOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="e0c6d1f7-3556-481b-a184-881cf2cfefcf"
 			name="Click_Add_Workflow"
 			ref="12c5de0a-0a0d-4bef-bbcd-831ee3ec3abb"
@@ -2931,7 +2811,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="CSPUsername"
-					datasourceid="877cfc02-c58b-41d6-8a8e-e729a4ceb125"
+					datasourceid="e4e9f0dd-23be-4845-98d1-5f02cd369239"
 					variableid="099a621f-a395-43ad-8ac3-1d5ce43dd49f"
 					variablename="CSPUsername">
 					</var>
@@ -3411,26 +3291,6 @@ rxversion="8.3">
 								</testmodule>
 								<testmodule
 								id="6b73edec-c2e9-46a7-96ea-07c4b43c733e"
-								name="Validate_EventDef_Entry">
-								</testmodule>
-								<testmodule
-								id="5f08a961-1fbc-4665-adce-e053dd7d9ef9"
-								name="Click_AddEventDef">
-								</testmodule>
-								<testmodule
-								id="dfbd3a08-59bf-4cea-9480-13158e97599e"
-								name="Enter_EventDef_Name">
-								</testmodule>
-								<testmodule
-								id="21db77e7-09e4-4140-b010-2fa2cd354f0b"
-								name="Validate_EventDef_Type">
-								</testmodule>
-								<testmodule
-								id="5b46e83c-16fc-4f35-ab46-b9dbcf06447a"
-								name="Click_SaveAndExit_Button">
-								</testmodule>
-								<testmodule
-								id="7d757b2b-a9cb-4d2d-a45d-83cadc2d61c8"
 								name="Validate_EventDef_Entry">
 								</testmodule>
 							</testcase>
@@ -4018,14 +3878,6 @@ rxversion="8.3">
 								name="Confirmation">
 								</testmodule>
 							</testcase>
-							<testcase
-							id="91df0485-dba5-470f-8e80-a94a0c4994e2"
-							name="Validate_DCT_Move_DB">
-								<testmodule
-								id="67e36e3f-4cfe-4ba8-b035-1a782329512d"
-								name="TestIdentifierDBValidation">
-								</testmodule>
-							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
@@ -4162,12 +4014,8 @@ rxversion="8.3">
 							id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51"
 							name="OpenStudy">
 								<testmodule
-								id="9f318eea-1d15-4698-91f4-f397e133dacb"
-								name="Open_Study">
-								</testmodule>
-								<testmodule
-								id="cd364fd2-7add-4f18-afe2-9f9119da86e9"
-								name="ClickOnstudy">
+								id="6b3c9c40-39da-4d02-a759-818d87d97393"
+								name="Select_Study">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -4328,81 +4176,6 @@ rxversion="8.3">
 			</maskedcolumns>
 			<file>
 				BatteryBlockConnector.csv
-			</file>
-		</DataSource>
-		<DataSource
-		id="877cfc02-c58b-41d6-8a8e-e729a4ceb125"
-		includefile="Checked"
-		lastknownrowcount="3"
-		name="CSPauthentication"
-		type="Ranorex.Core.Data.CsvDataConnector"
-		withheaders="True">
-			<lastknowncolumns>
-				<column>
-					RCCUsername
-				</column>
-				<column>
-					RCCPassword
-				</column>
-				<column>
-					CSPUsername
-				</column>
-				<column>
-					CSPPassword
-				</column>
-				<column>
-					dbUsername
-				</column>
-				<column>
-					dbPassword
-				</column>
-				<column>
-					GmailAddress
-				</column>
-				<column>
-					GmailPassword
-				</column>
-				<column>
-					Subject
-				</column>
-				<column>
-					Body
-				</column>
-				<column>
-					To
-				</column>
-				<column>
-					From
-				</column>
-				<column>
-					ServerHostname
-				</column>
-				<column>
-					ServerPort
-				</column>
-				<column>
-					UseSSL
-				</column>
-				<column>
-					SendEmailOnFailure
-				</column>
-				<column>
-					SendEmailOnSuccess
-				</column>
-				<column>
-					SendZippedReportOnComplete
-				</column>
-				<column>
-					SendPdfReportOnComplete
-				</column>
-				<column>
-					Browser
-				</column>
-			</lastknowncolumns>
-			<maskedcolumns>
-			</maskedcolumns>
-			<file>
-				Authentication.csv
 			</file>
 		</DataSource>
 		<DataSource
