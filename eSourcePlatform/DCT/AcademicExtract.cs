@@ -86,8 +86,8 @@ namespace DCT
             repo.CogstateSolutionPlatform.AcademicExtract.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(2));
-            Delay.Duration(30000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5m.", new RecordItemIndex(2));
+            Delay.Duration(90000, false);
             
             Report_Screenshot();
             Delay.Milliseconds(0);
