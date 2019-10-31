@@ -1635,12 +1635,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="90f4f299-9d02-443e-9018-b945674827fb"
-			name="Close_DCT"
-			ref="2569b4ed-6164-49fa-89df-a5b2c98e2608"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="9127bd4e-9442-44a3-a57b-d772b8cb6de2"
 			name="E_Subject"
 			ref="6ba8d2d0-d8f5-489f-8747-9690991ebcc3"
@@ -2299,10 +2293,10 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 					<var
-					dataname="VersionDeployed"
+					dataname="CSPClientVesrion "
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
-					variablename="Version">
+					variablename="CSPClientVesrion_">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2417,7 +2411,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="RCCURL"
-					value="https://cgsqc.redcapcloud.com/">
+					value="https://cgsqc.redcapcloud.com">
 					</param>
 					<param
 					name="CSPDOM"
@@ -2425,7 +2419,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="CSPURL"
-					value="https://cgst-qc-orr.azurewebsites.net/">
+					value="https://cgst-qc-orr.azurewebsites.net">
 					</param>
 					<param
 					name="DCTURL"
@@ -2437,7 +2431,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="VersionDeployed"
-					value="1.10.0">
+					value="1.10.0.7526">
 					</param>
 					<param
 					name="DBServer"
@@ -2481,7 +2475,8 @@ rxversion="8.3">
 					</param>
 					<param
 					name="OctopusPassword"
-					value="Cogstate2014">
+					value="Darys2010
+">
 					</param>
 					<param
 					name="AzureURL"
@@ -2501,7 +2496,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="ExpectedRCCVersion"
-					value="2.0.0-rc.1757">
+					value="2.0.0-rc.1760">
 					</param>
 					<param
 					name="AzureBrowser"
@@ -2510,6 +2505,10 @@ rxversion="8.3">
 					<param
 					name="RCC_Study_Name"
 					value="zktest 0001">
+					</param>
+					<param
+					name="CSPClientVesrion "
+					value="1.10.0-rc.7526">
 					</param>
 				</parameters>
 			</testcase>
@@ -3883,10 +3882,6 @@ rxversion="8.3">
 								id="c9dffa5f-dfa6-4ee4-a9bc-be1f32bec142"
 								name="Confirmation">
 								</testmodule>
-								<testmodule
-								id="90f4f299-9d02-443e-9018-b945674827fb"
-								name="Close_DCT">
-								</testmodule>
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
@@ -4338,157 +4333,16 @@ rxversion="8.3">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
-			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
-			</testcontainer>
-			<testcontainer
-			id="176d8e83-d209-4c4b-a84f-9198032c225f">
-			</testcontainer>
-			<testcontainer
-			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
-			</testcontainer>
-			<testcontainer
-			id="1d9928dd-974b-4bf9-b839-09c761466da1">
-			</testcontainer>
-			<testcontainer
 			id="1e351c7d-29c2-487d-94c0-6e64fae0adc5">
-			</testcontainer>
-			<testcontainer
-			id="23168a3f-e39d-40bd-83e2-96e3879df980">
-			</testcontainer>
-			<testcontainer
-			id="3de66789-7fb1-4996-8500-81d43a94cc32">
-			</testcontainer>
-			<testcontainer
-			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51">
-			</testcontainer>
-			<testcontainer
-			id="43ca4568-0c2e-47fb-a370-ed468828aed9">
-			</testcontainer>
-			<testcontainer
-			id="49225187-4a49-4835-90e0-3de32724cde5">
-			</testcontainer>
-			<testcontainer
-			id="529f1bb1-0a6e-4a00-b1f8-9e40b442fa7a">
-			</testcontainer>
-			<testcontainer
-			id="55b0937d-ea65-48ca-b26f-e3e61e21b181">
-			</testcontainer>
-			<testcontainer
-			id="55d94e9c-09f3-492b-977b-eb8d911a3296">
-			</testcontainer>
-			<testcontainer
-			id="56f6d406-e690-4aa6-b4a9-38e641d4b26a">
-			</testcontainer>
-			<testcontainer
-			id="6019ac06-4d85-440a-ab02-5127c387cd2a">
-			</testcontainer>
-			<testcontainer
-			id="62006fb2-63fe-43fb-8c36-139d7b9d28a7">
 			</testcontainer>
 			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
 			</testcontainer>
 			<testcontainer
-			id="64ae0aaa-5d24-4a4c-bf10-284c21c25fb9">
-			</testcontainer>
-			<testcontainer
-			id="68ffcef6-9f39-4bb8-bad5-b8883246139c">
-			</testcontainer>
-			<testcontainer
-			id="70634e69-921c-470b-b1ae-76608669f350">
-			</testcontainer>
-			<testcontainer
-			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
-			</testcontainer>
-			<testcontainer
-			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
-			</testcontainer>
-			<testcontainer
-			id="8839cb3a-ce85-4bf1-9196-88ac00ca8f5b">
-			</testcontainer>
-			<testcontainer
-			id="97aaa3ea-6ea0-4622-9002-ad2b4479e683">
-			</testcontainer>
-			<testcontainer
-			id="9b1d4735-9ae1-4127-8dc0-f5499309cd99">
-			</testcontainer>
-			<testcontainer
-			id="a0ca6e5b-0022-4873-a172-ead549a588aa">
-			</testcontainer>
-			<testcontainer
-			id="a1466124-6b75-4495-a467-58b136e9ff61">
-			</testcontainer>
-			<testcontainer
-			id="a88dd955-1380-4197-a122-03b4c8638672">
-			</testcontainer>
-			<testcontainer
-			id="aa09af30-1e68-4459-88f3-5cd79cf16911">
-			</testcontainer>
-			<testcontainer
-			id="ac57980d-7272-4f24-887e-35835239fc9d">
-			</testcontainer>
-			<testcontainer
-			id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4">
-			</testcontainer>
-			<testcontainer
-			id="b319d319-16d8-40e6-8c90-b61f64137ae2">
-			</testcontainer>
-			<testcontainer
-			id="b468f615-5d6f-4e8c-b782-e6f70c90b66d">
-			</testcontainer>
-			<testcontainer
-			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">
-			</testcontainer>
-			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
 			</testcontainer>
 			<testcontainer
-			id="cf83bf58-35e5-4f83-8e04-5991e49545f0">
-			</testcontainer>
-			<testcontainer
-			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
-			</testcontainer>
-			<testcontainer
-			id="d2899b22-b064-42fc-81cc-e3b7b14d3643">
-			</testcontainer>
-			<testcontainer
-			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874">
-			</testcontainer>
-			<testcontainer
-			id="d7301e08-98a1-4c85-bb6a-6ec82c426239">
-			</testcontainer>
-			<testcontainer
-			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
-			</testcontainer>
-			<testcontainer
 			id="e1ef7e1f-07d8-45e4-b7fe-3ba22e3f2524">
-			</testcontainer>
-			<testcontainer
-			id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466">
-			</testcontainer>
-			<testcontainer
-			id="eb2b9d4f-178e-48da-8001-d67b6cf03aff">
-			</testcontainer>
-			<testcontainer
-			id="eb638fc6-b4a9-4a64-96fe-ee8eef77ca9c">
-			</testcontainer>
-			<testcontainer
-			id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">
-			</testcontainer>
-			<testcontainer
-			id="efa1cf54-9733-453c-ae88-55402cf6ea80">
-			</testcontainer>
-			<testcontainer
-			id="f4aa2d59-6c00-465f-9d79-2c75814cfbd2">
-			</testcontainer>
-			<testcontainer
-			id="f6a31933-9e9b-46c5-9bad-9b79a53baadd">
-			</testcontainer>
-			<testcontainer
-			id="fca09944-a8c2-4c34-8714-8e5871e85452">
-			</testcontainer>
-			<testcontainer
-			id="fd8a7d04-7499-4e31-8ad7-be2bab062e87">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

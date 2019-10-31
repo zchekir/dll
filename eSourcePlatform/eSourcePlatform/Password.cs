@@ -20,60 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.General
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Upload_RawData recording.
+    ///The Password recording.
     /// </summary>
-    [TestModule("4b7c8d87-c912-439e-bc77-334ef8709512", ModuleType.Recording, 1)]
-    public partial class Upload_RawData : ITestModule
+    [TestModule("3642fd59-467e-4caf-b0b2-60245700a3e5", ModuleType.Recording, 1)]
+    public partial class Password : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Upload_RawData instance = new Upload_RawData();
+        static Password instance = new Password();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Upload_RawData()
+        public Password()
         {
-            DataFile = "";
+            CSPPassword = "Darys2010";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Upload_RawData Instance
+        public static Password Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _DataFile;
+        string _CSPPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable DataFile.
+        /// Gets or sets the value of variable CSPPassword.
         /// </summary>
-        [TestVariable("8fc570d6-3f7a-415d-b8e3-72a0b3b97474")]
-        public string DataFile
+        [TestVariable("cb449962-5f30-498d-accd-6c77e516866d")]
+        public string CSPPassword
         {
-            get { return _DataFile; }
-            set { _DataFile = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string DOM
-        {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
+            get { return _CSPPassword; }
+            set { _CSPPassword = value; }
         }
 
 #endregion
@@ -102,21 +92,31 @@ namespace RedCapCloud.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
-            AddRawData(DataFile);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}'.", new RecordItemIndex(1));
+            //Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform1.LoginPass' at Center.", repo.CogstateSolutionPlatform1.LoginPassInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform1.LoginPass.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}'.", new RecordItemIndex(3));
+            Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.iFrame.SkipButton' at Center.", repo.REDCapCloud.iFrame.SkipButtonInfo, new RecordItemIndex(3));
-            repo.REDCapCloud.iFrame.SkipButton.Click(100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'CogstateSolutionPlatform1.LoginPass'.", repo.CogstateSolutionPlatform1.LoginPassInfo, new RecordItemIndex(5));
+            repo.CogstateSolutionPlatform1.LoginPass.PressKeys(CSPPassword);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(4));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER} '.", new RecordItemIndex(6));
+            Keyboard.Press("{ENTER} ");
+            Delay.Milliseconds(0);
             
         }
 

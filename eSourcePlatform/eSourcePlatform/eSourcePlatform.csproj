@@ -136,6 +136,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>ddd3f088-63bc-40ca-b06b-ba2e7448f40a</id>
     </Compile>
+    <Compile Include="ClickLogin.cs">
+      <BoundTo>d4b6b943-2f0e-4447-ae69-09a3e8376f6b</BoundTo>
+      <DependentUpon>ClickLogin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c8af4ac-83b6-44d6-b09b-5f7118a51ed9</id>
+    </Compile>
+    <Compile Include="ClickLogin.UserCode.cs">
+      <BoundTo>d4b6b943-2f0e-4447-ae69-09a3e8376f6b</BoundTo>
+      <DependentUpon>ClickLogin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7d09d039-6806-4990-82fd-8e5eae656fe0</id>
+    </Compile>
     <Compile Include="ClickNext.cs">
       <BoundTo>7e02e012-6f6a-40ce-80c6-c8d6757bd432</BoundTo>
       <DependentUpon>ClickNext.rxrec</DependentUpon>
@@ -214,6 +226,18 @@
       <UserCode>true</UserCode>
       <id>651a5983-4650-49d2-a6c5-e7134ed7cd49</id>
     </Compile>
+    <Compile Include="Password.cs">
+      <BoundTo>55d6a91a-bb9b-4709-b2b6-d742cff3669d</BoundTo>
+      <DependentUpon>Password.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>133b9641-21cd-4ce7-9448-a4580717ae25</id>
+    </Compile>
+    <Compile Include="Password.UserCode.cs">
+      <BoundTo>55d6a91a-bb9b-4709-b2b6-d742cff3669d</BoundTo>
+      <DependentUpon>Password.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3bd0d387-548c-4827-b241-8ae4557e7846</id>
+    </Compile>
     <Compile Include="PowerBILogin.cs">
       <BoundTo>d1fa21c9-33f4-4eba-88fb-2fa2272444e2</BoundTo>
       <DependentUpon>PowerBILogin.rxrec</DependentUpon>
@@ -241,6 +265,18 @@
     <Compile Include="Program.cs">
       <id>a96bd5ee-0e36-4cbf-8c8c-70a3e4390d99</id>
     </Compile>
+    <Compile Include="Username.cs">
+      <BoundTo>53517221-5a0a-4ba5-827a-1018a8dee2c1</BoundTo>
+      <DependentUpon>Username.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e015982a-1e9a-4fb2-aaac-4683fd07efee</id>
+    </Compile>
+    <Compile Include="Username.UserCode.cs">
+      <BoundTo>53517221-5a0a-4ba5-827a-1018a8dee2c1</BoundTo>
+      <DependentUpon>Username.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>51f6cb02-9582-462f-9db9-e9263ad01357</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -267,6 +303,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>aae3da34-4981-4765-ae6f-060bf0c2fb1c</id>
     </Content>
+    <None Include="ClickLogin.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>d4b6b943-2f0e-4447-ae69-09a3e8376f6b</id>
+      <recordtableid>873e86b3-92b4-43a7-b4aa-b1dab41b8c28</recordtableid>
+    </None>
     <None Include="ClickNext.rxrec">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <id>7e02e012-6f6a-40ce-80c6-c8d6757bd432</id>
@@ -308,6 +349,11 @@
       <id>bf33b029-e351-48c9-a4e9-37c4d9e77db5</id>
       <recordtableid>a0c69779-1d5e-498c-8b59-232bdcdf6d02</recordtableid>
     </None>
+    <None Include="Password.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>55d6a91a-bb9b-4709-b2b6-d742cff3669d</id>
+      <recordtableid>3642fd59-467e-4caf-b0b2-60245700a3e5</recordtableid>
+    </None>
     <None Include="PowerBILogin.rxrec">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <id>d1fa21c9-33f4-4eba-88fb-2fa2272444e2</id>
@@ -317,6 +363,11 @@
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <id>4abab1b4-e1e0-4a59-ab5d-0a95388a40b1</id>
       <recordtableid>8b563c40-f41f-4c13-8a9d-bfa9017c9334</recordtableid>
+    </None>
+    <None Include="Username.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>53517221-5a0a-4ba5-827a-1018a8dee2c1</id>
+      <recordtableid>4770ec4d-ff94-4fca-a4dd-391039e85292</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

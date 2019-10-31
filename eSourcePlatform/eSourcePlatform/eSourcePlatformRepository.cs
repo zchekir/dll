@@ -32,6 +32,7 @@ namespace eSourcePlatform
         eSourcePlatformRepositoryFolders.SignInAppFolder _signin;
         eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
         eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder _datacleaningtool;
+        eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder _cogstatesolutionplatform1;
 
         /// <summary>
         /// Gets the singleton class instance representing the eSourcePlatformRepository element repository.
@@ -53,6 +54,7 @@ namespace eSourcePlatform
             _signin = new eSourcePlatformRepositoryFolders.SignInAppFolder(this);
             _academicextractorrpowerbi = new eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
             _datacleaningtool = new eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder(this);
+            _cogstatesolutionplatform1 = new eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder(this);
         }
 
 #region Variables
@@ -138,6 +140,15 @@ namespace eSourcePlatform
         public virtual eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder DataCleaningTool
         {
             get { return _datacleaningtool; }
+        }
+
+        /// <summary>
+        /// The CogstateSolutionPlatform1 folder.
+        /// </summary>
+        [RepositoryFolder("e563784f-5b18-4504-be23-71041324819b")]
+        public virtual eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder CogstateSolutionPlatform1
+        {
+            get { return _cogstatesolutionplatform1; }
         }
     }
 
@@ -551,6 +562,124 @@ namespace eSourcePlatform
                 get
                 {
                     return _datacleaningtoolInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CogstateSolutionPlatform1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e563784f-5b18-4504-be23-71041324819b")]
+        public partial class CogstateSolutionPlatform1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _loginemailInfo;
+            RepoItemInfo _loginpassInfo;
+            RepoItemInfo _buttontaglogInfo;
+
+            /// <summary>
+            /// Creates a new CogstateSolutionPlatform1  folder.
+            /// </summary>
+            public CogstateSolutionPlatform1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CogstateSolutionPlatform1", "/dom[@domain='platform.cogstate.com']", parentFolder, 30000, null, false, "e563784f-5b18-4504-be23-71041324819b", "")
+            {
+                _loginemailInfo = new RepoItemInfo(this, "LoginEmail", ".//input[#'loginEmail']", 30000, null, "0f6b94ff-9556-41d0-91df-a5d8c793730e");
+                _loginpassInfo = new RepoItemInfo(this, "LoginPass", ".//input[#'loginPass']", 30000, null, "36ecf764-b457-4163-a894-4d867e95fafa");
+                _buttontaglogInfo = new RepoItemInfo(this, "ButtonTagLOG", ".//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@innertext~'^\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ ']", 30000, null, "ee3e265d-f2ce-4430-ba1b-c1517ec78b79");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e563784f-5b18-4504-be23-71041324819b")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e563784f-5b18-4504-be23-71041324819b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoginEmail item.
+            /// </summary>
+            [RepositoryItem("0f6b94ff-9556-41d0-91df-a5d8c793730e")]
+            public virtual Ranorex.InputTag LoginEmail
+            {
+                get
+                {
+                    return _loginemailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoginEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("0f6b94ff-9556-41d0-91df-a5d8c793730e")]
+            public virtual RepoItemInfo LoginEmailInfo
+            {
+                get
+                {
+                    return _loginemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoginPass item.
+            /// </summary>
+            [RepositoryItem("36ecf764-b457-4163-a894-4d867e95fafa")]
+            public virtual Ranorex.InputTag LoginPass
+            {
+                get
+                {
+                    return _loginpassInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoginPass item info.
+            /// </summary>
+            [RepositoryItemInfo("36ecf764-b457-4163-a894-4d867e95fafa")]
+            public virtual RepoItemInfo LoginPassInfo
+            {
+                get
+                {
+                    return _loginpassInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagLOG item.
+            /// </summary>
+            [RepositoryItem("ee3e265d-f2ce-4430-ba1b-c1517ec78b79")]
+            public virtual Ranorex.ButtonTag ButtonTagLOG
+            {
+                get
+                {
+                    return _buttontaglogInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagLOG item info.
+            /// </summary>
+            [RepositoryItemInfo("ee3e265d-f2ce-4430-ba1b-c1517ec78b79")]
+            public virtual RepoItemInfo ButtonTagLOGInfo
+            {
+                get
+                {
+                    return _buttontaglogInfo;
                 }
             }
         }

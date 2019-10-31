@@ -36,6 +36,7 @@ namespace RedCapCloud.General
 
         public void AddRawData(string fileName)
         {
+        	Delay.Milliseconds(500);
             string data;
         	using (StreamReader sr = File.OpenText(@".\rawData\" + fileName))
 			{

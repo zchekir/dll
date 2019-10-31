@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="873e86b3-92b4-43a7-b4aa-b1dab41b8c28"
+mode="Global"
+rxversion="8.3">
+	<name>
+		ClickLogin
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickLogin"
+	namespace="eSourcePlatform">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e10c8057-cf23-45dc-91ec-a0ce7f275d43"
+		sx="960"
+		sy="727"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ee3e265d-f2ce-4430-ba1b-c1517ec78b79"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="2"
+				prefcap="buttontag"
+				rect="804,708,313,39"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						cogstate-button adjustment-button ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;                           LOGIN                       &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='platform.cogstate.com']//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1b4df078-48fd-44ad-b314-173b9dd113af"
+	name="eSourcePlatformRepository"
+	relativepath="eSourcePlatformRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="eSourcePlatformRepository"
+		namespace="eSourcePlatform">
+		</codegen>
+		<rootfolder
+		id="d677fdb9-00e1-4467-9fce-a84c063e8bd0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickLogin.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

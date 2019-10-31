@@ -537,8 +537,9 @@ namespace engine.Helpers
         		
         	}
         	// splinting version number
-        	string[] splitVersion = Sversion.Split('.');
-        	Sversion = splitVersion[0] + "." + splitVersion[1] + "." + splitVersion[2];
+        	string splitVersion = Sversion.Split('.')[0];
+        	//Sversion = splitVersion[0] + "." + splitVersion[1] + "." + splitVersion[2];
+        	Report.Log(ReportLevel.Info, "Server_Version"+ splitVersion );
         	
         	
         	
@@ -572,9 +573,9 @@ namespace engine.Helpers
         		
         	}
         	// splinting version number
-        	string[] splitClientVersion = Sversion.Split('.');
-        	ClientVersion = splitClientVersion[0] + "." + splitClientVersion[1] + "." + splitClientVersion[2];
-        	Report.Log(ReportLevel.Info, "after"+ ClientVersion);
+        	string splitClientVersion = ClientVersion.Split('.')[0];
+        	//ClientVersion = splitClientVersion[0] + "." + splitClientVersion[1] + "." + splitClientVersion[2];
+        	Report.Log(ReportLevel.Info, "Client_Version"+ splitClientVersion);
         	
         	
         }

@@ -41,7 +41,7 @@ namespace CSP.General
         /// </summary>
         public Verify_Version_Deployed()
         {
-            Version = "";
+            Version = "1.10.0.7526";
             CSPDOM = "cgst-qc-orr.azurewebsites.net";
         }
 

@@ -20,62 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.General
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Version_Client recording.
+    ///The ClickLogin recording.
     /// </summary>
-    [TestModule("bbd7de50-f153-4542-b412-b02ff4df214c", ModuleType.Recording, 1)]
-    public partial class Verify_Version_Client : ITestModule
+    [TestModule("873e86b3-92b4-43a7-b4aa-b1dab41b8c28", ModuleType.Recording, 1)]
+    public partial class ClickLogin : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Verify_Version_Client instance = new Verify_Version_Client();
+        static ClickLogin instance = new ClickLogin();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Version_Client()
+        public ClickLogin()
         {
-            CSPDOM = "cgst-qc-orr.azurewebsites.net";
-            CSPClientVesrion_ = "1.10.0-rc.7526";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Version_Client Instance
+        public static ClickLogin Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _CSPClientVesrion_;
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPClientVesrion_.
-        /// </summary>
-        [TestVariable("7e058fce-68f4-4858-9c01-983db9e3c891")]
-        public string CSPClientVesrion_
-        {
-            get { return _CSPClientVesrion_; }
-            set { _CSPClientVesrion_ = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
-        /// </summary>
-        [TestVariable("5573f8ac-d505-42b0-a336-394c8bca477a")]
-        public string CSPDOM
-        {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
 
 #endregion
 
@@ -103,11 +79,9 @@ namespace CSP.General
 
             Init();
 
-            engine.Helpers.WebService.C_Version(CSPDOM);
-            Delay.Milliseconds(0);
-            
-            ClientValidation();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform1.ButtonTagLOG' at Center.", repo.CogstateSolutionPlatform1.ButtonTagLOGInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform1.ButtonTagLOG.Click();
+            Delay.Milliseconds(200);
             
         }
 

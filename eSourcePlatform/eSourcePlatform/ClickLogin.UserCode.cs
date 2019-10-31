@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace CSP.General
+namespace eSourcePlatform
 {
-    public partial class Verify_Version_Client
+    public partial class ClickLogin
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,11 +31,6 @@ namespace CSP.General
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void ClientValidation()
-        {
-        	Validate.AreEqual(engine.Helpers.WebService.ClientVersion, CSPClientVesrion_);
         }
 
     }
