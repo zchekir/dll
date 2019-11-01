@@ -20,63 +20,47 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.DCT_Page
+namespace DCT.single_sign_in
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The DCT_URL recording.
+    ///The Verify_DCT_Login recording.
     /// </summary>
-    [TestModule("5d2ef5fe-273d-43ea-b4d5-a8d2efc9ca23", ModuleType.Recording, 1)]
-    public partial class DCT_URL : ITestModule
+    [TestModule("34652f57-617b-4b72-bbb8-4c352b277962", ModuleType.Recording, 1)]
+    public partial class Verify_DCT_Login : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static DCT_URL instance = new DCT_URL();
+        static Verify_DCT_Login instance = new Verify_DCT_Login();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public DCT_URL()
+        public Verify_DCT_Login()
         {
-            DCTURL = "";
-            Browser = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static DCT_URL Instance
+        public static Verify_DCT_Login Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _DCTURL;
-
         /// <summary>
-        /// Gets or sets the value of variable DCTURL.
+        /// Gets or sets the value of variable DCTDOM.
         /// </summary>
-        [TestVariable("8463e4a6-eafa-4aa9-b3f9-8c31b5959f9b")]
-        public string DCTURL
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
         {
-            get { return _DCTURL; }
-            set { _DCTURL = value; }
-        }
-
-        string _Browser;
-
-        /// <summary>
-        /// Gets or sets the value of variable Browser.
-        /// </summary>
-        [TestVariable("ea48e640-72d1-4391-844d-f960d0c21bf4")]
-        public string Browser
-        {
-            get { return _Browser; }
-            set { _Browser = value; }
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
         }
 
 #endregion
@@ -105,17 +89,7 @@ namespace DCT.DCT_Page
 
             Init();
 
-            //DCTLogin(DCTURL, Browser);
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $DCTURL with browser 'Chrome' in normal mode.", new RecordItemIndex(1));
-            Host.Current.OpenBrowser(DCTURL, "Chrome", "", false, false, false, true, false, true);
-            Delay.Milliseconds(0);
-            
-            Report.Screenshot(ReportLevel.Success, "User", "LoggedIn Successfully", null, false, new RecordItemIndex(2));
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1ms.", new RecordItemIndex(3));
-            Delay.Duration(1, false);
+            Report.Screenshot(ReportLevel.Info, "User", "Logged in Successfully", repo.DataCleaningTool.Self, false, new RecordItemIndex(0));
             
         }
 

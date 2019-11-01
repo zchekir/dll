@@ -53,6 +53,26 @@ namespace DCT.Azure
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable AzureDOM.
+        /// </summary>
+        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
+        public string AzureDOM
+        {
+            get { return repo.AzureDOM; }
+            set { repo.AzureDOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
+        public string CSPUsername
+        {
+            get { return repo.CSPUsername; }
+            set { repo.CSPUsername = value; }
+        }
+
 #endregion
 
         /// <summary>

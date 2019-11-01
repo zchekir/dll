@@ -109,6 +109,54 @@ namespace DCT
             set { _CSPDOM = value; }
         }
 
+        string _AzureDOM = "cgst-qc-orr-hub.scm.azurewebsites.net";
+
+        /// <summary>
+        /// Gets or sets the value of variable AzureDOM.
+        /// </summary>
+        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
+        public string AzureDOM
+        {
+            get { return _AzureDOM; }
+            set { _AzureDOM = value; }
+        }
+
+        string _CSPUsername = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
+        public string CSPUsername
+        {
+            get { return _CSPUsername; }
+            set { _CSPUsername = value; }
+        }
+
+        string _DCTDOM = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
+        {
+            get { return _DCTDOM; }
+            set { _DCTDOM = value; }
+        }
+
+        string _RCCDOM = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable RCCDOM.
+        /// </summary>
+        [TestVariable("5a760c9f-9fed-4f01-8c4c-f1cd491cbeda")]
+        public string RCCDOM
+        {
+            get { return _RCCDOM; }
+            set { _RCCDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -274,7 +322,7 @@ namespace DCT
             /// Creates a new DataCleaningTool  folder.
             /// </summary>
             public DataCleaningToolAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DataCleaningTool", "/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']", parentFolder, 30000, null, false, "8d2bb7de-1088-4124-a99c-b77e11c31af1", "")
+                    base("DataCleaningTool", "/dom[@domain=$DCTDOM]", parentFolder, 30000, null, false, "8d2bb7de-1088-4124-a99c-b77e11c31af1", "")
             {
                 _movevalidationInfo = new RepoItemInfo(this, "MoveValidation", ".//div[#'root']/div/div/div[3]/p[@innertext='No results found.']", 30000, null, "178b44c8-a649-4b52-b5b7-b56b4cde9123");
                 _primaryvalidationInfo = new RepoItemInfo(this, "PrimaryValidation", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext='yes']", 30000, null, "1a031ccd-10c6-432c-9edf-5a8661be8d93");
@@ -1033,7 +1081,7 @@ namespace DCT
             /// Creates a new REDCapCloud  folder.
             /// </summary>
             public REDCapCloudAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("REDCapCloud", "/dom[@domain='cgsqc.redcapcloud.com']", parentFolder, 30000, null, false, "8c57a700-52e3-43b0-bb42-688fd9e5c8b2", "")
+                    base("REDCapCloud", "/dom[@domain=$RCCDOM]", parentFolder, 30000, null, false, "8c57a700-52e3-43b0-bb42-688fd9e5c8b2", "")
             {
                 _searchstudyinrccInfo = new RepoItemInfo(this, "SearchStudyInRCC", ".//input[#'filtersWidget_userInputWidget_studyName']", 30000, null, "1aaeabd0-d27c-4203-9346-f994a87bad37");
                 _openrccstudyInfo = new RepoItemInfo(this, "OpenRCCStudy", ".//div[@innertext=$RandNum]", 30000, null, "e497ee0e-507a-42d4-8dbc-21b179383f59");
@@ -1701,7 +1749,7 @@ namespace DCT
                 _idbtnbackInfo = new RepoItemInfo(this, "IdBtnBack", ".//input[#'idBtn_Back']", 30000, null, "5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef");
                 _enterusenameInfo = new RepoItemInfo(this, "EnterUseName", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
                 _clicknextInfo = new RepoItemInfo(this, "ClickNext", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
-                _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext='zchekir@cogstate.com']", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
+                _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext=$CSPUsername]", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
                 _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "03048239-ba3c-4e99-98f0-7a29857dc2f3");
             }
 
@@ -1975,12 +2023,12 @@ namespace DCT
             /// Creates a new KuduServices  folder.
             /// </summary>
             public KuduServicesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("KuduServices", "/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']", parentFolder, 30000, null, false, "83d87542-91e4-4062-831c-e71dae0b7938", "")
+                    base("KuduServices", "/dom[@domain=$AzureDOM]", parentFolder, 30000, null, false, "83d87542-91e4-4062-831c-e71dae0b7938", "")
             {
                 _debugconsoleInfo = new RepoItemInfo(this, "DebugConsole", ".//a[@innertext='Debug console ']", 30000, null, "67cbad4f-5b5c-41d7-a22b-8b0b8a2f529d");
                 _powershellInfo = new RepoItemInfo(this, "PowerShell", ".//a[@innertext='PowerShell']", 30000, null, "63637764-b1c2-45b3-96c3-243481d396a3");
                 _powershallconsolInfo = new RepoItemInfo(this, "PowerShallConsol", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span", 30000, null, "cb458012-66d2-43c8-90cf-f9dc911f0576");
-                _azurelogoutInfo = new RepoItemInfo(this, "AzureLogout", ".//a[@innertext='zchekir@cogstate.com']", 30000, null, "ba6ef5cd-ae29-46fd-a862-13b41632bc4d");
+                _azurelogoutInfo = new RepoItemInfo(this, "AzureLogout", ".//a[@innertext=$CSPUsername]", 30000, null, "ba6ef5cd-ae29-46fd-a862-13b41632bc4d");
                 _logoutInfo = new RepoItemInfo(this, "Logout", ".//a[@innertext='Logout']", 30000, null, "bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae");
                 _dctvalidationversionInfo = new RepoItemInfo(this, "DCTValidationVersion", ".//div[@innertext~'1.2']", 30000, null, "49370b0d-946f-4152-89ea-e31cf4c37984");
                 _rcchubvalidationInfo = new RepoItemInfo(this, "RCCHubValidation", ".//div[@innertext~'2.0.0-rc']", 30000, null, "ed9435cd-5012-46e1-a260-05d5ba9de604");
@@ -2218,7 +2266,7 @@ namespace DCT
             /// Creates a new CogstateSolutionPlatform  folder.
             /// </summary>
             public CogstateSolutionPlatformAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CogstateSolutionPlatform", "/dom[@domain='cgst-qc-orr.azurewebsites.net']", parentFolder, 30000, null, false, "38465dbb-2a52-4f97-a7da-4f756315b3f4", "")
+                    base("CogstateSolutionPlatform", "/dom[@domain=$CSPDOM]", parentFolder, 30000, null, false, "38465dbb-2a52-4f97-a7da-4f756315b3f4", "")
             {
                 _academicextractInfo = new RepoItemInfo(this, "AcademicExtract", ".//a[@innertext='Academic Extract']", 30000, null, "5f95c61a-732b-463d-a24a-1847574f6cd8");
                 _reportsInfo = new RepoItemInfo(this, "Reports", ".//a[@innertext='Reports']", 30000, null, "93211f96-5811-43a7-b78f-36c0459fd008");

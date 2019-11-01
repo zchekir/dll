@@ -20,10 +20,13 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace CSP.General
+namespace DCT.Azure
 {
-    public partial class Verify_Version_Client
+    public partial class EnterPassword
     {
+    	
+    	//Variable to catch the xpath
+    	InputTag PasswordField = null;
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -32,10 +35,20 @@ namespace CSP.General
         {
             // Your recording specific initialization code goes here.
         }
-
-        public void ClientValidation()
-        {
-        	Validate.AreEqual(engine.Helpers.WebService.ClientVersion, ClientVersion);
+        
+       //Enter Password 
+            public void PasswordInput(string Password)
+            {
+        	if (Host.Local.TryFindSingle<InputTag>("//input[#'passwordInput']", new Duration(1500), out PasswordField)){
+               
+                PasswordField.Click();
+                PasswordField.PressKeys(Password);
+                
+            }else{
+              
+                Report.Log(ReportLevel.Info ,"Password is Not required");
+            }
+        	
         }
 
     }

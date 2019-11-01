@@ -20,47 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT
+namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AcademicExtract recording.
+    ///The Open_DCT_URL recording.
     /// </summary>
-    [TestModule("72c0a13b-d5e0-4ed7-916c-6c440cfaecab", ModuleType.Recording, 1)]
-    public partial class AcademicExtract : ITestModule
+    [TestModule("5d2ef5fe-273d-43ea-b4d5-a8d2efc9ca23", ModuleType.Recording, 1)]
+    public partial class Open_DCT_URL : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the DCTRepository repository.
+        /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
-        public static DCTRepository repo = DCTRepository.Instance;
+        public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static AcademicExtract instance = new AcademicExtract();
+        static Open_DCT_URL instance = new Open_DCT_URL();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AcademicExtract()
+        public Open_DCT_URL()
         {
+            DCTURL = "";
+            Browser = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AcademicExtract Instance
+        public static Open_DCT_URL Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _DCTURL;
+
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable DCTURL.
         /// </summary>
-        [TestVariable("4868fd53-f0cc-4bcc-ad64-84d67b341b4d")]
-        public string CSPDOM
+        [TestVariable("8463e4a6-eafa-4aa9-b3f9-8c31b5959f9b")]
+        public string DCTURL
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
+            get { return _DCTURL; }
+            set { _DCTURL = value; }
+        }
+
+        string _Browser;
+
+        /// <summary>
+        /// Gets or sets the value of variable Browser.
+        /// </summary>
+        [TestVariable("ea48e640-72d1-4391-844d-f960d0c21bf4")]
+        public string Browser
+        {
+            get { return _Browser; }
+            set { _Browser = value; }
         }
 
 #endregion
@@ -89,20 +105,8 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AcademicExtract' at Center.", repo.CogstateSolutionPlatform.AcademicExtractInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AcademicExtract.Click();
-            Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5m.", new RecordItemIndex(2));
-            //Delay.Duration(300000, false);
-            
-            UserCodeMethod(repo.AcademicExtractOrrPowerBI.ProtocolIDInfo);
-            Delay.Milliseconds(0);
-            
-            Report_Screenshot();
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $DCTURL with browser specified by variable $Browser in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(DCTURL, Browser, "", false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
         }

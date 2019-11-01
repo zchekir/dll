@@ -53,6 +53,16 @@ namespace DCT
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("4868fd53-f0cc-4bcc-ad64-84d67b341b4d")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
+
 #endregion
 
         /// <summary>

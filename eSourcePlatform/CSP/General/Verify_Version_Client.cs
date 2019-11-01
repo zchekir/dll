@@ -42,7 +42,7 @@ namespace CSP.General
         public Verify_Version_Client()
         {
             CSPDOM = "cgst-qc-orr.azurewebsites.net";
-            CSPClientVesrion_ = "1.10.0-rc.7526";
+            ClientVersion = "1.10.0-rc.7526";
         }
 
         /// <summary>
@@ -55,16 +55,16 @@ namespace CSP.General
 
 #region Variables
 
-        string _CSPClientVesrion_;
+        string _ClientVersion;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPClientVesrion_.
+        /// Gets or sets the value of variable ClientVersion.
         /// </summary>
         [TestVariable("7e058fce-68f4-4858-9c01-983db9e3c891")]
-        public string CSPClientVesrion_
+        public string ClientVersion
         {
-            get { return _CSPClientVesrion_; }
-            set { _CSPClientVesrion_ = value; }
+            get { return _ClientVersion; }
+            set { _ClientVersion = value; }
         }
 
         /// <summary>

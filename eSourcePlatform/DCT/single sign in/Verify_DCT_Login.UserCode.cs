@@ -20,13 +20,10 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace DCT.Azure
+namespace DCT.single_sign_in
 {
-    public partial class Password
+    public partial class Verify_DCT_Login
     {
-    	
-    	//Variable to catch the xpath
-    	InputTag EnterPassword = null;
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -34,21 +31,6 @@ namespace DCT.Azure
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-        
-       //Enter Password 
-            public void PasswordInput(string Password)
-            {
-        	if (Host.Local.TryFindSingle<InputTag>("//input[#'passwordInput']", new Duration(1500), out EnterPassword)){
-               
-                EnterPassword.Click();
-                EnterPassword.PressKeys(Password);
-                
-            }else{
-              
-                Report.Log(ReportLevel.Info ,"Password is Not required");
-            }
-        	
         }
 
     }

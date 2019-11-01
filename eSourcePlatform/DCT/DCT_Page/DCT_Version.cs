@@ -66,6 +66,16 @@ namespace DCT.DCT_Page
             set { _DCTVersionQuery = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable AzureDOM.
+        /// </summary>
+        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
+        public string AzureDOM
+        {
+            get { return repo.AzureDOM; }
+            set { repo.AzureDOM = value; }
+        }
+
 #endregion
 
         /// <summary>

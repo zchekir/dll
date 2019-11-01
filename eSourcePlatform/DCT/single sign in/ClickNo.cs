@@ -85,10 +85,6 @@ namespace DCT.single_sign_in
             Mouse_Click_IdBtnBack(repo.SignInToYourAccount.IdBtnBackInfo);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(2));
-            //Host.Current.CloseApplication(repo.DataCleaningTool.Self, new Duration(0));
-            //Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

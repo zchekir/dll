@@ -24,22 +24,22 @@ namespace DCT.Azure
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Password recording.
+    ///The EnterPassword recording.
     /// </summary>
     [TestModule("73fe110e-198a-4073-aaac-d97e2fa59e5d", ModuleType.Recording, 1)]
-    public partial class Password : ITestModule
+    public partial class EnterPassword : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static Password instance = new Password();
+        static EnterPassword instance = new EnterPassword();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Password()
+        public EnterPassword()
         {
             DCT_Password = "";
         }
@@ -47,7 +47,7 @@ namespace DCT.Azure
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Password Instance
+        public static EnterPassword Instance
         {
             get { return instance; }
         }

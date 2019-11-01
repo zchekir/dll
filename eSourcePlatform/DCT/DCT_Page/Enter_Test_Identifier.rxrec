@@ -5,7 +5,7 @@ id="d402610e-47e3-451e-84ef-01a160a71297"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Test_Identifier
+		Enter_Test_Identifier
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Test_Identifier"
+	classname="Enter_Test_Identifier"
 	namespace="DCT.DCT_Page">
 	</codegen>
 	<variables>
@@ -50,7 +50,7 @@ rxversion="8.3">
 			</bindings>
 		</loggingrecorditem>
 		<userrecorditem
-		classname="Test_Identifier"
+		classname="Enter_Test_Identifier"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="TestInd"
@@ -75,38 +75,6 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="Test_Identifier"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="Key_sequence_EnterTestIdentifier"
-		namespace="DCT.DCT_Page"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="24d40217-4e64-44f1-be4e-901f8d3744d7">
-				<argument
-				argname="inputtagInfo"
-				id="8daecb5f-0d6e-407f-a914-ad53617685c7">
-					<argvaluetype>
-						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-					<info
-					id="86244d71-2a9e-4044-a2a8-18c3c1d6851b"
-					sourcename="ItemRecorderEditor">
-						<path>
-							/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//input[#'findByAssessmentId']
-						</path>
-					</info>
-				</argument>
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
@@ -124,7 +92,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Test_Identifier.UserCode.cs
+		Enter_Test_Identifier.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -53,6 +53,16 @@ namespace DCT.DCT_Page
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
+        {
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
+        }
+
 #endregion
 
         /// <summary>

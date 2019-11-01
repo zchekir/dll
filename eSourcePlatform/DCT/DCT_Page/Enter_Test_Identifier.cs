@@ -24,22 +24,22 @@ namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Test_Identifier recording.
+    ///The Enter_Test_Identifier recording.
     /// </summary>
     [TestModule("d402610e-47e3-451e-84ef-01a160a71297", ModuleType.Recording, 1)]
-    public partial class Test_Identifier : ITestModule
+    public partial class Enter_Test_Identifier : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static Test_Identifier instance = new Test_Identifier();
+        static Enter_Test_Identifier instance = new Enter_Test_Identifier();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Test_Identifier()
+        public Enter_Test_Identifier()
         {
             TestIdentifier = "";
         }
@@ -47,7 +47,7 @@ namespace DCT.DCT_Page
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Test_Identifier Instance
+        public static Enter_Test_Identifier Instance
         {
             get { return instance; }
         }
@@ -96,9 +96,6 @@ namespace DCT.DCT_Page
             
             TestInd(TestIdentifier);
             Delay.Milliseconds(0);
-            
-            //Key_sequence_EnterTestIdentifier(repo.DataCleaningTool.EnterTestIdentifierInfo);
-            //Delay.Milliseconds(0);
             
         }
 

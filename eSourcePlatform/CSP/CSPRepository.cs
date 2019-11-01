@@ -8407,7 +8407,7 @@ namespace CSP
             public CogstateSolutionPlatformChromeAppFolder(RepoGenBaseFolder parentFolder) :
                     base("CogstateSolutionPlatformChrome", "/form[@title~'Cogstate Solution Platform']", parentFolder, 30000, null, true, "1c825908-6a91-4415-8adf-2cb54b5f8fc9", "")
             {
-                _downloadedextractfileInfo = new RepoItemInfo(this, "DownloadedExtractFile", "container[@accessiblename~'^Cogstate\\ Solution\\ Platfor']//container[@accessiblename='Downloads bar']/button[@accessiblename~'extract']", 30000, null, "d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278");
+                _downloadedextractfileInfo = new RepoItemInfo(this, "DownloadedExtractFile", "container[@accessiblename~'^Cogstate\\ Solution\\ Platfor']//container[@accessiblename='Downloads bar']//button[@accessiblename~'extract']", 30000, null, "d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278");
             }
 
             /// <summary>

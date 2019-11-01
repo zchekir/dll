@@ -66,6 +66,16 @@ namespace DCT.RCC_Page
             set { _RCCPassword = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable RCCDOM.
+        /// </summary>
+        [TestVariable("5a760c9f-9fed-4f01-8c4c-f1cd491cbeda")]
+        public string RCCDOM
+        {
+            get { return repo.RCCDOM; }
+            set { repo.RCCDOM = value; }
+        }
+
 #endregion
 
         /// <summary>

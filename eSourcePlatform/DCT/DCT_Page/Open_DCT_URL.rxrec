@@ -5,7 +5,7 @@ id="5d2ef5fe-273d-43ea-b4d5-a8d2efc9ca23"
 mode="Global"
 rxversion="8.3">
 	<name>
-		DCT_URL
+		Open_DCT_URL
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="DCT_URL"
+	classname="Open_DCT_URL"
 	namespace="DCT.DCT_Page">
 	</codegen>
 	<variables>
@@ -37,42 +37,6 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="DCT_URL"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="DCTLogin"
-		namespace="DCT.DCT_Page"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="c9f16c55-43a7-4fda-b89e-6bda8a0aa722">
-				<argument
-				argname="URL"
-				id="584e2e3c-2b2d-45c5-9d52-625136670882"
-				variable="DCTURL">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="Browser"
-				id="227a43fe-6d77-4995-9c6b-f4aa1fc56605"
-				variable="Browser">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 		<openwebsiterecorditem
 		args=""
 		browser="Chrome"
@@ -91,33 +55,15 @@ rxversion="8.3">
 				target="Url"
 				variable="DCTURL">
 				</binding>
+				<binding
+				target="BrowserName"
+				variable="Browser">
+				</binding>
 			</bindings>
 			<url>
 				http://www.ranorex.com
 			</url>
 		</openwebsiterecorditem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message="LoggedIn Successfully"
-		optional="False"
-		reportlevel="Success;110"
-		searchpropertyid="0a3f8aef-8355-476c-86c9-2bf76be35a32">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</loggingrecorditem>
-		<explicitdelayitem
-		duration="1ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
@@ -135,7 +81,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		DCT_URL.UserCode.cs
+		Open_DCT_URL.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

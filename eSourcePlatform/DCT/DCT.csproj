@@ -178,14 +178,14 @@
       <id>f524b0ea-a1e1-41b7-8deb-72e67c0e0335</id>
       <BoundTo>8c612756-2e3b-41d2-ad19-2c315a5280e7</BoundTo>
     </Compile>
-    <Compile Include="Azure\Password.cs">
-      <DependentUpon>Password.rxrec</DependentUpon>
+    <Compile Include="Azure\EnterPassword.cs">
+      <DependentUpon>EnterPassword.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>73f63ac3-731e-4ca8-b890-e839f23356c2</id>
       <BoundTo>76e1b26b-6abe-478d-b33f-cb8360c73d09</BoundTo>
     </Compile>
-    <Compile Include="Azure\Password.UserCode.cs">
-      <DependentUpon>Password.rxrec</DependentUpon>
+    <Compile Include="Azure\EnterPassword.UserCode.cs">
+      <DependentUpon>EnterPassword.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>f91bfca2-bf9c-48c2-8d31-d37956303caf</id>
       <BoundTo>76e1b26b-6abe-478d-b33f-cb8360c73d09</BoundTo>
@@ -388,14 +388,14 @@
       <id>f5892eff-4273-44dd-a03d-28f4d00426a3</id>
       <BoundTo>2b6cf2de-ded1-46f1-8f23-f559a678e887</BoundTo>
     </Compile>
-    <Compile Include="DCT_Page\DCT_URL.cs">
-      <DependentUpon>DCT_URL.rxrec</DependentUpon>
+    <Compile Include="DCT_Page\Open_DCT_URL.cs">
+      <DependentUpon>Open_DCT_URL.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>cc02a328-d99d-4bda-8edb-35f0d2349693</id>
       <BoundTo>e95a132e-58c8-498a-a8bc-644dfb1159fb</BoundTo>
     </Compile>
-    <Compile Include="DCT_Page\DCT_URL.UserCode.cs">
-      <DependentUpon>DCT_URL.rxrec</DependentUpon>
+    <Compile Include="DCT_Page\Open_DCT_URL.UserCode.cs">
+      <DependentUpon>Open_DCT_URL.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>db0592af-fec7-4504-9c1a-556df5870895</id>
       <BoundTo>e95a132e-58c8-498a-a8bc-644dfb1159fb</BoundTo>
@@ -460,14 +460,14 @@
       <id>55161053-198d-47db-9062-9778ee64e32c</id>
       <BoundTo>e48e05dd-4ec3-4fba-9997-aa98f66596b4</BoundTo>
     </Compile>
-    <Compile Include="DCT_Page\Test_Identifier.cs">
-      <DependentUpon>Test_Identifier.rxrec</DependentUpon>
+    <Compile Include="DCT_Page\Enter_Test_Identifier.cs">
+      <DependentUpon>Enter_Test_Identifier.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>86db7085-ade8-468c-b7cb-e4f3c28900e0</id>
       <BoundTo>3f879aee-a619-4789-925f-1687484d4501</BoundTo>
     </Compile>
-    <Compile Include="DCT_Page\Test_Identifier.UserCode.cs">
-      <DependentUpon>Test_Identifier.rxrec</DependentUpon>
+    <Compile Include="DCT_Page\Enter_Test_Identifier.UserCode.cs">
+      <DependentUpon>Enter_Test_Identifier.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>5edacd4b-4460-4c8e-aa2a-673a1f66809c</id>
       <BoundTo>3f879aee-a619-4789-925f-1687484d4501</BoundTo>
@@ -883,6 +883,18 @@
       <id>89bac8ef-d24b-4b7e-954f-f073742db4cb</id>
       <BoundTo>20b0300d-0752-4a3a-86e9-fec5111706ac</BoundTo>
     </Compile>
+    <Compile Include="single sign in\Verify_DCT_Login.cs">
+      <BoundTo>e2981768-c740-4ab1-aa6c-456e43192464</BoundTo>
+      <DependentUpon>Verify_DCT_Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ccfc0f43-47c3-4444-9ed9-d44667068dd5</id>
+    </Compile>
+    <Compile Include="single sign in\Verify_DCT_Login.UserCode.cs">
+      <BoundTo>e2981768-c740-4ab1-aa6c-456e43192464</BoundTo>
+      <DependentUpon>Verify_DCT_Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>370faa91-f4ca-43f2-ac7f-83fb0288f1b1</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="AcademicExtract.rxrec">
@@ -903,7 +915,7 @@
       <id>8c612756-2e3b-41d2-ad19-2c315a5280e7</id>
       <recordtableid>72bcb94e-5a74-4ad7-a339-a7fc508ab8d5</recordtableid>
     </None>
-    <None Include="Azure\Password.rxrec">
+    <None Include="Azure\EnterPassword.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>76e1b26b-6abe-478d-b33f-cb8360c73d09</id>
       <recordtableid>73fe110e-198a-4073-aaac-d97e2fa59e5d</recordtableid>
@@ -999,7 +1011,7 @@
       <id>2b6cf2de-ded1-46f1-8f23-f559a678e887</id>
       <recordtableid>c0eda39e-1efb-45e4-b52f-162a54a54faa</recordtableid>
     </None>
-    <None Include="DCT_Page\DCT_URL.rxrec">
+    <None Include="DCT_Page\Open_DCT_URL.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>e95a132e-58c8-498a-a8bc-644dfb1159fb</id>
       <recordtableid>5d2ef5fe-273d-43ea-b4d5-a8d2efc9ca23</recordtableid>
@@ -1029,7 +1041,7 @@
       <recordtableid>1e474587-a2e6-4c33-b39d-7673a9867909</recordtableid>
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
     </None>
-    <None Include="DCT_Page\Test_Identifier.rxrec">
+    <None Include="DCT_Page\Enter_Test_Identifier.rxrec">
       <id>3f879aee-a619-4789-925f-1687484d4501</id>
       <recordtableid>d402610e-47e3-451e-84ef-01a160a71297</recordtableid>
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
@@ -1203,6 +1215,11 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>20b0300d-0752-4a3a-86e9-fec5111706ac</id>
       <recordtableid>133e5a1c-f5f6-4b01-a455-fc038cc1133d</recordtableid>
+    </None>
+    <None Include="single sign in\Verify_DCT_Login.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>e2981768-c740-4ab1-aa6c-456e43192464</id>
+      <recordtableid>34652f57-617b-4b72-bbb8-4c352b277962</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

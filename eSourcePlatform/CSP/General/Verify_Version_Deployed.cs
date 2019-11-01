@@ -41,7 +41,7 @@ namespace CSP.General
         /// </summary>
         public Verify_Version_Deployed()
         {
-            Version = "1.10.0.7526";
+            ServerVersion = "1.10.0.7526";
             CSPDOM = "cgst-qc-orr.azurewebsites.net";
         }
 
@@ -55,16 +55,16 @@ namespace CSP.General
 
 #region Variables
 
-        string _Version;
+        string _ServerVersion;
 
         /// <summary>
-        /// Gets or sets the value of variable Version.
+        /// Gets or sets the value of variable ServerVersion.
         /// </summary>
         [TestVariable("3405ba1d-b660-45c9-ae63-2a2a96b1364e")]
-        public string Version
+        public string ServerVersion
         {
-            get { return _Version; }
-            set { _Version = value; }
+            get { return _ServerVersion; }
+            set { _ServerVersion = value; }
         }
 
         /// <summary>

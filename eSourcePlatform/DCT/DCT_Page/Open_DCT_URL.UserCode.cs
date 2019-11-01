@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT.DCT_Page
 {
-    public partial class DCT_URL
+    public partial class Open_DCT_URL
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,14 +32,6 @@ namespace DCT.DCT_Page
         {
             // Your recording specific initialization code goes here.
         }
-        
-        
-// Navigate and Login to DCT 
-        public void DCTLogin(string URL, string Browser)
-        {
-            Host.Current.OpenBrowser(URL,Browser);
-          
-        }
-
+             
     }
 }

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT.DCT_Page
 {
-    public partial class Test_Identifier
+    public partial class Enter_Test_Identifier
     	
     {
         /// <summary>
@@ -42,13 +42,6 @@ namespace DCT.DCT_Page
         	 EnterTestidentifier.Click();
              Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
              EnterTestidentifier.PressKeys(TestIdn);
-        }
-
-        public void Key_sequence_EnterTestIdentifier(RepoItemInfo inputtagInfo )
-        {
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'inputtagInfo'.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().PressKeys("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
-            inputtagInfo.FindAdapter<InputTag>().PressKeys(TestIdentifier);
         }
 
     }

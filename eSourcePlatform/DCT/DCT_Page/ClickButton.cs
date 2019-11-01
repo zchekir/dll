@@ -53,6 +53,16 @@ namespace DCT.DCT_Page
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
+        {
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -82,15 +92,11 @@ namespace DCT.DCT_Page
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DataCleaningTool.ClickFindByAssessmentId' at Center.", repo.DataCleaningTool.ClickFindByAssessmentIdInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool.ClickFindByAssessmentId.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickFindByAssessmentId' at Center.", repo.DataCleaningTool.ClickFindByAssessmentIdInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.ClickFindByAssessmentId.Click();
             Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.OpenResults' at Center.", repo.DataCleaningTool.OpenResultsInfo, new RecordItemIndex(2));
-            //repo.DataCleaningTool.OpenResults.Click();
-            //Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
             Delay.Duration(500, false);
             
         }

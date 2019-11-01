@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="34652f57-617b-4b72-bbb8-4c352b277962"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_DCT_Login
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_DCT_Login"
+	namespace="DCT.single_sign_in">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Logged in Successfully"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="847040af-ebfb-4642-849d-ff0b1605d8ed">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8d2bb7de-1088-4124-a99c-b77e11c31af1"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DCTURL]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+	name="DCTRepository"
+	relativepath="..\DCTRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="DCTRepository"
+		namespace="DCT">
+		</codegen>
+		<rootfolder
+		id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_DCT_Login.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -54,16 +54,14 @@ namespace DCT.single_sign_in
 
 #region Variables
 
-        string _CSPUsername;
-
         /// <summary>
         /// Gets or sets the value of variable CSPUsername.
         /// </summary>
         [TestVariable("08bcae22-9936-418c-853d-2a82e345cf1c")]
         public string CSPUsername
         {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
+            get { return repo.CSPUsername; }
+            set { repo.CSPUsername = value; }
         }
 
 #endregion

@@ -207,6 +207,12 @@ rxversion="8.3">
 					variableid="558517cb-7077-4490-b81e-859cf85ecae5"
 					variablename="URL">
 					</var>
+					<var
+					dataname="Browser"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="3fffc709-39ea-40a0-929a-c52c4bca5215"
+					variablename="Browser">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -325,7 +331,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="17a5ff3e-3ae0-4cb1-843e-ebecbd30ca71"
-			name="DCT_URL"
+			name="Open_DCT_URL"
 			ref="5d2ef5fe-273d-43ea-b4d5-a8d2efc9ca23"
 			type="Recording">
 				<databinding>
@@ -515,6 +521,18 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
+					variablename="EventDefName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -738,6 +756,14 @@ rxversion="8.3">
 			name="Select_Language"
 			ref="035a9383-4953-4e5a-aa79-e7d58792e684"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="2d9468c8-1eda-45ed-9b44-4a06c3476022"
@@ -789,7 +815,7 @@ rxversion="8.3">
 					dataname="VersionDeployed"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
-					variablename="CSPClientVesrion_">
+					variablename="ClientVersion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1154,7 +1180,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="47b3db9d-24d7-4100-ab08-c6ddd249f14a"
-			name="Test_Identifier"
+			name="Enter_Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -1439,7 +1465,7 @@ rxversion="8.3">
 			</testsuite>
 			<testmodule
 			id="5103f70b-0dca-48e4-8510-250355f78a95"
-			name="Test_Identifier"
+			name="Enter_Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -1644,6 +1670,14 @@ rxversion="8.3">
 			name="Select_Gender"
 			ref="996e71c3-be62-4c72-9f11-64752fe074a4"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="65159371-8ff0-41f3-b9be-c32efffa4f94"
@@ -1725,14 +1759,6 @@ rxversion="8.3">
 			name="EnterAzurePassword"
 			ref="ea399d48-376a-48ca-be23-6753d5fe4e10"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="OctopusPassword"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="2d566e3b-6a30-4d9c-94f0-3b4848ae1ea3"
-					variablename="OctopusPassword">
-					</var>
-				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="6a543fb1-3315-4057-82be-54c1b0b91690"
@@ -1740,7 +1766,7 @@ rxversion="8.3">
 			</smartfoldernode>
 			<testmodule
 			id="6dd97b96-a8fa-472e-a2a9-76f2d08216d3"
-			name="Test_Identifier"
+			name="Enter_Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -1824,7 +1850,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="72f05832-6038-4187-a215-17054a5ad707"
-			name="Test_Identifier"
+			name="Enter_Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -2027,6 +2053,12 @@ rxversion="8.3">
 					variableid="7e849208-d2d3-4d04-9470-753f5d81f297"
 					variablename="RCC_Study_Name">
 					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="0a1f4511-792f-4cbf-818c-dcbe6257b7c8"
+					variablename="RandNum">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -2117,7 +2149,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="83eed22f-34cc-48fc-a255-b05a341dc159"
-			name="Test_Identifier"
+			name="Enter_Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -2290,7 +2322,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
-			name="Password"
+			name="EnterPassword"
 			ref="73fe110e-198a-4073-aaac-d97e2fa59e5d"
 			type="Recording">
 				<databinding>
@@ -2307,6 +2339,14 @@ rxversion="8.3">
 			name="Enter_DateOfBirth"
 			ref="d4b3da23-7253-49b7-9aa6-1a031c7a076b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="8f4365e4-be00-4774-80a2-c317e5c1ec0e"
@@ -2354,7 +2394,7 @@ rxversion="8.3">
 			</setup>
 			<testmodule
 			id="907eaacb-f8da-41b4-8971-40f4e74db0cb"
-			name="Test_Identifier"
+			name="Enter_Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -2481,6 +2521,14 @@ rxversion="8.3">
 			name="Click_SaveAndExit_Button"
 			ref="fb533934-7407-4d5b-80bb-4ef4f2d9f514"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="9b927b72-8231-49a9-af45-a3b7f8e1046d"
@@ -2567,6 +2615,14 @@ rxversion="8.3">
 			name="Click_SaveAndExit_Button"
 			ref="fb533934-7407-4d5b-80bb-4ef4f2d9f514"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a17eb437-d57f-4ea4-bdcc-f56795d34462"
@@ -2683,7 +2739,7 @@ rxversion="8.3">
 			</smartfoldernode>
 			<testmodule
 			id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
-			name="Test_Identifier"
+			name="Enter_Test_Identifier"
 			ref="d402610e-47e3-451e-84ef-01a160a71297"
 			type="Recording">
 				<databinding>
@@ -2758,6 +2814,14 @@ rxversion="8.3">
 			name="Select_Gender"
 			ref="996e71c3-be62-4c72-9f11-64752fe074a4"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ac70f92e-2c7a-4a44-82f5-b257b4e586de"
@@ -3066,12 +3130,28 @@ rxversion="8.3">
 			name="Enter_DateOfBirth"
 			ref="d4b3da23-7253-49b7-9aa6-1a031c7a076b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="bcb3463b-f390-4f30-8c19-98a39bb99e63"
 			name="Select_Language"
 			ref="035a9383-4953-4e5a-aa79-e7d58792e684"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="DOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="bcfc6b10-ce11-435f-bf9b-4fabc532536c"
@@ -3313,7 +3393,7 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="SecondEventDefname"
+					dataname="EventDefName"
 					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
 					variablename="EventDefName">
@@ -3478,14 +3558,6 @@ rxversion="8.3">
 			name="EnterAzurePassword"
 			ref="ea399d48-376a-48ca-be23-6753d5fe4e10"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="OctopusPassword"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="2d566e3b-6a30-4d9c-94f0-3b4848ae1ea3"
-					variablename="OctopusPassword">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="d0219ff3-7e92-4ae5-a3b0-a08747a49b32"
@@ -3498,6 +3570,12 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="20d68c2c-2be2-45b9-82cc-82e44ec453b2"
 					variablename="AzureURL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="28d9d4d6-7384-4f32-907e-1a70d33054bd"
+					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3584,6 +3662,12 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="20d68c2c-2be2-45b9-82cc-82e44ec453b2"
 					variablename="AzureURL">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="28d9d4d6-7384-4f32-907e-1a70d33054bd"
+					variablename="Browser">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3805,7 +3889,7 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="SecondEventDefname"
+					dataname="EventDefName"
 					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 					variableid="94203d67-493a-4d36-b096-baad7df5be7a"
 					variablename="EventDefName">
@@ -3852,7 +3936,7 @@ rxversion="8.3">
 					dataname="VersionDeployed"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
-					variablename="Version">
+					variablename="ServerVersion">
 					</var>
 					<var
 					dataname="CSPDOM"
@@ -4121,6 +4205,18 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="EventDefName"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
+					variablename="EventDefName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5081,7 +5177,7 @@ rxversion="8.3">
 							name="NavigateToDCT">
 								<testmodule
 								id="17a5ff3e-3ae0-4cb1-843e-ebecbd30ca71"
-								name="DCT_URL">
+								name="Open_DCT_URL">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -5105,7 +5201,7 @@ rxversion="8.3">
 							name="Enter_Password">
 								<testmodule
 								id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
-								name="Password">
+								name="EnterPassword">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -5140,7 +5236,7 @@ rxversion="8.3">
 								name="setup">
 									<testmodule
 									id="5103f70b-0dca-48e4-8510-250355f78a95"
-									name="Test_Identifier">
+									name="Enter_Test_Identifier">
 									</testmodule>
 									<testmodule
 									id="1d8b9b35-18b1-446d-b9b0-13ab10ab0a32"
@@ -5160,7 +5256,7 @@ rxversion="8.3">
 									</testmodule>
 									<testmodule
 									id="a7bd085b-52b4-4d56-8fa9-c816fd65cfbf"
-									name="Test_Identifier">
+									name="Enter_Test_Identifier">
 									</testmodule>
 									<testmodule
 									id="db1beae5-2b25-406d-9ae6-3efd250562c2"
@@ -5208,7 +5304,7 @@ rxversion="8.3">
 								name="setup">
 									<testmodule
 									id="6dd97b96-a8fa-472e-a2a9-76f2d08216d3"
-									name="Test_Identifier">
+									name="Enter_Test_Identifier">
 									</testmodule>
 									<testmodule
 									id="b6323154-befa-4d17-af54-221e47fdc70f"
@@ -5244,7 +5340,7 @@ rxversion="8.3">
 								name="setup">
 									<testmodule
 									id="47b3db9d-24d7-4100-ab08-c6ddd249f14a"
-									name="Test_Identifier">
+									name="Enter_Test_Identifier">
 									</testmodule>
 									<testmodule
 									id="ee2e5388-6c15-4722-a561-b41a2e7974ba"
@@ -5269,7 +5365,7 @@ rxversion="8.3">
 							name="Test_ClearPrimary_">
 								<testmodule
 								id="72f05832-6038-4187-a215-17054a5ad707"
-								name="Test_Identifier">
+								name="Enter_Test_Identifier">
 								</testmodule>
 								<testmodule
 								id="92c67ff2-c5c4-4fed-991b-dae14fe977cb"
@@ -5293,7 +5389,7 @@ rxversion="8.3">
 							name="TestIdentifier">
 								<testmodule
 								id="907eaacb-f8da-41b4-8971-40f4e74db0cb"
-								name="Test_Identifier">
+								name="Enter_Test_Identifier">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -5357,7 +5453,7 @@ rxversion="8.3">
 							name="ConfirmTheMove">
 								<testmodule
 								id="83eed22f-34cc-48fc-a255-b05a341dc159"
-								name="Test_Identifier">
+								name="Enter_Test_Identifier">
 								</testmodule>
 								<testmodule
 								id="0deb6909-941d-4e2e-8095-f1764ca502da"
@@ -5896,9 +5992,6 @@ rxversion="8.3">
 					EventDefName
 				</column>
 				<column>
-					SecondEventDefname
-				</column>
-				<column>
 					CSVConfig
 				</column>
 				<column>
@@ -5911,7 +6004,7 @@ rxversion="8.3">
 			<maskedcolumns>
 			</maskedcolumns>
 			<file>
-				..\eSourcePlatform\RCCCConnector.csv
+				..\eSourcePlatform\RCCConnector.csv
 			</file>
 		</DataSource>
 	</datasources>
