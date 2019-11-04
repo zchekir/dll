@@ -38,11 +38,11 @@ namespace DCT
         	
         {
             //randome number:
-            Random random = new Random();
-            int randomNumber = random.Next();
+          //  Random random = new Random();
+           // int randomNumber = random.Next();
         	
         	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SubNumber' with focus on 'inputtagInfo'.", inputtagInfo);
-        	inputtagInfo.FindAdapter<InputTag>().PressKeys(randomNumber.ToString());
+        	inputtagInfo.FindAdapter<InputTag>().PressKeys(inputtagInfo.ToString());
         }
 
     }

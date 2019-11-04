@@ -42,6 +42,7 @@ namespace DCT
         public N_Subject()
         {
             SubNumber = "";
+            RandNum = "";
         }
 
         /// <summary>
@@ -74,6 +75,16 @@ namespace DCT
         {
             get { return repo.RCCDOM; }
             set { repo.RCCDOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable RandNum.
+        /// </summary>
+        [TestVariable("ee61b805-cb92-411a-a5a6-3ada172241d7")]
+        public string RandNum
+        {
+            get { return repo.RandNum; }
+            set { repo.RandNum = value; }
         }
 
 #endregion
@@ -114,7 +125,11 @@ namespace DCT
             repo.REDCapCloud.selectSite.Click();
             Delay.Milliseconds(200);
             
-            Key_sequence_SubjectNumber(repo.REDCapCloud.SubjectNumberInfo);
+            //Key_sequence_SubjectNumber(repo.REDCapCloud.SubjectNumberInfo);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'REDCapCloud1.EnterSubjectNumber'.", repo.REDCapCloud1.EnterSubjectNumberInfo, new RecordItemIndex(4));
+            repo.REDCapCloud1.EnterSubjectNumber.PressKeys(RandNum);
             Delay.Milliseconds(0);
             
         }

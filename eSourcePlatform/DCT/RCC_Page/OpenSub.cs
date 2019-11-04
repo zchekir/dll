@@ -89,8 +89,15 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.OpenSubject' at Center.", repo.REDCapCloud.OpenSubjectInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.OpenSubject.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.OpenSubject' at Center.", repo.REDCapCloud.OpenSubjectInfo, new RecordItemIndex(0));
+            //repo.REDCapCloud.OpenSubject.Click();
+            //Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud1.StudyName' at Center.", repo.REDCapCloud1.StudyNameInfo, new RecordItemIndex(2));
+            repo.REDCapCloud1.StudyName.Click();
             Delay.Milliseconds(200);
             
         }

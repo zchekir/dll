@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b732c793-4846-4f8d-8871-52ac8de6a716"
+mode="Global"
+rxversion="8.3">
+	<name>
+		SaveVisit
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SaveVisit"
+	namespace="eSourcePlatform">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="96fd0f7b-8877-4cae-9e4c-d9b1f9e9e7cb"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7c8e3148-ed4d-4b7e-b696-85100766f640"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//span[@innertext='Save and Exit']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1b4df078-48fd-44ad-b314-173b9dd113af"
+	name="eSourcePlatformRepository"
+	relativepath="eSourcePlatformRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="eSourcePlatformRepository"
+		namespace="eSourcePlatform">
+		</codegen>
+		<rootfolder
+		id="d677fdb9-00e1-4467-9fce-a84c063e8bd0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SaveVisit.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

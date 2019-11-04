@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="201aa709-90b2-4a77-b98f-d675294a56a1"
+mode="Global"
+rxversion="8.3">
+	<name>
+		OpenExistingStudy
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenExistingStudy"
+	namespace="eSourcePlatform">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c5e4ed85-4602-4fe6-a1aa-3b5f5cf2fb11"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b7e9c226-23bf-40e1-9756-b817a2048676"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-orr.azurewebsites.net']//a[@innertext~'Orr']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="1b4df078-48fd-44ad-b314-173b9dd113af"
+	name="eSourcePlatformRepository"
+	relativepath="eSourcePlatformRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="eSourcePlatformRepository"
+		namespace="eSourcePlatform">
+		</codegen>
+		<rootfolder
+		id="d677fdb9-00e1-4467-9fce-a84c063e8bd0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenExistingStudy.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

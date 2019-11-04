@@ -33,7 +33,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -50,6 +50,30 @@ rxversion="8.3">
 			sourcename="RepositoryEditor">
 				<path>
 					/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext='screening']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="31c7da3a-d694-45b6-97f0-2af618e69926"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ae41e6b7-067c-466d-b053-1ffb9a4b43df"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext='Visit1']
 				</path>
 			</info>
 		</mouseitem>

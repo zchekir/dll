@@ -31,6 +31,10 @@ rxversion="8.3">
 		id="42f9e972-3123-4c7b-916d-03346e67d4a8"
 		name="SubNumber">
 		</var>
+		<var
+		id="ee61b805-cb92-411a-a5a6-3ada172241d7"
+		name="RandNum">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -235,7 +239,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="N_Subject"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Key_sequence_SubjectNumber"
 		namespace="DCT"
@@ -265,6 +269,128 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="59979e66-9ed4-46ec-af86-547a2f297b55">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="972775f8-a766-4c55-8ce5-b63405dd6144"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="280,466,200,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						enrollWidget_textSubjectNumber
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']
+				</path>
+			</info>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

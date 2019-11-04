@@ -33,6 +33,7 @@ namespace eSourcePlatform
         eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
         eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder _datacleaningtool;
         eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder _cogstatesolutionplatform1;
+        eSourcePlatformRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
 
         /// <summary>
         /// Gets the singleton class instance representing the eSourcePlatformRepository element repository.
@@ -55,6 +56,7 @@ namespace eSourcePlatform
             _academicextractorrpowerbi = new eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
             _datacleaningtool = new eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder(this);
             _cogstatesolutionplatform1 = new eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder(this);
+            _redcapcloud = new eSourcePlatformRepositoryFolders.REDCapCloudAppFolder(this);
         }
 
 #region Variables
@@ -149,6 +151,15 @@ namespace eSourcePlatform
         public virtual eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder CogstateSolutionPlatform1
         {
             get { return _cogstatesolutionplatform1; }
+        }
+
+        /// <summary>
+        /// The REDCapCloud folder.
+        /// </summary>
+        [RepositoryFolder("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
+        public virtual eSourcePlatformRepositoryFolders.REDCapCloudAppFolder REDCapCloud
+        {
+            get { return _redcapcloud; }
         }
     }
 
@@ -680,6 +691,124 @@ namespace eSourcePlatform
                 get
                 {
                     return _buttontaglogInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The REDCapCloudAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
+        public partial class REDCapCloudAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _visit1Info;
+            RepoItemInfo _addeventdialogwidgeteventnamebuttonInfo;
+            RepoItemInfo _saveandexitInfo;
+
+            /// <summary>
+            /// Creates a new REDCapCloud  folder.
+            /// </summary>
+            public REDCapCloudAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("REDCapCloud", "/dom[@domain='cgsqc.redcapcloud.com']", parentFolder, 30000, null, false, "9abf8027-74d3-4b93-9eb7-73c0ff634885", "")
+            {
+                _visit1Info = new RepoItemInfo(this, "Visit1", ".//a[@innertext='Visit1']", 30000, null, "8b400bc3-505d-4daf-b2f0-6c9904193dfd");
+                _addeventdialogwidgeteventnamebuttonInfo = new RepoItemInfo(this, "AddEventDialogWidgetEventNameButton", ".//button[#'addEventDialogWidget_eventName_button']", 30000, null, "de22f4e8-3cd2-4bef-9088-11089041ee9d");
+                _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//span[@innertext='Save and Exit']", 30000, null, "7c8e3148-ed4d-4b7e-b696-85100766f640");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Visit1 item.
+            /// </summary>
+            [RepositoryItem("8b400bc3-505d-4daf-b2f0-6c9904193dfd")]
+            public virtual Ranorex.ATag Visit1
+            {
+                get
+                {
+                    return _visit1Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Visit1 item info.
+            /// </summary>
+            [RepositoryItemInfo("8b400bc3-505d-4daf-b2f0-6c9904193dfd")]
+            public virtual RepoItemInfo Visit1Info
+            {
+                get
+                {
+                    return _visit1Info;
+                }
+            }
+
+            /// <summary>
+            /// The AddEventDialogWidgetEventNameButton item.
+            /// </summary>
+            [RepositoryItem("de22f4e8-3cd2-4bef-9088-11089041ee9d")]
+            public virtual Ranorex.ButtonTag AddEventDialogWidgetEventNameButton
+            {
+                get
+                {
+                    return _addeventdialogwidgeteventnamebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddEventDialogWidgetEventNameButton item info.
+            /// </summary>
+            [RepositoryItemInfo("de22f4e8-3cd2-4bef-9088-11089041ee9d")]
+            public virtual RepoItemInfo AddEventDialogWidgetEventNameButtonInfo
+            {
+                get
+                {
+                    return _addeventdialogwidgeteventnamebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExit item.
+            /// </summary>
+            [RepositoryItem("7c8e3148-ed4d-4b7e-b696-85100766f640")]
+            public virtual Ranorex.SpanTag SaveAndExit
+            {
+                get
+                {
+                    return _saveandexitInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExit item info.
+            /// </summary>
+            [RepositoryItemInfo("7c8e3148-ed4d-4b7e-b696-85100766f640")]
+            public virtual RepoItemInfo SaveAndExitInfo
+            {
+                get
+                {
+                    return _saveandexitInfo;
                 }
             }
         }

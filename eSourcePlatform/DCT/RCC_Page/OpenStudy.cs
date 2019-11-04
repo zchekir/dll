@@ -112,8 +112,12 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.OpenRCCStudy' at Center.", repo.REDCapCloud.OpenRCCStudyInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.OpenRCCStudy.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.OpenRCCStudy' at Center.", repo.REDCapCloud.OpenRCCStudyInfo, new RecordItemIndex(0));
+            //repo.REDCapCloud.OpenRCCStudy.Click();
+            //Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud1.StudyName' at Center.", repo.REDCapCloud1.StudyNameInfo, new RecordItemIndex(1));
+            repo.REDCapCloud1.StudyName.Click();
             Delay.Milliseconds(200);
             
         }

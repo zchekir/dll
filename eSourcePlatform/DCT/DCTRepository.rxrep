@@ -376,7 +376,7 @@ AAAASUVORK5CYII=
 			name="OpenSubject"
 			refimgid="024f1430-8f64-44bf-895e-4cc8e68a8c0c"
 			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//div[@innertext='screening']
+				/dom[@domain=$RCCDOM]//div[@innertext~'2019']
 			</item>
 			<item
 			addcaps="unknown,webelement,tdtag"
@@ -385,7 +385,7 @@ AAAASUVORK5CYII=
 			name="OpenEvent_"
 			refimgid="c6dc7ed2-ebee-4c19-93c5-7bd3d8d7713d"
 			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//div[@innertext='screening']
+				/dom[@domain=$RCCDOM]//div[@innertext='Visit1']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -927,6 +927,71 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</item>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ee5f1b78-cba3-4623-b016-bbed2259c88e"
+		isrooted="True"
+		name="REDCapCloud1"
+		refpath="/dom[@domain='cgsqc.redcapcloud.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48"
+			name="StudyName"
+			refimgid="b99623cd-ef6a-4e3e-9945-018d9429e018"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext~'2019']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="spantag"
+			id="e09f0e9e-96f1-4788-bcbe-285c0983e4e3"
+			name="SaveAndEnterData"
+			refimgid="3f682a44-778d-4d79-af4a-beac807835bd"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//span[@innertext='Save and Enter Data']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="ae41e6b7-067c-466d-b053-1ffb9a4b43df"
+			name="Click_Visit"
+			refimgid="09a21ce2-933c-4050-b3be-2c659817fcde"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext='Visit1']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="972775f8-a766-4c55-8ce5-b63405dd6144"
+			name="EnterSubjectNumber"
+			refimgid="b9035767-7946-453c-bc0e-3717752ed3c8"
+			refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']"
+			searchtimeout="30000ms">
+				/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']
+			</item>
+			<basepath>
+				/dom[@domain='cgsqc.redcapcloud.com']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
