@@ -33,5 +33,11 @@ namespace eSourcePlatform
             // Your recording specific initialization code goes here.
         }
 
+        public void Mouse_Click_EnterUsername(RepoItemInfo divtagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'divtagInfo' at Center.", divtagInfo);
+            divtagInfo.FindAdapter<DivTag>().Click();
+        }
+
     }
 }

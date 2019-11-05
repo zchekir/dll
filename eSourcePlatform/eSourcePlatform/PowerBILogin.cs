@@ -90,9 +90,8 @@ namespace eSourcePlatform
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.EnterUsername' at Center.", repo.SignInToYourAccount.EnterUsernameInfo, new RecordItemIndex(0));
-            repo.SignInToYourAccount.EnterUsername.Click();
-            Delay.Milliseconds(200);
+            Mouse_Click_EnterUsername(repo.SignInToYourAccount.EnterUsernameInfo);
+            Delay.Milliseconds(0);
             
         }
 

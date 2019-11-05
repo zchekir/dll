@@ -33,5 +33,12 @@ namespace eSourcePlatform
             // Your recording specific initialization code goes here.
         }
 
+        public void Key_sequence_PasswordInput(RepoItemInfo inputtagInfo)
+        {
+            
+        	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'inputtagInfo'.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().PressKeys(CSPPassword);
+        }
+
     }
 }

@@ -34,30 +34,38 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="PowerBILogin"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_EnterUsername"
+		namespace="eSourcePlatform"
 		optional="False"
-		searchpropertyid="0b9241af-1ee6-4041-ab29-e94b5e731a42"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="1205ddd4-2c1f-4adc-b9a6-c358ac98e060"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='login.microsoftonline.com']//div[@innertext=$CSPUsername]
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="1b14978a-df42-4b1d-aa0f-9450e853b718">
+				<argument
+				argname="divtagInfo"
+				id="bf7ae2d8-fc90-42b6-a45c-bf536d6d3a53">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="1205ddd4-2c1f-4adc-b9a6-c358ac98e060"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//div[@innertext=$CSPUsername]
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="1b4df078-48fd-44ad-b314-173b9dd113af"

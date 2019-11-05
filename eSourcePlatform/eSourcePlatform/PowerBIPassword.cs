@@ -92,8 +92,7 @@ namespace eSourcePlatform
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'SignIn.PasswordInput'.", repo.SignIn.PasswordInputInfo, new RecordItemIndex(0));
-            repo.SignIn.PasswordInput.PressKeys(CSPPassword);
+            Key_sequence_PasswordInput(repo.SignIn.PasswordInputInfo);
             Delay.Milliseconds(0);
             
         }
