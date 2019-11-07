@@ -53,16 +53,16 @@ namespace RedCapCloud
 
 #region Variables
 
-        string _DOM = "cgsqc.redcapcloud.com";
+        string _RCCDOM = "cgsqc.redcapcloud.com";
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable RCCDOM.
         /// </summary>
         [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string DOM
+        public string RCCDOM
         {
-            get { return _DOM; }
-            set { _DOM = value; }
+            get { return _RCCDOM; }
+            set { _RCCDOM = value; }
         }
 
         string _StudyName = "";
@@ -224,7 +224,7 @@ namespace RedCapCloud
             /// Creates a new REDCapCloud  folder.
             /// </summary>
             public REDCapCloudAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("REDCapCloud", "/dom[@domain=$DOM]", parentFolder, 30000, null, false, "b0cbbb2c-c046-4e87-ac05-f573ddb911c1", "")
+                    base("REDCapCloud", "/dom[@domain=$RCCDOM]", parentFolder, 30000, null, false, "b0cbbb2c-c046-4e87-ac05-f573ddb911c1", "")
             {
                 _loginpage = new RedCapCloudRepositoryFolders.LoginPageFolder(this);
                 _addstudypage = new RedCapCloudRepositoryFolders.AddStudyPageFolder(this);
@@ -248,7 +248,7 @@ namespace RedCapCloud
                 _parameterstabInfo = new RepoItemInfo(this, "ParametersTab", ".//div[#'studyBaseWidget_topLinkName_parameters']/a[@innertext='Parameters']", 30000, null, "e1a8abb4-eff4-4ad3-bce3-1662b283c589");
                 _subjectparamsusecustominstrumentviewonlyInfo = new RepoItemInfo(this, "SubjectParamsUseCustomInstrumentViewOnly", ".//i[#'subjectParams_useCustomCrf_viewOnly']", 30000, null, "f2f2e617-d49f-4849-b07f-cff241a5a41a");
                 _eventdefinitionstabInfo = new RepoItemInfo(this, "EventDefinitionsTab", ".//div[#'studyBaseWidget_topLinkName_eventDefinitions']/a[@innertext='Event Definitions']", 30000, null, "1201996b-02f8-48f8-9fcb-f8287de67c8d");
-                _mystudiesbuttonInfo = new RepoItemInfo(this, "MyStudiesButton", ".//div[#'gwtWrapper']//img[@src~'https://'+$DOM+'/gwt/clear.cache.gif']", 30000, null, "dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5");
+                _mystudiesbuttonInfo = new RepoItemInfo(this, "MyStudiesButton", ".//div[#'gwtWrapper']//img[@src~'https://'+$RCCDOM+'/gwt/clear.cache.gif']", 30000, null, "dc4a64a2-44a8-4328-9ba5-31c72c7fdbc5");
                 _instrumentstabInfo = new RepoItemInfo(this, "InstrumentsTab", ".//div[#'studyBaseWidget_topLinkName_instruments']/a[@innertext='Instruments']", 30000, null, "85c425e2-a4ac-452a-ac21-a60fdfb9b80e");
                 _subjectsbuttonInfo = new RepoItemInfo(this, "SubjectsButton", ".//div[#'leftMenuButtons_navSubjects']/div[@innertext='Subjects']", 30000, null, "49e053e3-c79f-4754-ba64-0a7f12c8311b");
                 _addeventInfo = new RepoItemInfo(this, "AddEvent", ".//button[#'subjectMatrixByEventsViewAbstract_buttonAddEventSubjectMatrix']/span[@innertext='Add Event']", 30000, null, "90347d54-c6b6-44b9-89dd-3599e2115baf");

@@ -54,14 +54,16 @@ namespace RedCapCloud.General
 
 #region Variables
 
+        string _DOM;
+
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
         [TestVariable("952c3d86-b83e-4c29-b098-afb5d6ca849a")]
         public string DOM
         {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
+            get { return _DOM; }
+            set { _DOM = value; }
         }
 
 #endregion

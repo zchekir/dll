@@ -81,7 +81,7 @@ namespace CSP.AddVisitSchedulePage
         /// <summary>
         /// Gets or sets the value of variable VisitName.
         /// </summary>
-        [TestVariable("69377243-bc09-48cc-bc4b-12f3a7002583")]
+        [TestVariable("c056edce-42d6-4ef2-b6ab-c3af87dd013f")]
         public string VisitName
         {
             get { return repo.VisitName; }
@@ -148,8 +148,8 @@ namespace CSP.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleAddVisitButton.Click(3);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.Visit1' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1Info, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1.Click(3);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisit' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisit.Click(3);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdown' at Center.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleWorkflowDropdownInfo, new RecordItemIndex(2));

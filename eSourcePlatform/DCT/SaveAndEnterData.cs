@@ -53,6 +53,16 @@ namespace DCT
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable RCCDOM.
+        /// </summary>
+        [TestVariable("5a760c9f-9fed-4f01-8c4c-f1cd491cbeda")]
+        public string RCCDOM
+        {
+            get { return repo.RCCDOM; }
+            set { repo.RCCDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -82,9 +92,12 @@ namespace DCT
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud1.SaveAndEnterData' at Center.", repo.REDCapCloud1.SaveAndEnterDataInfo, new RecordItemIndex(1));
-            repo.REDCapCloud1.SaveAndEnterData.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SaveAndEnterDataButton' at Center.", repo.REDCapCloud.SaveAndEnterDataButtonInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.SaveAndEnterDataButton.Click();
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2.5s.", new RecordItemIndex(2));
+            Delay.Duration(2500, false);
             
         }
 

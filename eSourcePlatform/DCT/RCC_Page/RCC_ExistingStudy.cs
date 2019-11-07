@@ -41,7 +41,7 @@ namespace DCT.RCC_Page
         /// </summary>
         public RCC_ExistingStudy()
         {
-            RandNum = "";
+            ExistingStudy = "";
         }
 
         /// <summary>
@@ -65,13 +65,13 @@ namespace DCT.RCC_Page
         }
 
         /// <summary>
-        /// Gets or sets the value of variable RandNum.
+        /// Gets or sets the value of variable ExistingStudy.
         /// </summary>
-        [TestVariable("50b5218c-7c53-428d-8045-c82dd65fe5a3")]
-        public string RandNum
+        [TestVariable("5923afdb-cf3f-4533-bba3-55989ecd9cf6")]
+        public string ExistingStudy
         {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
+            get { return repo.ExistingStudy; }
+            set { repo.ExistingStudy = value; }
         }
 
 #endregion
@@ -101,20 +101,20 @@ namespace DCT.RCC_Page
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SearchStudyInRCC' at Center.", repo.REDCapCloud.SearchStudyInRCCInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.SearchStudyInRCC.Click();
-            Delay.Milliseconds(200);
+            repo.REDCapCloud.SearchStudyInRCC.Click(3);
+            Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}'.", new RecordItemIndex(1));
-            Keyboard.Press("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}' with focus on 'REDCapCloud.SearchStudyInRCC'.", repo.REDCapCloud.SearchStudyInRCCInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.SearchStudyInRCC.PressKeys("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}", 1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'REDCapCloud.SearchStudyInRCC'.", repo.REDCapCloud.SearchStudyInRCCInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SearchStudyInRCC.PressKeys(RandNum);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ExistingStudy' with focus on 'REDCapCloud.SearchStudyInRCC'.", repo.REDCapCloud.SearchStudyInRCCInfo, new RecordItemIndex(2));
+            repo.REDCapCloud.SearchStudyInRCC.PressKeys(ExistingStudy, 1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
-            Keyboard.Press("{ENTER}");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'REDCapCloud.SearchStudyInRCC'.", repo.REDCapCloud.SearchStudyInRCCInfo, new RecordItemIndex(3));
+            repo.REDCapCloud.SearchStudyInRCC.PressKeys("{ENTER}", 1);
+            Delay.Milliseconds(90);
             
         }
 

@@ -67,13 +67,13 @@ namespace RedCapCloud.AddSitePage
         }
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable RCCDOM.
         /// </summary>
         [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string DOM
+        public string RCCDOM
         {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
+            get { return repo.RCCDOM; }
+            set { repo.RCCDOM = value; }
         }
 
 #endregion

@@ -76,7 +76,7 @@ namespace CSP.AddVisitSchedulePage
         /// <summary>
         /// Gets or sets the value of variable VisitName.
         /// </summary>
-        [TestVariable("69377243-bc09-48cc-bc4b-12f3a7002583")]
+        [TestVariable("c056edce-42d6-4ef2-b6ab-c3af87dd013f")]
         public string VisitName
         {
             get { return repo.VisitName; }
@@ -109,7 +109,7 @@ namespace CSP.AddVisitSchedulePage
 
             Init();
 
-            Mouse_Click_Visit1(repo.CogstateSolutionPlatform.AddVisitSchedulePage.Visit1Info);
+            Mouse_Click_Visit1(repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleVisitInfo);
             Delay.Milliseconds(0);
             
         }

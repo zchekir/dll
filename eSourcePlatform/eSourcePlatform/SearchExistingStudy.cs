@@ -41,7 +41,7 @@ namespace eSourcePlatform
         /// </summary>
         public SearchExistingStudy()
         {
-            RCC_Study_Name = "";
+            ExistingStudy = "";
         }
 
         /// <summary>
@@ -54,16 +54,14 @@ namespace eSourcePlatform
 
 #region Variables
 
-        string _RCC_Study_Name;
-
         /// <summary>
-        /// Gets or sets the value of variable RCC_Study_Name.
+        /// Gets or sets the value of variable ExistingStudy.
         /// </summary>
-        [TestVariable("e3986ab1-206f-432b-8d22-4e356239e182")]
-        public string RCC_Study_Name
+        [TestVariable("7c1b8e6c-214f-490d-8b2e-09235c9453f3")]
+        public string ExistingStudy
         {
-            get { return _RCC_Study_Name; }
-            set { _RCC_Study_Name = value; }
+            get { return repo.ExistingStudy; }
+            set { repo.ExistingStudy = value; }
         }
 
 #endregion
@@ -96,8 +94,8 @@ namespace eSourcePlatform
             repo.CogstateSolutionPlatform.SearchStudy.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCC_Study_Name' with focus on 'CogstateSolutionPlatform.SearchStudy'.", repo.CogstateSolutionPlatform.SearchStudyInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.SearchStudy.PressKeys(RCC_Study_Name);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ExistingStudy' with focus on 'CogstateSolutionPlatform.SearchStudy'.", repo.CogstateSolutionPlatform.SearchStudyInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.SearchStudy.PressKeys(ExistingStudy);
             Delay.Milliseconds(0);
             
         }

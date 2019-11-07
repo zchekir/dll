@@ -93,10 +93,6 @@ namespace DCT.RCC_Page
             //repo.REDCapCloud.OpenEvent_.Click();
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud1.Click_Visit' at Center.", repo.REDCapCloud1.Click_VisitInfo, new RecordItemIndex(1));
-            repo.REDCapCloud1.Click_Visit.Click();
-            Delay.Milliseconds(200);
-            
         }
 
 #region Image Feature Data

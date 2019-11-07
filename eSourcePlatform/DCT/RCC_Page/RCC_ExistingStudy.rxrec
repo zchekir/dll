@@ -28,8 +28,8 @@ rxversion="8.3">
 	</codegen>
 	<variables>
 		<var
-		id="50b5218c-7c53-428d-8045-c82dd65fe5a3"
-		name="RandNum">
+		id="5923afdb-cf3f-4533-bba3-55989ecd9cf6"
+		name="ExistingStudy">
 		</var>
 	</variables>
 	<recorditems>
@@ -39,7 +39,7 @@ rxversion="8.3">
 		duration="500ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="3ms"
 		optional="False"
 		searchpropertyid="15d99dda-6f91-4d93-8a80-e47aae3d4a6c"
 		sx="3419"
@@ -161,26 +161,33 @@ rxversion="8.3">
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="1ms"
 		searchpropertyid="4112dd36-c030-4133-8eb1-ca7b92482eb8">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
+			<info
+			id="1aaeabd0-d27c-4203-9346-f994a87bad37"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$RCCDOM]//input[#'filtersWidget_userInputWidget_studyName']
+				</path>
+			</info>
 		</keysequenceitem>
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="1ms"
 		searchpropertyid="04f81f09-7de1-4f95-a176-2b8c17c7c3fe">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="RandNum">
+				variable="ExistingStudy">
 				</binding>
 			</bindings>
 			<info
@@ -295,12 +302,19 @@ rxversion="8.3">
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="1ms"
 		searchpropertyid="7ab7e666-e0e2-49ec-bae3-b77fa2e6bc8e">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
+			<info
+			id="1aaeabd0-d27c-4203-9346-f994a87bad37"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$RCCDOM]//input[#'filtersWidget_userInputWidget_studyName']
+				</path>
+			</info>
 		</keysequenceitem>
 	</recorditems>
 	<repository

@@ -39,7 +39,7 @@ rxversion="8.3">
 			name="Clickstudy"
 			refimgid="83c47e30-2026-49f1-a5c8-72c7c2823068"
 			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-orr.azurewebsites.net']//a[@innertext~'Orr']
+				/dom[@domain='cgst-qc-orr.azurewebsites.net']//a[@innertext~$ExistingStudy]
 			</item>
 			<basepath>
 				/dom[@domain='cgst-qc-orr.azurewebsites.net']
@@ -356,6 +356,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="f183ef80-f1e1-40df-acd7-5c4c0e17d549"
 		name="CSPUsername">
 			zchekir@cogstate.com
+		</var>
+		<var
+		id="c7b8c122-f547-448f-a6ca-6da7fbe44867"
+		name="ExistingStudy">
 		</var>
 	</variables>
 </repository>

@@ -267,12 +267,24 @@ namespace CSP
             set { _CSPUsername = value; }
         }
 
-        string _VisitName = "";
+        string _EventDefName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable EventDefName.
+        /// </summary>
+        [TestVariable("22c9e7b6-8c83-422f-8148-16dae00ac8d8")]
+        public string EventDefName
+        {
+            get { return _EventDefName; }
+            set { _EventDefName = value; }
+        }
+
+        string _VisitName = "Visit 1";
 
         /// <summary>
         /// Gets or sets the value of variable VisitName.
         /// </summary>
-        [TestVariable("69377243-bc09-48cc-bc4b-12f3a7002583")]
+        [TestVariable("c056edce-42d6-4ef2-b6ab-c3af87dd013f")]
         public string VisitName
         {
             get { return _VisitName; }
@@ -3077,12 +3089,13 @@ namespace CSP
             RepoItemInfo _visitschedulevisitstatusdropdownInfo;
             RepoItemInfo _visitschedulevisitsessioncodeInfo;
             RepoItemInfo _rcceventdefinitionvisitInfo;
-            RepoItemInfo _visit1Info;
+            RepoItemInfo _visitschedulevisitInfo;
+            RepoItemInfo _rccvisitInfo;
+            DataLossMitigationToggleInfoClass _datalossmitigationtoggleInfo;
+            DataLossNotificationToggleInfoClass _datalossnotificationtoggleInfo;
             RepoItemInfo _visitschedulenameminlengthvalidationInfo;
             RepoItemInfo _visitsessionidfieldInfo;
             RepoItemInfo _visitscheduleaddvisitbuttonInfo;
-            DataLossMitigationToggleInfoClass _datalossmitigationtoggleInfo;
-            DataLossNotificationToggleInfoClass _datalossnotificationtoggleInfo;
             RepoItemInfo _datalosscardlabelInfo;
 
             /// <summary>
@@ -3101,12 +3114,13 @@ namespace CSP
                 _visitschedulevisitstatusdropdownInfo = new RepoItemInfo(this, "VisitScheduleVisitStatusDropdown", ".//select[@id~'formly_[0-9]+_select_visitStatus_[0-9]+']", 30000, null, "d7fb7df4-d20f-46a6-a2a7-ad66754684be");
                 _visitschedulevisitsessioncodeInfo = new RepoItemInfo(this, "VisitScheduleVisitSessionCode", ".//input[@id~'formly_[0-9]+_input_code_[0-9]+']", 30000, null, "c2f213dd-9ca4-4fd3-862d-cb9066680ed4");
                 _rcceventdefinitionvisitInfo = new RepoItemInfo(this, "RCCEventDefinitionVisit", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext='RCCEventDefinitions']", 30000, null, "be5b3f27-cfbc-4a0d-a8d2-b4c9df577a78");
-                _visit1Info = new RepoItemInfo(this, "Visit1", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$VisitName]", 30000, null, "6d4d528a-8639-493c-866c-405f383143ae");
+                _visitschedulevisitInfo = new RepoItemInfo(this, "VisitScheduleVisit", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$VisitName]", 30000, null, "6d4d528a-8639-493c-866c-405f383143ae");
+                _rccvisitInfo = new RepoItemInfo(this, "RCCVisit", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$EventDefName]", 30000, null, "30efa8b8-228b-40f9-a891-d41fcae141fc");
+                _datalossmitigationtoggleInfo = new DataLossMitigationToggleInfoClass(this);
+                _datalossnotificationtoggleInfo = new DataLossNotificationToggleInfoClass(this);
                 _visitschedulenameminlengthvalidationInfo = new RepoItemInfo(this, "VisitScheduleNameMinLengthValidation", ".//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']", 30000, null, "1f021adf-33c2-4b28-8a98-fae93e39deae");
                 _visitsessionidfieldInfo = new RepoItemInfo(this, "VisitSessionIDField", ".//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']", 30000, null, "fab623de-d4cc-4b0f-ba8a-762fa57e6154");
                 _visitscheduleaddvisitbuttonInfo = new RepoItemInfo(this, "VisitScheduleAddVisitButton", ".//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src>'https://'+$CSPDOM+'/asset/images/add_icon_']", 30000, null, "1a6e3a4c-b365-4758-a5c7-038f791a62d3");
-                _datalossmitigationtoggleInfo = new DataLossMitigationToggleInfoClass(this);
-                _datalossnotificationtoggleInfo = new DataLossNotificationToggleInfoClass(this);
                 _datalosscardlabelInfo = new RepoItemInfo(this, "DataLossCardLabel", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//span[@innertext='On']", 30000, null, "aaae9d59-2c21-4d82-bac1-6bb8cdd7cbe7");
             }
 
@@ -3433,26 +3447,98 @@ namespace CSP
             }
 
             /// <summary>
-            /// The Visit1 item.
+            /// The VisitScheduleVisit item.
             /// </summary>
             [RepositoryItem("6d4d528a-8639-493c-866c-405f383143ae")]
-            public virtual Ranorex.H4Tag Visit1
+            public virtual Ranorex.H4Tag VisitScheduleVisit
             {
                 get
                 {
-                    return _visit1Info.CreateAdapter<Ranorex.H4Tag>(true);
+                    return _visitschedulevisitInfo.CreateAdapter<Ranorex.H4Tag>(true);
                 }
             }
 
             /// <summary>
-            /// The Visit1 item info.
+            /// The VisitScheduleVisit item info.
             /// </summary>
             [RepositoryItemInfo("6d4d528a-8639-493c-866c-405f383143ae")]
-            public virtual RepoItemInfo Visit1Info
+            public virtual RepoItemInfo VisitScheduleVisitInfo
             {
                 get
                 {
-                    return _visit1Info;
+                    return _visitschedulevisitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RCCVisit item.
+            /// </summary>
+            [RepositoryItem("30efa8b8-228b-40f9-a891-d41fcae141fc")]
+            public virtual Ranorex.H4Tag RCCVisit
+            {
+                get
+                {
+                    return _rccvisitInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RCCVisit item info.
+            /// </summary>
+            [RepositoryItemInfo("30efa8b8-228b-40f9-a891-d41fcae141fc")]
+            public virtual RepoItemInfo RCCVisitInfo
+            {
+                get
+                {
+                    return _rccvisitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DataLossMitigationToggle item.
+            /// </summary>
+            [RepositoryItem("9bb5db00-dc73-4759-8309-8ee79f3b7b41")]
+            public virtual Ranorex.ButtonTag DataLossMitigationToggle
+            {
+                get
+                {
+                    return _datalossmitigationtoggleInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DataLossMitigationToggle item info.
+            /// </summary>
+            [RepositoryItemInfo("9bb5db00-dc73-4759-8309-8ee79f3b7b41")]
+            public virtual DataLossMitigationToggleInfoClass DataLossMitigationToggleInfo
+            {
+                get
+                {
+                    return _datalossmitigationtoggleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DataLossNotificationToggle item.
+            /// </summary>
+            [RepositoryItem("ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")]
+            public virtual Ranorex.ButtonTag DataLossNotificationToggle
+            {
+                get
+                {
+                    return _datalossnotificationtoggleInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DataLossNotificationToggle item info.
+            /// </summary>
+            [RepositoryItemInfo("ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")]
+            public virtual DataLossNotificationToggleInfoClass DataLossNotificationToggleInfo
+            {
+                get
+                {
+                    return _datalossnotificationtoggleInfo;
                 }
             }
 
@@ -3525,54 +3611,6 @@ namespace CSP
                 get
                 {
                     return _visitscheduleaddvisitbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DataLossMitigationToggle item.
-            /// </summary>
-            [RepositoryItem("9bb5db00-dc73-4759-8309-8ee79f3b7b41")]
-            public virtual Ranorex.ButtonTag DataLossMitigationToggle
-            {
-                get
-                {
-                    return _datalossmitigationtoggleInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DataLossMitigationToggle item info.
-            /// </summary>
-            [RepositoryItemInfo("9bb5db00-dc73-4759-8309-8ee79f3b7b41")]
-            public virtual DataLossMitigationToggleInfoClass DataLossMitigationToggleInfo
-            {
-                get
-                {
-                    return _datalossmitigationtoggleInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DataLossNotificationToggle item.
-            /// </summary>
-            [RepositoryItem("ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")]
-            public virtual Ranorex.ButtonTag DataLossNotificationToggle
-            {
-                get
-                {
-                    return _datalossnotificationtoggleInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DataLossNotificationToggle item info.
-            /// </summary>
-            [RepositoryItemInfo("ad80750c-dddc-4bfb-bbf4-0bd87e54d8a4")]
-            public virtual DataLossNotificationToggleInfoClass DataLossNotificationToggleInfo
-            {
-                get
-                {
-                    return _datalossnotificationtoggleInfo;
                 }
             }
 

@@ -54,6 +54,18 @@ namespace DCT.RCC_Page
 
 #region Variables
 
+        string _DCTSubject;
+
+        /// <summary>
+        /// Gets or sets the value of variable DCTSubject.
+        /// </summary>
+        [TestVariable("c0571c73-1af6-47f2-9475-f5d78be0ac3c")]
+        public string DCTSubject
+        {
+            get { return _DCTSubject; }
+            set { _DCTSubject = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable DCTDOM.
         /// </summary>
@@ -62,16 +74,6 @@ namespace DCT.RCC_Page
         {
             get { return repo.DCTDOM; }
             set { repo.DCTDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable DCTSubject.
-        /// </summary>
-        [TestVariable("c0571c73-1af6-47f2-9475-f5d78be0ac3c")]
-        public string DCTSubject
-        {
-            get { return repo.DCTSubject; }
-            set { repo.DCTSubject = value; }
         }
 
 #endregion

@@ -41,8 +41,6 @@ namespace RedCapCloud.LoginPage
         /// </summary>
         public Click_Login_Button()
         {
-            Password = "913172@RCC{LShiftKey up}{Return}";
-            username = "dwood@cogstate.com";
         }
 
         /// <summary>
@@ -55,38 +53,14 @@ namespace RedCapCloud.LoginPage
 
 #region Variables
 
-        string _Password;
-
         /// <summary>
-        /// Gets or sets the value of variable Password.
-        /// </summary>
-        [TestVariable("8b602917-63e3-4ce4-b628-77e249e49ff4")]
-        public string Password
-        {
-            get { return _Password; }
-            set { _Password = value; }
-        }
-
-        string _username;
-
-        /// <summary>
-        /// Gets or sets the value of variable username.
-        /// </summary>
-        [TestVariable("25c52c99-a552-4a8e-8fd0-6594ddb75a8c")]
-        public string username
-        {
-            get { return _username; }
-            set { _username = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable RCCDOM.
         /// </summary>
         [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string DOM
+        public string RCCDOM
         {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
+            get { return repo.RCCDOM; }
+            set { repo.RCCDOM = value; }
         }
 
 #endregion

@@ -41,7 +41,6 @@ namespace DCT.RCC_Page
         /// </summary>
         public OpenStudy()
         {
-            RCC_Study_Name = "zktest 0001";
         }
 
         /// <summary>
@@ -54,18 +53,6 @@ namespace DCT.RCC_Page
 
 #region Variables
 
-        string _RCC_Study_Name;
-
-        /// <summary>
-        /// Gets or sets the value of variable RCC_Study_Name.
-        /// </summary>
-        [TestVariable("7e849208-d2d3-4d04-9470-753f5d81f297")]
-        public string RCC_Study_Name
-        {
-            get { return _RCC_Study_Name; }
-            set { _RCC_Study_Name = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable RCCDOM.
         /// </summary>
@@ -77,13 +64,13 @@ namespace DCT.RCC_Page
         }
 
         /// <summary>
-        /// Gets or sets the value of variable RandNum.
+        /// Gets or sets the value of variable ExistingStudy.
         /// </summary>
-        [TestVariable("0a1f4511-792f-4cbf-818c-dcbe6257b7c8")]
-        public string RandNum
+        [TestVariable("ee00695b-ccc6-4286-ad8b-942dd6f880b2")]
+        public string ExistingStudy
         {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
+            get { return repo.ExistingStudy; }
+            set { repo.ExistingStudy = value; }
         }
 
 #endregion
@@ -112,13 +99,12 @@ namespace DCT.RCC_Page
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.OpenRCCStudy' at Center.", repo.REDCapCloud.OpenRCCStudyInfo, new RecordItemIndex(0));
-            //repo.REDCapCloud.OpenRCCStudy.Click();
-            //Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud1.StudyName' at Center.", repo.REDCapCloud1.StudyNameInfo, new RecordItemIndex(1));
-            repo.REDCapCloud1.StudyName.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.ExistingRCCStudy' at Center.", repo.REDCapCloud.ExistingRCCStudyInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.ExistingRCCStudy.Click();
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2.5s.", new RecordItemIndex(1));
+            Delay.Duration(2500, false);
             
         }
 

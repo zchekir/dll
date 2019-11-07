@@ -355,10 +355,10 @@ AAAASUVORK5CYII=
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="e497ee0e-507a-42d4-8dbc-21b179383f59"
-			name="OpenRCCStudy"
+			name="ExistingRCCStudy"
 			refimgid="21318284-37c4-4b1e-9ed8-95358f6e014d"
 			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//div[@innertext=$RandNum]
+				/dom[@domain=$RCCDOM]//div[@innertext=$ExistingStudy]
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -506,6 +506,15 @@ I/67EPgCQ3D7PQ1pXlUAAAAASUVORK5CYII=
 			refimgid="e07a62a6-924c-4cdd-99c5-e283d11f2d06"
 			searchtimeout="30000ms">
 				/dom[@domain=$RCCDOM]//input[#'enrollWidget_textSubjectNumber']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="spantag"
+			id="e09f0e9e-96f1-4788-bcbe-285c0983e4e3"
+			name="SaveAndEnterDataButton"
+			refimgid="3f682a44-778d-4d79-af4a-beac807835bd"
+			searchtimeout="30000ms">
+				/dom[@domain=$RCCDOM]//span[@innertext='Save and Enter Data']
 			</item>
 			<basepath>
 				/dom[@domain=$RCCDOM]
@@ -727,34 +736,6 @@ AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="3388a642-06d7-4c1f-b729-57d7b320adb4"
-		isrooted="True"
-		name="DashboardOctopusDeployGoogleChro"
-		refpath="/form[@title='Dashboard - Octopus Deploy - Google Chrome' and @processname='chrome' and @class='Chrome_WidgetWin_1' and @instance='1']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<basepath>
-				/form[@processname='chrome' and @class='Chrome_WidgetWin_1' and @instance='1']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
-pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
-sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
-M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
-q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
-hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
-ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
-RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
-sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
-MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
-RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
-AAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"
 		id="83d87542-91e4-4062-831c-e71dae0b7938"
@@ -879,15 +860,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain=$CSPDOM]//a[@innertext='Reports']
 			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="62bc46be-5c41-4394-bf10-bcdfd07b5900"
-			name="ClickOut"
-			refimgid="6fa2a838-e392-40d5-a244-e0042b9c10de"
-			searchtimeout="30000ms">
-				/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\.azure']/span[2]
-			</item>
 			<basepath>
 				/dom[@domain=$CSPDOM]
 			</basepath>
@@ -963,24 +935,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext~'2019']
 			</item>
 			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="spantag"
-			id="e09f0e9e-96f1-4788-bcbe-285c0983e4e3"
-			name="SaveAndEnterData"
-			refimgid="3f682a44-778d-4d79-af4a-beac807835bd"
-			searchtimeout="30000ms">
-				/dom[@domain='cgsqc.redcapcloud.com']//span[@innertext='Save and Enter Data']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="ae41e6b7-067c-466d-b053-1ffb9a4b43df"
-			name="Click_Visit"
-			refimgid="09a21ce2-933c-4050-b3be-2c659817fcde"
-			searchtimeout="30000ms">
-				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext='Visit1']
-			</item>
-			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="972775f8-a766-4c55-8ce5-b63405dd6144"
@@ -1014,9 +968,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 	</rootfolder>
 	<variables>
 		<var
-		id="68bbda1b-c9d6-44b8-972e-350252c24d17"
-		name="DCTSubject">
-			SC-70895555
+		id="ee00695b-ccc6-4286-ad8b-942dd6f880b2"
+		name="ExistingStudy">
 		</var>
 		<var
 		id="0a1f4511-792f-4cbf-818c-dcbe6257b7c8"
@@ -1042,6 +995,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
 		name="RCCDOM">
+			cgsqc.redcapcloud.com
 		</var>
 	</variables>
 </repository>

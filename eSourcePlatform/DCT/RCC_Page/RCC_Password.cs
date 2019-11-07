@@ -102,12 +102,19 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}' with focus on 'REDCapCloud.LoginPassword'.", repo.REDCapCloud.LoginPasswordInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(0));
+            Delay.Duration(1500, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}' with focus on 'REDCapCloud.LoginPassword'.", repo.REDCapCloud.LoginPasswordInfo, new RecordItemIndex(1));
             repo.REDCapCloud.LoginPassword.PressKeys("{END}{SHIFT DOWN}{HOME}{SHIFT UP}{DELETE}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCPassword' with focus on 'REDCapCloud.LoginPassword'.", repo.REDCapCloud.LoginPasswordInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCPassword' with focus on 'REDCapCloud.LoginPassword'.", repo.REDCapCloud.LoginPasswordInfo, new RecordItemIndex(2));
             repo.REDCapCloud.LoginPassword.PressKeys(RCCPassword);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(3));
+            Keyboard.Press("{TAB}");
             Delay.Milliseconds(0);
             
         }

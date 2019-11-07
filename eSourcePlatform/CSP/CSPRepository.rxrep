@@ -896,37 +896,19 @@ rxversion="8.3">
 				addcaps="unknown,webelement,divtag"
 				capname="h4tag"
 				id="6d4d528a-8639-493c-866c-405f383143ae"
-				name="Visit1"
+				name="VisitScheduleVisit"
 				refimgid="c9a4103b-43e2-4007-b34d-7d06cf1be6b6"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$VisitName]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="1f021adf-33c2-4b28-8a98-fae93e39deae"
-				name="VisitScheduleNameMinLengthValidation"
-				refimgid="8818aa55-689e-41df-8c74-8caee23d46fa"
+				capname="h4tag"
+				id="30efa8b8-228b-40f9-a891-d41fcae141fc"
+				name="RCCVisit"
+				refimgid="c9a4103b-43e2-4007-b34d-7d06cf1be6b6"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']
-				</item>
-				<item
-				addcaps="unknown,webelement,textareatag"
-				capname="textareatag"
-				id="fab623de-d4cc-4b0f-ba8a-762fa57e6154"
-				name="VisitSessionIDField"
-				refimgid="c51d05d6-a583-4618-9b61-62c14932389a"
-				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']
-				</item>
-				<item
-				addcaps="unknown,webelement,imgtag"
-				capname="imgtag"
-				id="1a6e3a4c-b365-4758-a5c7-038f791a62d3"
-				name="VisitScheduleAddVisitButton"
-				refimgid="8ce9cf61-ea16-46bf-b5fd-501d343aba9a"
-				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src&gt;'https://'+$CSPDOM+'/asset/images/add_icon_']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-visit-schedule-designer-list']//h4[@innertext=$EventDefName]
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -989,6 +971,33 @@ zFLNApub95ABaGlri67MzigTAeyJvLIKCRYwebF6GtBa5kE3l+fp0ptJOjseo2qZ1DJVFnGlOQdy
 ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 					</image>
 					/dom[@domain=$CSPDOM]//button[@id~'formly_[0-9]+_cogstateToggle_dataLossMitigationNotifications_[0-9]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="1f021adf-33c2-4b28-8a98-fae93e39deae"
+				name="VisitScheduleNameMinLengthValidation"
+				refimgid="8818aa55-689e-41df-8c74-8caee23d46fa"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_name_[0-9]+']/..//div[@innertext~'The minimum length']
+				</item>
+				<item
+				addcaps="unknown,webelement,textareatag"
+				capname="textareatag"
+				id="fab623de-d4cc-4b0f-ba8a-762fa57e6154"
+				name="VisitSessionIDField"
+				refimgid="c51d05d6-a583-4618-9b61-62c14932389a"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//textarea[@ng-model='visitScheduleModel.selectedVisit.sessions[0].id']
+				</item>
+				<item
+				addcaps="unknown,webelement,imgtag"
+				capname="imgtag"
+				id="1a6e3a4c-b365-4758-a5c7-038f791a62d3"
+				name="VisitScheduleAddVisitButton"
+				refimgid="8ce9cf61-ea16-46bf-b5fd-501d343aba9a"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//tag[@tagname='cogstate-generic-visit-schedule-designer-header']//img[@src&gt;'https://'+$CSPDOM+'/asset/images/add_icon_']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -2870,8 +2879,13 @@ AAAASUVORK5CYII=
 		name="CSPUsername">
 		</var>
 		<var
-		id="69377243-bc09-48cc-bc4b-12f3a7002583"
+		id="22c9e7b6-8c83-422f-8148-16dae00ac8d8"
+		name="EventDefName">
+		</var>
+		<var
+		id="c056edce-42d6-4ef2-b6ab-c3af87dd013f"
 		name="VisitName">
+			Visit 1
 		</var>
 	</variables>
 </repository>

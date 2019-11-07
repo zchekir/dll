@@ -54,13 +54,13 @@ namespace RedCapCloud.SubjectsPage
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable RCCDOM.
         /// </summary>
         [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string DOM
+        public string RCCDOM
         {
-            get { return repo.DOM; }
-            set { repo.DOM = value; }
+            get { return repo.RCCDOM; }
+            set { repo.RCCDOM = value; }
         }
 
         /// <summary>
@@ -99,8 +99,8 @@ namespace RedCapCloud.SubjectsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(0));
-            Delay.Duration(20000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.FirstVisit' at Center.", repo.REDCapCloud.SubjectsPage.FirstVisitInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.FirstVisit.Click(100);

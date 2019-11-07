@@ -36,7 +36,6 @@ namespace DCT
         DCTRepositoryFolders.SignInAppFolder _signin;
         DCTRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
         DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder _redcapcloudgooglechrome;
-        DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder _dashboardoctopusdeploygooglechro;
         DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
         DCTRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
         DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
@@ -66,7 +65,6 @@ namespace DCT
             _signin = new DCTRepositoryFolders.SignInAppFolder(this);
             _signintoyouraccount = new DCTRepositoryFolders.SignInToYourAccountAppFolder(this);
             _redcapcloudgooglechrome = new DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder(this);
-            _dashboardoctopusdeploygooglechro = new DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder(this);
             _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
             _cogstatesolutionplatform = new DCTRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
             _academicextractorrpowerbi = new DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
@@ -75,16 +73,16 @@ namespace DCT
 
 #region Variables
 
-        string _DCTSubject = "SC-70895555";
+        string _ExistingStudy = "";
 
         /// <summary>
-        /// Gets or sets the value of variable DCTSubject.
+        /// Gets or sets the value of variable ExistingStudy.
         /// </summary>
-        [TestVariable("68bbda1b-c9d6-44b8-972e-350252c24d17")]
-        public string DCTSubject
+        [TestVariable("ee00695b-ccc6-4286-ad8b-942dd6f880b2")]
+        public string ExistingStudy
         {
-            get { return _DCTSubject; }
-            set { _DCTSubject = value; }
+            get { return _ExistingStudy; }
+            set { _ExistingStudy = value; }
         }
 
         string _RandNum = "";
@@ -147,7 +145,7 @@ namespace DCT
             set { _DCTDOM = value; }
         }
 
-        string _RCCDOM = "";
+        string _RCCDOM = "cgsqc.redcapcloud.com";
 
         /// <summary>
         /// Gets or sets the value of variable RCCDOM.
@@ -252,15 +250,6 @@ namespace DCT
         public virtual DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder REDCapCloudGoogleChrome
         {
             get { return _redcapcloudgooglechrome; }
-        }
-
-        /// <summary>
-        /// The DashboardOctopusDeployGoogleChro folder.
-        /// </summary>
-        [RepositoryFolder("3388a642-06d7-4c1f-b729-57d7b320adb4")]
-        public virtual DCTRepositoryFolders.DashboardOctopusDeployGoogleChroAppFolder DashboardOctopusDeployGoogleChro
-        {
-            get { return _dashboardoctopusdeploygooglechro; }
         }
 
         /// <summary>
@@ -1071,7 +1060,7 @@ namespace DCT
         public partial class REDCapCloudAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _searchstudyinrccInfo;
-            RepoItemInfo _openrccstudyInfo;
+            RepoItemInfo _existingrccstudyInfo;
             RepoItemInfo _clicksubjectInfo;
             RepoItemInfo _opensubjectInfo;
             RepoItemInfo _openevent_Info;
@@ -1087,6 +1076,7 @@ namespace DCT
             RepoItemInfo _sitesbuttonInfo;
             RepoItemInfo _selectsiteInfo;
             RepoItemInfo _subjectnumberInfo;
+            RepoItemInfo _saveandenterdatabuttonInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -1095,7 +1085,7 @@ namespace DCT
                     base("REDCapCloud", "/dom[@domain=$RCCDOM]", parentFolder, 30000, null, false, "8c57a700-52e3-43b0-bb42-688fd9e5c8b2", "")
             {
                 _searchstudyinrccInfo = new RepoItemInfo(this, "SearchStudyInRCC", ".//input[#'filtersWidget_userInputWidget_studyName']", 30000, null, "1aaeabd0-d27c-4203-9346-f994a87bad37");
-                _openrccstudyInfo = new RepoItemInfo(this, "OpenRCCStudy", ".//div[@innertext=$RandNum]", 30000, null, "e497ee0e-507a-42d4-8dbc-21b179383f59");
+                _existingrccstudyInfo = new RepoItemInfo(this, "ExistingRCCStudy", ".//div[@innertext=$ExistingStudy]", 30000, null, "e497ee0e-507a-42d4-8dbc-21b179383f59");
                 _clicksubjectInfo = new RepoItemInfo(this, "ClickSubject", ".//div[#'leftMenuButtons_navSubjects']", 30000, null, "e5549fed-7e0e-4f0c-a146-6e802d0e81db");
                 _opensubjectInfo = new RepoItemInfo(this, "OpenSubject", ".//div[@innertext~'2019']", 30000, null, "eae74a37-456a-4128-b4d8-a07f476da351");
                 _openevent_Info = new RepoItemInfo(this, "OpenEvent_", ".//div[@innertext='Visit1']", 30000, null, "e1819309-f7a5-4368-aa69-80d60e74fc27");
@@ -1111,6 +1101,7 @@ namespace DCT
                 _sitesbuttonInfo = new RepoItemInfo(this, "SitesButton", ".//button[#'enrollWidget_comboSites_button']", 30000, null, "9328280c-2573-49e2-a45f-27e9635d479a");
                 _selectsiteInfo = new RepoItemInfo(this, "selectSite", ".//a[@innertext~'2019']", 30000, null, "dead8fc1-6d55-4ecd-98eb-e5dc5365356e");
                 _subjectnumberInfo = new RepoItemInfo(this, "SubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "ed816dba-2dec-41ab-b191-edc9d053b81b");
+                _saveandenterdatabuttonInfo = new RepoItemInfo(this, "SaveAndEnterDataButton", ".//span[@innertext='Save and Enter Data']", 30000, null, "e09f0e9e-96f1-4788-bcbe-285c0983e4e3");
             }
 
             /// <summary>
@@ -1197,26 +1188,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The OpenRCCStudy item.
+            /// The ExistingRCCStudy item.
             /// </summary>
             [RepositoryItem("e497ee0e-507a-42d4-8dbc-21b179383f59")]
-            public virtual Ranorex.DivTag OpenRCCStudy
+            public virtual Ranorex.DivTag ExistingRCCStudy
             {
                 get
                 {
-                    return _openrccstudyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _existingrccstudyInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The OpenRCCStudy item info.
+            /// The ExistingRCCStudy item info.
             /// </summary>
             [RepositoryItemInfo("e497ee0e-507a-42d4-8dbc-21b179383f59")]
-            public virtual RepoItemInfo OpenRCCStudyInfo
+            public virtual RepoItemInfo ExistingRCCStudyInfo
             {
                 get
                 {
-                    return _openrccstudyInfo;
+                    return _existingrccstudyInfo;
                 }
             }
 
@@ -1577,6 +1568,30 @@ namespace DCT
                 get
                 {
                     return _subjectnumberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndEnterDataButton item.
+            /// </summary>
+            [RepositoryItem("e09f0e9e-96f1-4788-bcbe-285c0983e4e3")]
+            public virtual Ranorex.SpanTag SaveAndEnterDataButton
+            {
+                get
+                {
+                    return _saveandenterdatabuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndEnterDataButton item info.
+            /// </summary>
+            [RepositoryItemInfo("e09f0e9e-96f1-4788-bcbe-285c0983e4e3")]
+            public virtual RepoItemInfo SaveAndEnterDataButtonInfo
+            {
+                get
+                {
+                    return _saveandenterdatabuttonInfo;
                 }
             }
         }
@@ -1976,46 +1991,6 @@ namespace DCT
         }
 
         /// <summary>
-        /// The DashboardOctopusDeployGoogleChroAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("3388a642-06d7-4c1f-b729-57d7b320adb4")]
-        public partial class DashboardOctopusDeployGoogleChroAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new DashboardOctopusDeployGoogleChro  folder.
-            /// </summary>
-            public DashboardOctopusDeployGoogleChroAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DashboardOctopusDeployGoogleChro", "/form[@processname='chrome' and @class='Chrome_WidgetWin_1' and @instance='1']", parentFolder, 30000, null, true, "3388a642-06d7-4c1f-b729-57d7b320adb4", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("3388a642-06d7-4c1f-b729-57d7b320adb4")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("3388a642-06d7-4c1f-b729-57d7b320adb4")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The KuduServicesAppFolder folder.
         /// </summary>
         [RepositoryFolder("83d87542-91e4-4062-831c-e71dae0b7938")]
@@ -2271,7 +2246,6 @@ namespace DCT
         {
             RepoItemInfo _academicextractInfo;
             RepoItemInfo _reportsInfo;
-            RepoItemInfo _clickoutInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -2281,7 +2255,6 @@ namespace DCT
             {
                 _academicextractInfo = new RepoItemInfo(this, "AcademicExtract", ".//a[@innertext='Academic Extract']", 30000, null, "5f95c61a-732b-463d-a24a-1847574f6cd8");
                 _reportsInfo = new RepoItemInfo(this, "Reports", ".//a[@innertext='Reports']", 30000, null, "93211f96-5811-43a7-b78f-36c0459fd008");
-                _clickoutInfo = new RepoItemInfo(this, "ClickOut", ".//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\\.azure']/span[2]", 30000, null, "62bc46be-5c41-4394-bf10-bcdfd07b5900");
             }
 
             /// <summary>
@@ -2353,30 +2326,6 @@ namespace DCT
                 get
                 {
                     return _reportsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClickOut item.
-            /// </summary>
-            [RepositoryItem("62bc46be-5c41-4394-bf10-bcdfd07b5900")]
-            public virtual Ranorex.SpanTag ClickOut
-            {
-                get
-                {
-                    return _clickoutInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClickOut item info.
-            /// </summary>
-            [RepositoryItemInfo("62bc46be-5c41-4394-bf10-bcdfd07b5900")]
-            public virtual RepoItemInfo ClickOutInfo
-            {
-                get
-                {
-                    return _clickoutInfo;
                 }
             }
         }
@@ -2454,8 +2403,6 @@ namespace DCT
         public partial class REDCapCloud1AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _studynameInfo;
-            RepoItemInfo _saveandenterdataInfo;
-            RepoItemInfo _click_visitInfo;
             RepoItemInfo _entersubjectnumberInfo;
 
             /// <summary>
@@ -2465,8 +2412,6 @@ namespace DCT
                     base("REDCapCloud1", "/dom[@domain='cgsqc.redcapcloud.com']", parentFolder, 30000, null, false, "ee5f1b78-cba3-4623-b016-bbed2259c88e", "")
             {
                 _studynameInfo = new RepoItemInfo(this, "StudyName", ".//div[@innertext~'2019']", 30000, null, "8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48");
-                _saveandenterdataInfo = new RepoItemInfo(this, "SaveAndEnterData", ".//span[@innertext='Save and Enter Data']", 30000, null, "e09f0e9e-96f1-4788-bcbe-285c0983e4e3");
-                _click_visitInfo = new RepoItemInfo(this, "Click_Visit", ".//div[@innertext='Visit1']", 30000, null, "ae41e6b7-067c-466d-b053-1ffb9a4b43df");
                 _entersubjectnumberInfo = new RepoItemInfo(this, "EnterSubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "972775f8-a766-4c55-8ce5-b63405dd6144");
             }
 
@@ -2515,54 +2460,6 @@ namespace DCT
                 get
                 {
                     return _studynameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SaveAndEnterData item.
-            /// </summary>
-            [RepositoryItem("e09f0e9e-96f1-4788-bcbe-285c0983e4e3")]
-            public virtual Ranorex.SpanTag SaveAndEnterData
-            {
-                get
-                {
-                    return _saveandenterdataInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SaveAndEnterData item info.
-            /// </summary>
-            [RepositoryItemInfo("e09f0e9e-96f1-4788-bcbe-285c0983e4e3")]
-            public virtual RepoItemInfo SaveAndEnterDataInfo
-            {
-                get
-                {
-                    return _saveandenterdataInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Click_Visit item.
-            /// </summary>
-            [RepositoryItem("ae41e6b7-067c-466d-b053-1ffb9a4b43df")]
-            public virtual Ranorex.DivTag Click_Visit
-            {
-                get
-                {
-                    return _click_visitInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Click_Visit item info.
-            /// </summary>
-            [RepositoryItemInfo("ae41e6b7-067c-466d-b053-1ffb9a4b43df")]
-            public virtual RepoItemInfo Click_VisitInfo
-            {
-                get
-                {
-                    return _click_visitInfo;
                 }
             }
 

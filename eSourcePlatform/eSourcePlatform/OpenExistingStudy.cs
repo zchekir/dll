@@ -53,6 +53,16 @@ namespace eSourcePlatform
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable ExistingStudy.
+        /// </summary>
+        [TestVariable("c7b8c122-f547-448f-a6ca-6da7fbe44867")]
+        public string ExistingStudy
+        {
+            get { return repo.ExistingStudy; }
+            set { repo.ExistingStudy = value; }
+        }
+
 #endregion
 
         /// <summary>
