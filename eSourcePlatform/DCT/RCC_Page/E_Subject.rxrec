@@ -30,7 +30,10 @@ rxversion="8.3">
 		<var
 		id="c0571c73-1af6-47f2-9475-f5d78be0ac3c"
 		name="DCTSubject">
-			SC-70895555
+		</var>
+		<var
+		id="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+		name="DCTDOM">
 		</var>
 	</variables>
 	<recorditems>
@@ -43,6 +46,32 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="E_Subject"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Report_Log"
+		namespace="DCT.RCC_Page"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c458b37c-e888-46e2-be79-c64d4a91c974">
+				<argument
+				argname="argument1"
+				id="5c4c2db0-eca3-4a8e-8dce-c12ffc19cd15"
+				variable="DCTDOM">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="E_Subject"
 		enabled="True"

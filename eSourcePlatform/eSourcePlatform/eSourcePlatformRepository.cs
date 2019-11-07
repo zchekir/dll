@@ -189,6 +189,7 @@ namespace eSourcePlatform
         {
             RepoItemInfo _searchstudyInfo;
             RepoItemInfo _clickstudyInfo;
+            RepoItemInfo _startlogcspInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -198,6 +199,7 @@ namespace eSourcePlatform
             {
                 _searchstudyInfo = new RepoItemInfo(this, "SearchStudy", ".//input[#'generic-search']", 30000, null, "896c64d8-c9d5-45d0-9c4a-21c793cde0ed");
                 _clickstudyInfo = new RepoItemInfo(this, "Clickstudy", ".//a[@innertext~$ExistingStudy]", 30000, null, "b7e9c226-23bf-40e1-9756-b817a2048676");
+                _startlogcspInfo = new RepoItemInfo(this, "StartLogCSP", ".//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\\.azure']/span[2]", 30000, null, "fe46efed-95ff-4130-9d75-6d87b2696564");
             }
 
             /// <summary>
@@ -269,6 +271,30 @@ namespace eSourcePlatform
                 get
                 {
                     return _clickstudyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StartLogCSP item.
+            /// </summary>
+            [RepositoryItem("fe46efed-95ff-4130-9d75-6d87b2696564")]
+            public virtual Ranorex.SpanTag StartLogCSP
+            {
+                get
+                {
+                    return _startlogcspInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StartLogCSP item info.
+            /// </summary>
+            [RepositoryItemInfo("fe46efed-95ff-4130-9d75-6d87b2696564")]
+            public virtual RepoItemInfo StartLogCSPInfo
+            {
+                get
+                {
+                    return _startlogcspInfo;
                 }
             }
         }

@@ -20,62 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.RCC_Page
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The E_Subject recording.
+    ///The CSP_Logout recording.
     /// </summary>
-    [TestModule("6ba8d2d0-d8f5-489f-8747-9690991ebcc3", ModuleType.Recording, 1)]
-    public partial class E_Subject : ITestModule
+    [TestModule("8c4fe3be-c7e3-46c9-b6f6-291a064cb1ea", ModuleType.Recording, 1)]
+    public partial class CSP_Logout : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::DCT.DCTRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static E_Subject instance = new E_Subject();
+        static CSP_Logout instance = new CSP_Logout();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public E_Subject()
+        public CSP_Logout()
         {
-            DCTSubject = "";
-            DCTDOM = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static E_Subject Instance
+        public static CSP_Logout Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _DCTSubject;
-
-        /// <summary>
-        /// Gets or sets the value of variable DCTSubject.
-        /// </summary>
-        [TestVariable("c0571c73-1af6-47f2-9475-f5d78be0ac3c")]
-        public string DCTSubject
-        {
-            get { return _DCTSubject; }
-            set { _DCTSubject = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable DCTDOM.
-        /// </summary>
-        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
-        public string DCTDOM
-        {
-            get { return repo.DCTDOM; }
-            set { repo.DCTDOM = value; }
-        }
 
 #endregion
 
@@ -103,17 +79,16 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.StartLogCSP' at Center.", repo.CogstateSolutionPlatform.StartLogCSPInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.StartLogCSP.Click();
+            Delay.Milliseconds(200);
             
-            Report_Log(DCTDOM);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}{TAB}'.", new RecordItemIndex(1));
+            Keyboard.Press("{TAB}{TAB}");
             Delay.Milliseconds(0);
             
-            Try_Select_Subject(repo.DataCleaningTool.DestinationSubjectFieldInfo, repo.DataCleaningTool.NoOptionsItemInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(3));
-            Keyboard.Press("{TAB}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(2));
+            Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
             
         }

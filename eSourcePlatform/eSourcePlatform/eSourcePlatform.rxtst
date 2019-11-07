@@ -2046,8 +2046,8 @@ rxversion="8.3">
 					variablename="DCTDOM">
 					</var>
 					<var
-					dataname="ExistingSubject"
-					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
+					dataname="DCTSubject"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="c0571c73-1af6-47f2-9475-f5d78be0ac3c"
 					variablename="DCTSubject">
 					</var>
@@ -2560,6 +2560,12 @@ rxversion="8.3">
 			name="OpenStudy(ExistingStudy)">
 			</testcase>
 			<testmodule
+			id="b3cb331c-0523-4aa0-9fa9-8882f1a5eada"
+			name="CSP_Logout"
+			ref="8c4fe3be-c7e3-46c9-b6f6-291a064cb1ea"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b3dbbf74-a2c2-49db-bec2-76eb7f53f0b4"
 			name="Select_Gender"
 			ref="996e71c3-be62-4c72-9f11-64752fe074a4"
@@ -2779,6 +2785,10 @@ rxversion="8.3">
 			id="c18465e9-a71b-4523-9da3-a4353ced7af5"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="c1dac143-ce70-4c2f-afdc-9b654a744991"
+			name="LogOutFronCsp">
+			</testcase>
 			<testmodule
 			id="c3d4a31e-972f-4ce3-ba52-39118f889e40"
 			name="Add_CogstateBattery_CRF"
@@ -3066,7 +3076,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="ExpectedRCCVersion"
-					value="2.0.0-rc.1762">
+					value="2.0.0-rc.1766">
 					</param>
 				</parameters>
 			</testcase>
@@ -4846,6 +4856,14 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 							<testcase
+							id="c1dac143-ce70-4c2f-afdc-9b654a744991"
+							name="LogOutFronCsp">
+								<testmodule
+								id="b3cb331c-0523-4aa0-9fa9-8882f1a5eada"
+								name="CSP_Logout">
+								</testmodule>
+							</testcase>
+							<testcase
 							id="6da0ff48-e922-48ba-9742-4fdfccffd0f5"
 							name="LogInPowerBI">
 								<testmodule
@@ -5242,10 +5260,10 @@ rxversion="8.3">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
-			id="04909fcc-b521-4a5f-b788-cfbcedc284e7">
+			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
 			</testcontainer>
 			<testcontainer
-			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
+			id="176d8e83-d209-4c4b-a84f-9198032c225f">
 			</testcontainer>
 			<testcontainer
 			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
@@ -5254,7 +5272,28 @@ rxversion="8.3">
 			id="1d9928dd-974b-4bf9-b839-09c761466da1">
 			</testcontainer>
 			<testcontainer
+			id="1e351c7d-29c2-487d-94c0-6e64fae0adc5">
+			</testcontainer>
+			<testcontainer
+			id="23168a3f-e39d-40bd-83e2-96e3879df980">
+			</testcontainer>
+			<testcontainer
 			id="3de66789-7fb1-4996-8500-81d43a94cc32">
+			</testcontainer>
+			<testcontainer
+			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51">
+			</testcontainer>
+			<testcontainer
+			id="43ca4568-0c2e-47fb-a370-ed468828aed9">
+			</testcontainer>
+			<testcontainer
+			id="49225187-4a49-4835-90e0-3de32724cde5">
+			</testcontainer>
+			<testcontainer
+			id="529f1bb1-0a6e-4a00-b1f8-9e40b442fa7a">
+			</testcontainer>
+			<testcontainer
+			id="55b0937d-ea65-48ca-b26f-e3e61e21b181">
 			</testcontainer>
 			<testcontainer
 			id="55d94e9c-09f3-492b-977b-eb8d911a3296">
@@ -5263,10 +5302,22 @@ rxversion="8.3">
 			id="56f6d406-e690-4aa6-b4a9-38e641d4b26a">
 			</testcontainer>
 			<testcontainer
+			id="6019ac06-4d85-440a-ab02-5127c387cd2a">
+			</testcontainer>
+			<testcontainer
 			id="62006fb2-63fe-43fb-8c36-139d7b9d28a7">
 			</testcontainer>
 			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
+			</testcontainer>
+			<testcontainer
+			id="64ae0aaa-5d24-4a4c-bf10-284c21c25fb9">
+			</testcontainer>
+			<testcontainer
+			id="68ffcef6-9f39-4bb8-bad5-b8883246139c">
+			</testcontainer>
+			<testcontainer
+			id="70634e69-921c-470b-b1ae-76608669f350">
 			</testcontainer>
 			<testcontainer
 			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
@@ -5275,16 +5326,13 @@ rxversion="8.3">
 			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
 			</testcontainer>
 			<testcontainer
-			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
+			id="8839cb3a-ce85-4bf1-9196-88ac00ca8f5b">
 			</testcontainer>
 			<testcontainer
 			id="97aaa3ea-6ea0-4622-9002-ad2b4479e683">
 			</testcontainer>
 			<testcontainer
-			id="9971752f-f697-47c2-b4be-09bdab1f18a2">
-			</testcontainer>
-			<testcontainer
-			id="9da84430-e516-45c6-8b32-0c44c43d9173">
+			id="9b1d4735-9ae1-4127-8dc0-f5499309cd99">
 			</testcontainer>
 			<testcontainer
 			id="a0ca6e5b-0022-4873-a172-ead549a588aa">
@@ -5293,31 +5341,34 @@ rxversion="8.3">
 			id="a1466124-6b75-4495-a467-58b136e9ff61">
 			</testcontainer>
 			<testcontainer
-			id="a9f82130-40c0-4bf2-a04c-d3b1ab9eeece">
+			id="a88dd955-1380-4197-a122-03b4c8638672">
+			</testcontainer>
+			<testcontainer
+			id="aa09af30-1e68-4459-88f3-5cd79cf16911">
+			</testcontainer>
+			<testcontainer
+			id="ac57980d-7272-4f24-887e-35835239fc9d">
 			</testcontainer>
 			<testcontainer
 			id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4">
 			</testcontainer>
 			<testcontainer
-			id="b2875f8e-5ac6-415e-93f0-d000f1cdaf3f">
-			</testcontainer>
-			<testcontainer
-			id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed">
+			id="b319d319-16d8-40e6-8c90-b61f64137ae2">
 			</testcontainer>
 			<testcontainer
 			id="b468f615-5d6f-4e8c-b782-e6f70c90b66d">
 			</testcontainer>
 			<testcontainer
-			id="b5af504c-c695-4165-808b-014bc35e7534">
-			</testcontainer>
-			<testcontainer
-			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
+			id="c1dac143-ce70-4c2f-afdc-9b654a744991">
 			</testcontainer>
 			<testcontainer
 			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">
 			</testcontainer>
 			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
+			</testcontainer>
+			<testcontainer
+			id="cf83bf58-35e5-4f83-8e04-5991e49545f0">
 			</testcontainer>
 			<testcontainer
 			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
@@ -5332,10 +5383,10 @@ rxversion="8.3">
 			id="d7301e08-98a1-4c85-bb6a-6ec82c426239">
 			</testcontainer>
 			<testcontainer
-			id="d79c9852-484e-4cc4-83f2-c73c5387d586">
+			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
 			</testcontainer>
 			<testcontainer
-			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
+			id="e1ef7e1f-07d8-45e4-b7fe-3ba22e3f2524">
 			</testcontainer>
 			<testcontainer
 			id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466">
@@ -5344,16 +5395,28 @@ rxversion="8.3">
 			id="eb2b9d4f-178e-48da-8001-d67b6cf03aff">
 			</testcontainer>
 			<testcontainer
+			id="eb638fc6-b4a9-4a64-96fe-ee8eef77ca9c">
+			</testcontainer>
+			<testcontainer
 			id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">
 			</testcontainer>
 			<testcontainer
-			id="f3e7c860-60d5-49b3-9110-18bd9da5df17">
+			id="efa1cf54-9733-453c-ae88-55402cf6ea80">
+			</testcontainer>
+			<testcontainer
+			id="f4aa2d59-6c00-465f-9d79-2c75814cfbd2">
 			</testcontainer>
 			<testcontainer
 			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">
 			</testcontainer>
 			<testcontainer
 			id="f6a31933-9e9b-46c5-9bad-9b79a53baadd">
+			</testcontainer>
+			<testcontainer
+			id="fca09944-a8c2-4c34-8714-8e5871e85452">
+			</testcontainer>
+			<testcontainer
+			id="fd8a7d04-7499-4e31-8ad7-be2bab062e87">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
