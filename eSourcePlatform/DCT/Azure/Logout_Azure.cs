@@ -107,8 +107,8 @@ namespace DCT.Azure
             repo.KuduServices.Logout.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'KuduServices'.", repo.KuduServices.SelfInfo, new RecordItemIndex(2));
-            Host.Current.CloseApplication(repo.KuduServices.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'KuduServices'.", repo.KuduServices.SelfInfo, new RecordItemIndex(2));
+            Host.Current.KillApplication(repo.KuduServices.Self);
             Delay.Milliseconds(0);
             
         }

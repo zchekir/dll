@@ -92,11 +92,14 @@ namespace RedCapCloud.StudiesPage
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsButton' at Center.", repo.REDCapCloud.SubjectsButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsButton' at Center.", repo.REDCapCloud.SubjectsButtonInfo, new RecordItemIndex(2));
             repo.REDCapCloud.SubjectsButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(3));
             Delay.Duration(1500, false);
             
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);

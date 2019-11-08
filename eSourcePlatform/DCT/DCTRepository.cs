@@ -40,6 +40,7 @@ namespace DCT
         DCTRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
         DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
         DCTRepositoryFolders.REDCapCloud1AppFolder _redcapcloud1;
+        DCTRepositoryFolders.DataCleaningTool1AppFolder _datacleaningtool1;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -69,6 +70,7 @@ namespace DCT
             _cogstatesolutionplatform = new DCTRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
             _academicextractorrpowerbi = new DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
             _redcapcloud1 = new DCTRepositoryFolders.REDCapCloud1AppFolder(this);
+            _datacleaningtool1 = new DCTRepositoryFolders.DataCleaningTool1AppFolder(this);
         }
 
 #region Variables
@@ -286,6 +288,15 @@ namespace DCT
         public virtual DCTRepositoryFolders.REDCapCloud1AppFolder REDCapCloud1
         {
             get { return _redcapcloud1; }
+        }
+
+        /// <summary>
+        /// The DataCleaningTool1 folder.
+        /// </summary>
+        [RepositoryFolder("c999cc24-7711-432b-bcf1-273bdadd7e3f")]
+        public virtual DCTRepositoryFolders.DataCleaningTool1AppFolder DataCleaningTool1
+        {
+            get { return _datacleaningtool1; }
         }
     }
 
@@ -2484,6 +2495,72 @@ namespace DCT
                 get
                 {
                     return _entersubjectnumberInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DataCleaningTool1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c999cc24-7711-432b-bcf1-273bdadd7e3f")]
+        public partial class DataCleaningTool1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _findbyassessmentidInfo;
+
+            /// <summary>
+            /// Creates a new DataCleaningTool1  folder.
+            /// </summary>
+            public DataCleaningTool1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DataCleaningTool1", "/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']", parentFolder, 30000, null, false, "c999cc24-7711-432b-bcf1-273bdadd7e3f", "")
+            {
+                _findbyassessmentidInfo = new RepoItemInfo(this, "FindByAssessmentId", ".//input[#'findByAssessmentId']", 30000, null, "51fcbb6e-5900-4e52-8e6a-d043a82b497d");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c999cc24-7711-432b-bcf1-273bdadd7e3f")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c999cc24-7711-432b-bcf1-273bdadd7e3f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FindByAssessmentId item.
+            /// </summary>
+            [RepositoryItem("51fcbb6e-5900-4e52-8e6a-d043a82b497d")]
+            public virtual Ranorex.InputTag FindByAssessmentId
+            {
+                get
+                {
+                    return _findbyassessmentidInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FindByAssessmentId item info.
+            /// </summary>
+            [RepositoryItemInfo("51fcbb6e-5900-4e52-8e6a-d043a82b497d")]
+            public virtual RepoItemInfo FindByAssessmentIdInfo
+            {
+                get
+                {
+                    return _findbyassessmentidInfo;
                 }
             }
         }

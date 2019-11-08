@@ -41,7 +41,7 @@ namespace DCT.DCT_Page
         /// </summary>
         public Enter_Test_Identifier()
         {
-            TestIdentifier = "";
+            TestIdentifier = "1111111111111111111111";
         }
 
         /// <summary>
@@ -94,7 +94,11 @@ namespace DCT.DCT_Page
 
             Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(0));
             
-            TestInd(TestIdentifier);
+            //TestInd(TestIdentifier);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'DataCleaningTool1.FindByAssessmentId'.", repo.DataCleaningTool1.FindByAssessmentIdInfo, new RecordItemIndex(2));
+            repo.DataCleaningTool1.FindByAssessmentId.PressKeys(TestIdentifier);
             Delay.Milliseconds(0);
             
         }

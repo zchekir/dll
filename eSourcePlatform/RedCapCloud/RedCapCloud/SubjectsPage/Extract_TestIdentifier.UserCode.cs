@@ -37,7 +37,8 @@ namespace RedCapCloud.SubjectsPage
         {
         	Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'inputTagInfo' and assigning its value to variable 'TestIdentifier'.", inputTagInfo);
         	
-        	while (!inputTagInfo.Exists(new Duration(10000))) {
+        	//while (!inputTagInfo.Exists(new Duration(10000))) 
+        	do {
         		
         		//If TestIdentifier is not found, we need to go back to the subjects menu, select the subject,
         		//select the visit and select the CRF again. If we simply sit at the DataConfirmationCRF page and refresh it,
@@ -57,7 +58,7 @@ namespace RedCapCloud.SubjectsPage
         		Report.Log(ReportLevel.Info, "Click", "Mouse click on DataConfirmationCRF", new RecordItemIndex(4));
         		repo.REDCapCloud.SubjectsPage.DataConfirmationCRF.Click();
         			
-        	}
+        	} while (!inputTagInfo.Exists(new Duration(10000))); 
             
             TestIdentifier = inputTagInfo.FindAdapter<InputTag>().Element.GetAttributeValueText("Value");
             
