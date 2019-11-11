@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="72bcb94e-5a74-4ad7-a339-a7fc508ab8d5"
+id="e5be21a5-ba81-49ed-8dca-878f7e822eb4"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Logout_Azure
+		Click_PowerShell
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Logout_Azure"
+	classname="Click_PowerShell"
 	namespace="DCT.Azure">
 	</codegen>
 	<variables>
@@ -37,7 +37,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="9dae517a-f296-4749-8554-601503621edb"
+		searchpropertyid="593739dc-0d9b-4a3f-9b4a-7c96f0919acf"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -46,55 +46,22 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="ba6ef5cd-ae29-46fd-a862-13b41632bc4d"
+			id="63637764-b1c2-45b3-96c3-243481d396a3"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='zchekir@cogstate.com']
+					/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='PowerShell']
 				</path>
 			</info>
 		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<explicitdelayitem
+		duration="4000ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="481e1311-e494-4e58-a2f7-6e77a9d170d8"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']//a[@innertext='Logout']
-				</path>
-			</info>
-		</mouseitem>
-		<closeapprecorditem
-		enabled="True"
-		graceperiod="0ms"
-		method="CloseWindow"
-		optional="False"
-		searchpropertyid="e4bf8f85-dedb-47b2-90ec-c8e0d2558223">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="83d87542-91e4-4062-831c-e71dae0b7938"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='cgst-qc-orr-hub.scm.azurewebsites.net']
-				</path>
-			</info>
-		</closeapprecorditem>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
@@ -112,7 +79,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Logout_Azure.UserCode.cs
+		Click_PowerShell.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

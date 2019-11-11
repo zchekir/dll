@@ -316,7 +316,7 @@ namespace DCT
             RepoItemInfo _primaryvalidationInfo;
             RepoItemInfo _invalidbuttonInfo;
             RepoItemInfo _restorebutton_Info;
-            RepoItemInfo _clickfindbyassessmentidInfo;
+            RepoItemInfo _findbyassessmentidbuttonInfo;
             RepoItemInfo _openresultsInfo;
             RepoItemInfo _clickconfirmInfo;
             RepoItemInfo _clickmakeprimaryInfo;
@@ -339,7 +339,7 @@ namespace DCT
                 _primaryvalidationInfo = new RepoItemInfo(this, "PrimaryValidation", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext='yes']", 30000, null, "1a031ccd-10c6-432c-9edf-5a8661be8d93");
                 _invalidbuttonInfo = new RepoItemInfo(this, "InvalidButton", ".//button[#'action-row-invalidate-button']", 30000, null, "d51ef50b-cc93-42e6-9669-6ad2db192605");
                 _restorebutton_Info = new RepoItemInfo(this, "RestoreButton_", ".//button[#'action-row-restore-button']/span[@innertext='restore']", 30000, null, "dcad520b-c5c1-43c8-84e3-9c49e20656ca");
-                _clickfindbyassessmentidInfo = new RepoItemInfo(this, "ClickFindByAssessmentId", ".//div[#'root']/div/div/div[2]/div[2]/?/?/span[@innertext='Find By Assessment Id']", 30000, null, "98cfba2b-c4c5-488d-8805-d8e0193ff5bb");
+                _findbyassessmentidbuttonInfo = new RepoItemInfo(this, "FindByAssessmentIdButton", ".//div[#'root']/div/div/div[2]/div[2]/?/?/span[@innertext='Find By Assessment Id']", 30000, null, "98cfba2b-c4c5-488d-8805-d8e0193ff5bb");
                 _openresultsInfo = new RepoItemInfo(this, "OpenResults", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2019-']", 30000, null, "2f9f79e7-580e-4755-a6bc-f7137da21cde");
                 _clickconfirmInfo = new RepoItemInfo(this, "ClickConfirm", ".//button[#'move-confirmation-button-next']", 30000, null, "67c5cfc6-aa95-441f-bd70-e6ac84c9e2f1");
                 _clickmakeprimaryInfo = new RepoItemInfo(this, "ClickMakePrimary", ".//button[#'action-row-make-primary-button']/span[@innertext='make primary']", 30000, null, "8a0da0d6-6903-467a-8b3a-441a0225f30c");
@@ -474,26 +474,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The ClickFindByAssessmentId item.
+            /// The FindByAssessmentIdButton item.
             /// </summary>
             [RepositoryItem("98cfba2b-c4c5-488d-8805-d8e0193ff5bb")]
-            public virtual Ranorex.SpanTag ClickFindByAssessmentId
+            public virtual Ranorex.SpanTag FindByAssessmentIdButton
             {
                 get
                 {
-                    return _clickfindbyassessmentidInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _findbyassessmentidbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClickFindByAssessmentId item info.
+            /// The FindByAssessmentIdButton item info.
             /// </summary>
             [RepositoryItemInfo("98cfba2b-c4c5-488d-8805-d8e0193ff5bb")]
-            public virtual RepoItemInfo ClickFindByAssessmentIdInfo
+            public virtual RepoItemInfo FindByAssessmentIdButtonInfo
             {
                 get
                 {
-                    return _clickfindbyassessmentidInfo;
+                    return _findbyassessmentidbuttonInfo;
                 }
             }
 
@@ -2256,7 +2256,7 @@ namespace DCT
         public partial class CogstateSolutionPlatformAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _academicextractInfo;
-            RepoItemInfo _reportsInfo;
+            RepoItemInfo _reportstabInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -2265,7 +2265,7 @@ namespace DCT
                     base("CogstateSolutionPlatform", "/dom[@domain=$CSPDOM]", parentFolder, 30000, null, false, "38465dbb-2a52-4f97-a7da-4f756315b3f4", "")
             {
                 _academicextractInfo = new RepoItemInfo(this, "AcademicExtract", ".//a[@innertext='Academic Extract']", 30000, null, "5f95c61a-732b-463d-a24a-1847574f6cd8");
-                _reportsInfo = new RepoItemInfo(this, "Reports", ".//a[@innertext='Reports']", 30000, null, "93211f96-5811-43a7-b78f-36c0459fd008");
+                _reportstabInfo = new RepoItemInfo(this, "ReportsTab", ".//a[@innertext='Reports']", 30000, null, "93211f96-5811-43a7-b78f-36c0459fd008");
             }
 
             /// <summary>
@@ -2317,26 +2317,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The Reports item.
+            /// The ReportsTab item.
             /// </summary>
             [RepositoryItem("93211f96-5811-43a7-b78f-36c0459fd008")]
-            public virtual Ranorex.ATag Reports
+            public virtual Ranorex.ATag ReportsTab
             {
                 get
                 {
-                    return _reportsInfo.CreateAdapter<Ranorex.ATag>(true);
+                    return _reportstabInfo.CreateAdapter<Ranorex.ATag>(true);
                 }
             }
 
             /// <summary>
-            /// The Reports item info.
+            /// The ReportsTab item info.
             /// </summary>
             [RepositoryItemInfo("93211f96-5811-43a7-b78f-36c0459fd008")]
-            public virtual RepoItemInfo ReportsInfo
+            public virtual RepoItemInfo ReportsTabInfo
             {
                 get
                 {
-                    return _reportsInfo;
+                    return _reportstabInfo;
                 }
             }
         }

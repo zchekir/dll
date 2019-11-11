@@ -24,53 +24,59 @@ namespace DCT.Azure
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout_Azure recording.
+    ///The Open_Azure recording.
     /// </summary>
-    [TestModule("72bcb94e-5a74-4ad7-a339-a7fc508ab8d5", ModuleType.Recording, 1)]
-    public partial class Logout_Azure : ITestModule
+    [TestModule("3c58db6f-d18b-4efc-9f55-1aa651e51eff", ModuleType.Recording, 1)]
+    public partial class Open_Azure : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static Logout_Azure instance = new Logout_Azure();
+        static Open_Azure instance = new Open_Azure();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout_Azure()
+        public Open_Azure()
         {
+            AzureURL = "";
+            Browser = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout_Azure Instance
+        public static Open_Azure Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable AzureDOM.
-        /// </summary>
-        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
-        public string AzureDOM
-        {
-            get { return repo.AzureDOM; }
-            set { repo.AzureDOM = value; }
-        }
+        string _AzureURL;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable AzureURL.
         /// </summary>
-        [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
-        public string CSPUsername
+        [TestVariable("20d68c2c-2be2-45b9-82cc-82e44ec453b2")]
+        public string AzureURL
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return _AzureURL; }
+            set { _AzureURL = value; }
+        }
+
+        string _Browser;
+
+        /// <summary>
+        /// Gets or sets the value of variable Browser.
+        /// </summary>
+        [TestVariable("28d9d4d6-7384-4f32-907e-1a70d33054bd")]
+        public string Browser
+        {
+            get { return _Browser; }
+            set { _Browser = value; }
         }
 
 #endregion
@@ -99,16 +105,8 @@ namespace DCT.Azure
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.AzureLogout' at Center.", repo.KuduServices.AzureLogoutInfo, new RecordItemIndex(0));
-            repo.KuduServices.AzureLogout.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.Logout' at Center.", repo.KuduServices.LogoutInfo, new RecordItemIndex(1));
-            repo.KuduServices.Logout.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'KuduServices'.", repo.KuduServices.SelfInfo, new RecordItemIndex(2));
-            Host.Current.CloseApplication(repo.KuduServices.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $AzureURL with browser specified by variable $Browser in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(AzureURL, Browser, "", false, false, false, true, false, true);
             Delay.Milliseconds(0);
             
         }

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.Azure
+namespace DCT.single_sign_in
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout_Azure recording.
+    ///The Click_OK recording.
     /// </summary>
-    [TestModule("72bcb94e-5a74-4ad7-a339-a7fc508ab8d5", ModuleType.Recording, 1)]
-    public partial class Logout_Azure : ITestModule
+    [TestModule("dd50aae4-733c-4063-baf4-6b08d5a60e27", ModuleType.Recording, 1)]
+    public partial class Click_OK : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static Logout_Azure instance = new Logout_Azure();
+        static Click_OK instance = new Click_OK();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout_Azure()
+        public Click_OK()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout_Azure Instance
+        public static Click_OK Instance
         {
             get { return instance; }
         }
@@ -54,23 +54,13 @@ namespace DCT.Azure
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable AzureDOM.
+        /// Gets or sets the value of variable DCTDOM.
         /// </summary>
-        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
-        public string AzureDOM
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
         {
-            get { return repo.AzureDOM; }
-            set { repo.AzureDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
         }
 
 #endregion
@@ -99,17 +89,9 @@ namespace DCT.Azure
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.AzureLogout' at Center.", repo.KuduServices.AzureLogoutInfo, new RecordItemIndex(0));
-            repo.KuduServices.AzureLogout.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickOk' at Center.", repo.DataCleaningTool.ClickOkInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.ClickOk.Click();
             Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.Logout' at Center.", repo.KuduServices.LogoutInfo, new RecordItemIndex(1));
-            repo.KuduServices.Logout.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'KuduServices'.", repo.KuduServices.SelfInfo, new RecordItemIndex(2));
-            Host.Current.CloseApplication(repo.KuduServices.Self, new Duration(0));
-            Delay.Milliseconds(0);
             
         }
 

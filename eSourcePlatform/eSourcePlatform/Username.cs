@@ -108,11 +108,7 @@ namespace eSourcePlatform
             repo.CogstateSolutionPlatform1.LoginEmail.PressKeys(CSPUsername);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPUsername' with focus on 'CogstateSolutionPlatform1.LoginEmail'.", repo.CogstateSolutionPlatform1.LoginEmailInfo, new RecordItemIndex(5));
-            //repo.CogstateSolutionPlatform1.LoginEmail.PressKeys(CSPUsername);
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(5));
             Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
             

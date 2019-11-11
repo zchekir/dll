@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.Azure
+namespace DCT.RCC_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout_Azure recording.
+    ///The Query_RCC_Version recording.
     /// </summary>
-    [TestModule("72bcb94e-5a74-4ad7-a339-a7fc508ab8d5", ModuleType.Recording, 1)]
-    public partial class Logout_Azure : ITestModule
+    [TestModule("9aa4db57-0c36-48f5-b0e4-034541eb1b12", ModuleType.Recording, 1)]
+    public partial class Query_RCC_Version : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static Logout_Azure instance = new Logout_Azure();
+        static Query_RCC_Version instance = new Query_RCC_Version();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout_Azure()
+        public Query_RCC_Version()
         {
+            RCCVersionQuery_ = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout_Azure Instance
+        public static Query_RCC_Version Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _RCCVersionQuery_;
+
+        /// <summary>
+        /// Gets or sets the value of variable RCCVersionQuery_.
+        /// </summary>
+        [TestVariable("b1c7a023-5abd-4a21-8861-19c0f0ab012c")]
+        public string RCCVersionQuery_
+        {
+            get { return _RCCVersionQuery_; }
+            set { _RCCVersionQuery_ = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable AzureDOM.
@@ -61,16 +74,6 @@ namespace DCT.Azure
         {
             get { return repo.AzureDOM; }
             set { repo.AzureDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
         }
 
 #endregion
@@ -99,17 +102,23 @@ namespace DCT.Azure
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.AzureLogout' at Center.", repo.KuduServices.AzureLogoutInfo, new RecordItemIndex(0));
-            repo.KuduServices.AzureLogout.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.rcc_hubPowerShall' at Center.", repo.KuduServices.rcc_hubPowerShallInfo, new RecordItemIndex(1));
+            repo.KuduServices.rcc_hubPowerShall.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.Logout' at Center.", repo.KuduServices.LogoutInfo, new RecordItemIndex(1));
-            repo.KuduServices.Logout.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RCCVersionQuery_' with focus on 'KuduServices.rcc_hubPowerShall'.", repo.KuduServices.rcc_hubPowerShallInfo, new RecordItemIndex(2));
+            repo.KuduServices.rcc_hubPowerShall.PressKeys(RCCVersionQuery_, 1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'KuduServices'.", repo.KuduServices.SelfInfo, new RecordItemIndex(2));
-            Host.Current.CloseApplication(repo.KuduServices.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
+            Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
+            Delay.Duration(5000, false);
             
         }
 

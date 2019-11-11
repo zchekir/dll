@@ -79,7 +79,7 @@ namespace CSP.General
 
             Init();
 
-            //StartPopupWatcher(null, null);
+            //Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(null, null);
             //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'GmailInbox.BackToInbox' at Center.", repo.GmailInbox.BackToInboxInfo, new RecordItemIndex(1));
@@ -100,7 +100,7 @@ namespace CSP.General
             repo.GmailInbox.DeleteButton.Click("Center", 100);
             Delay.Milliseconds(0);
             
-            //StopPopupWatcher(null, null);
+            //Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(null, null);
             //Delay.Milliseconds(0);
             
         }

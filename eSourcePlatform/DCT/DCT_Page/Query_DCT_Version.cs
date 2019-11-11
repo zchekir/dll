@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.Azure
+namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Logout_Azure recording.
+    ///The Query_DCT_Version recording.
     /// </summary>
-    [TestModule("72bcb94e-5a74-4ad7-a339-a7fc508ab8d5", ModuleType.Recording, 1)]
-    public partial class Logout_Azure : ITestModule
+    [TestModule("9f2b6e02-9486-49ab-bcbe-42714eb80706", ModuleType.Recording, 1)]
+    public partial class Query_DCT_Version : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static Logout_Azure instance = new Logout_Azure();
+        static Query_DCT_Version instance = new Query_DCT_Version();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Logout_Azure()
+        public Query_DCT_Version()
         {
+            DCTVersionQuery = "(get-item -Path 'D:\\home\\site\\wwwroot\\app_data\\jobs\\continuous\\*\\Cogstate.*.exe').VersionInfo";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Logout_Azure Instance
+        public static Query_DCT_Version Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _DCTVersionQuery;
+
+        /// <summary>
+        /// Gets or sets the value of variable DCTVersionQuery.
+        /// </summary>
+        [TestVariable("9a8929ee-dc8a-46dc-99f0-46052dbbd846")]
+        public string DCTVersionQuery
+        {
+            get { return _DCTVersionQuery; }
+            set { _DCTVersionQuery = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable AzureDOM.
@@ -61,16 +74,6 @@ namespace DCT.Azure
         {
             get { return repo.AzureDOM; }
             set { repo.AzureDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
         }
 
 #endregion
@@ -99,17 +102,23 @@ namespace DCT.Azure
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.AzureLogout' at Center.", repo.KuduServices.AzureLogoutInfo, new RecordItemIndex(0));
-            repo.KuduServices.AzureLogout.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(0));
+            Delay.Duration(20000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShallConsol' at Center.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(1));
+            repo.KuduServices.PowerShallConsol.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.Logout' at Center.", repo.KuduServices.LogoutInfo, new RecordItemIndex(1));
-            repo.KuduServices.Logout.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVersionQuery' with focus on 'KuduServices.PowerShallConsol'.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(2));
+            repo.KuduServices.PowerShallConsol.PressKeys(DCTVersionQuery, 1);
+            Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'KuduServices'.", repo.KuduServices.SelfInfo, new RecordItemIndex(2));
-            Host.Current.CloseApplication(repo.KuduServices.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
+            Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
+            Delay.Duration(2000, false);
             
         }
 
