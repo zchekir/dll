@@ -89,8 +89,8 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(0));
+            Delay.Duration(8000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AcademicExtract' at Center.", repo.CogstateSolutionPlatform.AcademicExtractInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AcademicExtract.Click();
