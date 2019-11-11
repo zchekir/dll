@@ -173,6 +173,25 @@ ooAKKKKACmP95aKKAHCloooA/9k=
 				</path>
 			</info>
 		</mouseitem>
+		<keysequenceitem
+		KeySequence="{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="95bbb7c7-6beb-47cb-9cd7-484e3ac07e92">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d7b3150e-dabc-40ec-a614-3a84e81930be"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'(^Open)|(^File Upload)']/?/?/text[@controlid='1148']
+				</path>
+			</info>
+		</keysequenceitem>
 		<userrecorditem
 		classname="Select_CSV"
 		duration="10ms"
@@ -570,7 +589,7 @@ KACiiigAooooAKQ0tIaAGp95qfTE+81PoAKKKKACiiigAooooAKKKKACiiigBm4LIckDgdfxpd6f
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 	name="RedCapCloudRepository"
 	relativepath="..\RedCapCloudRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="RedCapCloudRepository"
 		namespace="RedCapCloud">

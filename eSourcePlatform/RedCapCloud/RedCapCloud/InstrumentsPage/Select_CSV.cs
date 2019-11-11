@@ -110,22 +110,26 @@ namespace RedCapCloud.InstrumentsPage
             repo.OpenFileDialog.FilenameField.Click(100);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(2));
+            repo.OpenFileDialog.FilenameField.PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}");
+            Delay.Milliseconds(0);
+            
             NavigateToDirectory(repo.OpenFileDialog.FilenameFieldInfo);
             Delay.Milliseconds(10);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FileName' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FileName' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(4));
             repo.OpenFileDialog.FilenameField.PressKeys(FileName, 10);
             Delay.Milliseconds(10);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '.csv' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '.csv' with focus on 'OpenFileDialog.FilenameField'.", repo.OpenFileDialog.FilenameFieldInfo, new RecordItemIndex(5));
             repo.OpenFileDialog.FilenameField.PressKeys(".csv", 1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OpenFileDialog.ButtonOpen' at Center.", repo.OpenFileDialog.ButtonOpenInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OpenFileDialog.ButtonOpen' at Center.", repo.OpenFileDialog.ButtonOpenInfo, new RecordItemIndex(6));
             repo.OpenFileDialog.ButtonOpen.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
             Delay.Duration(1000, false);
             
         }
