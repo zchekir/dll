@@ -129,7 +129,7 @@ namespace engine.Helpers
         public static void AddVisitSettings(string URL, string key)
         {
         	bool found = false;
-        	//int index = 0;
+        	int colIndex = 0;
         	
         	//Loop over each Column in the DataTable
         	foreach (DataColumn column in dt.Columns)
@@ -145,11 +145,11 @@ namespace engine.Helpers
         			{
         				
         				//First we need to find the row which contains the visit settings
-        				if (row[24].ToString().Contains("Begin Assessment"))
+        				if (row[colIndex].ToString().Contains("Begin Assessment"))
         				{
         					Report.Log(ReportLevel.Info, "Cell Found! Current settings are: " + row[column].ToString());
         					
-        					dt.Rows[rowIndex][24] = "{\"label\":\"Begin Assessment\", \"url\":\"" + URL + "api/external/v2" + "\", \"key\":\"" + key + "\", \"secret\":\"" + WebService.Token + "\",\"execStatusVariable\":\"ExecutionStatus\", \"dob_variable\":\"dob\", \"sex_variable\":\"gender\", \"lang_variable\":\"language\", \"fieldHide\":\"N\"}";
+        					dt.Rows[rowIndex][colIndex] = "{\"label\":\"Begin Assessment\", \"url\":\"" + URL + "api/external/v2" + "\", \"key\":\"" + key + "\", \"secret\":\"" + WebService.Token + "\",\"execStatusVariable\":\"ExecutionStatus\", \"dob_variable\":\"dob\", \"sex_variable\":\"gender\", \"lang_variable\":\"language\", \"fieldHide\":\"N\"}";
         				
         					Report.Log(ReportLevel.Info, "Cell Updated! New settings are: " + row[column].ToString());
         				}
@@ -157,6 +157,7 @@ namespace engine.Helpers
         			}
        				
         		}
+        		colIndex++;
         	}
         	
         	if (!found)

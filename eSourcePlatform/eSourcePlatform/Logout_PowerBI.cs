@@ -90,8 +90,8 @@ namespace eSourcePlatform
             //repo.AcademicExtractOrrPowerBI.SignOut.Click();
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'AcademicExtractOrrPowerBI'.", repo.AcademicExtractOrrPowerBI.SelfInfo, new RecordItemIndex(3));
-            Host.Current.KillApplication(repo.AcademicExtractOrrPowerBI.Self);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'AcademicExtractOrrPowerBI'.", repo.AcademicExtractOrrPowerBI.SelfInfo, new RecordItemIndex(3));
+            Host.Current.CloseApplication(repo.AcademicExtractOrrPowerBI.Self, new Duration(0));
             Delay.Milliseconds(0);
             
         }

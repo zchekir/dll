@@ -97,10 +97,6 @@ namespace CSP.General
             repo.CogstateSolutionPlatform.UserMenu.LogoutButton.Click("46;11");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.LoginForm.LogoutMessage'.", repo.CogstateSolutionPlatform.LoginForm.LogoutMessageInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.CogstateSolutionPlatform.LoginForm.LogoutMessageInfo);
-            Delay.Milliseconds(100);
-            
         }
 
 #region Image Feature Data
