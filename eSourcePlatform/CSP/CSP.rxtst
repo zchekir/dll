@@ -289,6 +289,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0c4b76ac-89b3-4847-a45a-89bb1a6a945f"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0c67fa28-e0cb-4086-9f4b-a88ff95ef86f"
 			name="Click_Gear_Icon"
 			ref="c53e2e79-d2d1-413f-b728-0a065189c55c"
@@ -344,6 +364,20 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="0f4c24f4-17a6-4add-910f-b752470c90ef"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0f6ab612-bf00-45b3-8bf6-fb6e399c7227"
 			name="Click_AddTest_Button"
 			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
 			type="Recording">
@@ -970,6 +1004,35 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="31699f52-eacf-4697-9583-e6f17ed03933"
+			maxrange="193"
+			minrange="192"
+			name="BPSO_Loop_Controller">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="BPSO Template">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="32efd557-8b11-493f-a541-9822a03e772d"
 			name="Extract_Participant_IQNumber"
@@ -1246,8 +1309,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="8"
-			minrange="8"
+			maxrange="9"
+			minrange="9"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
 			<testmodule
@@ -2027,6 +2090,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5fa4a763-207d-4936-b4bf-60220cb947bd"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="60d18c53-9181-43e9-99aa-33b6761a9d19"
 			name="APIV2_QualificationStatus"
 			ref="8080cd65-37d3-431e-8bd9-4ff840801312"
@@ -2537,8 +2614,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="8"
-			minrange="8"
+			maxrange="9"
+			minrange="9"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
 			<teardown
@@ -3901,6 +3978,26 @@ rxversion="8.3">
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="af983f5f-68a3-4189-a82f-70c008904a6c"
 					variablename="supervisorId">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c9bceec6-c2f2-46b5-aa82-d8dfa645ba54"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5316,6 +5413,26 @@ rxversion="8.3">
 									name="Validate_BatteryTemplate_Configured">
 									</testmodule>
 								</smartfoldernode>
+								<smartfoldernode
+								id="31699f52-eacf-4697-9583-e6f17ed03933"
+								name="BPSO_Loop_Controller">
+									<testmodule
+									id="0f6ab612-bf00-45b3-8bf6-fb6e399c7227"
+									name="Click_AddTest_Button">
+									</testmodule>
+									<testmodule
+									id="c9bceec6-c2f2-46b5-aa82-d8dfa645ba54"
+									name="Select_CogstateTest">
+									</testmodule>
+									<testmodule
+									id="5fa4a763-207d-4936-b4bf-60220cb947bd"
+									name="Click_SaveBatteryTemplate_Properties">
+									</testmodule>
+									<testmodule
+									id="0c4b76ac-89b3-4847-a45a-89bb1a6a945f"
+									name="Validate_BatteryTemplate_Configured">
+									</testmodule>
+								</smartfoldernode>
 							</testcase>
 							<testcase
 							id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -5910,7 +6027,7 @@ rxversion="8.3">
 		<DataSource
 		id="0223bb73-bdf8-475b-9924-27f470878d7d"
 		includefile="Unchecked"
-		lastknownrowcount="192"
+		lastknownrowcount="196"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5928,7 +6045,7 @@ rxversion="8.3">
 		<DataSource
 		id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 		includefile="Unchecked"
-		lastknownrowcount="10"
+		lastknownrowcount="11"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6180,9 +6297,6 @@ rxversion="8.3">
 		<testconfiguration
 		name="Regression">
 			<testcontainer
-			id="037aeee4-7133-450a-b13e-79f6464da1e0">
-			</testcontainer>
-			<testcontainer
 			id="10c333f8-e857-4fad-823d-294804009f8b">
 			</testcontainer>
 			<testcontainer
@@ -6198,7 +6312,7 @@ rxversion="8.3">
 			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
 			</testcontainer>
 			<testcontainer
-			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			id="31699f52-eacf-4697-9583-e6f17ed03933">
 			</testcontainer>
 			<testcontainer
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
@@ -6216,13 +6330,7 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
-			</testcontainer>
-			<testcontainer
 			id="6e082396-bffa-4d84-b254-0da30d111799">
-			</testcontainer>
-			<testcontainer
-			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
 			</testcontainer>
 			<testcontainer
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
@@ -6234,13 +6342,7 @@ rxversion="8.3">
 			id="82bc9b0d-664f-42ea-a949-83d3ff5ea967">
 			</testcontainer>
 			<testcontainer
-			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
-			</testcontainer>
-			<testcontainer
 			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
-			</testcontainer>
-			<testcontainer
-			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
 			</testcontainer>
 			<testcontainer
 			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
@@ -6270,9 +6372,6 @@ rxversion="8.3">
 			id="baf76252-a794-4bae-b009-029b41fb4909">
 			</testcontainer>
 			<testcontainer
-			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
-			</testcontainer>
-			<testcontainer
 			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
 			</testcontainer>
 			<testcontainer
@@ -6289,9 +6388,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
-			</testcontainer>
-			<testcontainer
-			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
