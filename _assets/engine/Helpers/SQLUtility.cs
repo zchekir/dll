@@ -114,6 +114,8 @@ namespace engine.Helpers
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'TotalCorrectFoils' THEN Assessment.AssessmentTestOutcome.[Value] END)                  AS [TotalCorrectFoils]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'TotalResponses' THEN Assessment.AssessmentTestOutcome.[Value] END)                     AS [TotalResponses]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'TotalTrials' THEN Assessment.AssessmentTestOutcome.[Value] END)                        AS [TotalTrials]
+		,MAX(CASE WHEN Assessment.Outcome.Description = 'BPSOMetric' THEN Assessment.AssessmentTestOutcome.Value END)							AS [BPSOMetric]
+	    ,MAX(CASE WHEN Assessment.Outcome.Description = 'PerCor' THEN Assessment.AssessmentTestOutcome.Value END)								AS [PerCor]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'StandardScoreZ' THEN Assessment.AssessmentTestOutcome.[Value] END)                     AS [StandardScoreZ]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'StandardScoreT' THEN Assessment.AssessmentTestOutcome.[Value] END)                     AS [StandardScoreT]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'AltStandardScoreZ' THEN Assessment.AssessmentTestOutcome.[Value] END)                  AS [AltStandardScoreZ]

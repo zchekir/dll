@@ -585,6 +585,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="14a19a87-8abc-434b-9f58-7bdecc00ba01"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="16025ae9-9d05-4d0f-995b-d91887787f2b"
 			name="teardown">
@@ -966,6 +986,20 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_Study">
 			</testcase>
+			<testmodule
+			id="2e36ecda-19d9-459d-9dc8-b6d3ed741d60"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="2fe2ddbe-db03-49e1-b7d5-cb41b8d87768"
 			name="Click_AddTest_Button"
@@ -1651,6 +1685,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4ee8fd35-a241-4bd0-bb1b-448cf50a5efe"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="5154f71e-116a-492f-910f-fd1890f65b92"
 			name="Click_SaveBatteryTemplate_Properties"
 			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
@@ -1858,6 +1912,35 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="57d6ef0f-d66c-4a7c-af79-5ee4a029a67a"
+			maxrange="191"
+			minrange="191"
+			name="TwoBack_Loop_Controller">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="TwoBack Template">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			datarangeset="56,85,121,145"
 			errorbehavior="Stop"
@@ -2448,6 +2531,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="6c95eeb3-00be-43ab-b07f-8912212ee37d"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			errorbehavior="Stop"
 			id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -5433,6 +5530,26 @@ rxversion="8.3">
 									name="Validate_BatteryTemplate_Configured">
 									</testmodule>
 								</smartfoldernode>
+								<smartfoldernode
+								id="57d6ef0f-d66c-4a7c-af79-5ee4a029a67a"
+								name="TwoBack_Loop_Controller">
+									<testmodule
+									id="2e36ecda-19d9-459d-9dc8-b6d3ed741d60"
+									name="Click_AddTest_Button">
+									</testmodule>
+									<testmodule
+									id="14a19a87-8abc-434b-9f58-7bdecc00ba01"
+									name="Select_CogstateTest">
+									</testmodule>
+									<testmodule
+									id="6c95eeb3-00be-43ab-b07f-8912212ee37d"
+									name="Click_SaveBatteryTemplate_Properties">
+									</testmodule>
+									<testmodule
+									id="4ee8fd35-a241-4bd0-bb1b-448cf50a5efe"
+									name="Validate_BatteryTemplate_Configured">
+									</testmodule>
+								</smartfoldernode>
 							</testcase>
 							<testcase
 							id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -6319,6 +6436,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="48b1148e-3ad5-47f7-bc8a-ccf5679419d7">
+			</testcontainer>
+			<testcontainer
+			id="57d6ef0f-d66c-4a7c-af79-5ee4a029a67a">
 			</testcontainer>
 			<testcontainer
 			id="57ef6762-179a-4705-bb8f-8a003cdb2976">

@@ -178,6 +178,8 @@ namespace engine.DataProcessor
         		case "MovesPerSecond":
         		case "StandardScoreZ":
         		case "StandardScoreT":
+ 				case "BPSOMetric":
+ 			    case "PerCor":
         		case "PsyAttStdScr":
         		case "LearnWMStdScr":
         		case "AltLearnWMStdScr": 				
