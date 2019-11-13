@@ -35,7 +35,7 @@ namespace DCT
 
         public void Report_Screenshot()
         {
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false);
+            Report.Screenshot(ReportLevel.Info, "PowerBIreportGenerated successfully", "", null, false);
         }
 
         public void UserCodeMethod(RepoItemInfo argument1)

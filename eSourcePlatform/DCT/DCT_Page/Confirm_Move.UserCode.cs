@@ -45,6 +45,11 @@ namespace DCT.DCT_Page
         	  WebElement ClickFind ="//span[@innertext='Find By Assessment Id']";
         	  ClickFind.Click();
         }
+
+        public void Report_Screenshot_DataCleaningTool(RepoItemInfo webdocumentInfo)
+        {
+            Report.Screenshot(ReportLevel.Info, "TestIdentifier Moved Suuceessfully", "", webdocumentInfo.FindAdapter<WebDocument>(), false);
+        }
         
        
 

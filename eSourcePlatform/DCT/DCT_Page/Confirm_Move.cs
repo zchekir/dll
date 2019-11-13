@@ -106,7 +106,8 @@ namespace DCT.DCT_Page
             Validate.Exists(repo.DataCleaningTool.MoveValidationInfo);
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.DataCleaningTool.Self, false, new RecordItemIndex(1));
+            Report_Screenshot_DataCleaningTool(repo.DataCleaningTool.SelfInfo);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
             Delay.Duration(500, false);

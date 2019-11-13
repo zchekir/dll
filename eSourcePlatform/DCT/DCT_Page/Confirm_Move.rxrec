@@ -243,26 +243,38 @@ iigAooooA//Z
 			<matchvalue>
 			</matchvalue>
 		</validationitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
+		<userrecorditem
+		classname="Confirm_Move"
 		enabled="True"
-		message=""
+		isexternaltestmethod="False"
+		methodname="Report_Screenshot_DataCleaningTool"
+		namespace="DCT.DCT_Page"
 		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="8d416bf2-7afe-419b-8054-5e322e4f83bb">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="8d2bb7de-1088-4124-a99c-b77e11c31af1"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain=$DCTDOM]
-				</path>
-			</info>
-		</loggingrecorditem>
+			<arguments
+			id="918da0e1-f7ef-4d24-9754-f75d1d4b1680">
+				<argument
+				argname="webdocumentInfo"
+				id="cd778c46-5d9f-4a06-a6ad-8295f61adcca">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="8d2bb7de-1088-4124-a99c-b77e11c31af1"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DCTDOM]
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<explicitdelayitem
 		duration="500ms"
 		enabled="True"
