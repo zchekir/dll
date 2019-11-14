@@ -2506,6 +2506,8 @@ namespace DCT
         public partial class DataCleaningTool1AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _findbyassessmentidInfo;
+            RepoItemInfo _jss861Info;
+            RepoItemInfo _dctokbuttonInfo;
 
             /// <summary>
             /// Creates a new DataCleaningTool1  folder.
@@ -2514,6 +2516,8 @@ namespace DCT
                     base("DataCleaningTool1", "/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']", parentFolder, 30000, null, false, "c999cc24-7711-432b-bcf1-273bdadd7e3f", "")
             {
                 _findbyassessmentidInfo = new RepoItemInfo(this, "FindByAssessmentId", ".//input[#'findByAssessmentId']", 30000, null, "51fcbb6e-5900-4e52-8e6a-d043a82b497d");
+                _jss861Info = new RepoItemInfo(this, "Jss861", ".//div[#'root']/div/div/div[2]/div[1]/div[1]/div/div/div/div/div[1]", 30000, null, "8b413c1a-6cce-4f20-aec7-3a8b0ab754c8");
+                _dctokbuttonInfo = new RepoItemInfo(this, "DCTOKButton", ".//button[#'move-selection-button-next']/span[@innertext='ok']", 30000, null, "aae03ece-8c0c-4de9-af11-630b8f96e50c");
             }
 
             /// <summary>
@@ -2561,6 +2565,54 @@ namespace DCT
                 get
                 {
                     return _findbyassessmentidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Jss861 item.
+            /// </summary>
+            [RepositoryItem("8b413c1a-6cce-4f20-aec7-3a8b0ab754c8")]
+            public virtual Ranorex.DivTag Jss861
+            {
+                get
+                {
+                    return _jss861Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Jss861 item info.
+            /// </summary>
+            [RepositoryItemInfo("8b413c1a-6cce-4f20-aec7-3a8b0ab754c8")]
+            public virtual RepoItemInfo Jss861Info
+            {
+                get
+                {
+                    return _jss861Info;
+                }
+            }
+
+            /// <summary>
+            /// The DCTOKButton item.
+            /// </summary>
+            [RepositoryItem("aae03ece-8c0c-4de9-af11-630b8f96e50c")]
+            public virtual Ranorex.SpanTag DCTOKButton
+            {
+                get
+                {
+                    return _dctokbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DCTOKButton item info.
+            /// </summary>
+            [RepositoryItemInfo("aae03ece-8c0c-4de9-af11-630b8f96e50c")]
+            public virtual RepoItemInfo DCTOKButtonInfo
+            {
+                get
+                {
+                    return _dctokbuttonInfo;
                 }
             }
         }
