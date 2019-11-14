@@ -115,15 +115,27 @@ namespace CSP.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.StudyToolbar.CardButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ResultsDropdown' at Center.", repo.CogstateSolutionPlatform.ResultsDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.ResultsDropdown.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ALL' with focus on 'CogstateSolutionPlatform.ResultsDropdown'.", repo.CogstateSolutionPlatform.ResultsDropdownInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.ResultsDropdown.PressKeys("ALL", 1);
+            Delay.Milliseconds(90);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Enter}' with focus on 'CogstateSolutionPlatform.ResultsDropdown'.", repo.CogstateSolutionPlatform.ResultsDropdownInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.ResultsDropdown.PressKeys("{Enter}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$VisitScheduleName) on item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, "InnerText", VisitScheduleName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, "InnerText", RandNum);
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Visit Schedule Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(3));
+            Report.Screenshot(ReportLevel.Info, "User", "Visit Schedule Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(6));
             
         }
 

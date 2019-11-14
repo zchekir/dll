@@ -419,6 +419,7 @@ namespace CSP
             RepoItemInfo _nextpagebuttonInfo;
             RepoItemInfo _previouspagebuttonInfo;
             RepoItemInfo _savebuttonInfo;
+            RepoItemInfo _resultsdropdownInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -455,6 +456,7 @@ namespace CSP
                 _nextpagebuttonInfo = new RepoItemInfo(this, "NextPageButton", ".//div[#'ng-app']/tag/div/div//ul/li/a[@innertext='NEXT']", 30000, null, "2a7a9d54-916d-4235-992d-5f3467c7e139");
                 _previouspagebuttonInfo = new RepoItemInfo(this, "PreviousPageButton", ".//div[#'ng-app']/tag/div/div//ul/li/a[@innertext='PREVIOUS']", 30000, null, "9a3bd989-1f05-4532-a3e6-b64f8af89913");
                 _savebuttonInfo = new RepoItemInfo(this, "SaveButton", "body/div/tag/div/div[3]//div/button[@ng-click>'save']", 30000, null, "8a61fdd3-cb4b-4f86-b20d-3fd9bbe1e5b1");
+                _resultsdropdownInfo = new RepoItemInfo(this, "ResultsDropdown", ".//div[#'scroll-container']//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[6]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[4]/select", 30000, null, "2af41e46-264e-4fb3-8ab2-f3f99bc70003");
             }
 
             /// <summary>
@@ -574,6 +576,30 @@ namespace CSP
                 get
                 {
                     return _savebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResultsDropdown item.
+            /// </summary>
+            [RepositoryItem("2af41e46-264e-4fb3-8ab2-f3f99bc70003")]
+            public virtual Ranorex.SelectTag ResultsDropdown
+            {
+                get
+                {
+                    return _resultsdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResultsDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("2af41e46-264e-4fb3-8ab2-f3f99bc70003")]
+            public virtual RepoItemInfo ResultsDropdownInfo
+            {
+                get
+                {
+                    return _resultsdropdownInfo;
                 }
             }
 
