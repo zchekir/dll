@@ -37,7 +37,7 @@ namespace CSP.LoginPage
         public void Try_Enter_Password(RepoItemInfo PasswordField)
         {
             
-        	if (PasswordField.Exists(new Duration(5000)))
+        	if (!PasswordField.Exists(new Duration(5000)))
             {
             	while (PasswordField.FindAdapter<InputTag>().Value != CSPPassword) 
             	{
@@ -51,5 +51,20 @@ namespace CSP.LoginPage
             	Validate.AttributeEqual(PasswordField, "Value", CSPPassword);	
             }
         }
+
+        public void Key_sequence_PasswordInput(RepoItemInfo inputtagInfo)
+        {
+        	
+        	try{
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'inputtagInfo'.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().PressKeys(CSPPassword);
+            
+        	}catch(Exception e){
+        		
+        		Report.Log(ReportLevel.Info,e.Message);
+        		
+        	}
+        	}
+        }
     }
-}
+
