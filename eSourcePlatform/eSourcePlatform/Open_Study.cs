@@ -55,6 +55,16 @@ namespace eSourcePlatform
 #region Variables
 
         /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("7bd16051-5145-48ed-a487-674a71577abf")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable RandNum.
         /// </summary>
         [TestVariable("e0aa0700-4cbc-4876-9c67-59358a21c7c3")]

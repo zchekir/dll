@@ -97,6 +97,18 @@ namespace eSourcePlatform
             set { _ExistingStudy = value; }
         }
 
+        string _CSPDOM = "cgst-qc-orr.azurewebsites.net";
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("7bd16051-5145-48ed-a487-674a71577abf")]
+        public string CSPDOM
+        {
+            get { return _CSPDOM; }
+            set { _CSPDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -195,7 +207,7 @@ namespace eSourcePlatform
             /// Creates a new CogstateSolutionPlatform  folder.
             /// </summary>
             public CogstateSolutionPlatformAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CogstateSolutionPlatform", "/dom[@domain='cgst-qc-orr.azurewebsites.net']", parentFolder, 30000, null, false, "edeb004d-d2f2-4a96-895f-472ccf97f10d", "")
+                    base("CogstateSolutionPlatform", "/dom[@domain=$CSPDOM]", parentFolder, 30000, null, false, "edeb004d-d2f2-4a96-895f-472ccf97f10d", "")
             {
                 _searchstudyInfo = new RepoItemInfo(this, "SearchStudy", ".//input[#'generic-search']", 30000, null, "896c64d8-c9d5-45d0-9c4a-21c793cde0ed");
                 _clickstudyInfo = new RepoItemInfo(this, "Clickstudy", ".//a[@innertext~$ExistingStudy]", 30000, null, "b7e9c226-23bf-40e1-9756-b817a2048676");

@@ -19,7 +19,6 @@ rxversion="8.3">
 		id="edeb004d-d2f2-4a96-895f-472ccf97f10d"
 		isrooted="True"
 		name="CogstateSolutionPlatform"
-		refpath="/dom[@domain='cgst-qc-orr.azurewebsites.net']"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -28,9 +27,8 @@ rxversion="8.3">
 			id="896c64d8-c9d5-45d0-9c4a-21c793cde0ed"
 			name="SearchStudy"
 			refimgid="364a194e-314b-441a-bc25-a7a9d3225cdd"
-			refpath="/dom[@domain='cgst-qc-orr.azurewebsites.net']//input[#'generic-search']"
 			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-orr.azurewebsites.net']//input[#'generic-search']
+				/dom[@domain=$CSPDOM]//input[#'generic-search']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -39,7 +37,7 @@ rxversion="8.3">
 			name="Clickstudy"
 			refimgid="83c47e30-2026-49f1-a5c8-72c7c2823068"
 			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-orr.azurewebsites.net']//a[@innertext~$ExistingStudy]
+				/dom[@domain=$CSPDOM]//a[@innertext~$ExistingStudy]
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -47,12 +45,11 @@ rxversion="8.3">
 			id="fe46efed-95ff-4130-9d75-6d87b2696564"
 			name="StartLogCSP"
 			refimgid="b2a6e540-72a2-4616-8bcd-24940726c64d"
-			refpath="/dom[@domain='cgst-qc-orr.azurewebsites.net']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div[5]/div/a[@href='https://cgst-qc-orr.azurewebsites.net/']/span[2]"
 			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-orr.azurewebsites.net']//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\.azure']/span[2]
+				/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\.azure']/span[2]
 			</item>
 			<basepath>
-				/dom[@domain='cgst-qc-orr.azurewebsites.net']
+				/dom[@domain=$CSPDOM]
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
@@ -370,6 +367,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="c7b8c122-f547-448f-a6ca-6da7fbe44867"
 		name="ExistingStudy">
+		</var>
+		<var
+		id="7bd16051-5145-48ed-a487-674a71577abf"
+		name="CSPDOM">
+			cgst-qc-orr.azurewebsites.net
 		</var>
 	</variables>
 </repository>

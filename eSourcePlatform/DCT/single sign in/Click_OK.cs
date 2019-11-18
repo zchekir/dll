@@ -89,15 +89,11 @@ namespace DCT.single_sign_in
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickOk' at Center.", repo.DataCleaningTool.ClickOkInfo, new RecordItemIndex(0));
-            //repo.DataCleaningTool.ClickOk.Click();
-            //Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool1.DCTOKButton' at Center.", repo.DataCleaningTool1.DCTOKButtonInfo, new RecordItemIndex(2));
-            repo.DataCleaningTool1.DCTOKButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickOk' at Center.", repo.DataCleaningTool.ClickOkInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.ClickOk.Click();
             Delay.Milliseconds(200);
             
         }
