@@ -851,6 +851,15 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain=$CSPDOM]//a[@innertext='Academic Extract']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="386d12ed-1b52-4dcc-bc6e-17218097c6c2"
+			name="ProtocolNumberField"
+			refimgid="25c9ad6a-0083-4a9a-b4af-99e5101bbf5f"
+			searchtimeout="30000ms">
+				/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_protocolName_[0-9]+']
+			</item>
 			<basepath>
 				/dom[@domain=$CSPDOM]
 			</basepath>
@@ -875,7 +884,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		capname="webdocument"
 		id="f1e3226f-4e04-44a6-8973-7f7dc740f469"
 		isrooted="True"
-		name="AcademicExtractOrrPowerBI"
+		name="AcademicExtractPowerBI"
 		refpath="/dom[@domain='app.powerbi.com']"
 		searchtimeout="30000ms"
 		usecache="False">
@@ -883,10 +892,19 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="f8c22779-29ad-4dfc-a968-f2174074c356"
-			name="ProtocolID"
+			name="ProtocolIDTitle"
 			refimgid="1959ef32-a7c0-44a9-a2d1-7e9be4cf71bc"
 			searchtimeout="30000ms">
 				/dom[@domain='app.powerbi.com']//div[@title='ProtocolID']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="d0fa7c17-b4e6-462b-b198-72a4dabc864d"
+			name="ProtocolIDCell"
+			refimgid="68baf7f4-0a7b-4637-9dc5-150089c0cfd2"
+			searchtimeout="30000ms">
+				/dom[@domain='app.powerbi.com']//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']
 			</item>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
@@ -987,6 +1005,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
 		name="RCCDOM">
 			cgsqc.redcapcloud.com
+		</var>
+		<var
+		id="30032ee3-af73-4534-811f-e59adee47d65"
+		name="ProtocolID">
 		</var>
 	</variables>
 </repository>

@@ -41,6 +41,7 @@ namespace DCT
         /// </summary>
         public AcademicExtract()
         {
+            ProtocolID = "";
         }
 
         /// <summary>
@@ -61,6 +62,16 @@ namespace DCT
         {
             get { return repo.CSPDOM; }
             set { repo.CSPDOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable ProtocolID.
+        /// </summary>
+        [TestVariable("30032ee3-af73-4534-811f-e59adee47d65")]
+        public string ProtocolID
+        {
+            get { return repo.ProtocolID; }
+            set { repo.ProtocolID = value; }
         }
 
 #endregion
@@ -92,18 +103,18 @@ namespace DCT
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(0));
             Delay.Duration(8000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AcademicExtract' at Center.", repo.CogstateSolutionPlatform.AcademicExtractInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.ProtocolNumberField' and assigning its value to variable 'ProtocolID'.", repo.CogstateSolutionPlatform.ProtocolNumberFieldInfo, new RecordItemIndex(1));
+            ProtocolID = repo.CogstateSolutionPlatform.ProtocolNumberField.Element.GetAttributeValueText("Value");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AcademicExtract' at Center.", repo.CogstateSolutionPlatform.AcademicExtractInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AcademicExtract.Click();
             Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5m.", new RecordItemIndex(2));
-            //Delay.Duration(300000, false);
-            
-            UserCodeMethod(repo.AcademicExtractOrrPowerBI.ProtocolIDInfo);
+            ValidateAcademicExtract(repo.AcademicExtractPowerBI.ProtocolIDCellInfo);
             Delay.Milliseconds(0);
             
-            Report_Screenshot();
-            Delay.Milliseconds(0);
+            Report.Screenshot(ReportLevel.Info, "User", "PowerBI Report Generated Successfully", repo.AcademicExtractPowerBI.Self, false, new RecordItemIndex(4));
             
         }
 

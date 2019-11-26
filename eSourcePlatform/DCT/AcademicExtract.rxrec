@@ -27,6 +27,10 @@ rxversion="8.3">
 	namespace="DCT">
 	</codegen>
 	<variables>
+		<var
+		id="30032ee3-af73-4534-811f-e59adee47d65"
+		name="ProtocolID">
+		</var>
 	</variables>
 	<recorditems>
 		<explicitdelayitem
@@ -38,6 +42,24 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<getvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="46dcd2e9-9f32-4ffa-bd66-dadb1a98560a"
+		varname="ProtocolID">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="386d12ed-1b52-4dcc-bc6e-17218097c6c2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_protocolName_[0-9]+']
+				</path>
+			</info>
+		</getvaluerecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -62,20 +84,11 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="300000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<userrecorditem
 		classname="AcademicExtract"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="UserCodeMethod"
+		methodname="ValidateAcademicExtract"
 		namespace="DCT"
 		optional="False"
 		varname="">
@@ -86,7 +99,7 @@ rxversion="8.3">
 			<arguments
 			id="dc2284fc-5636-46ac-9245-1390794dab2d">
 				<argument
-				argname="argument1"
+				argname="ProtocolID"
 				id="9c287ac8-0927-4027-b4d1-c1a6430ec3d7">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
@@ -94,81 +107,35 @@ rxversion="8.3">
 					<argvalue>
 					</argvalue>
 					<info
-					id="f8c22779-29ad-4dfc-a968-f2174074c356"
-					sourcename="RepositoryEditor">
-						<element
-						capabilities="webelement, divtag"
-						dontcache="True"
-						enabled="True"
-						flavor="chromeweb"
-						hasfocus="False"
-						index="0"
-						prefcap="divtag"
-						rect="280,223,110,26"
-						role="unknown"
-						snapElem=""
-						valid="True"
-						visible="True">
-							<attribute
-							name="class"
-							type="System.String">
-								pivotTableCellWrap cell-interactive&#32;
-							</attribute>
-							<attribute
-							name="draggable"
-							type="System.String">
-								False
-							</attribute>
-							<attribute
-							name="hidden"
-							type="System.String">
-								False
-							</attribute>
-							<attribute
-							name="innertext"
-							type="System.String">
-								ProtocolID
-							</attribute>
-							<attribute
-							name="tagname"
-							type="System.String">
-								div
-							</attribute>
-							<attribute
-							name="title"
-							type="System.String">
-								ProtocolID
-							</attribute>
-							<dynamicattribute
-							description="Dynamic HTML attribute."
-							name="style"
-							readonly="False"
-							type="System.String">
-							</dynamicattribute>
-						</element>
+					id="d0fa7c17-b4e6-462b-b198-72a4dabc864d"
+					sourcename="ItemRecorderEditor">
 						<path>
-							/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[1]/div[2]/div/div[1]/div[@title='ProtocolID']
+							/dom[@domain='app.powerbi.com']//div[@class='bodyCells']//div[@innertext='AutomationStudy' and @childindex='0']
 						</path>
 					</info>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="AcademicExtract"
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="Report_Screenshot"
-		namespace="DCT"
+		message="PowerBI Report Generated Successfully"
 		optional="False"
-		varname="">
+		reportlevel="Info;20"
+		searchpropertyid="46a27e59-6b2b-4bcb-b7b6-77c915915c24">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="985a5778-9c05-4182-86ed-9a6445daca47">
-			</arguments>
-		</userrecorditem>
+			<info
+			id="f1e3226f-4e04-44a6-8973-7f7dc740f469"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='app.powerbi.com']
+				</path>
+			</info>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="59dabaae-715d-4842-b9c1-5b3cc7991797"

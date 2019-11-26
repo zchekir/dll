@@ -38,7 +38,7 @@ namespace DCT
         DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder _redcapcloudgooglechrome;
         DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
         DCTRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
-        DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
+        DCTRepositoryFolders.AcademicExtractPowerBIAppFolder _academicextractpowerbi;
         DCTRepositoryFolders.REDCapCloud1AppFolder _redcapcloud1;
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace DCT
             _redcapcloudgooglechrome = new DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder(this);
             _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
             _cogstatesolutionplatform = new DCTRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
-            _academicextractorrpowerbi = new DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
+            _academicextractpowerbi = new DCTRepositoryFolders.AcademicExtractPowerBIAppFolder(this);
             _redcapcloud1 = new DCTRepositoryFolders.REDCapCloud1AppFolder(this);
         }
 
@@ -155,6 +155,18 @@ namespace DCT
         {
             get { return _RCCDOM; }
             set { _RCCDOM = value; }
+        }
+
+        string _ProtocolID = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ProtocolID.
+        /// </summary>
+        [TestVariable("30032ee3-af73-4534-811f-e59adee47d65")]
+        public string ProtocolID
+        {
+            get { return _ProtocolID; }
+            set { _ProtocolID = value; }
         }
 
 #endregion
@@ -271,12 +283,12 @@ namespace DCT
         }
 
         /// <summary>
-        /// The AcademicExtractOrrPowerBI folder.
+        /// The AcademicExtractPowerBI folder.
         /// </summary>
         [RepositoryFolder("f1e3226f-4e04-44a6-8973-7f7dc740f469")]
-        public virtual DCTRepositoryFolders.AcademicExtractOrrPowerBIAppFolder AcademicExtractOrrPowerBI
+        public virtual DCTRepositoryFolders.AcademicExtractPowerBIAppFolder AcademicExtractPowerBI
         {
-            get { return _academicextractorrpowerbi; }
+            get { return _academicextractpowerbi; }
         }
 
         /// <summary>
@@ -2245,6 +2257,7 @@ namespace DCT
         public partial class CogstateSolutionPlatformAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _academicextractInfo;
+            RepoItemInfo _protocolnumberfieldInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -2253,6 +2266,7 @@ namespace DCT
                     base("CogstateSolutionPlatform", "/dom[@domain=$CSPDOM]", parentFolder, 30000, null, false, "38465dbb-2a52-4f97-a7da-4f756315b3f4", "")
             {
                 _academicextractInfo = new RepoItemInfo(this, "AcademicExtract", ".//a[@innertext='Academic Extract']", 30000, null, "5f95c61a-732b-463d-a24a-1847574f6cd8");
+                _protocolnumberfieldInfo = new RepoItemInfo(this, "ProtocolNumberField", ".//input[@id~'formly_[0-9]+_input_protocolName_[0-9]+']", 30000, null, "386d12ed-1b52-4dcc-bc6e-17218097c6c2");
             }
 
             /// <summary>
@@ -2302,23 +2316,49 @@ namespace DCT
                     return _academicextractInfo;
                 }
             }
+
+            /// <summary>
+            /// The ProtocolNumberField item.
+            /// </summary>
+            [RepositoryItem("386d12ed-1b52-4dcc-bc6e-17218097c6c2")]
+            public virtual Ranorex.InputTag ProtocolNumberField
+            {
+                get
+                {
+                    return _protocolnumberfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolNumberField item info.
+            /// </summary>
+            [RepositoryItemInfo("386d12ed-1b52-4dcc-bc6e-17218097c6c2")]
+            public virtual RepoItemInfo ProtocolNumberFieldInfo
+            {
+                get
+                {
+                    return _protocolnumberfieldInfo;
+                }
+            }
         }
 
         /// <summary>
-        /// The AcademicExtractOrrPowerBIAppFolder folder.
+        /// The AcademicExtractPowerBIAppFolder folder.
         /// </summary>
         [RepositoryFolder("f1e3226f-4e04-44a6-8973-7f7dc740f469")]
-        public partial class AcademicExtractOrrPowerBIAppFolder : RepoGenBaseFolder
+        public partial class AcademicExtractPowerBIAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _protocolidInfo;
+            RepoItemInfo _protocolidtitleInfo;
+            RepoItemInfo _protocolidcellInfo;
 
             /// <summary>
-            /// Creates a new AcademicExtractOrrPowerBI  folder.
+            /// Creates a new AcademicExtractPowerBI  folder.
             /// </summary>
-            public AcademicExtractOrrPowerBIAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("AcademicExtractOrrPowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "f1e3226f-4e04-44a6-8973-7f7dc740f469", "")
+            public AcademicExtractPowerBIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AcademicExtractPowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "f1e3226f-4e04-44a6-8973-7f7dc740f469", "")
             {
-                _protocolidInfo = new RepoItemInfo(this, "ProtocolID", ".//div[@title='ProtocolID']", 30000, null, "f8c22779-29ad-4dfc-a968-f2174074c356");
+                _protocolidtitleInfo = new RepoItemInfo(this, "ProtocolIDTitle", ".//div[@title='ProtocolID']", 30000, null, "f8c22779-29ad-4dfc-a968-f2174074c356");
+                _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 30000, null, "d0fa7c17-b4e6-462b-b198-72a4dabc864d");
             }
 
             /// <summary>
@@ -2346,26 +2386,50 @@ namespace DCT
             }
 
             /// <summary>
-            /// The ProtocolID item.
+            /// The ProtocolIDTitle item.
             /// </summary>
             [RepositoryItem("f8c22779-29ad-4dfc-a968-f2174074c356")]
-            public virtual Ranorex.DivTag ProtocolID
+            public virtual Ranorex.DivTag ProtocolIDTitle
             {
                 get
                 {
-                    return _protocolidInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _protocolidtitleInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ProtocolID item info.
+            /// The ProtocolIDTitle item info.
             /// </summary>
             [RepositoryItemInfo("f8c22779-29ad-4dfc-a968-f2174074c356")]
-            public virtual RepoItemInfo ProtocolIDInfo
+            public virtual RepoItemInfo ProtocolIDTitleInfo
             {
                 get
                 {
-                    return _protocolidInfo;
+                    return _protocolidtitleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item.
+            /// </summary>
+            [RepositoryItem("d0fa7c17-b4e6-462b-b198-72a4dabc864d")]
+            public virtual Ranorex.DivTag ProtocolIDCell
+            {
+                get
+                {
+                    return _protocolidcellInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item info.
+            /// </summary>
+            [RepositoryItemInfo("d0fa7c17-b4e6-462b-b198-72a4dabc864d")]
+            public virtual RepoItemInfo ProtocolIDCellInfo
+            {
+                get
+                {
+                    return _protocolidcellInfo;
                 }
             }
         }

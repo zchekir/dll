@@ -33,14 +33,9 @@ namespace DCT
             // Your recording specific initialization code goes here.
         }
 
-        public void Report_Screenshot()
+        public void ValidateAcademicExtract(RepoItemInfo ProtocolID)
         {
-            Report.Screenshot(ReportLevel.Info, "PowerBIreportGenerated successfully", "", null, false);
-        }
-
-        public void UserCodeMethod(RepoItemInfo argument1)
-        {
-        	while ( !argument1.Exists(new Duration(9000))) {
+        	while ( !ProtocolID.Exists(new Duration(9000))) {
         		
         		Delay.Seconds(2);
         	       	
