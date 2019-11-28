@@ -2350,6 +2350,7 @@ namespace DCT
         {
             RepoItemInfo _protocolidtitleInfo;
             RepoItemInfo _protocolidcellInfo;
+            RepoItemInfo _cleartestselectionsInfo;
 
             /// <summary>
             /// Creates a new AcademicExtractPowerBI  folder.
@@ -2359,6 +2360,7 @@ namespace DCT
             {
                 _protocolidtitleInfo = new RepoItemInfo(this, "ProtocolIDTitle", ".//div[@title='ProtocolID']", 30000, null, "f8c22779-29ad-4dfc-a968-f2174074c356");
                 _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 30000, null, "d0fa7c17-b4e6-462b-b198-72a4dabc864d");
+                _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "462565b9-7d8d-46c1-9273-d917c6b9c4ad");
             }
 
             /// <summary>
@@ -2430,6 +2432,30 @@ namespace DCT
                 get
                 {
                     return _protocolidcellInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClearTestSelections item.
+            /// </summary>
+            [RepositoryItem("462565b9-7d8d-46c1-9273-d917c6b9c4ad")]
+            public virtual Ranorex.SpanTag ClearTestSelections
+            {
+                get
+                {
+                    return _cleartestselectionsInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClearTestSelections item info.
+            /// </summary>
+            [RepositoryItemInfo("462565b9-7d8d-46c1-9273-d917c6b9c4ad")]
+            public virtual RepoItemInfo ClearTestSelectionsInfo
+            {
+                get
+                {
+                    return _cleartestselectionsInfo;
                 }
             }
         }

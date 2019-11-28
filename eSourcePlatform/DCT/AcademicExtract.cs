@@ -111,10 +111,17 @@ namespace DCT
             repo.CogstateSolutionPlatform.AcademicExtract.Click();
             Delay.Milliseconds(200);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AcademicExtractPowerBI.ClearTestSelections' at Center.", repo.AcademicExtractPowerBI.ClearTestSelectionsInfo, new RecordItemIndex(4));
+            repo.AcademicExtractPowerBI.ClearTestSelections.Click();
+            Delay.Milliseconds(200);
+            
             ValidateAcademicExtract(repo.AcademicExtractPowerBI.ProtocolIDCellInfo);
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "PowerBI Report Generated Successfully", repo.AcademicExtractPowerBI.Self, false, new RecordItemIndex(4));
+            Report.Screenshot(ReportLevel.Info, "User", "PowerBI Report Generated Successfully", repo.AcademicExtractPowerBI.Self, false, new RecordItemIndex(6));
             
         }
 

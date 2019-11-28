@@ -906,6 +906,15 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='app.powerbi.com']//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="462565b9-7d8d-46c1-9273-d917c6b9c4ad"
+			name="ClearTestSelections"
+			refimgid="602a85d7-6474-490e-95b4-46be6b703c6c"
+			searchtimeout="30000ms">
+				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']
+			</item>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
 			</basepath>
