@@ -43,5 +43,23 @@ namespace DCT
         	    }
         }
 
+        public void EnterFromDate(RepoItemInfo DateFromRange)
+        {
+        	System.DateTime today = System.DateTime.Today;
+            string date = today.ToString("dd/MM/yyyy");
+        	
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'DateFromRange'.", DateFromRange);
+            DateFromRange.FindAdapter<InputTag>().PressKeys(date);
+        }
+
+        public void EnterToDate(RepoItemInfo DateToRange)
+        {
+            System.DateTime today = System.DateTime.Today;
+            string date = today.ToString("dd/MM/yyyy");
+        	
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'DateToRange'.", DateToRange);
+            DateToRange.FindAdapter<InputTag>().PressKeys(date);
+        }
+
     }
 }

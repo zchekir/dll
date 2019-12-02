@@ -35,7 +35,7 @@ rxversion="8.3">
 	<recorditems>
 		<explicitdelayitem
 		duration="8000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -44,7 +44,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<getvaluerecorditem
 		attrname="Value"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="46dcd2e9-9f32-4ffa-bd66-dadb1a98560a"
 		varname="ProtocolID">
@@ -64,7 +64,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -86,13 +86,488 @@ rxversion="8.3">
 		</mouseitem>
 		<explicitdelayitem
 		duration="5000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="54779938-c206-4fa7-8036-43b07b14a5f8"
+		sx="-79"
+		sy="-848"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a3f8ca5-85c5-4eb5-9f11-06e11518f450"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="-120,-862,83,29"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						date-slicer-input hasDatepicker enable-hover
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						dp1575264770028
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						25/11/2019
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						dd/MM/yyyy
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						25/11/2019
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="drag-resize-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="AcademicExtract"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="EnterToDate"
+		namespace="DCT"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2f76468c-df39-4064-8399-e3c5410812fd">
+				<argument
+				argname="DateToRange"
+				id="c8c9c139-2e6f-4a49-9e28-f6f16a4b4345">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="1a3f8ca5-85c5-4eb5-9f11-06e11518f450"
+					sourcename="RepositoryEditor">
+						<element
+						capabilities="webelement, inputtag"
+						dontcache="True"
+						enabled="True"
+						flavor="chromeweb"
+						hasfocus="False"
+						index="0"
+						prefcap="inputtag"
+						rect="-120,-862,83,29"
+						role="unknown"
+						snapElem=""
+						valid="True"
+						visible="True">
+							<attribute
+							name="class"
+							type="System.String">
+								date-slicer-input hasDatepicker enable-hover
+							</attribute>
+							<attribute
+							name="draggable"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="hidden"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="id"
+							type="System.String">
+								dp1575264770028
+							</attribute>
+							<attribute
+							name="innertext"
+							type="System.String">
+							</attribute>
+							<attribute
+							name="tagname"
+							type="System.String">
+								input
+							</attribute>
+							<attribute
+							name="tagvalue"
+							type="System.String">
+								25/11/2019
+							</attribute>
+							<attribute
+							name="autofocus"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="checked"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="disabled"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="height"
+							type="System.String">
+								0
+							</attribute>
+							<attribute
+							name="multiple"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="placeholder"
+							type="System.String">
+								dd/MM/yyyy
+							</attribute>
+							<attribute
+							name="required"
+							type="System.String">
+								False
+							</attribute>
+							<attribute
+							name="size"
+							type="System.String">
+								20
+							</attribute>
+							<attribute
+							name="type"
+							type="System.String">
+								text
+							</attribute>
+							<attribute
+							name="value"
+							type="System.String">
+								25/11/2019
+							</attribute>
+							<attribute
+							name="width"
+							type="System.String">
+								0
+							</attribute>
+							<dynamicattribute
+							description="Dynamic HTML attribute."
+							name="aria-label"
+							readonly="False"
+							type="System.String">
+							</dynamicattribute>
+							<dynamicattribute
+							description="Dynamic HTML attribute."
+							name="drag-resize-disabled"
+							readonly="False"
+							type="System.String">
+							</dynamicattribute>
+							<dynamicattribute
+							description="Dynamic HTML attribute."
+							name="style"
+							readonly="False"
+							type="System.String">
+							</dynamicattribute>
+						</element>
+						<path>
+							/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="205878d9-dd7f-4610-b844-082c052dcd98"
+		sx="-169"
+		sy="-848"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e7bd5e71-6488-4208-93d7-962ebd0f0b19"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="-210,-862,83,29"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						date-slicer-input hasDatepicker enable-hover
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						dp1575256972084
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						07/11/2019
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						dd/MM/yyyy
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						07/11/2019
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="drag-resize-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="AcademicExtract"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="EnterFromDate"
+		namespace="DCT"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8670b4b0-1271-4f61-9137-b98249136928">
+				<argument
+				argname="DateFromRange"
+				id="3a12d58c-4d7a-45be-885d-fb954aab5cdd">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="e7bd5e71-6488-4208-93d7-962ebd0f0b19"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

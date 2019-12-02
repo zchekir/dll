@@ -915,6 +915,24 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="inputtag"
+			id="e7bd5e71-6488-4208-93d7-962ebd0f0b19"
+			name="DateSlicerFromRange"
+			refimgid="f18dc1d2-7e97-475d-84fd-eac8916e099a"
+			searchtimeout="30000ms">
+				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="inputtag"
+			id="1a3f8ca5-85c5-4eb5-9f11-06e11518f450"
+			name="DateSlicerToRange"
+			refimgid="f18dc1d2-7e97-475d-84fd-eac8916e099a"
+			searchtimeout="30000ms">
+				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input
+			</item>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
 			</basepath>

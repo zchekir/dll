@@ -2351,6 +2351,8 @@ namespace DCT
             RepoItemInfo _protocolidtitleInfo;
             RepoItemInfo _protocolidcellInfo;
             RepoItemInfo _cleartestselectionsInfo;
+            RepoItemInfo _dateslicerfromrangeInfo;
+            RepoItemInfo _dateslicertorangeInfo;
 
             /// <summary>
             /// Creates a new AcademicExtractPowerBI  folder.
@@ -2361,6 +2363,8 @@ namespace DCT
                 _protocolidtitleInfo = new RepoItemInfo(this, "ProtocolIDTitle", ".//div[@title='ProtocolID']", 30000, null, "f8c22779-29ad-4dfc-a968-f2174074c356");
                 _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 30000, null, "d0fa7c17-b4e6-462b-b198-72a4dabc864d");
                 _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "462565b9-7d8d-46c1-9273-d917c6b9c4ad");
+                _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "e7bd5e71-6488-4208-93d7-962ebd0f0b19");
+                _dateslicertorangeInfo = new RepoItemInfo(this, "DateSlicerToRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input", 30000, null, "1a3f8ca5-85c5-4eb5-9f11-06e11518f450");
             }
 
             /// <summary>
@@ -2456,6 +2460,54 @@ namespace DCT
                 get
                 {
                     return _cleartestselectionsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerFromRange item.
+            /// </summary>
+            [RepositoryItem("e7bd5e71-6488-4208-93d7-962ebd0f0b19")]
+            public virtual Ranorex.InputTag DateSlicerFromRange
+            {
+                get
+                {
+                    return _dateslicerfromrangeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerFromRange item info.
+            /// </summary>
+            [RepositoryItemInfo("e7bd5e71-6488-4208-93d7-962ebd0f0b19")]
+            public virtual RepoItemInfo DateSlicerFromRangeInfo
+            {
+                get
+                {
+                    return _dateslicerfromrangeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerToRange item.
+            /// </summary>
+            [RepositoryItem("1a3f8ca5-85c5-4eb5-9f11-06e11518f450")]
+            public virtual Ranorex.InputTag DateSlicerToRange
+            {
+                get
+                {
+                    return _dateslicertorangeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerToRange item info.
+            /// </summary>
+            [RepositoryItemInfo("1a3f8ca5-85c5-4eb5-9f11-06e11518f450")]
+            public virtual RepoItemInfo DateSlicerToRangeInfo
+            {
+                get
+                {
+                    return _dateslicertorangeInfo;
                 }
             }
         }

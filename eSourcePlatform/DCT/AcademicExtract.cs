@@ -100,28 +100,42 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(0));
-            Delay.Duration(8000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(0));
+            //Delay.Duration(8000, false);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.ProtocolNumberField' and assigning its value to variable 'ProtocolID'.", repo.CogstateSolutionPlatform.ProtocolNumberFieldInfo, new RecordItemIndex(1));
-            ProtocolID = repo.CogstateSolutionPlatform.ProtocolNumberField.Element.GetAttributeValueText("Value");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.ProtocolNumberField' and assigning its value to variable 'ProtocolID'.", repo.CogstateSolutionPlatform.ProtocolNumberFieldInfo, new RecordItemIndex(1));
+            //ProtocolID = repo.CogstateSolutionPlatform.ProtocolNumberField.Element.GetAttributeValueText("Value");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AcademicExtract' at Center.", repo.CogstateSolutionPlatform.AcademicExtractInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AcademicExtract.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AcademicExtract' at Center.", repo.CogstateSolutionPlatform.AcademicExtractInfo, new RecordItemIndex(2));
+            //repo.CogstateSolutionPlatform.AcademicExtract.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
+            //Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AcademicExtractPowerBI.DateSlicerToRange' at Center.", repo.AcademicExtractPowerBI.DateSlicerToRangeInfo, new RecordItemIndex(4));
+            repo.AcademicExtractPowerBI.DateSlicerToRange.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
-            Delay.Duration(5000, false);
+            EnterToDate(repo.AcademicExtractPowerBI.DateSlicerToRangeInfo);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AcademicExtractPowerBI.ClearTestSelections' at Center.", repo.AcademicExtractPowerBI.ClearTestSelectionsInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AcademicExtractPowerBI.DateSlicerFromRange' at Center.", repo.AcademicExtractPowerBI.DateSlicerFromRangeInfo, new RecordItemIndex(6));
+            repo.AcademicExtractPowerBI.DateSlicerFromRange.Click();
+            Delay.Milliseconds(200);
+            
+            EnterFromDate(repo.AcademicExtractPowerBI.DateSlicerFromRangeInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AcademicExtractPowerBI.ClearTestSelections' at Center.", repo.AcademicExtractPowerBI.ClearTestSelectionsInfo, new RecordItemIndex(8));
             repo.AcademicExtractPowerBI.ClearTestSelections.Click();
             Delay.Milliseconds(200);
             
             ValidateAcademicExtract(repo.AcademicExtractPowerBI.ProtocolIDCellInfo);
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "PowerBI Report Generated Successfully", repo.AcademicExtractPowerBI.Self, false, new RecordItemIndex(6));
+            Report.Screenshot(ReportLevel.Info, "User", "PowerBI Report Generated Successfully", repo.AcademicExtractPowerBI.Self, false, new RecordItemIndex(10));
             
         }
 
