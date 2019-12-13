@@ -131,6 +131,7 @@ namespace engine.DataProcessor
         		
 				/*The following Outcomes may contain NULL vlaues, integers or 'Yes'/'No' values
 				 *Check for NULL values first before comparing the database and extract values */
+				case "SessionPerformancePass":
 				case "SessionIntegrityPass":
  				case "TestCompletionPass":
  				case "TestPerformancePass":
