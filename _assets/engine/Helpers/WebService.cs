@@ -244,6 +244,38 @@ namespace engine.Helpers
 			
 			
 		}
+		// InternalUserLogin:
+		
+		public class InternalLoing
+		{
+			
+		public string username {get;set;}
+		public string password {get;set;}
+		public string portal {get;set;}
+		
+	
+		public InternalLoing(string username, string password,string portal)
+		{
+			this.username = username;
+			this.password = password;
+			this.portal = portal;
+		}
+			
+			
+			
+		}
+		public class loginToken
+	{
+		public string authToken { get; set; }
+		
+		
+		public loginToken()
+		{
+			
+		}
+	}
+		
+		
 		
 	
 		
@@ -266,6 +298,7 @@ namespace engine.Helpers
         public static string Sversion;
         public static string ClientVersion;
         public static string oDatainfos;
+        public static string InternalToken;
         
         
         /// <summary>-------------------------------------------------------------------------------------------------------------------------
@@ -274,8 +307,9 @@ namespace engine.Helpers
         [UserCodeMethod]
         public static void Authenticate(string randNum, string DOM, string studyProtocolName, string key)
         {
-        	//Setup API call
-        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName + randNum + "/AuthenticationToken");
+        	
+    
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/external/V2/" + studyProtocolName  + "/AuthenticationToken");
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "POST";
         	
@@ -546,6 +580,51 @@ namespace engine.Helpers
         }
        
         
+        /// <summary>
+        /// This method is for logining in as InternalUser and the token will be used for generating Odata report 
+        /// </summary>
+        [UserCodeMethod]///////---------------------------
+         public static void InternalUserLogin(string DOM, string username, string password, string portal)
+        {
+        	//Setup API call
+        	string LoginAPI = "/api/Account/Login";
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+ DOM + LoginAPI);
+        	httpRequest.ContentType = "application/json";
+        	httpRequest.Method = "POST";
+        	
+        	//Create JSON ibject containing key and secret which is sent in the body
+        	InternalLoing jsonObject = new InternalLoing(username, password,portal);
+        	
+        	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
+        	{
+        		string json = new JavaScriptSerializer().Serialize(jsonObject);
+        		
+        		sw.Write(json);
+        		sw.Flush();
+        		sw.Close();
+        	}
+        	
+        	//Get the response and read into a new object
+        	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+        	
+        	loginToken responseObject = new loginToken();
+        	
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	{
+        		string response = sr.ReadToEnd();
+        		//Deserialise the JSON in a new object to use later
+        		responseObject = new JavaScriptSerializer().Deserialize<loginToken>(response);
+        		
+        		AuthToken = responseObject.authToken;
+        		
+        		Report.Log(ReportLevel.Info, "InternalUserToken: " + AuthToken);
+        	}
+        	
+        	
+        	
+        		
+        	
+        }
         /// <summary>-------------------------------------------------------------------------------------------
         /// This method is for validating the current client version
         /// </summary>
@@ -619,5 +698,6 @@ namespace engine.Helpers
         	
         }
         
-    }
+}
+
 }

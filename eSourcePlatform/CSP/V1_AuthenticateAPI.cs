@@ -20,60 +20,74 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.UsersPage
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Search_User_Email recording.
+    ///The V1_AuthenticateAPI recording.
     /// </summary>
-    [TestModule("e0fb5731-56d1-4884-b168-947c6b18d6a5", ModuleType.Recording, 1)]
-    public partial class Search_User_Email : ITestModule
+    [TestModule("6c267ae0-eccc-42f7-bcf7-7d5dc0866964", ModuleType.Recording, 1)]
+    public partial class V1_AuthenticateAPI : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static Search_User_Email instance = new Search_User_Email();
+        static V1_AuthenticateAPI instance = new V1_AuthenticateAPI();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Search_User_Email()
+        public V1_AuthenticateAPI()
         {
-            Username = "ranorexcogstate@gmail.com";
+            DOM = "cgst-qc-orr.azurewebsites.net";
+            Key = "5767c4d2-be6c-4bdc-ac60-5ba8474f37af";
+            secret = "305e95af-bb38-4a00-bf8e-448d06f67f55";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Search_User_Email Instance
+        public static V1_AuthenticateAPI Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Username;
+        string _DOM;
 
         /// <summary>
-        /// Gets or sets the value of variable Username.
+        /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("1a74d586-82c5-4be7-a52c-1658c76e0330")]
-        public string Username
+        [TestVariable("b7e113f5-d292-4949-afa8-81cac921e840")]
+        public string DOM
         {
-            get { return _Username; }
-            set { _Username = value; }
+            get { return _DOM; }
+            set { _DOM = value; }
+        }
+
+        string _secret;
+
+        /// <summary>
+        /// Gets or sets the value of variable secret.
+        /// </summary>
+        [TestVariable("05c56c37-01a1-4ad9-92c6-3294df178117")]
+        public string secret
+        {
+            get { return _secret; }
+            set { _secret = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable Key.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
+        [TestVariable("62f54ed9-1a1e-4d81-8545-c144147955a9")]
+        public string Key
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
+            get { return repo.Key; }
+            set { repo.Key = value; }
         }
 
 #endregion
@@ -102,15 +116,8 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click(1);
-            Delay.Milliseconds(90);
-            
-            Enter_Email(repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo);
+            V1AuthenticationAPI(DOM, secret, Key);
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
             
         }
 

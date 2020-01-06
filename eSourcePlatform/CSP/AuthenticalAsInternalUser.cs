@@ -20,60 +20,87 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.UsersPage
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Search_User_Email recording.
+    ///The AuthenticalAsInternalUser recording.
     /// </summary>
-    [TestModule("e0fb5731-56d1-4884-b168-947c6b18d6a5", ModuleType.Recording, 1)]
-    public partial class Search_User_Email : ITestModule
+    [TestModule("bb083686-6880-4147-aa4e-00115c5053c3", ModuleType.Recording, 1)]
+    public partial class AuthenticalAsInternalUser : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static Search_User_Email instance = new Search_User_Email();
+        static AuthenticalAsInternalUser instance = new AuthenticalAsInternalUser();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Search_User_Email()
+        public AuthenticalAsInternalUser()
         {
-            Username = "ranorexcogstate@gmail.com";
+            DOM = "cgst-qcpd.azurewebsites.net";
+            InternalUsername = "zchekir@cogstate.com";
+            InternalPassword = "Darys2010";
+            portal = "DefaultPortal";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Search_User_Email Instance
+        public static AuthenticalAsInternalUser Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Username;
+        string _DOM;
 
         /// <summary>
-        /// Gets or sets the value of variable Username.
+        /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("1a74d586-82c5-4be7-a52c-1658c76e0330")]
-        public string Username
+        [TestVariable("c784e76f-ba3c-40d5-92ab-f8c3098c06de")]
+        public string DOM
         {
-            get { return _Username; }
-            set { _Username = value; }
+            get { return _DOM; }
+            set { _DOM = value; }
+        }
+
+        string _InternalPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable InternalPassword.
+        /// </summary>
+        [TestVariable("82454349-6ca6-480b-bad7-dadfcf6f0dc5")]
+        public string InternalPassword
+        {
+            get { return _InternalPassword; }
+            set { _InternalPassword = value; }
+        }
+
+        string _portal;
+
+        /// <summary>
+        /// Gets or sets the value of variable portal.
+        /// </summary>
+        [TestVariable("0276d7a6-b65f-4eaa-b5f4-3e0099f45212")]
+        public string portal
+        {
+            get { return _portal; }
+            set { _portal = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable InternalUsername.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
+        [TestVariable("54d1c478-7bce-40ab-a3ed-bf168a77482f")]
+        public string InternalUsername
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
+            get { return repo.InternalUsername; }
+            set { repo.InternalUsername = value; }
         }
 
 #endregion
@@ -102,15 +129,11 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click(1);
-            Delay.Milliseconds(90);
-            
-            Enter_Email(repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo);
+            engine.Helpers.WebService.InternalUserLogin(DOM, InternalUsername, InternalPassword, portal);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
+            engine.Helpers.WebService.oData(DOM);
+            Delay.Milliseconds(0);
             
         }
 

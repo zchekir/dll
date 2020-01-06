@@ -20,60 +20,89 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.UsersPage
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Search_User_Email recording.
+    ///The ParticipantQualification_Status recording.
     /// </summary>
-    [TestModule("e0fb5731-56d1-4884-b168-947c6b18d6a5", ModuleType.Recording, 1)]
-    public partial class Search_User_Email : ITestModule
+    [TestModule("7564efa3-5dfb-429a-8be6-2697f96acf66", ModuleType.Recording, 1)]
+    public partial class ParticipantQualification_Status : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static Search_User_Email instance = new Search_User_Email();
+        static ParticipantQualification_Status instance = new ParticipantQualification_Status();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Search_User_Email()
+        public ParticipantQualification_Status()
         {
-            Username = "ranorexcogstate@gmail.com";
+            DOM = "";
+            studyProtocolName = "";
+            externalid = "";
+            AuthToken = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Search_User_Email Instance
+        public static ParticipantQualification_Status Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Username;
+        string _DOM;
 
         /// <summary>
-        /// Gets or sets the value of variable Username.
+        /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("1a74d586-82c5-4be7-a52c-1658c76e0330")]
-        public string Username
+        [TestVariable("ce0eb756-9ae4-4102-bcb9-4fee480f39b6")]
+        public string DOM
         {
-            get { return _Username; }
-            set { _Username = value; }
+            get { return _DOM; }
+            set { _DOM = value; }
         }
 
+        string _studyProtocolName;
+
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable studyProtocolName.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
+        [TestVariable("2436bc6b-b437-4437-a127-e86e3edb27e2")]
+        public string studyProtocolName
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
+            get { return _studyProtocolName; }
+            set { _studyProtocolName = value; }
+        }
+
+        string _externalid;
+
+        /// <summary>
+        /// Gets or sets the value of variable externalid.
+        /// </summary>
+        [TestVariable("c57c4bea-20ef-4adb-b5a7-49effd8a2370")]
+        public string externalid
+        {
+            get { return _externalid; }
+            set { _externalid = value; }
+        }
+
+        string _AuthToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable AuthToken.
+        /// </summary>
+        [TestVariable("b2ac9a86-54f6-4d71-a1de-3222a4de05f2")]
+        public string AuthToken
+        {
+            get { return _AuthToken; }
+            set { _AuthToken = value; }
         }
 
 #endregion
@@ -102,15 +131,8 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.MainToolbar.SearchField' at Center.", repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.MainToolbar.SearchField.Click(1);
-            Delay.Milliseconds(90);
-            
-            Enter_Email(repo.CogstateSolutionPlatform.MainToolbar.SearchFieldInfo);
+            Participant_QualificationStatus();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
             
         }
 

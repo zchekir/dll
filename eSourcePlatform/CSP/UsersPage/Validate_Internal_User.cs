@@ -55,6 +55,18 @@ namespace CSP.UsersPage
 
 #region Variables
 
+        string _Username;
+
+        /// <summary>
+        /// Gets or sets the value of variable Username.
+        /// </summary>
+        [TestVariable("beba0b52-7fd3-47a0-960b-9b4b32005ef9")]
+        public string Username
+        {
+            get { return _Username; }
+            set { _Username = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
@@ -66,13 +78,13 @@ namespace CSP.UsersPage
         }
 
         /// <summary>
-        /// Gets or sets the value of variable Username.
+        /// Gets or sets the value of variable InternalUsername.
         /// </summary>
-        [TestVariable("beba0b52-7fd3-47a0-960b-9b4b32005ef9")]
-        public string Username
+        [TestVariable("1892dd21-199b-47ab-bba6-5cd1b874a668")]
+        public string InternalUsername
         {
-            get { return repo.Username; }
-            set { repo.Username = value; }
+            get { return repo.InternalUsername; }
+            set { repo.InternalUsername = value; }
         }
 
         /// <summary>

@@ -127,6 +127,9 @@
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
@@ -1340,6 +1343,30 @@
     <Compile Include="AssemblyInfo.cs">
       <id>972ac0ea-8bc6-4fff-b84a-433c9e389b8b</id>
     </Compile>
+    <Compile Include="Assessment_AttemptStatus.cs">
+      <BoundTo>8e690f39-5dae-4a62-bf8d-e0d65d56a9f0</BoundTo>
+      <DependentUpon>Assessment_AttemptStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>daccb34c-ffff-44f6-a823-e063d6b3ce69</id>
+    </Compile>
+    <Compile Include="Assessment_AttemptStatus.UserCode.cs">
+      <BoundTo>8e690f39-5dae-4a62-bf8d-e0d65d56a9f0</BoundTo>
+      <DependentUpon>Assessment_AttemptStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ece95988-587f-40a9-b35b-d382782d2017</id>
+    </Compile>
+    <Compile Include="AuthenticalAsInternalUser.cs">
+      <BoundTo>1d8dd5f5-4a1a-438d-9a75-408bedf11894</BoundTo>
+      <DependentUpon>AuthenticalAsInternalUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e95f1a9-8738-43bb-b564-97f734614c9d</id>
+    </Compile>
+    <Compile Include="AuthenticalAsInternalUser.UserCode.cs">
+      <BoundTo>1d8dd5f5-4a1a-438d-9a75-408bedf11894</BoundTo>
+      <DependentUpon>AuthenticalAsInternalUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d456a5d3-68d2-4abb-a439-1ce82a48188c</id>
+    </Compile>
     <Compile Include="BatteriesPage\Click_Add_Battery.cs">
       <id>60f7c689-a237-4370-8391-e3df9ff6fe7a</id>
       <BoundTo>8e12fa6b-a51d-4dbf-b74f-c2ed366556a3</BoundTo>
@@ -1576,6 +1603,18 @@
     </Compile>
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
+    </Compile>
+    <Compile Include="External_Authenticate.cs">
+      <BoundTo>122d1289-5600-4316-b4b4-968063affd23</BoundTo>
+      <DependentUpon>External_Authenticate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b22746bb-1209-4d9b-8f01-183cf0ef60fa</id>
+    </Compile>
+    <Compile Include="External_Authenticate.UserCode.cs">
+      <BoundTo>122d1289-5600-4316-b4b4-968063affd23</BoundTo>
+      <DependentUpon>External_Authenticate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cfbf0842-89b5-4ba5-b1d4-bd239c1d7b6e</id>
     </Compile>
     <Compile Include="ExtractsPage\Click_DownloadExtract_Button.cs">
       <id>64e991f1-9c42-48e0-9752-c2492e573377</id>
@@ -1964,6 +2003,18 @@
       <DependentUpon>Verify_Version_Deployed.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="GetQualification_Status.cs">
+      <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
+      <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fecd558c-cd86-48e1-86f6-d9d27d1ef676</id>
+    </Compile>
+    <Compile Include="GetQualification_Status.UserCode.cs">
+      <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
+      <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23e86cd0-e07a-4bf6-90c5-5165ad79fd1d</id>
+    </Compile>
     <Compile Include="LoginPage\Click_ForgotPassword.cs">
       <id>3b4e421d-31fb-4572-b37e-86187f9d137d</id>
       <BoundTo>74efb3da-e46c-4c23-aa4c-bbcfc2b60e49</BoundTo>
@@ -2167,6 +2218,18 @@
       <DependentUpon>oDataAPI.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a5df6606-e5a9-481c-8dd2-001a53dd71ab</id>
+    </Compile>
+    <Compile Include="ParticipantQualification_Status.cs">
+      <BoundTo>c04f5934-5eae-403b-af9f-91516f223f3a</BoundTo>
+      <DependentUpon>ParticipantQualification_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3830caf9-d734-457b-b75a-20499e8e4875</id>
+    </Compile>
+    <Compile Include="ParticipantQualification_Status.UserCode.cs">
+      <BoundTo>c04f5934-5eae-403b-af9f-91516f223f3a</BoundTo>
+      <DependentUpon>ParticipantQualification_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1737b373-ef96-4f73-9b69-eaf8e7f1ba2a</id>
     </Compile>
     <Compile Include="ParticipantsPage\Change_Enroll_Status.cs">
       <id>c2d06657-c550-4e99-b482-e02ea65bd452</id>
@@ -2939,6 +3002,18 @@
       <DependentUpon>Validate_User_Unlocked.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="V1_AuthenticateAPI.cs">
+      <BoundTo>69186f18-9c47-45bf-9db2-11be0d401386</BoundTo>
+      <DependentUpon>V1_AuthenticateAPI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b398995-67dc-4328-a5b7-48b371ba2cb8</id>
+    </Compile>
+    <Compile Include="V1_AuthenticateAPI.UserCode.cs">
+      <BoundTo>69186f18-9c47-45bf-9db2-11be0d401386</BoundTo>
+      <DependentUpon>V1_AuthenticateAPI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a4b0a03b-1e9d-4359-b5a5-ddff09fa6c39</id>
+    </Compile>
     <Compile Include="VisitSchedulesPage\Click_Add_VisitSchedule.cs">
       <id>bba8563e-71e0-4bf9-ab0d-e1d58723907f</id>
       <BoundTo>eb8836e3-90ae-4c43-8406-e9c56429749a</BoundTo>
@@ -2998,6 +3073,18 @@
       <BoundTo>d016405d-dc0b-487e-bead-06f162888755</BoundTo>
       <DependentUpon>Select_VisitSchedule.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="WorkFlowInstance.cs">
+      <BoundTo>de77e08a-a1f1-46ac-8971-cdd7dbe62062</BoundTo>
+      <DependentUpon>WorkFlowInstance.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7fe62842-5e84-419c-97bd-1b5fe2517657</id>
+    </Compile>
+    <Compile Include="WorkFlowInstance.UserCode.cs">
+      <BoundTo>de77e08a-a1f1-46ac-8971-cdd7dbe62062</BoundTo>
+      <DependentUpon>WorkFlowInstance.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81de7b5e-e55f-4acd-899a-d37e786814b4</id>
     </Compile>
     <Compile Include="WorkflowsPage\Click_Add_Workflow.cs">
       <id>c21147a3-0e58-430d-a568-de89136e1107</id>
@@ -3543,6 +3630,16 @@
     <None Include="app.config">
       <id>4fde1d06-b4d6-4207-b920-eeffc7d6cb1c</id>
     </None>
+    <None Include="Assessment_AttemptStatus.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>8e690f39-5dae-4a62-bf8d-e0d65d56a9f0</id>
+      <recordtableid>29fe3e86-cac4-466b-9dc0-3f6f54d46704</recordtableid>
+    </None>
+    <None Include="AuthenticalAsInternalUser.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>1d8dd5f5-4a1a-438d-9a75-408bedf11894</id>
+      <recordtableid>bb083686-6880-4147-aa4e-00115c5053c3</recordtableid>
+    </None>
     <None Include="BatteriesPage\Click_Add_Battery.rxrec">
       <id>8e12fa6b-a51d-4dbf-b74f-c2ed366556a3</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -3729,6 +3826,11 @@
       <id>11c86286-d2df-4dfc-9b0d-86e9641b835a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="External_Authenticate.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>122d1289-5600-4316-b4b4-968063affd23</id>
+      <recordtableid>12a04901-7274-43ed-b5af-fcce25c1eba3</recordtableid>
+    </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -3889,6 +3991,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c718511d-4281-405c-9160-251f311d2703</recordtableid>
     </None>
+    <None Include="GetQualification_Status.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</id>
+      <recordtableid>437dbe88-4d5d-4f54-8943-5f96f61f7d4e</recordtableid>
+    </None>
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -3978,6 +4085,11 @@
       <id>884bb441-ac5e-4bbc-ae8c-8c2424eb3071</id>
       <recordtableid>e5c5155b-1c7b-4dcd-9aad-e16fa12f0735</recordtableid>
     </None>
+    <None Include="ParticipantQualification_Status.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>c04f5934-5eae-403b-af9f-91516f223f3a</id>
+      <recordtableid>7564efa3-5dfb-429a-8be6-2697f96acf66</recordtableid>
+    </None>
     <None Include="ParticipantsPage\Change_Enroll_Status.rxrec">
       <id>98670887-05e3-4a42-a79b-3fb4f8470f17</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4033,6 +4145,13 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>8fcaef85-3e83-4eda-af4f-2994a161feee</recordtableid>
     </None>
+    <Content Include="PR_Authentication.csv">
+      <Link>PR_Authentication.csv</Link>
+      <BoundTo>e421d7ee-56d4-498a-bcd8-1c82a2c916a5</BoundTo>
+      <DependentUpon>CSP.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>2d2638ae-b6ef-4b25-85c2-59bf7d5e3814</id>
+    </Content>
     <None Include="rawData\40yo_Tier1.txt">
       <id>49047e30-12d6-46e5-a10b-b2456f4f4e7a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -4364,6 +4483,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>45d37677-722b-4892-8305-4eac172507db</recordtableid>
     </None>
+    <None Include="V1_AuthenticateAPI.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>69186f18-9c47-45bf-9db2-11be0d401386</id>
+      <recordtableid>6c267ae0-eccc-42f7-bcf7-7d5dc0866964</recordtableid>
+    </None>
     <None Include="VisitSchedulesPage\Click_Add_VisitSchedule.rxrec">
       <id>eb8836e3-90ae-4c43-8406-e9c56429749a</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4388,6 +4512,11 @@
       <id>d016405d-dc0b-487e-bead-06f162888755</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>884bab92-73c9-4c72-bcb0-b60b57cf56ef</recordtableid>
+    </None>
+    <None Include="WorkFlowInstance.rxrec">
+      <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
+      <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
     </None>
     <None Include="WorkflowsPage\Click_Add_Workflow.rxrec">
       <id>3ee3a92b-867f-478a-bc7f-c1c0e973bcac</id>
