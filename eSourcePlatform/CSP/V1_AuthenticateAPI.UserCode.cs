@@ -83,8 +83,8 @@ namespace CSP
 
         public void V1AuthenticationAPI(string DOM, string secret, string Key)
         {
-        string url ="https://cgst-qc-orr.azurewebsites.net/api/external/AuthenticationToken?key=5767c4d2-be6c-4bdc-ac60-5ba8474f37af&secret=305e95af-bb38-4a00-bf8e-448d06f67f55";
-          
+        
+            string url="https://"+DOM+"/api/external/AuthenticationToken?key="+Key+"&secret="+secret;   
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "POST";
@@ -102,7 +102,7 @@ namespace CSP
         		//Deserialise the JSON in a new object to use later
         		responseObject = new JavaScriptSerializer().Deserialize<V1AuthJSONResponse>(response);
         		
-        		var authToken = responseObject.serverAuthToken;
+        	    authToken = responseObject.serverAuthToken;
         		
         		Report.Log(ReportLevel.Info, "Authentication Successfull, AuthToken is: " + authToken);
         	}

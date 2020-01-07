@@ -2003,6 +2003,18 @@
       <DependentUpon>Verify_Version_Deployed.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="GenerateKey.cs">
+      <BoundTo>c4900199-6f3d-4aef-a4e7-dbde70594300</BoundTo>
+      <DependentUpon>GenerateKey.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a606de1-ba80-48a2-b8af-a3decc3c7c26</id>
+    </Compile>
+    <Compile Include="GenerateKey.UserCode.cs">
+      <BoundTo>c4900199-6f3d-4aef-a4e7-dbde70594300</BoundTo>
+      <DependentUpon>GenerateKey.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0684c8f6-1feb-49e7-980d-aea03b53ccc7</id>
+    </Compile>
     <Compile Include="GetQualification_Status.cs">
       <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
       <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
@@ -2014,6 +2026,30 @@
       <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>23e86cd0-e07a-4bf6-90c5-5165ad79fd1d</id>
+    </Compile>
+    <Compile Include="Get_StatusCode.cs">
+      <BoundTo>6c54aff6-828a-4c6f-b24d-72944a74e2fe</BoundTo>
+      <DependentUpon>Get_StatusCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d78d6d7c-753d-4022-af7b-ea96285df490</id>
+    </Compile>
+    <Compile Include="Get_StatusCode.UserCode.cs">
+      <BoundTo>6c54aff6-828a-4c6f-b24d-72944a74e2fe</BoundTo>
+      <DependentUpon>Get_StatusCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1571cfd-0b3a-4b4a-bce5-ddabccd7d4f5</id>
+    </Compile>
+    <Compile Include="InternalUserLogin.cs">
+      <BoundTo>333c4e99-cb1a-477d-b511-5b96c5eb7861</BoundTo>
+      <DependentUpon>InternalUserLogin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>13c81797-22ae-489a-b6a0-fba836f64a08</id>
+    </Compile>
+    <Compile Include="InternalUserLogin.UserCode.cs">
+      <BoundTo>333c4e99-cb1a-477d-b511-5b96c5eb7861</BoundTo>
+      <DependentUpon>InternalUserLogin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23cdab35-7bf3-44e4-986c-9b25bcc3fbe1</id>
     </Compile>
     <Compile Include="LoginPage\Click_ForgotPassword.cs">
       <id>3b4e421d-31fb-4572-b37e-86187f9d137d</id>
@@ -2365,6 +2401,18 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>bcd8980c-aebe-43ad-ab29-ee0798e2d903</id>
+    </Compile>
+    <Compile Include="Referral_Status.cs">
+      <BoundTo>2d1f8218-df18-48b0-af17-f34a309b2e8d</BoundTo>
+      <DependentUpon>Referral_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>58e7d662-8620-4928-a67a-5d2d42242739</id>
+    </Compile>
+    <Compile Include="Referral_Status.UserCode.cs">
+      <BoundTo>2d1f8218-df18-48b0-af17-f34a309b2e8d</BoundTo>
+      <DependentUpon>Referral_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f4ef5a0-860c-4933-af77-c1676c676ab4</id>
     </Compile>
     <Compile Include="ReportsPage\Click_BatteryConfig_Report.cs">
       <id>2b0f7eb2-adab-4256-a972-81b4913222d7</id>
@@ -3991,14 +4039,29 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c718511d-4281-405c-9160-251f311d2703</recordtableid>
     </None>
+    <None Include="GenerateKey.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>c4900199-6f3d-4aef-a4e7-dbde70594300</id>
+      <recordtableid>4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e</recordtableid>
+    </None>
     <None Include="GetQualification_Status.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</id>
       <recordtableid>437dbe88-4d5d-4f54-8943-5f96f61f7d4e</recordtableid>
     </None>
+    <None Include="Get_StatusCode.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>6c54aff6-828a-4c6f-b24d-72944a74e2fe</id>
+      <recordtableid>5e1ee223-eb63-4c65-beb7-fb91462efaca</recordtableid>
+    </None>
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="InternalUserLogin.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>333c4e99-cb1a-477d-b511-5b96c5eb7861</id>
+      <recordtableid>e4973cbd-dfaf-437f-8fc4-144e686549f9</recordtableid>
     </None>
     <None Include="LoginPage\Click_ForgotPassword.rxrec">
       <id>74efb3da-e46c-4c23-aa4c-bbcfc2b60e49</id>
@@ -4227,6 +4290,11 @@
     <None Include="rawData\TwoBack.txt">
       <id>35d64e09-9fa2-4fba-9d5b-e752136eb309</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Referral_Status.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>2d1f8218-df18-48b0-af17-f34a309b2e8d</id>
+      <recordtableid>25e2a597-538e-4553-af69-d582add674b4</recordtableid>
     </None>
     <None Include="ReportsPage\Click_BatteryConfig_Report.rxrec">
       <id>951c9b9f-ea17-4784-8a81-030173e5de2c</id>

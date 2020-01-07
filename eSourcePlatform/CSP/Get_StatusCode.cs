@@ -24,33 +24,33 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The V1_AuthenticateAPI recording.
+    ///The Get_StatusCode recording.
     /// </summary>
-    [TestModule("6c267ae0-eccc-42f7-bcf7-7d5dc0866964", ModuleType.Recording, 1)]
-    public partial class V1_AuthenticateAPI : ITestModule
+    [TestModule("5e1ee223-eb63-4c65-beb7-fb91462efaca", ModuleType.Recording, 1)]
+    public partial class Get_StatusCode : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static V1_AuthenticateAPI instance = new V1_AuthenticateAPI();
+        static Get_StatusCode instance = new Get_StatusCode();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public V1_AuthenticateAPI()
+        public Get_StatusCode()
         {
             DOM = "cgst-qc-orr.azurewebsites.net";
-            Key = "5767c4d2-be6c-4bdc-ac60-5ba8474f37af";
-            secret = "305e95af-bb38-4a00-bf8e-448d06f67f55";
+            externalId = "";
+            visitsession = "110872";
             authToken = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static V1_AuthenticateAPI Instance
+        public static Get_StatusCode Instance
         {
             get { return instance; }
         }
@@ -62,23 +62,35 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("b7e113f5-d292-4949-afa8-81cac921e840")]
+        [TestVariable("eef4e54a-a961-4a61-8fdc-ac7a0926aee9")]
         public string DOM
         {
             get { return _DOM; }
             set { _DOM = value; }
         }
 
-        string _secret;
+        string _externalId;
 
         /// <summary>
-        /// Gets or sets the value of variable secret.
+        /// Gets or sets the value of variable externalId.
         /// </summary>
-        [TestVariable("05c56c37-01a1-4ad9-92c6-3294df178117")]
-        public string secret
+        [TestVariable("eb328b25-77e4-4df4-bc64-587f0e504d2a")]
+        public string externalId
         {
-            get { return _secret; }
-            set { _secret = value; }
+            get { return _externalId; }
+            set { _externalId = value; }
+        }
+
+        string _visitsession;
+
+        /// <summary>
+        /// Gets or sets the value of variable visitsession.
+        /// </summary>
+        [TestVariable("ebfce8c3-1792-468a-bc5d-a253a0a99453")]
+        public string visitsession
+        {
+            get { return _visitsession; }
+            set { _visitsession = value; }
         }
 
         string _authToken;
@@ -86,21 +98,11 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable authToken.
         /// </summary>
-        [TestVariable("d251eaf8-c5e0-414b-bed4-14560682367b")]
+        [TestVariable("a3ad8590-40e3-45e3-aeeb-ada8c04e3a62")]
         public string authToken
         {
             get { return _authToken; }
             set { _authToken = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Key.
-        /// </summary>
-        [TestVariable("62f54ed9-1a1e-4d81-8545-c144147955a9")]
-        public string Key
-        {
-            get { return repo.Key; }
-            set { repo.Key = value; }
         }
 
 #endregion
@@ -129,7 +131,7 @@ namespace CSP
 
             Init();
 
-            V1AuthenticationAPI(DOM, secret, Key);
+            GetStatus_Code(DOM, externalId, visitsession, authToken);
             Delay.Milliseconds(0);
             
         }

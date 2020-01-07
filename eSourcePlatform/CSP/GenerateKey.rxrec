@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="bb083686-6880-4147-aa4e-00115c5053c3"
+id="4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e"
 mode="Global"
 rxversion="8.3">
 	<name>
-		AuthenticalAsInternalUser
+		GenerateKey
 	</name>
 	<repeatcount>
 		1
@@ -23,42 +23,42 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="AuthenticalAsInternalUser"
+	classname="GenerateKey"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="c784e76f-ba3c-40d5-92ab-f8c3098c06de"
-		name="DOM">
-			cgst-qcpd.azurewebsites.net
+		id="7805b7e9-80b4-433a-94ae-2a96bc75775a"
+		name="id">
+			null
 		</var>
 		<var
-		id="54d1c478-7bce-40ab-a3ed-bf168a77482f"
-		name="InternalUsername">
-			zchekir@cogstate.com
+		id="a2846a82-a80e-4661-b2c1-4ea5aa352b0e"
+		name="key">
+			&quot;&quot;
 		</var>
 		<var
-		id="82454349-6ca6-480b-bad7-dadfcf6f0dc5"
-		name="InternalPassword">
-			Darys2010
+		id="929a7288-50e2-4c5a-a48f-7f74e144b7ce"
+		name="contactEmail">
+			daryschetech@gmail.com
 		</var>
 		<var
-		id="0276d7a6-b65f-4eaa-b5f4-3e0099f45212"
-		name="portal">
-			DefaultPortal
+		id="5c280f38-7956-48f4-9120-b64a2227bf44"
+		name="active">
+			true
 		</var>
 		<var
-		id="fb766ab5-1f87-4968-9df3-f59bc4348e1a"
-		name="InternalAuthToken">
+		id="c070a634-a540-42e9-b2b6-9dd0e172bbae"
+		name="I_AuthToken">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="WebService"
+		classname="GenerateKey"
 		enabled="True"
-		isexternaltestmethod="True"
-		methodname="InternalUserLogin"
-		namespace="engine.Helpers"
+		isexternaltestmethod="False"
+		methodname="Generate_Key"
+		namespace="CSP"
 		optional="False"
 		varname="">
 			<comment>
@@ -66,11 +66,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="35a82f8f-f24c-41b3-8bab-4c1f3adb3938">
+			id="59e2a339-991f-42ac-a508-770db3d74b38">
 				<argument
-				argname="DOM"
-				id="e9a1e02d-dc5c-46fc-a100-67aa2a60da05"
-				variable="DOM">
+				argname="id"
+				id="50c88e16-36b8-44cd-8f86-366ff3a64b80"
+				variable="id">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -78,9 +78,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="username"
-				id="bcdfe239-ccec-48af-9b5d-75a09ec0b5b7"
-				variable="InternalUsername">
+				argname="contactEmail"
+				id="d788a73e-adac-4206-b363-6ff12a9078e1"
+				variable="contactEmail">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -88,9 +88,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="password"
-				id="1449c09d-9fe0-4ab8-887d-ca0a3bbf6904"
-				variable="InternalPassword">
+				argname="active"
+				id="c8b99df3-f218-4b51-bc20-7633f72c4cea"
+				variable="active">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -98,35 +98,19 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="portal"
-				id="8dd99498-b2a3-4d46-a920-5eb51e4d5e62"
-				variable="portal">
+				argname="I_AuthToken"
+				id="83d503cf-2a77-4455-b082-ccbae8afcdad"
+				variable="I_AuthToken">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="WebService"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="oData"
-		namespace="engine.Helpers"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e081267c-7d91-4420-839b-7d118fda31dc">
 				<argument
-				argname="DOM"
-				id="013194b2-0313-4873-97b9-7d4be517180a"
-				variable="DOM">
+				argname="key"
+				id="cfae2ad2-658a-4aca-9879-b79855d78529"
+				variable="key">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -152,7 +136,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		AuthenticalAsInternalUser.UserCode.cs
+		GenerateKey.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

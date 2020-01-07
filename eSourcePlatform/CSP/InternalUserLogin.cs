@@ -24,33 +24,34 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The V1_AuthenticateAPI recording.
+    ///The InternalUserLogin recording.
     /// </summary>
-    [TestModule("6c267ae0-eccc-42f7-bcf7-7d5dc0866964", ModuleType.Recording, 1)]
-    public partial class V1_AuthenticateAPI : ITestModule
+    [TestModule("e4973cbd-dfaf-437f-8fc4-144e686549f9", ModuleType.Recording, 1)]
+    public partial class InternalUserLogin : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static V1_AuthenticateAPI instance = new V1_AuthenticateAPI();
+        static InternalUserLogin instance = new InternalUserLogin();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public V1_AuthenticateAPI()
+        public InternalUserLogin()
         {
-            DOM = "cgst-qc-orr.azurewebsites.net";
-            Key = "5767c4d2-be6c-4bdc-ac60-5ba8474f37af";
-            secret = "305e95af-bb38-4a00-bf8e-448d06f67f55";
-            authToken = "";
+            DOM = "";
+            username = "";
+            password = "";
+            portal = "";
+            I_AuthToken = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static V1_AuthenticateAPI Instance
+        public static InternalUserLogin Instance
         {
             get { return instance; }
         }
@@ -62,45 +63,59 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("b7e113f5-d292-4949-afa8-81cac921e840")]
+        [TestVariable("3ae820f3-cb8f-4e51-af3b-138594b47045")]
         public string DOM
         {
             get { return _DOM; }
             set { _DOM = value; }
         }
 
-        string _secret;
+        string _username;
 
         /// <summary>
-        /// Gets or sets the value of variable secret.
+        /// Gets or sets the value of variable username.
         /// </summary>
-        [TestVariable("05c56c37-01a1-4ad9-92c6-3294df178117")]
-        public string secret
+        [TestVariable("b88c9ec6-962a-444e-bac4-93815b46ba02")]
+        public string username
         {
-            get { return _secret; }
-            set { _secret = value; }
+            get { return _username; }
+            set { _username = value; }
         }
 
-        string _authToken;
+        string _password;
 
         /// <summary>
-        /// Gets or sets the value of variable authToken.
+        /// Gets or sets the value of variable password.
         /// </summary>
-        [TestVariable("d251eaf8-c5e0-414b-bed4-14560682367b")]
-        public string authToken
+        [TestVariable("4ef44368-44b5-44b2-9dce-c461e383f730")]
+        public string password
         {
-            get { return _authToken; }
-            set { _authToken = value; }
+            get { return _password; }
+            set { _password = value; }
         }
 
+        string _portal;
+
         /// <summary>
-        /// Gets or sets the value of variable Key.
+        /// Gets or sets the value of variable portal.
         /// </summary>
-        [TestVariable("62f54ed9-1a1e-4d81-8545-c144147955a9")]
-        public string Key
+        [TestVariable("7fd94859-698e-4303-9a50-498db567abb5")]
+        public string portal
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return _portal; }
+            set { _portal = value; }
+        }
+
+        string _I_AuthToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable I_AuthToken.
+        /// </summary>
+        [TestVariable("2a039670-f597-4146-af80-1d37403d4686")]
+        public string I_AuthToken
+        {
+            get { return _I_AuthToken; }
+            set { _I_AuthToken = value; }
         }
 
 #endregion
@@ -129,7 +144,7 @@ namespace CSP
 
             Init();
 
-            V1AuthenticationAPI(DOM, secret, Key);
+            Internal_UserLogin();
             Delay.Milliseconds(0);
             
         }

@@ -290,7 +290,7 @@ namespace engine.Helpers
         // to add a new method with the attribute [UserCodeMethod].
         
         //*********Global variables list*************
-        public static string AuthToken;
+        public static string InternalAuthToken;
         public static string AssessmentURL;
         public static string TestIdentifier;
         public static string QualificationStatus;
@@ -615,9 +615,9 @@ namespace engine.Helpers
         		//Deserialise the JSON in a new object to use later
         		responseObject = new JavaScriptSerializer().Deserialize<loginToken>(response);
         		
-        		AuthToken = responseObject.authToken;
+        		InternalAuthToken = responseObject.authToken;
         		
-        		Report.Log(ReportLevel.Info, "InternalUserToken: " + AuthToken);
+        		Report.Log(ReportLevel.Info, "InternalUserToken: " + InternalAuthToken);
         	}
         	
         	

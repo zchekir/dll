@@ -45,6 +45,7 @@ namespace CSP
             InternalUsername = "zchekir@cogstate.com";
             InternalPassword = "Darys2010";
             portal = "DefaultPortal";
+            InternalAuthToken = "";
         }
 
         /// <summary>
@@ -91,6 +92,18 @@ namespace CSP
         {
             get { return _portal; }
             set { _portal = value; }
+        }
+
+        string _InternalAuthToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable InternalAuthToken.
+        /// </summary>
+        [TestVariable("fb766ab5-1f87-4968-9df3-f59bc4348e1a")]
+        public string InternalAuthToken
+        {
+            get { return _InternalAuthToken; }
+            set { _InternalAuthToken = value; }
         }
 
         /// <summary>

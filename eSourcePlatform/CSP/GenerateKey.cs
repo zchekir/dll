@@ -24,80 +24,93 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The V1_AuthenticateAPI recording.
+    ///The GenerateKey recording.
     /// </summary>
-    [TestModule("6c267ae0-eccc-42f7-bcf7-7d5dc0866964", ModuleType.Recording, 1)]
-    public partial class V1_AuthenticateAPI : ITestModule
+    [TestModule("4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e", ModuleType.Recording, 1)]
+    public partial class GenerateKey : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static V1_AuthenticateAPI instance = new V1_AuthenticateAPI();
+        static GenerateKey instance = new GenerateKey();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public V1_AuthenticateAPI()
+        public GenerateKey()
         {
-            DOM = "cgst-qc-orr.azurewebsites.net";
-            Key = "5767c4d2-be6c-4bdc-ac60-5ba8474f37af";
-            secret = "305e95af-bb38-4a00-bf8e-448d06f67f55";
-            authToken = "";
+            id = "null";
+            key = "\"\"";
+            contactEmail = "daryschetech@gmail.com";
+            active = "true";
+            I_AuthToken = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static V1_AuthenticateAPI Instance
+        public static GenerateKey Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _DOM;
+        string _id;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable id.
         /// </summary>
-        [TestVariable("b7e113f5-d292-4949-afa8-81cac921e840")]
-        public string DOM
+        [TestVariable("7805b7e9-80b4-433a-94ae-2a96bc75775a")]
+        public string id
         {
-            get { return _DOM; }
-            set { _DOM = value; }
+            get { return _id; }
+            set { _id = value; }
         }
 
-        string _secret;
+        string _contactEmail;
 
         /// <summary>
-        /// Gets or sets the value of variable secret.
+        /// Gets or sets the value of variable contactEmail.
         /// </summary>
-        [TestVariable("05c56c37-01a1-4ad9-92c6-3294df178117")]
-        public string secret
+        [TestVariable("929a7288-50e2-4c5a-a48f-7f74e144b7ce")]
+        public string contactEmail
         {
-            get { return _secret; }
-            set { _secret = value; }
+            get { return _contactEmail; }
+            set { _contactEmail = value; }
         }
 
-        string _authToken;
+        string _active;
 
         /// <summary>
-        /// Gets or sets the value of variable authToken.
+        /// Gets or sets the value of variable active.
         /// </summary>
-        [TestVariable("d251eaf8-c5e0-414b-bed4-14560682367b")]
-        public string authToken
+        [TestVariable("5c280f38-7956-48f4-9120-b64a2227bf44")]
+        public string active
         {
-            get { return _authToken; }
-            set { _authToken = value; }
+            get { return _active; }
+            set { _active = value; }
+        }
+
+        string _I_AuthToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable I_AuthToken.
+        /// </summary>
+        [TestVariable("c070a634-a540-42e9-b2b6-9dd0e172bbae")]
+        public string I_AuthToken
+        {
+            get { return _I_AuthToken; }
+            set { _I_AuthToken = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable Key.
+        /// Gets or sets the value of variable key.
         /// </summary>
-        [TestVariable("62f54ed9-1a1e-4d81-8545-c144147955a9")]
-        public string Key
+        [TestVariable("a2846a82-a80e-4661-b2c1-4ea5aa352b0e")]
+        public string key
         {
             get { return repo.Key; }
             set { repo.Key = value; }
@@ -129,7 +142,7 @@ namespace CSP
 
             Init();
 
-            V1AuthenticationAPI(DOM, secret, Key);
+            Generate_Key(id, contactEmail, active, I_AuthToken, key);
             Delay.Milliseconds(0);
             
         }

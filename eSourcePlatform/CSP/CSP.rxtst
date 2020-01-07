@@ -937,7 +937,7 @@ rxversion="8.3">
 			</modulegroup>
 			<testcase
 			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
-			name="InternalUserLogin&amp;oData">
+			name="oData_API">
 			</testcase>
 			<testmodule
 			id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
@@ -1387,6 +1387,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808"
+			name="Generate_ExterUserKey_">
+			</testcase>
 			<setup
 			id="3f3b1263-6826-44c4-aef7-ed0452a8d953"
 			name="setup">
@@ -1537,7 +1541,7 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="key"
+					dataname="key1"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="f186491e-a988-4bd5-8270-b971bccb2bd9"
 					variablename="key">
@@ -1549,16 +1553,16 @@ rxversion="8.3">
 					variablename="studyProtocolName">
 					</var>
 					<var
-					dataname="AuthToken"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="8f9475d0-eb77-4d33-a469-d30475c2b1ff"
-					variablename="AuthToken">
-					</var>
-					<var
 					dataname="Token"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="280f8c82-fde0-4bbf-8603-40d1ee3acfea"
 					variablename="Token">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8f9475d0-eb77-4d33-a469-d30475c2b1ff"
+					variablename="authToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2176,6 +2180,14 @@ rxversion="8.3">
 					name="AuthToken"
 					value="">
 					</param>
+					<param
+					name="v1autoToken"
+					value="">
+					</param>
+					<param
+					name="I_AuthToken"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -2273,7 +2285,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="key"
+					dataname="key1"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="62f54ed9-1a1e-4d81-8545-c144147955a9"
 					variablename="Key">
@@ -2289,6 +2301,12 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="b7e113f5-d292-4949-afa8-81cac921e840"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="v1autoToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d251eaf8-c5e0-414b-bed4-14560682367b"
+					variablename="authToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2728,6 +2746,38 @@ rxversion="8.3">
 			minrange="0"
 			name="Generate_Extract">
 			</testcase>
+			<testmodule
+			id="704dd07e-920c-453d-960e-21da92a80ab8"
+			name="Get_StatusCode"
+			ref="5e1ee223-eb63-4c65-beb7-fb91462efaca"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="eef4e54a-a961-4a61-8fdc-ac7a0926aee9"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="v1autoToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a3ad8590-40e3-45e3-aeeb-ada8c04e3a62"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="eb328b25-77e4-4df4-bc64-587f0e504d2a"
+					variablename="externalid">
+					</var>
+					<var
+					dataname="visitsession"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="ebfce8c3-1792-468a-bc5d-a253a0a99453"
+					variablename="visitsession">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="70e5e727-daef-4614-a975-2ae2ab2660ae"
 			name="Participant_Qualification_Status">
@@ -3016,6 +3066,38 @@ rxversion="8.3">
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="6017c17a-abf9-48f7-926e-a1d1d8419954"
 					variablename="ProtocolNumber">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7a9fae59-e844-4b1c-863c-d2972b5e839d"
+			name="Referral_Status"
+			ref="25e2a597-538e-4553-af69-d582add674b4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="3f1a37b1-0a7c-4ea0-8f2f-bae9b206051a"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="visitsession"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="41388a0a-76aa-43f4-93b1-ce52059feed5"
+					variablename="visitsession">
+					</var>
+					<var
+					dataname="v1autoToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="91b9db8e-9e88-4c2f-a39b-01b65efe4a14"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8236c42e-b21a-468c-8b20-d1cebbe63072"
+					variablename="externalId">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3342,6 +3424,10 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
+			name="InternalUserLogin">
+			</testcase>
+			<testcase
 			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd"
 			maxrange="3"
 			minrange="3"
@@ -3388,6 +3474,44 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9331413a-95e6-4122-8a9f-41bc02bc08cb"
+			name="InternalUserLogin"
+			ref="e4973cbd-dfaf-437f-8fc4-144e686549f9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="InternalUsername "
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="b88c9ec6-962a-444e-bac4-93815b46ba02"
+					variablename="username">
+					</var>
+					<var
+					dataname="InternalPassword"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="4ef44368-44b5-44b2-9dce-c461e383f730"
+					variablename="password">
+					</var>
+					<var
+					dataname="Portal"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="7fd94859-698e-4303-9a50-498db567abb5"
+					variablename="portal">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="3ae820f3-cb8f-4e51-af3b-138594b47045"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="2a039670-f597-4146-af80-1d37403d4686"
+					variablename="I_AuthToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3440,6 +3564,12 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="54d1c478-7bce-40ab-a3ed-bf168a77482f"
 					variablename="InternalUsername">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="fb766ab5-1f87-4968-9df3-f59bc4348e1a"
+					variablename="InternalAuthToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3525,6 +3655,44 @@ rxversion="8.3">
 			id="98dcf99f-23a8-4746-93e8-cea5139f7f23"
 			name="Check_DLM_Functionality">
 			</testcase>
+			<testmodule
+			id="99786d78-16d4-460c-8506-aa406bacf4c5"
+			name="GenerateKey"
+			ref="4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="id"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="7805b7e9-80b4-433a-94ae-2a96bc75775a"
+					variablename="id">
+					</var>
+					<var
+					dataname="contactEmail"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="929a7288-50e2-4c5a-a48f-7f74e144b7ce"
+					variablename="contactEmail">
+					</var>
+					<var
+					dataname="active"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="5c280f38-7956-48f4-9120-b64a2227bf44"
+					variablename="active">
+					</var>
+					<var
+					dataname="key"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="a2846a82-a80e-4661-b2c1-4ea5aa352b0e"
+					variablename="key">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="c070a634-a540-42e9-b2b6-9dd0e172bbae"
+					variablename="I_AuthToken">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			errorbehavior="ContinueNextIteration"
 			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd"
@@ -3929,7 +4097,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936"
-			name="ExternalAuthenticate">
+			name="V2_ExternalAuthenticate">
 			</testcase>
 			<setup
 			id="b055f9d9-3ae4-4ba9-8f28-d6ce7ae6af1c"
@@ -4569,6 +4737,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d3b331a3-374a-411f-afc9-78ef0ec10851"
+			name="V1_GetStatusCode">
+			</testcase>
 			<testmodule
 			id="d3c2a0c6-4079-48ec-aae8-a2aaaed23b7c"
 			name="Select_Study"
@@ -4839,6 +5011,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e00c2baf-18fc-4db9-8f47-941279980274"
+			name="V1_ReferralStatus">
+			</testcase>
 			<modulegroup
 			id="e1255b3e-5f8c-43e6-bf81-7e7f652c9821"
 			name="Add_VisitSchedule"
@@ -6469,7 +6645,7 @@ rxversion="8.3">
 					name="PR_API_Regression">
 						<testcase
 						id="af7f90a9-8c2e-417b-b635-b84d89a90936"
-						name="ExternalAuthenticate">
+						name="V2_ExternalAuthenticate">
 							<testmodule
 							id="476a9a0a-ed1d-4f81-a6b6-36e661a116d4"
 							name="External_Authenticate">
@@ -6508,19 +6684,51 @@ rxversion="8.3">
 							</testmodule>
 						</testcase>
 						<testcase
+						id="a95ff794-3df5-4234-b928-480259c0da91"
+						name="V1_ExternalAuthenticate">
+							<testmodule
+							id="5ee32229-20ba-4b3b-ad49-74060a814c24"
+							name="V1_AuthenticateAPI">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="d3b331a3-374a-411f-afc9-78ef0ec10851"
+						name="V1_GetStatusCode">
+							<testmodule
+							id="704dd07e-920c-453d-960e-21da92a80ab8"
+							name="Get_StatusCode">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="e00c2baf-18fc-4db9-8f47-941279980274"
+						name="V1_ReferralStatus">
+							<testmodule
+							id="7a9fae59-e844-4b1c-863c-d2972b5e839d"
+							name="Referral_Status">
+							</testmodule>
+						</testcase>
+						<testcase
 						id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
-						name="InternalUserLogin&amp;oData">
+						name="oData_API">
 							<testmodule
 							id="944ec9b2-ee26-4f8d-b3c3-55218690e828"
 							name="AuthenticalAsInternalUser">
 							</testmodule>
 						</testcase>
 						<testcase
-						id="a95ff794-3df5-4234-b928-480259c0da91"
-						name="V1_ExternalAuthenticate">
+						id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
+						name="InternalUserLogin">
 							<testmodule
-							id="5ee32229-20ba-4b3b-ad49-74060a814c24"
-							name="V1_AuthenticateAPI">
+							id="9331413a-95e6-4122-8a9f-41bc02bc08cb"
+							name="InternalUserLogin">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="3e7527cb-5ed0-4568-9fc8-2ec809398808"
+						name="Generate_ExterUserKey_">
+							<testmodule
+							id="99786d78-16d4-460c-8506-aa406bacf4c5"
+							name="GenerateKey">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
@@ -6607,7 +6815,7 @@ rxversion="8.3">
 		<DataSource
 		id="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="1"
 		name="API_Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6631,7 +6839,7 @@ rxversion="8.3">
 					dbPassword
 				</column>
 				<column>
-					key
+					key1
 				</column>
 				<column>
 					Token
@@ -6659,6 +6867,21 @@ rxversion="8.3">
 				</column>
 				<column>
 					supervisorId
+				</column>
+				<column>
+					visitsession
+				</column>
+				<column>
+					id
+				</column>
+				<column>
+					contactEmail
+				</column>
+				<column>
+					active
+				</column>
+				<column>
+					key
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -7027,13 +7250,43 @@ rxversion="8.3">
 		<testconfiguration
 		name="Regression">
 			<testcontainer
+			id="04421345-e5aa-49b4-b420-101dbea32a24">
+			</testcontainer>
+			<testcontainer
+			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
+			</testcontainer>
+			<testcontainer
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
+			</testcontainer>
+			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
+			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
+			</testcontainer>
+			<testcontainer
+			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
+			</testcontainer>
+			<testcontainer
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			</testcontainer>
+			<testcontainer
 			id="a95ff794-3df5-4234-b928-480259c0da91">
+			</testcontainer>
+			<testcontainer
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
+			</testcontainer>
+			<testcontainer
+			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
+			</testcontainer>
+			<testcontainer
+			id="e00c2baf-18fc-4db9-8f47-941279980274">
+			</testcontainer>
+			<testcontainer
+			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
