@@ -5075,8 +5075,8 @@ namespace CSP
                     base("WorkflowRunner", "", parentFolder, 0, null, false, "aa2d1fd1-509b-477b-86b8-0e50dab1a07f", "")
             {
                 _canvasspinnerInfo = new RepoItemInfo(this, "CanvasSpinner", ".//div[#'ng-app']/?/?//div[@class='spinner']", 30000, null, "89fb4724-2717-48d3-a1a7-e5da52b35873");
-                _batteryskipbuttonInfo = new RepoItemInfo(this, "BatterySkipButton", ".//button[#'skip']", 30000, null, "5cafea12-8dac-456b-af85-df1546dac229");
-                _batterydatafieldInfo = new RepoItemInfo(this, "BatteryDataField", ".//textarea[#'results']", 30000, null, "41136832-35b1-4bfa-9dcb-92e2d111c24b");
+                _batteryskipbuttonInfo = new RepoItemInfo(this, "BatterySkipButton", ".//button[#'skip']", 60000, null, "5cafea12-8dac-456b-af85-df1546dac229");
+                _batterydatafieldInfo = new RepoItemInfo(this, "BatteryDataField", ".//textarea[#'results']", 60000, null, "41136832-35b1-4bfa-9dcb-92e2d111c24b");
                 _startinstructionsInfo = new RepoItemInfo(this, "StartInstructions", ".//button[#'instructions_button']", 30000, null, "4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55");
             }
 
