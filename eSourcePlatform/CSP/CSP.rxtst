@@ -531,26 +531,6 @@ rxversion="8.3">
 			ref="74cc38b7-e7a0-4b6f-a941-387b7394b543"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="14a19a87-8abc-434b-9f58-7bdecc00ba01"
-			name="Select_CogstateTest"
-			ref="e231f99c-c036-461b-93e8-b4324c40315e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="BatteryBlockName"
-					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
-					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
-					variablename="BatteryBlockName">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="16025ae9-9d05-4d0f-995b-d91887787f2b"
 			name="teardown">
@@ -4605,7 +4585,7 @@ rxversion="8.3">
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="CBB Template">
+							value="BatteryOne">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -5882,81 +5862,6 @@ rxversion="8.3">
 	</testsuiteentryhierarchy>
 	<datasources>
 		<DataSource
-		id="9e06b931-1007-4f4a-89d9-82b2164ab343"
-		includefile="Checked"
-		lastknownrowcount="3"
-		name="API_authentication"
-		type="Ranorex.Core.Data.CsvDataConnector"
-		withheaders="True">
-			<lastknowncolumns>
-				<column>
-					InternalUsername&#32;
-				</column>
-				<column>
-					InternalPassword
-				</column>
-				<column>
-					Portal
-				</column>
-				<column>
-					DOM
-				</column>
-				<column>
-					dbUsername
-				</column>
-				<column>
-					dbPassword
-				</column>
-				<column>
-					GmailAddress
-				</column>
-				<column>
-					GmailPassword
-				</column>
-				<column>
-					Subject
-				</column>
-				<column>
-					Body
-				</column>
-				<column>
-					To
-				</column>
-				<column>
-					From
-				</column>
-				<column>
-					ServerHostname
-				</column>
-				<column>
-					ServerPort
-				</column>
-				<column>
-					UseSSL
-				</column>
-				<column>
-					SendEmailOnFailure
-				</column>
-				<column>
-					SendEmailOnSuccess
-				</column>
-				<column>
-					SendZippedReportOnComplete
-				</column>
-				<column>
-					SendPdfReportOnComplete
-				</column>
-				<column>
-					Browser
-				</column>
-			</lastknowncolumns>
-			<maskedcolumns>
-			</maskedcolumns>
-			<file>
-				PR_Authentication.csv
-			</file>
-		</DataSource>
-		<DataSource
 		id="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 		includefile="Unchecked"
 		lastknownrowcount="1"
@@ -6029,9 +5934,15 @@ rxversion="8.3">
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
+				<columnname>
+					dbPassword
+				</columnname>
+				<columnname>
+					InternalPassword
+				</columnname>
 			</maskedcolumns>
 			<file>
-				C:\Users\zchekir\Desktop\JackSon\cogstate-qc\eSourcePlatform\eSourcePlatform\PR_Authentication.csv
+				..\eSourcePlatform\PR_Authentication.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -6376,6 +6287,9 @@ rxversion="8.3">
 		<testconfiguration
 		name="Regression">
 			<testcontainer
+			id="037aeee4-7133-450a-b13e-79f6464da1e0">
+			</testcontainer>
+			<testcontainer
 			id="10c333f8-e857-4fad-823d-294804009f8b">
 			</testcontainer>
 			<testcontainer
@@ -6386,6 +6300,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
+			</testcontainer>
+			<testcontainer
+			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
 			</testcontainer>
 			<testcontainer
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
@@ -6400,17 +6317,13 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-<<<<<<< .mine
-			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
+			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
 			</testcontainer>
 			<testcontainer
-			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
-=======
 			id="6e082396-bffa-4d84-b254-0da30d111799">
-
-
-
->>>>>>> .theirs
+			</testcontainer>
+			<testcontainer
+			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
 			</testcontainer>
 			<testcontainer
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
@@ -6419,7 +6332,13 @@ rxversion="8.3">
 			id="8025452f-675f-42b8-876b-34ae207f797b">
 			</testcontainer>
 			<testcontainer
+			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
+			</testcontainer>
+			<testcontainer
 			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
+			</testcontainer>
+			<testcontainer
+			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
 			</testcontainer>
 			<testcontainer
 			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
@@ -6433,32 +6352,6 @@ rxversion="8.3">
 			<testcontainer
 			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
 			</testcontainer>
-<<<<<<< .mine
-			<testcontainer
-			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
-			</testcontainer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 			<testcontainer
 			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
 			</testcontainer>
@@ -6467,6 +6360,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="baf76252-a794-4bae-b009-029b41fb4909">
+			</testcontainer>
+			<testcontainer
+			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
 			</testcontainer>
 			<testcontainer
 			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
@@ -6483,7 +6379,9 @@ rxversion="8.3">
 			<testcontainer
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
 			</testcontainer>
->>>>>>> .theirs
+			<testcontainer
+			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
