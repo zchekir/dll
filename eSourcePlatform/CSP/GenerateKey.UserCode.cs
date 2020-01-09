@@ -75,12 +75,13 @@ namespace CSP
 
         public void Generate_Key(string id, string contactEmail, string active, string I_AuthToken, string key)
         {
-            Report.Log(ReportLevel.Info, "HI ZAK : " + I_AuthToken );
+            
             //Setup API call
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://cgst-qc-orr.azurewebsites.net/api/externalusers");
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "POST";
         	httpRequest.Headers.Add("Authorization", I_AuthToken);
+        
         	
         	//Check if external id is empty and generate a random number if true
         

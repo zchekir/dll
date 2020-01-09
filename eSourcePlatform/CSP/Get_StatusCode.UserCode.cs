@@ -50,7 +50,7 @@ namespace CSP
 
         public void GetStatus_Code(string DOM, string externalId, string visitsession, string AuthToken)
         {
-        	Report.Log(ReportLevel.Info, "StatusCode is:"+ externalId );
+        	
         	
         	if (externalId==""){
         		// generating an rundom number to be used as externalid

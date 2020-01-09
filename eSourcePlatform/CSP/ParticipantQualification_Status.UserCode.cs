@@ -67,7 +67,7 @@ namespace CSP
         		
         		string  ParticipantQualificationStatus = responseObject.assessmentAttemptQualificationStatus;
         		
-        		Report.Log(ReportLevel.Info,  "Current Participant Qualification Status is ( If the Participant Qualification Status values its appearing Blank means its NULL)  : " + ParticipantQualificationStatus);
+        		Report.Log(ReportLevel.Info, response);
         	}
         }
 

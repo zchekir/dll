@@ -37,8 +37,11 @@ namespace CSP
 			
 	}
 	}
+	
     public partial class Referral_Status
     {
+    	
+         int number;
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -50,7 +53,17 @@ namespace CSP
 
         public void StatusReferral(string visitsession, string DOM, string externalId, string AuthToken)
         {
-            //{{website}}/api/External/referralStatus/{{iqnumber}}/{{visitsessionid}} 
+        	if (externalId==""){
+        		// generating an rundom number to be used as externalid
+        		Random r = new Random();
+                number = r.Next(1,999999);
+        		externalId = number.ToString();
+        		
+        		
+        	}else{
+        		
+        	Report.Log(ReportLevel.Info, "The externalid is generated from workflowinstance call" );
+        	}
             
             // Setting up Get status API call header:
         	string url="https://"+DOM +"/api/External/referralStatus/"+externalId+"/"+visitsession;
@@ -71,11 +84,8 @@ namespace CSP
         		string response= sr.ReadToEnd();
         		responseObject = new JavaScriptSerializer().Deserialize<getStatusReferral>(response);
         		string ReferralStatus= responseObject.referralStatusCode; 
-        		if ( ReferralStatus==null){
-        		Report.Log(ReportLevel.Info, "StatusCode is: NULL" );
-        		}else{
-        			Report.Log(ReportLevel.Info, "StatusCode is:"+ ReferralStatus );
-        		}
+        		Report.Log(ReportLevel.Info,  response);
+        		
         			{
         		}
         	}

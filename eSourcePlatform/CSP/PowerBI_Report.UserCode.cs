@@ -87,16 +87,9 @@ namespace CSP
     {
        
         public string Username { get; set; }
-       // public string Display { get; set; }
-       // public string IfExistsResult { get; set; }
-       //public string ThrottleStatus { get; set; }
         public Credentials Credentials{ get; set; }
         public string PrefCredential { get; set; }
-       // public string HasPassword { get; set; }
-       // public string RemoteNgcParams { get; set; }
-       // public string FidoParams { get; set; }
-       // public string SasParams { get; set; }
-       // public string FederationRedirectUrl { get; set; }
+      
 
         
 
@@ -109,16 +102,9 @@ namespace CSP
     public class Credentials
     {
        
-       // public string Username { get; set; }
-       // public string Display { get; set; }
-       // public string IfExistsResult { get; set; }
-       //public string ThrottleStatus { get; set; }
-      // public string Credentials{ get; set; }
+      
         public string PrefCredential { get; set; }
-       // public string HasPassword { get; set; }
-       // public string RemoteNgcParams { get; set; }
-       // public string FidoParams { get; set; }
-       // public string SasParams { get; set; }
+       
         public string FederationRedirectUrl { get; set; }
 
         
