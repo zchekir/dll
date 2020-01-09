@@ -116,49 +116,34 @@ namespace CSP
 	}
     public partial class WorkFlowInstance
     {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
+      
         
-        
-        //variables:
-        
-        
-	       
-	     string url="https://cgst-qc-orr.azurewebsites.net/api/external/V2/AutomationStudy/AssessmentAttempt";
-	       //string dob1 = "2000-01-01";
-	      // string authoToken1 = " zIgOgdLNEAzGEjvyONsrg1tgK2SSCu-8axAr8WOF52erGxL9SEyBZ7krKrwub3Wyp";
-        private void Init()
+    private void Init()
         {
             // Your recording specific initialization code goes here.
         }
+//Generating workflowinstance ULR with using an existing study 
 
-        public void Workflow(string authoToken, string studyProtoclName, string DOM, string dob, string genderCode, string localityCode, string postError, string post)
+    public void Workflow(string authoToken, string studyProtoclName, string DOM, string dob, string genderCode, string localityCode, string postError, string post)
         {
-        	//"https://"+ DOM +wkFlowAPI+ studyProtocolName + "AssessmentAttempt"
         	
-        	
-        	string wkFlowAPI ="/api/external/V2/"; 
-            //Setup API call
+    	//variable
+    	string url = "https://"+ DOM +"/api/external/V2/AutomationStudy/AssessmentAttempt";
+        //Setup API call
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "POST";
         	httpRequest.Headers.Add("Authorization", authoToken);
         	
-        	//Check if external id is empty and generate a random number if true
-        	
-        	//if (externalId == "")
-        	//{
-        		//Report.Info("No External id passed through, generating external id...");
+        	   // generating an rundom number to be used as externalid
         		Random r = new Random();
                 int number = r.Next(1,999999);
         		externalId = number.ToString();
-        	//}
+        
         	
         	//Create JSON object containing demographics and study details
         	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode, supervisorId);
-        	Report.Log(ReportLevel.Info, "externalid: " + externalId);
+        
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
         	{

@@ -2015,6 +2015,30 @@
       <UserCode>true</UserCode>
       <id>0684c8f6-1feb-49e7-980d-aea03b53ccc7</id>
     </Compile>
+    <Compile Include="GenerateSecret.cs">
+      <BoundTo>901d10f0-bac5-4ce9-ba40-a15be528bc37</BoundTo>
+      <DependentUpon>GenerateSecret.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a109110-7f67-4e84-827f-9b63d74cc44c</id>
+    </Compile>
+    <Compile Include="GenerateSecret.UserCode.cs">
+      <BoundTo>901d10f0-bac5-4ce9-ba40-a15be528bc37</BoundTo>
+      <DependentUpon>GenerateSecret.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af7f573e-da7a-4229-9269-7b0ede504a4d</id>
+    </Compile>
+    <Compile Include="GenerateStandard_Extract.cs">
+      <BoundTo>2dc99b01-5d36-4070-9770-a3f780b8b614</BoundTo>
+      <DependentUpon>GenerateStandard_Extract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>237bd97a-8dde-4721-8777-d954bb322a6e</id>
+    </Compile>
+    <Compile Include="GenerateStandard_Extract.UserCode.cs">
+      <BoundTo>2dc99b01-5d36-4070-9770-a3f780b8b614</BoundTo>
+      <DependentUpon>GenerateStandard_Extract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d43d6b19-0097-48a6-8fff-0c6daacaa11f</id>
+    </Compile>
     <Compile Include="GetQualification_Status.cs">
       <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
       <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
@@ -2398,6 +2422,18 @@
       <BoundTo>bac4e143-96af-403e-ae73-111f3c5b0a1a</BoundTo>
       <DependentUpon>Validate_Participant_Profile.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="PowerBI_Report.cs">
+      <BoundTo>757c0b9a-18c1-498d-a2a6-f29638c2e011</BoundTo>
+      <DependentUpon>PowerBI_Report.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5eaae670-0598-404a-9f8d-09b4b0996f3d</id>
+    </Compile>
+    <Compile Include="PowerBI_Report.UserCode.cs">
+      <BoundTo>757c0b9a-18c1-498d-a2a6-f29638c2e011</BoundTo>
+      <DependentUpon>PowerBI_Report.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ac432d9-3c96-4e37-abfc-c462b2443a33</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>bcd8980c-aebe-43ad-ab29-ee0798e2d903</id>
@@ -3688,6 +3724,13 @@
       <id>1d8dd5f5-4a1a-438d-9a75-408bedf11894</id>
       <recordtableid>bb083686-6880-4147-aa4e-00115c5053c3</recordtableid>
     </None>
+    <Content Include="Authentication.csv">
+      <Link>Authentication.csv</Link>
+      <BoundTo>e421d7ee-56d4-498a-bcd8-1c82a2c916a5</BoundTo>
+      <DependentUpon>CSP.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>7e5dcc4f-f5be-4ed9-a06e-d5302ecea002</id>
+    </Content>
     <None Include="BatteriesPage\Click_Add_Battery.rxrec">
       <id>8e12fa6b-a51d-4dbf-b74f-c2ed366556a3</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4044,6 +4087,16 @@
       <id>c4900199-6f3d-4aef-a4e7-dbde70594300</id>
       <recordtableid>4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e</recordtableid>
     </None>
+    <None Include="GenerateSecret.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>901d10f0-bac5-4ce9-ba40-a15be528bc37</id>
+      <recordtableid>62f4dc62-2d89-4df1-92cd-b2241732900e</recordtableid>
+    </None>
+    <None Include="GenerateStandard_Extract.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>2dc99b01-5d36-4070-9770-a3f780b8b614</id>
+      <recordtableid>8203643e-31dc-4a6f-9d4e-39d89aad76a6</recordtableid>
+    </None>
     <None Include="GetQualification_Status.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</id>
@@ -4215,6 +4268,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>2d2638ae-b6ef-4b25-85c2-59bf7d5e3814</id>
     </Content>
+    <None Include="PowerBI_Report.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>757c0b9a-18c1-498d-a2a6-f29638c2e011</id>
+      <recordtableid>74cc38b7-e7a0-4b6f-a941-387b7394b543</recordtableid>
+    </None>
     <None Include="rawData\40yo_Tier1.txt">
       <id>49047e30-12d6-46e5-a10b-b2456f4f4e7a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

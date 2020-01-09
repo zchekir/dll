@@ -141,7 +141,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="04421345-e5aa-49b4-b420-101dbea32a24"
-			name="AssessmentAttemptStatus">
+			name="Assessment_AttemptStatus">
 			</testcase>
 			<testmodule
 			id="05328f87-991b-4b2b-9f91-4feefb3a94a0"
@@ -606,6 +606,12 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="138772e1-cabd-43b1-8df1-4522ca9ab871"
+			name="PowerBI_Report"
+			ref="74cc38b7-e7a0-4b6f-a941-387b7394b543"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="14a19a87-8abc-434b-9f58-7bdecc00ba01"
@@ -1389,7 +1395,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="3e7527cb-5ed0-4568-9fc8-2ec809398808"
-			name="Generate_ExterUserKey_">
+			name="Generate_ExterUserKey">
 			</testcase>
 			<setup
 			id="3f3b1263-6826-44c4-aef7-ed0452a8d953"
@@ -2484,6 +2490,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85"
+			name="GenerateStandardExtract">
+			</testcase>
 			<testmodule
 			id="66e87624-e9e7-4833-9183-b56c49024868"
 			name="Click_DownloadExtract_Button"
@@ -3425,7 +3435,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
-			name="InternalUserLogin">
+			name="Internal_UserLogin">
 			</testcase>
 			<testcase
 			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd"
@@ -3725,6 +3735,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9c137acc-6b4f-4824-8169-38ae66b80a1a"
+			name="GenerateStandard_Extract"
+			ref="8203643e-31dc-4a6f-9d4e-39d89aad76a6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="31e22614-3918-4963-8e74-185109b5c01e"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="2b5eb1c3-c095-4852-9694-912db827a0aa"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9c8bce1c-ecca-42da-9b8a-66b25b0d41ec"
 			name="Extract_Participant_IQNumber"
 			ref="0de1ee83-e7e6-4ddd-8dbc-17f0eb0ca8ad"
@@ -3945,7 +3975,7 @@ rxversion="8.3">
 			</smartfoldernode>
 			<testcase
 			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa"
-			name="GenerateWorkFlow">
+			name="Generate_WorkFlow">
 			</testcase>
 			<testmodule
 			id="a87026c7-2f43-4648-9168-cecc8d2a2ee7"
@@ -5273,7 +5303,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8"
-			name="GetQualificationStatus">
+			name="GetQualification_Status">
 			</testcase>
 			<testmodule
 			id="f17c7eba-6933-486b-affd-672d6d516cc0"
@@ -5508,6 +5538,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
+			name="PowerBIReport">
+			</testcase>
 			<testmodule
 			id="ff562408-6c23-45c0-b23a-93261b41d68b"
 			name="Click_Edit_Participant"
@@ -6653,7 +6687,7 @@ rxversion="8.3">
 						</testcase>
 						<testcase
 						id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa"
-						name="GenerateWorkFlow">
+						name="Generate_WorkFlow">
 							<testmodule
 							id="d6044850-b050-4abb-a188-cdd77629ad46"
 							name="WorkFlowInstance">
@@ -6661,7 +6695,7 @@ rxversion="8.3">
 						</testcase>
 						<testcase
 						id="04421345-e5aa-49b4-b420-101dbea32a24"
-						name="AssessmentAttemptStatus">
+						name="Assessment_AttemptStatus">
 							<testmodule
 							id="6f4727f6-39a1-4761-8e12-73c86fac77ab"
 							name="Assessment_AttemptStatus">
@@ -6669,7 +6703,7 @@ rxversion="8.3">
 						</testcase>
 						<testcase
 						id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8"
-						name="GetQualificationStatus">
+						name="GetQualification_Status">
 							<testmodule
 							id="53e72e72-6332-4b4b-a3fd-e9e2b7829d1f"
 							name="GetQualification_Status">
@@ -6717,7 +6751,7 @@ rxversion="8.3">
 						</testcase>
 						<testcase
 						id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
-						name="InternalUserLogin">
+						name="Internal_UserLogin">
 							<testmodule
 							id="9331413a-95e6-4122-8a9f-41bc02bc08cb"
 							name="InternalUserLogin">
@@ -6725,10 +6759,26 @@ rxversion="8.3">
 						</testcase>
 						<testcase
 						id="3e7527cb-5ed0-4568-9fc8-2ec809398808"
-						name="Generate_ExterUserKey_">
+						name="Generate_ExterUserKey">
 							<testmodule
 							id="99786d78-16d4-460c-8506-aa406bacf4c5"
 							name="GenerateKey">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="65bc00cc-3078-4d89-8091-3f70b730ce85"
+						name="GenerateStandardExtract">
+							<testmodule
+							id="9c137acc-6b4f-4824-8169-38ae66b80a1a"
+							name="GenerateStandard_Extract">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
+						name="PowerBIReport">
+							<testmodule
+							id="138772e1-cabd-43b1-8df1-4522ca9ab871"
+							name="PowerBI_Report">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
@@ -6892,7 +6942,7 @@ rxversion="8.3">
 		</DataSource>
 		<DataSource
 		id="d21b361b-a85f-4a38-97db-a529f99d7f1c"
-		includefile="Unchecked"
+		includefile="Checked"
 		lastknownrowcount="3"
 		name="Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
@@ -6974,7 +7024,7 @@ rxversion="8.3">
 				</columnname>
 			</maskedcolumns>
 			<file>
-				..\eSourcePlatform\Authentication.csv
+				Authentication.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -7265,6 +7315,9 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
+			</testcontainer>
+			<testcontainer
 			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
 			</testcontainer>
 			<testcontainer
@@ -7287,6 +7340,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			</testcontainer>
+			<testcontainer
+			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

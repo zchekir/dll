@@ -23,71 +23,63 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-
 namespace CSP
 {
-	// creating constructure 
-	
-	public class getStatusCode
+	public class _GenerateStandardExtract
 	{
 		
 		
-	public string statusCode {get;set;}
+	public string url {get;set;}
 		
-	public	getStatusCode()
+	public	_GenerateStandardExtract()
 	{
 			
 	}
 	}
-	
-    public partial class Get_StatusCode
+    public partial class GenerateStandard_Extract
     {
-         int number;
+        /// <summary>
+        /// This method gets called right after the recording has been started.
+        /// It can be used to execute recording specific initialization code.
+        /// </summary>
         private void Init()
         {
-            
+            // Your recording specific initialization code goes here.
         }
 
-        public void GetStatus_Code(string DOM, string externalId, string visitsession, string AuthToken)
+        public void Generate_StandardExtract(string DOM, string AuthToken)
         {
-        	Report.Log(ReportLevel.Info, "StatusCode is:"+ externalId );
+            //{{website}}/api/External/referralStatus/{{iqnumber}}/{{visitsessionid}} 
+            
+            // Setting up Get status API call header:
+                                             //STUDID
+            string extractAPI ="/api/studies/163629/extract/2";
+        	string url="https://"+ DOM + extractAPI;
         	
-        	if (externalId==""){
-        		// generating an rundom number to be used as externalid
-        		Random r = new Random();
-                number = r.Next(1,999999);
-        		externalId = number.ToString();
-        		
-        		
-        	}else{
-        		
-        	Report.Log(ReportLevel.Info, "The externalid is generated from workflowinstance call" );
-        	}
-        	
-        	// Setting up Get status API call header:
-        	string url="https://"+DOM +"/api/External/Status/"+externalId+"/"+visitsession;
         	HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);
         	httpRequest.ContentType = "application/json";
-        	httpRequest.Method="Get";
+        	httpRequest.Method="POST";
         	httpRequest.Headers.Add("Authorization", AuthToken);
+        	httpRequest.ContentLength=0;
         	
         	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
         	
         	//CreateObject:
-        	getStatusCode responseObject = new getStatusCode();
+        	_GenerateStandardExtract responseObject = new _GenerateStandardExtract();
         	
         	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
         	
         	{
         		
         		string response= sr.ReadToEnd();
-        		responseObject = new JavaScriptSerializer().Deserialize<getStatusCode>(response);
-        		string StatusCode = responseObject.statusCode; 
-        		Report.Log(ReportLevel.Info, "StatusCode is:"+ StatusCode );
+        		responseObject = new JavaScriptSerializer().Deserialize<_GenerateStandardExtract>(response);
+        		string StandardExtract = responseObject.url; 
         		
-        	}
+        			Report.Log(ReportLevel.Info, "StandardExtract generated successfully  is:"+ StandardExtract);
+        		}
+        			
+        		
         	
-            
         }
 
     }
