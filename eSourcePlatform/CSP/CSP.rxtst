@@ -3779,6 +3779,10 @@ rxversion="8.3">
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
 			name="CSP_GUI_API">
 			</smartfoldernode>
+			<teardown
+			id="bbc383b9-4792-433e-9d9b-dbf9249909ed"
+			name="teardown">
+			</teardown>
 			<setup
 			id="bcd9e6d9-1b54-4ac5-b190-604c7987aeea"
 			name="setup">
@@ -4816,6 +4820,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="feed961b-64f5-40e1-9071-d18ed66ebdb0"
+			name="setup">
+			</setup>
 			<testcase
 			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
 			name="PowerBIReport">
@@ -5795,6 +5803,10 @@ rxversion="8.3">
 					<smartfoldernode
 					id="45077930-4bd9-4874-ad6a-91b58033c26a"
 					name="eSourcePlatformAPI_RegressionTest">
+						<setup
+						id="feed961b-64f5-40e1-9071-d18ed66ebdb0"
+						name="setup">
+						</setup>
 						<smartfoldernode
 						id="b73752fe-40fa-44f6-b806-b422d950e3cd"
 						name="V2_API">
@@ -5927,6 +5939,10 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
+						<teardown
+						id="bbc383b9-4792-433e-9d9b-dbf9249909ed"
+						name="teardown">
+						</teardown>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -6358,33 +6374,6 @@ rxversion="8.3">
 		</testconfiguration>
 		<testconfiguration
 		name="Regression">
-			<testcontainer
-			id="45077930-4bd9-4874-ad6a-91b58033c26a">
-			</testcontainer>
-			<testcontainer
-			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
-			</testcontainer>
-			<testcontainer
-			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
-			</testcontainer>
-			<testcontainer
-			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
-			</testcontainer>
-			<testcontainer
-			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
-			</testcontainer>
-			<testcontainer
-			id="a95ff794-3df5-4234-b928-480259c0da91">
-			</testcontainer>
-			<testcontainer
-			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
-			</testcontainer>
-			<testcontainer
-			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="e00c2baf-18fc-4db9-8f47-941279980274">
-			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
