@@ -77,7 +77,7 @@ namespace CSP
         {
             
             //Setup API call
-        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://cgst-qc-orr.azurewebsites.net/api/externalusers");
+        	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://cgst-qc-jordan.azurewebsites.net/api/externalusers");
         	httpRequest.ContentType = "application/json";
         	httpRequest.Method = "POST";
         	httpRequest.Headers.Add("Authorization", I_AuthToken);
