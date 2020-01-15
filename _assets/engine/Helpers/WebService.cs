@@ -299,6 +299,7 @@ namespace engine.Helpers
         public static string ClientVersion;
         public static string oDatainfos;
         public static string InternalToken;
+        public static string AuthToken;
         
         
         /// <summary>-------------------------------------------------------------------------------------------------------------------------
