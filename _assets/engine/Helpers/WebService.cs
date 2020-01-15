@@ -666,13 +666,13 @@ namespace engine.Helpers
         [UserCodeMethod]
         public static void oData(string DOM)
         {
-        	
+            
         	string oDataAPI = "/odata/vwExtractStandardAssessmentDetails?TOP =1";
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+ DOM + oDataAPI  );
         	httpRequest.ContentType = "application/json";
         	httpRequest.ContentLength=0;
         	httpRequest.Method = "GET";
-        	httpRequest.Headers.Add("Authorization", AuthToken);
+        	httpRequest.Headers.Add("Authorization", InternalAuthToken);
         	
         	
         	//Sending the API call:
@@ -680,21 +680,13 @@ namespace engine.Helpers
         	HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
         	odataRespose responseObject = new  odataRespose();
         	var responseStatus = httpResponse.StatusCode;
-        	//using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
-        	//{
-	        	//string o_data = sr.ReadToEnd();
-	        	
-	        	
-	        	//responseObject = new JavaScriptSerializer().Deserialize<odataRespose>(o_data);
-	        	//oDatainfos= responseObject.PersonID;
-	        	//Report.Log(ReportLevel.Info, oDatainfos);
-	        	Report.Log(ReportLevel.Info, "oData API Call is working as Expected" + " : " +   responseStatus.ToString());
+        	using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+        	Report.Log(ReportLevel.Info, "oData API Call is working as Expected" + " : " +   responseStatus.ToString());
 	        	
 	        	
 	        	
         	
-        	
-        	//}
+        
         	
         	
         	

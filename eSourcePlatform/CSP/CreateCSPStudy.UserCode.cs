@@ -115,9 +115,10 @@ namespace CSP
         		
         		string response= sr.ReadToEnd();
         		responseObject = new JavaScriptSerializer().Deserialize<studyCreationR>(response);
-        		string ID= responseObject.id; 
+        		string Study_ID= responseObject.id; 
         		string StudyName= responseObject.protocolName;
-        		Report.Log(ReportLevel.Info, "StudyName is:"+ response);
+        		
+        		Report.Log(ReportLevel.Info, "StudyID:"+ Study_ID);
         		
         		
         			{

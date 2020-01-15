@@ -24,32 +24,31 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateCSPStudy recording.
+    ///The BatteryConfiguration_Report recording.
     /// </summary>
-    [TestModule("346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c", ModuleType.Recording, 1)]
-    public partial class CreateCSPStudy : ITestModule
+    [TestModule("99475296-5cd2-49b9-8044-ab8ce8050d87", ModuleType.Recording, 1)]
+    public partial class BatteryConfiguration_Report : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static CreateCSPStudy instance = new CreateCSPStudy();
+        static BatteryConfiguration_Report instance = new BatteryConfiguration_Report();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateCSPStudy()
+        public BatteryConfiguration_Report()
         {
-            DOM = "cgst-qc-jordan.azurewebsites.net/";
-            AuthToken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
-            Study_ID = "";
+            DOM = "";
+            AutoToken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateCSPStudy Instance
+        public static BatteryConfiguration_Report Instance
         {
             get { return instance; }
         }
@@ -61,35 +60,23 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("13025d57-c07f-499e-9fdd-ca183fe2d546")]
+        [TestVariable("a233e2d6-0503-4233-b91f-4d2c97b9fc9c")]
         public string DOM
         {
             get { return _DOM; }
             set { _DOM = value; }
         }
 
-        string _AuthToken;
+        string _AutoToken;
 
         /// <summary>
-        /// Gets or sets the value of variable AuthToken.
+        /// Gets or sets the value of variable AutoToken.
         /// </summary>
-        [TestVariable("cfa99b0b-017a-4764-8cb4-d5010828965c")]
-        public string AuthToken
+        [TestVariable("f13a9fbc-65dd-4beb-9e5a-95aa79b7c20c")]
+        public string AutoToken
         {
-            get { return _AuthToken; }
-            set { _AuthToken = value; }
-        }
-
-        string _Study_ID;
-
-        /// <summary>
-        /// Gets or sets the value of variable Study_ID.
-        /// </summary>
-        [TestVariable("da70eb2b-ee97-4d8f-9fd2-d676e64c6c90")]
-        public string Study_ID
-        {
-            get { return _Study_ID; }
-            set { _Study_ID = value; }
+            get { return _AutoToken; }
+            set { _AutoToken = value; }
         }
 
 #endregion
@@ -118,7 +105,7 @@ namespace CSP
 
             Init();
 
-            CSPStudy(DOM, AuthToken);
+            BatteryConfigurationReport(DOM, AutoToken);
             Delay.Milliseconds(0);
             
         }

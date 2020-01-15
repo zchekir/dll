@@ -1403,6 +1403,18 @@
       <DependentUpon>Select_Battery.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="BatteryConfiguration_Report.cs">
+      <BoundTo>1814a843-3840-4bf5-8de1-1e1c40d8685d</BoundTo>
+      <DependentUpon>BatteryConfiguration_Report.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b70b0ccc-b416-4fc9-9e09-c01258c8dd14</id>
+    </Compile>
+    <Compile Include="BatteryConfiguration_Report.UserCode.cs">
+      <BoundTo>1814a843-3840-4bf5-8de1-1e1c40d8685d</BoundTo>
+      <DependentUpon>BatteryConfiguration_Report.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1c8ca9ef-66af-41ab-a1c9-de05f9da5d9a</id>
+    </Compile>
     <Compile Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.cs">
       <id>56aa4cc6-772e-452d-8040-b8dd645484ff</id>
       <BoundTo>e1b8c8b4-a9af-4dd3-8020-b2b9a7dcc9f2</BoundTo>
@@ -2533,6 +2545,18 @@
       <BoundTo>480d9a60-ad4e-41ed-a1e4-d253bb05627c</BoundTo>
       <DependentUpon>View_Lastest_Report.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Set_LocalitieCode.cs">
+      <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
+      <DependentUpon>Set_LocalitieCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>059117e7-8b33-4b28-b956-19d6ad75bbbe</id>
+    </Compile>
+    <Compile Include="Set_LocalitieCode.UserCode.cs">
+      <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
+      <DependentUpon>Set_LocalitieCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6bc176c6-7b39-45f4-8ef6-eedbebeaf751</id>
     </Compile>
     <Compile Include="StudiesPage\Click_Add_Study.cs">
       <id>b2a9c4de-daa4-49fa-be99-a68df1c8ba8f</id>
@@ -3758,6 +3782,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>ae83b4a9-4f47-44d6-a475-555fe73f8c3d</recordtableid>
     </None>
+    <None Include="BatteryConfiguration_Report.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>1814a843-3840-4bf5-8de1-1e1c40d8685d</id>
+      <recordtableid>99475296-5cd2-49b9-8044-ab8ce8050d87</recordtableid>
+    </None>
     <None Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.rxrec">
       <id>e1b8c8b4-a9af-4dd3-8020-b2b9a7dcc9f2</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4417,6 +4446,11 @@
       <id>480d9a60-ad4e-41ed-a1e4-d253bb05627c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>3bf72023-04a6-405d-b102-33645e57f937</recordtableid>
+    </None>
+    <None Include="Set_LocalitieCode.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>492928c3-8757-4ac0-ac0f-37c518b41407</id>
+      <recordtableid>52db9f06-5da5-46a4-b3aa-a782ab8eaa1b</recordtableid>
     </None>
     <None Include="StudiesPage\Click_Add_Study.rxrec">
       <id>f211a17f-9981-4eec-9e4f-6dd3d3382cad</id>

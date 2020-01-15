@@ -1799,6 +1799,10 @@ rxversion="8.3">
 					name="I_AuthToken"
 					value="">
 					</param>
+					<param
+					name="Study_ID"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -1829,6 +1833,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="5d2d388a-a187-42cd-9c60-0a24f16880af"
+			name="BatteryConfigurationReport">
+			</testcase>
 			<testmodule
 			id="5e1d75ed-4af2-498c-af43-59d4c7b5d5f4"
 			name="APIV2_Update_Demographic"
@@ -2421,6 +2429,12 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cfa99b0b-017a-4764-8cb4-d5010828965c"
 					variablename="AuthToken">
+					</var>
+					<var
+					dataname="Study_ID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="da70eb2b-ee97-4d8f-9fd2-d676e64c6c90"
+					variablename="Study_ID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3057,12 +3071,6 @@ rxversion="8.3">
 					variableid="54d1c478-7bce-40ab-a3ed-bf168a77482f"
 					variablename="InternalUsername">
 					</var>
-					<var
-					dataname="I_AuthToken"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="fb766ab5-1f87-4968-9df3-f59bc4348e1a"
-					variablename="InternalAuthToken">
-					</var>
 				</databinding>
 			</testmodule>
 			<setup
@@ -3430,6 +3438,26 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="b2ac9a86-54f6-4d71-a1de-3222a4de05f2"
 					variablename="AuthToken">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a8b45a14-a44d-48c5-aa82-f1d94bb11c49"
+			name="BatteryConfiguration_Report"
+			ref="99475296-5cd2-49b9-8044-ab8ce8050d87"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f13a9fbc-65dd-4beb-9e5a-95aa79b7c20c"
+					variablename="AutoToken">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="a233e2d6-0503-4233-b91f-4d2c97b9fc9c"
+					variablename="DOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4059,6 +4087,10 @@ rxversion="8.3">
 				</databinding>
 			</modulegroup>
 			<testcase
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0"
+			name="SetLocalitieCode">
+			</testcase>
+			<testcase
 			errorbehavior="Stop"
 			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc"
 			maxrange="0"
@@ -4254,6 +4286,38 @@ rxversion="8.3">
 			id="d9f09e38-0c36-44fd-9717-746bdf0db708"
 			name="setup">
 			</setup>
+			<testmodule
+			id="da35936c-053f-492d-8d0e-bfbbdb2d95dc"
+			name="Set_LocalitieCode"
+			ref="52db9f06-5da5-46a4-b3aa-a782ab8eaa1b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="1ff771d7-d9e6-409e-887a-600ccb2530b6"
+					variablename="Autoken">
+					</var>
+					<var
+					dataname="Study_ID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="7efbcd7d-f756-4b11-866b-823de17ac97e"
+					variablename="studyId">
+					</var>
+					<var
+					dataname="Study_ID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="647d652c-17a8-4b91-bda6-19950c7692d6"
+					variablename="id">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="7970c6d5-bc77-49d6-a2c3-157413af10e4"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="db488035-4e27-4b7f-8872-45c65c4d4925"
 			name="teardown">
@@ -5926,6 +5990,22 @@ rxversion="8.3">
 								name="CreateCSPStudy">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="cd729a93-e144-4f5b-93c8-26fb3fb153b0"
+							name="SetLocalitieCode">
+								<testmodule
+								id="da35936c-053f-492d-8d0e-bfbbdb2d95dc"
+								name="Set_LocalitieCode">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="5d2d388a-a187-42cd-9c60-0a24f16880af"
+							name="BatteryConfigurationReport">
+								<testmodule
+								id="a8b45a14-a44d-48c5-aa82-f1d94bb11c49"
+								name="BatteryConfiguration_Report">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
@@ -6375,6 +6455,15 @@ rxversion="8.3">
 		<testconfiguration
 		name="Regression">
 			<testcontainer
+			id="04421345-e5aa-49b4-b420-101dbea32a24">
+			</testcontainer>
+			<testcontainer
+			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
+			</testcontainer>
+			<testcontainer
+			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
+			</testcontainer>
+			<testcontainer
 			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
 			</testcontainer>
 			<testcontainer
@@ -6384,10 +6473,55 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
+			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
+			</testcontainer>
+			<testcontainer
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
+			</testcontainer>
+			<testcontainer
+			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
+			</testcontainer>
+			<testcontainer
+			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b">
+			</testcontainer>
+			<testcontainer
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
 			</testcontainer>
 			<testcontainer
+			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
+			</testcontainer>
+			<testcontainer
+			id="a039dd84-fa06-45dc-900f-9d8b10c73c69">
+			</testcontainer>
+			<testcontainer
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			</testcontainer>
+			<testcontainer
+			id="a95ff794-3df5-4234-b928-480259c0da91">
+			</testcontainer>
+			<testcontainer
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
+			</testcontainer>
+			<testcontainer
+			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
+			</testcontainer>
+			<testcontainer
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
+			</testcontainer>
+			<testcontainer
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
+			</testcontainer>
+			<testcontainer
+			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
+			</testcontainer>
+			<testcontainer
+			id="e00c2baf-18fc-4db9-8f47-941279980274">
+			</testcontainer>
+			<testcontainer
+			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			</testcontainer>
+			<testcontainer
+			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

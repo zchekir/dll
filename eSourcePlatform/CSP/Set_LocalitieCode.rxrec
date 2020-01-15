@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c"
+id="52db9f06-5da5-46a4-b3aa-a782ab8eaa1b"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateCSPStudy
+		Set_LocalitieCode
 	</name>
 	<repeatcount>
 		1
@@ -23,31 +23,37 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateCSPStudy"
+	classname="Set_LocalitieCode"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="13025d57-c07f-499e-9fdd-ca183fe2d546"
+		id="647d652c-17a8-4b91-bda6-19950c7692d6"
+		name="id">
+			163069
+		</var>
+		<var
+		id="7efbcd7d-f756-4b11-866b-823de17ac97e"
+		name="studyId">
+			163069
+		</var>
+		<var
+		id="7970c6d5-bc77-49d6-a2c3-157413af10e4"
 		name="DOM">
 			cgst-qc-jordan.azurewebsites.net/
 		</var>
 		<var
-		id="cfa99b0b-017a-4764-8cb4-d5010828965c"
-		name="AuthToken">
+		id="1ff771d7-d9e6-409e-887a-600ccb2530b6"
+		name="Autoken">
 			y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo
-		</var>
-		<var
-		id="da70eb2b-ee97-4d8f-9fd2-d676e64c6c90"
-		name="Study_ID">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CreateCSPStudy"
+		classname="Set_LocalitieCode"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="CSPStudy"
+		methodname="SetLocalitie_Code"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -56,10 +62,30 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="14f19ca7-1225-478e-ae86-15d1acda5b17">
+			id="d64c943b-4fe9-4650-9a73-1a13ff1bd147">
+				<argument
+				argname="id"
+				id="c98ddefc-ab5e-473c-8863-442c5e19fb77"
+				variable="id">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="studyId"
+				id="3dbc5c6a-4556-4117-a3da-620bc8bf5314"
+				variable="studyId">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 				<argument
 				argname="DOM"
-				id="f28ef661-9c89-42e8-9427-d0343f0e0049"
+				id="c3903640-5b9f-439d-a07d-1096d54ff95b"
 				variable="DOM">
 					<argvaluetype>
 						System.String
@@ -68,9 +94,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="AuthToken"
-				id="62b34233-ef7d-4737-aeda-18ad59e8aacb"
-				variable="AuthToken">
+				argname="Autoken"
+				id="db1b215d-aba5-483e-9ea1-f203c2c5ede2"
+				variable="Autoken">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -96,7 +122,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateCSPStudy.UserCode.cs
+		Set_LocalitieCode.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

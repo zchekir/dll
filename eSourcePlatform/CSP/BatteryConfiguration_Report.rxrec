@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c"
+id="99475296-5cd2-49b9-8044-ab8ce8050d87"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateCSPStudy
+		BatteryConfiguration_Report
 	</name>
 	<repeatcount>
 		1
@@ -23,31 +23,26 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateCSPStudy"
+	classname="BatteryConfiguration_Report"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="13025d57-c07f-499e-9fdd-ca183fe2d546"
+		id="a233e2d6-0503-4233-b91f-4d2c97b9fc9c"
 		name="DOM">
-			cgst-qc-jordan.azurewebsites.net/
 		</var>
 		<var
-		id="cfa99b0b-017a-4764-8cb4-d5010828965c"
-		name="AuthToken">
+		id="f13a9fbc-65dd-4beb-9e5a-95aa79b7c20c"
+		name="AutoToken">
 			y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo
-		</var>
-		<var
-		id="da70eb2b-ee97-4d8f-9fd2-d676e64c6c90"
-		name="Study_ID">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CreateCSPStudy"
+		classname="BatteryConfiguration_Report"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="CSPStudy"
+		methodname="BatteryConfigurationReport"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -56,10 +51,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="14f19ca7-1225-478e-ae86-15d1acda5b17">
+			id="0d026cf3-bb25-401f-9bb5-74d0e78bbdbf">
 				<argument
 				argname="DOM"
-				id="f28ef661-9c89-42e8-9427-d0343f0e0049"
+				id="6df704ba-905e-4c71-81a9-1dfcfdf739d1"
 				variable="DOM">
 					<argvaluetype>
 						System.String
@@ -68,9 +63,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="AuthToken"
-				id="62b34233-ef7d-4737-aeda-18ad59e8aacb"
-				variable="AuthToken">
+				argname="AutoToken"
+				id="51d1f1f6-d753-46cd-a1e8-6a82d0ea6061"
+				variable="AutoToken">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -96,7 +91,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateCSPStudy.UserCode.cs
+		BatteryConfiguration_Report.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

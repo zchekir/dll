@@ -24,72 +24,85 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateCSPStudy recording.
+    ///The Set_LocalitieCode recording.
     /// </summary>
-    [TestModule("346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c", ModuleType.Recording, 1)]
-    public partial class CreateCSPStudy : ITestModule
+    [TestModule("52db9f06-5da5-46a4-b3aa-a782ab8eaa1b", ModuleType.Recording, 1)]
+    public partial class Set_LocalitieCode : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static CreateCSPStudy instance = new CreateCSPStudy();
+        static Set_LocalitieCode instance = new Set_LocalitieCode();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateCSPStudy()
+        public Set_LocalitieCode()
         {
+            id = "163069";
+            studyId = "163069";
             DOM = "cgst-qc-jordan.azurewebsites.net/";
-            AuthToken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
-            Study_ID = "";
+            Autoken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateCSPStudy Instance
+        public static Set_LocalitieCode Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _id;
+
+        /// <summary>
+        /// Gets or sets the value of variable id.
+        /// </summary>
+        [TestVariable("647d652c-17a8-4b91-bda6-19950c7692d6")]
+        public string id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        string _studyId;
+
+        /// <summary>
+        /// Gets or sets the value of variable studyId.
+        /// </summary>
+        [TestVariable("7efbcd7d-f756-4b11-866b-823de17ac97e")]
+        public string studyId
+        {
+            get { return _studyId; }
+            set { _studyId = value; }
+        }
+
         string _DOM;
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("13025d57-c07f-499e-9fdd-ca183fe2d546")]
+        [TestVariable("7970c6d5-bc77-49d6-a2c3-157413af10e4")]
         public string DOM
         {
             get { return _DOM; }
             set { _DOM = value; }
         }
 
-        string _AuthToken;
+        string _Autoken;
 
         /// <summary>
-        /// Gets or sets the value of variable AuthToken.
+        /// Gets or sets the value of variable Autoken.
         /// </summary>
-        [TestVariable("cfa99b0b-017a-4764-8cb4-d5010828965c")]
-        public string AuthToken
+        [TestVariable("1ff771d7-d9e6-409e-887a-600ccb2530b6")]
+        public string Autoken
         {
-            get { return _AuthToken; }
-            set { _AuthToken = value; }
-        }
-
-        string _Study_ID;
-
-        /// <summary>
-        /// Gets or sets the value of variable Study_ID.
-        /// </summary>
-        [TestVariable("da70eb2b-ee97-4d8f-9fd2-d676e64c6c90")]
-        public string Study_ID
-        {
-            get { return _Study_ID; }
-            set { _Study_ID = value; }
+            get { return _Autoken; }
+            set { _Autoken = value; }
         }
 
 #endregion
@@ -118,7 +131,7 @@ namespace CSP
 
             Init();
 
-            CSPStudy(DOM, AuthToken);
+            SetLocalitie_Code(id, studyId, DOM, Autoken);
             Delay.Milliseconds(0);
             
         }
