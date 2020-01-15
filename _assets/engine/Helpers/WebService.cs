@@ -291,6 +291,7 @@ namespace engine.Helpers
         
         //*********Global variables list*************
         public static string InternalAuthToken;
+        public static string AuthToken;
         public static string AssessmentURL;
         public static string TestIdentifier;
         public static string QualificationStatus;
