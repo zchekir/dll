@@ -161,8 +161,8 @@ namespace engine.Helpers
 		LEFT JOIN Assessment.AssessmentBatteryCompositeOutcome                                                          ON Assessment.AssessmentBatteryCompositeOutcome.AssessmentId=Assessment.Assessment.Id
 		LEFT JOIN Assessment.BatteryCompositeOutcome                                                                    ON Assessment.BatteryCompositeOutcome.Id=Assessment.AssessmentBatteryCompositeOutcome.BatteryCompositeOutcomeId
 		LEFT JOIN Assessment.CompositeOutcome                                                                           ON Assessment.CompositeOutcome.Id=Assessment.BatteryCompositeOutcome.CompositeOutcomeId
-	    LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomePrimary]                   ON [AssessmentOutcomePrimary].Id=Assessment.Test.PrimaryOutcomeId
-		LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomeAlternate]                 ON [AssessmentOutcomeAlternate].Id=Assessment.Test.AlternateOutcomeId
+	    LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomePrimary]                   ON [AssessmentOutcomePrimary].Id=Assessment.TestCode.PrimaryOutcomeId
+		LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomeAlternate]                 ON [AssessmentOutcomeAlternate].Id=Assessment.TestCode.AlternateOutcomeId
 		LEFT JOIN Assessment.AssessmentSessionAttemptIssue              AS [AssessmentSessionAttemptIssue]              ON AssessmentSessionAttemptIssue.AssessmentSessionAttemptId=Assessment.AssessmentSessionAttempt.Id
 		LEFT JOIN UserData.PrWorkflowInstance                                                                           ON UserData.PrWorkflowInstance.AssessmentSessionAttemptId=Assessment.AssessmentSessionAttempt.Id
 		LEFT JOIN UserData.Person                                                                                       ON UserData.Person.Id=Assessment.Assessee.PersonId
