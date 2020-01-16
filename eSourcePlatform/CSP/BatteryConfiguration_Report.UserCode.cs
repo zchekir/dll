@@ -77,11 +77,11 @@ namespace CSP
         {
         	
        //variables:
-       string id ="484";
-       string reportType= "BATTERY_CONFIGURATION";
-       string requestDate= "2020-01-15T16:35:31.757Z";
+       string id ="";
+       string reportType= "";
+       string requestDate= "";
        string jsonData="";
-       string url="https://"+DOM+"/api/studies/163629/BatteryConfigurationReports/484";
+       string url="https://"+DOM+"/api/studies/163629/BatteryConfigurationReports/482";
         
         
             
