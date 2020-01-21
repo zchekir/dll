@@ -1,4 +1,5 @@
-﻿<repository
+<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="1b4df078-48fd-44ad-b314-173b9dd113af"
 name="eSourcePlatformRepository"
 rxversion="8.3">
@@ -182,6 +183,43 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="b4d08c79-d120-4ae9-abed-d4ae12a5f86f"
+		isrooted="True"
+		name="CogstateSolutionPlatform2"
+		refpath="/dom[@domain='cgst-qc-jordan.azurewebsites.net']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="atag"
+			id="3518fcd2-3b1d-4937-9bc8-9b4a29d1dc08"
+			name="StandardExtractReport"
+			refimgid="583c6c23-5b4e-480e-b65e-74f799752a7b"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-qc-jordan.azurewebsites.net']//a[@innertext='Standard Extract']
+			</item>
+			<basepath>
+				/dom[@domain='cgst-qc-jordan.azurewebsites.net']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -203,6 +241,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="7bd16051-5145-48ed-a487-674a71577abf"
 		name="CSPDOM">
 			cgst-qc-orr.azurewebsites.net
+		</var>
+		<var
+		id="64f38c0d-a00b-4a5b-bd53-ba394794cee9"
+		name="ProtocolID">
 		</var>
 	</variables>
 </repository>

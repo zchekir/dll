@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -315,7 +315,7 @@ rxversion="8.3">
 			<smartfoldernode
 			datasource="RCCConnector"
 			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3"
-			name="Complete_DCT_Tests">
+			name="Complete_DCTMove">
 			</smartfoldernode>
 			<testmodule
 			id="1763ea1a-45bc-4a5c-8d7c-b904c7de2093"
@@ -938,6 +938,12 @@ rxversion="8.3">
 			name="OpenStudy(NewStudy)">
 			</testcase>
 			<testmodule
+			id="40177a1e-896c-45ae-82f6-b21ee32498ba"
+			name="Open_AcademicExtract"
+			ref="56b01e73-2b1c-41ff-9555-276c1c477b08"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="40df1ce9-06cd-4b1a-9864-a9d6123fe659"
 			name="Validate_WorkflowEntry"
 			ref="836fd9cf-e062-444a-811a-2b47a26ac4ef"
@@ -1039,6 +1045,12 @@ rxversion="8.3">
 			id="49225187-4a49-4835-90e0-3de32724cde5"
 			name="Get_TestIdentifier">
 			</testcase>
+			<testmodule
+			id="4b318e0f-fb4d-4d77-890e-77143ad6aaa2"
+			name="CloseStandadExtract"
+			ref="5dd0a2fc-773e-4102-9e57-a45562d760bd"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="4b8de630-5a1b-4844-afe9-707c8f91aaed"
 			name="Click_AddEvent_Button"
@@ -1353,7 +1365,7 @@ rxversion="8.3">
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
 			maxrange="0"
 			minrange="0"
-			name="SmokeTest">
+			name="Jordan_SmokeTest">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -1681,6 +1693,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="78a109df-7b80-4288-ae5d-d601447fe884"
+			name="StandardExtractReport">
+			</testcase>
 			<testmodule
 			id="79dc3bf0-e231-4a7b-808d-7e70811b7b92"
 			name="Click_Subjects_Button"
@@ -2357,7 +2373,7 @@ rxversion="8.3">
 			id="a1466124-6b75-4495-a467-58b136e9ff61"
 			maxrange="0"
 			minrange="0"
-			name="Validate_PowerBI_Report">
+			name="Validate_PowerBIReports">
 			</smartfoldernode>
 			<testmodule
 			id="a1cdffbd-7222-4399-8e7b-d8e11776ef55"
@@ -3262,7 +3278,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
-			name="Validate_CSP_Client_and_Server_Versions">
+			name="Validate_CSP_Client&amp;ServerVersions">
 			</smartfoldernode>
 			<testmodule
 			id="d37bb936-13b5-45c6-b91c-6dfc11424be2"
@@ -3339,7 +3355,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
-			name="Validate_DCT_Version_&amp;_RCC_Hub_Version">
+			name="Validate_DCT&amp;RCCHub_Version">
 			</smartfoldernode>
 			<testcase
 			id="d79c9852-484e-4cc4-83f2-c73c5387d586"
@@ -3978,7 +3994,7 @@ rxversion="8.3">
 				name="eSourcePlatform">
 					<smartfoldernode
 					id="63a0768d-8632-409b-adbf-fe7850003e81"
-					name="SmokeTest">
+					name="Jordan_SmokeTest">
 						<smartfoldernode
 						id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64"
 						name="Loginto_RCC">
@@ -4801,7 +4817,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="1762f5a3-6821-438b-aadd-bb4002c2f2d3"
-						name="Complete_DCT_Tests">
+						name="Complete_DCTMove">
 							<testcase
 							id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb"
 							name="Validate_DCT_Move">
@@ -4857,7 +4873,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
-						name="Validate_CSP_Client_and_Server_Versions">
+						name="Validate_CSP_Client&amp;ServerVersions">
 							<testcase
 							id="7b36cbf5-ea65-4477-8761-85c48415c8f2"
 							name="Software_Version">
@@ -4873,7 +4889,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="a1466124-6b75-4495-a467-58b136e9ff61"
-						name="Validate_PowerBI_Report">
+						name="Validate_PowerBIReports">
 							<setup
 							id="66124a66-4fab-4731-9c10-38cf17c743f3"
 							name="setup">
@@ -4942,6 +4958,14 @@ rxversion="8.3">
 								name="Validate_StandardExtract">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="78a109df-7b80-4288-ae5d-d601447fe884"
+							name="StandardExtractReport">
+								<testmodule
+								id="40177a1e-896c-45ae-82f6-b21ee32498ba"
+								name="Open_AcademicExtract">
+								</testmodule>
+							</testcase>
 							<teardown
 							id="4defc561-724f-40dd-b63a-7d4ede5de7d3"
 							name="teardown">
@@ -4953,11 +4977,15 @@ rxversion="8.3">
 								id="d37bb936-13b5-45c6-b91c-6dfc11424be2"
 								name="Close_PowerBI">
 								</testmodule>
+								<testmodule
+								id="4b318e0f-fb4d-4d77-890e-77143ad6aaa2"
+								name="CloseStandadExtract">
+								</testmodule>
 							</teardown>
 						</smartfoldernode>
 						<smartfoldernode
 						id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
-						name="Validate_DCT_Version_&amp;_RCC_Hub_Version">
+						name="Validate_DCT&amp;RCCHub_Version">
 							<testcase
 							id="1d9928dd-974b-4bf9-b839-09c761466da1"
 							name="NavigateTo_Azure">
@@ -5363,6 +5391,9 @@ rxversion="8.3">
 			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
 			</testcontainer>
 			<testcontainer
+			id="78a109df-7b80-4288-ae5d-d601447fe884">
+			</testcontainer>
+			<testcontainer
 			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
 			</testcontainer>
 			<testcontainer
@@ -5391,6 +5422,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="b2875f8e-5ac6-415e-93f0-d000f1cdaf3f">
+			</testcontainer>
+			<testcontainer
+			id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed">
 			</testcontainer>
 			<testcontainer
 			id="b468f615-5d6f-4e8c-b782-e6f70c90b66d">
