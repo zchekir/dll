@@ -184,6 +184,18 @@
       <UserCode>true</UserCode>
       <id>7caebfa0-32a9-4ac5-bd30-aa64fcf27fe5</id>
     </Compile>
+    <Compile Include="CloseStandadExtract.cs">
+      <BoundTo>9d8f9670-f243-4ad7-9849-20406ae8c2d6</BoundTo>
+      <DependentUpon>CloseStandadExtract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df3864fb-547b-4e03-a542-52e8577ea332</id>
+    </Compile>
+    <Compile Include="CloseStandadExtract.UserCode.cs">
+      <BoundTo>9d8f9670-f243-4ad7-9849-20406ae8c2d6</BoundTo>
+      <DependentUpon>CloseStandadExtract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>529efab5-ff75-4a3b-bf9a-19cf56d01983</id>
+    </Compile>
     <Compile Include="Close_DCT.cs">
       <BoundTo>c1a2ab54-3b47-4192-bc3c-198494ec122e</BoundTo>
       <DependentUpon>Close_DCT.rxrec</DependentUpon>
@@ -225,6 +237,18 @@
       <DependentUpon>OpenExistingStudy.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>f4523f99-7692-4222-8f90-5243c9353a85</id>
+    </Compile>
+    <Compile Include="Open_AcademicExtract.cs">
+      <BoundTo>15a1d912-885e-4336-af20-becefff41187</BoundTo>
+      <DependentUpon>Open_AcademicExtract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0c288685-6fca-4649-bfd2-979fddc4eb6a</id>
+    </Compile>
+    <Compile Include="Open_AcademicExtract.UserCode.cs">
+      <BoundTo>15a1d912-885e-4336-af20-becefff41187</BoundTo>
+      <DependentUpon>Open_AcademicExtract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>843fd395-39f0-46ac-9038-8c17d76bcf68</id>
     </Compile>
     <Compile Include="Open_Study.cs">
       <BoundTo>bf33b029-e351-48c9-a4e9-37c4d9e77db5</BoundTo>
@@ -383,6 +407,11 @@
       <id>31438c5c-84cd-447e-a179-75203cd97943</id>
       <recordtableid>28e676c4-cee4-497e-8b62-291ea3c2618f</recordtableid>
     </None>
+    <None Include="CloseStandadExtract.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>9d8f9670-f243-4ad7-9849-20406ae8c2d6</id>
+      <recordtableid>5dd0a2fc-773e-4102-9e57-a45562d760bd</recordtableid>
+    </None>
     <None Include="Close_DCT.rxrec">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <id>c1a2ab54-3b47-4192-bc3c-198494ec122e</id>
@@ -408,6 +437,11 @@
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <id>01ec57b5-366f-493b-9938-8d84b1392784</id>
       <recordtableid>201aa709-90b2-4a77-b98f-d675294a56a1</recordtableid>
+    </None>
+    <None Include="Open_AcademicExtract.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>15a1d912-885e-4336-af20-becefff41187</id>
+      <recordtableid>56b01e73-2b1c-41ff-9555-276c1c477b08</recordtableid>
     </None>
     <None Include="Open_Study.rxrec">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
