@@ -243,7 +243,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "cgst-qc-orr.azurewebsites.net";
+        string _CSPDOM = "cgst-qc-jordan.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -289,6 +289,18 @@ namespace CSP
         {
             get { return _VisitName; }
             set { _VisitName = value; }
+        }
+
+        string _ExistingStudy = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ExistingStudy.
+        /// </summary>
+        [TestVariable("9d063f2a-6b62-4a0d-9da9-ff83574e4b46")]
+        public string ExistingStudy
+        {
+            get { return _ExistingStudy; }
+            set { _ExistingStudy = value; }
         }
 
 #endregion
@@ -397,7 +409,7 @@ namespace CSP
             CSPRepositoryFolders.AddVisitSchedulePageFolder _addvisitschedulepage;
             CSPRepositoryFolders.AddInternalUserPageFolder _addinternaluserpage;
             CSPRepositoryFolders.AddExternalUserPageFolder _addexternaluserpage;
-            CSPRepositoryFolders.BatteryConfigReportPageFolder _batteryconfigreportpage;
+            CSPRepositoryFolders.ReportsPageFolder _reportspage;
             CSPRepositoryFolders.ParticipantsPageFolder _participantspage;
             CSPRepositoryFolders.PopupsFolder _popups;
             CSPRepositoryFolders.ExtractsPageFolder _extractspage;
@@ -420,6 +432,7 @@ namespace CSP
             RepoItemInfo _previouspagebuttonInfo;
             RepoItemInfo _savebuttonInfo;
             RepoItemInfo _resultsdropdownInfo;
+            RepoItemInfo _searchstudyInfo;
 
             /// <summary>
             /// Creates a new CogstateSolutionPlatform  folder.
@@ -434,7 +447,7 @@ namespace CSP
                 _addvisitschedulepage = new CSPRepositoryFolders.AddVisitSchedulePageFolder(this);
                 _addinternaluserpage = new CSPRepositoryFolders.AddInternalUserPageFolder(this);
                 _addexternaluserpage = new CSPRepositoryFolders.AddExternalUserPageFolder(this);
-                _batteryconfigreportpage = new CSPRepositoryFolders.BatteryConfigReportPageFolder(this);
+                _reportspage = new CSPRepositoryFolders.ReportsPageFolder(this);
                 _participantspage = new CSPRepositoryFolders.ParticipantsPageFolder(this);
                 _popups = new CSPRepositoryFolders.PopupsFolder(this);
                 _extractspage = new CSPRepositoryFolders.ExtractsPageFolder(this);
@@ -457,6 +470,7 @@ namespace CSP
                 _previouspagebuttonInfo = new RepoItemInfo(this, "PreviousPageButton", ".//div[#'ng-app']/tag/div/div//ul/li/a[@innertext='PREVIOUS']", 30000, null, "9a3bd989-1f05-4532-a3e6-b64f8af89913");
                 _savebuttonInfo = new RepoItemInfo(this, "SaveButton", "body/div/tag/div/div[3]//div/button[@ng-click>'save']", 30000, null, "8a61fdd3-cb4b-4f86-b20d-3fd9bbe1e5b1");
                 _resultsdropdownInfo = new RepoItemInfo(this, "ResultsDropdown", ".//div[#'scroll-container']//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[6]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[4]/select", 30000, null, "2af41e46-264e-4fb3-8ab2-f3f99bc70003");
+                _searchstudyInfo = new RepoItemInfo(this, "SearchStudy", ".//input[#'generic-search']", 30000, null, "605c3598-22f0-4953-9bee-5a7da70c03a4");
             }
 
             /// <summary>
@@ -604,6 +618,30 @@ namespace CSP
             }
 
             /// <summary>
+            /// The SearchStudy item.
+            /// </summary>
+            [RepositoryItem("605c3598-22f0-4953-9bee-5a7da70c03a4")]
+            public virtual Ranorex.InputTag SearchStudy
+            {
+                get
+                {
+                    return _searchstudyInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SearchStudy item info.
+            /// </summary>
+            [RepositoryItemInfo("605c3598-22f0-4953-9bee-5a7da70c03a4")]
+            public virtual RepoItemInfo SearchStudyInfo
+            {
+                get
+                {
+                    return _searchstudyInfo;
+                }
+            }
+
+            /// <summary>
             /// The AddBatteryPage folder.
             /// </summary>
             [RepositoryFolder("780fcf1c-95f0-43d6-ae77-a06f29e3eaeb")]
@@ -667,12 +705,12 @@ namespace CSP
             }
 
             /// <summary>
-            /// The BatteryConfigReportPage folder.
+            /// The ReportsPage folder.
             /// </summary>
             [RepositoryFolder("95e7e970-a6ef-45b5-859c-7b9177792c82")]
-            public virtual CSPRepositoryFolders.BatteryConfigReportPageFolder BatteryConfigReportPage
+            public virtual CSPRepositoryFolders.ReportsPageFolder ReportsPage
             {
-                get { return _batteryconfigreportpage; }
+                get { return _reportspage; }
             }
 
             /// <summary>
@@ -3956,12 +3994,14 @@ namespace CSP
         }
 
         /// <summary>
-        /// The BatteryConfigReportPageFolder folder.
+        /// The ReportsPageFolder folder.
         /// </summary>
         [RepositoryFolder("95e7e970-a6ef-45b5-859c-7b9177792c82")]
-        public partial class BatteryConfigReportPageFolder : RepoGenBaseFolder
+        public partial class ReportsPageFolder : RepoGenBaseFolder
         {
             RepoItemInfo _batteryconfigreportInfo;
+            RepoItemInfo _standardextractlinkInfo;
+            RepoItemInfo _academicextractlinkInfo;
             RepoItemInfo _generatereportbuttonInfo;
             RepoItemInfo _latestgeneratedreportInfo;
             RepoItemInfo _protocollabelInfo;
@@ -3972,12 +4012,14 @@ namespace CSP
             RepoItemInfo _specdeviationbuttonInfo;
 
             /// <summary>
-            /// Creates a new BatteryConfigReportPage  folder.
+            /// Creates a new ReportsPage  folder.
             /// </summary>
-            public BatteryConfigReportPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("BatteryConfigReportPage", "", parentFolder, 0, null, false, "95e7e970-a6ef-45b5-859c-7b9177792c82", "")
+            public ReportsPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("ReportsPage", "", parentFolder, 0, null, false, "95e7e970-a6ef-45b5-859c-7b9177792c82", "")
             {
                 _batteryconfigreportInfo = new RepoItemInfo(this, "BatteryConfigReport", ".//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Battery Config Report' and @visible='True']", 30000, null, "22ce7e5d-f755-46e4-9d3b-319ad3ff6903");
+                _standardextractlinkInfo = new RepoItemInfo(this, "StandardExtractLink", ".//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Standard Extract' and @visible='True']", 30000, null, "45a6b357-f470-4904-9f63-1a00707a8a92");
+                _academicextractlinkInfo = new RepoItemInfo(this, "AcademicExtractLink", ".//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Academic Extract' and @visible='True']", 30000, null, "f575571b-4ab2-416b-9ae6-593d0a3f0015");
                 _generatereportbuttonInfo = new RepoItemInfo(this, "GenerateReportButton", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//button[@innertext>'Generate Report']", 30000, null, "85a4dc2d-d1d7-4fec-8213-99295fb09d62");
                 _latestgeneratedreportInfo = new RepoItemInfo(this, "LatestGeneratedReport", ".//div[#'ng-app']//table/tbody/tr[1]/td/a[@visible='True']", 30000, null, "55e2ef93-5902-4c18-8192-ed03533b23d2");
                 _protocollabelInfo = new RepoItemInfo(this, "ProtocolLabel", ".//div[#'ng-app']//tag[@tagname='cogstate-generic-study-report-compact']//label[@innertext>'Protocol:']", 30000, null, "1f73c6fb-00ae-412a-9000-63304bd2c1a3");
@@ -4021,6 +4063,54 @@ namespace CSP
                 get
                 {
                     return _batteryconfigreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StandardExtractLink item.
+            /// </summary>
+            [RepositoryItem("45a6b357-f470-4904-9f63-1a00707a8a92")]
+            public virtual Ranorex.ATag StandardExtractLink
+            {
+                get
+                {
+                    return _standardextractlinkInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StandardExtractLink item info.
+            /// </summary>
+            [RepositoryItemInfo("45a6b357-f470-4904-9f63-1a00707a8a92")]
+            public virtual RepoItemInfo StandardExtractLinkInfo
+            {
+                get
+                {
+                    return _standardextractlinkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtractLink item.
+            /// </summary>
+            [RepositoryItem("f575571b-4ab2-416b-9ae6-593d0a3f0015")]
+            public virtual Ranorex.ATag AcademicExtractLink
+            {
+                get
+                {
+                    return _academicextractlinkInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtractLink item info.
+            /// </summary>
+            [RepositoryItemInfo("f575571b-4ab2-416b-9ae6-593d0a3f0015")]
+            public virtual RepoItemInfo AcademicExtractLinkInfo
+            {
+                get
+                {
+                    return _academicextractlinkInfo;
                 }
             }
 
@@ -5489,6 +5579,7 @@ namespace CSP
             RepoItemInfo _workflowtitleInfo;
             RepoItemInfo _studycardtitleInfo;
             RepoItemInfo _rcceventdefinitionsInfo;
+            RepoItemInfo _existingstudycardInfo;
 
             /// <summary>
             /// Creates a new StudyCards  folder.
@@ -5502,6 +5593,7 @@ namespace CSP
                 _workflowtitleInfo = new RepoItemInfo(this, "WorkflowTitle", ".//p[@innertext~$WorkflowName+$RandNum]", 30000, null, "492d690a-ab43-4639-8890-7f3917a948ff");
                 _studycardtitleInfo = new RepoItemInfo(this, "StudyCardTitle", ".//p[@innertext~$ProjectName+$RandNum]", 30000, null, "c11fbc89-68c4-4531-9b50-5b53093b9636");
                 _rcceventdefinitionsInfo = new RepoItemInfo(this, "RCCEventDefinitions", ".//p[@innertext~'RCCEventDefinitions']", 30000, null, "0acc40e9-f3ad-4a15-910a-798d3be303e6");
+                _existingstudycardInfo = new RepoItemInfo(this, "ExistingStudyCard", ".//p[@innertext~$ExistingStudy]", 30000, null, "9807d900-1c16-46a6-a5ad-cad0bf9cee7b");
             }
 
             /// <summary>
@@ -5669,6 +5761,30 @@ namespace CSP
                 get
                 {
                     return _rcceventdefinitionsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExistingStudyCard item.
+            /// </summary>
+            [RepositoryItem("9807d900-1c16-46a6-a5ad-cad0bf9cee7b")]
+            public virtual Ranorex.PTag ExistingStudyCard
+            {
+                get
+                {
+                    return _existingstudycardInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExistingStudyCard item info.
+            /// </summary>
+            [RepositoryItemInfo("9807d900-1c16-46a6-a5ad-cad0bf9cee7b")]
+            public virtual RepoItemInfo ExistingStudyCardInfo
+            {
+                get
+                {
+                    return _existingstudycardInfo;
                 }
             }
         }

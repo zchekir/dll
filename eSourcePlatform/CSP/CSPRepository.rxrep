@@ -1108,7 +1108,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 			capname="unknown"
 			id="95e7e970-a6ef-45b5-859c-7b9177792c82"
 			isrooted="False"
-			name="BatteryConfigReportPage"
+			name="ReportsPage"
 			searchtimeout="0ms">
 				<item
 				addcaps="unknown,webelement,trtag"
@@ -1118,6 +1118,24 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="30fc5bd0-25fe-4ca2-b1c9-6f2977e98f08"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Battery Config Report' and @visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="45a6b357-f470-4904-9f63-1a00707a8a92"
+				name="StandardExtractLink"
+				refimgid="e04e2ac2-83dc-4527-8d51-c5886a763d01"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Standard Extract' and @visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="f575571b-4ab2-416b-9ae6-593d0a3f0015"
+				name="AcademicExtractLink"
+				refimgid="d783337c-0623-45ba-bf71-bdacf2ca4d7b"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Academic Extract' and @visible='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -1668,6 +1686,15 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="3783051e-08e5-4b34-aab9-5bb3d3b2940f"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~'RCCEventDefinitions']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="ptag"
+				id="9807d900-1c16-46a6-a5ad-cad0bf9cee7b"
+				name="ExistingStudyCard"
+				refimgid="8e7dfbf2-179b-4235-8908-7f4fee083669"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$ExistingStudy]
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']
@@ -2305,6 +2332,15 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/dom[@domain=$CSPDOM]//div[#'scroll-container']//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[6]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[4]/select
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="605c3598-22f0-4953-9bee-5a7da70c03a4"
+			name="SearchStudy"
+			refimgid="95d7c2d9-7671-4394-b37b-a0726e7b6a51"
+			searchtimeout="30000ms">
+				/dom[@domain=$CSPDOM]//input[#'generic-search']
+			</item>
 			<basepath>
 				/dom[@domain=$CSPDOM]
 			</basepath>
@@ -2882,7 +2918,7 @@ AAAASUVORK5CYII=
 		<var
 		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 		name="CSPDOM">
-			cgst-qc-orr.azurewebsites.net
+			cgst-qc-jordan.azurewebsites.net
 		</var>
 		<var
 		id="cca33cb1-e6e4-4dea-927e-63ce1b157653"
@@ -2896,6 +2932,10 @@ AAAASUVORK5CYII=
 		id="c056edce-42d6-4ef2-b6ab-c3af87dd013f"
 		name="VisitName">
 			Visit 1
+		</var>
+		<var
+		id="9d063f2a-6b62-4a0d-9da9-ff83574e4b46"
+		name="ExistingStudy">
 		</var>
 	</variables>
 </repository>

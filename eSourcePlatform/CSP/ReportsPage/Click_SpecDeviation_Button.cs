@@ -89,8 +89,8 @@ namespace CSP.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.SpecDeviationButton' at 122;27.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.SpecDeviationButtonInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.SpecDeviationButton.Click("122;27", 1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ReportsPage.SpecDeviationButton' at 122;27.", repo.CogstateSolutionPlatform.ReportsPage.SpecDeviationButtonInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.ReportsPage.SpecDeviationButton.Click("122;27", 1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));

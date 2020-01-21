@@ -16,60 +16,6 @@ rxversion="8.3">
 		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"
-		id="edeb004d-d2f2-4a96-895f-472ccf97f10d"
-		isrooted="True"
-		name="CogstateSolutionPlatform"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="896c64d8-c9d5-45d0-9c4a-21c793cde0ed"
-			name="SearchStudy"
-			refimgid="364a194e-314b-441a-bc25-a7a9d3225cdd"
-			searchtimeout="30000ms">
-				/dom[@domain=$CSPDOM]//input[#'generic-search']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="b7e9c226-23bf-40e1-9756-b817a2048676"
-			name="Clickstudy"
-			refimgid="83c47e30-2026-49f1-a5c8-72c7c2823068"
-			searchtimeout="30000ms">
-				/dom[@domain=$CSPDOM]//a[@innertext~$ExistingStudy]
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="fe46efed-95ff-4130-9d75-6d87b2696564"
-			name="StartLogCSP"
-			refimgid="b2a6e540-72a2-4616-8bcd-24940726c64d"
-			searchtimeout="30000ms">
-				/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\.azure']/span[2]
-			</item>
-			<basepath>
-				/dom[@domain=$CSPDOM]
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
 		id="c4703fa5-b020-43f6-b7f4-c199f9aebf8b"
 		isrooted="True"
 		name="SignInToYourAccount"
@@ -123,103 +69,8 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='login.cogstate.com']//input[#'passwordInput']
 			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="6e2e8192-7577-425c-8b00-ba3f06e9bf0f"
-			name="SubmitButton"
-			refimgid="21a919e1-d020-495e-839b-829a147be127"
-			refpath="/dom[@domain='login.cogstate.com']//span[#'submitButton']"
-			searchtimeout="30000ms">
-				/dom[@domain='login.cogstate.com']//span[#'submitButton']
-			</item>
 			<basepath>
 				/dom[@domain='login.cogstate.com']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
-		id="bc4938ca-6b79-480d-9ccc-92591339c530"
-		isrooted="True"
-		name="AcademicExtractOrrPowerBI"
-		refpath="/dom[@domain='app.powerbi.com']"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="0dbedd49-c821-437a-8cd1-bd9771a12f2f"
-			name="ClickLogOut"
-			refimgid="5c3e0d0e-9e6a-4eba-b0e6-0657b86b6816"
-			refpath="/dom[@domain='app.powerbi.com']//button[#'powerBIUserInfoBtn']/div"
-			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//button[#'powerBIUserInfoBtn']/div
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="1ae4ff87-2bba-46fe-b5df-bec9c3fef842"
-			name="SignOut"
-			refimgid="dafc4a0d-e5cd-4576-83df-f664fba54b26"
-			refpath="/dom[@domain='app.powerbi.com']//div[#'cdk-overlay-0']/div/div/div/a[@innertext='Sign out']"
-			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//div[#'cdk-overlay-0']/div//a[@innertext='Sign out']
-			</item>
-			<basepath>
-				/dom[@domain='app.powerbi.com']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
-		id="0f325a6f-9a8f-4925-9166-b0d5ccb5d44b"
-		isrooted="True"
-		name="DataCleaningTool"
-		refpath="/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,h2tag"
-			capname="h2tag"
-			id="4d3c9011-e18d-4ce0-a355-118cace1816b"
-			name="DataCleaningTool"
-			refimgid="8f313883-24ae-4883-a9ab-ad4a872b1364"
-			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//h2[@innertext='Data Cleaning Tool']
-			</item>
-			<basepath>
-				/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
@@ -255,26 +106,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refpath="/dom[@domain='platform.cogstate.com']//input[#'loginEmail']"
 			searchtimeout="30000ms">
 				/dom[@domain='platform.cogstate.com']//input[#'loginEmail']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="36ecf764-b457-4163-a894-4d867e95fafa"
-			name="LoginPass"
-			refimgid="6dae49c9-24db-4f87-9554-dd586533a41d"
-			refpath="/dom[@domain='platform.cogstate.com']//input[#'loginPass']"
-			searchtimeout="30000ms">
-				/dom[@domain='platform.cogstate.com']//input[#'loginPass']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="ee3e265d-f2ce-4430-ba1b-c1517ec78b79"
-			name="ButtonTagLOG"
-			refimgid="dc32d033-cabf-4d4b-b923-259a2060a80a"
-			refpath="/dom[@domain='platform.cogstate.com']//div[#'ng-app']/tag[@tagname='application-template-main']/div/div/tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@innertext='                            LOGIN                        ']"
-			searchtimeout="30000ms">
-				/dom[@domain='platform.cogstate.com']//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']
 			</item>
 			<basepath>
 				/dom[@domain='platform.cogstate.com']

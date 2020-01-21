@@ -2474,6 +2474,18 @@
       <UserCode>true</UserCode>
       <id>6f4ef5a0-860c-4933-af77-c1676c676ab4</id>
     </Compile>
+    <Compile Include="ReportsPage\Click_AcademicExtract_Link.cs">
+      <BoundTo>c182812f-a250-478b-8089-57b36c9b0bc4</BoundTo>
+      <DependentUpon>Click_AcademicExtract_Link.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>62db87e7-9336-4699-bdae-7ba5bdc049aa</id>
+    </Compile>
+    <Compile Include="ReportsPage\Click_AcademicExtract_Link.UserCode.cs">
+      <BoundTo>c182812f-a250-478b-8089-57b36c9b0bc4</BoundTo>
+      <DependentUpon>Click_AcademicExtract_Link.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>733a0fec-5df7-4e4c-a9f9-e84d10323c45</id>
+    </Compile>
     <Compile Include="ReportsPage\Click_BatteryConfig_Report.cs">
       <id>2b0f7eb2-adab-4256-a972-81b4913222d7</id>
       <BoundTo>951c9b9f-ea17-4784-8a81-030173e5de2c</BoundTo>
@@ -2521,6 +2533,18 @@
       <BoundTo>54b05062-d065-4c5c-a95a-aaa3e0e06131</BoundTo>
       <DependentUpon>Click_SpecDeviation_Button.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="ReportsPage\Click_StandardExtract_Link.cs">
+      <BoundTo>59d7cc1f-7428-4808-b66b-f2bcabe31ad3</BoundTo>
+      <DependentUpon>Click_StandardExtract_Link.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7ffe5363-ac1e-437d-97e3-14552575b87a</id>
+    </Compile>
+    <Compile Include="ReportsPage\Click_StandardExtract_Link.UserCode.cs">
+      <BoundTo>59d7cc1f-7428-4808-b66b-f2bcabe31ad3</BoundTo>
+      <DependentUpon>Click_StandardExtract_Link.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4fde2e2-4015-48c7-a694-2c56e62befd7</id>
     </Compile>
     <Compile Include="ReportsPage\Validate_Report_Generated.cs">
       <id>aa4663ad-ce0f-49bd-999c-5d04b9a3177b</id>
@@ -2677,6 +2701,18 @@
       <BoundTo>6e84f88f-1278-4cbd-8dc5-a79c81b6a7bf</BoundTo>
       <DependentUpon>Select_All_Localities.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="StudiesPage\Select_Existing_Study.cs">
+      <BoundTo>34b4c559-c077-44b6-860a-c6a562877f50</BoundTo>
+      <DependentUpon>Select_Existing_Study.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5662513f-1096-4995-9405-9cbe0d23d045</id>
+    </Compile>
+    <Compile Include="StudiesPage\Select_Existing_Study.UserCode.cs">
+      <BoundTo>34b4c559-c077-44b6-860a-c6a562877f50</BoundTo>
+      <DependentUpon>Select_Existing_Study.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6dd9dbab-11b6-4b15-a93f-88bdfcf1eb2d</id>
     </Compile>
     <Compile Include="StudiesPage\Select_Locality.cs">
       <id>3adf59e4-4072-49bb-a0ff-60bcfbb4fb37</id>
@@ -3760,13 +3796,6 @@
       <id>1d8dd5f5-4a1a-438d-9a75-408bedf11894</id>
       <recordtableid>bb083686-6880-4147-aa4e-00115c5053c3</recordtableid>
     </None>
-    <Content Include="Authentication.csv">
-      <Link>Authentication.csv</Link>
-      <BoundTo>e421d7ee-56d4-498a-bcd8-1c82a2c916a5</BoundTo>
-      <DependentUpon>CSP.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>4b53075b-db9b-416e-9cae-d61a9c46cfc8</id>
-    </Content>
     <None Include="BatteriesPage\Click_Add_Battery.rxrec">
       <id>8e12fa6b-a51d-4dbf-b74f-c2ed366556a3</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4417,6 +4446,11 @@
       <id>2d1f8218-df18-48b0-af17-f34a309b2e8d</id>
       <recordtableid>25e2a597-538e-4553-af69-d582add674b4</recordtableid>
     </None>
+    <None Include="ReportsPage\Click_AcademicExtract_Link.rxrec">
+      <id>c182812f-a250-478b-8089-57b36c9b0bc4</id>
+      <recordtableid>da8397a9-f04d-40bc-be23-165bd204a301</recordtableid>
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+    </None>
     <None Include="ReportsPage\Click_BatteryConfig_Report.rxrec">
       <id>951c9b9f-ea17-4784-8a81-030173e5de2c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4436,6 +4470,11 @@
       <id>54b05062-d065-4c5c-a95a-aaa3e0e06131</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>55a4bccd-360a-4169-b5f5-492a3939b382</recordtableid>
+    </None>
+    <None Include="ReportsPage\Click_StandardExtract_Link.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>59d7cc1f-7428-4808-b66b-f2bcabe31ad3</id>
+      <recordtableid>4f089712-c239-4883-8bcf-6c722e725e24</recordtableid>
     </None>
     <None Include="ReportsPage\Validate_Report_Generated.rxrec">
       <id>bde11d22-b2e8-4323-90ce-045548c89d4e</id>
@@ -4501,6 +4540,11 @@
       <id>6e84f88f-1278-4cbd-8dc5-a79c81b6a7bf</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>5af6e6dc-37da-402d-a6b4-a53e84ad1e5d</recordtableid>
+    </None>
+    <None Include="StudiesPage\Select_Existing_Study.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>34b4c559-c077-44b6-860a-c6a562877f50</id>
+      <recordtableid>8f769f95-c08c-4671-bb6b-e41ddcf23a95</recordtableid>
     </None>
     <None Include="StudiesPage\Select_Locality.rxrec">
       <id>fc4ece17-f535-4e3d-89f0-9f186fadcd1e</id>

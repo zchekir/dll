@@ -27,6 +27,7 @@ namespace ReportingLayer
     public partial class ReportingLayerRepository : RepoGenBaseFolder
     {
         static ReportingLayerRepository instance = new ReportingLayerRepository();
+        ReportingLayerRepositoryFolders.PowerBIAppFolder _powerbi;
 
         /// <summary>
         /// Gets the singleton class instance representing the ReportingLayerRepository element repository.
@@ -43,9 +44,82 @@ namespace ReportingLayer
         public ReportingLayerRepository() 
             : base("ReportingLayerRepository", "/", null, 0, false, "60c3c42a-4566-402e-9361-221a6c8f795f", ".\\RepositoryImages\\ReportingLayerRepository60c3c42a.rximgres")
         {
+            _powerbi = new ReportingLayerRepositoryFolders.PowerBIAppFolder(this);
         }
 
 #region Variables
+
+        string _DCTDOM = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("7e405311-352b-4fd0-b12b-893fa5282752")]
+        public string DCTDOM
+        {
+            get { return _DCTDOM; }
+            set { _DCTDOM = value; }
+        }
+
+        string _RCCDOM = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable RCCDOM.
+        /// </summary>
+        [TestVariable("bc0082c5-16c2-4397-94ab-05b2e47c9749")]
+        public string RCCDOM
+        {
+            get { return _RCCDOM; }
+            set { _RCCDOM = value; }
+        }
+
+        string _ExistingStudy = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ExistingStudy.
+        /// </summary>
+        [TestVariable("cc9fc24d-c180-4a50-a79f-863ab1310d8e")]
+        public string ExistingStudy
+        {
+            get { return _ExistingStudy; }
+            set { _ExistingStudy = value; }
+        }
+
+        string _CSPUsername = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("6aa037ec-ad71-4bbc-ba08-854a4647afa6")]
+        public string CSPUsername
+        {
+            get { return _CSPUsername; }
+            set { _CSPUsername = value; }
+        }
+
+        string _AzureDOM = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable AzureDOM.
+        /// </summary>
+        [TestVariable("68a830a8-f79b-4ea4-ae54-b95755f7d842")]
+        public string AzureDOM
+        {
+            get { return _AzureDOM; }
+            set { _AzureDOM = value; }
+        }
+
+        string _ProtocolID = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ProtocolID.
+        /// </summary>
+        [TestVariable("205a61dc-d836-474a-ab6f-210750f02768")]
+        public string ProtocolID
+        {
+            get { return _ProtocolID; }
+            set { _ProtocolID = value; }
+        }
 
 #endregion
 
@@ -60,6 +134,15 @@ namespace ReportingLayer
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The PowerBI folder.
+        /// </summary>
+        [RepositoryFolder("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+        public virtual ReportingLayerRepositoryFolders.PowerBIAppFolder PowerBI
+        {
+            get { return _powerbi; }
+        }
     }
 
     /// <summary>
@@ -68,6 +151,150 @@ namespace ReportingLayer
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class ReportingLayerRepositoryFolders
     {
+        /// <summary>
+        /// The PowerBIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+        public partial class PowerBIAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _dateslicertorangeInfo;
+            RepoItemInfo _dateslicerfromrangeInfo;
+            RepoItemInfo _cleartestselectionsInfo;
+            RepoItemInfo _protocolidcellInfo;
+
+            /// <summary>
+            /// Creates a new PowerBI  folder.
+            /// </summary>
+            public PowerBIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("PowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "0bcadffa-23d9-4f2f-a294-3ed2de5fe67e", "")
+            {
+                _dateslicertorangeInfo = new RepoItemInfo(this, "DateSlicerToRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input", 30000, null, "f012a904-5357-4a30-9bc0-624df81514af");
+                _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "04a6379f-44ba-419b-b302-034971569815");
+                _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
+                _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 30000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerToRange item.
+            /// </summary>
+            [RepositoryItem("f012a904-5357-4a30-9bc0-624df81514af")]
+            public virtual Ranorex.InputTag DateSlicerToRange
+            {
+                get
+                {
+                    return _dateslicertorangeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerToRange item info.
+            /// </summary>
+            [RepositoryItemInfo("f012a904-5357-4a30-9bc0-624df81514af")]
+            public virtual RepoItemInfo DateSlicerToRangeInfo
+            {
+                get
+                {
+                    return _dateslicertorangeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerFromRange item.
+            /// </summary>
+            [RepositoryItem("04a6379f-44ba-419b-b302-034971569815")]
+            public virtual Ranorex.InputTag DateSlicerFromRange
+            {
+                get
+                {
+                    return _dateslicerfromrangeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerFromRange item info.
+            /// </summary>
+            [RepositoryItemInfo("04a6379f-44ba-419b-b302-034971569815")]
+            public virtual RepoItemInfo DateSlicerFromRangeInfo
+            {
+                get
+                {
+                    return _dateslicerfromrangeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClearTestSelections item.
+            /// </summary>
+            [RepositoryItem("fe539034-422e-4b97-8136-eeaa45ce38bb")]
+            public virtual Ranorex.SpanTag ClearTestSelections
+            {
+                get
+                {
+                    return _cleartestselectionsInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClearTestSelections item info.
+            /// </summary>
+            [RepositoryItemInfo("fe539034-422e-4b97-8136-eeaa45ce38bb")]
+            public virtual RepoItemInfo ClearTestSelectionsInfo
+            {
+                get
+                {
+                    return _cleartestselectionsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item.
+            /// </summary>
+            [RepositoryItem("2970ea4c-e954-448e-b58c-3b8823070f0f")]
+            public virtual Ranorex.DivTag ProtocolIDCell
+            {
+                get
+                {
+                    return _protocolidcellInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item info.
+            /// </summary>
+            [RepositoryItemInfo("2970ea4c-e954-448e-b58c-3b8823070f0f")]
+            public virtual RepoItemInfo ProtocolIDCellInfo
+            {
+                get
+                {
+                    return _protocolidcellInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

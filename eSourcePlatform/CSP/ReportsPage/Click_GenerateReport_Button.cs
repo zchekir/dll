@@ -89,11 +89,11 @@ namespace CSP.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton'", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'CogstateSolutionPlatform.ReportsPage.GenerateReportButton'", repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo, new ActionTimeout(5000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButtonInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.GenerateReportButton.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ReportsPage.GenerateReportButton' at Center.", repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButton.Click(1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));

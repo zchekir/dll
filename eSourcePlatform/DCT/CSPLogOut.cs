@@ -53,16 +53,6 @@ namespace DCT
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
-        /// </summary>
-        [TestVariable("4868fd53-f0cc-4bcc-ad64-84d67b341b4d")]
-        public string CSPDOM
-        {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -89,8 +79,8 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.CogstateSolutionPlatform.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'CogstateSolutionPlatformChrome'.", repo.CogstateSolutionPlatformChrome.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.CogstateSolutionPlatformChrome.Self, new Duration(0));
             Delay.Milliseconds(0);
             
         }
