@@ -36,9 +36,8 @@ namespace RedCapCloud.SubjectsPage
         public void Get_value_TestIdentifier(RepoItemInfo inputTagInfo)
         {
         	Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'inputTagInfo' and assigning its value to variable 'TestIdentifier'.", inputTagInfo);
-        	
-        	//while (!inputTagInfo.Exists(new Duration(10000))) 
-        	while (!inputTagInfo.Exists(new Duration(1000))){
+        	 
+        	while (!inputTagInfo.Exists(new Duration(5000))){
         		
         		//If TestIdentifier is not found, we need to go back to the subjects menu, select the subject,
         		//select the visit and select the CRF again. If we simply sit at the DataConfirmationCRF page and refresh it,
@@ -52,7 +51,7 @@ namespace RedCapCloud.SubjectsPage
         		Report.Log(ReportLevel.Info, "Click", "Mouse click on FirstVisit", new RecordItemIndex(2));
         		repo.REDCapCloud.SubjectsPage.FirstVisit.Click(Location.Center, 500);
 
-        		Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5m.", new RecordItemIndex(3));
+        		Report.Log(ReportLevel.Info, "Delay", "Waiting for 9s.", new RecordItemIndex(3));
                 Delay.Duration(9000, false);
         		
         		Report.Log(ReportLevel.Info, "Click", "Mouse click on DataConfirmationCRF", new RecordItemIndex(4));
