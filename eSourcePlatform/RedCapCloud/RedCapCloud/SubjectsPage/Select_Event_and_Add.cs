@@ -111,8 +111,8 @@ namespace RedCapCloud.SubjectsPage
             repo.REDCapCloud.SaveAndExit.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(3));
-            Delay.Duration(1500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
             
         }
 

@@ -13,7 +13,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
-using System.IO;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
@@ -21,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.General
+namespace eSourcePlatform
 {
-    public partial class Upload_RawData
+    public partial class CloseReport
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,25 +31,6 @@ namespace RedCapCloud.General
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void AddRawData(string fileName)
-        {
-        	
-        	
-        	Delay.Milliseconds(500);
-            string data;
-        	using (StreamReader sr = File.OpenText(@".\rawData\" + fileName))
-			{
-        		data = sr.ReadToEnd();
-			}
-        	
-        	//Add raw data into the textbox on the battery runner page
-        	Report.Log(ReportLevel.Info, "Searching for raw data text field");
-        	repo.REDCapCloud.iFrame.ResultsInfo.WaitForExists(new Duration(20000));
-        	repo.REDCapCloud.iFrame.Results.Element.SetAttributeValue("InnerText", data);
-        	
-        	
         }
 
     }

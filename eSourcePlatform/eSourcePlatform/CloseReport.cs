@@ -20,64 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.General
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Open_Browser recording.
+    ///The CloseReport recording.
     /// </summary>
-    [TestModule("00e6b236-1bc8-4276-b907-6919860acfe5", ModuleType.Recording, 1)]
-    public partial class Open_Browser : ITestModule
+    [TestModule("6f763526-9b0a-4477-b70b-391c636e0374", ModuleType.Recording, 1)]
+    public partial class CloseReport : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Open_Browser instance = new Open_Browser();
+        static CloseReport instance = new CloseReport();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Open_Browser()
+        public CloseReport()
         {
-            URL = "https://cgsqc.redcapcloud.com";
-            Browser = "Chrome";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Open_Browser Instance
+        public static CloseReport Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _URL;
-
-        /// <summary>
-        /// Gets or sets the value of variable URL.
-        /// </summary>
-        [TestVariable("6f16e2fe-59f5-4db7-ad65-fc9f98e4843e")]
-        public string URL
-        {
-            get { return _URL; }
-            set { _URL = value; }
-        }
-
-        string _Browser;
-
-        /// <summary>
-        /// Gets or sets the value of variable Browser.
-        /// </summary>
-        [TestVariable("274716b5-a543-4645-bcdf-0f2be353a9ae")]
-        public string Browser
-        {
-            get { return _Browser; }
-            set { _Browser = value; }
-        }
 
 #endregion
 
@@ -105,12 +79,9 @@ namespace RedCapCloud.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'AcademicExtractJORDANPowerBI.PowerBI'.", repo.AcademicExtractJORDANPowerBI.PowerBIInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.AcademicExtractJORDANPowerBI.PowerBI, new Duration(0));
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
-            Delay.Duration(5000, false);
             
         }
 

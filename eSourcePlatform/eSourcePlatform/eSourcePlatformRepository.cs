@@ -31,6 +31,7 @@ namespace eSourcePlatform
         eSourcePlatformRepositoryFolders.SignInAppFolder _signin;
         eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder _cogstatesolutionplatform1;
         eSourcePlatformRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
+        eSourcePlatformRepositoryFolders.AcademicExtractJORDANPowerBIAppFolder _academicextractjordanpowerbi;
 
         /// <summary>
         /// Gets the singleton class instance representing the eSourcePlatformRepository element repository.
@@ -51,6 +52,7 @@ namespace eSourcePlatform
             _signin = new eSourcePlatformRepositoryFolders.SignInAppFolder(this);
             _cogstatesolutionplatform1 = new eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder(this);
             _redcapcloud = new eSourcePlatformRepositoryFolders.REDCapCloudAppFolder(this);
+            _academicextractjordanpowerbi = new eSourcePlatformRepositoryFolders.AcademicExtractJORDANPowerBIAppFolder(this);
         }
 
 #region Variables
@@ -163,6 +165,15 @@ namespace eSourcePlatform
         public virtual eSourcePlatformRepositoryFolders.REDCapCloudAppFolder REDCapCloud
         {
             get { return _redcapcloud; }
+        }
+
+        /// <summary>
+        /// The AcademicExtractJORDANPowerBI folder.
+        /// </summary>
+        [RepositoryFolder("d28595f4-d0f8-4041-99cb-02012f489d9e")]
+        public virtual eSourcePlatformRepositoryFolders.AcademicExtractJORDANPowerBIAppFolder AcademicExtractJORDANPowerBI
+        {
+            get { return _academicextractjordanpowerbi; }
         }
     }
 
@@ -484,6 +495,72 @@ namespace eSourcePlatform
                 get
                 {
                     return _saveandexitInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AcademicExtractJORDANPowerBIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d28595f4-d0f8-4041-99cb-02012f489d9e")]
+        public partial class AcademicExtractJORDANPowerBIAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _powerbiInfo;
+
+            /// <summary>
+            /// Creates a new AcademicExtractJORDANPowerBI  folder.
+            /// </summary>
+            public AcademicExtractJORDANPowerBIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AcademicExtractJORDANPowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "d28595f4-d0f8-4041-99cb-02012f489d9e", "")
+            {
+                _powerbiInfo = new RepoItemInfo(this, "PowerBI", ".//span[@innertext='Power BI']", 30000, null, "4949408c-6948-4081-8adb-20d463ccf0f9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d28595f4-d0f8-4041-99cb-02012f489d9e")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d28595f4-d0f8-4041-99cb-02012f489d9e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PowerBI item.
+            /// </summary>
+            [RepositoryItem("4949408c-6948-4081-8adb-20d463ccf0f9")]
+            public virtual Ranorex.SpanTag PowerBI
+            {
+                get
+                {
+                    return _powerbiInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PowerBI item info.
+            /// </summary>
+            [RepositoryItemInfo("4949408c-6948-4081-8adb-20d463ccf0f9")]
+            public virtual RepoItemInfo PowerBIInfo
+            {
+                get
+                {
+                    return _powerbiInfo;
                 }
             }
         }

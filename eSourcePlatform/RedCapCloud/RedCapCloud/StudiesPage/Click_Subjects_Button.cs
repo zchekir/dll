@@ -99,8 +99,8 @@ namespace RedCapCloud.StudiesPage
             repo.REDCapCloud.SubjectsButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5s.", new RecordItemIndex(3));
-            Delay.Duration(1500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
             
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
             Delay.Milliseconds(0);
