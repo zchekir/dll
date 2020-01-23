@@ -55,7 +55,7 @@ rxversion="8.3">
 		<var
 		id="6564ccb3-9f1f-49b3-bf17-fc9f45477b9e"
 		name="TestIdentifier">
-			CCFA4AE8-0BB3-4296-87B6-FCFEFDE3C2B0
+			2cec3a6c-deec-49bd-beb5-4663e14f6031
 		</var>
 	</variables>
 	<recorditems>
@@ -126,6 +126,82 @@ rxversion="8.3">
 				<argument
 				argname="testIdentifier"
 				id="b07c7ca5-fe65-41d6-b1d3-eef1a5877b67"
+				variable="TestIdentifier">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="SQLUtility"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateTestIdentifierMove"
+		namespace="engine.Helpers"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6d5175e9-104a-4225-bf96-9ea049a8219b">
+				<argument
+				argname="dbserver"
+				id="678394cc-0582-4a46-b399-74def075cff0"
+				variable="DBserver">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="database"
+				id="ef658813-be8d-4db3-8961-3ba89c635046"
+				variable="Database">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="username"
+				id="f639c378-1f96-4b58-9c51-e2f88a2a4751"
+				variable="dbUsername">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="password"
+				id="55085645-633e-4eb6-b5f6-9ccfec5174e5"
+				variable="dbPassword">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="authentication"
+				id="117f50f0-a6a4-491e-b36d-40d95123c2f1"
+				variable="Authentication">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="testIdentifier"
+				id="268d86ca-3aa6-412e-9271-8fed9dfbbaf5"
 				variable="TestIdentifier">
 					<argvaluetype>
 						System.String
