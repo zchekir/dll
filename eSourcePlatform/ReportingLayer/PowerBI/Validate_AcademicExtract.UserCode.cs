@@ -38,9 +38,9 @@ namespace ReportingLayer.PowerBI
         	while ( !ProtocolID.Exists(new Duration(5000))) {
         		
         		Delay.Seconds(2);
-        	       	
-        		Report.Success("Validate", "Academic Extract displayed successfully");
-        	    }
+        	       		
+        	}
+        	Report.Success("Validate", "Academic Extract displayed successfully");
         }
 
     }

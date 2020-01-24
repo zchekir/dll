@@ -39,8 +39,8 @@ namespace ReportingLayer.PowerBI
 				
 				Delay.Seconds(2);
 				
-				Report.Success("Validate", "Standard Extract displayed successfully");
 			}
+			Report.Success("Validate", "Standard Extract displayed successfully");
 		}
 
 	}
