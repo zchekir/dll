@@ -226,6 +226,18 @@
       <id>49ba2725-1cb9-4482-804e-672204af9ae4</id>
       <BoundTo>9f87f60d-26a5-4baf-97c8-400491dec388</BoundTo>
     </Compile>
+    <Compile Include="ClickFindByCriteria.cs">
+      <BoundTo>488c6eb7-6048-48a1-9049-0b1ddf7a2c7c</BoundTo>
+      <DependentUpon>ClickFindByCriteria.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>219187ac-3df2-4cfa-b22b-d45761a1153b</id>
+    </Compile>
+    <Compile Include="ClickFindByCriteria.UserCode.cs">
+      <BoundTo>488c6eb7-6048-48a1-9049-0b1ddf7a2c7c</BoundTo>
+      <DependentUpon>ClickFindByCriteria.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a640960b-63ed-4a42-8da6-82d3405b02c0</id>
+    </Compile>
     <Compile Include="CSPLogOut.cs">
       <BoundTo>9faa5ebd-25af-4b86-96d0-037daf3d503c</BoundTo>
       <DependentUpon>CSPLogOut.rxrec</DependentUpon>
@@ -751,6 +763,18 @@
       <UserCode>true</UserCode>
       <id>7d1c91a2-8111-481a-99b4-22e4985ba80a</id>
     </Compile>
+    <Compile Include="SelectStudy.cs">
+      <BoundTo>5f5f98ac-d94f-4b25-a0d3-6b6eb9d46f8f</BoundTo>
+      <DependentUpon>SelectStudy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dca21ca-899d-46b8-810d-f0979f131238</id>
+    </Compile>
+    <Compile Include="SelectStudy.UserCode.cs">
+      <BoundTo>5f5f98ac-d94f-4b25-a0d3-6b6eb9d46f8f</BoundTo>
+      <DependentUpon>SelectStudy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9b80a70-d6d5-4d95-a167-0d484f7edb4a</id>
+    </Compile>
     <Compile Include="single sign in\ClickLogin.cs">
       <DependentUpon>ClickLogin.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -895,6 +919,30 @@
       <UserCode>true</UserCode>
       <id>370faa91-f4ca-43f2-ac7f-83fb0288f1b1</id>
     </Compile>
+    <Compile Include="Subject.cs">
+      <BoundTo>1b9a8136-0174-48e1-a67e-c5fbfaa4e60d</BoundTo>
+      <DependentUpon>Subject.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>903727ff-dff4-4c44-9a11-a1649098c336</id>
+    </Compile>
+    <Compile Include="Subject.UserCode.cs">
+      <BoundTo>1b9a8136-0174-48e1-a67e-c5fbfaa4e60d</BoundTo>
+      <DependentUpon>Subject.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd925e85-3593-4b92-bc15-128615615cd4</id>
+    </Compile>
+    <Compile Include="Visit.cs">
+      <BoundTo>e47075ff-5d51-425d-9631-ebda26ff3d45</BoundTo>
+      <DependentUpon>Visit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6f8232e-c5be-4a04-8da9-e5a7a4e489d1</id>
+    </Compile>
+    <Compile Include="Visit.UserCode.cs">
+      <BoundTo>e47075ff-5d51-425d-9631-ebda26ff3d45</BoundTo>
+      <DependentUpon>Visit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>517c6f6c-7afb-471c-8c54-08f9d54845d4</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -934,6 +982,11 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>9f87f60d-26a5-4baf-97c8-400491dec388</id>
       <recordtableid>7bceac10-42f9-4317-8de5-3e37a1b5b379</recordtableid>
+    </None>
+    <None Include="ClickFindByCriteria.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>488c6eb7-6048-48a1-9049-0b1ddf7a2c7c</id>
+      <recordtableid>4bd6b653-9d23-4171-8284-dabedc95e86b</recordtableid>
     </None>
     <None Include="CSPLogOut.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
@@ -1161,6 +1214,11 @@
       <id>7fc408fd-445c-47dc-9f8b-f16a4cfc914c</id>
       <recordtableid>221b9d95-5d03-4937-95dd-4c60f7458a89</recordtableid>
     </None>
+    <None Include="SelectStudy.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>5f5f98ac-d94f-4b25-a0d3-6b6eb9d46f8f</id>
+      <recordtableid>e9c0ac00-3de7-4009-828c-ea03cc80ff53</recordtableid>
+    </None>
     <None Include="single sign in\ClickLogin.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>1f5210c5-a48f-4ae6-8012-9fa0f06f9cbc</id>
@@ -1220,6 +1278,16 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>e2981768-c740-4ab1-aa6c-456e43192464</id>
       <recordtableid>34652f57-617b-4b72-bbb8-4c352b277962</recordtableid>
+    </None>
+    <None Include="Subject.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>1b9a8136-0174-48e1-a67e-c5fbfaa4e60d</id>
+      <recordtableid>bbb54d40-e690-4e1c-be30-f42d9747e0a1</recordtableid>
+    </None>
+    <None Include="Visit.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>e47075ff-5d51-425d-9631-ebda26ff3d45</id>
+      <recordtableid>13ce0938-dd23-49fa-b60a-58aa429a120f</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

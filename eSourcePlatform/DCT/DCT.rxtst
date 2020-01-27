@@ -282,7 +282,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="c992a46d-dcce-41a3-832d-549f4275a62a ">
+					value="">
 					</param>
 					<param
 					name="Key"
@@ -294,35 +294,23 @@ rxversion="8.3">
 					</param>
 					<param
 					name="DCTSubject"
-					value="">
+					value="SC-7227">
 					</param>
 					<param
 					name="Study"
-					value="Orr_201911041306">
-					</param>
-					<param
-					name="OctopusURL"
-					value="https://octopus.cogstate.com/">
+					value="AutomationStudy">
 					</param>
 					<param
 					name="DCT_Version"
 					value="1.1.0-rc.988">
 					</param>
 					<param
-					name="OctopustUsername"
-					value="zchekir@cogstate.com">
-					</param>
-					<param
-					name="OctopusPassword"
-					value="Cogstate2016">
-					</param>
-					<param
 					name="RCC_Study_Name"
-					value="zktest 0001">
+					value="">
 					</param>
 					<param
 					name="SubjectNumber"
-					value="screen_1">
+					value="">
 					</param>
 					<param
 					name="AzureURL"
@@ -351,6 +339,10 @@ rxversion="8.3">
 					<param
 					name="VersionDeployed"
 					value="1.11.0">
+					</param>
+					<param
+					name="Visit"
+					value="visit1">
 					</param>
 				</parameters>
 			</testcase>
@@ -516,6 +508,12 @@ rxversion="8.3">
 					variablename="SubjectNumber">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="4494c70b-ec28-4825-9e79-843242f86c81"
+			name="ClickFindByCriteria"
+			ref="4bd6b653-9d23-4171-8284-dabedc95e86b"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="4751f434-d272-4185-84c8-8a9b623dda03"
@@ -813,6 +811,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="81132ae0-40b5-4fbe-ab52-38e4353687c2"
+			name="Visit"
+			ref="13ce0938-dd23-49fa-b60a-58aa429a120f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Visit"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="99fae7ed-3ff9-463f-80e3-6bb9cd23a42e"
+					variablename="visit1">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="81b746a9-45cf-456b-8373-d37af80754ed"
 			maxrange="0"
@@ -944,14 +956,28 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8cfeb4e9-af11-4e7b-8ab9-fe2e8d13dcca"
+			name="SelectStudy"
+			ref="e9c0ac00-3de7-4009-828c-ea03cc80ff53"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Study"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="f181992b-5848-45bd-b7b4-c20790faddb3"
+					variablename="StudyName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
 			name="EnterPassword"
 			ref="73fe110e-198a-4073-aaac-d97e2fa59e5d"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="OctopusPassword"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					dataname="CSPPassword"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="e3078aeb-57b5-4e52-b373-20e5fca1b1ba"
 					variablename="DCT_Password">
 					</var>
@@ -1175,6 +1201,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="bae5f56b-527c-49c5-a650-c3597f30a7cf"
+			name="CfindByCriteria">
+			</testcase>
 			<smartfoldernode
 			id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec"
 			name="PrimaryKey_DCT">
@@ -1211,13 +1241,17 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="OctopustUsername"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					dataname="CSPUsername"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="d0e07d16-6eb8-40a3-aa90-8b3a394a6391"
 					variablename="DCT_USERNAME">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="c0d6bc80-5258-4d7b-8654-b86961360de9"
+			name="ChooseStudy_DCT">
+			</smartfoldernode>
 			<testmodule
 			id="c1c0b14f-0fa8-42f9-b9dd-d4a737407406"
 			name="Click_AddEvent_Button"
@@ -1237,6 +1271,20 @@ rxversion="8.3">
 			id="c2d75985-5199-4bdd-be81-00b092003e2d"
 			name="ValidateTestIdentifierMove_DCT">
 			</smartfoldernode>
+			<testmodule
+			id="c4fd08db-c6b3-42dd-8e4d-8dbdf966e239"
+			name="Subject"
+			ref="bbb54d40-e690-4e1c-be30-f42d9747e0a1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DCTSubject"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="7db035f8-8c46-4a44-9ec3-0104df4715f8"
+					variablename="Subject1">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="c635cb9b-3eba-46f5-90e0-978fc128125c"
 			name="ClickNextButton"
@@ -1324,6 +1372,10 @@ rxversion="8.3">
 			name="Validate_Primary">
 			</testcase>
 			<testcase
+			id="cd928523-e04d-4468-bb10-969d941ab4dd"
+			name="ChooseSubject">
+			</testcase>
+			<testcase
 			id="ce514155-4e5f-4393-8f46-81a9e929ea2e"
 			name="Test_Primary">
 			</testcase>
@@ -1343,6 +1395,10 @@ rxversion="8.3">
 			id="d6a8ed19-df2c-47dd-8e8b-d1def21197fc"
 			name="ClearPrimary_DCT">
 			</smartfoldernode>
+			<testcase
+			id="d92e5488-d303-4096-a1d0-479e5d2b57b3"
+			name="ChooseStudy">
+			</testcase>
 			<testmodule
 			id="db1beae5-2b25-406d-9ae6-3efd250562c2"
 			name="Click_FindButton"
@@ -1409,6 +1465,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e2b442b0-4d53-4420-b3ca-7dca2b2fe5bc"
+			name="ChooseVisit">
+			</testcase>
 			<testcase
 			id="e36938b4-3f31-4c7d-9165-3a073252c310"
 			name="Search_RCC_Study">
@@ -1809,6 +1869,42 @@ rxversion="8.3">
 							id="e09f41ba-4e25-46de-98da-90de7fbc8fd8"
 							name="teardown">
 							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="c0d6bc80-5258-4d7b-8654-b86961360de9"
+						name="ChooseStudy_DCT">
+							<testcase
+							id="d92e5488-d303-4096-a1d0-479e5d2b57b3"
+							name="ChooseStudy">
+								<testmodule
+								id="8cfeb4e9-af11-4e7b-8ab9-fe2e8d13dcca"
+								name="SelectStudy">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="cd928523-e04d-4468-bb10-969d941ab4dd"
+							name="ChooseSubject">
+								<testmodule
+								id="c4fd08db-c6b3-42dd-8e4d-8dbdf966e239"
+								name="Subject">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="e2b442b0-4d53-4420-b3ca-7dca2b2fe5bc"
+							name="ChooseVisit">
+								<testmodule
+								id="81132ae0-40b5-4fbe-ab52-38e4353687c2"
+								name="Visit">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="bae5f56b-527c-49c5-a650-c3597f30a7cf"
+							name="CfindByCriteria">
+								<testmodule
+								id="4494c70b-ec28-4825-9e79-843242f86c81"
+								name="ClickFindByCriteria">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="6a543fb1-3315-4057-82be-54c1b0b91690"
@@ -2316,16 +2412,52 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="04939054-fa65-495b-a740-482356616b3b">
-			</testcontainer>
-			<testcontainer
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
 			</testcontainer>
 			<testcontainer
-			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc">
+			id="58901188-271c-4822-8f92-e8784cdd1036">
+			</testcontainer>
+			<testcontainer
+			id="6a543fb1-3315-4057-82be-54c1b0b91690">
+			</testcontainer>
+			<testcontainer
+			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
+			</testcontainer>
+			<testcontainer
+			id="853a6bba-9006-4cea-915e-ee1a0a266d20">
+			</testcontainer>
+			<testcontainer
+			id="8701be3b-9559-4502-bc0c-635399be9d4c">
+			</testcontainer>
+			<testcontainer
+			id="aa43591e-302d-494e-aafe-3d9e88fb4c8d">
+			</testcontainer>
+			<testcontainer
+			id="bae5f56b-527c-49c5-a650-c3597f30a7cf">
+			</testcontainer>
+			<testcontainer
+			id="c0d6bc80-5258-4d7b-8654-b86961360de9">
+			</testcontainer>
+			<testcontainer
+			id="cd928523-e04d-4468-bb10-969d941ab4dd">
 			</testcontainer>
 			<testcontainer
 			id="d4b8534f-2794-473e-9747-934afc8f284d">
+			</testcontainer>
+			<testcontainer
+			id="d92e5488-d303-4096-a1d0-479e5d2b57b3">
+			</testcontainer>
+			<testcontainer
+			id="e2b442b0-4d53-4420-b3ca-7dca2b2fe5bc">
+			</testcontainer>
+			<testcontainer
+			id="e4966f0f-a50b-4f61-bcc3-c2865b6d79d7">
+			</testcontainer>
+			<testcontainer
+			id="e6d436ed-0a07-4913-a5f0-3deb7c676360">
+			</testcontainer>
+			<testcontainer
+			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
