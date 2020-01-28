@@ -106,7 +106,7 @@ namespace DCT.RCC_Page
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report_Log(DCTDOM);
+            Report_Log();
             Delay.Milliseconds(0);
             
             Try_Select_Subject(repo.DataCleaningTool.DestinationSubjectFieldInfo, repo.DataCleaningTool.NoOptionsItemInfo);

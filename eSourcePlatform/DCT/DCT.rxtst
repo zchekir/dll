@@ -81,6 +81,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="09d4997f-f01b-42a7-a61a-79019ecc3372"
+			name="Click_SaveAndEnter_Data"
+			ref="a92cc279-94e1-4aaa-877b-436b68d9c101"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="0a065941-10c5-46a1-bbb5-9a67c5cd47e2"
 			name="TestIdentifier">
@@ -115,7 +129,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="0f02286d-1a01-421d-ad09-ccef43c4bc43"
-			name="Submit"
+			name="Click_Submit"
 			ref="12c9321e-d57b-4f26-abb0-e494f761864b"
 			type="Recording">
 			</testmodule>
@@ -427,26 +441,6 @@ rxversion="8.3">
 			id="35be04f7-0868-499b-af6b-ab1b61b9775d"
 			name="UseExistingStudyRCC">
 			</smartfoldernode>
-			<testmodule
-			id="36747eb8-2709-4de8-b8d2-a76ff745984a"
-			name="RCC_ExistingStudy"
-			ref="01782ea1-b135-47ac-aa9f-bc0f02741b5b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
-					variablename="RCCDOM">
-					</var>
-					<var
-					dataname="ExistingStudy"
-					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
-					variableid="5923afdb-cf3f-4533-bba3-55989ecd9cf6"
-					variablename="ExistingStudy">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="373ffbb5-abd3-4c23-bf09-ef84586a9d78"
 			name="Add_Subject">
@@ -587,20 +581,6 @@ rxversion="8.3">
 			id="4985cbfb-9132-4e0b-bcae-a526c956e8c6"
 			name="teardown">
 			</teardown>
-			<testmodule
-			id="4b124841-deb9-4ba7-9c1f-e842289fd99c"
-			name="SaveAndEnterData"
-			ref="221b9d95-5d03-4937-95dd-4c60f7458a89"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="4be7e656-7a20-4f28-8dc3-df034fc89773"
 			name="teardown">
@@ -616,26 +596,6 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="5052406a-9fba-43d7-a591-f3499830f4a0"
-			name="OpenStudy"
-			ref="83773ca8-ef21-4bac-bf66-4fa324b1b30b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
-					variablename="RCCDOM">
-					</var>
-					<var
-					dataname="ExistingStudy"
-					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
-					variableid="ee00695b-ccc6-4286-ad8b-942dd6f880b2"
-					variablename="ExistingStudy">
 					</var>
 				</databinding>
 			</testmodule>
@@ -670,6 +630,26 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="51aa90ac-6aef-47f4-8090-701b015d97f5"
+			name="Search_ExistingStudy"
+			ref="27faacaa-901a-44bb-b9b9-d5d0ad0fc35e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+					<var
+					dataname="ExistingStudy"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="c1090e22-62f9-48cb-b0ee-0cc84c6451f6"
+					variablename="ExistingStudy">
 					</var>
 				</databinding>
 			</testmodule>
@@ -771,7 +751,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="767091a6-5de4-4726-9073-d5d0ec27ec9a"
-			name="ClickNo"
+			name="Click_NoButton"
 			ref="94c76c7b-5165-44e9-93e8-337c36c1af4f"
 			type="Recording">
 			</testmodule>
@@ -971,7 +951,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
-			name="EnterPassword"
+			name="Enter_Password"
 			ref="73fe110e-198a-4073-aaac-d97e2fa59e5d"
 			type="Recording">
 				<databinding>
@@ -1236,7 +1216,7 @@ rxversion="8.3">
 			</modulegroup>
 			<testmodule
 			id="bf48379d-3b0f-4766-9f75-ad79ecd75470"
-			name="EnterEmail"
+			name="Enter_Email"
 			ref="53807fba-9413-4799-85c8-de7828cb5bd1"
 			type="Recording">
 				<databinding>
@@ -1287,7 +1267,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="c635cb9b-3eba-46f5-90e0-978fc128125c"
-			name="ClickNextButton"
+			name="Click_NextButton"
 			ref="de3b4f7f-7e50-4fdb-9a6b-e3672dd80041"
 			type="Recording">
 			</testmodule>
@@ -1515,6 +1495,26 @@ rxversion="8.3">
 			minrange="0"
 			name="Loginto_DCT">
 			</smartfoldernode>
+			<testmodule
+			id="e70ac2b9-28af-4391-9f57-e7369eefecab"
+			name="Click_ExistingStudy"
+			ref="1637cb94-17f8-409e-accf-106e00f4256e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+					<var
+					dataname="ExistingStudy"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="2ce5e706-e90d-4df4-8420-c32c11ef8eae"
+					variablename="ExistingStudy">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="e92e3542-ce70-4b5d-bbe2-b65c77456b06"
 			name="teardown">
@@ -1673,16 +1673,16 @@ rxversion="8.3">
 							id="e36938b4-3f31-4c7d-9165-3a073252c310"
 							name="Search_RCC_Study">
 								<testmodule
-								id="36747eb8-2709-4de8-b8d2-a76ff745984a"
-								name="RCC_ExistingStudy">
+								id="51aa90ac-6aef-47f4-8090-701b015d97f5"
+								name="Search_ExistingStudy">
 								</testmodule>
 							</testcase>
 							<testcase
 							id="d6608ccf-e3ee-4482-9435-096321557190"
 							name="Open_Study">
 								<testmodule
-								id="5052406a-9fba-43d7-a591-f3499830f4a0"
-								name="OpenStudy">
+								id="e70ac2b9-28af-4391-9f57-e7369eefecab"
+								name="Click_ExistingStudy">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1717,8 +1717,8 @@ rxversion="8.3">
 								name="Select_Language">
 								</testmodule>
 								<testmodule
-								id="4b124841-deb9-4ba7-9c1f-e842289fd99c"
-								name="SaveAndEnterData">
+								id="09d4997f-f01b-42a7-a61a-79019ecc3372"
+								name="Click_SaveAndEnter_Data">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1830,7 +1830,7 @@ rxversion="8.3">
 							name="Enter_Username">
 								<testmodule
 								id="bf48379d-3b0f-4766-9f75-ad79ecd75470"
-								name="EnterEmail">
+								name="Enter_Email">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1838,7 +1838,7 @@ rxversion="8.3">
 							name="Click_NextButton">
 								<testmodule
 								id="c635cb9b-3eba-46f5-90e0-978fc128125c"
-								name="ClickNextButton">
+								name="Click_NextButton">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1846,7 +1846,7 @@ rxversion="8.3">
 							name="Enter_Password">
 								<testmodule
 								id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
-								name="EnterPassword">
+								name="Enter_Password">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1854,7 +1854,7 @@ rxversion="8.3">
 							name="Click_SubmitButton">
 								<testmodule
 								id="0f02286d-1a01-421d-ad09-ccef43c4bc43"
-								name="Submit">
+								name="Click_Submit">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1862,7 +1862,7 @@ rxversion="8.3">
 							name="Click_NoButton">
 								<testmodule
 								id="767091a6-5de4-4726-9073-d5d0ec27ec9a"
-								name="ClickNo">
+								name="Click_NoButton">
 								</testmodule>
 							</testcase>
 							<teardown
@@ -2262,7 +2262,7 @@ rxversion="8.3">
 		<DataSource
 		id="36c84863-c4e2-4980-8687-22e322546024"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="3"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

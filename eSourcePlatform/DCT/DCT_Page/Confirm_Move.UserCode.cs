@@ -31,27 +31,7 @@ namespace DCT.DCT_Page
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void Validation(string TestIdn)
-        {
-             Delay.Milliseconds(1000);
-        	 InputTag EnterTestidentifier=" //input[@id='findByAssessmentId']";
-             EnterTestidentifier.Click();
-        	 EnterTestidentifier.PressKeys(TestIdn);
-        	 
-        	 //Click Button:
-        	  Delay.Milliseconds(500);
-        	  WebElement ClickFind ="//span[@innertext='Find By Assessment Id']";
-        	  ClickFind.Click();
-        }
-
-        public void Report_Screenshot_DataCleaningTool(RepoItemInfo webdocumentInfo)
-        {
-            Report.Screenshot(ReportLevel.Info, "TestIdentifier Moved Suuceessfully", "", webdocumentInfo.FindAdapter<WebDocument>(), false);
-        }
-        
-       
+        }     
 
     }
 }

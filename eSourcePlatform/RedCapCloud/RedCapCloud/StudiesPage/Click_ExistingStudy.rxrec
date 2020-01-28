@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1637cb94-17f8-409e-accf-106e00f4256e"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_ExistingStudy
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_ExistingStudy"
+	namespace="RedCapCloud.StudiesPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1bc8e187-2e4d-45fe-baba-c0b8399524ce"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="792cfd2a-b2c0-458d-850a-67256e48782d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext=$RCC_Study_Name]
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="2500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_ExistingStudy.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

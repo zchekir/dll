@@ -318,14 +318,14 @@ namespace DCT
             RepoItemInfo _invalidbuttonInfo;
             RepoItemInfo _restorebutton_Info;
             RepoItemInfo _findbyassessmentidbuttonInfo;
-            RepoItemInfo _openresultsInfo;
+            RepoItemInfo _searchresultInfo;
             RepoItemInfo _clickconfirmInfo;
             RepoItemInfo _clickmakeprimaryInfo;
-            RepoItemInfo _clickmovebuttonInfo;
-            RepoItemInfo _entertestidentifierInfo;
-            RepoItemInfo _clickokInfo;
+            RepoItemInfo _movebuttonInfo;
+            RepoItemInfo _entertestidentifierfieldInfo;
+            RepoItemInfo _okbuttonInfo;
             RepoItemInfo _clearprimaryInfo;
-            RepoItemInfo _confirminvalidateInfo;
+            RepoItemInfo _confirmbuttonInfo;
             RepoItemInfo _destinationvisitfieldInfo;
             RepoItemInfo _destinationsubjectfieldInfo;
             RepoItemInfo _nooptionsitemInfo;
@@ -341,14 +341,14 @@ namespace DCT
                 _invalidbuttonInfo = new RepoItemInfo(this, "InvalidButton", ".//button[#'action-row-invalidate-button']", 30000, null, "d51ef50b-cc93-42e6-9669-6ad2db192605");
                 _restorebutton_Info = new RepoItemInfo(this, "RestoreButton_", ".//button[#'action-row-restore-button']/span[@innertext='restore']", 30000, null, "dcad520b-c5c1-43c8-84e3-9c49e20656ca");
                 _findbyassessmentidbuttonInfo = new RepoItemInfo(this, "FindByAssessmentIdButton", ".//div[#'root']/div/div/div[2]/div[2]/?/?/span[@innertext='Find By Assessment Id']", 30000, null, "98cfba2b-c4c5-488d-8805-d8e0193ff5bb");
-                _openresultsInfo = new RepoItemInfo(this, "OpenResults", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2020-']", 30000, null, "2f9f79e7-580e-4755-a6bc-f7137da21cde");
+                _searchresultInfo = new RepoItemInfo(this, "SearchResult", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2020-']", 30000, null, "2f9f79e7-580e-4755-a6bc-f7137da21cde");
                 _clickconfirmInfo = new RepoItemInfo(this, "ClickConfirm", ".//button[#'move-confirmation-button-next']", 30000, null, "67c5cfc6-aa95-441f-bd70-e6ac84c9e2f1");
                 _clickmakeprimaryInfo = new RepoItemInfo(this, "ClickMakePrimary", ".//button[#'action-row-make-primary-button']/span[@innertext='make primary']", 30000, null, "8a0da0d6-6903-467a-8b3a-441a0225f30c");
-                _clickmovebuttonInfo = new RepoItemInfo(this, "ClickMoveButton", ".//button[#'action-row-move-button']/span[@innertext='move']", 30000, null, "4475259d-22a2-4512-a4b1-742099f24bb9");
-                _entertestidentifierInfo = new RepoItemInfo(this, "EnterTestIdentifier", ".//input[#'findByAssessmentId']", 30000, null, "86244d71-2a9e-4044-a2a8-18c3c1d6851b");
-                _clickokInfo = new RepoItemInfo(this, "ClickOk", ".//button[#'move-selection-button-next']/span[@innertext='ok']", 30000, null, "4ac58619-4351-44b7-8087-c4e6656d9855");
+                _movebuttonInfo = new RepoItemInfo(this, "MoveButton", ".//button[#'action-row-move-button']/span[@innertext='move']", 30000, null, "4475259d-22a2-4512-a4b1-742099f24bb9");
+                _entertestidentifierfieldInfo = new RepoItemInfo(this, "EnterTestIdentifierField", ".//input[#'findByAssessmentId']", 30000, null, "86244d71-2a9e-4044-a2a8-18c3c1d6851b");
+                _okbuttonInfo = new RepoItemInfo(this, "OKButton", ".//button[#'move-selection-button-next']/span[@innertext='ok']", 30000, null, "4ac58619-4351-44b7-8087-c4e6656d9855");
                 _clearprimaryInfo = new RepoItemInfo(this, "ClearPrimary", ".//button[#'action-row-clear-primary-button']/span[@innertext='clear primary']", 30000, null, "e0ce542a-7e79-45b6-ba96-42c007565214");
-                _confirminvalidateInfo = new RepoItemInfo(this, "ConfirmInvalidate", ".//span[@innertext='confirm']", 30000, null, "6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2");
+                _confirmbuttonInfo = new RepoItemInfo(this, "ConfirmButton", ".//span[@innertext='confirm']", 30000, null, "6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2");
                 _destinationvisitfieldInfo = new RepoItemInfo(this, "DestinationVisitField", ".//label[@innertext='Visit']", 30000, null, "5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34");
                 _destinationsubjectfieldInfo = new RepoItemInfo(this, "DestinationSubjectField", ".//label[@innertext='Subject']", 30000, null, "6bccceed-5896-4d21-9e92-2b50db29405f");
                 _nooptionsitemInfo = new RepoItemInfo(this, "NoOptionsItem", ".//body//div//p[@innertext='No Options']", 30000, null, "596463e8-50fb-4832-8fe5-c3358e0a090d");
@@ -499,26 +499,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The OpenResults item.
+            /// The SearchResult item.
             /// </summary>
             [RepositoryItem("2f9f79e7-580e-4755-a6bc-f7137da21cde")]
-            public virtual Ranorex.TdTag OpenResults
+            public virtual Ranorex.TdTag SearchResult
             {
                 get
                 {
-                    return _openresultsInfo.CreateAdapter<Ranorex.TdTag>(true);
+                    return _searchresultInfo.CreateAdapter<Ranorex.TdTag>(true);
                 }
             }
 
             /// <summary>
-            /// The OpenResults item info.
+            /// The SearchResult item info.
             /// </summary>
             [RepositoryItemInfo("2f9f79e7-580e-4755-a6bc-f7137da21cde")]
-            public virtual RepoItemInfo OpenResultsInfo
+            public virtual RepoItemInfo SearchResultInfo
             {
                 get
                 {
-                    return _openresultsInfo;
+                    return _searchresultInfo;
                 }
             }
 
@@ -571,74 +571,74 @@ namespace DCT
             }
 
             /// <summary>
-            /// The ClickMoveButton item.
+            /// The MoveButton item.
             /// </summary>
             [RepositoryItem("4475259d-22a2-4512-a4b1-742099f24bb9")]
-            public virtual Ranorex.SpanTag ClickMoveButton
+            public virtual Ranorex.SpanTag MoveButton
             {
                 get
                 {
-                    return _clickmovebuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _movebuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClickMoveButton item info.
+            /// The MoveButton item info.
             /// </summary>
             [RepositoryItemInfo("4475259d-22a2-4512-a4b1-742099f24bb9")]
-            public virtual RepoItemInfo ClickMoveButtonInfo
+            public virtual RepoItemInfo MoveButtonInfo
             {
                 get
                 {
-                    return _clickmovebuttonInfo;
+                    return _movebuttonInfo;
                 }
             }
 
             /// <summary>
-            /// The EnterTestIdentifier item.
+            /// The EnterTestIdentifierField item.
             /// </summary>
             [RepositoryItem("86244d71-2a9e-4044-a2a8-18c3c1d6851b")]
-            public virtual Ranorex.InputTag EnterTestIdentifier
+            public virtual Ranorex.InputTag EnterTestIdentifierField
             {
                 get
                 {
-                    return _entertestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _entertestidentifierfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The EnterTestIdentifier item info.
+            /// The EnterTestIdentifierField item info.
             /// </summary>
             [RepositoryItemInfo("86244d71-2a9e-4044-a2a8-18c3c1d6851b")]
-            public virtual RepoItemInfo EnterTestIdentifierInfo
+            public virtual RepoItemInfo EnterTestIdentifierFieldInfo
             {
                 get
                 {
-                    return _entertestidentifierInfo;
+                    return _entertestidentifierfieldInfo;
                 }
             }
 
             /// <summary>
-            /// The ClickOk item.
+            /// The OKButton item.
             /// </summary>
             [RepositoryItem("4ac58619-4351-44b7-8087-c4e6656d9855")]
-            public virtual Ranorex.SpanTag ClickOk
+            public virtual Ranorex.SpanTag OKButton
             {
                 get
                 {
-                    return _clickokInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _okbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClickOk item info.
+            /// The OKButton item info.
             /// </summary>
             [RepositoryItemInfo("4ac58619-4351-44b7-8087-c4e6656d9855")]
-            public virtual RepoItemInfo ClickOkInfo
+            public virtual RepoItemInfo OKButtonInfo
             {
                 get
                 {
-                    return _clickokInfo;
+                    return _okbuttonInfo;
                 }
             }
 
@@ -667,26 +667,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The ConfirmInvalidate item.
+            /// The ConfirmButton item.
             /// </summary>
             [RepositoryItem("6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2")]
-            public virtual Ranorex.SpanTag ConfirmInvalidate
+            public virtual Ranorex.SpanTag ConfirmButton
             {
                 get
                 {
-                    return _confirminvalidateInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _confirmbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ConfirmInvalidate item info.
+            /// The ConfirmButton item info.
             /// </summary>
             [RepositoryItemInfo("6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2")]
-            public virtual RepoItemInfo ConfirmInvalidateInfo
+            public virtual RepoItemInfo ConfirmButtonInfo
             {
                 get
                 {
-                    return _confirminvalidateInfo;
+                    return _confirmbuttonInfo;
                 }
             }
 
@@ -1071,8 +1071,6 @@ namespace DCT
         [RepositoryFolder("8c57a700-52e3-43b0-bb42-688fd9e5c8b2")]
         public partial class REDCapCloudAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _searchstudyinrccInfo;
-            RepoItemInfo _existingrccstudyInfo;
             RepoItemInfo _clicksubjectInfo;
             RepoItemInfo _opensubjectInfo;
             RepoItemInfo _openevent_Info;
@@ -1088,7 +1086,6 @@ namespace DCT
             RepoItemInfo _sitesbuttonInfo;
             RepoItemInfo _selectsiteInfo;
             RepoItemInfo _subjectnumberInfo;
-            RepoItemInfo _saveandenterdatabuttonInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -1096,8 +1093,6 @@ namespace DCT
             public REDCapCloudAppFolder(RepoGenBaseFolder parentFolder) :
                     base("REDCapCloud", "/dom[@domain=$RCCDOM]", parentFolder, 30000, null, false, "8c57a700-52e3-43b0-bb42-688fd9e5c8b2", "")
             {
-                _searchstudyinrccInfo = new RepoItemInfo(this, "SearchStudyInRCC", ".//input[#'filtersWidget_userInputWidget_studyName']", 30000, null, "1aaeabd0-d27c-4203-9346-f994a87bad37");
-                _existingrccstudyInfo = new RepoItemInfo(this, "ExistingRCCStudy", ".//div[@innertext=$ExistingStudy]", 30000, null, "e497ee0e-507a-42d4-8dbc-21b179383f59");
                 _clicksubjectInfo = new RepoItemInfo(this, "ClickSubject", ".//div[#'leftMenuButtons_navSubjects']", 30000, null, "e5549fed-7e0e-4f0c-a146-6e802d0e81db");
                 _opensubjectInfo = new RepoItemInfo(this, "OpenSubject", ".//div[@innertext~'2019']", 30000, null, "eae74a37-456a-4128-b4d8-a07f476da351");
                 _openevent_Info = new RepoItemInfo(this, "OpenEvent_", ".//div[@innertext='Visit1']", 30000, null, "e1819309-f7a5-4368-aa69-80d60e74fc27");
@@ -1113,7 +1108,6 @@ namespace DCT
                 _sitesbuttonInfo = new RepoItemInfo(this, "SitesButton", ".//button[#'enrollWidget_comboSites_button']", 30000, null, "9328280c-2573-49e2-a45f-27e9635d479a");
                 _selectsiteInfo = new RepoItemInfo(this, "selectSite", ".//a[@innertext~'2019']", 30000, null, "dead8fc1-6d55-4ecd-98eb-e5dc5365356e");
                 _subjectnumberInfo = new RepoItemInfo(this, "SubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "ed816dba-2dec-41ab-b191-edc9d053b81b");
-                _saveandenterdatabuttonInfo = new RepoItemInfo(this, "SaveAndEnterDataButton", ".//span[@innertext='Save and Enter Data']", 30000, null, "e09f0e9e-96f1-4788-bcbe-285c0983e4e3");
             }
 
             /// <summary>
@@ -1172,54 +1166,6 @@ namespace DCT
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SearchStudyInRCC item.
-            /// </summary>
-            [RepositoryItem("1aaeabd0-d27c-4203-9346-f994a87bad37")]
-            public virtual Ranorex.InputTag SearchStudyInRCC
-            {
-                get
-                {
-                    return _searchstudyinrccInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SearchStudyInRCC item info.
-            /// </summary>
-            [RepositoryItemInfo("1aaeabd0-d27c-4203-9346-f994a87bad37")]
-            public virtual RepoItemInfo SearchStudyInRCCInfo
-            {
-                get
-                {
-                    return _searchstudyinrccInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ExistingRCCStudy item.
-            /// </summary>
-            [RepositoryItem("e497ee0e-507a-42d4-8dbc-21b179383f59")]
-            public virtual Ranorex.DivTag ExistingRCCStudy
-            {
-                get
-                {
-                    return _existingrccstudyInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ExistingRCCStudy item info.
-            /// </summary>
-            [RepositoryItemInfo("e497ee0e-507a-42d4-8dbc-21b179383f59")]
-            public virtual RepoItemInfo ExistingRCCStudyInfo
-            {
-                get
-                {
-                    return _existingrccstudyInfo;
                 }
             }
 
@@ -1582,30 +1528,6 @@ namespace DCT
                     return _subjectnumberInfo;
                 }
             }
-
-            /// <summary>
-            /// The SaveAndEnterDataButton item.
-            /// </summary>
-            [RepositoryItem("e09f0e9e-96f1-4788-bcbe-285c0983e4e3")]
-            public virtual Ranorex.SpanTag SaveAndEnterDataButton
-            {
-                get
-                {
-                    return _saveandenterdatabuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SaveAndEnterDataButton item info.
-            /// </summary>
-            [RepositoryItemInfo("e09f0e9e-96f1-4788-bcbe-285c0983e4e3")]
-            public virtual RepoItemInfo SaveAndEnterDataButtonInfo
-            {
-                get
-                {
-                    return _saveandenterdatabuttonInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -1680,7 +1602,7 @@ namespace DCT
         [RepositoryFolder("29fb0691-ee86-4289-abe1-a78470d5da1d")]
         public partial class SignInAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _passwordinputInfo;
+            RepoItemInfo _passwordfieldInfo;
             RepoItemInfo _submitbuttonInfo;
 
             /// <summary>
@@ -1689,7 +1611,7 @@ namespace DCT
             public SignInAppFolder(RepoGenBaseFolder parentFolder) :
                     base("SignIn", "/dom[@domain='login.cogstate.com']", parentFolder, 30000, null, false, "29fb0691-ee86-4289-abe1-a78470d5da1d", "")
             {
-                _passwordinputInfo = new RepoItemInfo(this, "PasswordInput", ".//input[#'passwordInput']", 30000, null, "6f77d72f-6ee7-44c9-ba1d-66990d0876c6");
+                _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//input[#'passwordInput']", 30000, null, "6f77d72f-6ee7-44c9-ba1d-66990d0876c6");
                 _submitbuttonInfo = new RepoItemInfo(this, "SubmitButton", ".//span[#'submitButton']", 30000, null, "b35f274a-818c-48ad-9a9d-770748bd0a29");
             }
 
@@ -1718,26 +1640,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The PasswordInput item.
+            /// The PasswordField item.
             /// </summary>
             [RepositoryItem("6f77d72f-6ee7-44c9-ba1d-66990d0876c6")]
-            public virtual Ranorex.InputTag PasswordInput
+            public virtual Ranorex.InputTag PasswordField
             {
                 get
                 {
-                    return _passwordinputInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _passwordfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The PasswordInput item info.
+            /// The PasswordField item info.
             /// </summary>
             [RepositoryItemInfo("6f77d72f-6ee7-44c9-ba1d-66990d0876c6")]
-            public virtual RepoItemInfo PasswordInputInfo
+            public virtual RepoItemInfo PasswordFieldInfo
             {
                 get
                 {
-                    return _passwordinputInfo;
+                    return _passwordfieldInfo;
                 }
             }
 
@@ -1773,8 +1695,8 @@ namespace DCT
         public partial class SignInToYourAccountAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _idbtnbackInfo;
-            RepoItemInfo _enterusenameInfo;
-            RepoItemInfo _clicknextInfo;
+            RepoItemInfo _enterusernamefieldInfo;
+            RepoItemInfo _nextbuttonInfo;
             RepoItemInfo _selectaccountInfo;
             RepoItemInfo _useanotheraccountInfo;
 
@@ -1785,8 +1707,8 @@ namespace DCT
                     base("SignInToYourAccount", "/dom[@domain='login.microsoftonline.com']", parentFolder, 30000, null, false, "e1e54a0b-d167-4616-8313-fb55e887a8fc", "")
             {
                 _idbtnbackInfo = new RepoItemInfo(this, "IdBtnBack", ".//input[#'idBtn_Back']", 30000, null, "5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef");
-                _enterusenameInfo = new RepoItemInfo(this, "EnterUseName", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
-                _clicknextInfo = new RepoItemInfo(this, "ClickNext", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
+                _enterusernamefieldInfo = new RepoItemInfo(this, "EnterUserNameField", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
+                _nextbuttonInfo = new RepoItemInfo(this, "NextButton", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
                 _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext=$CSPUsername]", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
                 _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "03048239-ba3c-4e99-98f0-7a29857dc2f3");
             }
@@ -1840,50 +1762,50 @@ namespace DCT
             }
 
             /// <summary>
-            /// The EnterUseName item.
+            /// The EnterUserNameField item.
             /// </summary>
             [RepositoryItem("c2b76402-5b3d-43ee-8e59-dac47a2e9c73")]
-            public virtual Ranorex.InputTag EnterUseName
+            public virtual Ranorex.InputTag EnterUserNameField
             {
                 get
                 {
-                    return _enterusenameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _enterusernamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The EnterUseName item info.
+            /// The EnterUserNameField item info.
             /// </summary>
             [RepositoryItemInfo("c2b76402-5b3d-43ee-8e59-dac47a2e9c73")]
-            public virtual RepoItemInfo EnterUseNameInfo
+            public virtual RepoItemInfo EnterUserNameFieldInfo
             {
                 get
                 {
-                    return _enterusenameInfo;
+                    return _enterusernamefieldInfo;
                 }
             }
 
             /// <summary>
-            /// The ClickNext item.
+            /// The NextButton item.
             /// </summary>
             [RepositoryItem("cb220122-19c8-4bab-93a1-825edc6f60eb")]
-            public virtual Ranorex.InputTag ClickNext
+            public virtual Ranorex.InputTag NextButton
             {
                 get
                 {
-                    return _clicknextInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _nextbuttonInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClickNext item info.
+            /// The NextButton item info.
             /// </summary>
             [RepositoryItemInfo("cb220122-19c8-4bab-93a1-825edc6f60eb")]
-            public virtual RepoItemInfo ClickNextInfo
+            public virtual RepoItemInfo NextButtonInfo
             {
                 get
                 {
-                    return _clicknextInfo;
+                    return _nextbuttonInfo;
                 }
             }
 

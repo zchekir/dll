@@ -744,6 +744,15 @@ rxversion="8.3">
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']
 				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="spantag"
+				id="6eb50653-7933-4c47-bced-aaee65a7d729"
+				name="SaveAndEnterDataButton"
+				refimgid="91f8375f-d484-4862-bee8-80bf62c27bc8"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//span[@innertext='Save and Enter Data']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -917,6 +926,15 @@ rxversion="8.3">
 				refimgid="25b3a912-3825-4d94-a1b6-fd7fc0789da8"
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[5]/div[@innertext&gt;$BriefSummary]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="792cfd2a-b2c0-458d-850a-67256e48782d"
+				name="ExistingStudy"
+				refimgid="f3c75dc0-afd0-4bfd-8fd4-1fcd607e70de"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[1]//div[@innertext=$ExistingStudy]
 				</item>
 				<basepath>
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]
@@ -1232,6 +1250,15 @@ rxversion="8.3">
 			searchtimeout="30000ms">
 				/dom[@domain=$RCCDOM]//button[#'login_applyButton']/span[@innertext='Sign in']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="57321a1e-9015-4e18-927e-f6f813fcabad"
+			name="SearchField"
+			refimgid="acd4c5b5-2e0e-42db-bb40-a2f99df9e938"
+			searchtimeout="30000ms">
+				/dom[@domain=$RCCDOM]//input[#'filtersWidget_userInputWidget_studyName']
+			</item>
 			<basepath>
 				/dom[@domain=$RCCDOM]
 			</basepath>
@@ -1344,6 +1371,10 @@ AAAASUVORK5CYII=
 		id="02096c08-fb46-4a9d-893b-fd42eb0d037b"
 		name="SecondSubject">
 			1001001
+		</var>
+		<var
+		id="2ce5e706-e90d-4df4-8420-c32c11ef8eae"
+		name="ExistingStudy">
 		</var>
 	</variables>
 </repository>

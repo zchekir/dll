@@ -70,7 +70,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,tdtag"
 			capname="tdtag"
 			id="2f9f79e7-580e-4755-a6bc-f7137da21cde"
-			name="OpenResults"
+			name="SearchResult"
 			refimgid="3c4e1280-694d-49fc-b3a0-56fae45d8644"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2020-']
@@ -97,7 +97,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="4475259d-22a2-4512-a4b1-742099f24bb9"
-			name="ClickMoveButton"
+			name="MoveButton"
 			refimgid="9399f330-edf8-4d43-b300-6477337fdcce"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-move-button']/span[@innertext='move']
@@ -106,7 +106,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="86244d71-2a9e-4044-a2a8-18c3c1d6851b"
-			name="EnterTestIdentifier"
+			name="EnterTestIdentifierField"
 			refimgid="fe5a6afa-1d41-4fa2-a5a5-97302d9e4d42"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//input[#'findByAssessmentId']
@@ -115,7 +115,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="4ac58619-4351-44b7-8087-c4e6656d9855"
-			name="ClickOk"
+			name="OKButton"
 			refimgid="b73e1284-b108-4ebf-9c73-0e66171ca80d"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'move-selection-button-next']/span[@innertext='ok']
@@ -133,7 +133,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2"
-			name="ConfirmInvalidate"
+			name="ConfirmButton"
 			refimgid="64e2b17b-f281-490d-8646-b0ad17f75dea"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//span[@innertext='confirm']
@@ -343,24 +343,6 @@ AAAASUVORK5CYII=
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="1aaeabd0-d27c-4203-9346-f994a87bad37"
-			name="SearchStudyInRCC"
-			refimgid="8c444498-b7fc-4829-a38c-41a719264c55"
-			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//input[#'filtersWidget_userInputWidget_studyName']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="e497ee0e-507a-42d4-8dbc-21b179383f59"
-			name="ExistingRCCStudy"
-			refimgid="21318284-37c4-4b1e-9ed8-95358f6e014d"
-			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//div[@innertext=$ExistingStudy]
-			</item>
-			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="e5549fed-7e0e-4f0c-a146-6e802d0e81db"
@@ -507,15 +489,6 @@ I/67EPgCQ3D7PQ1pXlUAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain=$RCCDOM]//input[#'enrollWidget_textSubjectNumber']
 			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="spantag"
-			id="e09f0e9e-96f1-4788-bcbe-285c0983e4e3"
-			name="SaveAndEnterDataButton"
-			refimgid="3f682a44-778d-4d79-af4a-beac807835bd"
-			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//span[@innertext='Save and Enter Data']
-			</item>
 			<basepath>
 				/dom[@domain=$RCCDOM]
 			</basepath>
@@ -586,7 +559,7 @@ AAAASUVORK5CYII=
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="6f77d72f-6ee7-44c9-ba1d-66990d0876c6"
-			name="PasswordInput"
+			name="PasswordField"
 			refimgid="abf05fbd-d02b-473b-902e-50f3fb5b8250"
 			refpath="/dom[@domain='login.cogstate.com']//input[#'passwordInput']"
 			searchtimeout="30000ms">
@@ -644,7 +617,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="c2b76402-5b3d-43ee-8e59-dac47a2e9c73"
-			name="EnterUseName"
+			name="EnterUserNameField"
 			refimgid="bfe5d069-adec-410a-a960-95fbd37c531d"
 			refpath="/dom[1]//input[#'i0116']"
 			searchtimeout="30000ms">
@@ -654,7 +627,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="cb220122-19c8-4bab-93a1-825edc6f60eb"
-			name="ClickNext"
+			name="NextButton"
 			refimgid="34823b60-f68b-4e71-bdbf-1411ca5d76e2"
 			refpath="/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']"
 			searchtimeout="30000ms">

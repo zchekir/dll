@@ -102,12 +102,12 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}' with focus on 'DataCleaningTool.EnterTestIdentifier'.", repo.DataCleaningTool.EnterTestIdentifierInfo, new RecordItemIndex(0));
-            repo.DataCleaningTool.EnterTestIdentifier.PressKeys("{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}' with focus on 'DataCleaningTool.EnterTestIdentifierField'.", repo.DataCleaningTool.EnterTestIdentifierFieldInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.EnterTestIdentifierField.PressKeys("{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'DataCleaningTool.EnterTestIdentifier'.", repo.DataCleaningTool.EnterTestIdentifierInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool.EnterTestIdentifier.PressKeys(TestIdentifier);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'DataCleaningTool.EnterTestIdentifierField'.", repo.DataCleaningTool.EnterTestIdentifierFieldInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.EnterTestIdentifierField.PressKeys(TestIdentifier);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
