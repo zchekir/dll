@@ -63,7 +63,7 @@ namespace DCT.RCC_Page
         		          
         }
 
-        public void Report_Log(string argument1)
+        public void Report_Log()
         {
             Report.Log(ReportLevel.Info, "Subject is ", DCTSubject);
         }

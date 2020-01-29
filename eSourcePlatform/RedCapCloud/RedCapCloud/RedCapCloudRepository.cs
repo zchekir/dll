@@ -125,6 +125,18 @@ namespace RedCapCloud
             set { _SecondSubject = value; }
         }
 
+        string _ExistingStudy = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ExistingStudy.
+        /// </summary>
+        [TestVariable("2ce5e706-e90d-4df4-8420-c32c11ef8eae")]
+        public string ExistingStudy
+        {
+            get { return _ExistingStudy; }
+            set { _ExistingStudy = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -219,6 +231,7 @@ namespace RedCapCloud
             RepoItemInfo _rolealreadyexistsInfo;
             RepoItemInfo _notificationpopupcloseInfo;
             RepoItemInfo _signinInfo;
+            RepoItemInfo _searchfieldInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -266,6 +279,7 @@ namespace RedCapCloud
                 _rolealreadyexistsInfo = new RepoItemInfo(this, "RoleAlreadyExists", "body/div//div[@innertext='Role already exists']", 30000, null, "b4a72825-ea9d-4078-a609-1ae22df65884");
                 _notificationpopupcloseInfo = new RepoItemInfo(this, "NotificationPopupClose", "body//div[@class='popupContent']//table//div[@innertext='Close']", 30000, null, "7e655126-9a30-49e2-8991-fd5a20df20be");
                 _signinInfo = new RepoItemInfo(this, "SignIn", ".//button[#'login_applyButton']/span[@innertext='Sign in']", 30000, null, "e6057ea9-3b47-4e33-8628-77fffcc5d58d");
+                _searchfieldInfo = new RepoItemInfo(this, "SearchField", ".//input[#'filtersWidget_userInputWidget_studyName']", 30000, null, "57321a1e-9015-4e18-927e-f6f813fcabad");
             }
 
             /// <summary>
@@ -913,6 +927,30 @@ namespace RedCapCloud
                 get
                 {
                     return _signinInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SearchField item.
+            /// </summary>
+            [RepositoryItem("57321a1e-9015-4e18-927e-f6f813fcabad")]
+            public virtual Ranorex.InputTag SearchField
+            {
+                get
+                {
+                    return _searchfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SearchField item info.
+            /// </summary>
+            [RepositoryItemInfo("57321a1e-9015-4e18-927e-f6f813fcabad")]
+            public virtual RepoItemInfo SearchFieldInfo
+            {
+                get
+                {
+                    return _searchfieldInfo;
                 }
             }
 
@@ -2466,6 +2504,7 @@ namespace RedCapCloud
             RepoItemInfo _cbbcrfInfo;
             RepoItemInfo _testwassuccessfullytransmittedInfo;
             RepoItemInfo _crftabsInfo;
+            RepoItemInfo _saveandenterdatabuttonInfo;
 
             /// <summary>
             /// Creates a new SubjectsPage  folder.
@@ -2498,6 +2537,7 @@ namespace RedCapCloud
                 _cbbcrfInfo = new RepoItemInfo(this, "CBBCRF", ".//div[@id<'cogstateBatteryCRF-CBB']", 30000, null, "46cd2424-7930-4ab1-ac72-aa31e02e3644");
                 _testwassuccessfullytransmittedInfo = new RepoItemInfo(this, "TestWasSuccessfullyTransmitted", ".//div[#'gwtWrapper']//?/?/font[@innertext='Test Was Successfully Transmitted']", 30000, null, "6819e2a1-e800-4dd4-b4d3-a809a456668f");
                 _crftabsInfo = new RepoItemInfo(this, "CRFTabs", ".//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']", 30000, null, "8604c299-a22b-4dae-b410-9670b9e6fdbc");
+                _saveandenterdatabuttonInfo = new RepoItemInfo(this, "SaveAndEnterDataButton", ".//span[@innertext='Save and Enter Data']", 30000, null, "6eb50653-7933-4c47-bced-aaee65a7d729");
             }
 
             /// <summary>
@@ -3111,6 +3151,30 @@ namespace RedCapCloud
                     return _crftabsInfo;
                 }
             }
+
+            /// <summary>
+            /// The SaveAndEnterDataButton item.
+            /// </summary>
+            [RepositoryItem("6eb50653-7933-4c47-bced-aaee65a7d729")]
+            public virtual Ranorex.SpanTag SaveAndEnterDataButton
+            {
+                get
+                {
+                    return _saveandenterdatabuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndEnterDataButton item info.
+            /// </summary>
+            [RepositoryItemInfo("6eb50653-7933-4c47-bced-aaee65a7d729")]
+            public virtual RepoItemInfo SaveAndEnterDataButtonInfo
+            {
+                get
+                {
+                    return _saveandenterdatabuttonInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3530,16 +3594,18 @@ namespace RedCapCloud
             RepoItemInfo _studynameInfo;
             RepoItemInfo _studycategoryInfo;
             RepoItemInfo _studysummaryInfo;
+            RepoItemInfo _existingstudyInfo;
 
             /// <summary>
             /// Creates a new StudiesTable  folder.
             /// </summary>
             public StudiesTableFolder(RepoGenBaseFolder parentFolder) :
-                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
+                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
             {
                 _studynameInfo = new RepoItemInfo(this, "StudyName", "td[1]/div[@innertext>$StudyName]", 30000, null, "9ea93ae7-3e6b-4141-acce-9682ed7e21a8");
                 _studycategoryInfo = new RepoItemInfo(this, "StudyCategory", "td[2]/div[@innertext='Classic Database']", 30000, null, "65197492-b182-458a-b19e-575e7a944ba6");
                 _studysummaryInfo = new RepoItemInfo(this, "StudySummary", "td[5]/div[@innertext>$BriefSummary]", 30000, null, "297d3f3c-1ec9-42b9-ae20-4af8b304512c");
+                _existingstudyInfo = new RepoItemInfo(this, "ExistingStudy", "td[1]/div[@innertext=$ExistingStudy]", 30000, null, "792cfd2a-b2c0-458d-850a-67256e48782d");
             }
 
             /// <summary>
@@ -3635,6 +3701,30 @@ namespace RedCapCloud
                 get
                 {
                     return _studysummaryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExistingStudy item.
+            /// </summary>
+            [RepositoryItem("792cfd2a-b2c0-458d-850a-67256e48782d")]
+            public virtual Ranorex.DivTag ExistingStudy
+            {
+                get
+                {
+                    return _existingstudyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExistingStudy item info.
+            /// </summary>
+            [RepositoryItemInfo("792cfd2a-b2c0-458d-850a-67256e48782d")]
+            public virtual RepoItemInfo ExistingStudyInfo
+            {
+                get
+                {
+                    return _existingstudyInfo;
                 }
             }
         }

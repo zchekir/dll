@@ -413,6 +413,18 @@
       <id>f1b80c77-36df-49e3-99fb-f3d09dbc6c3b</id>
       <BoundTo>4346f5be-19a4-420b-99cc-697ee89741b0</BoundTo>
     </Compile>
+    <Compile Include="AddSubjectPage\Click_SaveAndEnter_Data.cs">
+      <BoundTo>10970109-6064-4160-88f5-715ace9d7a64</BoundTo>
+      <DependentUpon>Click_SaveAndEnter_Data.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b1d28d39-6d56-4c13-92f1-1c118eec9bc6</id>
+    </Compile>
+    <Compile Include="AddSubjectPage\Click_SaveAndEnter_Data.UserCode.cs">
+      <BoundTo>10970109-6064-4160-88f5-715ace9d7a64</BoundTo>
+      <DependentUpon>Click_SaveAndEnter_Data.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af273052-d1e9-433e-8350-6dcde6cec947</id>
+    </Compile>
     <Compile Include="AddSubjectPage\Enter_DateOfBirth.cs">
       <DependentUpon>Enter_DateOfBirth.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -917,6 +929,18 @@
       <id>d7575968-c7c8-4dad-a4e8-5d375fa9c5ec</id>
       <BoundTo>274b0360-7b67-47fb-a0b3-9d626ad3545c</BoundTo>
     </Compile>
+    <Compile Include="StudiesPage\Click_ExistingStudy.cs">
+      <BoundTo>0782e480-7c53-4645-ba20-4db3863e824f</BoundTo>
+      <DependentUpon>Click_ExistingStudy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fce32c4-d189-4bdb-9127-c5e4fd1bb984</id>
+    </Compile>
+    <Compile Include="StudiesPage\Click_ExistingStudy.UserCode.cs">
+      <BoundTo>0782e480-7c53-4645-ba20-4db3863e824f</BoundTo>
+      <DependentUpon>Click_ExistingStudy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>829f3546-9169-4b55-bdf5-552153450e7b</id>
+    </Compile>
     <Compile Include="StudiesPage\Click_MyStudies.cs">
       <DependentUpon>Click_MyStudies.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -952,6 +976,18 @@
       <UserCode>true</UserCode>
       <id>25bb5e38-8092-47e8-bab5-2da482a1cbdb</id>
       <BoundTo>14f63b22-ac75-439e-ac97-eaf1e41b4834</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Search_ExistingStudy.cs">
+      <BoundTo>83ce24c5-13fd-4efa-8394-3173861dc8c0</BoundTo>
+      <DependentUpon>Search_ExistingStudy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9303e7b-f839-4d08-859b-6ac0c19c8ea8</id>
+    </Compile>
+    <Compile Include="StudiesPage\Search_ExistingStudy.UserCode.cs">
+      <BoundTo>83ce24c5-13fd-4efa-8394-3173861dc8c0</BoundTo>
+      <DependentUpon>Search_ExistingStudy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddb60968-3208-4bf4-a02f-04f2494d9cef</id>
     </Compile>
     <Compile Include="SubjectsPage\Click_AddEvent_Button.cs">
       <DependentUpon>Click_AddEvent_Button.rxrec</DependentUpon>
@@ -1421,6 +1457,11 @@
       <id>4346f5be-19a4-420b-99cc-697ee89741b0</id>
       <recordtableid>6e31c9ce-045f-4c68-9677-6c33920d2d80</recordtableid>
     </None>
+    <None Include="AddSubjectPage\Click_SaveAndEnter_Data.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>10970109-6064-4160-88f5-715ace9d7a64</id>
+      <recordtableid>a92cc279-94e1-4aaa-877b-436b68d9c101</recordtableid>
+    </None>
     <None Include="AddSubjectPage\Enter_DateOfBirth.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>dce79d0b-a92d-4062-9868-e7401b784535</id>
@@ -1660,6 +1701,11 @@
       <id>274b0360-7b67-47fb-a0b3-9d626ad3545c</id>
       <recordtableid>3b0c960d-4e59-4d1a-a918-4b670266537d</recordtableid>
     </None>
+    <None Include="StudiesPage\Click_ExistingStudy.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>0782e480-7c53-4645-ba20-4db3863e824f</id>
+      <recordtableid>1637cb94-17f8-409e-accf-106e00f4256e</recordtableid>
+    </None>
     <None Include="StudiesPage\Click_MyStudies.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>976dc104-c5db-478b-92e3-3057002b5563</id>
@@ -1674,6 +1720,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>14f63b22-ac75-439e-ac97-eaf1e41b4834</id>
       <recordtableid>7bfdabe8-1bfa-4069-9552-d0e070c42a5f</recordtableid>
+    </None>
+    <None Include="StudiesPage\Search_ExistingStudy.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>83ce24c5-13fd-4efa-8394-3173861dc8c0</id>
+      <recordtableid>27faacaa-901a-44bb-b9b9-d5d0ad0fc35e</recordtableid>
     </None>
     <None Include="SubjectsPage\Click_AddEvent_Button.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>

@@ -15,7 +15,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -27,7 +27,7 @@ rxversion="8.3">
 			</setup>
 			<smartfoldernode
 			id="04939054-fa65-495b-a740-482356616b3b"
-			name="ValidatDBTMove_DCT">
+			name="ValidateDBTMove_DCT">
 			</smartfoldernode>
 			<testmodule
 			id="060f0afb-2dac-4993-bb5b-0ce2f49d6374"
@@ -37,7 +37,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -61,7 +61,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -75,9 +75,23 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="09d4997f-f01b-42a7-a61a-79019ecc3372"
+			name="Click_SaveAndEnter_Data"
+			ref="a92cc279-94e1-4aaa-877b-436b68d9c101"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -93,7 +107,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -107,7 +121,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -115,7 +129,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="0f02286d-1a01-421d-ad09-ccef43c4bc43"
-			name="Submit"
+			name="Click_Submit"
 			ref="12c9321e-d57b-4f26-abb0-e494f761864b"
 			type="Recording">
 			</testmodule>
@@ -131,7 +145,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -148,16 +162,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="DCTURL"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="8463e4a6-eafa-4aa9-b3f9-8c31b5959f9b"
-					variablename="DCTURL">
-					</var>
-					<var
 					dataname="Browser"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="ea48e640-72d1-4391-844d-f960d0c21bf4"
 					variablename="Browser">
+					</var>
+					<var
+					dataname="DCTURL"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="8463e4a6-eafa-4aa9-b3f9-8c31b5959f9b"
+					variablename="DCTURL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -169,7 +183,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -183,7 +197,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -197,7 +211,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -215,7 +229,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -229,7 +243,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -240,38 +254,6 @@ rxversion="8.3">
 			name="DCT"
 			reportlevel="Info;20">
 				<parameters>
-					<param
-					name="RCCDOM"
-					value="cgsqc.redcapcloud.com">
-					</param>
-					<param
-					name="RCCURL"
-					value="https://cgsqc.redcapcloud.com/">
-					</param>
-					<param
-					name="CSPDOM"
-					value="cgst-qc-jordan.azurewebsites.net">
-					</param>
-					<param
-					name="CSPURL"
-					value="https://cgst-qc-jordan.azurewebsites.net/">
-					</param>
-					<param
-					name="DCTDOM"
-					value="cgst-qc-jordan-dct.azurewebsites.net">
-					</param>
-					<param
-					name="DCTURL"
-					value="http://cgst-qc-jordan-dct.azurewebsites.net">
-					</param>
-					<param
-					name="DBServer"
-					value="cgst-qc.database.windows.net">
-					</param>
-					<param
-					name="Database"
-					value="cgst-jordan-api">
-					</param>
 					<param
 					name="Authentication"
 					value="Active Directory Password">
@@ -313,14 +295,6 @@ rxversion="8.3">
 					value="">
 					</param>
 					<param
-					name="AzureURL"
-					value="https://cgst-qc-jordan-hub.scm.azurewebsites.net/">
-					</param>
-					<param
-					name="AzureDOM"
-					value="https://cgst-qc-jordan-cgst-qc-hub.scm.azurewebsites.net">
-					</param>
-					<param
 					name="DCTVersionQuery"
 					value="(get-item -Path 'D:\home\site\wwwroot\app_data\jobs\continuous\*\Cogstate.*.exe').VersionInfo">
 					</param>
@@ -354,7 +328,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -367,16 +341,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-					<var
 					dataname="Datafile"
 					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 					variableid="8fc570d6-3f7a-415d-b8e3-72a0b3b97474"
 					variablename="DataFile">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -391,16 +365,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-					<var
 					dataname="EventDefName"
 					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
 					variablename="EventDefName">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -416,7 +390,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -427,26 +401,6 @@ rxversion="8.3">
 			id="35be04f7-0868-499b-af6b-ab1b61b9775d"
 			name="UseExistingStudyRCC">
 			</smartfoldernode>
-			<testmodule
-			id="36747eb8-2709-4de8-b8d2-a76ff745984a"
-			name="RCC_ExistingStudy"
-			ref="01782ea1-b135-47ac-aa9f-bc0f02741b5b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
-					variablename="RCCDOM">
-					</var>
-					<var
-					dataname="ExistingStudy"
-					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
-					variableid="5923afdb-cf3f-4533-bba3-55989ecd9cf6"
-					variablename="ExistingStudy">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="373ffbb5-abd3-4c23-bf09-ef84586a9d78"
 			name="Add_Subject">
@@ -465,7 +419,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -483,7 +437,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -496,16 +450,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="d4e92812-f3fa-4e0d-862f-55886c7e5a9c"
 					variablename="SubjectNumber">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -529,7 +483,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -549,7 +503,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -563,7 +517,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -577,7 +531,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -587,20 +541,6 @@ rxversion="8.3">
 			id="4985cbfb-9132-4e0b-bcae-a526c956e8c6"
 			name="teardown">
 			</teardown>
-			<testmodule
-			id="4b124841-deb9-4ba7-9c1f-e842289fd99c"
-			name="SaveAndEnterData"
-			ref="221b9d95-5d03-4937-95dd-4c60f7458a89"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="4be7e656-7a20-4f28-8dc3-df034fc89773"
 			name="teardown">
@@ -613,29 +553,9 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="5052406a-9fba-43d7-a591-f3499830f4a0"
-			name="OpenStudy"
-			ref="83773ca8-ef21-4bac-bf66-4fa324b1b30b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="5a760c9f-9fed-4f01-8c4c-f1cd491cbeda"
-					variablename="RCCDOM">
-					</var>
-					<var
-					dataname="ExistingStudy"
-					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
-					variableid="ee00695b-ccc6-4286-ad8b-942dd6f880b2"
-					variablename="ExistingStudy">
 					</var>
 				</databinding>
 			</testmodule>
@@ -667,9 +587,29 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="51aa90ac-6aef-47f4-8090-701b015d97f5"
+			name="Search_ExistingStudy"
+			ref="27faacaa-901a-44bb-b9b9-d5d0ad0fc35e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExistingStudy"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="c1090e22-62f9-48cb-b0ee-0cc84c6451f6"
+					variablename="ExistingStudy">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -681,7 +621,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -721,7 +661,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -745,7 +685,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -763,7 +703,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -771,7 +711,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="767091a6-5de4-4726-9073-d5d0ec27ec9a"
-			name="ClickNo"
+			name="Click_NoButton"
 			ref="94c76c7b-5165-44e9-93e8-337c36c1af4f"
 			type="Recording">
 			</testmodule>
@@ -791,7 +731,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -805,7 +745,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -949,7 +889,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -971,7 +911,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
-			name="EnterPassword"
+			name="Enter_Password"
 			ref="73fe110e-198a-4073-aaac-d97e2fa59e5d"
 			type="Recording">
 				<databinding>
@@ -991,7 +931,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -1011,7 +951,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1025,7 +965,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1039,7 +979,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -1053,7 +993,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -1066,16 +1006,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-					<var
 					dataname="RandNum"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1086,16 +1026,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
-					variablename="DCTDOM">
-					</var>
-					<var
 					dataname="TestIdentifier"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="87c310b7-76bc-48df-a8d6-c70ac883f56b"
 					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1129,7 +1069,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1146,16 +1086,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-					<var
 					dataname="EventDefName"
 					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 					variableid="11da9ff3-46e5-4db0-8f94-1b1b60cecde6"
 					variablename="EventDefName">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1167,7 +1107,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1181,7 +1121,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1195,7 +1135,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -1215,12 +1155,6 @@ rxversion="8.3">
 			ref="ee1df575-fd4e-40fb-8d84-19a900e86d0a">
 				<databinding>
 					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="e3b2f88e-35b4-46a4-bff4-932f6433abaf"
-					variablename="RCCDOM">
-					</var>
-					<var
 					dataname="RCCUsername"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="5d539c94-f9fc-4135-a437-60a30fc488a8"
@@ -1232,11 +1166,17 @@ rxversion="8.3">
 					variableid="be1c5c25-86d4-4d4f-9d1c-26956c66271e"
 					variablename="RCCPassword">
 					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="e3b2f88e-35b4-46a4-bff4-932f6433abaf"
+					variablename="RCCDOM">
+					</var>
 				</databinding>
 			</modulegroup>
 			<testmodule
 			id="bf48379d-3b0f-4766-9f75-ad79ecd75470"
-			name="EnterEmail"
+			name="Enter_Email"
 			ref="53807fba-9413-4799-85c8-de7828cb5bd1"
 			type="Recording">
 				<databinding>
@@ -1260,7 +1200,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -1287,7 +1227,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="c635cb9b-3eba-46f5-90e0-978fc128125c"
-			name="ClickNextButton"
+			name="Click_NextButton"
 			ref="de3b4f7f-7e50-4fdb-9a6b-e3672dd80041"
 			type="Recording">
 			</testmodule>
@@ -1314,18 +1254,6 @@ rxversion="8.3">
 					variablename="dbPassword">
 					</var>
 					<var
-					dataname="DBServer"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="fdfe063d-6783-4369-9629-5a145c369190"
-					variablename="DBserver">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="014421c8-99a8-4638-a1b8-329b6244fb96"
-					variablename="Database">
-					</var>
-					<var
 					dataname="Authentication"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="eb61540a-fb4d-4dc9-a31b-da7d8e0c2955"
@@ -1337,6 +1265,18 @@ rxversion="8.3">
 					variableid="6564ccb3-9f1f-49b3-bf17-fc9f45477b9e"
 					variablename="TestIdentifier">
 					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="fdfe063d-6783-4369-9629-5a145c369190"
+					variablename="DBserver">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="014421c8-99a8-4638-a1b8-329b6244fb96"
+					variablename="Database">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1347,7 +1287,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1361,7 +1301,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
 					</var>
@@ -1381,7 +1321,7 @@ rxversion="8.3">
 			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
-			datasource="Authentication"
+			datasource="TenantConnector"
 			id="d4b8534f-2794-473e-9747-934afc8f284d"
 			maxrange="0"
 			minrange="0"
@@ -1407,7 +1347,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1427,16 +1367,12 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="e09f41ba-4e25-46de-98da-90de7fbc8fd8"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="e0c6ab64-d960-4fdb-9dbc-b8138874752b"
 			name="Click_FindButton"
@@ -1445,7 +1381,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1459,7 +1395,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1484,12 +1420,6 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-					<var
 					dataname="TestIdentifier"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="a2c7a9a9-7003-4d84-ad01-cd961be9e65f"
@@ -1507,6 +1437,12 @@ rxversion="8.3">
 					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
 					variablename="RandNum">
 					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
 				</databinding>
 			</testmodule>
 			<smartfoldernode
@@ -1515,6 +1451,26 @@ rxversion="8.3">
 			minrange="0"
 			name="Loginto_DCT">
 			</smartfoldernode>
+			<testmodule
+			id="e70ac2b9-28af-4391-9f57-e7369eefecab"
+			name="Click_ExistingStudy"
+			ref="1637cb94-17f8-409e-accf-106e00f4256e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExistingStudy"
+					datasourceid="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
+					variableid="2ce5e706-e90d-4df4-8420-c32c11ef8eae"
+					variablename="ExistingStudy">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="e92e3542-ce70-4b5d-bbe2-b65c77456b06"
 			name="teardown">
@@ -1531,16 +1487,12 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
-			<setup
-			id="ee4ba30a-7f34-43aa-91ee-01d0c283f7b4"
-			name="setup">
-			</setup>
 			<setup
 			id="ef3a6704-f2a9-4d06-a91c-c9bf3b457b69"
 			name="setup1">
@@ -1565,7 +1517,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1585,7 +1537,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
 					variablename="DCTDOM">
 					</var>
@@ -1598,16 +1550,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="RCCURL"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="6f16e2fe-59f5-4db7-ad65-fc9f98e4843e"
-					variablename="URL">
-					</var>
-					<var
 					dataname="Browser"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="274716b5-a543-4645-bcdf-0f2be353a9ae"
 					variablename="Browser">
+					</var>
+					<var
+					dataname="RCCURL"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f16e2fe-59f5-4db7-ad65-fc9f98e4843e"
+					variablename="RCCURL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1618,16 +1570,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="DCTDOM"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
-					variablename="DCTDOM">
-					</var>
-					<var
 					dataname="TestIdentifier"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="87c310b7-76bc-48df-a8d6-c70ac883f56b"
 					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1673,16 +1625,16 @@ rxversion="8.3">
 							id="e36938b4-3f31-4c7d-9165-3a073252c310"
 							name="Search_RCC_Study">
 								<testmodule
-								id="36747eb8-2709-4de8-b8d2-a76ff745984a"
-								name="RCC_ExistingStudy">
+								id="51aa90ac-6aef-47f4-8090-701b015d97f5"
+								name="Search_ExistingStudy">
 								</testmodule>
 							</testcase>
 							<testcase
 							id="d6608ccf-e3ee-4482-9435-096321557190"
 							name="Open_Study">
 								<testmodule
-								id="5052406a-9fba-43d7-a591-f3499830f4a0"
-								name="OpenStudy">
+								id="e70ac2b9-28af-4391-9f57-e7369eefecab"
+								name="Click_ExistingStudy">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1717,8 +1669,8 @@ rxversion="8.3">
 								name="Select_Language">
 								</testmodule>
 								<testmodule
-								id="4b124841-deb9-4ba7-9c1f-e842289fd99c"
-								name="SaveAndEnterData">
+								id="09d4997f-f01b-42a7-a61a-79019ecc3372"
+								name="Click_SaveAndEnter_Data">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1813,10 +1765,6 @@ rxversion="8.3">
 						<smartfoldernode
 						id="e6d436ed-0a07-4913-a5f0-3deb7c676360"
 						name="Loginto_DCT">
-							<setup
-							id="ee4ba30a-7f34-43aa-91ee-01d0c283f7b4"
-							name="setup">
-							</setup>
 							<testcase
 							id="74c2b7a6-fe75-420d-8f7a-9e727c474c75"
 							name="NavigateToDCT">
@@ -1830,7 +1778,7 @@ rxversion="8.3">
 							name="Enter_Username">
 								<testmodule
 								id="bf48379d-3b0f-4766-9f75-ad79ecd75470"
-								name="EnterEmail">
+								name="Enter_Email">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1838,7 +1786,7 @@ rxversion="8.3">
 							name="Click_NextButton">
 								<testmodule
 								id="c635cb9b-3eba-46f5-90e0-978fc128125c"
-								name="ClickNextButton">
+								name="Click_NextButton">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1846,7 +1794,7 @@ rxversion="8.3">
 							name="Enter_Password">
 								<testmodule
 								id="8e85f95d-fa21-4e2f-bc88-14f3e6780e91"
-								name="EnterPassword">
+								name="Enter_Password">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1854,7 +1802,7 @@ rxversion="8.3">
 							name="Click_SubmitButton">
 								<testmodule
 								id="0f02286d-1a01-421d-ad09-ccef43c4bc43"
-								name="Submit">
+								name="Click_Submit">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -1862,13 +1810,9 @@ rxversion="8.3">
 							name="Click_NoButton">
 								<testmodule
 								id="767091a6-5de4-4726-9073-d5d0ec27ec9a"
-								name="ClickNo">
+								name="Click_NoButton">
 								</testmodule>
 							</testcase>
-							<teardown
-							id="e09f41ba-4e25-46de-98da-90de7fbc8fd8"
-							name="teardown">
-							</teardown>
 						</smartfoldernode>
 						<smartfoldernode
 						id="c0d6bc80-5258-4d7b-8654-b86961360de9"
@@ -2148,7 +2092,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="04939054-fa65-495b-a740-482356616b3b"
-						name="ValidatDBTMove_DCT">
+						name="ValidateDBTMove_DCT">
 							<testcase
 							id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc"
 							name="ValidateTestIdentifierINDB">
@@ -2173,96 +2117,9 @@ rxversion="8.3">
 	</testsuiteentryhierarchy>
 	<datasources>
 		<DataSource
-		id="0661aeb6-44c3-4349-8996-32961057ee74"
-		includefile="Unchecked"
-		lastknownrowcount="3"
-		name="Authentication"
-		type="Ranorex.Core.Data.CsvDataConnector"
-		withheaders="True">
-			<lastknowncolumns>
-				<column>
-					RCCUsername
-				</column>
-				<column>
-					RCCPassword
-				</column>
-				<column>
-					CSPUsername
-				</column>
-				<column>
-					CSPPassword
-				</column>
-				<column>
-					dbUsername
-				</column>
-				<column>
-					dbPassword
-				</column>
-				<column>
-					GmailAddress
-				</column>
-				<column>
-					GmailPassword
-				</column>
-				<column>
-					Subject
-				</column>
-				<column>
-					Body
-				</column>
-				<column>
-					To
-				</column>
-				<column>
-					From
-				</column>
-				<column>
-					ServerHostname
-				</column>
-				<column>
-					ServerPort
-				</column>
-				<column>
-					UseSSL
-				</column>
-				<column>
-					SendEmailOnFailure
-				</column>
-				<column>
-					SendEmailOnSuccess
-				</column>
-				<column>
-					SendZippedReportOnComplete
-				</column>
-				<column>
-					SendPdfReportOnComplete
-				</column>
-				<column>
-					Browser
-				</column>
-			</lastknowncolumns>
-			<maskedcolumns>
-				<columnname>
-					CSPPassword
-				</columnname>
-				<columnname>
-					dbPassword
-				</columnname>
-				<columnname>
-					GmailPassword
-				</columnname>
-				<columnname>
-					RCCPassword
-				</columnname>
-			</maskedcolumns>
-			<file>
-				..\eSourcePlatform\Authentication.csv
-			</file>
-		</DataSource>
-		<DataSource
 		id="36c84863-c4e2-4980-8687-22e322546024"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="3"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -2404,6 +2261,123 @@ rxversion="8.3">
 			</maskedcolumns>
 			<file>
 				..\eSourcePlatform\RCCConnector.csv
+			</file>
+		</DataSource>
+		<DataSource
+		id="0661aeb6-44c3-4349-8996-32961057ee74"
+		includefile="Unchecked"
+		lastknownrowcount="4"
+		name="TenantConnector"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					RCCUsername
+				</column>
+				<column>
+					RCCPassword
+				</column>
+				<column>
+					CSPUsername
+				</column>
+				<column>
+					CSPPassword
+				</column>
+				<column>
+					dbUsername
+				</column>
+				<column>
+					dbPassword
+				</column>
+				<column>
+					GmailAddress
+				</column>
+				<column>
+					GmailPassword
+				</column>
+				<column>
+					Subject
+				</column>
+				<column>
+					Body
+				</column>
+				<column>
+					To
+				</column>
+				<column>
+					From
+				</column>
+				<column>
+					ServerHostname
+				</column>
+				<column>
+					ServerPort
+				</column>
+				<column>
+					UseSSL
+				</column>
+				<column>
+					SendEmailOnFailure
+				</column>
+				<column>
+					SendEmailOnSuccess
+				</column>
+				<column>
+					SendZippedReportOnComplete
+				</column>
+				<column>
+					SendPdfReportOnComplete
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					RCCDOM
+				</column>
+				<column>
+					RCCURL
+				</column>
+				<column>
+					CSPDOM
+				</column>
+				<column>
+					CSPURL
+				</column>
+				<column>
+					DCTDOM
+				</column>
+				<column>
+					DCTURL
+				</column>
+				<column>
+					AzureDOM
+				</column>
+				<column>
+					AzureURL
+				</column>
+				<column>
+					DBServer
+				</column>
+				<column>
+					Database
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					CSPPassword
+				</columnname>
+				<columnname>
+					dbPassword
+				</columnname>
+				<columnname>
+					GmailPassword
+				</columnname>
+				<columnname>
+					RCCPassword
+				</columnname>
+			</maskedcolumns>
+			<file>
+				..\eSourcePlatform\TenantConnector.csv
 			</file>
 		</DataSource>
 	</datasources>

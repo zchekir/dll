@@ -93,8 +93,8 @@ namespace DCT.DCT_Page
             repo.DataCleaningTool.ClearPrimary.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ConfirmInvalidate' at Center.", repo.DataCleaningTool.ConfirmInvalidateInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool.ConfirmInvalidate.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ConfirmButton' at Center.", repo.DataCleaningTool.ConfirmButtonInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.ConfirmButton.Click();
             Delay.Milliseconds(200);
             
         }

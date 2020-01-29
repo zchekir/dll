@@ -41,7 +41,7 @@ namespace RedCapCloud.General
         /// </summary>
         public Open_Browser()
         {
-            URL = "https://cgsqc.redcapcloud.com";
+            RCCURL = "https://cgsqc.redcapcloud.com";
             Browser = "Chrome";
         }
 
@@ -55,16 +55,16 @@ namespace RedCapCloud.General
 
 #region Variables
 
-        string _URL;
+        string _RCCURL;
 
         /// <summary>
-        /// Gets or sets the value of variable URL.
+        /// Gets or sets the value of variable RCCURL.
         /// </summary>
         [TestVariable("6f16e2fe-59f5-4db7-ad65-fc9f98e4843e")]
-        public string URL
+        public string RCCURL
         {
-            get { return _URL; }
-            set { _URL = value; }
+            get { return _RCCURL; }
+            set { _RCCURL = value; }
         }
 
         string _Browser;
@@ -105,8 +105,8 @@ namespace RedCapCloud.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(URL, Browser, "", false, true, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $RCCURL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(RCCURL, Browser, "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));

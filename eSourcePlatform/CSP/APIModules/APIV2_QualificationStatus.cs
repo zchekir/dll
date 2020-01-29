@@ -41,7 +41,7 @@ namespace CSP.APIModules
         /// </summary>
         public APIV2_QualificationStatus()
         {
-            DOM = "cgst-qc-duo.cogstate.com";
+            CSPDOM = "";
             RandNum = "";
             ProtocolNumber = "Ranorex Protocol Number";
         }
@@ -56,18 +56,6 @@ namespace CSP.APIModules
 
 #region Variables
 
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("f6062ed9-9482-48a1-ac41-081363e7698e")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
         string _ProtocolNumber;
 
         /// <summary>
@@ -78,6 +66,16 @@ namespace CSP.APIModules
         {
             get { return _ProtocolNumber; }
             set { _ProtocolNumber = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("f6062ed9-9482-48a1-ac41-081363e7698e")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
         /// <summary>
@@ -116,7 +114,7 @@ namespace CSP.APIModules
 
             Init();
 
-            engine.Helpers.WebService.GetQualificationStatus(RandNum, DOM, ProtocolNumber);
+            engine.Helpers.WebService.GetQualificationStatus(RandNum, CSPDOM, ProtocolNumber);
             Delay.Milliseconds(0);
             
         }

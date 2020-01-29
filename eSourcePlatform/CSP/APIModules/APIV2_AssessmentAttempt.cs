@@ -41,7 +41,7 @@ namespace CSP.APIModules
         /// </summary>
         public APIV2_AssessmentAttempt()
         {
-            DOM = "";
+            CSPDOM = "";
             RandNum = "";
             VisitSessionCode = "RanVisitCode";
             ProtocolNumber = "Ranorex Protocol Number";
@@ -60,18 +60,6 @@ namespace CSP.APIModules
         }
 
 #region Variables
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("288f411e-c76f-4619-8bb0-66a24d3754d2")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
 
         string _VisitSessionCode;
 
@@ -146,6 +134,16 @@ namespace CSP.APIModules
         }
 
         /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("288f411e-c76f-4619-8bb0-66a24d3754d2")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable RandNum.
         /// </summary>
         [TestVariable("3e8cc784-9b0c-4dc8-82ad-e823e9823c2f")]
@@ -181,7 +179,7 @@ namespace CSP.APIModules
 
             Init();
 
-            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber, supervisorId);
+            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, CSPDOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber, supervisorId);
             Delay.Milliseconds(0);
             
         }

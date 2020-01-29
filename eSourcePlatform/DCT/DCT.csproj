@@ -166,18 +166,6 @@
       <id>f524b0ea-a1e1-41b7-8deb-72e67c0e0335</id>
       <BoundTo>8c612756-2e3b-41d2-ad19-2c315a5280e7</BoundTo>
     </Compile>
-    <Compile Include="Azure\EnterPassword.cs">
-      <DependentUpon>EnterPassword.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>73f63ac3-731e-4ca8-b890-e839f23356c2</id>
-      <BoundTo>76e1b26b-6abe-478d-b33f-cb8360c73d09</BoundTo>
-    </Compile>
-    <Compile Include="Azure\EnterPassword.UserCode.cs">
-      <DependentUpon>EnterPassword.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>f91bfca2-bf9c-48c2-8d31-d37956303caf</id>
-      <BoundTo>76e1b26b-6abe-478d-b33f-cb8360c73d09</BoundTo>
-    </Compile>
     <Compile Include="Azure\Click_PowerShell.cs">
       <DependentUpon>Click_PowerShell.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -631,18 +619,6 @@
       <id>f257404b-a98b-49ec-b100-28399e32b176</id>
       <BoundTo>85ca1174-c349-4536-94a3-067f5e588351</BoundTo>
     </Compile>
-    <Compile Include="RCC_Page\OpenStudy.cs">
-      <DependentUpon>OpenStudy.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>5093328f-f48b-43b7-8200-3e690a0210d3</id>
-      <BoundTo>ecd6b805-3b3d-4478-b065-1430e1643da5</BoundTo>
-    </Compile>
-    <Compile Include="RCC_Page\OpenStudy.UserCode.cs">
-      <DependentUpon>OpenStudy.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>a263b020-c363-4d07-a467-b669420a0f05</id>
-      <BoundTo>ecd6b805-3b3d-4478-b065-1430e1643da5</BoundTo>
-    </Compile>
     <Compile Include="RCC_Page\OpenSub.cs">
       <DependentUpon>OpenSub.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -678,18 +654,6 @@
       <UserCode>true</UserCode>
       <id>5b63cf27-ac66-43ed-b270-3078e192ab6a</id>
       <BoundTo>e34e3756-b505-4732-826c-1da24f893b21</BoundTo>
-    </Compile>
-    <Compile Include="RCC_Page\RCC_ExistingStudy.cs">
-      <DependentUpon>RCC_ExistingStudy.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d379f9c6-ab32-44ec-83d3-15172befe6e3</id>
-      <BoundTo>06e56362-3d7e-467b-a2db-29875d05d87f</BoundTo>
-    </Compile>
-    <Compile Include="RCC_Page\RCC_ExistingStudy.UserCode.cs">
-      <DependentUpon>RCC_ExistingStudy.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>711564d7-ebb2-4e82-9352-dbe492a8d112</id>
-      <BoundTo>06e56362-3d7e-467b-a2db-29875d05d87f</BoundTo>
     </Compile>
     <Compile Include="RCC_Page\RCC_Password.cs">
       <DependentUpon>RCC_Password.rxrec</DependentUpon>
@@ -751,18 +715,6 @@
       <id>49078bcf-9471-4bbf-ada0-312f7e432511</id>
       <BoundTo>4b1942b1-7e8a-4256-80c6-acf93760ae5f</BoundTo>
     </Compile>
-    <Compile Include="SaveAndEnterData.cs">
-      <BoundTo>7fc408fd-445c-47dc-9f8b-f16a4cfc914c</BoundTo>
-      <DependentUpon>SaveAndEnterData.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>aff3bd62-7b2f-46ae-95df-6d731efc11ee</id>
-    </Compile>
-    <Compile Include="SaveAndEnterData.UserCode.cs">
-      <BoundTo>7fc408fd-445c-47dc-9f8b-f16a4cfc914c</BoundTo>
-      <DependentUpon>SaveAndEnterData.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>7d1c91a2-8111-481a-99b4-22e4985ba80a</id>
-    </Compile>
     <Compile Include="SelectStudy.cs">
       <BoundTo>5f5f98ac-d94f-4b25-a0d3-6b6eb9d46f8f</BoundTo>
       <DependentUpon>SelectStudy.rxrec</DependentUpon>
@@ -775,145 +727,157 @@
       <UserCode>true</UserCode>
       <id>a9b80a70-d6d5-4d95-a167-0d484f7edb4a</id>
     </Compile>
-    <Compile Include="single sign in\ClickLogin.cs">
+    <Compile Include="Single_Sign_In\ClickLogin.cs">
       <DependentUpon>ClickLogin.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>6ccc4f70-50f7-4d08-aabd-60e709c1f62f</id>
       <BoundTo>1f5210c5-a48f-4ae6-8012-9fa0f06f9cbc</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickLogin.UserCode.cs">
+    <Compile Include="Single_Sign_In\ClickLogin.UserCode.cs">
       <DependentUpon>ClickLogin.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6155cee6-244f-4e75-895a-b8e8305cfbcf</id>
       <BoundTo>1f5210c5-a48f-4ae6-8012-9fa0f06f9cbc</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickLog_in.cs">
+    <Compile Include="Single_Sign_In\ClickLog_in.cs">
       <DependentUpon>ClickLog_in.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0ab04f7d-f185-40bf-ae1f-19fcc6bef098</id>
       <BoundTo>6faadbad-fcf4-4c54-9147-d5488bc461be</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickLog_in.UserCode.cs">
+    <Compile Include="Single_Sign_In\ClickLog_in.UserCode.cs">
       <DependentUpon>ClickLog_in.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>461dde0c-4cb3-4644-9250-d742a3512fee</id>
       <BoundTo>6faadbad-fcf4-4c54-9147-d5488bc461be</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickNextButton.cs">
-      <DependentUpon>ClickNextButton.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Click_NextButton.cs">
+      <DependentUpon>Click_NextButton.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>90191655-539f-40b8-8de5-ca40d3818fba</id>
       <BoundTo>50003d0b-d835-4a82-a400-d585efe57dd2</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickNextButton.UserCode.cs">
-      <DependentUpon>ClickNextButton.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Click_NextButton.UserCode.cs">
+      <DependentUpon>Click_NextButton.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>73bb1dde-eaec-498d-8adf-37917b482b38</id>
       <BoundTo>50003d0b-d835-4a82-a400-d585efe57dd2</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickNo.cs">
-      <DependentUpon>ClickNo.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Click_NoButton.cs">
+      <DependentUpon>Click_NoButton.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>44581a75-3a97-42ff-9081-d46a69c9230a</id>
       <BoundTo>08444dde-7fc6-4997-ac02-1b0679910349</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickNo.UserCode.cs">
-      <DependentUpon>ClickNo.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Click_NoButton.UserCode.cs">
+      <DependentUpon>Click_NoButton.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>3dbe1e54-ab80-45c1-a257-cef9b602d94d</id>
       <BoundTo>08444dde-7fc6-4997-ac02-1b0679910349</BoundTo>
     </Compile>
-    <Compile Include="single sign in\Click_OK.cs">
+    <Compile Include="Single_Sign_In\Click_OK.cs">
       <DependentUpon>Click_OK.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>338e8399-3b68-4363-bfc8-105f4e39d1c9</id>
       <BoundTo>12b5b5a5-9c68-452e-b819-0ee22ef346f9</BoundTo>
     </Compile>
-    <Compile Include="single sign in\Click_OK.UserCode.cs">
+    <Compile Include="Single_Sign_In\Click_OK.UserCode.cs">
       <DependentUpon>Click_OK.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1ba8a14b-a32e-4712-8aca-e52d24d5956b</id>
       <BoundTo>12b5b5a5-9c68-452e-b819-0ee22ef346f9</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickSingIn.cs">
+    <Compile Include="Single_Sign_In\ClickSingIn.cs">
       <DependentUpon>ClickSingIn.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0dacd140-c1c2-4623-827e-87ad5bdad730</id>
       <BoundTo>ea5012db-5e2c-481d-ad58-adb1f190484e</BoundTo>
     </Compile>
-    <Compile Include="single sign in\ClickSingIn.UserCode.cs">
+    <Compile Include="Single_Sign_In\ClickSingIn.UserCode.cs">
       <DependentUpon>ClickSingIn.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>0d933662-14f9-43b0-97f6-ede8879d4e7c</id>
       <BoundTo>ea5012db-5e2c-481d-ad58-adb1f190484e</BoundTo>
     </Compile>
-    <Compile Include="single sign in\Click_Yes.cs">
+    <Compile Include="Single_Sign_In\Click_Yes.cs">
       <DependentUpon>Click_Yes.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>eb3945a0-0868-459c-977f-185f8c7d8c90</id>
       <BoundTo>7fcc53df-91e2-4bbb-90d1-6ea7decec83f</BoundTo>
     </Compile>
-    <Compile Include="single sign in\Click_Yes.UserCode.cs">
+    <Compile Include="Single_Sign_In\Click_Yes.UserCode.cs">
       <DependentUpon>Click_Yes.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a8ca85f1-562e-49df-98c4-6b5b1e27fa7d</id>
       <BoundTo>7fcc53df-91e2-4bbb-90d1-6ea7decec83f</BoundTo>
     </Compile>
-    <Compile Include="single sign in\EnterEmail.cs">
-      <DependentUpon>EnterEmail.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Enter_Email.cs">
+      <DependentUpon>Enter_Email.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0cfcc766-db99-4cb0-a659-80193719d1bd</id>
       <BoundTo>8e7a7c55-435c-4f39-a999-1882a84141b9</BoundTo>
     </Compile>
-    <Compile Include="single sign in\EnterEmail.UserCode.cs">
-      <DependentUpon>EnterEmail.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Enter_Email.UserCode.cs">
+      <DependentUpon>Enter_Email.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>64a79d04-e93b-4ea6-bf68-3801eed5d0b2</id>
       <BoundTo>8e7a7c55-435c-4f39-a999-1882a84141b9</BoundTo>
     </Compile>
-    <Compile Include="single sign in\SelectUserName.cs">
+    <Compile Include="Single_Sign_In\Enter_Password.cs">
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73f63ac3-731e-4ca8-b890-e839f23356c2</id>
+      <BoundTo>76e1b26b-6abe-478d-b33f-cb8360c73d09</BoundTo>
+    </Compile>
+    <Compile Include="Single_Sign_In\Enter_Password.UserCode.cs">
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f91bfca2-bf9c-48c2-8d31-d37956303caf</id>
+      <BoundTo>76e1b26b-6abe-478d-b33f-cb8360c73d09</BoundTo>
+    </Compile>
+    <Compile Include="Single_Sign_In\SelectUserName.cs">
       <DependentUpon>SelectUserName.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>41924f75-57d8-4047-ab74-608361e0f8e7</id>
       <BoundTo>0e295af1-b38e-43d8-a8a2-bbb38dd0f9c6</BoundTo>
     </Compile>
-    <Compile Include="single sign in\SelectUserName.UserCode.cs">
+    <Compile Include="Single_Sign_In\SelectUserName.UserCode.cs">
       <DependentUpon>SelectUserName.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ea2d9f47-6554-4518-9de5-f48200c1cb7b</id>
       <BoundTo>0e295af1-b38e-43d8-a8a2-bbb38dd0f9c6</BoundTo>
     </Compile>
-    <Compile Include="single sign in\Submit.cs">
-      <DependentUpon>Submit.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Click_Submit.cs">
+      <DependentUpon>Click_Submit.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ad553d41-fc24-41d2-8530-8a1f25269e1c</id>
       <BoundTo>2659bd89-a26d-4f6d-8304-c9e9f22c4a54</BoundTo>
     </Compile>
-    <Compile Include="single sign in\Submit.UserCode.cs">
-      <DependentUpon>Submit.rxrec</DependentUpon>
+    <Compile Include="Single_Sign_In\Click_Submit.UserCode.cs">
+      <DependentUpon>Click_Submit.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>e896b219-bc31-4fa4-8065-144e03620d8b</id>
       <BoundTo>2659bd89-a26d-4f6d-8304-c9e9f22c4a54</BoundTo>
     </Compile>
-    <Compile Include="single sign in\UserName.cs">
+    <Compile Include="Single_Sign_In\UserName.cs">
       <DependentUpon>UserName.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>abbe03bb-87cc-4fb5-9ad4-6d9693c67eed</id>
       <BoundTo>20b0300d-0752-4a3a-86e9-fec5111706ac</BoundTo>
     </Compile>
-    <Compile Include="single sign in\UserName.UserCode.cs">
+    <Compile Include="Single_Sign_In\UserName.UserCode.cs">
       <DependentUpon>UserName.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>89bac8ef-d24b-4b7e-954f-f073742db4cb</id>
       <BoundTo>20b0300d-0752-4a3a-86e9-fec5111706ac</BoundTo>
     </Compile>
-    <Compile Include="single sign in\Verify_DCT_Login.cs">
+    <Compile Include="Single_Sign_In\Verify_DCT_Login.cs">
       <BoundTo>e2981768-c740-4ab1-aa6c-456e43192464</BoundTo>
       <DependentUpon>Verify_DCT_Login.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ccfc0f43-47c3-4444-9ed9-d44667068dd5</id>
     </Compile>
-    <Compile Include="single sign in\Verify_DCT_Login.UserCode.cs">
+    <Compile Include="Single_Sign_In\Verify_DCT_Login.UserCode.cs">
       <BoundTo>e2981768-c740-4ab1-aa6c-456e43192464</BoundTo>
       <DependentUpon>Verify_DCT_Login.rxrec</DependentUpon>
       <UserCode>true</UserCode>
@@ -957,11 +921,6 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>8c612756-2e3b-41d2-ad19-2c315a5280e7</id>
       <recordtableid>72bcb94e-5a74-4ad7-a339-a7fc508ab8d5</recordtableid>
-    </None>
-    <None Include="Azure\EnterPassword.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>76e1b26b-6abe-478d-b33f-cb8360c73d09</id>
-      <recordtableid>73fe110e-198a-4073-aaac-d97e2fa59e5d</recordtableid>
     </None>
     <None Include="Azure\Click_PowerShell.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
@@ -1159,11 +1118,6 @@
       <id>85ca1174-c349-4536-94a3-067f5e588351</id>
       <recordtableid>d620ffba-f800-4fac-9678-46381969082c</recordtableid>
     </None>
-    <None Include="RCC_Page\OpenStudy.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>ecd6b805-3b3d-4478-b065-1430e1643da5</id>
-      <recordtableid>83773ca8-ef21-4bac-bf66-4fa324b1b30b</recordtableid>
-    </None>
     <None Include="RCC_Page\OpenSub.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>3a4540c0-d50f-4b30-b86a-905fb777fb8e</id>
@@ -1178,11 +1132,6 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>e34e3756-b505-4732-826c-1da24f893b21</id>
       <recordtableid>7c929a2d-0e53-4d8a-bbe6-61f3664926d6</recordtableid>
-    </None>
-    <None Include="RCC_Page\RCC_ExistingStudy.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>06e56362-3d7e-467b-a2db-29875d05d87f</id>
-      <recordtableid>01782ea1-b135-47ac-aa9f-bc0f02741b5b</recordtableid>
     </None>
     <None Include="RCC_Page\RCC_Password.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
@@ -1209,72 +1158,72 @@
       <id>4b1942b1-7e8a-4256-80c6-acf93760ae5f</id>
       <recordtableid>497347f5-f94c-4c1b-adad-bee095e10467</recordtableid>
     </None>
-    <None Include="SaveAndEnterData.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>7fc408fd-445c-47dc-9f8b-f16a4cfc914c</id>
-      <recordtableid>221b9d95-5d03-4937-95dd-4c60f7458a89</recordtableid>
-    </None>
     <None Include="SelectStudy.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>5f5f98ac-d94f-4b25-a0d3-6b6eb9d46f8f</id>
       <recordtableid>e9c0ac00-3de7-4009-828c-ea03cc80ff53</recordtableid>
     </None>
-    <None Include="single sign in\ClickLogin.rxrec">
+    <None Include="Single_Sign_In\ClickLogin.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>1f5210c5-a48f-4ae6-8012-9fa0f06f9cbc</id>
       <recordtableid>5d0b1c20-dd1e-43bc-81d9-390f0d6f8ed9</recordtableid>
     </None>
-    <None Include="single sign in\ClickLog_in.rxrec">
+    <None Include="Single_Sign_In\ClickLog_in.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>6faadbad-fcf4-4c54-9147-d5488bc461be</id>
       <recordtableid>de80c57b-acfe-4de0-ab0d-91db74c3299d</recordtableid>
     </None>
-    <None Include="single sign in\ClickNextButton.rxrec">
+    <None Include="Single_Sign_In\Click_NextButton.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>50003d0b-d835-4a82-a400-d585efe57dd2</id>
       <recordtableid>de3b4f7f-7e50-4fdb-9a6b-e3672dd80041</recordtableid>
     </None>
-    <None Include="single sign in\ClickNo.rxrec">
+    <None Include="Single_Sign_In\Click_NoButton.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>08444dde-7fc6-4997-ac02-1b0679910349</id>
       <recordtableid>94c76c7b-5165-44e9-93e8-337c36c1af4f</recordtableid>
     </None>
-    <None Include="single sign in\Click_OK.rxrec">
+    <None Include="Single_Sign_In\Click_OK.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>12b5b5a5-9c68-452e-b819-0ee22ef346f9</id>
       <recordtableid>dd50aae4-733c-4063-baf4-6b08d5a60e27</recordtableid>
     </None>
-    <None Include="single sign in\ClickSingIn.rxrec">
+    <None Include="Single_Sign_In\ClickSingIn.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>ea5012db-5e2c-481d-ad58-adb1f190484e</id>
       <recordtableid>13255c7b-53f1-48b6-ba90-de7e89b3af9d</recordtableid>
     </None>
-    <None Include="single sign in\Click_Yes.rxrec">
+    <None Include="Single_Sign_In\Click_Yes.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>7fcc53df-91e2-4bbb-90d1-6ea7decec83f</id>
       <recordtableid>25bc1dc7-9054-4fd0-98c9-51085bc07402</recordtableid>
     </None>
-    <None Include="single sign in\EnterEmail.rxrec">
+    <None Include="Single_Sign_In\Enter_Email.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>8e7a7c55-435c-4f39-a999-1882a84141b9</id>
       <recordtableid>53807fba-9413-4799-85c8-de7828cb5bd1</recordtableid>
     </None>
-    <None Include="single sign in\SelectUserName.rxrec">
+    <None Include="Single_Sign_In\Enter_Password.rxrec">
+      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
+      <id>76e1b26b-6abe-478d-b33f-cb8360c73d09</id>
+      <recordtableid>73fe110e-198a-4073-aaac-d97e2fa59e5d</recordtableid>
+    </None>
+    <None Include="Single_Sign_In\SelectUserName.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>0e295af1-b38e-43d8-a8a2-bbb38dd0f9c6</id>
       <recordtableid>366ec434-a4de-4276-9c8c-e6703eef9698</recordtableid>
     </None>
-    <None Include="single sign in\Submit.rxrec">
+    <None Include="Single_Sign_In\Click_Submit.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>2659bd89-a26d-4f6d-8304-c9e9f22c4a54</id>
       <recordtableid>12c9321e-d57b-4f26-abb0-e494f761864b</recordtableid>
     </None>
-    <None Include="single sign in\UserName.rxrec">
+    <None Include="Single_Sign_In\UserName.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>20b0300d-0752-4a3a-86e9-fec5111706ac</id>
       <recordtableid>133e5a1c-f5f6-4b01-a455-fc038cc1133d</recordtableid>
     </None>
-    <None Include="single sign in\Verify_DCT_Login.rxrec">
+    <None Include="Single_Sign_In\Verify_DCT_Login.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>e2981768-c740-4ab1-aa6c-456e43192464</id>
       <recordtableid>34652f57-617b-4b72-bbb8-4c352b277962</recordtableid>
@@ -1320,7 +1269,7 @@
     <Folder Include="Azure">
       <id>b67cf7ce-aa8f-4ee5-96be-416cfe035d2c</id>
     </Folder>
-    <Folder Include="single sign in">
+    <Folder Include="Single_Sign_In">
       <id>bc964710-96f0-4acc-a076-0c4a28c22589</id>
     </Folder>
     <Folder Include="RCC_Page">
