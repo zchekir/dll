@@ -180,13 +180,6 @@
     <None Include="app.config">
       <id>ec27fdfd-d0fd-4a03-a3fd-44a2b2577b5a</id>
     </None>
-    <Content Include="Authentication.csv">
-      <Link>Authentication.csv</Link>
-      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
-      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>1f679774-31a0-4eba-8fef-1b4fb4f42086</id>
-    </Content>
     <Content Include="CSPConnector.csv">
       <Link>CSPConnector.csv</Link>
       <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
@@ -228,6 +221,13 @@
       <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>880abd0b-82af-4957-afe7-6107ca0bef83</id>
+    </Content>
+    <Content Include="TenantConnector.csv">
+      <Link>TenantConnector.csv</Link>
+      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
+      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>2e3dcbcb-36db-4b24-8cb5-7a2482bd9764</id>
     </Content>
   </ItemGroup>
   <ItemGroup>

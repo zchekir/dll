@@ -41,7 +41,7 @@ namespace CSP.General
         /// </summary>
         public Open_Sync_URL()
         {
-            URL = "";
+            CSPURL = "";
             Browser = "";
         }
 
@@ -55,16 +55,16 @@ namespace CSP.General
 
 #region Variables
 
-        string _URL;
+        string _CSPURL;
 
         /// <summary>
-        /// Gets or sets the value of variable URL.
+        /// Gets or sets the value of variable CSPURL.
         /// </summary>
         [TestVariable("d566832d-c3ab-4c50-aa34-3ca6763b3680")]
-        public string URL
+        public string CSPURL
         {
-            get { return _URL; }
-            set { _URL = value; }
+            get { return _CSPURL; }
+            set { _CSPURL = value; }
         }
 
         string _Browser;

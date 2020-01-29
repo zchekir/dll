@@ -41,7 +41,7 @@ namespace CSP.APIModules
         /// </summary>
         public APIV2_Authenticate()
         {
-            DOM = "";
+            CSPDOM = "";
             ProtocolNumber = "";
             RandNum = "";
             Key = "";
@@ -57,18 +57,6 @@ namespace CSP.APIModules
         }
 
 #region Variables
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
 
         string _ProtocolNumber;
 
@@ -92,6 +80,16 @@ namespace CSP.APIModules
         {
             get { return _Secret; }
             set { _Secret = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
         /// <summary>
@@ -140,7 +138,7 @@ namespace CSP.APIModules
 
             Init();
 
-            engine.Helpers.WebService.Authenticate(RandNum, DOM, ProtocolNumber, Key);
+            engine.Helpers.WebService.Authenticate(RandNum, CSPDOM, ProtocolNumber, Key);
             Delay.Milliseconds(0);
             
         }

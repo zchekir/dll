@@ -243,7 +243,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "cgst-qc-jordan.azurewebsites.net";
+        string _CSPDOM = "";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.

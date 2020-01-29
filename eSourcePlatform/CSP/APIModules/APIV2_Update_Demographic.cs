@@ -42,7 +42,7 @@ namespace CSP.APIModules
         public APIV2_Update_Demographic()
         {
             RandNum = "";
-            DOM = "";
+            CSPDOM = "";
             DOB = "";
             externalID = "";
             LocalityCode = "";
@@ -60,18 +60,6 @@ namespace CSP.APIModules
         }
 
 #region Variables
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("3647ecd2-7316-42dc-a218-b48504becc0d")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
 
         string _DOB;
 
@@ -155,6 +143,16 @@ namespace CSP.APIModules
             set { repo.RandNum = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("3647ecd2-7316-42dc-a218-b48504becc0d")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -181,7 +179,7 @@ namespace CSP.APIModules
 
             Init();
 
-            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, DOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber, supervisorId);
+            engine.Helpers.WebService.CreateAssessmentAttempt(RandNum, CSPDOM, externalID, DOB, "M", LocalityCode, "Error", "Success", VisitSessionCode, ProtocolNumber, supervisorId);
             Delay.Milliseconds(0);
             
         }

@@ -41,7 +41,7 @@ namespace CSP.General
         /// </summary>
         public Verify_Secure_URL()
         {
-            URL = "https://cgst-qc-duo.cogstate.com/template.html#/Login";
+            CSPURL = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace CSP.General
 
 #region Variables
 
-        string _URL;
+        string _CSPURL;
 
         /// <summary>
-        /// Gets or sets the value of variable URL.
+        /// Gets or sets the value of variable CSPURL.
         /// </summary>
         [TestVariable("7d3ab88c-0fb5-4065-90d2-80e6d799ab12")]
-        public string URL
+        public string CSPURL
         {
-            get { return _URL; }
-            set { _URL = value; }
+            get { return _CSPURL; }
+            set { _CSPURL = value; }
         }
 
         /// <summary>
@@ -105,8 +105,8 @@ namespace CSP.General
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'State' to equal the specified value 'complete'. Associated repository item: 'CogstateSolutionPlatform'", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(0));
             repo.CogstateSolutionPlatform.SelfInfo.WaitForAttributeEqual(30000, "State", "complete");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (PageUrl>$URL) on item 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.SelfInfo, "PageUrl", URL);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (PageUrl>$CSPURL) on item 'CogstateSolutionPlatform'.", repo.CogstateSolutionPlatform.SelfInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.SelfInfo, "PageUrl", CSPURL);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "User successfully redirected to secure URL", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(2));

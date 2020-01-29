@@ -41,7 +41,7 @@ namespace CSP.General
         /// </summary>
         public Validate_Upload_Failure()
         {
-            DOM = "cgst-qc-duo.cogstate.com";
+            CSPDOM = "";
         }
 
         /// <summary>
@@ -53,18 +53,6 @@ namespace CSP.General
         }
 
 #region Variables
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("280aff49-d9c4-468c-bece-6c1951b0ef7e")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -109,8 +97,8 @@ namespace CSP.General
             Validate.Exists(repo.CogstateSolutionPlatform.Popups.NoInternetConnectionPopupInfo);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$DOM) on item 'CogstateSolutionPlatform.Popups.SyncURL'.", repo.CogstateSolutionPlatform.Popups.SyncURLInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.Popups.SyncURLInfo, "InnerText", DOM);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$CSPDOM) on item 'CogstateSolutionPlatform.Popups.SyncURL'.", repo.CogstateSolutionPlatform.Popups.SyncURLInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.Popups.SyncURLInfo, "InnerText", CSPDOM);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'/sync.html') on item 'CogstateSolutionPlatform.Popups.SyncURL'.", repo.CogstateSolutionPlatform.Popups.SyncURLInfo, new RecordItemIndex(3));
