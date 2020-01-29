@@ -3600,12 +3600,12 @@ namespace RedCapCloud
             /// Creates a new StudiesTable  folder.
             /// </summary>
             public StudiesTableFolder(RepoGenBaseFolder parentFolder) :
-                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
+                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
             {
                 _studynameInfo = new RepoItemInfo(this, "StudyName", "td[1]/div[@innertext>$StudyName]", 30000, null, "9ea93ae7-3e6b-4141-acce-9682ed7e21a8");
                 _studycategoryInfo = new RepoItemInfo(this, "StudyCategory", "td[2]/div[@innertext='Classic Database']", 30000, null, "65197492-b182-458a-b19e-575e7a944ba6");
                 _studysummaryInfo = new RepoItemInfo(this, "StudySummary", "td[5]/div[@innertext>$BriefSummary]", 30000, null, "297d3f3c-1ec9-42b9-ae20-4af8b304512c");
-                _existingstudyInfo = new RepoItemInfo(this, "ExistingStudy", "td[1]//div[@innertext=$ExistingStudy]", 30000, null, "792cfd2a-b2c0-458d-850a-67256e48782d");
+                _existingstudyInfo = new RepoItemInfo(this, "ExistingStudy", "td[1]/div[@innertext=$ExistingStudy]", 30000, null, "792cfd2a-b2c0-458d-850a-67256e48782d");
             }
 
             /// <summary>
