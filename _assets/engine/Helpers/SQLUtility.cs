@@ -28,7 +28,7 @@ namespace engine.Helpers
 	[UserCodeCollection]
 	public class SQLUtility
 	{
-		public static string  MoveOrigTestIdentifier;
+		
 		// You can use the "Insert New User Code Method" functionality from the context menu,
 		// to add a new method with the attribute [UserCodeMethod].
 		
@@ -37,7 +37,8 @@ namespace engine.Helpers
 		/// </summary>
 		public static DataTable dt = new DataTable();
 		public static string ResetToken;
-		//public static string N_TestIdentifier;
+		public static string MoveOrigTestIdentifier;
+		public static string NewTestIdentifier;
 		
 		/// <summary>
 		/// This will query the database and store the results of the completed assessment into a datatable. This will use the TestIdentifer
@@ -274,8 +275,8 @@ namespace engine.Helpers
                           ,[MovePrevTestIdentifier]
                            FROM [UserData].[PRWorkflowInstance]
                            where MovePrevTestIdentifier = @testIdentifier";
-			               
-					
+			
+			
 			do{
 				Delay.Duration(30000);
 				Report.Info( " Waiting for TestIdentifier");
@@ -292,22 +293,20 @@ namespace engine.Helpers
 					
 					da.Fill(dt);
 				
-			
+				
 			} while ( dt.Rows.Count < 1);
 			
-	
-			string N_TestIdentifier  = dt.Rows[0][0].ToString();
-		 MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
+			
+			NewTestIdentifier  = dt.Rows[0][0].ToString();
+			MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
 			string MovePrevTestIdentifier = dt.Rows[0][2].ToString();
 			
-			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + N_TestIdentifier);
+			Report.Log(ReportLevel.Info,  "New TestIdentifier: " + "  " + NewTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier);
 			
-			
-			
-				
 		}
+		
 		/// <summary>
 		/// This is a placeholder text. Please describe the purpose of the
 		/// user code method here. The method is published to the user code library
@@ -318,8 +317,6 @@ namespace engine.Helpers
 		{
 			//Validating the moved Testidentifier in the DB:
 			// QueryDB
-			
-			
 			dt.Reset();
 			
 			
@@ -329,8 +326,8 @@ namespace engine.Helpers
                           ,InvalidationReasonId
                            FROM [UserData].[PRWorkflowInstance]
                            where TestIdentifier = @MoveOrigTestIdentifier";
-			               
-					
+			
+			
 			do{
 				
 				Report.Info( " Validating The Move by checking the flag in the DB ");
@@ -344,19 +341,21 @@ namespace engine.Helpers
 				// Get the data from DB
 				
 				using (da)
-				da.Fill(dt);
+					
+					da.Fill(dt);
+				
 			} while ( dt.Rows.Count < 1);
 			
-			// capturing new TestIdentifier:
-			string  NewTestIdentifier  = dt.Rows[0][0].ToString();
+			
+			//string  NewTestIdentifier  = dt.Rows[0][0].ToString();
 			//string Move_OrigTestIdentifier = dt.Rows[0][1].ToString();
 			//string Move_PrevTestIdentifier = dt.Rows[0][2].ToString();
-			string ValidationFlag= dt.Rows[0][1].ToString();
+			string ValidationFlag = dt.Rows[0][1].ToString();
 			
 			//Pringting the resutls:
-			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + NewTestIdentifier);
+			Report.Log(ReportLevel.Info,  "New TestIdentifier: " + "  " + NewTestIdentifier);
 			Report.Log(ReportLevel.Info,  "ValidationFlag, if the flag is set to (1) the move passed if NOT the move failed: " + "  " + ValidationFlag);
-				
+			
 			
 		}
 		

@@ -39,7 +39,6 @@ namespace DCT
         DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
         DCTRepositoryFolders.REDCapCloud1AppFolder _redcapcloud1;
         DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
-        DCTRepositoryFolders.DataCleaningTool1AppFolder _datacleaningtool1;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -68,7 +67,6 @@ namespace DCT
             _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
             _redcapcloud1 = new DCTRepositoryFolders.REDCapCloud1AppFolder(this);
             _cogstatesolutionplatformchrome = new DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
-            _datacleaningtool1 = new DCTRepositoryFolders.DataCleaningTool1AppFolder(this);
         }
 
 #region Variables
@@ -290,15 +288,6 @@ namespace DCT
         {
             get { return _cogstatesolutionplatformchrome; }
         }
-
-        /// <summary>
-        /// The DataCleaningTool1 folder.
-        /// </summary>
-        [RepositoryFolder("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-        public virtual DCTRepositoryFolders.DataCleaningTool1AppFolder DataCleaningTool1
-        {
-            get { return _datacleaningtool1; }
-        }
     }
 
     /// <summary>
@@ -329,6 +318,11 @@ namespace DCT
             RepoItemInfo _destinationvisitfieldInfo;
             RepoItemInfo _destinationsubjectfieldInfo;
             RepoItemInfo _nooptionsitemInfo;
+            RepoItemInfo _selectstudyInfo;
+            RepoItemInfo _selectsubjectInfo;
+            RepoItemInfo _selectvisitInfo;
+            RepoItemInfo _findbycriteriaInfo;
+            RepoItemInfo _resultsheadingInfo;
 
             /// <summary>
             /// Creates a new DataCleaningTool  folder.
@@ -352,6 +346,11 @@ namespace DCT
                 _destinationvisitfieldInfo = new RepoItemInfo(this, "DestinationVisitField", ".//label[@innertext='Visit']", 30000, null, "5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34");
                 _destinationsubjectfieldInfo = new RepoItemInfo(this, "DestinationSubjectField", ".//label[@innertext='Subject']", 30000, null, "6bccceed-5896-4d21-9e92-2b50db29405f");
                 _nooptionsitemInfo = new RepoItemInfo(this, "NoOptionsItem", ".//body//div//p[@innertext='No Options']", 30000, null, "596463e8-50fb-4832-8fe5-c3358e0a090d");
+                _selectstudyInfo = new RepoItemInfo(this, "SelectStudy", ".//label[@innertext~'Choose a study']", 30000, null, "688f4790-565d-46ed-ba6f-5bdfb1e508be");
+                _selectsubjectInfo = new RepoItemInfo(this, "SelectSubject", ".//label[@innertext~'Choose a subject']", 30000, null, "f4f4a0ff-91a5-41b1-859c-459702c99230");
+                _selectvisitInfo = new RepoItemInfo(this, "Selectvisit", ".//label[@innertext~'Choose a visit']", 30000, null, "d9f20406-9b2a-4e64-b296-fcacdd99f491");
+                _findbycriteriaInfo = new RepoItemInfo(this, "FindByCriteria", ".//span[@innertext='Find By Criteria']", 30000, null, "b58ffb39-4988-4944-9416-87a4b57259d7");
+                _resultsheadingInfo = new RepoItemInfo(this, "ResultsHeading", ".//div[#'root']/div/div/div[3]/h5[@innertext~'Results']", 30000, null, "28f8a8b1-4fae-4018-99b7-601ab0ffa7e4");
             }
 
             /// <summary>
@@ -759,6 +758,126 @@ namespace DCT
                 get
                 {
                     return _nooptionsitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectStudy item.
+            /// </summary>
+            [RepositoryItem("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
+            public virtual Ranorex.LabelTag SelectStudy
+            {
+                get
+                {
+                    return _selectstudyInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectStudy item info.
+            /// </summary>
+            [RepositoryItemInfo("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
+            public virtual RepoItemInfo SelectStudyInfo
+            {
+                get
+                {
+                    return _selectstudyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectSubject item.
+            /// </summary>
+            [RepositoryItem("f4f4a0ff-91a5-41b1-859c-459702c99230")]
+            public virtual Ranorex.LabelTag SelectSubject
+            {
+                get
+                {
+                    return _selectsubjectInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectSubject item info.
+            /// </summary>
+            [RepositoryItemInfo("f4f4a0ff-91a5-41b1-859c-459702c99230")]
+            public virtual RepoItemInfo SelectSubjectInfo
+            {
+                get
+                {
+                    return _selectsubjectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Selectvisit item.
+            /// </summary>
+            [RepositoryItem("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
+            public virtual Ranorex.LabelTag Selectvisit
+            {
+                get
+                {
+                    return _selectvisitInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Selectvisit item info.
+            /// </summary>
+            [RepositoryItemInfo("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
+            public virtual RepoItemInfo SelectvisitInfo
+            {
+                get
+                {
+                    return _selectvisitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FindByCriteria item.
+            /// </summary>
+            [RepositoryItem("b58ffb39-4988-4944-9416-87a4b57259d7")]
+            public virtual Ranorex.SpanTag FindByCriteria
+            {
+                get
+                {
+                    return _findbycriteriaInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FindByCriteria item info.
+            /// </summary>
+            [RepositoryItemInfo("b58ffb39-4988-4944-9416-87a4b57259d7")]
+            public virtual RepoItemInfo FindByCriteriaInfo
+            {
+                get
+                {
+                    return _findbycriteriaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResultsHeading item.
+            /// </summary>
+            [RepositoryItem("28f8a8b1-4fae-4018-99b7-601ab0ffa7e4")]
+            public virtual Ranorex.H5Tag ResultsHeading
+            {
+                get
+                {
+                    return _resultsheadingInfo.CreateAdapter<Ranorex.H5Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResultsHeading item info.
+            /// </summary>
+            [RepositoryItemInfo("28f8a8b1-4fae-4018-99b7-601ab0ffa7e4")]
+            public virtual RepoItemInfo ResultsHeadingInfo
+            {
+                get
+                {
+                    return _resultsheadingInfo;
                 }
             }
         }
@@ -2300,150 +2419,6 @@ namespace DCT
                 get
                 {
                     return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The DataCleaningTool1AppFolder folder.
-        /// </summary>
-        [RepositoryFolder("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-        public partial class DataCleaningTool1AppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _selectstudyInfo;
-            RepoItemInfo _selectsubjectInfo;
-            RepoItemInfo _selectvisitInfo;
-            RepoItemInfo _findbycriteriaInfo;
-
-            /// <summary>
-            /// Creates a new DataCleaningTool1  folder.
-            /// </summary>
-            public DataCleaningTool1AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DataCleaningTool1", "/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']", parentFolder, 30000, null, false, "15097ba2-c426-4eaa-8bd9-ab23bae9eaf7", "")
-            {
-                _selectstudyInfo = new RepoItemInfo(this, "SelectStudy", ".//label[@innertext~'Choose a study']", 30000, null, "688f4790-565d-46ed-ba6f-5bdfb1e508be");
-                _selectsubjectInfo = new RepoItemInfo(this, "SelectSubject", ".//label[@innertext~'Choose a subject']", 30000, null, "f4f4a0ff-91a5-41b1-859c-459702c99230");
-                _selectvisitInfo = new RepoItemInfo(this, "Selectvisit", ".//label[@innertext~'Choose a visit']", 30000, null, "d9f20406-9b2a-4e64-b296-fcacdd99f491");
-                _findbycriteriaInfo = new RepoItemInfo(this, "FindByCriteria", ".//span[@innertext='Find By Criteria']", 30000, null, "b58ffb39-4988-4944-9416-87a4b57259d7");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SelectStudy item.
-            /// </summary>
-            [RepositoryItem("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
-            public virtual Ranorex.LabelTag SelectStudy
-            {
-                get
-                {
-                    return _selectstudyInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SelectStudy item info.
-            /// </summary>
-            [RepositoryItemInfo("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
-            public virtual RepoItemInfo SelectStudyInfo
-            {
-                get
-                {
-                    return _selectstudyInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SelectSubject item.
-            /// </summary>
-            [RepositoryItem("f4f4a0ff-91a5-41b1-859c-459702c99230")]
-            public virtual Ranorex.LabelTag SelectSubject
-            {
-                get
-                {
-                    return _selectsubjectInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SelectSubject item info.
-            /// </summary>
-            [RepositoryItemInfo("f4f4a0ff-91a5-41b1-859c-459702c99230")]
-            public virtual RepoItemInfo SelectSubjectInfo
-            {
-                get
-                {
-                    return _selectsubjectInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Selectvisit item.
-            /// </summary>
-            [RepositoryItem("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
-            public virtual Ranorex.LabelTag Selectvisit
-            {
-                get
-                {
-                    return _selectvisitInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Selectvisit item info.
-            /// </summary>
-            [RepositoryItemInfo("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
-            public virtual RepoItemInfo SelectvisitInfo
-            {
-                get
-                {
-                    return _selectvisitInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FindByCriteria item.
-            /// </summary>
-            [RepositoryItem("b58ffb39-4988-4944-9416-87a4b57259d7")]
-            public virtual Ranorex.SpanTag FindByCriteria
-            {
-                get
-                {
-                    return _findbycriteriaInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FindByCriteria item info.
-            /// </summary>
-            [RepositoryItemInfo("b58ffb39-4988-4944-9416-87a4b57259d7")]
-            public virtual RepoItemInfo FindByCriteriaInfo
-            {
-                get
-                {
-                    return _findbycriteriaInfo;
                 }
             }
         }

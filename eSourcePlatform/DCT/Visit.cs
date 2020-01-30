@@ -66,6 +66,16 @@ namespace DCT
             set { _visit1 = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
+        {
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -92,16 +102,16 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool1.Selectvisit' at Center.", repo.DataCleaningTool1.SelectvisitInfo, new RecordItemIndex(0));
-            repo.DataCleaningTool1.Selectvisit.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.Selectvisit' at Center.", repo.DataCleaningTool.SelectvisitInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.Selectvisit.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$visit1' with focus on 'DataCleaningTool1.Selectvisit'.", repo.DataCleaningTool1.SelectvisitInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool1.Selectvisit.PressKeys(visit1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$visit1' with focus on 'DataCleaningTool.Selectvisit'.", repo.DataCleaningTool.SelectvisitInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.Selectvisit.PressKeys(visit1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 750ms.", new RecordItemIndex(2));
+            Delay.Duration(750, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(3));
             Keyboard.Press("{TAB}");

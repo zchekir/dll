@@ -249,15 +249,25 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="23b6d694-156e-4f76-98ff-bc915ffe0822"
+			name="Validate_Results"
+			ref="885255cd-9b2f-4a57-a86f-cbfee7c9aa57"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 			name="DCT"
 			reportlevel="Info;20">
 				<parameters>
-					<param
-					name="Authentication"
-					value="Active Directory Password">
-					</param>
 					<param
 					name="RandNum"
 					value="">
@@ -468,6 +478,14 @@ rxversion="8.3">
 			name="ClickFindByCriteria"
 			ref="4bd6b653-9d23-4171-8284-dabedc95e86b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4751f434-d272-4185-84c8-8a9b623dda03"
@@ -763,6 +781,12 @@ rxversion="8.3">
 					variableid="99fae7ed-3ff9-463f-80e3-6bb9cd23a42e"
 					variablename="visit1">
 					</var>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -873,10 +897,6 @@ rxversion="8.3">
 			id="853a6bba-9006-4cea-915e-ee1a0a266d20"
 			name="Click_SubmitButton">
 			</testcase>
-			<setup
-			id="86d95c88-e18a-4a6b-a3d3-64f79d7621b1"
-			name="setup">
-			</setup>
 			<testcase
 			id="8701be3b-9559-4502-bc0c-635399be9d4c"
 			name="Click_NextButton">
@@ -906,6 +926,12 @@ rxversion="8.3">
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="f181992b-5848-45bd-b7b4-c20790faddb3"
 					variablename="StudyName">
+					</var>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1143,7 +1169,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="bae5f56b-527c-49c5-a650-c3597f30a7cf"
-			name="CfindByCriteria">
+			name="FindByCriteria">
 			</testcase>
 			<smartfoldernode
 			id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec"
@@ -1223,6 +1249,12 @@ rxversion="8.3">
 					variableid="7db035f8-8c46-4a44-9ec3-0104df4715f8"
 					variablename="Subject1">
 					</var>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1254,12 +1286,6 @@ rxversion="8.3">
 					variablename="dbPassword">
 					</var>
 					<var
-					dataname="Authentication"
-					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
-					variableid="eb61540a-fb4d-4dc9-a31b-da7d8e0c2955"
-					variablename="Authentication">
-					</var>
-					<var
 					dataname="TestIdentifier"
 					datasourceid="260f734b-e6c2-4f2d-97c6-b7a156b86674"
 					variableid="6564ccb3-9f1f-49b3-bf17-fc9f45477b9e"
@@ -1276,6 +1302,12 @@ rxversion="8.3">
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
 					variableid="014421c8-99a8-4638-a1b8-329b6244fb96"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="eb61540a-fb4d-4dc9-a31b-da7d8e0c2955"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1594,10 +1626,6 @@ rxversion="8.3">
 					<smartfoldernode
 					id="d4b8534f-2794-473e-9747-934afc8f284d"
 					name="DCT_Regression">
-						<setup
-						id="86d95c88-e18a-4a6b-a3d3-64f79d7621b1"
-						name="setup">
-						</setup>
 						<smartfoldernode
 						id="08010772-2a6d-489b-aca2-c618ceb9b0ad"
 						name="LoginToRCC">
@@ -1843,10 +1871,14 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="bae5f56b-527c-49c5-a650-c3597f30a7cf"
-							name="CfindByCriteria">
+							name="FindByCriteria">
 								<testmodule
 								id="4494c70b-ec28-4825-9e79-843242f86c81"
 								name="ClickFindByCriteria">
+								</testmodule>
+								<testmodule
+								id="23b6d694-156e-4f76-98ff-bc915ffe0822"
+								name="Validate_Results">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -2360,6 +2392,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					Database
+				</column>
+				<column>
+					Authentication
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

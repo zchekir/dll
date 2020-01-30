@@ -368,12 +368,6 @@ rxversion="8.3">
 			ref="8893f97d-6402-4354-9824-20a0162229b1">
 				<databinding>
 					<var
-					dataname="Authentication"
-					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
-					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
-					variablename="Authentication">
-					</var>
-					<var
 					dataname="Key"
 					datasourceid="8910e582-179c-46b6-adfe-45a9f8257291"
 					variableid="8e6959d3-3ca1-4bf1-b7ca-4657ef4aced1"
@@ -408,6 +402,12 @@ rxversion="8.3">
 					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
 					variableid="709d7ef8-5f93-4a0b-a867-796e4645472f"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
+					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -1338,10 +1338,6 @@ rxversion="8.3">
 			name="RedCapCloud"
 			reportlevel="Info;20">
 				<parameters>
-					<param
-					name="Authentication"
-					value="Active Directory Password">
-					</param>
 					<param
 					name="RandNum"
 					value="">
@@ -3657,6 +3653,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					Database
+				</column>
+				<column>
+					Authentication
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

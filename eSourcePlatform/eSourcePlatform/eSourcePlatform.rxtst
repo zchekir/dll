@@ -2562,7 +2562,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="VersionDeployed"
+					dataname="ServerVersionDeployed"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
 					variablename="ServerVersion">
@@ -2961,7 +2961,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="CSPClientVesrion "
+					dataname="ClientVersionDeployed"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
 					variablename="ClientVersion">
@@ -3108,20 +3108,12 @@ rxversion="8.3">
 			reportlevel="Info;20">
 				<parameters>
 					<param
-					name="DevopsPage"
-					value="api/devops">
-					</param>
-					<param
-					name="VersionDeployed"
+					name="ServerVersionDeployed"
 					value="1.11.0.38">
 					</param>
 					<param
-					name="CSPClientVesrion "
+					name="ClientVersionDeployed"
 					value="1.11.0-rc.38">
-					</param>
-					<param
-					name="Authentication"
-					value="Active Directory Password">
 					</param>
 					<param
 					name="RandNum"
@@ -3593,12 +3585,6 @@ rxversion="8.3">
 			ref="8893f97d-6402-4354-9824-20a0162229b1">
 				<databinding>
 					<var
-					dataname="Authentication"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
-					variablename="Authentication">
-					</var>
-					<var
 					dataname="Key"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="8e6959d3-3ca1-4bf1-b7ca-4657ef4aced1"
@@ -3633,6 +3619,12 @@ rxversion="8.3">
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 					variableid="709d7ef8-5f93-4a0b-a867-796e4645472f"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -5302,6 +5294,9 @@ rxversion="8.3">
 				<column>
 					Database
 				</column>
+				<column>
+					Authentication
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
@@ -5323,7 +5318,7 @@ rxversion="8.3">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="Smoke">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
