@@ -161,6 +161,9 @@ namespace ReportingLayer
             RepoItemInfo _dateslicerfromrangeInfo;
             RepoItemInfo _cleartestselectionsInfo;
             RepoItemInfo _protocolidcellInfo;
+            RepoItemInfo _filterbuttonInfo;
+            RepoItemInfo _expanddatefilterInfo;
+            RepoItemInfo _filterdatecheckboxInfo;
 
             /// <summary>
             /// Creates a new PowerBI  folder.
@@ -172,6 +175,9 @@ namespace ReportingLayer
                 _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "04a6379f-44ba-419b-b302-034971569815");
                 _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
                 _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 30000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
+                _filterbuttonInfo = new RepoItemInfo(this, "FilterButton", ".//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']", 30000, null, "f8ce8db1-03d7-47c6-b1b6-99c6bd175da9");
+                _expanddatefilterInfo = new RepoItemInfo(this, "ExpandDateFilter", ".//div[@class='cardHeader flex']//h2[@title~'DateOfAssessment']/following-sibling::button[@title='Expand']", 30000, null, "9b1e4530-d0a7-4ed2-9d37-a73b98d65631");
+                _filterdatecheckboxInfo = new RepoItemInfo(this, "FilterDateCheckbox", ".//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]/li/div[2]/div[2]//tag[@tagname='visual']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div[9]/?/?/div/span", 30000, null, "effa4a30-6e08-4cd5-8e5a-2a0205ce2fb4");
             }
 
             /// <summary>
@@ -291,6 +297,78 @@ namespace ReportingLayer
                 get
                 {
                     return _protocolidcellInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FilterButton item.
+            /// </summary>
+            [RepositoryItem("f8ce8db1-03d7-47c6-b1b6-99c6bd175da9")]
+            public virtual Ranorex.Button FilterButton
+            {
+                get
+                {
+                    return _filterbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FilterButton item info.
+            /// </summary>
+            [RepositoryItemInfo("f8ce8db1-03d7-47c6-b1b6-99c6bd175da9")]
+            public virtual RepoItemInfo FilterButtonInfo
+            {
+                get
+                {
+                    return _filterbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExpandDateFilter item.
+            /// </summary>
+            [RepositoryItem("9b1e4530-d0a7-4ed2-9d37-a73b98d65631")]
+            public virtual Ranorex.Button ExpandDateFilter
+            {
+                get
+                {
+                    return _expanddatefilterInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExpandDateFilter item info.
+            /// </summary>
+            [RepositoryItemInfo("9b1e4530-d0a7-4ed2-9d37-a73b98d65631")]
+            public virtual RepoItemInfo ExpandDateFilterInfo
+            {
+                get
+                {
+                    return _expanddatefilterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FilterDateCheckbox item.
+            /// </summary>
+            [RepositoryItem("effa4a30-6e08-4cd5-8e5a-2a0205ce2fb4")]
+            public virtual Ranorex.SpanTag FilterDateCheckbox
+            {
+                get
+                {
+                    return _filterdatecheckboxInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FilterDateCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("effa4a30-6e08-4cd5-8e5a-2a0205ce2fb4")]
+            public virtual RepoItemInfo FilterDateCheckboxInfo
+            {
+                get
+                {
+                    return _filterdatecheckboxInfo;
                 }
             }
         }

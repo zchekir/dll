@@ -33,10 +33,10 @@ namespace CSP.General
             // Your recording specific initialization code goes here.
         }
 
-        public void Open_DevOps_Browser(string URL, string DevopsPage, string Browser)
+        public void Open_DevOps_Browser(string URL, string Browser)
         {
             Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'Chrome' in normal mode.");
-            Host.Current.OpenBrowser(URL + DevopsPage, Browser, "", false, false, false, false, false, true);
+            Host.Current.OpenBrowser(URL + "api/devops", Browser, "", false, false, false, false, false, true);
         }
 
     }

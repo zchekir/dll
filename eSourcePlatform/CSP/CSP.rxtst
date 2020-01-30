@@ -1085,12 +1085,6 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Authentication"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="8c2baad2-5ea4-454f-b189-a4b7e6bbf83e"
-					variablename="Authentication">
-					</var>
-					<var
 					dataname="TestIdentifier"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="71244c15-4b98-4504-9f68-5b400a580d59"
@@ -1125,6 +1119,12 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="56ca321f-3094-4886-8c9f-92983c426690"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="8c2baad2-5ea4-454f-b189-a4b7e6bbf83e"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1364,20 +1364,12 @@ rxversion="8.3">
 			warnunboundvariables="False">
 				<parameters>
 					<param
-					name="DevopsPage"
-					value="api/devops">
-					</param>
-					<param
 					name="ServerVersionDeployed"
 					value="1.11.0.38">
 					</param>
 					<param
 					name="ClientVersionDeployed"
 					value="1.11.0-rc.38">
-					</param>
-					<param
-					name="Authentication"
-					value="Active Directory Password">
 					</param>
 					<param
 					name="RandNum"
@@ -1570,12 +1562,6 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Authentication"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f06f1069-da41-4674-8cf8-7d0426f56aa7"
-					variablename="Authentication">
-					</var>
-					<var
 					dataname="Key"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f149efa0-570c-4a8d-a3eb-ac86747536d5"
@@ -1604,6 +1590,12 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="33d9a492-d3e2-4b73-ae5d-bbf6949e215a"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f06f1069-da41-4674-8cf8-7d0426f56aa7"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3732,12 +3724,6 @@ rxversion="8.3">
 					variablename="Key">
 					</var>
 					<var
-					dataname="Authentication"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
-					variablename="Authentication">
-					</var>
-					<var
 					dataname="dbUsername"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="e5fbf288-cd10-4478-b174-b7cd244f894c"
@@ -3766,6 +3752,12 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="709d7ef8-5f93-4a0b-a867-796e4645472f"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -5031,6 +5023,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					Database
+				</column>
+				<column>
+					Authentication
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
