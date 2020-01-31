@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT.DCT_Page
 {
-    public partial class ConfirmInvalidated
+    public partial class Click_Invalidate
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

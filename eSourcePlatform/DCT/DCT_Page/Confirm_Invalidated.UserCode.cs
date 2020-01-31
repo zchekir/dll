@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT.DCT_Page
 {
-    public partial class ClickInvalidate
+    public partial class Confirm_Invalidated
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,15 +31,6 @@ namespace DCT.DCT_Page
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-//Click invalidate Button:
-        public void Invalidate()
-        {  //"//span[@innertext='invalidate']"
-             // String xpath ="/span[@innertext='invalidate']";
-        	  Delay.Milliseconds (1000);
-        	  WebElement ClickInvalidate = "/span[@innertext='invalidate']";
-        	  Delay.Milliseconds (200);
-        	  ClickInvalidate.Click();
         }
 
     }

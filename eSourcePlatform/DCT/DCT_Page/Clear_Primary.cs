@@ -24,29 +24,29 @@ namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ConfirmInvalidated recording.
+    ///The Clear_Primary recording.
     /// </summary>
-    [TestModule("4711457f-830a-4dcc-b010-ddb7cff95882", ModuleType.Recording, 1)]
-    public partial class ConfirmInvalidated : ITestModule
+    [TestModule("43d4b22b-c198-427b-a835-787c01b1dfc8", ModuleType.Recording, 1)]
+    public partial class Clear_Primary : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static ConfirmInvalidated instance = new ConfirmInvalidated();
+        static Clear_Primary instance = new Clear_Primary();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ConfirmInvalidated()
+        public Clear_Primary()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ConfirmInvalidated Instance
+        public static Clear_Primary Instance
         {
             get { return instance; }
         }
@@ -89,9 +89,13 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='yes') on item 'DataCleaningTool.PrimaryValidation'.", repo.DataCleaningTool.PrimaryValidationInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.DataCleaningTool.PrimaryValidationInfo, "InnerText", "yes");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClearPrimaryButton' at Center.", repo.DataCleaningTool.ClearPrimaryButtonInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.ClearPrimaryButton.Click(30);
+            Delay.Milliseconds(470);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ConfirmButton' at Center.", repo.DataCleaningTool.ConfirmButtonInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.ConfirmButton.Click(30);
+            Delay.Milliseconds(470);
             
         }
 

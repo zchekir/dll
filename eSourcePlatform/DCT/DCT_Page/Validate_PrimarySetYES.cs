@@ -24,29 +24,29 @@ namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ClickInvalidate recording.
+    ///The Validate_PrimarySetYES recording.
     /// </summary>
-    [TestModule("60f61c6d-2be8-41b8-afd0-3ad94c33df75", ModuleType.Recording, 1)]
-    public partial class ClickInvalidate : ITestModule
+    [TestModule("acbe9a03-b8a8-4911-84b9-f167d001e7de", ModuleType.Recording, 1)]
+    public partial class Validate_PrimarySetYES : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static ClickInvalidate instance = new ClickInvalidate();
+        static Validate_PrimarySetYES instance = new Validate_PrimarySetYES();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ClickInvalidate()
+        public Validate_PrimarySetYES()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ClickInvalidate Instance
+        public static Validate_PrimarySetYES Instance
         {
             get { return instance; }
         }
@@ -89,12 +89,11 @@ namespace DCT.DCT_Page
 
             Init();
 
-            //Invalidate();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='yes') on item 'DataCleaningTool.PrimaryValidation'.", repo.DataCleaningTool.PrimaryValidationInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.DataCleaningTool.PrimaryValidationInfo, "InnerText", "yes");
+            Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.InvalidButton' at Center.", repo.DataCleaningTool.InvalidButtonInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool.InvalidButton.Click();
-            Delay.Milliseconds(200);
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.DataCleaningTool.Self, false, new RecordItemIndex(1));
             
         }
 

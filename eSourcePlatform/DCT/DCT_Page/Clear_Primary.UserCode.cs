@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT.DCT_Page
 {
-    public partial class Close_Browser
+    public partial class Clear_Primary
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

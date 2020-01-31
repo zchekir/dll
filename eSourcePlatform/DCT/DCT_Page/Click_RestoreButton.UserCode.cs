@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace DCT.DCT_Page
 {
-    public partial class ValidatePrimarySetYES
+    public partial class Click_RestoreButton
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,6 +31,15 @@ namespace DCT.DCT_Page
         private void Init()
         {
             // Your recording specific initialization code goes here.
+        }
+
+        public void ClickResroe()
+        {
+            //Click Results:
+        	   Delay.Milliseconds(400);
+        	   WebElement ClickRestore ="//span[@innertext='restore']";
+        	   Mouse.MoveTo(ClickRestore);
+        	   ClickRestore .Click();
         }
 
     }

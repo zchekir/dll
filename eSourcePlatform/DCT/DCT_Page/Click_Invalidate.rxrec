@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="b51f2390-cb01-4ca0-ac2f-d009a496b014"
+id="60f61c6d-2be8-41b8-afd0-3ad94c33df75"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ClickRestoreButton
+		Click_Invalidate
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ClickRestoreButton"
+	classname="Click_Invalidate"
 	namespace="DCT.DCT_Page">
 	</codegen>
 	<variables>
@@ -35,10 +35,10 @@ rxversion="8.3">
 		duration="500ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="30ms"
 		optional="False"
-		searchpropertyid="cc7fe006-88f3-469f-a514-18ee5dabd670"
-		sx="3478"
+		searchpropertyid="e8937059-2c1c-41c2-8370-ce95ed95dab1"
+		sx="3237"
 		sy="507"
 		warnoutofbounds="False">
 			<comment>
@@ -46,17 +46,17 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="dcad520b-c5c1-43c8-84e3-9c49e20656ca"
+			id="d51ef50b-cc93-42e6-9669-6ad2db192605"
 			sourcename="RepositoryEditor">
 				<element
-				capabilities="webelement, spantag"
+				capabilities="webelement, buttontag"
 				dontcache="True"
 				enabled="True"
 				flavor="chromeweb"
 				hasfocus="False"
 				index="0"
-				prefcap="spantag"
-				rect="3447,495,63,24"
+				prefcap="buttontag"
+				rect="3181,489,113,36"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -64,7 +64,7 @@ rxversion="8.3">
 					<attribute
 					name="class"
 					type="System.String">
-						jss165
+						jss161 jss164 jss175 jss178 jss237
 					</attribute>
 					<attribute
 					name="draggable"
@@ -77,18 +77,43 @@ rxversion="8.3">
 						False
 					</attribute>
 					<attribute
+					name="id"
+					type="System.String">
+						action-row-invalidate-button
+					</attribute>
+					<attribute
 					name="innertext"
 					type="System.String">
-						restore
 					</attribute>
 					<attribute
 					name="tagname"
 					type="System.String">
-						span
+						button
 					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tabindex"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-restore-button']/span[@innertext='restore']
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-invalidate-button']
 				</path>
 			</info>
 		</mouseitem>
@@ -109,7 +134,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ClickRestoreButton.UserCode.cs
+		Click_Invalidate.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

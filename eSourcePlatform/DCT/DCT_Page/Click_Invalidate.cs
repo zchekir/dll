@@ -24,29 +24,29 @@ namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ClickRestoreButton recording.
+    ///The Click_Invalidate recording.
     /// </summary>
-    [TestModule("b51f2390-cb01-4ca0-ac2f-d009a496b014", ModuleType.Recording, 1)]
-    public partial class ClickRestoreButton : ITestModule
+    [TestModule("60f61c6d-2be8-41b8-afd0-3ad94c33df75", ModuleType.Recording, 1)]
+    public partial class Click_Invalidate : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static ClickRestoreButton instance = new ClickRestoreButton();
+        static Click_Invalidate instance = new Click_Invalidate();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ClickRestoreButton()
+        public Click_Invalidate()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ClickRestoreButton Instance
+        public static Click_Invalidate Instance
         {
             get { return instance; }
         }
@@ -89,9 +89,9 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.RestoreButton_' at Center.", repo.DataCleaningTool.RestoreButton_Info, new RecordItemIndex(0));
-            repo.DataCleaningTool.RestoreButton_.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.InvalidateButton' at Center.", repo.DataCleaningTool.InvalidateButtonInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.InvalidateButton.Click(30);
+            Delay.Milliseconds(470);
             
         }
 

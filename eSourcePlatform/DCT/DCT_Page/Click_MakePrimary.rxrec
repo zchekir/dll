@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="60f61c6d-2be8-41b8-afd0-3ad94c33df75"
+id="8ec2bc44-7af4-4d5c-8a0e-265b0c4a7b82"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ClickInvalidate
+		Click_MakePrimary
 	</name>
 	<repeatcount>
 		1
@@ -23,38 +23,22 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ClickInvalidate"
+	classname="Click_MakePrimary"
 	namespace="DCT.DCT_Page">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ClickInvalidate"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="Invalidate"
-		namespace="DCT.DCT_Page"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="72f9c64c-b992-4426-801b-45fd9be1f19f">
-			</arguments>
-		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="30ms"
 		optional="False"
-		searchpropertyid="e8937059-2c1c-41c2-8370-ce95ed95dab1"
-		sx="3237"
+		searchpropertyid="1523266d-c289-4ca7-a844-dae56d57c8b3"
+		sx="3373"
 		sy="507"
 		warnoutofbounds="False">
 			<comment>
@@ -62,17 +46,17 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="d51ef50b-cc93-42e6-9669-6ad2db192605"
+			id="8a0da0d6-6903-467a-8b3a-441a0225f30c"
 			sourcename="RepositoryEditor">
 				<element
-				capabilities="webelement, buttontag"
+				capabilities="webelement, spantag"
 				dontcache="True"
 				enabled="True"
 				flavor="chromeweb"
 				hasfocus="False"
 				index="0"
-				prefcap="buttontag"
-				rect="3181,489,113,36"
+				prefcap="spantag"
+				rect="3320,495,107,24"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -80,7 +64,7 @@ rxversion="8.3">
 					<attribute
 					name="class"
 					type="System.String">
-						jss161 jss164 jss175 jss178 jss237
+						jss165
 					</attribute>
 					<attribute
 					name="draggable"
@@ -93,43 +77,18 @@ rxversion="8.3">
 						False
 					</attribute>
 					<attribute
-					name="id"
-					type="System.String">
-						action-row-invalidate-button
-					</attribute>
-					<attribute
 					name="innertext"
 					type="System.String">
+						make primary
 					</attribute>
 					<attribute
 					name="tagname"
 					type="System.String">
-						button
+						span
 					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						button
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="tabindex"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-invalidate-button']
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-make-primary-button']/span[@innertext='make primary']
 				</path>
 			</info>
 		</mouseitem>
@@ -150,7 +109,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ClickInvalidate.UserCode.cs
+		Click_MakePrimary.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

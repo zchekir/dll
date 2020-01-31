@@ -43,7 +43,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,buttontag"
 			capname="buttontag"
 			id="d51ef50b-cc93-42e6-9669-6ad2db192605"
-			name="InvalidButton"
+			name="InvalidateButton"
 			refimgid="6b4b6052-1a3b-48a3-bdb5-1a58d7982953"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-invalidate-button']
@@ -52,7 +52,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="dcad520b-c5c1-43c8-84e3-9c49e20656ca"
-			name="RestoreButton_"
+			name="RestoreButton"
 			refimgid="181def7b-55e6-4f86-b759-a82026105528"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-restore-button']/span[@innertext='restore']
@@ -88,7 +88,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="8a0da0d6-6903-467a-8b3a-441a0225f30c"
-			name="ClickMakePrimary"
+			name="MakePrimaryButton"
 			refimgid="c551cc99-c3d4-42a7-8c2d-44595d44549f"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-make-primary-button']/span[@innertext='make primary']
@@ -124,7 +124,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="e0ce542a-7e79-45b6-ba96-42c007565214"
-			name="ClearPrimary"
+			name="ClearPrimaryButton"
 			refimgid="3d94c7e1-4b8d-4c90-84e8-6e9370747046"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-clear-primary-button']/span[@innertext='clear primary']
@@ -443,6 +443,44 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="67e4e3c1-b80e-4916-ac48-42c2ed4dae8b"
+		isrooted="True"
+		name="LeaveSite"
+		refpath="/form[@title='Leave site?']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="6cc905b8-3b2a-42c7-a7b1-d4088aad6607"
+			name="Leave"
+			refimgid="13b629a9-24a1-4dba-a04c-5cbc27a4f4ff"
+			refpath="/form[@title='Leave site?']/container[@accessiblename='']/container[2]/container[@accessiblerole='Pane']/button[@accessiblename='Leave']"
+			searchtimeout="30000ms">
+				/form[@title='Leave site?']/container[@accessiblename='']//button[@accessiblename='Leave']
+			</item>
+			<basepath>
+				/form[@title='Leave site?']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"
 		id="29fb0691-ee86-4289-abe1-a78470d5da1d"
@@ -568,6 +606,43 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="c3587369-faf2-4be6-a9b8-82cc31d5ad93"
+		isrooted="True"
+		name="REDCapCloudGoogleChrome"
+		refpath="/form[@title='REDCap Cloud - Google Chrome']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="5245351e-02ed-495a-ad53-a9cdf6cc7fd0"
+			name="RCC_Username"
+			refimgid="8467fb27-5c0d-4f71-863d-e2dd19046aef"
+			searchtimeout="30000ms">
+				/form[@title~'^REDCap\ Cloud\ -\ Google\ Chr']//text[@accessiblename='Username']
+			</item>
+			<basepath>
+				/form[@title~'^REDCap\ Cloud\ -\ Google\ Chr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
+pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
+sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
+M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
+q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
+hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
+ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
+RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
+sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
+MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
+RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"
 		id="83d87542-91e4-4062-831c-e71dae0b7938"
@@ -597,7 +672,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="cb458012-66d2-43c8-90cf-f9dc911f0576"
-			name="PowerShallConsol"
+			name="PowerShellConsol"
 			refimgid="2d16a453-05d8-40ca-b3b2-77248f6a6204"
 			searchtimeout="30000ms">
 				/dom[@domain=$AzureDOM]//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span

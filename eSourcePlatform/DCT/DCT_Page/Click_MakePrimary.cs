@@ -24,29 +24,29 @@ namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ClickMakePrimary recording.
+    ///The Click_MakePrimary recording.
     /// </summary>
     [TestModule("8ec2bc44-7af4-4d5c-8a0e-265b0c4a7b82", ModuleType.Recording, 1)]
-    public partial class ClickMakePrimary : ITestModule
+    public partial class Click_MakePrimary : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static ClickMakePrimary instance = new ClickMakePrimary();
+        static Click_MakePrimary instance = new Click_MakePrimary();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ClickMakePrimary()
+        public Click_MakePrimary()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ClickMakePrimary Instance
+        public static Click_MakePrimary Instance
         {
             get { return instance; }
         }
@@ -89,9 +89,9 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickMakePrimary' at Center.", repo.DataCleaningTool.ClickMakePrimaryInfo, new RecordItemIndex(0));
-            repo.DataCleaningTool.ClickMakePrimary.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.MakePrimaryButton' at Center.", repo.DataCleaningTool.MakePrimaryButtonInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.MakePrimaryButton.Click(30);
+            Delay.Milliseconds(470);
             
         }
 

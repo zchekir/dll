@@ -107,8 +107,8 @@ namespace DCT.DCT_Page
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'DataCleaningTool.EnterTestIdentifierField'.", repo.DataCleaningTool.EnterTestIdentifierFieldInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool.EnterTestIdentifierField.PressKeys(TestIdentifier);
-            Delay.Milliseconds(0);
+            repo.DataCleaningTool.EnterTestIdentifierField.PressKeys(TestIdentifier, 10);
+            Delay.Milliseconds(20);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
             Delay.Duration(500, false);

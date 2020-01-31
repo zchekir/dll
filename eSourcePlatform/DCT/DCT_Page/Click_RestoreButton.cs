@@ -24,29 +24,29 @@ namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Close_Browser recording.
+    ///The Click_RestoreButton recording.
     /// </summary>
-    [TestModule("a08780b4-c315-4471-9b06-4aa5cb21672c", ModuleType.Recording, 1)]
-    public partial class Close_Browser : ITestModule
+    [TestModule("b51f2390-cb01-4ca0-ac2f-d009a496b014", ModuleType.Recording, 1)]
+    public partial class Click_RestoreButton : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static Close_Browser instance = new Close_Browser();
+        static Click_RestoreButton instance = new Click_RestoreButton();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Close_Browser()
+        public Click_RestoreButton()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Close_Browser Instance
+        public static Click_RestoreButton Instance
         {
             get { return instance; }
         }
@@ -89,9 +89,9 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.DataCleaningTool.Self, new Duration(0));
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.RestoreButton' at Center.", repo.DataCleaningTool.RestoreButtonInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.RestoreButton.Click(30);
+            Delay.Milliseconds(470);
             
         }
 

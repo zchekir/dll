@@ -5,7 +5,7 @@ id="acbe9a03-b8a8-4911-84b9-f167d001e7de"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ValidatePrimarySetYES
+		Validate_PrimarySetYES
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ValidatePrimarySetYES"
+	classname="Validate_PrimarySetYES"
 	namespace="DCT.DCT_Page">
 	</codegen>
 	<variables>
@@ -167,6 +167,13 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 			</comment>
 			<bindings>
 			</bindings>
+			<info
+			id="8d2bb7de-1088-4124-a99c-b77e11c31af1"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DCTDOM]
+				</path>
+			</info>
 		</loggingrecorditem>
 	</recorditems>
 	<repository
@@ -185,7 +192,7 @@ BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ValidatePrimarySetYES.UserCode.cs
+		Validate_PrimarySetYES.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

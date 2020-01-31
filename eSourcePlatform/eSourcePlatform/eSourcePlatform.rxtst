@@ -1331,20 +1331,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="5fbd2905-db75-4403-9930-93cfefca9702"
-			name="Close_Browser"
-			ref="a08780b4-c315-4471-9b06-4aa5cb21672c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DCTDOM"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
-					variablename="DCTDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="6019ac06-4d85-440a-ab02-5127c387cd2a"
 			name="Add_Instrument_to_Event">
@@ -1481,6 +1467,20 @@ rxversion="8.3">
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="68d212d1-5df7-4e91-87c5-db6e8fa072d1"
+			name="CloseDCT"
+			ref="7bceac10-42f9-4317-8de5-3e37a1b5b379"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DCTDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4814,8 +4814,8 @@ rxversion="8.3">
 								name="Confirm_Move">
 								</testmodule>
 								<testmodule
-								id="5fbd2905-db75-4403-9930-93cfefca9702"
-								name="Close_Browser">
+								id="68d212d1-5df7-4e91-87c5-db6e8fa072d1"
+								name="CloseDCT">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>

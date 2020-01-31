@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8ec2bc44-7af4-4d5c-8a0e-265b0c4a7b82"
+id="b51f2390-cb01-4ca0-ac2f-d009a496b014"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ClickMakePrimary
+		Click_RestoreButton
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ClickMakePrimary"
+	classname="Click_RestoreButton"
 	namespace="DCT.DCT_Page">
 	</codegen>
 	<variables>
@@ -35,10 +35,10 @@ rxversion="8.3">
 		duration="500ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="30ms"
 		optional="False"
-		searchpropertyid="1523266d-c289-4ca7-a844-dae56d57c8b3"
-		sx="3373"
+		searchpropertyid="cc7fe006-88f3-469f-a514-18ee5dabd670"
+		sx="3478"
 		sy="507"
 		warnoutofbounds="False">
 			<comment>
@@ -46,7 +46,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="8a0da0d6-6903-467a-8b3a-441a0225f30c"
+			id="dcad520b-c5c1-43c8-84e3-9c49e20656ca"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, spantag"
@@ -56,7 +56,7 @@ rxversion="8.3">
 				hasfocus="False"
 				index="0"
 				prefcap="spantag"
-				rect="3320,495,107,24"
+				rect="3447,495,63,24"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -79,7 +79,7 @@ rxversion="8.3">
 					<attribute
 					name="innertext"
 					type="System.String">
-						make primary
+						restore
 					</attribute>
 					<attribute
 					name="tagname"
@@ -88,7 +88,7 @@ rxversion="8.3">
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-make-primary-button']/span[@innertext='make primary']
+					/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']//button[#'action-row-restore-button']/span[@innertext='restore']
 				</path>
 			</info>
 		</mouseitem>
@@ -109,7 +109,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ClickMakePrimary.UserCode.cs
+		Click_RestoreButton.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

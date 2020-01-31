@@ -24,29 +24,29 @@ namespace DCT.DCT_Page
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ValidatePrimarySetYES recording.
+    ///The Confirm_Invalidated recording.
     /// </summary>
-    [TestModule("acbe9a03-b8a8-4911-84b9-f167d001e7de", ModuleType.Recording, 1)]
-    public partial class ValidatePrimarySetYES : ITestModule
+    [TestModule("4711457f-830a-4dcc-b010-ddb7cff95882", ModuleType.Recording, 1)]
+    public partial class Confirm_Invalidated : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static ValidatePrimarySetYES instance = new ValidatePrimarySetYES();
+        static Confirm_Invalidated instance = new Confirm_Invalidated();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ValidatePrimarySetYES()
+        public Confirm_Invalidated()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ValidatePrimarySetYES Instance
+        public static Confirm_Invalidated Instance
         {
             get { return instance; }
         }
@@ -92,8 +92,6 @@ namespace DCT.DCT_Page
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='yes') on item 'DataCleaningTool.PrimaryValidation'.", repo.DataCleaningTool.PrimaryValidationInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.DataCleaningTool.PrimaryValidationInfo, "InnerText", "yes");
             Delay.Milliseconds(100);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(1));
             
         }
 
