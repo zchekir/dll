@@ -190,26 +190,14 @@
       <id>16a1bc1b-cd7a-48b0-b500-fff28946d777</id>
       <BoundTo>ff47d569-13ec-4539-9c20-ceeace14d4ca</BoundTo>
     </Compile>
-    <Compile Include="Browser\CloseBrowser.cs">
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>288d7162-19fc-44c1-82e2-cf72cdc08387</id>
-      <BoundTo>b09329a1-e3d2-4b9b-9aa7-3d86ede0a09b</BoundTo>
-    </Compile>
-    <Compile Include="Browser\CloseBrowser.UserCode.cs">
-      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>1163ef43-eb82-471c-a190-80c513f46fff</id>
-      <BoundTo>b09329a1-e3d2-4b9b-9aa7-3d86ede0a09b</BoundTo>
-    </Compile>
-    <Compile Include="Browser\CloseOpenApp.cs">
-      <DependentUpon>CloseOpenApp.rxrec</DependentUpon>
+    <Compile Include="Browser\CloseDCT.cs">
+      <DependentUpon>CloseDCT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>548fb939-97b8-4ede-8fb4-f24252b51045</id>
       <BoundTo>9f87f60d-26a5-4baf-97c8-400491dec388</BoundTo>
     </Compile>
-    <Compile Include="Browser\CloseOpenApp.UserCode.cs">
-      <DependentUpon>CloseOpenApp.rxrec</DependentUpon>
+    <Compile Include="Browser\CloseDCT.UserCode.cs">
+      <DependentUpon>CloseDCT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>49ba2725-1cb9-4482-804e-672204af9ae4</id>
       <BoundTo>9f87f60d-26a5-4baf-97c8-400491dec388</BoundTo>
@@ -225,18 +213,6 @@
       <DependentUpon>ClickFindByCriteria.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a640960b-63ed-4a42-8da6-82d3405b02c0</id>
-    </Compile>
-    <Compile Include="CSPLogOut.cs">
-      <BoundTo>9faa5ebd-25af-4b86-96d0-037daf3d503c</BoundTo>
-      <DependentUpon>CSPLogOut.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>c1a1b9ec-66f1-4c50-8b9c-1098addbf243</id>
-    </Compile>
-    <Compile Include="CSPLogOut.UserCode.cs">
-      <BoundTo>9faa5ebd-25af-4b86-96d0-037daf3d503c</BoundTo>
-      <DependentUpon>CSPLogOut.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>7b59bcf8-0b21-43b0-95ab-b2bc91ff2138</id>
     </Compile>
     <Compile Include="DCTRepository.cs">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
@@ -520,18 +496,6 @@
       <UserCode>true</UserCode>
       <id>c6991e33-97b3-4a9c-92dd-d9a2ec92712d</id>
     </Compile>
-    <Compile Include="N_Subject.cs">
-      <BoundTo>38e57827-450f-42ff-994a-fd484e7c3e56</BoundTo>
-      <DependentUpon>N_Subject.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>fe12366f-0b35-4c26-b58a-9fb634c58789</id>
-    </Compile>
-    <Compile Include="N_Subject.UserCode.cs">
-      <BoundTo>38e57827-450f-42ff-994a-fd484e7c3e56</BoundTo>
-      <DependentUpon>N_Subject.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>91496bba-9bb2-4657-9ebd-7afbebc4fcbc</id>
-    </Compile>
     <Compile Include="Program.cs">
       <id>48bd5997-8cb4-45fe-a332-d4476fe318a5</id>
     </Compile>
@@ -595,18 +559,6 @@
       <id>84b793f9-17c1-48da-aebd-fa4e0ab0db11</id>
       <BoundTo>370d4b1a-6f20-4400-8648-7f1cf0188194</BoundTo>
     </Compile>
-    <Compile Include="RCC_Page\LeavePage.cs">
-      <DependentUpon>LeavePage.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>e65d906d-113f-48cc-ba15-bf0118235392</id>
-      <BoundTo>ccdc9179-f3ff-4029-a3b4-9c381a43d624</BoundTo>
-    </Compile>
-    <Compile Include="RCC_Page\LeavePage.UserCode.cs">
-      <DependentUpon>LeavePage.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>bd45bfd1-e06a-43e9-8593-cc3cb3736b82</id>
-      <BoundTo>ccdc9179-f3ff-4029-a3b4-9c381a43d624</BoundTo>
-    </Compile>
     <Compile Include="RCC_Page\OpenCompositOutcome.cs">
       <DependentUpon>OpenCompositOutcome.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -630,18 +582,6 @@
       <UserCode>true</UserCode>
       <id>f257404b-a98b-49ec-b100-28399e32b176</id>
       <BoundTo>85ca1174-c349-4536-94a3-067f5e588351</BoundTo>
-    </Compile>
-    <Compile Include="RCC_Page\OpenSub.cs">
-      <DependentUpon>OpenSub.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>2eb6a1cd-d47e-4a47-b48c-98a7837100e8</id>
-      <BoundTo>3a4540c0-d50f-4b30-b86a-905fb777fb8e</BoundTo>
-    </Compile>
-    <Compile Include="RCC_Page\OpenSub.UserCode.cs">
-      <DependentUpon>OpenSub.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>7b8bd285-7a3f-4456-af4a-1e550f0e5710</id>
-      <BoundTo>3a4540c0-d50f-4b30-b86a-905fb777fb8e</BoundTo>
     </Compile>
     <Compile Include="RCC_Page\OpenSubject.cs">
       <DependentUpon>OpenSubject.rxrec</DependentUpon>
@@ -944,12 +884,7 @@
       <id>ff47d569-13ec-4539-9c20-ceeace14d4ca</id>
       <recordtableid>3c58db6f-d18b-4efc-9f55-1aa651e51eff</recordtableid>
     </None>
-    <None Include="Browser\CloseBrowser.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>b09329a1-e3d2-4b9b-9aa7-3d86ede0a09b</id>
-      <recordtableid>a58a0eda-d3f8-4786-8c9a-2e3884970874</recordtableid>
-    </None>
-    <None Include="Browser\CloseOpenApp.rxrec">
+    <None Include="Browser\CloseDCT.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>9f87f60d-26a5-4baf-97c8-400491dec388</id>
       <recordtableid>7bceac10-42f9-4317-8de5-3e37a1b5b379</recordtableid>
@@ -958,11 +893,6 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>488c6eb7-6048-48a1-9049-0b1ddf7a2c7c</id>
       <recordtableid>4bd6b653-9d23-4171-8284-dabedc95e86b</recordtableid>
-    </None>
-    <None Include="CSPLogOut.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>9faa5ebd-25af-4b86-96d0-037daf3d503c</id>
-      <recordtableid>e337af55-d453-4cc9-b275-a0909577698e</recordtableid>
     </None>
     <None Include="DCTRepository.rximg">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
@@ -1090,11 +1020,6 @@
       <id>81e9ee80-8575-4e62-858d-30b1055ecd25</id>
       <recordtableid>16b1546b-c467-4c79-af1a-70a9f12392b6</recordtableid>
     </None>
-    <None Include="N_Subject.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>38e57827-450f-42ff-994a-fd484e7c3e56</id>
-      <recordtableid>d7635c45-ecd6-4d03-9847-6176827a3379</recordtableid>
-    </None>
     <None Include="RCC_Page\Begin_Test.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>a779879f-9210-4eb9-8676-24426467c35e</id>
@@ -1120,11 +1045,6 @@
       <id>370d4b1a-6f20-4400-8648-7f1cf0188194</id>
       <recordtableid>d0095689-a29f-4e12-b935-b16779cc190b</recordtableid>
     </None>
-    <None Include="RCC_Page\LeavePage.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>ccdc9179-f3ff-4029-a3b4-9c381a43d624</id>
-      <recordtableid>4c535296-7123-44d2-aeaf-7b78d5a40580</recordtableid>
-    </None>
     <None Include="RCC_Page\OpenCompositOutcome.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>939a0e19-53ca-4f3b-8ff1-5c0aff511b9c</id>
@@ -1134,11 +1054,6 @@
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
       <id>85ca1174-c349-4536-94a3-067f5e588351</id>
       <recordtableid>d620ffba-f800-4fac-9678-46381969082c</recordtableid>
-    </None>
-    <None Include="RCC_Page\OpenSub.rxrec">
-      <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>
-      <id>3a4540c0-d50f-4b30-b86a-905fb777fb8e</id>
-      <recordtableid>9af398d0-7e59-4497-95b7-b4634d0271fb</recordtableid>
     </None>
     <None Include="RCC_Page\OpenSubject.rxrec">
       <BoundTo>9ed6b0f0-fd13-425f-b30f-73decc1816cd</BoundTo>

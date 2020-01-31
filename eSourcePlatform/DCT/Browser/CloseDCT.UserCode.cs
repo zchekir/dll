@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace DCT.RCC_Page
+namespace DCT.Browser
 {
-    public partial class OpenSub
+    public partial class CloseDCT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,6 +32,5 @@ namespace DCT.RCC_Page
         {
             // Your recording specific initialization code goes here.
         }
-
     }
 }

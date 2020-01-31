@@ -28,17 +28,11 @@ namespace DCT
     {
         static DCTRepository instance = new DCTRepository();
         DCTRepositoryFolders.DataCleaningToolAppFolder _datacleaningtool;
-        DCTRepositoryFolders.DataCleaningToolGoogleChromeAppFolder _datacleaningtoolgooglechrome;
         DCTRepositoryFolders.OctopusDeployAppFolder _octopusdeploy;
-        DCTRepositoryFolders.OverviewOctopusDeployGoogleChromAppFolder _overviewoctopusdeploygooglechrom;
         DCTRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
-        DCTRepositoryFolders.LeaveSiteAppFolder _leavesite;
         DCTRepositoryFolders.SignInAppFolder _signin;
         DCTRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
-        DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder _redcapcloudgooglechrome;
         DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
-        DCTRepositoryFolders.REDCapCloud1AppFolder _redcapcloud1;
-        DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -56,17 +50,11 @@ namespace DCT
             : base("DCTRepository", "/", null, 0, false, "1559d85e-a9d4-499b-8b78-a53d7c7c1eef", ".\\RepositoryImages\\DCTRepository1559d85e.rximgres")
         {
             _datacleaningtool = new DCTRepositoryFolders.DataCleaningToolAppFolder(this);
-            _datacleaningtoolgooglechrome = new DCTRepositoryFolders.DataCleaningToolGoogleChromeAppFolder(this);
             _octopusdeploy = new DCTRepositoryFolders.OctopusDeployAppFolder(this);
-            _overviewoctopusdeploygooglechrom = new DCTRepositoryFolders.OverviewOctopusDeployGoogleChromAppFolder(this);
             _redcapcloud = new DCTRepositoryFolders.REDCapCloudAppFolder(this);
-            _leavesite = new DCTRepositoryFolders.LeaveSiteAppFolder(this);
             _signin = new DCTRepositoryFolders.SignInAppFolder(this);
             _signintoyouraccount = new DCTRepositoryFolders.SignInToYourAccountAppFolder(this);
-            _redcapcloudgooglechrome = new DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder(this);
             _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
-            _redcapcloud1 = new DCTRepositoryFolders.REDCapCloud1AppFolder(this);
-            _cogstatesolutionplatformchrome = new DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
         }
 
 #region Variables
@@ -191,15 +179,6 @@ namespace DCT
         }
 
         /// <summary>
-        /// The DataCleaningToolGoogleChrome folder.
-        /// </summary>
-        [RepositoryFolder("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-        public virtual DCTRepositoryFolders.DataCleaningToolGoogleChromeAppFolder DataCleaningToolGoogleChrome
-        {
-            get { return _datacleaningtoolgooglechrome; }
-        }
-
-        /// <summary>
         /// The OctopusDeploy folder.
         /// </summary>
         [RepositoryFolder("3a3def39-3ad2-4434-8253-957aa95ab688")]
@@ -209,30 +188,12 @@ namespace DCT
         }
 
         /// <summary>
-        /// The OverviewOctopusDeployGoogleChrom folder.
-        /// </summary>
-        [RepositoryFolder("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-        public virtual DCTRepositoryFolders.OverviewOctopusDeployGoogleChromAppFolder OverviewOctopusDeployGoogleChrom
-        {
-            get { return _overviewoctopusdeploygooglechrom; }
-        }
-
-        /// <summary>
         /// The REDCapCloud folder.
         /// </summary>
         [RepositoryFolder("8c57a700-52e3-43b0-bb42-688fd9e5c8b2")]
         public virtual DCTRepositoryFolders.REDCapCloudAppFolder REDCapCloud
         {
             get { return _redcapcloud; }
-        }
-
-        /// <summary>
-        /// The LeaveSite folder.
-        /// </summary>
-        [RepositoryFolder("67e4e3c1-b80e-4916-ac48-42c2ed4dae8b")]
-        public virtual DCTRepositoryFolders.LeaveSiteAppFolder LeaveSite
-        {
-            get { return _leavesite; }
         }
 
         /// <summary>
@@ -254,39 +215,12 @@ namespace DCT
         }
 
         /// <summary>
-        /// The REDCapCloudGoogleChrome folder.
-        /// </summary>
-        [RepositoryFolder("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
-        public virtual DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder REDCapCloudGoogleChrome
-        {
-            get { return _redcapcloudgooglechrome; }
-        }
-
-        /// <summary>
         /// The KuduServices folder.
         /// </summary>
         [RepositoryFolder("83d87542-91e4-4062-831c-e71dae0b7938")]
         public virtual DCTRepositoryFolders.KuduServicesAppFolder KuduServices
         {
             get { return _kuduservices; }
-        }
-
-        /// <summary>
-        /// The REDCapCloud1 folder.
-        /// </summary>
-        [RepositoryFolder("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-        public virtual DCTRepositoryFolders.REDCapCloud1AppFolder REDCapCloud1
-        {
-            get { return _redcapcloud1; }
-        }
-
-        /// <summary>
-        /// The CogstateSolutionPlatformChrome folder.
-        /// </summary>
-        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-        public virtual DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder CogstateSolutionPlatformChrome
-        {
-            get { return _cogstatesolutionplatformchrome; }
         }
     }
 
@@ -883,72 +817,6 @@ namespace DCT
         }
 
         /// <summary>
-        /// The DataCleaningToolGoogleChromeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-        public partial class DataCleaningToolGoogleChromeAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _closappInfo;
-
-            /// <summary>
-            /// Creates a new DataCleaningToolGoogleChrome  folder.
-            /// </summary>
-            public DataCleaningToolGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DataCleaningToolGoogleChrome", "/form[@title~'^Data\\ Cleaning\\ Tool\\ -\\ Goog']", parentFolder, 30000, null, true, "c8b15f67-a005-4c0a-b1ad-7978cae56a3f", "")
-            {
-                _closappInfo = new RepoItemInfo(this, "ClosApp", ".//element[@accessiblename='Infobar']", 30000, null, "063547b3-c1fe-47cf-84c0-38d75dad0d37");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClosApp item.
-            /// </summary>
-            [RepositoryItem("063547b3-c1fe-47cf-84c0-38d75dad0d37")]
-            public virtual Ranorex.Unknown ClosApp
-            {
-                get
-                {
-                    return _closappInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClosApp item info.
-            /// </summary>
-            [RepositoryItemInfo("063547b3-c1fe-47cf-84c0-38d75dad0d37")]
-            public virtual RepoItemInfo ClosAppInfo
-            {
-                get
-                {
-                    return _closappInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The OctopusDeployAppFolder folder.
         /// </summary>
         [RepositoryFolder("3a3def39-3ad2-4434-8253-957aa95ab688")]
@@ -1119,72 +987,6 @@ namespace DCT
         }
 
         /// <summary>
-        /// The OverviewOctopusDeployGoogleChromAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-        public partial class OverviewOctopusDeployGoogleChromAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _closepageInfo;
-
-            /// <summary>
-            /// Creates a new OverviewOctopusDeployGoogleChrom  folder.
-            /// </summary>
-            public OverviewOctopusDeployGoogleChromAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("OverviewOctopusDeployGoogleChrom", "/form[@title~'^Overview\\ -\\ Octopus\\ Deploy']", parentFolder, 30000, null, true, "ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1", "")
-            {
-                _closepageInfo = new RepoItemInfo(this, "ClosePage", "container[@accessiblename~'^Overview\\ -\\ Octopus\\ Deploy']/container/container[2]/container[1]", 30000, null, "3354b5b3-888d-4a90-aca5-79270cb09f08");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClosePage item.
-            /// </summary>
-            [RepositoryItem("3354b5b3-888d-4a90-aca5-79270cb09f08")]
-            public virtual Ranorex.Container ClosePage
-            {
-                get
-                {
-                    return _closepageInfo.CreateAdapter<Ranorex.Container>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClosePage item info.
-            /// </summary>
-            [RepositoryItemInfo("3354b5b3-888d-4a90-aca5-79270cb09f08")]
-            public virtual RepoItemInfo ClosePageInfo
-            {
-                get
-                {
-                    return _closepageInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The REDCapCloudAppFolder folder.
         /// </summary>
         [RepositoryFolder("8c57a700-52e3-43b0-bb42-688fd9e5c8b2")]
@@ -1201,10 +1003,6 @@ namespace DCT
             RepoItemInfo _loginapplybuttonInfo;
             RepoItemInfo _loginpasswordInfo;
             DataCollectionWidgetCheckboxCompleteInfoClass _datacollectionwidgetcheckboxcompleteInfo;
-            RepoItemInfo _addsubjectInfo;
-            RepoItemInfo _sitesbuttonInfo;
-            RepoItemInfo _selectsiteInfo;
-            RepoItemInfo _subjectnumberInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -1223,10 +1021,6 @@ namespace DCT
                 _loginapplybuttonInfo = new RepoItemInfo(this, "LoginApplyButton", ".//button[#'login_applyButton']", 30000, null, "4a10d058-bb72-4a32-ab26-b56c3a0c5282");
                 _loginpasswordInfo = new RepoItemInfo(this, "LoginPassword", ".//input[#'login_password']", 30000, null, "ba64f708-3983-4c1b-bee1-8c60e98a4433");
                 _datacollectionwidgetcheckboxcompleteInfo = new DataCollectionWidgetCheckboxCompleteInfoClass(this);
-                _addsubjectInfo = new RepoItemInfo(this, "AddSubject", ".//button[#'studyBaseWidget_buttonCreateAdd']", 30000, null, "3b54ddb5-8585-49fe-92e8-cbcc70b6dc13");
-                _sitesbuttonInfo = new RepoItemInfo(this, "SitesButton", ".//button[#'enrollWidget_comboSites_button']", 30000, null, "9328280c-2573-49e2-a45f-27e9635d479a");
-                _selectsiteInfo = new RepoItemInfo(this, "selectSite", ".//a[@innertext~'2019']", 30000, null, "dead8fc1-6d55-4ecd-98eb-e5dc5365356e");
-                _subjectnumberInfo = new RepoItemInfo(this, "SubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "ed816dba-2dec-41ab-b191-edc9d053b81b");
             }
 
             /// <summary>
@@ -1551,168 +1345,6 @@ namespace DCT
                     return _datacollectionwidgetcheckboxcompleteInfo;
                 }
             }
-
-            /// <summary>
-            /// The AddSubject item.
-            /// </summary>
-            [RepositoryItem("3b54ddb5-8585-49fe-92e8-cbcc70b6dc13")]
-            public virtual Ranorex.ButtonTag AddSubject
-            {
-                get
-                {
-                    return _addsubjectInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AddSubject item info.
-            /// </summary>
-            [RepositoryItemInfo("3b54ddb5-8585-49fe-92e8-cbcc70b6dc13")]
-            public virtual RepoItemInfo AddSubjectInfo
-            {
-                get
-                {
-                    return _addsubjectInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SitesButton item.
-            /// </summary>
-            [RepositoryItem("9328280c-2573-49e2-a45f-27e9635d479a")]
-            public virtual Ranorex.ButtonTag SitesButton
-            {
-                get
-                {
-                    return _sitesbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SitesButton item info.
-            /// </summary>
-            [RepositoryItemInfo("9328280c-2573-49e2-a45f-27e9635d479a")]
-            public virtual RepoItemInfo SitesButtonInfo
-            {
-                get
-                {
-                    return _sitesbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The selectSite item.
-            /// </summary>
-            [RepositoryItem("dead8fc1-6d55-4ecd-98eb-e5dc5365356e")]
-            public virtual Ranorex.ATag selectSite
-            {
-                get
-                {
-                    return _selectsiteInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The selectSite item info.
-            /// </summary>
-            [RepositoryItemInfo("dead8fc1-6d55-4ecd-98eb-e5dc5365356e")]
-            public virtual RepoItemInfo selectSiteInfo
-            {
-                get
-                {
-                    return _selectsiteInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SubjectNumber item.
-            /// </summary>
-            [RepositoryItem("ed816dba-2dec-41ab-b191-edc9d053b81b")]
-            public virtual Ranorex.InputTag SubjectNumber
-            {
-                get
-                {
-                    return _subjectnumberInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SubjectNumber item info.
-            /// </summary>
-            [RepositoryItemInfo("ed816dba-2dec-41ab-b191-edc9d053b81b")]
-            public virtual RepoItemInfo SubjectNumberInfo
-            {
-                get
-                {
-                    return _subjectnumberInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The LeaveSiteAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("67e4e3c1-b80e-4916-ac48-42c2ed4dae8b")]
-        public partial class LeaveSiteAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _leaveInfo;
-
-            /// <summary>
-            /// Creates a new LeaveSite  folder.
-            /// </summary>
-            public LeaveSiteAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("LeaveSite", "/form[@title='Leave site?']", parentFolder, 30000, null, true, "67e4e3c1-b80e-4916-ac48-42c2ed4dae8b", "")
-            {
-                _leaveInfo = new RepoItemInfo(this, "Leave", "container[@accessiblename='']//button[@accessiblename='Leave']", 30000, null, "6cc905b8-3b2a-42c7-a7b1-d4088aad6607");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("67e4e3c1-b80e-4916-ac48-42c2ed4dae8b")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("67e4e3c1-b80e-4916-ac48-42c2ed4dae8b")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Leave item.
-            /// </summary>
-            [RepositoryItem("6cc905b8-3b2a-42c7-a7b1-d4088aad6607")]
-            public virtual Ranorex.Button Leave
-            {
-                get
-                {
-                    return _leaveInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Leave item info.
-            /// </summary>
-            [RepositoryItemInfo("6cc905b8-3b2a-42c7-a7b1-d4088aad6607")]
-            public virtual RepoItemInfo LeaveInfo
-            {
-                get
-                {
-                    return _leaveInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -1978,72 +1610,6 @@ namespace DCT
         }
 
         /// <summary>
-        /// The REDCapCloudGoogleChromeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
-        public partial class REDCapCloudGoogleChromeAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _rcc_usernameInfo;
-
-            /// <summary>
-            /// Creates a new REDCapCloudGoogleChrome  folder.
-            /// </summary>
-            public REDCapCloudGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("REDCapCloudGoogleChrome", "/form[@title~'^REDCap\\ Cloud\\ -\\ Google\\ Chr']", parentFolder, 30000, null, true, "c3587369-faf2-4be6-a9b8-82cc31d5ad93", "")
-            {
-                _rcc_usernameInfo = new RepoItemInfo(this, "RCC_Username", ".//text[@accessiblename='Username']", 30000, null, "5245351e-02ed-495a-ad53-a9cdf6cc7fd0");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("c3587369-faf2-4be6-a9b8-82cc31d5ad93")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RCC_Username item.
-            /// </summary>
-            [RepositoryItem("5245351e-02ed-495a-ad53-a9cdf6cc7fd0")]
-            public virtual Ranorex.Text RCC_Username
-            {
-                get
-                {
-                    return _rcc_usernameInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RCC_Username item info.
-            /// </summary>
-            [RepositoryItemInfo("5245351e-02ed-495a-ad53-a9cdf6cc7fd0")]
-            public virtual RepoItemInfo RCC_UsernameInfo
-            {
-                get
-                {
-                    return _rcc_usernameInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The KuduServicesAppFolder folder.
         /// </summary>
         [RepositoryFolder("83d87542-91e4-4062-831c-e71dae0b7938")]
@@ -2287,138 +1853,6 @@ namespace DCT
                 get
                 {
                     return _rcc_hubpowershallInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The REDCapCloud1AppFolder folder.
-        /// </summary>
-        [RepositoryFolder("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-        public partial class REDCapCloud1AppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _studynameInfo;
-            RepoItemInfo _entersubjectnumberInfo;
-
-            /// <summary>
-            /// Creates a new REDCapCloud1  folder.
-            /// </summary>
-            public REDCapCloud1AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("REDCapCloud1", "/dom[@domain='cgsqc.redcapcloud.com']", parentFolder, 30000, null, false, "ee5f1b78-cba3-4623-b016-bbed2259c88e", "")
-            {
-                _studynameInfo = new RepoItemInfo(this, "StudyName", ".//div[@innertext~'2019']", 30000, null, "8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48");
-                _entersubjectnumberInfo = new RepoItemInfo(this, "EnterSubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "972775f8-a766-4c55-8ce5-b63405dd6144");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The StudyName item.
-            /// </summary>
-            [RepositoryItem("8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48")]
-            public virtual Ranorex.DivTag StudyName
-            {
-                get
-                {
-                    return _studynameInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StudyName item info.
-            /// </summary>
-            [RepositoryItemInfo("8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48")]
-            public virtual RepoItemInfo StudyNameInfo
-            {
-                get
-                {
-                    return _studynameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EnterSubjectNumber item.
-            /// </summary>
-            [RepositoryItem("972775f8-a766-4c55-8ce5-b63405dd6144")]
-            public virtual Ranorex.InputTag EnterSubjectNumber
-            {
-                get
-                {
-                    return _entersubjectnumberInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EnterSubjectNumber item info.
-            /// </summary>
-            [RepositoryItemInfo("972775f8-a766-4c55-8ce5-b63405dd6144")]
-            public virtual RepoItemInfo EnterSubjectNumberInfo
-            {
-                get
-                {
-                    return _entersubjectnumberInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The CogstateSolutionPlatformChromeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-        public partial class CogstateSolutionPlatformChromeAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new CogstateSolutionPlatformChrome  folder.
-            /// </summary>
-            public CogstateSolutionPlatformChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CogstateSolutionPlatformChrome", "/form[@title~'Cogstate Solution Platform']", parentFolder, 30000, null, true, "1c825908-6a91-4415-8adf-2cb54b5f8fc9", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }

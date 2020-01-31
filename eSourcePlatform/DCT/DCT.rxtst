@@ -916,6 +916,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="89852fcf-fd10-4999-9e55-c7a8457d4d04"
+			name="CloseDCT"
+			ref="7bceac10-42f9-4317-8de5-3e37a1b5b379"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DCTDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8cfeb4e9-af11-4e7b-8ab9-fe2e8d13dcca"
 			name="SelectStudy"
 			ref="e9c0ac00-3de7-4009-828c-ea03cc80ff53"
@@ -2137,6 +2151,10 @@ rxversion="8.3">
 						<teardown
 						id="ca38dffe-f163-4d00-a399-f336bbc154fc"
 						name="teardown">
+							<testmodule
+							id="89852fcf-fd10-4999-9e55-c7a8457d4d04"
+							name="CloseDCT">
+							</testmodule>
 							<testmodule
 							id="8376d567-6aec-4473-8a1e-255b629717cd"
 							name="EmailModule">

@@ -24,34 +24,44 @@ namespace DCT.Browser
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseBrowser recording.
+    ///The CloseDCT recording.
     /// </summary>
-    [TestModule("a58a0eda-d3f8-4786-8c9a-2e3884970874", ModuleType.Recording, 1)]
-    public partial class CloseBrowser : ITestModule
+    [TestModule("7bceac10-42f9-4317-8de5-3e37a1b5b379", ModuleType.Recording, 1)]
+    public partial class CloseDCT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::DCT.DCTRepository repository.
         /// </summary>
         public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
 
-        static CloseBrowser instance = new CloseBrowser();
+        static CloseDCT instance = new CloseDCT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseBrowser()
+        public CloseDCT()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseBrowser Instance
+        public static CloseDCT Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
+        {
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
+        }
 
 #endregion
 
@@ -79,13 +89,9 @@ namespace DCT.Browser
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OverviewOctopusDeployGoogleChrom.ClosePage' at 1880;5.", repo.OverviewOctopusDeployGoogleChrom.ClosePageInfo, new RecordItemIndex(0));
-            //repo.OverviewOctopusDeployGoogleChrom.ClosePage.Click("1880;5");
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'OctopusDeploy'.", repo.OctopusDeploy.SelfInfo, new RecordItemIndex(1));
-            //Host.Current.CloseApplication(repo.OctopusDeploy.Self, new Duration(0));
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.DataCleaningTool.Self, 30000);
+            Delay.Milliseconds(0);
             
         }
 
