@@ -105,12 +105,12 @@ namespace DCT.DCT_Page
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(0));
             Delay.Duration(20000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShallConsol' at Center.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(1));
-            repo.KuduServices.PowerShallConsol.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShellConsol' at Center.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(1));
+            repo.KuduServices.PowerShellConsol.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVersionQuery' with focus on 'KuduServices.PowerShallConsol'.", repo.KuduServices.PowerShallConsolInfo, new RecordItemIndex(2));
-            repo.KuduServices.PowerShallConsol.PressKeys(DCTVersionQuery, 1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVersionQuery' with focus on 'KuduServices.PowerShellConsol'.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(2));
+            repo.KuduServices.PowerShellConsol.PressKeys(DCTVersionQuery, 1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));

@@ -43,7 +43,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,buttontag"
 			capname="buttontag"
 			id="d51ef50b-cc93-42e6-9669-6ad2db192605"
-			name="InvalidButton"
+			name="InvalidateButton"
 			refimgid="6b4b6052-1a3b-48a3-bdb5-1a58d7982953"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-invalidate-button']
@@ -52,7 +52,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="dcad520b-c5c1-43c8-84e3-9c49e20656ca"
-			name="RestoreButton_"
+			name="RestoreButton"
 			refimgid="181def7b-55e6-4f86-b759-a82026105528"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-restore-button']/span[@innertext='restore']
@@ -88,7 +88,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="8a0da0d6-6903-467a-8b3a-441a0225f30c"
-			name="ClickMakePrimary"
+			name="MakePrimaryButton"
 			refimgid="c551cc99-c3d4-42a7-8c2d-44595d44549f"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-make-primary-button']/span[@innertext='make primary']
@@ -124,7 +124,7 @@ rxversion="8.3">
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="e0ce542a-7e79-45b6-ba96-42c007565214"
-			name="ClearPrimary"
+			name="ClearPrimaryButton"
 			refimgid="3d94c7e1-4b8d-4c90-84e8-6e9370747046"
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//button[#'action-row-clear-primary-button']/span[@innertext='clear primary']
@@ -165,6 +165,51 @@ rxversion="8.3">
 			searchtimeout="30000ms">
 				/dom[@domain=$DCTDOM]//body//div//p[@innertext='No Options']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="labeltag"
+			id="688f4790-565d-46ed-ba6f-5bdfb1e508be"
+			name="SelectStudy"
+			refimgid="368f5b65-8611-4d10-8f7a-2d158860ee68"
+			searchtimeout="30000ms">
+				/dom[@domain=$DCTDOM]//label[@innertext~'Choose a study']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="labeltag"
+			id="f4f4a0ff-91a5-41b1-859c-459702c99230"
+			name="SelectSubject"
+			refimgid="b4993cea-ca6a-47e4-92a3-fd3a11694747"
+			searchtimeout="30000ms">
+				/dom[@domain=$DCTDOM]//label[@innertext~'Choose a subject']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="labeltag"
+			id="d9f20406-9b2a-4e64-b296-fcacdd99f491"
+			name="Selectvisit"
+			refimgid="250617f3-101d-46bc-aa78-72ee02ad8897"
+			searchtimeout="30000ms">
+				/dom[@domain=$DCTDOM]//label[@innertext~'Choose a visit']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="b58ffb39-4988-4944-9416-87a4b57259d7"
+			name="FindByCriteria"
+			refimgid="de38094f-ee66-4f85-9f75-3eadac1a83d9"
+			searchtimeout="30000ms">
+				/dom[@domain=$DCTDOM]//span[@innertext='Find By Criteria']
+			</item>
+			<item
+			addcaps="unknown,webelement,h5tag"
+			capname="h5tag"
+			id="28f8a8b1-4fae-4018-99b7-601ab0ffa7e4"
+			name="ResultsHeading"
+			refimgid="05a891de-16dc-4b72-933b-b62ec5ee8093"
+			searchtimeout="30000ms">
+				/dom[@domain=$DCTDOM]//div[#'root']/div/div/div[3]/h5[@innertext~'Results']
+			</item>
 			<basepath>
 				/dom[@domain=$DCTDOM]
 			</basepath>
@@ -182,43 +227,6 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="c8b15f67-a005-4c0a-b1ad-7978cae56a3f"
-		isrooted="True"
-		name="DataCleaningToolGoogleChrome"
-		refpath="/form[@title='Data Cleaning Tool - Google Chrome']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="unknown,accessible"
-			capname="unknown"
-			id="063547b3-c1fe-47cf-84c0-38d75dad0d37"
-			name="ClosApp"
-			refimgid="014a1c04-ecd4-44fa-b594-0ef4c1631395"
-			searchtimeout="30000ms">
-				/form[@title~'^Data\ Cleaning\ Tool\ -\ Goog']//element[@accessiblename='Infobar']
-			</item>
-			<basepath>
-				/form[@title~'^Data\ Cleaning\ Tool\ -\ Goog']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
-pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
-sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
-M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
-q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
-hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
-ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
-RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
-sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
-MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
-RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
-AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
@@ -294,44 +302,6 @@ lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
 zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1"
-		isrooted="True"
-		name="OverviewOctopusDeployGoogleChrom"
-		refpath="/form[@title='Overview - Octopus Deploy - Google Chrome']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="container,accessible"
-			capname="container"
-			id="3354b5b3-888d-4a90-aca5-79270cb09f08"
-			name="ClosePage"
-			refimgid="10404966-d25d-4206-aab1-6e4daa6a4255"
-			refpath="/form[@title~'^Overview\ -\ Octopus\ Deploy']/container/container/container[2]/container[1]"
-			searchtimeout="30000ms">
-				/form[@title~'^Overview\ -\ Octopus\ Deploy']/container[@accessiblename~'^Overview\ -\ Octopus\ Deploy']/container/container[2]/container[1]
-			</item>
-			<basepath>
-				/form[@title~'^Overview\ -\ Octopus\ Deploy']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
-pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
-sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
-M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
-q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
-hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
-ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
-RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
-sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
-MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
-RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
-AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
@@ -452,42 +422,6 @@ qhfwOsMeFy7FWIHEk7PqCU0eMsNTa0eeRHCOWNenIQohUCFYv+PO87HLOpUvYVMM3ACJ2rVE8/v6
 I/67EPgCQ3D7PQ1pXlUAAAAASUVORK5CYII=
 				</image>
 				/dom[@domain=$RCCDOM]//i[#'dataCollectionWidget_checkboxComplete']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="3b54ddb5-8585-49fe-92e8-cbcc70b6dc13"
-			name="AddSubject"
-			refimgid="1369d16d-696e-4bc3-9998-dfe1ae47d8e1"
-			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//button[#'studyBaseWidget_buttonCreateAdd']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="9328280c-2573-49e2-a45f-27e9635d479a"
-			name="SitesButton"
-			refimgid="7d5f2f41-b6cf-456d-a233-b36c39c532ab"
-			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//button[#'enrollWidget_comboSites_button']
-			</item>
-			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="dead8fc1-6d55-4ecd-98eb-e5dc5365356e"
-			name="selectSite"
-			refimgid="31fba0cc-e7b7-4c71-9c52-f056e1288328"
-			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//a[@innertext~'2019']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="ed816dba-2dec-41ab-b191-edc9d053b81b"
-			name="SubjectNumber"
-			refimgid="e07a62a6-924c-4cdd-99c5-e283d11f2d06"
-			searchtimeout="30000ms">
-				/dom[@domain=$RCCDOM]//input[#'enrollWidget_textSubjectNumber']
 			</item>
 			<basepath>
 				/dom[@domain=$RCCDOM]
@@ -738,7 +672,7 @@ AAAASUVORK5CYII=
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="cb458012-66d2-43c8-90cf-f9dc911f0576"
-			name="PowerShallConsol"
+			name="PowerShellConsol"
 			refimgid="2d16a453-05d8-40ca-b3b2-77248f6a6204"
 			searchtimeout="30000ms">
 				/dom[@domain=$AzureDOM]//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span
@@ -790,145 +724,6 @@ AAAASUVORK5CYII=
 			</item>
 			<basepath>
 				/dom[@domain=$AzureDOM]
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
-		id="ee5f1b78-cba3-4623-b016-bbed2259c88e"
-		isrooted="True"
-		name="REDCapCloud1"
-		refpath="/dom[@domain='cgsqc.redcapcloud.com']"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48"
-			name="StudyName"
-			refimgid="b99623cd-ef6a-4e3e-9945-018d9429e018"
-			searchtimeout="30000ms">
-				/dom[@domain='cgsqc.redcapcloud.com']//div[@innertext~'2019']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="972775f8-a766-4c55-8ce5-b63405dd6144"
-			name="EnterSubjectNumber"
-			refimgid="b9035767-7946-453c-bc0e-3717752ed3c8"
-			refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']"
-			searchtimeout="30000ms">
-				/dom[@domain='cgsqc.redcapcloud.com']//input[#'enrollWidget_textSubjectNumber']
-			</item>
-			<basepath>
-				/dom[@domain='cgsqc.redcapcloud.com']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="1c825908-6a91-4415-8adf-2cb54b5f8fc9"
-		isrooted="True"
-		name="CogstateSolutionPlatformChrome"
-		searchtimeout="30000ms"
-		usecache="True">
-			<basepath>
-				/form[@title~'Cogstate Solution Platform']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJMSURBVDhPrZJLTxNhFIbnD8CmgqDiJbKQlUsT
-pbTTaaWt9EYVlaGUFht0ISsT117QqGw06o5eMYArSNSNxHgtKIylBMXYmWkxxii40WkkKp3X+YYZ
-sVFX+ibP7nvec07yUf89H1l7pdjmOC+22WdFv0MSfM2S6LNmea+tb8m9u0J79ufkD7ns+bZ9bwR/
-M4TWvRB8NggeBrybBt9iBu+iFwSXxaY9Lw/nsTLCAYcs7rdDLSCy16oUWFYLXKTEBN5hlHl7I6Np
-q6m/c7yyr9f7dk4R1AJteo71loQT/rzQY+KFSBMvRsw5MWIkpMvOqR86em7XtcDKXece5DxKSfgg
-hAcTuPlEwvBjCfmXaSze8uDz7UYsj5vw/X4TSpPMWU2nqK03ume3DUZw5KQHzxxGiA8n0Hm9CFd/
-ES2XimCvFvEuPwk8t2kwkDk6o+lKwWC3tCXVjR0DIQwHWjCiTNVl58VVhh5JKGVaFdkKcKTAImk6
-RdUlQ9LmVBgEtj+oFvwqOy7oBX5VBmchG6wVbEp2ZTcmukCoS4Tk9PzrJbK2Lh++UsSr/PwHfbpW
-sHZCbSp4ZkMiCEKtws7hXoy9yKhTCaNZDu+n2K+6DI5GiaNPaTpFGUbDFTWx4EJNvBOE9fGASsPQ
-MTQke3B5zPtzsipPWwryvLv8V1YnAtbqeEBWAKEq1oF1MRbbB9qxPGWTdVnmzLI8Q1s0rTyGGMtU
-RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
-AAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
-		id="15097ba2-c426-4eaa-8bd9-ab23bae9eaf7"
-		isrooted="True"
-		name="DataCleaningTool1"
-		refimgid="16ae70cc-9531-4c86-b297-f0aa11cb9428"
-		refpath="/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']"
-		searchtimeout="30000ms"
-		usecache="False">
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="labeltag"
-			id="688f4790-565d-46ed-ba6f-5bdfb1e508be"
-			name="SelectStudy"
-			refimgid="368f5b65-8611-4d10-8f7a-2d158860ee68"
-			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']//label[@innertext~'Choose a study']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="labeltag"
-			id="f4f4a0ff-91a5-41b1-859c-459702c99230"
-			name="SelectSubject"
-			refimgid="b4993cea-ca6a-47e4-92a3-fd3a11694747"
-			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']//label[@innertext~'Choose a subject']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="labeltag"
-			id="d9f20406-9b2a-4e64-b296-fcacdd99f491"
-			name="Selectvisit"
-			refimgid="250617f3-101d-46bc-aa78-72ee02ad8897"
-			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']//label[@innertext~'Choose a visit']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="b58ffb39-4988-4944-9416-87a4b57259d7"
-			name="FindByCriteria"
-			refimgid="de38094f-ee66-4f85-9f75-3eadac1a83d9"
-			searchtimeout="30000ms">
-				/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']//span[@innertext='Find By Criteria']
-			</item>
-			<basepath>
-				/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN

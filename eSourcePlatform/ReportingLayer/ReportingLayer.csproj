@@ -127,20 +127,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs">
-      <id>0e137d66-06a7-4e68-8d90-fb53b8c1a1ab</id>
-    </Compile>
-    <Compile Include="PowerBI\Clear_Test_Slicer.cs">
+    <Compile Include="AcademicExtract\Clear_Test_Slicer.cs">
       <DependentUpon>Clear_Test_Slicer.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>05316b94-0e22-46a6-ae70-c25a9f824e9d</id>
       <BoundTo>88869378-1125-464f-b6ad-5b774e064e0e</BoundTo>
     </Compile>
-    <Compile Include="PowerBI\Clear_Test_Slicer.UserCode.cs">
+    <Compile Include="AcademicExtract\Clear_Test_Slicer.UserCode.cs">
       <DependentUpon>Clear_Test_Slicer.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c2063d6d-6de4-4cde-8119-7f18963c11d5</id>
       <BoundTo>88869378-1125-464f-b6ad-5b774e064e0e</BoundTo>
+    </Compile>
+    <Compile Include="AcademicExtract\Set_Date_Slicer.cs">
+      <DependentUpon>Set_Date_Slicer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>02f82b8e-8272-4275-bd95-9b217d38bb5c</id>
+      <BoundTo>1ae86f88-8edc-4ff2-b1ef-37f35a35dcc2</BoundTo>
+    </Compile>
+    <Compile Include="AcademicExtract\Set_Date_Slicer.UserCode.cs">
+      <DependentUpon>Set_Date_Slicer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>db19063d-7963-4138-9b12-96a7529ca390</id>
+      <BoundTo>1ae86f88-8edc-4ff2-b1ef-37f35a35dcc2</BoundTo>
+    </Compile>
+    <Compile Include="AcademicExtract\Validate_AcademicExtract.cs">
+      <DependentUpon>Validate_AcademicExtract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7a4d9197-1b59-48fa-844f-8492f0353e8c</id>
+      <BoundTo>30a4e22c-5a72-4961-bcab-768eabb47049</BoundTo>
+    </Compile>
+    <Compile Include="AcademicExtract\Validate_AcademicExtract.UserCode.cs">
+      <DependentUpon>Validate_AcademicExtract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>00eab69d-d320-4688-8a3c-3dd4fc3f7ba3</id>
+      <BoundTo>30a4e22c-5a72-4961-bcab-768eabb47049</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>0e137d66-06a7-4e68-8d90-fb53b8c1a1ab</id>
     </Compile>
     <Compile Include="PowerBI\Close_PowerBI.cs">
       <DependentUpon>Close_PowerBI.rxrec</DependentUpon>
@@ -154,42 +178,6 @@
       <id>652b4ba2-44fe-423a-9959-d70297c7b344</id>
       <BoundTo>02e7be70-d56d-48aa-a493-3aebd6c917f5</BoundTo>
     </Compile>
-    <Compile Include="PowerBI\Set_Date_Slicer.cs">
-      <DependentUpon>Set_Date_Slicer.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>02f82b8e-8272-4275-bd95-9b217d38bb5c</id>
-      <BoundTo>1ae86f88-8edc-4ff2-b1ef-37f35a35dcc2</BoundTo>
-    </Compile>
-    <Compile Include="PowerBI\Set_Date_Slicer.UserCode.cs">
-      <DependentUpon>Set_Date_Slicer.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>db19063d-7963-4138-9b12-96a7529ca390</id>
-      <BoundTo>1ae86f88-8edc-4ff2-b1ef-37f35a35dcc2</BoundTo>
-    </Compile>
-    <Compile Include="PowerBI\Validate_AcademicExtract.cs">
-      <DependentUpon>Validate_AcademicExtract.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7a4d9197-1b59-48fa-844f-8492f0353e8c</id>
-      <BoundTo>30a4e22c-5a72-4961-bcab-768eabb47049</BoundTo>
-    </Compile>
-    <Compile Include="PowerBI\Validate_AcademicExtract.UserCode.cs">
-      <DependentUpon>Validate_AcademicExtract.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>00eab69d-d320-4688-8a3c-3dd4fc3f7ba3</id>
-      <BoundTo>30a4e22c-5a72-4961-bcab-768eabb47049</BoundTo>
-    </Compile>
-    <Compile Include="PowerBI\Validate_StandardExtract.cs">
-      <DependentUpon>Validate_StandardExtract.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b4b55807-9945-4d71-a86c-a8b593073563</id>
-      <BoundTo>b533ad8b-924c-4cd8-ab80-58ba056715d2</BoundTo>
-    </Compile>
-    <Compile Include="PowerBI\Validate_StandardExtract.UserCode.cs">
-      <DependentUpon>Validate_StandardExtract.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>c7679afb-9911-41c5-9c63-0b8fb867363e</id>
-      <BoundTo>b533ad8b-924c-4cd8-ab80-58ba056715d2</BoundTo>
-    </Compile>
     <Compile Include="Program.cs">
       <id>87da71c6-2308-48b3-802d-1cbff3932184</id>
     </Compile>
@@ -199,35 +187,54 @@
       <RepositoryCode>true</RepositoryCode>
       <id>3d2d8736-a196-462b-9ca2-4eb9e06a88ad</id>
     </Compile>
+    <Compile Include="StandardExtract\Set_Date_Filter.cs">
+      <BoundTo>f446f2ff-be4b-469a-9bbd-7183f3265333</BoundTo>
+      <DependentUpon>Set_Date_Filter.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>88df203b-5ef8-4793-a215-31a4e1fbd612</id>
+    </Compile>
+    <Compile Include="StandardExtract\Set_Date_Filter.UserCode.cs">
+      <BoundTo>f446f2ff-be4b-469a-9bbd-7183f3265333</BoundTo>
+      <DependentUpon>Set_Date_Filter.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddcc585e-68ef-43a2-820e-43322d795362</id>
+    </Compile>
+    <Compile Include="StandardExtract\Validate_StandardExtract.cs">
+      <DependentUpon>Validate_StandardExtract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b4b55807-9945-4d71-a86c-a8b593073563</id>
+      <BoundTo>b533ad8b-924c-4cd8-ab80-58ba056715d2</BoundTo>
+    </Compile>
+    <Compile Include="StandardExtract\Validate_StandardExtract.UserCode.cs">
+      <DependentUpon>Validate_StandardExtract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c7679afb-9911-41c5-9c63-0b8fb867363e</id>
+      <BoundTo>b533ad8b-924c-4cd8-ab80-58ba056715d2</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config">
-      <id>329cf68b-b981-48cc-b464-e0c9bddac353</id>
-    </None>
-    <None Include="PowerBI\Clear_Test_Slicer.rxrec">
+    <None Include="AcademicExtract\Clear_Test_Slicer.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>88869378-1125-464f-b6ad-5b774e064e0e</id>
       <recordtableid>c54f947a-0235-4689-b126-7e7629c48e9b</recordtableid>
+    </None>
+    <None Include="AcademicExtract\Set_Date_Slicer.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>1ae86f88-8edc-4ff2-b1ef-37f35a35dcc2</id>
+      <recordtableid>b456cb46-8166-4fa6-822b-4dc5f55b97b5</recordtableid>
+    </None>
+    <None Include="AcademicExtract\Validate_AcademicExtract.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>30a4e22c-5a72-4961-bcab-768eabb47049</id>
+      <recordtableid>08e3ca33-2bc0-4cba-8d44-96addaee29c6</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>329cf68b-b981-48cc-b464-e0c9bddac353</id>
     </None>
     <None Include="PowerBI\Close_PowerBI.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>02e7be70-d56d-48aa-a493-3aebd6c917f5</id>
       <recordtableid>10618194-7191-4be5-9b38-8981dd57c5c4</recordtableid>
-    </None>
-    <None Include="PowerBI\Set_Date_Slicer.rxrec">
-      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
-      <id>1ae86f88-8edc-4ff2-b1ef-37f35a35dcc2</id>
-      <recordtableid>b456cb46-8166-4fa6-822b-4dc5f55b97b5</recordtableid>
-    </None>
-    <None Include="PowerBI\Validate_AcademicExtract.rxrec">
-      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
-      <id>30a4e22c-5a72-4961-bcab-768eabb47049</id>
-      <recordtableid>08e3ca33-2bc0-4cba-8d44-96addaee29c6</recordtableid>
-    </None>
-    <None Include="PowerBI\Validate_StandardExtract.rxrec">
-      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
-      <id>b533ad8b-924c-4cd8-ab80-58ba056715d2</id>
-      <recordtableid>35c24548-35c6-403c-bf69-475de2bcb8ca</recordtableid>
     </None>
     <None Include="ReportingLayerRepository.rximg">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
@@ -239,6 +246,16 @@
       <id>74e80a08-cf76-4909-887f-42d132066da8</id>
       <repoid>ea6a006e-6d85-4695-88f7-8d684bce0248</repoid>
       <reporootid>60c3c42a-4566-402e-9361-221a6c8f795f</reporootid>
+    </None>
+    <None Include="StandardExtract\Set_Date_Filter.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>f446f2ff-be4b-469a-9bbd-7183f3265333</id>
+      <recordtableid>478d647e-d7d3-47c9-bc73-483c7f81df1f</recordtableid>
+    </None>
+    <None Include="StandardExtract\Validate_StandardExtract.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>b533ad8b-924c-4cd8-ab80-58ba056715d2</id>
+      <recordtableid>35c24548-35c6-403c-bf69-475de2bcb8ca</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -252,6 +269,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AcademicExtract">
+      <id>e4465c02-b08b-4ae4-b9b1-6f52e0bf3a02</id>
+    </Folder>
+    <Folder Include="StandardExtract">
+      <id>ad94e52f-403c-4566-832d-2c161fdb2904</id>
+    </Folder>
     <Folder Include="PowerBI">
       <id>6fcc72df-71e4-415e-838f-fc3a5a372b45</id>
     </Folder>

@@ -53,6 +53,16 @@ namespace DCT
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
+        {
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -79,11 +89,9 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool1.FindByCriteria' at Center.", repo.DataCleaningTool1.FindByCriteriaInfo, new RecordItemIndex(0));
-            repo.DataCleaningTool1.FindByCriteria.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.FindByCriteria' at Center.", repo.DataCleaningTool.FindByCriteriaInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.FindByCriteria.Click();
             Delay.Milliseconds(200);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", repo.DataCleaningTool1.Self, false, new RecordItemIndex(1));
             
         }
 

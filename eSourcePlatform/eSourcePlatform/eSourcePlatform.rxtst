@@ -1139,6 +1139,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
+			name="Set_Date_Filter"
+			ref="478d647e-d7d3-47c9-bc73-483c7f81df1f"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="529f1bb1-0a6e-4a00-b1f8-9e40b442fa7a"
 			name="Add_Study">
@@ -1325,20 +1331,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="5fbd2905-db75-4403-9930-93cfefca9702"
-			name="Close_Browser"
-			ref="a08780b4-c315-4471-9b06-4aa5cb21672c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DCTDOM"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
-					variablename="DCTDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="6019ac06-4d85-440a-ab02-5127c387cd2a"
 			name="Add_Instrument_to_Event">
@@ -1357,6 +1349,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
+			maxrange="1"
+			minrange="1"
 			maxrange="2"
 			minrange="2"
 			name="Jordan_SmokeTest">
@@ -1475,6 +1469,20 @@ rxversion="8.3">
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="68d212d1-5df7-4e91-87c5-db6e8fa072d1"
+			name="CloseDCT"
+			ref="7bceac10-42f9-4317-8de5-3e37a1b5b379"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DCTDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
+					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2562,7 +2570,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="VersionDeployed"
+					dataname="ServerVersionDeployed"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
 					variablename="ServerVersion">
@@ -2961,7 +2969,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="CSPClientVesrion "
+					dataname="ClientVersionDeployed"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
 					variablename="ClientVersion">
@@ -3108,20 +3116,12 @@ rxversion="8.3">
 			reportlevel="Info;20">
 				<parameters>
 					<param
-					name="DevopsPage"
-					value="api/devops">
-					</param>
-					<param
-					name="VersionDeployed"
+					name="ServerVersionDeployed"
 					value="1.11.0.38">
 					</param>
 					<param
-					name="CSPClientVesrion "
+					name="ClientVersionDeployed"
 					value="1.11.0-rc.38">
-					</param>
-					<param
-					name="Authentication"
-					value="Active Directory Password">
 					</param>
 					<param
 					name="RandNum"
@@ -3593,12 +3593,6 @@ rxversion="8.3">
 			ref="8893f97d-6402-4354-9824-20a0162229b1">
 				<databinding>
 					<var
-					dataname="Authentication"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
-					variablename="Authentication">
-					</var>
-					<var
 					dataname="Key"
 					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="8e6959d3-3ca1-4bf1-b7ca-4657ef4aced1"
@@ -3633,6 +3627,12 @@ rxversion="8.3">
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 					variableid="709d7ef8-5f93-4a0b-a867-796e4645472f"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -4816,8 +4816,8 @@ rxversion="8.3">
 								name="Confirm_Move">
 								</testmodule>
 								<testmodule
-								id="5fbd2905-db75-4403-9930-93cfefca9702"
-								name="Close_Browser">
+								id="68d212d1-5df7-4e91-87c5-db6e8fa072d1"
+								name="CloseDCT">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -5006,6 +5006,10 @@ rxversion="8.3">
 								<testmodule
 								id="2967738e-e96c-40e2-a459-88c7b3d02a9c"
 								name="Click_StandardExtract_Link">
+								</testmodule>
+								<testmodule
+								id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
+								name="Set_Date_Filter">
 								</testmodule>
 								<testmodule
 								id="94d72c03-fddf-420d-aafb-d00c99275375"
@@ -5302,6 +5306,9 @@ rxversion="8.3">
 				<column>
 					Database
 				</column>
+				<column>
+					Authentication
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
@@ -5323,7 +5330,7 @@ rxversion="8.3">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="Smoke">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
@@ -5343,9 +5350,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="3de66789-7fb1-4996-8500-81d43a94cc32">
-			</testcontainer>
-			<testcontainer
-			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51">
 			</testcontainer>
 			<testcontainer
 			id="55d94e9c-09f3-492b-977b-eb8d911a3296">

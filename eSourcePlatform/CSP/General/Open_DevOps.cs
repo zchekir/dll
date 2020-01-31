@@ -42,7 +42,6 @@ namespace CSP.General
         public Open_DevOps()
         {
             URL = "";
-            DevopsPage = "api/devops";
             Browser = "Chrome";
         }
 
@@ -66,18 +65,6 @@ namespace CSP.General
         {
             get { return _URL; }
             set { _URL = value; }
-        }
-
-        string _DevopsPage;
-
-        /// <summary>
-        /// Gets or sets the value of variable DevopsPage.
-        /// </summary>
-        [TestVariable("a05a586f-3683-4023-b217-29c07ab420c5")]
-        public string DevopsPage
-        {
-            get { return _DevopsPage; }
-            set { _DevopsPage = value; }
         }
 
         string _Browser;
@@ -118,7 +105,7 @@ namespace CSP.General
 
             Init();
 
-            Open_DevOps_Browser(URL, DevopsPage, Browser);
+            Open_DevOps_Browser(URL, "");
             Delay.Milliseconds(0);
             
         }

@@ -66,6 +66,16 @@ namespace DCT
             set { _StudyName = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable DCTDOM.
+        /// </summary>
+        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
+        public string DCTDOM
+        {
+            get { return repo.DCTDOM; }
+            set { repo.DCTDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -92,16 +102,16 @@ namespace DCT
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool1.SelectStudy' at Center.", repo.DataCleaningTool1.SelectStudyInfo, new RecordItemIndex(0));
-            repo.DataCleaningTool1.SelectStudy.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.SelectStudy' at Center.", repo.DataCleaningTool.SelectStudyInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.SelectStudy.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$StudyName' with focus on 'DataCleaningTool1.SelectStudy'.", repo.DataCleaningTool1.SelectStudyInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool1.SelectStudy.PressKeys(StudyName);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$StudyName' with focus on 'DataCleaningTool.SelectStudy'.", repo.DataCleaningTool.SelectStudyInfo, new RecordItemIndex(1));
+            repo.DataCleaningTool.SelectStudy.PressKeys(StudyName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 750ms.", new RecordItemIndex(2));
+            Delay.Duration(750, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{TAB}'.", new RecordItemIndex(3));
             Keyboard.Press("{TAB}");

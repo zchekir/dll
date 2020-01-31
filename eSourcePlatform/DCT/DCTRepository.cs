@@ -28,18 +28,13 @@ namespace DCT
     {
         static DCTRepository instance = new DCTRepository();
         DCTRepositoryFolders.DataCleaningToolAppFolder _datacleaningtool;
-        DCTRepositoryFolders.DataCleaningToolGoogleChromeAppFolder _datacleaningtoolgooglechrome;
         DCTRepositoryFolders.OctopusDeployAppFolder _octopusdeploy;
-        DCTRepositoryFolders.OverviewOctopusDeployGoogleChromAppFolder _overviewoctopusdeploygooglechrom;
         DCTRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
         DCTRepositoryFolders.LeaveSiteAppFolder _leavesite;
         DCTRepositoryFolders.SignInAppFolder _signin;
         DCTRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
         DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder _redcapcloudgooglechrome;
         DCTRepositoryFolders.KuduServicesAppFolder _kuduservices;
-        DCTRepositoryFolders.REDCapCloud1AppFolder _redcapcloud1;
-        DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
-        DCTRepositoryFolders.DataCleaningTool1AppFolder _datacleaningtool1;
 
         /// <summary>
         /// Gets the singleton class instance representing the DCTRepository element repository.
@@ -57,18 +52,13 @@ namespace DCT
             : base("DCTRepository", "/", null, 0, false, "1559d85e-a9d4-499b-8b78-a53d7c7c1eef", ".\\RepositoryImages\\DCTRepository1559d85e.rximgres")
         {
             _datacleaningtool = new DCTRepositoryFolders.DataCleaningToolAppFolder(this);
-            _datacleaningtoolgooglechrome = new DCTRepositoryFolders.DataCleaningToolGoogleChromeAppFolder(this);
             _octopusdeploy = new DCTRepositoryFolders.OctopusDeployAppFolder(this);
-            _overviewoctopusdeploygooglechrom = new DCTRepositoryFolders.OverviewOctopusDeployGoogleChromAppFolder(this);
             _redcapcloud = new DCTRepositoryFolders.REDCapCloudAppFolder(this);
             _leavesite = new DCTRepositoryFolders.LeaveSiteAppFolder(this);
             _signin = new DCTRepositoryFolders.SignInAppFolder(this);
             _signintoyouraccount = new DCTRepositoryFolders.SignInToYourAccountAppFolder(this);
             _redcapcloudgooglechrome = new DCTRepositoryFolders.REDCapCloudGoogleChromeAppFolder(this);
             _kuduservices = new DCTRepositoryFolders.KuduServicesAppFolder(this);
-            _redcapcloud1 = new DCTRepositoryFolders.REDCapCloud1AppFolder(this);
-            _cogstatesolutionplatformchrome = new DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
-            _datacleaningtool1 = new DCTRepositoryFolders.DataCleaningTool1AppFolder(this);
         }
 
 #region Variables
@@ -193,30 +183,12 @@ namespace DCT
         }
 
         /// <summary>
-        /// The DataCleaningToolGoogleChrome folder.
-        /// </summary>
-        [RepositoryFolder("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-        public virtual DCTRepositoryFolders.DataCleaningToolGoogleChromeAppFolder DataCleaningToolGoogleChrome
-        {
-            get { return _datacleaningtoolgooglechrome; }
-        }
-
-        /// <summary>
         /// The OctopusDeploy folder.
         /// </summary>
         [RepositoryFolder("3a3def39-3ad2-4434-8253-957aa95ab688")]
         public virtual DCTRepositoryFolders.OctopusDeployAppFolder OctopusDeploy
         {
             get { return _octopusdeploy; }
-        }
-
-        /// <summary>
-        /// The OverviewOctopusDeployGoogleChrom folder.
-        /// </summary>
-        [RepositoryFolder("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-        public virtual DCTRepositoryFolders.OverviewOctopusDeployGoogleChromAppFolder OverviewOctopusDeployGoogleChrom
-        {
-            get { return _overviewoctopusdeploygooglechrom; }
         }
 
         /// <summary>
@@ -272,33 +244,6 @@ namespace DCT
         {
             get { return _kuduservices; }
         }
-
-        /// <summary>
-        /// The REDCapCloud1 folder.
-        /// </summary>
-        [RepositoryFolder("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-        public virtual DCTRepositoryFolders.REDCapCloud1AppFolder REDCapCloud1
-        {
-            get { return _redcapcloud1; }
-        }
-
-        /// <summary>
-        /// The CogstateSolutionPlatformChrome folder.
-        /// </summary>
-        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-        public virtual DCTRepositoryFolders.CogstateSolutionPlatformChromeAppFolder CogstateSolutionPlatformChrome
-        {
-            get { return _cogstatesolutionplatformchrome; }
-        }
-
-        /// <summary>
-        /// The DataCleaningTool1 folder.
-        /// </summary>
-        [RepositoryFolder("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-        public virtual DCTRepositoryFolders.DataCleaningTool1AppFolder DataCleaningTool1
-        {
-            get { return _datacleaningtool1; }
-        }
     }
 
     /// <summary>
@@ -315,20 +260,25 @@ namespace DCT
         {
             RepoItemInfo _movevalidationInfo;
             RepoItemInfo _primaryvalidationInfo;
-            RepoItemInfo _invalidbuttonInfo;
-            RepoItemInfo _restorebutton_Info;
+            RepoItemInfo _invalidatebuttonInfo;
+            RepoItemInfo _restorebuttonInfo;
             RepoItemInfo _findbyassessmentidbuttonInfo;
             RepoItemInfo _searchresultInfo;
             RepoItemInfo _clickconfirmInfo;
-            RepoItemInfo _clickmakeprimaryInfo;
+            RepoItemInfo _makeprimarybuttonInfo;
             RepoItemInfo _movebuttonInfo;
             RepoItemInfo _entertestidentifierfieldInfo;
             RepoItemInfo _okbuttonInfo;
-            RepoItemInfo _clearprimaryInfo;
+            RepoItemInfo _clearprimarybuttonInfo;
             RepoItemInfo _confirmbuttonInfo;
             RepoItemInfo _destinationvisitfieldInfo;
             RepoItemInfo _destinationsubjectfieldInfo;
             RepoItemInfo _nooptionsitemInfo;
+            RepoItemInfo _selectstudyInfo;
+            RepoItemInfo _selectsubjectInfo;
+            RepoItemInfo _selectvisitInfo;
+            RepoItemInfo _findbycriteriaInfo;
+            RepoItemInfo _resultsheadingInfo;
 
             /// <summary>
             /// Creates a new DataCleaningTool  folder.
@@ -338,20 +288,25 @@ namespace DCT
             {
                 _movevalidationInfo = new RepoItemInfo(this, "MoveValidation", ".//div[#'root']/div/div/div[3]/p[@innertext='No results found.']", 30000, null, "178b44c8-a649-4b52-b5b7-b56b4cde9123");
                 _primaryvalidationInfo = new RepoItemInfo(this, "PrimaryValidation", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext='yes']", 30000, null, "1a031ccd-10c6-432c-9edf-5a8661be8d93");
-                _invalidbuttonInfo = new RepoItemInfo(this, "InvalidButton", ".//button[#'action-row-invalidate-button']", 30000, null, "d51ef50b-cc93-42e6-9669-6ad2db192605");
-                _restorebutton_Info = new RepoItemInfo(this, "RestoreButton_", ".//button[#'action-row-restore-button']/span[@innertext='restore']", 30000, null, "dcad520b-c5c1-43c8-84e3-9c49e20656ca");
+                _invalidatebuttonInfo = new RepoItemInfo(this, "InvalidateButton", ".//button[#'action-row-invalidate-button']", 30000, null, "d51ef50b-cc93-42e6-9669-6ad2db192605");
+                _restorebuttonInfo = new RepoItemInfo(this, "RestoreButton", ".//button[#'action-row-restore-button']/span[@innertext='restore']", 30000, null, "dcad520b-c5c1-43c8-84e3-9c49e20656ca");
                 _findbyassessmentidbuttonInfo = new RepoItemInfo(this, "FindByAssessmentIdButton", ".//div[#'root']/div/div/div[2]/div[2]/?/?/span[@innertext='Find By Assessment Id']", 30000, null, "98cfba2b-c4c5-488d-8805-d8e0193ff5bb");
                 _searchresultInfo = new RepoItemInfo(this, "SearchResult", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2020-']", 30000, null, "2f9f79e7-580e-4755-a6bc-f7137da21cde");
                 _clickconfirmInfo = new RepoItemInfo(this, "ClickConfirm", ".//button[#'move-confirmation-button-next']", 30000, null, "67c5cfc6-aa95-441f-bd70-e6ac84c9e2f1");
-                _clickmakeprimaryInfo = new RepoItemInfo(this, "ClickMakePrimary", ".//button[#'action-row-make-primary-button']/span[@innertext='make primary']", 30000, null, "8a0da0d6-6903-467a-8b3a-441a0225f30c");
+                _makeprimarybuttonInfo = new RepoItemInfo(this, "MakePrimaryButton", ".//button[#'action-row-make-primary-button']/span[@innertext='make primary']", 30000, null, "8a0da0d6-6903-467a-8b3a-441a0225f30c");
                 _movebuttonInfo = new RepoItemInfo(this, "MoveButton", ".//button[#'action-row-move-button']/span[@innertext='move']", 30000, null, "4475259d-22a2-4512-a4b1-742099f24bb9");
                 _entertestidentifierfieldInfo = new RepoItemInfo(this, "EnterTestIdentifierField", ".//input[#'findByAssessmentId']", 30000, null, "86244d71-2a9e-4044-a2a8-18c3c1d6851b");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", ".//button[#'move-selection-button-next']/span[@innertext='ok']", 30000, null, "4ac58619-4351-44b7-8087-c4e6656d9855");
-                _clearprimaryInfo = new RepoItemInfo(this, "ClearPrimary", ".//button[#'action-row-clear-primary-button']/span[@innertext='clear primary']", 30000, null, "e0ce542a-7e79-45b6-ba96-42c007565214");
+                _clearprimarybuttonInfo = new RepoItemInfo(this, "ClearPrimaryButton", ".//button[#'action-row-clear-primary-button']/span[@innertext='clear primary']", 30000, null, "e0ce542a-7e79-45b6-ba96-42c007565214");
                 _confirmbuttonInfo = new RepoItemInfo(this, "ConfirmButton", ".//span[@innertext='confirm']", 30000, null, "6d6c847e-4c07-4fd7-b4fe-d45d0f9fbaf2");
                 _destinationvisitfieldInfo = new RepoItemInfo(this, "DestinationVisitField", ".//label[@innertext='Visit']", 30000, null, "5f30ccb2-6e51-4bf4-ad65-fe31a1cdef34");
                 _destinationsubjectfieldInfo = new RepoItemInfo(this, "DestinationSubjectField", ".//label[@innertext='Subject']", 30000, null, "6bccceed-5896-4d21-9e92-2b50db29405f");
                 _nooptionsitemInfo = new RepoItemInfo(this, "NoOptionsItem", ".//body//div//p[@innertext='No Options']", 30000, null, "596463e8-50fb-4832-8fe5-c3358e0a090d");
+                _selectstudyInfo = new RepoItemInfo(this, "SelectStudy", ".//label[@innertext~'Choose a study']", 30000, null, "688f4790-565d-46ed-ba6f-5bdfb1e508be");
+                _selectsubjectInfo = new RepoItemInfo(this, "SelectSubject", ".//label[@innertext~'Choose a subject']", 30000, null, "f4f4a0ff-91a5-41b1-859c-459702c99230");
+                _selectvisitInfo = new RepoItemInfo(this, "Selectvisit", ".//label[@innertext~'Choose a visit']", 30000, null, "d9f20406-9b2a-4e64-b296-fcacdd99f491");
+                _findbycriteriaInfo = new RepoItemInfo(this, "FindByCriteria", ".//span[@innertext='Find By Criteria']", 30000, null, "b58ffb39-4988-4944-9416-87a4b57259d7");
+                _resultsheadingInfo = new RepoItemInfo(this, "ResultsHeading", ".//div[#'root']/div/div/div[3]/h5[@innertext~'Results']", 30000, null, "28f8a8b1-4fae-4018-99b7-601ab0ffa7e4");
             }
 
             /// <summary>
@@ -427,50 +382,50 @@ namespace DCT
             }
 
             /// <summary>
-            /// The InvalidButton item.
+            /// The InvalidateButton item.
             /// </summary>
             [RepositoryItem("d51ef50b-cc93-42e6-9669-6ad2db192605")]
-            public virtual Ranorex.ButtonTag InvalidButton
+            public virtual Ranorex.ButtonTag InvalidateButton
             {
                 get
                 {
-                    return _invalidbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                    return _invalidatebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
                 }
             }
 
             /// <summary>
-            /// The InvalidButton item info.
+            /// The InvalidateButton item info.
             /// </summary>
             [RepositoryItemInfo("d51ef50b-cc93-42e6-9669-6ad2db192605")]
-            public virtual RepoItemInfo InvalidButtonInfo
+            public virtual RepoItemInfo InvalidateButtonInfo
             {
                 get
                 {
-                    return _invalidbuttonInfo;
+                    return _invalidatebuttonInfo;
                 }
             }
 
             /// <summary>
-            /// The RestoreButton_ item.
+            /// The RestoreButton item.
             /// </summary>
             [RepositoryItem("dcad520b-c5c1-43c8-84e3-9c49e20656ca")]
-            public virtual Ranorex.SpanTag RestoreButton_
+            public virtual Ranorex.SpanTag RestoreButton
             {
                 get
                 {
-                    return _restorebutton_Info.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _restorebuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The RestoreButton_ item info.
+            /// The RestoreButton item info.
             /// </summary>
             [RepositoryItemInfo("dcad520b-c5c1-43c8-84e3-9c49e20656ca")]
-            public virtual RepoItemInfo RestoreButton_Info
+            public virtual RepoItemInfo RestoreButtonInfo
             {
                 get
                 {
-                    return _restorebutton_Info;
+                    return _restorebuttonInfo;
                 }
             }
 
@@ -547,26 +502,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The ClickMakePrimary item.
+            /// The MakePrimaryButton item.
             /// </summary>
             [RepositoryItem("8a0da0d6-6903-467a-8b3a-441a0225f30c")]
-            public virtual Ranorex.SpanTag ClickMakePrimary
+            public virtual Ranorex.SpanTag MakePrimaryButton
             {
                 get
                 {
-                    return _clickmakeprimaryInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _makeprimarybuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClickMakePrimary item info.
+            /// The MakePrimaryButton item info.
             /// </summary>
             [RepositoryItemInfo("8a0da0d6-6903-467a-8b3a-441a0225f30c")]
-            public virtual RepoItemInfo ClickMakePrimaryInfo
+            public virtual RepoItemInfo MakePrimaryButtonInfo
             {
                 get
                 {
-                    return _clickmakeprimaryInfo;
+                    return _makeprimarybuttonInfo;
                 }
             }
 
@@ -643,26 +598,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The ClearPrimary item.
+            /// The ClearPrimaryButton item.
             /// </summary>
             [RepositoryItem("e0ce542a-7e79-45b6-ba96-42c007565214")]
-            public virtual Ranorex.SpanTag ClearPrimary
+            public virtual Ranorex.SpanTag ClearPrimaryButton
             {
                 get
                 {
-                    return _clearprimaryInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _clearprimarybuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClearPrimary item info.
+            /// The ClearPrimaryButton item info.
             /// </summary>
             [RepositoryItemInfo("e0ce542a-7e79-45b6-ba96-42c007565214")]
-            public virtual RepoItemInfo ClearPrimaryInfo
+            public virtual RepoItemInfo ClearPrimaryButtonInfo
             {
                 get
                 {
-                    return _clearprimaryInfo;
+                    return _clearprimarybuttonInfo;
                 }
             }
 
@@ -761,70 +716,124 @@ namespace DCT
                     return _nooptionsitemInfo;
                 }
             }
-        }
-
-        /// <summary>
-        /// The DataCleaningToolGoogleChromeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-        public partial class DataCleaningToolGoogleChromeAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _closappInfo;
 
             /// <summary>
-            /// Creates a new DataCleaningToolGoogleChrome  folder.
+            /// The SelectStudy item.
             /// </summary>
-            public DataCleaningToolGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DataCleaningToolGoogleChrome", "/form[@title~'^Data\\ Cleaning\\ Tool\\ -\\ Goog']", parentFolder, 30000, null, true, "c8b15f67-a005-4c0a-b1ad-7978cae56a3f", "")
-            {
-                _closappInfo = new RepoItemInfo(this, "ClosApp", ".//element[@accessiblename='Infobar']", 30000, null, "063547b3-c1fe-47cf-84c0-38d75dad0d37");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-            public virtual Ranorex.Form Self
+            [RepositoryItem("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
+            public virtual Ranorex.LabelTag SelectStudy
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                    return _selectstudyInfo.CreateAdapter<Ranorex.LabelTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Self item info.
+            /// The SelectStudy item info.
             /// </summary>
-            [RepositoryItemInfo("c8b15f67-a005-4c0a-b1ad-7978cae56a3f")]
-            public virtual RepoItemInfo SelfInfo
+            [RepositoryItemInfo("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
+            public virtual RepoItemInfo SelectStudyInfo
             {
                 get
                 {
-                    return _selfInfo;
+                    return _selectstudyInfo;
                 }
             }
 
             /// <summary>
-            /// The ClosApp item.
+            /// The SelectSubject item.
             /// </summary>
-            [RepositoryItem("063547b3-c1fe-47cf-84c0-38d75dad0d37")]
-            public virtual Ranorex.Unknown ClosApp
+            [RepositoryItem("f4f4a0ff-91a5-41b1-859c-459702c99230")]
+            public virtual Ranorex.LabelTag SelectSubject
             {
                 get
                 {
-                    return _closappInfo.CreateAdapter<Ranorex.Unknown>(true);
+                    return _selectsubjectInfo.CreateAdapter<Ranorex.LabelTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClosApp item info.
+            /// The SelectSubject item info.
             /// </summary>
-            [RepositoryItemInfo("063547b3-c1fe-47cf-84c0-38d75dad0d37")]
-            public virtual RepoItemInfo ClosAppInfo
+            [RepositoryItemInfo("f4f4a0ff-91a5-41b1-859c-459702c99230")]
+            public virtual RepoItemInfo SelectSubjectInfo
             {
                 get
                 {
-                    return _closappInfo;
+                    return _selectsubjectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Selectvisit item.
+            /// </summary>
+            [RepositoryItem("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
+            public virtual Ranorex.LabelTag Selectvisit
+            {
+                get
+                {
+                    return _selectvisitInfo.CreateAdapter<Ranorex.LabelTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Selectvisit item info.
+            /// </summary>
+            [RepositoryItemInfo("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
+            public virtual RepoItemInfo SelectvisitInfo
+            {
+                get
+                {
+                    return _selectvisitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FindByCriteria item.
+            /// </summary>
+            [RepositoryItem("b58ffb39-4988-4944-9416-87a4b57259d7")]
+            public virtual Ranorex.SpanTag FindByCriteria
+            {
+                get
+                {
+                    return _findbycriteriaInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FindByCriteria item info.
+            /// </summary>
+            [RepositoryItemInfo("b58ffb39-4988-4944-9416-87a4b57259d7")]
+            public virtual RepoItemInfo FindByCriteriaInfo
+            {
+                get
+                {
+                    return _findbycriteriaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ResultsHeading item.
+            /// </summary>
+            [RepositoryItem("28f8a8b1-4fae-4018-99b7-601ab0ffa7e4")]
+            public virtual Ranorex.H5Tag ResultsHeading
+            {
+                get
+                {
+                    return _resultsheadingInfo.CreateAdapter<Ranorex.H5Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResultsHeading item info.
+            /// </summary>
+            [RepositoryItemInfo("28f8a8b1-4fae-4018-99b7-601ab0ffa7e4")]
+            public virtual RepoItemInfo ResultsHeadingInfo
+            {
+                get
+                {
+                    return _resultsheadingInfo;
                 }
             }
         }
@@ -1000,72 +1009,6 @@ namespace DCT
         }
 
         /// <summary>
-        /// The OverviewOctopusDeployGoogleChromAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-        public partial class OverviewOctopusDeployGoogleChromAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _closepageInfo;
-
-            /// <summary>
-            /// Creates a new OverviewOctopusDeployGoogleChrom  folder.
-            /// </summary>
-            public OverviewOctopusDeployGoogleChromAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("OverviewOctopusDeployGoogleChrom", "/form[@title~'^Overview\\ -\\ Octopus\\ Deploy']", parentFolder, 30000, null, true, "ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1", "")
-            {
-                _closepageInfo = new RepoItemInfo(this, "ClosePage", "container[@accessiblename~'^Overview\\ -\\ Octopus\\ Deploy']/container/container[2]/container[1]", 30000, null, "3354b5b3-888d-4a90-aca5-79270cb09f08");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("ccf2a4a6-903a-4702-a5ac-46b9a10f9ea1")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClosePage item.
-            /// </summary>
-            [RepositoryItem("3354b5b3-888d-4a90-aca5-79270cb09f08")]
-            public virtual Ranorex.Container ClosePage
-            {
-                get
-                {
-                    return _closepageInfo.CreateAdapter<Ranorex.Container>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClosePage item info.
-            /// </summary>
-            [RepositoryItemInfo("3354b5b3-888d-4a90-aca5-79270cb09f08")]
-            public virtual RepoItemInfo ClosePageInfo
-            {
-                get
-                {
-                    return _closepageInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The REDCapCloudAppFolder folder.
         /// </summary>
         [RepositoryFolder("8c57a700-52e3-43b0-bb42-688fd9e5c8b2")]
@@ -1082,10 +1025,6 @@ namespace DCT
             RepoItemInfo _loginapplybuttonInfo;
             RepoItemInfo _loginpasswordInfo;
             DataCollectionWidgetCheckboxCompleteInfoClass _datacollectionwidgetcheckboxcompleteInfo;
-            RepoItemInfo _addsubjectInfo;
-            RepoItemInfo _sitesbuttonInfo;
-            RepoItemInfo _selectsiteInfo;
-            RepoItemInfo _subjectnumberInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -1104,10 +1043,6 @@ namespace DCT
                 _loginapplybuttonInfo = new RepoItemInfo(this, "LoginApplyButton", ".//button[#'login_applyButton']", 30000, null, "4a10d058-bb72-4a32-ab26-b56c3a0c5282");
                 _loginpasswordInfo = new RepoItemInfo(this, "LoginPassword", ".//input[#'login_password']", 30000, null, "ba64f708-3983-4c1b-bee1-8c60e98a4433");
                 _datacollectionwidgetcheckboxcompleteInfo = new DataCollectionWidgetCheckboxCompleteInfoClass(this);
-                _addsubjectInfo = new RepoItemInfo(this, "AddSubject", ".//button[#'studyBaseWidget_buttonCreateAdd']", 30000, null, "3b54ddb5-8585-49fe-92e8-cbcc70b6dc13");
-                _sitesbuttonInfo = new RepoItemInfo(this, "SitesButton", ".//button[#'enrollWidget_comboSites_button']", 30000, null, "9328280c-2573-49e2-a45f-27e9635d479a");
-                _selectsiteInfo = new RepoItemInfo(this, "selectSite", ".//a[@innertext~'2019']", 30000, null, "dead8fc1-6d55-4ecd-98eb-e5dc5365356e");
-                _subjectnumberInfo = new RepoItemInfo(this, "SubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "ed816dba-2dec-41ab-b191-edc9d053b81b");
             }
 
             /// <summary>
@@ -1430,102 +1365,6 @@ namespace DCT
                 get
                 {
                     return _datacollectionwidgetcheckboxcompleteInfo;
-                }
-            }
-
-            /// <summary>
-            /// The AddSubject item.
-            /// </summary>
-            [RepositoryItem("3b54ddb5-8585-49fe-92e8-cbcc70b6dc13")]
-            public virtual Ranorex.ButtonTag AddSubject
-            {
-                get
-                {
-                    return _addsubjectInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AddSubject item info.
-            /// </summary>
-            [RepositoryItemInfo("3b54ddb5-8585-49fe-92e8-cbcc70b6dc13")]
-            public virtual RepoItemInfo AddSubjectInfo
-            {
-                get
-                {
-                    return _addsubjectInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SitesButton item.
-            /// </summary>
-            [RepositoryItem("9328280c-2573-49e2-a45f-27e9635d479a")]
-            public virtual Ranorex.ButtonTag SitesButton
-            {
-                get
-                {
-                    return _sitesbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SitesButton item info.
-            /// </summary>
-            [RepositoryItemInfo("9328280c-2573-49e2-a45f-27e9635d479a")]
-            public virtual RepoItemInfo SitesButtonInfo
-            {
-                get
-                {
-                    return _sitesbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The selectSite item.
-            /// </summary>
-            [RepositoryItem("dead8fc1-6d55-4ecd-98eb-e5dc5365356e")]
-            public virtual Ranorex.ATag selectSite
-            {
-                get
-                {
-                    return _selectsiteInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The selectSite item info.
-            /// </summary>
-            [RepositoryItemInfo("dead8fc1-6d55-4ecd-98eb-e5dc5365356e")]
-            public virtual RepoItemInfo selectSiteInfo
-            {
-                get
-                {
-                    return _selectsiteInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SubjectNumber item.
-            /// </summary>
-            [RepositoryItem("ed816dba-2dec-41ab-b191-edc9d053b81b")]
-            public virtual Ranorex.InputTag SubjectNumber
-            {
-                get
-                {
-                    return _subjectnumberInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SubjectNumber item info.
-            /// </summary>
-            [RepositoryItemInfo("ed816dba-2dec-41ab-b191-edc9d053b81b")]
-            public virtual RepoItemInfo SubjectNumberInfo
-            {
-                get
-                {
-                    return _subjectnumberInfo;
                 }
             }
         }
@@ -1932,7 +1771,7 @@ namespace DCT
         {
             RepoItemInfo _debugconsoleInfo;
             RepoItemInfo _powershellInfo;
-            RepoItemInfo _powershallconsolInfo;
+            RepoItemInfo _powershellconsolInfo;
             RepoItemInfo _azurelogoutInfo;
             RepoItemInfo _logoutInfo;
             RepoItemInfo _dctvalidationversionInfo;
@@ -1947,7 +1786,7 @@ namespace DCT
             {
                 _debugconsoleInfo = new RepoItemInfo(this, "DebugConsole", ".//a[@innertext='Debug console ']", 30000, null, "67cbad4f-5b5c-41d7-a22b-8b0b8a2f529d");
                 _powershellInfo = new RepoItemInfo(this, "PowerShell", ".//a[@innertext='PowerShell']", 30000, null, "63637764-b1c2-45b3-96c3-243481d396a3");
-                _powershallconsolInfo = new RepoItemInfo(this, "PowerShallConsol", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span", 30000, null, "cb458012-66d2-43c8-90cf-f9dc911f0576");
+                _powershellconsolInfo = new RepoItemInfo(this, "PowerShellConsol", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span", 30000, null, "cb458012-66d2-43c8-90cf-f9dc911f0576");
                 _azurelogoutInfo = new RepoItemInfo(this, "AzureLogout", ".//a[@innertext=$CSPUsername]", 30000, null, "ba6ef5cd-ae29-46fd-a862-13b41632bc4d");
                 _logoutInfo = new RepoItemInfo(this, "Logout", ".//a[@innertext='Logout']", 30000, null, "bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae");
                 _dctvalidationversionInfo = new RepoItemInfo(this, "DCTValidationVersion", ".//div[@innertext~'1.2']", 30000, null, "49370b0d-946f-4152-89ea-e31cf4c37984");
@@ -2028,26 +1867,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The PowerShallConsol item.
+            /// The PowerShellConsol item.
             /// </summary>
             [RepositoryItem("cb458012-66d2-43c8-90cf-f9dc911f0576")]
-            public virtual Ranorex.SpanTag PowerShallConsol
+            public virtual Ranorex.SpanTag PowerShellConsol
             {
                 get
                 {
-                    return _powershallconsolInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _powershellconsolInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The PowerShallConsol item info.
+            /// The PowerShellConsol item info.
             /// </summary>
             [RepositoryItemInfo("cb458012-66d2-43c8-90cf-f9dc911f0576")]
-            public virtual RepoItemInfo PowerShallConsolInfo
+            public virtual RepoItemInfo PowerShellConsolInfo
             {
                 get
                 {
-                    return _powershallconsolInfo;
+                    return _powershellconsolInfo;
                 }
             }
 
@@ -2168,282 +2007,6 @@ namespace DCT
                 get
                 {
                     return _rcc_hubpowershallInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The REDCapCloud1AppFolder folder.
-        /// </summary>
-        [RepositoryFolder("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-        public partial class REDCapCloud1AppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _studynameInfo;
-            RepoItemInfo _entersubjectnumberInfo;
-
-            /// <summary>
-            /// Creates a new REDCapCloud1  folder.
-            /// </summary>
-            public REDCapCloud1AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("REDCapCloud1", "/dom[@domain='cgsqc.redcapcloud.com']", parentFolder, 30000, null, false, "ee5f1b78-cba3-4623-b016-bbed2259c88e", "")
-            {
-                _studynameInfo = new RepoItemInfo(this, "StudyName", ".//div[@innertext~'2019']", 30000, null, "8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48");
-                _entersubjectnumberInfo = new RepoItemInfo(this, "EnterSubjectNumber", ".//input[#'enrollWidget_textSubjectNumber']", 30000, null, "972775f8-a766-4c55-8ce5-b63405dd6144");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("ee5f1b78-cba3-4623-b016-bbed2259c88e")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The StudyName item.
-            /// </summary>
-            [RepositoryItem("8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48")]
-            public virtual Ranorex.DivTag StudyName
-            {
-                get
-                {
-                    return _studynameInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StudyName item info.
-            /// </summary>
-            [RepositoryItemInfo("8a110e17-ca00-4f2c-b6ba-ef4ffcf8fe48")]
-            public virtual RepoItemInfo StudyNameInfo
-            {
-                get
-                {
-                    return _studynameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The EnterSubjectNumber item.
-            /// </summary>
-            [RepositoryItem("972775f8-a766-4c55-8ce5-b63405dd6144")]
-            public virtual Ranorex.InputTag EnterSubjectNumber
-            {
-                get
-                {
-                    return _entersubjectnumberInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The EnterSubjectNumber item info.
-            /// </summary>
-            [RepositoryItemInfo("972775f8-a766-4c55-8ce5-b63405dd6144")]
-            public virtual RepoItemInfo EnterSubjectNumberInfo
-            {
-                get
-                {
-                    return _entersubjectnumberInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The CogstateSolutionPlatformChromeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-        public partial class CogstateSolutionPlatformChromeAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new CogstateSolutionPlatformChrome  folder.
-            /// </summary>
-            public CogstateSolutionPlatformChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CogstateSolutionPlatformChrome", "/form[@title~'Cogstate Solution Platform']", parentFolder, 30000, null, true, "1c825908-6a91-4415-8adf-2cb54b5f8fc9", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("1c825908-6a91-4415-8adf-2cb54b5f8fc9")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The DataCleaningTool1AppFolder folder.
-        /// </summary>
-        [RepositoryFolder("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-        public partial class DataCleaningTool1AppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _selectstudyInfo;
-            RepoItemInfo _selectsubjectInfo;
-            RepoItemInfo _selectvisitInfo;
-            RepoItemInfo _findbycriteriaInfo;
-
-            /// <summary>
-            /// Creates a new DataCleaningTool1  folder.
-            /// </summary>
-            public DataCleaningTool1AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DataCleaningTool1", "/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']", parentFolder, 30000, null, false, "15097ba2-c426-4eaa-8bd9-ab23bae9eaf7", "")
-            {
-                _selectstudyInfo = new RepoItemInfo(this, "SelectStudy", ".//label[@innertext~'Choose a study']", 30000, null, "688f4790-565d-46ed-ba6f-5bdfb1e508be");
-                _selectsubjectInfo = new RepoItemInfo(this, "SelectSubject", ".//label[@innertext~'Choose a subject']", 30000, null, "f4f4a0ff-91a5-41b1-859c-459702c99230");
-                _selectvisitInfo = new RepoItemInfo(this, "Selectvisit", ".//label[@innertext~'Choose a visit']", 30000, null, "d9f20406-9b2a-4e64-b296-fcacdd99f491");
-                _findbycriteriaInfo = new RepoItemInfo(this, "FindByCriteria", ".//span[@innertext='Find By Criteria']", 30000, null, "b58ffb39-4988-4944-9416-87a4b57259d7");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("15097ba2-c426-4eaa-8bd9-ab23bae9eaf7")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SelectStudy item.
-            /// </summary>
-            [RepositoryItem("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
-            public virtual Ranorex.LabelTag SelectStudy
-            {
-                get
-                {
-                    return _selectstudyInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SelectStudy item info.
-            /// </summary>
-            [RepositoryItemInfo("688f4790-565d-46ed-ba6f-5bdfb1e508be")]
-            public virtual RepoItemInfo SelectStudyInfo
-            {
-                get
-                {
-                    return _selectstudyInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SelectSubject item.
-            /// </summary>
-            [RepositoryItem("f4f4a0ff-91a5-41b1-859c-459702c99230")]
-            public virtual Ranorex.LabelTag SelectSubject
-            {
-                get
-                {
-                    return _selectsubjectInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SelectSubject item info.
-            /// </summary>
-            [RepositoryItemInfo("f4f4a0ff-91a5-41b1-859c-459702c99230")]
-            public virtual RepoItemInfo SelectSubjectInfo
-            {
-                get
-                {
-                    return _selectsubjectInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Selectvisit item.
-            /// </summary>
-            [RepositoryItem("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
-            public virtual Ranorex.LabelTag Selectvisit
-            {
-                get
-                {
-                    return _selectvisitInfo.CreateAdapter<Ranorex.LabelTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Selectvisit item info.
-            /// </summary>
-            [RepositoryItemInfo("d9f20406-9b2a-4e64-b296-fcacdd99f491")]
-            public virtual RepoItemInfo SelectvisitInfo
-            {
-                get
-                {
-                    return _selectvisitInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FindByCriteria item.
-            /// </summary>
-            [RepositoryItem("b58ffb39-4988-4944-9416-87a4b57259d7")]
-            public virtual Ranorex.SpanTag FindByCriteria
-            {
-                get
-                {
-                    return _findbycriteriaInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FindByCriteria item info.
-            /// </summary>
-            [RepositoryItemInfo("b58ffb39-4988-4944-9416-87a4b57259d7")]
-            public virtual RepoItemInfo FindByCriteriaInfo
-            {
-                get
-                {
-                    return _findbycriteriaInfo;
                 }
             }
         }
