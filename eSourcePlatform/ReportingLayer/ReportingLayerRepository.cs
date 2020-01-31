@@ -157,13 +157,12 @@ namespace ReportingLayer
         [RepositoryFolder("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
         public partial class PowerBIAppFolder : RepoGenBaseFolder
         {
+            ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder _dateofassessmentfilter;
             RepoItemInfo _dateslicertorangeInfo;
             RepoItemInfo _dateslicerfromrangeInfo;
             RepoItemInfo _cleartestselectionsInfo;
             RepoItemInfo _protocolidcellInfo;
             RepoItemInfo _filterbuttonInfo;
-            RepoItemInfo _expanddatefilterInfo;
-            RepoItemInfo _filterdatecheckboxInfo;
 
             /// <summary>
             /// Creates a new PowerBI  folder.
@@ -171,13 +170,12 @@ namespace ReportingLayer
             public PowerBIAppFolder(RepoGenBaseFolder parentFolder) :
                     base("PowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "0bcadffa-23d9-4f2f-a294-3ed2de5fe67e", "")
             {
+                _dateofassessmentfilter = new ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder(this);
                 _dateslicertorangeInfo = new RepoItemInfo(this, "DateSlicerToRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input", 30000, null, "f012a904-5357-4a30-9bc0-624df81514af");
                 _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "04a6379f-44ba-419b-b302-034971569815");
                 _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
                 _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 30000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
-                _filterbuttonInfo = new RepoItemInfo(this, "FilterButton", ".//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']", 30000, null, "f8ce8db1-03d7-47c6-b1b6-99c6bd175da9");
-                _expanddatefilterInfo = new RepoItemInfo(this, "ExpandDateFilter", ".//div[@class='cardHeader flex']//h2[@title~'DateOfAssessment']/following-sibling::button[@title='Expand']", 30000, null, "9b1e4530-d0a7-4ed2-9d37-a73b98d65631");
-                _filterdatecheckboxInfo = new RepoItemInfo(this, "FilterDateCheckbox", ".//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]/li/div[2]/div[2]//tag[@tagname='visual']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div[9]/?/?/div/span", 30000, null, "effa4a30-6e08-4cd5-8e5a-2a0205ce2fb4");
+                _filterbuttonInfo = new RepoItemInfo(this, "FilterButton", ".//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']/i", 30000, null, "f8ce8db1-03d7-47c6-b1b6-99c6bd175da9");
             }
 
             /// <summary>
@@ -304,11 +302,11 @@ namespace ReportingLayer
             /// The FilterButton item.
             /// </summary>
             [RepositoryItem("f8ce8db1-03d7-47c6-b1b6-99c6bd175da9")]
-            public virtual Ranorex.Button FilterButton
+            public virtual Ranorex.ITag FilterButton
             {
                 get
                 {
-                    return _filterbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _filterbuttonInfo.CreateAdapter<Ranorex.ITag>(true);
                 }
             }
 
@@ -325,50 +323,181 @@ namespace ReportingLayer
             }
 
             /// <summary>
-            /// The ExpandDateFilter item.
+            /// The DateOfAssessmentFilter folder.
             /// </summary>
-            [RepositoryItem("9b1e4530-d0a7-4ed2-9d37-a73b98d65631")]
-            public virtual Ranorex.Button ExpandDateFilter
+            [RepositoryFolder("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+            public virtual ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder DateOfAssessmentFilter
+            {
+                get { return _dateofassessmentfilter; }
+            }
+        }
+
+        /// <summary>
+        /// The DateOfAssessmentFilterFolder folder.
+        /// </summary>
+        [RepositoryFolder("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+        public partial class DateOfAssessmentFilterFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _isinthisdropdownInfo;
+            RepoItemInfo _daydropdownInfo;
+            RepoItemInfo _expandInfo;
+            RepoItemInfo _applyfilterbuttonInfo;
+            RepoItemInfo _filtertypedropdownInfo;
+
+            /// <summary>
+            /// Creates a new DateOfAssessmentFilter  folder.
+            /// </summary>
+            public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
+                    base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
+            {
+                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", ".//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[1]", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
+                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", ".//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[2]", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
+                _expandInfo = new RepoItemInfo(this, "Expand", "div[2]/?/?/ul/tag[9]//button[@title='Expand']", 30000, null, "bae026ec-2353-462f-841a-8981f53c124b");
+                _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]/?/?/ul/tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
+                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]/?/?/ul/tag[9]//select", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+            public virtual Ranorex.DivTag Self
             {
                 get
                 {
-                    return _expanddatefilterInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ExpandDateFilter item info.
+            /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("9b1e4530-d0a7-4ed2-9d37-a73b98d65631")]
-            public virtual RepoItemInfo ExpandDateFilterInfo
+            [RepositoryItemInfo("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _expanddatefilterInfo;
+                    return _selfInfo;
                 }
             }
 
             /// <summary>
-            /// The FilterDateCheckbox item.
+            /// The IsInThisDropdown item.
             /// </summary>
-            [RepositoryItem("effa4a30-6e08-4cd5-8e5a-2a0205ce2fb4")]
-            public virtual Ranorex.SpanTag FilterDateCheckbox
+            [RepositoryItem("773854ca-7a32-4c97-93e9-0aae1cf4c64c")]
+            public virtual Ranorex.SelectTag IsInThisDropdown
             {
                 get
                 {
-                    return _filterdatecheckboxInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _isinthisdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
                 }
             }
 
             /// <summary>
-            /// The FilterDateCheckbox item info.
+            /// The IsInThisDropdown item info.
             /// </summary>
-            [RepositoryItemInfo("effa4a30-6e08-4cd5-8e5a-2a0205ce2fb4")]
-            public virtual RepoItemInfo FilterDateCheckboxInfo
+            [RepositoryItemInfo("773854ca-7a32-4c97-93e9-0aae1cf4c64c")]
+            public virtual RepoItemInfo IsInThisDropdownInfo
             {
                 get
                 {
-                    return _filterdatecheckboxInfo;
+                    return _isinthisdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DayDropdown item.
+            /// </summary>
+            [RepositoryItem("4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b")]
+            public virtual Ranorex.SelectTag DayDropdown
+            {
+                get
+                {
+                    return _daydropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DayDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b")]
+            public virtual RepoItemInfo DayDropdownInfo
+            {
+                get
+                {
+                    return _daydropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Expand item.
+            /// </summary>
+            [RepositoryItem("bae026ec-2353-462f-841a-8981f53c124b")]
+            public virtual Ranorex.ButtonTag Expand
+            {
+                get
+                {
+                    return _expandInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Expand item info.
+            /// </summary>
+            [RepositoryItemInfo("bae026ec-2353-462f-841a-8981f53c124b")]
+            public virtual RepoItemInfo ExpandInfo
+            {
+                get
+                {
+                    return _expandInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ApplyFilterButton item.
+            /// </summary>
+            [RepositoryItem("f5f9f142-7a61-4caf-a45c-e9244d4b2fb2")]
+            public virtual Ranorex.ButtonTag ApplyFilterButton
+            {
+                get
+                {
+                    return _applyfilterbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ApplyFilterButton item info.
+            /// </summary>
+            [RepositoryItemInfo("f5f9f142-7a61-4caf-a45c-e9244d4b2fb2")]
+            public virtual RepoItemInfo ApplyFilterButtonInfo
+            {
+                get
+                {
+                    return _applyfilterbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FilterTypeDropdown item.
+            /// </summary>
+            [RepositoryItem("db43cf6c-681a-40a7-a643-376f7e2b8282")]
+            public virtual Ranorex.SelectTag FilterTypeDropdown
+            {
+                get
+                {
+                    return _filtertypedropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FilterTypeDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("db43cf6c-681a-40a7-a643-376f7e2b8282")]
+            public virtual RepoItemInfo FilterTypeDropdownInfo
+            {
+                get
+                {
+                    return _filtertypedropdownInfo;
                 }
             }
         }

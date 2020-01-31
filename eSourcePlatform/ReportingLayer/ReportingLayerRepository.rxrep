@@ -59,32 +59,75 @@ rxversion="8.3">
 			</item>
 			<item
 			addcaps="unknown,webelement,itag"
-			capname="button"
+			capname="itag"
 			id="f8ce8db1-03d7-47c6-b1b6-99c6bd175da9"
 			name="FilterButton"
 			refimgid="91da9f4a-6c6c-4f7b-95dd-cce6b15e6355"
 			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']
+				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']/i
 			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="button"
-			id="9b1e4530-d0a7-4ed2-9d37-a73b98d65631"
-			name="ExpandDateFilter"
-			refimgid="a257eb72-f26c-48d5-8e2d-94e5bd7c3f90"
-			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//div[@class='cardHeader flex']//h2[@title~'DateOfAssessment']/following-sibling::button[@title='Expand']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="effa4a30-6e08-4cd5-8e5a-2a0205ce2fb4"
-			name="FilterDateCheckbox"
-			refimgid="7297c246-102a-4de6-a08c-3ccf8604d53f"
-			refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[2]/div[2]/tag/div/tag/div/div/div[2]/div/div[2]/div/div[1]/div/div/div[9]/div/div/span"
-			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]/li/div[2]/div[2]//tag[@tagname='visual']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div[9]/?/?/div/span
-			</item>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="e6fbb293-72d4-434b-a38b-f189e71cd4f8"
+			isrooted="True"
+			name="DateOfAssessmentFilter"
+			refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
+				name="IsInThisDropdown"
+				refimgid="6402487c-dbc6-466f-8fad-2ee46b18902f"
+				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[2]/div[2]/tag/form/div/select[1]"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[1]
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b"
+				name="DayDropdown"
+				refimgid="4d46f1aa-3f9f-44a0-88fe-c3fa3fad8bb4"
+				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[2]/div[2]/tag/form/div/select[2]"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="bae026ec-2353-462f-841a-8981f53c124b"
+				name="Expand"
+				refimgid="ac9eeb0f-461f-4b18-84a7-02e5ed7c6b26"
+				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[1]/div[1]/button[@title='Expand']"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//button[@title='Expand']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="f5f9f142-7a61-4caf-a45c-e9244d4b2fb2"
+				name="ApplyFilterButton"
+				refimgid="5b3ecf4f-0425-4318-b2ff-9825e38b1a19"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="db43cf6c-681a-40a7-a643-376f7e2b8282"
+				name="FilterTypeDropdown"
+				refimgid="bbda9ddf-cf12-490f-b68b-4172bd4e2b86"
+				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[2]/div[1]/select"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//select
+				</item>
+				<basepath>
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
 			</basepath>

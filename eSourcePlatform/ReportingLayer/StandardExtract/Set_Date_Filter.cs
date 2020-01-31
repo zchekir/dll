@@ -79,20 +79,32 @@ namespace ReportingLayer.StandardExtract
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterButton' at Center.", repo.PowerBI.FilterButtonInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'PowerBI' at Center.", repo.PowerBI.SelfInfo, new RecordItemIndex(0));
+            repo.PowerBI.Self.MoveTo();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterButton' at Center.", repo.PowerBI.FilterButtonInfo, new RecordItemIndex(1));
             repo.PowerBI.FilterButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.ExpandDateFilter' at Center.", repo.PowerBI.ExpandDateFilterInfo, new RecordItemIndex(1));
-            repo.PowerBI.ExpandDateFilter.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.Expand' at Center.", repo.PowerBI.DateOfAssessmentFilter.ExpandInfo, new RecordItemIndex(2));
+            repo.PowerBI.DateOfAssessmentFilter.Expand.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -14016 units.", new RecordItemIndex(2));
-            Mouse.ScrollWheel(-14016);
-            Delay.Milliseconds(500);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to 'Relative date' on item 'PowerBI.DateOfAssessmentFilter.FilterTypeDropdown'.", repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdownInfo, new RecordItemIndex(3));
+            repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdown.Element.SetAttributeValue("TagValue", "Relative date");
+            Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterDateCheckbox' at Center.", repo.PowerBI.FilterDateCheckboxInfo, new RecordItemIndex(3));
-            repo.PowerBI.FilterDateCheckbox.Click();
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '1' on item 'PowerBI.DateOfAssessmentFilter.IsInThisDropdown'.", repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdownInfo, new RecordItemIndex(4));
+            repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdown.Element.SetAttributeValue("TagValue", "1");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '2' on item 'PowerBI.DateOfAssessmentFilter.DayDropdown'.", repo.PowerBI.DateOfAssessmentFilter.DayDropdownInfo, new RecordItemIndex(5));
+            repo.PowerBI.DateOfAssessmentFilter.DayDropdown.Element.SetAttributeValue("TagValue", "2");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.ApplyFilterButton' at Center.", repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButtonInfo, new RecordItemIndex(6));
+            repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButton.Click();
             Delay.Milliseconds(200);
             
         }
