@@ -44,7 +44,6 @@ namespace CSP
             authoToken = "";
             studyProtocolName = "";
             DOM = "";
-            dob = "";
             genderCode = "";
             localityCode = "";
             postError = "";
@@ -99,18 +98,6 @@ namespace CSP
         {
             get { return _DOM; }
             set { _DOM = value; }
-        }
-
-        string _dob;
-
-        /// <summary>
-        /// Gets or sets the value of variable dob.
-        /// </summary>
-        [TestVariable("10196cf4-cebe-4e88-a9a4-05a64551f0e2")]
-        public string dob
-        {
-            get { return _dob; }
-            set { _dob = value; }
         }
 
         string _genderCode;
