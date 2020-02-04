@@ -291,7 +291,7 @@ namespace CSP
             set { _VisitName = value; }
         }
 
-        string _ExistingStudy = "";
+        string _ExistingStudy = "AutomationStudy";
 
         /// <summary>
         /// Gets or sets the value of variable ExistingStudy.

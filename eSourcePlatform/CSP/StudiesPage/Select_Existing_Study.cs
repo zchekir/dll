@@ -41,7 +41,7 @@ namespace CSP.StudiesPage
         /// </summary>
         public Select_Existing_Study()
         {
-            ExistingStudy = "";
+            ExistingStudy = "AutomationStudy";
         }
 
         /// <summary>

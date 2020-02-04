@@ -45,8 +45,8 @@ namespace DCT.DCT_Page
             Database = "cgst-orr-api";
             Authentication = "Active Directory Password";
             dbUsername = "zchekir@cogstate.com";
-            dbPassword = "Cogstate2014";
-            TestIdentifier = "2cec3a6c-deec-49bd-beb5-4663e14f6031";
+            dbPassword = "Cogstate2016";
+            TestIdentifier = "8836467E-0989-477B-A02B-8AB9111AEF40";
         }
 
         /// <summary>

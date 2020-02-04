@@ -1602,6 +1602,18 @@
       <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="CheckRrunFlag.cs">
+      <BoundTo>950bc8d6-597b-4276-b065-334c8256ae1e</BoundTo>
+      <DependentUpon>CheckRrunFlag.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d03efadf-e2ab-46ea-bea4-e4503eeb804d</id>
+    </Compile>
+    <Compile Include="CheckRrunFlag.UserCode.cs">
+      <BoundTo>950bc8d6-597b-4276-b065-334c8256ae1e</BoundTo>
+      <DependentUpon>CheckRrunFlag.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7cba8fb0-b9fc-446c-9772-922b696332e3</id>
+    </Compile>
     <Compile Include="ClickNoButton.cs">
       <BoundTo>736781f6-6c3a-402e-9413-966838fac367</BoundTo>
       <DependentUpon>ClickNoButton.rxrec</DependentUpon>
@@ -2576,6 +2588,18 @@
       <BoundTo>480d9a60-ad4e-41ed-a1e4-d253bb05627c</BoundTo>
       <DependentUpon>View_Lastest_Report.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="RrunWorkflow.cs">
+      <BoundTo>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</BoundTo>
+      <DependentUpon>RrunWorkflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8f65ae47-129c-4dad-9cef-f524d4b4d7fe</id>
+    </Compile>
+    <Compile Include="RrunWorkflow.UserCode.cs">
+      <BoundTo>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</BoundTo>
+      <DependentUpon>RrunWorkflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0284bd79-ee29-4908-a3c2-8f69fbc45277</id>
     </Compile>
     <Compile Include="Set_LocalitieCode.cs">
       <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
@@ -3898,6 +3922,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
     </None>
+    <None Include="CheckRrunFlag.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>950bc8d6-597b-4276-b065-334c8256ae1e</id>
+      <recordtableid>cf6de81a-ac52-40c4-9fec-7a2e2f9612a7</recordtableid>
+    </None>
     <None Include="ClickNoButton.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>736781f6-6c3a-402e-9413-966838fac367</id>
@@ -4493,6 +4522,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>3bf72023-04a6-405d-b102-33645e57f937</recordtableid>
     </None>
+    <None Include="RrunWorkflow.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</id>
+      <recordtableid>957128ba-5359-452d-b0db-ee9e12c48683</recordtableid>
+    </None>
     <None Include="Set_LocalitieCode.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>492928c3-8757-4ac0-ac0f-37c518b41407</id>
@@ -4549,9 +4583,9 @@
       <recordtableid>5af6e6dc-37da-402d-a6b4-a53e84ad1e5d</recordtableid>
     </None>
     <None Include="StudiesPage\Select_Existing_Study.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>34b4c559-c077-44b6-860a-c6a562877f50</id>
       <recordtableid>8f769f95-c08c-4671-bb6b-e41ddcf23a95</recordtableid>
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
     </None>
     <None Include="StudiesPage\Select_Locality.rxrec">
       <id>fc4ece17-f535-4e3d-89f0-9f186fadcd1e</id>
