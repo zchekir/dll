@@ -2817,6 +2817,18 @@
     <Compile Include="StudiesPage\Validate_Sponsor_Descending.cs">
       <id>6d6e5744-d9e2-4def-a095-1c50c9d69cff</id>
     </Compile>
+    <Compile Include="StudyDuppCheck.cs">
+      <BoundTo>77d10b7f-5b1f-4487-b591-57c536de0146</BoundTo>
+      <DependentUpon>StudyDuppCheck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17aa6808-c51f-44a4-8bb0-44e41ab82439</id>
+    </Compile>
+    <Compile Include="StudyDuppCheck.UserCode.cs">
+      <BoundTo>77d10b7f-5b1f-4487-b591-57c536de0146</BoundTo>
+      <DependentUpon>StudyDuppCheck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4d623283-98ab-4ab9-9c1b-ed6730fc95d9</id>
+    </Compile>
     <Compile Include="UsersPage\Add_Role_External_User.cs">
       <id>271a9f76-ce62-4590-ab13-f2658d41a825</id>
       <DependentUpon>Add_Role_External_User.rxrec</DependentUpon>
@@ -4606,6 +4618,11 @@
       <id>4e0be4b7-bb96-465e-b8d5-41726c1196b8</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>9497cd80-1b66-4ed8-966b-f5cf4618adc6</recordtableid>
+    </None>
+    <None Include="StudyDuppCheck.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>77d10b7f-5b1f-4487-b591-57c536de0146</id>
+      <recordtableid>052f590d-8129-4cde-ac98-6ee337aed7f7</recordtableid>
     </None>
     <None Include="UsersPage\Add_Role_External_User.rxrec">
       <id>bbae9c6b-903b-4375-9555-9077f3057673</id>
