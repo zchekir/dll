@@ -49,66 +49,6 @@ namespace ReportingLayer
 
 #region Variables
 
-        string _DCTDOM = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable DCTDOM.
-        /// </summary>
-        [TestVariable("7e405311-352b-4fd0-b12b-893fa5282752")]
-        public string DCTDOM
-        {
-            get { return _DCTDOM; }
-            set { _DCTDOM = value; }
-        }
-
-        string _RCCDOM = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable RCCDOM.
-        /// </summary>
-        [TestVariable("bc0082c5-16c2-4397-94ab-05b2e47c9749")]
-        public string RCCDOM
-        {
-            get { return _RCCDOM; }
-            set { _RCCDOM = value; }
-        }
-
-        string _ExistingStudy = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable ExistingStudy.
-        /// </summary>
-        [TestVariable("cc9fc24d-c180-4a50-a79f-863ab1310d8e")]
-        public string ExistingStudy
-        {
-            get { return _ExistingStudy; }
-            set { _ExistingStudy = value; }
-        }
-
-        string _CSPUsername = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("6aa037ec-ad71-4bbc-ba08-854a4647afa6")]
-        public string CSPUsername
-        {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
-        }
-
-        string _AzureDOM = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable AzureDOM.
-        /// </summary>
-        [TestVariable("68a830a8-f79b-4ea4-ae54-b95755f7d842")]
-        public string AzureDOM
-        {
-            get { return _AzureDOM; }
-            set { _AzureDOM = value; }
-        }
-
         string _ProtocolID = "";
 
         /// <summary>
@@ -158,11 +98,14 @@ namespace ReportingLayer
         public partial class PowerBIAppFolder : RepoGenBaseFolder
         {
             ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder _dateofassessmentfilter;
+            RepoItemInfo _academicextracttableInfo;
             RepoItemInfo _dateslicertorangeInfo;
             RepoItemInfo _dateslicerfromrangeInfo;
             RepoItemInfo _cleartestselectionsInfo;
-            RepoItemInfo _protocolidcellInfo;
             RepoItemInfo _filterbuttonInfo;
+            RepoItemInfo _scrollbarInfo;
+            RepoItemInfo _scrollleftbuttonInfo;
+            RepoItemInfo _protocolidcellInfo;
 
             /// <summary>
             /// Creates a new PowerBI  folder.
@@ -171,11 +114,14 @@ namespace ReportingLayer
                     base("PowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "0bcadffa-23d9-4f2f-a294-3ed2de5fe67e", "")
             {
                 _dateofassessmentfilter = new ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder(this);
+                _academicextracttableInfo = new RepoItemInfo(this, "AcademicExtractTable", ".//tag[#'pvExplorationHost']//tag[@tagname='explore-canvas-modern']//tag[@tagname='transform']//div[@class='bodyCells']/div", 30000, null, "131c905f-9884-4720-94ca-3a49411a6e37");
                 _dateslicertorangeInfo = new RepoItemInfo(this, "DateSlicerToRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input", 30000, null, "f012a904-5357-4a30-9bc0-624df81514af");
                 _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "04a6379f-44ba-419b-b302-034971569815");
                 _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
-                _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 30000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
                 _filterbuttonInfo = new RepoItemInfo(this, "FilterButton", ".//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']/i", 30000, null, "f8ce8db1-03d7-47c6-b1b6-99c6bd175da9");
+                _scrollbarInfo = new RepoItemInfo(this, "ScrollBar", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]", 30000, null, "2b0a7c53-2baa-422f-9950-059eea3eeccb");
+                _scrollleftbuttonInfo = new RepoItemInfo(this, "ScrollLeftButton", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]/div[1]/?/?/tag[@tagname='polygon']", 30000, null, "a1a5f7bb-a23f-4180-8c55-625d47459c67");
+                _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 300000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
             }
 
             /// <summary>
@@ -199,6 +145,30 @@ namespace ReportingLayer
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtractTable item.
+            /// </summary>
+            [RepositoryItem("131c905f-9884-4720-94ca-3a49411a6e37")]
+            public virtual Ranorex.DivTag AcademicExtractTable
+            {
+                get
+                {
+                    return _academicextracttableInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtractTable item info.
+            /// </summary>
+            [RepositoryItemInfo("131c905f-9884-4720-94ca-3a49411a6e37")]
+            public virtual RepoItemInfo AcademicExtractTableInfo
+            {
+                get
+                {
+                    return _academicextracttableInfo;
                 }
             }
 
@@ -275,30 +245,6 @@ namespace ReportingLayer
             }
 
             /// <summary>
-            /// The ProtocolIDCell item.
-            /// </summary>
-            [RepositoryItem("2970ea4c-e954-448e-b58c-3b8823070f0f")]
-            public virtual Ranorex.DivTag ProtocolIDCell
-            {
-                get
-                {
-                    return _protocolidcellInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ProtocolIDCell item info.
-            /// </summary>
-            [RepositoryItemInfo("2970ea4c-e954-448e-b58c-3b8823070f0f")]
-            public virtual RepoItemInfo ProtocolIDCellInfo
-            {
-                get
-                {
-                    return _protocolidcellInfo;
-                }
-            }
-
-            /// <summary>
             /// The FilterButton item.
             /// </summary>
             [RepositoryItem("f8ce8db1-03d7-47c6-b1b6-99c6bd175da9")]
@@ -319,6 +265,78 @@ namespace ReportingLayer
                 get
                 {
                     return _filterbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ScrollBar item.
+            /// </summary>
+            [RepositoryItem("2b0a7c53-2baa-422f-9950-059eea3eeccb")]
+            public virtual Ranorex.DivTag ScrollBar
+            {
+                get
+                {
+                    return _scrollbarInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ScrollBar item info.
+            /// </summary>
+            [RepositoryItemInfo("2b0a7c53-2baa-422f-9950-059eea3eeccb")]
+            public virtual RepoItemInfo ScrollBarInfo
+            {
+                get
+                {
+                    return _scrollbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ScrollLeftButton item.
+            /// </summary>
+            [RepositoryItem("a1a5f7bb-a23f-4180-8c55-625d47459c67")]
+            public virtual Ranorex.WebElement ScrollLeftButton
+            {
+                get
+                {
+                    return _scrollleftbuttonInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ScrollLeftButton item info.
+            /// </summary>
+            [RepositoryItemInfo("a1a5f7bb-a23f-4180-8c55-625d47459c67")]
+            public virtual RepoItemInfo ScrollLeftButtonInfo
+            {
+                get
+                {
+                    return _scrollleftbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item.
+            /// </summary>
+            [RepositoryItem("2970ea4c-e954-448e-b58c-3b8823070f0f")]
+            public virtual Ranorex.DivTag ProtocolIDCell
+            {
+                get
+                {
+                    return _protocolidcellInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item info.
+            /// </summary>
+            [RepositoryItemInfo("2970ea4c-e954-448e-b58c-3b8823070f0f")]
+            public virtual RepoItemInfo ProtocolIDCellInfo
+            {
+                get
+                {
+                    return _protocolidcellInfo;
                 }
             }
 
