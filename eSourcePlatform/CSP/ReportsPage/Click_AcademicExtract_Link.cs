@@ -102,8 +102,8 @@ namespace CSP.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.AddStudyPage.ProtocolNumberField' and assigning its value to variable 'ProtocolID'.", repo.CogstateSolutionPlatform.AddStudyPage.ProtocolNumberFieldInfo, new RecordItemIndex(1));
             ProtocolID = repo.CogstateSolutionPlatform.AddStudyPage.ProtocolNumberField.Element.GetAttributeValueText("Value");

@@ -35,8 +35,9 @@ namespace ReportingLayer.AcademicExtract
 
         public void EnterFromDate(RepoItemInfo DateFromRange)
         {
-        	System.DateTime today = System.DateTime.Today;
-            string date = today.ToString("dd/MM/yyyy");
+            System.DateTime today = System.DateTime.Today;
+            string date = today.ToString("MM/dd/yyyy");
+           // string date = "2/5/2020";
         	
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'DateFromRange'.", DateFromRange);
             DateFromRange.FindAdapter<InputTag>().PressKeys(date);
@@ -44,8 +45,9 @@ namespace ReportingLayer.AcademicExtract
 
         public void EnterToDate(RepoItemInfo DateToRange)
         {
-            System.DateTime today = System.DateTime.Today;
-            string date = today.ToString("dd/MM/yyyy");
+           System.DateTime today = System.DateTime.Today;
+           string date = today.ToString("MM/dd/yyyy"); 
+            //string date = "2/5/2020";
         	
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'DateToRange'.", DateToRange);
             DateToRange.FindAdapter<InputTag>().PressKeys(date);
