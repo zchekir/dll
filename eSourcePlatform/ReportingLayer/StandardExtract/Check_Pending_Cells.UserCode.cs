@@ -53,6 +53,8 @@ namespace ReportingLayer.StandardExtract
 			
 			//Replaces the Testidentifier variable in query with TestIdentifier obtained during test run
 			da.SelectCommand.Parameters.AddWithValue("@TestIdentifier", TestIdentifier);
+			//Sets the timeout for the query to 5 minutes
+			da.SelectCommand.CommandTimeout = 300;
 			
 			using (da)
 			{
