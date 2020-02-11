@@ -1049,6 +1049,18 @@
       <id>dda30785-c999-49ad-9f6d-4f54880b7e71</id>
       <BoundTo>a7ef3a10-5edd-425a-a185-1281aefcc46b</BoundTo>
     </Compile>
+    <Compile Include="SubjectsPage\Click_CompositeOutcomes.cs">
+      <DependentUpon>Click_CompositeOutcomes.rxrec</DependentUpon>
+      <id>a6d9dd88-cb18-4c35-b95f-e95166b33aa8</id>
+      <BoundTo>0e021b80-acaf-45ed-b6b5-9b5774e817df</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SubjectsPage\Click_CompositeOutcomes.UserCode.cs">
+      <DependentUpon>Click_CompositeOutcomes.rxrec</DependentUpon>
+      <id>df516d03-1733-4180-b36f-82ad7bb43728</id>
+      <BoundTo>0e021b80-acaf-45ed-b6b5-9b5774e817df</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="SubjectsPage\Click_DataConfirmation.cs">
       <DependentUpon>Click_DataConfirmation.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1750,6 +1762,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>a7ef3a10-5edd-425a-a185-1281aefcc46b</id>
       <recordtableid>23016116-3201-4725-84fa-69e0a0147395</recordtableid>
+    </None>
+    <None Include="SubjectsPage\Click_CompositeOutcomes.rxrec">
+      <id>0e021b80-acaf-45ed-b6b5-9b5774e817df</id>
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <recordtableid>a0facf25-a588-4552-a677-9b16e996a9d9</recordtableid>
     </None>
     <None Include="SubjectsPage\Click_DataConfirmation.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>

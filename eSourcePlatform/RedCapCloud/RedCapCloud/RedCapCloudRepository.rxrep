@@ -597,6 +597,15 @@ rxversion="8.3">
 					/dom[@domain=$RCCDOM]//li/a[@innertext='English - US']
 				</item>
 				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="158c267d-20ad-404a-a918-ca5a78c74218"
+				name="USEnglish"
+				refimgid="2d6c981a-4f61-45c0-90ba-c2ad76d04f6d"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//li/a[@innertext='US - English']
+				</item>
+				<item
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="ce3a1313-e308-48ba-9e51-bf1c7045d365"
@@ -725,6 +734,15 @@ rxversion="8.3">
 				refimgid="c090d816-8885-4d17-ba1a-cdf69efb5c8f"
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//div[@id&lt;'cogstateBatteryCRF-CBB']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="48794d1c-59a1-44e5-91d1-cf69b7f314bf"
+				name="CompositeCRF"
+				refimgid="c090d816-8885-4d17-ba1a-cdf69efb5c8f"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[@id&lt;'cogstateBatteryCRF-CompositeOutcomes']
 				</item>
 				<item
 				addcaps="unknown,webelement,fonttag"
@@ -964,7 +982,7 @@ rxversion="8.3">
 				name="TestIdentifier"
 				refimgid="27dfae4c-0514-4a0c-929d-e447faaff05b"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='Test ID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='TestID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']
 				</item>
 				<basepath>
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']

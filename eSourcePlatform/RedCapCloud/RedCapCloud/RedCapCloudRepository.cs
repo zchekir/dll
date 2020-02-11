@@ -2488,6 +2488,7 @@ namespace RedCapCloud
             RepoItemInfo _malegenderInfo;
             RepoItemInfo _languagedropdownInfo;
             RepoItemInfo _englishusInfo;
+            RepoItemInfo _usenglishInfo;
             RepoItemInfo _saveandexitInfo;
             RepoItemInfo _dobfieldInfo;
             RepoItemInfo _subjectInfo;
@@ -2502,6 +2503,7 @@ namespace RedCapCloud
             RepoItemInfo _beginassessmentbuttonInfo;
             RepoItemInfo _dataconfirmationcrfInfo;
             RepoItemInfo _cbbcrfInfo;
+            RepoItemInfo _compositecrfInfo;
             RepoItemInfo _testwassuccessfullytransmittedInfo;
             RepoItemInfo _crftabsInfo;
             RepoItemInfo _saveandenterdatabuttonInfo;
@@ -2521,6 +2523,7 @@ namespace RedCapCloud
                 _malegenderInfo = new RepoItemInfo(this, "MaleGender", ".//div[#'gwtWrapper']//table/tbody/tr/td/?/?/input[@name~'rdio_[0-9]']", 30000, null, "e2c5faba-e28a-4d47-99c1-1e9229e1928e");
                 _languagedropdownInfo = new RepoItemInfo(this, "LanguageDropdown", ".//div[#'gwtWrapper']//table/tbody/tr/td/div/div/div/div/?/?/button", 30000, null, "49e8515c-f881-46a5-a470-f09db46ae3b8");
                 _englishusInfo = new RepoItemInfo(this, "EnglishUS", ".//li/a[@innertext='English - US']", 30000, null, "82622083-e411-4c96-8e50-a507d202f3ff");
+                _usenglishInfo = new RepoItemInfo(this, "USEnglish", ".//li/a[@innertext='US - English']", 30000, null, "158c267d-20ad-404a-a918-ca5a78c74218");
                 _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "ce3a1313-e308-48ba-9e51-bf1c7045d365");
                 _dobfieldInfo = new RepoItemInfo(this, "DOBField", ".//div[#'gwtWrapper']//table/?/?/tr/td/input[@type='text' and @visible='True']", 30000, null, "6689b195-0563-43db-8134-742b2e9caf8f");
                 _subjectInfo = new RepoItemInfo(this, "Subject", ".//div[#'gwtWrapper']/div//table/tbody/tr/td[2]/div[@innertext>$RandNum]", 240000, null, "4752a246-2d28-4500-98dd-1581b67cb1f6");
@@ -2535,6 +2538,7 @@ namespace RedCapCloud
                 _beginassessmentbuttonInfo = new RepoItemInfo(this, "BeginAssessmentButton", ".//div[#'gwtWrapper']//span[@innertext='Begin Assessment']", 30000, null, "9392e009-e70d-4ceb-aa88-0f694bb37641");
                 _dataconfirmationcrfInfo = new RepoItemInfo(this, "DataConfirmationCRF", ".//div[@id<'cogstateBatteryDataConfirmation']", 30000, null, "d9b364c3-4d5d-4c1e-8c60-c712bd9fea82");
                 _cbbcrfInfo = new RepoItemInfo(this, "CBBCRF", ".//div[@id<'cogstateBatteryCRF-CBB']", 30000, null, "46cd2424-7930-4ab1-ac72-aa31e02e3644");
+                _compositecrfInfo = new RepoItemInfo(this, "CompositeCRF", ".//div[@id<'cogstateBatteryCRF-CompositeOutcomes']", 30000, null, "48794d1c-59a1-44e5-91d1-cf69b7f314bf");
                 _testwassuccessfullytransmittedInfo = new RepoItemInfo(this, "TestWasSuccessfullyTransmitted", ".//div[#'gwtWrapper']//?/?/font[@innertext='Test Was Successfully Transmitted']", 30000, null, "6819e2a1-e800-4dd4-b4d3-a809a456668f");
                 _crftabsInfo = new RepoItemInfo(this, "CRFTabs", ".//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']", 30000, null, "8604c299-a22b-4dae-b410-9670b9e6fdbc");
                 _saveandenterdatabuttonInfo = new RepoItemInfo(this, "SaveAndEnterDataButton", ".//span[@innertext='Save and Enter Data']", 30000, null, "6eb50653-7933-4c47-bced-aaee65a7d729");
@@ -2765,6 +2769,30 @@ namespace RedCapCloud
                 get
                 {
                     return _englishusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The USEnglish item.
+            /// </summary>
+            [RepositoryItem("158c267d-20ad-404a-a918-ca5a78c74218")]
+            public virtual Ranorex.ATag USEnglish
+            {
+                get
+                {
+                    return _usenglishInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The USEnglish item info.
+            /// </summary>
+            [RepositoryItemInfo("158c267d-20ad-404a-a918-ca5a78c74218")]
+            public virtual RepoItemInfo USEnglishInfo
+            {
+                get
+                {
+                    return _usenglishInfo;
                 }
             }
 
@@ -3101,6 +3129,30 @@ namespace RedCapCloud
                 get
                 {
                     return _cbbcrfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CompositeCRF item.
+            /// </summary>
+            [RepositoryItem("48794d1c-59a1-44e5-91d1-cf69b7f314bf")]
+            public virtual Ranorex.DivTag CompositeCRF
+            {
+                get
+                {
+                    return _compositecrfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CompositeCRF item info.
+            /// </summary>
+            [RepositoryItemInfo("48794d1c-59a1-44e5-91d1-cf69b7f314bf")]
+            public virtual RepoItemInfo CompositeCRFInfo
+            {
+                get
+                {
+                    return _compositecrfInfo;
                 }
             }
 
@@ -3745,7 +3797,7 @@ namespace RedCapCloud
                     base("SitesTable", ".//div[#'gwtWrapper']", parentFolder, 30000, null, false, "f3ed595b-c7c6-4591-9c20-ed4615814a54", "")
             {
                 _sitenameInfo = new RepoItemInfo(this, "SiteName", ".//tbody/tr//div[@innertext='Cogstate']", 30000, null, "30eed5e1-47f2-4a38-a46c-32ebf9644ffe");
-                _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='Test ID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']", 30000, null, "326473da-bd04-4a0e-a1a3-3e6e18e9f398");
+                _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='TestID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']", 30000, null, "326473da-bd04-4a0e-a1a3-3e6e18e9f398");
             }
 
             /// <summary>

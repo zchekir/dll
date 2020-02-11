@@ -1194,7 +1194,6 @@ rxversion="8.3">
 			name="Add_Study">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="5307cfa2-4341-42f3-ac12-0c6f25a3c3eb"
 			name="Check_Pending_Cells"
 			ref="44e68252-3be1-453c-a81c-83b4c284da55"
@@ -1245,6 +1244,7 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="547c527c-a04a-49d4-ba67-08da235477a0"
 			name="Click_DataConfirmation"
 			ref="62ff2cdc-5712-4e1c-bbba-4c51f5e9daf2"
@@ -1345,6 +1345,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="5869b513-1662-4bdd-b7b5-8be53dd1b33c"
 			name="Click_ImportDataDictionary"
 			ref="3b2f8a6f-b9a4-46d0-a6b9-2da4be88796d"
@@ -1520,6 +1521,7 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="67bb9ff0-2966-454b-a1d4-c34b2d968cfa"
 			name="Select_CSV"
 			ref="26f5ca72-1f84-4986-a06c-f51a8360a311"
@@ -2030,6 +2032,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="85c5b8fe-c5f3-477c-a703-56047e41a83e"
 			name="Click_Delete_Instruments_Checkbox"
 			ref="a6aabcb3-1a03-4c1f-8c45-a574846d4f4b"
@@ -2162,6 +2165,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="8fdc5b03-3289-4842-8bc5-24f7e7ad8222"
 			name="Click_Upload"
 			ref="d65da13c-82fa-4a0f-b891-fd2e3c602605"
@@ -2495,6 +2499,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="a2e4e07e-80d9-49e2-8a44-b025a1c86a9b"
 			name="Click_Tools_Menu"
 			ref="13871cb9-c76a-400f-bd8b-8d53ae8c2114"
@@ -3216,7 +3221,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="BC006AC8-E056-4A13-A99D-260550743FC7">
+					value="">
 					</param>
 					<param
 					name="Key"
@@ -3252,6 +3257,20 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="cf467690-fdc1-4316-862a-522d1a3c56dc"
+			name="Click_CompositeOutcomes"
+			ref="a0facf25-a588-4552-a677-9b16e996a9d9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="cf83bf58-35e5-4f83-8e04-5991e49545f0"
 			name="Add_Site">
@@ -4173,6 +4192,10 @@ rxversion="8.3">
 								<testmodule
 								id="0eb122a9-3bfb-47c2-8867-46ceed3662fa"
 								name="Click_First_Visit">
+								</testmodule>
+								<testmodule
+								id="cf467690-fdc1-4316-862a-522d1a3c56dc"
+								name="Click_CompositeOutcomes">
 								</testmodule>
 								<testmodule
 								id="547c527c-a04a-49d4-ba67-08da235477a0"
@@ -5438,6 +5461,9 @@ rxversion="8.3">
 			id="0d8d2e3a-3379-4107-8798-79470add84c6">
 			</testcontainer>
 			<testcontainer
+			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
+			</testcontainer>
+			<testcontainer
 			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
 			</testcontainer>
 			<testcontainer
@@ -5504,6 +5530,9 @@ rxversion="8.3">
 			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
 			</testcontainer>
 			<testcontainer
+			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">
+			</testcontainer>
+			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
 			</testcontainer>
 			<testcontainer
@@ -5525,6 +5554,9 @@ rxversion="8.3">
 			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
 			</testcontainer>
 			<testcontainer
+			id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466">
+			</testcontainer>
+			<testcontainer
 			id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">
 			</testcontainer>
 			<testcontainer
@@ -5532,6 +5564,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">
+			</testcontainer>
+			<testcontainer
+			id="f6a31933-9e9b-46c5-9bad-9b79a53baadd">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
