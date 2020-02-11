@@ -41,12 +41,12 @@ namespace ReportingLayer.StandardExtract
         /// </summary>
         public Check_Pending_Cells()
         {
-            Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
-            DBServer = "";
-            TestIdentifier = "";
-            RptDatabase = "";
+            Authentication = "Active Directory Password";
+            CSPPassword = "913172DMW^";
+            CSPUsername = "dwood@cogstate.com";
+            DBServer = "cgst-qcpd.database.windows.net";
+            TestIdentifier = "9da191a0-69f1-4600-959b-5fe379e31dae";
+            RptDatabase = "cgst-rpt";
         }
 
         /// <summary>
