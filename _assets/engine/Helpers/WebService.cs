@@ -681,7 +681,7 @@ namespace engine.Helpers
 			odataRespose responseObject = new  odataRespose();
 			var responseStatus = httpResponse.StatusCode;
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
-				Report.Log(ReportLevel.Info, "oData API Call is working as Expected" + " : " +   responseStatus.ToString());
+			Report.Log(ReportLevel.Info, "oData API Call is working as Expected" + " : " +   responseStatus.ToString());
 			
 			
 			

@@ -142,6 +142,30 @@
     <Compile Include="AssemblyInfo.cs">
       <id>ddd3f088-63bc-40ca-b06b-ba2e7448f40a</id>
     </Compile>
+    <Compile Include="dbVesrion.cs">
+      <BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
+      <DependentUpon>dbVesrion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ddc7d78-4814-4787-9bf8-0ecbefef8ad5</id>
+    </Compile>
+    <Compile Include="dbVesrion.UserCode.cs">
+      <BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
+      <DependentUpon>dbVesrion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f6b8ae8-d236-456d-b84b-ed0a6c39c0c3</id>
+    </Compile>
+    <Compile Include="DCDBVersion.cs">
+      <BoundTo>657edab0-3b6f-4c07-a2ea-2583180e20ff</BoundTo>
+      <DependentUpon>DCDBVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d838afa2-8b50-41c4-b9e7-8dcc1268426b</id>
+    </Compile>
+    <Compile Include="DCDBVersion.UserCode.cs">
+      <BoundTo>657edab0-3b6f-4c07-a2ea-2583180e20ff</BoundTo>
+      <DependentUpon>DCDBVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>94768ad3-dba3-41e4-a6be-e7b17f3a5a5b</id>
+    </Compile>
     <Compile Include="eSourcePlatformRepository.cs">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <DependentUpon>eSourcePlatformRepository.rxrep</DependentUpon>
@@ -175,6 +199,18 @@
     <Compile Include="Program.cs">
       <id>a96bd5ee-0e36-4cbf-8c8c-70a3e4390d99</id>
     </Compile>
+    <Compile Include="ReportingDBVersion.cs">
+      <BoundTo>45cd5fce-5571-42ff-b031-ef5c544b062a</BoundTo>
+      <DependentUpon>ReportingDBVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>85c44e5c-56f3-41de-bd5a-de464078d047</id>
+    </Compile>
+    <Compile Include="ReportingDBVersion.UserCode.cs">
+      <BoundTo>45cd5fce-5571-42ff-b031-ef5c544b062a</BoundTo>
+      <DependentUpon>ReportingDBVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c2cc1912-a86e-4d9a-ae51-bfd08527d159</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -194,6 +230,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>aae3da34-4981-4765-ae6f-060bf0c2fb1c</id>
     </Content>
+    <None Include="dbVesrion.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</id>
+      <recordtableid>5440ad95-2787-406e-bfd8-a4a996120cd3</recordtableid>
+    </None>
+    <None Include="DCDBVersion.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>657edab0-3b6f-4c07-a2ea-2583180e20ff</id>
+      <recordtableid>e7e659e1-4c5a-43bc-9a7e-4bf52cb9cc4a</recordtableid>
+    </None>
     <None Include="eSourcePlatformRepository.rximg">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <DependentUpon>eSourcePlatformRepository.rxrep</DependentUpon>
@@ -229,6 +275,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>2e3dcbcb-36db-4b24-8cb5-7a2482bd9764</id>
     </Content>
+    <None Include="ReportingDBVersion.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>45cd5fce-5571-42ff-b031-ef5c544b062a</id>
+      <recordtableid>8964b727-80a6-4a41-8a16-a9387ba2b555</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="eSourcePlatform.rxtmg">
