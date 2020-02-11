@@ -475,6 +475,50 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="1d4a8f34-43c2-4a74-b2eb-5f5e55bd1e96"
+			name="Check_Pending_Cells"
+			ref="7060530d-d9d5-4bd3-a649-8ea6b2c9991e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="b2dc96c4-f70a-419b-b408-823dc38808d1"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="CSPUsername"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="daf603e2-eb88-46f1-8eca-e2b4bce773ea"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="e97c2288-b590-45f3-917f-8d5240416341"
+					variablename="CSPPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="00c37608-7147-4234-b38a-a3de330366bf"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="592d9682-c36b-48f4-9a7f-bfe539527b8b"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="RptDatabase"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="e681316c-42cb-4c83-8246-0ff801cabffa"
+					variablename="RptDatabase">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="1d9928dd-974b-4bf9-b839-09c761466da1"
 			name="NavigateTo_Azure">
@@ -1150,6 +1194,51 @@ rxversion="8.3">
 			name="Add_Study">
 			</testcase>
 			<testmodule
+			enabled="False"
+			id="5307cfa2-4341-42f3-ac12-0c6f25a3c3eb"
+			name="Check_Pending_Cells"
+			ref="44e68252-3be1-453c-a81c-83b4c284da55"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="012660f4-bd2c-48f2-87c1-875e293ec6c4"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="cefd111f-bbc4-4dba-84f3-04479a969d49"
+					variablename="CSPPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="3df8672b-803b-4e9d-b866-3b00d08264e8"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="1971f888-ddf7-443b-b794-c024c135b8c9"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="38b8c5e8-db1c-4c12-af07-8465253d22fd"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="RptDatabase"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="f2f2f806-f7f5-4747-88a7-4df97bb80910"
+					variablename="RptDatabase">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="53e568b3-6c62-4ecf-b04b-639d85c5d793"
 			name="Close_PowerBI"
 			ref="10618194-7191-4be5-9b38-8981dd57c5c4"
@@ -1349,8 +1438,13 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
+<<<<<<< HEAD
 			maxrange="2"
 			minrange="2"
+=======
+			maxrange="1"
+			minrange="1"
+>>>>>>> 4ae0a12ce193fac6b825a0971d9c8603216c6891
 			name="Jordan_SmokeTest">
 			</smartfoldernode>
 			<testmodule
@@ -3127,7 +3221,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="">
+					value="BC006AC8-E056-4A13-A99D-260550743FC7">
 					</param>
 					<param
 					name="Key"
@@ -3625,6 +3719,12 @@ rxversion="8.3">
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 					variableid="709d7ef8-5f93-4a0b-a867-796e4645472f"
 					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
+					variablename="Authentication">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -4984,6 +5084,10 @@ rxversion="8.3">
 								name="Clear_Test_Slicer">
 								</testmodule>
 								<testmodule
+								id="1d4a8f34-43c2-4a74-b2eb-5f5e55bd1e96"
+								name="Check_Pending_Cells">
+								</testmodule>
+								<testmodule
 								id="ccb9be4a-7922-4dec-86f9-c38968dd68b9"
 								name="Validate_AcademicExtract">
 								</testmodule>
@@ -5002,6 +5106,10 @@ rxversion="8.3">
 								<testmodule
 								id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
 								name="Set_Date_Filter">
+								</testmodule>
+								<testmodule
+								id="5307cfa2-4341-42f3-ac12-0c6f25a3c3eb"
+								name="Check_Pending_Cells">
 								</testmodule>
 								<testmodule
 								id="94d72c03-fddf-420d-aafb-d00c99275375"
@@ -5299,6 +5407,9 @@ rxversion="8.3">
 					Database
 				</column>
 				<column>
+					RptDatabase
+				</column>
+				<column>
 					Authentication
 				</column>
 			</lastknowncolumns>
@@ -5326,13 +5437,113 @@ rxversion="8.3">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
+			id="04909fcc-b521-4a5f-b788-cfbcedc284e7">
+			</testcontainer>
+			<testcontainer
+			id="0d8d2e3a-3379-4107-8798-79470add84c6">
+			</testcontainer>
+			<testcontainer
+			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
+			</testcontainer>
+			<testcontainer
+			id="1d9928dd-974b-4bf9-b839-09c761466da1">
+			</testcontainer>
+			<testcontainer
+			id="3de66789-7fb1-4996-8500-81d43a94cc32">
+			</testcontainer>
+			<testcontainer
+			id="55d94e9c-09f3-492b-977b-eb8d911a3296">
+			</testcontainer>
+			<testcontainer
+			id="56f6d406-e690-4aa6-b4a9-38e641d4b26a">
+			</testcontainer>
+			<testcontainer
+			id="62006fb2-63fe-43fb-8c36-139d7b9d28a7">
+			</testcontainer>
+			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
 			</testcontainer>
 			<testcontainer
+<<<<<<< HEAD
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
 			</testcontainer>
 			<testcontainer
 			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
+			</testcontainer>
+			<testcontainer
+			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">
+=======
+			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
+			</testcontainer>
+			<testcontainer
+			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
+			</testcontainer>
+			<testcontainer
+			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
+			</testcontainer>
+			<testcontainer
+			id="97aaa3ea-6ea0-4622-9002-ad2b4479e683">
+			</testcontainer>
+			<testcontainer
+			id="9971752f-f697-47c2-b4be-09bdab1f18a2">
+			</testcontainer>
+			<testcontainer
+			id="9da84430-e516-45c6-8b32-0c44c43d9173">
+			</testcontainer>
+			<testcontainer
+			id="a0ca6e5b-0022-4873-a172-ead549a588aa">
+			</testcontainer>
+			<testcontainer
+			id="a1466124-6b75-4495-a467-58b136e9ff61">
+			</testcontainer>
+			<testcontainer
+			id="a9f82130-40c0-4bf2-a04c-d3b1ab9eeece">
+			</testcontainer>
+			<testcontainer
+			id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4">
+			</testcontainer>
+			<testcontainer
+			id="b2875f8e-5ac6-415e-93f0-d000f1cdaf3f">
+			</testcontainer>
+			<testcontainer
+			id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed">
+			</testcontainer>
+			<testcontainer
+			id="b468f615-5d6f-4e8c-b782-e6f70c90b66d">
+			</testcontainer>
+			<testcontainer
+			id="b5af504c-c695-4165-808b-014bc35e7534">
+			</testcontainer>
+			<testcontainer
+			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
+			</testcontainer>
+			<testcontainer
+			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
+>>>>>>> 4ae0a12ce193fac6b825a0971d9c8603216c6891
+			</testcontainer>
+			<testcontainer
+			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
+			</testcontainer>
+			<testcontainer
+			id="d2899b22-b064-42fc-81cc-e3b7b14d3643">
+			</testcontainer>
+			<testcontainer
+			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874">
+			</testcontainer>
+			<testcontainer
+			id="d7301e08-98a1-4c85-bb6a-6ec82c426239">
+			</testcontainer>
+			<testcontainer
+			id="d79c9852-484e-4cc4-83f2-c73c5387d586">
+			</testcontainer>
+			<testcontainer
+			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
+			</testcontainer>
+			<testcontainer
+			id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">
+			</testcontainer>
+			<testcontainer
+			id="f3e7c860-60d5-49b3-9110-18bd9da5df17">
 			</testcontainer>
 			<testcontainer
 			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">

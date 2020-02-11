@@ -127,6 +127,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcademicExtract\Check_Pending_Cells.cs">
+      <BoundTo>941b8b73-36f6-40d0-b37e-906e5285ec63</BoundTo>
+      <DependentUpon>Check_Pending_Cells.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>827bf42d-8534-4e64-affb-dc77a0287477</id>
+    </Compile>
+    <Compile Include="AcademicExtract\Check_Pending_Cells.UserCode.cs">
+      <BoundTo>941b8b73-36f6-40d0-b37e-906e5285ec63</BoundTo>
+      <DependentUpon>Check_Pending_Cells.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>85a742e9-6a87-44dc-9f6e-90ea52a9434b</id>
+    </Compile>
     <Compile Include="AcademicExtract\Clear_Test_Slicer.cs">
       <DependentUpon>Clear_Test_Slicer.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -187,6 +199,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>3d2d8736-a196-462b-9ca2-4eb9e06a88ad</id>
     </Compile>
+    <Compile Include="StandardExtract\Check_Pending_Cells.cs">
+      <BoundTo>90cda9ac-f3fc-43b1-9992-55bace4384bd</BoundTo>
+      <DependentUpon>Check_Pending_Cells.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1cbc4812-5515-46b9-bf0e-6b39b79eba6e</id>
+    </Compile>
+    <Compile Include="StandardExtract\Check_Pending_Cells.UserCode.cs">
+      <BoundTo>90cda9ac-f3fc-43b1-9992-55bace4384bd</BoundTo>
+      <DependentUpon>Check_Pending_Cells.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acb5cf06-887d-4f82-9eea-5a58c577047c</id>
+    </Compile>
     <Compile Include="StandardExtract\Set_Date_Filter.cs">
       <BoundTo>f446f2ff-be4b-469a-9bbd-7183f3265333</BoundTo>
       <DependentUpon>Set_Date_Filter.rxrec</DependentUpon>
@@ -213,6 +237,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AcademicExtract\Check_Pending_Cells.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>941b8b73-36f6-40d0-b37e-906e5285ec63</id>
+      <recordtableid>7060530d-d9d5-4bd3-a649-8ea6b2c9991e</recordtableid>
+    </None>
     <None Include="AcademicExtract\Clear_Test_Slicer.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>88869378-1125-464f-b6ad-5b774e064e0e</id>
@@ -246,6 +275,11 @@
       <id>74e80a08-cf76-4909-887f-42d132066da8</id>
       <repoid>ea6a006e-6d85-4695-88f7-8d684bce0248</repoid>
       <reporootid>60c3c42a-4566-402e-9361-221a6c8f795f</reporootid>
+    </None>
+    <None Include="StandardExtract\Check_Pending_Cells.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>90cda9ac-f3fc-43b1-9992-55bace4384bd</id>
+      <recordtableid>44e68252-3be1-453c-a81c-83b4c284da55</recordtableid>
     </None>
     <None Include="StandardExtract\Set_Date_Filter.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
