@@ -46,7 +46,7 @@ namespace eSourcePlatform
             username = "zchekir@Cogstate.com";
             password = "Cogstate2016";
             authentication = "Active Directory Password";
-            MigrationId = "001011_202001161431399_PRD-2691 Added Defaults For ScalingLower And ScalingUpper";
+            MigrationId = "001011_202001161431399_PRD-2691";
         }
 
         /// <summary>

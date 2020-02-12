@@ -53,6 +53,7 @@ namespace CSP
             supervisorId = "1";
             TestIdentifier = "";
             externalId = "";
+            AssessmentURL = "";
         }
 
         /// <summary>
@@ -207,6 +208,18 @@ namespace CSP
         {
             get { return _externalId; }
             set { _externalId = value; }
+        }
+
+        string _AssessmentURL;
+
+        /// <summary>
+        /// Gets or sets the value of variable AssessmentURL.
+        /// </summary>
+        [TestVariable("72f9fd39-079c-4f76-a947-2a49e9350a9d")]
+        public string AssessmentURL
+        {
+            get { return _AssessmentURL; }
+            set { _AssessmentURL = value; }
         }
 
 #endregion

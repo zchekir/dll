@@ -1608,6 +1608,18 @@
       <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="cbb_VersionCheck.cs">
+      <BoundTo>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</BoundTo>
+      <DependentUpon>cbb_VersionCheck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99ac54b1-4a5e-451a-8cd4-0faf64ce99ef</id>
+    </Compile>
+    <Compile Include="cbb_VersionCheck.UserCode.cs">
+      <BoundTo>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</BoundTo>
+      <DependentUpon>cbb_VersionCheck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e5c6d03-dd47-4b35-9e41-61cbd3b340c3</id>
+    </Compile>
     <Compile Include="CheckRrunFlag.cs">
       <BoundTo>950bc8d6-597b-4276-b065-334c8256ae1e</BoundTo>
       <DependentUpon>CheckRrunFlag.rxrec</DependentUpon>
@@ -3939,6 +3951,11 @@
       <id>c4df6933-e18f-4806-be75-b17a66a11ebc</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
+    </None>
+    <None Include="cbb_VersionCheck.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</id>
+      <recordtableid>e12ebea7-d179-4d79-9787-83931795e911</recordtableid>
     </None>
     <None Include="CheckRrunFlag.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>

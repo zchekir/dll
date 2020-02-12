@@ -28,10 +28,7 @@ namespace eSourcePlatform
     {
     	//variables:
     	public static DataTable dt = new DataTable();
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
+       
         private void Init()
         {
             // Your recording specific initialization code goes here.
@@ -47,8 +44,8 @@ namespace eSourcePlatform
         public void CSPDB_Version(string dbserver, string database, string username, string password, string authentication, string migrationid)
         {
             
-			//Validating the DB Version :
-			// QueryDB
+			//Validating the CSP DB Version :
+			
 			dt.Reset();
 			
 			
@@ -59,13 +56,7 @@ namespace eSourcePlatform
                                     FROM [dbo].[__MigrationHistory]
                                     order by 1 desc";
 			         
-			         
-
-			
-			
-		
-				
-				Report.Info( " Validating  DB version  ");
+			     Report.Info( " Validating  DB version..........  ");
 				
 				//Connecting to SQL DB:
 				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
@@ -74,14 +65,22 @@ namespace eSourcePlatform
 				da.SelectCommand.Parameters.AddWithValue("@migrationid", migrationid);
 				
 				// Get the data from DB
+				
 				try{
+					
 				  using (da)
 				  da.Fill(dt);
+				  
 				 string DBVersion = dt.Rows[0][0].ToString();
-			     //Pringting the resutls:
-			      Report.Log(ReportLevel.Info,  "CSP DB version: " + "  " + DBVersion  );
-			      Validate.AreEqual(DBVersion ,migrationid);
-				 }catch (Exception e){
+				 string[] dbvID= DBVersion.Split();
+				 
+			     //Pringting the Current CSP DB version:
+			     Report.Log(ReportLevel.Info,  "CSP DB version: " + "  " + dbvID[0]  );
+			     
+			     //Validating the current with the expected results
+			     Validate.AreEqual(dbvID[0] ,migrationid);
+				
+				}catch (Exception e){
 					
 				    Report.Log(ReportLevel.Info,  "Error: " + e.Message );	
 				}

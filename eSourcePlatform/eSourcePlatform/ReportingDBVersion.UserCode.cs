@@ -15,7 +15,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
@@ -27,10 +26,7 @@ namespace eSourcePlatform
     {
     	//variables:
     	public static DataTable dt = new DataTable();
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
+        
         private void Init()
         {
             // Your recording specific initialization code goes here.
@@ -39,7 +35,7 @@ namespace eSourcePlatform
         public void ReportingDB_Version()
         {
             //Validating the Reporting DB Version :
-			// QueryDB
+			
 			dt.Reset();
 			
 			
@@ -52,7 +48,7 @@ namespace eSourcePlatform
 	
 		
 				
-				Report.Info( " Validating  Reporting DB version  ");
+				Report.Info( " Validating  Reporting DB version....  ");
 				
 				//Connecting to SQL DB:
 				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
@@ -62,15 +58,21 @@ namespace eSourcePlatform
 				
 				// Get the data from DB
 				try{
-				  using (da)
-				  da.Fill(dt);
-				 string DBVersion = dt.Rows[0][0].ToString();
-			     //Pringting the resutls:
-			      Report.Log(ReportLevel.Info,  "Reporting DB version: " + "  " + DBVersion  );
-			      Validate.AreEqual(DBVersion ,migrationid);
-			       }catch (Exception e){
 					
-				    Report.Log(ReportLevel.Info,  "Error: " + e.Message );	
+				using (da)
+				da.Fill(dt);
+				
+				 string DBVersion = dt.Rows[0][0].ToString();
+				 string[] dbvID = DBVersion.Split();
+			     //Pringting the resutls:
+			     Report.Log(ReportLevel.Info,  "Reporting DB version: " + "  " + dbvID[0]  );
+			     
+			     // validating the DB version
+			     Validate.AreEqual(dbvID[0]  ,migrationid);
+			       
+				}catch (Exception e){
+					
+				  Report.Log(ReportLevel.Info,  "Error: " + e.Message );	
 				}
         }
 

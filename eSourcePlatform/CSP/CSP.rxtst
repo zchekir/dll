@@ -1415,6 +1415,14 @@ rxversion="8.3">
 					name="authentication"
 					value="Active Directory Password">
 					</param>
+					<param
+					name="AssessmentURL"
+					value="">
+					</param>
+					<param
+					name="cbbv"
+					value="cbbVersion=8.11.2+cc0924d+release%2F8.11.2z">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -2184,6 +2192,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="87ead3cd-b03c-45fd-b38e-fc5f0f1cbc24"
+			name="cbb_VersionCheck"
+			ref="e12ebea7-d179-4d79-9787-83931795e911"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="cbbv"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="842392ae-e7ea-41be-9e8e-8518913cb038"
+					variablename="cbbv">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="4faf66d9-c2d4-412c-94f1-cd42cb914f40"
+					variablename="wfInstance">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="885064b7-f5df-4e27-817b-d2ea306fd9be"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -2584,6 +2612,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="9fe98d67-940d-4451-ae47-83f979151dc2"
+			name="cbbVersionCheck">
+			</testcase>
 			<testmodule
 			id="a0127351-3b8d-4482-8f65-75e55250630e"
 			name="Validate_BatteryTemplate_Configured"
@@ -3519,6 +3551,12 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="0e972c7a-57eb-4293-a7cc-32e75ea62d02"
 					variablename="externalId">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="72f9fd39-079c-4f76-a947-2a49e9350a9d"
+					variablename="AssessmentURL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4776,6 +4814,14 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 							<testcase
+							id="9fe98d67-940d-4451-ae47-83f979151dc2"
+							name="cbbVersionCheck">
+								<testmodule
+								id="87ead3cd-b03c-45fd-b38e-fc5f0f1cbc24"
+								name="cbb_VersionCheck">
+								</testmodule>
+							</testcase>
+							<testcase
 							id="04421345-e5aa-49b4-b420-101dbea32a24"
 							name="Assessment_AttemptStatus">
 								<testmodule
@@ -5232,6 +5278,9 @@ rxversion="8.3">
 					RptDatabase
 				</column>
 				<column>
+					DCTDatabase
+				</column>
+				<column>
 					Authentication
 				</column>
 			</lastknowncolumns>
@@ -5400,82 +5449,28 @@ rxversion="8.3">
 		<testconfiguration
 		name="Regression">
 			<testcontainer
-			id="04421345-e5aa-49b4-b420-101dbea32a24">
-			</testcontainer>
-			<testcontainer
-			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
-			</testcontainer>
-			<testcontainer
-			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
-			</testcontainer>
-			<testcontainer
-			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
-			</testcontainer>
-			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
-			</testcontainer>
-			<testcontainer
-			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
-			</testcontainer>
-			<testcontainer
-			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
-			</testcontainer>
-			<testcontainer
-			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b">
-			</testcontainer>
-			<testcontainer
-			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
-			</testcontainer>
-			<testcontainer
 			id="94926b86-397c-435f-a3b2-a2cd3d7e6a07">
-			</testcontainer>
-			<testcontainer
-			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
 			</testcontainer>
 			<testcontainer
 			id="9ab34d41-a11f-476f-a90f-c56f30c05e5c">
 			</testcontainer>
 			<testcontainer
-			id="a039dd84-fa06-45dc-900f-9d8b10c73c69">
+			id="9fe98d67-940d-4451-ae47-83f979151dc2">
 			</testcontainer>
 			<testcontainer
 			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
-			</testcontainer>
-			<testcontainer
-			id="a95ff794-3df5-4234-b928-480259c0da91">
 			</testcontainer>
 			<testcontainer
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
 			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
-			</testcontainer>
-			<testcontainer
-			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
-			</testcontainer>
-			<testcontainer
-			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
-			</testcontainer>
-			<testcontainer
-			id="e00c2baf-18fc-4db9-8f47-941279980274">
-			</testcontainer>
-			<testcontainer
-			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
-			</testcontainer>
-			<testcontainer
-			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
-			</testcontainer>
-			<testcontainer
-			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
