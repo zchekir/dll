@@ -41,6 +41,8 @@ namespace CSP.AddVisitSchedulePage
         /// </summary>
         public Select_First_Visit()
         {
+            CSPDOM = "cgst-qc-jill.azurewebsites.net";
+            VisitScheduleName = "RCCEventDefinitions";
         }
 
         /// <summary>

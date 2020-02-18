@@ -92,8 +92,8 @@ namespace RedCapCloud.ValidationModules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Test Was Successfully Transmitted') on item 'REDCapCloud.SubjectsPage.TestWasSuccessfullyTransmitted'.", repo.REDCapCloud.SubjectsPage.TestWasSuccessfullyTransmittedInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.REDCapCloud.SubjectsPage.TestWasSuccessfullyTransmittedInfo, "InnerText", "Test Was Successfully Transmitted");
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'REDCapCloud.MarkCRFComplete'.", repo.REDCapCloud.MarkCRFCompleteInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.REDCapCloud.MarkCRFCompleteInfo);
             Delay.Milliseconds(100);
             
         }

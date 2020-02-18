@@ -74,31 +74,7 @@ rxversion="8.3">
 				InnerText
 			</matchname>
 			<matchvalue>
-				Cogstate Battery Comments
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		searchpropertyid="78fd2961-ae5f-45fa-9212-ab6ec5d24513">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="b884d6c9-ed98-426e-b73a-71b5e44cb1c9"
-			sourcename="ElementTree">
-				<path>
-					/dom[@domain=$DOM]/body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\ Battery\ Data\ Con']
-				</path>
-			</info>
-			<matchname>
-				InnerText
-			</matchname>
-			<matchvalue>
-				Cogstate Battery Data Confirmation
+				Cogstate Battery Comments and Data Confirmation
 			</matchvalue>
 		</validationitem>
 		<validationitem

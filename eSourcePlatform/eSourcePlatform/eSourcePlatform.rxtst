@@ -70,20 +70,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="04e0b0af-efed-4459-b067-80a35879cdae"
-			name="Click_AddInstrument_Button"
-			ref="38dd1e62-9934-472e-8c94-887145d1059b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="0927f763-f41b-4ee5-a88a-659efc36ca1d"
 			name="Read_CSV"
 			ref="964e43df-03fa-4dc4-bd18-9a19ee6b15d3"
@@ -395,6 +381,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="18e5b5b3-fc1b-4323-8f86-1badb563ac24"
+			name="Click_CompositeOutcomes"
+			ref="a0facf25-a588-4552-a677-9b16e996a9d9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="18f18f0d-1c6a-49a8-8f92-171c724177da"
 			name="OpenPowerShell">
@@ -1365,7 +1365,7 @@ rxversion="8.3">
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
 			maxrange="0"
 			minrange="0"
-			name="Jelly_SmokeTest">
+			name="Jill_SmokeTest">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -1777,20 +1777,6 @@ rxversion="8.3">
 					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
 					variablename="RandNum">
 					</var>
-					<var
-					dataname="RCCDOM"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="7caaa086-a5c6-4761-af2e-d8372c74388e"
-			name="Click_DataConfirmation"
-			ref="62ff2cdc-5712-4e1c-bbba-4c51f5e9daf2"
-			type="Recording">
-				<databinding>
 					<var
 					dataname="RCCDOM"
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
@@ -3225,11 +3211,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="ServerVersionDeployed"
-					value="1.11.0.42">
+					value="2.0.0.89">
 					</param>
 					<param
 					name="ClientVersionDeployed"
-					value="1.11.0-rc.42">
+					value="2.0.0-rc.89">
 					</param>
 					<param
 					name="RandNum"
@@ -3389,20 +3375,6 @@ rxversion="8.3">
 			name="Close_PowerBI"
 			ref="10618194-7191-4be5-9b38-8981dd57c5c4"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			id="d51e69d2-0472-4920-9554-0d8fce5ad37b"
-			name="Add_BatteryConfirmation_CRF"
-			ref="300c5970-8a7b-4548-b491-1b87ffc7cd51"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
 			</testmodule>
 			<modulegroup
 			id="d55c9927-84f5-4590-97e9-c0c7d94f7e45"
@@ -4122,7 +4094,7 @@ rxversion="8.3">
 				name="eSourcePlatform">
 					<smartfoldernode
 					id="63a0768d-8632-409b-adbf-fe7850003e81"
-					name="Jelly_SmokeTest">
+					name="Jill_SmokeTest">
 						<smartfoldernode
 						id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64"
 						name="Loginto_RCC">
@@ -4682,14 +4654,6 @@ rxversion="8.3">
 								name="Click_AddInstrument_Button">
 								</testmodule>
 								<testmodule
-								id="d51e69d2-0472-4920-9554-0d8fce5ad37b"
-								name="Add_BatteryConfirmation_CRF">
-								</testmodule>
-								<testmodule
-								id="04e0b0af-efed-4459-b067-80a35879cdae"
-								name="Click_AddInstrument_Button">
-								</testmodule>
-								<testmodule
 								id="0aae74ce-cc1c-4b48-b860-6f104803e646"
 								name="Add_CBB_CRF">
 								</testmodule>
@@ -4894,8 +4858,8 @@ rxversion="8.3">
 								name="Click_First_Visit">
 								</testmodule>
 								<testmodule
-								id="7caaa086-a5c6-4761-af2e-d8372c74388e"
-								name="Click_DataConfirmation">
+								id="18e5b5b3-fc1b-4323-8f86-1badb563ac24"
+								name="Click_CompositeOutcomes">
 								</testmodule>
 								<testmodule
 								id="22fe5cca-6970-40fa-ba7b-534a62f9626a"
@@ -5550,10 +5514,130 @@ rxversion="8.3">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
+			id="04909fcc-b521-4a5f-b788-cfbcedc284e7">
+			</testcontainer>
+			<testcontainer
+			id="0d8d2e3a-3379-4107-8798-79470add84c6">
+			</testcontainer>
+			<testcontainer
+			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
+			</testcontainer>
+			<testcontainer
+			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
+			</testcontainer>
+			<testcontainer
+			id="1d9928dd-974b-4bf9-b839-09c761466da1">
+			</testcontainer>
+			<testcontainer
+			id="29d7aa7d-438a-48af-9c73-c769338bb4ed">
+			</testcontainer>
+			<testcontainer
+			id="3bfd0103-45d6-4432-bde2-361c5d3bc600">
+			</testcontainer>
+			<testcontainer
+			id="3de66789-7fb1-4996-8500-81d43a94cc32">
+			</testcontainer>
+			<testcontainer
+			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">
+			</testcontainer>
+			<testcontainer
+			id="55d94e9c-09f3-492b-977b-eb8d911a3296">
+			</testcontainer>
+			<testcontainer
+			id="56f6d406-e690-4aa6-b4a9-38e641d4b26a">
+			</testcontainer>
+			<testcontainer
+			id="62006fb2-63fe-43fb-8c36-139d7b9d28a7">
+			</testcontainer>
+			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
 			</testcontainer>
 			<testcontainer
+			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
+			</testcontainer>
+			<testcontainer
+			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
+			</testcontainer>
+			<testcontainer
+			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
+			</testcontainer>
+			<testcontainer
+			id="97aaa3ea-6ea0-4622-9002-ad2b4479e683">
+			</testcontainer>
+			<testcontainer
+			id="9971752f-f697-47c2-b4be-09bdab1f18a2">
+			</testcontainer>
+			<testcontainer
+			id="9da84430-e516-45c6-8b32-0c44c43d9173">
+			</testcontainer>
+			<testcontainer
+			id="a0ca6e5b-0022-4873-a172-ead549a588aa">
+			</testcontainer>
+			<testcontainer
+			id="a1466124-6b75-4495-a467-58b136e9ff61">
+			</testcontainer>
+			<testcontainer
+			id="a9f82130-40c0-4bf2-a04c-d3b1ab9eeece">
+			</testcontainer>
+			<testcontainer
+			id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4">
+			</testcontainer>
+			<testcontainer
+			id="b2875f8e-5ac6-415e-93f0-d000f1cdaf3f">
+			</testcontainer>
+			<testcontainer
+			id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed">
+			</testcontainer>
+			<testcontainer
+			id="b468f615-5d6f-4e8c-b782-e6f70c90b66d">
+			</testcontainer>
+			<testcontainer
+			id="b5af504c-c695-4165-808b-014bc35e7534">
+			</testcontainer>
+			<testcontainer
+			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
+			</testcontainer>
+			<testcontainer
+			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">
+			</testcontainer>
+			<testcontainer
+			id="cac41d4d-1014-4078-a295-7867a984b889">
+			</testcontainer>
+			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
+			</testcontainer>
+			<testcontainer
+			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
+			</testcontainer>
+			<testcontainer
+			id="d2899b22-b064-42fc-81cc-e3b7b14d3643">
+			</testcontainer>
+			<testcontainer
+			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874">
+			</testcontainer>
+			<testcontainer
+			id="d7301e08-98a1-4c85-bb6a-6ec82c426239">
+			</testcontainer>
+			<testcontainer
+			id="d79c9852-484e-4cc4-83f2-c73c5387d586">
+			</testcontainer>
+			<testcontainer
+			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
+			</testcontainer>
+			<testcontainer
+			id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466">
+			</testcontainer>
+			<testcontainer
+			id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">
+			</testcontainer>
+			<testcontainer
+			id="f3e7c860-60d5-49b3-9110-18bd9da5df17">
+			</testcontainer>
+			<testcontainer
+			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">
+			</testcontainer>
+			<testcontainer
+			id="f6a31933-9e9b-46c5-9bad-9b79a53baadd">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

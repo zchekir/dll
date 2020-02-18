@@ -99,7 +99,7 @@ namespace CSP
             set { _WorkflowName = value; }
         }
 
-        string _VisitScheduleName = "";
+        string _VisitScheduleName = "RCCEventDefinitions";
 
         /// <summary>
         /// Gets or sets the value of variable VisitScheduleName.
@@ -243,7 +243,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "";
+        string _CSPDOM = "cgst-qc-jill.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -279,7 +279,7 @@ namespace CSP
             set { _EventDefName = value; }
         }
 
-        string _VisitName = "Visit 1";
+        string _VisitName = "Visit1";
 
         /// <summary>
         /// Gets or sets the value of variable VisitName.

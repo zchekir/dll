@@ -392,7 +392,7 @@ rxversion="8.3">
 				name="CogstateBatteryCommentsCRF"
 				refimgid="eddb1bd4-597c-462f-bccb-8df35640a274"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]/body//table/tbody/tr/td[1]/div[@innertext='Cogstate Battery Comments']
+					/dom[@domain=$RCCDOM]/body//table/tbody/tr/td[1]/div[@innertext~'Cogstate Battery Comments']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
