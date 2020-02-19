@@ -48,8 +48,9 @@ namespace eSourcePlatform
                                      from reports.vwExtractStandardAssessmentDetail  
                                      where TestIdentifier=@TestIdentifier";
 			         
+			         do {
+			         	
 			     Report.Info( " Validating  Processor Results in DB..........  ");
-				
 				//Connecting to SQL DB:
 				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 				//CreateObject:
@@ -58,12 +59,16 @@ namespace eSourcePlatform
 				
 				// Get the data from DB
 				
-				try{
-					
-				  using (da)
-				  da.Fill(dt);
-				  
 				
+					
+				      using (da)
+				      da.Fill(dt);
+			         	
+			         } while ( dt.Rows.Count < 1);
+			         	
+			     
+				
+				  try{
 				  string r = dt.Rows.Count.ToString();
 				  
 				  //PrimaryOutcome Validation
