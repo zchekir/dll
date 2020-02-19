@@ -272,6 +272,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<smartfoldernode
+			id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b"
+			name="DB_AssessmentValidation">
+			</smartfoldernode>
 			<testmodule
 			id="15a1049c-a595-42b7-9f08-e1ae80a595e2"
 			name="Enter_WorkflowStatus"
@@ -571,6 +575,12 @@ rxversion="8.3">
 			id="23168a3f-e39d-40bd-83e2-96e3879df980"
 			name="Configure_ExternalUser">
 			</testcase>
+			<testmodule
+			id="265a13c9-16a9-4579-b5b7-81207886f4ea"
+			name="DB_AssessmentValidation"
+			ref="74edc47d-2b4b-418c-8ffc-996ba7474b59"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="271472e2-4d69-4894-a88d-e91888ce54ca"
 			name="EmailModule"
@@ -2663,6 +2673,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
+			name="AssessmentValidation">
+			</testcase>
 			<testmodule
 			id="af20146d-3561-4a73-a7d4-7cee69a6d4fc"
 			name="Select_Event_and_Add"
@@ -5148,6 +5162,18 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
+						id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b"
+						name="DB_AssessmentValidation">
+							<testcase
+							id="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
+							name="AssessmentValidation">
+								<testmodule
+								id="265a13c9-16a9-4579-b5b7-81207886f4ea"
+								name="DB_AssessmentValidation">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
 						id="a1466124-6b75-4495-a467-58b136e9ff61"
 						name="Validate_PowerBIReports">
 							<setup
@@ -5550,10 +5576,100 @@ rxversion="8.3">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
+			id="176d8e83-d209-4c4b-a84f-9198032c225f">
+			</testcontainer>
+			<testcontainer
+			id="1e351c7d-29c2-487d-94c0-6e64fae0adc5">
+			</testcontainer>
+			<testcontainer
+			id="23168a3f-e39d-40bd-83e2-96e3879df980">
+			</testcontainer>
+			<testcontainer
+			id="29d7aa7d-438a-48af-9c73-c769338bb4ed">
+			</testcontainer>
+			<testcontainer
+			id="3bfd0103-45d6-4432-bde2-361c5d3bc600">
+			</testcontainer>
+			<testcontainer
+			id="43ca4568-0c2e-47fb-a370-ed468828aed9">
+			</testcontainer>
+			<testcontainer
+			id="49225187-4a49-4835-90e0-3de32724cde5">
+			</testcontainer>
+			<testcontainer
+			id="529f1bb1-0a6e-4a00-b1f8-9e40b442fa7a">
+			</testcontainer>
+			<testcontainer
+			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">
+			</testcontainer>
+			<testcontainer
+			id="55b0937d-ea65-48ca-b26f-e3e61e21b181">
+			</testcontainer>
+			<testcontainer
+			id="6019ac06-4d85-440a-ab02-5127c387cd2a">
+			</testcontainer>
+			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
 			</testcontainer>
 			<testcontainer
+			id="64ae0aaa-5d24-4a4c-bf10-284c21c25fb9">
+			</testcontainer>
+			<testcontainer
+			id="68ffcef6-9f39-4bb8-bad5-b8883246139c">
+			</testcontainer>
+			<testcontainer
+			id="70634e69-921c-470b-b1ae-76608669f350">
+			</testcontainer>
+			<testcontainer
+			id="8839cb3a-ce85-4bf1-9196-88ac00ca8f5b">
+			</testcontainer>
+			<testcontainer
+			id="9b1d4735-9ae1-4127-8dc0-f5499309cd99">
+			</testcontainer>
+			<testcontainer
+			id="a88dd955-1380-4197-a122-03b4c8638672">
+			</testcontainer>
+			<testcontainer
+			id="aa09af30-1e68-4459-88f3-5cd79cf16911">
+			</testcontainer>
+			<testcontainer
+			id="ac57980d-7272-4f24-887e-35835239fc9d">
+			</testcontainer>
+			<testcontainer
+			id="b319d319-16d8-40e6-8c90-b61f64137ae2">
+			</testcontainer>
+			<testcontainer
+			id="cac41d4d-1014-4078-a295-7867a984b889">
+			</testcontainer>
+			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
+			</testcontainer>
+			<testcontainer
+			id="cf83bf58-35e5-4f83-8e04-5991e49545f0">
+			</testcontainer>
+			<testcontainer
+			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
+			</testcontainer>
+			<testcontainer
+			id="e1ef7e1f-07d8-45e4-b7fe-3ba22e3f2524">
+			</testcontainer>
+			<testcontainer
+			id="eb638fc6-b4a9-4a64-96fe-ee8eef77ca9c">
+			</testcontainer>
+			<testcontainer
+			id="efa1cf54-9733-453c-ae88-55402cf6ea80">
+			</testcontainer>
+			<testcontainer
+			id="f4aa2d59-6c00-465f-9d79-2c75814cfbd2">
+			</testcontainer>
+			<testcontainer
+			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">
+			</testcontainer>
+			<testcontainer
+			id="fca09944-a8c2-4c34-8714-8e5871e85452">
+			</testcontainer>
+			<testcontainer
+			id="fd8a7d04-7499-4e31-8ad7-be2bab062e87">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
