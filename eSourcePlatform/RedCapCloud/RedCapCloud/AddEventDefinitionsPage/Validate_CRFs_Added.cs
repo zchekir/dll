@@ -93,23 +93,19 @@ namespace RedCapCloud.AddEventDefinitionsPage
             Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.BeginCogstateBatteryCRFInfo, "InnerText", "Begin Cogstate Battery");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery Comments') on item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCommentsCRF'.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCommentsCRFInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCommentsCRFInfo, "InnerText", "Cogstate Battery Comments");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery Comments and Data Confirmation') on item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCommentsCRF'.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCommentsCRFInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCommentsCRFInfo, "InnerText", "Cogstate Battery Comments and Data Confirmation");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery Data Confirmation') on item 'REDCapCloud.EventDefinitionPage.CogstateBatteryDataConfirmationCRF'.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryDataConfirmationCRFInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.CogstateBatteryDataConfirmationCRFInfo, "InnerText", "Cogstate Battery Data Confirmation");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery CRF - CBB') on item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCBB'.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCBBInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery CRF - CBB') on item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCBB'.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCBBInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCBBInfo, "InnerText", "Cogstate Battery CRF - CBB");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery CRF - Composite Outcomes') on item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcome'.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcomeInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Cogstate Battery CRF - Composite Outcomes') on item 'REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcome'.", repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcomeInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.REDCapCloud.EventDefinitionPage.CogstateBatteryCRFCompositeOutcomeInfo, "InnerText", "Cogstate Battery CRF - Composite Outcomes");
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "CRFs Added Successfully", repo.REDCapCloud.Self, false, new RecordItemIndex(5));
+            Report.Screenshot(ReportLevel.Info, "User", "CRFs Added Successfully", repo.REDCapCloud.Self, false, new RecordItemIndex(4));
             
         }
 

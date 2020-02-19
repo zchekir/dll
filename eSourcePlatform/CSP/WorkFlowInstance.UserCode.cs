@@ -90,7 +90,7 @@ namespace CSP
 	   public class AssessmentAttemptJSONResponse
 	   {
 	   	
-	   	string AssessmentURL;
+	   	//string AssessmentURL;
 		/// <summary>
 		/// Returned authtoken from API following a workflow instance request
 		/// </summary>
@@ -169,7 +169,7 @@ namespace CSP
         		string response = sr.ReadToEnd();
         		responseObject = new JavaScriptSerializer().Deserialize<AssessmentAttemptJSONResponse>(response);
         		
-        		 AssessmentURL = responseObject.url;
+        		AssessmentURL = responseObject.url;
         		TestIdentifier = responseObject.testIdentifier;
         		
         		Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);

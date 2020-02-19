@@ -39,7 +39,7 @@ rxversion="8.3">
 			</bindings>
 		</explicitdelayitem>
 		<validationitem
-		action="AttributeEqual"
+		action="Exists"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -49,95 +49,12 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="6819e2a1-e800-4dd4-b4d3-a809a456668f"
+			id="8017c05e-63a5-4c1f-a7f8-676c2d3b01ce"
 			sourcename="ElementTree">
-				<element
-				capabilities="webelement, fonttag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="fonttag"
-				rect="1098,-136,216,15"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						Test Was Successfully Transmitted
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						font
-					</attribute>
-					<attribute
-					name="color"
-					type="System.String">
-						#008000
-					</attribute>
-				</element>
 				<path>
-					/dom[@domain=$DOM]//div[#'gwtWrapper']/div/table[2]/tbody/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[3]/div/div[1]/div[1]/div/div[3]/table/tbody/tr[2]//table//div/div/div[5]/div/div/div[1]/div[2]/?/?/font[@innertext~'^Test\ Was\ Successfully\ Tra']
+					/dom[@domain=$RCCDOM]//i[#'dataCollectionWidget_checkboxComplete']
 				</path>
 			</info>
-			<helperscreenshot
-			guid="24943eff-4387-48fd-8805-2f5bc4e205d5">
-				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
-RRRQAUUUUAFFFFABRRRQB//Z
-			</helperscreenshot>
 			<matchname>
 				InnerText
 			</matchname>
@@ -150,7 +67,7 @@ RRRQAUUUUAFFFFABRRRQB//Z
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 	name="RedCapCloudRepository"
 	relativepath="..\RedCapCloudRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="RedCapCloudRepository"
 		namespace="RedCapCloud">
