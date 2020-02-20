@@ -20,42 +20,39 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace eSourcePlatform
+namespace CSP.APIV2Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The DB_AssessmentValidation recording.
+    ///The CheckRrunFlag recording.
     /// </summary>
-    [TestModule("74edc47d-2b4b-418c-8ffc-996ba7474b59", ModuleType.Recording, 1)]
-    public partial class DB_AssessmentValidation : ITestModule
+    [TestModule("cf6de81a-ac52-40c4-9fec-7a2e2f9612a7", ModuleType.Recording, 1)]
+    public partial class CheckRrunFlag : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the eSourcePlatformRepository repository.
+        /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
-        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
+        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static DB_AssessmentValidation instance = new DB_AssessmentValidation();
+        static CheckRrunFlag instance = new CheckRrunFlag();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public DB_AssessmentValidation()
+        public CheckRrunFlag()
         {
             dbserver = "cgst-qc.database.windows.net";
             database = "cgst-jordan-api";
             username = "zchekir@cogstate.com";
             password = "Cogstate2016";
-            authentication = "Active Directory Password";
-            TestIdentifier = "c791da9d-ef56-4086-8871-6d706166affc";
-            PrimaryOutcome = "0.970444658471641";
-            StandardScoreZ = "-3.17419143668476";
-            StandardScoreT = "68.2580856331524";
+            ExternalID = "COGSTATE_COGSTATE_1005";
+            Authentication = "Active Directory Password";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static DB_AssessmentValidation Instance
+        public static CheckRrunFlag Instance
         {
             get { return instance; }
         }
@@ -67,7 +64,7 @@ namespace eSourcePlatform
         /// <summary>
         /// Gets or sets the value of variable dbserver.
         /// </summary>
-        [TestVariable("dee25264-d606-41ca-bf0f-9efe134b8991")]
+        [TestVariable("0502a8f9-2e49-49a7-a1b5-998c1f0c66cb")]
         public string dbserver
         {
             get { return _dbserver; }
@@ -79,7 +76,7 @@ namespace eSourcePlatform
         /// <summary>
         /// Gets or sets the value of variable database.
         /// </summary>
-        [TestVariable("501de4e3-4fde-45a1-8e39-f50da8cccb6a")]
+        [TestVariable("212a9155-795a-426f-b0de-503e1dce769f")]
         public string database
         {
             get { return _database; }
@@ -91,7 +88,7 @@ namespace eSourcePlatform
         /// <summary>
         /// Gets or sets the value of variable username.
         /// </summary>
-        [TestVariable("c842c4af-9cbc-4c54-8fbe-f573a02dbdb8")]
+        [TestVariable("d36b3ff7-5f95-4501-bfda-c8b5c180e548")]
         public string username
         {
             get { return _username; }
@@ -103,71 +100,35 @@ namespace eSourcePlatform
         /// <summary>
         /// Gets or sets the value of variable password.
         /// </summary>
-        [TestVariable("d6df326c-c955-4056-82a3-583d328b2603")]
+        [TestVariable("7abe048e-cc2d-49e5-8b2e-95594a505c78")]
         public string password
         {
             get { return _password; }
             set { _password = value; }
         }
 
-        string _authentication;
+        string _ExternalID;
 
         /// <summary>
-        /// Gets or sets the value of variable authentication.
+        /// Gets or sets the value of variable ExternalID.
         /// </summary>
-        [TestVariable("ec3dc429-d49f-4980-9287-23711c36c87d")]
-        public string authentication
+        [TestVariable("006c9617-2a38-4ce9-b149-2f23fbb5c5dd")]
+        public string ExternalID
         {
-            get { return _authentication; }
-            set { _authentication = value; }
+            get { return _ExternalID; }
+            set { _ExternalID = value; }
         }
 
-        string _TestIdentifier;
+        string _Authentication;
 
         /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
+        /// Gets or sets the value of variable Authentication.
         /// </summary>
-        [TestVariable("9fae6d08-a73d-4b7a-be99-a84a17d24ddc")]
-        public string TestIdentifier
+        [TestVariable("24b99672-d4b4-4352-83dc-f0d6f336ecdf")]
+        public string Authentication
         {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
-        }
-
-        string _PrimaryOutcome;
-
-        /// <summary>
-        /// Gets or sets the value of variable PrimaryOutcome.
-        /// </summary>
-        [TestVariable("7cd6ee47-6bb8-4f3c-bbf7-0129f1e13b30")]
-        public string PrimaryOutcome
-        {
-            get { return _PrimaryOutcome; }
-            set { _PrimaryOutcome = value; }
-        }
-
-        string _StandardScoreZ;
-
-        /// <summary>
-        /// Gets or sets the value of variable StandardScoreZ.
-        /// </summary>
-        [TestVariable("a1676bb6-ae1a-4144-97e1-da672931fe75")]
-        public string StandardScoreZ
-        {
-            get { return _StandardScoreZ; }
-            set { _StandardScoreZ = value; }
-        }
-
-        string _StandardScoreT;
-
-        /// <summary>
-        /// Gets or sets the value of variable StandardScoreT.
-        /// </summary>
-        [TestVariable("50071bb3-4103-42e8-b898-bde82c740bc4")]
-        public string StandardScoreT
-        {
-            get { return _StandardScoreT; }
-            set { _StandardScoreT = value; }
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
 #endregion
@@ -196,7 +157,7 @@ namespace eSourcePlatform
 
             Init();
 
-            AssessmentValidation(dbserver, database, username, password, authentication, TestIdentifier, StandardScoreT, StandardScoreZ, PrimaryOutcome);
+            RrunFlag(dbserver, database, username, password, Authentication, ExternalID);
             Delay.Milliseconds(0);
             
         }

@@ -246,7 +246,7 @@ namespace engine.Helpers
 	}
 	// InternalUserLogin:
 	
-	public class InternalLoing
+	public class InternalLogin
 	{
 		
 		public string username {get;set;}
@@ -254,7 +254,7 @@ namespace engine.Helpers
 		public string portal {get;set;}
 		
 		
-		public InternalLoing(string username, string password,string portal)
+		public InternalLogin(string username, string password,string portal)
 		{
 			this.username = username;
 			this.password = password;
@@ -521,7 +521,7 @@ namespace engine.Helpers
 		/// This method its about generating secret key and to use it to authenticate to the server
 		/// </summary>
 		[UserCodeMethod]
-		public static void GSecret(string DOM)
+		public static void GenerateSecret(string DOM)
 		{
 			//creating the API Request
 			string SecretAPI = "/api/externalusers/"+ SQLUtility.ResetToken + "/savenewsecret";
@@ -595,7 +595,7 @@ namespace engine.Helpers
 			httpRequest.Method = "POST";
 			
 			//Create JSON ibject containing key and secret which is sent in the body
-			InternalLoing jsonObject = new InternalLoing(username, password,portal);
+			InternalLogin jsonObject = new InternalLogin(username, password,portal);
 			
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{

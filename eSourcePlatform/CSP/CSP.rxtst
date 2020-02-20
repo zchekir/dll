@@ -117,7 +117,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="04421345-e5aa-49b4-b420-101dbea32a24"
-			name="Assessment_AttemptStatus">
+			name="V2_AssessmentAttempt_Status">
 			</testcase>
 			<modulegroup
 			id="06a389fc-9157-4b85-9444-9bc7347168c2"
@@ -247,6 +247,20 @@ rxversion="8.3">
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
 					variablename="Filename">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0c19a365-c2b7-469b-8a51-9ca6cc15f33e"
+			name="oDataAPI"
+			ref="e5c5155b-1c7b-4dcd-9aad-e16fa12f0735"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="c8b4b7d8-5ec1-44d1-9ce3-70a3bdb9b058"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -919,7 +933,7 @@ rxversion="8.3">
 			</smartfoldernode>
 			<testcase
 			id="3e7527cb-5ed0-4568-9fc8-2ec809398808"
-			name="Generate_ExterUserKey">
+			name="Generate_ExternalUserKey">
 			</testcase>
 			<testmodule
 			id="430a094f-65a8-4db4-be14-0f981503e9fc"
@@ -995,13 +1009,13 @@ rxversion="8.3">
 					dataname="Token"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="280f8c82-fde0-4bbf-8603-40d1ee3acfea"
-					variablename="Token">
+					variablename="secret">
 					</var>
 					<var
 					dataname="AuthToken"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="8f9475d0-eb77-4d33-a469-d30475c2b1ff"
-					variablename="authToken">
+					variableid="a58c803b-45a0-422a-b242-a4569698b2a9"
+					variablename="AuthToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1130,7 +1144,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="4d9dad4d-7121-4103-8e94-204d724ffe5e"
-			name="G_Secret"
+			name="Get_Secret"
 			ref="b5c1f78b-d628-4e9c-83b0-597bcacc9905"
 			type="Recording">
 				<databinding>
@@ -1519,7 +1533,7 @@ rxversion="8.3">
 			</setup>
 			<testmodule
 			id="5ee32229-20ba-4b3b-ad49-74060a814c24"
-			name="V1_AuthenticateAPI"
+			name="APIV1_Authentication"
 			ref="6c267ae0-eccc-42f7-bcf7-7d5dc0866964"
 			type="Recording">
 				<databinding>
@@ -1569,7 +1583,7 @@ rxversion="8.3">
 			</testcase>
 			<testmodule
 			id="62902c3d-f900-4ded-903c-b65759dd0825"
-			name="GetResetToken"
+			name="Get_ResetToken"
 			ref="9ecd415f-eabd-42d3-912c-00d78f3c79d2"
 			type="Recording">
 				<databinding>
@@ -1829,7 +1843,7 @@ rxversion="8.3">
 			</testcase>
 			<testmodule
 			id="704dd07e-920c-453d-960e-21da92a80ab8"
-			name="Get_StatusCode"
+			name="APIV1_StatusCode"
 			ref="5e1ee223-eb63-4c65-beb7-fb91462efaca"
 			type="Recording">
 				<databinding>
@@ -1861,7 +1875,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="70e5e727-daef-4614-a975-2ae2ab2660ae"
-			name="Participant_Qualification_Status">
+			name="V2_Participant_Qualification_Status">
 			</testcase>
 			<testmodule
 			id="718ca4fd-b770-4c81-a668-b535d0333c8d"
@@ -1880,12 +1894,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="cfa99b0b-017a-4764-8cb4-d5010828965c"
 					variablename="AuthToken">
-					</var>
-					<var
-					dataname="Study_ID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="da70eb2b-ee97-4d8f-9fd2-d676e64c6c90"
-					variablename="Study_ID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2075,7 +2083,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="7a9fae59-e844-4b1c-863c-d2972b5e839d"
-			name="Referral_Status"
+			name="APIV1_ReferralStatus"
 			ref="25e2a597-538e-4553-af69-d582add674b4"
 			type="Recording">
 				<databinding>
@@ -2193,7 +2201,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="87ead3cd-b03c-45fd-b38e-fc5f0f1cbc24"
-			name="cbb_VersionCheck"
+			name="Validate_CBB_Version"
 			ref="e12ebea7-d179-4d79-9787-83931795e911"
 			type="Recording">
 				<databinding>
@@ -2363,7 +2371,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="944ec9b2-ee26-4f8d-b3c3-55218690e828"
-			name="AuthenticalAsInternalUser"
+			name="AuthenticateAsInternalUser"
 			ref="bb083686-6880-4147-aa4e-00115c5053c3"
 			type="Recording">
 				<databinding>
@@ -2427,7 +2435,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="96084bfa-c32b-4422-aaa2-ea6002778aa3"
-			name="StudyDuppCheck"
+			name="Check_Duplicate_Study"
 			ref="052f590d-8129-4cde-ac98-6ee337aed7f7"
 			type="Recording">
 				<databinding>
@@ -2580,7 +2588,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="9c137acc-6b4f-4824-8169-38ae66b80a1a"
-			name="GenerateStandard_Extract"
+			name="Generate_Standard_Extract"
 			ref="8203643e-31dc-4a6f-9d4e-39d89aad76a6"
 			type="Recording">
 				<databinding>
@@ -2614,7 +2622,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="9fe98d67-940d-4451-ae47-83f979151dc2"
-			name="cbbVersionCheck">
+			name="Validate_CBB_Version">
 			</testcase>
 			<testmodule
 			id="a0127351-3b8d-4482-8f65-75e55250630e"
@@ -2737,11 +2745,11 @@ rxversion="8.3">
 			</smartfoldernode>
 			<testcase
 			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa"
-			name="Generate_WorkFlow">
+			name="V2_GenerateWorkFlow">
 			</testcase>
 			<testmodule
 			id="a87026c7-2f43-4648-9168-cecc8d2a2ee7"
-			name="ParticipantQualification_Status"
+			name="APIV2_ParticipantQualification_Status"
 			ref="7564efa3-5dfb-429a-8be6-2697f96acf66"
 			type="Recording">
 				<databinding>
@@ -2781,7 +2789,7 @@ rxversion="8.3">
 					dataname="I_AuthToken"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f13a9fbc-65dd-4beb-9e5a-95aa79b7c20c"
-					variablename="AutoToken">
+					variablename="AuthToken">
 					</var>
 					<var
 					dataname="DOM"
@@ -2937,7 +2945,7 @@ rxversion="8.3">
 					dataname="AuthToken"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="2599e18e-a4cd-46b0-a2a5-73a913741fd7"
-					variablename="authoToken">
+					variablename="AuthToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3165,10 +3173,6 @@ rxversion="8.3">
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
 			name="CSPPlatform_API">
 			</smartfoldernode>
-			<teardown
-			id="bbc383b9-4792-433e-9d9b-dbf9249909ed"
-			name="teardown">
-			</teardown>
 			<setup
 			id="bcd9e6d9-1b54-4ac5-b190-604c7987aeea"
 			name="setup">
@@ -3390,7 +3394,7 @@ rxversion="8.3">
 			</testcase>
 			<testcase
 			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0"
-			name="SetLocalitieCode">
+			name="SetLocalityCode">
 			</testcase>
 			<testcase
 			errorbehavior="Stop"
@@ -3538,7 +3542,7 @@ rxversion="8.3">
 					dataname="AuthToken"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="640023f9-9c6a-4a88-8722-9526acc509cc"
-					variablename="authoToken">
+					variablename="AuthToken">
 					</var>
 					<var
 					dataname="TestIdentifier"
@@ -3562,7 +3566,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="da35936c-053f-492d-8d0e-bfbbdb2d95dc"
-			name="Set_LocalitieCode"
+			name="Set_LocalityCode"
 			ref="52db9f06-5da5-46a4-b3aa-a782ab8eaa1b"
 			type="Recording">
 				<databinding>
@@ -3834,7 +3838,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8"
-			name="GetQualification_Status">
+			name="V2_Qualification_Status">
 			</testcase>
 			<testcase
 			errorbehavior="Stop"
@@ -4049,10 +4053,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<setup
-			id="feed961b-64f5-40e1-9071-d18ed66ebdb0"
-			name="setup">
-			</setup>
 			<testcase
 			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
 			name="PowerBIReport">
@@ -4174,11 +4174,11 @@ rxversion="8.3">
 							name="Generate_Secret">
 								<testmodule
 								id="62902c3d-f900-4ded-903c-b65759dd0825"
-								name="GetResetToken">
+								name="Get_ResetToken">
 								</testmodule>
 								<testmodule
 								id="4d9dad4d-7121-4103-8e94-204d724ffe5e"
-								name="G_Secret">
+								name="Get_Secret">
 								</testmodule>
 							</testcase>
 							<teardown
@@ -4790,10 +4790,6 @@ rxversion="8.3">
 					<smartfoldernode
 					id="45077930-4bd9-4874-ad6a-91b58033c26a"
 					name="eSourcePlatformAPI_RegressionTest">
-						<setup
-						id="feed961b-64f5-40e1-9071-d18ed66ebdb0"
-						name="setup">
-						</setup>
 						<smartfoldernode
 						id="b73752fe-40fa-44f6-b806-b422d950e3cd"
 						name="V2_API">
@@ -4807,7 +4803,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa"
-							name="Generate_WorkFlow">
+							name="V2_GenerateWorkFlow">
 								<testmodule
 								id="d6044850-b050-4abb-a188-cdd77629ad46"
 								name="WorkFlowInstance">
@@ -4815,15 +4811,15 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="9fe98d67-940d-4451-ae47-83f979151dc2"
-							name="cbbVersionCheck">
+							name="Validate_CBB_Version">
 								<testmodule
 								id="87ead3cd-b03c-45fd-b38e-fc5f0f1cbc24"
-								name="cbb_VersionCheck">
+								name="Validate_CBB_Version">
 								</testmodule>
 							</testcase>
 							<testcase
 							id="04421345-e5aa-49b4-b420-101dbea32a24"
-							name="Assessment_AttemptStatus">
+							name="V2_AssessmentAttempt_Status">
 								<testmodule
 								id="6f4727f6-39a1-4761-8e12-73c86fac77ab"
 								name="Assessment_AttemptStatus">
@@ -4831,7 +4827,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8"
-							name="GetQualification_Status">
+							name="V2_Qualification_Status">
 								<testmodule
 								id="53e72e72-6332-4b4b-a3fd-e9e2b7829d1f"
 								name="GetQualification_Status">
@@ -4839,10 +4835,10 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="70e5e727-daef-4614-a975-2ae2ab2660ae"
-							name="Participant_Qualification_Status">
+							name="V2_Participant_Qualification_Status">
 								<testmodule
 								id="a87026c7-2f43-4648-9168-cecc8d2a2ee7"
-								name="ParticipantQualification_Status">
+								name="APIV2_ParticipantQualification_Status">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -4866,7 +4862,7 @@ rxversion="8.3">
 							name="V1_ExternalAuthenticate">
 								<testmodule
 								id="5ee32229-20ba-4b3b-ad49-74060a814c24"
-								name="V1_AuthenticateAPI">
+								name="APIV1_Authentication">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -4874,7 +4870,7 @@ rxversion="8.3">
 							name="V1_GetStatusCode">
 								<testmodule
 								id="704dd07e-920c-453d-960e-21da92a80ab8"
-								name="Get_StatusCode">
+								name="APIV1_StatusCode">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -4882,7 +4878,7 @@ rxversion="8.3">
 							name="V1_ReferralStatus">
 								<testmodule
 								id="7a9fae59-e844-4b1c-863c-d2972b5e839d"
-								name="Referral_Status">
+								name="APIV1_ReferralStatus">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -4894,7 +4890,11 @@ rxversion="8.3">
 							name="oData_API">
 								<testmodule
 								id="944ec9b2-ee26-4f8d-b3c3-55218690e828"
-								name="AuthenticalAsInternalUser">
+								name="AuthenticateAsInternalUser">
+								</testmodule>
+								<testmodule
+								id="0c19a365-c2b7-469b-8a51-9ca6cc15f33e"
+								name="oDataAPI">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -4911,7 +4911,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="3e7527cb-5ed0-4568-9fc8-2ec809398808"
-							name="Generate_ExterUserKey">
+							name="Generate_ExternalUserKey">
 								<testmodule
 								id="99786d78-16d4-460c-8506-aa406bacf4c5"
 								name="GenerateKey">
@@ -4922,7 +4922,7 @@ rxversion="8.3">
 							name="GenerateStandardExtract">
 								<testmodule
 								id="9c137acc-6b4f-4824-8169-38ae66b80a1a"
-								name="GenerateStandard_Extract">
+								name="Generate_Standard_Extract">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -4935,10 +4935,10 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="cd729a93-e144-4f5b-93c8-26fb3fb153b0"
-							name="SetLocalitieCode">
+							name="SetLocalityCode">
 								<testmodule
 								id="da35936c-053f-492d-8d0e-bfbbdb2d95dc"
-								name="Set_LocalitieCode">
+								name="Set_LocalityCode">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -4962,10 +4962,6 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
-						<teardown
-						id="bbc383b9-4792-433e-9d9b-dbf9249909ed"
-						name="teardown">
-						</teardown>
 					</smartfoldernode>
 					<smartfoldernode
 					id="9ab34d41-a11f-476f-a90f-c56f30c05e5c"
@@ -4975,7 +4971,7 @@ rxversion="8.3">
 						name="CheckStudyDupplication_">
 							<testmodule
 							id="96084bfa-c32b-4422-aaa2-ea6002778aa3"
-							name="StudyDuppCheck">
+							name="Check_Duplicate_Study">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
@@ -5282,6 +5278,15 @@ rxversion="8.3">
 				</column>
 				<column>
 					Authentication
+				</column>
+				<column>
+					PrimaryOutcome
+				</column>
+				<column>
+					StandardScoreZ
+				</column>
+				<column>
+					StandardScoreT
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
