@@ -74,11 +74,11 @@ namespace CSP.InternalAPIModules
 			// Your recording specific initialization code goes here.
 		}
 
-		public void Generate_Key(string id, string contactEmail, string active, string I_AuthToken, string key)
+		public void Generate_Key(string id, string contactEmail, string active, string I_AuthToken, string key, string DOM)
 		{
 			
 			//Setup API call
-			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://cgst-qc-jordan.azurewebsites.net/api/externalusers");
+			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+ DOM + "/api/externalusers");
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
 			httpRequest.Headers.Add("Authorization", I_AuthToken);

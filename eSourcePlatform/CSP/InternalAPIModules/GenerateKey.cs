@@ -46,6 +46,7 @@ namespace CSP.InternalAPIModules
             contactEmail = "daryschetech@gmail.com";
             active = "true";
             I_AuthToken = "";
+            DOM = "";
         }
 
         /// <summary>
@@ -106,6 +107,18 @@ namespace CSP.InternalAPIModules
             set { _I_AuthToken = value; }
         }
 
+        string _DOM;
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("3b2c770e-10f9-4b9e-bc14-0264f5b51603")]
+        public string DOM
+        {
+            get { return _DOM; }
+            set { _DOM = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable key.
         /// </summary>
@@ -142,7 +155,7 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            Generate_Key(id, contactEmail, active, I_AuthToken, key);
+            Generate_Key(id, contactEmail, active, I_AuthToken, key, DOM);
             Delay.Milliseconds(0);
             
         }

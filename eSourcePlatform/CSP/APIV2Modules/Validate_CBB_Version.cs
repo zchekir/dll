@@ -41,8 +41,8 @@ namespace CSP.APIV2Modules
         /// </summary>
         public Validate_CBB_Version()
         {
-            cbbv = "cbbVersion=8.11.2+cc0924d+release%2F8.11.2";
-            wfInstance = "https://cgst-qc-jordan.azurewebsites.net/workflowinstance.html?workflowInstanceId=45879&authToken=Klmx73G8p4MbTDm8MkzjcXDdyUNAttFbLq_ZD10iIEBQUVnjg9qJhR8Hv4W8RB7_&localityCode=en_US&vertical=prsworkflow&cbbVersion=8.11.2+cc0924d+release%2F8.11.2&redirect=http%3A%2F%2Fgoogle.com%2F&redirecterror=http%3A%2F%2Ftesters.cogstate.com%2F";
+            cbbv = "";
+            wfInstance = "";
         }
 
         /// <summary>
