@@ -36,7 +36,7 @@ namespace eSourcePlatform
             // Your recording specific initialization code goes here.
         }
 
-        public void AssessmentValidation(string dbserver, string database, string username, string password, string authentication, string TestIdentifier, string ExResults, string StandardScoreT, string StandardScoreZ, string PrimaryOutcome)
+        public void AssessmentValidation(string dbserver, string database, string username, string password, string authentication, string TestIdentifier, string StandardScoreT, string StandardScoreZ, string PrimaryOutcome)
         {
             //Validating the CSP DB Version :
 			

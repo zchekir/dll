@@ -1278,107 +1278,215 @@
       <DependentUpon>Validate_Workflow_Templates.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_AssessmentAttempt.cs">
+    <Compile Include="APIV1Modules\APIV1_Authentication.cs">
+      <DependentUpon>APIV1_Authentication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b398995-67dc-4328-a5b7-48b371ba2cb8</id>
+      <BoundTo>69186f18-9c47-45bf-9db2-11be0d401386</BoundTo>
+    </Compile>
+    <Compile Include="APIV1Modules\APIV1_Authentication.UserCode.cs">
+      <DependentUpon>APIV1_Authentication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a4b0a03b-1e9d-4359-b5a5-ddff09fa6c39</id>
+      <BoundTo>69186f18-9c47-45bf-9db2-11be0d401386</BoundTo>
+    </Compile>
+    <Compile Include="APIV1Modules\APIV1_ReferralStatus.cs">
+      <DependentUpon>APIV1_ReferralStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>58e7d662-8620-4928-a67a-5d2d42242739</id>
+      <BoundTo>2d1f8218-df18-48b0-af17-f34a309b2e8d</BoundTo>
+    </Compile>
+    <Compile Include="APIV1Modules\APIV1_ReferralStatus.UserCode.cs">
+      <DependentUpon>APIV1_ReferralStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f4ef5a0-860c-4933-af77-c1676c676ab4</id>
+      <BoundTo>2d1f8218-df18-48b0-af17-f34a309b2e8d</BoundTo>
+    </Compile>
+    <Compile Include="APIV1Modules\APIV1_StatusCode.cs">
+      <DependentUpon>APIV1_StatusCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d78d6d7c-753d-4022-af7b-ea96285df490</id>
+      <BoundTo>6c54aff6-828a-4c6f-b24d-72944a74e2fe</BoundTo>
+    </Compile>
+    <Compile Include="APIV1Modules\APIV1_StatusCode.UserCode.cs">
+      <DependentUpon>APIV1_StatusCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1571cfd-0b3a-4b4a-bce5-ddabccd7d4f5</id>
+      <BoundTo>6c54aff6-828a-4c6f-b24d-72944a74e2fe</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\APIV2_AssessmentAttempt.cs">
       <DependentUpon>APIV2_AssessmentAttempt.rxrec</DependentUpon>
       <id>71d29a01-5940-4fff-87d2-d71f3c95c7e8</id>
       <BoundTo>ecd50baa-7a36-49e1-8383-748eb790b54c</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_AssessmentAttempt.UserCode.cs">
+    <Compile Include="APIV2Modules\APIV2_AssessmentAttempt.UserCode.cs">
       <DependentUpon>APIV2_AssessmentAttempt.rxrec</DependentUpon>
       <id>79db9a87-051a-46c2-82d9-b6ac8f02287c</id>
       <BoundTo>ecd50baa-7a36-49e1-8383-748eb790b54c</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_Authenticate.cs">
+    <Compile Include="APIV2Modules\APIV2_Authenticate.cs">
       <DependentUpon>APIV2_Authenticate.rxrec</DependentUpon>
       <id>67f8c2ef-4610-45ea-ab4c-40190ca24c3b</id>
       <BoundTo>045e984f-af50-454a-b86f-0a6818991852</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_Authenticate.UserCode.cs">
+    <Compile Include="APIV2Modules\APIV2_Authenticate.UserCode.cs">
       <DependentUpon>APIV2_Authenticate.rxrec</DependentUpon>
       <id>7962b5b2-8d93-45fb-896f-4bbc0d4143f7</id>
       <BoundTo>045e984f-af50-454a-b86f-0a6818991852</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_QualificationStatus.cs">
+    <Compile Include="APIV2Modules\APIV2_ParticipantQualification_Status.cs">
+      <DependentUpon>APIV2_ParticipantQualification_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3830caf9-d734-457b-b75a-20499e8e4875</id>
+      <BoundTo>c04f5934-5eae-403b-af9f-91516f223f3a</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\APIV2_ParticipantQualification_Status.UserCode.cs">
+      <DependentUpon>APIV2_ParticipantQualification_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1737b373-ef96-4f73-9b69-eaf8e7f1ba2a</id>
+      <BoundTo>c04f5934-5eae-403b-af9f-91516f223f3a</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\APIV2_QualificationStatus.cs">
       <id>a60974fa-ae41-4f6e-8f48-20315a124a69</id>
       <BoundTo>8e9a6156-32d2-430a-a4b6-9d32738813cd</BoundTo>
       <DependentUpon>APIV2_QualificationStatus.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_QualificationStatus.UserCode.cs">
+    <Compile Include="APIV2Modules\APIV2_QualificationStatus.UserCode.cs">
       <id>0dbd8c93-6a08-43d4-819a-b2c273b89279</id>
       <BoundTo>8e9a6156-32d2-430a-a4b6-9d32738813cd</BoundTo>
       <DependentUpon>APIV2_QualificationStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_Update_Demographic.cs">
+    <Compile Include="APIV2Modules\APIV2_Update_Demographic.cs">
       <DependentUpon>APIV2_Update_Demographic.rxrec</DependentUpon>
       <id>8c5aae87-4efb-4fd9-98de-7b996eb447b1</id>
       <BoundTo>7adc8802-d178-40e7-9ff0-8a79e4aa8d69</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="APIModules\APIV2_Update_Demographic.UserCode.cs">
+    <Compile Include="APIV2Modules\APIV2_Update_Demographic.UserCode.cs">
       <DependentUpon>APIV2_Update_Demographic.rxrec</DependentUpon>
       <id>4c3649a5-6387-4999-b0d1-86bba277db45</id>
       <BoundTo>7adc8802-d178-40e7-9ff0-8a79e4aa8d69</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="APIModules\Clear_ExternalID.cs">
-      <id>dd1b110c-c8f3-4cc6-a608-0cd3acad3db4</id>
-    </Compile>
-    <Compile Include="APIModules\GetResetToken.cs">
-      <BoundTo>8b4a2f89-77f0-466c-b040-4b7936a31220</BoundTo>
-      <DependentUpon>GetResetToken.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>50004330-04d8-4496-ad68-caf37cdb96a1</id>
-    </Compile>
-    <Compile Include="APIModules\GetResetToken.UserCode.cs">
-      <BoundTo>8b4a2f89-77f0-466c-b040-4b7936a31220</BoundTo>
-      <DependentUpon>GetResetToken.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>685c53b0-7d57-4385-a6dc-2f291e52004f</id>
-    </Compile>
-    <Compile Include="APIModules\G_Secret.cs">
-      <BoundTo>915a7715-2246-45d7-9b83-536fcaf59f17</BoundTo>
-      <DependentUpon>G_Secret.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>3dc3babb-63ba-4690-9a5a-e8d73b374697</id>
-    </Compile>
-    <Compile Include="APIModules\G_Secret.UserCode.cs">
-      <BoundTo>915a7715-2246-45d7-9b83-536fcaf59f17</BoundTo>
-      <DependentUpon>G_Secret.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>f8955114-cf3b-4bdf-8733-7e8dbae6b7e3</id>
-    </Compile>
-    <Compile Include="AssemblyInfo.cs">
-      <id>972ac0ea-8bc6-4fff-b84a-433c9e389b8b</id>
-    </Compile>
-    <Compile Include="Assessment_AttemptStatus.cs">
-      <BoundTo>8e690f39-5dae-4a62-bf8d-e0d65d56a9f0</BoundTo>
+    <Compile Include="APIV2Modules\Assessment_AttemptStatus.cs">
       <DependentUpon>Assessment_AttemptStatus.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>daccb34c-ffff-44f6-a823-e063d6b3ce69</id>
-    </Compile>
-    <Compile Include="Assessment_AttemptStatus.UserCode.cs">
       <BoundTo>8e690f39-5dae-4a62-bf8d-e0d65d56a9f0</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\Assessment_AttemptStatus.UserCode.cs">
       <DependentUpon>Assessment_AttemptStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ece95988-587f-40a9-b35b-d382782d2017</id>
+      <BoundTo>8e690f39-5dae-4a62-bf8d-e0d65d56a9f0</BoundTo>
     </Compile>
-    <Compile Include="AuthenticalAsInternalUser.cs">
-      <BoundTo>1d8dd5f5-4a1a-438d-9a75-408bedf11894</BoundTo>
-      <DependentUpon>AuthenticalAsInternalUser.rxrec</DependentUpon>
+    <Compile Include="APIV2Modules\CheckRrunFlag.cs">
+      <DependentUpon>CheckRrunFlag.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>3e95f1a9-8738-43bb-b564-97f734614c9d</id>
+      <id>d03efadf-e2ab-46ea-bea4-e4503eeb804d</id>
+      <BoundTo>950bc8d6-597b-4276-b065-334c8256ae1e</BoundTo>
     </Compile>
-    <Compile Include="AuthenticalAsInternalUser.UserCode.cs">
-      <BoundTo>1d8dd5f5-4a1a-438d-9a75-408bedf11894</BoundTo>
-      <DependentUpon>AuthenticalAsInternalUser.rxrec</DependentUpon>
+    <Compile Include="APIV2Modules\CheckRrunFlag.UserCode.cs">
+      <DependentUpon>CheckRrunFlag.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>d456a5d3-68d2-4abb-a439-1ce82a48188c</id>
+      <id>7cba8fb0-b9fc-446c-9772-922b696332e3</id>
+      <BoundTo>950bc8d6-597b-4276-b065-334c8256ae1e</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\Clear_ExternalID.cs">
+      <id>dd1b110c-c8f3-4cc6-a608-0cd3acad3db4</id>
+    </Compile>
+    <Compile Include="APIV2Modules\External_Authenticate.cs">
+      <DependentUpon>External_Authenticate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b22746bb-1209-4d9b-8f01-183cf0ef60fa</id>
+      <BoundTo>122d1289-5600-4316-b4b4-968063affd23</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\External_Authenticate.UserCode.cs">
+      <DependentUpon>External_Authenticate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cfbf0842-89b5-4ba5-b1d4-bd239c1d7b6e</id>
+      <BoundTo>122d1289-5600-4316-b4b4-968063affd23</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\GetQualification_Status.cs">
+      <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fecd558c-cd86-48e1-86f6-d9d27d1ef676</id>
+      <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\GetQualification_Status.UserCode.cs">
+      <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23e86cd0-e07a-4bf6-90c5-5165ad79fd1d</id>
+      <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\Get_ResetToken.cs">
+      <BoundTo>8b4a2f89-77f0-466c-b040-4b7936a31220</BoundTo>
+      <DependentUpon>Get_ResetToken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50004330-04d8-4496-ad68-caf37cdb96a1</id>
+    </Compile>
+    <Compile Include="APIV2Modules\Get_ResetToken.UserCode.cs">
+      <BoundTo>8b4a2f89-77f0-466c-b040-4b7936a31220</BoundTo>
+      <DependentUpon>Get_ResetToken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>685c53b0-7d57-4385-a6dc-2f291e52004f</id>
+    </Compile>
+    <Compile Include="APIV2Modules\Get_Secret.cs">
+      <BoundTo>915a7715-2246-45d7-9b83-536fcaf59f17</BoundTo>
+      <DependentUpon>Get_Secret.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3dc3babb-63ba-4690-9a5a-e8d73b374697</id>
+    </Compile>
+    <Compile Include="APIV2Modules\Get_Secret.UserCode.cs">
+      <BoundTo>915a7715-2246-45d7-9b83-536fcaf59f17</BoundTo>
+      <DependentUpon>Get_Secret.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f8955114-cf3b-4bdf-8733-7e8dbae6b7e3</id>
+    </Compile>
+    <Compile Include="APIV2Modules\RrunWorkflow.cs">
+      <DependentUpon>RrunWorkflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8f65ae47-129c-4dad-9cef-f524d4b4d7fe</id>
+      <BoundTo>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\RrunWorkflow.UserCode.cs">
+      <DependentUpon>RrunWorkflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0284bd79-ee29-4908-a3c2-8f69fbc45277</id>
+      <BoundTo>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\Validate_CBB_Version.cs">
+      <DependentUpon>Validate_CBB_Version.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99ac54b1-4a5e-451a-8cd4-0faf64ce99ef</id>
+      <BoundTo>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\Validate_CBB_Version.UserCode.cs">
+      <DependentUpon>Validate_CBB_Version.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e5c6d03-dd47-4b35-9e41-61cbd3b340c3</id>
+      <BoundTo>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\WorkFlowInstance.cs">
+      <DependentUpon>WorkFlowInstance.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7fe62842-5e84-419c-97bd-1b5fe2517657</id>
+      <BoundTo>de77e08a-a1f1-46ac-8971-cdd7dbe62062</BoundTo>
+    </Compile>
+    <Compile Include="APIV2Modules\WorkFlowInstance.UserCode.cs">
+      <DependentUpon>WorkFlowInstance.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81de7b5e-e55f-4acd-899a-d37e786814b4</id>
+      <BoundTo>de77e08a-a1f1-46ac-8971-cdd7dbe62062</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>972ac0ea-8bc6-4fff-b84a-433c9e389b8b</id>
     </Compile>
     <Compile Include="BatteriesPage\Click_Add_Battery.cs">
       <id>60f7c689-a237-4370-8391-e3df9ff6fe7a</id>
@@ -1415,18 +1523,6 @@
       <BoundTo>f252b411-c83e-4ea8-abd0-c84c79a3cea0</BoundTo>
       <DependentUpon>Select_Battery.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-    </Compile>
-    <Compile Include="BatteryConfiguration_Report.cs">
-      <BoundTo>1814a843-3840-4bf5-8de1-1e1c40d8685d</BoundTo>
-      <DependentUpon>BatteryConfiguration_Report.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b70b0ccc-b416-4fc9-9e09-c01258c8dd14</id>
-    </Compile>
-    <Compile Include="BatteryConfiguration_Report.UserCode.cs">
-      <BoundTo>1814a843-3840-4bf5-8de1-1e1c40d8685d</BoundTo>
-      <DependentUpon>BatteryConfiguration_Report.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>1c8ca9ef-66af-41ab-a1c9-de05f9da5d9a</id>
     </Compile>
     <Compile Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.cs">
       <id>56aa4cc6-772e-452d-8040-b8dd645484ff</id>
@@ -1608,30 +1704,6 @@
       <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="cbb_VersionCheck.cs">
-      <BoundTo>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</BoundTo>
-      <DependentUpon>cbb_VersionCheck.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>99ac54b1-4a5e-451a-8cd4-0faf64ce99ef</id>
-    </Compile>
-    <Compile Include="cbb_VersionCheck.UserCode.cs">
-      <BoundTo>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</BoundTo>
-      <DependentUpon>cbb_VersionCheck.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>8e5c6d03-dd47-4b35-9e41-61cbd3b340c3</id>
-    </Compile>
-    <Compile Include="CheckRrunFlag.cs">
-      <BoundTo>950bc8d6-597b-4276-b065-334c8256ae1e</BoundTo>
-      <DependentUpon>CheckRrunFlag.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d03efadf-e2ab-46ea-bea4-e4503eeb804d</id>
-    </Compile>
-    <Compile Include="CheckRrunFlag.UserCode.cs">
-      <BoundTo>950bc8d6-597b-4276-b065-334c8256ae1e</BoundTo>
-      <DependentUpon>CheckRrunFlag.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>7cba8fb0-b9fc-446c-9772-922b696332e3</id>
-    </Compile>
     <Compile Include="ClickNoButton.cs">
       <BoundTo>736781f6-6c3a-402e-9413-966838fac367</BoundTo>
       <DependentUpon>ClickNoButton.rxrec</DependentUpon>
@@ -1644,18 +1716,6 @@
       <UserCode>true</UserCode>
       <id>e5aa65aa-7f0a-4db0-8a13-fe70058127f3</id>
     </Compile>
-    <Compile Include="CreateCSPStudy.cs">
-      <BoundTo>6fc90c84-6374-47d0-a7b6-80de64eb7b0e</BoundTo>
-      <DependentUpon>CreateCSPStudy.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>c8f6f3df-f949-4391-a98d-f6009472e619</id>
-    </Compile>
-    <Compile Include="CreateCSPStudy.UserCode.cs">
-      <BoundTo>6fc90c84-6374-47d0-a7b6-80de64eb7b0e</BoundTo>
-      <DependentUpon>CreateCSPStudy.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>4b910154-b68e-4b6e-86d7-be8ca96edf11</id>
-    </Compile>
     <Compile Include="CSPRepository.cs">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <DependentUpon>CSPRepository.rxrep</DependentUpon>
@@ -1664,18 +1724,6 @@
     </Compile>
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
-    </Compile>
-    <Compile Include="External_Authenticate.cs">
-      <BoundTo>122d1289-5600-4316-b4b4-968063affd23</BoundTo>
-      <DependentUpon>External_Authenticate.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b22746bb-1209-4d9b-8f01-183cf0ef60fa</id>
-    </Compile>
-    <Compile Include="External_Authenticate.UserCode.cs">
-      <BoundTo>122d1289-5600-4316-b4b4-968063affd23</BoundTo>
-      <DependentUpon>External_Authenticate.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>cfbf0842-89b5-4ba5-b1d4-bd239c1d7b6e</id>
     </Compile>
     <Compile Include="ExtractsPage\Click_DownloadExtract_Button.cs">
       <id>64e991f1-9c42-48e0-9752-c2492e573377</id>
@@ -2064,77 +2112,113 @@
       <DependentUpon>Verify_Version_Deployed.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="GenerateKey.cs">
-      <BoundTo>c4900199-6f3d-4aef-a4e7-dbde70594300</BoundTo>
+    <Compile Include="InternalAPIModules\AuthenticateAsInternalUser.cs">
+      <DependentUpon>AuthenticateAsInternalUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e95f1a9-8738-43bb-b564-97f734614c9d</id>
+      <BoundTo>1d8dd5f5-4a1a-438d-9a75-408bedf11894</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\AuthenticateAsInternalUser.UserCode.cs">
+      <DependentUpon>AuthenticateAsInternalUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d456a5d3-68d2-4abb-a439-1ce82a48188c</id>
+      <BoundTo>1d8dd5f5-4a1a-438d-9a75-408bedf11894</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\BatteryConfiguration_Report.cs">
+      <DependentUpon>BatteryConfiguration_Report.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b70b0ccc-b416-4fc9-9e09-c01258c8dd14</id>
+      <BoundTo>1814a843-3840-4bf5-8de1-1e1c40d8685d</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\BatteryConfiguration_Report.UserCode.cs">
+      <DependentUpon>BatteryConfiguration_Report.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1c8ca9ef-66af-41ab-a1c9-de05f9da5d9a</id>
+      <BoundTo>1814a843-3840-4bf5-8de1-1e1c40d8685d</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\CreateCSPStudy.cs">
+      <DependentUpon>CreateCSPStudy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8f6f3df-f949-4391-a98d-f6009472e619</id>
+      <BoundTo>6fc90c84-6374-47d0-a7b6-80de64eb7b0e</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\CreateCSPStudy.UserCode.cs">
+      <DependentUpon>CreateCSPStudy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b910154-b68e-4b6e-86d7-be8ca96edf11</id>
+      <BoundTo>6fc90c84-6374-47d0-a7b6-80de64eb7b0e</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\GenerateKey.cs">
       <DependentUpon>GenerateKey.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0a606de1-ba80-48a2-b8af-a3decc3c7c26</id>
-    </Compile>
-    <Compile Include="GenerateKey.UserCode.cs">
       <BoundTo>c4900199-6f3d-4aef-a4e7-dbde70594300</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\GenerateKey.UserCode.cs">
       <DependentUpon>GenerateKey.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>0684c8f6-1feb-49e7-980d-aea03b53ccc7</id>
+      <BoundTo>c4900199-6f3d-4aef-a4e7-dbde70594300</BoundTo>
     </Compile>
-    <Compile Include="GenerateSecret.cs">
-      <BoundTo>901d10f0-bac5-4ce9-ba40-a15be528bc37</BoundTo>
-      <DependentUpon>GenerateSecret.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>5a109110-7f67-4e84-827f-9b63d74cc44c</id>
-    </Compile>
-    <Compile Include="GenerateSecret.UserCode.cs">
-      <BoundTo>901d10f0-bac5-4ce9-ba40-a15be528bc37</BoundTo>
-      <DependentUpon>GenerateSecret.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>af7f573e-da7a-4229-9269-7b0ede504a4d</id>
-    </Compile>
-    <Compile Include="GenerateStandard_Extract.cs">
-      <BoundTo>2dc99b01-5d36-4070-9770-a3f780b8b614</BoundTo>
-      <DependentUpon>GenerateStandard_Extract.rxrec</DependentUpon>
+    <Compile Include="InternalAPIModules\Generate_Standard_Extract.cs">
+      <DependentUpon>Generate_Standard_Extract.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>237bd97a-8dde-4721-8777-d954bb322a6e</id>
-    </Compile>
-    <Compile Include="GenerateStandard_Extract.UserCode.cs">
       <BoundTo>2dc99b01-5d36-4070-9770-a3f780b8b614</BoundTo>
-      <DependentUpon>GenerateStandard_Extract.rxrec</DependentUpon>
+    </Compile>
+    <Compile Include="InternalAPIModules\Generate_Standard_Extract.UserCode.cs">
+      <DependentUpon>Generate_Standard_Extract.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d43d6b19-0097-48a6-8fff-0c6daacaa11f</id>
+      <BoundTo>2dc99b01-5d36-4070-9770-a3f780b8b614</BoundTo>
     </Compile>
-    <Compile Include="GetQualification_Status.cs">
-      <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
-      <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>fecd558c-cd86-48e1-86f6-d9d27d1ef676</id>
-    </Compile>
-    <Compile Include="GetQualification_Status.UserCode.cs">
-      <BoundTo>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</BoundTo>
-      <DependentUpon>GetQualification_Status.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>23e86cd0-e07a-4bf6-90c5-5165ad79fd1d</id>
-    </Compile>
-    <Compile Include="Get_StatusCode.cs">
-      <BoundTo>6c54aff6-828a-4c6f-b24d-72944a74e2fe</BoundTo>
-      <DependentUpon>Get_StatusCode.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d78d6d7c-753d-4022-af7b-ea96285df490</id>
-    </Compile>
-    <Compile Include="Get_StatusCode.UserCode.cs">
-      <BoundTo>6c54aff6-828a-4c6f-b24d-72944a74e2fe</BoundTo>
-      <DependentUpon>Get_StatusCode.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>a1571cfd-0b3a-4b4a-bce5-ddabccd7d4f5</id>
-    </Compile>
-    <Compile Include="InternalUserLogin.cs">
-      <BoundTo>333c4e99-cb1a-477d-b511-5b96c5eb7861</BoundTo>
+    <Compile Include="InternalAPIModules\InternalUserLogin.cs">
       <DependentUpon>InternalUserLogin.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>13c81797-22ae-489a-b6a0-fba836f64a08</id>
-    </Compile>
-    <Compile Include="InternalUserLogin.UserCode.cs">
       <BoundTo>333c4e99-cb1a-477d-b511-5b96c5eb7861</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\InternalUserLogin.UserCode.cs">
       <DependentUpon>InternalUserLogin.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>23cdab35-7bf3-44e4-986c-9b25bcc3fbe1</id>
+      <BoundTo>333c4e99-cb1a-477d-b511-5b96c5eb7861</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\oDataAPI.cs">
+      <DependentUpon>oDataAPI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>270bb582-a93c-401d-a247-b54451babb90</id>
+      <BoundTo>884bb441-ac5e-4bbc-ae8c-8c2424eb3071</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\oDataAPI.UserCode.cs">
+      <DependentUpon>oDataAPI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a5df6606-e5a9-481c-8dd2-001a53dd71ab</id>
+      <BoundTo>884bb441-ac5e-4bbc-ae8c-8c2424eb3071</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\PowerBI_Report.cs">
+      <DependentUpon>PowerBI_Report.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5eaae670-0598-404a-9f8d-09b4b0996f3d</id>
+      <BoundTo>757c0b9a-18c1-498d-a2a6-f29638c2e011</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\PowerBI_Report.UserCode.cs">
+      <DependentUpon>PowerBI_Report.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ac432d9-3c96-4e37-abfc-c462b2443a33</id>
+      <BoundTo>757c0b9a-18c1-498d-a2a6-f29638c2e011</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\Set_LocalityCode.cs">
+      <DependentUpon>Set_LocalityCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>059117e7-8b33-4b28-b956-19d6ad75bbbe</id>
+      <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
+    </Compile>
+    <Compile Include="InternalAPIModules\Set_LocalityCode.UserCode.cs">
+      <DependentUpon>Set_LocalityCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6bc176c6-7b39-45f4-8ef6-eedbebeaf751</id>
+      <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
     </Compile>
     <Compile Include="LoginPage\Click_ForgotPassword.cs">
       <id>3b4e421d-31fb-4572-b37e-86187f9d137d</id>
@@ -2328,30 +2412,6 @@
       <DependentUpon>Validate_ResetPassword_LoggedIn.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="oDataAPI.cs">
-      <BoundTo>884bb441-ac5e-4bbc-ae8c-8c2424eb3071</BoundTo>
-      <DependentUpon>oDataAPI.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>270bb582-a93c-401d-a247-b54451babb90</id>
-    </Compile>
-    <Compile Include="oDataAPI.UserCode.cs">
-      <BoundTo>884bb441-ac5e-4bbc-ae8c-8c2424eb3071</BoundTo>
-      <DependentUpon>oDataAPI.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>a5df6606-e5a9-481c-8dd2-001a53dd71ab</id>
-    </Compile>
-    <Compile Include="ParticipantQualification_Status.cs">
-      <BoundTo>c04f5934-5eae-403b-af9f-91516f223f3a</BoundTo>
-      <DependentUpon>ParticipantQualification_Status.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>3830caf9-d734-457b-b75a-20499e8e4875</id>
-    </Compile>
-    <Compile Include="ParticipantQualification_Status.UserCode.cs">
-      <BoundTo>c04f5934-5eae-403b-af9f-91516f223f3a</BoundTo>
-      <DependentUpon>ParticipantQualification_Status.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>1737b373-ef96-4f73-9b69-eaf8e7f1ba2a</id>
-    </Compile>
     <Compile Include="ParticipantsPage\Change_Enroll_Status.cs">
       <id>c2d06657-c550-4e99-b482-e02ea65bd452</id>
       <BoundTo>98670887-05e3-4a42-a79b-3fb4f8470f17</BoundTo>
@@ -2484,32 +2544,8 @@
       <DependentUpon>Validate_Participant_Profile.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="PowerBI_Report.cs">
-      <BoundTo>757c0b9a-18c1-498d-a2a6-f29638c2e011</BoundTo>
-      <DependentUpon>PowerBI_Report.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>5eaae670-0598-404a-9f8d-09b4b0996f3d</id>
-    </Compile>
-    <Compile Include="PowerBI_Report.UserCode.cs">
-      <BoundTo>757c0b9a-18c1-498d-a2a6-f29638c2e011</BoundTo>
-      <DependentUpon>PowerBI_Report.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>9ac432d9-3c96-4e37-abfc-c462b2443a33</id>
-    </Compile>
     <Compile Include="Program.cs">
       <id>bcd8980c-aebe-43ad-ab29-ee0798e2d903</id>
-    </Compile>
-    <Compile Include="Referral_Status.cs">
-      <BoundTo>2d1f8218-df18-48b0-af17-f34a309b2e8d</BoundTo>
-      <DependentUpon>Referral_Status.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>58e7d662-8620-4928-a67a-5d2d42242739</id>
-    </Compile>
-    <Compile Include="Referral_Status.UserCode.cs">
-      <BoundTo>2d1f8218-df18-48b0-af17-f34a309b2e8d</BoundTo>
-      <DependentUpon>Referral_Status.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>6f4ef5a0-860c-4933-af77-c1676c676ab4</id>
     </Compile>
     <Compile Include="ReportsPage\Click_AcademicExtract_Link.cs">
       <BoundTo>c182812f-a250-478b-8089-57b36c9b0bc4</BoundTo>
@@ -2606,30 +2642,6 @@
       <BoundTo>480d9a60-ad4e-41ed-a1e4-d253bb05627c</BoundTo>
       <DependentUpon>View_Lastest_Report.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-    </Compile>
-    <Compile Include="RrunWorkflow.cs">
-      <BoundTo>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</BoundTo>
-      <DependentUpon>RrunWorkflow.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>8f65ae47-129c-4dad-9cef-f524d4b4d7fe</id>
-    </Compile>
-    <Compile Include="RrunWorkflow.UserCode.cs">
-      <BoundTo>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</BoundTo>
-      <DependentUpon>RrunWorkflow.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>0284bd79-ee29-4908-a3c2-8f69fbc45277</id>
-    </Compile>
-    <Compile Include="Set_LocalitieCode.cs">
-      <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
-      <DependentUpon>Set_LocalitieCode.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>059117e7-8b33-4b28-b956-19d6ad75bbbe</id>
-    </Compile>
-    <Compile Include="Set_LocalitieCode.UserCode.cs">
-      <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
-      <DependentUpon>Set_LocalitieCode.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>6bc176c6-7b39-45f4-8ef6-eedbebeaf751</id>
     </Compile>
     <Compile Include="StudiesPage\Click_Add_Study.cs">
       <id>b2a9c4de-daa4-49fa-be99-a68df1c8ba8f</id>
@@ -2835,15 +2847,15 @@
     <Compile Include="StudiesPage\Validate_Sponsor_Descending.cs">
       <id>6d6e5744-d9e2-4def-a095-1c50c9d69cff</id>
     </Compile>
-    <Compile Include="StudyDuppCheck.cs">
+    <Compile Include="Check_Duplicate_Study.cs">
       <BoundTo>77d10b7f-5b1f-4487-b591-57c536de0146</BoundTo>
-      <DependentUpon>StudyDuppCheck.rxrec</DependentUpon>
+      <DependentUpon>Check_Duplicate_Study.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>17aa6808-c51f-44a4-8bb0-44e41ab82439</id>
     </Compile>
-    <Compile Include="StudyDuppCheck.UserCode.cs">
+    <Compile Include="Check_Duplicate_Study.UserCode.cs">
       <BoundTo>77d10b7f-5b1f-4487-b591-57c536de0146</BoundTo>
-      <DependentUpon>StudyDuppCheck.rxrec</DependentUpon>
+      <DependentUpon>Check_Duplicate_Study.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>4d623283-98ab-4ab9-9c1b-ed6730fc95d9</id>
     </Compile>
@@ -3219,18 +3231,6 @@
       <DependentUpon>Validate_User_Unlocked.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="V1_AuthenticateAPI.cs">
-      <BoundTo>69186f18-9c47-45bf-9db2-11be0d401386</BoundTo>
-      <DependentUpon>V1_AuthenticateAPI.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7b398995-67dc-4328-a5b7-48b371ba2cb8</id>
-    </Compile>
-    <Compile Include="V1_AuthenticateAPI.UserCode.cs">
-      <BoundTo>69186f18-9c47-45bf-9db2-11be0d401386</BoundTo>
-      <DependentUpon>V1_AuthenticateAPI.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>a4b0a03b-1e9d-4359-b5a5-ddff09fa6c39</id>
-    </Compile>
     <Compile Include="VisitSchedulesPage\Click_Add_VisitSchedule.cs">
       <id>bba8563e-71e0-4bf9-ab0d-e1d58723907f</id>
       <BoundTo>eb8836e3-90ae-4c43-8406-e9c56429749a</BoundTo>
@@ -3290,18 +3290,6 @@
       <BoundTo>d016405d-dc0b-487e-bead-06f162888755</BoundTo>
       <DependentUpon>Select_VisitSchedule.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-    </Compile>
-    <Compile Include="WorkFlowInstance.cs">
-      <BoundTo>de77e08a-a1f1-46ac-8971-cdd7dbe62062</BoundTo>
-      <DependentUpon>WorkFlowInstance.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7fe62842-5e84-419c-97bd-1b5fe2517657</id>
-    </Compile>
-    <Compile Include="WorkFlowInstance.UserCode.cs">
-      <BoundTo>de77e08a-a1f1-46ac-8971-cdd7dbe62062</BoundTo>
-      <DependentUpon>WorkFlowInstance.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>81de7b5e-e55f-4acd-899a-d37e786814b4</id>
     </Compile>
     <Compile Include="WorkflowsPage\Click_Add_Workflow.cs">
       <id>c21147a3-0e58-430d-a568-de89136e1107</id>
@@ -3814,48 +3802,93 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>eea44a2e-45df-4f66-947c-df709f63cf27</recordtableid>
     </None>
-    <None Include="APIModules\APIV2_AssessmentAttempt.rxrec">
+    <None Include="APIV1Modules\APIV1_Authentication.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>69186f18-9c47-45bf-9db2-11be0d401386</id>
+      <recordtableid>6c267ae0-eccc-42f7-bcf7-7d5dc0866964</recordtableid>
+    </None>
+    <None Include="APIV1Modules\APIV1_ReferralStatus.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>2d1f8218-df18-48b0-af17-f34a309b2e8d</id>
+      <recordtableid>25e2a597-538e-4553-af69-d582add674b4</recordtableid>
+    </None>
+    <None Include="APIV1Modules\APIV1_StatusCode.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>6c54aff6-828a-4c6f-b24d-72944a74e2fe</id>
+      <recordtableid>5e1ee223-eb63-4c65-beb7-fb91462efaca</recordtableid>
+    </None>
+    <None Include="APIV2Modules\APIV2_AssessmentAttempt.rxrec">
       <id>ecd50baa-7a36-49e1-8383-748eb790b54c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>4a51a55e-772b-4944-828f-24a314e6b0ae</recordtableid>
     </None>
-    <None Include="APIModules\APIV2_Authenticate.rxrec">
+    <None Include="APIV2Modules\APIV2_Authenticate.rxrec">
       <id>045e984f-af50-454a-b86f-0a6818991852</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>03a98aac-9699-4331-a3fa-00536dfad33f</recordtableid>
     </None>
-    <None Include="APIModules\APIV2_QualificationStatus.rxrec">
+    <None Include="APIV2Modules\APIV2_ParticipantQualification_Status.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>c04f5934-5eae-403b-af9f-91516f223f3a</id>
+      <recordtableid>7564efa3-5dfb-429a-8be6-2697f96acf66</recordtableid>
+    </None>
+    <None Include="APIV2Modules\APIV2_QualificationStatus.rxrec">
       <id>8e9a6156-32d2-430a-a4b6-9d32738813cd</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>8080cd65-37d3-431e-8bd9-4ff840801312</recordtableid>
     </None>
-    <None Include="APIModules\APIV2_Update_Demographic.rxrec">
+    <None Include="APIV2Modules\APIV2_Update_Demographic.rxrec">
       <id>7adc8802-d178-40e7-9ff0-8a79e4aa8d69</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>70ee2cb7-7981-4f16-9f4b-d4fbea372124</recordtableid>
     </None>
-    <None Include="APIModules\GetResetToken.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>8b4a2f89-77f0-466c-b040-4b7936a31220</id>
-      <recordtableid>9ecd415f-eabd-42d3-912c-00d78f3c79d2</recordtableid>
-    </None>
-    <None Include="APIModules\G_Secret.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>915a7715-2246-45d7-9b83-536fcaf59f17</id>
-      <recordtableid>b5c1f78b-d628-4e9c-83b0-597bcacc9905</recordtableid>
-    </None>
-    <None Include="app.config">
-      <id>4fde1d06-b4d6-4207-b920-eeffc7d6cb1c</id>
-    </None>
-    <None Include="Assessment_AttemptStatus.rxrec">
+    <None Include="APIV2Modules\Assessment_AttemptStatus.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>8e690f39-5dae-4a62-bf8d-e0d65d56a9f0</id>
       <recordtableid>29fe3e86-cac4-466b-9dc0-3f6f54d46704</recordtableid>
     </None>
-    <None Include="AuthenticalAsInternalUser.rxrec">
+    <None Include="APIV2Modules\CheckRrunFlag.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>1d8dd5f5-4a1a-438d-9a75-408bedf11894</id>
-      <recordtableid>bb083686-6880-4147-aa4e-00115c5053c3</recordtableid>
+      <id>950bc8d6-597b-4276-b065-334c8256ae1e</id>
+      <recordtableid>cf6de81a-ac52-40c4-9fec-7a2e2f9612a7</recordtableid>
+    </None>
+    <None Include="APIV2Modules\External_Authenticate.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>122d1289-5600-4316-b4b4-968063affd23</id>
+      <recordtableid>12a04901-7274-43ed-b5af-fcce25c1eba3</recordtableid>
+    </None>
+    <None Include="APIV2Modules\GetQualification_Status.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</id>
+      <recordtableid>437dbe88-4d5d-4f54-8943-5f96f61f7d4e</recordtableid>
+    </None>
+    <None Include="APIV2Modules\Get_ResetToken.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>8b4a2f89-77f0-466c-b040-4b7936a31220</id>
+      <recordtableid>9ecd415f-eabd-42d3-912c-00d78f3c79d2</recordtableid>
+    </None>
+    <None Include="APIV2Modules\Get_Secret.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>915a7715-2246-45d7-9b83-536fcaf59f17</id>
+      <recordtableid>b5c1f78b-d628-4e9c-83b0-597bcacc9905</recordtableid>
+    </None>
+    <None Include="APIV2Modules\RrunWorkflow.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</id>
+      <recordtableid>957128ba-5359-452d-b0db-ee9e12c48683</recordtableid>
+    </None>
+    <None Include="APIV2Modules\Validate_CBB_Version.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</id>
+      <recordtableid>e12ebea7-d179-4d79-9787-83931795e911</recordtableid>
+    </None>
+    <None Include="APIV2Modules\WorkFlowInstance.rxrec">
+      <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
+      <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+    </None>
+    <None Include="app.config">
+      <id>4fde1d06-b4d6-4207-b920-eeffc7d6cb1c</id>
     </None>
     <None Include="BatteriesPage\Click_Add_Battery.rxrec">
       <id>8e12fa6b-a51d-4dbf-b74f-c2ed366556a3</id>
@@ -3871,11 +3904,6 @@
       <id>f252b411-c83e-4ea8-abd0-c84c79a3cea0</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>ae83b4a9-4f47-44d6-a475-555fe73f8c3d</recordtableid>
-    </None>
-    <None Include="BatteryConfiguration_Report.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>1814a843-3840-4bf5-8de1-1e1c40d8685d</id>
-      <recordtableid>99475296-5cd2-49b9-8044-ab8ce8050d87</recordtableid>
     </None>
     <None Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.rxrec">
       <id>e1b8c8b4-a9af-4dd3-8020-b2b9a7dcc9f2</id>
@@ -3952,25 +3980,10 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
     </None>
-    <None Include="cbb_VersionCheck.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</id>
-      <recordtableid>e12ebea7-d179-4d79-9787-83931795e911</recordtableid>
-    </None>
-    <None Include="CheckRrunFlag.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>950bc8d6-597b-4276-b065-334c8256ae1e</id>
-      <recordtableid>cf6de81a-ac52-40c4-9fec-7a2e2f9612a7</recordtableid>
-    </None>
     <None Include="ClickNoButton.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>736781f6-6c3a-402e-9413-966838fac367</id>
       <recordtableid>7fb7a567-b6ea-401d-9958-944d9c9515bc</recordtableid>
-    </None>
-    <None Include="CreateCSPStudy.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>6fc90c84-6374-47d0-a7b6-80de64eb7b0e</id>
-      <recordtableid>346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c</recordtableid>
     </None>
     <None Include="CSPRepository.rximg">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4074,11 +4087,6 @@
     <None Include="csv\TwoBack.csv">
       <id>11c86286-d2df-4dfc-9b0d-86e9641b835a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="External_Authenticate.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>122d1289-5600-4316-b4b4-968063affd23</id>
-      <recordtableid>12a04901-7274-43ed-b5af-fcce25c1eba3</recordtableid>
     </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>
@@ -4240,39 +4248,54 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c718511d-4281-405c-9160-251f311d2703</recordtableid>
     </None>
-    <None Include="GenerateKey.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>c4900199-6f3d-4aef-a4e7-dbde70594300</id>
-      <recordtableid>4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e</recordtableid>
-    </None>
-    <None Include="GenerateSecret.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>901d10f0-bac5-4ce9-ba40-a15be528bc37</id>
-      <recordtableid>62f4dc62-2d89-4df1-92cd-b2241732900e</recordtableid>
-    </None>
-    <None Include="GenerateStandard_Extract.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>2dc99b01-5d36-4070-9770-a3f780b8b614</id>
-      <recordtableid>8203643e-31dc-4a6f-9d4e-39d89aad76a6</recordtableid>
-    </None>
-    <None Include="GetQualification_Status.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>ad97c367-a428-4b05-89bb-b55ca8aa8f3a</id>
-      <recordtableid>437dbe88-4d5d-4f54-8943-5f96f61f7d4e</recordtableid>
-    </None>
-    <None Include="Get_StatusCode.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>6c54aff6-828a-4c6f-b24d-72944a74e2fe</id>
-      <recordtableid>5e1ee223-eb63-4c65-beb7-fb91462efaca</recordtableid>
-    </None>
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="InternalUserLogin.rxrec">
+    <None Include="InternalAPIModules\AuthenticateAsInternalUser.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>1d8dd5f5-4a1a-438d-9a75-408bedf11894</id>
+      <recordtableid>bb083686-6880-4147-aa4e-00115c5053c3</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\BatteryConfiguration_Report.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>1814a843-3840-4bf5-8de1-1e1c40d8685d</id>
+      <recordtableid>99475296-5cd2-49b9-8044-ab8ce8050d87</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\CreateCSPStudy.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>6fc90c84-6374-47d0-a7b6-80de64eb7b0e</id>
+      <recordtableid>346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\GenerateKey.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>c4900199-6f3d-4aef-a4e7-dbde70594300</id>
+      <recordtableid>4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\Generate_Standard_Extract.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>2dc99b01-5d36-4070-9770-a3f780b8b614</id>
+      <recordtableid>8203643e-31dc-4a6f-9d4e-39d89aad76a6</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\InternalUserLogin.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>333c4e99-cb1a-477d-b511-5b96c5eb7861</id>
       <recordtableid>e4973cbd-dfaf-437f-8fc4-144e686549f9</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\oDataAPI.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>884bb441-ac5e-4bbc-ae8c-8c2424eb3071</id>
+      <recordtableid>e5c5155b-1c7b-4dcd-9aad-e16fa12f0735</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\PowerBI_Report.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>757c0b9a-18c1-498d-a2a6-f29638c2e011</id>
+      <recordtableid>74cc38b7-e7a0-4b6f-a941-387b7394b543</recordtableid>
+    </None>
+    <None Include="InternalAPIModules\Set_LocalityCode.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>492928c3-8757-4ac0-ac0f-37c518b41407</id>
+      <recordtableid>52db9f06-5da5-46a4-b3aa-a782ab8eaa1b</recordtableid>
     </None>
     <None Include="LoginPage\Click_ForgotPassword.rxrec">
       <id>74efb3da-e46c-4c23-aa4c-bbcfc2b60e49</id>
@@ -4354,18 +4377,8 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c31fd7d3-6ab8-4b02-8d6c-eda02646b5c9</recordtableid>
     </None>
-    <None Include="oDataAPI.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>884bb441-ac5e-4bbc-ae8c-8c2424eb3071</id>
-      <recordtableid>e5c5155b-1c7b-4dcd-9aad-e16fa12f0735</recordtableid>
-    </None>
     <None Include="packages.config">
       <id>d64b814a-7bf2-4260-b591-370f7b312894</id>
-    </None>
-    <None Include="ParticipantQualification_Status.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>c04f5934-5eae-403b-af9f-91516f223f3a</id>
-      <recordtableid>7564efa3-5dfb-429a-8be6-2697f96acf66</recordtableid>
     </None>
     <None Include="ParticipantsPage\Change_Enroll_Status.rxrec">
       <id>98670887-05e3-4a42-a79b-3fb4f8470f17</id>
@@ -4421,11 +4434,6 @@
       <id>bac4e143-96af-403e-ae73-111f3c5b0a1a</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>8fcaef85-3e83-4eda-af4f-2994a161feee</recordtableid>
-    </None>
-    <None Include="PowerBI_Report.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>757c0b9a-18c1-498d-a2a6-f29638c2e011</id>
-      <recordtableid>74cc38b7-e7a0-4b6f-a941-387b7394b543</recordtableid>
     </None>
     <None Include="rawData\40yo_Tier1.txt">
       <id>49047e30-12d6-46e5-a10b-b2456f4f4e7a</id>
@@ -4515,11 +4523,6 @@
       <id>35d64e09-9fa2-4fba-9d5b-e752136eb309</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Referral_Status.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>2d1f8218-df18-48b0-af17-f34a309b2e8d</id>
-      <recordtableid>25e2a597-538e-4553-af69-d582add674b4</recordtableid>
-    </None>
     <None Include="ReportsPage\Click_AcademicExtract_Link.rxrec">
       <id>c182812f-a250-478b-8089-57b36c9b0bc4</id>
       <recordtableid>da8397a9-f04d-40bc-be23-165bd204a301</recordtableid>
@@ -4559,16 +4562,6 @@
       <id>480d9a60-ad4e-41ed-a1e4-d253bb05627c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>3bf72023-04a6-405d-b102-33645e57f937</recordtableid>
-    </None>
-    <None Include="RrunWorkflow.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>31bc1612-60fe-40d6-a7a8-aad42bd9ad32</id>
-      <recordtableid>957128ba-5359-452d-b0db-ee9e12c48683</recordtableid>
-    </None>
-    <None Include="Set_LocalitieCode.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>492928c3-8757-4ac0-ac0f-37c518b41407</id>
-      <recordtableid>52db9f06-5da5-46a4-b3aa-a782ab8eaa1b</recordtableid>
     </None>
     <None Include="StudiesPage\Click_Add_Study.rxrec">
       <id>f211a17f-9981-4eec-9e4f-6dd3d3382cad</id>
@@ -4645,7 +4638,7 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>9497cd80-1b66-4ed8-966b-f5cf4618adc6</recordtableid>
     </None>
-    <None Include="StudyDuppCheck.rxrec">
+    <None Include="Check_Duplicate_Study.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>77d10b7f-5b1f-4487-b591-57c536de0146</id>
       <recordtableid>052f590d-8129-4cde-ac98-6ee337aed7f7</recordtableid>
@@ -4805,11 +4798,6 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>45d37677-722b-4892-8305-4eac172507db</recordtableid>
     </None>
-    <None Include="V1_AuthenticateAPI.rxrec">
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
-      <id>69186f18-9c47-45bf-9db2-11be0d401386</id>
-      <recordtableid>6c267ae0-eccc-42f7-bcf7-7d5dc0866964</recordtableid>
-    </None>
     <None Include="VisitSchedulesPage\Click_Add_VisitSchedule.rxrec">
       <id>eb8836e3-90ae-4c43-8406-e9c56429749a</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4834,11 +4822,6 @@
       <id>d016405d-dc0b-487e-bead-06f162888755</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>884bab92-73c9-4c72-bcb0-b60b57cf56ef</recordtableid>
-    </None>
-    <None Include="WorkFlowInstance.rxrec">
-      <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
-      <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
-      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
     </None>
     <None Include="WorkflowsPage\Click_Add_Workflow.rxrec">
       <id>3ee3a92b-867f-478a-bc7f-c1c0e973bcac</id>
@@ -4879,7 +4862,7 @@
     <Folder Include="AddWorkflowPage">
       <id>02454dea-0f26-4814-8d27-2f79dafddfb4</id>
     </Folder>
-    <Folder Include="APIModules">
+    <Folder Include="APIV2Modules">
       <id>90f7e478-716b-4a88-a789-83fb11d7602b</id>
     </Folder>
     <Folder Include="BatteriesPage">
@@ -4902,6 +4885,12 @@
     </Folder>
     <Folder Include="LoginPage">
       <id>81160819-eada-4973-ad78-920570621008</id>
+    </Folder>
+    <Folder Include="APIV1Modules">
+      <id>f7f75bfe-83d8-4193-90bc-d3b44c1ffd37</id>
+    </Folder>
+    <Folder Include="InternalAPIModules">
+      <id>f4633be0-956f-44cc-8517-6e9958561f13</id>
     </Folder>
     <Folder Include="ParticipantsPage">
       <id>ff3b1d3a-dd6f-407e-9037-533018467a8e</id>

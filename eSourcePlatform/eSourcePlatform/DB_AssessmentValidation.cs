@@ -47,7 +47,6 @@ namespace eSourcePlatform
             password = "Cogstate2016";
             authentication = "Active Directory Password";
             TestIdentifier = "c791da9d-ef56-4086-8871-6d706166affc";
-            ExResults = "";
             PrimaryOutcome = "0.970444658471641";
             StandardScoreZ = "-3.17419143668476";
             StandardScoreT = "68.2580856331524";
@@ -135,18 +134,6 @@ namespace eSourcePlatform
             set { _TestIdentifier = value; }
         }
 
-        string _ExResults;
-
-        /// <summary>
-        /// Gets or sets the value of variable ExResults.
-        /// </summary>
-        [TestVariable("9f5dd031-e113-4186-b5e0-eb4ac68bfb9f")]
-        public string ExResults
-        {
-            get { return _ExResults; }
-            set { _ExResults = value; }
-        }
-
         string _PrimaryOutcome;
 
         /// <summary>
@@ -209,7 +196,7 @@ namespace eSourcePlatform
 
             Init();
 
-            AssessmentValidation(dbserver, database, username, password, authentication, TestIdentifier, ExResults, StandardScoreT, StandardScoreZ, PrimaryOutcome);
+            AssessmentValidation(dbserver, database, username, password, authentication, TestIdentifier, StandardScoreT, StandardScoreZ, PrimaryOutcome);
             Delay.Milliseconds(0);
             
         }
