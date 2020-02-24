@@ -42,14 +42,14 @@ namespace eSourcePlatform
         public DB_AssessmentValidation()
         {
             dbserver = "cgst-qc.database.windows.net";
-            database = "cgst-jordan-api";
+            database = "cgst-jill-api";
             username = "zchekir@cogstate.com";
             password = "Cogstate2016";
             authentication = "Active Directory Password";
-            TestIdentifier = "c791da9d-ef56-4086-8871-6d706166affc";
+            TestIdentifier = "7dbdb45f-b46e-4578-9927-0d4b5244b00b";
             PrimaryOutcome = "0.970444658471641";
-            StandardScoreZ = "-3.17419143668476";
-            StandardScoreT = "68.2580856331524";
+            StandardScoreZ = "-2.9910644585573";
+            StandardScoreT = "70.089355414427";
         }
 
         /// <summary>
