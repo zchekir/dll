@@ -266,6 +266,62 @@ rxversion="8.3">
 			id="1e711c73-adb6-4d91-a3d6-95f2184ddf44"
 			name="Validate_Study_Table">
 			</testcase>
+			<modulegroup
+			enabled="False"
+			id="202da9fd-94ca-4cec-ac94-41a99774fba0"
+			name="Validate_AssessmentTestOutcome_Entries"
+			ref="82e15b71-7d32-4608-84dc-fa42010b35d6">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="88a0d055-4944-434b-b4c8-130dae1723c4"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="fc6236c7-f78d-4f68-a8ac-2ee35560a2d0"
+					variablename="CSPPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="26798268-5dd7-44ca-a034-15793b10df02"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="5984a8a0-8f85-4f15-8775-519e997d73fe"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="b916a7cd-0937-4170-9e22-f4293b4efb3e"
+					variableid="98853b4d-1119-4f43-bc03-47482a434309"
+					variablename="StudyName">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
+					variableid="a349fb96-e051-4aff-bd84-9f338981dbc0"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
+					variableid="dd302a70-d29e-472d-bc85-54a719b5de2f"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="RptDatabase"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="bb6fe3ca-241a-4b0f-9252-049aa731cb27"
+					variablename="Database">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="211892da-f6f5-404d-b345-07dd3cda8d72"
 			name="Click_Tools_Menu"
@@ -1225,6 +1281,20 @@ rxversion="8.3">
 					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8c16f0b0-1d00-4311-a011-4439428d674b"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2249,6 +2319,62 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="df554715-e0ce-4520-b180-140001332920"
+			name="Validate_AssessmentOutcomeCard_Entry"
+			ref="40776330-9698-4e7b-8b40-9f4c8e1580bd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="e027354c-c09f-4cb8-b873-7eff666f5ada"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="b7674a38-92dc-4332-a07c-8de8bd7806e0"
+					variablename="CSPPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="79a0f8bd-4eac-47c7-81e7-199f3d1a03a6"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="RptDatabase"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="4bb6544d-e748-41cc-bf34-5c7da4b73375"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="db9225a4-3b34-4ca0-bea2-051f71984adf"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="b916a7cd-0937-4170-9e22-f4293b4efb3e"
+					variableid="4d456d8e-2f8d-4f36-aea9-22858ff923bc"
+					variablename="StudyName">
+					</var>
+					<var
+					dataname="RandNum"
+					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
+					variableid="bec508fd-d807-4e14-b429-fb002d03430e"
+					variablename="RandNum">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
+					variableid="a1bb6f06-3a72-4c9d-8133-e904226c02aa"
+					variablename="TestIdentifier">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e0422dd4-913d-4459-9ba9-9937ca7d6160"
 			name="Enter_SubjectNumber"
 			ref="cbc2e5d0-693e-436f-85ea-25ad0355c2c0"
@@ -2321,62 +2447,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testmodule
-			id="e8901476-8725-4e53-bfa2-16546fe71998"
-			name="Validate_AssessmentOutcomeCard_Entry"
-			ref="40776330-9698-4e7b-8b40-9f4c8e1580bd"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPUsername"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="e027354c-c09f-4cb8-b873-7eff666f5ada"
-					variablename="CSPUsername">
-					</var>
-					<var
-					dataname="CSPPassword"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="b7674a38-92dc-4332-a07c-8de8bd7806e0"
-					variablename="CSPPassword">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="79a0f8bd-4eac-47c7-81e7-199f3d1a03a6"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="RptDatabase"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="4bb6544d-e748-41cc-bf34-5c7da4b73375"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="db9225a4-3b34-4ca0-bea2-051f71984adf"
-					variablename="Authentication">
-					</var>
-					<var
-					dataname="StudyName"
-					datasourceid="b916a7cd-0937-4170-9e22-f4293b4efb3e"
-					variableid="4d456d8e-2f8d-4f36-aea9-22858ff923bc"
-					variablename="StudyName">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
-					variableid="bec508fd-d807-4e14-b429-fb002d03430e"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
-					variableid="a1bb6f06-3a72-4c9d-8133-e904226c02aa"
-					variablename="TestIdentifier">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="e9f48b58-308f-49fd-baf7-ae8d7a082c65"
 			name="Enter_BatteryDescription"
@@ -2598,6 +2668,10 @@ rxversion="8.3">
 								id="b4ae1ee1-5901-4925-81c6-78402fee9675"
 								name="Validate_EventDef_Entry">
 								</testmodule>
+								<testmodule
+								id="8b6734b8-f8b4-4565-8c3b-fbe7eebaba6b"
+								name="Click_Instruments_Tab">
+								</testmodule>
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
@@ -2762,6 +2836,10 @@ rxversion="8.3">
 								id="b4909baf-3f41-4ca8-b1d9-730aa908a8c8"
 								name="Add_Role_External_User">
 								</testmodule>
+								<testmodule
+								id="8c16f0b0-1d00-4311-a011-4439428d674b"
+								name="Close_Browser">
+								</testmodule>
 							</testcase>
 							<testcase
 							id="056a5eea-578d-4433-ae88-6fe8ca2f3b3b"
@@ -2794,10 +2872,6 @@ rxversion="8.3">
 							<testcase
 							id="078624d2-159e-4f13-9673-34da0b0684ef"
 							name="Import_CSV">
-								<testmodule
-								id="8b6734b8-f8b4-4565-8c3b-fbe7eebaba6b"
-								name="Click_Instruments_Tab">
-								</testmodule>
 								<testmodule
 								id="211892da-f6f5-404d-b345-07dd3cda8d72"
 								name="Click_Tools_Menu">
@@ -3071,9 +3145,13 @@ rxversion="8.3">
 							id="d7e2215f-d7d3-4192-9025-0663a9fde957"
 							name="Validate_AssessmentOutcome_Tables">
 								<testmodule
-								id="e8901476-8725-4e53-bfa2-16546fe71998"
+								id="df554715-e0ce-4520-b180-140001332920"
 								name="Validate_AssessmentOutcomeCard_Entry">
 								</testmodule>
+								<modulegroup
+								id="202da9fd-94ca-4cec-ac94-41a99774fba0"
+								name="Validate_AssessmentTestOutcome_Entries">
+								</modulegroup>
 							</testcase>
 						</smartfoldernode>
 						<teardown
@@ -3343,15 +3421,6 @@ rxversion="8.3">
 				</column>
 				<column>
 					Authentication
-				</column>
-				<column>
-					PrimaryOutcome
-				</column>
-				<column>
-					StandardScoreZ
-				</column>
-				<column>
-					StandardScoreT
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

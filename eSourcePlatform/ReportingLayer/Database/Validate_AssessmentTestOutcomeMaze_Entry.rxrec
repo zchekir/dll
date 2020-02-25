@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="3bf39a30-7df4-40fe-89cc-685a277a8651"
+id="35780fd6-fc1a-4d3d-b321-0e9e471f1d66"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Validate_AssessmentOutcomeCPAL_Entry
+		Validate_AssessmentTestOutcomeMaze_Entry
 	</name>
 	<repeatcount>
 		1
@@ -23,49 +23,49 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Validate_AssessmentOutcomeCPAL_Entry"
+	classname="Validate_AssessmentTestOutcomeMaze_Entry"
 	namespace="ReportingLayer.Database">
 	</codegen>
 	<variables>
 		<var
-		id="02932247-3e44-41db-84af-8088919f1bee"
-		name="Authentication">
-		</var>
-		<var
-		id="dc4ae154-352c-47d6-a685-85aee9b9ba7a"
-		name="CSPUsername">
-		</var>
-		<var
-		id="4fac7f3e-28d2-4827-bc27-e47860014804"
-		name="DBServer">
-		</var>
-		<var
-		id="7cd47c5e-7732-4575-a110-29c96169fa89"
+		id="5f886da9-afeb-46dc-98b2-57095e0c53f7"
 		name="Database">
 		</var>
 		<var
-		id="9a9cb74e-0577-45de-90a1-1bbe667c95b3"
+		id="7801bf74-aa6e-4442-b239-cda135e32918"
+		name="DBServer">
+		</var>
+		<var
+		id="0bb5bb57-00f3-4291-bcb0-a0b6bd2f573b"
+		name="CSPUsername">
+		</var>
+		<var
+		id="dda126a4-6c33-464e-a218-a18d10083152"
+		name="CSPPassword">
+		</var>
+		<var
+		id="cce9af2f-dfef-4d83-8c47-c027a81897c7"
+		name="Authentication">
+		</var>
+		<var
+		id="c0ffe793-4ae5-4647-b6a3-425477fc7181"
 		name="StudyName">
 		</var>
 		<var
-		id="164e61fd-44b3-4af4-8d06-19af11b4c57c"
+		id="6e6c722c-ff51-42bd-9b60-ed2c16083dd6"
 		name="RandNum">
 		</var>
 		<var
-		id="befa4d66-a072-4409-866b-94f010a66bfe"
+		id="e9435d2b-5eb4-41c7-b80f-b568f06a1e44"
 		name="TestIdentifier">
-		</var>
-		<var
-		id="c2541150-b6a7-42ce-8ec6-a6afeae09973"
-		name="CSPPassword">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Validate_AssessmentOutcomeCPAL_Entry"
+		classname="Validate_AssessmentTestOutcomeMaze_Entry"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="GetAssessmentTestOutcomesCPAL"
+		methodname="GetAssessmentTestOutcomeMaze"
 		namespace="ReportingLayer.Database"
 		optional="False"
 		varname="">
@@ -74,10 +74,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="3e5bcdd1-5038-41ab-8884-582c2bfd16dc">
+			id="b0052720-4dd3-42e0-8e82-8ab3f2733ce4">
 				<argument
 				argname="database"
-				id="6c6db099-99f4-4ed2-9d01-b5478e43f3b8"
+				id="6d55a085-8813-45f2-b675-3bb13e0b2cdc"
 				variable="Database">
 					<argvaluetype>
 						System.String
@@ -87,7 +87,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="dbserver"
-				id="a9d6bff6-b7a8-4488-97cb-9071ab722b55"
+				id="84f75c0f-8be7-4ebd-a571-58d6e589dcf8"
 				variable="DBServer">
 					<argvaluetype>
 						System.String
@@ -97,7 +97,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="username"
-				id="98aee485-0116-40ec-8751-769746f8d82c"
+				id="4144906e-5779-4c3e-af9c-9065ec0bce97"
 				variable="CSPUsername">
 					<argvaluetype>
 						System.String
@@ -107,7 +107,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="password"
-				id="ccdd52b8-380e-4954-a485-a2c94ea9c5e0"
+				id="ad4c3f2d-55b2-4268-bf64-c42802e9831c"
 				variable="CSPPassword">
 					<argvaluetype>
 						System.String
@@ -117,7 +117,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="authentication"
-				id="a5df8fac-bee4-4525-85fb-f6026a94462f"
+				id="f385c9e6-0ba2-4b94-8596-9048cfea54e2"
 				variable="Authentication">
 					<argvaluetype>
 						System.String
@@ -128,7 +128,7 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Validate_AssessmentOutcomeCPAL_Entry"
+		classname="Validate_AssessmentTestOutcomeMaze_Entry"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ReportRecords"
@@ -140,7 +140,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="61277040-149c-4db5-a2cf-83ce95125697">
+			id="41601ac2-e46d-4728-aa40-43c3963e67ed">
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -160,7 +160,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Validate_AssessmentOutcomeCPAL_Entry.UserCode.cs
+		Validate_AssessmentTestOutcomeMaze_Entry.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

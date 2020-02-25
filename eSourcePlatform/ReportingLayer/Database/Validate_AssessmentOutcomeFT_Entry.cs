@@ -24,37 +24,37 @@ namespace ReportingLayer.Database
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_AssessmentOutcomeCPAL_Entry recording.
+    ///The Validate_AssessmentOutcomeFT_Entry recording.
     /// </summary>
-    [TestModule("3bf39a30-7df4-40fe-89cc-685a277a8651", ModuleType.Recording, 1)]
-    public partial class Validate_AssessmentOutcomeCPAL_Entry : ITestModule
+    [TestModule("da9f2a2f-35b0-4d03-b071-1584799912f5", ModuleType.Recording, 1)]
+    public partial class Validate_AssessmentOutcomeFT_Entry : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::ReportingLayer.ReportingLayerRepository repository.
         /// </summary>
         public static global::ReportingLayer.ReportingLayerRepository repo = global::ReportingLayer.ReportingLayerRepository.Instance;
 
-        static Validate_AssessmentOutcomeCPAL_Entry instance = new Validate_AssessmentOutcomeCPAL_Entry();
+        static Validate_AssessmentOutcomeFT_Entry instance = new Validate_AssessmentOutcomeFT_Entry();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_AssessmentOutcomeCPAL_Entry()
+        public Validate_AssessmentOutcomeFT_Entry()
         {
             Authentication = "";
+            CSPPassword = "";
             CSPUsername = "";
             DBServer = "";
             Database = "";
             StudyName = "";
-            RandNum = "";
             TestIdentifier = "";
-            CSPPassword = "";
+            RandNum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_AssessmentOutcomeCPAL_Entry Instance
+        public static Validate_AssessmentOutcomeFT_Entry Instance
         {
             get { return instance; }
         }
@@ -66,11 +66,23 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable Authentication.
         /// </summary>
-        [TestVariable("02932247-3e44-41db-84af-8088919f1bee")]
+        [TestVariable("c765e2d5-4006-471b-990e-b11f3ac0ff96")]
         public string Authentication
         {
             get { return _Authentication; }
             set { _Authentication = value; }
+        }
+
+        string _CSPPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPPassword.
+        /// </summary>
+        [TestVariable("4beaaa67-2a35-4bda-b348-3f9e447a553e")]
+        public string CSPPassword
+        {
+            get { return _CSPPassword; }
+            set { _CSPPassword = value; }
         }
 
         string _CSPUsername;
@@ -78,7 +90,7 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable CSPUsername.
         /// </summary>
-        [TestVariable("dc4ae154-352c-47d6-a685-85aee9b9ba7a")]
+        [TestVariable("ed3b008b-809e-4eff-b570-f47c9a9fe3c3")]
         public string CSPUsername
         {
             get { return _CSPUsername; }
@@ -90,7 +102,7 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable DBServer.
         /// </summary>
-        [TestVariable("4fac7f3e-28d2-4827-bc27-e47860014804")]
+        [TestVariable("3adf47ce-7455-43e4-b461-7dce35e4c106")]
         public string DBServer
         {
             get { return _DBServer; }
@@ -102,7 +114,7 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable Database.
         /// </summary>
-        [TestVariable("7cd47c5e-7732-4575-a110-29c96169fa89")]
+        [TestVariable("220605ff-2f0b-48b6-8c0e-43ec3d920c46")]
         public string Database
         {
             get { return _Database; }
@@ -114,23 +126,11 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable StudyName.
         /// </summary>
-        [TestVariable("9a9cb74e-0577-45de-90a1-1bbe667c95b3")]
+        [TestVariable("ec4063a2-0441-471b-a8e2-5bd96917373f")]
         public string StudyName
         {
             get { return _StudyName; }
             set { _StudyName = value; }
-        }
-
-        string _RandNum;
-
-        /// <summary>
-        /// Gets or sets the value of variable RandNum.
-        /// </summary>
-        [TestVariable("164e61fd-44b3-4af4-8d06-19af11b4c57c")]
-        public string RandNum
-        {
-            get { return _RandNum; }
-            set { _RandNum = value; }
         }
 
         string _TestIdentifier;
@@ -138,23 +138,23 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable TestIdentifier.
         /// </summary>
-        [TestVariable("befa4d66-a072-4409-866b-94f010a66bfe")]
+        [TestVariable("9b717f4a-8f92-4127-9452-a1445abaaa1c")]
         public string TestIdentifier
         {
             get { return _TestIdentifier; }
             set { _TestIdentifier = value; }
         }
 
-        string _CSPPassword;
+        string _RandNum;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable RandNum.
         /// </summary>
-        [TestVariable("c2541150-b6a7-42ce-8ec6-a6afeae09973")]
-        public string CSPPassword
+        [TestVariable("748f3444-3fbe-46d7-8f94-d643162a13c1")]
+        public string RandNum
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _RandNum; }
+            set { _RandNum = value; }
         }
 
 #endregion
@@ -183,7 +183,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAssessmentTestOutcomesCPAL(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetAssessmentTestOutcomeFT(Database, DBServer, CSPUsername, CSPPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();

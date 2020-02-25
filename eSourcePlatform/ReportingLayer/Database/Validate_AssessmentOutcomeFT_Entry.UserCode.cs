@@ -25,7 +25,7 @@ using Ranorex.Core.Testing;
 
 namespace ReportingLayer.Database
 {
-    public partial class Validate_AssessmentOutcomeCard_Entry
+    public partial class Validate_AssessmentOutcomeFT_Entry
     {
     	public static DataTable dt = new DataTable();
         /// <summary>
@@ -36,90 +36,88 @@ namespace ReportingLayer.Database
         {
             // Your recording specific initialization code goes here.
         }
-
+        
 		/// <summary>
 		/// Queries the Reporting database for AssessmentTestOutcome records and stores the resulting records in a Datatable
-		/// </summary>        
-        public void GetAssessmentTestOutcomesCard(string database, string dbserver, string username, string password, string authentication)
+		/// </summary>  
+        public void GetAssessmentTestOutcomeFT(string database, string dbserver, string username, string password, string authentication)
         {
         	dt.Reset();
         	
         	//Setup SQL Query
-        	string query = @"SELECT * FROM Assessment.AssessmentTestOutcomeCard
+        	string query = @"SELECT * FROM Assessment.AssessmentTestOutcomeFT
         					WHERE TestID = @TestIdentifier";
         	
         	//Setup Connection String
         	string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
         	
-        	//Setup sql Client
+        	//Setup SQL Client
         	SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
         	da.SelectCommand.Parameters.AddWithValue("@TestIdentifier", TestIdentifier);
         	
         	//Get query results
-        	using (da)
+        	using (da) 
         	{
         		da.Fill(dt);
         	}
+            
         }
 
         /// <summary>
         /// Prints the contents of the DataTable to the Report and confirms the AssessmentTestOutcome has been added to the Reporting Database correctly
         /// Confirms all expected outcomes are contained in the Table
-        /// </summary>           
+        /// </summary>          
         public void ReportRecords()
         {
-        	//Arry used to store all expected Card outcomes in the Table
-        	string[] expectedOutcomes = new string[] {"ProtocolName", "IQNumber", "TestId", "AssessmentTestId", "TestCompletion", "TestIntegrity", "TestPerformance", "ReactionTime",
-        	                                       "RawReactionTime", "RTVariability", "RawRTVariability", "Accuracy", "RawAccuracy", "TotalTrials", "TotalResponses", "TotalCorrect", "TotalErrors",
-        	                                       "LegalErrors", "RuleBreakErrors", "TotalAnticipatory", "TotalPost", "TotalMaxout", "StandardScoreZ",
-												  "StandardScoreT", "ChangeScore", "TotalCorrectExclPant", "TestDuration", "PrimaryOutcome"};
+            //Arry used to store all expected Card outcomes in the Table        	
+        	string[] expectedOutcomes = new string[] {"ProtocolName", "IQNumber", "TestId", "AssessmentTestId", "TestCompletion", "ReactionTime", "RawReactionTime",
+        		"RTVariability", "RawRTVariability", "Accuracy", "RawAccuracy", "TotalResponses", "TotalCorrect", "TotalErrors", "LegalErrors", "TotalAnticipatory",
+        		"TotalPost", "TestPerformance", "TestDuration", "PrimaryOutcome"};
+        	
         	int matchedOutcomes = 0;
         	
         	//Loop over each row and print the Outcome and Value if the current column is contained in the expected outcomes array
         	//Comparing the columns to the expected outcomes array will avoid printing unnecessary data to the report
-        	foreach (DataRow row in dt.Rows)
-        	{
-        		for (int i = 0; i < dt.Columns.Count; i++)
-        		{
-        			//Here we are getting the current column name and making sure it appears in the expected outcome list
-        			if (expectedOutcomes.Any(dt.Columns[i].ColumnName.Contains)) 
-        			{
-        				Report.Log(ReportLevel.Info, dt.Columns[i].ColumnName + ": " + row[i].ToString());
+			foreach (DataRow row in dt.Rows)
+			{
+				//Here we are getting the current column name and making sure it appears in the expected outcome list
+				for (int i = 0; i < dt.Columns.Count; i++)
+				{
+					if (expectedOutcomes.Any(dt.Columns[i].ColumnName.Contains))
+					{
+						Report.Log(ReportLevel.Info, dt.Columns[i].ColumnName + ": " + row[i].ToString());
         				
         				//Counter to keep track of how many expected outcomes we have found in the table 
         				matchedOutcomes++;
-        			}
-        		}
-        	}
-        	
-        	//Check to make sure the count of expected outcomes match the number of outcomes found. First we need to divide the number of matched outcomes found by the number of rows
+					}
+				}
+			}
+			
+			//Check to make sure the count of expected outcomes match the number of outcomes found. First we need to divide the number of matched outcomes found by the number of rows
         	//in the DataTable to get the correct number of outcome matches.
         	if ((matchedOutcomes / dt.Rows.Count) == expectedOutcomes.Length)
         	{
-        		Report.Success("AssessmentTestOutcomeCard Table contains all expected outcomes");
+        		Report.Success("AssessmentTestOutcomeFT Table contains all expected outcomes");
         		
         		//Make sure the data returned by the query contains only the Study and TestID we expect
         		foreach (DataRow row in dt.Rows)
         		{
-        			if (row["TestID"].ToString() == TestIdentifier &&
-        			    row["ProtocolName"].ToString() == StudyName + RandNum)
+        			if (row["TestID"].ToString() == TestIdentifier && 
+        				row["ProtocolName"].ToString() == StudyName + RandNum)
         			{
-        				Report.Success("AssessmentTestOutcomeCard results have been added to the Reporting Database successfully");
+        				Report.Success("AssessmentTestOutcomeFT results have been added to the Reporting Database successfully");        				
         			}
         			else
         			{
-        				Report.Failure("AssessmentTestOutcomeCard have not been added/does not appear in the Reporting Database");
+        				Report.Failure("AssessmentTestOutcomeFT have not been added/does not appear in the Reporting Database");        				
         			}
         		}
         	}
         	else
         	{
-        		Report.Failure("Expected Number of Outcomes: " + expectedOutcomes.Length + " Actual Number of Outcomes: " + (matchedOutcomes / dt.Rows.Count).ToString());
+        		Report.Failure("Expected Number of Outcomes: " + expectedOutcomes.Length + " Actual Number of Outcomes: " + (matchedOutcomes / dt.Rows.Count).ToString());        		
         	}
-        	
         }
-        
-        
 
     }
 }

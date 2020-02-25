@@ -42,10 +42,10 @@ namespace ReportingLayer.Database
         public Validate_AssessmentOutcomeCard_Entry()
         {
             Authentication = "Active Directory Password";
-            CSPPassword = "913172DMW^";
-            CSPUsername = "dwood@cogstate.com";
-            DBServer = "cgst-qc.database.windows.net";
-            Database = "cgst-jill-rpt";
+            CSPPassword = "";
+            CSPUsername = "";
+            DBServer = "";
+            Database = "";
             TestIdentifier = "dd3bf436-1219-4c18-bbc0-0cb1d7236b34";
             StudyName = "ZAK PRD 75 BT";
             RandNum = "";

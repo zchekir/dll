@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="3bf39a30-7df4-40fe-89cc-685a277a8651"
+id="da9f2a2f-35b0-4d03-b071-1584799912f5"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Validate_AssessmentOutcomeCPAL_Entry
+		Validate_AssessmentOutcomeFT_Entry
 	</name>
 	<repeatcount>
 		1
@@ -23,49 +23,49 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Validate_AssessmentOutcomeCPAL_Entry"
+	classname="Validate_AssessmentOutcomeFT_Entry"
 	namespace="ReportingLayer.Database">
 	</codegen>
 	<variables>
 		<var
-		id="02932247-3e44-41db-84af-8088919f1bee"
+		id="c765e2d5-4006-471b-990e-b11f3ac0ff96"
 		name="Authentication">
 		</var>
 		<var
-		id="dc4ae154-352c-47d6-a685-85aee9b9ba7a"
+		id="4beaaa67-2a35-4bda-b348-3f9e447a553e"
+		name="CSPPassword">
+		</var>
+		<var
+		id="ed3b008b-809e-4eff-b570-f47c9a9fe3c3"
 		name="CSPUsername">
 		</var>
 		<var
-		id="4fac7f3e-28d2-4827-bc27-e47860014804"
+		id="3adf47ce-7455-43e4-b461-7dce35e4c106"
 		name="DBServer">
 		</var>
 		<var
-		id="7cd47c5e-7732-4575-a110-29c96169fa89"
+		id="220605ff-2f0b-48b6-8c0e-43ec3d920c46"
 		name="Database">
 		</var>
 		<var
-		id="9a9cb74e-0577-45de-90a1-1bbe667c95b3"
+		id="ec4063a2-0441-471b-a8e2-5bd96917373f"
 		name="StudyName">
 		</var>
 		<var
-		id="164e61fd-44b3-4af4-8d06-19af11b4c57c"
-		name="RandNum">
-		</var>
-		<var
-		id="befa4d66-a072-4409-866b-94f010a66bfe"
+		id="9b717f4a-8f92-4127-9452-a1445abaaa1c"
 		name="TestIdentifier">
 		</var>
 		<var
-		id="c2541150-b6a7-42ce-8ec6-a6afeae09973"
-		name="CSPPassword">
+		id="748f3444-3fbe-46d7-8f94-d643162a13c1"
+		name="RandNum">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Validate_AssessmentOutcomeCPAL_Entry"
+		classname="Validate_AssessmentOutcomeFT_Entry"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="GetAssessmentTestOutcomesCPAL"
+		methodname="GetAssessmentTestOutcomeFT"
 		namespace="ReportingLayer.Database"
 		optional="False"
 		varname="">
@@ -74,10 +74,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="3e5bcdd1-5038-41ab-8884-582c2bfd16dc">
+			id="28015692-eb33-499b-b348-9794e3cbd4c2">
 				<argument
 				argname="database"
-				id="6c6db099-99f4-4ed2-9d01-b5478e43f3b8"
+				id="46359a7e-9527-4809-9ebe-f6f28f38e811"
 				variable="Database">
 					<argvaluetype>
 						System.String
@@ -87,7 +87,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="dbserver"
-				id="a9d6bff6-b7a8-4488-97cb-9071ab722b55"
+				id="34a62471-1bc5-41f4-9ecc-638c2bc0ee4a"
 				variable="DBServer">
 					<argvaluetype>
 						System.String
@@ -97,7 +97,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="username"
-				id="98aee485-0116-40ec-8751-769746f8d82c"
+				id="7170b0bf-a457-4ddf-8d73-23fd2600a1af"
 				variable="CSPUsername">
 					<argvaluetype>
 						System.String
@@ -107,7 +107,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="password"
-				id="ccdd52b8-380e-4954-a485-a2c94ea9c5e0"
+				id="359e6647-ee5e-455b-b592-ee2ebcbaae58"
 				variable="CSPPassword">
 					<argvaluetype>
 						System.String
@@ -117,7 +117,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="authentication"
-				id="a5df8fac-bee4-4525-85fb-f6026a94462f"
+				id="a7618211-ff40-49bd-a66f-742b835594d1"
 				variable="Authentication">
 					<argvaluetype>
 						System.String
@@ -128,7 +128,7 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Validate_AssessmentOutcomeCPAL_Entry"
+		classname="Validate_AssessmentOutcomeFT_Entry"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ReportRecords"
@@ -140,7 +140,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="61277040-149c-4db5-a2cf-83ce95125697">
+			id="f83850f3-f2f3-495c-ae47-6d05c87c9a05">
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -160,7 +160,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Validate_AssessmentOutcomeCPAL_Entry.UserCode.cs
+		Validate_AssessmentOutcomeFT_Entry.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

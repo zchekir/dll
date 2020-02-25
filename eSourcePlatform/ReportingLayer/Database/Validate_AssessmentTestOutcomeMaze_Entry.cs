@@ -24,65 +24,53 @@ namespace ReportingLayer.Database
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_AssessmentOutcomeCPAL_Entry recording.
+    ///The Validate_AssessmentTestOutcomeMaze_Entry recording.
     /// </summary>
-    [TestModule("3bf39a30-7df4-40fe-89cc-685a277a8651", ModuleType.Recording, 1)]
-    public partial class Validate_AssessmentOutcomeCPAL_Entry : ITestModule
+    [TestModule("35780fd6-fc1a-4d3d-b321-0e9e471f1d66", ModuleType.Recording, 1)]
+    public partial class Validate_AssessmentTestOutcomeMaze_Entry : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::ReportingLayer.ReportingLayerRepository repository.
         /// </summary>
         public static global::ReportingLayer.ReportingLayerRepository repo = global::ReportingLayer.ReportingLayerRepository.Instance;
 
-        static Validate_AssessmentOutcomeCPAL_Entry instance = new Validate_AssessmentOutcomeCPAL_Entry();
+        static Validate_AssessmentTestOutcomeMaze_Entry instance = new Validate_AssessmentTestOutcomeMaze_Entry();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_AssessmentOutcomeCPAL_Entry()
+        public Validate_AssessmentTestOutcomeMaze_Entry()
         {
-            Authentication = "";
-            CSPUsername = "";
-            DBServer = "";
             Database = "";
+            DBServer = "";
+            CSPUsername = "";
+            CSPPassword = "";
+            Authentication = "";
             StudyName = "";
             RandNum = "";
             TestIdentifier = "";
-            CSPPassword = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_AssessmentOutcomeCPAL_Entry Instance
+        public static Validate_AssessmentTestOutcomeMaze_Entry Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Authentication;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable Authentication.
+        /// Gets or sets the value of variable Database.
         /// </summary>
-        [TestVariable("02932247-3e44-41db-84af-8088919f1bee")]
-        public string Authentication
+        [TestVariable("5f886da9-afeb-46dc-98b2-57095e0c53f7")]
+        public string Database
         {
-            get { return _Authentication; }
-            set { _Authentication = value; }
-        }
-
-        string _CSPUsername;
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("dc4ae154-352c-47d6-a685-85aee9b9ba7a")]
-        public string CSPUsername
-        {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
         string _DBServer;
@@ -90,23 +78,47 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable DBServer.
         /// </summary>
-        [TestVariable("4fac7f3e-28d2-4827-bc27-e47860014804")]
+        [TestVariable("7801bf74-aa6e-4442-b239-cda135e32918")]
         public string DBServer
         {
             get { return _DBServer; }
             set { _DBServer = value; }
         }
 
-        string _Database;
+        string _CSPUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable Database.
+        /// Gets or sets the value of variable CSPUsername.
         /// </summary>
-        [TestVariable("7cd47c5e-7732-4575-a110-29c96169fa89")]
-        public string Database
+        [TestVariable("0bb5bb57-00f3-4291-bcb0-a0b6bd2f573b")]
+        public string CSPUsername
         {
-            get { return _Database; }
-            set { _Database = value; }
+            get { return _CSPUsername; }
+            set { _CSPUsername = value; }
+        }
+
+        string _CSPPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPPassword.
+        /// </summary>
+        [TestVariable("dda126a4-6c33-464e-a218-a18d10083152")]
+        public string CSPPassword
+        {
+            get { return _CSPPassword; }
+            set { _CSPPassword = value; }
+        }
+
+        string _Authentication;
+
+        /// <summary>
+        /// Gets or sets the value of variable Authentication.
+        /// </summary>
+        [TestVariable("cce9af2f-dfef-4d83-8c47-c027a81897c7")]
+        public string Authentication
+        {
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
         string _StudyName;
@@ -114,7 +126,7 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable StudyName.
         /// </summary>
-        [TestVariable("9a9cb74e-0577-45de-90a1-1bbe667c95b3")]
+        [TestVariable("c0ffe793-4ae5-4647-b6a3-425477fc7181")]
         public string StudyName
         {
             get { return _StudyName; }
@@ -126,7 +138,7 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable RandNum.
         /// </summary>
-        [TestVariable("164e61fd-44b3-4af4-8d06-19af11b4c57c")]
+        [TestVariable("6e6c722c-ff51-42bd-9b60-ed2c16083dd6")]
         public string RandNum
         {
             get { return _RandNum; }
@@ -138,23 +150,11 @@ namespace ReportingLayer.Database
         /// <summary>
         /// Gets or sets the value of variable TestIdentifier.
         /// </summary>
-        [TestVariable("befa4d66-a072-4409-866b-94f010a66bfe")]
+        [TestVariable("e9435d2b-5eb4-41c7-b80f-b568f06a1e44")]
         public string TestIdentifier
         {
             get { return _TestIdentifier; }
             set { _TestIdentifier = value; }
-        }
-
-        string _CSPPassword;
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
-        /// </summary>
-        [TestVariable("c2541150-b6a7-42ce-8ec6-a6afeae09973")]
-        public string CSPPassword
-        {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
         }
 
 #endregion
@@ -183,7 +183,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAssessmentTestOutcomesCPAL(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetAssessmentTestOutcomeMaze(Database, DBServer, CSPUsername, CSPPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();
