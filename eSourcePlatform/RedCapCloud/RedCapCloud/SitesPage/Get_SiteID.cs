@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.AddSubjectPage
+namespace RedCapCloud.SitesPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Select_Site recording.
+    ///The Get_SiteID recording.
     /// </summary>
-    [TestModule("e534bd83-1528-4c3a-882b-fb08bcf40e6e", ModuleType.Recording, 1)]
-    public partial class Select_Site : ITestModule
+    [TestModule("10ec8898-271e-4894-a445-6f22a4ac47b5", ModuleType.Recording, 1)]
+    public partial class Get_SiteID : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Select_Site instance = new Select_Site();
+        static Get_SiteID instance = new Get_SiteID();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Select_Site()
+        public Get_SiteID()
         {
+            ExistingSiteID = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Select_Site Instance
+        public static Get_SiteID Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _ExistingSiteID;
+
+        /// <summary>
+        /// Gets or sets the value of variable ExistingSiteID.
+        /// </summary>
+        [TestVariable("55e1a88d-4cdb-4aa5-abd7-a076f7f190ea")]
+        public string ExistingSiteID
+        {
+            get { return _ExistingSiteID; }
+            set { _ExistingSiteID = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable RCCDOM.
@@ -89,15 +102,11 @@ namespace RedCapCloud.AddSubjectPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SiteDropdown' at Center.", repo.REDCapCloud.SubjectsPage.SiteDropdownInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.SubjectsPage.SiteDropdown.Click(100);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'REDCapCloud.SitesTable.SiteID' and assigning its value to variable 'ExistingSiteID'.", repo.REDCapCloud.SitesTable.SiteIDInfo, new RecordItemIndex(0));
+            ExistingSiteID = repo.REDCapCloud.SitesTable.SiteID.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CogstateLabsSite' at Center.", repo.REDCapCloud.SubjectsPage.CogstateLabsSiteInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SubjectsPage.CogstateLabsSite.Click(100);
+            Log_SiteID(ExistingSiteID);
             Delay.Milliseconds(0);
             
         }

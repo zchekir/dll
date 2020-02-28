@@ -93,8 +93,8 @@ namespace RedCapCloud.AddSitePage
             repo.REDCapCloud.AddSitePage.SiteNameButton.Click(1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.CogstateSite' at Center.", repo.REDCapCloud.AddSitePage.CogstateSiteInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.AddSitePage.CogstateSite.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.CogstateLabsSite' at Center.", repo.REDCapCloud.AddSitePage.CogstateLabsSiteInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.AddSitePage.CogstateLabsSite.Click(1);
             Delay.Milliseconds(0);
             
         }
