@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.AddSubjectPage
+namespace RedCapCloud.AddSitePage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Select_Site recording.
+    ///The Select_CogstateLabs_Site recording.
     /// </summary>
-    [TestModule("e534bd83-1528-4c3a-882b-fb08bcf40e6e", ModuleType.Recording, 1)]
-    public partial class Select_Site : ITestModule
+    [TestModule("c1f7dad4-0d75-42ac-9a91-47d0f4a1ee5b", ModuleType.Recording, 1)]
+    public partial class Select_CogstateLabs_Site : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Select_Site instance = new Select_Site();
+        static Select_CogstateLabs_Site instance = new Select_CogstateLabs_Site();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Select_Site()
+        public Select_CogstateLabs_Site()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Select_Site Instance
+        public static Select_CogstateLabs_Site Instance
         {
             get { return instance; }
         }
@@ -89,15 +89,12 @@ namespace RedCapCloud.AddSubjectPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SiteDropdown' at Center.", repo.REDCapCloud.SubjectsPage.SiteDropdownInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.SubjectsPage.SiteDropdown.Click(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.SiteNameButton' at Center.", repo.REDCapCloud.AddSitePage.SiteNameButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.AddSitePage.SiteNameButton.Click(1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CogstateSite' at Center.", repo.REDCapCloud.SubjectsPage.CogstateSiteInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SubjectsPage.CogstateSite.Click(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.AddSitePage.CogstateLabsSite' at Center.", repo.REDCapCloud.AddSitePage.CogstateLabsSiteInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.AddSitePage.CogstateLabsSite.Click(1);
             Delay.Milliseconds(0);
             
         }

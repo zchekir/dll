@@ -151,6 +151,18 @@
       <id>c2063d6d-6de4-4cde-8119-7f18963c11d5</id>
       <BoundTo>88869378-1125-464f-b6ad-5b774e064e0e</BoundTo>
     </Compile>
+    <Compile Include="AcademicExtract\Validate_ExcludeAssessment_Flag.cs">
+      <DependentUpon>Validate_ExcludeAssessment_Flag.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5110815-47e7-4f2b-b0e8-cc9b4a780d22</id>
+      <BoundTo>98107796-a542-4f96-9ff3-40decc7922b9</BoundTo>
+    </Compile>
+    <Compile Include="AcademicExtract\Validate_ExcludeAssessment_Flag.UserCode.cs">
+      <DependentUpon>Validate_ExcludeAssessment_Flag.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e1490a16-7d56-487e-9fd4-c11bc738eb80</id>
+      <BoundTo>98107796-a542-4f96-9ff3-40decc7922b9</BoundTo>
+    </Compile>
     <Compile Include="AcademicExtract\Set_Date_Slicer.cs">
       <DependentUpon>Set_Date_Slicer.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -186,6 +198,18 @@
       <DependentUpon>Validate_Academic_Slicers.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6591227e-78bd-4cb0-b6f3-531a6f628674</id>
+    </Compile>
+    <Compile Include="AcademicExtract\Validate_RestoreAssessment_Flag.cs">
+      <BoundTo>23abb7f7-eeba-4dc9-832b-146db04624bf</BoundTo>
+      <DependentUpon>Validate_RestoreAssessment_Flag.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53f2b004-5053-4d41-bd77-6b5ca20bdff0</id>
+    </Compile>
+    <Compile Include="AcademicExtract\Validate_RestoreAssessment_Flag.UserCode.cs">
+      <BoundTo>23abb7f7-eeba-4dc9-832b-146db04624bf</BoundTo>
+      <DependentUpon>Validate_RestoreAssessment_Flag.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>28a7e58a-6c01-4d51-bf03-fbee5bccbf5f</id>
     </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>0e137d66-06a7-4e68-8d90-fb53b8c1a1ab</id>
@@ -463,6 +487,11 @@
       <id>88869378-1125-464f-b6ad-5b774e064e0e</id>
       <recordtableid>c54f947a-0235-4689-b126-7e7629c48e9b</recordtableid>
     </None>
+    <None Include="AcademicExtract\Validate_ExcludeAssessment_Flag.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>98107796-a542-4f96-9ff3-40decc7922b9</id>
+      <recordtableid>933cb94d-9a39-48c7-b06b-15f54d10a8b2</recordtableid>
+    </None>
     <None Include="AcademicExtract\Set_Date_Slicer.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>1ae86f88-8edc-4ff2-b1ef-37f35a35dcc2</id>
@@ -477,6 +506,11 @@
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>de51cf08-12b5-40d2-bbe6-ea1b0b962e3f</id>
       <recordtableid>938800c8-c8c7-48bf-a607-84b2f2991a07</recordtableid>
+    </None>
+    <None Include="AcademicExtract\Validate_RestoreAssessment_Flag.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>23abb7f7-eeba-4dc9-832b-146db04624bf</id>
+      <recordtableid>ec3adefa-7193-4ed3-8f4d-773da27052a5</recordtableid>
     </None>
     <None Include="app.config">
       <id>329cf68b-b981-48cc-b464-e0c9bddac353</id>
@@ -626,6 +660,10 @@
     <ProjectReference Include="..\CSP\CSP.csproj">
       <Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
       <Name>CSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DCT\DCT.csproj">
+      <Project>{53F985E8-19FE-46C8-AD1C-531EBD62B9AA}</Project>
+      <Name>DCT</Name>
     </ProjectReference>
     <ProjectReference Include="..\RedCapCloud\RedCapCloud\RedCapCloud.csproj">
       <Project>{739128AA-E017-4B60-8DDA-0EC961E1C746}</Project>

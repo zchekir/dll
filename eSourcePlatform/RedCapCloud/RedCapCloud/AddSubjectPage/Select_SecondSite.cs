@@ -24,29 +24,29 @@ namespace RedCapCloud.AddSubjectPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Select_Site recording.
+    ///The Select_SecondSite recording.
     /// </summary>
-    [TestModule("e534bd83-1528-4c3a-882b-fb08bcf40e6e", ModuleType.Recording, 1)]
-    public partial class Select_Site : ITestModule
+    [TestModule("c24fd523-ed93-40f8-8682-e728ddb4b7cf", ModuleType.Recording, 1)]
+    public partial class Select_SecondSite : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Select_Site instance = new Select_Site();
+        static Select_SecondSite instance = new Select_SecondSite();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Select_Site()
+        public Select_SecondSite()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Select_Site Instance
+        public static Select_SecondSite Instance
         {
             get { return instance; }
         }
@@ -96,8 +96,8 @@ namespace RedCapCloud.AddSubjectPage
             repo.REDCapCloud.SubjectsPage.SiteDropdown.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CogstateSite' at Center.", repo.REDCapCloud.SubjectsPage.CogstateSiteInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SubjectsPage.CogstateSite.Click(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CogstateLabsSite' at Center.", repo.REDCapCloud.SubjectsPage.CogstateLabsSiteInfo, new RecordItemIndex(2));
+            repo.REDCapCloud.SubjectsPage.CogstateLabsSite.Click(100);
             Delay.Milliseconds(0);
             
         }

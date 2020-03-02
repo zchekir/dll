@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="b2ab461e-f722-426f-be3d-aa1c8bb43c51"
+id="c1f7dad4-0d75-42ac-9a91-47d0f4a1ee5b"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Select_SiteName
+		Select_CogstateLabs_Site
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Select_SiteName"
+	classname="Select_CogstateLabs_Site"
 	namespace="RedCapCloud.AddSitePage">
 	</codegen>
 	<variables>
@@ -148,10 +148,10 @@ jRsHq3/fRoooANg9W/76NOAAGBRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 			<bindings>
 			</bindings>
 			<info
-			id="168ba541-4373-4899-83ce-94707783cd10"
+			id="cc2fcb35-a44a-4c99-b36d-ef148457adc6"
 			sourcename="Recorder">
 				<path>
-					/dom[@domain=$RCCDOM]//body//table/tbody/tr/td/div[@innertext='Cogstate']
+					/dom[@domain=$RCCDOM]//body//table/tbody/tr/td/div[@innertext='Cogstate Labs']
 				</path>
 			</info>
 		</mouseitem>
@@ -172,7 +172,7 @@ jRsHq3/fRoooANg9W/76NOAAGBRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Select_SiteName.UserCode.cs
+		Select_CogstateLabs_Site.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

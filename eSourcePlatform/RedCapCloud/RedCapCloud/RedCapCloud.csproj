@@ -305,6 +305,18 @@
       <id>3638096c-bdd6-4058-a51d-a1246271f283</id>
       <BoundTo>cb7bb3c7-b9bb-4510-95e0-3ef3cc5325de</BoundTo>
     </Compile>
+    <Compile Include="AddSitePage\Select_CogstateLabs_Site.cs">
+      <BoundTo>93c3fc1c-3d33-4b84-8ce2-b79889803b7a</BoundTo>
+      <DependentUpon>Select_CogstateLabs_Site.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fadb61e8-304a-4b72-a477-5c00751fb037</id>
+    </Compile>
+    <Compile Include="AddSitePage\Select_CogstateLabs_Site.UserCode.cs">
+      <BoundTo>93c3fc1c-3d33-4b84-8ce2-b79889803b7a</BoundTo>
+      <DependentUpon>Select_CogstateLabs_Site.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a69338ce-6b0b-49a6-8c4c-a1ba4f88ed48</id>
+    </Compile>
     <Compile Include="AddSitePage\Select_SiteName.cs">
       <DependentUpon>Select_SiteName.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -472,6 +484,18 @@
       <UserCode>true</UserCode>
       <id>dd5a273b-5607-44a1-8e87-fdba1fc41a4a</id>
       <BoundTo>141bdbe8-4698-47c6-a3d0-9e30d2e6a985</BoundTo>
+    </Compile>
+    <Compile Include="AddSubjectPage\Select_SecondSite.cs">
+      <BoundTo>d436b0cb-b220-4df8-b8d6-8606fe05445a</BoundTo>
+      <DependentUpon>Select_SecondSite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fcb03b9a-bc22-47d1-bfcf-ea265232c269</id>
+    </Compile>
+    <Compile Include="AddSubjectPage\Select_SecondSite.UserCode.cs">
+      <BoundTo>d436b0cb-b220-4df8-b8d6-8606fe05445a</BoundTo>
+      <DependentUpon>Select_SecondSite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>114c6118-a20d-491c-9142-99473729dfc3</id>
     </Compile>
     <Compile Include="AddSubjectPage\Select_Site.cs">
       <DependentUpon>Select_Site.rxrec</DependentUpon>
@@ -1436,6 +1460,11 @@
       <id>cb7bb3c7-b9bb-4510-95e0-3ef3cc5325de</id>
       <recordtableid>ce122304-990d-4f47-b11b-bc20b49860b7</recordtableid>
     </None>
+    <None Include="AddSitePage\Select_CogstateLabs_Site.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>93c3fc1c-3d33-4b84-8ce2-b79889803b7a</id>
+      <recordtableid>c1f7dad4-0d75-42ac-9a91-47d0f4a1ee5b</recordtableid>
+    </None>
     <None Include="AddSitePage\Select_SiteName.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>db1e2293-a22e-4768-b975-14fe2abedbc8</id>
@@ -1505,6 +1534,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>141bdbe8-4698-47c6-a3d0-9e30d2e6a985</id>
       <recordtableid>035a9383-4953-4e5a-aa79-e7d58792e684</recordtableid>
+    </None>
+    <None Include="AddSubjectPage\Select_SecondSite.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>d436b0cb-b220-4df8-b8d6-8606fe05445a</id>
+      <recordtableid>c24fd523-ed93-40f8-8682-e728ddb4b7cf</recordtableid>
     </None>
     <None Include="AddSubjectPage\Select_Site.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
