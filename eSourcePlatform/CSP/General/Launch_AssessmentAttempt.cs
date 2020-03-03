@@ -42,7 +42,6 @@ namespace CSP.General
         public Launch_AssessmentAttempt()
         {
             Browser = "";
-            AssessmentURL = "";
         }
 
         /// <summary>
@@ -65,18 +64,6 @@ namespace CSP.General
         {
             get { return _Browser; }
             set { _Browser = value; }
-        }
-
-        string _AssessmentURL;
-
-        /// <summary>
-        /// Gets or sets the value of variable AssessmentURL.
-        /// </summary>
-        [TestVariable("53b6c70f-94c0-4b0d-9df9-9dcb757f255d")]
-        public string AssessmentURL
-        {
-            get { return _AssessmentURL; }
-            set { _AssessmentURL = value; }
         }
 
         /// <summary>
