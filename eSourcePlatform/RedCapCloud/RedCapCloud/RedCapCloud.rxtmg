@@ -164,6 +164,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="20332def-4c8b-4d4d-bf20-a5cbc1f36f64"
+			name="Select_SecondSite"
+			ref="c24fd523-ed93-40f8-8682-e728ddb4b7cf"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2202fc4e-c4c9-4294-a747-c14845134647"
 			name="Select_Site"
 			ref="e534bd83-1528-4c3a-882b-fb08bcf40e6e"
@@ -419,11 +425,6 @@ rxversion="8.3">
 						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
 						</modulevariable>
 						<modulevariable
-						moduleref="f34d0233-2ee5-47c9-950e-35f7be8d103c"
-						name="RCCDOM"
-						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
-						</modulevariable>
-						<modulevariable
 						moduleref="d078a3fd-1bfc-4b3f-91ea-de91d3642f86"
 						name="RCCDOM"
 						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
@@ -445,6 +446,11 @@ rxversion="8.3">
 						</modulevariable>
 						<modulevariable
 						moduleref="b5c38199-42e7-4762-a0a3-9d9a281188a3"
+						name="RCCDOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="20332def-4c8b-4d4d-bf20-a5cbc1f36f64"
 						name="RCCDOM"
 						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
 						</modulevariable>
@@ -657,11 +663,6 @@ rxversion="8.3">
 						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
 						</modulevariable>
 						<modulevariable
-						moduleref="f5101e72-1e37-493c-a484-8f8fe4df105d"
-						name="RCCDOM"
-						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
-						</modulevariable>
-						<modulevariable
 						moduleref="120b8aa4-2183-4639-a980-667d41c5c72f"
 						name="RCCDOM"
 						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
@@ -678,6 +679,11 @@ rxversion="8.3">
 						</modulevariable>
 						<modulevariable
 						moduleref="c5dbbd82-d86d-4acc-a201-d09b5c030962"
+						name="RCCDOM"
+						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
+						</modulevariable>
+						<modulevariable
+						moduleref="e2a3eb0c-4490-448b-aa4e-69bbdfb66795"
 						name="RCCDOM"
 						variableref="6f24cf1a-0e47-4c45-9ce6-3e042db234d2">
 						</modulevariable>
@@ -747,6 +753,12 @@ rxversion="8.3">
 			ref="e59097d8-8b0c-45be-9e00-1df5daf09a39"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="e2a3eb0c-4490-448b-aa4e-69bbdfb66795"
+			name="Select_CogstateLabs_Site"
+			ref="c1f7dad4-0d75-42ac-9a91-47d0f4a1ee5b"
+			type="Recording">
+			</testmodule>
 			<modulegroups
 			id="ea38d874-2e46-41e8-8d0a-6b13860cfef5"
 			name="RedCapCloud">
@@ -813,21 +825,9 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="f34d0233-2ee5-47c9-950e-35f7be8d103c"
-			name="Select_Site"
-			ref="e534bd83-1528-4c3a-882b-fb08bcf40e6e"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="f4dcea92-d0af-411c-b73e-dfc7c9c16cd0"
 			name="Get_SiteID"
 			ref="10ec8898-271e-4894-a445-6f22a4ac47b5"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="f5101e72-1e37-493c-a484-8f8fe4df105d"
-			name="Select_SiteName"
-			ref="b2ab461e-f722-426f-be3d-aa1c8bb43c51"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -961,8 +961,8 @@ rxversion="8.3">
 					name="Click_AddSite_Button">
 					</testmodule>
 					<testmodule
-					id="f5101e72-1e37-493c-a484-8f8fe4df105d"
-					name="Select_SiteName">
+					id="e2a3eb0c-4490-448b-aa4e-69bbdfb66795"
+					name="Select_CogstateLabs_Site">
 					</testmodule>
 					<testmodule
 					id="120b8aa4-2183-4639-a980-667d41c5c72f"
@@ -1049,8 +1049,8 @@ rxversion="8.3">
 					name="Click_Add_Button">
 					</testmodule>
 					<testmodule
-					id="f34d0233-2ee5-47c9-950e-35f7be8d103c"
-					name="Select_Site">
+					id="20332def-4c8b-4d4d-bf20-a5cbc1f36f64"
+					name="Select_SecondSite">
 					</testmodule>
 					<testmodule
 					id="d078a3fd-1bfc-4b3f-91ea-de91d3642f86"

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e534bd83-1528-4c3a-882b-fb08bcf40e6e"
+id="c24fd523-ed93-40f8-8682-e728ddb4b7cf"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Select_Site
+		Select_SecondSite
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Select_Site"
+	classname="Select_SecondSite"
 	namespace="RedCapCloud.AddSubjectPage">
 	</codegen>
 	<variables>
@@ -206,10 +206,10 @@ G3Y//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="1e7de74b-6238-4063-9b4b-8d00008c7560"
+			id="b714a78f-9037-4dc5-b6e6-ff1e2d5d803d"
 			sourcename="Recorder">
 				<path>
-					/dom[@domain=$RCCDOM]//li//a[@innertext&lt;'Cogstate']
+					/dom[@domain=$RCCDOM]//li//a[@innertext&lt;'Labs']
 				</path>
 			</info>
 		</mouseitem>
@@ -230,7 +230,7 @@ G3Y//9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Select_Site.UserCode.cs
+		Select_SecondSite.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

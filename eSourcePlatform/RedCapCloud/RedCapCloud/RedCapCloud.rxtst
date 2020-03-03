@@ -55,6 +55,20 @@ rxversion="8.3">
 			id="08ad6764-1b66-44d5-9b98-1c205e7fb753"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="09109a3c-b7de-4f07-a929-de33cab0549d"
+			name="Click_CompositeOutcomes"
+			ref="a0facf25-a588-4552-a677-9b16e996a9d9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="092ade10-4592-483d-84f7-b21358ea6e1b"
 			name="Check_Outcomes">
@@ -222,20 +236,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testmodule
-			id="117ea5b6-d709-4551-9b19-0a8703155c64"
-			name="Click_Upload"
-			ref="d65da13c-82fa-4a0f-b891-fd2e3c602605"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="12eea8b0-7f3d-4405-9425-37889bcbfc4c"
 			name="Click_Tools_Menu"
@@ -570,20 +570,6 @@ rxversion="8.3">
 					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
 					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
 					variablename="CSPURL">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="32e40320-1413-41f1-914b-8a6720e18d62"
-			name="Click_Tools_Menu"
-			ref="13871cb9-c76a-400f-bd8b-8d53ae8c2114"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -993,26 +979,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="65a8506c-12da-4c21-9e20-41507ce57991"
-			name="Select_CSV"
-			ref="26f5ca72-1f84-4986-a06c-f51a8360a311"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSVConfigExtra"
-					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
-					variableid="1243b561-7617-4cbc-8f6d-123972442ec9"
-					variablename="FileName">
-					</var>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="6649ee31-686e-46e1-ac27-2ed39d449f9c"
 			name="Select_Subject"
 			ref="a513151c-40bc-4c29-b0f3-05d486e113f5"
@@ -1401,20 +1367,6 @@ rxversion="8.3">
 			minrange="0"
 			name="Create_Regression_Study">
 			</smartfoldernode>
-			<testmodule
-			id="8f673292-d96b-4b87-92be-bd96237facad"
-			name="Click_DataConfirmation"
-			ref="62ff2cdc-5712-4e1c-bbba-4c51f5e9daf2"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="8f7bf336-a750-49d5-847a-ef4e25c5b5b1"
 			name="Click_EventDefinitionsTab"
@@ -1901,20 +1853,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="b8dbe17a-2242-4e0e-8f46-eaf65044ad01"
-			name="Click_ImportDataDictionary"
-			ref="3b2f8a6f-b9a4-46d0-a6b9-2da4be88796d"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="b923a5ba-baf6-42d8-bd29-358431d046b1"
 			name="Validate_BatteryEntry"
 			ref="41eae272-e70a-4c8c-976b-316352274ed1"
@@ -1955,20 +1893,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="c24bf286-fd72-47c5-bfc0-6edb77bdb7d8"
-			name="Click_AddInstrument_Button"
-			ref="38dd1e62-9934-472e-8c94-887145d1059b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="c4fbca39-49ba-4a31-92e5-9e440604e189"
 			name="Extract_TestIdentifier"
 			ref="a6856ecd-4f20-457b-ae22-9f15011544ca"
@@ -2004,20 +1928,6 @@ rxversion="8.3">
 			id="c5d1ff40-417c-41ac-99d9-8e6388d45453"
 			name="Validate_EventDef_Type"
 			ref="38ac56a4-549f-425e-8362-e03119999cf5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="ca687f88-69f0-4686-a23f-8a2b47d03bb4"
-			name="Click_Delete_Instruments_Checkbox"
-			ref="a6aabcb3-1a03-4c1f-8c45-a574846d4f4b"
 			type="Recording">
 				<databinding>
 					<var
@@ -2097,20 +2007,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testmodule
-			id="d1373409-954b-4293-add2-c943234ebbc7"
-			name="Add_BatteryConfirmation_CRF"
-			ref="300c5970-8a7b-4548-b491-1b87ffc7cd51"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="d21bd31e-fdd9-41f7-ae26-65524071a347"
 			name="Select_CSV"
@@ -3141,26 +3037,6 @@ rxversion="8.3">
 								id="67c99728-7ab7-434b-9987-6dc32ef98b83"
 								name="Click_Upload">
 								</testmodule>
-								<testmodule
-								id="32e40320-1413-41f1-914b-8a6720e18d62"
-								name="Click_Tools_Menu">
-								</testmodule>
-								<testmodule
-								id="b8dbe17a-2242-4e0e-8f46-eaf65044ad01"
-								name="Click_ImportDataDictionary">
-								</testmodule>
-								<testmodule
-								id="ca687f88-69f0-4686-a23f-8a2b47d03bb4"
-								name="Click_Delete_Instruments_Checkbox">
-								</testmodule>
-								<testmodule
-								id="65a8506c-12da-4c21-9e20-41507ce57991"
-								name="Select_CSV">
-								</testmodule>
-								<testmodule
-								id="117ea5b6-d709-4551-9b19-0a8703155c64"
-								name="Click_Upload">
-								</testmodule>
 							</testcase>
 							<testcase
 							id="96b3f6e5-1538-4e81-bb4a-2c90bd23585b"
@@ -3192,14 +3068,6 @@ rxversion="8.3">
 								<testmodule
 								id="983a6573-1b59-4a92-ab6b-bd34b4109761"
 								name="Add_BatteryComments_CRF">
-								</testmodule>
-								<testmodule
-								id="c24bf286-fd72-47c5-bfc0-6edb77bdb7d8"
-								name="Click_AddInstrument_Button">
-								</testmodule>
-								<testmodule
-								id="d1373409-954b-4293-add2-c943234ebbc7"
-								name="Add_BatteryConfirmation_CRF">
 								</testmodule>
 								<testmodule
 								id="d6698ecb-3258-4aeb-9134-e107a2824937"
@@ -3354,8 +3222,8 @@ rxversion="8.3">
 								name="Click_First_Visit">
 								</testmodule>
 								<testmodule
-								id="8f673292-d96b-4b87-92be-bd96237facad"
-								name="Click_DataConfirmation">
+								id="09109a3c-b7de-4f07-a929-de33cab0549d"
+								name="Click_CompositeOutcomes">
 								</testmodule>
 								<testmodule
 								id="c4fbca39-49ba-4a31-92e5-9e440604e189"

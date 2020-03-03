@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.InstrumentsPage
+namespace RedCapCloud.AddSubjectPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Upload recording.
+    ///The Select_SecondSite recording.
     /// </summary>
-    [TestModule("d65da13c-82fa-4a0f-b891-fd2e3c602605", ModuleType.Recording, 1)]
-    public partial class Click_Upload : ITestModule
+    [TestModule("c24fd523-ed93-40f8-8682-e728ddb4b7cf", ModuleType.Recording, 1)]
+    public partial class Select_SecondSite : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Click_Upload instance = new Click_Upload();
+        static Select_SecondSite instance = new Select_SecondSite();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Upload()
+        public Select_SecondSite()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Upload Instance
+        public static Select_SecondSite Instance
         {
             get { return instance; }
         }
@@ -89,25 +89,16 @@ namespace RedCapCloud.InstrumentsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.InstrumentsPage.UploadButton' at Center.", repo.REDCapCloud.InstrumentsPage.UploadButtonInfo, new RecordItemIndex(0));
-            repo.REDCapCloud.InstrumentsPage.UploadButton.Click(100);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SiteDropdown' at Center.", repo.REDCapCloud.SubjectsPage.SiteDropdownInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.SubjectsPage.SiteDropdown.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(1));
-            Delay.Duration(10000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+R' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.R | System.Windows.Forms.Keys.Control, 19, 10, 1, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.CogstateLabsSite' at Center.", repo.REDCapCloud.SubjectsPage.CogstateLabsSiteInfo, new RecordItemIndex(2));
+            repo.REDCapCloud.SubjectsPage.CogstateLabsSite.Click(100);
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
-            Delay.Duration(10000, false);
-            
-            // Wait for Tools menu to reapper before continuing so we know that the page has fully loaded.
-            Report.Log(ReportLevel.Info, "Section", "Wait for Tools menu to reapper before continuing so we know that the page has fully loaded.", new RecordItemIndex(4));
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'REDCapCloud.InstrumentsPage.ToolsMenu'", repo.REDCapCloud.InstrumentsPage.ToolsMenuInfo, new ActionTimeout(30000), new RecordItemIndex(5));
-            repo.REDCapCloud.InstrumentsPage.ToolsMenuInfo.WaitForExists(30000);
             
         }
 
