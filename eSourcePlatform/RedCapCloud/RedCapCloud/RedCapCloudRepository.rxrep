@@ -1011,6 +1011,15 @@ rxversion="8.3">
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//table/tbody/tr/td/div[@innertext~'^[0-9]+$']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="d2e254da-6228-48f8-af89-0bbf2d22454c"
+				name="CGSQC"
+				refimgid="73f08268-5f11-439a-950c-770f15d1e3d3"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='CGSQC']
+				</item>
 				<basepath>
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']
 				</basepath>

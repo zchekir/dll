@@ -3842,6 +3842,7 @@ namespace RedCapCloud
             RepoItemInfo _sitenameInfo;
             RepoItemInfo _testidentifierInfo;
             RepoItemInfo _siteidInfo;
+            RepoItemInfo _cgsqcInfo;
 
             /// <summary>
             /// Creates a new SitesTable  folder.
@@ -3852,6 +3853,7 @@ namespace RedCapCloud
                 _sitenameInfo = new RepoItemInfo(this, "SiteName", ".//tbody/tr//div[@innertext='Cogstate']", 30000, null, "30eed5e1-47f2-4a38-a46c-32ebf9644ffe");
                 _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='TestID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']", 30000, null, "326473da-bd04-4a0e-a1a3-3e6e18e9f398");
                 _siteidInfo = new RepoItemInfo(this, "SiteID", ".//table/tbody/tr/td/div[@innertext~'^[0-9]+$']", 30000, null, "7b315c6d-f486-4b86-878a-cfe1212c5cc2");
+                _cgsqcInfo = new RepoItemInfo(this, "CGSQC", ".//div[@innertext='CGSQC']", 30000, null, "d2e254da-6228-48f8-af89-0bbf2d22454c");
             }
 
             /// <summary>
@@ -3947,6 +3949,30 @@ namespace RedCapCloud
                 get
                 {
                     return _siteidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CGSQC item.
+            /// </summary>
+            [RepositoryItem("d2e254da-6228-48f8-af89-0bbf2d22454c")]
+            public virtual Ranorex.DivTag CGSQC
+            {
+                get
+                {
+                    return _cgsqcInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CGSQC item info.
+            /// </summary>
+            [RepositoryItemInfo("d2e254da-6228-48f8-af89-0bbf2d22454c")]
+            public virtual RepoItemInfo CGSQCInfo
+            {
+                get
+                {
+                    return _cgsqcInfo;
                 }
             }
         }

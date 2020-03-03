@@ -1461,8 +1461,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Jill_SmokeTest">
 			</smartfoldernode>
 			<testmodule
@@ -2552,6 +2552,12 @@ rxversion="8.3">
 					variableid="6f16e2fe-59f5-4db7-ad65-fc9f98e4843e"
 					variablename="RCCURL">
 					</var>
+					<var
+					dataname="RCC-QCTestingEnvironment"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="de3435c5-a94e-4636-9003-c5eafbafbe66"
+					variablename="qc">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -3429,6 +3435,10 @@ rxversion="8.3">
 					name="StandardScoreT
 "
 					value="70.089355414427">
+					</param>
+					<param
+					name="RCC-QCTestingEnvironment"
+					value="CGSQC">
 					</param>
 				</parameters>
 			</testcase>
@@ -5694,40 +5704,7 @@ rxversion="8.3">
 			id="04909fcc-b521-4a5f-b788-cfbcedc284e7">
 			</testcontainer>
 			<testcontainer
-			id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b">
-			</testcontainer>
-			<testcontainer
-			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
-			</testcontainer>
-			<testcontainer
-			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
-			</testcontainer>
-			<testcontainer
-			id="1d9928dd-974b-4bf9-b839-09c761466da1">
-			</testcontainer>
-			<testcontainer
-			id="29d7aa7d-438a-48af-9c73-c769338bb4ed">
-			</testcontainer>
-			<testcontainer
-			id="3bfd0103-45d6-4432-bde2-361c5d3bc600">
-			</testcontainer>
-			<testcontainer
-			id="3de66789-7fb1-4996-8500-81d43a94cc32">
-			</testcontainer>
-			<testcontainer
-			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">
-			</testcontainer>
-			<testcontainer
-			id="55d94e9c-09f3-492b-977b-eb8d911a3296">
-			</testcontainer>
-			<testcontainer
-			id="62006fb2-63fe-43fb-8c36-139d7b9d28a7">
-			</testcontainer>
-			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
-			</testcontainer>
-			<testcontainer
-			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
 			</testcontainer>
 			<testcontainer
 			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
@@ -5739,16 +5716,10 @@ rxversion="8.3">
 			id="9da84430-e516-45c6-8b32-0c44c43d9173">
 			</testcontainer>
 			<testcontainer
-			id="a0ca6e5b-0022-4873-a172-ead549a588aa">
-			</testcontainer>
-			<testcontainer
 			id="a9f82130-40c0-4bf2-a04c-d3b1ab9eeece">
 			</testcontainer>
 			<testcontainer
 			id="b2875f8e-5ac6-415e-93f0-d000f1cdaf3f">
-			</testcontainer>
-			<testcontainer
-			id="b468f615-5d6f-4e8c-b782-e6f70c90b66d">
 			</testcontainer>
 			<testcontainer
 			id="b5af504c-c695-4165-808b-014bc35e7534">
