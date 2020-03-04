@@ -370,6 +370,30 @@
       <UserCode>true</UserCode>
       <id>4f6a6787-1b5b-4f70-bec2-9fb711e9f1ee</id>
     </Compile>
+    <Compile Include="Database\Validate_OrdinalLogs.cs">
+      <BoundTo>d4ad4b38-ae4e-47fd-aeb3-344e411ebd11</BoundTo>
+      <DependentUpon>Validate_OrdinalLogs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>80050c95-3a5e-4b6f-897c-11e30535527d</id>
+    </Compile>
+    <Compile Include="Database\Validate_OrdinalLogs.UserCode.cs">
+      <BoundTo>d4ad4b38-ae4e-47fd-aeb3-344e411ebd11</BoundTo>
+      <DependentUpon>Validate_OrdinalLogs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6a4e193a-dd5e-429d-bb83-e847c91040c6</id>
+    </Compile>
+    <Compile Include="Database\Validate_OrdinalTask.cs">
+      <BoundTo>12de84f6-7189-43c8-938f-6da7d4fb0cc3</BoundTo>
+      <DependentUpon>Validate_OrdinalTask.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>615c7868-066f-4c59-90c8-4fb54f7afc96</id>
+    </Compile>
+    <Compile Include="Database\Validate_OrdinalTask.UserCode.cs">
+      <BoundTo>12de84f6-7189-43c8-938f-6da7d4fb0cc3</BoundTo>
+      <DependentUpon>Validate_OrdinalTask.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acb2de9d-8543-4ee2-96ff-59a5ce25dbe8</id>
+    </Compile>
     <Compile Include="Database\Validate_Site_Entry.cs">
       <BoundTo>911b709c-f327-4367-aeae-2a198b478d9c</BoundTo>
       <DependentUpon>Validate_Site_Entry.rxrec</DependentUpon>
@@ -579,6 +603,16 @@
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>565d66ef-c96e-42a2-a554-5072f33ce812</id>
       <recordtableid>0d1372b1-a98a-44a6-91c0-188cfdc034f4</recordtableid>
+    </None>
+    <None Include="Database\Validate_OrdinalLogs.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>d4ad4b38-ae4e-47fd-aeb3-344e411ebd11</id>
+      <recordtableid>8a89613b-b7d3-4fc7-8925-89f1db18e624</recordtableid>
+    </None>
+    <None Include="Database\Validate_OrdinalTask.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>12de84f6-7189-43c8-938f-6da7d4fb0cc3</id>
+      <recordtableid>6c25446f-7de5-41ea-9d30-c8487c8637e3</recordtableid>
     </None>
     <None Include="Database\Validate_Site_Entry.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
