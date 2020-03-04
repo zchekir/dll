@@ -155,6 +155,54 @@ rxversion="8.3">
 					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']
 				</basepath>
 			</folder>
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="webelement"
+			id="23d258d6-575f-480c-a3d4-307daa4ab9c6"
+			isrooted="True"
+			name="Slicers"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="40d412d5-8b78-4348-9447-a234369e8239"
+				name="SiteIDSlicerBody"
+				refimgid="c314e032-35e0-4b14-9639-ffb32921f57c"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[2]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="0e008d86-0ddf-4e4c-8ae9-004c800e9b4a"
+				name="DateSlicerBody"
+				refimgid="b5b02dd7-1c2c-41bb-a6b5-cf2b692076f4"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[3]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="24bcc0f6-d704-4074-8bf3-fe0f5c103d26"
+				name="TestIDSlicerBody"
+				refimgid="cd879f7d-1f0d-4fa6-a872-694dc2c18e30"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[4]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="1ad77429-0d51-41bd-bee5-f147ca3ce09b"
+				name="TestSlicerBody"
+				refimgid="31d2adf2-92a1-481e-ae99-cb1c731a2d08"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[5]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]
+				</item>
+				<basepath>
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
 			</basepath>

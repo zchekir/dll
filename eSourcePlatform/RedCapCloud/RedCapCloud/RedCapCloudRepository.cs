@@ -1461,6 +1461,7 @@ namespace RedCapCloud
             RepoItemInfo _studysitesiteidInfo;
             RepoItemInfo _cogstatesiteInfo;
             RepoItemInfo _sitenamebuttonInfo;
+            RepoItemInfo _cogstatelabssiteInfo;
 
             /// <summary>
             /// Creates a new AddSitePage  folder.
@@ -1474,6 +1475,7 @@ namespace RedCapCloud
                 _studysitesiteidInfo = new RepoItemInfo(this, "StudySiteSiteId", ".//input[#'studySite_siteId']", 30000, null, "1544e9b3-0f6b-4e8f-9b74-4de392e1014c");
                 _cogstatesiteInfo = new RepoItemInfo(this, "CogstateSite", ".//body//table/tbody/tr/td/div[@innertext='Cogstate']", 30000, null, "168ba541-4373-4899-83ce-94707783cd10");
                 _sitenamebuttonInfo = new RepoItemInfo(this, "SiteNameButton", ".//i[#'studySite_selectionImage']", 30000, null, "a0288ec6-f8b1-4fb0-9a9d-8ebb160d20ea");
+                _cogstatelabssiteInfo = new RepoItemInfo(this, "CogstateLabsSite", ".//body//table/tbody/tr/td/div[@innertext='Cogstate Labs']", 30000, null, "cc2fcb35-a44a-4c99-b36d-ef148457adc6");
             }
 
             /// <summary>
@@ -1629,6 +1631,30 @@ namespace RedCapCloud
                 get
                 {
                     return _sitenamebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CogstateLabsSite item.
+            /// </summary>
+            [RepositoryItem("cc2fcb35-a44a-4c99-b36d-ef148457adc6")]
+            public virtual Ranorex.DivTag CogstateLabsSite
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateLabsSite item info.
+            /// </summary>
+            [RepositoryItemInfo("cc2fcb35-a44a-4c99-b36d-ef148457adc6")]
+            public virtual RepoItemInfo CogstateLabsSiteInfo
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo;
                 }
             }
         }
@@ -2507,6 +2533,7 @@ namespace RedCapCloud
             RepoItemInfo _testwassuccessfullytransmittedInfo;
             RepoItemInfo _crftabsInfo;
             RepoItemInfo _saveandenterdatabuttonInfo;
+            RepoItemInfo _cogstatelabssiteInfo;
 
             /// <summary>
             /// Creates a new SubjectsPage  folder.
@@ -2542,6 +2569,7 @@ namespace RedCapCloud
                 _testwassuccessfullytransmittedInfo = new RepoItemInfo(this, "TestWasSuccessfullyTransmitted", ".//div[#'gwtWrapper']//?/?/font[@innertext='Test Was Successfully Transmitted']", 30000, null, "6819e2a1-e800-4dd4-b4d3-a809a456668f");
                 _crftabsInfo = new RepoItemInfo(this, "CRFTabs", ".//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']", 30000, null, "8604c299-a22b-4dae-b410-9670b9e6fdbc");
                 _saveandenterdatabuttonInfo = new RepoItemInfo(this, "SaveAndEnterDataButton", ".//span[@innertext='Save and Enter Data']", 30000, null, "6eb50653-7933-4c47-bced-aaee65a7d729");
+                _cogstatelabssiteInfo = new RepoItemInfo(this, "CogstateLabsSite", ".//li//a[@innertext<'Labs']", 30000, null, "b714a78f-9037-4dc5-b6e6-ff1e2d5d803d");
             }
 
             /// <summary>
@@ -3227,6 +3255,30 @@ namespace RedCapCloud
                     return _saveandenterdatabuttonInfo;
                 }
             }
+
+            /// <summary>
+            /// The CogstateLabsSite item.
+            /// </summary>
+            [RepositoryItem("b714a78f-9037-4dc5-b6e6-ff1e2d5d803d")]
+            public virtual Ranorex.ATag CogstateLabsSite
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateLabsSite item info.
+            /// </summary>
+            [RepositoryItemInfo("b714a78f-9037-4dc5-b6e6-ff1e2d5d803d")]
+            public virtual RepoItemInfo CogstateLabsSiteInfo
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3789,6 +3841,8 @@ namespace RedCapCloud
         {
             RepoItemInfo _sitenameInfo;
             RepoItemInfo _testidentifierInfo;
+            RepoItemInfo _siteidInfo;
+            RepoItemInfo _cgsqcInfo;
 
             /// <summary>
             /// Creates a new SitesTable  folder.
@@ -3798,6 +3852,8 @@ namespace RedCapCloud
             {
                 _sitenameInfo = new RepoItemInfo(this, "SiteName", ".//tbody/tr//div[@innertext='Cogstate']", 30000, null, "30eed5e1-47f2-4a38-a46c-32ebf9644ffe");
                 _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='TestID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']", 30000, null, "326473da-bd04-4a0e-a1a3-3e6e18e9f398");
+                _siteidInfo = new RepoItemInfo(this, "SiteID", ".//table/tbody/tr/td/div[@innertext~'^[0-9]+$']", 30000, null, "7b315c6d-f486-4b86-878a-cfe1212c5cc2");
+                _cgsqcInfo = new RepoItemInfo(this, "CGSQC", ".//div[@innertext='CGSQC']", 30000, null, "d2e254da-6228-48f8-af89-0bbf2d22454c");
             }
 
             /// <summary>
@@ -3869,6 +3925,54 @@ namespace RedCapCloud
                 get
                 {
                     return _testidentifierInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteID item.
+            /// </summary>
+            [RepositoryItem("7b315c6d-f486-4b86-878a-cfe1212c5cc2")]
+            public virtual Ranorex.DivTag SiteID
+            {
+                get
+                {
+                    return _siteidInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteID item info.
+            /// </summary>
+            [RepositoryItemInfo("7b315c6d-f486-4b86-878a-cfe1212c5cc2")]
+            public virtual RepoItemInfo SiteIDInfo
+            {
+                get
+                {
+                    return _siteidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CGSQC item.
+            /// </summary>
+            [RepositoryItem("d2e254da-6228-48f8-af89-0bbf2d22454c")]
+            public virtual Ranorex.DivTag CGSQC
+            {
+                get
+                {
+                    return _cgsqcInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CGSQC item info.
+            /// </summary>
+            [RepositoryItemInfo("d2e254da-6228-48f8-af89-0bbf2d22454c")]
+            public virtual RepoItemInfo CGSQCInfo
+            {
+                get
+                {
+                    return _cgsqcInfo;
                 }
             }
         }

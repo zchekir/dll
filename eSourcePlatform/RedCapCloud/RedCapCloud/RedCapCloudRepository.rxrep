@@ -210,6 +210,15 @@ rxversion="8.3">
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//i[#'studySite_selectionImage']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="cc2fcb35-a44a-4c99-b36d-ef148457adc6"
+				name="CogstateLabsSite"
+				refimgid="94097018-650f-4abe-bfb7-1ef728fafa4a"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//body//table/tbody/tr/td/div[@innertext='Cogstate Labs']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -771,6 +780,15 @@ rxversion="8.3">
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//span[@innertext='Save and Enter Data']
 				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="b714a78f-9037-4dc5-b6e6-ff1e2d5d803d"
+				name="CogstateLabsSite"
+				refimgid="94e816b1-f604-4a26-98fd-f74d8c01e614"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//li//a[@innertext&lt;'Labs']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -983,6 +1001,24 @@ rxversion="8.3">
 				refimgid="27dfae4c-0514-4a0c-929d-e447faaff05b"
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='TestID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="7b315c6d-f486-4b86-878a-cfe1212c5cc2"
+				name="SiteID"
+				refimgid="b27fd2d0-8e6a-447a-bd82-5a142b39c8f7"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//table/tbody/tr/td/div[@innertext~'^[0-9]+$']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="d2e254da-6228-48f8-af89-0bbf2d22454c"
+				name="CGSQC"
+				refimgid="73f08268-5f11-439a-950c-770f15d1e3d3"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='CGSQC']
 				</item>
 				<basepath>
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']

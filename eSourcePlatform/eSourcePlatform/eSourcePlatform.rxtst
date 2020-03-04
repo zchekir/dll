@@ -400,7 +400,7 @@ rxversion="8.3">
 			</testmodule>
 			<modulegroup
 			id="1808bf2a-0265-4ad8-ad27-120a4f8edf21"
-			name="AddSite"
+			name="Add_Site"
 			ref="0e6eba94-108f-4c7e-be95-15ad01fb7149">
 				<databinding>
 					<var
@@ -662,20 +662,23 @@ rxversion="8.3">
 					variablename="password">
 					</var>
 					<var
-					dataname="PrimaryOutcome"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					dataname="PrimaryOutcome
+"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="7cd6ee47-6bb8-4f3c-bbf7-0129f1e13b30"
 					variablename="PrimaryOutcome">
 					</var>
 					<var
-					dataname="StandardScoreZ"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					dataname="StandardScoreZ
+"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="a1676bb6-ae1a-4144-97e1-da672931fe75"
 					variablename="StandardScoreZ">
 					</var>
 					<var
-					dataname="StandardScoreT"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					dataname="StandardScoreT
+"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
 					variableid="50071bb3-4103-42e8-b898-bde82c740bc4"
 					variablename="StandardScoreT">
 					</var>
@@ -2549,6 +2552,18 @@ rxversion="8.3">
 					variableid="6f16e2fe-59f5-4db7-ad65-fc9f98e4843e"
 					variablename="RCCURL">
 					</var>
+					<var
+					dataname="RCC-QCTestingEnvironment"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="de3435c5-a94e-4636-9003-c5eafbafbe66"
+					variablename="qc">
+					</var>
+					<var
+					dataname="RCCDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -3354,11 +3369,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="ServerVersionDeployed"
-					value="2.0.0.94">
+					value="2.0.0.120">
 					</param>
 					<param
 					name="ClientVersionDeployed"
-					value="2.0.0-rc.94">
+					value="2.0.0-rc.120">
 					</param>
 					<param
 					name="RandNum"
@@ -3398,7 +3413,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="ExpectedRCCVersion"
-					value="2.0.0-rc.1789">
+					value="2.0.1-rc.1917">
 					</param>
 					<param
 					name="CSPDBVersion"
@@ -3411,6 +3426,25 @@ rxversion="8.3">
 					<param
 					name="Rep_DBVersion"
 					value="202001212353594_prd-2715">
+					</param>
+					<param
+					name="PrimaryOutcome
+"
+					value="0.970444658471641">
+					</param>
+					<param
+					name="StandardScoreZ
+"
+					value="-2.9910644585573">
+					</param>
+					<param
+					name="StandardScoreT
+"
+					value="70.089355414427">
+					</param>
+					<param
+					name="RCC-QCTestingEnvironment"
+					value="CGSQC">
 					</param>
 				</parameters>
 			</testcase>
@@ -3438,7 +3472,7 @@ rxversion="8.3">
 			</smartfoldernode>
 			<modulegroup
 			id="d07c24a5-1675-48e6-a96c-b8e016f9aef3"
-			name="AddStudy"
+			name="Add_Study"
 			ref="46fc96a5-e77d-4967-aeb6-1833812e7384">
 				<databinding>
 					<var
@@ -4410,7 +4444,7 @@ rxversion="8.3">
 							name="Add_Study">
 								<modulegroup
 								id="d07c24a5-1675-48e6-a96c-b8e016f9aef3"
-								name="AddStudy">
+								name="Add_Study">
 								</modulegroup>
 								<testmodule
 								id="39c3e058-7409-46cb-b069-7b8a9e6f8468"
@@ -4446,7 +4480,7 @@ rxversion="8.3">
 								</testmodule>
 								<modulegroup
 								id="1808bf2a-0265-4ad8-ad27-120a4f8edf21"
-								name="AddSite">
+								name="Add_Site">
 								</modulegroup>
 								<testmodule
 								id="4de39412-eee1-4424-bcd9-906518490387"
@@ -5648,15 +5682,6 @@ rxversion="8.3">
 				<column>
 					Authentication
 				</column>
-				<column>
-					PrimaryOutcome
-				</column>
-				<column>
-					StandardScoreZ
-				</column>
-				<column>
-					StandardScoreT
-				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
@@ -5731,12 +5756,6 @@ id="1d9928dd-974b-4bf9-b839-09c761466da1">
 id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
 			</testcontainer>
 			<testcontainer
-			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
-			</testcontainer>
-			<testcontainer
-			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
-			</testcontainer>
-			<testcontainer
 			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
 			</testcontainer>
 			<testcontainer
@@ -5784,12 +5803,6 @@ id="b6693cd2-ca67-4f83-855a-70a720f1a622">
 			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
 			</testcontainer>
 			<testcontainer
-			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">
-			</testcontainer>
-			<testcontainer
-			id="cac41d4d-1014-4078-a295-7867a984b889">
-			</testcontainer>
-			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
 			</testcontainer>
 			<testcontainer
@@ -5814,15 +5827,6 @@ id="b6693cd2-ca67-4f83-855a-70a720f1a622">
 			</testcontainer>
 			<testcontainer
 			id="d79c9852-484e-4cc4-83f2-c73c5387d586">
-			</testcontainer>
-			<testcontainer
-			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
-			</testcontainer>
-			<testcontainer
-			id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466">
-			</testcontainer>
-			<testcontainer
-			id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">
 			</testcontainer>
 			<testcontainer
 id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">

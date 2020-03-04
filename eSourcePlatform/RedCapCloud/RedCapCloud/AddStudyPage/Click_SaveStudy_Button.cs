@@ -93,6 +93,9 @@ namespace RedCapCloud.AddStudyPage
             repo.REDCapCloud.AddStudyPage.SaveButton.Click(3);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
+            
         }
 
 #region Image Feature Data

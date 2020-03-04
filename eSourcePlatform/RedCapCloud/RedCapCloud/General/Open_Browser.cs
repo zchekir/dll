@@ -41,8 +41,9 @@ namespace RedCapCloud.General
         /// </summary>
         public Open_Browser()
         {
-            RCCURL = "https://cgsqc.redcapcloud.com";
+            RCCURL = "https://cogstate.login.redcapcloud.com/";
             Browser = "Chrome";
+            qc = "CGSQC";
         }
 
         /// <summary>
@@ -79,6 +80,28 @@ namespace RedCapCloud.General
             set { _Browser = value; }
         }
 
+        string _qc;
+
+        /// <summary>
+        /// Gets or sets the value of variable qc.
+        /// </summary>
+        [TestVariable("de3435c5-a94e-4636-9003-c5eafbafbe66")]
+        public string qc
+        {
+            get { return _qc; }
+            set { _qc = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable RCCDOM.
+        /// </summary>
+        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
+        public string RCCDOM
+        {
+            get { return repo.RCCDOM; }
+            set { repo.RCCDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -105,12 +128,18 @@ namespace RedCapCloud.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $RCCURL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(RCCURL, Browser, "", false, true, false, false, false, true);
+            //Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $RCCURL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
+            //Host.Current.OpenBrowser(RCCURL, Browser, "", false, true, false, false, false, true);
+            //Delay.Milliseconds(0);
+            
+            Open_Browser_Open_browser();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(2));
+            Delay.Duration(4000, false);
+            
+            Validate_CGSQC1(repo.REDCapCloud.SitesTable.CGSQCInfo, qc);
+            Delay.Milliseconds(0);
             
         }
 

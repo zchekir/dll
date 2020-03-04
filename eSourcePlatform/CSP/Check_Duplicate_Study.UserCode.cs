@@ -59,14 +59,15 @@ namespace CSP
 			
 			foreach( System.Data.DataRow r in dt.Rows){
 				
+				
 				if ((int)r[1]>1){
-					Report.Log(ReportLevel.Info, "StudyCodeName " + r[0]+" "+r[1] );
-				}else {
-					
-					Report.Log(ReportLevel.Info, "There is zero dupplication study in DB " );
-				}
+					Report.Log(ReportLevel.Info, " Dupplicated StudyCodeName is " + r[0]+" "+r[1] );
+				} 
+				 
 			
 			}
+			// If there is not dupp study print this string, 
+			Report.Log(ReportLevel.Info, "There is zero dupplication study in DB " );
 	
 		}
 

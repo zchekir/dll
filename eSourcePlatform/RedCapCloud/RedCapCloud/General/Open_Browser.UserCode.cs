@@ -33,5 +33,37 @@ namespace RedCapCloud.General
             // Your recording specific initialization code goes here.
         }
 
+        public void Open_Browser_Open_browser()
+        { 
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $RCCURL with browser 'Chrome' in normal mode.");
+            Host.Current.OpenBrowser(RCCURL, "Chrome", "", false, false, false, false, false, true);
+        }
+
+        public void Validate_CGSQC(RepoItemInfo divtagInfo)
+        {
+        
+        		
+        		  Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='yourValue') on item 'divtagInfo'.", divtagInfo);
+                  Validate.AttributeEqual(divtagInfo, "You are using QC Testing Envirnment", "RedCapCloudRepository.REDCapCloud.SitesTable.CGSQC");
+        	
+        	}
+
+        public void Validate_CGSQC1(RepoItemInfo divtagInfo, string qc)
+        {
+        	
+        	        if ( divtagInfo.Exists()){
+        		
+                    Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$qc) on item 'divtagInfo'.", divtagInfo);
+                    Validate.AttributeEqual(divtagInfo, "InnerText", qc);
+        	   
+        	}       else{
+        	    	
+        		     Report.Log(ReportLevel.Warn, " YOU ARE NOT USING QC TESTING ENVIRONMENT");
+        	    }
+          
+        }
+
     }
 }
+
+

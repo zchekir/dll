@@ -30,12 +30,17 @@ rxversion="8.3">
 		<var
 		id="6f16e2fe-59f5-4db7-ad65-fc9f98e4843e"
 		name="RCCURL">
-			https://cgsqc.redcapcloud.com
+			https://cogstate.login.redcapcloud.com/
 		</var>
 		<var
 		id="274716b5-a543-4645-bcdf-0f2be353a9ae"
 		name="Browser">
 			Chrome
+		</var>
+		<var
+		id="de3435c5-a94e-4636-9003-c5eafbafbe66"
+		name="qc">
+			CGSQC
 		</var>
 	</variables>
 	<recorditems>
@@ -44,7 +49,7 @@ rxversion="8.3">
 		browser="Chrome"
 		clearcache="False"
 		clearcookies="False"
-		enabled="True"
+		enabled="False"
 		incognito="False"
 		instrument="True"
 		killexisting="False"
@@ -66,8 +71,24 @@ rxversion="8.3">
 				http://www.ranorex.com
 			</url>
 		</openwebsiterecorditem>
+		<userrecorditem
+		classname="Open_Browser"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Open_Browser_Open_browser"
+		namespace="RedCapCloud.General"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="91d782cf-9b60-4846-8515-457b5e7d8e5b">
+			</arguments>
+		</userrecorditem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="4000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -75,6 +96,48 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="Open_Browser"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Validate_CGSQC1"
+		namespace="RedCapCloud.General"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="822159e9-b760-40e3-b4e0-9285f2338e69">
+				<argument
+				argname="divtagInfo"
+				id="dae84361-c7cb-471a-823b-283a003f614e">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="d2e254da-6228-48f8-af89-0bbf2d22454c"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='CGSQC']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="qc"
+				id="3937b084-d9ad-4c32-97f1-0791e7388c23"
+				variable="qc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
