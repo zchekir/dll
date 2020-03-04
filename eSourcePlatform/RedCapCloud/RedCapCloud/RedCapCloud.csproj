@@ -50,13 +50,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper">
-      <HintPath>..\..\..\_assets\engine\bin\Debug\CsvHelper.dll</HintPath>
+      <HintPath>..\..\..\_assets\engine\bin\$(Configuration)\CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="engine">
-      <HintPath>..\..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+      <HintPath>..\..\..\_assets\engine\bin\$(Configuration)\engine.dll</HintPath>
     </Reference>
     <Reference Include="Ranorex Automation Helpers">
-      <HintPath>..\..\..\_assets\engine\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
+      <HintPath>..\..\..\_assets\engine\RanorexAutomationHelpers\bin\$(Configuration)\Ranorex Automation Helpers.dll</HintPath>
     </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
