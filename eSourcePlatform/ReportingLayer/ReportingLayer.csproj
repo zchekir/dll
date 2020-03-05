@@ -46,7 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="engine">
-      <HintPath>..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+      <HintPath>..\..\_assets\engine\bin\$(Configuration)\engine.dll</HintPath>
     </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
