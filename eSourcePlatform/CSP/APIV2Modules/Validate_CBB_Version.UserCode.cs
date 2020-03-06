@@ -27,21 +27,24 @@ namespace CSP.APIV2Modules
 		
 		private void Init()
 		{
-			// Your recording specific initialization code goes here.
+			
 		}
 
-		public void cbbVersion_Check(string cbbv, string wfInstance)
+		public void cbbVersion_Check(string cbbv, string wfInstance) // the cbbv is the current cbb version and wfinstance is the current generated WKF
 		{
 			
 			
 			//variables
-			string wf = wfInstance;
-			string[] wfList = wf.Split('&');
+			string wf = wfInstance; // Is the generated WFKInstance 
+			
+			string[] wfList = wf.Split('&'); // Spliting the WFK to get the CBB version
 			Boolean IsPassed = false;
+			
 			
 			//looping in the WF
 			foreach (string bbversion in wfList)
 			{
+				Report.Log(ReportLevel.Info,"ZAK"+ bbversion);
 
 				if (bbversion == cbbv)
 				{
@@ -61,6 +64,7 @@ namespace CSP.APIV2Modules
 			}
 			else
 			{
+				// If CBB version doesnt much the current cbb version it will generate a error 
 				string a="Current cbb version is diffrent from Expected one";
 				Validate.AreEqual(a, cbbv);
 				Report.Log(ReportLevel.Info,"Test Failed:" + cbbv);
