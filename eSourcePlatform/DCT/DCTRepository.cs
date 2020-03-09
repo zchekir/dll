@@ -1790,7 +1790,7 @@ namespace DCT
                 _azurelogoutInfo = new RepoItemInfo(this, "AzureLogout", ".//a[@innertext=$CSPUsername]", 30000, null, "ba6ef5cd-ae29-46fd-a862-13b41632bc4d");
                 _logoutInfo = new RepoItemInfo(this, "Logout", ".//a[@innertext='Logout']", 30000, null, "bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae");
                 _dctvalidationversionInfo = new RepoItemInfo(this, "DCTValidationVersion", ".//div[@innertext~'1.2']", 30000, null, "49370b0d-946f-4152-89ea-e31cf4c37984");
-                _rcchubvalidationInfo = new RepoItemInfo(this, "RCCHubValidation", ".//div[@innertext~'2.0.0-rc']", 30000, null, "ed9435cd-5012-46e1-a260-05d5ba9de604");
+                _rcchubvalidationInfo = new RepoItemInfo(this, "RCCHubValidation", ".//div[@innertext~'2.0.1-rc']", 30000, null, "ed9435cd-5012-46e1-a260-05d5ba9de604");
                 _rcc_hubpowershallInfo = new RepoItemInfo(this, "rcc_hubPowerShall", ".//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span", 30000, null, "87776a16-3265-49f0-8531-9f13f44dcc65");
             }
 
