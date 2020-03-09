@@ -102,20 +102,23 @@ namespace CSP.General
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
+            Delay.Duration(60000, false);
+            
             AddRawData(Filename);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(2));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(3));
+            Delay.Duration(30000, false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(4));
             repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo.WaitForExists(30000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));
+            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
             
         }
 
