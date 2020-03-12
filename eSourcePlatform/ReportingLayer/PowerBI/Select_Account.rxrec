@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8561016c-722b-4eaa-bdec-007b08254a00"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Select_Account
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Select_Account"
+	namespace="ReportingLayer.PowerBI">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Select_Account"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_UserAccountButton"
+		namespace="ReportingLayer.PowerBI"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="926a7ebb-c287-456b-951f-ddf801a56a42">
+				<argument
+				argname="AccountButton"
+				id="df8cd60d-d695-4c35-ae70-d79440c58ac9">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="c5b188c2-88cd-4d5f-97b7-83e56275b1b0"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//div[@innertext=$CSPUsername]
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="OtherAccount"
+				id="3c057532-b83d-4386-a061-dea2d49e44aa">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2c639ba6-c816-4691-b4c9-fca1da80a1ef"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//div[#'otherTileText']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="ea6a006e-6d85-4695-88f7-8d684bce0248"
+	name="ReportingLayerRepository"
+	relativepath="..\ReportingLayerRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ReportingLayerRepository"
+		namespace="ReportingLayer">
+		</codegen>
+		<rootfolder
+		id="60c3c42a-4566-402e-9361-221a6c8f795f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Select_Account.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

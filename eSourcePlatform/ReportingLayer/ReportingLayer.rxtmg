@@ -4,6 +4,41 @@ rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0c23878e-acc1-4f7c-93a7-41331036e7e6"
+			name="Select_Account"
+			ref="8561016c-722b-4eaa-bdec-007b08254a00"
+			type="Recording">
+			</testmodule>
+			<modulegroupdef
+			id="3874aae3-605b-436c-a897-0abac62a29f4"
+			name="LoginPowerBI">
+				<groupvariables>
+					<groupvariable
+					id="7189d372-604f-424f-9685-0b452c090798"
+					name="CSPUsername">
+						<modulevariable
+						moduleref="0c23878e-acc1-4f7c-93a7-41331036e7e6"
+						name="CSPUsername"
+						variableref="a0579069-e2a3-47be-9d8f-92cfed3c7d44">
+						</modulevariable>
+						<modulevariable
+						moduleref="fd87f0b3-c686-42ab-81eb-ce4a3a9503c2"
+						name="CSPUsername"
+						variableref="766aeed9-9d5d-449f-b609-af49b9d6c774">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="974e4070-d534-4833-9ee4-d5e04956a425"
+					name="CSPPassword">
+						<modulevariable
+						moduleref="e2c8ef95-68a5-4b05-a7d1-51c36aadf17a"
+						name="CSPPassword"
+						variableref="a69c7d33-973e-41ed-9b0b-3ff6d63df5d5">
+						</modulevariable>
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<testmodule
 			id="3ad921ec-44a0-4b6e-861b-dc9bcc73aa62"
 			name="Validate_AssessmentTestOutcomeImage_Entry"
 			ref="9f5f3aa5-cc5d-4db6-98f3-9a238110b58c"
@@ -386,6 +421,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="9198b2f5-0992-41ce-a269-9aaba8e79467"
+			name="Click_SignIn_Button"
+			ref="c1b63fe7-327d-4d03-9fed-537b3059d2a5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="939186ad-7c98-4f60-910f-e14a2bd48b81"
 			name="Validate_AssessmentOutcomeCard_Entry"
 			ref="40776330-9698-4e7b-8b40-9f4c8e1580bd"
@@ -395,6 +436,12 @@ rxversion="8.3">
 			id="b31faf31-56fc-4d73-b03c-2e870821fe26"
 			name="Validate_AssessmentOutcomeFT_Entry"
 			ref="da9f2a2f-35b0-4d03-b071-1584799912f5"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e2c8ef95-68a5-4b05-a7d1-51c36aadf17a"
+			name="Enter_Password"
+			ref="ec7c4d35-968e-46a3-92b6-617a397ac57a"
 			type="Recording">
 			</testmodule>
 			<modulegroups
@@ -408,9 +455,21 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="f61f6b52-aa2e-4315-aa68-97ed3493e899"
+			name="Click_No_Stay_SignedIn"
+			ref="02076eef-549b-467b-97b8-c2607a1ab907"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f68468f0-006f-453a-9a4a-392def1704e0"
 			name="Validate_AssessmentOutcomeCPAL_Entry"
 			ref="3bf39a30-7df4-40fe-89cc-685a277a8651"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fd87f0b3-c686-42ab-81eb-ce4a3a9503c2"
+			name="Enter_Username"
+			ref="1aa53595-fff5-4348-b67c-42c0e0e5fdee"
 			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
@@ -452,6 +511,30 @@ rxversion="8.3">
 					<testmodule
 					id="901e978d-d252-4865-abc6-141e25e94697"
 					name="Validate_AssessmentTestOutcomeSAT_Entry">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="3874aae3-605b-436c-a897-0abac62a29f4"
+				name="LoginPowerBI">
+					<testmodule
+					id="9198b2f5-0992-41ce-a269-9aaba8e79467"
+					name="Click_SignIn_Button">
+					</testmodule>
+					<testmodule
+					id="0c23878e-acc1-4f7c-93a7-41331036e7e6"
+					name="Select_Account">
+					</testmodule>
+					<testmodule
+					id="fd87f0b3-c686-42ab-81eb-ce4a3a9503c2"
+					name="Enter_Username">
+					</testmodule>
+					<testmodule
+					id="e2c8ef95-68a5-4b05-a7d1-51c36aadf17a"
+					name="Enter_Password">
+					</testmodule>
+					<testmodule
+					id="f61f6b52-aa2e-4315-aa68-97ed3493e899"
+					name="Click_No_Stay_SignedIn">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>

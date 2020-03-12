@@ -442,6 +442,30 @@
       <UserCode>true</UserCode>
       <id>8ada7a04-2226-4352-81db-41d318a4c533</id>
     </Compile>
+    <Compile Include="PowerBI\Click_No_Stay_SignedIn.cs">
+      <BoundTo>f1feeb4a-d1d2-47d9-892a-b11ea423f56e</BoundTo>
+      <DependentUpon>Click_No_Stay_SignedIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4fb3bdec-f9b1-49f8-81dc-94351bb04348</id>
+    </Compile>
+    <Compile Include="PowerBI\Click_No_Stay_SignedIn.UserCode.cs">
+      <BoundTo>f1feeb4a-d1d2-47d9-892a-b11ea423f56e</BoundTo>
+      <DependentUpon>Click_No_Stay_SignedIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>657a2f42-a723-4f12-a983-67fc72fe92e7</id>
+    </Compile>
+    <Compile Include="PowerBI\Click_SignIn_Button.cs">
+      <BoundTo>c3e4a11c-f5af-42be-a23f-437aff1f25b2</BoundTo>
+      <DependentUpon>Click_SignIn_Button.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60d45cdc-d623-4e6e-9de6-1395e265a527</id>
+    </Compile>
+    <Compile Include="PowerBI\Click_SignIn_Button.UserCode.cs">
+      <BoundTo>c3e4a11c-f5af-42be-a23f-437aff1f25b2</BoundTo>
+      <DependentUpon>Click_SignIn_Button.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3edeb4d7-1751-49fd-ae4d-f2b16dabe077</id>
+    </Compile>
     <Compile Include="PowerBI\Close_PowerBI.cs">
       <DependentUpon>Close_PowerBI.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -453,6 +477,42 @@
       <UserCode>true</UserCode>
       <id>652b4ba2-44fe-423a-9959-d70297c7b344</id>
       <BoundTo>02e7be70-d56d-48aa-a493-3aebd6c917f5</BoundTo>
+    </Compile>
+    <Compile Include="PowerBI\Enter_Password.cs">
+      <BoundTo>0f8da713-ec8c-4a2e-a36a-2d5b6c99668f</BoundTo>
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>586ed510-0866-4181-bbf7-aa68537bd5d8</id>
+    </Compile>
+    <Compile Include="PowerBI\Enter_Password.UserCode.cs">
+      <BoundTo>0f8da713-ec8c-4a2e-a36a-2d5b6c99668f</BoundTo>
+      <DependentUpon>Enter_Password.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a024089c-26dd-4dd7-855b-1752bed8d301</id>
+    </Compile>
+    <Compile Include="PowerBI\Enter_Username.cs">
+      <BoundTo>dd27bfe2-5528-4639-ad52-aa861588809b</BoundTo>
+      <DependentUpon>Enter_Username.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2dabfd4-ddcd-4eed-95d9-9de5a054edea</id>
+    </Compile>
+    <Compile Include="PowerBI\Enter_Username.UserCode.cs">
+      <BoundTo>dd27bfe2-5528-4639-ad52-aa861588809b</BoundTo>
+      <DependentUpon>Enter_Username.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>13987604-01a0-4434-9c9e-96b01086371f</id>
+    </Compile>
+    <Compile Include="PowerBI\Select_Account.cs">
+      <BoundTo>769a77bd-5d0c-4738-b672-10d10504079f</BoundTo>
+      <DependentUpon>Select_Account.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df1b3533-3d39-4cf1-805b-d97d5860a301</id>
+    </Compile>
+    <Compile Include="PowerBI\Select_Account.UserCode.cs">
+      <BoundTo>769a77bd-5d0c-4738-b672-10d10504079f</BoundTo>
+      <DependentUpon>Select_Account.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c6d20715-28ce-44d5-aa61-4000fe634371</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>87da71c6-2308-48b3-802d-1cbff3932184</id>
@@ -634,10 +694,35 @@
       <id>d9107847-6da6-4fc6-bb6a-4b6c8521b33b</id>
       <recordtableid>b4f74c5e-8e1a-4e81-90e1-7066abb8fd92</recordtableid>
     </None>
+    <None Include="PowerBI\Click_No_Stay_SignedIn.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>f1feeb4a-d1d2-47d9-892a-b11ea423f56e</id>
+      <recordtableid>02076eef-549b-467b-97b8-c2607a1ab907</recordtableid>
+    </None>
+    <None Include="PowerBI\Click_SignIn_Button.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>c3e4a11c-f5af-42be-a23f-437aff1f25b2</id>
+      <recordtableid>c1b63fe7-327d-4d03-9fed-537b3059d2a5</recordtableid>
+    </None>
     <None Include="PowerBI\Close_PowerBI.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>02e7be70-d56d-48aa-a493-3aebd6c917f5</id>
       <recordtableid>10618194-7191-4be5-9b38-8981dd57c5c4</recordtableid>
+    </None>
+    <None Include="PowerBI\Enter_Password.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>0f8da713-ec8c-4a2e-a36a-2d5b6c99668f</id>
+      <recordtableid>ec7c4d35-968e-46a3-92b6-617a397ac57a</recordtableid>
+    </None>
+    <None Include="PowerBI\Enter_Username.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>dd27bfe2-5528-4639-ad52-aa861588809b</id>
+      <recordtableid>1aa53595-fff5-4348-b67c-42c0e0e5fdee</recordtableid>
+    </None>
+    <None Include="PowerBI\Select_Account.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>769a77bd-5d0c-4738-b672-10d10504079f</id>
+      <recordtableid>8561016c-722b-4eaa-bdec-007b08254a00</recordtableid>
     </None>
     <None Include="ReportingLayerRepository.rximg">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>

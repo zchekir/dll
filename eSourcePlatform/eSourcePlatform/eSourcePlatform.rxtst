@@ -2029,6 +2029,25 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="82faac57-dc95-4441-ba79-ab22e8cd3ef5"
+			name="LoginPowerBI"
+			ref="3874aae3-605b-436c-a897-0abac62a29f4">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="7189d372-604f-424f-9685-0b452c090798"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="974e4070-d534-4833-9ee4-d5e04956a425"
+					variablename="CSPPassword">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="832fa600-51dc-4577-b887-eef957f769c2"
 			name="Select_Language"
@@ -3369,11 +3388,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="ServerVersionDeployed"
-					value="2.0.0.145">
+					value="2.0.0.152">
 					</param>
 					<param
 					name="ClientVersionDeployed"
-					value="2.0.0-rc.145">
+					value="2.0.0-rc.152">
 					</param>
 					<param
 					name="RandNum"
@@ -3856,6 +3875,25 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="e597c414-329a-4ed5-a8f0-daa43b5ca98d"
+			name="LoginPowerBI"
+			ref="3874aae3-605b-436c-a897-0abac62a29f4">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="7189d372-604f-424f-9685-0b452c090798"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="974e4070-d534-4833-9ee4-d5e04956a425"
+					variablename="CSPPassword">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="e5f203a1-c64d-4e13-aa87-46a1a717402a"
 			name="ReportingDBVersion"
@@ -5342,6 +5380,10 @@ rxversion="8.3">
 								id="1a59826a-174a-43e8-b996-7f0e95bfa7cf"
 								name="Click_AcademicExtract_Link">
 								</testmodule>
+								<modulegroup
+								id="82faac57-dc95-4441-ba79-ab22e8cd3ef5"
+								name="LoginPowerBI">
+								</modulegroup>
 								<testmodule
 								id="8db74f00-acd3-4dec-ab51-d13a7ce9baea"
 								name="Set_Date_Slicer">
@@ -5370,6 +5412,10 @@ rxversion="8.3">
 								id="2967738e-e96c-40e2-a459-88c7b3d02a9c"
 								name="Click_StandardExtract_Link">
 								</testmodule>
+								<modulegroup
+								id="e597c414-329a-4ed5-a8f0-daa43b5ca98d"
+								name="LoginPowerBI">
+								</modulegroup>
 								<testmodule
 								id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
 								name="Set_Date_Filter">
@@ -5703,7 +5749,7 @@ rxversion="8.3">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Smoke">
+	default="TestRun">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
@@ -5714,6 +5760,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b">
+			</testcontainer>
+			<testcontainer
+			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
 			</testcontainer>
 			<testcontainer
 			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
@@ -5747,6 +5796,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
+			</testcontainer>
+			<testcontainer
+			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
 			</testcontainer>
 			<testcontainer
 			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
@@ -5791,6 +5843,9 @@ rxversion="8.3">
 			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
 			</testcontainer>
 			<testcontainer
+			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">
+			</testcontainer>
+			<testcontainer
 			id="cac41d4d-1014-4078-a295-7867a984b889">
 			</testcontainer>
 			<testcontainer
@@ -5803,6 +5858,9 @@ rxversion="8.3">
 			id="d2899b22-b064-42fc-81cc-e3b7b14d3643">
 			</testcontainer>
 			<testcontainer
+			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874">
+			</testcontainer>
+			<testcontainer
 			id="d7301e08-98a1-4c85-bb6a-6ec82c426239">
 			</testcontainer>
 			<testcontainer
@@ -5812,6 +5870,9 @@ rxversion="8.3">
 			id="dc0c52da-a56e-4de2-b8e9-71f4051f1193">
 			</testcontainer>
 			<testcontainer
+			id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466">
+			</testcontainer>
+			<testcontainer
 			id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751">
 			</testcontainer>
 			<testcontainer
@@ -5819,6 +5880,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">
+			</testcontainer>
+			<testcontainer
+			id="f6a31933-9e9b-46c5-9bad-9b79a53baadd">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

@@ -20,109 +20,44 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace ReportingLayer.Database
+namespace ReportingLayer.PowerBI
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_OrdinalLogs recording.
+    ///The Enter_Username recording.
     /// </summary>
-    [TestModule("8a89613b-b7d3-4fc7-8925-89f1db18e624", ModuleType.Recording, 1)]
-    public partial class Validate_OrdinalLogs : ITestModule
+    [TestModule("1aa53595-fff5-4348-b67c-42c0e0e5fdee", ModuleType.Recording, 1)]
+    public partial class Enter_Username : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::ReportingLayer.ReportingLayerRepository repository.
         /// </summary>
         public static global::ReportingLayer.ReportingLayerRepository repo = global::ReportingLayer.ReportingLayerRepository.Instance;
 
-        static Validate_OrdinalLogs instance = new Validate_OrdinalLogs();
+        static Enter_Username instance = new Enter_Username();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_OrdinalLogs()
+        public Enter_Username()
         {
-            Authentication = "";
-            CSPPassword = "";
             CSPUsername = "";
-            DBServer = "";
-            Database = "";
-            TestIdentifier = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_OrdinalLogs Instance
+        public static Enter_Username Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Authentication;
-
-        /// <summary>
-        /// Gets or sets the value of variable Authentication.
-        /// </summary>
-        [TestVariable("f7eb9720-b443-4394-936f-227d13a3c3e3")]
-        public string Authentication
-        {
-            get { return _Authentication; }
-            set { _Authentication = value; }
-        }
-
-        string _CSPPassword;
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
-        /// </summary>
-        [TestVariable("121b7cac-7250-478f-b146-920dbfded8ae")]
-        public string CSPPassword
-        {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
-        }
-
-        string _DBServer;
-
-        /// <summary>
-        /// Gets or sets the value of variable DBServer.
-        /// </summary>
-        [TestVariable("f550b182-f705-4ece-91b4-6b8a696a89a2")]
-        public string DBServer
-        {
-            get { return _DBServer; }
-            set { _DBServer = value; }
-        }
-
-        string _Database;
-
-        /// <summary>
-        /// Gets or sets the value of variable Database.
-        /// </summary>
-        [TestVariable("8b155f05-33dd-49b3-bdea-8222e39d0c9f")]
-        public string Database
-        {
-            get { return _Database; }
-            set { _Database = value; }
-        }
-
-        string _TestIdentifier;
-
-        /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
-        /// </summary>
-        [TestVariable("fbfed4dd-1ecf-4b1e-96bc-f7e6387e12f8")]
-        public string TestIdentifier
-        {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
-        }
-
         /// <summary>
         /// Gets or sets the value of variable CSPUsername.
         /// </summary>
-        [TestVariable("41071f78-b6d0-4429-aefb-cda8b71f1d1d")]
+        [TestVariable("766aeed9-9d5d-449f-b609-af49b9d6c774")]
         public string CSPUsername
         {
             get { return repo.CSPUsername; }
@@ -155,10 +90,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetOrdinalLogs(Database, DBServer, CSPUsername, CSPPassword, Authentication);
-            Delay.Milliseconds(0);
-            
-            ReportRecords();
+            Enter_Email(repo.SingleSignOnMicrosoft.MicrosoftUsernameFieldInfo, repo.SingleSignOnCogstate.CogstateUserNameFieldInfo);
             Delay.Milliseconds(0);
             
         }

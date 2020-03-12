@@ -83,18 +83,6 @@ namespace ReportingLayer.StandardExtract
             set { _CSPPassword = value; }
         }
 
-        string _CSPUsername;
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("012660f4-bd2c-48f2-87c1-875e293ec6c4")]
-        public string CSPUsername
-        {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
-        }
-
         string _DBServer;
 
         /// <summary>
@@ -129,6 +117,16 @@ namespace ReportingLayer.StandardExtract
         {
             get { return _RptDatabase; }
             set { _RptDatabase = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("012660f4-bd2c-48f2-87c1-875e293ec6c4")]
+        public string CSPUsername
+        {
+            get { return repo.CSPUsername; }
+            set { repo.CSPUsername = value; }
         }
 
 #endregion

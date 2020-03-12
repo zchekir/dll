@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c1b63fe7-327d-4d03-9fed-537b3059d2a5"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_SignIn_Button
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_SignIn_Button"
+	namespace="ReportingLayer.PowerBI">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Click_SignIn_Button"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_SignIn"
+		namespace="ReportingLayer.PowerBI"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b421db51-3af5-4697-8ff0-fb61c970e110">
+				<argument
+				argname="SignInButton"
+				id="32048e08-b280-4ddb-9df0-35dafa46652d">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="4223e018-4a49-40bd-84ba-593cb96491a6"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='powerbi.microsoft.com']//a[@innertext='Sign in']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="ea6a006e-6d85-4695-88f7-8d684bce0248"
+	name="ReportingLayerRepository"
+	relativepath="..\ReportingLayerRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ReportingLayerRepository"
+		namespace="ReportingLayer">
+		</codegen>
+		<rootfolder
+		id="60c3c42a-4566-402e-9361-221a6c8f795f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_SignIn_Button.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

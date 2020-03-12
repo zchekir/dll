@@ -95,18 +95,6 @@ namespace ReportingLayer.AcademicExtract
             set { _RptDatabase = value; }
         }
 
-        string _CSPUsername;
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("daf603e2-eb88-46f1-8eca-e2b4bce773ea")]
-        public string CSPUsername
-        {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
-        }
-
         string _CSPPassword;
 
         /// <summary>
@@ -129,6 +117,16 @@ namespace ReportingLayer.AcademicExtract
         {
             get { return _Authentication; }
             set { _Authentication = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("daf603e2-eb88-46f1-8eca-e2b4bce773ea")]
+        public string CSPUsername
+        {
+            get { return repo.CSPUsername; }
+            set { repo.CSPUsername = value; }
         }
 
 #endregion

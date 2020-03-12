@@ -9,6 +9,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
@@ -36,8 +37,9 @@ namespace ReportingLayer.AcademicExtract
         public void EnterFromDate(RepoItemInfo DateFromRange)
         {
             System.DateTime today = System.DateTime.Today;
-            string date = today.ToString("MM/dd/yyyy");
-           // string date = "2/5/2020";
+            //string date = today.ToString("MM/dd/yyyy");
+            string date = today.ToShortDateString();
+            Report.Info("Debug", "Current date is: " + date);
         	
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'DateFromRange'.", DateFromRange);
             DateFromRange.FindAdapter<InputTag>().PressKeys(date);
@@ -46,8 +48,9 @@ namespace ReportingLayer.AcademicExtract
         public void EnterToDate(RepoItemInfo DateToRange)
         {
            System.DateTime today = System.DateTime.Today;
-           string date = today.ToString("MM/dd/yyyy"); 
-            //string date = "2/5/2020";
+           //string date = today.ToString("MM/dd/yyyy"); 
+           string date = today.ToShortDateString();
+           Report.Info("Debug", "Current date is: " + date);
         	
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'date' with focus on 'DateToRange'.", DateToRange);
             DateToRange.FindAdapter<InputTag>().PressKeys(date);

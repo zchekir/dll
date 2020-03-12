@@ -84,18 +84,6 @@ namespace ReportingLayer.Database
             set { _CSPPassword = value; }
         }
 
-        string _CSPUsername;
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("f44b2169-7fee-4ad7-9fcf-bdd6fb271363")]
-        public string CSPUsername
-        {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
-        }
-
         string _Database;
 
         /// <summary>
@@ -142,6 +130,16 @@ namespace ReportingLayer.Database
         {
             get { return _RandNum; }
             set { _RandNum = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("f44b2169-7fee-4ad7-9fcf-bdd6fb271363")]
+        public string CSPUsername
+        {
+            get { return repo.CSPUsername; }
+            set { repo.CSPUsername = value; }
         }
 
 #endregion

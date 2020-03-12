@@ -222,6 +222,178 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="6e87418e-8e27-474c-952c-865cc8274190"
+		isrooted="True"
+		name="SignInPowerBI"
+		refpath="/dom[@domain='powerbi.microsoft.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="4223e018-4a49-40bd-84ba-593cb96491a6"
+			name="SignInBUtton"
+			refimgid="43357756-b216-4bcb-b76a-b951a6b82227"
+			searchtimeout="30000ms">
+				/dom[@domain='powerbi.microsoft.com']//a[@innertext='Sign in']
+			</item>
+			<basepath>
+				/dom[@domain='powerbi.microsoft.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="c35eb889-e371-439b-9570-1afd68591917"
+		isrooted="True"
+		name="SingleSignOnMicrosoft"
+		refpath="/dom[@domain='login.microsoftonline.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="c5b188c2-88cd-4d5f-97b7-83e56275b1b0"
+			name="UserAccountButton"
+			refimgid="221793c4-5ecb-4d41-9ca9-fc41052717c1"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//div[@innertext=$CSPUsername]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="2c639ba6-c816-4691-b4c9-fca1da80a1ef"
+			name="OtherAccountButton"
+			refimgid="abdebc52-c2b4-4cb6-a0f5-1db691b8e757"
+			refpath="/dom[@domain='login.microsoftonline.com']//div[#'otherTileText']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//div[#'otherTileText']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="694e1f07-7fdc-44cc-bcab-4827d2900622"
+			name="MicrosoftUsernameField"
+			refimgid="018f9e6f-53b7-4a57-918d-d2db6dd593de"
+			refpath="/dom[@domain='login.microsoftonline.com']//input[#'i0116']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="601b071d-cc26-4138-a14e-b435e5d9d440"
+			name="NoButton"
+			refimgid="9d8ccf86-7b3b-42c3-b214-21b6fb6db2b4"
+			refpath="/dom[@domain='login.microsoftonline.com']//input[#'idBtn_Back']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'idBtn_Back']
+			</item>
+			<basepath>
+				/dom[@domain='login.microsoftonline.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="79b279ed-4201-4681-9e78-6e34e2578758"
+		isrooted="True"
+		name="SingleSignOnCogstate"
+		refpath="/dom[@domain='login.cogstate.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4"
+			name="Branding"
+			refimgid="0aa3ed56-956d-4e88-a5b2-d7e3f8d4c701"
+			refpath="/dom[@domain='login.cogstate.com']//div[#'branding']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.cogstate.com']//div[#'branding']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="4f745b3b-b5c8-4ac0-a135-b47d3084de38"
+			name="CogstateUserNameField"
+			refimgid="3697feba-1cb8-40ed-bd4d-8f992f5042b9"
+			refpath="/dom[@domain='login.cogstate.com']//input[#'userNameInput']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.cogstate.com']//input[#'userNameInput']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="fda9b54b-fd26-4322-916f-b1743bff83de"
+			name="CogstatePasswordField"
+			refimgid="98948106-cc3b-4e18-8fb0-176dd415afb5"
+			refpath="/dom[@domain='login.cogstate.com']//input[#'passwordInput']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.cogstate.com']//input[#'passwordInput']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="cc687361-2175-4f48-8f23-35ffaa35f190"
+			name="SubmitButton"
+			refimgid="71678942-a83b-4c8c-a579-3dcf5cbf1288"
+			refpath="/dom[@domain='login.cogstate.com']//span[#'submitButton']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.cogstate.com']//span[#'submitButton']
+			</item>
+			<basepath>
+				/dom[@domain='login.cogstate.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -229,6 +401,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="205a61dc-d836-474a-ab6f-210750f02768"
 		name="ProtocolID">
+		</var>
+		<var
+		id="a0579069-e2a3-47be-9d8f-92cfed3c7d44"
+		name="CSPUsername">
 		</var>
 	</variables>
 </repository>

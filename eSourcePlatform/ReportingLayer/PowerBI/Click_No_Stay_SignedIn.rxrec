@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="02076eef-549b-467b-97b8-c2607a1ab907"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_No_Stay_SignedIn
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_No_Stay_SignedIn"
+	namespace="ReportingLayer.PowerBI">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Click_No_Stay_SignedIn"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_IdBtnBack"
+		namespace="ReportingLayer.PowerBI"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="19fe1316-d896-43d4-b723-39fcf6ef5dd1">
+				<argument
+				argname="NoButton"
+				id="1ad4d87d-c8cb-4530-a66b-d718aac65870">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="601b071d-cc26-4138-a14e-b435e5d9d440"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//input[#'idBtn_Back']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="ea6a006e-6d85-4695-88f7-8d684bce0248"
+	name="ReportingLayerRepository"
+	relativepath="..\ReportingLayerRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ReportingLayerRepository"
+		namespace="ReportingLayer">
+		</codegen>
+		<rootfolder
+		id="60c3c42a-4566-402e-9361-221a6c8f795f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_No_Stay_SignedIn.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
