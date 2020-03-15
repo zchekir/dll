@@ -108,9 +108,8 @@ rxversion="8.3">
 				id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
 				name="IsInThisDropdown"
 				refimgid="6402487c-dbc6-466f-8fad-2ee46b18902f"
-				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[2]/div[2]/tag/form/div/select[1]"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[1]
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//tag[9]//form[@name='$ctrl.filterForm']/div/select[1]
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -118,19 +117,8 @@ rxversion="8.3">
 				id="4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b"
 				name="DayDropdown"
 				refimgid="4d46f1aa-3f9f-44a0-88fe-c3fa3fad8bb4"
-				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[2]/div[2]/tag/form/div/select[2]"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[2]
-				</item>
-				<item
-				addcaps="unknown,webelement,buttontag"
-				capname="buttontag"
-				id="bae026ec-2353-462f-841a-8981f53c124b"
-				name="Expand"
-				refimgid="ac9eeb0f-461f-4b18-84a7-02e5ed7c6b26"
-				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[1]/div[1]/button[@title='Expand']"
-				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//button[@title='Expand']
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//tag[9]//form[@name='$ctrl.filterForm']/div/select[2]
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -139,7 +127,7 @@ rxversion="8.3">
 				name="ApplyFilterButton"
 				refimgid="5b3ecf4f-0425-4318-b2ff-9825e38b1a19"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -147,9 +135,17 @@ rxversion="8.3">
 				id="db43cf6c-681a-40a7-a643-376f7e2b8282"
 				name="FilterTypeDropdown"
 				refimgid="bbda9ddf-cf12-490f-b68b-4172bd4e2b86"
-				refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/ul/tag[9]/li/div[2]/div[1]/select"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//select
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//select
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="9635faeb-ac8a-43f5-a295-6831032d50d4"
+				name="Expand"
+				refimgid="ac4551ad-27e9-4e42-8c08-6b3bb2bdd54c"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//button[@title='Expand']
 				</item>
 				<basepath>
 					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']

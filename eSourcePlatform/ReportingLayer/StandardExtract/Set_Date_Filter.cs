@@ -95,15 +95,21 @@ namespace ReportingLayer.StandardExtract
             repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdown.Element.SetAttributeValue("TagValue", "Relative date");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '1' on item 'PowerBI.DateOfAssessmentFilter.IsInThisDropdown'.", repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdownInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '1' on item 'PowerBI.DateOfAssessmentFilter.IsInThisDropdown'.", repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdownInfo, new RecordItemIndex(5));
             repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdown.Element.SetAttributeValue("TagValue", "1");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '2' on item 'PowerBI.DateOfAssessmentFilter.DayDropdown'.", repo.PowerBI.DateOfAssessmentFilter.DayDropdownInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(6));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '2' on item 'PowerBI.DateOfAssessmentFilter.DayDropdown'.", repo.PowerBI.DateOfAssessmentFilter.DayDropdownInfo, new RecordItemIndex(7));
             repo.PowerBI.DateOfAssessmentFilter.DayDropdown.Element.SetAttributeValue("TagValue", "2");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.ApplyFilterButton' at Center.", repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButtonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.ApplyFilterButton' at Center.", repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButtonInfo, new RecordItemIndex(8));
             repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButton.Click();
             Delay.Milliseconds(200);
             

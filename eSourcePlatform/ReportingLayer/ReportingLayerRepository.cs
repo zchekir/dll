@@ -414,9 +414,9 @@ namespace ReportingLayer
         {
             RepoItemInfo _isinthisdropdownInfo;
             RepoItemInfo _daydropdownInfo;
-            RepoItemInfo _expandInfo;
             RepoItemInfo _applyfilterbuttonInfo;
             RepoItemInfo _filtertypedropdownInfo;
+            RepoItemInfo _expandInfo;
 
             /// <summary>
             /// Creates a new DateOfAssessmentFilter  folder.
@@ -424,11 +424,11 @@ namespace ReportingLayer
             public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
                     base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
             {
-                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", ".//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[1]", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
-                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", ".//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[2]", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
-                _expandInfo = new RepoItemInfo(this, "Expand", "div[2]/?/?/ul/tag[9]//button[@title='Expand']", 30000, null, "bae026ec-2353-462f-841a-8981f53c124b");
-                _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]/?/?/ul/tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
-                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]/?/?/ul/tag[9]//select", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
+                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[1]", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
+                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[2]", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
+                _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
+                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]//tag[9]//select", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
+                _expandInfo = new RepoItemInfo(this, "Expand", "div[2]//tag[9]//button[@title='Expand']", 30000, null, "9635faeb-ac8a-43f5-a295-6831032d50d4");
             }
 
             /// <summary>
@@ -504,30 +504,6 @@ namespace ReportingLayer
             }
 
             /// <summary>
-            /// The Expand item.
-            /// </summary>
-            [RepositoryItem("bae026ec-2353-462f-841a-8981f53c124b")]
-            public virtual Ranorex.ButtonTag Expand
-            {
-                get
-                {
-                    return _expandInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Expand item info.
-            /// </summary>
-            [RepositoryItemInfo("bae026ec-2353-462f-841a-8981f53c124b")]
-            public virtual RepoItemInfo ExpandInfo
-            {
-                get
-                {
-                    return _expandInfo;
-                }
-            }
-
-            /// <summary>
             /// The ApplyFilterButton item.
             /// </summary>
             [RepositoryItem("f5f9f142-7a61-4caf-a45c-e9244d4b2fb2")]
@@ -572,6 +548,30 @@ namespace ReportingLayer
                 get
                 {
                     return _filtertypedropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Expand item.
+            /// </summary>
+            [RepositoryItem("9635faeb-ac8a-43f5-a295-6831032d50d4")]
+            public virtual Ranorex.ButtonTag Expand
+            {
+                get
+                {
+                    return _expandInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Expand item info.
+            /// </summary>
+            [RepositoryItemInfo("9635faeb-ac8a-43f5-a295-6831032d50d4")]
+            public virtual RepoItemInfo ExpandInfo
+            {
+                get
+                {
+                    return _expandInfo;
                 }
             }
         }
