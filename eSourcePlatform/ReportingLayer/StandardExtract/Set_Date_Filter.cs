@@ -105,8 +105,8 @@ namespace ReportingLayer.StandardExtract
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(6));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '2' on item 'PowerBI.DateOfAssessmentFilter.DayDropdown'.", repo.PowerBI.DateOfAssessmentFilter.DayDropdownInfo, new RecordItemIndex(7));
-            repo.PowerBI.DateOfAssessmentFilter.DayDropdown.Element.SetAttributeValue("TagValue", "2");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '3' on item 'PowerBI.DateOfAssessmentFilter.DayDropdown'.", repo.PowerBI.DateOfAssessmentFilter.DayDropdownInfo, new RecordItemIndex(7));
+            repo.PowerBI.DateOfAssessmentFilter.DayDropdown.Element.SetAttributeValue("TagValue", "3");
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.ApplyFilterButton' at Center.", repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButtonInfo, new RecordItemIndex(8));

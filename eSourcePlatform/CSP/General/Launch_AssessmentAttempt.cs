@@ -102,16 +102,16 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            Delay.Duration(60000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
+            //Delay.Duration(60000, false);
             
             engine.Helpers.WebService.LaunchAssessment(Browser);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(3));
-            Delay.Duration(60000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(3));
+            //Delay.Duration(60000, false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.StartInstructions'", repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo, new ActionTimeout(30000), new RecordItemIndex(4));
             repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo.WaitForExists(30000);
