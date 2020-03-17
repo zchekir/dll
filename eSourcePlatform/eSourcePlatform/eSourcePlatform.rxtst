@@ -260,7 +260,7 @@ rxversion="8.3">
 			</modulegroup>
 			<smartfoldernode
 			id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b"
-			name="DB_AssessmentValidation">
+			name="Validate_Database_Assessment">
 			</smartfoldernode>
 			<testmodule
 			id="15a1049c-a595-42b7-9f08-e1ae80a595e2"
@@ -826,7 +826,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="29d7aa7d-438a-48af-9c73-c769338bb4ed"
-			name="DBVersion_Check">
+			name="Validate_Database_Versions">
 			</smartfoldernode>
 			<testmodule
 			id="2aa49739-7e8e-43bc-b46a-155f3b888052"
@@ -3436,7 +3436,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="CSPDBVersion"
-					value="002000_202003061533371_PRD-2835">
+					value="002000_202003091611162_PRD-2835">
 					</param>
 					<param
 					name="DCT_DBVersion"
@@ -3564,7 +3564,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
-			name="Validate_CSP_Client&amp;ServerVersions">
+			name="Validate_CSP_Client&amp;Server_Versions">
 			</smartfoldernode>
 			<testmodule
 			id="d37bb936-13b5-45c6-b91c-6dfc11424be2"
@@ -3627,7 +3627,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
-			name="Validate_DCT&amp;RCCHub_Version">
+			name="Validate_DCT&amp;RCCHub_Versions">
 			</smartfoldernode>
 			<testcase
 			id="d79c9852-484e-4cc4-83f2-c73c5387d586"
@@ -4310,6 +4310,150 @@ rxversion="8.3">
 					<smartfoldernode
 					id="63a0768d-8632-409b-adbf-fe7850003e81"
 					name="Jill_SmokeTest">
+						<smartfoldernode
+						id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
+						name="Validate_CSP_Client&amp;Server_Versions">
+							<testcase
+							id="7b36cbf5-ea65-4477-8761-85c48415c8f2"
+							name="Software_Version">
+								<testmodule
+								id="ada6c38d-fd39-4d51-96fc-493b0c32d98e"
+								name="Verify_Version_Deployed">
+								</testmodule>
+								<testmodule
+								id="c7a8b3fc-bf23-4dc9-9148-8df65082e79d"
+								name="Verify_Version_Client">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="29d7aa7d-438a-48af-9c73-c769338bb4ed"
+						name="Validate_Database_Versions">
+							<testcase
+							id="3bfd0103-45d6-4432-bde2-361c5d3bc600"
+							name="CSP_DBVersion">
+								<testmodule
+								id="9e21fd46-cc6c-43a1-9b44-3d4cfd8fbcd6"
+								name="dbVesrion">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="cac41d4d-1014-4078-a295-7867a984b889"
+							name="DCT_DBVersion">
+								<testmodule
+								id="b5eecffc-fa79-46cd-831f-63001631a7e4"
+								name="DCDBVersion">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f"
+							name="Reporting_DBVersion">
+								<testmodule
+								id="e5f203a1-c64d-4e13-aa87-46a1a717402a"
+								name="ReportingDBVersion">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
+						name="Validate_DCT&amp;RCCHub_Versions">
+							<testcase
+							id="1d9928dd-974b-4bf9-b839-09c761466da1"
+							name="NavigateTo_Azure">
+								<testmodule
+								id="6d0ed2a7-3410-43b5-9e4a-a788595335d3"
+								name="Open_Azure">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="b468f615-5d6f-4e8c-b782-e6f70c90b66d"
+							name="Select_LoginUser">
+								<testmodule
+								id="95156093-0ab3-4070-be1e-24d297632f9b"
+								name="SelectUserName">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="dc0c52da-a56e-4de2-b8e9-71f4051f1193"
+							name="EnterPassword">
+								<testmodule
+								id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
+								name="EnterAzurePassword">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="97aaa3ea-6ea0-4622-9002-ad2b4479e683"
+							name="ClickSignIn">
+								<testmodule
+								id="61affaa5-983b-4a34-bca5-bcb76a79c5a3"
+								name="Click_Signin">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="55d94e9c-09f3-492b-977b-eb8d911a3296"
+							name="ClickNoButton">
+								<testmodule
+								id="0e3e1051-9c18-4aea-b429-fa1938fbf65a"
+								name="Click_NoButton">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="a0ca6e5b-0022-4873-a172-ead549a588aa"
+							name="Click_DebugConsole">
+								<testmodule
+								id="9ca20ed5-c4cb-4992-b852-765aae5682bc"
+								name="DebugConsole">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="18f18f0d-1c6a-49a8-8f92-171c724177da"
+							name="OpenPowerShell">
+								<testmodule
+								id="d594040e-8c1a-44fa-b1e7-bdb6e6a6da3c"
+								name="Click_PowerShell">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751"
+							name="CDMKdu">
+								<testmodule
+								id="8de1ae41-2129-4a86-b9ec-fd9aa076591f"
+								name="Query_DCT_Version">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="62006fb2-63fe-43fb-8c36-139d7b9d28a7"
+							name="ValidateDCTVersion">
+								<testmodule
+								id="fb5c89b4-69e8-41db-aad7-9e8ef4cd69a6"
+								name="Validate_DCTVersion">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="d2899b22-b064-42fc-81cc-e3b7b14d3643"
+							name="CD_RCC">
+								<testmodule
+								id="82f2ea28-6380-4d19-b6a6-70ccc3d519e0"
+								name="Query_RCC_Version">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4"
+							name="ValidateRCCVersion">
+								<testmodule
+								id="2b2227c9-a950-4ec8-8316-decf08488671"
+								name="Validate_RCCHub_Version">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="3de66789-7fb1-4996-8500-81d43a94cc32"
+							name="LogoutAzure">
+								<testmodule
+								id="8b52cf35-84a0-4b6a-9aaf-cc4103ba310a"
+								name="Logout_Azure">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 						<smartfoldernode
 						id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64"
 						name="Loginto_RCC">
@@ -5087,244 +5231,8 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
-						id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466"
-						name="Login_DCT">
-							<testcase
-							id="f6a31933-9e9b-46c5-9bad-9b79a53baadd"
-							name="Open_and_Login">
-								<testmodule
-								id="90a9293a-44a7-4c92-9f6c-b9dcff814c38"
-								name="Open_DCT_URL">
-								</testmodule>
-								<testmodule
-								id="bda960f7-3c47-43a2-8a77-6c42be0ad36d"
-								name="Enter_Email">
-								</testmodule>
-								<testmodule
-								id="b7b33304-a200-44a9-a8c0-01fd98c20188"
-								name="Click_NextButton">
-								</testmodule>
-								<testmodule
-								id="9e9ebae2-8af8-44f8-ad00-e76c36be7f75"
-								name="Enter_Password">
-								</testmodule>
-								<testmodule
-								id="e2910a1c-6275-4013-9970-f0b05b74f7ad"
-								name="Click_Submit">
-								</testmodule>
-								<testmodule
-								id="d26bb90f-54e3-47cb-bf3c-0f78378852ed"
-								name="Click_NoButton">
-								</testmodule>
-								<testmodule
-								id="1ac8174a-b9aa-4f43-be4a-7ac958b4488d"
-								name="Verify_DCT_Login">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="1762f5a3-6821-438b-aadd-bb4002c2f2d3"
-						name="Complete_DCTMove">
-							<testcase
-							id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb"
-							name="Validate_DCT_Move">
-								<testmodule
-								id="90083e64-7cd4-4c72-b6ed-e1e8a66c31af"
-								name="Search_TestIdentifier">
-								</testmodule>
-								<testmodule
-								id="35f8ba38-c25d-4f50-9a3e-0f1c6981126a"
-								name="Click_FindButton">
-								</testmodule>
-								<testmodule
-								id="31a3f22c-ca31-41b2-84df-5a202cfc3558"
-								name="Click_ResultButton">
-								</testmodule>
-								<testmodule
-								id="35d5c377-fbf3-4939-9445-643e01ba9913"
-								name="Click_Move">
-								</testmodule>
-								<testmodule
-								id="9127bd4e-9442-44a3-a57b-d772b8cb6de2"
-								name="Enter_Subject">
-								</testmodule>
-								<testmodule
-								id="b762a162-afc5-4e0e-a467-52b80c7f25cb"
-								name="Enter_Visit">
-								</testmodule>
-								<testmodule
-								id="359e4ffb-cdfc-4d3e-ae1b-c65b8836f46e"
-								name="Click_OK">
-								</testmodule>
-								<testmodule
-								id="e147e5ab-f138-4700-a891-0a3cbb04f4e8"
-								name="Click_Confirm">
-								</testmodule>
-								<testmodule
-								id="c33c0fea-7eac-4ef3-8918-698159a3b5f5"
-								name="Enter_TestIdentifier">
-								</testmodule>
-								<testmodule
-								id="ccda4675-ee25-4754-ba02-9812cd772641"
-								name="Click_FindButton">
-								</testmodule>
-								<testmodule
-								id="c9dffa5f-dfa6-4ee4-a9bc-be1f32bec142"
-								name="Confirm_Move">
-								</testmodule>
-								<testmodule
-								id="68d212d1-5df7-4e91-87c5-db6e8fa072d1"
-								name="CloseDCT">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
-						name="Validate_CSP_Client&amp;ServerVersions">
-							<testcase
-							id="7b36cbf5-ea65-4477-8761-85c48415c8f2"
-							name="Software_Version">
-								<testmodule
-								id="ada6c38d-fd39-4d51-96fc-493b0c32d98e"
-								name="Verify_Version_Deployed">
-								</testmodule>
-								<testmodule
-								id="c7a8b3fc-bf23-4dc9-9148-8df65082e79d"
-								name="Verify_Version_Client">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
-						name="Validate_DCT&amp;RCCHub_Version">
-							<testcase
-							id="1d9928dd-974b-4bf9-b839-09c761466da1"
-							name="NavigateTo_Azure">
-								<testmodule
-								id="6d0ed2a7-3410-43b5-9e4a-a788595335d3"
-								name="Open_Azure">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="b468f615-5d6f-4e8c-b782-e6f70c90b66d"
-							name="Select_LoginUser">
-								<testmodule
-								id="95156093-0ab3-4070-be1e-24d297632f9b"
-								name="SelectUserName">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="dc0c52da-a56e-4de2-b8e9-71f4051f1193"
-							name="EnterPassword">
-								<testmodule
-								id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
-								name="EnterAzurePassword">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="97aaa3ea-6ea0-4622-9002-ad2b4479e683"
-							name="ClickSignIn">
-								<testmodule
-								id="61affaa5-983b-4a34-bca5-bcb76a79c5a3"
-								name="Click_Signin">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="55d94e9c-09f3-492b-977b-eb8d911a3296"
-							name="ClickNoButton">
-								<testmodule
-								id="0e3e1051-9c18-4aea-b429-fa1938fbf65a"
-								name="Click_NoButton">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="a0ca6e5b-0022-4873-a172-ead549a588aa"
-							name="Click_DebugConsole">
-								<testmodule
-								id="9ca20ed5-c4cb-4992-b852-765aae5682bc"
-								name="DebugConsole">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="18f18f0d-1c6a-49a8-8f92-171c724177da"
-							name="OpenPowerShell">
-								<testmodule
-								id="d594040e-8c1a-44fa-b1e7-bdb6e6a6da3c"
-								name="Click_PowerShell">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751"
-							name="CDMKdu">
-								<testmodule
-								id="8de1ae41-2129-4a86-b9ec-fd9aa076591f"
-								name="Query_DCT_Version">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="62006fb2-63fe-43fb-8c36-139d7b9d28a7"
-							name="ValidateDCTVersion">
-								<testmodule
-								id="fb5c89b4-69e8-41db-aad7-9e8ef4cd69a6"
-								name="Validate_DCTVersion">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="d2899b22-b064-42fc-81cc-e3b7b14d3643"
-							name="CD_RCC">
-								<testmodule
-								id="82f2ea28-6380-4d19-b6a6-70ccc3d519e0"
-								name="Query_RCC_Version">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4"
-							name="ValidateRCCVersion">
-								<testmodule
-								id="2b2227c9-a950-4ec8-8316-decf08488671"
-								name="Validate_RCCHub_Version">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="3de66789-7fb1-4996-8500-81d43a94cc32"
-							name="LogoutAzure">
-								<testmodule
-								id="8b52cf35-84a0-4b6a-9aaf-cc4103ba310a"
-								name="Logout_Azure">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="29d7aa7d-438a-48af-9c73-c769338bb4ed"
-						name="DBVersion_Check">
-							<testcase
-							id="3bfd0103-45d6-4432-bde2-361c5d3bc600"
-							name="CSP_DBVersion">
-								<testmodule
-								id="9e21fd46-cc6c-43a1-9b44-3d4cfd8fbcd6"
-								name="dbVesrion">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="cac41d4d-1014-4078-a295-7867a984b889"
-							name="DCT_DBVersion">
-								<testmodule
-								id="b5eecffc-fa79-46cd-831f-63001631a7e4"
-								name="DCDBVersion">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f"
-							name="Reporting_DBVersion">
-								<testmodule
-								id="e5f203a1-c64d-4e13-aa87-46a1a717402a"
-								name="ReportingDBVersion">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
 						id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b"
-						name="DB_AssessmentValidation">
+						name="Validate_Database_Assessment">
 							<testcase
 							id="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
 							name="AssessmentValidation">
@@ -5441,6 +5349,98 @@ rxversion="8.3">
 								name="Close_Browser">
 								</testmodule>
 							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="e9aa3ff1-1bc7-429b-9273-a1a6dbf3c466"
+						name="Login_DCT">
+							<testcase
+							id="f6a31933-9e9b-46c5-9bad-9b79a53baadd"
+							name="Open_and_Login">
+								<testmodule
+								id="90a9293a-44a7-4c92-9f6c-b9dcff814c38"
+								name="Open_DCT_URL">
+								</testmodule>
+								<testmodule
+								id="bda960f7-3c47-43a2-8a77-6c42be0ad36d"
+								name="Enter_Email">
+								</testmodule>
+								<testmodule
+								id="b7b33304-a200-44a9-a8c0-01fd98c20188"
+								name="Click_NextButton">
+								</testmodule>
+								<testmodule
+								id="9e9ebae2-8af8-44f8-ad00-e76c36be7f75"
+								name="Enter_Password">
+								</testmodule>
+								<testmodule
+								id="e2910a1c-6275-4013-9970-f0b05b74f7ad"
+								name="Click_Submit">
+								</testmodule>
+								<testmodule
+								id="d26bb90f-54e3-47cb-bf3c-0f78378852ed"
+								name="Click_NoButton">
+								</testmodule>
+								<testmodule
+								id="1ac8174a-b9aa-4f43-be4a-7ac958b4488d"
+								name="Verify_DCT_Login">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="1762f5a3-6821-438b-aadd-bb4002c2f2d3"
+						name="Complete_DCTMove">
+							<testcase
+							id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb"
+							name="Validate_DCT_Move">
+								<testmodule
+								id="90083e64-7cd4-4c72-b6ed-e1e8a66c31af"
+								name="Search_TestIdentifier">
+								</testmodule>
+								<testmodule
+								id="35f8ba38-c25d-4f50-9a3e-0f1c6981126a"
+								name="Click_FindButton">
+								</testmodule>
+								<testmodule
+								id="31a3f22c-ca31-41b2-84df-5a202cfc3558"
+								name="Click_ResultButton">
+								</testmodule>
+								<testmodule
+								id="35d5c377-fbf3-4939-9445-643e01ba9913"
+								name="Click_Move">
+								</testmodule>
+								<testmodule
+								id="9127bd4e-9442-44a3-a57b-d772b8cb6de2"
+								name="Enter_Subject">
+								</testmodule>
+								<testmodule
+								id="b762a162-afc5-4e0e-a467-52b80c7f25cb"
+								name="Enter_Visit">
+								</testmodule>
+								<testmodule
+								id="359e4ffb-cdfc-4d3e-ae1b-c65b8836f46e"
+								name="Click_OK">
+								</testmodule>
+								<testmodule
+								id="e147e5ab-f138-4700-a891-0a3cbb04f4e8"
+								name="Click_Confirm">
+								</testmodule>
+								<testmodule
+								id="c33c0fea-7eac-4ef3-8918-698159a3b5f5"
+								name="Enter_TestIdentifier">
+								</testmodule>
+								<testmodule
+								id="ccda4675-ee25-4754-ba02-9812cd772641"
+								name="Click_FindButton">
+								</testmodule>
+								<testmodule
+								id="c9dffa5f-dfa6-4ee4-a9bc-be1f32bec142"
+								name="Confirm_Move">
+								</testmodule>
+								<testmodule
+								id="68d212d1-5df7-4e91-87c5-db6e8fa072d1"
+								name="CloseDCT">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<teardown
 						id="c18465e9-a71b-4523-9da3-a4353ced7af5"
@@ -5749,7 +5749,7 @@ rxversion="8.3">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="Smoke">
 		<testconfiguration
 		name="Smoke">
 			<testcontainer
@@ -5888,16 +5888,46 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="04909fcc-b521-4a5f-b788-cfbcedc284e7">
+			</testcontainer>
+			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
 			</testcontainer>
 			<testcontainer
-			id="a1466124-6b75-4495-a467-58b136e9ff61">
+			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
 			</testcontainer>
 			<testcontainer
-			id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed">
+			id="9971752f-f697-47c2-b4be-09bdab1f18a2">
+			</testcontainer>
+			<testcontainer
+			id="9da84430-e516-45c6-8b32-0c44c43d9173">
+			</testcontainer>
+			<testcontainer
+			id="a9f82130-40c0-4bf2-a04c-d3b1ab9eeece">
+			</testcontainer>
+			<testcontainer
+			id="b2875f8e-5ac6-415e-93f0-d000f1cdaf3f">
+			</testcontainer>
+			<testcontainer
+			id="b5af504c-c695-4165-808b-014bc35e7534">
+			</testcontainer>
+			<testcontainer
+			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
 			</testcontainer>
 			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
+			</testcontainer>
+			<testcontainer
+			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
+			</testcontainer>
+			<testcontainer
+			id="d79c9852-484e-4cc4-83f2-c73c5387d586">
+			</testcontainer>
+			<testcontainer
+			id="f3e7c860-60d5-49b3-9110-18bd9da5df17">
+			</testcontainer>
+			<testcontainer
+			id="f4d4c449-c0cd-40ed-90ee-f2190874ac70">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

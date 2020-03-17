@@ -436,8 +436,8 @@ rxversion="8.3">
 			datasource="TenantConnector"
 			errorbehavior="Stop"
 			id="12672266-c3e5-4da0-bf18-959502d59662"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Regression"
 			warnunboundvariables="False">
 			</smartfoldernode>
@@ -927,7 +927,7 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="0"
+			maxrange="2"
 			minrange="0"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
@@ -1379,11 +1379,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="ServerVersionDeployed"
-					value="2.0.0.145">
+					value="2.0.0.152">
 					</param>
 					<param
 					name="ClientVersionDeployed"
-					value="2.0.0-rc.145">
+					value="2.0.0-rc.152">
 					</param>
 					<param
 					name="RandNum"
@@ -1961,7 +1961,7 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0"
-			maxrange="0"
+			maxrange="2"
 			minrange="0"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
@@ -4989,7 +4989,7 @@ rxversion="8.3">
 		<DataSource
 		id="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="API_Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
