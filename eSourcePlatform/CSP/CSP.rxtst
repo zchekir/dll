@@ -936,6 +936,38 @@ rxversion="8.3">
 			name="Generate_ExternalUserKey">
 			</testcase>
 			<testmodule
+			id="3fa8e4d8-b335-438e-a51d-f00f9883a466"
+			name="GetAssessmentAttemptOutcomes"
+			ref="532f08c6-9cad-477b-91cb-8ffa5f4e7cbb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="2c6559e8-219c-4622-9103-c0fbc9099796"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="70379184-117a-4f4c-8e7b-cb010dbe199b"
+					variablename="AutoToken">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="5857463e-f1da-4298-b2c4-35c196dfea58"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="studyProtocolName"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="5c3bf219-3d7a-4f33-bc04-052929e44262"
+					variablename="StudyProtocolName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="430a094f-65a8-4db4-be14-0f981503e9fc"
 			name="Validate_Extract_Downloaded"
 			ref="4488b4f0-9d37-4ce0-af17-188ef70d7a63"
@@ -2151,6 +2183,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9"
+			name="V2_AssessmentAttemptOutcomes">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -4859,6 +4895,14 @@ rxversion="8.3">
 								name="CheckRrunFlag">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9"
+							name="V2_AssessmentAttemptOutcomes">
+								<testmodule
+								id="3fa8e4d8-b335-438e-a51d-f00f9883a466"
+								name="GetAssessmentAttemptOutcomes">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="98041b6b-3cd8-422a-93f4-ab23ce4fd382"
@@ -4989,7 +5033,7 @@ rxversion="8.3">
 		<DataSource
 		id="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="1"
 		name="API_Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5073,7 +5117,7 @@ rxversion="8.3">
 		<DataSource
 		id="0223bb73-bdf8-475b-9924-27f470878d7d"
 		includefile="Unchecked"
-		lastknownrowcount="196"
+		lastknownrowcount="189"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5628,100 +5672,37 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="037aeee4-7133-450a-b13e-79f6464da1e0">
+			id="04421345-e5aa-49b4-b420-101dbea32a24">
 			</testcontainer>
 			<testcontainer
-			id="10c333f8-e857-4fad-823d-294804009f8b">
-			</testcontainer>
-			<testcontainer
-			id="12672266-c3e5-4da0-bf18-959502d59662">
-			</testcontainer>
-			<testcontainer
-			id="2dbb0c47-ef76-4518-b068-bfaeeab934d1">
-			</testcontainer>
-			<testcontainer
-			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
-			</testcontainer>
-			<testcontainer
-			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
-			</testcontainer>
-			<testcontainer
-			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
-			</testcontainer>
-			<testcontainer
-			id="48b1148e-3ad5-47f7-bc8a-ccf5679419d7">
-			</testcontainer>
-			<testcontainer
-			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
+			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
+			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
 			</testcontainer>
 			<testcontainer
-			id="6e082396-bffa-4d84-b254-0da30d111799">
+			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
 			</testcontainer>
 			<testcontainer
-			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			id="9fe98d67-940d-4451-ae47-83f979151dc2">
 			</testcontainer>
 			<testcontainer
-			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
 			</testcontainer>
 			<testcontainer
-			id="8025452f-675f-42b8-876b-34ae207f797b">
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
-			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
+			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 			<testcontainer
-			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
+			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
 			</testcontainer>
 			<testcontainer
-			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
-			</testcontainer>
-			<testcontainer
-			id="9a551dc2-c159-4cf4-ac8b-d334cda2dfbd">
-			</testcontainer>
-			<testcontainer
-			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
-			</testcontainer>
-			<testcontainer
-			id="a54e2f22-375f-4fb2-838a-084cd4471e50">
-			</testcontainer>
-			<testcontainer
-			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
-			</testcontainer>
-			<testcontainer
-			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
-			</testcontainer>
-			<testcontainer
-			id="ba7d02db-83df-4a58-a877-7079c0c072d1">
-			</testcontainer>
-			<testcontainer
-			id="baf76252-a794-4bae-b009-029b41fb4909">
-			</testcontainer>
-			<testcontainer
-			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
-			</testcontainer>
-			<testcontainer
-			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
-			</testcontainer>
-			<testcontainer
-			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
-			</testcontainer>
-			<testcontainer
-			id="dd902b00-d8d8-4525-90ea-821d15c7d151">
-			</testcontainer>
-			<testcontainer
-			id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db">
-			</testcontainer>
-			<testcontainer
-			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
-			</testcontainer>
-			<testcontainer
-			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
+			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

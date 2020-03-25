@@ -2112,6 +2112,18 @@
       <DependentUpon>Verify_Version_Deployed.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="GetAssessmentAttemptOutcomes.cs">
+      <BoundTo>946e90e3-3692-43f2-b12d-5aa24e3bf6a8</BoundTo>
+      <DependentUpon>GetAssessmentAttemptOutcomes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>47c3ce27-6e34-47af-98d3-f256f74777c0</id>
+    </Compile>
+    <Compile Include="GetAssessmentAttemptOutcomes.UserCode.cs">
+      <BoundTo>946e90e3-3692-43f2-b12d-5aa24e3bf6a8</BoundTo>
+      <DependentUpon>GetAssessmentAttemptOutcomes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>22013a69-1911-4577-94c2-d7dbbd0f5162</id>
+    </Compile>
     <Compile Include="InternalAPIModules\AuthenticateAsInternalUser.cs">
       <DependentUpon>AuthenticateAsInternalUser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -2411,6 +2423,18 @@
       <BoundTo>54e6a2c6-c2be-4b0a-bafa-d67d72886585</BoundTo>
       <DependentUpon>Validate_ResetPassword_LoggedIn.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="OutComesAPI.cs">
+      <BoundTo>42ac416d-b568-4f7b-a4ea-e75b821c76db</BoundTo>
+      <DependentUpon>OutComesAPI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d2d6f13b-1b77-40f5-b4cc-1689855b68fb</id>
+    </Compile>
+    <Compile Include="OutComesAPI.UserCode.cs">
+      <BoundTo>42ac416d-b568-4f7b-a4ea-e75b821c76db</BoundTo>
+      <DependentUpon>OutComesAPI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6c820647-a78c-41c9-a7d3-d3f38ff2b3ad</id>
     </Compile>
     <Compile Include="ParticipantsPage\Change_Enroll_Status.cs">
       <id>c2d06657-c550-4e99-b482-e02ea65bd452</id>
@@ -4248,6 +4272,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c718511d-4281-405c-9160-251f311d2703</recordtableid>
     </None>
+    <None Include="GetAssessmentAttemptOutcomes.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>946e90e3-3692-43f2-b12d-5aa24e3bf6a8</id>
+      <recordtableid>532f08c6-9cad-477b-91cb-8ffa5f4e7cbb</recordtableid>
+    </None>
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -4376,6 +4405,11 @@
       <id>54e6a2c6-c2be-4b0a-bafa-d67d72886585</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c31fd7d3-6ab8-4b02-8d6c-eda02646b5c9</recordtableid>
+    </None>
+    <None Include="OutComesAPI.rxrec">
+      <id>42ac416d-b568-4f7b-a4ea-e75b821c76db</id>
+      <recordtableid>ddc58c10-0398-41ce-a566-66eeaa23ff2d</recordtableid>
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
     </None>
     <None Include="packages.config">
       <id>d64b814a-7bf2-4260-b591-370f7b312894</id>
