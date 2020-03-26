@@ -1469,6 +1469,22 @@ rxversion="8.3">
 					name="cbbv"
 					value="cbbVersion=8.12.0+c2c8c66+release%2F8.12.0">
 					</param>
+					<param
+					name="Swager-URL"
+					value="https://cgst-qc-bear.azurewebsites.net/swagger/">
+					</param>
+					<param
+					name="Swager-Key&amp;Secret"
+					value="{{&quot;key&quot;: &quot;2ce1bc13-5d4d-4007-b57e-bb1dd32abba5&quot;,&quot;secret&quot;: &quot;657f31f0-5c9f-4047-931c-30390cab531a&quot;}">
+					</param>
+					<param
+					name="Swager-StudProtocol"
+					value="AutomationStudy">
+					</param>
+					<param
+					name="Swager-HTTPCODE"
+					value="200">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -1606,6 +1622,38 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5f5d568f-81e4-4da9-81d5-10f044022bb2"
+			name="swaggerAPI"
+			ref="13e4a129-f95e-4991-9c6b-4c0f0ad3992f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Swager-URL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="b747c2e7-5e8c-4e07-8215-4c43de5b2b34"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="Swager-Key&amp;Secret"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="1767b877-b494-4ef0-8164-5116c1f14fb3"
+					variablename="keysecret_">
+					</var>
+					<var
+					dataname="Swager-StudProtocol"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="29cad965-c985-441e-bb71-b0c920bdf737"
+					variablename="StudyProtocolName">
+					</var>
+					<var
+					dataname="Swager-HTTPCODE"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="2c5d0111-1dd2-4d44-a0eb-51fb6b39e9b8"
+					variablename="HTTPCODE">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1803,6 +1851,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="69f50943-5b2d-41d4-ac43-d7cce45967af"
+			name="SwaggerAPI">
+			</smartfoldernode>
 			<modulegroup
 			id="6b226dc0-7d52-4ece-8044-50dd29ea2f38"
 			name="Login"
@@ -3013,6 +3065,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4"
+			name="swaggerAPI">
+			</testcase>
 			<testmodule
 			id="b55ff947-a98a-4cfb-b556-b9dc239a96a5"
 			name="Click_Participants_Tab"
@@ -5012,6 +5068,18 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
+						<smartfoldernode
+						id="69f50943-5b2d-41d4-ac43-d7cce45967af"
+						name="SwaggerAPI">
+							<testcase
+							id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4"
+							name="swaggerAPI">
+								<testmodule
+								id="5f5d568f-81e4-4da9-81d5-10f044022bb2"
+								name="swaggerAPI">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 					</smartfoldernode>
 					<smartfoldernode
 					id="9ab34d41-a11f-476f-a90f-c56f30c05e5c"
@@ -5117,7 +5185,7 @@ rxversion="8.3">
 		<DataSource
 		id="0223bb73-bdf8-475b-9924-27f470878d7d"
 		includefile="Unchecked"
-		lastknownrowcount="189"
+		lastknownrowcount="196"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5672,37 +5740,16 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="04421345-e5aa-49b4-b420-101dbea32a24">
-			</testcontainer>
-			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
+			id="69f50943-5b2d-41d4-ac43-d7cce45967af">
 			</testcontainer>
 			<testcontainer
-			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
-			</testcontainer>
-			<testcontainer
-			id="9fe98d67-940d-4451-ae47-83f979151dc2">
-			</testcontainer>
-			<testcontainer
-			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
-			</testcontainer>
-			<testcontainer
-			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
-			</testcontainer>
-			<testcontainer
-			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
-			</testcontainer>
-			<testcontainer
-			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
+			id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

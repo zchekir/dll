@@ -35,6 +35,7 @@ namespace CSP
         CSPRepositoryFolders.CogstateSSOAppFolder _cogstatesso;
         CSPRepositoryFolders.FirefoxDownloadPopupAppFolder _firefoxdownloadpopup;
         CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
+        CSPRepositoryFolders.SwaggerUIAppFolder _swaggerui;
 
         /// <summary>
         /// Gets the singleton class instance representing the CSPRepository element repository.
@@ -59,6 +60,7 @@ namespace CSP
             _cogstatesso = new CSPRepositoryFolders.CogstateSSOAppFolder(this);
             _firefoxdownloadpopup = new CSPRepositoryFolders.FirefoxDownloadPopupAppFolder(this);
             _cogstatesolutionplatformchrome = new CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
+            _swaggerui = new CSPRepositoryFolders.SwaggerUIAppFolder(this);
         }
 
 #region Variables
@@ -387,6 +389,15 @@ namespace CSP
         public virtual CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder CogstateSolutionPlatformChrome
         {
             get { return _cogstatesolutionplatformchrome; }
+        }
+
+        /// <summary>
+        /// The SwaggerUI folder.
+        /// </summary>
+        [RepositoryFolder("2cb5d9b1-78a7-4a32-828f-e7d1d5780c86")]
+        public virtual CSPRepositoryFolders.SwaggerUIAppFolder SwaggerUI
+        {
+            get { return _swaggerui; }
         }
     }
 
@@ -8635,6 +8646,228 @@ namespace CSP
                 get
                 {
                     return _downloadedextractfileInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SwaggerUIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2cb5d9b1-78a7-4a32-828f-e7d1d5780c86")]
+        public partial class SwaggerUIAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cogstateembeddedapiInfo;
+            RepoItemInfo _clicktryitoutInfo;
+            RepoItemInfo _keysecretInfo;
+            RepoItemInfo _entercredentialsInfo;
+            RepoItemInfo _clickexecuteInfo;
+            RepoItemInfo _studyprotocolnameInfo;
+            RepoItemInfo _n200codevalidationInfo;
+
+            /// <summary>
+            /// Creates a new SwaggerUI  folder.
+            /// </summary>
+            public SwaggerUIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SwaggerUI", "/dom[@caption='Swagger UI']", parentFolder, 30000, null, false, "2cb5d9b1-78a7-4a32-828f-e7d1d5780c86", "")
+            {
+                _cogstateembeddedapiInfo = new RepoItemInfo(this, "CogstateEmbeddedAPI", ".//h2[@innertext='Cogstate Embedded API']", 30000, null, "70328fbe-f8c2-4fe5-b36c-2f8edf3ec8d7");
+                _clicktryitoutInfo = new RepoItemInfo(this, "ClickTryItOut", ".//button[@innertext='Try it out ']", 30000, null, "53dd57cb-a7fa-4803-9c4f-00d7222d9603");
+                _keysecretInfo = new RepoItemInfo(this, "KeySecret", ".//textarea[@innertext~'^\\{\\ \\ \"key\":\\ \"abc123\",\\ \\ \"s']", 30000, null, "28ced478-c1b3-4a34-95a1-f1a4f162c789");
+                _entercredentialsInfo = new RepoItemInfo(this, "EnterCredentials", ".//textarea[@required='False']", 30000, null, "7e0fe3cf-a70a-4fcd-b835-698d46b8280b");
+                _clickexecuteInfo = new RepoItemInfo(this, "ClickExecute", ".//button[@innertext='Execute']", 30000, null, "dddf930f-9a25-4ef9-98e8-f0e772b0ba03");
+                _studyprotocolnameInfo = new RepoItemInfo(this, "StudyProtocolName", ".//input[@title='']", 30000, null, "9823d05d-fbc7-4869-9e3f-9424ea30b009");
+                _n200codevalidationInfo = new RepoItemInfo(this, "N200Codevalidation", ".//td[@innertext='200']", 30000, null, "7f4da6cb-50a7-45c0-af10-7106d33f7058");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2cb5d9b1-78a7-4a32-828f-e7d1d5780c86")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2cb5d9b1-78a7-4a32-828f-e7d1d5780c86")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CogstateEmbeddedAPI item.
+            /// </summary>
+            [RepositoryItem("70328fbe-f8c2-4fe5-b36c-2f8edf3ec8d7")]
+            public virtual Ranorex.H2Tag CogstateEmbeddedAPI
+            {
+                get
+                {
+                    return _cogstateembeddedapiInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateEmbeddedAPI item info.
+            /// </summary>
+            [RepositoryItemInfo("70328fbe-f8c2-4fe5-b36c-2f8edf3ec8d7")]
+            public virtual RepoItemInfo CogstateEmbeddedAPIInfo
+            {
+                get
+                {
+                    return _cogstateembeddedapiInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickTryItOut item.
+            /// </summary>
+            [RepositoryItem("53dd57cb-a7fa-4803-9c4f-00d7222d9603")]
+            public virtual Ranorex.ButtonTag ClickTryItOut
+            {
+                get
+                {
+                    return _clicktryitoutInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickTryItOut item info.
+            /// </summary>
+            [RepositoryItemInfo("53dd57cb-a7fa-4803-9c4f-00d7222d9603")]
+            public virtual RepoItemInfo ClickTryItOutInfo
+            {
+                get
+                {
+                    return _clicktryitoutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KeySecret item.
+            /// </summary>
+            [RepositoryItem("28ced478-c1b3-4a34-95a1-f1a4f162c789")]
+            public virtual Ranorex.TextAreaTag KeySecret
+            {
+                get
+                {
+                    return _keysecretInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KeySecret item info.
+            /// </summary>
+            [RepositoryItemInfo("28ced478-c1b3-4a34-95a1-f1a4f162c789")]
+            public virtual RepoItemInfo KeySecretInfo
+            {
+                get
+                {
+                    return _keysecretInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterCredentials item.
+            /// </summary>
+            [RepositoryItem("7e0fe3cf-a70a-4fcd-b835-698d46b8280b")]
+            public virtual Ranorex.TextAreaTag EnterCredentials
+            {
+                get
+                {
+                    return _entercredentialsInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterCredentials item info.
+            /// </summary>
+            [RepositoryItemInfo("7e0fe3cf-a70a-4fcd-b835-698d46b8280b")]
+            public virtual RepoItemInfo EnterCredentialsInfo
+            {
+                get
+                {
+                    return _entercredentialsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickExecute item.
+            /// </summary>
+            [RepositoryItem("dddf930f-9a25-4ef9-98e8-f0e772b0ba03")]
+            public virtual Ranorex.ButtonTag ClickExecute
+            {
+                get
+                {
+                    return _clickexecuteInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickExecute item info.
+            /// </summary>
+            [RepositoryItemInfo("dddf930f-9a25-4ef9-98e8-f0e772b0ba03")]
+            public virtual RepoItemInfo ClickExecuteInfo
+            {
+                get
+                {
+                    return _clickexecuteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The StudyProtocolName item.
+            /// </summary>
+            [RepositoryItem("9823d05d-fbc7-4869-9e3f-9424ea30b009")]
+            public virtual Ranorex.InputTag StudyProtocolName
+            {
+                get
+                {
+                    return _studyprotocolnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StudyProtocolName item info.
+            /// </summary>
+            [RepositoryItemInfo("9823d05d-fbc7-4869-9e3f-9424ea30b009")]
+            public virtual RepoItemInfo StudyProtocolNameInfo
+            {
+                get
+                {
+                    return _studyprotocolnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The N200Codevalidation item.
+            /// </summary>
+            [RepositoryItem("7f4da6cb-50a7-45c0-af10-7106d33f7058")]
+            public virtual Ranorex.TdTag N200Codevalidation
+            {
+                get
+                {
+                    return _n200codevalidationInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The N200Codevalidation item info.
+            /// </summary>
+            [RepositoryItemInfo("7f4da6cb-50a7-45c0-af10-7106d33f7058")]
+            public virtual RepoItemInfo N200CodevalidationInfo
+            {
+                get
+                {
+                    return _n200codevalidationInfo;
                 }
             }
         }

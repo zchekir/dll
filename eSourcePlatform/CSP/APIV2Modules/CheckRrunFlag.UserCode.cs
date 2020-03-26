@@ -40,7 +40,7 @@ namespace CSP.APIV2Modules
 
 		public void RrunFlag(string dbserver, string database, string username, string password, string authentication, string ExternalID)
 		{
-			Report.Log(ReportLevel.Info, "zak: " +  ExternalID );
+		
 			
 			dt.Reset();
 			
@@ -60,6 +60,9 @@ namespace CSP.APIV2Modules
    left join userdata.[user] on  userdata.[user].personid=p.personid
    where P.IQnumber =@ExternalID";
 			
+			do{
+				Delay.Seconds(15);
+				Report.Log(ReportLevel.Info, "Checking r-run Flag ...Inprogress" );
 			//Connecting to SQL DB:
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 			//CreateObject:
@@ -67,9 +70,9 @@ namespace CSP.APIV2Modules
 			da.SelectCommand.Parameters.AddWithValue("@ExternalID", ExternalID);
 			// Get the data from DB
 			using (da)
-			{
+			
 				da.Fill(dt);
-			}
+			}  while ( dt.Rows.Count < 1);
 			
 			string Flag = dt.Rows[0][1].ToString();
 			string IQ = dt.Rows[0][2].ToString();
