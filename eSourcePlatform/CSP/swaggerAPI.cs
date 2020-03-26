@@ -148,40 +148,42 @@ namespace CSP
             Host.Current.OpenBrowser(DOM, "Chrome", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$_Embedded_API) on item 'SwaggerUI.CogstateEmbeddedAPI'.", repo.SwaggerUI.CogstateEmbeddedAPIInfo, new RecordItemIndex(1));
+            Report.Screenshot(ReportLevel.Info, "User", "", repo.SwaggerUI.Self, false, new RecordItemIndex(1));
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$_Embedded_API) on item 'SwaggerUI.CogstateEmbeddedAPI'.", repo.SwaggerUI.CogstateEmbeddedAPIInfo, new RecordItemIndex(2));
             //Validate.AttributeEqual(repo.SwaggerUI.CogstateEmbeddedAPIInfo, "InnerText", _Embedded_API);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SwaggerUI.ClickTryItOut' at Center.", repo.SwaggerUI.ClickTryItOutInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SwaggerUI.ClickTryItOut' at Center.", repo.SwaggerUI.ClickTryItOutInfo, new RecordItemIndex(3));
             repo.SwaggerUI.ClickTryItOut.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$StudyProtocolName' with focus on 'SwaggerUI.StudyProtocolName'.", repo.SwaggerUI.StudyProtocolNameInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$StudyProtocolName' with focus on 'SwaggerUI.StudyProtocolName'.", repo.SwaggerUI.StudyProtocolNameInfo, new RecordItemIndex(4));
             repo.SwaggerUI.StudyProtocolName.PressKeys(StudyProtocolName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SwaggerUI.KeySecret'.", repo.SwaggerUI.KeySecretInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'SwaggerUI.KeySecret'.", repo.SwaggerUI.KeySecretInfo, new RecordItemIndex(5));
             Keyboard.PrepareFocus(repo.SwaggerUI.KeySecret);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'SwaggerUI.KeySecret'.", repo.SwaggerUI.KeySecretInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'SwaggerUI.KeySecret'.", repo.SwaggerUI.KeySecretInfo, new RecordItemIndex(6));
             repo.SwaggerUI.KeySecret.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$keysecret_' with focus on 'SwaggerUI.EnterCredentials'.", repo.SwaggerUI.EnterCredentialsInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$keysecret_' with focus on 'SwaggerUI.EnterCredentials'.", repo.SwaggerUI.EnterCredentialsInfo, new RecordItemIndex(7));
             repo.SwaggerUI.EnterCredentials.PressKeys(keysecret_);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SwaggerUI.ClickExecute' at Center.", repo.SwaggerUI.ClickExecuteInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SwaggerUI.ClickExecute' at Center.", repo.SwaggerUI.ClickExecuteInfo, new RecordItemIndex(8));
             repo.SwaggerUI.ClickExecute.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$HTTPCODE) on item 'SwaggerUI.N200Codevalidation'.", repo.SwaggerUI.N200CodevalidationInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$HTTPCODE) on item 'SwaggerUI.N200Codevalidation'.", repo.SwaggerUI.N200CodevalidationInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.SwaggerUI.N200CodevalidationInfo, "InnerText", HTTPCODE);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'SwaggerUI'.", repo.SwaggerUI.SelfInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'SwaggerUI'.", repo.SwaggerUI.SelfInfo, new RecordItemIndex(10));
             Host.Current.CloseApplication(repo.SwaggerUI.Self, new Duration(0));
             Delay.Milliseconds(0);
             
