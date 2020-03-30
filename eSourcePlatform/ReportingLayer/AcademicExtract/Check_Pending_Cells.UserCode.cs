@@ -25,7 +25,9 @@ using Ranorex.Core.Testing;
 namespace ReportingLayer.AcademicExtract
 {
     public partial class Check_Pending_Cells
+    	
     {
+    	int i;
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -45,8 +47,11 @@ namespace ReportingLayer.AcademicExtract
         	//Build SQL query and connection string
         	string query = @"SELECT * 
 							FROM [dbo].[vwAcademicExtract]
-							WHERE TestIdentifier = @TestIdentifier";
+				
+			WHERE TestIdentifier = @TestIdentifier";
         	
+        	//do while the peeding data appears in DB
+        	do {
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 			
 			SqlDataAdapter da = new SqlDataAdapter(query,sqlConnString);
@@ -60,7 +65,7 @@ namespace ReportingLayer.AcademicExtract
 			}
 			
 			//Loop over the entire first row and confirm there are no <Pending> cells
-			for (int i = 0; i < dt.Columns.Count; i++)
+			for ( i = 0; i < dt.Columns.Count; i++)
 			{				
 				if (dt.Rows[0][i].ToString() == "<Pending>")
 				{
@@ -72,7 +77,13 @@ namespace ReportingLayer.AcademicExtract
 				}
 
 			}
+			
+			//do while the peeding data appears in DB
+        } while (dt.Rows[0][i].ToString() == "<Pending>");
+        	
+        	
         }
+        
 
     }
 }
