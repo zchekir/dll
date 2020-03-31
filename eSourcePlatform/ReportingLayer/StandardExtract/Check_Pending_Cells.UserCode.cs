@@ -25,11 +25,10 @@ using Ranorex.Core.Testing;
 namespace ReportingLayer.StandardExtract
 {
     public partial class Check_Pending_Cells
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
+    {	
+    	int i;
+        Boolean isPending = false; 
+        DataTable dt = new DataTable();
         private void Init()
         {
             // Your recording specific initialization code goes here.
@@ -47,6 +46,9 @@ namespace ReportingLayer.StandardExtract
 							FROM [dbo].[vwStandardExtract]
 							WHERE TestIdentifier = @TestIdentifier";
         	
+        	//do while the peeding data appears in DB
+        	do{
+        	
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 			
 			SqlDataAdapter da = new SqlDataAdapter(query,sqlConnString);
@@ -62,18 +64,22 @@ namespace ReportingLayer.StandardExtract
 			}
 			
 			//Loop over the entire first row and confirm there are no <Pending> cells
-			for (int i = 0; i < dt.Columns.Count; i++)
+			for (i = 0; i < dt.Columns.Count; i++)
 			{				
 				if (dt.Rows[0][i].ToString() == "<Pending>")
 				{
-					Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+					    isPending = true;
+                        Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+                        Delay.Seconds(4);
 				}
 				else
 				{
 					Report.Success(dt.Columns[i].ColumnName + ": " + dt.Rows[0][i].ToString());
 				}
+				
+			} 
 
-			}
+			}while (isPending);
         }
 
     }

@@ -67,7 +67,7 @@ namespace ReportingLayer
             set { _ProtocolID = value; }
         }
 
-        string _CSPUsername = "";
+        string _CSPUsername = "zchekir@cogstate.com";
 
         /// <summary>
         /// Gets or sets the value of variable CSPUsername.

@@ -28,6 +28,9 @@ namespace ReportingLayer.AcademicExtract
     	
     {
     	int i;
+        Boolean isPending = false; 
+        DataTable dt = new DataTable();
+        	
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -42,7 +45,6 @@ namespace ReportingLayer.AcademicExtract
         /// </summary>
         public void CheckPending(string dbserver, string database, string username, string password, string authentication)
         {
-        	DataTable dt = new DataTable();
         	
         	//Build SQL query and connection string
         	string query = @"SELECT * 
@@ -51,7 +53,9 @@ namespace ReportingLayer.AcademicExtract
 			WHERE TestIdentifier = @TestIdentifier";
         	
         	//do while the peeding data appears in DB
-        	do {
+        	do{
+        	
+        		
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 			
 			SqlDataAdapter da = new SqlDataAdapter(query,sqlConnString);
@@ -64,26 +68,47 @@ namespace ReportingLayer.AcademicExtract
 				da.Fill(dt);
 			}
 			
+		
 			//Loop over the entire first row and confirm there are no <Pending> cells
 			for ( i = 0; i < dt.Columns.Count; i++)
 			{				
-				if (dt.Rows[0][i].ToString() == "<Pending>")
-				{
-					Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
-				}
-				else
+					
+					if(dt.Rows[0][i].ToString() == "<Pending>")
+                    {
+                        isPending = true;
+                        Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+                        Delay.Seconds(4);
+                    }
+					
+					else
 				{
 					Report.Success(dt.Columns[i].ColumnName + ": " + dt.Rows[0][i].ToString());
 				}
-
+				
 			}
 			
-			//do while the peeding data appears in DB
-        } while (dt.Rows[0][i].ToString() == "<Pending>");
+        } while (isPending);
+			
         	
+				
+				
+				
+				}
+					
+					
+					
+					
+				}
+				
+			
+
+			
+        
         	
-        }
+        	}
+        
+        
+    
         
 
-    }
-}
+    
