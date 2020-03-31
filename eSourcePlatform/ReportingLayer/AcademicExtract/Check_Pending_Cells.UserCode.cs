@@ -21,6 +21,8 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
+using System.Timers;
+using System.Diagnostics;
 
 namespace ReportingLayer.AcademicExtract
 {
@@ -30,6 +32,11 @@ namespace ReportingLayer.AcademicExtract
     	int i;
         Boolean isPending = false; 
         DataTable dt = new DataTable();
+        
+       // Timer.Equals(2)
+        
+        
+        
         	
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -45,6 +52,8 @@ namespace ReportingLayer.AcademicExtract
         /// </summary>
         public void CheckPending(string dbserver, string database, string username, string password, string authentication)
         {
+        	Stopwatch timer = new Stopwatch();
+            timer.Start();
         	
         	//Build SQL query and connection string
         	string query = @"SELECT * 
@@ -87,25 +96,20 @@ namespace ReportingLayer.AcademicExtract
 				
 			}
 			
+			if ( timer.Elapsed > TimeSpan.FromMinutes(2))
+               break;
         } while (isPending);
 			
         	
 				
-				
-				
-				}
+               }
 					
 					
-					
-					
-				}
-				
-			
-
+              }
+	
 			
         
-        	
-        	}
+   }
         
         
     

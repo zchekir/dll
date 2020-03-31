@@ -21,6 +21,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
+using System.Diagnostics;
 
 namespace ReportingLayer.StandardExtract
 {
@@ -40,7 +41,8 @@ namespace ReportingLayer.StandardExtract
         public void CheckPending(string dbserver, string database, string username, string password, string authentication)
         {
         	DataTable dt = new DataTable();
-        	
+        	Stopwatch timer = new Stopwatch();
+            timer.Start();
         	//Build SQL query and connection string
         	string query = @"SELECT * 
 							FROM [dbo].[vwStandardExtract]
@@ -78,6 +80,9 @@ namespace ReportingLayer.StandardExtract
 				}
 				
 			} 
+			
+			if ( timer.Elapsed > TimeSpan.FromMinutes(2))
+               break;
 
 			}while (isPending);
         }
