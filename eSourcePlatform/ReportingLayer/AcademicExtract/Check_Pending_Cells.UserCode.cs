@@ -64,7 +64,7 @@ namespace ReportingLayer.AcademicExtract
         	//do while the peeding data appears in DB
         	do{
         	
-        		
+        		do{
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 			
 			SqlDataAdapter da = new SqlDataAdapter(query,sqlConnString);
@@ -76,7 +76,7 @@ namespace ReportingLayer.AcademicExtract
 			{
 				da.Fill(dt);
 			}
-			
+			} while ( dt.Rows.Count < 1);
 		
 			//Loop over the entire first row and confirm there are no <Pending> cells
 			for ( i = 0; i < dt.Columns.Count; i++)
@@ -85,7 +85,7 @@ namespace ReportingLayer.AcademicExtract
 					if(dt.Rows[0][i].ToString() == "<Pending>")
                     {
                         isPending = true;
-                        Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+                        
                         Delay.Seconds(4);
                     }
 					
@@ -96,8 +96,12 @@ namespace ReportingLayer.AcademicExtract
 				
 			}
 			
-			if ( timer.Elapsed > TimeSpan.FromMinutes(2))
-               break;
+			if ( timer.Elapsed > TimeSpan.FromMinutes(5)){
+				for ( i = 0; i < dt.Columns.Count; i++){
+				Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+				}
+                break;
+			}
         } while (isPending);
 			
         	

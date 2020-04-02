@@ -81,9 +81,16 @@ namespace ReportingLayer.StandardExtract
 				
 			} 
 			
-			if ( timer.Elapsed > TimeSpan.FromMinutes(2))
-               break;
+			if ( timer.Elapsed > TimeSpan.FromMinutes(2)){
+				
+                for ( i = 0; i < dt.Columns.Count; i++){
+				Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+				}
+                
 
+
+				break;
+			}
 			}while (isPending);
         }
 

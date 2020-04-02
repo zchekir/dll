@@ -41,7 +41,7 @@ namespace ReportingLayer.AcademicExtract
         /// </summary>
         public Check_Pending_Cells()
         {
-            TestIdentifier = "05DE4D94-E0CC-459F-9CBA-27BBB73928BA";
+            TestIdentifier = "E00C148B-3D73-44E0-8AC9-024C50AB397B";
             DBServer = "cgst-qc.database.windows.net";
             RptDatabase = "cgst-bear-rpt";
             CSPUsername = "zchekir@cogstate.com";

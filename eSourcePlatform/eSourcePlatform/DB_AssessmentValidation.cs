@@ -42,11 +42,11 @@ namespace eSourcePlatform
         public DB_AssessmentValidation()
         {
             dbserver = "cgst-qc.database.windows.net";
-            database = "cgst-jill-api";
+            database = "cgst-bear-api";
             username = "zchekir@cogstate.com";
             password = "Cogstate2016";
             authentication = "Active Directory Password";
-            TestIdentifier = "7dbdb45f-b46e-4578-9927-0d4b5244b00b";
+            TestIdentifier = "E00C148B-3D73-44E0-8AC9-024C50AB397B";
             PrimaryOutcome = "0.970444658471641";
             StandardScoreZ = "-2.9910644585573";
             StandardScoreT = "70.089355414427";
