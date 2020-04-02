@@ -8214,6 +8214,8 @@ namespace CSP
             RepoItemInfo _dontaskagaincheckboxInfo;
             RepoItemInfo _nobuttonInfo;
             RepoItemInfo _useanotheraccountInfo;
+            RepoItemInfo _pwInfo;
+            RepoItemInfo _sinbuttonInfo;
 
             /// <summary>
             /// Creates a new MicrosoftSSO  folder.
@@ -8225,6 +8227,8 @@ namespace CSP
                 _dontaskagaincheckboxInfo = new RepoItemInfo(this, "DontAskAgainCheckbox", ".//input[#'KmsiCheckboxField']", 30000, null, "ba195df5-feed-437f-95b7-9ed1e785fa9f");
                 _nobuttonInfo = new RepoItemInfo(this, "NoButton", ".//input[#'idBtn_Back']", 30000, null, "e082725e-688b-4272-ae63-c098ddcb8d1b");
                 _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "c587e610-0819-4121-a032-70dee17445c5");
+                _pwInfo = new RepoItemInfo(this, "PW", ".//input[#'i0118']", 30000, null, "5c82fa8a-e86c-41e7-8207-90d971ac228e");
+                _sinbuttonInfo = new RepoItemInfo(this, "SinButton", ".//input[#'idSIButton9']", 30000, null, "fbcc6722-d4ad-46db-8a35-0686300dbf5b");
             }
 
             /// <summary>
@@ -8344,6 +8348,54 @@ namespace CSP
                 get
                 {
                     return _useanotheraccountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PW item.
+            /// </summary>
+            [RepositoryItem("5c82fa8a-e86c-41e7-8207-90d971ac228e")]
+            public virtual Ranorex.InputTag PW
+            {
+                get
+                {
+                    return _pwInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PW item info.
+            /// </summary>
+            [RepositoryItemInfo("5c82fa8a-e86c-41e7-8207-90d971ac228e")]
+            public virtual RepoItemInfo PWInfo
+            {
+                get
+                {
+                    return _pwInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SinButton item.
+            /// </summary>
+            [RepositoryItem("fbcc6722-d4ad-46db-8a35-0686300dbf5b")]
+            public virtual Ranorex.InputTag SinButton
+            {
+                get
+                {
+                    return _sinbuttonInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SinButton item info.
+            /// </summary>
+            [RepositoryItemInfo("fbcc6722-d4ad-46db-8a35-0686300dbf5b")]
+            public virtual RepoItemInfo SinButtonInfo
+            {
+                get
+                {
+                    return _sinbuttonInfo;
                 }
             }
         }
