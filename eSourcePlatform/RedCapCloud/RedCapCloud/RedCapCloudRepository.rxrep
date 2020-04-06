@@ -210,6 +210,15 @@ rxversion="8.3">
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//i[#'studySite_selectionImage']
 				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="cc2fcb35-a44a-4c99-b36d-ef148457adc6"
+				name="CogstateLabsSite"
+				refimgid="94097018-650f-4abe-bfb7-1ef728fafa4a"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//body//table/tbody/tr/td/div[@innertext='Cogstate Labs']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -392,7 +401,7 @@ rxversion="8.3">
 				name="CogstateBatteryCommentsCRF"
 				refimgid="eddb1bd4-597c-462f-bccb-8df35640a274"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]/body//table/tbody/tr/td[1]/div[@innertext='Cogstate Battery Comments']
+					/dom[@domain=$RCCDOM]/body//table/tbody/tr/td[1]/div[@innertext~'Cogstate Battery Comments']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -597,6 +606,15 @@ rxversion="8.3">
 					/dom[@domain=$RCCDOM]//li/a[@innertext='English - US']
 				</item>
 				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="158c267d-20ad-404a-a918-ca5a78c74218"
+				name="USEnglish"
+				refimgid="2d6c981a-4f61-45c0-90ba-c2ad76d04f6d"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//li/a[@innertext='US - English']
+				</item>
+				<item
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="ce3a1313-e308-48ba-9e51-bf1c7045d365"
@@ -727,6 +745,15 @@ rxversion="8.3">
 					/dom[@domain=$RCCDOM]//div[@id&lt;'cogstateBatteryCRF-CBB']
 				</item>
 				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="48794d1c-59a1-44e5-91d1-cf69b7f314bf"
+				name="CompositeCRF"
+				refimgid="c090d816-8885-4d17-ba1a-cdf69efb5c8f"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[@id&lt;'cogstateBatteryCRF-CompositeOutcomes']
+				</item>
+				<item
 				addcaps="unknown,webelement,fonttag"
 				capname="fonttag"
 				id="6819e2a1-e800-4dd4-b4d3-a809a456668f"
@@ -743,6 +770,24 @@ rxversion="8.3">
 				refimgid="4705437c-ba2f-4ca2-a901-37e9f1e842fd"
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="spantag"
+				id="6eb50653-7933-4c47-bced-aaee65a7d729"
+				name="SaveAndEnterDataButton"
+				refimgid="91f8375f-d484-4862-bee8-80bf62c27bc8"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//span[@innertext='Save and Enter Data']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="b714a78f-9037-4dc5-b6e6-ff1e2d5d803d"
+				name="CogstateLabsSite"
+				refimgid="94e816b1-f604-4a26-98fd-f74d8c01e614"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//li//a[@innertext&lt;'Labs']
 				</item>
 			</folder>
 			<folder
@@ -898,7 +943,7 @@ rxversion="8.3">
 				name="StudyName"
 				refimgid="5b62f0f8-917f-47d4-97e2-6b817a5230d6"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[1]/div[@innertext&gt;$StudyName]
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr/td[1]/div[@innertext&gt;$StudyName]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -907,7 +952,7 @@ rxversion="8.3">
 				name="StudyCategory"
 				refimgid="7c23c6f7-c671-49e1-a7de-c4576db2cdc5"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[2]/div[@innertext='Classic Database']
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr/td[2]/div[@innertext='Classic Database']
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
@@ -916,10 +961,19 @@ rxversion="8.3">
 				name="StudySummary"
 				refimgid="25b3a912-3825-4d94-a1b6-fd7fc0789da8"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]/td[5]/div[@innertext&gt;$BriefSummary]
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr/td[5]/div[@innertext&gt;$BriefSummary]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="792cfd2a-b2c0-458d-850a-67256e48782d"
+				name="ExistingStudy"
+				refimgid="f3c75dc0-afd0-4bfd-8fd4-1fcd607e70de"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr/td[1]/div[@innertext=$ExistingStudy]
 				</item>
 				<basepath>
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr
 				</basepath>
 			</folder>
 			<folder
@@ -946,7 +1000,25 @@ rxversion="8.3">
 				name="TestIdentifier"
 				refimgid="27dfae4c-0514-4a0c-929d-e447faaff05b"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='Test ID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='TestID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="7b315c6d-f486-4b86-878a-cfe1212c5cc2"
+				name="SiteID"
+				refimgid="b27fd2d0-8e6a-447a-bd82-5a142b39c8f7"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//table/tbody/tr/td/div[@innertext~'^[0-9]+$']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="d2e254da-6228-48f8-af89-0bbf2d22454c"
+				name="CGSQC"
+				refimgid="73f08268-5f11-439a-950c-770f15d1e3d3"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='CGSQC']
 				</item>
 				<basepath>
 					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']
@@ -1232,6 +1304,15 @@ rxversion="8.3">
 			searchtimeout="30000ms">
 				/dom[@domain=$RCCDOM]//button[#'login_applyButton']/span[@innertext='Sign in']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="57321a1e-9015-4e18-927e-f6f813fcabad"
+			name="SearchField"
+			refimgid="acd4c5b5-2e0e-42db-bb40-a2f99df9e938"
+			searchtimeout="30000ms">
+				/dom[@domain=$RCCDOM]//input[#'filtersWidget_userInputWidget_studyName']
+			</item>
 			<basepath>
 				/dom[@domain=$RCCDOM]
 			</basepath>
@@ -1344,6 +1425,10 @@ AAAASUVORK5CYII=
 		id="02096c08-fb46-4a9d-893b-fd42eb0d037b"
 		name="SecondSubject">
 			1001001
+		</var>
+		<var
+		id="2ce5e706-e90d-4df4-8420-c32c11ef8eae"
+		name="ExistingStudy">
 		</var>
 	</variables>
 </repository>

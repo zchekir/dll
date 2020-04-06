@@ -37,7 +37,7 @@ namespace CSP.General
        // Server version validation
         public void VersionValidation()
         {
-			Validate.AreEqual(engine.Helpers.WebService.Sversion, ServerVersion);
+			Validate.AreEqual(engine.Helpers.WebService.Sversion,ServerVersion );
         }
 
     }

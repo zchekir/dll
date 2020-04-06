@@ -32,8 +32,7 @@ rxversion="8.3">
 	<variables>
 		<var
 		id="7d3ab88c-0fb5-4065-90d2-80e6d799ab12"
-		name="URL">
-			https://cgst-qc-duo.cogstate.com/template.html#/Login
+		name="CSPURL">
 		</var>
 	</variables>
 	<recorditems>
@@ -67,7 +66,7 @@ rxversion="8.3">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="URL">
+				variable="CSPURL">
 				</binding>
 			</bindings>
 			<info
@@ -81,7 +80,7 @@ rxversion="8.3">
 				PageUrl
 			</matchname>
 			<matchvalue>
-				yourtext
+				$CSPURL
 			</matchvalue>
 		</validationitem>
 		<loggingrecorditem

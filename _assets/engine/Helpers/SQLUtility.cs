@@ -28,6 +28,7 @@ namespace engine.Helpers
 	[UserCodeCollection]
 	public class SQLUtility
 	{
+		
 		// You can use the "Insert New User Code Method" functionality from the context menu,
 		// to add a new method with the attribute [UserCodeMethod].
 		
@@ -36,7 +37,8 @@ namespace engine.Helpers
 		/// </summary>
 		public static DataTable dt = new DataTable();
 		public static string ResetToken;
-		//public static string N_TestIdentifier;
+		public static string MoveOrigTestIdentifier;
+		public static string NewTestIdentifier;
 		
 		/// <summary>
 		/// This will query the database and store the results of the completed assessment into a datatable. This will use the TestIdentifer
@@ -161,8 +163,8 @@ namespace engine.Helpers
 		LEFT JOIN Assessment.AssessmentBatteryCompositeOutcome                                                          ON Assessment.AssessmentBatteryCompositeOutcome.AssessmentId=Assessment.Assessment.Id
 		LEFT JOIN Assessment.BatteryCompositeOutcome                                                                    ON Assessment.BatteryCompositeOutcome.Id=Assessment.AssessmentBatteryCompositeOutcome.BatteryCompositeOutcomeId
 		LEFT JOIN Assessment.CompositeOutcome                                                                           ON Assessment.CompositeOutcome.Id=Assessment.BatteryCompositeOutcome.CompositeOutcomeId
-	    LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomePrimary]                   ON [AssessmentOutcomePrimary].Id=Assessment.Test.PrimaryOutcomeId
-		LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomeAlternate]                 ON [AssessmentOutcomeAlternate].Id=Assessment.Test.AlternateOutcomeId
+	    LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomePrimary]                   ON [AssessmentOutcomePrimary].Id=Assessment.TestCode.PrimaryOutcomeId
+		LEFT JOIN Assessment.Outcome                                    AS [AssessmentOutcomeAlternate]                 ON [AssessmentOutcomeAlternate].Id=Assessment.TestCode.AlternateOutcomeId
 		LEFT JOIN Assessment.AssessmentSessionAttemptIssue              AS [AssessmentSessionAttemptIssue]              ON AssessmentSessionAttemptIssue.AssessmentSessionAttemptId=Assessment.AssessmentSessionAttempt.Id
 		LEFT JOIN UserData.PrWorkflowInstance                                                                           ON UserData.PrWorkflowInstance.AssessmentSessionAttemptId=Assessment.AssessmentSessionAttempt.Id
 		LEFT JOIN UserData.Person                                                                                       ON UserData.Person.Id=Assessment.Assessee.PersonId
@@ -273,6 +275,8 @@ namespace engine.Helpers
                           ,[MovePrevTestIdentifier]
                            FROM [UserData].[PRWorkflowInstance]
                            where MovePrevTestIdentifier = @testIdentifier";
+			
+			
 			do{
 				Delay.Duration(30000);
 				Report.Info( " Waiting for TestIdentifier");
@@ -292,19 +296,75 @@ namespace engine.Helpers
 				
 			} while ( dt.Rows.Count < 1);
 			
-			string  N_TestIdentifier  = dt.Rows[0][0].ToString();
-			string MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
+			
+			NewTestIdentifier  = dt.Rows[0][0].ToString();
+			MoveOrigTestIdentifier = dt.Rows[0][1].ToString();
 			string MovePrevTestIdentifier = dt.Rows[0][2].ToString();
 			
-			Report.Log(ReportLevel.Info,  "NewTestIdentifier: " + "  " + N_TestIdentifier);
+			Report.Log(ReportLevel.Info,  "New TestIdentifier: " + "  " + NewTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MoveOrigTestIdentifier: " + "  " +   MoveOrigTestIdentifier);
 			Report.Log(ReportLevel.Info,  "MovePrevTestIdentifier" + " " + MovePrevTestIdentifier);
-				
+			
 		}
+		
+		/// <summary>
+		/// This is a placeholder text. Please describe the purpose of the
+		/// user code method here. The method is published to the user code library
+		/// within a user code collection.
+		/// </summary>
+		[UserCodeMethod]
+		public static void ValidateTestIdentifierMove(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
+		{
+			
+			//Validating the moved Testidentifier in the DB:
+			// QueryDB
+			dt.Reset();
+			
+			
+			// QueryDB
+			string query = @"SELECT
+                           TestIdentifier
+                          ,InvalidationReasonId
+                           FROM [UserData].[PRWorkflowInstance]
+                           where TestIdentifier = @MoveOrigTestIdentifier";
+			
+			
+			do{
+				
+				Report.Info( " Validating The Move by checking the flag in the DB ");
+				
+				//Connecting to SQL DB:
+				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+				//CreateObject:
+				SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
+				da.SelectCommand.Parameters.AddWithValue("@MoveOrigTestIdentifier", Guid.Parse(MoveOrigTestIdentifier));
+				
+				// Get the data from DB
+				
+				using (da)
+					
+					da.Fill(dt);
+				
+			} while ( dt.Rows.Count < 1);
+			
+			
+			//string  NewTestIdentifier  = dt.Rows[0][0].ToString();
+			//string Move_OrigTestIdentifier = dt.Rows[0][1].ToString();
+			//string Move_PrevTestIdentifier = dt.Rows[0][2].ToString();
+			string ValidationFlag = dt.Rows[0][1].ToString();
+			
+			//Pringting the resutls:
+			Report.Log(ReportLevel.Info,  "New TestIdentifier: " + "  " + NewTestIdentifier);
+			Report.Log(ReportLevel.Info,  "ValidationFlag, if the flag is set to (1) the move passed if NOT the move failed: " + "  " + ValidationFlag);
+			
+			
+		}
+		
 		
 	}
 	
 }
+
 
 
 

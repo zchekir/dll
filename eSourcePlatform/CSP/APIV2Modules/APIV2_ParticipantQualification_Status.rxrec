@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7564efa3-5dfb-429a-8be6-2697f96acf66"
+mode="Global"
+rxversion="8.3">
+	<name>
+		APIV2_ParticipantQualification_Status
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="APIV2_ParticipantQualification_Status"
+	namespace="CSP.APIV2Modules">
+	</codegen>
+	<variables>
+		<var
+		id="ce0eb756-9ae4-4102-bcb9-4fee480f39b6"
+		name="DOM">
+		</var>
+		<var
+		id="2436bc6b-b437-4437-a127-e86e3edb27e2"
+		name="studyProtocolName">
+		</var>
+		<var
+		id="c57c4bea-20ef-4adb-b5a7-49effd8a2370"
+		name="externalid">
+		</var>
+		<var
+		id="b2ac9a86-54f6-4d71-a1de-3222a4de05f2"
+		name="AuthToken">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="APIV2_ParticipantQualification_Status"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Participant_QualificationStatus"
+		namespace="CSP.APIV2Modules"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="07d73089-7c81-403e-b25e-93a031c3afe2">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		APIV2_ParticipantQualification_Status.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -43,7 +43,7 @@ namespace DCT.DCT_Page
         		
         		TestIdentifierField.FindAdapter<InputTag>().PressKeys("{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}", 1);
         		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'inputtagInfo'.", TestIdentifierField);
-            	TestIdentifierField.FindAdapter<InputTag>().PressKeys(TestIdentifier);
+            	TestIdentifierField.FindAdapter<InputTag>().PressKeys(TestIdentifier, 10);
             	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickFindByAssessmentId' at Center.", repo.DataCleaningTool.FindByAssessmentIdButtonInfo, new RecordItemIndex(1));
             	FindButton.FindAdapter<SpanTag>().Click();
             	Delay.Duration(2500);

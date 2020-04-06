@@ -125,6 +125,18 @@ namespace RedCapCloud
             set { _SecondSubject = value; }
         }
 
+        string _ExistingStudy = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ExistingStudy.
+        /// </summary>
+        [TestVariable("2ce5e706-e90d-4df4-8420-c32c11ef8eae")]
+        public string ExistingStudy
+        {
+            get { return _ExistingStudy; }
+            set { _ExistingStudy = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -219,6 +231,7 @@ namespace RedCapCloud
             RepoItemInfo _rolealreadyexistsInfo;
             RepoItemInfo _notificationpopupcloseInfo;
             RepoItemInfo _signinInfo;
+            RepoItemInfo _searchfieldInfo;
 
             /// <summary>
             /// Creates a new REDCapCloud  folder.
@@ -266,6 +279,7 @@ namespace RedCapCloud
                 _rolealreadyexistsInfo = new RepoItemInfo(this, "RoleAlreadyExists", "body/div//div[@innertext='Role already exists']", 30000, null, "b4a72825-ea9d-4078-a609-1ae22df65884");
                 _notificationpopupcloseInfo = new RepoItemInfo(this, "NotificationPopupClose", "body//div[@class='popupContent']//table//div[@innertext='Close']", 30000, null, "7e655126-9a30-49e2-8991-fd5a20df20be");
                 _signinInfo = new RepoItemInfo(this, "SignIn", ".//button[#'login_applyButton']/span[@innertext='Sign in']", 30000, null, "e6057ea9-3b47-4e33-8628-77fffcc5d58d");
+                _searchfieldInfo = new RepoItemInfo(this, "SearchField", ".//input[#'filtersWidget_userInputWidget_studyName']", 30000, null, "57321a1e-9015-4e18-927e-f6f813fcabad");
             }
 
             /// <summary>
@@ -917,6 +931,30 @@ namespace RedCapCloud
             }
 
             /// <summary>
+            /// The SearchField item.
+            /// </summary>
+            [RepositoryItem("57321a1e-9015-4e18-927e-f6f813fcabad")]
+            public virtual Ranorex.InputTag SearchField
+            {
+                get
+                {
+                    return _searchfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SearchField item info.
+            /// </summary>
+            [RepositoryItemInfo("57321a1e-9015-4e18-927e-f6f813fcabad")]
+            public virtual RepoItemInfo SearchFieldInfo
+            {
+                get
+                {
+                    return _searchfieldInfo;
+                }
+            }
+
+            /// <summary>
             /// The LoginPage folder.
             /// </summary>
             [RepositoryFolder("b5ed13bf-0de7-4cda-9695-62102a265b1a")]
@@ -1423,6 +1461,7 @@ namespace RedCapCloud
             RepoItemInfo _studysitesiteidInfo;
             RepoItemInfo _cogstatesiteInfo;
             RepoItemInfo _sitenamebuttonInfo;
+            RepoItemInfo _cogstatelabssiteInfo;
 
             /// <summary>
             /// Creates a new AddSitePage  folder.
@@ -1436,6 +1475,7 @@ namespace RedCapCloud
                 _studysitesiteidInfo = new RepoItemInfo(this, "StudySiteSiteId", ".//input[#'studySite_siteId']", 30000, null, "1544e9b3-0f6b-4e8f-9b74-4de392e1014c");
                 _cogstatesiteInfo = new RepoItemInfo(this, "CogstateSite", ".//body//table/tbody/tr/td/div[@innertext='Cogstate']", 30000, null, "168ba541-4373-4899-83ce-94707783cd10");
                 _sitenamebuttonInfo = new RepoItemInfo(this, "SiteNameButton", ".//i[#'studySite_selectionImage']", 30000, null, "a0288ec6-f8b1-4fb0-9a9d-8ebb160d20ea");
+                _cogstatelabssiteInfo = new RepoItemInfo(this, "CogstateLabsSite", ".//body//table/tbody/tr/td/div[@innertext='Cogstate Labs']", 30000, null, "cc2fcb35-a44a-4c99-b36d-ef148457adc6");
             }
 
             /// <summary>
@@ -1591,6 +1631,30 @@ namespace RedCapCloud
                 get
                 {
                     return _sitenamebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CogstateLabsSite item.
+            /// </summary>
+            [RepositoryItem("cc2fcb35-a44a-4c99-b36d-ef148457adc6")]
+            public virtual Ranorex.DivTag CogstateLabsSite
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateLabsSite item info.
+            /// </summary>
+            [RepositoryItemInfo("cc2fcb35-a44a-4c99-b36d-ef148457adc6")]
+            public virtual RepoItemInfo CogstateLabsSiteInfo
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo;
                 }
             }
         }
@@ -1895,7 +1959,7 @@ namespace RedCapCloud
                 _addinstrumentbuttonInfo = new RepoItemInfo(this, "AddInstrumentButton", ".//div[#'gwtWrapper']//div/table/tbody/tr/td/div[@innertext='Add']", 30000, null, "440194f9-f6bc-4d7a-ba0d-7fb10a108ddc");
                 _demographicscrfInfo = new RepoItemInfo(this, "DemographicsCRF", "body//table/tbody/tr/td[1]/div[@innertext='Demographics']", 30000, null, "baf502ff-6c82-4cd5-8b0a-7d22f16fd8af");
                 _begincogstatebatterycrfInfo = new RepoItemInfo(this, "BeginCogstateBatteryCRF", "body//table/tbody/tr/td[1]/div[@innertext='Begin Cogstate Battery']", 30000, null, "e69b6376-6c03-4f09-accd-3407d188329e");
-                _cogstatebatterycommentscrfInfo = new RepoItemInfo(this, "CogstateBatteryCommentsCRF", "body//table/tbody/tr/td[1]/div[@innertext='Cogstate Battery Comments']", 30000, null, "3ee70fbd-6c84-4b65-b121-e63ceedc0331");
+                _cogstatebatterycommentscrfInfo = new RepoItemInfo(this, "CogstateBatteryCommentsCRF", "body//table/tbody/tr/td[1]/div[@innertext~'Cogstate Battery Comments']", 30000, null, "3ee70fbd-6c84-4b65-b121-e63ceedc0331");
                 _cogstatebatterydataconfirmationcrfInfo = new RepoItemInfo(this, "CogstateBatteryDataConfirmationCRF", "body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\\ Battery\\ Data\\ Con']", 30000, null, "b884d6c9-ed98-426e-b73a-71b5e44cb1c9");
                 _cogstatebatterycrfcompositeoutcomeInfo = new RepoItemInfo(this, "CogstateBatteryCRFCompositeOutcome", "body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\\ Battery\\ CRF\\ -\\ Co']", 30000, null, "1821b257-b454-43b6-8874-4c63a5fa25b0");
                 _cogstatebatterycrfcbbInfo = new RepoItemInfo(this, "CogstateBatteryCRFCBB", "body//table/tbody/tr/td[1]/div[@innertext~'^Cogstate\\ Battery\\ CRF\\ -\\ CB']", 30000, null, "8c73533d-e702-4985-8b89-b91f9a60a82b");
@@ -2450,6 +2514,7 @@ namespace RedCapCloud
             RepoItemInfo _malegenderInfo;
             RepoItemInfo _languagedropdownInfo;
             RepoItemInfo _englishusInfo;
+            RepoItemInfo _usenglishInfo;
             RepoItemInfo _saveandexitInfo;
             RepoItemInfo _dobfieldInfo;
             RepoItemInfo _subjectInfo;
@@ -2464,8 +2529,11 @@ namespace RedCapCloud
             RepoItemInfo _beginassessmentbuttonInfo;
             RepoItemInfo _dataconfirmationcrfInfo;
             RepoItemInfo _cbbcrfInfo;
+            RepoItemInfo _compositecrfInfo;
             RepoItemInfo _testwassuccessfullytransmittedInfo;
             RepoItemInfo _crftabsInfo;
+            RepoItemInfo _saveandenterdatabuttonInfo;
+            RepoItemInfo _cogstatelabssiteInfo;
 
             /// <summary>
             /// Creates a new SubjectsPage  folder.
@@ -2482,6 +2550,7 @@ namespace RedCapCloud
                 _malegenderInfo = new RepoItemInfo(this, "MaleGender", ".//div[#'gwtWrapper']//table/tbody/tr/td/?/?/input[@name~'rdio_[0-9]']", 30000, null, "e2c5faba-e28a-4d47-99c1-1e9229e1928e");
                 _languagedropdownInfo = new RepoItemInfo(this, "LanguageDropdown", ".//div[#'gwtWrapper']//table/tbody/tr/td/div/div/div/div/?/?/button", 30000, null, "49e8515c-f881-46a5-a470-f09db46ae3b8");
                 _englishusInfo = new RepoItemInfo(this, "EnglishUS", ".//li/a[@innertext='English - US']", 30000, null, "82622083-e411-4c96-8e50-a507d202f3ff");
+                _usenglishInfo = new RepoItemInfo(this, "USEnglish", ".//li/a[@innertext='US - English']", 30000, null, "158c267d-20ad-404a-a918-ca5a78c74218");
                 _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "ce3a1313-e308-48ba-9e51-bf1c7045d365");
                 _dobfieldInfo = new RepoItemInfo(this, "DOBField", ".//div[#'gwtWrapper']//table/?/?/tr/td/input[@type='text' and @visible='True']", 30000, null, "6689b195-0563-43db-8134-742b2e9caf8f");
                 _subjectInfo = new RepoItemInfo(this, "Subject", ".//div[#'gwtWrapper']/div//table/tbody/tr/td[2]/div[@innertext>$RandNum]", 240000, null, "4752a246-2d28-4500-98dd-1581b67cb1f6");
@@ -2496,8 +2565,11 @@ namespace RedCapCloud
                 _beginassessmentbuttonInfo = new RepoItemInfo(this, "BeginAssessmentButton", ".//div[#'gwtWrapper']//span[@innertext='Begin Assessment']", 30000, null, "9392e009-e70d-4ceb-aa88-0f694bb37641");
                 _dataconfirmationcrfInfo = new RepoItemInfo(this, "DataConfirmationCRF", ".//div[@id<'cogstateBatteryDataConfirmation']", 30000, null, "d9b364c3-4d5d-4c1e-8c60-c712bd9fea82");
                 _cbbcrfInfo = new RepoItemInfo(this, "CBBCRF", ".//div[@id<'cogstateBatteryCRF-CBB']", 30000, null, "46cd2424-7930-4ab1-ac72-aa31e02e3644");
+                _compositecrfInfo = new RepoItemInfo(this, "CompositeCRF", ".//div[@id<'cogstateBatteryCRF-CompositeOutcomes']", 30000, null, "48794d1c-59a1-44e5-91d1-cf69b7f314bf");
                 _testwassuccessfullytransmittedInfo = new RepoItemInfo(this, "TestWasSuccessfullyTransmitted", ".//div[#'gwtWrapper']//?/?/font[@innertext='Test Was Successfully Transmitted']", 30000, null, "6819e2a1-e800-4dd4-b4d3-a809a456668f");
                 _crftabsInfo = new RepoItemInfo(this, "CRFTabs", ".//div[#'gwtWrapper']//tbody/tr/?/?/ul[@class='tabPanelTabs']", 30000, null, "8604c299-a22b-4dae-b410-9670b9e6fdbc");
+                _saveandenterdatabuttonInfo = new RepoItemInfo(this, "SaveAndEnterDataButton", ".//span[@innertext='Save and Enter Data']", 30000, null, "6eb50653-7933-4c47-bced-aaee65a7d729");
+                _cogstatelabssiteInfo = new RepoItemInfo(this, "CogstateLabsSite", ".//li//a[@innertext<'Labs']", 30000, null, "b714a78f-9037-4dc5-b6e6-ff1e2d5d803d");
             }
 
             /// <summary>
@@ -2725,6 +2797,30 @@ namespace RedCapCloud
                 get
                 {
                     return _englishusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The USEnglish item.
+            /// </summary>
+            [RepositoryItem("158c267d-20ad-404a-a918-ca5a78c74218")]
+            public virtual Ranorex.ATag USEnglish
+            {
+                get
+                {
+                    return _usenglishInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The USEnglish item info.
+            /// </summary>
+            [RepositoryItemInfo("158c267d-20ad-404a-a918-ca5a78c74218")]
+            public virtual RepoItemInfo USEnglishInfo
+            {
+                get
+                {
+                    return _usenglishInfo;
                 }
             }
 
@@ -3065,6 +3161,30 @@ namespace RedCapCloud
             }
 
             /// <summary>
+            /// The CompositeCRF item.
+            /// </summary>
+            [RepositoryItem("48794d1c-59a1-44e5-91d1-cf69b7f314bf")]
+            public virtual Ranorex.DivTag CompositeCRF
+            {
+                get
+                {
+                    return _compositecrfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CompositeCRF item info.
+            /// </summary>
+            [RepositoryItemInfo("48794d1c-59a1-44e5-91d1-cf69b7f314bf")]
+            public virtual RepoItemInfo CompositeCRFInfo
+            {
+                get
+                {
+                    return _compositecrfInfo;
+                }
+            }
+
+            /// <summary>
             /// The TestWasSuccessfullyTransmitted item.
             /// </summary>
             [RepositoryItem("6819e2a1-e800-4dd4-b4d3-a809a456668f")]
@@ -3109,6 +3229,54 @@ namespace RedCapCloud
                 get
                 {
                     return _crftabsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndEnterDataButton item.
+            /// </summary>
+            [RepositoryItem("6eb50653-7933-4c47-bced-aaee65a7d729")]
+            public virtual Ranorex.SpanTag SaveAndEnterDataButton
+            {
+                get
+                {
+                    return _saveandenterdatabuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndEnterDataButton item info.
+            /// </summary>
+            [RepositoryItemInfo("6eb50653-7933-4c47-bced-aaee65a7d729")]
+            public virtual RepoItemInfo SaveAndEnterDataButtonInfo
+            {
+                get
+                {
+                    return _saveandenterdatabuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CogstateLabsSite item.
+            /// </summary>
+            [RepositoryItem("b714a78f-9037-4dc5-b6e6-ff1e2d5d803d")]
+            public virtual Ranorex.ATag CogstateLabsSite
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateLabsSite item info.
+            /// </summary>
+            [RepositoryItemInfo("b714a78f-9037-4dc5-b6e6-ff1e2d5d803d")]
+            public virtual RepoItemInfo CogstateLabsSiteInfo
+            {
+                get
+                {
+                    return _cogstatelabssiteInfo;
                 }
             }
         }
@@ -3530,16 +3698,18 @@ namespace RedCapCloud
             RepoItemInfo _studynameInfo;
             RepoItemInfo _studycategoryInfo;
             RepoItemInfo _studysummaryInfo;
+            RepoItemInfo _existingstudyInfo;
 
             /// <summary>
             /// Creates a new StudiesTable  folder.
             /// </summary>
             public StudiesTableFolder(RepoGenBaseFolder parentFolder) :
-                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr[1]", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
+                    base("StudiesTable", ".//div[#'gwtWrapper']/div/table[2]/?/?/tr/td[2]/table/tbody/tr[2]/td/div/div/div/div/div[2]/table/tbody/tr[2]/?/?/table//div/div[3]/div/div[2]//table/tbody/tr", parentFolder, 30000, null, false, "35747835-4914-4867-8337-c41bdbc22078", "")
             {
                 _studynameInfo = new RepoItemInfo(this, "StudyName", "td[1]/div[@innertext>$StudyName]", 30000, null, "9ea93ae7-3e6b-4141-acce-9682ed7e21a8");
                 _studycategoryInfo = new RepoItemInfo(this, "StudyCategory", "td[2]/div[@innertext='Classic Database']", 30000, null, "65197492-b182-458a-b19e-575e7a944ba6");
                 _studysummaryInfo = new RepoItemInfo(this, "StudySummary", "td[5]/div[@innertext>$BriefSummary]", 30000, null, "297d3f3c-1ec9-42b9-ae20-4af8b304512c");
+                _existingstudyInfo = new RepoItemInfo(this, "ExistingStudy", "td[1]/div[@innertext=$ExistingStudy]", 30000, null, "792cfd2a-b2c0-458d-850a-67256e48782d");
             }
 
             /// <summary>
@@ -3637,6 +3807,30 @@ namespace RedCapCloud
                     return _studysummaryInfo;
                 }
             }
+
+            /// <summary>
+            /// The ExistingStudy item.
+            /// </summary>
+            [RepositoryItem("792cfd2a-b2c0-458d-850a-67256e48782d")]
+            public virtual Ranorex.DivTag ExistingStudy
+            {
+                get
+                {
+                    return _existingstudyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExistingStudy item info.
+            /// </summary>
+            [RepositoryItemInfo("792cfd2a-b2c0-458d-850a-67256e48782d")]
+            public virtual RepoItemInfo ExistingStudyInfo
+            {
+                get
+                {
+                    return _existingstudyInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3647,6 +3841,8 @@ namespace RedCapCloud
         {
             RepoItemInfo _sitenameInfo;
             RepoItemInfo _testidentifierInfo;
+            RepoItemInfo _siteidInfo;
+            RepoItemInfo _cgsqcInfo;
 
             /// <summary>
             /// Creates a new SitesTable  folder.
@@ -3655,7 +3851,9 @@ namespace RedCapCloud
                     base("SitesTable", ".//div[#'gwtWrapper']", parentFolder, 30000, null, false, "f3ed595b-c7c6-4591-9c20-ed4615814a54", "")
             {
                 _sitenameInfo = new RepoItemInfo(this, "SiteName", ".//tbody/tr//div[@innertext='Cogstate']", 30000, null, "30eed5e1-47f2-4a38-a46c-32ebf9644ffe");
-                _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='Test ID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']", 30000, null, "326473da-bd04-4a0e-a1a3-3e6e18e9f398");
+                _testidentifierInfo = new RepoItemInfo(this, "TestIdentifier", ".//div[@innertext='TestID']//..//..//div//input[@value~'[A-Fa-f0-9-]{36}']", 30000, null, "326473da-bd04-4a0e-a1a3-3e6e18e9f398");
+                _siteidInfo = new RepoItemInfo(this, "SiteID", ".//table/tbody/tr/td/div[@innertext~'^[0-9]+$']", 30000, null, "7b315c6d-f486-4b86-878a-cfe1212c5cc2");
+                _cgsqcInfo = new RepoItemInfo(this, "CGSQC", ".//div[@innertext='CGSQC']", 30000, null, "d2e254da-6228-48f8-af89-0bbf2d22454c");
             }
 
             /// <summary>
@@ -3727,6 +3925,54 @@ namespace RedCapCloud
                 get
                 {
                     return _testidentifierInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteID item.
+            /// </summary>
+            [RepositoryItem("7b315c6d-f486-4b86-878a-cfe1212c5cc2")]
+            public virtual Ranorex.DivTag SiteID
+            {
+                get
+                {
+                    return _siteidInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteID item info.
+            /// </summary>
+            [RepositoryItemInfo("7b315c6d-f486-4b86-878a-cfe1212c5cc2")]
+            public virtual RepoItemInfo SiteIDInfo
+            {
+                get
+                {
+                    return _siteidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CGSQC item.
+            /// </summary>
+            [RepositoryItem("d2e254da-6228-48f8-af89-0bbf2d22454c")]
+            public virtual Ranorex.DivTag CGSQC
+            {
+                get
+                {
+                    return _cgsqcInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CGSQC item info.
+            /// </summary>
+            [RepositoryItemInfo("d2e254da-6228-48f8-af89-0bbf2d22454c")]
+            public virtual RepoItemInfo CGSQCInfo
+            {
+                get
+                {
+                    return _cgsqcInfo;
                 }
             }
         }

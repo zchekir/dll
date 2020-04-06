@@ -92,7 +92,7 @@ namespace DCT.Azure
 
             Init();
 
-            Key_sequence_PasswordInput(repo.SignIn.PasswordInputInfo);
+            Key_sequence_PasswordInput(repo.SignIn.PasswordFieldInfo);
             Delay.Milliseconds(0);
             
         }

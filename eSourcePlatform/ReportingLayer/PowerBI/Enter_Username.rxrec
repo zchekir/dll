@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1aa53595-fff5-4348-b67c-42c0e0e5fdee"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Enter_Username
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Enter_Username"
+	namespace="ReportingLayer.PowerBI">
+	</codegen>
+	<variables>
+		<var
+		id="766aeed9-9d5d-449f-b609-af49b9d6c774"
+		name="CSPUsername">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Enter_Username"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Enter_Email"
+		namespace="ReportingLayer.PowerBI"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="fe936343-2ac0-4759-986f-0dffe1fd7d64">
+				<argument
+				argname="MicrosoftUsernameField"
+				id="381090a2-4f77-447b-9ada-04150df4d5ae">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="694e1f07-7fdc-44cc-bcab-4827d2900622"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//input[#'i0116']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="CogstateUsernameField"
+				id="a7e608ca-8582-4bd8-90c3-d1131e484ca6">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="4f745b3b-b5c8-4ac0-a135-b47d3084de38"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.cogstate.com']//input[#'userNameInput']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="ea6a006e-6d85-4695-88f7-8d684bce0248"
+	name="ReportingLayerRepository"
+	relativepath="..\ReportingLayerRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ReportingLayerRepository"
+		namespace="ReportingLayer">
+		</codegen>
+		<rootfolder
+		id="60c3c42a-4566-402e-9361-221a6c8f795f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Enter_Username.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

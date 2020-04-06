@@ -27,6 +27,10 @@ namespace ReportingLayer
     public partial class ReportingLayerRepository : RepoGenBaseFolder
     {
         static ReportingLayerRepository instance = new ReportingLayerRepository();
+        ReportingLayerRepositoryFolders.PowerBIAppFolder _powerbi;
+        ReportingLayerRepositoryFolders.SignInPowerBIAppFolder _signinpowerbi;
+        ReportingLayerRepositoryFolders.SingleSignOnMicrosoftAppFolder _singlesignonmicrosoft;
+        ReportingLayerRepositoryFolders.SingleSignOnCogstateAppFolder _singlesignoncogstate;
 
         /// <summary>
         /// Gets the singleton class instance representing the ReportingLayerRepository element repository.
@@ -43,9 +47,37 @@ namespace ReportingLayer
         public ReportingLayerRepository() 
             : base("ReportingLayerRepository", "/", null, 0, false, "60c3c42a-4566-402e-9361-221a6c8f795f", ".\\RepositoryImages\\ReportingLayerRepository60c3c42a.rximgres")
         {
+            _powerbi = new ReportingLayerRepositoryFolders.PowerBIAppFolder(this);
+            _signinpowerbi = new ReportingLayerRepositoryFolders.SignInPowerBIAppFolder(this);
+            _singlesignonmicrosoft = new ReportingLayerRepositoryFolders.SingleSignOnMicrosoftAppFolder(this);
+            _singlesignoncogstate = new ReportingLayerRepositoryFolders.SingleSignOnCogstateAppFolder(this);
         }
 
 #region Variables
+
+        string _ProtocolID = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ProtocolID.
+        /// </summary>
+        [TestVariable("205a61dc-d836-474a-ab6f-210750f02768")]
+        public string ProtocolID
+        {
+            get { return _ProtocolID; }
+            set { _ProtocolID = value; }
+        }
+
+        string _CSPUsername = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPUsername.
+        /// </summary>
+        [TestVariable("a0579069-e2a3-47be-9d8f-92cfed3c7d44")]
+        public string CSPUsername
+        {
+            get { return _CSPUsername; }
+            set { _CSPUsername = value; }
+        }
 
 #endregion
 
@@ -60,6 +92,42 @@ namespace ReportingLayer
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The PowerBI folder.
+        /// </summary>
+        [RepositoryFolder("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+        public virtual ReportingLayerRepositoryFolders.PowerBIAppFolder PowerBI
+        {
+            get { return _powerbi; }
+        }
+
+        /// <summary>
+        /// The SignInPowerBI folder.
+        /// </summary>
+        [RepositoryFolder("6e87418e-8e27-474c-952c-865cc8274190")]
+        public virtual ReportingLayerRepositoryFolders.SignInPowerBIAppFolder SignInPowerBI
+        {
+            get { return _signinpowerbi; }
+        }
+
+        /// <summary>
+        /// The SingleSignOnMicrosoft folder.
+        /// </summary>
+        [RepositoryFolder("c35eb889-e371-439b-9570-1afd68591917")]
+        public virtual ReportingLayerRepositoryFolders.SingleSignOnMicrosoftAppFolder SingleSignOnMicrosoft
+        {
+            get { return _singlesignonmicrosoft; }
+        }
+
+        /// <summary>
+        /// The SingleSignOnCogstate folder.
+        /// </summary>
+        [RepositoryFolder("79b279ed-4201-4681-9e78-6e34e2578758")]
+        public virtual ReportingLayerRepositoryFolders.SingleSignOnCogstateAppFolder SingleSignOnCogstate
+        {
+            get { return _singlesignoncogstate; }
+        }
     }
 
     /// <summary>
@@ -68,6 +136,944 @@ namespace ReportingLayer
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class ReportingLayerRepositoryFolders
     {
+        /// <summary>
+        /// The PowerBIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+        public partial class PowerBIAppFolder : RepoGenBaseFolder
+        {
+            ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder _dateofassessmentfilter;
+            ReportingLayerRepositoryFolders.SlicersFolder _slicers;
+            RepoItemInfo _academicextracttableInfo;
+            RepoItemInfo _dateslicertorangeInfo;
+            RepoItemInfo _dateslicerfromrangeInfo;
+            RepoItemInfo _cleartestselectionsInfo;
+            RepoItemInfo _filterbuttonInfo;
+            RepoItemInfo _scrollbarInfo;
+            RepoItemInfo _scrollleftbuttonInfo;
+            RepoItemInfo _protocolidcellInfo;
+
+            /// <summary>
+            /// Creates a new PowerBI  folder.
+            /// </summary>
+            public PowerBIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("PowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "0bcadffa-23d9-4f2f-a294-3ed2de5fe67e", "")
+            {
+                _dateofassessmentfilter = new ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder(this);
+                _slicers = new ReportingLayerRepositoryFolders.SlicersFolder(this);
+                _academicextracttableInfo = new RepoItemInfo(this, "AcademicExtractTable", ".//tag[#'pvExplorationHost']//tag[@tagname='explore-canvas-modern']//tag[@tagname='transform']//div[@class='bodyCells']/div", 30000, null, "131c905f-9884-4720-94ca-3a49411a6e37");
+                _dateslicertorangeInfo = new RepoItemInfo(this, "DateSlicerToRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input", 30000, null, "f012a904-5357-4a30-9bc0-624df81514af");
+                _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "04a6379f-44ba-419b-b302-034971569815");
+                _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
+                _filterbuttonInfo = new RepoItemInfo(this, "FilterButton", ".//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']/i", 30000, null, "f8ce8db1-03d7-47c6-b1b6-99c6bd175da9");
+                _scrollbarInfo = new RepoItemInfo(this, "ScrollBar", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]", 30000, null, "2b0a7c53-2baa-422f-9950-059eea3eeccb");
+                _scrollleftbuttonInfo = new RepoItemInfo(this, "ScrollLeftButton", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]/div[1]/?/?/tag[@tagname='polygon']", 30000, null, "a1a5f7bb-a23f-4180-8c55-625d47459c67");
+                _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 300000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtractTable item.
+            /// </summary>
+            [RepositoryItem("131c905f-9884-4720-94ca-3a49411a6e37")]
+            public virtual Ranorex.DivTag AcademicExtractTable
+            {
+                get
+                {
+                    return _academicextracttableInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AcademicExtractTable item info.
+            /// </summary>
+            [RepositoryItemInfo("131c905f-9884-4720-94ca-3a49411a6e37")]
+            public virtual RepoItemInfo AcademicExtractTableInfo
+            {
+                get
+                {
+                    return _academicextracttableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerToRange item.
+            /// </summary>
+            [RepositoryItem("f012a904-5357-4a30-9bc0-624df81514af")]
+            public virtual Ranorex.InputTag DateSlicerToRange
+            {
+                get
+                {
+                    return _dateslicertorangeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerToRange item info.
+            /// </summary>
+            [RepositoryItemInfo("f012a904-5357-4a30-9bc0-624df81514af")]
+            public virtual RepoItemInfo DateSlicerToRangeInfo
+            {
+                get
+                {
+                    return _dateslicertorangeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerFromRange item.
+            /// </summary>
+            [RepositoryItem("04a6379f-44ba-419b-b302-034971569815")]
+            public virtual Ranorex.InputTag DateSlicerFromRange
+            {
+                get
+                {
+                    return _dateslicerfromrangeInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerFromRange item info.
+            /// </summary>
+            [RepositoryItemInfo("04a6379f-44ba-419b-b302-034971569815")]
+            public virtual RepoItemInfo DateSlicerFromRangeInfo
+            {
+                get
+                {
+                    return _dateslicerfromrangeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClearTestSelections item.
+            /// </summary>
+            [RepositoryItem("fe539034-422e-4b97-8136-eeaa45ce38bb")]
+            public virtual Ranorex.SpanTag ClearTestSelections
+            {
+                get
+                {
+                    return _cleartestselectionsInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClearTestSelections item info.
+            /// </summary>
+            [RepositoryItemInfo("fe539034-422e-4b97-8136-eeaa45ce38bb")]
+            public virtual RepoItemInfo ClearTestSelectionsInfo
+            {
+                get
+                {
+                    return _cleartestselectionsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FilterButton item.
+            /// </summary>
+            [RepositoryItem("f8ce8db1-03d7-47c6-b1b6-99c6bd175da9")]
+            public virtual Ranorex.ITag FilterButton
+            {
+                get
+                {
+                    return _filterbuttonInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FilterButton item info.
+            /// </summary>
+            [RepositoryItemInfo("f8ce8db1-03d7-47c6-b1b6-99c6bd175da9")]
+            public virtual RepoItemInfo FilterButtonInfo
+            {
+                get
+                {
+                    return _filterbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ScrollBar item.
+            /// </summary>
+            [RepositoryItem("2b0a7c53-2baa-422f-9950-059eea3eeccb")]
+            public virtual Ranorex.DivTag ScrollBar
+            {
+                get
+                {
+                    return _scrollbarInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ScrollBar item info.
+            /// </summary>
+            [RepositoryItemInfo("2b0a7c53-2baa-422f-9950-059eea3eeccb")]
+            public virtual RepoItemInfo ScrollBarInfo
+            {
+                get
+                {
+                    return _scrollbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ScrollLeftButton item.
+            /// </summary>
+            [RepositoryItem("a1a5f7bb-a23f-4180-8c55-625d47459c67")]
+            public virtual Ranorex.WebElement ScrollLeftButton
+            {
+                get
+                {
+                    return _scrollleftbuttonInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ScrollLeftButton item info.
+            /// </summary>
+            [RepositoryItemInfo("a1a5f7bb-a23f-4180-8c55-625d47459c67")]
+            public virtual RepoItemInfo ScrollLeftButtonInfo
+            {
+                get
+                {
+                    return _scrollleftbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item.
+            /// </summary>
+            [RepositoryItem("2970ea4c-e954-448e-b58c-3b8823070f0f")]
+            public virtual Ranorex.DivTag ProtocolIDCell
+            {
+                get
+                {
+                    return _protocolidcellInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ProtocolIDCell item info.
+            /// </summary>
+            [RepositoryItemInfo("2970ea4c-e954-448e-b58c-3b8823070f0f")]
+            public virtual RepoItemInfo ProtocolIDCellInfo
+            {
+                get
+                {
+                    return _protocolidcellInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateOfAssessmentFilter folder.
+            /// </summary>
+            [RepositoryFolder("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+            public virtual ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder DateOfAssessmentFilter
+            {
+                get { return _dateofassessmentfilter; }
+            }
+
+            /// <summary>
+            /// The Slicers folder.
+            /// </summary>
+            [RepositoryFolder("23d258d6-575f-480c-a3d4-307daa4ab9c6")]
+            public virtual ReportingLayerRepositoryFolders.SlicersFolder Slicers
+            {
+                get { return _slicers; }
+            }
+        }
+
+        /// <summary>
+        /// The DateOfAssessmentFilterFolder folder.
+        /// </summary>
+        [RepositoryFolder("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+        public partial class DateOfAssessmentFilterFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _isinthisdropdownInfo;
+            RepoItemInfo _daydropdownInfo;
+            RepoItemInfo _applyfilterbuttonInfo;
+            RepoItemInfo _filtertypedropdownInfo;
+            RepoItemInfo _expandInfo;
+
+            /// <summary>
+            /// Creates a new DateOfAssessmentFilter  folder.
+            /// </summary>
+            public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
+                    base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
+            {
+                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[1]", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
+                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[2]", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
+                _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
+                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]//tag[9]//select", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
+                _expandInfo = new RepoItemInfo(this, "Expand", "div[2]//tag[9]//button[@title='Expand']", 30000, null, "9635faeb-ac8a-43f5-a295-6831032d50d4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IsInThisDropdown item.
+            /// </summary>
+            [RepositoryItem("773854ca-7a32-4c97-93e9-0aae1cf4c64c")]
+            public virtual Ranorex.SelectTag IsInThisDropdown
+            {
+                get
+                {
+                    return _isinthisdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IsInThisDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("773854ca-7a32-4c97-93e9-0aae1cf4c64c")]
+            public virtual RepoItemInfo IsInThisDropdownInfo
+            {
+                get
+                {
+                    return _isinthisdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DayDropdown item.
+            /// </summary>
+            [RepositoryItem("4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b")]
+            public virtual Ranorex.SelectTag DayDropdown
+            {
+                get
+                {
+                    return _daydropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DayDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b")]
+            public virtual RepoItemInfo DayDropdownInfo
+            {
+                get
+                {
+                    return _daydropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ApplyFilterButton item.
+            /// </summary>
+            [RepositoryItem("f5f9f142-7a61-4caf-a45c-e9244d4b2fb2")]
+            public virtual Ranorex.ButtonTag ApplyFilterButton
+            {
+                get
+                {
+                    return _applyfilterbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ApplyFilterButton item info.
+            /// </summary>
+            [RepositoryItemInfo("f5f9f142-7a61-4caf-a45c-e9244d4b2fb2")]
+            public virtual RepoItemInfo ApplyFilterButtonInfo
+            {
+                get
+                {
+                    return _applyfilterbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FilterTypeDropdown item.
+            /// </summary>
+            [RepositoryItem("db43cf6c-681a-40a7-a643-376f7e2b8282")]
+            public virtual Ranorex.SelectTag FilterTypeDropdown
+            {
+                get
+                {
+                    return _filtertypedropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FilterTypeDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("db43cf6c-681a-40a7-a643-376f7e2b8282")]
+            public virtual RepoItemInfo FilterTypeDropdownInfo
+            {
+                get
+                {
+                    return _filtertypedropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Expand item.
+            /// </summary>
+            [RepositoryItem("9635faeb-ac8a-43f5-a295-6831032d50d4")]
+            public virtual Ranorex.ButtonTag Expand
+            {
+                get
+                {
+                    return _expandInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Expand item info.
+            /// </summary>
+            [RepositoryItemInfo("9635faeb-ac8a-43f5-a295-6831032d50d4")]
+            public virtual RepoItemInfo ExpandInfo
+            {
+                get
+                {
+                    return _expandInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SlicersFolder folder.
+        /// </summary>
+        [RepositoryFolder("23d258d6-575f-480c-a3d4-307daa4ab9c6")]
+        public partial class SlicersFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _siteidslicerbodyInfo;
+            RepoItemInfo _dateslicerbodyInfo;
+            RepoItemInfo _testidslicerbodyInfo;
+            RepoItemInfo _testslicerbodyInfo;
+
+            /// <summary>
+            /// Creates a new Slicers  folder.
+            /// </summary>
+            public SlicersFolder(RepoGenBaseFolder parentFolder) :
+                    base("Slicers", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']", parentFolder, 30000, null, false, "23d258d6-575f-480c-a3d4-307daa4ab9c6", "")
+            {
+                _siteidslicerbodyInfo = new RepoItemInfo(this, "SiteIDSlicerBody", "tag[2]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]", 30000, null, "40d412d5-8b78-4348-9447-a234369e8239");
+                _dateslicerbodyInfo = new RepoItemInfo(this, "DateSlicerBody", "tag[3]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]", 30000, null, "0e008d86-0ddf-4e4c-8ae9-004c800e9b4a");
+                _testidslicerbodyInfo = new RepoItemInfo(this, "TestIDSlicerBody", "tag[4]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]", 30000, null, "24bcc0f6-d704-4074-8bf3-fe0f5c103d26");
+                _testslicerbodyInfo = new RepoItemInfo(this, "TestSlicerBody", "tag[5]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]", 30000, null, "1ad77429-0d51-41bd-bee5-f147ca3ce09b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("23d258d6-575f-480c-a3d4-307daa4ab9c6")]
+            public virtual Ranorex.WebElement Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebElement>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("23d258d6-575f-480c-a3d4-307daa4ab9c6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDSlicerBody item.
+            /// </summary>
+            [RepositoryItem("40d412d5-8b78-4348-9447-a234369e8239")]
+            public virtual Ranorex.DivTag SiteIDSlicerBody
+            {
+                get
+                {
+                    return _siteidslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDSlicerBody item info.
+            /// </summary>
+            [RepositoryItemInfo("40d412d5-8b78-4348-9447-a234369e8239")]
+            public virtual RepoItemInfo SiteIDSlicerBodyInfo
+            {
+                get
+                {
+                    return _siteidslicerbodyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerBody item.
+            /// </summary>
+            [RepositoryItem("0e008d86-0ddf-4e4c-8ae9-004c800e9b4a")]
+            public virtual Ranorex.DivTag DateSlicerBody
+            {
+                get
+                {
+                    return _dateslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerBody item info.
+            /// </summary>
+            [RepositoryItemInfo("0e008d86-0ddf-4e4c-8ae9-004c800e9b4a")]
+            public virtual RepoItemInfo DateSlicerBodyInfo
+            {
+                get
+                {
+                    return _dateslicerbodyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestIDSlicerBody item.
+            /// </summary>
+            [RepositoryItem("24bcc0f6-d704-4074-8bf3-fe0f5c103d26")]
+            public virtual Ranorex.DivTag TestIDSlicerBody
+            {
+                get
+                {
+                    return _testidslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestIDSlicerBody item info.
+            /// </summary>
+            [RepositoryItemInfo("24bcc0f6-d704-4074-8bf3-fe0f5c103d26")]
+            public virtual RepoItemInfo TestIDSlicerBodyInfo
+            {
+                get
+                {
+                    return _testidslicerbodyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestSlicerBody item.
+            /// </summary>
+            [RepositoryItem("1ad77429-0d51-41bd-bee5-f147ca3ce09b")]
+            public virtual Ranorex.DivTag TestSlicerBody
+            {
+                get
+                {
+                    return _testslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestSlicerBody item info.
+            /// </summary>
+            [RepositoryItemInfo("1ad77429-0d51-41bd-bee5-f147ca3ce09b")]
+            public virtual RepoItemInfo TestSlicerBodyInfo
+            {
+                get
+                {
+                    return _testslicerbodyInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SignInPowerBIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("6e87418e-8e27-474c-952c-865cc8274190")]
+        public partial class SignInPowerBIAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _signinbuttonInfo;
+
+            /// <summary>
+            /// Creates a new SignInPowerBI  folder.
+            /// </summary>
+            public SignInPowerBIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SignInPowerBI", "/dom[@domain='powerbi.microsoft.com']", parentFolder, 30000, null, false, "6e87418e-8e27-474c-952c-865cc8274190", "")
+            {
+                _signinbuttonInfo = new RepoItemInfo(this, "SignInBUtton", ".//a[@innertext='Sign in']", 30000, null, "4223e018-4a49-40bd-84ba-593cb96491a6");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6e87418e-8e27-474c-952c-865cc8274190")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6e87418e-8e27-474c-952c-865cc8274190")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SignInBUtton item.
+            /// </summary>
+            [RepositoryItem("4223e018-4a49-40bd-84ba-593cb96491a6")]
+            public virtual Ranorex.ATag SignInBUtton
+            {
+                get
+                {
+                    return _signinbuttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SignInBUtton item info.
+            /// </summary>
+            [RepositoryItemInfo("4223e018-4a49-40bd-84ba-593cb96491a6")]
+            public virtual RepoItemInfo SignInBUttonInfo
+            {
+                get
+                {
+                    return _signinbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SingleSignOnMicrosoftAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c35eb889-e371-439b-9570-1afd68591917")]
+        public partial class SingleSignOnMicrosoftAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _useraccountbuttonInfo;
+            RepoItemInfo _otheraccountbuttonInfo;
+            RepoItemInfo _microsoftusernamefieldInfo;
+            RepoItemInfo _nobuttonInfo;
+
+            /// <summary>
+            /// Creates a new SingleSignOnMicrosoft  folder.
+            /// </summary>
+            public SingleSignOnMicrosoftAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SingleSignOnMicrosoft", "/dom[@domain='login.microsoftonline.com']", parentFolder, 30000, null, false, "c35eb889-e371-439b-9570-1afd68591917", "")
+            {
+                _useraccountbuttonInfo = new RepoItemInfo(this, "UserAccountButton", ".//div[@innertext=$CSPUsername]", 30000, null, "c5b188c2-88cd-4d5f-97b7-83e56275b1b0");
+                _otheraccountbuttonInfo = new RepoItemInfo(this, "OtherAccountButton", ".//div[#'otherTileText']", 30000, null, "2c639ba6-c816-4691-b4c9-fca1da80a1ef");
+                _microsoftusernamefieldInfo = new RepoItemInfo(this, "MicrosoftUsernameField", ".//input[#'i0116']", 30000, null, "694e1f07-7fdc-44cc-bcab-4827d2900622");
+                _nobuttonInfo = new RepoItemInfo(this, "NoButton", ".//input[#'idBtn_Back']", 30000, null, "601b071d-cc26-4138-a14e-b435e5d9d440");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c35eb889-e371-439b-9570-1afd68591917")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c35eb889-e371-439b-9570-1afd68591917")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserAccountButton item.
+            /// </summary>
+            [RepositoryItem("c5b188c2-88cd-4d5f-97b7-83e56275b1b0")]
+            public virtual Ranorex.DivTag UserAccountButton
+            {
+                get
+                {
+                    return _useraccountbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserAccountButton item info.
+            /// </summary>
+            [RepositoryItemInfo("c5b188c2-88cd-4d5f-97b7-83e56275b1b0")]
+            public virtual RepoItemInfo UserAccountButtonInfo
+            {
+                get
+                {
+                    return _useraccountbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OtherAccountButton item.
+            /// </summary>
+            [RepositoryItem("2c639ba6-c816-4691-b4c9-fca1da80a1ef")]
+            public virtual Ranorex.DivTag OtherAccountButton
+            {
+                get
+                {
+                    return _otheraccountbuttonInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OtherAccountButton item info.
+            /// </summary>
+            [RepositoryItemInfo("2c639ba6-c816-4691-b4c9-fca1da80a1ef")]
+            public virtual RepoItemInfo OtherAccountButtonInfo
+            {
+                get
+                {
+                    return _otheraccountbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MicrosoftUsernameField item.
+            /// </summary>
+            [RepositoryItem("694e1f07-7fdc-44cc-bcab-4827d2900622")]
+            public virtual Ranorex.InputTag MicrosoftUsernameField
+            {
+                get
+                {
+                    return _microsoftusernamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MicrosoftUsernameField item info.
+            /// </summary>
+            [RepositoryItemInfo("694e1f07-7fdc-44cc-bcab-4827d2900622")]
+            public virtual RepoItemInfo MicrosoftUsernameFieldInfo
+            {
+                get
+                {
+                    return _microsoftusernamefieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NoButton item.
+            /// </summary>
+            [RepositoryItem("601b071d-cc26-4138-a14e-b435e5d9d440")]
+            public virtual Ranorex.InputTag NoButton
+            {
+                get
+                {
+                    return _nobuttonInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NoButton item info.
+            /// </summary>
+            [RepositoryItemInfo("601b071d-cc26-4138-a14e-b435e5d9d440")]
+            public virtual RepoItemInfo NoButtonInfo
+            {
+                get
+                {
+                    return _nobuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SingleSignOnCogstateAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("79b279ed-4201-4681-9e78-6e34e2578758")]
+        public partial class SingleSignOnCogstateAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _brandingInfo;
+            RepoItemInfo _cogstateusernamefieldInfo;
+            RepoItemInfo _cogstatepasswordfieldInfo;
+            RepoItemInfo _submitbuttonInfo;
+
+            /// <summary>
+            /// Creates a new SingleSignOnCogstate  folder.
+            /// </summary>
+            public SingleSignOnCogstateAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SingleSignOnCogstate", "/dom[@domain='login.cogstate.com']", parentFolder, 30000, null, false, "79b279ed-4201-4681-9e78-6e34e2578758", "")
+            {
+                _brandingInfo = new RepoItemInfo(this, "Branding", ".//div[#'branding']", 30000, null, "f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4");
+                _cogstateusernamefieldInfo = new RepoItemInfo(this, "CogstateUserNameField", ".//input[#'userNameInput']", 30000, null, "4f745b3b-b5c8-4ac0-a135-b47d3084de38");
+                _cogstatepasswordfieldInfo = new RepoItemInfo(this, "CogstatePasswordField", ".//input[#'passwordInput']", 30000, null, "fda9b54b-fd26-4322-916f-b1743bff83de");
+                _submitbuttonInfo = new RepoItemInfo(this, "SubmitButton", ".//span[#'submitButton']", 30000, null, "cc687361-2175-4f48-8f23-35ffaa35f190");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("79b279ed-4201-4681-9e78-6e34e2578758")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("79b279ed-4201-4681-9e78-6e34e2578758")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Branding item.
+            /// </summary>
+            [RepositoryItem("f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4")]
+            public virtual Ranorex.DivTag Branding
+            {
+                get
+                {
+                    return _brandingInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Branding item info.
+            /// </summary>
+            [RepositoryItemInfo("f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4")]
+            public virtual RepoItemInfo BrandingInfo
+            {
+                get
+                {
+                    return _brandingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CogstateUserNameField item.
+            /// </summary>
+            [RepositoryItem("4f745b3b-b5c8-4ac0-a135-b47d3084de38")]
+            public virtual Ranorex.InputTag CogstateUserNameField
+            {
+                get
+                {
+                    return _cogstateusernamefieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstateUserNameField item info.
+            /// </summary>
+            [RepositoryItemInfo("4f745b3b-b5c8-4ac0-a135-b47d3084de38")]
+            public virtual RepoItemInfo CogstateUserNameFieldInfo
+            {
+                get
+                {
+                    return _cogstateusernamefieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CogstatePasswordField item.
+            /// </summary>
+            [RepositoryItem("fda9b54b-fd26-4322-916f-b1743bff83de")]
+            public virtual Ranorex.InputTag CogstatePasswordField
+            {
+                get
+                {
+                    return _cogstatepasswordfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CogstatePasswordField item info.
+            /// </summary>
+            [RepositoryItemInfo("fda9b54b-fd26-4322-916f-b1743bff83de")]
+            public virtual RepoItemInfo CogstatePasswordFieldInfo
+            {
+                get
+                {
+                    return _cogstatepasswordfieldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SubmitButton item.
+            /// </summary>
+            [RepositoryItem("cc687361-2175-4f48-8f23-35ffaa35f190")]
+            public virtual Ranorex.SpanTag SubmitButton
+            {
+                get
+                {
+                    return _submitbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SubmitButton item info.
+            /// </summary>
+            [RepositoryItemInfo("cc687361-2175-4f48-8f23-35ffaa35f190")]
+            public virtual RepoItemInfo SubmitButtonInfo
+            {
+                get
+                {
+                    return _submitbuttonInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

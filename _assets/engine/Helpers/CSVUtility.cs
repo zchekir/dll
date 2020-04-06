@@ -135,7 +135,7 @@ namespace engine.Helpers
         	foreach (DataColumn column in dt.Columns)
         	{
         		//Find the column which contains the Visit Settings
-        		if (column.ColumnName == "\"Custom Info\"")
+        		if (column.ColumnName == "Custom Info")
         		{
         			found = true;
         			

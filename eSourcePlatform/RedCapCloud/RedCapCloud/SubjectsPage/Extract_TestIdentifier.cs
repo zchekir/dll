@@ -125,7 +125,7 @@ namespace RedCapCloud.SubjectsPage
             Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.ReloadSiteDialog.SelfInfo, repo.ReloadSiteDialog.ReloadButtonInfo);
             Delay.Milliseconds(0);
             
-            Get_value_TestIdentifier(repo.REDCapCloud.SitesTable.TestIdentifierInfo);
+            Get_value_TestIdentifier(repo.REDCapCloud.SitesTable.TestIdentifierInfo, repo.REDCapCloud.SubjectsPage.CompositeCRFInfo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(2));

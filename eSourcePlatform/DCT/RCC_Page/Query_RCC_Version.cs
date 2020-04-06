@@ -102,8 +102,8 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(0));
-            Delay.Duration(30000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
+            Delay.Duration(10000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.rcc_hubPowerShall' at Center.", repo.KuduServices.rcc_hubPowerShallInfo, new RecordItemIndex(1));
             repo.KuduServices.rcc_hubPowerShall.Click();

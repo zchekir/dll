@@ -89,8 +89,8 @@ namespace CSP.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.BatteryConfigReportPage.BatteryConfigReport' at Center.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.BatteryConfigReportInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.BatteryConfigReportPage.BatteryConfigReport.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ReportsPage.BatteryConfigReport' at Center.", repo.CogstateSolutionPlatform.ReportsPage.BatteryConfigReportInfo, new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.ReportsPage.BatteryConfigReport.Click(1);
             Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.Breadcrumbs.BatteryConfigReportBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.BatteryConfigReportBreadcrumbInfo, new RecordItemIndex(1));

@@ -50,13 +50,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper">
-      <HintPath>..\..\..\_assets\engine\bin\Debug\CsvHelper.dll</HintPath>
+      <HintPath>..\..\..\_assets\engine\bin\$(Configuration)\CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="engine">
-      <HintPath>..\..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+      <HintPath>..\..\..\_assets\engine\bin\$(Configuration)\engine.dll</HintPath>
     </Reference>
     <Reference Include="Ranorex Automation Helpers">
-      <HintPath>..\..\..\_assets\engine\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
+      <HintPath>..\..\..\_assets\engine\RanorexAutomationHelpers\bin\$(Configuration)\Ranorex Automation Helpers.dll</HintPath>
     </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
@@ -305,6 +305,18 @@
       <id>3638096c-bdd6-4058-a51d-a1246271f283</id>
       <BoundTo>cb7bb3c7-b9bb-4510-95e0-3ef3cc5325de</BoundTo>
     </Compile>
+    <Compile Include="AddSitePage\Select_CogstateLabs_Site.cs">
+      <BoundTo>93c3fc1c-3d33-4b84-8ce2-b79889803b7a</BoundTo>
+      <DependentUpon>Select_CogstateLabs_Site.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fadb61e8-304a-4b72-a477-5c00751fb037</id>
+    </Compile>
+    <Compile Include="AddSitePage\Select_CogstateLabs_Site.UserCode.cs">
+      <BoundTo>93c3fc1c-3d33-4b84-8ce2-b79889803b7a</BoundTo>
+      <DependentUpon>Select_CogstateLabs_Site.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a69338ce-6b0b-49a6-8c4c-a1ba4f88ed48</id>
+    </Compile>
     <Compile Include="AddSitePage\Select_SiteName.cs">
       <DependentUpon>Select_SiteName.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -413,6 +425,18 @@
       <id>f1b80c77-36df-49e3-99fb-f3d09dbc6c3b</id>
       <BoundTo>4346f5be-19a4-420b-99cc-697ee89741b0</BoundTo>
     </Compile>
+    <Compile Include="AddSubjectPage\Click_SaveAndEnter_Data.cs">
+      <BoundTo>10970109-6064-4160-88f5-715ace9d7a64</BoundTo>
+      <DependentUpon>Click_SaveAndEnter_Data.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b1d28d39-6d56-4c13-92f1-1c118eec9bc6</id>
+    </Compile>
+    <Compile Include="AddSubjectPage\Click_SaveAndEnter_Data.UserCode.cs">
+      <BoundTo>10970109-6064-4160-88f5-715ace9d7a64</BoundTo>
+      <DependentUpon>Click_SaveAndEnter_Data.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af273052-d1e9-433e-8350-6dcde6cec947</id>
+    </Compile>
     <Compile Include="AddSubjectPage\Enter_DateOfBirth.cs">
       <DependentUpon>Enter_DateOfBirth.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -460,6 +484,18 @@
       <UserCode>true</UserCode>
       <id>dd5a273b-5607-44a1-8e87-fdba1fc41a4a</id>
       <BoundTo>141bdbe8-4698-47c6-a3d0-9e30d2e6a985</BoundTo>
+    </Compile>
+    <Compile Include="AddSubjectPage\Select_SecondSite.cs">
+      <BoundTo>d436b0cb-b220-4df8-b8d6-8606fe05445a</BoundTo>
+      <DependentUpon>Select_SecondSite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fcb03b9a-bc22-47d1-bfcf-ea265232c269</id>
+    </Compile>
+    <Compile Include="AddSubjectPage\Select_SecondSite.UserCode.cs">
+      <BoundTo>d436b0cb-b220-4df8-b8d6-8606fe05445a</BoundTo>
+      <DependentUpon>Select_SecondSite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>114c6118-a20d-491c-9142-99473729dfc3</id>
     </Compile>
     <Compile Include="AddSubjectPage\Select_Site.cs">
       <DependentUpon>Select_Site.rxrec</DependentUpon>
@@ -905,6 +941,18 @@
       <id>5adf0e74-654a-4ed3-ac04-43f84bbdd38c</id>
       <BoundTo>30a9c7d7-5a66-4200-89b0-a07375639db3</BoundTo>
     </Compile>
+    <Compile Include="SitesPage\Get_SiteID.cs">
+      <BoundTo>905595d9-a701-4d8c-a97c-fcb503e26f18</BoundTo>
+      <DependentUpon>Get_SiteID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a1985a97-3249-4897-a416-3d49057e88d4</id>
+    </Compile>
+    <Compile Include="SitesPage\Get_SiteID.UserCode.cs">
+      <BoundTo>905595d9-a701-4d8c-a97c-fcb503e26f18</BoundTo>
+      <DependentUpon>Get_SiteID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7cd9731-9b4a-484f-ba3c-d934183d3927</id>
+    </Compile>
     <Compile Include="StudiesPage\Click_AddStudy_Button.cs">
       <DependentUpon>Click_AddStudy_Button.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -916,6 +964,18 @@
       <UserCode>true</UserCode>
       <id>d7575968-c7c8-4dad-a4e8-5d375fa9c5ec</id>
       <BoundTo>274b0360-7b67-47fb-a0b3-9d626ad3545c</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Click_ExistingStudy.cs">
+      <BoundTo>0782e480-7c53-4645-ba20-4db3863e824f</BoundTo>
+      <DependentUpon>Click_ExistingStudy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fce32c4-d189-4bdb-9127-c5e4fd1bb984</id>
+    </Compile>
+    <Compile Include="StudiesPage\Click_ExistingStudy.UserCode.cs">
+      <BoundTo>0782e480-7c53-4645-ba20-4db3863e824f</BoundTo>
+      <DependentUpon>Click_ExistingStudy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>829f3546-9169-4b55-bdf5-552153450e7b</id>
     </Compile>
     <Compile Include="StudiesPage\Click_MyStudies.cs">
       <DependentUpon>Click_MyStudies.rxrec</DependentUpon>
@@ -952,6 +1012,18 @@
       <UserCode>true</UserCode>
       <id>25bb5e38-8092-47e8-bab5-2da482a1cbdb</id>
       <BoundTo>14f63b22-ac75-439e-ac97-eaf1e41b4834</BoundTo>
+    </Compile>
+    <Compile Include="StudiesPage\Search_ExistingStudy.cs">
+      <BoundTo>83ce24c5-13fd-4efa-8394-3173861dc8c0</BoundTo>
+      <DependentUpon>Search_ExistingStudy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9303e7b-f839-4d08-859b-6ac0c19c8ea8</id>
+    </Compile>
+    <Compile Include="StudiesPage\Search_ExistingStudy.UserCode.cs">
+      <BoundTo>83ce24c5-13fd-4efa-8394-3173861dc8c0</BoundTo>
+      <DependentUpon>Search_ExistingStudy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddb60968-3208-4bf4-a02f-04f2494d9cef</id>
     </Compile>
     <Compile Include="SubjectsPage\Click_AddEvent_Button.cs">
       <DependentUpon>Click_AddEvent_Button.rxrec</DependentUpon>
@@ -1012,6 +1084,18 @@
       <UserCode>true</UserCode>
       <id>dda30785-c999-49ad-9f6d-4f54880b7e71</id>
       <BoundTo>a7ef3a10-5edd-425a-a185-1281aefcc46b</BoundTo>
+    </Compile>
+    <Compile Include="SubjectsPage\Click_CompositeOutcomes.cs">
+      <DependentUpon>Click_CompositeOutcomes.rxrec</DependentUpon>
+      <id>a6d9dd88-cb18-4c35-b95f-e95166b33aa8</id>
+      <BoundTo>0e021b80-acaf-45ed-b6b5-9b5774e817df</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SubjectsPage\Click_CompositeOutcomes.UserCode.cs">
+      <DependentUpon>Click_CompositeOutcomes.rxrec</DependentUpon>
+      <id>df516d03-1733-4180-b36f-82ad7bb43728</id>
+      <BoundTo>0e021b80-acaf-45ed-b6b5-9b5774e817df</BoundTo>
+      <UserCode>true</UserCode>
     </Compile>
     <Compile Include="SubjectsPage\Click_DataConfirmation.cs">
       <DependentUpon>Click_DataConfirmation.rxrec</DependentUpon>
@@ -1376,6 +1460,11 @@
       <id>cb7bb3c7-b9bb-4510-95e0-3ef3cc5325de</id>
       <recordtableid>ce122304-990d-4f47-b11b-bc20b49860b7</recordtableid>
     </None>
+    <None Include="AddSitePage\Select_CogstateLabs_Site.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>93c3fc1c-3d33-4b84-8ce2-b79889803b7a</id>
+      <recordtableid>c1f7dad4-0d75-42ac-9a91-47d0f4a1ee5b</recordtableid>
+    </None>
     <None Include="AddSitePage\Select_SiteName.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>db1e2293-a22e-4768-b975-14fe2abedbc8</id>
@@ -1421,6 +1510,11 @@
       <id>4346f5be-19a4-420b-99cc-697ee89741b0</id>
       <recordtableid>6e31c9ce-045f-4c68-9677-6c33920d2d80</recordtableid>
     </None>
+    <None Include="AddSubjectPage\Click_SaveAndEnter_Data.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>10970109-6064-4160-88f5-715ace9d7a64</id>
+      <recordtableid>a92cc279-94e1-4aaa-877b-436b68d9c101</recordtableid>
+    </None>
     <None Include="AddSubjectPage\Enter_DateOfBirth.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>dce79d0b-a92d-4062-9868-e7401b784535</id>
@@ -1441,6 +1535,11 @@
       <id>141bdbe8-4698-47c6-a3d0-9e30d2e6a985</id>
       <recordtableid>035a9383-4953-4e5a-aa79-e7d58792e684</recordtableid>
     </None>
+    <None Include="AddSubjectPage\Select_SecondSite.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>d436b0cb-b220-4df8-b8d6-8606fe05445a</id>
+      <recordtableid>c24fd523-ed93-40f8-8682-e728ddb4b7cf</recordtableid>
+    </None>
     <None Include="AddSubjectPage\Select_Site.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>82c25d43-59bc-4e32-a8a2-3e18c1aee1ac</id>
@@ -1453,6 +1552,10 @@
     </None>
     <None Include="app.config">
       <id>4ef413af-dd9f-4d81-8fac-ed4d3c600dfe</id>
+    </None>
+    <None Include="csv\RedCapConfig_New.csv">
+      <id>3962c88c-3f00-4e2d-9daf-daddb170f246</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="InstrumentsPage\Click_Instruments_Tab.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -1629,6 +1732,10 @@
       <id>78a717b9-296b-4e3b-a1d9-cc40faddc01c</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="rawData\CBB.txt">
+      <id>b9333cd2-1e8c-4375-911a-40ac10d688ba</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="RedCapCloudRepository.rximg">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <DependentUpon>RedCapCloudRepository.rxrep</DependentUpon>
@@ -1655,10 +1762,20 @@
       <id>30a9c7d7-5a66-4200-89b0-a07375639db3</id>
       <recordtableid>7be844f4-873c-4576-8644-e7a186898df1</recordtableid>
     </None>
+    <None Include="SitesPage\Get_SiteID.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>905595d9-a701-4d8c-a97c-fcb503e26f18</id>
+      <recordtableid>10ec8898-271e-4894-a445-6f22a4ac47b5</recordtableid>
+    </None>
     <None Include="StudiesPage\Click_AddStudy_Button.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>274b0360-7b67-47fb-a0b3-9d626ad3545c</id>
       <recordtableid>3b0c960d-4e59-4d1a-a918-4b670266537d</recordtableid>
+    </None>
+    <None Include="StudiesPage\Click_ExistingStudy.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>0782e480-7c53-4645-ba20-4db3863e824f</id>
+      <recordtableid>1637cb94-17f8-409e-accf-106e00f4256e</recordtableid>
     </None>
     <None Include="StudiesPage\Click_MyStudies.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -1674,6 +1791,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>14f63b22-ac75-439e-ac97-eaf1e41b4834</id>
       <recordtableid>7bfdabe8-1bfa-4069-9552-d0e070c42a5f</recordtableid>
+    </None>
+    <None Include="StudiesPage\Search_ExistingStudy.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>83ce24c5-13fd-4efa-8394-3173861dc8c0</id>
+      <recordtableid>27faacaa-901a-44bb-b9b9-d5d0ad0fc35e</recordtableid>
     </None>
     <None Include="SubjectsPage\Click_AddEvent_Button.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
@@ -1699,6 +1821,11 @@
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
       <id>a7ef3a10-5edd-425a-a185-1281aefcc46b</id>
       <recordtableid>23016116-3201-4725-84fa-69e0a0147395</recordtableid>
+    </None>
+    <None Include="SubjectsPage\Click_CompositeOutcomes.rxrec">
+      <id>0e021b80-acaf-45ed-b6b5-9b5774e817df</id>
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <recordtableid>a0facf25-a588-4552-a677-9b16e996a9d9</recordtableid>
     </None>
     <None Include="SubjectsPage\Click_DataConfirmation.rxrec">
       <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>

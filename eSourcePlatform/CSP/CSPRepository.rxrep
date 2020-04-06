@@ -1108,7 +1108,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 			capname="unknown"
 			id="95e7e970-a6ef-45b5-859c-7b9177792c82"
 			isrooted="False"
-			name="BatteryConfigReportPage"
+			name="ReportsPage"
 			searchtimeout="0ms">
 				<item
 				addcaps="unknown,webelement,trtag"
@@ -1118,6 +1118,24 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="30fc5bd0-25fe-4ca2-b1c9-6f2977e98f08"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Battery Config Report' and @visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="45a6b357-f470-4904-9f63-1a00707a8a92"
+				name="StandardExtractLink"
+				refimgid="e04e2ac2-83dc-4527-8d51-c5886a763d01"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Standard Extract' and @visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="f575571b-4ab2-416b-9ae6-593d0a3f0015"
+				name="AcademicExtractLink"
+				refimgid="d783337c-0623-45ba-bf71-bdacf2ca4d7b"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//table/tbody/tr/td/a[@innertext='Academic Extract' and @visible='True']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -1493,7 +1511,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				id="5cafea12-8dac-456b-af85-df1546dac229"
 				name="BatterySkipButton"
 				refimgid="3e5f0113-016c-4723-9732-f7a3dd5da12a"
-				searchtimeout="30000ms">
+				searchtimeout="60000ms">
 					/dom[@domain=$CSPDOM]//button[#'skip']
 				</item>
 				<item
@@ -1502,7 +1520,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				id="41136832-35b1-4bfa-9dcb-92e2d111c24b"
 				name="BatteryDataField"
 				refimgid="eabc033b-f95b-4b05-88b8-4017cd9d4a91"
-				searchtimeout="30000ms">
+				searchtimeout="60000ms">
 					/dom[@domain=$CSPDOM]//textarea[#'results']
 				</item>
 				<item
@@ -1640,7 +1658,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="VisitScheduleTitle"
 				refimgid="bcc42375-45d4-4b85-8c50-4b9a98a27bc5"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$VisitScheduleName+$RandNum]
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$VisitScheduleName]
 				</item>
 				<item
 				addcaps="unknown,webelement,ptag"
@@ -1668,6 +1686,15 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				refimgid="3783051e-08e5-4b34-aab9-5bb3d3b2940f"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~'RCCEventDefinitions']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="ptag"
+				id="9807d900-1c16-46a6-a5ad-cad0bf9cee7b"
+				name="ExistingStudyCard"
+				refimgid="8e7dfbf2-179b-4235-8908-7f4fee083669"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']//p[@innertext~$ExistingStudy]
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-list-cards']
@@ -1900,7 +1927,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="InternalUserBreadcrumb"
 				refimgid="5975977c-88f8-4363-8248-a09bc9b693b8"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext~$Username]
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-breadcrumbs']//span[@innertext~$InternalUsername]
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -2304,6 +2331,15 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 			refimgid="f3b773b4-3bd6-4ede-9007-1b0433b22df3"
 			searchtimeout="30000ms">
 				/dom[@domain=$CSPDOM]//div[#'scroll-container']//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[6]/?/?/tag[@tagname='cogstate-generic-list-header']/div/div/div[4]/select
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="605c3598-22f0-4953-9bee-5a7da70c03a4"
+			name="SearchStudy"
+			refimgid="95d7c2d9-7671-4394-b37b-a0726e7b6a51"
+			searchtimeout="30000ms">
+				/dom[@domain=$CSPDOM]//input[#'generic-search']
 			</item>
 			<basepath>
 				/dom[@domain=$CSPDOM]
@@ -2790,7 +2826,7 @@ UVo7AAAAAElFTkSuQmCC
 			id="d02a3216-d1b5-4c07-9ee2-ca4ac3c6e278"
 			name="DownloadedExtractFile"
 			refimgid="9d5a6dc2-d8af-4d55-b5e4-607849879960"
-			searchtimeout="30000ms">
+			searchtimeout="600000ms">
 				/form[@title~'Cogstate Solution Platform']/container[@accessiblename~'^Cogstate\ Solution\ Platfor']//container[@accessiblename='Downloads bar']//button[@accessiblename~'extract']
 			</item>
 			<basepath>
@@ -2831,11 +2867,12 @@ AAAASUVORK5CYII=
 		<var
 		id="f21fe27d-9d06-425a-ac88-1991573cee47"
 		name="VisitScheduleName">
+			RCCEventDefinitions
 		</var>
 		<var
 		id="88063847-8295-4241-aa12-5e073e7388b1"
 		name="RandNum">
-			201909240520
+			12354
 		</var>
 		<var
 		id="d5025415-1b24-44d3-ad11-14c313fe5f70"
@@ -2844,6 +2881,7 @@ AAAASUVORK5CYII=
 		<var
 		id="2ee20f6c-a7a5-4f7e-beca-0402a96e2fb7"
 		name="Key">
+			5767c4d2-be6c-4bdc-ac60-5ba8474f37af
 		</var>
 		<var
 		id="87005baf-9d21-4fd0-8599-d463aad52dc9"
@@ -2855,7 +2893,7 @@ AAAASUVORK5CYII=
 		</var>
 		<var
 		id="1892dd21-199b-47ab-bba6-5cd1b874a668"
-		name="Username">
+		name="InternalUsername">
 		</var>
 		<var
 		id="9790176f-caee-49ec-ae56-bf6472b15e2f"
@@ -2881,7 +2919,7 @@ AAAASUVORK5CYII=
 		<var
 		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 		name="CSPDOM">
-			cgst-qc-orr.azurewebsites.net
+			cgst-qc-jill.azurewebsites.net
 		</var>
 		<var
 		id="cca33cb1-e6e4-4dea-927e-63ce1b157653"
@@ -2894,7 +2932,12 @@ AAAASUVORK5CYII=
 		<var
 		id="c056edce-42d6-4ef2-b6ab-c3af87dd013f"
 		name="VisitName">
-			Visit 1
+			Visit1
+		</var>
+		<var
+		id="9d063f2a-6b62-4a0d-9da9-ff83574e4b46"
+		name="ExistingStudy">
+			AutomationStudy
 		</var>
 	</variables>
 </repository>

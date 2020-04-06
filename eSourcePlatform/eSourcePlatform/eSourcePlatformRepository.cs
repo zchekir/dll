@@ -27,13 +27,8 @@ namespace eSourcePlatform
     public partial class eSourcePlatformRepository : RepoGenBaseFolder
     {
         static eSourcePlatformRepository instance = new eSourcePlatformRepository();
-        eSourcePlatformRepositoryFolders.CogstateSolutionPlatformAppFolder _cogstatesolutionplatform;
         eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
         eSourcePlatformRepositoryFolders.SignInAppFolder _signin;
-        eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder _academicextractorrpowerbi;
-        eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder _datacleaningtool;
-        eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder _cogstatesolutionplatform1;
-        eSourcePlatformRepositoryFolders.REDCapCloudAppFolder _redcapcloud;
 
         /// <summary>
         /// Gets the singleton class instance representing the eSourcePlatformRepository element repository.
@@ -50,13 +45,8 @@ namespace eSourcePlatform
         public eSourcePlatformRepository() 
             : base("eSourcePlatformRepository", "/", null, 0, false, "d677fdb9-00e1-4467-9fce-a84c063e8bd0", ".\\RepositoryImages\\eSourcePlatformRepositoryd677fdb9.rximgres")
         {
-            _cogstatesolutionplatform = new eSourcePlatformRepositoryFolders.CogstateSolutionPlatformAppFolder(this);
             _signintoyouraccount = new eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder(this);
             _signin = new eSourcePlatformRepositoryFolders.SignInAppFolder(this);
-            _academicextractorrpowerbi = new eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder(this);
-            _datacleaningtool = new eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder(this);
-            _cogstatesolutionplatform1 = new eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder(this);
-            _redcapcloud = new eSourcePlatformRepositoryFolders.REDCapCloudAppFolder(this);
         }
 
 #region Variables
@@ -109,6 +99,18 @@ namespace eSourcePlatform
             set { _CSPDOM = value; }
         }
 
+        string _ProtocolID = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ProtocolID.
+        /// </summary>
+        [TestVariable("64f38c0d-a00b-4a5b-bd53-ba394794cee9")]
+        public string ProtocolID
+        {
+            get { return _ProtocolID; }
+            set { _ProtocolID = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -121,15 +123,6 @@ namespace eSourcePlatform
             {
                 return _selfInfo;
             }
-        }
-
-        /// <summary>
-        /// The CogstateSolutionPlatform folder.
-        /// </summary>
-        [RepositoryFolder("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
-        public virtual eSourcePlatformRepositoryFolders.CogstateSolutionPlatformAppFolder CogstateSolutionPlatform
-        {
-            get { return _cogstatesolutionplatform; }
         }
 
         /// <summary>
@@ -149,42 +142,6 @@ namespace eSourcePlatform
         {
             get { return _signin; }
         }
-
-        /// <summary>
-        /// The AcademicExtractOrrPowerBI folder.
-        /// </summary>
-        [RepositoryFolder("bc4938ca-6b79-480d-9ccc-92591339c530")]
-        public virtual eSourcePlatformRepositoryFolders.AcademicExtractOrrPowerBIAppFolder AcademicExtractOrrPowerBI
-        {
-            get { return _academicextractorrpowerbi; }
-        }
-
-        /// <summary>
-        /// The DataCleaningTool folder.
-        /// </summary>
-        [RepositoryFolder("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
-        public virtual eSourcePlatformRepositoryFolders.DataCleaningToolAppFolder DataCleaningTool
-        {
-            get { return _datacleaningtool; }
-        }
-
-        /// <summary>
-        /// The CogstateSolutionPlatform1 folder.
-        /// </summary>
-        [RepositoryFolder("e563784f-5b18-4504-be23-71041324819b")]
-        public virtual eSourcePlatformRepositoryFolders.CogstateSolutionPlatform1AppFolder CogstateSolutionPlatform1
-        {
-            get { return _cogstatesolutionplatform1; }
-        }
-
-        /// <summary>
-        /// The REDCapCloud folder.
-        /// </summary>
-        [RepositoryFolder("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
-        public virtual eSourcePlatformRepositoryFolders.REDCapCloudAppFolder REDCapCloud
-        {
-            get { return _redcapcloud; }
-        }
     }
 
     /// <summary>
@@ -193,124 +150,6 @@ namespace eSourcePlatform
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class eSourcePlatformRepositoryFolders
     {
-        /// <summary>
-        /// The CogstateSolutionPlatformAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
-        public partial class CogstateSolutionPlatformAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _searchstudyInfo;
-            RepoItemInfo _clickstudyInfo;
-            RepoItemInfo _startlogcspInfo;
-
-            /// <summary>
-            /// Creates a new CogstateSolutionPlatform  folder.
-            /// </summary>
-            public CogstateSolutionPlatformAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CogstateSolutionPlatform", "/dom[@domain=$CSPDOM]", parentFolder, 30000, null, false, "edeb004d-d2f2-4a96-895f-472ccf97f10d", "")
-            {
-                _searchstudyInfo = new RepoItemInfo(this, "SearchStudy", ".//input[#'generic-search']", 30000, null, "896c64d8-c9d5-45d0-9c4a-21c793cde0ed");
-                _clickstudyInfo = new RepoItemInfo(this, "Clickstudy", ".//a[@innertext~$ExistingStudy]", 30000, null, "b7e9c226-23bf-40e1-9756-b817a2048676");
-                _startlogcspInfo = new RepoItemInfo(this, "StartLogCSP", ".//div[#'ng-app']/tag/div/div[5]/?/?/a[@href~'^https://cgst-qc-orr\\.azure']/span[2]", 30000, null, "fe46efed-95ff-4130-9d75-6d87b2696564");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("edeb004d-d2f2-4a96-895f-472ccf97f10d")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SearchStudy item.
-            /// </summary>
-            [RepositoryItem("896c64d8-c9d5-45d0-9c4a-21c793cde0ed")]
-            public virtual Ranorex.InputTag SearchStudy
-            {
-                get
-                {
-                    return _searchstudyInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SearchStudy item info.
-            /// </summary>
-            [RepositoryItemInfo("896c64d8-c9d5-45d0-9c4a-21c793cde0ed")]
-            public virtual RepoItemInfo SearchStudyInfo
-            {
-                get
-                {
-                    return _searchstudyInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Clickstudy item.
-            /// </summary>
-            [RepositoryItem("b7e9c226-23bf-40e1-9756-b817a2048676")]
-            public virtual Ranorex.ATag Clickstudy
-            {
-                get
-                {
-                    return _clickstudyInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Clickstudy item info.
-            /// </summary>
-            [RepositoryItemInfo("b7e9c226-23bf-40e1-9756-b817a2048676")]
-            public virtual RepoItemInfo ClickstudyInfo
-            {
-                get
-                {
-                    return _clickstudyInfo;
-                }
-            }
-
-            /// <summary>
-            /// The StartLogCSP item.
-            /// </summary>
-            [RepositoryItem("fe46efed-95ff-4130-9d75-6d87b2696564")]
-            public virtual Ranorex.SpanTag StartLogCSP
-            {
-                get
-                {
-                    return _startlogcspInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The StartLogCSP item info.
-            /// </summary>
-            [RepositoryItemInfo("fe46efed-95ff-4130-9d75-6d87b2696564")]
-            public virtual RepoItemInfo StartLogCSPInfo
-            {
-                get
-                {
-                    return _startlogcspInfo;
-                }
-            }
-        }
-
         /// <summary>
         /// The SignInToYourAccountAppFolder folder.
         /// </summary>
@@ -384,7 +223,6 @@ namespace eSourcePlatform
         public partial class SignInAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _passwordinputInfo;
-            RepoItemInfo _submitbuttonInfo;
 
             /// <summary>
             /// Creates a new SignIn  folder.
@@ -393,7 +231,6 @@ namespace eSourcePlatform
                     base("SignIn", "/dom[@domain='login.cogstate.com']", parentFolder, 30000, null, false, "df5f0e47-553e-4900-9a01-24ea165a5989", "")
             {
                 _passwordinputInfo = new RepoItemInfo(this, "PasswordInput", ".//input[#'passwordInput']", 30000, null, "87912f36-c022-4f39-998f-8d6a19ff5148");
-                _submitbuttonInfo = new RepoItemInfo(this, "SubmitButton", ".//span[#'submitButton']", 30000, null, "6e2e8192-7577-425c-8b00-ba3f06e9bf0f");
             }
 
             /// <summary>
@@ -441,424 +278,6 @@ namespace eSourcePlatform
                 get
                 {
                     return _passwordinputInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SubmitButton item.
-            /// </summary>
-            [RepositoryItem("6e2e8192-7577-425c-8b00-ba3f06e9bf0f")]
-            public virtual Ranorex.SpanTag SubmitButton
-            {
-                get
-                {
-                    return _submitbuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SubmitButton item info.
-            /// </summary>
-            [RepositoryItemInfo("6e2e8192-7577-425c-8b00-ba3f06e9bf0f")]
-            public virtual RepoItemInfo SubmitButtonInfo
-            {
-                get
-                {
-                    return _submitbuttonInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The AcademicExtractOrrPowerBIAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("bc4938ca-6b79-480d-9ccc-92591339c530")]
-        public partial class AcademicExtractOrrPowerBIAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _clicklogoutInfo;
-            RepoItemInfo _signoutInfo;
-
-            /// <summary>
-            /// Creates a new AcademicExtractOrrPowerBI  folder.
-            /// </summary>
-            public AcademicExtractOrrPowerBIAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("AcademicExtractOrrPowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "bc4938ca-6b79-480d-9ccc-92591339c530", "")
-            {
-                _clicklogoutInfo = new RepoItemInfo(this, "ClickLogOut", ".//button[#'powerBIUserInfoBtn']/div", 30000, null, "0dbedd49-c821-437a-8cd1-bd9771a12f2f");
-                _signoutInfo = new RepoItemInfo(this, "SignOut", ".//div[#'cdk-overlay-0']/div//a[@innertext='Sign out']", 30000, null, "1ae4ff87-2bba-46fe-b5df-bec9c3fef842");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("bc4938ca-6b79-480d-9ccc-92591339c530")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("bc4938ca-6b79-480d-9ccc-92591339c530")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClickLogOut item.
-            /// </summary>
-            [RepositoryItem("0dbedd49-c821-437a-8cd1-bd9771a12f2f")]
-            public virtual Ranorex.DivTag ClickLogOut
-            {
-                get
-                {
-                    return _clicklogoutInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClickLogOut item info.
-            /// </summary>
-            [RepositoryItemInfo("0dbedd49-c821-437a-8cd1-bd9771a12f2f")]
-            public virtual RepoItemInfo ClickLogOutInfo
-            {
-                get
-                {
-                    return _clicklogoutInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SignOut item.
-            /// </summary>
-            [RepositoryItem("1ae4ff87-2bba-46fe-b5df-bec9c3fef842")]
-            public virtual Ranorex.ATag SignOut
-            {
-                get
-                {
-                    return _signoutInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SignOut item info.
-            /// </summary>
-            [RepositoryItemInfo("1ae4ff87-2bba-46fe-b5df-bec9c3fef842")]
-            public virtual RepoItemInfo SignOutInfo
-            {
-                get
-                {
-                    return _signoutInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The DataCleaningToolAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
-        public partial class DataCleaningToolAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _datacleaningtoolInfo;
-
-            /// <summary>
-            /// Creates a new DataCleaningTool  folder.
-            /// </summary>
-            public DataCleaningToolAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DataCleaningTool", "/dom[@domain='cgst-qc-orr-dct.azurewebsites.net']", parentFolder, 30000, null, false, "0f325a6f-9a8f-4925-9166-b0d5ccb5d44b", "")
-            {
-                _datacleaningtoolInfo = new RepoItemInfo(this, "DataCleaningTool", ".//h2[@innertext='Data Cleaning Tool']", 30000, null, "4d3c9011-e18d-4ce0-a355-118cace1816b");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("0f325a6f-9a8f-4925-9166-b0d5ccb5d44b")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DataCleaningTool item.
-            /// </summary>
-            [RepositoryItem("4d3c9011-e18d-4ce0-a355-118cace1816b")]
-            public virtual Ranorex.H2Tag DataCleaningTool
-            {
-                get
-                {
-                    return _datacleaningtoolInfo.CreateAdapter<Ranorex.H2Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DataCleaningTool item info.
-            /// </summary>
-            [RepositoryItemInfo("4d3c9011-e18d-4ce0-a355-118cace1816b")]
-            public virtual RepoItemInfo DataCleaningToolInfo
-            {
-                get
-                {
-                    return _datacleaningtoolInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The CogstateSolutionPlatform1AppFolder folder.
-        /// </summary>
-        [RepositoryFolder("e563784f-5b18-4504-be23-71041324819b")]
-        public partial class CogstateSolutionPlatform1AppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _loginemailInfo;
-            RepoItemInfo _loginpassInfo;
-            RepoItemInfo _buttontaglogInfo;
-
-            /// <summary>
-            /// Creates a new CogstateSolutionPlatform1  folder.
-            /// </summary>
-            public CogstateSolutionPlatform1AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CogstateSolutionPlatform1", "/dom[@domain='platform.cogstate.com']", parentFolder, 30000, null, false, "e563784f-5b18-4504-be23-71041324819b", "")
-            {
-                _loginemailInfo = new RepoItemInfo(this, "LoginEmail", ".//input[#'loginEmail']", 30000, null, "0f6b94ff-9556-41d0-91df-a5d8c793730e");
-                _loginpassInfo = new RepoItemInfo(this, "LoginPass", ".//input[#'loginPass']", 30000, null, "36ecf764-b457-4163-a894-4d867e95fafa");
-                _buttontaglogInfo = new RepoItemInfo(this, "ButtonTagLOG", ".//div[#'ng-app']//tag[@tagname='cogstate-authentication-login']/div/div/div/div[3]/form[@name='_form']/div[1]/button[@innertext~'^\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ ']", 30000, null, "ee3e265d-f2ce-4430-ba1b-c1517ec78b79");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("e563784f-5b18-4504-be23-71041324819b")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("e563784f-5b18-4504-be23-71041324819b")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The LoginEmail item.
-            /// </summary>
-            [RepositoryItem("0f6b94ff-9556-41d0-91df-a5d8c793730e")]
-            public virtual Ranorex.InputTag LoginEmail
-            {
-                get
-                {
-                    return _loginemailInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LoginEmail item info.
-            /// </summary>
-            [RepositoryItemInfo("0f6b94ff-9556-41d0-91df-a5d8c793730e")]
-            public virtual RepoItemInfo LoginEmailInfo
-            {
-                get
-                {
-                    return _loginemailInfo;
-                }
-            }
-
-            /// <summary>
-            /// The LoginPass item.
-            /// </summary>
-            [RepositoryItem("36ecf764-b457-4163-a894-4d867e95fafa")]
-            public virtual Ranorex.InputTag LoginPass
-            {
-                get
-                {
-                    return _loginpassInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LoginPass item info.
-            /// </summary>
-            [RepositoryItemInfo("36ecf764-b457-4163-a894-4d867e95fafa")]
-            public virtual RepoItemInfo LoginPassInfo
-            {
-                get
-                {
-                    return _loginpassInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTagLOG item.
-            /// </summary>
-            [RepositoryItem("ee3e265d-f2ce-4430-ba1b-c1517ec78b79")]
-            public virtual Ranorex.ButtonTag ButtonTagLOG
-            {
-                get
-                {
-                    return _buttontaglogInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTagLOG item info.
-            /// </summary>
-            [RepositoryItemInfo("ee3e265d-f2ce-4430-ba1b-c1517ec78b79")]
-            public virtual RepoItemInfo ButtonTagLOGInfo
-            {
-                get
-                {
-                    return _buttontaglogInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The REDCapCloudAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
-        public partial class REDCapCloudAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _visit1Info;
-            RepoItemInfo _addeventdialogwidgeteventnamebuttonInfo;
-            RepoItemInfo _saveandexitInfo;
-
-            /// <summary>
-            /// Creates a new REDCapCloud  folder.
-            /// </summary>
-            public REDCapCloudAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("REDCapCloud", "/dom[@domain='cgsqc.redcapcloud.com']", parentFolder, 30000, null, false, "9abf8027-74d3-4b93-9eb7-73c0ff634885", "")
-            {
-                _visit1Info = new RepoItemInfo(this, "Visit1", ".//a[@innertext='Visit1']", 30000, null, "8b400bc3-505d-4daf-b2f0-6c9904193dfd");
-                _addeventdialogwidgeteventnamebuttonInfo = new RepoItemInfo(this, "AddEventDialogWidgetEventNameButton", ".//button[#'addEventDialogWidget_eventName_button']", 30000, null, "de22f4e8-3cd2-4bef-9088-11089041ee9d");
-                _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//span[@innertext='Save and Exit']", 30000, null, "7c8e3148-ed4d-4b7e-b696-85100766f640");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("9abf8027-74d3-4b93-9eb7-73c0ff634885")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Visit1 item.
-            /// </summary>
-            [RepositoryItem("8b400bc3-505d-4daf-b2f0-6c9904193dfd")]
-            public virtual Ranorex.ATag Visit1
-            {
-                get
-                {
-                    return _visit1Info.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Visit1 item info.
-            /// </summary>
-            [RepositoryItemInfo("8b400bc3-505d-4daf-b2f0-6c9904193dfd")]
-            public virtual RepoItemInfo Visit1Info
-            {
-                get
-                {
-                    return _visit1Info;
-                }
-            }
-
-            /// <summary>
-            /// The AddEventDialogWidgetEventNameButton item.
-            /// </summary>
-            [RepositoryItem("de22f4e8-3cd2-4bef-9088-11089041ee9d")]
-            public virtual Ranorex.ButtonTag AddEventDialogWidgetEventNameButton
-            {
-                get
-                {
-                    return _addeventdialogwidgeteventnamebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AddEventDialogWidgetEventNameButton item info.
-            /// </summary>
-            [RepositoryItemInfo("de22f4e8-3cd2-4bef-9088-11089041ee9d")]
-            public virtual RepoItemInfo AddEventDialogWidgetEventNameButtonInfo
-            {
-                get
-                {
-                    return _addeventdialogwidgeteventnamebuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SaveAndExit item.
-            /// </summary>
-            [RepositoryItem("7c8e3148-ed4d-4b7e-b696-85100766f640")]
-            public virtual Ranorex.SpanTag SaveAndExit
-            {
-                get
-                {
-                    return _saveandexitInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SaveAndExit item info.
-            /// </summary>
-            [RepositoryItemInfo("7c8e3148-ed4d-4b7e-b696-85100766f640")]
-            public virtual RepoItemInfo SaveAndExitInfo
-            {
-                get
-                {
-                    return _saveandexitInfo;
                 }
             }
         }

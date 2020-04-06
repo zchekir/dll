@@ -89,9 +89,9 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.ClickMoveButton' at Center.", repo.DataCleaningTool.ClickMoveButtonInfo, new RecordItemIndex(0));
-            repo.DataCleaningTool.ClickMoveButton.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.MoveButton' at Center.", repo.DataCleaningTool.MoveButtonInfo, new RecordItemIndex(0));
+            repo.DataCleaningTool.MoveButton.Click(30);
+            Delay.Milliseconds(470);
             
         }
 

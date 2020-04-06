@@ -115,8 +115,8 @@ namespace RedCapCloud.General
             repo.REDCapCloud.iFrame.SkipButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(4));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(4));
+            Delay.Duration(7000, false);
             
         }
 

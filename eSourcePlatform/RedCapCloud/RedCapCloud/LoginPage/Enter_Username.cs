@@ -107,8 +107,8 @@ namespace RedCapCloud.LoginPage
             repo.REDCapCloud.LoginPage.LoginUsername.Click(3);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}' with focus on 'REDCapCloud.LoginPage.LoginUsername'.", repo.REDCapCloud.LoginPage.LoginUsernameInfo, new RecordItemIndex(2));
             repo.REDCapCloud.LoginPage.LoginUsername.PressKeys("{Home}{LShiftKey down}{End}{LShiftKey up}{Delete}", 1);

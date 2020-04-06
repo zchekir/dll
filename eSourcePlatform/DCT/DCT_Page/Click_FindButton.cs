@@ -93,8 +93,8 @@ namespace DCT.DCT_Page
             Delay.Duration(500, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DataCleaningTool.FindByAssessmentIdButton' at Center.", repo.DataCleaningTool.FindByAssessmentIdButtonInfo, new RecordItemIndex(1));
-            repo.DataCleaningTool.FindByAssessmentIdButton.Click();
-            Delay.Milliseconds(200);
+            repo.DataCleaningTool.FindByAssessmentIdButton.Click(30);
+            Delay.Milliseconds(470);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
             Delay.Duration(500, false);

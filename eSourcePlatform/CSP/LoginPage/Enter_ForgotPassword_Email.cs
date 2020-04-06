@@ -55,6 +55,18 @@ namespace CSP.LoginPage
 
 #region Variables
 
+        string _Username;
+
+        /// <summary>
+        /// Gets or sets the value of variable Username.
+        /// </summary>
+        [TestVariable("3e6aef36-d3c3-439e-a0f1-0a3400ff4d1d")]
+        public string Username
+        {
+            get { return _Username; }
+            set { _Username = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
@@ -63,16 +75,6 @@ namespace CSP.LoginPage
         {
             get { return repo.CSPDOM; }
             set { repo.CSPDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Username.
-        /// </summary>
-        [TestVariable("3e6aef36-d3c3-439e-a0f1-0a3400ff4d1d")]
-        public string Username
-        {
-            get { return repo.Username; }
-            set { repo.Username = value; }
         }
 
         /// <summary>

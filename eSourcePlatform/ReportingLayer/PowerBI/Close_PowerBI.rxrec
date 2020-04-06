@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="10618194-7191-4be5-9b38-8981dd57c5c4"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Close_PowerBI
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_PowerBI"
+	namespace="ReportingLayer.PowerBI">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="45052cf2-92f0-408d-b594-127213a95d01">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0bcadffa-23d9-4f2f-a294-3ed2de5fe67e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='app.powerbi.com']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ea6a006e-6d85-4695-88f7-8d684bce0248"
+	name="ReportingLayerRepository"
+	relativepath="..\ReportingLayerRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ReportingLayerRepository"
+		namespace="ReportingLayer">
+		</codegen>
+		<rootfolder
+		id="60c3c42a-4566-402e-9361-221a6c8f795f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_PowerBI.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

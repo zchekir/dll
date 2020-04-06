@@ -113,28 +113,28 @@ namespace CSP.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$ProtocolNumber) on item 'CogstateSolutionPlatform.BatteryConfigReportPage.ProtocolLabel'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.ProtocolLabelInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.BatteryConfigReportPage.ProtocolLabelInfo, "InnerText", ProtocolNumber);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$ProtocolNumber) on item 'CogstateSolutionPlatform.ReportsPage.ProtocolLabel'.", repo.CogstateSolutionPlatform.ReportsPage.ProtocolLabelInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.ReportsPage.ProtocolLabelInfo, "InnerText", ProtocolNumber);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.BatteryConfigReportPage.ProtocolLabel'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.ProtocolLabelInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.BatteryConfigReportPage.ProtocolLabelInfo, "InnerText", RandNum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.ReportsPage.ProtocolLabel'.", repo.CogstateSolutionPlatform.ReportsPage.ProtocolLabelInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.CogstateSolutionPlatform.ReportsPage.ProtocolLabelInfo, "InnerText", RandNum);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.BatteryConfigReportPage.VisitScheduleTable'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.VisitScheduleTableInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.CogstateSolutionPlatform.BatteryConfigReportPage.VisitScheduleTableInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.ReportsPage.VisitScheduleTable'.", repo.CogstateSolutionPlatform.ReportsPage.VisitScheduleTableInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.CogstateSolutionPlatform.ReportsPage.VisitScheduleTableInfo);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.BatteryConfigReportPage.BatterySettingsTable'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.BatterySettingsTableInfo, new RecordItemIndex(3));
-            Validate.Exists(repo.CogstateSolutionPlatform.BatteryConfigReportPage.BatterySettingsTableInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.ReportsPage.BatterySettingsTable'.", repo.CogstateSolutionPlatform.ReportsPage.BatterySettingsTableInfo, new RecordItemIndex(3));
+            Validate.Exists(repo.CogstateSolutionPlatform.ReportsPage.BatterySettingsTableInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeSpecDeviation'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeSpecDeviationInfo, new RecordItemIndex(4));
-            Validate.Exists(repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeSpecDeviationInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.ReportsPage.TestTimeSpecDeviation'.", repo.CogstateSolutionPlatform.ReportsPage.TestTimeSpecDeviationInfo, new RecordItemIndex(4));
+            Validate.Exists(repo.CogstateSolutionPlatform.ReportsPage.TestTimeSpecDeviationInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeBlockDeviation'.", repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeBlockDeviationInfo, new RecordItemIndex(5));
-            Validate.Exists(repo.CogstateSolutionPlatform.BatteryConfigReportPage.TestTimeBlockDeviationInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'CogstateSolutionPlatform.ReportsPage.TestTimeBlockDeviation'.", repo.CogstateSolutionPlatform.ReportsPage.TestTimeBlockDeviationInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.CogstateSolutionPlatform.ReportsPage.TestTimeBlockDeviationInfo);
             Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Battery Config Report Generated successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(6));

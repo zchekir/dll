@@ -131,9 +131,9 @@ namespace CSP.AddVisitSchedulePage
             Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, "InnerText", VisitScheduleName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, "InnerText", RandNum);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.StudyCards.VisitScheduleTitle'.", repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, new RecordItemIndex(5));
+            //Validate.AttributeContains(repo.CogstateSolutionPlatform.StudyCards.VisitScheduleTitleInfo, "InnerText", RandNum);
+            //Delay.Milliseconds(0);
             
             Report.Screenshot(ReportLevel.Info, "User", "Visit Schedule Added Successfully", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(6));
             

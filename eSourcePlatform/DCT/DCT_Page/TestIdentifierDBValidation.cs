@@ -45,8 +45,8 @@ namespace DCT.DCT_Page
             Database = "cgst-orr-api";
             Authentication = "Active Directory Password";
             dbUsername = "zchekir@cogstate.com";
-            dbPassword = "Cogstate2014";
-            TestIdentifier = "CCFA4AE8-0BB3-4296-87B6-FCFEFDE3C2B0";
+            dbPassword = "Cogstate2016";
+            TestIdentifier = "8836467E-0989-477B-A02B-8AB9111AEF40";
         }
 
         /// <summary>
@@ -158,6 +158,9 @@ namespace DCT.DCT_Page
             Init();
 
             engine.Helpers.SQLUtility.ValidateDCTMoved(DBserver, Database, dbUsername, dbPassword, Authentication, TestIdentifier);
+            Delay.Milliseconds(0);
+            
+            engine.Helpers.SQLUtility.ValidateTestIdentifierMove(DBserver, Database, dbUsername, dbPassword, Authentication, TestIdentifier);
             Delay.Milliseconds(0);
             
         }

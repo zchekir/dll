@@ -36,6 +36,8 @@ namespace RedCapCloud.General
 
         public void AddRawData(string fileName)
         {
+        	
+        	
         	Delay.Milliseconds(500);
             string data;
         	using (StreamReader sr = File.OpenText(@".\rawData\" + fileName))
@@ -45,8 +47,10 @@ namespace RedCapCloud.General
         	
         	//Add raw data into the textbox on the battery runner page
         	Report.Log(ReportLevel.Info, "Searching for raw data text field");
-        	repo.REDCapCloud.iFrame.ResultsInfo.WaitForExists(new Duration(30000));
+        	repo.REDCapCloud.iFrame.ResultsInfo.WaitForExists(new Duration(20000));
         	repo.REDCapCloud.iFrame.Results.Element.SetAttributeValue("InnerText", data);
+        	
+        	
         }
 
     }

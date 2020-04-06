@@ -104,7 +104,7 @@ namespace DCT.DCT_Page
 
             Report.Log(ReportLevel.Info, "User", TestIdentifier, new RecordItemIndex(0));
             
-            TryFindAssessment(repo.DataCleaningTool.EnterTestIdentifierInfo, repo.DataCleaningTool.OpenResultsInfo, repo.DataCleaningTool.FindByAssessmentIdButtonInfo);
+            TryFindAssessment(repo.DataCleaningTool.EnterTestIdentifierFieldInfo, repo.DataCleaningTool.SearchResultInfo, repo.DataCleaningTool.FindByAssessmentIdButtonInfo);
             Delay.Milliseconds(0);
             
         }

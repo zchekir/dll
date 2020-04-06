@@ -33,12 +33,12 @@ namespace DCT.Azure
             // Your recording specific initialization code goes here.
         }
 
-        public void Key_sequence_PasswordInput(RepoItemInfo inputtagInfo)
+        public void Key_sequence_PasswordInput(RepoItemInfo PasswordField)
         {
         	
         	try{
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OctopusPassword' with focus on 'inputtagInfo'.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().PressKeys(CSPPassword);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OctopusPassword' with focus on 'inputtagInfo'.", PasswordField);
+            PasswordField.FindAdapter<InputTag>().PressKeys(CSPPassword);
         	}
         	
         	catch ( Exception e){

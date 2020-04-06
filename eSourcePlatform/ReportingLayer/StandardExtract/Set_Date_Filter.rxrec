@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="478d647e-d7d3-47c9-bc73-483c7f81df1f"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Set_Date_Filter
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Set_Date_Filter"
+	namespace="ReportingLayer.StandardExtract">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0e0922f3-32e7-462f-8879-98dc061548ed"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0bcadffa-23d9-4f2f-a294-3ed2de5fe67e"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='app.powerbi.com']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="35e6abc1-4a04-418b-8c52-898fe7faaf0f"
+		sx="2553"
+		sy="-837"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f8ce8db1-03d7-47c6-b1b6-99c6bd175da9"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, itag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="itag"
+				rect="2546,-841,16,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						glyphicon pbi-glyph-filter glyph-small
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						i
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="_ngcontent-kke-c56"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']/i
+				</path>
+			</info>
+			<helperscreenshot
+			guid="e5a81e8e-0673-44d7-a20c-9843aff81a37">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABgAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDJoq99
+kjtHV7qUEcMix8l/z6D6069vUuIZEWSZ98u8CQcKOeByfWgDPoqW3h89nUNhghZRj72O1O+zfuFk
+JYllZgqrnAHGTzwM5/KgCCipTbzhQxhk2kZB2nBFMMcgGSjAbd3Tt6/SgBtFSLBMyb1icqTjcFOP
+SpBaSBJTKrRtGobay4JycUAV6Ksx2FzJMI/JdGIJG5SOBURgmCM5ik2qcM204B96AI6KsCzk+yyT
+uroqgFcqcNk9jVegC4l80rBLtVmjJAwQF2/QjpUl7FbpDIY1hUiXCGOXcSvPJGT7Vn0UASW8pguI
+5R/C2fqKtNeRedKUVhGYfKjGBkdOv61RooA031JDMJFLbWYGSPylHGMH5hyep61FdXyTWxjRCrZC
+g/7A5A+tUaKAL1vepELUFWPlF93T+L0pTex7WRy0iFQABEsePmBI4NUKKANQ39sGjCK+1Xc8RquA
+RjHB5/Gojexi3VEZlZEKcwqdw+uciqFFAF+e7heO52GUvOVOGAwuD655qhRRQBu/8I5/09/+Q/8A
+69H/AAjn/T3/AOQ//r1tvKiK7Mwwgy2OcUrMEUsxwBQBh/8ACOf9Pf8A5D/+vR/wjn/T3/5D/wDr
+1ru3mjgsiLyWIK/zp8Ll0ywII4zjGffmgDnrzR47OISSXLEFtvyxf/Ze1U/Itf8AnvN/35H/AMVW
+74g/48U/66D+RonX7Km1/OkdmVYz9odQ+SBzzweajVuyOhKEYKUle9+pheRa/wDPeb/vyP8A4qrV
+lpUV7v8AKuXGzGd0Q7/8C9q04V+1JtTzo5AzLIRcOwTBI455PH+e8enzRw3195jFQ0uAxBx1PU9B
++NGqaC1OUJNK1vMh/wCEc/6e/wDyH/8AXo/4Rz/p7/8AIf8A9etqVnG0IVBY4yRntTSZUBZ5I8ey
+H/GrOcx/+Ec/6e//ACH/APXo/wCEc/6e/wDyH/8AXrZgaVlPmgAg8YGOKIZ0mBKB8DuyMufpkc0A
+ULlY1N/853tFkKXPIx1xmtCUjbt27i3AFPooAgEcmUViGVTnP9KnoooAxdTJ/swKWZttwVBY5OPm
+71o3/wDqE/67Rf8Aoa1HqVubxI4AwU7t2SPQf/Xqpb2UcFykF1t81n82OZTgyYIYq3rg4pJO9zWU
+oumkt1cbJazqJJYpLmNh58m1WO0sH+XjpyM/Wi0/0efULeaTzpGwAAuC5IJPH41tVn2yO99fSxOu
+DIqHPqqj/Gm1ciMuVMtXHRCC4w3JVckcH2NMSUBzvMrrwQWiPB/AU/bcf3o/1o23H96P9adiLjoT
+uMjYIBbjII7D1oiuIZ8+TKkmOu1gcU3bcf3o/wBaNtx/ej/WiwXHeY//ADwk/Nf8aPMf/nhJ+a/4
+0lvP54c+WybW24br0B/rUtF/ILeZH5j/APPCT81/xo8x/wDnhJ+a/wCNSUUX8gt5lbcWuo8xsvB6
+4/oakubeO5i8uTPXKspwVPYg9jTW/wCPqP6Gp6H0BFIW18YwjX646FlhwxH1zgH8Ks20CW0Cwx7i
+q92OST1JP40XEjRQM6R+Yw/hziolmu3UMsEDKRkETnn/AMdpDLNFVGuLlJI0eCLLnGFlJOO5xt7V
+boAKKasiMQFdSTnGD1x1p1AEMCMjzlhgNJke4wP8Kmpm40bjQA+imbjRuNAEbf8AH1H9DU9V8k3U
+efQ1YpvoJBVVv9GnHl/ckDMU7AjnI+tWqhuLcT7T5jxlc8pjv9QaTGJaJ+7EzHdJIoLN/Qe1QtFv
+1B2+zwybdvzufmX6cH+Yq3GgjjVBnCgAZpwABJAGT1PrQBlys8yAs5DGCbkAdmFPaS5UrFCZXKRh
+gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="27fa2069-7244-4155-8d59-1c5a7c8bc085"
+		sx="2848"
+		sy="-341"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9635faeb-ac8a-43f5-a295-6831032d50d4"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//button[@title='Expand']
+				</path>
+			</info>
+		</mouseitem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3797b038-37ea-4645-846d-47c383393ee8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="db43cf6c-681a-40a7-a643-376f7e2b8282"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, selecttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="selecttag"
+				rect="2717,-289,165,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						typeSwitchOptions ng-not-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						select
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						Relative date
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="classes"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="expression"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-class"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-init"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//select
+				</path>
+			</info>
+			<AttributeValue>
+				Relative date
+			</AttributeValue>
+		</setvaluerecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="129eb29a-ca54-40e5-b308-3bbffd07e278">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, selecttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="selecttag"
+				rect="2717,-231,165,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						filterInput ng-not-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						select
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="classes"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="expression"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[1]
+				</path>
+			</info>
+			<AttributeValue>
+				1
+			</AttributeValue>
+		</setvaluerecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<setvaluerecorditem
+		attrname="TagValue"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="94cd5b6f-a09f-42a6-98bd-e90c8e2024dc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, selecttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="selecttag"
+				rect="2717,-203,165,24"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						filterInput ng-not-empty ng-valid
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						select
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						2
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="classes"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="expression"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//ul/tag[9]//form[@name='$ctrl.filterForm']/div/select[2]
+				</path>
+			</info>
+			<AttributeValue>
+				3
+			</AttributeValue>
+		</setvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e720a140-4c78-48a6-9505-b297e161e9c0"
+		sx="2851"
+		sy="-159"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f5f9f142-7a61-4caf-a45c-e9244d4b2fb2"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="2"
+				prefcap="buttontag"
+				rect="2824,-169,58,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						applyFilter smallFontSize
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Apply filter
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						Apply the changes you made to this filter.
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="localize"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="localize-tooltip"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/?/?/ul/tag[9]//form[@name='$ctrl.filterForm']/button[@title~'^Apply\ the\ changes\ you\ mad']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6c2b5be1-2806-49c0-8025-5f50afedf798">
+				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
+CH+RwCwwOflY/wBBQBo0UUUAf//Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="ea6a006e-6d85-4695-88f7-8d684bce0248"
+	name="ReportingLayerRepository"
+	relativepath="..\ReportingLayerRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ReportingLayerRepository"
+		namespace="ReportingLayer">
+		</codegen>
+		<rootfolder
+		id="60c3c42a-4566-402e-9361-221a6c8f795f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Set_Date_Filter.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

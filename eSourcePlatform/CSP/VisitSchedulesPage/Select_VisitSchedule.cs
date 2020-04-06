@@ -130,9 +130,9 @@ namespace CSP.VisitSchedulesPage
             Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, "InnerText", VisitScheduleName);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, "InnerText", RandNum);
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$RandNum) on item 'CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumb'.", repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, new RecordItemIndex(5));
+            //Validate.AttributeContains(repo.CogstateSolutionPlatform.Breadcrumbs.VisitScheduleNameBreadcrumbInfo, "InnerText", RandNum);
+            //Delay.Milliseconds(100);
             
         }
 
