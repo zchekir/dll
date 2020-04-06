@@ -82,8 +82,8 @@ namespace CSP.LoginPage
             //ClickSubmit(repo.CogstateSSO.SubmitButtonInfo);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MicrosoftSSO.SinButton' at Center.", repo.MicrosoftSSO.SinButtonInfo, new RecordItemIndex(1));
-            repo.MicrosoftSSO.SinButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MicrosoftSSO.SignInButton' at Center.", repo.MicrosoftSSO.SignInButtonInfo, new RecordItemIndex(1));
+            repo.MicrosoftSSO.SignInButton.Click();
             Delay.Milliseconds(200);
             
         }

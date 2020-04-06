@@ -22,49 +22,35 @@ using Ranorex.Core.Testing;
 
 namespace CSP.LoginPage
 {
-    public partial class Enter_Password
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
-        private void Init()
-        {
-            // Your recording specific initialization code goes here.
-        }
+	public partial class Enter_Password
+	{
+		/// <summary>
+		/// This method gets called right after the recording has been started.
+		/// It can be used to execute recording specific initialization code.
+		/// </summary>
+		private void Init()
+		{
+			// Your recording specific initialization code goes here.
+		}
 		
-        //Tries to enter the supplied password and will retry if it is not entered correctly
-        public void Try_Enter_Password(RepoItemInfo PasswordField)
-        {
-            
-        	if (PasswordField.Exists(new Duration(5000)))
-            {
-            	while (PasswordField.FindAdapter<InputTag>().Value != CSPPassword) 
-            	{
-        			Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'PasswordField'.", PasswordField);
-            		PasswordField.FindAdapter<InputTag>().PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
-            		Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'PasswordField'.", PasswordField);
-            		PasswordField.FindAdapter<InputTag>().PressKeys(CSPPassword, 1);
-        		}
-            
-            	Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'PasswordField'.", PasswordField);
-            	Validate.AttributeEqual(PasswordField, "Value", CSPPassword);	
-            }
-        }
-
-        public void Key_sequence_PasswordInput(RepoItemInfo inputtagInfo)
-        {
-        	
-        	try{
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'inputtagInfo'.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().PressKeys(CSPPassword);
-            
-        	}catch(Exception e){
-        		
-        		Report.Log(ReportLevel.Info,e.Message);
-        		
-        	}
-        	}
-        }
-    }
+		//Tries to enter the supplied password and will retry if it is not entered correctly
+		public void Try_Enter_Password(RepoItemInfo PasswordField)
+		{
+			
+			if (PasswordField.Exists(new Duration(5000)))
+			{
+				while (PasswordField.FindAdapter<InputTag>().Value != CSPPassword)
+				{
+					Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}' with focus on 'PasswordField'.", PasswordField);
+					PasswordField.FindAdapter<InputTag>().PressKeys("{End}{LShiftKey down}{Home}{LShiftKey up}{Delete}", 1);
+					Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Password' with focus on 'PasswordField'.", PasswordField);
+					PasswordField.FindAdapter<InputTag>().PressKeys(CSPPassword, 1);
+				}
+				
+				Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Password) on item 'PasswordField'.", PasswordField);
+				Validate.AttributeEqual(PasswordField, "Value", CSPPassword);
+			}
+		}
+	}
+}
 
