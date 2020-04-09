@@ -605,6 +605,10 @@ rxversion="8.3">
 			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
 			name="oData_API">
 			</testcase>
+			<testcase
+			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc"
+			name="401-InvalidCredentials">
+			</testcase>
 			<testmodule
 			id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
 			name="Close_Browser"
@@ -2689,7 +2693,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="mode"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="21c8d05d-c01a-4f91-8ef4-c9a37b7daef1"
 					variablename="mode">
 					</var>
@@ -3070,6 +3074,38 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="d1538a8d-076e-404f-8448-1395b14c0787"
+			name="InvalidCredentialsError"
+			ref="376c9304-919f-49de-9968-e0252063e4ae"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="a647c1ef-1a96-4dc5-a5a1-bddc9d53b589"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="key1"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="7cc7446b-930f-40ad-b863-2ab17b6713fd"
+					variablename="key">
+					</var>
+					<var
+					dataname="InvalidSecret"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="efd4c09c-c4b0-4eb0-af34-76bcf608ac0f"
+					variablename="secret">
+					</var>
+					<var
+					dataname="studyProtocolName"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="0e7e5638-b399-48a1-ac1a-3c28491b0044"
+					variablename="StudyProtocol">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d2af15a7-d521-4096-9e08-177b0d665b79"
 			name="Validate_DLM_Enabled"
 			ref="ea91b7f6-04fc-4ba2-87d1-dcbbf925a7fe"
@@ -3216,7 +3252,7 @@ rxversion="8.3">
 					</var>
 					<var
 					dataname="mode"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
 					variablename="mode">
 					</var>
@@ -3589,6 +3625,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<smartfoldernode
+			id="fbb6582a-078f-40ce-9d97-9857a442e28e"
+			name="PR-HTTP-Errors">
+			</smartfoldernode>
 			<testcase
 			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585"
 			name="Check_DLM_Enabled">
@@ -4580,6 +4620,18 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
+						<smartfoldernode
+						id="fbb6582a-078f-40ce-9d97-9857a442e28e"
+						name="PR-HTTP-Errors">
+							<testcase
+							id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc"
+							name="401-InvalidCredentials">
+								<testmodule
+								id="d1538a8d-076e-404f-8448-1395b14c0787"
+								name="InvalidCredentialsError">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 					</smartfoldernode>
 					<smartfoldernode
 					id="9ab34d41-a11f-476f-a90f-c56f30c05e5c"
@@ -4668,6 +4720,12 @@ rxversion="8.3">
 				</column>
 				<column>
 					key
+				</column>
+				<column>
+					mode
+				</column>
+				<column>
+					InvalidSecret
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -5240,22 +5298,94 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="04421345-e5aa-49b4-b420-101dbea32a24">
+			</testcontainer>
+			<testcontainer
+			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
+			</testcontainer>
+			<testcontainer
+			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
+			</testcontainer>
+			<testcontainer
+			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc">
+			</testcontainer>
+			<testcontainer
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
+			</testcontainer>
+			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
+			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
+			</testcontainer>
+			<testcontainer
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
+			</testcontainer>
+			<testcontainer
+			id="69f50943-5b2d-41d4-ac43-d7cce45967af">
+			</testcontainer>
+			<testcontainer
+			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
+			</testcontainer>
+			<testcontainer
+			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
+			</testcontainer>
+			<testcontainer
+			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b">
+			</testcontainer>
+			<testcontainer
+			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
+			</testcontainer>
+			<testcontainer
+			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
+			</testcontainer>
+			<testcontainer
+			id="9fe98d67-940d-4451-ae47-83f979151dc2">
+			</testcontainer>
+			<testcontainer
+			id="a039dd84-fa06-45dc-900f-9d8b10c73c69">
+			</testcontainer>
+			<testcontainer
 			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			</testcontainer>
+			<testcontainer
+			id="a95ff794-3df5-4234-b928-480259c0da91">
 			</testcontainer>
 			<testcontainer
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
+			id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4">
+			</testcontainer>
+			<testcontainer
 			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 			<testcontainer
+			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
+			</testcontainer>
+			<testcontainer
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
+			</testcontainer>
+			<testcontainer
+			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
+			</testcontainer>
+			<testcontainer
+			id="e00c2baf-18fc-4db9-8f47-941279980274">
+			</testcontainer>
+			<testcontainer
+			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			</testcontainer>
+			<testcontainer
+			id="fbb6582a-078f-40ce-9d97-9857a442e28e">
+			</testcontainer>
+			<testcontainer
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
+			</testcontainer>
+			<testcontainer
+			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

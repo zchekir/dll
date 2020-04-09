@@ -2232,6 +2232,18 @@
       <id>6bc176c6-7b39-45f4-8ef6-eedbebeaf751</id>
       <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
     </Compile>
+    <Compile Include="InvalidCredentialsError.cs">
+      <BoundTo>5507ac15-adc7-4efa-9a25-f4808bdc252e</BoundTo>
+      <DependentUpon>InvalidCredentialsError.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1552a340-0aa0-4239-9aee-e551bd663628</id>
+    </Compile>
+    <Compile Include="InvalidCredentialsError.UserCode.cs">
+      <BoundTo>5507ac15-adc7-4efa-9a25-f4808bdc252e</BoundTo>
+      <DependentUpon>InvalidCredentialsError.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ebe1221-57f7-4f6f-8975-f6dc53f86891</id>
+    </Compile>
     <Compile Include="LoginPage\Click_ForgotPassword.cs">
       <id>3b4e421d-31fb-4572-b37e-86187f9d137d</id>
       <BoundTo>74efb3da-e46c-4c23-aa4c-bbcfc2b60e49</BoundTo>
@@ -4337,6 +4349,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>492928c3-8757-4ac0-ac0f-37c518b41407</id>
       <recordtableid>52db9f06-5da5-46a4-b3aa-a782ab8eaa1b</recordtableid>
+    </None>
+    <None Include="InvalidCredentialsError.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>5507ac15-adc7-4efa-9a25-f4808bdc252e</id>
+      <recordtableid>376c9304-919f-49de-9968-e0252063e4ae</recordtableid>
     </None>
     <None Include="LoginPage\Click_ForgotPassword.rxrec">
       <id>74efb3da-e46c-4c23-aa4c-bbcfc2b60e49</id>
