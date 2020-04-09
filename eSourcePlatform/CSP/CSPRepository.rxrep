@@ -2463,16 +2463,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="678ca1e6-765a-44d1-81b0-32b66b4efaa7"
-			name="GmailButton"
-			refimgid="38774826-dc46-4101-8a45-09c0d569f7fb"
-			refpath="/dom[@domain='myaccount.google.com']//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/div[2]/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/div[2]/a[@href='https://mail.google.com/']"
-			searchtimeout="30000ms">
-				/dom[@domain='myaccount.google.com']//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/?/?/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/?/?/a[@href='https://mail.google.com/']
-			</item>
-			<item
 			addcaps="unknown,webelement"
 			capname="webelement"
 			id="0c6ccdc2-0b64-403b-9670-3413e2f3b7df"
@@ -2601,15 +2591,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='mail.google.com']//span/span[@innertext~'Cogstate user account created']
 			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="4881023c-d0e2-4218-a317-de8c83bee79c"
-			name="SearchInbox"
-			refimgid="fb96701d-a343-4a84-90df-736c164744a1"
-			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//form[#'aso_search_form_anchor']/?/?/input
-			</item>
 			<basepath>
 				/dom[@domain='mail.google.com']
 			</basepath>
@@ -2681,7 +2662,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="5c82fa8a-e86c-41e7-8207-90d971ac228e"
-			name="PW"
+			name="PasswordField"
 			refimgid="e6ea40cd-6caa-4302-af3f-858eb9fc7e8b"
 			refpath="/dom[@domain='login.microsoftonline.com' and @caption='Sign in to your account' and @page='authorize' and @path='/cogstateIT.onmicrosoft.com/oauth2/authorize' and @browsername='Chrome' and @pageurl~'^https://login\.microsoftonline\.com/cogstateIT\.onmicrosoft\.com/oauth2/authorize\?response_type=id_token&amp;client_id=1d71a947-e7d7-4edb-8622-085589b5f200&amp;redirect_uri=https%3A%2F%2Fcgst-qc-bear\.azurewebsites\.net%2F%23%2F&amp;state=bf8b0231-d5ce-44b9-9b72-1afd52602594&amp;cl']//input[#'i0118']"
 			searchtimeout="30000ms">
@@ -2691,7 +2672,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="fbcc6722-d4ad-46db-8a35-0686300dbf5b"
-			name="SinButton"
+			name="SignInButton"
 			refimgid="f9eb5351-9184-44b7-9ab6-8a2bdbe7479c"
 			refpath="/dom[@domain='login.microsoftonline.com' and @caption='Sign in to your account' and @page='authorize' and @path='/cogstateIT.onmicrosoft.com/oauth2/authorize' and @browsername='Chrome' and @pageurl~'^https://login\.microsoftonline\.com/cogstateIT\.onmicrosoft\.com/oauth2/authorize\?response_type=id_token&amp;client_id=1d71a947-e7d7-4edb-8622-085589b5f200&amp;redirect_uri=https%3A%2F%2Fcgst-qc-bear\.azurewebsites\.net%2F%23%2F&amp;state=133db204-bb08-49b5-ad20-2a8af7c5ab15&amp;cl']//input[#'idSIButton9']"
 			searchtimeout="30000ms">
@@ -2734,15 +2715,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refpath="/dom[@domain='login.cogstate.com']//input[#'userNameInput']"
 			searchtimeout="30000ms">
 				/dom[@domain='login.cogstate.com']//input[#'userNameInput']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="8c5fcfcd-1fe7-4214-94df-5fe56363fb4f"
-			name="PasswordInput"
-			refimgid="d0690aaa-9520-4390-b09a-62e50ecb8aab"
-			searchtimeout="30000ms">
-				/dom[@domain='login.cogstate.com']//input[#'passwordInput']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"

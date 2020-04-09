@@ -7792,7 +7792,6 @@ namespace CSP
         [RepositoryFolder("12fb7791-6629-4ab4-8196-4d7f353baa8d")]
         public partial class GoogleAccountAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _gmailbuttonInfo;
             RepoItemInfo _appsInfo;
             RepoItemInfo _gmailappInfo;
 
@@ -7802,7 +7801,6 @@ namespace CSP
             public GoogleAccountAppFolder(RepoGenBaseFolder parentFolder) :
                     base("GoogleAccount", "/dom[@domain='myaccount.google.com']", parentFolder, 30000, null, false, "12fb7791-6629-4ab4-8196-4d7f353baa8d", "")
             {
-                _gmailbuttonInfo = new RepoItemInfo(this, "GmailButton", ".//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/?/?/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/?/?/a[@href='https://mail.google.com/']", 30000, null, "678ca1e6-765a-44d1-81b0-32b66b4efaa7");
                 _appsInfo = new RepoItemInfo(this, "Apps", ".//div[#'gbwa']/?/?/a[@href~'^https://www\\.google\\.com\\.au']/?/?/tag[@tagname='path']", 30000, null, "0c6ccdc2-0b64-403b-9670-3413e2f3b7df");
                 _gmailappInfo = new RepoItemInfo(this, "GmailApp", ".//a[#'gb23']/span[1]", 30000, null, "6d71b4b8-e477-42d0-9820-cf0687335f12");
             }
@@ -7828,30 +7826,6 @@ namespace CSP
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The GmailButton item.
-            /// </summary>
-            [RepositoryItem("678ca1e6-765a-44d1-81b0-32b66b4efaa7")]
-            public virtual Ranorex.ATag GmailButton
-            {
-                get
-                {
-                    return _gmailbuttonInfo.CreateAdapter<Ranorex.ATag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The GmailButton item info.
-            /// </summary>
-            [RepositoryItemInfo("678ca1e6-765a-44d1-81b0-32b66b4efaa7")]
-            public virtual RepoItemInfo GmailButtonInfo
-            {
-                get
-                {
-                    return _gmailbuttonInfo;
                 }
             }
 
@@ -7919,7 +7893,6 @@ namespace CSP
             RepoItemInfo _forgotpasswordlinkInfo;
             RepoItemInfo _accountbuttonInfo;
             RepoItemInfo _platformsupportemailInfo;
-            RepoItemInfo _searchinboxInfo;
 
             /// <summary>
             /// Creates a new GmailInbox  folder.
@@ -7936,7 +7909,6 @@ namespace CSP
                 _forgotpasswordlinkInfo = new RepoItemInfo(this, "ForgotPasswordLink", ".//div//a[@innertext~$CSPDOM]", 30000, null, "a1bd28f9-fa49-4070-b113-d58014026934");
                 _accountbuttonInfo = new RepoItemInfo(this, "AccountButton", ".//header[#'gb']/div[2]/div[3]//a[@href~'^https://accounts\\.google\\.c']", 30000, null, "2468f073-1e7c-48a5-bbdc-af4e475eb9b9");
                 _platformsupportemailInfo = new RepoItemInfo(this, "PlatformSupportEmail", ".//span/span[@innertext~'Cogstate user account created']", 30000, null, "105c6084-d31d-4f61-89ad-61d64d052748");
-                _searchinboxInfo = new RepoItemInfo(this, "SearchInbox", ".//form[#'aso_search_form_anchor']/?/?/input", 30000, null, "4881023c-d0e2-4218-a317-de8c83bee79c");
             }
 
             /// <summary>
@@ -8178,30 +8150,6 @@ namespace CSP
                     return _platformsupportemailInfo;
                 }
             }
-
-            /// <summary>
-            /// The SearchInbox item.
-            /// </summary>
-            [RepositoryItem("4881023c-d0e2-4218-a317-de8c83bee79c")]
-            public virtual Ranorex.InputTag SearchInbox
-            {
-                get
-                {
-                    return _searchinboxInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SearchInbox item info.
-            /// </summary>
-            [RepositoryItemInfo("4881023c-d0e2-4218-a317-de8c83bee79c")]
-            public virtual RepoItemInfo SearchInboxInfo
-            {
-                get
-                {
-                    return _searchinboxInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -8214,8 +8162,8 @@ namespace CSP
             RepoItemInfo _dontaskagaincheckboxInfo;
             RepoItemInfo _nobuttonInfo;
             RepoItemInfo _useanotheraccountInfo;
-            RepoItemInfo _pwInfo;
-            RepoItemInfo _sinbuttonInfo;
+            RepoItemInfo _passwordfieldInfo;
+            RepoItemInfo _signinbuttonInfo;
 
             /// <summary>
             /// Creates a new MicrosoftSSO  folder.
@@ -8227,8 +8175,8 @@ namespace CSP
                 _dontaskagaincheckboxInfo = new RepoItemInfo(this, "DontAskAgainCheckbox", ".//input[#'KmsiCheckboxField']", 30000, null, "ba195df5-feed-437f-95b7-9ed1e785fa9f");
                 _nobuttonInfo = new RepoItemInfo(this, "NoButton", ".//input[#'idBtn_Back']", 30000, null, "e082725e-688b-4272-ae63-c098ddcb8d1b");
                 _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "c587e610-0819-4121-a032-70dee17445c5");
-                _pwInfo = new RepoItemInfo(this, "PW", ".//input[#'i0118']", 30000, null, "5c82fa8a-e86c-41e7-8207-90d971ac228e");
-                _sinbuttonInfo = new RepoItemInfo(this, "SinButton", ".//input[#'idSIButton9']", 30000, null, "fbcc6722-d4ad-46db-8a35-0686300dbf5b");
+                _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//input[#'i0118']", 30000, null, "5c82fa8a-e86c-41e7-8207-90d971ac228e");
+                _signinbuttonInfo = new RepoItemInfo(this, "SignInButton", ".//input[#'idSIButton9']", 30000, null, "fbcc6722-d4ad-46db-8a35-0686300dbf5b");
             }
 
             /// <summary>
@@ -8352,50 +8300,50 @@ namespace CSP
             }
 
             /// <summary>
-            /// The PW item.
+            /// The PasswordField item.
             /// </summary>
             [RepositoryItem("5c82fa8a-e86c-41e7-8207-90d971ac228e")]
-            public virtual Ranorex.InputTag PW
+            public virtual Ranorex.InputTag PasswordField
             {
                 get
                 {
-                    return _pwInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _passwordfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The PW item info.
+            /// The PasswordField item info.
             /// </summary>
             [RepositoryItemInfo("5c82fa8a-e86c-41e7-8207-90d971ac228e")]
-            public virtual RepoItemInfo PWInfo
+            public virtual RepoItemInfo PasswordFieldInfo
             {
                 get
                 {
-                    return _pwInfo;
+                    return _passwordfieldInfo;
                 }
             }
 
             /// <summary>
-            /// The SinButton item.
+            /// The SignInButton item.
             /// </summary>
             [RepositoryItem("fbcc6722-d4ad-46db-8a35-0686300dbf5b")]
-            public virtual Ranorex.InputTag SinButton
+            public virtual Ranorex.InputTag SignInButton
             {
                 get
                 {
-                    return _sinbuttonInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _signinbuttonInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SinButton item info.
+            /// The SignInButton item info.
             /// </summary>
             [RepositoryItemInfo("fbcc6722-d4ad-46db-8a35-0686300dbf5b")]
-            public virtual RepoItemInfo SinButtonInfo
+            public virtual RepoItemInfo SignInButtonInfo
             {
                 get
                 {
-                    return _sinbuttonInfo;
+                    return _signinbuttonInfo;
                 }
             }
         }
@@ -8407,7 +8355,6 @@ namespace CSP
         public partial class CogstateSSOAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _usernameinputInfo;
-            RepoItemInfo _passwordinputInfo;
             RepoItemInfo _submitbuttonInfo;
 
             /// <summary>
@@ -8417,7 +8364,6 @@ namespace CSP
                     base("CogstateSSO", "/dom[@domain='login.cogstate.com']", parentFolder, 30000, null, false, "aded5756-9001-4ebd-bca0-a0727d778d26", "")
             {
                 _usernameinputInfo = new RepoItemInfo(this, "UserNameInput", ".//input[#'userNameInput']", 30000, null, "99f92832-d6e9-4c9a-8f2a-63f96ba11537");
-                _passwordinputInfo = new RepoItemInfo(this, "PasswordInput", ".//input[#'passwordInput']", 30000, null, "8c5fcfcd-1fe7-4214-94df-5fe56363fb4f");
                 _submitbuttonInfo = new RepoItemInfo(this, "SubmitButton", ".//span[#'submitButton']", 30000, null, "361b5758-068b-4ad0-9379-2766b27ef71d");
             }
 
@@ -8466,30 +8412,6 @@ namespace CSP
                 get
                 {
                     return _usernameinputInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PasswordInput item.
-            /// </summary>
-            [RepositoryItem("8c5fcfcd-1fe7-4214-94df-5fe56363fb4f")]
-            public virtual Ranorex.InputTag PasswordInput
-            {
-                get
-                {
-                    return _passwordinputInfo.CreateAdapter<Ranorex.InputTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PasswordInput item info.
-            /// </summary>
-            [RepositoryItemInfo("8c5fcfcd-1fe7-4214-94df-5fe56363fb4f")]
-            public virtual RepoItemInfo PasswordInputInfo
-            {
-                get
-                {
-                    return _passwordinputInfo;
                 }
             }
 

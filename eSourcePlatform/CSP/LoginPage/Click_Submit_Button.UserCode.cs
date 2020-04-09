@@ -37,8 +37,8 @@ namespace CSP.LoginPage
         {
         	if (SubmitButton.Exists(new Duration(250)))
         	{
-        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", SubmitButton);
-	            SubmitButton.FindAdapter<SpanTag>().Click(3);
+        		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InputTag' at Center.", SubmitButton);
+	            SubmitButton.FindAdapter<InputTag>().Click();
 	            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.");
             	Delay.Duration(500, false);
         	}

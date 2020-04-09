@@ -31,7 +31,7 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="Click_Submit_Button"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ClickSubmit"
 		namespace="CSP.LoginPage"
@@ -52,143 +52,15 @@ rxversion="8.3">
 					<argvalue>
 					</argvalue>
 					<info
-					id="361b5758-068b-4ad0-9379-2766b27ef71d"
+					id="fbcc6722-d4ad-46db-8a35-0686300dbf5b"
 					sourcename="ItemRecorderEditor">
 						<path>
-							/dom[@domain='login.cogstate.com']//span[#'submitButton']
+							/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']
 						</path>
 					</info>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e81be9ee-536d-4a60-9864-9c92942f477c"
-		sx="1110"
-		sy="516"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="fbcc6722-d4ad-46db-8a35-0686300dbf5b"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, inputtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="inputtag"
-				rect="1056,500,108,32"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						btn btn-block btn-primary
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						idSIButton9
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						input
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						Sign in
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="checked"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="height"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="multiple"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="required"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						20
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						submit
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						Sign in
-					</attribute>
-					<attribute
-					name="width"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-bind"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']
-				</path>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

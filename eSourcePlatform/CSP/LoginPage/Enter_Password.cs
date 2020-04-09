@@ -106,23 +106,12 @@ namespace CSP.LoginPage
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
             Delay.Duration(1000, false);
             
-            //Try_Enter_Password(repo.CogstateSSO.PasswordInputInfo);
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(2));
-            //Keyboard.Press("{Tab}", 1);
-            //Delay.Milliseconds(90);
-            
-            //Key_sequence_PasswordInput(repo.CogstateSSO.PasswordInputInfo);
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'CogstateSSO.PasswordInput'.", repo.CogstateSSO.PasswordInputInfo, new RecordItemIndex(4));
-            //repo.CogstateSSO.PasswordInput.PressKeys(CSPPassword);
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'MicrosoftSSO.PW'.", repo.MicrosoftSSO.PWInfo, new RecordItemIndex(5));
-            repo.MicrosoftSSO.PW.PressKeys(CSPPassword);
+            Try_Enter_Password(repo.MicrosoftSSO.PasswordFieldInfo);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(2));
+            Keyboard.Press("{Tab}", 1);
+            Delay.Milliseconds(90);
             
         }
 
