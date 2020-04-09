@@ -54,6 +54,7 @@ namespace CSP.APIV2Modules
             TestIdentifier = "";
             externalId = "";
             AssessmentURL = "";
+            mode = "";
         }
 
         /// <summary>
@@ -222,6 +223,18 @@ namespace CSP.APIV2Modules
             set { _AssessmentURL = value; }
         }
 
+        string _mode;
+
+        /// <summary>
+        /// Gets or sets the value of variable mode.
+        /// </summary>
+        [TestVariable("f4f9ca38-7f8c-45a9-aabe-272a2438d295")]
+        public string mode
+        {
+            get { return _mode; }
+            set { _mode = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -248,7 +261,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            Workflow(AuthToken, studyProtocolName, DOM, dob, genderCode, localityCode, postError, post);
+            Workflow(AuthToken, studyProtocolName, DOM, dob, genderCode, localityCode, postError, post, mode);
             Delay.Milliseconds(0);
             
         }

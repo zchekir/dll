@@ -52,6 +52,7 @@ namespace CSP.APIV2Modules
             supervisorid = "";
             TestIdentifier = "";
             externalid = "";
+            mode = "";
         }
 
         /// <summary>
@@ -196,6 +197,18 @@ namespace CSP.APIV2Modules
             set { _externalid = value; }
         }
 
+        string _mode;
+
+        /// <summary>
+        /// Gets or sets the value of variable mode.
+        /// </summary>
+        [TestVariable("21c8d05d-c01a-4f91-8ef4-c9a37b7daef1")]
+        public string mode
+        {
+            get { return _mode; }
+            set { _mode = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -222,7 +235,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            R_runworkflow(AuthToken, studyProtocolName, DOM, genderCode, localityCode, postError, post, visitSessionCode, supervisorid, TestIdentifier, externalid);
+            R_runworkflow(AuthToken, studyProtocolName, DOM, genderCode, localityCode, postError, post, visitSessionCode, supervisorid, TestIdentifier, externalid, mode);
             Delay.Milliseconds(0);
             
         }

@@ -61,7 +61,7 @@ namespace CSP.APIV2Modules
    where P.IQnumber =@ExternalID";
 			
 			do{
-				Delay.Seconds(15);
+				Delay.Seconds(5);
 				Report.Log(ReportLevel.Info, "Checking r-run Flag ...Inprogress" );
 			//Connecting to SQL DB:
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");

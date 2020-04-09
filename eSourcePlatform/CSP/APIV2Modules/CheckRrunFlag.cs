@@ -44,8 +44,8 @@ namespace CSP.APIV2Modules
             dbserver = "cgst-qc.database.windows.net";
             database = "cgst-bear-api";
             username = "zchekir@cogstate.com";
-            password = "Cogstate2016";
-            ExternalID = "8798481";
+            password = "Mamine2010@@";
+            ExternalID = "498810";
             Authentication = "Active Directory Password";
         }
 

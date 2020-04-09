@@ -70,7 +70,7 @@ namespace CSP.APIV2Modules
 		/// <summary>----------------------------------------------------------------------------
 		/// Object for creating a new workflow request
 		public AssessmentAttemptJSONRequest(string externalId, string dob, string genderCode, string localityCode,
-		                                    string postError, string post, string visitSessionCode, string supervisorId)
+		                                    string postError, string post, string visitSessionCode, string supervisorId, string mode)
 		{
 			this.externalId = externalId;
 			this.dob = dob;
@@ -125,7 +125,7 @@ namespace CSP.APIV2Modules
 		}
 		
 		//Generating workflowinstance ULR with using an existing study
-		public void Workflow(string AuthToken, string studyProtocolName, string DOM, string dob, string genderCode, string localityCode, string postError, string post)
+		public void Workflow(string AuthToken, string studyProtocolName, string DOM, string dob, string genderCode, string localityCode, string postError, string post, string mode)
 		{
 			
 			//variable
@@ -143,7 +143,7 @@ namespace CSP.APIV2Modules
 			
 			
 			//Create JSON object containing demographics and study details
-			AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode, supervisorId);
+			AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode, supervisorId,mode);
 			
 			
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
