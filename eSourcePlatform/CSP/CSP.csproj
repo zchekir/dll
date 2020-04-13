@@ -2148,6 +2148,18 @@
       <UserCode>true</UserCode>
       <id>22013a69-1911-4577-94c2-d7dbbd0f5162</id>
     </Compile>
+    <Compile Include="InnalidMethode.cs">
+      <BoundTo>b51d96e8-3fc0-4136-a62a-3620e59a2840</BoundTo>
+      <DependentUpon>InnalidMethode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7eb4c392-a5bf-4a73-8bbb-113413fcb4ca</id>
+    </Compile>
+    <Compile Include="InnalidMethode.UserCode.cs">
+      <BoundTo>b51d96e8-3fc0-4136-a62a-3620e59a2840</BoundTo>
+      <DependentUpon>InnalidMethode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>067a9c7d-67d9-4e98-a963-21c020663081</id>
+    </Compile>
     <Compile Include="InternalAPIModules\AuthenticateAsInternalUser.cs">
       <DependentUpon>AuthenticateAsInternalUser.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -4350,6 +4362,11 @@
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="InnalidMethode.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>b51d96e8-3fc0-4136-a62a-3620e59a2840</id>
+      <recordtableid>8f0a81f9-8c93-4991-a51a-72922622081c</recordtableid>
     </None>
     <None Include="InternalAPIModules\AuthenticateAsInternalUser.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
