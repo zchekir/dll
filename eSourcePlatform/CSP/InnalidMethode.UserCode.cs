@@ -122,7 +122,7 @@ namespace CSP
         	catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Warn, "Invalid Methode: " + e.Message);
+             Report.Log(ReportLevel.Info, "Invalid Methode: " + e.Message);
              
              }
         }

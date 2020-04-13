@@ -123,7 +123,7 @@ namespace CSP
         	catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Warn, "Invalid Credentials: " + e.Message);
+             Report.Log(ReportLevel.Info, "Invalid Credentials: " + e.Message);
              }
         			
         			

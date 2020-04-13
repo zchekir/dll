@@ -179,7 +179,7 @@ namespace CSP
 			catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Warn, "Invalid DOB: " + e.Message);
+             Report.Log(ReportLevel.Info, "Invalid DOB: " + e.Message);
              }
         }
 

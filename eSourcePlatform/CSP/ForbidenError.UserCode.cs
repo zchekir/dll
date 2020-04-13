@@ -200,7 +200,7 @@ namespace CSP
 			catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Warn, "InvalidExternalToken: " + e.Message);
+             Report.Log(ReportLevel.Info, "InvalidExternalToken: " + e.Message);
              }
         }
 
