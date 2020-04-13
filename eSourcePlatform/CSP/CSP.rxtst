@@ -858,6 +858,98 @@ rxversion="8.3">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="36b754fe-7092-46e9-9832-4605738ac882"
+			name="dob"
+			ref="c37b6363-6319-4130-a466-b49d23f6545c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="459b1363-851d-4de3-ab1c-8a0d7b62f053"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="studyProtocolName"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="3a507031-ffbb-40b4-a3ff-3884b7a37f76"
+					variablename="studyProtocolName">
+					</var>
+					<var
+					dataname="dob"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="e227bfa6-7639-4f47-80d6-cedcefba01db"
+					variablename="dob1">
+					</var>
+					<var
+					dataname="genderCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="51649c75-5f98-42b2-8a22-180a621f7aa1"
+					variablename="genderCode">
+					</var>
+					<var
+					dataname="localityCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="57925140-06f4-41c7-ba61-56a3f5efc56f"
+					variablename="localityCode">
+					</var>
+					<var
+					dataname="postError"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="315c8e19-a0ba-4b1e-b9f2-166d2154e6bd"
+					variablename="postError">
+					</var>
+					<var
+					dataname="post"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="378906b9-8af9-424b-9851-4a9f61c50330"
+					variablename="post">
+					</var>
+					<var
+					dataname="visitSessionCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="1da2a0f1-bd25-4e24-ac8f-d1f27754c372"
+					variablename="visitSessionCode">
+					</var>
+					<var
+					dataname="supervisorId"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="54847459-7f86-4f44-9bf8-315222bd55c2"
+					variablename="supervisorId">
+					</var>
+					<var
+					dataname="mode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="80ac7718-4372-466c-9c57-b1b8c0d422e0"
+					variablename="mode">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a1c88696-7fdf-4c07-b42b-deaa708e58ce"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="36d45c2e-bd94-4d83-8521-b66643856405"
+					variablename="externalId">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="629d353e-1f59-4cda-ab26-3852bb8ced7a"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="1d47e533-d318-4236-950e-dc1df2297ed5"
+					variablename="AssessmentURL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="37dd36f8-6eea-424e-bd72-e668313b298b"
 			name="Launch_AssessmentAttempt"
 			ref="4cf38574-50a6-4296-8017-6f3285aac388"
@@ -4730,6 +4822,10 @@ rxversion="8.3">
 							<testcase
 							id="02ca4b95-a2d6-492f-ab6e-36034c719d59"
 							name="400-InvalidDOB">
+								<testmodule
+								id="36b754fe-7092-46e9-9832-4605738ac882"
+								name="dob">
+								</testmodule>
 							</testcase>
 							<testcase
 							id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc"
@@ -5418,7 +5514,25 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="02ca4b95-a2d6-492f-ab6e-36034c719d59">
+			</testcontainer>
+			<testcontainer
+			id="04421345-e5aa-49b4-b420-101dbea32a24">
+			</testcontainer>
+			<testcontainer
+			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
+			</testcontainer>
+			<testcontainer
+			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
+			</testcontainer>
+			<testcontainer
+			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc">
+			</testcontainer>
+			<testcontainer
 			id="2e724786-0867-45a5-b61c-3a0714ca1060">
+			</testcontainer>
+			<testcontainer
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
@@ -5427,13 +5541,76 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
+			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
+			</testcontainer>
+			<testcontainer
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
+			</testcontainer>
+			<testcontainer
+			id="69f50943-5b2d-41d4-ac43-d7cce45967af">
+			</testcontainer>
+			<testcontainer
+			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
+			</testcontainer>
+			<testcontainer
+			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
+			</testcontainer>
+			<testcontainer
+			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b">
+			</testcontainer>
+			<testcontainer
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
+			</testcontainer>
+			<testcontainer
+			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
+			</testcontainer>
+			<testcontainer
+			id="9fe98d67-940d-4451-ae47-83f979151dc2">
+			</testcontainer>
+			<testcontainer
+			id="a039dd84-fa06-45dc-900f-9d8b10c73c69">
+			</testcontainer>
+			<testcontainer
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			</testcontainer>
+			<testcontainer
+			id="a95ff794-3df5-4234-b928-480259c0da91">
+			</testcontainer>
+			<testcontainer
+			id="af039c2f-3c95-43e6-8258-aa7b0d2f38f2">
+			</testcontainer>
+			<testcontainer
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
+			</testcontainer>
+			<testcontainer
+			id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4">
+			</testcontainer>
+			<testcontainer
+			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 			<testcontainer
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
 			</testcontainer>
 			<testcontainer
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
+			</testcontainer>
+			<testcontainer
+			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
+			</testcontainer>
+			<testcontainer
+			id="e00c2baf-18fc-4db9-8f47-941279980274">
+			</testcontainer>
+			<testcontainer
+			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			</testcontainer>
+			<testcontainer
 			id="fbb6582a-078f-40ce-9d97-9857a442e28e">
+			</testcontainer>
+			<testcontainer
+			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
+			</testcontainer>
+			<testcontainer
+			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

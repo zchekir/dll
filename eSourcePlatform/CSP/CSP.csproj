@@ -1725,6 +1725,18 @@
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
     </Compile>
+    <Compile Include="dob.cs">
+      <BoundTo>a0ab27f4-4259-49bf-8a1e-2b6dcf4db0dd</BoundTo>
+      <DependentUpon>dob.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2316cf6d-dbef-4a04-9390-94010a71d919</id>
+    </Compile>
+    <Compile Include="dob.UserCode.cs">
+      <BoundTo>a0ab27f4-4259-49bf-8a1e-2b6dcf4db0dd</BoundTo>
+      <DependentUpon>dob.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4456071-41fd-4a10-ac32-d992757fe3f1</id>
+    </Compile>
     <Compile Include="ExtractsPage\Click_DownloadExtract_Button.cs">
       <id>64e991f1-9c42-48e0-9752-c2492e573377</id>
       <BoundTo>304b93b0-7b72-4748-b038-66c5ca99150c</BoundTo>
@@ -2255,6 +2267,18 @@
       <DependentUpon>InvalidCredentialsError.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>0ebe1221-57f7-4f6f-8975-f6dc53f86891</id>
+    </Compile>
+    <Compile Include="InvalidDOB.cs">
+      <BoundTo>6910adca-5136-4c56-8c2a-e870338ca53e</BoundTo>
+      <DependentUpon>InvalidDOB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bafeacc1-a8e7-4eec-95a8-b62067f82449</id>
+    </Compile>
+    <Compile Include="InvalidDOB.UserCode.cs">
+      <BoundTo>6910adca-5136-4c56-8c2a-e870338ca53e</BoundTo>
+      <DependentUpon>InvalidDOB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>341be8a3-2e5f-4d67-9ddc-3ba77b411371</id>
     </Compile>
     <Compile Include="LoginPage\Click_ForgotPassword.cs">
       <id>3b4e421d-31fb-4572-b37e-86187f9d137d</id>
@@ -4148,6 +4172,11 @@
       <id>11c86286-d2df-4dfc-9b0d-86e9641b835a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="dob.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>a0ab27f4-4259-49bf-8a1e-2b6dcf4db0dd</id>
+      <recordtableid>c37b6363-6319-4130-a466-b49d23f6545c</recordtableid>
+    </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4371,6 +4400,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>5507ac15-adc7-4efa-9a25-f4808bdc252e</id>
       <recordtableid>376c9304-919f-49de-9968-e0252063e4ae</recordtableid>
+    </None>
+    <None Include="InvalidDOB.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>6910adca-5136-4c56-8c2a-e870338ca53e</id>
+      <recordtableid>c71ff4fc-e7dc-48fa-ba55-83d320f373d4</recordtableid>
     </None>
     <None Include="LoginPage\Click_ForgotPassword.rxrec">
       <id>74efb3da-e46c-4c23-aa4c-bbcfc2b60e49</id>
