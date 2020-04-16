@@ -123,7 +123,9 @@ namespace CSP
         	catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Info, "Invalid Credentials: " + e.Message);
+        	 String Error401 = "The remote server returned an error: (401) Unauthorized.";	
+             Validate.AreEqual(Error401 , e.Message);
+            
              }
         			
         			

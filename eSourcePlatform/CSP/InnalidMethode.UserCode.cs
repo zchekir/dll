@@ -122,7 +122,9 @@ namespace CSP
         	catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Info, "Invalid Methode: " + e.Message);
+        	 String Error405 = "The remote server returned an error: (405) Method Not Allowed.";	
+             Validate.AreEqual(Error405 , e.Message);
+             
              
              }
         }

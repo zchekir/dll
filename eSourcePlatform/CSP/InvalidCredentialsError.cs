@@ -45,7 +45,6 @@ namespace CSP
             secret = "";
             StudyProtocol = "";
             DOM = "";
-            invalidSecret = "";
         }
 
         /// <summary>
@@ -92,18 +91,6 @@ namespace CSP
         {
             get { return _DOM; }
             set { _DOM = value; }
-        }
-
-        string _invalidSecret;
-
-        /// <summary>
-        /// Gets or sets the value of variable invalidSecret.
-        /// </summary>
-        [TestVariable("2ab2d895-a450-4010-8ceb-000753fe2463")]
-        public string invalidSecret
-        {
-            get { return _invalidSecret; }
-            set { _invalidSecret = value; }
         }
 
         /// <summary>

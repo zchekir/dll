@@ -200,7 +200,9 @@ namespace CSP
 			catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Info, "InvalidExternalToken: " + e.Message);
+			 String Error403 = "The remote server returned an error: (403) Forbidden.";	
+             Validate.AreEqual(Error403 , e.Message);
+             
              }
         }
 

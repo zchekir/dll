@@ -141,7 +141,7 @@ namespace CSP
 			Random r = new Random();
 			int number = r.Next(1,999999);
 			externalId = number.ToString();
-			dob1 = "0000-00-00";
+			dob1 = "2000-00-00";
 			
 			//Create JSON object containing demographics and study details
 			AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob1, genderCode, localityCode, postError, post, visitSessionCode, supervisorId,mode);
@@ -179,7 +179,10 @@ namespace CSP
 			catch (Exception e)
              {
              
-             Report.Log(ReportLevel.Info, "Invalid DOB: " + e.Message);
+				
+		     String Error400 = "The remote server returned an error: (400) Bad Request.";	
+             Validate.AreEqual(Error400 , e.Message);
+            
              }
         }
 
