@@ -1535,9 +1535,10 @@ namespace DCT
         {
             RepoItemInfo _idbtnbackInfo;
             RepoItemInfo _enterusernamefieldInfo;
-            RepoItemInfo _nextbuttonInfo;
+            RepoItemInfo _signinbuttonInfo;
             RepoItemInfo _selectaccountInfo;
             RepoItemInfo _useanotheraccountInfo;
+            RepoItemInfo _passwordfieldInfo;
 
             /// <summary>
             /// Creates a new SignInToYourAccount  folder.
@@ -1547,9 +1548,10 @@ namespace DCT
             {
                 _idbtnbackInfo = new RepoItemInfo(this, "IdBtnBack", ".//input[#'idBtn_Back']", 30000, null, "5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef");
                 _enterusernamefieldInfo = new RepoItemInfo(this, "EnterUserNameField", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
-                _nextbuttonInfo = new RepoItemInfo(this, "NextButton", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
+                _signinbuttonInfo = new RepoItemInfo(this, "SignInButton", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
                 _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext=$CSPUsername]", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
                 _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "03048239-ba3c-4e99-98f0-7a29857dc2f3");
+                _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//input[#'i0118']", 30000, null, "49f1eca4-54b5-4345-8ae9-dc710971a842");
             }
 
             /// <summary>
@@ -1625,26 +1627,26 @@ namespace DCT
             }
 
             /// <summary>
-            /// The NextButton item.
+            /// The SignInButton item.
             /// </summary>
             [RepositoryItem("cb220122-19c8-4bab-93a1-825edc6f60eb")]
-            public virtual Ranorex.InputTag NextButton
+            public virtual Ranorex.InputTag SignInButton
             {
                 get
                 {
-                    return _nextbuttonInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _signinbuttonInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The NextButton item info.
+            /// The SignInButton item info.
             /// </summary>
             [RepositoryItemInfo("cb220122-19c8-4bab-93a1-825edc6f60eb")]
-            public virtual RepoItemInfo NextButtonInfo
+            public virtual RepoItemInfo SignInButtonInfo
             {
                 get
                 {
-                    return _nextbuttonInfo;
+                    return _signinbuttonInfo;
                 }
             }
 
@@ -1693,6 +1695,30 @@ namespace DCT
                 get
                 {
                     return _useanotheraccountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PasswordField item.
+            /// </summary>
+            [RepositoryItem("49f1eca4-54b5-4345-8ae9-dc710971a842")]
+            public virtual Ranorex.InputTag PasswordField
+            {
+                get
+                {
+                    return _passwordfieldInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PasswordField item info.
+            /// </summary>
+            [RepositoryItemInfo("49f1eca4-54b5-4345-8ae9-dc710971a842")]
+            public virtual RepoItemInfo PasswordFieldInfo
+            {
+                get
+                {
+                    return _passwordfieldInfo;
                 }
             }
         }

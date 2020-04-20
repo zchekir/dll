@@ -3,6 +3,25 @@
 rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<modulegroup
+			id="03abca1d-0748-4ec0-934f-396a898213fc"
+			name="LoginPowerBI"
+			ref="3874aae3-605b-436c-a897-0abac62a29f4">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="7189d372-604f-424f-9685-0b452c090798"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="974e4070-d534-4833-9ee4-d5e04956a425"
+					variablename="CSPPassword">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="03ba3ea4-4e9c-424f-a784-fc6cdadba5d8"
 			name="Click_Save_Button"
@@ -570,6 +589,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="262f96bf-00e5-4012-ab10-d4f786d2b128"
+			name="Click_Instruments_Tab"
+			ref="3241acf1-d56b-48a1-ac24-1729dc6775d9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="27b7417e-4823-4100-9822-672f1554479b"
 			name="Select_Gender"
 			ref="996e71c3-be62-4c72-9f11-64752fe074a4"
@@ -641,6 +674,25 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="291c892b-9583-42cf-827c-6ccb19b51ef3"
+			name="LoginPowerBI"
+			ref="3874aae3-605b-436c-a897-0abac62a29f4">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="7189d372-604f-424f-9685-0b452c090798"
+					variablename="CSPUsername">
+					</var>
+					<var
+					dataname="CSPPassword"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="974e4070-d534-4833-9ee4-d5e04956a425"
+					variablename="CSPPassword">
+					</var>
+				</databinding>
+			</modulegroup>
 			<testmodule
 			id="298f56cc-a5d3-4541-9994-82d9947211ca"
 			name="Read_CSV"
@@ -2027,20 +2079,6 @@ rxversion="8.3">
 					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="81dd7cce-612c-4990-befd-5ea81806872f"
-			name="Confirm_Invalidated"
-			ref="4711457f-830a-4dcc-b010-ddb7cff95882"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DCTDOM"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="b4062045-8a57-448e-b3d6-6bd8f25d8dad"
-					variablename="DCTDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4613,6 +4651,10 @@ rxversion="8.3">
 							id="078624d2-159e-4f13-9673-34da0b0684ef"
 							name="Import_CSV">
 								<testmodule
+								id="262f96bf-00e5-4012-ab10-d4f786d2b128"
+								name="Click_Instruments_Tab">
+								</testmodule>
+								<testmodule
 								id="211892da-f6f5-404d-b345-07dd3cda8d72"
 								name="Click_Tools_Menu">
 								</testmodule>
@@ -4868,6 +4910,10 @@ rxversion="8.3">
 								id="53ee122e-68c2-4848-b7d3-8611870387a3"
 								name="Click_AcademicExtract_Link">
 								</testmodule>
+								<modulegroup
+								id="03abca1d-0748-4ec0-934f-396a898213fc"
+								name="LoginPowerBI">
+								</modulegroup>
 								<testmodule
 								id="06801158-3d76-48e5-9b45-9bf6162bd737"
 								name="Set_Date_Slicer">
@@ -4900,6 +4946,10 @@ rxversion="8.3">
 								id="4d6dcb08-2a99-44cf-b25a-e48de78e6f95"
 								name="Click_StandardExtract_Link">
 								</testmodule>
+								<modulegroup
+								id="291c892b-9583-42cf-827c-6ccb19b51ef3"
+								name="LoginPowerBI">
+								</modulegroup>
 								<testmodule
 								id="4a78c82b-dd4d-4a29-ad53-883bb62a33af"
 								name="Set_Date_Filter">
@@ -5231,10 +5281,6 @@ rxversion="8.3">
 								<testmodule
 								id="f0dec6ad-3de4-4a59-bc37-2b782c7816d4"
 								name="Click_Confirm">
-								</testmodule>
-								<testmodule
-								id="81dd7cce-612c-4990-befd-5ea81806872f"
-								name="Confirm_Invalidated">
 								</testmodule>
 								<testmodule
 								id="3e6faa1c-bf1d-475d-9f10-ca9b1c2d5cb0"
@@ -5589,9 +5635,6 @@ rxversion="8.3">
 			id="056a5eea-578d-4433-ae88-6fe8ca2f3b3b">
 			</testcontainer>
 			<testcontainer
-			id="0746965d-2cbf-4252-bf42-77e60c6f58ea">
-			</testcontainer>
-			<testcontainer
 			id="078624d2-159e-4f13-9673-34da0b0684ef">
 			</testcontainer>
 			<testcontainer
@@ -5604,22 +5647,13 @@ rxversion="8.3">
 			id="105dfe96-0611-41ed-b65f-b03129dbcad1">
 			</testcontainer>
 			<testcontainer
-			id="16497588-c5a2-4ae8-9607-36b6dd5cd974">
-			</testcontainer>
-			<testcontainer
 			id="164c2ee2-300d-4a6f-9939-4337e0ade662">
 			</testcontainer>
 			<testcontainer
 			id="1e711c73-adb6-4d91-a3d6-95f2184ddf44">
 			</testcontainer>
 			<testcontainer
-			id="332de1b2-3b9e-42bc-b514-b8303a2909fd">
-			</testcontainer>
-			<testcontainer
 			id="361d0893-8dd7-42ee-a490-aaf7fbb587c7">
-			</testcontainer>
-			<testcontainer
-			id="3927389a-f058-4bcf-935a-1cc6e5b18a43">
 			</testcontainer>
 			<testcontainer
 			id="3cdf392f-5b46-415e-92e3-39e650a8b0a2">
@@ -5632,9 +5666,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="45d948c2-46ca-433c-a12e-5fa55eafbde3">
-			</testcontainer>
-			<testcontainer
-			id="47c9db77-9094-4d2e-9f5f-63829f36a118">
 			</testcontainer>
 			<testcontainer
 			id="48c6aa02-906a-4900-86c0-226aac2c734b">
@@ -5688,12 +5719,6 @@ rxversion="8.3">
 			id="9eee6ba9-85fc-46dd-a52d-60c913337400">
 			</testcontainer>
 			<testcontainer
-			id="a173c5ef-87e6-4e59-a8fe-4a9a7e1f329e">
-			</testcontainer>
-			<testcontainer
-			id="aa55005b-6268-4254-8a72-c8b519d8b1f0">
-			</testcontainer>
-			<testcontainer
 			id="ace3e5cd-9676-47cf-b9b9-7aa1a8396dfb">
 			</testcontainer>
 			<testcontainer
@@ -5724,7 +5749,7 @@ rxversion="8.3">
 			id="d7e64842-5abf-4c04-b18b-4ded846678e5">
 			</testcontainer>
 			<testcontainer
-			id="ea56bafb-27cb-4f60-86c7-66a866686722">
+			id="eebed04f-fef8-4b43-99e5-21471922b73a">
 			</testcontainer>
 			<testcontainer
 			id="f083c6ec-0fd3-4c23-a7c5-11a99e4b3d0c">
@@ -5874,10 +5899,139 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="04c4b88e-91e6-4949-b165-4489c4eb37ce">
+			</testcontainer>
+			<testcontainer
+			id="056a5eea-578d-4433-ae88-6fe8ca2f3b3b">
+			</testcontainer>
+			<testcontainer
+			id="078624d2-159e-4f13-9673-34da0b0684ef">
+			</testcontainer>
+			<testcontainer
+			id="07f605b8-ff91-465a-b3f3-70f8f4d75027">
+			</testcontainer>
+			<testcontainer
+			id="08ff71de-498c-4c92-b4a6-458e483a618d">
+			</testcontainer>
+			<testcontainer
+			id="105dfe96-0611-41ed-b65f-b03129dbcad1">
+			</testcontainer>
+			<testcontainer
+			id="164c2ee2-300d-4a6f-9939-4337e0ade662">
+			</testcontainer>
+			<testcontainer
+			id="1e711c73-adb6-4d91-a3d6-95f2184ddf44">
+			</testcontainer>
+			<testcontainer
+			id="361d0893-8dd7-42ee-a490-aaf7fbb587c7">
+			</testcontainer>
+			<testcontainer
+			id="3cdf392f-5b46-415e-92e3-39e650a8b0a2">
+			</testcontainer>
+			<testcontainer
+			id="43025ca8-6780-4e9b-93ed-a8bc0d4df7a7">
+			</testcontainer>
+			<testcontainer
+			id="457cc817-ed5a-4572-b28a-d54487f3855f">
+			</testcontainer>
+			<testcontainer
+			id="45d948c2-46ca-433c-a12e-5fa55eafbde3">
+			</testcontainer>
+			<testcontainer
+			id="48c6aa02-906a-4900-86c0-226aac2c734b">
+			</testcontainer>
+			<testcontainer
+			id="4957f1c1-7422-48ad-84cc-dc754587c2b7">
+			</testcontainer>
+			<testcontainer
+			id="558a3095-279a-4a3c-98fa-d08df86bdc45">
+			</testcontainer>
+			<testcontainer
+			id="5999d831-98f9-4286-af4b-d593bad533c3">
+			</testcontainer>
+			<testcontainer
+			id="5c4ae511-f8c9-49e6-8efb-19e4ec2b1df8">
+			</testcontainer>
+			<testcontainer
+			id="6aa18484-9a10-4076-ad40-d31a7cc3c395">
+			</testcontainer>
+			<testcontainer
+			id="6ac3e2ef-315c-42df-aede-7d1c090a0874">
+			</testcontainer>
+			<testcontainer
+			id="6d5d03df-4d76-4f55-a352-f917f48fcf2c">
+			</testcontainer>
+			<testcontainer
+			id="71740368-98a8-417a-bc68-07020ccc2162">
+			</testcontainer>
+			<testcontainer
+			id="753f6b9e-9e0c-4481-bf55-47c832498115">
+			</testcontainer>
+			<testcontainer
+			id="7633000c-1358-455e-aa9c-0699ef5cf9b6">
+			</testcontainer>
+			<testcontainer
+			id="76b2705b-9966-45fc-a905-1b5edfe8e49a">
+			</testcontainer>
+			<testcontainer
+			id="7abe3041-dbeb-4da7-91f3-7036dbc627d7">
+			</testcontainer>
+			<testcontainer
 			id="7eb647ac-fff1-427a-a00c-fb97f0647f07">
 			</testcontainer>
 			<testcontainer
+			id="8d14914e-4c02-4c1b-bb69-5f9b1d4462b3">
+			</testcontainer>
+			<testcontainer
+			id="94aa56d5-49bc-4bd5-b793-71624c81da7a">
+			</testcontainer>
+			<testcontainer
+			id="9eee6ba9-85fc-46dd-a52d-60c913337400">
+			</testcontainer>
+			<testcontainer
+			id="ace3e5cd-9676-47cf-b9b9-7aa1a8396dfb">
+			</testcontainer>
+			<testcontainer
+			id="afa76047-1ea9-45dd-86ad-8be46464851b">
+			</testcontainer>
+			<testcontainer
+			id="b05fde94-1f2d-4068-998c-908557d723df">
+			</testcontainer>
+			<testcontainer
+			id="c3d0db33-0b29-4d22-879d-2a41ef9559ce">
+			</testcontainer>
+			<testcontainer
+			id="c92e5652-9f3c-469e-864d-896329380615">
+			</testcontainer>
+			<testcontainer
+			id="caf801f0-8dd3-4c06-8d2f-f8a865dcef01">
+			</testcontainer>
+			<testcontainer
+			id="cb3d5fb8-02f7-412c-91c6-80fa091d1cb5">
+			</testcontainer>
+			<testcontainer
+			id="cb5c40f1-1487-4101-aa88-857974317287">
+			</testcontainer>
+			<testcontainer
+			id="d7e2215f-d7d3-4192-9025-0663a9fde957">
+			</testcontainer>
+			<testcontainer
 			id="d7e64842-5abf-4c04-b18b-4ded846678e5">
+			</testcontainer>
+			<testcontainer
+			id="eebed04f-fef8-4b43-99e5-21471922b73a">
+			</testcontainer>
+			<testcontainer
+			id="f083c6ec-0fd3-4c23-a7c5-11a99e4b3d0c">
+			</testcontainer>
+			<testcontainer
+			id="f5df01d7-6d0c-44b0-9bac-9720d41554bf">
+			</testcontainer>
+			<testcontainer
+			id="f8404fc5-6b13-4f11-951c-0420eef8fcba">
+			</testcontainer>
+			<testcontainer
+			id="fe6223bc-2807-4862-867e-1d92d8bb1e5f">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

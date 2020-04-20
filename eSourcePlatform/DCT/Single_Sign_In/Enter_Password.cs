@@ -95,8 +95,8 @@ namespace DCT.Single_Sign_In
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCT_Password' with focus on 'SignIn.PasswordField'.", repo.SignIn.PasswordFieldInfo, new RecordItemIndex(1));
-            repo.SignIn.PasswordField.PressKeys(DCT_Password);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCT_Password' with focus on 'SignInToYourAccount.PasswordField'.", repo.SignInToYourAccount.PasswordFieldInfo, new RecordItemIndex(1));
+            repo.SignInToYourAccount.PasswordField.PressKeys(DCT_Password);
             Delay.Milliseconds(0);
             
         }
