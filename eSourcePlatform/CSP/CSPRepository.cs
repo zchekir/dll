@@ -37,6 +37,8 @@ namespace CSP
         CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
         CSPRepositoryFolders.SwaggerUIAppFolder _swaggerui;
         CSPRepositoryFolders.AmazonWebServicesSignInAppFolder _amazonwebservicessignin;
+        CSPRepositoryFolders.AWSManagementConsoleAppFolder _awsmanagementconsole;
+        CSPRepositoryFolders.S3ManagementConsoleAppFolder _s3managementconsole;
 
         /// <summary>
         /// Gets the singleton class instance representing the CSPRepository element repository.
@@ -63,6 +65,8 @@ namespace CSP
             _cogstatesolutionplatformchrome = new CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
             _swaggerui = new CSPRepositoryFolders.SwaggerUIAppFolder(this);
             _amazonwebservicessignin = new CSPRepositoryFolders.AmazonWebServicesSignInAppFolder(this);
+            _awsmanagementconsole = new CSPRepositoryFolders.AWSManagementConsoleAppFolder(this);
+            _s3managementconsole = new CSPRepositoryFolders.S3ManagementConsoleAppFolder(this);
         }
 
 #region Variables
@@ -409,6 +413,24 @@ namespace CSP
         public virtual CSPRepositoryFolders.AmazonWebServicesSignInAppFolder AmazonWebServicesSignIn
         {
             get { return _amazonwebservicessignin; }
+        }
+
+        /// <summary>
+        /// The AWSManagementConsole folder.
+        /// </summary>
+        [RepositoryFolder("5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121")]
+        public virtual CSPRepositoryFolders.AWSManagementConsoleAppFolder AWSManagementConsole
+        {
+            get { return _awsmanagementconsole; }
+        }
+
+        /// <summary>
+        /// The S3ManagementConsole folder.
+        /// </summary>
+        [RepositoryFolder("6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd")]
+        public virtual CSPRepositoryFolders.S3ManagementConsoleAppFolder S3ManagementConsole
+        {
+            get { return _s3managementconsole; }
         }
     }
 
@@ -8997,6 +9019,216 @@ namespace CSP
                 get
                 {
                     return _wassigninbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AWSManagementConsoleAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121")]
+        public partial class AWSManagementConsoleAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clicks3Info;
+
+            /// <summary>
+            /// Creates a new AWSManagementConsole  folder.
+            /// </summary>
+            public AWSManagementConsoleAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AWSManagementConsole", "/dom[@domain='ap-northeast-1.console.aws.amazon.com']", parentFolder, 30000, null, false, "5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121", "")
+            {
+                _clicks3Info = new RepoItemInfo(this, "ClickS3", ".//a[#'S3']/span[@innertext='S3']", 30000, null, "1620b680-057b-4323-ad33-e6bddc91bccb");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickS3 item.
+            /// </summary>
+            [RepositoryItem("1620b680-057b-4323-ad33-e6bddc91bccb")]
+            public virtual Ranorex.SpanTag ClickS3
+            {
+                get
+                {
+                    return _clicks3Info.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickS3 item info.
+            /// </summary>
+            [RepositoryItemInfo("1620b680-057b-4323-ad33-e6bddc91bccb")]
+            public virtual RepoItemInfo ClickS3Info
+            {
+                get
+                {
+                    return _clicks3Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The S3ManagementConsoleAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd")]
+        public partial class S3ManagementConsoleAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cgstqcbearfolderInfo;
+            RepoItemInfo _openexportfolderInfo;
+            RepoItemInfo _clickdownloadInfo;
+            RepoItemInfo _clicklastmodifierInfo;
+
+            /// <summary>
+            /// Creates a new S3ManagementConsole  folder.
+            /// </summary>
+            public S3ManagementConsoleAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("S3ManagementConsole", "/dom[@domain='s3.console.aws.amazon.com']", parentFolder, 30000, null, false, "6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd", "")
+            {
+                _cgstqcbearfolderInfo = new RepoItemInfo(this, "CgstqcbearFolder", ".//tag[#'buckets-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@innertext='cgstqcbear']", 30000, null, "071c155b-ee46-4a5e-989e-200ef6afd9fa");
+                _openexportfolderInfo = new RepoItemInfo(this, "OpenExportFolder", ".//a[@innertext~'^\\ export_']", 30000, null, "560d7791-d9fd-4504-b175-a660851c0926");
+                _clickdownloadInfo = new RepoItemInfo(this, "ClickDownload", ".//tag[#'download']/button", 30000, null, "70732b83-61d5-43e8-9ca8-8c665961916e");
+                _clicklastmodifierInfo = new RepoItemInfo(this, "ClickLastModifier", ".//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span", 30000, null, "491bff12-4b12-4a73-9ac8-cd2f508de522");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CgstqcbearFolder item.
+            /// </summary>
+            [RepositoryItem("071c155b-ee46-4a5e-989e-200ef6afd9fa")]
+            public virtual Ranorex.ATag CgstqcbearFolder
+            {
+                get
+                {
+                    return _cgstqcbearfolderInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CgstqcbearFolder item info.
+            /// </summary>
+            [RepositoryItemInfo("071c155b-ee46-4a5e-989e-200ef6afd9fa")]
+            public virtual RepoItemInfo CgstqcbearFolderInfo
+            {
+                get
+                {
+                    return _cgstqcbearfolderInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenExportFolder item.
+            /// </summary>
+            [RepositoryItem("560d7791-d9fd-4504-b175-a660851c0926")]
+            public virtual Ranorex.ATag OpenExportFolder
+            {
+                get
+                {
+                    return _openexportfolderInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenExportFolder item info.
+            /// </summary>
+            [RepositoryItemInfo("560d7791-d9fd-4504-b175-a660851c0926")]
+            public virtual RepoItemInfo OpenExportFolderInfo
+            {
+                get
+                {
+                    return _openexportfolderInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickDownload item.
+            /// </summary>
+            [RepositoryItem("70732b83-61d5-43e8-9ca8-8c665961916e")]
+            public virtual Ranorex.ButtonTag ClickDownload
+            {
+                get
+                {
+                    return _clickdownloadInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickDownload item info.
+            /// </summary>
+            [RepositoryItemInfo("70732b83-61d5-43e8-9ca8-8c665961916e")]
+            public virtual RepoItemInfo ClickDownloadInfo
+            {
+                get
+                {
+                    return _clickdownloadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickLastModifier item.
+            /// </summary>
+            [RepositoryItem("491bff12-4b12-4a73-9ac8-cd2f508de522")]
+            public virtual Ranorex.SpanTag ClickLastModifier
+            {
+                get
+                {
+                    return _clicklastmodifierInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickLastModifier item info.
+            /// </summary>
+            [RepositoryItemInfo("491bff12-4b12-4a73-9ac8-cd2f508de522")]
+            public virtual RepoItemInfo ClickLastModifierInfo
+            {
+                get
+                {
+                    return _clicklastmodifierInfo;
                 }
             }
         }

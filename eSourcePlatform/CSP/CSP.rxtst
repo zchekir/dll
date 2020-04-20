@@ -8,6 +8,14 @@ rxversion="8.3">
 			name="WASPassword"
 			ref="404626c0-583e-4c33-aade-0d2331f6e27c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="WASPW"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="ecf89b5f-9fc0-4a23-b7d0-37fa8ec495e2"
+					variablename="WASPassword1">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="01018cad-2f89-413e-9417-11b023624c1b"
@@ -423,6 +431,10 @@ rxversion="8.3">
 			id="16025ae9-9d05-4d0f-995b-d91887787f2b"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3"
+			name="OpenexPortFolder">
+			</testcase>
 			<testmodule
 			id="19b27d14-63e0-4a68-b957-7fb42285afde"
 			name="Validate_Report_Generated"
@@ -624,10 +636,18 @@ rxversion="8.3">
 			name="WAS_DB"
 			ref="55e598c3-2d98-4ad1-bf3e-e5128afbc5d4"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="WASURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="4cc61eba-2f9f-4736-9b01-fafcbecdc33e"
+					variablename="was">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="297a9b13-970e-4958-b03a-c2e11d8c8b2b"
-			name="Open_AWSDB">
+			name="Navigate_AWSDB">
 			</testcase>
 			<testmodule
 			id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
@@ -1003,7 +1023,7 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4"
-			maxrange="2"
+			maxrange="0"
 			minrange="0"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
@@ -1505,6 +1525,22 @@ rxversion="8.3">
 					name="mode"
 					value="smartphone">
 					</param>
+					<param
+					name="WASusname"
+					value="633444484876">
+					</param>
+					<param
+					name="WASImPASWORD"
+					value="cgstqcuser">
+					</param>
+					<param
+					name="WASPW"
+					value="R#a#exdn28">
+					</param>
+					<param
+					name="WASURL"
+					value="https://633444484876.signin.aws.amazon.com/console">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -1737,6 +1773,12 @@ rxversion="8.3">
 			id="63ed3dda-a002-4d22-b151-a5010337518b"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="64727c92-44dd-41f3-955a-f60b94572cd2"
+			name="TestValidation"
+			ref="c4a66323-b1f1-4ef1-ab5c-5098d4926605"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="651ec70a-e3c7-40c2-aa0b-77f5c89c10bc"
 			name="Select_Study"
@@ -3305,6 +3347,10 @@ rxversion="8.3">
 			name="SetLocalityCode">
 			</testcase>
 			<testcase
+			id="ce924ca6-26b5-4e19-bafc-3215d58a64c7"
+			name="OpenS3">
+			</testcase>
+			<testcase
 			errorbehavior="Stop"
 			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc"
 			maxrange="0"
@@ -3507,6 +3553,14 @@ rxversion="8.3">
 			name="EnterWAS_UserName"
 			ref="db21cddd-a4f2-4a95-95eb-7d1f754502cf"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="WASusname"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="c6ffc1b3-24fe-437c-864c-859924c381e3"
+					variablename="UserName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="da35936c-053f-492d-8d0e-bfbbdb2d95dc"
@@ -3607,6 +3661,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="dfc1510e-907c-4d34-9186-d19f5e69f5d0"
+			name="ClickOnS3DB"
+			ref="1b6f7a64-d117-4a0f-9d1a-c484fda8e2f7"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="e00c2baf-18fc-4db9-8f47-941279980274"
 			name="V1_ReferralStatus">
@@ -3685,6 +3745,14 @@ rxversion="8.3">
 			name="IAMusername"
 			ref="807c2d98-ddb1-4b14-bae3-47b9dee0d191"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="WASImPASWORD"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8038b9d3-d0f4-4d72-a383-2a99cacf8e7e"
+					variablename="Imusername">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e6967e9f-f015-4135-a9f9-bb0ae528aa9d"
@@ -3712,6 +3780,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e7ca9258-e7bb-4156-8af0-bb4669001dad"
+			name="OpenCgsBearFolder">
+			</testcase>
 			<testmodule
 			id="e7f148c5-c9cf-41f0-a38a-cf064a41256d"
 			name="Clear_ExternalID"
@@ -3768,6 +3840,12 @@ rxversion="8.3">
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8"
 			name="V2_Qualification_Status">
 			</testcase>
+			<testmodule
+			id="ef8963fa-d0a7-4fc4-8110-a56ec9624bb4"
+			name="ClickExportFolder"
+			ref="a33a0850-a2d3-4443-ab02-ac3fd559b9ec"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="f1a06325-e335-4165-8623-9366c2ee852c"
 			name="WASClickSignIn"
@@ -3836,6 +3914,10 @@ rxversion="8.3">
 			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8"
 			name="AWS_S3_DB_">
 			</smartfoldernode>
+			<testcase
+			id="fa43b521-51c2-443c-9ad3-61bdc31a12e1"
+			name="ValidateTest">
+			</testcase>
 			<testmodule
 			id="fafaca2f-6276-4f71-a77a-9c6128b70d49"
 			name="Click_SpecDeviation_Button"
@@ -3911,6 +3993,12 @@ rxversion="8.3">
 			id="fd82ef5c-b05b-49ef-b0b6-70f46e9d1abd"
 			name="Click_Sort_LastUpdate"
 			ref="93a531d7-d39c-4006-a74f-7c668f1713ad"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fec6f444-a7e9-408b-a7ee-8841cc16cec3"
+			name="OpenCgstS3Folder"
+			ref="964e2eb5-1a38-492b-a803-96c1d4fc38a6"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4940,7 +5028,7 @@ rxversion="8.3">
 					name="AWS_S3_DB_">
 						<testcase
 						id="297a9b13-970e-4958-b03a-c2e11d8c8b2b"
-						name="Open_AWSDB">
+						name="Navigate_AWSDB">
 							<testmodule
 							id="278e757c-43e3-479b-b3d1-5742bf763bdf"
 							name="WAS_DB">
@@ -4960,6 +5048,38 @@ rxversion="8.3">
 							<testmodule
 							id="f1a06325-e335-4165-8623-9366c2ee852c"
 							name="WASClickSignIn">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="ce924ca6-26b5-4e19-bafc-3215d58a64c7"
+						name="OpenS3">
+							<testmodule
+							id="dfc1510e-907c-4d34-9186-d19f5e69f5d0"
+							name="ClickOnS3DB">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="e7ca9258-e7bb-4156-8af0-bb4669001dad"
+						name="OpenCgsBearFolder">
+							<testmodule
+							id="fec6f444-a7e9-408b-a7ee-8841cc16cec3"
+							name="OpenCgstS3Folder">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3"
+						name="OpenexPortFolder">
+							<testmodule
+							id="ef8963fa-d0a7-4fc4-8110-a56ec9624bb4"
+							name="ClickExportFolder">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="fa43b521-51c2-443c-9ad3-61bdc31a12e1"
+						name="ValidateTest">
+							<testmodule
+							id="64727c92-44dd-41f3-955a-f60b94572cd2"
+							name="TestValidation">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
@@ -5061,7 +5181,7 @@ rxversion="8.3">
 		<DataSource
 		id="0223bb73-bdf8-475b-9924-27f470878d7d"
 		includefile="Unchecked"
-		lastknownrowcount="189"
+		lastknownrowcount="196"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5268,10 +5388,10 @@ rxversion="8.3">
 					RptDatabase
 				</column>
 				<column>
-					DCTDatabase
+					Authentication
 				</column>
 				<column>
-					Authentication
+					DCTDBName
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -5616,79 +5736,22 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="02ca4b95-a2d6-492f-ab6e-36034c719d59">
-			</testcontainer>
-			<testcontainer
-			id="04421345-e5aa-49b4-b420-101dbea32a24">
-			</testcontainer>
-			<testcontainer
-			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
-			</testcontainer>
-			<testcontainer
-			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc">
+			id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3">
 			</testcontainer>
 			<testcontainer
 			id="297a9b13-970e-4958-b03a-c2e11d8c8b2b">
 			</testcontainer>
 			<testcontainer
-			id="2e724786-0867-45a5-b61c-3a0714ca1060">
-			</testcontainer>
-			<testcontainer
-			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
-			</testcontainer>
-			<testcontainer
-			id="45077930-4bd9-4874-ad6a-91b58033c26a">
-			</testcontainer>
-			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
+			id="ce924ca6-26b5-4e19-bafc-3215d58a64c7">
 			</testcontainer>
 			<testcontainer
-			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
-			</testcontainer>
-			<testcontainer
-			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
-			</testcontainer>
-			<testcontainer
-			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
-			</testcontainer>
-			<testcontainer
-			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
-			</testcontainer>
-			<testcontainer
-			id="9fe98d67-940d-4451-ae47-83f979151dc2">
-			</testcontainer>
-			<testcontainer
-			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
-			</testcontainer>
-			<testcontainer
-			id="af039c2f-3c95-43e6-8258-aa7b0d2f38f2">
-			</testcontainer>
-			<testcontainer
-			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
-			</testcontainer>
-			<testcontainer
-			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
-			</testcontainer>
-			<testcontainer
-			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
-			</testcontainer>
-			<testcontainer
-			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			id="e7ca9258-e7bb-4156-8af0-bb4669001dad">
 			</testcontainer>
 			<testcontainer
 			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8">
-			</testcontainer>
-			<testcontainer
-			id="fbb6582a-078f-40ce-9d97-9857a442e28e">
-			</testcontainer>
-			<testcontainer
-			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -1704,6 +1704,18 @@
       <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="ClickExportFolder.cs">
+      <BoundTo>addfdd85-40b3-4d05-b3b6-ed9f611e1050</BoundTo>
+      <DependentUpon>ClickExportFolder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>68a056ca-51ea-4267-8ef4-7dac1f924c07</id>
+    </Compile>
+    <Compile Include="ClickExportFolder.UserCode.cs">
+      <BoundTo>addfdd85-40b3-4d05-b3b6-ed9f611e1050</BoundTo>
+      <DependentUpon>ClickExportFolder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>91746ccc-f75f-4189-9e9b-7f2ddee9f7dd</id>
+    </Compile>
     <Compile Include="ClickNoButton.cs">
       <BoundTo>736781f6-6c3a-402e-9413-966838fac367</BoundTo>
       <DependentUpon>ClickNoButton.rxrec</DependentUpon>
@@ -1715,6 +1727,18 @@
       <DependentUpon>ClickNoButton.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>e5aa65aa-7f0a-4db0-8a13-fe70058127f3</id>
+    </Compile>
+    <Compile Include="ClickOnS3DB.cs">
+      <BoundTo>9752212b-14aa-420b-975c-23ecb54e5111</BoundTo>
+      <DependentUpon>ClickOnS3DB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4ef2283c-bee2-4651-8f61-fffbd212dcef</id>
+    </Compile>
+    <Compile Include="ClickOnS3DB.UserCode.cs">
+      <BoundTo>9752212b-14aa-420b-975c-23ecb54e5111</BoundTo>
+      <DependentUpon>ClickOnS3DB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4970bec-83f4-43b2-b2ac-1fb45d17ae50</id>
     </Compile>
     <Compile Include="CSPRepository.cs">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -2508,6 +2532,18 @@
       <DependentUpon>Validate_ResetPassword_LoggedIn.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="OpenCgstS3Folder.cs">
+      <BoundTo>aa9950c1-9995-476a-ba54-bd2fe119ebe8</BoundTo>
+      <DependentUpon>OpenCgstS3Folder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99cc22d5-6330-4e1e-9a75-ae3e1220e52e</id>
+    </Compile>
+    <Compile Include="OpenCgstS3Folder.UserCode.cs">
+      <BoundTo>aa9950c1-9995-476a-ba54-bd2fe119ebe8</BoundTo>
+      <DependentUpon>OpenCgstS3Folder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef2323ff-ba77-48b0-a66f-ad7c353f5f43</id>
+    </Compile>
     <Compile Include="OutComesAPI.cs">
       <BoundTo>42ac416d-b568-4f7b-a4ea-e75b821c76db</BoundTo>
       <DependentUpon>OutComesAPI.rxrec</DependentUpon>
@@ -2978,6 +3014,18 @@
       <DependentUpon>swaggerAPI.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c0ed3a79-a920-4fda-a695-fcd10eccd87d</id>
+    </Compile>
+    <Compile Include="TestValidation.cs">
+      <BoundTo>164d1751-d66a-405e-b556-a62fe85e58dc</BoundTo>
+      <DependentUpon>TestValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b182aa8-7ffb-43ce-98ee-a5839fdbf348</id>
+    </Compile>
+    <Compile Include="TestValidation.UserCode.cs">
+      <BoundTo>164d1751-d66a-405e-b556-a62fe85e58dc</BoundTo>
+      <DependentUpon>TestValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>30b74dbc-dc90-4794-8a84-e49fe0a4585f</id>
     </Compile>
     <Compile Include="UsersPage\Add_Role_External_User.cs">
       <id>271a9f76-ce62-4590-ab13-f2658d41a825</id>
@@ -4136,10 +4184,20 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
     </None>
+    <None Include="ClickExportFolder.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>addfdd85-40b3-4d05-b3b6-ed9f611e1050</id>
+      <recordtableid>a33a0850-a2d3-4443-ab02-ac3fd559b9ec</recordtableid>
+    </None>
     <None Include="ClickNoButton.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>736781f6-6c3a-402e-9413-966838fac367</id>
       <recordtableid>7fb7a567-b6ea-401d-9958-944d9c9515bc</recordtableid>
+    </None>
+    <None Include="ClickOnS3DB.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>9752212b-14aa-420b-975c-23ecb54e5111</id>
+      <recordtableid>1b6f7a64-d117-4a0f-9d1a-c484fda8e2f7</recordtableid>
     </None>
     <None Include="CSPRepository.rximg">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4573,6 +4631,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c31fd7d3-6ab8-4b02-8d6c-eda02646b5c9</recordtableid>
     </None>
+    <None Include="OpenCgstS3Folder.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>aa9950c1-9995-476a-ba54-bd2fe119ebe8</id>
+      <recordtableid>964e2eb5-1a38-492b-a803-96c1d4fc38a6</recordtableid>
+    </None>
     <None Include="OutComesAPI.rxrec">
       <id>42ac416d-b568-4f7b-a4ea-e75b821c76db</id>
       <recordtableid>ddc58c10-0398-41ce-a566-66eeaa23ff2d</recordtableid>
@@ -4848,6 +4911,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>c4d77aeb-1d90-4699-85b3-ca77c15a5d2b</id>
       <recordtableid>13e4a129-f95e-4991-9c6b-4c0f0ad3992f</recordtableid>
+    </None>
+    <None Include="TestValidation.rxrec">
+      <id>164d1751-d66a-405e-b556-a62fe85e58dc</id>
+      <recordtableid>c4a66323-b1f1-4ef1-ab5c-5098d4926605</recordtableid>
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
     </None>
     <None Include="UsersPage\Add_Role_External_User.rxrec">
       <id>bbae9c6b-903b-4375-9555-9077f3057673</id>
