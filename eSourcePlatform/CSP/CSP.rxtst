@@ -614,6 +614,16 @@ rxversion="8.3">
 			name="401-InvalidCredentials">
 			</testcase>
 			<testmodule
+			id="278e757c-43e3-479b-b3d1-5742bf763bdf"
+			name="WAS_DB"
+			ref="55e598c3-2d98-4ad1-bf3e-e5128afbc5d4"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="297a9b13-970e-4958-b03a-c2e11d8c8b2b"
+			name="Open_AWSDB">
+			</testcase>
+			<testmodule
 			id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -3487,6 +3497,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d859008f-0879-4f72-b702-67312f9e71ad"
+			name="EnterWAS_UserName"
+			ref="db21cddd-a4f2-4a95-95eb-7d1f754502cf"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="da35936c-053f-492d-8d0e-bfbbdb2d95dc"
 			name="Set_LocalityCode"
 			ref="52db9f06-5da5-46a4-b3aa-a782ab8eaa1b"
@@ -3798,6 +3814,10 @@ rxversion="8.3">
 			ref="50a5f6ec-164a-4d95-8e16-f85e36053404"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8"
+			name="AWS_S3_DB_">
+			</smartfoldernode>
 			<testmodule
 			id="fafaca2f-6276-4f71-a77a-9c6128b70d49"
 			name="Click_SpecDeviation_Button"
@@ -4897,6 +4917,22 @@ rxversion="8.3">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
+					<smartfoldernode
+					id="f8fec26f-eacc-4158-bb66-e2973f44dcb8"
+					name="AWS_S3_DB_">
+						<testcase
+						id="297a9b13-970e-4958-b03a-c2e11d8c8b2b"
+						name="Open_AWSDB">
+							<testmodule
+							id="278e757c-43e3-479b-b3d1-5742bf763bdf"
+							name="WAS_DB">
+							</testmodule>
+							<testmodule
+							id="d859008f-0879-4f72-b702-67312f9e71ad"
+							name="EnterWAS_UserName">
+							</testmodule>
+						</testcase>
+					</smartfoldernode>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -4995,7 +5031,7 @@ rxversion="8.3">
 		<DataSource
 		id="0223bb73-bdf8-475b-9924-27f470878d7d"
 		includefile="Unchecked"
-		lastknownrowcount="196"
+		lastknownrowcount="189"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5562,6 +5598,9 @@ rxversion="8.3">
 			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc">
 			</testcontainer>
 			<testcontainer
+			id="297a9b13-970e-4958-b03a-c2e11d8c8b2b">
+			</testcontainer>
+			<testcontainer
 			id="2e724786-0867-45a5-b61c-3a0714ca1060">
 			</testcontainer>
 			<testcontainer
@@ -5611,6 +5650,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			</testcontainer>
+			<testcontainer
+			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8">
 			</testcontainer>
 			<testcontainer
 			id="fbb6582a-078f-40ce-9d97-9857a442e28e">

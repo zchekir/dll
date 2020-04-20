@@ -36,6 +36,7 @@ namespace CSP
         CSPRepositoryFolders.FirefoxDownloadPopupAppFolder _firefoxdownloadpopup;
         CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder _cogstatesolutionplatformchrome;
         CSPRepositoryFolders.SwaggerUIAppFolder _swaggerui;
+        CSPRepositoryFolders.AmazonWebServicesSignInAppFolder _amazonwebservicessignin;
 
         /// <summary>
         /// Gets the singleton class instance representing the CSPRepository element repository.
@@ -61,6 +62,7 @@ namespace CSP
             _firefoxdownloadpopup = new CSPRepositoryFolders.FirefoxDownloadPopupAppFolder(this);
             _cogstatesolutionplatformchrome = new CSPRepositoryFolders.CogstateSolutionPlatformChromeAppFolder(this);
             _swaggerui = new CSPRepositoryFolders.SwaggerUIAppFolder(this);
+            _amazonwebservicessignin = new CSPRepositoryFolders.AmazonWebServicesSignInAppFolder(this);
         }
 
 #region Variables
@@ -398,6 +400,15 @@ namespace CSP
         public virtual CSPRepositoryFolders.SwaggerUIAppFolder SwaggerUI
         {
             get { return _swaggerui; }
+        }
+
+        /// <summary>
+        /// The AmazonWebServicesSignIn folder.
+        /// </summary>
+        [RepositoryFolder("96dba55a-d263-463d-9881-a01dcbe2e79d")]
+        public virtual CSPRepositoryFolders.AmazonWebServicesSignInAppFolder AmazonWebServicesSignIn
+        {
+            get { return _amazonwebservicessignin; }
         }
     }
 
@@ -8842,6 +8853,150 @@ namespace CSP
                 get
                 {
                     return _n200codevalidationInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AmazonWebServicesSignInAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("96dba55a-d263-463d-9881-a01dcbe2e79d")]
+        public partial class AmazonWebServicesSignInAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wasusernameInfo;
+            RepoItemInfo _iamusernameInfo;
+            RepoItemInfo _waspasswordInfo;
+            RepoItemInfo _wassigninbuttonInfo;
+
+            /// <summary>
+            /// Creates a new AmazonWebServicesSignIn  folder.
+            /// </summary>
+            public AmazonWebServicesSignInAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AmazonWebServicesSignIn", "/dom[@domain='us-east-1.signin.aws.amazon.com']", parentFolder, 30000, null, false, "96dba55a-d263-463d-9881-a01dcbe2e79d", "")
+            {
+                _wasusernameInfo = new RepoItemInfo(this, "WASUserName", ".//input[#'account']", 30000, null, "0698a2cf-f856-401e-88af-0ba574a80eac");
+                _iamusernameInfo = new RepoItemInfo(this, "IAMusername", ".//input[#'username']", 30000, null, "35605955-657e-4d8d-b404-4d7d53426579");
+                _waspasswordInfo = new RepoItemInfo(this, "WASPassword", ".//input[#'password']", 30000, null, "01028f45-3d56-40d3-9c48-c3c7d837c17f");
+                _wassigninbuttonInfo = new RepoItemInfo(this, "WASSigninButton", ".//a[#'signin_button']", 30000, null, "2b408794-e540-4b00-9cea-e680609825d2");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("96dba55a-d263-463d-9881-a01dcbe2e79d")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("96dba55a-d263-463d-9881-a01dcbe2e79d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WASUserName item.
+            /// </summary>
+            [RepositoryItem("0698a2cf-f856-401e-88af-0ba574a80eac")]
+            public virtual Ranorex.InputTag WASUserName
+            {
+                get
+                {
+                    return _wasusernameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WASUserName item info.
+            /// </summary>
+            [RepositoryItemInfo("0698a2cf-f856-401e-88af-0ba574a80eac")]
+            public virtual RepoItemInfo WASUserNameInfo
+            {
+                get
+                {
+                    return _wasusernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IAMusername item.
+            /// </summary>
+            [RepositoryItem("35605955-657e-4d8d-b404-4d7d53426579")]
+            public virtual Ranorex.InputTag IAMusername
+            {
+                get
+                {
+                    return _iamusernameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IAMusername item info.
+            /// </summary>
+            [RepositoryItemInfo("35605955-657e-4d8d-b404-4d7d53426579")]
+            public virtual RepoItemInfo IAMusernameInfo
+            {
+                get
+                {
+                    return _iamusernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WASPassword item.
+            /// </summary>
+            [RepositoryItem("01028f45-3d56-40d3-9c48-c3c7d837c17f")]
+            public virtual Ranorex.InputTag WASPassword
+            {
+                get
+                {
+                    return _waspasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WASPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("01028f45-3d56-40d3-9c48-c3c7d837c17f")]
+            public virtual RepoItemInfo WASPasswordInfo
+            {
+                get
+                {
+                    return _waspasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WASSigninButton item.
+            /// </summary>
+            [RepositoryItem("2b408794-e540-4b00-9cea-e680609825d2")]
+            public virtual Ranorex.ATag WASSigninButton
+            {
+                get
+                {
+                    return _wassigninbuttonInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WASSigninButton item info.
+            /// </summary>
+            [RepositoryItemInfo("2b408794-e540-4b00-9cea-e680609825d2")]
+            public virtual RepoItemInfo WASSigninButtonInfo
+            {
+                get
+                {
+                    return _wassigninbuttonInfo;
                 }
             }
         }

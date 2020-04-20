@@ -1737,6 +1737,18 @@
       <UserCode>true</UserCode>
       <id>b4456071-41fd-4a10-ac32-d992757fe3f1</id>
     </Compile>
+    <Compile Include="EnterWAS_UserName.cs">
+      <BoundTo>eed08320-305f-4807-b614-484e6b915073</BoundTo>
+      <DependentUpon>EnterWAS_UserName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>687f26b0-ea32-449f-84c8-bfd05e6633db</id>
+    </Compile>
+    <Compile Include="EnterWAS_UserName.UserCode.cs">
+      <BoundTo>eed08320-305f-4807-b614-484e6b915073</BoundTo>
+      <DependentUpon>EnterWAS_UserName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd003bf6-5ab0-4982-87f9-0834d78f6194</id>
+    </Compile>
     <Compile Include="ExtractsPage\Click_DownloadExtract_Button.cs">
       <id>64e991f1-9c42-48e0-9752-c2492e573377</id>
       <BoundTo>304b93b0-7b72-4748-b038-66c5ca99150c</BoundTo>
@@ -2147,6 +2159,18 @@
       <DependentUpon>GetAssessmentAttemptOutcomes.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>22013a69-1911-4577-94c2-d7dbbd0f5162</id>
+    </Compile>
+    <Compile Include="IAMusername.cs">
+      <BoundTo>1d6c19a0-9d28-4b06-9f28-1d14e0178dfd</BoundTo>
+      <DependentUpon>IAMusername.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>95c25328-03d1-4a17-adff-ebb38f5a4118</id>
+    </Compile>
+    <Compile Include="IAMusername.UserCode.cs">
+      <BoundTo>1d6c19a0-9d28-4b06-9f28-1d14e0178dfd</BoundTo>
+      <DependentUpon>IAMusername.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fd4a76fb-776b-49fc-a2ad-af2f2e9deffc</id>
     </Compile>
     <Compile Include="InnalidMethode.cs">
       <BoundTo>b51d96e8-3fc0-4136-a62a-3620e59a2840</BoundTo>
@@ -3387,6 +3411,42 @@
       <DependentUpon>Select_VisitSchedule.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="WASClickSignIn.cs">
+      <BoundTo>5fe80173-3323-497f-bb5c-2cd2f51538c1</BoundTo>
+      <DependentUpon>WASClickSignIn.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cf34673e-dc1f-411d-8cf9-1854809a1bd3</id>
+    </Compile>
+    <Compile Include="WASClickSignIn.UserCode.cs">
+      <BoundTo>5fe80173-3323-497f-bb5c-2cd2f51538c1</BoundTo>
+      <DependentUpon>WASClickSignIn.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7476b92e-90f0-4b88-9b3f-81a11d22d532</id>
+    </Compile>
+    <Compile Include="WASPassword.cs">
+      <BoundTo>1d0f64be-ff93-475e-b766-903f8f28fdb3</BoundTo>
+      <DependentUpon>WASPassword.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>67a1ff13-41d5-4a1a-abc4-5becb3a4a5c1</id>
+    </Compile>
+    <Compile Include="WASPassword.UserCode.cs">
+      <BoundTo>1d0f64be-ff93-475e-b766-903f8f28fdb3</BoundTo>
+      <DependentUpon>WASPassword.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>228b2e13-40d0-4dee-b3b3-bdf7524f92b3</id>
+    </Compile>
+    <Compile Include="WAS_DB.cs">
+      <BoundTo>7c9f7d1f-ff71-454f-8f5c-d40ad01e697b</BoundTo>
+      <DependentUpon>WAS_DB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04cd8719-aaff-408c-ab41-cc49371d62be</id>
+    </Compile>
+    <Compile Include="WAS_DB.UserCode.cs">
+      <BoundTo>7c9f7d1f-ff71-454f-8f5c-d40ad01e697b</BoundTo>
+      <DependentUpon>WAS_DB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5a0288c4-1bee-4a07-b9bc-f6e392f90df5</id>
+    </Compile>
     <Compile Include="WorkflowsPage\Click_Add_Workflow.cs">
       <id>c21147a3-0e58-430d-a568-de89136e1107</id>
       <BoundTo>3ee3a92b-867f-478a-bc7f-c1c0e973bcac</BoundTo>
@@ -4189,6 +4249,11 @@
       <id>a0ab27f4-4259-49bf-8a1e-2b6dcf4db0dd</id>
       <recordtableid>c37b6363-6319-4130-a466-b49d23f6545c</recordtableid>
     </None>
+    <None Include="EnterWAS_UserName.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>eed08320-305f-4807-b614-484e6b915073</id>
+      <recordtableid>db21cddd-a4f2-4a95-95eb-7d1f754502cf</recordtableid>
+    </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4358,6 +4423,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>946e90e3-3692-43f2-b12d-5aa24e3bf6a8</id>
       <recordtableid>532f08c6-9cad-477b-91cb-8ffa5f4e7cbb</recordtableid>
+    </None>
+    <None Include="IAMusername.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>1d6c19a0-9d28-4b06-9f28-1d14e0178dfd</id>
+      <recordtableid>807c2d98-ddb1-4b14-bae3-47b9dee0d191</recordtableid>
     </None>
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>
@@ -4958,6 +5028,21 @@
       <id>d016405d-dc0b-487e-bead-06f162888755</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>884bab92-73c9-4c72-bcb0-b60b57cf56ef</recordtableid>
+    </None>
+    <None Include="WASClickSignIn.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>5fe80173-3323-497f-bb5c-2cd2f51538c1</id>
+      <recordtableid>0a65f81b-9fcd-4cfe-a87c-6f070c5a51a8</recordtableid>
+    </None>
+    <None Include="WASPassword.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>1d0f64be-ff93-475e-b766-903f8f28fdb3</id>
+      <recordtableid>404626c0-583e-4c33-aade-0d2331f6e27c</recordtableid>
+    </None>
+    <None Include="WAS_DB.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>7c9f7d1f-ff71-454f-8f5c-d40ad01e697b</id>
+      <recordtableid>55e598c3-2d98-4ad1-bf3e-e5128afbc5d4</recordtableid>
     </None>
     <None Include="WorkflowsPage\Click_Add_Workflow.rxrec">
       <id>3ee3a92b-867f-478a-bc7f-c1c0e973bcac</id>
