@@ -29,6 +29,112 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e0e97a00-5081-436b-b141-e31a809a94ed"
+		sx="645"
+		sy="573"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2b408794-e540-4b00-9cea-e680609825d2"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="490,558,310,31"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						css3button
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						signin_button
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#10;                        Sign in
+                   &#32;
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						Continue
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://us-east-1.signin.aws.amazon.com/oauth?SignatureVersion=4&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJMOATPLHVSJ563XQ&amp;X-Amz-Date=2020-04-20T13%3A53%3A09.634Z&amp;X-Amz-Signature=2d4381ad94f892fc369db251e2ac53737a95aa2e79fa63340473b49aad2d6b6c&amp;X-Amz-SignedHeaders=host&amp;client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&amp;code_challenge=7-8f7Q8tvBOTDZt-3Yhuxk7uCPLel7KRfDz1CrveuK0&amp;code_challenge_method=SHA-256&amp;redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&amp;response_type=code&amp;state=hashArgs%23#
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="alt"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="value"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='us-east-1.signin.aws.amazon.com']//a[#'signin_button']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
