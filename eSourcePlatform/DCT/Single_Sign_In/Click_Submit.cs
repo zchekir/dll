@@ -79,8 +79,8 @@ namespace DCT.Single_Sign_In
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignIn.SubmitButton' at Center.", repo.SignIn.SubmitButtonInfo, new RecordItemIndex(0));
-            repo.SignIn.SubmitButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.SignInButton' at Center.", repo.SignInToYourAccount.SignInButtonInfo, new RecordItemIndex(0));
+            repo.SignInToYourAccount.SignInButton.Click();
             Delay.Milliseconds(200);
             
         }

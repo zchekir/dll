@@ -111,7 +111,7 @@ namespace DCT.Single_Sign_In
             Key_sequence_EnterUseName(repo.SignInToYourAccount.EnterUserNameFieldInfo);
             Delay.Milliseconds(0);
             
-            Mouse_Click_ClickNext(repo.SignInToYourAccount.NextButtonInfo);
+            Mouse_Click_ClickNext(repo.SignInToYourAccount.SignInButtonInfo);
             Delay.Milliseconds(0);
             
         }

@@ -82,8 +82,8 @@ namespace DCT.Single_Sign_In
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.NextButton' at Center.", repo.SignInToYourAccount.NextButtonInfo, new RecordItemIndex(1));
-            repo.SignInToYourAccount.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SignInToYourAccount.SignInButton' at Center.", repo.SignInToYourAccount.SignInButtonInfo, new RecordItemIndex(1));
+            repo.SignInToYourAccount.SignInButton.Click();
             Delay.Milliseconds(200);
             
         }

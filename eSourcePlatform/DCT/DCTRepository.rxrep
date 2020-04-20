@@ -561,7 +561,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="cb220122-19c8-4bab-93a1-825edc6f60eb"
-			name="NextButton"
+			name="SignInButton"
 			refimgid="34823b60-f68b-4e71-bdbf-1411ca5d76e2"
 			refpath="/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']"
 			searchtimeout="30000ms">
@@ -585,6 +585,16 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refpath="/dom[@domain='login.microsoftonline.com']//div[#'otherTileText']"
 			searchtimeout="30000ms">
 				/dom[@domain='login.microsoftonline.com']//div[#'otherTileText']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="49f1eca4-54b5-4345-8ae9-dc710971a842"
+			name="PasswordField"
+			refimgid="de831233-cec2-4f90-860d-89c3871c1fb6"
+			refpath="/dom[@domain='login.microsoftonline.com']//input[#'i0118']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'i0118']
 			</item>
 			<basepath>
 				/dom[@domain='login.microsoftonline.com']

@@ -3268,7 +3268,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3540,7 +3540,7 @@ rxversion="8.3">
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Regression">
+	default="TestRun">
 		<testconfiguration
 		name="EndToEnd">
 			<testcontainer
@@ -3630,9 +3630,6 @@ rxversion="8.3">
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="8910e582-179c-46b6-adfe-45a9f8257291">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
