@@ -23,28 +23,58 @@ using Ranorex.Core.Testing;
 namespace CSP
 {
     public partial class ClickExportFolder
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
-        private void Init()
+    { 
+      
+       //varibles section
+       string toDayDate;
+       string reportDate;
+        
+        
+             private void Init()
         {
-            // Your recording specific initialization code goes here.
+           
         }
 
         public void Get_value_OpenExportFolder(RepoItemInfo atagInfo)
         {
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'atagInfo' and assigning its value to variable 'date'.", atagInfo);
-            date = atagInfo.FindAdapter<ATag>().Element.GetAttributeValueText("InnerText");
+        	
+        	
             
-            
-             string toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
-             string reportDate = date.Substring(8, 8);
-             
-             Validate.AreEqual(toDayDate, reportDate);
-            
-        }
 
-    }
+        	do {
+        		
+        	Delay.Seconds(5);
+        	          
+        	         // Name sort-icon xpath
+                     WebElement xpath = "/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[2]//tag[@tagname='table-sort-icon']/span";
+                     xpath.Click();
+        	
+        	               // getting the current date
+        	               Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'atagInfo' and assigning its value to variable 'date'.", atagInfo);
+                            date = atagInfo.FindAdapter<ATag>().Element.GetAttributeValueText("InnerText");
+            
+             
+                                   //generating today date 
+                                   toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
+                                    //gettting th substring of the page date
+                                    reportDate = date.Substring(8, 8);
+                                     
+             
+         }                               while (toDayDate != reportDate);
+                                                 // validate if today date is = the the report date 
+        	                                     Validate.AreEqual(toDayDate, reportDate);
+        
+        }
+        
+        /*
+        public void Mouse_Click_ClickLastModifier(RepoItemInfo spantagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", spantagInfo);
+            spantagInfo.FindAdapter<SpanTag>().Click();
+        }
+        
+       */
+    
 }
+}
+

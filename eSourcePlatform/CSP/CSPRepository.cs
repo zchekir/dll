@@ -9099,6 +9099,7 @@ namespace CSP
             RepoItemInfo _openexportfolderInfo;
             RepoItemInfo _clickdownloadInfo;
             RepoItemInfo _clicklastmodifierInfo;
+            RepoItemInfo _closewasappInfo;
 
             /// <summary>
             /// Creates a new S3ManagementConsole  folder.
@@ -9110,6 +9111,7 @@ namespace CSP
                 _openexportfolderInfo = new RepoItemInfo(this, "OpenExportFolder", ".//a[@innertext~'^\\ export_']", 30000, null, "560d7791-d9fd-4504-b175-a660851c0926");
                 _clickdownloadInfo = new RepoItemInfo(this, "ClickDownload", ".//tag[#'download']/button", 30000, null, "70732b83-61d5-43e8-9ca8-8c665961916e");
                 _clicklastmodifierInfo = new RepoItemInfo(this, "ClickLastModifier", ".//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span", 30000, null, "491bff12-4b12-4a73-9ac8-cd2f508de522");
+                _closewasappInfo = new RepoItemInfo(this, "CloseWASAPP", ".//ul[#'nav-shortcutBar']", 30000, null, "d9a49db5-3d31-4461-8ef1-1e19746e184c");
             }
 
             /// <summary>
@@ -9229,6 +9231,30 @@ namespace CSP
                 get
                 {
                     return _clicklastmodifierInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CloseWASAPP item.
+            /// </summary>
+            [RepositoryItem("d9a49db5-3d31-4461-8ef1-1e19746e184c")]
+            public virtual Ranorex.UlTag CloseWASAPP
+            {
+                get
+                {
+                    return _closewasappInfo.CreateAdapter<Ranorex.UlTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CloseWASAPP item info.
+            /// </summary>
+            [RepositoryItemInfo("d9a49db5-3d31-4461-8ef1-1e19746e184c")]
+            public virtual RepoItemInfo CloseWASAPPInfo
+            {
+                get
+                {
+                    return _closewasappInfo;
                 }
             }
         }
