@@ -9,10 +9,14 @@
 
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Drawing;
 using System.Threading;
+using System.Timers;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
@@ -36,7 +40,10 @@ namespace CSP
         }
 
         public void Get_value_OpenExportFolder(RepoItemInfo atagInfo)
-        {
+        { 
+        	
+        	Stopwatch timer = new Stopwatch();
+			timer.Start();
         	
         	
             
@@ -55,10 +62,16 @@ namespace CSP
             
              
                                    //generating today date 
-                                    toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
+                                      toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
                                     //gettting th substring of the page date
                                     reportDate = date.Substring(8, 8);
                                      
+                                    if ( timer.Elapsed > TimeSpan.FromMinutes(3)){
+					
+						                     Report.Failure("The Report is NOT appearing as expetec " );
+						                     break;
+					                }
+				                    	
              
          }                               while (toDayDate != reportDate);
                                                  // validate if today date is = the the report date 

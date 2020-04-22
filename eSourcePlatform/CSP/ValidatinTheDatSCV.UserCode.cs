@@ -26,7 +26,7 @@ namespace CSP
 {
     public partial class ValidatinTheDatSCV
     {
-    	
+    	String protoCol="·AutomationStudy2";
         private void Init()
         {
             
@@ -48,7 +48,9 @@ namespace CSP
               {
                  Report.Info(""+dataRow["ProtocolID"].ToString());
                  Report.Info(""+dataRow["ScreeningID"].ToString());
-                 Report.Info(""+dataRow["SessionDate"].ToString());                
+                 Report.Info(""+dataRow["SessionDate"].ToString()); 
+
+                 Validate.AreEqual(protoCol, dataRow["ProtocolID"].ToString());
 			  }
             
         }

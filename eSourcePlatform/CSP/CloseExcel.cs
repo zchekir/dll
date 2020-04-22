@@ -86,8 +86,8 @@ namespace CSP
             Keyboard.Press("{ALT}{F}{X}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(2));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(2));
+            Delay.Duration(4000, false);
             
         }
 
