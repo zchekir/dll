@@ -55,7 +55,7 @@ namespace CSP
             
              
                                    //generating today date 
-                                   toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
+                                    toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
                                     //gettting th substring of the page date
                                     reportDate = date.Substring(8, 8);
                                      
