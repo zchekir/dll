@@ -20,13 +20,15 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 using System.Data;
-
+using System.IO;
 
 namespace CSP
 {
     public partial class ValidatinTheDatSCV
     {
-    	String protoCol="·AutomationStudy2";
+    	 
+    	    String fileName = "export_";
+   
         private void Init()
         {
             
@@ -34,29 +36,40 @@ namespace CSP
 
         public void csvDataValidation()
         {
+        
+    
+    	 
+    	
+        	string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+        	var listofFiles = Directory.GetFiles(path,fileName+"*"+".csv");
         	
+            Ranorex.Core.Data.CsvDataConnector csvConnector = new
+           	Ranorex.Core.Data.CsvDataConnector("myCSVConnector", listofFiles[0]  ,true);
+           
+           
         	
-        	
-             Ranorex.Core.Data.CsvDataConnector csvConnector = new
-             Ranorex.Core.Data.CsvDataConnector("myCSVConnector", "C:\\Users\\zchekir\\Downloads\\export_20200421060500.csv",true);
-             
+           
              Ranorex.Core.Data.ColumnCollection col;
              Ranorex.Core.Data.RowCollection row;
              csvConnector.LoadData(out col, out row);
              
              foreach(Ranorex.Core.Data.Row dataRow in row)
               {
-                 Report.Info(""+dataRow["ProtocolID"].ToString());
+                 
                  Report.Info(""+dataRow["ScreeningID"].ToString());
-                 Report.Info(""+dataRow["SessionDate"].ToString()); 
-
-                 Validate.AreEqual(protoCol, dataRow["ProtocolID"].ToString());
+                 Validate.AreEqual(dataRow["ScreeningID"].ToString(),TestIdentifier);
 			  }
+             
+     
+              
+        	
+      
+
             
-        }
         
           
             
         
+}
 }
 }

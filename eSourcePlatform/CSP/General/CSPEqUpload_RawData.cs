@@ -24,22 +24,22 @@ namespace CSP.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Upload_RawData recording.
+    ///The CSPEqUpload_RawData recording.
     /// </summary>
     [TestModule("366bcb1e-0676-491a-b683-f0b0918c5c82", ModuleType.Recording, 1)]
-    public partial class Upload_RawData : ITestModule
+    public partial class CSPEqUpload_RawData : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Upload_RawData instance = new Upload_RawData();
+        static CSPEqUpload_RawData instance = new CSPEqUpload_RawData();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Upload_RawData()
+        public CSPEqUpload_RawData()
         {
             Filename = "";
         }
@@ -47,7 +47,7 @@ namespace CSP.General
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Upload_RawData Instance
+        public static CSPEqUpload_RawData Instance
         {
             get { return instance; }
         }
@@ -102,8 +102,8 @@ namespace CSP.General
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            //Delay.Duration(60000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
+            Delay.Duration(60000, false);
             
             AddRawData(Filename);
             Delay.Milliseconds(0);
@@ -112,13 +112,16 @@ namespace CSP.General
             repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(3));
-            Delay.Duration(30000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(3));
+            //Delay.Duration(30000, false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo.WaitForExists(30000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            //repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo.WaitForExists(30000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
+            //Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(6));
+            Delay.Duration(60000, false);
             
         }
 

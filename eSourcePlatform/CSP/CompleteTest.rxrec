@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="fe5e7eea-cac2-48d8-a015-66c734eb7ce5"
+id="7affe19e-2de9-4eb3-ab8f-729e1fc09478"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ValidatinTheDatSCV
+		CompleteTest
 	</name>
 	<repeatcount>
 		1
@@ -23,33 +23,39 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ValidatinTheDatSCV"
+	classname="CompleteTest"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="4ce106f9-0bc5-4cdb-a260-6744372a260f"
-		name="TestIdentifier">
-			3e56ef3d-f702-41d7-b474-73d6524024e5
+		id="06a8ba53-724f-4dc7-8824-7b38e85df55a"
+		name="AssessmentURL">
 		</var>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ValidatinTheDatSCV"
+		<openwebsiterecorditem
+		args=""
+		browser="Chrome"
+		clearcache="False"
+		clearcookies="False"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="csvDataValidation"
-		namespace="CSP"
-		optional="False"
-		varname="">
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="Url"
+				variable="AssessmentURL">
+				</binding>
 			</bindings>
-			<arguments
-			id="69814b23-5268-43b0-a72f-ef3dabe59b84">
-			</arguments>
-		</userrecorditem>
+			<url>
+				http://www.ranorex.com
+			</url>
+		</openwebsiterecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
@@ -67,7 +73,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ValidatinTheDatSCV.UserCode.cs
+		CompleteTest.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

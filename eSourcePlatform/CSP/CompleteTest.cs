@@ -24,46 +24,46 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ValidatinTheDatSCV recording.
+    ///The CompleteTest recording.
     /// </summary>
-    [TestModule("fe5e7eea-cac2-48d8-a015-66c734eb7ce5", ModuleType.Recording, 1)]
-    public partial class ValidatinTheDatSCV : ITestModule
+    [TestModule("7affe19e-2de9-4eb3-ab8f-729e1fc09478", ModuleType.Recording, 1)]
+    public partial class CompleteTest : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static ValidatinTheDatSCV instance = new ValidatinTheDatSCV();
+        static CompleteTest instance = new CompleteTest();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ValidatinTheDatSCV()
+        public CompleteTest()
         {
-            TestIdentifier = "3e56ef3d-f702-41d7-b474-73d6524024e5";
+            AssessmentURL = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ValidatinTheDatSCV Instance
+        public static CompleteTest Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _TestIdentifier;
+        string _AssessmentURL;
 
         /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
+        /// Gets or sets the value of variable AssessmentURL.
         /// </summary>
-        [TestVariable("4ce106f9-0bc5-4cdb-a260-6744372a260f")]
-        public string TestIdentifier
+        [TestVariable("06a8ba53-724f-4dc7-8824-7b38e85df55a")]
+        public string AssessmentURL
         {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
+            get { return _AssessmentURL; }
+            set { _AssessmentURL = value; }
         }
 
 #endregion
@@ -92,7 +92,8 @@ namespace CSP
 
             Init();
 
-            csvDataValidation();
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $AssessmentURL with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(AssessmentURL, "Chrome", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
         }

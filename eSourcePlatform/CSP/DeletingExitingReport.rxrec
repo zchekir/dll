@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="fe5e7eea-cac2-48d8-a015-66c734eb7ce5"
+id="a51621aa-fba7-4b42-bd6f-28cd0a88364f"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ValidatinTheDatSCV
+		DeletingExitingReport
 	</name>
 	<repeatcount>
 		1
@@ -23,22 +23,17 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ValidatinTheDatSCV"
+	classname="DeletingExitingReport"
 	namespace="CSP">
 	</codegen>
 	<variables>
-		<var
-		id="4ce106f9-0bc5-4cdb-a260-6744372a260f"
-		name="TestIdentifier">
-			3e56ef3d-f702-41d7-b474-73d6524024e5
-		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="ValidatinTheDatSCV"
+		classname="DeletingExitingReport"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="csvDataValidation"
+		methodname="Deeting_ExitingReport"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -47,7 +42,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="69814b23-5268-43b0-a72f-ef3dabe59b84">
+			id="476ca284-8b5b-4057-b845-56b2f0187be2">
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -67,7 +62,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ValidatinTheDatSCV.UserCode.cs
+		DeletingExitingReport.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

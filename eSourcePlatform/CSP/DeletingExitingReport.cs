@@ -24,47 +24,34 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ValidatinTheDatSCV recording.
+    ///The DeletingExitingReport recording.
     /// </summary>
-    [TestModule("fe5e7eea-cac2-48d8-a015-66c734eb7ce5", ModuleType.Recording, 1)]
-    public partial class ValidatinTheDatSCV : ITestModule
+    [TestModule("a51621aa-fba7-4b42-bd6f-28cd0a88364f", ModuleType.Recording, 1)]
+    public partial class DeletingExitingReport : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static ValidatinTheDatSCV instance = new ValidatinTheDatSCV();
+        static DeletingExitingReport instance = new DeletingExitingReport();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ValidatinTheDatSCV()
+        public DeletingExitingReport()
         {
-            TestIdentifier = "3e56ef3d-f702-41d7-b474-73d6524024e5";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ValidatinTheDatSCV Instance
+        public static DeletingExitingReport Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _TestIdentifier;
-
-        /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
-        /// </summary>
-        [TestVariable("4ce106f9-0bc5-4cdb-a260-6744372a260f")]
-        public string TestIdentifier
-        {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
-        }
 
 #endregion
 
@@ -92,7 +79,7 @@ namespace CSP
 
             Init();
 
-            csvDataValidation();
+            Deeting_ExitingReport();
             Delay.Milliseconds(0);
             
         }

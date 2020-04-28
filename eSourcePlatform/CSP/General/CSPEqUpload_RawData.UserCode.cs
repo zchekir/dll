@@ -23,7 +23,7 @@ using Ranorex.Core.Testing;
 
 namespace CSP.General
 {
-    public partial class Upload_RawData
+    public partial class CSPEqUpload_RawData
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

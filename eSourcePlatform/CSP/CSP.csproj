@@ -142,12 +142,6 @@
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.WebRequest" />
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="System.ValueTuple, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
       <HintPath>..\packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -1777,6 +1771,18 @@
       <UserCode>true</UserCode>
       <id>6e818004-cd2b-4373-b4fe-dcc71b20b495</id>
     </Compile>
+    <Compile Include="CompleteTest.cs">
+      <BoundTo>7ed38155-3fae-4ae2-a3c6-22d1a954686d</BoundTo>
+      <DependentUpon>CompleteTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>83691ded-bf2e-4956-a79d-7cde5c33cff9</id>
+    </Compile>
+    <Compile Include="CompleteTest.UserCode.cs">
+      <BoundTo>7ed38155-3fae-4ae2-a3c6-22d1a954686d</BoundTo>
+      <DependentUpon>CompleteTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eb1c2687-2478-4ffd-919a-2cf7060c0d2d</id>
+    </Compile>
     <Compile Include="CSPRepository.cs">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <DependentUpon>CSPRepository.rxrep</DependentUpon>
@@ -1785,6 +1791,18 @@
     </Compile>
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
+    </Compile>
+    <Compile Include="DeletingExitingReport.cs">
+      <BoundTo>cdb898c3-5b82-4007-b01d-7847034bda54</BoundTo>
+      <DependentUpon>DeletingExitingReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>916cdda0-7e7d-4c4c-aa92-d9854ccfa467</id>
+    </Compile>
+    <Compile Include="DeletingExitingReport.UserCode.cs">
+      <BoundTo>cdb898c3-5b82-4007-b01d-7847034bda54</BoundTo>
+      <DependentUpon>DeletingExitingReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ac69df8-25cb-438d-a6a4-f88543ac83ea</id>
     </Compile>
     <Compile Include="dob.cs">
       <BoundTo>a0ab27f4-4259-49bf-8a1e-2b6dcf4db0dd</BoundTo>
@@ -2137,15 +2155,15 @@
       <DependentUpon>Reset_Password.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="General\Upload_RawData.cs">
+    <Compile Include="General\CSPEqUpload_RawData.cs">
       <id>08d92ef2-1c51-4a2f-8efc-507ba5ef4da8</id>
-      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
+      <DependentUpon>CSPEqUpload_RawData.rxrec</DependentUpon>
       <BoundTo>b1c33cfc-429c-4083-bba5-c2f48707ecd8</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="General\Upload_RawData.UserCode.cs">
+    <Compile Include="General\CSPEqUpload_RawData.UserCode.cs">
       <id>402558d5-6797-42f6-b21b-2a4c871944be</id>
-      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
+      <DependentUpon>CSPEqUpload_RawData.rxrec</DependentUpon>
       <BoundTo>b1c33cfc-429c-4083-bba5-c2f48707ecd8</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
@@ -4258,6 +4276,11 @@
       <id>323152ac-6db2-4221-9b95-81cb017cd285</id>
       <recordtableid>e071ec2d-9465-4ba8-9332-e3bc97529ad7</recordtableid>
     </None>
+    <None Include="CompleteTest.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>7ed38155-3fae-4ae2-a3c6-22d1a954686d</id>
+      <recordtableid>7affe19e-2de9-4eb3-ab8f-729e1fc09478</recordtableid>
+    </None>
     <None Include="CSPRepository.rximg">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <DependentUpon>CSPRepository.rxrep</DependentUpon>
@@ -4364,6 +4387,11 @@
     <None Include="csv\TwoBack.csv">
       <id>11c86286-d2df-4dfc-9b0d-86e9641b835a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DeletingExitingReport.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>cdb898c3-5b82-4007-b01d-7847034bda54</id>
+      <recordtableid>a51621aa-fba7-4b42-bd6f-28cd0a88364f</recordtableid>
     </None>
     <None Include="dob.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4510,7 +4538,7 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>b4b02ec4-a0ea-4ff3-9f62-4b93cd913772</recordtableid>
     </None>
-    <None Include="General\Upload_RawData.rxrec">
+    <None Include="General\CSPEqUpload_RawData.rxrec">
       <id>b1c33cfc-429c-4083-bba5-c2f48707ecd8</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>366bcb1e-0676-491a-b683-f0b0918c5c82</recordtableid>
