@@ -120,8 +120,8 @@ namespace CSP.General
             
             //Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(6));
-            Delay.Duration(60000, false);
+            DoDelay();
+            Delay.Milliseconds(0);
             
         }
 

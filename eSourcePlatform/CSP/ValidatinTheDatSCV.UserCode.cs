@@ -28,6 +28,10 @@ namespace CSP
     {
     	 
     	    String fileName = "export_";
+    	    String toDayDate;
+    	    String ProtocolID ="AutomationStudy2";
+
+
    
         private void Init()
         {
@@ -37,7 +41,9 @@ namespace CSP
         public void csvDataValidation()
         {
         
-    
+         toDayDate = System.DateTime.Now.ToString("MM/dd/yy");
+         
+
     	 
     	
         	string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
@@ -46,7 +52,7 @@ namespace CSP
             Ranorex.Core.Data.CsvDataConnector csvConnector = new
            	Ranorex.Core.Data.CsvDataConnector("myCSVConnector", listofFiles[0]  ,true);
            
-           
+          
         	
            
              Ranorex.Core.Data.ColumnCollection col;
@@ -56,8 +62,11 @@ namespace CSP
              foreach(Ranorex.Core.Data.Row dataRow in row)
               {
                  
-                 Report.Info(""+dataRow["ScreeningID"].ToString());
-                 Validate.AreEqual(dataRow["ScreeningID"].ToString(),TestIdentifier);
+                 Report.Info(""+dataRow["ProtocolID"].ToString());
+                 Validate.AreEqual(dataRow["ProtocolID"].ToString(),ProtocolID);
+                
+                 Report.Info(""+dataRow["SessionDate"].ToString());
+                 Validate.AreEqual(dataRow["SessionDate"].ToString(),toDayDate);
 			  }
              
      

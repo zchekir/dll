@@ -110,6 +110,8 @@ namespace CSP.APIV2Modules
 		/// </summary>
 		public string testIdentifier { get; set; }
 		
+		public string externalId { get; set; }
+		
 		public AssessmentAttemptJSONResponse()
 		{
 			
@@ -171,8 +173,12 @@ namespace CSP.APIV2Modules
 				AssessmentURL = responseObject.url;
 				TestIdentifier = responseObject.testIdentifier;
 				
+				
+				
+				
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
+				
 			}
 		}
 

@@ -45,6 +45,15 @@ namespace CSP.General
         	//Add raw data into the textbox on the battery runner page
         	Report.Log(ReportLevel.Info, "Searching for raw data text field");
         	repo.CogstateSolutionPlatform.WorkflowRunner.BatteryDataField.Element.SetAttributeValue("TagValue", data);
+        	Report.Log(ReportLevel.Info, "Waiting for 4m for WebJob to move the data to aws DB");
+        }
+
+        public void DoDelay()
+        {
+            Report.Log(ReportLevel.Info, "Waiting for 4m for WebJob to move the data to aws DB");
+            Delay.Duration(240000, false);
+            
+           
         }
 
     }

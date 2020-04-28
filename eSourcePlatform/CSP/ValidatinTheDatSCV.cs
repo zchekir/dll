@@ -42,6 +42,7 @@ namespace CSP
         public ValidatinTheDatSCV()
         {
             TestIdentifier = "3e56ef3d-f702-41d7-b474-73d6524024e5";
+            externalId = "";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace CSP
         {
             get { return _TestIdentifier; }
             set { _TestIdentifier = value; }
+        }
+
+        string _externalId;
+
+        /// <summary>
+        /// Gets or sets the value of variable externalId.
+        /// </summary>
+        [TestVariable("2bff3006-389b-41ff-88b8-0d3db379d471")]
+        public string externalId
+        {
+            get { return _externalId; }
+            set { _externalId = value; }
         }
 
 #endregion

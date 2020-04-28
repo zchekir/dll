@@ -63,6 +63,7 @@ namespace CSP
              
                                    //generating today date 
                                       toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
+                                      
                                     //gettting th substring of the page date
                                     reportDate = date.Substring(8, 8);
                                      
@@ -77,6 +78,12 @@ namespace CSP
                                                  // validate if today date is = the the report date 
         	                                     Validate.AreEqual(toDayDate, reportDate);
         
+        }
+
+        public void DoDelay()
+        {
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2m In order the Data to get to the report .");
+            Delay.Duration(120000, false);
         }
         
         /*
