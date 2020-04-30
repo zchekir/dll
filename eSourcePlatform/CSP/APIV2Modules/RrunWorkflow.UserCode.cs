@@ -37,7 +37,7 @@ namespace CSP.APIV2Modules
             // Your recording specific initialization code goes here.
         }
 
-        public void R_runworkflow(string AuthToken, string studyProtocolName, string DOM, string genderCode, string localityCode, string postError, string post, string visitSessionCode, string supervisorid, string TestIdentifier, string externalid, string mode)
+        public void R_runworkflow(string AuthToken, string studyProtocolName, string DOM, string genderCode, string localityCode, string redirectError, string redirect, string visitSessionCode, string supervisorid, string TestIdentifier, string externalid, string mode)
         {
             //variable
     	string url = "https://"+ DOM +"/api/external/V2/AutomationStudy/AssessmentAttempt";
@@ -51,7 +51,7 @@ namespace CSP.APIV2Modules
              string dob ="1978-01-01";   
         		
         	//Create JSON object containing demographics and study details
-        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalid, dob, genderCode, localityCode, postError, post, visitSessionCode, supervisorid,mode);
+        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalid, dob, genderCode, localityCode, redirectError, redirect, visitSessionCode, supervisorid,mode);
         
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
