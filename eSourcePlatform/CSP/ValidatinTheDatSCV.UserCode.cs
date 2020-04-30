@@ -29,7 +29,7 @@ namespace CSP
     	 
     	    String fileName = "export_";
     	    String toDayDate;
-    	    String ProtocolID ="AutomationStudy2";
+    	    String ProtocolID ="WAS";
 
 
    
