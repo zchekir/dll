@@ -5,7 +5,7 @@ id="366bcb1e-0676-491a-b683-f0b0918c5c82"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Upload_RawData
+		CSPEqUpload_RawData
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Upload_RawData"
+	classname="CSPEqUpload_RawData"
 	namespace="CSP.General">
 	</codegen>
 	<variables>
@@ -35,7 +35,7 @@ rxversion="8.3">
 	<recorditems>
 		<explicitdelayitem
 		duration="60000ms"
-		enabled="False"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
@@ -43,7 +43,7 @@ rxversion="8.3">
 			</bindings>
 		</explicitdelayitem>
 		<userrecorditem
-		classname="Upload_RawData"
+		classname="CSPEqUpload_RawData"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="AddRawData"
@@ -220,7 +220,7 @@ FFFFABRRRQAUUUUAf//Z
 		</mouseitem>
 		<explicitdelayitem
 		duration="30000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -228,7 +228,7 @@ FFFFABRRRQAUUUUAf//Z
 			</bindings>
 		</explicitdelayitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="958bacf9-0dcd-4197-b754-83a113d9c4d9"
 		waitaction="Exists"
@@ -248,7 +248,7 @@ FFFFABRRRQAUUUUAf//Z
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
-		enabled="True"
+		enabled="False"
 		message="Data Uploaded"
 		optional="False"
 		reportlevel="Info;20"
@@ -265,6 +265,22 @@ FFFFABRRRQAUUUUAf//Z
 				</path>
 			</info>
 		</loggingrecorditem>
+		<userrecorditem
+		classname="CSPEqUpload_RawData"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="DoDelay"
+		namespace="CSP.General"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7d0c35bd-a236-4fc4-ae4b-7dbb4d6cd0e9">
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
@@ -282,7 +298,7 @@ FFFFABRRRQAUUUUAf//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Upload_RawData.UserCode.cs
+		CSPEqUpload_RawData.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

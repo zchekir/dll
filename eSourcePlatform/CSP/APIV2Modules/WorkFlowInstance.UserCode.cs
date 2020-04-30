@@ -50,7 +50,7 @@ namespace CSP.APIV2Modules
 		/// <summary>
 		/// Message to post if an error occurs
 		/// </summary>
-		public string postError { get; set; }
+		public string redirectError { get; set; }
 		
 		/// <summary>
 		/// Code for the visit we want to run
@@ -60,7 +60,7 @@ namespace CSP.APIV2Modules
 		/// <summary>
 		/// Message to post upon completion
 		/// </summary>
-		public string post { get; set; }
+		public string redirect { get; set; }
 		
 		/// <summary>
 		/// The id of the supervisor condicting the test
@@ -70,14 +70,14 @@ namespace CSP.APIV2Modules
 		/// <summary>----------------------------------------------------------------------------
 		/// Object for creating a new workflow request
 		public AssessmentAttemptJSONRequest(string externalId, string dob, string genderCode, string localityCode,
-		                                    string postError, string post, string visitSessionCode, string supervisorId, string mode)
+		                                    string redirectError, string redirect, string visitSessionCode, string supervisorId, string mode)
 		{
 			this.externalId = externalId;
 			this.dob = dob;
 			this.genderCode = genderCode;
 			this.localityCode = localityCode;
-			this.postError = postError;
-			this.post = post;
+			this.redirectError = redirectError;
+			this.redirect = redirect;
 			this.visitSessionCode = visitSessionCode;
 			this.supervisorId = supervisorId;
 		}
@@ -110,6 +110,8 @@ namespace CSP.APIV2Modules
 		/// </summary>
 		public string testIdentifier { get; set; }
 		
+		public string externalId { get; set; }
+		
 		public AssessmentAttemptJSONResponse()
 		{
 			
@@ -125,11 +127,11 @@ namespace CSP.APIV2Modules
 		}
 		
 		//Generating workflowinstance ULR with using an existing study
-		public void Workflow(string AuthToken, string studyProtocolName, string DOM, string dob, string genderCode, string localityCode, string postError, string post, string mode)
+		public void Workflow(string AuthToken, string studyProtocolName, string DOM, string dob, string genderCode, string localityCode, string redirectError, string redirect, string mode)
 		{
 			
 			//variable
-			string url = "https://"+ DOM +"/api/external/V2/AutomationStudy/AssessmentAttempt";
+			string url = "https://"+ DOM +"/api/external/V2/"+studyProtocolName+"/AssessmentAttempt";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -143,7 +145,7 @@ namespace CSP.APIV2Modules
 			
 			
 			//Create JSON object containing demographics and study details
-			AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, postError, post, visitSessionCode, supervisorId,mode);
+			AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, dob, genderCode, localityCode, redirectError, redirect, visitSessionCode, supervisorId,mode);
 			
 			
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
@@ -171,8 +173,12 @@ namespace CSP.APIV2Modules
 				AssessmentURL = responseObject.url;
 				TestIdentifier = responseObject.testIdentifier;
 				
+				
+				
+				
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
+				
 			}
 		}
 

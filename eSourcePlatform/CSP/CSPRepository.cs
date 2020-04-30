@@ -39,6 +39,7 @@ namespace CSP
         CSPRepositoryFolders.AmazonWebServicesSignInAppFolder _amazonwebservicessignin;
         CSPRepositoryFolders.AWSManagementConsoleAppFolder _awsmanagementconsole;
         CSPRepositoryFolders.S3ManagementConsoleAppFolder _s3managementconsole;
+        CSPRepositoryFolders.WorkflowInstanceAppFolder _workflowinstance;
 
         /// <summary>
         /// Gets the singleton class instance representing the CSPRepository element repository.
@@ -67,6 +68,7 @@ namespace CSP
             _amazonwebservicessignin = new CSPRepositoryFolders.AmazonWebServicesSignInAppFolder(this);
             _awsmanagementconsole = new CSPRepositoryFolders.AWSManagementConsoleAppFolder(this);
             _s3managementconsole = new CSPRepositoryFolders.S3ManagementConsoleAppFolder(this);
+            _workflowinstance = new CSPRepositoryFolders.WorkflowInstanceAppFolder(this);
         }
 
 #region Variables
@@ -431,6 +433,15 @@ namespace CSP
         public virtual CSPRepositoryFolders.S3ManagementConsoleAppFolder S3ManagementConsole
         {
             get { return _s3managementconsole; }
+        }
+
+        /// <summary>
+        /// The WorkflowInstance folder.
+        /// </summary>
+        [RepositoryFolder("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
+        public virtual CSPRepositoryFolders.WorkflowInstanceAppFolder WorkflowInstance
+        {
+            get { return _workflowinstance; }
         }
     }
 
@@ -9099,6 +9110,7 @@ namespace CSP
             RepoItemInfo _openexportfolderInfo;
             RepoItemInfo _clickdownloadInfo;
             RepoItemInfo _clicklastmodifierInfo;
+            RepoItemInfo _closewasappInfo;
 
             /// <summary>
             /// Creates a new S3ManagementConsole  folder.
@@ -9110,6 +9122,7 @@ namespace CSP
                 _openexportfolderInfo = new RepoItemInfo(this, "OpenExportFolder", ".//a[@innertext~'^\\ export_']", 30000, null, "560d7791-d9fd-4504-b175-a660851c0926");
                 _clickdownloadInfo = new RepoItemInfo(this, "ClickDownload", ".//tag[#'download']/button", 30000, null, "70732b83-61d5-43e8-9ca8-8c665961916e");
                 _clicklastmodifierInfo = new RepoItemInfo(this, "ClickLastModifier", ".//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span", 30000, null, "491bff12-4b12-4a73-9ac8-cd2f508de522");
+                _closewasappInfo = new RepoItemInfo(this, "CloseWASAPP", ".//ul[#'nav-shortcutBar']", 30000, null, "d9a49db5-3d31-4461-8ef1-1e19746e184c");
             }
 
             /// <summary>
@@ -9229,6 +9242,70 @@ namespace CSP
                 get
                 {
                     return _clicklastmodifierInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CloseWASAPP item.
+            /// </summary>
+            [RepositoryItem("d9a49db5-3d31-4461-8ef1-1e19746e184c")]
+            public virtual Ranorex.UlTag CloseWASAPP
+            {
+                get
+                {
+                    return _closewasappInfo.CreateAdapter<Ranorex.UlTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CloseWASAPP item info.
+            /// </summary>
+            [RepositoryItemInfo("d9a49db5-3d31-4461-8ef1-1e19746e184c")]
+            public virtual RepoItemInfo CloseWASAPPInfo
+            {
+                get
+                {
+                    return _closewasappInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WorkflowInstanceAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
+        public partial class WorkflowInstanceAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new WorkflowInstance  folder.
+            /// </summary>
+            public WorkflowInstanceAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WorkflowInstance", "/dom[@domain='cgst-qc-bear.azurewebsites.net']", parentFolder, 30000, null, false, "7b2eba14-6cb9-499e-a633-c402e5ae04d9", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

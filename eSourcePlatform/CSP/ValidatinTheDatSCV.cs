@@ -20,60 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.General
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Upload_RawData recording.
+    ///The ValidatinTheDatSCV recording.
     /// </summary>
-    [TestModule("366bcb1e-0676-491a-b683-f0b0918c5c82", ModuleType.Recording, 1)]
-    public partial class Upload_RawData : ITestModule
+    [TestModule("fe5e7eea-cac2-48d8-a015-66c734eb7ce5", ModuleType.Recording, 1)]
+    public partial class ValidatinTheDatSCV : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static Upload_RawData instance = new Upload_RawData();
+        static ValidatinTheDatSCV instance = new ValidatinTheDatSCV();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Upload_RawData()
+        public ValidatinTheDatSCV()
         {
-            Filename = "";
+            TestIdentifier = "3e56ef3d-f702-41d7-b474-73d6524024e5";
+            externalId = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Upload_RawData Instance
+        public static ValidatinTheDatSCV Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Filename;
+        string _TestIdentifier;
 
         /// <summary>
-        /// Gets or sets the value of variable Filename.
+        /// Gets or sets the value of variable TestIdentifier.
         /// </summary>
-        [TestVariable("4b1cbab1-5c0f-4d05-9229-9a0d99841ed4")]
-        public string Filename
+        [TestVariable("4ce106f9-0bc5-4cdb-a260-6744372a260f")]
+        public string TestIdentifier
         {
-            get { return _Filename; }
-            set { _Filename = value; }
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
         }
 
+        string _externalId;
+
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable externalId.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
+        [TestVariable("2bff3006-389b-41ff-88b8-0d3db379d471")]
+        public string externalId
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
+            get { return _externalId; }
+            set { _externalId = value; }
         }
 
 #endregion
@@ -102,23 +105,8 @@ namespace CSP.General
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            //Delay.Duration(60000, false);
-            
-            AddRawData(Filename);
+            csvDataValidation();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(3));
-            Delay.Duration(30000, false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo.WaitForExists(30000);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
             
         }
 

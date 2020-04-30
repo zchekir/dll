@@ -47,8 +47,8 @@ namespace CSP.APIV2Modules
             dob = "2000-01-01";
             genderCode = "m";
             localityCode = "en_US";
-            postError = "WWW.GOOGLE.COM";
-            post = "www.facebook.com";
+            redirectError = "WWW.GOOGLE.COM";
+            redirect = "www.facebook.com";
             visitSessionCode = "visit1";
             supervisorId = "1";
             TestIdentifier = "";
@@ -139,28 +139,28 @@ namespace CSP.APIV2Modules
             set { _localityCode = value; }
         }
 
-        string _postError;
+        string _redirectError;
 
         /// <summary>
-        /// Gets or sets the value of variable postError.
+        /// Gets or sets the value of variable redirectError.
         /// </summary>
         [TestVariable("74e43bb7-921d-45b5-ba71-a320656a11fc")]
-        public string postError
+        public string redirectError
         {
-            get { return _postError; }
-            set { _postError = value; }
+            get { return _redirectError; }
+            set { _redirectError = value; }
         }
 
-        string _post;
+        string _redirect;
 
         /// <summary>
-        /// Gets or sets the value of variable post.
+        /// Gets or sets the value of variable redirect.
         /// </summary>
         [TestVariable("0844a293-2dc9-4219-9cb3-cafcd0f168bd")]
-        public string post
+        public string redirect
         {
-            get { return _post; }
-            set { _post = value; }
+            get { return _redirect; }
+            set { _redirect = value; }
         }
 
         string _visitSessionCode;
@@ -261,7 +261,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            Workflow(AuthToken, studyProtocolName, DOM, dob, genderCode, localityCode, postError, post, mode);
+            Workflow(AuthToken, studyProtocolName, DOM, dob, genderCode, localityCode, redirectError, redirect, mode);
             Delay.Milliseconds(0);
             
         }

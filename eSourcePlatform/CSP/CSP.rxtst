@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -10,8 +10,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="WASPW"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					dataname="WASpassword"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="ecf89b5f-9fc0-4a23-b7d0-37fa8ec495e2"
 					variablename="WASPassword1">
 					</var>
@@ -338,7 +338,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="0fc92b46-79ab-4c57-b253-1f0a53ab34aa"
-			name="Upload_RawData"
+			name="CSPEqUpload_RawData"
 			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
 			type="Recording">
 				<databinding>
@@ -752,8 +752,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="WASURL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					dataname="WASurl"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="4cc61eba-2f9f-4736-9b01-fafcbecdc33e"
 					variablename="was">
 					</var>
@@ -952,18 +952,6 @@ rxversion="8.3">
 					variablename="localityCode">
 					</var>
 					<var
-					dataname="postError"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="2caa9421-ab23-4818-8423-3cbe7e0cdaec"
-					variablename="postError">
-					</var>
-					<var
-					dataname="post"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="56c8de7e-77f4-42fc-9360-8fa384085e69"
-					variablename="post">
-					</var>
-					<var
 					dataname="visitSessionCode"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="2d370339-4d3b-49c4-b799-68a8103dd71e"
@@ -1087,18 +1075,6 @@ rxversion="8.3">
 					variablename="localityCode">
 					</var>
 					<var
-					dataname="postError"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="315c8e19-a0ba-4b1e-b9f2-166d2154e6bd"
-					variablename="postError">
-					</var>
-					<var
-					dataname="post"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="378906b9-8af9-424b-9851-4a9f61c50330"
-					variablename="post">
-					</var>
-					<var
 					dataname="visitSessionCode"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="1da2a0f1-bd25-4e24-ac8f-d1f27754c372"
@@ -1196,6 +1172,14 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="API_Authentication"
+			id="3cb85e7d-ee2d-4a46-a36d-85652d36f03d"
+			maxrange="0"
+			minrange="0"
+			name="GenerateWorkflow">
+			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -1282,8 +1266,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="eSourcePlatformAPI_RegressionTest">
 			</smartfoldernode>
 			<testmodule
@@ -1462,6 +1446,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4cdc86a1-3275-4818-aaf3-665bc9c99dcd"
+			name="DeletingExitingReport"
+			ref="a51621aa-fba7-4b42-bd6f-28cd0a88364f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4d9dad4d-7121-4103-8e94-204d724ffe5e"
 			name="Get_Secret"
 			ref="b5c1f78b-d628-4e9c-83b0-597bcacc9905"
@@ -1503,6 +1493,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="520ac760-a35a-4fc6-9843-432ad67a0c24"
+			name="CloseAWS_WebSite">
+			</testcase>
 			<testmodule
 			id="5283227a-0a62-47fc-ad9c-da9af53f661c"
 			name="Click_External_Resend_Invite"
@@ -2695,7 +2689,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="886b0890-a8ec-4be2-885d-a22cbf125a3e"
-			name="Upload_RawData"
+			name="CSPEqUpload_RawData"
 			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
 			type="Recording">
 				<databinding>
@@ -2869,10 +2863,21 @@ rxversion="8.3">
 			minrange="0"
 			name="CheckStudyDupplication_">
 			</testcase>
+			<testcase
+			datasource="RCCConnector"
+			id="94a90920-fc42-4618-be9b-d08b78ac8657"
+			name="CompletingTest">
+			</testcase>
 			<setup
 			id="950f4bab-12f7-4901-b39a-7c0c9a63fa39"
 			name="setup">
 			</setup>
+			<testmodule
+			id="958d7d50-b0eb-4d2f-b9b2-d3c1e61519e2"
+			name="CloseExcel"
+			ref="c6c15d16-e90c-4a1e-a97a-49645a04b59f"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="95a4dbbc-6ee0-4ec6-a176-6e90c4dfcd04"
 			name="Open_Browser"
@@ -3386,18 +3391,6 @@ rxversion="8.3">
 					variablename="localityCode">
 					</var>
 					<var
-					dataname="postError"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="9890c6b6-58d3-4e7b-9fcc-8b647e1af4b3"
-					variablename="postError">
-					</var>
-					<var
-					dataname="post"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="e71ec1da-f47d-4dfa-ab50-156efac5f95a"
-					variablename="post">
-					</var>
-					<var
 					dataname="visitSessionCode"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="968c3e2a-3c3b-44b5-a76d-c1cfab210776"
@@ -3481,7 +3474,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="b5b87416-6ba8-468c-9c45-74a22b3209d7"
-			name="Upload_RawData"
+			name="CSPEqUpload_RawData"
 			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
 			type="Recording">
 				<databinding>
@@ -3594,6 +3587,10 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_External_User">
 			</testcase>
+			<testcase
+			id="b7da2a83-ee5f-4213-8cba-9a385251c5ff"
+			name="ValidatingCSVFile">
+			</testcase>
 			<testmodule
 			id="b87fdf32-8ca7-410e-8865-3caa45557dda"
 			name="CheckRrunFlag"
@@ -3663,6 +3660,20 @@ rxversion="8.3">
 			id="baf76252-a794-4bae-b009-029b41fb4909"
 			name="Software_Version">
 			</testcase>
+			<testmodule
+			id="bb4864a3-28f1-40a1-b420-af326301f52a"
+			name="CompleteTest"
+			ref="7affe19e-2de9-4eb3-ab8f-729e1fc09478"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="06a8ba53-724f-4dc7-8824-7b38e85df55a"
+					variablename="AssessmentURL">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
 			name="CSPPlatform_API">
@@ -3671,6 +3682,14 @@ rxversion="8.3">
 			id="bcd9e6d9-1b54-4ac5-b190-604c7987aeea"
 			name="setup">
 			</setup>
+			<testcase
+			datarangeactive="True"
+			datasource="API_Authentication"
+			id="beb5dd77-b674-4865-ba3b-e0a869db1797"
+			maxrange="0"
+			minrange="0"
+			name="AuthenticateToServer">
+			</testcase>
 			<testmodule
 			id="bf5e99c7-bd34-4248-9e24-c06dfd68cc52"
 			name="Select_CogstateTest"
@@ -4045,18 +4064,6 @@ rxversion="8.3">
 					variablename="localityCode">
 					</var>
 					<var
-					dataname="postError"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="74e43bb7-921d-45b5-ba71-a320656a11fc"
-					variablename="postError">
-					</var>
-					<var
-					dataname="post"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="0844a293-2dc9-4219-9cb3-cafcd0f168bd"
-					variablename="post">
-					</var>
-					<var
 					dataname="visitSessionCode"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="5cf91dfd-49d7-4276-8188-104b3707a7e7"
@@ -4098,6 +4105,18 @@ rxversion="8.3">
 					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
 					variablename="mode">
 					</var>
+					<var
+					dataname="redirectError"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="74e43bb7-921d-45b5-ba71-a320656a11fc"
+					variablename="redirectError">
+					</var>
+					<var
+					dataname="redirect"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="0844a293-2dc9-4219-9cb3-cafcd0f168bd"
+					variablename="redirect">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -4107,8 +4126,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="WASusname"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					dataname="WASusername"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="c6ffc1b3-24fe-437c-864c-859924c381e3"
 					variablename="UserName">
 					</var>
@@ -4231,6 +4250,26 @@ rxversion="8.3">
 			id="e00c2baf-18fc-4db9-8f47-941279980274"
 			name="V1_ReferralStatus">
 			</testcase>
+			<testmodule
+			id="e0ed67b2-02e2-49c7-a465-4a85980e8ede"
+			name="CSPEqUpload_RawData"
+			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Datafile"
+					datasourceid="6a479f0c-ea7a-486c-927e-75d240801129"
+					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="e1255b3e-5f8c-43e6-bf81-7e7f652c9821"
 			name="Add_VisitSchedule"
@@ -4307,8 +4346,8 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="WASImPASWORD"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					dataname="WASimuser name"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="8038b9d3-d0f4-4d72-a383-2a99cacf8e7e"
 					variablename="Imusername">
 					</var>
@@ -4378,6 +4417,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="e96cb95d-a59c-4816-ab19-b6bd9f24f391"
+			name="setup">
+			</setup>
 			<testmodule
 			id="ea71cfa4-af56-4c2d-b0a3-01bef8dcfc97"
 			name="Connect_Internet"
@@ -4386,7 +4429,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="eb161724-ce99-4c21-8bcf-327610365d4c"
-			name="Upload_RawData"
+			name="CSPEqUpload_RawData"
 			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
 			type="Recording">
 				<databinding>
@@ -4405,6 +4448,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="eb4fe547-e87c-4914-ac24-3f4446d68623"
+			name="CloseWASWebSite"
+			ref="e071ec2d-9465-4ba8-9332-e3bc97529ad7"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="eb98a8bb-425e-4c06-99b7-9ded33bd704f"
 			name="Delete_New_Extract"
 			ref="5f5d863d-af96-49a4-9627-4bdcdd447401"
@@ -4414,6 +4463,48 @@ rxversion="8.3">
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8"
 			name="V2_Qualification_Status">
 			</testcase>
+			<teardown
+			id="ed6664b3-0aa9-49a3-90f2-aaf24ff2c1f1"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="ef0354f4-9a12-4dd5-96c4-c73ba60fe742"
+			name="External_Authenticate"
+			ref="12a04901-7274-43ed-b5af-fcce25c1eba3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="9aaefa3f-959c-43d5-b70b-4ab58b9160f0"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="key1"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="f186491e-a988-4bd5-8270-b971bccb2bd9"
+					variablename="key">
+					</var>
+					<var
+					dataname="Token"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="280f8c82-fde0-4bbf-8603-40d1ee3acfea"
+					variablename="secret">
+					</var>
+					<var
+					dataname="studyProtocolName"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e"
+					variablename="studyProtocolName">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a58c803b-45a0-422a-b242-a4569698b2a9"
+					variablename="AuthToken">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="ef8963fa-d0a7-4fc4-8110-a56ec9624bb4"
 			name="ClickExportFolder"
@@ -4433,6 +4524,98 @@ rxversion="8.3">
 			minrange="0"
 			name="Edit_Participant_Profile">
 			</testcase>
+			<testmodule
+			id="f22c15c5-c78f-4713-94c0-3f2abbd372c6"
+			name="WorkFlowInstance"
+			ref="9a2b9fff-5819-4334-8d9a-6b84b58d99f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="1d05b902-cc15-48e1-99d9-dfc534871d94"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="studyProtocolName"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="4b0a9c84-d41d-4d3c-b3c7-03dee9ee893c"
+					variablename="studyProtocolName">
+					</var>
+					<var
+					dataname="dob"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="baaaad91-5ccd-4dd6-9cbd-d4523f1da5cb"
+					variablename="dob">
+					</var>
+					<var
+					dataname="genderCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="2e1366ad-da48-4246-816e-fa44895ddd07"
+					variablename="genderCode">
+					</var>
+					<var
+					dataname="localityCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="8dd6b8c2-2a52-4502-8866-9304c3644c52"
+					variablename="localityCode">
+					</var>
+					<var
+					dataname="redirectError"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="74e43bb7-921d-45b5-ba71-a320656a11fc"
+					variablename="redirectError">
+					</var>
+					<var
+					dataname="redirect"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="0844a293-2dc9-4219-9cb3-cafcd0f168bd"
+					variablename="redirect">
+					</var>
+					<var
+					dataname="visitSessionCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="5cf91dfd-49d7-4276-8188-104b3707a7e7"
+					variablename="visitSessionCode">
+					</var>
+					<var
+					dataname="supervisorId"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="fd2e40a7-d9e4-422c-b1d3-6c9247b2458e"
+					variablename="supervisorId">
+					</var>
+					<var
+					dataname="mode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
+					variablename="mode">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="54bb55db-35b3-4db2-90ca-cb42cec494b3"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="0e972c7a-57eb-4293-a7cc-32e75ea62d02"
+					variablename="externalId">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="640023f9-9c6a-4a88-8722-9526acc509cc"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="72f9fd39-079c-4f76-a947-2a49e9350a9d"
+					variablename="AssessmentURL">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68"
 			name="Edit_Regression_Battery">
@@ -4499,9 +4682,33 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
+			datasource="TenantConnector"
 			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8"
+			maxrange="0"
+			minrange="0"
 			name="AWS_S3_DB_">
 			</smartfoldernode>
+			<testmodule
+			id="fa87b864-81f3-4615-b2a8-f2cf79825513"
+			name="ValidatinTheDatSCV"
+			ref="fe5e7eea-cac2-48d8-a015-66c734eb7ce5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="4ce106f9-0bc5-4cdb-a260-6744372a260f"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="2bff3006-389b-41ff-88b8-0d3db379d471"
+					variablename="externalId">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="fafaca2f-6276-4f71-a77a-9c6128b70d49"
 			name="Click_SpecDeviation_Button"
@@ -5026,7 +5233,7 @@ rxversion="8.3">
 								</testmodule>
 								<testmodule
 								id="0fc92b46-79ab-4c57-b253-1f0a53ab34aa"
-								name="Upload_RawData">
+								name="CSPEqUpload_RawData">
 								</testmodule>
 								<testmodule
 								id="7a960d3b-fab6-48f5-b6c2-59c6b248062b"
@@ -5286,7 +5493,7 @@ rxversion="8.3">
 								</testmodule>
 								<testmodule
 								id="b5b87416-6ba8-468c-9c45-74a22b3209d7"
-								name="Upload_RawData">
+								name="CSPEqUpload_RawData">
 								</testmodule>
 								<testmodule
 								id="1200ffa8-c24d-43e0-b3b1-1a0aa87bbf4b"
@@ -5354,7 +5561,7 @@ rxversion="8.3">
 								</testmodule>
 								<testmodule
 								id="eb161724-ce99-4c21-8bcf-327610365d4c"
-								name="Upload_RawData">
+								name="CSPEqUpload_RawData">
 								</testmodule>
 								<testmodule
 								id="368be19d-c16e-4dbc-8f09-0ab751c49feb"
@@ -5410,7 +5617,7 @@ rxversion="8.3">
 								</testmodule>
 								<testmodule
 								id="886b0890-a8ec-4be2-885d-a22cbf125a3e"
-								name="Upload_RawData">
+								name="CSPEqUpload_RawData">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -5674,6 +5881,42 @@ rxversion="8.3">
 					<smartfoldernode
 					id="f8fec26f-eacc-4158-bb66-e2973f44dcb8"
 					name="AWS_S3_DB_">
+						<setup
+						id="e96cb95d-a59c-4816-ab19-b6bd9f24f391"
+						name="setup">
+							<testmodule
+							id="4cdc86a1-3275-4818-aaf3-665bc9c99dcd"
+							name="DeletingExitingReport">
+							</testmodule>
+						</setup>
+						<testcase
+						id="beb5dd77-b674-4865-ba3b-e0a869db1797"
+						name="AuthenticateToServer">
+							<testmodule
+							id="ef0354f4-9a12-4dd5-96c4-c73ba60fe742"
+							name="External_Authenticate">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="3cb85e7d-ee2d-4a46-a36d-85652d36f03d"
+						name="GenerateWorkflow">
+							<testmodule
+							id="f22c15c5-c78f-4713-94c0-3f2abbd372c6"
+							name="WorkFlowInstance">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="94a90920-fc42-4618-be9b-d08b78ac8657"
+						name="CompletingTest">
+							<testmodule
+							id="bb4864a3-28f1-40a1-b420-af326301f52a"
+							name="CompleteTest">
+							</testmodule>
+							<testmodule
+							id="e0ed67b2-02e2-49c7-a465-4a85980e8ede"
+							name="CSPEqUpload_RawData">
+							</testmodule>
+						</testcase>
 						<testcase
 						id="297a9b13-970e-4958-b03a-c2e11d8c8b2b"
 						name="Navigate_AWSDB">
@@ -5722,6 +5965,30 @@ rxversion="8.3">
 							name="ClickExportFolder">
 							</testmodule>
 						</testcase>
+						<testcase
+						id="520ac760-a35a-4fc6-9843-432ad67a0c24"
+						name="CloseAWS_WebSite">
+							<testmodule
+							id="eb4fe547-e87c-4914-ac24-3f4446d68623"
+							name="CloseWASWebSite">
+							</testmodule>
+							<testmodule
+							id="958d7d50-b0eb-4d2f-b9b2-d3c1e61519e2"
+							name="CloseExcel">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="b7da2a83-ee5f-4213-8cba-9a385251c5ff"
+						name="ValidatingCSVFile">
+							<testmodule
+							id="fa87b864-81f3-4615-b2a8-f2cf79825513"
+							name="ValidatinTheDatSCV">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="ed6664b3-0aa9-49a3-90f2-aaf24ff2c1f1"
+						name="teardown">
+						</teardown>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -5731,7 +5998,7 @@ rxversion="8.3">
 		<DataSource
 		id="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="3"
 		name="API_Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5773,10 +6040,10 @@ rxversion="8.3">
 					localityCode
 				</column>
 				<column>
-					postError
+					redirectError
 				</column>
 				<column>
-					post
+					redirect
 				</column>
 				<column>
 					visitSessionCode
@@ -5924,6 +6191,63 @@ rxversion="8.3">
 			</maskedcolumns>
 			<file>
 				..\eSourcePlatform\CSPConnector.csv
+			</file>
+		</DataSource>
+		<DataSource
+		id="6a479f0c-ea7a-486c-927e-75d240801129"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="RCCConnector"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					StudyName
+				</column>
+				<column>
+					ExistingStudy
+				</column>
+				<column>
+					DatabaseOption
+				</column>
+				<column>
+					BriefTitle
+				</column>
+				<column>
+					BriefSummary
+				</column>
+				<column>
+					Sponsor
+				</column>
+				<column>
+					AdminRole
+				</column>
+				<column>
+					SiteInvestigator
+				</column>
+				<column>
+					SecondSubject
+				</column>
+				<column>
+					ExistingSubject
+				</column>
+				<column>
+					EventDefName
+				</column>
+				<column>
+					CSVConfig
+				</column>
+				<column>
+					CSVConfigExtra
+				</column>
+				<column>
+					Datafile
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				..\eSourcePlatform\RCCConnector.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -6436,10 +6760,7 @@ rxversion="8.3">
 			id="3ce71ac7-675a-4c22-b3c3-83e9f1e6a4d4">
 			</testcontainer>
 			<testcontainer
-			id="48b1148e-3ad5-47f7-bc8a-ccf5679419d7">
-			</testcontainer>
-			<testcontainer
-			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
+			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
@@ -6490,32 +6811,23 @@ rxversion="8.3">
 			id="ba7d02db-83df-4a58-a877-7079c0c072d1">
 			</testcontainer>
 			<testcontainer
-			id="baf76252-a794-4bae-b009-029b41fb4909">
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
 			</testcontainer>
 			<testcontainer
-			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
-			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
-			</testcontainer>
-			<testcontainer
-			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
-			</testcontainer>
-			<testcontainer
-			id="dd902b00-d8d8-4525-90ea-821d15c7d151">
-			</testcontainer>
-			<testcontainer
-			id="f1d52231-a1b8-4b5a-b0c9-c027d72dc2db">
-			</testcontainer>
-			<testcontainer
-			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
-			</testcontainer>
-			<testcontainer
-			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
+			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll
+		</reference>
+		<reference>
+			CsvHelper.dll
+		</reference>
 		<reference>
 			engine.dll
 		</reference>
