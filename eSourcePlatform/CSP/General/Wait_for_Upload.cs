@@ -24,57 +24,34 @@ namespace CSP.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CSPEqUpload_RawData recording.
+    ///The Wait_for_Upload recording.
     /// </summary>
-    [TestModule("366bcb1e-0676-491a-b683-f0b0918c5c82", ModuleType.Recording, 1)]
-    public partial class CSPEqUpload_RawData : ITestModule
+    [TestModule("bf59e35a-a08e-4fd5-9062-6f2393932fef", ModuleType.Recording, 1)]
+    public partial class Wait_for_Upload : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static CSPEqUpload_RawData instance = new CSPEqUpload_RawData();
+        static Wait_for_Upload instance = new Wait_for_Upload();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CSPEqUpload_RawData()
+        public Wait_for_Upload()
         {
-            Filename = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CSPEqUpload_RawData Instance
+        public static Wait_for_Upload Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Filename;
-
-        /// <summary>
-        /// Gets or sets the value of variable Filename.
-        /// </summary>
-        [TestVariable("4b1cbab1-5c0f-4d05-9229-9a0d99841ed4")]
-        public string Filename
-        {
-            get { return _Filename; }
-            set { _Filename = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
-        /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
-        {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
 
 #endregion
 
@@ -102,26 +79,10 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            Delay.Duration(60000, false);
+            Report.Log(ReportLevel.Info, "User", "Wait for Assessment to hit Amazon Bucket", new RecordItemIndex(0));
             
-            AddRawData(Filename);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
-            Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(3));
-            //Delay.Duration(30000, false);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            //repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo.WaitForExists(30000);
-            
-            //Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
-            
-            DoDelay();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4m.", new RecordItemIndex(1));
+            Delay.Duration(240000, false);
             
         }
 

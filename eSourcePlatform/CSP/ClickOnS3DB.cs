@@ -79,8 +79,8 @@ namespace CSP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
+            Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'AWSManagementConsole.ClickS3' at Center.", repo.AWSManagementConsole.ClickS3Info, new RecordItemIndex(1));
             repo.AWSManagementConsole.ClickS3.DoubleClick();

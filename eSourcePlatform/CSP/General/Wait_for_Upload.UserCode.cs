@@ -13,7 +13,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
-using System.IO;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
@@ -23,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace CSP.General
 {
-    public partial class CSPEqUpload_RawData
+    public partial class Wait_for_Upload
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,28 +31,6 @@ namespace CSP.General
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-        
-        public void AddRawData(string fileName)
-        {
-        	string data;
-        	using (StreamReader sr = File.OpenText(@".\rawData\" + fileName + ".txt"))
-			{
-        		data = sr.ReadToEnd();
-			}
-        	
-        	//Add raw data into the textbox on the battery runner page
-        	Report.Log(ReportLevel.Info, "Searching for raw data text field");
-        	repo.CogstateSolutionPlatform.WorkflowRunner.BatteryDataField.Element.SetAttributeValue("TagValue", data);
-        	Report.Log(ReportLevel.Info, "Waiting for 4m for WebJob to move the data to aws DB");
-        }
-
-        public void DoDelay()
-        {
-            Report.Log(ReportLevel.Info, "Waiting for 4m for WebJob to move the data to aws DB");
-            Delay.Duration(240000, false);
-            
-           
         }
 
     }

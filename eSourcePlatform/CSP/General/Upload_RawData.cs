@@ -20,47 +20,60 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.AddSubjectPage
+namespace CSP.General
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_SaveAndEnter_Data recording.
+    ///The Upload_RawData recording.
     /// </summary>
-    [TestModule("a92cc279-94e1-4aaa-877b-436b68d9c101", ModuleType.Recording, 1)]
-    public partial class Click_SaveAndEnter_Data : ITestModule
+    [TestModule("366bcb1e-0676-491a-b683-f0b0918c5c82", ModuleType.Recording, 1)]
+    public partial class Upload_RawData : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
-        public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
+        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Click_SaveAndEnter_Data instance = new Click_SaveAndEnter_Data();
+        static Upload_RawData instance = new Upload_RawData();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_SaveAndEnter_Data()
+        public Upload_RawData()
         {
+            Filename = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_SaveAndEnter_Data Instance
+        public static Upload_RawData Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _Filename;
+
         /// <summary>
-        /// Gets or sets the value of variable RCCDOM.
+        /// Gets or sets the value of variable Filename.
         /// </summary>
-        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string RCCDOM
+        [TestVariable("4b1cbab1-5c0f-4d05-9229-9a0d99841ed4")]
+        public string Filename
         {
-            get { return repo.RCCDOM; }
-            set { repo.RCCDOM = value; }
+            get { return _Filename; }
+            set { _Filename = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion
@@ -89,15 +102,20 @@ namespace RedCapCloud.AddSubjectPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SaveAndEnterDataButton' at Center.", repo.REDCapCloud.SubjectsPage.SaveAndEnterDataButtonInfo, new RecordItemIndex(1));
-            repo.REDCapCloud.SubjectsPage.SaveAndEnterDataButton.Click();
-            Delay.Milliseconds(200);
+            AddRawData(Filename);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
+            Delay.Duration(10000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));
             
         }
 

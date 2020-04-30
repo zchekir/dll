@@ -2155,15 +2155,15 @@
       <DependentUpon>Reset_Password.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
-    <Compile Include="General\CSPEqUpload_RawData.cs">
+    <Compile Include="General\Upload_RawData.cs">
       <id>08d92ef2-1c51-4a2f-8efc-507ba5ef4da8</id>
-      <DependentUpon>CSPEqUpload_RawData.rxrec</DependentUpon>
+      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
       <BoundTo>b1c33cfc-429c-4083-bba5-c2f48707ecd8</BoundTo>
       <RecorderCode>true</RecorderCode>
     </Compile>
-    <Compile Include="General\CSPEqUpload_RawData.UserCode.cs">
+    <Compile Include="General\Upload_RawData.UserCode.cs">
       <id>402558d5-6797-42f6-b21b-2a4c871944be</id>
-      <DependentUpon>CSPEqUpload_RawData.rxrec</DependentUpon>
+      <DependentUpon>Upload_RawData.rxrec</DependentUpon>
       <BoundTo>b1c33cfc-429c-4083-bba5-c2f48707ecd8</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
@@ -2226,6 +2226,18 @@
       <BoundTo>19edc20e-5832-4454-a1b4-82cdc3cbceca</BoundTo>
       <DependentUpon>Verify_Version_Deployed.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="General\Wait_for_Upload.cs">
+      <BoundTo>d43ea957-6236-4523-90ed-778d28473f22</BoundTo>
+      <DependentUpon>Wait_for_Upload.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11a0bb8a-b177-419c-b110-8420b3476b07</id>
+    </Compile>
+    <Compile Include="General\Wait_for_Upload.UserCode.cs">
+      <BoundTo>d43ea957-6236-4523-90ed-778d28473f22</BoundTo>
+      <DependentUpon>Wait_for_Upload.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7ae702b2-d4bc-4aae-b785-2af11272bace</id>
     </Compile>
     <Compile Include="GetAssessmentAttemptOutcomes.cs">
       <BoundTo>946e90e3-3692-43f2-b12d-5aa24e3bf6a8</BoundTo>
@@ -4538,7 +4550,7 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>b4b02ec4-a0ea-4ff3-9f62-4b93cd913772</recordtableid>
     </None>
-    <None Include="General\CSPEqUpload_RawData.rxrec">
+    <None Include="General\Upload_RawData.rxrec">
       <id>b1c33cfc-429c-4083-bba5-c2f48707ecd8</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>366bcb1e-0676-491a-b683-f0b0918c5c82</recordtableid>
@@ -4567,6 +4579,11 @@
       <id>19edc20e-5832-4454-a1b4-82cdc3cbceca</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>c718511d-4281-405c-9160-251f311d2703</recordtableid>
+    </None>
+    <None Include="General\Wait_for_Upload.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>d43ea957-6236-4523-90ed-778d28473f22</id>
+      <recordtableid>bf59e35a-a08e-4fd5-9062-6f2393932fef</recordtableid>
     </None>
     <None Include="GetAssessmentAttemptOutcomes.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>

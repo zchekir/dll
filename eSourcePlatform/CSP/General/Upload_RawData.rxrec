@@ -5,7 +5,7 @@ id="366bcb1e-0676-491a-b683-f0b0918c5c82"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CSPEqUpload_RawData
+		Upload_RawData
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CSPEqUpload_RawData"
+	classname="Upload_RawData"
 	namespace="CSP.General">
 	</codegen>
 	<variables>
@@ -33,17 +33,26 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="60000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="958bacf9-0dcd-4197-b754-83a113d9c4d9"
+		waitaction="Exists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="89fb4724-2717-48d3-a1a7-e5da52b35873"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/?/?//div[@class='spinner']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<userrecorditem
-		classname="CSPEqUpload_RawData"
+		classname="Upload_RawData"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="AddRawData"
@@ -219,36 +228,18 @@ FFFFABRRRQAUUUUAf//Z
 			</helperscreenshot>
 		</mouseitem>
 		<explicitdelayitem
-		duration="30000ms"
-		enabled="False"
+		duration="10000ms"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<WaitForRecordItem
-		enabled="False"
-		optional="False"
-		searchpropertyid="958bacf9-0dcd-4197-b754-83a113d9c4d9"
-		waitaction="Exists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="89fb4724-2717-48d3-a1a7-e5da52b35873"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']/?/?//div[@class='spinner']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
-		enabled="False"
+		enabled="True"
 		message="Data Uploaded"
 		optional="False"
 		reportlevel="Info;20"
@@ -265,22 +256,6 @@ FFFFABRRRQAUUUUAf//Z
 				</path>
 			</info>
 		</loggingrecorditem>
-		<userrecorditem
-		classname="CSPEqUpload_RawData"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="DoDelay"
-		namespace="CSP.General"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="7d0c35bd-a236-4fc4-ae4b-7dbb4d6cd0e9">
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
@@ -298,7 +273,7 @@ FFFFABRRRQAUUUUAf//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CSPEqUpload_RawData.UserCode.cs
+		Upload_RawData.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
