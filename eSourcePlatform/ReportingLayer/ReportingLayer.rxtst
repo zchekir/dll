@@ -5073,6 +5073,98 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
+						id="457cc817-ed5a-4572-b28a-d54487f3855f"
+						name="Validate_ExcludeAssessment_Flag">
+							<testcase
+							id="f083c6ec-0fd3-4c23-a7c5-11a99e4b3d0c"
+							name="Invalidate_Assessment">
+								<setup
+								id="bd964d41-3c9f-44a6-a825-6f6652451934"
+								name="setup">
+									<testmodule
+									id="a3f3035e-cc4e-4b3a-97cd-bc1528da6299"
+									name="Open_DCT_URL">
+									</testmodule>
+									<modulegroup
+									id="f7758e13-cd5d-40b3-86eb-55a485bbf9b0"
+									name="Login">
+									</modulegroup>
+								</setup>
+								<testmodule
+								id="c8eb96fb-4cef-47b0-8e0c-b4c7d1fd90a6"
+								name="Search_TestIdentifier">
+								</testmodule>
+								<testmodule
+								id="b2bc67c4-7806-409f-a9a3-ec05db443d6e"
+								name="Click_FindButton">
+								</testmodule>
+								<testmodule
+								id="b438e0f1-d1f8-44b5-8865-a3f12dc1d286"
+								name="Click_ResultButton">
+								</testmodule>
+								<testmodule
+								id="f7233aa3-8c0a-4a51-a84f-40167b84d9e7"
+								name="Click_Invalidate">
+								</testmodule>
+								<testmodule
+								id="f0dec6ad-3de4-4a59-bc37-2b782c7816d4"
+								name="Click_Confirm">
+								</testmodule>
+								<testmodule
+								id="3e6faa1c-bf1d-475d-9f10-ca9b1c2d5cb0"
+								name="Validate_ExcludeAssessment_Flag">
+								</testmodule>
+								<testmodule
+								id="7e021562-cf58-49b4-93c8-35d34a6d6e21"
+								name="Search_TestIdentifier">
+								</testmodule>
+								<testmodule
+								id="5de13596-6546-4efa-ad32-998f51152205"
+								name="Click_FindButton">
+								</testmodule>
+								<testmodule
+								id="59abce82-5c06-4baf-ae96-cfc934982b1e"
+								name="Click_ResultButton">
+								</testmodule>
+								<testmodule
+								id="c13d199d-78a9-4926-bcb4-e7a78e700705"
+								name="Click_RestoreButton">
+								</testmodule>
+								<testmodule
+								id="c7c0cc7a-6e6c-431b-ac46-bb0fcd3e4bab"
+								name="Click_Confirm">
+								</testmodule>
+								<testmodule
+								id="69352d28-eeac-40cf-87b3-cd4a4a4a8ac4"
+								name="Validate_RestoreAssessment_Flag">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="ea56bafb-27cb-4f60-86c7-66a866686722"
+						name="Validate_MakePrimary_Flag">
+							<testcase
+							id="16497588-c5a2-4ae8-9607-36b6dd5cd974"
+							name="Complete_API_Assessment">
+								<testmodule
+								id="9a842b2b-d481-4576-adcf-2e8748f0b733"
+								name="APIV2_Authenticate">
+								</testmodule>
+								<testmodule
+								id="aabfcb1e-0829-4976-9880-04e601567c1e"
+								name="WorkFlowInstance">
+								</testmodule>
+								<testmodule
+								id="c273f918-e2be-4b67-b769-15a3939c38d2"
+								name="Open_Browser">
+								</testmodule>
+								<testmodule
+								id="8ba227eb-a587-4689-90d9-db4d06c98945"
+								name="Upload_RawData">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
 						id="332de1b2-3b9e-42bc-b514-b8303a2909fd"
 						name="Multiple_Studies_Same_Site&amp;Subject">
 							<setup
@@ -5243,98 +5335,6 @@ rxversion="8.3">
 								name="Close_Browser">
 								</testmodule>
 							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="457cc817-ed5a-4572-b28a-d54487f3855f"
-						name="Validate_ExcludeAssessment_Flag">
-							<testcase
-							id="f083c6ec-0fd3-4c23-a7c5-11a99e4b3d0c"
-							name="Invalidate_Assessment">
-								<setup
-								id="bd964d41-3c9f-44a6-a825-6f6652451934"
-								name="setup">
-									<testmodule
-									id="a3f3035e-cc4e-4b3a-97cd-bc1528da6299"
-									name="Open_DCT_URL">
-									</testmodule>
-									<modulegroup
-									id="f7758e13-cd5d-40b3-86eb-55a485bbf9b0"
-									name="Login">
-									</modulegroup>
-								</setup>
-								<testmodule
-								id="c8eb96fb-4cef-47b0-8e0c-b4c7d1fd90a6"
-								name="Search_TestIdentifier">
-								</testmodule>
-								<testmodule
-								id="b2bc67c4-7806-409f-a9a3-ec05db443d6e"
-								name="Click_FindButton">
-								</testmodule>
-								<testmodule
-								id="b438e0f1-d1f8-44b5-8865-a3f12dc1d286"
-								name="Click_ResultButton">
-								</testmodule>
-								<testmodule
-								id="f7233aa3-8c0a-4a51-a84f-40167b84d9e7"
-								name="Click_Invalidate">
-								</testmodule>
-								<testmodule
-								id="f0dec6ad-3de4-4a59-bc37-2b782c7816d4"
-								name="Click_Confirm">
-								</testmodule>
-								<testmodule
-								id="3e6faa1c-bf1d-475d-9f10-ca9b1c2d5cb0"
-								name="Validate_ExcludeAssessment_Flag">
-								</testmodule>
-								<testmodule
-								id="7e021562-cf58-49b4-93c8-35d34a6d6e21"
-								name="Search_TestIdentifier">
-								</testmodule>
-								<testmodule
-								id="5de13596-6546-4efa-ad32-998f51152205"
-								name="Click_FindButton">
-								</testmodule>
-								<testmodule
-								id="59abce82-5c06-4baf-ae96-cfc934982b1e"
-								name="Click_ResultButton">
-								</testmodule>
-								<testmodule
-								id="c13d199d-78a9-4926-bcb4-e7a78e700705"
-								name="Click_RestoreButton">
-								</testmodule>
-								<testmodule
-								id="c7c0cc7a-6e6c-431b-ac46-bb0fcd3e4bab"
-								name="Click_Confirm">
-								</testmodule>
-								<testmodule
-								id="69352d28-eeac-40cf-87b3-cd4a4a4a8ac4"
-								name="Validate_RestoreAssessment_Flag">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="ea56bafb-27cb-4f60-86c7-66a866686722"
-						name="Validate_MakePrimary_Flag">
-							<testcase
-							id="16497588-c5a2-4ae8-9607-36b6dd5cd974"
-							name="Complete_API_Assessment">
-								<testmodule
-								id="9a842b2b-d481-4576-adcf-2e8748f0b733"
-								name="APIV2_Authenticate">
-								</testmodule>
-								<testmodule
-								id="aabfcb1e-0829-4976-9880-04e601567c1e"
-								name="WorkFlowInstance">
-								</testmodule>
-								<testmodule
-								id="c273f918-e2be-4b67-b769-15a3939c38d2"
-								name="Open_Browser">
-								</testmodule>
-								<testmodule
-								id="8ba227eb-a587-4689-90d9-db4d06c98945"
-								name="Upload_RawData">
-								</testmodule>
-							</testcase>
 						</smartfoldernode>
 						<teardown
 						id="a9f8adfa-1a91-497e-af0f-93bf0278760f"
@@ -5603,6 +5603,18 @@ rxversion="8.3">
 				</column>
 				<column>
 					Authentication
+				</column>
+				<column>
+					WASurl
+				</column>
+				<column>
+					WASusername
+				</column>
+				<column>
+					WASimuser name
+				</column>
+				<column>
+					WASpassword
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
