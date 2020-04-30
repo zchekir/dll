@@ -1172,14 +1172,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			datarangeactive="True"
-			datasource="API_Authentication"
-			id="3cb85e7d-ee2d-4a46-a36d-85652d36f03d"
-			maxrange="0"
-			minrange="0"
-			name="GenerateWorkflow">
-			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -2659,6 +2651,14 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="API_Authentication"
+			id="85989da3-ed34-4122-a9c9-92f2a80b27d1"
+			maxrange="0"
+			minrange="0"
+			name="Workflowinstance_">
+			</testcase>
 			<testmodule
 			id="87ead3cd-b03c-45fd-b38e-fc5f0f1cbc24"
 			name="Validate_CBB_Version"
@@ -4631,98 +4631,6 @@ rxversion="8.3">
 			minrange="0"
 			name="Edit_Participant_Profile">
 			</testcase>
-			<testmodule
-			id="f22c15c5-c78f-4713-94c0-3f2abbd372c6"
-			name="WorkFlowInstance"
-			ref="9a2b9fff-5819-4334-8d9a-6b84b58d99f8"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="1d05b902-cc15-48e1-99d9-dfc534871d94"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="studyProtocolName"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="4b0a9c84-d41d-4d3c-b3c7-03dee9ee893c"
-					variablename="studyProtocolName">
-					</var>
-					<var
-					dataname="dob"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="baaaad91-5ccd-4dd6-9cbd-d4523f1da5cb"
-					variablename="dob">
-					</var>
-					<var
-					dataname="genderCode"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="2e1366ad-da48-4246-816e-fa44895ddd07"
-					variablename="genderCode">
-					</var>
-					<var
-					dataname="localityCode"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="8dd6b8c2-2a52-4502-8866-9304c3644c52"
-					variablename="localityCode">
-					</var>
-					<var
-					dataname="redirectError"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="74e43bb7-921d-45b5-ba71-a320656a11fc"
-					variablename="redirectError">
-					</var>
-					<var
-					dataname="redirect"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="0844a293-2dc9-4219-9cb3-cafcd0f168bd"
-					variablename="redirect">
-					</var>
-					<var
-					dataname="visitSessionCode"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="5cf91dfd-49d7-4276-8188-104b3707a7e7"
-					variablename="visitSessionCode">
-					</var>
-					<var
-					dataname="supervisorId"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="fd2e40a7-d9e4-422c-b1d3-6c9247b2458e"
-					variablename="supervisorId">
-					</var>
-					<var
-					dataname="mode"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
-					variablename="mode">
-					</var>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="54bb55db-35b3-4db2-90ca-cb42cec494b3"
-					variablename="TestIdentifier">
-					</var>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="0e972c7a-57eb-4293-a7cc-32e75ea62d02"
-					variablename="externalId">
-					</var>
-					<var
-					dataname="AuthToken"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="640023f9-9c6a-4a88-8722-9526acc509cc"
-					variablename="AuthToken">
-					</var>
-					<var
-					dataname="AssessmentURL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="72f9fd39-079c-4f76-a947-2a49e9350a9d"
-					variablename="AssessmentURL">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68"
 			name="Edit_Regression_Battery">
@@ -4789,6 +4697,98 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f7c8e3d8-7899-4095-af8e-92d1207ba36b"
+			name="S3WorkFlow"
+			ref="905f74ae-8e48-4eb5-877d-78231d4eb473"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="40353c7d-ac31-4cee-af78-a966f72d1c73"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="S3studyProtocolName"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="e380e8ca-b696-4acb-b05d-ae29d35045d9"
+					variablename="studyProtocolName">
+					</var>
+					<var
+					dataname="dob"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="2014aaa3-d5ca-4c6a-a508-b19e9c08ed38"
+					variablename="dob">
+					</var>
+					<var
+					dataname="genderCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="0d080b8c-e98c-4347-9679-76db4a2a81d1"
+					variablename="genderCode">
+					</var>
+					<var
+					dataname="localityCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="37f149fb-6f81-4493-9749-7e13d8b5c33b"
+					variablename="localityCode">
+					</var>
+					<var
+					dataname="redirectError"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="9a947344-3a37-4c89-9e60-da448fabab8f"
+					variablename="redirectError">
+					</var>
+					<var
+					dataname="redirect"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="30f37748-e987-43b8-861d-9d4df2f5455e"
+					variablename="redirect">
+					</var>
+					<var
+					dataname="visitSessionCode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="9309939c-db47-423b-bbdd-d7fb84361d3a"
+					variablename="visitSessionCode">
+					</var>
+					<var
+					dataname="supervisorId"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="45ecc239-8ba6-4ceb-8d91-2a71ac6ab937"
+					variablename="supervisorId">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="37e291cb-355e-4582-909a-9dde892ff08d"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="c9f808a3-6e8a-4420-abfc-bf605bd6f28a"
+					variablename="externalId">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="08c0fb6e-58a5-47ed-adeb-457de1f0ae40"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d24a23f2-af13-4830-83f1-63d953518a04"
+					variablename="AssessmentURL">
+					</var>
+					<var
+					dataname="mode"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="3e9fbba9-def8-4e70-8ad5-ebbf204e5b18"
+					variablename="mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -6013,11 +6013,11 @@ rxversion="8.3">
 							</testmodule>
 						</testcase>
 						<testcase
-						id="3cb85e7d-ee2d-4a46-a36d-85652d36f03d"
-						name="GenerateWorkflow">
+						id="85989da3-ed34-4122-a9c9-92f2a80b27d1"
+						name="Workflowinstance_">
 							<testmodule
-							id="f22c15c5-c78f-4713-94c0-3f2abbd372c6"
-							name="WorkFlowInstance">
+							id="f7c8e3d8-7899-4095-af8e-92d1207ba36b"
+							name="S3WorkFlow">
 							</testmodule>
 						</testcase>
 						<testcase
@@ -6194,6 +6194,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					InvalidSecret
+				</column>
+				<column>
+					S3studyProtocolName
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -6862,22 +6865,16 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="45077930-4bd9-4874-ad6a-91b58033c26a">
-			</testcontainer>
-			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			id="85989da3-ed34-4122-a9c9-92f2a80b27d1">
 			</testcontainer>
 			<testcontainer
-			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
+			id="beb5dd77-b674-4865-ba3b-e0a869db1797">
 			</testcontainer>
 			<testcontainer
-			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
+			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
@@ -6886,7 +6883,7 @@ rxversion="8.3">
 			C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll
 		</reference>
 		<reference>
-			CsvHelper, Version=7.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823
+			CsvHelper.dll
 		</reference>
 		<reference>
 			engine.dll

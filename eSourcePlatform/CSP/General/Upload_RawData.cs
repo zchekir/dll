@@ -108,14 +108,17 @@ namespace CSP.General
             AddRawData(Filename);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(4));
             Delay.Duration(10000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(4));
+            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
             
         }
 
