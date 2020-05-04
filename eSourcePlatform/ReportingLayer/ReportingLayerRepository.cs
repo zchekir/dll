@@ -424,10 +424,10 @@ namespace ReportingLayer
             public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
                     base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
             {
-                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[1]", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
-                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[2]", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
+                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-128']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
+                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-132']", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
                 _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
-                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]//tag[9]//select", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
+                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-9']", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
                 _expandInfo = new RepoItemInfo(this, "Expand", "div[2]//tag[9]//button[@title='Expand']", 30000, null, "9635faeb-ac8a-43f5-a295-6831032d50d4");
             }
 
@@ -459,11 +459,11 @@ namespace ReportingLayer
             /// The IsInThisDropdown item.
             /// </summary>
             [RepositoryItem("773854ca-7a32-4c97-93e9-0aae1cf4c64c")]
-            public virtual Ranorex.SelectTag IsInThisDropdown
+            public virtual Ranorex.WebElement IsInThisDropdown
             {
                 get
                 {
-                    return _isinthisdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                    return _isinthisdropdownInfo.CreateAdapter<Ranorex.WebElement>(true);
                 }
             }
 
@@ -483,11 +483,11 @@ namespace ReportingLayer
             /// The DayDropdown item.
             /// </summary>
             [RepositoryItem("4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b")]
-            public virtual Ranorex.SelectTag DayDropdown
+            public virtual Ranorex.WebElement DayDropdown
             {
                 get
                 {
-                    return _daydropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                    return _daydropdownInfo.CreateAdapter<Ranorex.WebElement>(true);
                 }
             }
 
@@ -531,11 +531,11 @@ namespace ReportingLayer
             /// The FilterTypeDropdown item.
             /// </summary>
             [RepositoryItem("db43cf6c-681a-40a7-a643-376f7e2b8282")]
-            public virtual Ranorex.SelectTag FilterTypeDropdown
+            public virtual Ranorex.WebElement FilterTypeDropdown
             {
                 get
                 {
-                    return _filtertypedropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                    return _filtertypedropdownInfo.CreateAdapter<Ranorex.WebElement>(true);
                 }
             }
 

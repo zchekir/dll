@@ -104,21 +104,21 @@ rxversion="8.3">
 			usecache="False">
 				<item
 				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
+				capname="webelement"
 				id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
 				name="IsInThisDropdown"
 				refimgid="6402487c-dbc6-466f-8fad-2ee46b18902f"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//tag[9]//form[@name='$ctrl.filterForm']/div/select[1]
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-128']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
+				capname="webelement"
 				id="4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b"
 				name="DayDropdown"
 				refimgid="4d46f1aa-3f9f-44a0-88fe-c3fa3fad8bb4"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//tag[9]//form[@name='$ctrl.filterForm']/div/select[2]
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-132']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -131,12 +131,12 @@ rxversion="8.3">
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
+				capname="webelement"
 				id="db43cf6c-681a-40a7-a643-376f7e2b8282"
 				name="FilterTypeDropdown"
 				refimgid="bbda9ddf-cf12-490f-b68b-4172bd4e2b86"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//select
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-9']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"

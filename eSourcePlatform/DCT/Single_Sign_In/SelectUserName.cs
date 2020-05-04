@@ -114,6 +114,9 @@ namespace DCT.Single_Sign_In
             Mouse_Click_ClickNext(repo.SignInToYourAccount.SignInButtonInfo);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
         }
 
 #region Image Feature Data

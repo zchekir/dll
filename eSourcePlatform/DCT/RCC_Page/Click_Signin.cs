@@ -79,8 +79,11 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Mouse_Click_SubmitButton(repo.SignIn.SubmitButtonInfo);
+            Mouse_Click_SubmitButton(repo.SignInToYourAccount.SignInButtonInfo);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
         }
 
