@@ -129,7 +129,7 @@ namespace CSP.APIV2Modules
 		//Generating workflowinstance ULR with using an existing study
 		public void Workflow(string AuthToken, string studyProtocolName, string DOM, string dob, string genderCode, string localityCode, string redirectError, string redirect, string mode)
 		{
-			
+			Report.Log(ReportLevel.Info, studyProtocolName);
 			//variable
 			string url = "https://"+ DOM +"/api/external/V2/"+studyProtocolName+"/AssessmentAttempt";
 			//Setup API call
@@ -176,7 +176,7 @@ namespace CSP.APIV2Modules
 				
 				
 				
-				Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
+				Report.Log(ReportLevel.Info, "zAK Assessment Attempt Created, URL is: " + AssessmentURL);
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
 				
 			}

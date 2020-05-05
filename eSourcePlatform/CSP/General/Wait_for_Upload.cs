@@ -81,8 +81,8 @@ namespace CSP.General
 
             Report.Log(ReportLevel.Info, "User", "Wait for Assessment to hit Amazon Bucket", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4m.", new RecordItemIndex(1));
-            Delay.Duration(240000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6m.", new RecordItemIndex(1));
+            Delay.Duration(360000, false);
             
         }
 
