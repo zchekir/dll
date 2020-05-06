@@ -34,7 +34,7 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="958bacf9-0dcd-4197-b754-83a113d9c4d9"
 		waitaction="Exists"
@@ -52,7 +52,7 @@ rxversion="8.3">
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
-		duration="120000ms"
+		duration="60000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -88,7 +88,7 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<explicitdelayitem
-		duration="60000ms"
+		duration="500ms"
 		enabled="True"
 		optional="False">
 			<comment>
