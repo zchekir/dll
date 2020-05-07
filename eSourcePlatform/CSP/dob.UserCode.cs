@@ -179,7 +179,7 @@ namespace CSP
 			catch (Exception e)
              {
              
-				
+			 Report.Log(ReportLevel.Info,e.Message);
 		     String Error400 = "The remote server returned an error: (400) Bad Request.";	
              Validate.AreEqual(Error400 , e.Message);
             
