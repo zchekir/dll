@@ -48,10 +48,10 @@ namespace CSP.APIV2Modules
         	httpRequest.Headers.Add("Authorization", AuthToken);
         	
         	 // Varibles section:
-             string dob ="1978-01-01";   
+             string InvalidDOB ="1978-01-01";   
         		
         	//Create JSON object containing demographics and study details
-        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalid, dob, genderCode, localityCode, redirectError, redirect, visitSessionCode, supervisorid,mode);
+        	AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalid, InvalidDOB, genderCode, localityCode, redirectError, redirect, visitSessionCode, supervisorid,mode);
         
         	
         	using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
