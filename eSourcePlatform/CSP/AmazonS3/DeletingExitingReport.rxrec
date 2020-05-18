@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a51621aa-fba7-4b42-bd6f-28cd0a88364f"
+mode="Global"
+rxversion="8.3">
+	<name>
+		DeletingExitingReport
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DeletingExitingReport"
+	namespace="CSP.AmazonS3">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="DeletingExitingReport"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Deeting_ExitingReport"
+		namespace="CSP"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="476ca284-8b5b-4057-b845-56b2f0187be2">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="..\CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DeletingExitingReport.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

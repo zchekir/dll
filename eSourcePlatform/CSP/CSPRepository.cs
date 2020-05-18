@@ -39,7 +39,6 @@ namespace CSP
         CSPRepositoryFolders.AmazonWebServicesSignInAppFolder _amazonwebservicessignin;
         CSPRepositoryFolders.AWSManagementConsoleAppFolder _awsmanagementconsole;
         CSPRepositoryFolders.S3ManagementConsoleAppFolder _s3managementconsole;
-        CSPRepositoryFolders.WorkflowInstanceAppFolder _workflowinstance;
 
         /// <summary>
         /// Gets the singleton class instance representing the CSPRepository element repository.
@@ -68,7 +67,6 @@ namespace CSP
             _amazonwebservicessignin = new CSPRepositoryFolders.AmazonWebServicesSignInAppFolder(this);
             _awsmanagementconsole = new CSPRepositoryFolders.AWSManagementConsoleAppFolder(this);
             _s3managementconsole = new CSPRepositoryFolders.S3ManagementConsoleAppFolder(this);
-            _workflowinstance = new CSPRepositoryFolders.WorkflowInstanceAppFolder(this);
         }
 
 #region Variables
@@ -433,15 +431,6 @@ namespace CSP
         public virtual CSPRepositoryFolders.S3ManagementConsoleAppFolder S3ManagementConsole
         {
             get { return _s3managementconsole; }
-        }
-
-        /// <summary>
-        /// The WorkflowInstance folder.
-        /// </summary>
-        [RepositoryFolder("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
-        public virtual CSPRepositoryFolders.WorkflowInstanceAppFolder WorkflowInstance
-        {
-            get { return _workflowinstance; }
         }
     }
 
@@ -9266,46 +9255,6 @@ namespace CSP
                 get
                 {
                     return _closewasappInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WorkflowInstanceAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
-        public partial class WorkflowInstanceAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new WorkflowInstance  folder.
-            /// </summary>
-            public WorkflowInstanceAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WorkflowInstance", "/dom[@domain='cgst-qc-bear.azurewebsites.net']", parentFolder, 30000, null, false, "7b2eba14-6cb9-499e-a633-c402e5ae04d9", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("7b2eba14-6cb9-499e-a633-c402e5ae04d9")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }
