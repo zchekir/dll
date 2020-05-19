@@ -79,23 +79,26 @@ namespace ReportingLayer.AcademicExtract
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.TestSlicerBody'.", repo.PowerBI.Slicers.TestSlicerBodyInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.TestSlicerBody'.", repo.PowerBI.Slicers.TestSlicerBodyInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.PowerBI.Slicers.TestSlicerBodyInfo, "Visible", "True");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.SiteIDSlicerBody'.", repo.PowerBI.Slicers.SiteIDSlicerBodyInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.SiteIDSlicerBody'.", repo.PowerBI.Slicers.SiteIDSlicerBodyInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.PowerBI.Slicers.SiteIDSlicerBodyInfo, "Visible", "True");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.DateSlicerBody'.", repo.PowerBI.Slicers.DateSlicerBodyInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.DateSlicerBody'.", repo.PowerBI.Slicers.DateSlicerBodyInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.PowerBI.Slicers.DateSlicerBodyInfo, "Visible", "True");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.TestIDSlicerBody'.", repo.PowerBI.Slicers.TestIDSlicerBodyInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'PowerBI.Slicers.TestIDSlicerBody'.", repo.PowerBI.Slicers.TestIDSlicerBodyInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.PowerBI.Slicers.TestIDSlicerBodyInfo, "Visible", "True");
             Delay.Milliseconds(100);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Slicers have loaded successfully", repo.PowerBI.Self, false, new RecordItemIndex(4));
+            Report.Screenshot(ReportLevel.Info, "User", "Slicers have loaded successfully", repo.PowerBI.Self, false, new RecordItemIndex(5));
             
         }
 
