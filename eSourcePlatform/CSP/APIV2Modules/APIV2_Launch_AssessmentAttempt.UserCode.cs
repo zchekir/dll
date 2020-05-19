@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace CSP.General
+namespace CSP.APIV2Modules
 {
-    public partial class Launch_AssessmentAttempt
+    public partial class APIV2_Launch_AssessmentAttempt
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

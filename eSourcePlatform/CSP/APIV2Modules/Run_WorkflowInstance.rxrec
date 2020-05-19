@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="4cf38574-50a6-4296-8017-6f3285aac388"
+id="62a7ba5a-056d-4bd2-878a-716d185011cb"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Launch_AssessmentAttempt
+		Run_WorkflowInstance
 	</name>
 	<repeatcount>
 		1
@@ -23,51 +23,51 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Launch_AssessmentAttempt"
-	namespace="CSP.General">
+	classname="Run_WorkflowInstance"
+	namespace="CSP.APIV2Modules">
 	</codegen>
 	<variables>
 		<var
-		id="81704e14-17b3-497c-918b-6ed0d27d5881"
+		id="a1be029a-029a-4a3f-b030-460030e98ea4"
 		name="Browser">
+		</var>
+		<var
+		id="6bf84b0d-f821-4b49-9db5-05d3ac3fb92b"
+		name="AssessmentURL">
+		</var>
+		<var
+		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+		name="CSPDOM">
 		</var>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="60000ms"
+		<openwebsiterecorditem
+		args=""
+		browser="IE"
+		clearcache="False"
+		clearcookies="False"
 		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<userrecorditem
-		classname="WebService"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="LaunchAssessment"
-		namespace="engine.Helpers"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="dccf275f-c6a1-4392-8464-232a9d6a6e42">
-				<argument
-				argname="Browser"
-				id="33070ef9-0b87-45ec-a933-bc399d9287ac"
+				<binding
+				target="Url"
+				variable="AssessmentURL">
+				</binding>
+				<binding
+				target="BrowserName"
 				variable="Browser">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
+				</binding>
+			</bindings>
+			<url>
+				http://www.ranorex.com
+			</url>
+		</openwebsiterecorditem>
 		<loggingrecorditem
 		category="User"
 		enabled="True"
@@ -80,21 +80,12 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
-		<explicitdelayitem
-		duration="60000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
 		searchpropertyid="66d8da93-cd11-4dac-abb3-7daccafd9abb"
 		waitaction="Exists"
-		waittimeout="30000ms">
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -124,7 +115,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Launch_AssessmentAttempt.UserCode.cs
+		Run_WorkflowInstance.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="03a98aac-9699-4331-a3fa-00536dfad33f"
+id="4cf38574-50a6-4296-8017-6f3285aac388"
 mode="Global"
 rxversion="8.3">
 	<name>
-		APIV2_Authenticate
+		APIV2_Launch_AssessmentAttempt
 	</name>
 	<repeatcount>
 		1
@@ -23,29 +23,13 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="APIV2_Authenticate"
+	classname="APIV2_Launch_AssessmentAttempt"
 	namespace="CSP.APIV2Modules">
 	</codegen>
 	<variables>
 		<var
-		id="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
-		name="CSPDOM">
-		</var>
-		<var
-		id="3b244791-8adf-4420-ba52-5c63812fac17"
-		name="ProtocolNumber">
-		</var>
-		<var
-		id="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
-		name="RandNum">
-		</var>
-		<var
-		id="35d6bff4-468a-4307-8386-b46e7e547dc9"
-		name="Key">
-		</var>
-		<var
-		id="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
-		name="Secret">
+		id="81704e14-17b3-497c-918b-6ed0d27d5881"
+		name="Browser">
 		</var>
 	</variables>
 	<recorditems>
@@ -53,7 +37,7 @@ rxversion="8.3">
 		classname="WebService"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="Authenticate"
+		methodname="LaunchAssessment"
 		namespace="engine.Helpers"
 		optional="False"
 		varname="">
@@ -62,31 +46,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="c5ca5f41-f3d9-42b8-a587-ba53c1589b95">
+			id="dccf275f-c6a1-4392-8464-232a9d6a6e42">
 				<argument
-				argname="DOM"
-				id="1ee33410-3e65-499f-84ef-ecdcafb090cf"
-				variable="CSPDOM">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="studyProtocolName"
-				id="8c459245-d5f1-42ec-919a-98a6edcab038"
-				variable="ProtocolNumber">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="key"
-				id="5c1f3dc0-9306-4265-ae5d-b6c1ffdfb065"
-				variable="Key">
+				argname="Browser"
+				id="33070ef9-0b87-45ec-a933-bc399d9287ac"
+				variable="Browser">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -95,6 +59,36 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Waiting for Assets to load"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="27ce0fcd-1f60-4ac1-8410-935c8e8287af">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="66d8da93-cd11-4dac-abb3-7daccafd9abb"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4edfb0f5-e3aa-48fc-a0ea-4089a3c07e55"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//button[#'instructions_button']
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
@@ -112,7 +106,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		APIV2_Authenticate.UserCode.cs
+		APIV2_Launch_AssessmentAttempt.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -67,7 +67,7 @@ public class AuthJSONRequest4
 
 namespace CSP.APIV2Modules
 {
-    public partial class InnalidMethode
+    public partial class InvalidMethod
     {
     	
     	String messageError;

@@ -24,22 +24,22 @@ namespace CSP.APIV2Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The InnalidMethode recording.
+    ///The InvalidMethod recording.
     /// </summary>
     [TestModule("8f0a81f9-8c93-4991-a51a-72922622081c", ModuleType.Recording, 1)]
-    public partial class InnalidMethode : ITestModule
+    public partial class InvalidMethod : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static InnalidMethode instance = new InnalidMethode();
+        static InvalidMethod instance = new InvalidMethod();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public InnalidMethode()
+        public InvalidMethod()
         {
             secret = "";
             StudyProtocol = "";
@@ -50,7 +50,7 @@ namespace CSP.APIV2Modules
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static InnalidMethode Instance
+        public static InvalidMethod Instance
         {
             get { return instance; }
         }

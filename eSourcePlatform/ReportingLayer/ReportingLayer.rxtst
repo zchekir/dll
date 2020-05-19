@@ -849,7 +849,7 @@ rxversion="8.3">
 			<smartfoldernode
 			datasource="RCCConnector"
 			id="332de1b2-3b9e-42bc-b514-b8303a2909fd"
-			name="Multiple_Studies_Same_Site&amp;Subject">
+			name="Multiple_Studies_Same_Site&amp;Subject(Dont_Run)">
 			</smartfoldernode>
 			<modulegroup
 			id="349020c2-016b-4792-9886-646c6f1401ef"
@@ -1145,7 +1145,7 @@ rxversion="8.3">
 			</testsuite>
 			<smartfoldernode
 			id="457cc817-ed5a-4572-b28a-d54487f3855f"
-			name="Validate_ExcludeAssessment_Flag">
+			name="Validate_ExcludeAssessment_Flag(Dont_Run)">
 			</smartfoldernode>
 			<testcase
 			id="45d948c2-46ca-433c-a12e-5fa55eafbde3"
@@ -2889,7 +2889,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="aabfcb1e-0829-4976-9880-04e601567c1e"
-			name="WorkFlowInstance"
+			name="Generate_WorkflowInstance"
 			ref="9a2b9fff-5819-4334-8d9a-6b84b58d99f8"
 			type="Recording">
 				<databinding>
@@ -2939,13 +2939,13 @@ rxversion="8.3">
 					dataname="CSPDOM"
 					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
 					variableid="1d05b902-cc15-48e1-99d9-dfc534871d94"
-					variablename="DOM">
+					variablename="CSPDOM">
 					</var>
 					<var
 					dataname="StudyName"
 					datasourceid="b916a7cd-0937-4170-9e22-f4293b4efb3e"
 					variableid="4b0a9c84-d41d-4d3c-b3c7-03dee9ee893c"
-					variablename="studyProtocolName">
+					variablename="ProtocolNumber">
 					</var>
 					<var
 					dataname="genderCode"
@@ -4122,7 +4122,7 @@ rxversion="8.3">
 			<smartfoldernode
 			datasource="RCCConnector"
 			id="ea56bafb-27cb-4f60-86c7-66a866686722"
-			name="Validate_MakePrimary_Flag">
+			name="Validate_MakePrimary_Flag(Dont_Run)">
 			</smartfoldernode>
 			<testcase
 			id="eebed04f-fef8-4b43-99e5-21471922b73a"
@@ -5074,7 +5074,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="457cc817-ed5a-4572-b28a-d54487f3855f"
-						name="Validate_ExcludeAssessment_Flag">
+						name="Validate_ExcludeAssessment_Flag(Dont_Run)">
 							<testcase
 							id="f083c6ec-0fd3-4c23-a7c5-11a99e4b3d0c"
 							name="Invalidate_Assessment">
@@ -5142,7 +5142,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="ea56bafb-27cb-4f60-86c7-66a866686722"
-						name="Validate_MakePrimary_Flag">
+						name="Validate_MakePrimary_Flag(Dont_Run)">
 							<testcase
 							id="16497588-c5a2-4ae8-9607-36b6dd5cd974"
 							name="Complete_API_Assessment">
@@ -5152,7 +5152,7 @@ rxversion="8.3">
 								</testmodule>
 								<testmodule
 								id="aabfcb1e-0829-4976-9880-04e601567c1e"
-								name="WorkFlowInstance">
+								name="Generate_WorkflowInstance">
 								</testmodule>
 								<testmodule
 								id="c273f918-e2be-4b67-b769-15a3939c38d2"
@@ -5166,7 +5166,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="332de1b2-3b9e-42bc-b514-b8303a2909fd"
-						name="Multiple_Studies_Same_Site&amp;Subject">
+						name="Multiple_Studies_Same_Site&amp;Subject(Dont_Run)">
 							<setup
 							id="4cc94a85-1414-40fb-85f8-50bcb9f03419"
 							name="setup1">
@@ -5353,7 +5353,7 @@ rxversion="8.3">
 		<DataSource
 		id="c75408c7-6f28-40e4-99db-5081560f7749"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="8"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5417,6 +5417,15 @@ rxversion="8.3">
 				</column>
 				<column>
 					LocalityCode
+				</column>
+				<column>
+					Redirect
+				</column>
+				<column>
+					RedirectError
+				</column>
+				<column>
+					GenderCode
 				</column>
 				<column>
 					DOB
@@ -5582,6 +5591,12 @@ rxversion="8.3">
 				</column>
 				<column>
 					DCTURL
+				</column>
+				<column>
+					Key
+				</column>
+				<column>
+					Secret
 				</column>
 				<column>
 					AzureDOM

@@ -3268,7 +3268,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="8"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3332,6 +3332,15 @@ rxversion="8.3">
 				</column>
 				<column>
 					LocalityCode
+				</column>
+				<column>
+					Redirect
+				</column>
+				<column>
+					RedirectError
+				</column>
+				<column>
+					GenderCode
 				</column>
 				<column>
 					DOB
@@ -3497,6 +3506,12 @@ rxversion="8.3">
 				</column>
 				<column>
 					DCTURL
+				</column>
+				<column>
+					Key
+				</column>
+				<column>
+					Secret
 				</column>
 				<column>
 					AzureDOM

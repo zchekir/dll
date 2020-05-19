@@ -24,43 +24,43 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The WorkFlowInstance recording.
+    ///The Generate_WorkflowInstance recording.
     /// </summary>
     [TestModule("9a2b9fff-5819-4334-8d9a-6b84b58d99f8", ModuleType.Recording, 1)]
-    public partial class WorkFlowInstance : ITestModule
+    public partial class Generate_WorkflowInstance : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static WorkFlowInstance instance = new WorkFlowInstance();
+        static Generate_WorkflowInstance instance = new Generate_WorkflowInstance();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public WorkFlowInstance()
+        public Generate_WorkflowInstance()
         {
-            AuthToken = "IgOgdLNEAzGEjvyONsrg1tgK2SSCu-8axAr8WOF52erGxL9SEyBZ7krKrwub3Wyp";
-            studyProtocolName = "AutomationStudy";
-            DOM = "cgst-qc-orr.azurewebsites.net";
-            dob = "2000-01-01";
-            genderCode = "m";
-            localityCode = "en_US";
-            redirectError = "WWW.GOOGLE.COM";
-            redirect = "www.facebook.com";
-            visitSessionCode = "visit1";
-            supervisorId = "1";
+            AuthToken = "";
+            ProtocolNumber = "RegressionTest";
+            CSPDOM = "";
+            DOB = "2000-01-01";
+            GenderCode = "m";
+            LocalityCode = "en_US";
+            RedirectError = "WWW.GOOGLE.COM";
+            Redirect = "www.facebook.com";
+            VisitSessionCode = "visit1";
+            SupervisorId = "1";
             TestIdentifier = "";
-            externalId = "";
+            ExternalId = "";
             AssessmentURL = "";
-            mode = "";
+            Mode = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static WorkFlowInstance Instance
+        public static Generate_WorkflowInstance Instance
         {
             get { return instance; }
         }
@@ -79,112 +79,100 @@ namespace CSP
             set { _AuthToken = value; }
         }
 
-        string _studyProtocolName;
+        string _ProtocolNumber;
 
         /// <summary>
-        /// Gets or sets the value of variable studyProtocolName.
+        /// Gets or sets the value of variable ProtocolNumber.
         /// </summary>
         [TestVariable("4b0a9c84-d41d-4d3c-b3c7-03dee9ee893c")]
-        public string studyProtocolName
+        public string ProtocolNumber
         {
-            get { return _studyProtocolName; }
-            set { _studyProtocolName = value; }
+            get { return _ProtocolNumber; }
+            set { _ProtocolNumber = value; }
         }
 
-        string _DOM;
+        string _DOB;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("1d05b902-cc15-48e1-99d9-dfc534871d94")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
-        string _dob;
-
-        /// <summary>
-        /// Gets or sets the value of variable dob.
+        /// Gets or sets the value of variable DOB.
         /// </summary>
         [TestVariable("baaaad91-5ccd-4dd6-9cbd-d4523f1da5cb")]
-        public string dob
+        public string DOB
         {
-            get { return _dob; }
-            set { _dob = value; }
+            get { return _DOB; }
+            set { _DOB = value; }
         }
 
-        string _genderCode;
+        string _GenderCode;
 
         /// <summary>
-        /// Gets or sets the value of variable genderCode.
+        /// Gets or sets the value of variable GenderCode.
         /// </summary>
         [TestVariable("2e1366ad-da48-4246-816e-fa44895ddd07")]
-        public string genderCode
+        public string GenderCode
         {
-            get { return _genderCode; }
-            set { _genderCode = value; }
+            get { return _GenderCode; }
+            set { _GenderCode = value; }
         }
 
-        string _localityCode;
+        string _LocalityCode;
 
         /// <summary>
-        /// Gets or sets the value of variable localityCode.
+        /// Gets or sets the value of variable LocalityCode.
         /// </summary>
         [TestVariable("8dd6b8c2-2a52-4502-8866-9304c3644c52")]
-        public string localityCode
+        public string LocalityCode
         {
-            get { return _localityCode; }
-            set { _localityCode = value; }
+            get { return _LocalityCode; }
+            set { _LocalityCode = value; }
         }
 
-        string _redirectError;
+        string _RedirectError;
 
         /// <summary>
-        /// Gets or sets the value of variable redirectError.
+        /// Gets or sets the value of variable RedirectError.
         /// </summary>
         [TestVariable("74e43bb7-921d-45b5-ba71-a320656a11fc")]
-        public string redirectError
+        public string RedirectError
         {
-            get { return _redirectError; }
-            set { _redirectError = value; }
+            get { return _RedirectError; }
+            set { _RedirectError = value; }
         }
 
-        string _redirect;
+        string _Redirect;
 
         /// <summary>
-        /// Gets or sets the value of variable redirect.
+        /// Gets or sets the value of variable Redirect.
         /// </summary>
         [TestVariable("0844a293-2dc9-4219-9cb3-cafcd0f168bd")]
-        public string redirect
+        public string Redirect
         {
-            get { return _redirect; }
-            set { _redirect = value; }
+            get { return _Redirect; }
+            set { _Redirect = value; }
         }
 
-        string _visitSessionCode;
+        string _VisitSessionCode;
 
         /// <summary>
-        /// Gets or sets the value of variable visitSessionCode.
+        /// Gets or sets the value of variable VisitSessionCode.
         /// </summary>
         [TestVariable("5cf91dfd-49d7-4276-8188-104b3707a7e7")]
-        public string visitSessionCode
+        public string VisitSessionCode
         {
-            get { return _visitSessionCode; }
-            set { _visitSessionCode = value; }
+            get { return _VisitSessionCode; }
+            set { _VisitSessionCode = value; }
         }
 
-        string _supervisorId;
+        string _SupervisorId;
 
         /// <summary>
-        /// Gets or sets the value of variable supervisorId.
+        /// Gets or sets the value of variable SupervisorId.
         /// </summary>
         [TestVariable("fd2e40a7-d9e4-422c-b1d3-6c9247b2458e")]
-        public string supervisorId
+        public string SupervisorId
         {
-            get { return _supervisorId; }
-            set { _supervisorId = value; }
+            get { return _SupervisorId; }
+            set { _SupervisorId = value; }
         }
 
         string _TestIdentifier;
@@ -199,16 +187,16 @@ namespace CSP
             set { _TestIdentifier = value; }
         }
 
-        string _externalId;
+        string _ExternalId;
 
         /// <summary>
-        /// Gets or sets the value of variable externalId.
+        /// Gets or sets the value of variable ExternalId.
         /// </summary>
         [TestVariable("0e972c7a-57eb-4293-a7cc-32e75ea62d02")]
-        public string externalId
+        public string ExternalId
         {
-            get { return _externalId; }
-            set { _externalId = value; }
+            get { return _ExternalId; }
+            set { _ExternalId = value; }
         }
 
         string _AssessmentURL;
@@ -223,16 +211,26 @@ namespace CSP
             set { _AssessmentURL = value; }
         }
 
-        string _mode;
+        string _Mode;
 
         /// <summary>
-        /// Gets or sets the value of variable mode.
+        /// Gets or sets the value of variable Mode.
         /// </summary>
         [TestVariable("f4f9ca38-7f8c-45a9-aabe-272a2438d295")]
-        public string mode
+        public string Mode
         {
-            get { return _mode; }
-            set { _mode = value; }
+            get { return _Mode; }
+            set { _Mode = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("1d05b902-cc15-48e1-99d9-dfc534871d94")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion
@@ -261,7 +259,7 @@ namespace CSP
 
             Init();
 
-            Workflow(AuthToken, studyProtocolName, DOM, dob, genderCode, localityCode, redirectError, redirect, mode);
+            Workflow(AuthToken, ProtocolNumber, CSPDOM, DOB, GenderCode, LocalityCode, RedirectError, Redirect, Mode);
             Delay.Milliseconds(0);
             
         }

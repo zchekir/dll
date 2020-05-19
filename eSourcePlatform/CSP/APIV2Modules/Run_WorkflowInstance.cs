@@ -20,34 +20,36 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.General
+namespace CSP.APIV2Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Launch_AssessmentAttempt recording.
+    ///The Run_WorkflowInstance recording.
     /// </summary>
-    [TestModule("4cf38574-50a6-4296-8017-6f3285aac388", ModuleType.Recording, 1)]
-    public partial class Launch_AssessmentAttempt : ITestModule
+    [TestModule("62a7ba5a-056d-4bd2-878a-716d185011cb", ModuleType.Recording, 1)]
+    public partial class Run_WorkflowInstance : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Launch_AssessmentAttempt instance = new Launch_AssessmentAttempt();
+        static Run_WorkflowInstance instance = new Run_WorkflowInstance();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Launch_AssessmentAttempt()
+        public Run_WorkflowInstance()
         {
             Browser = "";
+            AssessmentURL = "";
+            CSPDOM = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Launch_AssessmentAttempt Instance
+        public static Run_WorkflowInstance Instance
         {
             get { return instance; }
         }
@@ -59,11 +61,23 @@ namespace CSP.General
         /// <summary>
         /// Gets or sets the value of variable Browser.
         /// </summary>
-        [TestVariable("81704e14-17b3-497c-918b-6ed0d27d5881")]
+        [TestVariable("a1be029a-029a-4a3f-b030-460030e98ea4")]
         public string Browser
         {
             get { return _Browser; }
             set { _Browser = value; }
+        }
+
+        string _AssessmentURL;
+
+        /// <summary>
+        /// Gets or sets the value of variable AssessmentURL.
+        /// </summary>
+        [TestVariable("6bf84b0d-f821-4b49-9db5-05d3ac3fb92b")]
+        public string AssessmentURL
+        {
+            get { return _AssessmentURL; }
+            set { _AssessmentURL = value; }
         }
 
         /// <summary>
@@ -102,19 +116,14 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            Delay.Duration(60000, false);
-            
-            engine.Helpers.WebService.LaunchAssessment(Browser);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $AssessmentURL with browser specified by variable $Browser in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(AssessmentURL, Browser, "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(3));
-            Delay.Duration(60000, false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.StartInstructions'", repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.StartInstructions'", repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo.WaitForExists(60000);
             
         }
 

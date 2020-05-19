@@ -117,7 +117,7 @@ namespace CSP
 			
 		}
 	}
-	public partial class WorkFlowInstance
+	public partial class Generate_WorkflowInstance
 	{
 		
 		
@@ -126,12 +126,12 @@ namespace CSP
 			// Your recording specific initialization code goes here.
 		}
 		
-		//Generating workflowinstance ULR with using an existing study
-		public void Workflow(string AuthToken, string studyProtocolName, string DOM, string InvalidDOB, string genderCode, string localityCode, string redirectError, string redirect, string mode)
+		//Generating workflowinstance URL with using an existing study
+		public void Workflow(string AuthToken, string ProtocolNumber, string CSPDOM, string DOB, string genderCode, string localityCode, string redirectError, string redirect, string mode)
 		{
-			Report.Log(ReportLevel.Info, studyProtocolName);
+			Report.Log(ReportLevel.Info, "Current Study: " + ProtocolNumber);
 			//variable
-			string url = "https://"+ DOM +"/api/external/V2/"+studyProtocolName+"/AssessmentAttempt";
+			string url = "https://" + CSPDOM + "/api/external/V2/" + ProtocolNumber + "/AssessmentAttempt";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -141,11 +141,11 @@ namespace CSP
 			// generating an rundom number to be used as externalid
 			Random r = new Random();
 			int number = r.Next(1,999999);
-			externalId = number.ToString();
+			ExternalId = number.ToString();
 			
 			
 			//Create JSON object containing demographics and study details
-			AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(externalId, InvalidDOB, genderCode, localityCode, redirectError, redirect, visitSessionCode, supervisorId,mode);
+			AssessmentAttemptJSONRequest assessmentObject = new AssessmentAttemptJSONRequest(ExternalId, DOB, genderCode, localityCode, redirectError, redirect, VisitSessionCode, SupervisorId,mode);
 			
 			
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
@@ -173,10 +173,7 @@ namespace CSP
 				AssessmentURL = responseObject.url;
 				TestIdentifier = responseObject.testIdentifier;
 				
-				
-				
-				
-				Report.Log(ReportLevel.Info, "zAK Assessment Attempt Created, URL is: " + AssessmentURL);
+				Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
 				
 			}

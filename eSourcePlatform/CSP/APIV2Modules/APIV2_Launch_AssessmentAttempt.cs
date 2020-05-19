@@ -24,92 +24,56 @@ namespace CSP.APIV2Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The APIV2_Authenticate recording.
+    ///The APIV2_Launch_AssessmentAttempt recording.
     /// </summary>
-    [TestModule("03a98aac-9699-4331-a3fa-00536dfad33f", ModuleType.Recording, 1)]
-    public partial class APIV2_Authenticate : ITestModule
+    [TestModule("4cf38574-50a6-4296-8017-6f3285aac388", ModuleType.Recording, 1)]
+    public partial class APIV2_Launch_AssessmentAttempt : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static APIV2_Authenticate instance = new APIV2_Authenticate();
+        static APIV2_Launch_AssessmentAttempt instance = new APIV2_Launch_AssessmentAttempt();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public APIV2_Authenticate()
+        public APIV2_Launch_AssessmentAttempt()
         {
-            CSPDOM = "";
-            ProtocolNumber = "";
-            RandNum = "";
-            Key = "";
-            Secret = "";
+            Browser = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static APIV2_Authenticate Instance
+        public static APIV2_Launch_AssessmentAttempt Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _ProtocolNumber;
+        string _Browser;
 
         /// <summary>
-        /// Gets or sets the value of variable ProtocolNumber.
+        /// Gets or sets the value of variable Browser.
         /// </summary>
-        [TestVariable("3b244791-8adf-4420-ba52-5c63812fac17")]
-        public string ProtocolNumber
+        [TestVariable("81704e14-17b3-497c-918b-6ed0d27d5881")]
+        public string Browser
         {
-            get { return _ProtocolNumber; }
-            set { _ProtocolNumber = value; }
-        }
-
-        string _Secret;
-
-        /// <summary>
-        /// Gets or sets the value of variable Secret.
-        /// </summary>
-        [TestVariable("a702b301-700e-48a4-bc0b-f7361f7a8fb9")]
-        public string Secret
-        {
-            get { return _Secret; }
-            set { _Secret = value; }
+            get { return _Browser; }
+            set { _Browser = value; }
         }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
-        [TestVariable("a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65")]
+        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
         public string CSPDOM
         {
             get { return repo.CSPDOM; }
             set { repo.CSPDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable RandNum.
-        /// </summary>
-        [TestVariable("f596d89d-2a08-4a15-bfcb-1856ad2829bb")]
-        public string RandNum
-        {
-            get { return repo.RandNum; }
-            set { repo.RandNum = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Key.
-        /// </summary>
-        [TestVariable("35d6bff4-468a-4307-8386-b46e7e547dc9")]
-        public string Key
-        {
-            get { return repo.Key; }
-            set { repo.Key = value; }
         }
 
 #endregion
@@ -138,8 +102,13 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            engine.Helpers.WebService.Authenticate(CSPDOM, ProtocolNumber, Key);
+            engine.Helpers.WebService.LaunchAssessment(Browser);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.StartInstructions'", repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo.WaitForExists(60000);
             
         }
 
