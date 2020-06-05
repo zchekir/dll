@@ -424,7 +424,7 @@ namespace ReportingLayer
             public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
                     base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
             {
-                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-128']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
+                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]/div/div[2]//form[@action='https://app.powerbi.com/groups/6fa35884-bd59-4816-9346-8ce9827125d5/reports/0f7e6e96-20dc-4533-9e16-94a76b9da841/ReportSection?filter=vwStandardExtract%2FProtocolID%20eq%20%27AutomationStudy2%27']/div/tag[@id='mat-select-133']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
                 _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-132']", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
                 _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
                 _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-9']", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
