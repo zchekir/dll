@@ -1945,6 +1945,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>d90a74fb-3f62-4ea3-a885-cc4e0330a658</id>
     </Compile>
+    <Compile Include="CurrentState.cs">
+      <BoundTo>3847235b-11f7-4e5d-a338-f9b63e9835dc</BoundTo>
+      <DependentUpon>CurrentState.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e324fd7-6266-4d34-ae13-553d8edf2b63</id>
+    </Compile>
+    <Compile Include="CurrentState.UserCode.cs">
+      <BoundTo>3847235b-11f7-4e5d-a338-f9b63e9835dc</BoundTo>
+      <DependentUpon>CurrentState.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa708818-515d-452f-ac5e-df392a506f71</id>
+    </Compile>
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
     </Compile>
@@ -4464,6 +4476,11 @@
     <None Include="csv\TwoBack.csv">
       <id>11c86286-d2df-4dfc-9b0d-86e9641b835a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CurrentState.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>3847235b-11f7-4e5d-a338-f9b63e9835dc</id>
+      <recordtableid>264ec136-7bea-4f1a-aca4-fab740a99027</recordtableid>
     </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>

@@ -55,6 +55,8 @@ namespace CSP
             ExternalId = "";
             AssessmentURL = "";
             Mode = "";
+            workflowAuthToken = "";
+            workflowInstanceId = "";
         }
 
         /// <summary>
@@ -221,6 +223,30 @@ namespace CSP
         {
             get { return _Mode; }
             set { _Mode = value; }
+        }
+
+        string _workflowAuthToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable workflowAuthToken.
+        /// </summary>
+        [TestVariable("db9fb9f3-37be-4e92-b0f5-999f6407f381")]
+        public string workflowAuthToken
+        {
+            get { return _workflowAuthToken; }
+            set { _workflowAuthToken = value; }
+        }
+
+        string _workflowInstanceId;
+
+        /// <summary>
+        /// Gets or sets the value of variable workflowInstanceId.
+        /// </summary>
+        [TestVariable("de52f5d1-b544-4f72-9206-1d2571bad1c5")]
+        public string workflowInstanceId
+        {
+            get { return _workflowInstanceId; }
+            set { _workflowInstanceId = value; }
         }
 
         /// <summary>

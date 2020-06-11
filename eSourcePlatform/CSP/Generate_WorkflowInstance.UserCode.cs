@@ -112,6 +112,8 @@ namespace CSP
 		
 		public string externalId { get; set; }
 		
+		public string workflowInstanceId {get; set;}
+		
 		public AssessmentAttemptJSONResponse()
 		{
 			
@@ -172,10 +174,25 @@ namespace CSP
 				
 				AssessmentURL = responseObject.url;
 				TestIdentifier = responseObject.testIdentifier;
+				workflowAuthToken = responseObject.workflowAuthToken;
+				workflowInstanceId = responseObject.workflowInstanceId;
 				
+				// slpit
+			char[] mych = { '&', ',','?','=' };
+            string AssURL = AssessmentURL;
+            string[] partialURL = AssURL.Split(mych);
+            workflowAuthToken = partialURL[4];
+            workflowInstanceId = partialURL[2];
+
+            
+				
+				
+				
+				//
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
 				Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
-				
+				Report.Log(ReportLevel.Info, "Assessment Attempt Created, workflowAuthToke is: " + workflowAuthToken);
+				Report.Log(ReportLevel.Info, "Assessment Attempt Created, workflowInstanceId is: " + workflowInstanceId);
 			}
 		}
 
