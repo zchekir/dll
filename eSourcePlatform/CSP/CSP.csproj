@@ -1945,6 +1945,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>d90a74fb-3f62-4ea3-a885-cc4e0330a658</id>
     </Compile>
+    <Compile Include="CurrentState.cs">
+      <BoundTo>3847235b-11f7-4e5d-a338-f9b63e9835dc</BoundTo>
+      <DependentUpon>CurrentState.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e324fd7-6266-4d34-ae13-553d8edf2b63</id>
+    </Compile>
+    <Compile Include="CurrentState.UserCode.cs">
+      <BoundTo>3847235b-11f7-4e5d-a338-f9b63e9835dc</BoundTo>
+      <DependentUpon>CurrentState.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa708818-515d-452f-ac5e-df392a506f71</id>
+    </Compile>
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
     </Compile>
@@ -2346,6 +2358,18 @@
       <DependentUpon>GetAssessmentAttemptOutcomes.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>22013a69-1911-4577-94c2-d7dbbd0f5162</id>
+    </Compile>
+    <Compile Include="GetNext_State.cs">
+      <BoundTo>db58994e-0819-422a-a616-9b6d30c3396b</BoundTo>
+      <DependentUpon>GetNext_State.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c440a8d-6201-48ef-861c-fc91e88e4a18</id>
+    </Compile>
+    <Compile Include="GetNext_State.UserCode.cs">
+      <BoundTo>db58994e-0819-422a-a616-9b6d30c3396b</BoundTo>
+      <DependentUpon>GetNext_State.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ce3b888-382c-49d3-a06c-c79d015d5b66</id>
     </Compile>
     <Compile Include="InternalAPIModules\AuthenticateAsInternalUser.cs">
       <DependentUpon>AuthenticateAsInternalUser.rxrec</DependentUpon>
@@ -4465,6 +4489,11 @@
       <id>11c86286-d2df-4dfc-9b0d-86e9641b835a</id>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="CurrentState.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>3847235b-11f7-4e5d-a338-f9b63e9835dc</id>
+      <recordtableid>264ec136-7bea-4f1a-aca4-fab740a99027</recordtableid>
+    </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4629,6 +4658,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>946e90e3-3692-43f2-b12d-5aa24e3bf6a8</id>
       <recordtableid>532f08c6-9cad-477b-91cb-8ffa5f4e7cbb</recordtableid>
+    </None>
+    <None Include="GetNext_State.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>db58994e-0819-422a-a616-9b6d30c3396b</id>
+      <recordtableid>e3c111c2-88d1-4da6-adf4-d67326f94bd2</recordtableid>
     </None>
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>

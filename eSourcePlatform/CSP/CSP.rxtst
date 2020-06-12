@@ -1644,6 +1644,10 @@ rxversion="8.3">
 			minrange="55"
 			name="Configure_Battery_Template">
 			</testcase>
+			<testcase
+			id="58b92a44-15a8-4477-b31a-623a0eaf2292"
+			name="GetCurrentState">
+			</testcase>
 			<testmodule
 			id="5b7297a1-cb08-4a44-b7bd-579f94dadc2c"
 			name="Generate_WorkflowInstance"
@@ -1837,6 +1841,14 @@ rxversion="8.3">
 					<param
 					name="WASURL"
 					value="https://633444484876.signin.aws.amazon.com/console">
+					</param>
+					<param
+					name="workflowID"
+					value="">
+					</param>
+					<param
+					name="workflowToken"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -3561,6 +3573,32 @@ rxversion="8.3">
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936"
 			name="V2_ExternalAuthenticate">
 			</testcase>
+			<testmodule
+			id="b2a24e20-7d5b-4cbd-b012-98fec615d1fa"
+			name="GetNext_State"
+			ref="e3c111c2-88d1-4da6-adf4-d67326f94bd2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="workflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6997fedd-7590-4ec0-ab33-91041ca941c8"
+					variablename="workflowID">
+					</var>
+					<var
+					dataname="workflowToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="97dcd2ad-0d5a-448a-a676-95da49b6092a"
+					variablename="workflowToken">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="8c89ebd6-b361-4142-ac06-9406948f8848"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4"
 			name="swaggerAPI">
@@ -3725,6 +3763,32 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="24b99672-d4b4-4352-83dc-f0d6f336ecdf"
 					variablename="Authentication">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b906c4c6-0cd7-413a-819d-c199cc7a47ad"
+			name="CurrentState"
+			ref="264ec136-7bea-4f1a-aca4-fab740a99027"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="workflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="2980ba91-4eeb-4937-af27-5e83be237f64"
+					variablename="workflowID">
+					</var>
+					<var
+					dataname="workflowToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="4564ea7c-28d0-4bc3-b505-c4f335940174"
+					variablename="workflowToken">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="5aa0d4ed-3031-4b0c-8e82-4416000f50a0"
+					variablename="DOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4285,6 +4349,18 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="0844a293-2dc9-4219-9cb3-cafcd0f168bd"
 					variablename="redirect">
+					</var>
+					<var
+					dataname="workflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="de52f5d1-b544-4f72-9206-1d2571bad1c5"
+					variablename="workflowInstanceId">
+					</var>
+					<var
+					dataname="workflowToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="db9fb9f3-37be-4e92-b0f5-999f6407f381"
+					variablename="workflowAuthToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4892,6 +4968,16 @@ rxversion="8.3">
 			minrange="0"
 			name="AWS_S3_DB_">
 			</smartfoldernode>
+			<testcase
+			id="f93a7981-49b3-43d8-b1db-efc904929c69"
+			name="GetNextState">
+				<parameters>
+					<param
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="fa87b864-81f3-4615-b2a8-f2cf79825513"
 			name="ValidatinTheDatSCV"
@@ -5749,6 +5835,22 @@ rxversion="8.3">
 								name="GetAssessmentAttemptOutcomes">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="58b92a44-15a8-4477-b31a-623a0eaf2292"
+							name="GetCurrentState">
+								<testmodule
+								id="b906c4c6-0cd7-413a-819d-c199cc7a47ad"
+								name="CurrentState">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="f93a7981-49b3-43d8-b1db-efc904929c69"
+							name="GetNextState">
+								<testmodule
+								id="b2a24e20-7d5b-4cbd-b012-98fec615d1fa"
+								name="GetNext_State">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="98041b6b-3cd8-422a-93f4-ab23ce4fd382"
@@ -6131,7 +6233,7 @@ rxversion="8.3">
 		<DataSource
 		id="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="API_Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6398,7 +6500,7 @@ rxversion="8.3">
 		<DataSource
 		id="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="5"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6899,7 +7001,22 @@ rxversion="8.3">
 			id="53b7742c-c267-4b2b-9253-a04f93603d8b">
 			</testcontainer>
 			<testcontainer
+			id="45077930-4bd9-4874-ad6a-91b58033c26a">
+			</testcontainer>
+			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
+			</testcontainer>
+			<testcontainer
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			</testcontainer>
+			<testcontainer
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
+			</testcontainer>
+			<testcontainer
+			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
+			</testcontainer>
+			<testcontainer
+			id="f93a7981-49b3-43d8-b1db-efc904929c69">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
