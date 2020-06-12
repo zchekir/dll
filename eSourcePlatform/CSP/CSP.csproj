@@ -1960,6 +1960,18 @@
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
     </Compile>
+    <Compile Include="emptyassement.cs">
+      <BoundTo>8854fe44-5924-4c56-b340-4a179f056400</BoundTo>
+      <DependentUpon>emptyassement.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e1956a8a-d0ba-4f13-b27d-df55fa18498c</id>
+    </Compile>
+    <Compile Include="emptyassement.UserCode.cs">
+      <BoundTo>8854fe44-5924-4c56-b340-4a179f056400</BoundTo>
+      <DependentUpon>emptyassement.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fda13c1-52ae-416b-9793-58458d39be66</id>
+    </Compile>
     <Compile Include="ExtractsPage\Click_DownloadExtract_Button.cs">
       <id>64e991f1-9c42-48e0-9752-c2492e573377</id>
       <BoundTo>304b93b0-7b72-4748-b038-66c5ca99150c</BoundTo>
@@ -2358,6 +2370,30 @@
       <DependentUpon>GetAssessmentAttemptOutcomes.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>22013a69-1911-4577-94c2-d7dbbd0f5162</id>
+    </Compile>
+    <Compile Include="GetBatteryAssessee.cs">
+      <BoundTo>fc3514df-37cb-4d10-a183-7acac79e1fbc</BoundTo>
+      <DependentUpon>GetBatteryAssessee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c22a244-037f-460d-af6d-c4c63f9ec64a</id>
+    </Compile>
+    <Compile Include="GetBatteryAssessee.UserCode.cs">
+      <BoundTo>fc3514df-37cb-4d10-a183-7acac79e1fbc</BoundTo>
+      <DependentUpon>GetBatteryAssessee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fd139db9-d790-435d-aa60-0cb5314e082d</id>
+    </Compile>
+    <Compile Include="GetBattery_Configuration.cs">
+      <BoundTo>f95662b9-0a65-4ed4-8c66-2d608ecdea9c</BoundTo>
+      <DependentUpon>GetBattery_Configuration.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c2cd47e-782e-4150-9abc-a76a1fd2405b</id>
+    </Compile>
+    <Compile Include="GetBattery_Configuration.UserCode.cs">
+      <BoundTo>f95662b9-0a65-4ed4-8c66-2d608ecdea9c</BoundTo>
+      <DependentUpon>GetBattery_Configuration.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fc9f8176-64ad-43ea-bb0f-598819b22744</id>
     </Compile>
     <Compile Include="GetNext_State.cs">
       <BoundTo>db58994e-0819-422a-a616-9b6d30c3396b</BoundTo>
@@ -4494,6 +4530,11 @@
       <id>3847235b-11f7-4e5d-a338-f9b63e9835dc</id>
       <recordtableid>264ec136-7bea-4f1a-aca4-fab740a99027</recordtableid>
     </None>
+    <None Include="emptyassement.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>8854fe44-5924-4c56-b340-4a179f056400</id>
+      <recordtableid>85b942bb-b28e-4f71-9de0-2146ec915b8b</recordtableid>
+    </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4658,6 +4699,16 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>946e90e3-3692-43f2-b12d-5aa24e3bf6a8</id>
       <recordtableid>532f08c6-9cad-477b-91cb-8ffa5f4e7cbb</recordtableid>
+    </None>
+    <None Include="GetBatteryAssessee.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>fc3514df-37cb-4d10-a183-7acac79e1fbc</id>
+      <recordtableid>d047df37-f87c-45bf-9e45-0756caa1dca2</recordtableid>
+    </None>
+    <None Include="GetBattery_Configuration.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>f95662b9-0a65-4ed4-8c66-2d608ecdea9c</id>
+      <recordtableid>08aaec9b-4466-408b-8390-d8a092743d83</recordtableid>
     </None>
     <None Include="GetNext_State.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
