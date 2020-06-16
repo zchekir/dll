@@ -3190,6 +3190,18 @@
       <id>c0ed3a79-a920-4fda-a695-fcd10eccd87d</id>
       <BoundTo>c4d77aeb-1d90-4699-85b3-ca77c15a5d2b</BoundTo>
     </Compile>
+    <Compile Include="UB01.cs">
+      <BoundTo>f062be18-705c-49c9-83be-9611a7adb5a0</BoundTo>
+      <DependentUpon>UB01.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>23ab6fda-8b5c-40db-a3ee-c7fd6183099b</id>
+    </Compile>
+    <Compile Include="UB01.UserCode.cs">
+      <BoundTo>f062be18-705c-49c9-83be-9611a7adb5a0</BoundTo>
+      <DependentUpon>UB01.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f272a86e-92f9-4ffe-a93e-cbf55fd85818</id>
+    </Compile>
     <Compile Include="UsersPage\Add_Role_External_User.cs">
       <id>271a9f76-ce62-4590-ab13-f2658d41a825</id>
       <DependentUpon>Add_Role_External_User.rxrec</DependentUpon>
@@ -5128,6 +5140,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>c4d77aeb-1d90-4699-85b3-ca77c15a5d2b</id>
       <recordtableid>13e4a129-f95e-4991-9c6b-4c0f0ad3992f</recordtableid>
+    </None>
+    <None Include="UB01.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>f062be18-705c-49c9-83be-9611a7adb5a0</id>
+      <recordtableid>e84df0e0-2c47-4196-a6cf-07f74623ee54</recordtableid>
     </None>
     <None Include="UsersPage\Add_Role_External_User.rxrec">
       <id>bbae9c6b-903b-4375-9555-9077f3057673</id>

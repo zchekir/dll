@@ -51,6 +51,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="02a50b9b-fcda-4073-a4b1-ef464231a85d"
+			name="UB01">
+			</testcase>
 			<testmodule
 			id="02a6eeaf-5cf4-46ae-b08d-ec6ccc8d0337"
 			name="APIV2_Authenticate"
@@ -725,14 +729,14 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="21ca376e-9f74-41de-92db-96894f0c33ba"
-			name="teardown">
-			</teardown>
 			<testcase
 			id="2166c8b1-a349-4d6f-a42b-ea55802c057a"
 			name="GetBatteryConfiguration">
 			</testcase>
+			<teardown
+			id="21ca376e-9f74-41de-92db-96894f0c33ba"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="21d44004-ada8-4c47-92ef-f6206fac7f94"
 			name="Click_Edit_Localities"
@@ -4516,6 +4520,44 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="dabe20b9-afbd-4f01-acf1-8610bbb4362d"
+			name="UB01"
+			ref="e84df0e0-2c47-4196-a6cf-07f74623ee54"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="workflowToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="976e0166-5c2b-4e7a-86b4-5059b3197b9d"
+					variablename="workflowToken">
+					</var>
+					<var
+					dataname="workflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cff3f7f6-49b4-4369-8e0e-fb12e6e1d45e"
+					variablename="workflowID">
+					</var>
+					<var
+					dataname="Batteryid"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="7d905ae6-e1e4-41cd-a46a-cc2151b882a2"
+					variablename="Batteryid">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="a66459bc-132f-46c8-9860-979764bc0044"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="data"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="5765711e-27be-4e03-a933-25a57425abf3"
+					variablename="rawdata">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="db488035-4e27-4b7f-8872-45c65c4d4925"
 			name="teardown">
@@ -5981,6 +6023,14 @@ rxversion="8.3">
 								name="GetBattery_Configuration">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="02a50b9b-fcda-4073-a4b1-ef464231a85d"
+							name="UB01">
+								<testmodule
+								id="dabe20b9-afbd-4f01-acf1-8610bbb4362d"
+								name="UB01">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="98041b6b-3cd8-422a-93f4-ab23ce4fd382"
@@ -6439,6 +6489,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					S3studyProtocolName
+				</column>
+				<column>
+					data
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -7125,130 +7178,22 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="17d59164-efab-44b3-b1b8-ab0f996ae6cd">
-			</testcontainer>
-			<testcontainer
-			id="53b7742c-c267-4b2b-9253-a04f93603d8b">
-			</testcontainer>
-			<testcontainer
-			id="02ca4b95-a2d6-492f-ab6e-36034c719d59">
-			</testcontainer>
-			<testcontainer
-			id="04421345-e5aa-49b4-b420-101dbea32a24">
-			</testcontainer>
-			<testcontainer
-			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
-			</testcontainer>
-			<testcontainer
-			id="2166c8b1-a349-4d6f-a42b-ea55802c057a">
-			</testcontainer>
-			<testcontainer
-			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
-			</testcontainer>
-			<testcontainer
-			id="270aad2e-c077-43b4-9abc-ac3ac4172cf0">
-			</testcontainer>
-			<testcontainer
-			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc">
-			</testcontainer>
-			<testcontainer
-			id="2e724786-0867-45a5-b61c-3a0714ca1060">
-			</testcontainer>
-			<testcontainer
-			id="39b1cecb-0d7e-4daa-a134-c25e0db038e1">
-			</testcontainer>
-			<testcontainer
-			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
+			id="02a50b9b-fcda-4073-a4b1-ef464231a85d">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
-			id="58b92a44-15a8-4477-b31a-623a0eaf2292">
-			</testcontainer>
-			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
-			</testcontainer>
-			<testcontainer
-			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
-			</testcontainer>
-			<testcontainer
-			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
-			</testcontainer>
-			<testcontainer
-			id="69f50943-5b2d-41d4-ac43-d7cce45967af">
-			</testcontainer>
-			<testcontainer
-			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
-			</testcontainer>
-			<testcontainer
-			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
-			</testcontainer>
-			<testcontainer
-			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b">
-			</testcontainer>
-			<testcontainer
-			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
-			</testcontainer>
-			<testcontainer
-			id="9296f761-d9ec-42b4-aab7-64ac1b4d4637">
-			</testcontainer>
-			<testcontainer
-			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
-			</testcontainer>
-			<testcontainer
-			id="9fe98d67-940d-4451-ae47-83f979151dc2">
-			</testcontainer>
-			<testcontainer
-			id="a039dd84-fa06-45dc-900f-9d8b10c73c69">
 			</testcontainer>
 			<testcontainer
 			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
 			</testcontainer>
 			<testcontainer
-			id="a95ff794-3df5-4234-b928-480259c0da91">
-			</testcontainer>
-			<testcontainer
-			id="af039c2f-3c95-43e6-8258-aa7b0d2f38f2">
-			</testcontainer>
-			<testcontainer
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
-			id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4">
-			</testcontainer>
-			<testcontainer
 			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
-			</testcontainer>
-			<testcontainer
-			id="caa16dcb-29ad-4f2f-ba50-f65f0670c1c4">
-			</testcontainer>
-			<testcontainer
-			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
-			</testcontainer>
-			<testcontainer
-			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
-			</testcontainer>
-			<testcontainer
-			id="e00c2baf-18fc-4db9-8f47-941279980274">
-			</testcontainer>
-			<testcontainer
-			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
-			</testcontainer>
-			<testcontainer
-			id="f93a7981-49b3-43d8-b1db-efc904929c69">
-			</testcontainer>
-			<testcontainer
-			id="fbb6582a-078f-40ce-9d97-9857a442e28e">
-			</testcontainer>
-			<testcontainer
-			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
-			</testcontainer>
-			<testcontainer
-			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
