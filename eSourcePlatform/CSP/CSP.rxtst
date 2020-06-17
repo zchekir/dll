@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -611,6 +611,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="2166c8b1-a349-4d6f-a42b-ea55802c057a"
+			name="GetBatteryConfiguration">
+			</testcase>
 			<testmodule
 			id="21d44004-ada8-4c47-92ef-f6206fac7f94"
 			name="Click_Edit_Localities"
@@ -806,6 +810,38 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3496f3b0-895c-440d-917a-c5f5752cb3bb"
+			name="emptyassement"
+			ref="85b942bb-b28e-4f71-9de0-2146ec915b8b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="workflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="10e679a8-0397-4670-b1f5-e83f73725ebc"
+					variablename="workflowID">
+					</var>
+					<var
+					dataname="workflowToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="c94deacb-278f-4411-ae91-cebbf1607434"
+					variablename="workflowToken">
+					</var>
+					<var
+					dataname="Batteryid"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="24d34ef6-f8db-428d-8bc3-8da0240e6fd2"
+					variablename="Batteryid">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="5699390c-f92e-473f-b8e1-bc4c097ae37c"
+					variablename="DOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1069,6 +1105,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="39b1cecb-0d7e-4daa-a134-c25e0db038e1"
+			name="InsertEmptyAssessment">
+			</testcase>
 			<testmodule
 			id="3b25a2c7-db79-489e-a373-96ba0f8890d5"
 			name="View_Lastest_Report"
@@ -1728,6 +1768,10 @@ rxversion="8.3">
 					name="workflowAuthToken"
 					value="">
 					</param>
+					<param
+					name="Batteryid"
+					value="19015">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -2109,6 +2153,32 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="699216bc-57ab-4dc6-b2b5-406862e4f6ee"
+			name="GetBatteryAssessee"
+			ref="d047df37-f87c-45bf-9e45-0756caa1dca2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="workflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="15ba03e8-a284-454b-a82c-bdb793e3e354"
+					variablename="workflowID">
+					</var>
+					<var
+					dataname="workflowToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="445f5774-7b30-4d27-9759-2ac5dbc10b96"
+					variablename="workflowToken">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="fd0a4671-4181-418f-a788-9469d601f468"
+					variablename="DOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2542,6 +2612,38 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="8a143515-5a58-443b-b083-dc68f8a1a578"
+			name="GetBattery_Configuration"
+			ref="08aaec9b-4466-408b-8390-d8a092743d83"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="workflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cddb6bdb-4153-441f-a986-c7a28cb1eb77"
+					variablename="workflowID">
+					</var>
+					<var
+					dataname="workflowToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="88206e17-a62c-4474-be4a-37e6c4b34eeb"
+					variablename="workflowToken">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="d7e09746-daa6-4547-abeb-e0d6e29a0455"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="Batteryid"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8916ec07-54b9-4df7-8ffb-02870f0cde9f"
+					variablename="Batteryid">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
 			name="PowerBI_API">
@@ -2586,6 +2688,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testcase
+			id="9296f761-d9ec-42b4-aab7-64ac1b4d4637"
+			name="GetBatteryAssessee">
+			</testcase>
 			<testmodule
 			id="9331413a-95e6-4122-8a9f-41bc02bc08cb"
 			name="InternalUserLogin"
@@ -5471,6 +5577,30 @@ rxversion="8.3">
 								name="GetNext_State">
 								</testmodule>
 							</testcase>
+							<testcase
+							id="39b1cecb-0d7e-4daa-a134-c25e0db038e1"
+							name="InsertEmptyAssessment">
+								<testmodule
+								id="3496f3b0-895c-440d-917a-c5f5752cb3bb"
+								name="emptyassement">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="9296f761-d9ec-42b4-aab7-64ac1b4d4637"
+							name="GetBatteryAssessee">
+								<testmodule
+								id="699216bc-57ab-4dc6-b2b5-406862e4f6ee"
+								name="GetBatteryAssessee">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="2166c8b1-a349-4d6f-a42b-ea55802c057a"
+							name="GetBatteryConfiguration">
+								<testmodule
+								id="8a143515-5a58-443b-b083-dc68f8a1a578"
+								name="GetBattery_Configuration">
+								</testmodule>
+							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
 						id="98041b6b-3cd8-422a-93f4-ab23ce4fd382"
@@ -6555,22 +6685,124 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="02ca4b95-a2d6-492f-ab6e-36034c719d59">
+			</testcontainer>
+			<testcontainer
+			id="04421345-e5aa-49b4-b420-101dbea32a24">
+			</testcontainer>
+			<testcontainer
+			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
+			</testcontainer>
+			<testcontainer
+			id="2166c8b1-a349-4d6f-a42b-ea55802c057a">
+			</testcontainer>
+			<testcontainer
+			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
+			</testcontainer>
+			<testcontainer
+			id="270aad2e-c077-43b4-9abc-ac3ac4172cf0">
+			</testcontainer>
+			<testcontainer
+			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc">
+			</testcontainer>
+			<testcontainer
+			id="2e724786-0867-45a5-b61c-3a0714ca1060">
+			</testcontainer>
+			<testcontainer
+			id="39b1cecb-0d7e-4daa-a134-c25e0db038e1">
+			</testcontainer>
+			<testcontainer
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
+			</testcontainer>
+			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
+			</testcontainer>
+			<testcontainer
+			id="58b92a44-15a8-4477-b31a-623a0eaf2292">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
+			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
+			</testcontainer>
+			<testcontainer
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
+			</testcontainer>
+			<testcontainer
+			id="69f50943-5b2d-41d4-ac43-d7cce45967af">
+			</testcontainer>
+			<testcontainer
+			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
+			</testcontainer>
+			<testcontainer
+			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
+			</testcontainer>
+			<testcontainer
+			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b">
+			</testcontainer>
+			<testcontainer
+			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
+			</testcontainer>
+			<testcontainer
+			id="9296f761-d9ec-42b4-aab7-64ac1b4d4637">
+			</testcontainer>
+			<testcontainer
+			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
+			</testcontainer>
+			<testcontainer
+			id="9fe98d67-940d-4451-ae47-83f979151dc2">
+			</testcontainer>
+			<testcontainer
+			id="a039dd84-fa06-45dc-900f-9d8b10c73c69">
+			</testcontainer>
+			<testcontainer
 			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			</testcontainer>
+			<testcontainer
+			id="a95ff794-3df5-4234-b928-480259c0da91">
+			</testcontainer>
+			<testcontainer
+			id="af039c2f-3c95-43e6-8258-aa7b0d2f38f2">
 			</testcontainer>
 			<testcontainer
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
+			id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4">
+			</testcontainer>
+			<testcontainer
 			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 			<testcontainer
+			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
+			</testcontainer>
+			<testcontainer
+			id="caa16dcb-29ad-4f2f-ba50-f65f0670c1c4">
+			</testcontainer>
+			<testcontainer
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
+			</testcontainer>
+			<testcontainer
+			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
+			</testcontainer>
+			<testcontainer
+			id="e00c2baf-18fc-4db9-8f47-941279980274">
+			</testcontainer>
+			<testcontainer
+			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			</testcontainer>
+			<testcontainer
 			id="f93a7981-49b3-43d8-b1db-efc904929c69">
+			</testcontainer>
+			<testcontainer
+			id="fbb6582a-078f-40ce-9d97-9857a442e28e">
+			</testcontainer>
+			<testcontainer
+			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
+			</testcontainer>
+			<testcontainer
+			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
