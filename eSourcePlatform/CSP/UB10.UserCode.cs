@@ -7,6 +7,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -23,14 +24,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 using Newtonsoft.Json.Linq;
-
 namespace CSP
 {
-	
-	
-	
-	
-	public class dataJSONResponse
+	public class dataJSONResponse10
 	{
 		
 		
@@ -38,31 +34,26 @@ namespace CSP
 		
 		
 		
-		public dataJSONResponse()
+		public dataJSONResponse10()
 		{
 			
 		}
-	
-	
-	
-	
-	
-    
-	}
+   
 
-    public partial class UB01
+    }
+	
+	
+    public partial class UB10
     {
-       public string row;
-        
+       
         private void Init()
         {
-            // Your recording specific initialization code goes here.
+            
         }
 
-        public void UpdateBatteryFirstCall(string workflowID, string DOM, string workflowToken, string Batteryid, string rawdata)
+        public void UpdateBarryTen(string workflowID, string DOM, string workflowToken, string Batteryid, string rawdata)
         {
-            
-	      //Setup API call
+           //Setup API call
             string url = "https://" + DOM +  "/api/prsworkflow/" + workflowID + "/UpdateBatteryAssessee";
 		    HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -84,17 +75,16 @@ namespace CSP
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			dataJSONResponse responseObject = new dataJSONResponse();
+			dataJSONResponse10 responseObject = new dataJSONResponse10();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<dataJSONResponse>(response);
+				responseObject = new JavaScriptSerializer().Deserialize<dataJSONResponse10>(response);
 				Report.Log(ReportLevel.Info, "TEST PASSED  " + response );
 				
 			}
         }
 
     }
-
 }

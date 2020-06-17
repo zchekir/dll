@@ -6,7 +6,6 @@
 // http://www.ranorex.com
 //
 ///////////////////////////////////////////////////////////////////////////////
-
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -22,79 +21,57 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
-using Newtonsoft.Json.Linq;
 
 namespace CSP
 {
 	
-	
-	
-	
-	public class dataJSONResponse
+		public class GetNextJSONResponse2
 	{
+		/// <summary>
+		/// Returned qualificaiton status
+		/// </summary>
+		/// need change this
+		public string name { get; set; }
+		public string code { get; set; }
+		public string data { get; set; }
 		
-		
-		public string workflowAuthToken { get; set; }
-		
-		
-		
-		public dataJSONResponse()
+		public GetNextJSONResponse2()
 		{
 			
 		}
-	
-	
-	
-	
-	
+		
     
 	}
-
-    public partial class UB01
+    public partial class G_NextSate
     {
-       public string row;
         
         private void Init()
         {
-            // Your recording specific initialization code goes here.
+            
         }
 
-        public void UpdateBatteryFirstCall(string workflowID, string DOM, string workflowToken, string Batteryid, string rawdata)
+        public void GnextState(string workflowID, string DOM, string workflowToken)
         {
-            
-	      //Setup API call
-            string url = "https://" + DOM +  "/api/prsworkflow/" + workflowID + "/UpdateBatteryAssessee";
-		    HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
+             //Setup API call
+			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/GetNextState?actionId=-2");
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
 			httpRequest.Headers.Add("Authorization", workflowToken);
-			
-		 using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
-			{
-				
-				
-				//Debugging Request
-				Report.Info("Data to send: " + rawdata);
-				
-				sw.Write(rawdata);
-				sw.Flush();
-				sw.Close();
-			}
-			
-			//Get response and store in new object
+			httpRequest.ContentLength=0;
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
-			
-			dataJSONResponse responseObject = new dataJSONResponse();
+			GetNextJSONResponse2 responseObject = new GetNextJSONResponse2();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<dataJSONResponse>(response);
-				Report.Log(ReportLevel.Info, "TEST PASSED  " + response );
+				responseObject = new JavaScriptSerializer().Deserialize<GetNextJSONResponse2>(response);
 				
+				//need change this
+				string  NextState = responseObject.name;
+				
+				Report.Log(ReportLevel.Info,  response);
 			}
         }
 
     }
-
 }

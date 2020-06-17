@@ -29,8 +29,7 @@ namespace CSP
 	
 	
 	
-	
-	public class dataJSONResponse
+	public class dataJSONResponse2
 	{
 		
 		
@@ -38,31 +37,29 @@ namespace CSP
 		
 		
 		
-		public dataJSONResponse()
+		public dataJSONResponse2()
 		{
 			
 		}
 	
-	
-	
-	
-	
     
-	}
 
-    public partial class UB01
+    }
+
+    public partial class UB02
     {
-       public string row;
-        
+        /// <summary>
+        /// This method gets called right after the recording has been started.
+        /// It can be used to execute recording specific initialization code.
+        /// </summary>
         private void Init()
         {
             // Your recording specific initialization code goes here.
         }
 
-        public void UpdateBatteryFirstCall(string workflowID, string DOM, string workflowToken, string Batteryid, string rawdata)
+        public void Update_BatterySecontCall(string workflowID, string DOM, string workflowToken, string Batteryid, string rawdata)
         {
-            
-	      //Setup API call
+            	//Setup API call
             string url = "https://" + DOM +  "/api/prsworkflow/" + workflowID + "/UpdateBatteryAssessee";
 		    HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -84,12 +81,12 @@ namespace CSP
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			dataJSONResponse responseObject = new dataJSONResponse();
+			dataJSONResponse2 responseObject = new dataJSONResponse2();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<dataJSONResponse>(response);
+				responseObject = new JavaScriptSerializer().Deserialize<dataJSONResponse2>(response);
 				Report.Log(ReportLevel.Info, "TEST PASSED  " + response );
 				
 			}
