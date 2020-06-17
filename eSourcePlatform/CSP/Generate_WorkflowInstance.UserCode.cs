@@ -67,6 +67,11 @@ namespace CSP
 		/// </summary>
 		public string supervisorId { get; set; }
 		
+		/// <summary>
+		/// The id of the supervisor condicting the test
+		/// </summary>
+		public string mode { get; set; }
+		
 		/// <summary>----------------------------------------------------------------------------
 		/// Object for creating a new workflow request
 		public AssessmentAttemptJSONRequest(string externalId, string InvalidDOB, string genderCode, string localityCode,
@@ -80,6 +85,7 @@ namespace CSP
 			this.redirect = redirect;
 			this.visitSessionCode = visitSessionCode;
 			this.supervisorId = supervisorId;
+			this.mode = mode;
 		}
 	}
 	
