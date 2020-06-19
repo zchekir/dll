@@ -250,6 +250,14 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="CSPConnector"
+			id="238aec2e-bd61-4769-8093-53486280de98"
+			maxrange="14"
+			minrange="14"
+			name="Ocl_CompletionFail">
+			</testcase>
 			<testmodule
 			id="388c2757-83f2-4168-91b5-fd316210dfad"
 			name="Validate_Outcomes"
@@ -765,6 +773,14 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datarangeactive="True"
+			datasource="CSPConnector"
+			id="7caa5213-f2c7-4d9d-b52f-349dd0f0ac80"
+			maxrange="13"
+			minrange="13"
+			name="Ocl_CompletionPassPerformanceFail">
+			</testcase>
 			<setup
 			id="844a4c9f-d3c3-4643-ac78-a4fe93bc1db6"
 			name="setup">
@@ -933,6 +949,10 @@ rxversion="8.3">
 			id="b171efe1-8c3f-491c-8bc5-8809c8f70fbc"
 			name="setup11">
 			</setup>
+			<smartfoldernode
+			id="b1c2dc52-5d07-414a-a749-77cbc2e4fb56"
+			name="OneBack">
+			</smartfoldernode>
 			<smartfoldernode
 			id="b42ec4ba-5e3e-4fd0-8d19-4680368c0ad9"
 			name="OneCardLearning">
@@ -1580,9 +1600,9 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="e296eb24-ecf0-4194-8bb9-a0649fe8c48e"
-			maxrange="14"
+			maxrange="12"
 			minrange="12"
-			name="Ocl_Tests">
+			name="Ocl_CompletionPassPerformancePass">
 				<parameters>
 					<param
 					name="workflowAuthToken"
@@ -2428,7 +2448,7 @@ rxversion="8.3">
 						name="OneCardLearning">
 							<testcase
 							id="e296eb24-ecf0-4194-8bb9-a0649fe8c48e"
-							name="Ocl_Tests">
+							name="Ocl_CompletionPassPerformancePass">
 								<setup
 								id="a9d61559-f807-4ab2-84a7-0b563900f788"
 								name="setup12">
@@ -2454,6 +2474,18 @@ rxversion="8.3">
 									</testmodule>
 								</teardown>
 							</testcase>
+							<testcase
+							id="7caa5213-f2c7-4d9d-b52f-349dd0f0ac80"
+							name="Ocl_CompletionPassPerformanceFail">
+							</testcase>
+							<testcase
+							id="238aec2e-bd61-4769-8093-53486280de98"
+							name="Ocl_CompletionFail">
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="b1c2dc52-5d07-414a-a749-77cbc2e4fb56"
+						name="OneBack">
 						</smartfoldernode>
 					</smartfoldernode>
 				</testcase>
@@ -2566,7 +2598,7 @@ rxversion="8.3">
 		<DataSource
 		id="00839595-c061-4ba6-b549-fde77bb217c2"
 		includefile="Unchecked"
-		lastknownrowcount="5"
+		lastknownrowcount="4"
 		name="TennantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -2725,16 +2757,25 @@ rxversion="8.3">
 			id="1e336dc5-414f-4385-a516-7d01c2e1a18f">
 			</testcontainer>
 			<testcontainer
+			id="238aec2e-bd61-4769-8093-53486280de98">
+			</testcontainer>
+			<testcontainer
 			id="5ae8a23c-08d6-4c18-88a9-1d632b9afa26">
 			</testcontainer>
 			<testcontainer
 			id="66adc0a5-5ac8-412b-99d2-5fae0ff9e45c">
 			</testcontainer>
 			<testcontainer
+			id="7caa5213-f2c7-4d9d-b52f-349dd0f0ac80">
+			</testcontainer>
+			<testcontainer
 			id="86d48e97-a628-4281-8c4a-3a1f5d3764ec">
 			</testcontainer>
 			<testcontainer
 			id="8f0b6884-0a97-4583-95c2-e96531d517a3">
+			</testcontainer>
+			<testcontainer
+			id="b1c2dc52-5d07-414a-a749-77cbc2e4fb56">
 			</testcontainer>
 			<testcontainer
 			id="b42ec4ba-5e3e-4fd0-8d19-4680368c0ad9">
