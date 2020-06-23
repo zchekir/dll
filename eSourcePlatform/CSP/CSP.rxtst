@@ -1617,8 +1617,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="eSourcePlatformAPI_RegressionTest">
 			</smartfoldernode>
 			<testmodule
@@ -6692,9 +6692,6 @@ rxversion="8.3">
 				<column>
 					S3studyProtocolName
 				</column>
-				<column>
-					data
-				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
@@ -6831,7 +6828,7 @@ rxversion="8.3">
 		<DataSource
 		id="484fa23b-556a-4927-8a66-654602db228f"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="50"
 		name="JSONDATA"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6871,6 +6868,15 @@ rxversion="8.3">
 				</column>
 				<column>
 					UB12
+				</column>
+				<column>
+					BatteryID
+				</column>
+				<column>
+					19015
+				</column>
+				<column>
+					T
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -7444,7 +7450,7 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="02a50b9b-fcda-4073-a4b1-ef464231a85d">
+			id="1e5a5bbc-da24-45b1-9f2f-ed5222e898bc">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">

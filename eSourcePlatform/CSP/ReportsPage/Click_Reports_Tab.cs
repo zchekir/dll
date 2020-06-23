@@ -41,6 +41,7 @@ namespace CSP.ReportsPage
         /// </summary>
         public Click_Reports_Tab()
         {
+            CSPDOM = "cgst-qc-bear.azurewebsites.net";
         }
 
         /// <summary>

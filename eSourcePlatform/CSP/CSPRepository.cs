@@ -251,7 +251,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "";
+        string _CSPDOM = "cgst-qc-bear.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -5859,7 +5859,7 @@ namespace CSP
                 _visitschedulestabInfo = new RepoItemInfo(this, "VisitSchedulesTab", ".//li/a[@innertext>'Visit Schedules']", 30000, null, "77cb1315-8730-46be-bc98-9ac27c0954f6");
                 _workflowstabInfo = new RepoItemInfo(this, "WorkflowsTab", ".//li/a[@innertext>'Workflows']", 30000, null, "da63a96e-f369-4c8e-b990-162b989a20a6");
                 _batteriestabInfo = new RepoItemInfo(this, "BatteriesTab", ".//li/a[@innertext>'Batteries']", 30000, null, "229065bc-cd28-4029-932e-2c26e4bedf6d");
-                _reportstabInfo = new RepoItemInfo(this, "ReportsTab", ".//li/a[@innertext>'Reports']", 30000, null, "150547e6-e11b-4015-a5b2-cd4981b8b761");
+                _reportstabInfo = new RepoItemInfo(this, "ReportsTab", ".//li[8]/a[@innertext='Reports']", 30000, null, "150547e6-e11b-4015-a5b2-cd4981b8b761");
             }
 
             /// <summary>
