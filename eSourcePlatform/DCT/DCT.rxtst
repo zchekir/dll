@@ -407,8 +407,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="35be04f7-0868-499b-af6b-ab1b61b9775d"
+			maxrange="1"
+			minrange="1"
 			name="UseExistingStudyRCC">
 			</smartfoldernode>
 			<testcase
@@ -1261,8 +1264,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="c2d75985-5199-4bdd-be81-00b092003e2d"
+			maxrange="1"
+			minrange="1"
 			name="ValidateTestIdentifierMove_DCT">
 			</smartfoldernode>
 			<testmodule
@@ -1369,8 +1375,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="d4b8534f-2794-473e-9747-934afc8f284d"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="DCT_Regression">
 			</smartfoldernode>
 			<testcase
@@ -2175,7 +2181,7 @@ rxversion="8.3">
 		<DataSource
 		id="36c84863-c4e2-4980-8687-22e322546024"
 		includefile="Unchecked"
-		lastknownrowcount="5"
+		lastknownrowcount="29"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -2256,6 +2262,9 @@ rxversion="8.3">
 					SupervisorId
 				</column>
 				<column>
+					Mode
+				</column>
+				<column>
 					Filename
 				</column>
 				<column>
@@ -2274,7 +2283,7 @@ rxversion="8.3">
 		<DataSource
 		id="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
