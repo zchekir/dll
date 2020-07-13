@@ -280,6 +280,9 @@ namespace engine.Helpers
 	
 	
 	
+	
+	
+	
 	/// <summary>--------------------------------------------------------------------------------------------------------------------------
 	/// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
 	/// </summary>
@@ -692,6 +695,16 @@ namespace engine.Helpers
 			
 		}
 		
+		/// <summary>
+		/// This is a placeholder text. Please describe the purpose of the
+		/// user code method here. The method is published to the user code library
+		/// within a user code collection.
+		/// </summary>
+		[UserCodeMethod]
+		public static void HubDECTVesrsion()
+		{
+			
+		}
 	}
 
 }

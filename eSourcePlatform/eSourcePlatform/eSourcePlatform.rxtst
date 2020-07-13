@@ -461,6 +461,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="1a3b5ec0-43ac-49d3-8ff7-d23f8a3ac01a"
+			name="DCTHubVersion">
+			</testcase>
 			<testmodule
 			id="1a59826a-174a-43e8-b996-7f0e95bfa7cf"
 			name="Click_AcademicExtract_Link"
@@ -522,6 +526,12 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1d286015-fb62-4804-a9e0-8dc6f991a9d1"
+			name="DCTVHUBV"
+			ref="5b5d55fe-e7ec-45a2-a13a-ac13838f4b94"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="1d9928dd-974b-4bf9-b839-09c761466da1"
@@ -1461,8 +1471,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="0"
-			minrange="0"
+			maxrange="2"
+			minrange="2"
 			name="Bear_smokeTest">
 			</smartfoldernode>
 			<testmodule
@@ -3036,6 +3046,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="b77ce62f-f979-4ddc-90ac-3695cefcb4ad"
+			name="HUB&amp;DCT_Vesrions">
+			</smartfoldernode>
 			<testmodule
 			id="b7b33304-a200-44a9-a8c0-01fd98c20188"
 			name="Click_NextButton"
@@ -3389,11 +3403,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="ServerVersionDeployed"
-					value="2.5.0.230">
+					value="2.5.0.264">
 					</param>
 					<param
 					name="ClientVersionDeployed"
-					value="2.5.0-rc.230">
+					value="2.5.0-rc.264">
 					</param>
 					<param
 					name="RandNum"
@@ -3445,7 +3459,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="Rep_DBVersion"
-					value="202006022255344_PRD-2664">
+					value="202006222317439_PRD-3052">
 					</param>
 					<param
 					name="PrimaryOutcome
@@ -5451,6 +5465,18 @@ rxversion="8.3">
 								</testcase>
 							</smartfoldernode>
 						</smartfoldernode>
+						<smartfoldernode
+						id="b77ce62f-f979-4ddc-90ac-3695cefcb4ad"
+						name="HUB&amp;DCT_Vesrions">
+							<testcase
+							id="1a3b5ec0-43ac-49d3-8ff7-d23f8a3ac01a"
+							name="DCTHubVersion">
+								<testmodule
+								id="1d286015-fb62-4804-a9e0-8dc6f991a9d1"
+								name="DCTVHUBV">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 						<teardown
 						id="c18465e9-a71b-4523-9da3-a4353ced7af5"
 						name="teardown">
@@ -5957,9 +5983,6 @@ rxversion="8.3">
 			id="3de66789-7fb1-4996-8500-81d43a94cc32">
 			</testcontainer>
 			<testcontainer
-			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51">
-			</testcontainer>
-			<testcontainer
 			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">
 			</testcontainer>
 			<testcontainer
@@ -6068,6 +6091,9 @@ rxversion="8.3">
 	</testconfigurations>
 	<references>
 		<reference>
+			C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll
+		</reference>
+		<reference>
 			CSP.exe
 		</reference>
 		<reference>
@@ -6075,6 +6101,9 @@ rxversion="8.3">
 		</reference>
 		<reference>
 			engine.dll
+		</reference>
+		<reference>
+			Newtonsoft.Json.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll
