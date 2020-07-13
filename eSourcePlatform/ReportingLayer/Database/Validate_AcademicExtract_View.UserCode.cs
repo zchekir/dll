@@ -72,7 +72,7 @@ namespace ReportingLayer.Database
             string[] expectedColumns = new string[] {"ProtocolID", "StudyName", "Locality Code", "PIName", "SiteID", "TestSupervisor", "SubjectID", "IQnumber", "DOB", "Age",
 														"Sex", "EventName", "DateOfAssessment", "AssessmentDuration", "TestIdentifier", "OrdinalLogs", "OrdinalTaskData",
 														 "ExcludeAssessment", "RCCAssessment", "Test", "TestStart", "TestDuration", "Timeout", "GMLTIndex", "WordList", "Group",
-														  "Position", "TestAttempt", "TestVersion", "TestPhase", "LanguageCode", "Skipped", "Round", "Trial", "StimulusDetails",
+														  "Position", "TestAttempt", "TestVersion", "TestPhase", "TestSubset", "LanguageCode", "Skipped", "Round", "Trial", "StimulusDetails",
 											               "StimulusType", "OnsetTime", "LogTime", "ReactionTime", "ResponseDetails", "ResponseType", "Word", "TileIndex", "CorrectTileIndex",
 											                "DefaultSortOrder", "InternalAssessmentTestId"};
         	int matchedOutcomes = 0;

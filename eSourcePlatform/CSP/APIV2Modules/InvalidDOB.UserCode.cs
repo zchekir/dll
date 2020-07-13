@@ -127,7 +127,7 @@ namespace CSP.APIV2Modules
 
         public void Invalid_DOB(string AuthToken, string studyProtocolName, string DOM, string dob1, string genderCode, string localityCode, string postError, string POST)
         {
-            
+            Report.Log(ReportLevel.Info, AuthToken);
         	try{
 			//variable
 			string url = "https://"+ DOM +"/api/external/V2/AutomationStudy/AssessmentAttempt";

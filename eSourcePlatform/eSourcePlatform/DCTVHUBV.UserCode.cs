@@ -37,6 +37,7 @@ namespace eSourcePlatform
         public string Version;
         public string TenantName;
         public string StudyFilters;
+        public string EntryAssembly;
     }
   
 public class rowsJSONResponseA
@@ -60,7 +61,12 @@ public class rowsJSONResponseA
 
 	public partial class DCTVHUBV
     {
-       
+       //varibles :
+            private const string V8HandlerJobs ="Cogstate.Integration.V8HandlerJobs";
+            private const string V8AdapterJobs ="Cogstate.Integration.V8AdapterJobs";
+            private const string RedCapAdapterJob  ="Cogstate.Integration.RedCapAdapterJobs";
+            private const string RedCapHandlerJobs ="Cogstate.Integration.RedCapHandlerJobs";
+            private const string AbsorbWebJobs  ="Cogstate.Absorb.WebJobs";
         private void Init()
         {
             
@@ -68,6 +74,8 @@ public class rowsJSONResponseA
 
         public void VersionHUB(string EvKey, string Ahuky, string Query, string TimeStmp)
         {
+        	
+        	
            
 				
 			var httpClient = new HttpClient();
@@ -84,27 +92,76 @@ public class rowsJSONResponseA
             var responseObject =Newtonsoft.Json.JsonConvert.DeserializeAnonymousType(responseString, anonymousTypeObject);
             
             var assemblyVersionString = responseObject.tables.First().rows.First().ElementAt(3);
-
-            AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(assemblyVersionString);
             
-            //Expected Hub Vesrion:
-            string ExpHubversion="2.1.0-rc.2135";
-            string ExpTenantNameversion="cgst-qc-jackson-hub";
-                 
-             //Validating the version: 
+            
+            foreach( var row in  responseObject.tables.First().rows){
+            	
+            	var rowData = row.ElementAt(3);
+            	
+            	
+            AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
+          
+           var entryAssembly = version.EntryAssembly.Split(',').First();
+        
+           // Report.Log(ReportLevel.Info,rowData);
+            
+            
+           
+            if(entryAssembly == V8HandlerJobs){
              
-             Validate.AreEqual("HubVersion: "+ version.Version ,"HubVersion: "+ ExpHubversion);
-             Validate.AreEqual("TenntName: "+version.TenantName ,"TenntName: "+ ExpTenantNameversion);
+              Validate.AreEqual("V8Handler_Jobs: "+ version.Version ,"V8Handler_Jobs: "+ V8Handler_Jobs);
+             
+             }
+            
+            else if(entryAssembly == V8AdapterJobs)
+            
+            {
+                	
+                	Validate.AreEqual("V8Adapter_Jobs: "+ version.Version ,"V8Adapter_Jobs: "+ V8Adapter_Jobs);
+            }
+            
+            else if(entryAssembly == RedCapAdapterJob)
+            
+            {
+            	
+            	Validate.AreEqual("RedCapAdapter_Job: "+ version.Version ,"RedCapAdapter_Job: "+ RedCapAdapter_Job);
+            }
+            
+            else if(entryAssembly == RedCapHandlerJobs)
+            
+            {
+            	
+            	  Validate.AreEqual("RedCapHandler_Jobs: "+ version.Version ,"RedCapHandler_Jobs: "+ RedCapHandler_Jobs);
+            	
+           }
+            
+            else if(entryAssembly == AbsorbWebJobs){
+            	
+            	Validate.AreEqual("Absorb_WebJobs: "+ version.Version ,"Absorb_WebJobs: "+ Absorb_WebJobs);
+            }
+            
+            
+            else {
+            	
+            	Report.Log(ReportLevel.Info,"Something is wrong");
+            }
+             
+      
+             
+ 
+ }
+
+           
            
                                                 	
-                              	  
-          
-
-				
-				
-				
+   }
+        
+        
+        
         }
-        }
+	
+	
+	
 
     }
 

@@ -450,65 +450,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<modulegroup
-			enabled="False"
-			id="202da9fd-94ca-4cec-ac94-41a99774fba0"
-			name="Validate_AssessmentTestOutcome_Entries"
-			ref="82e15b71-7d32-4608-84dc-fa42010b35d6">
-				<description>
-					<![CDATA[Need to add datafile for all tests for this to pass]]>
-				</description>
-				<databinding>
-					<var
-					dataname="CSPUsername"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="88a0d055-4944-434b-b4c8-130dae1723c4"
-					variablename="CSPUsername">
-					</var>
-					<var
-					dataname="CSPPassword"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="fc6236c7-f78d-4f68-a8ac-2ee35560a2d0"
-					variablename="CSPPassword">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="26798268-5dd7-44ca-a034-15793b10df02"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="5984a8a0-8f85-4f15-8775-519e997d73fe"
-					variablename="Authentication">
-					</var>
-					<var
-					dataname="StudyName"
-					datasourceid="b916a7cd-0937-4170-9e22-f4293b4efb3e"
-					variableid="98853b4d-1119-4f43-bc03-47482a434309"
-					variablename="StudyName">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
-					variableid="a349fb96-e051-4aff-bd84-9f338981dbc0"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
-					variableid="dd302a70-d29e-472d-bc85-54a719b5de2f"
-					variablename="TestIdentifier">
-					</var>
-					<var
-					dataname="RptDatabase"
-					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
-					variableid="bb6fe3ca-241a-4b0f-9252-049aa731cb27"
-					variablename="Database">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testmodule
 			id="211892da-f6f5-404d-b345-07dd3cda8d72"
 			name="Click_Tools_Menu"
@@ -1994,8 +1935,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="7eb647ac-fff1-427a-a00c-fb97f0647f07"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Regression">
 			</smartfoldernode>
 			<testmodule
@@ -2971,6 +2912,12 @@ rxversion="8.3">
 					datasourceid="16497588-c5a2-4ae8-9607-36b6dd5cd974"
 					variableid="72f9fd39-079c-4f76-a947-2a49e9350a9d"
 					variablename="AssessmentURL">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c75408c7-6f28-40e4-99db-5081560f7749"
+					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
+					variablename="Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5021,23 +4968,19 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 							<testcase
+							id="d7e2215f-d7d3-4192-9025-0663a9fde957"
+							name="Validate_AssessmentOutcome_Tables">
+								<testmodule
+								id="bc5ecf69-9363-4e0d-a3e6-9aeceee54053"
+								name="Validate_AssessmentOutcomeCard_Entry">
+								</testmodule>
+							</testcase>
+							<testcase
 							id="afa76047-1ea9-45dd-86ad-8be46464851b"
 							name="Validate_AssessmentTestResponse_Table">
 								<testmodule
 								id="a5fe634e-ac40-44af-b425-cfe69c922974"
 								name="Validate_AssessmentTestResp_Entry">
-								</testmodule>
-							</testcase>
-							<testcase
-							id="d7e2215f-d7d3-4192-9025-0663a9fde957"
-							name="Validate_AssessmentOutcome_Tables">
-								<modulegroup
-								id="202da9fd-94ca-4cec-ac94-41a99774fba0"
-								name="Validate_AssessmentTestOutcome_Entries">
-								</modulegroup>
-								<testmodule
-								id="bc5ecf69-9363-4e0d-a3e6-9aeceee54053"
-								name="Validate_AssessmentOutcomeCard_Entry">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -5354,7 +5297,7 @@ rxversion="8.3">
 		<DataSource
 		id="c75408c7-6f28-40e4-99db-5081560f7749"
 		includefile="Unchecked"
-		lastknownrowcount="29"
+		lastknownrowcount="44"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

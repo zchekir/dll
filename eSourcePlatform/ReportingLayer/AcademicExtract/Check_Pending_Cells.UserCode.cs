@@ -30,7 +30,7 @@ namespace ReportingLayer.AcademicExtract
 		
 	{
 		int i;
-		Boolean isPending = false;
+		Boolean isPending;
 		DataTable dt = new DataTable();
 		
 		// Timer.Equals(2)
@@ -64,6 +64,9 @@ namespace ReportingLayer.AcademicExtract
 			//do while the peeding data appears in DB
 			do{
 				
+				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow
+				isPending = false;
+				
 				do{
 					string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 					
@@ -85,7 +88,6 @@ namespace ReportingLayer.AcademicExtract
 					if(dt.Rows[0][i].ToString() == "<Pending>")
 					{
 						isPending = true;
-						
 						Delay.Seconds(4);
 					}
 					
@@ -102,6 +104,7 @@ namespace ReportingLayer.AcademicExtract
 					}
 					break;
 				}
+				
 			} while (isPending);
 			
 			

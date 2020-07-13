@@ -44,7 +44,12 @@ namespace eSourcePlatform
             EvKey = "7458ea80-554e-4189-94b8-8595bfa32acd";
             Ahuky = "5do0t5w0hu2oz0i1or3wqiouc3vr0zfzwnwvzusz";
             Query = "customEvents%20%7C%20where%20name%20%3D%3D%20'WebJobStartupInfo'%20%7C%20order%20by%20timestamp%20desc";
-            TimeStmp = "PT500H";
+            TimeStmp = "PT6H";
+            V8Handler_Jobs = "";
+            V8Adapter_Jobs = "";
+            RedCapAdapter_Job = "";
+            RedCapHandler_Jobs = "";
+            Absorb_WebJobs = "";
         }
 
         /// <summary>
@@ -103,6 +108,66 @@ namespace eSourcePlatform
         {
             get { return _TimeStmp; }
             set { _TimeStmp = value; }
+        }
+
+        string _V8Handler_Jobs;
+
+        /// <summary>
+        /// Gets or sets the value of variable V8Handler_Jobs.
+        /// </summary>
+        [TestVariable("d96bffec-e326-4932-8f38-a28b116ed73b")]
+        public string V8Handler_Jobs
+        {
+            get { return _V8Handler_Jobs; }
+            set { _V8Handler_Jobs = value; }
+        }
+
+        string _V8Adapter_Jobs;
+
+        /// <summary>
+        /// Gets or sets the value of variable V8Adapter_Jobs.
+        /// </summary>
+        [TestVariable("a1431fa0-b4c9-4e1e-b314-448a110c95da")]
+        public string V8Adapter_Jobs
+        {
+            get { return _V8Adapter_Jobs; }
+            set { _V8Adapter_Jobs = value; }
+        }
+
+        string _RedCapAdapter_Job;
+
+        /// <summary>
+        /// Gets or sets the value of variable RedCapAdapter_Job.
+        /// </summary>
+        [TestVariable("e70366e3-e9a3-4a37-b078-f4ccd543f095")]
+        public string RedCapAdapter_Job
+        {
+            get { return _RedCapAdapter_Job; }
+            set { _RedCapAdapter_Job = value; }
+        }
+
+        string _RedCapHandler_Jobs;
+
+        /// <summary>
+        /// Gets or sets the value of variable RedCapHandler_Jobs.
+        /// </summary>
+        [TestVariable("99105b6a-a1e2-4dc0-9ab2-8f6dce3ccf63")]
+        public string RedCapHandler_Jobs
+        {
+            get { return _RedCapHandler_Jobs; }
+            set { _RedCapHandler_Jobs = value; }
+        }
+
+        string _Absorb_WebJobs;
+
+        /// <summary>
+        /// Gets or sets the value of variable Absorb_WebJobs.
+        /// </summary>
+        [TestVariable("492151c8-842f-4c8c-b54b-bbec4fc72c37")]
+        public string Absorb_WebJobs
+        {
+            get { return _Absorb_WebJobs; }
+            set { _Absorb_WebJobs = value; }
         }
 
 #endregion

@@ -149,6 +149,7 @@ namespace CSP.APIV2Modules
 
         public void WorkflowInstance2(string AuthToken, string studyProtocolName, string DOM, string InvalidDOB, string genderCode, string localityCode, string postError, string mode, string post)
         {
+        	Report.Log(ReportLevel.Info, AuthToken);
         	try{
 			//variable
 			string url = "https://"+ DOM +"/api/external/V2/AutomationStudy/AssessmentAttempt";
@@ -199,9 +200,9 @@ namespace CSP.APIV2Modules
         	}
 			catch (Exception e)
              {
-             
-			 String Error403 = "The remote server returned an error: (403) Forbidden.";	
-             Validate.AreEqual(Error403 , e.Message);
+            // Report.Log(ReportLevel.Info,e.Message);
+			String Error403 = "The remote server returned an error: (403) Forbidden.";	
+            Validate.AreEqual(e.Message, Error403 );
              
              }
         }

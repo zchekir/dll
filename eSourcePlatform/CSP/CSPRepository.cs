@@ -251,7 +251,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "";
+        string _CSPDOM = "cgst-qc-bear.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -5859,7 +5859,7 @@ namespace CSP
                 _visitschedulestabInfo = new RepoItemInfo(this, "VisitSchedulesTab", ".//li/a[@innertext>'Visit Schedules']", 30000, null, "77cb1315-8730-46be-bc98-9ac27c0954f6");
                 _workflowstabInfo = new RepoItemInfo(this, "WorkflowsTab", ".//li/a[@innertext>'Workflows']", 30000, null, "da63a96e-f369-4c8e-b990-162b989a20a6");
                 _batteriestabInfo = new RepoItemInfo(this, "BatteriesTab", ".//li/a[@innertext>'Batteries']", 30000, null, "229065bc-cd28-4029-932e-2c26e4bedf6d");
-                _reportstabInfo = new RepoItemInfo(this, "ReportsTab", ".//li/a[@innertext>'Reports']", 30000, null, "150547e6-e11b-4015-a5b2-cd4981b8b761");
+                _reportstabInfo = new RepoItemInfo(this, "ReportsTab", ".//li[8]/a[@innertext='Reports']", 30000, null, "150547e6-e11b-4015-a5b2-cd4981b8b761");
             }
 
             /// <summary>
@@ -9107,7 +9107,7 @@ namespace CSP
             public S3ManagementConsoleAppFolder(RepoGenBaseFolder parentFolder) :
                     base("S3ManagementConsole", "/dom[@domain='s3.console.aws.amazon.com']", parentFolder, 30000, null, false, "6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd", "")
             {
-                _cgstqcbearfolderInfo = new RepoItemInfo(this, "CgstqcbearFolder", ".//tag[#'buckets-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@innertext='cgstqcbear']", 30000, null, "071c155b-ee46-4a5e-989e-200ef6afd9fa");
+                _cgstqcbearfolderInfo = new RepoItemInfo(this, "CgstqcbearFolder", ".//div[#'sidebarNavDiv']/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[2]/a[@innertext='cgstqcbear']", 30000, null, "071c155b-ee46-4a5e-989e-200ef6afd9fa");
                 _openexportfolderInfo = new RepoItemInfo(this, "OpenExportFolder", ".//a[@innertext~'^\\ export_']", 30000, null, "560d7791-d9fd-4504-b175-a660851c0926");
                 _clickdownloadInfo = new RepoItemInfo(this, "ClickDownload", ".//tag[#'download']/button", 30000, null, "70732b83-61d5-43e8-9ca8-8c665961916e");
                 _clicklastmodifierInfo = new RepoItemInfo(this, "ClickLastModifier", ".//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span", 30000, null, "491bff12-4b12-4a73-9ac8-cd2f508de522");

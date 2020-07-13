@@ -589,12 +589,12 @@ rxversion="8.3">
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
-				capname="buttontag"
+				capname="inputtag"
 				id="49e8515c-f881-46a5-a470-f09db46ae3b8"
 				name="LanguageDropdown"
 				refimgid="f7d9ad9b-1614-465d-b17c-127e847306f4"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//table/tbody/tr/td/div/div/div/div/?/?/button
+					/dom[@domain=$RCCDOM]//input[#'language_input']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
