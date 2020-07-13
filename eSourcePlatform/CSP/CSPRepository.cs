@@ -9107,7 +9107,7 @@ namespace CSP
             public S3ManagementConsoleAppFolder(RepoGenBaseFolder parentFolder) :
                     base("S3ManagementConsole", "/dom[@domain='s3.console.aws.amazon.com']", parentFolder, 30000, null, false, "6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd", "")
             {
-                _cgstqcbearfolderInfo = new RepoItemInfo(this, "CgstqcbearFolder", ".//tag[#'buckets-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@innertext='cgstqcbear']", 30000, null, "071c155b-ee46-4a5e-989e-200ef6afd9fa");
+                _cgstqcbearfolderInfo = new RepoItemInfo(this, "CgstqcbearFolder", ".//div[#'sidebarNavDiv']/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[2]/a[@innertext='cgstqcbear']", 30000, null, "071c155b-ee46-4a5e-989e-200ef6afd9fa");
                 _openexportfolderInfo = new RepoItemInfo(this, "OpenExportFolder", ".//a[@innertext~'^\\ export_']", 30000, null, "560d7791-d9fd-4504-b175-a660851c0926");
                 _clickdownloadInfo = new RepoItemInfo(this, "ClickDownload", ".//tag[#'download']/button", 30000, null, "70732b83-61d5-43e8-9ca8-8c665961916e");
                 _clicklastmodifierInfo = new RepoItemInfo(this, "ClickLastModifier", ".//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span", 30000, null, "491bff12-4b12-4a73-9ac8-cd2f508de522");

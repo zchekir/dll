@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -407,8 +407,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="35be04f7-0868-499b-af6b-ab1b61b9775d"
+			maxrange="1"
+			minrange="1"
 			name="UseExistingStudyRCC">
 			</smartfoldernode>
 			<testcase
@@ -806,70 +809,10 @@ rxversion="8.3">
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="GmailPassword"
+					dataname="Subject"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
-					</var>
-					<var
-					dataname="GmailAddress"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="SendPdfReportOnComplete"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
-					variablename="SendPdfReportOnComplete">
-					</var>
-					<var
-					dataname="SendZippedReportOnComplete"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
-					variablename="SendZippedReportOnComplete">
-					</var>
-					<var
-					dataname="SendEmailOnSuccess"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="670a378a-e239-43e7-8325-c216fd11f190"
-					variablename="SendEmailOnSuccess">
-					</var>
-					<var
-					dataname="SendEmailOnFailure"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
-					variablename="SendEmailOnFailure">
-					</var>
-					<var
-					dataname="UseSSL"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
-					variablename="UseSSL">
-					</var>
-					<var
-					dataname="ServerPort"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
-					variablename="ServerPort">
-					</var>
-					<var
-					dataname="ServerHostname"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
-					variablename="ServerHostname">
-					</var>
-					<var
-					dataname="From"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
-					variablename="From">
-					</var>
-					<var
-					dataname="To"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
-					variablename="To">
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
 					</var>
 					<var
 					dataname="Body"
@@ -878,10 +821,70 @@ rxversion="8.3">
 					variablename="Body">
 					</var>
 					<var
-					dataname="Subject"
+					dataname="To"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
-					variablename="Subject">
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendPdfReportOnComplete"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1261,8 +1264,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="c2d75985-5199-4bdd-be81-00b092003e2d"
+			maxrange="1"
+			minrange="1"
 			name="ValidateTestIdentifierMove_DCT">
 			</smartfoldernode>
 			<testmodule
@@ -1369,8 +1375,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="d4b8534f-2794-473e-9747-934afc8f284d"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="DCT_Regression">
 			</smartfoldernode>
 			<testcase
@@ -2277,7 +2283,7 @@ rxversion="8.3">
 		<DataSource
 		id="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

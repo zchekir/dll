@@ -79,8 +79,8 @@ namespace CSP.AmazonS3
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'S3ManagementConsole.CgstqcbearFolder' at Center.", repo.S3ManagementConsole.CgstqcbearFolderInfo, new RecordItemIndex(1));
             repo.S3ManagementConsole.CgstqcbearFolder.Click();

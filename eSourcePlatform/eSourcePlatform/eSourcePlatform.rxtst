@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -361,8 +361,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3"
+			maxrange="0"
+			minrange="0"
 			name="Complete_DCTMove">
 			</smartfoldernode>
 			<testmodule
@@ -1461,8 +1464,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="1"
-			minrange="1"
+			maxrange="2"
+			minrange="2"
 			name="Bear_smokeTest">
 			</smartfoldernode>
 			<testmodule
@@ -2382,8 +2385,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="963c8551-514c-4fc5-b5b5-9a2a8842639e"
+			maxrange="0"
+			minrange="0"
 			name="Use_Existing_Study_RCC">
 			</smartfoldernode>
 			<testmodule
@@ -2888,8 +2894,11 @@ rxversion="8.3">
 			name="Configure_Battery">
 			</testcase>
 			<testcase
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed"
+			maxrange="0"
+			minrange="0"
 			name="OpenStudy(ExistingStudy)">
 			</testcase>
 			<testmodule
@@ -5588,7 +5597,7 @@ rxversion="8.3">
 		<DataSource
 		id="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5955,9 +5964,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="3de66789-7fb1-4996-8500-81d43a94cc32">
-			</testcontainer>
-			<testcontainer
-			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51">
 			</testcontainer>
 			<testcontainer
 			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">

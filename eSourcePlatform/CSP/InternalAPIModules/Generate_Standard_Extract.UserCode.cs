@@ -53,7 +53,7 @@ namespace CSP.InternalAPIModules
             
             // Setting up Get status API call header:
                                              //STUDID
-            string extractAPI ="/api/studies/163629/extract/2";
+            string extractAPI ="/api/studies/1208/extract/2";
         	string url="https://"+ DOM + extractAPI;
         	
         	HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);

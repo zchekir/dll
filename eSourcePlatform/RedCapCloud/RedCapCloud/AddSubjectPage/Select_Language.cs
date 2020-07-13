@@ -41,6 +41,7 @@ namespace RedCapCloud.AddSubjectPage
         /// </summary>
         public Select_Language()
         {
+            RCCDOM = "cogstate.login.redcapcloud.com";
         }
 
         /// <summary>
@@ -89,15 +90,21 @@ namespace RedCapCloud.AddSubjectPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.LanguageDropdown' at Center.", repo.REDCapCloud.SubjectsPage.LanguageDropdownInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.LanguageDropdown' at Center.", repo.REDCapCloud.SubjectsPage.LanguageDropdownInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.LanguageDropdown.Click(1);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.EnglishUS' at Center.", repo.REDCapCloud.SubjectsPage.EnglishUSInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
+            Delay.Duration(500, false);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.EnglishUS' at Center.", repo.REDCapCloud.SubjectsPage.EnglishUSInfo, new RecordItemIndex(3));
             //repo.REDCapCloud.SubjectsPage.EnglishUS.Click(1);
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.USEnglish' at Center.", repo.REDCapCloud.SubjectsPage.USEnglishInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.USEnglish' at Center.", repo.REDCapCloud.SubjectsPage.USEnglishInfo, new RecordItemIndex(4));
             repo.REDCapCloud.SubjectsPage.USEnglish.Click();
             Delay.Milliseconds(200);
             

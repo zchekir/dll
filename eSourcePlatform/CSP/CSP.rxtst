@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1264,12 +1264,6 @@ rxversion="8.3">
 					variablename="externalId">
 					</var>
 					<var
-					dataname="AuthToken"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="629d353e-1f59-4cda-ab26-3852bb8ced7a"
-					variablename="AuthToken">
-					</var>
-					<var
 					dataname="AssessmentURL"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="1d47e533-d318-4236-950e-dc1df2297ed5"
@@ -1322,6 +1316,12 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="80ac7718-4372-466c-9c57-b1b8c0d422e0"
 					variablename="mode">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="629d353e-1f59-4cda-ab26-3852bb8ced7a"
+					variablename="AuthToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2088,11 +2088,11 @@ rxversion="8.3">
 					</param>
 					<param
 					name="Swager-URL"
-					value="https://cgst-qc-bear.azurewebsites.net/swagger/">
+					value="https://cgst-qcpd.azurewebsites.net/swagger/">
 					</param>
 					<param
 					name="Swager-Key&amp;Secret"
-					value="{{&quot;key&quot;: &quot;2ce1bc13-5d4d-4007-b57e-bb1dd32abba5&quot;,&quot;secret&quot;: &quot;657f31f0-5c9f-4047-931c-30390cab531a&quot;}">
+					value="{{&quot;key&quot;: &quot;002db461-56ca-4900-902f-c14df436f93e&#13;&#10;&quot;,&quot;secret&quot;: &quot;a213794e-f1aa-4125-a98f-ae661eb9d32a&#13;&#10;&quot;}">
 					</param>
 					<param
 					name="Swager-StudProtocol"
@@ -2132,7 +2132,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="Batteryid"
-					value="19015">
+					value="324">
 					</param>
 				</parameters>
 			</testcase>
@@ -2896,8 +2896,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="85989da3-ed34-4122-a9c9-92f2a80b27d1"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Workflowinstance_">
 			</testcase>
 			<testcase
@@ -4043,8 +4043,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="beb5dd77-b674-4865-ba3b-e0a869db1797"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="AuthenticateToServer">
 			</testcase>
 			<testmodule
@@ -5387,8 +5387,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="ReprocessWorkFlowFlag">
 			</testcase>
 			<testmodule
@@ -6828,7 +6828,7 @@ rxversion="8.3">
 		<DataSource
 		id="484fa23b-556a-4927-8a66-654602db228f"
 		includefile="Checked"
-		lastknownrowcount="50"
+		lastknownrowcount="54"
 		name="JSONDATA"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -7461,6 +7461,15 @@ rxversion="8.3">
 			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
 			</testcontainer>
 			<testcontainer
+			id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3">
+			</testcontainer>
+			<testcontainer
+			id="297a9b13-970e-4958-b03a-c2e11d8c8b2b">
+			</testcontainer>
+			<testcontainer
+			id="520ac760-a35a-4fc6-9843-432ad67a0c24">
+			</testcontainer>
+			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
@@ -7525,6 +7534,27 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
+			</testcontainer>
+			<testcontainer
+			id="85989da3-ed34-4122-a9c9-92f2a80b27d1">
+			</testcontainer>
+			<testcontainer
+			id="94a90920-fc42-4618-be9b-d08b78ac8657">
+			</testcontainer>
+			<testcontainer
+			id="b7da2a83-ee5f-4213-8cba-9a385251c5ff">
+			</testcontainer>
+			<testcontainer
+			id="beb5dd77-b674-4865-ba3b-e0a869db1797">
+			</testcontainer>
+			<testcontainer
+			id="ce924ca6-26b5-4e19-bafc-3215d58a64c7">
+			</testcontainer>
+			<testcontainer
+			id="e7ca9258-e7bb-4156-8af0-bb4669001dad">
+			</testcontainer>
+			<testcontainer
+			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
