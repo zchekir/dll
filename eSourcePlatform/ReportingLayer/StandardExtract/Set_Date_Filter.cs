@@ -91,27 +91,44 @@ namespace ReportingLayer.StandardExtract
             repo.PowerBI.DateOfAssessmentFilter.Expand.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to 'Relative date' on item 'PowerBI.DateOfAssessmentFilter.FilterTypeDropdown'.", repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdownInfo, new RecordItemIndex(3));
-            repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdown.Element.SetAttributeValue("TagValue", "Relative date");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.FilterTypeDropdown' at Center.", repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdownInfo, new RecordItemIndex(3));
+            repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdown.Click();
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'R' with focus on 'PowerBI.DateOfAssessmentFilter.FilterTypeDropdown'.", repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdownInfo, new RecordItemIndex(4));
+            repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdown.PressKeys("R");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '1' on item 'PowerBI.DateOfAssessmentFilter.IsInThisDropdown'.", repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdownInfo, new RecordItemIndex(5));
-            repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdown.Element.SetAttributeValue("TagValue", "1");
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'PowerBI.DateOfAssessmentFilter.FilterTypeDropdown'.", repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdownInfo, new RecordItemIndex(5));
+            repo.PowerBI.DateOfAssessmentFilter.FilterTypeDropdown.PressKeys("{Return}");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(6));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute TagValue to '3' on item 'PowerBI.DateOfAssessmentFilter.DayDropdown'.", repo.PowerBI.DateOfAssessmentFilter.DayDropdownInfo, new RecordItemIndex(7));
-            repo.PowerBI.DateOfAssessmentFilter.DayDropdown.Element.SetAttributeValue("TagValue", "3");
-            Delay.Milliseconds(100);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.ApplyFilterButton' at Center.", repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButtonInfo, new RecordItemIndex(8));
-            repo.PowerBI.DateOfAssessmentFilter.ApplyFilterButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.IsInThisDropdown' at Center.", repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdownInfo, new RecordItemIndex(7));
+            repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdown.Click();
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press with focus on 'PowerBI.DateOfAssessmentFilter.IsInThisDropdown'.", repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdownInfo, new RecordItemIndex(8));
+            Keyboard.PrepareFocus(repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdown);
+            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'PowerBI.DateOfAssessmentFilter.IsInThisDropdown'.", repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdownInfo, new RecordItemIndex(9));
+            repo.PowerBI.DateOfAssessmentFilter.IsInThisDropdown.PressKeys("{Return}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}'.", new RecordItemIndex(10));
+            Keyboard.Press("{Tab}{Tab}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(11));
+            Keyboard.Press("{Return}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(12));
+            Delay.Duration(500, false);
             
         }
 

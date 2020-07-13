@@ -49,8 +49,9 @@ namespace engine.Helpers
 		/// <param name="username">Username credential for the server</param>
 		/// <param name="password">Password credential for the server</param>
 		/// <param name="authentication">The authenticaiton method for connecting to the database. This is only needed for connecting using domain username and password</param>
+		/// <param name="testIdentifier">Unique identifier for the assessment to search for in the database</param>
 		[UserCodeMethod]
-		public static void GetAssessmentOutcomes(string dbserver, string database, string username, string password, string authentication)
+		public static void GetAssessmentOutcomes(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
 			dt.Reset();
 			
@@ -205,8 +206,14 @@ namespace engine.Helpers
 			
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 
+			//Assign the Test Identifier obtained from within the engine to the local parameter
+			//This will allow the outcomes to be obtained for new studies and existing studies
+			if (WebService.TestIdentifier !=  null) {
+				testIdentifier = WebService.TestIdentifier;
+			}
+			
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
-			da.SelectCommand.Parameters.AddWithValue("@testIdentifier", WebService.TestIdentifier);
+			da.SelectCommand.Parameters.AddWithValue("@testIdentifier", testIdentifier);
 			
 			//Send the query to the database and store the results in a DataTable, the loop here will allow for the situation
 			//where the results take longer than usual to be processed and appear in the Database.
@@ -222,6 +229,9 @@ namespace engine.Helpers
 				Report.Info("Rows found by query: " + dt.Rows.Count.ToString());
 				
 			} while (dt.Rows.Count < 1);
+			
+			//Set class variable back to empty, ready for next run
+			WebService.TestIdentifier = null;
 			
 		}
 		

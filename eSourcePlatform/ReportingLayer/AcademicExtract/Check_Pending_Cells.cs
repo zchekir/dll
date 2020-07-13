@@ -41,12 +41,12 @@ namespace ReportingLayer.AcademicExtract
         /// </summary>
         public Check_Pending_Cells()
         {
-            TestIdentifier = "";
-            DBServer = "";
-            RptDatabase = "";
-            CSPUsername = "";
-            CSPPassword = "";
-            Authentication = "";
+            TestIdentifier = "E00C148B-3D73-44E0-8AC9-024C50AB397B";
+            DBServer = "cgst-qc.database.windows.net";
+            RptDatabase = "cgst-bear-rpt";
+            CSPUsername = "zchekir@cogstate.com";
+            CSPPassword = "Cogstate2016";
+            Authentication = "Active Directory Password";
         }
 
         /// <summary>

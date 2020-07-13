@@ -46,12 +46,13 @@ namespace CSP.APIV2Modules
             DOM = "";
             genderCode = "";
             localityCode = "";
-            postError = "";
-            post = "";
+            redirectError = "";
+            redirect = "";
             visitSessionCode = "";
             supervisorid = "";
             TestIdentifier = "";
             externalid = "";
+            mode = "";
         }
 
         /// <summary>
@@ -124,28 +125,28 @@ namespace CSP.APIV2Modules
             set { _localityCode = value; }
         }
 
-        string _postError;
+        string _redirectError;
 
         /// <summary>
-        /// Gets or sets the value of variable postError.
+        /// Gets or sets the value of variable redirectError.
         /// </summary>
         [TestVariable("9890c6b6-58d3-4e7b-9fcc-8b647e1af4b3")]
-        public string postError
+        public string redirectError
         {
-            get { return _postError; }
-            set { _postError = value; }
+            get { return _redirectError; }
+            set { _redirectError = value; }
         }
 
-        string _post;
+        string _redirect;
 
         /// <summary>
-        /// Gets or sets the value of variable post.
+        /// Gets or sets the value of variable redirect.
         /// </summary>
         [TestVariable("e71ec1da-f47d-4dfa-ab50-156efac5f95a")]
-        public string post
+        public string redirect
         {
-            get { return _post; }
-            set { _post = value; }
+            get { return _redirect; }
+            set { _redirect = value; }
         }
 
         string _visitSessionCode;
@@ -196,6 +197,18 @@ namespace CSP.APIV2Modules
             set { _externalid = value; }
         }
 
+        string _mode;
+
+        /// <summary>
+        /// Gets or sets the value of variable mode.
+        /// </summary>
+        [TestVariable("21c8d05d-c01a-4f91-8ef4-c9a37b7daef1")]
+        public string mode
+        {
+            get { return _mode; }
+            set { _mode = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -222,7 +235,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            R_runworkflow(AuthToken, studyProtocolName, DOM, genderCode, localityCode, postError, post, visitSessionCode, supervisorid, TestIdentifier, externalid);
+            R_runworkflow(AuthToken, studyProtocolName, DOM, genderCode, localityCode, redirectError, redirect, visitSessionCode, supervisorid, TestIdentifier, externalid, mode);
             Delay.Milliseconds(0);
             
         }

@@ -52,7 +52,7 @@ rxversion="8.3">
 			id="fe539034-422e-4b97-8136-eeaa45ce38bb"
 			name="ClearTestSelections"
 			refimgid="19c667ce-3dfe-46fc-96dd-a2c4c7d22692"
-			searchtimeout="30000ms">
+			searchtimeout="120000ms">
 				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']
 			</item>
 			<item
@@ -104,21 +104,21 @@ rxversion="8.3">
 			usecache="False">
 				<item
 				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
+				capname="webelement"
 				id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
 				name="IsInThisDropdown"
 				refimgid="6402487c-dbc6-466f-8fad-2ee46b18902f"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//tag[9]//form[@name='$ctrl.filterForm']/div/select[1]
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-134']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
+				capname="webelement"
 				id="4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b"
 				name="DayDropdown"
 				refimgid="4d46f1aa-3f9f-44a0-88fe-c3fa3fad8bb4"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']//tag[9]//form[@name='$ctrl.filterForm']/div/select[2]
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-132']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -131,12 +131,12 @@ rxversion="8.3">
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
-				capname="selecttag"
+				capname="webelement"
 				id="db43cf6c-681a-40a7-a643-376f7e2b8282"
 				name="FilterTypeDropdown"
 				refimgid="bbda9ddf-cf12-490f-b68b-4172bd4e2b86"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//select
+					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-9']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -162,38 +162,38 @@ rxversion="8.3">
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="40d412d5-8b78-4348-9447-a234369e8239"
-				name="SiteIDSlicerBody"
-				refimgid="c314e032-35e0-4b14-9639-ffb32921f57c"
-				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[2]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="0e008d86-0ddf-4e4c-8ae9-004c800e9b4a"
-				name="DateSlicerBody"
-				refimgid="b5b02dd7-1c2c-41bb-a6b5-cf2b692076f4"
-				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[3]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
 				id="24bcc0f6-d704-4074-8bf3-fe0f5c103d26"
 				name="TestIDSlicerBody"
 				refimgid="cd879f7d-1f0d-4fa6-a872-694dc2c18e30"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[4]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[4]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]
 				</item>
 				<item
 				addcaps="unknown,webelement,divtag"
 				capname="divtag"
-				id="1ad77429-0d51-41bd-bee5-f147ca3ce09b"
+				id="3f99a176-f3af-4e53-8c11-f115069afc48"
 				name="TestSlicerBody"
-				refimgid="31d2adf2-92a1-481e-ae99-cb1c731a2d08"
+				refimgid="dccbe562-8f1e-4aa3-9737-06f551baddfe"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[5]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[5]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b05ef6a2-43ac-4d29-b839-242c690c08ac"
+				name="SiteIDSlicerBody"
+				refimgid="c6c2f917-dac2-4f0e-b2de-23958d5558f3"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[2]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="af1f76d8-01ad-4387-9c5a-ce6d35897376"
+				name="DateSlicerBody"
+				refimgid="4d1a0dcb-2d03-44f4-a7b7-e1cd9a2ae52b"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']/tag[3]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]
 				</item>
 				<basepath>
 					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']
@@ -401,6 +401,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="a0579069-e2a3-47be-9d8f-92cfed3c7d44"
 		name="CSPUsername">
+			zchekir@cogstate.com
 		</var>
 	</variables>
 </repository>

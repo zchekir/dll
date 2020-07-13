@@ -1768,7 +1768,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ReportsTab"
 				refimgid="a3e11fdb-5349-4489-9a3d-29705fb866cc"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-study-children-tabs']//li/a[@innertext&gt;'Reports']
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-study-children-tabs']//li[8]/a[@innertext='Reports']
 				</item>
 				<basepath>
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-study-children-tabs']
@@ -2463,16 +2463,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="678ca1e6-765a-44d1-81b0-32b66b4efaa7"
-			name="GmailButton"
-			refimgid="38774826-dc46-4101-8a45-09c0d569f7fb"
-			refpath="/dom[@domain='myaccount.google.com']//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/div[2]/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/div[2]/a[@href='https://mail.google.com/']"
-			searchtimeout="30000ms">
-				/dom[@domain='myaccount.google.com']//body[#'yDmH0d']/div[2]/tag[@tagname='c-wiz']/div/div/div[5]/?/?/tag[@tagname='c-wiz']/div/div[1]/div/div[1]/?/?/a[@href='https://mail.google.com/']
-			</item>
-			<item
 			addcaps="unknown,webelement"
 			capname="webelement"
 			id="0c6ccdc2-0b64-403b-9670-3413e2f3b7df"
@@ -2601,15 +2591,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='mail.google.com']//span/span[@innertext~'Cogstate user account created']
 			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="4881023c-d0e2-4218-a317-de8c83bee79c"
-			name="SearchInbox"
-			refimgid="fb96701d-a343-4a84-90df-736c164744a1"
-			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//form[#'aso_search_form_anchor']/?/?/input
-			</item>
 			<basepath>
 				/dom[@domain='mail.google.com']
 			</basepath>
@@ -2677,6 +2658,26 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='login.microsoftonline.com']//div[#'otherTileText']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="5c82fa8a-e86c-41e7-8207-90d971ac228e"
+			name="PasswordField"
+			refimgid="e6ea40cd-6caa-4302-af3f-858eb9fc7e8b"
+			refpath="/dom[@domain='login.microsoftonline.com' and @caption='Sign in to your account' and @page='authorize' and @path='/cogstateIT.onmicrosoft.com/oauth2/authorize' and @browsername='Chrome' and @pageurl~'^https://login\.microsoftonline\.com/cogstateIT\.onmicrosoft\.com/oauth2/authorize\?response_type=id_token&amp;client_id=1d71a947-e7d7-4edb-8622-085589b5f200&amp;redirect_uri=https%3A%2F%2Fcgst-qc-bear\.azurewebsites\.net%2F%23%2F&amp;state=bf8b0231-d5ce-44b9-9b72-1afd52602594&amp;cl']//input[#'i0118']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'i0118']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="fbcc6722-d4ad-46db-8a35-0686300dbf5b"
+			name="SignInButton"
+			refimgid="f9eb5351-9184-44b7-9ab6-8a2bdbe7479c"
+			refpath="/dom[@domain='login.microsoftonline.com' and @caption='Sign in to your account' and @page='authorize' and @path='/cogstateIT.onmicrosoft.com/oauth2/authorize' and @browsername='Chrome' and @pageurl~'^https://login\.microsoftonline\.com/cogstateIT\.onmicrosoft\.com/oauth2/authorize\?response_type=id_token&amp;client_id=1d71a947-e7d7-4edb-8622-085589b5f200&amp;redirect_uri=https%3A%2F%2Fcgst-qc-bear\.azurewebsites\.net%2F%23%2F&amp;state=133db204-bb08-49b5-ad20-2a8af7c5ab15&amp;cl']//input[#'idSIButton9']"
+			searchtimeout="30000ms">
+				/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']
+			</item>
 			<basepath>
 				/dom[@domain='login.microsoftonline.com']
 			</basepath>
@@ -2714,16 +2715,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			refpath="/dom[@domain='login.cogstate.com']//input[#'userNameInput']"
 			searchtimeout="30000ms">
 				/dom[@domain='login.cogstate.com']//input[#'userNameInput']
-			</item>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="8c5fcfcd-1fe7-4214-94df-5fe56363fb4f"
-			name="PasswordInput"
-			refimgid="d0690aaa-9520-4390-b09a-62e50ecb8aab"
-			refpath="/dom[@domain='login.cogstate.com']//input[#'passwordInput']"
-			searchtimeout="30000ms">
-				/dom[@domain='login.cogstate.com']//input[#'passwordInput']
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -2848,6 +2839,278 @@ RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
 AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="2cb5d9b1-78a7-4a32-828f-e7d1d5780c86"
+		isrooted="True"
+		name="SwaggerUI"
+		refpath="/dom[@domain='cgst-qc-bear.azurewebsites.net' and @caption='Swagger UI']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,h2tag"
+			capname="h2tag"
+			id="70328fbe-f8c2-4fe5-b36c-2f8edf3ec8d7"
+			name="CogstateEmbeddedAPI"
+			refimgid="4125d754-99b0-437d-ad6b-f617b294d623"
+			searchtimeout="30000ms">
+				/dom[@caption='Swagger UI']//h2[@innertext='Cogstate Embedded API']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="53dd57cb-a7fa-4803-9c4f-00d7222d9603"
+			name="ClickTryItOut"
+			refimgid="6fef1c58-d54b-4e65-b380-daca46a72161"
+			searchtimeout="30000ms">
+				/dom[@caption='Swagger UI']//button[@innertext='Try it out ']
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="28ced478-c1b3-4a34-95a1-f1a4f162c789"
+			name="KeySecret"
+			refimgid="f5937312-aa40-4493-9115-8f9c2c6d14ed"
+			searchtimeout="30000ms">
+				/dom[@caption='Swagger UI']//textarea[@innertext~'^\{\ \ &quot;key&quot;:\ &quot;abc123&quot;,\ \ &quot;s']
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="7e0fe3cf-a70a-4fcd-b835-698d46b8280b"
+			name="EnterCredentials"
+			refimgid="8bb4240b-b1bb-42c9-af13-8442328a478f"
+			searchtimeout="30000ms">
+				/dom[@caption='Swagger UI']//textarea[@required='False']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="dddf930f-9a25-4ef9-98e8-f0e772b0ba03"
+			name="ClickExecute"
+			refimgid="3a1bb6d9-2d97-42e0-a9e8-6b1a03d1a152"
+			searchtimeout="30000ms">
+				/dom[@caption='Swagger UI']//button[@innertext='Execute']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="9823d05d-fbc7-4869-9e3f-9424ea30b009"
+			name="StudyProtocolName"
+			refimgid="ad86659a-acd8-4bd5-b85e-cbe0e39b04b0"
+			searchtimeout="30000ms">
+				/dom[@caption='Swagger UI']//input[@title='']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="7f4da6cb-50a7-45c0-af10-7106d33f7058"
+			name="N200Codevalidation"
+			refimgid="8cac27c0-05f9-4ea5-8022-8b019de8688e"
+			searchtimeout="30000ms">
+				/dom[@caption='Swagger UI']//td[@innertext='200']
+			</item>
+			<basepath>
+				/dom[@caption='Swagger UI']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="96dba55a-d263-463d-9881-a01dcbe2e79d"
+		isrooted="True"
+		name="AmazonWebServicesSignIn"
+		refpath="/dom[@domain='us-east-1.signin.aws.amazon.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="0698a2cf-f856-401e-88af-0ba574a80eac"
+			name="WASUserName"
+			refimgid="29b0e0aa-fe23-4cc8-841e-2426358a7813"
+			refpath="/dom[@domain='us-east-1.signin.aws.amazon.com']//input[#'account']"
+			searchtimeout="30000ms">
+				/dom[@domain='us-east-1.signin.aws.amazon.com']//input[#'account']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="35605955-657e-4d8d-b404-4d7d53426579"
+			name="IAMusername"
+			refimgid="c17c4892-de30-4411-bfe0-cabb0d872de8"
+			refpath="/dom[@domain='us-east-1.signin.aws.amazon.com']//input[#'username']"
+			searchtimeout="30000ms">
+				/dom[@domain='us-east-1.signin.aws.amazon.com']//input[#'username']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="01028f45-3d56-40d3-9c48-c3c7d837c17f"
+			name="WASPassword"
+			refimgid="4e2ac8de-bdf1-4dea-8106-63f2a938121c"
+			refpath="/dom[@domain='us-east-1.signin.aws.amazon.com']//input[#'password']"
+			searchtimeout="30000ms">
+				/dom[@domain='us-east-1.signin.aws.amazon.com']//input[#'password']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="2b408794-e540-4b00-9cea-e680609825d2"
+			name="WASSigninButton"
+			refimgid="596abb36-eb5b-467a-8630-ecfc5c050a5e"
+			refpath="/dom[@domain='us-east-1.signin.aws.amazon.com']//a[#'signin_button']"
+			searchtimeout="30000ms">
+				/dom[@domain='us-east-1.signin.aws.amazon.com']//a[#'signin_button']
+			</item>
+			<basepath>
+				/dom[@domain='us-east-1.signin.aws.amazon.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121"
+		isrooted="True"
+		name="AWSManagementConsole"
+		refpath="/dom[@domain='ap-northeast-1.console.aws.amazon.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="spantag"
+			id="1620b680-057b-4323-ad33-e6bddc91bccb"
+			name="ClickS3"
+			refimgid="103ac89c-2581-492d-b515-3c0bf3dce2ce"
+			searchtimeout="30000ms">
+				/dom[@domain='ap-northeast-1.console.aws.amazon.com']//a[#'S3']/span[@innertext='S3']
+			</item>
+			<basepath>
+				/dom[@domain='ap-northeast-1.console.aws.amazon.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd"
+		isrooted="True"
+		name="S3ManagementConsole"
+		refpath="/dom[@domain='s3.console.aws.amazon.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="071c155b-ee46-4a5e-989e-200ef6afd9fa"
+			name="CgstqcbearFolder"
+			refimgid="fe5287c3-3b89-4964-b3e2-f53c56a1bee2"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[2]/a[@innertext='cgstqcbear']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="560d7791-d9fd-4504-b175-a660851c0926"
+			name="OpenExportFolder"
+			refimgid="9618497a-e8d1-481a-9b0a-66088b603d08"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//a[@innertext~'^\ export_']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="70732b83-61d5-43e8-9ca8-8c665961916e"
+			name="ClickDownload"
+			refimgid="b0d256fc-3427-4a29-b3a8-2f87582c2629"
+			refpath="/dom[@domain='s3.console.aws.amazon.com']//tag[#'download']/button"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'download']/button
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="491bff12-4b12-4a73-9ac8-cd2f508de522"
+			name="ClickLastModifier"
+			refimgid="42c06ded-1c4b-4040-a09f-67954ba2d77f"
+			refpath="/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div/div/span/div/tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]/tag[@tagname='awsui-tooltip']/span/span/tag[@tagname='table-sort-icon']/span"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span
+			</item>
+			<item
+			addcaps="unknown,webelement,ultag"
+			capname="ultag"
+			id="d9a49db5-3d31-4461-8ef1-1e19746e184c"
+			name="CloseWASAPP"
+			refimgid="db037c47-9ad0-4519-99ab-b62cffeba75d"
+			refpath="/dom[@domain='s3.console.aws.amazon.com']//ul[#'nav-shortcutBar']"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//ul[#'nav-shortcutBar']
+			</item>
+			<basepath>
+				/dom[@domain='s3.console.aws.amazon.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -2919,7 +3182,7 @@ AAAASUVORK5CYII=
 		<var
 		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 		name="CSPDOM">
-			cgst-qc-jill.azurewebsites.net
+			cgst-qc-bear.azurewebsites.net
 		</var>
 		<var
 		id="cca33cb1-e6e4-4dea-927e-63ce1b157653"

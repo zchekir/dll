@@ -22,6 +22,255 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<modulegroupdef
+			id="0260ed29-99e4-4d6b-9b87-8410c6625e3c"
+			name="Generate_Workflow_Complete_Assessment">
+				<groupvariables>
+					<groupvariable
+					id="8de02f58-222b-414e-96ad-e9c15f8b6659"
+					name="CSPDOM">
+						<modulevariable
+						moduleref="b2c7068f-df86-4e33-89ab-d1618c493455"
+						name="CSPDOM"
+						variableref="9aaefa3f-959c-43d5-b70b-4ab58b9160f0">
+						</modulevariable>
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="CSPDOM"
+						variableref="1d05b902-cc15-48e1-99d9-dfc534871d94">
+						</modulevariable>
+						<modulevariable
+						moduleref="080563c5-c454-429e-9525-8891bc937921"
+						name="CSPDOM"
+						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
+						</modulevariable>
+						<modulevariable
+						moduleref="a33f3c75-145d-49dd-bae7-8d6df39ae0d9"
+						name="CSPDOM"
+						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="cf7d1bfe-7294-4f84-8bc4-428b3272dbcb"
+					id="4d6cbcf6-900c-4569-8956-244b2653c27d"
+					name="Key">
+						<modulevariable
+						moduleref="b2c7068f-df86-4e33-89ab-d1618c493455"
+						name="Key"
+						variableref="f186491e-a988-4bd5-8270-b971bccb2bd9">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="5268fa42-8060-4bb6-b159-7da0d8b60d10"
+					id="ba620796-828c-428e-9b13-d85f4be21c4e"
+					name="Secret">
+						<modulevariable
+						moduleref="b2c7068f-df86-4e33-89ab-d1618c493455"
+						name="Secret"
+						variableref="280f8c82-fde0-4bbf-8603-40d1ee3acfea">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="78bf3f9b-b323-4464-9889-e8cd9f157b23"
+					name="ProtocolNumber">
+						<modulevariable
+						moduleref="b2c7068f-df86-4e33-89ab-d1618c493455"
+						name="ProtocolNumber"
+						variableref="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e">
+						</modulevariable>
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="ProtocolNumber"
+						variableref="4b0a9c84-d41d-4d3c-b3c7-03dee9ee893c">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="8ebe58f3-9b76-42bc-9bf3-a9d977e2118c"
+					name="AuthToken">
+						<modulevariable
+						moduleref="b2c7068f-df86-4e33-89ab-d1618c493455"
+						name="AuthToken"
+						variableref="a58c803b-45a0-422a-b242-a4569698b2a9">
+						</modulevariable>
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="AuthToken"
+						variableref="640023f9-9c6a-4a88-8722-9526acc509cc">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="visit1"
+					id="7eac9cf8-ba56-42c2-a636-15d6a084d60f"
+					name="VisitSessionCode">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="VisitSessionCode"
+						variableref="5cf91dfd-49d7-4276-8188-104b3707a7e7">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="en_US"
+					id="60b1f69b-d1dd-4a28-a175-d6693e5d9225"
+					name="LocalityCode">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="LocalityCode"
+						variableref="8dd6b8c2-2a52-4502-8866-9304c3644c52">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="www.facebook.com"
+					id="4f7da5de-66a0-4103-854e-0ee8caf678a5"
+					name="Redirect">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="Redirect"
+						variableref="0844a293-2dc9-4219-9cb3-cafcd0f168bd">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="WWW.GOOGLE.COM"
+					id="21578795-48c0-4fff-bf8b-0c8091a99315"
+					name="RedirectError">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="RedirectError"
+						variableref="74e43bb7-921d-45b5-ba71-a320656a11fc">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="m"
+					id="95afe779-f531-419b-993d-0612713e8251"
+					name="GenderCode">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="GenderCode"
+						variableref="2e1366ad-da48-4246-816e-fa44895ddd07">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="2000-01-01"
+					id="0b9d4948-7b0c-4fc0-9fbb-8ac10bfe9799"
+					name="DOB">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="DOB"
+						variableref="baaaad91-5ccd-4dd6-9cbd-d4523f1da5cb">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="1"
+					id="31c41373-3f2b-48a8-b83b-64fb4aaf5973"
+					name="SupervisorId">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="SupervisorId"
+						variableref="fd2e40a7-d9e4-422c-b1d3-6c9247b2458e">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="93e4bfa0-2f29-414f-9ae5-8276f5b0ea1e"
+					name="ExternalID">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="ExternalId"
+						variableref="0e972c7a-57eb-4293-a7cc-32e75ea62d02">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="3fe91562-c0f8-4be5-af6a-95d7dda06693"
+					name="TestIdentifier">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="TestIdentifier"
+						variableref="54bb55db-35b3-4db2-90ca-cb42cec494b3">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="f3bcd965-4425-441b-b18a-3512b1189042"
+					name="AssessmentURL">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="AssessmentURL"
+						variableref="72f9fd39-079c-4f76-a947-2a49e9350a9d">
+						</modulevariable>
+						<modulevariable
+						moduleref="080563c5-c454-429e-9525-8891bc937921"
+						name="AssessmentURL"
+						variableref="6bf84b0d-f821-4b49-9db5-05d3ac3fb92b">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="7eecd5f0-66f9-4e1f-b674-3ba5769b3e40"
+					name="Mode">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="Mode"
+						variableref="f4f9ca38-7f8c-45a9-aabe-272a2438d295">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="315538a9-ba27-4e5d-8910-74abc9b554ef"
+					name="workflowAuthToken">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="workflowAuthToken"
+						variableref="db9fb9f3-37be-4e92-b0f5-999f6407f381">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="f9cfa37a-d55c-468f-956c-cf08b8e1bb59"
+					name="workflowInstanceId">
+						<modulevariable
+						moduleref="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+						name="workflowInstanceId"
+						variableref="de52f5d1-b544-4f72-9206-1d2571bad1c5">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="9e1d3cfb-dca3-4dbb-bcbf-4ad87514d69f"
+					name="Browser">
+						<modulevariable
+						moduleref="080563c5-c454-429e-9525-8891bc937921"
+						name="Browser"
+						variableref="a1be029a-029a-4a3f-b030-460030e98ea4">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					id="a8e520f2-467d-461d-aeb1-8a56effc7b50"
+					name="Filename">
+						<modulevariable
+						moduleref="a33f3c75-145d-49dd-bae7-8d6df39ae0d9"
+						name="Filename"
+						variableref="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4">
+						</modulevariable>
+					</groupvariable>
+					<groupvariable
+					defaultvalue="dwood@cogstate.com"
+					id="d3761076-4d12-4180-a6b9-abd19c4bf9e5"
+					name="dbUsername">
+					</groupvariable>
+					<groupvariable
+					id="e4b938d0-461b-4900-85b1-c24a71a41a07"
+					name="dbPassword">
+					</groupvariable>
+					<groupvariable
+					defaultvalue="cgst-qcpd.database.windows.net"
+					id="2ea26d30-7bf3-4306-a89b-bd7a79f82951"
+					name="DBServer">
+					</groupvariable>
+					<groupvariable
+					defaultvalue="cgst-api"
+					id="c319749a-87ba-4610-873e-1f12e62a4d24"
+					name="Database">
+					</groupvariable>
+					<groupvariable
+					defaultvalue="Active Directory Password"
+					id="4e08d43c-f997-4f4c-926d-8ee359f6fb74"
+					name="Authentication">
+					</groupvariable>
+				</groupvariables>
+			</modulegroupdef>
+			<modulegroupdef
 			id="04b0e867-8b4f-4386-8b17-d54cc8298354"
 			name="Login">
 				<groupvariables>
@@ -56,6 +305,11 @@ rxversion="8.3">
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
+						<modulevariable
+						moduleref="d33fccd4-09b8-4995-a0dc-8b8e431540b9"
+						name="CSPDOM"
+						variableref="c59e98a9-af90-425a-a863-ec2f781db678">
+						</modulevariable>
 					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
@@ -69,6 +323,12 @@ rxversion="8.3">
 			id="07e5b7c2-2369-456e-b17d-511873dc4a7a"
 			name="Enter_BatteryName"
 			ref="157f6f2d-b2ab-4440-b182-aa4e196e76d6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="080563c5-c454-429e-9525-8891bc937921"
+			name="Run_WorkflowInstance"
+			ref="62a7ba5a-056d-4bd2-878a-716d185011cb"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -574,6 +834,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+			name="Generate_WorkflowInstance"
+			ref="9a2b9fff-5819-4334-8d9a-6b84b58d99f8"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7a79f4ef-ae43-442e-b222-e42db2b2106a"
 			name="Click_SaveButton"
 			ref="642467a9-e26f-4da9-9ff5-afd3cb130fde"
@@ -747,6 +1013,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a33f3c75-145d-49dd-bae7-8d6df39ae0d9"
+			name="Upload_RawData"
+			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a511b295-11b3-4fed-a007-8e88c8d1ab7f"
 			name="Get_Secret"
 			ref="b5c1f78b-d628-4e9c-83b0-597bcacc9905"
@@ -760,12 +1032,12 @@ rxversion="8.3">
 					id="c5cdeeb3-af2d-4a90-9ec9-9394afbd8f1f"
 					name="CSPDOM">
 						<modulevariable
-						moduleref="68a40eb6-304e-42e8-bace-e009bd2115b3"
+						moduleref="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
 						<modulevariable
-						moduleref="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
+						moduleref="68a40eb6-304e-42e8-bace-e009bd2115b3"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
@@ -826,6 +1098,21 @@ rxversion="8.3">
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
 						<modulevariable
+						moduleref="ea103005-9405-450f-9e75-8f7991b318da"
+						name="CSPDOM"
+						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
+						</modulevariable>
+						<modulevariable
+						moduleref="f725382c-47ef-4334-88c8-4f21efca8124"
+						name="CSPDOM"
+						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
+						</modulevariable>
+						<modulevariable
+						moduleref="bcd9b42f-3728-4b31-bda5-20eb6b826464"
+						name="CSPDOM"
+						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
+						</modulevariable>
+						<modulevariable
 						moduleref="da571f87-c8c0-427a-aa8b-6cd217e25c37"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
@@ -842,21 +1129,6 @@ rxversion="8.3">
 						</modulevariable>
 						<modulevariable
 						moduleref="006dd96f-be1f-4b21-86e8-366747985457"
-						name="CSPDOM"
-						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
-						</modulevariable>
-						<modulevariable
-						moduleref="ea103005-9405-450f-9e75-8f7991b318da"
-						name="CSPDOM"
-						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
-						</modulevariable>
-						<modulevariable
-						moduleref="f725382c-47ef-4334-88c8-4f21efca8124"
-						name="CSPDOM"
-						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
-						</modulevariable>
-						<modulevariable
-						moduleref="bcd9b42f-3728-4b31-bda5-20eb6b826464"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
@@ -947,6 +1219,12 @@ rxversion="8.3">
 					</groupvariable>
 				</groupvariables>
 			</modulegroupdef>
+			<testmodule
+			id="b2c7068f-df86-4e33-89ab-d1618c493455"
+			name="External_Authenticate"
+			ref="12a04901-7274-43ed-b5af-fcce25c1eba3"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="b48c1a68-4987-4ea3-9ec3-ae48a4366a9d"
 			name="Click_External_Users_Menu"
@@ -1118,17 +1396,17 @@ rxversion="8.3">
 					id="f3715aeb-4b60-4dc9-b478-c1ab28717be7"
 					name="CSPDOM">
 						<modulevariable
+						moduleref="22cebe01-6723-47c8-9075-7c27a4556ab5"
+						name="CSPDOM"
+						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
+						</modulevariable>
+						<modulevariable
 						moduleref="b48c1a68-4987-4ea3-9ec3-ae48a4366a9d"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
 						<modulevariable
 						moduleref="9f20873c-d193-4aa1-a5f7-ec51ed6c98cc"
-						name="CSPDOM"
-						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
-						</modulevariable>
-						<modulevariable
-						moduleref="22cebe01-6723-47c8-9075-7c27a4556ab5"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
@@ -1207,12 +1485,12 @@ rxversion="8.3">
 					id="eb16cfdf-12de-4e2e-a85b-369d59f328bc"
 					name="CSPDOM">
 						<modulevariable
-						moduleref="cc7f7c1a-49e5-446d-b847-4188fbe55db7"
+						moduleref="4f3cc4c9-9713-435f-9f29-5fa3f8e8ae72"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
 						<modulevariable
-						moduleref="4f3cc4c9-9713-435f-9f29-5fa3f8e8ae72"
+						moduleref="cc7f7c1a-49e5-446d-b847-4188fbe55db7"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
@@ -2084,6 +2362,26 @@ rxversion="8.3">
 					<testmodule
 					id="a511b295-11b3-4fed-a007-8e88c8d1ab7f"
 					name="Get_Secret">
+					</testmodule>
+				</modulegroupdef>
+				<modulegroupdef
+				id="0260ed29-99e4-4d6b-9b87-8410c6625e3c"
+				name="Generate_Workflow_Complete_Assessment">
+					<testmodule
+					id="b2c7068f-df86-4e33-89ab-d1618c493455"
+					name="External_Authenticate">
+					</testmodule>
+					<testmodule
+					id="78a6c37d-02e0-45d8-bc46-7ea8fda487bc"
+					name="Generate_WorkflowInstance">
+					</testmodule>
+					<testmodule
+					id="080563c5-c454-429e-9525-8891bc937921"
+					name="Run_WorkflowInstance">
+					</testmodule>
+					<testmodule
+					id="a33f3c75-145d-49dd-bae7-8d6df39ae0d9"
+					name="Upload_RawData">
 					</testmodule>
 				</modulegroupdef>
 			</modulegroups>

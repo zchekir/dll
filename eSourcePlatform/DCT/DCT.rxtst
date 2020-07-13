@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -286,11 +286,11 @@ rxversion="8.3">
 					</param>
 					<param
 					name="DCTSubject"
-					value="SC-7227">
+					value="SC-7865">
 					</param>
 					<param
 					name="Study"
-					value="AutomationStudy">
+					value="AutomationStudy2">
 					</param>
 					<param
 					name="DCT_Version"
@@ -407,8 +407,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="35be04f7-0868-499b-af6b-ab1b61b9775d"
+			maxrange="1"
+			minrange="1"
 			name="UseExistingStudyRCC">
 			</smartfoldernode>
 			<testcase
@@ -916,6 +919,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8935c853-5612-499c-a483-b25c3426c2d2"
+			name="Click_CompositeOutcomes"
+			ref="a0facf25-a588-4552-a677-9b16e996a9d9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="89852fcf-fd10-4999-9e55-c7a8457d4d04"
 			name="CloseDCT"
 			ref="7bceac10-42f9-4317-8de5-3e37a1b5b379"
@@ -1247,8 +1264,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="c2d75985-5199-4bdd-be81-00b092003e2d"
+			maxrange="1"
+			minrange="1"
 			name="ValidateTestIdentifierMove_DCT">
 			</smartfoldernode>
 			<testmodule
@@ -1339,20 +1359,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="cb88997b-d739-4092-b023-d81b85eea2ca"
-			name="Click_DataConfirmation"
-			ref="62ff2cdc-5712-4e1c-bbba-4c51f5e9daf2"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RCCDOM"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
-					variablename="RCCDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="cd210b7b-7978-4d3e-aa2a-fcadb2c17ba3"
 			name="Validate_Primary">
@@ -1369,8 +1375,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="d4b8534f-2794-473e-9747-934afc8f284d"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="DCT_Regression">
 			</smartfoldernode>
 			<testcase
@@ -1789,8 +1795,8 @@ rxversion="8.3">
 								name="Click_First_Visit">
 								</testmodule>
 								<testmodule
-								id="cb88997b-d739-4092-b023-d81b85eea2ca"
-								name="Click_DataConfirmation">
+								id="8935c853-5612-499c-a483-b25c3426c2d2"
+								name="Click_CompositeOutcomes">
 								</testmodule>
 								<testmodule
 								id="e54a05f6-9fbb-43b5-9e3a-a54ecc12b950"
@@ -2175,7 +2181,7 @@ rxversion="8.3">
 		<DataSource
 		id="36c84863-c4e2-4980-8687-22e322546024"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="44"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -2241,10 +2247,22 @@ rxversion="8.3">
 					LocalityCode
 				</column>
 				<column>
+					Redirect
+				</column>
+				<column>
+					RedirectError
+				</column>
+				<column>
+					GenderCode
+				</column>
+				<column>
 					DOB
 				</column>
 				<column>
 					SupervisorId
+				</column>
+				<column>
+					Mode
 				</column>
 				<column>
 					Filename
@@ -2265,7 +2283,7 @@ rxversion="8.3">
 		<DataSource
 		id="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -2406,6 +2424,12 @@ rxversion="8.3">
 					DCTURL
 				</column>
 				<column>
+					Key
+				</column>
+				<column>
+					Secret
+				</column>
+				<column>
 					AzureDOM
 				</column>
 				<column>
@@ -2425,6 +2449,18 @@ rxversion="8.3">
 				</column>
 				<column>
 					Authentication
+				</column>
+				<column>
+					WASurl
+				</column>
+				<column>
+					WASusername
+				</column>
+				<column>
+					WASimuser name
+				</column>
+				<column>
+					WASpassword
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -2451,13 +2487,73 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="020433af-5ef1-42f8-b2e7-9b5d0a7b40ef">
+			</testcontainer>
+			<testcontainer
 			id="04939054-fa65-495b-a740-482356616b3b">
+			</testcontainer>
+			<testcontainer
+			id="08010772-2a6d-489b-aca2-c618ceb9b0ad">
+			</testcontainer>
+			<testcontainer
+			id="0a065941-10c5-46a1-bbb5-9a67c5cd47e2">
+			</testcontainer>
+			<testcontainer
+			id="0f3aa374-f8de-46a7-9f82-a8b91f372f10">
+			</testcontainer>
+			<testcontainer
+			id="15ac3f39-47c0-4ae9-bfe8-76638555ed7b">
 			</testcontainer>
 			<testcontainer
 			id="260f734b-e6c2-4f2d-97c6-b7a156b86674">
 			</testcontainer>
 			<testcontainer
+			id="2d9468c8-1eda-45ed-9b44-4a06c3476022">
+			</testcontainer>
+			<testcontainer
+			id="35be04f7-0868-499b-af6b-ab1b61b9775d">
+			</testcontainer>
+			<testcontainer
+			id="373ffbb5-abd3-4c23-bf09-ef84586a9d78">
+			</testcontainer>
+			<testcontainer
+			id="3b5ccf13-84c6-4218-8f3d-9b0dfa5e6d47">
+			</testcontainer>
+			<testcontainer
+			id="58901188-271c-4822-8f92-e8784cdd1036">
+			</testcontainer>
+			<testcontainer
+			id="5911ef58-8304-43d9-b260-094b16655bd2">
+			</testcontainer>
+			<testcontainer
+			id="5f0f4458-3f1d-4e74-9716-22522793de4b">
+			</testcontainer>
+			<testcontainer
+			id="63ecb58c-f5cd-4a29-b3a1-20a73847b73c">
+			</testcontainer>
+			<testcontainer
+			id="6a543fb1-3315-4057-82be-54c1b0b91690">
+			</testcontainer>
+			<testcontainer
+			id="6e3be3f3-089e-4425-afe5-fef03f0bd6e2">
+			</testcontainer>
+			<testcontainer
 			id="74c2b7a6-fe75-420d-8f7a-9e727c474c75">
+			</testcontainer>
+			<testcontainer
+			id="7929e989-dc82-481b-a5ae-5e108085bda6">
+			</testcontainer>
+			<testcontainer
+			id="81b746a9-45cf-456b-8373-d37af80754ed">
+			</testcontainer>
+			<testcontainer
+			id="8232ed42-fc87-43ae-87f3-fdbe90bd0698">
+			</testcontainer>
+			<testcontainer
+			id="84a7955b-32a9-438c-acf8-1a61ece6008e">
+			</testcontainer>
+			<testcontainer
+			id="84e74d84-74db-4b6a-b3a7-babbad3de13f">
 			</testcontainer>
 			<testcontainer
 			id="853a6bba-9006-4cea-915e-ee1a0a266d20">
@@ -2469,19 +2565,40 @@ rxversion="8.3">
 			id="a0a3d9dc-c455-4c12-b230-52ef67c3aecc">
 			</testcontainer>
 			<testcontainer
+			id="a1d29b24-b861-49ab-a73e-2ec65d5b8c8a">
+			</testcontainer>
+			<testcontainer
 			id="aa43591e-302d-494e-aafe-3d9e88fb4c8d">
 			</testcontainer>
 			<testcontainer
 			id="bae5f56b-527c-49c5-a650-c3597f30a7cf">
 			</testcontainer>
 			<testcontainer
+			id="bddeda6a-c59b-476b-a22c-0ecc5ac77fec">
+			</testcontainer>
+			<testcontainer
 			id="c0d6bc80-5258-4d7b-8654-b86961360de9">
+			</testcontainer>
+			<testcontainer
+			id="c2d75985-5199-4bdd-be81-00b092003e2d">
+			</testcontainer>
+			<testcontainer
+			id="cd210b7b-7978-4d3e-aa2a-fcadb2c17ba3">
 			</testcontainer>
 			<testcontainer
 			id="cd928523-e04d-4468-bb10-969d941ab4dd">
 			</testcontainer>
 			<testcontainer
+			id="ce514155-4e5f-4393-8f46-81a9e929ea2e">
+			</testcontainer>
+			<testcontainer
 			id="d4b8534f-2794-473e-9747-934afc8f284d">
+			</testcontainer>
+			<testcontainer
+			id="d6608ccf-e3ee-4482-9435-096321557190">
+			</testcontainer>
+			<testcontainer
+			id="d6a8ed19-df2c-47dd-8e8b-d1def21197fc">
 			</testcontainer>
 			<testcontainer
 			id="d92e5488-d303-4096-a1d0-479e5d2b57b3">
@@ -2490,13 +2607,25 @@ rxversion="8.3">
 			id="e2b442b0-4d53-4420-b3ca-7dca2b2fe5bc">
 			</testcontainer>
 			<testcontainer
+			id="e36938b4-3f31-4c7d-9165-3a073252c310">
+			</testcontainer>
+			<testcontainer
 			id="e4966f0f-a50b-4f61-bcc3-c2865b6d79d7">
 			</testcontainer>
 			<testcontainer
 			id="e6d436ed-0a07-4913-a5f0-3deb7c676360">
 			</testcontainer>
 			<testcontainer
+			id="ea555fa5-74b6-427f-af1f-88aeabe104de">
+			</testcontainer>
+			<testcontainer
 			id="efdc51ba-8dc5-4429-80b4-d71f19c6f89d">
+			</testcontainer>
+			<testcontainer
+			id="f2538ff8-354c-4d17-a440-e139d0c0ce65">
+			</testcontainer>
+			<testcontainer
+			id="f3ef1302-412b-484d-8097-568eae57bcbf">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

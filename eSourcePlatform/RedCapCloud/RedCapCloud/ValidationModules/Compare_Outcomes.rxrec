@@ -47,6 +47,10 @@ rxversion="8.3">
 		id="d359cf72-246f-4107-a4ce-879a3fa56d65"
 		name="Authentication">
 		</var>
+		<var
+		id="b00b9c0d-f4cd-4fe3-9c31-2e6e311ea908"
+		name="TestIdentifier">
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
@@ -113,6 +117,16 @@ rxversion="8.3">
 					<argvalue>
 					</argvalue>
 				</argument>
+				<argument
+				argname="testIdentifier"
+				id="4dc9872b-d725-409d-9a44-5027696c2768"
+				variable="TestIdentifier">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -120,7 +134,7 @@ rxversion="8.3">
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 	name="RedCapCloudRepository"
 	relativepath="..\RedCapCloudRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="RedCapCloudRepository"
 		namespace="RedCapCloud">

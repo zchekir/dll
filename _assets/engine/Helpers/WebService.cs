@@ -304,10 +304,10 @@ namespace engine.Helpers
 		
 		
 		/// <summary>-------------------------------------------------------------------------------------------------------------------------
-		/// This method will retrieve an AuthToken based on the protocl, key and secret provided
+		/// This method will retrieve an AuthToken based on the protocol, key and secret provided.
 		/// </summary>
 		[UserCodeMethod]
-		public static void Authenticate(string randNum, string DOM, string studyProtocolName, string key)
+		public static void Authenticate(string DOM, string studyProtocolName, string key)
 		{
 			
 			
@@ -315,7 +315,7 @@ namespace engine.Helpers
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
 			
-			//Create JSON ibject containing key and secret which is sent in the body
+			//Create JSON object containing key and secret which is sent in the body
 			AuthJSONRequest jsonObject = new AuthJSONRequest(key, Token);
 			
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))

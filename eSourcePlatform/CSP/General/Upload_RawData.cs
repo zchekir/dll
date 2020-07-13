@@ -102,23 +102,27 @@ namespace CSP.General
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            //Delay.Duration(60000, false);
-            
             AddRawData(Filename);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(1));
+            Delay.Duration(30000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.MoveTo();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(3));
-            Delay.Duration(30000, false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.CanvasSpinner'", repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.WorkflowRunner.CanvasSpinnerInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
+            Delay.Duration(500, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(5));
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(6));
+            Delay.Duration(500, false);
             
         }
 

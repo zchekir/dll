@@ -170,7 +170,7 @@ namespace CSP.ExtractsPage
 
             Init();
 
-            engine.Helpers.SQLUtility.GetAssessmentOutcomes(DBServer, Database, dbUsername, dbPassword, Authentication);
+            engine.Helpers.SQLUtility.GetAssessmentOutcomes(DBServer, Database, dbUsername, dbPassword, Authentication, TestIdentifier);
             Delay.Milliseconds(0);
             
             engine.Helpers.CSVUtility.ReadCSVIntoDataTable(fileName);

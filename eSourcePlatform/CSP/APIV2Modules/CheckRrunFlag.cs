@@ -42,10 +42,10 @@ namespace CSP.APIV2Modules
         public CheckRrunFlag()
         {
             dbserver = "cgst-qc.database.windows.net";
-            database = "cgst-jordan-api";
+            database = "cgst-bear-api";
             username = "zchekir@cogstate.com";
-            password = "Cogstate2016";
-            ExternalID = "COGSTATE_COGSTATE_1005";
+            password = "Mamine2010@@";
+            ExternalID = "498810";
             Authentication = "Active Directory Password";
         }
 

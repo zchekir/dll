@@ -96,8 +96,8 @@ namespace RedCapCloud.AddSubjectPage
             repo.REDCapCloud.SubjectsPage.SaveAndEnterDataButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2.5s.", new RecordItemIndex(2));
-            Delay.Duration(2500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
+            Delay.Duration(3000, false);
             
         }
 

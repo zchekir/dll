@@ -49,11 +49,11 @@ rxversion="8.3">
 		</var>
 		<var
 		id="9890c6b6-58d3-4e7b-9fcc-8b647e1af4b3"
-		name="postError">
+		name="redirectError">
 		</var>
 		<var
 		id="e71ec1da-f47d-4dfa-ab50-156efac5f95a"
-		name="post">
+		name="redirect">
 		</var>
 		<var
 		id="968c3e2a-3c3b-44b5-a76d-c1cfab210776"
@@ -70,6 +70,10 @@ rxversion="8.3">
 		<var
 		id="b66d511e-e435-4917-8dbb-f16a58c7b6d7"
 		name="externalid">
+		</var>
+		<var
+		id="21c8d05d-c01a-4f91-8ef4-c9a37b7daef1"
+		name="mode">
 		</var>
 	</variables>
 	<recorditems>
@@ -138,9 +142,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="postError"
+				argname="redirectError"
 				id="78476859-cbd0-4333-96ed-687adf4ef445"
-				variable="postError">
+				variable="redirectError">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -148,9 +152,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="post"
+				argname="redirect"
 				id="57969e55-b778-42c8-ace2-4ba6391bf023"
-				variable="post">
+				variable="redirect">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -191,6 +195,16 @@ rxversion="8.3">
 				argname="externalid"
 				id="b0c3e841-cbbd-4522-b249-8ab78dd5ef86"
 				variable="externalid">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="mode"
+				id="b8bd61c9-7880-4af2-b5b6-9a43e026733b"
+				variable="mode">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

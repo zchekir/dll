@@ -79,7 +79,7 @@ namespace CSP.LoginPage
 
             Init();
 
-            ClickSubmit(repo.CogstateSSO.SubmitButtonInfo);
+            ClickSubmit(repo.MicrosoftSSO.SignInButtonInfo);
             Delay.Milliseconds(0);
             
         }

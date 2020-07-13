@@ -42,6 +42,7 @@ namespace CSP.LoginPage
         public Enter_Password()
         {
             CSPPassword = "ddddddddddd";
+            CSPDOM = "";
         }
 
         /// <summary>
@@ -64,6 +65,16 @@ namespace CSP.LoginPage
         {
             get { return _CSPPassword; }
             set { _CSPPassword = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("c59e98a9-af90-425a-a863-ec2f781db678")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion
@@ -95,15 +106,12 @@ namespace CSP.LoginPage
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
             Delay.Duration(1000, false);
             
-            Try_Enter_Password(repo.CogstateSSO.PasswordInputInfo);
+            Try_Enter_Password(repo.MicrosoftSSO.PasswordFieldInfo);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(2));
             Keyboard.Press("{Tab}", 1);
             Delay.Milliseconds(90);
-            
-            //Key_sequence_PasswordInput(repo.CogstateSSO.PasswordInputInfo);
-            //Delay.Milliseconds(0);
             
         }
 

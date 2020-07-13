@@ -29,22 +29,20 @@ rxversion="8.3">
 	<variables>
 		<var
 		id="9aaefa3f-959c-43d5-b70b-4ab58b9160f0"
-		name="DOM">
-			cgst-qcpd.azurewebsites.net
+		name="CSPDOM">
 		</var>
 		<var
 		id="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e"
-		name="studyProtocolName">
-			v2
+		name="ProtocolNumber">
 		</var>
 		<var
 		id="f186491e-a988-4bd5-8270-b971bccb2bd9"
-		name="key">
+		name="Key">
 			cf7d1bfe-7294-4f84-8bc4-428b3272dbcb
 		</var>
 		<var
 		id="280f8c82-fde0-4bbf-8603-40d1ee3acfea"
-		name="secret">
+		name="Secret">
 			5268fa42-8060-4bb6-b159-7da0d8b60d10
 		</var>
 		<var
@@ -70,7 +68,7 @@ rxversion="8.3">
 				<argument
 				argname="key"
 				id="7f12426a-123a-432f-b28a-c7f359cf7a57"
-				variable="key">
+				variable="Key">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -80,7 +78,7 @@ rxversion="8.3">
 				<argument
 				argname="secret"
 				id="6199b4fb-b6e6-441a-8b54-22982c24e877"
-				variable="secret">
+				variable="Secret">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -90,7 +88,7 @@ rxversion="8.3">
 				<argument
 				argname="StudyProtocol"
 				id="302e7b82-45ae-4559-ab37-f4258745a111"
-				variable="studyProtocolName">
+				variable="ProtocolNumber">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -100,7 +98,7 @@ rxversion="8.3">
 				<argument
 				argname="DOM"
 				id="fd270979-221a-41fa-b7ad-aa7aa7e035e4"
-				variable="DOM">
+				variable="CSPDOM">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

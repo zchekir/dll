@@ -81,10 +81,10 @@ namespace CSP.InternalAPIModules
        string reportType= "";
        string requestDate= "";
        string jsonData="";
-       string url="https://"+DOM+"/api/studies/163629/BatteryConfigurationReports/482";
+       string url="https://"+DOM+"/api/studies/1208/BatteryConfigurationReports/98";
         
         
-            
+    
             // Setting up Get status API call header:
         	
         	HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);

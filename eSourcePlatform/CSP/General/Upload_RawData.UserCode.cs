@@ -47,5 +47,13 @@ namespace CSP.General
         	repo.CogstateSolutionPlatform.WorkflowRunner.BatteryDataField.Element.SetAttributeValue("TagValue", data);
         }
 
+        public void DoDelay()
+        {
+            Report.Log(ReportLevel.Info, "Waiting for 4m for WebJob to move the data to aws DB");
+            Delay.Duration(240000, false);
+            
+           
+        }
+
     }
 }

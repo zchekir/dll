@@ -138,7 +138,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            engine.Helpers.WebService.Authenticate(RandNum, CSPDOM, ProtocolNumber, Key);
+            engine.Helpers.WebService.Authenticate(CSPDOM, ProtocolNumber, Key);
             Delay.Milliseconds(0);
             
         }

@@ -67,7 +67,7 @@ namespace ReportingLayer
             set { _ProtocolID = value; }
         }
 
-        string _CSPUsername = "";
+        string _CSPUsername = "zchekir@cogstate.com";
 
         /// <summary>
         /// Gets or sets the value of variable CSPUsername.
@@ -164,7 +164,7 @@ namespace ReportingLayer
                 _academicextracttableInfo = new RepoItemInfo(this, "AcademicExtractTable", ".//tag[#'pvExplorationHost']//tag[@tagname='explore-canvas-modern']//tag[@tagname='transform']//div[@class='bodyCells']/div", 30000, null, "131c905f-9884-4720-94ca-3a49411a6e37");
                 _dateslicertorangeInfo = new RepoItemInfo(this, "DateSlicerToRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input", 30000, null, "f012a904-5357-4a30-9bc0-624df81514af");
                 _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "04a6379f-44ba-419b-b302-034971569815");
-                _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 30000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
+                _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 120000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
                 _filterbuttonInfo = new RepoItemInfo(this, "FilterButton", ".//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']/i", 30000, null, "f8ce8db1-03d7-47c6-b1b6-99c6bd175da9");
                 _scrollbarInfo = new RepoItemInfo(this, "ScrollBar", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]", 30000, null, "2b0a7c53-2baa-422f-9950-059eea3eeccb");
                 _scrollleftbuttonInfo = new RepoItemInfo(this, "ScrollLeftButton", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]/div[1]/?/?/tag[@tagname='polygon']", 30000, null, "a1a5f7bb-a23f-4180-8c55-625d47459c67");
@@ -424,10 +424,10 @@ namespace ReportingLayer
             public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
                     base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
             {
-                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[1]", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
-                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", ".//tag[9]//form[@name='$ctrl.filterForm']/div/select[2]", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
+                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-134']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
+                _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-132']", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
                 _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
-                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]//tag[9]//select", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
+                _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-9']", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
                 _expandInfo = new RepoItemInfo(this, "Expand", "div[2]//tag[9]//button[@title='Expand']", 30000, null, "9635faeb-ac8a-43f5-a295-6831032d50d4");
             }
 
@@ -459,11 +459,11 @@ namespace ReportingLayer
             /// The IsInThisDropdown item.
             /// </summary>
             [RepositoryItem("773854ca-7a32-4c97-93e9-0aae1cf4c64c")]
-            public virtual Ranorex.SelectTag IsInThisDropdown
+            public virtual Ranorex.WebElement IsInThisDropdown
             {
                 get
                 {
-                    return _isinthisdropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                    return _isinthisdropdownInfo.CreateAdapter<Ranorex.WebElement>(true);
                 }
             }
 
@@ -483,11 +483,11 @@ namespace ReportingLayer
             /// The DayDropdown item.
             /// </summary>
             [RepositoryItem("4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b")]
-            public virtual Ranorex.SelectTag DayDropdown
+            public virtual Ranorex.WebElement DayDropdown
             {
                 get
                 {
-                    return _daydropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                    return _daydropdownInfo.CreateAdapter<Ranorex.WebElement>(true);
                 }
             }
 
@@ -531,11 +531,11 @@ namespace ReportingLayer
             /// The FilterTypeDropdown item.
             /// </summary>
             [RepositoryItem("db43cf6c-681a-40a7-a643-376f7e2b8282")]
-            public virtual Ranorex.SelectTag FilterTypeDropdown
+            public virtual Ranorex.WebElement FilterTypeDropdown
             {
                 get
                 {
-                    return _filtertypedropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                    return _filtertypedropdownInfo.CreateAdapter<Ranorex.WebElement>(true);
                 }
             }
 
@@ -582,10 +582,10 @@ namespace ReportingLayer
         [RepositoryFolder("23d258d6-575f-480c-a3d4-307daa4ab9c6")]
         public partial class SlicersFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _siteidslicerbodyInfo;
-            RepoItemInfo _dateslicerbodyInfo;
             RepoItemInfo _testidslicerbodyInfo;
             RepoItemInfo _testslicerbodyInfo;
+            RepoItemInfo _siteidslicerbodyInfo;
+            RepoItemInfo _dateslicerbodyInfo;
 
             /// <summary>
             /// Creates a new Slicers  folder.
@@ -593,10 +593,10 @@ namespace ReportingLayer
             public SlicersFolder(RepoGenBaseFolder parentFolder) :
                     base("Slicers", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']", parentFolder, 30000, null, false, "23d258d6-575f-480c-a3d4-307daa4ab9c6", "")
             {
-                _siteidslicerbodyInfo = new RepoItemInfo(this, "SiteIDSlicerBody", "tag[2]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]", 30000, null, "40d412d5-8b78-4348-9447-a234369e8239");
-                _dateslicerbodyInfo = new RepoItemInfo(this, "DateSlicerBody", "tag[3]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]", 30000, null, "0e008d86-0ddf-4e4c-8ae9-004c800e9b4a");
-                _testidslicerbodyInfo = new RepoItemInfo(this, "TestIDSlicerBody", "tag[4]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]", 30000, null, "24bcc0f6-d704-4074-8bf3-fe0f5c103d26");
-                _testslicerbodyInfo = new RepoItemInfo(this, "TestSlicerBody", "tag[5]/tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div/div[2]", 30000, null, "1ad77429-0d51-41bd-bee5-f147ca3ce09b");
+                _testidslicerbodyInfo = new RepoItemInfo(this, "TestIDSlicerBody", "tag[4]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]", 30000, null, "24bcc0f6-d704-4074-8bf3-fe0f5c103d26");
+                _testslicerbodyInfo = new RepoItemInfo(this, "TestSlicerBody", "tag[5]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]", 30000, null, "3f99a176-f3af-4e53-8c11-f115069afc48");
+                _siteidslicerbodyInfo = new RepoItemInfo(this, "SiteIDSlicerBody", "tag[2]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]", 30000, null, "b05ef6a2-43ac-4d29-b839-242c690c08ac");
+                _dateslicerbodyInfo = new RepoItemInfo(this, "DateSlicerBody", "tag[3]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]", 30000, null, "af1f76d8-01ad-4387-9c5a-ce6d35897376");
             }
 
             /// <summary>
@@ -620,54 +620,6 @@ namespace ReportingLayer
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SiteIDSlicerBody item.
-            /// </summary>
-            [RepositoryItem("40d412d5-8b78-4348-9447-a234369e8239")]
-            public virtual Ranorex.DivTag SiteIDSlicerBody
-            {
-                get
-                {
-                    return _siteidslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SiteIDSlicerBody item info.
-            /// </summary>
-            [RepositoryItemInfo("40d412d5-8b78-4348-9447-a234369e8239")]
-            public virtual RepoItemInfo SiteIDSlicerBodyInfo
-            {
-                get
-                {
-                    return _siteidslicerbodyInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DateSlicerBody item.
-            /// </summary>
-            [RepositoryItem("0e008d86-0ddf-4e4c-8ae9-004c800e9b4a")]
-            public virtual Ranorex.DivTag DateSlicerBody
-            {
-                get
-                {
-                    return _dateslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DateSlicerBody item info.
-            /// </summary>
-            [RepositoryItemInfo("0e008d86-0ddf-4e4c-8ae9-004c800e9b4a")]
-            public virtual RepoItemInfo DateSlicerBodyInfo
-            {
-                get
-                {
-                    return _dateslicerbodyInfo;
                 }
             }
 
@@ -698,7 +650,7 @@ namespace ReportingLayer
             /// <summary>
             /// The TestSlicerBody item.
             /// </summary>
-            [RepositoryItem("1ad77429-0d51-41bd-bee5-f147ca3ce09b")]
+            [RepositoryItem("3f99a176-f3af-4e53-8c11-f115069afc48")]
             public virtual Ranorex.DivTag TestSlicerBody
             {
                 get
@@ -710,12 +662,60 @@ namespace ReportingLayer
             /// <summary>
             /// The TestSlicerBody item info.
             /// </summary>
-            [RepositoryItemInfo("1ad77429-0d51-41bd-bee5-f147ca3ce09b")]
+            [RepositoryItemInfo("3f99a176-f3af-4e53-8c11-f115069afc48")]
             public virtual RepoItemInfo TestSlicerBodyInfo
             {
                 get
                 {
                     return _testslicerbodyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDSlicerBody item.
+            /// </summary>
+            [RepositoryItem("b05ef6a2-43ac-4d29-b839-242c690c08ac")]
+            public virtual Ranorex.DivTag SiteIDSlicerBody
+            {
+                get
+                {
+                    return _siteidslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SiteIDSlicerBody item info.
+            /// </summary>
+            [RepositoryItemInfo("b05ef6a2-43ac-4d29-b839-242c690c08ac")]
+            public virtual RepoItemInfo SiteIDSlicerBodyInfo
+            {
+                get
+                {
+                    return _siteidslicerbodyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerBody item.
+            /// </summary>
+            [RepositoryItem("af1f76d8-01ad-4387-9c5a-ce6d35897376")]
+            public virtual Ranorex.DivTag DateSlicerBody
+            {
+                get
+                {
+                    return _dateslicerbodyInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DateSlicerBody item info.
+            /// </summary>
+            [RepositoryItemInfo("af1f76d8-01ad-4387-9c5a-ce6d35897376")]
+            public virtual RepoItemInfo DateSlicerBodyInfo
+            {
+                get
+                {
+                    return _dateslicerbodyInfo;
                 }
             }
         }

@@ -21,58 +21,105 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
+using System.Timers;
+using System.Diagnostics;
 
 namespace ReportingLayer.AcademicExtract
 {
-    public partial class Check_Pending_Cells
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
-        private void Init()
-        {
-            // Your recording specific initialization code goes here.
-        }
+	public partial class Check_Pending_Cells
+		
+	{
+		int i;
+		Boolean isPending;
+		DataTable dt = new DataTable();
+		
+		// Timer.Equals(2)
+		
+		
+		
+		
+		/// <summary>
+		/// This method gets called right after the recording has been started.
+		/// It can be used to execute recording specific initialization code.
+		/// </summary>
+		private void Init()
+		{
+			// Your recording specific initialization code goes here.
+		}
 
-        /// <summary>
-        /// Query the Reporting DB View and confirm there are no Pending cells displayed in the Report.
-        /// </summary>
-        public void CheckPending(string dbserver, string database, string username, string password, string authentication)
-        {
-        	DataTable dt = new DataTable();
-        	
-        	//Build SQL query and connection string
-        	string query = @"SELECT * 
+		/// <summary>
+		/// Query the Reporting DB View and confirm there are no Pending cells displayed in the Report.
+		/// </summary>
+		public void CheckPending(string dbserver, string database, string username, string password, string authentication)
+		{
+			Stopwatch timer = new Stopwatch();
+			timer.Start();
+			
+			//Build SQL query and connection string
+			string query = @"SELECT * 
 							FROM [dbo].[vwAcademicExtract]
-							WHERE TestIdentifier = @TestIdentifier";
-        	
-			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+				
+			WHERE TestIdentifier = @TestIdentifier";
 			
-			SqlDataAdapter da = new SqlDataAdapter(query,sqlConnString);
-			
-			//Replaces the Testidentifier variable in query with TestIdentifier obtained during test run
-			da.SelectCommand.Parameters.AddWithValue("@TestIdentifier", TestIdentifier);
-			
-			using (da)
-			{
-				da.Fill(dt);
-			}
-			
-			//Loop over the entire first row and confirm there are no <Pending> cells
-			for (int i = 0; i < dt.Columns.Count; i++)
-			{				
-				if (dt.Rows[0][i].ToString() == "<Pending>")
+			//do while the peeding data appears in DB
+			do{
+				
+				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow
+				isPending = false;
+				
+				do{
+					string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+					
+					SqlDataAdapter da = new SqlDataAdapter(query,sqlConnString);
+					
+					//Replaces the Testidentifier variable in query with TestIdentifier obtained during test run
+					da.SelectCommand.Parameters.AddWithValue("@TestIdentifier", TestIdentifier);
+					
+					using (da)
+					{
+						da.Fill(dt);
+					}
+				} while ( dt.Rows.Count < 1);
+				
+				//Loop over the entire first row and confirm there are no <Pending> cells
+				for ( i = 0; i < dt.Columns.Count; i++)
 				{
-					Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+					
+					if(dt.Rows[0][i].ToString() == "<Pending>")
+					{
+						isPending = true;
+						Delay.Seconds(4);
+					}
+					
+					else
+					{
+						Report.Success(dt.Columns[i].ColumnName + ": " + dt.Rows[0][i].ToString());
+					}
+					
 				}
-				else
-				{
-					Report.Success(dt.Columns[i].ColumnName + ": " + dt.Rows[0][i].ToString());
+				
+				if ( timer.Elapsed > TimeSpan.FromMinutes(5)){
+					for ( i = 0; i < dt.Columns.Count; i++){
+						Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
+					}
+					break;
 				}
-
-			}
-        }
-
-    }
+				
+			} while (isPending);
+			
+			
+			
+		}
+		
+		
+	}
+	
+	
+	
 }
+
+
+
+
+
+

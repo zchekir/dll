@@ -33,15 +33,6 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="60000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<userrecorditem
 		classname="Upload_RawData"
 		enabled="True"
@@ -69,6 +60,39 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="30000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="46ff3b51-83e4-4683-9210-a9031050f564"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5cafea12-8dac-456b-af85-df1546dac229"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//button[#'skip']
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -219,7 +243,7 @@ FFFFABRRRQAUUUUAf//Z
 			</helperscreenshot>
 		</mouseitem>
 		<explicitdelayitem
-		duration="30000ms"
+		duration="500ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -227,24 +251,6 @@ FFFFABRRRQAUUUUAf//Z
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="958bacf9-0dcd-4197-b754-83a113d9c4d9"
-		waitaction="Exists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="89fb4724-2717-48d3-a1a7-e5da52b35873"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$DOM]//div[#'ng-app']/?/?//div[@class='spinner']
-				</path>
-			</info>
-		</WaitForRecordItem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -265,6 +271,15 @@ FFFFABRRRQAUUUUAf//Z
 				</path>
 			</info>
 		</loggingrecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

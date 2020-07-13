@@ -1,14 +1,16 @@
 {
 	"sessionSummary": {
-		"sessionStart": "Fri, 31 May 2019 00:42:19 GMT",
-		"startTime": 1559263339822,
+		"sessionStart": "Wed, 24 Jun 2020 01:11:28 GMT",
+		"startTime": 1592961088573,
 		"timezoneOffset": 36000000,
-		"sessionDuration": 348061,
+		"sessionDuration": 229974,
 		"stopped": false,
 		"complete": true,
 		"languageCode": "en_US",
-		"version": "8.8.0 03c5312 integration",
-		"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+		"version": "8.13.2 fec91a3 release/8.13.2",
+		"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36",
+		"scaleStart": 1,
+		"scaleMode": "start"
 	},
 	"taskData": [{
 			"parameters": {
@@ -18,11 +20,12 @@
 				"maxTime": 120000,
 				"instructions": "islt",
 				"show": "headingimmediate,beforewordsimmediate",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 1,
-				"taskDuration": 120021,
+				"taskStart": 37,
+				"taskDuration": 8266,
 				"attempt": 1,
 				"group": 0,
 				"position": 0,
@@ -31,11 +34,22 @@
 				"integrityScore": 1,
 				"integrityPass": true,
 				"skipped": false,
-				"timeOut": true,
+				"timeOut": false,
 				"details": "",
 				"version": "Adult"
 			},
-			"logs": []
+			"logs": [{
+					"round": 1,
+					"trial": 1,
+					"stimulusDetails": "islt headingimmediate,beforewordsimmediate",
+					"stimulusType": "Instructions",
+					"onsetTime": -1,
+					"logTime": 8206,
+					"reactionTime": 8206,
+					"responseDetails": "",
+					"responseType": "TruePositive"
+				}
+			]
 		}, {
 			"parameters": {
 				"code": "ISLTWordsAdult",
@@ -51,8 +65,8 @@
 				"completion": 1
 			},
 			"taskSummary": {
-				"taskStart": 120022,
-				"taskDuration": 24009,
+				"taskStart": 8303,
+				"taskDuration": 24013,
 				"attempt": 1,
 				"group": 0,
 				"position": 1,
@@ -62,78 +76,78 @@
 				"integrityPass": true,
 				"skipped": false,
 				"timeOut": true,
-				"details": "9,0,PICKLES,PICKLES:13,5,PLUM,PLUM:0,2,BEER,BEER:15,1,CLAMS,CLAMS:4,5,SOUP,SOUP:11,5,CHICKEN,CHICKEN:10,2,PEPPER,PEPPER:6,1,BREAD,BREAD:8,1,LASAGNA,LASAGNA:12,1,ASPARAGUS,ASPARAGUS:1,2,ONIONS,ONIONS:2,5,GRAPES,GRAPES:",
+				"details": "10,5,CHILI,CHILI:8,0,SPAGHETTI,SPAGHETTI:11,6,SALAMI,SALAMI:3,2,CANDY,CANDY:15,4,CALAMARI,CALAMARI:0,0,TEA,TEA:2,3,LEMONS,LEMONS:6,1,BREAD,BREAD:12,4,CORN,CORN:14,2,TOOTHPASTE,TOOTHPASTE:1,6,BEANS,BEANS:9,1,KETCHUP,KETCHUP:",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 1,
 					"trial": 1,
-					"stimulusDetails": "PICKLES",
+					"stimulusDetails": "CHILI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
 					"logTime": 0,
 					"reactionTime": 0,
-					"responseDetails": "9,0",
+					"responseDetails": "10,5",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 2,
-					"stimulusDetails": "PLUM",
+					"stimulusDetails": "SPAGHETTI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2002,
+					"logTime": 2008,
 					"reactionTime": 0,
-					"responseDetails": "13,5",
+					"responseDetails": "8,0",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 3,
-					"stimulusDetails": "BEER",
+					"stimulusDetails": "SALAMI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 4003,
-					"reactionTime": 0,
-					"responseDetails": "0,2",
+					"logTime": 4021,
+					"reactionTime": 1,
+					"responseDetails": "11,6",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 4,
-					"stimulusDetails": "CLAMS",
+					"stimulusDetails": "CANDY",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 6005,
+					"logTime": 6028,
 					"reactionTime": 0,
-					"responseDetails": "15,1",
+					"responseDetails": "3,2",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 5,
-					"stimulusDetails": "SOUP",
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 8005,
+					"logTime": 8035,
 					"reactionTime": 0,
-					"responseDetails": "4,5",
+					"responseDetails": "15,4",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 6,
-					"stimulusDetails": "CHICKEN",
+					"stimulusDetails": "TEA",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 10006,
+					"logTime": 10052,
 					"reactionTime": 0,
-					"responseDetails": "11,5",
+					"responseDetails": "0,0",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 7,
-					"stimulusDetails": "PEPPER",
+					"stimulusDetails": "LEMONS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 12007,
+					"logTime": 12062,
 					"reactionTime": 0,
-					"responseDetails": "10,2",
+					"responseDetails": "2,3",
 					"responseType": "Display"
 				}, {
 					"round": 1,
@@ -141,49 +155,49 @@
 					"stimulusDetails": "BREAD",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 14007,
+					"logTime": 14074,
 					"reactionTime": 0,
 					"responseDetails": "6,1",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 9,
-					"stimulusDetails": "LASAGNA",
+					"stimulusDetails": "CORN",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 16008,
+					"logTime": 16085,
 					"reactionTime": 0,
-					"responseDetails": "8,1",
+					"responseDetails": "12,4",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 10,
-					"stimulusDetails": "ASPARAGUS",
+					"stimulusDetails": "TOOTHPASTE",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 18009,
+					"logTime": 18086,
 					"reactionTime": 0,
-					"responseDetails": "12,1",
+					"responseDetails": "14,2",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 11,
-					"stimulusDetails": "ONIONS",
+					"stimulusDetails": "BEANS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 20010,
+					"logTime": 20087,
 					"reactionTime": 0,
-					"responseDetails": "1,2",
+					"responseDetails": "1,6",
 					"responseType": "Display"
 				}, {
 					"round": 1,
 					"trial": 12,
-					"stimulusDetails": "GRAPES",
+					"stimulusDetails": "KETCHUP",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 22011,
+					"logTime": 22088,
 					"reactionTime": 0,
-					"responseDetails": "2,5",
+					"responseDetails": "9,1",
 					"responseType": "Display"
 				}
 			]
@@ -195,11 +209,12 @@
 				"maxTime": 120000,
 				"instructions": "islt",
 				"show": "headingimmediate,supervisorread",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 144032,
-				"taskDuration": 42804,
+				"taskStart": 32327,
+				"taskDuration": 5780,
 				"attempt": 1,
 				"group": 0,
 				"position": 2,
@@ -218,8 +233,8 @@
 					"stimulusDetails": "islt headingimmediate,supervisorread",
 					"stimulusType": "Instructions",
 					"onsetTime": -1,
-					"logTime": 42796,
-					"reactionTime": 42796,
+					"logTime": 5766,
+					"reactionTime": 5766,
 					"responseDetails": "",
 					"responseType": "TruePositive"
 				}
@@ -238,8 +253,8 @@
 				"rounds": 3
 			},
 			"taskSummary": {
-				"taskStart": 186836,
-				"taskDuration": 12869,
+				"taskStart": 38107,
+				"taskDuration": 25052,
 				"attempt": 1,
 				"group": 0,
 				"position": 3,
@@ -249,138 +264,58 @@
 				"integrityPass": true,
 				"skipped": false,
 				"timeOut": false,
-				"details": "9,0,PICKLES,PICKLES:13,5,PLUM,PLUM:0,2,BEER,BEER:15,1,CLAMS,CLAMS:4,5,SOUP,SOUP:11,5,CHICKEN,CHICKEN:10,2,PEPPER,PEPPER:6,1,BREAD,BREAD:8,1,LASAGNA,LASAGNA:12,1,ASPARAGUS,ASPARAGUS:1,2,ONIONS,ONIONS:2,5,GRAPES,GRAPES:",
+				"details": "10,5,CHILI,CHILI:8,0,SPAGHETTI,SPAGHETTI:11,6,SALAMI,SALAMI:3,2,CANDY,CANDY:15,4,CALAMARI,CALAMARI:0,0,TEA,TEA:2,3,LEMONS,LEMONS:6,1,BREAD,BREAD:12,4,CORN,CORN:14,2,TOOTHPASTE,TOOTHPASTE:1,6,BEANS,BEANS:9,1,KETCHUP,KETCHUP:",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 1,
-					"trial": 7,
-					"stimulusDetails": "PEPPER",
+					"trial": 1,
+					"stimulusDetails": "CHILI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2170,
+					"logTime": 1948,
 					"reactionTime": -1,
-					"responseDetails": "10,2",
+					"responseDetails": "10,5",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "ONIONS",
+					"trial": 4,
+					"stimulusDetails": "CANDY",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2655,
+					"logTime": 3204,
 					"reactionTime": -1,
-					"responseDetails": "1,2",
+					"responseDetails": "3,2",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
 					"trial": 12,
-					"stimulusDetails": "GRAPES",
+					"stimulusDetails": "KETCHUP",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 3405,
+					"logTime": 3892,
 					"reactionTime": -1,
-					"responseDetails": "2,5",
+					"responseDetails": "9,1",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "ASPARAGUS",
+					"trial": 11,
+					"stimulusDetails": "BEANS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 3639,
+					"logTime": 4548,
 					"reactionTime": -1,
-					"responseDetails": "12,1",
+					"responseDetails": "1,6",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "PICKLES",
+					"trial": 5,
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 4132,
+					"logTime": 5260,
 					"reactionTime": -1,
-					"responseDetails": "9,0",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 3,
-					"stimulusDetails": "BEER",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 4499,
-					"reactionTime": -1,
-					"responseDetails": "0,2",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "CHICKEN",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 5030,
-					"reactionTime": -1,
-					"responseDetails": "11,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 2,
-					"stimulusDetails": "PLUM",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 5624,
-					"reactionTime": -1,
-					"responseDetails": "13,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 7,
-					"stimulusDetails": "PEPPER",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 6289,
-					"reactionTime": -1,
-					"responseDetails": "10,2",
-					"responseType": "Repetition"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "PEPPER",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 7179,
-					"reactionTime": -1,
-					"responseDetails": "10,2",
-					"responseType": "Retraction"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "GRAPES",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 8202,
-					"reactionTime": -1,
-					"responseDetails": "2,5",
-					"responseType": "Retraction"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "ASPARAGUS",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 8788,
-					"reactionTime": -1,
-					"responseDetails": "12,1",
-					"responseType": "Retraction"
-				}, {
-					"round": 1,
-					"trial": 8,
-					"stimulusDetails": "BREAD",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 9280,
-					"reactionTime": -1,
-					"responseDetails": "6,1",
+					"responseDetails": "15,4",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
@@ -388,29 +323,9 @@
 					"stimulusDetails": "BREAD",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 9435,
+					"logTime": 5964,
 					"reactionTime": -1,
 					"responseDetails": "6,1",
-					"responseType": "Repetition"
-				}, {
-					"round": 1,
-					"trial": 8,
-					"stimulusDetails": "BREAD",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 9646,
-					"reactionTime": -1,
-					"responseDetails": "6,1",
-					"responseType": "Repetition"
-				}, {
-					"round": 1,
-					"trial": 4,
-					"stimulusDetails": "CLAMS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 10179,
-					"reactionTime": -1,
-					"responseDetails": "15,1",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
@@ -418,17 +333,77 @@
 					"stimulusDetails": "OtherWord",
 					"stimulusType": "Foil",
 					"onsetTime": -1,
-					"logTime": 11015,
+					"logTime": 7206,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Intrusion"
+				}, {
+					"round": 1,
+					"trial": 2,
+					"stimulusDetails": "SPAGHETTI",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 8396,
+					"reactionTime": -1,
+					"responseDetails": "8,0",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": -1,
+					"stimulusDetails": "OtherWord",
+					"stimulusType": "",
+					"onsetTime": -1,
+					"logTime": 9532,
+					"reactionTime": -1,
+					"responseDetails": "",
+					"responseType": "Retraction"
+				}, {
+					"round": 1,
+					"trial": 10,
+					"stimulusDetails": "TOOTHPASTE",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 11156,
+					"reactionTime": -1,
+					"responseDetails": "14,2",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 1,
+					"stimulusDetails": "CHILI",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 12452,
+					"reactionTime": -1,
+					"responseDetails": "10,5",
+					"responseType": "Repetition"
+				}, {
+					"round": 1,
+					"trial": 7,
+					"stimulusDetails": "LEMONS",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 13748,
+					"reactionTime": -1,
+					"responseDetails": "2,3",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": -1,
+					"stimulusDetails": "LEMONS",
+					"stimulusType": "",
+					"onsetTime": -1,
+					"logTime": 14543,
+					"reactionTime": -1,
+					"responseDetails": "2,3",
+					"responseType": "Retraction"
 				}, {
 					"round": 1,
 					"trial": -1,
 					"stimulusDetails": "",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 11819,
+					"logTime": 19894,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Finish"
@@ -438,7 +413,7 @@
 					"stimulusDetails": "",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 12843,
+					"logTime": 25030,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Continue"
@@ -453,6 +428,7 @@
 				"instructions": "islt",
 				"show": "input",
 				"buttonText": "ok",
+				"style": "dark",
 				"responseButtons": true,
 				"round": 1,
 				"rounds": 3,
@@ -460,7 +436,7 @@
 				"completion": 1
 			},
 			"taskSummary": {
-				"taskStart": 199705,
+				"taskStart": 63159,
 				"taskDuration": 0,
 				"attempt": 1,
 				"group": 0,
@@ -483,11 +459,12 @@
 				"maxTime": 120000,
 				"instructions": "islt",
 				"show": "headingrepeat,beforewordsrepeat",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 199707,
-				"taskDuration": 6748,
+				"taskStart": 63170,
+				"taskDuration": 13337,
 				"attempt": 1,
 				"group": 0,
 				"position": 5,
@@ -506,8 +483,8 @@
 					"stimulusDetails": "islt headingrepeat,beforewordsrepeat",
 					"stimulusType": "Instructions",
 					"onsetTime": -1,
-					"logTime": 6739,
-					"reactionTime": 6739,
+					"logTime": 13323,
+					"reactionTime": 13323,
 					"responseDetails": "",
 					"responseType": "TruePositive"
 				}
@@ -527,8 +504,8 @@
 				"completion": 1
 			},
 			"taskSummary": {
-				"taskStart": 206455,
-				"taskDuration": 24005,
+				"taskStart": 76507,
+				"taskDuration": 24011,
 				"attempt": 1,
 				"group": 0,
 				"position": 6,
@@ -538,78 +515,78 @@
 				"integrityPass": true,
 				"skipped": false,
 				"timeOut": true,
-				"details": "9,0,PICKLES,PICKLES:13,5,PLUM,PLUM:0,2,BEER,BEER:15,1,CLAMS,CLAMS:4,5,SOUP,SOUP:11,5,CHICKEN,CHICKEN:10,2,PEPPER,PEPPER:6,1,BREAD,BREAD:8,1,LASAGNA,LASAGNA:12,1,ASPARAGUS,ASPARAGUS:1,2,ONIONS,ONIONS:2,5,GRAPES,GRAPES:",
+				"details": "10,5,CHILI,CHILI:8,0,SPAGHETTI,SPAGHETTI:11,6,SALAMI,SALAMI:3,2,CANDY,CANDY:15,4,CALAMARI,CALAMARI:0,0,TEA,TEA:2,3,LEMONS,LEMONS:6,1,BREAD,BREAD:12,4,CORN,CORN:14,2,TOOTHPASTE,TOOTHPASTE:1,6,BEANS,BEANS:9,1,KETCHUP,KETCHUP:",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 2,
 					"trial": 1,
-					"stimulusDetails": "PICKLES",
+					"stimulusDetails": "CHILI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
 					"logTime": 0,
 					"reactionTime": 0,
-					"responseDetails": "9,0",
+					"responseDetails": "10,5",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 2,
-					"stimulusDetails": "PLUM",
+					"stimulusDetails": "SPAGHETTI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2001,
-					"reactionTime": 1,
-					"responseDetails": "13,5",
+					"logTime": 2006,
+					"reactionTime": 0,
+					"responseDetails": "8,0",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 3,
-					"stimulusDetails": "BEER",
+					"stimulusDetails": "SALAMI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 4002,
+					"logTime": 4019,
 					"reactionTime": 0,
-					"responseDetails": "0,2",
+					"responseDetails": "11,6",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 4,
-					"stimulusDetails": "CLAMS",
+					"stimulusDetails": "CANDY",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 6003,
+					"logTime": 6021,
 					"reactionTime": 0,
-					"responseDetails": "15,1",
+					"responseDetails": "3,2",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 5,
-					"stimulusDetails": "SOUP",
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 8004,
+					"logTime": 8024,
 					"reactionTime": 0,
-					"responseDetails": "4,5",
+					"responseDetails": "15,4",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 6,
-					"stimulusDetails": "CHICKEN",
+					"stimulusDetails": "TEA",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 10005,
+					"logTime": 10039,
 					"reactionTime": 0,
-					"responseDetails": "11,5",
+					"responseDetails": "0,0",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 7,
-					"stimulusDetails": "PEPPER",
+					"stimulusDetails": "LEMONS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 12006,
-					"reactionTime": 0,
-					"responseDetails": "10,2",
+					"logTime": 12050,
+					"reactionTime": 1,
+					"responseDetails": "2,3",
 					"responseType": "Display"
 				}, {
 					"round": 2,
@@ -617,49 +594,49 @@
 					"stimulusDetails": "BREAD",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 14006,
+					"logTime": 14057,
 					"reactionTime": 0,
 					"responseDetails": "6,1",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 9,
-					"stimulusDetails": "LASAGNA",
+					"stimulusDetails": "CORN",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 16008,
+					"logTime": 16058,
 					"reactionTime": 0,
-					"responseDetails": "8,1",
+					"responseDetails": "12,4",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 10,
-					"stimulusDetails": "ASPARAGUS",
+					"stimulusDetails": "TOOTHPASTE",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 18009,
+					"logTime": 18066,
 					"reactionTime": 0,
-					"responseDetails": "12,1",
+					"responseDetails": "14,2",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 11,
-					"stimulusDetails": "ONIONS",
+					"stimulusDetails": "BEANS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 20009,
+					"logTime": 20079,
 					"reactionTime": 0,
-					"responseDetails": "1,2",
+					"responseDetails": "1,6",
 					"responseType": "Display"
 				}, {
 					"round": 2,
 					"trial": 12,
-					"stimulusDetails": "GRAPES",
+					"stimulusDetails": "KETCHUP",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 22010,
+					"logTime": 22086,
 					"reactionTime": 0,
-					"responseDetails": "2,5",
+					"responseDetails": "9,1",
 					"responseType": "Display"
 				}
 			]
@@ -671,11 +648,12 @@
 				"maxTime": 120000,
 				"instructions": "islt",
 				"show": "headingrepeat,supervisorread",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 230461,
-				"taskDuration": 5419,
+				"taskStart": 100543,
+				"taskDuration": 9156,
 				"attempt": 1,
 				"group": 0,
 				"position": 7,
@@ -694,8 +672,8 @@
 					"stimulusDetails": "islt headingrepeat,supervisorread",
 					"stimulusType": "Instructions",
 					"onsetTime": -1,
-					"logTime": 5412,
-					"reactionTime": 5412,
+					"logTime": 9144,
+					"reactionTime": 9144,
 					"responseDetails": "",
 					"responseType": "TruePositive"
 				}
@@ -714,8 +692,8 @@
 				"rounds": 3
 			},
 			"taskSummary": {
-				"taskStart": 235880,
-				"taskDuration": 13730,
+				"taskStart": 109699,
+				"taskDuration": 13522,
 				"attempt": 1,
 				"group": 0,
 				"position": 8,
@@ -725,186 +703,196 @@
 				"integrityPass": true,
 				"skipped": false,
 				"timeOut": false,
-				"details": "9,0,PICKLES,PICKLES:13,5,PLUM,PLUM:0,2,BEER,BEER:15,1,CLAMS,CLAMS:4,5,SOUP,SOUP:11,5,CHICKEN,CHICKEN:10,2,PEPPER,PEPPER:6,1,BREAD,BREAD:8,1,LASAGNA,LASAGNA:12,1,ASPARAGUS,ASPARAGUS:1,2,ONIONS,ONIONS:2,5,GRAPES,GRAPES:",
+				"details": "10,5,CHILI,CHILI:8,0,SPAGHETTI,SPAGHETTI:11,6,SALAMI,SALAMI:3,2,CANDY,CANDY:15,4,CALAMARI,CALAMARI:0,0,TEA,TEA:2,3,LEMONS,LEMONS:6,1,BREAD,BREAD:12,4,CORN,CORN:14,2,TOOTHPASTE,TOOTHPASTE:1,6,BEANS,BEANS:9,1,KETCHUP,KETCHUP:",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 2,
-					"trial": 1,
-					"stimulusDetails": "PICKLES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 1102,
-					"reactionTime": -1,
-					"responseDetails": "9,0",
-					"responseType": "TruePositive"
-				}, {
-					"round": 2,
-					"trial": 2,
-					"stimulusDetails": "PLUM",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 1579,
-					"reactionTime": -1,
-					"responseDetails": "13,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 2,
-					"trial": 4,
-					"stimulusDetails": "CLAMS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 1844,
-					"reactionTime": -1,
-					"responseDetails": "15,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 2,
 					"trial": 8,
 					"stimulusDetails": "BREAD",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2125,
+					"logTime": 1531,
 					"reactionTime": -1,
 					"responseDetails": "6,1",
+					"responseType": "TruePositive"
+				}, {
+					"round": 2,
+					"trial": 10,
+					"stimulusDetails": "TOOTHPASTE",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 1795,
+					"reactionTime": -1,
+					"responseDetails": "14,2",
 					"responseType": "TruePositive"
 				}, {
 					"round": 2,
 					"trial": 12,
-					"stimulusDetails": "GRAPES",
+					"stimulusDetails": "KETCHUP",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2446,
+					"logTime": 2075,
 					"reactionTime": -1,
-					"responseDetails": "2,5",
+					"responseDetails": "9,1",
 					"responseType": "TruePositive"
 				}, {
 					"round": 2,
 					"trial": 11,
-					"stimulusDetails": "ONIONS",
+					"stimulusDetails": "BEANS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2883,
+					"logTime": 2539,
 					"reactionTime": -1,
-					"responseDetails": "1,2",
-					"responseType": "TruePositive"
-				}, {
-					"round": 2,
-					"trial": 9,
-					"stimulusDetails": "LASAGNA",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 3180,
-					"reactionTime": -1,
-					"responseDetails": "8,1",
+					"responseDetails": "1,6",
 					"responseType": "TruePositive"
 				}, {
 					"round": 2,
 					"trial": 7,
-					"stimulusDetails": "PEPPER",
+					"stimulusDetails": "LEMONS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 3501,
+					"logTime": 2835,
 					"reactionTime": -1,
-					"responseDetails": "10,2",
+					"responseDetails": "2,3",
 					"responseType": "TruePositive"
 				}, {
 					"round": 2,
-					"trial": 6,
-					"stimulusDetails": "CHICKEN",
+					"trial": 5,
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 4039,
+					"logTime": 3196,
 					"reactionTime": -1,
-					"responseDetails": "11,5",
+					"responseDetails": "15,4",
 					"responseType": "TruePositive"
+				}, {
+					"round": 2,
+					"trial": 3,
+					"stimulusDetails": "SALAMI",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 3531,
+					"reactionTime": -1,
+					"responseDetails": "11,6",
+					"responseType": "TruePositive"
+				}, {
+					"round": 2,
+					"trial": 4,
+					"stimulusDetails": "CANDY",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 3907,
+					"reactionTime": -1,
+					"responseDetails": "3,2",
+					"responseType": "TruePositive"
+				}, {
+					"round": 2,
+					"trial": 2,
+					"stimulusDetails": "SPAGHETTI",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 4227,
+					"reactionTime": -1,
+					"responseDetails": "8,0",
+					"responseType": "TruePositive"
+				}, {
+					"round": 2,
+					"trial": 12,
+					"stimulusDetails": "KETCHUP",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 4947,
+					"reactionTime": -1,
+					"responseDetails": "9,1",
+					"responseType": "Repetition"
 				}, {
 					"round": 2,
 					"trial": -1,
 					"stimulusDetails": "OtherWord",
 					"stimulusType": "Foil",
 					"onsetTime": -1,
-					"logTime": 5321,
+					"logTime": 5812,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Intrusion"
 				}, {
 					"round": 2,
 					"trial": -1,
-					"stimulusDetails": "PLUM",
+					"stimulusDetails": "OtherWord",
+					"stimulusType": "Foil",
+					"onsetTime": -1,
+					"logTime": 5987,
+					"reactionTime": -1,
+					"responseDetails": "",
+					"responseType": "Intrusion"
+				}, {
+					"round": 2,
+					"trial": -1,
+					"stimulusDetails": "CANDY",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 6462,
+					"logTime": 7427,
 					"reactionTime": -1,
-					"responseDetails": "13,5",
+					"responseDetails": "3,2",
 					"responseType": "Retraction"
 				}, {
 					"round": 2,
-					"trial": 8,
-					"stimulusDetails": "BREAD",
+					"trial": -1,
+					"stimulusDetails": "TOOTHPASTE",
+					"stimulusType": "",
+					"onsetTime": -1,
+					"logTime": 8548,
+					"reactionTime": -1,
+					"responseDetails": "14,2",
+					"responseType": "Retraction"
+				}, {
+					"round": 2,
+					"trial": 9,
+					"stimulusDetails": "CORN",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 7454,
+					"logTime": 9347,
 					"reactionTime": -1,
-					"responseDetails": "6,1",
+					"responseDetails": "12,4",
+					"responseType": "TruePositive"
+				}, {
+					"round": 2,
+					"trial": 9,
+					"stimulusDetails": "CORN",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 9515,
+					"reactionTime": -1,
+					"responseDetails": "12,4",
 					"responseType": "Repetition"
 				}, {
 					"round": 2,
 					"trial": 5,
-					"stimulusDetails": "SOUP",
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 8493,
+					"logTime": 10771,
 					"reactionTime": -1,
-					"responseDetails": "4,5",
-					"responseType": "TruePositive"
+					"responseDetails": "15,4",
+					"responseType": "Repetition"
 				}, {
 					"round": 2,
 					"trial": -1,
-					"stimulusDetails": "PICKLES",
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 9094,
+					"logTime": 11475,
 					"reactionTime": -1,
-					"responseDetails": "9,0",
+					"responseDetails": "15,4",
 					"responseType": "Retraction"
-				}, {
-					"round": 2,
-					"trial": -1,
-					"stimulusDetails": "OtherWord",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 10284,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Retraction"
-				}, {
-					"round": 2,
-					"trial": -1,
-					"stimulusDetails": "OtherWord",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 11259,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Intrusion"
-				}, {
-					"round": 2,
-					"trial": -1,
-					"stimulusDetails": "OtherWord",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 11438,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Intrusion"
 				}, {
 					"round": 2,
 					"trial": -1,
 					"stimulusDetails": "",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 12556,
+					"logTime": 12611,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Finish"
@@ -914,7 +902,7 @@
 					"stimulusDetails": "",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 13712,
+					"logTime": 13507,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Continue"
@@ -929,6 +917,7 @@
 				"instructions": "islt",
 				"show": "input",
 				"buttonText": "ok",
+				"style": "dark",
 				"responseButtons": true,
 				"round": 2,
 				"rounds": 3,
@@ -936,7 +925,7 @@
 				"completion": 1
 			},
 			"taskSummary": {
-				"taskStart": 249610,
+				"taskStart": 123221,
 				"taskDuration": 0,
 				"attempt": 1,
 				"group": 0,
@@ -959,11 +948,12 @@
 				"maxTime": 120000,
 				"instructions": "islt",
 				"show": "headingrepeat,beforewordsrepeat",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 249612,
-				"taskDuration": 5738,
+				"taskStart": 123238,
+				"taskDuration": 17972,
 				"attempt": 1,
 				"group": 0,
 				"position": 10,
@@ -982,8 +972,8 @@
 					"stimulusDetails": "islt headingrepeat,beforewordsrepeat",
 					"stimulusType": "Instructions",
 					"onsetTime": -1,
-					"logTime": 5732,
-					"reactionTime": 5732,
+					"logTime": 17961,
+					"reactionTime": 17961,
 					"responseDetails": "",
 					"responseType": "TruePositive"
 				}
@@ -1003,8 +993,8 @@
 				"completion": 1
 			},
 			"taskSummary": {
-				"taskStart": 255350,
-				"taskDuration": 24004,
+				"taskStart": 141210,
+				"taskDuration": 24019,
 				"attempt": 1,
 				"group": 0,
 				"position": 11,
@@ -1014,78 +1004,78 @@
 				"integrityPass": true,
 				"skipped": false,
 				"timeOut": true,
-				"details": "9,0,PICKLES,PICKLES:13,5,PLUM,PLUM:0,2,BEER,BEER:15,1,CLAMS,CLAMS:4,5,SOUP,SOUP:11,5,CHICKEN,CHICKEN:10,2,PEPPER,PEPPER:6,1,BREAD,BREAD:8,1,LASAGNA,LASAGNA:12,1,ASPARAGUS,ASPARAGUS:1,2,ONIONS,ONIONS:2,5,GRAPES,GRAPES:",
+				"details": "10,5,CHILI,CHILI:8,0,SPAGHETTI,SPAGHETTI:11,6,SALAMI,SALAMI:3,2,CANDY,CANDY:15,4,CALAMARI,CALAMARI:0,0,TEA,TEA:2,3,LEMONS,LEMONS:6,1,BREAD,BREAD:12,4,CORN,CORN:14,2,TOOTHPASTE,TOOTHPASTE:1,6,BEANS,BEANS:9,1,KETCHUP,KETCHUP:",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 3,
 					"trial": 1,
-					"stimulusDetails": "PICKLES",
+					"stimulusDetails": "CHILI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
 					"logTime": 0,
 					"reactionTime": 0,
-					"responseDetails": "9,0",
+					"responseDetails": "10,5",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 2,
-					"stimulusDetails": "PLUM",
+					"stimulusDetails": "SPAGHETTI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
 					"logTime": 2001,
 					"reactionTime": 0,
-					"responseDetails": "13,5",
+					"responseDetails": "8,0",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 3,
-					"stimulusDetails": "BEER",
+					"stimulusDetails": "SALAMI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
 					"logTime": 4002,
 					"reactionTime": 0,
-					"responseDetails": "0,2",
+					"responseDetails": "11,6",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 4,
-					"stimulusDetails": "CLAMS",
+					"stimulusDetails": "CANDY",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 6003,
+					"logTime": 6013,
 					"reactionTime": 0,
-					"responseDetails": "15,1",
+					"responseDetails": "3,2",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 5,
-					"stimulusDetails": "SOUP",
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 8003,
+					"logTime": 8020,
 					"reactionTime": 0,
-					"responseDetails": "4,5",
+					"responseDetails": "15,4",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 6,
-					"stimulusDetails": "CHICKEN",
+					"stimulusDetails": "TEA",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 10005,
+					"logTime": 10027,
 					"reactionTime": 0,
-					"responseDetails": "11,5",
+					"responseDetails": "0,0",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 7,
-					"stimulusDetails": "PEPPER",
+					"stimulusDetails": "LEMONS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 12006,
+					"logTime": 12038,
 					"reactionTime": 0,
-					"responseDetails": "10,2",
+					"responseDetails": "2,3",
 					"responseType": "Display"
 				}, {
 					"round": 3,
@@ -1093,49 +1083,49 @@
 					"stimulusDetails": "BREAD",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 14006,
+					"logTime": 14053,
 					"reactionTime": 0,
 					"responseDetails": "6,1",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 9,
-					"stimulusDetails": "LASAGNA",
+					"stimulusDetails": "CORN",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 16007,
+					"logTime": 16068,
 					"reactionTime": 0,
-					"responseDetails": "8,1",
+					"responseDetails": "12,4",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 10,
-					"stimulusDetails": "ASPARAGUS",
+					"stimulusDetails": "TOOTHPASTE",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 18008,
+					"logTime": 18076,
 					"reactionTime": 0,
-					"responseDetails": "12,1",
+					"responseDetails": "14,2",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 11,
-					"stimulusDetails": "ONIONS",
+					"stimulusDetails": "BEANS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 20009,
+					"logTime": 20089,
 					"reactionTime": 0,
-					"responseDetails": "1,2",
+					"responseDetails": "1,6",
 					"responseType": "Display"
 				}, {
 					"round": 3,
 					"trial": 12,
-					"stimulusDetails": "GRAPES",
+					"stimulusDetails": "KETCHUP",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 22010,
+					"logTime": 22103,
 					"reactionTime": 0,
-					"responseDetails": "2,5",
+					"responseDetails": "9,1",
 					"responseType": "Display"
 				}
 			]
@@ -1147,11 +1137,12 @@
 				"maxTime": 120000,
 				"instructions": "islt",
 				"show": "headingrepeat,supervisorread",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 279355,
-				"taskDuration": 5479,
+				"taskStart": 165244,
+				"taskDuration": 53854,
 				"attempt": 1,
 				"group": 0,
 				"position": 12,
@@ -1170,8 +1161,8 @@
 					"stimulusDetails": "islt headingrepeat,supervisorread",
 					"stimulusType": "Instructions",
 					"onsetTime": -1,
-					"logTime": 5472,
-					"reactionTime": 5472,
+					"logTime": 53839,
+					"reactionTime": 53839,
 					"responseDetails": "",
 					"responseType": "TruePositive"
 				}
@@ -1190,8 +1181,8 @@
 				"rounds": 3
 			},
 			"taskSummary": {
-				"taskStart": 284834,
-				"taskDuration": 10181,
+				"taskStart": 219098,
+				"taskDuration": 10874,
 				"attempt": 1,
 				"group": 0,
 				"position": 13,
@@ -1201,48 +1192,58 @@
 				"integrityPass": true,
 				"skipped": false,
 				"timeOut": false,
-				"details": "9,0,PICKLES,PICKLES:13,5,PLUM,PLUM:0,2,BEER,BEER:15,1,CLAMS,CLAMS:4,5,SOUP,SOUP:11,5,CHICKEN,CHICKEN:10,2,PEPPER,PEPPER:6,1,BREAD,BREAD:8,1,LASAGNA,LASAGNA:12,1,ASPARAGUS,ASPARAGUS:1,2,ONIONS,ONIONS:2,5,GRAPES,GRAPES:",
+				"details": "10,5,CHILI,CHILI:8,0,SPAGHETTI,SPAGHETTI:11,6,SALAMI,SALAMI:3,2,CANDY,CANDY:15,4,CALAMARI,CALAMARI:0,0,TEA,TEA:2,3,LEMONS,LEMONS:6,1,BREAD,BREAD:12,4,CORN,CORN:14,2,TOOTHPASTE,TOOTHPASTE:1,6,BEANS,BEANS:9,1,KETCHUP,KETCHUP:",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 3,
-					"trial": 1,
-					"stimulusDetails": "PICKLES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 1219,
-					"reactionTime": -1,
-					"responseDetails": "9,0",
-					"responseType": "TruePositive"
-				}, {
-					"round": 3,
 					"trial": 11,
-					"stimulusDetails": "ONIONS",
+					"stimulusDetails": "BEANS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 1906,
+					"logTime": 1056,
 					"reactionTime": -1,
-					"responseDetails": "1,2",
+					"responseDetails": "1,6",
 					"responseType": "TruePositive"
 				}, {
 					"round": 3,
-					"trial": 12,
-					"stimulusDetails": "GRAPES",
+					"trial": 1,
+					"stimulusDetails": "CHILI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2453,
+					"logTime": 1528,
 					"reactionTime": -1,
-					"responseDetails": "2,5",
+					"responseDetails": "10,5",
 					"responseType": "TruePositive"
 				}, {
 					"round": 3,
-					"trial": 10,
-					"stimulusDetails": "ASPARAGUS",
+					"trial": 2,
+					"stimulusDetails": "SPAGHETTI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2688,
+					"logTime": 1952,
 					"reactionTime": -1,
-					"responseDetails": "12,1",
+					"responseDetails": "8,0",
+					"responseType": "TruePositive"
+				}, {
+					"round": 3,
+					"trial": 4,
+					"stimulusDetails": "CANDY",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 2224,
+					"reactionTime": -1,
+					"responseDetails": "3,2",
+					"responseType": "TruePositive"
+				}, {
+					"round": 3,
+					"trial": 6,
+					"stimulusDetails": "TEA",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 2473,
+					"reactionTime": -1,
+					"responseDetails": "0,0",
 					"responseType": "TruePositive"
 				}, {
 					"round": 3,
@@ -1250,99 +1251,49 @@
 					"stimulusDetails": "BREAD",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 2961,
+					"logTime": 2737,
 					"reactionTime": -1,
 					"responseDetails": "6,1",
 					"responseType": "TruePositive"
 				}, {
 					"round": 3,
-					"trial": 6,
-					"stimulusDetails": "CHICKEN",
+					"trial": 12,
+					"stimulusDetails": "KETCHUP",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 3266,
+					"logTime": 3016,
 					"reactionTime": -1,
-					"responseDetails": "11,5",
+					"responseDetails": "9,1",
 					"responseType": "TruePositive"
 				}, {
 					"round": 3,
-					"trial": 9,
-					"stimulusDetails": "LASAGNA",
+					"trial": 5,
+					"stimulusDetails": "CALAMARI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 3891,
+					"logTime": 3697,
 					"reactionTime": -1,
-					"responseDetails": "8,1",
+					"responseDetails": "15,4",
 					"responseType": "TruePositive"
 				}, {
 					"round": 3,
 					"trial": 7,
-					"stimulusDetails": "PEPPER",
+					"stimulusDetails": "LEMONS",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 4180,
+					"logTime": 3920,
 					"reactionTime": -1,
-					"responseDetails": "10,2",
+					"responseDetails": "2,3",
 					"responseType": "TruePositive"
-				}, {
-					"round": 3,
-					"trial": 4,
-					"stimulusDetails": "CLAMS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 4602,
-					"reactionTime": -1,
-					"responseDetails": "15,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 3,
-					"trial": -1,
-					"stimulusDetails": "GRAPES",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 5758,
-					"reactionTime": -1,
-					"responseDetails": "2,5",
-					"responseType": "Retraction"
-				}, {
-					"round": 3,
-					"trial": 11,
-					"stimulusDetails": "ONIONS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 6344,
-					"reactionTime": -1,
-					"responseDetails": "1,2",
-					"responseType": "Repetition"
 				}, {
 					"round": 3,
 					"trial": 3,
-					"stimulusDetails": "BEER",
+					"stimulusDetails": "SALAMI",
 					"stimulusType": "Probe",
 					"onsetTime": -1,
-					"logTime": 6883,
+					"logTime": 4313,
 					"reactionTime": -1,
-					"responseDetails": "0,2",
-					"responseType": "TruePositive"
-				}, {
-					"round": 3,
-					"trial": -1,
-					"stimulusDetails": "CHICKEN",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 7836,
-					"reactionTime": -1,
-					"responseDetails": "11,5",
-					"responseType": "Retraction"
-				}, {
-					"round": 3,
-					"trial": 12,
-					"stimulusDetails": "GRAPES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 8438,
-					"reactionTime": -1,
-					"responseDetails": "2,5",
+					"responseDetails": "11,6",
 					"responseType": "TruePositive"
 				}, {
 					"round": 3,
@@ -1350,17 +1301,37 @@
 					"stimulusDetails": "OtherWord",
 					"stimulusType": "Foil",
 					"onsetTime": -1,
-					"logTime": 8844,
+					"logTime": 6472,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Intrusion"
 				}, {
 					"round": 3,
 					"trial": -1,
+					"stimulusDetails": "SPAGHETTI",
+					"stimulusType": "",
+					"onsetTime": -1,
+					"logTime": 7808,
+					"reactionTime": -1,
+					"responseDetails": "8,0",
+					"responseType": "Retraction"
+				}, {
+					"round": 3,
+					"trial": 5,
+					"stimulusDetails": "CALAMARI",
+					"stimulusType": "Probe",
+					"onsetTime": -1,
+					"logTime": 9176,
+					"reactionTime": -1,
+					"responseDetails": "15,4",
+					"responseType": "Repetition"
+				}, {
+					"round": 3,
+					"trial": -1,
 					"stimulusDetails": "",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 9328,
+					"logTime": 9985,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Finish"
@@ -1370,7 +1341,7 @@
 					"stimulusDetails": "",
 					"stimulusType": "",
 					"onsetTime": -1,
-					"logTime": 10157,
+					"logTime": 10856,
 					"reactionTime": -1,
 					"responseDetails": "",
 					"responseType": "Continue"
@@ -1385,6 +1356,7 @@
 				"instructions": "islt",
 				"show": "input",
 				"buttonText": "ok",
+				"style": "dark",
 				"responseButtons": true,
 				"round": 3,
 				"rounds": 3,
@@ -1392,8 +1364,8 @@
 				"completion": 1
 			},
 			"taskSummary": {
-				"taskStart": 295015,
-				"taskDuration": 1,
+				"taskStart": 229972,
+				"taskDuration": 0,
 				"attempt": 1,
 				"group": 0,
 				"position": 14,
@@ -1407,788 +1379,12 @@
 				"version": "Adult"
 			},
 			"logs": []
-		}, {
-			"parameters": {
-				"code": "ISLTInstructionsRemember",
-				"store": true,
-				"minTime": 5000,
-				"maxTime": 120000,
-				"instructions": "islt",
-				"show": "remember",
-				"buttonText": "continue",
-				"responseButtons": true
-			},
-			"taskSummary": {
-				"taskStart": 295017,
-				"taskDuration": 5375,
-				"attempt": 1,
-				"group": 1,
-				"position": 0,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "",
-				"version": "Adult"
-			},
-			"logs": [{
-					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "islt remember",
-					"stimulusType": "Instructions",
-					"onsetTime": -1,
-					"logTime": 5368,
-					"reactionTime": 5368,
-					"responseDetails": "",
-					"responseType": "TruePositive"
-				}
-			]
-		}, {
-			"parameters": {
-				"code": "StopInstructions",
-				"store": true,
-				"minTime": 5000,
-				"maxTime": 120000,
-				"instructions": "stop",
-				"show": "stop",
-				"responseButtons": true
-			},
-			"taskSummary": {
-				"taskStart": 300393,
-				"taskDuration": 5483,
-				"attempt": 1,
-				"group": 2,
-				"position": 0,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "",
-				"version": "Adult"
-			},
-			"logs": []
-		}, {
-			"parameters": {
-				"code": "ISLTCheckAdult",
-				"store": false,
-				"minTime": 5000,
-				"maxTime": 120000,
-				"completion": 1,
-				"instructions": "islt",
-				"show": "check",
-				"buttonText": "ok",
-				"responseButtons": true,
-				"stimulusGroup": "adult"
-			},
-			"taskSummary": {
-				"taskStart": 305876,
-				"taskDuration": 1,
-				"attempt": 1,
-				"group": 3,
-				"position": 0,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "",
-				"version": "Adult"
-			},
-			"logs": []
-		}, {
-			"parameters": {
-				"code": "ISLTInstructionsDelayed",
-				"store": true,
-				"minTime": 5000,
-				"maxTime": 120000,
-				"instructions": "islt",
-				"show": "headingdelayed,supervisorread",
-				"responseButtons": true
-			},
-			"taskSummary": {
-				"taskStart": 305877,
-				"taskDuration": 5521,
-				"attempt": 1,
-				"group": 3,
-				"position": 1,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "",
-				"version": "Adult"
-			},
-			"logs": [{
-					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "islt headingdelayed,supervisorread",
-					"stimulusType": "Instructions",
-					"onsetTime": -1,
-					"logTime": 5513,
-					"reactionTime": 5513,
-					"responseDetails": "",
-					"responseType": "TruePositive"
-				}
-			]
-		}, {
-			"parameters": {
-				"code": "ISLTDelayedAdult",
-				"store": false,
-				"minTime": 5000,
-				"maxTime": 600000,
-				"stimulusNumber": 12,
-				"stimulusGroup": "adult",
-				"recall": true,
-				"show": "recallpaneldelay",
-				"round": 1,
-				"rounds": 1
-			},
-			"taskSummary": {
-				"taskStart": 311398,
-				"taskDuration": 9293,
-				"attempt": 1,
-				"group": 3,
-				"position": 2,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "9,0,PICKLES,PICKLES:13,5,PLUM,PLUM:0,2,BEER,BEER:15,1,CLAMS,CLAMS:4,5,SOUP,SOUP:11,5,CHICKEN,CHICKEN:10,2,PEPPER,PEPPER:6,1,BREAD,BREAD:8,1,LASAGNA,LASAGNA:12,1,ASPARAGUS,ASPARAGUS:1,2,ONIONS,ONIONS:2,5,GRAPES,GRAPES:",
-				"version": "Adult"
-			},
-			"logs": [{
-					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "PICKLES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 788,
-					"reactionTime": -1,
-					"responseDetails": "9,0",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 4,
-					"stimulusDetails": "CLAMS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 1312,
-					"reactionTime": -1,
-					"responseDetails": "15,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "CHICKEN",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 1617,
-					"reactionTime": -1,
-					"responseDetails": "11,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "ONIONS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 2562,
-					"reactionTime": -1,
-					"responseDetails": "1,2",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 9,
-					"stimulusDetails": "LASAGNA",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 3093,
-					"reactionTime": -1,
-					"responseDetails": "8,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 8,
-					"stimulusDetails": "BREAD",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 3499,
-					"reactionTime": -1,
-					"responseDetails": "6,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "ASPARAGUS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 3820,
-					"reactionTime": -1,
-					"responseDetails": "12,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 12,
-					"stimulusDetails": "GRAPES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 4062,
-					"reactionTime": -1,
-					"responseDetails": "2,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 7,
-					"stimulusDetails": "PEPPER",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 4532,
-					"reactionTime": -1,
-					"responseDetails": "10,2",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 3,
-					"stimulusDetails": "BEER",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 4882,
-					"reactionTime": -1,
-					"responseDetails": "0,2",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 2,
-					"stimulusDetails": "PLUM",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 5804,
-					"reactionTime": -1,
-					"responseDetails": "13,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "LASAGNA",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 7618,
-					"reactionTime": -1,
-					"responseDetails": "8,1",
-					"responseType": "Retraction"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "OtherWord",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 8140,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Intrusion"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 8664,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Finish"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 9273,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Continue"
-				}
-			]
-		}, {
-			"parameters": {
-				"code": "ISLTNotAttemptedReason",
-				"store": false,
-				"minTime": 5000,
-				"maxTime": 240000,
-				"instructions": "islt",
-				"show": "input",
-				"buttonText": "ok",
-				"responseButtons": true,
-				"round": 1,
-				"rounds": 1,
-				"field": "isltNotAttempted",
-				"completion": 1
-			},
-			"taskSummary": {
-				"taskStart": 320691,
-				"taskDuration": 0,
-				"attempt": 1,
-				"group": 3,
-				"position": 3,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "",
-				"version": "Adult"
-			},
-			"logs": []
-		}, {
-			"parameters": {
-				"code": "ISLTInstructionsRecognition",
-				"store": true,
-				"minTime": 5000,
-				"maxTime": 120000,
-				"instructions": "islt",
-				"show": "headingrecognition,supervisorreadrecognition",
-				"responseButtons": true
-			},
-			"taskSummary": {
-				"taskStart": 320692,
-				"taskDuration": 5987,
-				"attempt": 1,
-				"group": 3,
-				"position": 4,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "",
-				"version": "Adult"
-			},
-			"logs": [{
-					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "islt headingrecognition,supervisorreadrecognition",
-					"stimulusType": "Instructions",
-					"onsetTime": -1,
-					"logTime": 5981,
-					"reactionTime": 5981,
-					"responseDetails": "",
-					"responseType": "TruePositive"
-				}
-			]
-		}, {
-			"parameters": {
-				"code": "ISLTRecognitionAdult",
-				"store": false,
-				"minTime": 5000,
-				"maxTime": 600000,
-				"stimulusNumber": 12,
-				"stimulusGroup": "adult",
-				"recall": true,
-				"show": "recallpanelrecognition",
-				"round": 1,
-				"rounds": 1
-			},
-			"taskSummary": {
-				"taskStart": 326679,
-				"taskDuration": 21381,
-				"attempt": 1,
-				"group": 3,
-				"position": 5,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "4,5,Probe,SOUP,SOUP:0,1,Foil,COFFEE,COFFEE:6,1,Probe,BREAD,BREAD:1,4,Foil,CAULIFLOWER,CAULIFLOWER:11,5,Probe,CHICKEN,CHICKEN:2,3,Foil,LEMONS,LEMONS:4,3,Foil,FRIES,FRIES:1,2,Probe,ONIONS,ONIONS:0,2,Probe,BEER,BEER:12,1,Probe,ASPARAGUS,ASPARAGUS:13,4,Foil,CHERRIES,CHERRIES:8,5,Foil,CEREAL,CEREAL:8,1,Probe,LASAGNA,LASAGNA:10,2,Probe,PEPPER,PEPPER:9,6,Foil,SAUCE,SAUCE:15,5,Foil,MUSSELS,MUSSELS:10,7,Foil,OREGANO,OREGANO:13,5,Probe,PLUM,PLUM:2,5,Probe,GRAPES,GRAPES:11,7,Foil,BACON,BACON:12,2,Foil,TURNIP,TURNIP:15,1,Probe,CLAMS,CLAMS:6,6,Foil,PRETZELS,PRETZELS:9,0,Probe,PICKLES,PICKLES:",
-				"version": "Adult"
-			},
-			"logs": [{
-					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "SOUP",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 1562,
-					"reactionTime": -1,
-					"responseDetails": "4,5",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 4,
-					"stimulusDetails": "CAULIFLOWER",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 1905,
-					"reactionTime": -1,
-					"responseDetails": "1,4",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 7,
-					"stimulusDetails": "FRIES",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 2448,
-					"reactionTime": -1,
-					"responseDetails": "4,3",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "ASPARAGUS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 2809,
-					"reactionTime": -1,
-					"responseDetails": "12,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 13,
-					"stimulusDetails": "LASAGNA",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 3132,
-					"reactionTime": -1,
-					"responseDetails": "8,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "MUSSELS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 3702,
-					"reactionTime": -1,
-					"responseDetails": "15,5",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 19,
-					"stimulusDetails": "GRAPES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 4398,
-					"reactionTime": -1,
-					"responseDetails": "2,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 22,
-					"stimulusDetails": "CLAMS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 4866,
-					"reactionTime": -1,
-					"responseDetails": "15,1",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 23,
-					"stimulusDetails": "PRETZELS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 5360,
-					"reactionTime": -1,
-					"responseDetails": "6,6",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 20,
-					"stimulusDetails": "BACON",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 5656,
-					"reactionTime": -1,
-					"responseDetails": "11,7",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 17,
-					"stimulusDetails": "OREGANO",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 6029,
-					"reactionTime": -1,
-					"responseDetails": "10,7",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 14,
-					"stimulusDetails": "PEPPER",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 6445,
-					"reactionTime": -1,
-					"responseDetails": "10,2",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "CHERRIES",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 6851,
-					"reactionTime": -1,
-					"responseDetails": "13,4",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "CHERRIES",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 7313,
-					"reactionTime": -1,
-					"responseDetails": "13,4",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 8,
-					"stimulusDetails": "ONIONS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 8226,
-					"reactionTime": -1,
-					"responseDetails": "1,2",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 5,
-					"stimulusDetails": "CHICKEN",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 8563,
-					"reactionTime": -1,
-					"responseDetails": "11,5",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 2,
-					"stimulusDetails": "COFFEE",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 8885,
-					"reactionTime": -1,
-					"responseDetails": "0,1",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 3,
-					"stimulusDetails": "BREAD",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 9398,
-					"reactionTime": -1,
-					"responseDetails": "6,1",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "LEMONS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 9647,
-					"reactionTime": -1,
-					"responseDetails": "2,3",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 9,
-					"stimulusDetails": "BEER",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 10163,
-					"reactionTime": -1,
-					"responseDetails": "0,2",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 12,
-					"stimulusDetails": "CEREAL",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 10491,
-					"reactionTime": -1,
-					"responseDetails": "8,5",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 12,
-					"stimulusDetails": "CEREAL",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 10804,
-					"reactionTime": -1,
-					"responseDetails": "8,5",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 15,
-					"stimulusDetails": "SAUCE",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 11155,
-					"reactionTime": -1,
-					"responseDetails": "9,6",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 24,
-					"stimulusDetails": "PICKLES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 12069,
-					"reactionTime": -1,
-					"responseDetails": "9,0",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 21,
-					"stimulusDetails": "TURNIP",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 12381,
-					"reactionTime": -1,
-					"responseDetails": "12,2",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 18,
-					"stimulusDetails": "PLUM",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 12913,
-					"reactionTime": -1,
-					"responseDetails": "13,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "SOUP",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 14743,
-					"reactionTime": -1,
-					"responseDetails": "4,5",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 1,
-					"stimulusDetails": "SOUP",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 15631,
-					"reactionTime": -1,
-					"responseDetails": "4,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 17,
-					"stimulusDetails": "OREGANO",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 16781,
-					"reactionTime": -1,
-					"responseDetails": "10,7",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "LEMONS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 17618,
-					"reactionTime": -1,
-					"responseDetails": "2,3",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 24,
-					"stimulusDetails": "PICKLES",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 18476,
-					"reactionTime": -1,
-					"responseDetails": "9,0",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 5,
-					"stimulusDetails": "CHICKEN",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 19424,
-					"reactionTime": -1,
-					"responseDetails": "11,5",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 20243,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Finish"
-				}, {
-					"round": 1,
-					"trial": -1,
-					"stimulusDetails": "",
-					"stimulusType": "",
-					"onsetTime": -1,
-					"logTime": 21360,
-					"reactionTime": -1,
-					"responseDetails": "",
-					"responseType": "Continue"
-				}
-			]
-		}, {
-			"parameters": {
-				"code": "ISLTNotAttemptedReason",
-				"store": false,
-				"minTime": 5000,
-				"maxTime": 240000,
-				"instructions": "islt",
-				"show": "input",
-				"buttonText": "ok",
-				"responseButtons": true,
-				"round": 1,
-				"rounds": 1,
-				"field": "isltNotAttempted",
-				"completion": 1
-			},
-			"taskSummary": {
-				"taskStart": 348060,
-				"taskDuration": 0,
-				"attempt": 1,
-				"group": 3,
-				"position": 6,
-				"completionScore": 1,
-				"completionPass": true,
-				"integrityScore": 1,
-				"integrityPass": true,
-				"skipped": false,
-				"timeOut": false,
-				"details": "",
-				"version": "Adult"
-			},
-			"logs": []
 		}
 	],
 	"configuration": {
+		"basePath": "",
+		"localePath": "",
+		"version": "",
 		"groups": [{
 				"skipRest": false,
 				"maxAttempts": 1,
@@ -2235,45 +1431,16 @@
 						"round": 3
 					}
 				]
-			}, {
-				"skipRest": false,
-				"maxAttempts": 1,
-				"version": "Adult",
-				"parameters": [{
-						"code": "ISLTInstructionsRemember"
-					}
-				]
-			}, {
-				"skipRest": false,
-				"maxAttempts": 1,
-				"version": "Adult",
-				"parameters": [{
-						"code": "StopInstructions"
-					}
-				]
-			}, {
-				"skipRest": false,
-				"maxAttempts": 1,
-				"version": "Adult",
-				"parameters": [{
-						"code": "ISLTCheckAdult"
-					}, {
-						"code": "ISLTInstructionsDelayed"
-					}, {
-						"code": "ISLTDelayedAdult"
-					}, {
-						"code": "ISLTNotAttemptedReason",
-						"rounds": 1
-					}, {
-						"code": "ISLTInstructionsRecognition"
-					}, {
-						"code": "ISLTRecognitionAdult"
-					}, {
-						"code": "ISLTNotAttemptedReason",
-						"rounds": 1
-					}
-				]
 			}
-		]
+		],
+		"repeat": {
+			"maxAttempts": 1,
+			"skipRest": false,
+			"version": "",
+			"parameters": [{
+					"code": "RepeatInstructions"
+				}
+			]
+		}
 	}
 }

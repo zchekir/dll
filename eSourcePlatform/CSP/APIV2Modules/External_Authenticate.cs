@@ -41,10 +41,10 @@ namespace CSP.APIV2Modules
         /// </summary>
         public External_Authenticate()
         {
-            DOM = "cgst-qcpd.azurewebsites.net";
-            studyProtocolName = "v2";
-            key = "cf7d1bfe-7294-4f84-8bc4-428b3272dbcb";
-            secret = "5268fa42-8060-4bb6-b159-7da0d8b60d10";
+            CSPDOM = "";
+            ProtocolNumber = "";
+            Key = "cf7d1bfe-7294-4f84-8bc4-428b3272dbcb";
+            Secret = "5268fa42-8060-4bb6-b159-7da0d8b60d10";
             AuthToken = "";
         }
 
@@ -58,40 +58,28 @@ namespace CSP.APIV2Modules
 
 #region Variables
 
-        string _DOM;
+        string _ProtocolNumber;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("9aaefa3f-959c-43d5-b70b-4ab58b9160f0")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
-        string _studyProtocolName;
-
-        /// <summary>
-        /// Gets or sets the value of variable studyProtocolName.
+        /// Gets or sets the value of variable ProtocolNumber.
         /// </summary>
         [TestVariable("63ad9351-6ec7-4a04-96fb-93ba0eee0c0e")]
-        public string studyProtocolName
+        public string ProtocolNumber
         {
-            get { return _studyProtocolName; }
-            set { _studyProtocolName = value; }
+            get { return _ProtocolNumber; }
+            set { _ProtocolNumber = value; }
         }
 
-        string _secret;
+        string _Secret;
 
         /// <summary>
-        /// Gets or sets the value of variable secret.
+        /// Gets or sets the value of variable Secret.
         /// </summary>
         [TestVariable("280f8c82-fde0-4bbf-8603-40d1ee3acfea")]
-        public string secret
+        public string Secret
         {
-            get { return _secret; }
-            set { _secret = value; }
+            get { return _Secret; }
+            set { _Secret = value; }
         }
 
         string _AuthToken;
@@ -107,10 +95,20 @@ namespace CSP.APIV2Modules
         }
 
         /// <summary>
-        /// Gets or sets the value of variable key.
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("9aaefa3f-959c-43d5-b70b-4ab58b9160f0")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Key.
         /// </summary>
         [TestVariable("f186491e-a988-4bd5-8270-b971bccb2bd9")]
-        public string key
+        public string Key
         {
             get { return repo.Key; }
             set { repo.Key = value; }
@@ -142,7 +140,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            ServerAuthentication(key, secret, studyProtocolName, DOM);
+            ServerAuthentication(Key, Secret, ProtocolNumber, CSPDOM);
             Delay.Milliseconds(0);
             
         }
