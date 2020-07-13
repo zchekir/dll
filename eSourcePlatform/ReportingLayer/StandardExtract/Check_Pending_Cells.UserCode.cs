@@ -28,8 +28,9 @@ namespace ReportingLayer.StandardExtract
 	public partial class Check_Pending_Cells
 	{
 		int i;
-		Boolean isPending = false;
+		Boolean isPending;
 		DataTable dt = new DataTable();
+		
 		private void Init()
 		{
 			// Your recording specific initialization code goes here.
@@ -51,6 +52,9 @@ namespace ReportingLayer.StandardExtract
 			//do while the peeding data appears in DB
 			do{
 				
+				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow
+				isPending = false;
+				
 				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "300");
 				
 				SqlDataAdapter da = new SqlDataAdapter(query,sqlConnString);
@@ -71,12 +75,12 @@ namespace ReportingLayer.StandardExtract
 					if (dt.Rows[0][i].ToString() == "<Pending>")
 					{
 						isPending = true;
-						Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
 						Delay.Seconds(4);
 					}
 					else
 					{
 						Report.Success(dt.Columns[i].ColumnName + ": " + dt.Rows[0][i].ToString());
+
 					}
 					
 				}
@@ -90,8 +94,6 @@ namespace ReportingLayer.StandardExtract
 					break;
 				}
 				
-				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow
-				isPending = false;
 				
 			}while (isPending);
 		}

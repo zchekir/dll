@@ -53,7 +53,7 @@ namespace RedCapCloud
 
 #region Variables
 
-        string _RCCDOM = "cgst-qcpd.uat.redcapcloud.com";
+        string _RCCDOM = "cgsqc.redcapcloud.com";
 
         /// <summary>
         /// Gets or sets the value of variable RCCDOM.
@@ -2548,7 +2548,7 @@ namespace RedCapCloud
                 _studysiteidInfo = new RepoItemInfo(this, "StudySiteID", ".//div[#'gwtWrapper']//tbody/tr/td/div[@innertext>$RandNum]", 30000, null, "b8742b2e-3cce-44e2-8f08-3b5c99d9b1ff");
                 _begincogstatebatterybuttonInfo = new RepoItemInfo(this, "BeginCogstateBatteryButton", ".//div[#'subjectMatrixByEventsViewAbstract_rowCrfName_beginCogstateBattery']", 30000, null, "f03b223b-a2a2-4b17-bf2b-1756ece1e2f3");
                 _malegenderInfo = new RepoItemInfo(this, "MaleGender", ".//div[#'gwtWrapper']//table/tbody/tr/td/?/?/input[@name~'rdio_[0-9]']", 30000, null, "e2c5faba-e28a-4d47-99c1-1e9229e1928e");
-                _languagedropdownInfo = new RepoItemInfo(this, "LanguageDropdown", ".//div[#'gwtWrapper']//table/tbody/tr/td/div/div/div/div/?/?/button", 30000, null, "49e8515c-f881-46a5-a470-f09db46ae3b8");
+                _languagedropdownInfo = new RepoItemInfo(this, "LanguageDropdown", ".//input[#'language_input']", 30000, null, "49e8515c-f881-46a5-a470-f09db46ae3b8");
                 _englishusInfo = new RepoItemInfo(this, "EnglishUS", ".//li/a[@innertext='English - US']", 30000, null, "82622083-e411-4c96-8e50-a507d202f3ff");
                 _usenglishInfo = new RepoItemInfo(this, "USEnglish", ".//li/a[@innertext='US - English']", 30000, null, "158c267d-20ad-404a-a918-ca5a78c74218");
                 _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'studyBaseEditForm_buttonSaveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "ce3a1313-e308-48ba-9e51-bf1c7045d365");
@@ -2756,11 +2756,11 @@ namespace RedCapCloud
             /// The LanguageDropdown item.
             /// </summary>
             [RepositoryItem("49e8515c-f881-46a5-a470-f09db46ae3b8")]
-            public virtual Ranorex.ButtonTag LanguageDropdown
+            public virtual Ranorex.InputTag LanguageDropdown
             {
                 get
                 {
-                    return _languagedropdownInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                    return _languagedropdownInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 

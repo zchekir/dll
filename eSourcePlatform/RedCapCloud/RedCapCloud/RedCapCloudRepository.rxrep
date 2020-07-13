@@ -589,12 +589,12 @@ rxversion="8.3">
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
-				capname="buttontag"
+				capname="inputtag"
 				id="49e8515c-f881-46a5-a470-f09db46ae3b8"
 				name="LanguageDropdown"
 				refimgid="f7d9ad9b-1614-465d-b17c-127e847306f4"
 				searchtimeout="30000ms">
-					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//table/tbody/tr/td/div/div/div/div/?/?/button
+					/dom[@domain=$RCCDOM]//input[#'language_input']
 				</item>
 				<item
 				addcaps="unknown,webelement,atag"
@@ -1403,7 +1403,7 @@ AAAASUVORK5CYII=
 		<var
 		id="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 		name="RCCDOM">
-			cgst-qcpd.uat.redcapcloud.com
+			cgsqc.redcapcloud.com
 		</var>
 		<var
 		id="9fb53a7d-2a6f-47b3-8fa5-4d13a07e1b86"
