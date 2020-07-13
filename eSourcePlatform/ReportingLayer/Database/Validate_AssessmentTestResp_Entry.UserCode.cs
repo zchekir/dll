@@ -48,11 +48,13 @@ namespace ReportingLayer.Database
         					WHERE TestID = @TestIdentifier";
 			
 			//Setup Connection String
-			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "300");
 			
 			//Setup sql Client
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
 			da.SelectCommand.Parameters.AddWithValue("@TestIdentifier", TestIdentifier);
+			//Sets the timeout for the query to 5 minutes
+			da.SelectCommand.CommandTimeout = 300;
 			
 			//Get query results
 			using (da)

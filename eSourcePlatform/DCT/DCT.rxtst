@@ -806,70 +806,10 @@ rxversion="8.3">
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="Subject"
+					dataname="GmailPassword"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
-					variablename="Subject">
-					</var>
-					<var
-					dataname="Body"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
-					variablename="Body">
-					</var>
-					<var
-					dataname="To"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
-					variablename="To">
-					</var>
-					<var
-					dataname="From"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
-					variablename="From">
-					</var>
-					<var
-					dataname="ServerHostname"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
-					variablename="ServerHostname">
-					</var>
-					<var
-					dataname="ServerPort"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
-					variablename="ServerPort">
-					</var>
-					<var
-					dataname="UseSSL"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
-					variablename="UseSSL">
-					</var>
-					<var
-					dataname="SendEmailOnFailure"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
-					variablename="SendEmailOnFailure">
-					</var>
-					<var
-					dataname="SendEmailOnSuccess"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="670a378a-e239-43e7-8325-c216fd11f190"
-					variablename="SendEmailOnSuccess">
-					</var>
-					<var
-					dataname="SendZippedReportOnComplete"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
-					variablename="SendZippedReportOnComplete">
-					</var>
-					<var
-					dataname="SendPdfReportOnComplete"
-					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
-					variablename="SendPdfReportOnComplete">
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
 					</var>
 					<var
 					dataname="GmailAddress"
@@ -878,10 +818,70 @@ rxversion="8.3">
 					variablename="Username">
 					</var>
 					<var
-					dataname="GmailPassword"
+					dataname="SendPdfReportOnComplete"
 					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="Subject"
+					datasourceid="0661aeb6-44c3-4349-8996-32961057ee74"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2175,7 +2175,7 @@ rxversion="8.3">
 		<DataSource
 		id="36c84863-c4e2-4980-8687-22e322546024"
 		includefile="Unchecked"
-		lastknownrowcount="5"
+		lastknownrowcount="44"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -2256,6 +2256,9 @@ rxversion="8.3">
 					SupervisorId
 				</column>
 				<column>
+					Mode
+				</column>
+				<column>
 					Filename
 				</column>
 				<column>
@@ -2331,7 +2334,7 @@ rxversion="8.3">
 		<DataSource
 		id="0661aeb6-44c3-4349-8996-32961057ee74"
 		includefile="Unchecked"
-		lastknownrowcount="5"
+		lastknownrowcount="4"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

@@ -102,6 +102,10 @@ namespace ReportingLayer.AcademicExtract
 					}
 					break;
 				}
+				
+				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow
+				isPending = false;
+				
 			} while (isPending);
 			
 			
