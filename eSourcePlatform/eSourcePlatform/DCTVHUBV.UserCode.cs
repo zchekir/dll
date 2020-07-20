@@ -67,7 +67,8 @@ public class rowsJSONResponseA
             private const string RedCapAdapterJob  ="Cogstate.Integration.RedCapAdapterJobs";
             private const string RedCapHandlerJobs ="Cogstate.Integration.RedCapHandlerJobs";
             private const string AbsorbWebJobs  ="Cogstate.Absorb.WebJobs";
-        private void Init()
+       
+            private void Init()
         {
             
         }
