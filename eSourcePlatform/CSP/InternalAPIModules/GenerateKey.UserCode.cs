@@ -77,11 +77,14 @@ namespace CSP.InternalAPIModules
 		public void Generate_Key(string id, string contactEmail, string active, string I_AuthToken, string key, string DOM)
 		{
 			
+			
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+ DOM + "/api/externalusers");
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
 			httpRequest.Headers.Add("Authorization", I_AuthToken);
+			
+			
 			
 			
 			//Check if external id is empty and generate a random number if true

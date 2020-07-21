@@ -67,7 +67,8 @@ public class rowsJSONResponseA
             private const string RedCapAdapterJob  ="Cogstate.Integration.RedCapAdapterJobs";
             private const string RedCapHandlerJobs ="Cogstate.Integration.RedCapHandlerJobs";
             private const string AbsorbWebJobs  ="Cogstate.Absorb.WebJobs";
-        private void Init()
+       
+            private void Init()
         {
             
         }
@@ -76,8 +77,10 @@ public class rowsJSONResponseA
         {
         	
         	
-           
-				
+        	try{
+        		
+        
+		    // sending the API call 		
 			var httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Accept.Add(
             new MediaTypeWithQualityHeaderValue("application/json"));
@@ -94,18 +97,16 @@ public class rowsJSONResponseA
             var assemblyVersionString = responseObject.tables.First().rows.First().ElementAt(3);
             
             
+           // looping into responseObject to extract the webjobs
             foreach( var row in  responseObject.tables.First().rows){
             	
-            	var rowData = row.ElementAt(3);
-            	
-            	
+            var rowData = row.ElementAt(3);
             AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
-          
-           var entryAssembly = version.EntryAssembly.Split(',').First();
+            var entryAssembly = version.EntryAssembly.Split(',').First();
         
-           // Report.Log(ReportLevel.Info,rowData);
+           
             
-            
+           // checking the current and the expected versions for the hub 
            
             if(entryAssembly == V8HandlerJobs){
              
@@ -143,7 +144,7 @@ public class rowsJSONResponseA
             
             else {
             	
-            	Report.Log(ReportLevel.Info,"Something is wrong");
+            	Report.Log(ReportLevel.Info,"Something is wrong, check the current & the expected versions");
             }
              
       
@@ -154,9 +155,15 @@ public class rowsJSONResponseA
            
            
                                                 	
-   }
+   }catch (Exception e) {
+        	
+        	Report.Log(ReportLevel.Failure,"Please increase your timestamp, there is NOT data deployed during this time.");
+       
+        	
+        }
         
-        
+       
+        }
         
         }
 	
