@@ -34,7 +34,7 @@ namespace engine.DataProcessor
         /// Public variable used to store the Current extract value found
         /// </summary>
         public static string CurrentValue;
-        
+              
 		
         /// <summary>
         /// This method will loop through the CSV datatable (must be loaded in by using the CSV utility first)
@@ -245,6 +245,39 @@ namespace engine.DataProcessor
         	return engine.Helpers.SQLUtility.dt.Rows[rowIndex]["Round"].ToString();
         }
         
+        /// <summary>
+        /// Returns the Outcome specificaiton Reference number for the test and outcome passed in.
+        /// The numbering for each test/outcome combination are stored externally in a csv file
+        /// </summary>
+        /// <param name="testCode">The code to search for. E.g DetectionAdultReal</param>
+        /// <param name="outcomeName">The outcome to search for E.g. ReactionTime</param>
+        /// <returns>Returns string containing outcome reference. E.g 6.1.2</returns>
+        private static string GetOutcomeReference(string testCode, string outcomeName)
+        {
+        	string refNumber = "";
+        	int rowIndex = 0;
+        	
+        	//Loop over each row in the outcomeReference datatbale to find the row containing the
+        	//references for the current testCode
+        	foreach (DataRow row in engine.Helpers.CSVUtility.outcomeReference.Rows)
+        	{
+        		if (row["TestCode"].ToString() == testCode)
+        		{
+        			for (int i = 0; i < engine.Helpers.CSVUtility.outcomeReference.Columns.Count; i++)
+        			{
+        				if (engine.Helpers.CSVUtility.outcomeReference.Columns[i].ColumnName.ToString() == outcomeName)
+        				{
+        					refNumber = engine.Helpers.CSVUtility.outcomeReference.Rows[rowIndex][i].ToString();
+        				}
+        			}
+        		}
+        		
+        		rowIndex++;
+        	}
+        	
+        	return refNumber;
+        }
+        
         
 		/// <summary>
 		/// This method will loop over each row in the Datatable retrieved from the Database, comparing each outcome
@@ -259,6 +292,7 @@ namespace engine.DataProcessor
         	string currentOutcome = "";
         	string currentTestCode = "";
         	string currentRound = "";
+        	string outcomeReference = "";
         	
         	//Loop over each column from the processed data. When the 'Test' column containing the tests completed in the battery is found,
         	//loop over each column in that row, comparing the value from extract to value from database, then move on to the next row
@@ -298,8 +332,11 @@ namespace engine.DataProcessor
         			else
         				Report.Failure("Processed Score does not match the score in the extract");
         			
-        			Report.Info("Extract Outcome: " + currentOutcome + " - Extract Value: " + extractValue);
-        			Report.Info("Database Outcome: " + currentOutcome + " - Database Value: " + databaseValue);
+        			//Retrieve the outcome reference number based on the current test code and outcome
+        			outcomeReference = GetOutcomeReference(currentTestCode, currentOutcome);
+        			
+        			Report.Info("Extract Outcome: " + outcomeReference + " " + currentOutcome + " - Extract Value: " + extractValue);
+        			Report.Info("Database Outcome: " + outcomeReference + " " + currentOutcome + " - Database Value: " + databaseValue);
 
         		}
         		

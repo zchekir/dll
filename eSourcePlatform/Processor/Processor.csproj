@@ -45,6 +45,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="engine">
+      <HintPath>..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex Automation Helpers">
       <HintPath>..\..\_assets\engine\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
     </Reference>
@@ -130,6 +133,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>ae2d652d-bd72-4e65-9adb-019496a24343</id>
     </Compile>
+    <Compile Include="Outcomes\Read_OutcomeReferences.cs">
+      <BoundTo>308fd6f0-f404-4199-813f-c15676a413fe</BoundTo>
+      <DependentUpon>Read_OutcomeReferences.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63739c31-bee7-4fc3-8d61-b86c59aa2deb</id>
+    </Compile>
+    <Compile Include="Outcomes\Read_OutcomeReferences.UserCode.cs">
+      <BoundTo>308fd6f0-f404-4199-813f-c15676a413fe</BoundTo>
+      <DependentUpon>Read_OutcomeReferences.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c120a175-d474-4367-8607-dc98547485c7</id>
+    </Compile>
     <Compile Include="ProcessorRepository.cs">
       <BoundTo>b5bd0f8a-4df5-4582-b2be-1dbdcf54441b</BoundTo>
       <DependentUpon>ProcessorRepository.rxrep</DependentUpon>
@@ -143,6 +158,15 @@
   <ItemGroup>
     <None Include="app.config">
       <id>bb69f410-91da-4990-9a9d-ca3f0c166083</id>
+    </None>
+    <None Include="csv\ReferenceConnector.csv">
+      <id>4ef5937c-a11d-4436-bd47-1f5f25f545fb</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Outcomes\Read_OutcomeReferences.rxrec">
+      <BoundTo>b5bd0f8a-4df5-4582-b2be-1dbdcf54441b</BoundTo>
+      <id>308fd6f0-f404-4199-813f-c15676a413fe</id>
+      <recordtableid>15d4e818-329f-4788-9025-c220e8699f2b</recordtableid>
     </None>
     <None Include="ProcessorRepository.rximg">
       <BoundTo>b5bd0f8a-4df5-4582-b2be-1dbdcf54441b</BoundTo>
@@ -171,6 +195,14 @@
       <Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
       <Name>CSP</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="csv">
+      <id>f3eb4be0-4561-4ad1-bd25-83d5048ea73e</id>
+    </Folder>
+    <Folder Include="Outcomes">
+      <id>16e32d2b-588f-44f3-bb81-377734e6fee4</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

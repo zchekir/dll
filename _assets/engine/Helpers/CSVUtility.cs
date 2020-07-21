@@ -34,6 +34,12 @@ namespace engine.Helpers
 		/// </summary>
     	public static DataTable dt = new DataTable();
     	
+    	/// <summary>
+    	/// DataTable used specifically to store a table of outcome reference numbers which map back to
+    	/// their testCode and Outcome from the specification
+    	/// </summary>
+    	public static DataTable outcomeReference = new DataTable();
+    	
 
         /// <summary>
         /// Reads the CSV file passed in and stores it into a new DataTable
@@ -92,7 +98,66 @@ namespace engine.Helpers
         			}
         		}
         	}
-        }    	
+        } 
+
+        /// <summary>
+        /// Reads the CSV file passed in and stores it into a new DataTable
+        /// </summary>
+        [UserCodeMethod]
+        public static void ReadOutcomeReference(string fileName)
+        {
+        	//Clear datatable to make sure we are starting fresh
+        	outcomeReference.Reset();
+        	
+        	var dIndex = new Dictionary<string, int>();
+        	using (TextFieldParser csvReader = new TextFieldParser(@".\csv\ReferenceConnector.csv"))
+        	{
+        		csvReader.Delimiters = new string[] { "," };
+        		var cols = csvReader.ReadFields();
+        		
+        		//Loop over each column which was read in from the CSV file
+        		for (int i = 0; i < cols.Length; i++)
+        		{
+        			//Store the current column name
+        			string colHeading = cols[i];
+        			
+        			//Add the column heading ot dictionary if it contains text
+        			if (colHeading != string.Empty)
+        			{
+        				dIndex.Add(colHeading, i);
+        				
+        				//Only add the column to the data table if it does not already exist
+        				if (!outcomeReference.Columns.Contains(colHeading))
+        					outcomeReference.Columns.Add(colHeading);
+        			}
+        		}
+        		
+        		//Read the rest of the CSV file
+        		while (!csvReader.EndOfData)
+        		{
+        			//Reads each field on the current line and stores in the data table
+        			string[] field = csvReader.ReadFields();
+        			
+        			if (field.Length > 0)
+        			{
+        				//Creates a new row and adds it to the data table
+        				DataRow dr = outcomeReference.NewRow();
+        				
+        				//Adds each field to a row
+        				foreach (var keyValue in dIndex)
+        				{
+        					int iVal = keyValue.Value;
+        					
+        					if (iVal < field.Length)
+        						dr[keyValue.Key] = field[iVal];
+        				}
+        			
+        				//Adds the data row to the data table
+        				outcomeReference.Rows.Add(dr);
+        			}
+        		}
+        	}
+        }        
     	
     	/// <summary>
     	/// Reads a DataTable and writes the contents to a CSV file
