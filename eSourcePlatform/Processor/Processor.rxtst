@@ -278,6 +278,10 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<setup
+			id="0250eee3-7cc9-44f7-8f54-81ec6a368c85"
+			name="setup12321111112111241111">
+			</setup>
 			<teardown
 			id="026b9e05-3e38-4dc5-afd5-838d46c6ee52"
 			name="teardown1232111">
@@ -1212,6 +1216,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="20440e2a-c7ce-4970-9d93-2a15990fead8"
+			name="FaceName">
+			</smartfoldernode>
 			<testcase
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -1272,6 +1280,10 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<teardown
+			id="24832c08-8cf1-40f9-958c-bc43ce0c4660"
+			name="teardown12321111112111241112">
+			</teardown>
 			<teardown
 			id="2a6dea3e-a682-4577-8925-30410335e4d6"
 			name="teardown123211">
@@ -1853,6 +1865,56 @@ rxversion="8.3">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
+			<testmodule
+			id="3c4d5bc1-28d4-496e-b533-02a80d3ad370"
+			name="Validate_Outcomes"
+			ref="0739dcfc-2397-4f24-93f3-0747bbf8fb91"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="71244c15-4b98-4504-9f68-5b400a580d59"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d91af805-e7a8-444c-9dcf-67c8a006407d"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="59824432-8863-42bc-a1bb-4fa7b78a2f59"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d56a6c72-05e1-4210-997c-d11330351985"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="56ca321f-3094-4886-8c9f-92983c426690"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="8c2baad2-5ea4-454f-b189-a4b7e6bbf83e"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="32eb6b65-3e01-4dd3-b16f-78e83dd26705"
+					variablename="fileName">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="3d0d5d1a-ab27-48f5-b2b9-af9d3a604457"
 			name="Generate_Workflow_Complete_Assessment"
@@ -2289,6 +2351,163 @@ rxversion="8.3">
 			id="41f2697f-eeca-446c-a5c7-c88dc5abc24d"
 			name="setup12321111112">
 			</setup>
+			<modulegroup
+			id="422a7130-a0f7-40f1-8230-b64d6058fc8d"
+			name="Generate_Workflow_Complete_Assessment"
+			ref="0260ed29-99e4-4d6b-9b87-8410c6625e3c">
+				<databinding>
+					<var
+					dataname="AuthToken"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="8ebe58f3-9b76-42bc-9bf3-a9d977e2118c"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="93e4bfa0-2f29-414f-9ae5-8276f5b0ea1e"
+					variablename="ExternalID">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="3fe91562-c0f8-4be5-af6a-95d7dda06693"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="f3bcd965-4425-441b-b18a-3512b1189042"
+					variablename="AssessmentURL">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="8de02f58-222b-414e-96ad-e9c15f8b6659"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Key"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="4d6cbcf6-900c-4569-8956-244b2653c27d"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Secret"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="ba620796-828c-428e-9b13-d85f4be21c4e"
+					variablename="Secret">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="9e1d3cfb-dca3-4dbb-bcbf-4ad87514d69f"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d3761076-4d12-4180-a6b9-abd19c4bf9e5"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="e4b938d0-461b-4900-85b1-c24a71a41a07"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="2ea26d30-7bf3-4306-a89b-bd7a79f82951"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="c319749a-87ba-4610-873e-1f12e62a4d24"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="4e08d43c-f997-4f4c-926d-8ee359f6fb74"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="78bf3f9b-b323-4464-9889-e8cd9f157b23"
+					variablename="ProtocolNumber">
+					</var>
+					<var
+					dataname="VisitSessionCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="7eac9cf8-ba56-42c2-a636-15d6a084d60f"
+					variablename="VisitSessionCode">
+					</var>
+					<var
+					dataname="LocalityCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="60b1f69b-d1dd-4a28-a175-d6693e5d9225"
+					variablename="LocalityCode">
+					</var>
+					<var
+					dataname="Redirect"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="4f7da5de-66a0-4103-854e-0ee8caf678a5"
+					variablename="Redirect">
+					</var>
+					<var
+					dataname="RedirectError"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="21578795-48c0-4fff-bf8b-0c8091a99315"
+					variablename="RedirectError">
+					</var>
+					<var
+					dataname="GenderCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="95afe779-f531-419b-993d-0612713e8251"
+					variablename="GenderCode">
+					</var>
+					<var
+					dataname="DOB"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="0b9d4948-7b0c-4fc0-9fbb-8ac10bfe9799"
+					variablename="DOB">
+					</var>
+					<var
+					dataname="SupervisorId"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="31c41373-3f2b-48a8-b83b-64fb4aaf5973"
+					variablename="SupervisorId">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="7eecd5f0-66f9-4e1f-b674-3ba5769b3e40"
+					variablename="Mode">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="a8e520f2-467d-461d-aeb1-8a56effc7b50"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="workflowAuthToken"
+					datasourceid="ef0c5c12-bcdc-444b-b58f-9800e206d4d1"
+					variableid="315538a9-ba27-4e5d-8910-74abc9b554ef"
+					variablename="workflowAuthToken">
+					</var>
+					<var
+					dataname="workflowInstanceId"
+					datasourceid="ef0c5c12-bcdc-444b-b58f-9800e206d4d1"
+					variableid="f9cfa37a-d55c-468f-956c-cf08b8e1bb59"
+					variablename="workflowInstanceId">
+					</var>
+				</databinding>
+			</modulegroup>
 			<teardown
 			id="439d1c17-ee88-454c-848f-7a9c9ec8eefc"
 			name="teardown12">
@@ -2592,6 +2811,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="4c774cb5-811f-4c4d-a353-23be494d768f"
+			name="setup12321111112111241112">
+			</setup>
 			<setup
 			id="4c8f8d88-54f6-4471-8824-d4412e6a65e1"
 			name="setup122">
@@ -3250,6 +3473,10 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<teardown
+			id="5a914491-bd5c-4217-8f39-08843389e358"
+			name="teardown1232111111211124111">
+			</teardown>
 			<teardown
 			id="5ad1a189-9d03-4016-86f1-e35873719220"
 			name="teardown1232111111211">
@@ -3978,6 +4205,76 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="6e6363e2-202a-4f21-ab61-e69289a2eb60"
+			name="Clear_ExternalID"
+			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="ExternalID"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="57037071-6036-4a24-8145-c9dbf508e396"
+					variablename="externalID">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
+					variablename="Filename">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6e90fd57-1409-44be-92ca-7d219d57f2e1"
+			name="Validate_Outcomes"
+			ref="0739dcfc-2397-4f24-93f3-0747bbf8fb91"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="71244c15-4b98-4504-9f68-5b400a580d59"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d91af805-e7a8-444c-9dcf-67c8a006407d"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="59824432-8863-42bc-a1bb-4fa7b78a2f59"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d56a6c72-05e1-4210-997c-d11330351985"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="56ca321f-3094-4886-8c9f-92983c426690"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="8c2baad2-5ea4-454f-b189-a4b7e6bbf83e"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="32eb6b65-3e01-4dd3-b16f-78e83dd26705"
+					variablename="fileName">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="6ecb2ff7-c4b4-455e-bd58-89b3cda9853c"
 			name="Close_Browser"
@@ -5192,6 +5489,56 @@ rxversion="8.3">
 			name="teardown12321111">
 			</teardown>
 			<testmodule
+			id="95cc134d-7a95-457b-8ab4-9578386e7d6f"
+			name="Validate_Outcomes"
+			ref="0739dcfc-2397-4f24-93f3-0747bbf8fb91"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="71244c15-4b98-4504-9f68-5b400a580d59"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d91af805-e7a8-444c-9dcf-67c8a006407d"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="59824432-8863-42bc-a1bb-4fa7b78a2f59"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d56a6c72-05e1-4210-997c-d11330351985"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="56ca321f-3094-4886-8c9f-92983c426690"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="8c2baad2-5ea4-454f-b189-a4b7e6bbf83e"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="32eb6b65-3e01-4dd3-b16f-78e83dd26705"
+					variablename="fileName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9721f704-8bdb-4c77-8155-dc934a28b56c"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -5495,8 +5842,22 @@ rxversion="8.3">
 			name="teardown12321111112111">
 			</teardown>
 			<testcase
+			datarangeactive="True"
+			datasource="CSPConnector"
 			id="9a5f13fe-4066-44da-a55c-6a3b473f1ac8"
+			maxrange="44"
+			minrange="44"
 			name="TwoBk_CompletionFail">
+				<parameters>
+					<param
+					name="workflowAuthToken"
+					value="">
+					</param>
+					<param
+					name="workflowInstanceId"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<setup
 			id="9b78c78b-5bb3-42ed-9a02-81c30fdad2f9"
@@ -6259,6 +6620,163 @@ rxversion="8.3">
 			id="a9f02f89-0a8b-493d-a816-aba4570e586d"
 			name="setup1232">
 			</setup>
+			<modulegroup
+			id="acad3fa0-ec56-4a7e-a8c1-468cf14b8fd4"
+			name="Generate_Workflow_Complete_Assessment"
+			ref="0260ed29-99e4-4d6b-9b87-8410c6625e3c">
+				<databinding>
+					<var
+					dataname="AuthToken"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="8ebe58f3-9b76-42bc-9bf3-a9d977e2118c"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="93e4bfa0-2f29-414f-9ae5-8276f5b0ea1e"
+					variablename="ExternalID">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="3fe91562-c0f8-4be5-af6a-95d7dda06693"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="f3bcd965-4425-441b-b18a-3512b1189042"
+					variablename="AssessmentURL">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="8de02f58-222b-414e-96ad-e9c15f8b6659"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Key"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="4d6cbcf6-900c-4569-8956-244b2653c27d"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Secret"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="ba620796-828c-428e-9b13-d85f4be21c4e"
+					variablename="Secret">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="9e1d3cfb-dca3-4dbb-bcbf-4ad87514d69f"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d3761076-4d12-4180-a6b9-abd19c4bf9e5"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="e4b938d0-461b-4900-85b1-c24a71a41a07"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="2ea26d30-7bf3-4306-a89b-bd7a79f82951"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="c319749a-87ba-4610-873e-1f12e62a4d24"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="4e08d43c-f997-4f4c-926d-8ee359f6fb74"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="78bf3f9b-b323-4464-9889-e8cd9f157b23"
+					variablename="ProtocolNumber">
+					</var>
+					<var
+					dataname="VisitSessionCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="7eac9cf8-ba56-42c2-a636-15d6a084d60f"
+					variablename="VisitSessionCode">
+					</var>
+					<var
+					dataname="LocalityCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="60b1f69b-d1dd-4a28-a175-d6693e5d9225"
+					variablename="LocalityCode">
+					</var>
+					<var
+					dataname="Redirect"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="4f7da5de-66a0-4103-854e-0ee8caf678a5"
+					variablename="Redirect">
+					</var>
+					<var
+					dataname="RedirectError"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="21578795-48c0-4fff-bf8b-0c8091a99315"
+					variablename="RedirectError">
+					</var>
+					<var
+					dataname="GenderCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="95afe779-f531-419b-993d-0612713e8251"
+					variablename="GenderCode">
+					</var>
+					<var
+					dataname="DOB"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="0b9d4948-7b0c-4fc0-9fbb-8ac10bfe9799"
+					variablename="DOB">
+					</var>
+					<var
+					dataname="SupervisorId"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="31c41373-3f2b-48a8-b83b-64fb4aaf5973"
+					variablename="SupervisorId">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="7eecd5f0-66f9-4e1f-b674-3ba5769b3e40"
+					variablename="Mode">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="a8e520f2-467d-461d-aeb1-8a56effc7b50"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="workflowAuthToken"
+					datasourceid="9a5f13fe-4066-44da-a55c-6a3b473f1ac8"
+					variableid="315538a9-ba27-4e5d-8910-74abc9b554ef"
+					variablename="workflowAuthToken">
+					</var>
+					<var
+					dataname="workflowInstanceId"
+					datasourceid="9a5f13fe-4066-44da-a55c-6a3b473f1ac8"
+					variableid="f9cfa37a-d55c-468f-956c-cf08b8e1bb59"
+					variablename="workflowInstanceId">
+					</var>
+				</databinding>
+			</modulegroup>
 			<setup
 			id="ad3d0166-922a-4b3f-ac2b-c1eb36e52dbb"
 			name="setup1232111111211121">
@@ -6891,6 +7409,26 @@ rxversion="8.3">
 			id="be95f7c5-1c96-4c32-b5b2-a915ecbfe09f"
 			name="teardown123211111121112">
 			</teardown>
+			<testmodule
+			id="c018b537-334d-45bc-9973-3ee280bb6d09"
+			name="Clear_ExternalID"
+			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="ExternalID"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="57037071-6036-4a24-8145-c9dbf508e396"
+					variablename="externalID">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
+					variablename="Filename">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="c02fa314-6213-4e77-bcdf-179d2f8d8bbc"
 			name="setup">
@@ -7092,6 +7630,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="c2f7cd87-36cf-4e9e-843f-5c4cb4524a71"
+			name="setup1232111111211124111">
+			</setup>
 			<teardown
 			id="c3bf7b26-89d0-4294-89c7-5d5c92e7b9c8"
 			name="teardown124">
@@ -8103,6 +8645,20 @@ rxversion="8.3">
 			id="d5688bb0-0641-44d0-aa39-5f4f771792b8"
 			name="setup1232111111211">
 			</setup>
+			<testmodule
+			id="d5cf2e39-b6e5-473a-98d2-f0fa9124d6de"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="d799e313-f97e-4e9b-a589-dfcedb113611"
 			name="Generate_Workflow_Complete_Assessment"
@@ -8435,6 +8991,24 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testcase
+			datarangeactive="True"
+			datasource="CSPConnector"
+			id="d995c32c-cdcf-4576-a60d-90bab5b5c02b"
+			maxrange="46"
+			minrange="46"
+			name="FName_CompletionFail">
+				<parameters>
+					<param
+					name="workflowAuthToken"
+					value="">
+					</param>
+					<param
+					name="workflowInstanceId"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<modulegroup
 			id="d9b5d298-3d85-409e-9fdb-587e0c70d0c5"
 			name="Generate_Workflow_Complete_Assessment"
@@ -9255,6 +9829,20 @@ rxversion="8.3">
 			id="e75c5914-8211-4802-8a47-fef2b3d1430b"
 			name="ISLT">
 			</smartfoldernode>
+			<testmodule
+			id="e900ec8f-e33e-427a-bf14-42418b692760"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="e953e4b7-e33e-442b-b1e5-c96ddaebc52a"
 			name="Generate_Workflow_Complete_Assessment"
@@ -9693,6 +10281,183 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="ecb0cddd-4994-4981-8566-2dde715b1495"
+			name="Generate_Workflow_Complete_Assessment"
+			ref="0260ed29-99e4-4d6b-9b87-8410c6625e3c">
+				<databinding>
+					<var
+					dataname="AuthToken"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="8ebe58f3-9b76-42bc-9bf3-a9d977e2118c"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="93e4bfa0-2f29-414f-9ae5-8276f5b0ea1e"
+					variablename="ExternalID">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="3fe91562-c0f8-4be5-af6a-95d7dda06693"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="f3bcd965-4425-441b-b18a-3512b1189042"
+					variablename="AssessmentURL">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="8de02f58-222b-414e-96ad-e9c15f8b6659"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Key"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="4d6cbcf6-900c-4569-8956-244b2653c27d"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Secret"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="ba620796-828c-428e-9b13-d85f4be21c4e"
+					variablename="Secret">
+					</var>
+					<var
+					dataname="Browser"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="9e1d3cfb-dca3-4dbb-bcbf-4ad87514d69f"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="d3761076-4d12-4180-a6b9-abd19c4bf9e5"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="e4b938d0-461b-4900-85b1-c24a71a41a07"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="2ea26d30-7bf3-4306-a89b-bd7a79f82951"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="c319749a-87ba-4610-873e-1f12e62a4d24"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="4e08d43c-f997-4f4c-926d-8ee359f6fb74"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="78bf3f9b-b323-4464-9889-e8cd9f157b23"
+					variablename="ProtocolNumber">
+					</var>
+					<var
+					dataname="VisitSessionCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="7eac9cf8-ba56-42c2-a636-15d6a084d60f"
+					variablename="VisitSessionCode">
+					</var>
+					<var
+					dataname="LocalityCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="60b1f69b-d1dd-4a28-a175-d6693e5d9225"
+					variablename="LocalityCode">
+					</var>
+					<var
+					dataname="Redirect"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="4f7da5de-66a0-4103-854e-0ee8caf678a5"
+					variablename="Redirect">
+					</var>
+					<var
+					dataname="RedirectError"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="21578795-48c0-4fff-bf8b-0c8091a99315"
+					variablename="RedirectError">
+					</var>
+					<var
+					dataname="GenderCode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="95afe779-f531-419b-993d-0612713e8251"
+					variablename="GenderCode">
+					</var>
+					<var
+					dataname="DOB"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="0b9d4948-7b0c-4fc0-9fbb-8ac10bfe9799"
+					variablename="DOB">
+					</var>
+					<var
+					dataname="SupervisorId"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="31c41373-3f2b-48a8-b83b-64fb4aaf5973"
+					variablename="SupervisorId">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="7eecd5f0-66f9-4e1f-b674-3ba5769b3e40"
+					variablename="Mode">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="a8e520f2-467d-461d-aeb1-8a56effc7b50"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="workflowAuthToken"
+					datasourceid="d995c32c-cdcf-4576-a60d-90bab5b5c02b"
+					variableid="315538a9-ba27-4e5d-8910-74abc9b554ef"
+					variablename="workflowAuthToken">
+					</var>
+					<var
+					dataname="workflowInstanceId"
+					datasourceid="d995c32c-cdcf-4576-a60d-90bab5b5c02b"
+					variableid="f9cfa37a-d55c-468f-956c-cf08b8e1bb59"
+					variablename="workflowInstanceId">
+					</var>
+				</databinding>
+			</modulegroup>
+			<testmodule
+			id="ed08834a-3632-474e-833f-f6a731c88733"
+			name="Clear_ExternalID"
+			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="ExternalID"
+					datasourceid="f29574e6-11a0-4065-9c2e-72d0b167de3b"
+					variableid="57037071-6036-4a24-8145-c9dbf508e396"
+					variablename="externalID">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
+					variablename="Filename">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="ed2a860b-f334-4590-ae15-1159d0c94bf6"
 			name="Clear_ExternalID"
@@ -9899,6 +10664,24 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			datarangeactive="True"
+			datasource="CSPConnector"
+			id="ef0c5c12-bcdc-444b-b58f-9800e206d4d1"
+			maxrange="45"
+			minrange="45"
+			name="FName_CompletionPass">
+				<parameters>
+					<param
+					name="workflowAuthToken"
+					value="">
+					</param>
+					<param
+					name="workflowInstanceId"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="ef8c7ef4-165e-4fde-8778-b38dfa7f3d6c"
 			name="Close_Browser"
@@ -9937,6 +10720,20 @@ rxversion="8.3">
 			id="efef7946-ea38-4ffd-b004-91cd2ce288e6"
 			name="setup124">
 			</setup>
+			<testmodule
+			id="f131813e-c990-4524-bf3e-c519f0baf28f"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="f13e97eb-50d5-4050-931b-ac1a6561de56"
 			name="teardown2">
@@ -10354,6 +11151,10 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<teardown
+			id="f63fb63a-ec0c-4264-82a7-df3d6acaca08"
+			name="teardown12321111112111241111">
+			</teardown>
 			<testcase
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -11794,6 +12595,90 @@ rxversion="8.3">
 							<testcase
 							id="9a5f13fe-4066-44da-a55c-6a3b473f1ac8"
 							name="TwoBk_CompletionFail">
+								<setup
+								id="c2f7cd87-36cf-4e9e-843f-5c4cb4524a71"
+								name="setup1232111111211124111">
+									<testmodule
+									id="c018b537-334d-45bc-9973-3ee280bb6d09"
+									name="Clear_ExternalID">
+									</testmodule>
+								</setup>
+								<modulegroup
+								id="acad3fa0-ec56-4a7e-a8c1-468cf14b8fd4"
+								name="Generate_Workflow_Complete_Assessment">
+								</modulegroup>
+								<testmodule
+								id="3c4d5bc1-28d4-496e-b533-02a80d3ad370"
+								name="Validate_Outcomes">
+								</testmodule>
+								<teardown
+								id="5a914491-bd5c-4217-8f39-08843389e358"
+								name="teardown1232111111211124111">
+									<testmodule
+									id="f131813e-c990-4524-bf3e-c519f0baf28f"
+									name="Close_Browser">
+									</testmodule>
+								</teardown>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="20440e2a-c7ce-4970-9d93-2a15990fead8"
+						name="FaceName">
+							<testcase
+							id="ef0c5c12-bcdc-444b-b58f-9800e206d4d1"
+							name="FName_CompletionPass">
+								<setup
+								id="0250eee3-7cc9-44f7-8f54-81ec6a368c85"
+								name="setup12321111112111241111">
+									<testmodule
+									id="ed08834a-3632-474e-833f-f6a731c88733"
+									name="Clear_ExternalID">
+									</testmodule>
+								</setup>
+								<modulegroup
+								id="422a7130-a0f7-40f1-8230-b64d6058fc8d"
+								name="Generate_Workflow_Complete_Assessment">
+								</modulegroup>
+								<testmodule
+								id="6e90fd57-1409-44be-92ca-7d219d57f2e1"
+								name="Validate_Outcomes">
+								</testmodule>
+								<teardown
+								id="f63fb63a-ec0c-4264-82a7-df3d6acaca08"
+								name="teardown12321111112111241111">
+									<testmodule
+									id="e900ec8f-e33e-427a-bf14-42418b692760"
+									name="Close_Browser">
+									</testmodule>
+								</teardown>
+							</testcase>
+							<testcase
+							id="d995c32c-cdcf-4576-a60d-90bab5b5c02b"
+							name="FName_CompletionFail">
+								<setup
+								id="4c774cb5-811f-4c4d-a353-23be494d768f"
+								name="setup12321111112111241112">
+									<testmodule
+									id="6e6363e2-202a-4f21-ab61-e69289a2eb60"
+									name="Clear_ExternalID">
+									</testmodule>
+								</setup>
+								<modulegroup
+								id="ecb0cddd-4994-4981-8566-2dde715b1495"
+								name="Generate_Workflow_Complete_Assessment">
+								</modulegroup>
+								<testmodule
+								id="95cc134d-7a95-457b-8ab4-9578386e7d6f"
+								name="Validate_Outcomes">
+								</testmodule>
+								<teardown
+								id="24832c08-8cf1-40f9-958c-bc43ce0c4660"
+								name="teardown12321111112111241112">
+									<testmodule
+									id="d5cf2e39-b6e5-473a-98d2-f0fa9124d6de"
+									name="Close_Browser">
+									</testmodule>
+								</teardown>
 							</testcase>
 						</smartfoldernode>
 					</smartfoldernode>
@@ -11805,7 +12690,7 @@ rxversion="8.3">
 		<DataSource
 		id="589c4db9-e91e-4578-8863-bdcdd797baaf"
 		includefile="Unchecked"
-		lastknownrowcount="51"
+		lastknownrowcount="53"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -12075,6 +12960,9 @@ rxversion="8.3">
 			id="1e336dc5-414f-4385-a516-7d01c2e1a18f">
 			</testcontainer>
 			<testcontainer
+			id="20440e2a-c7ce-4970-9d93-2a15990fead8">
+			</testcontainer>
+			<testcontainer
 			id="2242c759-c9a7-4f71-a8c5-10d4f082533e">
 			</testcontainer>
 			<testcontainer
@@ -12192,6 +13080,9 @@ rxversion="8.3">
 			id="d7c40ad1-0ff5-483d-8164-495895d6a206">
 			</testcontainer>
 			<testcontainer
+			id="d995c32c-cdcf-4576-a60d-90bab5b5c02b">
+			</testcontainer>
+			<testcontainer
 			id="ddb6ed79-5385-40af-9d5f-1cd6fcb7f71a">
 			</testcontainer>
 			<testcontainer
@@ -12202,6 +13093,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="ef04a728-76e4-49fe-9ad1-f4836bdd739d">
+			</testcontainer>
+			<testcontainer
+			id="ef0c5c12-bcdc-444b-b58f-9800e206d4d1">
 			</testcontainer>
 			<testcontainer
 			id="f29574e6-11a0-4065-9c2e-72d0b167de3b">
