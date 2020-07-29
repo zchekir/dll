@@ -102,8 +102,8 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(0));
-            Delay.Duration(20000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
+            Delay.Duration(10000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShellConsol' at Center.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(1));
             repo.KuduServices.PowerShellConsol.Click();

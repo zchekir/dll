@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -930,6 +930,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="6025649b-be25-47e9-ae32-343ff3c0942c"
 			maxrange="0"
@@ -951,8 +952,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="62e043ee-25a4-4959-9e85-59d110f5eb16"
+			maxrange="0"
+			minrange="0"
 			name="Configure_VisitSchedule"
 			warnunboundvariables="False">
 			</testcase>
@@ -1145,6 +1149,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="77b0ced4-5f48-4603-9434-d2cd694790b2"
 			maxrange="0"
@@ -1367,6 +1372,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="8dc2f930-bf84-45d0-a451-11710e3fa1a9"
 			maxrange="0"
@@ -2576,6 +2582,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="fab431d6-f3fd-416c-b534-e819ad85ca0e"
 			maxrange="0"
@@ -2600,8 +2607,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="ff5d9bf9-35a7-456c-911b-2285f8e1703f"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Regression">
 			</smartfoldernode>
 		</flatlistofchildren>
@@ -3268,7 +3275,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Unchecked"
-		lastknownrowcount="44"
+		lastknownrowcount="53"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3370,7 +3377,7 @@ rxversion="8.3">
 		<DataSource
 		id="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
