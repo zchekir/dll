@@ -20,60 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.General
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Upload_RawData recording.
+    ///The Net_Framework recording.
     /// </summary>
-    [TestModule("366bcb1e-0676-491a-b683-f0b0918c5c82", ModuleType.Recording, 1)]
-    public partial class Upload_RawData : ITestModule
+    [TestModule("c63e787d-f0f7-4502-bc2b-55eac038f926", ModuleType.Recording, 1)]
+    public partial class Net_Framework : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Upload_RawData instance = new Upload_RawData();
+        static Net_Framework instance = new Net_Framework();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Upload_RawData()
+        public Net_Framework()
         {
-            Filename = "";
+            NetFramwork = "";
+            Root = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Upload_RawData Instance
+        public static Net_Framework Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Filename;
+        string _NetFramwork;
 
         /// <summary>
-        /// Gets or sets the value of variable Filename.
+        /// Gets or sets the value of variable NetFramwork.
         /// </summary>
-        [TestVariable("4b1cbab1-5c0f-4d05-9229-9a0d99841ed4")]
-        public string Filename
+        [TestVariable("eb426209-2160-40c2-a589-c6a21387fbe7")]
+        public string NetFramwork
         {
-            get { return _Filename; }
-            set { _Filename = value; }
+            get { return _NetFramwork; }
+            set { _NetFramwork = value; }
         }
 
+        string _Root;
+
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable Root.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
+        [TestVariable("4cdcf8ae-6d45-4d39-b096-57635da99994")]
+        public string Root
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
+            get { return _Root; }
+            set { _Root = value; }
         }
 
 #endregion
@@ -105,27 +108,28 @@ namespace CSP.General
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
             Delay.Duration(60000, false);
             
-            AddRawData(Filename);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(2));
-            Delay.Duration(30000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DiagnosticConsole.CMD' at Center.", repo.DiagnosticConsole.CMDInfo, new RecordItemIndex(1));
+            repo.DiagnosticConsole.CMD.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(4));
-            repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.Click(100);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Root' with focus on 'DiagnosticConsole.CMD'.", repo.DiagnosticConsole.CMDInfo, new RecordItemIndex(2));
+            repo.DiagnosticConsole.CMD.PressKeys(Root);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
+            Keyboard.Press("{ENTER}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
             Delay.Duration(500, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Data Uploaded", repo.CogstateSolutionPlatform.Self, false, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NetFramwork' with focus on 'DiagnosticConsole.DLL'.", repo.DiagnosticConsole.DLLInfo, new RecordItemIndex(5));
+            repo.DiagnosticConsole.DLL.PressKeys(NetFramwork);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(7));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(6));
+            Keyboard.Press("{ENTER}");
+            Delay.Milliseconds(0);
             
         }
 

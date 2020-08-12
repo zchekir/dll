@@ -29,6 +29,8 @@ namespace eSourcePlatform
         static eSourcePlatformRepository instance = new eSourcePlatformRepository();
         eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder _signintoyouraccount;
         eSourcePlatformRepositoryFolders.SignInAppFolder _signin;
+        eSourcePlatformRepositoryFolders.KuduServicesAppFolder _kuduservices;
+        eSourcePlatformRepositoryFolders.DiagnosticConsoleAppFolder _diagnosticconsole;
 
         /// <summary>
         /// Gets the singleton class instance representing the eSourcePlatformRepository element repository.
@@ -47,6 +49,8 @@ namespace eSourcePlatform
         {
             _signintoyouraccount = new eSourcePlatformRepositoryFolders.SignInToYourAccountAppFolder(this);
             _signin = new eSourcePlatformRepositoryFolders.SignInAppFolder(this);
+            _kuduservices = new eSourcePlatformRepositoryFolders.KuduServicesAppFolder(this);
+            _diagnosticconsole = new eSourcePlatformRepositoryFolders.DiagnosticConsoleAppFolder(this);
         }
 
 #region Variables
@@ -111,6 +115,18 @@ namespace eSourcePlatform
             set { _ProtocolID = value; }
         }
 
+        string _AzureDOM = "cgst-qc-orr-hub.scm.azurewebsites.net";
+
+        /// <summary>
+        /// Gets or sets the value of variable AzureDOM.
+        /// </summary>
+        [TestVariable("62431319-fa61-43d0-b7a6-6c7241f54df2")]
+        public string AzureDOM
+        {
+            get { return _AzureDOM; }
+            set { _AzureDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -141,6 +157,24 @@ namespace eSourcePlatform
         public virtual eSourcePlatformRepositoryFolders.SignInAppFolder SignIn
         {
             get { return _signin; }
+        }
+
+        /// <summary>
+        /// The KuduServices folder.
+        /// </summary>
+        [RepositoryFolder("e84fe0dd-7e22-48f7-ad02-07bff40780b9")]
+        public virtual eSourcePlatformRepositoryFolders.KuduServicesAppFolder KuduServices
+        {
+            get { return _kuduservices; }
+        }
+
+        /// <summary>
+        /// The DiagnosticConsole folder.
+        /// </summary>
+        [RepositoryFolder("7424d8aa-7302-4ca4-bb9d-70e282c4b92c")]
+        public virtual eSourcePlatformRepositoryFolders.DiagnosticConsoleAppFolder DiagnosticConsole
+        {
+            get { return _diagnosticconsole; }
         }
     }
 
@@ -278,6 +312,190 @@ namespace eSourcePlatform
                 get
                 {
                     return _passwordinputInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The KuduServicesAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e84fe0dd-7e22-48f7-ad02-07bff40780b9")]
+        public partial class KuduServicesAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _rcc_hubpowershallInfo;
+
+            /// <summary>
+            /// Creates a new KuduServices  folder.
+            /// </summary>
+            public KuduServicesAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("KuduServices", "/dom[@domain=$AzureDOM]", parentFolder, 30000, null, false, "e84fe0dd-7e22-48f7-ad02-07bff40780b9", "")
+            {
+                _rcc_hubpowershallInfo = new RepoItemInfo(this, "rcc_hubPowerShall", ".//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span", 30000, null, "02ce32dd-e60a-4af8-8c00-70833459f1db");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e84fe0dd-7e22-48f7-ad02-07bff40780b9")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e84fe0dd-7e22-48f7-ad02-07bff40780b9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rcc_hubPowerShall item.
+            /// </summary>
+            [RepositoryItem("02ce32dd-e60a-4af8-8c00-70833459f1db")]
+            public virtual Ranorex.SpanTag rcc_hubPowerShall
+            {
+                get
+                {
+                    return _rcc_hubpowershallInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rcc_hubPowerShall item info.
+            /// </summary>
+            [RepositoryItemInfo("02ce32dd-e60a-4af8-8c00-70833459f1db")]
+            public virtual RepoItemInfo rcc_hubPowerShallInfo
+            {
+                get
+                {
+                    return _rcc_hubpowershallInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DiagnosticConsoleAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7424d8aa-7302-4ca4-bb9d-70e282c4b92c")]
+        public partial class DiagnosticConsoleAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cmdInfo;
+            RepoItemInfo _netframeworkInfo;
+            RepoItemInfo _dllInfo;
+
+            /// <summary>
+            /// Creates a new DiagnosticConsole  folder.
+            /// </summary>
+            public DiagnosticConsoleAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DiagnosticConsole", "/dom[@domain='cgst-qc-cricket-webjobs.scm.azurewebsites.net']", parentFolder, 30000, null, false, "7424d8aa-7302-4ca4-bb9d-70e282c4b92c", "")
+            {
+                _cmdInfo = new RepoItemInfo(this, "CMD", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span", 30000, null, "22aa2717-5e88-45d4-9e78-6bec5f0ba34b");
+                _netframeworkInfo = new RepoItemInfo(this, "NetFramework", ".//div[#'KuduExecConsoleV2']//div[@innertext~'^<startup><supportedRuntim']", 30000, null, "82685578-e25b-40fe-9c94-41989b3c76bc");
+                _dllInfo = new RepoItemInfo(this, "DLL", ".//div[#'KuduExecConsoleV2']/div/div/div[4]/span[3]", 30000, null, "726f366c-d078-4631-9c47-b56cc04934a1");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7424d8aa-7302-4ca4-bb9d-70e282c4b92c")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7424d8aa-7302-4ca4-bb9d-70e282c4b92c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CMD item.
+            /// </summary>
+            [RepositoryItem("22aa2717-5e88-45d4-9e78-6bec5f0ba34b")]
+            public virtual Ranorex.SpanTag CMD
+            {
+                get
+                {
+                    return _cmdInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CMD item info.
+            /// </summary>
+            [RepositoryItemInfo("22aa2717-5e88-45d4-9e78-6bec5f0ba34b")]
+            public virtual RepoItemInfo CMDInfo
+            {
+                get
+                {
+                    return _cmdInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NetFramework item.
+            /// </summary>
+            [RepositoryItem("82685578-e25b-40fe-9c94-41989b3c76bc")]
+            public virtual Ranorex.DivTag NetFramework
+            {
+                get
+                {
+                    return _netframeworkInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NetFramework item info.
+            /// </summary>
+            [RepositoryItemInfo("82685578-e25b-40fe-9c94-41989b3c76bc")]
+            public virtual RepoItemInfo NetFrameworkInfo
+            {
+                get
+                {
+                    return _netframeworkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DLL item.
+            /// </summary>
+            [RepositoryItem("726f366c-d078-4631-9c47-b56cc04934a1")]
+            public virtual Ranorex.SpanTag DLL
+            {
+                get
+                {
+                    return _dllInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DLL item info.
+            /// </summary>
+            [RepositoryItemInfo("726f366c-d078-4631-9c47-b56cc04934a1")]
+            public virtual RepoItemInfo DLLInfo
+            {
+                get
+                {
+                    return _dllInfo;
                 }
             }
         }

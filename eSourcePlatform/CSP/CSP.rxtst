@@ -152,6 +152,7 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="03f1ef66-8d77-49fb-b4ea-ff147231f1b1"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -170,6 +171,7 @@ rxversion="8.3">
 			name="V2_AssessmentAttempt_Status">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="05585686-2b2c-49f4-8e88-828589d9cab2"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -2028,11 +2030,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="ServerVersionDeployed"
-					value="2.5.0.264">
+					value="2.6.0.21">
 					</param>
 					<param
 					name="ClientVersionDeployed"
-					value="2.5.0-rc.264">
+					value="2.6.0-rc.21">
 					</param>
 					<param
 					name="RandNum"
@@ -2084,11 +2086,11 @@ rxversion="8.3">
 					</param>
 					<param
 					name="cbbv"
-					value="8.13.2+fec91a3+release%2F8.13.2">
+					value="cbbVersion=8.13.2+fec91a3+release%2F8.13.2">
 					</param>
 					<param
 					name="Swager-URL"
-					value="https://cgst-qcpd.azurewebsites.net/swagger/">
+					value="https://cgst-qc-cricket.azurewebsites.net/swagger/">
 					</param>
 					<param
 					name="Swager-Key&amp;Secret"
@@ -2328,8 +2330,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="614b5fa4-3445-4a44-8e89-b0f86d8a9e2e"
-			maxrange="5"
-			minrange="5"
+			maxrange="0"
+			minrange="0"
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
 			<testcase
@@ -3512,8 +3514,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="a54e2f22-375f-4fb2-838a-084cd4471e50"
-			maxrange="5"
-			minrange="5"
+			maxrange="0"
+			minrange="0"
 			name="Create_Regression_Study">
 			</smartfoldernode>
 			<smartfoldernode
@@ -5387,8 +5389,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="ReprocessWorkFlowFlag">
 			</testcase>
 			<testmodule
@@ -6726,7 +6728,7 @@ rxversion="8.3">
 		<DataSource
 		id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 		includefile="Unchecked"
-		lastknownrowcount="51"
+		lastknownrowcount="53"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6888,7 +6890,7 @@ rxversion="8.3">
 		<DataSource
 		id="6a479f0c-ea7a-486c-927e-75d240801129"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="1"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6945,7 +6947,7 @@ rxversion="8.3">
 		<DataSource
 		id="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="5"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -7440,100 +7442,49 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="037aeee4-7133-450a-b13e-79f6464da1e0">
+			id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3">
 			</testcontainer>
 			<testcontainer
-			id="10c333f8-e857-4fad-823d-294804009f8b">
-			</testcontainer>
-			<testcontainer
-			id="12672266-c3e5-4da0-bf18-959502d59662">
-			</testcontainer>
-			<testcontainer
-			id="2dbb0c47-ef76-4518-b068-bfaeeab934d1">
-			</testcontainer>
-			<testcontainer
-			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
-			</testcontainer>
-			<testcontainer
-			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
-			</testcontainer>
-			<testcontainer
-			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
+			id="297a9b13-970e-4958-b03a-c2e11d8c8b2b">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
-			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
+			id="520ac760-a35a-4fc6-9843-432ad67a0c24">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="614b5fa4-3445-4a44-8e89-b0f86d8a9e2e">
+			id="85989da3-ed34-4122-a9c9-92f2a80b27d1">
 			</testcontainer>
 			<testcontainer
-			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
+			id="94a90920-fc42-4618-be9b-d08b78ac8657">
 			</testcontainer>
 			<testcontainer
-			id="6e082396-bffa-4d84-b254-0da30d111799">
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
 			</testcontainer>
 			<testcontainer
-			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
-			id="71767388-adac-42ff-bb7a-f3d2a2469c2c">
+			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 			<testcontainer
-			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
+			id="b7da2a83-ee5f-4213-8cba-9a385251c5ff">
 			</testcontainer>
 			<testcontainer
-			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
+			id="beb5dd77-b674-4865-ba3b-e0a869db1797">
 			</testcontainer>
 			<testcontainer
-			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
+			id="ce924ca6-26b5-4e19-bafc-3215d58a64c7">
 			</testcontainer>
 			<testcontainer
-			id="97634dd0-b3df-4612-90fd-a700ed71ed6f">
+			id="e7ca9258-e7bb-4156-8af0-bb4669001dad">
 			</testcontainer>
 			<testcontainer
-			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
-			</testcontainer>
-			<testcontainer
-			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
-			</testcontainer>
-			<testcontainer
-			id="a54e2f22-375f-4fb2-838a-084cd4471e50">
-			</testcontainer>
-			<testcontainer
-			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
-			</testcontainer>
-			<testcontainer
-			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
-			</testcontainer>
-			<testcontainer
-			id="ba7d02db-83df-4a58-a877-7079c0c072d1">
-			</testcontainer>
-			<testcontainer
-			id="baf76252-a794-4bae-b009-029b41fb4909">
-			</testcontainer>
-			<testcontainer
-			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
-			</testcontainer>
-			<testcontainer
-			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
-			</testcontainer>
-			<testcontainer
-			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
-			</testcontainer>
-			<testcontainer
-			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
-			</testcontainer>
-			<testcontainer
-			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
-			</testcontainer>
-			<testcontainer
-			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
+			id="f8fec26f-eacc-4158-bb66-e2973f44dcb8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

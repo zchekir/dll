@@ -20,47 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.Azure
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_PowerShell recording.
+    ///The NetFrameworkValidation recording.
     /// </summary>
-    [TestModule("e5be21a5-ba81-49ed-8dca-878f7e822eb4", ModuleType.Recording, 1)]
-    public partial class Click_PowerShell : ITestModule
+    [TestModule("fb326cbf-1e96-4635-a5ac-840af6cdb390", ModuleType.Recording, 1)]
+    public partial class NetFrameworkValidation : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::DCT.DCTRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Click_PowerShell instance = new Click_PowerShell();
+        static NetFrameworkValidation instance = new NetFrameworkValidation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_PowerShell()
+        public NetFrameworkValidation()
         {
+            NetFrameVersion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_PowerShell Instance
+        public static NetFrameworkValidation Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _NetFrameVersion;
+
         /// <summary>
-        /// Gets or sets the value of variable AzureDOM.
+        /// Gets or sets the value of variable NetFrameVersion.
         /// </summary>
-        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
-        public string AzureDOM
+        [TestVariable("6336c0ec-26c4-42d6-bce2-af2883c0673a")]
+        public string NetFrameVersion
         {
-            get { return repo.AzureDOM; }
-            set { repo.AzureDOM = value; }
+            get { return _NetFrameVersion; }
+            set { _NetFrameVersion = value; }
         }
 
 #endregion
@@ -89,12 +92,8 @@ namespace DCT.Azure
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShell' at Center.", repo.KuduServices.PowerShellInfo, new RecordItemIndex(0));
-            repo.KuduServices.PowerShell.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(1));
-            Delay.Duration(60000, false);
+            Get_value_NetFramework(repo.DiagnosticConsole.NetFrameworkInfo, NetFrameVersion);
+            Delay.Milliseconds(0);
             
         }
 

@@ -39,8 +39,9 @@ namespace CSP.APIV2Modules
 
         public void R_runworkflow(string AuthToken, string studyProtocolName, string DOM, string genderCode, string localityCode, string redirectError, string redirect, string visitSessionCode, string supervisorid, string TestIdentifier, string externalid, string mode)
         {
+        	
             //variable
-    	string url = "https://"+ DOM +"/api/external/V2/AutomationStudy/AssessmentAttempt";
+    	string url = "https://"+ DOM +"/api/external/V2/"+ studyProtocolName +"/AssessmentAttempt";
         //Setup API call
         	HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
         	httpRequest.ContentType = "application/json";

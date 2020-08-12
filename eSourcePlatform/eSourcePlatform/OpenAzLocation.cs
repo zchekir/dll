@@ -20,47 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.Azure
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_PowerShell recording.
+    ///The OpenAzLocation recording.
     /// </summary>
-    [TestModule("e5be21a5-ba81-49ed-8dca-878f7e822eb4", ModuleType.Recording, 1)]
-    public partial class Click_PowerShell : ITestModule
+    [TestModule("d82ce541-c07b-4458-8378-0fcaefdb1f51", ModuleType.Recording, 1)]
+    public partial class OpenAzLocation : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::DCT.DCTRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Click_PowerShell instance = new Click_PowerShell();
+        static OpenAzLocation instance = new OpenAzLocation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_PowerShell()
+        public OpenAzLocation()
         {
+            URL = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_PowerShell Instance
+        public static OpenAzLocation Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _URL;
+
         /// <summary>
-        /// Gets or sets the value of variable AzureDOM.
+        /// Gets or sets the value of variable URL.
         /// </summary>
-        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
-        public string AzureDOM
+        [TestVariable("9b546544-466e-46b9-bd75-1142b2bbe916")]
+        public string URL
         {
-            get { return repo.AzureDOM; }
-            set { repo.AzureDOM = value; }
+            get { return _URL; }
+            set { _URL = value; }
         }
 
 #endregion
@@ -89,12 +92,9 @@ namespace DCT.Azure
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShell' at Center.", repo.KuduServices.PowerShellInfo, new RecordItemIndex(0));
-            repo.KuduServices.PowerShell.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(1));
-            Delay.Duration(60000, false);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(URL, "Chrome", "", false, false, false, false, false, true);
+            Delay.Milliseconds(0);
             
         }
 

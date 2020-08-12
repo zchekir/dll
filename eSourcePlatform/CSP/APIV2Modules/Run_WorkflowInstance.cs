@@ -43,7 +43,7 @@ namespace CSP.APIV2Modules
         {
             Browser = "";
             AssessmentURL = "";
-            CSPDOM = "";
+            CSPDOM = "cgst-qc-cricket.azurewebsites.net";
         }
 
         /// <summary>
