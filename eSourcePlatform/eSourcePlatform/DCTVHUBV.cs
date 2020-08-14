@@ -50,6 +50,7 @@ namespace eSourcePlatform
             RedCapAdapter_Job = "";
             RedCapHandler_Jobs = "";
             Absorb_WebJobs = "";
+            Data_CleaningTool = "";
         }
 
         /// <summary>
@@ -168,6 +169,18 @@ namespace eSourcePlatform
         {
             get { return _Absorb_WebJobs; }
             set { _Absorb_WebJobs = value; }
+        }
+
+        string _Data_CleaningTool;
+
+        /// <summary>
+        /// Gets or sets the value of variable Data_CleaningTool.
+        /// </summary>
+        [TestVariable("c7fec0f8-8d4e-48d7-a4ff-3b7459ae787d")]
+        public string Data_CleaningTool
+        {
+            get { return _Data_CleaningTool; }
+            set { _Data_CleaningTool = value; }
         }
 
 #endregion

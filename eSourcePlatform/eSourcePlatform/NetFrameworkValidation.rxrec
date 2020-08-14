@@ -75,6 +75,33 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="120000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1259b814-3d43-48b4-b0ed-88d086ae5ccd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="82685578-e25b-40fe-9c94-41989b3c76bc"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-cricket-webjobs.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']//div[@innertext~'^&lt;startup&gt;&lt;supportedRuntim']
+				</path>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="1b4df078-48fd-44ad-b314-173b9dd113af"
