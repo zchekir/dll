@@ -77,12 +77,12 @@ namespace CSP.InternalAPIModules
         {
         	
        //variables:
-       string reportid= "520";
+       string reportid= "1";
        string id ="";
        string reportType= "";
        string requestDate= "";
        string jsonData="";
-       string url="https://"+DOM+"/api/studies/163777/BatteryConfigurationReports/" + reportid;
+       string url="https://"+DOM+"/api/studies/10/BatteryConfigurationReports/" + reportid;
         
         
     
