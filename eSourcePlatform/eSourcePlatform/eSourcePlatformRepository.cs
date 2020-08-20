@@ -396,7 +396,7 @@ namespace eSourcePlatform
             /// Creates a new DiagnosticConsole  folder.
             /// </summary>
             public DiagnosticConsoleAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DiagnosticConsole", "/dom[@domain='cgst-qc-cricket-webjobs.scm.azurewebsites.net']", parentFolder, 30000, null, false, "7424d8aa-7302-4ca4-bb9d-70e282c4b92c", "")
+                    base("DiagnosticConsole", "/dom[@domain='cgst-qcpd-webjobs.scm.azurewebsites.net']", parentFolder, 30000, null, false, "7424d8aa-7302-4ca4-bb9d-70e282c4b92c", "")
             {
                 _cmdInfo = new RepoItemInfo(this, "CMD", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span", 30000, null, "22aa2717-5e88-45d4-9e78-6bec5f0ba34b");
                 _netframeworkInfo = new RepoItemInfo(this, "NetFramework", ".//div[#'KuduExecConsoleV2']//div[@innertext~'^<startup><supportedRuntim']", 30000, null, "82685578-e25b-40fe-9c94-41989b3c76bc");

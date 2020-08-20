@@ -55,10 +55,12 @@ namespace CSP
         public void Get_CurentState(string workflowID, string DOM, string workflowToken)
         {
              //Setup API call
-			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/GetCurrentState");
+			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/BeginWorkflow");
 			httpRequest.ContentType = "application/json";
-			httpRequest.Method = "GET";
+			httpRequest.Method = "POST";
+		    httpRequest.ContentLength=0;
 			httpRequest.Headers.Add("Authorization", workflowToken);
+			
 			
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			CurrentStateJSONResponse responseObject = new CurrentStateJSONResponse();

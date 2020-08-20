@@ -55,7 +55,7 @@ namespace CSP.InternalAPIModules
             string studyid="163777";
             string extractid="/2";
             
-            string extractAPI ="/api/studies/10/BatteryConfigurationReports/1";
+            string extractAPI ="/api/studies/1208/BatteryConfigurationReports/104";
         	string url="https://"+ DOM + extractAPI;
         	
         	HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);

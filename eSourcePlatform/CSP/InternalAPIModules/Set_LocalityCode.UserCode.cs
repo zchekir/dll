@@ -93,7 +93,7 @@ namespace CSP.InternalAPIModules
 			localities.Add(l);
 			
 			// setting up a localitycode
-			string url = "https://" + DOM +"/api/studies/10/settings";
+			string url = "https://" + DOM +"/api/studies/1208/settings";
 			HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method="PUT";
