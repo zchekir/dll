@@ -45,6 +45,7 @@ namespace CSP
             DOM = "";
             workflowToken = "";
             Batteryid = "";
+            B_id = "";
         }
 
         /// <summary>
@@ -103,6 +104,18 @@ namespace CSP
         {
             get { return _Batteryid; }
             set { _Batteryid = value; }
+        }
+
+        string _B_id;
+
+        /// <summary>
+        /// Gets or sets the value of variable B_id.
+        /// </summary>
+        [TestVariable("f3368836-8e52-4a99-af16-b0555f9a06d0")]
+        public string B_id
+        {
+            get { return _B_id; }
+            set { _B_id = value; }
         }
 
 #endregion

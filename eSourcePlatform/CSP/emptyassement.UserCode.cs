@@ -62,7 +62,7 @@ namespace CSP
         public void E_mptyAssment(string workflowID, string DOM, string workflowToken, string Batteryid)
         {
            //Setup API call
-			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/InsertEmptyAssessment?batteryConfigurationId="+ Batteryid);
+			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/InsertEmptyAssessment?batteryConfigurationId="+ B_id);
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
 			httpRequest.Headers.Add("Authorization", workflowToken);
@@ -75,8 +75,9 @@ namespace CSP
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<emptyAssJSONResponse>(response);
 				
+		
 				//need change this
-				string  empty = responseObject.name;
+				string  dataID = responseObject.data;
 				
 				Report.Log(ReportLevel.Info,  response);
 			}

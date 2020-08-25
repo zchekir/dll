@@ -70,10 +70,21 @@ namespace CSP
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<GetNextJSONResponse>(response);
 				
+					
+              	// slpit
+			char[] mych = { '&', ',','?','=' ,':','}'};
+            string BatteryID = response;
+            string[] b_ID = BatteryID .Split(mych);
+            B_id = b_ID[5];
+
+				
+				
+				
 				//need change this
 				string  NextState = responseObject.name;
 				
-				Report.Log(ReportLevel.Info,  response);
+				Report.Log(ReportLevel.Info,   B_id);
+				Report.Log(ReportLevel.Info,   response);
 			}
         }
 
