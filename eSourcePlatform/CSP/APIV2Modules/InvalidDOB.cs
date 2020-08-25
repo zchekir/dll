@@ -55,6 +55,7 @@ namespace CSP.APIV2Modules
             TestIdentifier = "";
             externalId = "";
             AssessmentURL = "";
+            StudyName = "";
         }
 
         /// <summary>
@@ -233,6 +234,18 @@ namespace CSP.APIV2Modules
         {
             get { return _AssessmentURL; }
             set { _AssessmentURL = value; }
+        }
+
+        string _StudyName;
+
+        /// <summary>
+        /// Gets or sets the value of variable StudyName.
+        /// </summary>
+        [TestVariable("a2ea913a-fd47-4fd1-a6c5-6115973bb50c")]
+        public string StudyName
+        {
+            get { return _StudyName; }
+            set { _StudyName = value; }
         }
 
 #endregion

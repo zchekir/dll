@@ -52,10 +52,9 @@ namespace CSP.InternalAPIModules
             
                                              
             //change these varibable in case your are using different study and extract
-            string studyid="163777";
-            string extractid="/2";
             
-            string extractAPI ="/api/studies/1208/BatteryConfigurationReports/104";
+            
+            string extractAPI ="/api/studies/"+ studid + "/BatteryConfigurationReports/"+ BatteryConfigurationReports;
         	string url="https://"+ DOM + extractAPI;
         	
         	HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);

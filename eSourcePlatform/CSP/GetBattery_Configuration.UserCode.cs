@@ -57,7 +57,7 @@ namespace CSP
         public void Get_BatteryConfiguration(string workflowID, string DOM, string workflowToken, string argument1, string Batteryid)
         {
             //Setup API call
-			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/GetBatteryConfiguration?batteryConfigurationId=324");
+			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/GetBatteryConfiguration?batteryConfigurationId="+ ConfigurationID);
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "GET";
 			httpRequest.Headers.Add("Authorization", workflowToken);

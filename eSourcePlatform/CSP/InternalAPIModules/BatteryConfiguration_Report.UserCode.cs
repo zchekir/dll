@@ -82,7 +82,7 @@ namespace CSP.InternalAPIModules
        string reportType= "";
        string requestDate= "";
        string jsonData="";
-       string url="https://"+DOM+"/api/studies/1208/BatteryConfigurationReports/" + reportid;
+       string url="https://"+DOM+"/api/studies/" + studid + "/BatteryConfigurationReports/" + BatteryConfigurationReports;
         
         
     
