@@ -25,56 +25,99 @@ using Ranorex.Core.Testing;
 
 namespace CSP
 {
-	public class CurrentStateJSONResponse
+	
+	// send in the body
+	
+		public class worflowStateJSONResponse
 	{
-		/// <summary>
-		/// Returned qualificaiton status
-		/// </summary>
-		public string name { get; set; }
-		public string code { get; set; }
+		public string workflowInstanceId { get; set; }
+		//public string workflowToken { get; set; }
+		
+		
+		
+		public  worflowStateJSONResponse(string workflowInstanceId)
+		{
+			this.workflowInstanceId = workflowInstanceId;
+			
+			
+		}
+		
+		
+	}
+		
+		// capture response 
+		
+		public class CurrentStateJSONResponse
+	{
+		public string message { get; set; }
 		
 		public CurrentStateJSONResponse()
 		{
 			
 		}
 		
-    
 	}
+		
+
+// class level:		
 
     public partial class CurrentState
     {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
+        string json;
+        
         private void Init()
         {
-            // Your recording specific initialization code goes here.
+            
         }
 
         public void Get_CurentState(string workflowID, string DOM, string workflowToken)
         {
-             //Setup API call
-			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/BeginWorkflow");
+        	
+        	
+        	
+        	
+        	
+        	
+        	 //Setup API call
+	        HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/BeginWorkflow");
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
-		    httpRequest.ContentLength=0;
-			httpRequest.Headers.Add("Authorization", workflowToken);
+		    httpRequest.Headers.Add("Authorization", workflowToken);
 			
 			
-			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
-			CurrentStateJSONResponse responseObject = new CurrentStateJSONResponse();
+		    //Create JSON object containing demographics and study details
+			 worflowStateJSONResponse assessmentObject = new  worflowStateJSONResponse(workflowInstanceId);
+			// body:
+			 using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
+			    {
+				json = new JavaScriptSerializer().Serialize(assessmentObject);
+
 			
-			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
+				
+				sw.Write(json);
+				sw.Flush();
+			    sw.Close();
+			    }
+        	
+			//response
+			
+				HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+			    CurrentStateJSONResponse responseObject = new CurrentStateJSONResponse();
+			
+		
+			    using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<CurrentStateJSONResponse>(response);
 				
-				string  currentState = responseObject.name;
+				string  currentState = responseObject.message;
 				
+				Report.Log(ReportLevel.Info,  currentState);
 				Report.Log(ReportLevel.Info,  response);
-			}
+			} 
         }
+
+        
 
     }
 

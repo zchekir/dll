@@ -1916,7 +1916,7 @@ rxversion="8.3">
 			</testcase>
 			<testcase
 			id="58b92a44-15a8-4477-b31a-623a0eaf2292"
-			name="GetCurrentState">
+			name="BeginWorkFllow">
 			</testcase>
 			<testmodule
 			id="5b7297a1-cb08-4a44-b7bd-579f94dadc2c"
@@ -3991,6 +3991,12 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="5aa0d4ed-3031-4b0c-8e82-4416000f50a0"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="workflowInstanceId"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="477a37cb-aa1c-4234-8881-be056766d40d"
+					variablename="workflowInstanceId">
 					</var>
 				</databinding>
 			</testmodule>
@@ -6153,7 +6159,7 @@ rxversion="8.3">
 							</testcase>
 							<testcase
 							id="58b92a44-15a8-4477-b31a-623a0eaf2292"
-							name="GetCurrentState">
+							name="BeginWorkFllow">
 								<testmodule
 								id="b906c4c6-0cd7-413a-819d-c199cc7a47ad"
 								name="CurrentState">

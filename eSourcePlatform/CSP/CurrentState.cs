@@ -44,6 +44,7 @@ namespace CSP
             workflowID = "";
             DOM = "";
             workflowToken = "";
+            workflowInstanceId = "";
         }
 
         /// <summary>
@@ -90,6 +91,18 @@ namespace CSP
         {
             get { return _workflowToken; }
             set { _workflowToken = value; }
+        }
+
+        string _workflowInstanceId;
+
+        /// <summary>
+        /// Gets or sets the value of variable workflowInstanceId.
+        /// </summary>
+        [TestVariable("477a37cb-aa1c-4234-8881-be056766d40d")]
+        public string workflowInstanceId
+        {
+            get { return _workflowInstanceId; }
+            set { _workflowInstanceId = value; }
         }
 
 #endregion
