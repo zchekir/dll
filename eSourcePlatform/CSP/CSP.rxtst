@@ -3040,7 +3040,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
-			name="PowerBI_API">
+			name="PowerBI_API(If_needed)">
 			</smartfoldernode>
 			<testcase
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
@@ -3502,7 +3502,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="a039dd84-fa06-45dc-900f-9d8b10c73c69"
-			name="oDATA_API">
+			name="oDATA_API(If_needed)">
 			</smartfoldernode>
 			<testmodule
 			id="a260ad3e-5ca9-402f-9f62-2cc6d8186efa"
@@ -3646,7 +3646,7 @@ rxversion="8.3">
 					variablename="studid">
 					</var>
 					<var
-					dataname="BatteryConfigurationReports"
+					dataname="ConfigurationID"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="1c57d899-0ef2-49db-98ff-e513d5d57f3a"
 					variablename="BatteryConfigurationReports">
@@ -5447,8 +5447,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="ReprocessWorkFlowFlag">
 			</testcase>
 			<testmodule
@@ -6383,22 +6383,6 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
-						id="a039dd84-fa06-45dc-900f-9d8b10c73c69"
-						name="oDATA_API">
-							<testcase
-							id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
-							name="oData_API">
-								<testmodule
-								id="944ec9b2-ee26-4f8d-b3c3-55218690e828"
-								name="AuthenticateAsInternalUser">
-								</testmodule>
-								<testmodule
-								id="0c19a365-c2b7-469b-8a51-9ca6cc15f33e"
-								name="oDataAPI">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
 						id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
 						name="CSPPlatform_API">
 							<testcase
@@ -6451,30 +6435,6 @@ rxversion="8.3">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
-						id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
-						name="PowerBI_API">
-							<testcase
-							id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
-							name="PowerBIReport">
-								<testmodule
-								id="138772e1-cabd-43b1-8df1-4522ca9ab871"
-								name="PowerBI_Report">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
-						id="69f50943-5b2d-41d4-ac43-d7cce45967af"
-						name="SwaggerAPI-UIValidation">
-							<testcase
-							id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4"
-							name="swaggerAPI">
-								<testmodule
-								id="5f5d568f-81e4-4da9-81d5-10f044022bb2"
-								name="swaggerAPI">
-								</testmodule>
-							</testcase>
-						</smartfoldernode>
-						<smartfoldernode
 						id="fbb6582a-078f-40ce-9d97-9857a442e28e"
 						name="PR-HTTP-Errors">
 							<testcase
@@ -6507,6 +6467,46 @@ rxversion="8.3">
 								<testmodule
 								id="5f4b295f-7d42-4332-b549-508f905240f7"
 								name="InvalidMethod">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="69f50943-5b2d-41d4-ac43-d7cce45967af"
+						name="SwaggerAPI-UIValidation">
+							<testcase
+							id="b33b2f8f-49dd-4c01-8f3f-859399e9d9b4"
+							name="swaggerAPI">
+								<testmodule
+								id="5f5d568f-81e4-4da9-81d5-10f044022bb2"
+								name="swaggerAPI">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="a039dd84-fa06-45dc-900f-9d8b10c73c69"
+						name="oDATA_API(If_needed)">
+							<testcase
+							id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
+							name="oData_API">
+								<testmodule
+								id="944ec9b2-ee26-4f8d-b3c3-55218690e828"
+								name="AuthenticateAsInternalUser">
+								</testmodule>
+								<testmodule
+								id="0c19a365-c2b7-469b-8a51-9ca6cc15f33e"
+								name="oDataAPI">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+						<smartfoldernode
+						id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
+						name="PowerBI_API(If_needed)">
+							<testcase
+							id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
+							name="PowerBIReport">
+								<testmodule
+								id="138772e1-cabd-43b1-8df1-4522ca9ab871"
+								name="PowerBI_Report">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -7527,7 +7527,10 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="39b1cecb-0d7e-4daa-a134-c25e0db038e1">
+			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
+			</testcontainer>
+			<testcontainer
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
@@ -7536,16 +7539,19 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
+			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
 			</testcontainer>
 			<testcontainer
-			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
 			</testcontainer>
 			<testcontainer
-			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
+			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
 			</testcontainer>
 			<testcontainer
-			id="f93a7981-49b3-43d8-b1db-efc904929c69">
+			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
+			</testcontainer>
+			<testcontainer
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

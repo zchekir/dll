@@ -54,12 +54,13 @@ namespace CSP.InternalAPIModules
             //change these varibable in case your are using different study and extract
             
             
-            string extractAPI ="/api/studies/"+ studid + "/BatteryConfigurationReports/"+ BatteryConfigurationReports;
+            string extractAPI ="/api/studies/"+ studid + "/extract/"+ BatteryConfigurationReports;
+          
         	string url="https://"+ DOM + extractAPI;
         	
         	HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);
         	httpRequest.ContentType = "application/json";
-        	httpRequest.Method="GET";
+        	httpRequest.Method="POST";
         	httpRequest.Headers.Add("Authorization", AuthToken);
         	httpRequest.ContentLength=0;
         	
