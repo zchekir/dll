@@ -2098,23 +2098,23 @@ rxversion="8.3">
 					</param>
 					<param
 					name="cbbv"
-					value="cbbVersion=8.13.4+955d0cf+release%2F8.13.4">
+					value="">
 					</param>
 					<param
 					name="Swager-URL"
-					value="https://cgst-qcpd.azurewebsites.net/swagger/">
+					value="">
 					</param>
 					<param
 					name="Swager-Key&amp;Secret"
-					value="{{&quot;key&quot;: &quot;002db461-56ca-4900-902f-c14df436f93e&#13;&#10;&quot;,&quot;secret&quot;: &quot;a213794e-f1aa-4125-a98f-ae661eb9d32a&#13;&#10;&quot;}">
+					value="">
 					</param>
 					<param
 					name="Swager-StudProtocol"
-					value="AutomationStudy">
+					value="">
 					</param>
 					<param
 					name="Swager-HTTPCODE"
-					value="200">
+					value="">
 					</param>
 					<param
 					name="mode"
@@ -2146,6 +2146,10 @@ rxversion="8.3">
 					</param>
 					<param
 					name="B_id"
+					value="">
+					</param>
+					<param
+					name="NewParameter"
 					value="">
 					</param>
 				</parameters>
@@ -2314,25 +2318,25 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="Swager-URL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="b747c2e7-5e8c-4e07-8215-4c43de5b2b34"
 					variablename="DOM">
 					</var>
 					<var
 					dataname="Swager-Key&amp;Secret"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="1767b877-b494-4ef0-8164-5116c1f14fb3"
 					variablename="keysecret_">
 					</var>
 					<var
-					dataname="Swager-StudProtocol"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					dataname="StudyName"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="29cad965-c985-441e-bb71-b0c920bdf737"
 					variablename="StudyProtocolName">
 					</var>
 					<var
 					dataname="Swager-HTTPCODE"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="2c5d0111-1dd2-4d44-a0eb-51fb6b39e9b8"
 					variablename="HTTPCODE">
 					</var>
@@ -2930,7 +2934,7 @@ rxversion="8.3">
 				<databinding>
 					<var
 					dataname="cbbv"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="842392ae-e7ea-41be-9e8e-8518913cb038"
 					variablename="cbbv">
 					</var>
@@ -6762,6 +6766,18 @@ rxversion="8.3">
 				</column>
 				<column>
 					StudyName
+				</column>
+				<column>
+					Swager-URL
+				</column>
+				<column>
+					Swager-HTTPCODE
+				</column>
+				<column>
+					Swager-Key&amp;Secret
+				</column>
+				<column>
+					cbbv
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
