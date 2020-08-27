@@ -64,10 +64,12 @@ namespace CSP
 			{
 				
 				
-				//Debugging Request
-				Report.Info("Data to send: " + rawdata);
+				// replacing the battery assessmentid 
+				var testData = rawdata.Replace(@"<id>", assessmentID);		 
 				
-				sw.Write(rawdata);
+				Report.Info("Data to send: " + testData);
+				
+				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}

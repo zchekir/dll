@@ -71,6 +71,10 @@ namespace CSP.APIV2Modules
         		string assessmentAttempt_Status = responseObject.assessmentAttemptStatus;
         		
         		Report.Log(ReportLevel.Info, "assessmentAttemptStatus: " + assessmentAttempt_Status);
+        		
+        		string expectedStuts= "Complete"; 
+        		
+        		Validate.AreEqual( expectedStuts ,  assessmentAttempt_Status);
         	}
         }
 

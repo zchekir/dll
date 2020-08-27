@@ -75,11 +75,20 @@ namespace CSP
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<emptyAssJSONResponse>(response);
 				
+				
+					// slpit
+			char[] mych = { '&', ',','?','=',':' };
+            string assID = response;
+            string[] Assmentid = assID.Split(mych);
+            assessmentID = Assmentid[1];
+				
+				
 		
 				//need change this
 				string  dataID = responseObject.data;
 				
-				Report.Log(ReportLevel.Info,  response);
+				Report.Log(ReportLevel.Info, response);
+				Report.Log(ReportLevel.Info,   assessmentID);
 			}
         }
 

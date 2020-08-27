@@ -95,8 +95,8 @@ namespace eSourcePlatform
             Get_value_NetFramework(repo.DiagnosticConsole.NetFrameworkInfo, NetFrameVersion);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2m.", new RecordItemIndex(1));
-            Delay.Duration(120000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
             
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'DiagnosticConsole.NetFramework'.", repo.DiagnosticConsole.NetFrameworkInfo, new RecordItemIndex(2));
             Host.Current.CloseApplication(repo.DiagnosticConsole.NetFramework, new Duration(0));

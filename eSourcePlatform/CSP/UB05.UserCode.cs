@@ -67,11 +67,12 @@ namespace CSP
 		 using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 				
+				// replacing the battery assessmentid 
+				var testData = rawdata.Replace(@"<id>", assessmentID);		 
 				
-				//Debugging Request
-				Report.Info("Data to send: " + rawdata);
+				Report.Info("Data to send: " + testData);
 				
-				sw.Write(rawdata);
+				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}
