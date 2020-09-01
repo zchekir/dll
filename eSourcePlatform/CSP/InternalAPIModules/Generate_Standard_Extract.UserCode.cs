@@ -49,11 +49,13 @@ namespace CSP.InternalAPIModules
 
         public void Generate_StandardExtract(string DOM, string AuthToken)
         {
-            //{{website}}/api/External/referralStatus/{{iqnumber}}/{{visitsessionid}} 
             
-            // Setting up Get status API call header:
-                                             //STUDID
-            string extractAPI ="/api/studies/1208/extract/2";
+                                             
+            //change these varibable in case your are using different study and extract
+            
+            
+            string extractAPI ="/api/studies/"+ studid + "/extract/"+ BatteryConfigurationReports;
+          
         	string url="https://"+ DOM + extractAPI;
         	
         	HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);

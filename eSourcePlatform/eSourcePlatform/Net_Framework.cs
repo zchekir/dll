@@ -20,60 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.DCT_Page
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Query_DCT_Version recording.
+    ///The Net_Framework recording.
     /// </summary>
-    [TestModule("9f2b6e02-9486-49ab-bcbe-42714eb80706", ModuleType.Recording, 1)]
-    public partial class Query_DCT_Version : ITestModule
+    [TestModule("c63e787d-f0f7-4502-bc2b-55eac038f926", ModuleType.Recording, 1)]
+    public partial class Net_Framework : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::DCT.DCTRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Query_DCT_Version instance = new Query_DCT_Version();
+        static Net_Framework instance = new Net_Framework();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Query_DCT_Version()
+        public Net_Framework()
         {
-            DCTVersionQuery = "(get-item -Path 'D:\\home\\site\\wwwroot\\app_data\\jobs\\continuous\\*\\Cogstate.*.exe').VersionInfo";
+            NetFramwork = "";
+            Root = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Query_DCT_Version Instance
+        public static Net_Framework Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _DCTVersionQuery;
+        string _NetFramwork;
 
         /// <summary>
-        /// Gets or sets the value of variable DCTVersionQuery.
+        /// Gets or sets the value of variable NetFramwork.
         /// </summary>
-        [TestVariable("9a8929ee-dc8a-46dc-99f0-46052dbbd846")]
-        public string DCTVersionQuery
+        [TestVariable("eb426209-2160-40c2-a589-c6a21387fbe7")]
+        public string NetFramwork
         {
-            get { return _DCTVersionQuery; }
-            set { _DCTVersionQuery = value; }
+            get { return _NetFramwork; }
+            set { _NetFramwork = value; }
         }
 
+        string _Root;
+
         /// <summary>
-        /// Gets or sets the value of variable AzureDOM.
+        /// Gets or sets the value of variable Root.
         /// </summary>
-        [TestVariable("49e5b85f-1ec2-4934-a251-0656cf1bbe62")]
-        public string AzureDOM
+        [TestVariable("4cdcf8ae-6d45-4d39-b096-57635da99994")]
+        public string Root
         {
-            get { return repo.AzureDOM; }
-            set { repo.AzureDOM = value; }
+            get { return _Root; }
+            set { _Root = value; }
         }
 
 #endregion
@@ -102,23 +105,31 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
+            Delay.Duration(60000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShellConsol' at Center.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(1));
-            repo.KuduServices.PowerShellConsol.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DiagnosticConsole.CMD' at Center.", repo.DiagnosticConsole.CMDInfo, new RecordItemIndex(1));
+            repo.DiagnosticConsole.CMD.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVersionQuery' with focus on 'KuduServices.PowerShellConsol'.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(2));
-            repo.KuduServices.PowerShellConsol.PressKeys(DCTVersionQuery, 1);
-            Delay.Milliseconds(90);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Root' with focus on 'DiagnosticConsole.CMD'.", repo.DiagnosticConsole.CMDInfo, new RecordItemIndex(2));
+            repo.DiagnosticConsole.CMD.PressKeys(Root);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
             Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NetFramwork' with focus on 'DiagnosticConsole.DLL'.", repo.DiagnosticConsole.DLLInfo, new RecordItemIndex(5));
+            repo.DiagnosticConsole.DLL.PressKeys(NetFramwork);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(6));
+            Keyboard.Press("{ENTER}");
+            Delay.Milliseconds(0);
             
         }
 

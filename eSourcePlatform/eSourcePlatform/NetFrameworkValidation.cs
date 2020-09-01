@@ -20,89 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CurrentState recording.
+    ///The NetFrameworkValidation recording.
     /// </summary>
-    [TestModule("264ec136-7bea-4f1a-aca4-fab740a99027", ModuleType.Recording, 1)]
-    public partial class CurrentState : ITestModule
+    [TestModule("fb326cbf-1e96-4635-a5ac-840af6cdb390", ModuleType.Recording, 1)]
+    public partial class NetFrameworkValidation : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the CSPRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static CSPRepository repo = CSPRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static CurrentState instance = new CurrentState();
+        static NetFrameworkValidation instance = new NetFrameworkValidation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CurrentState()
+        public NetFrameworkValidation()
         {
-            workflowID = "";
-            DOM = "";
-            workflowToken = "";
-            workflowInstanceId = "";
+            NetFrameVersion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CurrentState Instance
+        public static NetFrameworkValidation Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _workflowID;
+        string _NetFrameVersion;
 
         /// <summary>
-        /// Gets or sets the value of variable workflowID.
+        /// Gets or sets the value of variable NetFrameVersion.
         /// </summary>
-        [TestVariable("2980ba91-4eeb-4937-af27-5e83be237f64")]
-        public string workflowID
+        [TestVariable("6336c0ec-26c4-42d6-bce2-af2883c0673a")]
+        public string NetFrameVersion
         {
-            get { return _workflowID; }
-            set { _workflowID = value; }
-        }
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("5aa0d4ed-3031-4b0c-8e82-4416000f50a0")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
-        string _workflowToken;
-
-        /// <summary>
-        /// Gets or sets the value of variable workflowToken.
-        /// </summary>
-        [TestVariable("4564ea7c-28d0-4bc3-b505-c4f335940174")]
-        public string workflowToken
-        {
-            get { return _workflowToken; }
-            set { _workflowToken = value; }
-        }
-
-        string _workflowInstanceId;
-
-        /// <summary>
-        /// Gets or sets the value of variable workflowInstanceId.
-        /// </summary>
-        [TestVariable("477a37cb-aa1c-4234-8881-be056766d40d")]
-        public string workflowInstanceId
-        {
-            get { return _workflowInstanceId; }
-            set { _workflowInstanceId = value; }
+            get { return _NetFrameVersion; }
+            set { _NetFrameVersion = value; }
         }
 
 #endregion
@@ -131,7 +92,14 @@ namespace CSP
 
             Init();
 
-            Get_CurentState(workflowID, DOM, workflowToken);
+            Get_value_NetFramework(repo.DiagnosticConsole.NetFrameworkInfo, NetFrameVersion);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'DiagnosticConsole.NetFramework'.", repo.DiagnosticConsole.NetFrameworkInfo, new RecordItemIndex(2));
+            Host.Current.CloseApplication(repo.DiagnosticConsole.NetFramework, new Duration(0));
             Delay.Milliseconds(0);
             
         }

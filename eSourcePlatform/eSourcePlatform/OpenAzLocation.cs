@@ -20,89 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CurrentState recording.
+    ///The OpenAzLocation recording.
     /// </summary>
-    [TestModule("264ec136-7bea-4f1a-aca4-fab740a99027", ModuleType.Recording, 1)]
-    public partial class CurrentState : ITestModule
+    [TestModule("d82ce541-c07b-4458-8378-0fcaefdb1f51", ModuleType.Recording, 1)]
+    public partial class OpenAzLocation : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the CSPRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static CSPRepository repo = CSPRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static CurrentState instance = new CurrentState();
+        static OpenAzLocation instance = new OpenAzLocation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CurrentState()
+        public OpenAzLocation()
         {
-            workflowID = "";
-            DOM = "";
-            workflowToken = "";
-            workflowInstanceId = "";
+            URL = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CurrentState Instance
+        public static OpenAzLocation Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _workflowID;
+        string _URL;
 
         /// <summary>
-        /// Gets or sets the value of variable workflowID.
+        /// Gets or sets the value of variable URL.
         /// </summary>
-        [TestVariable("2980ba91-4eeb-4937-af27-5e83be237f64")]
-        public string workflowID
+        [TestVariable("9b546544-466e-46b9-bd75-1142b2bbe916")]
+        public string URL
         {
-            get { return _workflowID; }
-            set { _workflowID = value; }
-        }
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("5aa0d4ed-3031-4b0c-8e82-4416000f50a0")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
-        string _workflowToken;
-
-        /// <summary>
-        /// Gets or sets the value of variable workflowToken.
-        /// </summary>
-        [TestVariable("4564ea7c-28d0-4bc3-b505-c4f335940174")]
-        public string workflowToken
-        {
-            get { return _workflowToken; }
-            set { _workflowToken = value; }
-        }
-
-        string _workflowInstanceId;
-
-        /// <summary>
-        /// Gets or sets the value of variable workflowInstanceId.
-        /// </summary>
-        [TestVariable("477a37cb-aa1c-4234-8881-be056766d40d")]
-        public string workflowInstanceId
-        {
-            get { return _workflowInstanceId; }
-            set { _workflowInstanceId = value; }
+            get { return _URL; }
+            set { _URL = value; }
         }
 
 #endregion
@@ -131,7 +92,8 @@ namespace CSP
 
             Init();
 
-            Get_CurentState(workflowID, DOM, workflowToken);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $URL with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(URL, "Chrome", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
             
         }

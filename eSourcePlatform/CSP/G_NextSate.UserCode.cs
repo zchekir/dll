@@ -52,6 +52,8 @@ namespace CSP
 
         public void GnextState(string workflowID, string DOM, string workflowToken)
         {
+        	
+    
              //Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/GetNextState?actionId=-2");
 			httpRequest.ContentType = "application/json";
@@ -71,7 +73,13 @@ namespace CSP
 				
 				Report.Log(ReportLevel.Info,  response);
 			}
+			
+        	    		
+}
+			
+			
+			
         }
 
     }
-}
+
