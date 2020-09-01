@@ -1,15 +1,15 @@
 {
 	"sessionSummary": {
-		"sessionStart": "Thu, 07 Nov 2019 03:05:29 GMT",
-		"startTime": 1573078786552,
-		"timezoneOffset": 39600000,
-		"sessionDuration": 197163,
+		"sessionStart": "Tue, 21 Jul 2020 01:19:11 GMT",
+		"startTime": 1595294351557,
+		"timezoneOffset": 36000000,
+		"sessionDuration": 206456,
 		"stopped": false,
 		"complete": true,
 		"languageCode": "en_US",
-		"version": "8.10.0 7c7ee21 integration",
-		"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36",
-		"scaleStart": 1,
+		"version": "8.13.2 fec91a3 release/8.13.2",
+		"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+		"scaleStart": 0.9925595238095238,
 		"scaleMode": "start"
 	},
 	"taskData": [{
@@ -20,11 +20,12 @@
 				"maxTime": 120000,
 				"instructions": "twoback",
 				"show": "heading,practice2,body",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 46,
-				"taskDuration": 5695,
+				"taskStart": 28,
+				"taskDuration": 10565,
 				"attempt": 1,
 				"group": 0,
 				"position": 0,
@@ -43,8 +44,8 @@
 					"stimulusDetails": "twoback heading,practice2,body",
 					"stimulusType": "Instructions",
 					"onsetTime": -1,
-					"logTime": 5680,
-					"reactionTime": 5680,
+					"logTime": 10488,
+					"reactionTime": 10488,
 					"responseDetails": "",
 					"responseType": "TruePositive"
 				}
@@ -72,6 +73,7 @@
 				"audioFeedback": true,
 				"audioStart": true,
 				"controls": "keyboard",
+				"responseMouse": false,
 				"responseScreen": false,
 				"responseButtons": true,
 				"showButtons": false,
@@ -79,90 +81,150 @@
 				"completion": -1
 			},
 			"taskSummary": {
-				"taskStart": 5741,
-				"taskDuration": 17907,
+				"taskStart": 10593,
+				"taskDuration": 24881,
 				"attempt": 1,
 				"group": 0,
 				"position": 1,
 				"completionScore": 1,
 				"completionPass": true,
-				"integrityScore": 0.7142857142857143,
+				"integrityScore": 0.6153846153846154,
 				"integrityPass": true,
 				"skipped": false,
 				"timeOut": false,
-				"details": "logTime:16540,lastShown:6S",
+				"details": "logTime:23690,lastShown:AD",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 1,
 					"trial": 1,
-					"stimulusDetails": "JS",
+					"stimulusDetails": "7D",
 					"stimulusType": "Foil",
-					"onsetTime": 1135,
-					"logTime": 1805,
-					"reactionTime": 669,
+					"onsetTime": 1091,
+					"logTime": 1683,
+					"reactionTime": 591,
 					"responseDetails": "K",
 					"responseType": "FalsePositive"
 				}, {
 					"round": 1,
 					"trial": 2,
-					"stimulusDetails": "8D",
+					"stimulusDetails": "TD",
 					"stimulusType": "Foil",
-					"onsetTime": 1174,
-					"logTime": 4543,
-					"reactionTime": 1069,
+					"onsetTime": 1080,
+					"logTime": 3305,
+					"reactionTime": 1130,
+					"responseDetails": "D",
+					"responseType": "Anticipatory"
+				}, {
+					"round": 1,
+					"trial": 2,
+					"stimulusDetails": "TD",
+					"stimulusType": "Foil",
+					"onsetTime": 1080,
+					"logTime": 3651,
+					"reactionTime": 396,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
 					"trial": 3,
-					"stimulusDetails": "JS",
+					"stimulusDetails": "7D",
 					"stimulusType": "Probe",
-					"onsetTime": 590,
-					"logTime": 6803,
-					"reactionTime": 1165,
+					"onsetTime": 1434,
+					"logTime": 6398,
+					"reactionTime": 823,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 4,
+					"stimulusDetails": "AD",
+					"stimulusType": "Foil",
+					"onsetTime": 566,
+					"logTime": 7959,
+					"reactionTime": 501,
+					"responseDetails": "K",
+					"responseType": "FalsePositive"
+				}, {
+					"round": 1,
+					"trial": 5,
+					"stimulusDetails": "9C",
+					"stimulusType": "Foil",
+					"onsetTime": 1351,
+					"logTime": 10544,
+					"reactionTime": 719,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 6,
+					"stimulusDetails": "AD",
+					"stimulusType": "Probe",
+					"onsetTime": 555,
+					"logTime": 12308,
+					"reactionTime": 723,
 					"responseDetails": "D",
 					"responseType": "FalseNegative"
 				}, {
 					"round": 1,
-					"trial": 4,
-					"stimulusDetails": "8D",
-					"stimulusType": "Probe",
-					"onsetTime": 1379,
-					"logTime": 9874,
-					"reactionTime": 1197,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 5,
-					"stimulusDetails": "JS",
-					"stimulusType": "Probe",
-					"onsetTime": 774,
-					"logTime": 11939,
-					"reactionTime": 786,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "9S",
-					"stimulusType": "Foil",
-					"onsetTime": 963,
-					"logTime": 14561,
-					"reactionTime": 1168,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
 					"trial": 7,
-					"stimulusDetails": "6S",
+					"stimulusDetails": "8S",
 					"stimulusType": "Foil",
-					"onsetTime": 1475,
-					"logTime": 17393,
-					"reactionTime": 853,
+					"onsetTime": 621,
+					"logTime": 14206,
+					"reactionTime": 785,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 8,
+					"stimulusDetails": "AD",
+					"stimulusType": "Probe",
+					"onsetTime": 618,
+					"logTime": 15693,
+					"reactionTime": 369,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 9,
+					"stimulusDetails": "8S",
+					"stimulusType": "Probe",
+					"onsetTime": 1148,
+					"logTime": 17701,
+					"reactionTime": 361,
+					"responseDetails": "D",
+					"responseType": "FalseNegative"
+				}, {
+					"round": 1,
+					"trial": 10,
+					"stimulusDetails": "AD",
+					"stimulusType": "Probe",
+					"onsetTime": 1028,
+					"logTime": 20539,
+					"reactionTime": 1303,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 11,
+					"stimulusDetails": "4C",
+					"stimulusType": "Foil",
+					"onsetTime": 713,
+					"logTime": 22426,
+					"reactionTime": 673,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 12,
+					"stimulusDetails": "AD",
+					"stimulusType": "Probe",
+					"onsetTime": 769,
+					"logTime": 24376,
+					"reactionTime": 686,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
 				}
 			]
 		}, {
@@ -173,11 +235,12 @@
 				"maxTime": 120000,
 				"instructions": "twoback",
 				"show": "heading,test2,body",
-				"responseButtons": true
+				"responseButtons": true,
+				"style": "dark"
 			},
 			"taskSummary": {
-				"taskStart": 23667,
-				"taskDuration": 7171,
+				"taskStart": 35493,
+				"taskDuration": 49875,
 				"attempt": 1,
 				"group": 0,
 				"position": 2,
@@ -196,8 +259,8 @@
 					"stimulusDetails": "twoback heading,test2,body",
 					"stimulusType": "Instructions",
 					"onsetTime": -1,
-					"logTime": 7135,
-					"reactionTime": 7135,
+					"logTime": 49856,
+					"reactionTime": 49856,
 					"responseDetails": "",
 					"responseType": "TruePositive"
 				}
@@ -225,6 +288,7 @@
 				"audioFeedback": true,
 				"audioStart": true,
 				"controls": "keyboard",
+				"responseMouse": false,
 				"responseScreen": false,
 				"responseButtons": true,
 				"showButtons": false,
@@ -232,1338 +296,518 @@
 				"completion": 1
 			},
 			"taskSummary": {
-				"taskStart": 30838,
-				"taskDuration": 166324,
+				"taskStart": 85368,
+				"taskDuration": 121087,
 				"attempt": 1,
 				"group": 0,
 				"position": 3,
 				"completionScore": 1,
 				"completionPass": true,
-				"integrityScore": 0.30303030303030304,
-				"integrityPass": false,
+				"integrityScore": 0.66,
+				"integrityPass": true,
 				"skipped": false,
 				"timeOut": false,
-				"details": "logTime:164816,lastShown:5H",
+				"details": "logTime:120068,lastShown:2H",
 				"version": "Adult"
 			},
 			"logs": [{
 					"round": 1,
 					"trial": 1,
-					"stimulusDetails": "2H",
+					"stimulusDetails": "KC",
 					"stimulusType": "Foil",
-					"onsetTime": 1053,
-					"logTime": 2069,
-					"reactionTime": 1015,
+					"onsetTime": 1104,
+					"logTime": 2486,
+					"reactionTime": 1382,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
 					"trial": 2,
-					"stimulusDetails": "JD",
+					"stimulusDetails": "7D",
 					"stimulusType": "Foil",
-					"onsetTime": 673,
-					"logTime": 4664,
-					"reactionTime": 1424,
+					"onsetTime": 607,
+					"logTime": 4132,
+					"reactionTime": 545,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
 					"trial": 3,
-					"stimulusDetails": "2H",
-					"stimulusType": "Probe",
-					"onsetTime": 544,
-					"logTime": 6577,
-					"reactionTime": 858,
+					"stimulusDetails": "AC",
+					"stimulusType": "Foil",
+					"onsetTime": 558,
+					"logTime": 5829,
+					"reactionTime": 641,
 					"responseDetails": "D",
-					"responseType": "FalseNegative"
+					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
 					"trial": 4,
-					"stimulusDetails": "8S",
-					"stimulusType": "Foil",
-					"onsetTime": 1436,
-					"logTime": 9613,
-					"reactionTime": 1108,
+					"stimulusDetails": "7D",
+					"stimulusType": "Probe",
+					"onsetTime": 581,
+					"logTime": 7499,
+					"reactionTime": 581,
 					"responseDetails": "D",
-					"responseType": "TrueNegative"
+					"responseType": "FalseNegative"
 				}, {
 					"round": 1,
 					"trial": 5,
-					"stimulusDetails": "3D",
-					"stimulusType": "Foil",
-					"onsetTime": 877,
-					"logTime": 11266,
-					"reactionTime": 276,
-					"responseDetails": "K",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 5,
-					"stimulusDetails": "3D",
-					"stimulusType": "Foil",
-					"onsetTime": 877,
-					"logTime": 11479,
-					"reactionTime": 213,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 5,
-					"stimulusDetails": "3D",
-					"stimulusType": "Foil",
-					"onsetTime": 877,
-					"logTime": 11671,
-					"reactionTime": 405,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "QS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 11863,
-					"reactionTime": 97,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "QS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 12031,
-					"reactionTime": 265,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "QS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 12216,
-					"reactionTime": 450,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "QS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 12457,
-					"reactionTime": 691,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 6,
-					"stimulusDetails": "QS",
-					"stimulusType": "Foil",
-					"onsetTime": 1469,
-					"logTime": 13433,
-					"reactionTime": 198,
+					"stimulusDetails": "AC",
+					"stimulusType": "Probe",
+					"onsetTime": 1053,
+					"logTime": 9605,
+					"reactionTime": 552,
 					"responseDetails": "D",
-					"responseType": "TrueNegative"
+					"responseType": "FalseNegative"
 				}, {
 					"round": 1,
 					"trial": 6,
-					"stimulusDetails": "QS",
-					"stimulusType": "Foil",
-					"onsetTime": 1469,
-					"logTime": 13736,
-					"reactionTime": 303,
-					"responseDetails": "D",
-					"responseType": "Post"
+					"stimulusDetails": "7D",
+					"stimulusType": "Probe",
+					"onsetTime": 673,
+					"logTime": 11794,
+					"reactionTime": 1001,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
 				}, {
 					"round": 1,
 					"trial": 7,
-					"stimulusDetails": "3D",
+					"stimulusDetails": "AC",
 					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 13945,
-					"reactionTime": 18,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 7,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 14131,
-					"reactionTime": 204,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 7,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 14330,
-					"reactionTime": 403,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 7,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 1491,
-					"logTime": 16101,
-					"reactionTime": 683,
+					"onsetTime": 1441,
+					"logTime": 14079,
+					"reactionTime": 342,
 					"responseDetails": "K",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
 					"trial": 8,
-					"stimulusDetails": "9C",
-					"stimulusType": "Foil",
-					"onsetTime": 996,
-					"logTime": 18432,
-					"reactionTime": 836,
-					"responseDetails": "K",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 8,
-					"stimulusDetails": "9C",
-					"stimulusType": "Foil",
-					"onsetTime": 996,
-					"logTime": 18648,
-					"reactionTime": 216,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 8,
-					"stimulusDetails": "9C",
-					"stimulusType": "Foil",
-					"onsetTime": 996,
-					"logTime": 18807,
-					"reactionTime": 375,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 9,
-					"stimulusDetails": "3D",
+					"stimulusDetails": "7D",
 					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 18987,
-					"reactionTime": 52,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 9,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 926,
-					"logTime": 20336,
-					"reactionTime": 475,
+					"onsetTime": 1408,
+					"logTime": 16247,
+					"reactionTime": 255,
 					"responseDetails": "K",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
 					"trial": 9,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 926,
-					"logTime": 20521,
-					"reactionTime": 184,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 9,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 926,
-					"logTime": 20694,
-					"reactionTime": 357,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "4C",
+					"stimulusDetails": "6S",
 					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 20853,
-					"reactionTime": 19,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "4C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 21582,
-					"reactionTime": 748,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "4C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 21804,
-					"reactionTime": 970,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "4C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 21991,
-					"reactionTime": 1157,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "4C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 22172,
-					"reactionTime": 1338,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "4C",
-					"stimulusType": "Foil",
-					"onsetTime": 1366,
-					"logTime": 22373,
-					"reactionTime": 173,
+					"onsetTime": 935,
+					"logTime": 17961,
+					"reactionTime": 281,
 					"responseDetails": "K",
 					"responseType": "FalsePositive"
 				}, {
 					"round": 1,
 					"trial": 10,
-					"stimulusDetails": "4C",
+					"stimulusDetails": "2C",
 					"stimulusType": "Foil",
-					"onsetTime": 1366,
-					"logTime": 22540,
-					"reactionTime": 166,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 10,
-					"stimulusDetails": "4C",
-					"stimulusType": "Foil",
-					"onsetTime": 1366,
-					"logTime": 22725,
-					"reactionTime": 351,
-					"responseDetails": "K",
-					"responseType": "Post"
+					"onsetTime": 650,
+					"logTime": 19732,
+					"reactionTime": 629,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
 					"trial": 11,
-					"stimulusDetails": "3D",
+					"stimulusDetails": "6S",
 					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 22931,
-					"reactionTime": 53,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 23283,
-					"reactionTime": 405,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 556,
-					"logTime": 23497,
-					"reactionTime": 619,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 556,
-					"logTime": 23681,
-					"reactionTime": 247,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 11,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 556,
-					"logTime": 23874,
-					"reactionTime": 193,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 12,
-					"stimulusDetails": "JS",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 25105,
-					"reactionTime": 921,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 12,
-					"stimulusDetails": "JS",
-					"stimulusType": "Foil",
-					"onsetTime": 1097,
-					"logTime": 25386,
-					"reactionTime": 105,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 12,
-					"stimulusDetails": "JS",
-					"stimulusType": "Foil",
-					"onsetTime": 1097,
-					"logTime": 25608,
-					"reactionTime": 222,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 12,
-					"stimulusDetails": "JS",
-					"stimulusType": "Foil",
-					"onsetTime": 1097,
-					"logTime": 25809,
-					"reactionTime": 423,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 13,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 26115,
-					"reactionTime": 224,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 13,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 26345,
-					"reactionTime": 454,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 13,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 26539,
-					"reactionTime": 648,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 13,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 26702,
-					"reactionTime": 811,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 13,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 825,
-					"logTime": 26842,
-					"reactionTime": 126,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 13,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 825,
-					"logTime": 27054,
-					"reactionTime": 211,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 14,
-					"stimulusDetails": "JS",
-					"stimulusType": "Probe",
-					"onsetTime": 1149,
-					"logTime": 29255,
-					"reactionTime": 762,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 14,
-					"stimulusDetails": "JS",
-					"stimulusType": "Probe",
-					"onsetTime": 1149,
-					"logTime": 29464,
-					"reactionTime": 209,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 14,
-					"stimulusDetails": "JS",
-					"stimulusType": "Probe",
-					"onsetTime": 1149,
-					"logTime": 29670,
-					"reactionTime": 415,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 15,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 29889,
-					"reactionTime": 134,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 15,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 30057,
-					"reactionTime": 302,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 15,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 1244,
-					"logTime": 31550,
-					"reactionTime": 551,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 15,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 1244,
-					"logTime": 31736,
-					"reactionTime": 186,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 15,
-					"stimulusDetails": "3D",
-					"stimulusType": "Probe",
-					"onsetTime": 1244,
-					"logTime": 32003,
-					"reactionTime": 453,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "AH",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 32203,
-					"reactionTime": 159,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "AH",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 33028,
-					"reactionTime": 984,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "AH",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 33209,
-					"reactionTime": 1165,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "AH",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 33377,
-					"reactionTime": 1333,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "AH",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 33518,
-					"reactionTime": 1474,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "AH",
-					"stimulusType": "Foil",
-					"onsetTime": 1501,
-					"logTime": 33672,
-					"reactionTime": 127,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 16,
-					"stimulusDetails": "AH",
-					"stimulusType": "Foil",
-					"onsetTime": 1501,
-					"logTime": 34105,
-					"reactionTime": 433,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 17,
-					"stimulusDetails": "8H",
-					"stimulusType": "Foil",
-					"onsetTime": 652,
-					"logTime": 35812,
-					"reactionTime": 989,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 18,
-					"stimulusDetails": "TD",
-					"stimulusType": "Foil",
-					"onsetTime": 778,
-					"logTime": 37664,
-					"reactionTime": 572,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 19,
-					"stimulusDetails": "TH",
-					"stimulusType": "Foil",
-					"onsetTime": 1228,
-					"logTime": 40109,
-					"reactionTime": 726,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 20,
-					"stimulusDetails": "7S",
-					"stimulusType": "Foil",
-					"onsetTime": 929,
-					"logTime": 44280,
-					"reactionTime": 2742,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 21,
-					"stimulusDetails": "TH",
-					"stimulusType": "Probe",
-					"onsetTime": 1176,
-					"logTime": 46727,
-					"reactionTime": 781,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 22,
-					"stimulusDetails": "QD",
-					"stimulusType": "Foil",
-					"onsetTime": 1117,
-					"logTime": 51095,
-					"reactionTime": 2743,
-					"responseDetails": "K",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 23,
-					"stimulusDetails": "TH",
-					"stimulusType": "Probe",
-					"onsetTime": 1383,
-					"logTime": 53675,
-					"reactionTime": 705,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 24,
-					"stimulusDetails": "KS",
-					"stimulusType": "Foil",
-					"onsetTime": 1415,
-					"logTime": 60586,
-					"reactionTime": 5002,
-					"responseDetails": "",
-					"responseType": "MaxOut"
-				}, {
-					"round": 1,
-					"trial": 25,
-					"stimulusDetails": "TH",
-					"stimulusType": "Probe",
-					"onsetTime": 1348,
-					"logTime": 67426,
-					"reactionTime": 5000,
-					"responseDetails": "",
-					"responseType": "MaxOut"
-				}, {
-					"round": 1,
-					"trial": 25,
-					"stimulusDetails": "TH",
-					"stimulusType": "Probe",
-					"onsetTime": 1348,
-					"logTime": 67736,
-					"reactionTime": 309,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 25,
-					"stimulusDetails": "TH",
-					"stimulusType": "Probe",
-					"onsetTime": 1348,
-					"logTime": 67938,
-					"reactionTime": 511,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 26,
-					"stimulusDetails": "KS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 68098,
-					"reactionTime": 159,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 26,
-					"stimulusDetails": "KS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 68252,
-					"reactionTime": 313,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 26,
-					"stimulusDetails": "KS",
-					"stimulusType": "Probe",
-					"onsetTime": 589,
-					"logTime": 69589,
-					"reactionTime": 1061,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 27,
-					"stimulusDetails": "TS",
-					"stimulusType": "Foil",
-					"onsetTime": 1415,
-					"logTime": 73091,
-					"reactionTime": 1597,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 28,
-					"stimulusDetails": "KS",
-					"stimulusType": "Probe",
-					"onsetTime": 942,
-					"logTime": 75663,
-					"reactionTime": 1134,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 28,
-					"stimulusDetails": "KS",
-					"stimulusType": "Probe",
-					"onsetTime": 942,
-					"logTime": 76145,
-					"reactionTime": 482,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 29,
-					"stimulusDetails": "TS",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 76317,
-					"reactionTime": 141,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 29,
-					"stimulusDetails": "TS",
-					"stimulusType": "Probe",
-					"onsetTime": 689,
-					"logTime": 78040,
-					"reactionTime": 1175,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 30,
-					"stimulusDetails": "KS",
-					"stimulusType": "Probe",
-					"onsetTime": 1435,
-					"logTime": 80955,
-					"reactionTime": 991,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 31,
-					"stimulusDetails": "TS",
-					"stimulusType": "Probe",
-					"onsetTime": 576,
-					"logTime": 82817,
-					"reactionTime": 794,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 32,
-					"stimulusDetails": "3S",
-					"stimulusType": "Foil",
-					"onsetTime": 1060,
-					"logTime": 85969,
-					"reactionTime": 1600,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 33,
-					"stimulusDetails": "QH",
-					"stimulusType": "Foil",
-					"onsetTime": 879,
-					"logTime": 88823,
-					"reactionTime": 1482,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 34,
-					"stimulusDetails": "3S",
-					"stimulusType": "Probe",
-					"onsetTime": 940,
-					"logTime": 91042,
-					"reactionTime": 790,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 35,
-					"stimulusDetails": "QH",
-					"stimulusType": "Probe",
-					"onsetTime": 1117,
-					"logTime": 93366,
+					"onsetTime": 1169,
+					"logTime": 22124,
 					"reactionTime": 721,
 					"responseDetails": "D",
 					"responseType": "FalseNegative"
 				}, {
 					"round": 1,
-					"trial": 36,
-					"stimulusDetails": "2D",
+					"trial": 12,
+					"stimulusDetails": "2C",
+					"stimulusType": "Probe",
+					"onsetTime": 874,
+					"logTime": 23887,
+					"reactionTime": 386,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 13,
+					"stimulusDetails": "8D",
 					"stimulusType": "Foil",
-					"onsetTime": 1178,
-					"logTime": 95735,
-					"reactionTime": 702,
+					"onsetTime": 1281,
+					"logTime": 26460,
+					"reactionTime": 776,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 14,
+					"stimulusDetails": "2C",
+					"stimulusType": "Probe",
+					"onsetTime": 1167,
+					"logTime": 28624,
+					"reactionTime": 504,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 15,
+					"stimulusDetails": "8D",
+					"stimulusType": "Probe",
+					"onsetTime": 1347,
+					"logTime": 31343,
+					"reactionTime": 876,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 16,
+					"stimulusDetails": "2C",
+					"stimulusType": "Probe",
+					"onsetTime": 1100,
+					"logTime": 34023,
+					"reactionTime": 1069,
+					"responseDetails": "D",
+					"responseType": "FalseNegative"
+				}, {
+					"round": 1,
+					"trial": 17,
+					"stimulusDetails": "JS",
+					"stimulusType": "Foil",
+					"onsetTime": 722,
+					"logTime": 36484,
+					"reactionTime": 1248,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 18,
+					"stimulusDetails": "4C",
+					"stimulusType": "Foil",
+					"onsetTime": 1284,
+					"logTime": 38922,
+					"reactionTime": 654,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 19,
+					"stimulusDetails": "5C",
+					"stimulusType": "Foil",
+					"onsetTime": -1,
+					"logTime": 39874,
+					"reactionTime": 455,
+					"responseDetails": "D",
+					"responseType": "Anticipatory"
+				}, {
+					"round": 1,
+					"trial": 19,
+					"stimulusDetails": "5C",
+					"stimulusType": "Foil",
+					"onsetTime": 958,
+					"logTime": 40981,
+					"reactionTime": 604,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 20,
+					"stimulusDetails": "4C",
+					"stimulusType": "Probe",
+					"onsetTime": 622,
+					"logTime": 42720,
+					"reactionTime": 633,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 20,
+					"stimulusDetails": "4C",
+					"stimulusType": "Probe",
+					"onsetTime": 622,
+					"logTime": 43044,
+					"reactionTime": 323,
+					"responseDetails": "K",
+					"responseType": "Post"
+				}, {
+					"round": 1,
+					"trial": 21,
+					"stimulusDetails": "7C",
+					"stimulusType": "Foil",
+					"onsetTime": 1034,
+					"logTime": 44735,
+					"reactionTime": 498,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 22,
+					"stimulusDetails": "2D",
+					"stimulusType": "Foil",
+					"onsetTime": 584,
+					"logTime": 46671,
+					"reactionTime": 837,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 23,
+					"stimulusDetails": "7C",
+					"stimulusType": "Probe",
+					"onsetTime": 1238,
+					"logTime": 48743,
+					"reactionTime": 341,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 24,
+					"stimulusDetails": "KH",
+					"stimulusType": "Foil",
+					"onsetTime": 1148,
+					"logTime": 50961,
+					"reactionTime": 560,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 25,
+					"stimulusDetails": "5S",
+					"stimulusType": "Foil",
+					"onsetTime": 632,
+					"logTime": 57088,
+					"reactionTime": 5001,
+					"responseDetails": "",
+					"responseType": "MaxOut"
+				}, {
+					"round": 1,
+					"trial": 26,
+					"stimulusDetails": "TS",
+					"stimulusType": "Foil",
+					"onsetTime": 817,
+					"logTime": 58914,
+					"reactionTime": 510,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 27,
+					"stimulusDetails": "5S",
+					"stimulusType": "Probe",
+					"onsetTime": 1342,
+					"logTime": 61270,
+					"reactionTime": 517,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 28,
+					"stimulusDetails": "TS",
+					"stimulusType": "Probe",
+					"onsetTime": 1033,
+					"logTime": 64090,
+					"reactionTime": 1303,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 29,
+					"stimulusDetails": "TC",
+					"stimulusType": "Foil",
+					"onsetTime": 1150,
+					"logTime": 67737,
+					"reactionTime": 2000,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 30,
+					"stimulusDetails": "TS",
+					"stimulusType": "Probe",
+					"onsetTime": 1517,
+					"logTime": 71008,
+					"reactionTime": 1254,
+					"responseDetails": "D",
+					"responseType": "FalseNegative"
+				}, {
+					"round": 1,
+					"trial": 31,
+					"stimulusDetails": "6H",
+					"stimulusType": "Foil",
+					"onsetTime": 1356,
+					"logTime": 73371,
+					"reactionTime": 518,
+					"responseDetails": "K",
+					"responseType": "FalsePositive"
+				}, {
+					"round": 1,
+					"trial": 32,
+					"stimulusDetails": "4S",
+					"stimulusType": "Foil",
+					"onsetTime": 964,
+					"logTime": 78470,
+					"reactionTime": 3635,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 33,
+					"stimulusDetails": "6H",
+					"stimulusType": "Probe",
+					"onsetTime": 1430,
+					"logTime": 85384,
+					"reactionTime": 5000,
+					"responseDetails": "",
+					"responseType": "MaxOut"
+				}, {
+					"round": 1,
+					"trial": 34,
+					"stimulusDetails": "4H",
+					"stimulusType": "Foil",
+					"onsetTime": 1414,
+					"logTime": 87622,
+					"reactionTime": 337,
+					"responseDetails": "K",
+					"responseType": "FalsePositive"
+				}, {
+					"round": 1,
+					"trial": 35,
+					"stimulusDetails": "6H",
+					"stimulusType": "Probe",
+					"onsetTime": 1124,
+					"logTime": 89567,
+					"reactionTime": 313,
+					"responseDetails": "D",
+					"responseType": "FalseNegative"
+				}, {
+					"round": 1,
+					"trial": 36,
+					"stimulusDetails": "4H",
+					"stimulusType": "Probe",
+					"onsetTime": 880,
+					"logTime": 91615,
+					"reactionTime": 677,
+					"responseDetails": "D",
+					"responseType": "FalseNegative"
 				}, {
 					"round": 1,
 					"trial": 37,
-					"stimulusDetails": "TC",
-					"stimulusType": "Foil",
-					"onsetTime": 934,
-					"logTime": 98038,
-					"reactionTime": 863,
+					"stimulusDetails": "6H",
+					"stimulusType": "Probe",
+					"onsetTime": 1216,
+					"logTime": 94748,
+					"reactionTime": 1427,
 					"responseDetails": "D",
-					"responseType": "TrueNegative"
+					"responseType": "FalseNegative"
 				}, {
 					"round": 1,
 					"trial": 38,
-					"stimulusDetails": "2D",
-					"stimulusType": "Probe",
-					"onsetTime": 519,
-					"logTime": 100488,
-					"reactionTime": 1431,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
+					"stimulusDetails": "3C",
+					"stimulusType": "Foil",
+					"onsetTime": 717,
+					"logTime": 96477,
+					"reactionTime": 507,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
 					"trial": 39,
-					"stimulusDetails": "6H",
+					"stimulusDetails": "KD",
 					"stimulusType": "Foil",
-					"onsetTime": 879,
-					"logTime": 102506,
-					"reactionTime": 636,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 40,
-					"stimulusDetails": "2D",
-					"stimulusType": "Probe",
-					"onsetTime": 807,
-					"logTime": 104576,
-					"reactionTime": 769,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 41,
-					"stimulusDetails": "6H",
-					"stimulusType": "Probe",
-					"onsetTime": 702,
-					"logTime": 106301,
-					"reactionTime": 525,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 42,
-					"stimulusDetails": "2D",
-					"stimulusType": "Probe",
-					"onsetTime": 1333,
-					"logTime": 108544,
-					"reactionTime": 406,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 43,
-					"stimulusDetails": "KC",
-					"stimulusType": "Foil",
-					"onsetTime": 1386,
-					"logTime": 110775,
-					"reactionTime": 341,
-					"responseDetails": "K",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 44,
-					"stimulusDetails": "2D",
-					"stimulusType": "Probe",
-					"onsetTime": 965,
-					"logTime": 112796,
-					"reactionTime": 549,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 45,
-					"stimulusDetails": "KC",
-					"stimulusType": "Probe",
-					"onsetTime": 742,
-					"logTime": 115244,
-					"reactionTime": 1208,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 46,
-					"stimulusDetails": "6D",
-					"stimulusType": "Foil",
-					"onsetTime": 1513,
-					"logTime": 117879,
-					"reactionTime": 622,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 47,
-					"stimulusDetails": "5S",
-					"stimulusType": "Foil",
-					"onsetTime": 1370,
-					"logTime": 120348,
-					"reactionTime": 588,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 47,
-					"stimulusDetails": "5S",
-					"stimulusType": "Foil",
-					"onsetTime": 1370,
-					"logTime": 120537,
-					"reactionTime": 189,
-					"responseDetails": "D",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 48,
-					"stimulusDetails": "3C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 120869,
-					"reactionTime": 31,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 48,
-					"stimulusDetails": "3C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 121093,
-					"reactionTime": 255,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 48,
-					"stimulusDetails": "3C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 121332,
-					"reactionTime": 494,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 48,
-					"stimulusDetails": "3C",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 121551,
-					"reactionTime": 713,
-					"responseDetails": "D",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 48,
-					"stimulusDetails": "3C",
-					"stimulusType": "Foil",
-					"onsetTime": 733,
-					"logTime": 121814,
-					"reactionTime": 243,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 49,
-					"stimulusDetails": "JC",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 122860,
-					"reactionTime": 539,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 49,
-					"stimulusDetails": "JC",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 123090,
-					"reactionTime": 769,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 49,
-					"stimulusDetails": "JC",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 123285,
-					"reactionTime": 964,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 49,
-					"stimulusDetails": "JC",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 123489,
-					"reactionTime": 1168,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 49,
-					"stimulusDetails": "JC",
-					"stimulusType": "Foil",
-					"onsetTime": -1,
-					"logTime": 123695,
-					"reactionTime": 1374,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 49,
-					"stimulusDetails": "JC",
-					"stimulusType": "Foil",
-					"onsetTime": 1453,
-					"logTime": 123911,
-					"reactionTime": 137,
-					"responseDetails": "K",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 49,
-					"stimulusDetails": "JC",
-					"stimulusType": "Foil",
-					"onsetTime": 1453,
-					"logTime": 124123,
-					"reactionTime": 211,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 50,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 124916,
-					"reactionTime": 494,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 50,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 125146,
-					"reactionTime": 724,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 50,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 125336,
-					"reactionTime": 914,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 50,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": -1,
-					"logTime": 125539,
-					"reactionTime": 1117,
-					"responseDetails": "K",
-					"responseType": "Anticipatory"
-				}, {
-					"round": 1,
-					"trial": 50,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": 1184,
-					"logTime": 125753,
-					"reactionTime": 147,
-					"responseDetails": "K",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 50,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": 1184,
-					"logTime": 125948,
-					"reactionTime": 194,
-					"responseDetails": "K",
-					"responseType": "Post"
-				}, {
-					"round": 1,
-					"trial": 51,
-					"stimulusDetails": "2C",
-					"stimulusType": "Foil",
-					"onsetTime": 636,
-					"logTime": 127351,
-					"reactionTime": 474,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 52,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": 1276,
-					"logTime": 134126,
-					"reactionTime": 5002,
-					"responseDetails": "",
-					"responseType": "MaxOut"
-				}, {
-					"round": 1,
-					"trial": 53,
-					"stimulusDetails": "2C",
-					"stimulusType": "Probe",
-					"onsetTime": 723,
-					"logTime": 140344,
-					"reactionTime": 5002,
-					"responseDetails": "",
-					"responseType": "MaxOut"
-				}, {
-					"round": 1,
-					"trial": 54,
-					"stimulusDetails": "3C",
-					"stimulusType": "Probe",
-					"onsetTime": 921,
-					"logTime": 142649,
-					"reactionTime": 881,
-					"responseDetails": "J",
-					"responseType": "TruePositive"
-				}, {
-					"round": 1,
-					"trial": 55,
-					"stimulusDetails": "2C",
-					"stimulusType": "Probe",
-					"onsetTime": 1448,
-					"logTime": 145230,
-					"reactionTime": 642,
-					"responseDetails": "D",
-					"responseType": "FalseNegative"
-				}, {
-					"round": 1,
-					"trial": 56,
-					"stimulusDetails": "4D",
-					"stimulusType": "Foil",
-					"onsetTime": 703,
-					"logTime": 147222,
-					"reactionTime": 781,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 57,
-					"stimulusDetails": "6S",
-					"stimulusType": "Foil",
-					"onsetTime": 961,
-					"logTime": 149426,
-					"reactionTime": 731,
-					"responseDetails": "J",
-					"responseType": "FalsePositive"
-				}, {
-					"round": 1,
-					"trial": 58,
-					"stimulusDetails": "QC",
-					"stimulusType": "Foil",
-					"onsetTime": 1218,
-					"logTime": 151689,
+					"onsetTime": 684,
+					"logTime": 98206,
 					"reactionTime": 552,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
-					"trial": 59,
-					"stimulusDetails": "JH",
-					"stimulusType": "Foil",
-					"onsetTime": 1261,
-					"logTime": 154077,
-					"reactionTime": 628,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 60,
-					"stimulusDetails": "AC",
-					"stimulusType": "Foil",
-					"onsetTime": 1302,
-					"logTime": 156521,
-					"reactionTime": 649,
-					"responseDetails": "D",
-					"responseType": "TrueNegative"
-				}, {
-					"round": 1,
-					"trial": 61,
-					"stimulusDetails": "JH",
+					"trial": 40,
+					"stimulusDetails": "3C",
 					"stimulusType": "Probe",
-					"onsetTime": 1251,
-					"logTime": 158926,
-					"reactionTime": 659,
-					"responseDetails": "J",
+					"onsetTime": 650,
+					"logTime": 100018,
+					"reactionTime": 665,
+					"responseDetails": "K",
 					"responseType": "TruePositive"
 				}, {
 					"round": 1,
-					"trial": 62,
-					"stimulusDetails": "AC",
+					"trial": 41,
+					"stimulusDetails": "KD",
 					"stimulusType": "Probe",
-					"onsetTime": 1355,
-					"logTime": 161348,
-					"reactionTime": 578,
+					"onsetTime": 869,
+					"logTime": 102028,
+					"reactionTime": 640,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 42,
+					"stimulusDetails": "3C",
+					"stimulusType": "Probe",
+					"onsetTime": 1200,
+					"logTime": 105313,
+					"reactionTime": 1592,
+					"responseDetails": "K",
+					"responseType": "TruePositive"
+				}, {
+					"round": 1,
+					"trial": 43,
+					"stimulusDetails": "AS",
+					"stimulusType": "Foil",
+					"onsetTime": 1450,
+					"logTime": 107839,
+					"reactionTime": 568,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 44,
+					"stimulusDetails": "TD",
+					"stimulusType": "Foil",
+					"onsetTime": 1413,
+					"logTime": 110636,
+					"reactionTime": 869,
+					"responseDetails": "D",
+					"responseType": "TrueNegative"
+				}, {
+					"round": 1,
+					"trial": 45,
+					"stimulusDetails": "AS",
+					"stimulusType": "Probe",
+					"onsetTime": 1435,
+					"logTime": 113247,
+					"reactionTime": 665,
 					"responseDetails": "D",
 					"responseType": "FalseNegative"
 				}, {
 					"round": 1,
-					"trial": 63,
-					"stimulusDetails": "KH",
+					"trial": 46,
+					"stimulusDetails": "TH",
 					"stimulusType": "Foil",
-					"onsetTime": 1316,
-					"logTime": 163796,
-					"reactionTime": 632,
+					"onsetTime": 523,
+					"logTime": 116004,
+					"reactionTime": 1749,
+					"responseDetails": "K",
+					"responseType": "FalsePositive"
+				}, {
+					"round": 1,
+					"trial": 47,
+					"stimulusDetails": "KS",
+					"stimulusType": "Foil",
+					"onsetTime": 1466,
+					"logTime": 118466,
+					"reactionTime": 502,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
 				}, {
 					"round": 1,
-					"trial": 64,
-					"stimulusDetails": "5H",
+					"trial": 48,
+					"stimulusDetails": "2H",
 					"stimulusType": "Foil",
-					"onsetTime": 522,
-					"logTime": 165826,
-					"reactionTime": 1010,
+					"onsetTime": 1100,
+					"logTime": 120587,
+					"reactionTime": 519,
 					"responseDetails": "D",
 					"responseType": "TrueNegative"
 				}
@@ -1571,9 +815,6 @@
 		}
 	],
 	"configuration": {
-		"basePath": "",
-		"localePath": "https://epic-platform.cogstate.com/htm-1081/session/asset/locale_custom/",
-		"version": "",
 		"groups": [{
 				"skipRest": false,
 				"maxAttempts": 1,
@@ -1595,6 +836,15 @@
 					}
 				]
 			}
-		]
+		],
+		"repeat": {
+			"maxAttempts": 1,
+			"skipRest": false,
+			"version": "",
+			"parameters": [{
+					"code": "RepeatInstructions"
+				}
+			]
+		}
 	}
 }

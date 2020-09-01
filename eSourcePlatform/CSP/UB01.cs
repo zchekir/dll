@@ -46,6 +46,7 @@ namespace CSP
             workflowToken = "";
             Batteryid = "";
             rawdata = "";
+            assessmentID = "";
         }
 
         /// <summary>
@@ -116,6 +117,18 @@ namespace CSP
         {
             get { return _rawdata; }
             set { _rawdata = value; }
+        }
+
+        string _assessmentID;
+
+        /// <summary>
+        /// Gets or sets the value of variable assessmentID.
+        /// </summary>
+        [TestVariable("c519c584-71ec-44ec-910a-340e4545b273")]
+        public string assessmentID
+        {
+            get { return _assessmentID; }
+            set { _assessmentID = value; }
         }
 
 #endregion

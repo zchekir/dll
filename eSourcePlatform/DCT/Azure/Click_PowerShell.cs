@@ -93,8 +93,8 @@ namespace DCT.Azure
             repo.KuduServices.PowerShell.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(1));
-            Delay.Duration(4000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(1));
+            Delay.Duration(60000, false);
             
         }
 

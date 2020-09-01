@@ -88,6 +88,95 @@ zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
 F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		capname="webdocument"
+		id="e84fe0dd-7e22-48f7-ad02-07bff40780b9"
+		isrooted="True"
+		name="KuduServices"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="02ce32dd-e60a-4af8-8c00-70833459f1db"
+			name="rcc_hubPowerShall"
+			refimgid="4962e6ee-d26c-4b9d-a325-7423d3f06e7b"
+			searchtimeout="30000ms">
+				/dom[@domain=$AzureDOM]//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span
+			</item>
+			<basepath>
+				/dom[@domain=$AzureDOM]
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="7424d8aa-7302-4ca4-bb9d-70e282c4b92c"
+		isrooted="True"
+		name="DiagnosticConsole"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="22aa2717-5e88-45d4-9e78-6bec5f0ba34b"
+			name="CMD"
+			refimgid="195608d1-a646-496d-b3fe-c4547e22a109"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-staging-webjobs.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="82685578-e25b-40fe-9c94-41989b3c76bc"
+			name="NetFramework"
+			refimgid="ff2f82ce-a30f-43f9-9cc5-d8ec6cb2dee5"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-staging-webjobs.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']//div[@innertext~'^&lt;startup&gt;&lt;supportedRuntim']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="726f366c-d078-4631-9c47-b56cc04934a1"
+			name="DLL"
+			refimgid="c3591a7d-8a6a-4d73-8958-ba5ff091b5af"
+			searchtimeout="30000ms">
+				/dom[@domain='cgst-staging-webjobs.scm.azurewebsites.net']//div[#'KuduExecConsoleV2']/div/div/div[4]/span[3]
+			</item>
+			<basepath>
+				/dom[@domain='cgst-staging-webjobs.scm.azurewebsites.net']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -113,6 +202,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="64f38c0d-a00b-4a5b-bd53-ba394794cee9"
 		name="ProtocolID">
+		</var>
+		<var
+		id="62431319-fa61-43d0-b7a6-6c7241f54df2"
+		name="AzureDOM">
+			cgst-qc-orr-hub.scm.azurewebsites.net
 		</var>
 	</variables>
 </repository>

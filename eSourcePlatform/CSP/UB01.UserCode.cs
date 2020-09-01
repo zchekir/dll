@@ -71,12 +71,13 @@ namespace CSP
 			
 		 using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
+		 	
+		    
+               var testData = rawdata.Replace(@"<id>", assessmentID);		 
 				
+				Report.Info("Data to send: " + testData);
 				
-				//Debugging Request
-				Report.Info("Data to send: " + rawdata);
-				
-				sw.Write(rawdata);
+				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}

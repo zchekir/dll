@@ -29,6 +29,48 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="60000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b5852240-4b58-47bb-89ee-cb2a93b75374"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2b7260a6-8b1d-4961-9108-0f3b23cb9290"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//tag[@tagname='cogstate-helper-battery-display-reorder']//ul/li[1]
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -346,15 +388,6 @@ DNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKK
 ADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNGaKKADNFFFAH/2Q==
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="500ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
