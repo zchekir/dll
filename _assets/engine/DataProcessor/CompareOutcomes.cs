@@ -342,12 +342,12 @@ namespace engine.DataProcessor
 						if (outcomeReference != "")
 						{
 							if(CheckOutcomesMatch(currentOutcome, extractValue, databaseValue))							{
-								Report.Success("Extract Outcome: " + outcomeReference + " " + currentOutcome + " - Extract Value: " + extractValue);
-								Report.Success("Database Outcome: " + outcomeReference + " " + currentOutcome + " - Database Value: " + databaseValue);
+								Report.Success("Manual Calculation: " + outcomeReference + " " + currentOutcome + " - Value: " + extractValue);
+								Report.Success("Database Outcome: " + outcomeReference + " " + currentOutcome + " -  Value: " + databaseValue);
 							}
 							else {
-								Report.Failure("Extract Outcome: " + outcomeReference + " " + currentOutcome + " - Extract Value: " + extractValue);
-								Report.Failure("Database Outcome: " + outcomeReference + " " + currentOutcome + " - Database Value: " + databaseValue);
+								Report.Failure("Manual Calculation: " + outcomeReference + " " + currentOutcome + " - Value: " + extractValue);
+								Report.Failure("Database Outcome: " + outcomeReference + " " + currentOutcome + " - Value: " + databaseValue);
 							}
 						}
 

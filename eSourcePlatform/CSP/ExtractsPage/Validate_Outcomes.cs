@@ -176,7 +176,7 @@ namespace CSP.ExtractsPage
             engine.Helpers.CSVUtility.ReadCSVIntoDataTable(fileName);
             Delay.Milliseconds(0);
             
-            engine.DataProcessor.CompareOutcomes.Validate_Outcomes_Match(ValueConverter.ArgumentFromString<bool>("validation", "True"));
+            engine.DataProcessor.CompareOutcomes.Validate_Outcomes_Match(ValueConverter.ArgumentFromString<bool>("validation", "False"));
             Delay.Milliseconds(0);
             
         }
