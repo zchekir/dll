@@ -13,7 +13,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
-using System.IO;
 using WinForms = System.Windows.Forms;
 
 using Ranorex;
@@ -21,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RedCapCloud.General
+namespace eSourcePlatform
 {
-    public partial class Upload_RawData
+    public partial class NetFrameworkValidation
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -34,23 +33,19 @@ namespace RedCapCloud.General
             // Your recording specific initialization code goes here.
         }
 
-        public void AddRawData(string fileName)
+        public void Get_value_NetFramework(RepoItemInfo divtagInfo, string NetFramworkexpected)
         {
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'divtagInfo' and assigning its value to variable 'NetFrameVersion'.", divtagInfo);
+            string current_NetFrameVersion = divtagInfo.FindAdapter<DivTag>().Element.GetAttributeValueText("InnerText");
+            
+            Report.Log(ReportLevel.Info,  current_NetFrameVersion );
+            
+            // splitting version numbe
+        	string ver_NetFram  = current_NetFrameVersion.Split(' ')[2];
         	
-        	
-        	Delay.Milliseconds(1000);
-            string data;
-        	using (StreamReader sr = File.OpenText(@".\rawData\" + fileName))
-			{
-        		data = sr.ReadToEnd();
-			}
-        	
-        	//Add raw data into the textbox on the battery runner page
-        	Report.Log(ReportLevel.Info, "Searching for raw data text field");
-        	repo.REDCapCloud.iFrame.ResultsInfo.WaitForExists(new Duration(30000));
-        	repo.REDCapCloud.iFrame.Results.Element.SetAttributeValue("InnerText", data);
-        	
-        	
+        	 Validate.AreEqual(ver_NetFram,NetFramworkexpected);
+           
+        	 Report.Log(ReportLevel.Info, " .NetVersion is"+ " :" + " " + ver_NetFram  );
         }
 
     }

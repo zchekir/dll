@@ -54,7 +54,7 @@ namespace ReportingLayer.Database
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
 			da.SelectCommand.Parameters.AddWithValue("@TestIdentifier", TestIdentifier);
 			//Sets the timeout for the query to 5 minutes
-			da.SelectCommand.CommandTimeout = 300;
+			da.SelectCommand.CommandTimeout = 1000;
 			
 			//Get query results
 			using (da)

@@ -67,6 +67,7 @@ public class rowsJSONResponseA
             private const string RedCapAdapterJob  ="Cogstate.Integration.RedCapAdapterJobs";
             private const string RedCapHandlerJobs ="Cogstate.Integration.RedCapHandlerJobs";
             private const string AbsorbWebJobs  ="Cogstate.Absorb.WebJobs";
+            private const string DataCleaningTool  ="Cogstate.DataCleaningTool.WebJobs";
        
             private void Init()
         {
@@ -141,6 +142,13 @@ public class rowsJSONResponseA
             	Validate.AreEqual("Absorb_WebJobs: "+ version.Version ,"Absorb_WebJobs: "+ Absorb_WebJobs);
             }
             
+            
+       
+       
+            else if(entryAssembly == DataCleaningTool){
+            	
+            	Validate.AreEqual("Data_CleaningTool: "+ version.Version ,"Data_CleaningTool: "+ Data_CleaningTool);
+            }
             
             else {
             	

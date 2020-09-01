@@ -84,6 +84,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="09a344eb-a694-4da0-abc9-e8668a48a279"
+			name="OpenAzLocation"
+			ref="d82ce541-c07b-4458-8378-0fcaefdb1f51"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NetURL"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="9b546544-466e-46b9-bd75-1142b2bbe916"
+					variablename="URL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0a7ee364-d00a-40c1-bca7-d35f69870050"
 			name="Enter_EventDef_Name"
 			ref="d87ad496-dfc7-402e-a2b1-19bf465a8af1"
@@ -591,6 +605,12 @@ rxversion="8.3">
 					variableid="3624ba0c-2ad7-4cce-b7df-3aed486f8a97"
 					variablename="EvKey">
 					</var>
+					<var
+					dataname="Data_CleaningTool"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="c7fec0f8-8d4e-48d7-a4ff-3b7459ae787d"
+					variablename="Data_CleaningTool">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -1034,6 +1054,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="38cd509b-df54-4d3a-8b93-deb1dbf8ef89"
+			name="OpenAzur_">
+			</testcase>
 			<testmodule
 			id="38f53050-ee67-4381-b546-13b83956d811"
 			name="Click_ParametersTab"
@@ -1246,6 +1270,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="46eb6c72-7815-4fbe-a121-6f685ef4b154"
+			name="NetFrameworkValidation"
+			ref="fb326cbf-1e96-4635-a5ac-840af6cdb390"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NetFramworkVersion"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="6336c0ec-26c4-42d6-bce2-af2883c0673a"
+					variablename="NetFrameVersion">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -1278,6 +1316,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="4c80919e-377f-4dfe-b67e-3fcabe8c8d09"
+			name="NetFramework">
+			</testcase>
 			<testmodule
 			id="4dc0fcb6-ad25-48a6-8ced-437e02e61537"
 			name="Select_Site"
@@ -1531,9 +1573,9 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="0"
-			minrange="0"
-			name="Jackson_smokeTest">
+			maxrange="3"
+			minrange="3"
+			name="Cricket_smokeTest">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -1918,6 +1960,26 @@ rxversion="8.3">
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="796f0f4c-9f18-4577-ad38-ca31f71085bd"
+			name="Net_Framework"
+			ref="c63e787d-f0f7-4502-bc2b-55eac038f926"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NetFrameWork"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="eb426209-2160-40c2-a589-c6a21387fbe7"
+					variablename="NetFramwork">
+					</var>
+					<var
+					dataname="Root"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="4cdcf8ae-6d45-4d39-b096-57635da99994"
+					variablename="Root">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2766,6 +2828,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="a9668023-1a5e-4a8e-a68a-e77061a8235c"
+			name="ValidateNetFramwork">
+			</testcase>
 			<testmodule
 			id="a9792b10-3955-4fc4-966e-88cbc74d5036"
 			name="Select_Study"
@@ -3114,7 +3180,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="b77ce62f-f979-4ddc-90ac-3695cefcb4ad"
-			name="HUB&amp;DCT_Vesrions">
+			name="HUB&amp;DCT_Vesrions(Jackson)">
 			</smartfoldernode>
 			<testmodule
 			id="b7b33304-a200-44a9-a8c0-01fd98c20188"
@@ -3469,11 +3535,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="ServerVersionDeployed"
-					value="3.0.0.698">
+					value="2.6.0.40">
 					</param>
 					<param
 					name="ClientVersionDeployed"
-					value="3.0.0-rc.698">
+					value="2.6.0-rc.40">
 					</param>
 					<param
 					name="RandNum"
@@ -3517,7 +3583,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="CSPDBVersion"
-					value="003000_202006090542510_PRD-2978">
+					value="002006_202008041526257_PRD-3141">
 					</param>
 					<param
 					name="DCT_DBVersion"
@@ -3557,11 +3623,11 @@ rxversion="8.3">
 					</param>
 					<param
 					name="RedCapAdapter_Job "
-					value="2.2.0-rc.40">
+					value="2.2.0-rc.45">
 					</param>
 					<param
 					name="RedCapHandler_Jobs"
-					value="2.2.0-rc.40">
+					value="2.2.0-rc.45">
 					</param>
 					<param
 					name="Absorb_WebJobs"
@@ -3582,6 +3648,26 @@ rxversion="8.3">
 					<param
 					name="TimeStmp"
 					value="PT300H">
+					</param>
+					<param
+					name="NetFrameWork"
+					value="grep &quot;.NETFramework,Version&quot;  Cogstate.Common.Infrastructure.dll.config">
+					</param>
+					<param
+					name="NetURL"
+					value="https://cgst-staging-webjobs.scm.azurewebsites.net/DebugConsole/?shell=powershell">
+					</param>
+					<param
+					name="Root"
+					value="cd D:\home\site\wwwroot\app_data\jobs\continuous\DataIntegrityWebJob\">
+					</param>
+					<param
+					name="NetFramworkVersion"
+					value="sku=&quot;.NETFramework,Version=v4.8&quot;">
+					</param>
+					<param
+					name="Data_CleaningTool"
+					value="1.0.0">
 					</param>
 				</parameters>
 			</testcase>
@@ -4431,7 +4517,7 @@ rxversion="8.3">
 				name="eSourcePlatform">
 					<smartfoldernode
 					id="63a0768d-8632-409b-adbf-fe7850003e81"
-					name="Jackson_smokeTest">
+					name="Cricket_smokeTest">
 						<smartfoldernode
 						id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
 						name="Validate_CSP_Client&amp;Server_Versions">
@@ -4573,6 +4659,30 @@ rxversion="8.3">
 								<testmodule
 								id="8b52cf35-84a0-4b6a-9aaf-cc4103ba310a"
 								name="Logout_Azure">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="38cd509b-df54-4d3a-8b93-deb1dbf8ef89"
+							name="OpenAzur_">
+								<testmodule
+								id="09a344eb-a694-4da0-abc9-e8668a48a279"
+								name="OpenAzLocation">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="4c80919e-377f-4dfe-b67e-3fcabe8c8d09"
+							name="NetFramework">
+								<testmodule
+								id="796f0f4c-9f18-4577-ad38-ca31f71085bd"
+								name="Net_Framework">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="a9668023-1a5e-4a8e-a68a-e77061a8235c"
+							name="ValidateNetFramwork">
+								<testmodule
+								id="46eb6c72-7815-4fbe-a121-6f685ef4b154"
+								name="NetFrameworkValidation">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -4954,7 +5064,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="b77ce62f-f979-4ddc-90ac-3695cefcb4ad"
-						name="HUB&amp;DCT_Vesrions">
+						name="HUB&amp;DCT_Vesrions(Jackson)">
 							<testcase
 							id="1a3b5ec0-43ac-49d3-8ff7-d23f8a3ac01a"
 							name="DCTHubVersion">
@@ -5615,7 +5725,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Checked"
-		lastknownrowcount="51"
+		lastknownrowcount="53"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5717,7 +5827,7 @@ rxversion="8.3">
 		<DataSource
 		id="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 		includefile="Checked"
-		lastknownrowcount="2"
+		lastknownrowcount="1"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5774,7 +5884,7 @@ rxversion="8.3">
 		<DataSource
 		id="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="5"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6074,19 +6184,22 @@ rxversion="8.3">
 			id="18f18f0d-1c6a-49a8-8f92-171c724177da">
 			</testcontainer>
 			<testcontainer
-			id="1a3b5ec0-43ac-49d3-8ff7-d23f8a3ac01a">
-			</testcontainer>
-			<testcontainer
 			id="1d9928dd-974b-4bf9-b839-09c761466da1">
 			</testcontainer>
 			<testcontainer
 			id="29d7aa7d-438a-48af-9c73-c769338bb4ed">
 			</testcontainer>
 			<testcontainer
+			id="38cd509b-df54-4d3a-8b93-deb1dbf8ef89">
+			</testcontainer>
+			<testcontainer
 			id="3bfd0103-45d6-4432-bde2-361c5d3bc600">
 			</testcontainer>
 			<testcontainer
 			id="3de66789-7fb1-4996-8500-81d43a94cc32">
+			</testcontainer>
+			<testcontainer
+			id="4c80919e-377f-4dfe-b67e-3fcabe8c8d09">
 			</testcontainer>
 			<testcontainer
 			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">
@@ -6128,6 +6241,9 @@ rxversion="8.3">
 			id="a1466124-6b75-4495-a467-58b136e9ff61">
 			</testcontainer>
 			<testcontainer
+			id="a9668023-1a5e-4a8e-a68a-e77061a8235c">
+			</testcontainer>
+			<testcontainer
 			id="a9f82130-40c0-4bf2-a04c-d3b1ab9eeece">
 			</testcontainer>
 			<testcontainer
@@ -6150,9 +6266,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
-			</testcontainer>
-			<testcontainer
-			id="b77ce62f-f979-4ddc-90ac-3695cefcb4ad">
 			</testcontainer>
 			<testcontainer
 			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">

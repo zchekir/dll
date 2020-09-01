@@ -89,7 +89,10 @@ namespace CSP.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.GearIcon' at 7;7.", repo.CogstateSolutionPlatform.AddBatteryPage.GearIconInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(0));
+            Delay.Duration(800, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.GearIcon' at 7;7.", repo.CogstateSolutionPlatform.AddBatteryPage.GearIconInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddBatteryPage.GearIcon.Click("7;7", 1);
             Delay.Milliseconds(90);
             

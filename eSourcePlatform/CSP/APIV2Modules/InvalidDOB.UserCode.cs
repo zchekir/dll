@@ -130,7 +130,7 @@ namespace CSP.APIV2Modules
             Report.Log(ReportLevel.Info, AuthToken);
         	try{
 			//variable
-			string url = "https://"+ DOM +"/api/external/V2/AutomationStudy/AssessmentAttempt";
+			string url = "https://"+ DOM +"/api/external/V2/" + StudyName + "/AssessmentAttempt";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";

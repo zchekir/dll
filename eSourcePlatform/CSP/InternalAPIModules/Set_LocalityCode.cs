@@ -42,7 +42,7 @@ namespace CSP.InternalAPIModules
         public Set_LocalityCode()
         {
             id = "163069";
-            studyId = "163069";
+            studid = "163069";
             DOM = "cgst-qc-jordan.azurewebsites.net/";
             Autoken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
         }
@@ -69,16 +69,16 @@ namespace CSP.InternalAPIModules
             set { _id = value; }
         }
 
-        string _studyId;
+        string _studid;
 
         /// <summary>
-        /// Gets or sets the value of variable studyId.
+        /// Gets or sets the value of variable studid.
         /// </summary>
         [TestVariable("7efbcd7d-f756-4b11-866b-823de17ac97e")]
-        public string studyId
+        public string studid
         {
-            get { return _studyId; }
-            set { _studyId = value; }
+            get { return _studid; }
+            set { _studid = value; }
         }
 
         string _DOM;
@@ -131,7 +131,7 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            SetLocalitie_Code(id, studyId, DOM, Autoken);
+            SetLocalitie_Code(id, studid, DOM, Autoken);
             Delay.Milliseconds(0);
             
         }

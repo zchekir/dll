@@ -65,12 +65,23 @@ namespace CSP
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<AssessmentAttemptOutcomes>(response);
+				//responseObject = new JavaScriptSerializer().Deserialize<AssessmentAttemptOutcomes>(response);
+				//responseObject = new JavaScriptSerializer().Deserialize<List<AssessmentAttemptOutcomes>>(response);
+				
+				
+						// slpit
+			char[] mych = { '&', ',','?','=',':' };
+            string outcomes = response;
+            string[] compositeOutcome = outcomes.Split(mych);
+            string  composite_Outcome  = compositeOutcome[1];
+				
+				
+				
 				
 				string  Outcomes = responseObject.compositeOutcomes;
 				string  Test = responseObject.compositeOutcomes;
 				
-				Report.Log(ReportLevel.Info, "Test Outcomes:" + response );
+				Report.Log(ReportLevel.Info, "Test Outcomes:" + response);
 				
 				
 			}

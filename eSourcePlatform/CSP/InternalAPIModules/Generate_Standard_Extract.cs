@@ -43,6 +43,8 @@ namespace CSP.InternalAPIModules
         {
             DOM = "";
             AuthToken = "";
+            studid = "";
+            BatteryConfigurationReports = "";
         }
 
         /// <summary>
@@ -77,6 +79,30 @@ namespace CSP.InternalAPIModules
         {
             get { return _AuthToken; }
             set { _AuthToken = value; }
+        }
+
+        string _studid;
+
+        /// <summary>
+        /// Gets or sets the value of variable studid.
+        /// </summary>
+        [TestVariable("953bedaa-c4ee-4948-abeb-1f377d6a2b44")]
+        public string studid
+        {
+            get { return _studid; }
+            set { _studid = value; }
+        }
+
+        string _BatteryConfigurationReports;
+
+        /// <summary>
+        /// Gets or sets the value of variable BatteryConfigurationReports.
+        /// </summary>
+        [TestVariable("ecea577f-7024-4f55-8e11-1f49f457ca2d")]
+        public string BatteryConfigurationReports
+        {
+            get { return _BatteryConfigurationReports; }
+            set { _BatteryConfigurationReports = value; }
         }
 
 #endregion

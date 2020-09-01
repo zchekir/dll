@@ -43,6 +43,8 @@ namespace CSP.InternalAPIModules
         {
             DOM = "";
             AuthToken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
+            BatteryConfigurationReports = "";
+            studid = "";
         }
 
         /// <summary>
@@ -77,6 +79,30 @@ namespace CSP.InternalAPIModules
         {
             get { return _AuthToken; }
             set { _AuthToken = value; }
+        }
+
+        string _BatteryConfigurationReports;
+
+        /// <summary>
+        /// Gets or sets the value of variable BatteryConfigurationReports.
+        /// </summary>
+        [TestVariable("1c57d899-0ef2-49db-98ff-e513d5d57f3a")]
+        public string BatteryConfigurationReports
+        {
+            get { return _BatteryConfigurationReports; }
+            set { _BatteryConfigurationReports = value; }
+        }
+
+        string _studid;
+
+        /// <summary>
+        /// Gets or sets the value of variable studid.
+        /// </summary>
+        [TestVariable("f9b681c3-2555-4854-a874-18fddb21141a")]
+        public string studid
+        {
+            get { return _studid; }
+            set { _studid = value; }
         }
 
 #endregion

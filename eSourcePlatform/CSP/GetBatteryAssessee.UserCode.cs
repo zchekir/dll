@@ -73,6 +73,8 @@ namespace CSP
 				//need change this
 				string  GetBatteryAss = responseObject.name;
 				
+				
+				
 				Report.Log(ReportLevel.Info,  response);
 			}
         }

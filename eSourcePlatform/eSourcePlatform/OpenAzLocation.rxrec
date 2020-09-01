@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d82ce541-c07b-4458-8378-0fcaefdb1f51"
+mode="Global"
+rxversion="8.3">
+	<name>
+		OpenAzLocation
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenAzLocation"
+	namespace="eSourcePlatform">
+	</codegen>
+	<variables>
+		<var
+		id="9b546544-466e-46b9-bd75-1142b2bbe916"
+		name="URL">
+		</var>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="Chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Url"
+				variable="URL">
+				</binding>
+			</bindings>
+			<url>
+				http://www.ranorex.com
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="1b4df078-48fd-44ad-b314-173b9dd113af"
+	name="eSourcePlatformRepository"
+	relativepath="eSourcePlatformRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="eSourcePlatformRepository"
+		namespace="eSourcePlatform">
+		</codegen>
+		<rootfolder
+		id="d677fdb9-00e1-4467-9fce-a84c063e8bd0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenAzLocation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
