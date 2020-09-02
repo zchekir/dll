@@ -33,11 +33,6 @@ namespace RedCapCloud.General
             // Your recording specific initialization code goes here.
         }
 
-        public void Open_Browser_Open_browser()
-        { 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $RCCURL with browser 'Chrome' in normal mode.");
-            Host.Current.OpenBrowser(RCCURL, "Chrome", "", false, false, false, false, false, true);
-        }
 
         public void Validate_CGSQC(RepoItemInfo divtagInfo)
         {

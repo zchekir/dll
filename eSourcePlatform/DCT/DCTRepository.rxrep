@@ -732,6 +732,15 @@ AAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain=$AzureDOM]//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="5a04c124-696e-4361-bbca-e503c7d4cb4a"
+			name="PowerShellPrompt"
+			refimgid="355acd63-8877-4512-a5cc-d0703c9f2027"
+			searchtimeout="30000ms">
+				/dom[@domain=$AzureDOM]//div[#'KuduExecConsoleV2']/div/div/div[2]/span[@innertext='PS D:\home&gt; ']
+			</item>
 			<basepath>
 				/dom[@domain=$AzureDOM]
 			</basepath>

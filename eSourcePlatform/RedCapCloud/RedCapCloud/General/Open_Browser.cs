@@ -128,14 +128,11 @@ namespace RedCapCloud.General
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $RCCURL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
-            //Host.Current.OpenBrowser(RCCURL, Browser, "", false, true, false, false, false, true);
-            //Delay.Milliseconds(0);
-            
-            Open_Browser_Open_browser();
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $RCCURL with browser specified by variable $Browser in maximized mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(RCCURL, Browser, "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(1));
             Delay.Duration(4000, false);
             
             Validate_CGSQC1(repo.REDCapCloud.SitesTable.CGSQCInfo, qc);

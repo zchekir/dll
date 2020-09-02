@@ -303,6 +303,14 @@ rxversion="8.3">
 					name="AssessmentURL"
 					value="">
 					</param>
+					<param
+					name="workflowAuthToken"
+					value="">
+					</param>
+					<param
+					name="workflowInstanceId"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<smartfoldernode
@@ -1935,8 +1943,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="7eb647ac-fff1-427a-a00c-fb97f0647f07"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Regression">
 			</smartfoldernode>
 			<testmodule
@@ -2918,6 +2926,18 @@ rxversion="8.3">
 					datasourceid="c75408c7-6f28-40e4-99db-5081560f7749"
 					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
 					variablename="Mode">
+					</var>
+					<var
+					dataname="workflowAuthToken"
+					datasourceid="16497588-c5a2-4ae8-9607-36b6dd5cd974"
+					variableid="db9fb9f3-37be-4e92-b0f5-999f6407f381"
+					variablename="workflowAuthToken">
+					</var>
+					<var
+					dataname="workflowInstanceId"
+					datasourceid="16497588-c5a2-4ae8-9607-36b6dd5cd974"
+					variableid="de52f5d1-b544-4f72-9206-1d2571bad1c5"
+					variablename="workflowInstanceId">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5456,7 +5476,7 @@ rxversion="8.3">
 		<DataSource
 		id="08a80ef6-78fa-4acc-8d35-6e571773da36"
 		includefile="Unchecked"
-		lastknownrowcount="5"
+		lastknownrowcount="4"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

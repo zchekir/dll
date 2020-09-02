@@ -33,15 +33,24 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="60000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="c68e80dc-d0e4-425b-a5ba-6e11fae54c13"
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="5cafea12-8dac-456b-af85-df1546dac229"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//button[#'skip']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<userrecorditem
 		classname="Upload_RawData"
 		enabled="True"
@@ -70,7 +79,7 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<explicitdelayitem
-		duration="30000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>
