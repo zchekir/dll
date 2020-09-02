@@ -102,14 +102,14 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            Delay.Duration(60000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton'", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo.WaitForExists(60000);
             
             AddRawData(Filename);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(2));
-            Delay.Duration(30000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton' at Center.", repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButtonInfo, new RecordItemIndex(3));
             repo.CogstateSolutionPlatform.WorkflowRunner.BatterySkipButton.MoveTo();

@@ -1803,6 +1803,7 @@ namespace DCT
             RepoItemInfo _dctvalidationversionInfo;
             RepoItemInfo _rcchubvalidationInfo;
             RepoItemInfo _rcc_hubpowershallInfo;
+            RepoItemInfo _powershellpromptInfo;
 
             /// <summary>
             /// Creates a new KuduServices  folder.
@@ -1818,6 +1819,7 @@ namespace DCT
                 _dctvalidationversionInfo = new RepoItemInfo(this, "DCTValidationVersion", ".//div[@innertext~'1.2']", 30000, null, "49370b0d-946f-4152-89ea-e31cf4c37984");
                 _rcchubvalidationInfo = new RepoItemInfo(this, "RCCHubValidation", ".//div[@innertext~'2.0.1-rc']", 30000, null, "ed9435cd-5012-46e1-a260-05d5ba9de604");
                 _rcc_hubpowershallInfo = new RepoItemInfo(this, "rcc_hubPowerShall", ".//div[#'KuduExecConsoleV2']/div/div/div[10]/?/?/span", 30000, null, "87776a16-3265-49f0-8531-9f13f44dcc65");
+                _powershellpromptInfo = new RepoItemInfo(this, "PowerShellPrompt", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/span[@innertext='PS D:\\home> ']", 30000, null, "5a04c124-696e-4361-bbca-e503c7d4cb4a");
             }
 
             /// <summary>
@@ -2033,6 +2035,30 @@ namespace DCT
                 get
                 {
                     return _rcc_hubpowershallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PowerShellPrompt item.
+            /// </summary>
+            [RepositoryItem("5a04c124-696e-4361-bbca-e503c7d4cb4a")]
+            public virtual Ranorex.SpanTag PowerShellPrompt
+            {
+                get
+                {
+                    return _powershellpromptInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PowerShellPrompt item info.
+            /// </summary>
+            [RepositoryItemInfo("5a04c124-696e-4361-bbca-e503c7d4cb4a")]
+            public virtual RepoItemInfo PowerShellPromptInfo
+            {
+                get
+                {
+                    return _powershellpromptInfo;
                 }
             }
         }
