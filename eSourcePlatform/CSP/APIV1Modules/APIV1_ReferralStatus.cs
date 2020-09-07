@@ -42,7 +42,7 @@ namespace CSP.APIV1Modules
         public APIV1_ReferralStatus()
         {
             visitsession = "110872";
-            DOM = "cgst-qc-orr.azurewebsites.net";
+            CSPDOM = "cgst-qc-orr.azurewebsites.net";
             externalId = "7086092750633861";
             AuthToken = "ZAvudGtQyt5MfdxdAVGRCDnLBR0yoUJDdkE0mEpzdYc7OCHXLHfgFRMZXsrOZb-p";
         }
@@ -69,18 +69,6 @@ namespace CSP.APIV1Modules
             set { _visitsession = value; }
         }
 
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("3f1a37b1-0a7c-4ea0-8f2f-bae9b206051a")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
         string _externalId;
 
         /// <summary>
@@ -103,6 +91,16 @@ namespace CSP.APIV1Modules
         {
             get { return _AuthToken; }
             set { _AuthToken = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("3f1a37b1-0a7c-4ea0-8f2f-bae9b206051a")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion
@@ -131,7 +129,7 @@ namespace CSP.APIV1Modules
 
             Init();
 
-            StatusReferral(visitsession, DOM, externalId, AuthToken);
+            StatusReferral(visitsession, CSPDOM, externalId, AuthToken);
             Delay.Milliseconds(0);
             
         }

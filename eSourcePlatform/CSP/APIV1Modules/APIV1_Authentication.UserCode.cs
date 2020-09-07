@@ -73,9 +73,9 @@ namespace CSP.APIV1Modules
 				//Deserialise the JSON in a new object to use later
 				responseObject = new JavaScriptSerializer().Deserialize<V1AuthJSONResponse>(response);
 				
-				authToken = responseObject.serverAuthToken;
+				AuthToken = responseObject.serverAuthToken;
 				
-				Report.Log(ReportLevel.Info, "Authentication Successfull, AuthToken is: " + authToken);
+				Report.Log(ReportLevel.Info, "Authentication Successfull, AuthToken is: " + AuthToken);
 			}
 		}
 

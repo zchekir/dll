@@ -42,8 +42,8 @@ namespace ReportingLayer.Database
         public Validate_AcademicExtract_View()
         {
             Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
+            dbPassword = "";
+            dbUsername = "";
             DBServer = "";
             Database = "";
             StudyName = "";
@@ -73,16 +73,28 @@ namespace ReportingLayer.Database
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("29062611-e2e2-401e-8762-b601727ca4f3")]
-        public string CSPPassword
+        public string dbPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("6bfefd8c-e52b-4b8f-887d-3ec70abdc8f5")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
         string _DBServer;
@@ -145,16 +157,6 @@ namespace ReportingLayer.Database
             set { _TestIdentifier = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("6bfefd8c-e52b-4b8f-887d-3ec70abdc8f5")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -181,7 +183,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAcademicExtract(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetAcademicExtract(Database, DBServer, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();

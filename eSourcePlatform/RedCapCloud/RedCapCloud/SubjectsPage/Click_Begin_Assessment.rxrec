@@ -126,21 +126,30 @@ n1oyfWiigAyfWo5YIp8edEkm3pvUHH50UUwFiijhUrCixqTnCjAzT8n1oopAGT60ZPrRRQAZPrRk
 +tFFABk+tGT60UUAGT60ZPrRRQB//9k=
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="10000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="b509f92d-8d9e-411a-a244-bfd370ccd7d6"
+		waitaction="Exists"
+		waittimeout="90000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="2733c1b9-9132-48ed-b7d1-f8a8248afe60"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RCCDOM]//iframe//button[#'instructions_button']
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
 	name="RedCapCloudRepository"
 	relativepath="..\RedCapCloudRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="RedCapCloudRepository"
 		namespace="RedCapCloud">

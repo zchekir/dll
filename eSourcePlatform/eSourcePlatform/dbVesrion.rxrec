@@ -29,33 +29,29 @@ rxversion="8.3">
 	<variables>
 		<var
 		id="9fc1af2f-1dc1-49a0-9b6f-0d09f4d2003a"
-		name="dbserver">
+		name="DBServer">
 			cgst-qc.database.windows.net
 		</var>
 		<var
 		id="1a595276-696f-4e41-9078-3fce1faf921e"
-		name="database">
-			cgst-jordan-api
+		name="Database">
 		</var>
 		<var
 		id="82894740-5436-4afa-b8cc-90919f7c85b9"
-		name="username">
-			zchekir@Cogstate.com
+		name="dbUsername">
 		</var>
 		<var
 		id="ae8db081-4103-4726-b276-f3e40a954d33"
-		name="password">
-			Cogstate2016
+		name="dbPassword">
 		</var>
 		<var
 		id="deb7354b-cbb0-48b0-85c1-e4230c271042"
-		name="authentication">
+		name="Authentication">
 			Active Directory Password
 		</var>
 		<var
 		id="6df7ce63-5fc2-47cd-b5e4-a4b8159f4e33"
 		name="MigrationId">
-			001011_202001161431399_PRD-2691
 		</var>
 	</variables>
 	<recorditems>
@@ -76,7 +72,7 @@ rxversion="8.3">
 				<argument
 				argname="dbserver"
 				id="eca2ae94-257f-4975-bc8f-1c508632ae5f"
-				variable="dbserver">
+				variable="DBServer">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -86,7 +82,7 @@ rxversion="8.3">
 				<argument
 				argname="database"
 				id="72ab83df-0140-4418-b1be-19f79c97b86d"
-				variable="database">
+				variable="Database">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -96,7 +92,7 @@ rxversion="8.3">
 				<argument
 				argname="username"
 				id="0ddab98a-a84d-4d0d-b74e-bad2d47aacd1"
-				variable="username">
+				variable="dbUsername">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -106,7 +102,7 @@ rxversion="8.3">
 				<argument
 				argname="password"
 				id="50b006fd-ce4c-46b6-98ed-9a4a356335df"
-				variable="password">
+				variable="dbPassword">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -116,7 +112,7 @@ rxversion="8.3">
 				<argument
 				argname="authentication"
 				id="33536e9f-3484-4c2e-b523-4e7b5348e3e8"
-				variable="authentication">
+				variable="Authentication">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

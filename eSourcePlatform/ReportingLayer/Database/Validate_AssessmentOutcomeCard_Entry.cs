@@ -42,12 +42,12 @@ namespace ReportingLayer.Database
         public Validate_AssessmentOutcomeCard_Entry()
         {
             Authentication = "Active Directory Password";
-            CSPPassword = "";
-            CSPUsername = "";
+            dbPassword = "";
+            dbUsername = "";
             DBServer = "";
             Database = "";
             TestIdentifier = "dd3bf436-1219-4c18-bbc0-0cb1d7236b34";
-            StudyName = "ZAK PRD 75 BT";
+            StudyName = "";
             RandNum = "";
         }
 
@@ -73,16 +73,28 @@ namespace ReportingLayer.Database
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("b7674a38-92dc-4332-a07c-8de8bd7806e0")]
-        public string CSPPassword
+        public string dbPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("e027354c-c09f-4cb8-b873-7eff666f5ada")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
         string _DBServer;
@@ -145,16 +157,6 @@ namespace ReportingLayer.Database
             set { _RandNum = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("e027354c-c09f-4cb8-b873-7eff666f5ada")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -181,7 +183,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAssessmentTestOutcomesCard(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetAssessmentTestOutcomesCard(Database, DBServer, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();

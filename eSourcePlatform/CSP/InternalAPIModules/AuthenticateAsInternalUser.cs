@@ -42,8 +42,8 @@ namespace CSP.InternalAPIModules
         public AuthenticateAsInternalUser()
         {
             DOM = "cgst-qcpd.azurewebsites.net";
-            InternalUsername = "zchekir@cogstate.com";
-            InternalPassword = "Darys2010";
+            InternalUsername = "";
+            InternalPassword = "";
             Portal = "DefaultPortal";
         }
 

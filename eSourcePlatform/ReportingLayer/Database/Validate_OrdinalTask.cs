@@ -42,8 +42,8 @@ namespace ReportingLayer.Database
         public Validate_OrdinalTask()
         {
             Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
+            dbPassword = "";
+            dbUsername = "";
             DBServer = "";
             Database = "";
             TestIdentifier = "";
@@ -71,16 +71,28 @@ namespace ReportingLayer.Database
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("a0edb125-8022-433a-b807-b735e01f7cf5")]
-        public string CSPPassword
+        public string dbPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("5da9dd7f-0f52-42b3-91d8-0b1f9136643b")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
         string _DBServer;
@@ -119,16 +131,6 @@ namespace ReportingLayer.Database
             set { _TestIdentifier = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("5da9dd7f-0f52-42b3-91d8-0b1f9136643b")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -155,7 +157,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetOrdinalTask(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetOrdinalTask(Database, DBServer, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();

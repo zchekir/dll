@@ -41,12 +41,12 @@ namespace eSourcePlatform
         /// </summary>
         public dbVesrion()
         {
-            dbserver = "cgst-qc.database.windows.net";
-            database = "cgst-jordan-api";
-            username = "zchekir@Cogstate.com";
-            password = "Cogstate2016";
-            authentication = "Active Directory Password";
-            MigrationId = "001011_202001161431399_PRD-2691";
+            DBServer = "cgst-qc.database.windows.net";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            Authentication = "Active Directory Password";
+            MigrationId = "";
         }
 
         /// <summary>
@@ -59,64 +59,64 @@ namespace eSourcePlatform
 
 #region Variables
 
-        string _dbserver;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable dbserver.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
         [TestVariable("9fc1af2f-1dc1-49a0-9b6f-0d09f4d2003a")]
-        public string dbserver
+        public string DBServer
         {
-            get { return _dbserver; }
-            set { _dbserver = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _database;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable database.
+        /// Gets or sets the value of variable Database.
         /// </summary>
         [TestVariable("1a595276-696f-4e41-9078-3fce1faf921e")]
-        public string database
+        public string Database
         {
-            get { return _database; }
-            set { _database = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _username;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable username.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
         [TestVariable("82894740-5436-4afa-b8cc-90919f7c85b9")]
-        public string username
+        public string dbUsername
         {
-            get { return _username; }
-            set { _username = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _password;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable password.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("ae8db081-4103-4726-b276-f3e40a954d33")]
-        public string password
+        public string dbPassword
         {
-            get { return _password; }
-            set { _password = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
-        string _authentication;
+        string _Authentication;
 
         /// <summary>
-        /// Gets or sets the value of variable authentication.
+        /// Gets or sets the value of variable Authentication.
         /// </summary>
         [TestVariable("deb7354b-cbb0-48b0-85c1-e4230c271042")]
-        public string authentication
+        public string Authentication
         {
-            get { return _authentication; }
-            set { _authentication = value; }
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
         string _MigrationId;
@@ -157,7 +157,7 @@ namespace eSourcePlatform
 
             Init();
 
-            CSPDB_Version(dbserver, database, username, password, authentication, MigrationId);
+            CSPDB_Version(DBServer, Database, dbUsername, dbPassword, Authentication, MigrationId);
             Delay.Milliseconds(0);
             
         }

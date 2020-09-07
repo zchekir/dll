@@ -29,33 +29,29 @@ rxversion="8.3">
 	<variables>
 		<var
 		id="dee25264-d606-41ca-bf0f-9efe134b8991"
-		name="dbserver">
+		name="DBServer">
 			cgst-qc.database.windows.net
 		</var>
 		<var
 		id="501de4e3-4fde-45a1-8e39-f50da8cccb6a"
-		name="database">
-			cgst-bear-api
+		name="Database">
 		</var>
 		<var
 		id="c842c4af-9cbc-4c54-8fbe-f573a02dbdb8"
-		name="username">
-			zchekir@cogstate.com
+		name="dbUsername">
 		</var>
 		<var
 		id="d6df326c-c955-4056-82a3-583d328b2603"
-		name="password">
-			Cogstate2016
+		name="dbPassword">
 		</var>
 		<var
 		id="ec3dc429-d49f-4980-9287-23711c36c87d"
-		name="authentication">
+		name="Authentication">
 			Active Directory Password
 		</var>
 		<var
 		id="9fae6d08-a73d-4b7a-be99-a84a17d24ddc"
 		name="TestIdentifier">
-			E00C148B-3D73-44E0-8AC9-024C50AB397B
 		</var>
 		<var
 		id="7cd6ee47-6bb8-4f3c-bbf7-0129f1e13b30"
@@ -91,7 +87,7 @@ rxversion="8.3">
 				<argument
 				argname="dbserver"
 				id="dd32e311-73ad-4a5c-b7c3-d11669cdfd5d"
-				variable="dbserver">
+				variable="DBServer">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -101,7 +97,7 @@ rxversion="8.3">
 				<argument
 				argname="database"
 				id="b80369bf-d7a7-48ff-8dbf-3c017d0383ad"
-				variable="database">
+				variable="Database">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -111,7 +107,7 @@ rxversion="8.3">
 				<argument
 				argname="username"
 				id="fbf4eafb-1b23-454c-a0b6-b63acf53eb41"
-				variable="username">
+				variable="dbUsername">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -121,7 +117,7 @@ rxversion="8.3">
 				<argument
 				argname="password"
 				id="7a5a7baa-d6bc-401f-b93d-d144c9f52fb3"
-				variable="password">
+				variable="dbPassword">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -131,7 +127,7 @@ rxversion="8.3">
 				<argument
 				argname="authentication"
 				id="4fd7dd73-2acc-4a1f-8472-290bd82b294d"
-				variable="authentication">
+				variable="Authentication">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

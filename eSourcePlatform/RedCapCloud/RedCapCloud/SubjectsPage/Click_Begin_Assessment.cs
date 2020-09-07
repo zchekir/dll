@@ -93,8 +93,8 @@ namespace RedCapCloud.SubjectsPage
             repo.REDCapCloud.SubjectsPage.BeginAssessmentButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(1));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1.5m to exist. Associated repository item: 'REDCapCloud.iFrame.StartButton'", repo.REDCapCloud.iFrame.StartButtonInfo, new ActionTimeout(90000), new RecordItemIndex(1));
+            repo.REDCapCloud.iFrame.StartButtonInfo.WaitForExists(90000);
             
         }
 
