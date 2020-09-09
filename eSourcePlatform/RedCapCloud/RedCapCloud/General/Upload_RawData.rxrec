@@ -33,15 +33,24 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="90000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="b1125c41-0609-4eb2-a37b-38e729cb2d7e"
+		waitaction="Exists"
+		waittimeout="90000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="cafd57f8-e692-4bcb-9ecd-62f182e0f4b3"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RCCDOM]//iframe//button[#'skip']
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<userrecorditem
 		classname="Upload_RawData"
 		enabled="True"
@@ -102,7 +111,7 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="7000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>

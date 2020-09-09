@@ -29,23 +29,23 @@ rxversion="8.3">
 	<variables>
 		<var
 		id="e30df5ce-bb9b-4c65-b1e2-a4a008cc1146"
-		name="dbserver">
+		name="DBServer">
 		</var>
 		<var
 		id="131d28c1-cc19-467e-8406-64b6627d8f31"
-		name="database">
+		name="Database">
 		</var>
 		<var
 		id="14997179-7b27-4906-8150-c3eca34fd890"
-		name="username">
+		name="dbUsername">
 		</var>
 		<var
 		id="366b1ce5-fc61-4dfd-bd08-2db31ad9ccfe"
-		name="password">
+		name="dbPassword">
 		</var>
 		<var
 		id="47a979f2-c216-4bd0-9246-62e6acad58bf"
-		name="authentication">
+		name="Authentication">
 		</var>
 		<var
 		id="7308e40f-24b0-40ee-8222-c125fad9c5de"
@@ -67,6 +67,66 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="498beb40-16e7-46d3-9fc3-c5902fb32b27">
+				<argument
+				argname="dbserver"
+				id="880c2b94-a303-4a91-a10c-29b2c0695c86"
+				variable="DBServer">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="database"
+				id="951a0d75-8d65-4707-bff4-492683041292"
+				variable="Database">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="password"
+				id="f467f038-eaec-429d-958e-37984a721ba1"
+				variable="dbPassword">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="username"
+				id="e87a92d1-3ea6-4ca9-b15b-d98e02164e74"
+				variable="dbUsername">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="authentication"
+				id="4f551398-17ea-42ca-9ff3-abe2bed2a331"
+				variable="Authentication">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="migrationid"
+				id="0780c9ab-aa8a-423f-9c2f-3a350ec90cd2"
+				variable="migrationid">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 	</recorditems>

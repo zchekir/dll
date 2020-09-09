@@ -89,8 +89,8 @@ namespace CSP.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'CogstateSolutionPlatform.ReportsPage.GenerateReportButton'", repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.ReportsPage.GenerateReportButton'", repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo.WaitForExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ReportsPage.GenerateReportButton' at Center.", repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButtonInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.ReportsPage.GenerateReportButton.Click(1);

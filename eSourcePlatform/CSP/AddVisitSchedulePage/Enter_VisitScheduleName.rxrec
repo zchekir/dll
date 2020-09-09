@@ -103,29 +103,6 @@ rxversion="8.3">
 				</path>
 			</info>
 		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="100ms"
-		enabled="False"
-		optional="False"
-		presstime="1ms"
-		searchpropertyid="3a0256dc-71a5-4e82-8609-70a1f27cde56">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="RandNum">
-				</binding>
-			</bindings>
-			<info
-			id="017929db-0819-4638-9295-0f6a5db95999"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_name_0']
-				</path>
-			</info>
-		</keysequenceitem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -137,33 +114,6 @@ rxversion="8.3">
 				<binding
 				target="MatchValue"
 				variable="VisitScheduleName">
-				</binding>
-			</bindings>
-			<info
-			id="017929db-0819-4638-9295-0f6a5db95999"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain=$DOM]//input[@id~'formly_[0-9]+_input_name_0']
-				</path>
-			</info>
-			<matchname>
-				Value
-			</matchname>
-			<matchvalue>
-				yourValue
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="False"
-		optional="False"
-		searchpropertyid="2af6ad16-50c3-4e07-a6a1-a94e72529b2e">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="RandNum">
 				</binding>
 			</bindings>
 			<info

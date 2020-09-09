@@ -123,17 +123,9 @@ namespace CSP.AddVisitSchedulePage
             repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys(VisitScheduleName, 1);
             Delay.Milliseconds(90);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$RandNum' with focus on 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(3));
-            //repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField.PressKeys(RandNum, 1);
-            //Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$VisitScheduleName) on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$VisitScheduleName) on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, "Value", VisitScheduleName);
             Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Value>$RandNum) on item 'CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameField'.", repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, new RecordItemIndex(5));
-            //Validate.AttributeContains(repo.CogstateSolutionPlatform.AddVisitSchedulePage.VisitScheduleNameFieldInfo, "Value", RandNum);
-            //Delay.Milliseconds(0);
             
         }
 

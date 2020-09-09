@@ -29,15 +29,24 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="800ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="6b1cbd24-95b5-4155-9a34-62a4148f7ed9"
+		waitaction="Exists"
+		waittimeout="5000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="aa49e337-bbf8-4fff-9d3e-844cabe5bf90"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-generic-simple-edit']//tag[@tagname='ng-form']//i
+				</path>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"

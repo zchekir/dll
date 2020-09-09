@@ -41,7 +41,7 @@ namespace DCT.Single_Sign_In
         /// </summary>
         public Enter_Email()
         {
-            DCT_USERNAME = "";
+            CSPUsername = "";
         }
 
         /// <summary>
@@ -54,16 +54,14 @@ namespace DCT.Single_Sign_In
 
 #region Variables
 
-        string _DCT_USERNAME;
-
         /// <summary>
-        /// Gets or sets the value of variable DCT_USERNAME.
+        /// Gets or sets the value of variable CSPUsername.
         /// </summary>
         [TestVariable("d0e07d16-6eb8-40a3-aa90-8b3a394a6391")]
-        public string DCT_USERNAME
+        public string CSPUsername
         {
-            get { return _DCT_USERNAME; }
-            set { _DCT_USERNAME = value; }
+            get { return repo.CSPUsername; }
+            set { repo.CSPUsername = value; }
         }
 
 #endregion
@@ -92,8 +90,8 @@ namespace DCT.Single_Sign_In
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCT_USERNAME' with focus on 'SignInToYourAccount.EnterUserNameField'.", repo.SignInToYourAccount.EnterUserNameFieldInfo, new RecordItemIndex(0));
-            repo.SignInToYourAccount.EnterUserNameField.PressKeys(DCT_USERNAME);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPUsername' with focus on 'SignInToYourAccount.EnterUserNameField'.", repo.SignInToYourAccount.EnterUserNameFieldInfo, new RecordItemIndex(0));
+            repo.SignInToYourAccount.EnterUserNameField.PressKeys(CSPUsername);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'SignInToYourAccount.EnterUserNameField'.", repo.SignInToYourAccount.EnterUserNameFieldInfo, new RecordItemIndex(1));

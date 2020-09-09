@@ -41,11 +41,11 @@ namespace eSourcePlatform
         /// </summary>
         public ReportingDBVersion()
         {
-            dbserver = "";
-            database = "";
-            username = "";
-            password = "";
-            authentication = "";
+            DBServer = "";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            Authentication = "";
             migrationid = "";
         }
 
@@ -59,64 +59,64 @@ namespace eSourcePlatform
 
 #region Variables
 
-        string _dbserver;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable dbserver.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
         [TestVariable("e30df5ce-bb9b-4c65-b1e2-a4a008cc1146")]
-        public string dbserver
+        public string DBServer
         {
-            get { return _dbserver; }
-            set { _dbserver = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _database;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable database.
+        /// Gets or sets the value of variable Database.
         /// </summary>
         [TestVariable("131d28c1-cc19-467e-8406-64b6627d8f31")]
-        public string database
+        public string Database
         {
-            get { return _database; }
-            set { _database = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _username;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable username.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
         [TestVariable("14997179-7b27-4906-8150-c3eca34fd890")]
-        public string username
+        public string dbUsername
         {
-            get { return _username; }
-            set { _username = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _password;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable password.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("366b1ce5-fc61-4dfd-bd08-2db31ad9ccfe")]
-        public string password
+        public string dbPassword
         {
-            get { return _password; }
-            set { _password = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
-        string _authentication;
+        string _Authentication;
 
         /// <summary>
-        /// Gets or sets the value of variable authentication.
+        /// Gets or sets the value of variable Authentication.
         /// </summary>
         [TestVariable("47a979f2-c216-4bd0-9246-62e6acad58bf")]
-        public string authentication
+        public string Authentication
         {
-            get { return _authentication; }
-            set { _authentication = value; }
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
         string _migrationid;
@@ -157,7 +157,7 @@ namespace eSourcePlatform
 
             Init();
 
-            ReportingDB_Version();
+            ReportingDB_Version(DBServer, Database, dbPassword, dbUsername, Authentication, migrationid);
             Delay.Milliseconds(0);
             
         }

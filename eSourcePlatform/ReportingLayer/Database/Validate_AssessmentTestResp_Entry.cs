@@ -42,8 +42,8 @@ namespace ReportingLayer.Database
         public Validate_AssessmentTestResp_Entry()
         {
             Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
+            dbPassword = "";
+            dbUsername = "";
             DBServer = "";
             Database = "";
             TestIdentifier = "";
@@ -73,16 +73,28 @@ namespace ReportingLayer.Database
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("aa89e0ef-5675-4392-8fc5-0a58c7ebb974")]
-        public string CSPPassword
+        public string dbPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("99548895-005c-4e85-bc13-58a769f57360")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
         string _DBServer;
@@ -145,16 +157,6 @@ namespace ReportingLayer.Database
             set { _StudyName = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("99548895-005c-4e85-bc13-58a769f57360")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -181,7 +183,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAssessment(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetAssessment(Database, DBServer, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecord();

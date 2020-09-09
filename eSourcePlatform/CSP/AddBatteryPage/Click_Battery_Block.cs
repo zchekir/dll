@@ -89,8 +89,8 @@ namespace CSP.AddBatteryPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
-            Delay.Duration(60000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock'", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlockInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddBatteryPage.FirstBatteryBlock.MoveTo();

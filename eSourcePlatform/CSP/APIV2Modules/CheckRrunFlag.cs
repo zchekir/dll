@@ -41,11 +41,11 @@ namespace CSP.APIV2Modules
         /// </summary>
         public CheckRrunFlag()
         {
-            dbserver = "cgst-qc.database.windows.net";
-            database = "cgst-bear-api";
-            username = "zchekir@cogstate.com";
-            password = "Mamine2010@@";
-            ExternalID = "498810";
+            DBServer = "cgst-qc.database.windows.net";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            ExternalID = "";
             Authentication = "Active Directory Password";
         }
 
@@ -59,52 +59,52 @@ namespace CSP.APIV2Modules
 
 #region Variables
 
-        string _dbserver;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable dbserver.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
         [TestVariable("0502a8f9-2e49-49a7-a1b5-998c1f0c66cb")]
-        public string dbserver
+        public string DBServer
         {
-            get { return _dbserver; }
-            set { _dbserver = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _database;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable database.
+        /// Gets or sets the value of variable Database.
         /// </summary>
         [TestVariable("212a9155-795a-426f-b0de-503e1dce769f")]
-        public string database
+        public string Database
         {
-            get { return _database; }
-            set { _database = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _username;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable username.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
         [TestVariable("d36b3ff7-5f95-4501-bfda-c8b5c180e548")]
-        public string username
+        public string dbUsername
         {
-            get { return _username; }
-            set { _username = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _password;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable password.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("7abe048e-cc2d-49e5-8b2e-95594a505c78")]
-        public string password
+        public string dbPassword
         {
-            get { return _password; }
-            set { _password = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
         string _ExternalID;
@@ -157,7 +157,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            RrunFlag(dbserver, database, username, password, Authentication, ExternalID);
+            RrunFlag(DBServer, Database, dbUsername, dbPassword, Authentication, ExternalID);
             Delay.Milliseconds(0);
             
         }

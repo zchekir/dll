@@ -122,8 +122,8 @@ namespace CSP.APIV2Modules
             
             Report.Log(ReportLevel.Info, "User", "Waiting for Assets to load", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.StartInstructions'", repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo, new ActionTimeout(60000), new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1.5m to exist. Associated repository item: 'CogstateSolutionPlatform.WorkflowRunner.StartInstructions'", repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo, new ActionTimeout(90000), new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.WorkflowRunner.StartInstructionsInfo.WaitForExists(90000);
             
         }
 

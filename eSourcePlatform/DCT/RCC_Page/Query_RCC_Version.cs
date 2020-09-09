@@ -102,8 +102,8 @@ namespace DCT.RCC_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.rcc_hubPowerShall' at Center.", repo.KuduServices.rcc_hubPowerShallInfo, new RecordItemIndex(1));
             repo.KuduServices.rcc_hubPowerShall.Click();
@@ -116,9 +116,6 @@ namespace DCT.RCC_Page
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
             Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(4));
-            //Delay.Duration(15000, false);
             
         }
 

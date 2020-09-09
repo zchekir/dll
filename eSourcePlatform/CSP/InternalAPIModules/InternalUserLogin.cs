@@ -41,7 +41,7 @@ namespace CSP.InternalAPIModules
         /// </summary>
         public InternalUserLogin()
         {
-            DOM = "";
+            CSPDOM = "";
             username = "";
             password = "";
             portal = "";
@@ -57,18 +57,6 @@ namespace CSP.InternalAPIModules
         }
 
 #region Variables
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("3ae820f3-cb8f-4e51-af3b-138594b47045")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
 
         string _username;
 
@@ -116,6 +104,16 @@ namespace CSP.InternalAPIModules
         {
             get { return _I_AuthToken; }
             set { _I_AuthToken = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("3ae820f3-cb8f-4e51-af3b-138594b47045")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion

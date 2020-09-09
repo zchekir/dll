@@ -43,8 +43,8 @@ namespace ReportingLayer.Database
         {
             Database = "";
             DBServer = "";
-            CSPUsername = "";
-            CSPPassword = "";
+            dbUsername = "";
+            dbPassword = "";
             Authentication = "";
             StudyName = "";
             RandNum = "";
@@ -84,16 +84,28 @@ namespace ReportingLayer.Database
             set { _DBServer = value; }
         }
 
-        string _CSPPassword;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("8553e68c-e628-4a61-8dd5-0fc636f890dc")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
+        }
+
+        string _dbPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("a36a024c-eb85-4867-a61b-30f2590ccdf5")]
-        public string CSPPassword
+        public string dbPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
         string _Authentication;
@@ -132,16 +144,6 @@ namespace ReportingLayer.Database
             set { _RandNum = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("8553e68c-e628-4a61-8dd5-0fc636f890dc")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -168,7 +170,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetSubject(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetSubject(Database, DBServer, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecord();

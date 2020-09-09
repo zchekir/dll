@@ -102,22 +102,25 @@ namespace DCT.DCT_Page
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
-            Delay.Duration(10000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'KuduServices.PowerShellConsol'", repo.KuduServices.PowerShellConsolInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.KuduServices.PowerShellConsolInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShellConsol' at Center.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'KuduServices.PowerShellPrompt'", repo.KuduServices.PowerShellPromptInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.KuduServices.PowerShellPromptInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KuduServices.PowerShellConsol' at Center.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(2));
             repo.KuduServices.PowerShellConsol.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVersionQuery' with focus on 'KuduServices.PowerShellConsol'.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DCTVersionQuery' with focus on 'KuduServices.PowerShellConsol'.", repo.KuduServices.PowerShellConsolInfo, new RecordItemIndex(3));
             repo.KuduServices.PowerShellConsol.PressKeys(DCTVersionQuery, 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}'.", new RecordItemIndex(4));
             Keyboard.Press("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
             Delay.Duration(2000, false);
             
         }

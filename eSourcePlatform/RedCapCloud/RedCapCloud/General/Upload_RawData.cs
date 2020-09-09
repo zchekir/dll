@@ -102,8 +102,8 @@ namespace RedCapCloud.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1.5m.", new RecordItemIndex(0));
-            Delay.Duration(90000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1.5m to exist. Associated repository item: 'REDCapCloud.iFrame.SkipButton'", repo.REDCapCloud.iFrame.SkipButtonInfo, new ActionTimeout(90000), new RecordItemIndex(0));
+            repo.REDCapCloud.iFrame.SkipButtonInfo.WaitForExists(90000);
             
             AddRawData(DataFile);
             Delay.Milliseconds(0);
@@ -115,8 +115,8 @@ namespace RedCapCloud.General
             repo.REDCapCloud.iFrame.SkipButton.Click(100);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(4));
-            Delay.Duration(7000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
+            Delay.Duration(5000, false);
             
         }
 
