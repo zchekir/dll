@@ -42,8 +42,8 @@ namespace ReportingLayer.Database
         public Validate_Assessment_Entry()
         {
             Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
+            dbPassword = "";
+            dbUsername = "";
             Database = "";
             DBServer = "";
             RandNum = "";
@@ -73,16 +73,28 @@ namespace ReportingLayer.Database
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("d93e385a-42d1-4e04-a8b9-cee77e09c97e")]
-        public string CSPPassword
+        public string dbPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("56556a77-bafc-435d-8934-f53bb5510593")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
         string _Database;
@@ -145,16 +157,6 @@ namespace ReportingLayer.Database
             set { _TestIdentifier = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("56556a77-bafc-435d-8934-f53bb5510593")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -181,7 +183,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAssessment(DBServer, Database, CSPUsername, CSPPassword, Authentication);
+            GetAssessment(DBServer, Database, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecord();

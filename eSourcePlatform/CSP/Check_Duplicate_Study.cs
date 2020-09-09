@@ -41,10 +41,10 @@ namespace CSP
         /// </summary>
         public Check_Duplicate_Study()
         {
-            dbserver = "";
-            database = "";
-            username = "";
-            password = "";
+            DBServer = "";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
             Authentication = "";
         }
 
@@ -58,52 +58,52 @@ namespace CSP
 
 #region Variables
 
-        string _dbserver;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable dbserver.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
         [TestVariable("fbd8c746-8dee-40e2-a25e-7d4650ede54b")]
-        public string dbserver
+        public string DBServer
         {
-            get { return _dbserver; }
-            set { _dbserver = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _database;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable database.
+        /// Gets or sets the value of variable Database.
         /// </summary>
         [TestVariable("a59ffc6d-d062-472f-94aa-c95b29f1f338")]
-        public string database
+        public string Database
         {
-            get { return _database; }
-            set { _database = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _username;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable username.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
         [TestVariable("886557f5-2eb8-4294-b581-d4f9918c3dc4")]
-        public string username
+        public string dbUsername
         {
-            get { return _username; }
-            set { _username = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _password;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable password.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("f0140580-8190-4863-8035-81d6f1f5202e")]
-        public string password
+        public string dbPassword
         {
-            get { return _password; }
-            set { _password = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
         string _Authentication;
@@ -144,7 +144,7 @@ namespace CSP
 
             Init();
 
-            StudyDupplicationTest(dbserver, database, username, password, Authentication);
+            StudyDupplicationTest(DBServer, Database, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
         }

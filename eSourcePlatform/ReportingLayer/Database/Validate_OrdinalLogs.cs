@@ -42,8 +42,8 @@ namespace ReportingLayer.Database
         public Validate_OrdinalLogs()
         {
             Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
+            dbPassword = "";
+            dbUsername = "";
             DBServer = "";
             Database = "";
             TestIdentifier = "";
@@ -71,16 +71,28 @@ namespace ReportingLayer.Database
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("121b7cac-7250-478f-b146-920dbfded8ae")]
-        public string CSPPassword
+        public string dbPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _dbUsername;
+
+        /// <summary>
+        /// Gets or sets the value of variable dbUsername.
+        /// </summary>
+        [TestVariable("41071f78-b6d0-4429-aefb-cda8b71f1d1d")]
+        public string dbUsername
+        {
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
         string _DBServer;
@@ -119,16 +131,6 @@ namespace ReportingLayer.Database
             set { _TestIdentifier = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
-        /// </summary>
-        [TestVariable("41071f78-b6d0-4429-aefb-cda8b71f1d1d")]
-        public string CSPUsername
-        {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -155,7 +157,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetOrdinalLogs(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetOrdinalLogs(Database, DBServer, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();

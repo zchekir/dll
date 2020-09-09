@@ -1,29 +1,27 @@
 **BEFORE YOU BEGIN**
 
-* Navigate to the PrecisionRecruitment directory, open the 'Authentication.csv' data connector and add the following values:
-	* Email (email address used to login to the platform)
-	* Password (password used to login to the platform)
-	* dbUsername (username used to login to the database. This should be your Cogstate login)
-	* dbPassword (password used to login to the database. This should be your Cogstate password)
-	* GmailPassword (password used to login to the Generic ranorexcogstate gmail account)
-	
-Save the Data Connector
+* Navigate to the cogstate-qc\eSourcePlatform\eSourcePlatform directory and make sure it contains the Authentication.csv file containing the following columns:
 
-* Navigate to the RedCapCloud directory, open the 'Authentication.csv' data connector and add the following values:
-	* Username (username used to login to RCC)
-	* Password (password used to login to RCC)
-	* dbUsername (username used to login to the database. This should be your Cogstate login)
-	* dbPassword (password used to login to the database. This should be your Cogstate password)
-	* GmailPassword (password used to login to the Generic ranorexcogstate gmail account)
-	
-Save the Data Connector
+	* RCCUsername
+	* RCCPassword
+	* CSPUsername
+	* CSPPassword
+	* dbUsername
+	* dbPassword
+	* GmailAddress
+	* GmailPassword
+	* WASusername
+	* WASimuser name
+	* WASpassword
+	* InternalUsername
+	* InternalPassword
 
-* Opent the 'CSPConnector.csv' Data Connector and add the following values:
-	* Password (the generic ranorexcogstate password used to login to the platform)
-	* GmailPassword (password used to login to the Generic ranorexcogstate gmail account)
-	* Make sure the URL and DOM variables are set to the correct environment
+For each colmn enter in your credentials to be used for the test run environemnt.
 
-Save the Data Connector
+Save the Data Connector.
 
+Open and build the engine project.
 
-**Ensure all Global Parameter URL's and Database server details are correct before running the test cases**
+Open and build the eSourcePlatform project.
+
+**Ensure the test cases are pointing to the correct rows in the TennantConnector (depending on environment you want to run test in) before executing**

@@ -41,10 +41,10 @@ namespace CSP.APIV1Modules
         /// </summary>
         public APIV1_Authentication()
         {
-            DOM = "cgst-qc-orr.azurewebsites.net";
+            CSPDOM = "cgst-qc-orr.azurewebsites.net";
             Key = "5767c4d2-be6c-4bdc-ac60-5ba8474f37af";
-            secret = "305e95af-bb38-4a00-bf8e-448d06f67f55";
-            authToken = "";
+            Secret = "305e95af-bb38-4a00-bf8e-448d06f67f55";
+            AuthToken = "";
         }
 
         /// <summary>
@@ -57,40 +57,38 @@ namespace CSP.APIV1Modules
 
 #region Variables
 
-        string _DOM;
+        string _Secret;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("b7e113f5-d292-4949-afa8-81cac921e840")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
-        string _secret;
-
-        /// <summary>
-        /// Gets or sets the value of variable secret.
+        /// Gets or sets the value of variable Secret.
         /// </summary>
         [TestVariable("05c56c37-01a1-4ad9-92c6-3294df178117")]
-        public string secret
+        public string Secret
         {
-            get { return _secret; }
-            set { _secret = value; }
+            get { return _Secret; }
+            set { _Secret = value; }
         }
 
-        string _authToken;
+        string _AuthToken;
 
         /// <summary>
-        /// Gets or sets the value of variable authToken.
+        /// Gets or sets the value of variable AuthToken.
         /// </summary>
         [TestVariable("d251eaf8-c5e0-414b-bed4-14560682367b")]
-        public string authToken
+        public string AuthToken
         {
-            get { return _authToken; }
-            set { _authToken = value; }
+            get { return _AuthToken; }
+            set { _AuthToken = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("b7e113f5-d292-4949-afa8-81cac921e840")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
         /// <summary>
@@ -129,7 +127,7 @@ namespace CSP.APIV1Modules
 
             Init();
 
-            APIV1Authentication(DOM, secret, Key);
+            APIV1Authentication(CSPDOM, Secret, Key);
             Delay.Milliseconds(0);
             
         }

@@ -41,12 +41,12 @@ namespace eSourcePlatform
         /// </summary>
         public DB_AssessmentValidation()
         {
-            dbserver = "cgst-qc.database.windows.net";
-            database = "cgst-bear-api";
-            username = "zchekir@cogstate.com";
-            password = "Cogstate2016";
-            authentication = "Active Directory Password";
-            TestIdentifier = "E00C148B-3D73-44E0-8AC9-024C50AB397B";
+            DBServer = "cgst-qc.database.windows.net";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            Authentication = "Active Directory Password";
+            TestIdentifier = "";
             PrimaryOutcome = "0.970444658471641";
             StandardScoreZ = "-2.9910644585573";
             StandardScoreT = "70.089355414427";
@@ -62,64 +62,64 @@ namespace eSourcePlatform
 
 #region Variables
 
-        string _dbserver;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable dbserver.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
         [TestVariable("dee25264-d606-41ca-bf0f-9efe134b8991")]
-        public string dbserver
+        public string DBServer
         {
-            get { return _dbserver; }
-            set { _dbserver = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _database;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable database.
+        /// Gets or sets the value of variable Database.
         /// </summary>
         [TestVariable("501de4e3-4fde-45a1-8e39-f50da8cccb6a")]
-        public string database
+        public string Database
         {
-            get { return _database; }
-            set { _database = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _username;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable username.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
         [TestVariable("c842c4af-9cbc-4c54-8fbe-f573a02dbdb8")]
-        public string username
+        public string dbUsername
         {
-            get { return _username; }
-            set { _username = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _password;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable password.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
         [TestVariable("d6df326c-c955-4056-82a3-583d328b2603")]
-        public string password
+        public string dbPassword
         {
-            get { return _password; }
-            set { _password = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
-        string _authentication;
+        string _Authentication;
 
         /// <summary>
-        /// Gets or sets the value of variable authentication.
+        /// Gets or sets the value of variable Authentication.
         /// </summary>
         [TestVariable("ec3dc429-d49f-4980-9287-23711c36c87d")]
-        public string authentication
+        public string Authentication
         {
-            get { return _authentication; }
-            set { _authentication = value; }
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
         string _TestIdentifier;
@@ -196,7 +196,7 @@ namespace eSourcePlatform
 
             Init();
 
-            AssessmentValidation(dbserver, database, username, password, authentication, TestIdentifier, StandardScoreT, StandardScoreZ, PrimaryOutcome);
+            AssessmentValidation(DBServer, Database, dbUsername, dbPassword, Authentication, TestIdentifier, StandardScoreT, StandardScoreZ, PrimaryOutcome);
             Delay.Milliseconds(0);
             
         }
