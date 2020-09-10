@@ -41,7 +41,7 @@ namespace CSP.APIV1Modules
         /// </summary>
         public APIV1_StatusCode()
         {
-            DOM = "cgst-qc-orr.azurewebsites.net";
+            CSPDOM = "cgst-qc-orr.azurewebsites.net";
             externalId = "";
             visitsession = "110872";
             authToken = "";
@@ -56,18 +56,6 @@ namespace CSP.APIV1Modules
         }
 
 #region Variables
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("eef4e54a-a961-4a61-8fdc-ac7a0926aee9")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
 
         string _externalId;
 
@@ -105,6 +93,16 @@ namespace CSP.APIV1Modules
             set { _authToken = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("eef4e54a-a961-4a61-8fdc-ac7a0926aee9")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -131,7 +129,7 @@ namespace CSP.APIV1Modules
 
             Init();
 
-            GetStatus_Code(DOM, externalId, visitsession, authToken);
+            GetStatus_Code(CSPDOM, externalId, visitsession, authToken);
             Delay.Milliseconds(0);
             
         }

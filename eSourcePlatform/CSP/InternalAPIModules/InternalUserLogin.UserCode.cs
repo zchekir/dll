@@ -69,7 +69,7 @@ namespace CSP.InternalAPIModules
 		{
 			//Setup API call
 			string LoginAPI = "/api/Account/Login";
-			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+ DOM + LoginAPI);
+			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+ CSPDOM + LoginAPI);
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
 			

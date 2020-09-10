@@ -32,7 +32,7 @@ namespace eSourcePlatform
             // Your recording specific initialization code goes here.
         }
 
-        public void ReportingDB_Version()
+        public void ReportingDB_Version(string dbserver, string database, string password, string username, string authentication, string migrationid)
         {
             //Validating the Reporting DB Version :
 			

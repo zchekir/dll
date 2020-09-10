@@ -125,7 +125,7 @@ namespace CSP.APIV2Modules
             // Your recording specific initialization code goes here.
         }
 
-        public void Invalid_DOB(string AuthToken, string studyProtocolName, string DOM, string dob1, string genderCode, string localityCode, string postError, string POST)
+        public void Invalid_DOB(string AuthToken, string studyProtocolName, string DOM, string dob1, string genderCode, string localityCode, string postError, string post)
         {
             Report.Log(ReportLevel.Info, AuthToken);
         	try{
