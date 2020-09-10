@@ -105,6 +105,9 @@ namespace CSP.APIV2Modules
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
             cbbVersion_Check(cbbv, wfInstance);
             Delay.Milliseconds(0);
             
