@@ -31,7 +31,7 @@ namespace eSourcePlatform
        
         private void Init()
         {
-            // Your recording specific initialization code goes here.
+            
         }
 
         public void CSPDBVersion()
@@ -44,12 +44,12 @@ namespace eSourcePlatform
         public void CSPDB_Version(string dbserver, string database, string username, string password, string authentication, string migrationid)
         {
             
-			//Validating the CSP DB Version :
+			
 			
 			dt.Reset();
 			
 			
-			// QueryDB
+			
 			         string query = @"SELECT top 1 
                                     [MigrationId]
                                    ,[TemporalValidFrom]

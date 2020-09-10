@@ -31,17 +31,17 @@ namespace eSourcePlatform
         
         private void Init()
         {
-            // Your recording specific initialization code goes here.
+            
         }
 
         public void dc_DBversion(string dbserver, string database, string username, string password, string authentication, string migrationid)
         {
-           //Validating the DCT DB Version :
+           
 			
 			dt.Reset();
 			
 			
-			// QueryDB
+			
 			         string query = @"SELECT TOP 1
                                     MigrationId
                                     FROM [dbo].[__EFMigrationsHistory]  
@@ -67,7 +67,7 @@ namespace eSourcePlatform
 				 string DBVersion = dt.Rows[0][0].ToString();
 				 string[] dbvID= DBVersion.Split();
 				 
-			     //Pringting the resutls:
+			
 			     Report.Log(ReportLevel.Info,  "DTC DB version: " + "  " + dbvID[0]  );
 			    
 			     //Validating the DB versions

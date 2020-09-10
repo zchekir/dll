@@ -68,6 +68,7 @@ public class rowsJSONResponseA
             private const string RedCapHandlerJobs ="Cogstate.Integration.RedCapHandlerJobs";
             private const string AbsorbWebJobs  ="Cogstate.Absorb.WebJobs";
             private const string DataCleaningTool  ="Cogstate.DataCleaningTool.WebJobs";
+            string DOM ="https://api.applicationinsights.io/v1/apps/";
        
             private void Init()
         {
@@ -87,7 +88,7 @@ public class rowsJSONResponseA
             new MediaTypeWithQualityHeaderValue("application/json"));
             httpClient.DefaultRequestHeaders.Add("x-api-key", Ahuky);
 
-            var response =  httpClient.GetAsync("https://api.applicationinsights.io/v1/apps/"+   EvKey  +  "/query?timespan="  + TimeStmp + "&query="+ Query).GetAwaiter().GetResult();
+            var response =  httpClient.GetAsync( DOM +   EvKey  +  "/query?timespan="  + TimeStmp + "&query="+ Query).GetAwaiter().GetResult();
             
             var responseString = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
@@ -188,7 +189,7 @@ public class rowsJSONResponseA
 			 
 	  }catch (Exception e) {
         	
-        	Report.Log(ReportLevel.Failure,"Please increase your timestamp, there is NOT data deployed during this time.");
+        	Report.Log(ReportLevel.Failure,"Please increase your timestamp, there is NOT data deployed during this time."  );
        
         	
        

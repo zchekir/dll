@@ -37,19 +37,13 @@ namespace ReportingLayer.AcademicExtract
 		
 		
 		
-		
-		/// <summary>
-		/// This method gets called right after the recording has been started.
-		/// It can be used to execute recording specific initialization code.
-		/// </summary>
+	
 		private void Init()
 		{
-			// Your recording specific initialization code goes here.
+			
 		}
 
-		/// <summary>
-		/// Query the Reporting DB View and confirm there are no Pending cells displayed in the Report.
-		/// </summary>
+	
 		public void CheckPending(string dbserver, string database, string username, string password, string authentication)
 		{
 			Stopwatch timer = new Stopwatch();

@@ -33,17 +33,17 @@ namespace eSourcePlatform
        
         private void Init()
         {
-            // Your recording specific initialization code goes here.
+            
         }
 
         public void AssessmentValidation(string dbserver, string database, string username, string password, string authentication, string TestIdentifier, string StandardScoreT, string StandardScoreZ, string PrimaryOutcome)
         {
-            //Validating the CSP DB Version :
+           
 			
 			dt.Reset();
 			
 			
-			// QueryDB
+			
 			         string query = @"select *
                                      from reports.vwExtractStandardAssessmentDetail  
                                      where TestIdentifier=@TestIdentifier";
