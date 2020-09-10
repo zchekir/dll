@@ -44,7 +44,7 @@ namespace CSP.APIV2Modules
 			//looping in the WF
 			foreach (string bbversion in wfList)
 			{
-				Report.Log(ReportLevel.Info,"ZAK"+ bbversion);
+				Report.Log(ReportLevel.Info,"Curent CBB Version"+ " " + bbversion);
 
 				if (bbversion == cbbv)
 				{
@@ -66,6 +66,7 @@ namespace CSP.APIV2Modules
 			{
 				// If CBB version doesnt much the current cbb version it will generate a error 
 				string a="Current cbb version is diffrent from Expected one";
+				
 				Validate.AreEqual(a, cbbv);
 				Report.Log(ReportLevel.Info,"Test Failed:" + cbbv);
 			}

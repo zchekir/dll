@@ -98,74 +98,99 @@ public class rowsJSONResponseA
             var assemblyVersionString = responseObject.tables.First().rows.First().ElementAt(3);
             
             
-           // looping into responseObject to extract the webjobs
-            foreach( var row in  responseObject.tables.First().rows){
-            	
-            var rowData = row.ElementAt(3);
-            AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
-            var entryAssembly = version.EntryAssembly.Split(',').First();
-        
-           
-            
-           // checking the current and the expected versions for the hub 
-           
-            if(entryAssembly == V8HandlerJobs){
-             
-              Validate.AreEqual("V8Handler_Jobs: "+ version.Version ,"V8Handler_Jobs: "+ V8Handler_Jobs);
-             
+          
+             //V8Handler
+             foreach( var row in  responseObject.tables.First().rows){
+             var rowData = row.ElementAt(3);
+             AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
+             var entryAssembly = version.EntryAssembly.Split(',').First();
+             if( entryAssembly ==  V8HandlerJobs  ){
+             Validate.AreEqual("V8Handler_Jobs: "+ version.Version ,"V8Handler_Jobs: "+ V8Handler_Jobs);
+             break;
+              
+              
+             } 
              }
-            
-            else if(entryAssembly == V8AdapterJobs)
-            
-            {
-                	
-                	Validate.AreEqual("V8Adapter_Jobs: "+ version.Version ,"V8Adapter_Jobs: "+ V8Adapter_Jobs);
+			 
+			  //V8Adapter
+			 
+             foreach( var row in  responseObject.tables.First().rows){
+             var rowData = row.ElementAt(3);
+             AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
+             var entryAssembly = version.EntryAssembly.Split(',').First();
+             if( entryAssembly ==  V8AdapterJobs  ){
+             Validate.AreEqual("V8Adapter_Jobs: "+ version.Version ,"V8Adapter_Jobs: "+ V8Adapter_Jobs);
+             break;
+              
+              
+             } 
+			 }
+			 
+			  // RedCapAdapterJob 
+			 
+             foreach( var row in  responseObject.tables.First().rows){
+             var rowData = row.ElementAt(3);
+             AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
+             var entryAssembly = version.EntryAssembly.Split(',').First();
+             if( entryAssembly ==  RedCapAdapterJob  ){
+             Validate.AreEqual("RedCapAdapter_Job: "+ version.Version ,"RedCapAdapter_Job: "+ RedCapAdapter_Job);
+             break;
+              
+              
+             } 
+			 }
+			 
+			 //RedCapHandlerJobs
+			 
+             foreach( var row in  responseObject.tables.First().rows){
+             var rowData = row.ElementAt(3);
+             AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
+             var entryAssembly = version.EntryAssembly.Split(',').First();
+             if( entryAssembly ==  RedCapHandlerJobs  ){
+             Validate.AreEqual("RedCapHandler_Jobs: "+ version.Version ,"RedCapHandler_Jobs: "+ RedCapHandler_Jobs);
+             break;
+              
+              
+             } 
+			 }
+			 
+			  
+            //AbsorbWebJobs
+			
+             foreach( var row in  responseObject.tables.First().rows){
+             var rowData = row.ElementAt(3);
+             AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
+             var entryAssembly = version.EntryAssembly.Split(',').First();
+             if( entryAssembly ==  AbsorbWebJobs  ){
+             Validate.AreEqual("Absorb_WebJobs: "+ version.Version ,"Absorb_WebJobs: "+ Absorb_WebJobs);
+             break;
+              
+              
+             } 
             }
+			  
             
-            else if(entryAssembly == RedCapAdapterJob)
-            
-            {
-            	
-            	Validate.AreEqual("RedCapAdapter_Job: "+ version.Version ,"RedCapAdapter_Job: "+ RedCapAdapter_Job);
+            // DCT Version
+			  
+			  
+             foreach( var row in  responseObject.tables.First().rows){
+             var rowData = row.ElementAt(3);
+             AssemblyVersion version = Newtonsoft.Json.JsonConvert.DeserializeObject<AssemblyVersion>(rowData);
+             var entryAssembly = version.EntryAssembly.Split(',').First();
+             if( entryAssembly ==  DataCleaningTool ){
+             Validate.AreEqual("Data_CleaningTool: "+ version.Version ,"Data_CleaningTool: "+ Data_CleaningTool);
+             break;
+              
             }
-            
-            else if(entryAssembly == RedCapHandlerJobs)
-            
-            {
-            	
-            	  Validate.AreEqual("RedCapHandler_Jobs: "+ version.Version ,"RedCapHandler_Jobs: "+ RedCapHandler_Jobs);
-            	
-           }
-            
-            else if(entryAssembly == AbsorbWebJobs){
-            	
-            	Validate.AreEqual("Absorb_WebJobs: "+ version.Version ,"Absorb_WebJobs: "+ Absorb_WebJobs);
-            }
-            
-            
-       
-       
-            else if(entryAssembly == DataCleaningTool){
-            	
-            	Validate.AreEqual("Data_CleaningTool: "+ version.Version ,"Data_CleaningTool: "+ Data_CleaningTool);
-            }
-            
-            else {
-            	
-            	Report.Log(ReportLevel.Info,"Something is wrong, check the current & the expected versions");
-            }
-             
-      
-             
- 
- }
-
-           
-           
-                                                	
-   }catch (Exception e) {
+             } 
+			 
+			 
+			 
+	  }catch (Exception e) {
         	
         	Report.Log(ReportLevel.Failure,"Please increase your timestamp, there is NOT data deployed during this time.");
+       
+        	
        
         	
         }
