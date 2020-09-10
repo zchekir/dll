@@ -1304,8 +1304,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="25ddffed-2c51-4a47-8dda-1e10faefdfff"
-			maxrange="47"
-			minrange="47"
+			maxrange="48"
+			minrange="48"
 			name="TIdn_CompletionPassPerformanceFail">
 				<parameters>
 					<param
@@ -13667,7 +13667,7 @@ rxversion="8.3">
 		<DataSource
 		id="589c4db9-e91e-4578-8863-bdcdd797baaf"
 		includefile="Unchecked"
-		lastknownrowcount="54"
+		lastknownrowcount="55"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -13858,6 +13858,63 @@ rxversion="8.3">
 				<column>
 					WASurl
 				</column>
+				<column>
+					ServerVersionDeployed
+				</column>
+				<column>
+					ClientVersionDeployed
+				</column>
+				<column>
+					ExpectedDCTVersion
+				</column>
+				<column>
+					ExpectedRCCVersion
+				</column>
+				<column>
+					CSPDBVersion
+				</column>
+				<column>
+					DCT_DBVersion
+				</column>
+				<column>
+					Rep_DBVersion
+				</column>
+				<column>
+					V8Handler_Jobs
+				</column>
+				<column>
+					V8Adapter_Jobs
+				</column>
+				<column>
+					RedCapAdapter_Job&#32;
+				</column>
+				<column>
+					RedCapHandler_Jobs
+				</column>
+				<column>
+					TimeStmp
+				</column>
+				<column>
+					EvKey
+				</column>
+				<column>
+					Ahuky
+				</column>
+				<column>
+					Query
+				</column>
+				<column>
+					Absorb_WebJobs
+				</column>
+				<column>
+					Data_CleaningTool
+				</column>
+				<column>
+					DCTVersionQuery
+				</column>
+				<column>
+					RCCVersionQuery&#32;
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -13872,6 +13929,9 @@ rxversion="8.3">
 		name="TestRun">
 			<testcontainer
 			id="0452c576-abe4-460b-b8ba-2f1577578d57">
+			</testcontainer>
+			<testcontainer
+			id="25ddffed-2c51-4a47-8dda-1e10faefdfff">
 			</testcontainer>
 			<testcontainer
 			id="6de28bfb-bec6-40da-9da1-1c52a27c12ab">
