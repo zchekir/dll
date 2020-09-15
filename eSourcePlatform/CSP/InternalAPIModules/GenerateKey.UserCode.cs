@@ -86,12 +86,7 @@ namespace CSP.InternalAPIModules
 			
 			
 			
-			
-			//Check if external id is empty and generate a random number if true
-			
-			
 			//Create JSON object containing demographics and study details
-			
 			GenerateKeyRequest assessmentObject = new GenerateKeyRequest(id, key, contactEmail, active);
 			
 			
