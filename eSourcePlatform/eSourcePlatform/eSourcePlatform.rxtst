@@ -709,71 +709,6 @@ rxversion="8.3">
 			name="Configure_ExternalUser">
 			</testcase>
 			<testmodule
-			id="265a13c9-16a9-4579-b5b7-81207886f4ea"
-			name="DB_AssessmentValidation"
-			ref="74edc47d-2b4b-418c-8ffc-996ba7474b59"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DBServer"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="dee25264-d606-41ca-bf0f-9efe134b8991"
-					variablename="dbserver">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="501de4e3-4fde-45a1-8e39-f50da8cccb6a"
-					variablename="database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="ec3dc429-d49f-4980-9287-23711c36c87d"
-					variablename="authentication">
-					</var>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="9fae6d08-a73d-4b7a-be99-a84a17d24ddc"
-					variablename="TestIdentifier">
-					</var>
-					<var
-					dataname="PrimaryOutcome
-"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="7cd6ee47-6bb8-4f3c-bbf7-0129f1e13b30"
-					variablename="PrimaryOutcome">
-					</var>
-					<var
-					dataname="StandardScoreZ
-"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="a1676bb6-ae1a-4144-97e1-da672931fe75"
-					variablename="StandardScoreZ">
-					</var>
-					<var
-					dataname="StandardScoreT
-"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="50071bb3-4103-42e8-b898-bde82c740bc4"
-					variablename="StandardScoreT">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
-					variableid="c842c4af-9cbc-4c54-8fbe-f573a02dbdb8"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
-					variableid="d6df326c-c955-4056-82a3-583d328b2603"
-					variablename="dbPassword">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="271472e2-4d69-4894-a88d-e91888ce54ca"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
@@ -1368,6 +1303,68 @@ rxversion="8.3">
 			name="Set_Date_Filter"
 			ref="478d647e-d7d3-47c9-bc73-483c7f81df1f"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="521f5690-b759-45ce-b9d2-8b950e0eaf79"
+			name="Check_StandardScores"
+			ref="3eccf15a-aaec-4a30-be95-c20b92f6f4c2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="dbUsername"
+					datasourceid="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
+					variableid="46ffc4a6-6821-4af3-b0eb-002edad63b1d"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
+					variableid="0196697e-cc3a-4ffc-8497-4cb3a2761031"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="322ae572-6d7e-4361-a7cf-870768eea420"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="9c70fea9-0cb3-4659-b09f-7def2b08284a"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="55960405-c7ce-4709-bfe6-b0e8ba9f96b3"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="15bc254a-10f8-4311-8cfa-f9e4e741e42b"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="PrimaryOutcome"
+					datasourceid="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
+					variableid="5568802f-814f-4937-92f6-0911f36e6e57"
+					variablename="PrimaryOutcome">
+					</var>
+					<var
+					dataname="StandardScoreZ"
+					datasourceid="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
+					variableid="6c516752-ad7c-4ae5-b9ab-76b48c70632f"
+					variablename="StandardScoreZ">
+					</var>
+					<var
+					dataname="StandardScoreT"
+					datasourceid="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
+					variableid="98637311-14b9-429f-ab97-efc07cddba4c"
+					variablename="StandardScoreT">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="529f1bb1-0a6e-4a00-b1f8-9e40b442fa7a"
@@ -2935,6 +2932,20 @@ rxversion="8.3">
 			<testcase
 			id="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
 			name="AssessmentValidation">
+				<parameters>
+					<param
+					name="PrimaryOutcome"
+					value="0.970444658471641">
+					</param>
+					<param
+					name="StandardScoreZ"
+					value="-2.9910644585573">
+					</param>
+					<param
+					name="StandardScoreT"
+					value="70.089355414427">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="af20146d-3561-4a73-a7d4-7cee69a6d4fc"
@@ -3526,21 +3537,6 @@ rxversion="8.3">
 					<param
 					name="DCTSubject"
 					value="">
-					</param>
-					<param
-					name="PrimaryOutcome
-"
-					value="0.970444658471641">
-					</param>
-					<param
-					name="StandardScoreZ
-"
-					value="-2.9910644585573">
-					</param>
-					<param
-					name="StandardScoreT
-"
-					value="70.089355414427">
 					</param>
 				</parameters>
 			</testcase>
@@ -4621,8 +4617,8 @@ rxversion="8.3">
 								id="ae7881ac-2e0f-4afc-85f9-a8f845ce52bc"
 								name="AssessmentValidation">
 									<testmodule
-									id="265a13c9-16a9-4579-b5b7-81207886f4ea"
-									name="DB_AssessmentValidation">
+									id="521f5690-b759-45ce-b9d2-8b950e0eaf79"
+									name="Check_StandardScores">
 									</testmodule>
 								</testcase>
 							</smartfoldernode>
