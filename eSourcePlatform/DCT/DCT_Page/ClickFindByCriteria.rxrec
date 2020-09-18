@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4bd6b653-9d23-4171-8284-dabedc95e86b"
+mode="Global"
+rxversion="8.3">
+	<name>
+		ClickFindByCriteria
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClickFindByCriteria"
+	namespace="DCT.DCT_Page">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c33802c1-3a09-4424-8e4d-6b659d6b48f0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b58ffb39-4988-4944-9416-87a4b57259d7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='cgst-qc-jordan-dct.azurewebsites.net']//span[@innertext='Find By Criteria']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="59dabaae-715d-4842-b9c1-5b3cc7991797"
+	name="DCTRepository"
+	relativepath="..\DCTRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="DCTRepository"
+		namespace="DCT">
+		</codegen>
+		<rootfolder
+		id="1559d85e-a9d4-499b-8b78-a53d7c7c1eef"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClickFindByCriteria.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
