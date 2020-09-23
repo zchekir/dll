@@ -47,6 +47,7 @@ namespace eSourcePlatform
             dbPassword = "";
             Authentication = "";
             migrationid = "";
+            ProductVersion = "";
         }
 
         /// <summary>
@@ -131,6 +132,18 @@ namespace eSourcePlatform
             set { _migrationid = value; }
         }
 
+        string _ProductVersion;
+
+        /// <summary>
+        /// Gets or sets the value of variable ProductVersion.
+        /// </summary>
+        [TestVariable("143032cd-20b0-4d7c-9e5e-19e4a0efae58")]
+        public string ProductVersion
+        {
+            get { return _ProductVersion; }
+            set { _ProductVersion = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -157,7 +170,7 @@ namespace eSourcePlatform
 
             Init();
 
-            ReportingDB_Version(DBServer, Database, dbPassword, dbUsername, Authentication, migrationid);
+            ReportingDB_Version(DBServer, Database, dbPassword, dbUsername, Authentication, migrationid, ProductVersion);
             Delay.Milliseconds(0);
             
         }

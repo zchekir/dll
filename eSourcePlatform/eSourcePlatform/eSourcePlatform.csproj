@@ -151,6 +151,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>ddd3f088-63bc-40ca-b06b-ba2e7448f40a</id>
     </Compile>
+    <Compile Include="CrossBrowsers.cs">
+      <BoundTo>2a9338a1-5fb4-421b-9c6f-35fec5369956</BoundTo>
+      <DependentUpon>CrossBrowsers.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e2f766a5-8169-412d-8fc5-b3d0bce88850</id>
+    </Compile>
+    <Compile Include="CrossBrowsers.UserCode.cs">
+      <BoundTo>2a9338a1-5fb4-421b-9c6f-35fec5369956</BoundTo>
+      <DependentUpon>CrossBrowsers.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>98415150-012a-40ad-8e8b-082e3d1e58e3</id>
+    </Compile>
     <Compile Include="dbVesrion.cs">
       <BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
       <DependentUpon>dbVesrion.rxrec</DependentUpon>
@@ -323,6 +335,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>aae3da34-4981-4765-ae6f-060bf0c2fb1c</id>
     </Content>
+    <None Include="CrossBrowsers.rxrec">
+      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+      <id>2a9338a1-5fb4-421b-9c6f-35fec5369956</id>
+      <recordtableid>13f93452-caa0-4896-9eb9-78ed676c4e2f</recordtableid>
+    </None>
     <None Include="dbVesrion.rxrec">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <id>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</id>

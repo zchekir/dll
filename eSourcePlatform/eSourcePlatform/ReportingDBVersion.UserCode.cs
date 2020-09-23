@@ -32,7 +32,7 @@ namespace eSourcePlatform
             // Your recording specific initialization code goes here.
         }
 
-        public void ReportingDB_Version(string dbserver, string database, string password, string username, string authentication, string migrationid)
+        public void ReportingDB_Version(string dbserver, string database, string password, string username, string authentication, string migrationid, string ProductVersion)
         {
             //Validating the Reporting DB Version :
 			
@@ -42,6 +42,7 @@ namespace eSourcePlatform
 			// QueryDB
 			         string query = @"SELECT top 1
                                     MigrationId
+                                   ,ProductVersion
                                     FROM  [dbo].[__MigrationHistory]
                                     order by 1 desc";
 			
@@ -66,9 +67,12 @@ namespace eSourcePlatform
 				 string[] dbvID = DBVersion.Split();
 			     //Pringting the resutls:
 			     Report.Log(ReportLevel.Info,  "Reporting DB version: " + "  " + dbvID[0]  );
+			    
+			     
 			     
 			     // validating the DB version
 			     Validate.AreEqual(dbvID[0]  ,migrationid);
+			     
 			       
 				}catch (Exception e){
 					

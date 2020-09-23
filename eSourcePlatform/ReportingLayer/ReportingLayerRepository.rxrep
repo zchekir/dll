@@ -95,11 +95,10 @@ rxversion="8.3">
 			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
-			capname="divtag"
+			capname="sectiontag"
 			id="e6fbb293-72d4-434b-a38b-f189e71cd4f8"
 			isrooted="True"
 			name="DateOfAssessmentFilter"
-			refpath="/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -109,7 +108,7 @@ rxversion="8.3">
 				name="IsInThisDropdown"
 				refimgid="6402487c-dbc6-466f-8fad-2ee46b18902f"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-134']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-134']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -118,7 +117,7 @@ rxversion="8.3">
 				name="DayDropdown"
 				refimgid="4d46f1aa-3f9f-44a0-88fe-c3fa3fad8bb4"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-132']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-132']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -127,7 +126,7 @@ rxversion="8.3">
 				name="ApplyFilterButton"
 				refimgid="5b3ecf4f-0425-4318-b2ff-9825e38b1a19"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -136,7 +135,7 @@ rxversion="8.3">
 				name="FilterTypeDropdown"
 				refimgid="bbda9ddf-cf12-490f-b68b-4172bd4e2b86"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-9']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-9']
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -145,10 +144,10 @@ rxversion="8.3">
 				name="Expand"
 				refimgid="ac4551ad-27e9-4e42-8c08-6b3bb2bdd54c"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//button[@title='Expand']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]//tag[9]//button[@title='Expand']
 				</item>
 				<basepath>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']
 				</basepath>
 			</folder>
 			<folder

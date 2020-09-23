@@ -37,6 +37,7 @@ namespace CSP.InternalAPIModules
 	public string reportType {get;set;}
 	public string requestDate {get;set;}
 	public string jsonData {get;set;}
+
 		
 	public	batteryReport(string id,string reportType,string requestDate , string jsonData)
 	{
@@ -44,6 +45,7 @@ namespace CSP.InternalAPIModules
         this.reportType=reportType;
         this.requestDate =requestDate ;
         this.jsonData=jsonData;
+        
 	}
 	}
 	
@@ -56,6 +58,8 @@ namespace CSP.InternalAPIModules
 	public string reportType {get;set;}
 	public string requestDate {get;set;}
 	public string jsonData {get;set;}
+
+	
 		
 	public	batteryReportR()
 	{
@@ -82,6 +86,7 @@ namespace CSP.InternalAPIModules
        string reportType= "";
        string requestDate= "";
        string jsonData="";
+       
        string url="https://"+DOM+"/api/studies/" + studid + "/BatteryConfigurationReports/" + BatteryConfigurationReports;
         
         
@@ -107,15 +112,31 @@ namespace CSP.InternalAPIModules
         	{
         		
         		string response= sr.ReadToEnd();
+        		
+        		
+        		
+        		
+        		
         		responseObject = new JavaScriptSerializer().Deserialize<batteryReportR>(response);
         		string ID= responseObject.id; 
         		string ReportType = responseObject.reportType;
         		string RequestDate= responseObject.requestDate;
         		string JsonData= responseObject.jsonData;
-        		Report.Log(ReportLevel.Info, "ReportType :"+ ReportType );
-        		Report.Log(ReportLevel.Info, "RequestDate:"+ RequestDate);
-        		Report.Log(ReportLevel.Info, "JsonData:"+ JsonData);
-        		Report.Log(ReportLevel.Info, "ID:"+ ID);
+        	
+        		/*
+        			// slpit
+		    char[] mych = { '&', ',','?','=', '"','}','{','/'};
+			string cbbv = response.ToString();
+            string[] BetteryVersion = cbbv.Split(mych);
+            string CBB_Version = BetteryVersion[2];
+               */
+        		
+        	
+            
+        		
+        	
+        		Report.Log(ReportLevel.Info, "JsonData:"+ JsonData );
+        		
         		
         		
         			{

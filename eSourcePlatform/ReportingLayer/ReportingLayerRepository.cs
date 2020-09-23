@@ -422,7 +422,7 @@ namespace ReportingLayer
             /// Creates a new DateOfAssessmentFilter  folder.
             /// </summary>
             public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
-                    base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
+                    base("DateOfAssessmentFilter", ".//section[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
             {
                 _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-134']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
                 _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-132']", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
@@ -435,11 +435,11 @@ namespace ReportingLayer
             /// The Self item.
             /// </summary>
             [RepositoryItem("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
-            public virtual Ranorex.DivTag Self
+            public virtual Ranorex.SectionTag Self
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.SectionTag>(true);
                 }
             }
 
