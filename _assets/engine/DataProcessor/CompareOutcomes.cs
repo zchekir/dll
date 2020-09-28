@@ -174,6 +174,7 @@ namespace engine.DataProcessor
 				case "RawReactionTime":
 				case "RTVariability":
 				case "RawRTVariability":
+				case "RawRTDifference":
 				case "Accuracy":
 				case "RawAccuracy":
 				case "MovesPerSecond":
