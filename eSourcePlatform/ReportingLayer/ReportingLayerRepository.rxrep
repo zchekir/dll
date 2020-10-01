@@ -108,7 +108,7 @@ rxversion="8.3">
 				name="IsInThisDropdown"
 				refimgid="6402487c-dbc6-466f-8fad-2ee46b18902f"
 				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-134']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-139']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -145,6 +145,35 @@ rxversion="8.3">
 				refimgid="ac4551ad-27e9-4e42-8c08-6b3bb2bdd54c"
 				searchtimeout="30000ms">
 					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]//tag[9]//button[@title='Expand']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="marktag"
+				id="68ce9f41-6740-4a79-a539-1f43daa7274d"
+				name="ExpandTestIdentifierDropBox"
+				refimgid="71e7a020-079c-49da-95ef-3c51388edcde"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[46]/div/div[1]/div[1]/h2[@title~'^''vwStandardExtract''\[TestI']//mark[@innertext='TestIdentifier']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="5018c724-014d-4b63-b339-7a52e7f55804"
+				name="EnterThetTestIdentifier"
+				refimgid="4f492eba-d98c-46de-9c34-4e4839b0d7c7"
+				refpath="/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[46]/div/div[2]/div[2]/tag[@tagname='filter-visual-modern']/div/tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="68190d81-74fc-42d0-90a8-3a09b5d92c4a"
+				name="CheckThecheckBos"
+				refimgid="8205399e-108e-4e9c-a6ac-5aead6c6724c"
+				refpath="/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[46]/div/div[2]/div[2]/tag[@tagname='filter-visual-modern']/div/tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/div/div/span"
+				searchtimeout="30000ms">
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/?/?/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span
 				</item>
 				<basepath>
 					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']
@@ -198,6 +227,16 @@ rxversion="8.3">
 					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']
 				</basepath>
 			</folder>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="42ff8dc7-971b-41a9-81b2-36fd58ed42d8"
+			name="SearchTestIdentifier"
+			refimgid="118c4597-be8f-4644-a081-87b9476d6a41"
+			refpath="/dom[@domain='app.powerbi.com']//input[#'mat-input-0']"
+			searchtimeout="30000ms">
+				/dom[@domain='app.powerbi.com']//input[#'mat-input-0']
+			</item>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
 			</basepath>

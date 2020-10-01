@@ -51,7 +51,7 @@ namespace ReportingLayer.AcademicExtract
 			
 			//Build SQL query and connection string
 			string query = @"SELECT * 
-							FROM [dbo].[vwAcademicExtract]
+							FROM [extracts].[vwStandardExtract]
 				
 			WHERE TestIdentifier = @TestIdentifier";
 			

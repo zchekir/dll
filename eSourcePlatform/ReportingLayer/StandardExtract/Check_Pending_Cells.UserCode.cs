@@ -44,7 +44,7 @@ namespace ReportingLayer.StandardExtract
 			timer.Start();
 			//Build SQL query and connection string
 			string query = @"SELECT * 
-							FROM [dbo].[vwStandardExtract]
+							FROM [extracts].[vwStandardExtract]
 							WHERE TestIdentifier = @TestIdentifier";
 			
 			//do while the peeding data appears in DB
