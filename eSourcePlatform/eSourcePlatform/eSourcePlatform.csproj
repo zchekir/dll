@@ -1,398 +1,390 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectGuid>{A8189955-AB19-4FE1-83B6-FF8D3C07275C}</ProjectGuid>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>eSourcePlatform</RootNamespace>
-    <AssemblyName>eSourcePlatform</AssemblyName>
-    <RanorexVersion>8.3</RanorexVersion>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
-    <projectdefaultrepository>1ff89b80-cba6-4f21-a417-c668d100f247</projectdefaultrepository>
-    <NoWin32Manifest>False</NoWin32Manifest>
-    <SignAssembly>False</SignAssembly>
-    <DelaySign>False</DelaySign>
-    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
-    <NoStdLib>False</NoStdLib>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
-    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <WarningLevel>4</WarningLevel>
-    <StartAction>Project</StartAction>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
-    <PlatformTarget>x86</PlatformTarget>
-    <BaseAddress>4194304</BaseAddress>
-    <RegisterForComInterop>False</RegisterForComInterop>
-    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <FileAlignment>4096</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <OutputPath>bin\Debug\</OutputPath>
-    <DebugSymbols>True</DebugSymbols>
-    <DebugType>Full</DebugType>
-    <Optimize>False</Optimize>
-    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <OutputPath>bin\Release\</OutputPath>
-    <DebugSymbols>False</DebugSymbols>
-    <DebugType>None</DebugType>
-    <Optimize>True</Optimize>
-    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
-    <DefineConstants>TRACE</DefineConstants>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="engine">
-      <HintPath>..\..\_assets\engine\bin\$(Configuration)\engine.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Ranorex Automation Helpers">
-      <HintPath>..\..\_assets\engine\RanorexAutomationHelpers\bin\$(Configuration)\Ranorex Automation Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Ranorex.Bootstrapper">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Core">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Core.Resolver">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Cef">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.ChromeWeb">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Delphi">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.FirefoxWeb">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Flex">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Java">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Mobile">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Msaa">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Office">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Qt">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.RawText">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Sap">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Uia">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Web">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.WebDriver">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Win32">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.WinForms">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Wpf">
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System">
-    </Reference>
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Data">
-    </Reference>
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Drawing">
-    </Reference>
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Runtime.Serialization.Json" />
-    <Reference Include="System.Web.Extensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-    </Reference>
-    <Reference Include="System.Xml">
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.cs">
-      <id>ddd3f088-63bc-40ca-b06b-ba2e7448f40a</id>
-    </Compile>
-    <Compile Include="eSourcePlatformRepository.cs">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <DependentUpon>eSourcePlatformRepository.rxrep</DependentUpon>
-      <RepositoryCode>true</RepositoryCode>
-      <id>f537482d-bb21-4a53-98dc-ed9eb32ba61b</id>
-    </Compile>
-    <Compile Include="HUBDCTVesrion.cs">
-      <BoundTo>cadd37ef-5f50-4d2d-b93c-94ec28c9de4b</BoundTo>
-      <DependentUpon>HUBDCTVesrion.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>4554acad-11a1-427d-a335-1fdd390b589f</id>
-    </Compile>
-    <Compile Include="HUBDCTVesrion.UserCode.cs">
-      <BoundTo>cadd37ef-5f50-4d2d-b93c-94ec28c9de4b</BoundTo>
-      <DependentUpon>HUBDCTVesrion.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>84876868-65fb-487e-9b9a-1724c0c44c9d</id>
-    </Compile>
-    <Compile Include="OpenAzLocation.cs">
-      <BoundTo>553a8476-098f-4f72-83bb-8ed52f43b7ea</BoundTo>
-      <DependentUpon>OpenAzLocation.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>36eecd8d-2d01-4cf3-8c17-41c31f18a1b9</id>
-    </Compile>
-    <Compile Include="OpenAzLocation.UserCode.cs">
-      <BoundTo>553a8476-098f-4f72-83bb-8ed52f43b7ea</BoundTo>
-      <DependentUpon>OpenAzLocation.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>f2ed6075-1c9d-4e2e-aaa2-1cfe17932955</id>
-    </Compile>
-    <Compile Include="Program.cs">
-      <id>a96bd5ee-0e36-4cbf-8c8c-70a3e4390d99</id>
-    </Compile>
-    <Compile Include="VersionChecks\CSP_DBVersion.cs">
-      <DependentUpon>CSP_DBVersion.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>2ddc7d78-4814-4787-9bf8-0ecbefef8ad5</id>
-      <BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\CSP_DBVersion.UserCode.cs">
-      <DependentUpon>CSP_DBVersion.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>9f6b8ae8-d236-456d-b84b-ed0a6c39c0c3</id>
-      <BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\DCTHubversion.cs">
-      <DependentUpon>DCTHubversion.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7add2387-eab8-4c54-a7d6-f2464888ab0c</id>
-      <BoundTo>ba1170a1-50c9-4689-a51f-b7411a36dd32</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\DCTHubversion.UserCode.cs">
-      <DependentUpon>DCTHubversion.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>78d6a8fd-3136-4ff7-a150-5c5e4185e4fd</id>
-      <BoundTo>ba1170a1-50c9-4689-a51f-b7411a36dd32</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\DCT_HUB_Version.cs">
-      <DependentUpon>DCT_HUB_Version.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>cedf3d92-cb2b-4bc8-ab97-46d5e9ea3e77</id>
-      <BoundTo>cd241174-f913-4865-97ed-4b900ae2fa28</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\DCT_HUB_Version.UserCode.cs">
-      <DependentUpon>DCT_HUB_Version.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>453994b3-c274-42d4-8615-874fbcac102d</id>
-      <BoundTo>cd241174-f913-4865-97ed-4b900ae2fa28</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\DCT_DBVersion.cs">
-      <DependentUpon>DCT_DBVersion.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d838afa2-8b50-41c4-b9e7-8dcc1268426b</id>
-      <BoundTo>657edab0-3b6f-4c07-a2ea-2583180e20ff</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\DCT_DBVersion.UserCode.cs">
-      <DependentUpon>DCT_DBVersion.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>94768ad3-dba3-41e4-a6be-e7b17f3a5a5b</id>
-      <BoundTo>657edab0-3b6f-4c07-a2ea-2583180e20ff</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\Get_NetFramework_Version.cs">
-      <DependentUpon>Get_NetFramework_Version.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>a2b25655-fe58-4733-b432-0feb851283d5</id>
-      <BoundTo>bf2ba199-2907-41f9-80e7-1b167ce9e64f</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\Get_NetFramework_Version.UserCode.cs">
-      <DependentUpon>Get_NetFramework_Version.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>c6a7b877-92ca-4683-80b5-c08c0e31b823</id>
-      <BoundTo>bf2ba199-2907-41f9-80e7-1b167ce9e64f</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\NetFrameworkValidation.cs">
-      <DependentUpon>NetFrameworkValidation.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>f05300b7-dee0-4df4-a295-0880e070fdd9</id>
-      <BoundTo>8dd63b52-bece-4894-be8f-8eae37f3d3f6</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\NetFrameworkValidation.UserCode.cs">
-      <DependentUpon>NetFrameworkValidation.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>6a7f6a5e-2c51-4d1d-a5c1-354673fa30f9</id>
-      <BoundTo>8dd63b52-bece-4894-be8f-8eae37f3d3f6</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\Reporting_DBVersion.cs">
-      <DependentUpon>Reporting_DBVersion.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>85c44e5c-56f3-41de-bd5a-de464078d047</id>
-      <BoundTo>45cd5fce-5571-42ff-b031-ef5c544b062a</BoundTo>
-    </Compile>
-    <Compile Include="VersionChecks\Reporting_DBVersion.UserCode.cs">
-      <DependentUpon>Reporting_DBVersion.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>c2cc1912-a86e-4d9a-ae51-bfd08527d159</id>
-      <BoundTo>45cd5fce-5571-42ff-b031-ef5c544b062a</BoundTo>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config">
-      <id>ec27fdfd-d0fd-4a03-a3fd-44a2b2577b5a</id>
-    </None>
-    <Content Include="CSPConnector.csv">
-      <Link>CSPConnector.csv</Link>
-      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
-      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>d2568981-07c7-4be0-901e-46267e79b7ba</id>
-    </Content>
-    <Content Include="BatteryBlockConnector.csv">
-      <Link>BatteryBlockConnector.csv</Link>
-      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
-      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>aae3da34-4981-4765-ae6f-060bf0c2fb1c</id>
-    </Content>
-    <None Include="eSourcePlatformRepository.rximg">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <DependentUpon>eSourcePlatformRepository.rxrep</DependentUpon>
-      <imageblob>true</imageblob>
-      <id>c73de121-8f13-48bc-bcc6-03bb3b53e834</id>
-    </None>
-    <None Include="eSourcePlatformRepository.rxrep">
-      <id>1ff89b80-cba6-4f21-a417-c668d100f247</id>
-      <repoid>1b4df078-48fd-44ad-b314-173b9dd113af</repoid>
-      <reporootid>d677fdb9-00e1-4467-9fce-a84c063e8bd0</reporootid>
-    </None>
-    <None Include="HUBDCTVesrion.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>cadd37ef-5f50-4d2d-b93c-94ec28c9de4b</id>
-      <recordtableid>977dffd0-3492-4a9e-b246-5e9ab54ea207</recordtableid>
-    </None>
-    <None Include="OpenAzLocation.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>553a8476-098f-4f72-83bb-8ed52f43b7ea</id>
-      <recordtableid>d82ce541-c07b-4458-8378-0fcaefdb1f51</recordtableid>
-    </None>
-    <Content Include="RCCConnector.csv">
-      <Link>RCCConnector.csv</Link>
-      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
-      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>880abd0b-82af-4957-afe7-6107ca0bef83</id>
-    </Content>
-    <Content Include="TenantConnector.csv">
-      <Link>TenantConnector.csv</Link>
-      <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
-      <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>2e3dcbcb-36db-4b24-8cb5-7a2482bd9764</id>
-    </Content>
-    <None Include="VersionChecks\CSP_DBVersion.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</id>
-      <recordtableid>5440ad95-2787-406e-bfd8-a4a996120cd3</recordtableid>
-    </None>
-    <None Include="VersionChecks\DCTHubversion.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>ba1170a1-50c9-4689-a51f-b7411a36dd32</id>
-      <recordtableid>01b80522-2f5c-42ec-aacb-e89a1e91e2f7</recordtableid>
-    </None>
-    <None Include="VersionChecks\DCT_HUB_Version.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>cd241174-f913-4865-97ed-4b900ae2fa28</id>
-      <recordtableid>5b5d55fe-e7ec-45a2-a13a-ac13838f4b94</recordtableid>
-    </None>
-    <None Include="VersionChecks\DCT_DBVersion.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>657edab0-3b6f-4c07-a2ea-2583180e20ff</id>
-      <recordtableid>e7e659e1-4c5a-43bc-9a7e-4bf52cb9cc4a</recordtableid>
-    </None>
-    <None Include="VersionChecks\Get_NetFramework_Version.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>bf2ba199-2907-41f9-80e7-1b167ce9e64f</id>
-      <recordtableid>c63e787d-f0f7-4502-bc2b-55eac038f926</recordtableid>
-    </None>
-    <None Include="VersionChecks\NetFrameworkValidation.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>8dd63b52-bece-4894-be8f-8eae37f3d3f6</id>
-      <recordtableid>fb326cbf-1e96-4635-a5ac-840af6cdb390</recordtableid>
-    </None>
-    <None Include="VersionChecks\Reporting_DBVersion.rxrec">
-      <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
-      <id>45cd5fce-5571-42ff-b031-ef5c544b062a</id>
-      <recordtableid>8964b727-80a6-4a41-8a16-a9387ba2b555</recordtableid>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="eSourcePlatform.rxtmg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>88d6f968-e5ce-479d-b125-1deb15248ff1</id>
-    </Content>
-    <Content Include="eSourcePlatform.rxtst">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>7cb8293b-b5f8-4a38-92b3-54339c9334d8</id>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CSP\CSP.csproj">
-      <Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
-      <Name>CSP</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DCT\DCT.csproj">
-      <Project>{53F985E8-19FE-46C8-AD1C-531EBD62B9AA}</Project>
-      <Name>DCT</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RedCapCloud\RedCapCloud\RedCapCloud.csproj">
-      <Project>{739128AA-E017-4B60-8DDA-0EC961E1C746}</Project>
-      <Name>RedCapCloud</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ReportingLayer\ReportingLayer.csproj">
-      <Project>{BFD38B34-84CD-46FD-B2C5-C5494C75163F}</Project>
-      <Name>ReportingLayer</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="VersionChecks">
-      <id>4ac85a45-7d83-44cc-bd57-2830aa68a7ba</id>
-    </Folder>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
-  </Import>
-  <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
-  </Import>
+	<PropertyGroup>
+		<ProjectGuid>{A8189955-AB19-4FE1-83B6-FF8D3C07275C}</ProjectGuid>
+		<TargetFrameworkProfile></TargetFrameworkProfile>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>eSourcePlatform</RootNamespace>
+		<AssemblyName>eSourcePlatform</AssemblyName>
+		<RanorexVersion>8.3</RanorexVersion>
+		<TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+		<RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+		<projectdefaultrepository>1ff89b80-cba6-4f21-a417-c668d100f247</projectdefaultrepository>
+		<NoWin32Manifest>False</NoWin32Manifest>
+		<SignAssembly>False</SignAssembly>
+		<DelaySign>False</DelaySign>
+		<RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+		<AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+		<NoStdLib>False</NoStdLib>
+		<TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+		<IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+		<WarningLevel>4</WarningLevel>
+		<StartAction>Project</StartAction>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+		<PlatformTarget>x86</PlatformTarget>
+		<BaseAddress>4194304</BaseAddress>
+		<RegisterForComInterop>False</RegisterForComInterop>
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+		<FileAlignment>4096</FileAlignment>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<OutputPath>bin\Debug\</OutputPath>
+		<DebugSymbols>True</DebugSymbols>
+		<DebugType>Full</DebugType>
+		<Optimize>False</Optimize>
+		<CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<OutputPath>bin\Release\</OutputPath>
+		<DebugSymbols>False</DebugSymbols>
+		<DebugType>None</DebugType>
+		<Optimize>True</Optimize>
+		<CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+		<DefineConstants>TRACE</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="engine">
+			<HintPath>..\..\_assets\engine\bin\$(Configuration)\engine.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.CSharp"></Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Ranorex Automation Helpers">
+			<HintPath>..\..\_assets\engine\RanorexAutomationHelpers\bin\$(Configuration)\Ranorex Automation Helpers.dll</HintPath>
+		</Reference>
+		<Reference Include="Ranorex.Bootstrapper">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Core">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Core.Resolver">
+			<Private>True</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Cef">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.ChromeWeb">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Delphi">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.FirefoxWeb">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Flex">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Java">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Mobile">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Msaa">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Office">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Qt">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.RawText">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Sap">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Uia">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Web">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.WebDriver">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Win32">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.WinForms">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="Ranorex.Plugin.Wpf">
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="System"></Reference>
+		<Reference Include="System.Core">
+			<RequiredTargetFramework>3.5</RequiredTargetFramework>
+		</Reference>
+		<Reference Include="System.Data"></Reference>
+		<Reference Include="System.Data.DataSetExtensions">
+			<RequiredTargetFramework>3.5</RequiredTargetFramework>
+		</Reference>
+		<Reference Include="System.Drawing"></Reference>
+		<Reference Include="System.Net.Http"></Reference>
+		<Reference Include="System.Runtime.Serialization.Json"></Reference>
+		<Reference Include="System.Web.Extensions">
+			<RequiredTargetFramework>3.5</RequiredTargetFramework>
+		</Reference>
+		<Reference Include="System.Windows.Forms"></Reference>
+		<Reference Include="System.Xml"></Reference>
+		<Reference Include="System.Xml.Linq">
+			<RequiredTargetFramework>3.5</RequiredTargetFramework>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.cs">
+			<id>ddd3f088-63bc-40ca-b06b-ba2e7448f40a</id>
+		</Compile>
+		<Compile Include="eSourcePlatformRepository.cs">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<DependentUpon>eSourcePlatformRepository.rxrep</DependentUpon>
+			<RepositoryCode>true</RepositoryCode>
+			<id>f537482d-bb21-4a53-98dc-ed9eb32ba61b</id>
+		</Compile>
+		<Compile Include="HUBDCTVesrion.cs">
+			<BoundTo>cadd37ef-5f50-4d2d-b93c-94ec28c9de4b</BoundTo>
+			<DependentUpon>HUBDCTVesrion.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>4554acad-11a1-427d-a335-1fdd390b589f</id>
+		</Compile>
+		<Compile Include="HUBDCTVesrion.UserCode.cs">
+			<BoundTo>cadd37ef-5f50-4d2d-b93c-94ec28c9de4b</BoundTo>
+			<DependentUpon>HUBDCTVesrion.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>84876868-65fb-487e-9b9a-1724c0c44c9d</id>
+		</Compile>
+		<Compile Include="OpenAzLocation.cs">
+			<BoundTo>553a8476-098f-4f72-83bb-8ed52f43b7ea</BoundTo>
+			<DependentUpon>OpenAzLocation.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>36eecd8d-2d01-4cf3-8c17-41c31f18a1b9</id>
+		</Compile>
+		<Compile Include="OpenAzLocation.UserCode.cs">
+			<BoundTo>553a8476-098f-4f72-83bb-8ed52f43b7ea</BoundTo>
+			<DependentUpon>OpenAzLocation.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>f2ed6075-1c9d-4e2e-aaa2-1cfe17932955</id>
+		</Compile>
+		<Compile Include="Program.cs">
+			<id>a96bd5ee-0e36-4cbf-8c8c-70a3e4390d99</id>
+		</Compile>
+		<Compile Include="VersionChecks\CSP_DBVersion.cs">
+			<DependentUpon>CSP_DBVersion.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>2ddc7d78-4814-4787-9bf8-0ecbefef8ad5</id>
+			<BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\CSP_DBVersion.UserCode.cs">
+			<DependentUpon>CSP_DBVersion.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>9f6b8ae8-d236-456d-b84b-ed0a6c39c0c3</id>
+			<BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\DCTHubversion.cs">
+			<DependentUpon>DCTHubversion.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>7add2387-eab8-4c54-a7d6-f2464888ab0c</id>
+			<BoundTo>ba1170a1-50c9-4689-a51f-b7411a36dd32</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\DCTHubversion.UserCode.cs">
+			<DependentUpon>DCTHubversion.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>78d6a8fd-3136-4ff7-a150-5c5e4185e4fd</id>
+			<BoundTo>ba1170a1-50c9-4689-a51f-b7411a36dd32</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\DCT_HUB_Version.cs">
+			<DependentUpon>DCT_HUB_Version.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>cedf3d92-cb2b-4bc8-ab97-46d5e9ea3e77</id>
+			<BoundTo>cd241174-f913-4865-97ed-4b900ae2fa28</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\DCT_HUB_Version.UserCode.cs">
+			<DependentUpon>DCT_HUB_Version.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>453994b3-c274-42d4-8615-874fbcac102d</id>
+			<BoundTo>cd241174-f913-4865-97ed-4b900ae2fa28</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\DCT_DBVersion.cs">
+			<DependentUpon>DCT_DBVersion.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>d838afa2-8b50-41c4-b9e7-8dcc1268426b</id>
+			<BoundTo>657edab0-3b6f-4c07-a2ea-2583180e20ff</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\DCT_DBVersion.UserCode.cs">
+			<DependentUpon>DCT_DBVersion.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>94768ad3-dba3-41e4-a6be-e7b17f3a5a5b</id>
+			<BoundTo>657edab0-3b6f-4c07-a2ea-2583180e20ff</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\Get_NetFramework_Version.cs">
+			<DependentUpon>Get_NetFramework_Version.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>a2b25655-fe58-4733-b432-0feb851283d5</id>
+			<BoundTo>bf2ba199-2907-41f9-80e7-1b167ce9e64f</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\Get_NetFramework_Version.UserCode.cs">
+			<DependentUpon>Get_NetFramework_Version.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>c6a7b877-92ca-4683-80b5-c08c0e31b823</id>
+			<BoundTo>bf2ba199-2907-41f9-80e7-1b167ce9e64f</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\NetFrameworkValidation.cs">
+			<DependentUpon>NetFrameworkValidation.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>f05300b7-dee0-4df4-a295-0880e070fdd9</id>
+			<BoundTo>8dd63b52-bece-4894-be8f-8eae37f3d3f6</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\NetFrameworkValidation.UserCode.cs">
+			<DependentUpon>NetFrameworkValidation.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>6a7f6a5e-2c51-4d1d-a5c1-354673fa30f9</id>
+			<BoundTo>8dd63b52-bece-4894-be8f-8eae37f3d3f6</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\Reporting_DBVersion.cs">
+			<DependentUpon>Reporting_DBVersion.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>85c44e5c-56f3-41de-bd5a-de464078d047</id>
+			<BoundTo>45cd5fce-5571-42ff-b031-ef5c544b062a</BoundTo>
+		</Compile>
+		<Compile Include="VersionChecks\Reporting_DBVersion.UserCode.cs">
+			<DependentUpon>Reporting_DBVersion.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>c2cc1912-a86e-4d9a-ae51-bfd08527d159</id>
+			<BoundTo>45cd5fce-5571-42ff-b031-ef5c544b062a</BoundTo>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="app.config">
+			<id>ec27fdfd-d0fd-4a03-a3fd-44a2b2577b5a</id>
+		</None>
+		<Content Include="CSPConnector.csv">
+			<Link>CSPConnector.csv</Link>
+			<BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
+			<DependentUpon>eSourcePlatform.rxtst</DependentUpon>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<id>d2568981-07c7-4be0-901e-46267e79b7ba</id>
+		</Content>
+		<Content Include="BatteryBlockConnector.csv">
+			<Link>BatteryBlockConnector.csv</Link>
+			<BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
+			<DependentUpon>eSourcePlatform.rxtst</DependentUpon>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<id>aae3da34-4981-4765-ae6f-060bf0c2fb1c</id>
+		</Content>
+		<None Include="eSourcePlatformRepository.rximg">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<DependentUpon>eSourcePlatformRepository.rxrep</DependentUpon>
+			<imageblob>true</imageblob>
+			<id>c73de121-8f13-48bc-bcc6-03bb3b53e834</id>
+		</None>
+		<None Include="eSourcePlatformRepository.rxrep">
+			<id>1ff89b80-cba6-4f21-a417-c668d100f247</id>
+			<repoid>1b4df078-48fd-44ad-b314-173b9dd113af</repoid>
+			<reporootid>d677fdb9-00e1-4467-9fce-a84c063e8bd0</reporootid>
+		</None>
+		<None Include="HUBDCTVesrion.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>cadd37ef-5f50-4d2d-b93c-94ec28c9de4b</id>
+			<recordtableid>977dffd0-3492-4a9e-b246-5e9ab54ea207</recordtableid>
+		</None>
+		<None Include="OpenAzLocation.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>553a8476-098f-4f72-83bb-8ed52f43b7ea</id>
+			<recordtableid>d82ce541-c07b-4458-8378-0fcaefdb1f51</recordtableid>
+		</None>
+		<Content Include="RCCConnector.csv">
+			<Link>RCCConnector.csv</Link>
+			<BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
+			<DependentUpon>eSourcePlatform.rxtst</DependentUpon>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<id>880abd0b-82af-4957-afe7-6107ca0bef83</id>
+		</Content>
+		<None Include="VersionChecks\CSP_DBVersion.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</id>
+			<recordtableid>5440ad95-2787-406e-bfd8-a4a996120cd3</recordtableid>
+		</None>
+		<None Include="VersionChecks\DCTHubversion.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>ba1170a1-50c9-4689-a51f-b7411a36dd32</id>
+			<recordtableid>01b80522-2f5c-42ec-aacb-e89a1e91e2f7</recordtableid>
+		</None>
+		<None Include="VersionChecks\DCT_HUB_Version.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>cd241174-f913-4865-97ed-4b900ae2fa28</id>
+			<recordtableid>5b5d55fe-e7ec-45a2-a13a-ac13838f4b94</recordtableid>
+		</None>
+		<None Include="VersionChecks\DCT_DBVersion.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>657edab0-3b6f-4c07-a2ea-2583180e20ff</id>
+			<recordtableid>e7e659e1-4c5a-43bc-9a7e-4bf52cb9cc4a</recordtableid>
+		</None>
+		<None Include="VersionChecks\Get_NetFramework_Version.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>bf2ba199-2907-41f9-80e7-1b167ce9e64f</id>
+			<recordtableid>c63e787d-f0f7-4502-bc2b-55eac038f926</recordtableid>
+		</None>
+		<None Include="VersionChecks\NetFrameworkValidation.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>8dd63b52-bece-4894-be8f-8eae37f3d3f6</id>
+			<recordtableid>fb326cbf-1e96-4635-a5ac-840af6cdb390</recordtableid>
+		</None>
+		<None Include="VersionChecks\Reporting_DBVersion.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>45cd5fce-5571-42ff-b031-ef5c544b062a</id>
+			<recordtableid>8964b727-80a6-4a41-8a16-a9387ba2b555</recordtableid>
+		</None>
+		<Content Include="TenantConnector.csv">
+			<Link>TenantConnector.csv</Link>
+			<BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
+			<DependentUpon>eSourcePlatform.rxtst</DependentUpon>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<id>64b9e10c-40d2-48dd-8bf6-a2d18cec8938</id>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="eSourcePlatform.rxtmg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<id>88d6f968-e5ce-479d-b125-1deb15248ff1</id>
+		</Content>
+		<Content Include="eSourcePlatform.rxtst">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<id>7cb8293b-b5f8-4a38-92b3-54339c9334d8</id>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\CSP\CSP.csproj">
+			<Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
+			<Name>CSP</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\DCT\DCT.csproj">
+			<Project>{53F985E8-19FE-46C8-AD1C-531EBD62B9AA}</Project>
+			<Name>DCT</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\RedCapCloud\RedCapCloud\RedCapCloud.csproj">
+			<Project>{739128AA-E017-4B60-8DDA-0EC961E1C746}</Project>
+			<Name>RedCapCloud</Name>
+		</ProjectReference>
+		<ProjectReference Include="..\ReportingLayer\ReportingLayer.csproj">
+			<Project>{BFD38B34-84CD-46FD-B2C5-C5494C75163F}</Project>
+			<Name>ReportingLayer</Name>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="VersionChecks">
+			<id>4ac85a45-7d83-44cc-bd57-2830aa68a7ba</id>
+		</Folder>
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"></Import>
+	<Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)"></Import>
 </Project>
