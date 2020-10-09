@@ -82,6 +82,10 @@ namespace CSP.InternalAPIModules
 
 		public void SetLocalitie_Code(string id, string studyId, string DOM, string Autoken)
 		{
+			
+			Report.Log(ReportLevel.Info, "dEBUGStudyID:"+ studyId);
+			
+				Report.Log(ReportLevel.Info, "dEBUGSID:"+ id);
 			Locality l = new Locality();
 			l.id = "7";
 			l.name= "USA - English";
@@ -93,7 +97,7 @@ namespace CSP.InternalAPIModules
 			localities.Add(l);
 			
 			// setting up a localitycode
-			string url = "https://" + DOM +"/api/studies/" + studid +"/settings";
+			string url = "https://" + DOM +"/api/studies/" + studyId +"/settings";
 			HttpWebRequest httpRequest =(HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method="PUT";

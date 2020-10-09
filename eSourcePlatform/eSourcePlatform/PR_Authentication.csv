@@ -1,7 +1,80 @@
-﻿Portal,DOM,key1,Token,studyProtocolName,dob,genderCode,localityCode,redirectError,redirect,visitSessionCode,supervisorId,visitsession,id,contactEmail,active,key,mode,InvalidSecret,S3studyProtocolName,ConfigurationID,Batteryid,studid,BatteryConfigurationReports,StudyName,Swager-URL,Swager-HTTPCODE,Swager-Key&Secret,BatteryAssessmnetID ,PrimaryOutcome,StandardScoreZ,StandardScoreT
+﻿Portal,DOM,key1,Token,studyProtocolName,dob,genderCode,localityCode,redirectError,redirect,visitSessionCode,supervisorId,visitsession,id,contactEmail,active,key,mode,InvalidSecret,S3studyProtocolName,ConfigurationID,Batteryid,studid,BatteryConfigurationReports,StudyName,Swager-URL,Swager-HTTPCODE,Swager-Key&Secret,BatteryAssessmnetID ,PrimaryOutcome,StandardScoreZ,StandardScoreT,barryDATA
 DefaultPortal,cgst-qc-jackson.azurewebsites.net,770b48c7-6a56-4635-90db-eead172baf58,f76dbae3-8042-47fb-9bc9-4cac709438f8,AutomationStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,visit1,1,110872,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,523,9797,163629,2,AutomationStudy,https://cgst-qc-jackson.azurewebsites.net/swagger,200,"{{""key"": ""770b48c7-6a56-4635-90db-eead172baf58"",""secret"": ""f76dbae3-8042-47fb-9bc9-4cac709438f8
-""}",,2.614837693,-1.499305162,85.00694838
+""}",,2.614837693,-1.499305162,85.00694838,"
+
+
+{
+  ""study"": {
+    ""id"":<id>,
+    ""name"": ""<name>"",
+    ""isDefault"": null
+  },
+  ""batteryTemplate"": {
+    ""id"": 2,
+    ""name"": ""CBB - NON INTERACTIVE DEMOS"",
+    ""isDefault"": null
+  },
+  ""translation"": {
+    ""id"": 1,
+    ""name"": ""Default"",
+    ""isDefault"": null
+  },
+  ""configuration"": null,
+  ""locked"": false,
+  ""isLockedStatus"": false,
+  ""isManuallyUpdated"": false,
+  ""scalingEnabled"": true,
+  ""scalingLower"": 75,
+  ""scalingUpper"": 100,
+  ""scalingUpperLimits"": [
+    100,
+    120
+  ],
+  ""repeatStyle"": null,
+  ""id"": 9715,
+  ""name"": ""Automation"",
+  ""description"": ""Test"",
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""numberBlocks"": 8,
+  ""taskCodes"": null,
+  ""pediatric"": false,
+  ""isSweepEnabled"": false,
+  ""desktopConfiguration"": {
+    ""basePath"": """",
+    ""localePath"": """",
+    ""translationVersion"": """",
+    ""skipAssessment"": false,
+    ""skipTests"": false,
+    ""scaleMode"": ""start"",
+    ""scalingLower"": 75,
+    ""scalingUpper"": 100,
+    ""repeatStyle"": null,
+    ""id"": 19157,
+    ""name"": ""Desktop"",
+    ""testSuites"": ""[{\""testSuiteName\"":\""CogstateTestSuite\"",\""testSuiteVersion\"":\""<ver>\"",\""configuration\"":[{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""CardInstructions\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yes_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""DetectionInstructionsDemo\""},{\""code\"":\""DetectionAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""DetectionInstructionsReal\""},{\""code\"":\""DetectionAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""NoInstructionsLearn\""},{\""code\"":\""NoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""no_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesNoInstructionsLearn\""},{\""code\"":\""YesNoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yesno_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""IdentificationInstructionsDemo\""},{\""code\"":\""IdentificationAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""IdentificationInstructionsReal\""},{\""code\"":\""IdentificationAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnecardlearningInstructionsDemo\""},{\""code\"":\""OnecardlearningAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnecardlearningInstructionsReal\""},{\""code\"":\""OnecardlearningAdultReal\"",\""integrity\"":0.5,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnebackInstructionsDemo\""},{\""code\"":\""OnebackAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnebackInstructionsReal\""},{\""code\"":\""OnebackAdultReal\"",\""integrity\"":0.7,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]}],\""testSuiteProperties\"":{},\""order\"":0}]"",
+    ""dataFormatVersion"": 1
+  },
+  ""tabletConfiguration"": {
+    ""basePath"": """",
+    ""localePath"": """",
+    ""translationVersion"": """",
+    ""skipAssessment"": false,
+    ""skipTests"": false,
+    ""scaleMode"": ""start"",
+    ""scalingLower"": 75,
+    ""scalingUpper"": 100,
+    ""repeatStyle"": null,
+    ""id"": 19158,
+    ""name"": ""Tablet"",
+    ""testSuites"": ""[{\""testSuiteName\"":\""CogstateTestSuite\"",\""testSuiteVersion\"":\""8.13.2\"",\""configuration\"":[{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""CardInstructions\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yes_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""DetectionInstructionsDemo\""},{\""code\"":\""DetectionAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""DetectionInstructionsReal\""},{\""code\"":\""DetectionAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""NoInstructionsLearn\""},{\""code\"":\""NoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""no_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesNoInstructionsLearn\""},{\""code\"":\""YesNoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yesno_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""IdentificationInstructionsDemo\""},{\""code\"":\""IdentificationAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""IdentificationInstructionsReal\""},{\""code\"":\""IdentificationAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnecardlearningInstructionsDemo\""},{\""code\"":\""OnecardlearningAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnecardlearningInstructionsReal\""},{\""code\"":\""OnecardlearningAdultReal\"",\""integrity\"":0.5,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnebackInstructionsDemo\""},{\""code\"":\""OnebackAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnebackInstructionsReal\""},{\""code\"":\""OnebackAdultReal\"",\""integrity\"":0.7,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]}],\""testSuiteProperties\"":{},\""order\"":0}]"",
+    ""dataFormatVersion"": 1
+  }
+}"
 DefaultPortal,cgst-qcpd.azurewebsites.net,f125bed3-dbbf-4aaa-b2e6-4240f5cf7d82,1b9c3b0d-4d1f-4e23-bfcd-6a9d049c5cf6,AutomationStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,visit1,1,688,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,104,324,1208,2,AutomationStudy,https://cgst-qcpd.azurewebsites.net/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
-""}",,,,
+""}",,,,,
 DefaultPortal,cgst-staging.azurewebsites.net,15eaab65-c27a-4efd-83c9-276650d565bc,a12bfb73-fee9-4822-8c71-2e2c32239090,AutomationStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,visit1,1,110872,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,,96,324,1208,2,AutomationStudy,https://cgst-staging.azurewebsites.ne/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
-""}",,,,
+""}",,,,,

@@ -41,8 +41,8 @@ namespace CSP.InternalAPIModules
         /// </summary>
         public Set_LocalityCode()
         {
-            id = "163069";
-            studid = "163069";
+            id = "";
+            studid = "";
             DOM = "cgst-qc-jordan.azurewebsites.net/";
             Autoken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
         }

@@ -3,6 +3,10 @@
 rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="009282f3-88a4-4e0d-a01b-5b6d827c12d5"
+			name="Battery">
+			</testcase>
 			<testmodule
 			id="00da1d04-346c-4a52-b534-16bed98d9300"
 			name="WASPassword"
@@ -2293,9 +2297,17 @@ rxversion="8.3">
 					value="-1.49930516199307">
 					</param>
 					<param
-					name="NewParameter"
+					name="StudyID"
 					value="
 ">
+					</param>
+					<param
+					name="StudyName"
+					value="">
+					</param>
+					<param
+					name="Batteryversion"
+					value="8.13.4">
 					</param>
 				</parameters>
 			</testcase>
@@ -2838,6 +2850,18 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="13025d57-c07f-499e-9fdd-ca183fe2d546"
 					variablename="DOM">
+					</var>
+					<var
+					dataname="StudyID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="affd5edb-9c3b-40b4-b20a-72084de8e96b"
+					variablename="Study_ID">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="bc8c4e88-b1fb-4033-8df5-08a8bb96605b"
+					variablename="StudyName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4790,10 +4814,10 @@ rxversion="8.3">
 					variablename="Autoken">
 					</var>
 					<var
-					dataname="studid"
+					dataname="DOM"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="7efbcd7d-f756-4b11-866b-823de17ac97e"
-					variablename="studid">
+					variableid="7970c6d5-bc77-49d6-a2c3-157413af10e4"
+					variablename="DOM">
 					</var>
 					<var
 					dataname="Study_ID"
@@ -4802,10 +4826,10 @@ rxversion="8.3">
 					variablename="id">
 					</var>
 					<var
-					dataname="DOM"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="7970c6d5-bc77-49d6-a2c3-157413af10e4"
-					variablename="DOM">
+					dataname="StudyID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="7efbcd7d-f756-4b11-866b-823de17ac97e"
+					variablename="studid">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4986,6 +5010,50 @@ rxversion="8.3">
 			minrange="0"
 			name="UB08">
 			</testcase>
+			<testmodule
+			id="e32bbe54-5908-4a6d-ad4d-cdd68714ba8c"
+			name="BatteryCreation"
+			ref="9c9fbb6a-7049-4ee6-8a05-326298e5321f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="barryDATA"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="8f519bcc-3e54-4657-b742-d5b665f9d993"
+					variablename="BatteryJASON">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="21d80088-00f9-4cd2-b431-60d0da0a6b1b"
+					variablename="Token">
+					</var>
+					<var
+					dataname="StudyID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6382549c-46ec-491a-885a-197718e89e74"
+					variablename="Studyid">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="32124dfc-6a12-4785-b854-8ade4508119a"
+					variablename="Studname">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="bb97dc8b-d79d-4e45-b659-b8ff0fd6dcd8"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Batteryversion"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="48ad6700-c66f-4b87-b79b-c93002a290dc"
+					variablename="Batteryversion">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="e49c2644-daf5-46ea-b2f4-20893174fb7f"
 			name="Clear_ExternalID"
@@ -6591,6 +6659,14 @@ rxversion="8.3">
 									name="BatteryConfiguration_Report">
 									</testmodule>
 								</testcase>
+								<testcase
+								id="009282f3-88a4-4e0d-a01b-5b6d827c12d5"
+								name="Battery">
+									<testmodule
+									id="e32bbe54-5908-4a6d-ad4d-cdd68714ba8c"
+									name="BatteryCreation">
+									</testmodule>
+								</testcase>
 							</smartfoldernode>
 							<smartfoldernode
 							id="fbb6582a-078f-40ce-9d97-9857a442e28e"
@@ -6930,6 +7006,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					StandardScoreT
+				</column>
+				<column>
+					barryDATA
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -7757,94 +7836,25 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="02a50b9b-fcda-4073-a4b1-ef464231a85d">
+			id="009282f3-88a4-4e0d-a01b-5b6d827c12d5">
 			</testcontainer>
 			<testcontainer
-			id="04421345-e5aa-49b4-b420-101dbea32a24">
-			</testcontainer>
-			<testcontainer
-			id="1e5a5bbc-da24-45b1-9f2f-ed5222e898bc">
-			</testcontainer>
-			<testcontainer
-			id="1e6f3e97-ea80-4177-87a8-1509855d079e">
-			</testcontainer>
-			<testcontainer
-			id="20ca029a-e7c4-41e5-817f-84b8033cbe89">
-			</testcontainer>
-			<testcontainer
-			id="2166c8b1-a349-4d6f-a42b-ea55802c057a">
-			</testcontainer>
-			<testcontainer
-			id="39b1cecb-0d7e-4daa-a134-c25e0db038e1">
-			</testcontainer>
-			<testcontainer
-			id="3bf782c9-54a2-4fc9-aa0c-c4e1829fea20">
+			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
-			id="58b92a44-15a8-4477-b31a-623a0eaf2292">
-			</testcontainer>
-			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
+			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
 			</testcontainer>
 			<testcontainer
-			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9">
-			</testcontainer>
-			<testcontainer
-			id="8704a37d-fbaf-4fcc-9c4b-7b08f4fc657a">
-			</testcontainer>
-			<testcontainer
-			id="9296f761-d9ec-42b4-aab7-64ac1b4d4637">
-			</testcontainer>
-			<testcontainer
-			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
-			</testcontainer>
-			<testcontainer
-			id="ab92fefa-4d29-4a10-bb72-b01231ad1aec">
-			</testcontainer>
-			<testcontainer
-			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
-			</testcontainer>
-			<testcontainer
-			id="b44dbed3-7641-48c4-9c66-89bb9c416843">
-			</testcontainer>
-			<testcontainer
-			id="b6259d3b-7047-4995-a4b6-c18537ded8fb">
-			</testcontainer>
-			<testcontainer
-			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="dd8e5261-3b1c-44a5-b4d0-2469afabf6c6">
-			</testcontainer>
-			<testcontainer
-			id="e25e4ed7-0826-4e0f-b570-c22bbc57b30c">
-			</testcontainer>
-			<testcontainer
-			id="e6e22790-9f97-484d-9458-d26dc58521f9">
-			</testcontainer>
-			<testcontainer
-			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
+			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
 			</testcontainer>
 			<testcontainer
 			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58">
-			</testcontainer>
-			<testcontainer
-			id="f63dd512-23b7-4ced-b1a5-802d4ae37b75">
-			</testcontainer>
-			<testcontainer
-			id="f93a7981-49b3-43d8-b1db-efc904929c69">
-			</testcontainer>
-			<testcontainer
-			id="fa7fef22-5b26-4240-818c-954f79265cd1">
-			</testcontainer>
-			<testcontainer
-			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
