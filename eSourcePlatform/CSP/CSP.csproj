@@ -1955,6 +1955,18 @@
       <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="CreateVisitschedule.cs">
+      <BoundTo>5b9c3c72-3950-4d1c-9a7c-873a644cdc9b</BoundTo>
+      <DependentUpon>CreateVisitschedule.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4d31e497-a437-42c8-8f6c-63676877a288</id>
+    </Compile>
+    <Compile Include="CreateVisitschedule.UserCode.cs">
+      <BoundTo>5b9c3c72-3950-4d1c-9a7c-873a644cdc9b</BoundTo>
+      <DependentUpon>CreateVisitschedule.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>948fabeb-7526-4673-99cd-986a4ca6f10c</id>
+    </Compile>
     <Compile Include="CSPRepository.cs">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <DependentUpon>CSPRepository.rxrep</DependentUpon>
@@ -3818,6 +3830,18 @@
       <id>81de7b5e-e55f-4acd-899a-d37e786814b4</id>
       <BoundTo>de77e08a-a1f1-46ac-8971-cdd7dbe62062</BoundTo>
     </Compile>
+    <Compile Include="WorkflowCreation.cs">
+      <BoundTo>ca2e4be2-0020-4481-97ba-86bf6949f970</BoundTo>
+      <DependentUpon>WorkflowCreation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1867a388-a720-4c8e-b065-74a9caca7b25</id>
+    </Compile>
+    <Compile Include="WorkflowCreation.UserCode.cs">
+      <BoundTo>ca2e4be2-0020-4481-97ba-86bf6949f970</BoundTo>
+      <DependentUpon>WorkflowCreation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f164412-4953-4658-b402-6a7a43829d84</id>
+    </Compile>
     <Compile Include="WorkflowsPage\Click_Add_Workflow.cs">
       <id>c21147a3-0e58-430d-a568-de89136e1107</id>
       <BoundTo>3ee3a92b-867f-478a-bc7f-c1c0e973bcac</BoundTo>
@@ -4606,6 +4630,11 @@
       <id>c4df6933-e18f-4806-be75-b17a66a11ebc</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
+    </None>
+    <None Include="CreateVisitschedule.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>5b9c3c72-3950-4d1c-9a7c-873a644cdc9b</id>
+      <recordtableid>8013edcd-a876-49a7-b495-e779933a8fe2</recordtableid>
     </None>
     <None Include="CSPRepository.rximg">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -5866,6 +5895,11 @@
       <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
       <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+    </None>
+    <None Include="WorkflowCreation.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>ca2e4be2-0020-4481-97ba-86bf6949f970</id>
+      <recordtableid>ff1ab6c2-86bd-43f8-8d89-a8c55c748cf2</recordtableid>
     </None>
     <None Include="WorkflowsPage\Click_Add_Workflow.rxrec">
       <id>3ee3a92b-867f-478a-bc7f-c1c0e973bcac</id>

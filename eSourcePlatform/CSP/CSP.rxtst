@@ -1668,6 +1668,44 @@ rxversion="8.3">
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="4494ed31-8e29-4014-8f55-7b0b1d5b6911"
+			name="WorkflowCreation"
+			ref="ff1ab6c2-86bd-43f8-8d89-a8c55c748cf2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="31d9b937-2664-4724-bbe7-6fd57c281220"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="ab231873-9431-40c2-b70a-1df0514586db"
+					variablename="Token">
+					</var>
+					<var
+					dataname="WorkflowData"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="af161e08-72c8-4a09-8ec4-3d90ed60f941"
+					variablename="WorkflowData">
+					</var>
+					<var
+					dataname="StudyID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="589d157d-3a47-44e9-9f62-7a57b0901e47"
+					variablename="Studyid">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="1985b0c0-efe4-46b6-902c-4c52cb9ac83f"
+					variablename="Studname">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="44c6ff56-8260-4e46-97ff-0484db8c66d9"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
@@ -1761,6 +1799,38 @@ rxversion="8.3">
 			minrange="0"
 			name="eSourcePlatformAPI_RegressionTest">
 			</smartfoldernode>
+			<testmodule
+			id="46559b8a-0075-485d-a888-c783012e2176"
+			name="CreateVisitschedule"
+			ref="8013edcd-a876-49a7-b495-e779933a8fe2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="39991ace-f3d0-4ca1-aebb-999dca1fa0f0"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="StudyID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="c0deec5c-cb56-44fb-85fb-8b319345fdd7"
+					variablename="Studyid">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d4990ef5-ff60-4162-a061-a9cff9bb6b75"
+					variablename="Token">
+					</var>
+					<var
+					dataname="VisitscheduleData"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="bed4926d-b6fd-44ab-98a4-c52e31f5f26c"
+					variablename="VisitSceduleData">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="476a9a0a-ed1d-4f81-a6b6-36e661a116d4"
 			name="External_Authenticate"
@@ -2308,6 +2378,10 @@ rxversion="8.3">
 					<param
 					name="Batteryversion"
 					value="8.13.4">
+					</param>
+					<param
+					name="visitCode"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -5256,6 +5330,10 @@ rxversion="8.3">
 			ref="73313e70-d7e8-42a1-ad05-4d7d216c1d81"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="eae30245-2af9-4fad-bc41-3d650f99a1e8"
+			name="Workflow">
+			</testcase>
 			<testmodule
 			id="eb161724-ce99-4c21-8bcf-327610365d4c"
 			name="Upload_RawData"
@@ -5614,6 +5692,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testcase
+			id="fb9f5152-9292-4c17-b26c-90c15954d105"
+			name="VisitSchedule">
+			</testcase>
 			<smartfoldernode
 			id="fbb6582a-078f-40ce-9d97-9857a442e28e"
 			name="PR-HTTP-Errors">
@@ -6652,19 +6734,35 @@ rxversion="8.3">
 									</testmodule>
 								</testcase>
 								<testcase
-								id="5d2d388a-a187-42cd-9c60-0a24f16880af"
-								name="BatteryConfigurationReport">
-									<testmodule
-									id="a8b45a14-a44d-48c5-aa82-f1d94bb11c49"
-									name="BatteryConfiguration_Report">
-									</testmodule>
-								</testcase>
-								<testcase
 								id="009282f3-88a4-4e0d-a01b-5b6d827c12d5"
 								name="Battery">
 									<testmodule
 									id="e32bbe54-5908-4a6d-ad4d-cdd68714ba8c"
 									name="BatteryCreation">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="eae30245-2af9-4fad-bc41-3d650f99a1e8"
+								name="Workflow">
+									<testmodule
+									id="4494ed31-8e29-4014-8f55-7b0b1d5b6911"
+									name="WorkflowCreation">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="fb9f5152-9292-4c17-b26c-90c15954d105"
+								name="VisitSchedule">
+									<testmodule
+									id="46559b8a-0075-485d-a888-c783012e2176"
+									name="CreateVisitschedule">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="5d2d388a-a187-42cd-9c60-0a24f16880af"
+								name="BatteryConfigurationReport">
+									<testmodule
+									id="a8b45a14-a44d-48c5-aa82-f1d94bb11c49"
+									name="BatteryConfiguration_Report">
 									</testmodule>
 								</testcase>
 							</smartfoldernode>
@@ -7009,6 +7107,12 @@ rxversion="8.3">
 				</column>
 				<column>
 					barryDATA
+				</column>
+				<column>
+					WorkflowData
+				</column>
+				<column>
+					VisitscheduleData
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -7854,7 +7958,16 @@ rxversion="8.3">
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
 			</testcontainer>
 			<testcontainer
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
+			</testcontainer>
+			<testcontainer
+			id="eae30245-2af9-4fad-bc41-3d650f99a1e8">
+			</testcontainer>
+			<testcontainer
 			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58">
+			</testcontainer>
+			<testcontainer
+			id="fb9f5152-9292-4c17-b26c-90c15954d105">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
