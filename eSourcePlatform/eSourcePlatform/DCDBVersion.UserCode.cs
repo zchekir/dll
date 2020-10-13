@@ -22,45 +22,35 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace eSourcePlatform.VersionChecks
+namespace eSourcePlatform
 {
-    public partial class CSP_DBVersion
-    {
+       public partial class DCDBVersion
+       {
     	//variables:
     	public static DataTable dt = new DataTable();
-       
+        
         private void Init()
         {
             
         }
 
-        public void CSPDBVersion()
+        public void dc_DBversion(string dbserver, string database, string username, string password, string authentication, string migrationid)
         {
-        	
-        		
-        	
-        }
-
-        public void Check_Version(string dbserver, string database, string username, string password, string authentication, string migrationid)
-        {
-            
-
+           
 			
-			
-
-			//Validating the CSP DB Version
-
 			dt.Reset();
 			
 			
 			
-			         string query = @"SELECT top 1 
-                                    [MigrationId]
-                                   ,[TemporalValidFrom]
-                                    FROM [dbo].[__MigrationHistory]
+			         string query = @"SELECT TOP 1
+                                    MigrationId
+                                    FROM [dbo].[__EFMigrationsHistory]  
                                     order by 1 desc";
-			         
-			     Report.Info( " Validating  DB version..........  ");
+			
+			
+		
+				
+				Report.Info( " Validating  DCT DB  version.....  ");
 				
 				//Connecting to SQL DB:
 				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
@@ -69,30 +59,25 @@ namespace eSourcePlatform.VersionChecks
 				da.SelectCommand.Parameters.AddWithValue("@migrationid", migrationid);
 				
 				// Get the data from DB
-				
 				try{
 					
-				  using (da)
-				  da.Fill(dt);
+				using (da)
+				da.Fill(dt);
 				  
 				 string DBVersion = dt.Rows[0][0].ToString();
 				 string[] dbvID= DBVersion.Split();
 				 
-			     //Pringting the Current CSP DB version:
-			     Report.Log(ReportLevel.Info,  "CSP DB version: " + "  " + dbvID[0]  );
-			     
-			     //Validating the current with the expected results
+			
+			     Report.Log(ReportLevel.Info,  "DTC DB version: " + "  " + dbvID[0]  );
+			    
+			     //Validating the DB versions
 			     Validate.AreEqual(dbvID[0] ,migrationid);
-				
+			      
 				}catch (Exception e){
 					
 				    Report.Log(ReportLevel.Info,  "Error: " + e.Message );	
 				}
-			
         }
-
-        
 
     }
 }
-

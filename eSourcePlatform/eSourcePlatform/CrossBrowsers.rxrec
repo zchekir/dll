@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c"
+id="13f93452-caa0-4896-9eb9-78ed676c4e2f"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateCSPStudy
+		CrossBrowsers
 	</name>
 	<repeatcount>
 		1
@@ -23,36 +23,26 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateCSPStudy"
-	namespace="CSP.InternalAPIModules">
+	classname="CrossBrowsers"
+	namespace="eSourcePlatform">
 	</codegen>
 	<variables>
 		<var
-		id="13025d57-c07f-499e-9fdd-ca183fe2d546"
-		name="DOM">
-			cgst-qc-jordan.azurewebsites.net/
+		id="bb8ef161-4edf-4836-b56d-18063fd0389e"
+		name="URL">
 		</var>
 		<var
-		id="cfa99b0b-017a-4764-8cb4-d5010828965c"
-		name="AuthToken">
-			y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo
-		</var>
-		<var
-		id="affd5edb-9c3b-40b4-b20a-72084de8e96b"
-		name="Study_ID">
-		</var>
-		<var
-		id="bc8c4e88-b1fb-4033-8df5-08a8bb96605b"
-		name="StudyName">
+		id="ea36a3a4-0352-4462-afc1-df536ed57198"
+		name="CurrentBrowser">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CreateCSPStudy"
+		classname="CrossBrowsers"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="CSPStudy"
-		namespace="CSP.InternalAPIModules"
+		methodname="CrossBrowsers_Open_browser"
+		namespace="eSourcePlatform"
 		optional="False"
 		varname="">
 			<comment>
@@ -60,11 +50,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="14f19ca7-1225-478e-ae86-15d1acda5b17">
+			id="113c0e9a-2dd2-4e9b-a521-61480fb94182">
 				<argument
-				argname="DOM"
-				id="f28ef661-9c89-42e8-9427-d0343f0e0049"
-				variable="DOM">
+				argname="URL"
+				id="aa2351d0-e857-42a5-8583-04f4fd4c5ab7"
+				variable="URL">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -72,9 +62,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="AuthToken"
-				id="62b34233-ef7d-4737-aeda-18ad59e8aacb"
-				variable="AuthToken">
+				argname="CurrentBrowser"
+				id="fafcaf6a-23c7-4ff1-8096-484ad9e49c2e"
+				variable="CurrentBrowser">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -83,24 +73,33 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="60000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
-	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
-	name="CSPRepository"
-	relativepath="..\CSPRepository.rxrep"
+	id="1b4df078-48fd-44ad-b314-173b9dd113af"
+	name="eSourcePlatformRepository"
+	relativepath="eSourcePlatformRepository.rxrep"
 	rxversion="8.3">
 		<codegen
-		classname="CSPRepository"
-		namespace="CSP">
+		classname="eSourcePlatformRepository"
+		namespace="eSourcePlatform">
 		</codegen>
 		<rootfolder
-		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		id="d677fdb9-00e1-4467-9fce-a84c063e8bd0"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateCSPStudy.UserCode.cs
+		CrossBrowsers.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

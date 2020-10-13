@@ -20,47 +20,100 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.StudiesPage
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Subjects_Button recording.
+    ///The WorkflowCreation recording.
     /// </summary>
-    [TestModule("7bfdabe8-1bfa-4069-9552-d0e070c42a5f", ModuleType.Recording, 1)]
-    public partial class Click_Subjects_Button : ITestModule
+    [TestModule("ff1ab6c2-86bd-43f8-8d89-a8c55c748cf2", ModuleType.Recording, 1)]
+    public partial class WorkflowCreation : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static Click_Subjects_Button instance = new Click_Subjects_Button();
+        static WorkflowCreation instance = new WorkflowCreation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Subjects_Button()
+        public WorkflowCreation()
         {
+            Token = "";
+            Studyid = "";
+            WorkflowData = "";
+            Studname = "";
+            CSPDOM = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Subjects_Button Instance
+        public static WorkflowCreation Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _Token;
+
         /// <summary>
-        /// Gets or sets the value of variable RCCDOM.
+        /// Gets or sets the value of variable Token.
         /// </summary>
-        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string RCCDOM
+        [TestVariable("ab231873-9431-40c2-b70a-1df0514586db")]
+        public string Token
         {
-            get { return repo.RCCDOM; }
-            set { repo.RCCDOM = value; }
+            get { return _Token; }
+            set { _Token = value; }
+        }
+
+        string _Studyid;
+
+        /// <summary>
+        /// Gets or sets the value of variable Studyid.
+        /// </summary>
+        [TestVariable("589d157d-3a47-44e9-9f62-7a57b0901e47")]
+        public string Studyid
+        {
+            get { return _Studyid; }
+            set { _Studyid = value; }
+        }
+
+        string _WorkflowData;
+
+        /// <summary>
+        /// Gets or sets the value of variable WorkflowData.
+        /// </summary>
+        [TestVariable("af161e08-72c8-4a09-8ec4-3d90ed60f941")]
+        public string WorkflowData
+        {
+            get { return _WorkflowData; }
+            set { _WorkflowData = value; }
+        }
+
+        string _Studname;
+
+        /// <summary>
+        /// Gets or sets the value of variable Studname.
+        /// </summary>
+        [TestVariable("1985b0c0-efe4-46b6-902c-4c52cb9ac83f")]
+        public string Studname
+        {
+            get { return _Studname; }
+            set { _Studname = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("31d9b937-2664-4724-bbe7-6fd57c281220")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion
@@ -89,20 +142,7 @@ namespace RedCapCloud.StudiesPage
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(1));
-            Delay.Duration(800, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsButton' at Center.", repo.REDCapCloud.SubjectsButtonInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SubjectsButton.Click(100);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
-            Delay.Duration(1000, false);
-            
-            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
+            createWorkflow(Token, Studyid, WorkflowData, Studname, CSPDOM);
             Delay.Milliseconds(0);
             
         }

@@ -152,6 +152,7 @@ namespace ReportingLayer
             RepoItemInfo _scrollbarInfo;
             RepoItemInfo _scrollleftbuttonInfo;
             RepoItemInfo _protocolidcellInfo;
+            RepoItemInfo _searchtestidentifierInfo;
 
             /// <summary>
             /// Creates a new PowerBI  folder.
@@ -169,6 +170,7 @@ namespace ReportingLayer
                 _scrollbarInfo = new RepoItemInfo(this, "ScrollBar", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]", 30000, null, "2b0a7c53-2baa-422f-9950-059eea3eeccb");
                 _scrollleftbuttonInfo = new RepoItemInfo(this, "ScrollLeftButton", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]/div[1]/?/?/tag[@tagname='polygon']", 30000, null, "a1a5f7bb-a23f-4180-8c55-625d47459c67");
                 _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 300000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
+                _searchtestidentifierInfo = new RepoItemInfo(this, "SearchTestIdentifier", ".//input[#'mat-input-0']", 30000, null, "42ff8dc7-971b-41a9-81b2-36fd58ed42d8");
             }
 
             /// <summary>
@@ -388,6 +390,30 @@ namespace ReportingLayer
             }
 
             /// <summary>
+            /// The SearchTestIdentifier item.
+            /// </summary>
+            [RepositoryItem("42ff8dc7-971b-41a9-81b2-36fd58ed42d8")]
+            public virtual Ranorex.InputTag SearchTestIdentifier
+            {
+                get
+                {
+                    return _searchtestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SearchTestIdentifier item info.
+            /// </summary>
+            [RepositoryItemInfo("42ff8dc7-971b-41a9-81b2-36fd58ed42d8")]
+            public virtual RepoItemInfo SearchTestIdentifierInfo
+            {
+                get
+                {
+                    return _searchtestidentifierInfo;
+                }
+            }
+
+            /// <summary>
             /// The DateOfAssessmentFilter folder.
             /// </summary>
             [RepositoryFolder("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
@@ -417,29 +443,35 @@ namespace ReportingLayer
             RepoItemInfo _applyfilterbuttonInfo;
             RepoItemInfo _filtertypedropdownInfo;
             RepoItemInfo _expandInfo;
+            RepoItemInfo _expandtestidentifierdropboxInfo;
+            RepoItemInfo _enterthettestidentifierInfo;
+            RepoItemInfo _checkthecheckbosInfo;
 
             /// <summary>
             /// Creates a new DateOfAssessmentFilter  folder.
             /// </summary>
             public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
-                    base("DateOfAssessmentFilter", ".//div[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
+                    base("DateOfAssessmentFilter", ".//section[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
             {
-                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-134']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
+                _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-139']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
                 _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-132']", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
                 _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
                 _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-9']", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
                 _expandInfo = new RepoItemInfo(this, "Expand", "div[2]//tag[9]//button[@title='Expand']", 30000, null, "9635faeb-ac8a-43f5-a295-6831032d50d4");
+                _expandtestidentifierdropboxInfo = new RepoItemInfo(this, "ExpandTestIdentifierDropBox", "div/div/tag[46]/div/div[1]/div[1]/h2[@title~'^''vwStandardExtract''\\[TestI']//mark[@innertext='TestIdentifier']", 30000, null, "68ce9f41-6740-4a79-a539-1f43daa7274d");
+                _enterthettestidentifierInfo = new RepoItemInfo(this, "EnterThetTestIdentifier", "div/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']", 30000, null, "5018c724-014d-4b63-b339-7a52e7f55804");
+                _checkthecheckbosInfo = new RepoItemInfo(this, "CheckThecheckBos", "?/?/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span", 30000, null, "68190d81-74fc-42d0-90a8-3a09b5d92c4a");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
             [RepositoryItem("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
-            public virtual Ranorex.DivTag Self
+            public virtual Ranorex.SectionTag Self
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.SectionTag>(true);
                 }
             }
 
@@ -574,6 +606,78 @@ namespace ReportingLayer
                     return _expandInfo;
                 }
             }
+
+            /// <summary>
+            /// The ExpandTestIdentifierDropBox item.
+            /// </summary>
+            [RepositoryItem("68ce9f41-6740-4a79-a539-1f43daa7274d")]
+            public virtual Ranorex.MarkTag ExpandTestIdentifierDropBox
+            {
+                get
+                {
+                    return _expandtestidentifierdropboxInfo.CreateAdapter<Ranorex.MarkTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExpandTestIdentifierDropBox item info.
+            /// </summary>
+            [RepositoryItemInfo("68ce9f41-6740-4a79-a539-1f43daa7274d")]
+            public virtual RepoItemInfo ExpandTestIdentifierDropBoxInfo
+            {
+                get
+                {
+                    return _expandtestidentifierdropboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterThetTestIdentifier item.
+            /// </summary>
+            [RepositoryItem("5018c724-014d-4b63-b339-7a52e7f55804")]
+            public virtual Ranorex.InputTag EnterThetTestIdentifier
+            {
+                get
+                {
+                    return _enterthettestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterThetTestIdentifier item info.
+            /// </summary>
+            [RepositoryItemInfo("5018c724-014d-4b63-b339-7a52e7f55804")]
+            public virtual RepoItemInfo EnterThetTestIdentifierInfo
+            {
+                get
+                {
+                    return _enterthettestidentifierInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckThecheckBos item.
+            /// </summary>
+            [RepositoryItem("68190d81-74fc-42d0-90a8-3a09b5d92c4a")]
+            public virtual Ranorex.SpanTag CheckThecheckBos
+            {
+                get
+                {
+                    return _checkthecheckbosInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckThecheckBos item info.
+            /// </summary>
+            [RepositoryItemInfo("68190d81-74fc-42d0-90a8-3a09b5d92c4a")]
+            public virtual RepoItemInfo CheckThecheckBosInfo
+            {
+                get
+                {
+                    return _checkthecheckbosInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -586,6 +690,8 @@ namespace ReportingLayer
             RepoItemInfo _testslicerbodyInfo;
             RepoItemInfo _siteidslicerbodyInfo;
             RepoItemInfo _dateslicerbodyInfo;
+            RepoItemInfo _serchtestidentifierInfo;
+            RepoItemInfo _selectcheckboxInfo;
 
             /// <summary>
             /// Creates a new Slicers  folder.
@@ -597,6 +703,8 @@ namespace ReportingLayer
                 _testslicerbodyInfo = new RepoItemInfo(this, "TestSlicerBody", "tag[5]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]", 30000, null, "3f99a176-f3af-4e53-8c11-f115069afc48");
                 _siteidslicerbodyInfo = new RepoItemInfo(this, "SiteIDSlicerBody", "tag[2]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]", 30000, null, "b05ef6a2-43ac-4d29-b839-242c690c08ac");
                 _dateslicerbodyInfo = new RepoItemInfo(this, "DateSlicerBody", "tag[3]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]", 30000, null, "af1f76d8-01ad-4387-9c5a-ce6d35897376");
+                _serchtestidentifierInfo = new RepoItemInfo(this, "SerchTestIdentifier", "tag[4]/tag[@tagname='transform']/div/div[3]/?/?/tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']", 30000, null, "dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a");
+                _selectcheckboxInfo = new RepoItemInfo(this, "SelectCheckBox", "tag[4]/tag[@tagname='transform']/div/div[3]/?/?/tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span", 30000, null, "992439ee-2d5e-40c3-b64c-bb82dd64be9f");
             }
 
             /// <summary>
@@ -716,6 +824,54 @@ namespace ReportingLayer
                 get
                 {
                     return _dateslicerbodyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SerchTestIdentifier item.
+            /// </summary>
+            [RepositoryItem("dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a")]
+            public virtual Ranorex.InputTag SerchTestIdentifier
+            {
+                get
+                {
+                    return _serchtestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SerchTestIdentifier item info.
+            /// </summary>
+            [RepositoryItemInfo("dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a")]
+            public virtual RepoItemInfo SerchTestIdentifierInfo
+            {
+                get
+                {
+                    return _serchtestidentifierInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectCheckBox item.
+            /// </summary>
+            [RepositoryItem("992439ee-2d5e-40c3-b64c-bb82dd64be9f")]
+            public virtual Ranorex.SpanTag SelectCheckBox
+            {
+                get
+                {
+                    return _selectcheckboxInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectCheckBox item info.
+            /// </summary>
+            [RepositoryItemInfo("992439ee-2d5e-40c3-b64c-bb82dd64be9f")]
+            public virtual RepoItemInfo SelectCheckBoxInfo
+            {
+                get
+                {
+                    return _selectcheckboxInfo;
                 }
             }
         }

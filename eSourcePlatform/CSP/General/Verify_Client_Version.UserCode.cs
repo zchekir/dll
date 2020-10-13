@@ -24,13 +24,10 @@ namespace CSP.General
 {
     public partial class Verify_Client_Version
     {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
+        
         private void Init()
         {
-            // Your recording specific initialization code goes here.
+            
         }
 
         public void ClientValidation()

@@ -47,6 +47,7 @@ namespace eSourcePlatform.VersionChecks
             dbPassword = "";
             Authentication = "";
             migrationid = "";
+            ProductVersion = "";
         }
 
         /// <summary>
@@ -129,6 +130,18 @@ namespace eSourcePlatform.VersionChecks
         {
             get { return _migrationid; }
             set { _migrationid = value; }
+        }
+
+        string _ProductVersion;
+
+        /// <summary>
+        /// Gets or sets the value of variable ProductVersion.
+        /// </summary>
+        [TestVariable("143032cd-20b0-4d7c-9e5e-19e4a0efae58")]
+        public string ProductVersion
+        {
+            get { return _ProductVersion; }
+            set { _ProductVersion = value; }
         }
 
 #endregion

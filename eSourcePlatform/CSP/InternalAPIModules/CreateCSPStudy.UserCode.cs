@@ -63,7 +63,7 @@ namespace CSP.InternalAPIModules
 	{
 		//variables:
 		string id="null";
-		string protocolName= "APIStudy2";
+		string protocolName= "APIStudy_";
 		string CodeName= "APIStudy2";
 		string sponsor= "Cogstate";
 		
@@ -115,8 +115,8 @@ namespace CSP.InternalAPIModules
 				
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<studyCreationR>(response);
-				string Study_ID = responseObject.id;
-				string StudyName = responseObject.protocolName;
+				Study_ID = responseObject.id;
+				StudyName = responseObject.protocolName;
 				
 				Report.Log(ReportLevel.Info, "StudyID:"+ Study_ID);
 				

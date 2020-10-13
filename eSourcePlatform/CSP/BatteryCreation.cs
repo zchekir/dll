@@ -20,89 +20,113 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.InternalAPIModules
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateCSPStudy recording.
+    ///The BatteryCreation recording.
     /// </summary>
-    [TestModule("346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c", ModuleType.Recording, 1)]
-    public partial class CreateCSPStudy : ITestModule
+    [TestModule("9c9fbb6a-7049-4ee6-8a05-326298e5321f", ModuleType.Recording, 1)]
+    public partial class BatteryCreation : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static CreateCSPStudy instance = new CreateCSPStudy();
+        static BatteryCreation instance = new BatteryCreation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateCSPStudy()
+        public BatteryCreation()
         {
-            DOM = "cgst-qc-jordan.azurewebsites.net/";
-            AuthToken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
-            Study_ID = "";
-            StudyName = "";
+            Token = "";
+            Studyid = "";
+            BatteryJASON = "";
+            CSPDOM = "";
+            Studname = "";
+            Batteryversion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateCSPStudy Instance
+        public static BatteryCreation Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _DOM;
+        string _Token;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable Token.
         /// </summary>
-        [TestVariable("13025d57-c07f-499e-9fdd-ca183fe2d546")]
-        public string DOM
+        [TestVariable("21d80088-00f9-4cd2-b431-60d0da0a6b1b")]
+        public string Token
         {
-            get { return _DOM; }
-            set { _DOM = value; }
+            get { return _Token; }
+            set { _Token = value; }
         }
 
-        string _AuthToken;
+        string _Studyid;
 
         /// <summary>
-        /// Gets or sets the value of variable AuthToken.
+        /// Gets or sets the value of variable Studyid.
         /// </summary>
-        [TestVariable("cfa99b0b-017a-4764-8cb4-d5010828965c")]
-        public string AuthToken
+        [TestVariable("6382549c-46ec-491a-885a-197718e89e74")]
+        public string Studyid
         {
-            get { return _AuthToken; }
-            set { _AuthToken = value; }
+            get { return _Studyid; }
+            set { _Studyid = value; }
         }
 
-        string _Study_ID;
+        string _BatteryJASON;
 
         /// <summary>
-        /// Gets or sets the value of variable Study_ID.
+        /// Gets or sets the value of variable BatteryJASON.
         /// </summary>
-        [TestVariable("affd5edb-9c3b-40b4-b20a-72084de8e96b")]
-        public string Study_ID
+        [TestVariable("8f519bcc-3e54-4657-b742-d5b665f9d993")]
+        public string BatteryJASON
         {
-            get { return _Study_ID; }
-            set { _Study_ID = value; }
+            get { return _BatteryJASON; }
+            set { _BatteryJASON = value; }
         }
 
-        string _StudyName;
+        string _Studname;
 
         /// <summary>
-        /// Gets or sets the value of variable StudyName.
+        /// Gets or sets the value of variable Studname.
         /// </summary>
-        [TestVariable("bc8c4e88-b1fb-4033-8df5-08a8bb96605b")]
-        public string StudyName
+        [TestVariable("32124dfc-6a12-4785-b854-8ade4508119a")]
+        public string Studname
         {
-            get { return _StudyName; }
-            set { _StudyName = value; }
+            get { return _Studname; }
+            set { _Studname = value; }
+        }
+
+        string _Batteryversion;
+
+        /// <summary>
+        /// Gets or sets the value of variable Batteryversion.
+        /// </summary>
+        [TestVariable("48ad6700-c66f-4b87-b79b-c93002a290dc")]
+        public string Batteryversion
+        {
+            get { return _Batteryversion; }
+            set { _Batteryversion = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("bb97dc8b-d79d-4e45-b659-b8ff0fd6dcd8")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion
@@ -131,7 +155,7 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            CSPStudy(DOM, AuthToken);
+            battery_Creation(Token, Studyid, BatteryJASON, CSPDOM, Batteryversion);
             Delay.Milliseconds(0);
             
         }

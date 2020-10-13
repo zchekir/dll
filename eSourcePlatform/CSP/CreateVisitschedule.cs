@@ -20,89 +20,113 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.InternalAPIModules
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateCSPStudy recording.
+    ///The CreateVisitschedule recording.
     /// </summary>
-    [TestModule("346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c", ModuleType.Recording, 1)]
-    public partial class CreateCSPStudy : ITestModule
+    [TestModule("8013edcd-a876-49a7-b495-e779933a8fe2", ModuleType.Recording, 1)]
+    public partial class CreateVisitschedule : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static CreateCSPStudy instance = new CreateCSPStudy();
+        static CreateVisitschedule instance = new CreateVisitschedule();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateCSPStudy()
+        public CreateVisitschedule()
         {
-            DOM = "cgst-qc-jordan.azurewebsites.net/";
-            AuthToken = "y5-eCG5gsdDFJTSWx8nSn2jiUizisJkAB26EEz-Bz3oCLDPj9BLl7gUJqswTemRo";
-            Study_ID = "";
-            StudyName = "";
+            Token = "";
+            Studyid = "";
+            CSPDOM = "";
+            VisitCode = "";
+            VisitSceduleData = "";
+            rNumber = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateCSPStudy Instance
+        public static CreateVisitschedule Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _DOM;
+        string _Token;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable Token.
         /// </summary>
-        [TestVariable("13025d57-c07f-499e-9fdd-ca183fe2d546")]
-        public string DOM
+        [TestVariable("d4990ef5-ff60-4162-a061-a9cff9bb6b75")]
+        public string Token
         {
-            get { return _DOM; }
-            set { _DOM = value; }
+            get { return _Token; }
+            set { _Token = value; }
         }
 
-        string _AuthToken;
+        string _Studyid;
 
         /// <summary>
-        /// Gets or sets the value of variable AuthToken.
+        /// Gets or sets the value of variable Studyid.
         /// </summary>
-        [TestVariable("cfa99b0b-017a-4764-8cb4-d5010828965c")]
-        public string AuthToken
+        [TestVariable("c0deec5c-cb56-44fb-85fb-8b319345fdd7")]
+        public string Studyid
         {
-            get { return _AuthToken; }
-            set { _AuthToken = value; }
+            get { return _Studyid; }
+            set { _Studyid = value; }
         }
 
-        string _Study_ID;
+        string _VisitCode;
 
         /// <summary>
-        /// Gets or sets the value of variable Study_ID.
+        /// Gets or sets the value of variable VisitCode.
         /// </summary>
-        [TestVariable("affd5edb-9c3b-40b4-b20a-72084de8e96b")]
-        public string Study_ID
+        [TestVariable("a3fa63dd-ce5a-4761-9da3-499cf61c5616")]
+        public string VisitCode
         {
-            get { return _Study_ID; }
-            set { _Study_ID = value; }
+            get { return _VisitCode; }
+            set { _VisitCode = value; }
         }
 
-        string _StudyName;
+        string _VisitSceduleData;
 
         /// <summary>
-        /// Gets or sets the value of variable StudyName.
+        /// Gets or sets the value of variable VisitSceduleData.
         /// </summary>
-        [TestVariable("bc8c4e88-b1fb-4033-8df5-08a8bb96605b")]
-        public string StudyName
+        [TestVariable("bed4926d-b6fd-44ab-98a4-c52e31f5f26c")]
+        public string VisitSceduleData
         {
-            get { return _StudyName; }
-            set { _StudyName = value; }
+            get { return _VisitSceduleData; }
+            set { _VisitSceduleData = value; }
+        }
+
+        string _rNumber;
+
+        /// <summary>
+        /// Gets or sets the value of variable rNumber.
+        /// </summary>
+        [TestVariable("1e19f4b4-049a-47bf-9d6f-a7d36d843826")]
+        public string rNumber
+        {
+            get { return _rNumber; }
+            set { _rNumber = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("39991ace-f3d0-4ca1-aebb-999dca1fa0f0")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
         }
 
 #endregion
@@ -131,7 +155,7 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            CSPStudy(DOM, AuthToken);
+            Visitschedulecreation(Token, Studyid, VisitCode, CSPDOM, VisitSceduleData);
             Delay.Milliseconds(0);
             
         }

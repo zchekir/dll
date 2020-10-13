@@ -1955,6 +1955,18 @@
       <DependentUpon>Select_Battery.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="BatteryCreation.cs">
+      <BoundTo>7d63cecf-18a1-4c46-956b-e2c488cc67a8</BoundTo>
+      <DependentUpon>BatteryCreation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>acd0411b-e486-4576-9407-8a8609a27fd5</id>
+    </Compile>
+    <Compile Include="BatteryCreation.UserCode.cs">
+      <BoundTo>7d63cecf-18a1-4c46-956b-e2c488cc67a8</BoundTo>
+      <DependentUpon>BatteryCreation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8d7c166f-9be2-4ef3-ac92-7b2d6c89016c</id>
+    </Compile>
     <Compile Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.cs">
       <id>56aa4cc6-772e-452d-8040-b8dd645484ff</id>
       <BoundTo>e1b8c8b4-a9af-4dd3-8020-b2b9a7dcc9f2</BoundTo>
@@ -2134,6 +2146,18 @@
       <BoundTo>c4df6933-e18f-4806-be75-b17a66a11ebc</BoundTo>
       <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="CreateVisitschedule.cs">
+      <BoundTo>5b9c3c72-3950-4d1c-9a7c-873a644cdc9b</BoundTo>
+      <DependentUpon>CreateVisitschedule.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4d31e497-a437-42c8-8f6c-63676877a288</id>
+    </Compile>
+    <Compile Include="CreateVisitschedule.UserCode.cs">
+      <BoundTo>5b9c3c72-3950-4d1c-9a7c-873a644cdc9b</BoundTo>
+      <DependentUpon>CreateVisitschedule.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>948fabeb-7526-4673-99cd-986a4ca6f10c</id>
     </Compile>
     <Compile Include="CSPRepository.cs">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -3806,6 +3830,18 @@
       <DependentUpon>Click_Add_Workflow.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="WorkflowCreation.cs">
+      <BoundTo>ca2e4be2-0020-4481-97ba-86bf6949f970</BoundTo>
+      <DependentUpon>WorkflowCreation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1867a388-a720-4c8e-b065-74a9caca7b25</id>
+    </Compile>
+    <Compile Include="WorkflowCreation.UserCode.cs">
+      <BoundTo>ca2e4be2-0020-4481-97ba-86bf6949f970</BoundTo>
+      <DependentUpon>WorkflowCreation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f164412-4953-4658-b402-6a7a43829d84</id>
+    </Compile>
     <Compile Include="WorkflowsPage\Click_Edit_Workflow.cs">
       <id>ef4663e8-1633-49ae-be60-7bd848e58570</id>
       <BoundTo>c758f181-5da3-4c1f-8c54-de25e473ac14</BoundTo>
@@ -4583,6 +4619,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>ae83b4a9-4f47-44d6-a475-555fe73f8c3d</recordtableid>
     </None>
+    <None Include="BatteryCreation.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>7d63cecf-18a1-4c46-956b-e2c488cc67a8</id>
+      <recordtableid>9c9fbb6a-7049-4ee6-8a05-326298e5321f</recordtableid>
+    </None>
     <None Include="BatteryTemplatePage\Clear_BatteryTemplate_Field.rxrec">
       <id>e1b8c8b4-a9af-4dd3-8020-b2b9a7dcc9f2</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -4657,6 +4698,11 @@
       <id>c4df6933-e18f-4806-be75-b17a66a11ebc</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
+    </None>
+    <None Include="CreateVisitschedule.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>5b9c3c72-3950-4d1c-9a7c-873a644cdc9b</id>
+      <recordtableid>8013edcd-a876-49a7-b495-e779933a8fe2</recordtableid>
     </None>
     <None Include="CSPRepository.rximg">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -5244,6 +5290,11 @@
       <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
       <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+    </None>
+    <None Include="WorkflowCreation.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>ca2e4be2-0020-4481-97ba-86bf6949f970</id>
+      <recordtableid>ff1ab6c2-86bd-43f8-8d89-a8c55c748cf2</recordtableid>
     </None>
     <None Include="images\RJ.png">
       <id>6d9e5abf-4447-4cfc-8ad3-859562e71728</id>

@@ -33,12 +33,10 @@ namespace ReportingLayer.StandardExtract
 		
 		private void Init()
 		{
-			// Your recording specific initialization code goes here.
+			
 		}
 
-		/// <summary>
-		/// Query the Reporting DB View and confirm there are no Pending cells displayed in the Report.
-		/// </summary>
+		
 		public void CheckPending(string dbserver, string database, string username, string password, string authentication)
 		{
 			DataTable dt = new DataTable();
@@ -46,7 +44,7 @@ namespace ReportingLayer.StandardExtract
 			timer.Start();
 			//Build SQL query and connection string
 			string query = @"SELECT * 
-							FROM [dbo].[vwStandardExtract]
+							FROM [extracts].[vwStandardExtract]
 							WHERE TestIdentifier = @TestIdentifier";
 			
 			//do while the peeding data appears in DB

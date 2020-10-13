@@ -89,8 +89,8 @@ namespace RedCapCloud.AddSubjectPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
-            Delay.Duration(500, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 200ms.", new RecordItemIndex(0));
+            Delay.Duration(200, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsPage.SaveAndEnterDataButton' at Center.", repo.REDCapCloud.SubjectsPage.SaveAndEnterDataButtonInfo, new RecordItemIndex(1));
             repo.REDCapCloud.SubjectsPage.SaveAndEnterDataButton.Click();

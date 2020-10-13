@@ -20,47 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.StudiesPage
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Click_Subjects_Button recording.
+    ///The CrossBrowsers recording.
     /// </summary>
-    [TestModule("7bfdabe8-1bfa-4069-9552-d0e070c42a5f", ModuleType.Recording, 1)]
-    public partial class Click_Subjects_Button : ITestModule
+    [TestModule("13f93452-caa0-4896-9eb9-78ed676c4e2f", ModuleType.Recording, 1)]
+    public partial class CrossBrowsers : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static Click_Subjects_Button instance = new Click_Subjects_Button();
+        static CrossBrowsers instance = new CrossBrowsers();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Click_Subjects_Button()
+        public CrossBrowsers()
         {
+            URL = "";
+            CurrentBrowser = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Click_Subjects_Button Instance
+        public static CrossBrowsers Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _URL;
+
         /// <summary>
-        /// Gets or sets the value of variable RCCDOM.
+        /// Gets or sets the value of variable URL.
         /// </summary>
-        [TestVariable("6f24cf1a-0e47-4c45-9ce6-3e042db234d2")]
-        public string RCCDOM
+        [TestVariable("bb8ef161-4edf-4836-b56d-18063fd0389e")]
+        public string URL
         {
-            get { return repo.RCCDOM; }
-            set { repo.RCCDOM = value; }
+            get { return _URL; }
+            set { _URL = value; }
+        }
+
+        string _CurrentBrowser;
+
+        /// <summary>
+        /// Gets or sets the value of variable CurrentBrowser.
+        /// </summary>
+        [TestVariable("ea36a3a4-0352-4462-afc1-df536ed57198")]
+        public string CurrentBrowser
+        {
+            get { return _CurrentBrowser; }
+            set { _CurrentBrowser = value; }
         }
 
 #endregion
@@ -89,21 +105,11 @@ namespace RedCapCloud.StudiesPage
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
+            CrossBrowsers_Open_browser(URL, CurrentBrowser);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(1));
-            Delay.Duration(800, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.SubjectsButton' at Center.", repo.REDCapCloud.SubjectsButtonInfo, new RecordItemIndex(2));
-            repo.REDCapCloud.SubjectsButton.Click(100);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
-            Delay.Duration(1000, false);
-            
-            Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(repo.REDCapCloud.ConfirmPopupYesButtonInfo, repo.REDCapCloud.ConfirmPopupYesButtonInfo);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(1));
+            Delay.Duration(60000, false);
             
         }
 

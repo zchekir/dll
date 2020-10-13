@@ -27,6 +27,10 @@ rxversion="8.3">
 	namespace="ReportingLayer.StandardExtract">
 	</codegen>
 	<variables>
+		<var
+		id="8aa89dac-1cd3-46e4-8810-9ee134597bdc"
+		name="TestIdentifier">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -160,6 +164,18 @@ efQ1YpvoJBVVv9GnHl/ckDMU7AjnI+tWqhuLcT7T5jxlc8pjv9QaTGJaJ+7EzHdJIoLN/Qe1QtFv
 gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<keysequenceitem
+		KeySequence="{Escape} "
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="a38283ec-3871-44ab-99d4-ee178c66289a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -168,22 +184,340 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="27fa2069-7244-4155-8d59-1c5a7c8bc085"
-		sx="2848"
-		sy="-341"
+		searchpropertyid="3f6d8da7-1859-45b2-85bd-d60273045448"
+		sx="1843"
+		sy="296"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="9635faeb-ac8a-43f5-a295-6831032d50d4"
-			sourcename="Recorder">
+			id="42ff8dc7-971b-41a9-81b2-36fd58ed42d8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="1779,288,128,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						mat-input-0
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						search
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Search
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="_ngcontent-kry-c56"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-required"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="matinput"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="pbi-focus-tracker-idx"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="spellcheck"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]//tag[9]//button[@title='Expand']
+					/dom[@domain='app.powerbi.com']//input[#'mat-input-0']
 				</path>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keysequenceitem
+		KeySequence="TestIdentifier"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="ce00d5aa-bccb-4593-bdae-1ec977cf523e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="42ff8dc7-971b-41a9-81b2-36fd58ed42d8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="1779,288,128,16"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						mat-input-0
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						search
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Search
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="_ngcontent-kry-c56"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-required"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="matinput"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="pbi-focus-tracker-idx"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="spellcheck"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//input[#'mat-input-0']
+				</path>
+			</info>
+		</keysequenceitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -192,7 +526,7 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="5fc475c0-0e2f-4388-a718-2d35b53b67ad"
+		searchpropertyid="bcc6cde3-1db1-400e-bc26-3618820fd507"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -201,48 +535,145 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="db43cf6c-681a-40a7-a643-376f7e2b8282"
+			id="68ce9f41-6740-4a79-a539-1f43daa7274d"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-9']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[46]/div/div[1]/?/?/button[@title='Expand']
 				</path>
 			</info>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="R"
+		KeySequence="Number"
 		duration="100ms"
 		enabled="True"
 		optional="False"
 		presstime="100ms"
-		searchpropertyid="9df8e5b1-bdbd-4b6c-8bba-c19c1d56096d">
+		searchpropertyid="d2269d91-178b-4974-aa91-e19d7e7e6889">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="TestIdentifier">
+				</binding>
 			</bindings>
 			<info
-			id="db43cf6c-681a-40a7-a643-376f7e2b8282"
+			id="5018c724-014d-4b63-b339-7a52e7f55804"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="inputtag"
+				rect="1784,412,124,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						searchInput
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Search
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-label"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="drag-resize-disabled"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="spellcheck"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-9']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="2fd9025c-e733-479d-bc8b-731e7c00c1b4">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="db43cf6c-681a-40a7-a643-376f7e2b8282"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-9']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']
 				</path>
 			</info>
 		</keysequenceitem>
@@ -256,14 +687,14 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 			</bindings>
 		</explicitdelayitem>
 		<mouseitem
-		action="Click"
+		action="Move"
 		button="Left"
 		duration="500ms"
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="df4da605-a8a5-4782-8be3-4b830c5dd1e5"
+		searchpropertyid="882bb9fb-712e-469d-b81d-4d52bd851186"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -272,80 +703,108 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
+			id="68190d81-74fc-42d0-90a8-3a09b5d92c4a"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="0,0,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-128']
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/?/?/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span
 				</path>
 			</info>
 		</mouseitem>
-		<keyitem
-		action="Press"
-		data="Down"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="10b3f17b-6664-4f89-8d7b-df9549630433"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-128']
-				</path>
-			</info>
-		</keyitem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="d362036b-21df-4b78-b518-a23b6936af60">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="773854ca-7a32-4c97-93e9-0aae1cf4c64c"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='app.powerbi.com']//div[#'visualFilterContainer']/div[2]/div/tag[9]//tag[@id='mat-select-128']
-				</path>
-			</info>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="{Tab}{Tab}"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="8b42104e-27ac-41da-bb46-709687071ae0">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="{Return}"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="d362036b-21df-4b78-b518-a23b6936af60">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keysequenceitem>
-		<explicitdelayitem
+		<mouseitem
+		action="Click"
+		button="Left"
 		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="04fa3cd4-5366-4f10-87d6-b2c3fd59e6cc"
+		sx="1767"
+		sy="444"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="68190d81-74fc-42d0-90a8-3a09b5d92c4a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="1762,439,10,10"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						glyphicon checkbox
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/?/?/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="900ms"
 		enabled="True"
 		optional="False">
 			<comment>
