@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -88,6 +88,14 @@ rxversion="8.3">
 			name="OpenAzLocation"
 			ref="d82ce541-c07b-4458-8378-0fcaefdb1f51"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="AzureURL"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="9b546544-466e-46b9-bd75-1142b2bbe916"
+					variablename="URL">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="0a7ee364-d00a-40c1-bca7-d35f69870050"
@@ -1571,7 +1579,7 @@ rxversion="8.3">
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
 			maxrange="0"
 			minrange="0"
-			name="Jackson_SmokeTest">
+			name="Tiger_SmokeTest">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -4420,7 +4428,7 @@ rxversion="8.3">
 					name="eSourcePlatform_Tests">
 						<smartfoldernode
 						id="63a0768d-8632-409b-adbf-fe7850003e81"
-						name="Jackson_SmokeTest">
+						name="Tiger_SmokeTest">
 							<smartfoldernode
 							id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
 							name="Validate_CSP_API&amp;Client_Versions">
@@ -5611,14 +5619,11 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -5701,7 +5706,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Checked"
-		lastknownrowcount="57"
+		lastknownrowcount="91"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -6163,13 +6168,7 @@ rxversion="8.3">
 			id="13963861-7aff-4b48-aaad-65caef5d47f4">
 			</testcontainer>
 			<testcontainer
-			id="1a3b5ec0-43ac-49d3-8ff7-d23f8a3ac01a">
-			</testcontainer>
-			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
-			</testcontainer>
-			<testcontainer
-			id="b77ce62f-f979-4ddc-90ac-3695cefcb4ad">
 			</testcontainer>
 			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
