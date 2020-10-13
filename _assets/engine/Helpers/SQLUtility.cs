@@ -104,6 +104,7 @@ namespace engine.Helpers
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'RawReactionTime' THEN Assessment.AssessmentTestOutcome.[Value] END)                    AS [RawReactionTime]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'RTVariability' THEN Assessment.AssessmentTestOutcome.[Value] END)                      AS [RTVariability]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'RawRTVariability' THEN Assessment.AssessmentTestOutcome.[Value] END)                   AS [RawRTVariability]
+		,MAX(CASE WHEN Assessment.Outcome.Description = 'RawRTDifference' THEN Assessment.AssessmentTestOutcome.[Value] END)                    AS [RawRTDifference]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'Accuracy' THEN Assessment.AssessmentTestOutcome.[Value] END)                           AS [Accuracy]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'RawAccuracy' THEN Assessment.AssessmentTestOutcome.[Value] END)                        AS [RawAccuracy]
 		,MAX(CASE WHEN Assessment.Outcome.Description = 'TotalCorrect' THEN Assessment.AssessmentTestOutcome.[Value] END)                       AS [TotalCorrect]
