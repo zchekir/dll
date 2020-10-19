@@ -26,8 +26,8 @@ using Newtonsoft.Json.Linq;
 
 namespace CSP
 {
-	
-	public class WorkflowJSONRequest
+ 
+public class BatteryWorkflowJSONRequest
 	{
 		public string JsonData { get; set; }
 	
@@ -36,7 +36,7 @@ namespace CSP
 		public string id { get; set; }
 		
 	/// Object for creating a new workflow request
-		public WorkflowJSONRequest()
+		public BatteryWorkflowJSONRequest()
 		{
 			
 		
@@ -44,23 +44,24 @@ namespace CSP
 		
 	}
 
-    public partial class WorkflowCreation
+
+	public partial class SetBatteryWorkflow
     {
         
         private void Init()
         {
-           
+            
         }
 
-        public void createWorkflow(string Token, string Studyid, string workflowData, string Studname, string CSPDOM)
+        public void SetBatteryWorkf(string StudyID, string Token, string WorkflowID, string BatteryID, string CSPDOM, string battryworkflowData, string WorkflowBlockID)
         {
-        	
-        //variable
-		    string url = "https://" + CSPDOM + "/api/studies/" + Studyid + "/workflows";
+            
+        	//variable
+		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID + "/workflowBlocks/"+ WorkflowBlockID;
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
-			httpRequest.Method = "POST";
+			httpRequest.Method = "PUT";
 			httpRequest.Headers.Add("Authorization", Token);
 			
 			
@@ -69,30 +70,34 @@ namespace CSP
 			{
 		 	
 		    
-               var testData = workflowData.Replace(@"<id>", Studyid);
+               var testData = battryworkflowData.Replace(@"<wkid>", WorkflowID).Replace(@"<studid>", StudyID).Replace(@"<batteryID>", BatteryID).Replace(@"<WorkflowBlockID>", WorkflowBlockID);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}
-           
+			
 			
 			
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			WorkflowJSONRequest responseObject = new WorkflowJSONRequest();
+			BatteryWorkflowJSONRequest responseObject = new BatteryWorkflowJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<WorkflowJSONRequest>(response);
-				workflow_id =responseObject.id; 
-				Report.Log(ReportLevel.Info, "The work is created as expected " + response );
-				Report.Log(ReportLevel.Info, "workflowID " + workflow_id);
+				responseObject = new JavaScriptSerializer().Deserialize<BatteryWorkflowJSONRequest>(response);
+				
+				Report.Log(ReportLevel.Info, "The battery of the workflow  is created as expected " + response );
+				
 			 }
-   }
-    
-  }
+        	
+        	
+        	
+        	
+        }
+
+    }
 }

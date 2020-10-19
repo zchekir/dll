@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8013edcd-a876-49a7-b495-e779933a8fe2"
+id="d8498245-af13-48dd-ba0c-4889cb6e2f8b"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateVisitschedule
+		addSuccessBlock
 	</name>
 	<repeatcount>
 		1
@@ -23,45 +23,33 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateVisitschedule"
+	classname="addSuccessBlock"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="d4990ef5-ff60-4162-a061-a9cff9bb6b75"
+		id="904a2df6-764d-4622-bff0-e45cd56f5fd1"
 		name="Token">
 		</var>
 		<var
-		id="c0deec5c-cb56-44fb-85fb-8b319345fdd7"
-		name="Studyid">
-		</var>
-		<var
-		id="39991ace-f3d0-4ca1-aebb-999dca1fa0f0"
+		id="eee7c247-23d5-47cd-ad1c-3117191c5393"
 		name="CSPDOM">
 		</var>
 		<var
-		id="a3fa63dd-ce5a-4761-9da3-499cf61c5616"
-		name="VisitCode">
+		id="ebe244c1-7ad4-4a69-88c8-0f02dfdb28f1"
+		name="BlockJsonDara">
 		</var>
 		<var
-		id="bed4926d-b6fd-44ab-98a4-c52e31f5f26c"
-		name="VisitSceduleData">
-		</var>
-		<var
-		id="1e19f4b4-049a-47bf-9d6f-a7d36d843826"
-		name="rNumber">
-		</var>
-		<var
-		id="dd7c2fe2-09d6-4803-b112-4edfe9c65ed1"
-		name="workflow_id">
+		id="dc652966-e27b-4045-abb1-7526d7572182"
+		name="WorkflowID">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CreateVisitschedule"
+		classname="addSuccessBlock"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Visitschedulecreation"
+		methodname="addBlockSuccess"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -70,40 +58,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4f56b07e-7d29-4762-a85a-f1fda9d9513a">
-				<argument
-				argname="Token"
-				id="cc2367fc-83ae-4b20-b85f-bb4b4bec044e"
-				variable="Token">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="Studyid"
-				id="a79e9500-b3d4-4aa0-ae24-fafbc16da4a7"
-				variable="Studyid">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="VisitCode"
-				id="c3826ada-ee80-4207-9351-503964f808b1"
-				variable="VisitCode">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
+			id="dcc8dde6-d653-45e4-b809-1f22820f785b">
 				<argument
 				argname="CSPDOM"
-				id="d4a61963-916d-4d25-9484-855ad283facd"
+				id="9ae2dd32-7bc2-4d28-b628-946be57ce617"
 				variable="CSPDOM">
 					<argvaluetype>
 						System.String
@@ -112,9 +70,29 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="VisitSceduleData"
-				id="3998b921-8c7b-4f39-9e66-0b09473fc4f4"
-				variable="VisitSceduleData">
+				argname="WorkflowID"
+				id="4ddbcbe2-67f5-4d04-bb98-3fbbc211b144"
+				variable="WorkflowID">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="Token"
+				id="447f7ae0-3ca3-4ae4-b62a-aff2bbdd0512"
+				variable="Token">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="BlockJsonDara"
+				id="b1d3d478-fa00-4ec8-8446-20c547662199"
+				variable="BlockJsonDara">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -140,7 +118,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateVisitschedule.UserCode.cs
+		addSuccessBlock.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -24,105 +24,118 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The WorkflowCreation recording.
+    ///The SetBatteryWorkflow recording.
     /// </summary>
-    [TestModule("ff1ab6c2-86bd-43f8-8d89-a8c55c748cf2", ModuleType.Recording, 1)]
-    public partial class WorkflowCreation : ITestModule
+    [TestModule("b4546a75-f491-464e-b1d9-93673cd91198", ModuleType.Recording, 1)]
+    public partial class SetBatteryWorkflow : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static WorkflowCreation instance = new WorkflowCreation();
+        static SetBatteryWorkflow instance = new SetBatteryWorkflow();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public WorkflowCreation()
+        public SetBatteryWorkflow()
         {
-            Token = "";
-            Studyid = "";
-            WorkflowData = "";
-            Studname = "";
             CSPDOM = "";
-            workflow_id = "";
+            StudyID = "";
+            Token = "";
+            WorkflowID = "";
+            BatteryID = "";
+            battryworkflowData = "";
+            WorkflowBlockID = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static WorkflowCreation Instance
+        public static SetBatteryWorkflow Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _StudyID;
+
+        /// <summary>
+        /// Gets or sets the value of variable StudyID.
+        /// </summary>
+        [TestVariable("8725def3-eb5f-415b-a070-d6a527b45ccb")]
+        public string StudyID
+        {
+            get { return _StudyID; }
+            set { _StudyID = value; }
+        }
+
         string _Token;
 
         /// <summary>
         /// Gets or sets the value of variable Token.
         /// </summary>
-        [TestVariable("ab231873-9431-40c2-b70a-1df0514586db")]
+        [TestVariable("0c9bd693-3b08-4060-a1e1-e8ab4a71d425")]
         public string Token
         {
             get { return _Token; }
             set { _Token = value; }
         }
 
-        string _Studyid;
+        string _WorkflowID;
 
         /// <summary>
-        /// Gets or sets the value of variable Studyid.
+        /// Gets or sets the value of variable WorkflowID.
         /// </summary>
-        [TestVariable("589d157d-3a47-44e9-9f62-7a57b0901e47")]
-        public string Studyid
+        [TestVariable("157a1573-135b-4c82-8a48-c2f607067a5c")]
+        public string WorkflowID
         {
-            get { return _Studyid; }
-            set { _Studyid = value; }
+            get { return _WorkflowID; }
+            set { _WorkflowID = value; }
         }
 
-        string _WorkflowData;
+        string _BatteryID;
 
         /// <summary>
-        /// Gets or sets the value of variable WorkflowData.
+        /// Gets or sets the value of variable BatteryID.
         /// </summary>
-        [TestVariable("af161e08-72c8-4a09-8ec4-3d90ed60f941")]
-        public string WorkflowData
+        [TestVariable("96814775-6349-4a06-ad1f-77e301ff6496")]
+        public string BatteryID
         {
-            get { return _WorkflowData; }
-            set { _WorkflowData = value; }
+            get { return _BatteryID; }
+            set { _BatteryID = value; }
         }
 
-        string _Studname;
+        string _battryworkflowData;
 
         /// <summary>
-        /// Gets or sets the value of variable Studname.
+        /// Gets or sets the value of variable battryworkflowData.
         /// </summary>
-        [TestVariable("1985b0c0-efe4-46b6-902c-4c52cb9ac83f")]
-        public string Studname
+        [TestVariable("092f8040-dca2-4bf9-9f22-9cda444d12b7")]
+        public string battryworkflowData
         {
-            get { return _Studname; }
-            set { _Studname = value; }
+            get { return _battryworkflowData; }
+            set { _battryworkflowData = value; }
         }
 
-        string _workflow_id;
+        string _WorkflowBlockID;
 
         /// <summary>
-        /// Gets or sets the value of variable workflow_id.
+        /// Gets or sets the value of variable WorkflowBlockID.
         /// </summary>
-        [TestVariable("7d8630e7-cdab-4d0f-9a43-25167981d80b")]
-        public string workflow_id
+        [TestVariable("177ac509-fdf5-4906-a0aa-b07e555ca393")]
+        public string WorkflowBlockID
         {
-            get { return _workflow_id; }
-            set { _workflow_id = value; }
+            get { return _WorkflowBlockID; }
+            set { _WorkflowBlockID = value; }
         }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
-        [TestVariable("31d9b937-2664-4724-bbe7-6fd57c281220")]
+        [TestVariable("36565d73-70ab-430e-a080-310474051032")]
         public string CSPDOM
         {
             get { return repo.CSPDOM; }
@@ -155,7 +168,7 @@ namespace CSP
 
             Init();
 
-            createWorkflow(Token, Studyid, WorkflowData, Studname, CSPDOM);
+            SetBatteryWorkf(StudyID, Token, WorkflowID, BatteryID, CSPDOM, battryworkflowData, WorkflowBlockID);
             Delay.Milliseconds(0);
             
         }

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8013edcd-a876-49a7-b495-e779933a8fe2"
+id="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateVisitschedule
+		CompletionSteps
 	</name>
 	<repeatcount>
 		1
@@ -23,45 +23,70 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateVisitschedule"
+	classname="CompletionSteps"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="d4990ef5-ff60-4162-a061-a9cff9bb6b75"
+		id="09b82bc2-2e16-4a91-bd36-ede4d9bffdce"
 		name="Token">
 		</var>
 		<var
-		id="c0deec5c-cb56-44fb-85fb-8b319345fdd7"
-		name="Studyid">
-		</var>
-		<var
-		id="39991ace-f3d0-4ca1-aebb-999dca1fa0f0"
+		id="f58f18f9-9508-4d25-9e45-cf9cd56afbd4"
 		name="CSPDOM">
 		</var>
 		<var
-		id="a3fa63dd-ce5a-4761-9da3-499cf61c5616"
-		name="VisitCode">
+		id="9e61b69c-82e2-4a9d-8701-0b9d50cfa695"
+		name="BlockID">
 		</var>
 		<var
-		id="bed4926d-b6fd-44ab-98a4-c52e31f5f26c"
-		name="VisitSceduleData">
+		id="7c9d0de2-9f95-4399-a44d-c6a930ad4d3e"
+		name="WorkflowID">
 		</var>
 		<var
-		id="1e19f4b4-049a-47bf-9d6f-a7d36d843826"
-		name="rNumber">
+		id="4ea06dcc-127b-4bb8-9ea3-9d6284947136"
+		name="JSONData">
 		</var>
 		<var
-		id="dd7c2fe2-09d6-4803-b112-4edfe9c65ed1"
-		name="workflow_id">
+		id="62fa57b2-3afa-4a0a-a70e-696a9938ae21"
+		name="studid">
+		</var>
+		<var
+		id="c3c66f61-f7f2-4993-b59c-d3868bcc96b5"
+		name="NextBlockid">
+		</var>
+		<var
+		id="31aaefea-a6ff-4889-84c4-ee32d31786ee"
+		name="batteryID">
+		</var>
+		<var
+		id="4a6e8ec1-a712-4074-b9f3-7c9208e1d09d"
+		name="DeskTopID">
+		</var>
+		<var
+		id="a6a69c34-9b64-4f11-861a-dee022ffc354"
+		name="TabConfigID">
+		</var>
+		<var
+		id="5fcb11c8-4083-4247-8698-2a935d0223fe"
+		name="studyName">
 		</var>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="180000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
-		classname="CreateVisitschedule"
+		classname="CompletionSteps"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Visitschedulecreation"
+		methodname="Stepcompletion"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -70,10 +95,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4f56b07e-7d29-4762-a85a-f1fda9d9513a">
+			id="167b43e4-f9bc-4f47-82d7-ad95a6574d7c">
 				<argument
 				argname="Token"
-				id="cc2367fc-83ae-4b20-b85f-bb4b4bec044e"
+				id="9f3653f8-d22d-4ae6-b00a-b915fe009e30"
 				variable="Token">
 					<argvaluetype>
 						System.String
@@ -82,9 +107,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="Studyid"
-				id="a79e9500-b3d4-4aa0-ae24-fafbc16da4a7"
-				variable="Studyid">
+				argname="BlockID"
+				id="eb6c185a-ea9e-4964-8140-52cd225dda3d"
+				variable="BlockID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -92,9 +117,19 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="VisitCode"
-				id="c3826ada-ee80-4207-9351-503964f808b1"
-				variable="VisitCode">
+				argname="WorkflowID"
+				id="03a2e6fc-b236-4b55-bfea-3d6ab7c6f7b4"
+				variable="WorkflowID">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="JSONData"
+				id="8c21a648-7d3b-497e-9fcf-e69698345f33"
+				variable="JSONData">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -103,18 +138,8 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="CSPDOM"
-				id="d4a61963-916d-4d25-9484-855ad283facd"
+				id="55099ca4-cddc-44dd-a606-13e93b86e961"
 				variable="CSPDOM">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="VisitSceduleData"
-				id="3998b921-8c7b-4f39-9e66-0b09473fc4f4"
-				variable="VisitSceduleData">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -140,7 +165,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateVisitschedule.UserCode.cs
+		CompletionSteps.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

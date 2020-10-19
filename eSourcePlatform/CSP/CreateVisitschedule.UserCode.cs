@@ -76,7 +76,7 @@ namespace CSP
 			{
 		 	
 		    
-               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber);
+               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber).Replace(@"<WFID>", workflow_id);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -99,6 +99,7 @@ namespace CSP
 				
 				responseObject = new JavaScriptSerializer().Deserialize<visitJSONRequest>(response);
 				string visitscheduleid= responseObject.id;
+				Report.Log(ReportLevel.Info, "visitschedule is created as expected " + response);
 				Report.Log(ReportLevel.Info, "visitschedule is created as expected " + visitscheduleid);
 			 }
 

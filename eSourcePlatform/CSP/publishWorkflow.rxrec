@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8013edcd-a876-49a7-b495-e779933a8fe2"
+id="800196b0-6b42-4264-866e-bcea65bf2109"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateVisitschedule
+		publishWorkflow
 	</name>
 	<repeatcount>
 		1
@@ -23,45 +23,37 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateVisitschedule"
+	classname="publishWorkflow"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="d4990ef5-ff60-4162-a061-a9cff9bb6b75"
-		name="Token">
-		</var>
-		<var
-		id="c0deec5c-cb56-44fb-85fb-8b319345fdd7"
-		name="Studyid">
-		</var>
-		<var
-		id="39991ace-f3d0-4ca1-aebb-999dca1fa0f0"
+		id="5ae0aa02-a916-4d8e-a995-50d6719c7333"
 		name="CSPDOM">
 		</var>
 		<var
-		id="a3fa63dd-ce5a-4761-9da3-499cf61c5616"
-		name="VisitCode">
+		id="2c2c303e-ae14-4bb0-9e4e-8b28638b6e46"
+		name="Token">
 		</var>
 		<var
-		id="bed4926d-b6fd-44ab-98a4-c52e31f5f26c"
-		name="VisitSceduleData">
+		id="a6fa3763-fefe-4a7f-a1e9-6299f2dcb315"
+		name="WorkflowID">
 		</var>
 		<var
-		id="1e19f4b4-049a-47bf-9d6f-a7d36d843826"
-		name="rNumber">
+		id="6c2bbf12-25da-455e-9dda-a9c9bfe78b20"
+		name="p_workflowData">
 		</var>
 		<var
-		id="dd7c2fe2-09d6-4803-b112-4edfe9c65ed1"
-		name="workflow_id">
+		id="da572e69-a901-4630-9af2-28ab7c15defd"
+		name="BlockID">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CreateVisitschedule"
+		classname="publishWorkflow"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Visitschedulecreation"
+		methodname="WorkflowPublish"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -70,10 +62,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4f56b07e-7d29-4762-a85a-f1fda9d9513a">
+			id="6f8be78e-8cfe-4406-a60e-59c534a7c7e8">
 				<argument
 				argname="Token"
-				id="cc2367fc-83ae-4b20-b85f-bb4b4bec044e"
+				id="ad2f68c3-3e08-4cec-9a8d-415d3fae1445"
 				variable="Token">
 					<argvaluetype>
 						System.String
@@ -82,19 +74,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="Studyid"
-				id="a79e9500-b3d4-4aa0-ae24-fafbc16da4a7"
-				variable="Studyid">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="VisitCode"
-				id="c3826ada-ee80-4207-9351-503964f808b1"
-				variable="VisitCode">
+				argname="WorkflowID"
+				id="96ef2822-bc31-43b7-9231-e79202a78c4d"
+				variable="WorkflowID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -103,7 +85,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="CSPDOM"
-				id="d4a61963-916d-4d25-9484-855ad283facd"
+				id="c2fdc86c-fdd5-4c0a-b46f-e4c4974559b5"
 				variable="CSPDOM">
 					<argvaluetype>
 						System.String
@@ -112,9 +94,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="VisitSceduleData"
-				id="3998b921-8c7b-4f39-9e66-0b09473fc4f4"
-				variable="VisitSceduleData">
+				argname="BlockID"
+				id="77a6340c-1657-496f-b667-b59b6ea04c8d"
+				variable="BlockID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -140,7 +122,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateVisitschedule.UserCode.cs
+		publishWorkflow.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

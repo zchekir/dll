@@ -24,10 +24,12 @@ using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 using Newtonsoft.Json.Linq;
 
+
 namespace CSP
 {
-	
-	public class WorkflowJSONRequest
+ 
+
+	public class PublishWorkflowJSONRequest
 	{
 		public string JsonData { get; set; }
 	
@@ -36,27 +38,32 @@ namespace CSP
 		public string id { get; set; }
 		
 	/// Object for creating a new workflow request
-		public WorkflowJSONRequest()
+		public PublishWorkflowJSONRequest()
 		{
 			
 		
 		}
 		
 	}
+	
 
-    public partial class WorkflowCreation
+	public partial class publishWorkflow
     {
         
         private void Init()
         {
-           
+            
         }
 
-        public void createWorkflow(string Token, string Studyid, string workflowData, string Studname, string CSPDOM)
+        public void WorkflowPublish(string Token, string WorkflowID, string CSPDOM, string BlockID)
         {
+            Report.Info("BlockID" + BlockID);
         	
-        //variable
-		    string url = "https://" + CSPDOM + "/api/studies/" + Studyid + "/workflows";
+        	try {
+        		
+        	
+        	 //variable
+		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID + "/publish";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -69,7 +76,7 @@ namespace CSP
 			{
 		 	
 		    
-               var testData = workflowData.Replace(@"<id>", Studyid);
+               var testData = p_workflowData.Replace(@"<id>", WorkflowID).Replace(@"<BlockID>", BlockID);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -82,17 +89,24 @@ namespace CSP
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			WorkflowJSONRequest responseObject = new WorkflowJSONRequest();
+			PublishWorkflowJSONRequest responseObject = new PublishWorkflowJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<WorkflowJSONRequest>(response);
-				workflow_id =responseObject.id; 
-				Report.Log(ReportLevel.Info, "The work is created as expected " + response );
-				Report.Log(ReportLevel.Info, "workflowID " + workflow_id);
+				responseObject = new JavaScriptSerializer().Deserialize<PublishWorkflowJSONRequest>(response);
+			
+				Report.Log(ReportLevel.Info, "Workflow published!  " + response );
+				
 			 }
-   }
-    
-  }
+        	
+        	}catch (Exception e)
+
+        	{
+               Report.Log(ReportLevel.Info, "error ", e.Message);
+             }
+        	
+        }
+
+    }
 }

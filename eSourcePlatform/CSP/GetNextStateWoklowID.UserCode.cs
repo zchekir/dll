@@ -7,6 +7,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -26,73 +27,99 @@ using Newtonsoft.Json.Linq;
 
 namespace CSP
 {
-	
-	public class WorkflowJSONRequest
+	public class NextStatekWorkflowJSONRequest
 	{
-		public string JsonData { get; set; }
-	
-		public string workflowid { get; set; }
-		
 		public string id { get; set; }
+	
+		public string workflowId { get; set; }
 		
 	/// Object for creating a new workflow request
-		public WorkflowJSONRequest()
+		public NextStatekWorkflowJSONRequest()
 		{
 			
 		
 		}
 		
 	}
-
-    public partial class WorkflowCreation
+	
+    public partial class GetNextStateWoklowID
     {
-        
+       
         private void Init()
         {
-           
+            
         }
 
-        public void createWorkflow(string Token, string Studyid, string workflowData, string Studname, string CSPDOM)
+        public void NextStateWorkflowID(string Token, string StudyID, string WorkflowID, string BatteryID, string JSONDATA, string CSPDOM)
         {
+            
         	
-        //variable
-		    string url = "https://" + CSPDOM + "/api/studies/" + Studyid + "/workflows";
+        	
+        	 //variable
+		    string url = "https://" + CSPDOM + "/api/workflows/"+WorkflowID;
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
-			httpRequest.Method = "POST";
+			httpRequest.Method = "GET";
 			httpRequest.Headers.Add("Authorization", Token);
 			
 			
+			
+			/*
 			// sending the data in the body and replacing the studyid, studyname and version
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
 		    
-               var testData = workflowData.Replace(@"<id>", Studyid);
-				Report.Info("Data to send: " + testData);
+               var testData = JSONDATA; //.Replace(@"<stuid>", StudyID).Replace(@"<wfid>", WorkflowID).Replace(@"<batteryid>", BatteryID);
+				Report.Info("zak DATA : " + " " + testData);
 				
 				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}
-           
-			
+           */
 			
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			WorkflowJSONRequest responseObject = new WorkflowJSONRequest();
+			NextStatekWorkflowJSONRequest responseObject = new NextStatekWorkflowJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<WorkflowJSONRequest>(response);
-				workflow_id =responseObject.id; 
-				Report.Log(ReportLevel.Info, "The work is created as expected " + response );
-				Report.Log(ReportLevel.Info, "workflowID " + workflow_id);
+				responseObject = new JavaScriptSerializer().Deserialize<NextStatekWorkflowJSONRequest>(response);
+				
+				
+				// slpit
+			char[] mych = { '&', ',','?','=' };
+            string data = response;
+            string[] nextStateID = data.Split(mych);
+            
+           
+				
+				
+				NextStateWorflowID =nextStateID[7] ;
+			
+				
+			
+				
+				Report.Log(ReportLevel.Info, "Next stateID" +NextStateWorflowID);
 			 }
-   }
-    
-  }
+			
+			
+			
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        }
+
+    }
 }

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8013edcd-a876-49a7-b495-e779933a8fe2"
+id="b4546a75-f491-464e-b1d9-93673cd91198"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateVisitschedule
+		SetBatteryWorkflow
 	</name>
 	<repeatcount>
 		1
@@ -23,45 +23,45 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateVisitschedule"
+	classname="SetBatteryWorkflow"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="d4990ef5-ff60-4162-a061-a9cff9bb6b75"
-		name="Token">
-		</var>
-		<var
-		id="c0deec5c-cb56-44fb-85fb-8b319345fdd7"
-		name="Studyid">
-		</var>
-		<var
-		id="39991ace-f3d0-4ca1-aebb-999dca1fa0f0"
+		id="36565d73-70ab-430e-a080-310474051032"
 		name="CSPDOM">
 		</var>
 		<var
-		id="a3fa63dd-ce5a-4761-9da3-499cf61c5616"
-		name="VisitCode">
+		id="8725def3-eb5f-415b-a070-d6a527b45ccb"
+		name="StudyID">
 		</var>
 		<var
-		id="bed4926d-b6fd-44ab-98a4-c52e31f5f26c"
-		name="VisitSceduleData">
+		id="0c9bd693-3b08-4060-a1e1-e8ab4a71d425"
+		name="Token">
 		</var>
 		<var
-		id="1e19f4b4-049a-47bf-9d6f-a7d36d843826"
-		name="rNumber">
+		id="157a1573-135b-4c82-8a48-c2f607067a5c"
+		name="WorkflowID">
 		</var>
 		<var
-		id="dd7c2fe2-09d6-4803-b112-4edfe9c65ed1"
-		name="workflow_id">
+		id="96814775-6349-4a06-ad1f-77e301ff6496"
+		name="BatteryID">
+		</var>
+		<var
+		id="092f8040-dca2-4bf9-9f22-9cda444d12b7"
+		name="battryworkflowData">
+		</var>
+		<var
+		id="177ac509-fdf5-4906-a0aa-b07e555ca393"
+		name="WorkflowBlockID">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CreateVisitschedule"
+		classname="SetBatteryWorkflow"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Visitschedulecreation"
+		methodname="SetBatteryWorkf"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -70,10 +70,20 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4f56b07e-7d29-4762-a85a-f1fda9d9513a">
+			id="1f6ebb7f-4055-417f-9a42-e5360b1e53fb">
+				<argument
+				argname="StudyID"
+				id="11209af1-ba5d-47db-b546-0563ce772663"
+				variable="StudyID">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 				<argument
 				argname="Token"
-				id="cc2367fc-83ae-4b20-b85f-bb4b4bec044e"
+				id="e2a8ee92-8181-44c2-a349-9cd3086d2577"
 				variable="Token">
 					<argvaluetype>
 						System.String
@@ -82,9 +92,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="Studyid"
-				id="a79e9500-b3d4-4aa0-ae24-fafbc16da4a7"
-				variable="Studyid">
+				argname="WorkflowID"
+				id="bbbbd577-5305-40c3-922d-7856ce111b6f"
+				variable="WorkflowID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -92,9 +102,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="VisitCode"
-				id="c3826ada-ee80-4207-9351-503964f808b1"
-				variable="VisitCode">
+				argname="BatteryID"
+				id="320d8971-97e5-4211-8086-1b5173bb8885"
+				variable="BatteryID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -103,7 +113,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="CSPDOM"
-				id="d4a61963-916d-4d25-9484-855ad283facd"
+				id="2ebd8246-741f-455b-8554-f985bafad665"
 				variable="CSPDOM">
 					<argvaluetype>
 						System.String
@@ -112,9 +122,19 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="VisitSceduleData"
-				id="3998b921-8c7b-4f39-9e66-0b09473fc4f4"
-				variable="VisitSceduleData">
+				argname="battryworkflowData"
+				id="69b32f5f-3428-499a-af68-8e13fcbf78dd"
+				variable="battryworkflowData">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="WorkflowBlockID"
+				id="44f0e59c-d686-441f-8a86-fd8a05e8196d"
+				variable="WorkflowBlockID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -140,7 +160,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateVisitschedule.UserCode.cs
+		SetBatteryWorkflow.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

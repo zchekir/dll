@@ -24,35 +24,36 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The WorkflowCreation recording.
+    ///The GetNextStateWoklowID recording.
     /// </summary>
-    [TestModule("ff1ab6c2-86bd-43f8-8d89-a8c55c748cf2", ModuleType.Recording, 1)]
-    public partial class WorkflowCreation : ITestModule
+    [TestModule("860147ff-5413-4ab9-a595-bf35f0534b58", ModuleType.Recording, 1)]
+    public partial class GetNextStateWoklowID : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static WorkflowCreation instance = new WorkflowCreation();
+        static GetNextStateWoklowID instance = new GetNextStateWoklowID();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public WorkflowCreation()
+        public GetNextStateWoklowID()
         {
-            Token = "";
-            Studyid = "";
-            WorkflowData = "";
-            Studname = "";
             CSPDOM = "";
-            workflow_id = "";
+            Token = "";
+            StudyID = "";
+            WorkflowID = "";
+            BatteryID = "";
+            JSONDATA = "";
+            NextStateWorflowID = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static WorkflowCreation Instance
+        public static GetNextStateWoklowID Instance
         {
             get { return instance; }
         }
@@ -64,65 +65,77 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable Token.
         /// </summary>
-        [TestVariable("ab231873-9431-40c2-b70a-1df0514586db")]
+        [TestVariable("812d8636-2835-40c2-8aee-e0b9acd30f02")]
         public string Token
         {
             get { return _Token; }
             set { _Token = value; }
         }
 
-        string _Studyid;
+        string _StudyID;
 
         /// <summary>
-        /// Gets or sets the value of variable Studyid.
+        /// Gets or sets the value of variable StudyID.
         /// </summary>
-        [TestVariable("589d157d-3a47-44e9-9f62-7a57b0901e47")]
-        public string Studyid
+        [TestVariable("51c6a724-af66-44de-a4b0-eb9f707a54e7")]
+        public string StudyID
         {
-            get { return _Studyid; }
-            set { _Studyid = value; }
+            get { return _StudyID; }
+            set { _StudyID = value; }
         }
 
-        string _WorkflowData;
+        string _WorkflowID;
 
         /// <summary>
-        /// Gets or sets the value of variable WorkflowData.
+        /// Gets or sets the value of variable WorkflowID.
         /// </summary>
-        [TestVariable("af161e08-72c8-4a09-8ec4-3d90ed60f941")]
-        public string WorkflowData
+        [TestVariable("49f304bf-c2b2-40d2-80c4-ad15dfebf1d6")]
+        public string WorkflowID
         {
-            get { return _WorkflowData; }
-            set { _WorkflowData = value; }
+            get { return _WorkflowID; }
+            set { _WorkflowID = value; }
         }
 
-        string _Studname;
+        string _BatteryID;
 
         /// <summary>
-        /// Gets or sets the value of variable Studname.
+        /// Gets or sets the value of variable BatteryID.
         /// </summary>
-        [TestVariable("1985b0c0-efe4-46b6-902c-4c52cb9ac83f")]
-        public string Studname
+        [TestVariable("f3bf29fb-ab8a-4218-9654-d2e47c937426")]
+        public string BatteryID
         {
-            get { return _Studname; }
-            set { _Studname = value; }
+            get { return _BatteryID; }
+            set { _BatteryID = value; }
         }
 
-        string _workflow_id;
+        string _JSONDATA;
 
         /// <summary>
-        /// Gets or sets the value of variable workflow_id.
+        /// Gets or sets the value of variable JSONDATA.
         /// </summary>
-        [TestVariable("7d8630e7-cdab-4d0f-9a43-25167981d80b")]
-        public string workflow_id
+        [TestVariable("19e6c627-addb-48e2-b2b7-72473e7f9adf")]
+        public string JSONDATA
         {
-            get { return _workflow_id; }
-            set { _workflow_id = value; }
+            get { return _JSONDATA; }
+            set { _JSONDATA = value; }
+        }
+
+        string _NextStateWorflowID;
+
+        /// <summary>
+        /// Gets or sets the value of variable NextStateWorflowID.
+        /// </summary>
+        [TestVariable("1a72f90a-a63d-46cd-9d60-9c9bbbe23c6a")]
+        public string NextStateWorflowID
+        {
+            get { return _NextStateWorflowID; }
+            set { _NextStateWorflowID = value; }
         }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
-        [TestVariable("31d9b937-2664-4724-bbe7-6fd57c281220")]
+        [TestVariable("736f7f70-8741-473d-9dbc-2114f17d0ebf")]
         public string CSPDOM
         {
             get { return repo.CSPDOM; }
@@ -155,7 +168,7 @@ namespace CSP
 
             Init();
 
-            createWorkflow(Token, Studyid, WorkflowData, Studname, CSPDOM);
+            NextStateWorkflowID(Token, StudyID, WorkflowID, BatteryID, JSONDATA, CSPDOM);
             Delay.Milliseconds(0);
             
         }

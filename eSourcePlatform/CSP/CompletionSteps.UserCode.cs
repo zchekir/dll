@@ -26,17 +26,14 @@ using Newtonsoft.Json.Linq;
 
 namespace CSP
 {
-	
-	public class WorkflowJSONRequest
+  public class setkWorkflowJSONRequest
 	{
-		public string JsonData { get; set; }
-	
-		public string workflowid { get; set; }
-		
 		public string id { get; set; }
+	
+		
 		
 	/// Object for creating a new workflow request
-		public WorkflowJSONRequest()
+		public setkWorkflowJSONRequest()
 		{
 			
 		
@@ -44,23 +41,28 @@ namespace CSP
 		
 	}
 
-    public partial class WorkflowCreation
+
+
+
+
+	public partial class CompletionSteps
     {
         
         private void Init()
         {
-           
+            
         }
 
-        public void createWorkflow(string Token, string Studyid, string workflowData, string Studname, string CSPDOM)
+        public void Stepcompletion(string Token, string BlockID, string WorkflowID, string JSONData, string CSPDOM)
         {
+           
         	
-        //variable
-		    string url = "https://" + CSPDOM + "/api/studies/" + Studyid + "/workflows";
+        	 //variable
+		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks" +BlockID;
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
-			httpRequest.Method = "POST";
+			httpRequest.Method = "PUT";
 			httpRequest.Headers.Add("Authorization", Token);
 			
 			
@@ -68,31 +70,40 @@ namespace CSP
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
+		   
+		    // creating block ID 
+		    int x = Int32.Parse(BlockID);
+		    int idTest= x+1;
+		    string blockID =idTest.ToString();
 		    
-               var testData = workflowData.Replace(@"<id>", Studyid);
+			Report.Log(ReportLevel.Info, "BatteryID " + batteryID );
+		    
+               var testData = JSONData.Replace(@"<wfid>", WorkflowID).Replace(@"<blockid>", BlockID).Replace(@"<studid>", studid).Replace(@"<id2>", blockID).Replace(@"<batteryid>", batteryID).Replace(@"<TabConfigID>", TabConfigID).Replace(@"<DeskTopID>", DeskTopID).Replace(@"<studyName>", studyName);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}
-           
 			
 			
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			WorkflowJSONRequest responseObject = new WorkflowJSONRequest();
+			setkWorkflowJSONRequest responseObject = new setkWorkflowJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<WorkflowJSONRequest>(response);
-				workflow_id =responseObject.id; 
-				Report.Log(ReportLevel.Info, "The work is created as expected " + response );
-				Report.Log(ReportLevel.Info, "workflowID " + workflow_id);
+				responseObject = new JavaScriptSerializer().Deserialize<setkWorkflowJSONRequest>(response);
+				
+				NextBlockid = responseObject.id;
+			
+			Report.Log(ReportLevel.Info, "id " + NextBlockid );
+				
 			 }
-   }
-    
-  }
+        	
+        }
+
+    }
 }

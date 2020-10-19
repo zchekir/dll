@@ -196,6 +196,9 @@ namespace CSP.DatabaseModules
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
+            Delay.Duration(60000, false);
+            
             Outcome_Validation(DBServer, Database, dbUsername, dbPassword, Authentication, TestIdentifier, PrimaryOutcome, StandardScoreZ, StandardScoreT);
             Delay.Milliseconds(0);
             
