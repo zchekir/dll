@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
+id="5c4d725a-77a6-4120-b099-206eb028fef8"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CompletionSteps
+		captureworkflowstateID
 	</name>
 	<repeatcount>
 		1
@@ -23,61 +23,51 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CompletionSteps"
+	classname="captureworkflowstateID"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="09b82bc2-2e16-4a91-bd36-ede4d9bffdce"
-		name="Token">
+		id="092e7a0c-19f4-4a4f-b194-4c817e4115f3"
+		name="DBServer">
+			cgst-qc.database.windows.net
 		</var>
 		<var
-		id="f58f18f9-9508-4d25-9e45-cf9cd56afbd4"
-		name="CSPDOM">
+		id="c8d11457-419c-4c2d-a3b7-3ef7a322580c"
+		name="Database">
 		</var>
 		<var
-		id="9e61b69c-82e2-4a9d-8701-0b9d50cfa695"
-		name="BlockID">
+		id="3dc770c4-f970-4018-b2ca-a38937be08c0"
+		name="dbUsername">
 		</var>
 		<var
-		id="7c9d0de2-9f95-4399-a44d-c6a930ad4d3e"
-		name="WorkflowID">
+		id="c84cc5b5-d1cb-46d7-8256-61f7080d2b48"
+		name="dbPassword">
 		</var>
 		<var
-		id="4ea06dcc-127b-4bb8-9ea3-9d6284947136"
-		name="JSONData">
+		id="fcaaeff7-1b53-4547-a678-8a0fbcb3ed8c"
+		name="Authentication">
+			Active Directory Password
 		</var>
 		<var
-		id="62fa57b2-3afa-4a0a-a70e-696a9938ae21"
-		name="studid">
+		id="1ae88142-1673-4793-b2cb-b38141ac85a6"
+		name="stateid_FOUR">
 		</var>
 		<var
-		id="c3c66f61-f7f2-4993-b59c-d3868bcc96b5"
-		name="NextBlockid">
+		id="59d627bb-5840-4ccd-98df-66ecd0223482"
+		name="stuid">
 		</var>
 		<var
-		id="31aaefea-a6ff-4889-84c4-ee32d31786ee"
-		name="batteryID">
-		</var>
-		<var
-		id="4a6e8ec1-a712-4074-b9f3-7c9208e1d09d"
-		name="DeskTopID">
-		</var>
-		<var
-		id="a6a69c34-9b64-4f11-861a-dee022ffc354"
-		name="TabConfigID">
-		</var>
-		<var
-		id="5fcb11c8-4083-4247-8698-2a935d0223fe"
-		name="studyName">
+		id="e7c8b235-86de-4a18-bfa2-57ca0082d59b"
+		name="rolid">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CompletionSteps"
+		classname="captureworkflowstateID"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Stepcompletion"
+		methodname="workflowstateID"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -86,11 +76,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="167b43e4-f9bc-4f47-82d7-ad95a6574d7c">
+			id="60adca8f-2a42-44e0-adef-b2fca2cab9bd">
 				<argument
-				argname="Token"
-				id="9f3653f8-d22d-4ae6-b00a-b915fe009e30"
-				variable="Token">
+				argname="DBServer"
+				id="5f7e0aca-00d0-41b3-9cb6-949c5c3cbc38"
+				variable="DBServer">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -98,9 +88,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="BlockID"
-				id="eb6c185a-ea9e-4964-8140-52cd225dda3d"
-				variable="BlockID">
+				argname="Database"
+				id="82663101-4e96-4486-b428-3db6d73e67da"
+				variable="Database">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -108,9 +98,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="WorkflowID"
-				id="03a2e6fc-b236-4b55-bfea-3d6ab7c6f7b4"
-				variable="WorkflowID">
+				argname="dbUsername"
+				id="978d128f-4899-42e6-8695-b2ce3b5192d0"
+				variable="dbUsername">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -118,9 +108,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="JSONData"
-				id="8c21a648-7d3b-497e-9fcf-e69698345f33"
-				variable="JSONData">
+				argname="dbPassword"
+				id="7e524997-ea7f-4afe-b93e-ec09fbf26eaf"
+				variable="dbPassword">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -128,9 +118,29 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="CSPDOM"
-				id="55099ca4-cddc-44dd-a606-13e93b86e961"
-				variable="CSPDOM">
+				argname="Authentication"
+				id="67d37c1c-9688-4e28-8602-5eaf7731bb0e"
+				variable="Authentication">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="stateid"
+				id="e3eba07e-7b23-44ac-a3fc-c35592e77f7d"
+				variable="stateid_FOUR">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="stuid"
+				id="b7a9f800-9962-4605-bdf9-998500b58b92"
+				variable="stuid">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -156,7 +166,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CompletionSteps.UserCode.cs
+		captureworkflowstateID.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

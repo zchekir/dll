@@ -220,9 +220,6 @@ namespace CSP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3m.", new RecordItemIndex(0));
-            Delay.Duration(180000, false);
-            
             Stepcompletion(Token, BlockID, WorkflowID, JSONData, CSPDOM);
             Delay.Milliseconds(0);
             

@@ -31,11 +31,8 @@ namespace CSP
 
 	public class PublishWorkflowJSONRequest
 	{
-		public string JsonData { get; set; }
-	
-		public string workflowid { get; set; }
-		
 		public string id { get; set; }
+	
 		
 	/// Object for creating a new workflow request
 		public PublishWorkflowJSONRequest()
@@ -49,7 +46,7 @@ namespace CSP
 
 	public partial class publishWorkflow
     {
-        
+        public string publish;
         private void Init()
         {
             
@@ -76,7 +73,7 @@ namespace CSP
 			{
 		 	
 		    
-               var testData = p_workflowData.Replace(@"<id>", WorkflowID).Replace(@"<BlockID>", BlockID);
+                var testData = p_workflowData; //.Replace(@"<id>", WorkflowID).Replace(@"<stateid_ONE>", stateid_ONE).Replace(@"<stateid_TWO>", stateid_TWO).Replace(@"<stateid_THREE>", stateid_THREE).Replace(@"<stateid_FOUR>", stateid_FOUR);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -95,11 +92,14 @@ namespace CSP
 			{
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<PublishWorkflowJSONRequest>(response);
+				//PublishWorkflowJSONRequest publish = Newtonsoft.Json.JsonConvert.DeserializeObject<PublishWorkflowJSONRequest>(response);
 			
-				Report.Log(ReportLevel.Info, "Workflow published!  " + response );
+				string id = responseObject.id;
+				Report.Log(ReportLevel.Info, "Workflow published!  " + id );
 				
 			 }
         	
+			
         	}catch (Exception e)
 
         	{

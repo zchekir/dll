@@ -26,15 +26,14 @@ using Newtonsoft.Json.Linq;
 
 namespace CSP
 {
-   
-public class BlockWorkflowJSONRequest
+ public class SAVEkWorkflowJSONRequest
 	{
 		public string id { get; set; }
 	
 		
 		
 	/// Object for creating a new workflow request
-		public BlockWorkflowJSONRequest()
+		public SAVEkWorkflowJSONRequest()
 		{
 			
 		
@@ -43,8 +42,7 @@ public class BlockWorkflowJSONRequest
 	}
 
 
-
-	public partial class addinBlock
+	public partial class Log
     {
         
         private void Init()
@@ -52,13 +50,10 @@ public class BlockWorkflowJSONRequest
             
         }
 
-        public void setUpBlock(string Token, string WorkflowID, string BlockJsonData, string CSPDOM)
+        public void savelog(string Token, string CSPDOM)
         {
-          
-        	
-        	
-        	 //variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks";
+            //variable
+		    string url = "https://cgst-qc-tiger.azurewebsites.net/api/logging/log";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -68,49 +63,42 @@ public class BlockWorkflowJSONRequest
 			
 			
 			
+			
+			
 			// sending the data in the body and replacing the studyid, studyname and version
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
+		   
+		     string JSONData ="{\"logMessage\":\"Cyclic reference to a parent object found in one or more child objects. This may be unintended.\"}";
 		    
-               var testData = BlockJsonData.Replace(@"<id>", WorkflowID);
+               var testData = JSONData;
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}
-           
-			
-			
-			
 			
 			
 			
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			BlockWorkflowJSONRequest responseObject = new BlockWorkflowJSONRequest();
+			SAVEkWorkflowJSONRequest responseObject = new SAVEkWorkflowJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<BlockWorkflowJSONRequest>(response);
+				responseObject = new JavaScriptSerializer().Deserialize<SAVEkWorkflowJSONRequest>(response);
 				
-				blockid = responseObject.id;
+				
+			Report.Log(ReportLevel.Info, "SAVED" + response );
 			
-				Report.Log(ReportLevel.Info, "The block is created as expected " + blockid );
-				
-				Report.Log(ReportLevel.Info, "BLOCKCONFIG" + response);
+			
 				
 			 }
 			
-			
-			
-			
-        	
-        	
-        	
         }
 
     }

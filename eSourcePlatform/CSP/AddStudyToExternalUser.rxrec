@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
+id="9ef10880-fa3b-4ee3-a5b6-b1d8728f9a11"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CompletionSteps
+		AddStudyToExternalUser
 	</name>
 	<repeatcount>
 		1
@@ -23,61 +23,37 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CompletionSteps"
+	classname="AddStudyToExternalUser"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="09b82bc2-2e16-4a91-bd36-ede4d9bffdce"
+		id="1a2cf6ac-1c7f-46ff-8400-5c75a29f06d9"
 		name="Token">
 		</var>
 		<var
-		id="f58f18f9-9508-4d25-9e45-cf9cd56afbd4"
+		id="60e2bac1-b18c-401e-9273-7a962b5c1c96"
 		name="CSPDOM">
 		</var>
 		<var
-		id="9e61b69c-82e2-4a9d-8701-0b9d50cfa695"
-		name="BlockID">
+		id="ff107b70-fac4-4a78-a6c6-c74f53bb761d"
+		name="RolID">
 		</var>
 		<var
-		id="7c9d0de2-9f95-4399-a44d-c6a930ad4d3e"
-		name="WorkflowID">
+		id="c4d28067-e2d7-4473-8dff-e025201ec2c0"
+		name="Key">
 		</var>
 		<var
-		id="4ea06dcc-127b-4bb8-9ea3-9d6284947136"
+		id="eb30db56-d622-4fa5-9e9a-5ee3896d248b"
 		name="JSONData">
-		</var>
-		<var
-		id="62fa57b2-3afa-4a0a-a70e-696a9938ae21"
-		name="studid">
-		</var>
-		<var
-		id="c3c66f61-f7f2-4993-b59c-d3868bcc96b5"
-		name="NextBlockid">
-		</var>
-		<var
-		id="31aaefea-a6ff-4889-84c4-ee32d31786ee"
-		name="batteryID">
-		</var>
-		<var
-		id="4a6e8ec1-a712-4074-b9f3-7c9208e1d09d"
-		name="DeskTopID">
-		</var>
-		<var
-		id="a6a69c34-9b64-4f11-861a-dee022ffc354"
-		name="TabConfigID">
-		</var>
-		<var
-		id="5fcb11c8-4083-4247-8698-2a935d0223fe"
-		name="studyName">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CompletionSteps"
+		classname="AddStudyToExternalUser"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Stepcompletion"
+		methodname="StudyToExternalUser"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -86,10 +62,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="167b43e4-f9bc-4f47-82d7-ad95a6574d7c">
+			id="7d44d1d4-e10e-44b4-9378-ecfe162969ee">
 				<argument
 				argname="Token"
-				id="9f3653f8-d22d-4ae6-b00a-b915fe009e30"
+				id="890bb682-1472-4e24-a962-5d07d82b8495"
 				variable="Token">
 					<argvaluetype>
 						System.String
@@ -98,19 +74,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="BlockID"
-				id="eb6c185a-ea9e-4964-8140-52cd225dda3d"
-				variable="BlockID">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="WorkflowID"
-				id="03a2e6fc-b236-4b55-bfea-3d6ab7c6f7b4"
-				variable="WorkflowID">
+				argname="RolID"
+				id="9197adcc-f099-4f5e-b774-87d8600dd905"
+				variable="RolID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -119,7 +85,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="JSONData"
-				id="8c21a648-7d3b-497e-9fcf-e69698345f33"
+				id="a30a801b-8bf7-4384-83cb-02b12f2431d6"
 				variable="JSONData">
 					<argvaluetype>
 						System.String
@@ -129,8 +95,18 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="CSPDOM"
-				id="55099ca4-cddc-44dd-a606-13e93b86e961"
+				id="3d01d5cc-d436-4826-8b2f-d112fbe70ed8"
 				variable="CSPDOM">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="Key"
+				id="ab54baf2-b52b-4a8c-9b32-81d43f420ab4"
+				variable="Key">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -156,7 +132,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CompletionSteps.UserCode.cs
+		AddStudyToExternalUser.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

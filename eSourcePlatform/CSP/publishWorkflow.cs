@@ -46,6 +46,10 @@ namespace CSP
             WorkflowID = "";
             p_workflowData = "";
             BlockID = "";
+            stateid_ONE = "";
+            stateid_TWO = "";
+            stateid_THREE = "";
+            stateid_FOUR = "";
         }
 
         /// <summary>
@@ -104,6 +108,54 @@ namespace CSP
         {
             get { return _BlockID; }
             set { _BlockID = value; }
+        }
+
+        string _stateid_ONE;
+
+        /// <summary>
+        /// Gets or sets the value of variable stateid_ONE.
+        /// </summary>
+        [TestVariable("6b5fd2e0-e7f2-4f65-9ebe-d07c20b3f09b")]
+        public string stateid_ONE
+        {
+            get { return _stateid_ONE; }
+            set { _stateid_ONE = value; }
+        }
+
+        string _stateid_TWO;
+
+        /// <summary>
+        /// Gets or sets the value of variable stateid_TWO.
+        /// </summary>
+        [TestVariable("8fd0f4b0-5522-4556-87dd-62f99792c342")]
+        public string stateid_TWO
+        {
+            get { return _stateid_TWO; }
+            set { _stateid_TWO = value; }
+        }
+
+        string _stateid_THREE;
+
+        /// <summary>
+        /// Gets or sets the value of variable stateid_THREE.
+        /// </summary>
+        [TestVariable("5ac00588-510c-4a15-afe2-7e2c0720779f")]
+        public string stateid_THREE
+        {
+            get { return _stateid_THREE; }
+            set { _stateid_THREE = value; }
+        }
+
+        string _stateid_FOUR;
+
+        /// <summary>
+        /// Gets or sets the value of variable stateid_FOUR.
+        /// </summary>
+        [TestVariable("fdb75c32-4ff8-4115-b64b-123b2de0269d")]
+        public string stateid_FOUR
+        {
+            get { return _stateid_FOUR; }
+            set { _stateid_FOUR = value; }
         }
 
         /// <summary>

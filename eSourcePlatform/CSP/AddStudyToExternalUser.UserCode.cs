@@ -26,25 +26,23 @@ using Newtonsoft.Json.Linq;
 
 namespace CSP
 {
-   
-public class BlockWorkflowJSONRequest
+	 public class ROLJSONRequest
 	{
+		public string Code { get; set; }
 		public string id { get; set; }
 	
-		
-		
 	/// Object for creating a new workflow request
-		public BlockWorkflowJSONRequest()
+		public ROLJSONRequest()
 		{
 			
 		
 		}
 		
 	}
-
-
-
-	public partial class addinBlock
+	
+	
+	
+    public partial class AddStudyToExternalUser
     {
         
         private void Init()
@@ -52,19 +50,19 @@ public class BlockWorkflowJSONRequest
             
         }
 
-        public void setUpBlock(string Token, string WorkflowID, string BlockJsonData, string CSPDOM)
+        public void StudyToExternalUser(string Token, string RolID, string JSONData, string CSPDOM, string Key)
         {
-          
-        	
+           
         	
         	 //variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks";
+		    string url = "https://" + CSPDOM + "/api/externalusers/1773";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
-			httpRequest.Method = "POST";
+			httpRequest.Method = "PUT";
 			httpRequest.Headers.Add("Authorization", Token);
 			
+		
 			
 			
 			
@@ -73,15 +71,13 @@ public class BlockWorkflowJSONRequest
 			{
 		 	
 		    
-               var testData = BlockJsonData.Replace(@"<id>", WorkflowID);
+               var testData = JSONData.Replace(@"<id>", RolID);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
 				sw.Flush();
 				sw.Close();
 			}
-           
-			
 			
 			
 			
@@ -90,25 +86,16 @@ public class BlockWorkflowJSONRequest
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			BlockWorkflowJSONRequest responseObject = new BlockWorkflowJSONRequest();
+			ROLJSONRequest responseObject = new ROLJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<BlockWorkflowJSONRequest>(response);
 				
-				blockid = responseObject.id;
-			
-				Report.Log(ReportLevel.Info, "The block is created as expected " + blockid );
-				
-				Report.Log(ReportLevel.Info, "BLOCKCONFIG" + response);
+				responseObject = new JavaScriptSerializer().Deserialize<ROLJSONRequest>(response);
+				Report.Log(ReportLevel.Info, "visitschedule is created as expected " + response);
 				
 			 }
-			
-			
-			
-			
-        	
         	
         	
         }

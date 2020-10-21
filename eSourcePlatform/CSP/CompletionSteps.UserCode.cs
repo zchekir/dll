@@ -58,7 +58,9 @@ namespace CSP
            
         	
         	 //variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks" +BlockID;
+		    string url = "https://cgst-qc-tiger.azurewebsites.net/api/workflows/"+WorkflowID +"/workflowBlocks/"+ BlockID;
+		     
+			Report.Log(ReportLevel.Info, "MYURL " + url );
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";

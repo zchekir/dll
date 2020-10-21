@@ -689,6 +689,18 @@
       <DependentUpon>Validate_StudyEntry.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="AddStudyToExternalUser.cs">
+      <BoundTo>bdd2eb51-0b16-4436-9663-864fe2cf83fa</BoundTo>
+      <DependentUpon>AddStudyToExternalUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d852d62-4dc5-4602-bbd0-d1a778239319</id>
+    </Compile>
+    <Compile Include="AddStudyToExternalUser.UserCode.cs">
+      <BoundTo>bdd2eb51-0b16-4436-9663-864fe2cf83fa</BoundTo>
+      <DependentUpon>AddStudyToExternalUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0169d0e-8af5-4d1f-a99a-285a632c9d96</id>
+    </Compile>
     <Compile Include="addSuccessBlock.cs">
       <BoundTo>2d7495ea-d4db-4945-b965-bb55dd261399</BoundTo>
       <DependentUpon>addSuccessBlock.rxrec</DependentUpon>
@@ -2171,6 +2183,18 @@
       <DependentUpon>Validate_Required_BatteryTemplateStatus.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="captureworkflowstateID.cs">
+      <BoundTo>23ff36b5-e481-41e8-85d3-297a6c54eab0</BoundTo>
+      <DependentUpon>captureworkflowstateID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>67d1f571-06ca-4a21-a3f0-d0d8293dd48a</id>
+    </Compile>
+    <Compile Include="captureworkflowstateID.UserCode.cs">
+      <BoundTo>23ff36b5-e481-41e8-85d3-297a6c54eab0</BoundTo>
+      <DependentUpon>captureworkflowstateID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd67628f-ba26-461e-a1ed-340891bc168a</id>
+    </Compile>
     <Compile Include="CompletionSteps.cs">
       <BoundTo>e358ecd7-fff5-4683-acd1-c237367c8687</BoundTo>
       <DependentUpon>CompletionSteps.rxrec</DependentUpon>
@@ -2782,6 +2806,18 @@
       <UserCode>true</UserCode>
       <id>6bc176c6-7b39-45f4-8ef6-eedbebeaf751</id>
       <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
+    </Compile>
+    <Compile Include="Log.cs">
+      <BoundTo>6dc87de0-be2c-47d6-8f61-c970d5cbc02d</BoundTo>
+      <DependentUpon>Log.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>742dc0f9-aab7-4c5f-bd9a-d808bad1321b</id>
+    </Compile>
+    <Compile Include="Log.UserCode.cs">
+      <BoundTo>6dc87de0-be2c-47d6-8f61-c970d5cbc02d</BoundTo>
+      <DependentUpon>Log.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e517d4c-4d23-45f1-b83e-a87aa8a75611</id>
     </Compile>
     <Compile Include="LoginPage\ClickNoButton.cs">
       <DependentUpon>ClickNoButton.rxrec</DependentUpon>
@@ -4163,6 +4199,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>dcd3c857-708a-4094-9656-57f93b949ee6</recordtableid>
     </None>
+    <None Include="AddStudyToExternalUser.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>bdd2eb51-0b16-4436-9663-864fe2cf83fa</id>
+      <recordtableid>9ef10880-fa3b-4ee3-a5b6-b1d8728f9a11</recordtableid>
+    </None>
     <None Include="addSuccessBlock.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>2d7495ea-d4db-4945-b965-bb55dd261399</id>
@@ -4781,6 +4822,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <recordtableid>080df293-98c0-462b-9cc8-0c147cc3a979</recordtableid>
     </None>
+    <None Include="captureworkflowstateID.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>23ff36b5-e481-41e8-85d3-297a6c54eab0</id>
+      <recordtableid>5c4d725a-77a6-4120-b099-206eb028fef8</recordtableid>
+    </None>
     <None Include="CompletionSteps.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>e358ecd7-fff5-4683-acd1-c237367c8687</id>
@@ -5382,6 +5428,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>295b7723-2ea3-45f9-a76a-736a772800e6</id>
       <recordtableid>860147ff-5413-4ab9-a595-bf35f0534b58</recordtableid>
+    </None>
+    <None Include="Log.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>6dc87de0-be2c-47d6-8f61-c970d5cbc02d</id>
+      <recordtableid>23ed3961-5aca-45a1-a490-14b35df0300c</recordtableid>
     </None>
     <None Include="publishWorkflow.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>

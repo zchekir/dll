@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="800196b0-6b42-4264-866e-bcea65bf2109"
+id="23ed3961-5aca-45a1-a490-14b35df0300c"
 mode="Global"
 rxversion="8.3">
 	<name>
-		publishWorkflow
+		Log
 	</name>
 	<repeatcount>
 		1
@@ -23,53 +23,25 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="publishWorkflow"
+	classname="Log"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="5ae0aa02-a916-4d8e-a995-50d6719c7333"
-		name="CSPDOM">
-		</var>
-		<var
-		id="2c2c303e-ae14-4bb0-9e4e-8b28638b6e46"
+		id="64fd0353-7ae5-41cf-8321-d535405bb726"
 		name="Token">
 		</var>
 		<var
-		id="a6fa3763-fefe-4a7f-a1e9-6299f2dcb315"
-		name="WorkflowID">
-		</var>
-		<var
-		id="6c2bbf12-25da-455e-9dda-a9c9bfe78b20"
-		name="p_workflowData">
-		</var>
-		<var
-		id="da572e69-a901-4630-9af2-28ab7c15defd"
-		name="BlockID">
-		</var>
-		<var
-		id="6b5fd2e0-e7f2-4f65-9ebe-d07c20b3f09b"
-		name="stateid_ONE">
-		</var>
-		<var
-		id="8fd0f4b0-5522-4556-87dd-62f99792c342"
-		name="stateid_TWO">
-		</var>
-		<var
-		id="5ac00588-510c-4a15-afe2-7e2c0720779f"
-		name="stateid_THREE">
-		</var>
-		<var
-		id="fdb75c32-4ff8-4115-b64b-123b2de0269d"
-		name="stateid_FOUR">
+		id="69350f75-9ad9-46ef-a0b5-cd2347a481e8"
+		name="CSPDOM">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="publishWorkflow"
+		classname="Log"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="WorkflowPublish"
+		methodname="savelog"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -78,10 +50,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="6f8be78e-8cfe-4406-a60e-59c534a7c7e8">
+			id="8d00d8f9-86c3-4464-8bc0-baf99abc8123">
 				<argument
 				argname="Token"
-				id="ad2f68c3-3e08-4cec-9a8d-415d3fae1445"
+				id="a072ee85-d8ca-4528-80fd-d38df5043430"
 				variable="Token">
 					<argvaluetype>
 						System.String
@@ -90,29 +62,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="WorkflowID"
-				id="96ef2822-bc31-43b7-9231-e79202a78c4d"
-				variable="WorkflowID">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
 				argname="CSPDOM"
-				id="c2fdc86c-fdd5-4c0a-b46f-e4c4974559b5"
+				id="129f1ae5-37ba-4d4c-bf1f-fd958cdd6dfc"
 				variable="CSPDOM">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="BlockID"
-				id="77a6340c-1657-496f-b667-b59b6ea04c8d"
-				variable="BlockID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -138,7 +90,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		publishWorkflow.UserCode.cs
+		Log.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
