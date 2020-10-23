@@ -1105,8 +1105,8 @@ rxversion="8.3">
 					variablename="localityCode">
 					</var>
 					<var
-					dataname="visitSessionCode"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					dataname="workflow_id"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="968c3e2a-3c3b-44b5-a76d-c1cfab210776"
 					variablename="visitSessionCode">
 					</var>
@@ -2888,6 +2888,14 @@ rxversion="8.3">
 					</param>
 					<param
 					name="RolID"
+					value="">
+					</param>
+					<param
+					name="SetworkflowStatusID"
+					value="">
+					</param>
+					<param
+					name="SetStatusID"
 					value="">
 					</param>
 				</parameters>
@@ -6001,6 +6009,24 @@ rxversion="8.3">
 					variableid="69350f75-9ad9-46ef-a0b5-cd2347a481e8"
 					variablename="CSPDOM">
 					</var>
+					<var
+					dataname="setStatus"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="740ea65f-9904-4e59-a2c7-7043d1928cae"
+					variablename="JSONData">
+					</var>
+					<var
+					dataname="workflow_id"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f945ed76-6ea7-480e-bbbd-4fed6fa43de7"
+					variablename="WorkflowID">
+					</var>
+					<var
+					dataname="SetStatusID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="2346b18e-b91f-47c5-a5df-7c2625a3c573"
+					variablename="SeststatusID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -6059,18 +6085,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="6b5fd2e0-e7f2-4f65-9ebe-d07c20b3f09b"
 					variablename="stateid_ONE">
-					</var>
-					<var
-					dataname="stateid_TWO"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="8fd0f4b0-5522-4556-87dd-62f99792c342"
-					variablename="stateid_TWO">
-					</var>
-					<var
-					dataname="stateid_THREE"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="5ac00588-510c-4a15-afe2-7e2c0720779f"
-					variablename="stateid_THREE">
 					</var>
 					<var
 					dataname="stateid_FOUR"
@@ -6476,6 +6490,44 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="d566832d-c3ab-4c50-aa34-3ca6763b3680"
 					variablename="CSPURL">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="df1e8900-2308-4a5b-80c8-0852def7bc47"
+			name="setFinishStatus"
+			ref="e91633be-04bd-4eb7-a0db-4b2216152688"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="ca9e92c3-ad52-46da-826c-cef11339d6c1"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="setFinishState"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="30b6894f-ec57-4099-ab1f-e508548c68f1"
+					variablename="SestJSON">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="54ca60df-eb2c-4c38-8c37-9a2229b2762a"
+					variablename="Toke">
+					</var>
+					<var
+					dataname="SetStatusID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="d31fd6db-4269-44a8-aa14-8fcc8554355a"
+					variablename="SetStatusID">
+					</var>
+					<var
+					dataname="workflow_id"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="5248f3c4-232d-4577-a3c6-ad244a9efc52"
+					variablename="WorkflowID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8481,12 +8533,16 @@ rxversion="8.3">
 									name="addSuccessBlock">
 									</testmodule>
 									<testmodule
-									id="75794c23-7e68-4fcc-b86d-fdfdc0339854"
-									name="SetBatteryWorkflow">
-									</testmodule>
-									<testmodule
 									id="cc75f8f3-f730-4146-8310-e5b8dec8f909"
 									name="Log">
+									</testmodule>
+									<testmodule
+									id="df1e8900-2308-4a5b-80c8-0852def7bc47"
+									name="setFinishStatus">
+									</testmodule>
+									<testmodule
+									id="75794c23-7e68-4fcc-b86d-fdfdc0339854"
+									name="SetBatteryWorkflow">
 									</testmodule>
 									<testmodule
 									id="76ed54b6-2845-4c0e-8294-46db304267a5"
@@ -9093,6 +9149,12 @@ rxversion="8.3">
 				</column>
 				<column>
 					RollJSON
+				</column>
+				<column>
+					setStatus
+				</column>
+				<column>
+					setFinishState
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -9935,6 +9997,9 @@ rxversion="8.3">
 			id="15cd8b78-9dc0-4c2e-a0f2-f90753f5bea7">
 			</testcontainer>
 			<testcontainer
+			id="2317ccc5-88e8-4a5f-9cf0-e623008ea91e">
+			</testcontainer>
+			<testcontainer
 			id="28488bf3-5191-4a0f-8e97-890de0300194">
 			</testcontainer>
 			<testcontainer
@@ -9945,9 +10010,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="380df2fd-1b25-44c1-9b02-97800d584c68">
-			</testcontainer>
-			<testcontainer
-			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
@@ -10008,6 +10070,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="d34c42c3-18b1-4593-b593-993cb4b4a00e">
+			</testcontainer>
+			<testcontainer
+			id="d9fa93e8-b6f4-4914-afc5-63a23bef32e2">
 			</testcontainer>
 			<testcontainer
 			id="db7b9e2e-3534-4ae2-a42f-254887e8d609">

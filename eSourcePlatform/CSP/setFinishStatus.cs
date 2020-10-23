@@ -24,62 +24,50 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Log recording.
+    ///The setFinishStatus recording.
     /// </summary>
-    [TestModule("23ed3961-5aca-45a1-a490-14b35df0300c", ModuleType.Recording, 1)]
-    public partial class Log : ITestModule
+    [TestModule("e91633be-04bd-4eb7-a0db-4b2216152688", ModuleType.Recording, 1)]
+    public partial class setFinishStatus : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static Log instance = new Log();
+        static setFinishStatus instance = new setFinishStatus();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Log()
+        public setFinishStatus()
         {
-            Token = "";
             CSPDOM = "";
-            SeststatusID = "";
+            Toke = "";
             WorkflowID = "";
-            JSONData = "";
+            SetStatusID = "";
+            SestJSON = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Log Instance
+        public static setFinishStatus Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Token;
+        string _Toke;
 
         /// <summary>
-        /// Gets or sets the value of variable Token.
+        /// Gets or sets the value of variable Toke.
         /// </summary>
-        [TestVariable("64fd0353-7ae5-41cf-8321-d535405bb726")]
-        public string Token
+        [TestVariable("54ca60df-eb2c-4c38-8c37-9a2229b2762a")]
+        public string Toke
         {
-            get { return _Token; }
-            set { _Token = value; }
-        }
-
-        string _SeststatusID;
-
-        /// <summary>
-        /// Gets or sets the value of variable SeststatusID.
-        /// </summary>
-        [TestVariable("2346b18e-b91f-47c5-a5df-7c2625a3c573")]
-        public string SeststatusID
-        {
-            get { return _SeststatusID; }
-            set { _SeststatusID = value; }
+            get { return _Toke; }
+            set { _Toke = value; }
         }
 
         string _WorkflowID;
@@ -87,29 +75,41 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable WorkflowID.
         /// </summary>
-        [TestVariable("f945ed76-6ea7-480e-bbbd-4fed6fa43de7")]
+        [TestVariable("5248f3c4-232d-4577-a3c6-ad244a9efc52")]
         public string WorkflowID
         {
             get { return _WorkflowID; }
             set { _WorkflowID = value; }
         }
 
-        string _JSONData;
+        string _SetStatusID;
 
         /// <summary>
-        /// Gets or sets the value of variable JSONData.
+        /// Gets or sets the value of variable SetStatusID.
         /// </summary>
-        [TestVariable("740ea65f-9904-4e59-a2c7-7043d1928cae")]
-        public string JSONData
+        [TestVariable("d31fd6db-4269-44a8-aa14-8fcc8554355a")]
+        public string SetStatusID
         {
-            get { return _JSONData; }
-            set { _JSONData = value; }
+            get { return _SetStatusID; }
+            set { _SetStatusID = value; }
+        }
+
+        string _SestJSON;
+
+        /// <summary>
+        /// Gets or sets the value of variable SestJSON.
+        /// </summary>
+        [TestVariable("30b6894f-ec57-4099-ab1f-e508548c68f1")]
+        public string SestJSON
+        {
+            get { return _SestJSON; }
+            set { _SestJSON = value; }
         }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
-        [TestVariable("69350f75-9ad9-46ef-a0b5-cd2347a481e8")]
+        [TestVariable("ca9e92c3-ad52-46da-826c-cef11339d6c1")]
         public string CSPDOM
         {
             get { return repo.CSPDOM; }
@@ -142,7 +142,7 @@ namespace CSP
 
             Init();
 
-            savelog(Token, CSPDOM, WorkflowID, JSONData);
+            StatussetFinish(Toke, WorkflowID, SestJSON, CSPDOM);
             Delay.Milliseconds(0);
             
         }

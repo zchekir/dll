@@ -60,7 +60,6 @@ namespace CSP
         	 //variable
 		    string url = "https://cgst-qc-tiger.azurewebsites.net/api/workflows/"+WorkflowID +"/workflowBlocks/"+ BlockID;
 		     
-			Report.Log(ReportLevel.Info, "MYURL " + url );
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -80,8 +79,10 @@ namespace CSP
 		    
 			Report.Log(ReportLevel.Info, "BatteryID " + batteryID );
 		    
-               var testData = JSONData.Replace(@"<wfid>", WorkflowID).Replace(@"<blockid>", BlockID).Replace(@"<studid>", studid).Replace(@"<id2>", blockID).Replace(@"<batteryid>", batteryID).Replace(@"<TabConfigID>", TabConfigID).Replace(@"<DeskTopID>", DeskTopID).Replace(@"<studyName>", studyName);
-				Report.Info("Data to send: " + testData);
+             //  var testData = JSONData.Replace(@"<wfid>", WorkflowID).Replace(@"<blockid>", BlockID).Replace(@"<id2>", blockID).Replace(@"<batteryid>", batteryID).Replace(@"<TabConfigID>", TabConfigID).Replace(@"<DeskTopID>", DeskTopID).Replace(@"<studyName>", studyName);
+			var testData = JSONData.Replace(@"<wfid>", WorkflowID).Replace(@"<blockid>", BlockID).Replace(@"<studid>", studid).Replace(@"<id2>", blockID).Replace(@"<batteryid>", batteryID).Replace(@"<TabConfigID>", TabConfigID).Replace(@"<DeskTopID>", DeskTopID).Replace(@"<studyName>", studyName);
+
+             Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
 				sw.Flush();

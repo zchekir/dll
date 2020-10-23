@@ -26,23 +26,23 @@ using Newtonsoft.Json.Linq;
 
 namespace CSP
 {
- public class SAVEkWorkflowJSONRequest
+	 public class setFinishkWorkflowJSONRequest
 	{
 		public string id { get; set; }
 	
 		
 		
 	/// Object for creating a new workflow request
-		public SAVEkWorkflowJSONRequest()
+		public setFinishkWorkflowJSONRequest()
 		{
 			
 		
 		}
 		
 	}
-
-
-	public partial class Log
+	
+	
+    public partial class setFinishStatus
     {
         
         private void Init()
@@ -50,19 +50,22 @@ namespace CSP
             
         }
 
-        // Set workflow statusID API call 
-        public void savelog(string Token, string CSPDOM, string WorkflowID, string JSONData)
+        public void StatussetFinish(string Toke, string WorkflowID, string SestJSON, string CSPDOM)
         {
-            //variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks";
+        	
+        	Report.Log(ReportLevel.Info, "id z" + SetStatusID );
+        	
+        	
+          //variable
+		    string url = "https://"+CSPDOM+"/api/workflows/"+WorkflowID+"/workflowBlocks/"+SetStatusID;
+		    	
+		     
+			
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
-			httpRequest.Method = "POST";
-			httpRequest.Headers.Add("Authorization", Token);
-			
-			
-			
+			httpRequest.Method = "PUT";
+			httpRequest.Headers.Add("Authorization", Toke);
 			
 			
 			
@@ -70,10 +73,13 @@ namespace CSP
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
-		   
-		   
+		    // creating block ID 
+		    int x = Int32.Parse(SetStatusID);
+		    int id_Test= x-1;
+		    string secondblockID =id_Test.ToString();
 		    
-               var testData =JSONData.Replace(@"<id>", WorkflowID);;
+		    
+               var testData = SestJSON.Replace(@"<wfid>", WorkflowID).Replace(@"<SetStatusID>", SetStatusID).Replace(@"<secondblockID>", secondblockID);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -86,22 +92,26 @@ namespace CSP
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			SAVEkWorkflowJSONRequest responseObject = new SAVEkWorkflowJSONRequest();
+			setFinishkWorkflowJSONRequest responseObject = new setFinishkWorkflowJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<SAVEkWorkflowJSONRequest>(response);
-				 SeststatusID = responseObject.id;
+				responseObject = new JavaScriptSerializer().Deserialize<setFinishkWorkflowJSONRequest>(response);
 				
-			    Report.Log(ReportLevel.Info, "StatusID" +  SeststatusID  );
-			    
-			    Report.Log(ReportLevel.Info, "resp" +  response  );
+				
 			
-			
+			Report.Log(ReportLevel.Info, "id " + response );
 				
 			 }
 			
+			
+			
+
+
+
+
+        	
         }
 
     }

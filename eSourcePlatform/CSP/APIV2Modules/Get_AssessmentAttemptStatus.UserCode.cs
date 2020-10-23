@@ -72,7 +72,7 @@ namespace CSP.APIV2Modules
         		
         		Report.Log(ReportLevel.Info, "assessmentAttemptStatus: " + assessmentAttempt_Status);
         		
-        		string expectedStuts= "Complete"; 
+        		string expectedStuts= "Error"; 
         		
         		Validate.AreEqual( expectedStuts ,  assessmentAttempt_Status);
         	}

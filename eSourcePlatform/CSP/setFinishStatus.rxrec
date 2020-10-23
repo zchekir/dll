@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="23ed3961-5aca-45a1-a490-14b35df0300c"
+id="e91633be-04bd-4eb7-a0db-4b2216152688"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Log
+		setFinishStatus
 	</name>
 	<repeatcount>
 		1
@@ -23,37 +23,37 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Log"
+	classname="setFinishStatus"
 	namespace="CSP">
 	</codegen>
 	<variables>
 		<var
-		id="64fd0353-7ae5-41cf-8321-d535405bb726"
-		name="Token">
-		</var>
-		<var
-		id="69350f75-9ad9-46ef-a0b5-cd2347a481e8"
+		id="ca9e92c3-ad52-46da-826c-cef11339d6c1"
 		name="CSPDOM">
 		</var>
 		<var
-		id="2346b18e-b91f-47c5-a5df-7c2625a3c573"
-		name="SeststatusID">
+		id="54ca60df-eb2c-4c38-8c37-9a2229b2762a"
+		name="Toke">
 		</var>
 		<var
-		id="f945ed76-6ea7-480e-bbbd-4fed6fa43de7"
+		id="5248f3c4-232d-4577-a3c6-ad244a9efc52"
 		name="WorkflowID">
 		</var>
 		<var
-		id="740ea65f-9904-4e59-a2c7-7043d1928cae"
-		name="JSONData">
+		id="d31fd6db-4269-44a8-aa14-8fcc8554355a"
+		name="SetStatusID">
+		</var>
+		<var
+		id="30b6894f-ec57-4099-ab1f-e508548c68f1"
+		name="SestJSON">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Log"
+		classname="setFinishStatus"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="savelog"
+		methodname="StatussetFinish"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -62,21 +62,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="8d00d8f9-86c3-4464-8bc0-baf99abc8123">
+			id="f4b25715-4e45-4e53-9a4e-eec48f60ed19">
 				<argument
-				argname="Token"
-				id="a072ee85-d8ca-4528-80fd-d38df5043430"
-				variable="Token">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="CSPDOM"
-				id="129f1ae5-37ba-4d4c-bf1f-fd958cdd6dfc"
-				variable="CSPDOM">
+				argname="Toke"
+				id="eb7c4516-f0aa-4d91-b73b-dbdc3c02658e"
+				variable="Toke">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -85,7 +75,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="WorkflowID"
-				id="ba894912-34a4-4121-ac35-cb812fec9bff"
+				id="69779b45-38c4-41a6-82d6-aac8cf9d0448"
 				variable="WorkflowID">
 					<argvaluetype>
 						System.String
@@ -94,9 +84,19 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="JSONData"
-				id="76650a77-f320-46ec-b68a-fda15f2cd892"
-				variable="JSONData">
+				argname="SestJSON"
+				id="f926d8e1-60e6-4998-adae-988141c6e192"
+				variable="SestJSON">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="CSPDOM"
+				id="01d50168-9539-4fc6-8076-b72b44fbc27a"
+				variable="CSPDOM">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -122,7 +122,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Log.UserCode.cs
+		setFinishStatus.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
