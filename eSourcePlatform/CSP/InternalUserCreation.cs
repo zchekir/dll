@@ -24,107 +24,122 @@ namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AddStudyToExternalUser recording.
+    ///The InternalUserCreation recording.
     /// </summary>
-    [TestModule("9ef10880-fa3b-4ee3-a5b6-b1d8728f9a11", ModuleType.Recording, 1)]
-    public partial class AddStudyToExternalUser : ITestModule
+    [TestModule("5d41db88-a537-461f-bad4-96cd4d38fc49", ModuleType.Recording, 1)]
+    public partial class InternalUserCreation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the CSPRepository repository.
         /// </summary>
         public static CSPRepository repo = CSPRepository.Instance;
 
-        static AddStudyToExternalUser instance = new AddStudyToExternalUser();
+        static InternalUserCreation instance = new InternalUserCreation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AddStudyToExternalUser()
+        public InternalUserCreation()
         {
-            Token = "";
-            CSPDOM = "";
-            RolID = "";
-            Key = "";
-            JSONData = "";
-            ExternaluserID = "";
+            DBServer = "cgst-qc.database.windows.net";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            Authentication = "Active Directory Password";
+            InternalUserName = "";
+            InternalPassword = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AddStudyToExternalUser Instance
+        public static InternalUserCreation Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Token;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable Token.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
-        [TestVariable("1a2cf6ac-1c7f-46ff-8400-5c75a29f06d9")]
-        public string Token
+        [TestVariable("c9bfd589-0768-41a1-84d9-77727bea7401")]
+        public string DBServer
         {
-            get { return _Token; }
-            set { _Token = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _RolID;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable RolID.
+        /// Gets or sets the value of variable Database.
         /// </summary>
-        [TestVariable("ff107b70-fac4-4a78-a6c6-c74f53bb761d")]
-        public string RolID
+        [TestVariable("6ccbb554-1791-4b0a-b959-58c751a99e25")]
+        public string Database
         {
-            get { return _RolID; }
-            set { _RolID = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _JSONData;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable JSONData.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
-        [TestVariable("eb30db56-d622-4fa5-9e9a-5ee3896d248b")]
-        public string JSONData
+        [TestVariable("21618a25-1525-473c-b9df-e9860c8e12e5")]
+        public string dbUsername
         {
-            get { return _JSONData; }
-            set { _JSONData = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _ExternaluserID;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable ExternaluserID.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
-        [TestVariable("c52380b1-f99e-4ec5-add2-0cf293c3639f")]
-        public string ExternaluserID
+        [TestVariable("3cdf24ff-8ef9-4ac1-950b-b7cebeeaf21a")]
+        public string dbPassword
         {
-            get { return _ExternaluserID; }
-            set { _ExternaluserID = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
+        }
+
+        string _Authentication;
+
+        /// <summary>
+        /// Gets or sets the value of variable Authentication.
+        /// </summary>
+        [TestVariable("8f60d0ae-9a96-4507-a142-639965c49cac")]
+        public string Authentication
+        {
+            get { return _Authentication; }
+            set { _Authentication = value; }
+        }
+
+        string _InternalPassword;
+
+        /// <summary>
+        /// Gets or sets the value of variable InternalPassword.
+        /// </summary>
+        [TestVariable("8c611e12-f60f-4aac-879f-7decd4d7e967")]
+        public string InternalPassword
+        {
+            get { return _InternalPassword; }
+            set { _InternalPassword = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable InternalUserName.
         /// </summary>
-        [TestVariable("60e2bac1-b18c-401e-9273-7a962b5c1c96")]
-        public string CSPDOM
+        [TestVariable("fd563713-ba5a-4430-b06a-6ae090d7732a")]
+        public string InternalUserName
         {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Key.
-        /// </summary>
-        [TestVariable("c4d28067-e2d7-4473-8dff-e025201ec2c0")]
-        public string Key
-        {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return repo.InternalUsername; }
+            set { repo.InternalUsername = value; }
         }
 
 #endregion
@@ -153,7 +168,7 @@ namespace CSP
 
             Init();
 
-            StudyToExternalUser(Token, RolID, JSONData, CSPDOM, Key, ExternaluserID);
+            internalUser(Database, DBServer, dbUsername, dbPassword, Authentication);
             Delay.Milliseconds(0);
             
         }

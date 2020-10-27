@@ -468,10 +468,6 @@ rxversion="8.3">
 			minrange="0"
 			name="Generate_Secret">
 			</testcase>
-			<testcase
-			id="110ac78a-ed87-4470-8509-a4ca003edb5a"
-			name="Create_Study">
-			</testcase>
 			<modulegroup
 			id="117a977f-9128-4a3f-995e-cc553b10d948"
 			name="Add_Workflow"
@@ -560,8 +556,8 @@ rxversion="8.3">
 			datasource="TenantConnector"
 			errorbehavior="Stop"
 			id="12672266-c3e5-4da0-bf18-959502d59662"
-			maxrange="0"
-			minrange="0"
+			maxrange="4"
+			minrange="4"
 			name="Regression"
 			warnunboundvariables="False">
 			</smartfoldernode>
@@ -2101,8 +2097,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
-			maxrange="0"
-			minrange="0"
+			maxrange="3"
+			minrange="3"
 			name="API_Regression">
 			</smartfoldernode>
 			<testmodule
@@ -2898,6 +2894,26 @@ rxversion="8.3">
 					name="SetStatusID"
 					value="">
 					</param>
+					<param
+					name="Ex_key "
+					value="">
+					</param>
+					<param
+					name="secret"
+					value="">
+					</param>
+					<param
+					name="ExternalUserID"
+					value="">
+					</param>
+					<param
+					name="InternalUserName"
+					value="">
+					</param>
+					<param
+					name="InternalPassword"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -3520,6 +3536,12 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_Battery">
 			</testcase>
+			<testcase
+			id="6e4cd7ea-0fd1-4cba-89a9-e97b63ba8d0e"
+			maxrange="0"
+			minrange="0"
+			name="Generate_Secret1">
+			</testcase>
 			<testmodule
 			id="6f4727f6-39a1-4761-8e12-73c86fac77ab"
 			name="Get_AssessmentAttemptStatus"
@@ -3661,38 +3683,6 @@ rxversion="8.3">
 			name="Validate_Regression_Outcomes">
 			</testcase>
 			<testmodule
-			id="718ca4fd-b770-4c81-a668-b535d0333c8d"
-			name="CreateCSPStudy"
-			ref="346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="I_AuthToken"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="cfa99b0b-017a-4764-8cb4-d5010828965c"
-					variablename="AuthToken">
-					</var>
-					<var
-					dataname="DOM"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="13025d57-c07f-499e-9fdd-ca183fe2d546"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="StudyID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="affd5edb-9c3b-40b4-b20a-72084de8e96b"
-					variablename="Study_ID">
-					</var>
-					<var
-					dataname="StudyName"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="bc8c4e88-b1fb-4033-8df5-08a8bb96605b"
-					variablename="StudyName">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="729adb87-ccb7-4e26-8799-cfc9878f8c2b"
 			name="Select_Study"
 			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
@@ -3769,6 +3759,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="76ed54b6-2845-4c0e-8294-46db304267a5"
 			name="CompletionSteps"
 			ref="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
@@ -3982,6 +3973,54 @@ rxversion="8.3">
 			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9"
 			name="V2_AssessmentAttemptOutcomes">
 			</testcase>
+			<testcase
+			id="7dc737a0-25fd-41b8-841e-8f0ca3a40492"
+			name="Create_Study">
+			</testcase>
+			<testmodule
+			id="7e289b93-d50e-4389-950e-af66c6f8b041"
+			name="Get_ResetToken"
+			ref="9ecd415f-eabd-42d3-912c-00d78f3c79d2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ex_key "
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="f149efa0-570c-4a8d-a3eb-ac86747536d5"
+					variablename="Key">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="7f171fab-35c7-4d6e-a8d4-3f02439fb916"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="0e466bbf-8864-43a0-b57b-a4ac51ea53bb"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="23ed5de0-b936-40f7-88e0-8bf6399013a1"
+					variablename="DBserver">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="33d9a492-d3e2-4b73-ae5d-bbf6949e215a"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f06f1069-da41-4674-8cf8-7d0426f56aa7"
+					variablename="Authentication">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -4293,14 +4332,14 @@ rxversion="8.3">
 					variablename="I_AuthToken">
 					</var>
 					<var
-					dataname="InternalUsername "
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					dataname="InternalUserName"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="b88c9ec6-962a-444e-bac4-93815b46ba02"
 					variablename="username">
 					</var>
 					<var
 					dataname="InternalPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="4ef44368-44b5-44b2-9dce-c461e383f730"
 					variablename="password">
 					</var>
@@ -4483,20 +4522,20 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 					<var
-					dataname="key1"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					dataname="Ex_key "
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f186491e-a988-4bd5-8270-b971bccb2bd9"
 					variablename="key">
 					</var>
 					<var
-					dataname="studyProtocolName"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					dataname="StudyName"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e"
 					variablename="ProtocolNumber">
 					</var>
 					<var
-					dataname="Token"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					dataname="secret"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="280f8c82-fde0-4bbf-8603-40d1ee3acfea"
 					variablename="secret">
 					</var>
@@ -4592,6 +4631,18 @@ rxversion="8.3">
 					variableid="3b2c770e-10f9-4b9e-bc14-0264f5b51603"
 					variablename="DOM">
 					</var>
+					<var
+					dataname="Ex_key "
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8db316a6-9ed2-4d30-851f-b8e3466b5abb"
+					variablename="Ex_key">
+					</var>
+					<var
+					dataname="ExternalUserID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="fac9f77b-a7e9-4d18-ac23-e7505cb43ecd"
+					variablename="ExternalUserID">
+					</var>
 				</databinding>
 			</testmodule>
 			<smartfoldernode
@@ -4602,6 +4653,56 @@ rxversion="8.3">
 			minrange="1"
 			name="Database_Regression">
 			</smartfoldernode>
+			<testmodule
+			id="9ba7bab4-b2ff-40a4-a166-f56a2cd0f498"
+			name="InternalUserCreation"
+			ref="5d41db88-a537-461f-bad4-96cd4d38fc49"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="21618a25-1525-473c-b9df-e9860c8e12e5"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="3cdf24ff-8ef9-4ac1-950b-b7cebeeaf21a"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="c9bfd589-0768-41a1-84d9-77727bea7401"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="6ccbb554-1791-4b0a-b959-58c751a99e25"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="8f60d0ae-9a96-4507-a142-639965c49cac"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="InternalUserName"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="fd563713-ba5a-4430-b06a-6ae090d7732a"
+					variablename="InternalUserName">
+					</var>
+					<var
+					dataname="InternalPassword"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="8c611e12-f60f-4aac-879f-7decd4d7e967"
+					variablename="InternalPassword">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="9bd6e668-4aac-4f80-b28a-dd99b720185d"
 			name="Rewrite_Rules">
@@ -4693,6 +4794,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="9fadd4a7-7f9a-404b-9f10-f2630572aa88"
 			name="captureworkflowstateID"
 			ref="5c4d725a-77a6-4120-b099-206eb028fef8"
@@ -5037,6 +5139,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="a91d1ec2-d48c-4771-bf83-0eee10ea07af"
+			name="CreateInternalUser">
+			</testcase>
 			<testmodule
 			id="a9247335-791e-490e-a829-a9ee98251c66"
 			name="APIV2_Authenticate"
@@ -5501,8 +5607,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
-			maxrange="0"
-			minrange="0"
+			maxrange="4"
+			minrange="4"
 			name="Platform_API">
 			</smartfoldernode>
 			<testcase
@@ -5957,6 +6063,18 @@ rxversion="8.3">
 					variableid="eb30db56-d622-4fa5-9e9a-5ee3896d248b"
 					variablename="JSONData">
 					</var>
+					<var
+					dataname="Ex_key "
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="c4d28067-e2d7-4473-8dff-e025201ec2c0"
+					variablename="Key">
+					</var>
+					<var
+					dataname="ExternalUserID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="c52380b1-f99e-4ec5-add2-0cf293c3639f"
+					variablename="ExternaluserID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -6051,6 +6169,7 @@ rxversion="8.3">
 			name="Add_VisitSchedule">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="cd26fd07-2444-4e24-af57-d7f6a354b22a"
 			name="publishWorkflow"
 			ref="800196b0-6b42-4264-866e-bcea65bf2109"
@@ -6109,6 +6228,26 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_Localities">
 			</testcase>
+			<testmodule
+			id="d07516ea-d179-4b01-ae1e-03b59959cefb"
+			name="Get_Secret"
+			ref="b5c1f78b-d628-4e9c-83b0-597bcacc9905"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="be5ff697-bd07-40a4-9c8a-91518bacb8b8"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="secret"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="9219a1f9-411b-4d5c-bac7-53dfaa1aedb4"
+					variablename="secret">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d12e81c6-a1b0-40f1-bdfd-8e3e419d4eb9"
 			name="Delete_Existing_Extracts"
@@ -6989,6 +7128,38 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="375c9a7e-b49e-4d7a-9211-f579d82d0165"
 					variablename="assessmentID">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ec789b17-11d2-4f4a-b661-38e5b33e01c9"
+			name="CreateCSPStudy"
+			ref="346b7e0d-e7a3-4aef-ae8e-ab1ebe75ef3c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="13025d57-c07f-499e-9fdd-ca183fe2d546"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="cfa99b0b-017a-4764-8cb4-d5010828965c"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="StudyID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="affd5edb-9c3b-40b4-b20a-72084de8e96b"
+					variablename="Study_ID">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="bc8c4e88-b1fb-4033-8df5-08a8bb96605b"
+					variablename="StudyName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8478,6 +8649,14 @@ rxversion="8.3">
 							id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
 							name="Platform_API">
 								<testcase
+								id="a91d1ec2-d48c-4771-bf83-0eee10ea07af"
+								name="CreateInternalUser">
+									<testmodule
+									id="9ba7bab4-b2ff-40a4-a166-f56a2cd0f498"
+									name="InternalUserCreation">
+									</testmodule>
+								</testcase>
+								<testcase
 								id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
 								name="Internal_UserLogin">
 									<testmodule
@@ -8494,10 +8673,22 @@ rxversion="8.3">
 									</testmodule>
 								</testcase>
 								<testcase
-								id="110ac78a-ed87-4470-8509-a4ca003edb5a"
+								id="6e4cd7ea-0fd1-4cba-89a9-e97b63ba8d0e"
+								name="Generate_Secret1">
+									<testmodule
+									id="7e289b93-d50e-4389-950e-af66c6f8b041"
+									name="Get_ResetToken">
+									</testmodule>
+									<testmodule
+									id="d07516ea-d179-4b01-ae1e-03b59959cefb"
+									name="Get_Secret">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="7dc737a0-25fd-41b8-841e-8f0ca3a40492"
 								name="Create_Study">
 									<testmodule
-									id="718ca4fd-b770-4c81-a668-b535d0333c8d"
+									id="ec789b17-11d2-4f4a-b661-38e5b33e01c9"
 									name="CreateCSPStudy">
 									</testmodule>
 								</testcase>
@@ -9028,7 +9219,7 @@ rxversion="8.3">
 		<DataSource
 		id="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 		includefile="Unchecked"
-		lastknownrowcount="33"
+		lastknownrowcount="30"
 		name="API_Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -9478,7 +9669,7 @@ rxversion="8.3">
 		<DataSource
 		id="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 		includefile="Unchecked"
-		lastknownrowcount="5"
+		lastknownrowcount="6"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -9772,9 +9963,6 @@ rxversion="8.3">
 			id="10c333f8-e857-4fad-823d-294804009f8b">
 			</testcontainer>
 			<testcontainer
-			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
-			</testcontainer>
-			<testcontainer
 			id="12672266-c3e5-4da0-bf18-959502d59662">
 			</testcontainer>
 			<testcontainer
@@ -9988,9 +10176,6 @@ rxversion="8.3">
 			id="0e817b42-6af8-454d-87b5-b85f8e49ecd3">
 			</testcontainer>
 			<testcontainer
-			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
-			</testcontainer>
-			<testcontainer
 			id="14356dc7-f71a-4b81-8e39-6b4c56ac32ea">
 			</testcontainer>
 			<testcontainer
@@ -10010,6 +10195,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="380df2fd-1b25-44c1-9b02-97800d584c68">
+			</testcontainer>
+			<testcontainer
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
 			</testcontainer>
 			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
@@ -10033,16 +10221,25 @@ rxversion="8.3">
 			id="68469e98-b552-4b26-9077-4bf73b6fa1ce">
 			</testcontainer>
 			<testcontainer
+			id="6e4cd7ea-0fd1-4cba-89a9-e97b63ba8d0e">
+			</testcontainer>
+			<testcontainer
 			id="7bd9e7f9-b92a-4aba-9d25-36fc091d0bc3">
 			</testcontainer>
 			<testcontainer
 			id="7ce90b4c-e043-48d3-add1-96aa58274628">
 			</testcontainer>
 			<testcontainer
+			id="7dc737a0-25fd-41b8-841e-8f0ca3a40492">
+			</testcontainer>
+			<testcontainer
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
 			</testcontainer>
 			<testcontainer
 			id="9669c01e-58c1-4f33-a4ca-cb9397e7cc9a">
+			</testcontainer>
+			<testcontainer
+			id="a91d1ec2-d48c-4771-bf83-0eee10ea07af">
 			</testcontainer>
 			<testcontainer
 			id="aba925ba-1ae2-4fd2-bc5c-0bb5ad753d42">

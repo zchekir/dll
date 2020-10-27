@@ -20,62 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.InternalAPIModules
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Get_Secret recording.
+    ///The SecretKey recording.
     /// </summary>
-    [TestModule("b5c1f78b-d628-4e9c-83b0-597bcacc9905", ModuleType.Recording, 1)]
-    public partial class Get_Secret : ITestModule
+    [TestModule("a94326f9-4ca8-433f-aadd-338df57c9fb9", ModuleType.Recording, 1)]
+    public partial class SecretKey : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static Get_Secret instance = new Get_Secret();
+        static SecretKey instance = new SecretKey();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Get_Secret()
+        public SecretKey()
         {
-            CSPDOM = "";
-            Secret = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Get_Secret Instance
+        public static SecretKey Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Secret;
-
-        /// <summary>
-        /// Gets or sets the value of variable Secret.
-        /// </summary>
-        [TestVariable("9219a1f9-411b-4d5c-bac7-53dfaa1aedb4")]
-        public string Secret
-        {
-            get { return _Secret; }
-            set { _Secret = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
-        /// </summary>
-        [TestVariable("be5ff697-bd07-40a4-9c8a-91518bacb8b8")]
-        public string CSPDOM
-        {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
 
 #endregion
 
@@ -103,12 +79,6 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            engine.Helpers.WebService.GenerateSecret(CSPDOM);
-            Delay.Milliseconds(0);
-            
-            captureSecret();
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

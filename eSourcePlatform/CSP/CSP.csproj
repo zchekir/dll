@@ -2807,6 +2807,18 @@
       <id>6bc176c6-7b39-45f4-8ef6-eedbebeaf751</id>
       <BoundTo>492928c3-8757-4ac0-ac0f-37c518b41407</BoundTo>
     </Compile>
+    <Compile Include="InternalUserCreation.cs">
+      <BoundTo>1432ff86-fc69-44fe-9fc9-0145b6a3f1a6</BoundTo>
+      <DependentUpon>InternalUserCreation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e1a22fe-7ce6-4c48-8b50-dd89f3058d48</id>
+    </Compile>
+    <Compile Include="InternalUserCreation.UserCode.cs">
+      <BoundTo>1432ff86-fc69-44fe-9fc9-0145b6a3f1a6</BoundTo>
+      <DependentUpon>InternalUserCreation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>50a600d2-9479-4a7d-ac00-b97c07065cab</id>
+    </Compile>
     <Compile Include="Log.cs">
       <BoundTo>6dc87de0-be2c-47d6-8f61-c970d5cbc02d</BoundTo>
       <DependentUpon>Log.rxrec</DependentUpon>
@@ -3265,6 +3277,18 @@
       <BoundTo>480d9a60-ad4e-41ed-a1e4-d253bb05627c</BoundTo>
       <DependentUpon>View_Lastest_Report.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="SecretKey.cs">
+      <BoundTo>48928e81-f086-4506-9ce7-1d36d89036d1</BoundTo>
+      <DependentUpon>SecretKey.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73dfe4c9-2023-40d1-b755-62c83f42e147</id>
+    </Compile>
+    <Compile Include="SecretKey.UserCode.cs">
+      <BoundTo>48928e81-f086-4506-9ce7-1d36d89036d1</BoundTo>
+      <DependentUpon>SecretKey.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>24eff281-cb0a-4cc9-b581-af3143a1176a</id>
     </Compile>
     <Compile Include="SetBatteryWorkflow.cs">
       <BoundTo>ae923f1d-ea09-404d-84db-f0e7e049c920</BoundTo>
@@ -5441,6 +5465,11 @@
       <id>295b7723-2ea3-45f9-a76a-736a772800e6</id>
       <recordtableid>860147ff-5413-4ab9-a595-bf35f0534b58</recordtableid>
     </None>
+    <None Include="InternalUserCreation.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>1432ff86-fc69-44fe-9fc9-0145b6a3f1a6</id>
+      <recordtableid>5d41db88-a537-461f-bad4-96cd4d38fc49</recordtableid>
+    </None>
     <None Include="Log.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>6dc87de0-be2c-47d6-8f61-c970d5cbc02d</id>
@@ -5450,6 +5479,11 @@
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
       <id>601dfacc-9379-4476-9b87-91f247360080</id>
       <recordtableid>800196b0-6b42-4264-866e-bcea65bf2109</recordtableid>
+    </None>
+    <None Include="SecretKey.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>48928e81-f086-4506-9ce7-1d36d89036d1</id>
+      <recordtableid>a94326f9-4ca8-433f-aadd-338df57c9fb9</recordtableid>
     </None>
     <None Include="SetBatteryWorkflow.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>

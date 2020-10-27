@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace CSP.InternalAPIModules
+namespace CSP
 {
-    public partial class Get_Secret
+    public partial class SecretKey
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,12 +31,6 @@ namespace CSP.InternalAPIModules
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void captureSecret()
-        {
-            Secret= engine.Helpers.WebService.Token;
-            Report.Log(ReportLevel.Info, "capturesecret : " +  Secret );
         }
 
     }

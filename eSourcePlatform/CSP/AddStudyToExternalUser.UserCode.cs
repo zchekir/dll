@@ -50,12 +50,12 @@ namespace CSP
             
         }
 
-        public void StudyToExternalUser(string Token, string RolID, string JSONData, string CSPDOM, string Key)
+        public void StudyToExternalUser(string Token, string RolID, string JSONData, string CSPDOM, string Key, string ExternaluserID)
         {
            
         	
         	 //variable
-		    string url = "https://" + CSPDOM + "/api/externalusers/1773";
+		    string url = "https://" + CSPDOM + "/api/externalusers/"+ ExternaluserID;
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -71,7 +71,7 @@ namespace CSP
 			{
 		 	
 		    
-               var testData = JSONData.Replace(@"<id>", RolID);
+               var testData = JSONData.Replace(@"<id>", RolID).Replace(@"<Key>", Key).Replace(@"<ExternaluserID>", ExternaluserID);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
