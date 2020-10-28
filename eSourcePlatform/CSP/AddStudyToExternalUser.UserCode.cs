@@ -53,7 +53,7 @@ namespace CSP
         public void StudyToExternalUser(string Token, string RolID, string JSONData, string CSPDOM, string Key, string ExternaluserID)
         {
            
-        	
+        	Report.Log(ReportLevel.Info, "roleid " + RolID);
         	 //variable
 		    string url = "https://" + CSPDOM + "/api/externalusers/"+ ExternaluserID;
 			//Setup API call

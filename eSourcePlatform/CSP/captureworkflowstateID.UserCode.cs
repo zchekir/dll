@@ -48,7 +48,9 @@ namespace CSP
 			string query = @"SELECT 
                            id
                            FROM [Study].[StudRol]
-                           where studid=@stuid and [Name]='External Service'";
+                           where [Name]='External Service' and (studid=@stuid or id=51)";
+                           
+                           
 			
 			
 			
@@ -59,8 +61,8 @@ namespace CSP
 			string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", DBServer, Database, dbUsername, dbPassword, Authentication, "30");
 			//CreateObject:
 			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
+			da.SelectCommand.Parameters.AddWithValue("@id", stuid);
 			da.SelectCommand.Parameters.AddWithValue("@stuid", stuid);
-			
 			// Get the data from DB
 			try{
 				

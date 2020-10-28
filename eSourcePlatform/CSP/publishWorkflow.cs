@@ -48,8 +48,8 @@ namespace CSP
             BlockID = "";
             stateid_ONE = "";
             stateid_TWO = "";
-            stateid_THREE = "";
-            stateid_FOUR = "";
+            TabletConfig = "";
+            Desktop = "";
         }
 
         /// <summary>
@@ -134,28 +134,28 @@ namespace CSP
             set { _stateid_TWO = value; }
         }
 
-        string _stateid_THREE;
+        string _TabletConfig;
 
         /// <summary>
-        /// Gets or sets the value of variable stateid_THREE.
+        /// Gets or sets the value of variable TabletConfig.
         /// </summary>
         [TestVariable("5ac00588-510c-4a15-afe2-7e2c0720779f")]
-        public string stateid_THREE
+        public string TabletConfig
         {
-            get { return _stateid_THREE; }
-            set { _stateid_THREE = value; }
+            get { return _TabletConfig; }
+            set { _TabletConfig = value; }
         }
 
-        string _stateid_FOUR;
+        string _Desktop;
 
         /// <summary>
-        /// Gets or sets the value of variable stateid_FOUR.
+        /// Gets or sets the value of variable Desktop.
         /// </summary>
         [TestVariable("fdb75c32-4ff8-4115-b64b-123b2de0269d")]
-        public string stateid_FOUR
+        public string Desktop
         {
-            get { return _stateid_FOUR; }
-            set { _stateid_FOUR = value; }
+            get { return _Desktop; }
+            set { _Desktop = value; }
         }
 
         /// <summary>

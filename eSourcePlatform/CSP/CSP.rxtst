@@ -730,8 +730,8 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="Batteryid"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					dataname="batteryid "
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="8916ec07-54b9-4df7-8ffb-02870f0cde9f"
 					variablename="Batteryid">
 					</var>
@@ -2097,8 +2097,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
-			maxrange="3"
-			minrange="3"
+			maxrange="0"
+			minrange="0"
 			name="API_Regression">
 			</smartfoldernode>
 			<testmodule
@@ -2824,11 +2824,11 @@ rxversion="8.3">
 					</param>
 					<param
 					name="StudyID"
-					value="164162 ">
+					value="13">
 					</param>
 					<param
 					name="StudyName"
-					value="">
+					value="APIStudy_395149">
 					</param>
 					<param
 					name="Batteryversion"
@@ -2884,7 +2884,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="RolID"
-					value="">
+					value="48">
 					</param>
 					<param
 					name="SetworkflowStatusID"
@@ -3759,7 +3759,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="76ed54b6-2845-4c0e-8294-46db304267a5"
 			name="CompletionSteps"
 			ref="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
@@ -4794,7 +4793,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="9fadd4a7-7f9a-404b-9f10-f2630572aa88"
 			name="captureworkflowstateID"
 			ref="5c4d725a-77a6-4120-b099-206eb028fef8"
@@ -5607,8 +5605,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
-			maxrange="4"
-			minrange="4"
+			maxrange="0"
+			minrange="0"
 			name="Platform_API">
 			</smartfoldernode>
 			<testcase
@@ -6169,7 +6167,6 @@ rxversion="8.3">
 			name="Add_VisitSchedule">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="cd26fd07-2444-4e24-af57-d7f6a354b22a"
 			name="publishWorkflow"
 			ref="800196b0-6b42-4264-866e-bcea65bf2109"
@@ -6206,10 +6203,16 @@ rxversion="8.3">
 					variablename="stateid_ONE">
 					</var>
 					<var
-					dataname="stateid_FOUR"
+					dataname="desktopConfigurationID"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="fdb75c32-4ff8-4115-b64b-123b2de0269d"
-					variablename="stateid_FOUR">
+					variablename="Desktop">
+					</var>
+					<var
+					dataname="tabletConfigurationID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="5ac00588-510c-4a15-afe2-7e2c0720779f"
+					variablename="TabletConfig">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7028,6 +7031,12 @@ rxversion="8.3">
 			<testcase
 			id="eae30245-2af9-4fad-bc41-3d650f99a1e8"
 			name="Workflow">
+				<parameters>
+					<param
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="eb161724-ce99-4c21-8bcf-327610365d4c"

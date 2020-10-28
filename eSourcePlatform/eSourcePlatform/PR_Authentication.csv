@@ -2306,7 +2306,7 @@ DefaultPortal,cgst-staging.azurewebsites.net,15eaab65-c27a-4efd-83c9-276650d565b
 }
 ]
 }"
-DefaultPortal,cgst-staging-asia.azurewebsites.net,fc3a4881-e13d-4fd5-b7f3-f7fb13de676b,6b8ac562-44d5-40fd-8a34-2844e184bc84,RegressionTest,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,CBB,1,7,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,1,10,10,1,RegressionTest,https://asia.cogstate.com/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
+DefaultPortal,cgst-staging-asia.azurewebsites.net,fc3a4881-e13d-4fd5-b7f3-f7fb13de676b,0631d902-59c1-4f1f-9a2a-feeb8efddce9,RegressionTest,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,CBB,1,7,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,1,10,10,1,RegressionTest,https://asia.cogstate.com/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
 "",""secret"": ""a213794e-f1aa-4125-a98f-ae661eb9d32a
 ""}",,"
 
@@ -2516,7 +2516,7 @@ DefaultPortal,cgst-staging-asia.azurewebsites.net,fc3a4881-e13d-4fd5-b7f3-f7fb13
 {
 ""name"":""2>DesktopVersion"",
 ""code"":""ClientBatteryConfiguration"",
-""data"":19759,
+""data"":53,
 ""id"":-2,
 ""reindex"":false,
 ""isClientState"":true,
@@ -2534,7 +2534,7 @@ DefaultPortal,cgst-staging-asia.azurewebsites.net,fc3a4881-e13d-4fd5-b7f3-f7fb13
 {
 ""name"":""3>TabletVersion"",
 ""code"":""ClientBatteryConfiguration"",
-""data"":19760,
+""data"":54,
 ""id"":-3,
 ""reindex"":false,
 ""isClientState"":true,
@@ -2562,6 +2562,136 @@ DefaultPortal,cgst-staging-asia.azurewebsites.net,fc3a4881-e13d-4fd5-b7f3-f7fb13
 ""nextStates"":[
 ],
 ""stateTypeId"":32
+},
+{
+""name"":""5>simpleAgeDecision"",
+""code"":""ServerAge"",
+""data"":0,
+""id"":-5,
+""reindex"":false,
+""isClientState"":false,
+""returnStateId"":-5,
+""isStartState"":false,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":18,
+""nextWorkflowStateId"":-4
+},
+{
+""action"":121,
+""nextWorkflowStateId"":-4
+},
+{
+""action"":-8,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":25
+}
+]
+[
+{
+""name"":""1>browserCheck"",
+""code"":""ClientBrowserCheck"",
+""data"":0,
+""id"":-1,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-1,
+""isStartState"":true,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":-11,
+""nextWorkflowStateId"":-2
+},
+{
+""action"":-10,
+""nextWorkflowStateId"":-3
+},
+{
+""action"":-3,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":33
+},
+{
+""name"":""2>DesktopVersion"",
+""code"":""ClientBatteryConfiguration"",
+""data"":53,
+""id"":-2,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-1,
+""isStartState"":false,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":-2,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":34
+},
+{
+""name"":""3>TabletVersion"",
+""code"":""ClientBatteryConfiguration"",
+""data"":54,
+""id"":-3,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-1,
+""isStartState"":false,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":-2,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":34
+},
+{
+""name"":""4>Finished"",
+""code"":""ClientBrowserClose"",
+""data"":1,
+""id"":-4,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-4,
+""isStartState"":false,
+""isEndState"":true,
+""nextStates"":{
+},
+""stateTypeId"":32
+},
+{
+""name"":""5>simpleAgeDecision"",
+""code"":""ServerAge"",
+""data"":0,
+""id"":-5,
+""reindex"":false,
+""isClientState"":false,
+""returnStateId"":-5,
+""isStartState"":false,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":18,
+""nextWorkflowStateId"":-4
+},
+{
+""action"":121,
+""nextWorkflowStateId"":-4
+},
+{
+""action"":-8,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":25
 }
 ]","{
   ""id"": 24039,
@@ -2803,7 +2933,7 @@ DefaultPortal,cgst-staging-asia.azurewebsites.net,fc3a4881-e13d-4fd5-b7f3-f7fb13
   ""workflowTemplateId"": null,
   ""workflowId"": <wfid>,
   ""name"": ""Simple Battery"",
-  ""data"": ""{\""temp_ConfigurationShow_battery\"":{\""study\"":{\""id\"":<studid>,\""name\"":\""<studyName>\"",\""isDefault\"":null},\""batteryTemplate\"":{\""id\"":2,\""name\"":\""CBB - NON INTERACTIVE DEMOS\"",\""isDefault\"":null},\""translation\"":{\""id\"":1,\""name\"":\""Default\"",\""isDefault\"":null},\""configuration\"":null,\""locked\"":false,\""isLockedStatus\"":false,\""isManuallyUpdated\"":false,\""scalingEnabled\"":true,\""scalingLower\"":75,\""scalingUpper\"":100,\""scalingUpperLimits\"":[100,120],\""repeatStyle\"":null,\""id\"":<batteryid>,\""name\"":\""Automation\"",\""description\"":\""Test\"",\""status\"":{\""id\"":1,\""name\"":\""Draft\"",\""isDefault\"":null},\""numberBlocks\"":8,\""taskCodes\"":[\""CI\"",\""YES\"",\""DET\"",\""NO\"",\""YES/NO\"",\""IDN\"",\""OCL\"",\""ONB\""],\""pediatric\"":false,\""isSweepEnabled\"":false,\""desktopConfiguration\"":{\""id\"":19759,\""name\"":\""Desktop\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""responseScreen\\\"":false}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null},\""tabletConfiguration\"":{\""id\"": 19760,\""name\"":\""Tablet\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yes_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""no_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yesno_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null}}}"",
+  ""data"": ""{\""temp_ConfigurationShow_battery\"":{\""study\"":{\""id\"":<studid>,\""name\"":\""<studyName>\"",\""isDefault\"":null},\""batteryTemplate\"":{\""id\"":2,\""name\"":\""CBB - NON INTERACTIVE DEMOS\"",\""isDefault\"":null},\""translation\"":{\""id\"":1,\""name\"":\""Default\"",\""isDefault\"":null},\""configuration\"":null,\""locked\"":false,\""isLockedStatus\"":false,\""isManuallyUpdated\"":false,\""scalingEnabled\"":true,\""scalingLower\"":75,\""scalingUpper\"":100,\""scalingUpperLimits\"":[100,120],\""repeatStyle\"":null,\""id\"":<batteryid>,\""name\"":\""Automation\"",\""description\"":\""Test\"",\""status\"":{\""id\"":1,\""name\"":\""Draft\"",\""isDefault\"":null},\""numberBlocks\"":8,\""taskCodes\"":[\""CI\"",\""YES\"",\""DET\"",\""NO\"",\""YES/NO\"",\""IDN\"",\""OCL\"",\""ONB\""],\""pediatric\"":false,\""isSweepEnabled\"":false,\""desktopConfiguration\"":{\""id\"":53,\""name\"":\""Desktop\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""responseScreen\\\"":false}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null},\""tabletConfiguration\"":{\""id\"": 54,\""name\"":\""Tablet\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yes_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""no_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yesno_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null}}}"",
   ""isDecision"": false,
   ""order"": 1,
   ""successBlock"": {
@@ -3069,7 +3199,7 @@ DefaultPortal,cgst-staging-asia.azurewebsites.net,fc3a4881-e13d-4fd5-b7f3-f7fb13
 }
 ]
 }"
-DefaultPortal,asia.cogstate.com,fc3a4881-e13d-4fd5-b7f3-f7fb13de676b,467b146e-4eff-46f9-8d3c-d701391a9670,RegressionTest,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,CBB,1,7,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,1,10,10,1,RegressionTest,https://asia.cogstate.com/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
+DefaultPortal,asia.cogstate.com,fc3a4881-e13d-4fd5-b7f3-f7fb13de676b,fe8950c8-37b0-4be7-af23-5d1aad26d9af,RegressionTest,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,CBB,1,7,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,1,10,10,1,RegressionTest,https://asia.cogstate.com/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
 "",""secret"": ""a213794e-f1aa-4125-a98f-ae661eb9d32a
 ""}",,"
 

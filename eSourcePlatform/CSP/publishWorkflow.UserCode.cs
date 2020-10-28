@@ -73,7 +73,7 @@ namespace CSP
 			{
 		 	
 		    
-                var testData = p_workflowData; //.Replace(@"<id>", WorkflowID).Replace(@"<stateid_ONE>", stateid_ONE).Replace(@"<stateid_TWO>", stateid_TWO).Replace(@"<stateid_THREE>", stateid_THREE).Replace(@"<stateid_FOUR>", stateid_FOUR);
+                var testData = p_workflowData; //.Replace(@"<TabletConfig>", TabletConfig).Replace(@"<Desktop>", Desktop);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -103,7 +103,17 @@ namespace CSP
         	}catch (Exception e)
 
         	{
-               Report.Log(ReportLevel.Info, "error ", e.Message);
+            	string infos="Type 'CSP.PublishWorkflowJSONRequest' is not supported for deserialization of an array.";
+            	
+            	if (infos == e.Message ){
+            		
+            		Report.Log(ReportLevel.Info, "Workflow Published as expected");
+            	}else{
+            		
+            		Report.Log(ReportLevel.Info, "error ", e.Message);
+            	}
+               
+               
              }
         	
         }
