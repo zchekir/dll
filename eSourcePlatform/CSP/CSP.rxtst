@@ -2005,6 +2005,12 @@ rxversion="8.3">
 					variableid="7d8630e7-cdab-4d0f-9a43-25167981d80b"
 					variablename="workflow_id">
 					</var>
+					<var
+					dataname="WofkflowBlockID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="49b687c5-35ab-43f1-ac37-6e88a9c0d744"
+					variablename="workflowbatteryBlockID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -2254,6 +2260,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="4a714058-2e9f-4e6b-b23a-fb2ec6f993fa"
 			name="addSuccessBlock"
 			ref="d8498245-af13-48dd-ba0c-4889cb6e2f8b"
@@ -3756,9 +3763,22 @@ rxversion="8.3">
 					variableid="177ac509-fdf5-4906-a0aa-b07e555ca393"
 					variablename="WorkflowBlockID">
 					</var>
+					<var
+					dataname="desktopConfigurationID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6c796e6e-163b-40d6-b7fb-24d477a581a6"
+					variablename="desktopConfigurationid">
+					</var>
+					<var
+					dataname="tabletConfigurationID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="0169f283-75a2-4e18-84ad-8901d6970671"
+					variablename="tabletConfigurationid">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="76ed54b6-2845-4c0e-8294-46db304267a5"
 			name="CompletionSteps"
 			ref="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
@@ -4793,6 +4813,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="9fadd4a7-7f9a-404b-9f10-f2630572aa88"
 			name="captureworkflowstateID"
 			ref="5c4d725a-77a6-4120-b099-206eb028fef8"
@@ -6167,6 +6188,7 @@ rxversion="8.3">
 			name="Add_VisitSchedule">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="cd26fd07-2444-4e24-af57-d7f6a354b22a"
 			name="publishWorkflow"
 			ref="800196b0-6b42-4264-866e-bcea65bf2109"
@@ -6636,6 +6658,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="df1e8900-2308-4a5b-80c8-0852def7bc47"
 			name="setFinishStatus"
 			ref="e91633be-04bd-4eb7-a0db-4b2216152688"
@@ -7225,6 +7248,7 @@ rxversion="8.3">
 			name="teardown">
 			</teardown>
 			<testmodule
+			enabled="False"
 			id="ee7c4850-e522-4eee-a0f7-8a6fde037814"
 			name="addinBlock"
 			ref="96212289-c634-46c5-8cbb-9c4421cf821b"
@@ -10179,64 +10203,10 @@ rxversion="8.3">
 			id="009282f3-88a4-4e0d-a01b-5b6d827c12d5">
 			</testcontainer>
 			<testcontainer
-			id="04e9ad44-c5c0-4887-8427-a9812b7f6b05">
-			</testcontainer>
-			<testcontainer
-			id="0e817b42-6af8-454d-87b5-b85f8e49ecd3">
-			</testcontainer>
-			<testcontainer
-			id="14356dc7-f71a-4b81-8e39-6b4c56ac32ea">
-			</testcontainer>
-			<testcontainer
-			id="15cd8b78-9dc0-4c2e-a0f2-f90753f5bea7">
-			</testcontainer>
-			<testcontainer
-			id="2317ccc5-88e8-4a5f-9cf0-e623008ea91e">
-			</testcontainer>
-			<testcontainer
-			id="28488bf3-5191-4a0f-8e97-890de0300194">
-			</testcontainer>
-			<testcontainer
-			id="2afd441e-83e2-4a9b-9362-0403443cd494">
-			</testcontainer>
-			<testcontainer
-			id="2e866a94-fce7-4618-926b-43fd983061b0">
-			</testcontainer>
-			<testcontainer
-			id="380df2fd-1b25-44c1-9b02-97800d584c68">
-			</testcontainer>
-			<testcontainer
-			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
-			</testcontainer>
-			<testcontainer
 			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
-			id="58716604-e5e2-42e7-a74c-56ac2114d42b">
-			</testcontainer>
-			<testcontainer
-			id="5b156c7a-043e-4a56-9b63-6c213a44fa3c">
-			</testcontainer>
-			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
-			</testcontainer>
-			<testcontainer
-			id="61aec477-1e17-4672-b33b-1a9dac5ba01b">
-			</testcontainer>
-			<testcontainer
-			id="634b18f3-7e15-4de5-ab38-09c8cfdf9809">
-			</testcontainer>
-			<testcontainer
-			id="68469e98-b552-4b26-9077-4bf73b6fa1ce">
-			</testcontainer>
-			<testcontainer
-			id="6e4cd7ea-0fd1-4cba-89a9-e97b63ba8d0e">
-			</testcontainer>
-			<testcontainer
-			id="7bd9e7f9-b92a-4aba-9d25-36fc091d0bc3">
-			</testcontainer>
-			<testcontainer
-			id="7ce90b4c-e043-48d3-add1-96aa58274628">
 			</testcontainer>
 			<testcontainer
 			id="7dc737a0-25fd-41b8-841e-8f0ca3a40492">
@@ -10245,49 +10215,22 @@ rxversion="8.3">
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
 			</testcontainer>
 			<testcontainer
-			id="9669c01e-58c1-4f33-a4ca-cb9397e7cc9a">
+			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
 			</testcontainer>
 			<testcontainer
 			id="a91d1ec2-d48c-4771-bf83-0eee10ea07af">
 			</testcontainer>
 			<testcontainer
-			id="aba925ba-1ae2-4fd2-bc5c-0bb5ad753d42">
+			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
-			id="b0b665dc-c6d5-4aea-9b91-b4f44d934fbc">
-			</testcontainer>
-			<testcontainer
-			id="b908eec6-eaa2-4d8b-b004-2797e9728de0">
+			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 			<testcontainer
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
 			</testcontainer>
 			<testcontainer
-			id="bc933693-e282-42b0-9122-24d4b0fc9019">
-			</testcontainer>
-			<testcontainer
-			id="c4671e7c-352a-4507-a0ce-dafb6624b50a">
-			</testcontainer>
-			<testcontainer
-			id="c5b352f3-cf2c-402b-b637-50aaeff7130d">
-			</testcontainer>
-			<testcontainer
 			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
-			</testcontainer>
-			<testcontainer
-			id="d34c42c3-18b1-4593-b593-993cb4b4a00e">
-			</testcontainer>
-			<testcontainer
-			id="d9fa93e8-b6f4-4914-afc5-63a23bef32e2">
-			</testcontainer>
-			<testcontainer
-			id="db7b9e2e-3534-4ae2-a42f-254887e8d609">
-			</testcontainer>
-			<testcontainer
-			id="dcad1ea0-48b4-4aec-81da-8fc773e11e98">
-			</testcontainer>
-			<testcontainer
-			id="e2ad5952-d28f-43bd-b1b2-3e9076c66230">
 			</testcontainer>
 			<testcontainer
 			id="eae30245-2af9-4fad-bc41-3d650f99a1e8">

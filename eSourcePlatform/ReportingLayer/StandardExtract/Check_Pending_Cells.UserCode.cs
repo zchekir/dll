@@ -25,6 +25,7 @@ using System.Diagnostics;
 
 namespace ReportingLayer.StandardExtract
 {
+	//[extracts].[vwStandardExtract]
 	public partial class Check_Pending_Cells
 	{
 		int i;
@@ -44,7 +45,8 @@ namespace ReportingLayer.StandardExtract
 			timer.Start();
 			//Build SQL query and connection string
 			string query = @"SELECT * 
-							FROM [extracts].[vwStandardExtract]
+							FROM [dbo].[vwStandardExtract]
+
 							WHERE TestIdentifier = @TestIdentifier";
 			
 			//do while the peeding data appears in DB

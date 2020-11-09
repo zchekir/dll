@@ -47,6 +47,7 @@ namespace CSP
             Studname = "";
             CSPDOM = "";
             workflow_id = "";
+            workflowbatteryBlockID = "";
         }
 
         /// <summary>
@@ -117,6 +118,18 @@ namespace CSP
         {
             get { return _workflow_id; }
             set { _workflow_id = value; }
+        }
+
+        string _workflowbatteryBlockID;
+
+        /// <summary>
+        /// Gets or sets the value of variable workflowbatteryBlockID.
+        /// </summary>
+        [TestVariable("49b687c5-35ab-43f1-ac37-6e88a9c0d744")]
+        public string workflowbatteryBlockID
+        {
+            get { return _workflowbatteryBlockID; }
+            set { _workflowbatteryBlockID = value; }
         }
 
         /// <summary>

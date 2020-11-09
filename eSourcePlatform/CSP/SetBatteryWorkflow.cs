@@ -48,6 +48,8 @@ namespace CSP
             BatteryID = "";
             battryworkflowData = "";
             WorkflowBlockID = "";
+            tabletConfigurationid = "";
+            desktopConfigurationid = "";
         }
 
         /// <summary>
@@ -130,6 +132,30 @@ namespace CSP
         {
             get { return _WorkflowBlockID; }
             set { _WorkflowBlockID = value; }
+        }
+
+        string _tabletConfigurationid;
+
+        /// <summary>
+        /// Gets or sets the value of variable tabletConfigurationid.
+        /// </summary>
+        [TestVariable("0169f283-75a2-4e18-84ad-8901d6970671")]
+        public string tabletConfigurationid
+        {
+            get { return _tabletConfigurationid; }
+            set { _tabletConfigurationid = value; }
+        }
+
+        string _desktopConfigurationid;
+
+        /// <summary>
+        /// Gets or sets the value of variable desktopConfigurationid.
+        /// </summary>
+        [TestVariable("6c796e6e-163b-40d6-b7fb-24d477a581a6")]
+        public string desktopConfigurationid
+        {
+            get { return _desktopConfigurationid; }
+            set { _desktopConfigurationid = value; }
         }
 
         /// <summary>

@@ -458,9 +458,9 @@ namespace ReportingLayer
                 _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
                 _filtertypedropdownInfo = new RepoItemInfo(this, "FilterTypeDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-9']", 30000, null, "db43cf6c-681a-40a7-a643-376f7e2b8282");
                 _expandInfo = new RepoItemInfo(this, "Expand", "div[2]//tag[9]//button[@title='Expand']", 30000, null, "9635faeb-ac8a-43f5-a295-6831032d50d4");
-                _expandtestidentifierdropboxInfo = new RepoItemInfo(this, "ExpandTestIdentifierDropBox", "div/div/tag[46]/div/div[1]/div[1]/h2[@title~'^''vwStandardExtract''\\[TestI']//mark[@innertext='TestIdentifier']", 30000, null, "68ce9f41-6740-4a79-a539-1f43daa7274d");
-                _enterthettestidentifierInfo = new RepoItemInfo(this, "EnterThetTestIdentifier", "div/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']", 30000, null, "5018c724-014d-4b63-b339-7a52e7f55804");
-                _checkthecheckbosInfo = new RepoItemInfo(this, "CheckThecheckBos", "?/?/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span", 30000, null, "68190d81-74fc-42d0-90a8-3a09b5d92c4a");
+                _expandtestidentifierdropboxInfo = new RepoItemInfo(this, "ExpandTestIdentifierDropBox", "div/div/tag[45]/div/div[1]/div[1]/h2[@title~'^''vwStandardExtract''\\[TestI']//mark[@innertext='TestIdentifier']", 30000, null, "68ce9f41-6740-4a79-a539-1f43daa7274d");
+                _enterthettestidentifierInfo = new RepoItemInfo(this, "EnterThetTestIdentifier", "div/div/tag[45]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']", 30000, null, "5018c724-014d-4b63-b339-7a52e7f55804");
+                _checkthecheckbosInfo = new RepoItemInfo(this, "CheckThecheckBos", "?/?/div/tag[45]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span", 30000, null, "68190d81-74fc-42d0-90a8-3a09b5d92c4a");
             }
 
             /// <summary>

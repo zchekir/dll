@@ -36,7 +36,7 @@ namespace ReportingLayer.AcademicExtract
 		// Timer.Equals(2)
 		
 		
-		
+		//[extracts].[vwAcademicExtract]
 	
 		private void Init()
 		{
@@ -51,7 +51,8 @@ namespace ReportingLayer.AcademicExtract
 			
 			//Build SQL query and connection string
 			string query = @"SELECT * 
-							FROM [extracts].[vwAcademicExtract]
+							FROM [dbo].[vwAcademicExtract]
+                         
 				
 			WHERE TestIdentifier = @TestIdentifier";
 			

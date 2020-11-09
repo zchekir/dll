@@ -70,7 +70,7 @@ public class BatteryWorkflowJSONRequest
 			{
 		 	
 		    
-               var testData = battryworkflowData.Replace(@"<wkid>", WorkflowID).Replace(@"<studid>", StudyID).Replace(@"<batteryID>", BatteryID).Replace(@"<WorkflowBlockID>", WorkflowBlockID);
+               var testData = battryworkflowData.Replace(@"<wkid>", WorkflowID).Replace(@"<studid>", StudyID).Replace(@"<batteryID>", BatteryID).Replace(@"<WorkflowBlockID>", WorkflowBlockID).Replace(@"<desktopConfigurationid>", desktopConfigurationid).Replace(@"<tabletConfigurationid>", tabletConfigurationid);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);

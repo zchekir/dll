@@ -74,7 +74,7 @@ namespace CSP
 		   
 		    // creating block ID 
 		    int x = Int32.Parse(BlockID);
-		    int idTest= x+1;
+		    int idTest= x+2;
 		    string blockID =idTest.ToString();
 		    
 			Report.Log(ReportLevel.Info, "BatteryID " + batteryID );
