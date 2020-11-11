@@ -48,7 +48,7 @@ namespace CSP
 			string query = @"SELECT 
                            id
                            FROM [Study].[StudRol]
-                           where [Name]='External Service' and (studid=@stuid or id=51)";
+                           where [Name]='External Service' and (studid=@stuid or id=51) or (id=39)";
                            
                            
 			

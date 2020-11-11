@@ -36,26 +36,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="020f9aee-4a4a-4418-b19e-1cf10f91b282"
-			name="APIV2_Launch_AssessmentAttempt"
-			ref="4cf38574-50a6-4296-8017-6f3285aac388"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Browser"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
-					variablename="Browser">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="02397f30-b5d2-493a-9fa6-2991adcc639b"
 			name="UB11"
 			ref="d3463bf2-92a2-4729-b553-1836fdb35ec2"
@@ -107,56 +87,10 @@ rxversion="8.3">
 			minrange="0"
 			name="UB01">
 			</testcase>
-			<testmodule
-			id="02a6eeaf-5cf4-46ae-b08d-ec6ccc8d0337"
-			name="APIV2_Authenticate"
-			ref="03a98aac-9699-4331-a3fa-00536dfad33f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Secret"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
-					variablename="Secret">
-					</var>
-					<var
-					dataname="Key"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="35d6bff4-468a-4307-8386-b46e7e547dc9"
-					variablename="Key">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="02ca4b95-a2d6-492f-ab6e-36034c719d59"
 			name="400-InvalidDOB">
 			</testcase>
-			<smartfoldernode
-			datarangeactive="True"
-			datasource="CSPConnector"
-			id="037aeee4-7133-450a-b13e-79f6464da1e0"
-			maxrange="0"
-			minrange="0"
-			name="Check_Platform_Features">
-			</smartfoldernode>
 			<setup
 			id="03d7e019-a96f-4158-8647-c6afb1e7f8a0"
 			name="setup">
@@ -323,20 +257,6 @@ rxversion="8.3">
 				</databinding>
 			</modulegroup>
 			<testmodule
-			id="09d3606d-6b0c-4038-b7ff-e8ffa9bac093"
-			name="Click_External_Users_Menu"
-			ref="87fa94c0-fd9a-48b5-b2d8-c6c921ec6b9a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="0ba7de74-4e84-47cc-aaf2-9a5c68da179d"
 			name="Validate_Outcomes"
 			ref="0739dcfc-2397-4f24-93f3-0747bbf8fb91"
@@ -391,20 +311,6 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<testmodule
-			id="0c19a365-c2b7-469b-8a51-9ca6cc15f33e"
-			name="oDataAPI"
-			ref="e5c5155b-1c7b-4dcd-9aad-e16fa12f0735"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="c8b4b7d8-5ec1-44d1-9ce3-70a3bdb9b058"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="0c67fa28-e0cb-4086-9f4b-a88ff95ef86f"
 			name="Click_Gear_Icon"
 			ref="c53e2e79-d2d1-413f-b728-0a065189c55c"
@@ -437,12 +343,6 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="0df12646-301a-4a02-93db-025bae8ef345"
-			name="Disconnect_Internet"
-			ref="e6bf153b-dbda-43ce-bf19-a9d404778407"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="0e670364-b439-447b-ba93-b4bd5eeb0366"
@@ -537,20 +437,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="1200ffa8-c24d-43e0-b3b1-1a0aa87bbf4b"
-			name="Validate_Upload_Failure"
-			ref="2fa0a2f8-d93a-44d4-8572-1f9cf92b901e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="TenantConnector"
@@ -558,7 +444,7 @@ rxversion="8.3">
 			id="12672266-c3e5-4da0-bf18-959502d59662"
 			maxrange="4"
 			minrange="4"
-			name="Regression"
+			name="asiaRegression"
 			warnunboundvariables="False">
 			</smartfoldernode>
 			<testmodule
@@ -645,12 +531,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="138772e1-cabd-43b1-8df1-4522ca9ab871"
-			name="PowerBI_Report"
-			ref="74cc38b7-e7a0-4b6f-a941-387b7394b543"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="14356dc7-f71a-4b81-8e39-6b4c56ac32ea"
 			name="GetBatteryAssessee1">
@@ -663,40 +543,10 @@ rxversion="8.3">
 			minrange="0"
 			name="UB111">
 			</testcase>
-			<teardown
-			id="16025ae9-9d05-4d0f-995b-d91887787f2b"
-			name="teardown">
-			</teardown>
 			<testcase
 			id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3"
 			name="OpenexPortFolder">
 			</testcase>
-			<testmodule
-			id="19b27d14-63e0-4a68-b957-7fb42285afde"
-			name="Validate_Report_Generated"
-			ref="e98ba0ae-ff2c-4d37-be25-aefe787591b1"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="91a30a58-c149-4f74-8b49-255a6dcd30b7"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="590c4030-19f4-4043-be64-4b98675d3e4b"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="1b0aad25-9aec-45f3-acd1-e666a670043d"
 			name="Select_Locality"
@@ -752,52 +602,6 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="923312a9-31d9-4992-b1da-d85e3b6c1f1e"
 					variablename="ConfigurationID">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="1d131fab-0f48-4aba-a763-4cf44b110205"
-			name="Select_Study"
-			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProjectName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
-					variablename="ProjectName">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="1da69619-cd15-4fe1-a860-e082c64406eb"
-			name="Open_Browser"
-			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Browser"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="daa00f9e-5818-40a1-a038-7de381bf08b9"
-					variablename="Browser">
-					</var>
-					<var
-					dataname="CSPURL"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
-					variablename="CSPURL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -946,46 +750,6 @@ rxversion="8.3">
 			name="ReprocessWorkflowFlag1">
 			</testcase>
 			<testmodule
-			id="239b235e-71a3-452e-bb4e-193e966a3024"
-			name="Select_First_Visit"
-			ref="8f5dbbf6-ea58-4c62-9550-7b304a4984fb"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="VisitScheduleName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="f21fe27d-9d06-425a-ac88-1991573cee47"
-					variablename="VisitScheduleName">
-					</var>
-					<var
-					dataname="VisitName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="c056edce-42d6-4ef2-b6ab-c3af87dd013f"
-					variablename="VisitName">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="23de7cc7-e0d9-4086-8a04-037d9ded67e0"
-			name="Click_Reports_Tab"
-			ref="c8f46ef8-b4a0-4ce4-b7d9-4b2b351076c2"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="24015025-76f9-49e6-a0b7-d093b4e0a347"
 			name="UB06"
 			ref="6d8d012b-e6c6-45b0-9580-5226c8049d77"
@@ -1048,10 +812,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
-			<testcase
-			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
-			name="oData_API">
-			</testcase>
 			<testmodule
 			id="26446fe5-3748-4fc2-9c8c-4ceac9f1e0d6"
 			name="RrunWorkflow"
@@ -1206,20 +966,6 @@ rxversion="8.3">
 			id="297a9b13-970e-4958-b03a-c2e11d8c8b2b"
 			name="Navigate_AWSDB">
 			</testcase>
-			<testmodule
-			id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -1254,69 +1000,6 @@ rxversion="8.3">
 			minrange="0"
 			name="UB021">
 			</testcase>
-			<testcase
-			id="3064fb0e-3ac4-4917-8946-743c167f36b1"
-			name="Generate_Battery_Config_Report">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="DataConnector"
-								dataname="BatteryTemplateName"
-								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="CBB">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</testcase>
-			<testmodule
-			id="342da772-decf-40b3-aad5-56d8887ce9e9"
-			name="APIV2_Authenticate"
-			ref="03a98aac-9699-4331-a3fa-00536dfad33f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Key"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="35d6bff4-468a-4307-8386-b46e7e547dc9"
-					variablename="Key">
-					</var>
-					<var
-					dataname="Secret"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
-					variablename="Secret">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="3496f3b0-895c-440d-917a-c5f5752cb3bb"
 			name="Insert_EmptyAssessment"
@@ -1559,45 +1242,6 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<testmodule
-			id="368be19d-c16e-4dbc-8f09-0ab751c49feb"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<modulegroup
-			id="3691e4f8-9e08-4a10-96e7-d538ccb7bf05"
-			name="Login"
-			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
-				<databinding>
-					<var
-					dataname="CSPUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="CSPUsername">
-					</var>
-					<var
-					dataname="CSPPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="CSPPassword">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</modulegroup>
-			<testmodule
 			id="36b754fe-7092-46e9-9832-4605738ac882"
 			name="InvalidDOB"
 			ref="c37b6363-6319-4130-a466-b49d23f6545c"
@@ -1683,26 +1327,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="37dd36f8-6eea-424e-bd72-e668313b298b"
-			name="APIV2_Launch_AssessmentAttempt"
-			ref="4cf38574-50a6-4296-8017-6f3285aac388"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Browser"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
-					variablename="Browser">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="380df2fd-1b25-44c1-9b02-97800d584c68"
 			name="G_NextSate1">
@@ -1770,20 +1394,6 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="55960405-c7ce-4709-bfe6-b0e8ba9f96b3"
 					variablename="authentication">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="3b25a2c7-db79-489e-a373-96ba0f8890d5"
-			name="View_Lastest_Report"
-			ref="3bf72023-04a6-405d-b102-33645e57f937"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1940,30 +1550,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="430a094f-65a8-4db4-be14-0f981503e9fc"
-			name="Validate_Extract_Downloaded"
-			ref="4488b4f0-9d37-4ce0-af17-188ef70d7a63"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Browser"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="e9a5aaa3-e993-4a4c-a2f5-18640629b521"
-					variablename="Browser">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<teardown
-			id="43a30475-a3e8-4922-86d6-ce75566c783f"
-			name="teardown">
-			</teardown>
-			<testmodule
 			id="4494ed31-8e29-4014-8f55-7b0b1d5b6911"
 			name="WorkflowCreation"
 			ref="ff1ab6c2-86bd-43f8-8d89-a8c55c748cf2"
@@ -2004,12 +1590,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="7d8630e7-cdab-4d0f-9a43-25167981d80b"
 					variablename="workflow_id">
-					</var>
-					<var
-					dataname="WofkflowBlockID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="49b687c5-35ab-43f1-ac37-6e88a9c0d744"
-					variablename="workflowbatteryBlockID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2103,9 +1683,9 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
-			maxrange="0"
-			minrange="0"
-			name="API_Regression">
+			maxrange="3"
+			minrange="3"
+			name="asiaAPI_Regression">
 			</smartfoldernode>
 			<testmodule
 			id="45996079-a7eb-4dde-97cc-f077b7c784a6"
@@ -2260,7 +1840,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="4a714058-2e9f-4e6b-b23a-fb2ec6f993fa"
 			name="addSuccessBlock"
 			ref="d8498245-af13-48dd-ba0c-4889cb6e2f8b"
@@ -2288,32 +1867,6 @@ rxversion="8.3">
 					dataname="DOM"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="eee7c247-23d5-47cd-ad1c-3117191c5393"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="4ba90daa-a78b-4e33-9f6e-21454d4ea524"
-			name="Select_Study"
-			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProjectName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
-					variablename="ProjectName">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
 				</databinding>
@@ -2385,9 +1938,9 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="4e93b643-21fa-484b-bc91-84432f23458c"
-			name="Select_PR_Extract"
-			ref="83aa1e02-85d2-4526-b992-2fc4405345e3"
+			id="5194336b-7c96-4e69-9b01-4ff226f8409e"
+			name="Verify_API_Version"
+			ref="c718511d-4281-405c-9160-251f311d2703"
 			type="Recording">
 				<databinding>
 					<var
@@ -2395,6 +1948,12 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="ServerVersionDeployed"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
+					variablename="ServerVersion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2403,45 +1962,11 @@ rxversion="8.3">
 			name="CloseAWS_WebSite">
 			</testcase>
 			<testmodule
-			id="5283227a-0a62-47fc-ad9c-da9af53f661c"
-			name="Click_External_Resend_Invite"
-			ref="03e4a6c4-b853-4ca8-b0b9-b39a1d55cc2f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="52e3141b-574f-4d38-ba5d-d09f01cf95bb"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="539d1eda-eaa8-42ed-a47b-c70482a30c61"
-			name="Extract_Participant_IQNumber"
-			ref="0de1ee83-e7e6-4ddd-8dbc-17f0eb0ca8ad"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="247930dc-ae28-41ee-87b9-ab3394ab21f3"
-					variablename="externalID">
-					</var>
 					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
@@ -2479,24 +2004,6 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="48f6b5c9-8619-4b7a-8c6f-4795b37abf22"
 					variablename="studyProtocolName">
-					</var>
-				</databinding>
-			</testmodule>
-			<setup
-			id="543a0321-1a89-48d8-a6d8-28aede0c632b"
-			name="setup">
-			</setup>
-			<testmodule
-			id="55d6b0ac-0ab7-4f3d-9c51-fd3b005ef475"
-			name="Validate_Sync_Success"
-			ref="ff849467-5c5b-4735-9e50-3e3d77a297b2"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2593,7 +2100,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="5b156c7a-043e-4a56-9b63-6c213a44fa3c"
-			name="V2_API1">
+			name="asia_CompleteTest">
 			</smartfoldernode>
 			<testmodule
 			id="5b7297a1-cb08-4a44-b7bd-579f94dadc2c"
@@ -2968,20 +2475,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="5bbcdf0b-4bd4-4f09-b702-3caa96c81266"
-			name="Validate_Resend_Submitted"
-			ref="7b866d14-0e3b-4183-9c32-9494e269a9a3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="5c1fb828-2cad-459c-a120-99aaa2afb1d0"
 			name="Begin_Workflow"
 			ref="264ec136-7bea-4f1a-aca4-fab740a99027"
@@ -3010,62 +2503,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="477a37cb-aa1c-4234-8881-be056766d40d"
 					variablename="workflowInstanceId">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="5e1d75ed-4af2-498c-af43-59d4c7b5d5f4"
-			name="APIV2_Update_Demographic"
-			ref="70ee2cb7-7981-4f16-9f4b-d4fbea372124"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="77ce2ef3-1227-4b17-bda3-bfb0694d2825"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="82273179-811e-4f33-b25f-be2fb914e2c4"
-					variablename="externalID">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="4dc5e703-084f-4924-a1cb-85750e5f0144"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="VisitSessionCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="347a301f-7778-4a89-bef4-031dc3079d49"
-					variablename="VisitSessionCode">
-					</var>
-					<var
-					dataname="LocalityCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="aaf710fd-f257-4acd-bdce-5e0aeb6d58ae"
-					variablename="LocalityCode">
-					</var>
-					<var
-					dataname="DOB"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="4e182298-f3e7-41d5-b823-f8d5b3d5c643"
-					variablename="DOB">
-					</var>
-					<var
-					dataname="SupervisorId"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="85537fda-26f5-4ef7-ad38-a6c72d3924fe"
-					variablename="supervisorId">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="3647ecd2-7316-42dc-a218-b48504becc0d"
-					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3138,20 +2575,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="5f5a8962-ad60-47df-ba51-636027e82893"
-			name="Click_GenerateReport_Button"
-			ref="d5827b0a-fbdc-4cd8-bc10-56d077987d88"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="5f5d568f-81e4-4da9-81d5-10f044022bb2"
 			name="swaggerAPI"
 			ref="13e4a129-f95e-4991-9c6b-4c0f0ad3992f"
@@ -3200,10 +2623,6 @@ rxversion="8.3">
 					value="">
 					</param>
 				</parameters>
-			</testcase>
-			<testcase
-			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c"
-			name="Reprocess_Partial_Assessment">
 			</testcase>
 			<testmodule
 			id="62902c3d-f900-4ded-903c-b65759dd0825"
@@ -3303,76 +2722,6 @@ rxversion="8.3">
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="66e87624-e9e7-4833-9183-b56c49024868"
-			name="Click_DownloadExtract_Button"
-			ref="234b1f5c-68a2-482c-83c2-19a84626ffef"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="680f4de9-2541-402c-9982-48a0a0779dc2"
-			name="APIV2_AssessmentAttempt"
-			ref="4a51a55e-772b-4944-828f-24a314e6b0ae"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="517dcf0f-541f-4b2b-a76d-c00bbd65815e"
-					variablename="externalID">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3e8cc784-9b0c-4dc8-82ad-e823e9823c2f"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="5f0211ea-1362-42e8-901b-6ec4e36f57d1"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="VisitSessionCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="a84760e4-9334-4e65-9802-55c4b29148f5"
-					variablename="VisitSessionCode">
-					</var>
-					<var
-					dataname="LocalityCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="64595a37-8550-4cf0-b1c8-273412ba41f5"
-					variablename="LocalityCode">
-					</var>
-					<var
-					dataname="DOB"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="8b7f67f0-afcf-4bed-adf5-8dafe0f94fb1"
-					variablename="DOB">
-					</var>
-					<var
-					dataname="SupervisorId"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="af983f5f-68a3-4189-a82f-70c008904a6c"
-					variablename="supervisorId">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="288f411e-c76f-4619-8bb0-66a24d3754d2"
 					variablename="CSPDOM">
 					</var>
 				</databinding>
@@ -3511,31 +2860,6 @@ rxversion="8.3">
 			id="69f50943-5b2d-41d4-ac43-d7cce45967af"
 			name="SwaggerAPI-UIValidation">
 			</smartfoldernode>
-			<modulegroup
-			id="6b226dc0-7d52-4ece-8044-50dd29ea2f38"
-			name="Login"
-			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
-				<databinding>
-					<var
-					dataname="CSPUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
-					variablename="CSPUsername">
-					</var>
-					<var
-					dataname="CSPPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
-					variablename="CSPPassword">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testcase
 			errorbehavior="Stop"
 			id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -3643,12 +2967,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="702d7364-d105-4608-94ab-44ad3baf1cfd"
-			maxrange="0"
-			minrange="0"
-			name="Generate_Extract">
-			</testcase>
 			<testmodule
 			id="704dd07e-920c-453d-960e-21da92a80ab8"
 			name="APIV1_StatusCode"
@@ -3778,7 +3096,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="76ed54b6-2845-4c0e-8294-46db304267a5"
 			name="CompletionSteps"
 			ref="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
@@ -3854,10 +3171,6 @@ rxversion="8.3">
 			minrange="0"
 			name="Configure_Regression_Study">
 			</smartfoldernode>
-			<teardown
-			id="77c69260-c05f-4356-a081-d840a8408725"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="78cc2d99-f144-43b2-a7f6-cfdc428257b6"
 			name="EmailModule"
@@ -4099,20 +3412,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="811da02a-472b-41de-af8d-11cd4551af83"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="8323d03a-b27c-49d5-860a-647c301550a4"
 			name="Run_WorkflowInstance"
 			ref="62a7ba5a-056d-4bd2-878a-716d185011cb"
@@ -4154,40 +3453,6 @@ rxversion="8.3">
 			minrange="0"
 			name="UB06">
 			</testcase>
-			<testmodule
-			id="885064b7-f5df-4e27-817b-d2ea306fd9be"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="886b0890-a8ec-4be2-885d-a22cbf125a3e"
-			name="Upload_RawData"
-			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Filename"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
-					variablename="Filename">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="89805774-4d46-4597-a4ee-af4ed4f42f2b"
 			name="Open_Unsecure_Browser"
@@ -4246,10 +3511,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
-			name="PowerBI_API(If_needed)">
-			</smartfoldernode>
 			<testcase
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
 			name="Internal_UserLogin">
@@ -4298,12 +3559,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd"
-			maxrange="3"
-			minrange="3"
-			name="ReGenerate_External_Secret">
-			</testcase>
 			<testcase
 			errorbehavior="Stop"
 			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d"
@@ -4376,44 +3631,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="944ec9b2-ee26-4f8d-b3c3-55218690e828"
-			name="AuthenticateAsInternalUser"
-			ref="bb083686-6880-4147-aa4e-00115c5053c3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Portal"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="0276d7a6-b65f-4eaa-b5f4-3e0099f45212"
-					variablename="portal">
-					</var>
-					<var
-					dataname="DOM"
-					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
-					variableid="c784e76f-ba3c-40d5-92ab-f8c3098c06de"
-					variablename="DOM">
-					</var>
-					<var
-					dataname="InternalPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="82454349-6ca6-480b-bad7-dadfcf6f0dc5"
-					variablename="InternalPassword">
-					</var>
-					<var
-					dataname="InternalUsername "
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="54d1c478-7bce-40ab-a3ed-bf168a77482f"
-					variablename="InternalUsername">
-					</var>
-				</databinding>
-			</testmodule>
-			<testcase
-			id="94926b86-397c-435f-a3b2-a2cd3d7e6a07"
-			maxrange="0"
-			minrange="0"
-			name="Check_Duplicate_Study">
-			</testcase>
 			<testcase
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -4422,10 +3639,6 @@ rxversion="8.3">
 			minrange="0"
 			name="CompletingTest">
 			</testcase>
-			<setup
-			id="950f4bab-12f7-4901-b39a-7c0c9a63fa39"
-			name="setup">
-			</setup>
 			<testmodule
 			id="958d7d50-b0eb-4d2f-b9b2-d3c1e61519e2"
 			name="CloseExcel"
@@ -4452,68 +3665,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="96084bfa-c32b-4422-aaa2-ea6002778aa3"
-			name="Check_Duplicate_Study"
-			ref="052f590d-8129-4cde-ac98-6ee337aed7f7"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="886557f5-2eb8-4294-b581-d4f9918c3dc4"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="f0140580-8190-4863-8035-81d6f1f5202e"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="fbd8c746-8dee-40e2-a25e-7d4650ede54b"
-					variablename="dbserver">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="a59ffc6d-d062-472f-94aa-c95b29f1f338"
-					variablename="database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="13b38966-593e-4b60-8295-78b60bdc5b56"
-					variablename="Authentication">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="9669c01e-58c1-4f33-a4ca-cb9397e7cc9a"
 			name="BeginWorkflow1">
 			</testcase>
-			<testmodule
-			id="96a15f78-9739-47b9-8e5c-8fee078ac0d2"
-			name="Select_External_User"
-			ref="e844cf88-3771-4adb-927e-acb6829f601c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Key"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="2902f0dc-8c70-46e4-b658-a8dd9ce5f42c"
-					variablename="Key">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="97634dd0-b3df-4612-90fd-a700ed71ed6f"
 			name="Authenticate_and_Complete_Assessment">
@@ -4604,10 +3759,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="98dcf99f-23a8-4746-93e8-cea5139f7f23"
-			name="Check_DLM_Functionality">
-			</testcase>
 			<testmodule
 			id="99786d78-16d4-460c-8506-aa406bacf4c5"
 			name="GenerateKey"
@@ -4664,14 +3815,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			datarangeactive="True"
-			datasource="TenantConnector"
-			id="9ab34d41-a11f-476f-a90f-c56f30c05e5c"
-			maxrange="1"
-			minrange="1"
-			name="Database_Regression">
-			</smartfoldernode>
 			<testmodule
 			id="9ba7bab4-b2ff-40a4-a166-f56a2cd0f498"
 			name="InternalUserCreation"
@@ -4726,30 +3869,6 @@ rxversion="8.3">
 			id="9bd6e668-4aac-4f80-b28a-dd99b720185d"
 			name="Rewrite_Rules">
 			</testcase>
-			<teardown
-			id="9bf10440-7446-4288-861a-6f1185884940"
-			name="teardown">
-			</teardown>
-			<testmodule
-			id="9c10ebaf-0a3b-4109-846a-b0e070361c6b"
-			name="Open_Browser"
-			ref="6fe4ad3f-c7f8-4d36-8e5a-06d2dfe66a53"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Browser"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="daa00f9e-5818-40a1-a038-7de381bf08b9"
-					variablename="Browser">
-					</var>
-					<var
-					dataname="CSPURL"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="301881c3-bcf1-4345-825a-bdb454120bc4"
-					variablename="CSPURL">
-					</var>
-				</databinding>
-			</testmodule>
 			<setup
 			id="9cd91629-396f-43f4-8e61-7181ad9db189"
 			name="setup">
@@ -4813,7 +3932,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="9fadd4a7-7f9a-404b-9f10-f2630572aa88"
 			name="captureworkflowstateID"
 			ref="5c4d725a-77a6-4120-b099-206eb028fef8"
@@ -4889,10 +4007,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="a039dd84-fa06-45dc-900f-9d8b10c73c69"
-			name="oDATA_API(If_needed)">
-			</smartfoldernode>
 			<testmodule
 			id="a1c7b0d9-a770-48be-ae7c-5980a0891b89"
 			name="Generate_WorkflowInstance"
@@ -5061,26 +4175,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="a5425a44-d749-4eff-969e-6ca416aba1ff"
-			name="APIV2_Launch_AssessmentAttempt"
-			ref="4cf38574-50a6-4296-8017-6f3285aac388"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Browser"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="81704e14-17b3-497c-918b-6ed0d27d5881"
-					variablename="Browser">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -5162,62 +4256,10 @@ rxversion="8.3">
 			id="a91d1ec2-d48c-4771-bf83-0eee10ea07af"
 			name="CreateInternalUser">
 			</testcase>
-			<testmodule
-			id="a9247335-791e-490e-a829-a9ee98251c66"
-			name="APIV2_Authenticate"
-			ref="03a98aac-9699-4331-a3fa-00536dfad33f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Secret"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="a702b301-700e-48a4-bc0b-f7361f7a8fb9"
-					variablename="Secret">
-					</var>
-					<var
-					dataname="Key"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="35d6bff4-468a-4307-8386-b46e7e547dc9"
-					variablename="Key">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="f596d89d-2a08-4a15-bfcb-1856ad2829bb"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="3b244791-8adf-4420-ba52-5c63812fac17"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="a6eaa971-72cb-4cb1-8dc8-9c7cbf3bfb65"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="a95ff794-3df5-4234-b928-480259c0da91"
 			name="V1_ExternalAuthenticate">
 			</testcase>
-			<testmodule
-			id="a9f796dc-5909-41db-af80-89bbac377bfb"
-			name="Click_Extracts_Tab"
-			ref="d5368a46-4f21-4c59-9938-9575f485d7cb"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -5317,6 +4359,10 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			id="aebe25dc-b68a-4b09-a337-ec444d5a2816"
+			name="API&amp;Client_Version1">
+			</testcase>
+			<testcase
 			id="af039c2f-3c95-43e6-8258-aa7b0d2f38f2"
 			name="405-InvalidMethod">
 			</testcase>
@@ -5373,36 +4419,22 @@ rxversion="8.3">
 			name="UB11">
 			</testcase>
 			<testmodule
-			id="b55ff947-a98a-4cfb-b556-b9dc239a96a5"
-			name="Click_Participants_Tab"
-			ref="ff4b0f88-9baa-4e62-9d13-538aeb62f61f"
+			id="b5b7f1fe-5961-46a8-9bd2-afc4805949f9"
+			name="Verify_Client_Version"
+			ref="bbd7de50-f153-4542-b412-b02ff4df214c"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variableid="5573f8ac-d505-42b0-a336-394c8bca477a"
 					variablename="CSPDOM">
 					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="b5b87416-6ba8-468c-9c45-74a22b3209d7"
-			name="Upload_RawData"
-			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
-			type="Recording">
-				<databinding>
 					<var
-					dataname="Filename"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
-					variablename="Filename">
-					</var>
-					<var
-					dataname="CSPDOM"
+					dataname="ClientVersionDeployed"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
+					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
+					variablename="ClientVersion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5414,76 +4446,6 @@ rxversion="8.3">
 			minrange="0"
 			name="UB12">
 			</testcase>
-			<testmodule
-			id="b6810d84-fe17-43bf-96ea-0cc20dca5503"
-			name="Click_Show_Test_Users"
-			ref="530ac003-0db0-4c30-bbec-983ba76873ae"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="b6c6f695-edb2-4f0d-94eb-35aa4ceba498"
-			name="APIV2_AssessmentAttempt"
-			ref="4a51a55e-772b-4944-828f-24a314e6b0ae"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="517dcf0f-541f-4b2b-a76d-c00bbd65815e"
-					variablename="externalID">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3e8cc784-9b0c-4dc8-82ad-e823e9823c2f"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="5f0211ea-1362-42e8-901b-6ec4e36f57d1"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="VisitSessionCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="a84760e4-9334-4e65-9802-55c4b29148f5"
-					variablename="VisitSessionCode">
-					</var>
-					<var
-					dataname="LocalityCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="64595a37-8550-4cf0-b1c8-273412ba41f5"
-					variablename="LocalityCode">
-					</var>
-					<var
-					dataname="DOB"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="8b7f67f0-afcf-4bed-adf5-8dafe0f94fb1"
-					variablename="DOB">
-					</var>
-					<var
-					dataname="SupervisorId"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="af983f5f-68a3-4189-a82f-70c008904a6c"
-					variablename="supervisorId">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="288f411e-c76f-4619-8bb0-66a24d3754d2"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<smartfoldernode
 			id="b73752fe-40fa-44f6-b806-b422d950e3cd"
 			name="V2_API">
@@ -5583,20 +4545,6 @@ rxversion="8.3">
 			minrange="0"
 			name="UB091">
 			</testcase>
-			<testmodule
-			id="b97d57d3-dde7-41a6-bbf2-822c06cbbbf5"
-			name="Click_BatteryConfig_Report"
-			ref="c3236857-9730-48cf-a6fc-1375129bc038"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			errorbehavior="Stop"
 			id="ba7d02db-83df-4a58-a877-7079c0c072d1"
@@ -5626,18 +4574,14 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
-			maxrange="0"
-			minrange="0"
-			name="Platform_API">
+			maxrange="4"
+			minrange="4"
+			name="asia_API">
 			</smartfoldernode>
 			<testcase
 			id="bc933693-e282-42b0-9122-24d4b0fc9019"
 			name="V2_Participant_QualificationStatus1">
 			</testcase>
-			<setup
-			id="bcd9e6d9-1b54-4ac5-b190-604c7987aeea"
-			name="setup">
-			</setup>
 			<testcase
 			datarangeactive="True"
 			datasource="API_Authentication"
@@ -5767,20 +4711,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="c3e8ee22-6968-4a6b-8ca9-17595fa094ff"
-			name="Click_Sort_LastUpdate"
-			ref="93a531d7-d39c-4006-a74f-7c668f1713ad"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="c42f7f77-4215-419f-8bc6-14cb2d7402cb"
 			name="Get_AssessmentAttemptOutcomes"
 			ref="532f08c6-9cad-477b-91cb-8ffa5f4e7cbb"
@@ -5861,10 +4791,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
-			id="c54f0f1c-20d9-44fd-86fc-e03a59270062"
-			name="Reprocess_Complete_Assessment">
-			</testcase>
-			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
 			id="c5b352f3-cf2c-402b-b637-50aaeff7130d"
@@ -5913,62 +4839,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="0be8019d-b31e-4388-bc84-7741c4ee2f9e"
 					variablename="assessmentID">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="c8cec9be-1794-434a-8037-821be15735a3"
-			name="APIV2_AssessmentAttempt"
-			ref="4a51a55e-772b-4944-828f-24a314e6b0ae"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="517dcf0f-541f-4b2b-a76d-c00bbd65815e"
-					variablename="externalID">
-					</var>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3e8cc784-9b0c-4dc8-82ad-e823e9823c2f"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="5f0211ea-1362-42e8-901b-6ec4e36f57d1"
-					variablename="ProtocolNumber">
-					</var>
-					<var
-					dataname="VisitSessionCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="a84760e4-9334-4e65-9802-55c4b29148f5"
-					variablename="VisitSessionCode">
-					</var>
-					<var
-					dataname="LocalityCode"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="64595a37-8550-4cf0-b1c8-273412ba41f5"
-					variablename="LocalityCode">
-					</var>
-					<var
-					dataname="DOB"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="8b7f67f0-afcf-4bed-adf5-8dafe0f94fb1"
-					variablename="DOB">
-					</var>
-					<var
-					dataname="SupervisorId"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="af983f5f-68a3-4189-a82f-70c008904a6c"
-					variablename="supervisorId">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="288f411e-c76f-4619-8bb0-66a24d3754d2"
-					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -6166,20 +5036,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="ccc4cd20-e171-4edc-9e04-a98090d044c7"
-			name="Click_Edit_Button"
-			ref="89c38ed8-5500-416b-9089-ab7c2de1763c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			errorbehavior="Stop"
 			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7"
@@ -6188,7 +5044,6 @@ rxversion="8.3">
 			name="Add_VisitSchedule">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="cd26fd07-2444-4e24-af57-d7f6a354b22a"
 			name="publishWorkflow"
 			ref="800196b0-6b42-4264-866e-bcea65bf2109"
@@ -6274,12 +5129,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="d12e81c6-a1b0-40f1-bdfd-8e3e419d4eb9"
-			name="Delete_Existing_Extracts"
-			ref="41384e97-ac94-4cb1-9ff9-cea5ecb8b1f2"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="d1538a8d-076e-404f-8448-1395b14c0787"
 			name="InvalidCredentialsError"
 			ref="376c9304-919f-49de-9968-e0252063e4ae"
@@ -6311,20 +5160,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="d2af15a7-d521-4096-9e08-177b0d665b79"
-			name="Validate_DLM_Enabled"
-			ref="ea91b7f6-04fc-4ba2-87d1-dcbbf925a7fe"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
+			<smartfoldernode
+			id="d345d6ba-292a-42b7-9c14-e9d350a6c538"
+			name="Validate_CSP_API&amp;Client_Versions1">
+			</smartfoldernode>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -6607,20 +5446,6 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="dc42b7c7-34ff-4801-9eed-82f846c45f3f"
-			name="Click_Sort_LastUpdate"
-			ref="93a531d7-d39c-4006-a74f-7c668f1713ad"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -6633,32 +5458,7 @@ rxversion="8.3">
 			id="dd8e5261-3b1c-44a5-b4d0-2469afabf6c6"
 			name="G_NextSate">
 			</testcase>
-			<setup
-			id="ddac7efd-b0e5-4c49-87cd-4e285c94f575"
-			name="setup">
-			</setup>
 			<testmodule
-			id="de064c59-5209-456c-9f63-3aa051305424"
-			name="Open_Sync_URL"
-			ref="5e69c26c-7cbc-48b6-a67a-14a2e37f0e49"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Browser"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="6879bbc6-6c45-4764-bfce-7c708caae80a"
-					variablename="Browser">
-					</var>
-					<var
-					dataname="CSPURL"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="d566832d-c3ab-4c50-aa34-3ca6763b3680"
-					variablename="CSPURL">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
 			id="df1e8900-2308-4a5b-80c8-0852def7bc47"
 			name="setFinishStatus"
 			ref="e91633be-04bd-4eb7-a0db-4b2216152688"
@@ -6850,26 +5650,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="e49c2644-daf5-46ea-b2f4-20893174fb7f"
-			name="Clear_ExternalID"
-			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57037071-6036-4a24-8145-c9dbf508e396"
-					variablename="externalID">
-					</var>
-					<var
-					dataname="Filename"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
-					variablename="Filename">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="e5079f56-f05b-4413-ad6a-0288e3514f82"
 			name="IAMusername"
 			ref="807c2d98-ddb1-4b14-bae3-47b9dee0d191"
@@ -6880,118 +5660,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="8038b9d3-d0f4-4d72-a383-2a99cacf8e7e"
 					variablename="Imusername">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="e510809a-b53a-4d83-b8ef-6a52495154fc"
-			name="EmailModule"
-			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="GmailAddress"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
-					</var>
-					<var
-					dataname="Subject"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
-					variablename="Subject">
-					</var>
-					<var
-					dataname="Body"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
-					variablename="Body">
-					</var>
-					<var
-					dataname="To"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
-					variablename="To">
-					</var>
-					<var
-					dataname="From"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
-					variablename="From">
-					</var>
-					<var
-					dataname="ServerHostname"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
-					variablename="ServerHostname">
-					</var>
-					<var
-					dataname="ServerPort"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
-					variablename="ServerPort">
-					</var>
-					<var
-					dataname="UseSSL"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
-					variablename="UseSSL">
-					</var>
-					<var
-					dataname="SendEmailOnFailure"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
-					variablename="SendEmailOnFailure">
-					</var>
-					<var
-					dataname="SendEmailOnSuccess"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="670a378a-e239-43e7-8325-c216fd11f190"
-					variablename="SendEmailOnSuccess">
-					</var>
-					<var
-					dataname="SendZippedReportOnComplete"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
-					variablename="SendZippedReportOnComplete">
-					</var>
-					<var
-					dataname="SendPdfReportOnComplete"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
-					variablename="SendPdfReportOnComplete">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="e6967e9f-f015-4135-a9f9-bb0ae528aa9d"
-			name="Select_VisitSchedule"
-			ref="884bab92-73c9-4c72-bcb0-b60b57cf56ef"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="006264cf-d24a-462c-b50c-b48b787cdb84"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="VisitScheduleName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="8c06e8c2-7790-45d1-9018-d58fa139a7e2"
-					variablename="VisitScheduleName">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7007,50 +5675,10 @@ rxversion="8.3">
 			id="e7ca9258-e7bb-4156-8af0-bb4669001dad"
 			name="OpenCgsBearFolder">
 			</testcase>
-			<testmodule
-			id="e7f148c5-c9cf-41f0-a38a-cf064a41256d"
-			name="Clear_ExternalID"
-			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="ExternalID"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="57037071-6036-4a24-8145-c9dbf508e396"
-					variablename="externalID">
-					</var>
-					<var
-					dataname="Filename"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
-					variablename="Filename">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="e89506af-b5cd-4eb8-a9a0-5ff330563a25"
-			name="Close_Browser"
-			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<setup
 			id="e96cb95d-a59c-4816-ab19-b6bd9f24f391"
 			name="setup">
 			</setup>
-			<testmodule
-			id="ea71cfa4-af56-4c2d-b0a3-01bef8dcfc97"
-			name="Connect_Internet"
-			ref="73313e70-d7e8-42a1-ad05-4d7d216c1d81"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="eae30245-2af9-4fad-bc41-3d650f99a1e8"
 			name="Workflow">
@@ -7061,26 +5689,6 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="eb161724-ce99-4c21-8bcf-327610365d4c"
-			name="Upload_RawData"
-			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="PartialDatafile"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
-					variablename="Filename">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="eb2b7071-7d5e-4975-a759-b3241db8c410"
 			name="Get_BatteryAssessee"
@@ -7111,12 +5719,6 @@ rxversion="8.3">
 			id="eb4fe547-e87c-4914-ac24-3f4446d68623"
 			name="CloseWASWebSite"
 			ref="e071ec2d-9465-4ba8-9332-e3bc97529ad7"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="eb98a8bb-425e-4c06-99b7-9ded33bd704f"
-			name="Delete_New_Extract"
-			ref="5f5d863d-af96-49a4-9627-4bdcdd447401"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -7248,7 +5850,6 @@ rxversion="8.3">
 			name="teardown">
 			</teardown>
 			<testmodule
-			enabled="False"
 			id="ee7c4850-e522-4eee-a0f7-8a6fde037814"
 			name="addinBlock"
 			ref="96212289-c634-46c5-8cbb-9c4421cf821b"
@@ -7573,69 +6174,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="fafaca2f-6276-4f71-a77a-9c6128b70d49"
-			name="Click_SpecDeviation_Button"
-			ref="55a4bccd-360a-4169-b5f5-492a3939b382"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<modulegroup
-			id="fb0770da-01f9-42a9-a79c-2275beeb29da"
-			name="GeneratingSecret"
-			ref="8893f97d-6402-4354-9824-20a0162229b1">
-				<databinding>
-					<var
-					dataname="Key"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="8e6959d3-3ca1-4bf1-b7ca-4657ef4aced1"
-					variablename="Key">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="e5fbf288-cd10-4478-b174-b7cd244f894c"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="1789d8d4-5bce-4e63-ae7e-8d4c4261303e"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="16649c69-74df-4134-bf17-75efa59abd9c"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="544ee441-fb93-4dd7-9be8-2d8bb4e266be"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="709d7ef8-5f93-4a0b-a867-796e4645472f"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
-					variablename="Authentication">
-					</var>
-				</databinding>
-			</modulegroup>
 			<testcase
 			id="fb9f5152-9292-4c17-b26c-90c15954d105"
 			name="VisitSchedule">
@@ -7689,15 +6227,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
-			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585"
-			name="Check_DLM_Enabled">
-			</testcase>
-			<testcase
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040"
-			maxrange="0"
-			minrange="0"
+			maxrange="4"
+			minrange="4"
 			name="ReprocessWorkflowFlag">
 			</testcase>
 			<testmodule
@@ -7750,76 +6284,6 @@ rxversion="8.3">
 			ref="964e2eb5-1a38-492b-a803-96c1d4fc38a6"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="fed932c2-85e8-44a5-90c8-91e5d4b99d48"
-			name="Select_Study"
-			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProjectName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
-					variablename="ProjectName">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="fed9de3d-1e81-4418-98aa-7cbef58ef6ff"
-			name="Select_Study"
-			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProjectName"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
-					variablename="ProjectName">
-					</var>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testcase
-			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
-			name="PowerBIReport">
-			</testcase>
-			<testmodule
-			id="ff562408-6c23-45c0-b23a-93261b41d68b"
-			name="Click_Edit_Participant"
-			ref="471c595d-97e8-49b1-8807-9004e6d63683"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-				</databinding>
-			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -7833,7 +6297,7 @@ rxversion="8.3">
 					name="Platform_Tests">
 						<smartfoldernode
 						id="12672266-c3e5-4da0-bf18-959502d59662"
-						name="Regression">
+						name="asiaRegression">
 							<setup
 							id="367151ae-f3fc-44f8-989a-a21fc4e9d998"
 							name="setup">
@@ -7842,6 +6306,22 @@ rxversion="8.3">
 								name="DateTimeGenerator">
 								</testmodule>
 							</setup>
+							<smartfoldernode
+							id="d345d6ba-292a-42b7-9c14-e9d350a6c538"
+							name="Validate_CSP_API&amp;Client_Versions1">
+								<testcase
+								id="aebe25dc-b68a-4b09-a337-ec444d5a2816"
+								name="API&amp;Client_Version1">
+									<testmodule
+									id="5194336b-7c96-4e69-9b01-4ff226f8409e"
+									name="Verify_API_Version">
+									</testmodule>
+									<testmodule
+									id="b5b7f1fe-5961-46a8-9bd2-afc4805949f9"
+									name="Verify_Client_Version">
+									</testmodule>
+								</testcase>
+							</smartfoldernode>
 							<smartfoldernode
 							id="a54e2f22-375f-4fb2-838a-084cd4471e50"
 							name="Create_Regression_Study">
@@ -8118,306 +6598,6 @@ rxversion="8.3">
 									</testmodule>
 								</testcase>
 							</smartfoldernode>
-							<smartfoldernode
-							id="037aeee4-7133-450a-b13e-79f6464da1e0"
-							name="Check_Platform_Features">
-								<testcase
-								id="8fa64b70-c320-42f8-b5ac-ebbede419bfd"
-								name="ReGenerate_External_Secret">
-									<setup
-									id="bcd9e6d9-1b54-4ac5-b190-604c7987aeea"
-									name="setup">
-										<testmodule
-										id="9c10ebaf-0a3b-4109-846a-b0e070361c6b"
-										name="Open_Browser">
-										</testmodule>
-										<modulegroup
-										id="6b226dc0-7d52-4ece-8044-50dd29ea2f38"
-										name="Login">
-										</modulegroup>
-									</setup>
-									<testmodule
-									id="09d3606d-6b0c-4038-b7ff-e8ffa9bac093"
-									name="Click_External_Users_Menu">
-									</testmodule>
-									<testmodule
-									id="96a15f78-9739-47b9-8e5c-8fee078ac0d2"
-									name="Select_External_User">
-									</testmodule>
-									<testmodule
-									id="ccc4cd20-e171-4edc-9e04-a98090d044c7"
-									name="Click_Edit_Button">
-									</testmodule>
-									<testmodule
-									id="5283227a-0a62-47fc-ad9c-da9af53f661c"
-									name="Click_External_Resend_Invite">
-									</testmodule>
-									<testmodule
-									id="5bbcdf0b-4bd4-4f09-b702-3caa96c81266"
-									name="Validate_Resend_Submitted">
-									</testmodule>
-									<modulegroup
-									id="fb0770da-01f9-42a9-a79c-2275beeb29da"
-									name="GeneratingSecret">
-									</modulegroup>
-								</testcase>
-								<testcase
-								id="702d7364-d105-4608-94ab-44ad3baf1cfd"
-								name="Generate_Extract">
-									<setup
-									id="ddac7efd-b0e5-4c49-87cd-4e285c94f575"
-									name="setup">
-										<testmodule
-										id="d12e81c6-a1b0-40f1-bdfd-8e3e419d4eb9"
-										name="Delete_Existing_Extracts">
-										</testmodule>
-									</setup>
-									<testmodule
-									id="fed932c2-85e8-44a5-90c8-91e5d4b99d48"
-									name="Select_Study">
-									</testmodule>
-									<testmodule
-									id="a9f796dc-5909-41db-af80-89bbac377bfb"
-									name="Click_Extracts_Tab">
-									</testmodule>
-									<testmodule
-									id="4e93b643-21fa-484b-bc91-84432f23458c"
-									name="Select_PR_Extract">
-									</testmodule>
-									<testmodule
-									id="66e87624-e9e7-4833-9183-b56c49024868"
-									name="Click_DownloadExtract_Button">
-									</testmodule>
-									<testmodule
-									id="430a094f-65a8-4db4-be14-0f981503e9fc"
-									name="Validate_Extract_Downloaded">
-									</testmodule>
-									<teardown
-									id="43a30475-a3e8-4922-86d6-ce75566c783f"
-									name="teardown">
-										<testmodule
-										id="eb98a8bb-425e-4c06-99b7-9ded33bd704f"
-										name="Delete_New_Extract">
-										</testmodule>
-									</teardown>
-								</testcase>
-								<testcase
-								id="3064fb0e-3ac4-4917-8946-743c167f36b1"
-								name="Generate_Battery_Config_Report">
-									<testmodule
-									id="1d131fab-0f48-4aba-a763-4cf44b110205"
-									name="Select_Study">
-									</testmodule>
-									<testmodule
-									id="23de7cc7-e0d9-4086-8a04-037d9ded67e0"
-									name="Click_Reports_Tab">
-									</testmodule>
-									<testmodule
-									id="b97d57d3-dde7-41a6-bbf2-822c06cbbbf5"
-									name="Click_BatteryConfig_Report">
-									</testmodule>
-									<testmodule
-									id="5f5a8962-ad60-47df-ba51-636027e82893"
-									name="Click_GenerateReport_Button">
-									</testmodule>
-									<testmodule
-									id="3b25a2c7-db79-489e-a373-96ba0f8890d5"
-									name="View_Lastest_Report">
-									</testmodule>
-									<testmodule
-									id="fafaca2f-6276-4f71-a77a-9c6128b70d49"
-									name="Click_SpecDeviation_Button">
-									</testmodule>
-									<testmodule
-									id="19b27d14-63e0-4a68-b957-7fb42285afde"
-									name="Validate_Report_Generated">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="fc59bb6a-0fb0-4c59-90c2-13991d6de585"
-								name="Check_DLM_Enabled">
-									<testmodule
-									id="fed9de3d-1e81-4418-98aa-7cbef58ef6ff"
-									name="Select_Study">
-									</testmodule>
-									<testmodule
-									id="e6967e9f-f015-4135-a9f9-bb0ae528aa9d"
-									name="Select_VisitSchedule">
-									</testmodule>
-									<testmodule
-									id="239b235e-71a3-452e-bb4e-193e966a3024"
-									name="Select_First_Visit">
-									</testmodule>
-									<testmodule
-									id="d2af15a7-d521-4096-9e08-177b0d665b79"
-									name="Validate_DLM_Enabled">
-									</testmodule>
-									<teardown
-									id="77c69260-c05f-4356-a081-d840a8408725"
-									name="teardown">
-										<testmodule
-										id="e89506af-b5cd-4eb8-a9a0-5ff330563a25"
-										name="Close_Browser">
-										</testmodule>
-									</teardown>
-								</testcase>
-								<testcase
-								id="98dcf99f-23a8-4746-93e8-cea5139f7f23"
-								name="Check_DLM_Functionality">
-									<setup
-									id="950f4bab-12f7-4901-b39a-7c0c9a63fa39"
-									name="setup">
-										<testmodule
-										id="e7f148c5-c9cf-41f0-a38a-cf064a41256d"
-										name="Clear_ExternalID">
-										</testmodule>
-									</setup>
-									<testmodule
-									id="342da772-decf-40b3-aad5-56d8887ce9e9"
-									name="APIV2_Authenticate">
-									</testmodule>
-									<testmodule
-									id="c8cec9be-1794-434a-8037-821be15735a3"
-									name="APIV2_AssessmentAttempt">
-									</testmodule>
-									<testmodule
-									id="37dd36f8-6eea-424e-bd72-e668313b298b"
-									name="APIV2_Launch_AssessmentAttempt">
-									</testmodule>
-									<testmodule
-									id="0df12646-301a-4a02-93db-025bae8ef345"
-									name="Disconnect_Internet">
-									</testmodule>
-									<testmodule
-									id="b5b87416-6ba8-468c-9c45-74a22b3209d7"
-									name="Upload_RawData">
-									</testmodule>
-									<testmodule
-									id="1200ffa8-c24d-43e0-b3b1-1a0aa87bbf4b"
-									name="Validate_Upload_Failure">
-									</testmodule>
-									<testmodule
-									id="ea71cfa4-af56-4c2d-b0a3-01bef8dcfc97"
-									name="Connect_Internet">
-									</testmodule>
-									<testmodule
-									id="885064b7-f5df-4e27-817b-d2ea306fd9be"
-									name="Close_Browser">
-									</testmodule>
-									<testmodule
-									id="de064c59-5209-456c-9f63-3aa051305424"
-									name="Open_Sync_URL">
-									</testmodule>
-									<testmodule
-									id="55d6b0ac-0ab7-4f3d-9c51-fd3b005ef475"
-									name="Validate_Sync_Success">
-									</testmodule>
-									<teardown
-									id="16025ae9-9d05-4d0f-995b-d91887787f2b"
-									name="teardown">
-										<testmodule
-										id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
-										name="Close_Browser">
-										</testmodule>
-									</teardown>
-								</testcase>
-								<testcase
-								id="c54f0f1c-20d9-44fd-86fc-e03a59270062"
-								name="Reprocess_Complete_Assessment">
-									<testmodule
-									id="02a6eeaf-5cf4-46ae-b08d-ec6ccc8d0337"
-									name="APIV2_Authenticate">
-									</testmodule>
-									<testmodule
-									id="5e1d75ed-4af2-498c-af43-59d4c7b5d5f4"
-									name="APIV2_Update_Demographic">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c"
-								name="Reprocess_Partial_Assessment">
-									<setup
-									id="543a0321-1a89-48d8-a6d8-28aede0c632b"
-									name="setup">
-										<testmodule
-										id="e49c2644-daf5-46ea-b2f4-20893174fb7f"
-										name="Clear_ExternalID">
-										</testmodule>
-									</setup>
-									<testmodule
-									id="a9247335-791e-490e-a829-a9ee98251c66"
-									name="APIV2_Authenticate">
-									</testmodule>
-									<testmodule
-									id="680f4de9-2541-402c-9982-48a0a0779dc2"
-									name="APIV2_AssessmentAttempt">
-									</testmodule>
-									<testmodule
-									id="a5425a44-d749-4eff-969e-6ca416aba1ff"
-									name="APIV2_Launch_AssessmentAttempt">
-									</testmodule>
-									<testmodule
-									id="eb161724-ce99-4c21-8bcf-327610365d4c"
-									name="Upload_RawData">
-									</testmodule>
-									<testmodule
-									id="368be19d-c16e-4dbc-8f09-0ab751c49feb"
-									name="Close_Browser">
-									</testmodule>
-									<testmodule
-									id="1da69619-cd15-4fe1-a860-e082c64406eb"
-									name="Open_Browser">
-									</testmodule>
-									<modulegroup
-									id="3691e4f8-9e08-4a10-96e7-d538ccb7bf05"
-									name="Login">
-									</modulegroup>
-									<testmodule
-									id="4ba90daa-a78b-4e33-9f6e-21454d4ea524"
-									name="Select_Study">
-									</testmodule>
-									<testmodule
-									id="b55ff947-a98a-4cfb-b556-b9dc239a96a5"
-									name="Click_Participants_Tab">
-									</testmodule>
-									<testmodule
-									id="b6810d84-fe17-43bf-96ea-0cc20dca5503"
-									name="Click_Show_Test_Users">
-									</testmodule>
-									<testmodule
-									id="dc42b7c7-34ff-4801-9eed-82f846c45f3f"
-									name="Click_Sort_LastUpdate">
-									</testmodule>
-									<testmodule
-									id="c3e8ee22-6968-4a6b-8ca9-17595fa094ff"
-									name="Click_Sort_LastUpdate">
-									</testmodule>
-									<testmodule
-									id="ff562408-6c23-45c0-b23a-93261b41d68b"
-									name="Click_Edit_Participant">
-									</testmodule>
-									<testmodule
-									id="539d1eda-eaa8-42ed-a47b-c70482a30c61"
-									name="Extract_Participant_IQNumber">
-									</testmodule>
-									<testmodule
-									id="811da02a-472b-41de-af8d-11cd4551af83"
-									name="Close_Browser">
-									</testmodule>
-									<testmodule
-									id="b6c6f695-edb2-4f0d-94eb-35aa4ceba498"
-									name="APIV2_AssessmentAttempt">
-									</testmodule>
-									<testmodule
-									id="020f9aee-4a4a-4418-b19e-1cf10f91b282"
-									name="APIV2_Launch_AssessmentAttempt">
-									</testmodule>
-									<testmodule
-									id="886b0890-a8ec-4be2-885d-a22cbf125a3e"
-									name="Upload_RawData">
-									</testmodule>
-								</testcase>
-							</smartfoldernode>
 							<teardown
 							id="db488035-4e27-4b7f-8872-45c65c4d4925"
 							name="teardown">
@@ -8433,7 +6613,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="45077930-4bd9-4874-ad6a-91b58033c26a"
-						name="API_Regression">
+						name="asiaAPI_Regression">
 							<smartfoldernode
 							id="b73752fe-40fa-44f6-b806-b422d950e3cd"
 							name="V2_API">
@@ -8680,7 +6860,7 @@ rxversion="8.3">
 							</smartfoldernode>
 							<smartfoldernode
 							id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
-							name="Platform_API">
+							name="asia_API">
 								<testcase
 								id="a91d1ec2-d48c-4771-bf83-0eee10ea07af"
 								name="CreateInternalUser">
@@ -8799,7 +6979,7 @@ rxversion="8.3">
 								</testcase>
 								<smartfoldernode
 								id="5b156c7a-043e-4a56-9b63-6c213a44fa3c"
-								name="V2_API1">
+								name="asia_CompleteTest">
 									<testcase
 									id="04e9ad44-c5c0-4887-8427-a9812b7f6b05"
 									name="V2_ExternalAuthenticate1">
@@ -9063,34 +7243,6 @@ rxversion="8.3">
 								</testcase>
 							</smartfoldernode>
 							<smartfoldernode
-							id="a039dd84-fa06-45dc-900f-9d8b10c73c69"
-							name="oDATA_API(If_needed)">
-								<testcase
-								id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
-								name="oData_API">
-									<testmodule
-									id="944ec9b2-ee26-4f8d-b3c3-55218690e828"
-									name="AuthenticateAsInternalUser">
-									</testmodule>
-									<testmodule
-									id="0c19a365-c2b7-469b-8a51-9ca6cc15f33e"
-									name="oDataAPI">
-									</testmodule>
-								</testcase>
-							</smartfoldernode>
-							<smartfoldernode
-							id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
-							name="PowerBI_API(If_needed)">
-								<testcase
-								id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9"
-								name="PowerBIReport">
-									<testmodule
-									id="138772e1-cabd-43b1-8df1-4522ca9ab871"
-									name="PowerBI_Report">
-									</testmodule>
-								</testcase>
-							</smartfoldernode>
-							<smartfoldernode
 							id="caa16dcb-29ad-4f2f-ba50-f65f0670c1c4"
 							name="GenerateDPFReport">
 								<testcase
@@ -9101,26 +7253,6 @@ rxversion="8.3">
 									name="EmailModule">
 									</testmodule>
 								</testcase>
-							</smartfoldernode>
-							<smartfoldernode
-							id="9ab34d41-a11f-476f-a90f-c56f30c05e5c"
-							name="Database_Regression">
-								<testcase
-								id="94926b86-397c-435f-a3b2-a2cd3d7e6a07"
-								name="Check_Duplicate_Study">
-									<testmodule
-									id="96084bfa-c32b-4422-aaa2-ea6002778aa3"
-									name="Check_Duplicate_Study">
-									</testmodule>
-								</testcase>
-								<teardown
-								id="9bf10440-7446-4288-861a-6f1185884940"
-								name="teardown">
-									<testmodule
-									id="e510809a-b53a-4d83-b8ef-6a52495154fc"
-									name="EmailModule">
-									</testmodule>
-								</teardown>
 							</smartfoldernode>
 						</smartfoldernode>
 						<smartfoldernode
@@ -9702,7 +7834,7 @@ rxversion="8.3">
 		<DataSource
 		id="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 		includefile="Unchecked"
-		lastknownrowcount="6"
+		lastknownrowcount="7"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -9903,9 +8035,6 @@ rxversion="8.3">
 		<testconfiguration
 		name="Processor">
 			<testcontainer
-			id="037aeee4-7133-450a-b13e-79f6464da1e0">
-			</testcontainer>
-			<testcontainer
 			id="10c333f8-e857-4fad-823d-294804009f8b">
 			</testcontainer>
 			<testcontainer
@@ -9918,34 +8047,19 @@ rxversion="8.3">
 			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
 			</testcontainer>
 			<testcontainer
-			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
-			</testcontainer>
-			<testcontainer
 			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
-			</testcontainer>
-			<testcontainer
 			id="6e082396-bffa-4d84-b254-0da30d111799">
-			</testcontainer>
-			<testcontainer
-			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
 			</testcontainer>
 			<testcontainer
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
 			</testcontainer>
 			<testcontainer
-			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
-			</testcontainer>
-			<testcontainer
 			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
-			</testcontainer>
-			<testcontainer
-			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
 			</testcontainer>
 			<testcontainer
 			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
@@ -9966,9 +8080,6 @@ rxversion="8.3">
 			id="baf76252-a794-4bae-b009-029b41fb4909">
 			</testcontainer>
 			<testcontainer
-			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
-			</testcontainer>
-			<testcontainer
 			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
 			</testcontainer>
 			<testcontainer
@@ -9977,17 +8088,11 @@ rxversion="8.3">
 			<testcontainer
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
 			</testcontainer>
-			<testcontainer
-			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
-			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Regression">
 			<testcontainer
 			id="02ca4b95-a2d6-492f-ab6e-36034c719d59">
-			</testcontainer>
-			<testcontainer
-			id="037aeee4-7133-450a-b13e-79f6464da1e0">
 			</testcontainer>
 			<testcontainer
 			id="04421345-e5aa-49b4-b420-101dbea32a24">
@@ -10000,9 +8105,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3">
-			</testcontainer>
-			<testcontainer
-			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b">
 			</testcontainer>
 			<testcontainer
 			id="270aad2e-c077-43b4-9abc-ac3ac4172cf0">
@@ -10023,9 +8125,6 @@ rxversion="8.3">
 			id="2e724786-0867-45a5-b61c-3a0714ca1060">
 			</testcontainer>
 			<testcontainer
-			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
-			</testcontainer>
-			<testcontainer
 			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
 			</testcontainer>
 			<testcontainer
@@ -10044,16 +8143,10 @@ rxversion="8.3">
 			id="614b5fa4-3445-4a44-8e89-b0f86d8a9e2e">
 			</testcontainer>
 			<testcontainer
-			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
-			</testcontainer>
-			<testcontainer
 			id="69f50943-5b2d-41d4-ac43-d7cce45967af">
 			</testcontainer>
 			<testcontainer
 			id="6e082396-bffa-4d84-b254-0da30d111799">
-			</testcontainer>
-			<testcontainer
-			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
 			</testcontainer>
 			<testcontainer
 			id="70e5e727-daef-4614-a975-2ae2ab2660ae">
@@ -10071,19 +8164,10 @@ rxversion="8.3">
 			id="85989da3-ed34-4122-a9c9-92f2a80b27d1">
 			</testcontainer>
 			<testcontainer
-			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b">
-			</testcontainer>
-			<testcontainer
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
 			</testcontainer>
 			<testcontainer
-			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
-			</testcontainer>
-			<testcontainer
 			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
-			</testcontainer>
-			<testcontainer
-			id="94926b86-397c-435f-a3b2-a2cd3d7e6a07">
 			</testcontainer>
 			<testcontainer
 			id="94a90920-fc42-4618-be9b-d08b78ac8657">
@@ -10095,16 +8179,7 @@ rxversion="8.3">
 			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
 			</testcontainer>
 			<testcontainer
-			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
-			</testcontainer>
-			<testcontainer
-			id="9ab34d41-a11f-476f-a90f-c56f30c05e5c">
-			</testcontainer>
-			<testcontainer
 			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
-			</testcontainer>
-			<testcontainer
-			id="a039dd84-fa06-45dc-900f-9d8b10c73c69">
 			</testcontainer>
 			<testcontainer
 			id="a54e2f22-375f-4fb2-838a-084cd4471e50">
@@ -10149,9 +8224,6 @@ rxversion="8.3">
 			id="beb5dd77-b674-4865-ba3b-e0a869db1797">
 			</testcontainer>
 			<testcontainer
-			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
-			</testcontainer>
-			<testcontainer
 			id="caa16dcb-29ad-4f2f-ba50-f65f0670c1c4">
 			</testcontainer>
 			<testcontainer
@@ -10188,58 +8260,25 @@ rxversion="8.3">
 			id="fbb6582a-078f-40ce-9d97-9857a442e28e">
 			</testcontainer>
 			<testcontainer
-			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
-			</testcontainer>
-			<testcontainer
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
-			</testcontainer>
-			<testcontainer
-			id="ff44dfc5-ef9f-4581-9de9-3d63aa6092c9">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="009282f3-88a4-4e0d-a01b-5b6d827c12d5">
-			</testcontainer>
-			<testcontainer
-			id="45077930-4bd9-4874-ad6a-91b58033c26a">
+			id="12672266-c3e5-4da0-bf18-959502d59662">
 			</testcontainer>
 			<testcontainer
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="7dc737a0-25fd-41b8-841e-8f0ca3a40492">
+			id="aebe25dc-b68a-4b09-a337-ec444d5a2816">
 			</testcontainer>
 			<testcontainer
-			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
-			</testcontainer>
-			<testcontainer
-			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
-			</testcontainer>
-			<testcontainer
-			id="a91d1ec2-d48c-4771-bf83-0eee10ea07af">
-			</testcontainer>
-			<testcontainer
-			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
-			</testcontainer>
-			<testcontainer
-			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
-			</testcontainer>
-			<testcontainer
-			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
-			</testcontainer>
-			<testcontainer
-			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
-			</testcontainer>
-			<testcontainer
-			id="eae30245-2af9-4fad-bc41-3d650f99a1e8">
+			id="d345d6ba-292a-42b7-9c14-e9d350a6c538">
 			</testcontainer>
 			<testcontainer
 			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58">
-			</testcontainer>
-			<testcontainer
-			id="fb9f5152-9292-4c17-b26c-90c15954d105">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
