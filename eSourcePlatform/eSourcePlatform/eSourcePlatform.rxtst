@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -5611,14 +5611,11 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -5701,7 +5698,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Checked"
-		lastknownrowcount="57"
+		lastknownrowcount="91"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5969,9 +5966,6 @@ rxversion="8.3">
 				</column>
 				<column>
 					Rep_DBVersion
-				</column>
-				<column>
-					Report_Version
 				</column>
 				<column>
 					V8Handler_Jobs

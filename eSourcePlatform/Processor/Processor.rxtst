@@ -1229,6 +1229,10 @@ rxversion="8.3">
 			id="0f96b092-b659-4214-a52c-2be409b75420"
 			name="setup123211111121111">
 			</setup>
+			<testcase
+			id="0fde5be3-a845-4c0b-8bbd-32e8a0856181"
+			name="TOcl_CompletionPassPerformanceEqual">
+			</testcase>
 			<setup
 			id="106059bd-5a57-4e1b-8e35-26027f5fc542"
 			name="setup12321111112111211">
@@ -2583,6 +2587,10 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			id="23470cd6-be1b-48ba-82c7-c0f756b5e971"
+			name="Ped_TOcl_CompletionPassPerformancePass">
+			</testcase>
+			<testcase
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="238aec2e-bd61-4769-8093-53486280de98"
@@ -3314,6 +3322,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="2fb4bbea-ce4b-4913-804a-0b4c5623a1bd"
+			name="Ped_TOcl_CompletionPassPerformanceFail">
+			</testcase>
 			<modulegroup
 			id="2fc11f61-4679-4c0e-b010-0aeca4a707c6"
 			name="Generate_Workflow_Complete_Assessment"
@@ -6155,6 +6167,10 @@ rxversion="8.3">
 			id="54941ec6-cb64-4e73-94dc-a7107c61bfea"
 			name="teardown123211111121112411121211111111111">
 			</teardown>
+			<testcase
+			id="549e2290-f582-4f19-ab70-cd5b2a145c38"
+			name="TOcl_CompletionPassPerformanceFail">
+			</testcase>
 			<testmodule
 			id="54dd22de-b93a-4ac3-b3c3-e1a166918938"
 			name="Clear_ExternalID"
@@ -7489,6 +7505,18 @@ rxversion="8.3">
 			type="UserCode">
 				<databinding>
 					<var
+					dataname="GmailAddress"
+					datasourceid="2bad88a0-51ba-4714-8183-e968bb4d6d44"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="2bad88a0-51ba-4714-8183-e968bb4d6d44"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+					<var
 					dataname="SendPdfReportOnComplete"
 					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
 					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
@@ -7553,18 +7581,6 @@ rxversion="8.3">
 					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
 					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
 					variablename="Subject">
-					</var>
-					<var
-					dataname="GmailAddress"
-					datasourceid="2bad88a0-51ba-4714-8183-e968bb4d6d44"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="2bad88a0-51ba-4714-8183-e968bb4d6d44"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -10796,6 +10812,10 @@ rxversion="8.3">
 			id="8a7230ad-b455-4b6d-b94b-eaa88f19ce3f"
 			name="teardown1232111111211124111213211">
 			</teardown>
+			<testcase
+			id="8b1e8f28-df73-4b5f-b5c0-21e9bb6dbfbb"
+			name="TOcl_CompletionPassPerformancePass">
+			</testcase>
 			<testmodule
 			id="8bc8bb65-edaf-448f-9525-176de930ce70"
 			name="Validate_Outcomes"
@@ -12169,6 +12189,10 @@ rxversion="8.3">
 			id="986a3b2a-f484-4ea5-a1be-16b6f4fd68b9"
 			name="setup">
 			</setup>
+			<testcase
+			id="988fb1da-092b-4e02-b6ca-ec6251fc2786"
+			name="TOcl_CompletionFail">
+			</testcase>
 			<testmodule
 			id="98e1e1d0-bc7a-42d1-b175-78d04c74f2a5"
 			name="Validate_Outcomes"
@@ -15413,6 +15437,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="c2ab9ee0-594c-4817-a759-9ad8b5373bd3"
+			name="Ped_TOcl_CompletionFail">
+			</testcase>
 			<testmodule
 			id="c2d7a2fd-ba54-402a-8103-cf081d436e22"
 			name="Close_Browser"
@@ -16286,6 +16314,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testcase
+			id="c8199748-34dd-481e-878a-3b25670161a5"
+			name="Ped_TOcl_CompletionPassPerformanceEqual">
+			</testcase>
 			<testmodule
 			id="c883b58c-e965-45c7-8780-cc48c5df8ca6"
 			name="Validate_Outcomes"
@@ -18470,6 +18502,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="e0a373b9-44ac-4525-b5e9-0823cb616bd0"
+			name="6.3_TimerOneCardLearning">
+			</smartfoldernode>
 			<modulegroup
 			id="e22559ec-9ff7-430f-beec-61f519831189"
 			name="Generate_Workflow_Complete_Assessment"
@@ -23569,6 +23605,42 @@ rxversion="8.3">
 								</testcase>
 							</smartfoldernode>
 							<smartfoldernode
+							id="e0a373b9-44ac-4525-b5e9-0823cb616bd0"
+							name="6.3_TimerOneCardLearning">
+								<testcase
+								id="8b1e8f28-df73-4b5f-b5c0-21e9bb6dbfbb"
+								name="TOcl_CompletionPassPerformancePass">
+								</testcase>
+								<testcase
+								id="549e2290-f582-4f19-ab70-cd5b2a145c38"
+								name="TOcl_CompletionPassPerformanceFail">
+								</testcase>
+								<testcase
+								id="0fde5be3-a845-4c0b-8bbd-32e8a0856181"
+								name="TOcl_CompletionPassPerformanceEqual">
+								</testcase>
+								<testcase
+								id="988fb1da-092b-4e02-b6ca-ec6251fc2786"
+								name="TOcl_CompletionFail">
+								</testcase>
+								<testcase
+								id="23470cd6-be1b-48ba-82c7-c0f756b5e971"
+								name="Ped_TOcl_CompletionPassPerformancePass">
+								</testcase>
+								<testcase
+								id="2fb4bbea-ce4b-4913-804a-0b4c5623a1bd"
+								name="Ped_TOcl_CompletionPassPerformanceFail">
+								</testcase>
+								<testcase
+								id="c8199748-34dd-481e-878a-3b25670161a5"
+								name="Ped_TOcl_CompletionPassPerformanceEqual">
+								</testcase>
+								<testcase
+								id="c2ab9ee0-594c-4817-a759-9ad8b5373bd3"
+								name="Ped_TOcl_CompletionFail">
+								</testcase>
+							</smartfoldernode>
+							<smartfoldernode
 							id="d79b3226-d422-4b97-b436-ff62281488e6"
 							name="6.4_TimerOneBack">
 								<testcase
@@ -24374,15 +24446,6 @@ rxversion="8.3">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="0452c576-abe4-460b-b8ba-2f1577578d57">
-			</testcontainer>
-			<testcontainer
-			id="c0918ef1-0e97-48fa-a205-ef53dc5c2449">
-			</testcontainer>
-			<testcontainer
-			id="f29574e6-11a0-4065-9c2e-72d0b167de3b">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
