@@ -194,6 +194,9 @@ namespace CSP
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(0));
+            Delay.Duration(900, false);
+            
             SetBatteryWorkf(StudyID, Token, WorkflowID, BatteryID, CSPDOM, battryworkflowData, WorkflowBlockID);
             Delay.Milliseconds(0);
             
