@@ -888,6 +888,110 @@ rxversion="8.3">
 				searchtimeout="30000ms">
 					/dom[@domain=$RCCDOM]//li[#'dropDownButton_popupMenuItem_delete']/a[@innertext='Delete']
 				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="6969838b-2a6c-4d16-a03e-8893bf3be225"
+				name="AddUserButton"
+				refimgid="fa555c55-643f-4415-9ac1-8a8a62bf1a7e"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//button[@innertext='Add User']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="9e912ef0-cbea-4fc3-8028-efcbac747dac"
+				name="UserAddRoleButton"
+				refimgid="3836e02a-e2b1-41ac-8148-b9f2a61fe06c"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'userAdd_role_button']"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//button[#'userAdd_role_button']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="b969bb92-5016-4028-9a2c-38708a6b8760"
+				name="AdminUserRole"
+				refimgid="697cf609-3c9d-4394-b993-97d5da202b0b"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//a[@innertext='Admin']
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="89ba4e24-b6f8-422d-bf43-7e328193d6ae"
+				name="UserAddUserSelection"
+				refimgid="faf592ff-c16f-4d30-b3f3-4b3bd9956c29"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//i[#'userAdd_userSelection']"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//i[#'userAdd_userSelection']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="78fa3dc5-707e-4c3a-9f90-b0a2a63c0e50"
+				name="UserAddFirstName"
+				refimgid="9c591a5d-0a46-4a88-9dfc-85f78d6e378b"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//input[#'filtersWidget_userInputWidget_firstName']"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//input[#'filtersWidget_userInputWidget_firstName']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="542ec15c-7c9b-44ff-9355-d64fc3522114"
+				name="AddIntegrationUserQC"
+				refimgid="4340b682-c1ea-4220-a1ce-d1ede6d5ffbc"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[@innertext='IntegrationUserQC']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="f5dd771b-a07f-49ae-bbc0-00f81f61dd8d"
+				name="SaveAndExit"
+				refimgid="490dd510-5fdc-4045-a198-425b8cf151da"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']//button[#'studyAssignmentsMp_editAddUser_saveAndReturn']/span[@innertext='Save and Exit']"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//button[#'studyAssignmentsMp_editAddUser_saveAndReturn']/span[@innertext='Save and Exit']
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="spantag"
+				id="9e0b22c8-751b-43f0-8f50-c8715e66fa23"
+				name="AddAPIKeyButton"
+				refimgid="c0c8093a-d2f6-42ed-974f-b0f5be47afd4"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//div[@innertext='IntegrationU...']/..//..//span[@title='Add API Key']
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="97f17e58-3162-4c0a-a135-549d93322e92"
+				name="APIExportCheckbox"
+				refimgid="d3be7725-2214-4a5b-975e-8f1d75a48a7b"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]/body//div[@innertext='API Export']//..//i[@visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,itag"
+				capname="itag"
+				id="fadc8b3d-44af-4af5-80eb-4b2ea73c1076"
+				name="APIImportCheckbox"
+				refimgid="d3be7725-2214-4a5b-975e-8f1d75a48a7b"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]/body//div[@innertext='API Import']//..//i[@visible='True']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="074f986a-c76e-4bb6-8455-7a339e5fec93"
+				name="APISaveAndExit"
+				refimgid="8d85b047-6bd4-463e-b1f1-b07f3e5a8cbd"
+				refpath="/dom[@domain='cgsqc.redcapcloud.com']/body/div[6]/div/div/table/tbody/tr/td[2]/div/table/tbody/tr/td[2]/button"
+				searchtimeout="30000ms">
+					/dom[@domain=$RCCDOM]/body/div[6]//table/?/?/tr/td[2]/?/?/table/?/?/tr/td[2]/button
+				</item>
 			</folder>
 			<folder
 			addcaps="unknown,webelement,iframetag"

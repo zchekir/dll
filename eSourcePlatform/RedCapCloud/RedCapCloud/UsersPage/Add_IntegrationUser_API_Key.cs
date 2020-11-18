@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.ValidationModules
+namespace RedCapCloud.UsersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_Integration_User recording.
+    ///The Add_IntegrationUser_API_Key recording.
     /// </summary>
-    [TestModule("cae86e8e-e479-4299-8864-71608011c45f", ModuleType.Recording, 1)]
-    public partial class Validate_Integration_User : ITestModule
+    [TestModule("99e3a789-7644-424b-a824-b5f2b74280fa", ModuleType.Recording, 1)]
+    public partial class Add_IntegrationUser_API_Key : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Validate_Integration_User instance = new Validate_Integration_User();
+        static Add_IntegrationUser_API_Key instance = new Add_IntegrationUser_API_Key();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_Integration_User()
+        public Add_IntegrationUser_API_Key()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_Integration_User Instance
+        public static Add_IntegrationUser_API_Key Instance
         {
             get { return instance; }
         }
@@ -89,10 +89,21 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            Validate_IntegrationUser(repo.REDCapCloud.UsersPage.IntegrationUserInfo);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.AddAPIKeyButton' at Center.", repo.REDCapCloud.UsersPage.AddAPIKeyButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.UsersPage.AddAPIKeyButton.Click();
+            Delay.Milliseconds(200);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Integration User Exists", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.APIExportCheckbox' at Center.", repo.REDCapCloud.UsersPage.APIExportCheckboxInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.UsersPage.APIExportCheckbox.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.APIImportCheckbox' at Center.", repo.REDCapCloud.UsersPage.APIImportCheckboxInfo, new RecordItemIndex(2));
+            repo.REDCapCloud.UsersPage.APIImportCheckbox.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.APISaveAndExit' at Center.", repo.REDCapCloud.UsersPage.APISaveAndExitInfo, new RecordItemIndex(3));
+            repo.REDCapCloud.UsersPage.APISaveAndExit.Click();
+            Delay.Milliseconds(200);
             
         }
 
