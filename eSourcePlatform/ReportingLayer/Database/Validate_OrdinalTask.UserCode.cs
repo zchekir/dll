@@ -44,7 +44,7 @@ namespace ReportingLayer.Database
         	dt.Reset();
         	
         	//Setup SQL Query
-        	string query = @"SELECT OrdinalTaskData, Test FROM dbo.vwAcademicExtract
+        	string query = @"SELECT OrdinalTaskData, Test FROM extracts.vwAcademicExtract
         					WHERE TestIdentifier = @TestIdentifier
 							ORDER BY DefaultSortOrder ASC";
         	

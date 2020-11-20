@@ -45,7 +45,7 @@ namespace ReportingLayer.Database
             dt.Reset();
         	
         	//Setup SQL Query
-        	string query = @"SELECT * FROM dbo.vwStandardExtract
+        	string query = @"SELECT * FROM extracts.vwStandardExtract
         					WHERE TestIdentifier = @TestIdentifier";
         	
         	//Setup Connection String
