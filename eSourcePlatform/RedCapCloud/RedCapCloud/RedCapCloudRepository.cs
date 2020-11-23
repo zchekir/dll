@@ -3424,6 +3424,17 @@ namespace RedCapCloud
             RepoItemInfo _integrationusereditpanelInfo;
             RepoItemInfo _toolsdropdownInfo;
             RepoItemInfo _deletebuttonInfo;
+            RepoItemInfo _adduserbuttonInfo;
+            RepoItemInfo _useraddrolebuttonInfo;
+            RepoItemInfo _adminuserroleInfo;
+            RepoItemInfo _useradduserselectionInfo;
+            RepoItemInfo _useraddfirstnameInfo;
+            RepoItemInfo _addintegrationuserqcInfo;
+            RepoItemInfo _saveandexitInfo;
+            RepoItemInfo _addapikeybuttonInfo;
+            RepoItemInfo _apiexportcheckboxInfo;
+            RepoItemInfo _apiimportcheckboxInfo;
+            RepoItemInfo _apisaveandexitInfo;
 
             /// <summary>
             /// Creates a new UsersPage  folder.
@@ -3436,6 +3447,17 @@ namespace RedCapCloud
                 _integrationusereditpanelInfo = new RepoItemInfo(this, "IntegrationUserEditPanel", "body//div[@innertext='User']/../..//table//div[@innertext~'IntegrationUser']", 30000, null, "d074b94c-f5da-43b2-bbe6-d1b498e3a023");
                 _toolsdropdownInfo = new RepoItemInfo(this, "ToolsDropDown", "body//table/tbody//table/?/?/tr/td[1]/table//button[@id='dropDownButton_button_tools']", 30000, null, "98e2b9d1-2708-4d8a-b4c3-637d711776ab");
                 _deletebuttonInfo = new RepoItemInfo(this, "DeleteButton", ".//li[#'dropDownButton_popupMenuItem_delete']/a[@innertext='Delete']", 30000, null, "567ebfac-b0c0-4433-a79b-eaf740b1e1a8");
+                _adduserbuttonInfo = new RepoItemInfo(this, "AddUserButton", ".//div[#'gwtWrapper']//button[@innertext='Add User']", 30000, null, "6969838b-2a6c-4d16-a03e-8893bf3be225");
+                _useraddrolebuttonInfo = new RepoItemInfo(this, "UserAddRoleButton", ".//button[#'userAdd_role_button']", 30000, null, "9e912ef0-cbea-4fc3-8028-efcbac747dac");
+                _adminuserroleInfo = new RepoItemInfo(this, "AdminUserRole", ".//a[@innertext='Admin']", 30000, null, "b969bb92-5016-4028-9a2c-38708a6b8760");
+                _useradduserselectionInfo = new RepoItemInfo(this, "UserAddUserSelection", ".//i[#'userAdd_userSelection']", 30000, null, "89ba4e24-b6f8-422d-bf43-7e328193d6ae");
+                _useraddfirstnameInfo = new RepoItemInfo(this, "UserAddFirstName", ".//input[#'filtersWidget_userInputWidget_firstName']", 30000, null, "78fa3dc5-707e-4c3a-9f90-b0a2a63c0e50");
+                _addintegrationuserqcInfo = new RepoItemInfo(this, "AddIntegrationUserQC", ".//div[@innertext='IntegrationUserQC']", 30000, null, "542ec15c-7c9b-44ff-9355-d64fc3522114");
+                _saveandexitInfo = new RepoItemInfo(this, "SaveAndExit", ".//button[#'studyAssignmentsMp_editAddUser_saveAndReturn']/span[@innertext='Save and Exit']", 30000, null, "f5dd771b-a07f-49ae-bbc0-00f81f61dd8d");
+                _addapikeybuttonInfo = new RepoItemInfo(this, "AddAPIKeyButton", ".//div[#'gwtWrapper']//div[@innertext='IntegrationU...']/..//..//span[@title='Add API Key']", 30000, null, "9e0b22c8-751b-43f0-8f50-c8715e66fa23");
+                _apiexportcheckboxInfo = new RepoItemInfo(this, "APIExportCheckbox", "body//div[@innertext='API Export']//..//i[@visible='True']", 30000, null, "97f17e58-3162-4c0a-a135-549d93322e92");
+                _apiimportcheckboxInfo = new RepoItemInfo(this, "APIImportCheckbox", "body//div[@innertext='API Import']//..//i[@visible='True']", 30000, null, "fadc8b3d-44af-4af5-80eb-4b2ea73c1076");
+                _apisaveandexitInfo = new RepoItemInfo(this, "APISaveAndExit", "body/div[6]//table/?/?/tr/td[2]/?/?/table/?/?/tr/td[2]/button", 30000, null, "074f986a-c76e-4bb6-8455-7a339e5fec93");
             }
 
             /// <summary>
@@ -3567,6 +3589,270 @@ namespace RedCapCloud
                 get
                 {
                     return _deletebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddUserButton item.
+            /// </summary>
+            [RepositoryItem("6969838b-2a6c-4d16-a03e-8893bf3be225")]
+            public virtual Ranorex.ButtonTag AddUserButton
+            {
+                get
+                {
+                    return _adduserbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddUserButton item info.
+            /// </summary>
+            [RepositoryItemInfo("6969838b-2a6c-4d16-a03e-8893bf3be225")]
+            public virtual RepoItemInfo AddUserButtonInfo
+            {
+                get
+                {
+                    return _adduserbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserAddRoleButton item.
+            /// </summary>
+            [RepositoryItem("9e912ef0-cbea-4fc3-8028-efcbac747dac")]
+            public virtual Ranorex.ButtonTag UserAddRoleButton
+            {
+                get
+                {
+                    return _useraddrolebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserAddRoleButton item info.
+            /// </summary>
+            [RepositoryItemInfo("9e912ef0-cbea-4fc3-8028-efcbac747dac")]
+            public virtual RepoItemInfo UserAddRoleButtonInfo
+            {
+                get
+                {
+                    return _useraddrolebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AdminUserRole item.
+            /// </summary>
+            [RepositoryItem("b969bb92-5016-4028-9a2c-38708a6b8760")]
+            public virtual Ranorex.ATag AdminUserRole
+            {
+                get
+                {
+                    return _adminuserroleInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AdminUserRole item info.
+            /// </summary>
+            [RepositoryItemInfo("b969bb92-5016-4028-9a2c-38708a6b8760")]
+            public virtual RepoItemInfo AdminUserRoleInfo
+            {
+                get
+                {
+                    return _adminuserroleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserAddUserSelection item.
+            /// </summary>
+            [RepositoryItem("89ba4e24-b6f8-422d-bf43-7e328193d6ae")]
+            public virtual Ranorex.ITag UserAddUserSelection
+            {
+                get
+                {
+                    return _useradduserselectionInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserAddUserSelection item info.
+            /// </summary>
+            [RepositoryItemInfo("89ba4e24-b6f8-422d-bf43-7e328193d6ae")]
+            public virtual RepoItemInfo UserAddUserSelectionInfo
+            {
+                get
+                {
+                    return _useradduserselectionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserAddFirstName item.
+            /// </summary>
+            [RepositoryItem("78fa3dc5-707e-4c3a-9f90-b0a2a63c0e50")]
+            public virtual Ranorex.InputTag UserAddFirstName
+            {
+                get
+                {
+                    return _useraddfirstnameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserAddFirstName item info.
+            /// </summary>
+            [RepositoryItemInfo("78fa3dc5-707e-4c3a-9f90-b0a2a63c0e50")]
+            public virtual RepoItemInfo UserAddFirstNameInfo
+            {
+                get
+                {
+                    return _useraddfirstnameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddIntegrationUserQC item.
+            /// </summary>
+            [RepositoryItem("542ec15c-7c9b-44ff-9355-d64fc3522114")]
+            public virtual Ranorex.DivTag AddIntegrationUserQC
+            {
+                get
+                {
+                    return _addintegrationuserqcInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddIntegrationUserQC item info.
+            /// </summary>
+            [RepositoryItemInfo("542ec15c-7c9b-44ff-9355-d64fc3522114")]
+            public virtual RepoItemInfo AddIntegrationUserQCInfo
+            {
+                get
+                {
+                    return _addintegrationuserqcInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExit item.
+            /// </summary>
+            [RepositoryItem("f5dd771b-a07f-49ae-bbc0-00f81f61dd8d")]
+            public virtual Ranorex.SpanTag SaveAndExit
+            {
+                get
+                {
+                    return _saveandexitInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAndExit item info.
+            /// </summary>
+            [RepositoryItemInfo("f5dd771b-a07f-49ae-bbc0-00f81f61dd8d")]
+            public virtual RepoItemInfo SaveAndExitInfo
+            {
+                get
+                {
+                    return _saveandexitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddAPIKeyButton item.
+            /// </summary>
+            [RepositoryItem("9e0b22c8-751b-43f0-8f50-c8715e66fa23")]
+            public virtual Ranorex.SpanTag AddAPIKeyButton
+            {
+                get
+                {
+                    return _addapikeybuttonInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddAPIKeyButton item info.
+            /// </summary>
+            [RepositoryItemInfo("9e0b22c8-751b-43f0-8f50-c8715e66fa23")]
+            public virtual RepoItemInfo AddAPIKeyButtonInfo
+            {
+                get
+                {
+                    return _addapikeybuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The APIExportCheckbox item.
+            /// </summary>
+            [RepositoryItem("97f17e58-3162-4c0a-a135-549d93322e92")]
+            public virtual Ranorex.ITag APIExportCheckbox
+            {
+                get
+                {
+                    return _apiexportcheckboxInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The APIExportCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("97f17e58-3162-4c0a-a135-549d93322e92")]
+            public virtual RepoItemInfo APIExportCheckboxInfo
+            {
+                get
+                {
+                    return _apiexportcheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The APIImportCheckbox item.
+            /// </summary>
+            [RepositoryItem("fadc8b3d-44af-4af5-80eb-4b2ea73c1076")]
+            public virtual Ranorex.ITag APIImportCheckbox
+            {
+                get
+                {
+                    return _apiimportcheckboxInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The APIImportCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("fadc8b3d-44af-4af5-80eb-4b2ea73c1076")]
+            public virtual RepoItemInfo APIImportCheckboxInfo
+            {
+                get
+                {
+                    return _apiimportcheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The APISaveAndExit item.
+            /// </summary>
+            [RepositoryItem("074f986a-c76e-4bb6-8455-7a339e5fec93")]
+            public virtual Ranorex.ButtonTag APISaveAndExit
+            {
+                get
+                {
+                    return _apisaveandexitInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The APISaveAndExit item info.
+            /// </summary>
+            [RepositoryItemInfo("074f986a-c76e-4bb6-8455-7a339e5fec93")]
+            public virtual RepoItemInfo APISaveAndExitInfo
+            {
+                get
+                {
+                    return _apisaveandexitInfo;
                 }
             }
         }

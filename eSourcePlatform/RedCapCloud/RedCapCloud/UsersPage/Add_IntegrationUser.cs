@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.ValidationModules
+namespace RedCapCloud.UsersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_Integration_User recording.
+    ///The Add_IntegrationUser recording.
     /// </summary>
-    [TestModule("cae86e8e-e479-4299-8864-71608011c45f", ModuleType.Recording, 1)]
-    public partial class Validate_Integration_User : ITestModule
+    [TestModule("988336d3-722d-46bf-a658-6355e965e1a4", ModuleType.Recording, 1)]
+    public partial class Add_IntegrationUser : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Validate_Integration_User instance = new Validate_Integration_User();
+        static Add_IntegrationUser instance = new Add_IntegrationUser();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_Integration_User()
+        public Add_IntegrationUser()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_Integration_User Instance
+        public static Add_IntegrationUser Instance
         {
             get { return instance; }
         }
@@ -89,10 +89,33 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            Validate_IntegrationUser(repo.REDCapCloud.UsersPage.IntegrationUserInfo);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.UserAddRoleButton' at Center.", repo.REDCapCloud.UsersPage.UserAddRoleButtonInfo, new RecordItemIndex(0));
+            repo.REDCapCloud.UsersPage.UserAddRoleButton.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.AdminUserRole' at Center.", repo.REDCapCloud.UsersPage.AdminUserRoleInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.UsersPage.AdminUserRole.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.UserAddUserSelection' at Center.", repo.REDCapCloud.UsersPage.UserAddUserSelectionInfo, new RecordItemIndex(2));
+            repo.REDCapCloud.UsersPage.UserAddUserSelection.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'IntegrationUserQC' with focus on 'REDCapCloud.UsersPage.UserAddFirstName'.", repo.REDCapCloud.UsersPage.UserAddFirstNameInfo, new RecordItemIndex(3));
+            repo.REDCapCloud.UsersPage.UserAddFirstName.PressKeys("IntegrationUserQC", 1);
+            Delay.Milliseconds(280);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'REDCapCloud.UsersPage.UserAddFirstName'.", repo.REDCapCloud.UsersPage.UserAddFirstNameInfo, new RecordItemIndex(4));
+            repo.REDCapCloud.UsersPage.UserAddFirstName.PressKeys("{Return}");
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Integration User Exists", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.AddIntegrationUserQC' at Center.", repo.REDCapCloud.UsersPage.AddIntegrationUserQCInfo, new RecordItemIndex(5));
+            repo.REDCapCloud.UsersPage.AddIntegrationUserQC.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.SaveAndExit' at Center.", repo.REDCapCloud.UsersPage.SaveAndExitInfo, new RecordItemIndex(6));
+            repo.REDCapCloud.UsersPage.SaveAndExit.Click();
+            Delay.Milliseconds(200);
             
         }
 

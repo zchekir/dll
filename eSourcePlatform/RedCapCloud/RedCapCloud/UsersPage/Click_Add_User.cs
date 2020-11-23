@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RedCapCloud.ValidationModules
+namespace RedCapCloud.UsersPage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Validate_Integration_User recording.
+    ///The Click_Add_User recording.
     /// </summary>
-    [TestModule("cae86e8e-e479-4299-8864-71608011c45f", ModuleType.Recording, 1)]
-    public partial class Validate_Integration_User : ITestModule
+    [TestModule("24fb6bd1-511f-4621-908d-33c70865effd", ModuleType.Recording, 1)]
+    public partial class Click_Add_User : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::RedCapCloud.RedCapCloudRepository repository.
         /// </summary>
         public static global::RedCapCloud.RedCapCloudRepository repo = global::RedCapCloud.RedCapCloudRepository.Instance;
 
-        static Validate_Integration_User instance = new Validate_Integration_User();
+        static Click_Add_User instance = new Click_Add_User();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Validate_Integration_User()
+        public Click_Add_User()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Validate_Integration_User Instance
+        public static Click_Add_User Instance
         {
             get { return instance; }
         }
@@ -89,10 +89,12 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            Validate_IntegrationUser(repo.REDCapCloud.UsersPage.IntegrationUserInfo);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'REDCapCloud.UsersPage.AddUserButton'", repo.REDCapCloud.UsersPage.AddUserButtonInfo, new ActionTimeout(10000), new RecordItemIndex(0));
+            repo.REDCapCloud.UsersPage.AddUserButtonInfo.WaitForExists(10000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Integration User Exists", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.UsersPage.AddUserButton' at Center.", repo.REDCapCloud.UsersPage.AddUserButtonInfo, new RecordItemIndex(1));
+            repo.REDCapCloud.UsersPage.AddUserButton.Click();
+            Delay.Milliseconds(200);
             
         }
 
