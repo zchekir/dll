@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace ReportingLayer.StandardExtract
 {
-    public partial class Set_Date_Filter
+    public partial class Set_TestIdentifier_Filter
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

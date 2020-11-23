@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1547,6 +1547,12 @@ rxversion="8.3">
 			ref="ee1df575-fd4e-40fb-8d84-19a900e86d0a">
 				<databinding>
 					<var
+					dataname="RCCDOM"
+					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
+					variableid="e3b2f88e-35b4-46a4-bff4-932f6433abaf"
+					variablename="RCCDOM">
+					</var>
+					<var
 					dataname="RCCUsername"
 					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
 					variableid="5d539c94-f9fc-4135-a437-60a30fc488a8"
@@ -1557,12 +1563,6 @@ rxversion="8.3">
 					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
 					variableid="be1c5c25-86d4-4d4f-9d1c-26956c66271e"
 					variablename="RCCPassword">
-					</var>
-					<var
-					dataname="RCCDOM"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="e3b2f88e-35b4-46a4-bff4-932f6433abaf"
-					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -2272,18 +2272,6 @@ rxversion="8.3">
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="GmailAddress"
-					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
-					</var>
-					<var
 					dataname="Subject"
 					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
 					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
@@ -2348,6 +2336,18 @@ rxversion="8.3">
 					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
 					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
 					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3413,7 +3413,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Unchecked"
-		lastknownrowcount="91"
+		lastknownrowcount="96"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
