@@ -5,7 +5,7 @@ id="478d647e-d7d3-47c9-bc73-483c7f81df1f"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Set_Date_Filter
+		Set_TestIdentifier_Filter
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Set_Date_Filter"
+	classname="Set_TestIdentifier_Filter"
 	namespace="ReportingLayer.StandardExtract">
 	</codegen>
 	<variables>
@@ -359,7 +359,7 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="ce00d5aa-bccb-4593-bdae-1ec977cf523e">
 			<comment>
 			</comment>
@@ -678,7 +678,7 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 			</info>
 		</keysequenceitem>
 		<explicitdelayitem
-		duration="500ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -686,55 +686,6 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<mouseitem
-		action="Move"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="882bb9fb-712e-469d-b81d-4d52bd851186"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="68190d81-74fc-42d0-90a8-3a09b5d92c4a"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="0,0,0,0"
-				role="unknown"
-				snapElem=""
-				valid="False"
-				visible="False">
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/?/?/div/tag[46]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span
-				</path>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -804,7 +755,7 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="900ms"
+		duration="500ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -829,7 +780,7 @@ gRs+YnP3s4447VfEaDGEUYBA49etMNrbsqqYIiqfdBQYH0oA/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Set_Date_Filter.UserCode.cs
+		Set_TestIdentifier_Filter.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

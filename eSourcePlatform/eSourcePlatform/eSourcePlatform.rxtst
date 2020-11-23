@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1300,7 +1300,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
-			name="Set_Date_Filter"
+			name="Set_TestIdentifier_Filter"
 			ref="478d647e-d7d3-47c9-bc73-483c7f81df1f"
 			type="Recording">
 				<databinding>
@@ -3197,14 +3197,6 @@ rxversion="8.3">
 			name="Clear_Test_Slicer"
 			ref="c54f947a-0235-4689-b126-7e7629c48e9b"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="48e1328e-f4b3-4c5d-80d4-e8f96db9e13a"
-					variablename="TestIdentifier">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="bb80a5e2-649d-4add-9f06-91258bddb097"
@@ -4737,7 +4729,7 @@ rxversion="8.3">
 									</modulegroup>
 									<testmodule
 									id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
-									name="Set_Date_Filter">
+									name="Set_TestIdentifier_Filter">
 									</testmodule>
 									<testmodule
 									id="164e2e9b-5589-4141-bb90-77d0066a3862"
@@ -5611,14 +5603,11 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -5701,7 +5690,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Checked"
-		lastknownrowcount="57"
+		lastknownrowcount="96"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5803,7 +5792,7 @@ rxversion="8.3">
 		<DataSource
 		id="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5860,7 +5849,7 @@ rxversion="8.3">
 		<DataSource
 		id="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="5"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

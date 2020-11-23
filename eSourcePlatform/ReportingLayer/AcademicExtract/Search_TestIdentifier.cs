@@ -24,34 +24,47 @@ namespace ReportingLayer.AcademicExtract
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Clear_Test_Slicer recording.
+    ///The Search_TestIdentifier recording.
     /// </summary>
-    [TestModule("c54f947a-0235-4689-b126-7e7629c48e9b", ModuleType.Recording, 1)]
-    public partial class Clear_Test_Slicer : ITestModule
+    [TestModule("b19d1f97-834f-4ba1-9daa-4e46dc41d3bd", ModuleType.Recording, 1)]
+    public partial class Search_TestIdentifier : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::ReportingLayer.ReportingLayerRepository repository.
         /// </summary>
         public static global::ReportingLayer.ReportingLayerRepository repo = global::ReportingLayer.ReportingLayerRepository.Instance;
 
-        static Clear_Test_Slicer instance = new Clear_Test_Slicer();
+        static Search_TestIdentifier instance = new Search_TestIdentifier();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Clear_Test_Slicer()
+        public Search_TestIdentifier()
         {
+            TestIdentifier = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Clear_Test_Slicer Instance
+        public static Search_TestIdentifier Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _TestIdentifier;
+
+        /// <summary>
+        /// Gets or sets the value of variable TestIdentifier.
+        /// </summary>
+        [TestVariable("974efd45-27c1-44cc-a620-0469be1de8f7")]
+        public string TestIdentifier
+        {
+            get { return _TestIdentifier; }
+            set { _TestIdentifier = value; }
+        }
 
 #endregion
 
@@ -79,11 +92,23 @@ namespace ReportingLayer.AcademicExtract
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.ClearTestSelections' at Center.", repo.PowerBI.ClearTestSelectionsInfo, new RecordItemIndex(0));
-            repo.PowerBI.ClearTestSelections.Click(3);
-            Delay.Milliseconds(490);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.Slicers.SearchTestIdentifier' at Center.", repo.PowerBI.Slicers.SearchTestIdentifierInfo, new RecordItemIndex(0));
+            repo.PowerBI.Slicers.SearchTestIdentifier.Click();
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'PowerBI.Slicers.SearchTestIdentifier'.", repo.PowerBI.Slicers.SearchTestIdentifierInfo, new RecordItemIndex(1));
+            repo.PowerBI.Slicers.SearchTestIdentifier.PressKeys(TestIdentifier);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'PowerBI.Slicers.TestIdentifierSelectBox' at Center.", repo.PowerBI.Slicers.TestIdentifierSelectBoxInfo, new RecordItemIndex(2));
+            repo.PowerBI.Slicers.TestIdentifierSelectBox.MoveTo();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.Slicers.TestIdentifierSelectBox' at Center.", repo.PowerBI.Slicers.TestIdentifierSelectBoxInfo, new RecordItemIndex(3));
+            repo.PowerBI.Slicers.TestIdentifierSelectBox.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
             Delay.Duration(500, false);
             
         }
