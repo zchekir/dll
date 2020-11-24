@@ -66,8 +66,12 @@ namespace CSP
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
+				string batteryName ="Atomation";
+				Random rnd = new Random();
+				int num  = rnd.Next(1, 9);
+				
 		    
-               var testData = JsonData.Replace(@"<id>", Studyid).Replace(@"<name>",Studname).Replace(@"<ver>",Batteryversion); 
+               var testData = JsonData.Replace(@"<id>", Studyid).Replace(@"<name>",Studname).Replace(@"<ver>",Batteryversion).Replace(@"<batteryName>",batteryName+num); 
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
