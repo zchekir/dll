@@ -1916,6 +1916,18 @@
       <id>8e5c6d03-dd47-4b35-9e41-61cbd3b340c3</id>
       <BoundTo>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</BoundTo>
     </Compile>
+    <Compile Include="APIV2Modules\Validate_QualificationStatus.cs">
+      <BoundTo>de29c6b2-7a48-437b-8e05-61ce5e5e4560</BoundTo>
+      <DependentUpon>Validate_QualificationStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae218981-bef8-40ab-9185-0d1c6ccf72ac</id>
+    </Compile>
+    <Compile Include="APIV2Modules\Validate_QualificationStatus.UserCode.cs">
+      <BoundTo>de29c6b2-7a48-437b-8e05-61ce5e5e4560</BoundTo>
+      <DependentUpon>Validate_QualificationStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a2669896-b0a1-4922-a240-9a8c16cc9a0f</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>972ac0ea-8bc6-4fff-b84a-433c9e389b8b</id>
     </Compile>
@@ -4601,6 +4613,11 @@
       <id>bc8603c2-ac98-42fa-9f4c-2f82801b14ea</id>
       <recordtableid>e12ebea7-d179-4d79-9787-83931795e911</recordtableid>
     </None>
+    <None Include="APIV2Modules\Validate_QualificationStatus.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>de29c6b2-7a48-437b-8e05-61ce5e5e4560</id>
+      <recordtableid>e040d415-a3ad-48c9-9a10-ddbb8bae7361</recordtableid>
+    </None>
     <None Include="app.config">
       <id>4fde1d06-b4d6-4207-b920-eeffc7d6cb1c</id>
     </None>
@@ -5290,6 +5307,70 @@
       <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
       <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+    </None>
+    <None Include="rawData\Tier 1.txt">
+      <id>e5b725f2-df79-4e9f-abc4-21708900f8f8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 10.txt">
+      <id>7dc0c8d8-95fd-44a7-b804-770b8e0e95da</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 11.txt">
+      <id>074b5854-5227-4c92-b19b-39c7027a79e3</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 12.txt">
+      <id>7322cb03-a795-4587-80c4-34884f747112</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 13.txt">
+      <id>db3e836e-d987-4089-a47c-b5355b61ef6d</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 14.txt">
+      <id>57ba5d88-73d8-49f3-a20d-7516e2d3f865</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 15.txt">
+      <id>d6b42d5e-b2cd-42a9-8874-7b7d3929a380</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 16.txt">
+      <id>ddaa7277-5c59-435e-9c89-91b70cc739c6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 2.txt">
+      <id>f5093e5e-2687-4e42-b753-c05be9ef4dfe</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 3.txt">
+      <id>06da6ef6-71ec-47eb-9c84-9261f11154b5</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 4.txt">
+      <id>848264b3-0f7b-45b3-8fdb-bd7c70753314</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 5.txt">
+      <id>b2f9b85d-ed95-4747-8737-80ef58505f78</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 6.txt">
+      <id>6a99bc46-268a-4d1f-964b-4eba73279e24</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 7.txt">
+      <id>7075e3fc-a975-4414-a428-744b3cd7a10a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 8.txt">
+      <id>78e65d8a-524f-4c27-89a6-a08a49c252c8</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="rawData\Tier 9.txt">
+      <id>da76cc73-12c2-4103-a882-71cef71b8f5a</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="WorkflowCreation.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>

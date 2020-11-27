@@ -65,7 +65,7 @@ namespace CSP.APIV2Modules
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<QualificationStatusJSONResponse>(response);
 				
-				string  QualificationStatus = responseObject.assessmentAttemptQualificationStatus;
+				QualificationStatus = responseObject.assessmentAttemptQualificationStatus;
 				
 				Report.Log(ReportLevel.Info,  response);
 			}
