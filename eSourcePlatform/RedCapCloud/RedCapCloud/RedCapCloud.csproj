@@ -524,6 +524,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>899d6693-82bc-458c-8653-6516ceb665d0</id>
     </Compile>
+    <Compile Include="CSPStoreProcedure.cs">
+      <BoundTo>905f8155-6896-4c0b-af5e-ead7ad929038</BoundTo>
+      <DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>67839b45-7bf1-4135-b008-e3c96d4e4cd9</id>
+    </Compile>
+    <Compile Include="CSPStoreProcedure.UserCode.cs">
+      <BoundTo>905f8155-6896-4c0b-af5e-ead7ad929038</BoundTo>
+      <DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e74d6bc1-d54c-4be4-8f60-e5de700f73b4</id>
+    </Compile>
     <Compile Include="InstrumentsPage\Click_Instruments_Tab.cs">
       <DependentUpon>Click_Instruments_Tab.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1552,6 +1564,11 @@
     </None>
     <None Include="app.config">
       <id>4ef413af-dd9f-4d81-8fac-ed4d3c600dfe</id>
+    </None>
+    <None Include="CSPStoreProcedure.rxrec">
+      <BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
+      <id>905f8155-6896-4c0b-af5e-ead7ad929038</id>
+      <recordtableid>03ec75ce-a241-4a6a-92d9-830456f3aa4b</recordtableid>
     </None>
     <None Include="csv\RedCapConfig_New.csv">
       <id>3962c88c-3f00-4e2d-9daf-daddb170f246</id>

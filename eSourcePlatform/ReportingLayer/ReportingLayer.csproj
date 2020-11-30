@@ -215,6 +215,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>0e137d66-06a7-4e68-8d90-fb53b8c1a1ab</id>
     </Compile>
+    <Compile Include="CSPStoreProcedure.cs">
+      <BoundTo>9d33bd2b-d709-424f-9f85-b33b20f8be38</BoundTo>
+      <DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>be556158-9db3-4699-ba4e-7a71910ff64c</id>
+    </Compile>
+    <Compile Include="CSPStoreProcedure.UserCode.cs">
+      <BoundTo>9d33bd2b-d709-424f-9f85-b33b20f8be38</BoundTo>
+      <DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e3439f3c-6181-4b8a-9659-e30e1d30cf71</id>
+    </Compile>
     <Compile Include="Database\Validate_AcademicExtract_View.cs">
       <BoundTo>6c8adca6-d6b7-476b-b945-f34a7fba55dc</BoundTo>
       <DependentUpon>Validate_AcademicExtract_View.rxrec</DependentUpon>
@@ -599,6 +611,11 @@
     </None>
     <None Include="app.config">
       <id>329cf68b-b981-48cc-b464-e0c9bddac353</id>
+    </None>
+    <None Include="CSPStoreProcedure.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>9d33bd2b-d709-424f-9f85-b33b20f8be38</id>
+      <recordtableid>6b4e740b-107a-42b3-8edc-193add9cc91b</recordtableid>
     </None>
     <None Include="Database\Validate_AcademicExtract_View.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
