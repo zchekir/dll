@@ -6500,6 +6500,12 @@
       <id>0cced9d3-58ef-4305-b1fb-9564084077c2</id>
     </Folder>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eSourcePlatform\eSourcePlatform.csproj">
+      <Project>{A8189955-AB19-4FE1-83B6-FF8D3C07275C}</Project>
+      <Name>eSourcePlatform</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
   </Import>
   <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
