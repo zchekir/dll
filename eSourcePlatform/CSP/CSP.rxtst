@@ -275,6 +275,68 @@ rxversion="8.3">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="0812dd5d-4f05-47c9-8a6c-e4cae3bd8c9f"
+			name="Validate_16Tier_Threshold"
+			ref="dd61a28c-fae8-45fc-92bc-dbd87f49dbbd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="7a627cd3-fbdb-4fd5-ab42-6f04be5a0306"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="f3d0aae9-e3f6-495b-ad7d-672c05eeefcb"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="c32d63f7-d06d-4212-95e9-d7865d44f8b5"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="e1b16eb3-767b-49da-9d8d-7509a1f40132"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cd7e8696-035e-42ed-867d-8b2ad4c73444"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="093fb2b9-0f33-44c9-90b6-053c95b63965"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6587cc16-7399-489c-b90f-2be274a47ae5"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="PsyAttStdScr"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="e876b2f2-cb7d-4341-af05-959492c22d9d"
+					variablename="PsyAttStdScr">
+					</var>
+					<var
+					dataname="LearnWMStdScr"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="abd90b34-c335-475e-baa4-20c64d67898b"
+					variablename="LearnWMStdScr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="09d3606d-6b0c-4038-b7ff-e8ffa9bac093"
 			name="Click_External_Users_Menu"
 			ref="87fa94c0-fd9a-48b5-b2d8-c6c921ec6b9a"
@@ -5744,6 +5806,14 @@ rxversion="8.3">
 					name="QualificationStatus"
 					value="">
 					</param>
+					<param
+					name="PsyAttStdScr"
+					value="">
+					</param>
+					<param
+					name="LearnWMStdScr"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testcase
@@ -6493,6 +6563,10 @@ rxversion="8.3">
 									<testmodule
 									id="d6c6145a-87f3-48a3-8aaf-6a57221f0f32"
 									name="Validate_QualificationStatus">
+									</testmodule>
+									<testmodule
+									id="0812dd5d-4f05-47c9-8a6c-e4cae3bd8c9f"
+									name="Validate_16Tier_Threshold">
 									</testmodule>
 								</testcase>
 							</smartfoldernode>
