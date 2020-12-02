@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -302,6 +302,68 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="0812dd5d-4f05-47c9-8a6c-e4cae3bd8c9f"
+			name="Validate_16Tier_Threshold"
+			ref="dd61a28c-fae8-45fc-92bc-dbd87f49dbbd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="7a627cd3-fbdb-4fd5-ab42-6f04be5a0306"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="f3d0aae9-e3f6-495b-ad7d-672c05eeefcb"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="c32d63f7-d06d-4212-95e9-d7865d44f8b5"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="e1b16eb3-767b-49da-9d8d-7509a1f40132"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cd7e8696-035e-42ed-867d-8b2ad4c73444"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="093fb2b9-0f33-44c9-90b6-053c95b63965"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6587cc16-7399-489c-b90f-2be274a47ae5"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="PsyAttStdScr"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="e876b2f2-cb7d-4341-af05-959492c22d9d"
+					variablename="PsyAttStdScr">
+					</var>
+					<var
+					dataname="LearnWMStdScr"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="abd90b34-c335-475e-baa4-20c64d67898b"
+					variablename="LearnWMStdScr">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="09542f02-99b5-4fe0-abf0-9593dadeee7b"
 			name="Validate_BatteryTemplate_Configured"
@@ -1929,6 +1991,46 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="383738b4-1ace-47f8-b7c6-2550923b33d7"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="39b02d27-8d0d-44f9-b3eb-5b1424414422"
+			name="Run_WorkflowInstance"
+			ref="62a7ba5a-056d-4bd2-878a-716d185011cb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="a1be029a-029a-4a3f-b030-460030e98ea4"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6bf84b0d-f821-4b49-9db5-05d3ac3fb92b"
+					variablename="AssessmentURL">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4017,6 +4119,10 @@ rxversion="8.3">
 				</databinding>
 			</modulegroup>
 			<testcase
+			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5"
+			name="Authenticate_and_Complete_Tiers_Assessment">
+			</testcase>
+			<testcase
 			errorbehavior="Stop"
 			id="6e082396-bffa-4d84-b254-0da30d111799"
 			maxrange="0"
@@ -4093,6 +4199,44 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="70be41d9-0d2c-4a13-95db-d54a3ad25a40"
+			name="External_Authenticate"
+			ref="12a04901-7274-43ed-b5af-fcce25c1eba3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Key"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f186491e-a988-4bd5-8270-b971bccb2bd9"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Secret"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="280f8c82-fde0-4bbf-8603-40d1ee3acfea"
+					variablename="Secret">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a58c803b-45a0-422a-b242-a4569698b2a9"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="9aaefa3f-959c-43d5-b70b-4ab58b9160f0"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e"
+					variablename="ProtocolNumber">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="70e5e727-daef-4614-a975-2ae2ab2660ae"
 			name="V2_Participant_QualificationStatus">
@@ -4130,6 +4274,26 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="bc8c4e88-b1fb-4033-8df5-08a8bb96605b"
 					variablename="StudyName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="71bb368e-777b-4b16-95cc-cd29595e11f7"
+			name="Upload_RawData"
+			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
+					variablename="Filename">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5236,6 +5400,110 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a3c96715-25f5-4ad2-a691-5c55a60b1b15"
+			name="Generate_WorkflowInstance"
+			ref="9a2b9fff-5819-4334-8d9a-6b84b58d99f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="1d05b902-cc15-48e1-99d9-dfc534871d94"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="4b0a9c84-d41d-4d3c-b3c7-03dee9ee893c"
+					variablename="ProtocolNumber">
+					</var>
+					<var
+					dataname="VisitSessionCode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="5cf91dfd-49d7-4276-8188-104b3707a7e7"
+					variablename="VisitSessionCode">
+					</var>
+					<var
+					dataname="LocalityCode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="8dd6b8c2-2a52-4502-8866-9304c3644c52"
+					variablename="LocalityCode">
+					</var>
+					<var
+					dataname="DOB"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="baaaad91-5ccd-4dd6-9cbd-d4523f1da5cb"
+					variablename="DOB">
+					</var>
+					<var
+					dataname="SupervisorId"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="fd2e40a7-d9e4-422c-b1d3-6c9247b2458e"
+					variablename="SupervisorId">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="54bb55db-35b3-4db2-90ca-cb42cec494b3"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="0e972c7a-57eb-4293-a7cc-32e75ea62d02"
+					variablename="ExternalId">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="640023f9-9c6a-4a88-8722-9526acc509cc"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="72f9fd39-079c-4f76-a947-2a49e9350a9d"
+					variablename="AssessmentURL">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
+					variablename="Mode">
+					</var>
+					<var
+					dataname="Redirect"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="0844a293-2dc9-4219-9cb3-cafcd0f168bd"
+					variablename="Redirect">
+					</var>
+					<var
+					dataname="RedirectError"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="74e43bb7-921d-45b5-ba71-a320656a11fc"
+					variablename="RedirectError">
+					</var>
+					<var
+					dataname="GenderCode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="2e1366ad-da48-4246-816e-fa44895ddd07"
+					variablename="GenderCode">
+					</var>
+					<var
+					dataname="workflowInstanceId"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="de52f5d1-b544-4f72-9206-1d2571bad1c5"
+					variablename="workflowInstanceId">
+					</var>
+					<var
+					dataname="workflowAuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="db9fb9f3-37be-4e92-b0f5-999f6407f381"
+					variablename="workflowAuthToken">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a5425a44-d749-4eff-969e-6ca416aba1ff"
 			name="APIV2_Launch_AssessmentAttempt"
 			ref="4cf38574-50a6-4296-8017-6f3285aac388"
@@ -6059,6 +6327,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="bf6bf054-8d96-478d-8f7a-6b618d3c705e"
+			name="Clear_ExternalID"
+			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="57037071-6036-4a24-8145-c9dbf508e396"
+					variablename="externalID">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="bf7230e3-de41-43f8-b33a-6757b76fb03e"
 			name="Upload_RawData"
 			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
@@ -6256,6 +6544,48 @@ rxversion="8.3">
 			id="c54f0f1c-20d9-44fd-86fc-e03a59270062"
 			name="Reprocess_Complete_Assessment">
 			</testcase>
+			<testmodule
+			id="c64369a0-6fb4-46ae-b914-4b6c0968c160"
+			name="Get_QualificationStatus"
+			ref="437dbe88-4d5d-4f54-8943-5f96f61f7d4e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="bed5f21f-b845-4a05-b82e-1d88001c3f99"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="3b379e48-6d93-40cd-bb72-c50e745809d8"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="48f6b5c9-8619-4b7a-8c6f-4795b37abf22"
+					variablename="studyProtocolName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="054a12c7-6c4c-46b6-8cf6-768efc661585"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="QualificationStatus"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="7e44db6e-fe7e-4d40-99c9-8abb1a29f61e"
+					variablename="QualificationStatus">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="c7d2d256-8899-4137-8c08-881f7e4e2729"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="c8cec9be-1794-434a-8037-821be15735a3"
 			name="APIV2_AssessmentAttempt"
@@ -6549,6 +6879,14 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="CSPConnector"
+			id="d267156a-bd78-4461-b8df-0f50f347503e"
+			maxrange="111"
+			minrange="96"
+			name="Check_Qualification_Tiers">
+			</smartfoldernode>
 			<testmodule
 			id="d2af15a7-d521-4096-9e08-177b0d665b79"
 			name="Validate_DLM_Enabled"
@@ -6793,6 +7131,26 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="db9fb9f3-37be-4e92-b0f5-999f6407f381"
 					variablename="workflowAuthToken">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d6c6145a-87f3-48a3-8aaf-6a57221f0f32"
+			name="Validate_QualificationStatus"
+			ref="e040d415-a3ad-48c9-9a10-ddbb8bae7361"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="97f855e4-1c39-4e66-bd0f-007cb49ab757"
+					variablename="ExpectedTier">
+					</var>
+					<var
+					dataname="QualificationStatus"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="2178b2da-762d-4e03-9fbf-b76967f00f5f"
+					variablename="QualificationStatus">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7112,6 +7470,10 @@ rxversion="8.3">
 			minrange="0"
 			name="UB08">
 			</testcase>
+			<setup
+			id="e2ad65b6-77ae-4158-87d2-afeb9c2936b2"
+			name="setup">
+			</setup>
 			<testmodule
 			id="e32bbe54-5908-4a6d-ad4d-cdd68714ba8c"
 			name="BatteryCreation"
@@ -7566,6 +7928,28 @@ rxversion="8.3">
 			minrange="0"
 			name="Platform_Tests">
 			</smartfoldernode>
+			<testcase
+			id="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+			name="Validate_QualificationStatus">
+				<parameters>
+					<param
+					name="RandNum"
+					value="">
+					</param>
+					<param
+					name="QualificationStatus"
+					value="">
+					</param>
+					<param
+					name="PsyAttStdScr"
+					value="">
+					</param>
+					<param
+					name="LearnWMStdScr"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testcase
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68"
 			name="Edit_Regression_Battery">
@@ -8897,6 +9281,62 @@ rxversion="8.3">
 								</testcase>
 							</smartfoldernode>
 							<smartfoldernode
+							id="d267156a-bd78-4461-b8df-0f50f347503e"
+							name="Check_Qualification_Tiers">
+								<testcase
+								id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5"
+								name="Authenticate_and_Complete_Tiers_Assessment">
+									<setup
+									id="e2ad65b6-77ae-4158-87d2-afeb9c2936b2"
+									name="setup">
+										<testmodule
+										id="bf6bf054-8d96-478d-8f7a-6b618d3c705e"
+										name="Clear_ExternalID">
+										</testmodule>
+									</setup>
+									<testmodule
+									id="70be41d9-0d2c-4a13-95db-d54a3ad25a40"
+									name="External_Authenticate">
+									</testmodule>
+									<testmodule
+									id="a3c96715-25f5-4ad2-a691-5c55a60b1b15"
+									name="Generate_WorkflowInstance">
+									</testmodule>
+									<testmodule
+									id="39b02d27-8d0d-44f9-b3eb-5b1424414422"
+									name="Run_WorkflowInstance">
+									</testmodule>
+									<testmodule
+									id="71bb368e-777b-4b16-95cc-cd29595e11f7"
+									name="Upload_RawData">
+									</testmodule>
+									<teardown
+									id="c7d2d256-8899-4137-8c08-881f7e4e2729"
+									name="teardown">
+										<testmodule
+										id="383738b4-1ace-47f8-b7c6-2550923b33d7"
+										name="Close_Browser">
+										</testmodule>
+									</teardown>
+								</testcase>
+								<testcase
+								id="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+								name="Validate_QualificationStatus">
+									<testmodule
+									id="c64369a0-6fb4-46ae-b914-4b6c0968c160"
+									name="Get_QualificationStatus">
+									</testmodule>
+									<testmodule
+									id="d6c6145a-87f3-48a3-8aaf-6a57221f0f32"
+									name="Validate_QualificationStatus">
+									</testmodule>
+									<testmodule
+									id="0812dd5d-4f05-47c9-8a6c-e4cae3bd8c9f"
+									name="Validate_16Tier_Threshold">
+									</testmodule>
+								</testcase>
+							</smartfoldernode>
+							<smartfoldernode
 							id="037aeee4-7133-450a-b13e-79f6464da1e0"
 							name="Check_Platform_Features">
 								<testcase
@@ -9977,7 +10417,7 @@ rxversion="8.3">
 		<DataSource
 		id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 		includefile="Unchecked"
-		lastknownrowcount="96"
+		lastknownrowcount="112"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -10760,6 +11200,9 @@ rxversion="8.3">
 			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
 			</testcontainer>
 			<testcontainer
+			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5">
+			</testcontainer>
+			<testcontainer
 			id="6363562e-7b69-4ed2-b0f3-22d091effd47">
 			</testcontainer>
 			<testcontainer
@@ -10835,6 +11278,9 @@ rxversion="8.3">
 			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
 			</testcontainer>
 			<testcontainer
+			id="d267156a-bd78-4461-b8df-0f50f347503e">
+			</testcontainer>
+			<testcontainer
 			id="d5153b20-b80f-46bf-b3ad-21bc08c441a5">
 			</testcontainer>
 			<testcontainer
@@ -10848,6 +11294,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58">
+			</testcontainer>
+			<testcontainer
+			id="f29ebf50-4fc1-4096-838b-4260b39f2e32">
 			</testcontainer>
 			<testcontainer
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">

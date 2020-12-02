@@ -24,86 +24,47 @@ namespace CSP.APIV2Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Get_QualificationStatus recording.
+    ///The Validate_QualificationStatus recording.
     /// </summary>
-    [TestModule("437dbe88-4d5d-4f54-8943-5f96f61f7d4e", ModuleType.Recording, 1)]
-    public partial class Get_QualificationStatus : ITestModule
+    [TestModule("e040d415-a3ad-48c9-9a10-ddbb8bae7361", ModuleType.Recording, 1)]
+    public partial class Validate_QualificationStatus : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Get_QualificationStatus instance = new Get_QualificationStatus();
+        static Validate_QualificationStatus instance = new Validate_QualificationStatus();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Get_QualificationStatus()
+        public Validate_QualificationStatus()
         {
-            TestIdentifier = "f67eb48b-6de1-42d7-b759-4e0cd238f8fb";
-            studyProtocolName = "AutomationStudy";
-            DOM = "cgst-qc-orr.azurewebsites.net";
-            AuthToken = "usr_qByTkL0nFf8qZxsHCBaUJ-iV537YS0EJPi5b2E09y6WXXx037d6PQU4luXkA";
+            ExpectedTier = "";
             QualificationStatus = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Get_QualificationStatus Instance
+        public static Validate_QualificationStatus Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _TestIdentifier;
+        string _ExpectedTier;
 
         /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
+        /// Gets or sets the value of variable ExpectedTier.
         /// </summary>
-        [TestVariable("bed5f21f-b845-4a05-b82e-1d88001c3f99")]
-        public string TestIdentifier
+        [TestVariable("97f855e4-1c39-4e66-bd0f-007cb49ab757")]
+        public string ExpectedTier
         {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
-        }
-
-        string _studyProtocolName;
-
-        /// <summary>
-        /// Gets or sets the value of variable studyProtocolName.
-        /// </summary>
-        [TestVariable("48f6b5c9-8619-4b7a-8c6f-4795b37abf22")]
-        public string studyProtocolName
-        {
-            get { return _studyProtocolName; }
-            set { _studyProtocolName = value; }
-        }
-
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("054a12c7-6c4c-46b6-8cf6-768efc661585")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
-        string _AuthToken;
-
-        /// <summary>
-        /// Gets or sets the value of variable AuthToken.
-        /// </summary>
-        [TestVariable("3b379e48-6d93-40cd-bb72-c50e745809d8")]
-        public string AuthToken
-        {
-            get { return _AuthToken; }
-            set { _AuthToken = value; }
+            get { return _ExpectedTier; }
+            set { _ExpectedTier = value; }
         }
 
         string _QualificationStatus;
@@ -111,7 +72,7 @@ namespace CSP.APIV2Modules
         /// <summary>
         /// Gets or sets the value of variable QualificationStatus.
         /// </summary>
-        [TestVariable("7e44db6e-fe7e-4d40-99c9-8abb1a29f61e")]
+        [TestVariable("2178b2da-762d-4e03-9fbf-b76967f00f5f")]
         public string QualificationStatus
         {
             get { return _QualificationStatus; }
@@ -144,10 +105,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
-            Delay.Duration(5000, false);
-            
-            GetQualificationStatus(TestIdentifier, studyProtocolName, DOM, AuthToken);
+            Compare_QualStatus(QualificationStatus, ExpectedTier);
             Delay.Milliseconds(0);
             
         }
