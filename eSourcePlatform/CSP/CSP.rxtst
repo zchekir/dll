@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -3309,44 +3309,6 @@ rxversion="8.3">
 			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9"
 			name="V2_AssessmentAttemptOutcomes">
 			</testcase>
-			<testmodule
-			id="7d8a0513-cf6b-44dc-a080-d79986944400"
-			name="CSPstoredProcedure"
-			ref="b9c5517e-46f0-42b7-a7db-8682ce58ff2e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="51624bcf-71f4-4157-9303-a2b4e299c533"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="fb3280bc-74be-42d8-a2f3-debf1bbbe211"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="7c8bb74a-6066-4194-b92f-0d9076a3fa95"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="d30e7548-5c24-4de7-add5-87cc05e33308"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="580c6540-7cee-406d-98ef-1496f1de2021"
-					variablename="Authentication">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="7dc737a0-25fd-41b8-841e-8f0ca3a40492"
 			name="Create_Study">
@@ -4881,44 +4843,6 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="0be8019d-b31e-4388-bc84-7741c4ee2f9e"
 					variablename="assessmentID">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="c9061f9f-6b7d-446e-ba20-89f399a83ab3"
-			name="CSPstoredProcedure"
-			ref="b9c5517e-46f0-42b7-a7db-8682ce58ff2e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="51624bcf-71f4-4157-9303-a2b4e299c533"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="fb3280bc-74be-42d8-a2f3-debf1bbbe211"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="7c8bb74a-6066-4194-b92f-0d9076a3fa95"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="d30e7548-5c24-4de7-add5-87cc05e33308"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="580c6540-7cee-406d-98ef-1496f1de2021"
-					variablename="Authentication">
 					</var>
 				</databinding>
 			</testmodule>
@@ -6869,10 +6793,6 @@ rxversion="8.3">
 								id="20ca029a-e7c4-41e5-817f-84b8033cbe89"
 								name="Validate_Outcomes">
 									<testmodule
-									id="7d8a0513-cf6b-44dc-a080-d79986944400"
-									name="CSPstoredProcedure">
-									</testmodule>
-									<testmodule
 									id="3a19a5f1-8893-477c-b3d6-537e17546387"
 									name="Check_StandardScores">
 									</testmodule>
@@ -7235,10 +7155,6 @@ rxversion="8.3">
 									<testcase
 									id="d9fa93e8-b6f4-4914-afc5-63a23bef32e2"
 									name="Validate_Outcomes1">
-										<testmodule
-										id="c9061f9f-6b7d-446e-ba20-89f399a83ab3"
-										name="CSPstoredProcedure">
-										</testmodule>
 										<testmodule
 										id="6fce8c2c-ec0c-4b8d-9537-cad5ba9d19c8"
 										name="Check_StandardScores">
@@ -8366,9 +8282,6 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="aebe25dc-b68a-4b09-a337-ec444d5a2816">
-			</testcontainer>
-			<testcontainer
 			id="614b5fa4-3445-4a44-8e89-b0f86d8a9e2e">
 			</testcontainer>
 			<testcontainer
@@ -8381,16 +8294,19 @@ rxversion="8.3">
 			id="a7b09e3f-d534-4b0b-b38a-0c790f756eaa">
 			</testcontainer>
 			<testcontainer
+			id="aebe25dc-b68a-4b09-a337-ec444d5a2816">
+			</testcontainer>
+			<testcontainer
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936">
 			</testcontainer>
 			<testcontainer
 			id="b73752fe-40fa-44f6-b806-b422d950e3cd">
 			</testcontainer>
 			<testcontainer
-			id="d345d6ba-292a-42b7-9c14-e9d350a6c538">
+			id="caa16dcb-29ad-4f2f-ba50-f65f0670c1c4">
 			</testcontainer>
 			<testcontainer
-			id="caa16dcb-29ad-4f2f-ba50-f65f0670c1c4">
+			id="d345d6ba-292a-42b7-9c14-e9d350a6c538">
 			</testcontainer>
 			<testcontainer
 			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58">
