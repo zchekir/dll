@@ -1257,6 +1257,10 @@ rxversion="8.3">
 			id="0f96b092-b659-4214-a52c-2be409b75420"
 			name="setup123211111121111">
 			</setup>
+			<testcase
+			id="0fde5be3-a845-4c0b-8bbd-32e8a0856181"
+			name="TOcl_CompletionPassPerformanceEqual">
+			</testcase>
 			<setup
 			id="106059bd-5a57-4e1b-8e35-26027f5fc542"
 			name="setup12321111112111211">
@@ -2665,6 +2669,10 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			id="23470cd6-be1b-48ba-82c7-c0f756b5e971"
+			name="Ped_TOcl_CompletionPassPerformancePass">
+			</testcase>
+			<testcase
 			datarangeactive="True"
 			datasource="CSPConnector"
 			id="238aec2e-bd61-4769-8093-53486280de98"
@@ -3396,6 +3404,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="2fb4bbea-ce4b-4913-804a-0b4c5623a1bd"
+			name="Ped_TOcl_CompletionPassPerformanceFail">
+			</testcase>
 			<modulegroup
 			id="2fc11f61-4679-4c0e-b010-0aeca4a707c6"
 			name="Generate_Workflow_Complete_Assessment"
@@ -6394,6 +6406,10 @@ rxversion="8.3">
 			id="54941ec6-cb64-4e73-94dc-a7107c61bfea"
 			name="teardown123211111121112411121211111111111">
 			</teardown>
+			<testcase
+			id="549e2290-f582-4f19-ab70-cd5b2a145c38"
+			name="TOcl_CompletionPassPerformanceFail">
+			</testcase>
 			<testmodule
 			id="54dd22de-b93a-4ac3-b3c3-e1a166918938"
 			name="Clear_ExternalID"
@@ -11656,6 +11672,10 @@ rxversion="8.3">
 			id="8a7230ad-b455-4b6d-b94b-eaa88f19ce3f"
 			name="teardown1232111111211124111213211">
 			</teardown>
+			<testcase
+			id="8b1e8f28-df73-4b5f-b5c0-21e9bb6dbfbb"
+			name="TOcl_CompletionPassPerformancePass">
+			</testcase>
 			<testmodule
 			id="8bc8bb65-edaf-448f-9525-176de930ce70"
 			name="Validate_Outcomes"
@@ -13121,6 +13141,10 @@ rxversion="8.3">
 			id="986a3b2a-f484-4ea5-a1be-16b6f4fd68b9"
 			name="setup">
 			</setup>
+			<testcase
+			id="988fb1da-092b-4e02-b6ca-ec6251fc2786"
+			name="TOcl_CompletionFail">
+			</testcase>
 			<setup
 			id="98c12803-ca26-4ccd-a1fc-4f0137d7dba4"
 			name="setup12211">
@@ -16479,6 +16503,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="c2ab9ee0-594c-4817-a759-9ad8b5373bd3"
+			name="Ped_TOcl_CompletionFail">
+			</testcase>
 			<testmodule
 			id="c2d7a2fd-ba54-402a-8103-cf081d436e22"
 			name="Close_Browser"
@@ -17360,6 +17388,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<testcase
+			id="c8199748-34dd-481e-878a-3b25670161a5"
+			name="Ped_TOcl_CompletionPassPerformanceEqual">
+			</testcase>
 			<testmodule
 			id="c883b58c-e965-45c7-8780-cc48c5df8ca6"
 			name="Validate_Outcomes"
@@ -19564,6 +19596,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="e0a373b9-44ac-4525-b5e9-0823cb616bd0"
+			name="6.3_TimerOneCardLearning">
+			</smartfoldernode>
 			<testcase
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -25041,6 +25077,42 @@ rxversion="8.3">
 										name="Close_Browser">
 										</testmodule>
 									</teardown>
+								</testcase>
+							</smartfoldernode>
+							<smartfoldernode
+							id="e0a373b9-44ac-4525-b5e9-0823cb616bd0"
+							name="6.3_TimerOneCardLearning">
+								<testcase
+								id="8b1e8f28-df73-4b5f-b5c0-21e9bb6dbfbb"
+								name="TOcl_CompletionPassPerformancePass">
+								</testcase>
+								<testcase
+								id="549e2290-f582-4f19-ab70-cd5b2a145c38"
+								name="TOcl_CompletionPassPerformanceFail">
+								</testcase>
+								<testcase
+								id="0fde5be3-a845-4c0b-8bbd-32e8a0856181"
+								name="TOcl_CompletionPassPerformanceEqual">
+								</testcase>
+								<testcase
+								id="988fb1da-092b-4e02-b6ca-ec6251fc2786"
+								name="TOcl_CompletionFail">
+								</testcase>
+								<testcase
+								id="23470cd6-be1b-48ba-82c7-c0f756b5e971"
+								name="Ped_TOcl_CompletionPassPerformancePass">
+								</testcase>
+								<testcase
+								id="2fb4bbea-ce4b-4913-804a-0b4c5623a1bd"
+								name="Ped_TOcl_CompletionPassPerformanceFail">
+								</testcase>
+								<testcase
+								id="c8199748-34dd-481e-878a-3b25670161a5"
+								name="Ped_TOcl_CompletionPassPerformanceEqual">
+								</testcase>
+								<testcase
+								id="c2ab9ee0-594c-4817-a759-9ad8b5373bd3"
+								name="Ped_TOcl_CompletionFail">
 								</testcase>
 							</smartfoldernode>
 							<smartfoldernode
