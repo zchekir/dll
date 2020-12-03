@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -83,8 +83,11 @@ rxversion="8.3">
 			name="Import_CSV">
 			</testcase>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="07f605b8-ff91-465a-b3f3-70f8f4d75027"
+			maxrange="0"
+			minrange="0"
 			name="Complete_Assessment">
 			</smartfoldernode>
 			<testcase
@@ -167,6 +170,10 @@ rxversion="8.3">
 			<testcase
 			id="105dfe96-0611-41ed-b65f-b03129dbcad1"
 			name="Add_Parameters">
+			</testcase>
+			<testcase
+			id="117829a9-24b5-471c-acf7-6137f5e4bf8f"
+			name="Add_Integration_User">
 			</testcase>
 			<testmodule
 			id="12e6cee0-728a-4cd6-86f3-c540a162b22e"
@@ -314,8 +321,11 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="164c2ee2-300d-4a6f-9939-4337e0ade662"
+			maxrange="0"
+			minrange="0"
 			name="Validate_Extracts">
 			</smartfoldernode>
 			<testmodule
@@ -349,6 +359,20 @@ rxversion="8.3">
 					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1815e776-3acc-4a33-9c79-396cd8c3bf0b"
+			name="Click_MyStudies"
+			ref="c36154b1-5132-4fd1-83dc-8e8a03b3ea31"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -548,6 +572,20 @@ rxversion="8.3">
 					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
 					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
 					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2768fde9-99e8-43e0-9b51-ee91c65fd15a"
+			name="Search_TestIdentifier"
+			ref="b19d1f97-834f-4ba1-9daa-4e46dc41d3bd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
+					variableid="974efd45-27c1-44cc-a620-0469be1de8f7"
+					variablename="TestIdentifier">
 					</var>
 				</databinding>
 			</testmodule>
@@ -901,6 +939,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="3bd45424-87c8-40ac-ba32-ef84cc42ef89"
+			name="Click_Add_User"
+			ref="24fb6bd1-511f-4621-908d-33c70865effd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="3cdf392f-5b46-415e-92e3-39e650a8b0a2"
 			name="Validate_Site_Table">
@@ -1175,9 +1227,17 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="4a78c82b-dd4d-4a29-ad53-883bb62a33af"
-			name="Set_Date_Filter"
+			name="Set_TestIdentifier_Filter"
 			ref="478d647e-d7d3-47c9-bc73-483c7f81df1f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
+					variableid="8aa89dac-1cd3-46e4-8810-9ee134597bdc"
+					variablename="TestIdentifier">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4a8d8b59-76ba-4ea9-8e76-335ba62ca80c"
@@ -2137,6 +2197,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="867f56fd-c3a3-4a9a-a8f9-9ba79eb7da1b"
+			name="Click_Users_Tab"
+			ref="5717b68e-f292-4d84-a099-c667a0b8dd0e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="87bd6ac1-ca17-4766-96e0-860289684455"
 			name="Validate_EventDef_Type"
 			ref="38ac56a4-549f-425e-8362-e03119999cf5"
@@ -2289,8 +2363,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="8d14914e-4c02-4c1b-bb69-5f9b1d4462b3"
+			maxrange="0"
+			minrange="0"
 			name="Configure_Study_RCC">
 			</smartfoldernode>
 			<teardown
@@ -2518,8 +2595,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="9eee6ba9-85fc-46dd-a52d-60c913337400"
+			maxrange="0"
+			minrange="0"
 			name="Create_Study">
 			</smartfoldernode>
 			<testmodule
@@ -3493,7 +3573,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Database"
+					dataname="RptDatabase"
 					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
 					variableid="9027fa19-f437-4155-82c1-c0f8ada09a87"
 					variablename="Database">
@@ -3623,8 +3703,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="caf801f0-8dd3-4c06-8d2f-f8a865dcef01"
+			maxrange="0"
+			minrange="0"
 			name="Validate_Database_Tables">
 			</smartfoldernode>
 			<smartfoldernode
@@ -3676,6 +3759,20 @@ rxversion="8.3">
 					datasourceid="d7e64842-5abf-4c04-b18b-4ded846678e5"
 					variableid="b03a9d83-6871-47ac-8161-ba9bba2e3f0d"
 					variablename="RandNum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="cc6d81d0-195c-4c5d-80aa-f0fc9aa63344"
+			name="Validate_Integration_User"
+			ref="cae86e8e-e479-4299-8864-71608011c45f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3770,7 +3867,7 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Database"
+					dataname="RptDatabase"
 					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
 					variableid="1f9de072-6f06-4344-92f8-4313e2046b66"
 					variablename="Database">
@@ -3923,6 +4020,20 @@ rxversion="8.3">
 					datasourceid="b916a7cd-0937-4170-9e22-f4293b4efb3e"
 					variableid="8fc570d6-3f7a-415d-b8e3-72a0b3b97474"
 					variablename="DataFile">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="db634e28-abc6-4854-8968-fbf13abc2e43"
+			name="Add_IntegrationUser"
+			ref="988336d3-722d-46bf-a658-6355e965e1a4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4099,6 +4210,40 @@ rxversion="8.3">
 			id="ea56bafb-27cb-4f60-86c7-66a866686722"
 			name="Validate_MakePrimary_Flag(Dont_Run)">
 			</smartfoldernode>
+			<testmodule
+			id="eb48fe48-d0a7-4bb3-a920-d5928c43d22b"
+			name="Click_Study"
+			ref="412c0a6e-bfb9-423e-b6fe-a5c6b419ec68"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="b916a7cd-0937-4170-9e22-f4293b4efb3e"
+					variableid="9fb53a7d-2a6f-47b3-8fa5-4d13a07e1b86"
+					variablename="StudyName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ebc664b7-dba4-412e-8c51-2819a1bd2c5a"
+			name="Add_IntegrationUser_API_Key"
+			ref="99e3a789-7644-424b-a824-b5f2b74280fa"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="08a80ef6-78fa-4acc-8d35-6e571773da36"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="eebed04f-fef8-4b43-99e5-21471922b73a"
 			name="Validate_Ordinal_Records">
@@ -4360,6 +4505,38 @@ rxversion="8.3">
 									id="81de6747-e833-4aa6-8ce5-14e6b9a05f42"
 									name="Add_Study">
 									</modulegroup>
+								</testcase>
+								<testcase
+								id="117829a9-24b5-471c-acf7-6137f5e4bf8f"
+								name="Add_Integration_User">
+									<testmodule
+									id="1815e776-3acc-4a33-9c79-396cd8c3bf0b"
+									name="Click_MyStudies">
+									</testmodule>
+									<testmodule
+									id="eb48fe48-d0a7-4bb3-a920-d5928c43d22b"
+									name="Click_Study">
+									</testmodule>
+									<testmodule
+									id="867f56fd-c3a3-4a9a-a8f9-9ba79eb7da1b"
+									name="Click_Users_Tab">
+									</testmodule>
+									<testmodule
+									id="3bd45424-87c8-40ac-ba32-ef84cc42ef89"
+									name="Click_Add_User">
+									</testmodule>
+									<testmodule
+									id="db634e28-abc6-4854-8968-fbf13abc2e43"
+									name="Add_IntegrationUser">
+									</testmodule>
+									<testmodule
+									id="ebc664b7-dba4-412e-8c51-2819a1bd2c5a"
+									name="Add_IntegrationUser_API_Key">
+									</testmodule>
+									<testmodule
+									id="cc6d81d0-195c-4c5d-80aa-f0fc9aa63344"
+									name="Validate_Integration_User">
+									</testmodule>
 								</testcase>
 								<testcase
 								id="71740368-98a8-417a-bc68-07020ccc2162"
@@ -4901,6 +5078,10 @@ rxversion="8.3">
 									name="Clear_Test_Slicer">
 									</testmodule>
 									<testmodule
+									id="2768fde9-99e8-43e0-9b51-ee91c65fd15a"
+									name="Search_TestIdentifier">
+									</testmodule>
+									<testmodule
 									id="44bf4499-e3cb-4fb6-bb01-8afdd428fe1b"
 									name="Validate_Academic_Slicers">
 									</testmodule>
@@ -4930,7 +5111,7 @@ rxversion="8.3">
 									</modulegroup>
 									<testmodule
 									id="4a78c82b-dd4d-4a29-ad53-883bb62a33af"
-									name="Set_Date_Filter">
+									name="Set_TestIdentifier_Filter">
 									</testmodule>
 									<testmodule
 									id="aa692040-9dcc-4247-afef-e88e9b77c8c1"
@@ -5400,7 +5581,7 @@ rxversion="8.3">
 		<DataSource
 		id="c75408c7-6f28-40e4-99db-5081560f7749"
 		includefile="Unchecked"
-		lastknownrowcount="53"
+		lastknownrowcount="112"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5668,6 +5849,9 @@ rxversion="8.3">
 				</column>
 				<column>
 					Rep_DBVersion
+				</column>
+				<column>
+					Report_Version
 				</column>
 				<column>
 					V8Handler_Jobs
@@ -6004,6 +6188,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="105dfe96-0611-41ed-b65f-b03129dbcad1">
+			</testcontainer>
+			<testcontainer
+			id="117829a9-24b5-471c-acf7-6137f5e4bf8f">
 			</testcontainer>
 			<testcontainer
 			id="164c2ee2-300d-4a6f-9939-4337e0ade662">

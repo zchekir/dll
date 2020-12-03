@@ -89,13 +89,10 @@ namespace RedCapCloud.ValidationModules
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(0));
-            //Delay.Duration(15000, false);
-            
             Validate_IntegrationUser(repo.REDCapCloud.UsersPage.IntegrationUserInfo);
             Delay.Milliseconds(0);
             
-            Report.Screenshot(ReportLevel.Info, "User", "Integration User Exists", repo.REDCapCloud.Self, false, new RecordItemIndex(2));
+            Report.Screenshot(ReportLevel.Info, "User", "Integration User Exists", repo.REDCapCloud.Self, false, new RecordItemIndex(1));
             
         }
 

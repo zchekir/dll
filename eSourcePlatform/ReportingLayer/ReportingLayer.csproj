@@ -152,6 +152,18 @@
       <id>c2063d6d-6de4-4cde-8119-7f18963c11d5</id>
       <BoundTo>88869378-1125-464f-b6ad-5b774e064e0e</BoundTo>
     </Compile>
+    <Compile Include="AcademicExtract\Search_TestIdentifier.cs">
+      <BoundTo>a7d413d6-ea8a-4d19-9954-b9993c6633b1</BoundTo>
+      <DependentUpon>Search_TestIdentifier.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4fe7d42d-a7eb-45da-a416-14d14834bdf3</id>
+    </Compile>
+    <Compile Include="AcademicExtract\Search_TestIdentifier.UserCode.cs">
+      <BoundTo>a7d413d6-ea8a-4d19-9954-b9993c6633b1</BoundTo>
+      <DependentUpon>Search_TestIdentifier.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7dd6be11-387e-4ac2-bf2b-bdf449134847</id>
+    </Compile>
     <Compile Include="AcademicExtract\Validate_ExcludeAssessment_Flag.cs">
       <DependentUpon>Validate_ExcludeAssessment_Flag.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -536,15 +548,15 @@
       <UserCode>true</UserCode>
       <id>acb5cf06-887d-4f82-9eea-5a58c577047c</id>
     </Compile>
-    <Compile Include="StandardExtract\Set_Date_Filter.cs">
+    <Compile Include="StandardExtract\Set_TestIdentifier_Filter.cs">
       <BoundTo>f446f2ff-be4b-469a-9bbd-7183f3265333</BoundTo>
-      <DependentUpon>Set_Date_Filter.rxrec</DependentUpon>
+      <DependentUpon>Set_TestIdentifier_Filter.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>88df203b-5ef8-4793-a215-31a4e1fbd612</id>
     </Compile>
-    <Compile Include="StandardExtract\Set_Date_Filter.UserCode.cs">
+    <Compile Include="StandardExtract\Set_TestIdentifier_Filter.UserCode.cs">
       <BoundTo>f446f2ff-be4b-469a-9bbd-7183f3265333</BoundTo>
-      <DependentUpon>Set_Date_Filter.rxrec</DependentUpon>
+      <DependentUpon>Set_TestIdentifier_Filter.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ddcc585e-68ef-43a2-820e-43322d795362</id>
     </Compile>
@@ -571,6 +583,11 @@
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>88869378-1125-464f-b6ad-5b774e064e0e</id>
       <recordtableid>c54f947a-0235-4689-b126-7e7629c48e9b</recordtableid>
+    </None>
+    <None Include="AcademicExtract\Search_TestIdentifier.rxrec">
+      <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
+      <id>a7d413d6-ea8a-4d19-9954-b9993c6633b1</id>
+      <recordtableid>b19d1f97-834f-4ba1-9daa-4e46dc41d3bd</recordtableid>
     </None>
     <None Include="AcademicExtract\Validate_ExcludeAssessment_Flag.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
@@ -741,7 +758,7 @@
       <id>90cda9ac-f3fc-43b1-9992-55bace4384bd</id>
       <recordtableid>44e68252-3be1-453c-a81c-83b4c284da55</recordtableid>
     </None>
-    <None Include="StandardExtract\Set_Date_Filter.rxrec">
+    <None Include="StandardExtract\Set_TestIdentifier_Filter.rxrec">
       <BoundTo>74e80a08-cf76-4909-887f-42d132066da8</BoundTo>
       <id>f446f2ff-be4b-469a-9bbd-7183f3265333</id>
       <recordtableid>478d647e-d7d3-47c9-bc73-483c7f81df1f</recordtableid>

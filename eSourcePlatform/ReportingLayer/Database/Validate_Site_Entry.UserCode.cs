@@ -45,7 +45,7 @@ namespace ReportingLayer.Database
         	dt.Reset();
         	
         	//Setup SQL Query
-        	string query = @"SELECT * FROM Study.Site
+        	string query = @"SELECT * FROM extracts.Site
         					WHERE ProtocolName = @StudyName";
         	
         	//Setup ConnectionString
