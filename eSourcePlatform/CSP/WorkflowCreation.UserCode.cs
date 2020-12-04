@@ -31,6 +31,10 @@ namespace CSP
 	{
 		public string JsonData { get; set; }
 	
+		public string workflowid { get; set; }
+		
+		public string id { get; set; }
+		
 	/// Object for creating a new workflow request
 		public WorkflowJSONRequest()
 		{
@@ -84,7 +88,27 @@ namespace CSP
 			{
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<WorkflowJSONRequest>(response);
+				
+				
+				
+					// slpit
+			char[] mych = { '&', ',','?','=' };
+            string blockid = response;
+            string[] block_id = blockid.Split(mych);
+             workflowbatteryBlockID  = block_id[7];
+            
+				
+				
+				
+				
+				
+				
+				
+				workflow_id =responseObject.id; 
 				Report.Log(ReportLevel.Info, "The work is created as expected " + response );
+				Report.Log(ReportLevel.Info, "workflowID " + workflow_id);
+				
+				Report.Log(ReportLevel.Info, "workflowbatteryBlockID" + workflowbatteryBlockID);
 			 }
    }
     

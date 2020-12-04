@@ -42,6 +42,7 @@ namespace CSP.InternalAPIModules
         public Get_Secret()
         {
             CSPDOM = "";
+            Secret = "";
         }
 
         /// <summary>
@@ -53,6 +54,18 @@ namespace CSP.InternalAPIModules
         }
 
 #region Variables
+
+        string _Secret;
+
+        /// <summary>
+        /// Gets or sets the value of variable Secret.
+        /// </summary>
+        [TestVariable("9219a1f9-411b-4d5c-bac7-53dfaa1aedb4")]
+        public string Secret
+        {
+            get { return _Secret; }
+            set { _Secret = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -91,6 +104,9 @@ namespace CSP.InternalAPIModules
             Init();
 
             engine.Helpers.WebService.GenerateSecret(CSPDOM);
+            Delay.Milliseconds(0);
+            
+            captureSecret();
             Delay.Milliseconds(0);
             
         }

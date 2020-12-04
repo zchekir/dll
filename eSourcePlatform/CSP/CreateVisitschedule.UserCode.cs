@@ -29,7 +29,7 @@ namespace CSP
 {
    public class visitJSONRequest
 	{
-		public string JsonData { get; set; }
+		public string Code { get; set; }
 		public string id { get; set; }
 	
 	/// Object for creating a new workflow request
@@ -69,14 +69,14 @@ namespace CSP
 			// generating an rundom number to be used as externalid
 			Random r = new Random();
 			int number = r.Next(1,999999);
-			string rNumber = number.ToString();
+			 rNumber = number.ToString();
 			
 			// sending the data in the body and replacing the studyid, studyname and version
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
 		    
-               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber);
+               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber).Replace(@"<WFID>", workflow_id);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -99,7 +99,10 @@ namespace CSP
 				
 				responseObject = new JavaScriptSerializer().Deserialize<visitJSONRequest>(response);
 				string visitscheduleid= responseObject.id;
+				string visitsession= responseObject.Code;
+				Report.Log(ReportLevel.Info, "visitschedule is created as expected " + response);
 				Report.Log(ReportLevel.Info, "visitschedule is created as expected " + visitscheduleid);
+				Report.Log(ReportLevel.Info, "visitschedule is created as expected " + visitsession);
 			 }
 
 
