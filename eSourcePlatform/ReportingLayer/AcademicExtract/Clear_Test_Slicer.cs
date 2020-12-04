@@ -41,7 +41,6 @@ namespace ReportingLayer.AcademicExtract
         /// </summary>
         public Clear_Test_Slicer()
         {
-            TestIdentifier = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace ReportingLayer.AcademicExtract
         }
 
 #region Variables
-
-        string _TestIdentifier;
-
-        /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
-        /// </summary>
-        [TestVariable("48e1328e-f4b3-4c5d-80d4-e8f96db9e13a")]
-        public string TestIdentifier
-        {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
-        }
 
 #endregion
 
@@ -92,35 +79,12 @@ namespace ReportingLayer.AcademicExtract
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.Slicers.SerchTestIdentifier' at Center.", repo.PowerBI.Slicers.SerchTestIdentifierInfo, new RecordItemIndex(0));
-            repo.PowerBI.Slicers.SerchTestIdentifier.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'PowerBI.Slicers.SerchTestIdentifier'.", repo.PowerBI.Slicers.SerchTestIdentifierInfo, new RecordItemIndex(1));
-            repo.PowerBI.Slicers.SerchTestIdentifier.PressKeys(TestIdentifier);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'PowerBI.ClearTestSelections' at Center.", repo.PowerBI.ClearTestSelectionsInfo, new RecordItemIndex(2));
-            repo.PowerBI.ClearTestSelections.MoveTo();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.ClearTestSelections' at Center.", repo.PowerBI.ClearTestSelectionsInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.ClearTestSelections' at Center.", repo.PowerBI.ClearTestSelectionsInfo, new RecordItemIndex(0));
             repo.PowerBI.ClearTestSelections.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
             Delay.Duration(500, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'PowerBI.Slicers.SelectCheckBox' at Center.", repo.PowerBI.Slicers.SelectCheckBoxInfo, new RecordItemIndex(5));
-            repo.PowerBI.Slicers.SelectCheckBox.MoveTo();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.Slicers.SelectCheckBox' at Center.", repo.PowerBI.Slicers.SelectCheckBoxInfo, new RecordItemIndex(6));
-            repo.PowerBI.Slicers.SelectCheckBox.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(7));
-            Delay.Duration(900, false);
             
         }
 

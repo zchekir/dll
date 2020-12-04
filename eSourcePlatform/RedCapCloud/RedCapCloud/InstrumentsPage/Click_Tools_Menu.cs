@@ -89,7 +89,13 @@ namespace RedCapCloud.InstrumentsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.InstrumentsPage.ToolsMenu' at Center.", repo.REDCapCloud.InstrumentsPage.ToolsMenuInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'REDCapCloud.InstrumentsPage.ToolsMenu'", repo.REDCapCloud.InstrumentsPage.ToolsMenuInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.REDCapCloud.InstrumentsPage.ToolsMenuInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'REDCapCloud.InstrumentsPage.ToolsMenu' at Center.", repo.REDCapCloud.InstrumentsPage.ToolsMenuInfo, new RecordItemIndex(2));
             repo.REDCapCloud.InstrumentsPage.ToolsMenu.Click(100);
             Delay.Milliseconds(0);
             

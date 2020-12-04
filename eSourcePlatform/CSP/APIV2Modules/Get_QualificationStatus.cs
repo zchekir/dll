@@ -45,6 +45,7 @@ namespace CSP.APIV2Modules
             studyProtocolName = "AutomationStudy";
             DOM = "cgst-qc-orr.azurewebsites.net";
             AuthToken = "usr_qByTkL0nFf8qZxsHCBaUJ-iV537YS0EJPi5b2E09y6WXXx037d6PQU4luXkA";
+            QualificationStatus = "";
         }
 
         /// <summary>
@@ -105,6 +106,18 @@ namespace CSP.APIV2Modules
             set { _AuthToken = value; }
         }
 
+        string _QualificationStatus;
+
+        /// <summary>
+        /// Gets or sets the value of variable QualificationStatus.
+        /// </summary>
+        [TestVariable("7e44db6e-fe7e-4d40-99c9-8abb1a29f61e")]
+        public string QualificationStatus
+        {
+            get { return _QualificationStatus; }
+            set { _QualificationStatus = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -131,6 +144,9 @@ namespace CSP.APIV2Modules
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
+            
             GetQualificationStatus(TestIdentifier, studyProtocolName, DOM, AuthToken);
             Delay.Milliseconds(0);
             

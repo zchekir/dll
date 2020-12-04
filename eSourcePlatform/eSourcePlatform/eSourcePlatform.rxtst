@@ -92,6 +92,14 @@ rxversion="8.3">
 			name="OpenAzLocation"
 			ref="d82ce541-c07b-4458-8378-0fcaefdb1f51"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="AzureURL"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="9b546544-466e-46b9-bd75-1142b2bbe916"
+					variablename="URL">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="0a7ee364-d00a-40c1-bca7-d35f69870050"
@@ -1304,7 +1312,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
-			name="Set_Date_Filter"
+			name="Set_TestIdentifier_Filter"
 			ref="478d647e-d7d3-47c9-bc73-483c7f81df1f"
 			type="Recording">
 				<databinding>
@@ -1617,7 +1625,7 @@ rxversion="8.3">
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
 			maxrange="1"
 			minrange="1"
-			name="Jackson_SmokeTest">
+			name="Tiger_SmokeTest">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -2345,7 +2353,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="8db74f00-acd3-4dec-ab51-d13a7ce9baea"
 			name="Set_Date_Slicer"
 			ref="b456cb46-8166-4fa6-822b-4dc5f55b97b5"
@@ -3244,14 +3251,6 @@ rxversion="8.3">
 			name="Clear_Test_Slicer"
 			ref="c54f947a-0235-4689-b126-7e7629c48e9b"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="48e1328e-f4b3-4c5d-80d4-e8f96db9e13a"
-					variablename="TestIdentifier">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="bb80a5e2-649d-4add-9f06-91258bddb097"
@@ -4467,7 +4466,7 @@ rxversion="8.3">
 					name="eSourcePlatform_Tests">
 						<smartfoldernode
 						id="63a0768d-8632-409b-adbf-fe7850003e81"
-						name="Jackson_SmokeTest">
+						name="Tiger_SmokeTest">
 							<smartfoldernode
 							id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
 							name="Validate_CSP_API&amp;Client_Versions">
@@ -4796,7 +4795,7 @@ rxversion="8.3">
 									</modulegroup>
 									<testmodule
 									id="4fa2a35b-6424-48bc-aa92-2907acea07c4"
-									name="Set_Date_Filter">
+									name="Set_TestIdentifier_Filter">
 									</testmodule>
 									<testmodule
 									id="164e2e9b-5589-4141-bb90-77d0066a3862"
@@ -5676,9 +5675,6 @@ rxversion="8.3">
 		withheaders="True">
 			<lastknowncolumns>
 				<column>
-					Environment
-				</column>
-				<column>
 					RCCUsername
 				</column>
 				<column>
@@ -5741,8 +5737,8 @@ rxversion="8.3">
 		</DataSource>
 		<DataSource
 		id="0223bb73-bdf8-475b-9924-27f470878d7d"
-		includefile="Checked"
-		lastknownrowcount="189"
+		includefile="Unchecked"
+		lastknownrowcount="201"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5754,13 +5750,13 @@ rxversion="8.3">
 			<maskedcolumns>
 			</maskedcolumns>
 			<file>
-				BatteryBlockConnector.csv
+				..\CSP\BatteryBlockConnector.csv
 			</file>
 		</DataSource>
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Checked"
-		lastknownrowcount="91"
+		lastknownrowcount="112"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5919,154 +5915,13 @@ rxversion="8.3">
 		<DataSource
 		id="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 		includefile="Checked"
-		lastknownrowcount="3"
+		lastknownrowcount="11"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
 				<column>
-					Subject
-				</column>
-				<column>
-					Body
-				</column>
-				<column>
-					To
-				</column>
-				<column>
-					From
-				</column>
-				<column>
-					ServerHostname
-				</column>
-				<column>
-					ServerPort
-				</column>
-				<column>
-					UseSSL
-				</column>
-				<column>
-					SendEmailOnFailure
-				</column>
-				<column>
-					SendEmailOnSuccess
-				</column>
-				<column>
-					SendZippedReportOnComplete
-				</column>
-				<column>
-					SendPdfReportOnComplete
-				</column>
-				<column>
-					Browser
-				</column>
-				<column>
-					RCCDOM
-				</column>
-				<column>
-					RCCURL
-				</column>
-				<column>
-					CSPDOM
-				</column>
-				<column>
-					CSPURL
-				</column>
-				<column>
-					DCTDOM
-				</column>
-				<column>
-					DCTURL
-				</column>
-				<column>
-					Key
-				</column>
-				<column>
-					Secret
-				</column>
-				<column>
-					AzureDOM
-				</column>
-				<column>
-					AzureURL
-				</column>
-				<column>
-					DBServer
-				</column>
-				<column>
-					Database
-				</column>
-				<column>
-					RptDatabase
-				</column>
-				<column>
-					DCTDatabase
-				</column>
-				<column>
-					Authentication
-				</column>
-				<column>
-					WASurl
-				</column>
-				<column>
-					ServerVersionDeployed
-				</column>
-				<column>
-					ClientVersionDeployed
-				</column>
-				<column>
-					ExpectedDCTVersion
-				</column>
-				<column>
-					ExpectedRCCVersion
-				</column>
-				<column>
-					CSPDBVersion
-				</column>
-				<column>
-					DCT_DBVersion
-				</column>
-				<column>
-					Rep_DBVersion
-				</column>
-				<column>
-					Report_Version
-				</column>
-				<column>
-					V8Handler_Jobs
-				</column>
-				<column>
-					V8Adapter_Jobs
-				</column>
-				<column>
-					RedCapAdapter_Job&#32;
-				</column>
-				<column>
-					RedCapHandler_Jobs
-				</column>
-				<column>
-					TimeStmp
-				</column>
-				<column>
-					EvKey
-				</column>
-				<column>
-					Ahuky
-				</column>
-				<column>
-					Query
-				</column>
-				<column>
-					Absorb_WebJobs
-				</column>
-				<column>
-					Data_CleaningTool
-				</column>
-				<column>
-					DCTVersionQuery
-				</column>
-				<column>
-					RCCVersionQuery&#32;
+					&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -6240,6 +6095,18 @@ rxversion="8.3">
 			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
 			</testcontainer>
 			<testcontainer
+			id="29d7aa7d-438a-48af-9c73-c769338bb4ed">
+			</testcontainer>
+			<testcontainer
+			id="3bfd0103-45d6-4432-bde2-361c5d3bc600">
+			</testcontainer>
+			<testcontainer
+			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">
+			</testcontainer>
+			<testcontainer
+			id="56f6d406-e690-4aa6-b4a9-38e641d4b26a">
+			</testcontainer>
+			<testcontainer
 			id="60a5c7d2-1da7-48f8-bcf5-945ce6d0f089">
 			</testcontainer>
 			<testcontainer
@@ -6247,6 +6114,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="74b14ff2-2e2d-4645-9433-b3321e3c9563">
+			</testcontainer>
+			<testcontainer
+			id="7b36cbf5-ea65-4477-8761-85c48415c8f2">
 			</testcontainer>
 			<testcontainer
 			id="963c8551-514c-4fc5-b5b5-9a2a8842639e">
@@ -6282,10 +6152,16 @@ rxversion="8.3">
 			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">
 			</testcontainer>
 			<testcontainer
+			id="cac41d4d-1014-4078-a295-7867a984b889">
+			</testcontainer>
+			<testcontainer
 			id="ce275134-0e11-43d7-9327-ac7e69d5983d">
 			</testcontainer>
 			<testcontainer
 			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64">
+			</testcontainer>
+			<testcontainer
+			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874">
 			</testcontainer>
 			<testcontainer
 			id="d79c9852-484e-4cc4-83f2-c73c5387d586">

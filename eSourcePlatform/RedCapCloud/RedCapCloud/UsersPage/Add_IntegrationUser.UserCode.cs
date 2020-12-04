@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace ReportingLayer.StandardExtract
+namespace RedCapCloud.UsersPage
 {
-    public partial class Set_Date_Filter
+    public partial class Add_IntegrationUser
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

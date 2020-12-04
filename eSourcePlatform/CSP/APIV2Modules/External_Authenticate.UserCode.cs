@@ -114,7 +114,7 @@ namespace CSP.APIV2Modules
         		
         		AuthToken = responseObject.authorizationValue;
         		
-        		Report.Log(ReportLevel.Info, "LoggedIn Successfull, AuthToken is: " + AuthToken);
+        		Report.Log(ReportLevel.Info, "AuthToken is: " + AuthToken);
         	}
         }
 

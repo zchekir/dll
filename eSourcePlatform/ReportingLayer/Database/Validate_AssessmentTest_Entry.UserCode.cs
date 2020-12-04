@@ -44,7 +44,7 @@ namespace ReportingLayer.Database
         	dt.Reset();
         	
         	//Setup SQL Query
-        	string query = @"SELECT * FROM Assessment.AssessmentTest
+        	string query = @"SELECT * FROM extracts.AssessmentTest
         					WHERE TestID = @TestIdentifier";
         	
         	//Setup ConnectionString

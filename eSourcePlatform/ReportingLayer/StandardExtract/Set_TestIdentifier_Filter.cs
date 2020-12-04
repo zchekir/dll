@@ -24,22 +24,22 @@ namespace ReportingLayer.StandardExtract
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Set_Date_Filter recording.
+    ///The Set_TestIdentifier_Filter recording.
     /// </summary>
     [TestModule("478d647e-d7d3-47c9-bc73-483c7f81df1f", ModuleType.Recording, 1)]
-    public partial class Set_Date_Filter : ITestModule
+    public partial class Set_TestIdentifier_Filter : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::ReportingLayer.ReportingLayerRepository repository.
         /// </summary>
         public static global::ReportingLayer.ReportingLayerRepository repo = global::ReportingLayer.ReportingLayerRepository.Instance;
 
-        static Set_Date_Filter instance = new Set_Date_Filter();
+        static Set_TestIdentifier_Filter instance = new Set_TestIdentifier_Filter();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Set_Date_Filter()
+        public Set_TestIdentifier_Filter()
         {
             TestIdentifier = "";
         }
@@ -47,7 +47,7 @@ namespace ReportingLayer.StandardExtract
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Set_Date_Filter Instance
+        public static Set_TestIdentifier_Filter Instance
         {
             get { return instance; }
         }
@@ -104,38 +104,34 @@ namespace ReportingLayer.StandardExtract
             Keyboard.Press("{Escape} ");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.SearchTestIdentifier' at Center.", repo.PowerBI.SearchTestIdentifierInfo, new RecordItemIndex(3));
-            repo.PowerBI.SearchTestIdentifier.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.SearchFilterBox' at Center.", repo.PowerBI.SearchFilterBoxInfo, new RecordItemIndex(3));
+            repo.PowerBI.SearchFilterBox.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'TestIdentifier' with focus on 'PowerBI.SearchTestIdentifier'.", repo.PowerBI.SearchTestIdentifierInfo, new RecordItemIndex(5));
-            repo.PowerBI.SearchTestIdentifier.PressKeys("TestIdentifier");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'TestIdentifier' with focus on 'PowerBI.SearchFilterBox'.", repo.PowerBI.SearchFilterBoxInfo, new RecordItemIndex(5));
+            repo.PowerBI.SearchFilterBox.PressKeys("TestIdentifier", 10);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.ExpandTestIdentifierDropBox' at Center.", repo.PowerBI.DateOfAssessmentFilter.ExpandTestIdentifierDropBoxInfo, new RecordItemIndex(6));
-            repo.PowerBI.DateOfAssessmentFilter.ExpandTestIdentifierDropBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilter' at Center.", repo.PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilterInfo, new RecordItemIndex(6));
+            repo.PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilter.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'PowerBI.DateOfAssessmentFilter.EnterThetTestIdentifier'.", repo.PowerBI.DateOfAssessmentFilter.EnterThetTestIdentifierInfo, new RecordItemIndex(7));
-            repo.PowerBI.DateOfAssessmentFilter.EnterThetTestIdentifier.PressKeys(TestIdentifier);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter'.", repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilterInfo, new RecordItemIndex(7));
+            repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter.PressKeys(TestIdentifier);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(8));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOption' at Center.", repo.PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOptionInfo, new RecordItemIndex(9));
+            repo.PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOption.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(10));
             Delay.Duration(500, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'PowerBI.DateOfAssessmentFilter.CheckThecheckBos' at Center.", repo.PowerBI.DateOfAssessmentFilter.CheckThecheckBosInfo, new RecordItemIndex(9));
-            repo.PowerBI.DateOfAssessmentFilter.CheckThecheckBos.MoveTo();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.DateOfAssessmentFilter.CheckThecheckBos' at Center.", repo.PowerBI.DateOfAssessmentFilter.CheckThecheckBosInfo, new RecordItemIndex(10));
-            repo.PowerBI.DateOfAssessmentFilter.CheckThecheckBos.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(11));
-            Delay.Duration(900, false);
             
         }
 

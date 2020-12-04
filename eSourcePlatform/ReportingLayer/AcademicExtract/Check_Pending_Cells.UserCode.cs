@@ -33,11 +33,9 @@ namespace ReportingLayer.AcademicExtract
 		Boolean isPending;
 		DataTable dt = new DataTable();
 		
-		// Timer.Equals(2)
+		//Timer.Equals(2)
 		
 		
-		
-	
 		private void Init()
 		{
 			
@@ -49,13 +47,24 @@ namespace ReportingLayer.AcademicExtract
 			Stopwatch timer = new Stopwatch();
 			timer.Start();
 			
-			//Build SQL query and connection string
-			string query = @"SELECT * 
-							FROM [extracts].[vwAcademicExtract]
-				
-			WHERE TestIdentifier = @TestIdentifier";
+			string query;
 			
-			//do while the peeding data appears in DB
+			//Build SQL query and connection string
+			//Adding an if statement in here so we can query a different view for the Cricket.1 hotfix
+			if (database == "cgst-cricket-rpt")
+			{
+				query = @"SELECT * 
+						FROM [dbo].[vwAcademicExtract]
+						WHERE TestIdentifier = @TestIdentifier";
+			}
+			else
+			{
+				query = @"SELECT * 
+						FROM [extracts].[vwAcademicExtract]
+						WHERE TestIdentifier = @TestIdentifier";
+			}
+			
+			//do while pending data appears in DB
 			do{
 				
 				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow
@@ -73,6 +82,7 @@ namespace ReportingLayer.AcademicExtract
 					{
 						da.Fill(dt);
 					}
+					
 				} while ( dt.Rows.Count < 1);
 				
 				//Loop over the entire first row and confirm there are no <Pending> cells
@@ -100,15 +110,10 @@ namespace ReportingLayer.AcademicExtract
 				}
 				
 			} while (isPending);
-			
-			
-			
+	
 		}
-		
-		
+	
 	}
-	
-	
 	
 }
 

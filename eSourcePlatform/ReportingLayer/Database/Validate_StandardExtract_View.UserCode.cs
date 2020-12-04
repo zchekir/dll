@@ -45,7 +45,7 @@ namespace ReportingLayer.Database
             dt.Reset();
         	
         	//Setup SQL Query
-        	string query = @"SELECT * FROM dbo.vwStandardExtract
+        	string query = @"SELECT * FROM extracts.vwStandardExtract
         					WHERE TestIdentifier = @TestIdentifier";
         	
         	//Setup Connection String
@@ -72,10 +72,10 @@ namespace ReportingLayer.Database
             string[] expectedColumns = new string[] {"ProtocolID", "StudyName", "Locality Code", "PIName", "SiteID", "TestSupervisor", "SubjectID", "IQnumber", "DOB", "Age",
 														"Sex", "EventName", "DateOfAssessment", "AssessmentDuration", "TestIdentifier", "AssessmentAttempt", "AssessmentCompletionPass",
 													     "AssessmentPerformancePass", "AssessmentIntegrityPass", "ExcludeAssessment", "RCCAssessment", "Test", "TestDuration", "GMLTIndex",
- 													      "TestAttempt", "TestVersion", "TestPhase", "Round", "LanguageCode", "TestCompletionPass", "TestPerformancePass", "TestIntegrityPass",
+ 													      "TestAttempt", "TestVersion", "TestPhase", "TestSubset", "Round", "LanguageCode", "TestCompletionPass", "TestPerformancePass", "TestIntegrityPass",
  													        "PrimaryOutcome", "ReactionTime", "RawReactionTime", "RTVariability", "RawRTVariability", "Accuracy", "RawAccuracy", "TotalTrials",
- 													         "TotalResponses", "TotalCorrect", "TotalCorrectExclPant", "TotalCorrctFoils", "TotalErrors", "LegalErrors", "RuleBreakErrors", "PerseverativeErrors",
-											                  "ReturnToHead", "TotalAnticipatory", "TotalPost", "TotalMaxout", "MovesPerSecond", "StandardScoreZ", "StandardScoreT", "ChangeScore", 
+ 													         "TotalResponses", "TotalFalsePositive", "TotalCorrect", "TotalCorrectExclPant", "TotalCorrectFoils", "TotalErrors", "LegalErrors", "RuleBreakErrors",
+											                  "PerseverativeErrors","ReturnToHead", "TotalAnticipatory", "TotalPost", "TotalMaxout", "MovesPerSecond", "StandardScoreZ", "StandardScoreT", "ChangeScore", 
 											                   "PsyAttChange", "LearnWMStdScr", "LearnWMChange"};
         	int matchedOutcomes = 0;
         	bool resultsFlag = true;

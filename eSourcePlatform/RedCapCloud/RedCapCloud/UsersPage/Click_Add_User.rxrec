@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="24fb6bd1-511f-4621-908d-33c70865effd"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_Add_User
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_Add_User"
+	namespace="RedCapCloud.UsersPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="08913ab8-3bdf-4191-a813-0beb18f6bc87"
+		waitaction="Exists"
+		waittimeout="10000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6969838b-2a6c-4d16-a03e-8893bf3be225"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//button[@innertext='Add User']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="98c05295-19fb-424c-93bd-ffa59fefde8b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6969838b-2a6c-4d16-a03e-8893bf3be225"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$RCCDOM]//div[#'gwtWrapper']//button[@innertext='Add User']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="..\RedCapCloudRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
+		</codegen>
+		<rootfolder
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_Add_User.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
