@@ -14798,44 +14798,6 @@ rxversion="8.3">
 			id="ad3d0166-922a-4b3f-ac2b-c1eb36e52dbb"
 			name="setup1232111111211121">
 			</setup>
-			<testmodule
-			id="ad67de23-a0ee-46e4-bde5-9e5bdd109c3d"
-			name="CSPStoreProcedure"
-			ref="a039a4b9-72d2-4d8e-bed0-af0b5954cf3c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="dbUsername"
-					datasourceid="2bad88a0-51ba-4714-8183-e968bb4d6d44"
-					variableid="cc9a33a1-fe3c-4d1d-a778-cc887d382d48"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="2bad88a0-51ba-4714-8183-e968bb4d6d44"
-					variableid="01465463-f981-4b37-8fc1-db9c72b8f28e"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
-					variableid="d9d95072-5f63-4a41-bade-9f38bf466159"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
-					variableid="e680f062-3702-459c-ab52-676651d8de6b"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="00839595-c061-4ba6-b549-fde77bb217c2"
-					variableid="e5c2aa04-7fe2-461b-b36a-fd93970b5625"
-					variablename="Authentication">
-					</var>
-				</databinding>
-			</testmodule>
 			<modulegroup
 			id="ae444f3f-5a3a-428f-9a4b-930029aa6cea"
 			name="Generate_Workflow_Complete_Assessment"
@@ -23124,10 +23086,6 @@ rxversion="8.3">
 								id="a3761eab-c7ed-430a-b78f-7b03cd2d6655"
 								name="Validate_Outcomes">
 								</testmodule>
-								<testmodule
-								id="ad67de23-a0ee-46e4-bde5-9e5bdd109c3d"
-								name="CSPStoreProcedure">
-								</testmodule>
 								<teardown
 								id="6aca0fec-6cb7-4212-8d0e-6d801d566ce4"
 								name="teardown">
@@ -25631,14 +25589,11 @@ rxversion="8.3">
 		<DataSource
 		id="2bad88a0-51ba-4714-8183-e968bb4d6d44"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -25808,7 +25763,7 @@ rxversion="8.3">
 		<DataSource
 		id="00839595-c061-4ba6-b549-fde77bb217c2"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="TennantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
