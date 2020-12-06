@@ -676,44 +676,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="3f63aa4d-0324-453e-8dcd-a5a52618229d"
-			name="CSPStoreProcedure"
-			ref="03ec75ce-a241-4a6a-92d9-830456f3aa4b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="CSPUsername"
-					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
-					variableid="33bb3d6e-664e-4393-854f-d9998f413cbd"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="CSPPassword"
-					datasourceid="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
-					variableid="c0906774-21af-450a-97fb-089f67ea7140"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="DBServer"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="00b67620-a5bd-49bf-8a52-e57e1fa981d3"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="fd2c4f6c-1a1e-47a8-800f-fd0cc50f9468"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
-					variableid="52ab822b-84b9-4d5e-8a8d-61d6008657a0"
-					variablename="Authentication">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="43041eb8-d2e9-48ca-8a72-36101506a197"
 			name="Enter_WorkflowDescription"
 			ref="db7f396e-30c4-4e67-800d-3cb9be3ae7b8"
@@ -1431,10 +1393,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="8d828b7c-cd91-48ff-8b33-f3fb1945fbb1"
-			name="CSPStoreProcedure">
-			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="RCCConnector"
@@ -3313,14 +3271,6 @@ rxversion="8.3">
 									</testmodule>
 								</testcase>
 								<testcase
-								id="8d828b7c-cd91-48ff-8b33-f3fb1945fbb1"
-								name="CSPStoreProcedure">
-									<testmodule
-									id="3f63aa4d-0324-453e-8dcd-a5a52618229d"
-									name="CSPStoreProcedure">
-									</testmodule>
-								</testcase>
-								<testcase
 								id="092ade10-4592-483d-84f7-b21358ea6e1b"
 								name="Check_Outcomes">
 									<testmodule
@@ -3391,14 +3341,11 @@ rxversion="8.3">
 		<DataSource
 		id="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -3466,7 +3413,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Unchecked"
-		lastknownrowcount="91"
+		lastknownrowcount="96"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3568,7 +3515,7 @@ rxversion="8.3">
 		<DataSource
 		id="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="1"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3625,7 +3572,7 @@ rxversion="8.3">
 		<DataSource
 		id="92948073-7043-4f37-800e-e7d1f3db3384"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="4"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -3911,9 +3858,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="8910e582-179c-46b6-adfe-45a9f8257291">
-			</testcontainer>
-			<testcontainer
-			id="8d828b7c-cd91-48ff-8b33-f3fb1945fbb1">
 			</testcontainer>
 			<testcontainer
 			id="8dc2f930-bf84-45d0-a451-11710e3fa1a9">
