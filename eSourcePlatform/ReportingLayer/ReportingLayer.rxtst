@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -2003,8 +2003,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="7eb647ac-fff1-427a-a00c-fb97f0647f07"
-			maxrange="0"
-			minrange="0"
+			maxrange="6"
+			minrange="6"
 			name="Regression">
 			</smartfoldernode>
 			<testmodule
@@ -5509,11 +5509,14 @@ rxversion="8.3">
 		<DataSource
 		id="1130de77-2323-4ee7-960d-ecddcbac01cf"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="4"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
+				<column>
+					Environment
+				</column>
 				<column>
 					RCCUsername
 				</column>

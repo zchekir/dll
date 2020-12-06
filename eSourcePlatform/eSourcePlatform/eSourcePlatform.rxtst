@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -280,8 +280,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="AuthenticationConnector"
 			id="13963861-7aff-4b48-aaad-65caef5d47f4"
-			maxrange="0"
-			minrange="0"
+			maxrange="2"
+			minrange="2"
 			name="eSourcePlatform_Tests">
 			</smartfoldernode>
 			<testmodule
@@ -1577,9 +1577,9 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="0"
-			minrange="0"
-			name="Tiger_SmokeTest">
+			maxrange="5"
+			minrange="5"
+			name="EsiaSmokeTest">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -3536,7 +3536,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="F7B0EA3A-692C-466F-A413-96D17C22C077">
+					value="f64eb0ef-59ca-48bf-ae01-0cd080e2be8a">
 					</param>
 					<param
 					name="Key"
@@ -4419,7 +4419,7 @@ rxversion="8.3">
 					name="eSourcePlatform_Tests">
 						<smartfoldernode
 						id="63a0768d-8632-409b-adbf-fe7850003e81"
-						name="Tiger_SmokeTest">
+						name="EsiaSmokeTest">
 							<smartfoldernode
 							id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
 							name="Validate_CSP_API&amp;Client_Versions">
@@ -4473,6 +4473,130 @@ rxversion="8.3">
 									<testmodule
 									id="1d286015-fb62-4804-a9e0-8dc6f991a9d1"
 									name="DCT_HUB_Version">
+									</testmodule>
+								</testcase>
+							</smartfoldernode>
+							<smartfoldernode
+							id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
+							name="Validate_DCT&amp;RCCHub_Versions">
+								<testcase
+								id="1d9928dd-974b-4bf9-b839-09c761466da1"
+								name="NavigateTo_Azure">
+									<testmodule
+									id="6d0ed2a7-3410-43b5-9e4a-a788595335d3"
+									name="Open_Azure">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="b468f615-5d6f-4e8c-b782-e6f70c90b66d"
+								name="Select_LoginUser">
+									<testmodule
+									id="95156093-0ab3-4070-be1e-24d297632f9b"
+									name="SelectUserName">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="dc0c52da-a56e-4de2-b8e9-71f4051f1193"
+								name="EnterPassword">
+									<testmodule
+									id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
+									name="EnterAzurePassword">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="97aaa3ea-6ea0-4622-9002-ad2b4479e683"
+								name="ClickSignIn">
+									<testmodule
+									id="61affaa5-983b-4a34-bca5-bcb76a79c5a3"
+									name="Click_Signin">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="55d94e9c-09f3-492b-977b-eb8d911a3296"
+								name="ClickNoButton">
+									<testmodule
+									id="0e3e1051-9c18-4aea-b429-fa1938fbf65a"
+									name="Click_NoButton">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="a0ca6e5b-0022-4873-a172-ead549a588aa"
+								name="Click_DebugConsole">
+									<testmodule
+									id="9ca20ed5-c4cb-4992-b852-765aae5682bc"
+									name="DebugConsole">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="18f18f0d-1c6a-49a8-8f92-171c724177da"
+								name="OpenPowerShell">
+									<testmodule
+									id="d594040e-8c1a-44fa-b1e7-bdb6e6a6da3c"
+									name="Click_PowerShell">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751"
+								name="CDMKdu">
+									<testmodule
+									id="8de1ae41-2129-4a86-b9ec-fd9aa076591f"
+									name="Query_DCT_Version">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="62006fb2-63fe-43fb-8c36-139d7b9d28a7"
+								name="ValidateDCTVersion">
+									<testmodule
+									id="fb5c89b4-69e8-41db-aad7-9e8ef4cd69a6"
+									name="Validate_DCTVersion">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="d2899b22-b064-42fc-81cc-e3b7b14d3643"
+								name="CD_RCC">
+									<testmodule
+									id="82f2ea28-6380-4d19-b6a6-70ccc3d519e0"
+									name="Query_RCC_Version">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4"
+								name="ValidateRCCVersion">
+									<testmodule
+									id="2b2227c9-a950-4ec8-8316-decf08488671"
+									name="Validate_RCCHub_Version">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="3de66789-7fb1-4996-8500-81d43a94cc32"
+								name="LogoutAzure">
+									<testmodule
+									id="8b52cf35-84a0-4b6a-9aaf-cc4103ba310a"
+									name="Logout_Azure">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="38cd509b-df54-4d3a-8b93-deb1dbf8ef89"
+								name="OpenAzure">
+									<testmodule
+									id="09a344eb-a694-4da0-abc9-e8668a48a279"
+									name="OpenAzLocation">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="4c80919e-377f-4dfe-b67e-3fcabe8c8d09"
+								name="Get_NetFramework">
+									<testmodule
+									id="796f0f4c-9f18-4577-ad38-ca31f71085bd"
+									name="Get_NetFramework_Version">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="a9668023-1a5e-4a8e-a68a-e77061a8235c"
+								name="Validate_NetFramwork">
+									<testmodule
+									id="46eb6c72-7815-4fbe-a121-6f685ef4b154"
+									name="NetFrameworkValidation">
 									</testmodule>
 								</testcase>
 							</smartfoldernode>
@@ -5468,130 +5592,6 @@ rxversion="8.3">
 									</testcase>
 								</smartfoldernode>
 							</smartfoldernode>
-							<smartfoldernode
-							id="d7301e08-98a1-4c85-bb6a-6ec82c426239"
-							name="Validate_DCT&amp;RCCHub_Versions">
-								<testcase
-								id="1d9928dd-974b-4bf9-b839-09c761466da1"
-								name="NavigateTo_Azure">
-									<testmodule
-									id="6d0ed2a7-3410-43b5-9e4a-a788595335d3"
-									name="Open_Azure">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="b468f615-5d6f-4e8c-b782-e6f70c90b66d"
-								name="Select_LoginUser">
-									<testmodule
-									id="95156093-0ab3-4070-be1e-24d297632f9b"
-									name="SelectUserName">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="dc0c52da-a56e-4de2-b8e9-71f4051f1193"
-								name="EnterPassword">
-									<testmodule
-									id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
-									name="EnterAzurePassword">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="97aaa3ea-6ea0-4622-9002-ad2b4479e683"
-								name="ClickSignIn">
-									<testmodule
-									id="61affaa5-983b-4a34-bca5-bcb76a79c5a3"
-									name="Click_Signin">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="55d94e9c-09f3-492b-977b-eb8d911a3296"
-								name="ClickNoButton">
-									<testmodule
-									id="0e3e1051-9c18-4aea-b429-fa1938fbf65a"
-									name="Click_NoButton">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="a0ca6e5b-0022-4873-a172-ead549a588aa"
-								name="Click_DebugConsole">
-									<testmodule
-									id="9ca20ed5-c4cb-4992-b852-765aae5682bc"
-									name="DebugConsole">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="18f18f0d-1c6a-49a8-8f92-171c724177da"
-								name="OpenPowerShell">
-									<testmodule
-									id="d594040e-8c1a-44fa-b1e7-bdb6e6a6da3c"
-									name="Click_PowerShell">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="edc8184f-8fa3-4e20-b830-9cd6bc6dd751"
-								name="CDMKdu">
-									<testmodule
-									id="8de1ae41-2129-4a86-b9ec-fd9aa076591f"
-									name="Query_DCT_Version">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="62006fb2-63fe-43fb-8c36-139d7b9d28a7"
-								name="ValidateDCTVersion">
-									<testmodule
-									id="fb5c89b4-69e8-41db-aad7-9e8ef4cd69a6"
-									name="Validate_DCTVersion">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="d2899b22-b064-42fc-81cc-e3b7b14d3643"
-								name="CD_RCC">
-									<testmodule
-									id="82f2ea28-6380-4d19-b6a6-70ccc3d519e0"
-									name="Query_RCC_Version">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="ac9ae1ef-b0a6-4cb1-b6ba-d7398a2eb5c4"
-								name="ValidateRCCVersion">
-									<testmodule
-									id="2b2227c9-a950-4ec8-8316-decf08488671"
-									name="Validate_RCCHub_Version">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="3de66789-7fb1-4996-8500-81d43a94cc32"
-								name="LogoutAzure">
-									<testmodule
-									id="8b52cf35-84a0-4b6a-9aaf-cc4103ba310a"
-									name="Logout_Azure">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="38cd509b-df54-4d3a-8b93-deb1dbf8ef89"
-								name="OpenAzure">
-									<testmodule
-									id="09a344eb-a694-4da0-abc9-e8668a48a279"
-									name="OpenAzLocation">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="4c80919e-377f-4dfe-b67e-3fcabe8c8d09"
-								name="Get_NetFramework">
-									<testmodule
-									id="796f0f4c-9f18-4577-ad38-ca31f71085bd"
-									name="Get_NetFramework_Version">
-									</testmodule>
-								</testcase>
-								<testcase
-								id="a9668023-1a5e-4a8e-a68a-e77061a8235c"
-								name="Validate_NetFramwork">
-									<testmodule
-									id="46eb6c72-7815-4fbe-a121-6f685ef4b154"
-									name="NetFrameworkValidation">
-									</testmodule>
-								</testcase>
-							</smartfoldernode>
 							<teardown
 							id="c18465e9-a71b-4523-9da3-a4353ced7af5"
 							name="teardown">
@@ -5610,11 +5610,14 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="4"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
+				<column>
+					Environment
+				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -5856,7 +5859,7 @@ rxversion="8.3">
 		<DataSource
 		id="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="7"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

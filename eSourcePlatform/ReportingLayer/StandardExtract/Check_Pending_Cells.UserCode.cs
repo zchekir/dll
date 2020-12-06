@@ -25,6 +25,7 @@ using System.Diagnostics;
 
 namespace ReportingLayer.StandardExtract
 {
+	//[extracts].[vwStandardExtract]
 	public partial class Check_Pending_Cells
 	{
 		int i;
@@ -39,29 +40,16 @@ namespace ReportingLayer.StandardExtract
 		
 		public void CheckPending(string dbserver, string database, string username, string password, string authentication)
 		{
-
+			DataTable dt = new DataTable();
 			Stopwatch timer = new Stopwatch();
 			timer.Start();
-			
-			string query;
-			
 			//Build SQL query and connection string
-			//Adding an if statement in here so we can query a different view for the Cricket.1 hotfix
-			if (database == "cgst-cricket-rpt")
-			{
-				query = @"SELECT * 
-						FROM [dbo].[vwStandardExtract]
-						WHERE TestIdentifier = @TestIdentifier";
-			}
-			else
-			{
-				query = @"SELECT * 
-						FROM [extracts].[vwStandardExtract]
-						WHERE TestIdentifier = @TestIdentifier";
-			}
+			string query = @"SELECT * 
+							FROM [dbo].[vwStandardExtract]
+
+							WHERE TestIdentifier = @TestIdentifier";
 			
-			
-			//do while pending data appears in DB
+			//do while the peeding data appears in DB
 			do{
 				
 				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow

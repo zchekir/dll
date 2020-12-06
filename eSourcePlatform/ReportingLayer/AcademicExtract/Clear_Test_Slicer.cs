@@ -79,11 +79,14 @@ namespace ReportingLayer.AcademicExtract
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.ClearTestSelections' at Center.", repo.PowerBI.ClearTestSelectionsInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
+            Delay.Duration(60000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.ClearTestSelections' at Center.", repo.PowerBI.ClearTestSelectionsInfo, new RecordItemIndex(1));
             repo.PowerBI.ClearTestSelections.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
             Delay.Duration(500, false);
             
         }
