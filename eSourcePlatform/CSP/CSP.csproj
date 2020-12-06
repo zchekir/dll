@@ -2166,6 +2166,18 @@
 			<RepositoryCode>true</RepositoryCode>
 			<id>d90a74fb-3f62-4ea3-a885-cc4e0330a658</id>
 		</Compile>
+		<Compile Include="CSPStoreProcedure.cs">
+			<BoundTo>bddba164-4906-4258-961c-9137470fdbd8</BoundTo>
+			<DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>230eaf83-8084-4ba6-8c30-ae28441e8b0e</id>
+		</Compile>
+		<Compile Include="CSPStoreProcedure.UserCode.cs">
+			<BoundTo>bddba164-4906-4258-961c-9137470fdbd8</BoundTo>
+			<DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>09232d64-9298-41f5-9f21-a95ac2b1be9a</id>
+		</Compile>
 		<Compile Include="DatabaseModules\Check_Duplicate_Study.cs">
 			<DependentUpon>Check_Duplicate_Study.rxrec</DependentUpon>
 			<RecorderCode>true</RecorderCode>
@@ -4732,6 +4744,11 @@
 			<id>bb77de91-48e5-4406-abc3-91f7ae6e5d00</id>
 			<repoid>61ece0e2-4c32-4e54-80e0-7eeaa3e182b4</repoid>
 			<reporootid>ad46f1c9-823e-493b-84e7-021e0749856a</reporootid>
+		</None>
+		<None Include="CSPStoreProcedure.rxrec">
+			<BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+			<id>bddba164-4906-4258-961c-9137470fdbd8</id>
+			<recordtableid>efab97cb-f4ab-4d41-965b-4e9ea0dd4cdb</recordtableid>
 		</None>
 		<None Include="csv\40yo_Tier1.csv">
 			<id>e62144c0-2003-4112-aa31-4a09815d1286</id>

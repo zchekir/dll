@@ -69,6 +69,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="0625f531-340a-45a7-b706-2ddc8226f167"
+			name="RunStoreProcedure">
+			</testcase>
 			<testmodule
 			id="0927f763-f41b-4ee5-a88a-659efc36ca1d"
 			name="Read_CSV"
@@ -280,8 +284,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="AuthenticationConnector"
 			id="13963861-7aff-4b48-aaad-65caef5d47f4"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="eSourcePlatform_Tests">
 			</smartfoldernode>
 			<testmodule
@@ -1563,6 +1567,10 @@ rxversion="8.3">
 			id="6019ac06-4d85-440a-ab02-5127c387cd2a"
 			name="Add_Instrument_to_Event">
 			</testcase>
+			<smartfoldernode
+			id="60a5c7d2-1da7-48f8-bcf5-945ce6d0f089"
+			name="ExecutingStoreProcedure">
+			</smartfoldernode>
 			<testmodule
 			id="61affaa5-983b-4a34-bca5-bcb76a79c5a3"
 			name="Click_Signin"
@@ -1573,12 +1581,50 @@ rxversion="8.3">
 			id="62006fb2-63fe-43fb-8c36-139d7b9d28a7"
 			name="ValidateDCTVersion">
 			</testcase>
+			<testmodule
+			id="6378ecee-2b84-4e6a-a8bc-03a1dc467e25"
+			name="ExecutingStoreProcedure"
+			ref="2b071bfb-8e6c-4684-984c-b1d596a99717"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="dbUsername"
+					datasourceid="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
+					variableid="8f2b1e92-8d45-40c6-828a-e19e5909184f"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
+					variableid="63d5c2f1-4ab2-4c0c-8f95-f60784c274b3"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="0eb66e75-226e-4453-ada8-657638b7c592"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="5fd7e42f-9c3f-45d5-9e90-23a906e19851"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="71610b04-33a2-4fa4-96ef-f6b81441ef6c"
+					variablename="Authentication">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Tiger_SmokeTest">
 			</smartfoldernode>
 			<testmodule
@@ -1739,6 +1785,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="6b3c9c40-39da-4d02-a759-818d87d97393"
 			name="Select_Study"
 			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
@@ -3536,7 +3583,7 @@ rxversion="8.3">
 					</param>
 					<param
 					name="TestIdentifier"
-					value="F7B0EA3A-692C-466F-A413-96D17C22C077">
+					value="11370BF3-3507-41E5-8AC5-9C6BC2030D71">
 					</param>
 					<param
 					name="Key"
@@ -4641,6 +4688,18 @@ rxversion="8.3">
 								</teardown>
 							</smartfoldernode>
 							<smartfoldernode
+							id="60a5c7d2-1da7-48f8-bcf5-945ce6d0f089"
+							name="ExecutingStoreProcedure">
+								<testcase
+								id="0625f531-340a-45a7-b706-2ddc8226f167"
+								name="RunStoreProcedure">
+									<testmodule
+									id="6378ecee-2b84-4e6a-a8bc-03a1dc467e25"
+									name="ExecutingStoreProcedure">
+									</testmodule>
+								</testcase>
+							</smartfoldernode>
+							<smartfoldernode
 							id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b"
 							name="Validate_Database_Assessment">
 								<testcase
@@ -5610,7 +5669,7 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5799,7 +5858,7 @@ rxversion="8.3">
 		<DataSource
 		id="33eaead4-5b16-4310-9379-d36bb39bb9ee"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5856,154 +5915,13 @@ rxversion="8.3">
 		<DataSource
 		id="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 		includefile="Checked"
-		lastknownrowcount="4"
+		lastknownrowcount="11"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
 				<column>
-					Subject
-				</column>
-				<column>
-					Body
-				</column>
-				<column>
-					To
-				</column>
-				<column>
-					From
-				</column>
-				<column>
-					ServerHostname
-				</column>
-				<column>
-					ServerPort
-				</column>
-				<column>
-					UseSSL
-				</column>
-				<column>
-					SendEmailOnFailure
-				</column>
-				<column>
-					SendEmailOnSuccess
-				</column>
-				<column>
-					SendZippedReportOnComplete
-				</column>
-				<column>
-					SendPdfReportOnComplete
-				</column>
-				<column>
-					Browser
-				</column>
-				<column>
-					RCCDOM
-				</column>
-				<column>
-					RCCURL
-				</column>
-				<column>
-					CSPDOM
-				</column>
-				<column>
-					CSPURL
-				</column>
-				<column>
-					DCTDOM
-				</column>
-				<column>
-					DCTURL
-				</column>
-				<column>
-					Key
-				</column>
-				<column>
-					Secret
-				</column>
-				<column>
-					AzureDOM
-				</column>
-				<column>
-					AzureURL
-				</column>
-				<column>
-					DBServer
-				</column>
-				<column>
-					Database
-				</column>
-				<column>
-					RptDatabase
-				</column>
-				<column>
-					DCTDatabase
-				</column>
-				<column>
-					Authentication
-				</column>
-				<column>
-					WASurl
-				</column>
-				<column>
-					ServerVersionDeployed
-				</column>
-				<column>
-					ClientVersionDeployed
-				</column>
-				<column>
-					ExpectedDCTVersion
-				</column>
-				<column>
-					ExpectedRCCVersion
-				</column>
-				<column>
-					CSPDBVersion
-				</column>
-				<column>
-					DCT_DBVersion
-				</column>
-				<column>
-					Rep_DBVersion
-				</column>
-				<column>
-					Report_Version
-				</column>
-				<column>
-					V8Handler_Jobs
-				</column>
-				<column>
-					V8Adapter_Jobs
-				</column>
-				<column>
-					RedCapAdapter_Job&#32;
-				</column>
-				<column>
-					RedCapHandler_Jobs
-				</column>
-				<column>
-					TimeStmp
-				</column>
-				<column>
-					EvKey
-				</column>
-				<column>
-					Ahuky
-				</column>
-				<column>
-					Query
-				</column>
-				<column>
-					Absorb_WebJobs
-				</column>
-				<column>
-					Data_CleaningTool
-				</column>
-				<column>
-					DCTVersionQuery
-				</column>
-				<column>
-					RCCVersionQuery&#32;
+					&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -6025,6 +5943,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="13555a9d-cd51-4c0a-81e3-3a616c0bcb7b">
+			</testcontainer>
+			<testcontainer
+			id="13963861-7aff-4b48-aaad-65caef5d47f4">
 			</testcontainer>
 			<testcontainer
 			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
@@ -6159,6 +6080,9 @@ rxversion="8.3">
 			id="04909fcc-b521-4a5f-b788-cfbcedc284e7">
 			</testcontainer>
 			<testcontainer
+			id="0625f531-340a-45a7-b706-2ddc8226f167">
+			</testcontainer>
+			<testcontainer
 			id="0d8d2e3a-3379-4107-8798-79470add84c6">
 			</testcontainer>
 			<testcontainer
@@ -6181,6 +6105,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="56f6d406-e690-4aa6-b4a9-38e641d4b26a">
+			</testcontainer>
+			<testcontainer
+			id="60a5c7d2-1da7-48f8-bcf5-945ce6d0f089">
 			</testcontainer>
 			<testcontainer
 			id="63a0768d-8632-409b-adbf-fe7850003e81">
