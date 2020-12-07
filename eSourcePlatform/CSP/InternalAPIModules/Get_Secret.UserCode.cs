@@ -33,5 +33,11 @@ namespace CSP.InternalAPIModules
             // Your recording specific initialization code goes here.
         }
 
+        public void captureSecret()
+        {
+            Secret= engine.Helpers.WebService.Token;
+            Report.Log(ReportLevel.Info, "capturesecret : " +  Secret );
+        }
+
     }
 }
