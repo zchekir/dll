@@ -29,7 +29,6 @@ namespace CSP
 	public class BaterytJSONRequest
 	{
 		public string JsonData { get; set; }
-		public string id { get; set; }
 	
 	/// Object for creating a new workflow request
 		public BaterytJSONRequest()
@@ -66,12 +65,8 @@ namespace CSP
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
-				string batteryName ="Atomation";
-				Random rnd = new Random();
-				int num  = rnd.Next(1, 9);
-				
 		    
-               var testData = JsonData.Replace(@"<id>", Studyid).Replace(@"<name>",Studname).Replace(@"<ver>",Batteryversion).Replace(@"<batteryName>",batteryName+num); 
+               var testData = JsonData.Replace(@"<id>", Studyid).Replace(@"<name>",Studname).Replace(@"<ver>",Batteryversion); 
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -89,25 +84,7 @@ namespace CSP
 			{
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<BaterytJSONRequest>(response);
-				
-				batteryid_ = responseObject.id; 
-				
-				
-			// slpit CAPTURING CONFIGURATION IDS
-			char[] mych = { '&', ',','?','=' };
-			string id = response;
-            string[] idone = id.Split(mych);
-            firstid = idone[36];
-            secondid = idone[96];
-				
-				
-				
-				Report.Log(ReportLevel.Info, "The Battery is created as expected " + batteryid_);
-				Report.Log(ReportLevel.Info, "The Battery is created as expected " + response);
-				
-				Report.Log(ReportLevel.Info, "firstid " + firstid );
-				Report.Log(ReportLevel.Info, "secondid" + secondid );
-				
+				Report.Log(ReportLevel.Info, "The Battery is created as expected " + response );
 				
 			}
             

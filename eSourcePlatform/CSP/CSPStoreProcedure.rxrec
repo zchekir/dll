@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="a14cc183-5e65-4337-8b73-4983db931d36"
+id="efab97cb-f4ab-4d41-965b-4e9ea0dd4cdb"
 mode="Global"
 rxversion="8.3">
 	<name>
@@ -28,29 +28,29 @@ rxversion="8.3">
 	</codegen>
 	<variables>
 		<var
-		id="bf306a15-0b77-4f2a-8a73-ffb46617c414"
+		id="ddf1e171-395e-4f71-8308-a919557e5f5e"
 		name="DBServer">
 			cgst-qc.database.windows.net
 		</var>
 		<var
-		id="952bd8ac-a567-4f6d-8216-4276b8c2c44b"
+		id="ffe50506-848f-40a7-ad13-7b8f98eeed30"
 		name="Database">
 		</var>
 		<var
-		id="b1c36364-7c5d-4a59-9350-cfd3c77c583f"
+		id="bc1e8c3b-5918-4d4f-b724-fe2d4bb61fb0"
 		name="dbUsername">
 		</var>
 		<var
-		id="ada3c2d8-5df5-4698-a99f-7781a70bf004"
+		id="7de9827c-49e0-4c26-b8b1-911edc706074"
 		name="dbPassword">
 		</var>
 		<var
-		id="776562f1-6161-4982-a976-a4e5c75a6f6a"
+		id="3e968851-9891-4442-80c2-acae5c1276e3"
 		name="Authentication">
 			Active Directory Password
 		</var>
 		<var
-		id="4d50e70c-9c63-4f10-bb38-9eea71424cdf"
+		id="b6d45e16-ac93-42ce-8faf-eb0a9367d469"
 		name="studID">
 		</var>
 	</variables>
@@ -59,7 +59,7 @@ rxversion="8.3">
 		classname="CSPStoreProcedure"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="ExcuteCSPStoreProcedure"
+		methodname="ExecuteStoreProcedure"
 		namespace="CSP"
 		optional="False"
 		varname="">
@@ -68,10 +68,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="5753bc69-d240-473f-923c-9aafc97bb946">
+			id="a3a3cce5-b2cd-40ce-a30d-af6ab6e1d184">
 				<argument
 				argname="DBServer"
-				id="3b56bdc9-cf33-4dd1-bf31-8642aad91907"
+				id="fd0805c9-ca13-4a4b-85a8-6c1b148ef4e4"
 				variable="DBServer">
 					<argvaluetype>
 						System.String
@@ -81,7 +81,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="Database"
-				id="2c805cc9-33ad-4dd8-be4e-8dbf26ba00e2"
+				id="8daf592f-2864-41d1-93d3-c502d28d0296"
 				variable="Database">
 					<argvaluetype>
 						System.String
@@ -91,7 +91,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="dbUsername"
-				id="56277771-0d66-491c-abb4-051a34e2d862"
+				id="11ca19f4-704a-49db-9c0b-0085fd8c1f4b"
 				variable="dbUsername">
 					<argvaluetype>
 						System.String
@@ -101,7 +101,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="dbPassword"
-				id="6fa7362e-f368-4c5f-abd9-5514886732a4"
+				id="c6f9b04f-867d-4e8e-9e08-6bf41496515d"
 				variable="dbPassword">
 					<argvaluetype>
 						System.String
@@ -111,7 +111,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="Authentication"
-				id="4eda4546-73af-4300-bcc6-6c52283e81b4"
+				id="1291b6b4-121a-4a58-bff3-ec1570d8ca5e"
 				variable="Authentication">
 					<argvaluetype>
 						System.String
@@ -121,7 +121,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="studID"
-				id="5e543806-ba93-4c32-bfce-41dada6ca99f"
+				id="5b5e85d0-1295-4853-9dba-6b25c4540647"
 				variable="studID">
 					<argvaluetype>
 						System.String
@@ -131,6 +131,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="900ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
