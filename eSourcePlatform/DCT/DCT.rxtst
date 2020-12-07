@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -2193,11 +2193,14 @@ rxversion="8.3">
 		<DataSource
 		id="fad390c0-7742-4141-9fad-cd83996e1b2d"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
+				<column>
+					Environment
+				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -2367,7 +2370,7 @@ rxversion="8.3">
 		<DataSource
 		id="cefdae90-0a7a-4782-8aca-150cb0cdfba4"
 		includefile="Unchecked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="RCCConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -2424,7 +2427,7 @@ rxversion="8.3">
 		<DataSource
 		id="0661aeb6-44c3-4349-8996-32961057ee74"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="3"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">

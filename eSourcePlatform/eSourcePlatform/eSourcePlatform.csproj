@@ -163,6 +163,18 @@
 			<RepositoryCode>true</RepositoryCode>
 			<id>f537482d-bb21-4a53-98dc-ed9eb32ba61b</id>
 		</Compile>
+		<Compile Include="ExecutingStoreProcedure.cs">
+			<BoundTo>9d3984b3-a59e-4846-9fe6-10fde229e819</BoundTo>
+			<DependentUpon>ExecutingStoreProcedure.rxrec</DependentUpon>
+			<RecorderCode>true</RecorderCode>
+			<id>596f0943-cee5-4af0-a907-d5fad28ea85f</id>
+		</Compile>
+		<Compile Include="ExecutingStoreProcedure.UserCode.cs">
+			<BoundTo>9d3984b3-a59e-4846-9fe6-10fde229e819</BoundTo>
+			<DependentUpon>ExecutingStoreProcedure.rxrec</DependentUpon>
+			<UserCode>true</UserCode>
+			<id>dc91c86f-4619-42b3-a729-90f43d2f6bf1</id>
+		</Compile>
 		<Compile Include="HUBDCTVesrion.cs">
 			<BoundTo>cadd37ef-5f50-4d2d-b93c-94ec28c9de4b</BoundTo>
 			<DependentUpon>HUBDCTVesrion.rxrec</DependentUpon>
@@ -301,6 +313,11 @@
 			<id>1ff89b80-cba6-4f21-a417-c668d100f247</id>
 			<repoid>1b4df078-48fd-44ad-b314-173b9dd113af</repoid>
 			<reporootid>d677fdb9-00e1-4467-9fce-a84c063e8bd0</reporootid>
+		</None>
+		<None Include="ExecutingStoreProcedure.rxrec">
+			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
+			<id>9d3984b3-a59e-4846-9fe6-10fde229e819</id>
+			<recordtableid>2b071bfb-8e6c-4684-984c-b1d596a99717</recordtableid>
 		</None>
 		<None Include="HUBDCTVesrion.rxrec">
 			<BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>

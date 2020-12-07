@@ -47,7 +47,6 @@ namespace CSP
             VisitCode = "";
             VisitSceduleData = "";
             rNumber = "";
-            workflow_id = "";
         }
 
         /// <summary>
@@ -118,18 +117,6 @@ namespace CSP
         {
             get { return _rNumber; }
             set { _rNumber = value; }
-        }
-
-        string _workflow_id;
-
-        /// <summary>
-        /// Gets or sets the value of variable workflow_id.
-        /// </summary>
-        [TestVariable("dd7c2fe2-09d6-4803-b112-4edfe9c65ed1")]
-        public string workflow_id
-        {
-            get { return _workflow_id; }
-            set { _workflow_id = value; }
         }
 
         /// <summary>

@@ -26,18 +26,19 @@ namespace CSP
 {
     public partial class CSPStoreProcedure
     {
-    	
     	//variables:
     	public static DataTable dt = new DataTable();
+        
         
         private void Init()
         {
             
         }
 
-        public void ExcuteCSPStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
+        public void ExecuteStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
         {
-           dt.Reset();
+         
+        	dt.Reset();
            
              // Executing the store procedure in order to update [Reports].[uspUpdateExtractStandardAssessmentDetail] table
            
@@ -69,6 +70,8 @@ namespace CSP
                    
                     Report.Log(ReportLevel.Info,  "Error: " + e.Message );   
                 }
+        	
+        	
         }
 
     }
