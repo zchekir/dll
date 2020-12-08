@@ -20,113 +20,115 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.InternalAPIModules
+namespace ReportingLayer
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The GenerateKey recording.
+    ///The CSPStoreProcedure recording.
     /// </summary>
-    [TestModule("4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e", ModuleType.Recording, 1)]
-    public partial class GenerateKey : ITestModule
+    [TestModule("6b4e740b-107a-42b3-8edc-193add9cc91b", ModuleType.Recording, 1)]
+    public partial class CSPStoreProcedure : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the ReportingLayerRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static ReportingLayerRepository repo = ReportingLayerRepository.Instance;
 
-        static GenerateKey instance = new GenerateKey();
+        static CSPStoreProcedure instance = new CSPStoreProcedure();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public GenerateKey()
+        public CSPStoreProcedure()
         {
-            id = "null";
-            key = "\"\"";
-            contactEmail = "daryschetech@gmail.com";
-            active = "true";
-            I_AuthToken = "";
-            DOM = "";
+            DBServer = "cgst-qc.database.windows.net";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            Authentication = "Active Directory Password";
+            studID = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static GenerateKey Instance
+        public static CSPStoreProcedure Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _id;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable id.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
-        [TestVariable("7805b7e9-80b4-433a-94ae-2a96bc75775a")]
-        public string id
+        [TestVariable("15da46b2-9b4b-4dd6-8baa-4b6c6527bdc5")]
+        public string DBServer
         {
-            get { return _id; }
-            set { _id = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _contactEmail;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable contactEmail.
+        /// Gets or sets the value of variable Database.
         /// </summary>
-        [TestVariable("929a7288-50e2-4c5a-a48f-7f74e144b7ce")]
-        public string contactEmail
+        [TestVariable("65cd60e4-275b-48b0-800c-391a6409c74d")]
+        public string Database
         {
-            get { return _contactEmail; }
-            set { _contactEmail = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _active;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable active.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
-        [TestVariable("5c280f38-7956-48f4-9120-b64a2227bf44")]
-        public string active
+        [TestVariable("bc7384c9-0373-491f-a170-2b1d41f944b0")]
+        public string dbUsername
         {
-            get { return _active; }
-            set { _active = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _I_AuthToken;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable I_AuthToken.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
-        [TestVariable("c070a634-a540-42e9-b2b6-9dd0e172bbae")]
-        public string I_AuthToken
+        [TestVariable("aba9a429-57a8-41f5-957e-ec968d47c8f1")]
+        public string dbPassword
         {
-            get { return _I_AuthToken; }
-            set { _I_AuthToken = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
-        string _DOM;
+        string _Authentication;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable Authentication.
         /// </summary>
-        [TestVariable("3b2c770e-10f9-4b9e-bc14-0264f5b51603")]
-        public string DOM
+        [TestVariable("cf2dfee1-bee2-4bc5-bd6f-5d24896ce1ef")]
+        public string Authentication
         {
-            get { return _DOM; }
-            set { _DOM = value; }
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
+        string _studID;
+
         /// <summary>
-        /// Gets or sets the value of variable key.
+        /// Gets or sets the value of variable studID.
         /// </summary>
-        [TestVariable("a2846a82-a80e-4661-b2c1-4ea5aa352b0e")]
-        public string key
+        [TestVariable("5fa46b8a-bbe9-4c2b-b40c-d4213ce2762e")]
+        public string studID
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return _studID; }
+            set { _studID = value; }
         }
 
 #endregion
@@ -155,7 +157,7 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            Generate_Key(id, contactEmail, active, I_AuthToken, key, DOM);
+            ExecuteCSPStoreProcedure(DBServer, Database, dbUsername, dbPassword, Authentication, studID);
             Delay.Milliseconds(0);
             
         }

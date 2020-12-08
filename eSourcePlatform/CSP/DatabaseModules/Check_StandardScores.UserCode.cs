@@ -54,7 +54,7 @@ namespace CSP.DatabaseModules
 				
 				Report.Info( " Validating  Processor Results in DB..........  ");
 				//Connecting to SQL DB:
-				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
+				string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "60");
 				//CreateObject:
 				SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
 				da.SelectCommand.Parameters.AddWithValue("@TestIdentifier", TestIdentifier);

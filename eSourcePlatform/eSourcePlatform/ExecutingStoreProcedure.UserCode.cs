@@ -6,7 +6,6 @@
 // http://www.ranorex.com
 //
 ///////////////////////////////////////////////////////////////////////////////
-
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,23 +21,22 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace CSP
+namespace eSourcePlatform
 {
-    public partial class CSPStoreProcedure
+    public partial class ExecutingStoreProcedure
     {
-    	//variables:
+       //variables:
     	public static DataTable dt = new DataTable();
-        
-        
-        private void Init()
+      
+
+    	private void Init()
         {
-            
+           
         }
 
-        public void ExecuteStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
+        public void CSPStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
         {
-         
-        	dt.Reset();
+             dt.Reset();
            
              // Executing the store procedure in order to update [Reports].[uspUpdateExtractStandardAssessmentDetail] table
            
@@ -70,8 +68,6 @@ namespace CSP
                    
                     Report.Log(ReportLevel.Info,  "Error: " + e.Message );   
                 }
-        	
-        	
         }
 
     }

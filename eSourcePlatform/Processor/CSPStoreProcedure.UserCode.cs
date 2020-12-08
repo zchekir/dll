@@ -22,22 +22,22 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace CSP
+namespace Processor
 {
     public partial class CSPStoreProcedure
     {
-    	//variables:
+        //variables:
     	public static DataTable dt = new DataTable();
         
-        
+    	
         private void Init()
         {
             
         }
 
-        public void ExecuteStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
+        public void ExecuteCSPStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
         {
-         
+          
         	dt.Reset();
            
              // Executing the store procedure in order to update [Reports].[uspUpdateExtractStandardAssessmentDetail] table
@@ -70,6 +70,7 @@ namespace CSP
                    
                     Report.Log(ReportLevel.Info,  "Error: " + e.Message );   
                 }
+        	
         	
         	
         }

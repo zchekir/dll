@@ -20,113 +20,115 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.InternalAPIModules
+namespace eSourcePlatform
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The GenerateKey recording.
+    ///The ExecutingStoreProcedure recording.
     /// </summary>
-    [TestModule("4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e", ModuleType.Recording, 1)]
-    public partial class GenerateKey : ITestModule
+    [TestModule("2b071bfb-8e6c-4684-984c-b1d596a99717", ModuleType.Recording, 1)]
+    public partial class ExecutingStoreProcedure : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the eSourcePlatformRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static eSourcePlatformRepository repo = eSourcePlatformRepository.Instance;
 
-        static GenerateKey instance = new GenerateKey();
+        static ExecutingStoreProcedure instance = new ExecutingStoreProcedure();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public GenerateKey()
+        public ExecutingStoreProcedure()
         {
-            id = "null";
-            key = "\"\"";
-            contactEmail = "daryschetech@gmail.com";
-            active = "true";
-            I_AuthToken = "";
-            DOM = "";
+            DBServer = "cgst-qc.database.windows.net";
+            Database = "";
+            dbUsername = "";
+            dbPassword = "";
+            Authentication = "Active Directory Password";
+            studID = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static GenerateKey Instance
+        public static ExecutingStoreProcedure Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _id;
+        string _DBServer;
 
         /// <summary>
-        /// Gets or sets the value of variable id.
+        /// Gets or sets the value of variable DBServer.
         /// </summary>
-        [TestVariable("7805b7e9-80b4-433a-94ae-2a96bc75775a")]
-        public string id
+        [TestVariable("0eb66e75-226e-4453-ada8-657638b7c592")]
+        public string DBServer
         {
-            get { return _id; }
-            set { _id = value; }
+            get { return _DBServer; }
+            set { _DBServer = value; }
         }
 
-        string _contactEmail;
+        string _Database;
 
         /// <summary>
-        /// Gets or sets the value of variable contactEmail.
+        /// Gets or sets the value of variable Database.
         /// </summary>
-        [TestVariable("929a7288-50e2-4c5a-a48f-7f74e144b7ce")]
-        public string contactEmail
+        [TestVariable("5fd7e42f-9c3f-45d5-9e90-23a906e19851")]
+        public string Database
         {
-            get { return _contactEmail; }
-            set { _contactEmail = value; }
+            get { return _Database; }
+            set { _Database = value; }
         }
 
-        string _active;
+        string _dbUsername;
 
         /// <summary>
-        /// Gets or sets the value of variable active.
+        /// Gets or sets the value of variable dbUsername.
         /// </summary>
-        [TestVariable("5c280f38-7956-48f4-9120-b64a2227bf44")]
-        public string active
+        [TestVariable("8f2b1e92-8d45-40c6-828a-e19e5909184f")]
+        public string dbUsername
         {
-            get { return _active; }
-            set { _active = value; }
+            get { return _dbUsername; }
+            set { _dbUsername = value; }
         }
 
-        string _I_AuthToken;
+        string _dbPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable I_AuthToken.
+        /// Gets or sets the value of variable dbPassword.
         /// </summary>
-        [TestVariable("c070a634-a540-42e9-b2b6-9dd0e172bbae")]
-        public string I_AuthToken
+        [TestVariable("63d5c2f1-4ab2-4c0c-8f95-f60784c274b3")]
+        public string dbPassword
         {
-            get { return _I_AuthToken; }
-            set { _I_AuthToken = value; }
+            get { return _dbPassword; }
+            set { _dbPassword = value; }
         }
 
-        string _DOM;
+        string _Authentication;
 
         /// <summary>
-        /// Gets or sets the value of variable DOM.
+        /// Gets or sets the value of variable Authentication.
         /// </summary>
-        [TestVariable("3b2c770e-10f9-4b9e-bc14-0264f5b51603")]
-        public string DOM
+        [TestVariable("71610b04-33a2-4fa4-96ef-f6b81441ef6c")]
+        public string Authentication
         {
-            get { return _DOM; }
-            set { _DOM = value; }
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
+        string _studID;
+
         /// <summary>
-        /// Gets or sets the value of variable key.
+        /// Gets or sets the value of variable studID.
         /// </summary>
-        [TestVariable("a2846a82-a80e-4661-b2c1-4ea5aa352b0e")]
-        public string key
+        [TestVariable("96bcbaf1-bdd4-49bb-885f-9ac54d44ed66")]
+        public string studID
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return _studID; }
+            set { _studID = value; }
         }
 
 #endregion
@@ -155,8 +157,11 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            Generate_Key(id, contactEmail, active, I_AuthToken, key, DOM);
+            CSPStoreProcedure(DBServer, Database, dbUsername, dbPassword, Authentication, studID);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(1));
+            Delay.Duration(900, false);
             
         }
 

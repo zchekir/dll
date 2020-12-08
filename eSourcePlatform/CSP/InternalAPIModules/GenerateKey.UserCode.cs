@@ -113,11 +113,9 @@ namespace CSP.InternalAPIModules
 				responseObject = new JavaScriptSerializer().Deserialize<ExternalKey>(response);
 				
 				
-				 Ex_key = responseObject.key;
-				 ExternalUserID= responseObject.id;
+				var Ex_key = responseObject.key;
 				
 				Report.Log(ReportLevel.Info, "ExternalKey is : " + Ex_key );
-				Report.Log(ReportLevel.Info, "respons : " + response );
 				
 			}
 		}

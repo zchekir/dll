@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e"
+id="03ec75ce-a241-4a6a-92d9-830456f3aa4b"
 mode="Global"
 rxversion="8.3">
 	<name>
-		GenerateKey
+		CSPStoreProcedure
 	</name>
 	<repeatcount>
 		1
@@ -23,46 +23,44 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="GenerateKey"
-	namespace="CSP.InternalAPIModules">
+	classname="CSPStoreProcedure"
+	namespace="RedCapCloud">
 	</codegen>
 	<variables>
 		<var
-		id="7805b7e9-80b4-433a-94ae-2a96bc75775a"
-		name="id">
-			null
+		id="00b67620-a5bd-49bf-8a52-e57e1fa981d3"
+		name="DBServer">
+			cgst-qc.database.windows.net
 		</var>
 		<var
-		id="a2846a82-a80e-4661-b2c1-4ea5aa352b0e"
-		name="key">
-			&quot;&quot;
+		id="fd2c4f6c-1a1e-47a8-800f-fd0cc50f9468"
+		name="Database">
 		</var>
 		<var
-		id="929a7288-50e2-4c5a-a48f-7f74e144b7ce"
-		name="contactEmail">
-			daryschetech@gmail.com
+		id="33bb3d6e-664e-4393-854f-d9998f413cbd"
+		name="dbUsername">
 		</var>
 		<var
-		id="5c280f38-7956-48f4-9120-b64a2227bf44"
-		name="active">
-			true
+		id="c0906774-21af-450a-97fb-089f67ea7140"
+		name="dbPassword">
 		</var>
 		<var
-		id="c070a634-a540-42e9-b2b6-9dd0e172bbae"
-		name="I_AuthToken">
+		id="52ab822b-84b9-4d5e-8a8d-61d6008657a0"
+		name="Authentication">
+			Active Directory Password
 		</var>
 		<var
-		id="3b2c770e-10f9-4b9e-bc14-0264f5b51603"
-		name="DOM">
+		id="f20ab546-4b51-460b-9528-63df357a42b7"
+		name="studID">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="GenerateKey"
+		classname="CSPStoreProcedure"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Generate_Key"
-		namespace="CSP.InternalAPIModules"
+		methodname="ExecuteCSPStoreProcedure"
+		namespace="RedCapCloud"
 		optional="False"
 		varname="">
 			<comment>
@@ -70,11 +68,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="59e2a339-991f-42ac-a508-770db3d74b38">
+			id="65d79160-82a0-40e1-bd97-de446ae493e2">
 				<argument
-				argname="id"
-				id="50c88e16-36b8-44cd-8f86-366ff3a64b80"
-				variable="id">
+				argname="DBServer"
+				id="44596131-3f1d-4f67-8d45-cfe538967706"
+				variable="DBServer">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -82,9 +80,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="contactEmail"
-				id="d788a73e-adac-4206-b363-6ff12a9078e1"
-				variable="contactEmail">
+				argname="Database"
+				id="a8cda84e-e74a-408d-944b-22f0ea02d150"
+				variable="Database">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -92,9 +90,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="active"
-				id="c8b99df3-f218-4b51-bc20-7633f72c4cea"
-				variable="active">
+				argname="dbUsername"
+				id="1ceba522-f6cd-407f-9403-3de1bd7151d6"
+				variable="dbUsername">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -102,9 +100,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="I_AuthToken"
-				id="83d503cf-2a77-4455-b082-ccbae8afcdad"
-				variable="I_AuthToken">
+				argname="dbPassword"
+				id="24b4498b-1818-4ba7-b364-0a6f79a38fbf"
+				variable="dbPassword">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -112,9 +110,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="key"
-				id="cfae2ad2-658a-4aca-9879-b79855d78529"
-				variable="key">
+				argname="Authentication"
+				id="df5a6668-342b-4e59-ab9b-05d5996fd88f"
+				variable="Authentication">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -122,9 +120,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="DOM"
-				id="a799d2b8-80f6-47fd-a807-98910a506bf0"
-				variable="DOM">
+				argname="studID"
+				id="d55da15c-9731-4bd8-b7d6-e4e8bc3c39a0"
+				variable="studID">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -135,22 +133,22 @@ rxversion="8.3">
 		</userrecorditem>
 	</recorditems>
 	<repository
-	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
-	name="CSPRepository"
-	relativepath="..\CSPRepository.rxrep"
+	id="a303f60a-5ab4-4222-9b33-ad98174d1079"
+	name="RedCapCloudRepository"
+	relativepath="RedCapCloudRepository.rxrep"
 	rxversion="8.3">
 		<codegen
-		classname="CSPRepository"
-		namespace="CSP">
+		classname="RedCapCloudRepository"
+		namespace="RedCapCloud">
 		</codegen>
 		<rootfolder
-		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		id="6e7f678d-6d77-4f0e-b651-38eb29a9f3ee"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		GenerateKey.UserCode.cs
+		CSPStoreProcedure.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

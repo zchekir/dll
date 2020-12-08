@@ -26,7 +26,7 @@ namespace CSP
     /// <summary>
     ///The CSPStoreProcedure recording.
     /// </summary>
-    [TestModule("a14cc183-5e65-4337-8b73-4983db931d36", ModuleType.Recording, 1)]
+    [TestModule("efab97cb-f4ab-4d41-965b-4e9ea0dd4cdb", ModuleType.Recording, 1)]
     public partial class CSPStoreProcedure : ITestModule
     {
         /// <summary>
@@ -64,7 +64,7 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable DBServer.
         /// </summary>
-        [TestVariable("bf306a15-0b77-4f2a-8a73-ffb46617c414")]
+        [TestVariable("ddf1e171-395e-4f71-8308-a919557e5f5e")]
         public string DBServer
         {
             get { return _DBServer; }
@@ -76,7 +76,7 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable Database.
         /// </summary>
-        [TestVariable("952bd8ac-a567-4f6d-8216-4276b8c2c44b")]
+        [TestVariable("ffe50506-848f-40a7-ad13-7b8f98eeed30")]
         public string Database
         {
             get { return _Database; }
@@ -88,7 +88,7 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable dbUsername.
         /// </summary>
-        [TestVariable("b1c36364-7c5d-4a59-9350-cfd3c77c583f")]
+        [TestVariable("bc1e8c3b-5918-4d4f-b724-fe2d4bb61fb0")]
         public string dbUsername
         {
             get { return _dbUsername; }
@@ -100,7 +100,7 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable dbPassword.
         /// </summary>
-        [TestVariable("ada3c2d8-5df5-4698-a99f-7781a70bf004")]
+        [TestVariable("7de9827c-49e0-4c26-b8b1-911edc706074")]
         public string dbPassword
         {
             get { return _dbPassword; }
@@ -112,7 +112,7 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable Authentication.
         /// </summary>
-        [TestVariable("776562f1-6161-4982-a976-a4e5c75a6f6a")]
+        [TestVariable("3e968851-9891-4442-80c2-acae5c1276e3")]
         public string Authentication
         {
             get { return _Authentication; }
@@ -124,7 +124,7 @@ namespace CSP
         /// <summary>
         /// Gets or sets the value of variable studID.
         /// </summary>
-        [TestVariable("4d50e70c-9c63-4f10-bb38-9eea71424cdf")]
+        [TestVariable("b6d45e16-ac93-42ce-8faf-eb0a9367d469")]
         public string studID
         {
             get { return _studID; }
@@ -157,8 +157,11 @@ namespace CSP
 
             Init();
 
-            ExcuteCSPStoreProcedure(DBServer, Database, dbUsername, dbPassword, Authentication, studID);
+            ExecuteStoreProcedure(DBServer, Database, dbUsername, dbPassword, Authentication, studID);
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(1));
+            Delay.Duration(900, false);
             
         }
 
