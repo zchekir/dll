@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -22,7 +22,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="01018cad-2f89-413e-9417-11b023624c1b"
 			name="DateTimeGenerator"
 			ref="cf999998-58c9-4621-af29-f2668761d042"
@@ -111,7 +110,6 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
 			id="03f1ef66-8d77-49fb-b4ea-ff147231f1b1"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -670,7 +668,7 @@ rxversion="8.3">
 			id="12672266-c3e5-4da0-bf18-959502d59662"
 			maxrange="4"
 			minrange="4"
-			name="asiaRegression"
+			name="Regression"
 			warnunboundvariables="False">
 			</smartfoldernode>
 			<testmodule
@@ -2529,7 +2527,7 @@ rxversion="8.3">
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
 			maxrange="3"
 			minrange="3"
-			name="asiaAPI_Regression">
+			name="API_Regression">
 			</smartfoldernode>
 			<testmodule
 			id="45996079-a7eb-4dde-97cc-f077b7c784a6"
@@ -4647,7 +4645,6 @@ rxversion="8.3">
 			name="Configure_Regression_Study">
 			</smartfoldernode>
 			<testmodule
-			enabled="False"
 			id="78cc2d99-f144-43b2-a7f6-cfdc428257b6"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
@@ -9118,7 +9115,7 @@ rxversion="8.3">
 					name="Platform_Tests">
 						<smartfoldernode
 						id="12672266-c3e5-4da0-bf18-959502d59662"
-						name="asiaRegression">
+						name="Regression">
 							<setup
 							id="367151ae-f3fc-44f8-989a-a21fc4e9d998"
 							name="setup">
@@ -9958,7 +9955,7 @@ rxversion="8.3">
 						</smartfoldernode>
 						<smartfoldernode
 						id="45077930-4bd9-4874-ad6a-91b58033c26a"
-						name="asiaAPI_Regression">
+						name="API_Regression">
 							<smartfoldernode
 							id="b73752fe-40fa-44f6-b806-b422d950e3cd"
 							name="V2_API">
@@ -10883,14 +10880,11 @@ rxversion="8.3">
 		<DataSource
 		id="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 		includefile="Unchecked"
-		lastknownrowcount="4"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
