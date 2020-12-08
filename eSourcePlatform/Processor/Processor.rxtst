@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -14834,6 +14834,12 @@ rxversion="8.3">
 					variableid="e5c2aa04-7fe2-461b-b36a-fd93970b5625"
 					variablename="Authentication">
 					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="589c4db9-e91e-4578-8863-bdcdd797baaf"
+					variableid="59d1e775-828d-412e-afa5-4d814458dbf5"
+					variablename="studID">
+					</var>
 				</databinding>
 			</testmodule>
 			<modulegroup
@@ -23121,12 +23127,12 @@ rxversion="8.3">
 								name="Generate_Workflow_Complete_Assessment">
 								</modulegroup>
 								<testmodule
-								id="a3761eab-c7ed-430a-b78f-7b03cd2d6655"
-								name="Validate_Outcomes">
-								</testmodule>
-								<testmodule
 								id="ad67de23-a0ee-46e4-bde5-9e5bdd109c3d"
 								name="CSPStoreProcedure">
+								</testmodule>
+								<testmodule
+								id="a3761eab-c7ed-430a-b78f-7b03cd2d6655"
+								name="Validate_Outcomes">
 								</testmodule>
 								<teardown
 								id="6aca0fec-6cb7-4212-8d0e-6d801d566ce4"
@@ -25631,14 +25637,11 @@ rxversion="8.3">
 		<DataSource
 		id="2bad88a0-51ba-4714-8183-e968bb4d6d44"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>

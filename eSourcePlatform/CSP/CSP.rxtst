@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -567,16 +567,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="ServerVersionDeployed"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
-					variablename="ServerVersion">
-					</var>
-					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="ServerVersionDeployed"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="3405ba1d-b660-45c9-ae63-2a2a96b1364e"
+					variablename="ServerVersion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -700,16 +700,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="ClientVersionDeployed"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
-					variablename="ClientVersion">
-					</var>
-					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="5573f8ac-d505-42b0-a336-394c8bca477a"
 					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="ClientVersionDeployed"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="7e058fce-68f4-4858-9c01-983db9e3c891"
+					variablename="ClientVersion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3351,14 +3351,6 @@ rxversion="8.3">
 			reportlevel="Info;20"
 			warnunboundvariables="False">
 				<parameters>
-					<param
-					name="ServerVersionDeployed"
-					value="2.6.0.40">
-					</param>
-					<param
-					name="ClientVersionDeployed"
-					value="2.6.0-rc.40">
-					</param>
 					<param
 					name="RandNum"
 					value="">
@@ -7748,6 +7740,12 @@ rxversion="8.3">
 					variableid="3e968851-9891-4442-80c2-acae5c1276e3"
 					variablename="Authentication">
 					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="b6d45e16-ac93-42ce-8faf-eb0a9367d469"
+					variablename="studID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -8122,11 +8120,10 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
-			datarangeactive="True"
 			id="f7aeffec-40a2-4d33-8dc9-107fae133bb3"
 			maxrange="0"
 			minrange="0"
-			name="CSPStoreProcedure1">
+			name="Execute_StoredProcedure">
 			</testcase>
 			<testmodule
 			id="f7c8e3d8-7899-4095-af8e-92d1207ba36b"
@@ -9364,7 +9361,7 @@ rxversion="8.3">
 								</testcase>
 								<testcase
 								id="f7aeffec-40a2-4d33-8dc9-107fae133bb3"
-								name="CSPStoreProcedure1">
+								name="Execute_StoredProcedure">
 									<testmodule
 									id="e5fe3735-92f0-49af-a2e1-9efe17e257ab"
 									name="CSPStoreProcedure">
@@ -10437,7 +10434,7 @@ rxversion="8.3">
 		<DataSource
 		id="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -11298,6 +11295,9 @@ rxversion="8.3">
 			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
 			</testcontainer>
 			<testcontainer
+			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
+			</testcontainer>
+			<testcontainer
 			id="614b5fa4-3445-4a44-8e89-b0f86d8a9e2e">
 			</testcontainer>
 			<testcontainer
@@ -11307,13 +11307,13 @@ rxversion="8.3">
 			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
 			</testcontainer>
 			<testcontainer
-			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5">
-			</testcontainer>
-			<testcontainer
 			id="6363562e-7b69-4ed2-b0f3-22d091effd47">
 			</testcontainer>
 			<testcontainer
 			id="6af7c9ee-7845-4bdf-b004-cf0db4076b2a">
+			</testcontainer>
+			<testcontainer
+			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5">
 			</testcontainer>
 			<testcontainer
 			id="6e082396-bffa-4d84-b254-0da30d111799">
@@ -11400,10 +11400,16 @@ rxversion="8.3">
 			id="ed37180b-484d-4dd9-bbb4-449b3683e04a">
 			</testcontainer>
 			<testcontainer
+			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58">
+			</testcontainer>
+			<testcontainer
 			id="f29ebf50-4fc1-4096-838b-4260b39f2e32">
 			</testcontainer>
 			<testcontainer
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
+			</testcontainer>
+			<testcontainer
+			id="f7aeffec-40a2-4d33-8dc9-107fae133bb3">
 			</testcontainer>
 			<testcontainer
 			id="f83150ed-3ddf-400b-a5cc-236e33dad44e">
@@ -11413,9 +11419,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
-			</testcontainer>
-			<testcontainer
-			id="f7aeffec-40a2-4d33-8dc9-107fae133bb3">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

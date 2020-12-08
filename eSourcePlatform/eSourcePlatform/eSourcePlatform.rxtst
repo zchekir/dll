@@ -284,8 +284,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="AuthenticationConnector"
 			id="13963861-7aff-4b48-aaad-65caef5d47f4"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="eSourcePlatform_Tests">
 			</smartfoldernode>
 			<testmodule
@@ -1623,9 +1623,9 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="1"
-			minrange="1"
-			name="Tiger_SmokeTest">
+			maxrange="0"
+			minrange="0"
+			name="SmokeTest">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -4466,7 +4466,7 @@ rxversion="8.3">
 					name="eSourcePlatform_Tests">
 						<smartfoldernode
 						id="63a0768d-8632-409b-adbf-fe7850003e81"
-						name="Tiger_SmokeTest">
+						name="SmokeTest">
 							<smartfoldernode
 							id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
 							name="Validate_CSP_API&amp;Client_Versions">
@@ -5669,7 +5669,7 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5915,13 +5915,154 @@ rxversion="8.3">
 		<DataSource
 		id="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 		includefile="Checked"
-		lastknownrowcount="11"
+		lastknownrowcount="3"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
 				<column>
-					&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+					Subject
+				</column>
+				<column>
+					Body
+				</column>
+				<column>
+					To
+				</column>
+				<column>
+					From
+				</column>
+				<column>
+					ServerHostname
+				</column>
+				<column>
+					ServerPort
+				</column>
+				<column>
+					UseSSL
+				</column>
+				<column>
+					SendEmailOnFailure
+				</column>
+				<column>
+					SendEmailOnSuccess
+				</column>
+				<column>
+					SendZippedReportOnComplete
+				</column>
+				<column>
+					SendPdfReportOnComplete
+				</column>
+				<column>
+					Browser
+				</column>
+				<column>
+					RCCDOM
+				</column>
+				<column>
+					RCCURL
+				</column>
+				<column>
+					CSPDOM
+				</column>
+				<column>
+					CSPURL
+				</column>
+				<column>
+					DCTDOM
+				</column>
+				<column>
+					DCTURL
+				</column>
+				<column>
+					Key
+				</column>
+				<column>
+					Secret
+				</column>
+				<column>
+					AzureDOM
+				</column>
+				<column>
+					AzureURL
+				</column>
+				<column>
+					DBServer
+				</column>
+				<column>
+					Database
+				</column>
+				<column>
+					RptDatabase
+				</column>
+				<column>
+					DCTDatabase
+				</column>
+				<column>
+					Authentication
+				</column>
+				<column>
+					WASurl
+				</column>
+				<column>
+					ServerVersionDeployed
+				</column>
+				<column>
+					ClientVersionDeployed
+				</column>
+				<column>
+					ExpectedDCTVersion
+				</column>
+				<column>
+					ExpectedRCCVersion
+				</column>
+				<column>
+					CSPDBVersion
+				</column>
+				<column>
+					DCT_DBVersion
+				</column>
+				<column>
+					Rep_DBVersion
+				</column>
+				<column>
+					Report_Version
+				</column>
+				<column>
+					V8Handler_Jobs
+				</column>
+				<column>
+					V8Adapter_Jobs
+				</column>
+				<column>
+					RedCapAdapter_Job&#32;
+				</column>
+				<column>
+					RedCapHandler_Jobs
+				</column>
+				<column>
+					TimeStmp
+				</column>
+				<column>
+					EvKey
+				</column>
+				<column>
+					Ahuky
+				</column>
+				<column>
+					Query
+				</column>
+				<column>
+					Absorb_WebJobs
+				</column>
+				<column>
+					Data_CleaningTool
+				</column>
+				<column>
+					DCTVersionQuery
+				</column>
+				<column>
+					RCCVersionQuery&#32;
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
@@ -6095,6 +6236,9 @@ rxversion="8.3">
 			id="1762f5a3-6821-438b-aadd-bb4002c2f2d3">
 			</testcontainer>
 			<testcontainer
+			id="1a3b5ec0-43ac-49d3-8ff7-d23f8a3ac01a">
+			</testcontainer>
+			<testcontainer
 			id="29d7aa7d-438a-48af-9c73-c769338bb4ed">
 			</testcontainer>
 			<testcontainer
@@ -6147,6 +6291,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="b6693cd2-ca67-4f83-855a-70a720f1a622">
+			</testcontainer>
+			<testcontainer
+			id="b77ce62f-f979-4ddc-90ac-3695cefcb4ad">
 			</testcontainer>
 			<testcontainer
 			id="c8f26c66-4235-4bfa-9370-a57a8c0f71eb">

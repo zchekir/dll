@@ -100,8 +100,8 @@ namespace CSP.BatteryTemplatePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdown'", repo.CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdownInfo, new ActionTimeout(10000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdownInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdown'", repo.CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdownInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdownInfo.WaitForExists(30000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdownInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.AddBatteryPage.CogstateTestDropdown.Click(1);

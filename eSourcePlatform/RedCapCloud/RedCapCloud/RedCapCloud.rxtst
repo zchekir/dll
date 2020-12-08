@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -710,6 +710,12 @@ rxversion="8.3">
 					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
 					variableid="52ab822b-84b9-4d5e-8a8d-61d6008657a0"
 					variablename="Authentication">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
+					variableid="f20ab546-4b51-460b-9528-63df357a42b7"
+					variablename="studID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3391,14 +3397,11 @@ rxversion="8.3">
 		<DataSource
 		id="f4a323b7-d763-4c96-bcdd-1b16ab93dfe3"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -3466,7 +3469,7 @@ rxversion="8.3">
 		<DataSource
 		id="50c93b54-b148-431a-bc29-2693e6c16df1"
 		includefile="Unchecked"
-		lastknownrowcount="91"
+		lastknownrowcount="112"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
