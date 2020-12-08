@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -7748,6 +7748,12 @@ rxversion="8.3">
 					variableid="3e968851-9891-4442-80c2-acae5c1276e3"
 					variablename="Authentication">
 					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="b6d45e16-ac93-42ce-8faf-eb0a9367d469"
+					variablename="studID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -8122,11 +8128,10 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
-			datarangeactive="True"
 			id="f7aeffec-40a2-4d33-8dc9-107fae133bb3"
 			maxrange="0"
 			minrange="0"
-			name="CSPStoreProcedure1">
+			name="Execute_StoredProcedure">
 			</testcase>
 			<testmodule
 			id="f7c8e3d8-7899-4095-af8e-92d1207ba36b"
@@ -9364,7 +9369,7 @@ rxversion="8.3">
 								</testcase>
 								<testcase
 								id="f7aeffec-40a2-4d33-8dc9-107fae133bb3"
-								name="CSPStoreProcedure1">
+								name="Execute_StoredProcedure">
 									<testmodule
 									id="e5fe3735-92f0-49af-a2e1-9efe17e257ab"
 									name="CSPStoreProcedure">
@@ -11307,13 +11312,13 @@ rxversion="8.3">
 			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
 			</testcontainer>
 			<testcontainer
-			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5">
-			</testcontainer>
-			<testcontainer
 			id="6363562e-7b69-4ed2-b0f3-22d091effd47">
 			</testcontainer>
 			<testcontainer
 			id="6af7c9ee-7845-4bdf-b004-cf0db4076b2a">
+			</testcontainer>
+			<testcontainer
+			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5">
 			</testcontainer>
 			<testcontainer
 			id="6e082396-bffa-4d84-b254-0da30d111799">
@@ -11406,6 +11411,9 @@ rxversion="8.3">
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
 			</testcontainer>
 			<testcontainer
+			id="f7aeffec-40a2-4d33-8dc9-107fae133bb3">
+			</testcontainer>
+			<testcontainer
 			id="f83150ed-3ddf-400b-a5cc-236e33dad44e">
 			</testcontainer>
 			<testcontainer
@@ -11413,9 +11421,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
-			</testcontainer>
-			<testcontainer
-			id="f7aeffec-40a2-4d33-8dc9-107fae133bb3">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
