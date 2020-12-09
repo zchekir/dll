@@ -120,8 +120,8 @@ namespace ReportingLayer.StandardExtract
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter'.", repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilterInfo, new RecordItemIndex(7));
-            repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter.PressKeys(TestIdentifier);
-            Delay.Milliseconds(0);
+            repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter.PressKeys(TestIdentifier, 1);
+            Delay.Milliseconds(90);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(8));
             Delay.Duration(5000, false);

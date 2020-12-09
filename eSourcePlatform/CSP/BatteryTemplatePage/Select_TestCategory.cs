@@ -24,30 +24,29 @@ namespace CSP.BatteryTemplatePage
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Select_CogstateTest recording.
+    ///The Select_TestCategory recording.
     /// </summary>
-    [TestModule("e231f99c-c036-461b-93e8-b4324c40315e", ModuleType.Recording, 1)]
-    public partial class Select_CogstateTest : ITestModule
+    [TestModule("763e34f1-3769-4df7-9ae9-fede29a19811", ModuleType.Recording, 1)]
+    public partial class Select_TestCategory : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::CSP.CSPRepository repository.
         /// </summary>
         public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
 
-        static Select_CogstateTest instance = new Select_CogstateTest();
+        static Select_TestCategory instance = new Select_TestCategory();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Select_CogstateTest()
+        public Select_TestCategory()
         {
-            BatteryBlockName = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Select_CogstateTest Instance
+        public static Select_TestCategory Instance
         {
             get { return instance; }
         }
@@ -65,13 +64,13 @@ namespace CSP.BatteryTemplatePage
         }
 
         /// <summary>
-        /// Gets or sets the value of variable BatteryBlockName.
+        /// Gets or sets the value of variable TestCategoryName.
         /// </summary>
-        [TestVariable("4b35f5bf-972d-4852-b19e-14c27e2391a6")]
-        public string BatteryBlockName
+        [TestVariable("e8160f77-8a91-4896-bad2-8efea69f9455")]
+        public string TestCategoryName
         {
-            get { return repo.BatteryBlockName; }
-            set { repo.BatteryBlockName = value; }
+            get { return repo.TestCategoryName; }
+            set { repo.TestCategoryName = value; }
         }
 
 #endregion
@@ -100,20 +99,23 @@ namespace CSP.BatteryTemplatePage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown'", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownInfo, new ActionTimeout(30000), new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdown'", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdownInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdownInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownInfo, new RecordItemIndex(1));
-            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown.Click(1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdownInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdown.Click(3);
+            Delay.Milliseconds(490);
+            
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryOption'.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryOptionInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryOption.Select();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownOption'.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownOptionInfo, new RecordItemIndex(2));
-            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownOption.Select();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdownInfo, new RecordItemIndex(3));
+            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.TestCategoryDropdown.Click(3);
+            Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown' at Center.", repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdownInfo, new RecordItemIndex(3));
-            repo.CogstateSolutionPlatform.AddBatteryTemplatePage.CogstateTestDropdown.Click();
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
+            Delay.Duration(500, false);
             
         }
 
