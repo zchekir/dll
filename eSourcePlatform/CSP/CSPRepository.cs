@@ -251,7 +251,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "cgst-qc-cricket.azurewebsites.net";
+        string _CSPDOM = "cgst-qc-jackson.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -309,6 +309,18 @@ namespace CSP
         {
             get { return _ExistingStudy; }
             set { _ExistingStudy = value; }
+        }
+
+        string _TestCategoryName = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable TestCategoryName.
+        /// </summary>
+        [TestVariable("e8160f77-8a91-4896-bad2-8efea69f9455")]
+        public string TestCategoryName
+        {
+            get { return _TestCategoryName; }
+            set { _TestCategoryName = value; }
         }
 
 #endregion
@@ -1633,6 +1645,8 @@ namespace CSP
             RepoItemInfo _cogstatetestdropdownoptionInfo;
             RepoItemInfo _saveblockbuttonInfo;
             RepoItemInfo _batteryblockcardInfo;
+            RepoItemInfo _testcategorydropdownInfo;
+            RepoItemInfo _testcategoryoptionInfo;
 
             /// <summary>
             /// Creates a new AddBatteryTemplatePage  folder.
@@ -1648,10 +1662,12 @@ namespace CSP
                 _statusrequiredvalidationInfo = new RepoItemInfo(this, "StatusRequiredValidation", ".//div[@innertext~'Status is required']", 30000, null, "58f26e92-263a-420b-98d0-cafd59c77eba");
                 _namerequiredvalidationInfo = new RepoItemInfo(this, "NameRequiredValidation", ".//div[@innertext~'Name is required']", 30000, null, "594a35b6-7e6b-4b5a-ba1a-00cc315257d2");
                 _addtestbuttonInfo = new RepoItemInfo(this, "AddTestButton", ".//img[@src~'https://'+$CSPDOM+'/asset/images/add_icon_off.png']", 30000, null, "0690d370-5e9c-4b2f-ad95-e9924f9da3e2");
-                _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_type_[0-9]+']", 30000, null, "14b1c123-0dd1-4b12-a9c7-15736c9e3f9c");
-                _cogstatetestdropdownoptionInfo = new RepoItemInfo(this, "CogstateTestDropdownOption", ".//select[@id~'formly_[0-9]+_select_type_[0-9]+']/option[@label=$BatteryBlockName]", 30000, null, "00d12e48-5341-45d4-aa4e-d21cf89a52b4");
+                _cogstatetestdropdownInfo = new RepoItemInfo(this, "CogstateTestDropdown", ".//select[@id~'formly_[0-9]+_select_templateName_[0-9]+']", 30000, null, "14b1c123-0dd1-4b12-a9c7-15736c9e3f9c");
+                _cogstatetestdropdownoptionInfo = new RepoItemInfo(this, "CogstateTestDropdownOption", ".//select[@id~'formly_[0-9]+_select_templateName_[0-9]+']/option[@label=$BatteryBlockName]", 30000, null, "00d12e48-5341-45d4-aa4e-d21cf89a52b4");
                 _saveblockbuttonInfo = new RepoItemInfo(this, "SaveBlockButton", ".//tag[@tagname='cogstate-generic-simple-edit']//button[@innertext>'SAVE' and @visible='True']", 30000, null, "9c85f83b-640a-42ac-88ee-51fec91cdaa4");
                 _batteryblockcardInfo = new RepoItemInfo(this, "BatteryBlockCard", ".//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4[@innertext=$BatteryBlockName]", 30000, null, "b9339527-389b-4f98-9ee3-d3556837eef6");
+                _testcategorydropdownInfo = new RepoItemInfo(this, "TestCategoryDropdown", ".//select[@id~'formly_[0-9]+_select_templateCategory_[0-9]+']", 30000, null, "c9ea017d-188f-4b08-b194-38367cdf8f3c");
+                _testcategoryoptionInfo = new RepoItemInfo(this, "TestCategoryOption", ".//select[@id~'formly_[0-9]+_select_templateCategory_[0-9]+']/option[@label=$TestCategoryName]", 30000, null, "51254f89-7c60-4c44-a9b5-2dec318676be");
             }
 
             /// <summary>
@@ -1951,6 +1967,54 @@ namespace CSP
                 get
                 {
                     return _batteryblockcardInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestCategoryDropdown item.
+            /// </summary>
+            [RepositoryItem("c9ea017d-188f-4b08-b194-38367cdf8f3c")]
+            public virtual Ranorex.SelectTag TestCategoryDropdown
+            {
+                get
+                {
+                    return _testcategorydropdownInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestCategoryDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("c9ea017d-188f-4b08-b194-38367cdf8f3c")]
+            public virtual RepoItemInfo TestCategoryDropdownInfo
+            {
+                get
+                {
+                    return _testcategorydropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestCategoryOption item.
+            /// </summary>
+            [RepositoryItem("51254f89-7c60-4c44-a9b5-2dec318676be")]
+            public virtual Ranorex.OptionTag TestCategoryOption
+            {
+                get
+                {
+                    return _testcategoryoptionInfo.CreateAdapter<Ranorex.OptionTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestCategoryOption item info.
+            /// </summary>
+            [RepositoryItemInfo("51254f89-7c60-4c44-a9b5-2dec318676be")]
+            public virtual RepoItemInfo TestCategoryOptionInfo
+            {
+                get
+                {
+                    return _testcategoryoptionInfo;
                 }
             }
         }

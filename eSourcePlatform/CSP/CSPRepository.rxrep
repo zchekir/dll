@@ -347,7 +347,7 @@ rxversion="8.3">
 				name="CogstateTestDropdown"
 				refimgid="53afcf2b-d7bf-4949-b36e-75a2cdad7c8e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_[0-9]+']
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_templateName_[0-9]+']
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -356,7 +356,7 @@ rxversion="8.3">
 				name="CogstateTestDropdownOption"
 				refimgid="53afcf2b-d7bf-4949-b36e-75a2cdad7c8e"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_type_[0-9]+']/option[@label=$BatteryBlockName]
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_templateName_[0-9]+']/option[@label=$BatteryBlockName]
 				</item>
 				<item
 				addcaps="unknown,webelement,buttontag"
@@ -375,6 +375,24 @@ rxversion="8.3">
 				refimgid="9208ad0f-aace-4cf7-9989-714177648eb5"
 				searchtimeout="30000ms">
 					/dom[@domain=$CSPDOM]//div[#'ng-app']//tag[@tagname='cogstate-helper-battery-reorder-card']//h4[@innertext=$BatteryBlockName]
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="selecttag"
+				id="c9ea017d-188f-4b08-b194-38367cdf8f3c"
+				name="TestCategoryDropdown"
+				refimgid="77193a10-7949-4ab1-a103-391055ec8dec"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_templateCategory_[0-9]+']
+				</item>
+				<item
+				addcaps="unknown,webelement,selecttag"
+				capname="optiontag"
+				id="51254f89-7c60-4c44-a9b5-2dec318676be"
+				name="TestCategoryOption"
+				refimgid="77193a10-7949-4ab1-a103-391055ec8dec"
+				searchtimeout="30000ms">
+					/dom[@domain=$CSPDOM]//select[@id~'formly_[0-9]+_select_templateCategory_[0-9]+']/option[@label=$TestCategoryName]
 				</item>
 			</folder>
 			<folder
@@ -3182,7 +3200,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 		name="CSPDOM">
-			cgst-qc-cricket.azurewebsites.net
+			cgst-qc-jackson.azurewebsites.net
 		</var>
 		<var
 		id="cca33cb1-e6e4-4dea-927e-63ce1b157653"
@@ -3201,6 +3219,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="9d063f2a-6b62-4a0d-9da9-ff83574e4b46"
 		name="ExistingStudy">
 			AutomationStudy
+		</var>
+		<var
+		id="e8160f77-8a91-4896-bad2-8efea69f9455"
+		name="TestCategoryName">
 		</var>
 	</variables>
 </repository>
