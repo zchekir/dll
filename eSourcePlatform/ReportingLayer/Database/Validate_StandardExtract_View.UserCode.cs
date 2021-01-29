@@ -76,7 +76,7 @@ namespace ReportingLayer.Database
  													        "PrimaryOutcome", "ReactionTime", "RawReactionTime", "RTVariability", "RawRTVariability", "Accuracy", "RawAccuracy", "TotalTrials",
  													         "TotalResponses", "TotalFalsePositive", "TotalCorrect", "TotalCorrectExclPant", "TotalCorrectFoils", "TotalErrors", "LegalErrors", "RuleBreakErrors",
 											                  "PerseverativeErrors","ReturnToHead", "TotalAnticipatory", "TotalPost", "TotalMaxout", "MovesPerSecond", "StandardScoreZ", "StandardScoreT", "ChangeScore", 
-											                   "PsyAttChange", "LearnWMStdScr", "LearnWMChange"};
+											                  "PsyAttChange", "LearnWMStdScr", "LearnWMChange", "AlternateOutcome", "AltStandardScoreZ", "AltStandardScoreT"};
         	int matchedOutcomes = 0;
         	bool resultsFlag = true;
         	
