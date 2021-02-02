@@ -72,7 +72,8 @@ namespace ReportingLayer.Database
         	string[] expectedOutcomes = new string[] {"ProtocolName", "IQNumber", "TestId", "AssessmentTestId", "TestCompletion", "TestIntegrity", "TestPerformance", "ReactionTime",
         	                                       "RawReactionTime", "RTVariability", "RawRTVariability", "Accuracy", "RawAccuracy", "TotalTrials", "TotalResponses", "TotalCorrect", "TotalErrors",
         	                                       "LegalErrors", "RuleBreakErrors", "TotalAnticipatory", "TotalPost", "TotalMaxout", "StandardScoreZ",
-												  "StandardScoreT", "ChangeScore", "TotalCorrectExclPant", "TestDuration", "PrimaryOutcome"};
+												  "StandardScoreT", "ChangeScore", "TotalCorrectExclPant", "TestDuration", "PrimaryOutcome", "RawRTDifference", "AlternateOutcome",
+        										"AltStandardScoreZ", "AltStandardScoreT"};
         	int matchedOutcomes = 0;
         	
         	//Loop over each row and print the Outcome and Value if the current column is contained in the expected outcomes array

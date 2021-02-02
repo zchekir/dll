@@ -32,10 +32,7 @@ namespace ReportingLayer.AcademicExtract
 		int i;
 		Boolean isPending;
 		DataTable dt = new DataTable();
-		
-		//Timer.Equals(2)
-		
-		
+				
 		private void Init()
 		{
 			
@@ -50,26 +47,19 @@ namespace ReportingLayer.AcademicExtract
 			string query;
 			
 			//Build SQL query and connection string
-			//Adding an if statement in here so we can query a different view for the Cricket.1 hotfix
-			if (database == "cgst-cricket-rpt")
-			{
-				query = @"SELECT * 
-						FROM [dbo].[vwAcademicExtract]
-						WHERE TestIdentifier = @TestIdentifier";
-			}
-			else
-			{
-				query = @"SELECT * 
-						FROM [extracts].[vwAcademicExtract]
-						WHERE TestIdentifier = @TestIdentifier";
-			}
+			query = @"SELECT * 
+					FROM [extracts].[vwAcademicExtract]
+					WHERE TestIdentifier = @TestIdentifier";
 			
-			//do while pending data appears in DB
+			//Outer loop will continue to run untill there is either no pending data, or the set time limit has expired
 			do{
 				
-				//Reset pending flag to false otherwise it will get stuck in loop even if data continues to flow
+				//Reset pending flag and datatable otherwise it will get stuck in loop even if data continues to flow
 				isPending = false;
+				dt.Reset();
 				
+				//This inner loop will continue to run untill the sql query returns results. This is required as there could
+				//be a delay in the data appearing in the Academic Extract View
 				do{
 					string sqlConnString = string.Format("Server={0};Database={1};User Id={2};Password={3};Authentication={4};Connection Timeout={5};", dbserver, database, username, password, authentication, "30");
 					
@@ -85,14 +75,13 @@ namespace ReportingLayer.AcademicExtract
 					
 				} while ( dt.Rows.Count < 1);
 				
-				//Loop over the entire first row and confirm there are no <Pending> cells
+				//At this point, we have the results from the AcademicExtract view.
+				//We want to Loop over each column for the first row and confirm there are no <Pending> cells
 				for ( i = 0; i < dt.Columns.Count; i++)
 				{
-					
 					if(dt.Rows[0][i].ToString() == "<Pending>")
 					{
 						isPending = true;
-						Delay.Seconds(4);
 					}
 					
 					else
@@ -102,12 +91,16 @@ namespace ReportingLayer.AcademicExtract
 					
 				}
 				
+				//Check if timer has exceeded the 5 minutes which is the max we want to wait for the data to begin flowing
 				if ( timer.Elapsed > TimeSpan.FromMinutes(5)){
 					for ( i = 0; i < dt.Columns.Count; i++){
 						Report.Failure("The following Variable is still pending: " + dt.Columns[i].ColumnName);
 					}
 					break;
 				}
+				
+				//Short delay before checking if the data is no longer pending
+				Delay.Duration(10000);
 				
 			} while (isPending);
 	
