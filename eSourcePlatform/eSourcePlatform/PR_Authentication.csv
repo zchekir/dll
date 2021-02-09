@@ -1,9 +1,6 @@
 Portal,DOM,key1,Token,studyProtocolName,dob,genderCode,localityCode,redirectError,redirect,visitSessionCode,supervisorId,visitsession,id,contactEmail,active,key,mode,InvalidSecret,S3studyProtocolName,ConfigurationID,Batteryid,studid,BatteryConfigurationReports,StudyName,Swager-URL,Swager-HTTPCODE,Swager-Key&Secret,BatteryAssessmnetID ,PrimaryOutcome,StandardScoreZ,StandardScoreT,barryDATA,WorkflowData,VisitscheduleData
 DefaultPortal,cgst-qc-jackson.azurewebsites.net,770b48c7-6a56-4635-90db-eead172baf58,f76dbae3-8042-47fb-9bc9-4cac709438f8,AutomationStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,visit1,1,110872,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,523,9797,163629,2,AutomationStudy,https://cgst-qc-jackson.azurewebsites.net/swagger,200,"{{""key"": ""770b48c7-6a56-4635-90db-eead172baf58"",""secret"": ""f76dbae3-8042-47fb-9bc9-4cac709438f8
-""}",,2.614837693,-1.499305162,85.00694838,"
-
-
-{
+""}",,2.614837693,-1.499305162,85.00694838,"{
   ""study"": {
     ""id"":<id>,
     ""name"": ""<name>"",
@@ -293,7 +290,295 @@ DefaultPortal,cgst-qc-jackson.azurewebsites.net,770b48c7-6a56-4635-90db-eead172b
   ""active"": false,
   ""visitCount"": 0
 }"
-DefaultPortal,cgst-qcpd.azurewebsites.net,f125bed3-dbbf-4aaa-b2e6-4240f5cf7d82,1b9c3b0d-4d1f-4e23-bfcd-6a9d049c5cf6,AutomationStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,visit1,1,688,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,104,324,1208,2,AutomationStudy,https://cgst-qcpd.azurewebsites.net/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
-""}",,,,,,,
-DefaultPortal,cgst-staging.azurewebsites.net,15eaab65-c27a-4efd-83c9-276650d565bc,a12bfb73-fee9-4822-8c71-2e2c32239090,AutomationStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,visit1,1,110872,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,,96,324,1208,2,AutomationStudy,https://cgst-staging.azurewebsites.ne/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
-""}",,,,,,,
+DefaultPortal,cgst-staging.azurewebsites.net,c34e5c05-a5cd-4640-9eca-27d8d4d8fa16,0cf555c3-03e3-407f-adf1-c8e46e5f33d5,AutomationStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,visit1,1,688,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,,96,324,1208,2,AutomationStudy,https://cgst-staging.azurewebsites.ne/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
+""}",,,,,"{
+  ""study"": {
+    ""id"":<id>,
+    ""name"": ""<name>"",
+    ""isDefault"": null
+  },
+  ""batteryTemplate"": {
+    ""id"": 2,
+    ""name"": ""CBB - NON INTERACTIVE DEMOS"",
+    ""isDefault"": null
+  },
+  ""translation"": {
+    ""id"": 1,
+    ""name"": ""Default"",
+    ""isDefault"": null
+  },
+  ""configuration"": null,
+  ""locked"": false,
+  ""isLockedStatus"": false,
+  ""isManuallyUpdated"": false,
+  ""scalingEnabled"": true,
+  ""scalingLower"": 75,
+  ""scalingUpper"": 100,
+  ""scalingUpperLimits"": [
+    100,
+    120
+  ],
+  ""repeatStyle"": null,
+  ""id"": 9715,
+  ""name"": ""Automation"",
+  ""description"": ""Test"",
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""numberBlocks"": 8,
+  ""taskCodes"": null,
+  ""pediatric"": false,
+  ""isSweepEnabled"": false,
+  ""desktopConfiguration"": {
+    ""basePath"": """",
+    ""localePath"": """",
+    ""translationVersion"": """",
+    ""skipAssessment"": false,
+    ""skipTests"": false,
+    ""scaleMode"": ""start"",
+    ""scalingLower"": 75,
+    ""scalingUpper"": 100,
+    ""repeatStyle"": null,
+    ""id"": 19157,
+    ""name"": ""Desktop"",
+    ""testSuites"": ""[{\""testSuiteName\"":\""CogstateTestSuite\"",\""testSuiteVersion\"":\""<ver>\"",\""configuration\"":[{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""CardInstructions\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yes_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""DetectionInstructionsDemo\""},{\""code\"":\""DetectionAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""DetectionInstructionsReal\""},{\""code\"":\""DetectionAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""NoInstructionsLearn\""},{\""code\"":\""NoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""no_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesNoInstructionsLearn\""},{\""code\"":\""YesNoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yesno_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""IdentificationInstructionsDemo\""},{\""code\"":\""IdentificationAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""IdentificationInstructionsReal\""},{\""code\"":\""IdentificationAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnecardlearningInstructionsDemo\""},{\""code\"":\""OnecardlearningAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnecardlearningInstructionsReal\""},{\""code\"":\""OnecardlearningAdultReal\"",\""integrity\"":0.5,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnebackInstructionsDemo\""},{\""code\"":\""OnebackAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnebackInstructionsReal\""},{\""code\"":\""OnebackAdultReal\"",\""integrity\"":0.7,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]}],\""testSuiteProperties\"":{},\""order\"":0}]"",
+    ""dataFormatVersion"": 1
+  },
+  ""tabletConfiguration"": {
+    ""basePath"": """",
+    ""localePath"": """",
+    ""translationVersion"": """",
+    ""skipAssessment"": false,
+    ""skipTests"": false,
+    ""scaleMode"": ""start"",
+    ""scalingLower"": 75,
+    ""scalingUpper"": 100,
+    ""repeatStyle"": null,
+    ""id"": 19158,
+    ""name"": ""Tablet"",
+    ""testSuites"": ""[{\""testSuiteName\"":\""CogstateTestSuite\"",\""testSuiteVersion\"":\""8.13.2\"",\""configuration\"":[{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""CardInstructions\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yes_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""DetectionInstructionsDemo\""},{\""code\"":\""DetectionAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""DetectionInstructionsReal\""},{\""code\"":\""DetectionAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""NoInstructionsLearn\""},{\""code\"":\""NoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""no_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesNoInstructionsLearn\""},{\""code\"":\""YesNoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yesno_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""IdentificationInstructionsDemo\""},{\""code\"":\""IdentificationAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""IdentificationInstructionsReal\""},{\""code\"":\""IdentificationAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnecardlearningInstructionsDemo\""},{\""code\"":\""OnecardlearningAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnecardlearningInstructionsReal\""},{\""code\"":\""OnecardlearningAdultReal\"",\""integrity\"":0.5,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnebackInstructionsDemo\""},{\""code\"":\""OnebackAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnebackInstructionsReal\""},{\""code\"":\""OnebackAdultReal\"",\""integrity\"":0.7,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]}],\""testSuiteProperties\"":{},\""order\"":0}]"",
+    ""dataFormatVersion"": 1
+  }
+}","{
+  ""workflowType"": {
+    ""id"": 5,
+    ""name"": ""External Embedded"",
+    ""code"": ""PRS_SHORTLIVED""
+  },
+  ""studyId"": <id>,
+  ""data"": null,
+  ""states"": [],
+  ""portalId"": null,
+  ""workflowBlocks"": [
+    {
+      ""id"": 21729,
+      ""workflowTemplateId"": null,
+      ""workflowId"": 3492,
+      ""name"": ""Simple Battery"",
+      ""data"": null,
+      ""isDecision"": false,
+      ""order"": 1,
+      ""successBlock"": {
+        ""id"": 21730,
+        ""name"": ""Set Not Measured Status"",
+        ""isDefault"": null
+      },
+      ""failBlock"": {
+        ""id"": 21731,
+        ""name"": ""Set Error Status"",
+        ""isDefault"": null
+      },
+      ""returnBlock"": null,
+      ""createDate"": ""2020-10-09T17:06:32.169037Z"",
+      ""dateLastMaint"": ""2020-10-09T17:06:32.2930917Z"",
+      ""workflowToken"": null,
+      ""type"": {
+        ""id"": 11,
+        ""name"": ""Simple battery"",
+        ""code"": ""ConfigurationShow"",
+        ""description"": null,
+        ""data"": ""SimpleBatteryShow"",
+        ""createDate"": null,
+        ""dateLastMaint"": null
+      }
+    },
+    {
+      ""id"": 21730,
+      ""workflowTemplateId"": null,
+      ""workflowId"": 3492,
+      ""name"": ""Set Not Measured Status"",
+      ""data"": ""{\""temp_SetStatus_status\"":{\""id\"":11,\""name\"":\""Not Measured\"",\""isDefault\"":null}}"",
+      ""isDecision"": false,
+      ""order"": 2,
+      ""successBlock"": {
+        ""id"": 21732,
+        ""name"": ""Finished Successful"",
+        ""isDefault"": null
+      },
+      ""failBlock"": null,
+      ""returnBlock"": null,
+      ""createDate"": ""2020-10-09T17:06:32.2150294Z"",
+      ""dateLastMaint"": ""2020-10-09T17:06:32.2930917Z"",
+      ""workflowToken"": null,
+      ""type"": {
+        ""id"": 20,
+        ""name"": ""Set status"",
+        ""code"": ""SetStatus"",
+        ""description"": null,
+        ""data"": ""SetStatus"",
+        ""createDate"": null,
+        ""dateLastMaint"": null
+      }
+    },
+    {
+      ""id"": 21731,
+      ""workflowTemplateId"": null,
+      ""workflowId"": 3492,
+      ""name"": ""Set Error Status"",
+      ""data"": ""{\""temp_SetStatus_status\"":{\""id\"":17,\""name\"":\""Error\"",\""isDefault\"":null}}"",
+      ""isDecision"": false,
+      ""order"": 3,
+      ""successBlock"": {
+        ""id"": 21733,
+        ""name"": ""Finished Error"",
+        ""isDefault"": null
+      },
+      ""failBlock"": null,
+      ""returnBlock"": null,
+      ""createDate"": ""2020-10-09T17:06:32.2306975Z"",
+      ""dateLastMaint"": ""2020-10-09T17:06:32.3087258Z"",
+      ""workflowToken"": null,
+      ""type"": {
+        ""id"": 20,
+        ""name"": ""Set status"",
+        ""code"": ""SetStatus"",
+        ""description"": null,
+        ""data"": ""SetStatus"",
+        ""createDate"": null,
+        ""dateLastMaint"": null
+      }
+    },
+    {
+      ""id"": 21732,
+      ""workflowTemplateId"": null,
+      ""workflowId"": 3492,
+      ""name"": ""Finished Successful"",
+      ""data"": ""{\""temp_Finished_data\"":1}"",
+      ""isDecision"": false,
+      ""order"": 4,
+      ""successBlock"": null,
+      ""failBlock"": null,
+      ""returnBlock"": null,
+      ""createDate"": ""2020-10-09T17:06:32.2462625Z"",
+      ""dateLastMaint"": ""2020-10-09T17:06:32.2462625Z"",
+      ""workflowToken"": null,
+      ""type"": {
+        ""id"": 12,
+        ""name"": ""Finished"",
+        ""code"": ""Finished"",
+        ""description"": null,
+        ""data"": ""Finished"",
+        ""createDate"": null,
+        ""dateLastMaint"": null
+      }
+    },
+    {
+      ""id"": 21733,
+      ""workflowTemplateId"": null,
+      ""workflowId"": 3492,
+      ""name"": ""Finished Error"",
+      ""data"": ""{\""temp_Finished_data\"":-1}"",
+      ""isDecision"": false,
+      ""order"": 5,
+      ""successBlock"": null,
+      ""failBlock"": null,
+      ""returnBlock"": null,
+      ""createDate"": ""2020-10-09T17:06:32.261841Z"",
+      ""dateLastMaint"": ""2020-10-09T17:06:32.261841Z"",
+      ""workflowToken"": null,
+      ""type"": {
+        ""id"": 12,
+        ""name"": ""Finished"",
+        ""code"": ""Finished"",
+        ""description"": null,
+        ""data"": ""Finished"",
+        ""createDate"": null,
+        ""dateLastMaint"": null
+      }
+    }
+  ],
+  ""id"": 3492,
+  ""name"": ""Test"",
+  ""description"": ""Automation"",
+  ""workflowToken"": ""Testb1be45fdc947470e964b60eb45ddbea9"",
+  ""workflowTemplate"": {
+    ""id"": 9,
+    ""name"": ""Simple Battery"",
+    ""isDefault"": null
+  },
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""assessments"": null,
+  ""workflowBlocksCount"": 0,
+  ""published"": false,
+  ""tests"": null
+}","
+
+{
+  ""visits"": [
+    {
+      ""id"": 111261,
+      ""name"": ""Visit 1"",
+      ""description"": ""test"",
+      ""order"": 1,
+      ""dataLossMitigation"": true,
+      ""dataLossMitigationNotifications"": true,
+      ""sessions"": [
+        {
+          ""automaticallyGenerated"": true,
+          ""id"": 111159,
+          ""order"": 1,
+          ""name"": ""Session 1"",
+          ""workflow"": {
+            ""id"": <workflowID>,
+            ""name"": ""Test"",
+            ""description"": ""Automation"",
+            ""workflowToken"": null,
+            ""workflowTemplate"": null,
+            ""status"": null,
+            ""assessments"": [],
+            ""workflowBlocksCount"": 0,
+            ""published"": false,
+            ""tests"": []
+          },
+          ""code"": ""<visitcode>""
+        }
+      ],
+      ""visitStatus"": {
+        ""id"": 1,
+        ""name"": ""Draft"",
+        ""isDefault"": null
+      }
+    }
+  ],
+  ""id"": 2372,
+  ""study"": {
+    ""id"": <studid>,
+    ""name"": ""APIStudy2411180"",
+    ""isDefault"": null
+  },
+  ""name"": ""<name>"",
+  ""description"": ""test"",
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""active"": false,
+  ""visitCount"": 0
+}"

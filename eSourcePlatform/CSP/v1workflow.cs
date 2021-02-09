@@ -20,48 +20,76 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace DCT.Browser
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseDCT recording.
+    ///The v1workflow recording.
     /// </summary>
-    [TestModule("7bceac10-42f9-4317-8de5-3e37a1b5b379", ModuleType.Recording, 1)]
-    public partial class CloseDCT : ITestModule
+    [TestModule("ebfd744e-016b-4c2e-b618-8aab34d536f7", ModuleType.Recording, 1)]
+    public partial class v1workflow : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::DCT.DCTRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::DCT.DCTRepository repo = global::DCT.DCTRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static CloseDCT instance = new CloseDCT();
+        static v1workflow instance = new v1workflow();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseDCT()
+        public v1workflow()
         {
-            DCTDOM = "cgst-staging-dct.azurewebsites.net";
+            DOM = "";
+            visitsessionid = "";
+            authToken = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseDCT Instance
+        public static v1workflow Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _DOM;
+
         /// <summary>
-        /// Gets or sets the value of variable DCTDOM.
+        /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("b4062045-8a57-448e-b3d6-6bd8f25d8dad")]
-        public string DCTDOM
+        [TestVariable("cb93ef1f-fd6a-4675-9c66-a751f50d841b")]
+        public string DOM
         {
-            get { return repo.DCTDOM; }
-            set { repo.DCTDOM = value; }
+            get { return _DOM; }
+            set { _DOM = value; }
+        }
+
+        string _visitsessionid;
+
+        /// <summary>
+        /// Gets or sets the value of variable visitsessionid.
+        /// </summary>
+        [TestVariable("c49f9af2-e88b-42ba-b8a0-b6a5682034af")]
+        public string visitsessionid
+        {
+            get { return _visitsessionid; }
+            set { _visitsessionid = value; }
+        }
+
+        string _authToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable authToken.
+        /// </summary>
+        [TestVariable("a09dd73d-eea5-4002-b217-5597b8288e9a")]
+        public string authToken
+        {
+            get { return _authToken; }
+            set { _authToken = value; }
         }
 
 #endregion
@@ -90,8 +118,7 @@ namespace DCT.Browser
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'DataCleaningTool'.", repo.DataCleaningTool.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.DataCleaningTool.Self, 30000);
+            GenerateV1Workflow();
             Delay.Milliseconds(0);
             
         }

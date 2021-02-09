@@ -3770,6 +3770,18 @@
       <DependentUpon>Validate_User_Unlocked.rxrec</DependentUpon>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="v1workflow.cs">
+      <BoundTo>8b2b2c4d-4fe5-4c71-90e7-c7e740582ef0</BoundTo>
+      <DependentUpon>v1workflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bfb9520b-302b-42ba-9496-42a3b68ea52e</id>
+    </Compile>
+    <Compile Include="v1workflow.UserCode.cs">
+      <BoundTo>8b2b2c4d-4fe5-4c71-90e7-c7e740582ef0</BoundTo>
+      <DependentUpon>v1workflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>165dd9da-a7c6-4e8c-a2e8-3ee6dcb8093a</id>
+    </Compile>
     <Compile Include="VisitSchedulesPage\Click_Add_VisitSchedule.cs">
       <id>bba8563e-71e0-4bf9-ab0d-e1d58723907f</id>
       <BoundTo>eb8836e3-90ae-4c43-8406-e9c56429749a</BoundTo>
@@ -5307,6 +5319,11 @@
       <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
       <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+    </None>
+    <None Include="v1workflow.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>8b2b2c4d-4fe5-4c71-90e7-c7e740582ef0</id>
+      <recordtableid>ebfd744e-016b-4c2e-b618-8aab34d536f7</recordtableid>
     </None>
     <None Include="WorkflowCreation.rxrec">
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>

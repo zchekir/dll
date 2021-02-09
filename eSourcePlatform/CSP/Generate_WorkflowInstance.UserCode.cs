@@ -139,7 +139,7 @@ namespace CSP
 		{
 			Report.Log(ReportLevel.Info, "Current Study: " + ProtocolNumber);
 			//variable
-			string url = "https://" + CSPDOM + "/api/external/V2/" + ProtocolNumber + "/AssessmentAttempt";
+			string url = "https://" + CSPDOM + "////api/external/V2/" + ProtocolNumber + "/AssessmentAttempt";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
