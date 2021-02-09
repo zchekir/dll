@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -22,6 +22,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="01018cad-2f89-413e-9417-11b023624c1b"
 			name="DateTimeGenerator"
 			ref="cf999998-58c9-4621-af29-f2668761d042"
@@ -216,6 +217,7 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="03f1ef66-8d77-49fb-b4ea-ff147231f1b1"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -792,8 +794,8 @@ rxversion="8.3">
 			datasource="TenantConnector"
 			errorbehavior="Stop"
 			id="12672266-c3e5-4da0-bf18-959502d59662"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Regression"
 			warnunboundvariables="False">
 			</smartfoldernode>
@@ -1283,8 +1285,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="20ca029a-e7c4-41e5-817f-84b8033cbe89"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Validate_Outcomes">
 			</testcase>
 			<testcase
@@ -1720,8 +1722,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="310227d9-5bc7-487b-94e5-49736d0729bc"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="CSPStoreProcedure">
 			</testcase>
 			<testmodule
@@ -2733,6 +2735,12 @@ rxversion="8.3">
 					variableid="1985b0c0-efe4-46b6-902c-4c52cb9ac83f"
 					variablename="Studname">
 					</var>
+					<var
+					dataname="internalAPIWorkflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="130b96ef-9f53-45b0-a048-9ad234a1e59b"
+					variablename="workflowID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -2845,8 +2853,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="API_Regression">
 			</smartfoldernode>
 			<testmodule
@@ -2878,6 +2886,12 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="bed4926d-b6fd-44ab-98a4-c52e31f5f26c"
 					variablename="VisitSceduleData">
+					</var>
+					<var
+					dataname="internalAPIWorkflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="604d9e04-4433-4062-af4f-0fbd0ddfa3b0"
+					variablename="workflowID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3592,6 +3606,14 @@ rxversion="8.3">
 			warnunboundvariables="False">
 				<parameters>
 					<param
+					name="ServerVersionDeployed"
+					value="3.0.1.13">
+					</param>
+					<param
+					name="ClientVersionDeployed"
+					value="3.0.1-rc.13">
+					</param>
+					<param
 					name="RandNum"
 					value="">
 					</param>
@@ -3718,10 +3740,14 @@ rxversion="8.3">
 					</param>
 					<param
 					name="Batteryversion"
-					value="8.13.4">
+					value="">
 					</param>
 					<param
 					name="visitCode"
+					value="">
+					</param>
+					<param
+					name="internalAPIWorkflowID"
 					value="">
 					</param>
 				</parameters>
@@ -4384,6 +4410,10 @@ rxversion="8.3">
 			id="69f50943-5b2d-41d4-ac43-d7cce45967af"
 			name="SwaggerAPI-UIValidation">
 			</smartfoldernode>
+			<testcase
+			id="6a0f187c-803a-441b-82fb-ac03e46a5147"
+			name="V1_workfllow">
+			</testcase>
 			<testmodule
 			id="6a6adb90-d729-4ecd-bc2f-3d5612714d3a"
 			name="Click_AddTest_Button"
@@ -4460,6 +4490,32 @@ rxversion="8.3">
 			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5"
 			name="Authenticate_and_Complete_Tiers_Assessment">
 			</testcase>
+			<testmodule
+			id="6e01c6d4-ea3e-4a30-af4f-6a592c7223b6"
+			name="v1workflow"
+			ref="ebfd744e-016b-4c2e-b618-8aab34d536f7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="visitsession"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="c49f9af2-e88b-42ba-b8a0-b6a5682034af"
+					variablename="visitsessionid">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="cb93ef1f-fd6a-4675-9c66-a751f50d841b"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="v1autoToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a09dd73d-eea5-4002-b217-5597b8288e9a"
+					variablename="authToken">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			errorbehavior="Stop"
 			id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -8506,8 +8562,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="AuthenticationConnector"
 			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Platform_Tests">
 			</smartfoldernode>
 			<testcase
@@ -8976,8 +9032,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="ReprocessWorkflowFlag">
 			</testcase>
 			<testmodule
@@ -10584,6 +10640,14 @@ rxversion="8.3">
 									</testmodule>
 								</testcase>
 								<testcase
+								id="6a0f187c-803a-441b-82fb-ac03e46a5147"
+								name="V1_workfllow">
+									<testmodule
+									id="6e01c6d4-ea3e-4a30-af4f-6a592c7223b6"
+									name="v1workflow">
+									</testmodule>
+								</testcase>
+								<testcase
 								id="d3b331a3-374a-411f-afc9-78ef0ec10851"
 								name="V1_GetStatusCode">
 									<testmodule
@@ -11034,11 +11098,14 @@ rxversion="8.3">
 		<DataSource
 		id="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="3"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
+				<column>
+					Environment
+				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -11853,6 +11920,9 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="009282f3-88a4-4e0d-a01b-5b6d827c12d5">
+			</testcontainer>
+			<testcontainer
 			id="037aeee4-7133-450a-b13e-79f6464da1e0">
 			</testcontainer>
 			<testcontainer
@@ -11862,7 +11932,16 @@ rxversion="8.3">
 			id="10c333f8-e857-4fad-823d-294804009f8b">
 			</testcontainer>
 			<testcontainer
+			id="110ac78a-ed87-4470-8509-a4ca003edb5a">
+			</testcontainer>
+			<testcontainer
 			id="12672266-c3e5-4da0-bf18-959502d59662">
+			</testcontainer>
+			<testcontainer
+			id="270aad2e-c077-43b4-9abc-ac3ac4172cf0">
+			</testcontainer>
+			<testcontainer
+			id="2783cbc3-8f87-4497-8ade-bb4f0fc9effc">
 			</testcontainer>
 			<testcontainer
 			id="282da361-4531-43ff-bad6-034e5865a477">
@@ -11877,13 +11956,22 @@ rxversion="8.3">
 			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
 			</testcontainer>
 			<testcontainer
+			id="2e724786-0867-45a5-b61c-3a0714ca1060">
+			</testcontainer>
+			<testcontainer
 			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			</testcontainer>
+			<testcontainer
+			id="3e7527cb-5ed0-4568-9fc8-2ec809398808">
 			</testcontainer>
 			<testcontainer
 			id="412bb445-283e-4dde-9da4-48d3cd481f36">
 			</testcontainer>
 			<testcontainer
 			id="4259cdc5-03a8-44ae-bcd6-3514bfd68ae3">
+			</testcontainer>
+			<testcontainer
+			id="45077930-4bd9-4874-ad6a-91b58033c26a">
 			</testcontainer>
 			<testcontainer
 			id="520c45fc-46a8-4760-a2a6-dab8bc7f54f1">
@@ -11901,7 +11989,7 @@ rxversion="8.3">
 			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
 			</testcontainer>
 			<testcontainer
-			id="614b5fa4-3445-4a44-8e89-b0f86d8a9e2e">
+			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
 			</testcontainer>
 			<testcontainer
 			id="6160b1bb-92c3-45a6-8406-78dd3e2669fa">
@@ -11911,6 +11999,12 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="6363562e-7b69-4ed2-b0f3-22d091effd47">
+			</testcontainer>
+			<testcontainer
+			id="65bc00cc-3078-4d89-8091-3f70b730ce85">
+			</testcontainer>
+			<testcontainer
+			id="6a0f187c-803a-441b-82fb-ac03e46a5147">
 			</testcontainer>
 			<testcontainer
 			id="6af7c9ee-7845-4bdf-b004-cf0db4076b2a">
@@ -11925,13 +12019,13 @@ rxversion="8.3">
 			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
 			</testcontainer>
 			<testcontainer
-			id="71767388-adac-42ff-bb7a-f3d2a2469c2c">
-			</testcontainer>
-			<testcontainer
 			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
 			</testcontainer>
 			<testcontainer
 			id="894e682e-db49-4ee2-8e3b-31645b93ba2f">
+			</testcontainer>
+			<testcontainer
+			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d">
 			</testcontainer>
 			<testcontainer
 			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
@@ -11940,7 +12034,7 @@ rxversion="8.3">
 			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
 			</testcontainer>
 			<testcontainer
-			id="97634dd0-b3df-4612-90fd-a700ed71ed6f">
+			id="98041b6b-3cd8-422a-93f4-ab23ce4fd382">
 			</testcontainer>
 			<testcontainer
 			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
@@ -11958,6 +12052,12 @@ rxversion="8.3">
 			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
 			</testcontainer>
 			<testcontainer
+			id="a95ff794-3df5-4234-b928-480259c0da91">
+			</testcontainer>
+			<testcontainer
+			id="af039c2f-3c95-43e6-8258-aa7b0d2f38f2">
+			</testcontainer>
+			<testcontainer
 			id="af611681-a31d-4cee-8edc-8344bf448a02">
 			</testcontainer>
 			<testcontainer
@@ -11973,10 +12073,19 @@ rxversion="8.3">
 			id="baf76252-a794-4bae-b009-029b41fb4909">
 			</testcontainer>
 			<testcontainer
+			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51">
+			</testcontainer>
+			<testcontainer
 			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
 			</testcontainer>
 			<testcontainer
+			id="caa16dcb-29ad-4f2f-ba50-f65f0670c1c4">
+			</testcontainer>
+			<testcontainer
 			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
+			</testcontainer>
+			<testcontainer
+			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0">
 			</testcontainer>
 			<testcontainer
 			id="cd81ca32-dcec-4820-a8ae-651f4fb352fd">
@@ -11991,10 +12100,19 @@ rxversion="8.3">
 			id="d267156a-bd78-4461-b8df-0f50f347503e">
 			</testcontainer>
 			<testcontainer
+			id="d3b331a3-374a-411f-afc9-78ef0ec10851">
+			</testcontainer>
+			<testcontainer
 			id="d5153b20-b80f-46bf-b3ad-21bc08c441a5">
 			</testcontainer>
 			<testcontainer
 			id="dff07067-effc-4890-92d8-c38fac1b341e">
+			</testcontainer>
+			<testcontainer
+			id="e00c2baf-18fc-4db9-8f47-941279980274">
+			</testcontainer>
+			<testcontainer
+			id="eae30245-2af9-4fad-bc41-3d650f99a1e8">
 			</testcontainer>
 			<testcontainer
 			id="eb3abe92-21e8-4fb2-807f-93c909ed394d">
@@ -12012,13 +12130,16 @@ rxversion="8.3">
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
 			</testcontainer>
 			<testcontainer
-			id="f7aeffec-40a2-4d33-8dc9-107fae133bb3">
-			</testcontainer>
-			<testcontainer
 			id="f83150ed-3ddf-400b-a5cc-236e33dad44e">
 			</testcontainer>
 			<testcontainer
 			id="f9dbc718-8223-442b-bf9d-4e7622d656ea">
+			</testcontainer>
+			<testcontainer
+			id="fb9f5152-9292-4c17-b26c-90c15954d105">
+			</testcontainer>
+			<testcontainer
+			id="fbb6582a-078f-40ce-9d97-9857a442e28e">
 			</testcontainer>
 			<testcontainer
 			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">

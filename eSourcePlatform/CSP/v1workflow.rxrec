@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ebfd744e-016b-4c2e-b618-8aab34d536f7"
+mode="Global"
+rxversion="8.3">
+	<name>
+		v1workflow
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="v1workflow"
+	namespace="CSP">
+	</codegen>
+	<variables>
+		<var
+		id="cb93ef1f-fd6a-4675-9c66-a751f50d841b"
+		name="DOM">
+		</var>
+		<var
+		id="c49f9af2-e88b-42ba-b8a0-b6a5682034af"
+		name="visitsessionid">
+		</var>
+		<var
+		id="a09dd73d-eea5-4002-b217-5597b8288e9a"
+		name="authToken">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="v1workflow"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="GenerateV1Workflow"
+		namespace="CSP"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f9e8faf3-9f8d-459c-aa7e-3b01738d2dbb">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CSPRepository"
+	relativepath="CSPRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CSPRepository"
+		namespace="CSP">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		v1workflow.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

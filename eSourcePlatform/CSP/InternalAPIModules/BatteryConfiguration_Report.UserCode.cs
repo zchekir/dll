@@ -79,6 +79,7 @@ namespace CSP.InternalAPIModules
 
         public void BatteryConfigurationReport(string DOM, string AuthToken)
         {
+        try{
         	
        //variables:
        string reportid= "104";
@@ -113,11 +114,7 @@ namespace CSP.InternalAPIModules
         		
         		string response= sr.ReadToEnd();
         		
-        		
-        		
-        		
-        		
-        		responseObject = new JavaScriptSerializer().Deserialize<batteryReportR>(response);
+        responseObject = new JavaScriptSerializer().Deserialize<batteryReportR>(response);
         		string ID= responseObject.id; 
         		string ReportType = responseObject.reportType;
         		string RequestDate= responseObject.requestDate;
@@ -145,6 +142,14 @@ namespace CSP.InternalAPIModules
           
         }
 
+        	
+        	
+        
+        }catch (Exception e){
+        		
+        		Report.Log(ReportLevel.Info, e.Message);
+        	}        	
+        	
     }
     }
 }
