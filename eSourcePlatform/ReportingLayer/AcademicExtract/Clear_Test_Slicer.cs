@@ -41,7 +41,6 @@ namespace ReportingLayer.AcademicExtract
         /// </summary>
         public Clear_Test_Slicer()
         {
-            TestIdentifier = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace ReportingLayer.AcademicExtract
         }
 
 #region Variables
-
-        string _TestIdentifier;
-
-        /// <summary>
-        /// Gets or sets the value of variable TestIdentifier.
-        /// </summary>
-        [TestVariable("48e1328e-f4b3-4c5d-80d4-e8f96db9e13a")]
-        public string TestIdentifier
-        {
-            get { return _TestIdentifier; }
-            set { _TestIdentifier = value; }
-        }
 
 #endregion
 

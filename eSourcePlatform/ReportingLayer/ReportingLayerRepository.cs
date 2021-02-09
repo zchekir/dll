@@ -55,7 +55,7 @@ namespace ReportingLayer
 
 #region Variables
 
-        string _ProtocolID = "";
+        string _ProtocolID = "Cricket_202011090057";
 
         /// <summary>
         /// Gets or sets the value of variable ProtocolID.
@@ -67,7 +67,7 @@ namespace ReportingLayer
             set { _ProtocolID = value; }
         }
 
-        string _CSPUsername = "zchekir@cogstate.com";
+        string _CSPUsername = "";
 
         /// <summary>
         /// Gets or sets the value of variable CSPUsername.
@@ -142,17 +142,15 @@ namespace ReportingLayer
         [RepositoryFolder("0bcadffa-23d9-4f2f-a294-3ed2de5fe67e")]
         public partial class PowerBIAppFolder : RepoGenBaseFolder
         {
-            ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder _dateofassessmentfilter;
+            ReportingLayerRepositoryFolders.FilterOptionsFolder _filteroptions;
             ReportingLayerRepositoryFolders.SlicersFolder _slicers;
             RepoItemInfo _academicextracttableInfo;
             RepoItemInfo _dateslicertorangeInfo;
             RepoItemInfo _dateslicerfromrangeInfo;
             RepoItemInfo _cleartestselectionsInfo;
             RepoItemInfo _filterbuttonInfo;
-            RepoItemInfo _scrollbarInfo;
-            RepoItemInfo _scrollleftbuttonInfo;
             RepoItemInfo _protocolidcellInfo;
-            RepoItemInfo _searchtestidentifierInfo;
+            RepoItemInfo _searchfilterboxInfo;
 
             /// <summary>
             /// Creates a new PowerBI  folder.
@@ -160,17 +158,15 @@ namespace ReportingLayer
             public PowerBIAppFolder(RepoGenBaseFolder parentFolder) :
                     base("PowerBI", "/dom[@domain='app.powerbi.com']", parentFolder, 30000, null, false, "0bcadffa-23d9-4f2f-a294-3ed2de5fe67e", "")
             {
-                _dateofassessmentfilter = new ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder(this);
+                _filteroptions = new ReportingLayerRepositoryFolders.FilterOptionsFolder(this);
                 _slicers = new ReportingLayerRepositoryFolders.SlicersFolder(this);
                 _academicextracttableInfo = new RepoItemInfo(this, "AcademicExtractTable", ".//tag[#'pvExplorationHost']//tag[@tagname='explore-canvas-modern']//tag[@tagname='transform']//div[@class='bodyCells']/div", 30000, null, "131c905f-9884-4720-94ca-3a49411a6e37");
                 _dateslicertorangeInfo = new RepoItemInfo(this, "DateSlicerToRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='1']//input", 30000, null, "f012a904-5357-4a30-9bc0-624df81514af");
                 _dateslicerfromrangeInfo = new RepoItemInfo(this, "DateSlicerFromRange", ".//tag[#'pvExplorationHost']//div[@class='date-slicer-range']/div[@class='date-slicer-control' and @childindex='0']//input", 30000, null, "04a6379f-44ba-419b-b302-034971569815");
                 _cleartestselectionsInfo = new RepoItemInfo(this, "ClearTestSelections", ".//tag[#'pvExplorationHost']//h2[@title='Test']/../span[@title='Clear selections']", 120000, null, "fe539034-422e-4b97-8136-eeaa45ce38bb");
                 _filterbuttonInfo = new RepoItemInfo(this, "FilterButton", ".//tag[#'pvExplorationHost']//tag[@tagname='visual-header-item-container']//button[@class='vcFilterRestatementBtn']/i", 30000, null, "f8ce8db1-03d7-47c6-b1b6-99c6bd175da9");
-                _scrollbarInfo = new RepoItemInfo(this, "ScrollBar", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]", 30000, null, "2b0a7c53-2baa-422f-9950-059eea3eeccb");
-                _scrollleftbuttonInfo = new RepoItemInfo(this, "ScrollLeftButton", ".//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]/div[1]/?/?/tag[@tagname='polygon']", 30000, null, "a1a5f7bb-a23f-4180-8c55-625d47459c67");
                 _protocolidcellInfo = new RepoItemInfo(this, "ProtocolIDCell", ".//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']", 300000, null, "2970ea4c-e954-448e-b58c-3b8823070f0f");
-                _searchtestidentifierInfo = new RepoItemInfo(this, "SearchTestIdentifier", ".//input[#'mat-input-0']", 30000, null, "42ff8dc7-971b-41a9-81b2-36fd58ed42d8");
+                _searchfilterboxInfo = new RepoItemInfo(this, "SearchFilterBox", ".//input[#'mat-input-0']", 30000, null, "42ff8dc7-971b-41a9-81b2-36fd58ed42d8");
             }
 
             /// <summary>
@@ -318,54 +314,6 @@ namespace ReportingLayer
             }
 
             /// <summary>
-            /// The ScrollBar item.
-            /// </summary>
-            [RepositoryItem("2b0a7c53-2baa-422f-9950-059eea3eeccb")]
-            public virtual Ranorex.DivTag ScrollBar
-            {
-                get
-                {
-                    return _scrollbarInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ScrollBar item info.
-            /// </summary>
-            [RepositoryItemInfo("2b0a7c53-2baa-422f-9950-059eea3eeccb")]
-            public virtual RepoItemInfo ScrollBarInfo
-            {
-                get
-                {
-                    return _scrollbarInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ScrollLeftButton item.
-            /// </summary>
-            [RepositoryItem("a1a5f7bb-a23f-4180-8c55-625d47459c67")]
-            public virtual Ranorex.WebElement ScrollLeftButton
-            {
-                get
-                {
-                    return _scrollleftbuttonInfo.CreateAdapter<Ranorex.WebElement>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ScrollLeftButton item info.
-            /// </summary>
-            [RepositoryItemInfo("a1a5f7bb-a23f-4180-8c55-625d47459c67")]
-            public virtual RepoItemInfo ScrollLeftButtonInfo
-            {
-                get
-                {
-                    return _scrollleftbuttonInfo;
-                }
-            }
-
-            /// <summary>
             /// The ProtocolIDCell item.
             /// </summary>
             [RepositoryItem("2970ea4c-e954-448e-b58c-3b8823070f0f")]
@@ -390,36 +338,36 @@ namespace ReportingLayer
             }
 
             /// <summary>
-            /// The SearchTestIdentifier item.
+            /// The SearchFilterBox item.
             /// </summary>
             [RepositoryItem("42ff8dc7-971b-41a9-81b2-36fd58ed42d8")]
-            public virtual Ranorex.InputTag SearchTestIdentifier
+            public virtual Ranorex.InputTag SearchFilterBox
             {
                 get
                 {
-                    return _searchtestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _searchfilterboxInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SearchTestIdentifier item info.
+            /// The SearchFilterBox item info.
             /// </summary>
             [RepositoryItemInfo("42ff8dc7-971b-41a9-81b2-36fd58ed42d8")]
-            public virtual RepoItemInfo SearchTestIdentifierInfo
+            public virtual RepoItemInfo SearchFilterBoxInfo
             {
                 get
                 {
-                    return _searchtestidentifierInfo;
+                    return _searchfilterboxInfo;
                 }
             }
 
             /// <summary>
-            /// The DateOfAssessmentFilter folder.
+            /// The FilterOptions folder.
             /// </summary>
             [RepositoryFolder("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
-            public virtual ReportingLayerRepositoryFolders.DateOfAssessmentFilterFolder DateOfAssessmentFilter
+            public virtual ReportingLayerRepositoryFolders.FilterOptionsFolder FilterOptions
             {
-                get { return _dateofassessmentfilter; }
+                get { return _filteroptions; }
             }
 
             /// <summary>
@@ -433,26 +381,25 @@ namespace ReportingLayer
         }
 
         /// <summary>
-        /// The DateOfAssessmentFilterFolder folder.
+        /// The FilterOptionsFolder folder.
         /// </summary>
         [RepositoryFolder("e6fbb293-72d4-434b-a38b-f189e71cd4f8")]
-        public partial class DateOfAssessmentFilterFolder : RepoGenBaseFolder
+        public partial class FilterOptionsFolder : RepoGenBaseFolder
         {
+            ReportingLayerRepositoryFolders.TestIdentifierFilterFolder _testidentifierfilter;
             RepoItemInfo _isinthisdropdownInfo;
             RepoItemInfo _daydropdownInfo;
             RepoItemInfo _applyfilterbuttonInfo;
             RepoItemInfo _filtertypedropdownInfo;
             RepoItemInfo _expandInfo;
-            RepoItemInfo _expandtestidentifierdropboxInfo;
-            RepoItemInfo _enterthettestidentifierInfo;
-            RepoItemInfo _checkthecheckbosInfo;
 
             /// <summary>
-            /// Creates a new DateOfAssessmentFilter  folder.
+            /// Creates a new FilterOptions  folder.
             /// </summary>
-            public DateOfAssessmentFilterFolder(RepoGenBaseFolder parentFolder) :
-                    base("DateOfAssessmentFilter", ".//section[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
+            public FilterOptionsFolder(RepoGenBaseFolder parentFolder) :
+                    base("FilterOptions", ".//section[#'visualFilterContainer']", parentFolder, 30000, null, false, "e6fbb293-72d4-434b-a38b-f189e71cd4f8", "")
             {
+                _testidentifierfilter = new ReportingLayerRepositoryFolders.TestIdentifierFilterFolder(this);
                 _isinthisdropdownInfo = new RepoItemInfo(this, "IsInThisDropdown", "div[2]/div/tag[9]/div/div[2]//div/tag[@id='mat-select-139']", 30000, null, "773854ca-7a32-4c97-93e9-0aae1cf4c64c");
                 _daydropdownInfo = new RepoItemInfo(this, "DayDropdown", "div[2]/div/tag[9]//tag[@id='mat-select-132']", 30000, null, "4a647ead-1d67-4b7d-ab1c-bc3fc3d6774b");
                 _applyfilterbuttonInfo = new RepoItemInfo(this, "ApplyFilterButton", "div[2]//tag[9]//form[@name='$ctrl.filterForm']/button[@innertext='Apply filter']", 30000, null, "f5f9f142-7a61-4caf-a45c-e9244d4b2fb2");
@@ -608,74 +555,129 @@ namespace ReportingLayer
             }
 
             /// <summary>
-            /// The ExpandTestIdentifierDropBox item.
+            /// The TestIdentifierFilter folder.
+            /// </summary>
+            [RepositoryFolder("5f047f48-e6db-4482-9816-608aba1a333b")]
+            public virtual ReportingLayerRepositoryFolders.TestIdentifierFilterFolder TestIdentifierFilter
+            {
+                get { return _testidentifierfilter; }
+            }
+        }
+
+        /// <summary>
+        /// The TestIdentifierFilterFolder folder.
+        /// </summary>
+        [RepositoryFolder("5f047f48-e6db-4482-9816-608aba1a333b")]
+        public partial class TestIdentifierFilterFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _expandfilterInfo;
+            RepoItemInfo _searchfilterInfo;
+            RepoItemInfo _checkboxoptionInfo;
+
+            /// <summary>
+            /// Creates a new TestIdentifierFilter  folder.
+            /// </summary>
+            public TestIdentifierFilterFolder(RepoGenBaseFolder parentFolder) :
+                    base("TestIdentifierFilter", "div/div/tag/div", parentFolder, 30000, null, false, "5f047f48-e6db-4482-9816-608aba1a333b", "")
+            {
+                _expandfilterInfo = new RepoItemInfo(this, "ExpandFilter", "div[1]/div[1]//mark[@innertext='TestIdentifier']", 30000, null, "68ce9f41-6740-4a79-a539-1f43daa7274d");
+                _searchfilterInfo = new RepoItemInfo(this, "SearchFilter", "div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']", 30000, null, "5018c724-014d-4b63-b339-7a52e7f55804");
+                _checkboxoptionInfo = new RepoItemInfo(this, "CheckboxOption", "div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span", 30000, null, "68190d81-74fc-42d0-90a8-3a09b5d92c4a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5f047f48-e6db-4482-9816-608aba1a333b")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5f047f48-e6db-4482-9816-608aba1a333b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExpandFilter item.
             /// </summary>
             [RepositoryItem("68ce9f41-6740-4a79-a539-1f43daa7274d")]
-            public virtual Ranorex.MarkTag ExpandTestIdentifierDropBox
+            public virtual Ranorex.MarkTag ExpandFilter
             {
                 get
                 {
-                    return _expandtestidentifierdropboxInfo.CreateAdapter<Ranorex.MarkTag>(true);
+                    return _expandfilterInfo.CreateAdapter<Ranorex.MarkTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ExpandTestIdentifierDropBox item info.
+            /// The ExpandFilter item info.
             /// </summary>
             [RepositoryItemInfo("68ce9f41-6740-4a79-a539-1f43daa7274d")]
-            public virtual RepoItemInfo ExpandTestIdentifierDropBoxInfo
+            public virtual RepoItemInfo ExpandFilterInfo
             {
                 get
                 {
-                    return _expandtestidentifierdropboxInfo;
+                    return _expandfilterInfo;
                 }
             }
 
             /// <summary>
-            /// The EnterThetTestIdentifier item.
+            /// The SearchFilter item.
             /// </summary>
             [RepositoryItem("5018c724-014d-4b63-b339-7a52e7f55804")]
-            public virtual Ranorex.InputTag EnterThetTestIdentifier
+            public virtual Ranorex.InputTag SearchFilter
             {
                 get
                 {
-                    return _enterthettestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _searchfilterInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The EnterThetTestIdentifier item info.
+            /// The SearchFilter item info.
             /// </summary>
             [RepositoryItemInfo("5018c724-014d-4b63-b339-7a52e7f55804")]
-            public virtual RepoItemInfo EnterThetTestIdentifierInfo
+            public virtual RepoItemInfo SearchFilterInfo
             {
                 get
                 {
-                    return _enterthettestidentifierInfo;
+                    return _searchfilterInfo;
                 }
             }
 
             /// <summary>
-            /// The CheckThecheckBos item.
+            /// The CheckboxOption item.
             /// </summary>
             [RepositoryItem("68190d81-74fc-42d0-90a8-3a09b5d92c4a")]
-            public virtual Ranorex.SpanTag CheckThecheckBos
+            public virtual Ranorex.SpanTag CheckboxOption
             {
                 get
                 {
-                    return _checkthecheckbosInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _checkboxoptionInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The CheckThecheckBos item info.
+            /// The CheckboxOption item info.
             /// </summary>
             [RepositoryItemInfo("68190d81-74fc-42d0-90a8-3a09b5d92c4a")]
-            public virtual RepoItemInfo CheckThecheckBosInfo
+            public virtual RepoItemInfo CheckboxOptionInfo
             {
                 get
                 {
-                    return _checkthecheckbosInfo;
+                    return _checkboxoptionInfo;
                 }
             }
         }
@@ -690,8 +692,8 @@ namespace ReportingLayer
             RepoItemInfo _testslicerbodyInfo;
             RepoItemInfo _siteidslicerbodyInfo;
             RepoItemInfo _dateslicerbodyInfo;
-            RepoItemInfo _serchtestidentifierInfo;
-            RepoItemInfo _selectcheckboxInfo;
+            RepoItemInfo _searchtestidentifierInfo;
+            RepoItemInfo _testidentifierselectboxInfo;
 
             /// <summary>
             /// Creates a new Slicers  folder.
@@ -703,8 +705,8 @@ namespace ReportingLayer
                 _testslicerbodyInfo = new RepoItemInfo(this, "TestSlicerBody", "tag[5]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]", 30000, null, "3f99a176-f3af-4e53-8c11-f115069afc48");
                 _siteidslicerbodyInfo = new RepoItemInfo(this, "SiteIDSlicerBody", "tag[2]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]", 30000, null, "b05ef6a2-43ac-4d29-b839-242c690c08ac");
                 _dateslicerbodyInfo = new RepoItemInfo(this, "DateSlicerBody", "tag[3]/tag[@tagname='transform']/div/div[3]//tag[@tagname='visual-modern']/div/div/div[2]", 30000, null, "af1f76d8-01ad-4387-9c5a-ce6d35897376");
-                _serchtestidentifierInfo = new RepoItemInfo(this, "SerchTestIdentifier", "tag[4]/tag[@tagname='transform']/div/div[3]/?/?/tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']", 30000, null, "dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a");
-                _selectcheckboxInfo = new RepoItemInfo(this, "SelectCheckBox", "tag[4]/tag[@tagname='transform']/div/div[3]/?/?/tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span", 30000, null, "992439ee-2d5e-40c3-b64c-bb82dd64be9f");
+                _searchtestidentifierInfo = new RepoItemInfo(this, "SearchTestIdentifier", "tag[4]/tag[@tagname='transform']/div/div[3]/?/?/tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']", 30000, null, "dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a");
+                _testidentifierselectboxInfo = new RepoItemInfo(this, "TestIdentifierSelectBox", "tag[4]/tag[@tagname='transform']/div/div[3]/?/?/tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span", 30000, null, "992439ee-2d5e-40c3-b64c-bb82dd64be9f");
             }
 
             /// <summary>
@@ -828,50 +830,50 @@ namespace ReportingLayer
             }
 
             /// <summary>
-            /// The SerchTestIdentifier item.
+            /// The SearchTestIdentifier item.
             /// </summary>
             [RepositoryItem("dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a")]
-            public virtual Ranorex.InputTag SerchTestIdentifier
+            public virtual Ranorex.InputTag SearchTestIdentifier
             {
                 get
                 {
-                    return _serchtestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _searchtestidentifierInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SerchTestIdentifier item info.
+            /// The SearchTestIdentifier item info.
             /// </summary>
             [RepositoryItemInfo("dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a")]
-            public virtual RepoItemInfo SerchTestIdentifierInfo
+            public virtual RepoItemInfo SearchTestIdentifierInfo
             {
                 get
                 {
-                    return _serchtestidentifierInfo;
+                    return _searchtestidentifierInfo;
                 }
             }
 
             /// <summary>
-            /// The SelectCheckBox item.
+            /// The TestIdentifierSelectBox item.
             /// </summary>
             [RepositoryItem("992439ee-2d5e-40c3-b64c-bb82dd64be9f")]
-            public virtual Ranorex.SpanTag SelectCheckBox
+            public virtual Ranorex.SpanTag TestIdentifierSelectBox
             {
                 get
                 {
-                    return _selectcheckboxInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _testidentifierselectboxInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The SelectCheckBox item info.
+            /// The TestIdentifierSelectBox item info.
             /// </summary>
             [RepositoryItemInfo("992439ee-2d5e-40c3-b64c-bb82dd64be9f")]
-            public virtual RepoItemInfo SelectCheckBoxInfo
+            public virtual RepoItemInfo TestIdentifierSelectBoxInfo
             {
                 get
                 {
-                    return _selectcheckboxInfo;
+                    return _testidentifierselectboxInfo;
                 }
             }
         }
@@ -1092,7 +1094,6 @@ namespace ReportingLayer
         [RepositoryFolder("79b279ed-4201-4681-9e78-6e34e2578758")]
         public partial class SingleSignOnCogstateAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _brandingInfo;
             RepoItemInfo _cogstateusernamefieldInfo;
             RepoItemInfo _cogstatepasswordfieldInfo;
             RepoItemInfo _submitbuttonInfo;
@@ -1103,7 +1104,6 @@ namespace ReportingLayer
             public SingleSignOnCogstateAppFolder(RepoGenBaseFolder parentFolder) :
                     base("SingleSignOnCogstate", "/dom[@domain='login.cogstate.com']", parentFolder, 30000, null, false, "79b279ed-4201-4681-9e78-6e34e2578758", "")
             {
-                _brandingInfo = new RepoItemInfo(this, "Branding", ".//div[#'branding']", 30000, null, "f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4");
                 _cogstateusernamefieldInfo = new RepoItemInfo(this, "CogstateUserNameField", ".//input[#'userNameInput']", 30000, null, "4f745b3b-b5c8-4ac0-a135-b47d3084de38");
                 _cogstatepasswordfieldInfo = new RepoItemInfo(this, "CogstatePasswordField", ".//input[#'passwordInput']", 30000, null, "fda9b54b-fd26-4322-916f-b1743bff83de");
                 _submitbuttonInfo = new RepoItemInfo(this, "SubmitButton", ".//span[#'submitButton']", 30000, null, "cc687361-2175-4f48-8f23-35ffaa35f190");
@@ -1130,30 +1130,6 @@ namespace ReportingLayer
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Branding item.
-            /// </summary>
-            [RepositoryItem("f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4")]
-            public virtual Ranorex.DivTag Branding
-            {
-                get
-                {
-                    return _brandingInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Branding item info.
-            /// </summary>
-            [RepositoryItemInfo("f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4")]
-            public virtual RepoItemInfo BrandingInfo
-            {
-                get
-                {
-                    return _brandingInfo;
                 }
             }
 

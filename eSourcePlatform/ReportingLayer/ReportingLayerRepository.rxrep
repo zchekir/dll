@@ -1,4 +1,5 @@
-﻿<repository
+<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="ea6a006e-6d85-4695-88f7-8d684bce0248"
 name="ReportingLayerRepository"
 rxversion="8.3">
@@ -67,38 +68,28 @@ rxversion="8.3">
 			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
-			id="2b0a7c53-2baa-422f-9950-059eea3eeccb"
-			name="ScrollBar"
-			refimgid="63c9d5c8-074c-4d08-b7f0-08082d177bd3"
-			refpath="/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/div/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]/tag[@tagname='visual-container-repeat']/tag[1]/tag/div/div[3]/tag/div/div/div[2]/div[3]"
-			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]
-			</item>
-			<item
-			addcaps="unknown,webelement"
-			capname="webelement"
-			id="a1a5f7bb-a23f-4180-8c55-625d47459c67"
-			name="ScrollLeftButton"
-			refimgid="68aa368b-93fb-4644-a181-7db130bfc121"
-			refpath="/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/div/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]/tag[@tagname='visual-container-repeat']/tag[1]/tag/div/div[3]/tag/div/div/div[2]/div[3]/div[1]/tag/tag[@tagname='polygon']"
-			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]//tag[@tagname='transform']/div/div[3]/tag/div/div/div[2]/div[3]/div[1]/?/?/tag[@tagname='polygon']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
 			id="2970ea4c-e954-448e-b58c-3b8823070f0f"
 			name="ProtocolIDCell"
 			refimgid="e7be68d3-72f2-4b61-8187-28171422870f"
 			searchtimeout="300000ms">
 				/dom[@domain='app.powerbi.com']//div[@class='bodyCells']//div[@innertext=$ProtocolID and @childindex='0']
 			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="42ff8dc7-971b-41a9-81b2-36fd58ed42d8"
+			name="SearchFilterBox"
+			refimgid="118c4597-be8f-4644-a081-87b9476d6a41"
+			refpath="/dom[@domain='app.powerbi.com']//input[#'mat-input-0']"
+			searchtimeout="30000ms">
+				/dom[@domain='app.powerbi.com']//input[#'mat-input-0']
+			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
 			capname="sectiontag"
 			id="e6fbb293-72d4-434b-a38b-f189e71cd4f8"
 			isrooted="True"
-			name="DateOfAssessmentFilter"
+			name="FilterOptions"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -146,33 +137,44 @@ rxversion="8.3">
 				searchtimeout="30000ms">
 					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div[2]//tag[9]//button[@title='Expand']
 				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="marktag"
-				id="68ce9f41-6740-4a79-a539-1f43daa7274d"
-				name="ExpandTestIdentifierDropBox"
-				refimgid="71e7a020-079c-49da-95ef-3c51388edcde"
-				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[49]/div/div[1]/div[1]/h2[@title~'^''vwStandardExtract''\[TestI']//mark[@innertext='TestIdentifier']
-				</item>
-				<item
-				addcaps="unknown,webelement,inputtag"
-				capname="inputtag"
-				id="5018c724-014d-4b63-b339-7a52e7f55804"
-				name="EnterThetTestIdentifier"
-				refimgid="4f492eba-d98c-46de-9c34-4e4839b0d7c7"
-				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag[49]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="68190d81-74fc-42d0-90a8-3a09b5d92c4a"
-				name="CheckThecheckBos"
-				refimgid="8205399e-108e-4e9c-a6ac-5aead6c6724c"
-				searchtimeout="30000ms">
-					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/?/?/div/tag[49]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span
-				</item>
+				<folder
+				capname="divtag"
+				id="5f047f48-e6db-4482-9816-608aba1a333b"
+				isrooted="True"
+				name="TestIdentifierFilter"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="unknown,webelement,divtag"
+					capname="marktag"
+					id="68ce9f41-6740-4a79-a539-1f43daa7274d"
+					name="ExpandFilter"
+					refimgid="71e7a020-079c-49da-95ef-3c51388edcde"
+					searchtimeout="30000ms">
+						/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag/div/div/div/tag[49]/div/div[1]/div[1]/h2[@title~'^''vwStandardExtract''\[TestI']//mark[@innertext='TestIdentifier']
+					</item>
+					<item
+					addcaps="unknown,webelement,inputtag"
+					capname="inputtag"
+					id="5018c724-014d-4b63-b339-7a52e7f55804"
+					name="SearchFilter"
+					refimgid="4f492eba-d98c-46de-9c34-4e4839b0d7c7"
+					searchtimeout="30000ms">
+						/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag/div/div/div/tag[49]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input
+					</item>
+					<item
+					addcaps="unknown,webelement,spantag"
+					capname="spantag"
+					id="68190d81-74fc-42d0-90a8-3a09b5d92c4a"
+					name="CheckboxOption"
+					refimgid="8205399e-108e-4e9c-a6ac-5aead6c6724c"
+					searchtimeout="30000ms">
+						/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag/div/?/?/div/tag[49]/div/div[2]/div[2]//tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/?/?/div/span
+					</item>
+					<basepath>
+						/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']/div/div/tag/div
+					</basepath>
+				</folder>
 				<basepath>
 					/dom[@domain='app.powerbi.com']//section[#'visualFilterContainer']
 				</basepath>
@@ -225,7 +227,7 @@ rxversion="8.3">
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="dfebdf0b-fefb-40ee-a6b6-ff4b7db1053a"
-				name="SerchTestIdentifier"
+				name="SearchTestIdentifier"
 				refimgid="22efc774-3bec-4b32-b945-98b20f34fa2d"
 				refpath="/dom[@domain='app.powerbi.com' and @caption='AcademicExtract-JACKSON - Power BI']//tag[#'pvExplorationHost']/div/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]/tag[@tagname='visual-container-repeat']/tag[4]/tag[@tagname='transform']/div/div[3]/div/tag[@tagname='visual-modern']/div/div/div[2]/div/div[1]/input[@type='text']"
 				searchtimeout="30000ms">
@@ -235,7 +237,7 @@ rxversion="8.3">
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
 				id="992439ee-2d5e-40c3-b64c-bb82dd64be9f"
-				name="SelectCheckBox"
+				name="TestIdentifierSelectBox"
 				refimgid="e91258df-583d-436a-8c3d-30d142a3b012"
 				refpath="/dom[@domain='app.powerbi.com' and @caption='AcademicExtract-JACKSON - Power BI']//tag[#'pvExplorationHost']/div/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']/div/div[2]/div/div[2]/div[2]/tag[@tagname='visual-container-repeat']/tag[4]/tag[@tagname='transform']/div/div[3]/div/tag[@tagname='visual-modern']/div/div/div[2]/div/div[2]/div/div[1]/div/div/div/div/div/span"
 				searchtimeout="30000ms">
@@ -245,16 +247,6 @@ rxversion="8.3">
 					/dom[@domain='app.powerbi.com']//tag[#'pvExplorationHost']/?/?/div/tag[@tagname='exploration']/div/tag[@tagname='explore-canvas-modern']//tag[@tagname='visual-container-repeat']
 				</basepath>
 			</folder>
-			<item
-			addcaps="unknown,webelement,inputtag"
-			capname="inputtag"
-			id="42ff8dc7-971b-41a9-81b2-36fd58ed42d8"
-			name="SearchTestIdentifier"
-			refimgid="118c4597-be8f-4644-a081-87b9476d6a41"
-			refpath="/dom[@domain='app.powerbi.com']//input[#'mat-input-0']"
-			searchtimeout="30000ms">
-				/dom[@domain='app.powerbi.com']//input[#'mat-input-0']
-			</item>
 			<basepath>
 				/dom[@domain='app.powerbi.com']
 			</basepath>
@@ -388,16 +380,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="f1e1b2d9-4221-4b2d-afc6-64b1296b0ad4"
-			name="Branding"
-			refimgid="0aa3ed56-956d-4e88-a5b2-d7e3f8d4c701"
-			refpath="/dom[@domain='login.cogstate.com']//div[#'branding']"
-			searchtimeout="30000ms">
-				/dom[@domain='login.cogstate.com']//div[#'branding']
-			</item>
-			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="4f745b3b-b5c8-4ac0-a135-b47d3084de38"
@@ -453,11 +435,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="205a61dc-d836-474a-ab6f-210750f02768"
 		name="ProtocolID">
+			Cricket_202011090057
 		</var>
 		<var
 		id="a0579069-e2a3-47be-9d8f-92cfed3c7d44"
 		name="CSPUsername">
-			zchekir@cogstate.com
 		</var>
 	</variables>
 </repository>

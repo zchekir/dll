@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -644,6 +644,20 @@ rxversion="8.3">
 					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3f392ed9-a6bc-4f1f-bcde-0107ee497bd4"
+			name="Add_IntegrationUser"
+			ref="988336d3-722d-46bf-a658-6355e965e1a4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1691,6 +1705,34 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a16ae3ba-b73f-44e2-938c-43038cf39f82"
+			name="Add_IntegrationUser_API_Key"
+			ref="99e3a789-7644-424b-a824-b5f2b74280fa"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a25e45ad-8be6-4575-b77e-3fd41313ab5a"
+			name="Click_Add_User"
+			ref="24fb6bd1-511f-4621-908d-33c70865effd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="92948073-7043-4f37-800e-e7d1f3db3384"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a2b52a20-44ec-4465-981b-2394240a0938"
 			name="Validate_CRFs_Added"
 			ref="55026c2e-7197-4596-8c0c-6275a4b2fc64"
@@ -2353,7 +2395,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="e61f94ae-e947-4d07-8c2d-1ad2af70a519"
-			name="Verify_Integration_User">
+			name="Add_Integration_User">
 			</testcase>
 			<testcase
 			id="e6eac571-b3c4-4075-ad7f-a77704f9315d"
@@ -2708,7 +2750,7 @@ rxversion="8.3">
 								</testcase>
 								<testcase
 								id="e61f94ae-e947-4d07-8c2d-1ad2af70a519"
-								name="Verify_Integration_User">
+								name="Add_Integration_User">
 									<testmodule
 									id="0f7648de-76c9-45f2-9b3a-607d8161c6ef"
 									name="Click_MyStudies">
@@ -2720,6 +2762,18 @@ rxversion="8.3">
 									<testmodule
 									id="9f16d31c-a22b-41ed-bb8e-5a893588876c"
 									name="Click_Users_Tab">
+									</testmodule>
+									<testmodule
+									id="a25e45ad-8be6-4575-b77e-3fd41313ab5a"
+									name="Click_Add_User">
+									</testmodule>
+									<testmodule
+									id="3f392ed9-a6bc-4f1f-bcde-0107ee497bd4"
+									name="Add_IntegrationUser">
+									</testmodule>
+									<testmodule
+									id="a16ae3ba-b73f-44e2-938c-43038cf39f82"
+									name="Add_IntegrationUser_API_Key">
 									</testmodule>
 									<testmodule
 									id="e7461d7f-23b6-4d70-9a20-74b31d753949"

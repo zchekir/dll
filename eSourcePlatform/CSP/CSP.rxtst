@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -33,6 +33,20 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="5f6625fd-29d9-4d66-9ca7-3b41aa87ff77"
 					variablename="RandNum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="01df6be2-9d37-4f44-b3cc-d4132f42974b"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -182,6 +196,20 @@ rxversion="8.3">
 			name="V2_AssessmentAttemptStatus">
 			</testcase>
 			<testmodule
+			id="04716ac4-bcca-461f-ad6a-7c79df1e996b"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="05585686-2b2c-49f4-8e88-828589d9cab2"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -277,6 +305,102 @@ rxversion="8.3">
 				</databinding>
 			</modulegroup>
 			<testmodule
+			id="0812dd5d-4f05-47c9-8a6c-e4cae3bd8c9f"
+			name="Validate_16Tier_Threshold"
+			ref="dd61a28c-fae8-45fc-92bc-dbd87f49dbbd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="7a627cd3-fbdb-4fd5-ab42-6f04be5a0306"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="f3d0aae9-e3f6-495b-ad7d-672c05eeefcb"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="c32d63f7-d06d-4212-95e9-d7865d44f8b5"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="e1b16eb3-767b-49da-9d8d-7509a1f40132"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cd7e8696-035e-42ed-867d-8b2ad4c73444"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="093fb2b9-0f33-44c9-90b6-053c95b63965"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6587cc16-7399-489c-b90f-2be274a47ae5"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="PsyAttStdScr"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="e876b2f2-cb7d-4341-af05-959492c22d9d"
+					variablename="PsyAttStdScr">
+					</var>
+					<var
+					dataname="LearnWMStdScr"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="abd90b34-c335-475e-baa4-20c64d67898b"
+					variablename="LearnWMStdScr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="09542f02-99b5-4fe0-abf0-9593dadeee7b"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="09a94e44-e622-4992-9176-b2bec789bc8a"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="09d3606d-6b0c-4038-b7ff-e8ffa9bac093"
 			name="Click_External_Users_Menu"
 			ref="87fa94c0-fd9a-48b5-b2d8-c6c921ec6b9a"
@@ -290,6 +414,38 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="09e43d31-1b9f-49e2-9905-6a1a982c6531"
+			maxrange="199"
+			minrange="196"
+			name="BatteryFour">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing Smartphone CBB</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="BatteryFour">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="0ba7de74-4e84-47cc-aaf2-9a5c68da179d"
 			name="Validate_Outcomes"
@@ -309,18 +465,6 @@ rxversion="8.3">
 					variablename="Authentication">
 					</var>
 					<var
-					dataname="DBServer"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="d56a6c72-05e1-4210-997c-d11330351985"
-					variablename="DBServer">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="56ca321f-3094-4886-8c9f-92983c426690"
-					variablename="Database">
-					</var>
-					<var
 					dataname="Filename"
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="32eb6b65-3e01-4dd3-b16f-78e83dd26705"
@@ -338,12 +482,44 @@ rxversion="8.3">
 					variableid="59824432-8863-42bc-a1bb-4fa7b78a2f59"
 					variablename="dbPassword">
 					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="d56a6c72-05e1-4210-997c-d11330351985"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="56ca321f-3094-4886-8c9f-92983c426690"
+					variablename="Database">
+					</var>
 				</databinding>
 			</testmodule>
 			<setup
 			id="0bef2c19-5c35-496b-a566-b0945dacd0c1"
 			name="setup">
 			</setup>
+			<testmodule
+			id="0c1787a7-9756-4ca9-a5c1-e93a17007861"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="0c19a365-c2b7-469b-8a51-9ca6cc15f33e"
 			name="oDataAPI"
@@ -354,6 +530,20 @@ rxversion="8.3">
 					dataname="DOM"
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="c8b4b7d8-5ec1-44d1-9ce3-70a3bdb9b058"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0c245fdc-de04-45e7-947e-fd686645b2f5"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
 				</databinding>
@@ -404,6 +594,40 @@ rxversion="8.3">
 			ref="15158e27-62c6-421e-8f81-285f7498807a"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0f14430d-dfa4-4b62-acb0-2ad2c7bb53bb"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0f3a721e-fe6d-4696-b4c0-6cdd8aa855d2"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
 					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
@@ -536,6 +760,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="12dc45b0-0187-4fb4-ae20-9fba779ebde2"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="136b90aa-05b2-4c50-8288-5e69053320d5"
 			name="Verify_Secure_URL"
 			ref="8720e4ed-cabc-4f47-8984-b71fc93cb4df"
@@ -561,14 +799,96 @@ rxversion="8.3">
 			ref="74cc38b7-e7a0-4b6f-a941-387b7394b543"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="147466ae-af2a-4e74-a3b3-93f924730368"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1593dcde-bb88-4f99-ab2b-b3912908931e"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="15ff6e5e-28e4-4e3c-bfee-e5e581b219e1"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="16025ae9-9d05-4d0f-995b-d91887787f2b"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="163a0284-887f-403b-8a22-a81a7a474776"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="17f2d85e-8cc0-471c-81d4-78787eb0bcf3"
 			name="OpenexPortFolder">
 			</testcase>
+			<testmodule
+			id="1950f45f-858b-4aed-809d-8347676d06cc"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="19b27d14-63e0-4a68-b957-7fb42285afde"
 			name="Validate_Report_Generated"
@@ -616,6 +936,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="1b7b1896-ff26-4404-8fbe-580866493673"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1d131fab-0f48-4aba-a763-4cf44b110205"
 			name="Select_Study"
 			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
@@ -632,6 +972,26 @@ rxversion="8.3">
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
 					variablename="ProjectName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1d218bfa-22ed-4fcf-9fe7-eecbee8981c1"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
 					</var>
 					<var
 					dataname="CSPDOM"
@@ -705,6 +1065,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="1e2e3f53-4b51-4bf4-afd8-26438509549b"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -728,6 +1102,18 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a58c803b-45a0-422a-b242-a4569698b2a9"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e"
+					variablename="ProtocolNumber">
+					</var>
+					<var
 					dataname="Key"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f186491e-a988-4bd5-8270-b971bccb2bd9"
@@ -740,22 +1126,10 @@ rxversion="8.3">
 					variablename="Secret">
 					</var>
 					<var
-					dataname="AuthToken"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="a58c803b-45a0-422a-b242-a4569698b2a9"
-					variablename="AuthToken">
-					</var>
-					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="9aaefa3f-959c-43d5-b70b-4ab58b9160f0"
 					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="ProtocolNumber"
-					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
-					variableid="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e"
-					variablename="ProtocolNumber">
 					</var>
 				</databinding>
 			</testmodule>
@@ -763,6 +1137,20 @@ rxversion="8.3">
 			id="20677106-2976-4596-a478-9f37611ce72f"
 			name="Validate_Block_Edited"
 			ref="1b383883-28ec-426a-807d-328ddbc0af92"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="20ae32fe-8470-4d12-a818-cee687ea75ea"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
 			type="Recording">
 				<databinding>
 					<var
@@ -789,6 +1177,34 @@ rxversion="8.3">
 			id="21d44004-ada8-4c47-92ef-f6206fac7f94"
 			name="Click_Edit_Localities"
 			ref="4ee627fc-d39c-49b3-b178-8836739190c0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="21d518e2-522d-4689-97e7-9ad27aea09a9"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2283d5df-e789-480c-916f-9329ab56074e"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
 			type="Recording">
 				<databinding>
 					<var
@@ -845,16 +1261,16 @@ rxversion="8.3">
 			ref="a5d2452f-7e69-4e4e-bdba-dbdd76719e02">
 				<databinding>
 					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="c5cdeeb3-af2d-4a90-9ec9-9394afbd8f1f"
-					variablename="CSPDOM">
-					</var>
-					<var
 					dataname="GmailAddress"
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 					variableid="9fc6d3c2-783f-4111-9f27-d77e97f4380e"
 					variablename="GmailAddress">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="c5cdeeb3-af2d-4a90-9ec9-9394afbd8f1f"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -862,6 +1278,26 @@ rxversion="8.3">
 			id="258f1c88-0daa-42c1-b3c5-994e5a6b8b7b"
 			name="oData_API">
 			</testcase>
+			<testmodule
+			id="25ec8a16-8da7-4bc3-ba89-cfb176a180d7"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="270aad2e-c077-43b4-9abc-ac3ac4172cf0"
 			name="PDFReport">
@@ -884,6 +1320,38 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="282da361-4531-43ff-bad6-034e5865a477"
+			maxrange="143"
+			minrange="143"
+			name="OneBack">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing OneBack</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="OneBack">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="28998911-fba2-4c92-874c-0cff6d9ef9f6"
 			name="UB08"
@@ -933,6 +1401,20 @@ rxversion="8.3">
 			name="Navigate_AWSDB">
 			</testcase>
 			<testmodule
+			id="2a46df3e-1556-4693-93d6-bc7732a93863"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2aeefe51-e550-442d-88de-0cdbb4dd8fcc"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -946,6 +1428,39 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datarangeset="190-191,189,193-194,201"
+			datasource="BatteryBlockConnector"
+			id="2c3ca201-7077-4c5e-8e3b-f8626b1b339e"
+			maxrange="200"
+			minrange="188"
+			name="BatteryThree">
+				<description>
+					<![CDATA[Folder containing steps to setup Battery containing FName, SAT, BPSO, SART]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="BatteryThree">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			errorbehavior="Stop"
 			id="2dbb0c47-ef76-4518-b068-bfaeeab934d1"
@@ -953,6 +1468,26 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_Workflow">
 			</testcase>
+			<testmodule
+			id="2dfd0006-fd02-4aca-902e-d00f3d87586a"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			errorbehavior="Stop"
 			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c"
@@ -964,6 +1499,20 @@ rxversion="8.3">
 			id="2e724786-0867-45a5-b61c-3a0714ca1060"
 			name="403-Forbiden">
 			</testcase>
+			<testmodule
+			id="2ff42b70-7f86-46f2-97a5-a76b7f6add55"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="3064fb0e-3ac4-4917-8946-743c167f36b1"
 			name="Generate_Battery_Config_Report">
@@ -989,6 +1538,26 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</testcase>
+			<testmodule
+			id="30c2dcbe-8077-4110-b748-2b093aea534a"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="TenantConnector"
@@ -1032,6 +1601,20 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="3e968851-9891-4442-80c2-acae5c1276e3"
 					variablename="Authentication">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="33aefc44-3716-4f39-8c0f-c10351cbd333"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1334,12 +1917,6 @@ rxversion="8.3">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
-					<var
 					dataname="CSPUsername"
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
@@ -1350,6 +1927,12 @@ rxversion="8.3">
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
 					variablename="CSPPassword">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -1459,6 +2042,46 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="383738b4-1ace-47f8-b7c6-2550923b33d7"
+			name="Close_Browser"
+			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="39b02d27-8d0d-44f9-b3eb-5b1424414422"
+			name="Run_WorkflowInstance"
+			ref="62a7ba5a-056d-4bd2-878a-716d185011cb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Browser"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="a1be029a-029a-4a3f-b030-460030e98ea4"
+					variablename="Browser">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6bf84b0d-f821-4b49-9db5-05d3ac3fb92b"
+					variablename="AssessmentURL">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="39b1cecb-0d7e-4daa-a134-c25e0db038e1"
 			name="InsertEmptyAssessment">
@@ -1469,24 +2092,6 @@ rxversion="8.3">
 			ref="3eccf15a-aaec-4a30-be95-c20b92f6f4c2"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="DBServer"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="322ae572-6d7e-4361-a7cf-870768eea420"
-					variablename="dbserver">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="9c70fea9-0cb3-4659-b09f-7def2b08284a"
-					variablename="database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="55960405-c7ce-4709-bfe6-b0e8ba9f96b3"
-					variablename="authentication">
-					</var>
 					<var
 					dataname="API_Authentication.StandardScoreT"
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
@@ -1522,6 +2127,38 @@ rxversion="8.3">
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 					variableid="0196697e-cc3a-4ffc-8497-4cb3a2761031"
 					variablename="dbPassword">
+					</var>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="322ae572-6d7e-4361-a7cf-870768eea420"
+					variablename="dbserver">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="9c70fea9-0cb3-4659-b09f-7def2b08284a"
+					variablename="database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="55960405-c7ce-4709-bfe6-b0e8ba9f96b3"
+					variablename="authentication">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3a605654-1560-4579-b9eb-6f28cc7196bd"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1568,6 +2205,54 @@ rxversion="8.3">
 			name="UB05">
 			</testcase>
 			<testmodule
+			id="3c088a81-853f-488e-ab25-43790d13c9ed"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3c68619b-03da-4324-a717-11ab4b6d79ba"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3d94055b-4000-4db7-bfa8-c780786ab8f6"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3db3ffb0-0938-4d30-a9c2-4ebbb8c460a6"
 			name="UB12"
 			ref="d5203eca-9817-46f7-a0c6-14f5d1de6ffc"
@@ -1611,6 +2296,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="3e526d4a-4e10-49da-854c-4d9a8da4c6f9"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="3e7527cb-5ed0-4568-9fc8-2ec809398808"
 			name="Generate_ExternalUserKey">
@@ -1647,6 +2352,39 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datarangeset="19-21,23-24"
+			datasource="BatteryBlockConnector"
+			id="412bb445-283e-4dde-9da4-48d3cd481f36"
+			maxrange="23"
+			minrange="18"
+			name="GMLTDelay">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing GMLT Delayed Recall</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="GMLTDelayed">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="42564f6f-7614-4f74-8c04-3db7ecf15643"
 			name="UB09"
@@ -1688,6 +2426,52 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f3077776-b424-488b-8587-6befaa7295c3"
 					variablename="assessmentID">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="4259cdc5-03a8-44ae-bcd6-3514bfd68ae3"
+			maxrange="200"
+			minrange="200"
+			name="SART">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing SART</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SART">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
+			id="42d5795a-c12e-469a-805e-58b77ee2fc50"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1766,6 +2550,18 @@ rxversion="8.3">
 			type="UserCode">
 				<databinding>
 					<var
+					dataname="GmailAddress"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+					<var
 					dataname="Subject"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
@@ -1831,17 +2627,25 @@ rxversion="8.3">
 					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
 					variablename="SendPdfReportOnComplete">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="44f6c12b-11cd-4f7b-a09b-c91fe51b8500"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="GmailAddress"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
 					</var>
 					<var
-					dataname="GmailPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1974,6 +2778,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4b5eccea-5b4a-43ca-a66a-23b9f9e7c6dd"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4ba90daa-a78b-4e33-9f6e-21454d4ea524"
 			name="Select_Study"
 			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
@@ -2000,10 +2824,50 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4bd7ecb5-5b39-4fbe-9a35-6ee362e42da6"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4cdc86a1-3275-4818-aaf3-665bc9c99dcd"
 			name="DeletingExitingReport"
 			ref="a51621aa-fba7-4b42-bd6f-28cd0a88364f"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4d5e3cc8-a2af-498a-816e-524de2512cea"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4d9dad4d-7121-4103-8e94-204d724ffe5e"
@@ -2034,6 +2898,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4e099ec9-30c8-41a1-bf45-b9f21b3390e7"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4e93b643-21fa-484b-bc91-84432f23458c"
 			name="Select_PR_Extract"
 			ref="83aa1e02-85d2-4526-b992-2fc4405345e3"
@@ -2047,10 +2931,62 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="51463014-eb5a-46c8-88b7-954644f28dee"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="520ac760-a35a-4fc6-9843-432ad67a0c24"
 			name="CloseAWS_WebSite">
 			</testcase>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="520c45fc-46a8-4760-a2a6-dab8bc7f54f1"
+			maxrange="176"
+			minrange="173"
+			name="CPAL">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing CPAL</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="CPAL">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="5283227a-0a62-47fc-ad9c-da9af53f661c"
 			name="Click_External_Resend_Invite"
@@ -2136,6 +3072,73 @@ rxversion="8.3">
 			name="setup">
 			</setup>
 			<testmodule
+			id="547a77b1-dc8f-4e09-8593-bfc5b18e87cb"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="54dfb0f8-f45b-42db-8cca-cdbcaaa9683c"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datarangeset="192,174-177,186-188"
+			datasource="BatteryBlockConnector"
+			id="54fe1b45-605d-4718-b513-893821132e89"
+			maxrange="191"
+			minrange="173"
+			name="BatteryTwo">
+				<description>
+					<![CDATA[Folder containing steps to setup Battery containing TwoBack, CPAL, FT, IDSST]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="BatteryTwo">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
 			id="55d6b0ac-0ab7-4f3d-9c51-fd3b005ef475"
 			name="Validate_Sync_Success"
 			ref="ff849467-5c5b-4735-9e50-3e3d77a297b2"
@@ -2180,6 +3183,38 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</modulegroup>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="5744c2f2-430f-4d32-b385-75087ffc3ec4"
+			maxrange="187"
+			minrange="186"
+			name="IDSST">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing IDSST</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="IDSST">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			datarangeset="56,85,121,145"
 			errorbehavior="Stop"
@@ -2188,22 +3223,44 @@ rxversion="8.3">
 			minrange="55"
 			name="Configure_Battery_Template">
 			</testcase>
+			<testmodule
+			id="583370ed-3d1b-4e83-8032-5e86f4537644"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="58b92a44-15a8-4477-b31a-623a0eaf2292"
 			name="BeginWorkflow">
 			</testcase>
+			<testmodule
+			id="590a6311-63cb-46f4-a886-0a338527c32e"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="5b7297a1-cb08-4a44-b7bd-579f94dadc2c"
 			name="Generate_WorkflowInstance"
 			ref="9a2b9fff-5819-4334-8d9a-6b84b58d99f8"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="1d05b902-cc15-48e1-99d9-dfc534871d94"
-					variablename="CSPDOM">
-					</var>
 					<var
 					dataname="ProtocolNumber"
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
@@ -2293,6 +3350,12 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="db9fb9f3-37be-4e92-b0f5-999f6407f381"
 					variablename="workflowAuthToken">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="1d05b902-cc15-48e1-99d9-dfc534871d94"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2463,6 +3526,40 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="5bc2b079-4c57-4bad-a96a-fe79d627a5ce"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5cab7b61-3a7b-49e8-a82f-59b424e05c8c"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="5d2d388a-a187-42cd-9c60-0a24f16880af"
 			name="BatteryConfigurationReport">
@@ -2560,6 +3657,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5f375125-3ed8-433f-8f8d-e9d65aa96558"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="5f4b295f-7d42-4332-b549-508f905240f7"
 			name="InvalidMethod"
 			ref="8f0a81f9-8c93-4991-a51a-72922622081c"
@@ -2637,6 +3748,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="610a5e75-348b-4a48-8fbf-bb066622e7b0"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="CSPConnector"
@@ -2644,6 +3775,38 @@ rxversion="8.3">
 			maxrange="5"
 			minrange="5"
 			name="Complete_Regression_Assessment">
+			</smartfoldernode>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="6160b1bb-92c3-45a6-8406-78dd3e2669fa"
+			maxrange="190"
+			minrange="189"
+			name="FaceName">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing FName</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Fname">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
 			</smartfoldernode>
 			<testcase
 			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c"
@@ -2660,6 +3823,18 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="f149efa0-570c-4a8d-a3eb-ac86747536d5"
 					variablename="Key">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="7f171fab-35c7-4d6e-a8d4-3f02439fb916"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="0e466bbf-8864-43a0-b57b-a4ac51ea53bb"
+					variablename="dbPassword">
 					</var>
 					<var
 					dataname="DBServer"
@@ -2679,20 +3854,40 @@ rxversion="8.3">
 					variableid="f06f1069-da41-4674-8cf8-7d0426f56aa7"
 					variablename="Authentication">
 					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="7f171fab-35c7-4d6e-a8d4-3f02439fb916"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="0e466bbf-8864-43a0-b57b-a4ac51ea53bb"
-					variablename="dbPassword">
-					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="6363562e-7b69-4ed2-b0f3-22d091effd47"
+			maxrange="167"
+			minrange="167"
+			name="Chase">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing Chase</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Chase">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<teardown
 			id="63ed3dda-a002-4d22-b151-a5010337518b"
 			name="teardown">
@@ -2702,6 +3897,20 @@ rxversion="8.3">
 			name="Wait_for_Upload"
 			ref="bf59e35a-a08e-4fd5-9062-6f2393932fef"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="64cc905c-704d-48f3-9ff7-d260e060fd73"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="651ec70a-e3c7-40c2-aa0b-77f5c89c10bc"
@@ -2720,6 +3929,26 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
 					variablename="RandNum">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6535c9ba-3542-4a5b-848b-01ed4a1a6e7b"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
 					</var>
 					<var
 					dataname="CSPDOM"
@@ -2818,6 +4047,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="683a733d-1925-49f8-adb3-ac455645d3c1"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6990db29-eccf-4532-ba72-4fae05c0568e"
 			name="Click_Save_Battery_Properties"
 			ref="f1b91855-9333-4352-be6d-add46a2183bd"
@@ -2865,17 +4114,58 @@ rxversion="8.3">
 			id="6a0f187c-803a-441b-82fb-ac03e46a5147"
 			name="V1_workfllow">
 			</testcase>
+			<testmodule
+			id="6a6adb90-d729-4ecd-bc2f-3d5612714d3a"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datarangeset="13-15,17"
+			datasource="BatteryBlockConnector"
+			id="6af7c9ee-7845-4bdf-b004-cf0db4076b2a"
+			maxrange="16"
+			minrange="12"
+			name="ISLTRecognition">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing ISLT Recognition</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="ISLTRecognition">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<modulegroup
 			id="6b226dc0-7d52-4ece-8044-50dd29ea2f38"
 			name="Login"
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
 					<var
 					dataname="CSPUsername"
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
@@ -2888,8 +4178,18 @@ rxversion="8.3">
 					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
 					variablename="CSPPassword">
 					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="CSPDOM">
+					</var>
 				</databinding>
 			</modulegroup>
+			<testcase
+			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5"
+			name="Authenticate_and_Complete_Tiers_Assessment">
+			</testcase>
 			<testmodule
 			id="6e01c6d4-ea3e-4a30-af4f-6a592c7223b6"
 			name="v1workflow"
@@ -2993,6 +4293,44 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="70be41d9-0d2c-4a13-95db-d54a3ad25a40"
+			name="External_Authenticate"
+			ref="12a04901-7274-43ed-b5af-fcce25c1eba3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Key"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f186491e-a988-4bd5-8270-b971bccb2bd9"
+					variablename="Key">
+					</var>
+					<var
+					dataname="Secret"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="280f8c82-fde0-4bbf-8603-40d1ee3acfea"
+					variablename="Secret">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a58c803b-45a0-422a-b242-a4569698b2a9"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="9aaefa3f-959c-43d5-b70b-4ab58b9160f0"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="63ad9351-6ec7-4a04-96fb-93ba0eee0c0e"
+					variablename="ProtocolNumber">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="70e5e727-daef-4614-a975-2ae2ab2660ae"
 			name="V2_Participant_QualificationStatus">
@@ -3030,6 +4368,26 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="bc8c4e88-b1fb-4033-8df5-08a8bb96605b"
 					variablename="StudyName">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="71bb368e-777b-4b16-95cc-cd29595e11f7"
+			name="Upload_RawData"
+			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
+					variablename="Filename">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3077,6 +4435,18 @@ rxversion="8.3">
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
 			type="UserCode">
 				<databinding>
+					<var
+					dataname="GmailAddress"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
 					<var
 					dataname="Subject"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
@@ -3143,18 +4513,6 @@ rxversion="8.3">
 					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
 					variablename="SendPdfReportOnComplete">
 					</var>
-					<var
-					dataname="GmailAddress"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
-					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -3189,6 +4547,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="7b93bd88-b8cc-476e-94b8-fa4e85144d1b"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="7d1323ac-4f5b-43c8-bd29-01d1cd10c8f9"
 			name="V2_AssessmentAttemptOutcomes">
@@ -3207,6 +4579,34 @@ rxversion="8.3">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
+			<testmodule
+			id="7efca591-cbb8-41ef-8e1d-afcde407ab92"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7f0fbf38-62e8-470c-9a93-98336a972ab3"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="811da02a-472b-41de-af8d-11cd4551af83"
 			name="Close_Browser"
@@ -3228,6 +4628,12 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="6bf84b0d-f821-4b49-9db5-05d3ac3fb92b"
+					variablename="AssessmentURL">
+					</var>
+					<var
 					dataname="Browser"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="a1be029a-029a-4a3f-b030-460030e98ea4"
@@ -3239,11 +4645,25 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="85120d23-5eb7-4b24-a2aa-e0894dd8d7a8"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="AssessmentURL"
-					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
-					variableid="6bf84b0d-f821-4b49-9db5-05d3ac3fb92b"
-					variablename="AssessmentURL">
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3297,6 +4717,38 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="894e682e-db49-4ee2-8e3b-31645b93ba2f"
+			maxrange="119"
+			minrange="119"
+			name="OneCardLearning">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing OneCardLearning</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="OCL">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="89805774-4d46-4597-a4ee-af4ed4f42f2b"
 			name="Open_Unsecure_Browser"
@@ -3355,10 +4807,70 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="8a4092ee-50d5-40b6-9afe-ce91b783aae6"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="8ab0cc66-fbe8-49b9-a40f-7396502b163b"
 			name="PowerBI_API(If_needed)">
 			</smartfoldernode>
+			<testmodule
+			id="8c3a7f53-2751-4d18-9be8-5d86c2f58f9d"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8e001277-1afb-4d01-ba8d-07a676aacc1e"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="8f607843-9ea3-4d34-9a7f-28bb274f8c0d"
 			name="Internal_UserLogin">
@@ -3424,12 +4936,6 @@ rxversion="8.3">
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
 					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
-					<var
 					dataname="CSPUsername"
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 					variableid="3c11cdc4-efcd-4741-b415-f12753c19735"
@@ -3440,6 +4946,12 @@ rxversion="8.3">
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
 					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
 					variablename="CSPPassword">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -3568,6 +5080,18 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="886557f5-2eb8-4294-b581-d4f9918c3dc4"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="f0140580-8190-4863-8035-81d6f1f5202e"
+					variablename="dbPassword">
+					</var>
+					<var
 					dataname="DBServer"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="fbd8c746-8dee-40e2-a25e-7d4650ede54b"
@@ -3584,18 +5108,6 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="13b38966-593e-4b60-8295-78b60bdc5b56"
 					variablename="Authentication">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="886557f5-2eb8-4294-b581-d4f9918c3dc4"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="f0140580-8190-4863-8035-81d6f1f5202e"
-					variablename="dbPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3676,6 +5188,26 @@ rxversion="8.3">
 			name="Check_DLM_Functionality">
 			</testcase>
 			<testmodule
+			id="995ace1d-c281-46fb-a9f9-7e505b3ef35c"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="99786d78-16d4-460c-8506-aa406bacf4c5"
 			name="GenerateKey"
 			ref="4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e"
@@ -3716,6 +5248,26 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="3b2c770e-10f9-4b9e-bc14-0264f5b51603"
 					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9a0600fb-3ac7-46a9-a0a8-3a6435c769bb"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3806,6 +5358,58 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9f97266c-ebf9-44b3-b7de-fd6d3603a32c"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="9ff90b36-0473-489c-b98a-d2493185d7d6"
+			maxrange="188"
+			minrange="188"
+			name="SAT">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing SAT</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SAT">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
 			id="a0127351-3b8d-4482-8f65-75e55250630e"
 			name="Validate_BatteryTemplate_Configured"
 			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
@@ -3830,6 +5434,26 @@ rxversion="8.3">
 			name="oDATA_API(If_needed)">
 			</smartfoldernode>
 			<testmodule
+			id="a09f5266-0889-412f-b097-a5e4c53e7fb7"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a260ad3e-5ca9-402f-9f62-2cc6d8186efa"
 			name="Extract_API_Key"
 			ref="689be54e-2f14-4a07-b458-9c6507e01aaa"
@@ -3846,6 +5470,130 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a3ab7ff9-9a9d-470d-b2ab-dd00e10b628f"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a3c96715-25f5-4ad2-a691-5c55a60b1b15"
+			name="Generate_WorkflowInstance"
+			ref="9a2b9fff-5819-4334-8d9a-6b84b58d99f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="1d05b902-cc15-48e1-99d9-dfc534871d94"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="ProtocolNumber"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="4b0a9c84-d41d-4d3c-b3c7-03dee9ee893c"
+					variablename="ProtocolNumber">
+					</var>
+					<var
+					dataname="VisitSessionCode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="5cf91dfd-49d7-4276-8188-104b3707a7e7"
+					variablename="VisitSessionCode">
+					</var>
+					<var
+					dataname="LocalityCode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="8dd6b8c2-2a52-4502-8866-9304c3644c52"
+					variablename="LocalityCode">
+					</var>
+					<var
+					dataname="DOB"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="baaaad91-5ccd-4dd6-9cbd-d4523f1da5cb"
+					variablename="DOB">
+					</var>
+					<var
+					dataname="SupervisorId"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="fd2e40a7-d9e4-422c-b1d3-6c9247b2458e"
+					variablename="SupervisorId">
+					</var>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="54bb55db-35b3-4db2-90ca-cb42cec494b3"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="0e972c7a-57eb-4293-a7cc-32e75ea62d02"
+					variablename="ExternalId">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="640023f9-9c6a-4a88-8722-9526acc509cc"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="AssessmentURL"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="72f9fd39-079c-4f76-a947-2a49e9350a9d"
+					variablename="AssessmentURL">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="f4f9ca38-7f8c-45a9-aabe-272a2438d295"
+					variablename="Mode">
+					</var>
+					<var
+					dataname="Redirect"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="0844a293-2dc9-4219-9cb3-cafcd0f168bd"
+					variablename="Redirect">
+					</var>
+					<var
+					dataname="RedirectError"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="74e43bb7-921d-45b5-ba71-a320656a11fc"
+					variablename="RedirectError">
+					</var>
+					<var
+					dataname="GenderCode"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="2e1366ad-da48-4246-816e-fa44895ddd07"
+					variablename="GenderCode">
+					</var>
+					<var
+					dataname="workflowInstanceId"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="de52f5d1-b544-4f72-9206-1d2571bad1c5"
+					variablename="workflowInstanceId">
+					</var>
+					<var
+					dataname="workflowAuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="db9fb9f3-37be-4e92-b0f5-999f6407f381"
+					variablename="workflowAuthToken">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4034,6 +5782,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="aa3cfc40-d4ac-4925-aeff-0d9869a1b1ca"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -4048,6 +5816,54 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="ac0313d9-eb36-420e-a7b5-6dc4ffc29faa"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ac08adad-cfe3-428a-801e-b07c71024d96"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ace87941-e138-4487-a381-5ff423901e83"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="ae10db2c-c5ff-4741-a754-991a6518c81c"
 			name="RrunWorkflow"
@@ -4132,10 +5948,94 @@ rxversion="8.3">
 			id="af039c2f-3c95-43e6-8258-aa7b0d2f38f2"
 			name="405-InvalidMethod">
 			</testcase>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="af611681-a31d-4cee-8edc-8344bf448a02"
+			maxrange="83"
+			minrange="83"
+			name="Identification">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing Identification</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Identification">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="af7f90a9-8c2e-417b-b635-b84d89a90936"
 			name="V2_ExternalAuthenticate">
 			</testcase>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="af8afe84-b9e4-4f8e-9713-fb9ee6a561fa"
+			maxrange="54"
+			minrange="54"
+			name="Detection">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing Detection</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Detection">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
+			id="b1bb4e24-1431-44e7-869a-eebf9f039720"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="b2a24e20-7d5b-4cbd-b012-98fec615d1fa"
 			name="Get_NextState"
@@ -4165,6 +6065,26 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="11206a5f-6673-406d-bcd0-0b82b854a09a"
 					variablename="B_id">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b303d9ce-8125-4a87-9a37-2e9566189f3f"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4320,6 +6240,18 @@ rxversion="8.3">
 					variablename="ExternalID">
 					</var>
 					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="d36b3ff7-5f95-4501-bfda-c8b5c180e548"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="7abe048e-cc2d-49e5-8b2e-95594a505c78"
+					variablename="dbPassword">
+					</var>
+					<var
 					dataname="DBServer"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="0502a8f9-2e49-49a7-a1b5-998c1f0c66cb"
@@ -4336,18 +6268,6 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="24b99672-d4b4-4352-83dc-f0d6f336ecdf"
 					variablename="Authentication">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="d36b3ff7-5f95-4501-bfda-c8b5c180e548"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="7abe048e-cc2d-49e5-8b2e-95594a505c78"
-					variablename="dbPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4380,6 +6300,20 @@ rxversion="8.3">
 					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
 					variableid="477a37cb-aa1c-4234-8881-be056766d40d"
 					variablename="workflowInstanceId">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b9355f3c-f932-4572-b53e-fafb6865b4b7"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4426,10 +6360,44 @@ rxversion="8.3">
 			id="bbaf88ce-00ab-4fa9-926b-920a0e29bf51"
 			name="Platform_API">
 			</smartfoldernode>
+			<testmodule
+			id="bca4f7f8-95f3-4bf4-93ea-5a40247ba29d"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="bcd9e6d9-1b54-4ac5-b190-604c7987aeea"
 			name="setup">
 			</setup>
+			<testmodule
+			id="bde4a4a2-372d-4694-a4a5-c7c7a99ea93b"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="API_Authentication"
@@ -4439,9 +6407,9 @@ rxversion="8.3">
 			name="AuthenticateToServer">
 			</testcase>
 			<testmodule
-			id="bf7230e3-de41-43f8-b33a-6757b76fb03e"
-			name="Upload_RawData"
-			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
+			id="bf6baa03-fafe-48cb-ae2f-8d7637bdd9db"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
 			type="Recording">
 				<databinding>
 					<var
@@ -4450,11 +6418,45 @@ rxversion="8.3">
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bf6bf054-8d96-478d-8f7a-6b618d3c705e"
+			name="Clear_ExternalID"
+			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="b024ef00-d4e1-48a9-b7e5-4304183e124a"
+					variablename="Filename">
+					</var>
+					<var
+					dataname="ExternalID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="57037071-6036-4a24-8145-c9dbf508e396"
+					variablename="externalID">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bf7230e3-de41-43f8-b33a-6757b76fb03e"
+			name="Upload_RawData"
+			ref="366bcb1e-0676-491a-b683-f0b0918c5c82"
+			type="Recording">
+				<databinding>
 					<var
 					dataname="Filename"
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
 					variablename="Filename">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4473,11 +6475,43 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c0ba7163-d4ac-454b-8ad1-48b78fa3d1df"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c2d2c659-76c1-4023-a970-146199acab74"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
 			type="UserCode">
 				<databinding>
+					<var
+					dataname="GmailAddress"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
 					<var
 					dataname="SendPdfReportOnComplete"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
@@ -4544,18 +6578,6 @@ rxversion="8.3">
 					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
 					variablename="Subject">
 					</var>
-					<var
-					dataname="GmailAddress"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
-					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -4616,6 +6638,48 @@ rxversion="8.3">
 			id="c54f0f1c-20d9-44fd-86fc-e03a59270062"
 			name="Reprocess_Complete_Assessment">
 			</testcase>
+			<testmodule
+			id="c64369a0-6fb4-46ae-b914-4b6c0968c160"
+			name="Get_QualificationStatus"
+			ref="437dbe88-4d5d-4f54-8943-5f96f61f7d4e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="TestIdentifier"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="bed5f21f-b845-4a05-b82e-1d88001c3f99"
+					variablename="TestIdentifier">
+					</var>
+					<var
+					dataname="AuthToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="3b379e48-6d93-40cd-bb72-c50e745809d8"
+					variablename="AuthToken">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="48f6b5c9-8619-4b7a-8c6f-4795b37abf22"
+					variablename="studyProtocolName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="054a12c7-6c4c-46b6-8cf6-768efc661585"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="QualificationStatus"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="7e44db6e-fe7e-4d40-99c9-8abb1a29f61e"
+					variablename="QualificationStatus">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="c7d2d256-8899-4137-8c08-881f7e4e2729"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="c8cec9be-1794-434a-8037-821be15735a3"
 			name="APIV2_AssessmentAttempt"
@@ -4704,6 +6768,20 @@ rxversion="8.3">
 			minrange="0"
 			name="GenerateDPFReport">
 			</smartfoldernode>
+			<testmodule
+			id="cab1c73e-6445-4d39-8388-2d3b64c3c754"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="cb3ea5fa-2b02-481e-8815-76a7dc25eb7f"
 			name="teardown">
@@ -4712,6 +6790,20 @@ rxversion="8.3">
 			id="ccc4cd20-e171-4edc-9e04-a98090d044c7"
 			name="Click_Edit_Button"
 			ref="89c38ed8-5500-416b-9089-ab7c2de1763c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ccd44bec-9e13-4153-8965-57e8b695215c"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
 			type="Recording">
 				<databinding>
 					<var
@@ -4733,10 +6825,89 @@ rxversion="8.3">
 			id="cd729a93-e144-4f5b-93c8-26fb3fb153b0"
 			name="SetLocalityCode">
 			</testcase>
+			<smartfoldernode
+			datarangeactive="True"
+			datarangeset="19-21,23,26"
+			datasource="BatteryBlockConnector"
+			id="cd81ca32-dcec-4820-a8ae-651f4fb352fd"
+			maxrange="25"
+			minrange="18"
+			name="GMLTReverse">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing GMLT Reverse</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="GMLTReverse">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
+			id="ce46834b-a450-48df-b536-2d8dc9fdd1a6"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="ce924ca6-26b5-4e19-bafc-3215d58a64c7"
 			name="OpenS3">
 			</testcase>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="cf39d7d1-2c56-4fa3-bd94-7e7e279b8212"
+			maxrange="13"
+			minrange="12"
+			name="ISLTOnly">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing ISLT Learning Rounds</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="ISLT">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			errorbehavior="Stop"
 			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc"
@@ -4744,6 +6915,26 @@ rxversion="8.3">
 			minrange="0"
 			name="Add_Localities">
 			</testcase>
+			<testmodule
+			id="d0d0dd6f-7bce-4be4-9e71-393bb70dd561"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d12e81c6-a1b0-40f1-bdfd-8e3e419d4eb9"
 			name="Delete_Existing_Extracts"
@@ -4782,6 +6973,14 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="CSPConnector"
+			id="d267156a-bd78-4461-b8df-0f50f347503e"
+			maxrange="111"
+			minrange="96"
+			name="Check_Qualification_Tiers">
+			</smartfoldernode>
 			<testmodule
 			id="d2af15a7-d521-4096-9e08-177b0d665b79"
 			name="Validate_DLM_Enabled"
@@ -4826,17 +7025,57 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="d5153b20-b80f-46bf-b3ad-21bc08c441a5"
+			maxrange="20"
+			minrange="18"
+			name="GMLTOnly">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing GMLT Learning Rounds</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="GMLT">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
+			id="d533f28b-a7b0-49df-baae-e171ed460a46"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<modulegroup
 			id="d54b9763-8632-486b-8328-b4e9d93a67a7"
 			name="Login"
 			ref="04b0e867-8b4f-4386-8b17-d54cc8298354">
 				<databinding>
-					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
-					variablename="CSPDOM">
-					</var>
 					<var
 					dataname="CSPUsername"
 					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
@@ -4849,8 +7088,42 @@ rxversion="8.3">
 					variableid="b8cc38b5-8b6f-40b1-be33-d27152f0dc9d"
 					variablename="CSPPassword">
 					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cc77aa98-9b56-4e77-a148-6928a28b163a"
+					variablename="CSPDOM">
+					</var>
 				</databinding>
 			</modulegroup>
+			<testmodule
+			id="d5ca2af7-4d47-4c81-8df1-e71c447662fc"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d5dd885f-4bb9-4746-b4ab-e4eb475049fd"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d6044850-b050-4abb-a188-cdd77629ad46"
 			name="Generate_WorkflowInstance"
@@ -4956,6 +7229,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d6c6145a-87f3-48a3-8aaf-6a57221f0f32"
+			name="Validate_QualificationStatus"
+			ref="e040d415-a3ad-48c9-9a10-ddbb8bae7361"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Filename"
+					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
+					variableid="97f855e4-1c39-4e66-bd0f-007cb49ab757"
+					variablename="ExpectedTier">
+					</var>
+					<var
+					dataname="QualificationStatus"
+					datasourceid="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+					variableid="2178b2da-762d-4e03-9fbf-b76967f00f5f"
+					variablename="QualificationStatus">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d859008f-0879-4f72-b702-67312f9e71ad"
 			name="EnterWAS_UserName"
 			ref="db21cddd-a4f2-4a95-95eb-7d1f754502cf"
@@ -5045,6 +7338,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="db03fd2f-8388-497e-8282-d81f6ed1df06"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="db488035-4e27-4b7f-8872-45c65c4d4925"
 			name="teardown">
@@ -5092,11 +7405,84 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="debb1a4f-0b80-42b1-bf29-904f4f5e7f4b"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="def6d435-4409-4d80-b793-b6568e0083b8"
+			name="Validate_BatteryTemplate_Configured"
+			ref="3aa46244-6710-428d-afc1-f5aeed5900e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4c592594-0ad6-4515-a8bf-ce621aa84724"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="dfc1510e-907c-4d34-9186-d19f5e69f5d0"
 			name="ClickOnS3DB"
 			ref="1b6f7a64-d117-4a0f-9d1a-c484fda8e2f7"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datarangeset="55,84,120,144,13-15,18,168,19-21,23,24,26"
+			datasource="BatteryBlockConnector"
+			id="dff07067-effc-4890-92d8-c38fac1b341e"
+			maxrange="167"
+			minrange="12"
+			name="BatteryOne">
+				<description>
+					<![CDATA[Folder containing steps to setup Battery containing CBB, ISLT, Chase, GMLT]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="BatteryOne">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="e00c2baf-18fc-4db9-8f47-941279980274"
 			name="V1_ReferralStatus">
@@ -5108,16 +7494,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="CSPDOM"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CSPDOM">
-					</var>
-					<var
 					dataname="Filename"
 					datasourceid="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 					variableid="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
 					variablename="Filename">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5178,6 +7564,10 @@ rxversion="8.3">
 			minrange="0"
 			name="UB08">
 			</testcase>
+			<setup
+			id="e2ad65b6-77ae-4158-87d2-afeb9c2936b2"
+			name="setup">
+			</setup>
 			<testmodule
 			id="e32bbe54-5908-4a6d-ad4d-cdd68714ba8c"
 			name="BatteryCreation"
@@ -5223,6 +7613,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e43e6483-1f1a-4efc-8329-f7118cb2c47c"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e49c2644-daf5-46ea-b2f4-20893174fb7f"
 			name="Clear_ExternalID"
 			ref="3545add0-8748-4f6c-bc8a-59649b6e754e"
@@ -5262,6 +7666,18 @@ rxversion="8.3">
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
 			type="UserCode">
 				<databinding>
+					<var
+					dataname="GmailAddress"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
 					<var
 					dataname="Subject"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
@@ -5328,17 +7744,19 @@ rxversion="8.3">
 					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
 					variablename="SendPdfReportOnComplete">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e59293d2-48d8-4024-ac9b-73fd92b915cc"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="GmailAddress"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
-					variablename="Username">
-					</var>
-					<var
-					dataname="GmailPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
-					variablename="Password">
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5486,6 +7904,38 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="eb3abe92-21e8-4fb2-807f-93c909ed394d"
+			maxrange="193"
+			minrange="192"
+			name="BPSO">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing BPSO</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="BPSO">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="eb4fe547-e87c-4914-ac24-3f4446d68623"
 			name="CloseWASWebSite"
@@ -5498,6 +7948,52 @@ rxversion="8.3">
 			ref="5f5d863d-af96-49a4-9627-4bdcdd447401"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="ebc0bac0-5059-4aba-a800-4f1ee9d50ba8"
+			name="Click_SaveBatteryTemplate_Properties"
+			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="ed37180b-484d-4dd9-bbb4-449b3683e04a"
+			maxrange="185"
+			minrange="185"
+			name="FingerTapping">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing Finger Tapping</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="FingerTapping">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8"
 			name="V2_QualificationStatus">
@@ -5565,6 +8061,28 @@ rxversion="8.3">
 			name="Platform_Tests">
 			</smartfoldernode>
 			<testcase
+			id="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+			name="Validate_QualificationStatus">
+				<parameters>
+					<param
+					name="RandNum"
+					value="">
+					</param>
+					<param
+					name="QualificationStatus"
+					value="">
+					</param>
+					<param
+					name="PsyAttStdScr"
+					value="">
+					</param>
+					<param
+					name="LearnWMStdScr"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68"
 			name="Edit_Regression_Battery">
 				<parameters>
@@ -5595,6 +8113,20 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</testcase>
+			<testmodule
+			id="f56330db-c3da-41bb-ac5a-6c5cb3b3e23a"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -5603,6 +8135,26 @@ rxversion="8.3">
 			minrange="0"
 			name="UB07">
 			</testcase>
+			<testmodule
+			id="f6ecc8be-2d4e-4a09-b5bc-fcc5c9f42538"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="f782a042-098a-4bc0-9d16-fd38ba39d1b4"
 			name="Click_Save_Settings"
@@ -5716,6 +8268,58 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="f8064e04-0996-4107-87c8-da11795ca6dd"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="f83150ed-3ddf-400b-a5cc-236e33dad44e"
+			maxrange="15"
+			minrange="12"
+			name="ISLTDelay">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing ISLT Dalayed Recall</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="ISLTDelayed">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="TenantConnector"
@@ -5734,6 +8338,38 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="BatteryBlockConnector"
+			id="f9dbc718-8223-442b-bf9d-4e7622d656ea"
+			maxrange="191"
+			minrange="191"
+			name="TwoBack">
+				<description>
+					<![CDATA[<p>Folder containing steps to setup Battery containing TwoBack</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="BatteryTemplateName"
+								id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="TwoBack">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -5794,6 +8430,18 @@ rxversion="8.3">
 					variablename="Key">
 					</var>
 					<var
+					dataname="dbUsername"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="e5fbf288-cd10-4478-b174-b7cd244f894c"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
+					variableid="1789d8d4-5bce-4e63-ae7e-8d4c4261303e"
+					variablename="dbPassword">
+					</var>
+					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="16649c69-74df-4134-bf17-75efa59abd9c"
@@ -5816,18 +8464,6 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="4e1ad625-dc76-4c72-b9e7-eefffeaaf870"
 					variablename="Authentication">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="e5fbf288-cd10-4478-b174-b7cd244f894c"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="ced6e1e9-d1d1-46c3-b8ba-867428eaf002"
-					variableid="1789d8d4-5bce-4e63-ae7e-8d4c4261303e"
-					variablename="dbPassword">
 					</var>
 				</databinding>
 			</modulegroup>
@@ -5896,6 +8532,40 @@ rxversion="8.3">
 			name="ReprocessWorkflowFlag">
 			</testcase>
 			<testmodule
+			id="fc9b5fed-b55f-4aca-baa8-cdb17595c741"
+			name="Click_AddTest_Button"
+			ref="b4245ac6-9ad0-44c4-9bcc-b6e0117f4a7c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fd6b04bf-d693-4064-ac14-2c7410e56719"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="fec6f444-a7e9-408b-a7ee-8841cc16cec3"
 			name="OpenCgstS3Folder"
 			ref="964e2eb5-1a38-492b-a803-96c1d4fc38a6"
@@ -5963,6 +8633,26 @@ rxversion="8.3">
 			ref="471c595d-97e8-49b1-8807-9004e6d63683"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="CSPDOM"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
+					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ff6a21ea-9f01-4239-a9cf-2aad95f95ce5"
+			name="Select_CogstateTest"
+			ref="e231f99c-c036-461b-93e8-b4324c40315e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BatteryBlockName"
+					datasourceid="0223bb73-bdf8-475b-9924-27f470878d7d"
+					variableid="4b35f5bf-972d-4852-b19e-14c27e2391a6"
+					variablename="BatteryBlockName">
+					</var>
 					<var
 					dataname="CSPDOM"
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
@@ -6143,6 +8833,466 @@ rxversion="8.3">
 										name="Validate_BatteryTemplate_Configured">
 										</testmodule>
 									</smartfoldernode>
+									<smartfoldernode
+									id="dff07067-effc-4890-92d8-c38fac1b341e"
+									name="BatteryOne">
+										<testmodule
+										id="583370ed-3d1b-4e83-8032-5e86f4537644"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="0c1787a7-9756-4ca9-a5c1-e93a17007861"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="d5dd885f-4bb9-4746-b4ab-e4eb475049fd"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="30c2dcbe-8077-4110-b748-2b093aea534a"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="54fe1b45-605d-4718-b513-893821132e89"
+									name="BatteryTwo">
+										<testmodule
+										id="7b93bd88-b8cc-476e-94b8-fa4e85144d1b"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="c0ba7163-d4ac-454b-8ad1-48b78fa3d1df"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="2ff42b70-7f86-46f2-97a5-a76b7f6add55"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="8a4092ee-50d5-40b6-9afe-ce91b783aae6"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="2c3ca201-7077-4c5e-8e3b-f8626b1b339e"
+									name="BatteryThree">
+										<testmodule
+										id="0f14430d-dfa4-4b62-acb0-2ad2c7bb53bb"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="15ff6e5e-28e4-4e3c-bfee-e5e581b219e1"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="5cab7b61-3a7b-49e8-a82f-59b424e05c8c"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="def6d435-4409-4d80-b793-b6568e0083b8"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="09e43d31-1b9f-49e2-9905-6a1a982c6531"
+									name="BatteryFour">
+										<testmodule
+										id="ccd44bec-9e13-4153-8965-57e8b695215c"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="d0d0dd6f-7bce-4be4-9e71-393bb70dd561"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="ac0313d9-eb36-420e-a7b5-6dc4ffc29faa"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="995ace1d-c281-46fb-a9f9-7e505b3ef35c"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="af8afe84-b9e4-4f8e-9713-fb9ee6a561fa"
+									name="Detection">
+										<testmodule
+										id="f56330db-c3da-41bb-ac5a-6c5cb3b3e23a"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="44f6c12b-11cd-4f7b-a09b-c91fe51b8500"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="cab1c73e-6445-4d39-8388-2d3b64c3c754"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="9a0600fb-3ac7-46a9-a0a8-3a6435c769bb"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="af611681-a31d-4cee-8edc-8344bf448a02"
+									name="Identification">
+										<testmodule
+										id="ace87941-e138-4487-a381-5ff423901e83"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="683a733d-1925-49f8-adb3-ac455645d3c1"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="3a605654-1560-4579-b9eb-6f28cc7196bd"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="5bc2b079-4c57-4bad-a96a-fe79d627a5ce"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="894e682e-db49-4ee2-8e3b-31645b93ba2f"
+									name="OneCardLearning">
+										<testmodule
+										id="2283d5df-e789-480c-916f-9329ab56074e"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="ac08adad-cfe3-428a-801e-b07c71024d96"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="163a0284-887f-403b-8a22-a81a7a474776"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="a09f5266-0889-412f-b097-a5e4c53e7fb7"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="282da361-4531-43ff-bad6-034e5865a477"
+									name="OneBack">
+										<testmodule
+										id="1e2e3f53-4b51-4bf4-afd8-26438509549b"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="9f97266c-ebf9-44b3-b7de-fd6d3603a32c"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="1950f45f-858b-4aed-809d-8347676d06cc"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="4b5eccea-5b4a-43ca-a66a-23b9f9e7c6dd"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="cf39d7d1-2c56-4fa3-bd94-7e7e279b8212"
+									name="ISLTOnly">
+										<testmodule
+										id="590a6311-63cb-46f4-a886-0a338527c32e"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="b303d9ce-8125-4a87-9a37-2e9566189f3f"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="e43e6483-1f1a-4efc-8329-f7118cb2c47c"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="bca4f7f8-95f3-4bf4-93ea-5a40247ba29d"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="f83150ed-3ddf-400b-a5cc-236e33dad44e"
+									name="ISLTDelay">
+										<testmodule
+										id="42d5795a-c12e-469a-805e-58b77ee2fc50"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="1593dcde-bb88-4f99-ab2b-b3912908931e"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="ebc0bac0-5059-4aba-a800-4f1ee9d50ba8"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="09542f02-99b5-4fe0-abf0-9593dadeee7b"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="6af7c9ee-7845-4bdf-b004-cf0db4076b2a"
+									name="ISLTRecognition">
+										<testmodule
+										id="04716ac4-bcca-461f-ad6a-7c79df1e996b"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="aa3cfc40-d4ac-4925-aeff-0d9869a1b1ca"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="0c245fdc-de04-45e7-947e-fd686645b2f5"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="debb1a4f-0b80-42b1-bf29-904f4f5e7f4b"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="d5153b20-b80f-46bf-b3ad-21bc08c441a5"
+									name="GMLTOnly">
+										<testmodule
+										id="fc9b5fed-b55f-4aca-baa8-cdb17595c741"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="f8064e04-0996-4107-87c8-da11795ca6dd"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="d5ca2af7-4d47-4c81-8df1-e71c447662fc"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="3d94055b-4000-4db7-bfa8-c780786ab8f6"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="412bb445-283e-4dde-9da4-48d3cd481f36"
+									name="GMLTDelay">
+										<testmodule
+										id="e59293d2-48d8-4024-ac9b-73fd92b915cc"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="25ec8a16-8da7-4bc3-ba89-cfb176a180d7"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="d533f28b-a7b0-49df-baae-e171ed460a46"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="0f3a721e-fe6d-4696-b4c0-6cdd8aa855d2"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="cd81ca32-dcec-4820-a8ae-651f4fb352fd"
+									name="GMLTReverse">
+										<testmodule
+										id="3c088a81-853f-488e-ab25-43790d13c9ed"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="a3ab7ff9-9a9d-470d-b2ab-dd00e10b628f"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="bde4a4a2-372d-4694-a4a5-c7c7a99ea93b"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="b1bb4e24-1431-44e7-869a-eebf9f039720"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="6363562e-7b69-4ed2-b0f3-22d091effd47"
+									name="Chase">
+										<testmodule
+										id="09a94e44-e622-4992-9176-b2bec789bc8a"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="610a5e75-348b-4a48-8fbf-bb066622e7b0"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="3c68619b-03da-4324-a717-11ab4b6d79ba"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="1b7b1896-ff26-4404-8fbe-580866493673"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="f9dbc718-8223-442b-bf9d-4e7622d656ea"
+									name="TwoBack">
+										<testmodule
+										id="7efca591-cbb8-41ef-8e1d-afcde407ab92"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="fd6b04bf-d693-4064-ac14-2c7410e56719"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="bf6baa03-fafe-48cb-ae2f-8d7637bdd9db"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="2dfd0006-fd02-4aca-902e-d00f3d87586a"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="6160b1bb-92c3-45a6-8406-78dd3e2669fa"
+									name="FaceName">
+										<testmodule
+										id="6a6adb90-d729-4ecd-bc2f-3d5612714d3a"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="8c3a7f53-2751-4d18-9be8-5d86c2f58f9d"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="33aefc44-3716-4f39-8c0f-c10351cbd333"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="db03fd2f-8388-497e-8282-d81f6ed1df06"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="eb3abe92-21e8-4fb2-807f-93c909ed394d"
+									name="BPSO">
+										<testmodule
+										id="64cc905c-704d-48f3-9ff7-d260e060fd73"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="8e001277-1afb-4d01-ba8d-07a676aacc1e"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="5f375125-3ed8-433f-8f8d-e9d65aa96558"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="85120d23-5eb7-4b24-a2aa-e0894dd8d7a8"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="520c45fc-46a8-4760-a2a6-dab8bc7f54f1"
+									name="CPAL">
+										<testmodule
+										id="01df6be2-9d37-4f44-b3cc-d4132f42974b"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="4bd7ecb5-5b39-4fbe-9a35-6ee362e42da6"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="2a46df3e-1556-4693-93d6-bc7732a93863"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="1d218bfa-22ed-4fcf-9fe7-eecbee8981c1"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="ed37180b-484d-4dd9-bbb4-449b3683e04a"
+									name="FingerTapping">
+										<testmodule
+										id="ce46834b-a450-48df-b536-2d8dc9fdd1a6"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="51463014-eb5a-46c8-88b7-954644f28dee"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="147466ae-af2a-4e74-a3b3-93f924730368"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="3e526d4a-4e10-49da-854c-4d9a8da4c6f9"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="5744c2f2-430f-4d32-b385-75087ffc3ec4"
+									name="IDSST">
+										<testmodule
+										id="7f0fbf38-62e8-470c-9a93-98336a972ab3"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="4e099ec9-30c8-41a1-bf45-b9f21b3390e7"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="21d518e2-522d-4689-97e7-9ad27aea09a9"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="6535c9ba-3542-4a5b-848b-01ed4a1a6e7b"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="9ff90b36-0473-489c-b98a-d2493185d7d6"
+									name="SAT">
+										<testmodule
+										id="12dc45b0-0187-4fb4-ae20-9fba779ebde2"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="ff6a21ea-9f01-4239-a9cf-2aad95f95ce5"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="54dfb0f8-f45b-42db-8cca-cdbcaaa9683c"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="4d5e3cc8-a2af-498a-816e-524de2512cea"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
+									<smartfoldernode
+									id="4259cdc5-03a8-44ae-bcd6-3514bfd68ae3"
+									name="SART">
+										<testmodule
+										id="b9355f3c-f932-4572-b53e-fafb6865b4b7"
+										name="Click_AddTest_Button">
+										</testmodule>
+										<testmodule
+										id="f6ecc8be-2d4e-4a09-b5bc-fcc5c9f42538"
+										name="Select_CogstateTest">
+										</testmodule>
+										<testmodule
+										id="20ae32fe-8470-4d12-a818-cee687ea75ea"
+										name="Click_SaveBatteryTemplate_Properties">
+										</testmodule>
+										<testmodule
+										id="547a77b1-dc8f-4e09-8593-bfc5b18e87cb"
+										name="Validate_BatteryTemplate_Configured">
+										</testmodule>
+									</smartfoldernode>
 								</testcase>
 								<testcase
 								id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -6274,6 +9424,62 @@ rxversion="8.3">
 									<testmodule
 									id="0ba7de74-4e84-47cc-aaf2-9a5c68da179d"
 									name="Validate_Outcomes">
+									</testmodule>
+								</testcase>
+							</smartfoldernode>
+							<smartfoldernode
+							id="d267156a-bd78-4461-b8df-0f50f347503e"
+							name="Check_Qualification_Tiers">
+								<testcase
+								id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5"
+								name="Authenticate_and_Complete_Tiers_Assessment">
+									<setup
+									id="e2ad65b6-77ae-4158-87d2-afeb9c2936b2"
+									name="setup">
+										<testmodule
+										id="bf6bf054-8d96-478d-8f7a-6b618d3c705e"
+										name="Clear_ExternalID">
+										</testmodule>
+									</setup>
+									<testmodule
+									id="70be41d9-0d2c-4a13-95db-d54a3ad25a40"
+									name="External_Authenticate">
+									</testmodule>
+									<testmodule
+									id="a3c96715-25f5-4ad2-a691-5c55a60b1b15"
+									name="Generate_WorkflowInstance">
+									</testmodule>
+									<testmodule
+									id="39b02d27-8d0d-44f9-b3eb-5b1424414422"
+									name="Run_WorkflowInstance">
+									</testmodule>
+									<testmodule
+									id="71bb368e-777b-4b16-95cc-cd29595e11f7"
+									name="Upload_RawData">
+									</testmodule>
+									<teardown
+									id="c7d2d256-8899-4137-8c08-881f7e4e2729"
+									name="teardown">
+										<testmodule
+										id="383738b4-1ace-47f8-b7c6-2550923b33d7"
+										name="Close_Browser">
+										</testmodule>
+									</teardown>
+								</testcase>
+								<testcase
+								id="f29ebf50-4fc1-4096-838b-4260b39f2e32"
+								name="Validate_QualificationStatus">
+									<testmodule
+									id="c64369a0-6fb4-46ae-b914-4b6c0968c160"
+									name="Get_QualificationStatus">
+									</testmodule>
+									<testmodule
+									id="d6c6145a-87f3-48a3-8aaf-6a57221f0f32"
+									name="Validate_QualificationStatus">
+									</testmodule>
+									<testmodule
+									id="0812dd5d-4f05-47c9-8a6c-e4cae3bd8c9f"
+									name="Validate_16Tier_Threshold">
 									</testmodule>
 								</testcase>
 							</smartfoldernode>
@@ -7293,9 +10499,6 @@ rxversion="8.3">
 		withheaders="True">
 			<lastknowncolumns>
 				<column>
-					Environment
-				</column>
-				<column>
 					RCCUsername
 				</column>
 				<column>
@@ -7346,6 +10549,9 @@ rxversion="8.3">
 					GmailPassword
 				</columnname>
 				<columnname>
+					InternalPassword
+				</columnname>
+				<columnname>
 					RCCPassword
 				</columnname>
 				<columnname>
@@ -7359,7 +10565,7 @@ rxversion="8.3">
 		<DataSource
 		id="0223bb73-bdf8-475b-9924-27f470878d7d"
 		includefile="Unchecked"
-		lastknownrowcount="200"
+		lastknownrowcount="201"
 		name="BatteryBlockConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -7377,7 +10583,7 @@ rxversion="8.3">
 		<DataSource
 		id="b9c54986-a4b7-47cf-a856-cf4aca4b9fea"
 		includefile="Unchecked"
-		lastknownrowcount="91"
+		lastknownrowcount="112"
 		name="CSPConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -8154,7 +11360,7 @@ rxversion="8.3">
 			id="58b92a44-15a8-4477-b31a-623a0eaf2292">
 			</testcontainer>
 			<testcontainer
-			id="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f">
+			id="037aeee4-7133-450a-b13e-79f6464da1e0">
 			</testcontainer>
 			<testcontainer
 			id="5d2d388a-a187-42cd-9c60-0a24f16880af">
@@ -8238,7 +11444,7 @@ rxversion="8.3">
 			id="ed37d6a2-3fe2-46d6-bb5b-eb6df68b03b8">
 			</testcontainer>
 			<testcontainer
-			id="f1ef947c-69a7-4e0a-acf9-705c6c3dcc58">
+			id="09e43d31-1b9f-49e2-9905-6a1a982c6531">
 			</testcontainer>
 			<testcontainer
 			id="f63dd512-23b7-4ced-b1a5-802d4ae37b75">
@@ -8257,6 +11463,150 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040">
+			</testcontainer>
+			<testcontainer
+			id="10c333f8-e857-4fad-823d-294804009f8b">
+			</testcontainer>
+			<testcontainer
+			id="282da361-4531-43ff-bad6-034e5865a477">
+			</testcontainer>
+			<testcontainer
+			id="2c3ca201-7077-4c5e-8e3b-f8626b1b339e">
+			</testcontainer>
+			<testcontainer
+			id="2dbb0c47-ef76-4518-b068-bfaeeab934d1">
+			</testcontainer>
+			<testcontainer
+			id="2e353c19-4cfb-4ea4-8959-67d7e6fd421c">
+			</testcontainer>
+			<testcontainer
+			id="3064fb0e-3ac4-4917-8946-743c167f36b1">
+			</testcontainer>
+			<testcontainer
+			id="412bb445-283e-4dde-9da4-48d3cd481f36">
+			</testcontainer>
+			<testcontainer
+			id="4259cdc5-03a8-44ae-bcd6-3514bfd68ae3">
+			</testcontainer>
+			<testcontainer
+			id="520c45fc-46a8-4760-a2a6-dab8bc7f54f1">
+			</testcontainer>
+			<testcontainer
+			id="54fe1b45-605d-4718-b513-893821132e89">
+			</testcontainer>
+			<testcontainer
+			id="5744c2f2-430f-4d32-b385-75087ffc3ec4">
+			</testcontainer>
+			<testcontainer
+			id="57ef6762-179a-4705-bb8f-8a003cdb2976">
+			</testcontainer>
+			<testcontainer
+			id="6160b1bb-92c3-45a6-8406-78dd3e2669fa">
+			</testcontainer>
+			<testcontainer
+			id="624d7ac7-13e9-4c1e-9e3d-c7953eecad7c">
+			</testcontainer>
+			<testcontainer
+			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5">
+			</testcontainer>
+			<testcontainer
+			id="6363562e-7b69-4ed2-b0f3-22d091effd47">
+			</testcontainer>
+			<testcontainer
+			id="6af7c9ee-7845-4bdf-b004-cf0db4076b2a">
+			</testcontainer>
+			<testcontainer
+			id="6e082396-bffa-4d84-b254-0da30d111799">
+			</testcontainer>
+			<testcontainer
+			id="702d7364-d105-4608-94ab-44ad3baf1cfd">
+			</testcontainer>
+			<testcontainer
+			id="77a8909f-147b-4f6a-94dd-2b1cb760e2c0">
+			</testcontainer>
+			<testcontainer
+			id="894e682e-db49-4ee2-8e3b-31645b93ba2f">
+			</testcontainer>
+			<testcontainer
+			id="8fa64b70-c320-42f8-b5ac-ebbede419bfd">
+			</testcontainer>
+			<testcontainer
+			id="90022b98-dfd4-4ed4-9b1f-fd14df0bd77d">
+			</testcontainer>
+			<testcontainer
+			id="98dcf99f-23a8-4746-93e8-cea5139f7f23">
+			</testcontainer>
+			<testcontainer
+			id="9bd6e668-4aac-4f80-b28a-dd99b720185d">
+			</testcontainer>
+			<testcontainer
+			id="9ff90b36-0473-489c-b98a-d2493185d7d6">
+			</testcontainer>
+			<testcontainer
+			id="a54e2f22-375f-4fb2-838a-084cd4471e50">
+			</testcontainer>
+			<testcontainer
+			id="a5fc7b2e-7603-4bb8-9b9a-9d41dd4030b6">
+			</testcontainer>
+			<testcontainer
+			id="af611681-a31d-4cee-8edc-8344bf448a02">
+			</testcontainer>
+			<testcontainer
+			id="af8afe84-b9e4-4f8e-9713-fb9ee6a561fa">
+			</testcontainer>
+			<testcontainer
+			id="b7d7b13b-74ad-434a-b5f6-864d68d09c65">
+			</testcontainer>
+			<testcontainer
+			id="ba7d02db-83df-4a58-a877-7079c0c072d1">
+			</testcontainer>
+			<testcontainer
+			id="baf76252-a794-4bae-b009-029b41fb4909">
+			</testcontainer>
+			<testcontainer
+			id="c54f0f1c-20d9-44fd-86fc-e03a59270062">
+			</testcontainer>
+			<testcontainer
+			id="cceee567-5f9b-42d2-8650-e4fe3f681ce7">
+			</testcontainer>
+			<testcontainer
+			id="cd81ca32-dcec-4820-a8ae-651f4fb352fd">
+			</testcontainer>
+			<testcontainer
+			id="cf39d7d1-2c56-4fa3-bd94-7e7e279b8212">
+			</testcontainer>
+			<testcontainer
+			id="d031a207-cff1-4be2-a7dc-6a5e6b27e9fc">
+			</testcontainer>
+			<testcontainer
+			id="d267156a-bd78-4461-b8df-0f50f347503e">
+			</testcontainer>
+			<testcontainer
+			id="d5153b20-b80f-46bf-b3ad-21bc08c441a5">
+			</testcontainer>
+			<testcontainer
+			id="dff07067-effc-4890-92d8-c38fac1b341e">
+			</testcontainer>
+			<testcontainer
+			id="eb3abe92-21e8-4fb2-807f-93c909ed394d">
+			</testcontainer>
+			<testcontainer
+			id="ed37180b-484d-4dd9-bbb4-449b3683e04a">
+			</testcontainer>
+			<testcontainer
+			id="f29ebf50-4fc1-4096-838b-4260b39f2e32">
+			</testcontainer>
+			<testcontainer
+			id="f3d1a7e8-b7b0-40e7-b98a-d526f10d0e68">
+			</testcontainer>
+			<testcontainer
+			id="f83150ed-3ddf-400b-a5cc-236e33dad44e">
+			</testcontainer>
+			<testcontainer
+			id="f9dbc718-8223-442b-bf9d-4e7622d656ea">
+			</testcontainer>
+			<testcontainer
+			id="fc59bb6a-0fb0-4c59-90c2-13991d6de585">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

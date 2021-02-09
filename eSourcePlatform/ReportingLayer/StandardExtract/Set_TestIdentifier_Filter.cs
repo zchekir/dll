@@ -24,22 +24,22 @@ namespace ReportingLayer.StandardExtract
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Set_Date_Filter recording.
+    ///The Set_TestIdentifier_Filter recording.
     /// </summary>
     [TestModule("478d647e-d7d3-47c9-bc73-483c7f81df1f", ModuleType.Recording, 1)]
-    public partial class Set_Date_Filter : ITestModule
+    public partial class Set_TestIdentifier_Filter : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::ReportingLayer.ReportingLayerRepository repository.
         /// </summary>
         public static global::ReportingLayer.ReportingLayerRepository repo = global::ReportingLayer.ReportingLayerRepository.Instance;
 
-        static Set_Date_Filter instance = new Set_Date_Filter();
+        static Set_TestIdentifier_Filter instance = new Set_TestIdentifier_Filter();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Set_Date_Filter()
+        public Set_TestIdentifier_Filter()
         {
             TestIdentifier = "";
         }
@@ -47,7 +47,7 @@ namespace ReportingLayer.StandardExtract
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Set_Date_Filter Instance
+        public static Set_TestIdentifier_Filter Instance
         {
             get { return instance; }
         }
