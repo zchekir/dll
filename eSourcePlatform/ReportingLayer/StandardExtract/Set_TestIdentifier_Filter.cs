@@ -92,45 +92,51 @@ namespace ReportingLayer.StandardExtract
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'PowerBI' at Center.", repo.PowerBI.SelfInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(0));
+            Delay.Duration(60000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'PowerBI' at Center.", repo.PowerBI.SelfInfo, new RecordItemIndex(1));
             repo.PowerBI.Self.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterButton' at Center.", repo.PowerBI.FilterButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterButton' at Center.", repo.PowerBI.FilterButtonInfo, new RecordItemIndex(2));
             repo.PowerBI.FilterButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Escape} '.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Escape} '.", new RecordItemIndex(3));
             Keyboard.Press("{Escape} ");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.SearchFilterBox' at Center.", repo.PowerBI.SearchFilterBoxInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.SearchFilterBox' at Center.", repo.PowerBI.SearchFilterBoxInfo, new RecordItemIndex(4));
             repo.PowerBI.SearchFilterBox.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(5));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'TestIdentifier' with focus on 'PowerBI.SearchFilterBox'.", repo.PowerBI.SearchFilterBoxInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'TestIdentifier' with focus on 'PowerBI.SearchFilterBox'.", repo.PowerBI.SearchFilterBoxInfo, new RecordItemIndex(6));
             repo.PowerBI.SearchFilterBox.PressKeys("TestIdentifier", 10);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilter' at Center.", repo.PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilterInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(7));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilter' at Center.", repo.PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilterInfo, new RecordItemIndex(8));
             repo.PowerBI.FilterOptions.TestIdentifierFilter.ExpandFilter.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter'.", repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilterInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$TestIdentifier' with focus on 'PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter'.", repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilterInfo, new RecordItemIndex(9));
             repo.PowerBI.FilterOptions.TestIdentifierFilter.SearchFilter.PressKeys(TestIdentifier, 1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(10));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOption' at Center.", repo.PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOptionInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOption' at Center.", repo.PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOptionInfo, new RecordItemIndex(11));
             repo.PowerBI.FilterOptions.TestIdentifierFilter.CheckboxOption.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(12));
             Delay.Duration(500, false);
             
         }
