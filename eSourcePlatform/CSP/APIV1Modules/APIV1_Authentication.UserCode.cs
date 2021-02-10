@@ -79,5 +79,17 @@ namespace CSP.APIV1Modules
 			}
 		}
 
+        public void test()
+        {
+            // TODO: Replace the following line with your code implementation.
+            throw new NotImplementedException();
+        }
+
+        public void Workflow()
+        {
+            // TODO: Replace the following line with your code implementation.
+            throw new NotImplementedException();
+        }
+
 	}
 }
