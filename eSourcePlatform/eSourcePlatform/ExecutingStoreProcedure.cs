@@ -160,9 +160,6 @@ namespace eSourcePlatform
             CSPStoreProcedure(DBServer, Database, dbUsername, dbPassword, Authentication, studID);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(1));
-            Delay.Duration(900, false);
-            
         }
 
 #region Image Feature Data
