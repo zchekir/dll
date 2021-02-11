@@ -284,8 +284,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="AuthenticationConnector"
 			id="13963861-7aff-4b48-aaad-65caef5d47f4"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="eSourcePlatform_Tests">
 			</smartfoldernode>
 			<testmodule
@@ -1623,8 +1623,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="SmokeTest">
 			</smartfoldernode>
 			<testmodule
@@ -5677,14 +5677,11 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>

@@ -96,9 +96,6 @@ namespace RedCapCloud.SubjectsPage
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1.5m to exist. Associated repository item: 'REDCapCloud.iFrame.StartButton'", repo.REDCapCloud.iFrame.StartButtonInfo, new ActionTimeout(90000), new RecordItemIndex(1));
             repo.REDCapCloud.iFrame.StartButtonInfo.WaitForExists(90000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2m.", new RecordItemIndex(2));
-            Delay.Duration(120000, false);
-            
         }
 
 #region Image Feature Data

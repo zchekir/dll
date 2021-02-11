@@ -1,6 +1,8 @@
 **BEFORE YOU BEGIN**
 
-* Navigate to the cogstate-qc\eSourcePlatform\eSourcePlatform directory and make sure it contains the Authentication.csv file containing the following columns:
+* Navigate to the cogstate-qc\_assets\connectors directory and copy the Authentication.csv file into the cogstate-qc\eSourcePlatform\eSourcePlatform directory.
+
+Add your credentials to the appropriate columns for the environment(s) the scripts will be executed on.
 
 	* RCCUsername
 	* RCCPassword
@@ -15,8 +17,6 @@
 	* WASpassword
 	* InternalUsername
 	* InternalPassword
-
-For each colmn enter in your credentials to be used for the test run environemnt.
 
 Save the Data Connector.
 
