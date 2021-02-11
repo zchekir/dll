@@ -1283,8 +1283,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="20ca029a-e7c4-41e5-817f-84b8033cbe89"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="Validate_Outcomes">
 			</testcase>
 			<testcase
@@ -1720,8 +1720,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="310227d9-5bc7-487b-94e5-49736d0729bc"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="CSPStoreProcedure">
 			</testcase>
 			<testmodule
@@ -2733,6 +2733,12 @@ rxversion="8.3">
 					variableid="1985b0c0-efe4-46b6-902c-4c52cb9ac83f"
 					variablename="Studname">
 					</var>
+					<var
+					dataname="internalAPIWorkflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="130b96ef-9f53-45b0-a048-9ad234a1e59b"
+					variablename="workflowID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -2845,8 +2851,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="API_Authentication"
 			id="45077930-4bd9-4874-ad6a-91b58033c26a"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="API_Regression">
 			</smartfoldernode>
 			<testmodule
@@ -2878,6 +2884,12 @@ rxversion="8.3">
 					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
 					variableid="bed4926d-b6fd-44ab-98a4-c52e31f5f26c"
 					variablename="VisitSceduleData">
+					</var>
+					<var
+					dataname="internalAPIWorkflowID"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="604d9e04-4433-4062-af4f-0fbd0ddfa3b0"
+					variablename="workflowID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3592,6 +3604,14 @@ rxversion="8.3">
 			warnunboundvariables="False">
 				<parameters>
 					<param
+					name="ServerVersionDeployed"
+					value="3.0.1.13">
+					</param>
+					<param
+					name="ClientVersionDeployed"
+					value="3.0.1-rc.13">
+					</param>
+					<param
 					name="RandNum"
 					value="">
 					</param>
@@ -3718,10 +3738,14 @@ rxversion="8.3">
 					</param>
 					<param
 					name="Batteryversion"
-					value="8.13.4">
+					value="">
 					</param>
 					<param
 					name="visitCode"
+					value="">
+					</param>
+					<param
+					name="internalAPIWorkflowID"
 					value="">
 					</param>
 				</parameters>
@@ -4384,6 +4408,10 @@ rxversion="8.3">
 			id="69f50943-5b2d-41d4-ac43-d7cce45967af"
 			name="SwaggerAPI-UIValidation">
 			</smartfoldernode>
+			<testcase
+			id="6a0f187c-803a-441b-82fb-ac03e46a5147"
+			name="V1_workfllow">
+			</testcase>
 			<testmodule
 			id="6a6adb90-d729-4ecd-bc2f-3d5612714d3a"
 			name="Click_AddTest_Button"
@@ -4460,6 +4488,32 @@ rxversion="8.3">
 			id="6ca09e2a-4c7d-4a39-8d5c-2536845d07e5"
 			name="Authenticate_and_Complete_Tiers_Assessment">
 			</testcase>
+			<testmodule
+			id="6e01c6d4-ea3e-4a30-af4f-6a592c7223b6"
+			name="v1workflow"
+			ref="ebfd744e-016b-4c2e-b618-8aab34d536f7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="visitsession"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="c49f9af2-e88b-42ba-b8a0-b6a5682034af"
+					variablename="visitsessionid">
+					</var>
+					<var
+					dataname="DOM"
+					datasourceid="cbdc415d-b2dd-4894-a5b1-171456b68bdc"
+					variableid="cb93ef1f-fd6a-4675-9c66-a751f50d841b"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="v1autoToken"
+					datasourceid="5b9d50d4-bfb0-4c04-9a41-b13bbd8e2e9f"
+					variableid="a09dd73d-eea5-4002-b217-5597b8288e9a"
+					variablename="authToken">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			errorbehavior="Stop"
 			id="6e082396-bffa-4d84-b254-0da30d111799"
@@ -8976,8 +9030,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="fc8b3962-aeac-430d-b7ab-6d5927607040"
-			maxrange="0"
-			minrange="0"
+			maxrange="1"
+			minrange="1"
 			name="ReprocessWorkflowFlag">
 			</testcase>
 			<testmodule
@@ -10581,6 +10635,14 @@ rxversion="8.3">
 									<testmodule
 									id="5ee32229-20ba-4b3b-ad49-74060a814c24"
 									name="APIV1_Authentication">
+									</testmodule>
+								</testcase>
+								<testcase
+								id="6a0f187c-803a-441b-82fb-ac03e46a5147"
+								name="V1_workfllow">
+									<testmodule
+									id="6e01c6d4-ea3e-4a30-af4f-6a592c7223b6"
+									name="v1workflow">
 									</testmodule>
 								</testcase>
 								<testcase

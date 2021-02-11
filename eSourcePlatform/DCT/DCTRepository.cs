@@ -123,7 +123,7 @@ namespace DCT
             set { _CSPUsername = value; }
         }
 
-        string _DCTDOM = "";
+        string _DCTDOM = "cgst-staging-dct.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable DCTDOM.
@@ -291,7 +291,7 @@ namespace DCT
                 _invalidatebuttonInfo = new RepoItemInfo(this, "InvalidateButton", ".//button[#'action-row-invalidate-button']", 30000, null, "d51ef50b-cc93-42e6-9669-6ad2db192605");
                 _restorebuttonInfo = new RepoItemInfo(this, "RestoreButton", ".//button[#'action-row-restore-button']/span[@innertext='restore']", 30000, null, "dcad520b-c5c1-43c8-84e3-9c49e20656ca");
                 _findbyassessmentidbuttonInfo = new RepoItemInfo(this, "FindByAssessmentIdButton", ".//div[#'root']/div/div/div[2]/div[2]/?/?/span[@innertext='Find By Assessment Id']", 30000, null, "98cfba2b-c4c5-488d-8805-d8e0193ff5bb");
-                _searchresultInfo = new RepoItemInfo(this, "SearchResult", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2020-']", 30000, null, "2f9f79e7-580e-4755-a6bc-f7137da21cde");
+                _searchresultInfo = new RepoItemInfo(this, "SearchResult", ".//div[#'root']/div/div/div[3]/?/?/table//td[@innertext~'2021-']", 30000, null, "2f9f79e7-580e-4755-a6bc-f7137da21cde");
                 _clickconfirmInfo = new RepoItemInfo(this, "ClickConfirm", ".//button[#'move-confirmation-button-next']", 30000, null, "67c5cfc6-aa95-441f-bd70-e6ac84c9e2f1");
                 _makeprimarybuttonInfo = new RepoItemInfo(this, "MakePrimaryButton", ".//button[#'action-row-make-primary-button']/span[@innertext='make primary']", 30000, null, "8a0da0d6-6903-467a-8b3a-441a0225f30c");
                 _movebuttonInfo = new RepoItemInfo(this, "MoveButton", ".//button[#'action-row-move-button']/span[@innertext='move']", 30000, null, "4475259d-22a2-4512-a4b1-742099f24bb9");

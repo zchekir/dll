@@ -46,6 +46,7 @@ namespace CSP
             WorkflowData = "";
             Studname = "";
             CSPDOM = "";
+            workflowID = "";
         }
 
         /// <summary>
@@ -104,6 +105,18 @@ namespace CSP
         {
             get { return _Studname; }
             set { _Studname = value; }
+        }
+
+        string _workflowID;
+
+        /// <summary>
+        /// Gets or sets the value of variable workflowID.
+        /// </summary>
+        [TestVariable("130b96ef-9f53-45b0-a048-9ad234a1e59b")]
+        public string workflowID
+        {
+            get { return _workflowID; }
+            set { _workflowID = value; }
         }
 
         /// <summary>

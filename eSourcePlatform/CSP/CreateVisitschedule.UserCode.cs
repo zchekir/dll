@@ -55,6 +55,8 @@ namespace CSP
 
         public void Visitschedulecreation(string Token, string Studyid, string VisitCode, string CSPDOM, string VisitSceduleData)
         {
+        	
+        	try{
            
         	 //variable
 		    string url = "https://" + CSPDOM + "/api/studies/" + Studyid + "/visitSchedules";
@@ -76,7 +78,7 @@ namespace CSP
 			{
 		 	
 		    
-               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber);
+               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber).Replace(@"<workflowID>", workflowID);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -103,12 +105,16 @@ namespace CSP
 			 }
 
 
+        	} catch (Exception e){
+        		
+        		Report.Log(ReportLevel.Info, e.Message);
+        	}
 
-
+        	}
 
 
         	
         }
 
     }
-}
+

@@ -30,6 +30,7 @@ namespace CSP
 	public class WorkflowJSONRequest
 	{
 		public string JsonData { get; set; }
+		public string id { get; set; }
 	
 	/// Object for creating a new workflow request
 		public WorkflowJSONRequest()
@@ -50,6 +51,7 @@ namespace CSP
 
         public void createWorkflow(string Token, string Studyid, string workflowData, string Studname, string CSPDOM)
         {
+        	try{
         	
         //variable
 		    string url = "https://" + CSPDOM + "/api/studies/" + Studyid + "/workflows";
@@ -84,8 +86,16 @@ namespace CSP
 			{
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<WorkflowJSONRequest>(response);
+				workflowID =responseObject.id;
+				Report.Log(ReportLevel.Info, "workflowid" + workflowID );
+				
 				Report.Log(ReportLevel.Info, "The work is created as expected " + response );
 			 }
+			
+        	}catch (Exception e){
+        		
+        		Report.Log(ReportLevel.Info, e.Message);
+        	}
    }
     
   }
