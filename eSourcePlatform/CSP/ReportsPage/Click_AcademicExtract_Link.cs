@@ -102,19 +102,16 @@ namespace CSP.ReportsPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
-            Delay.Duration(5000, false);
-            
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.AddStudyPage.ProtocolNumberField' and assigning its value to variable 'ProtocolID'.", repo.CogstateSolutionPlatform.AddStudyPage.ProtocolNumberFieldInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'CogstateSolutionPlatform.AddStudyPage.ProtocolNumberField' and assigning its value to variable 'ProtocolID'.", repo.CogstateSolutionPlatform.AddStudyPage.ProtocolNumberFieldInfo, new RecordItemIndex(0));
             ProtocolID = repo.CogstateSolutionPlatform.AddStudyPage.ProtocolNumberField.Element.GetAttributeValueText("Value");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ReportsPage.AcademicExtractLink' at Center.", repo.CogstateSolutionPlatform.ReportsPage.AcademicExtractLinkInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.ReportsPage.AcademicExtractLink' at Center.", repo.CogstateSolutionPlatform.ReportsPage.AcademicExtractLinkInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.ReportsPage.AcademicExtractLink.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(2));
+            Delay.Duration(60000, false);
             
         }
 
