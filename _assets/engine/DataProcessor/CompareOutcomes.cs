@@ -297,24 +297,31 @@ namespace engine.DataProcessor
 			
 			//Outcomes relevant for ISLT based Tests
 			string[] listOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
-				"SessionIntegrityPass", "Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
-				"TestPerformancePass", "TestIntegrityPass", "TestDuration", "PrimaryOutcome", "Accuracy", "RawAccuracy", "TotalCorrect", "TotalErrors",
-				"TotalResponses", "TotalTrials", "StandardScoreZ", "StandardScoreT", "ChangeScore", "TestIdentifier"};
+				"Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "Accuracy", "RawAccuracy", "TotalCorrect", "TotalErrors",
+				"TotalResponses", "TotalCorrectFoils", "TotalTrials", "StandardScoreZ", "StandardScoreT", "ChangeScore", "TestIdentifier"};
 			
 			//Outcomes relevant for Maze based Tests
 			string[] mazeOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
-				"SessionIntegrityPass", "Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
-				"TestPerformancePass", "TestIntegrityPass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalErrors", "LegalErrors", "RuleBreakErrors",
+				"Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalErrors", "LegalErrors", "RuleBreakErrors",
 				"StandardScoreZ", "StandardScoreT",	"ChangeScore", "MovesPerSecond", "ReturnToHead", "PerseverativeErrors", "WithinSearchErrors",
 				"GMLTIndex", "TestIdentifier"};
 			
+			//Outcomes relevant for Image based Tests 
+			string[] imageOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
+			    "Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "ReactionTime", "RawReactionTime", "RTVariability", "RawRTVariability",
+				"Accuracy", "RawAccuracy", "Round", "TestAttempt", "TestCompletionPass", "TotalResponses", "TotalTrials", "TotalAnticipatory", "TotalPost",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalCorrectExclPant", "TotalErrors", "LegalErrors", "RuleBreakErrors",
+				"StandardScoreZ", "StandardScoreT",	"ChangeScore", "TotalMaxOut", "TestIdentifier"};
 			
-			//Outcomes relevant for Tests which do not fall into the above categories STILL NEED TO UPDATE
+			
+			//Outcomes relevant for Tests which do not fall into the above categories
 			string[] otherOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
-				"SessionIntegrityPass", "Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
-				"TestPerformancePass", "TestIntegrityPass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalErrors", "LegalErrors", "RuleBreakErrors",
-				"StandardScoreZ", "StandardScoreT",	"ChangeScore", "MovesPerSecond", "ReturnToHead", "PerseverativeErrors", "WithinSearchErrors",
-				"GMLTIndex", "TestIdentifier"};
+				"Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "ReactionTime", "RawReactionTime", "RTVariability", "RawRTVariability",
+				"Accuracy", "RawAccuracy", "Round", "TestAttempt", "TestCompletionPass", "TotalResponses", "TotalTrials", "TotalAnticipatory", "TotalPost",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalCorrectExclPant", "TotalErrors", "LegalErrors", "RuleBreakErrors",
+				"StandardScoreZ", "StandardScoreT",	"ChangeScore", "TotalMaxOut", "TotalFalsePositive", "SATScore", "TestIdentifier"};
 			
 		
 			
@@ -340,6 +347,13 @@ namespace engine.DataProcessor
 				}
 				
 			}
+			else if (currentTestCode.Contains("BPSO") || currentTestCode.Contains("FName") || currentTestCode.Contains("SECT"))
+			{
+				if (imageOutcomes.Any(currentOutcome.Equals)) {
+					relevant = true;
+				}
+				
+			}
 			else if (currentTestCode.Contains("CPAL") || currentTestCode.Contains("FT") || currentTestCode.Contains("IDSST")
 			         || currentTestCode.Contains("SART") || currentTestCode.Contains("SAT"))
 			{
@@ -348,8 +362,6 @@ namespace engine.DataProcessor
 				}
 			}
 				
-			
-			
 			
 			return relevant;
 		}
