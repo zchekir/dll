@@ -2047,8 +2047,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="7eb647ac-fff1-427a-a00c-fb97f0647f07"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="Regression">
 			</smartfoldernode>
 			<testmodule
@@ -2498,8 +2498,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="AuthenticationConnector"
 			id="9575000a-3ac7-483b-a209-8343f4b1ec8b"
-			maxrange="1"
-			minrange="1"
+			maxrange="0"
+			minrange="0"
 			name="ReportingLayer_Tests">
 			</smartfoldernode>
 			<modulegroup
@@ -2675,7 +2675,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="a20e6f0f-bbd9-47f1-a3de-5a327c6a0ec3"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
@@ -5566,14 +5565,11 @@ rxversion="8.3">
 		<DataSource
 		id="1130de77-2323-4ee7-960d-ecddcbac01cf"
 		includefile="Unchecked"
-		lastknownrowcount="3"
+		lastknownrowcount="2"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
-				<column>
-					Environment
-				</column>
 				<column>
 					RCCUsername
 				</column>
