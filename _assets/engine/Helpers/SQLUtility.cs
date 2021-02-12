@@ -57,16 +57,8 @@ namespace engine.Helpers
 			
 			string query = @"SELECT
 	     Userdata.Part.IQNumber                                                                                                                 AS [IQNumber]
-		,UserData.Person.DOB                                                                                                                    AS [DateOfBirth]
-		,YEAR(UserData.Person.DOB)                                                                                                              AS [BirthYear]
 		,Assessment.Assessment.Age                                                                                                              AS [Age]
 		,Assessment.Assessment.Id                                                                                                               AS [SessionID]
-		,CONVERT(VARCHAR(10), Assessment.Assessment.DateOfAssessment, 20)                                                                       AS [SessionDate]
-		,CONVERT(VARCHAR(12), Assessment.Assessment.DateOfAssessment, 14)                                                                       AS [SessionTime]
-		,(SELECT COUNT(1)
-			FROM Assessment.AssessmentSessionAttempt asatt
-			WHERE asatt.AssessmentSessionId = Assessment.AssessmentSession.Id
-			AND asatt.id <= Assessment.AssessmentSessionAttempt.Id)                                                                             AS [SessionAttempt]
 		,Assessment.Assessment.SessionDuration                                                                                                  AS [SessionDuration]
 		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionCompletion'
 			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes'
@@ -77,7 +69,6 @@ namespace engine.Helpers
 		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionIntegrity'
 			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes'
 			WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value]=0 THEN 'No' ELSE null END END)                                            AS [SessionIntegrityPass]
-		,Assessment.Test.Id                                                                                                                     AS [TestId]
 		,Assessment.Test.[Name]                                                                                                                 AS [Test]
 		,Assessment.TestCode.[Name]                                                                                                             AS [TestCode]
 		,Assessment.AssessmentTest.TaskVersion                                                                                                  AS [TestVersion]
