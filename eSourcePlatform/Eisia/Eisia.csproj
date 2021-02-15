@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{630ECA1B-6719-4885-A632-311B157E4A6E}</ProjectGuid>
+    <ProjectGuid>{FC261DAC-B3DD-4BC5-9799-75398377688D}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Eisia</RootNamespace>
     <AssemblyName>Eisia</AssemblyName>
     <RanorexVersion>8.3</RanorexVersion>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</projectdefaultrepository>
     <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
@@ -114,31 +115,73 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
-      <id>99dbacad-389c-4415-93d2-be097b95a656</id>
+      <id>da6add14-ff53-4994-ae5d-81c6029f41dc</id>
     </Compile>
-    <Compile Include="MainForm.cs">
-      <id>85e2283b-fb5b-40b3-a9c1-f70fd17475bf</id>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-      <id>7318d934-165b-4612-8d6d-9b53ff462e57</id>
-      <BoundTo>85e2283b-fb5b-40b3-a9c1-f70fd17475bf</BoundTo>
+    <Compile Include="EisiaRepository.cs">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <DependentUpon>EisiaRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>59866eda-4f31-4a52-b6ee-7b1e3b213f45</id>
     </Compile>
     <Compile Include="Program.cs">
-      <id>da04ffe9-57b4-4a6d-9b34-55e0b6310c0e</id>
+      <id>35806e95-8155-4005-8621-1a84692469a1</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>d6a7bbd4-a6b5-45b6-ba9e-ae577018991e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bdc889ff-aede-4392-9bfe-2f0ee5e74cd3</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>d6a7bbd4-a6b5-45b6-ba9e-ae577018991e</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7f4aac2-6608-4470-8990-96c92676ddf0</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Eisai.rxtst">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>69bf5af2-6dd6-4573-9c0e-522914c71215</id>
-    </Content>
     <None Include="app.config">
-      <id>ab329ea9-2676-4b75-a6fa-c86a20e0752d</id>
+      <id>dfac29e5-1ad5-433d-9aa7-b275bde55958</id>
     </None>
-    <Content Include="Eisia.rxsqc">
+    <None Include="EisiaRepository.rximg">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <DependentUpon>EisiaRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>cc2070df-d18a-4ae7-a825-2e95c256c2c4</id>
+    </None>
+    <None Include="EisiaRepository.rxrep">
+      <id>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</id>
+      <repoid>f34d47ec-da17-403a-a924-0231f9262df3</repoid>
+      <reporootid>e5685f81-f17a-4d8f-b73b-bdad3f8c32d5</reporootid>
+    </None>
+    <Content Include="JSON.csv">
+      <Link>JSON.csv</Link>
+      <BoundTo>92686ce6-e59c-4203-b1ae-0f43b48c3d04</BoundTo>
+      <DependentUpon>Eisia.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>777fac81-0dc7-4b02-a1b2-6fef5a469d1b</id>
+    </Content>
+    <None Include="Recording1.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>d6a7bbd4-a6b5-45b6-ba9e-ae577018991e</id>
+      <recordtableid>44830e11-5c88-4323-92f9-a689c2f1a174</recordtableid>
+    </None>
+    <Content Include="TenantConnector.csv">
+      <Link>TenantConnector.csv</Link>
+      <BoundTo>92686ce6-e59c-4203-b1ae-0f43b48c3d04</BoundTo>
+      <DependentUpon>Eisia.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>b8bfc096-993d-4b85-83ce-a2d89b188fb7</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Eisia.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>9ea525f8-b568-4e84-a43e-26a6465d4f68</id>
+      <id>40f10745-5699-40db-9bec-20a5aaea7e47</id>
+    </Content>
+    <Content Include="Eisia.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>92686ce6-e59c-4203-b1ae-0f43b48c3d04</id>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,32 +1,49 @@
 ﻿/*
  * Created by Ranorex
  * User: zchekir
- * Date: 2/10/2021
- * Time: 11:21 AM
+ * Date: 2/14/2021
+ * Time: 8:13 PM
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
 
 using System;
-using System.Windows.Forms;
+using System.Threading;
+using System.Drawing;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using WinForms = System.Windows.Forms;
+
+using Ranorex;
+using Ranorex.Core;
+using Ranorex.Core.Reporting;
+using Ranorex.Core.Testing;
 
 namespace Eisia
 {
-	/// <summary>
-	/// Class with program entry point.
-	/// </summary>
-	internal sealed class Program
-	{
-		/// <summary>
-		/// Program entry point.
-		/// </summary>
-		[STAThread]
-		private static void Main(string[] args)
-		{
-			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new MainForm());
-		}
-		
-	}
+    class Program
+    {
+        [STAThread]
+        public static int Main(string[] args)
+        {
+            // Uncomment the following 2 lines if you want to automate Windows apps
+            // by starting the test executable directly
+            //if (Util.IsRestartRequiredForWinAppAccess)
+            //    return Util.RestartWithUiAccess();
+
+            Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
+            int error = 0;
+
+            try
+            {
+                error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);
+            }
+            catch (Exception e)
+            {
+                Report.Error("Unexpected exception occurred: " + e.ToString());
+                error = -1;
+            }
+            return error;
+        }
+    }
 }
