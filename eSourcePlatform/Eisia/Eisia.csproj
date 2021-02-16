@@ -9,7 +9,7 @@
     <RootNamespace>Eisia</RootNamespace>
     <AssemblyName>Eisia</AssemblyName>
     <RanorexVersion>8.3</RanorexVersion>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</projectdefaultrepository>
     <StartAction>Project</StartAction>
@@ -35,6 +35,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -107,13 +110,31 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Web.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="Vse.Web.Serialization">
+      <HintPath>..\packages\Vse.Web.Serialization.ControlledSerializationJsonConverter.1.0.4\lib\net45\Vse.Web.Serialization.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddStudyToExternalUser.cs">
+      <BoundTo>05e63942-23fb-4d21-a56b-1f709ea56763</BoundTo>
+      <DependentUpon>AddStudyToExternalUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>74a97444-9a37-4b43-9272-60698a5d4772</id>
+    </Compile>
+    <Compile Include="AddStudyToExternalUser.UserCode.cs">
+      <BoundTo>05e63942-23fb-4d21-a56b-1f709ea56763</BoundTo>
+      <DependentUpon>AddStudyToExternalUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d4156058-eec3-4d28-8b82-8524b616358c</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>da6add14-ff53-4994-ae5d-81c6029f41dc</id>
     </Compile>
@@ -123,26 +144,38 @@
       <RepositoryCode>true</RepositoryCode>
       <id>59866eda-4f31-4a52-b6ee-7b1e3b213f45</id>
     </Compile>
+    <Compile Include="InternalUserCreation.cs">
+      <BoundTo>dd0d3013-ecee-4283-b402-e0a87ccd7a78</BoundTo>
+      <DependentUpon>InternalUserCreation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f3971461-3579-4692-a97d-31897b95ad3a</id>
+    </Compile>
+    <Compile Include="InternalUserCreation.UserCode.cs">
+      <BoundTo>dd0d3013-ecee-4283-b402-e0a87ccd7a78</BoundTo>
+      <DependentUpon>InternalUserCreation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d8f4dcc7-b96b-464a-af06-2565876af813</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>35806e95-8155-4005-8621-1a84692469a1</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>d6a7bbd4-a6b5-45b6-ba9e-ae577018991e</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>bdc889ff-aede-4392-9bfe-2f0ee5e74cd3</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>d6a7bbd4-a6b5-45b6-ba9e-ae577018991e</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e7f4aac2-6608-4470-8990-96c92676ddf0</id>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AddStudyToExternalUser.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>05e63942-23fb-4d21-a56b-1f709ea56763</id>
+      <recordtableid>6ad77014-b8f6-4d5a-a182-12f6dfe29c96</recordtableid>
+    </None>
     <None Include="app.config">
       <id>dfac29e5-1ad5-433d-9aa7-b275bde55958</id>
     </None>
+    <Content Include="EisiaAuthentication.csv">
+      <Link>EisiaAuthentication.csv</Link>
+      <BoundTo>92686ce6-e59c-4203-b1ae-0f43b48c3d04</BoundTo>
+      <DependentUpon>Eisia.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>40174340-b14b-4ee7-8df5-58fdb94774ac</id>
+    </Content>
     <None Include="EisiaRepository.rximg">
       <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
       <DependentUpon>EisiaRepository.rxrep</DependentUpon>
@@ -161,10 +194,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>777fac81-0dc7-4b02-a1b2-6fef5a469d1b</id>
     </Content>
-    <None Include="Recording1.rxrec">
+    <None Include="InternalUserCreation.rxrec">
       <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
-      <id>d6a7bbd4-a6b5-45b6-ba9e-ae577018991e</id>
-      <recordtableid>44830e11-5c88-4323-92f9-a689c2f1a174</recordtableid>
+      <id>dd0d3013-ecee-4283-b402-e0a87ccd7a78</id>
+      <recordtableid>ef258eb9-653e-42c5-9800-82552a0d53b2</recordtableid>
+    </None>
+    <None Include="packages.config">
+      <id>71e6487e-422e-4678-8e30-d51b1efc36ca</id>
     </None>
     <Content Include="TenantConnector.csv">
       <Link>TenantConnector.csv</Link>
@@ -183,6 +219,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>92686ce6-e59c-4203-b1ae-0f43b48c3d04</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSP\CSP.csproj">
+      <Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
+      <Name>CSP</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
