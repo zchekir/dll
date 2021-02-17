@@ -97,8 +97,8 @@ namespace CSP.APIV1Modules
         [TestVariable("62f54ed9-1a1e-4d81-8545-c144147955a9")]
         public string Key
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return repo.key; }
+            set { repo.key = value; }
         }
 
 #endregion

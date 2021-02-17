@@ -110,8 +110,8 @@ namespace CSP.APIV2Modules
         [TestVariable("f186491e-a988-4bd5-8270-b971bccb2bd9")]
         public string Key
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return repo.key; }
+            set { repo.key = value; }
         }
 
 #endregion

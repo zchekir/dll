@@ -138,6 +138,7 @@ namespace CSP
 		public void Workflow(string AuthToken, string ProtocolNumber, string CSPDOM, string DOB, string genderCode, string localityCode, string redirectError, string redirect, string mode)
 		{
 			Report.Log(ReportLevel.Info, "Current Study: " + ProtocolNumber);
+			Report.Log(ReportLevel.Info, "Initial: " + DOB);
 			//variable
 			string url = "https://" + CSPDOM + "////api/external/V2/" + ProtocolNumber + "/AssessmentAttempt";
 			//Setup API call

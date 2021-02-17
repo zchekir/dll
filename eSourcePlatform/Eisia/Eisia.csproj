@@ -35,6 +35,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="engine">
+      <HintPath>..\..\..\..\123\cogstate-qc\_assets\engine\bin\Debug\engine.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -159,6 +162,30 @@
     <Compile Include="Program.cs">
       <id>35806e95-8155-4005-8621-1a84692469a1</id>
     </Compile>
+    <Compile Include="RestToken.cs">
+      <BoundTo>465248e5-edb1-4ab5-95f7-22fe7d0335ef</BoundTo>
+      <DependentUpon>RestToken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f8f3d4e3-6e05-4e94-8897-921bfdcddfa3</id>
+    </Compile>
+    <Compile Include="RestToken.UserCode.cs">
+      <BoundTo>465248e5-edb1-4ab5-95f7-22fe7d0335ef</BoundTo>
+      <DependentUpon>RestToken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47bb2464-6eef-4795-a8a7-37102a66b698</id>
+    </Compile>
+    <Compile Include="SecretKey.cs">
+      <BoundTo>12dddbbb-39ad-4d40-bc8d-3a58181317b5</BoundTo>
+      <DependentUpon>SecretKey.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bcba2255-8a27-430b-a285-5acad3d23dc5</id>
+    </Compile>
+    <Compile Include="SecretKey.UserCode.cs">
+      <BoundTo>12dddbbb-39ad-4d40-bc8d-3a58181317b5</BoundTo>
+      <DependentUpon>SecretKey.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31ef4971-8268-4ebb-8015-c58c4d2279b3</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="AddStudyToExternalUser.rxrec">
@@ -209,6 +236,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>b8bfc096-993d-4b85-83ce-a2d89b188fb7</id>
     </Content>
+    <None Include="RestToken.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>465248e5-edb1-4ab5-95f7-22fe7d0335ef</id>
+      <recordtableid>89bb46fb-a3a0-4202-b553-20eb0aba786e</recordtableid>
+    </None>
+    <None Include="SecretKey.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>12dddbbb-39ad-4d40-bc8d-3a58181317b5</id>
+      <recordtableid>64cee487-0f3b-4427-8ac6-746384f3aa0b</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Eisia.rxtmg">

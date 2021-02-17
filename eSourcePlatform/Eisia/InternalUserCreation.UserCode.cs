@@ -39,7 +39,7 @@ namespace Eisia
         	
         		
 
-        	//Validating the Reporting DB Version :
+        	//Creating an INTERNAL User :
 			
 			dt.Reset();
 			
@@ -152,7 +152,7 @@ order by createDate desc";
 			
 			
 			
-			Report.Info( "Validating Reporting DB version");
+			
 		
 				
 			//Connecting to SQL DB:
@@ -179,8 +179,8 @@ order by createDate desc";
     
                 }
 				
-				    InternalUserName =Iusername[0] ;
-				    InternalPassword="3A253852-3BA3-42C3-9B25-EEA7A42D1422";
+				    NewInternalUsername =Iusername[0] ;
+				    NewInternalPassword="3A253852-3BA3-42C3-9B25-EEA7A42D1422";
 					
                  
 
@@ -189,7 +189,8 @@ order by createDate desc";
 				
 				
 				//Pringting the resutls:
-				Report.Log(ReportLevel.Info,  "InternalUserName : " + "  " + InternalUserName );
+				Report.Log(ReportLevel.Info,  "InternalUserName : " + "  " +  NewInternalUsername );
+				Report.Log(ReportLevel.Info,  "InternalPassword : " + "  " + NewInternalPassword);
 			   
 				
 				

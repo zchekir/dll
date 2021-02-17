@@ -49,6 +49,7 @@ namespace CSP.DatabaseModules
       ,workflow.wkflowinstance.RerunWorkflow
 	  ,P.IQnumber
 	  ,PRWI.TestIdentifier
+	  ,userdata.person.DOB
    FROM [UserData].[PRWorkflowInstance] PRWI
    LEFT JOIN workflow.wkflowinstance on workflow.wkflowinstance.id=PRWI.id
    LEFT JOIN workflow.WkflowDefWkflowStat on workflow.WkflowDefWkflowStat.id= workflow.wkflowinstance.CurWkflowDefWkflowStatId
@@ -76,16 +77,19 @@ namespace CSP.DatabaseModules
 			
 			string Flag = dt.Rows[0][1].ToString();
 			string IQ = dt.Rows[0][2].ToString();
+			string dob = dt.Rows[0][4].ToString();
 			
 			
 			if (Flag==""){
 				
 				Report.Log(ReportLevel.Info, "Flag is NULL " );
 				Report.Log(ReportLevel.Info, "IQNumber: " + IQ );
+				Report.Log(ReportLevel.Info, " BOD is NOT Updated " + dob);
 			}else{
 				
 				Report.Log(ReportLevel.Info, "Flag: " + Flag );
 				Report.Log(ReportLevel.Info, "IQNumber: " + IQ );
+				Report.Log(ReportLevel.Info, "BOD was  Updated" + dob );
 			}
 			
 			

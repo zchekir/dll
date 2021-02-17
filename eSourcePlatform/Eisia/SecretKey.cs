@@ -24,34 +24,73 @@ namespace Eisia
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The SecretKey recording.
     /// </summary>
-    [TestModule("44830e11-5c88-4323-92f9-a689c2f1a174", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("64cee487-0f3b-4427-8ac6-746384f3aa0b", ModuleType.Recording, 1)]
+    public partial class SecretKey : ITestModule
     {
         /// <summary>
         /// Holds an instance of the EisiaRepository repository.
         /// </summary>
         public static EisiaRepository repo = EisiaRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static SecretKey instance = new SecretKey();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public SecretKey()
         {
+            DOM = "";
+            RestToken = "";
+            Token = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static SecretKey Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _DOM;
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("bf4e42d1-b3c0-44df-b330-aa3b0618f1fc")]
+        public string DOM
+        {
+            get { return _DOM; }
+            set { _DOM = value; }
+        }
+
+        string _RestToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable RestToken.
+        /// </summary>
+        [TestVariable("785afc36-1f6e-4392-8c52-dd8926052b5c")]
+        public string RestToken
+        {
+            get { return _RestToken; }
+            set { _RestToken = value; }
+        }
+
+        string _Token;
+
+        /// <summary>
+        /// Gets or sets the value of variable Token.
+        /// </summary>
+        [TestVariable("48d3037b-baaf-4ecb-8370-01301cb89b6f")]
+        public string Token
+        {
+            get { return _Token; }
+            set { _Token = value; }
+        }
 
 #endregion
 
@@ -79,6 +118,9 @@ namespace Eisia
 
             Init();
 
+            NewSecretKey(DOM, RestToken);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

@@ -24,52 +24,53 @@ namespace Eisia
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The InternalUserCreation recording.
+    ///The RestToken recording.
     /// </summary>
-    [TestModule("ef258eb9-653e-42c5-9800-82552a0d53b2", ModuleType.Recording, 1)]
-    public partial class InternalUserCreation : ITestModule
+    [TestModule("89bb46fb-a3a0-4202-b553-20eb0aba786e", ModuleType.Recording, 1)]
+    public partial class RestToken : ITestModule
     {
         /// <summary>
         /// Holds an instance of the EisiaRepository repository.
         /// </summary>
         public static EisiaRepository repo = EisiaRepository.Instance;
 
-        static InternalUserCreation instance = new InternalUserCreation();
+        static RestToken instance = new RestToken();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public InternalUserCreation()
+        public RestToken()
         {
-            DBServer = "cgst-qc.database.windows.net";
+            DBserver = "";
             Database = "";
+            Authentication = "";
             dbUsername = "";
             dbPassword = "";
-            Authentication = "Active Directory Password";
-            NewInternalPassword = "";
-            NewInternalUsername = "";
+            NewKey = "";
+            ResetToken = "";
+            TokenKey = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static InternalUserCreation Instance
+        public static RestToken Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _DBServer;
+        string _DBserver;
 
         /// <summary>
-        /// Gets or sets the value of variable DBServer.
+        /// Gets or sets the value of variable DBserver.
         /// </summary>
-        [TestVariable("9040c637-40d5-4851-a551-69f2220cecfd")]
-        public string DBServer
+        [TestVariable("19a511ef-68fe-4d23-97db-32acd0c08e32")]
+        public string DBserver
         {
-            get { return _DBServer; }
-            set { _DBServer = value; }
+            get { return _DBserver; }
+            set { _DBserver = value; }
         }
 
         string _Database;
@@ -77,11 +78,23 @@ namespace Eisia
         /// <summary>
         /// Gets or sets the value of variable Database.
         /// </summary>
-        [TestVariable("f3936ba2-ce55-4880-b194-31d5b4cfa4f1")]
+        [TestVariable("1a9e936a-485c-4159-9d21-d343e0d8e38f")]
         public string Database
         {
             get { return _Database; }
             set { _Database = value; }
+        }
+
+        string _Authentication;
+
+        /// <summary>
+        /// Gets or sets the value of variable Authentication.
+        /// </summary>
+        [TestVariable("8400623f-fd17-458b-9fb0-a83e4ad6feeb")]
+        public string Authentication
+        {
+            get { return _Authentication; }
+            set { _Authentication = value; }
         }
 
         string _dbUsername;
@@ -89,7 +102,7 @@ namespace Eisia
         /// <summary>
         /// Gets or sets the value of variable dbUsername.
         /// </summary>
-        [TestVariable("22ba80ba-364a-4718-9481-3425424c2be1")]
+        [TestVariable("a5695f59-4433-4c40-aa70-bf7dd01b30c5")]
         public string dbUsername
         {
             get { return _dbUsername; }
@@ -101,47 +114,47 @@ namespace Eisia
         /// <summary>
         /// Gets or sets the value of variable dbPassword.
         /// </summary>
-        [TestVariable("fb72c660-93af-470e-bdc5-c4958d71683d")]
+        [TestVariable("7dd69579-3cc7-4838-b440-9f85b73de23e")]
         public string dbPassword
         {
             get { return _dbPassword; }
             set { _dbPassword = value; }
         }
 
-        string _Authentication;
+        string _NewKey;
 
         /// <summary>
-        /// Gets or sets the value of variable Authentication.
+        /// Gets or sets the value of variable NewKey.
         /// </summary>
-        [TestVariable("b8ac744e-4bc1-4cbe-866c-41fe1febce7c")]
-        public string Authentication
+        [TestVariable("4ee22833-99bc-4cbd-b804-5a9242f7c348")]
+        public string NewKey
         {
-            get { return _Authentication; }
-            set { _Authentication = value; }
+            get { return _NewKey; }
+            set { _NewKey = value; }
         }
 
-        string _NewInternalPassword;
+        string _ResetToken;
 
         /// <summary>
-        /// Gets or sets the value of variable NewInternalPassword.
+        /// Gets or sets the value of variable ResetToken.
         /// </summary>
-        [TestVariable("65da0ca2-1f5e-42b2-b525-e12ade83e3a3")]
-        public string NewInternalPassword
+        [TestVariable("bf55a1ab-9c1e-4208-9f54-8a5407aa9b00")]
+        public string ResetToken
         {
-            get { return _NewInternalPassword; }
-            set { _NewInternalPassword = value; }
+            get { return _ResetToken; }
+            set { _ResetToken = value; }
         }
 
-        string _NewInternalUsername;
+        string _TokenKey;
 
         /// <summary>
-        /// Gets or sets the value of variable NewInternalUsername.
+        /// Gets or sets the value of variable TokenKey.
         /// </summary>
-        [TestVariable("8537cd77-9057-49c1-bba3-b09967623e23")]
-        public string NewInternalUsername
+        [TestVariable("60c27da7-9b5a-4d4a-be0f-c2ad53d55606")]
+        public string TokenKey
         {
-            get { return _NewInternalUsername; }
-            set { _NewInternalUsername = value; }
+            get { return _TokenKey; }
+            set { _TokenKey = value; }
         }
 
 #endregion
@@ -170,7 +183,7 @@ namespace Eisia
 
             Init();
 
-            NewInternalUser(DBServer, Database, dbUsername, dbPassword, Authentication, NewInternalPassword, NewInternalUsername);
+            _RestToken(DBserver, Database, Authentication, dbUsername, dbPassword, NewKey);
             Delay.Milliseconds(0);
             
         }

@@ -143,16 +143,16 @@ namespace CSP
             set { _Locality = value; }
         }
 
-        string _Key = "5767c4d2-be6c-4bdc-ac60-5ba8474f37af";
+        string _key = "5767c4d2-be6c-4bdc-ac60-5ba8474f37af";
 
         /// <summary>
-        /// Gets or sets the value of variable Key.
+        /// Gets or sets the value of variable key.
         /// </summary>
         [TestVariable("2ee20f6c-a7a5-4f7e-beca-0402a96e2fb7")]
-        public string Key
+        public string key
         {
-            get { return _Key; }
-            set { _Key = value; }
+            get { return _key; }
+            set { _key = value; }
         }
 
         string _WorkflowTemplate = "";
@@ -251,7 +251,7 @@ namespace CSP
             set { _BatteryBlockName = value; }
         }
 
-        string _CSPDOM = "cgst-qc-jackson.azurewebsites.net";
+        string _CSPDOM = "cgst-staging-asia.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
@@ -7263,7 +7263,7 @@ namespace CSP
                     base("ExternalUserPage", ".//div[#'ng-app']/tag/div/div", parentFolder, 30000, null, false, "78d7022d-438d-4c67-9dec-4709fd8346c0", "")
             {
                 _addbuttonInfo = new RepoItemInfo(this, "AddButton", ".//tag[@tagname='cogstate-generic-list-header']//img[@src>'https://'+$CSPDOM+'/asset/images/add_icon_']", 30000, null, "0d719146-a101-4d09-93e7-67d395dde49c");
-                _externaluserrowInfo = new RepoItemInfo(this, "ExternalUserRow", ".//table/tbody/tr/td/a[@innertext~$Key]", 30000, null, "628ad5fc-4948-4083-a445-4bf034c11123");
+                _externaluserrowInfo = new RepoItemInfo(this, "ExternalUserRow", ".//table/tbody/tr/td/a[@innertext~$key]", 30000, null, "628ad5fc-4948-4083-a445-4bf034c11123");
                 _addrolestudydropdownInfo = new RepoItemInfo(this, "AddRoleStudyDropdown", ".//table/tbody/tr[last()='True']/td/select[@name='study']", 30000, null, "4831601f-ea6c-4152-8f7a-e2877f2f65ac");
                 _externalserviceroledropdownInfo = new RepoItemInfo(this, "ExternalServiceRoleDropdown", ".//table/tbody/tr[last()='True']/td/select[@name='role']", 30000, null, "51670096-e85e-41b9-a796-4191c61c5a85");
                 _addroleactivecheckboxInfo = new RepoItemInfo(this, "AddRoleActiveCheckbox", ".//table/tbody/tr[last()='True']/td/input[@type='checkbox']", 30000, null, "4ae35020-8fe5-4864-95c2-2e65843fcb14");
@@ -7997,7 +7997,7 @@ namespace CSP
             public GmailInboxAppFolder(RepoGenBaseFolder parentFolder) :
                     base("GmailInbox", "/dom[@domain='mail.google.com']", parentFolder, 30000, null, false, "b3ba678a-948b-43d6-9d56-176707cb02e6", "")
             {
-                _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$Key]/../a[@innertext~$CSPDOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
+                _secretlinkInfo = new RepoItemInfo(this, "SecretLink", ".//div/a[@innertext~$key]/../a[@innertext~$CSPDOM]", 30000, null, "e60b96c1-45c5-4a40-a945-7619f9ef14ae");
                 _signoutbuttonInfo = new RepoItemInfo(this, "SignOutButton", ".//a[@innertext~'Sign out']", 30000, null, "64e8a261-42d6-40a1-bd4b-b6dc572a70e2");
                 _backtoinboxInfo = new RepoItemInfo(this, "BackToInbox", ".//div[#':5']/div/div[1]/div/div[1]/div/div", 30000, null, "41b979f7-c989-45a6-9476-8952d4227dc0");
                 _selectallmessagescheckboxInfo = new RepoItemInfo(this, "SelectAllMessagesCheckbox", ".//div[@id~':3[012345]']/?/?/span[@role='checkbox']", 30000, null, "411c4add-47fd-4250-a4c7-10ec4625af19");
