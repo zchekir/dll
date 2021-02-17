@@ -41,13 +41,13 @@ namespace CSP.ExtractsPage
         /// </summary>
         public Validate_Outcomes()
         {
-            dbUsername = "dwood@cogstate.com";
+            dbUsername = "";
             dbPassword = "";
-            fileName = "40yo_Tier3";
-            DBServer = "cgst-qcpd.database.windows.net";
-            Database = "cgst-api";
+            fileName = "";
+            DBServer = "cgst-qc.database.windows.net";
+            Database = "cgst-yeti-api";
             Authentication = "Active Directory Password";
-            TestIdentifier = "13e345a8-a1e1-452d-a892-d016d2968a1a";
+            TestIdentifier = "";
         }
 
         /// <summary>

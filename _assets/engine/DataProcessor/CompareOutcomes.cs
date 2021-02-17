@@ -82,7 +82,7 @@ namespace engine.DataProcessor
 			if (testCodeRowFound)
 				CurrentValue = engine.Helpers.CSVUtility.dt.Rows[testCodeRowIndex][outcome].ToString();
 			else
-				CurrentValue = "Test Outcome not found in CSV";
+				CurrentValue = outcome + " for " + testCode + " not found in CSV";
 			
 			return CurrentValue;
 		}
