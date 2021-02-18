@@ -114,7 +114,7 @@ namespace CSP.InternalAPIModules
 				
 				
 				Newkey = responseObject.key;
-				ExternalUserID= responseObject.id;
+				NewExternalUserID= responseObject.id;
 				
 				
 				Report.Log(ReportLevel.Info, "ExternalKey is : " + Newkey );

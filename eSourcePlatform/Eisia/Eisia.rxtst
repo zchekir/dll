@@ -510,51 +510,6 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
-			<testmodule
-			enabled="False"
-			id="08d93837-c8fa-46cf-97ff-4b9f9cdd7535"
-			name="Get_ResetToken"
-			ref="9ecd415f-eabd-42d3-912c-00d78f3c79d2"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DBServer"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="23ed5de0-b936-40f7-88e0-8bf6399013a1"
-					variablename="DBserver">
-					</var>
-					<var
-					dataname="Database"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="33d9a492-d3e2-4b73-ae5d-bbf6949e215a"
-					variablename="Database">
-					</var>
-					<var
-					dataname="Authentication"
-					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
-					variableid="f06f1069-da41-4674-8cf8-7d0426f56aa7"
-					variablename="Authentication">
-					</var>
-					<var
-					dataname="dbUsername"
-					datasourceid="44550b18-c9b4-4180-8b26-a7cf76a9ef9a"
-					variableid="7f171fab-35c7-4d6e-a8d4-3f02439fb916"
-					variablename="dbUsername">
-					</var>
-					<var
-					dataname="dbPassword"
-					datasourceid="44550b18-c9b4-4180-8b26-a7cf76a9ef9a"
-					variableid="0e466bbf-8864-43a0-b57b-a4ac51ea53bb"
-					variablename="dbPassword">
-					</var>
-					<var
-					dataname="Ex_key "
-					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
-					variableid="f149efa0-570c-4a8d-a3eb-ac86747536d5"
-					variablename="key">
-					</var>
-				</databinding>
-			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="BatteryBlockConnector"
@@ -734,6 +689,44 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0e4d5040-b242-4c72-968f-fe8b3c2ab25a"
+			name="NewFinishStatus"
+			ref="b2cd1439-9219-4bd8-b222-3035b62f28c6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="44a1de3d-0689-490c-9a93-de2aea9b3cff"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="setFinishState"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="22b4a8b7-91d5-4130-8c5d-c40c32926a37"
+					variablename="SestJSON">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="22d17604-47b8-4533-bbeb-a3a8e3599a3f"
+					variablename="Toke">
+					</var>
+					<var
+					dataname="CSP.internalAPIWorkflowID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="a6013c7f-74db-459b-8bf8-822c838d6ee7"
+					variablename="WorkflowID">
+					</var>
+					<var
+					dataname="NewSeststatusID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="0955e2c1-773e-40e4-a30b-b6c5ab902ebc"
+					variablename="SetStatusID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -948,6 +941,68 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="10d99a30-64ab-4d7a-bce4-4ea0468dd716"
+			name="NewComletetionSteps"
+			ref="f33785c3-0125-4630-b0d0-c87fd89a5705"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="007a8ca0-a156-47f0-b00c-1d4a09a5f547"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="7e7b78fd-b145-4fd0-a9a3-48b95da6bb31"
+					variablename="Token">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="b921938b-c714-42e1-a694-58fa80ed2349"
+					variablename="studyName">
+					</var>
+					<var
+					dataname="StudyID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="0f152a62-ddf5-41f1-a929-351574c57121"
+					variablename="studid">
+					</var>
+					<var
+					dataname="CSP.internalAPIWorkflowID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="74464690-2c5c-4b64-97b0-5b011522e8b5"
+					variablename="WorkflowID">
+					</var>
+					<var
+					dataname="batteryid "
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="012a4383-c1d9-470f-a8e4-8154dce1c350"
+					variablename="batteryID">
+					</var>
+					<var
+					dataname="desktopConfigurationID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="6455a5c5-84fe-497a-bf82-50a093646c3a"
+					variablename="DeskTopID">
+					</var>
+					<var
+					dataname="setcompletion"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="c8fddc69-3392-40eb-b567-05b2f79077d5"
+					variablename="JSONData">
+					</var>
+					<var
+					dataname="NewBlockID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="82c1d92f-8ae9-401b-9ed2-122ac5dfac81"
+					variablename="BlockID">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -1396,12 +1451,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="1c9e1bd8-2e95-4b10-a71b-01e0170815ec"
-			name="Log"
-			ref="23ed3961-5aca-45a1-a490-14b35df0300c"
-			type="Recording">
-			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="EisiaPRAuthentication"
@@ -1627,6 +1676,38 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="23fe9497-af63-4767-afa6-0856afba33cc"
+			name="NewSuccessBlock"
+			ref="52681893-5744-4419-918e-108a58b54e43"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="221e5608-6765-485d-a8b5-6ef846b0d04f"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="BlockJsonDataSucc"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="e5ea04db-6228-4183-a4b4-f814cb348377"
+					variablename="BlockJsonDara">
+					</var>
+					<var
+					dataname="CSP.internalAPIWorkflowID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="098df541-e37a-46e2-af1f-ec4aef8d51ef"
+					variablename="WorkflowID">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="aecdbbde-9cf0-4c14-b92d-a24f2f607ed9"
+					variablename="Token">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -2525,12 +2606,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="3da96377-1a4a-4cda-9676-0f6779779256"
-			name="addinBlock"
-			ref="96212289-c634-46c5-8cbb-9c4421cf821b"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="3dfa5f3f-0a51-4e7b-a7f5-8d64dcf4618f"
 			name="RrunWorkflow"
 			ref="957128ba-5359-452d-b0db-ee9e12c48683"
@@ -2824,12 +2899,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="490f941d-ef9b-4650-bd4d-e4d50c6f04cb"
-			name="CompletionSteps"
-			ref="ba8805fa-93f2-4f06-8f89-86950a98cf9d"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="49e39b24-e657-4bdb-8ce1-b8dccb3d7ac5"
 			name="Select_CogstateTest"
 			ref="e231f99c-c036-461b-93e8-b4324c40315e"
@@ -2882,33 +2951,6 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
-			<testmodule
-			enabled="False"
-			id="4b890da8-6b93-4e8c-9645-fbc05ab22a8e"
-			name="Get_Secret"
-			ref="b5c1f78b-d628-4e9c-83b0-597bcacc9905"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DOM"
-					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
-					variableid="be5ff697-bd07-40a4-9c8a-91518bacb8b8"
-					variablename="CSPDOM">
-					</var>
-					<var
-					dataname="secret"
-					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
-					variableid="f16a02ad-999f-405e-8606-071f87550126"
-					variablename="Secret">
-					</var>
-					<var
-					dataname="ResetToken"
-					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
-					variableid="e4f47e30-759b-4800-b64b-a4061f417ff5"
-					variablename="RestToken">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="4c825ae2-6b29-4562-b37c-8e181bc6b97f"
 			name="GetBatteryAssessee2">
@@ -4282,12 +4324,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="6d8888f2-f3ae-4f5e-9b0a-91d4ab44131c"
-			name="captureworkflowstateID"
-			ref="5c4d725a-77a6-4120-b099-206eb028fef8"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="6e26e974-48b0-4b00-b431-bfa48fba6a7e"
 			name="Click_SaveBatteryTemplate_Properties"
 			ref="baa32658-5be6-4fd7-aaba-90601c13852a"
@@ -4452,6 +4488,56 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="75e07fa2-b065-464b-b514-5154e851760c"
+			name="NewCaptureworkflowstateID"
+			ref="acc4ebe4-4e78-486b-a4ec-2ead4e217836"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DBServer"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="b6305c46-2876-4766-8ed0-4b8e0b13b7d1"
+					variablename="DBServer">
+					</var>
+					<var
+					dataname="Database"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="d5807cdf-b704-43aa-acfb-d09c14d6a156"
+					variablename="Database">
+					</var>
+					<var
+					dataname="Authentication"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="cc917b1f-4250-4968-a625-1e2b4d833bb6"
+					variablename="Authentication">
+					</var>
+					<var
+					dataname="dbUsername"
+					datasourceid="44550b18-c9b4-4180-8b26-a7cf76a9ef9a"
+					variableid="a5e6760e-5016-4b6a-8dcf-4bde2aea01be"
+					variablename="dbUsername">
+					</var>
+					<var
+					dataname="dbPassword"
+					datasourceid="44550b18-c9b4-4180-8b26-a7cf76a9ef9a"
+					variableid="ff145b5b-db99-4e60-86e9-f1475cb2be71"
+					variablename="dbPassword">
+					</var>
+					<var
+					dataname="StudyID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="1f871e31-b55d-4ef5-ba90-ed9d4326d384"
+					variablename="stuid">
+					</var>
+					<var
+					dataname="NewRolID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="31608f0d-73a2-4d1c-a211-007b2332a108"
+					variablename="newrolid">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="76937a75-a827-4ce4-bf4e-1c06f3ae5714"
 			name="Close_Browser"
 			ref="5c2993d4-a8c7-41c2-9190-e09e643a9526"
@@ -4506,12 +4592,6 @@ rxversion="8.3">
 					variablename="CSPDOM">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="799c71b5-ea92-451c-83c8-57fb9c43844f"
-			name="setFinishStatus"
-			ref="e91633be-04bd-4eb7-a0db-4b2216152688"
-			type="Recording">
 			</testmodule>
 			<testcase
 			id="799e18a6-1f64-43ea-8386-d6e65fba6e85"
@@ -4949,6 +5029,44 @@ rxversion="8.3">
 					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CSPDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8756e858-ec94-484b-ad03-686a6268465b"
+			name="workflowLogs"
+			ref="65803427-6f80-4540-a41e-125fbc2e3f5c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="cb8fa432-5f79-439f-a2c3-9ecf372dfa02"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="setStatus"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="d983285a-7383-4250-80e8-069edb0737f6"
+					variablename="JSONData">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="013b0e0b-52d1-4f99-8149-d543c1180d44"
+					variablename="Token">
+					</var>
+					<var
+					dataname="CSP.internalAPIWorkflowID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="ca1b83c6-3b86-41c5-9f2d-75815fa4e7a5"
+					variablename="WorkflowID">
+					</var>
+					<var
+					dataname="NewSeststatusID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="697087ad-1562-4a7f-a5b8-95001c0a74a7"
+					variablename="NewSeststatusID">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5868,6 +5986,44 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a7bcacd0-5f7f-4fb3-a891-011076848aba"
+			name="Adding_Block"
+			ref="770d2717-46cf-4990-9a90-c8631a8f84a2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="31a0a98c-6036-4916-9e33-e6e103514225"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="blockCreation"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="43d21104-dfe2-4137-bfdf-52774f884fab"
+					variablename="BlockJsonData">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="fc70b6d2-5c32-4aa9-bc84-1a30e2933182"
+					variablename="Token">
+					</var>
+					<var
+					dataname="CSP.internalAPIWorkflowID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="2638e639-5725-4465-ad5f-89485fb6144b"
+					variablename="WorkflowID">
+					</var>
+					<var
+					dataname="NewBlockID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="6ed41b80-9f0c-4438-a1f9-7259b966c9d8"
+					variablename="Newblockid">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a8152de0-7f9e-466d-b640-db3654257c44"
 			name="Select_CogstateTest"
 			ref="e231f99c-c036-461b-93e8-b4324c40315e"
@@ -6262,12 +6418,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="b0fd06ef-e902-4675-8311-3faa6bb3dc11"
-			name="publishWorkflow"
-			ref="800196b0-6b42-4264-866e-bcea65bf2109"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="b193aca4-cbf0-4fac-b5c1-313cc53b97fc"
 			name="V1_ExternalAuthenticate1">
@@ -6569,12 +6719,6 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
-			<testmodule
-			id="bd92a8a4-5259-4deb-84df-4ba5965198cd"
-			name="addSuccessBlock"
-			ref="d8498245-af13-48dd-ba0c-4889cb6e2f8b"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="bdf3a068-b690-4b52-83f8-c6d46af5560f"
 			name="Begin_Workflow"
@@ -7425,6 +7569,44 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d93a830f-d8fc-4d4e-8e42-2571157195b7"
+			name="NewPublishWorkFlow"
+			ref="256fa0ae-3c85-4b4b-820a-44e83eb817eb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DOM"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="402ae1ed-01ab-4ec1-9c82-b1b4f1bcf0da"
+					variablename="CSPDOM">
+					</var>
+					<var
+					dataname="publishWorkflow"
+					datasourceid="20f31302-7f44-4ea0-a27e-86512554c9fb"
+					variableid="d17c3754-2d45-4168-8925-569c9008c42e"
+					variablename="p_workflowData">
+					</var>
+					<var
+					dataname="I_AuthToken"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="7f5aa4cd-c804-48a3-af0f-14c005748055"
+					variablename="Token">
+					</var>
+					<var
+					dataname="CSP.internalAPIWorkflowID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="4896bf9c-d3b0-4c14-8daa-68de0e2d0b02"
+					variablename="WorkflowID">
+					</var>
+					<var
+					dataname="desktopConfigurationID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="6a05bbc2-a868-4295-beea-4778b1bffe17"
+					variablename="Desktop">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="da70431f-9317-4115-bb9b-644ef09bfc59"
 			name="Select_TestCategory"
 			ref="763e34f1-3769-4df7-9ae9-fede29a19811"
@@ -7952,6 +8134,12 @@ rxversion="8.3">
 					variableid="d4eb9257-a721-4d2e-98ad-fe31715e200a"
 					variablename="Newkey">
 					</var>
+					<var
+					dataname="NewExternalUserID"
+					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
+					variableid="2a96bd96-7581-4478-bc47-5b3eb6e05410"
+					variablename="NewExternalUserID">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -8261,6 +8449,30 @@ rxversion="8.3">
 					</param>
 					<param
 					name="NewInternalPassword"
+					value="">
+					</param>
+					<param
+					name="SeststatusID"
+					value="">
+					</param>
+					<param
+					name="NewSeststatusID"
+					value="">
+					</param>
+					<param
+					name="NewBlockID"
+					value="">
+					</param>
+					<param
+					name="NewRolID"
+					value="">
+					</param>
+					<param
+					name="ExternalUserID"
+					value="">
+					</param>
+					<param
+					name="NewExternalUserID"
 					value="">
 					</param>
 				</parameters>
@@ -8987,19 +9199,19 @@ rxversion="8.3">
 					variablename="Token">
 					</var>
 					<var
-					dataname="CSP.ExternalUserID"
+					dataname="NewExternalUserID"
 					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
 					variableid="14209c61-e263-4fd6-a230-d8e7320a89c8"
 					variablename="ExternaluserID">
 					</var>
 					<var
-					dataname="RolID"
+					dataname="NewRolID"
 					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
 					variableid="a7fdb2c6-2aa6-4402-856f-ca50ddf41aaa"
 					variablename="RolID">
 					</var>
 					<var
-					dataname="CSP.Ex_key "
+					dataname="ExternalKey "
 					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
 					variableid="3a34ac36-33a2-473c-850a-ede8e974ff47"
 					variablename="Key">
@@ -10271,16 +10483,8 @@ rxversion="8.3">
 										id="98334ff0-6d12-4307-9de2-5bba966a863b"
 										name="Generate_Secret1">
 											<testmodule
-											id="08d93837-c8fa-46cf-97ff-4b9f9cdd7535"
-											name="Get_ResetToken">
-											</testmodule>
-											<testmodule
 											id="e158dc66-9ee2-4772-93b5-fca390c7a5a9"
 											name="RestToken">
-											</testmodule>
-											<testmodule
-											id="4b890da8-6b93-4e8c-9645-fbc05ab22a8e"
-											name="Get_Secret">
 											</testmodule>
 											<testmodule
 											id="82a050fd-c56c-4a8b-8281-7a1c38bc4b10"
@@ -10319,36 +10523,36 @@ rxversion="8.3">
 											name="WorkflowCreation">
 											</testmodule>
 											<testmodule
-											id="3da96377-1a4a-4cda-9676-0f6779779256"
-											name="addinBlock">
+											id="a7bcacd0-5f7f-4fb3-a891-011076848aba"
+											name="Adding_Block">
 											</testmodule>
 											<testmodule
-											id="bd92a8a4-5259-4deb-84df-4ba5965198cd"
-											name="addSuccessBlock">
+											id="23fe9497-af63-4767-afa6-0856afba33cc"
+											name="NewSuccessBlock">
 											</testmodule>
 											<testmodule
-											id="1c9e1bd8-2e95-4b10-a71b-01e0170815ec"
-											name="Log">
+											id="8756e858-ec94-484b-ad03-686a6268465b"
+											name="workflowLogs">
 											</testmodule>
 											<testmodule
-											id="799c71b5-ea92-451c-83c8-57fb9c43844f"
-											name="setFinishStatus">
+											id="0e4d5040-b242-4c72-968f-fe8b3c2ab25a"
+											name="NewFinishStatus">
+											</testmodule>
+											<testmodule
+											id="10d99a30-64ab-4d7a-bce4-4ea0468dd716"
+											name="NewComletetionSteps">
 											</testmodule>
 											<testmodule
 											id="4dd3d201-73e7-421d-97c8-74d586dee82d"
 											name="SetBatteryWorkflow">
 											</testmodule>
 											<testmodule
-											id="490f941d-ef9b-4650-bd4d-e4d50c6f04cb"
-											name="CompletionSteps">
+											id="75e07fa2-b065-464b-b514-5154e851760c"
+											name="NewCaptureworkflowstateID">
 											</testmodule>
 											<testmodule
-											id="6d8888f2-f3ae-4f5e-9b0a-91d4ab44131c"
-											name="captureworkflowstateID">
-											</testmodule>
-											<testmodule
-											id="b0fd06ef-e902-4675-8311-3faa6bb3dc11"
-											name="publishWorkflow">
+											id="d93a830f-d8fc-4d4e-8e42-2571157195b7"
+											name="NewPublishWorkFlow">
 											</testmodule>
 										</testcase>
 										<testcase
@@ -10395,19 +10599,19 @@ rxversion="8.3">
 												</testmodule>
 											</testcase>
 											<testcase
-											id="758f362f-af48-4b4a-a492-fca0a9f01e93"
-											name="GetNextState21">
-												<testmodule
-												id="72923f4e-77b6-4203-8af7-ba4847685b95"
-												name="Get_NextState">
-												</testmodule>
-											</testcase>
-											<testcase
 											id="5959a9d4-d734-47e8-b28e-3b038f3c2375"
 											name="InsertEmptyAssessment21">
 												<testmodule
 												id="abc903f9-7a8b-48b0-9d44-9a647e8a037b"
 												name="Insert_EmptyAssessment">
+												</testmodule>
+											</testcase>
+											<testcase
+											id="758f362f-af48-4b4a-a492-fca0a9f01e93"
+											name="GetNextState21">
+												<testmodule
+												id="72923f4e-77b6-4203-8af7-ba4847685b95"
+												name="Get_NextState">
 												</testmodule>
 											</testcase>
 											<testcase
@@ -11420,6 +11624,15 @@ rxversion="8.3">
 			id="1e771f1f-856e-4efb-bb18-8ce9148b54d2">
 			</testcontainer>
 			<testcontainer
+			id="20117734-88c4-4caa-8f5d-6246279faafb">
+			</testcontainer>
+			<testcontainer
+			id="3c83c8e3-66bb-43b4-907b-dd8f4dde84bc">
+			</testcontainer>
+			<testcontainer
+			id="4f43e929-d841-4489-ab45-0b2f71921a95">
+			</testcontainer>
+			<testcontainer
 			id="5023d52c-3c3f-4de0-a140-a6c595764dd7">
 			</testcontainer>
 			<testcontainer
@@ -11429,13 +11642,28 @@ rxversion="8.3">
 			id="5f5db245-26e2-4a7f-a22d-da96fd5b6ee5">
 			</testcontainer>
 			<testcontainer
+			id="98334ff0-6d12-4307-9de2-5bba966a863b">
+			</testcontainer>
+			<testcontainer
 			id="a0e07779-45d6-4777-9d87-cc3133a595ea">
+			</testcontainer>
+			<testcontainer
+			id="c0694b11-628b-4de5-82ea-baeb3da8570d">
+			</testcontainer>
+			<testcontainer
+			id="e6c93872-e9c3-4fbc-9f9a-5faea5def86d">
 			</testcontainer>
 			<testcontainer
 			id="e882f890-dabc-4656-9f27-80dd227271a1">
 			</testcontainer>
 			<testcontainer
 			id="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7">
+			</testcontainer>
+			<testcontainer
+			id="f1988faa-5256-4cee-87b5-387e46989fe9">
+			</testcontainer>
+			<testcontainer
+			id="f4e42bdf-ba1b-43d7-8adc-4e1ddb1d3d70">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

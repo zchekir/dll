@@ -126,6 +126,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adding_Block.cs">
+      <BoundTo>bcfb803e-4275-4dbd-aa79-d08ca95aa886</BoundTo>
+      <DependentUpon>Adding_Block.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a38d49a5-ec07-4467-97ba-b78e44c6e679</id>
+    </Compile>
+    <Compile Include="Adding_Block.UserCode.cs">
+      <BoundTo>bcfb803e-4275-4dbd-aa79-d08ca95aa886</BoundTo>
+      <DependentUpon>Adding_Block.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c5e7542b-d304-4ce9-aa60-0c114cd3e3c2</id>
+    </Compile>
     <Compile Include="AddStudyToExternalUser.cs">
       <BoundTo>05e63942-23fb-4d21-a56b-1f709ea56763</BoundTo>
       <DependentUpon>AddStudyToExternalUser.rxrec</DependentUpon>
@@ -159,6 +171,66 @@
       <UserCode>true</UserCode>
       <id>d8f4dcc7-b96b-464a-af06-2565876af813</id>
     </Compile>
+    <Compile Include="NewCaptureworkflowstateID.cs">
+      <BoundTo>47ba8e68-3331-4c87-8ea4-ec13226fbbe6</BoundTo>
+      <DependentUpon>NewCaptureworkflowstateID.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c6f8d3f0-499f-456a-96a9-58b8080cf60a</id>
+    </Compile>
+    <Compile Include="NewCaptureworkflowstateID.UserCode.cs">
+      <BoundTo>47ba8e68-3331-4c87-8ea4-ec13226fbbe6</BoundTo>
+      <DependentUpon>NewCaptureworkflowstateID.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>89b6d4c5-00a8-42b4-b8c6-6371c151840f</id>
+    </Compile>
+    <Compile Include="NewComletetionSteps.cs">
+      <BoundTo>e51d4472-139a-4788-b4eb-e9d6b93cf5f2</BoundTo>
+      <DependentUpon>NewComletetionSteps.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a9331876-5b5a-432e-85ce-10044eb652b6</id>
+    </Compile>
+    <Compile Include="NewComletetionSteps.UserCode.cs">
+      <BoundTo>e51d4472-139a-4788-b4eb-e9d6b93cf5f2</BoundTo>
+      <DependentUpon>NewComletetionSteps.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0f1d610-c0e8-4216-a445-6dc7d8e24350</id>
+    </Compile>
+    <Compile Include="NewFinishStatus.cs">
+      <BoundTo>7c3f555c-db96-40e9-bc71-2ddee675f702</BoundTo>
+      <DependentUpon>NewFinishStatus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d3a113df-e320-4a2e-aaad-785c1a61ad3d</id>
+    </Compile>
+    <Compile Include="NewFinishStatus.UserCode.cs">
+      <BoundTo>7c3f555c-db96-40e9-bc71-2ddee675f702</BoundTo>
+      <DependentUpon>NewFinishStatus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c8dd6ade-3fda-4fdb-a637-411b4d59b643</id>
+    </Compile>
+    <Compile Include="NewPublishWorkFlow.cs">
+      <BoundTo>4ed174ae-cf9f-4dd3-91e5-39f891d5d5db</BoundTo>
+      <DependentUpon>NewPublishWorkFlow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cfeebda2-ccd9-42c3-ad92-1eb3be243239</id>
+    </Compile>
+    <Compile Include="NewPublishWorkFlow.UserCode.cs">
+      <BoundTo>4ed174ae-cf9f-4dd3-91e5-39f891d5d5db</BoundTo>
+      <DependentUpon>NewPublishWorkFlow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af0182c4-0d6b-4619-8b80-42b49e0cc5b3</id>
+    </Compile>
+    <Compile Include="NewSuccessBlock.cs">
+      <BoundTo>7e332aa8-15f8-4584-9392-f199e3f300c1</BoundTo>
+      <DependentUpon>NewSuccessBlock.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>52dc6912-4500-479b-a03a-a5d0e69be5c1</id>
+    </Compile>
+    <Compile Include="NewSuccessBlock.UserCode.cs">
+      <BoundTo>7e332aa8-15f8-4584-9392-f199e3f300c1</BoundTo>
+      <DependentUpon>NewSuccessBlock.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f3bd9c43-760f-4b49-9ef4-578e56894e31</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>35806e95-8155-4005-8621-1a84692469a1</id>
     </Compile>
@@ -186,8 +258,25 @@
       <UserCode>true</UserCode>
       <id>31ef4971-8268-4ebb-8015-c58c4d2279b3</id>
     </Compile>
+    <Compile Include="workflowLogs.cs">
+      <BoundTo>362b2a4a-9e01-4820-b35a-630c39c373aa</BoundTo>
+      <DependentUpon>workflowLogs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>75d7a8f5-632d-46f7-85d5-c1e98e102581</id>
+    </Compile>
+    <Compile Include="workflowLogs.UserCode.cs">
+      <BoundTo>362b2a4a-9e01-4820-b35a-630c39c373aa</BoundTo>
+      <DependentUpon>workflowLogs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6dd15d7-4b12-40eb-9f00-7e817481be5c</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Adding_Block.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>bcfb803e-4275-4dbd-aa79-d08ca95aa886</id>
+      <recordtableid>770d2717-46cf-4990-9a90-c8631a8f84a2</recordtableid>
+    </None>
     <None Include="AddStudyToExternalUser.rxrec">
       <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
       <id>05e63942-23fb-4d21-a56b-1f709ea56763</id>
@@ -226,6 +315,31 @@
       <id>dd0d3013-ecee-4283-b402-e0a87ccd7a78</id>
       <recordtableid>ef258eb9-653e-42c5-9800-82552a0d53b2</recordtableid>
     </None>
+    <None Include="NewCaptureworkflowstateID.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>47ba8e68-3331-4c87-8ea4-ec13226fbbe6</id>
+      <recordtableid>acc4ebe4-4e78-486b-a4ec-2ead4e217836</recordtableid>
+    </None>
+    <None Include="NewComletetionSteps.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>e51d4472-139a-4788-b4eb-e9d6b93cf5f2</id>
+      <recordtableid>f33785c3-0125-4630-b0d0-c87fd89a5705</recordtableid>
+    </None>
+    <None Include="NewFinishStatus.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>7c3f555c-db96-40e9-bc71-2ddee675f702</id>
+      <recordtableid>b2cd1439-9219-4bd8-b222-3035b62f28c6</recordtableid>
+    </None>
+    <None Include="NewPublishWorkFlow.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>4ed174ae-cf9f-4dd3-91e5-39f891d5d5db</id>
+      <recordtableid>256fa0ae-3c85-4b4b-820a-44e83eb817eb</recordtableid>
+    </None>
+    <None Include="NewSuccessBlock.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>7e332aa8-15f8-4584-9392-f199e3f300c1</id>
+      <recordtableid>52681893-5744-4419-918e-108a58b54e43</recordtableid>
+    </None>
     <None Include="packages.config">
       <id>71e6487e-422e-4678-8e30-d51b1efc36ca</id>
     </None>
@@ -245,6 +359,11 @@
       <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
       <id>12dddbbb-39ad-4d40-bc8d-3a58181317b5</id>
       <recordtableid>64cee487-0f3b-4427-8ac6-746384f3aa0b</recordtableid>
+    </None>
+    <None Include="workflowLogs.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>362b2a4a-9e01-4820-b35a-630c39c373aa</id>
+      <recordtableid>65803427-6f80-4540-a41e-125fbc2e3f5c</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

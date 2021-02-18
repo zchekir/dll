@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="4475acf7-b5f4-4f22-b1ad-fdf9f0f15d2e"
+id="acc4ebe4-4e78-486b-a4ec-2ead4e217836"
 mode="Global"
 rxversion="8.3">
 	<name>
-		GenerateKey
+		NewCaptureworkflowstateID
 	</name>
 	<repeatcount>
 		1
@@ -23,54 +23,52 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="GenerateKey"
-	namespace="CSP.InternalAPIModules">
+	classname="NewCaptureworkflowstateID"
+	namespace="Eisia">
 	</codegen>
 	<variables>
 		<var
-		id="7805b7e9-80b4-433a-94ae-2a96bc75775a"
-		name="id">
-			null
+		id="b6305c46-2876-4766-8ed0-4b8e0b13b7d1"
+		name="DBServer">
+			cgst-qc.database.windows.net
 		</var>
 		<var
-		id="a2846a82-a80e-4661-b2c1-4ea5aa352b0e"
-		name="key">
-			&quot;&quot;
+		id="d5807cdf-b704-43aa-acfb-d09c14d6a156"
+		name="Database">
 		</var>
 		<var
-		id="929a7288-50e2-4c5a-a48f-7f74e144b7ce"
-		name="contactEmail">
-			daryschetech@gmail.com
+		id="a5e6760e-5016-4b6a-8dcf-4bde2aea01be"
+		name="dbUsername">
 		</var>
 		<var
-		id="5c280f38-7956-48f4-9120-b64a2227bf44"
-		name="active">
-			true
+		id="ff145b5b-db99-4e60-86e9-f1475cb2be71"
+		name="dbPassword">
 		</var>
 		<var
-		id="c070a634-a540-42e9-b2b6-9dd0e172bbae"
-		name="I_AuthToken">
+		id="cc917b1f-4250-4968-a625-1e2b4d833bb6"
+		name="Authentication">
+			Active Directory Password
 		</var>
 		<var
-		id="3b2c770e-10f9-4b9e-bc14-0264f5b51603"
-		name="DOM">
+		id="8d986b89-3896-4be2-b374-bd0ed0d0f7df"
+		name="stateid_FOUR">
 		</var>
 		<var
-		id="2a96bd96-7581-4478-bc47-5b3eb6e05410"
-		name="NewExternalUserID">
+		id="1f871e31-b55d-4ef5-ba90-ed9d4326d384"
+		name="stuid">
 		</var>
 		<var
-		id="d4eb9257-a721-4d2e-98ad-fe31715e200a"
-		name="Newkey">
+		id="31608f0d-73a2-4d1c-a211-007b2332a108"
+		name="newrolid">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="GenerateKey"
+		classname="NewCaptureworkflowstateID"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Generate_Key"
-		namespace="CSP.InternalAPIModules"
+		methodname="WorkflowstateID"
+		namespace="Eisia"
 		optional="False"
 		varname="">
 			<comment>
@@ -78,11 +76,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="59e2a339-991f-42ac-a508-770db3d74b38">
+			id="1c76f728-e954-4ee4-8045-9f289496a421">
 				<argument
-				argname="id"
-				id="50c88e16-36b8-44cd-8f86-366ff3a64b80"
-				variable="id">
+				argname="DBServer"
+				id="a12c8326-3a22-4193-892e-be792cf22301"
+				variable="DBServer">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -90,9 +88,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="contactEmail"
-				id="d788a73e-adac-4206-b363-6ff12a9078e1"
-				variable="contactEmail">
+				argname="Database"
+				id="0effd0ac-7d1f-4ba9-89b2-b8763eee671d"
+				variable="Database">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -100,9 +98,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="active"
-				id="c8b99df3-f218-4b51-bc20-7633f72c4cea"
-				variable="active">
+				argname="dbUsername"
+				id="a9c1bd3f-dbc3-4840-a415-551bed6c6597"
+				variable="dbUsername">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -110,9 +108,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="I_AuthToken"
-				id="83d503cf-2a77-4455-b082-ccbae8afcdad"
-				variable="I_AuthToken">
+				argname="dbPassword"
+				id="42fe46d1-b880-4d4b-bf96-9df77b589978"
+				variable="dbPassword">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -120,9 +118,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="key"
-				id="cfae2ad2-658a-4aca-9879-b79855d78529"
-				variable="key">
+				argname="Authentication"
+				id="d69c4c37-21b1-49a2-b86a-083e77acab03"
+				variable="Authentication">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -130,9 +128,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="DOM"
-				id="a799d2b8-80f6-47fd-a807-98910a506bf0"
-				variable="DOM">
+				argname="stateid_FOUR"
+				id="b0de8292-7f0a-4832-bc73-d79e50b5ad7a"
+				variable="stateid_FOUR">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -140,9 +138,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="ExternalUserID"
-				id="3876b5b7-d3bb-433f-9766-0be43d7ef3ad"
-				variable="NewExternalUserID">
+				argname="stuid"
+				id="14cf888e-360c-46f1-9e5d-134c0ea43c10"
+				variable="stuid">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -150,9 +148,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="Ex_key"
-				id="20a2eda2-e7e0-403e-92d8-2c7f4ff0a4e8"
-				variable="Newkey">
+				argname="rolid"
+				id="ebb9e077-a3ec-40e3-82a9-4edcd9b9285f"
+				variable="newrolid">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -163,22 +161,22 @@ rxversion="8.3">
 		</userrecorditem>
 	</recorditems>
 	<repository
-	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
-	name="CSPRepository"
-	relativepath="..\CSPRepository.rxrep"
+	id="f34d47ec-da17-403a-a924-0231f9262df3"
+	name="EisiaRepository"
+	relativepath="EisiaRepository.rxrep"
 	rxversion="8.3">
 		<codegen
-		classname="CSPRepository"
-		namespace="CSP">
+		classname="EisiaRepository"
+		namespace="Eisia">
 		</codegen>
 		<rootfolder
-		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		id="e5685f81-f17a-4d8f-b73b-bdad3f8c32d5"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		GenerateKey.UserCode.cs
+		NewCaptureworkflowstateID.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

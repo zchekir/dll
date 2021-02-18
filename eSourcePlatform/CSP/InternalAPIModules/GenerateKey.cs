@@ -47,7 +47,7 @@ namespace CSP.InternalAPIModules
             active = "true";
             I_AuthToken = "";
             DOM = "";
-            ExternalUserID = "";
+            NewExternalUserID = "";
             Newkey = "";
         }
 
@@ -121,16 +121,16 @@ namespace CSP.InternalAPIModules
             set { _DOM = value; }
         }
 
-        string _ExternalUserID;
+        string _NewExternalUserID;
 
         /// <summary>
-        /// Gets or sets the value of variable ExternalUserID.
+        /// Gets or sets the value of variable NewExternalUserID.
         /// </summary>
         [TestVariable("2a96bd96-7581-4478-bc47-5b3eb6e05410")]
-        public string ExternalUserID
+        public string NewExternalUserID
         {
-            get { return _ExternalUserID; }
-            set { _ExternalUserID = value; }
+            get { return _NewExternalUserID; }
+            set { _NewExternalUserID = value; }
         }
 
         string _Newkey;
@@ -181,7 +181,7 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            Generate_Key(id, contactEmail, active, I_AuthToken, key, DOM, ExternalUserID, Newkey);
+            Generate_Key(id, contactEmail, active, I_AuthToken, key, DOM, NewExternalUserID, Newkey);
             Delay.Milliseconds(0);
             
         }
