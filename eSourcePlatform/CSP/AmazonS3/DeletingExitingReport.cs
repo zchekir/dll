@@ -41,6 +41,11 @@ namespace CSP.AmazonS3
         /// </summary>
         public DeletingExitingReport()
         {
+            ProtocolNumber = "";
+            Secret = "5268fa42-8060-4bb6-b159-7da0d8b60d10";
+            AuthToken = "";
+            CSPDOM = "";
+            Key = "cf7d1bfe-7294-4f84-8bc4-428b3272dbcb";
         }
 
         /// <summary>
@@ -52,6 +57,62 @@ namespace CSP.AmazonS3
         }
 
 #region Variables
+
+        string _ProtocolNumber;
+
+        /// <summary>
+        /// Gets or sets the value of variable ProtocolNumber.
+        /// </summary>
+        [TestVariable("975ad429-9c61-4d53-b101-d39921e7fead")]
+        public string ProtocolNumber
+        {
+            get { return _ProtocolNumber; }
+            set { _ProtocolNumber = value; }
+        }
+
+        string _Secret;
+
+        /// <summary>
+        /// Gets or sets the value of variable Secret.
+        /// </summary>
+        [TestVariable("4af99c0c-58fd-49d2-83d7-916f3b5ed90e")]
+        public string Secret
+        {
+            get { return _Secret; }
+            set { _Secret = value; }
+        }
+
+        string _AuthToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable AuthToken.
+        /// </summary>
+        [TestVariable("348ede7a-0f7f-4387-a0de-b7bdc6967419")]
+        public string AuthToken
+        {
+            get { return _AuthToken; }
+            set { _AuthToken = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable CSPDOM.
+        /// </summary>
+        [TestVariable("7dc7c999-7967-44fe-a829-df58743e9ee3")]
+        public string CSPDOM
+        {
+            get { return repo.CSPDOM; }
+            set { repo.CSPDOM = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Key.
+        /// </summary>
+        [TestVariable("76f2646e-945d-4501-8ec9-e1835d4e6bc3")]
+        public string Key
+        {
+            get { return repo.key; }
+            set { repo.key = value; }
+        }
 
 #endregion
 
@@ -79,7 +140,7 @@ namespace CSP.AmazonS3
 
             Init();
 
-            Deeting_ExitingReport();
+            Deeting_ExitingReport(ProtocolNumber, Secret, AuthToken, CSPDOM, Key);
             Delay.Milliseconds(0);
             
         }

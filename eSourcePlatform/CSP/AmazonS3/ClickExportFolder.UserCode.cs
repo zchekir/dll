@@ -53,8 +53,11 @@ namespace CSP.AmazonS3
         	Delay.Seconds(5);
         	          
         	         // Name sort-icon xpath
-                     WebElement xpath = "/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[2]//tag[@tagname='table-sort-icon']/span";
+                     WebElement xpath = "/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/?/?/tr/th[1]/?/?/tag[@tagname='awsui-icon']/span";
                      xpath.Click();
+                     	//"/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[2]//tag[@tagname='table-sort-icon']/span";
+                     
+                                      
         	
         	               // getting the current date
         	               Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'atagInfo' and assigning its value to variable 'date'.", atagInfo);

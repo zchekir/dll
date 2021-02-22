@@ -3022,7 +3022,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121"
 		isrooted="True"
 		name="AWSManagementConsole"
-		refpath="/dom[@domain='ap-northeast-1.console.aws.amazon.com']"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -3069,7 +3068,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="CgstqcbearFolder"
 			refimgid="fe5287c3-3b89-4964-b3e2-f53c56a1bee2"
 			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[2]/a[@innertext='cgstqcbear']
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'buckets-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@innertext='cgstqcasia']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"

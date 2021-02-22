@@ -30,7 +30,12 @@ namespace CSP
    public class visitJSONRequest
 	{
 		public string JsonData { get; set; }
+		public string code { get; set; }
 		public string id { get; set; }
+		
+		
+		
+		
 	
 	/// Object for creating a new workflow request
 		public visitJSONRequest()
@@ -40,20 +45,19 @@ namespace CSP
 		}
 		
 	}
-
-
+     
 
 
 
 	public partial class CreateVisitschedule
     {
-        
+			
         private void Init()
         {
             
         }
 
-        public void Visitschedulecreation(string Token, string Studyid, string VisitCode, string CSPDOM, string VisitSceduleData)
+        public void Visitschedulecreation(string Token, string Studyid, string VisitCode, string CSPDOM, string VisitSceduleData, string workflowID)
         {
         	
         	try{
@@ -71,14 +75,14 @@ namespace CSP
 			// generating an rundom number to be used as externalid
 			Random r = new Random();
 			int number = r.Next(1,999999);
-			string rNumber = number.ToString();
+			 rNumber = number.ToString();
 			
 			// sending the data in the body and replacing the studyid, studyname and version
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
 		    
-               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber).Replace(@"<workflowID>", workflowID);
+               var testData = VisitSceduleData.Replace(@"<studid>", Studyid).Replace(@"<visitcode>", rNumber).Replace(@"<name>", visitName +rNumber).Replace(@"<WFID>", workflowID);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -100,8 +104,25 @@ namespace CSP
 				string response = sr.ReadToEnd();
 				
 				responseObject = new JavaScriptSerializer().Deserialize<visitJSONRequest>(response);
-				string visitscheduleid= responseObject.id;
-				Report.Log(ReportLevel.Info, "visitschedule is created as expected " + visitscheduleid);
+				 VisitstudyCode = responseObject.id;
+				string  js= responseObject.JsonData;
+				Report.Log(ReportLevel.Info,"code" + VisitstudyCode);
+				Report.Log(ReportLevel.Info, "js" +response);
+				
+			// slpit
+		 //  char[] mych = { '&', ',','?','=',':','}','{','[',']' };
+         //  string assID = response;
+         //  string[] code = assID.Split(mych);
+          //  VisitstudyCode  = code[45];
+            
+          
+            
+            
+            		
+            
+            
+				
+				
 			 }
 
 

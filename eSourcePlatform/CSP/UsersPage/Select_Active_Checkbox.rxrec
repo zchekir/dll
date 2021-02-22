@@ -29,6 +29,39 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="3cd291b6-88e5-4a06-af63-3c035699064d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f092518f-91bb-46f4-a906-01df286231f4"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_checkbox_active_[0-9]+']
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"

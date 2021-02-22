@@ -44,7 +44,7 @@ namespace CSP
             Token = "";
             Studyid = "";
             CSPDOM = "";
-            VisitCode = "";
+            VisitstudyCode = "";
             VisitSceduleData = "";
             rNumber = "";
             workflowID = "";
@@ -84,16 +84,16 @@ namespace CSP
             set { _Studyid = value; }
         }
 
-        string _VisitCode;
+        string _VisitstudyCode;
 
         /// <summary>
-        /// Gets or sets the value of variable VisitCode.
+        /// Gets or sets the value of variable VisitstudyCode.
         /// </summary>
         [TestVariable("a3fa63dd-ce5a-4761-9da3-499cf61c5616")]
-        public string VisitCode
+        public string VisitstudyCode
         {
-            get { return _VisitCode; }
-            set { _VisitCode = value; }
+            get { return _VisitstudyCode; }
+            set { _VisitstudyCode = value; }
         }
 
         string _VisitSceduleData;
@@ -171,7 +171,7 @@ namespace CSP
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 900ms.", new RecordItemIndex(0));
             Delay.Duration(900, false);
             
-            Visitschedulecreation(Token, Studyid, VisitCode, CSPDOM, VisitSceduleData);
+            Visitschedulecreation(Token, Studyid, VisitstudyCode, CSPDOM, VisitSceduleData, workflowID);
             Delay.Milliseconds(0);
             
         }

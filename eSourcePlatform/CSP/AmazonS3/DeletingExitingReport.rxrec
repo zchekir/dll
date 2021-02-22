@@ -27,6 +27,28 @@ rxversion="8.3">
 	namespace="CSP.AmazonS3">
 	</codegen>
 	<variables>
+		<var
+		id="975ad429-9c61-4d53-b101-d39921e7fead"
+		name="ProtocolNumber">
+		</var>
+		<var
+		id="4af99c0c-58fd-49d2-83d7-916f3b5ed90e"
+		name="Secret">
+			5268fa42-8060-4bb6-b159-7da0d8b60d10
+		</var>
+		<var
+		id="348ede7a-0f7f-4387-a0de-b7bdc6967419"
+		name="AuthToken">
+		</var>
+		<var
+		id="7dc7c999-7967-44fe-a829-df58743e9ee3"
+		name="CSPDOM">
+		</var>
+		<var
+		id="76f2646e-945d-4501-8ec9-e1835d4e6bc3"
+		name="Key">
+			cf7d1bfe-7294-4f84-8bc4-428b3272dbcb
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
@@ -43,6 +65,56 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="476ca284-8b5b-4057-b845-56b2f0187be2">
+				<argument
+				argname="ProtocolNumber"
+				id="de456614-cdfb-433b-bdad-960f34735fd8"
+				variable="ProtocolNumber">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="Secret"
+				id="4f522bdd-f92b-484b-b650-ab2a2f4efdfd"
+				variable="Secret">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="AuthToken"
+				id="c5a58447-6116-44a5-b407-dc04006d0e23"
+				variable="AuthToken">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="CSPDOM"
+				id="be53549b-eb85-4708-9d4c-e41ae525c142"
+				variable="CSPDOM">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="Key"
+				id="114615f4-4ffc-42d9-8f8d-6bcc3f334c2e"
+				variable="Key">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 	</recorditems>

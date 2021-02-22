@@ -144,7 +144,7 @@ namespace CSP.APIV2Modules
 
             Init();
 
-            GetBatteryConfiguration(workflowID, DOM, workflowToken, "", Batteryid);
+            GetBatteryConfiguration(workflowID, DOM, workflowToken, Batteryid);
             Delay.Milliseconds(0);
             
         }

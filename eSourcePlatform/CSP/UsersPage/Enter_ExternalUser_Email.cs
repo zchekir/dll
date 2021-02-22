@@ -104,7 +104,10 @@ namespace CSP.UsersPage
             repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.Click(1);
             Delay.Milliseconds(90);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys(GmailAddress, 1);
             Delay.Milliseconds(10);
             

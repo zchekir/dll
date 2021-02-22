@@ -89,11 +89,14 @@ namespace CSP.General
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SaveButton' at Center.", repo.CogstateSolutionPlatform.SaveButtonInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.SaveButton' at Center.", repo.CogstateSolutionPlatform.SaveButtonInfo, new RecordItemIndex(1));
             repo.CogstateSolutionPlatform.SaveButton.Click(3);
             Delay.Milliseconds(490);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
             Delay.Duration(5000, false);
             
         }

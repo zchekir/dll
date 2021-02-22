@@ -54,10 +54,10 @@ namespace CSP.APIV2Modules
             // Your recording specific initialization code goes here.
         }
 
-        public void GetBatteryConfiguration(string workflowID, string DOM, string workflowToken, string argument1, string Batteryid)
+        public void GetBatteryConfiguration(string workflowID, string DOM, string workflowToken, string Batteryid)
         {
             //Setup API call
-			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/GetBatteryConfiguration?batteryConfigurationId="+ ConfigurationID);
+			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://" + DOM + "/api/prsworkflow/" + workflowID  + "/GetBatteryConfiguration?batteryConfigurationId="+ Batteryid);
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "GET";
 			httpRequest.Headers.Add("Authorization", workflowToken);
