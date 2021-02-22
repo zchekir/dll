@@ -53,20 +53,11 @@ namespace engine.Helpers
 		[UserCodeMethod]
 		public static void GetAssessmentOutcomes(string dbserver, string database, string username, string password, string authentication, string testIdentifier)
 		{
-			dt.Reset();
 			
 			string query = @"SELECT
 	     Userdata.Part.IQNumber                                                                                                                 AS [IQNumber]
-		,UserData.Person.DOB                                                                                                                    AS [DateOfBirth]
-		,YEAR(UserData.Person.DOB)                                                                                                              AS [BirthYear]
 		,Assessment.Assessment.Age                                                                                                              AS [Age]
 		,Assessment.Assessment.Id                                                                                                               AS [SessionID]
-		,CONVERT(VARCHAR(10), Assessment.Assessment.DateOfAssessment, 20)                                                                       AS [SessionDate]
-		,CONVERT(VARCHAR(12), Assessment.Assessment.DateOfAssessment, 14)                                                                       AS [SessionTime]
-		,(SELECT COUNT(1)
-			FROM Assessment.AssessmentSessionAttempt asatt
-			WHERE asatt.AssessmentSessionId = Assessment.AssessmentSession.Id
-			AND asatt.id <= Assessment.AssessmentSessionAttempt.Id)                                                                             AS [SessionAttempt]
 		,Assessment.Assessment.SessionDuration                                                                                                  AS [SessionDuration]
 		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionCompletion'
 			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes'
@@ -77,7 +68,6 @@ namespace engine.Helpers
 		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'SessionIntegrity'
 			THEN CASE WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value] = 1 THEN 'Yes'
 			WHEN Assessment.AssessmentBatteryCompositeOutcome.[Value]=0 THEN 'No' ELSE null END END)                                            AS [SessionIntegrityPass]
-		,Assessment.Test.Id                                                                                                                     AS [TestId]
 		,Assessment.Test.[Name]                                                                                                                 AS [Test]
 		,Assessment.TestCode.[Name]                                                                                                             AS [TestCode]
 		,Assessment.AssessmentTest.TaskVersion                                                                                                  AS [TestVersion]
@@ -213,14 +203,16 @@ namespace engine.Helpers
 				testIdentifier = WebService.TestIdentifier;
 			}
 			
-			SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
-			da.SelectCommand.Parameters.AddWithValue("@testIdentifier", testIdentifier);
 			
 			//Send the query to the database and store the results in a DataTable, the loop here will allow for the situation
 			//where the results take longer than usual to be processed and appear in the Database.
 			do
 			{
-				Delay.Duration(30000);
+				dt.Reset();
+				Delay.Duration(10000);
+				
+				SqlDataAdapter da = new SqlDataAdapter(query, sqlConnString);
+				da.SelectCommand.Parameters.AddWithValue("@testIdentifier", testIdentifier);
 				
 				using (da)
 				{
@@ -228,8 +220,10 @@ namespace engine.Helpers
 				}
 				
 				Report.Info("Rows found by query: " + dt.Rows.Count.ToString());
-				
-			} while (dt.Rows.Count < 1);
+			
+			//Here we are looking for a TestCode being populated instead of at least 1 row. If the assessment has not been processed, there will
+			//still be a place holder row stored in the db		
+			} while (dt.Rows[0]["TestCode"].ToString() == "");
 			
 			//Set class variable back to empty, ready for next run
 			WebService.TestIdentifier = null;

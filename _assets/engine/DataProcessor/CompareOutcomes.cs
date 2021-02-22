@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using System.Data;
 using WinForms = System.Windows.Forms;
+using System.Linq;
 
 using Ranorex;
 using Ranorex.Core;
@@ -81,7 +82,7 @@ namespace engine.DataProcessor
 			if (testCodeRowFound)
 				CurrentValue = engine.Helpers.CSVUtility.dt.Rows[testCodeRowIndex][outcome].ToString();
 			else
-				CurrentValue = "Test Outcome not found in CSV";
+				CurrentValue = outcome + " for " + testCode + " not found in CSV";
 			
 			return CurrentValue;
 		}
@@ -281,13 +282,88 @@ namespace engine.DataProcessor
 		}
 		
 
-		private static string BuildReportString(string currentTestCode, string currentOutcome, string referenceNumber)
+		private static bool IsOutcomeRelevant(string currentTestCode, string currentOutcome)
 		{
-			string result = "";
+			bool relevant = false;
+			
+			//Each Array below outlines the outcomes which we want to flag for comparison for each Test type
+			string[] cardOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
+				"SessionIntegrityPass", "Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
+				"TestPerformancePass", "TestIntegrityPass", "TestDuration", "PrimaryOutcome", "AlternateOutcome", "ReactionTime", "RawReactionTime",
+				"RTVariability", "RawRTVariability", "RawRTDifference", "Accuracy", "RawAccuracy", "TotalCorrect", "TotalCorrectExclPant", "TotalErrors",
+				"LegalErrors", "RuleBreakErrors", "TotalAnticipatory", "TotalPost", "TotalMaxOut", "TotalResponses", "TotalTrials", "StandardScoreZ",
+				"StandardScoreT", "AltStandardScoreZ", "AltStandardScoreT", "ChangeScore", "PsyAttStdScr", "PstAttChange", "LearnWMStdScr", "LearnWMChange",
+				"AltLearnWMStdScr", "TestIdentifier"};
+			
+			//Outcomes relevant for ISLT based Tests
+			string[] listOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
+				"Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "Accuracy", "RawAccuracy", "TotalCorrect", "TotalErrors",
+				"TotalResponses", "TotalCorrectFoils", "TotalTrials", "StandardScoreZ", "StandardScoreT", "ChangeScore", "TestIdentifier"};
+			
+			//Outcomes relevant for Maze based Tests
+			string[] mazeOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
+				"Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "Round", "TestAttempt", "TestCompletionPass",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalErrors", "LegalErrors", "RuleBreakErrors",
+				"StandardScoreZ", "StandardScoreT",	"ChangeScore", "MovesPerSecond", "ReturnToHead", "PerseverativeErrors", "WithinSearchErrors",
+				"GMLTIndex", "TestIdentifier"};
+			
+			//Outcomes relevant for Image based Tests 
+			string[] imageOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
+			    "Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "ReactionTime", "RawReactionTime", "RTVariability", "RawRTVariability",
+				"Accuracy", "RawAccuracy", "Round", "TestAttempt", "TestCompletionPass", "TotalResponses", "TotalTrials", "TotalAnticipatory", "TotalPost",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalCorrectExclPant", "TotalErrors", "LegalErrors", "RuleBreakErrors",
+				"StandardScoreZ", "StandardScoreT",	"ChangeScore", "TotalMaxOut", "TestIdentifier"};
 			
 			
+			//Outcomes relevant for Tests which do not fall into the above categories
+			string[] otherOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",
+				"Test", "TestCode", "TestVersion", "TestSubset", "TestPhase", "ReactionTime", "RawReactionTime", "RTVariability", "RawRTVariability",
+				"Accuracy", "RawAccuracy", "Round", "TestAttempt", "TestCompletionPass", "TotalResponses", "TotalTrials", "TotalAnticipatory", "TotalPost",
+				"TestPerformancePass", "TestDuration", "PrimaryOutcome", "TotalCorrect", "TotalCorrectExclPant", "TotalErrors", "LegalErrors", "RuleBreakErrors",
+				"StandardScoreZ", "StandardScoreT",	"ChangeScore", "TotalMaxOut", "TotalFalsePositive", "SATScore", "TestIdentifier"};
 			
-			return result;
+		
+			
+			//If the current test is a card task, search the cardOutcomes array. If the array contains an outcome name which matches the current
+			//outcome name we are about to compare, set the flag to true.
+			if (currentTestCode.Contains("Detection") || currentTestCode.Contains("Identification") || currentTestCode.Contains("OneCardLearning")
+			    || currentTestCode.Contains("OneBack") || currentTestCode.Contains("TwoBack"))
+			{
+				if (cardOutcomes.Any(currentOutcome.Equals)) {
+					relevant = true;
+				}		    		
+			}
+			else if (currentTestCode.Contains("ISLT")) 
+			{
+				if (listOutcomes.Any(currentOutcome.Equals)) {
+					relevant = true;
+				}	
+			}
+			else if (currentTestCode.Contains("GMLT") || currentTestCode.Contains("Chase"))
+			{
+				if (mazeOutcomes.Any(currentOutcome.Equals)) {
+					relevant = true;
+				}
+				
+			}
+			else if (currentTestCode.Contains("BPSO") || currentTestCode.Contains("FName") || currentTestCode.Contains("SECT"))
+			{
+				if (imageOutcomes.Any(currentOutcome.Equals)) {
+					relevant = true;
+				}
+				
+			}
+			else if (currentTestCode.Contains("CPAL") || currentTestCode.Contains("FT") || currentTestCode.Contains("IDSST")
+			         || currentTestCode.Contains("SART") || currentTestCode.Contains("SAT"))
+			{
+				if (otherOutcomes.Any(currentOutcome.Equals)) {
+					relevant = true;	
+				}
+			}
+				
+			
+			return relevant;
 		}
 		
 		
@@ -316,66 +392,75 @@ namespace engine.DataProcessor
 				
 				for (int i = 0; i < engine.Helpers.SQLUtility.dt.Columns.Count; i++)
 				{
+					bool isRelevant = false;
+					
 					//Store current outcome and test code we are comparing. For SAT tests, look for the TestSubset column
 					//instead of the TestCode column to differentiate between each subset.
 					currentOutcome = engine.Helpers.SQLUtility.dt.Columns[i].ColumnName;
 					currentTestCode = row["TestCode"].ToString();
+					
+					//Determine if the current Test and Outcome combination is something we want to compare
+					isRelevant = IsOutcomeRelevant(currentTestCode, currentOutcome);
 					
 					if (currentTestCode == "SATReal")
 					{
 						currentTestCode = row["TestSubset"].ToString();
 					}
 					
-					//Get the CSV and Database values using the current TestCode, Round and Outcome as reference
-					extractValue = GetExtractValue(currentTestCode, currentRound, currentOutcome);
-					databaseValue = engine.Helpers.SQLUtility.dt.Rows[rowIndex][currentOutcome].ToString();
-					
-					//If the current test run is for processor validation, the report will show Spec References
-					//and will restrict the logging to only the relevant outcomes
-					if (validation)
+					//If the current outcome applies to the current TestCode, compare the expected and actual results.
+					//Otherwise continue to the next outcome.
+					if (isRelevant)
 					{
-						//Retrieve the outcome reference number based on the current test code and outcome
-						outcomeReference = GetOutcomeReference(currentTestCode, currentOutcome);
-
-						//Some outcomes may be formatted differently in the extract and database so we need to pass the two values to this method
-						//for some formatting before comparing the two outcomes. Some outcomes are expected not to match. In this case, we just
-						//want to log a message in the report without the Success/Failure log
-						if (outcomeReference != "")
+						//Get the CSV and Database values using the current TestCode, Round and Outcome as reference
+						extractValue = GetExtractValue(currentTestCode, currentRound, currentOutcome);
+						databaseValue = engine.Helpers.SQLUtility.dt.Rows[rowIndex][currentOutcome].ToString();
+					
+						//If the current test run is for processor validation, the report will show Spec References
+						//and will restrict the logging to only the relevant outcomes
+						if (validation)
 						{
-							if(CheckOutcomesMatch(currentOutcome, extractValue, databaseValue))							{
-								Report.Success("Manual Calculation: " + outcomeReference + " " + currentOutcome + " - Value: " + extractValue);
-								Report.Success("Database Outcome: " + outcomeReference + " " + currentOutcome + " -  Value: " + databaseValue);
+							//Retrieve the outcome reference number based on the current test code and outcome
+							outcomeReference = GetOutcomeReference(currentTestCode, currentOutcome);
+
+							//Some outcomes may be formatted differently in the extract and database so we need to pass the two values to this method
+							//for some formatting before comparing the two outcomes. Some outcomes are expected not to match. In this case, we just
+							//want to log a message in the report without the Success/Failure log
+							if (outcomeReference != "")
+							{
+								if(CheckOutcomesMatch(currentOutcome, extractValue, databaseValue))							{
+									Report.Success("Manual Calculation: " + outcomeReference + " " + currentOutcome + " - Value: " + extractValue);
+									Report.Success("Database Outcome: " + outcomeReference + " " + currentOutcome + " -  Value: " + databaseValue);
+								}
+								else {
+									Report.Failure("Manual Calculation: " + outcomeReference + " " + currentOutcome + " - Value: " + extractValue);
+									Report.Failure("Database Outcome: " + outcomeReference + " " + currentOutcome + " - Value: " + databaseValue);
+								}
+							}
+
+						}
+						else
+						{
+							//Some outcomes may be formatted differently in the extract and database so we need to pass the two values to this method
+							//for some formatting before comparing the two outcomes. Some outcomes are expected not to match. In this case, we just
+							//want to log a message in the report without the Success/Failure log
+							if(CheckOutcomesMatch(currentOutcome, extractValue, databaseValue))
+								if (currentOutcome == "IQNumber" || currentOutcome == "SessionID" || currentOutcome == "Age"
+							    	|| currentOutcome == "TestIdentifier") {
+								Report.Info("Outcome difference expected, no comparison needed");
 							}
 							else {
-								Report.Failure("Manual Calculation: " + outcomeReference + " " + currentOutcome + " - Value: " + extractValue);
-								Report.Failure("Database Outcome: " + outcomeReference + " " + currentOutcome + " - Value: " + databaseValue);
+								Report.Success("Processed Score in Database matches Expected Result");
 							}
-						}
 
-					}
-					else
-					{
-						//Some outcomes may be formatted differently in the extract and database so we need to pass the two values to this method
-						//for some formatting before comparing the two outcomes. Some outcomes are expected not to match. In this case, we just
-						//want to log a message in the report without the Success/Failure log
-						if(CheckOutcomesMatch(currentOutcome, extractValue, databaseValue))
-							if (currentOutcome == "IQNumber" || currentOutcome == "SessionID" || currentOutcome == "SessionDate"
-							    || currentOutcome == "Age" || currentOutcome == "SessionTime" || currentOutcome == "TestIdentifier") {
-							Report.Info("Outcome difference expected, no comparison needed");
-						}
-						else {
-							Report.Success("Processed Score in Database matches Expected Result");
-						}
+							else {
+								Report.Failure("Processed Score in Database does not match Expected Result");
+							}
 
-						else {
-							Report.Failure("Processed Score in Database does not match Expected Result");
-						}
-
-						Report.Info("Extract Outcome: " + currentOutcome + " - Extract Value: " + extractValue);
-						Report.Info("Database Outcome: "  + currentOutcome + " - Database Value: " + databaseValue);
+							Report.Info("Extract Outcome: " + currentOutcome + " - Extract Value: " + extractValue);
+							Report.Info("Database Outcome: "  + currentOutcome + " - Database Value: " + databaseValue);
 						
-					}
-					
+						}
+					}	
 				}
 				
 				rowIndex++;
