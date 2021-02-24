@@ -154,6 +154,7 @@ namespace engine.DataProcessor
 				case "WithinSearchErrors":
 				case "GMLTIndex":
 				case "TestSubset":
+				case "BrainAgeScr":
 
 					//First check if the extract value is NULL, if so, compare to the database value. Otherwise, check to see if
 					//both values are the same i.e TestIntegrity Pass for Detection
@@ -193,6 +194,8 @@ namespace engine.DataProcessor
 				case "AltStandardScoreT":
 				case "AlternateOutcome":
 				case "SATScore":
+				case "BrainPerformanceIndex":
+				case "PsyAttBPI1":
 					
 					try
 					{
@@ -293,7 +296,7 @@ namespace engine.DataProcessor
 				"RTVariability", "RawRTVariability", "RawRTDifference", "Accuracy", "RawAccuracy", "TotalCorrect", "TotalCorrectExclPant", "TotalErrors",
 				"LegalErrors", "RuleBreakErrors", "TotalAnticipatory", "TotalPost", "TotalMaxOut", "TotalResponses", "TotalTrials", "StandardScoreZ",
 				"StandardScoreT", "AltStandardScoreZ", "AltStandardScoreT", "ChangeScore", "PsyAttStdScr", "PstAttChange", "LearnWMStdScr", "LearnWMChange",
-				"AltLearnWMStdScr", "TestIdentifier"};
+				"AltLearnWMStdScr", "BrainAgeScr", "BrainPerformanceIndex", "PsyAttBPI1", "TestIdentifier"};
 			
 			//Outcomes relevant for ISLT based Tests
 			string[] listOutcomes = new string[] {"IQNumber", "Age", "SessionID", "SessionDuration", "SessionCompletionPass", "SessionPerformancePass",

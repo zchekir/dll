@@ -139,6 +139,12 @@ namespace engine.Helpers
 			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [LearnWMChange]
 		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'AltLearnWMStdScr'
 			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)                                                                      AS [AltLearnWMStdScr]
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'BrainAgeScr'
+			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)																		AS [BrainAgeScr]
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'BrainPerformanceIndex'
+			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)																		AS [BrainPerformanceIndex]
+		,MAX(CASE WHEN Assessment.CompositeOutcome.[Name] = 'PsyAttBPI1'
+			THEN Assessment.AssessmentBatteryCompositeOutcome.[Value] END)																		AS [PsyAttBPI1]
 		,UserData.PrWorkflowInstance.TestIdentifier                                                                                             AS [TestIdentifier]
 
 		FROM Assessment.Assessee
