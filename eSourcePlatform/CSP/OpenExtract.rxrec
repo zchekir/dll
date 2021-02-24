@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="a33a0850-a2d3-4443-ab02-ac3fd559b9ec"
+id="c2bbe49f-b70c-4d1d-9a48-2b3a494757dd"
 mode="Global"
 rxversion="8.3">
 	<name>
-		ClickExportFolder
+		OpenExtract
 	</name>
 	<repeatcount>
 		1
@@ -23,25 +23,21 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ClickExportFolder"
-	namespace="CSP.AmazonS3">
+	classname="OpenExtract"
+	namespace="CSP">
 	</codegen>
 	<variables>
-		<var
-		id="4e5e9b25-334b-4434-9a6a-165198f5d800"
-		name="date">
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
-		action="Click"
+		action="DoubleClick"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="abcc68ef-48a2-48de-a80e-ecc9eb482eee"
+		searchpropertyid="02b05182-0aa2-44a9-b1ce-bfae8c712016"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -53,16 +49,16 @@ rxversion="8.3">
 			id="560d7791-d9fd-4504-b175-a660851c0926"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@href~'^https://s3\.console\.aws\.am']/span[@innertext~'^RegressionTest_extract_20']
+					/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@href~'^https://s3\.console\.aws\.am']/span[@innertext~'^RegressionTest_extract_20'][1]
 				</path>
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="ClickExportFolder"
-		enabled="False"
+		classname="OpenExtract"
+		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Get_value_OpenExportFolder"
-		namespace="CSP.AmazonS3"
+		methodname="Mouse_Click_OpenExportFolder"
+		namespace="CSP"
 		optional="False"
 		varname="">
 			<comment>
@@ -70,10 +66,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="6096b0a7-8065-40b6-a1fd-db5e5e03244b">
+			id="8c059faa-3b84-49b4-ba05-bc3d809ae86e">
 				<argument
-				argname="atagInfo"
-				id="8f1460a2-91a4-45c8-a534-2188fce30870">
+				argname="spantagInfo"
+				id="a676e69b-342c-408e-97d2-bc1049f61cc4">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
 					</argvaluetype>
@@ -83,48 +79,17 @@ rxversion="8.3">
 					id="560d7791-d9fd-4504-b175-a660851c0926"
 					sourcename="ItemRecorderEditor">
 						<path>
-							/dom[@domain='s3.console.aws.amazon.com']//a[@innertext~'^\ export_']
+							/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@href~'^https://s3\.console\.aws\.am']/span[@innertext~'^RegressionTest_extract_20'][1]
 						</path>
 					</info>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<explicitdelayitem
-		duration="500ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<explicitdelayitem
-		duration="6000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="b16ffb22-60d5-4da5-a522-08290f813899">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
 	name="CSPRepository"
-	relativepath="..\CSPRepository.rxrep"
+	relativepath="CSPRepository.rxrep"
 	rxversion="8.3">
 		<codegen
 		classname="CSPRepository"
@@ -137,7 +102,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ClickExportFolder.UserCode.cs
+		OpenExtract.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

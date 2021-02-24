@@ -27,6 +27,7 @@ namespace Eisia
     public partial class EisiaRepository : RepoGenBaseFolder
     {
         static EisiaRepository instance = new EisiaRepository();
+        EisiaRepositoryFolders.S3ManagementConsoleAppFolder _s3managementconsole;
 
         /// <summary>
         /// Gets the singleton class instance representing the EisiaRepository element repository.
@@ -43,6 +44,7 @@ namespace Eisia
         public EisiaRepository() 
             : base("EisiaRepository", "/", null, 0, false, "e5685f81-f17a-4d8f-b73b-bdad3f8c32d5", ".\\RepositoryImages\\EisiaRepositorye5685f81.rximgres")
         {
+            _s3managementconsole = new EisiaRepositoryFolders.S3ManagementConsoleAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace Eisia
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The S3ManagementConsole folder.
+        /// </summary>
+        [RepositoryFolder("ad63ee56-998f-485a-9971-9afc1dc8d028")]
+        public virtual EisiaRepositoryFolders.S3ManagementConsoleAppFolder S3ManagementConsole
+        {
+            get { return _s3managementconsole; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,124 @@ namespace Eisia
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class EisiaRepositoryFolders
     {
+        /// <summary>
+        /// The S3ManagementConsoleAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ad63ee56-998f-485a-9971-9afc1dc8d028")]
+        public partial class S3ManagementConsoleAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selectfirstreportInfo;
+            RepoItemInfo _openactionInfo;
+            RepoItemInfo _renametheobjectInfo;
+
+            /// <summary>
+            /// Creates a new S3ManagementConsole  folder.
+            /// </summary>
+            public S3ManagementConsoleAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("S3ManagementConsole", "/dom[@domain='s3.console.aws.amazon.com']", parentFolder, 30000, null, false, "ad63ee56-998f-485a-9971-9afc1dc8d028", "")
+            {
+                _selectfirstreportInfo = new RepoItemInfo(this, "SelectFirstReport", ".//input[#'awsui-checkbox-13']", 30000, null, "15732eff-d53e-4ed0-b932-dd5943354b39");
+                _openactionInfo = new RepoItemInfo(this, "OpenAction", ".//tag[#'action-dropdown']/div//tag[@tagname='awsui-icon']/span", 30000, null, "ca8234c9-c5dd-4bed-b96e-5f0c6af9daa7");
+                _renametheobjectInfo = new RepoItemInfo(this, "RenameTheObject", ".//tag[#'action-dropdown']//ul/li[3]/ul/li[@innertext='Rename object']", 30000, null, "d1362fa0-478e-43ca-b1b0-bfb467980981");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ad63ee56-998f-485a-9971-9afc1dc8d028")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ad63ee56-998f-485a-9971-9afc1dc8d028")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectFirstReport item.
+            /// </summary>
+            [RepositoryItem("15732eff-d53e-4ed0-b932-dd5943354b39")]
+            public virtual Ranorex.InputTag SelectFirstReport
+            {
+                get
+                {
+                    return _selectfirstreportInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectFirstReport item info.
+            /// </summary>
+            [RepositoryItemInfo("15732eff-d53e-4ed0-b932-dd5943354b39")]
+            public virtual RepoItemInfo SelectFirstReportInfo
+            {
+                get
+                {
+                    return _selectfirstreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenAction item.
+            /// </summary>
+            [RepositoryItem("ca8234c9-c5dd-4bed-b96e-5f0c6af9daa7")]
+            public virtual Ranorex.SpanTag OpenAction
+            {
+                get
+                {
+                    return _openactionInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenAction item info.
+            /// </summary>
+            [RepositoryItemInfo("ca8234c9-c5dd-4bed-b96e-5f0c6af9daa7")]
+            public virtual RepoItemInfo OpenActionInfo
+            {
+                get
+                {
+                    return _openactionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RenameTheObject item.
+            /// </summary>
+            [RepositoryItem("d1362fa0-478e-43ca-b1b0-bfb467980981")]
+            public virtual Ranorex.LiTag RenameTheObject
+            {
+                get
+                {
+                    return _renametheobjectInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RenameTheObject item info.
+            /// </summary>
+            [RepositoryItemInfo("d1362fa0-478e-43ca-b1b0-bfb467980981")]
+            public virtual RepoItemInfo RenameTheObjectInfo
+            {
+                get
+                {
+                    return _renametheobjectInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

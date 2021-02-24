@@ -271,7 +271,7 @@ RQAUUUUAFFFFAH//2Q==
 		<keysequenceitem
 		KeySequence="dwoodcogstate{LShiftKey down}@{LShiftKey up}gmail.com{c up}{o up}{m up}"
 		duration="40ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="1ms"
 		searchpropertyid="77044322-4904-4676-8723-44698cdd9a9f">
@@ -408,6 +408,38 @@ RQAUUUUAFFFFAH//2Q==
 				</path>
 			</info>
 		</keysequenceitem>
+		<userrecorditem
+		classname="Enter_ExternalUser_Email"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Key_sequence_ExternalUserEmailField"
+		namespace="CSP.UsersPage"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="5a0afb46-fd6d-4f47-9377-88b241cadfee">
+				<argument
+				argname="inputtagInfo"
+				id="b78dbf11-f0ab-40c1-bd97-04799cb5c557">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="4647601e-706b-41d6-a391-656ee0bee7b4"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_contactEmail_[0-9]+']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

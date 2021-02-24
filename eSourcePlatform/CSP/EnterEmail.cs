@@ -20,34 +20,35 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.UsersPage
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_ExternalUser_Email recording.
+    ///The EnterEmail recording.
     /// </summary>
-    [TestModule("aafe40f3-98c2-45f7-bb18-df8a0359fad2", ModuleType.Recording, 1)]
-    public partial class Enter_ExternalUser_Email : ITestModule
+    [TestModule("fe04d8f7-51ef-4c8a-9881-4a9eacecb314", ModuleType.Recording, 1)]
+    public partial class EnterEmail : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static Enter_ExternalUser_Email instance = new Enter_ExternalUser_Email();
+        static EnterEmail instance = new EnterEmail();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_ExternalUser_Email()
+        public EnterEmail()
         {
+            CSPDOM = "cgst-staging-asia.azurewebsites.net";
             GmailAddress = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_ExternalUser_Email Instance
+        public static EnterEmail Instance
         {
             get { return instance; }
         }
@@ -57,7 +58,7 @@ namespace CSP.UsersPage
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
         /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
+        [TestVariable("08e8767b-529a-46ef-bdd4-8c27f7fd8d75")]
         public string CSPDOM
         {
             get { return repo.CSPDOM; }
@@ -67,7 +68,7 @@ namespace CSP.UsersPage
         /// <summary>
         /// Gets or sets the value of variable GmailAddress.
         /// </summary>
-        [TestVariable("831c3ccb-9a5c-4c2a-ada9-75e6678cd703")]
+        [TestVariable("c9d92859-8bf2-44b4-b7ea-7403581f1456")]
         public string GmailAddress
         {
             get { return repo.GmailAddress; }
@@ -100,18 +101,11 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField' at Center.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.Click(1);
-            Delay.Milliseconds(90);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform1.EnterEmail' at Center.", repo.CogstateSolutionPlatform1.EnterEmailInfo, new RecordItemIndex(0));
+            //repo.CogstateSolutionPlatform1.EnterEmail.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
-            Delay.Duration(500, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(2));
-            //repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys(GmailAddress, 1);
-            //Delay.Milliseconds(10);
-            
-            Key_sequence_ExternalUserEmailField(repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo);
+            Key_sequence_EnterEmail(repo.CogstateSolutionPlatform1.EnterEmailInfo);
             Delay.Milliseconds(0);
             
         }

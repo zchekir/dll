@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.AmazonS3
+namespace CSP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ClickExportFolder recording.
+    ///The OpenExtract recording.
     /// </summary>
-    [TestModule("a33a0850-a2d3-4443-ab02-ac3fd559b9ec", ModuleType.Recording, 1)]
-    public partial class ClickExportFolder : ITestModule
+    [TestModule("c2bbe49f-b70c-4d1d-9a48-2b3a494757dd", ModuleType.Recording, 1)]
+    public partial class OpenExtract : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the CSPRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static CSPRepository repo = CSPRepository.Instance;
 
-        static ClickExportFolder instance = new ClickExportFolder();
+        static OpenExtract instance = new OpenExtract();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ClickExportFolder()
+        public OpenExtract()
         {
-            date = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ClickExportFolder Instance
+        public static OpenExtract Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _date;
-
-        /// <summary>
-        /// Gets or sets the value of variable date.
-        /// </summary>
-        [TestVariable("4e5e9b25-334b-4434-9a6a-165198f5d800")]
-        public string date
-        {
-            get { return _date; }
-            set { _date = value; }
-        }
 
 #endregion
 
@@ -92,20 +79,12 @@ namespace CSP.AmazonS3
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'S3ManagementConsole.OpenExportFolder' at Center.", repo.S3ManagementConsole.OpenExportFolderInfo, new RecordItemIndex(0));
-            //repo.S3ManagementConsole.OpenExportFolder.Click();
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'S3ManagementConsole.OpenExportFolder' at Center.", repo.S3ManagementConsole.OpenExportFolderInfo, new RecordItemIndex(0));
+            repo.S3ManagementConsole.OpenExportFolder.DoubleClick();
+            Delay.Milliseconds(200);
             
-            //Get_value_OpenExportFolder(repo.S3ManagementConsole.OpenExportFolderInfo);
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(2));
-            Delay.Duration(500, false);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(3));
-            Delay.Duration(6000, false);
-            
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(4));
+            Mouse_Click_OpenExportFolder(repo.S3ManagementConsole.OpenExportFolderInfo);
+            Delay.Milliseconds(0);
             
         }
 

@@ -10,6 +10,7 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="009bd039-6459-439a-b527-e6c69216f9ce"
 			name="Enter_ExternalUser_Email"
 			ref="aafe40f3-98c2-45f7-bb18-df8a0359fad2"
@@ -1032,12 +1033,12 @@ rxversion="8.3">
 					id="c5cdeeb3-af2d-4a90-9ec9-9394afbd8f1f"
 					name="CSPDOM">
 						<modulevariable
-						moduleref="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
+						moduleref="68a40eb6-304e-42e8-bace-e009bd2115b3"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
 						<modulevariable
-						moduleref="68a40eb6-304e-42e8-bace-e009bd2115b3"
+						moduleref="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
@@ -1061,6 +1062,11 @@ rxversion="8.3">
 						name="CSPDOM"
 						variableref="f54fbb85-c5ac-4f6a-98d6-049472b68327">
 						</modulevariable>
+						<modulevariable
+						moduleref="cf31febd-b7ed-42c8-9e81-eab41cf53334"
+						name="CSPDOM"
+						variableref="08e8767b-529a-46ef-bdd4-8c27f7fd8d75">
+						</modulevariable>
 					</groupvariable>
 					<groupvariable
 					id="9fc6d3c2-783f-4111-9f27-d77e97f4380e"
@@ -1069,6 +1075,11 @@ rxversion="8.3">
 						moduleref="009bd039-6459-439a-b527-e6c69216f9ce"
 						name="GmailAddress"
 						variableref="831c3ccb-9a5c-4c2a-ada9-75e6678cd703">
+						</modulevariable>
+						<modulevariable
+						moduleref="cf31febd-b7ed-42c8-9e81-eab41cf53334"
+						name="GmailAddress"
+						variableref="c9d92859-8bf2-44b4-b7ea-7403581f1456">
 						</modulevariable>
 					</groupvariable>
 				</groupvariables>
@@ -1326,6 +1337,12 @@ rxversion="8.3">
 			id="cdd41f0d-af33-4db0-9fe2-27d35a42e2b0"
 			name="Validate_Min_ProjectName"
 			ref="dbe3709b-0ce2-4e98-9709-f282328d40e2"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cf31febd-b7ed-42c8-9e81-eab41cf53334"
+			name="EnterEmail"
+			ref="fe04d8f7-51ef-4c8a-9881-4a9eacecb314"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -2070,6 +2087,10 @@ rxversion="8.3">
 					<testmodule
 					id="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
 					name="Click_Add_User">
+					</testmodule>
+					<testmodule
+					id="cf31febd-b7ed-42c8-9e81-eab41cf53334"
+					name="EnterEmail">
 					</testmodule>
 					<testmodule
 					id="009bd039-6459-439a-b527-e6c69216f9ce"

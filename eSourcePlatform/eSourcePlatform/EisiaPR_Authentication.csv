@@ -1659,7 +1659,773 @@ DefaultPortal,asia.cogstate.com,fc3a4881-e13d-4fd5-b7f3-f7fb13de676b,fe8950c8-37
 }
 ]
 }"
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+DefaultPortal,cgst-qc-eisai.cogstate.com,9c72dcff-3bd3-4c86-aa9b-02e99e9fc90f,a75e618d-a27a-437e-a50b-a9be72c38ab4,EisiaStudy,1/1/2000,m,en_US,https://www.cogstate.com/,https://jira.cogstate.com/,CBB,1,7,null,daryschetech@gmail.com,true ,"""""",smartphone,1.11E+13,WAS,1,10,10,1,RegressionTest,https://asia.cogstate.com/swagger/,200,"{{""key"": ""002db461-56ca-4900-902f-c14df436f93e
+"",""secret"": ""a213794e-f1aa-4125-a98f-ae661eb9d32a
+""}",,"{
+  ""study"": {
+    ""id"":<id>,
+    ""name"": ""<name>"",
+    ""isDefault"": null
+  },
+  ""batteryTemplate"": {
+    ""id"": 2,
+    ""name"": ""CBB - NON INTERACTIVE DEMOS"",
+    ""isDefault"": null
+  },
+  ""translation"": {
+    ""id"": 1,
+    ""name"": ""Default"",
+    ""isDefault"": null
+  },
+  ""configuration"": null,
+  ""locked"": false,
+  ""isLockedStatus"": false,
+  ""isManuallyUpdated"": false,
+  ""scalingEnabled"": true,
+  ""scalingLower"": 75,
+  ""scalingUpper"": 100,
+  ""scalingUpperLimits"": [
+    100,
+    120
+  ],
+  ""repeatStyle"": null,
+  ""id"": 9715,
+  ""name"": ""<batteryName>"",
+  ""description"": ""Test"",
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""numberBlocks"": 8,
+  ""taskCodes"": null,
+  ""pediatric"": false,
+  ""isSweepEnabled"": false,
+  ""desktopConfiguration"": {
+    ""basePath"": """",
+    ""localePath"": """",
+    ""translationVersion"": """",
+    ""skipAssessment"": false,
+    ""skipTests"": false,
+    ""scaleMode"": ""start"",
+    ""scalingLower"": 75,
+    ""scalingUpper"": 100,
+    ""repeatStyle"": null,
+    ""id"": 19157,
+    ""name"": ""Desktop"",
+    ""testSuites"": ""[{\""testSuiteName\"":\""CogstateTestSuite\"",\""testSuiteVersion\"":\""<ver>\"",\""configuration\"":[{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""CardInstructions\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yes_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""DetectionInstructionsDemo\""},{\""code\"":\""DetectionAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""DetectionInstructionsReal\""},{\""code\"":\""DetectionAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""NoInstructionsLearn\""},{\""code\"":\""NoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""no_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesNoInstructionsLearn\""},{\""code\"":\""YesNoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yesno_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""IdentificationInstructionsDemo\""},{\""code\"":\""IdentificationAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""IdentificationInstructionsReal\""},{\""code\"":\""IdentificationAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnecardlearningInstructionsDemo\""},{\""code\"":\""OnecardlearningAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnecardlearningInstructionsReal\""},{\""code\"":\""OnecardlearningAdultReal\"",\""integrity\"":0.5,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnebackInstructionsDemo\""},{\""code\"":\""OnebackAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnebackInstructionsReal\""},{\""code\"":\""OnebackAdultReal\"",\""integrity\"":0.7,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]}],\""testSuiteProperties\"":{},\""order\"":0}]"",
+    ""dataFormatVersion"": 1
+  },
+  ""tabletConfiguration"": {
+    ""basePath"": """",
+    ""localePath"": """",
+    ""translationVersion"": """",
+    ""skipAssessment"": false,
+    ""skipTests"": false,
+    ""scaleMode"": ""start"",
+    ""scalingLower"": 75,
+    ""scalingUpper"": 100,
+    ""repeatStyle"": null,
+    ""id"": 19158,
+    ""name"": ""Tablet"",
+    ""testSuites"": ""[{\""testSuiteName\"":\""CogstateTestSuite\"",\""testSuiteVersion\"":\""8.13.2\"",\""configuration\"":[{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""CardInstructions\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yes_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""DetectionInstructionsDemo\""},{\""code\"":\""DetectionAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""DetectionInstructionsReal\""},{\""code\"":\""DetectionAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""NoInstructionsLearn\""},{\""code\"":\""NoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""no_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""YesNoInstructionsLearn\""},{\""code\"":\""YesNoLearn1\"",\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\"",\""image\"":\""yesno_keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""IdentificationInstructionsDemo\""},{\""code\"":\""IdentificationAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""IdentificationInstructionsReal\""},{\""code\"":\""IdentificationAdultReal\"",\""integrity\"":0.8,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnecardlearningInstructionsDemo\""},{\""code\"":\""OnecardlearningAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnecardlearningInstructionsReal\""},{\""code\"":\""OnecardlearningAdultReal\"",\""integrity\"":0.5,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]},{\""skipRest\"":false,\""version\"":\""Adult\"",\""parameters\"":[{\""code\"":\""OnebackInstructionsDemo\""},{\""code\"":\""OnebackAdultDemo\"",\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""},{\""code\"":\""OnebackInstructionsReal\""},{\""code\"":\""OnebackAdultReal\"",\""integrity\"":0.7,\""showButtons\"":false,\""responseScreen\"":false,\""responseButtons\"":true,\""controls\"":\""keyboard\""}]}],\""testSuiteProperties\"":{},\""order\"":0}]"",
+    ""dataFormatVersion"": 1
+  }
+}","{
+  ""workflowType"": {
+    ""id"": 5,
+    ""name"": ""External Embedded"",
+    ""code"": ""PRS_SHORTLIVED""
+  },
+  ""studyId"": <id>,
+  ""data"": null,
+  ""states"": [],
+  ""portalId"": null,
+  ""workflowBlocks"": [],
+  ""id"": 4762,
+  ""name"": ""Automationworkflow"",
+  ""description"": ""Test"",
+  ""workflowToken"": ""Automationworkflowced9a35ffaaa4a1ba27a2176e92c9e7a"",
+  ""workflowTemplate"": {
+    ""id"": 7,
+    ""name"": ""Blank"",
+    ""isDefault"": null
+  },
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""assessments"": null,
+  ""workflowBlocksCount"": 0,
+  ""published"": false,
+  ""tests"": null
+}","{
+  ""visits"": [
+    {
+      ""id"": 111193,
+      ""name"": ""Visit 1"",
+      ""description"": ""VistAutomation"",
+      ""order"": 1,
+      ""dataLossMitigation"": true,
+      ""dataLossMitigationNotifications"": true,
+      ""sessions"": [
+        {
+          ""automaticallyGenerated"": true,
+          ""id"": 111361,
+          ""order"": 1,
+          ""name"": ""Session 1"",
+          ""workflow"": {
+            ""id"": <WFID>,
+            ""name"": ""Test"",
+            ""description"": ""Automation"",
+            ""workflowToken"": null,
+            ""workflowTemplate"": null,
+            ""status"": null,
+            ""assessments"": [],
+            ""workflowBlocksCount"": 0,
+            ""published"": false,
+            ""tests"": []
+          },
+          ""code"": ""<visitcode>""
+        }
+      ],
+      ""visitStatus"": {
+        ""id"": 1,
+        ""name"": ""Draft"",
+        ""isDefault"": null
+      }
+    }
+  ],
+  ""id"": 2561,
+  ""study"": {
+    ""id"": <studid>,
+    ""name"": ""APIStudy2669319"",
+    ""isDefault"": null
+  },
+  ""name"": ""<name>"",
+  ""description"": ""Automation"",
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""active"": false,
+  ""visitCount"": 0
+}","{
+  ""id"": <WorkflowBlockID>,
+  ""workflowTemplateId"": null,
+  ""workflowId"": <wkid>,
+  ""name"": ""Simple Battery"",
+  ""data"": ""{\""temp_ConfigurationShow_battery\"":{\""study\"":{\""id\"":<studid>,\""name\"":\""APIStudy2407369\"",\""isDefault\"":null},\""batteryTemplate\"":{\""id\"":2,\""name\"":\""CBB - NON INTERACTIVE DEMOS\"",\""isDefault\"":null},\""translation\"":{\""id\"":1,\""name\"":\""Default\"",\""isDefault\"":null},\""configuration\"":null,\""locked\"":false,\""isLockedStatus\"":false,\""isManuallyUpdated\"":false,\""scalingEnabled\"":true,\""scalingLower\"":75,\""scalingUpper\"":100,\""scalingUpperLimits\"":[100,120],\""repeatStyle\"":null,\""id\"":<batteryID>,\""name\"":\""Automation\"",\""description\"":\""Test\"",\""status\"":{\""id\"":1,\""name\"":\""Draft\"",\""isDefault\"":null},\""numberBlocks\"":8,\""taskCodes\"":[\""CI\"",\""YES\"",\""DET\"",\""NO\"",\""YES/NO\"",\""IDN\"",\""OCL\"",\""ONB\""],\""pediatric\"":false,\""isSweepEnabled\"":false,\""desktopConfiguration\"":{\""id\"":19591,\""name\"":\""Desktop\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""responseScreen\\\"":false}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null},\""tabletConfiguration\"":{\""id\"":19592,\""name\"":\""Tablet\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yes_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""no_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yesno_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null}}}"",
+  ""isDecision"": false,
+  ""order"": 1,
+  ""successBlock"": {
+    ""id"": 24003,
+    ""name"": ""Set Not Measured Status"",
+    ""isDefault"": null
+  },
+  ""failBlock"": {
+    ""id"": 24004,
+    ""name"": ""Set Error Status"",
+    ""isDefault"": null
+  },
+  ""returnBlock"": null,
+  ""createDate"": ""2020-10-13T14:42:56.163Z"",
+  ""dateLastMaint"": ""2020-10-13T14:46:37.4328216Z"",
+  ""workflowToken"": null,
+  ""type"": {
+    ""id"": 11,
+    ""name"": ""Simple battery"",
+    ""code"": ""ConfigurationShow"",
+    ""description"": null,
+    ""data"": ""SimpleBatteryShow"",
+    ""createDate"": null,
+    ""dateLastMaint"": null
+  }
+}","[
+{
+""name"":""1>browserCheck"",
+""code"":""ClientBrowserCheck"",
+""data"":0,
+""id"":-1,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-1,
+""isStartState"":true,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":-11,
+""nextWorkflowStateId"":-2
+},
+{
+""action"":-10,
+""nextWorkflowStateId"":-3
+},
+{
+""action"":-3,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":33
+},
+{
+""name"":""2>DesktopVersion"",
+""code"":""ClientBatteryConfiguration"",
+""data"":19759,
+""id"":-2,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-1,
+""isStartState"":false,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":-2,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":34
+},
+{
+""name"":""3>TabletVersion"",
+""code"":""ClientBatteryConfiguration"",
+""data"":19760,
+""id"":-3,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-1,
+""isStartState"":false,
+""isEndState"":false,
+""nextStates"":[
+{
+""action"":-2,
+""nextWorkflowStateId"":-4
+}
+],
+""stateTypeId"":34
+},
+{
+""name"":""4>Finished"",
+""code"":""ClientBrowserClose"",
+""data"":1,
+""id"":-4,
+""reindex"":false,
+""isClientState"":true,
+""returnStateId"":-4,
+""isStartState"":false,
+""isEndState"":true,
+""nextStates"":[
+],
+""stateTypeId"":32
+}
+]","{
+  ""id"": 24039,
+  ""workflowTemplateId"": null,
+  ""workflowId"": <id>,
+  ""name"": ""simpleBattey"",
+  ""data"": null,
+  ""isDecision"": false,
+  ""order"": null,
+  ""successBlock"": ""Finish"",
+  ""failBlock"": null,
+  ""returnBlock"": null,
+  ""createDate"": ""2020-10-13T18:09:13.6384482Z"",
+  ""dateLastMaint"": ""2020-10-13T18:09:13.6384482Z"",
+  ""workflowToken"": null,
+  ""type"": ""Simple battey"",
+  ""Completion"": ""Finish"",
+  ""Problem"": ""Finish""
+}","{
+  ""id"": 24039,
+  ""workflowTemplateId"": null,
+  ""workflowId"": <id>,
+  ""name"": ""Finish"",
+  ""data"": ""{\""temp_Finished_data\"":1}"",
+  ""isDecision"": false,
+  ""order"": 1,
+  ""successBlock"": null,
+  ""failBlock"": null,
+  ""returnBlock"": {
+    ""id"":  24039,
+    ""name"": ""Finish"",
+    ""isDefault"": null
+  },
+  ""createDate"": ""2020-10-14T16:29:40.92Z"",
+  ""dateLastMaint"": ""2020-10-14T16:30:20.5614839Z"",
+  ""workflowToken"": null,
+  ""type"": {
+    ""id"": 12,
+    ""name"": ""Finished"",
+    ""code"": ""Finished"",
+    ""description"": null,
+    ""data"": ""Finished"",
+    ""createDate"": null,
+    ""dateLastMaint"": null
+  }
+
+
+  
+
+
+}","{
+  ""workflowType"": {
+    ""id"": 5,
+    ""name"": ""External Embedded"",
+    ""code"": ""PRS_SHORTLIVED""
+  },
+  ""studyId"": 164068,
+  ""data"": null,
+  ""states"": [
+    {
+      ""id"": 24130,
+      ""workflowDefId"": 4796,
+      ""stateTypeId"": 32,
+      ""isClientState"": true,
+      ""returnStateId"": 48884,
+      ""isStartState"": false,
+      ""isEndState"": true,
+      ""nextStates"": [],
+      ""batteryId"": null,
+      ""compositeOutcomeId"": null,
+      ""classificationOutcomeId"": null,
+      ""workflowActionTypeId"": null,
+      ""qualificationStatusTypeId"": null,
+      ""version"": 1,
+      ""name"": ""4>Finished"",
+      ""code"": ""ClientBrowserClose"",
+      ""data"": 1
+    },
+    {
+      ""id"": 48881,
+      ""workflowDefId"": 4796,
+      ""stateTypeId"": 33,
+      ""isClientState"": true,
+      ""returnStateId"": 48881,
+      ""isStartState"": true,
+      ""isEndState"": false,
+      ""nextStates"": [
+        {
+          ""action"": -11,
+          ""nextWorkflowStateId"": 48882
+        },
+        {
+          ""action"": -10,
+          ""nextWorkflowStateId"": 48883
+        },
+        {
+          ""action"": -3,
+          ""nextWorkflowStateId"": 48884
+        }
+      ],
+      ""batteryId"": null,
+      ""compositeOutcomeId"": null,
+      ""classificationOutcomeId"": null,
+      ""workflowActionTypeId"": null,
+      ""qualificationStatusTypeId"": null,
+      ""version"": 1,
+      ""name"": ""1>browserCheck"",
+      ""code"": ""ClientBrowserCheck"",
+      ""data"": 0
+    },
+    {
+      ""id"": 48882,
+      ""workflowDefId"": 4796,
+      ""stateTypeId"": 34,
+      ""isClientState"": true,
+      ""returnStateId"": 48881,
+      ""isStartState"": false,
+      ""isEndState"": false,
+      ""nextStates"": [
+        {
+          ""action"": -2,
+          ""nextWorkflowStateId"": 48884
+        }
+      ],
+      ""batteryId"": null,
+      ""compositeOutcomeId"": null,
+      ""classificationOutcomeId"": null,
+      ""workflowActionTypeId"": null,
+      ""qualificationStatusTypeId"": null,
+      ""version"": 1,
+      ""name"": ""2>DesktopVersion"",
+      ""code"": ""ClientBatteryConfiguration"",
+      ""data"": 19591
+    },
+    {
+      ""id"": 48883,
+      ""workflowDefId"": 4796,
+      ""stateTypeId"": 34,
+      ""isClientState"": true,
+      ""returnStateId"": 48881,
+      ""isStartState"": false,
+      ""isEndState"": false,
+      ""nextStates"": [
+        {
+          ""action"": -2,
+          ""nextWorkflowStateId"": 48884
+        }
+      ],
+      ""batteryId"": null,
+      ""compositeOutcomeId"": null,
+      ""classificationOutcomeId"": null,
+      ""workflowActionTypeId"": null,
+      ""qualificationStatusTypeId"": null,
+      ""version"": 1,
+      ""name"": ""3>TabletVersion"",
+      ""code"": ""ClientBatteryConfiguration"",
+      ""data"": 19592
+    }
+  ],
+  ""portalId"": null,
+  ""workflowBlocks"": [
+    {
+      ""id"": 24116,
+      ""workflowTemplateId"": null,
+      ""workflowId"": 4796 ,
+      ""name"": ""Simple Battery"",
+      ""data"": ""{\""temp_ConfigurationShow_battery\"":{\""study\"":{\""id\"":164068,\""name\"":\""APIStudy2407369\"",\""isDefault\"":null},\""batteryTemplate\"":{\""id\"":2,\""name\"":\""CBB - NON INTERACTIVE DEMOS\"",\""isDefault\"":null},\""translation\"":{\""id\"":1,\""name\"":\""Default\"",\""isDefault\"":null},\""configuration\"":null,\""locked\"":false,\""isLockedStatus\"":false,\""isManuallyUpdated\"":false,\""scalingEnabled\"":true,\""scalingLower\"":75,\""scalingUpper\"":100,\""scalingUpperLimits\"":[100,120],\""repeatStyle\"":null,\""id\"":9865,\""name\"":\""Automation\"",\""description\"":\""Test\"",\""status\"":{\""id\"":1,\""name\"":\""Draft\"",\""isDefault\"":null},\""numberBlocks\"":8,\""taskCodes\"":[\""CI\"",\""YES\"",\""DET\"",\""NO\"",\""YES/NO\"",\""IDN\"",\""OCL\"",\""ONB\""],\""pediatric\"":false,\""isSweepEnabled\"":false,\""desktopConfiguration\"":{\""id\"":19591,\""name\"":\""Desktop\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""responseScreen\\\"":false}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null},\""tabletConfiguration\"":{\""id\"":19592,\""name\"":\""Tablet\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yes_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""no_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yesno_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null}}}"",
+      ""isDecision"": false,
+      ""order"": 1,
+      ""successBlock"": {
+        ""id"": 24117,
+        ""name"": ""Finish"",
+        ""isDefault"": null
+      },
+      ""failBlock"": {
+        ""id"": 24117,
+        ""name"": ""Finish"",
+        ""isDefault"": null
+      },
+      ""returnBlock"": null,
+      ""createDate"": ""2020-10-15T15:54:30.76Z"",
+      ""dateLastMaint"": ""2020-10-15T15:58:55.24Z"",
+      ""workflowToken"": null,
+      ""type"": {
+        ""id"": 11,
+        ""name"": ""Simple battery"",
+        ""code"": ""ConfigurationShow"",
+        ""description"": null,
+        ""data"": ""SimpleBatteryShow"",
+        ""createDate"": null,
+        ""dateLastMaint"": null
+      }
+    },
+    {
+      ""id"": 24117,
+      ""workflowTemplateId"": null,
+      ""workflowId"": 4796,
+      ""name"": ""Finish"",
+      ""data"": ""{\""temp_Finished_data\"":1}"",
+      ""isDecision"": false,
+      ""order"": 1,
+      ""successBlock"": null,
+      ""failBlock"": null,
+      ""returnBlock"": null,
+      ""createDate"": ""2020-10-15T15:54:31.09Z"",
+      ""dateLastMaint"": ""2020-10-15T15:58:18.717Z"",
+      ""workflowToken"": null,
+      ""type"": {
+        ""id"": 12,
+        ""name"": ""Finished"",
+        ""code"": ""Finished"",
+        ""description"": null,
+        ""data"": ""Finished"",
+        ""createDate"": null,
+        ""dateLastMaint"": null
+      }
+    }
+  ],
+  ""id"": 4796,
+  ""name"": ""Automationworkflow"",
+  ""description"": ""Test"",
+  ""workflowToken"": ""Automationworkflowc74bc203beee4fdfbe776952c55ec24e"",
+  ""workflowTemplate"": {
+    ""id"": 7,
+    ""name"": ""Blank"",
+    ""isDefault"": null
+  },
+  ""status"": {
+    ""id"": 1,
+    ""name"": ""Draft"",
+    ""isDefault"": null
+  },
+  ""assessments"": null,
+  ""workflowBlocksCount"": 0,
+  ""published"": true,
+  ""tests"": null
+}","{
+  ""id"": <blockid>,
+  ""workflowTemplateId"": null,
+  ""workflowId"": <wfid>,
+  ""name"": ""Simple Battery"",
+  ""data"": ""{\""temp_ConfigurationShow_battery\"":{\""study\"":{\""id\"":<studid>,\""name\"":\""<studyName>\"",\""isDefault\"":null},\""batteryTemplate\"":{\""id\"":2,\""name\"":\""CBB - NON INTERACTIVE DEMOS\"",\""isDefault\"":null},\""translation\"":{\""id\"":1,\""name\"":\""Default\"",\""isDefault\"":null},\""configuration\"":null,\""locked\"":false,\""isLockedStatus\"":false,\""isManuallyUpdated\"":false,\""scalingEnabled\"":true,\""scalingLower\"":75,\""scalingUpper\"":100,\""scalingUpperLimits\"":[100,120],\""repeatStyle\"":null,\""id\"":<batteryid>,\""name\"":\""Automation\"",\""description\"":\""Test\"",\""status\"":{\""id\"":1,\""name\"":\""Draft\"",\""isDefault\"":null},\""numberBlocks\"":8,\""taskCodes\"":[\""CI\"",\""YES\"",\""DET\"",\""NO\"",\""YES/NO\"",\""IDN\"",\""OCL\"",\""ONB\""],\""pediatric\"":false,\""isSweepEnabled\"":false,\""desktopConfiguration\"":{\""id\"":19759,\""name\"":\""Desktop\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""responseScreen\\\"":false}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""responseScreen\\\"":false},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""responseScreen\\\"":false}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null},\""tabletConfiguration\"":{\""id\"": 19760,\""name\"":\""Tablet\"",\""configuration\"":\""[{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""CardInstructions\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yes_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""DetectionInstructionsDemo\\\""},{\\\""code\\\"":\\\""DetectionAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""DetectionInstructionsReal\\\""},{\\\""code\\\"":\\\""DetectionAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""NoInstructionsLearn\\\""},{\\\""code\\\"":\\\""NoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""no_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":1,\\\""parameters\\\"":[{\\\""code\\\"":\\\""YesNoInstructionsLearn\\\""},{\\\""code\\\"":\\\""YesNoLearn1\\\"",\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\"",\\\""image\\\"":\\\""yesno_tablet\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""IdentificationInstructionsDemo\\\""},{\\\""code\\\"":\\\""IdentificationAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""IdentificationInstructionsReal\\\""},{\\\""code\\\"":\\\""IdentificationAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnecardlearningInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnecardlearningInstructionsReal\\\""},{\\\""code\\\"":\\\""OnecardlearningAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]},{\\\""skipRest\\\"":false,\\\""maxAttempts\\\"":3,\\\""parameters\\\"":[{\\\""code\\\"":\\\""OnebackInstructionsDemo\\\""},{\\\""code\\\"":\\\""OnebackAdultDemo\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""},{\\\""code\\\"":\\\""OnebackInstructionsReal\\\""},{\\\""code\\\"":\\\""OnebackAdultReal\\\"",\\\""showButtons\\\"":true,\\\""responseScreen\\\"":true,\\\""controls\\\"":\\\""generic\\\""}]}]\"",\""basePath\"":\""\"",\""localePath\"":\""\"",\""version\"":\""\"",\""skipAssessment\"":false,\""skipTests\"":false,\""scaleMode\"":null,\""scalingLower\"":0,\""scalingUpper\"":0,\""repeatStyle\"":null}}}"",
+  ""isDecision"": false,
+  ""order"": 1,
+  ""successBlock"": {
+    ""id"": <id2>,
+    ""name"": ""Finish"",
+    ""isDefault"": null
+  },
+  ""failBlock"": {
+    ""id"": <id2>,
+    ""name"": ""Finish"",
+    ""isDefault"": null
+  },
+  ""returnBlock"": null,
+  ""createDate"": ""2020-10-19T14:39:45.91Z"",
+  ""dateLastMaint"": ""2020-10-19T15:23:22.5063334Z"",
+  ""workflowToken"": null,
+  ""type"": {
+    ""id"": 11,
+    ""name"": ""Simple battery"",
+    ""code"": ""ConfigurationShow"",
+    ""description"": null,
+    ""data"": ""SimpleBatteryShow"",
+    ""createDate"": null,
+    ""dateLastMaint"": null
+  }
+}","{
+	""id"": <ExternaluserID>,
+	""key"": ""<Key>"",
+	""secret"": null,
+	""contactEmail"": ""ranorexcogstate@gmail.com"",
+	""active"": true,
+	""lock"": true,
+	""studyInfoList"": [{
+		""study"": {
+			""id"": 2,
+			""name"": """",
+			""isDefault"": null
+		},
+		""role"": {
+			""id"": <id>,
+			""name"": ""External Service"",
+			""isDefault"": null
+		},
+		""sites"": null,
+		""active"": true
+	}]
+}","{
+""id"":24600,
+""workflowTemplateId"":null,
+""workflowId"":<id>,
+""name"":""Set Status"",
+""data"":""{\""temp_SetStatus_status\"":{\""id\"":1,\""name\"":\""Qualified\"",\""isDefault\"":null}}"",
+""isDecision"":false,
+""order"":1,
+""successBlock"":{
+""id"":24600,
+""workflowTemplateId"":null,
+""workflowId"":<id>,
+""name"":""Edit name"",
+""data"":null,
+""isDecision"":false,
+""order"":1,
+""successBlock"":null,
+""failBlock"":null,
+""returnBlock"":null,
+""createDate"":""2020-10-22T13:27:30.287Z"",
+""dateLastMaint"":""2020-10-22T13:27:30.443Z"",
+""workflowToken"":null,
+""type"":null
+},
+""failBlock"":null,
+""returnBlock"":null,
+""createDate"":""2020-10-22T13:27:30.287Z"",
+""dateLastMaint"":""2020-10-22T13:27:30.443Z"",
+""workflowToken"":null,
+""type"":{
+""id"":20,
+""name"":""Set status"",
+""code"":""SetStatus"",
+""description"":""Set the status"",
+""data"":""SetStatus"",
+""createDate"":null,
+""dateLastMaint"":null,
+""workflowSteps"":[
+{
+""id"":""setStatus|SetStatus"",
+""name"":""setStatus|SetStatus"",
+""code"":""ServerSetStatus"",
+""data"":""statusData|statusData"",
+""client"":false,
+""returnState"":""return"",
+""start"":true,
+""nexts"":[
+{
+""action"":-2,
+""nextWorkflowStepId"":""success""
+}
+]
+}
+],
+""options"":{
+""success"":""Completion"",
+""fail"":""Blank"",
+""return"":""Return""
+}
+},
+""$promise"":{
+},
+""$resolved"":true,
+""temp_SetStatus_status"":{
+""id"":1,
+""name"":""Qualified"",
+""isDefault"":null
+},
+""temp_ComplexDecision"":{
+},
+""temp_CheckOutcomes"":[
+{
+""id"":null
+}
+]
+}","{
+""id"":<SetStatusID>,
+""workflowTemplateId"":null,
+""workflowId"":<wfid>,
+""name"":""Set Status"",
+""data"":""{\""temp_SetStatus_status\"":{\""id\"":1,\""name\"":\""Qualified\"",\""isDefault\"":null}}"",
+""isDecision"":false,
+""order"":1,
+""successBlock"":{
+""id"":<secondblockID>,
+""workflowTemplateId"":null,
+""workflowId"":<wfid>,
+""name"":""Finish"",
+""data"":""{\""temp_Finished_data\"":1}"",
+""isDecision"":false,
+""order"":1,
+""successBlock"":null,
+""failBlock"":null,
+""returnBlock"":null,
+""createDate"":""2020-10-23T14:06:16.283Z"",
+""dateLastMaint"":""2020-10-23T14:06:16.283Z"",
+""workflowToken"":null,
+""type"":{
+""id"":12,
+""name"":""Finished"",
+""code"":""Finished"",
+""description"":null,
+""data"":""Finished"",
+""createDate"":null,
+""dateLastMaint"":null,
+""options"":{
+""success"":""Blank"",
+""fail"":""Blank"",
+""return"":""Return""
+}
+}
+},
+""failBlock"":null,
+""returnBlock"":null,
+""createDate"":""2020-10-23T14:06:16.58Z"",
+""dateLastMaint"":""2020-10-23T14:07:54.65Z"",
+""workflowToken"":null,
+""type"":{
+""id"":20,
+""name"":""Set status"",
+""code"":""SetStatus"",
+""description"":null,
+""data"":""SetStatus"",
+""createDate"":null,
+""dateLastMaint"":null,
+""options"":{
+""success"":""Completion"",
+""fail"":""Blank"",
+""return"":""Return""
+}
+},
+""$promise"":{
+},
+""$resolved"":true,
+""temp_SetStatus_status"":{
+""id"":1,
+""name"":""Qualified"",
+""isDefault"":null
+},
+""temp_ComplexDecision"":{
+},
+""temp_CheckOutcomes"":[
+{
+""id"":null
+}
+]
+}
+{
+""id"":<SetStatusID>,
+""workflowTemplateId"":null,
+""workflowId"":<wfid>,
+""name"":""Set Status"",
+""data"":""{""temp_SetStatus_status"":{""id"":1,""name"":""Qualified"",""isDefault"":null}}"",
+""isDecision"":false,
+""order"":1,
+""successBlock"":{
+""id"":<secondblockID>,
+""workflowTemplateId"":null,
+""workflowId"":4920,
+""name"":""Finish"",
+""data"":""{""temp_Finished_data"":1}"",
+""isDecision"":false,
+""order"":1,
+""successBlock"":null,
+""failBlock"":null,
+""returnBlock"":null,
+""createDate"":""2020-10-23T14:06:16.283Z"",
+""dateLastMaint"":""2020-10-23T14:06:16.283Z"",
+""workflowToken"":null,
+""type"":{
+""id"":12,
+""name"":""Finished"",
+""code"":""Finished"",
+""description"":null,
+""data"":""Finished"",
+""createDate"":null,
+""dateLastMaint"":null,
+""options"":{
+""success"":""Blank"",
+""fail"":""Blank"",
+""return"":""Return""
+}
+}
+},
+""failBlock"":null,
+""returnBlock"":null,
+""createDate"":""2020-10-23T14:06:16.58Z"",
+""dateLastMaint"":""2020-10-23T14:07:54.65Z"",
+""workflowToken"":null,
+""type"":{
+""id"":20,
+""name"":""Set status"",
+""code"":""SetStatus"",
+""description"":null,
+""data"":""SetStatus"",
+""createDate"":null,
+""dateLastMaint"":null,
+""options"":{
+""success"":""Completion"",
+""fail"":""Blank"",
+""return"":""Return""
+}
+},
+""$promise"":{
+},
+""$resolved"":true,
+""temp_SetStatus_status"":{
+""id"":1,
+""name"":""Qualified"",
+""isDefault"":null
+},
+""temp_ComplexDecision"":{
+},
+""temp_CheckOutcomes"":[
+{
+""id"":null
+}
+]
+}"
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

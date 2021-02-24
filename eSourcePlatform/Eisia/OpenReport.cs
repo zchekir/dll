@@ -20,58 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.UsersPage
+namespace Eisia
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_ExternalUser_Email recording.
+    ///The OpenReport recording.
     /// </summary>
-    [TestModule("aafe40f3-98c2-45f7-bb18-df8a0359fad2", ModuleType.Recording, 1)]
-    public partial class Enter_ExternalUser_Email : ITestModule
+    [TestModule("98d911b2-a61b-4cae-9ce6-a8a7c2eb8c17", ModuleType.Recording, 1)]
+    public partial class OpenReport : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the EisiaRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static EisiaRepository repo = EisiaRepository.Instance;
 
-        static Enter_ExternalUser_Email instance = new Enter_ExternalUser_Email();
+        static OpenReport instance = new OpenReport();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_ExternalUser_Email()
+        public OpenReport()
         {
-            GmailAddress = "";
+            date = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_ExternalUser_Email Instance
+        public static OpenReport Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
-        /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
-        {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
+        string _date;
 
         /// <summary>
-        /// Gets or sets the value of variable GmailAddress.
+        /// Gets or sets the value of variable date.
         /// </summary>
-        [TestVariable("831c3ccb-9a5c-4c2a-ada9-75e6678cd703")]
-        public string GmailAddress
+        [TestVariable("0b092cbb-921b-4c84-98fc-ac7424f2b092")]
+        public string date
         {
-            get { return repo.GmailAddress; }
-            set { repo.GmailAddress = value; }
+            get { return _date; }
+            set { _date = value; }
         }
 
 #endregion
@@ -100,18 +92,16 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField' at Center.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.Click(1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(2));
-            //repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys(GmailAddress, 1);
-            //Delay.Milliseconds(10);
+            Mouse_Click_SelectFirstReport(repo.S3ManagementConsole.SelectFirstReportInfo);
+            Delay.Milliseconds(0);
             
-            Key_sequence_ExternalUserEmailField(repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo);
+            Mouse_Click_OpenAction(repo.S3ManagementConsole.OpenActionInfo);
+            Delay.Milliseconds(0);
+            
+            Mouse_Click_RenameTheObject(repo.S3ManagementConsole.RenameTheObjectInfo);
             Delay.Milliseconds(0);
             
         }

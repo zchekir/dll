@@ -20,58 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace CSP.UsersPage
+namespace Eisia
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Enter_ExternalUser_Email recording.
+    ///The OpenS3Bucket recording.
     /// </summary>
-    [TestModule("aafe40f3-98c2-45f7-bb18-df8a0359fad2", ModuleType.Recording, 1)]
-    public partial class Enter_ExternalUser_Email : ITestModule
+    [TestModule("8b3d81f1-d158-436b-9635-1a15ea79fbe8", ModuleType.Recording, 1)]
+    public partial class OpenS3Bucket : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::CSP.CSPRepository repository.
+        /// Holds an instance of the EisiaRepository repository.
         /// </summary>
-        public static global::CSP.CSPRepository repo = global::CSP.CSPRepository.Instance;
+        public static EisiaRepository repo = EisiaRepository.Instance;
 
-        static Enter_ExternalUser_Email instance = new Enter_ExternalUser_Email();
+        static OpenS3Bucket instance = new OpenS3Bucket();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Enter_ExternalUser_Email()
+        public OpenS3Bucket()
         {
-            GmailAddress = "";
+            DOM = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Enter_ExternalUser_Email Instance
+        public static OpenS3Bucket Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
-        /// </summary>
-        [TestVariable("f54fbb85-c5ac-4f6a-98d6-049472b68327")]
-        public string CSPDOM
-        {
-            get { return repo.CSPDOM; }
-            set { repo.CSPDOM = value; }
-        }
+        string _DOM;
 
         /// <summary>
-        /// Gets or sets the value of variable GmailAddress.
+        /// Gets or sets the value of variable DOM.
         /// </summary>
-        [TestVariable("831c3ccb-9a5c-4c2a-ada9-75e6678cd703")]
-        public string GmailAddress
+        [TestVariable("e8ae7b02-e985-49f0-ae06-59a99faa9d42")]
+        public string DOM
         {
-            get { return repo.GmailAddress; }
-            set { repo.GmailAddress = value; }
+            get { return _DOM; }
+            set { _DOM = value; }
         }
 
 #endregion
@@ -100,19 +92,8 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField' at Center.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(0));
-            repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.Click(1);
-            Delay.Milliseconds(90);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField'.", repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo, new RecordItemIndex(2));
-            //repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailField.PressKeys(GmailAddress, 1);
-            //Delay.Milliseconds(10);
-            
-            Key_sequence_ExternalUserEmailField(repo.CogstateSolutionPlatform.AddExternalUserPage.ExternalUserEmailFieldInfo);
-            Delay.Milliseconds(0);
             
         }
 

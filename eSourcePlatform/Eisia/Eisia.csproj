@@ -41,6 +41,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\_assets\engine\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -231,6 +234,30 @@
       <UserCode>true</UserCode>
       <id>f3bd9c43-760f-4b49-9ef4-578e56894e31</id>
     </Compile>
+    <Compile Include="OpenReport.cs">
+      <BoundTo>0207bd64-a9cd-4c37-9dad-86be64c3ac45</BoundTo>
+      <DependentUpon>OpenReport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dabe2f8d-5f62-48ed-89f3-aa32b1a984d2</id>
+    </Compile>
+    <Compile Include="OpenReport.UserCode.cs">
+      <BoundTo>0207bd64-a9cd-4c37-9dad-86be64c3ac45</BoundTo>
+      <DependentUpon>OpenReport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>932c688b-6499-4ea1-bbe4-cec72a46d382</id>
+    </Compile>
+    <Compile Include="OpenS3Bucket.cs">
+      <BoundTo>34d8aad7-27d0-408f-b338-ece26edd6229</BoundTo>
+      <DependentUpon>OpenS3Bucket.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c0f272ae-6381-4900-ab79-3f97ccb0b974</id>
+    </Compile>
+    <Compile Include="OpenS3Bucket.UserCode.cs">
+      <BoundTo>34d8aad7-27d0-408f-b338-ece26edd6229</BoundTo>
+      <DependentUpon>OpenS3Bucket.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fe45aee-74c3-4f02-8e0d-b5a23388c021</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>35806e95-8155-4005-8621-1a84692469a1</id>
     </Compile>
@@ -339,6 +366,16 @@
       <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
       <id>7e332aa8-15f8-4584-9392-f199e3f300c1</id>
       <recordtableid>52681893-5744-4419-918e-108a58b54e43</recordtableid>
+    </None>
+    <None Include="OpenReport.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>0207bd64-a9cd-4c37-9dad-86be64c3ac45</id>
+      <recordtableid>98d911b2-a61b-4cae-9ce6-a8a7c2eb8c17</recordtableid>
+    </None>
+    <None Include="OpenS3Bucket.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>34d8aad7-27d0-408f-b338-ece26edd6229</id>
+      <recordtableid>8b3d81f1-d158-436b-9635-1a15ea79fbe8</recordtableid>
     </None>
     <None Include="packages.config">
       <id>71e6487e-422e-4678-8e30-d51b1efc36ca</id>

@@ -53,15 +53,17 @@ namespace CSP.AmazonS3
         	Delay.Seconds(5);
         	          
         	         // Name sort-icon xpath
-                     WebElement xpath = "/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/?/?/tr/th[1]/?/?/tag[@tagname='awsui-icon']/span";
-                     xpath.Click();
+                    // WebElement xpath = "/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/?/?/tr/th[1]/?/?/tag[@tagname='awsui-icon']/span";
+                     //xpath.Click();
                      	//"/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[2]//tag[@tagname='table-sort-icon']/span";
                      
                                       
         	
         	               // getting the current date
         	               Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'atagInfo' and assigning its value to variable 'date'.", atagInfo);
-                            date = atagInfo.FindAdapter<ATag>().Element.GetAttributeValueText("InnerText");
+        	               date = atagInfo.FindAdapter<ATag>().Element.GetAttributeValue("value").ToString();
+                   
+                            
             
              
                                    //generating today date 
@@ -69,6 +71,7 @@ namespace CSP.AmazonS3
                                       
                                     //gettting th substring of the page date
                                     reportDate = date.Substring(8, 8);
+                                    Report.Log(ReportLevel.Info, "TODAY DATA "+ reportDate);
                                      
                                     if ( timer.Elapsed > TimeSpan.FromMinutes(3)){
 					
@@ -88,6 +91,11 @@ namespace CSP.AmazonS3
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2m In order the Data to get to the report .");
             Delay.Duration(120000, false);
         }
+
+        
+
+       
+       
         
         /*
         public void Mouse_Click_ClickLastModifier(RepoItemInfo spantagInfo)

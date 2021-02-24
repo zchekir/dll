@@ -2252,6 +2252,18 @@
     <Compile Include="DateTimeGenerator.cs">
       <id>72b0ce92-6c4c-4fdf-8df2-2fee9738a941</id>
     </Compile>
+    <Compile Include="EnterEmail.cs">
+      <BoundTo>8ab8c4be-4acd-49df-8511-61dd6954483d</BoundTo>
+      <DependentUpon>EnterEmail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c5ee65bb-410b-4789-83af-624fe302fb5f</id>
+    </Compile>
+    <Compile Include="EnterEmail.UserCode.cs">
+      <BoundTo>8ab8c4be-4acd-49df-8511-61dd6954483d</BoundTo>
+      <DependentUpon>EnterEmail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b1170f30-26b6-4d15-b768-3165c25e8f8a</id>
+    </Compile>
     <Compile Include="ExtractsPage\Click_DownloadExtract_Button.cs">
       <id>64e991f1-9c42-48e0-9752-c2492e573377</id>
       <BoundTo>304b93b0-7b72-4748-b038-66c5ca99150c</BoundTo>
@@ -2986,6 +2998,18 @@
       <BoundTo>54e6a2c6-c2be-4b0a-bafa-d67d72886585</BoundTo>
       <DependentUpon>Validate_ResetPassword_LoggedIn.rxrec</DependentUpon>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="OpenExtract.cs">
+      <BoundTo>dd02e5db-ad37-4eb4-b0ff-5378b117a27a</BoundTo>
+      <DependentUpon>OpenExtract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>24cc85e2-6e17-4a2e-91d2-3d8b276997c2</id>
+    </Compile>
+    <Compile Include="OpenExtract.UserCode.cs">
+      <BoundTo>dd02e5db-ad37-4eb4-b0ff-5378b117a27a</BoundTo>
+      <DependentUpon>OpenExtract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1e07d28-7d02-4760-863c-9ee1509e6ccc</id>
     </Compile>
     <Compile Include="ParticipantsPage\Change_Enroll_Status.cs">
       <id>c2d06657-c550-4e99-b482-e02ea65bd452</id>
@@ -5226,6 +5250,11 @@
       <id>15a7c2d4-a10b-4f87-b997-d3b21756d70c</id>
       <recordtableid>dd61a28c-fae8-45fc-92bc-dbd87f49dbbd</recordtableid>
     </None>
+    <None Include="EnterEmail.rxrec">
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+      <id>8ab8c4be-4acd-49df-8511-61dd6954483d</id>
+      <recordtableid>fe04d8f7-51ef-4c8a-9881-4a9eacecb314</recordtableid>
+    </None>
     <None Include="ExtractsPage\Click_DownloadExtract_Button.rxrec">
       <id>304b93b0-7b72-4748-b038-66c5ca99150c</id>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
@@ -5389,6 +5418,11 @@
     <None Include="Generate_WorkflowInstance.rxrec">
       <id>de77e08a-a1f1-46ac-8971-cdd7dbe62062</id>
       <recordtableid>9a2b9fff-5819-4334-8d9a-6b84b58d99f8</recordtableid>
+      <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
+    </None>
+    <None Include="OpenExtract.rxrec">
+      <id>dd02e5db-ad37-4eb4-b0ff-5378b117a27a</id>
+      <recordtableid>c2bbe49f-b70c-4d1d-9a48-2b3a494757dd</recordtableid>
       <BoundTo>bb77de91-48e5-4406-abc3-91f7ae6e5d00</BoundTo>
     </None>
     <None Include="v1workflow.rxrec">

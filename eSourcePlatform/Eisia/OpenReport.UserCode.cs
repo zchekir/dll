@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace CSP.UsersPage
+namespace Eisia
 {
-    public partial class Enter_ExternalUser_Email
+    public partial class OpenReport
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,11 +33,29 @@ namespace CSP.UsersPage
             // Your recording specific initialization code goes here.
         }
 
-        public void Key_sequence_ExternalUserEmailField(RepoItemInfo inputtagInfo)
+       
+
+        
+
+        public void Mouse_Click_SelectFirstReport(RepoItemInfo inputtagInfo)
         {
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'inputtagInfo'.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().PressKeys(GmailAddress);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().Click();
         }
+
+        public void Mouse_Click_OpenAction(RepoItemInfo spantagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", spantagInfo);
+            spantagInfo.FindAdapter<SpanTag>().Click();
+        }
+
+        public void Mouse_Click_RenameTheObject(RepoItemInfo litagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'litagInfo' at Center.", litagInfo);
+            litagInfo.FindAdapter<LiTag>().Click();
+        }
+
+       
 
     }
 }
