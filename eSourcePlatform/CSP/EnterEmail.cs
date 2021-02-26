@@ -105,8 +105,12 @@ namespace CSP
             //repo.CogstateSolutionPlatform1.EnterEmail.Click();
             //Delay.Milliseconds(200);
             
-            Key_sequence_EnterEmail(repo.CogstateSolutionPlatform1.EnterEmailInfo);
-            Delay.Milliseconds(0);
+            //Key_sequence_EnterEmail(repo.CogstateSolutionPlatform1.EnterEmailInfo);
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'CogstateSolutionPlatform1.EnterEmail'.", repo.CogstateSolutionPlatform1.EnterEmailInfo, new RecordItemIndex(2));
+            repo.CogstateSolutionPlatform1.EnterEmail.PressKeys(GmailAddress);
+            Delay.Milliseconds(100);
             
         }
 

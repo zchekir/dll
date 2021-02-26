@@ -191,7 +191,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="EnterEmail"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Key_sequence_EnterEmail"
 		namespace="CSP"
@@ -221,6 +221,29 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="6e18b30f-a9a7-468e-9ae4-6bd0d6e8a32e">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="GmailAddress">
+				</binding>
+			</bindings>
+			<info
+			id="1affac58-9c90-4086-8d2c-7eb7f03ea2b2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_contactEmail_[0-9]+']
+				</path>
+			</info>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"

@@ -23,64 +23,51 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 using Newtonsoft.Json.Linq;
-
 namespace Eisia
 {
-	 public class setFinishkWorkflowJSONRequest
+	public class BatteryWorkflowJSONRequest
 	{
-		public string id { get; set; }
+		public string JsonData { get; set; }
 	
+		public string workflowid { get; set; }
 		
+		public string id { get; set; }
 		
 	/// Object for creating a new workflow request
-		public setFinishkWorkflowJSONRequest()
+		public BatteryWorkflowJSONRequest()
 		{
 			
 		
 		}
 		
 	}
-	
-	
-    public partial class NewFinishStatus
+    public partial class AddBatteryToworkflow
     {
         
         private void Init()
         {
-           
+            
         }
 
-        public void FinishStatus(string Toke, string WorkflowID, string SetStatusID, string SestJSON, string CSPDOM)
+        public void AddBatterytoWoekflow(string StudyID, string Token, string WorkflowID, string BatteryID, string battryworkflowData, string WorkflowBlockID, string tabletConfigurationid, string desktopConfigurationid)
         {
-          
-        	Report.Log(ReportLevel.Info, "NEWSetStatusID  " + "  "+ SetStatusID );
-        	
-        	
-          //variable
-		    string url = "https://"+CSPDOM+"/api/workflows/"+WorkflowID+"/workflowBlocks/"+SetStatusID;
-		    	
-		     
-			
+        	Report.Log(ReportLevel.Info, "BatteryID" + BatteryID);
+				
+        	//variable
+		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID + "/workflowBlocks/"+ WorkflowBlockID;
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "PUT";
-			httpRequest.Headers.Add("Authorization", Toke);
-			
+			httpRequest.Headers.Add("Authorization", Token);
 			
 			
 			// sending the data in the body and replacing the studyid, studyname and version
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 		 	
-		    // creating block ID 
-		    int x = Int32.Parse(SetStatusID);
-		    int id_Test= x-1;
-		    string secondblockID =id_Test.ToString();
 		    
-		       Report.Log(ReportLevel.Info, "ZAKbLOCK secondblockID" + secondblockID);
-		    
-               var testData = SestJSON.Replace(@"<wfid>", WorkflowID).Replace(@"<SetStatusID>", SetStatusID).Replace(@"<secondblockID>", secondblockID);
+               var testData = battryworkflowData.Replace(@"<wkid>", WorkflowID).Replace(@"<studid>", StudyID).Replace(@"<batteryID>", BatteryID).Replace(@"<WorkflowBlockID>", WorkflowBlockID).Replace(@"<desktopConfigurationid>", desktopConfigurationid).Replace(@"<tabletConfigurationid>", tabletConfigurationid);
 				Report.Info("Data to send: " + testData);
 				
 				sw.Write(testData);
@@ -93,21 +80,18 @@ namespace Eisia
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			
-			setFinishkWorkflowJSONRequest responseObject = new setFinishkWorkflowJSONRequest();
+			BatteryWorkflowJSONRequest responseObject = new BatteryWorkflowJSONRequest();
 			
 			using (StreamReader sr = new StreamReader(httpResponse.GetResponseStream()))
 			{
 				string response = sr.ReadToEnd();
-				responseObject = new JavaScriptSerializer().Deserialize<setFinishkWorkflowJSONRequest>(response);
+				responseObject = new JavaScriptSerializer().Deserialize<BatteryWorkflowJSONRequest>(response);
 				
-				
-			
-			Report.Log(ReportLevel.Info, "id " + response );
+				Report.Log(ReportLevel.Info, "The battery of the workflow  is created as expected " + response );
 				
 			 }
-			
         	
-        	
+           
         }
 
     }

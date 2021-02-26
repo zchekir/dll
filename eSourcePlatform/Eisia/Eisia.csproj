@@ -129,6 +129,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBatteryToworkflow.cs">
+      <BoundTo>6bb4b099-cf89-410f-9cdf-2518411fbc1b</BoundTo>
+      <DependentUpon>AddBatteryToworkflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>67426aaf-f1c4-44d3-973b-3f7dc9ab8436</id>
+    </Compile>
+    <Compile Include="AddBatteryToworkflow.UserCode.cs">
+      <BoundTo>6bb4b099-cf89-410f-9cdf-2518411fbc1b</BoundTo>
+      <DependentUpon>AddBatteryToworkflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>71e95cf5-282b-4a4a-8b3b-af20b5e887b5</id>
+    </Compile>
     <Compile Include="Adding_Block.cs">
       <BoundTo>bcfb803e-4275-4dbd-aa79-d08ca95aa886</BoundTo>
       <DependentUpon>Adding_Block.rxrec</DependentUpon>
@@ -299,6 +311,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AddBatteryToworkflow.rxrec">
+      <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
+      <id>6bb4b099-cf89-410f-9cdf-2518411fbc1b</id>
+      <recordtableid>a2f72593-f076-4ff7-acd1-3a311fbcbb22</recordtableid>
+    </None>
     <None Include="Adding_Block.rxrec">
       <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
       <id>bcfb803e-4275-4dbd-aa79-d08ca95aa886</id>
