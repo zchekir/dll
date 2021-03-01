@@ -33,62 +33,6 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="abcc68ef-48a2-48de-a80e-ecc9eb482eee"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="560d7791-d9fd-4504-b175-a660851c0926"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@href~'^https://s3\.console\.aws\.am']/span[@innertext~'^RegressionTest_extract_20']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="ClickExportFolder"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="Get_value_OpenExportFolder"
-		namespace="CSP.AmazonS3"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6096b0a7-8065-40b6-a1fd-db5e5e03244b">
-				<argument
-				argname="atagInfo"
-				id="8f1460a2-91a4-45c8-a534-2188fce30870">
-					<argvaluetype>
-						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-					<info
-					id="560d7791-d9fd-4504-b175-a660851c0926"
-					sourcename="ItemRecorderEditor">
-						<path>
-							/dom[@domain='s3.console.aws.amazon.com']//a[@innertext~'^\ export_']
-						</path>
-					</info>
-				</argument>
-			</arguments>
-		</userrecorditem>
 		<explicitdelayitem
 		duration="500ms"
 		enabled="True"
@@ -98,6 +42,38 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="ClickExportFolder"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Get_value_OpenExportFolder1"
+		namespace="CSP.AmazonS3"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6984c1cf-bf82-483f-a161-53e30d3e8a84">
+				<argument
+				argname="spantagInfo"
+				id="14397b3f-8882-49f2-a58a-45894019da9f">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="560d7791-d9fd-4504-b175-a660851c0926"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//span[@innertext~'^RegressionTest_extract_20']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<explicitdelayitem
 		duration="6000ms"
 		enabled="True"

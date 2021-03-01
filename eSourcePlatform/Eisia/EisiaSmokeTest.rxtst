@@ -498,8 +498,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="07c67dc5-90a7-4643-92c0-34819c39c605"
-			maxrange="4"
-			minrange="4"
+			maxrange="6"
+			minrange="6"
 			name="ReprocessWorkflowFlag">
 			</testcase>
 			<smartfoldernode
@@ -1480,8 +1480,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="EisiaPRAuthentication"
 			id="1e771f1f-856e-4efb-bb18-8ce9148b54d2"
-			maxrange="0"
-			minrange="0"
+			maxrange="3"
+			minrange="3"
 			name="API_Regression">
 			</smartfoldernode>
 			<testmodule
@@ -1653,27 +1653,6 @@ rxversion="8.3">
 			id="2273b819-7efd-4365-8040-4c354c31eab5"
 			name="SwaggerAPI-UIValidation">
 			</smartfoldernode>
-			<testmodule
-			enabled="False"
-			id="23286b52-2862-4ec5-942c-e11a88a74038"
-			name="ValidatinTheDatSCV"
-			ref="fe5e7eea-cac2-48d8-a015-66c734eb7ce5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="TestIdentifier"
-					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
-					variableid="4ce106f9-0bc5-4cdb-a260-6744372a260f"
-					variablename="TestIdentifier">
-					</var>
-					<var
-					dataname="ExternalID"
-					datasourceid="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
-					variableid="2bff3006-389b-41ff-88b8-0d3db379d471"
-					variablename="externalId">
-					</var>
-				</databinding>
-			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="BatteryBlockConnector"
@@ -2048,6 +2027,7 @@ rxversion="8.3">
 			name="Complete_Regression_Assessment">
 			</smartfoldernode>
 			<modulegroup
+			enabled="False"
 			id="2ee87779-8480-4bd9-8c29-dec8f8359485"
 			name="Add_External_User"
 			ref="a5d2452f-7e69-4e4e-bdba-dbdd76719e02">
@@ -2610,13 +2590,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			enabled="False"
-			id="40b5384a-37b5-4b09-ba7a-7c3788503407"
-			name="CloseWASWebSite"
-			ref="e071ec2d-9465-4ba8-9332-e3bc97529ad7"
-			type="Recording">
-			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="JSONDATA"
@@ -2843,7 +2816,7 @@ rxversion="8.3">
 			TracingScreenshotQuality="40"
 			enabletracingscreenshots="True"
 			id="4da2865f-4e13-413b-9e54-b21d7d06ef1b"
-			name="Eisia"
+			name="EisiaSmokeTest"
 			placescreenshotsinfolder="True"
 			reportcompress="False"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
@@ -3320,13 +3293,6 @@ rxversion="8.3">
 			minrange="0"
 			name="Execute_StoredProcedure1">
 			</testcase>
-			<testmodule
-			enabled="False"
-			id="561e80bf-d7f9-4468-9878-c40a87ecb0bb"
-			name="OpenReport"
-			ref="98d911b2-a61b-4cae-9ce6-a8a7c2eb8c17"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="5710589a-769a-4364-b4bf-b060203f7b45"
 			name="Select_TestCategory"
@@ -4083,7 +4049,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="68a40eb6-304e-42e8-bace-e009bd2115b3"
 			name="Click_External_Users_Menu"
 			ref="87fa94c0-fd9a-48b5-b2d8-c6c921ec6b9a"
@@ -4157,10 +4122,6 @@ rxversion="8.3">
 			maxrange="0"
 			minrange="0"
 			name="Add_External_User">
-			</testcase>
-			<testcase
-			id="6a8718f6-774a-48e4-bd11-29377eaa4d3e"
-			name="ValidatingCSVFile">
 			</testcase>
 			<testmodule
 			id="6ab7d3db-a7e1-4f27-be80-889fe285e937"
@@ -4671,13 +4632,6 @@ rxversion="8.3">
 			minrange="3"
 			name="Workflowinstance">
 			</testcase>
-			<testmodule
-			enabled="False"
-			id="7d0c7891-72c8-4a5f-9736-187e7873825a"
-			name="CloseExcel"
-			ref="c6c15d16-e90c-4a1e-a97a-49645a04b59f"
-			type="Recording">
-			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datarangeset="190-191,189,193-194,201"
@@ -5866,7 +5820,7 @@ rxversion="8.3">
 			id="a0e07779-45d6-4777-9d87-cc3133a595ea"
 			maxrange="0"
 			minrange="0"
-			name="EisiaPlatform_Tests">
+			name="EisiaSmoke_Tests">
 			</smartfoldernode>
 			<testmodule
 			id="a2a6993c-6db3-4d42-bc0c-71ceed28399b"
@@ -6141,8 +6095,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="ad44de21-0e0a-4423-8624-4b85f68dd0b6"
-			maxrange="4"
-			minrange="4"
+			maxrange="6"
+			minrange="6"
 			name="CSPStoreProcedure">
 			</testcase>
 			<testcase
@@ -6416,7 +6370,6 @@ rxversion="8.3">
 			name="Configure_Battery_Template1">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="b5b53ed3-4749-41af-b8a9-cf2c76a33cc3"
 			name="Click_Add_User"
 			ref="a12d2e2e-e4c7-482c-afab-5f0d9f31714f"
@@ -6684,8 +6637,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="c26ad500-b102-4969-a6f6-277fd67ca8c4"
-			maxrange="4"
-			minrange="4"
+			maxrange="6"
+			minrange="6"
 			name="Validate_Outcomes">
 			</testcase>
 			<testcase
@@ -7114,7 +7067,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="cf31febd-b7ed-42c8-9e81-eab41cf53334"
 			name="EnterEmail"
 			ref="fe04d8f7-51ef-4c8a-9881-4a9eacecb314"
@@ -7675,7 +7627,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="e200d088-7d04-459e-86f3-cf38c8a87a5c"
 			name="Validate_External_User"
 			ref="3b990141-f18c-4921-ba7f-74eba3cd421d"
@@ -7696,7 +7647,6 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="e2a28785-6b32-4670-97a3-015a13934ad9"
 			name="Select_Active_Checkbox"
 			ref="2687be9a-b50c-4c36-951e-c2cfbcdb6393"
@@ -8086,7 +8036,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
-			name="Eisia"
+			name="EisiaSmokeTest"
 			reportlevel="Info;20">
 				<parameters>
 					<param
@@ -9006,10 +8956,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
-			id="fed2d239-10db-4409-8b16-f4f8890ceaf5"
-			name="CloseAWS_WebSite">
-			</testcase>
-			<testcase
 			id="ff0d5d1d-3a5e-4924-9bf6-584083e5eff6"
 			name="GetBatteryConfiguration_">
 			</testcase>
@@ -9039,13 +8985,13 @@ rxversion="8.3">
 		<childhierarchy>
 			<testsuite
 			id="4da2865f-4e13-413b-9e54-b21d7d06ef1b"
-			name="Eisia">
+			name="EisiaSmokeTest">
 				<testcase
 				id="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7"
-				name="Eisia">
+				name="EisiaSmokeTest">
 					<smartfoldernode
 					id="a0e07779-45d6-4777-9d87-cc3133a595ea"
-					name="EisiaPlatform_Tests">
+					name="EisiaSmoke_Tests">
 						<smartfoldernode
 						id="1a3b73a2-d5d5-48b9-a2e9-8db03b42a7c0"
 						name="Eisai_Tests">
@@ -10662,30 +10608,6 @@ rxversion="8.3">
 										id="44febd57-b31d-4d43-84f0-929f21b67a1f"
 										name="ClickExportFolder">
 										</testmodule>
-										<testmodule
-										id="561e80bf-d7f9-4468-9878-c40a87ecb0bb"
-										name="OpenReport">
-										</testmodule>
-									</testcase>
-									<testcase
-									id="fed2d239-10db-4409-8b16-f4f8890ceaf5"
-									name="CloseAWS_WebSite">
-										<testmodule
-										id="40b5384a-37b5-4b09-ba7a-7c3788503407"
-										name="CloseWASWebSite">
-										</testmodule>
-										<testmodule
-										id="7d0c7891-72c8-4a5f-9736-187e7873825a"
-										name="CloseExcel">
-										</testmodule>
-									</testcase>
-									<testcase
-									id="6a8718f6-774a-48e4-bd11-29377eaa4d3e"
-									name="ValidatingCSVFile">
-										<testmodule
-										id="23286b52-2862-4ec5-942c-e11a88a74038"
-										name="ValidatinTheDatSCV">
-										</testmodule>
 									</testcase>
 									<teardown
 									id="198188f5-381c-4428-9dd4-8347a07cbe86"
@@ -11376,82 +11298,22 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="039b499a-7c5e-4313-a441-2610aa6eb30b">
-			</testcontainer>
-			<testcontainer
-			id="0a16e82f-b767-44c1-b1f3-3cf663aae218">
-			</testcontainer>
-			<testcontainer
-			id="0cd04aa6-3be4-416a-b4b4-698a3ec19286">
-			</testcontainer>
-			<testcontainer
-			id="1103dcf2-2684-47cd-b714-b2f40da375f9">
-			</testcontainer>
-			<testcontainer
 			id="1a3b73a2-d5d5-48b9-a2e9-8db03b42a7c0">
-			</testcontainer>
-			<testcontainer
-			id="1e771f1f-856e-4efb-bb18-8ce9148b54d2">
-			</testcontainer>
-			<testcontainer
-			id="259fb24a-b02f-47b0-9f72-3c2d207caa98">
-			</testcontainer>
-			<testcontainer
-			id="4c825ae2-6b29-4562-b37c-8e181bc6b97f">
-			</testcontainer>
-			<testcontainer
-			id="5812fd97-cd32-4cf0-b75e-a39a27e6e480">
-			</testcontainer>
-			<testcontainer
-			id="5acdb86a-98eb-4ca1-9058-67dc562036e7">
-			</testcontainer>
-			<testcontainer
-			id="5be95674-2d7f-4d14-b0f4-82fd8e2b755b">
-			</testcontainer>
-			<testcontainer
-			id="5eb201e2-719b-4294-8e7b-c14aa54bcc02">
 			</testcontainer>
 			<testcontainer
 			id="5f5db245-26e2-4a7f-a22d-da96fd5b6ee5">
 			</testcontainer>
 			<testcontainer
-			id="65c08322-0873-48e5-89bb-46883ca6a421">
-			</testcontainer>
-			<testcontainer
-			id="66b080f9-d85a-4ad3-a28d-ec7f19a92a7c">
-			</testcontainer>
-			<testcontainer
-			id="8b51df8d-74b8-456b-812a-017244521413">
-			</testcontainer>
-			<testcontainer
 			id="a0e07779-45d6-4777-9d87-cc3133a595ea">
 			</testcontainer>
 			<testcontainer
-			id="ce802a65-3bc6-4522-8fe3-fb0c781e6f60">
+			id="b25f2f99-ab52-475a-8f68-ea116d8d4201">
 			</testcontainer>
 			<testcontainer
-			id="d8362922-c4fa-410b-85a8-249c49cbdf80">
-			</testcontainer>
-			<testcontainer
-			id="e57834b3-fbcd-437b-8a19-8061b267c80c">
-			</testcontainer>
-			<testcontainer
-			id="e7ac0fcb-e727-4b5a-98b2-f9e8b5f27823">
+			id="d3268d76-0c7a-4928-a503-4424afb15f1c">
 			</testcontainer>
 			<testcontainer
 			id="e8e8419a-e29d-43b8-a0e5-5d68b0e8f0e7">
-			</testcontainer>
-			<testcontainer
-			id="eac5fc68-136f-4db5-ae42-2c199987f6dc">
-			</testcontainer>
-			<testcontainer
-			id="eb84fcee-0b24-468c-95ef-2e046d5fde6a">
-			</testcontainer>
-			<testcontainer
-			id="f93ca45d-551d-4ac2-9990-10487ccdcfc8">
-			</testcontainer>
-			<testcontainer
-			id="ff6c21d9-2576-4871-a31b-ead569210844">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

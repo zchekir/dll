@@ -39,10 +39,20 @@ namespace CSP.AmazonS3
            
         }
 
-        public void Get_value_OpenExportFolder(RepoItemInfo atagInfo)
-        { 
-        	
-        	Stopwatch timer = new Stopwatch();
+        
+
+        public void DoDelay()
+        {
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2m In order the Data to get to the report .");
+            Delay.Duration(120000, false);
+        }
+
+        public void Get_value_OpenExportFolder1(RepoItemInfo spantagInfo)
+        {
+           
+            
+            
+            Stopwatch timer = new Stopwatch();
 			timer.Start();
         	
         	
@@ -52,26 +62,24 @@ namespace CSP.AmazonS3
         		
         	Delay.Seconds(5);
         	          
-        	         // Name sort-icon xpath
-                    // WebElement xpath = "/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/?/?/tr/th[1]/?/?/tag[@tagname='awsui-icon']/span";
-                     //xpath.Click();
-                     	//"/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[2]//tag[@tagname='table-sort-icon']/span";
+        	     
                      
                                       
         	
         	               // getting the current date
-        	               Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'atagInfo' and assigning its value to variable 'date'.", atagInfo);
-        	               date = atagInfo.FindAdapter<ATag>().Element.GetAttributeValue("value").ToString();
-                   
+        	                Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'spantagInfo' and assigning its value to variable 'date'.", spantagInfo);
+                            date = spantagInfo.FindAdapter<SpanTag>().Element.GetAttributeValueText("InnerText");
+            
                             
             
              
                                    //generating today date 
                                       toDayDate = System.DateTime.Now.ToString("yyyyMMdd");
                                       
+                                      Report.Log(ReportLevel.Info, "TODAY DATA "+ toDayDate);
                                     //gettting th substring of the page date
-                                    reportDate = date.Substring(8, 8);
-                                    Report.Log(ReportLevel.Info, "TODAY DATA "+ reportDate);
+                                    reportDate = date.Substring(23, 8);
+                                    Report.Log(ReportLevel.Info, "reportDATE "+ reportDate);
                                      
                                     if ( timer.Elapsed > TimeSpan.FromMinutes(3)){
 					
@@ -82,14 +90,10 @@ namespace CSP.AmazonS3
              
          }                               while (toDayDate != reportDate);
                                                  // validate if today date is = the the report date 
-        	                                     Validate.AreEqual(toDayDate, reportDate);
-        
-        }
-
-        public void DoDelay()
-        {
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2m In order the Data to get to the report .");
-            Delay.Duration(120000, false);
+        	                                      Validate.AreEqual(toDayDate, reportDate);
+            
+            
+            
         }
 
         
@@ -97,14 +101,7 @@ namespace CSP.AmazonS3
        
        
         
-        /*
-        public void Mouse_Click_ClickLastModifier(RepoItemInfo spantagInfo)
-        {
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", spantagInfo);
-            spantagInfo.FindAdapter<SpanTag>().Click();
-        }
-        
-       */
+       
     
 }
 }

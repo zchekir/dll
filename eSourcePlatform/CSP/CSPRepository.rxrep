@@ -3077,27 +3077,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="OpenExportFolder"
 			refimgid="bdff20ef-ca0f-4a5a-9d9e-3f7816a3eea0"
 			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@href~'^https://s3\.console\.aws\.am']/span[@innertext~'^RegressionTest_extract_20'][1]
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="70732b83-61d5-43e8-9ca8-8c665961916e"
-			name="ClickDownload"
-			refimgid="b0d256fc-3427-4a29-b3a8-2f87582c2629"
-			refpath="/dom[@domain='s3.console.aws.amazon.com']//tag[#'download']/button"
-			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//tag[#'download']/button
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="491bff12-4b12-4a73-9ac8-cd2f508de522"
-			name="ClickLastModifier"
-			refimgid="42c06ded-1c4b-4040-a09f-67954ba2d77f"
-			refpath="/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div/div/span/div/tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]/tag[@tagname='awsui-tooltip']/span/span/tag[@tagname='table-sort-icon']/span"
-			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//span[@innertext~'^RegressionTest_extract_20']
 			</item>
 			<item
 			addcaps="unknown,webelement,ultag"

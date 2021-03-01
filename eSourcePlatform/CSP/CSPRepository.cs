@@ -9172,8 +9172,6 @@ namespace CSP
         {
             RepoItemInfo _cgstqcbearfolderInfo;
             RepoItemInfo _openexportfolderInfo;
-            RepoItemInfo _clickdownloadInfo;
-            RepoItemInfo _clicklastmodifierInfo;
             RepoItemInfo _closewasappInfo;
             RepoItemInfo _openregressiontestextractInfo;
 
@@ -9184,9 +9182,7 @@ namespace CSP
                     base("S3ManagementConsole", "/dom[@domain='s3.console.aws.amazon.com']", parentFolder, 30000, null, false, "6384ac9d-4dc7-4097-a091-0e4d0e7a8bfd", "")
             {
                 _cgstqcbearfolderInfo = new RepoItemInfo(this, "CgstqcbearFolder", ".//tag[#'buckets-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@innertext='cgstqcasia']", 30000, null, "071c155b-ee46-4a5e-989e-200ef6afd9fa");
-                _openexportfolderInfo = new RepoItemInfo(this, "OpenExportFolder", ".//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@href~'^https://s3\\.console\\.aws\\.am']/span[@innertext~'^RegressionTest_extract_20'][1]", 30000, null, "560d7791-d9fd-4504-b175-a660851c0926");
-                _clickdownloadInfo = new RepoItemInfo(this, "ClickDownload", ".//tag[#'download']/button", 30000, null, "70732b83-61d5-43e8-9ca8-8c665961916e");
-                _clicklastmodifierInfo = new RepoItemInfo(this, "ClickLastModifier", ".//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span", 30000, null, "491bff12-4b12-4a73-9ac8-cd2f508de522");
+                _openexportfolderInfo = new RepoItemInfo(this, "OpenExportFolder", ".//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//span[@innertext~'^RegressionTest_extract_20']", 30000, null, "560d7791-d9fd-4504-b175-a660851c0926");
                 _closewasappInfo = new RepoItemInfo(this, "CloseWASAPP", ".//ul[#'nav-shortcutBar']", 30000, null, "d9a49db5-3d31-4461-8ef1-1e19746e184c");
                 _openregressiontestextractInfo = new RepoItemInfo(this, "OpenRegressionTestExtract", ".//tag[#'objects-table']//span[@innertext~'^RegressionTest_extract_']", 30000, null, "9e5fe29d-68da-49f4-92a2-a293a817382b");
             }
@@ -9260,54 +9256,6 @@ namespace CSP
                 get
                 {
                     return _openexportfolderInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClickDownload item.
-            /// </summary>
-            [RepositoryItem("70732b83-61d5-43e8-9ca8-8c665961916e")]
-            public virtual Ranorex.ButtonTag ClickDownload
-            {
-                get
-                {
-                    return _clickdownloadInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClickDownload item info.
-            /// </summary>
-            [RepositoryItemInfo("70732b83-61d5-43e8-9ca8-8c665961916e")]
-            public virtual RepoItemInfo ClickDownloadInfo
-            {
-                get
-                {
-                    return _clickdownloadInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClickLastModifier item.
-            /// </summary>
-            [RepositoryItem("491bff12-4b12-4a73-9ac8-cd2f508de522")]
-            public virtual Ranorex.SpanTag ClickLastModifier
-            {
-                get
-                {
-                    return _clicklastmodifierInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClickLastModifier item info.
-            /// </summary>
-            [RepositoryItemInfo("491bff12-4b12-4a73-9ac8-cd2f508de522")]
-            public virtual RepoItemInfo ClickLastModifierInfo
-            {
-                get
-                {
-                    return _clicklastmodifierInfo;
                 }
             }
 
