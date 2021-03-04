@@ -1480,8 +1480,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="EisiaPRAuthentication"
 			id="1e771f1f-856e-4efb-bb18-8ce9148b54d2"
-			maxrange="2"
-			minrange="2"
+			maxrange="3"
+			minrange="3"
 			name="API_Regression">
 			</smartfoldernode>
 			<testmodule
@@ -3291,7 +3291,7 @@ rxversion="8.3">
 			id="55ac596e-362c-4801-bd67-9bd0ceee8e68"
 			maxrange="0"
 			minrange="0"
-			name="Execute_StoredProcedure1">
+			name="Execute_StoredProcedure">
 			</testcase>
 			<testmodule
 			id="5710589a-769a-4364-b4bf-b060203f7b45"
@@ -3382,6 +3382,7 @@ rxversion="8.3">
 			name="InsertEmptyAssessment_">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="59744562-8f3a-45b5-a1d3-ffab92a64f61"
 			name="Validate_16Tier_Threshold"
 			ref="dd61a28c-fae8-45fc-92bc-dbd87f49dbbd"
@@ -6614,6 +6615,7 @@ rxversion="8.3">
 			name="Software_Version">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="c22b7c3c-af71-42c4-979b-2b300e840ad2"
 			name="Validate_QualificationStatus"
 			ref="e040d415-a3ad-48c9-9a10-ddbb8bae7361"
@@ -7026,7 +7028,7 @@ rxversion="8.3">
 			</testcase>
 			<testcase
 			id="ce95557b-61f6-46c7-a324-14623af85ab7"
-			name="Validate_QualificationStatus1">
+			name="Validate_QualificationStatus">
 				<parameters>
 					<param
 					name="RandNum"
@@ -7836,7 +7838,7 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="e65ebbfe-d4ee-493e-a517-c1c4afff6c17"
-			name="Validate_Regression_Outcomes1">
+			name="Validate_Regression_Outcomes">
 			</testcase>
 			<testmodule
 			id="e677135f-b4ae-42e4-a569-642f11a0c7c9"
@@ -8157,11 +8159,11 @@ rxversion="8.3">
 					</param>
 					<param
 					name="WASImPASWORD"
-					value="cgstqcuser">
+					value="">
 					</param>
 					<param
 					name="WASPW"
-					value="R#a#exdn28">
+					value="">
 					</param>
 					<param
 					name="WASURL"
@@ -9862,7 +9864,7 @@ rxversion="8.3">
 										</testcase>
 										<testcase
 										id="55ac596e-362c-4801-bd67-9bd0ceee8e68"
-										name="Execute_StoredProcedure1">
+										name="Execute_StoredProcedure">
 											<testmodule
 											id="8a193986-1d02-4bd9-81be-ed8512fabb4f"
 											name="CSPStoreProcedure">
@@ -9870,7 +9872,7 @@ rxversion="8.3">
 										</testcase>
 										<testcase
 										id="e65ebbfe-d4ee-493e-a517-c1c4afff6c17"
-										name="Validate_Regression_Outcomes1">
+										name="Validate_Regression_Outcomes">
 											<testmodule
 											id="a8e4f5fa-0ed9-4a0c-bf50-1e4d742196d4"
 											name="Validate_Outcomes">
@@ -9918,7 +9920,7 @@ rxversion="8.3">
 										</testcase>
 										<testcase
 										id="ce95557b-61f6-46c7-a324-14623af85ab7"
-										name="Validate_QualificationStatus1">
+										name="Validate_QualificationStatus">
 											<testmodule
 											id="8c332454-067a-474a-8c5c-b0aa444adc24"
 											name="Get_QualificationStatus">
@@ -10943,13 +10945,7 @@ rxversion="8.3">
 					RCCPassword
 				</columnname>
 				<columnname>
-					WASimuser name
-				</columnname>
-				<columnname>
 					WASpassword
-				</columnname>
-				<columnname>
-					WASusername
 				</columnname>
 			</maskedcolumns>
 			<file>
