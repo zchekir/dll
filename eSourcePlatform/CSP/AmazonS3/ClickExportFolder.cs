@@ -92,30 +92,16 @@ namespace CSP.AmazonS3
 
             Init();
 
-            //Mouse_Click_ClickLastModifier(repo.S3ManagementConsole.ClickLastModifierInfo);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
             
-            //DoDelay();
-            //Delay.Milliseconds(0);
-            
-            Get_value_OpenExportFolder(repo.S3ManagementConsole.OpenExportFolderInfo);
+            Get_value_OpenExportFolder1(repo.S3ManagementConsole.OpenExportFolderInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'S3ManagementConsole.OpenExportFolder' at Center.", repo.S3ManagementConsole.OpenExportFolderInfo, new RecordItemIndex(3));
-            repo.S3ManagementConsole.OpenExportFolder.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'S3ManagementConsole.ClickDownload' at Center.", repo.S3ManagementConsole.ClickDownloadInfo, new RecordItemIndex(5));
-            repo.S3ManagementConsole.ClickDownload.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 6s.", new RecordItemIndex(2));
             Delay.Duration(6000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(7));
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(3));
             
         }
 

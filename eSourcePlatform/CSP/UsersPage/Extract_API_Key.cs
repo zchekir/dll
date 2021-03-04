@@ -70,8 +70,8 @@ namespace CSP.UsersPage
         [TestVariable("048f5dd8-f628-41c8-8364-854f8f27d6d1")]
         public string Key
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return repo.key; }
+            set { repo.key = value; }
         }
 
 #endregion

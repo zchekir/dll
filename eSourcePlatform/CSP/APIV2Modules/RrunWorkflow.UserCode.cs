@@ -79,7 +79,7 @@ namespace CSP.APIV2Modules
         		
         		var AssessmentURL = responseObject.url;
         		TestIdentifier = responseObject.testIdentifier;
-        		
+        		Report.Log(ReportLevel.Info, "R-run workflowDOB: " + InvalidDOB );
         		Report.Log(ReportLevel.Info, "Assessment Attempt Created, URL is: " + AssessmentURL);
         		Report.Log(ReportLevel.Info, "Assessment Attempt Created, TestIdentifier is: " + TestIdentifier);
         	}

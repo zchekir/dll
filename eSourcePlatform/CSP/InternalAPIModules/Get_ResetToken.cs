@@ -46,7 +46,7 @@ namespace CSP.InternalAPIModules
             Authentication = "";
             dbUsername = "";
             dbPassword = "";
-            Key = "";
+            key = "";
         }
 
         /// <summary>
@@ -120,13 +120,13 @@ namespace CSP.InternalAPIModules
         }
 
         /// <summary>
-        /// Gets or sets the value of variable Key.
+        /// Gets or sets the value of variable key.
         /// </summary>
         [TestVariable("f149efa0-570c-4a8d-a3eb-ac86747536d5")]
-        public string Key
+        public string key
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return repo.key; }
+            set { repo.key = value; }
         }
 
 #endregion
@@ -155,7 +155,7 @@ namespace CSP.InternalAPIModules
 
             Init();
 
-            engine.Helpers.SQLUtility.GetRestToken(DBserver, Database, dbUsername, dbPassword, Authentication, Key);
+            engine.Helpers.SQLUtility.GetRestToken(DBserver, Database, dbUsername, dbPassword, Authentication, key);
             Delay.Milliseconds(0);
             
         }

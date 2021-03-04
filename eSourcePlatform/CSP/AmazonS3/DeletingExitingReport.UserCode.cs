@@ -33,7 +33,7 @@ namespace CSP.AmazonS3
             // Your recording specific initialization code goes here.
         }
 
-        public void Deeting_ExitingReport()
+        public void Deeting_ExitingReport(string ProtocolNumber, string Secret, string AuthToken, string CSPDOM, string Key)
         {
            // new code
            

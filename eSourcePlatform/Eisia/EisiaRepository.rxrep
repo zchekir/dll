@@ -1,0 +1,78 @@
+﻿<repository
+id="f34d47ec-da17-403a-a924-0231f9262df3"
+name="EisiaRepository"
+rxversion="8.3">
+	<codegen
+	classname="EisiaRepository"
+	namespace="Eisia">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="e5685f81-f17a-4d8f-b73b-bdad3f8c32d5"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ad63ee56-998f-485a-9971-9afc1dc8d028"
+		isrooted="True"
+		name="S3ManagementConsole"
+		refpath="/dom[@domain='s3.console.aws.amazon.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="15732eff-d53e-4ed0-b932-dd5943354b39"
+			name="SelectFirstReport"
+			refimgid="04f6a3ac-c6ae-4476-8155-55327fd5ce52"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//input[#'awsui-checkbox-13']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="ca8234c9-c5dd-4bed-b96e-5f0c6af9daa7"
+			name="OpenAction"
+			refimgid="32c9d848-432a-4284-8ed3-d11379a4dcbc"
+			refpath="/dom[1]//tag[#'action-dropdown']/div/tag[@tagname='awsui-button']/button/tag[@tagname='awsui-icon']/span"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'action-dropdown']/div//tag[@tagname='awsui-icon']/span
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="d1362fa0-478e-43ca-b1b0-bfb467980981"
+			name="RenameTheObject"
+			refimgid="f7c0087e-1c9a-48fc-9014-baed0bd1e049"
+			refpath="/dom[1]//tag[#'action-dropdown']/div/div/ul/li[3]/ul/li[@innertext='Rename object']"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'action-dropdown']//ul/li[3]/ul/li[@innertext='Rename object']
+			</item>
+			<basepath>
+				/dom[@domain='s3.console.aws.amazon.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

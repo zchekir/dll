@@ -33,59 +33,20 @@ rxversion="8.3">
 		</var>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ClickExportFolder"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="Mouse_Click_ClickLastModifier"
-		namespace="CSP"
-		optional="False"
-		varname="">
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="f81fb545-5e9b-43e2-9b53-7a57f8149ec8">
-				<argument
-				argname="spantagInfo"
-				id="6541fd11-46bd-4558-a1ca-692cc04e036f">
-					<argvaluetype>
-						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-					<info
-					id="491bff12-4b12-4a73-9ac8-cd2f508de522"
-					sourcename="ItemRecorderEditor">
-						<path>
-							/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span
-						</path>
-					</info>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="ClickExportFolder"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="DoDelay"
-		namespace="CSP.AmazonS3"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="58741f18-5889-4dea-8860-bc191409b4d7">
-			</arguments>
-		</userrecorditem>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="ClickExportFolder"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Get_value_OpenExportFolder"
+		methodname="Get_value_OpenExportFolder1"
 		namespace="CSP.AmazonS3"
 		optional="False"
 		varname="">
@@ -94,10 +55,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="6096b0a7-8065-40b6-a1fd-db5e5e03244b">
+			id="6984c1cf-bf82-483f-a161-53e30d3e8a84">
 				<argument
-				argname="atagInfo"
-				id="8f1460a2-91a4-45c8-a534-2188fce30870">
+				argname="spantagInfo"
+				id="14397b3f-8882-49f2-a58a-45894019da9f">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
 					</argvaluetype>
@@ -107,122 +68,12 @@ rxversion="8.3">
 					id="560d7791-d9fd-4504-b175-a660851c0926"
 					sourcename="ItemRecorderEditor">
 						<path>
-							/dom[@domain='s3.console.aws.amazon.com']//a[@innertext~'^\ export_']
+							/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//span[@innertext~'^RegressionTest_extract_20']
 						</path>
 					</info>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="737f9e92-e5ea-474f-bde9-311a2c1bc9bb"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="560d7791-d9fd-4504-b175-a660851c0926"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='s3.console.aws.amazon.com']//a[@innertext~'^\ export_']
-				</path>
-			</info>
-		</mouseitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="960fa52a-8ed4-4a3c-bc9e-4ccae5666846"
-		sx="192"
-		sy="412"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="70732b83-61d5-43e8-9ca8-8c665961916e"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, buttontag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="buttontag"
-				rect="150,396,84,33"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						awsui-button awsui-button-size-normal awsui-button-variant-normal awsui-hover-child-icons
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						button
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="disabled"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						submit
-					</attribute>
-				</element>
-				<path>
-					/dom[@domain='s3.console.aws.amazon.com']//tag[#'download']/button
-				</path>
-			</info>
-		</mouseitem>
 		<explicitdelayitem
 		duration="6000ms"
 		enabled="True"

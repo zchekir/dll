@@ -56,10 +56,8 @@ namespace CSP.InternalAPIModules
 	}
 	public partial class InternalUserLogin
 	{
-		/// <summary>
-		/// This method gets called right after the recording has been started.
-		/// It can be used to execute recording specific initialization code.
-		/// </summary>
+		
+		
 		private void Init()
 		{
 			// Your recording specific initialization code goes here.
@@ -67,6 +65,8 @@ namespace CSP.InternalAPIModules
 
 		public void Internal_UserLogin()
 		{
+	      username = "automationscript@cogstate.com";
+		  password = "3A253852-3BA3-42C3-9B25-EEA7A42D1422";
 			//Setup API call
 			string LoginAPI = "/api/Account/Login";
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://"+ CSPDOM + LoginAPI);
@@ -75,6 +75,7 @@ namespace CSP.InternalAPIModules
 			
 			//Create JSON ibject containing key and secret which is sent in the body
 			InternalLogin jsonObject = new InternalLogin(username, password,portal);
+			
 			
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{

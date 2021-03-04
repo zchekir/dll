@@ -33,5 +33,11 @@ namespace CSP.UsersPage
             // Your recording specific initialization code goes here.
         }
 
+        public void Key_sequence_ExternalUserEmailField(RepoItemInfo inputtagInfo)
+        {
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GmailAddress' with focus on 'inputtagInfo'.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().PressKeys(GmailAddress);
+        }
+
     }
 }

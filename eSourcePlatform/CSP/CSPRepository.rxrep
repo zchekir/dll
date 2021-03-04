@@ -2189,7 +2189,7 @@ ISdyg8GLTWmf/gMn0qv81Xs9ZgAAAABJRU5ErkJggg==
 				name="ExternalUserRow"
 				refimgid="715068b9-8d27-4939-829e-0957581db89d"
 				searchtimeout="30000ms">
-					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//table/tbody/tr/td/a[@innertext~$Key]
+					/dom[@domain=$CSPDOM]//div[#'ng-app']/tag/div/div//table/tbody/tr/td/a[@innertext~$key]
 				</item>
 				<item
 				addcaps="unknown,webelement,selecttag"
@@ -2535,7 +2535,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="SecretLink"
 			refimgid="d0d2994c-80aa-40b1-a732-52333b114c16"
 			searchtimeout="30000ms">
-				/dom[@domain='mail.google.com']//div/a[@innertext~$Key]/../a[@innertext~$CSPDOM]
+				/dom[@domain='mail.google.com']//div/a[@innertext~$key]/../a[@innertext~$CSPDOM]
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -3022,7 +3022,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		id="5a9cebd4-ba12-41c1-8b7f-c6bb2a0f7121"
 		isrooted="True"
 		name="AWSManagementConsole"
-		refpath="/dom[@domain='ap-northeast-1.console.aws.amazon.com']"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -3069,36 +3068,16 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="CgstqcbearFolder"
 			refimgid="fe5287c3-3b89-4964-b3e2-f53c56a1bee2"
 			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[2]/a[@innertext='cgstqcbear']
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'buckets-table']/div/div[3]/table/tbody/tr[1]/td[2]//a[@innertext='cgstqcasia']
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
-			capname="atag"
+			capname="spantag"
 			id="560d7791-d9fd-4504-b175-a660851c0926"
 			name="OpenExportFolder"
-			refimgid="9618497a-e8d1-481a-9b0a-66088b603d08"
+			refimgid="bdff20ef-ca0f-4a5a-9d9e-3f7816a3eea0"
 			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//a[@innertext~'^\ export_']
-			</item>
-			<item
-			addcaps="unknown,webelement,buttontag"
-			capname="buttontag"
-			id="70732b83-61d5-43e8-9ca8-8c665961916e"
-			name="ClickDownload"
-			refimgid="b0d256fc-3427-4a29-b3a8-2f87582c2629"
-			refpath="/dom[@domain='s3.console.aws.amazon.com']//tag[#'download']/button"
-			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//tag[#'download']/button
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="491bff12-4b12-4a73-9ac8-cd2f508de522"
-			name="ClickLastModifier"
-			refimgid="42c06ded-1c4b-4040-a09f-67954ba2d77f"
-			refpath="/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div/div/span/div/tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]/tag[@tagname='awsui-tooltip']/span/span/tag[@tagname='table-sort-icon']/span"
-			searchtimeout="30000ms">
-				/dom[@domain='s3.console.aws.amazon.com']//div[#'sidebarNavDiv']/div[2]/div[1]/tag[@tagname='awsui-tabs']/div/div//tag[@tagname='ng-include']/div[1]/div[2]/table/thead/tr/th[3]//tag[@tagname='table-sort-icon']/span
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']/div/div[3]/table/tbody/tr[1]/td[2]//span[@innertext~'^RegressionTest_extract_20']
 			</item>
 			<item
 			addcaps="unknown,webelement,ultag"
@@ -3110,8 +3089,53 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='s3.console.aws.amazon.com']//ul[#'nav-shortcutBar']
 			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="9e5fe29d-68da-49f4-92a2-a293a817382b"
+			name="OpenRegressionTestExtract"
+			refimgid="cc6e7dd4-db47-4ea4-8164-10594c783c66"
+			searchtimeout="30000ms">
+				/dom[@domain='s3.console.aws.amazon.com']//tag[#'objects-table']//span[@innertext~'^RegressionTest_extract_']
+			</item>
 			<basepath>
 				/dom[@domain='s3.console.aws.amazon.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="5f2f77ce-8f28-44a1-a245-0d35d10a140b"
+		isrooted="True"
+		name="CogstateSolutionPlatform1"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="1affac58-9c90-4086-8d2c-7eb7f03ea2b2"
+			name="EnterEmail"
+			refimgid="c0c29594-bd53-4b39-ac51-7031e8309e20"
+			searchtimeout="30000ms">
+				/dom[@domain=$CSPDOM]//input[@id~'formly_[0-9]+_input_contactEmail_[0-9]+']
+			</item>
+			<basepath>
+				/dom[@domain=$CSPDOM]
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
@@ -3161,7 +3185,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</var>
 		<var
 		id="2ee20f6c-a7a5-4f7e-beca-0402a96e2fb7"
-		name="Key">
+		name="key">
 			5767c4d2-be6c-4bdc-ac60-5ba8474f37af
 		</var>
 		<var
@@ -3200,7 +3224,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 		name="CSPDOM">
-			cgst-qc-jackson.azurewebsites.net
+			cgst-staging-asia.azurewebsites.net
 		</var>
 		<var
 		id="cca33cb1-e6e4-4dea-927e-63ce1b157653"

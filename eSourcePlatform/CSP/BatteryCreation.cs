@@ -47,6 +47,7 @@ namespace CSP
             CSPDOM = "";
             Studname = "";
             Batteryversion = "";
+            batteryID = "";
         }
 
         /// <summary>
@@ -117,6 +118,18 @@ namespace CSP
         {
             get { return _Batteryversion; }
             set { _Batteryversion = value; }
+        }
+
+        string _batteryID;
+
+        /// <summary>
+        /// Gets or sets the value of variable batteryID.
+        /// </summary>
+        [TestVariable("cb21ed8d-50bd-4f06-b6d6-986032c042b9")]
+        public string batteryID
+        {
+            get { return _batteryID; }
+            set { _batteryID = value; }
         }
 
         /// <summary>

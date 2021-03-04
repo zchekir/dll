@@ -60,8 +60,8 @@ namespace CSP.General
         [TestVariable("e93ffd8c-d2ca-4815-8691-5adf41aa0dbd")]
         public string Key
         {
-            get { return repo.Key; }
-            set { repo.Key = value; }
+            get { return repo.key; }
+            set { repo.key = value; }
         }
 
         /// <summary>

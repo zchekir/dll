@@ -41,7 +41,7 @@ namespace CSP.InternalAPIModules
         /// </summary>
         public InternalUserLogin()
         {
-            CSPDOM = "";
+            CSPDOM = "cgst-staging-asia.azurewebsites.net";
             username = "";
             password = "";
             portal = "";

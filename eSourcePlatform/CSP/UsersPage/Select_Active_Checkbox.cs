@@ -89,7 +89,14 @@ namespace CSP.UsersPage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckbox' at Center.", repo.CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckboxInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
+            Delay.Duration(500, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckbox' at Center.", repo.CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckboxInfo, new RecordItemIndex(1));
+            repo.CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckbox.MoveTo();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckbox' at Center.", repo.CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckboxInfo, new RecordItemIndex(2));
             repo.CogstateSolutionPlatform.AddExternalUserPage.ActiveCheckbox.Click(1);
             Delay.Milliseconds(90);
             

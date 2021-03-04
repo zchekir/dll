@@ -29,6 +29,8 @@ namespace CSP
 	public class BaterytJSONRequest
 	{
 		public string JsonData { get; set; }
+		public string id { get; set; }
+		
 	
 	/// Object for creating a new workflow request
 		public BaterytJSONRequest()
@@ -84,7 +86,8 @@ namespace CSP
 			{
 				string response = sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<BaterytJSONRequest>(response);
-				Report.Log(ReportLevel.Info, "The Battery is created as expected " + response );
+				batteryID =responseObject.id;
+				Report.Log(ReportLevel.Info, "The Battery is created as expected- BatteryID is  " + batteryID );
 				
 			}
             

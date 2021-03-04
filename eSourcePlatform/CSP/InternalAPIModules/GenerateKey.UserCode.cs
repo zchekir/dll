@@ -74,7 +74,7 @@ namespace CSP.InternalAPIModules
 			// Your recording specific initialization code goes here.
 		}
 
-		public void Generate_Key(string id, string contactEmail, string active, string I_AuthToken, string key, string DOM)
+		public void Generate_Key(string id, string contactEmail, string active, string I_AuthToken, string key, string DOM, string ExternalUserID, string Ex_key)
 		{
 			
 			
@@ -113,9 +113,13 @@ namespace CSP.InternalAPIModules
 				responseObject = new JavaScriptSerializer().Deserialize<ExternalKey>(response);
 				
 				
-				var Ex_key = responseObject.key;
+				Newkey = responseObject.key;
+				NewExternalUserID= responseObject.id;
 				
-				Report.Log(ReportLevel.Info, "ExternalKey is : " + Ex_key );
+				
+				Report.Log(ReportLevel.Info, "ExternalKey is : " + Newkey );
+				Report.Log(ReportLevel.Info, "ExternalUserID : " + ExternalUserID );
+				
 				
 			}
 		}

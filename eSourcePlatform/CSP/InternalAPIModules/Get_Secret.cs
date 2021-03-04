@@ -42,6 +42,8 @@ namespace CSP.InternalAPIModules
         public Get_Secret()
         {
             CSPDOM = "";
+            Secret = "";
+            RestToken = "";
         }
 
         /// <summary>
@@ -53,6 +55,30 @@ namespace CSP.InternalAPIModules
         }
 
 #region Variables
+
+        string _Secret;
+
+        /// <summary>
+        /// Gets or sets the value of variable Secret.
+        /// </summary>
+        [TestVariable("f16a02ad-999f-405e-8606-071f87550126")]
+        public string Secret
+        {
+            get { return _Secret; }
+            set { _Secret = value; }
+        }
+
+        string _RestToken;
+
+        /// <summary>
+        /// Gets or sets the value of variable RestToken.
+        /// </summary>
+        [TestVariable("e4f47e30-759b-4800-b64b-a4061f417ff5")]
+        public string RestToken
+        {
+            get { return _RestToken; }
+            set { _RestToken = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable CSPDOM.
