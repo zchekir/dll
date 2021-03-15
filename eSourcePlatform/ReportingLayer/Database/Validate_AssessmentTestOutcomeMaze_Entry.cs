@@ -43,8 +43,8 @@ namespace ReportingLayer.Database
         {
             Database = "";
             DBServer = "";
-            CSPUsername = "";
-            CSPPassword = "";
+            CPAUsername = "";
+            CPAPassword = "";
             Authentication = "";
             StudyName = "";
             RandNum = "";
@@ -85,16 +85,16 @@ namespace ReportingLayer.Database
             set { _DBServer = value; }
         }
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("dda126a4-6c33-464e-a218-a18d10083152")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
         string _Authentication;
@@ -146,13 +146,13 @@ namespace ReportingLayer.Database
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("0bb5bb57-00f3-4291-bcb0-a0b6bd2f573b")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.CPAUsername; }
+            set { repo.CPAUsername = value; }
         }
 
 #endregion
@@ -181,7 +181,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAssessmentTestOutcomeMaze(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetAssessmentTestOutcomeMaze(Database, DBServer, CPAUsername, CPAPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();

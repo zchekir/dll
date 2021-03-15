@@ -54,7 +54,7 @@ namespace Eisia
         	Report.Log(ReportLevel.Info, "BatteryID" + BatteryID);
 				
         	//variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID + "/workflowBlocks/"+ WorkflowBlockID;
+		    string url = "https://" + CPADOM + "/api/workflows/" + WorkflowID + "/workflowBlocks/"+ WorkflowBlockID;
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";

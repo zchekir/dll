@@ -901,10 +901,10 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="CSPPassword"
+					dataname="CPAPassword"
 					datasourceid="fad390c0-7742-4141-9fad-cd83996e1b2d"
 					variableid="e3078aeb-57b5-4e52-b373-20e5fca1b1ba"
-					variablename="CSPPassword">
+					variablename="CPAPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1166,10 +1166,10 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="CSPUsername"
+					dataname="CPAUsername"
 					datasourceid="fad390c0-7742-4141-9fad-cd83996e1b2d"
 					variableid="d0e07d16-6eb8-40a3-aa90-8b3a394a6391"
-					variablename="CSPUsername">
+					variablename="CPAUsername">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2125,10 +2125,10 @@ rxversion="8.3">
 					RCCPassword
 				</column>
 				<column>
-					CSPUsername
+					CPAUsername
 				</column>
 				<column>
-					CSPPassword
+					CPAPassword
 				</column>
 				<column>
 					dbUsername
@@ -2160,7 +2160,7 @@ rxversion="8.3">
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
-					CSPPassword
+					CPAPassword
 				</columnname>
 				<columnname>
 					dbPassword
@@ -2186,7 +2186,7 @@ rxversion="8.3">
 		id="36c84863-c4e2-4980-8687-22e322546024"
 		includefile="Unchecked"
 		lastknownrowcount="113"
-		name="CSPConnector"
+		name="CPAConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
@@ -2281,7 +2281,7 @@ rxversion="8.3">
 			<maskedcolumns>
 			</maskedcolumns>
 			<file>
-				..\eSourcePlatform\CSPConnector.csv
+				..\eSourcePlatform\CPAConnector.csv
 			</file>
 		</DataSource>
 		<DataSource
@@ -2395,10 +2395,10 @@ rxversion="8.3">
 					RCCURL
 				</column>
 				<column>
-					CSPDOM
+					CPADOM
 				</column>
 				<column>
-					CSPURL
+					CPAURL
 				</column>
 				<column>
 					DCTDOM
@@ -2449,7 +2449,7 @@ rxversion="8.3">
 					ExpectedRCCVersion
 				</column>
 				<column>
-					CSPDBVersion
+					CPADBVersion
 				</column>
 				<column>
 					DCT_DBVersion
@@ -2656,7 +2656,7 @@ rxversion="8.3">
 	</testconfigurations>
 	<references>
 		<reference>
-			CSP.exe
+			CPA.exe
 		</reference>
 		<reference>
 			engine.dll

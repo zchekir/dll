@@ -51,7 +51,7 @@ namespace Eisia
             DeskTopID = "";
             TabConfigID = "";
             studyName = "";
-            CSPDOM = "";
+            CPADOM = "";
         }
 
         /// <summary>
@@ -184,16 +184,16 @@ namespace Eisia
             set { _studyName = value; }
         }
 
-        string _CSPDOM;
+        string _CPADOM;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("007a8ca0-a156-47f0-b00c-1d4a09a5f547")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
 #endregion

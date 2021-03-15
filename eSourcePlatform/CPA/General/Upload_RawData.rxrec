@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="366bcb1e-0676-491a-b683-f0b0918c5c82"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Upload_RawData
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Upload_RawData"
+	namespace="CPA.General">
+	</codegen>
+	<variables>
+		<var
+		id="4b1cbab1-5c0f-4d05-9229-9a0d99841ed4"
+		name="Filename">
+		</var>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c68e80dc-d0e4-425b-a5ba-6e11fae54c13"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5cafea12-8dac-456b-af85-df1546dac229"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CPADOM]//button[#'skip']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<userrecorditem
+		classname="Upload_RawData"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="AddRawData"
+		namespace="CPA.General"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="11f9c749-b137-46c4-a425-c11ff08a9fb6">
+				<argument
+				argname="fileName"
+				id="56483c15-5f51-4c28-9f21-92a727a1f9a8"
+				variable="Filename">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						40yo_Tier3.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="46ff3b51-83e4-4683-9210-a9031050f564"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5cafea12-8dac-456b-af85-df1546dac229"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CPADOM]//button[#'skip']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="bcdfaf0e-4852-4bf6-8bb7-c956427d40ce"
+		sx="2824"
+		sy="-966"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5cafea12-8dac-456b-af85-df1546dac229"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="buttontag"
+				rect="2797,-989,60,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						skip
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Skip
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						submit
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//button[#'skip']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="759bb3db-71c2-47d8-972e-5f888d9fd2de">
+				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
+ipaKBp2dzBtpLyGLZHbzYB5wvf8AKpftOof8+8//AHx/9arx/wCPi3/6+m/9FtWhTs1pc1dWEndw
+/FnPyTX0kbRvbTlWBBGzqD+FXNKuX3CC8jZJlBETyLguvpnuRxmtSori3iuo/LnTcuQRzgg+oI6U
+a9WRKUGtI2+bC6uI7W3eaVgFUfmfSsOCXUIoI4/s0/yKF+56D6VsJp9qkok8su6/dMjs+PpknBqz
+Td+gouK+JXMH7TqH/PvP/wB8f/WqOee6ZAJ7aXbnjK45/KuiqpqX/Huv+/8A0NCUm9/wRTnT/k/F
+k1FFFSZhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAFQ/8AHxb/APX03/otq0Khtf8Alr/10P8AIVNV
+vclBRRRSGFFFFABVTUv+Pdf9/wDoat1U1L/j3X/f/oaqO4nsTUUUVmUFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAJa/8ALX/rof5Cpqhtf+Wv/XQ/yFTVb3JQUUUUhhRRRQAVU1L/AI91/wB/+hq3VTUv
++Pdf9/8AoaqO4nsTUUUVmUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAJa/wDLX/rof5Cpqhtf+Wv/
+AF0P8hU1W9yUFFFFIYUUUUAFVNS/491/3/6GrdVNS/491/3/AOhqo7iexNRRRWZQUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAlr/y1/66H+Qqaq7QRMxZkBJpPs0P/PMVd0TqWaKrfZof+eYo+zQ/88xS
+0HqWaKrfZof+eYo+zQ/88xRoGpZqpqX/AB7r/v8A9DTvs0P/ADzFH2aH/nmKaaTuJ3ZJRRRUFBRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAf//Z
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Data Uploaded"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="c9b159a5-6896-4393-b2c8-96c9792dea50">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c7b5b0c3-5b0d-4f3f-b4ca-af1a10361467"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]
+				</path>
+			</info>
+		</loggingrecorditem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Upload_RawData.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -157,7 +157,7 @@ namespace eSourcePlatform
 
             Init();
 
-            CSPStoreProcedure(DBServer, Database, dbUsername, dbPassword, Authentication, studID);
+            CPAStoreProcedure(DBServer, Database, dbUsername, dbPassword, Authentication, studID);
             Delay.Milliseconds(0);
             
         }

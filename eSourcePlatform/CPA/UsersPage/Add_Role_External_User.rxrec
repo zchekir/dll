@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4886f8c4-1345-48b0-abbd-1a572ffc4d8b"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Add_Role_External_User
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Add_Role_External_User"
+	namespace="CPA.UsersPage">
+	</codegen>
+	<variables>
+		<var
+		id="49cfa874-725e-4141-b715-d2c17ac6eae8"
+		name="ProjectName">
+			Ranorex Project Name
+		</var>
+		<var
+		id="ad914b3d-ce99-4bdb-9e75-5df98d80d2b2"
+		name="RandNum">
+			990598
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StartPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4db5d694-7990-4e0d-a6cb-a5c1ff5e311f">
+				<argument
+				argname="findElement"
+				id="456324c0-53fb-48fa-902c-1f2646e3b8bd">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2ced943c-58c3-4c74-8175-93d86fa2d329"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[1]/h4[@innertext='NotFound']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="5074a36b-3156-4609-b3b8-50ed9042ac0e">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2277bba7-33be-4fb8-8625-24e5b8f37387"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[3]/button[@innertext='Close']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="44be70a5-52d5-49f1-ad5f-5d71837d176d"
+		sx="-941"
+		sy="-739"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2f537dc6-64df-4dbd-9877-820080b627d4"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, imgtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="imgtag"
+				rect="-956,-752,30,35"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						img-adjust
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						img
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						30
+					</attribute>
+					<attribute
+					name="hspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="src"
+					type="System.String">
+						https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png
+					</attribute>
+					<attribute
+					name="vspace"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						30
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div/div/?/?/tag[@tagname='cogstate-generic-external-user-detail-header']/div/?/?/div/span[1]/img[@src='https://cgst-qc-duo.cogstate.com/asset/images/add_icon_off.png']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="0292b284-6584-4e9a-b9ef-f153aabc48a6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABCAIoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKM0
+ZoAKKinM/wAv2fy/ffn+lY/9uzf880/I/wCNGi3Y4xlL4U2btFYX9uzf880/I/40f27N/wA80/I/
+40Xj3L9jV/lZu0Vhf27N/wA80/I/41Paalc3kpjjWEELu+YH/H3oTT6ilTqRV3FmtRVXN/8A9O3/
+AI9Rm/8A+nb/AMequUx5/ItUifcH0qtm/wD+nb/x6rCZCAHrjnFJqw07jqKM0ZpFBRRmjNABRRmj
+NACUUUUxBWZoH/Hk/wD10P8AIVp1maB/x5P/ANdD/IVD+JG8P4Uvl+pYfUIldl2yHBxkAf403+0o
+f7kn5D/GqJXfPIu5F+YnLHA60wuGkUKmxQhG4kYcqcHHPPNWYG1BMk8e9M4zjBqhB/yMFz/1zH/s
+tT6X/wAe7/75/kKgg/5GC5/65j/2Wol0N6O0vT/I06KKKswCiiigAooooAKKKKACiiigAoopHYKh
+Y9AM0hi1maB/x5P/ANdD/IVoRyb49zDaRnIz0rO0Bh9ldO+8n9BUv4kbQ/hS+X6kMsT+bIDG/wB4
+/wANRNCz2URV2jaKO5cYA5Iccc1e1CRWlhYSOYFDCUwyEFemGOOoHNXLSHyYAhk8z5mbfgc5JP8A
+WrMChY/abS5Nu7JLCZSm/GG3bN2fTGOKWD/kYLn/AK5j/wBlq1eMiT2hYhf3xOScfwNVOBx/wkE2
+MENGOR9FqJdDeltL0/VGrRTfMQvsDru9M806rMAooooAKKKKACiiigAooooAKiuMlAqgEsQME496
+looAqvuxIrqBkq2FOeM89vasewmmgikRLWSQuDyM8fpXRUVLVzanUUU01e5jf2i8rADT2YBSpXrk
+Ht0qO3vL62zFHZSNCPuI+7cg9M45FbtFFn3Bzp/yfizAW9u/tQu7m1ZlVSsagEKuepyR14qSw8xt
+UNw8LRJIDjcOPzrbopcrvqx+1ik1GNrlOPnajSICHzt2/NnP1/WrlFFWYhRRRQIKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=
+			</helperscreenshot>
+		</mouseitem>
+		<userrecorditem
+		classname="Add_Role_External_User"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SelectStudyToAdd"
+		namespace="CPA.UsersPage"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="04ff35b7-f31f-4f48-accc-3947d9b78b7c">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Add_Role_External_User"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="SelectExternalServiceRole"
+		namespace="CPA.UsersPage"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="79c998e4-4ed4-4bf1-bdb1-74fb03daa7f9">
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="7;6"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="bb98e0d9-f01d-4f10-89aa-1a1da818c0f3"
+		sx="297"
+		sy="-89"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4ae35020-8fe5-4864-95c2-2e65843fcb14"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="290,-95,13,13"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-pristine ng-untouched ng-valid
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						on
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						checkbox
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						on
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div[3]//tag[@tagname='cogstate-generic-external-user-children-tabs']/div[2]/div//table/tbody/tr[21]/td[3]/input[@type='checkbox']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="815f7899-1050-42f9-bdef-3718ba039b98">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABBAE4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKbg
+/wB9v0owf77fpQASfd/Efzpabt55YnFOoAKKKKYgooooAKKKKAIPMX+43/fB/wAKPMX+43/fB/wq
+xRRdBZkCyISAVwT6rinuY0Qs5VVHUngUlx/qs/7S/wAxVXVf+QXL/wAB/mKUtFcqnHmmovqTfarT
+/nvB/wB9ij7Vaf8APeD/AL7FZ9rp9rNbRyOrbmUZwxp02n2scMpWMkiJmBLHgiovK1zflo83Ld/g
+aaGORQyFWU9CORTtq+g/Kqekf8gyH/gX8zV2qTurmM48snHsJtX0H5UbV9B+VLRTJFqncXskN2kC
+wb/M+62/H9KuUhRSysQCy9D6UAMuP9V/wJf5iqmq/wDILl/4D/MVbuP9V/wJf5imTwLc27QuSFbG
+cdeuaGrxKpyUaib8irZh1s4R5bH5AcjFUY4ZLLSkmjDSW8lt86dTGSoyw9s9R261b/sO2/vzfmP8
+KLO/jjs7W3QGSf7OpCjpu2ZCk9icH8qlXtZlz5VLmi7k2jnOmQke/wDM1drO0dWMLSoES3lAeOJH
+3BCc7h0GO3HY5rRppWViJy5pOXcKKKKZI3zov+eqf99Cjzov+eqf99CjYKNgp6C1I5ZEdQqMGJYd
+DnvUq9KQKBTqAQVWksbdoPKRFhAcOpjUAqwPUcdeKs0UhkVvCLeERhmbksS2Mkkknp9aloooAKKK
+KACiiimIKKKKACiiigAooooAKKKKAP/Z
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="7000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+				Slight Delay waiting for Role to save
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="StopPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c5d1b12d-0bf0-4f8e-9363-7e984239b93d">
+				<argument
+				argname="findElement"
+				id="fe08f07b-0303-43bd-bb96-fde20c013ee7">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2ced943c-58c3-4c74-8175-93d86fa2d329"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[1]/h4[@innertext='NotFound']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="b0998b2c-9213-4043-a940-38e9ade65625">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="2277bba7-33be-4fb8-8625-24e5b8f37387"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]/body/div[3]/div/div/div/div[3]/button[@innertext='Close']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Add_Role_External_User.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

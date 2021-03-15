@@ -49,7 +49,7 @@ namespace Eisia
             stateid_TWO = "";
             TabletConfig = "";
             Desktop = "";
-            CSPDOM = "";
+            CPADOM = "";
         }
 
         /// <summary>
@@ -158,16 +158,16 @@ namespace Eisia
             set { _Desktop = value; }
         }
 
-        string _CSPDOM;
+        string _CPADOM;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("402ae1ed-01ab-4ec1-9c82-b1b4f1bcf0da")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
 #endregion

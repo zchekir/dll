@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7affe19e-2de9-4eb3-ab8f-729e1fc09478"
+mode="Global"
+rxversion="8.3">
+	<name>
+		CompleteTest
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CompleteTest"
+	namespace="CPA.AmazonS3">
+	</codegen>
+	<variables>
+		<var
+		id="06a8ba53-724f-4dc7-8824-7b38e85df55a"
+		name="AssessmentURL">
+		</var>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="Chrome"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Url"
+				variable="AssessmentURL">
+				</binding>
+			</bindings>
+			<url>
+				http://www.ranorex.com
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CompleteTest.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

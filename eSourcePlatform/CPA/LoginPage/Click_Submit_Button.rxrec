@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4e9cbd89-ddb9-4ad7-8083-a6c2c659da6e"
+mode="Desktop"
+rxversion="8.3">
+	<name>
+		Click_Submit_Button
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_Submit_Button"
+	namespace="CPA.LoginPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Click_Submit_Button"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ClickSubmit"
+		namespace="CPA.LoginPage"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="262c2342-801c-4979-8e30-cae28ec3fa9a">
+				<argument
+				argname="SubmitButton"
+				id="b3f0929c-84c9-4876-a129-240cffa01094">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="fbcc6722-d4ad-46db-8a35-0686300dbf5b"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain='login.microsoftonline.com']//input[#'idSIButton9']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_Submit_Button.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

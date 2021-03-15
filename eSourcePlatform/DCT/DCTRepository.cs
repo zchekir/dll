@@ -87,16 +87,16 @@ namespace DCT
             set { _RandNum = value; }
         }
 
-        string _CSPDOM = "";
+        string _CPADOM = "";
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("4868fd53-f0cc-4bcc-ad64-84d67b341b4d")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
         string _AzureDOM = "cgst-qc-orr-hub.scm.azurewebsites.net";
@@ -111,16 +111,16 @@ namespace DCT
             set { _AzureDOM = value; }
         }
 
-        string _CSPUsername = "";
+        string _CPAUsername = "";
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
+            get { return _CPAUsername; }
+            set { _CPAUsername = value; }
         }
 
         string _DCTDOM = "cgst-staging-dct.azurewebsites.net";
@@ -1549,7 +1549,7 @@ namespace DCT
                 _idbtnbackInfo = new RepoItemInfo(this, "IdBtnBack", ".//input[#'idBtn_Back']", 30000, null, "5b16e7df-2bc8-408d-a90f-a12b6cf5b5ef");
                 _enterusernamefieldInfo = new RepoItemInfo(this, "EnterUserNameField", ".//input[#'i0116']", 30000, null, "c2b76402-5b3d-43ee-8e59-dac47a2e9c73");
                 _signinbuttonInfo = new RepoItemInfo(this, "SignInButton", ".//input[#'idSIButton9']", 30000, null, "cb220122-19c8-4bab-93a1-825edc6f60eb");
-                _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext=$CSPUsername]", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
+                _selectaccountInfo = new RepoItemInfo(this, "SelectAccount", ".//div[@innertext=$CPAUsername]", 30000, null, "76cba7cf-f54a-4c20-8edb-614644e18a77");
                 _useanotheraccountInfo = new RepoItemInfo(this, "UseAnotherAccount", ".//div[#'otherTileText']", 30000, null, "03048239-ba3c-4e99-98f0-7a29857dc2f3");
                 _passwordfieldInfo = new RepoItemInfo(this, "PasswordField", ".//input[#'i0118']", 30000, null, "49f1eca4-54b5-4345-8ae9-dc710971a842");
             }
@@ -1814,7 +1814,7 @@ namespace DCT
                 _debugconsoleInfo = new RepoItemInfo(this, "DebugConsole", ".//a[@innertext='Debug console ']", 30000, null, "67cbad4f-5b5c-41d7-a22b-8b0b8a2f529d");
                 _powershellInfo = new RepoItemInfo(this, "PowerShell", ".//a[@innertext='PowerShell']", 30000, null, "63637764-b1c2-45b3-96c3-243481d396a3");
                 _powershellconsolInfo = new RepoItemInfo(this, "PowerShellConsol", ".//div[#'KuduExecConsoleV2']/div/div/div[2]/?/?/span", 30000, null, "cb458012-66d2-43c8-90cf-f9dc911f0576");
-                _azurelogoutInfo = new RepoItemInfo(this, "AzureLogout", ".//a[@innertext=$CSPUsername]", 30000, null, "ba6ef5cd-ae29-46fd-a862-13b41632bc4d");
+                _azurelogoutInfo = new RepoItemInfo(this, "AzureLogout", ".//a[@innertext=$CPAUsername]", 30000, null, "ba6ef5cd-ae29-46fd-a862-13b41632bc4d");
                 _logoutInfo = new RepoItemInfo(this, "Logout", ".//a[@innertext='Logout']", 30000, null, "bdad3e06-3e70-4d6e-ab3f-7b4eda7eddae");
                 _dctvalidationversionInfo = new RepoItemInfo(this, "DCTValidationVersion", ".//div[@innertext~'1.2']", 30000, null, "49370b0d-946f-4152-89ea-e31cf4c37984");
                 _rcchubvalidationInfo = new RepoItemInfo(this, "RCCHubValidation", ".//div[@innertext~'2.0.1-rc']", 30000, null, "ed9435cd-5012-46e1-a260-05d5ba9de604");

@@ -64,13 +64,13 @@ namespace DCT.Azure
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("d56d6003-1d1a-4dc0-866d-e61b87da582b")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.CPAUsername; }
+            set { repo.CPAUsername = value; }
         }
 
 #endregion

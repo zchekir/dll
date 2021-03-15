@@ -45,7 +45,7 @@ namespace Eisia
             WorkflowID = "";
             SetStatusID = "";
             SestJSON = "";
-            CSPDOM = "";
+            CPADOM = "";
         }
 
         /// <summary>
@@ -106,16 +106,16 @@ namespace Eisia
             set { _SestJSON = value; }
         }
 
-        string _CSPDOM;
+        string _CPADOM;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("44a1de3d-0689-490c-9a93-de2aea9b3cff")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
 #endregion
@@ -144,7 +144,7 @@ namespace Eisia
 
             Init();
 
-            FinishStatus(Toke, WorkflowID, SetStatusID, SestJSON, CSPDOM);
+            FinishStatus(Toke, WorkflowID, SetStatusID, SestJSON, CPADOM);
             Delay.Milliseconds(0);
             
         }

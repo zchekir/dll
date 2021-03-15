@@ -42,8 +42,8 @@ namespace ReportingLayer.AcademicExtract
         public Validate_ExcludeAssessment_Flag()
         {
             Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
+            CPAPassword = "";
+            CPAUsername = "";
             DBServer = "";
             Database = "";
             TestIdentifier = "";
@@ -71,16 +71,16 @@ namespace ReportingLayer.AcademicExtract
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("28b1a968-46db-4075-9fe5-7dab1939c204")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
         string _DBServer;
@@ -120,13 +120,13 @@ namespace ReportingLayer.AcademicExtract
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("8c8cfb72-1ffe-4fee-b048-e08996b148ae")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.CPAUsername; }
+            set { repo.CPAUsername = value; }
         }
 
 #endregion
@@ -155,7 +155,7 @@ namespace ReportingLayer.AcademicExtract
 
             Init();
 
-            GetFlag(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetFlag(Database, DBServer, CPAUsername, CPAPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportFlag();

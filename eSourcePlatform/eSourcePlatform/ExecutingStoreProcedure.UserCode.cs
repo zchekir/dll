@@ -34,7 +34,7 @@ namespace eSourcePlatform
            
         }
 
-        public void CSPStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
+        public void CPAStoreProcedure(string DBServer, string Database, string dbUsername, string dbPassword, string Authentication, string studID)
         {
              dt.Reset();
            

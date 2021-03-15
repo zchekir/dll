@@ -41,7 +41,7 @@ namespace RedCapCloud.General
         /// </summary>
         public Edit_CSV()
         {
-            CSPURL = "";
+            CPAURL = "";
             Key = "";
         }
 
@@ -55,16 +55,16 @@ namespace RedCapCloud.General
 
 #region Variables
 
-        string _CSPURL;
+        string _CPAURL;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPURL.
+        /// Gets or sets the value of variable CPAURL.
         /// </summary>
         [TestVariable("b4abd2fb-b815-47f4-88b7-12130961b9c3")]
-        public string CSPURL
+        public string CPAURL
         {
-            get { return _CSPURL; }
-            set { _CSPURL = value; }
+            get { return _CPAURL; }
+            set { _CPAURL = value; }
         }
 
         string _Key;
@@ -105,7 +105,7 @@ namespace RedCapCloud.General
 
             Init();
 
-            engine.Helpers.CSVUtility.AddVisitSettings(CSPURL, Key);
+            engine.Helpers.CSVUtility.AddVisitSettings(CPAURL, Key);
             Delay.Milliseconds(0);
             
         }

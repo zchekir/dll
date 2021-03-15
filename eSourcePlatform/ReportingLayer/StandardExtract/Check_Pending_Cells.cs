@@ -42,8 +42,8 @@ namespace ReportingLayer.StandardExtract
         public Check_Pending_Cells()
         {
             Authentication = "Active Directory Password";
-            CSPPassword = "913172DMW^";
-            CSPUsername = "dwood@cogstate.com";
+            CPAPassword = "913172DMW^";
+            CPAUsername = "dwood@cogstate.com";
             DBServer = "cgst-qcpd.database.windows.net";
             TestIdentifier = "9da191a0-69f1-4600-959b-5fe379e31dae";
             RptDatabase = "cgst-rpt";
@@ -71,16 +71,16 @@ namespace ReportingLayer.StandardExtract
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("cefd111f-bbc4-4dba-84f3-04479a969d49")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
         string _DBServer;
@@ -120,13 +120,13 @@ namespace ReportingLayer.StandardExtract
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("012660f4-bd2c-48f2-87c1-875e293ec6c4")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.CPAUsername; }
+            set { repo.CPAUsername = value; }
         }
 
 #endregion
@@ -155,7 +155,7 @@ namespace ReportingLayer.StandardExtract
 
             Init();
 
-            CheckPending(DBServer, RptDatabase, CSPUsername, CSPPassword, Authentication);
+            CheckPending(DBServer, RptDatabase, CPAUsername, CPAPassword, Authentication);
             Delay.Milliseconds(0);
             
         }

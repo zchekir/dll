@@ -40,8 +40,8 @@ namespace ReportingLayer.PowerBI
         	{
             	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", MicrosoftUsernameField);
             	MicrosoftUsernameField.FindAdapter<InputTag>().Click();
-            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '$CSPUsername' with focus on 'inputtagInfo'.", MicrosoftUsernameField);
-            	MicrosoftUsernameField.FindAdapter<InputTag>().PressKeys(CSPUsername);
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '$CPAUsername' with focus on 'inputtagInfo'.", MicrosoftUsernameField);
+            	MicrosoftUsernameField.FindAdapter<InputTag>().PressKeys(CPAUsername);
             	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'inputtagInfo'.", MicrosoftUsernameField);
             	MicrosoftUsernameField.FindAdapter<InputTag>().PressKeys("{Tab}");        		
         	}
@@ -51,8 +51,8 @@ namespace ReportingLayer.PowerBI
         		CogstateUsernameField.FindAdapter<InputTag>().Value = "";
         		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center.", CogstateUsernameField);
             	CogstateUsernameField.FindAdapter<InputTag>().Click();
-            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '$CSPUsername' with focus on 'inputtagInfo'.", CogstateUsernameField);
-            	CogstateUsernameField.FindAdapter<InputTag>().PressKeys(CSPUsername);
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '$CPAUsername' with focus on 'inputtagInfo'.", CogstateUsernameField);
+            	CogstateUsernameField.FindAdapter<InputTag>().PressKeys(CPAUsername);
             	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'inputtagInfo'.", CogstateUsernameField);
             	CogstateUsernameField.FindAdapter<InputTag>().PressKeys("{Tab}"); 
         	}

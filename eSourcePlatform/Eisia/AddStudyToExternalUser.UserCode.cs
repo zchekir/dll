@@ -46,12 +46,12 @@ namespace Eisia
             
         }
 
-        public void AddingStudyToExternalUser(string Token, string RolID, string JSONData, string ExternaluserID, string CSPDOM, string Key)
+        public void AddingStudyToExternalUser(string Token, string RolID, string JSONData, string ExternaluserID, string CPADOM, string Key)
         {
         	
         	Report.Log(ReportLevel.Info, "roleid " + RolID);
         	 //variable
-		    string url = "https://" + CSPDOM + "/api/externalusers/"+ ExternaluserID;
+		    string url = "https://" + CPADOM + "/api/externalusers/"+ ExternaluserID;
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";

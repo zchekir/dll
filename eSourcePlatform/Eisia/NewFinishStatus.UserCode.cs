@@ -50,14 +50,14 @@ namespace Eisia
            
         }
 
-        public void FinishStatus(string Toke, string WorkflowID, string SetStatusID, string SestJSON, string CSPDOM)
+        public void FinishStatus(string Toke, string WorkflowID, string SetStatusID, string SestJSON, string CPADOM)
         {
           
         	Report.Log(ReportLevel.Info, "NEWSetStatusID  " + "  "+ SetStatusID );
         	
         	
           //variable
-		    string url = "https://"+CSPDOM+"/api/workflows/"+WorkflowID+"/workflowBlocks/"+SetStatusID;
+		    string url = "https://"+CPADOM+"/api/workflows/"+WorkflowID+"/workflowBlocks/"+SetStatusID;
 		    	
 		     
 			

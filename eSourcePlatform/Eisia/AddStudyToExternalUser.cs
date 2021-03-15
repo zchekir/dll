@@ -45,7 +45,7 @@ namespace Eisia
             RolID = "";
             JSONData = "";
             ExternaluserID = "";
-            CSPDOM = "";
+            CPADOM = "";
             Key = "";
         }
 
@@ -107,16 +107,16 @@ namespace Eisia
             set { _ExternaluserID = value; }
         }
 
-        string _CSPDOM;
+        string _CPADOM;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("3be1d8c5-af5d-49fb-80b0-586733e34b2d")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
         string _Key;
@@ -157,7 +157,7 @@ namespace Eisia
 
             Init();
 
-            AddingStudyToExternalUser(Token, RolID, JSONData, ExternaluserID, CSPDOM, Key);
+            AddingStudyToExternalUser(Token, RolID, JSONData, ExternaluserID, CPADOM, Key);
             Delay.Milliseconds(0);
             
         }
