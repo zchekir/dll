@@ -42,8 +42,8 @@ namespace ReportingLayer.Database
         public Validate_AssessmentTestOutcomeSAT_Entry()
         {
             Authentication = "";
-            CSPPassword = "";
-            CSPUsername = "";
+            CPAPassword = "";
+            CPAUsername = "";
             DBServer = "";
             Database = "";
             StudyName = "";
@@ -73,16 +73,16 @@ namespace ReportingLayer.Database
             set { _Authentication = value; }
         }
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("fb76f8f0-f99e-4df1-b623-a0d5a7372ddc")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
         string _DBServer;
@@ -146,13 +146,13 @@ namespace ReportingLayer.Database
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("4091a148-f736-42c7-b6b1-d2dffc0159b2")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.CPAUsername; }
+            set { repo.CPAUsername = value; }
         }
 
 #endregion
@@ -181,7 +181,7 @@ namespace ReportingLayer.Database
 
             Init();
 
-            GetAssessmentTestOutcomesSAT(Database, DBServer, CSPUsername, CSPPassword, Authentication);
+            GetAssessmentTestOutcomesSAT(Database, DBServer, CPAUsername, CPAPassword, Authentication);
             Delay.Milliseconds(0);
             
             ReportRecords();

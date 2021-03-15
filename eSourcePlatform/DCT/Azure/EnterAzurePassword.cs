@@ -41,7 +41,7 @@ namespace DCT.Azure
         /// </summary>
         public EnterAzurePassword()
         {
-            CSPPassword = "";
+            CPAPassword = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace DCT.Azure
 
 #region Variables
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("4210de4e-d502-4cee-954c-b7f26522fc78")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
 #endregion

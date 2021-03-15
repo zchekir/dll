@@ -38,7 +38,7 @@ namespace DCT.Azure
         	
         	try{
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$OctopusPassword' with focus on 'inputtagInfo'.", PasswordField);
-            PasswordField.FindAdapter<InputTag>().PressKeys(CSPPassword);
+            PasswordField.FindAdapter<InputTag>().PressKeys(CPAPassword);
         	}
         	
         	catch ( Exception e){

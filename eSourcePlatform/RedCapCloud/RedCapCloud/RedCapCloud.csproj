@@ -524,15 +524,15 @@
 		<Compile Include="AssemblyInfo.cs">
 			<id>899d6693-82bc-458c-8653-6516ceb665d0</id>
 		</Compile>
-		<Compile Include="CSPStoreProcedure.cs">
+		<Compile Include="CPAStoreProcedure.cs">
 			<BoundTo>905f8155-6896-4c0b-af5e-ead7ad929038</BoundTo>
-			<DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+			<DependentUpon>CPAStoreProcedure.rxrec</DependentUpon>
 			<RecorderCode>true</RecorderCode>
 			<id>67839b45-7bf1-4135-b008-e3c96d4e4cd9</id>
 		</Compile>
-		<Compile Include="CSPStoreProcedure.UserCode.cs">
+		<Compile Include="CPAStoreProcedure.UserCode.cs">
 			<BoundTo>905f8155-6896-4c0b-af5e-ead7ad929038</BoundTo>
-			<DependentUpon>CSPStoreProcedure.rxrec</DependentUpon>
+			<DependentUpon>CPAStoreProcedure.rxrec</DependentUpon>
 			<UserCode>true</UserCode>
 			<id>e74d6bc1-d54c-4be4-8f60-e5de700f73b4</id>
 		</Compile>
@@ -1601,7 +1601,7 @@
 		<None Include="app.config">
 			<id>4ef413af-dd9f-4d81-8fac-ed4d3c600dfe</id>
 		</None>
-		<None Include="CSPStoreProcedure.rxrec">
+		<None Include="CPAStoreProcedure.rxrec">
 			<BoundTo>f9948728-2258-4ffd-97ec-9a388bad3d54</BoundTo>
 			<id>905f8155-6896-4c0b-af5e-ead7ad929038</id>
 			<recordtableid>03ec75ce-a241-4a6a-92d9-830456f3aa4b</recordtableid>
@@ -2080,9 +2080,9 @@
 		</Folder>
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\..\CSP\CSP.csproj">
+		<ProjectReference Include="..\..\CPA\CPA.csproj">
 			<Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
-			<Name>CSP</Name>
+			<Name>CPA</Name>
 		</ProjectReference>
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"></Import>

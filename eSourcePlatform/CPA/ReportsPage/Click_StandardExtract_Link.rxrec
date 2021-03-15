@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4f089712-c239-4883-8bcf-6c722e725e24"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Click_StandardExtract_Link
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Click_StandardExtract_Link"
+	namespace="CPA.ReportsPage">
+	</codegen>
+	<variables>
+		<var
+		id="a50eea40-21b0-482c-be26-86f7f1251a4b"
+		name="ProtocolID">
+		</var>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<getvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="46dcd2e9-9f32-4ffa-bd66-dadb1a98560a"
+		varname="ProtocolID">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="aa5d9430-984b-4218-b244-d381e673dfb9"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$CPADOM]//input[@id~'formly_[0-9]+_input_protocolName_[0-9]+']
+				</path>
+			</info>
+		</getvaluerecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="3ms"
+		optional="False"
+		searchpropertyid="949b4791-ab77-4f29-afa8-c0e611d27f4f"
+		sx="-870"
+		sy="-522"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="45a6b357-f470-4904-9f63-1a00707a8a92"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="-926,-532,114,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Standard Extract
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='cgst-qc-jordan.azurewebsites.net']//div[#'scroll-container']//tag[@tagname='cogstate-generic-study-children-tabs']/div/div[2]/div/div[8]//table/tbody/tr[3]/?/?/a[@innertext='Standard Extract']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="e1184d31-bf4c-4f36-a4be-0cf0f41a4fe7">
+				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
+UAFFFFABRRRQAUUUUAFFFFAH/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Click_StandardExtract_Link.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

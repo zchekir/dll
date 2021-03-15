@@ -51,10 +51,10 @@ namespace Eisia
             
         }
 
-        public void NewWorkflowLogs(string Token, string SeststatusID, string WorkflowID, string JSONData, string CSPDOM)
+        public void NewWorkflowLogs(string Token, string SeststatusID, string WorkflowID, string JSONData, string CPADOM)
         {
             //variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks";
+		    string url = "https://" + CPADOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";

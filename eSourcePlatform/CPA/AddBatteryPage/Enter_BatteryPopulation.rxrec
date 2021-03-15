@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="bf386df6-7470-4bdb-a22c-c83c0cd68c78"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Enter_BatteryPopulation
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Enter_BatteryPopulation"
+	namespace="CPA.AddBatteryPage">
+	</codegen>
+	<variables>
+		<var
+		id="fb3172b3-264c-42ce-91d0-f2b18840d28f"
+		name="BatteryPopulation">
+			Alzheimer's Disease (Mild, MCI)
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Enter_BatteryPopulation"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="EnterBatteryPopulation"
+		namespace="CPA.AddBatteryPage"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="22db2d34-f696-44f7-a9e7-a6ae60969d28">
+				<argument
+				argname="PopulationDropdown"
+				id="30c86d77-31ae-4408-917c-e41724f73c0a">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="107c3512-95bb-4744-8616-4562277635c7"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_indication_4']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="PopulationOption"
+				id="ce9de952-53cb-486b-8da0-81f49b3f42c2">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="15d7475f-65ad-4ec8-92e5-63fa636bf7df"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_indication_4']/option[@innertext=$Population]
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Enter_BatteryPopulation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

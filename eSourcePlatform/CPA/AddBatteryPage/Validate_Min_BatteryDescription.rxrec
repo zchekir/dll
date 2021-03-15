@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="09dfd249-cfe0-4aae-9f25-8f6a4b0ae12b"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_Min_BatteryDescription
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Min_BatteryDescription"
+	namespace="CPA.AddBatteryPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="18e81bdc-a97f-44dd-9eb0-5f595b41f498">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5c3fdd48-4f58-4b9f-8ef8-e8024cc42559"
+			sourcename="ElementTree">
+				<path>
+					/dom[@domain=$DOM]//tag[@tagname='ng-form']/div[2]//div[@innertext~'The minimum length']
+				</path>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Min_BatteryDescription.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

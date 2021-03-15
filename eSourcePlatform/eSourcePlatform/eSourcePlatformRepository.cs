@@ -67,16 +67,16 @@ namespace eSourcePlatform
             set { _RandNum = value; }
         }
 
-        string _CSPUsername = "zchekir@cogstate.com";
+        string _CPAUsername = "zchekir@cogstate.com";
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("f183ef80-f1e1-40df-acd7-5c4c0e17d549")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
+            get { return _CPAUsername; }
+            set { _CPAUsername = value; }
         }
 
         string _ExistingStudy = "";
@@ -91,16 +91,16 @@ namespace eSourcePlatform
             set { _ExistingStudy = value; }
         }
 
-        string _CSPDOM = "cgst-qc-orr.azurewebsites.net";
+        string _CPADOM = "cgst-qc-orr.azurewebsites.net";
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("7bd16051-5145-48ed-a487-674a71577abf")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
         string _ProtocolID = "";
@@ -198,7 +198,7 @@ namespace eSourcePlatform
             public SignInToYourAccountAppFolder(RepoGenBaseFolder parentFolder) :
                     base("SignInToYourAccount", "/dom[@domain='login.microsoftonline.com']", parentFolder, 30000, null, false, "c4703fa5-b020-43f6-b7f4-c199f9aebf8b", "")
             {
-                _enterusernameInfo = new RepoItemInfo(this, "EnterUsername", ".//div[@innertext=$CSPUsername]", 30000, null, "1205ddd4-2c1f-4adc-b9a6-c358ac98e060");
+                _enterusernameInfo = new RepoItemInfo(this, "EnterUsername", ".//div[@innertext=$CPAUsername]", 30000, null, "1205ddd4-2c1f-4adc-b9a6-c358ac98e060");
             }
 
             /// <summary>

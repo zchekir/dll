@@ -50,10 +50,10 @@ namespace Eisia
             
         }
 
-        public void AddBlocktoWorkflow(string Token, string WorkflowID, string BlockJsonData, string blockid, string CSPDOM)
+        public void AddBlocktoWorkflow(string Token, string WorkflowID, string BlockJsonData, string blockid, string CPADOM)
         {
         		 //variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks";
+		    string url = "https://" + CPADOM + "/api/workflows/" + WorkflowID+ "/workflowBlocks";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";

@@ -67,16 +67,16 @@ namespace ReportingLayer
             set { _ProtocolID = value; }
         }
 
-        string _CSPUsername = "";
+        string _CPAUsername = "";
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("a0579069-e2a3-47be-9d8f-92cfed3c7d44")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return _CSPUsername; }
-            set { _CSPUsername = value; }
+            get { return _CPAUsername; }
+            set { _CPAUsername = value; }
         }
 
 #endregion
@@ -958,7 +958,7 @@ namespace ReportingLayer
             public SingleSignOnMicrosoftAppFolder(RepoGenBaseFolder parentFolder) :
                     base("SingleSignOnMicrosoft", "/dom[@domain='login.microsoftonline.com']", parentFolder, 30000, null, false, "c35eb889-e371-439b-9570-1afd68591917", "")
             {
-                _useraccountbuttonInfo = new RepoItemInfo(this, "UserAccountButton", ".//div[@innertext=$CSPUsername]", 30000, null, "c5b188c2-88cd-4d5f-97b7-83e56275b1b0");
+                _useraccountbuttonInfo = new RepoItemInfo(this, "UserAccountButton", ".//div[@innertext=$CPAUsername]", 30000, null, "c5b188c2-88cd-4d5f-97b7-83e56275b1b0");
                 _otheraccountbuttonInfo = new RepoItemInfo(this, "OtherAccountButton", ".//div[#'otherTileText']", 30000, null, "2c639ba6-c816-4691-b4c9-fca1da80a1ef");
                 _microsoftusernamefieldInfo = new RepoItemInfo(this, "MicrosoftUsernameField", ".//input[#'i0116']", 30000, null, "694e1f07-7fdc-44cc-bcab-4827d2900622");
                 _nobuttonInfo = new RepoItemInfo(this, "NoButton", ".//input[#'idBtn_Back']", 30000, null, "601b071d-cc26-4138-a14e-b435e5d9d440");

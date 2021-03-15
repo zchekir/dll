@@ -56,7 +56,7 @@ namespace Eisia
         		
         	
         	 //variable
-		    string url = "https://" + CSPDOM + "/api/workflows/" + WorkflowID + "/publish";
+		    string url = "https://" + CPADOM + "/api/workflows/" + WorkflowID + "/publish";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpRequest.ContentType = "application/json";
@@ -99,7 +99,7 @@ namespace Eisia
         	}catch (Exception e)
 
         	{
-            	string infos="Type 'CSP.PublishWorkflowJSONRequest' is not supported for deserialization of an array.";
+            	string infos="Type 'CPA.PublishWorkflowJSONRequest' is not supported for deserialization of an array.";
             	
             	if (infos == e.Message ){
             		

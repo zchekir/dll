@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="46fd72b9-76a1-4e0f-a312-530d1c4995bb"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Clear_Gmail_Inbox
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Clear_Gmail_Inbox"
+	namespace="CPA.General">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="StartPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="918d7854-bc3d-4288-99d1-6171d63bae49">
+				<argument
+				argname="findElement"
+				id="4baa0505-6b0a-4dd0-ab20-0c0a9f79caf8">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="3d7b4b67-f40b-469a-b928-1cc9a5e31836"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title='Leave site?']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="3665f1f1-c76f-4ede-8fc4-0b656edc416c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="b69c8b67-e465-403e-9e6f-b92e229ebdb7"
+		sx="-745"
+		sy="-895"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="41b979f7-c989-45a6-9476-8952d4227dc0"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="-756,-906,22,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ar6 T-I-J3 J-J5-Ji
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mail.google.com']//div[#':5']/div[2]/div[1]/div/div[1]/div/div/div
+				</path>
+			</info>
+			<helperscreenshot
+			guid="c3eb1f0e-1a93-4144-8901-382d00a6b5e0">
+				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
+mtTwp/y9f8A/9moA39w9/wAqNw9/ypaKAP/Z
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="250ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="b4f6d9d3-73a7-40f0-a415-351bd9d8ff90"
+		sx="-753"
+		sy="-896"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="411c4add-47fd-4250-a4c7-10ec4625af19"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="-759,-904,15,15"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						T-Jo-auh
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mail.google.com']//div[#':35']/?/?/span/div
+				</path>
+			</info>
+			<helperscreenshot
+			guid="51593c5f-13fb-41a3-b714-4f12835d0e93">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAAvADADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDo9o/y
+aNo/yabl/wC8v/fP/wBeo7mc20DTOcquMgLz1x60DSbdkTbR/k0bR/k1l/25D/dk/wC+B/8AFUf2
+5D/dk/74H/xVTzx7m31er/Kam0f5NG0f5NVLO+W83+VkbMZ3L6/j7VZy/wDeX/vn/wCvTTuZSi4u
+zFqnq/8AyDZfw/mKt1T1f/kGy/h/MUS2ZVH+JH1RJZq5s4MSEfu17D0qVdyyAFywIJ5A9qpSuP7B
+cYb/AI9T/Cf7tADaZKqyMWsj8qOeTCTj5WP930PboaFsTP4mR6dLHHe33mOqZk43HGeTWmkiSDKO
+rDplTmsqyhSe41COQZBk/Llua1I0WNAiAKo6AUobGuI/ifd+Qb1/vD86iuI4riBonfCtjOCM9c1W
+125ls7JJLdgjGQKTtB4wfWsL+2tQ/wCe4/79r/hVGKbTujTvdKtY7Kd1lcssbEAsOuPpVy71OALc
+xRx/aGiQl1PCsB94Z9QDyK59tYv3Uq0yspGCDGpBH5VB9uuPMidXCGHOzaigLnrxjFJJLYqdSU/i
+Z0WixRxQPKjrslbKKH3bVHbJAPUn9K0d6/3h+dcZaXtxZgi3lKA9RgEfrVj+2tQ/57j/AL9r/hTJ
+bb3P/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="100ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		codegenpropertyname="DeleteButton_Screenshot"
+		duration="100ms"
+		enabled="True"
+		imageoptions="0.99;None;0,0,0,0;True;10000000;0ms"
+		loc="Center"
+		movetime="100ms"
+		optional="False"
+		searchpropertyid="52b21e3d-33c9-461d-b81d-95401c604c8f"
+		sx="-516"
+		sy="-897"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0155202d-a183-4048-a7f7-aeb9677aa6fa"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="-525,-906,21,21"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ar9 T-I-J3 J-J5-Ji
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mail.google.com']//div[#':5']/div/div[1]/div[1]/div/div/div[2]/div[3]/div/div
+				</path>
+			</info>
+			<helperscreenshot
+			guid="8fe21c94-80cc-43f1-ab44-813255a89b3a">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAA7AH4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoPwP5
+UfgfyqSigCP8D+VH4H8qkooAj/A/lR+B/KpKKAI/wP5UfgfyqSigCP8AA/lR+B/KpKKAI/wP5Ufg
+fyqSigCP8D+VH4H8qkooAj/A/lR+B/KpKKAI9q+g/KjavoPypaKAE2r6D8qQKpc5UdB2+tOpB/rD
+9B/WgA2J/dX8qNif3V/KlooAxntI7rWp4nLKoQMNvHYf402e10m3z5t4wIO0gMGIP0AzVmD/AJD9
+x/1zH/stZOqyyrrEkEEUJLMoUGFCSSB3I9TWaine511K04cqi+iNGDTtNuMeTdM5I3YDrnH0xkU1
+LSO11qCJCzKULHdz2P8AhTfDjtJJc+bGivHtXiJUI65BwB6CrM//ACH7f/rmf/ZqHFK1gp1pz5lJ
+9GaOxP7q/lRsT+6v5UtFaHILHxuA6A/0p1Nj6v8AX+gp1ADGAL8jPFJtX0H5Urff/CigAoo2t7fn
+Rtb2/OgApo++foP607a3t+dJsfcSAvT1oAWiopZkgx50kUe7pvkxn86j+223/P1bf9/hQBWg/wCQ
+/cf9cx/7LVW+06b+10vtyeV50XGTu6qPSpLiOGW7eePU4IiwA+WQeg759qp3k/2UxML/AO1EOr7F
+ckHBB5OT6VCuuh01OSST5ui7m1d20iym7swPPxh0JwJgOx9D6H8OlUxOtxrFrKgYBozwwwQRuBBH
+1rIkvzdwTrey5LfvIxtJCuP4QB2IOOa07O3trWeOT+0LZhHkBd4HXPv705X0JpOMbtvozaoqt9tt
+v+fq2/7/AAqxtf0X8/8A61UYCx9W+v8AQU+mopAOepOadQAxvv8A4UUrKS2RjpSbW9vzoAduHv8A
+lRuHv+VLRQAm4e/5Ubh7/lS0UAc/4qOfsv8AwP8A9lrn66DxX/y6/wDA/wD2Ws7RONUix6N/6CaA
+KFFbltGt7b2Jusys0zIWYnJGM4z1pt1BHbx6pDEu1FMWBnPemlfQDForqotOtINWRY4QB5LN94nn
+IHf2NZ97YW0WkGeOPEnmsu7cem4j+lLpcDFrv8j3/KuAr0CgBNw9/wAqNw9/ypaKAE3D3/KjcPf8
+qWigD//Z
+			</helperscreenshot>
+		</mouseitem>
+		<userrecorditem
+		classname="PopupWatcherLibrary"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="StopPopupWatcher"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e581d52c-0971-4d1d-881b-efaac6f34f73">
+				<argument
+				argname="findElement"
+				id="ea3e1b0f-154c-49bd-b48c-713e09f1cecf">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="3d7b4b67-f40b-469a-b928-1cc9a5e31836"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title='Leave site?']
+						</path>
+					</info>
+				</argument>
+				<argument
+				argname="clickElement"
+				id="cc086bce-f17c-400c-8955-c4c906463755">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Clear_Gmail_Inbox.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

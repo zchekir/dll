@@ -211,14 +211,14 @@
     <Compile Include="Program.cs">
       <id>a96bd5ee-0e36-4cbf-8c8c-70a3e4390d99</id>
     </Compile>
-    <Compile Include="VersionChecks\CSP_DBVersion.cs">
-      <DependentUpon>CSP_DBVersion.rxrec</DependentUpon>
+    <Compile Include="VersionChecks\CPA_DBVersion.cs">
+      <DependentUpon>CPA_DBVersion.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>2ddc7d78-4814-4787-9bf8-0ecbefef8ad5</id>
       <BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
     </Compile>
-    <Compile Include="VersionChecks\CSP_DBVersion.UserCode.cs">
-      <DependentUpon>CSP_DBVersion.rxrec</DependentUpon>
+    <Compile Include="VersionChecks\CPA_DBVersion.UserCode.cs">
+      <DependentUpon>CPA_DBVersion.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9f6b8ae8-d236-456d-b84b-ed0a6c39c0c3</id>
       <BoundTo>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</BoundTo>
@@ -300,8 +300,8 @@
     <None Include="app.config">
       <id>ec27fdfd-d0fd-4a03-a3fd-44a2b2577b5a</id>
     </None>
-    <Content Include="CSPConnector.csv">
-      <Link>CSPConnector.csv</Link>
+    <Content Include="CPAConnector.csv">
+      <Link>CPAConnector.csv</Link>
       <BoundTo>7cb8293b-b5f8-4a38-92b3-54339c9334d8</BoundTo>
       <DependentUpon>eSourcePlatform.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -345,7 +345,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>880abd0b-82af-4957-afe7-6107ca0bef83</id>
     </Content>
-    <None Include="VersionChecks\CSP_DBVersion.rxrec">
+    <None Include="VersionChecks\CPA_DBVersion.rxrec">
       <BoundTo>1ff89b80-cba6-4f21-a417-c668d100f247</BoundTo>
       <id>18a81de2-f9cb-45d0-a3ef-481ace8d9c8c</id>
       <recordtableid>5440ad95-2787-406e-bfd8-a4a996120cd3</recordtableid>
@@ -399,9 +399,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CSP\CSP.csproj">
+    <ProjectReference Include="..\CPA\CPA.csproj">
       <Project>{A27B49D3-52B5-4D74-BD42-0AE2BD5C6144}</Project>
-      <Name>CSP</Name>
+      <Name>CPA</Name>
     </ProjectReference>
     <ProjectReference Include="..\DCT\DCT.csproj">
       <Project>{53F985E8-19FE-46C8-AD1C-531EBD62B9AA}</Project>

@@ -44,7 +44,7 @@ namespace Eisia
             Token = "";
             BlockJsonDara = "";
             WorkflowID = "";
-            CSPDOM = "";
+            CPADOM = "";
         }
 
         /// <summary>
@@ -93,16 +93,16 @@ namespace Eisia
             set { _WorkflowID = value; }
         }
 
-        string _CSPDOM;
+        string _CPADOM;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("221e5608-6765-485d-a8b5-6ef846b0d04f")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
 #endregion
@@ -131,7 +131,7 @@ namespace Eisia
 
             Init();
 
-            AddsuccessBlock(Token, BlockJsonDara, WorkflowID, CSPDOM);
+            AddsuccessBlock(Token, BlockJsonDara, WorkflowID, CPADOM);
             Delay.Milliseconds(0);
             
         }

@@ -574,7 +574,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			name="SelectAccount"
 			refimgid="72c01967-cc36-487e-8a88-ec2d0f8c2a64"
 			searchtimeout="30000ms">
-				/dom[@domain='login.microsoftonline.com']//div[@innertext=$CSPUsername]
+				/dom[@domain='login.microsoftonline.com']//div[@innertext=$CPAUsername]
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -694,7 +694,7 @@ AAAASUVORK5CYII=
 			name="AzureLogout"
 			refimgid="a02ee474-82bc-4cfd-9587-6108f623ae59"
 			searchtimeout="30000ms">
-				/dom[@domain=$AzureDOM]//a[@innertext=$CSPUsername]
+				/dom[@domain=$AzureDOM]//a[@innertext=$CPAUsername]
 			</item>
 			<item
 			addcaps="unknown,webelement,atag"
@@ -774,7 +774,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</var>
 		<var
 		id="4868fd53-f0cc-4bcc-ad64-84d67b341b4d"
-		name="CSPDOM">
+		name="CPADOM">
 		</var>
 		<var
 		id="49e5b85f-1ec2-4934-a251-0656cf1bbe62"
@@ -783,7 +783,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</var>
 		<var
 		id="d56d6003-1d1a-4dc0-866d-e61b87da582b"
-		name="CSPUsername">
+		name="CPAUsername">
 		</var>
 		<var
 		id="b4062045-8a57-448e-b3d6-6bd8f25d8dad"

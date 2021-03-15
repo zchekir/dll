@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5f3d6a76-0e05-4555-9e5e-da59aa9e4b68"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_Population_Options
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Population_Options"
+	namespace="CPA.AddBatteryPage">
+	</codegen>
+	<variables>
+		<var
+		id="af68b261-9d44-4b3d-b2fc-778a0c4e9ce0"
+		name="Population">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d4138889-eca4-4d92-a3b5-15f2ea84d8d5">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Population">
+				</binding>
+			</bindings>
+			<info
+			id="15d7475f-65ad-4ec8-92e5-63fa636bf7df"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_indication_3']/option[@innertext~$Population]
+				</path>
+			</info>
+			<matchname>
+				Label
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Population_Options.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

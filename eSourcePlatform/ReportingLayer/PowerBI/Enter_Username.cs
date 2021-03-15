@@ -41,7 +41,7 @@ namespace ReportingLayer.PowerBI
         /// </summary>
         public Enter_Username()
         {
-            CSPUsername = "";
+            CPAUsername = "";
         }
 
         /// <summary>
@@ -55,13 +55,13 @@ namespace ReportingLayer.PowerBI
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("766aeed9-9d5d-449f-b609-af49b9d6c774")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.CPAUsername; }
+            set { repo.CPAUsername = value; }
         }
 
 #endregion

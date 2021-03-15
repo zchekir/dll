@@ -39,8 +39,8 @@ namespace ReportingLayer.PowerBI
         	{
         		Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'inputtagInfo' at Center", CogstatePasswordField);
             	CogstatePasswordField.FindAdapter<InputTag>().Click();
-            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '$CSPPassword' with focus on 'inputtagInfo'.", CogstatePasswordField);
-            	CogstatePasswordField.FindAdapter<InputTag>().PressKeys(CSPPassword);
+            	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '$CPAPassword' with focus on 'inputtagInfo'.", CogstatePasswordField);
+            	CogstatePasswordField.FindAdapter<InputTag>().PressKeys(CPAPassword);
             	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'spantagInfo' at Center.", SignInButton);
             	SignInButton.FindAdapter<SpanTag>().Click();
         	}

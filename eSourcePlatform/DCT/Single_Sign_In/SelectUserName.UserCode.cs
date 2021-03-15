@@ -52,8 +52,8 @@ namespace DCT.Single_Sign_In
         {
            
         	try{
-        	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPUsername' with focus on 'inputtagInfo'.", inputtagInfo);
-            inputtagInfo.FindAdapter<InputTag>().PressKeys(CSPUsername);
+        	Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CPAUsername' with focus on 'inputtagInfo'.", inputtagInfo);
+            inputtagInfo.FindAdapter<InputTag>().PressKeys(CPAUsername);
         	}
         	
         	catch ( Exception e){

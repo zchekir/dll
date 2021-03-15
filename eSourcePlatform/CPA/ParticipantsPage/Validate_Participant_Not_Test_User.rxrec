@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b1da06ae-bf76-4d62-a01e-2d62cb2acb86"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Validate_Participant_Not_Test_User
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Participant_Not_Test_User"
+	namespace="CPA.ParticipantsPage">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2f1b0de8-fffa-4ad2-89b4-1969ec74ac61">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="81ba7448-eb97-49ce-b980-a8c0efa202e0"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, selecttag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="selecttag"
+				rect="282,-718,590,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-pristine ng-untouched ng-valid
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						formly_8_select_isTestUser_8
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						select
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						boolean:false
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						formly_8_select_isTestUser_8
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="disabled"
+					readonly="False"
+					type="System.String">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					isempty="True"
+					name="formly-custom-validation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+						model[options.key]
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-options"
+					readonly="False"
+					type="System.String">
+						option.value as option.name for option in to.options
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//select[@id~'formly_[0-9]+_select_isTestUser_8']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="c2da7175-5b1b-47e0-97f6-5e1ed893ecea">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABPAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCKiiiu
+48kKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKAI8y/3RRmX+6KkorL2b/mY7keZf7oozL/AHRUlFHs3/MwuR5l/uijMv8AdFSU
+Uezf8zC5HmX+6KMy/wB0VJRR7N/zMLkeZf7oozL/AHRUlFHs3/MwuR5l/uijMv8AdFSUUezf8zC5
+HmX+6KMy/wB0VJRR7N/zMLkeZf7oozL/AHRUlFHs3/MwuR5l/uijMv8AdFSUUezf8zC5HmX+6KMy
+/wB0VJRR7N/zMLkeZf7oozL/AHRUlFHs3/MwuR5l/uijMv8AdFSUUezf8zC5HmX+6KMy/wB0VJRR
+7N/zMLkeZf7oozL/AHRUlFHs3/MwuR5l/uijMv8AdFSUUezf8zC5HmX+6KMy/wB0VJRR7N/zMLke
+Zf7oozL/AHRUlFHs3/MwuR5l/uijMv8AdFSUUezf8zC5HmX+6KMy/wB0VJRR7N/zMLkeZf7oozL/
+AHRUlFHs3/MwuR5l/uijMv8AdFSUUezf8zC5HmX+6KMy/wB0VJRR7N/zMLkeZf7oozL/AHRUlFHs
+3/MwuR5l/uijMv8AdFSUUezf8zC5HmX+6KMy/wB0VJRR7N/zMLkeZf7oozL/AHRUlFHs3/MwuR5l
+/uijMv8AdFSUUezf8zC5HmX+6KMy/wB0VJRR7N/zMLkeZf7oozL/AHRUlFHs3/MwuR5l/uijMv8A
+dFSUUezf8zC5HmX+6KMy/wB0VJRR7N/zMLkeZf7ooqSij2b/AJmFwooorUQUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFR+
+W3/PQ0eW3/PQ1lzz/l/Idl3JKKj8tv8AnoaPLb/noaOef8v5BZdySio/Lb/noaPLb/noaOef8v5B
+ZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/AJ6Gjnn/AC/kFl3JKKj8tv8AnoaPLb/n
+oaOef8v5BZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noa
+PLb/AJ6Gjnn/AC/kFl3JKKj8tv8AnoaPLb/noaOef8v5BZdySio/Lb/noaPLb/noaOef8v5BZdyS
+io/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/AJ6Gjnn/AC/kFl3JKKj8tv8AnoaPLb/noaOe
+f8v5BZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/
+AJ6Gjnn/AC/kFl3JKKj8tv8AnoaPLb/noaOef8v5BZdySio/Lb/noaPLb/noaOef8v5BZdySio/L
+b/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/AJ6Gjnn/AC/kFl3JKKj8tv8AnoaPLb/noaOef8v5
+BZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaPLb/AJ6G
+jnn/AC/kFl3JKKj8tv8AnoaPLb/noaOef8v5BZdySio/Lb/noaPLb/noaOef8v5BZdySio/Lb/no
+aPLb/noaOef8v5BZdySio/Lb/noaPLb/AJ6Gjnn/AC/kFl3JKKj8tv8AnoaPLb/noaOef8v5BZdy
+Sio/Lb/noaPLb/noaOef8v5BZdySio/Lb/noaKOef8v5BZdySiiitRBRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
+			</helperscreenshot>
+			<matchname>
+				TagValue
+			</matchname>
+			<matchvalue>
+				boolean:false
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Participant is no longer set as a Test user"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="365f8748-dbe8-4a02-ac18-1a44240a442f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c7b5b0c3-5b0d-4f3f-b4ca-af1a10361467"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]
+				</path>
+			</info>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Participant_Not_Test_User.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

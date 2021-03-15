@@ -6,8 +6,8 @@ Add your credentials to the appropriate columns for the environment(s) the scrip
 
 	* RCCUsername
 	* RCCPassword
-	* CSPUsername
-	* CSPPassword
+	* CPAUsername
+	* CPAPassword
 	* dbUsername
 	* dbPassword
 	* GmailAddress

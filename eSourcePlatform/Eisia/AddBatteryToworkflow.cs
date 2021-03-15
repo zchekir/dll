@@ -49,7 +49,7 @@ namespace Eisia
             WorkflowBlockID = "";
             tabletConfigurationid = "";
             desktopConfigurationid = "";
-            CSPDOM = "";
+            CPADOM = "";
         }
 
         /// <summary>
@@ -158,16 +158,16 @@ namespace Eisia
             set { _desktopConfigurationid = value; }
         }
 
-        string _CSPDOM;
+        string _CPADOM;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPDOM.
+        /// Gets or sets the value of variable CPADOM.
         /// </summary>
         [TestVariable("e43f1de6-b235-4bc5-9a5f-0db403946a32")]
-        public string CSPDOM
+        public string CPADOM
         {
-            get { return _CSPDOM; }
-            set { _CSPDOM = value; }
+            get { return _CPADOM; }
+            set { _CPADOM = value; }
         }
 
 #endregion

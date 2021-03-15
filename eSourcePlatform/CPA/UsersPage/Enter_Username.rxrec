@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e8baed63-acfc-4c88-981f-7e62ff4efa50"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Enter_Username
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Enter_Username"
+	namespace="CPA.UsersPage">
+	</codegen>
+	<variables>
+		<var
+		id="2b48007a-3e7e-407b-a25b-545d93908445"
+		name="Username">
+		</var>
+		<var
+		id="4c5e514d-358a-4119-949c-e61c9aea6e9b"
+		name="RandNum">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="1ms"
+		optional="False"
+		searchpropertyid="bdf65ea4-90b8-414b-8f7e-fc5d01f83c72"
+		sx="-882"
+		sy="-848"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f11b7715-6596-46fb-b4a1-d894cab9fbff"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="1"
+				prefcap="inputtag"
+				rect="-958,-863,590,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-minlength
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						formly_1_input_username_0
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						formly_1_input_username_0
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						email
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="formly-custom-validation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="formly-focus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="minlength"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-maxlength"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//input[#'formly_1_input_username_0']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="06d5ace2-f2ff-4935-b0fd-ce6ba1807c92">
+				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
+PcPYVO34r/M2KKx/t97/AM+lx+X/ANjR9vvf+fS4/L/7Gjmj3D2FTt+K/wAzYorH+33v/Ppcfl/9
+jR9vvf8An0uPy/8AsaOaPcPYVO34r/M2KKx/t97/AM+lx+X/ANjR9vvf+fS4/L/7Gjmj3D2FTt+K
+/wAzYorH+33v/Ppcfl/9jR9vvf8An0uPy/8AsaOaPcPYVO34r/M2KKx/t97/AM+lx+X/ANjR9vvf
++fS4/L/7Gjmj3D2FTt+K/wAzYorH+33v/Ppcfl/9jR9vvf8An0uPy/8AsaOaPcPYVO34r/M2KKx/
+t97/AM+lx+X/ANjR9vvf+fS4/L/7Gjmj3D2FTt+K/wAzYorH+33v/Ppcfl/9jRRzR7h7Cp2/Ff5m
+vRRRVGAVHOpe3kVRkspA/KpKKAImuCilmgkAHuv+NQ/2jH/zyl/If41aIBGDSeWn90Uhlb+0Y/8A
+nlL+Q/xo/tGP/nlL+Q/xqz5af3RR5af3RQBW/tGP/nlL+Q/xo/tGP/nlL+Q/xqz5af3RR5af3RQB
+W/tGP/nlL+Q/xo/tGP8A55S/kP8AGrPlp/dFHlp/dFAFb+0Y/wDnlL+Q/wAaP7Rj/wCeUv5D/GrP
+lp/dFHlp/dFAFb+0Y/8AnlL+Q/xo/tGP/nlL+Q/xqz5af3RR5af3RQBW/tGP/nlL+Q/xo/tGP/nl
+L+Q/xqz5af3RR5af3RQBW/tGP/nlL+Q/xo/tGP8A55S/kP8AGrPlp/dFHlp/dFAGfPcLcTwlUdQp
+Odw9cVojoKTy0/uinUAFFFFMQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/
+2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="dwoodxog{Back}{Back}{Back}cogstate@{LShiftKey up}gmail.com"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="1ms"
+		searchpropertyid="32987728-5a34-41d6-be48-4ea80fbac677">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Username">
+				</binding>
+			</bindings>
+			<info
+			id="f11b7715-6596-46fb-b4a1-d894cab9fbff"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="1"
+				prefcap="inputtag"
+				rect="-958,-863,590,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-pristine ng-untouched ng-valid-email ng-invalid ng-invalid-required ng-valid-maxlength ng-valid-minlength
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						formly_1_input_username_0
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						formly_1_input_username_0
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						email
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="formly-custom-validation"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="formly-focus"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="minlength"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-maxlength"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain=$DOM]//input[#'formly_1_input_username_0']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="+"
+		duration="10ms"
+		enabled="True"
+		optional="False"
+		presstime="1ms"
+		searchpropertyid="58c5154e-5310-4424-9156-1510af41e3f0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f11b7715-6596-46fb-b4a1-d894cab9fbff"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_input_username_0']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="10ms"
+		enabled="True"
+		optional="False"
+		presstime="1ms"
+		searchpropertyid="3206551a-5b42-4031-9fd2-cc57ceb14992">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="RandNum">
+				</binding>
+			</bindings>
+			<info
+			id="f11b7715-6596-46fb-b4a1-d894cab9fbff"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_input_username_0']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="@gmail.com"
+		duration="10ms"
+		enabled="True"
+		optional="False"
+		presstime="1ms"
+		searchpropertyid="70a47fc5-c343-47d2-9028-18fb3fac5b12">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f11b7715-6596-46fb-b4a1-d894cab9fbff"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'ng-app']/tag/div/div//input[@id~'formly_[0-9]+_input_username_0']
+				</path>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="61ece0e2-4c32-4e54-80e0-7eeaa3e182b4"
+	name="CPARepository"
+	relativepath="..\CPARepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="CPARepository"
+		namespace="CPA">
+		</codegen>
+		<rootfolder
+		id="ad46f1c9-823e-493b-84e7-021e0749856a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Enter_Username.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

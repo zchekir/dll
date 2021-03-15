@@ -41,7 +41,7 @@ namespace DCT.Single_Sign_In
         /// </summary>
         public Enter_Password()
         {
-            CSPPassword = "";
+            CPAPassword = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace DCT.Single_Sign_In
 
 #region Variables
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("e3078aeb-57b5-4e52-b373-20e5fca1b1ba")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
 #endregion
@@ -95,8 +95,8 @@ namespace DCT.Single_Sign_In
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(0));
             Delay.Duration(500, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CSPPassword' with focus on 'SignInToYourAccount.PasswordField'.", repo.SignInToYourAccount.PasswordFieldInfo, new RecordItemIndex(1));
-            repo.SignInToYourAccount.PasswordField.PressKeys(CSPPassword);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CPAPassword' with focus on 'SignInToYourAccount.PasswordField'.", repo.SignInToYourAccount.PasswordFieldInfo, new RecordItemIndex(1));
+            repo.SignInToYourAccount.PasswordField.PressKeys(CPAPassword);
             Delay.Milliseconds(0);
             
         }

@@ -44,8 +44,8 @@ namespace ReportingLayer.AcademicExtract
             TestIdentifier = "E00C148B-3D73-44E0-8AC9-024C50AB397B";
             DBServer = "cgst-qc.database.windows.net";
             RptDatabase = "cgst-bear-rpt";
-            CSPUsername = "zchekir@cogstate.com";
-            CSPPassword = "Cogstate2016";
+            CPAUsername = "zchekir@cogstate.com";
+            CPAPassword = "Cogstate2016";
             Authentication = "Active Directory Password";
         }
 
@@ -95,16 +95,16 @@ namespace ReportingLayer.AcademicExtract
             set { _RptDatabase = value; }
         }
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("e97c2288-b590-45f3-917f-8d5240416341")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
         string _Authentication;
@@ -120,13 +120,13 @@ namespace ReportingLayer.AcademicExtract
         }
 
         /// <summary>
-        /// Gets or sets the value of variable CSPUsername.
+        /// Gets or sets the value of variable CPAUsername.
         /// </summary>
         [TestVariable("daf603e2-eb88-46f1-8eca-e2b4bce773ea")]
-        public string CSPUsername
+        public string CPAUsername
         {
-            get { return repo.CSPUsername; }
-            set { repo.CSPUsername = value; }
+            get { return repo.CPAUsername; }
+            set { repo.CPAUsername = value; }
         }
 
 #endregion
@@ -155,7 +155,7 @@ namespace ReportingLayer.AcademicExtract
 
             Init();
 
-            CheckPending(DBServer, RptDatabase, CSPUsername, CSPPassword, Authentication);
+            CheckPending(DBServer, RptDatabase, CPAUsername, CPAPassword, Authentication);
             Delay.Milliseconds(0);
             
         }

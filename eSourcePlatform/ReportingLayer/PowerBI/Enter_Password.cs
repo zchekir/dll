@@ -41,7 +41,7 @@ namespace ReportingLayer.PowerBI
         /// </summary>
         public Enter_Password()
         {
-            CSPPassword = "";
+            CPAPassword = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace ReportingLayer.PowerBI
 
 #region Variables
 
-        string _CSPPassword;
+        string _CPAPassword;
 
         /// <summary>
-        /// Gets or sets the value of variable CSPPassword.
+        /// Gets or sets the value of variable CPAPassword.
         /// </summary>
         [TestVariable("a69c7d33-973e-41ed-9b0b-3ff6d63df5d5")]
-        public string CSPPassword
+        public string CPAPassword
         {
-            get { return _CSPPassword; }
-            set { _CSPPassword = value; }
+            get { return _CPAPassword; }
+            set { _CPAPassword = value; }
         }
 
 #endregion

@@ -54,7 +54,7 @@ namespace Eisia
         {
         		Report.Log(ReportLevel.Info, "BlockID " + BlockID );
             //variable
-		    string url = "https://" + CSPDOM +"/api/workflows/"+WorkflowID +"/workflowBlocks/"+ BlockID;
+		    string url = "https://" + CPADOM +"/api/workflows/"+WorkflowID +"/workflowBlocks/"+ BlockID;
 		     
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
