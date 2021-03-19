@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8b3d81f1-d158-436b-9635-1a15ea79fbe8"
+mode="Global"
+rxversion="8.3">
+	<name>
+		OpenS3Bucket
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenS3Bucket"
+	namespace="Eisia.APIModules">
+	</codegen>
+	<variables>
+		<var
+		id="e8ae7b02-e985-49f0-ae06-59a99faa9d42"
+		name="DOM">
+		</var>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="f34d47ec-da17-403a-a924-0231f9262df3"
+	name="EisiaRepository"
+	relativepath="..\EisiaRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="EisiaRepository"
+		namespace="Eisia">
+		</codegen>
+		<rootfolder
+		id="e5685f81-f17a-4d8f-b73b-bdad3f8c32d5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenS3Bucket.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
