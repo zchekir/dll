@@ -207,6 +207,7 @@ namespace RedCapCloud
             RedCapCloudRepositoryFolders.EventDefTableFolder _eventdeftable;
             RepoItemInfo _mystudiestitleInfo;
             RepoItemInfo _addstudybuttonInfo;
+            RepoItemInfo _currentstudynameInfo;
             RepoItemInfo _logoutrccInfo;
             RepoItemInfo _logoutbuttonInfo;
             RepoItemInfo _sitestabInfo;
@@ -255,6 +256,7 @@ namespace RedCapCloud
                 _eventdeftable = new RedCapCloudRepositoryFolders.EventDefTableFolder(this);
                 _mystudiestitleInfo = new RepoItemInfo(this, "MyStudiesTitle", ".//div[#'gwtWrapper']//div/table//div[@innertext='My Studies']", 30000, null, "a862ea4b-e3d0-46e0-9253-c22a1a4973b7");
                 _addstudybuttonInfo = new RepoItemInfo(this, "AddStudyButton", ".//button[#'studiesListAbstract_buttonAdd']", 30000, null, "04f7ce87-69a8-4c62-b147-f3cc88553b26");
+                _currentstudynameInfo = new RepoItemInfo(this, "CurrentStudyName", ".//div[#'gwtWrapper']//div[@class='topDetails']/div/div[1]", 30000, null, "f57a5301-a23e-4e24-b2e7-a11e4f7bdbb3");
                 _logoutrccInfo = new RepoItemInfo(this, "LogoutRCC", ".//button[#'dropDownButton_button_userSettings']", 30000, null, "dc7fa4ec-8022-4ced-9546-81d3c757aec1");
                 _logoutbuttonInfo = new RepoItemInfo(this, "LogoutButton", ".//li[#'dropDownButton_popupMenuItem_logout']/a[@innertext='Logout']", 30000, null, "2142ea80-e72e-4f44-8319-49ca58782f8c");
                 _sitestabInfo = new RepoItemInfo(this, "SitesTab", ".//div[#'studyBaseWidget_topLinkName_sites']/a[@innertext='Sites']", 30000, null, "57358e7f-6ebc-427c-a4ee-9e906dc14092");
@@ -351,6 +353,30 @@ namespace RedCapCloud
                 get
                 {
                     return _addstudybuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CurrentStudyName item.
+            /// </summary>
+            [RepositoryItem("f57a5301-a23e-4e24-b2e7-a11e4f7bdbb3")]
+            public virtual Ranorex.DivTag CurrentStudyName
+            {
+                get
+                {
+                    return _currentstudynameInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CurrentStudyName item info.
+            /// </summary>
+            [RepositoryItemInfo("f57a5301-a23e-4e24-b2e7-a11e4f7bdbb3")]
+            public virtual RepoItemInfo CurrentStudyNameInfo
+            {
+                get
+                {
+                    return _currentstudynameInfo;
                 }
             }
 
