@@ -5979,6 +5979,92 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="87bcc712-a7a5-4598-8b1b-b3f629547537"
+			name="EmailModule"
+			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Subject"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendPdfReportOnComplete"
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="GmailAddress "
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword "
+					datasourceid="8bffe31a-a804-4816-ba9a-5746e90f5a55"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="88585e7e-b36d-4663-8233-d94cc1056a5b"
 			name="InternalUserCreation"
 			ref="ef258eb9-653e-42c5-9800-82552a0d53b2"
@@ -7838,6 +7924,14 @@ rxversion="8.3">
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<smartfoldernode
+			datarangeactive="True"
+			datasource="TenantConnector"
+			id="bdee7b0e-915d-4dce-a5ef-b0cb4d53c966"
+			maxrange="0"
+			minrange="0"
+			name="GenerateSmokeTestReport">
+			</smartfoldernode>
 			<testmodule
 			id="bdf3a068-b690-4b52-83f8-c6d46af5560f"
 			name="Begin_Workflow"
@@ -7981,6 +8075,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="c01f7bdf-7c7e-4b39-b11f-78aa86066c5f"
+			name="PDFReport1">
+			</testcase>
 			<testcase
 			id="c0694b11-628b-4de5-82ea-baeb3da8570d"
 			name="AddStudyToExternalUser">
@@ -12607,6 +12705,18 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
+						<smartfoldernode
+						id="bdee7b0e-915d-4dce-a5ef-b0cb4d53c966"
+						name="GenerateSmokeTestReport">
+							<testcase
+							id="c01f7bdf-7c7e-4b39-b11f-78aa86066c5f"
+							name="PDFReport1">
+								<testmodule
+								id="87bcc712-a7a5-4598-8b1b-b3f629547537"
+								name="EmailModule">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -13292,6 +13402,12 @@ rxversion="8.3">
 				</column>
 				<column>
 					RCCVersionQuery&#32;
+				</column>
+				<column>
+					GmailAddress&#32;
+				</column>
+				<column>
+					GmailPassword&#32;
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
