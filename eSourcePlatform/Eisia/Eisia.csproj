@@ -401,6 +401,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>97a1684a-0333-4dd7-b3dc-037f062a1b9a</id>
     </Content>
+    <Content Include="EisiaAuthentication.csv">
+      <Link>EisiaAuthentication.csv</Link>
+      <BoundTo>92686ce6-e59c-4203-b1ae-0f43b48c3d04</BoundTo>
+      <DependentUpon>Eisai_.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>af37e9fa-4519-48bd-ae21-43b94b7b406c</id>
+    </Content>
     <None Include="EisiaRepository.rximg">
       <BoundTo>d3ba5b8e-5c6a-41f6-bc88-4d11fabfb938</BoundTo>
       <DependentUpon>EisiaRepository.rxrep</DependentUpon>
@@ -426,6 +433,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>95f68f8c-924a-4dd8-837b-7238c10e4e78</id>
     </Content>
+    <Content Include="JSON.csv">
+      <Link>JSON.csv</Link>
+      <BoundTo>92686ce6-e59c-4203-b1ae-0f43b48c3d04</BoundTo>
+      <DependentUpon>Eisai_.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>724d4fe2-36d3-4826-9d6d-1519ede6c5ab</id>
+    </Content>
     <None Include="packages.config">
       <id>71e6487e-422e-4678-8e30-d51b1efc36ca</id>
     </None>
@@ -443,13 +457,20 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>7cdc7c97-ff49-45b6-ae7e-42a2b9d50985</id>
     </Content>
+    <Content Include="TenantConnector.csv">
+      <Link>TenantConnector.csv</Link>
+      <BoundTo>92686ce6-e59c-4203-b1ae-0f43b48c3d04</BoundTo>
+      <DependentUpon>Eisai_.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>3ded5c88-3ea0-4d9e-90c7-be2dcf130fce</id>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Eisia.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>40f10745-5699-40db-9bec-20a5aaea7e47</id>
     </Content>
-    <Content Include="Eisia.rxtst">
+    <Content Include="Eisai_.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>92686ce6-e59c-4203-b1ae-0f43b48c3d04</id>
     </Content>
