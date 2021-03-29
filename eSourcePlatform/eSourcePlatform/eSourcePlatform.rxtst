@@ -1126,12 +1126,6 @@ rxversion="8.3">
 			id="3de66789-7fb1-4996-8500-81d43a94cc32"
 			name="LogoutAzure">
 			</testcase>
-			<testcase
-			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51"
-			maxrange="0"
-			minrange="0"
-			name="OpenStudy(NewStudy)">
-			</testcase>
 			<testmodule
 			id="40df1ce9-06cd-4b1a-9864-a9d6123fe659"
 			name="Validate_WorkflowEntry"
@@ -1625,7 +1619,7 @@ rxversion="8.3">
 			id="63a0768d-8632-409b-adbf-fe7850003e81"
 			maxrange="0"
 			minrange="0"
-			name="SmokeTest">
+			name="Smoke">
 			</smartfoldernode>
 			<testmodule
 			id="63a0f76b-d78a-4cdc-ae48-3082a5ed4fdc"
@@ -1641,9 +1635,32 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="6410241c-0f7d-4a31-a546-7170c584bd0d"
+			name="Extract_StudyName"
+			ref="0bd8bd1e-14c6-4337-bbdf-564511070821"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="dea7be83-23a0-4db3-8b9f-17a4777bc352"
+					variablename="StudyName">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="64ae0aaa-5d24-4a4c-bf10-284c21c25fb9"
+			maxrange="0"
+			minrange="0"
 			name="Create_New_Study_RCC">
 			</smartfoldernode>
 			<testmodule
@@ -1785,33 +1802,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="6b3c9c40-39da-4d02-a759-818d87d97393"
-			name="Select_Study"
-			ref="36e2b5b5-2490-454c-9786-d8f2759ac9c9"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="RandNum"
-					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
-					variableid="d820780f-6115-40b8-8278-c22d3703bd0c"
-					variablename="RandNum">
-					</var>
-					<var
-					dataname="ProjectName"
-					datasourceid="50c93b54-b148-431a-bc29-2693e6c16df1"
-					variableid="c79bec5d-144b-4142-be36-50ddfe893386"
-					variablename="ProjectName">
-					</var>
-					<var
-					dataname="CPADOM"
-					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
-					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
-					variablename="CPADOM">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="6b73edec-c2e9-46a7-96ea-07c4b43c733e"
 			name="Validate_EventDef_Entry"
 			ref="37dd7361-8db1-4913-bf3c-88aa453cf877"
@@ -1924,6 +1914,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6d11a456-1af3-461f-a494-f5ab5cd257a8"
+			name="Click_MyStudies"
+			ref="c36154b1-5132-4fd1-83dc-8e8a03b3ea31"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6efde52d-43f3-41ef-9785-abebbc5fff5b"
 			name="Click_Begin_Battery"
 			ref="2b14562d-5308-4bf4-b87a-01f8d4b29606"
@@ -1968,16 +1972,16 @@ rxversion="8.3">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="ExistingStudy"
-					datasourceid="33eaead4-5b16-4310-9379-d36bb39bb9ee"
-					variableid="2f6dab4e-6039-4a62-a02b-3d61b7395d34"
-					variablename="ExistingStudy">
-					</var>
-					<var
 					dataname="CPADOM"
 					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 					variableid="f54fbb85-c5ac-4f6a-98d6-049472b68327"
 					variablename="CPADOM">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="2f6dab4e-6039-4a62-a02b-3d61b7395d34"
+					variablename="ExistingStudy">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2555,7 +2559,7 @@ rxversion="8.3">
 			id="963c8551-514c-4fc5-b5b5-9a2a8842639e"
 			maxrange="0"
 			minrange="0"
-			name="Use_Existing_Study_RCC">
+			name="Use_Existing_RCC_Study">
 			</smartfoldernode>
 			<testmodule
 			id="969e0cf8-a9bc-4a30-b941-702849b23b69"
@@ -3071,12 +3075,10 @@ rxversion="8.3">
 			name="Configure_Battery">
 			</testcase>
 			<testcase
-			datarangeactive="True"
-			datasource="RCCConnector"
 			id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed"
 			maxrange="0"
 			minrange="0"
-			name="OpenStudy(ExistingStudy)">
+			name="OpenStudy">
 			</testcase>
 			<testmodule
 			id="b3dbbf74-a2c2-49db-bec2-76eb7f53f0b4"
@@ -3606,6 +3608,10 @@ rxversion="8.3">
 					value="">
 					</param>
 					<param
+					name="StudyName"
+					value="">
+					</param>
+					<param
 					name="DCTSubject"
 					value="">
 					</param>
@@ -3619,6 +3625,26 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="cefb4692-b783-47b3-806b-84c5109a8995"
+			name="Extract_StudyName"
+			ref="0bd8bd1e-14c6-4337-bbdf-564511070821"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RCCDOM"
+					datasourceid="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
+					variableid="6f24cf1a-0e47-4c45-9ce6-3e042db234d2"
+					variablename="RCCDOM">
+					</var>
+					<var
+					dataname="StudyName"
+					datasourceid="ce275134-0e11-43d7-9327-ac7e69d5983d"
+					variableid="dea7be83-23a0-4db3-8b9f-17a4777bc352"
+					variablename="StudyName">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="cf467690-fdc1-4316-862a-522d1a3c56dc"
 			name="Click_CompositeOutcomes"
@@ -3639,7 +3665,7 @@ rxversion="8.3">
 			</testcase>
 			<smartfoldernode
 			id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64"
-			name="Loginto_RCC">
+			name="Login_to_RCC">
 			</smartfoldernode>
 			<modulegroup
 			id="d07c24a5-1675-48e6-a96c-b8e016f9aef3"
@@ -3716,7 +3742,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
-			name="Validate_CPA_API&amp;Client_Versions">
+			name="Validate_API&amp;Client_Versions">
 			</smartfoldernode>
 			<testmodule
 			id="d37bb936-13b5-45c6-b91c-6dfc11424be2"
@@ -4264,8 +4290,11 @@ rxversion="8.3">
 			name="CDMKdu">
 			</testcase>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="efa1cf54-9733-453c-ae88-55402cf6ea80"
+			maxrange="0"
+			minrange="0"
 			name="Configure_Study_RCC">
 			</smartfoldernode>
 			<testmodule
@@ -4284,7 +4313,7 @@ rxversion="8.3">
 			</testmodule>
 			<smartfoldernode
 			id="f0e6cd95-e43c-4dc5-92b9-89effb525c4d"
-			name="NewStudyCreation">
+			name="Create_New_RCC_Study">
 			</smartfoldernode>
 			<testmodule
 			id="f2b3ebcc-a779-48ae-b854-36ecf764a6b3"
@@ -4398,6 +4427,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="f9c0912c-d117-436f-80f5-4feac02c8a34"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="faa8e15f-0cf9-4d2c-ada3-06559cf677a0"
 			name="Click_Logout"
@@ -4433,8 +4466,11 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			datarangeactive="True"
 			datasource="RCCConnector"
 			id="fca09944-a8c2-4c34-8714-8e5871e85452"
+			maxrange="0"
+			minrange="0"
 			name="Complete_Assessment">
 			</smartfoldernode>
 			<testcase
@@ -4474,10 +4510,10 @@ rxversion="8.3">
 					name="eSourcePlatform_Tests">
 						<smartfoldernode
 						id="63a0768d-8632-409b-adbf-fe7850003e81"
-						name="SmokeTest">
+						name="Smoke">
 							<smartfoldernode
 							id="d31bc4f7-6fea-47d1-b682-f1e1d6c3f874"
-							name="Validate_CPA_API&amp;Client_Versions">
+							name="Validate_API&amp;Client_Versions">
 								<testcase
 								id="7b36cbf5-ea65-4477-8761-85c48415c8f2"
 								name="API&amp;Client_Version">
@@ -4533,7 +4569,7 @@ rxversion="8.3">
 							</smartfoldernode>
 							<smartfoldernode
 							id="cfffd82d-8bb8-483d-a2db-4ba55c89cc64"
-							name="Loginto_RCC">
+							name="Login_to_RCC">
 								<testcase
 								id="f4d4c449-c0cd-40ed-90ee-f2190874ac70"
 								name="OpenBrowser_Login">
@@ -4553,7 +4589,7 @@ rxversion="8.3">
 							</smartfoldernode>
 							<smartfoldernode
 							id="963c8551-514c-4fc5-b5b5-9a2a8842639e"
-							name="Use_Existing_Study_RCC">
+							name="Use_Existing_RCC_Study">
 								<testcase
 								id="9971752f-f697-47c2-b4be-09bdab1f18a2"
 								name="Search_RCC_Study">
@@ -4681,6 +4717,10 @@ rxversion="8.3">
 									id="aff70e50-a066-4823-89b4-d10a82023b9c"
 									name="Extract_TestIdentifier">
 									</testmodule>
+									<testmodule
+									id="6410241c-0f7d-4a31-a546-7170c584bd0d"
+									name="Extract_StudyName">
+									</testmodule>
 								</testcase>
 								<teardown
 								id="e9cf0869-29f7-4126-9c19-28a22d48d231"
@@ -4735,16 +4775,8 @@ rxversion="8.3">
 									</modulegroup>
 								</setup>
 								<testcase
-								id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51"
-								name="OpenStudy(NewStudy)">
-									<testmodule
-									id="6b3c9c40-39da-4d02-a759-818d87d97393"
-									name="Select_Study">
-									</testmodule>
-								</testcase>
-								<testcase
 								id="b32bf141-e74c-4f08-a89a-dc76fe42c2ed"
-								name="OpenStudy(ExistingStudy)">
+								name="OpenStudy">
 									<testmodule
 									id="73fa39bd-441c-443f-ad44-ab28f3140695"
 									name="Select_Existing_Study">
@@ -4921,7 +4953,7 @@ rxversion="8.3">
 							</smartfoldernode>
 							<smartfoldernode
 							id="f0e6cd95-e43c-4dc5-92b9-89effb525c4d"
-							name="NewStudyCreation">
+							name="Create_New_RCC_Study">
 								<smartfoldernode
 								id="64ae0aaa-5d24-4a4c-bf10-284c21c25fb9"
 								name="Create_New_Study_RCC">
@@ -5525,13 +5557,25 @@ rxversion="8.3">
 										name="Extract_TestIdentifier">
 										</testmodule>
 										<testmodule
-										id="faa8e15f-0cf9-4d2c-ada3-06559cf677a0"
-										name="Click_Logout">
+										id="6d11a456-1af3-461f-a494-f5ab5cd257a8"
+										name="Click_MyStudies">
 										</testmodule>
 										<testmodule
-										id="c17879b6-c169-4bfb-81f7-fbdcbc3335fb"
-										name="Close_Browser">
+										id="cefb4692-b783-47b3-806b-84c5109a8995"
+										name="Extract_StudyName">
 										</testmodule>
+										<teardown
+										id="f9c0912c-d117-436f-80f5-4feac02c8a34"
+										name="teardown">
+											<testmodule
+											id="faa8e15f-0cf9-4d2c-ada3-06559cf677a0"
+											name="Click_Logout">
+											</testmodule>
+											<testmodule
+											id="c17879b6-c169-4bfb-81f7-fbdcbc3335fb"
+											name="Close_Browser">
+											</testmodule>
+										</teardown>
 									</testcase>
 								</smartfoldernode>
 							</smartfoldernode>
@@ -6119,9 +6163,6 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="3de66789-7fb1-4996-8500-81d43a94cc32">
-			</testcontainer>
-			<testcontainer
-			id="3e2d4ad9-4c48-4c24-b6f4-94335fe76b51">
 			</testcontainer>
 			<testcontainer
 			id="55147f8c-d135-4d41-8aa7-dbb8b8579f0f">
