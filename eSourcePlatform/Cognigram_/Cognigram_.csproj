@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{378A8BFD-47CA-4680-BFEF-853828F8D369}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Cognigram_</RootNamespace>
+    <AssemblyName>Cognigram_</AssemblyName>
+    <RanorexVersion>8.3</RanorexVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>592f0892-f004-4620-9280-a638f008c2ab</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper">
+      <HintPath>..\..\_assets\engine\bin\Debug\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="engine">
+      <HintPath>..\..\_assets\engine\bin\Debug\engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Engine">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.Build.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Azure\.NET SDK\v2.9\bin\plugins\Diagnostics\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\..\_assets\engine\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Vse.Web.Serialization">
+      <HintPath>..\packages\Vse.Web.Serialization.ControlledSerializationJsonConverter.1.0.4\lib\net45\Vse.Web.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>979af83a-2885-4d33-81bd-708cf9eb3f03</id>
+    </Compile>
+    <Compile Include="CognigramDB.cs">
+      <BoundTo>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</BoundTo>
+      <DependentUpon>CognigramDB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb5e40a4-23be-4490-92cb-595b7b3db438</id>
+    </Compile>
+    <Compile Include="CognigramDB.UserCode.cs">
+      <BoundTo>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</BoundTo>
+      <DependentUpon>CognigramDB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e457b0f-08b3-4267-bd45-a038cc291032</id>
+    </Compile>
+    <Compile Include="CognigramVersion.cs">
+      <BoundTo>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</BoundTo>
+      <DependentUpon>CognigramVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6acbf45-9e5f-4d91-9355-f44386bbcd5e</id>
+    </Compile>
+    <Compile Include="CognigramVersion.UserCode.cs">
+      <BoundTo>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</BoundTo>
+      <DependentUpon>CognigramVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b6ab1540-9366-4272-91e7-9f1fed2b0da9</id>
+    </Compile>
+    <Compile Include="Cognigram_Repository.cs">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <DependentUpon>Cognigram_Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>d6e160c1-a013-4f6c-a4e7-1cf7fd615051</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>778f5545-9322-4e86-88f4-a528710c8258</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>827cb9cd-7448-4c52-bb5e-235507fc2392</id>
+    </None>
+    <Content Include="Authentication.csv">
+      <Link>Authentication.csv</Link>
+      <BoundTo>942159bd-16d3-43fb-a311-d3f768046c78</BoundTo>
+      <DependentUpon>Cognigram_.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>6f9b5d6a-4d0e-4f05-aa58-7b0d70d2cf8c</id>
+    </Content>
+    <None Include="CognigramDB.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</id>
+      <recordtableid>8a955ca1-40f8-4b85-a9a2-cdf3d88f8150</recordtableid>
+    </None>
+    <None Include="CognigramVersion.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</id>
+      <recordtableid>142d725c-ef33-4494-8ec0-f8f521f8c742</recordtableid>
+    </None>
+    <None Include="Cognigram_Repository.rximg">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <DependentUpon>Cognigram_Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d28e93fa-59b2-40e9-84f9-226c5e12df75</id>
+    </None>
+    <None Include="Cognigram_Repository.rxrep">
+      <id>592f0892-f004-4620-9280-a638f008c2ab</id>
+      <repoid>7ec8ac77-0537-42e3-8711-25309bb5ee4b</repoid>
+      <reporootid>6393894a-fb1a-4927-9af0-89a1bd175268</reporootid>
+    </None>
+    <Content Include="TenantConnector.csv">
+      <Link>TenantConnector.csv</Link>
+      <BoundTo>942159bd-16d3-43fb-a311-d3f768046c78</BoundTo>
+      <DependentUpon>Cognigram_.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>4e0a20e1-aa16-4fe5-8adb-e6c7fdf80c53</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cognigram_.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c26d09d6-a886-43a0-b072-b128bec07fcc</id>
+    </Content>
+    <Content Include="Cognigram_.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>942159bd-16d3-43fb-a311-d3f768046c78</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
