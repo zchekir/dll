@@ -51,9 +51,234 @@ RQMFQ5SFzvg957e1yebCX2U95BxDvOO0Ido+Q4+0L355ynxamTZnyM2/rf3voagf2nKwO/rr1QsA
 AAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="005b1415-4ec6-46d0-9e84-315c241b4523"
+		isrooted="True"
+		name="COGNIGRAM"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="21874412-2c91-426c-bfea-b3ed988cb487"
+			isrooted="True"
+			name="Loginbox"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="bc66c19a-0a8a-4b1b-9c14-456e1be30946"
+				name="ForgotPassword"
+				refimgid="e184c94b-54e9-4c91-b1f3-293d1660b922"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]/?/?/form[@name='loginForm']/div[6]/?/?/a[@innertext='Forgot password?']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="d331b269-8cad-4396-82b3-744b0456ad05"
+				name="EnterEmail"
+				refimgid="5f753f27-2941-43d0-a96c-afe51b79e5fa"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]/?/?/form[@name='forgotPasswordForm']/div[2]/div[1]/?/?/input[@name='inputEmail']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="29a0cabb-dd6a-46ff-b7b4-e7a01c0e805b"
+				name="ClickContinueButton"
+				refimgid="b188ce37-6306-479f-85e1-102ea325b0d4"
+				refpath="/dom[@domain='cshc-qc.azurewebsites.net']//div[#'bodyContent']/div/div/div/div/tag[@tagname='cog-login']/div[1]/div/div[1]/div/form[@name='forgotPasswordForm']/div[2]/div[2]/div/button[@innertext='Continue']"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]/?/?/form[@name='forgotPasswordForm']/div[2]/div[2]/?/?/button[@innertext='Continue']
+				</item>
+				<basepath>
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain=$DOM]
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="7b19a430-d9f5-4eee-8777-0d0348a810fb"
+		isrooted="True"
+		name="GmailEmailFromGoogle"
+		refpath="/dom[@domain='www.google.com' and @caption='Gmail - Email from Google']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="ef58d43c-7388-434e-b4b1-38a51901bd34"
+			name="ClickGmailSingIn"
+			refimgid="b1ea2376-5c3a-4784-8e46-9556b3235dd5"
+			refpath="/dom[@domain='www.google.com' and @caption='Gmail - Email from Google']/body/div[2]/div[1]/div[4]/ul[1]/li[2]/a[@innertext='            Sign in          ']"
+			searchtimeout="30000ms">
+				/dom[@caption='Gmail - Email from Google']/body/div[2]/div[1]/div[4]/ul[1]/?/?/a[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ Sign\ in\ \ \ \ ']
+			</item>
+			<basepath>
+				/dom[@caption='Gmail - Email from Google']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="0eb33644-34af-432c-a620-c9489d5b79f5"
+		isrooted="True"
+		name="Gmail"
+		refpath="/dom[@domain='accounts.google.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ecc6fb7d-feb5-45b0-8934-f2f0f769477a"
+			name="EnterGmailEmail"
+			refimgid="011278d9-a9e9-43ca-8100-68f4878cef70"
+			refpath="/dom[@domain='accounts.google.com']//input[#'identifierId']"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//input[#'identifierId']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="33843c00-a785-4075-91d0-f7c7f048d3d5"
+			name="ClickNext"
+			refimgid="932ff370-fa84-4cf8-85e5-a5732cf1a193"
+			refpath="/dom[@domain='accounts.google.com']//div[#'identifierNext']/div/button/div[2]"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'identifierNext']/?/?/button/div[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="0a45e1fe-f581-47e2-b12a-f39875f98d46"
+			name="EnterGmailPassword"
+			refimgid="748194c9-a33c-4785-8702-db5e7cb00d01"
+			refpath="/dom[@domain='accounts.google.com']//div[#'password']/div[1]/div/div[1]/input[@name='password']"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'password']/div[1]/div/div[1]/input[@name='password']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="c5e5ec69-80ff-428b-b134-f8e4815fc4cd"
+			name="Click_Next"
+			refimgid="e9764ae0-1a5b-4d34-a1e5-acb4a7a2e151"
+			refpath="/dom[@domain='accounts.google.com']//div[#'passwordNext']/div/button/div[2]"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'passwordNext']/?/?/button/div[2]
+			</item>
+			<basepath>
+				/dom[@domain='accounts.google.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ada6a853-6838-4504-bdad-8fb7cd350f8d"
+		isrooted="True"
+		name="InboxCognigramzAtgmailComGmail"
+		refpath="/dom[@domain='mail.google.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="696aa861-ff63-4239-a0b2-0e3fd1ebfccb"
+			name="OpentheEmail"
+			refimgid="62f187a1-68ca-47a2-8fba-e5828f577c89"
+			refpath="/dom[@domain='mail.google.com']//div[#':2j']/span[1]/span[@innertext='Cognigram (DO NOT R.']"
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//div[#':2j']/?/?/span[@innertext='Cognigram (DO NOT R.']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="c5d70f94-a271-419a-8fae-cbfbe73ca575"
+			name="Capture_the_email_"
+			refimgid="cef207eb-d13b-42af-9555-2e3133f97cd4"
+			searchtimeout="30000ms">
+				/dom[@domain='mail.google.com']//div[#':6c']/div[1]/div[2]/div[1]/table/tbody/tr[1]/td[1]/table//span[@innertext~'^healthcaresupport-test@co']
+			</item>
+			<basepath>
+				/dom[@domain='mail.google.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="98466a7c-541b-4a7f-8597-94c097ff6cec"
+		name="DOM">
+			cshc-qc.azurewebsites.net
+		</var>
 	</variables>
 </repository>

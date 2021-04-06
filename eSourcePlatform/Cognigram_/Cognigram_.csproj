@@ -151,30 +151,6 @@
     <Compile Include="AssemblyInfo.cs">
       <id>979af83a-2885-4d33-81bd-708cf9eb3f03</id>
     </Compile>
-    <Compile Include="CognigramDB.cs">
-      <BoundTo>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</BoundTo>
-      <DependentUpon>CognigramDB.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>bb5e40a4-23be-4490-92cb-595b7b3db438</id>
-    </Compile>
-    <Compile Include="CognigramDB.UserCode.cs">
-      <BoundTo>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</BoundTo>
-      <DependentUpon>CognigramDB.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>1e457b0f-08b3-4267-bd45-a038cc291032</id>
-    </Compile>
-    <Compile Include="CognigramVersion.cs">
-      <BoundTo>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</BoundTo>
-      <DependentUpon>CognigramVersion.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d6acbf45-9e5f-4d91-9355-f44386bbcd5e</id>
-    </Compile>
-    <Compile Include="CognigramVersion.UserCode.cs">
-      <BoundTo>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</BoundTo>
-      <DependentUpon>CognigramVersion.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b6ab1540-9366-4272-91e7-9f1fed2b0da9</id>
-    </Compile>
     <Compile Include="Cognigram_Repository.cs">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <DependentUpon>Cognigram_Repository.rxrep</DependentUpon>
@@ -183,6 +159,54 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>778f5545-9322-4e86-88f4-a528710c8258</id>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramDB.cs">
+      <DependentUpon>CognigramDB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb5e40a4-23be-4490-92cb-595b7b3db438</id>
+      <BoundTo>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</BoundTo>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramDB.UserCode.cs">
+      <DependentUpon>CognigramDB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e457b0f-08b3-4267-bd45-a038cc291032</id>
+      <BoundTo>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</BoundTo>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramSecurityCheck.cs">
+      <DependentUpon>CognigramSecurityCheck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11741e35-3e87-4c77-a7a0-9241379b93b3</id>
+      <BoundTo>3adf50a5-33c9-401f-9697-32693e21c68a</BoundTo>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramSecurityCheck.UserCode.cs">
+      <DependentUpon>CognigramSecurityCheck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e96a374-25fa-4c5c-8160-7432d1af6015</id>
+      <BoundTo>3adf50a5-33c9-401f-9697-32693e21c68a</BoundTo>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramEmailValidation.cs">
+      <DependentUpon>CognigramEmailValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72527e4c-3d2e-4355-a569-6ab0ac7d7308</id>
+      <BoundTo>3d4b54a4-409e-4ccd-9ca6-6ca1cdea07ce</BoundTo>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramEmailValidation.UserCode.cs">
+      <DependentUpon>CognigramEmailValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d0258f2c-9c36-46b9-8fd9-294617ec20e3</id>
+      <BoundTo>3d4b54a4-409e-4ccd-9ca6-6ca1cdea07ce</BoundTo>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramVersion.cs">
+      <DependentUpon>CognigramVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6acbf45-9e5f-4d91-9355-f44386bbcd5e</id>
+      <BoundTo>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</BoundTo>
+    </Compile>
+    <Compile Include="SmokTestModules\CognigramVersion.UserCode.cs">
+      <DependentUpon>CognigramVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b6ab1540-9366-4272-91e7-9f1fed2b0da9</id>
+      <BoundTo>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</BoundTo>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -196,16 +220,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>6f9b5d6a-4d0e-4f05-aa58-7b0d70d2cf8c</id>
     </Content>
-    <None Include="CognigramDB.rxrec">
-      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
-      <id>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</id>
-      <recordtableid>8a955ca1-40f8-4b85-a9a2-cdf3d88f8150</recordtableid>
-    </None>
-    <None Include="CognigramVersion.rxrec">
-      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
-      <id>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</id>
-      <recordtableid>142d725c-ef33-4494-8ec0-f8f521f8c742</recordtableid>
-    </None>
     <None Include="Cognigram_Repository.rximg">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <DependentUpon>Cognigram_Repository.rxrep</DependentUpon>
@@ -224,6 +238,26 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>4e0a20e1-aa16-4fe5-8adb-e6c7fdf80c53</id>
     </Content>
+    <None Include="SmokTestModules\CognigramDB.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</id>
+      <recordtableid>8a955ca1-40f8-4b85-a9a2-cdf3d88f8150</recordtableid>
+    </None>
+    <None Include="SmokTestModules\CognigramSecurityCheck.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>3adf50a5-33c9-401f-9697-32693e21c68a</id>
+      <recordtableid>36dae8f8-a806-451b-97f6-6e97c29e3ac6</recordtableid>
+    </None>
+    <None Include="SmokTestModules\CognigramEmailValidation.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>3d4b54a4-409e-4ccd-9ca6-6ca1cdea07ce</id>
+      <recordtableid>62bea32e-5edd-49ad-b537-90752519377f</recordtableid>
+    </None>
+    <None Include="SmokTestModules\CognigramVersion.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</id>
+      <recordtableid>142d725c-ef33-4494-8ec0-f8f521f8c742</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cognigram_.rxtmg">
@@ -234,6 +268,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>942159bd-16d3-43fb-a311-d3f768046c78</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SmokTestModules">
+      <id>138d0987-250d-4087-ad9a-1e4fc893138e</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

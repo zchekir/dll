@@ -23,7 +23,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Cognigram_
+namespace Cognigram_.SmokTestModules
 {
 	public class Coningramversion
 	{

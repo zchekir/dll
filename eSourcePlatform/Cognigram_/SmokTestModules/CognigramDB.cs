@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Cognigram_
+namespace Cognigram_.SmokTestModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace Cognigram_
     public partial class CognigramDB : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the Cognigram_Repository repository.
+        /// Holds an instance of the global::Cognigram_.Cognigram_Repository repository.
         /// </summary>
-        public static Cognigram_Repository repo = Cognigram_Repository.Instance;
+        public static global::Cognigram_.Cognigram_Repository repo = global::Cognigram_.Cognigram_Repository.Instance;
 
         static CognigramDB instance = new CognigramDB();
 

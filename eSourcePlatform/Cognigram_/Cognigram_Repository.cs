@@ -28,6 +28,10 @@ namespace Cognigram_
     {
         static Cognigram_Repository instance = new Cognigram_Repository();
         Cognigram_RepositoryFolders.HowToCreateANewTestSuiteRanoreAppFolder _howtocreateanewtestsuiteranore;
+        Cognigram_RepositoryFolders.COGNIGRAMAppFolder _cognigram;
+        Cognigram_RepositoryFolders.GmailEmailFromGoogleAppFolder _gmailemailfromgoogle;
+        Cognigram_RepositoryFolders.GmailAppFolder _gmail;
+        Cognigram_RepositoryFolders.InboxCognigramzAtgmailComGmailAppFolder _inboxcognigramzatgmailcomgmail;
 
         /// <summary>
         /// Gets the singleton class instance representing the Cognigram_Repository element repository.
@@ -45,9 +49,25 @@ namespace Cognigram_
             : base("Cognigram_Repository", "/", null, 0, false, "6393894a-fb1a-4927-9af0-89a1bd175268", ".\\RepositoryImages\\Cognigram_Repository6393894a.rximgres")
         {
             _howtocreateanewtestsuiteranore = new Cognigram_RepositoryFolders.HowToCreateANewTestSuiteRanoreAppFolder(this);
+            _cognigram = new Cognigram_RepositoryFolders.COGNIGRAMAppFolder(this);
+            _gmailemailfromgoogle = new Cognigram_RepositoryFolders.GmailEmailFromGoogleAppFolder(this);
+            _gmail = new Cognigram_RepositoryFolders.GmailAppFolder(this);
+            _inboxcognigramzatgmailcomgmail = new Cognigram_RepositoryFolders.InboxCognigramzAtgmailComGmailAppFolder(this);
         }
 
 #region Variables
+
+        string _DOM = "cshc-qc.azurewebsites.net";
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("98466a7c-541b-4a7f-8597-94c097ff6cec")]
+        public string DOM
+        {
+            get { return _DOM; }
+            set { _DOM = value; }
+        }
 
 #endregion
 
@@ -70,6 +90,42 @@ namespace Cognigram_
         public virtual Cognigram_RepositoryFolders.HowToCreateANewTestSuiteRanoreAppFolder HowToCreateANewTestSuiteRanore
         {
             get { return _howtocreateanewtestsuiteranore; }
+        }
+
+        /// <summary>
+        /// The COGNIGRAM folder.
+        /// </summary>
+        [RepositoryFolder("005b1415-4ec6-46d0-9e84-315c241b4523")]
+        public virtual Cognigram_RepositoryFolders.COGNIGRAMAppFolder COGNIGRAM
+        {
+            get { return _cognigram; }
+        }
+
+        /// <summary>
+        /// The GmailEmailFromGoogle folder.
+        /// </summary>
+        [RepositoryFolder("7b19a430-d9f5-4eee-8777-0d0348a810fb")]
+        public virtual Cognigram_RepositoryFolders.GmailEmailFromGoogleAppFolder GmailEmailFromGoogle
+        {
+            get { return _gmailemailfromgoogle; }
+        }
+
+        /// <summary>
+        /// The Gmail folder.
+        /// </summary>
+        [RepositoryFolder("0eb33644-34af-432c-a620-c9489d5b79f5")]
+        public virtual Cognigram_RepositoryFolders.GmailAppFolder Gmail
+        {
+            get { return _gmail; }
+        }
+
+        /// <summary>
+        /// The InboxCognigramzAtgmailComGmail folder.
+        /// </summary>
+        [RepositoryFolder("ada6a853-6838-4504-bdad-8fb7cd350f8d")]
+        public virtual Cognigram_RepositoryFolders.InboxCognigramzAtgmailComGmailAppFolder InboxCognigramzAtgmailComGmail
+        {
+            get { return _inboxcognigramzatgmailcomgmail; }
         }
     }
 
@@ -141,6 +197,477 @@ namespace Cognigram_
                 get
                 {
                     return _addressandsearchbarInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The COGNIGRAMAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("005b1415-4ec6-46d0-9e84-315c241b4523")]
+        public partial class COGNIGRAMAppFolder : RepoGenBaseFolder
+        {
+            Cognigram_RepositoryFolders.LoginboxFolder _loginbox;
+
+            /// <summary>
+            /// Creates a new COGNIGRAM  folder.
+            /// </summary>
+            public COGNIGRAMAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("COGNIGRAM", "/dom[@domain=$DOM]", parentFolder, 30000, null, false, "005b1415-4ec6-46d0-9e84-315c241b4523", "")
+            {
+                _loginbox = new Cognigram_RepositoryFolders.LoginboxFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("005b1415-4ec6-46d0-9e84-315c241b4523")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("005b1415-4ec6-46d0-9e84-315c241b4523")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Loginbox folder.
+            /// </summary>
+            [RepositoryFolder("21874412-2c91-426c-bfea-b3ed988cb487")]
+            public virtual Cognigram_RepositoryFolders.LoginboxFolder Loginbox
+            {
+                get { return _loginbox; }
+            }
+        }
+
+        /// <summary>
+        /// The LoginboxFolder folder.
+        /// </summary>
+        [RepositoryFolder("21874412-2c91-426c-bfea-b3ed988cb487")]
+        public partial class LoginboxFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _forgotpasswordInfo;
+            RepoItemInfo _enteremailInfo;
+            RepoItemInfo _clickcontinuebuttonInfo;
+
+            /// <summary>
+            /// Creates a new Loginbox  folder.
+            /// </summary>
+            public LoginboxFolder(RepoGenBaseFolder parentFolder) :
+                    base("Loginbox", ".//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]", parentFolder, 30000, null, false, "21874412-2c91-426c-bfea-b3ed988cb487", "")
+            {
+                _forgotpasswordInfo = new RepoItemInfo(this, "ForgotPassword", "?/?/form[@name='loginForm']/div[6]/?/?/a[@innertext='Forgot password?']", 30000, null, "bc66c19a-0a8a-4b1b-9c14-456e1be30946");
+                _enteremailInfo = new RepoItemInfo(this, "EnterEmail", "?/?/form[@name='forgotPasswordForm']/div[2]/div[1]/?/?/input[@name='inputEmail']", 30000, null, "d331b269-8cad-4396-82b3-744b0456ad05");
+                _clickcontinuebuttonInfo = new RepoItemInfo(this, "ClickContinueButton", "?/?/form[@name='forgotPasswordForm']/div[2]/div[2]/?/?/button[@innertext='Continue']", 30000, null, "29a0cabb-dd6a-46ff-b7b4-e7a01c0e805b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("21874412-2c91-426c-bfea-b3ed988cb487")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("21874412-2c91-426c-bfea-b3ed988cb487")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ForgotPassword item.
+            /// </summary>
+            [RepositoryItem("bc66c19a-0a8a-4b1b-9c14-456e1be30946")]
+            public virtual Ranorex.ATag ForgotPassword
+            {
+                get
+                {
+                    return _forgotpasswordInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ForgotPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("bc66c19a-0a8a-4b1b-9c14-456e1be30946")]
+            public virtual RepoItemInfo ForgotPasswordInfo
+            {
+                get
+                {
+                    return _forgotpasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterEmail item.
+            /// </summary>
+            [RepositoryItem("d331b269-8cad-4396-82b3-744b0456ad05")]
+            public virtual Ranorex.InputTag EnterEmail
+            {
+                get
+                {
+                    return _enteremailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("d331b269-8cad-4396-82b3-744b0456ad05")]
+            public virtual RepoItemInfo EnterEmailInfo
+            {
+                get
+                {
+                    return _enteremailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickContinueButton item.
+            /// </summary>
+            [RepositoryItem("29a0cabb-dd6a-46ff-b7b4-e7a01c0e805b")]
+            public virtual Ranorex.ButtonTag ClickContinueButton
+            {
+                get
+                {
+                    return _clickcontinuebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickContinueButton item info.
+            /// </summary>
+            [RepositoryItemInfo("29a0cabb-dd6a-46ff-b7b4-e7a01c0e805b")]
+            public virtual RepoItemInfo ClickContinueButtonInfo
+            {
+                get
+                {
+                    return _clickcontinuebuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GmailEmailFromGoogleAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7b19a430-d9f5-4eee-8777-0d0348a810fb")]
+        public partial class GmailEmailFromGoogleAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clickgmailsinginInfo;
+
+            /// <summary>
+            /// Creates a new GmailEmailFromGoogle  folder.
+            /// </summary>
+            public GmailEmailFromGoogleAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("GmailEmailFromGoogle", "/dom[@caption='Gmail - Email from Google']", parentFolder, 30000, null, false, "7b19a430-d9f5-4eee-8777-0d0348a810fb", "")
+            {
+                _clickgmailsinginInfo = new RepoItemInfo(this, "ClickGmailSingIn", "body/div[2]/div[1]/div[4]/ul[1]/?/?/a[@innertext~'^\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Sign\\ in\\ \\ \\ \\ ']", 30000, null, "ef58d43c-7388-434e-b4b1-38a51901bd34");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7b19a430-d9f5-4eee-8777-0d0348a810fb")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7b19a430-d9f5-4eee-8777-0d0348a810fb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickGmailSingIn item.
+            /// </summary>
+            [RepositoryItem("ef58d43c-7388-434e-b4b1-38a51901bd34")]
+            public virtual Ranorex.ATag ClickGmailSingIn
+            {
+                get
+                {
+                    return _clickgmailsinginInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickGmailSingIn item info.
+            /// </summary>
+            [RepositoryItemInfo("ef58d43c-7388-434e-b4b1-38a51901bd34")]
+            public virtual RepoItemInfo ClickGmailSingInInfo
+            {
+                get
+                {
+                    return _clickgmailsinginInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The GmailAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0eb33644-34af-432c-a620-c9489d5b79f5")]
+        public partial class GmailAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _entergmailemailInfo;
+            RepoItemInfo _clicknextInfo;
+            RepoItemInfo _entergmailpasswordInfo;
+            RepoItemInfo _click_nextInfo;
+
+            /// <summary>
+            /// Creates a new Gmail  folder.
+            /// </summary>
+            public GmailAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Gmail", "/dom[@domain='accounts.google.com']", parentFolder, 30000, null, false, "0eb33644-34af-432c-a620-c9489d5b79f5", "")
+            {
+                _entergmailemailInfo = new RepoItemInfo(this, "EnterGmailEmail", ".//input[#'identifierId']", 30000, null, "ecc6fb7d-feb5-45b0-8934-f2f0f769477a");
+                _clicknextInfo = new RepoItemInfo(this, "ClickNext", ".//div[#'identifierNext']/?/?/button/div[2]", 30000, null, "33843c00-a785-4075-91d0-f7c7f048d3d5");
+                _entergmailpasswordInfo = new RepoItemInfo(this, "EnterGmailPassword", ".//div[#'password']/div[1]/div/div[1]/input[@name='password']", 30000, null, "0a45e1fe-f581-47e2-b12a-f39875f98d46");
+                _click_nextInfo = new RepoItemInfo(this, "Click_Next", ".//div[#'passwordNext']/?/?/button/div[2]", 30000, null, "c5e5ec69-80ff-428b-b134-f8e4815fc4cd");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0eb33644-34af-432c-a620-c9489d5b79f5")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0eb33644-34af-432c-a620-c9489d5b79f5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterGmailEmail item.
+            /// </summary>
+            [RepositoryItem("ecc6fb7d-feb5-45b0-8934-f2f0f769477a")]
+            public virtual Ranorex.InputTag EnterGmailEmail
+            {
+                get
+                {
+                    return _entergmailemailInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterGmailEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("ecc6fb7d-feb5-45b0-8934-f2f0f769477a")]
+            public virtual RepoItemInfo EnterGmailEmailInfo
+            {
+                get
+                {
+                    return _entergmailemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickNext item.
+            /// </summary>
+            [RepositoryItem("33843c00-a785-4075-91d0-f7c7f048d3d5")]
+            public virtual Ranorex.DivTag ClickNext
+            {
+                get
+                {
+                    return _clicknextInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickNext item info.
+            /// </summary>
+            [RepositoryItemInfo("33843c00-a785-4075-91d0-f7c7f048d3d5")]
+            public virtual RepoItemInfo ClickNextInfo
+            {
+                get
+                {
+                    return _clicknextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterGmailPassword item.
+            /// </summary>
+            [RepositoryItem("0a45e1fe-f581-47e2-b12a-f39875f98d46")]
+            public virtual Ranorex.InputTag EnterGmailPassword
+            {
+                get
+                {
+                    return _entergmailpasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterGmailPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("0a45e1fe-f581-47e2-b12a-f39875f98d46")]
+            public virtual RepoItemInfo EnterGmailPasswordInfo
+            {
+                get
+                {
+                    return _entergmailpasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Click_Next item.
+            /// </summary>
+            [RepositoryItem("c5e5ec69-80ff-428b-b134-f8e4815fc4cd")]
+            public virtual Ranorex.DivTag Click_Next
+            {
+                get
+                {
+                    return _click_nextInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Click_Next item info.
+            /// </summary>
+            [RepositoryItemInfo("c5e5ec69-80ff-428b-b134-f8e4815fc4cd")]
+            public virtual RepoItemInfo Click_NextInfo
+            {
+                get
+                {
+                    return _click_nextInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The InboxCognigramzAtgmailComGmailAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ada6a853-6838-4504-bdad-8fb7cd350f8d")]
+        public partial class InboxCognigramzAtgmailComGmailAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _opentheemailInfo;
+            RepoItemInfo _capture_the_email_Info;
+
+            /// <summary>
+            /// Creates a new InboxCognigramzAtgmailComGmail  folder.
+            /// </summary>
+            public InboxCognigramzAtgmailComGmailAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("InboxCognigramzAtgmailComGmail", "/dom[@domain='mail.google.com']", parentFolder, 30000, null, false, "ada6a853-6838-4504-bdad-8fb7cd350f8d", "")
+            {
+                _opentheemailInfo = new RepoItemInfo(this, "OpentheEmail", ".//div[#':2j']/?/?/span[@innertext='Cognigram (DO NOT R.']", 30000, null, "696aa861-ff63-4239-a0b2-0e3fd1ebfccb");
+                _capture_the_email_Info = new RepoItemInfo(this, "Capture_the_email_", ".//div[#':6c']/div[1]/div[2]/div[1]/table/tbody/tr[1]/td[1]/table//span[@innertext~'^healthcaresupport-test@co']", 30000, null, "c5d70f94-a271-419a-8fae-cbfbe73ca575");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ada6a853-6838-4504-bdad-8fb7cd350f8d")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ada6a853-6838-4504-bdad-8fb7cd350f8d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpentheEmail item.
+            /// </summary>
+            [RepositoryItem("696aa861-ff63-4239-a0b2-0e3fd1ebfccb")]
+            public virtual Ranorex.SpanTag OpentheEmail
+            {
+                get
+                {
+                    return _opentheemailInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpentheEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("696aa861-ff63-4239-a0b2-0e3fd1ebfccb")]
+            public virtual RepoItemInfo OpentheEmailInfo
+            {
+                get
+                {
+                    return _opentheemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Capture_the_email_ item.
+            /// </summary>
+            [RepositoryItem("c5d70f94-a271-419a-8fae-cbfbe73ca575")]
+            public virtual Ranorex.SpanTag Capture_the_email_
+            {
+                get
+                {
+                    return _capture_the_email_Info.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Capture_the_email_ item info.
+            /// </summary>
+            [RepositoryItemInfo("c5d70f94-a271-419a-8fae-cbfbe73ca575")]
+            public virtual RepoItemInfo Capture_the_email_Info
+            {
+                get
+                {
+                    return _capture_the_email_Info;
                 }
             }
         }

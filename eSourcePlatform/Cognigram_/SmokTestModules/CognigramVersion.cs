@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Cognigram_
+namespace Cognigram_.SmokTestModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace Cognigram_
     public partial class CognigramVersion : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the Cognigram_Repository repository.
+        /// Holds an instance of the global::Cognigram_.Cognigram_Repository repository.
         /// </summary>
-        public static Cognigram_Repository repo = Cognigram_Repository.Instance;
+        public static global::Cognigram_.Cognigram_Repository repo = global::Cognigram_.Cognigram_Repository.Instance;
 
         static CognigramVersion instance = new CognigramVersion();
 
@@ -55,18 +55,6 @@ namespace Cognigram_
 
 #region Variables
 
-        string _DOM;
-
-        /// <summary>
-        /// Gets or sets the value of variable DOM.
-        /// </summary>
-        [TestVariable("91c11ad1-9580-48fe-aa7f-d7a532fa36a1")]
-        public string DOM
-        {
-            get { return _DOM; }
-            set { _DOM = value; }
-        }
-
         string _ConigramExpectedVersion;
 
         /// <summary>
@@ -77,6 +65,16 @@ namespace Cognigram_
         {
             get { return _ConigramExpectedVersion; }
             set { _ConigramExpectedVersion = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable DOM.
+        /// </summary>
+        [TestVariable("91c11ad1-9580-48fe-aa7f-d7a532fa36a1")]
+        public string DOM
+        {
+            get { return repo.DOM; }
+            set { repo.DOM = value; }
         }
 
 #endregion
