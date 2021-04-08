@@ -5021,11 +5021,14 @@ rxversion="8.3">
 		<DataSource
 		id="d8a09f06-56e9-4e85-bbc6-550c0ee6dc90"
 		includefile="Unchecked"
-		lastknownrowcount="2"
+		lastknownrowcount="4"
 		name="AuthenticationConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
 			<lastknowncolumns>
+				<column>
+					Environment
+				</column>
 				<column>
 					RCCUsername
 				</column>
@@ -5033,10 +5036,10 @@ rxversion="8.3">
 					RCCPassword
 				</column>
 				<column>
-					CPAUsername
+					CSPUsername
 				</column>
 				<column>
-					CPAPassword
+					CSPPassword
 				</column>
 				<column>
 					dbUsername
@@ -5067,9 +5070,6 @@ rxversion="8.3">
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
-				<columnname>
-					CPAPassword
-				</columnname>
 				<columnname>
 					dbPassword
 				</columnname>
@@ -5270,7 +5270,7 @@ rxversion="8.3">
 		<DataSource
 		id="4ef9e6dd-0bc2-47b1-b13c-a68ea4f3bbcc"
 		includefile="Checked"
-		lastknownrowcount="7"
+		lastknownrowcount="10"
 		name="TenantConnector"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -5421,6 +5421,15 @@ rxversion="8.3">
 				</column>
 				<column>
 					RCCVersionQuery&#32;
+				</column>
+				<column>
+					GmailAddress&#32;
+				</column>
+				<column>
+					GmailPassword&#32;
+				</column>
+				<column>
+					CognigramEmail
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

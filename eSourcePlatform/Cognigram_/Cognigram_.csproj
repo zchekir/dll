@@ -157,6 +157,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>d6e160c1-a013-4f6c-a4e7-1cf7fd615051</id>
     </Compile>
+    <Compile Include="HTSTSValidation.cs">
+      <BoundTo>abaf1094-caf6-4592-81e6-ccc898a643d7</BoundTo>
+      <DependentUpon>HTSTSValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0037fc29-f941-428e-89a2-35b313ebdb63</id>
+    </Compile>
+    <Compile Include="HTSTSValidation.UserCode.cs">
+      <BoundTo>abaf1094-caf6-4592-81e6-ccc898a643d7</BoundTo>
+      <DependentUpon>HTSTSValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>60b8f1e8-b7eb-4248-92dc-108560449c30</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>778f5545-9322-4e86-88f4-a528710c8258</id>
     </Compile>
@@ -238,15 +250,20 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>4e0a20e1-aa16-4fe5-8adb-e6c7fdf80c53</id>
     </Content>
-    <None Include="SmokTestModules\CognigramDB.rxrec">
+    <None Include="HTSTSValidation.rxrec">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>abaf1094-caf6-4592-81e6-ccc898a643d7</id>
+      <recordtableid>7df8cee4-02bd-4e3a-8c31-02a878e6d12e</recordtableid>
+    </None>
+    <None Include="SmokTestModules\CognigramDB.rxrec">
       <id>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</id>
       <recordtableid>8a955ca1-40f8-4b85-a9a2-cdf3d88f8150</recordtableid>
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
     </None>
     <None Include="SmokTestModules\CognigramSecurityCheck.rxrec">
-      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <id>3adf50a5-33c9-401f-9697-32693e21c68a</id>
       <recordtableid>36dae8f8-a806-451b-97f6-6e97c29e3ac6</recordtableid>
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
     </None>
     <None Include="SmokTestModules\CognigramEmailValidation.rxrec">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>

@@ -150,6 +150,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="a0efcc33-9126-400e-9bf5-d3347daa207d"
+			name="cognigramHSTS">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -184,6 +188,26 @@ rxversion="8.3">
 			id="d17b6fbd-a581-4c7c-a95c-4342bddb4f6f"
 			name="cognigramEmailcheck">
 			</testcase>
+			<testmodule
+			id="ec94d81e-b2bd-412d-9355-577e887e13d5"
+			name="HTSTSValidation"
+			ref="7df8cee4-02bd-4e3a-8c31-02a878e6d12e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CognigramEmail"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="0d0cfc43-1045-447c-97a3-d83f7e2412a7"
+					variablename="UserEmail">
+					</var>
+					<var
+					dataname="CPADOM"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="1b020adb-b85b-402b-bb69-1e66eda75b8b"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -224,6 +248,14 @@ rxversion="8.3">
 								<testmodule
 								id="11a7f6b1-3b0f-4aa4-83bd-e44784b4d1af"
 								name="CognigramEmailValidation">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="a0efcc33-9126-400e-9bf5-d3347daa207d"
+							name="cognigramHSTS">
+								<testmodule
+								id="ec94d81e-b2bd-412d-9355-577e887e13d5"
+								name="HTSTSValidation">
 								</testmodule>
 							</testcase>
 						</smartfoldernode>
@@ -515,10 +547,10 @@ rxversion="8.3">
 			id="8fd64ab4-706b-43e7-9a00-2bb1aac07c10">
 			</testcontainer>
 			<testcontainer
-			id="c705a9d6-f28d-41f9-a309-26346ff70ff0">
+			id="a0efcc33-9126-400e-9bf5-d3347daa207d">
 			</testcontainer>
 			<testcontainer
-			id="d17b6fbd-a581-4c7c-a95c-4342bddb4f6f">
+			id="c705a9d6-f28d-41f9-a309-26346ff70ff0">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

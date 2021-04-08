@@ -83,8 +83,7 @@ namespace eSourcePlatform.VersionChecks
 				
 				// sending the API call
 				var httpClient = new HttpClient();
-				httpClient.DefaultRequestHeaders.Accept.Add(
-					new MediaTypeWithQualityHeaderValue("application/json"));
+				httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 				httpClient.DefaultRequestHeaders.Add("x-api-key", Ahuky);
 
 				var response =  httpClient.GetAsync("https://api.applicationinsights.io/v1/apps/"+   EvKey  +  "/query?timespan="  + TimeStmp + "&query="+ Query).GetAwaiter().GetResult();

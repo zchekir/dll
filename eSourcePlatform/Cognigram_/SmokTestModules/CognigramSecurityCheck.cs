@@ -24,7 +24,7 @@ namespace Cognigram_.SmokTestModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CognigramEmailCheck recording.
+    ///The CognigramSecurityCheck recording.
     /// </summary>
     [TestModule("36dae8f8-a806-451b-97f6-6e97c29e3ac6", ModuleType.Recording, 1)]
     public partial class CognigramSecurityCheck : ITestModule

@@ -137,6 +137,9 @@ namespace CPA
 		//Generating workflowinstance URL with using an existing study
 		public void Workflow(string AuthToken, string ProtocolNumber, string CPADOM, string DOB, string genderCode, string localityCode, string redirectError, string redirect, string mode)
 		{
+			
+			
+			
 			Report.Log(ReportLevel.Info, "Current Study: " + ProtocolNumber);
 			Report.Log(ReportLevel.Info, "Initial: " + DOB);
 			//variable
@@ -168,6 +171,21 @@ namespace CPA
 				sw.Flush();
 				sw.Close();
 			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			//Get response and store in new object
 			HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();

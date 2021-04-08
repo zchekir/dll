@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="142d725c-ef33-4494-8ec0-f8f521f8c742"
+id="7df8cee4-02bd-4e3a-8c31-02a878e6d12e"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CognigramVersion
+		HTSTSValidation
 	</name>
 	<repeatcount>
 		1
@@ -23,26 +23,26 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CognigramVersion"
-	namespace="Cognigram_.SmokTestModules">
+	classname="HTSTSValidation"
+	namespace="Cognigram_">
 	</codegen>
 	<variables>
 		<var
-		id="91c11ad1-9580-48fe-aa7f-d7a532fa36a1"
+		id="1b020adb-b85b-402b-bb69-1e66eda75b8b"
 		name="DOM">
 		</var>
 		<var
-		id="6ec92131-159b-4580-97f9-e21fc6f0e371"
-		name="ConigramExpectedVersion">
+		id="0d0cfc43-1045-447c-97a3-d83f7e2412a7"
+		name="UserEmail">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="CognigramVersion"
+		classname="HTSTSValidation"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="CognigramVersionCheck"
-		namespace="Cognigram_.SmokTestModules"
+		methodname="HTSTCheck"
+		namespace="Cognigram_"
 		optional="False"
 		varname="">
 			<comment>
@@ -50,11 +50,11 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="d19e9791-044a-4145-8a48-1e28720d10a2">
+			id="426b6c47-1f91-48d6-8c14-ac126324e4aa">
 				<argument
-				argname="DOM"
-				id="26a7accb-6233-4670-92c5-177d9ce31315"
-				variable="DOM">
+				argname="UserEmail"
+				id="45cb6625-34fa-4cd3-b4a2-fffc6b14a4e3"
+				variable="UserEmail">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -62,9 +62,9 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="ConigramExpectedVersion"
-				id="71ae960b-8c6b-496c-8270-9d931533f9b2"
-				variable="ConigramExpectedVersion">
+				argname="DOM"
+				id="1c8a6d34-d49d-4be9-b8c2-312cee1a962a"
+				variable="DOM">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -77,7 +77,7 @@ rxversion="8.3">
 	<repository
 	id="7ec8ac77-0537-42e3-8711-25309bb5ee4b"
 	name="Cognigram_Repository"
-	relativepath="..\Cognigram_Repository.rxrep"
+	relativepath="Cognigram_Repository.rxrep"
 	rxversion="8.3">
 		<codegen
 		classname="Cognigram_Repository"
@@ -90,7 +90,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CognigramVersion.UserCode.cs
+		HTSTSValidation.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
