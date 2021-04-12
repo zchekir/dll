@@ -57,7 +57,7 @@ namespace Cognigram_
 
 #region Variables
 
-        string _DOM = "cshc-qc.azurewebsites.net";
+        string _DOM = "staging.cognigram.us";
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -208,6 +208,10 @@ namespace Cognigram_
         public partial class COGNIGRAMAppFolder : RepoGenBaseFolder
         {
             Cognigram_RepositoryFolders.LoginboxFolder _loginbox;
+            RepoItemInfo _resultstableInfo;
+            RepoItemInfo _clickonreportcognigramtableInfo;
+            RepoItemInfo _openpdfreportInfo;
+            RepoItemInfo _reportvalidationInfo;
 
             /// <summary>
             /// Creates a new COGNIGRAM  folder.
@@ -216,6 +220,10 @@ namespace Cognigram_
                     base("COGNIGRAM", "/dom[@domain=$DOM]", parentFolder, 30000, null, false, "005b1415-4ec6-46d0-9e84-315c241b4523", "")
             {
                 _loginbox = new Cognigram_RepositoryFolders.LoginboxFolder(this);
+                _resultstableInfo = new RepoItemInfo(this, "ResultsTable", ".//div[#'bodyContent']/div/div/div/div//ul/li[2]/a[@innertext='Results']", 30000, null, "bdaa0662-d758-4b82-a7f6-d55d2c6d9024");
+                _clickonreportcognigramtableInfo = new RepoItemInfo(this, "ClickOnReportCOGNIGRAMTable", ".//tag[@tagname='md-card-content']/div[1]/a[@href~'^https://staging\\.cognigram']/span[@innertext~'^Report,\\ COGNIGRAM']", 30000, null, "a3605473-175f-40ce-8a91-7b88a3e5ec39");
+                _openpdfreportInfo = new RepoItemInfo(this, "OpenPDFReport", ".//a[@href~'^https://staging\\.cognigram']/i[@innertext='assignment']", 30000, null, "cfac839d-9845-46b3-be0f-c795b9053d72");
+                _reportvalidationInfo = new RepoItemInfo(this, "ReportValidation", ".//iframe[#'cbbReportFrame']/body/div//h2[@title='COGNIGRAM Report']", 30000, null, "2c1cfcaf-ab16-4e30-84ac-4273442e5cb6");
             }
 
             /// <summary>
@@ -243,6 +251,102 @@ namespace Cognigram_
             }
 
             /// <summary>
+            /// The ResultsTable item.
+            /// </summary>
+            [RepositoryItem("bdaa0662-d758-4b82-a7f6-d55d2c6d9024")]
+            public virtual Ranorex.ATag ResultsTable
+            {
+                get
+                {
+                    return _resultstableInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ResultsTable item info.
+            /// </summary>
+            [RepositoryItemInfo("bdaa0662-d758-4b82-a7f6-d55d2c6d9024")]
+            public virtual RepoItemInfo ResultsTableInfo
+            {
+                get
+                {
+                    return _resultstableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickOnReportCOGNIGRAMTable item.
+            /// </summary>
+            [RepositoryItem("a3605473-175f-40ce-8a91-7b88a3e5ec39")]
+            public virtual Ranorex.SpanTag ClickOnReportCOGNIGRAMTable
+            {
+                get
+                {
+                    return _clickonreportcognigramtableInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickOnReportCOGNIGRAMTable item info.
+            /// </summary>
+            [RepositoryItemInfo("a3605473-175f-40ce-8a91-7b88a3e5ec39")]
+            public virtual RepoItemInfo ClickOnReportCOGNIGRAMTableInfo
+            {
+                get
+                {
+                    return _clickonreportcognigramtableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenPDFReport item.
+            /// </summary>
+            [RepositoryItem("cfac839d-9845-46b3-be0f-c795b9053d72")]
+            public virtual Ranorex.ITag OpenPDFReport
+            {
+                get
+                {
+                    return _openpdfreportInfo.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenPDFReport item info.
+            /// </summary>
+            [RepositoryItemInfo("cfac839d-9845-46b3-be0f-c795b9053d72")]
+            public virtual RepoItemInfo OpenPDFReportInfo
+            {
+                get
+                {
+                    return _openpdfreportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ReportValidation item.
+            /// </summary>
+            [RepositoryItem("2c1cfcaf-ab16-4e30-84ac-4273442e5cb6")]
+            public virtual Ranorex.H2Tag ReportValidation
+            {
+                get
+                {
+                    return _reportvalidationInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ReportValidation item info.
+            /// </summary>
+            [RepositoryItemInfo("2c1cfcaf-ab16-4e30-84ac-4273442e5cb6")]
+            public virtual RepoItemInfo ReportValidationInfo
+            {
+                get
+                {
+                    return _reportvalidationInfo;
+                }
+            }
+
+            /// <summary>
             /// The Loginbox folder.
             /// </summary>
             [RepositoryFolder("21874412-2c91-426c-bfea-b3ed988cb487")]
@@ -261,6 +365,9 @@ namespace Cognigram_
             RepoItemInfo _forgotpasswordInfo;
             RepoItemInfo _enteremailInfo;
             RepoItemInfo _clickcontinuebuttonInfo;
+            RepoItemInfo _enterusernameInfo;
+            RepoItemInfo _entertpasswordInfo;
+            RepoItemInfo _clicksigninInfo;
 
             /// <summary>
             /// Creates a new Loginbox  folder.
@@ -271,6 +378,9 @@ namespace Cognigram_
                 _forgotpasswordInfo = new RepoItemInfo(this, "ForgotPassword", "?/?/form[@name='loginForm']/div[6]/?/?/a[@innertext='Forgot password?']", 30000, null, "bc66c19a-0a8a-4b1b-9c14-456e1be30946");
                 _enteremailInfo = new RepoItemInfo(this, "EnterEmail", "?/?/form[@name='forgotPasswordForm']/div[2]/div[1]/?/?/input[@name='inputEmail']", 30000, null, "d331b269-8cad-4396-82b3-744b0456ad05");
                 _clickcontinuebuttonInfo = new RepoItemInfo(this, "ClickContinueButton", "?/?/form[@name='forgotPasswordForm']/div[2]/div[2]/?/?/button[@innertext='Continue']", 30000, null, "29a0cabb-dd6a-46ff-b7b4-e7a01c0e805b");
+                _enterusernameInfo = new RepoItemInfo(this, "EnterUserName", "div/form[@name='loginForm']/div[3]//input[@name='userName']", 30000, null, "d36e7818-bb70-457a-bb3e-91c1c0e602b2");
+                _entertpasswordInfo = new RepoItemInfo(this, "EntertPassword", "div/form[@name='loginForm']/div[4]//input[@name='inputPassword']", 30000, null, "e755f938-fb96-4604-bbcd-71c8e3a8eaeb");
+                _clicksigninInfo = new RepoItemInfo(this, "ClickSignIn", "div/form[@name='loginForm']//button[@innertext='Sign In']", 30000, null, "319de5eb-3ead-4c22-bb85-ab5d6bc7298d");
             }
 
             /// <summary>
@@ -366,6 +476,78 @@ namespace Cognigram_
                 get
                 {
                     return _clickcontinuebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterUserName item.
+            /// </summary>
+            [RepositoryItem("d36e7818-bb70-457a-bb3e-91c1c0e602b2")]
+            public virtual Ranorex.InputTag EnterUserName
+            {
+                get
+                {
+                    return _enterusernameInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterUserName item info.
+            /// </summary>
+            [RepositoryItemInfo("d36e7818-bb70-457a-bb3e-91c1c0e602b2")]
+            public virtual RepoItemInfo EnterUserNameInfo
+            {
+                get
+                {
+                    return _enterusernameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EntertPassword item.
+            /// </summary>
+            [RepositoryItem("e755f938-fb96-4604-bbcd-71c8e3a8eaeb")]
+            public virtual Ranorex.InputTag EntertPassword
+            {
+                get
+                {
+                    return _entertpasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EntertPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("e755f938-fb96-4604-bbcd-71c8e3a8eaeb")]
+            public virtual RepoItemInfo EntertPasswordInfo
+            {
+                get
+                {
+                    return _entertpasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickSignIn item.
+            /// </summary>
+            [RepositoryItem("319de5eb-3ead-4c22-bb85-ab5d6bc7298d")]
+            public virtual Ranorex.ButtonTag ClickSignIn
+            {
+                get
+                {
+                    return _clicksigninInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickSignIn item info.
+            /// </summary>
+            [RepositoryItemInfo("319de5eb-3ead-4c22-bb85-ab5d6bc7298d")]
+            public virtual RepoItemInfo ClickSignInInfo
+            {
+                get
+                {
+                    return _clicksigninInfo;
                 }
             }
         }

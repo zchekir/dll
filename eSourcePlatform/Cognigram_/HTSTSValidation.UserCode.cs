@@ -55,9 +55,10 @@ namespace Cognigram_
         public void HTSTCheck(string UserEmail, string DOM)
         {
            
-			string ExpectedHTST="31536000";
+			var ExpectedHTST="max-age=31536000";
 			string keys="";
 			string values=""; 
+			
 				
 			string url = "https://" + DOM +"/svc/api/profiles/forgotpassword";
 			//Setup API call
@@ -65,7 +66,7 @@ namespace Cognigram_
 			httpRequest.ContentType = "application/json";
 			httpRequest.Method = "POST";
 		
-			//var headesr= httpRequest.Headers.get();
+			
 			
 			
 		
@@ -93,22 +94,26 @@ namespace Cognigram_
 			        {
 			     	keys =HttpWebResponse.Headers.Keys[i].ToString();
 			     	values =HttpWebResponse.Headers[i].ToString();
-			     	Report.Info("Headers information"+keys+values);
-			     	
-			     			
-			     	}
+			     	Report.Info("Headers information"+values);
 			     	
 			     	
-                   // check the browser header values
-			     	if (values != null)
-			     	 {
+			        	if (values == ExpectedHTST)
+			     	   {
 			     		
 			     		Report.Info("The webSite has HTST security as expected");
+			     		break;
+			     	    }else{
 			     		
-			     	 }else{
-			     		Report.Error("The webSite doesn't  have HTST security as expected");
 			     		
-			     	      }
+			     	     }
+			     	
+			     			
+			        	}
+			     	 
+			          // validation:
+			          Validate.AreEqual(values,ExpectedHTST);
+			     		
+			     	
 			     	
 			     }
 			        

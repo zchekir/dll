@@ -151,11 +151,71 @@
     <Compile Include="AssemblyInfo.cs">
       <id>979af83a-2885-4d33-81bd-708cf9eb3f03</id>
     </Compile>
+    <Compile Include="CognigramDebugFakefiles.cs">
+      <BoundTo>83c1443b-cbfb-4b2d-8e19-60ce51cf010a</BoundTo>
+      <DependentUpon>CognigramDebugFakefiles.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8a3ef3f-a845-4751-9ce4-1b0d24a1219c</id>
+    </Compile>
+    <Compile Include="CognigramDebugFakefiles.UserCode.cs">
+      <BoundTo>83c1443b-cbfb-4b2d-8e19-60ce51cf010a</BoundTo>
+      <DependentUpon>CognigramDebugFakefiles.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>05b9d9fd-f9a1-44e3-81bc-b2dedb1ffa83</id>
+    </Compile>
+    <Compile Include="CognigramPDF.cs">
+      <BoundTo>5eb9ba37-0542-4a8f-9c00-7fb4f11eff23</BoundTo>
+      <DependentUpon>CognigramPDF.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c1c80f2-370b-4f40-92a9-24bbe946bd2f</id>
+    </Compile>
+    <Compile Include="CognigramPDF.UserCode.cs">
+      <BoundTo>5eb9ba37-0542-4a8f-9c00-7fb4f11eff23</BoundTo>
+      <DependentUpon>CognigramPDF.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e73c796b-b9d4-4c86-b852-bacf4d919980</id>
+    </Compile>
+    <Compile Include="CognigramPDFreport.cs">
+      <BoundTo>43619a48-e628-42aa-8ab6-8de0b62f7227</BoundTo>
+      <DependentUpon>CognigramPDFreport.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aca588b0-5cf6-4ac5-bc9a-e2dda149426c</id>
+    </Compile>
+    <Compile Include="CognigramPDFreport.UserCode.cs">
+      <BoundTo>43619a48-e628-42aa-8ab6-8de0b62f7227</BoundTo>
+      <DependentUpon>CognigramPDFreport.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fd226d7-3619-48c1-987c-f1e663ac5d63</id>
+    </Compile>
+    <Compile Include="CognigramResultTab.cs">
+      <BoundTo>d20de1e2-3429-4f23-a6fd-b3c8e4c24cdf</BoundTo>
+      <DependentUpon>CognigramResultTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69ed287a-6eeb-4628-8a3b-6cfe06deafd5</id>
+    </Compile>
+    <Compile Include="CognigramResultTab.UserCode.cs">
+      <BoundTo>d20de1e2-3429-4f23-a6fd-b3c8e4c24cdf</BoundTo>
+      <DependentUpon>CognigramResultTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e13032d-1b84-4232-a9c7-bfba6bb48c97</id>
+    </Compile>
     <Compile Include="Cognigram_Repository.cs">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <DependentUpon>Cognigram_Repository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>d6e160c1-a013-4f6c-a4e7-1cf7fd615051</id>
+    </Compile>
+    <Compile Include="CogningramEmail.cs">
+      <BoundTo>9a5bfd92-a229-432b-937d-e226df5e7db8</BoundTo>
+      <DependentUpon>CogningramEmail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ebd42bf6-56bc-4ef8-a17e-f16c37a0e572</id>
+    </Compile>
+    <Compile Include="CogningramEmail.UserCode.cs">
+      <BoundTo>9a5bfd92-a229-432b-937d-e226df5e7db8</BoundTo>
+      <DependentUpon>CogningramEmail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ad677b4a-3162-405c-8931-3348488cea63</id>
     </Compile>
     <Compile Include="HTSTSValidation.cs">
       <BoundTo>abaf1094-caf6-4592-81e6-ccc898a643d7</BoundTo>
@@ -232,6 +292,26 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>6f9b5d6a-4d0e-4f05-aa58-7b0d70d2cf8c</id>
     </Content>
+    <None Include="CognigramDebugFakefiles.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>83c1443b-cbfb-4b2d-8e19-60ce51cf010a</id>
+      <recordtableid>7a379cdd-8ee7-46df-9a7a-0900d0279649</recordtableid>
+    </None>
+    <None Include="CognigramPDF.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>5eb9ba37-0542-4a8f-9c00-7fb4f11eff23</id>
+      <recordtableid>7d01d121-faf5-4983-a444-3b76588ce911</recordtableid>
+    </None>
+    <None Include="CognigramPDFreport.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>43619a48-e628-42aa-8ab6-8de0b62f7227</id>
+      <recordtableid>c435fadc-8ef3-4e44-b20f-f9db44ecfb1e</recordtableid>
+    </None>
+    <None Include="CognigramResultTab.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>d20de1e2-3429-4f23-a6fd-b3c8e4c24cdf</id>
+      <recordtableid>909ddeec-d3ae-40c3-a9c3-4435fdea17d0</recordtableid>
+    </None>
     <None Include="Cognigram_Repository.rximg">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <DependentUpon>Cognigram_Repository.rxrep</DependentUpon>
@@ -250,6 +330,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>4e0a20e1-aa16-4fe5-8adb-e6c7fdf80c53</id>
     </Content>
+    <None Include="CogningramEmail.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>9a5bfd92-a229-432b-937d-e226df5e7db8</id>
+      <recordtableid>28285a0f-ebc0-49cf-b3dd-89ef24e7b8d8</recordtableid>
+    </None>
     <None Include="HTSTSValidation.rxrec">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <id>abaf1094-caf6-4592-81e6-ccc898a643d7</id>

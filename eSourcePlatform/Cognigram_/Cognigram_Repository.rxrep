@@ -95,10 +95,74 @@ AAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]/?/?/form[@name='forgotPasswordForm']/div[2]/div[2]/?/?/button[@innertext='Continue']
 				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="d36e7818-bb70-457a-bb3e-91c1c0e602b2"
+				name="EnterUserName"
+				refimgid="a65cdd94-2d1a-47d6-82d5-ed8692d16942"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]/div/form[@name='loginForm']/div[3]//input[@name='userName']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="e755f938-fb96-4604-bbcd-71c8e3a8eaeb"
+				name="EntertPassword"
+				refimgid="3cbbea41-5bf5-41bb-8135-aa8cf053c4c5"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]/div/form[@name='loginForm']/div[4]//input[@name='inputPassword']
+				</item>
+				<item
+				addcaps="unknown,webelement,buttontag"
+				capname="buttontag"
+				id="319de5eb-3ead-4c22-bb85-ab5d6bc7298d"
+				name="ClickSignIn"
+				refimgid="56f1be39-81ae-4647-9681-5b0bbf21d871"
+				searchtimeout="30000ms">
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]/div/form[@name='loginForm']//button[@innertext='Sign In']
+				</item>
 				<basepath>
 					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]
 				</basepath>
 			</folder>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="bdaa0662-d758-4b82-a7f6-d55d2c6d9024"
+			name="ResultsTable"
+			refimgid="2636a2b7-46fb-42bc-9472-a2a7d8788236"
+			refpath="/dom[@domain='staging.cognigram.us' and @caption='COGNIGRAM' and @page='clinicians']//div[#'bodyContent']/div/div/div/div/div/tag[@tagname='md-content']/div/ul/li[2]/a[@innertext='Results']"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//div[#'bodyContent']/div/div/div/div//ul/li[2]/a[@innertext='Results']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="a3605473-175f-40ce-8a91-7b88a3e5ec39"
+			name="ClickOnReportCOGNIGRAMTable"
+			refimgid="f18bb3de-62a2-40b6-89bc-b0e0a6848107"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//tag[@tagname='md-card-content']/div[1]/a[@href~'^https://staging\.cognigram']/span[@innertext~'^Report,\ COGNIGRAM']
+			</item>
+			<item
+			addcaps="unknown,webelement,itag"
+			capname="itag"
+			id="cfac839d-9845-46b3-be0f-c795b9053d72"
+			name="OpenPDFReport"
+			refimgid="ec761851-bca6-4eff-8989-dcdd755e02b4"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//a[@href~'^https://staging\.cognigram']/i[@innertext='assignment']
+			</item>
+			<item
+			addcaps="unknown,webelement,h2tag"
+			capname="h2tag"
+			id="2c1cfcaf-ab16-4e30-84ac-4273442e5cb6"
+			name="ReportValidation"
+			refimgid="8267038a-8583-4165-a3ca-bc45138fc7bb"
+			searchtimeout="30000ms">
+				/dom[@domain=$DOM]//iframe[#'cbbReportFrame']/body/div//h2[@title='COGNIGRAM Report']
+			</item>
 			<basepath>
 				/dom[@domain=$DOM]
 			</basepath>
@@ -278,7 +342,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="98466a7c-541b-4a7f-8597-94c097ff6cec"
 		name="DOM">
-			cshc-qc.azurewebsites.net
+			staging.cognigram.us
 		</var>
 	</variables>
 </repository>
