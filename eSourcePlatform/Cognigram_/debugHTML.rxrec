@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="20248fde-466c-4799-bee7-daf873efa51e"
+mode="Global"
+rxversion="8.3">
+	<name>
+		debugHTML
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="debugHTML"
+	namespace="Cognigram_">
+	</codegen>
+	<variables>
+		<var
+		id="45506f14-76ff-4a74-8e2c-29be8cd8053d"
+		name="DOM">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="debugHTML"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CognigramDebug"
+		namespace="Cognigram_"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c552792c-79a8-469c-ae46-106c9948431d">
+				<argument
+				argname="DOM"
+				id="5fcc70ef-7089-4635-9989-c5fdef0efb82"
+				variable="DOM">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7ec8ac77-0537-42e3-8711-25309bb5ee4b"
+	name="Cognigram_Repository"
+	relativepath="Cognigram_Repository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="Cognigram_Repository"
+		namespace="Cognigram_">
+		</codegen>
+		<rootfolder
+		id="6393894a-fb1a-4927-9af0-89a1bd175268"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		debugHTML.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

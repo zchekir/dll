@@ -54,6 +54,24 @@ rxversion="8.3">
 			id="35128bfc-1a70-4caf-8dbc-f8517b8a4188"
 			name="cognigramVesrsionVlidation">
 			</testcase>
+			<testcase
+			id="3664cbb3-026f-4611-a485-72d7a75a5b01"
+			name="cognigramDebugfakesfiles">
+			</testcase>
+			<testmodule
+			id="4f41d78f-d243-457a-8d81-99a123b43385"
+			name="FakeHTML"
+			ref="da910cdb-ba4f-4be8-ad22-228d96dcd8fa"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CPADOM"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="6a04f8b8-d9eb-4a4f-a883-0ed6482b3db3"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="Authentication"
@@ -133,6 +151,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="86f831d0-4ebc-40c4-96b8-ccbe401798e9"
+			name="cognigramSkipFunctionality">
+			</testcase>
 			<testcase
 			id="8e735c26-6436-4ed3-b7ca-a4682baca8f5"
 			name="cognigramDBversion">
@@ -228,6 +250,20 @@ rxversion="8.3">
 			id="d17b6fbd-a581-4c7c-a95c-4342bddb4f6f"
 			name="cognigramEmailcheck">
 			</testcase>
+			<testmodule
+			id="e21446b7-9dba-40ba-898c-f5d611952dc8"
+			name="debugHTML"
+			ref="20248fde-466c-4799-bee7-daf873efa51e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CPADOM"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="45506f14-76ff-4a74-8e2c-29be8cd8053d"
+					variablename="DOM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="ec94d81e-b2bd-412d-9355-577e887e13d5"
 			name="HTSTSValidation"
@@ -339,6 +375,22 @@ rxversion="8.3">
 								id="1d5f5af1-9eb5-4e56-a82f-55e9c57b82f5"
 								name="CognigramResultTab">
 								</testmodule>
+							</testcase>
+							<testcase
+							id="3664cbb3-026f-4611-a485-72d7a75a5b01"
+							name="cognigramDebugfakesfiles">
+								<testmodule
+								id="e21446b7-9dba-40ba-898c-f5d611952dc8"
+								name="debugHTML">
+								</testmodule>
+								<testmodule
+								id="4f41d78f-d243-457a-8d81-99a123b43385"
+								name="FakeHTML">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="86f831d0-4ebc-40c4-96b8-ccbe401798e9"
+							name="cognigramSkipFunctionality">
 							</testcase>
 						</smartfoldernode>
 						<smartfoldernode
@@ -625,18 +677,6 @@ rxversion="8.3">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="69bd7290-d5b6-47b0-af09-2c69380d1c80">
-			</testcontainer>
-			<testcontainer
-			id="8fd64ab4-706b-43e7-9a00-2bb1aac07c10">
-			</testcontainer>
-			<testcontainer
-			id="98360ed2-55e1-4d11-a46d-af8da9200328">
-			</testcontainer>
-			<testcontainer
-			id="c705a9d6-f28d-41f9-a309-26346ff70ff0">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

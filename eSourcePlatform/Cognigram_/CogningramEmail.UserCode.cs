@@ -71,8 +71,9 @@ namespace Cognigram_
         	var ExpectedHTST="max-age=31536000";
 			string keys="";
 			string values=""; 
-			string emailconfirmation =DOM;
+			string emailconfirmation ="staging.cognigram.us↵Content-Length";
 			string resetEmail = "success: false,failedMessage: Invalid Email. Please contact your administrator for assistance";
+			int counter = 0;
 				
 			// send reset passwrod API CALL
 			string url = "https://" + DOM +"/svc/api/profiles/forgotpassword";
@@ -103,7 +104,9 @@ namespace Cognigram_
 			       HttpWebResponse HttpWebResponse = (HttpWebResponse )httpRequest.GetResponse();
 			       
 			       //capturing request header infos
-			       var conigramEmail =httpRequest.Headers.ToString();
+			       char[] mych = { ':','&', ',','?','=','{','}'};
+			       string conigramEmail =httpRequest.Headers.ToString();
+			       string[] headerInfos=conigramEmail.Split(mych);
 			       Report.Info("headers"+conigramEmail );
 			      
 			       request responseObject = new request();
@@ -126,21 +129,26 @@ namespace Cognigram_
 				
 				
 				
-				
+				Validate.AreEqual(headerInfos[2],emailconfirmation);
 				
 				//requeste header halidation  validation to check the sending email envirnment:
-				/*
-				foreach (var infos in conigramEmail){
+				
+				foreach (var infos in headerInfos){
 					if (infos == emailconfirmation){
 						
 						Report.Info("TESTPASSED");
 						break;
+						counter++;
+
 					}else{
-						Report.Error("TESTFAILED");
+						Report.Error(infos);
 					}
 					
 				}
-			       */
+				
+				
+				
+			       
 			        
 			       
 			

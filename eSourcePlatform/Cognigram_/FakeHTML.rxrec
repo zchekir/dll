@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="da910cdb-ba4f-4be8-ad22-228d96dcd8fa"
+mode="Global"
+rxversion="8.3">
+	<name>
+		FakeHTML
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="FakeHTML"
+	namespace="Cognigram_">
+	</codegen>
+	<variables>
+		<var
+		id="6a04f8b8-d9eb-4a4f-a883-0ed6482b3db3"
+		name="DOM">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="FakeHTML"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="CognigramFakeHTML"
+		namespace="Cognigram_"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="5369bd49-af50-4fa5-acbe-4a6f13b72486">
+				<argument
+				argname="DOM"
+				id="5b0e41f1-868b-4e8f-8ffb-bfbd319d21b3"
+				variable="DOM">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7ec8ac77-0537-42e3-8711-25309bb5ee4b"
+	name="Cognigram_Repository"
+	relativepath="Cognigram_Repository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="Cognigram_Repository"
+		namespace="Cognigram_">
+		</codegen>
+		<rootfolder
+		id="6393894a-fb1a-4927-9af0-89a1bd175268"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		FakeHTML.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
