@@ -4,7 +4,6 @@ rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			enabled="False"
 			id="11a7f6b1-3b0f-4aa4-83bd-e44784b4d1af"
 			name="CognigramEmailValidation"
 			ref="62bea32e-5edd-49ad-b537-90752519377f"
@@ -50,6 +49,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="1de35364-748e-4da1-ba0d-2000fe6464bb"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="35128bfc-1a70-4caf-8dbc-f8517b8a4188"
 			name="cognigramVesrsionVlidation">
@@ -72,6 +75,96 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="51e36b1f-f43d-4587-9f95-8e2b4e199869"
+			name="EmailModule"
+			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Subject"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostname"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendPdfReportOnComplete"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="GmailAddress"
+					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="GmailPassword"
+					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="571d9865-6228-433b-91b6-0fb814b34b97"
+			name="cognigramSumoLogs">
+			</testcase>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="Authentication"
@@ -105,7 +198,6 @@ rxversion="8.3">
 			name="Regression">
 			</smartfoldernode>
 			<testmodule
-			enabled="False"
 			id="7d082d35-2ae1-4d28-a19f-66b729a38ea5"
 			name="CognigramSecurityCheck"
 			ref="36dae8f8-a806-451b-97f6-6e97c29e3ac6"
@@ -131,30 +223,36 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="8558efe5-bd26-4a86-9be0-b443f63d3e6d"
+			name="setup">
+			</setup>
 			<testmodule
-			id="82ded43f-a5be-479c-8bbb-4e1fb27f65aa"
-			name="CogningramEmail"
-			ref="28285a0f-ebc0-49cf-b3dd-89ef24e7b8d8"
+			id="8d4bb636-c215-4bd1-901d-e4c6bd2cf4cf"
+			name="sumoLogin"
+			ref="866595e0-993a-42c7-b0f9-b9ace92db689"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="CognigramEmail"
-					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
-					variableid="bfbf590a-ddad-4454-829c-6ab80d7ef1e1"
-					variablename="UserEmail">
+					dataname="CSPUsername"
+					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
+					variableid="2ce1aa15-7b4f-4e8d-bd24-6a61fdd74632"
+					variablename="sumoUserName">
 					</var>
 					<var
-					dataname="CPADOM"
+					dataname="CSPPassword"
+					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
+					variableid="19a04bf3-f38a-4ea3-898e-b835126325fd"
+					variablename="sumoPassword">
+					</var>
+					<var
+					dataname="sumoLogicURL"
 					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
-					variableid="105b959a-b737-45d5-99c7-b802fb9fb7d6"
-					variablename="DOM">
+					variableid="ff615b39-bdca-40a1-b32f-a322e94d52d3"
+					variablename="SUMOURL">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="86f831d0-4ebc-40c4-96b8-ccbe401798e9"
-			name="cognigramSkipFunctionality">
-			</testcase>
 			<testcase
 			id="8e735c26-6436-4ed3-b7ca-a4682baca8f5"
 			name="cognigramDBversion">
@@ -310,6 +408,32 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="fe1c9794-a6f8-4d6c-868b-45bf3c84de28"
+			name="LoginToCognigram"
+			ref="89a358c7-bfa3-4b1d-b7e6-0030c98ab3bb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="CSPUsername"
+					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
+					variableid="ffc129e2-810e-4499-9556-7c89e96d7bfe"
+					variablename="usernam">
+					</var>
+					<var
+					dataname="CPADOM"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="527f2db6-933f-4506-b764-fa814203aa2b"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="cognigramPassword_"
+					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
+					variableid="90d3091c-062e-4ce4-9782-4ec37497ff28"
+					variablename="passwrod">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -324,6 +448,10 @@ rxversion="8.3">
 						<smartfoldernode
 						id="c705a9d6-f28d-41f9-a309-26346ff70ff0"
 						name="Smoke">
+							<setup
+							id="8558efe5-bd26-4a86-9be0-b443f63d3e6d"
+							name="setup">
+							</setup>
 							<testcase
 							id="35128bfc-1a70-4caf-8dbc-f8517b8a4188"
 							name="cognigramVesrsionVlidation">
@@ -350,10 +478,6 @@ rxversion="8.3">
 								<testmodule
 								id="11a7f6b1-3b0f-4aa4-83bd-e44784b4d1af"
 								name="CognigramEmailValidation">
-								</testmodule>
-								<testmodule
-								id="82ded43f-a5be-479c-8bbb-4e1fb27f65aa"
-								name="CogningramEmail">
 								</testmodule>
 							</testcase>
 							<testcase
@@ -389,9 +513,25 @@ rxversion="8.3">
 								</testmodule>
 							</testcase>
 							<testcase
-							id="86f831d0-4ebc-40c4-96b8-ccbe401798e9"
-							name="cognigramSkipFunctionality">
+							id="571d9865-6228-433b-91b6-0fb814b34b97"
+							name="cognigramSumoLogs">
+								<testmodule
+								id="fe1c9794-a6f8-4d6c-868b-45bf3c84de28"
+								name="LoginToCognigram">
+								</testmodule>
+								<testmodule
+								id="8d4bb636-c215-4bd1-901d-e4c6bd2cf4cf"
+								name="sumoLogin">
+								</testmodule>
 							</testcase>
+							<teardown
+							id="1de35364-748e-4da1-ba0d-2000fe6464bb"
+							name="teardown">
+								<testmodule
+								id="51e36b1f-f43d-4587-9f95-8e2b4e199869"
+								name="EmailModule">
+								</testmodule>
+							</teardown>
 						</smartfoldernode>
 						<smartfoldernode
 						id="6f5c102e-12e3-45b0-b50a-54cd4c7027f5"
@@ -662,6 +802,9 @@ rxversion="8.3">
 				<column>
 					ExpectedPDFReportValue
 				</column>
+				<column>
+					sumoLogicURL
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
@@ -677,6 +820,18 @@ rxversion="8.3">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="35128bfc-1a70-4caf-8dbc-f8517b8a4188">
+			</testcontainer>
+			<testcontainer
+			id="69bd7290-d5b6-47b0-af09-2c69380d1c80">
+			</testcontainer>
+			<testcontainer
+			id="8fd64ab4-706b-43e7-9a00-2bb1aac07c10">
+			</testcontainer>
+			<testcontainer
+			id="c705a9d6-f28d-41f9-a309-26346ff70ff0">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

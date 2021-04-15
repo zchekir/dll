@@ -32,6 +32,7 @@ namespace Cognigram_
         Cognigram_RepositoryFolders.GmailEmailFromGoogleAppFolder _gmailemailfromgoogle;
         Cognigram_RepositoryFolders.GmailAppFolder _gmail;
         Cognigram_RepositoryFolders.InboxCognigramzAtgmailComGmailAppFolder _inboxcognigramzatgmailcomgmail;
+        Cognigram_RepositoryFolders.SumoLogicAppFolder _sumologic;
 
         /// <summary>
         /// Gets the singleton class instance representing the Cognigram_Repository element repository.
@@ -53,11 +54,12 @@ namespace Cognigram_
             _gmailemailfromgoogle = new Cognigram_RepositoryFolders.GmailEmailFromGoogleAppFolder(this);
             _gmail = new Cognigram_RepositoryFolders.GmailAppFolder(this);
             _inboxcognigramzatgmailcomgmail = new Cognigram_RepositoryFolders.InboxCognigramzAtgmailComGmailAppFolder(this);
+            _sumologic = new Cognigram_RepositoryFolders.SumoLogicAppFolder(this);
         }
 
 #region Variables
 
-        string _DOM = "staging.cognigram.us";
+        string _DOM = "cshc-qc.azurewebsites.net";
 
         /// <summary>
         /// Gets or sets the value of variable DOM.
@@ -126,6 +128,15 @@ namespace Cognigram_
         public virtual Cognigram_RepositoryFolders.InboxCognigramzAtgmailComGmailAppFolder InboxCognigramzAtgmailComGmail
         {
             get { return _inboxcognigramzatgmailcomgmail; }
+        }
+
+        /// <summary>
+        /// The SumoLogic folder.
+        /// </summary>
+        [RepositoryFolder("83b3a6a2-d39b-40f6-bc57-b2879e25d1cf")]
+        public virtual Cognigram_RepositoryFolders.SumoLogicAppFolder SumoLogic
+        {
+            get { return _sumologic; }
         }
     }
 
@@ -850,6 +861,124 @@ namespace Cognigram_
                 get
                 {
                     return _capture_the_email_Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SumoLogicAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("83b3a6a2-d39b-40f6-bc57-b2879e25d1cf")]
+        public partial class SumoLogicAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _entersumousernamInfo;
+            RepoItemInfo _entersumopasswordInfo;
+            RepoItemInfo _clicksinginsumobuttonInfo;
+
+            /// <summary>
+            /// Creates a new SumoLogic  folder.
+            /// </summary>
+            public SumoLogicAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SumoLogic", "/dom[@domain='service.us2.sumologic.com']", parentFolder, 30000, null, false, "83b3a6a2-d39b-40f6-bc57-b2879e25d1cf", "")
+            {
+                _entersumousernamInfo = new RepoItemInfo(this, "EnterSumoUsernam", ".//div[#'login-email']/input[@name='email']", 30000, null, "547dcb4b-1b91-432e-ab39-1acb905ac3d2");
+                _entersumopasswordInfo = new RepoItemInfo(this, "EntersumoPassword", ".//input[#'password-input']", 30000, null, "edb3ada8-e5df-4ba5-8570-6cae9ed8564e");
+                _clicksinginsumobuttonInfo = new RepoItemInfo(this, "ClickSingInsumoButton", ".//button[#'signin-button']", 30000, null, "15214849-8853-4c5e-b601-06f5b57ddbd1");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("83b3a6a2-d39b-40f6-bc57-b2879e25d1cf")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("83b3a6a2-d39b-40f6-bc57-b2879e25d1cf")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnterSumoUsernam item.
+            /// </summary>
+            [RepositoryItem("547dcb4b-1b91-432e-ab39-1acb905ac3d2")]
+            public virtual Ranorex.InputTag EnterSumoUsernam
+            {
+                get
+                {
+                    return _entersumousernamInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnterSumoUsernam item info.
+            /// </summary>
+            [RepositoryItemInfo("547dcb4b-1b91-432e-ab39-1acb905ac3d2")]
+            public virtual RepoItemInfo EnterSumoUsernamInfo
+            {
+                get
+                {
+                    return _entersumousernamInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EntersumoPassword item.
+            /// </summary>
+            [RepositoryItem("edb3ada8-e5df-4ba5-8570-6cae9ed8564e")]
+            public virtual Ranorex.InputTag EntersumoPassword
+            {
+                get
+                {
+                    return _entersumopasswordInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EntersumoPassword item info.
+            /// </summary>
+            [RepositoryItemInfo("edb3ada8-e5df-4ba5-8570-6cae9ed8564e")]
+            public virtual RepoItemInfo EntersumoPasswordInfo
+            {
+                get
+                {
+                    return _entersumopasswordInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickSingInsumoButton item.
+            /// </summary>
+            [RepositoryItem("15214849-8853-4c5e-b601-06f5b57ddbd1")]
+            public virtual Ranorex.ButtonTag ClickSingInsumoButton
+            {
+                get
+                {
+                    return _clicksinginsumobuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickSingInsumoButton item info.
+            /// </summary>
+            [RepositoryItemInfo("15214849-8853-4c5e-b601-06f5b57ddbd1")]
+            public virtual RepoItemInfo ClickSingInsumoButtonInfo
+            {
+                get
+                {
+                    return _clicksinginsumobuttonInfo;
                 }
             }
         }

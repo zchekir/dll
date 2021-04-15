@@ -253,6 +253,18 @@
       <UserCode>true</UserCode>
       <id>60b8f1e8-b7eb-4248-92dc-108560449c30</id>
     </Compile>
+    <Compile Include="LoginToCognigram.cs">
+      <BoundTo>e96fde1c-0696-449e-ac87-3ab16ab7b4bf</BoundTo>
+      <DependentUpon>LoginToCognigram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>66beee03-04d8-43c6-a9ac-c342319023e5</id>
+    </Compile>
+    <Compile Include="LoginToCognigram.UserCode.cs">
+      <BoundTo>e96fde1c-0696-449e-ac87-3ab16ab7b4bf</BoundTo>
+      <DependentUpon>LoginToCognigram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8cc865ac-05ce-456a-a4d5-687622ebca91</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>778f5545-9322-4e86-88f4-a528710c8258</id>
     </Compile>
@@ -303,6 +315,18 @@
       <UserCode>true</UserCode>
       <id>b6ab1540-9366-4272-91e7-9f1fed2b0da9</id>
       <BoundTo>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</BoundTo>
+    </Compile>
+    <Compile Include="sumoLogin.cs">
+      <BoundTo>2cc2696f-a1a8-4a7e-9a88-45fcfb70641b</BoundTo>
+      <DependentUpon>sumoLogin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>891a4330-ecd7-4a8f-b0d1-97b2881264a2</id>
+    </Compile>
+    <Compile Include="sumoLogin.UserCode.cs">
+      <BoundTo>2cc2696f-a1a8-4a7e-9a88-45fcfb70641b</BoundTo>
+      <DependentUpon>sumoLogin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8f2ffa65-df1d-4f17-ba96-0a7c70b937de</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -374,6 +398,11 @@
       <id>abaf1094-caf6-4592-81e6-ccc898a643d7</id>
       <recordtableid>7df8cee4-02bd-4e3a-8c31-02a878e6d12e</recordtableid>
     </None>
+    <None Include="LoginToCognigram.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>e96fde1c-0696-449e-ac87-3ab16ab7b4bf</id>
+      <recordtableid>89a358c7-bfa3-4b1d-b7e6-0030c98ab3bb</recordtableid>
+    </None>
     <None Include="SmokTestModules\CognigramDB.rxrec">
       <id>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</id>
       <recordtableid>8a955ca1-40f8-4b85-a9a2-cdf3d88f8150</recordtableid>
@@ -393,6 +422,11 @@
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <id>2c9324ab-0fbf-41ca-b63f-da52a9052ea8</id>
       <recordtableid>142d725c-ef33-4494-8ec0-f8f521f8c742</recordtableid>
+    </None>
+    <None Include="sumoLogin.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>2cc2696f-a1a8-4a7e-9a88-45fcfb70641b</id>
+      <recordtableid>866595e0-993a-42c7-b0f9-b9ace92db689</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
