@@ -30,15 +30,15 @@ namespace Cognigram_
 	{
 		
 		
-		public string usernam { get; set; }
+		public string userName { get; set; }
 		
-		public string passwrod { get; set; }
+		public string password { get; set; }
 		
 		
-		public cognigLogin(string usernam,string passwrod)
+		public cognigLogin(string userName,string  password)
 		{
-			this.usernam=usernam;
-			this.passwrod=passwrod;
+			this.userName=userName;
+			this. password= password;
 		}
 	}
 	
@@ -70,13 +70,14 @@ namespace Cognigram_
            
         }
 
-        public void CognigramLogin(string DOM, string usernam, string passwrod)
+        public void CognigramLogin(string DOM, string userName, string password)
         {
         	
         	 
-        	try{
+        	
 				
-			string url = "https://cshc-qc.azurewebsites.net/svc/api/cognigram/login";
+			string url = "https://staging.cognigram.us/svc/api/cognigram/login";
+				        
 				//"https://"+DOM+"/svc/api/cognigram/login";
 			//Setup API call
 			HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create(url);
@@ -90,7 +91,7 @@ namespace Cognigram_
 			
 			
 			//Create JSON object containing demographics and study details
-			cognigLogin loginbject = new cognigLogin(usernam, passwrod);
+			cognigLogin loginbject = new cognigLogin(userName,password);
 			using (StreamWriter sw = new StreamWriter(httpRequest.GetRequestStream()))
 			{
 				string json = new JavaScriptSerializer().Serialize(loginbject);
@@ -104,11 +105,9 @@ namespace Cognigram_
 				
 			}     
 			
-        	}catch(Exception e){
-        		Report.Info("Actueal state " + e.Message);
-        	}
+        	
 
-        	/*
+        	
           // getting respont:
             HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 			Logintoken responseObject = new  Logintoken();
@@ -116,12 +115,12 @@ namespace Cognigram_
 			{
 				response= sr.ReadToEnd();
 				responseObject = new JavaScriptSerializer().Deserialize<Logintoken>(response);
-				//token = responseObject.authToken;
+				token = responseObject.authToken;
 				
 			}          
 			Report.Info("response: " + response);
-			//Report.Info("LoginToken " + token);
-         */  
+			Report.Info("LoginToken " + token);
+          
         }
 
     }

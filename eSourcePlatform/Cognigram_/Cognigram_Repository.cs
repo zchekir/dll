@@ -874,6 +874,12 @@ namespace Cognigram_
             RepoItemInfo _entersumousernamInfo;
             RepoItemInfo _entersumopasswordInfo;
             RepoItemInfo _clicksinginsumobuttonInfo;
+            RepoItemInfo _clickonzakfolderInfo;
+            RepoItemInfo _openstageapplogsInfo;
+            RepoItemInfo _selecttimeframeInfo;
+            RepoItemInfo _selectlast60minutesInfo;
+            RepoItemInfo _clickstartbuttonInfo;
+            RepoItemInfo _clickonpersonalfolderInfo;
 
             /// <summary>
             /// Creates a new SumoLogic  folder.
@@ -884,6 +890,12 @@ namespace Cognigram_
                 _entersumousernamInfo = new RepoItemInfo(this, "EnterSumoUsernam", ".//div[#'login-email']/input[@name='email']", 30000, null, "547dcb4b-1b91-432e-ab39-1acb905ac3d2");
                 _entersumopasswordInfo = new RepoItemInfo(this, "EntersumoPassword", ".//input[#'password-input']", 30000, null, "edb3ada8-e5df-4ba5-8570-6cae9ed8564e");
                 _clicksinginsumobuttonInfo = new RepoItemInfo(this, "ClickSingInsumoButton", ".//button[#'signin-button']", 30000, null, "15214849-8853-4c5e-b601-06f5b57ddbd1");
+                _clickonzakfolderInfo = new RepoItemInfo(this, "ClickonZAKFolder", ".//div[#'bento-nav']/tag[@tagname='bento-side-nav']/div[2]/div/div[2]/div[4]/tag/div/tag/div/div[2]/tag/div/div[2]/div[8]/div/div[1]", 30000, null, "87c5e175-c5b3-4bcd-8eda-2bab4166728a");
+                _openstageapplogsInfo = new RepoItemInfo(this, "OpenStageAppLogs", ".//div[#'bento-nav']/tag[@tagname='bento-side-nav']/div[2]/div/div[2]/div[4]/tag/div/tag/div/div[2]/tag/div/div[2]/div[10]/div/div[1]/div[@innertext='cognigram_Automation']", 30000, null, "949c3c90-6cda-4201-b4e0-1789a5696633");
+                _selecttimeframeInfo = new RepoItemInfo(this, "selecttimeframe", ".//div[#'tre-search']/?/?/div[@innertext='Last 6 Hours']", 30000, null, "a43ffcac-d4a6-4c8e-8e87-90bee27d0262");
+                _selectlast60minutesInfo = new RepoItemInfo(this, "selectLast60Minutes", ".//div[#'search-view']/tag[@tagname='tre']/div[2]//div[@title='Last 60 Minutes']", 30000, null, "45c9e284-768f-452c-8bc1-abe22076304c");
+                _clickstartbuttonInfo = new RepoItemInfo(this, "ClickStartButton", ".//button[#'search-query-start']", 30000, null, "7f905217-eb23-4006-a69a-5263d3366d50");
+                _clickonpersonalfolderInfo = new RepoItemInfo(this, "ClickOnPersonalFolder", ".//div[#'bento-nav']/tag[@tagname='bento-side-nav']/div[2]/div/div[2]/div[4]/tag/div/tag/div/div[2]/tag/div/div[2]/div[9]/div/div[1]/div[@innertext='Personal']", 30000, null, "39120b1c-5322-456a-832a-03bdfa22475d");
             }
 
             /// <summary>
@@ -979,6 +991,150 @@ namespace Cognigram_
                 get
                 {
                     return _clicksinginsumobuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickonZAKFolder item.
+            /// </summary>
+            [RepositoryItem("87c5e175-c5b3-4bcd-8eda-2bab4166728a")]
+            public virtual Ranorex.DivTag ClickonZAKFolder
+            {
+                get
+                {
+                    return _clickonzakfolderInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickonZAKFolder item info.
+            /// </summary>
+            [RepositoryItemInfo("87c5e175-c5b3-4bcd-8eda-2bab4166728a")]
+            public virtual RepoItemInfo ClickonZAKFolderInfo
+            {
+                get
+                {
+                    return _clickonzakfolderInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenStageAppLogs item.
+            /// </summary>
+            [RepositoryItem("949c3c90-6cda-4201-b4e0-1789a5696633")]
+            public virtual Ranorex.DivTag OpenStageAppLogs
+            {
+                get
+                {
+                    return _openstageapplogsInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenStageAppLogs item info.
+            /// </summary>
+            [RepositoryItemInfo("949c3c90-6cda-4201-b4e0-1789a5696633")]
+            public virtual RepoItemInfo OpenStageAppLogsInfo
+            {
+                get
+                {
+                    return _openstageapplogsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The selecttimeframe item.
+            /// </summary>
+            [RepositoryItem("a43ffcac-d4a6-4c8e-8e87-90bee27d0262")]
+            public virtual Ranorex.DivTag selecttimeframe
+            {
+                get
+                {
+                    return _selecttimeframeInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The selecttimeframe item info.
+            /// </summary>
+            [RepositoryItemInfo("a43ffcac-d4a6-4c8e-8e87-90bee27d0262")]
+            public virtual RepoItemInfo selecttimeframeInfo
+            {
+                get
+                {
+                    return _selecttimeframeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The selectLast60Minutes item.
+            /// </summary>
+            [RepositoryItem("45c9e284-768f-452c-8bc1-abe22076304c")]
+            public virtual Ranorex.DivTag selectLast60Minutes
+            {
+                get
+                {
+                    return _selectlast60minutesInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The selectLast60Minutes item info.
+            /// </summary>
+            [RepositoryItemInfo("45c9e284-768f-452c-8bc1-abe22076304c")]
+            public virtual RepoItemInfo selectLast60MinutesInfo
+            {
+                get
+                {
+                    return _selectlast60minutesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickStartButton item.
+            /// </summary>
+            [RepositoryItem("7f905217-eb23-4006-a69a-5263d3366d50")]
+            public virtual Ranorex.ButtonTag ClickStartButton
+            {
+                get
+                {
+                    return _clickstartbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickStartButton item info.
+            /// </summary>
+            [RepositoryItemInfo("7f905217-eb23-4006-a69a-5263d3366d50")]
+            public virtual RepoItemInfo ClickStartButtonInfo
+            {
+                get
+                {
+                    return _clickstartbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClickOnPersonalFolder item.
+            /// </summary>
+            [RepositoryItem("39120b1c-5322-456a-832a-03bdfa22475d")]
+            public virtual Ranorex.DivTag ClickOnPersonalFolder
+            {
+                get
+                {
+                    return _clickonpersonalfolderInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClickOnPersonalFolder item info.
+            /// </summary>
+            [RepositoryItemInfo("39120b1c-5322-456a-832a-03bdfa22475d")]
+            public virtual RepoItemInfo ClickOnPersonalFolderInfo
+            {
+                get
+                {
+                    return _clickonpersonalfolderInfo;
                 }
             }
         }

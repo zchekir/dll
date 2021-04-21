@@ -265,6 +265,18 @@
       <UserCode>true</UserCode>
       <id>8cc865ac-05ce-456a-a4d5-687622ebca91</id>
     </Compile>
+    <Compile Include="openSumoLogs.cs">
+      <BoundTo>8398f3f4-f5f4-41f3-90dd-17d5c2fa48b1</BoundTo>
+      <DependentUpon>openSumoLogs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d1e9557-0c96-46cd-a05a-8e0ad37c4ac8</id>
+    </Compile>
+    <Compile Include="openSumoLogs.UserCode.cs">
+      <BoundTo>8398f3f4-f5f4-41f3-90dd-17d5c2fa48b1</BoundTo>
+      <DependentUpon>openSumoLogs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>34cecb0b-cb30-437f-8a4e-2ea311dc42c3</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>778f5545-9322-4e86-88f4-a528710c8258</id>
     </Compile>
@@ -402,6 +414,11 @@
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <id>e96fde1c-0696-449e-ac87-3ab16ab7b4bf</id>
       <recordtableid>89a358c7-bfa3-4b1d-b7e6-0030c98ab3bb</recordtableid>
+    </None>
+    <None Include="openSumoLogs.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>8398f3f4-f5f4-41f3-90dd-17d5c2fa48b1</id>
+      <recordtableid>0702dafc-035a-4de2-b060-55954578a53c</recordtableid>
     </None>
     <None Include="SmokTestModules\CognigramDB.rxrec">
       <id>457ea3e4-cd2e-43bb-a0e5-b59d0d32ee4e</id>

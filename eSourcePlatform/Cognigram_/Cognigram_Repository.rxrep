@@ -374,6 +374,64 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='service.us2.sumologic.com']//button[#'signin-button']
 			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="87c5e175-c5b3-4bcd-8eda-2bab4166728a"
+			name="ClickonZAKFolder"
+			refimgid="01e43f50-361b-450f-b6cd-a1d8cd8737ff"
+			searchtimeout="30000ms">
+				/dom[@domain='service.us2.sumologic.com']//div[#'bento-nav']/tag[@tagname='bento-side-nav']/div[2]/div/div[2]/div[4]/tag/div/tag/div/div[2]/tag/div/div[2]/div[8]/div/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="949c3c90-6cda-4201-b4e0-1789a5696633"
+			name="OpenStageAppLogs"
+			refimgid="61e99f9a-2946-4a3a-9940-d018b7670ad9"
+			searchtimeout="30000ms">
+				/dom[@domain='service.us2.sumologic.com']//div[#'bento-nav']/tag[@tagname='bento-side-nav']/div[2]/div/div[2]/div[4]/tag/div/tag/div/div[2]/tag/div/div[2]/div[10]/div/div[1]/div[@innertext='cognigram_Automation']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="a43ffcac-d4a6-4c8e-8e87-90bee27d0262"
+			name="selecttimeframe"
+			refimgid="147514bc-f29f-4350-8f7c-399f4ab49c92"
+			refpath="/dom[@domain='service.us2.sumologic.com']//div[#'tre-search']/tag[@tagname='tre-input']/div[@innertext='Last 6 Hours']"
+			searchtimeout="30000ms">
+				/dom[@domain='service.us2.sumologic.com']//div[#'tre-search']/?/?/div[@innertext='Last 6 Hours']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="45c9e284-768f-452c-8bc1-abe22076304c"
+			name="selectLast60Minutes"
+			refimgid="954598b9-a9b1-45d6-af00-a3c1be5bfa3b"
+			refpath="/dom[@domain='service.us2.sumologic.com']//div[#'search-view']/tag[@tagname='tre']/div[2]/tag[@tagname='ux-list']/div/div[@title='Last 60 Minutes']"
+			searchtimeout="30000ms">
+				/dom[@domain='service.us2.sumologic.com']//div[#'search-view']/tag[@tagname='tre']/div[2]//div[@title='Last 60 Minutes']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="7f905217-eb23-4006-a69a-5263d3366d50"
+			name="ClickStartButton"
+			refimgid="4d4f3ca9-642a-47c0-a51f-877c4a9dd858"
+			refpath="/dom[@domain='service.us2.sumologic.com']//button[#'search-query-start']"
+			searchtimeout="30000ms">
+				/dom[@domain='service.us2.sumologic.com']//button[#'search-query-start']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="39120b1c-5322-456a-832a-03bdfa22475d"
+			name="ClickOnPersonalFolder"
+			refimgid="d2685f8f-0ec3-44f4-950d-c0417771c69f"
+			refpath="/dom[@domain='service.us2.sumologic.com']//div[#'bento-nav']/tag[@tagname='bento-side-nav']/div[2]/div/div[2]/div[4]/tag[@tagname='library-tree-view']/div/tag[@tagname='tree']/div/div[2]/tag[@tagname='md-virtual-repeat-container']/div/div[2]/div[9]/div/div[1]/div[@innertext='Personal']"
+			searchtimeout="30000ms">
+				/dom[@domain='service.us2.sumologic.com']//div[#'bento-nav']/tag[@tagname='bento-side-nav']/div[2]/div/div[2]/div[4]/tag/div/tag/div/div[2]/tag/div/div[2]/div[9]/div/div[1]/div[@innertext='Personal']
+			</item>
 			<basepath>
 				/dom[@domain='service.us2.sumologic.com']
 			</basepath>

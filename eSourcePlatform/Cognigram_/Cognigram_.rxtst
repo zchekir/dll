@@ -332,6 +332,12 @@ rxversion="8.3">
 			id="b24a963b-4ea3-4374-99e7-bc854b107630"
 			name="Platform_Regression">
 			</smartfoldernode>
+			<testmodule
+			id="c15be495-83f6-4cfe-b2e9-2608e1a5d83f"
+			name="openSumoLogs"
+			ref="0702dafc-035a-4de2-b060-55954578a53c"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			datarangeactive="True"
 			datasource="TenantConnector"
@@ -427,7 +433,7 @@ rxversion="8.3">
 					variablename="DOM">
 					</var>
 					<var
-					dataname="cognigramPassword_"
+					dataname="CSPPassword"
 					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
 					variableid="90d3091c-062e-4ce4-9782-4ec37497ff28"
 					variablename="passwrod">
@@ -523,6 +529,10 @@ rxversion="8.3">
 								id="8d4bb636-c215-4bd1-901d-e4c6bd2cf4cf"
 								name="sumoLogin">
 								</testmodule>
+								<testmodule
+								id="c15be495-83f6-4cfe-b2e9-2608e1a5d83f"
+								name="openSumoLogs">
+								</testmodule>
 							</testcase>
 							<teardown
 							id="1de35364-748e-4da1-ba0d-2000fe6464bb"
@@ -606,6 +616,9 @@ rxversion="8.3">
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
+				<columnname>
+					cognigramPassword_
+				</columnname>
 				<columnname>
 					CSPPassword
 				</columnname>
@@ -821,7 +834,7 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="35128bfc-1a70-4caf-8dbc-f8517b8a4188">
+			id="571d9865-6228-433b-91b6-0fb814b34b97">
 			</testcontainer>
 			<testcontainer
 			id="69bd7290-d5b6-47b0-af09-2c69380d1c80">
