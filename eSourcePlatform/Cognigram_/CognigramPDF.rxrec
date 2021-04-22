@@ -30,15 +30,17 @@ rxversion="8.3">
 		<var
 		id="9da4be33-5d30-4395-8707-2a1fa9e4ac43"
 		name="DOM">
-			staging.cognigram.us
+			cshc-qc.azurewebsites.net
 		</var>
 		<var
 		id="6682788b-4d50-49d2-ba74-7a5278feb856"
 		name="CognigramUserName">
+			zchekir@cogstate.com
 		</var>
 		<var
 		id="8b60a7da-5b42-40b7-9301-e5ca2fa00385"
 		name="CognigramPassword">
+			Mamine2014@@
 		</var>
 	</variables>
 	<recorditems>
@@ -75,10 +77,34 @@ rxversion="8.3">
 			</bindings>
 		</explicitdelayitem>
 		<mouseitem
-		action="Click"
+		action="DoubleClick"
 		button="Left"
 		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f8373825-b80e-42ab-bb58-49d27012976a"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d36e7818-bb70-457a-bb3e-91c1c0e602b2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'bodyContent']/div//tag[@tagname='cog-login']/div[1]/div/div[1]//input[@name='userName']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"

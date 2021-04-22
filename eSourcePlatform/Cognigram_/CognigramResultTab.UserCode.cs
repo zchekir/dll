@@ -24,10 +24,7 @@ namespace Cognigram_
 {
     public partial class CognigramResultTab
     {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
+        string expectedtitle="Cognitive Test Results";
         private void Init()
         {
             // Your recording specific initialization code goes here.
@@ -40,7 +37,7 @@ namespace Cognigram_
             
             // validate the PDF report is generated as expected:
             
-            Validate.AreEqual(ReportValue,ExpectedPDFReportValue);
+            Validate.AreEqual(ReportValue,expectedtitle);
         }
 
     }

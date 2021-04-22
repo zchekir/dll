@@ -151,6 +151,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>979af83a-2885-4d33-81bd-708cf9eb3f03</id>
     </Compile>
+    <Compile Include="CloseBrowser.cs">
+      <BoundTo>b09d6636-ba33-40cd-9aae-091788a7e2d4</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ef7aa680-8857-4f93-a3e4-091548d47084</id>
+    </Compile>
+    <Compile Include="CloseBrowser.UserCode.cs">
+      <BoundTo>b09d6636-ba33-40cd-9aae-091788a7e2d4</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7ccc9cec-81db-4dfe-965d-3afab513a450</id>
+    </Compile>
     <Compile Include="CognigramDebugFakefiles.cs">
       <BoundTo>83c1443b-cbfb-4b2d-8e19-60ce51cf010a</BoundTo>
       <DependentUpon>CognigramDebugFakefiles.rxrec</DependentUpon>
@@ -352,6 +364,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>6f9b5d6a-4d0e-4f05-aa58-7b0d70d2cf8c</id>
     </Content>
+    <None Include="CloseBrowser.rxrec">
+      <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
+      <id>b09d6636-ba33-40cd-9aae-091788a7e2d4</id>
+      <recordtableid>77319123-c5f2-43a1-9f9d-96d3fd364ceb</recordtableid>
+    </None>
     <None Include="CognigramDebugFakefiles.rxrec">
       <BoundTo>592f0892-f004-4620-9280-a638f008c2ab</BoundTo>
       <id>83c1443b-cbfb-4b2d-8e19-60ce51cf010a</id>

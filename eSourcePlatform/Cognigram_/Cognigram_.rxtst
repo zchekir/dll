@@ -4,6 +4,12 @@ rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="00bdd5f6-2ecc-41e6-ad5c-7baa8a64c6a9"
+			name="CloseBrowser"
+			ref="77319123-c5f2-43a1-9f9d-96d3fd364ceb"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="11a7f6b1-3b0f-4aa4-83bd-e44784b4d1af"
 			name="CognigramEmailValidation"
 			ref="62bea32e-5edd-49ad-b537-90752519377f"
@@ -16,12 +22,6 @@ rxversion="8.3">
 					variablename="currentemail">
 					</var>
 					<var
-					dataname="cognigramPassword_"
-					datasourceid="8e471bbd-864d-400b-b32b-042341f03a5f"
-					variableid="58b7aa8f-c2b6-4626-a053-780541fef89b"
-					variablename="GmailPassword">
-					</var>
-					<var
 					dataname="CognigramEmail"
 					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
 					variableid="c6f129a4-76d5-4fb5-b421-dc3a5e5b1185"
@@ -32,6 +32,12 @@ rxversion="8.3">
 					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
 					variableid="0c55951a-3f78-4d59-b3ac-f8e068119975"
 					variablename="Gmail">
+					</var>
+					<var
+					dataname="cognigramPassword_"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="58b7aa8f-c2b6-4626-a053-780541fef89b"
+					variablename="GmailPassword">
 					</var>
 				</databinding>
 			</testmodule>
@@ -46,6 +52,18 @@ rxversion="8.3">
 					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
 					variableid="095c28fa-1ab7-45e4-a1da-e695b5c5250a"
 					variablename="ExpectedPDFReportValue">
+					</var>
+					<var
+					dataname="CPADOM"
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="98466a7c-541b-4a7f-8597-94c097ff6cec"
+					variablename="DOM">
+					</var>
+					<var
+					dataname="CognigramresultReportName "
+					datasourceid="ae120d91-7219-48d1-b085-a6a4d974c9f1"
+					variableid="aafc69c5-b8ea-40b7-8552-75ddb72171a2"
+					variablename="searchstudy">
 					</var>
 				</databinding>
 			</testmodule>
@@ -76,6 +94,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="51e36b1f-f43d-4587-9f95-8e2b4e199869"
 			name="EmailModule"
 			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
@@ -169,8 +188,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="Authentication"
 			id="69bd7290-d5b6-47b0-af09-2c69380d1c80"
-			maxrange="4"
-			minrange="4"
+			maxrange="3"
+			minrange="3"
 			name="CognigramTests">
 			</smartfoldernode>
 			<testmodule
@@ -197,6 +216,10 @@ rxversion="8.3">
 			id="6f5c102e-12e3-45b0-b50a-54cd4c7027f5"
 			name="Regression">
 			</smartfoldernode>
+			<setup
+			id="77c6c312-d222-4984-b9b5-2ea47cf11220"
+			name="setup">
+			</setup>
 			<testmodule
 			id="7d082d35-2ae1-4d28-a19f-66b729a38ea5"
 			name="CognigramSecurityCheck"
@@ -342,8 +365,8 @@ rxversion="8.3">
 			datarangeactive="True"
 			datasource="TenantConnector"
 			id="c705a9d6-f28d-41f9-a309-26346ff70ff0"
-			maxrange="8"
-			minrange="8"
+			maxrange="7"
+			minrange="7"
 			name="Smoke">
 			</smartfoldernode>
 			<smartfoldernode
@@ -368,6 +391,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="e2b496ad-572c-4c23-ac36-10c2dcb3b080"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="ec94d81e-b2bd-412d-9355-577e887e13d5"
 			name="HTSTSValidation"
@@ -477,6 +504,10 @@ rxversion="8.3">
 							<testcase
 							id="d17b6fbd-a581-4c7c-a95c-4342bddb4f6f"
 							name="cognigramEmailcheck">
+								<setup
+								id="77c6c312-d222-4984-b9b5-2ea47cf11220"
+								name="setup">
+								</setup>
 								<testmodule
 								id="7d082d35-2ae1-4d28-a19f-66b729a38ea5"
 								name="CognigramSecurityCheck">
@@ -485,6 +516,14 @@ rxversion="8.3">
 								id="11a7f6b1-3b0f-4aa4-83bd-e44784b4d1af"
 								name="CognigramEmailValidation">
 								</testmodule>
+								<teardown
+								id="e2b496ad-572c-4c23-ac36-10c2dcb3b080"
+								name="teardown">
+									<testmodule
+									id="00bdd5f6-2ecc-41e6-ad5c-7baa8a64c6a9"
+									name="CloseBrowser">
+									</testmodule>
+								</teardown>
 							</testcase>
 							<testcase
 							id="a0efcc33-9126-400e-9bf5-d3347daa207d"
@@ -564,7 +603,7 @@ rxversion="8.3">
 		<DataSource
 		id="8e471bbd-864d-400b-b32b-042341f03a5f"
 		includefile="Checked"
-		lastknownrowcount="5"
+		lastknownrowcount="4"
 		name="Authentication"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -611,14 +650,8 @@ rxversion="8.3">
 				<column>
 					InternalPassword
 				</column>
-				<column>
-					cognigramPassword_
-				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
-				<columnname>
-					cognigramPassword_
-				</columnname>
 				<columnname>
 					CSPPassword
 				</columnname>
@@ -818,6 +851,12 @@ rxversion="8.3">
 				<column>
 					sumoLogicURL
 				</column>
+				<column>
+					cognigramPassword_
+				</column>
+				<column>
+					CognigramresultReportName&#32;
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 				<columnname>
@@ -834,9 +873,6 @@ rxversion="8.3">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="571d9865-6228-433b-91b6-0fb814b34b97">
-			</testcontainer>
-			<testcontainer
 			id="69bd7290-d5b6-47b0-af09-2c69380d1c80">
 			</testcontainer>
 			<testcontainer
@@ -844,6 +880,9 @@ rxversion="8.3">
 			</testcontainer>
 			<testcontainer
 			id="c705a9d6-f28d-41f9-a309-26346ff70ff0">
+			</testcontainer>
+			<testcontainer
+			id="d17b6fbd-a581-4c7c-a95c-4342bddb4f6f">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

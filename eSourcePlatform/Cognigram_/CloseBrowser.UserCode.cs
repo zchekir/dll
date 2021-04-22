@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Cognigram_.SmokTestModules
+namespace Cognigram_
 {
-    public partial class CognigramEmailValidation
+    public partial class CloseBrowser
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,21 +31,6 @@ namespace Cognigram_.SmokTestModules
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void Get_value_Capture_the_email_(RepoItemInfo spantagInfo)
-        { 
-        	try{
-        		
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'TagName' from item 'spantagInfo' and assigning its value to variable 'expectedEmail'.", spantagInfo);
-            expectedEmail = spantagInfo.FindAdapter<SpanTag>().Element.GetAttributeValueText("InnerText");
-            Validate.AreEqual(currentemail,expectedEmail);
-        	
-        	}catch(Exception e){
-        		
-        		
-        		 Report.Log(ReportLevel.Error,  " Forget Email link is not appering as expected");
-        	}
         }
 
     }

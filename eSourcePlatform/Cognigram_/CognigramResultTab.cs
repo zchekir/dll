@@ -43,6 +43,8 @@ namespace Cognigram_
         {
             ReportValue = "";
             ExpectedPDFReportValue = "Cognitive Test Results";
+            DOM = "cshc-qc.azurewebsites.net";
+            searchstudy = "AutomationCognigram";
         }
 
         /// <summary>
@@ -77,6 +79,18 @@ namespace Cognigram_
         {
             get { return _ExpectedPDFReportValue; }
             set { _ExpectedPDFReportValue = value; }
+        }
+
+        string _searchstudy;
+
+        /// <summary>
+        /// Gets or sets the value of variable searchstudy.
+        /// </summary>
+        [TestVariable("aafc69c5-b8ea-40b7-8552-75ddb72171a2")]
+        public string searchstudy
+        {
+            get { return _searchstudy; }
+            set { _searchstudy = value; }
         }
 
         /// <summary>
@@ -122,30 +136,31 @@ namespace Cognigram_
             repo.COGNIGRAM.ResultsTable.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 600ms.", new RecordItemIndex(2));
-            Delay.Duration(600, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1m.", new RecordItemIndex(2));
+            Delay.Duration(60000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.ClickOnReportCOGNIGRAMTable' at Center.", repo.COGNIGRAM.ClickOnReportCOGNIGRAMTableInfo, new RecordItemIndex(3));
-            repo.COGNIGRAM.ClickOnReportCOGNIGRAMTable.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'COGNIGRAM.searchStudy' at Center.", repo.COGNIGRAM.searchStudyInfo, new RecordItemIndex(3));
+            repo.COGNIGRAM.searchStudy.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 600ms.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$searchstudy' with focus on 'COGNIGRAM.searchStudy'.", repo.COGNIGRAM.searchStudyInfo, new RecordItemIndex(4));
+            repo.COGNIGRAM.searchStudy.PressKeys(searchstudy);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 600ms.", new RecordItemIndex(5));
             Delay.Duration(600, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.OpenPDFReport' at Center.", repo.COGNIGRAM.OpenPDFReportInfo, new RecordItemIndex(5));
-            repo.COGNIGRAM.OpenPDFReport.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.ClickOnResults' at Center.", repo.COGNIGRAM.ClickOnResultsInfo, new RecordItemIndex(6));
+            repo.COGNIGRAM.ClickOnResults.Click();
             Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 600ms.", new RecordItemIndex(6));
-            Delay.Duration(600, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", repo.COGNIGRAM.ReportValidation, false, new RecordItemIndex(7));
             
             Get_value_ReportValidation(repo.COGNIGRAM.ReportValidationInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'COGNIGRAM.OpenPDFReport'.", repo.COGNIGRAM.OpenPDFReportInfo, new RecordItemIndex(9));
-            Host.Current.CloseApplication(repo.COGNIGRAM.OpenPDFReport, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'COGNIGRAM.ReportValidation'.", repo.COGNIGRAM.ReportValidationInfo, new RecordItemIndex(9));
+            Host.Current.CloseApplication(repo.COGNIGRAM.ReportValidation, new Duration(0));
             Delay.Milliseconds(0);
             
         }

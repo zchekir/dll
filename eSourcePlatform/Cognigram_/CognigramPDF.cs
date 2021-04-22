@@ -41,9 +41,9 @@ namespace Cognigram_
         /// </summary>
         public CognigramPDF()
         {
-            DOM = "staging.cognigram.us";
-            CognigramUserName = "";
-            CognigramPassword = "";
+            DOM = "cshc-qc.azurewebsites.net";
+            CognigramUserName = "zchekir@cogstate.com";
+            CognigramPassword = "Mamine2014@@";
         }
 
         /// <summary>
@@ -123,37 +123,41 @@ namespace Cognigram_
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(1));
             Delay.Duration(800, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.Loginbox.EnterUserName' at Center.", repo.COGNIGRAM.Loginbox.EnterUserNameInfo, new RecordItemIndex(2));
-            repo.COGNIGRAM.Loginbox.EnterUserName.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'COGNIGRAM.Loginbox.EnterUserName' at Center.", repo.COGNIGRAM.Loginbox.EnterUserNameInfo, new RecordItemIndex(2));
+            repo.COGNIGRAM.Loginbox.EnterUserName.DoubleClick();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'COGNIGRAM.Loginbox.EnterUserName'.", repo.COGNIGRAM.Loginbox.EnterUserNameInfo, new RecordItemIndex(3));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.Loginbox.EnterUserName' at Center.", repo.COGNIGRAM.Loginbox.EnterUserNameInfo, new RecordItemIndex(3));
+            //repo.COGNIGRAM.Loginbox.EnterUserName.Click();
+            //Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'COGNIGRAM.Loginbox.EnterUserName'.", repo.COGNIGRAM.Loginbox.EnterUserNameInfo, new RecordItemIndex(4));
             Keyboard.PrepareFocus(repo.COGNIGRAM.Loginbox.EnterUserName);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CognigramUserName' with focus on 'COGNIGRAM.Loginbox.EnterUserName'.", repo.COGNIGRAM.Loginbox.EnterUserNameInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CognigramUserName' with focus on 'COGNIGRAM.Loginbox.EnterUserName'.", repo.COGNIGRAM.Loginbox.EnterUserNameInfo, new RecordItemIndex(5));
             repo.COGNIGRAM.Loginbox.EnterUserName.PressKeys(CognigramUserName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.Loginbox.EntertPassword' at Center.", repo.COGNIGRAM.Loginbox.EntertPasswordInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.Loginbox.EntertPassword' at Center.", repo.COGNIGRAM.Loginbox.EntertPasswordInfo, new RecordItemIndex(6));
             repo.COGNIGRAM.Loginbox.EntertPassword.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'COGNIGRAM.Loginbox.EntertPassword'.", repo.COGNIGRAM.Loginbox.EntertPasswordInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'COGNIGRAM.Loginbox.EntertPassword'.", repo.COGNIGRAM.Loginbox.EntertPasswordInfo, new RecordItemIndex(7));
             Keyboard.PrepareFocus(repo.COGNIGRAM.Loginbox.EntertPassword);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CognigramPassword' with focus on 'COGNIGRAM.Loginbox.EntertPassword'.", repo.COGNIGRAM.Loginbox.EntertPasswordInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CognigramPassword' with focus on 'COGNIGRAM.Loginbox.EntertPassword'.", repo.COGNIGRAM.Loginbox.EntertPasswordInfo, new RecordItemIndex(8));
             repo.COGNIGRAM.Loginbox.EntertPassword.PressKeys(CognigramPassword);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.Loginbox.ClickSignIn' at Center.", repo.COGNIGRAM.Loginbox.ClickSignInInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'COGNIGRAM.Loginbox.ClickSignIn' at Center.", repo.COGNIGRAM.Loginbox.ClickSignInInfo, new RecordItemIndex(9));
             repo.COGNIGRAM.Loginbox.ClickSignIn.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 800ms.", new RecordItemIndex(10));
             Delay.Duration(800, false);
             
         }

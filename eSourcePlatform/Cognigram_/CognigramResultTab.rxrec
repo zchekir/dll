@@ -36,6 +36,16 @@ rxversion="8.3">
 		name="ExpectedPDFReportValue">
 			Cognitive Test Results
 		</var>
+		<var
+		id="98466a7c-541b-4a7f-8597-94c097ff6cec"
+		name="DOM">
+			cshc-qc.azurewebsites.net
+		</var>
+		<var
+		id="aafc69c5-b8ea-40b7-8552-75ddb72171a2"
+		name="searchstudy">
+			AutomationCognigram
+		</var>
 	</variables>
 	<recorditems>
 		<explicitdelayitem
@@ -111,7 +121,7 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="600ms"
+		duration="60000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -120,14 +130,14 @@ rxversion="8.3">
 			</bindings>
 		</explicitdelayitem>
 		<mouseitem
-		action="Click"
+		action="Move"
 		button="Left"
 		duration="500ms"
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="2b7e9697-d746-4b3e-b1b6-b7a6d38b95ba"
+		searchpropertyid="ecaf2e49-b14b-44eb-9786-85ea5a77d8f7"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -136,13 +146,36 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="a3605473-175f-40ce-8a91-7b88a3e5ec39"
+			id="c75e12c9-1de2-40a5-99f4-fd3b54e0e4db"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//tag[@tagname='md-card-content']/div[1]/a[@href~'^https://staging\.cognigram']/span[@innertext~'^Report,\ COGNIGRAM']
+					/dom[@domain=$DOM]//div[#'bodyContent']/div/div/div/div/?/?/tag[@tagname='md-content']/div/div/tag[@tagname='cog-list']/div/div[1]/div/input[@type='text']
 				</path>
 			</info>
 		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="b2fd518f-cd35-44fd-a5ca-d63fd371edd2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="searchstudy">
+				</binding>
+			</bindings>
+			<info
+			id="c75e12c9-1de2-40a5-99f4-fd3b54e0e4db"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain=$DOM]//div[#'bodyContent']/div/div/div/div/?/?/tag[@tagname='md-content']/div/div/tag[@tagname='cog-list']/div/div[1]/div/input[@type='text']
+				</path>
+			</info>
+		</keysequenceitem>
 		<explicitdelayitem
 		duration="600ms"
 		enabled="True"
@@ -160,7 +193,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="681cd51c-d391-452e-917a-4ed69d41b69c"
+		searchpropertyid="e84dcb5e-262e-488a-8b58-a7d90419b035"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -169,22 +202,13 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="cfac839d-9845-46b3-be0f-c795b9053d72"
+			id="8677435b-da10-4bbf-bd02-e58897b4409c"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//a[@href~'^https://staging\.cognigram']/i[@innertext='assignment']
+					/dom[@domain=$DOM]//div[1]/i[@innertext='assignment']
 				</path>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="600ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -242,16 +266,16 @@ rxversion="8.3">
 		graceperiod="0ms"
 		method="CloseWindow"
 		optional="False"
-		searchpropertyid="c993c6f6-f2bd-4f48-a3c2-29a81dfc0d28">
+		searchpropertyid="db53636d-7c5e-4a7a-b2de-a4c27458bb0f">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="cfac839d-9845-46b3-be0f-c795b9053d72"
+			id="2c1cfcaf-ab16-4e30-84ac-4273442e5cb6"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain=$DOM]//a[@href~'^https://staging\.cognigram']/i[@innertext='assignment']
+					/dom[@domain=$DOM]//iframe[#'cbbReportFrame']/body/div//h2[@title~'^AutomationCognigram\ Autom']
 				</path>
 			</info>
 		</closeapprecorditem>

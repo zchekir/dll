@@ -220,8 +220,8 @@ namespace Cognigram_
         {
             Cognigram_RepositoryFolders.LoginboxFolder _loginbox;
             RepoItemInfo _resultstableInfo;
-            RepoItemInfo _clickonreportcognigramtableInfo;
-            RepoItemInfo _openpdfreportInfo;
+            RepoItemInfo _searchstudyInfo;
+            RepoItemInfo _clickonresultsInfo;
             RepoItemInfo _reportvalidationInfo;
 
             /// <summary>
@@ -232,9 +232,9 @@ namespace Cognigram_
             {
                 _loginbox = new Cognigram_RepositoryFolders.LoginboxFolder(this);
                 _resultstableInfo = new RepoItemInfo(this, "ResultsTable", ".//div[#'bodyContent']/div/div/div/div//ul/li[2]/a[@innertext='Results']", 30000, null, "bdaa0662-d758-4b82-a7f6-d55d2c6d9024");
-                _clickonreportcognigramtableInfo = new RepoItemInfo(this, "ClickOnReportCOGNIGRAMTable", ".//tag[@tagname='md-card-content']/div[1]/a[@href~'^https://staging\\.cognigram']/span[@innertext~'^Report,\\ COGNIGRAM']", 30000, null, "a3605473-175f-40ce-8a91-7b88a3e5ec39");
-                _openpdfreportInfo = new RepoItemInfo(this, "OpenPDFReport", ".//a[@href~'^https://staging\\.cognigram']/i[@innertext='assignment']", 30000, null, "cfac839d-9845-46b3-be0f-c795b9053d72");
-                _reportvalidationInfo = new RepoItemInfo(this, "ReportValidation", ".//iframe[#'cbbReportFrame']/body/div//h2[@title='COGNIGRAM Report']", 30000, null, "2c1cfcaf-ab16-4e30-84ac-4273442e5cb6");
+                _searchstudyInfo = new RepoItemInfo(this, "searchStudy", ".//div[#'bodyContent']/div/div/div/div/?/?/tag[@tagname='md-content']/div/div/tag[@tagname='cog-list']/div/div[1]/div/input[@type='text']", 30000, null, "c75e12c9-1de2-40a5-99f4-fd3b54e0e4db");
+                _clickonresultsInfo = new RepoItemInfo(this, "ClickOnResults", ".//div[1]/i[@innertext='assignment']", 30000, null, "8677435b-da10-4bbf-bd02-e58897b4409c");
+                _reportvalidationInfo = new RepoItemInfo(this, "ReportValidation", ".//iframe[#'cbbReportFrame']/body/div//h2[@title~'^AutomationCognigram\\ Autom']", 30000, null, "2c1cfcaf-ab16-4e30-84ac-4273442e5cb6");
             }
 
             /// <summary>
@@ -286,50 +286,50 @@ namespace Cognigram_
             }
 
             /// <summary>
-            /// The ClickOnReportCOGNIGRAMTable item.
+            /// The searchStudy item.
             /// </summary>
-            [RepositoryItem("a3605473-175f-40ce-8a91-7b88a3e5ec39")]
-            public virtual Ranorex.SpanTag ClickOnReportCOGNIGRAMTable
+            [RepositoryItem("c75e12c9-1de2-40a5-99f4-fd3b54e0e4db")]
+            public virtual Ranorex.InputTag searchStudy
             {
                 get
                 {
-                    return _clickonreportcognigramtableInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _searchstudyInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ClickOnReportCOGNIGRAMTable item info.
+            /// The searchStudy item info.
             /// </summary>
-            [RepositoryItemInfo("a3605473-175f-40ce-8a91-7b88a3e5ec39")]
-            public virtual RepoItemInfo ClickOnReportCOGNIGRAMTableInfo
+            [RepositoryItemInfo("c75e12c9-1de2-40a5-99f4-fd3b54e0e4db")]
+            public virtual RepoItemInfo searchStudyInfo
             {
                 get
                 {
-                    return _clickonreportcognigramtableInfo;
+                    return _searchstudyInfo;
                 }
             }
 
             /// <summary>
-            /// The OpenPDFReport item.
+            /// The ClickOnResults item.
             /// </summary>
-            [RepositoryItem("cfac839d-9845-46b3-be0f-c795b9053d72")]
-            public virtual Ranorex.ITag OpenPDFReport
+            [RepositoryItem("8677435b-da10-4bbf-bd02-e58897b4409c")]
+            public virtual Ranorex.ITag ClickOnResults
             {
                 get
                 {
-                    return _openpdfreportInfo.CreateAdapter<Ranorex.ITag>(true);
+                    return _clickonresultsInfo.CreateAdapter<Ranorex.ITag>(true);
                 }
             }
 
             /// <summary>
-            /// The OpenPDFReport item info.
+            /// The ClickOnResults item info.
             /// </summary>
-            [RepositoryItemInfo("cfac839d-9845-46b3-be0f-c795b9053d72")]
-            public virtual RepoItemInfo OpenPDFReportInfo
+            [RepositoryItemInfo("8677435b-da10-4bbf-bd02-e58897b4409c")]
+            public virtual RepoItemInfo ClickOnResultsInfo
             {
                 get
                 {
-                    return _openpdfreportInfo;
+                    return _clickonresultsInfo;
                 }
             }
 
@@ -389,7 +389,7 @@ namespace Cognigram_
                 _forgotpasswordInfo = new RepoItemInfo(this, "ForgotPassword", "?/?/form[@name='loginForm']/div[6]/?/?/a[@innertext='Forgot password?']", 30000, null, "bc66c19a-0a8a-4b1b-9c14-456e1be30946");
                 _enteremailInfo = new RepoItemInfo(this, "EnterEmail", "?/?/form[@name='forgotPasswordForm']/div[2]/div[1]/?/?/input[@name='inputEmail']", 30000, null, "d331b269-8cad-4396-82b3-744b0456ad05");
                 _clickcontinuebuttonInfo = new RepoItemInfo(this, "ClickContinueButton", "?/?/form[@name='forgotPasswordForm']/div[2]/div[2]/?/?/button[@innertext='Continue']", 30000, null, "29a0cabb-dd6a-46ff-b7b4-e7a01c0e805b");
-                _enterusernameInfo = new RepoItemInfo(this, "EnterUserName", "div/form[@name='loginForm']/div[3]//input[@name='userName']", 30000, null, "d36e7818-bb70-457a-bb3e-91c1c0e602b2");
+                _enterusernameInfo = new RepoItemInfo(this, "EnterUserName", ".//input[@name='userName']", 30000, null, "d36e7818-bb70-457a-bb3e-91c1c0e602b2");
                 _entertpasswordInfo = new RepoItemInfo(this, "EntertPassword", "div/form[@name='loginForm']/div[4]//input[@name='inputPassword']", 30000, null, "e755f938-fb96-4604-bbcd-71c8e3a8eaeb");
                 _clicksigninInfo = new RepoItemInfo(this, "ClickSignIn", "div/form[@name='loginForm']//button[@innertext='Sign In']", 30000, null, "319de5eb-3ead-4c22-bb85-ab5d6bc7298d");
             }
@@ -570,6 +570,7 @@ namespace Cognigram_
         public partial class GmailEmailFromGoogleAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _clickgmailsinginInfo;
+            RepoItemInfo _gmailInfo;
 
             /// <summary>
             /// Creates a new GmailEmailFromGoogle  folder.
@@ -578,6 +579,7 @@ namespace Cognigram_
                     base("GmailEmailFromGoogle", "/dom[@caption='Gmail - Email from Google']", parentFolder, 30000, null, false, "7b19a430-d9f5-4eee-8777-0d0348a810fb", "")
             {
                 _clickgmailsinginInfo = new RepoItemInfo(this, "ClickGmailSingIn", "body/div[2]/div[1]/div[4]/ul[1]/?/?/a[@innertext~'^\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Sign\\ in\\ \\ \\ \\ ']", 30000, null, "ef58d43c-7388-434e-b4b1-38a51901bd34");
+                _gmailInfo = new RepoItemInfo(this, "Gmail", "body/div[2]/div[1]/div[2]//span[@innertext='Gmail']", 30000, null, "76bb028f-99ae-4f82-8a4a-a7d62816b78e");
             }
 
             /// <summary>
@@ -625,6 +627,30 @@ namespace Cognigram_
                 get
                 {
                     return _clickgmailsinginInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Gmail item.
+            /// </summary>
+            [RepositoryItem("76bb028f-99ae-4f82-8a4a-a7d62816b78e")]
+            public virtual Ranorex.SpanTag Gmail
+            {
+                get
+                {
+                    return _gmailInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Gmail item info.
+            /// </summary>
+            [RepositoryItemInfo("76bb028f-99ae-4f82-8a4a-a7d62816b78e")]
+            public virtual RepoItemInfo GmailInfo
+            {
+                get
+                {
+                    return _gmailInfo;
                 }
             }
         }
@@ -781,6 +807,7 @@ namespace Cognigram_
         {
             RepoItemInfo _opentheemailInfo;
             RepoItemInfo _capture_the_email_Info;
+            RepoItemInfo _closegmailInfo;
 
             /// <summary>
             /// Creates a new InboxCognigramzAtgmailComGmail  folder.
@@ -790,6 +817,7 @@ namespace Cognigram_
             {
                 _opentheemailInfo = new RepoItemInfo(this, "OpentheEmail", ".//div[#':2j']/?/?/span[@innertext='Cognigram (DO NOT R.']", 30000, null, "696aa861-ff63-4239-a0b2-0e3fd1ebfccb");
                 _capture_the_email_Info = new RepoItemInfo(this, "Capture_the_email_", ".//div[#':6c']/div[1]/div[2]/div[1]/table/tbody/tr[1]/td[1]/table//span[@innertext~'^healthcaresupport-test@co']", 30000, null, "c5d70f94-a271-419a-8fae-cbfbe73ca575");
+                _closegmailInfo = new RepoItemInfo(this, "closeGMAIL", ".//header[#'gb']/div[2]/div[1]/div[4]/?/?/a[@title='Gmail']/img[@alt='']", 30000, null, "9b15e9dc-b940-4c33-b3a5-9b78cf10924e");
             }
 
             /// <summary>
@@ -861,6 +889,30 @@ namespace Cognigram_
                 get
                 {
                     return _capture_the_email_Info;
+                }
+            }
+
+            /// <summary>
+            /// The closeGMAIL item.
+            /// </summary>
+            [RepositoryItem("9b15e9dc-b940-4c33-b3a5-9b78cf10924e")]
+            public virtual Ranorex.ImgTag closeGMAIL
+            {
+                get
+                {
+                    return _closegmailInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The closeGMAIL item info.
+            /// </summary>
+            [RepositoryItemInfo("9b15e9dc-b940-4c33-b3a5-9b78cf10924e")]
+            public virtual RepoItemInfo closeGMAILInfo
+            {
+                get
+                {
+                    return _closegmailInfo;
                 }
             }
         }

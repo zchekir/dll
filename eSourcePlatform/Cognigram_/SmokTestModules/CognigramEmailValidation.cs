@@ -211,6 +211,10 @@ namespace Cognigram_.SmokTestModules
             Get_value_Capture_the_email_(repo.InboxCognigramzAtgmailComGmail.Capture_the_email_Info);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Gmail'.", repo.Gmail.SelfInfo, new RecordItemIndex(18));
+            Host.Current.CloseApplication(repo.Gmail.Self, new Duration(0));
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
